@@ -47,24 +47,24 @@ The following table enumerates the association between templates and page compon
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="75"><p><strong>Template</strong></p> </td>
-   <td valign="top" width="150"><p><strong>Page Component</strong></p> </td>
+   <td><p><strong>Template</strong></p> </td>
+   <td><p><strong>Page Component</strong></p> </td>
   </tr>
   <tr>
-   <td valign="top" width="75"><p>/libs/fd/af/templates/surveyTemplate</p> </td>
-   <td valign="top" width="150"><p>/libs/fd/af/components/page/survey</p> </td>
+   <td><p>/libs/fd/af/templates/surveyTemplate</p> </td>
+   <td><p>/libs/fd/af/components/page/survey</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="75"><p>/libs/fd/af/templates/simpleEnrollmentTemplate</p> </td>
-   <td valign="top" width="150"><p>/libs/fd/af/components/page/base</p> </td>
+   <td><p>/libs/fd/af/templates/simpleEnrollmentTemplate</p> </td>
+   <td><p>/libs/fd/af/components/page/base</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="75"><p>/libs/fd/af/templates/tabbedEnrollmentTemplate</p> </td>
-   <td valign="top" width="100"><p>/libs/fd/af/components/page/tabbedenrollment</p> </td>
+   <td><p>/libs/fd/af/templates/tabbedEnrollmentTemplate</p> </td>
+   <td><p>/libs/fd/af/components/page/tabbedenrollment</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="75"><p>/libs/fd/afaddon/templates/advancedEnrollmentTemplate</p> </td>
-   <td valign="top" width="100"><p>/libs/fd/afaddon/components/page/advancedenrollment</p> </td>
+   <td><p>/libs/fd/afaddon/templates/advancedEnrollmentTemplate</p> </td>
+   <td><p>/libs/fd/afaddon/components/page/advancedenrollment</p> </td>
   </tr>
  </tbody>
 </table>

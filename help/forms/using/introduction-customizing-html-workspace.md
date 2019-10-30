@@ -41,75 +41,75 @@ Before customizing workspace, make yourself familiar with the default style shee
 
 To customize the workspace, it is recommended that you make yourself familiar with the existing style sheet, style.css, located in /libs/ws/css folder. A few prominent components are described below.
 
-<table cellpadding="4" cellspacing="0">
+<table>
  <tbody>
   <tr>
-   <th class="cellrowborder" valign="top" width="NaN%"><p>CSS element</p> </th>
-   <th class="cellrowborder" valign="top" width="NaN%"><p>User interface component modified</p> </th>
+   <th><p>CSS element</p> </th>
+   <th><p>User interface component modified</p> </th>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>#header</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Header of the AEM Forms workspace</p> </td>
+   <td><p>#header</p> </td>
+   <td><p>Header of the AEM Forms workspace</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.categoryList</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Category list</p> </td>
+   <td><p>.categoryList</p> </td>
+   <td><p>Category list</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.categoryList .header</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Header of category list</p> </td>
+   <td><p>.categoryList .header</p> </td>
+   <td><p>Header of category list</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.categories, .filters</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Space below category list</p> </td>
+   <td><p>.categories, .filters</p> </td>
+   <td><p>Space below category list</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.category, .filter</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Category</p> </td>
+   <td><p>.category, .filter</p> </td>
+   <td><p>Category</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.category:hover, .category.selected, .filter:hover, .filter.selected</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Selected category and mouse over style of category</p> </td>
+   <td><p>.category:hover, .category.selected, .filter:hover, .filter.selected</p> </td>
+   <td><p>Selected category and mouse over style of category</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>categoryListBar .tool, categoryListBar .content</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Start process page (closed Category list)</p> </td>
+   <td><p>categoryListBar .tool, categoryListBar .content</p> </td>
+   <td><p>Start process page (closed Category list)</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>filterListBar .tool, filterListBar .content</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>To Do page (closed Filter list)</p> </td>
+   <td><p>filterListBar .tool, filterListBar .content</p> </td>
+   <td><p>To Do page (closed Filter list)</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>processNameListBar .tool, processNameListBar .content</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Tracking page (closed Process name list)</p> </td>
+   <td><p>processNameListBar .tool, processNameListBar .content</p> </td>
+   <td><p>Tracking page (closed Process name list)</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.startPointList, .tasklist</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>The startpoint list or the task list</p> </td>
+   <td><p>.startPointList, .tasklist</p> </td>
+   <td><p>The startpoint list or the task list</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.startPointList .header, .tasklist .header</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>The header of a startpoint list or a task list</p> </td>
+   <td><p>.startPointList .header, .tasklist .header</p> </td>
+   <td><p>The header of a startpoint list or a task list</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.startpoint.selected, .task.selected</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>The selected startpoint or task</p> </td>
+   <td><p>.startpoint.selected, .task.selected</p> </td>
+   <td><p>The selected startpoint or task</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.startpoint.selected .description, .task.selected .description</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Description of the selected startpoint or task</p> </td>
+   <td><p>.startpoint.selected .description, .task.selected .description</p> </td>
+   <td><p>Description of the selected startpoint or task</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>#taskarea</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>The Task area</p> </td>
+   <td><p>#taskarea</p> </td>
+   <td><p>The Task area</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>#header .dropdown</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>User dropdown in header</p> </td>
+   <td><p>#header .dropdown</p> </td>
+   <td><p>User dropdown in header</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e178 " valign="top" width="NaN%"><p>.sortDrop dd ul</p> </td>
-   <td class="cellrowborder" headers="d19e181 " valign="top" width="NaN%"><p>Sort task dropdown</p> </td>
+   <td><p>.sortDrop dd ul</p> </td>
+   <td><p>Sort task dropdown</p> </td>
   </tr>
  </tbody>
 </table>

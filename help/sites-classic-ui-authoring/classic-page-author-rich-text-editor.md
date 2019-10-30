@@ -21,7 +21,7 @@ The Rich Text Editor is a basic building block for inputting textual content int
 * Text Image
 * Table
 
-## Rich Text Editor {#rich-text-editor}
+## Rich Text Editor {#rich-text-editor-1}
 
 The WYSIWYG editing dialog provides a wide range of functionality:
 

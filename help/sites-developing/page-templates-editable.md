@@ -245,10 +245,10 @@ The following table details the necessary permissions for template editing.
 <table>
  <tbody>
   <tr>
-   <th scope="row">Path</th>
+   <th>Path</th>
    <th>Role / Group</th>
    <th>Permissions<br /> </th>
-   <th scope="col" width="150">Description</th>
+   <th>Description</th>
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td>
@@ -305,10 +305,10 @@ Templates should no longer be stored in `/conf/global`, however for some legacy 
 <table>
  <tbody>
   <tr>
-   <th scope="row">Path</th>
+   <th>Path</th>
    <th>Role / Group</th>
    <th>Permissions<br /> </th>
-   <th scope="col" width="150">Description</th>
+   <th>Description</th>
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/global/settings/wcm/templates</code></td>
@@ -399,7 +399,7 @@ Definitions for your customized templates types should be stored in user-defined
 >
 >The template types have to respect the correct folder structure (i.e. `/settings/wcm/...`), otherwise the template types will not be found.
 
-### Template Type and Mobile Device Groups <br> {#template-type-and-mobile-device-groups-br}
+### Template Type and Mobile Device Groups {#template-type-and-mobile-device-groups-br}
 
 The [device groups](/help/sites-developing/mobile.md#device-groups) used for an editable template (set as relative path of the property `cq:deviceGroups`) define which mobile devices are available as emulators in the [layout mode](/help/sites-authoring/responsive-layout.md) of page authoring. This value can be set in two places:
 

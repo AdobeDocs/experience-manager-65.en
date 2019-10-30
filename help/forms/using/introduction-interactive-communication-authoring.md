@@ -32,11 +32,13 @@ When you [create a new or edit an existing Interactive Communication](../../form
 
 ## Sidebar {##sidebar}
 
-[ ![Sidebar](assets/sidebar-comps-2.png)
+![Sidebar](assets/sidebar-comps-2.png)
 
-Click to enlarge
+**A.** Channel browser **B.** Content browser **C.** Properties browser **D.** Asset browser **E.** Components browser **F.** Data Sources browser - Data Model **G.** Data Sources browser - Master Content
 
-](assets/sidebar-comps-3.png) **A.** Channel browser **B.** Content browser **C.** Properties browser **D.** Asset browser **E.** Components browser **F.** Data Sources browser - Data Model **G.** Data Sources browser - Master Content
+<!-- Click to enlarge
+
+![](assets/sidebar-comps-3.png)-->
 
 The sidebar includes the following:
 

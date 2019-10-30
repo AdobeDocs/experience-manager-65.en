@@ -26,13 +26,13 @@ An XDP is designed in Adobe Forms Designer. This article provides details about 
 
 ## Creating a layout for letters or for Interactive Communications' print channel {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
-A layout defines the graphical layout of a letter/print channel of an Interactive Communication. The layout can contain typical form fields such as “Address” and "Reference Number". It also contains empty subforms that denote target areas. Create the layout in form designer and when completed the Application Specialist uploads it to AEM server. From there, you can select the layout when creating a correspondence template or print channel of an Interactive Communication. 
+A layout defines the graphical layout of a letter/print channel of an Interactive Communication. The layout can contain typical form fields such as “Address” and "Reference Number". It also contains empty subforms that denote target areas. Create the layout in form designer and when completed the Application Specialist uploads it to AEM server. From there, you can select the layout when creating a correspondence template or print channel of an Interactive Communication.
 
 ![Designer: create a layout](assets/claimsubrogationlayout.png)
 
 Follow these steps to create layouts for letters/print channel of Interactive Communications:
 
-1. Analyze the layout and determine the content that is being repeated across all pages; usually page header and footer fit into this category. This content is placed on master pages of layout. The remaining content goes to body pages of the layout. In a policy jacket, the logo and company address can be added to master page header and footer. For example, Notice of Cancelation uses the same layout. 
+1. Analyze the layout and determine the content that is being repeated across all pages; usually page header and footer fit into this category. This content is placed on master pages of layout. The remaining content goes to body pages of the layout. In a policy jacket, the logo and company address can be added to master page header and footer. For example, Notice of Cancelation uses the same layout.
 1. When designing body pages, divide page content into sections. Each section is designed as a subform embedded in layout itself or as a fragment layout. If section contains table, model the section as a layout fragment.
 1. A Layout can be designed as follows:
 
@@ -88,7 +88,7 @@ Perform the following steps to use subform in an XDP template:
 
     1. Navigate to the location to save the file and specify a name for the XDP template.
     1. Select **.xdp** from the **Save as type** drop-down list.
-    
+
     1. Tap **Save**.
 
 ### Use Image Field component in an XDP template {#use-image-field-component-in-an-xdp-template}
@@ -139,7 +139,7 @@ Perform the following steps to use the Table component in the XDP template using
 
     1. Navigate to the location to save the file and specify the name for the XDP template.
     1. Select **.xdp** from the **Save as type** drop-down list.
-    
+
     1. Tap **Save**.
 
 ### Upload XDP template to the AEM Forms server {#uploadxdptemplate}
@@ -187,37 +187,37 @@ Use a subform if you want to capture multiple module content in a top-down verti
 
 Use a field if you want to capture module data or data dictionary element data into your layout's schema (because fields are bound to data) or to display module content on a master page. Remember that content in a master page cannot flow with body page content, so you must ensure that the image field is used as a header logo. This table provides more criteria for deciding when to use a subform or a field in a layout.
 
-<table cellpadding="0" cellspacing="0"> 
- <tbody> 
-  <tr> 
-   <td valign="top"><p><strong>Use a subform when</strong></p> </td> 
-   <td valign="top"><p><strong>Use a text field when</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>It contains a combination of elements, such as a Last Name and First Name</p> </td> 
-   <td valign="top"><p>It contains a single element, such as a Policy Number.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>It includes multiple paragraphs</p> </td> 
-   <td valign="top"><p>Text is wrapped and justified</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>Repeating, optional, and conditional data groups are bound to subforms, to reduce the risk of design errors that could occur if scripts are used to achieve the same results</p> </td> 
-   <td valign="top"><p>Elements such as your organization’s logo and address appear on all pages of a letter/Interactive Communication. In this case, create form fields for those elements and place them on the master page. If you set the field binding to "No Data Binding", the no fields appear as relatable fields in the Letter/Interactive Communication Editor. If you want to relate some type of content to these fields, they must have binding.</p> <p>If your company address contains more than one line of data, use text field with the "Allow Multiple Lines" option to represent the address on the layout.</p> <p>If a text field's data type is set to plain text, the plain text version of the module output is used instead of the rich text version (all formatting is discarded). To preserve the formatting, set the text field’s data type to rich text.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>Text is flowed</p> </td> 
-   <td valign="top"><p>Text fields and image fields are used on master pages. Master pages cannot use subforms as target areas.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>Objects are grouped and organized without binding the subform to a data element</p> </td> 
-   <td valign="top"><p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>There is a text field inside the subform. The subform can grow and not overwrite other objects below it on the layout.</p> </td> 
-   <td valign="top"><p>You need easy access to its data in the post process.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Use a subform when</strong></p> </td>
+   <td><p><strong>Use a text field when</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>It contains a combination of elements, such as a Last Name and First Name</p> </td>
+   <td><p>It contains a single element, such as a Policy Number.</p> </td>
+  </tr>
+  <tr>
+   <td><p>It includes multiple paragraphs</p> </td>
+   <td><p>Text is wrapped and justified</p> </td>
+  </tr>
+  <tr>
+   <td><p>Repeating, optional, and conditional data groups are bound to subforms, to reduce the risk of design errors that could occur if scripts are used to achieve the same results</p> </td>
+   <td><p>Elements such as your organization’s logo and address appear on all pages of a letter/Interactive Communication. In this case, create form fields for those elements and place them on the master page. If you set the field binding to "No Data Binding", the no fields appear as relatable fields in the Letter/Interactive Communication Editor. If you want to relate some type of content to these fields, they must have binding.</p> <p>If your company address contains more than one line of data, use text field with the "Allow Multiple Lines" option to represent the address on the layout.</p> <p>If a text field's data type is set to plain text, the plain text version of the module output is used instead of the rich text version (all formatting is discarded). To preserve the formatting, set the text field’s data type to rich text.</p> </td>
+  </tr>
+  <tr>
+   <td><p>Text is flowed</p> </td>
+   <td><p>Text fields and image fields are used on master pages. Master pages cannot use subforms as target areas.</p> </td>
+  </tr>
+  <tr>
+   <td><p>Objects are grouped and organized without binding the subform to a data element</p> </td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
+   <td><p>There is a text field inside the subform. The subform can grow and not overwrite other objects below it on the layout.</p> </td>
+   <td><p>You need easy access to its data in the post process.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Setting up repetitive elements {#setting-up-repetitive-elements}

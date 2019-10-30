@@ -21,11 +21,12 @@ When you log in to the AEM Forms app, you are redirected to the Home screen.
 By default, the Home screen displays all forms including startpoints and tasks (if the connected server is AEM Forms Workflow enabled), along with the associated thumbnails. You can specify the thumbnails in the AEM Forms server.
 
 The following figure is annotated with call-outs to the essential components on the default Home screen.
-[ ![Forms app home screen](assets/home-screen-1.png)
 
-Click to enlarge
+![Forms app home screen](assets/home-screen-1.png)
 
-](assets/home-screen-1-1.png)
+<!--Click to enlarge
+
+![](assets/home-screen-1-1.png)-->
 
 1. **Menu button**: Tap the **Menu** button to navigate to Tasks, Forms, Outbox, and Settings. If your AEM Forms app is connected to an AEM Forms JEE server, you can see the Tasks option. The Tasks option also stores the drafts created from tasks in a process. For AEM Forms OSGi servers, Tasks option is hidden. Outbox stores the saved forms and drafts before it syncs with the server. All saved forms and drafts in the Outbox are uploaded to the AEM Forms server when the app is [synchronized with the server](../../forms/using/sync-app.md). For information on Settings, see [Update General Settings](../../forms/using/update-general-settings.md). 
 1. **Task or Form**: Tap the listed task or form that you want to work with.

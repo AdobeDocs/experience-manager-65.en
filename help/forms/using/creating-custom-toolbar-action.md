@@ -18,7 +18,7 @@ docset: aem65
 
 Before you create a custom toolbar action, make yourself familiar with [Using Client Side Libraries](/help/sites-developing/clientlibs.md) and [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-## What is an action <br> {#what-is-an-action-br}
+## What is an action {#what-is-an-action-br}
 
 An adaptive form provides a toolbar that lets a form author configure a set of options. These options are defined as actions for the adaptive form. Click the Edit button in the Toolbar for Panel to set the actions supported by adaptive forms.
 
@@ -26,7 +26,7 @@ An adaptive form provides a toolbar that lets a form author configure a set of o
 
 Besides the set of actions provided by default, you can create custom actions in the toolbar. For example, you can add an action to enable the user to review all the adaptive form fields before a form is submitted.
 
-## Steps to create a custom action in an adaptive form <br> {#steps}
+## Steps to create a custom action in an adaptive forms {#steps}
 
 To illustrate the creation of a custom toolbar action, the following steps guide you to create a button for end users to review all the adaptive form fields before submitting a filled form.
 

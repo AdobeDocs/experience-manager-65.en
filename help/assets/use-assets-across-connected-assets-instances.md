@@ -56,11 +56,11 @@ The various roles that are involved to configure and use the capability and thei
 <table>
  <tbody>
   <tr>
-   <th scope="row" style="text-align: center;" valign="middle">Role<br /> </th>
+   <th>Role<br /> </th>
    <th>Scope</th>
-   <th style="text-align: center;">User group</th>
+   <th>User group</th>
    <th>User name in walkthrough</th>
-   <th scope="row" style="text-align: center;" valign="middle">Requirement<br /> </th>
+   <th>Requirement<br /> </th>
   </tr>
   <tr>
    <td>AEM Sites administrator<br /> </td>

@@ -19,68 +19,65 @@ This page documents the details of working with using the Messaging component to
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
+**Compose Message**
+
 <table>
  <tbody>
   <tr>
-   <th colspan="2" style="text-align: center;">Compose Message</th>
-  </tr>
-  <tr>
-   <td style="text-align: center;"> <strong>resourceType</strong></td>
+   <td> <strong>resourceType</strong></td>
    <td><p>social/messaging/components/hbs/composemessage</p> </td>
   </tr>
   <tr>
-   <td style="text-align: center;"> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientllibs</strong></a></td>
+   <td> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientllibs</strong></a></td>
    <td><p>cq.social.hbs.messaging</p> </td>
   </tr>
   <tr>
-   <td style="text-align: center;"> <strong>templates</strong></td>
+   <td> <strong>templates</strong></td>
    <td>/libs/social/messaging/components/hbs/composemessage/composemessage.hbs</td>
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>css</strong></td>
+   <td><strong>css</strong></td>
    <td>/libs/social/messaging/components/hbs/composemessage/clientlibs/composemessage.css</td>
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>properties</strong></td>
+   <td><strong>properties</strong></td>
    <td>see <a href="/help/communities/configure-messaging.md" target="_blank">Configure Messaging</a></td>
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>admin configuration</strong></td>
+   <td><strong>admin configuration</strong></td>
    <td><a href="/help/communities/messaging.md">Configure Messaging</a></td>
   </tr>
  </tbody>
 </table>
 
+**Message List** 
+
+(for Inbox, Sent, and Trash)
+
 <table>
  <tbody>
   <tr>
-   <th colspan="2" style="text-align: center;">Message List</th>
-  </tr>
-  <tr>
-   <td colspan="2" style="text-align: center;">(for Inbox, Sent, and Trash)</td>
-  </tr>
-  <tr>
-   <td style="text-align: center;"> <strong>resourceType</strong></td>
+   <td> <strong>resourceType</strong></td>
    <td><p>social/messaging/components/hbs/messagebox</p> </td>
   </tr>
   <tr>
-   <td style="text-align: center;"> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientllibs</strong></a></td>
+   <td> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientllibs</strong></a></td>
    <td><p>cq.social.hbs.messaging</p> </td>
   </tr>
   <tr>
-   <td style="text-align: center;"> <strong>templates</strong></td>
+   <td> <strong>templates</strong></td>
    <td>/libs/social/messaging/components/hbs/messagebox/messagebox.hbs</td>
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>css</strong></td>
+   <td><strong>css</strong></td>
    <td>/libs/social/messaging/components/hbs/messagebox/clientlibs/messagebox.css</td>
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>properties</strong></td>
+   <td><strong>properties</strong></td>
    <td>see <a href="/help/communities/configure-messaging.md" target="_blank">Configure Messaging</a></td>
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>admin configuration</strong></td>
+   <td><strong>admin configuration</strong></td>
    <td><a href="/help/communities/messaging.md" target="_blank">Configure Messaging</a></td>
   </tr>
  </tbody>

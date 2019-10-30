@@ -292,19 +292,19 @@ The following table describes the recommended size, aspect ratio, and minimum bi
  </tbody>
  <tbody>
   <tr>
-   <td valign="top" width="NaN%"><p>1024 X 768</p> </td>
-   <td valign="top" width="NaN%"><p>4:3</p> </td>
-   <td valign="top" width="NaN%"><p>4500 kbps for most videos.</p> </td>
+   <td><p>1024 X 768</p> </td>
+   <td><p>4:3</p> </td>
+   <td><p>4500 kbps for most videos.</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>1280 X 720</p> </td>
-   <td valign="top" width="NaN%"><p>16:9</p> </td>
-   <td valign="top" width="NaN%"><p>3000 - 6000 kbps, depending on the amount of motion in the video.</p> </td>
+   <td><p>1280 X 720</p> </td>
+   <td><p>16:9</p> </td>
+   <td><p>3000 - 6000 kbps, depending on the amount of motion in the video.</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>1920 X 1080</p> </td>
-   <td valign="top" width="NaN%"><p>16:9</p> </td>
-   <td valign="top" width="NaN%"><p>6000 - 8000 kbps, depending on the amount of motion in the video.</p> </td>
+   <td><p>1920 X 1080</p> </td>
+   <td><p>16:9</p> </td>
+   <td><p>6000 - 8000 kbps, depending on the amount of motion in the video.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -336,20 +336,20 @@ The following table describes how formula results translate to common aspect rat
  </tbody>
  <tbody>
   <tr>
-   <td valign="top" width="NaN%"><p>1.33</p> </td>
-   <td valign="top" width="NaN%"><p>4:3</p> </td>
+   <td><p>1.33</p> </td>
+   <td><p>4:3</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>0.75</p> </td>
-   <td valign="top" width="NaN%"><p>3:4</p> </td>
+   <td><p>0.75</p> </td>
+   <td><p>3:4</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>1.78</p> </td>
-   <td valign="top" width="NaN%"><p>16:9</p> </td>
+   <td><p>1.78</p> </td>
+   <td><p>16:9</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>0.56</p> </td>
-   <td valign="top" width="NaN%"><p>9:16</p> </td>
+   <td><p>0.56</p> </td>
+   <td><p>9:16</p> </td>
   </tr>
  </tbody>
 </table>
@@ -388,20 +388,20 @@ This table describes the data rate of typical connection speeds.
  </tbody>
  <tbody>
   <tr>
-   <td valign="top" width="NaN%"><p>256</p> </td>
-   <td valign="top" width="NaN%"><p>Dial-up connection.</p> </td>
+   <td><p>256</p> </td>
+   <td><p>Dial-up connection.</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>800</p> </td>
-   <td valign="top" width="NaN%"><p>Typical mobile connection. For this connection, target a data rate in the range of 400 to a maximum of 800 for 3G experiences.</p> </td>
+   <td><p>800</p> </td>
+   <td><p>Typical mobile connection. For this connection, target a data rate in the range of 400 to a maximum of 800 for 3G experiences.</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>2000</p> </td>
-   <td valign="top" width="NaN%"><p>Typical broadband desktop connection. For this connection, target a data rate in the 800-2000 Kbps range, with most targets averaging 1200-1500 Kbps.</p> </td>
+   <td><p>2000</p> </td>
+   <td><p>Typical broadband desktop connection. For this connection, target a data rate in the 800-2000 Kbps range, with most targets averaging 1200-1500 Kbps.</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>5000</p> </td>
-   <td valign="top" width="NaN%"><p>Typical high-broadband connection. Encoding in this upper range is not recommended because video delivery at this speed is not available to most consumers.</p> </td>
+   <td><p>5000</p> </td>
+   <td><p>Typical high-broadband connection. Encoding in this upper range is not recommended because video delivery at this speed is not available to most consumers.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -421,12 +421,12 @@ Resolution and data rate are two integrally linked factors that determine video 
  </tbody>
  <tbody>
   <tr>
-   <td valign="top" width="NaN%"><p>320 x 240</p> </td>
-   <td valign="top" width="NaN%"><p>76,800</p> </td>
+   <td><p>320 x 240</p> </td>
+   <td><p>76,800</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>640 x 480</p> </td>
-   <td valign="top" width="NaN%"><p>307,200</p> </td>
+   <td><p>640 x 480</p> </td>
+   <td><p>307,200</p> </td>
   </tr>
  </tbody>
 </table>
@@ -452,34 +452,34 @@ When you choose (or create) a video encoding preset for your master video file, 
  </tbody>
  <tbody>
   <tr>
-   <td valign="top" width="NaN%"><p>240p</p> </td>
-   <td valign="top" width="NaN%"><p>240</p> </td>
-   <td valign="top" width="NaN%"><p>Tiny screen</p> </td>
+   <td><p>240p</p> </td>
+   <td><p>240</p> </td>
+   <td><p>Tiny screen</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>300p</p> </td>
-   <td valign="top" width="NaN%"><p>300</p> </td>
-   <td valign="top" width="NaN%"><p>Small screen typically for mobile devices</p> </td>
+   <td><p>300p</p> </td>
+   <td><p>300</p> </td>
+   <td><p>Small screen typically for mobile devices</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>360p</p> </td>
-   <td valign="top" width="NaN%"><p>360</p> </td>
-   <td valign="top" width="NaN%"><p>Small screen</p> </td>
+   <td><p>360p</p> </td>
+   <td><p>360</p> </td>
+   <td><p>Small screen</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>480p</p> </td>
-   <td valign="top" width="NaN%"><p>480</p> </td>
-   <td valign="top" width="NaN%"><p>Medium screen</p> </td>
+   <td><p>480p</p> </td>
+   <td><p>480</p> </td>
+   <td><p>Medium screen</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>720p</p> </td>
-   <td valign="top" width="NaN%"><p>720</p> </td>
-   <td valign="top" width="NaN%"><p>Large screen</p> </td>
+   <td><p>720p</p> </td>
+   <td><p>720</p> </td>
+   <td><p>Large screen</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>1080p</p> </td>
-   <td valign="top" width="NaN%"><p>1080</p> </td>
-   <td valign="top" width="NaN%"><p>High-definition large screen</p> </td>
+   <td><p>1080p</p> </td>
+   <td><p>1080</p> </td>
+   <td><p>High-definition large screen</p> </td>
   </tr>
  </tbody>
 </table>
@@ -511,28 +511,28 @@ As an example, suppose that your source video is 1920 x 1080. In the following t
  </tbody>
  <tbody>
   <tr>
-   <td valign="top" width="NaN%"><p>Source</p> </td>
-   <td valign="top" width="NaN%"><p>1920 x 1080</p> </td>
-   <td valign="top" width="NaN%"><p>1</p> </td>
-   <td valign="top" width="NaN%"><p>1</p> </td>
+   <td><p>Source</p> </td>
+   <td><p>1920 x 1080</p> </td>
+   <td><p>1</p> </td>
+   <td><p>1</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>Encoded</p> </td>
-   <td valign="top" width="NaN%"><p>960 x 540</p> </td>
-   <td valign="top" width="NaN%"><p>2</p> </td>
-   <td valign="top" width="NaN%"><p>2</p> </td>
+   <td><p>Encoded</p> </td>
+   <td><p>960 x 540</p> </td>
+   <td><p>2</p> </td>
+   <td><p>2</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>Encoded</p> </td>
-   <td valign="top" width="NaN%"><p>640 x 360</p> </td>
-   <td valign="top" width="NaN%"><p>3</p> </td>
-   <td valign="top" width="NaN%"><p>3</p> </td>
+   <td><p>Encoded</p> </td>
+   <td><p>640 x 360</p> </td>
+   <td><p>3</p> </td>
+   <td><p>3</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p>Encoded</p> </td>
-   <td valign="top" width="NaN%"><p>480 x 270</p> </td>
-   <td valign="top" width="NaN%"><p>4</p> </td>
-   <td valign="top" width="NaN%"><p>4</p> </td>
+   <td><p>Encoded</p> </td>
+   <td><p>480 x 270</p> </td>
+   <td><p>4</p> </td>
+   <td><p>4</p> </td>
   </tr>
  </tbody>
 </table>
@@ -1299,42 +1299,34 @@ See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
 
 1. Do one of the following:
 
-<table>
- <tbody>
-  <tr>
-   <td colspan="2" rowspan="2">
-    <table>
+   <table>
      <tbody>
       <tr>
        <td>For a pop-up video viewer experience</td>
        <td>
-        <ol>
-         <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
-         <li>From the drop-down menu, then click or tap <strong>Viewers</strong>.</li>
-         <li>In the left rail, tap or click the video viewer preset name. A preview of the video is opened in a separate page.</li>
-         <li>In the left rail, at the bottom, click <strong>URL</strong>.</li>
-         <li>In the URL dialog box, select and copy the URL to the Clipboard, then past the URL into a simple text editor.</li>
-         <li>Append the copied URL of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>&amp;navigation=&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;</code><br /> </li>
-        </ol> </td>
+       <ol>
+       <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
+       <li>From the drop-down menu, then click or tap <strong>Viewers</strong>.</li>
+       <li>In the left rail, tap or click the video viewer preset name. A preview of the video is opened in a separate page.</li>
+       <li>In the left rail, at the bottom, click <strong>URL</strong>.</li>
+       <li>In the URL dialog box, select and copy the URL to the Clipboard, then past the URL into a simple text editor.</li>
+       <li>Append the copied URL of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
+       </ol> </td>
       </tr>
       <tr>
        <td>For an embedded video viewer experience<br /> </td>
        <td>
-        <ol>
-         <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
-         <li>From the drop-down menu, then click or tap <strong>Viewers</strong>.</li>
-         <li>In the left rail, tap or click the video viewer preset name. A preview of the video is opened in a separate page.</li>
-         <li>In the left rail, at the bottom, click <strong>Embed</strong>.</li>
-         <li>In the Embed Code dialog box, select and copy the entire code to the Clipboard, then paste it into a simple text editor.</li>
-         <li>Append the embed code of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
-        </ol> </td>
+       <ol>
+       <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
+       <li>From the drop-down menu, then click or tap <strong>Viewers</strong>.</li>
+       <li>In the left rail, tap or click the video viewer preset name. A preview of the video is opened in a separate page.</li>
+       <li>In the left rail, at the bottom, click <strong>Embed</strong>.</li>
+       <li>In the Embed Code dialog box, select and copy the entire code to the Clipboard, then paste it into a simple text editor.</li>
+       <li>Append the embed code of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
+       </ol> </td>
       </tr>
      </tbody>
-    </table> </td>
-  </tr>
-  <tr></tr>
- </tbody>
-</table>
+   </table>
 
 ## About video thumbnails in Dynamic Media - Scene7 mode {#about-video-thumbnails-in-dynamic-media-scene-mode}
 

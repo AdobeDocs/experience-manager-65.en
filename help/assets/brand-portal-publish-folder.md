@@ -21,7 +21,7 @@ After you publish an asset or folder, it is available to users in Brand Portal.
 
 If you make subsequent modifications to the original asset or folder in AEM Assets, the changes are not reflected in Brand Portal until you republish the asset or folder. This feature ensures that work-in-progress changes are not available in Brand Portal. Only approved changes that are published by an administrator are available in Brand Portal.
 
-## Publish folders to Brand Portal {#publish-folders-to-brand-portal}
+## Publish folders to Brand Portal {#publish-folders-to-brand-portal-1}
 
 1. From the AEM Assets interface, hover over the desired folder and select **Publish** option from the quick actions.
 

@@ -100,8 +100,8 @@ The **Build Form **tab lists form items that you use in your schema form. The **
 <table>
  <tbody>
   <tr>
-   <td style="text-align: center;"><strong>Component Name</strong></td>
-   <td style="text-align: center;"><strong>Description</strong></td>
+   <td><strong>Component Name</strong></td>
+   <td><strong>Description</strong></td>
   </tr>
   <tr>
    <td>Section Header</td>

@@ -19,7 +19,7 @@ A formset is a collection of HTML5 forms grouped and presented as a single set o
 
 AEM Forms workspace supports formsets. With formsets, multiple forms related to a service or process can be grouped to automate a business process and presented to the end users. In such a scenario, the users can fill the whole set as one and there is no need to file, submit, and track individual forms or processes.
 
-## Attaching a formset to startpoint in an AEM Forms workspace app <br> {#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br}
+## Attaching a formset to startpoint in an AEM Forms workspace app {#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br}
 
 1. Create the business process workflow in Workbench. For more information, see [Workbench help](https://www.adobe.com/go/learn_aemforms_workbench_63).
 1. From the process properties of the startpoint, select **Use A CRX Asset** in Presentation & Data.
@@ -30,7 +30,7 @@ AEM Forms workspace supports formsets. With formsets, multiple forms related to 
 
    ![](assets/2-1.png)
 
-1. Click the **Formset** tab, select the relevant formset from the list, and then click **OK**.  
+1. Click the **Formset** tab, select the relevant formset from the list, and then click **OK**.
 
 1. Deploy the application after updating other relevant process properties.
 
@@ -40,11 +40,11 @@ Once a formset is attached to a startpoint, the startpoint can be invoked, as an
 
 The operations supported on formset through the AEM Forms workspace are:
 
-* Save as draft 
-* Lock 
+* Save as draft
+* Lock
 * Abandon
-* Submit 
-* Add Attachments 
+* Submit
+* Add Attachments
 * Add Notes
 * Move between forms in a formset using Back or Next buttons
 

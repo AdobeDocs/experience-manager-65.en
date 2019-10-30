@@ -38,7 +38,7 @@ Images that are reduced in size when they are delivered dynamically can lose sha
 
 Administrators can create Image Presets. To create an image preset, you can start from scratch or you can start from an existing one and save it under a new name.
 
-## Managing Image Presets {#managing-image-presets}
+## Managing Image Presets {#managing-image-presets-1}
 
 You manage your image presets in AEM by tapping or clicking the AEM logo to access the global navigation console and then tapping or clicking the Tools icon and navigating to **Assets **&gt;** Image Presets**.
 

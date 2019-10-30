@@ -28,47 +28,47 @@ Process Reporting consists of the following modules:
 * [Query Data servlet](#querydataservlet-service-br-p)
 * [Process Reporting user interface](#process-reporting-user-interface-br-p)
 
-## Process Reporting architecture <br> {#process-reporting-architecture-br}
+## Process Reporting architecture {#process-reporting-architecture-br}
 
 ![](assets/processreportingarchitecture.png)
 
 ## Process Reporting modules {#process-reporting-modules}
 
-### ProcessDataPublisher service <br> {#processdatapublisher-service-br}
+### ProcessDataPublisher service {#processdatapublisher-service-br}
 
 The ProcessDataPublisher server runs periodically on the AEM Forms database and extracts the data that has changed since the last run of the service. It then publishes the data to the Process Data Storage service.
 
 For details on configuring the service, see [Configure ProcessDataPublisher service](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
 
-### ProcessDataStorageProvider service <br> {#processdatastorageprovider-service-br}
+### ProcessDataStorageProvider service {#processdatastorageprovider-service-br}
 
 The ProcessDataStorageProvider service receives process data from the ProcessDataPublisher service and saves the data to the Process Reporting repository.
 
 For details on configuring the service, see [Configure ProcessDataStorageProvider service](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
 
-### OSGi service <br> {#osgi-service-br}
+### OSGi service {#osgi-service-br}
 
 The QueryDataServlet uses this service to obtain the reporting data from the Process Reporting repository.
 
-### QueryDataServlet service <br> {#querydataservlet-service-br}
+### QueryDataServlet service {#querydataservlet-service-br}
 
 The QueryDataServlet service accepts queries from Process Reporting user interface.
 
 The service then uses OSGi services to obtain the relevant reporting data, processes the data, and returns the data to the user interface.
 
-### Process Reporting user interface <br> {#process-reporting-user-interface-br}
+### Process Reporting user interface {#process-reporting-user-interface-br}
 
 The Process Reporting user interface is a Web browser-based interface. You use this interface to view process and task information that is published from the AEM Forms database.
 
 For an introduction to the Process Reporting user interface, see [Process Reporting user interface](/help/forms/using/process-reporting/introduction-process-reporting.md).
 
-### QueryDataServlet service <br> {#querydataservlet-service-br-1}
+### QueryDataServlet service {#querydataservlet-service-br-1}
 
 The QueryDataServlet service accepts queries from Process Reporting user interface.
 
 The service then uses OSGi services to obtain the relevant reporting data, processes the data, and returns the data to the user interface.
 
-### Custom Reports <br> {#custom-reports-br}
+### Custom Reports {#custom-reports-br}
 
 You can create your own custom reports and display these reports in the Custom Reports tab of the Process Reporting user interface.
 

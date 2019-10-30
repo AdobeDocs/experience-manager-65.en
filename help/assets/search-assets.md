@@ -21,9 +21,9 @@ AEM supports the following use cases and this article describes the usage, conce
 <table>
  <tbody>
   <tr>
-   <th scope="col" style="text-align: center;"><strong>Search assets</strong></th>
-   <th scope="col" style="text-align: center;"><strong>Configuration and administration</strong></th>
-   <th scope="col" style="text-align: center;"><strong>Work with search results</strong></th>
+   <th><strong>Search assets</strong></th>
+   <th><strong>Configuration and administration</strong></th>
+   <th><strong>Work with search results</strong></th>
   </tr>
   <tr>
    <td><a disablelinktracking="false" href="#searchbasics">Basic searches</a></td>
@@ -203,8 +203,8 @@ You can for assets based on exact values of specific metadata fields, such as, t
 <table>
  <tbody>
   <tr>
-   <th scope="col" style="text-align: center;"><strong>Metadata field</strong></th>
-   <th scope="col" style="text-align: center;"><strong>Facet value and usage</strong><br /> </th>
+   <th><strong>Metadata field</strong></th>
+   <th><strong>Facet value and usage</strong><br /> </th>
   </tr>
   <tr>
    <td>Title</td>
@@ -350,46 +350,46 @@ You can pass the following request parameters in a URL to launch the asset selec
 <table>
  <tbody>
   <tr>
-   <td valign="top"><p><strong>Name</strong></p> </td>
-   <td valign="top"><p><strong>Values</strong></p> </td>
-   <td valign="top"><p><strong>Example</strong></p> </td>
-   <td valign="top"><p><strong>Purpose</strong></p> </td>
+   <td><p><strong>Name</strong></p> </td>
+   <td><p><strong>Values</strong></p> </td>
+   <td><p><strong>Example</strong></p> </td>
+   <td><p><strong>Purpose</strong></p> </td>
   </tr>
   <tr>
-   <td valign="top"><p>resource suffix (B)</p> </td>
-   <td valign="top"><p>Folder path as the resource suffix in the URL:</p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png">https://localhost:4502/aem/assetpicker.html</a>/&amp;lt;folder_path&amp;gt;</p> </td>
-   <td valign="top"><p>To launch the asset selector with a particular folder selected, for example with the folder <a href="https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images">/content/dam/we-retail/en/activities</a>, selected, the URL should be of the form: <a href="https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images">https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images</a></p> </td>
-   <td valign="top"><p>If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix.</p> </td>
+   <td><p>resource suffix (B)</p> </td>
+   <td><p>Folder path as the resource suffix in the URL:</p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png">https://localhost:4502/aem/assetpicker.html</a>/&amp;lt;folder_path&amp;gt;</p> </td>
+   <td><p>To launch the asset selector with a particular folder selected, for example with the folder <a href="https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images">/content/dam/we-retail/en/activities</a>, selected, the URL should be of the form: <a href="https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images">https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images</a></p> </td>
+   <td><p>If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix.</p> </td>
   </tr>
   <tr>
-   <td valign="top"><p>mode</p> </td>
-   <td valign="top"><p>single, multiple</p> </td>
-   <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?mode=multiple">https://localhost:4502/aem/assetpicker.html?mode=multiple</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mode=single">https://localhost:4502/aem/assetpicker.html?mode=single</a></p> </td>
-   <td valign="top"><p>In multiple mode, you can select several assets simultaneously using the asset selector.</p> </td>
+   <td><p>mode</p> </td>
+   <td><p>single, multiple</p> </td>
+   <td><p><a href="https://localhost:4502/aem/assetpicker.html?mode=multiple">https://localhost:4502/aem/assetpicker.html?mode=multiple</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mode=single">https://localhost:4502/aem/assetpicker.html?mode=single</a></p> </td>
+   <td><p>In multiple mode, you can select several assets simultaneously using the asset selector.</p> </td>
   </tr>
   <tr>
-   <td valign="top"><p>mimetype</p> </td>
-   <td valign="top"><p>mimetype(s) (/jcr:content/metadata/dc:format) of an asset (wildcard also supported)</p> </td>
-   <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=image/png">https://localhost:4502/aem/assetpicker.html?mimetype=image/png</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*png">https://localhost:4502/aem/assetpicker.html?mimetype=*png</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*presentation">https://localhost:4502/aem/assetpicker.html?mimetype=*presentation</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png">https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png</a></p> </td>
-   <td valign="top"><p>Use it to filter assets based on MIME type(s)</p> </td>
+   <td><p>mimetype</p> </td>
+   <td><p>mimetype(s) (/jcr:content/metadata/dc:format) of an asset (wildcard also supported)</p> </td>
+   <td><p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=image/png">https://localhost:4502/aem/assetpicker.html?mimetype=image/png</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*png">https://localhost:4502/aem/assetpicker.html?mimetype=*png</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*presentation">https://localhost:4502/aem/assetpicker.html?mimetype=*presentation</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png">https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png</a></p> </td>
+   <td><p>Use it to filter assets based on MIME type(s)</p> </td>
   </tr>
   <tr>
-   <td valign="top"><p>dialog</p> </td>
-   <td valign="top"><p>true, false</p> </td>
-   <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?dialog=true">https://localhost:4502/aem/assetpicker.html?dialog=true</a></p> </td>
-   <td valign="top"><p>Use these parameters to open the asset selector as <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/layouts/dialog/index.html" target="_blank">Granite Dialog</a>. This option is only applicable when you launch the asset selector through <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/pathfield/index.html?highlight=pathfield" target="_blank">Granite Path Field</a>, and configure it as pickerSrc URL.</p> </td>
+   <td><p>dialog</p> </td>
+   <td><p>true, false</p> </td>
+   <td><p><a href="https://localhost:4502/aem/assetpicker.html?dialog=true">https://localhost:4502/aem/assetpicker.html?dialog=true</a></p> </td>
+   <td><p>Use these parameters to open the asset selector as <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/layouts/dialog/index.html" target="_blank">Granite Dialog</a>. This option is only applicable when you launch the asset selector through <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/pathfield/index.html?highlight=pathfield" target="_blank">Granite Path Field</a>, and configure it as pickerSrc URL.</p> </td>
   </tr>
   <tr>
-   <td valign="top"><p>assettype (S)</p> </td>
-   <td valign="top"><p>images, documents, multimedia, archives</p> </td>
-   <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?assettype=images">https://localhost:4502/aem/assetpicker.html?assettype=images</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?assettype=documents">https://localhost:4502/aem/assetpicker.html?assettype=documents</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?assettype=multimedia">https://localhost:4502/aem/assetpicker.html?assettype=multimedia</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?assettype=archives">https://localhost:4502/aem/assetpicker.html?assettype=archives</a></p> </td>
-   <td valign="top"><p>Use this option to filter asset types based on the value passed.</p> </td>
+   <td><p>assettype (S)</p> </td>
+   <td><p>images, documents, multimedia, archives</p> </td>
+   <td><p><a href="https://localhost:4502/aem/assetpicker.html?assettype=images">https://localhost:4502/aem/assetpicker.html?assettype=images</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?assettype=documents">https://localhost:4502/aem/assetpicker.html?assettype=documents</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?assettype=multimedia">https://localhost:4502/aem/assetpicker.html?assettype=multimedia</a></p> <p><a href="https://localhost:4502/aem/assetpicker.html?assettype=archives">https://localhost:4502/aem/assetpicker.html?assettype=archives</a></p> </td>
+   <td><p>Use this option to filter asset types based on the value passed.</p> </td>
   </tr>
   <tr>
-   <td valign="top"><p>root</p> </td>
-   <td valign="top"><p>&amp;lt;folder_path&amp;gt;</p> </td>
-   <td valign="top"><p><a href="https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities">https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities</a></p> </td>
-   <td valign="top"><p>Use this option to specify the root folder for the asset selector. In this case, the asset selector lets you select only child assets (direct/indirect) under the root folder.</p> </td>
+   <td><p>root</p> </td>
+   <td><p>&amp;lt;folder_path&amp;gt;</p> </td>
+   <td><p><a href="https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities">https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities</a></p> </td>
+   <td><p>Use this option to specify the root folder for the asset selector. In this case, the asset selector lets you select only child assets (direct/indirect) under the root folder.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -529,8 +529,8 @@ You can search for digital assets based on one or more of the following properti
 <table>
  <tbody>
   <tr>
-   <th scope="col" style="text-align: center;"><strong>Search field</strong><br /> </th>
-   <th scope="col" style="text-align: center;"><strong>Search property values</strong><br /> </th>
+   <th><strong>Search field</strong><br /> </th>
+   <th><strong>Search property values</strong><br /> </th>
   </tr>
   <tr>
    <td>MIME Types</td>

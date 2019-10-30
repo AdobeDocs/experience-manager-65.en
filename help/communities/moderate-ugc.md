@@ -58,74 +58,74 @@ The actions which can be performed on posted content (UGC) varies depending on t
 <table>
  <tbody>
   <tr>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"><strong>Admin</strong></td>
-   <td style="text-align: center;"><strong>Moderator</strong></td>
-   <td style="text-align: center;"><strong>Creator</strong></td>
-   <td style="text-align: center;"><strong>Member</strong></td>
-   <td style="text-align: center;"><strong>Visitor</strong></td>
-   <td style="text-align: center;"><strong>Event<br /> Triggered</strong></td>
-   <td style="text-align: center;" width="65%"><strong>Premoderated</strong></td>
+   <td> </td>
+   <td><strong>Admin</strong></td>
+   <td><strong>Moderator</strong></td>
+   <td><strong>Creator</strong></td>
+   <td><strong>Member</strong></td>
+   <td><strong>Visitor</strong></td>
+   <td><strong>Event<br /> Triggered</strong></td>
+   <td><strong>Premoderated</strong></td>
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>Edit/<br /> Delete</strong></td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
+   <td><strong>Edit/<br /> Delete</strong></td>
+   <td>X</td>
+   <td>X</td>
+   <td>X</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>Cut</strong></td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
+   <td><strong>Cut</strong></td>
+   <td>X</td>
+   <td>X</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>Deny</strong></td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
+   <td><strong>Deny</strong></td>
+   <td>X</td>
+   <td>X</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td>X</td>
+   <td> </td>
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>Close/<br /> Reopen</strong></td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X<br /> </td>
+   <td><strong>Close/<br /> Reopen</strong></td>
+   <td>X</td>
+   <td>X</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td>X</td>
+   <td>X<br /> </td>
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>Flag/<br /> Unflag</strong></td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: left;"> </td>
+   <td><strong>Flag/<br /> Unflag</strong></td>
+   <td>X</td>
+   <td>X</td>
+   <td> </td>
+   <td>X</td>
+   <td> </td>
+   <td>X</td>
+   <td> </td>
   </tr>
   <tr>
-   <td style="text-align: center;"><strong>Allow</strong></td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;"> </td>
-   <td style="text-align: center;">X</td>
-   <td style="text-align: center;">X</td>
+   <td><strong>Allow</strong></td>
+   <td>X</td>
+   <td>X</td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td>X</td>
+   <td>X</td>
   </tr>
  </tbody>
 </table>
@@ -178,11 +178,10 @@ The Allow action is an option for UGC that has been Flagged, Denied or has not b
 
 ### Premoderation {#premoderation}
 
-When UGC is premoderated, the post will not appear on the published site until approved by a moderation action. During creation of a [community site](/help/communities/sites-console.md), checking the box ` [Content is Premoderated](/help/communities/sites-console.md#moderation)` will enable premoderation for the entire site. Once components are placed on a page, components which support moderation can be configured for premoderation using a setting in their edit dialog :
+When UGC is premoderated, the post will not appear on the published site until approved by a moderation action. During creation of a [community site](/help/communities/sites-console.md), checking the box `[Content is Premoderated](/help/communities/sites-console.md#moderation)` will enable premoderation for the entire site. Once components are placed on a page, components which support moderation can be configured for premoderation using a setting in their edit dialog :
 
 * [comments](/help/communities/comments.md) and [reviews](/help/communities/reviews.md)
   on **User Moderation** tab, check **Pre-Moderation**
-
 * [forum](/help/communities/forum.md), [ideation](/help/communities/ideation-feature.md), [QnA](/help/communities/working-with-qna.md), and [calendar](/help/communities/calendar.md)
   on **Settings** tab, check **Moderated**
 
@@ -244,7 +243,7 @@ The list of positive and negative watchwords can be customized as can be the sen
 
 The default list of watchwords may be entered as properties of a node in the respository, similar to the default or by overriding the default by configuring the OSGi service `sentimentprocess.name`with the list of words.
 
-The **sentimentprocess.name** may also be modifed to reference the location of a custom set of sentiment rules.
+The **sentimentprocess.name** may also be modified to reference the location of a custom set of sentiment rules.
 
 To configure sentiment and watchwords :
 

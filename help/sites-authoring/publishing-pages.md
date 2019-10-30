@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Publishing Pages{#publishing-pages}
+# Publishing Pages {#publishing-pages}
 
 Once you have created and reviewed your content on the author environment, the goal is to [make it available on your public website](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (your publish environment).
 
@@ -44,7 +44,7 @@ You can also publish/unpublish a page immediately or at a predefined date/time i
 >* A message will be displayed briefly to notify you that the workflow was triggered.
 >
 
-## Publishing Pages {#publishing-pages}
+## Publishing Pages {#publishing-pages-1}
 
 Depending on your location, you can publish:
 
@@ -187,7 +187,7 @@ To publish or unpublish a page using Manage Publication:
    The resources are grouped by the workflows triggered and each given options to:
 
     * Define the title of the workflow.
-    * Keep the workflow package, provided that the workflow has [multi-resourse support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+    * Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
     * Define a title of the workflow package if the option to keep the workflow package was chosen.
 
    Click **Publish** or **Publish Later **to complete the publication.

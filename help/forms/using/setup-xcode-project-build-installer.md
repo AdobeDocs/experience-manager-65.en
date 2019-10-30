@@ -33,34 +33,34 @@ The following image displays the extracted contents of the `adobe-lc-mobileworks
 
 The following table details contents of the `adobe-lc-mobileworkspace-src-[version]/ios` folder.
 
-<table cellpadding="4" cellspacing="0">
+<table>
  <tbody>
   <tr>
-   <th class="row-nocellborder" valign="top" width="NaN%"><p>Directory</p> </th>
-   <th class="cellrowborder" valign="top" width="NaN%"><p>Content</p> </th>
+   <th><p>Directory</p> </th>
+   <th><p>Content</p> </th>
   </tr>
   <tr>
-   <td class="row-nocellborder" headers="d19e270 " valign="top" width="NaN%"><p><code>CordovaLib</code></p> </td>
-   <td class="cellrowborder" headers="d19e273 " valign="top" width="NaN%"><p>PhoneGap SDK 6.4.0</p> </td>
+   <td><p><code>CordovaLib</code></p> </td>
+   <td><p>PhoneGap SDK 6.4.0</p> </td>
   </tr>
   <tr>
-   <td class="row-nocellborder" headers="d19e270 " valign="top" width="NaN%"><p><code>AEM Forms</code></p> </td>
-   <td class="cellrowborder" headers="d19e273 " valign="top" width="NaN%"><p>Resources, PhoneGap plug-ins, and application's main module</p> </td>
+   <td><p><code>AEM Forms</code></p> </td>
+   <td><p>Resources, PhoneGap plug-ins, and application's main module</p> </td>
   </tr>
   <tr>
-   <td class="row-nocellborder" headers="d19e270 " valign="top" width="NaN%"><p><code>AEM Forms.xcodeproj</code></p> </td>
-   <td class="cellrowborder" headers="d19e273 " valign="top" width="NaN%"><p>Xcode project for AEM Forms app</p> </td>
+   <td><p><code>AEM Forms.xcodeproj</code></p> </td>
+   <td><p>Xcode project for AEM Forms app</p> </td>
   </tr>
   <tr>
-   <td class="row-nocellborder" headers="d19e270 " valign="top" width="NaN%"><p><code>www</code></p> </td>
-   <td class="cellrowborder" headers="d19e273 " valign="top" width="NaN%"><p>HTML, CSS, images, and JavaScript files for the AEM Forms app project</p> </td>
+   <td><p><code>www</code></p> </td>
+   <td><p>HTML, CSS, images, and JavaScript files for the AEM Forms app project</p> </td>
   </tr>
  </tbody>
 </table>
 
 For detailed information about Code Signing and adding devices to the iOS Provisioning Portal, see [iOS Code Signing Setup, Process, and Troubleshooting](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html).
 
-## Build standard AEM Forms app <br> {#set-up-the-xcode-project}
+## Build standard AEM Forms app {#set-up-the-xcode-project}
 
 1. Perform the following steps to set up a project in Xcode and provide a signing identity:
 
@@ -130,7 +130,7 @@ For detailed information about Code Signing and adding devices to the iOS Provis
 1. Select **Product** &gt; **Clean**.
 1. Select **Product** &gt; **Build**.
 
-## Build the installer for the AEM Forms app <br> {#build-the-installer-for-the-mobile-workspace-app}
+## Build the installer for the AEM Forms app {#build-the-installer-for-the-mobile-workspace-app}
 
 You need to archive the Xcode project to build the installer (an .ipa file) and a property list (a .plist file) file. The property list file contains configuration information of the hosted in-house app, such as the name and the hosting location of the app. For more information about property list file, see [About Information Property List Files](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
 

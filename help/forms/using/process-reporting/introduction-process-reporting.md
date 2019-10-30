@@ -58,7 +58,7 @@ You can then save the report filters to be run at a later date or time.
 
 AEM Forms servers run numerous processes in parallel. These processes keep on transitioning from one state to another. By publishing Forms data to the Process Reporting repository at regular intervals, Process Reporting retains the transitioning information about the processes running in AEM Forms.
 
-### Access Control <br> {#access-control-br}
+### Access Control {#access-control-br}
 
 ![](assets/untitled.png)
 

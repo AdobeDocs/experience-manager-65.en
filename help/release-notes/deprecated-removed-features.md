@@ -163,7 +163,7 @@ This section lists features and capabilities that have been removed from AEM 6.5
  <tbody>
   <tr>
    <td><strong>Area </strong></td>
-   <td width="40%"><strong>Feature</strong></td>
+   <td><strong>Feature</strong></td>
    <td><strong>Replacement</strong></td>
   </tr>
   <tr>

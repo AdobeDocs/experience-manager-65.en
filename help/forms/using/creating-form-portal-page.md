@@ -68,7 +68,7 @@ The **Edit **dialog includes several tabs that provide configuration options des
    <td>Configures the folders where assets are uploaded using AEM Forms UI. By default, it lists all uploaded assets. For more information about AEM Forms UI, see <a href="../../forms/using/introduction-managing-forms.md" target="_blank">Introduction to managing forms</a>.</td>
   </tr>
   <tr>
-   <td style="text-align: center;"><p style="text-align: left;"><span class="uicontrol"><strong>Display</strong></code></p> </td>
+   <td><p style="text-align: left;"><span class="uicontrol"><strong>Display</strong></code></p> </td>
    <td>Title Text</td>
    <td>Title for the Search &amp; Lister component. The default title is <strong>Forms Portal.</strong></td>
   </tr>
@@ -218,7 +218,7 @@ To configure the Tags Predicate component:
 
 The selected tags appear in the Search pane along with the check boxes for selection. Users can now narrow down their search based on the tags.
 
-## List forms on a page <br> {#list-forms-on-a-page-br}
+## List forms on a page {#list-forms-on-a-page-br}
 
 To list forms on a page, add the **[!UICONTROL Search & Lister]** Component to the page and configure the **[!UICONTROL List Pane]**. To enable the end users to search forms with date, text, and tags, add a **[!UICONTROL Search Pane]** component.
 
@@ -236,7 +236,7 @@ The following image depicts the Search & Lister component when opened on a mobil
 
 Search & Lister component
 
-## Customizing a forms portal page <br> {#customizing-a-forms-portal-page-br}
+## Customizing a forms portal page {#customizing-a-forms-portal-page-br}
 
 You can customize a forms portal page to provide a distinct appearance to the page. You can also add metadata to improve search experience, change layout of the page, and add custom CSS styles. For more information, see [Customizing templates for Forms Portal Components](../../forms/using/customizing-templates-forms-portal-components.md).
 

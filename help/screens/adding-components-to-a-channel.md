@@ -256,7 +256,8 @@ The transition component has the following properties:
    <td><strong>Description</strong></td>
   </tr>
   <tr>
-   <td colspan="2" valign="bottom"><strong>Transition</strong></td>
+   <td><strong>Transition</strong></td>
+   <td></td>
   </tr>
   <tr>
    <td><strong><em>Type</em></strong></td>
@@ -271,14 +272,16 @@ The transition component has the following properties:
     </ul> </td>
   </tr>
   <tr>
-   <td colspan="2"><strong>Sequence</strong></td>
+   <td><strong>Sequence</strong></td>
+   <td></td>
   </tr>
   <tr>
    <td><strong><em>Duration</em></strong></td>
    <td>Select the entire duration of the transition. By default, it is set to 600 ms.</td>
   </tr>
   <tr>
-   <td colspan="2"><strong>Activation</strong></td>
+   <td><strong>Activation</strong></td>
+   <td></td>
   </tr>
   <tr>
    <td><strong><em>Active From</em></strong></td>
