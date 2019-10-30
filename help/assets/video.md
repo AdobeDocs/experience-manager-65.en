@@ -1299,42 +1299,34 @@ See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
 
 1. Do one of the following:
 
-<table>
- <tbody>
-  <tr>
-   <td colspan="2" rowspan="2">
-    <table>
+   <table>
      <tbody>
       <tr>
        <td>For a pop-up video viewer experience</td>
        <td>
-        <ol>
-         <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
-         <li>From the drop-down menu, then click or tap <strong>Viewers</strong>.</li>
-         <li>In the left rail, tap or click the video viewer preset name. A preview of the video is opened in a separate page.</li>
-         <li>In the left rail, at the bottom, click <strong>URL</strong>.</li>
-         <li>In the URL dialog box, select and copy the URL to the Clipboard, then past the URL into a simple text editor.</li>
-         <li>Append the copied URL of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>&amp;navigation=&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;</code><br /> </li>
-        </ol> </td>
+       <ol>
+       <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
+       <li>From the drop-down menu, then click or tap <strong>Viewers</strong>.</li>
+       <li>In the left rail, tap or click the video viewer preset name. A preview of the video is opened in a separate page.</li>
+       <li>In the left rail, at the bottom, click <strong>URL</strong>.</li>
+       <li>In the URL dialog box, select and copy the URL to the Clipboard, then past the URL into a simple text editor.</li>
+       <li>Append the copied URL of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
+       </ol> </td>
       </tr>
       <tr>
        <td>For an embedded video viewer experience<br /> </td>
        <td>
-        <ol>
-         <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
-         <li>From the drop-down menu, then click or tap <strong>Viewers</strong>.</li>
-         <li>In the left rail, tap or click the video viewer preset name. A preview of the video is opened in a separate page.</li>
-         <li>In the left rail, at the bottom, click <strong>Embed</strong>.</li>
-         <li>In the Embed Code dialog box, select and copy the entire code to the Clipboard, then paste it into a simple text editor.</li>
-         <li>Append the embed code of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
-        </ol> </td>
+       <ol>
+       <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
+       <li>From the drop-down menu, then click or tap <strong>Viewers</strong>.</li>
+       <li>In the left rail, tap or click the video viewer preset name. A preview of the video is opened in a separate page.</li>
+       <li>In the left rail, at the bottom, click <strong>Embed</strong>.</li>
+       <li>In the Embed Code dialog box, select and copy the entire code to the Clipboard, then paste it into a simple text editor.</li>
+       <li>Append the embed code of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
+       </ol> </td>
       </tr>
      </tbody>
-    </table> </td>
-  </tr>
-  <tr></tr>
- </tbody>
-</table>
+   </table>
 
 ## About video thumbnails in Dynamic Media - Scene7 mode {#about-video-thumbnails-in-dynamic-media-scene-mode}
 

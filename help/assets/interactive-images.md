@@ -112,50 +112,41 @@ However, in complex cases, the Quickview URL has different varying elements in a
 Consider the following examples of Quickview URLs and their resulting hotspot variables:
 
 <table>
- <tbody>
+  <tbody>
   <tr>
-   <td colspan="2" rowspan="3">
-    <table>
-     <tbody>
-      <tr>
-       <td><p>Single SKU, found in the query string.</p> </td>
-       <td><p>The recorded Quickview URLs include the following:</p>
-        <ul>
-         <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-         <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-         <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-         <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
-        </ul> <p>The only variable part in the URL is the value of the productId= query string parameter, and it is clearly a SKU value. Therefore, our hotspots only need SKU fields populated with values like <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
-      </tr>
-      <tr>
-       <td><p>Single SKU, found in the URL path.</p> </td>
-       <td><p>The recorded Quickview URLs include the following:</p>
-        <ul>
-         <li><p><code>https://server/product/6422350843</code></p> </li>
-         <li><p><code>https://server/product/1607745002</code></p> </li>
-         <li><p><code>https://server/product/0086724882</code></p> </li>
-        </ul> <p>The variable part is in the last portion of the path, and it becomes the SKU value of the hotspots: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
-      </tr>
-      <tr>
-       <td><p>SKU and category ID in the query string.</p> </td>
-       <td><p>The recorded Quickview URLs include the following:</p>
-        <ul>
-         <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-         <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-         <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
-        </ul> <p>In this case, there are two varying parts in the URL. The SKU is stored in the <code>prodId</code> parameter and the category ID<code></code> is stored in the <code>category=</code> parameter.</p> <p>As such, the hotspot definitions are pairs. That is, a SKU value and an additional variable called <code>categoryId</code>. The resulting pairs are the following:</p>
-        <ul>
-         <li><p>SKU is <strong><code>305466</code></strong> and <code>categoryId</code> is <code>1100004</code>.</p> </li>
-         <li><p>SKU is <strong><code>310181</code></strong> and <code>categoryId</code> is <strong><code>1100004</code></strong>.</p> </li>
-         <li><p>SKU is <strong><code>308706</code></strong> and <code>categoryId</code> is <strong><code>1740148</code></strong>.</p> </li>
-        </ul> <p> </p> </td>
-      </tr>
-     </tbody>
-    </table> </td>
+    <td><p>Single SKU, found in the query string.</p> </td>
+    <td><p>The recorded Quickview URLs include the following:</p>
+    <ul>
+      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+    </ul> <p>The only variable part in the URL is the value of the productId= query string parameter, and it is clearly a SKU value. Therefore, our hotspots only need SKU fields populated with values like <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
-  <tr></tr>
-  <tr></tr>
- </tbody>
+  <tr>
+    <td><p>Single SKU, found in the URL path.</p> </td>
+    <td><p>The recorded Quickview URLs include the following:</p>
+    <ul>
+      <li><p><code>https://server/product/6422350843</code></p> </li>
+      <li><p><code>https://server/product/1607745002</code></p> </li>
+      <li><p><code>https://server/product/0086724882</code></p> </li>
+    </ul> <p>The variable part is in the last portion of the path, and it becomes the SKU value of the hotspots: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
+  </tr>
+  <tr>
+    <td><p>SKU and category ID in the query string.</p> </td>
+    <td><p>The recorded Quickview URLs include the following:</p>
+    <ul>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+    </ul> <p>In this case, there are two varying parts in the URL. The SKU is stored in the <code>prodId</code> parameter and the category ID<code></code> is stored in the <code>category=</code> parameter.</p> <p>As such, the hotspot definitions are pairs. That is, a SKU value and an additional variable called <code>categoryId</code>. The resulting pairs are the following:</p>
+    <ul>
+      <li><p>SKU is <strong><code>305466</code></strong> and <code>categoryId</code> is <code>1100004</code>.</p> </li>
+      <li><p>SKU is <strong><code>310181</code></strong> and <code>categoryId</code> is <strong><code>1100004</code></strong>.</p> </li>
+      <li><p>SKU is <strong><code>308706</code></strong> and <code>categoryId</code> is <strong><code>1740148</code></strong>.</p> </li>
+    </ul> <p> </p> </td>
+  </tr>
+  </tbody>
 </table>
 
 **Example**

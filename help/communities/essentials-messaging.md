@@ -19,11 +19,10 @@ This page documents the details of working with using the Messaging component to
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
+**Compose Message**
+
 <table>
  <tbody>
-  <tr>
-   <th colspan="2" style="text-align: center;">Compose Message</th>
-  </tr>
   <tr>
    <td> <strong>resourceType</strong></td>
    <td><p>social/messaging/components/hbs/composemessage</p> </td>
@@ -51,14 +50,12 @@ This page documents the details of working with using the Messaging component to
  </tbody>
 </table>
 
+**Message List** 
+
+(for Inbox, Sent, and Trash)
+
 <table>
  <tbody>
-  <tr>
-   <th colspan="2" style="text-align: center;">Message List</th>
-  </tr>
-  <tr>
-   <td colspan="2" style="text-align: center;">(for Inbox, Sent, and Trash)</td>
-  </tr>
   <tr>
    <td> <strong>resourceType</strong></td>
    <td><p>social/messaging/components/hbs/messagebox</p> </td>

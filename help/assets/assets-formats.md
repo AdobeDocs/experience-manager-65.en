@@ -90,303 +90,28 @@ The Adobe Camera Raw library enables AEM Assets to ingest raw images. For detail
 
 ## Supported document formats {#supported-document-formats}
 
-<table>
- <tbody>
-  <tr>
-   <th colspan="8" style="text-align: center;">Asset Management Features</th>
-   <th colspan="5" style="text-align: center;">Dynamic Media Features</th>
-  </tr>
-  <tr>
-   <th> </th>
-   <th>Storage</th>
-   <th>Metadata management</th>
-   <th>Fulltext extraction</th>
-   <th>Metadata extraction</th>
-   <th>Thumbnail generation</th>
-   <th>Sub-asset extraction</th>
-   <th>Metadata writeback</th>
-   <th>Upload (Input format)</th>
-   <th>Create image preset (Output format)</th>
-   <th>Preview dynamic rendition</th>
-   <th>Deliver dynamic rendition</th>
-   <th>Download dynamic rendition</th>
-  </tr>
-  <tr>
-   <th>Format</th>
-   <td colspan="12"> </td>
-  </tr>
-  <tr>
-   <td><a href="/help/assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats"><strong>AI</strong></a></td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="Microsoft Word">DOC</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>DOCX</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="OpenDocument Text">ODT</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="Adobe PDF"><a href="/help/assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats"><strong>PDF</strong></a></td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-  </tr>
-  <tr>
-   <td title="HTML Hypertext">HTML</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="Rich Text Format">RTF</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="Plain Text Format">TXT</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="Microsoft Excel">XLS</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>XLSX</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="Open Document Spreadsheet">ODS</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="Microsoft Powerpoint">PPT</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x<br /> </td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>PPTX</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="Open Document Presentation">ODP</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="Adobe In Design"><strong><a href="/help/assets/managing-image-presets.md#indesign-indd-file-format">INDD</a></strong></td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="Adobe Postscript">PS</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="QuarkXPress">QXP</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>EPUB</td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
- </tbody>
-</table>
+| Asset Management Features ||||||||Dynamic Media Features |||||
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|| Storage | Metadata management | Metadata extraction | Thumbnail generation | Interactive editing | Metadata writeback | Insights | Upload (Input format) | Create image preset (Output format) | Preview dynamic rendition | Deliver dynamic rendition | Download dynamic rendition |
+| Format |||||||||||||
+| AI | x | x | | x | x | x | x| x | | | | |
+| DOC| x | x | x | x | | | | | | | | |
+| DOCX | x | x | x | x | | | | | | | | |
+| ODT| x | x | x | | | | | | | | | |
+| PDF| x | x | x | x | x | x | x| x | x | x | x | x |
+| HTML | x | x | x | | | | | | | | | |
+| RTF| x | x | x | | | | | | | | | |
+| TXT| x | x | x | | | | | | | | | |
+| XLS| x | x | x | | | | | | | | | |
+| XLSX | x | x | x | x | | | | | | | | |
+| ODS| x | x | x | | | | | | | | | |
+| PPT| x | x | x | x | x | x | | | | | | |
+| PPTX | x | x | x | x | x | x | | | | | | |
+| ODP| x | x | x | | | | | | | | | |
+| INDD | x | x | | x | x | x | x| x | | | | |
+| PS | x | x | | | | | | | | | | |
+| QXP| x | x | | | | | | | | | | |
+| EPUB | x | x | | x | x | | | | | | | |
 
 >[!NOTE]
 >
@@ -531,158 +256,29 @@ The Adobe Camera Raw library enables AEM Assets to ingest raw images. For detail
 
 ## Supported archive formats {#supported-archive-formats}
 
-<table>
- <tbody>
-  <tr></tr>
-  <tr>
-   <th colspan="6" style="text-align: center;">Features</th>
-   <th> </th>
-  </tr>
-  <tr>
-   <th> </th>
-   <th>Storage</th>
-   <th>Versioning</th>
-   <th>Workflow</th>
-   <th>Publishing</th>
-   <th>Access Control</th>
-   <th>Dynamic Media Delivery</th>
-  </tr>
-  <tr>
-   <th>Formats</th>
-   <td colspan="3"> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="Compressed TAR">TGZ</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x<br /> </td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="Java archive">JAR</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x<br /> </td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="Roshal archive">RAR</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x<br /> </td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="Tape archive">TAR</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x<br /> </td>
-   <td>x</td>
-   <td>x</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="ZIP archive">ZIP*</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x<br /> </td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-  </tr>
- </tbody>
-</table>
+| | Storage | Versioning | Workflow | Publishing | Access Control | Dynamic Media Delivery |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Formats** | | | | | | |
+| TGZ | x | x | x | x | x | |
+| JAR | x | x | x | x | x | |
+| RAR | x | x | x | x | x | |
+| TAR | x | x | x | x | x | |
+| ZIP* | x | x | x | x | x | x |
 
 **&#42;** The ZIP archives created using Deflate64 algorithm have limited support in AEM. Archive and unarchive operations are not supported. However, operations like uploading, browsing, and downloading are supported.
 
 ## Other supported formats {#other-supported-formats}
 
-<table>
- <tbody>
-  <tr>
-   <th colspan="6" style="text-align: center;">Features</th>
-   <th> </th>
-  </tr>
-  <tr>
-   <th> </th>
-   <th>Storage</th>
-   <th>Versioning</th>
-   <th>Workflow</th>
-   <th>Publishing</th>
-   <th>Access Control</th>
-   <th>Dynamic Media Delivery</th>
-  </tr>
-  <tr>
-   <th>Formats</th>
-   <td colspan="4"> </td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td title="Other file formats">*</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x<br /> </td>
-   <td>x<br /> </td>
-   <td>x<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>SVG</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x<br /> </td>
-   <td>x</td>
-  </tr>
-  <tr>
-   <td>CSS</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-  </tr>
-  <tr>
-   <td>VTT</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-  </tr>
-  <tr>
-   <td>XML</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-   <td>x</td>
-  </tr>
-  <tr>
-   <td>JavaScript (when configured with own delivery domain)</td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td>x</td>
-  </tr>
- </tbody>
-</table>
+| Features | | | | | | |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| | Storage | Versioning | Workflow | Publishing | Access Control | Dynamic Media Delivery |
+| **Formats** | | | | | | |
+| * | x | x | x | x | x | |
+| SVG | x | x | x | x | x | x |
+| CSS | x | x | x | x | x | x |
+| VTT | x | x | x | x | x | x |
+| XML | x | x | x | x | x | x |
+| JavaScript (when configured with own delivery domain) | | | | | | x |
 
 >[!NOTE]
 >

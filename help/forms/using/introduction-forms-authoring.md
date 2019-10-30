@@ -62,9 +62,11 @@ The Sidebar allows you to
 
 ![Sidebar](assets/sidebar-comps.png)
 
-Click to enlarge
+**A.** Content browser **B.** Properties browser **C.** Assets browser **D.** Components browser
 
-](assets/sidebar-comps-1.png) **A.** Content browser **B.** Properties browser **C.** Assets browser **D.** Components browser
+<!--Click to enlarge
+
+](assets/sidebar-comps-1.png) -->
 
 The sidebar comprises the following browsers:
 

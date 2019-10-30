@@ -136,49 +136,41 @@ However, in complex cases, the Quickview URL has different varying elements in a
 Consider the following examples of Quickview URLs and their resulting thumbnail variables:
 
 <table>
- <tbody>
+  <tbody>
   <tr>
-   <td colspan="3" rowspan="2">
-    <table>
-     <tbody>
-      <tr>
-       <td><p>Single SKU, found in the query string.</p> </td>
-       <td><p>The recorded Quickview URLs include the following:</p>
-        <ul>
-         <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-         <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-         <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-         <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
-        </ul> <p>The only variable part in the URL is the value of the <code>productId=</code> query string parameter, and it is clearly a SKU value. Therefore, our thumbnails only need SKU fields populated with values like <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
-      </tr>
-      <tr>
-       <td><p>Single SKU, found in the URL path.</p> </td>
-       <td><p>The recorded Quickview URLs include the following:</p>
-        <ul>
-         <li><p><code>https://server/product/6422350843</code></p> </li>
-         <li><p><code>https://server/product/1607745002</code></p> </li>
-         <li><p><code>https://server/product/0086724882</code></p> </li>
-        </ul> <p>The variable part is in the last portion of the path, and it becomes the SKU value of AEM thumbnails: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
-      </tr>
-      <tr>
-       <td><p>SKU and category ID in the query string.</p> </td>
-       <td><p>The recorded Quickview URLs include the following:</p>
-        <ul>
-         <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-         <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-         <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
-        </ul> <p>In this case, there are two varying parts in the URL. The SKU is stored in the <code>prodId</code> parameter and the category ID is stored in the <code>category=</code> parameter.</p> <p>As such, the thumbnail definitions are pairs. That is, a SKU value and an additional variable called <code>categoryId</code>. The resulting pairs are the following:</p>
-        <ul>
-         <li>SKU is <code>305466</code> and <code>categoryId</code> is <code>1100004</code></li>
-         <li>SKU is <code>310181</code> and <code>categoryId</code> is <code>1100004</code></li>
-         <li>SKU is <code>308706</code> and <code>categoryId</code> is <code>1740148</code></li>
-        </ul> <p> </p> </td>
-      </tr>
-     </tbody>
-    </table> </td>
+    <td><p>Single SKU, found in the query string.</p> </td>
+    <td><p>The recorded Quickview URLs include the following:</p>
+    <ul>
+      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+    </ul> <p>The only variable part in the URL is the value of the <code>productId=</code> query string parameter, and it is clearly a SKU value. Therefore, our thumbnails only need SKU fields populated with values like <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
-  <tr></tr>
- </tbody>
+  <tr>
+    <td><p>Single SKU, found in the URL path.</p> </td>
+    <td><p>The recorded Quickview URLs include the following:</p>
+    <ul>
+      <li><p><code>https://server/product/6422350843</code></p> </li>
+      <li><p><code>https://server/product/1607745002</code></p> </li>
+      <li><p><code>https://server/product/0086724882</code></p> </li>
+    </ul> <p>The variable part is in the last portion of the path, and it becomes the SKU value of AEM thumbnails: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
+  </tr>
+  <tr>
+    <td><p>SKU and category ID in the query string.</p> </td>
+    <td><p>The recorded Quickview URLs include the following:</p>
+    <ul>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+    </ul> <p>In this case, there are two varying parts in the URL. The SKU is stored in the <code>prodId</code> parameter and the category ID is stored in the <code>category=</code> parameter.</p> <p>As such, the thumbnail definitions are pairs. That is, a SKU value and an additional variable called <code>categoryId</code>. The resulting pairs are the following:</p>
+    <ul>
+      <li>SKU is <code>305466</code> and <code>categoryId</code> is <code>1100004</code></li>
+      <li>SKU is <code>310181</code> and <code>categoryId</code> is <code>1100004</code></li>
+      <li>SKU is <code>308706</code> and <code>categoryId</code> is <code>1740148</code></li>
+    </ul> <p> </p> </td>
+  </tr>
+  </tbody>
 </table>
 
 **Example**
@@ -659,41 +651,32 @@ There are two default callback handlers present in the standard embed code: `qui
 The process of constructing the Quickview URL is opposite to the process of identifying thumbnail variables covered earlier in this topic. Using our previously identified Quickview URL examples, you can see how the Quickview URL is constructed in each case:
 
 <table>
- <tbody>
+  <tbody>
   <tr>
-   <td colspan="3" rowspan="3">
-    <table>
-     <tbody>
-      <tr>
-       <td><p>Single SKU, found in the query string</p> </td>
-       <td><code class="code">s7interactivevideoviewer.setHandlers({
-          "quickViewActivate": function(inData) {
-          var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-          },
-          });</code></td>
-      </tr>
-      <tr>
-       <td>Single SKU, found in the URL path</td>
-       <td><code class="code">s7interactivevideoviewer.setHandlers({
-          "quickViewActivate": function(inData) {
-          var quickViewUrl = "https://server/product/" + inData.sku;
-          },
-          });</code></td>
-      </tr>
-      <tr>
-       <td><p>SKU and category ID in the query string</p> </td>
-       <td><code class="code">s7interactivevideoviewer.setHandlers({
-          "quickViewActivate": function(inData) {
-          var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-          },
-          });</code></td>
-      </tr>
-     </tbody>
-    </table> </td>
+    <td><p>Single SKU, found in the query string</p> </td>
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
+      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
+      },
+      });</code></td>
   </tr>
-  <tr></tr>
-  <tr></tr>
- </tbody>
+  <tr>
+    <td>Single SKU, found in the URL path</td>
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
+      var quickViewUrl = "https://server/product/" + inData.sku;
+      },
+      });</code></td>
+  </tr>
+  <tr>
+    <td><p>SKU and category ID in the query string</p> </td>
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
+      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
+      },
+      });</code></td>
+  </tr>
+  </tbody>
 </table>
 
 The last step to trigger the Quickview URL and activate the Quickview panel most likely requires the assistance of a front-end IT person from your IT department. They have the knowledge to know best how to accurately trigger the Quickview implementation from the proper step, having a ready-to-use Quickview URL.
