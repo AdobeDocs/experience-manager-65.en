@@ -10,7 +10,6 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
-
 ---
 
 # Introduction to authoring adaptive forms {#introduction-to-authoring-adaptive-forms}
@@ -28,8 +27,8 @@ Adaptive forms allow you to create forms that are engaging, responsive, dynamic,
 * **Using an XML Schema Definition (XSD) or a JSON Schema**
   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an adaptive form and use its elements to add dynamic content to the adaptive form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring adaptive forms.
 
-* **Using none or without a form model
-  **Adaptive forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
+* **Using none or without a form model**
+  Adaptive forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
 
 For more information about creating an adaptive form, see [Creating an adaptive form](../../forms/using/creating-adaptive-form.md).
 
@@ -45,7 +44,6 @@ When you create a new or edit an existing adaptive form, you use the following U
 
 * [Sidebar](#sidebar)
 * [Page toolbar](#page-toolbar)
-
 * [Component toolbar](#component-toolbar)
 * [Adaptive form page](#af-page)
 
@@ -62,7 +60,7 @@ The Sidebar allows you to
 * Search, view, and use assets in your AEM Digital Asset Management (DAM) repository.
 * Add components on your form.
 
-[ ![Sidebar](assets/sidebar-comps.png)
+![Sidebar](assets/sidebar-comps.png)
 
 Click to enlarge
 
