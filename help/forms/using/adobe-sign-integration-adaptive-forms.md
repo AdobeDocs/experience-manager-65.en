@@ -33,7 +33,7 @@ You require the following to integrate Adobe Sign with AEM Forms:
 
 After prerequisites are in place, perform the following steps to configure Adobe Sign with AEM Forms on the Author instance:
 
-1. On AEM Forms author instance, navigate to **Tools ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/aem-forms/icons/Hammer.png) &gt; General &gt; Configuration Browser**.
+1. On AEM Forms author instance, navigate to **Tools** ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/aem-forms/icons/Hammer.png) &gt; **General** &gt; **Configuration Browser**.
 1. On the **[!UICONTROL Configuration Browser]** page, tap **[!UICONTROL Create]**.
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a **[!UICONTROL Title]** for the configuration, enable **[!UICONTROL Cloud Configurations]**, and tap **[!UICONTROL Create]**. It creates a configuration container for cloud services.
 1. Navigate to **Tools ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/aem-forms/icons/Hammer.png) &gt; Cloud Services &gt; Adobe Sign** and select the configuration container you created in the above step.

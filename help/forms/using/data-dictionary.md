@@ -347,35 +347,35 @@ Exporting an XSD requires specific data mapping, which is detailed in the follow
 
 <table>
  <tbody>
-  <tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
-   <td style="background: #EEEEEE; padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">XSD <br /> </td>
-   <td style="background: #EEEEEE; padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">Data Dictionary <br /> </p> </td>
-   <td style="background: #EEEEEE; padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">DDI (Instance Value Data Type)<br /> </p> </td>
+  <tr>
+   <td>XSD <br /> </td>
+   <td><p>Data Dictionary <br /> </p> </td>
+   <td>DDI (Instance Value Data Type)<br /> </p> </td>
   </tr>
-  <tr style="mso-yfti-irow: 1;">
-   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">xs:element of type - Composite Type<br /> </p> </td>
-   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">DDE of type - COMPOSITE<br /> </p> </td>
-   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">java.util.Map<br /> </td>
+  <tr>
+   <td><p>xs:element of type - Composite Type<br /> </p> </td>
+   <td>DDE of type - COMPOSITE<br /> </p> </td>
+   <td>java.util.Map<br /> </td>
   </tr>
-  <tr style="mso-yfti-irow: 2;">
-   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">xs:element where maxOccurs &gt; 1<br /> </p> </td>
-   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">DDE of type - COLLECTION-<br /> A DDE node is created next to the COLLECTION DDE which captures information from the parent COLLECTION node. The same gets created for both collection of simple/composite data types. Whenever you have a COLLECTION of the type composite, the Data Dictionary tree captures the constituent fields in the children of the DDE created for capturing type information.<br /> - DDE (COLLECTION)<br /> - DDE(COMPOSITE for type info)<br /> - DDE(STRING) field1<br /> - DDE(STRING) field2<br /> <br /> </p> </td>
-   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">java.util.List<br /> </td>
+  <tr>
+   <td><p>xs:element where maxOccurs &gt; 1<br /> </p> </td>
+   <td>DDE of type - COLLECTION-<br /> A DDE node is created next to the COLLECTION DDE which captures information from the parent COLLECTION node. The same gets created for both collection of simple/composite data types. Whenever you have a COLLECTION of the type composite, the Data Dictionary tree captures the constituent fields in the children of the DDE created for capturing type information.<br /> - DDE (COLLECTION)<br /> - DDE(COMPOSITE for type info)<br /> - DDE(STRING) field1<br /> - DDE(STRING) field2<br /> <br /> </p> </td>
+   <td>java.util.List<br /> </td>
   </tr>
-  <tr style="mso-yfti-irow: 3;">
-   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">Attribute of type - xs:id <br /> </p> </td>
-   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">DDE of type - STRING <br /> </td>
-   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">java.lang.String<br /> </td>
+  <tr>
+   <td>Attribute of type - xs:id <br /> </p> </td>
+   <td>DDE of type - STRING <br /> </td>
+   <td>java.lang.String<br /> </td>
   </tr>
-  <tr style="mso-yfti-irow: 4;">
-   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top"><p class="MsoNormal" style="margin-top: 0in; margin-right: 0in; margin-bottom: 6.0pt; margin-left: 1.5pt; line-height: 12.4pt;">xs:attribute /xs:element of type - xs:string</p> </td>
-   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">DDE of type - STRING<br /> </td>
-   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">java.lang.String<br /> </td>
+  <tr>
+   <td>xs:attribute /xs:element of type - xs:string</p> </td>
+   <td>DDE of type - STRING<br /> </td>
+   <td>java.lang.String<br /> </td>
   </tr>
-  <tr style="mso-yfti-irow: 10; mso-yfti-lastrow: yes;">
-   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">xs:attribute /xs:element of type - xs: boolean <br /> </td>
-   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">DDE of type - Boolean <br /> </td>
-   <td style="padding: 6.0pt 6.0pt .75pt 6.0pt;" valign="top">java.lang.Boolean<br /> </td>
+  <tr>
+   <td>xs:attribute /xs:element of type - xs: boolean <br /> </td>
+   <td>DDE of type - Boolean <br /> </td>
+   <td>java.lang.Boolean<br /> </td>
   </tr>
   <tr>
    <td>xs:attribute /xs:element of type - xs:date </td>

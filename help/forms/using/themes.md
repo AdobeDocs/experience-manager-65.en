@@ -631,7 +631,7 @@ You can see the generated CSS using the following options:
 
 * **Avoiding assets from another Theme**
 
-  When you edit a theme, you can browse and add assets (such as images) from other themes. For example, you are editing the background of a page. For example, when you select **Page ![](assets/edit-button.png)&gt; Background &gt; Add &gt; Image**, you see a dialog that lets you browse and add images in other theme.
+  When you edit a theme, you can browse and add assets (such as images) from other themes. For example, you are editing the background of a page. For example, when you select **Page** ![](assets/edit-button.png)&gt; **Background** &gt; **Add** &gt; **Image**, you see a dialog that lets you browse and add images in other theme.
 
 * You can face issues with your current theme if an asset is added from another theme, and the other theme is moved or deleted. It is recommended that you avoid browsing and adding assets from other themes.
 * **Using base clientlib, theme editor, and inline styling**

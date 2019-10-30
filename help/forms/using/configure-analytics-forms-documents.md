@@ -24,7 +24,7 @@ AEM Forms integrates with Adobe Analytics that allows you to capture and track p
 
 ## Overview {#overview}
 
-You can use Adobe Analytics to discover interaction patterns and problems users face while using adaptive forms, HTML5 forms and intreactive communication. Out of the box, Adobe analytics tracks and stores information about the following parameters:
+You can use Adobe Analytics to discover interaction patterns and problems users face while using adaptive forms, HTML5 forms and interactive communication. Out of the box, Adobe analytics tracks and stores information about the following parameters:
 
 * **Average fill time**: Average time spent to fill the form.
 * **Renditions**: Number of times a form is opened.
@@ -53,23 +53,15 @@ Perform the following steps to create a report suite.
    Create new Report Suite
 
 1. Make sure the first dropdown list is set to **Create from a Template** and then select **Commerce**.
-
 1. Locate the **Report Suite ID** field and add new Report Suite ID. For example, JJEsquire. A report suite ID appears below the Report Suite ID field. It includes an automatic prefix, which is often the company name.
-
 1. Add new **Site Title**. For example, JJEsquire Getting Started Suite. This title is used within the Analytics UI. Use the report suite ID in your code.
-
 1. Select a **Time Zone** from the dropdown. All of the data that comes into this report suite is recorded based on defined time zone.
-
 1. Leave the **Base URL** and **Default Page** fields empty. These two values are only used from the Adobe Marketing Cloud interface to link to your website.
 1. Leave the **Go Live Date** set to today. The Go Live Date determines the day when the report suite is activated.
-
 1. In the **Estimated Page Views Per Day** field, type 100. Use this field to estimate the number of page views you anticipate for your website per day. This estimate allows Adobe to put in place the appropriate amount of hardware to process the data you will be collecting.
-
 1. Select a **Base Currency** from the dropdown. All currency data that comes into this report suite is converted and stored in this currency format.
-
 1. Click **Create Report** Suite. You should see the page refresh with a message that your report suite has been successfully created.
-
-1. Select the newly created Report Suite. Navigate to **Edit Settings** &gt; **General **&gt; **General Account Settings**.
+1. Select the newly created Report Suite. Navigate to **Edit Settings** &gt; **General** &gt; **General Account Settings**.
 
    ![General Account Settings](assets/geographic_settings.png)
 
@@ -77,7 +69,6 @@ Perform the following steps to create a report suite.
 
 1. In General Account Settings screen, enable **Geography Reporting**, and click **Save.**
 1. Navigate to **Edit Settings** &gt; **Traffic** &gt; **Traffic Variables**.
-
 1. In the report suite, configure and enable following traffic variables.
 
     * **formName**: Identifier for an adaptive form.
@@ -89,9 +80,9 @@ Perform the following steps to create a report suite.
     * **panelTitle**: Title of the form panel.
     * **analyticsVersion**: Version of form analytics.
 
-1. Navigate to **Edit Settings** &gt; **Conversion **&gt; **Sucess Events**. Define and enable the following success events:
+1. Navigate to **Edit Settings** &gt; **Conversion** &gt; **Success Events**. Define and enable the following success events:
 
-   | Sucess Event |Type |
+   | Success Event |Type |
    |---|---|
    | abandon |Counter |
    | render |Counter |
@@ -114,8 +105,8 @@ Perform the following steps to create a report suite.
 Cloud Service configuration is information about your Adobe Analytics account. The configuration enables Adobe Experience Manager (AEM) to connect to Adobe Analytics. Create a separate configuration for each Analytics account that you use.
 
 1. Log in to your AEM author instance as an administrator.
-1. In the top-left corner, click **Adobe Experience Manager &gt; Tools ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/aem-forms/6-2/tools.png)&gt; Deployment &gt; Cloud Services**.
-1. Locate **Adobe Analytics** icon. Click** Show Configurations** and then proceed to click **[+]** to add new configuration.
+1. In the top-left corner, click **Adobe Experience Manager** &gt; **Tools** ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/aem-forms/6-2/tools.png) &gt; **Deployment** &gt; **Cloud Services**.
+1. Locate **Adobe Analytics** icon. Click **Show Configurations** and then proceed to click **[+]** to add new configuration.
 
    If you are a first-time user, click **Configure now**.
 
@@ -124,11 +115,8 @@ Cloud Service configuration is information about your Adobe Analytics account. T
 1. When the Edit panel opens on the configuration page, fill in the fields:
 
     * **Company**: Your company's name as featured on Adobe Analytics.
-
     * **Username**: The name used to log in to Adobe Analytics.
-
     * **Password**: The Adobe Analytics password for the above account.
-
     * **Data Center**: The Data Center of your Adobe Analytics account.
 
 1. Click **Connect to Analytics**. A dialog appears with message that the connection was successful. Click **OK**.
@@ -138,7 +126,6 @@ Cloud Service configuration is information about your Adobe Analytics account. T
 An Adobe Analytics framework is a set of mappings between Adobe Analytics variables and AEM variables. Use a framework to configure how your forms populate data to Adobe Analytics reports. Frameworks are associated with an Adobe Analytics configuration. You can create multiple frameworks for each configuration.
 
 1. On the AEM cloud services console, click **Show configurations**, under Adobe Analytics.
-
 1. Click the **[+]** link next to next to your Analytics configuration.
 
    ![Adobe Analytics configuration](assets/adobe-analytics-cloud-services.png)
@@ -146,9 +133,7 @@ An Adobe Analytics framework is a set of mappings between Adobe Analytics variab
    Adobe Analytics configuration
 
 1. Type a **Title **and **Name **for the framework, select **Adobe Analytics** Framework, and click **Create**. The framework opens for editing.
-
 1. In the Report Suites section of the side pod, click **Add Item**, then use the drop-down to select the Report Suite ID (for example, JJEsquire) with which the framework will interact.
-
 1. Next to the Report Suite ID, select the server instances that you want to send information to the Report Suite.
 
    ![](assets/information_to_send_to_report_suite.png)
@@ -162,7 +147,7 @@ An Adobe Analytics framework is a set of mappings between Adobe Analytics variab
 
 ## Configuring AEM Forms Analytics Configuration service {#configuring-aem-forms-analytics-configuration-service}
 
-1. On author instance, open AEM Web Console Configuration manager at https://&lt;*server*&gt;:&lt;*port*&gt;/system/console/configMgr.
+1. On author instance, open AEM Web Console Configuration manager at `https://<server>:<port>;/system/console/configMgr`.
 1. Locate and open AEM Forms Analytics Configuration
 
    ![AEM Forms Analytics Configuration service](assets/analytics_configuration.png)
@@ -176,7 +161,7 @@ An Adobe Analytics framework is a set of mappings between Adobe Analytics variab
 
     * **Analytics report sync cron**: Specify cron expression for fetching reports from Adobe Analytics. The default value is 0 0 2 ? &#42; &#42;.
 
-    * **Fetch report timeout: **Specify the duration, in seconds, to wait for server to respond to the analytics report. The default time is 120 seconds.
+    * **Fetch report timeout:** Specify the duration, in seconds, to wait for server to respond to the analytics report. The default time is 120 seconds.
 
    >[!NOTE]
    >
