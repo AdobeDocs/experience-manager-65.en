@@ -63,7 +63,7 @@ The assumed topology for this section consists of an Author server running on Ta
 
 1. Start the Standby instance.
 
-### If Unsuccessful (Rollback) {#if-unsuccessful-(rollback)}
+### If Unsuccessful (Rollback) {#if-unsuccessful-rollback}
 
 ![](assets/rollback.jpg)
 

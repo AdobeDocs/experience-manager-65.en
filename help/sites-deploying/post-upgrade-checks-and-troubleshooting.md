@@ -165,7 +165,7 @@ Next, check for any Javascript errors that can be tracked down to custom added e
 
 Finally, check for misconfiguration that Javascript might not be able to deal with. This is usually the case with improperly deactivated extensions.
 
-### Malfunctioning Custom Components, Templates or UI Extensions {#malfunctioning-custom-components,-templates-or-ui-extensions}
+### Malfunctioning Custom Components, Templates or UI Extensions {#malfunctioning-custom-components-templates-or-ui-extensions}
 
 In most cases, the root causes for these issues are the same as for bundles that are not started or packages not being installed with the only difference that the issues start occurng when first using the components.
 
