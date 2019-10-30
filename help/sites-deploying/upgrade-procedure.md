@@ -14,7 +14,7 @@ targetaudience: target-audience upgrader
 
 ---
 
-# Upgrade Procedure{#upgrade-procedure}
+# Upgrade Procedure {#upgrade-procedure}
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ The assumed topology for this section consists of a MongoMK Author cluster with 
 
 1. Remove the cloned data store.
 
-### If Unsuccessful (Rollback)  {#if-unsuccessful-rollback}
+### If Unsuccessful (Rollback)  {#if-unsuccessful-rollback-2}
 
 ![](assets/mongo-rollback.jpg)
 

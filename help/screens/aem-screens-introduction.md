@@ -15,15 +15,13 @@ docset: aem65
 
 # What is AEM Screens?{#what-is-aem-screens}
 
-## What is AEM Screens? {#what-is-aem-screens}
-
 **AEM (Adobe Experience Manager) Screens** - *a Digital Signage Solution *that allows you to publish dynamic and interactive digital experiences and interactions involving different types of screens in conjunction with a comprehensive digital marketing platform.
 
 Get up and running with a simple digital signage experience, using [Kickstart for AEM Screens](/help/screens/kickstart-for-aem-screens.md).
 
-### Overview {#overview}
+## Overview {#overview}
 
-**AEM Screens** is built on the solid foundation of ***AEM Sites ***and enables marketers and IT personnel to create and manage experiences on multiple digital screens that impact in-store/in-venue goals for building brand and driving demand. Integration of AEM Screens with Sites allows you to re-use already existing content and effectively deliver a coherent and consistent customer solution. This provides a streamlined workflow to create dedicated digital experiences that are highly cost-effective and usable. It further helps to influence brand perception and impact decisions leading to upliftment in purchase and engagement.
+**AEM Screens** is built on the solid foundation of ***AEM Sites*** and enables marketers and IT personnel to create and manage experiences on multiple digital screens that impact in-store/in-venue goals for building brand and driving demand. Integration of AEM Screens with Sites allows you to re-use already existing content and effectively deliver a coherent and consistent customer solution. This provides a streamlined workflow to create dedicated digital experiences that are highly cost-effective and usable. It further helps to influence brand perception and impact decisions leading to upliftment in purchase and engagement.
 
 AEM Screens is a powerful web-based solution that allows you to create dedicated digital menu boards, product recommenders, background lifestyle imagery to expand customer interaction and deliver unified and useful brand experiences into physical venues, such as stores, hotels, banks, healthcare and educational institutions, and many more - from the same AEM platform. Screens provide many unique applications such as interactive displays, wayfinding, branding, and adding ambience to your environment for customers and employees based on the domain where these are deployed.
 
@@ -88,5 +86,5 @@ While creating a new project, different functions may overlap depending on your 
 
 ### Related Resources {#related-resources}
 
-View ** [Understanding AEM Screens](https://helpx.adobe.com/experience-manager/kt/help/screens/screens-concepts-feature-video-understand.html)**, as an additional resource including videos to introduce different areas of an AEM Screens project.
+View **[Understanding AEM Screens](https://helpx.adobe.com/experience-manager/kt/help/screens/screens-concepts-feature-video-understand.html)**, as an additional resource including videos to introduce different areas of an AEM Screens project.
 

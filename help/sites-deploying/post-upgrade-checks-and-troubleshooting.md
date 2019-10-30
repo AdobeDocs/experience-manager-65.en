@@ -171,7 +171,7 @@ In most cases, the root causes for these issues are the same as for bundles that
 
 The way to deal with erroneous custom code is to first perfom smoke tests in order to identify the cause. Once you find it, look at the recommendations in this [link] section of the article for ways of fixing them.
 
-### Missing Customizations Under /etc {#missing-customizations-under-/etc}
+### Missing Customizations Under /etc {#missing-customizations-under-etc}
 
 `/apps` and `/libs` are handled well by the upgrade, but changes under `/etc` may be need to be manually restored from `/var/upgrade/PreUpgradeBackup` after upgrading. Make sure to check this location for any content that needs to be manually merged.
 

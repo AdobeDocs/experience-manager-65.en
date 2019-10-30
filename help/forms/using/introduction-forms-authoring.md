@@ -79,20 +79,24 @@ The sidebar comprises the following browsers:
       It allows you to drag and drop form-model elements on the adaptive form. The added elements automatically get converted into form components while retaining their original properties. You can see data model objects when your form uses XML schema, JSON schema, or XDP template.
 
 * **Properties browser**
+
   Lets you edit the properties of a component. Properties change according to a component. To see properties of the adaptive form container:
+
   Select a component, then tap ![](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![](assets/cmppr.png).
 
 * **Assets browser**
+
   Segregates different types content such as images, documents, pages, movies, and so on.
 
 * **Components browser**
+
   Includes components that you can use to build an adaptive form. You can drag components from onto the adaptive form to add form elements, and configure added element as per the requirements. The following table describes the components listed in components browser**.**
 
 <table>
  <tbody>
   <tr>
    <th><strong>Component</strong></th>
-   <th style="text-align: left;" valign="middle"><strong>Functionality</strong></th>
+   <th><strong>Functionality</strong></th>
   </tr>
   <tr>
    <td>Adobe Sign Block</td>

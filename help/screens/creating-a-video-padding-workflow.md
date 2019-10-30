@@ -39,9 +39,9 @@ Before you create a workflow for video, please complete the following prerequisi
 1. Upload a video in **Assets** folder in your AEM instance
 1. Create an AEM Screens project (for example, **TestVideoRendition**) and a channel named (**VideoRendering**), as shown in the figure below:
 
-![](assets/screen_shot_2018-10-17at85307pm.png) 
+![](assets/screen_shot_2018-10-17at85307pm.png)
 
-## Creating a Video Padding Workflow {#creating-a-video-padding-workflow}
+## Creating a Video Padding Workflow {#creating-a-video-padding-workflow-1}
 
 To create a video padding workflow, you must create a workflow for your video and then use the same in your AEM Screens project channel.
 

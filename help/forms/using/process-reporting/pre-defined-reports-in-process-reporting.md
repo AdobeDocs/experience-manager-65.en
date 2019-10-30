@@ -12,9 +12,9 @@ docset: aem65
 
 ---
 
-# Pre-defined reports in Process Reporting{#pre-defined-reports-in-process-reporting}
+# Pre-defined reports in Process Reporting {#pre-defined-reports-in-process-reporting}
 
-## Pre-defined Reports in Process Reporting {#pre-defined-reports-in-process-reporting}
+## Pre-defined Reports in Process Reporting {#pre-defined-reports-in-process-reporting-1}
 
 AEM Forms Process Reporting ships with the following *out-of-the-box* reports:
 

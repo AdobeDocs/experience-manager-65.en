@@ -37,7 +37,7 @@ All out-of-the-box viewers support keyboard accessibility.
 
 See also [Keyboard accessiblity and navigation](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_keyboard_accessibility.html).
 
-## Managing Viewer Presets {#managing-viewer-presets}
+## Managing Viewer Presets {#managing-viewer-presets-1}
 
 You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **Tools** (hammer icon) &gt; **Assets** &gt; **Viewer Presets**.
 
