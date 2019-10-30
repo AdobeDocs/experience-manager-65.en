@@ -116,29 +116,29 @@ Instead of associating points with a badge image, it is only necessary to identi
 <table>
  <tbody>
   <tr>
-   <th style="text-align: center;">Property</th>
-   <th style="text-align: center;">Type</th>
-   <th style="text-align: left;">Value Description</th>
+   <th>Property</th>
+   <th>Type</th>
+   <th>Value Description</th>
   </tr>
   <tr>
-   <td style="text-align: center;">badgingPath</td>
-   <td style="text-align: center;">String[]</td>
-   <td style="text-align: left;"><em>(required)</em> A multi-value string of badge images up to the number of badgingLevels. The badge image paths must be ordered so the first is awarded to the highest expert. If there are less badges than indicated by badgingLevels, the last badge in the array fills out the rest of the array. Example entry:<br /> <code>/etc/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
+   <td>badgingPath</td>
+   <td>String[]</td>
+   <td><em>(required)</em> A multi-value string of badge images up to the number of badgingLevels. The badge image paths must be ordered so the first is awarded to the highest expert. If there are less badges than indicated by badgingLevels, the last badge in the array fills out the rest of the array. Example entry:<br /> <code>/etc/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
-   <td style="text-align: center;">badgingLevels</td>
-   <td style="text-align: center;">Long</td>
-   <td style="text-align: left;"><em>(optional)</em> Specifies the levels of expertise to be awarded. For example, if there should be an <code>expert </code>and an <code>almost expert</code> (two badges), then the value should be set to 2. The badgingLevel should correspond with the number of expert-related badge images listed for the badgingPath property. Default is 1.</td>
+   <td>badgingLevels</td>
+   <td>Long</td>
+   <td><em>(optional)</em> Specifies the levels of expertise to be awarded. For example, if there should be an <code>expert </code>and an <code>almost expert</code> (two badges), then the value should be set to 2. The badgingLevel should correspond with the number of expert-related badge images listed for the badgingPath property. Default is 1.</td>
   </tr>
   <tr>
-   <td style="text-align: center;">badgingType</td>
-   <td style="text-align: center;">String</td>
-   <td style="text-align: left;"><em>(required)</em> Identifies the scoring engine as either "basic" or "advanced". Set to "advanced" else the default is "basic".</td>
+   <td>badgingType</td>
+   <td>String</td>
+   <td><em>(required)</em> Identifies the scoring engine as either "basic" or "advanced". Set to "advanced" else the default is "basic".</td>
   </tr>
   <tr>
-   <td style="text-align: center;">scoringRules</td>
-   <td style="text-align: center;">String[]</td>
-   <td style="text-align: left;"><em>(optional)</em> A multi-value string to restrict the badging rule to scoring events identified by the scoring rule(s) listed.<br /> Example entry:<br /> <code>/etc/community/scoring/rules/adv-comments-scoring</code><br /> Default is no restriction.</td>
+   <td>scoringRules</td>
+   <td>String[]</td>
+   <td><em>(optional)</em> A multi-value string to restrict the badging rule to scoring events identified by the scoring rule(s) listed.<br /> Example entry:<br /> <code>/etc/community/scoring/rules/adv-comments-scoring</code><br /> Default is no restriction.</td>
   </tr>
  </tbody>
 </table>

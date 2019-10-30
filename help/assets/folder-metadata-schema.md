@@ -56,44 +56,44 @@ You can map/configure these form items to a field within a metadata node in the 
 The **[!UICONTROL Build Form]** tab lists form items that you use in your folder metadata schema form. The **[!UICONTROL Settings]** tab displays the attributes for each item that you select in the **[!UICONTROL Build Form]** tab. Here is a list the form items available in the **[!UICONTROL Build Form]**tab:
 
 <table>
- <tbody> 
-  <tr> 
-   <td valign="top"><p><strong>Component Name</strong></p> </td> 
-   <td valign="top"><p><strong>Description</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>Section Header</p> </td> 
-   <td valign="top"><p> Add a section heading for a list of common components.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>Single Line Text</p> </td> 
-   <td valign="top"><p> Add a single-line text property. It is stored as a string.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>Multi Value Text</p> </td> 
-   <td valign="top"><p> Add a multi value text property. It is stored as a string array.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>Number</p> </td> 
-   <td valign="top"><p> Add a number component.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>Date</p> </td> 
-   <td valign="top"><p> Add a date component.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>Dropdown</p> </td> 
-   <td valign="top"><p> Add a drop-down list.</p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>Standard Tags</p> </td> 
-   <td valign="top"><p> Add a tag. </p> </td> 
-  </tr> 
-  <tr> 
-   <td valign="top"><p>Hidden Field</p> </td> 
-   <td valign="top"><p> Add a hidden field. It is sent as a POST parameter when the asset is saved.</p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td><p><strong>Component Name</strong></p> </td>
+   <td><p><strong>Description</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>Section Header</p> </td>
+   <td><p> Add a section heading for a list of common components.</p> </td>
+  </tr>
+  <tr>
+   <td><p>Single Line Text</p> </td>
+   <td><p> Add a single-line text property. It is stored as a string.</p> </td>
+  </tr>
+  <tr>
+   <td><p>Multi Value Text</p> </td>
+   <td><p> Add a multi value text property. It is stored as a string array.</p> </td>
+  </tr>
+  <tr>
+   <td><p>Number</p> </td>
+   <td><p> Add a number component.</p> </td>
+  </tr>
+  <tr>
+   <td><p>Date</p> </td>
+   <td><p> Add a date component.</p> </td>
+  </tr>
+  <tr>
+   <td><p>Dropdown</p> </td>
+   <td><p> Add a drop-down list.</p> </td>
+  </tr>
+  <tr>
+   <td><p>Standard Tags</p> </td>
+   <td><p> Add a tag. </p> </td>
+  </tr>
+  <tr>
+   <td><p>Hidden Field</p> </td>
+   <td><p> Add a hidden field. It is sent as a POST parameter when the asset is saved.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Editing form items {#editing-form-items}
@@ -112,7 +112,7 @@ The following are the valid values for this property:
 
 To ensure that the component is displayed properly in the metadata schema form, do not include a space in the property path.
 
-**[!UICONTROL JSON Path]**:** **Use it to specify the path of the JSON file where you specify key-value pairs for options.
+**[!UICONTROL JSON Path]**: Use it to specify the path of the JSON file where you specify key-value pairs for options.
 
 **[!UICONTROL Placeholder]**: Use this property to specify relevant placeholder text regarding the metadata property.
 
@@ -126,7 +126,7 @@ To ensure that the component is displayed properly in the metadata schema form, 
 
 You can delete folder metadata schema forms from the Folder Metadata Schema Forms page. To delete a form, select it and tap/click the Delete icon from the toolbar.
 
-![](assets/delete_form.png) 
+![](assets/delete_form.png)
 
 ## Assign a folder metadata schema {#assign-a-folder-metadata-schema}
 
@@ -145,7 +145,7 @@ If you configure a metadata schema for a folder, the path to the schema form is 
 
    ![](assets/folder_properties.png)
 
-   To view the folder metadata fields, tap/click the **[!UICONTROL Folder Metadata]** tab. 
+   To view the folder metadata fields, tap/click the **[!UICONTROL Folder Metadata]** tab.
 
    ![](assets/folder_metadata_properties.png)
 

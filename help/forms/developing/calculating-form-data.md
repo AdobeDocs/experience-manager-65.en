@@ -33,8 +33,8 @@ The following diagram shows the application’s logic flow.
 
 The following table describes the steps in this diagram.
 
-<table cellpadding="4" cellspacing="0">
- <thead align="left">
+<table>
+ <thead>
   <tr>
    <th class="cellrowborder" id="d19e70561" valign="top" width="NaN%"><p>Step</p></th>
    <th class="cellrowborder" id="d19e70564" valign="top" width="NaN%"><p>Description</p></th>

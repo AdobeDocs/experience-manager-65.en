@@ -394,8 +394,8 @@ Options for customizing state styles vary for different components.
 <table>
  <tbody>
   <tr>
-   <td style="text-align: center;"><strong>Property</strong></td>
-   <td style="text-align: center;"><strong>Use</strong></td>
+   <td><strong>Property</strong></td>
+   <td><strong>Use</strong></td>
   </tr>
   <tr>
    <td><p>Dimensions &amp; Position</p> </td>

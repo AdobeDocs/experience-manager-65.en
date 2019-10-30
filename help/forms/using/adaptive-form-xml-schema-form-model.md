@@ -35,44 +35,44 @@ An XML schema consists of simple and complex element types. The elements have at
 This mapping of XML elements with adaptive form components is as follows:
 
 <table>
- <tbody> 
-  <tr> 
-   <th><strong>XML element or attribute </strong></th> 
-   <th><strong>Adaptive form component</strong></th> 
-  </tr> 
-  <tr> 
-   <td><code>xs:string</code></td> 
-   <td>Text box</td> 
-  </tr> 
-  <tr> 
-   <td><code>xs:boolean</code></td> 
-   <td>Check box</td> 
-  </tr> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li><code>xs:unsignedInt</code></li> 
-     <li><code>xs:xs:int</code></li> 
-     <li><code class="code">xs:decimal 
-        </code></li> 
-     <li>All types of numerical values</li> 
-    </ul> </td> 
-   <td>Numeric box</td> 
-  </tr> 
-  <tr> 
-   <td><code>xs:date</code></td> 
-   <td>Date picker</td> 
-  </tr> 
-  <tr> 
+ <tbody>
+  <tr>
+   <th><strong>XML element or attribute </strong></th>
+   <th><strong>Adaptive form component</strong></th>
+  </tr>
+  <tr>
+   <td><code>xs:string</code></td>
+   <td>Text box</td>
+  </tr>
+  <tr>
+   <td><code>xs:boolean</code></td>
+   <td>Check box</td>
+  </tr>
+  <tr>
+   <td>
+    <ul>
+     <li><code>xs:unsignedInt</code></li>
+     <li><code>xs:xs:int</code></li>
+     <li><code class="code">xs:decimal
+        </code></li>
+     <li>All types of numerical values</li>
+    </ul> </td>
+   <td>Numeric box</td>
+  </tr>
+  <tr>
+   <td><code>xs:date</code></td>
+   <td>Date picker</td>
+  </tr>
+  <tr>
    <td><code class="code">xs:enumeration
-      </code></td> 
-   <td>Drop down</td> 
-  </tr> 
-  <tr> 
-   <td>Any complex-type element</td> 
-   <td>Panel</td> 
-  </tr> 
- </tbody> 
+      </code></td>
+   <td>Drop down</td>
+  </tr>
+  <tr>
+   <td>Any complex-type element</td>
+   <td>Panel</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Sample XML Schema {#sample-xml-schema}
@@ -80,21 +80,21 @@ This mapping of XML elements with adaptive form components is as follows:
 Here's an example of an XML schema.
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8" ?>
     <xs:schema targetNamespace="https://adobe.com/sample.xsd"
                     xmlns="https://adobe.com/sample.xsd"
                     xmlns:xs="https://www.w3.org/2001/XMLSchema"
                 >
 
         <xs:element name="sample" type="SampleType"/>
-        
+
         <xs:complexType name="SampleType">
             <xs:sequence>
                 <xs:element name="leaderName" type="xs:string" default="Enter Name"/>
                 <xs:element name="assignmentStartBirth" type="xs:date"/>
                 <xs:element name="gender" type="GenderEnum"/>
                 <xs:element name="noOfProjectsAssigned" type="IntType"/>
-                <xs:element name="assignmentDetails" type="AssignmentDetails" 
+                <xs:element name="assignmentDetails" type="AssignmentDetails"
                                             minOccurs="0" maxOccurs="10"/>
             </xs:sequence>
         </xs:complexType>
@@ -128,34 +128,34 @@ Here's an example of an XML schema.
 You can add the following attributes to XML Schema elements to add special properties to the fields of the associated adaptive form.
 
 <table>
- <tbody> 
-  <tr> 
-   <th><strong>Schema property</strong></th> 
-   <th><strong>Use in adaptive form</strong></th> 
-   <th><strong>Supported in </strong></th> 
-  </tr> 
-  <tr> 
-   <td><code>use=required </code></td> 
-   <td>Marks a field mandatory<br /> </td> 
-   <td>Attribute</td> 
-  </tr> 
-  <tr> 
-   <td><code>default="default value"</code></td> 
-   <td>Adds a default value</td> 
-   <td>Element and attribute</td> 
-  </tr> 
-  <tr> 
-   <td><code>minOccurs="3"</code></td> 
-   <td><p>Specifies minimum occurrences</p> <p>(For repeatable subforms (complex types))</p> </td> 
-   <td>Element (complex type)</td> 
-  </tr> 
-  <tr> 
+ <tbody>
+  <tr>
+   <th><strong>Schema property</strong></th>
+   <th><strong>Use in adaptive form</strong></th>
+   <th><strong>Supported in </strong></th>
+  </tr>
+  <tr>
+   <td><code>use=required </code></td>
+   <td>Marks a field mandatory<br /> </td>
+   <td>Attribute</td>
+  </tr>
+  <tr>
+   <td><code>default="default value"</code></td>
+   <td>Adds a default value</td>
+   <td>Element and attribute</td>
+  </tr>
+  <tr>
+   <td><code>minOccurs="3"</code></td>
+   <td><p>Specifies minimum occurrences</p> <p>(For repeatable subforms (complex types))</p> </td>
+   <td>Element (complex type)</td>
+  </tr>
+  <tr>
    <td><code class="code">maxOccurs="10"
-      </code></td> 
-   <td><p>Specifies maximum occurrences</p> <p>(For repeatable subforms (complex types))</p> </td> 
-   <td>Element (complex type)</td> 
-  </tr> 
- </tbody> 
+      </code></td>
+   <td><p>Specifies maximum occurrences</p> <p>(For repeatable subforms (complex types))</p> </td>
+   <td>Element (complex type)</td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -169,116 +169,116 @@ You can add the following attributes to XML Schema elements to add special prope
 
 ## Limit acceptable values for an adaptive form component {#limit-acceptable-values-for-an-adaptive-form-component}
 
-You can add the following restrictions to XML schema elements to limit the values acceptable to an adaptive form component: 
+You can add the following restrictions to XML schema elements to limit the values acceptable to an adaptive form component:
 
 <table>
- <tbody> 
-  <tr> 
-   <td width="21%"><p><strong> Schema property</strong></p> </td> 
-   <td valign="top" width="14%"><p><strong>Data Type</strong></p> </td> 
-   <td width="41%"><p><strong>Description</strong></p> </td> 
-   <td width="22%"><p><strong>Component</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>totalDigits</code></p> </td> 
-   <td valign="top" width="14%"><p>String</p> </td> 
-   <td width="41%"><p>Specifies the maximum number of digits allowed in a component. The number of digits specified must be greater than zero.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li>Numeric box</li> 
-     <li>Numeric Stepper</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>maximum</code></p> </td> 
-   <td valign="top" width="14%"><p>String</p> </td> 
-   <td width="41%"><p>Specifies the upper bound for numeric values and dates. By default, the maximum value is included.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li>Numeric box</li> 
-     <li>Numeric Stepper<br /> </li> 
-     <li>Date Picker</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>minimum</code></p> </td> 
-   <td valign="top" width="14%"><p>String</p> </td> 
-   <td width="41%"><p>Specifies the lower bound for numeric values and dates. By default, the minimum value is included.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li>Numeric box</li> 
-     <li>Numeric Stepper</li> 
-     <li>Date Picker</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>exclusiveMaximum</code></p> </td> 
-   <td valign="top" width="14%"><p>Boolean</p> </td> 
-   <td width="41%"><p>If true, the numeric value or date specified in the component of the form must be less than the numeric value or date specified for the maximum property.</p> <p>If false, the numeric value or date specified in the component of the form must be less than or equal to the numeric value or date specified for the maximum property.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li>Numeric box</li> 
-     <li>Numeric Stepper</li> 
-     <li>Date Picker</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>exclusiveMinimum</code></p> </td> 
-   <td valign="top" width="14%"><p>Boolean</p> </td> 
-   <td width="41%"><p>If true, the numeric value or date specified in the component of the form must be greater than the numeric value or date specified for the minimum property.</p> <p>If false, the numeric value or date specified in the component of the form must be greater than or equal to the numeric value or date specified for the minimum property.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li>Numeric box</li> 
-     <li>Numeric Stepper</li> 
-     <li>Date Picker</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>minLength</code></p> </td> 
-   <td valign="top" width="14%"><p>String</p> </td> 
-   <td width="41%"><p>Specifies the minimum number of characters allowed in a component. The minimum length must be equal to or greater than zero.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li>Text box</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>maxLength</code></p> </td> 
-   <td valign="top" width="14%"><p>String</p> </td> 
-   <td width="41%"><p>Specifies the maximum number of characters allowed in a component. The maximum length must be greater than zero.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li>Text box</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>length</code></p> </td> 
-   <td valign="top" width="14%"><p>String</p> </td> 
-   <td width="41%"><p>Specifies the exact number of characters allowed in a component. The length must be equal to or greater than zero.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li>Text box</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>fractionDigits</code></p> </td> 
-   <td valign="top" width="14%"><p>String</p> </td> 
-   <td width="41%"><p>Specifies the maximum number of decimal places allowed in a component. The fractionDigits must be equal to or greater than zero.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li> Numeric Box with data type float or decimal</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>pattern</code></p> </td> 
-   <td valign="top" width="14%"><p>String</p> </td> 
-   <td width="41%"><p>Specifies the sequence of the characters. A component accepts the characters if the characters conform to specified pattern.</p> <p>The pattern property maps to the validation pattern of the corresponding adaptive form component.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li>All adaptive forms components which are mapped to an XSD schema </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td><p><strong> Schema property</strong></p> </td>
+   <td><p><strong>Data Type</strong></p> </td>
+   <td><p><strong>Description</strong></p> </td>
+   <td><p><strong>Component</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p><code>totalDigits</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the maximum number of digits allowed in a component. The number of digits specified must be greater than zero.</p> </td>
+   <td>
+    <ul>
+     <li>Numeric box</li>
+     <li>Numeric Stepper</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>maximum</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the upper bound for numeric values and dates. By default, the maximum value is included.</p> </td>
+   <td>
+    <ul>
+     <li>Numeric box</li>
+     <li>Numeric Stepper<br /> </li>
+     <li>Date Picker</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>minimum</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the lower bound for numeric values and dates. By default, the minimum value is included.</p> </td>
+   <td>
+    <ul>
+     <li>Numeric box</li>
+     <li>Numeric Stepper</li>
+     <li>Date Picker</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>exclusiveMaximum</code></p> </td>
+   <td><p>Boolean</p> </td>
+   <td><p>If true, the numeric value or date specified in the component of the form must be less than the numeric value or date specified for the maximum property.</p> <p>If false, the numeric value or date specified in the component of the form must be less than or equal to the numeric value or date specified for the maximum property.</p> </td>
+   <td>
+    <ul>
+     <li>Numeric box</li>
+     <li>Numeric Stepper</li>
+     <li>Date Picker</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>exclusiveMinimum</code></p> </td>
+   <td><p>Boolean</p> </td>
+   <td><p>If true, the numeric value or date specified in the component of the form must be greater than the numeric value or date specified for the minimum property.</p> <p>If false, the numeric value or date specified in the component of the form must be greater than or equal to the numeric value or date specified for the minimum property.</p> </td>
+   <td>
+    <ul>
+     <li>Numeric box</li>
+     <li>Numeric Stepper</li>
+     <li>Date Picker</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>minLength</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the minimum number of characters allowed in a component. The minimum length must be equal to or greater than zero.</p> </td>
+   <td>
+    <ul>
+     <li>Text box</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>maxLength</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the maximum number of characters allowed in a component. The maximum length must be greater than zero.</p> </td>
+   <td>
+    <ul>
+     <li>Text box</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>length</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the exact number of characters allowed in a component. The length must be equal to or greater than zero.</p> </td>
+   <td>
+    <ul>
+     <li>Text box</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>fractionDigits</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the maximum number of decimal places allowed in a component. The fractionDigits must be equal to or greater than zero.</p> </td>
+   <td>
+    <ul>
+     <li> Numeric Box with data type float or decimal</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>pattern</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the sequence of the characters. A component accepts the characters if the characters conform to specified pattern.</p> <p>The pattern property maps to the validation pattern of the corresponding adaptive form component.</p> </td>
+   <td>
+    <ul>
+     <li>All adaptive forms components which are mapped to an XSD schema </li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Frequently asked questions {#frequently-asked-questions}
@@ -303,7 +303,7 @@ In a repeatable subform, you must use the complete subform. If you want only sel
 
 You have two options:
 
-* Scroll through the tree structure  
+* Scroll through the tree structure
 * Use the Search box to find an element
 
 **What is a bindRef?**

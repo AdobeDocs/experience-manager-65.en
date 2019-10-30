@@ -159,7 +159,7 @@ The sidebar comprises the following browsers:
    <td>Adds the page footer that typically includes copyright information, and links to other pages. </td>
   </tr>
   <tr>
-   <td width="150">Image</td>
+   <td>Image</td>
    <td>Allows you to insert an image.</td>
   </tr>
   <tr>
@@ -167,11 +167,11 @@ The sidebar comprises the following browsers:
    <td>Lets your customers select an image to provide information. You can use the information to provide personalized services to your customers.</td>
   </tr>
   <tr>
-   <td width="150">Next Button</td>
+   <td>Next Button</td>
    <td>Adds a button to navigate to the next panel in a form.</td>
   </tr>
   <tr>
-   <td width="150">Numeric box</td>
+   <td>Numeric box</td>
    <td>Adds a field for capturing numeric values</td>
   </tr>
   <tr>
@@ -179,11 +179,11 @@ The sidebar comprises the following browsers:
    <td>Use Numeric Stepper in your form to let your customers input a numeric value, which they can increase or decrease based on a predefined step.</td>
   </tr>
   <tr>
-   <td width="150">Panel</td>
+   <td>Panel</td>
    <td><p>Adds a panel or subpanel.</p> <p>You can also add a panel component from the parent panel toolbar using the <span class="uicontrol">Add Child Panel</code> button. Similarly, you can add a panel-specific toolbar using the <span class="uicontrol">Add Panel Toolbar</code> button. You can configure the position of the panel toolbar using the Edit Panel dialog.</p> </td>
   </tr>
   <tr>
-   <td width="150">Password box</td>
+   <td>Password box</td>
    <td>Adds a field for capturing a password.</td>
   </tr>
   <tr>
@@ -191,19 +191,19 @@ The sidebar comprises the following browsers:
    <td>Adds a button that users require to go back to the previous page or panel.</td>
   </tr>
   <tr>
-   <td width="150">Radio button</td>
+   <td>Radio button</td>
    <td>Adds radio buttons.</td>
   </tr>
   <tr>
-   <td width="150">Reset button</td>
+   <td>Reset button</td>
    <td>Adds a button to reset form fields.</td>
   </tr>
   <tr>
-   <td width="150">Save Button</td>
+   <td>Save Button</td>
    <td>Adds a button to save form data.</td>
   </tr>
   <tr>
-   <td width="150">(Deprecated) Scribble signature</td>
+   <td>(Deprecated) Scribble signature</td>
    <td>Adds a field for capturing scribble signatures.</td>
   </tr>
   <tr>
@@ -215,19 +215,19 @@ The sidebar comprises the following browsers:
    <td>Displays the information provided in the form and the signature fields for the user to verify and sign the form.</td>
   </tr>
   <tr>
-   <td width="150">Text</td>
+   <td>Text</td>
    <td>Allows you to specify static text.</td>
   </tr>
   <tr>
-   <td width="150">Submit Button</td>
+   <td>Submit Button</td>
    <td>Adds a submit button to submit the form to the configured submit action.</td>
   </tr>
   <tr>
-   <td width="150">Summary Step</td>
+   <td>Summary Step</td>
    <td>Submits the form and displays summary text that authors specifies after the form is submitted. </td>
   </tr>
   <tr>
-   <td width="150">Switch</td>
+   <td>Switch</td>
    <td>Adds a switch that performs a toggle or enable/disable action. You cannot add more than two options in the Switch component. Since a switch can have only two values: On or Off, mandatory is not applicable. At-least one value is saved irrespective of the user input. <br /> </td>
   </tr>
   <tr>
@@ -245,11 +245,11 @@ The sidebar comprises the following browsers:
     </ul> </td>
   </tr>
   <tr>
-   <td width="150">Terms and Conditions<br /> </td>
+   <td>Terms and Conditions<br /> </td>
    <td>Adds a field that authors can use to specify the terms and conditions for users to review before filling the form.</td>
   </tr>
   <tr>
-   <td width="150">Text box </td>
+   <td>Text box </td>
    <td><p>Adds a text box in which a user can specify the required information. </p> <p>By default, the Text Box component accepts only plain text. You can enable a Text Box component to accept Rich Text. A Rich Text enabled text component provide options to add headers, change character styles (bold, italicize, underline the characters), create ordered and unordered lists, change text background and text color, and add hyperlinks. To enable rich text for a text box, enable the<strong> Allow Rich Text</strong> option in the component properties.</p> </td>
   </tr>
   <tr>
@@ -257,7 +257,7 @@ The sidebar comprises the following browsers:
    <td>Specifies a title for the adaptive form.</td>
   </tr>
   <tr>
-   <td width="150">Verify Step</td>
+   <td>Verify Step</td>
    <td><p>Adds a placeholder to display the filled form for verification by user.</p> <p><strong>Note</strong>: Adaptive form containing the Verify component does not support anonymous users. Also, it is not recommended to use the Verify component in an adaptive form fragment.</p> </td>
   </tr>
  </tbody>

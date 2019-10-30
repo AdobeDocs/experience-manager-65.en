@@ -33,27 +33,27 @@ The following image displays the extracted contents of the `adobe-lc-mobileworks
 
 The following table details contents of the `adobe-lc-mobileworkspace-src-[version]/ios` folder.
 
-<table cellpadding="4" cellspacing="0">
+<table>
  <tbody>
   <tr>
-   <th class="row-nocellborder" valign="top" width="NaN%"><p>Directory</p> </th>
-   <th class="cellrowborder" valign="top" width="NaN%"><p>Content</p> </th>
+   <th><p>Directory</p> </th>
+   <th><p>Content</p> </th>
   </tr>
   <tr>
-   <td class="row-nocellborder" headers="d19e270 " valign="top" width="NaN%"><p><code>CordovaLib</code></p> </td>
-   <td class="cellrowborder" headers="d19e273 " valign="top" width="NaN%"><p>PhoneGap SDK 6.4.0</p> </td>
+   <td><p><code>CordovaLib</code></p> </td>
+   <td><p>PhoneGap SDK 6.4.0</p> </td>
   </tr>
   <tr>
-   <td class="row-nocellborder" headers="d19e270 " valign="top" width="NaN%"><p><code>AEM Forms</code></p> </td>
-   <td class="cellrowborder" headers="d19e273 " valign="top" width="NaN%"><p>Resources, PhoneGap plug-ins, and application's main module</p> </td>
+   <td><p><code>AEM Forms</code></p> </td>
+   <td><p>Resources, PhoneGap plug-ins, and application's main module</p> </td>
   </tr>
   <tr>
-   <td class="row-nocellborder" headers="d19e270 " valign="top" width="NaN%"><p><code>AEM Forms.xcodeproj</code></p> </td>
-   <td class="cellrowborder" headers="d19e273 " valign="top" width="NaN%"><p>Xcode project for AEM Forms app</p> </td>
+   <td><p><code>AEM Forms.xcodeproj</code></p> </td>
+   <td><p>Xcode project for AEM Forms app</p> </td>
   </tr>
   <tr>
-   <td class="row-nocellborder" headers="d19e270 " valign="top" width="NaN%"><p><code>www</code></p> </td>
-   <td class="cellrowborder" headers="d19e273 " valign="top" width="NaN%"><p>HTML, CSS, images, and JavaScript files for the AEM Forms app project</p> </td>
+   <td><p><code>www</code></p> </td>
+   <td><p>HTML, CSS, images, and JavaScript files for the AEM Forms app project</p> </td>
   </tr>
  </tbody>
 </table>

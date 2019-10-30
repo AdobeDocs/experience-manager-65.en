@@ -209,9 +209,9 @@ A synchronize action pulls the modifications from a source only to the selected 
 <table>
  <tbody>
   <tr>
-   <th scope="col" style="text-align: center;"><strong>Where in AEM interface</strong><br /> </th>
-   <th scope="col" style="text-align: center;"><strong>When and why to use</strong><br /> </th>
-   <th style="text-align: center;"><strong>How to use</strong><br /> </th>
+   <th><strong>Where in AEM interface</strong><br /> </th>
+   <th><strong>When and why to use</strong><br /> </th>
+   <th><strong>How to use</strong><br /> </th>
   </tr>
   <tr>
    <td>References rail</td>

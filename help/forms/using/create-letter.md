@@ -182,32 +182,32 @@ This table provides some guidelines that you can use to classify your letters:
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="75"><p><strong>Complexity level</strong></p> </td>
-   <td valign="top" width="125"><p><strong>Layout complexity (subjective)</strong></p> </td>
-   <td valign="top" width="67"><p><strong>Number of text paragraphs</strong></p> </td>
-   <td valign="top" width="90"><p><strong>Number of conditional texts or images</strong></p> </td>
-   <td valign="top" width="161"><p><strong>Required skill set</strong></p> </td>
+   <td><p><strong>Complexity level</strong></p> </td>
+   <td><p><strong>Layout complexity (subjective)</strong></p> </td>
+   <td><p><strong>Number of text paragraphs</strong></p> </td>
+   <td><p><strong>Number of conditional texts or images</strong></p> </td>
+   <td><p><strong>Required skill set</strong></p> </td>
   </tr>
   <tr>
-   <td valign="top" width="75"><p>Low complexity</p> </td>
-   <td valign="top" width="125"><p>Low. Layout has few form fields (&lt;15).</p> <p>Typically one page<span class="acrolinxCursorMarker"></code>.</p> </td>
-   <td valign="top" width="67"><p>8</p> </td>
-   <td valign="top" width="90"><p>1</p> </td>
-   <td valign="top" width="161"><p>Medium Designer skills.</p> </td>
+   <td><p>Low complexity</p> </td>
+   <td><p>Low. Layout has few form fields (&lt;15).</p> <p>Typically one page<span class="acrolinxCursorMarker"></code>.</p> </td>
+   <td><p>8</p> </td>
+   <td><p>1</p> </td>
+   <td><p>Medium Designer skills.</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="75"><p>Medium complexity</p> </td>
-   <td valign="top" width="125"><p>Medium complexity layout. Includes structures such as tables. Typically more than one page long.</p> </td>
-   <td valign="top" width="67"><p>16</p> </td>
-   <td valign="top" width="90"><p>2</p> </td>
-   <td valign="top" width="161"><p>Medium Designer skills.</p> <p> </p> <p>Capability to create complex expressions using user interfaces.</p> </td>
+   <td><p>Medium complexity</p> </td>
+   <td><p>Medium complexity layout. Includes structures such as tables. Typically more than one page long.</p> </td>
+   <td><p>16</p> </td>
+   <td><p>2</p> </td>
+   <td><p>Medium Designer skills.</p> <p> </p> <p>Capability to create complex expressions using user interfaces.</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="75"><p>High complexity</p> </td>
-   <td valign="top" width="125"><p>Complex layout. Can be greater than three pages. Contains tables and more than 60 form fields.</p> </td>
-   <td valign="top" width="67"><p>40</p> </td>
-   <td valign="top" width="90"><p>8</p> </td>
-   <td valign="top" width="161"><p>Expert Designer skills.</p> <p> </p> <p>Capability to create complex expressions using user interfaces.</p> </td>
+   <td><p>High complexity</p> </td>
+   <td><p>Complex layout. Can be greater than three pages. Contains tables and more than 60 form fields.</p> </td>
+   <td><p>40</p> </td>
+   <td><p>8</p> </td>
+   <td><p>Expert Designer skills.</p> <p> </p> <p>Capability to create complex expressions using user interfaces.</p> </td>
   </tr>
  </tbody>
 </table>

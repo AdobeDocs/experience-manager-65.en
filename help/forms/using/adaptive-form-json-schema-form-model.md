@@ -1,8 +1,8 @@
 ---
 title: Creating adaptive forms using JSON Schema
 seo-title: Creating adaptive forms using JSON Schema
-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms. 
-seo-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms. 
+description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
+seo-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
 uuid: bdeaeae8-65a3-4c46-b27d-fe68481e31f1
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -54,52 +54,52 @@ This mapping of JSON elements with adaptive form components is as follows:
 ```
 
 <table>
- <tbody> 
-  <tr> 
-   <th><strong>JSON element, properties, or attributes</strong></th> 
-   <th><strong>Adaptive form component</strong></th> 
-  </tr> 
-  <tr> 
-   <td><p>String properties with enum and enumNames constraint.</p> <p>Syntax,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td> 
-   <td><p>Drop down component:</p> 
-    <ul> 
-     <li>Values listed in enumNames are displayed in the drop box.</li> 
-     <li>Values listed in the enum are used for calculation.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p>String property with format constraint. For example, email, and date.</p> <p>Syntax,</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td> 
-   <td> 
-    <ul> 
-     <li>Email component is mapped when the type is string and format is email.</li> 
-     <li>Textbox component with validation is mapped when the type is string and format is hostname.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p>{</p> <p>"type" : "string",</p> <p>}</p> </td> 
-   <td><br /> <br /> Text field<br /> <br /> <br /> </td> 
-  </tr> 
-  <tr> 
-   <td>number property<br /> </td> 
-   <td>Numeric Field with sub type set to float<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>integer property<br /> </td> 
-   <td>Numeric Field with sub type set to integer<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>boolean property<br /> </td> 
-   <td>Switch<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>object property<br /> </td> 
-   <td>Panel<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>array property</td> 
-   <td>Repeatable Panel with min and max equal to minItems and maxItems respectively. Only Homogenous arrays are supported. So the items constraint must be an object and not an array.<br /> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th><strong>JSON element, properties, or attributes</strong></th>
+   <th><strong>Adaptive form component</strong></th>
+  </tr>
+  <tr>
+   <td><p>String properties with enum and enumNames constraint.</p> <p>Syntax,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td>
+   <td><p>Drop down component:</p>
+    <ul>
+     <li>Values listed in enumNames are displayed in the drop box.</li>
+     <li>Values listed in the enum are used for calculation.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>String property with format constraint. For example, email, and date.</p> <p>Syntax,</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td>
+   <td>
+    <ul>
+     <li>Email component is mapped when the type is string and format is email.</li>
+     <li>Textbox component with validation is mapped when the type is string and format is hostname.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>{</p> <p>"type" : "string",</p> <p>}</p> </td>
+   <td><br /> <br /> Text field<br /> <br /> <br /> </td>
+  </tr>
+  <tr>
+   <td>number property<br /> </td>
+   <td>Numeric Field with sub type set to float<br /> </td>
+  </tr>
+  <tr>
+   <td>integer property<br /> </td>
+   <td>Numeric Field with sub type set to integer<br /> </td>
+  </tr>
+  <tr>
+   <td>boolean property<br /> </td>
+   <td>Switch<br /> </td>
+  </tr>
+  <tr>
+   <td>object property<br /> </td>
+   <td>Panel<br /> </td>
+  </tr>
+  <tr>
+   <td>array property</td>
+   <td>Repeatable Panel with min and max equal to minItems and maxItems respectively. Only Homogenous arrays are supported. So the items constraint must be an object and not an array.<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Common schema properties {#common-schema-properties}
@@ -307,7 +307,7 @@ Definition keys are used to identify reusable schemas. The reusable schema defin
 ```
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
- 
+
   "definitions": {
     "address": {
       "type": "object",
@@ -319,9 +319,9 @@ Definition keys are used to identify reusable schemas. The reusable schema defin
       "required": ["street_address", "city", "state"]
     }
   },
- 
+
   "type": "object",
- 
+
   "properties": {
     "billing_address": { "$ref": "#/definitions/address" },
     "shipping_address": { "$ref": "#/definitions/address" }
@@ -372,214 +372,214 @@ Use the aem:afproperties property to preconfigure adaptive form expressions or s
     "guideNodeClass" : "guideTelephone",
     "events": {
       "Initialize" : "this.value = \"1234567890\"; console.log(\"ef:gh\") "
-    }              
+    }
   }
-}          
+}
 ```
 
 You should be a member of the [forms-power-user group](/help/forms/using/forms-groups-privileges-tasks.md) to configure scripts or expressions for form object. The below table lists all the script events supported for an adaptive form component.
 
 <table>
- <tbody> 
-  <tr> 
-   <th scope="col" style="text-align: center;" valign="middle"><strong></strong>Component \ Event</th> 
-   <th scope="row">initialize <br /> </th> 
-   <td style="text-align: center;">Calculate</td> 
-   <td>Visibility</td> 
-   <td>Validate</td> 
-   <td>Enabled</td> 
-   <td>Value Commit</td> 
-   <td>Click </td> 
-   <td>Options</td> 
-  </tr> 
-  <tr> 
-   <td>Text Field</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Numeric Field</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Numeric Stepper</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Radio Button</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Telephone</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Switch</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Button</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Check Box</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-  </tr> 
-  <tr> 
-   <td>Drop-Down</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-  </tr> 
-  <tr> 
-   <td>Image Choice</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-  </tr> 
-  <tr> 
-   <td>Date Input Field</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Date Picker</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Email</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>File Attachment</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Image</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Draw</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Panel</td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td style="text-align: center;"><img alt="" src="assets/yes_tick.png" /></td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th><strong></strong>Component \ Event</th>
+   <th>initialize <br /> </th>
+   <td>Calculate</td>
+   <td>Visibility</td>
+   <td>Validate</td>
+   <td>Enabled</td>
+   <td>Value Commit</td>
+   <td>Click </td>
+   <td>Options</td>
+  </tr>
+  <tr>
+   <td>Text Field</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Numeric Field</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Numeric Stepper</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Radio Button</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Telephone</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Switch</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Button</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Check Box</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+  </tr>
+  <tr>
+   <td>Drop-Down</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+  </tr>
+  <tr>
+   <td>Image Choice</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+  </tr>
+  <tr>
+   <td>Date Input Field</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Date Picker</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Email</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>File Attachment</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Image</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Draw</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Panel</td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+  </tr>
+ </tbody>
 </table>
 
 Some examples of using events in a JSON are hiding a field on initialize event and configure value of another field on value commit event. For detailed information about creating expressions for the script events, see [Adaptive Form Expressions](../../forms/using/adaptive-form-expressions.md).
@@ -611,7 +611,7 @@ Here is the sample JSON code for aforementioned examples.
             "aem:afProperties": {
                 "events" : {
                     "Value Commit" : "IncomeYearly.value = this.value * 12;"
-                }   
+                }
             }
         },
         "yearly": {
@@ -627,100 +627,100 @@ Here is the sample JSON code for aforementioned examples.
 
 ## Limit acceptable values for an adaptive form component {#limit-acceptable-values-for-an-adaptive-form-component}
 
-You can add the following restrictions to JSON Schema elements to limit the values acceptable to an adaptive form component: 
+You can add the following restrictions to JSON Schema elements to limit the values acceptable to an adaptive form component:
 
 <table>
- <tbody> 
-  <tr> 
-   <td width="21%"><p><strong> Schema property</strong></p> </td> 
-   <td valign="top" width="14%"><p><strong>Data Type</strong></p> </td> 
-   <td width="41%"><p><strong>Description</strong></p> </td> 
-   <td width="22%"><p><strong>Component</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>maximum</code></p> </td> 
-   <td valign="top" width="14%"><p>String</p> </td> 
-   <td width="41%"><p>Specifies the upper bound for numeric values and dates. By default, the maximum value is included.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li>Numeric box</li> 
-     <li>Numeric Stepper<br /> </li> 
-     <li>Date Picker</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>minimum</code></p> </td> 
-   <td valign="top" width="14%"><p>String</p> </td> 
-   <td width="41%"><p>Specifies the lower bound for numeric values and dates. By default, the minimum value is included.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li>Numeric box</li> 
-     <li>Numeric Stepper</li> 
-     <li>Date Picker</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>exclusiveMaximum</code></p> </td> 
-   <td valign="top" width="14%"><p>Boolean</p> </td> 
-   <td width="41%"><p>If true, the numeric value or date specified in the component of the form must be less than the numeric value or date specified for the maximum property.</p> <p>If false, the numeric value or date specified in the component of the form must be less than or equal to the numeric value or date specified for the maximum property.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li>Numeric box</li> 
-     <li>Numeric Stepper</li> 
-     <li>Date Picker</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>exclusiveMinimum</code></p> </td> 
-   <td valign="top" width="14%"><p>Boolean</p> </td> 
-   <td width="41%"><p>If true, the numeric value or date specified in the component of the form must be greater than the numeric value or date specified for the minimum property.</p> <p>If false, the numeric value or date specified in the component of the form must be greater than or equal to the numeric value or date specified for the minimum property.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li>Numeric box</li> 
-     <li>Numeric Stepper</li> 
-     <li>Date Picker</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>minLength</code></p> </td> 
-   <td valign="top" width="14%"><p>String</p> </td> 
-   <td width="41%"><p>Specifies the minimum number of characters allowed in a component. The minimum length must be equal to or greater than zero.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li>Text box</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><code>maxLength</code></td> 
-   <td>String</td> 
-   <td>Specifies the maximum number of characters allowed in a component. The maximum length must be equal to or greater than zero.</td> 
-   <td> 
-    <ul> 
-     <li>Text box</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td width="21%"><p><code>pattern</code></p> </td> 
-   <td valign="top" width="14%"><p>String</p> </td> 
-   <td width="41%"><p>Specifies the sequence of the characters. A component accepts the characters if the characters conform to specified pattern.</p> <p>The pattern property maps to the validation pattern of the corresponding adaptive form component.</p> </td> 
-   <td width="22%"> 
-    <ul> 
-     <li>All adaptive forms components which are mapped to an XSD schema </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>maxItems</td> 
-   <td>String</td> 
-   <td>Specifies the maximum number of item in an array. The maximum items must be equal to or greater than zero.</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>minItems</td> 
-   <td>String</td> 
-   <td>Specifies the minimum number of item in an array. The minimum items must be equal to or greater than zero.</td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td><p><strong> Schema property</strong></p> </td>
+   <td><p><strong>Data Type</strong></p> </td>
+   <td><p><strong>Description</strong></p> </td>
+   <td><p><strong>Component</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p><code>maximum</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the upper bound for numeric values and dates. By default, the maximum value is included.</p> </td>
+   <td>
+    <ul>
+     <li>Numeric box</li>
+     <li>Numeric Stepper<br /> </li>
+     <li>Date Picker</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>minimum</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the lower bound for numeric values and dates. By default, the minimum value is included.</p> </td>
+   <td>
+    <ul>
+     <li>Numeric box</li>
+     <li>Numeric Stepper</li>
+     <li>Date Picker</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>exclusiveMaximum</code></p> </td>
+   <td><p>Boolean</p> </td>
+   <td><p>If true, the numeric value or date specified in the component of the form must be less than the numeric value or date specified for the maximum property.</p> <p>If false, the numeric value or date specified in the component of the form must be less than or equal to the numeric value or date specified for the maximum property.</p> </td>
+   <td>
+    <ul>
+     <li>Numeric box</li>
+     <li>Numeric Stepper</li>
+     <li>Date Picker</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>exclusiveMinimum</code></p> </td>
+   <td><p>Boolean</p> </td>
+   <td><p>If true, the numeric value or date specified in the component of the form must be greater than the numeric value or date specified for the minimum property.</p> <p>If false, the numeric value or date specified in the component of the form must be greater than or equal to the numeric value or date specified for the minimum property.</p> </td>
+   <td>
+    <ul>
+     <li>Numeric box</li>
+     <li>Numeric Stepper</li>
+     <li>Date Picker</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>minLength</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the minimum number of characters allowed in a component. The minimum length must be equal to or greater than zero.</p> </td>
+   <td>
+    <ul>
+     <li>Text box</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><code>maxLength</code></td>
+   <td>String</td>
+   <td>Specifies the maximum number of characters allowed in a component. The maximum length must be equal to or greater than zero.</td>
+   <td>
+    <ul>
+     <li>Text box</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p><code>pattern</code></p> </td>
+   <td><p>String</p> </td>
+   <td><p>Specifies the sequence of the characters. A component accepts the characters if the characters conform to specified pattern.</p> <p>The pattern property maps to the validation pattern of the corresponding adaptive form component.</p> </td>
+   <td>
+    <ul>
+     <li>All adaptive forms components which are mapped to an XSD schema </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>maxItems</td>
+   <td>String</td>
+   <td>Specifies the maximum number of item in an array. The maximum items must be equal to or greater than zero.</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>minItems</td>
+   <td>String</td>
+   <td>Specifies the minimum number of item in an array. The minimum items must be equal to or greater than zero.</td>
+   <td> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Non-supported constructs  {#non-supported-constructs}
@@ -742,7 +742,7 @@ In a repeatable subform, you must use the complete subform. If you want only sel
 
 You have two options:
 
-* Scroll through the tree structure  
+* Scroll through the tree structure
 * Use the Search box to find an element
 
 **What should be the extension of the JSON schema file?**

@@ -295,34 +295,34 @@ The following table describes the components that are available to display and m
 <table>
  <tbody>
   <tr>
-   <td valign="middle"><p><strong>Component</strong></p> </td>
-   <td valign="middle"><p><strong>Data type of Adobe Campaign field</strong></p> </td>
-   <td valign="middle"><p><strong>Example field</strong></p> </td>
+   <td><p><strong>Component</strong></p> </td>
+   <td><p><strong>Data type of Adobe Campaign field</strong></p> </td>
+   <td><p><strong>Example field</strong></p> </td>
   </tr>
   <tr>
-   <td valign="middle"><p>Checkbox (Campaign)</p> </td>
-   <td valign="middle"><p>boolean</p> </td>
-   <td valign="middle"><p>No longer contact (by any channel)</p> </td>
+   <td><p>Checkbox (Campaign)</p> </td>
+   <td><p>boolean</p> </td>
+   <td><p>No longer contact (by any channel)</p> </td>
   </tr>
   <tr>
-   <td valign="middle"><p>Date Field (Campaign)</p> <p>Date Field/HTML 5 (Campaign)</p> </td>
-   <td valign="middle"><p>date</p> </td>
-   <td valign="middle"><p>Birth date</p> </td>
+   <td><p>Date Field (Campaign)</p> <p>Date Field/HTML 5 (Campaign)</p> </td>
+   <td><p>date</p> </td>
+   <td><p>Birth date</p> </td>
   </tr>
   <tr>
-   <td valign="middle"><p>Numeric Field (Campaign)</p> </td>
-   <td valign="middle"><p>numeric (byte, short, long, double)</p> </td>
-   <td valign="middle"><p>Age</p> </td>
+   <td><p>Numeric Field (Campaign)</p> </td>
+   <td><p>numeric (byte, short, long, double)</p> </td>
+   <td><p>Age</p> </td>
   </tr>
   <tr>
-   <td valign="middle"><p>Option Field (Campaign)</p> </td>
-   <td valign="middle"><p>byte with associated values</p> </td>
-   <td valign="middle"><p>Gender</p> </td>
+   <td><p>Option Field (Campaign)</p> </td>
+   <td><p>byte with associated values</p> </td>
+   <td><p>Gender</p> </td>
   </tr>
   <tr>
-   <td valign="middle"><p>Text Field (Campaign)</p> </td>
-   <td valign="middle"><p>string</p> </td>
-   <td valign="middle"><p>Email</p> </td>
+   <td><p>Text Field (Campaign)</p> </td>
+   <td><p>string</p> </td>
+   <td><p>Email</p> </td>
   </tr>
  </tbody>
 </table>

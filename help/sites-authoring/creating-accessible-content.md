@@ -542,20 +542,20 @@ For example, make sure that information provided by color is also provided expli
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="254"><p><strong>Performance</strong></p> </td>
-   <td valign="top" width="285"><p><strong>Availability</strong></p> </td>
+   <td><p><strong>Performance</strong></p> </td>
+   <td><p><strong>Availability</strong></p> </td>
   </tr>
   <tr>
-   <td valign="top" width="254"><p>Tuesday March 16<sup>th</sup></p> </td>
-   <td valign="top" width="285"><p>SEATS AVAILABLE</p> </td>
+   <td><p>Tuesday March 16<sup>th</sup></p> </td>
+   <td><p>SEATS AVAILABLE</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="254"><p>Wednesday March 17th</p> </td>
-   <td valign="top" width="285"><p>SEATS AVAILABLE</p> </td>
+   <td><p>Wednesday March 17th</p> </td>
+   <td><p>SEATS AVAILABLE</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="254"><p>Thursday March 18<sup>th</sup></p> </td>
-   <td valign="top" width="285"><p>SOLD OUT</p> </td>
+   <td><p>Thursday March 18<sup>th</sup></p> </td>
+   <td><p>SOLD OUT</p> </td>
   </tr>
  </tbody>
 </table>

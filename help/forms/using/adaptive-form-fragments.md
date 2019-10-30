@@ -170,44 +170,44 @@ You can perform several operations on adaptive form fragments using the AEM Form
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="132"><p><strong>Operation</strong></p> </td>
-   <td valign="top" width="406"><p><strong>Description</strong></p> </td>
+   <td><p><strong>Operation</strong></p> </td>
+   <td><p><strong>Description</strong></p> </td>
   </tr>
   <tr>
-   <td valign="top" width="132"><p>Open</p> </td>
-   <td valign="top" width="406"><p>Opens the selected adaptive form fragment in edit mode.<br /> <br /> </p> </td>
+   <td><p>Open</p> </td>
+   <td><p>Opens the selected adaptive form fragment in edit mode.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td valign="top" width="132"><p>View Properties</p> </td>
-   <td valign="top" width="406"><p>Opens the Properties panel. From the Properties panel, you can view and edit properties, generate a preview, and upload a thumbnail image for the selected fragment. For more information, see <a href="../../forms/using/manage-form-metadata.md" target="_blank">Managing metadata</a>.<br /> <br /> </p> </td>
+   <td><p>View Properties</p> </td>
+   <td><p>Opens the Properties panel. From the Properties panel, you can view and edit properties, generate a preview, and upload a thumbnail image for the selected fragment. For more information, see <a href="../../forms/using/manage-form-metadata.md" target="_blank">Managing metadata</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td valign="top" width="132"><p>Copy</p> </td>
-   <td valign="top" width="406"><p>Copies the selected fragment. The Paste button appears in the toolbar.<br /> <br /> </p> </td>
+   <td><p>Copy</p> </td>
+   <td><p>Copies the selected fragment. The Paste button appears in the toolbar.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td valign="top" width="132"><p>Download</p> </td>
-   <td valign="top" width="406"><p>Downloads the selected fragment.<br /> <br /> </p> </td>
+   <td><p>Download</p> </td>
+   <td><p>Downloads the selected fragment.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td valign="top" width="132"><p>Preview</p> </td>
-   <td valign="top" width="406"><p>Provides options to preview the fragment as an HTML or a custom preview by merging data from an XML file with the fragment. For more information, see <a href="/help/forms/using/previewing-forms.md" target="_blank">Previewing a form</a>.<br /> <br /> </p> </td>
+   <td><p>Preview</p> </td>
+   <td><p>Provides options to preview the fragment as an HTML or a custom preview by merging data from an XML file with the fragment. For more information, see <a href="/help/forms/using/previewing-forms.md" target="_blank">Previewing a form</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td valign="top" width="132"><p>Start Review/Manage Review</p> </td>
-   <td valign="top" width="406"><p>Allows initiating and managing a review of the selected fragment. For more information, see <a href="../../forms/using/create-reviews-forms.md" target="_blank">Creating and managing reviews</a>.<br /> <br /> </p> </td>
+   <td><p>Start Review/Manage Review</p> </td>
+   <td><p>Allows initiating and managing a review of the selected fragment. For more information, see <a href="../../forms/using/create-reviews-forms.md" target="_blank">Creating and managing reviews</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td valign="top" width="132"><p>Create Dictionary</p> </td>
-   <td valign="top" width="406"><p>Generates a dictionary for localizing the selected fragment. For more information, see <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank">Localizing adaptive forms</a>.<br /> <br /> </p> </td>
+   <td><p>Create Dictionary</p> </td>
+   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank">Localizing adaptive forms</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td valign="top" width="132"><p>Publish / Unpublish</p> </td>
-   <td valign="top" width="406"><p>Publishes / unpublishes the selected fragment.<br /> <br /> </p> </td>
+   <td><p>Publish / Unpublish</p> </td>
+   <td><p>Publishes / unpublishes the selected fragment.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td valign="top" width="132"><p>Delete</p> </td>
-   <td valign="top" width="406"><p>Deletes the selected fragment.<br /> <br /> </p> </td>
+   <td><p>Delete</p> </td>
+   <td><p>Deletes the selected fragment.<br /> <br /> </p> </td>
   </tr>
  </tbody>
 </table>

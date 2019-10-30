@@ -196,37 +196,37 @@ All projects support the following default roles to let you administer security 
 <table>
  <tbody>
   <tr>
-   <td valign="top" width="160"><p><strong>Role</strong></p> </td>
-   <td valign="top" width="160"><p><strong>Description</strong></p> </td>
-   <td valign="top" width="160"><p><strong>Permissions</strong></p> </td>
-   <td valign="top" width="160"><p><strong>Group Membership</strong></p> </td>
+   <td><p><strong>Role</strong></p> </td>
+   <td><p><strong>Description</strong></p> </td>
+   <td><p><strong>Permissions</strong></p> </td>
+   <td><p><strong>Group Membership</strong></p> </td>
   </tr>
   <tr>
-   <td valign="top" width="160"><p>Observer</p> </td>
-   <td valign="top" width="160"><p>A user in this role can view project details, including the project status.</p> </td>
-   <td valign="top" width="160"><p>Read-only permissions on a project</p> </td>
-   <td valign="top" width="160"><p>workflow-users group</p> </td>
+   <td><p>Observer</p> </td>
+   <td><p>A user in this role can view project details, including the project status.</p> </td>
+   <td><p>Read-only permissions on a project</p> </td>
+   <td><p>workflow-users group</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="160"><p>Editor</p> </td>
-   <td valign="top" width="160"><p>A user in this role can upload and edit the contents of a project.</p> <p> </p> </td>
-   <td valign="top" width="160">
+   <td><p>Editor</p> </td>
+   <td><p>A user in this role can upload and edit the contents of a project.</p> <p> </p> </td>
+   <td>
     <ul>
      <li>Read and Write access on a project, associated metadata, and related assets.</li>
      <li>Privileges to upload a shot list, photo shoot, and review and approve assets</li>
      <li>Write permission on /etc/commerce</li>
      <li>Have modify permision on a specific project</li>
     </ul> </td>
-   <td valign="top" width="160"><p>workflow-users group</p> </td>
+   <td><p>workflow-users group</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="160"><p>Owner</p> </td>
-   <td valign="top" width="160"><p>A user in this role can initiate a project. An owner can create a project, intiate work in a project and also move approved assets to the Production folder. Although all other tasks in the project can also be viewed and performed by the owner.</p> </td>
-   <td valign="top" width="160">
+   <td><p>Owner</p> </td>
+   <td><p>A user in this role can initiate a project. An owner can create a project, intiate work in a project and also move approved assets to the Production folder. Although all other tasks in the project can also be viewed and performed by the owner.</p> </td>
+   <td>
     <ul>
      <li>Write permission on /etc/commerce</li>
     </ul> </td>
-   <td valign="top" width="160">
+   <td>
     <ul>
      <li>DAM-users group (to be able to create a project)</li>
      <li>project-administrators group (to be able to move assets)</li>

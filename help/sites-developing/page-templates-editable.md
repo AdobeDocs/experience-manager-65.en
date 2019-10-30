@@ -245,10 +245,10 @@ The following table details the necessary permissions for template editing.
 <table>
  <tbody>
   <tr>
-   <th scope="row">Path</th>
+   <th>Path</th>
    <th>Role / Group</th>
    <th>Permissions<br /> </th>
-   <th scope="col" width="150">Description</th>
+   <th>Description</th>
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td>
@@ -305,10 +305,10 @@ Templates should no longer be stored in `/conf/global`, however for some legacy 
 <table>
  <tbody>
   <tr>
-   <th scope="row">Path</th>
+   <th>Path</th>
    <th>Role / Group</th>
    <th>Permissions<br /> </th>
-   <th scope="col" width="150">Description</th>
+   <th>Description</th>
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/global/settings/wcm/templates</code></td>

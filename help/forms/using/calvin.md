@@ -50,29 +50,29 @@ Using Calvin, you can create test cases in CRXDE and run UI tests directly in th
     </ul> </td>
   </tr>
   <tr>
-   <td valign="top" width="221"><p>Expression Rules</p> <p> </p> </td>
-   <td valign="top" width="221">
+   <td><p>Expression Rules</p> <p> </p> </td>
+   <td>
     <ul>
      <li>Are the expressions associated with form objects, such as calculate, visible, execute scripts after exiting a field, being executed after performing the relevant UI operations?<br /> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td valign="top" width="221">Validations</td>
-   <td valign="top" width="221">
+   <td>Validations</td>
+   <td>
     <ul>
      <li>Are field validations executing as expected after performing the operations?</li>
     </ul> </td>
   </tr>
   <tr>
-   <td valign="top" width="221"><p>Lazy Loading</p> <p> </p> </td>
-   <td valign="top" width="221">
+   <td><p>Lazy Loading</p> <p> </p> </td>
+   <td>
     <ul>
      <li>On click of tabs (or any navigation item of a panel), is the HTML being fetched from server as per lazy loading configuration?</li>
     </ul> <h1> </h1> </td>
   </tr>
   <tr>
-   <td valign="top" width="221"><p>UI Interaction</p> </td>
-   <td valign="top" width="221">
+   <td><p>UI Interaction</p> </td>
+   <td>
     <ul>
      <li><a href="https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html#toc2__anchor" target="_blank">Testing UI interaction with Adaptive Form objects</a></li>
     </ul> </td>
@@ -107,14 +107,14 @@ The following example walks you through creation of a test suite for testing mul
    <td>Value</td>
   </tr>
   <tr>
-   <td valign="top"><p>categories</p> </td>
-   <td valign="top"><p>String[]</p> </td>
-   <td valign="top"><p>granite.testing.hobbes.tests, granite.testing.calvin.tests</p> </td>
+   <td><p>categories</p> </td>
+   <td><p>String[]</p> </td>
+   <td><p>granite.testing.hobbes.tests, granite.testing.calvin.tests</p> </td>
   </tr>
   <tr>
-   <td valign="top"><p>dependencies</p> </td>
-   <td valign="top"><p>String[]</p> </td>
-   <td valign="top"><p>granite.testing.hobbes.testrunner, granite.testing.calvin, apps.testframework.all</p> </td>
+   <td><p>dependencies</p> </td>
+   <td><p>String[]</p> </td>
+   <td><p>granite.testing.hobbes.testrunner, granite.testing.calvin, apps.testframework.all</p> </td>
   </tr>
  </tbody>
 </table>
@@ -317,20 +317,20 @@ The steps for testing your AEM adaptive forms are similar to steps for testing y
    <td><strong>Description</strong></td>
   </tr>
   <tr>
-   <td valign="top" width="100"><p>Test suite</p> </td>
-   <td valign="top" width="315"><p>A test suite is a collection of related test cases.</p> </td>
+   <td><p>Test suite</p> </td>
+   <td><p>A test suite is a collection of related test cases.</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="100"><p>Test case</p> </td>
-   <td valign="top" width="315"><p>A test case represents a task that a user performs using your UI. Add test cases to your test suite to test the activities that users perform.</p> </td>
+   <td><p>Test case</p> </td>
+   <td><p>A test case represents a task that a user performs using your UI. Add test cases to your test suite to test the activities that users perform.</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="100"><p>Actions</p> </td>
-   <td valign="top" width="315"><p>Actions are methods that perform a gesture in the UI, such as clicking a button or filling an input box with a value.</p> <p>The methods of the hobs.actions.Asserts, hobs.actions.Core and hobs.utils.af classes are actions that you can use in your tests. All actions execute synchronously.</p> </td>
+   <td><p>Actions</p> </td>
+   <td><p>Actions are methods that perform a gesture in the UI, such as clicking a button or filling an input box with a value.</p> <p>The methods of the hobs.actions.Asserts, hobs.actions.Core and hobs.utils.af classes are actions that you can use in your tests. All actions execute synchronously.</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="100"><p>Author or publish environment</p> </td>
-   <td valign="top" width="315"><p>In general, forms can either be tested in author or publish environment. In case of publish environment, by default, the access to execute the test is restricted. This is because all the client libraries related to test runner lies inside the /libs in the JCR structure.</p> </td>
+   <td><p>Author or publish environment</p> </td>
+   <td><p>In general, forms can either be tested in author or publish environment. In case of publish environment, by default, the access to execute the test is restricted. This is because all the client libraries related to test runner lies inside the /libs in the JCR structure.</p> </td>
   </tr>
  </tbody>
 </table>

@@ -202,14 +202,14 @@ Sub-rules are nodes of type `cq:Page` with properties on its `jcr:content`node t
 <table>
  <tbody>
   <tr>
-   <th style="text-align: center;">Property</th>
-   <th style="text-align: center;">Type</th>
-   <th style="text-align: left;"> Value Description</th>
+   <th>Property</th>
+   <th>Type</th>
+   <th> Value Description</th>
   </tr>
   <tr>
-   <td style="text-align: center;"><i><code>VERB</code></i></td>
-   <td style="text-align: center;">Long</td>
-   <td style="text-align: left;">
+   <td><i><code>VERB</code></i></td>
+   <td>Long</td>
+   <td>
     <ul>
      <li>required; the verb corresponds to an event action</li>
      <li>there must be at least one verb property</li>
@@ -221,9 +221,9 @@ Sub-rules are nodes of type `cq:Page` with properties on its `jcr:content`node t
     </ul> </td>
   </tr>
   <tr>
-   <td style="text-align: center;"><code>topics</code></td>
-   <td style="text-align: center;">String[]</td>
-   <td style="text-align: left;">
+   <td><code>topics</code></td>
+   <td>String[]</td>
+   <td>
     <ul>
      <li>optional; restricts sub-rule to community components identified by event topics</li>
      <li>if specified : value is multi-value string of event topics</li>
@@ -232,9 +232,9 @@ Sub-rules are nodes of type `cq:Page` with properties on its `jcr:content`node t
     </ul> </td>
   </tr>
   <tr>
-   <td style="text-align: center;"><code>forOwner</code></td>
-   <td style="text-align: center;">Boolean</td>
-   <td style="text-align: left;">
+   <td><code>forOwner</code></td>
+   <td>Boolean</td>
+   <td>
     <ul>
      <li>optional; not relevant when member is acting on content they own</li>
      <li>if true, apply score to owner of content being acted upon</li>
@@ -243,9 +243,9 @@ Sub-rules are nodes of type `cq:Page` with properties on its `jcr:content`node t
     </ul> </td>
   </tr>
   <tr>
-   <td style="text-align: center;"><code>scoringType</code></td>
-   <td style="text-align: center;">String</td>
-   <td style="text-align: left;">
+   <td><code>scoringType</code></td>
+   <td>String</td>
+   <td>
     <ul>
      <li>optional; identifies the scoring engine</li>
      <li>if "basic", specifies the scoring engine based on quantity
@@ -333,14 +333,14 @@ The `scoringRules`property on a badging rule simply restricts which scoring rule
 <table>
  <tbody>
   <tr>
-   <th style="text-align: center;">Property</th>
-   <th style="text-align: center;">Type</th>
-   <th style="text-align: left;">Value Description</th>
+   <th>Property</th>
+   <th>Type</th>
+   <th>Value Description</th>
   </tr>
   <tr>
-   <td style="text-align: center;">thresholds</td>
-   <td style="text-align: center;">String[]</td>
-   <td style="text-align: left;"><em>(required)</em> A multi-value string of the form 'number|path'
+   <td>thresholds</td>
+   <td>String[]</td>
+   <td><em>(required)</em> A multi-value string of the form 'number|path'
     <ul>
      <li>number = score</li>
      <li>| = the vertical line char (U+007C)</li>
@@ -348,17 +348,17 @@ The `scoringRules`property on a badging rule simply restricts which scoring rule
     </ul> The strings must be ordered so that the numbers are increasing in value and no whitespace should appear between the number and path.<br /> Example entry :<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
-   <td style="text-align: center;">badgingType</td>
-   <td style="text-align: center;">String</td>
-   <td style="text-align: left;"><em>(optional)</em> Identifies the scoring engine as either "basic" or "advanced". If the advanced scoring engine is desired, see <a href="/help/communities/advanced.md">Advanced Scoring and Badges</a>. The default is "basic".</td>
+   <td>badgingType</td>
+   <td>String</td>
+   <td><em>(optional)</em> Identifies the scoring engine as either "basic" or "advanced". If the advanced scoring engine is desired, see <a href="/help/communities/advanced.md">Advanced Scoring and Badges</a>. The default is "basic".</td>
   </tr>
   <tr>
-   <td style="text-align: center;">
+   <td>
     <g class="gr_ gr_16 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="16" id="16">
       scoringRules
     </g></td>
-   <td style="text-align: center;">String[]</td>
-   <td style="text-align: left;">(<em>optional</em>) A multi-value string to restrict the badging rule to scoring events identified by the scoring rules</td>
+   <td>String[]</td>
+   <td>(<em>optional</em>) A multi-value string to restrict the badging rule to scoring events identified by the scoring rules</td>
   </tr>
  </tbody>
 </table>

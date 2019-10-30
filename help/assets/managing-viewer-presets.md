@@ -308,52 +308,52 @@ The following table identifies the mobile viewer gestures that are supported on 
 <table>
  <tbody>
   <tr>
-   <td style="text-align: center;"><strong>Gesture</strong></td>
-   <td style="text-align: center;"><strong>Flyout Zoom</strong></td>
-   <td style="text-align: center;"><strong>Zoom</strong></td>
-   <td style="text-align: center;"><strong>Spin</strong></td>
+   <td><strong>Gesture</strong></td>
+   <td><strong>Flyout Zoom</strong></td>
+   <td><strong>Zoom</strong></td>
+   <td><strong>Spin</strong></td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p><strong>Drag</strong></p> </td>
-   <td valign="top" width="NaN%"><p>Pans</p> </td>
-   <td valign="top" width="NaN%"><p>Pans</p> </td>
-   <td valign="top" width="NaN%"><p>Pans</p> </td>
+   <td><p><strong>Drag</strong></p> </td>
+   <td><p>Pans</p> </td>
+   <td><p>Pans</p> </td>
+   <td><p>Pans</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p><strong>Tap</strong></p> </td>
-   <td valign="top" width="NaN%"><p>Shows flyout window</p> </td>
-   <td valign="top" width="NaN%"><p>Shows or hides the user interface</p> </td>
-   <td valign="top" width="NaN%"><p>Shows or hides the user interface</p> </td>
+   <td><p><strong>Tap</strong></p> </td>
+   <td><p>Shows flyout window</p> </td>
+   <td><p>Shows or hides the user interface</p> </td>
+   <td><p>Shows or hides the user interface</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p><strong>Double-tap</strong></p> </td>
-   <td valign="top" width="NaN%"><p>Does not apply</p> </td>
-   <td valign="top" width="NaN%"><p>Zooms in or resets</p> </td>
-   <td valign="top" width="NaN%"><p>Zooms in or resets</p> </td>
+   <td><p><strong>Double-tap</strong></p> </td>
+   <td><p>Does not apply</p> </td>
+   <td><p>Zooms in or resets</p> </td>
+   <td><p>Zooms in or resets</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p><strong>Pinch open</strong></p> </td>
-   <td valign="top" width="NaN%"><p>Does not apply</p> </td>
-   <td valign="top" width="NaN%"><p>Zooms in (iOS and Android 3x only)</p> </td>
-   <td valign="top" width="NaN%"><p>Zooms in (iOS and Android 3x only)</p> </td>
+   <td><p><strong>Pinch open</strong></p> </td>
+   <td><p>Does not apply</p> </td>
+   <td><p>Zooms in (iOS and Android 3x only)</p> </td>
+   <td><p>Zooms in (iOS and Android 3x only)</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p><strong>Pinch close</strong></p> </td>
-   <td valign="top" width="NaN%"><p>Does not apply</p> </td>
-   <td valign="top" width="NaN%"><p>Zooms out (iOS and Android 3x only)</p> </td>
-   <td valign="top" width="NaN%"><p>Zooms out (iOS and Android 3x only)</p> </td>
+   <td><p><strong>Pinch close</strong></p> </td>
+   <td><p>Does not apply</p> </td>
+   <td><p>Zooms out (iOS and Android 3x only)</p> </td>
+   <td><p>Zooms out (iOS and Android 3x only)</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p><strong>Swipe</strong></p> </td>
-   <td valign="top" width="NaN%"><p>Scrolls swatch bar</p> </td>
-   <td valign="top" width="NaN%"><p>Scrolls images</p> </td>
-   <td valign="top" width="NaN%"><p>Spins</p> </td>
+   <td><p><strong>Swipe</strong></p> </td>
+   <td><p>Scrolls swatch bar</p> </td>
+   <td><p>Scrolls images</p> </td>
+   <td><p>Spins</p> </td>
   </tr>
   <tr>
-   <td valign="top" width="NaN%"><p><strong>Flick</strong></p> </td>
-   <td valign="top" width="NaN%"><p>Scrolls swatch bar</p> </td>
-   <td valign="top" width="NaN%"><p>Scrolls images</p> </td>
-   <td valign="top" width="NaN%"><p>Spins</p> </td>
+   <td><p><strong>Flick</strong></p> </td>
+   <td><p>Scrolls swatch bar</p> </td>
+   <td><p>Scrolls images</p> </td>
+   <td><p>Spins</p> </td>
   </tr>
  </tbody>
 </table>

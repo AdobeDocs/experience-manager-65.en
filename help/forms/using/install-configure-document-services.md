@@ -89,19 +89,19 @@ If you are using the UNIX-based operating system, install the following packages
 <table>
  <tbody>
   <tr>
-   <td width="25%">
+   <td>
     <ul>
      <li>expat</li>
     </ul> </td>
-   <td width="25%">
+   <td>
     <ul>
      <li>libxcb</li>
     </ul> </td>
-   <td width="25%">
+   <td>
     <ul>
      <li>freetype</li>
     </ul> </td>
-   <td width="25%">
+   <td>
     <ul>
      <li>libXau</li>
     </ul> </td>
@@ -205,29 +205,29 @@ Set environment variables for 64-bit Java Development Kit, third-party applicati
 <table>
  <tbody>
   <tr>
-   <td valign="top"><p><strong>Application</strong></p> </td>
-   <td valign="top"><p><strong>Environment variable</strong></p> </td>
-   <td valign="top"><p><strong>Example</strong></p> </td>
+   <td><p><strong>Application</strong></p> </td>
+   <td><p><strong>Environment variable</strong></p> </td>
+   <td><p><strong>Example</strong></p> </td>
   </tr>
   <tr>
-   <td valign="top"><p><strong>JDK (64-bit)</strong></p> </td>
-   <td valign="top"><p>JAVA_HOME</p> </td>
-   <td valign="top"><p>C:\Program Files\Java\jdk1.8.0_74</p> </td>
+   <td><p><strong>JDK (64-bit)</strong></p> </td>
+   <td><p>JAVA_HOME</p> </td>
+   <td><p>C:\Program Files\Java\jdk1.8.0_74</p> </td>
   </tr>
   <tr>
-   <td valign="top"><p><strong>Adobe Acrobat</strong></p> </td>
-   <td valign="top"><p>Acrobat_PATH</p> </td>
-   <td valign="top"><p>C:\Program Files (x86)\Adobe\Acrobat 2015\Acrobat\Acrobat.exe</p> </td>
+   <td><p><strong>Adobe Acrobat</strong></p> </td>
+   <td><p>Acrobat_PATH</p> </td>
+   <td><p>C:\Program Files (x86)\Adobe\Acrobat 2015\Acrobat\Acrobat.exe</p> </td>
   </tr>
   <tr>
-   <td valign="top"><p><strong>Notepad</strong></p> </td>
-   <td valign="top"><p>Notepad_PATH</p> </td>
-   <td valign="top"><p>C:\WINDOWS\notepad.exe<br /> <strong></strong></p> </td>
+   <td><p><strong>Notepad</strong></p> </td>
+   <td><p>Notepad_PATH</p> </td>
+   <td><p>C:\WINDOWS\notepad.exe<br /> <strong></strong></p> </td>
   </tr>
   <tr>
-   <td valign="top"><p><strong>OpenOffice</strong></p> </td>
-   <td valign="top"><p>OpenOffice_PATH</p> </td>
-   <td valign="top"><p>C:\Program Files (x86)\OpenOffice.org4</p> </td>
+   <td><p><strong>OpenOffice</strong></p> </td>
+   <td><p>OpenOffice_PATH</p> </td>
+   <td><p>C:\Program Files (x86)\OpenOffice.org4</p> </td>
   </tr>
  </tbody>
 </table>
