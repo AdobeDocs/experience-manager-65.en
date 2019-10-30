@@ -15,8 +15,7 @@ docset: aem65
 
  ![](do-not-localize/13-publish-your-adaptive-form-small.png)
 
-| This tutorial is a step in the [Create Your First Adaptive Form](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case. |
-|---|
+This tutorial is a step in the [Create Your First Adaptive Form](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
 After the adaptive form is ready, you can publish the form to make it available for end users. The end users can open the published form on any device and internet browser. When an adaptive form is published, the form and related content are copied from an AEM author instance to an AEM publish instance. The form is made available to the end user through the publish instance.
 

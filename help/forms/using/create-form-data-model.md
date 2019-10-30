@@ -1,8 +1,8 @@
 ---
 title: "Tutorial: Create form data model "
 seo-title: Create Form Data Model Tutorial
-description: null
-seo-description: null
+description: Create form data model
+seo-description: Create form data model
 uuid: b9d2bb1b-90f0-44f4-b1e3-0603cdf5f5b8
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -15,8 +15,7 @@ docset: aem65
 
  ![](assets/04-create-form-data-model-main.png)
 
-| This tutorial is a step in the [Create Your First Adaptive Form](../../forms/using/create-your-first-adaptive-form.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case. |
-|---|
+This tutorial is a step in the [Create Your First Adaptive Form](../../forms/using/create-your-first-adaptive-form.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
 ## About the tutorial {#about-the-tutorial}
 
@@ -66,20 +65,14 @@ Do the following to configure your MySQL database:
     1. In the configuration dialog, specify the following details:
 
         * **Datasource name:** You can specify any name. For example, specify **WeRetailMySQL**.
-
         * **DataSource service property name**: Specify name of the service property containing the DataSource name. It is specified while registering the data source instance as OSGi service. For example, **datasource.name**.
-
         * **JDBC driver class**: Specify Java class name of the JDBC driver. For MySQL database, specify **com.mysql.jdbc.Driver**.
-
         * **JDBC connection URI**: Specify connection URL of the database. For MySQL database running on port 3306 and schema weretail, the URL is: jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8
-        * **Username: **Username of the database. It is required to enable JDBC driver to establish a connection with the database.
-        * **Password: **Password of the database. It is required to enable JDBC driver to establish a connection with the database.
+        * **Username:** Username of the database. It is required to enable JDBC driver to establish a connection with the database.
+        * **Password:** Password of the database. It is required to enable JDBC driver to establish a connection with the database.
         * **Test on Borrow:** Enable the **Test on Borrow** option.
-
         * **Test on Return:** Enable the **Test on Return** option.
-
         * **Validation Query:** Specify a SQL SELECT query to validate connections from the pool. The query must return at least one row. For example, **select &#42; from customerdetails**.
-
         * **Transaction Isolation**: Set the value to **READ_COMMITTED**.
 
        Leave other properties with default [values](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) and tap **Save**.
@@ -171,13 +164,14 @@ Do the following to configure the form data model:
 
         * **Title**: Specify title of the service. For example: Retrieve Shipping Address.
         * **Description**: Specify description containing detailed functioning of the service. For example:
+
           This service retrieves shipping address and other customer details from MySQL database
 
         * **Output Model Object**: Select schema containing customer data. For example:
+
           customerdetail schema
 
         * **Return array**: Disable the **Return array** option.
-
         * **Arguments**: Select argument named **ID**.
 
        Tap **Done**. Service to retrieve customer details from the MySQL database is configured.
@@ -190,9 +184,11 @@ Do the following to configure the form data model:
 
         * **Title**: Specify title of the service. For example, Update Shipping Address.
         * **Description**: Specify description containing detailed functioning of the service. For example:
+
           This service updates shipping address and related fields in MySQL database
 
         * **Input Model Object**: Select schema containing customer data. For example:
+
           customerdetail schema
 
         * **Output type**: Select **BOOLEAN**.
@@ -212,7 +208,7 @@ You can test the data model object and services to verify that the form data mod
 Do the following to run the test:
 
 1. Go to the **Model** tab, select the **customerdetails** data model object, and tap **Test Model Object**.
-1. In the **Test Model / Service** window, select **Read model object** from the **Select Model / Service** drop-down.
+1. In the **Test Model/Service** window, select **Read model object** from the **Select Model/Service** drop-down.
 1. In the **customerdetails** section, specify a value for the **id** argument that exists in the configured MySQL database and tap **Test**.
 
    The customer details associated with the specified id are fetched and displayed in the **Output** section as shown below.

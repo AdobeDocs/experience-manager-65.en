@@ -15,8 +15,7 @@ docset: aem65
 
  ![](assets/05-create-form-data-model-main_small.png)
 
-| This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case. |
-|---|
+This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
 Document fragments are reusable components of a correspondence that are used to compose an Interactive Communication. The document fragments are of the following types:
 

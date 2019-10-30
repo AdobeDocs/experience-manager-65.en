@@ -36,26 +36,26 @@ For security information about operating systems that AEM Forms on JEE supports,
 <table>
  <thead>
   <tr>
-   <th class="cellrowborder" id="d19e209" valign="top" width="NaN%"><p>Operating System</p> </th>
-   <th class="cellrowborder" id="d19e212" valign="top" width="NaN%"><p>Security Resource</p> </th>
+   <th><p>Operating System</p> </th>
+   <th><p>Security Resource</p> </th>
   </tr>
  </thead>
  <tbody>
   <tr>
-   <td class="cellrowborder" headers="d19e209 " valign="top" width="NaN%"><p>IBM® AIX® 7.2</p> </td>
-   <td class="cellrowborder" headers="d19e212 " valign="top" width="NaN%"><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">IBM AIX Security Benefits</a></p> </td>
+   <td><p>IBM® AIX® 7.2</p> </td>
+   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">IBM AIX Security Benefits</a></p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e209 " valign="top" width="NaN%"><p>Microsoft Windows Server® 2016 </p> </td>
-   <td class="cellrowborder" headers="d19e212 " valign="top" width="NaN%"><p><a href="https://cloudblogs.microsoft.com/windowsserver/2017/08/22/now-available-windows-server-2016-security-guide/">Windows Server 2016 Security Guide</a></p> </td>
+   <td><p>Microsoft Windows Server® 2016 </p> </td>
+   <td><p><a href="https://cloudblogs.microsoft.com/windowsserver/2017/08/22/now-available-windows-server-2016-security-guide/">Windows Server 2016 Security Guide</a></p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e209 " valign="top" width="NaN%"><p>Red Hat® Linux® AP or ES</p> </td>
-   <td class="cellrowborder" headers="d19e212 " valign="top" width="NaN%"><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Red Hat Enterprise Linux Security Guide</a></p> </td>
+   <td><p>Red Hat® Linux® AP or ES</p> </td>
+   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Red Hat Enterprise Linux Security Guide</a></p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e209 " valign="top" width="NaN%"><p>Sun Solaris 11</p> </td>
-   <td class="cellrowborder" headers="d19e212 " valign="top" width="NaN%"><p><a href="https://docs.oracle.com/cd/E53394_01/html/E54807/index.html" target="_blank">Security and Hardening Guidelines</a></p> </td>
+   <td><p>Sun Solaris 11</p> </td>
+   <td><p><a href="https://docs.oracle.com/cd/E53394_01/html/E54807/index.html" target="_blank">Security and Hardening Guidelines</a></p> </td>
   </tr>
   <tr>
    <td>Oracle Linux® 7 Update 3</td>
@@ -85,22 +85,22 @@ For security information about application servers that AEM Forms on JEE support
 <table>
  <thead>
   <tr>
-   <th class="cellrowborder" id="d19e351" valign="top" width="NaN%"><p>Application Server</p> </th>
-   <th class="cellrowborder" id="d19e354" valign="top" width="NaN%"><p>Security Resource</p> </th>
+   <th><p>Application Server</p> </th>
+   <th><p>Security Resource</p> </th>
   </tr>
  </thead>
  <tbody>
   <tr>
-   <td class="cellrowborder" headers="d19e351 " valign="top" width="NaN%"><p>Oracle WebLogic®</p> </td>
-   <td class="cellrowborder" headers="d19e354 " valign="top" width="NaN%"><p>Search for Understanding WebLogic Security at <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
+   <td><p>Oracle WebLogic®</p> </td>
+   <td><p>Search for Understanding WebLogic Security at <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e351 " valign="top" width="NaN%"><p>IBM WebSphere®</p> </td>
-   <td class="cellrowborder" headers="d19e354 " valign="top" width="NaN%"><p><a href="https://www.ibm.com/developerworks/websphere/zones/was/security/" target="_blank">Securing applications and their environment</a></p> </td>
+   <td><p>IBM WebSphere®</p> </td>
+   <td><p><a href="https://www.ibm.com/developerworks/websphere/zones/was/security/" target="_blank">Securing applications and their environment</a></p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e351 " valign="top" width="NaN%"><p>Red Hat® JBoss®</p> </td>
-   <td class="cellrowborder" headers="d19e354 " valign="top" width="NaN%"><p><a href="https://docs.jboss.org/author/display/AS7/Security+subsystem+configuration">Security subsystem configuration</a></p> </td>
+   <td><p>Red Hat® JBoss®</p> </td>
+   <td><p><a href="https://docs.jboss.org/author/display/AS7/Security+subsystem+configuration">Security subsystem configuration</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -119,26 +119,26 @@ For security information about databases that AEM Forms on JEE supports, see the
 <table>
  <thead>
   <tr>
-   <th class="cellrowborder" id="d19e422" valign="top" width="NaN%"><p>Database</p> </th>
-   <th class="cellrowborder" id="d19e425" valign="top" width="NaN%"><p>Security Resource</p> </th>
+   <th><p>Database</p> </th>
+   <th><p>Security Resource</p> </th>
   </tr>
  </thead>
  <tbody>
   <tr>
-   <td class="cellrowborder" headers="d19e422 " valign="top" width="NaN%"><p>IBM DB2® 11.1</p> </td>
-   <td class="cellrowborder" headers="d19e425 " valign="top" width="NaN%"><p><a href="https://www-01.ibm.com/software/data/db2/library/">DB2 Product Family Library</a></p> </td>
+   <td><p>IBM DB2® 11.1</p> </td>
+   <td><p><a href="https://www-01.ibm.com/software/data/db2/library/">DB2 Product Family Library</a></p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e422 " valign="top" width="NaN%"><p>Microsoft SQL Server 2016</p> </td>
-   <td class="cellrowborder" headers="d19e425 " valign="top" width="NaN%">Search the Web for “SQL Server 2016: Security”</td>
+   <td><p>Microsoft SQL Server 2016</p> </td>
+   <td>Search the Web for “SQL Server 2016: Security”</td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e422 " valign="top" width="NaN%"><p>MySQL 5</p> </td>
-   <td class="cellrowborder" headers="d19e425 " valign="top" width="NaN%"><p><a href="https://dev.mysql.com/doc/refman/5.0/en/security.html">MySQL 5.0 General Security Issues</a></p> <p><a href="https://dev.mysql.com/doc/refman/5.1/en/security.html">MySQL 5.1 General Security Issues</a></p> </td>
+   <td><p>MySQL 5</p> </td>
+   <td><p><a href="https://dev.mysql.com/doc/refman/5.0/en/security.html">MySQL 5.0 General Security Issues</a></p> <p><a href="https://dev.mysql.com/doc/refman/5.1/en/security.html">MySQL 5.1 General Security Issues</a></p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e422 " valign="top" width="NaN%"><p>Oracle® 12c</p> </td>
-   <td class="cellrowborder" headers="d19e425 " valign="top" width="NaN%"><p>See the Security chapter in the <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g documentation</a></p> </td>
+   <td><p>Oracle® 12c</p> </td>
+   <td><p>See the Security chapter in the <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g documentation</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -148,54 +148,54 @@ This table describes the default ports that are required to be open during your 
 <table>
  <thead>
   <tr>
-   <th class="cellrowborder" id="d19e484" valign="top" width="NaN%"><p>Product or service</p> </th>
-   <th class="cellrowborder" id="d19e487" valign="top" width="NaN%"><p>Port number</p> </th>
+   <th><p>Product or service</p> </th>
+   <th><p>Port number</p> </th>
   </tr>
  </thead>
  <tbody>
   <tr>
-   <td class="cellrowborder" headers="d19e484 " valign="top" width="NaN%"><p>JBoss</p> </td>
-   <td class="cellrowborder" headers="d19e487 " valign="top" width="NaN%"><p>8080</p> </td>
+   <td><p>JBoss</p> </td>
+   <td><p>8080</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e484 " valign="top" width="NaN%"><p>WebLogic</p> </td>
-   <td class="cellrowborder" headers="d19e487 " valign="top" width="NaN%"><p>7001</p> </td>
+   <td><p>WebLogic</p> </td>
+   <td><p>7001</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e484 " valign="top" width="NaN%"><p>WebLogic Managed Server</p> </td>
-   <td class="cellrowborder" headers="d19e487 " valign="top" width="NaN%"><p>Set by administrator during configuration</p> </td>
+   <td>><p>WebLogic Managed Server</p> </td>
+   <td><p>Set by administrator during configuration</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e484 " valign="top" width="NaN%"><p>WebSphere</p> </td>
-   <td class="cellrowborder" headers="d19e487 " valign="top" width="NaN%"><p>9060, if Global Security is enabled the default SSL port value is 9043.</p> <p>9080</p> </td>
+   <td>><p>WebSphere</p> </td>
+   <td><p>9060, if Global Security is enabled the default SSL port value is 9043.</p> <p>9080</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e484 " valign="top" width="NaN%"><p>BAM Server</p> </td>
-   <td class="cellrowborder" headers="d19e487 " valign="top" width="NaN%"><p>7001</p> </td>
+   <td>><p>BAM Server</p> </td>
+   <td><p>7001</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e484 " valign="top" width="NaN%"><p>SOAP</p> </td>
-   <td class="cellrowborder" headers="d19e487 " valign="top" width="NaN%"><p>8880</p> </td>
+   <td>><p>SOAP</p> </td>
+   <td><p>8880</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e484 " valign="top" width="NaN%"><p>MySQL</p> </td>
-   <td class="cellrowborder" headers="d19e487 " valign="top" width="NaN%"><p>3306</p> </td>
+   <td>><p>MySQL</p> </td>
+   <td><p>3306</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e484 " valign="top" width="NaN%"><p>Oracle</p> </td>
-   <td class="cellrowborder" headers="d19e487 " valign="top" width="NaN%"><p>1521</p> </td>
+   <td>><p>Oracle</p> </td>
+   <td><p>1521</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e484 " valign="top" width="NaN%"><p>DB2</p> </td>
-   <td class="cellrowborder" headers="d19e487 " valign="top" width="NaN%"><p>50000</p> </td>
+   <td>><p>DB2</p> </td>
+   <td><p>50000</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e484 " valign="top" width="NaN%"><p>SQL Server</p> </td>
-   <td class="cellrowborder" headers="d19e487 " valign="top" width="NaN%"><p>1433</p> </td>
+   <td>><p>SQL Server</p> </td>
+   <td><p>1433</p> </td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e484 " valign="top" width="NaN%"><p>LDAP</p> </td>
-   <td class="cellrowborder" headers="d19e487 " valign="top" width="NaN%"><p>The port on which the LDAP server is running. The default port is typically 389. However, if you select the SSL option, the default port is typically 636. Confirm with your LDAP administrator which port to specify.</p> </td>
+   <td>><p>LDAP</p> </td>
+   <td><p>The port on which the LDAP server is running. The default port is typically 389. However, if you select the SSL option, the default port is typically 636. Confirm with your LDAP administrator which port to specify.</p> </td>
   </tr>
  </tbody>
 </table>

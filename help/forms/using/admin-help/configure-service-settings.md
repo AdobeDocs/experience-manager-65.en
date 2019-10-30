@@ -24,7 +24,7 @@ You can use the Service Management page to configure settings for each of the se
 
    >[!NOTE]
    >
-   >Not all of the services listed on the Service Management page have a Configuration tab. For processes that you have created, the Configuration tab appears only if you have added a configuration parameter to the process in Workbench. (See “Configuration parameters” in the * [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) .) *
+   >Not all of the services listed on the Service Management page have a Configuration tab. For processes that you have created, the Configuration tab appears only if you have added a configuration parameter to the process in Workbench. (See “Configuration parameters” in the *[Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) .)*
 
 1. Click the Security tab and set the security settings for the service. See [Modifying security settings for a service](configure-service-settings.md#modifying_security_settings_for_a_service).
 1. If the service has an Endpoints tab, use it to change the endpoint settings. See [Managing Endpoints](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md).
@@ -62,7 +62,7 @@ The following settings are available for the barcoded forms service.
 
 ## Content Repository Connector for EMC Documentum service settings {#content-repository-connector-for-emc-documentum-service-settings}
 
-The Content Repository Connector for EMC Documentum service ( `EMCDocumentumContentRepositoryConnector`) lets you create processes that interact with content that is stored in a Documentum repository.
+The Content Repository Connector for EMC Documentum service (`EMCDocumentumContentRepositoryConnector`) lets you create processes that interact with content that is stored in a Documentum repository.
 
 The following setting is available for the Content Repository Connector for EMC Documentum service.
 
@@ -140,7 +140,7 @@ New settings can be created through the PDF Generator user interface.
 >
 >Adobe® LiveCycle® Content Services ES (Deprecated) is a content management system installed with LiveCycle. It enables users to design, manage, monitor, and optimize human-centric processes. Content Services (Deprecated) support ends on 12/31/2014. See [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). To know about configuring Content Services (Deprecated), see [Administering Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
-The Document Management service ( `DocumentManagementService`) enables processes to use the content management functionality provided by Content Services (Deprecated). Document Management operations provide basic tasks that are required to maintain spaces and content in the content management system. Examples of such tasks are copy, delete, move, retrieve, and store content, create spaces and associations, and get and set content attributes.
+The Document Management service (`DocumentManagementService`) enables processes to use the content management functionality provided by Content Services (Deprecated). Document Management operations provide basic tasks that are required to maintain spaces and content in the content management system. Examples of such tasks are copy, delete, move, retrieve, and store content, create spaces and associations, and get and set content attributes.
 
 The following settings are available for the Document Management service.
 
@@ -150,7 +150,7 @@ The following settings are available for the Document Management service.
 
 ## Email service settings {#email-service-settings}
 
-Email is commonly used to distribute content or provide status information as part of an automated process. The Email service ( `EmailService`) enables processes to receive email messages from a POP3 or IMAP server, and send email messages to an SMTP server.
+Email is commonly used to distribute content or provide status information as part of an automated process. The Email service (`EmailService`) enables processes to receive email messages from a POP3 or IMAP server, and send email messages to an SMTP server.
 
 For example, a process uses the Email service to send an email message with a PDF form attachment. The Email service connects to an SMTP server to send the email message with the attachment. The PDF form is designed to let the recipient click Submit after completing the form. The action causes the form to be returned as an attachment to the designated email server. The Email service retrieves the returned email message and stores the completed form in a process data form variable.
 
@@ -190,7 +190,7 @@ The following settings are available for the Email service.
 
 ## Encryption service settings {#encryption-service-settings}
 
-The Encryption service ( `EncryptionService`) lets you encrypt and decrypt documents. When a document is encrypted, its contents become unreadable. An authorized user can decrypt the document to obtain access to the contents. If a PDF document is encrypted with a password, the user must specify the open password before the document can be viewed in Adobe Reader or Adobe Acrobat. Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.
+The Encryption service (`EncryptionService`) lets you encrypt and decrypt documents. When a document is encrypted, its contents become unreadable. An authorized user can decrypt the document to obtain access to the contents. If a PDF document is encrypted with a password, the user must specify the open password before the document can be viewed in Adobe Reader or Adobe Acrobat. Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.
 
 The following settings are available for the Encryption service.
 
@@ -208,7 +208,7 @@ The following settings are available for the Encryption service.
 
 ## FTP service settings {#ftp-service-settings}
 
-The FTP service ( `FTP`) enables processes to interact with an FTP server. FTP service operations can retrieve files from the FTP server, put files on the FTP server, and delete files from the FTP server. For example, documents such as reports generated from a process may be stored on an FTP server for distribution. Or an external system may generate some files based on previous steps in a process. In a subsequent step in the process, the files may be transferred to a remote location.
+The FTP service (`FTP`) enables processes to interact with an FTP server. FTP service operations can retrieve files from the FTP server, put files on the FTP server, and delete files from the FTP server. For example, documents such as reports generated from a process may be stored on an FTP server for distribution. Or an external system may generate some files based on previous steps in a process. In a subsequent step in the process, the files may be transferred to a remote location.
 
 The following settings are available for the FTP service.
 
@@ -222,7 +222,7 @@ The following settings are available for the FTP service.
 
 ## Generate PDF service settings {#generate-pdf-service-settings}
 
-The Generate PDF service ( `GeneratePDFService`) converts files in various native formats to PDF documents, and converts PDF documents to a number of file formats.
+The Generate PDF service (`GeneratePDFService`) converts files in various native formats to PDF documents, and converts PDF documents to a number of file formats.
 
 The following settings are available for the Generate PDF service.
 
@@ -266,7 +266,7 @@ Retry PDF conversion if the time consumed for the first conversion attempt was l
 
 When you create a Guide, some resources, such as the Guide definition, are embedded in the Guide. Resources can also exist as references to application assets stored locally or on the AEM forms server. The Guide does not contain data, and the values for the submit location and inputs are not suitable for all external environments.
 
-In most cases, the default Guides render services is sufficient to prepare a Guide for use in Workspace or other external environments. (In the Services view, in Workbench, the default service is Guides (system)/Processes/Render Guide - 1.0.) The Guide Utilities service ( `GuidesUtility`) allows you to create a customized process for rendering a Guide, if necessary.
+In most cases, the default Guides render services is sufficient to prepare a Guide for use in Workspace or other external environments. (In the Services view, in Workbench, the default service is Guides (system)/Processes/Render Guide - 1.0.) The Guide Utilities service (`GuidesUtility`) allows you to create a customized process for rendering a Guide, if necessary.
 
 The Guide Utilities operations allow you to add the following Guide rendering tasks to a process:
 
@@ -333,11 +333,11 @@ The following settings are available for the JMS service.
 
 **Provider URL:** The URL of the JNDI service provider. The default value is based on the JBoss Application Server. The following URL are default values for the application servers that AEM forms supports:
 
-**JBoss:** <server name>:1099
+**JBoss:** `<server name>:1099`
 
-**WebLogic:** <server name>:7001
+**WebLogic:** `<server name>:7001`
 
-**WebSphere:** <server name>:2809
+**WebSphere:** `<server name>:2809`
 
 **JNDI Username:** The user name of the account to use for authenticating with the JNDI service provider that is used for looking up queue and topic names. The default value is guest.
 
@@ -369,7 +369,7 @@ The following settings are available for the LDAP service.
 
 **Initial Context Factory:** The Java class to use as the context factory. This class is used to create a connection to the LDAP server. The default value is com.sun.jndi.ldap.LdapCtxFactory, which is appropriate for most LDAP servers.
 
-**Provider URL:** The URL to use to connect to the LDAP service. The format of the value is ldap://server name:port
+**Provider URL:** The URL to use to connect to the LDAP service. The format of the value is `ldap://server name:port`
 
 *server name* is the name of the computer that hosts the LDAP server
 
@@ -796,18 +796,18 @@ Default security profiles are installed, which can then be configured to meet yo
 1. The Select Principal screen displays the users and groups that are configured in User Management. If the user or group you want is not displayed, use the search function to find it. Click a user or group name.
 1. On the Add Permissions screen, select the permissions to assign to the user or group for this service:
 
-    * **INVOKE_PERM: **To invoke all operations on the service
-    * **MODIFY_CONFIG_PERM: **To modify the configuration of a service
-    * **SUPERVISOR_PERM: **To view process instance data for a service that is created from a process
-    * **START_STOP_PERM: **To start and stop a service
-    * **ADD_REMOVE_ENDPOINTS_PERM: **To add, remove, and modify endpoints for a service
-    * **CREATE_VERSION_PERM: **To create a new version of the service
-    * **DELETE_VERSION_PERM: **To delete a version of the service
-    * **MODIFY_VERSION_PERM: **To modify a version of the service
-    * **READ_PERM: **To view the service
-    * **PROCESS_OWNER_PERM: **For use in a future version of AEM forms. Do not use this permission.
-    * **SERVICE_MANAGER_PERM: **For use in a future version of AEM forms. Do not use this permission.
-    * **SERVICE_AGENT_PERM: **For use in a future version of AEM forms. Do not use this permission.
+    * **INVOKE_PERM:** To invoke all operations on the service
+    * **MODIFY_CONFIG_PERM:** To modify the configuration of a service
+    * **SUPERVISOR_PERM:** To view process instance data for a service that is created from a process
+    * **START_STOP_PERM:** To start and stop a service
+    * **ADD_REMOVE_ENDPOINTS_PERM:** To add, remove, and modify endpoints for a service
+    * **CREATE_VERSION_PERM:** To create a new version of the service
+    * **DELETE_VERSION_PERM:** To delete a version of the service
+    * **MODIFY_VERSION_PERM:** To modify a version of the service
+    * **READ_PERM:** To view the service
+    * **PROCESS_OWNER_PERM:** For use in a future version of AEM forms. Do not use this permission.
+    * **SERVICE_MANAGER_PERM:** For use in a future version of AEM forms. Do not use this permission.
+    * **SERVICE_AGENT_PERM:** For use in a future version of AEM forms. Do not use this permission.
 
 1. Click Add.
 

@@ -19,7 +19,7 @@ Interactive Communication authors can reuse assets such as document fragments an
 
 One of the prerequisites for [Creating an Interactive Communication](../../forms/using/create-interactive-communication.md) is to have the templates for print and/or web channel available on the server. While template authors create the web channel template in AEM itself, the print channel template XDP is created in Adobe Forms Designer and uploaded to the server.
 
-## Print channel {##printchannel}
+## Print channel {#printchannel}
 
 Print channel of an Interactive Communication uses XFA form template, XDP. An XDP is designed in Adobe Forms Designer. For more information on creating print channel templates, see [Layout Design](../../forms/using/layout-design-details.md). To use a print channel template in your Interactive Communication, you need to upload the template to the AEM Forms server.
 

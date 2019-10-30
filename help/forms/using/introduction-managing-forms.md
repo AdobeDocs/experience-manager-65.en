@@ -100,7 +100,7 @@ AEM tools panel contains tools for various components. To navigate to AEM Forms-
 * **Publish Correspondence Management Assets:** AEM Forms lets you publish all the Letters, Document Fragments, and Data Dictionaries and related dependencies from an author instance at once. The published assets include all the Correspondence Management assets and related dependencies. For detailed information, see [Publishing and unpublishing forms & documents](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
 * **Export Correspondence Management Assets:** You can download all the Correspondence Management assets and related dependencies as a package from an AEM forms instance. For detailed steps, see [Importing and exporting assets to AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
-## Common elements of user interface {##commonelements}
+## Common elements of user interface {#commonelements}
 
 * **Left rail:** You can click the left rail icon ![](assets/railleftpng.png) to reveal Timeline and References capabilities of AEM Forms.
 

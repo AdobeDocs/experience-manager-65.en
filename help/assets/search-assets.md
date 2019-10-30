@@ -508,7 +508,7 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/managing-smart-tags.md).
 
-### Mandatory metadata {##mandatorymetadata}
+### Mandatory metadata {#mandatorymetadata}
 
 Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
 

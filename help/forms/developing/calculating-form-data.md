@@ -36,30 +36,30 @@ The following table describes the steps in this diagram.
 <table>
  <thead>
   <tr>
-   <th class="cellrowborder" id="d19e70561" valign="top" width="NaN%"><p>Step</p></th>
-   <th class="cellrowborder" id="d19e70564" valign="top" width="NaN%"><p>Description</p></th>
+   <th><p>Step</p></th>
+   <th><p>Description</p></th>
   </tr>
  </thead>
  <tbody>
   <tr>
-   <td class="cellrowborder" headers="d19e70561 " valign="top" width="NaN%"><p>1</p></td>
-   <td class="cellrowborder" headers="d19e70564 " valign="top" width="NaN%"><p>The <code>GetLoanForm</code> Java Servlet is invoked from the HTML start page. </p></td>
+   <td><p>1</p></td>
+   <td><p>The <code>GetLoanForm</code> Java Servlet is invoked from the HTML start page. </p></td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e70561 " valign="top" width="NaN%"><p>2</p></td>
-   <td class="cellrowborder" headers="d19e70564 " valign="top" width="NaN%"><p>The <code>GetLoanForm</code> Java Servlet uses the Forms service Client API to render the loan form to the client web browser. The difference between rendering a form that contains a script configured to run on the server and rendering a form that does not contain a script is that you must specify the target location used to execute the script. If a target location is not specified, a script that is configured to run on the server is not executed. For example, consider the application introduced in this section. The <code>CalculateData</code> Java Servlet is the target location where the script is executed.</p></td>
+   <td><p>2</p></td>
+   <td><p>The <code>GetLoanForm</code> Java Servlet uses the Forms service Client API to render the loan form to the client web browser. The difference between rendering a form that contains a script configured to run on the server and rendering a form that does not contain a script is that you must specify the target location used to execute the script. If a target location is not specified, a script that is configured to run on the server is not executed. For example, consider the application introduced in this section. The <code>CalculateData</code> Java Servlet is the target location where the script is executed.</p></td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e70561 " valign="top" width="NaN%"><p>3</p></td>
-   <td class="cellrowborder" headers="d19e70564 " valign="top" width="NaN%"><p>The user enters data into interactive fields and clicks the Calculate button. The form is sent to the <code>CalculateData</code> Java Servlet, where the script is executed. </p></td>
+   <td><p>3</p></td>
+   <td><p>The user enters data into interactive fields and clicks the Calculate button. The form is sent to the <code>CalculateData</code> Java Servlet, where the script is executed. </p></td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e70561 " valign="top" width="NaN%"><p>4</p></td>
-   <td class="cellrowborder" headers="d19e70564 " valign="top" width="NaN%"><p>The form is rendered back to the web browser with the calculation results displayed in the form. </p></td>
+   <td><p>4</p></td>
+   <td><p>The form is rendered back to the web browser with the calculation results displayed in the form. </p></td>
   </tr>
   <tr>
-   <td class="cellrowborder" headers="d19e70561 " valign="top" width="NaN%"><p>5</p></td>
-   <td class="cellrowborder" headers="d19e70564 " valign="top" width="NaN%"><p>The user clicks the Submit button when the values are satisfactory. The form is sent to another Java Servlet named <code>ProcessForm</code>.</p></td>
+   <td><p>5</p></td>
+   <td><p>The user clicks the Submit button when the values are satisfactory. The form is sent to another Java Servlet named <code>ProcessForm</code>.</p></td>
   </tr>
  </tbody>
 </table>

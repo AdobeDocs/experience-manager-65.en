@@ -22,7 +22,7 @@ Document fragments are reusable parts/components of a correspondence using which
 * **Condition**: Conditions enable you to define what content gets included at correspondence creation time, based on the supplied data. The condition is described in terms of control variables. A control variable can be either a data dictionary element or a placeholder.
 * **Layout fragment**: A layout fragment is a layout that can be used within one or more letters. A layout fragment is used to create repeatable patterns, especially dynamic tables. The layout can contain typical form fields such as “Address” and "Reference Number." It also contains empty sub forms that denote target areas. The layouts (XDPs) are created in Designer and then are uploaded to AEM Forms.
 
-## Text {##text}
+## Text {#text}
 
 A text asset is a piece of content that consists of one or more paragraphs of text. A paragraph can be static or dynamic. A dynamic paragraph contains references to data elements, whose values are supplied at runtime. For example, the customer name in a letter salutation could be a dynamic data element, with its value made available at runtime. By changing these values, the same letter template can be used to generate letters for different customers.
 

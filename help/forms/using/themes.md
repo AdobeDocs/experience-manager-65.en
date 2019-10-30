@@ -170,7 +170,7 @@ List of meta-properties of a theme (found in properties page of a theme).
      <li>The user-defined repository path within '/etc' where the clientlibs corresponding to this theme are stored.</li>
      <li>Default value - '/etc/clientlibs/fd/themes' + relative path of theme asset.</li>
      <li>If the location does not exist, the folder hierarchy is auto-generated.</li>
-     <li>When this value is changed, the clientlib node structure is moved to the new location entered.<br /> <em><strong>Note:</strong> If you change default clientlib location, in the CRXDE repository assign <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>to <code>forms-users</code> and <code>crx:replicate</code>, <code>jcr:read </code>to <code>fd-service</code> in the new location. Also attach another ACL by adding <span class="kbd">deny jcr:addChildNodes</code> for <code>forms-user</code></em></li>
+     <li>When this value is changed, the clientlib node structure is moved to the new location entered.<br /> <em><strong>Note:</strong> If you change default clientlib location, in the CRXDE repository assign <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>to <code>forms-users</code> and <code>crx:replicate</code>, <code>jcr:read </code>to <code>fd-service</code> in the new location. Also attach another ACL by adding <code>deny jcr:addChildNodes</code> for <code>forms-user</code></em></li>
     </ul> </td>
   </tr>
   <tr>
@@ -494,7 +494,7 @@ You can now use fonts available in a web-service in an adaptive form or interact
 
 Perform the following steps to configure Typekit in AEM:
 
-1. In the author instance, click ** ![](assets/adobeexperiencemanager.png)Adobe Experience Manager &gt; Tools ![](assets/hammer.png) &gt; Deployment &gt; Cloud Services**.
+1. In the author instance, click **![](assets/adobeexperiencemanager.png)Adobe Experience Manager &gt; Tools ![](assets/hammer.png) &gt; Deployment &gt; Cloud Services**.
 1. On the **Cloud Services** page, navigate to **Third Party Services **&gt; **Typekit,** and click **Configure Now** under Typekit. If a configuration is already available, click the **+** button to create a new instance.
 1. On the **Create Configuration** dialog, specify a title for the configuration and click **Create**.
 
@@ -514,7 +514,7 @@ Perform the following steps to configure a theme to use the TypeKit configuratio
 
 You can use the theme configuration service to add more fonts to the theme editor. Perform the following steps to add fonts:
 
-1. Log in to AEM Web Console with administrative privileges. URL for the AEM Web Console is https://[server]:[port]/system/console/configMgr.
+1. Log in to AEM Web Console with administrative privileges. URL for the AEM Web Console is `https://[server]:[port]/system/console/configMgr`.
 1. Open **Adaptive Form Theme Configuration Service**.
 
    ![](assets/theme-config.png)
@@ -555,6 +555,7 @@ To apply a theme to an adaptive form:
 
 1. Open your form in edit mode. To open a form in edit mode, select a form and click **Open**.
 1. In the edit mode, select a component, then click ![](assets/field-level.png) &gt; **Adaptive Form Container**, and then click ![](assets/cmppr.png).
+
    You can edit properties of your form in the sidebar.
 
 1. In the sidebar, click **Styling**.
@@ -564,6 +565,7 @@ To apply a theme to an interactive communication:
 
 1. Open your interactive communication in edit mode. To open a interactive communication in edit mode, select a form and click **Open**.
 1. In the edit mode, select a component, then click ![](assets/field-level.png) &gt;**Document Container**, and then click ![](assets/cmppr.png).
+
    You can edit properties of your form in the sidebar.
 
 1. In the sidebar, under** Basic**, select your theme from the **Theme** drop-down and click **Done** ![](assets/check-button.png)
@@ -601,7 +603,7 @@ After you customize the theme, apply it to your form or interactive communicatio
 ## Impact on other adaptive form use cases {#impact-on-other-adaptive-form-use-cases}
 
 * **Publish/unpublish a form:** On publishing a form, theme applied to is also published (if it is not already published)
-* **Import/Export a form: **On importing or exporting a form, its associated theme is also automatically imported or exported.
+* **Import/Export a form:** On importing or exporting a form, its associated theme is also automatically imported or exported.
 * **References of a form:** The Refers section in form references contains an extra entry for the theme.
 * **Last Modification time of a form:** Updated when the associated theme is changed.
 * **A/B Testing:** You can apply a different theme to two versions of the form in A/B testing. The information of the two themes is individually stored on the two guide containers.
@@ -623,18 +625,19 @@ When you specify styles for components in Theme Editor, a CSS is generated. When
 You can see the generated CSS using the following options:
 
 * **View CSS** option in the sidebar: When you select a component in the Theme, you can see the VIEW CSS option in the sidebar. It shows the generated CSS, including CSS for `::before` and `::after` pseudo elements.
-
-* **View Theme CSS** option in the canvas toolbar: In the Canvas Toolbar, click ** ![](assets/theme-options.png) &gt; View Theme CSS**. You can see the entire theme CSS generated from the properties you define in the Theme Editor.
+* **View Theme CSS** option in the canvas toolbar: In the Canvas Toolbar, click **![](assets/theme-options.png) &gt; View Theme CSS**. You can see the entire theme CSS generated from the properties you define in the Theme Editor.
 
 ## Troubleshooting, recommendations, and best practices {#troubleshooting-recommendations-and-best-practices}
 
-* **Avoiding assets from another Theme
-  **When you edit a theme, you can browse and add assets (such as images) from other themes. For example, you are editing the background of a page. For example, when you select **Page ![](assets/edit-button.png)&gt; Background &gt; Add &gt; Image**, you see a dialog that lets you browse and add images in other theme.
+* **Avoiding assets from another Theme**
+
+  When you edit a theme, you can browse and add assets (such as images) from other themes. For example, you are editing the background of a page. For example, when you select **Page ![](assets/edit-button.png)&gt; Background &gt; Add &gt; Image**, you see a dialog that lets you browse and add images in other theme.
 
 * You can face issues with your current theme if an asset is added from another theme, and the other theme is moved or deleted. It is recommended that you avoid browsing and adding assets from other themes.
 * **Using base clientlib, theme editor, and inline styling**
 
     * **Base clientlib**:
+
       Base client library contains styling information. To use styling information in client-side libraries in themes.
 
         1. Navigate to **Experience Manager &gt; Forms &gt; Themes**.
@@ -648,17 +651,23 @@ You can see the generated CSS using the following options:
       See [Getting specific appearance using Themes](#specific-af-appearance)
 
     * **Theme Editor:**
+
       The Theme Editor lets you create themes to style your form or interactive communication. You can specify styling of components in a theme, that enable consistency in look and feel among multiple forms or interactive communications you develop. Specifying styling information in a theme, and then applying the theme to a form is recommended.
 
     * **Inline styling:**
+
       You can style components using the Style mode in form or interactive communication multichannel editor when you work with a form. Using style mode to change form component styling overrides the styling specified in the theme. If you want to change styling for certain components of a particular form, see [Inline styling of components](../../forms/using/inline-style-adaptive-forms.md).
 
 * **Using client-side libraries**
+
   If you want to create client libraries to import styling information, see [Using Client Side Libraries](/help/sites-developing/clientlibs.md). After you create a client library, you can import it in your theme using the steps mentioned above.
 
-* **Changing container panel layout width
-  **Changing container panel layout width is not recommended. When you specify width of a container panel, it becomes static and does not adapt to different displays.
+* **Changing container panel layout width**
+
+  Changing container panel layout width is not recommended. When you specify width of a container panel, it becomes static and does not adapt to different displays.
+
 * **When to use form editor or theme editor for working with header and footer**
+
   Use theme editor if you want to style header and footer using styling options such as font style, background, and transparency.
   If you want to provide information such as a logo image, company name in header, and copyright information in the footer, use the form editor options.
 

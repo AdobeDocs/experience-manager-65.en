@@ -15,8 +15,7 @@ docset: aem65
 
  ![](assets/07-apply-rules-to-adaptive-form_small.png)
 
-| This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case. |
-|---|
+This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
 To create an Interactive Communication, you must have templates available on the AEM server for Print and Web Channels.
 

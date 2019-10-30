@@ -11,7 +11,7 @@ docset: aem65
 
 ---
 
-# Associating submission reviewers with a form{#associating-submission-reviewers-with-a-form}
+# Associating submission reviewers with a form {#associating-submission-reviewers-with-a-form}
 
 When you create a form, you can specify users who review the submissions of the form via forms portal and provide feedback. Your organization can collect feedback and rework on the submitted forms.
 
@@ -46,22 +46,22 @@ To edit metadata schema:
 
    The submission reviewer group field in the Advanced properties of your adaptive form is enabled with the name you specify under Field Label.
 
-## Associating submission reviewers with a form {#associating-submission-reviewers-with-a-form}
+## Associating submission reviewers with a form {#associating-submission-reviewers-with-a-form-1}
 
-To associate submission reviewers with an adaptive form, create a reviewer group and add users to it. Add the created reviewer group under the form submission reviewer field in the advanced properties of the form.  
+To associate submission reviewers with an adaptive form, create a reviewer group and add users to it. Add the created reviewer group under the form submission reviewer field in the advanced properties of the form.
 User groups let you associate different sets of submission reviewers with different adaptive forms. This feature prevents a submission review from an unauthorized user.
 
 Before you perform the following steps, see [Prerequisite](../../forms/using/adding-reviewers-form.md#prerequisite).
 
-To create a group and add members to it, navigate to **Tools** &gt; **Operations** &gt; **Security** &gt; **Groups**.  
-For more information, see [User Administration and Services](/help/sites-administering/security.md).   
+To create a group and add members to it, navigate to **Tools** &gt; **Operations** &gt; **Security** &gt; **Groups**.
+For more information, see [User Administration and Services](/help/sites-administering/security.md).
 Ensure that you add the group you create as a member of the out-of-the-box user group: **forms-submission-reviewers**. This user group is shipped with AEM Forms, and it ensures that users are added as submission reviewers.
 
 To associate user groups with an adaptive form:
 
 1. In the authoring mode, navigate to **Forms** &gt; **Forms & Documents**.
-1. Use the **Select **option to select an adaptive form, and click **View Properties**. 
-1. In the Properties window of the form, click **Edit**, and then click **ADVANCED**. 
+1. Use the **Select **option to select an adaptive form, and click **View Properties**.
+1. In the Properties window of the form, click **Edit**, and then click **ADVANCED**.
 1. Enter the group in the submission reviewer group field, and click **Done**.
 
    The submission reviewer group field appears with the name you specified in the edited metadata schema of adaptive forms.

@@ -15,8 +15,7 @@ docset: aem65
 
  ![](assets/09-style-your-adaptive-form-small.png)
 
-| This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case. |
-|---|
+This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
 Once you have created all the building blocks such as form data model, document fragments, templates, and themes for the web version, you can start creating an Interactive Communication.
 
