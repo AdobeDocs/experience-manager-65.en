@@ -53,8 +53,7 @@ Follow the steps below to enable the Kiosk mode:
 #### Checking Remote Device Status {#checking-remote-device-status}
 
 1. Log in to the Chrome Developer Console.
-1. Browse to **Device management** → **Chrome Devices** and select the device you wish to control.
-
+1. Browse to **Device management** > **Chrome Devices** and select the device you wish to control.
 1. Click **System Activity and troubleshooting**.
 1. Check the **Reboot Device** and **Screen Capture** properties of the device. You can also check the device status and health information.
 
@@ -70,12 +69,9 @@ Follow the steps below to configure various options of the player:
 
 1. Login to Chrome Management Console.
 1. Click **Device management** → **Chrome Management** → **App Management**. The AEM Screens Player displays in the list.
-
 1. Click the application **AEM Screens Player**.
 1. Click **Kiosk settings** and select select your org (*if using a test environment*).
-
 1. Click on **upload configuration file** and upload the configuration policy (*Json file*).
-
 1. Click **Save**. You must reboot the device to sync the policy.
 
 >[!NOTE]
@@ -122,5 +118,4 @@ The following table summarizes the policies with their functions.
 
 >[!NOTE]
 >
->Policy configurations are strictly enforced and are not manually overridden at the player's admin UI. To allow manual player configuration for a particular policy, do not specify the policy in the ***policy  configuration,*** for example, if you want to allow manual configuration for reboot schedule, do not specify the key ***rebootSchedule*** in the policy configuration.
-
+>Policy configurations are strictly enforced and are not manually overridden at the player's admin UI. To allow manual player configuration for a particular policy, do not specify the policy in the ***policy configuration,*** for example, if you want to allow manual configuration for reboot schedule, do not specify the key ***rebootSchedule*** in the policy configuration.
