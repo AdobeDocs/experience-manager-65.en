@@ -15,9 +15,6 @@ docset: aem65
 
 # Add Comment to Sample Page {#add-comment-to-sample-page}
 
-| **[⇐ Create the Components](/help/communities/extend-create-components.md)** |**[Alter the Appearance ⇒](/help/communities/extend-alter-appearance.md)** |
-|---|---|
-
 Now that the components for the custom comment system are in place in the application directory (/apps), it is possible to use the extended component. The instance of the comment system in a website to be affected must set its resourceType to be the custom comment system and include all necessary client libraries.
 
 ## Identify Required Clientlibs {#identify-required-clientlibs}
@@ -67,7 +64,3 @@ Here is aaron.mcdonald@mailinator.com posting a comment:
 ![](assets/chlimage_1-83.png) ![](assets/chlimage_1-84.png)
 
 Now that it appears the extended component is working correctly with the default appearance, it is time to modify the appearance.
-
-| **[⇐ Create the Components](/help/communities/extend-create-components.md)** |**[Alter the Appearance ⇒](/help/communities/extend-alter-appearance.md)** |
-|---|---|
-

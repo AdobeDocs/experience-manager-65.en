@@ -82,7 +82,7 @@ You can pass the following request parameters in a URL to launch the asset selec
 
 ## Using the asset selector {#using-the-asset-selector}
 
-1. To access the asset selector interface, go to *https://&lt;host&gt;:&lt;port&gt;/aem/assetpicker*.
+1. To access the asset selector interface, go to `https://&lt;host&gt;:&lt;port&gt;/aem/assetpicker`.
 1. Navigate to the desired folder, and select one or more assets.
 
    ![](assets/chlimage_1-194.png)

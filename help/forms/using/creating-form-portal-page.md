@@ -68,7 +68,7 @@ The **Edit **dialog includes several tabs that provide configuration options des
    <td>Configures the folders where assets are uploaded using AEM Forms UI. By default, it lists all uploaded assets. For more information about AEM Forms UI, see <a href="../../forms/using/introduction-managing-forms.md" target="_blank">Introduction to managing forms</a>.</td>
   </tr>
   <tr>
-   <td><p style="text-align: left;"><span class="uicontrol"><strong>Display</strong></code></p> </td>
+   <td><p><span class="uicontrol"><strong>Display</strong></code></p> </td>
    <td>Title Text</td>
    <td>Title for the Search &amp; Lister component. The default title is <strong>Forms Portal.</strong></td>
   </tr>

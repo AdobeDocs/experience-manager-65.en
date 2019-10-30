@@ -494,8 +494,8 @@ You can now use fonts available in a web-service in an adaptive form or interact
 
 Perform the following steps to configure Typekit in AEM:
 
-1. In the author instance, click **![](assets/adobeexperiencemanager.png)Adobe Experience Manager &gt; Tools ![](assets/hammer.png) &gt; Deployment &gt; Cloud Services**.
-1. On the **Cloud Services** page, navigate to **Third Party Services **&gt; **Typekit,** and click **Configure Now** under Typekit. If a configuration is already available, click the **+** button to create a new instance.
+1. In the author instance, click ![](assets/adobeexperiencemanager.png)Adobe Experience Manager &gt; Tools ![](assets/hammer.png) &gt; Deployment &gt; Cloud Services.
+1. On the **Cloud Services** page, navigate to **Third Party Services** &gt; **Typekit,** and click **Configure Now** under Typekit. If a configuration is already available, click the **+** button to create a new instance.
 1. On the **Create Configuration** dialog, specify a title for the configuration and click **Create**.
 
    You are redirected to the configuration page.
@@ -625,7 +625,7 @@ When you specify styles for components in Theme Editor, a CSS is generated. When
 You can see the generated CSS using the following options:
 
 * **View CSS** option in the sidebar: When you select a component in the Theme, you can see the VIEW CSS option in the sidebar. It shows the generated CSS, including CSS for `::before` and `::after` pseudo elements.
-* **View Theme CSS** option in the canvas toolbar: In the Canvas Toolbar, click **![](assets/theme-options.png) &gt; View Theme CSS**. You can see the entire theme CSS generated from the properties you define in the Theme Editor.
+* **View Theme CSS** option in the canvas toolbar: In the Canvas Toolbar, click ![](assets/theme-options.png) &gt; **View Theme CSS**. You can see the entire theme CSS generated from the properties you define in the Theme Editor.
 
 ## Troubleshooting, recommendations, and best practices {#troubleshooting-recommendations-and-best-practices}
 

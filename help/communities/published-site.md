@@ -15,9 +15,6 @@ docset: aem65
 
 # Experience the Published Site {#experience-the-published-site}
 
-| **[⇐ Author a New Community Site](/help/communities/create-site.md)** |** [Authoring Nested Groups ⇒](/help/communities/nested-groups.md)** |
-|---|---|
-
 ## Browse to New Site on Publish {#browse-to-new-site-on-publish}
 
 Now that the newly created communities site has been published, browse to the URL displayed when creating the site, but on the publish server, e.g.
@@ -226,7 +223,4 @@ Once signed in, the first page presented is their `Profile`page, which they can 
 If the member forgets their login id, it is possible to recover is using their email address.
 
 ![](assets/chlimage_1-46.png)
-
-| ** [⇐ Author a New Community Site](/help/communities/create-site.md)** |** [Authoring Nested Groups ⇒](/help/communities/nested-groups.md)** |
-|---|---|
 

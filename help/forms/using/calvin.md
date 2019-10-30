@@ -68,7 +68,7 @@ Using Calvin, you can create test cases in CRXDE and run UI tests directly in th
    <td>
     <ul>
      <li>On click of tabs (or any navigation item of a panel), is the HTML being fetched from server as per lazy loading configuration?</li>
-    </ul> <h1> </h1> </td>
+    </ul></td>
   </tr>
   <tr>
    <td><p>UI Interaction</p> </td>

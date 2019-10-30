@@ -48,7 +48,7 @@ If you do not specify a GDS root directory, the directory defaults to an applica
 * `[WEBSPHERE_HOME]/installedApps/adobe/[server]/DocumentStorage`
 * `[WEBLOGIC_HOME]/user_projects/<domain>/[server]/adobe/AEMformsserver/DocumentStorage`
 
-***Note**: Changing the value of the GDS root directory setting should be done with special care. The GDS directory is used to store both long-lived files used within a process as well as critical AEM forms product components. Changing the location of the GDS directory is a major system change. Incorrectly configuring the location of the GDS directory will render AEM forms inoperative and may require a complete reinstallation of AEM forms. If you specify a new location for the GDS directory, the application server needs to be shut down and the data migrated before the server can be restarted. The system administrator must move all files from the old location to the new location but keep the internal directory structure.*
+**Note**: Changing the value of the GDS root directory setting should be done with special care. The GDS directory is used to store both long-lived files used within a process as well as critical AEM forms product components. Changing the location of the GDS directory is a major system change. Incorrectly configuring the location of the GDS directory will render AEM forms inoperative and may require a complete reinstallation of AEM forms. If you specify a new location for the GDS directory, the application server needs to be shut down and the data migrated before the server can be restarted. The system administrator must move all files from the old location to the new location but keep the internal directory structure.
 
 ***Note**: Do not specify the same directory for the temp directory and the GDS directory.*
 
@@ -58,7 +58,7 @@ For additional information about the GDS directory, see [Preparing to Install AE
 
 **Location of the Customer Fonts directory** Type the path to a directory that contains additional fonts that you want to use.
 
-***note**: Fonts are picked from the Windows system font cache and a system restart is required to update the cache. After specifying the Customer font directory, ensure that you restart the system on which AEM forms is installed.*
+**note**: Fonts are picked from the Windows system font cache and a system restart is required to update the cache. After specifying the Customer font directory, ensure that you restart the system on which AEM forms is installed.
 
 **Location of the System Fonts directory** Type the path to the fonts directory that your operating system provided. Multiple directories can be added, separated by a semicolon (;).
 
@@ -88,7 +88,7 @@ In general, when FIPS is enabled, the Assembler service will not apply password 
 
 >[!NOTE]
 >
->***Note**: AEM forms software does not validate code to ensure FIPS compatibility. It provides a FIPS operation mode so that FIPS-approved algorithms are used for cryptographic services from the FIPS-approved libraries (RSA).*
+>**Note**: AEM forms software does not validate code to ensure FIPS compatibility. It provides a FIPS operation mode so that FIPS-approved algorithms are used for cryptographic services from the FIPS-approved libraries (RSA).
 >
 >When reader extensions are applied with FIPS option enabled, where SHA256withRSA is used as encryption algorithm and SHA256 is used as digest algorithm, the resultant PDF is compliant with PDF version 1.7. When FIPS option is disabled, the resultant PDF is compliant with PDF version 1.6.
 

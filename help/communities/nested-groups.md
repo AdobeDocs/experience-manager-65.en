@@ -15,9 +15,6 @@ docset: aem65
 
 # Authoring Nested Groups{#authoring-nested-groups}
 
-| ** [⇐ Experience the Published Site](/help/communities/published-site.md)** |  |
-|---|---|
-
 ## Creating Groups on Author {#creating-groups-on-author}
 
 On AEM Author instance, from global navigation:
@@ -169,7 +166,4 @@ It is possible to experience the different groups when signed in, for example wi
     * can not see restricted (secret) groups
 
 Access the Communities [Members and Groups consoles](/help/communities/members.md) on author to add other users to various member groups that correspond to the community groups.
-
-| ** [⇐ Experience the Published Site](/help/communities/published-site.md)** |  |
-|---|---|
 

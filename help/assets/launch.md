@@ -545,7 +545,7 @@ On the Install Extension page, enter the Report Suite ID in the **[!UICONTROL De
 
 *Configure the following item only if you plan to use video tracking:*
 
-On the **[!UICONTROL Install Extension]** page, expand **[!UICONTROL General]**, then specify the Tracking Server. The Tracking Server follows the template `<trackingNamespace>.sc.omtrdc.net`, where ` `<trackingNamespace>`` is the information obtained in the provisioning email.
+On the **[!UICONTROL Install Extension]** page, expand **[!UICONTROL General]**, then specify the Tracking Server. The Tracking Server follows the template `<trackingNamespace>.sc.omtrdc.net`, where `<trackingNamespace>` is the information obtained in the provisioning email.
 
 Click **[!UICONTROL Save]**.
 

@@ -15,9 +15,6 @@ docset: aem65
 
 # Author a New Community Site{#author-a-new-community-site}
 
-| ** [⇐ Initial Setup](/help/communities/setup.md)** |** [Experience the Published Site ⇒](/help/communities/published-site.md)** |
-|---|---|
-
 ## Create a Community Site {#create-a-community-site}
 
 Use the author instance to create a community site. On AEM Author instance:
@@ -40,11 +37,8 @@ To begin creating a new community site:
 On the [Site Template step](/help/communities/sites-console.md#step2013asitetemplate), enter a title, description, the name for the URL, and select a community site template, for example:
 
 * **Community Site Title**: `Getting Started Tutorial`
-
 * **Community Site Description**: `A site for engaging with the community.`
-
 * **Community Site Root**: (leave blank for default root `/content/sites`)
-
 * **Cloud Configurations**: (leave blank if no cloud configurations are specified) provide path to the specified cloud configurations.
 * **Community Site Base Language**: (leave untouched for single language: English) use the drop-down list to choose one *or more* base languages from the available languages- German, Italian, French, Japanese, Spanish, Portuguese (Brazil), Chinese (Traditional), and Chinese (Simplified). One community site will be created for each language added, and will exist within the same site folder following the best practice described in [Translating Content for Multilingual Sites](/help/sites-administering/translation.md). The root page of each site will contain a child page named by the language code of one of the languages selected, such as 'en' for English or 'fr' for French.
 
@@ -334,7 +328,4 @@ After any modification, remember to **Save** and re-**Publish** the site.
 >[!NOTE]
 >
 >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
-
-| ** [⇐ Initial Setup](/help/communities/setup.md)** |** [Experience the Published Site ⇒](/help/communities/published-site.md)** |
-|---|---|
 

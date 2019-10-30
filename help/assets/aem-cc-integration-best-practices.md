@@ -141,7 +141,7 @@ Deciding on which capability to use
    <td>Edit - upload changes</td>
    <td>Yes - <a href="https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html">Check-in action</a> with optional comment</td>
    <td>Yes</td>
-   <td><p style="text-align: left;"> </p> </td>
+   <td><p> </p> </td>
   </tr>
   <tr>
    <td>Upload - single file</td>
@@ -153,7 +153,7 @@ Deciding on which capability to use
    <td>Upload - multiple files / hierarchical folder structures</td>
    <td>No</td>
    <td>Yes</td>
-   <td><a href="/help/assets/managing-assets-touch-ui.md#uploading-assets">Web UI Upload</a></p> <p style="text-align: left;">Custom script / tool </p> </td>
+   <td><a href="/help/assets/managing-assets-touch-ui.md#uploading-assets">Web UI Upload</a></p> <p>Custom script / tool </p> </td>
   </tr>
   <tr>
    <td>Misc - user and login</td>
