@@ -150,7 +150,7 @@ The properties are distributed across several tabs.
 
   >[!NOTE]
   >
-  >Closed user groups for the page are defined on the ** [Permissions](/help/sites-authoring/editing-page-properties.md#permissions)** tab.
+  >Closed user groups for the page are defined on the **[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)** tab.
 
   >[!CAUTION]
   >
@@ -252,7 +252,7 @@ Shows the page thumbnail image. You can:
 
 * Provide links to pages that provide site-wide functionality, such as **Signup Page**, **Offline Page**, amongst others.
 
-## Editing Page Properties {#editing-page-properties}
+## Editing Page Properties {#editing-page-properties-1}
 
 You can define page properties:
 

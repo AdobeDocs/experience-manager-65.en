@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Publishing Pages{#publishing-pages}
+# Publishing Pages {#publishing-pages}
 
 Once you have created and reviewed your content on the author environment, the goal is to [make it available on your public website](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (your publish environment).
 
