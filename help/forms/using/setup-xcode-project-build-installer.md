@@ -60,7 +60,7 @@ The following table details contents of the `adobe-lc-mobileworkspace-src-[versi
 
 For detailed information about Code Signing and adding devices to the iOS Provisioning Portal, see [iOS Code Signing Setup, Process, and Troubleshooting](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html).
 
-## Build standard AEM Forms app <br> {#set-up-the-xcode-project}
+## Build standard AEM Forms app {#set-up-the-xcode-project}
 
 1. Perform the following steps to set up a project in Xcode and provide a signing identity:
 
@@ -130,7 +130,7 @@ For detailed information about Code Signing and adding devices to the iOS Provis
 1. Select **Product** &gt; **Clean**.
 1. Select **Product** &gt; **Build**.
 
-## Build the installer for the AEM Forms app <br> {#build-the-installer-for-the-mobile-workspace-app}
+## Build the installer for the AEM Forms app {#build-the-installer-for-the-mobile-workspace-app}
 
 You need to archive the Xcode project to build the installer (an .ipa file) and a property list (a .plist file) file. The property list file contains configuration information of the hosted in-house app, such as the name and the hosting location of the app. For more information about property list file, see [About Information Property List Files](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
 

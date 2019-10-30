@@ -248,7 +248,7 @@ For more information about how to interpret the analytics dashboard, see [Viewin
 
 The performance metrics for the credit card application form are tracked using Adobe Analytics. For more information about configuring Adobe Analytics and viewing reports, see [Configuring analytics for forms and documents](../../forms/using/configure-analytics-forms-documents.md).
 
-#### See it yourself <br> {#see-it-yourself-br}
+#### See it yourself {#see-it-yourself-br}
 
 For you to view and explore the analytics report, we are providing seed data for the credit card application in the reference site. Before you use seed data, see [Configure Analytics](../../forms/using/setup-reference-sites.md#configureanalytics). Perform the following steps in author instance to view the report with the seed data:
 
@@ -501,7 +501,7 @@ For more information about how to interpret the analytics dashboard, see [Viewin
 
 The performance metrics for the mortgage application form are tracked using Adobe Analytics. For more information about configuring Adobe Analytics and viewing reports, see [Configuring analytics for forms and documents](../../forms/using/configure-analytics-forms-documents.md).
 
-#### See it yourself <br> {#see-it-yourself-br-1}
+#### See it yourself {#see-it-yourself-br-1}
 
 For you to view and explore the analytics report, we are providing seed data for the mortgage application in the reference site. Before you use seed data, see [Configure Analytics](../../forms/using/setup-reference-sites.md#configureanalytics). Perform the following steps in author instance to view the report with the seed data:
 

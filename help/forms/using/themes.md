@@ -238,7 +238,7 @@ Certain components like text box, numeric box, radio button, and check box are c
 
 Click **EXPAND ALL** in the sidebar to view, select, and style categorized components that are not visible upfront.
 
-### Styling panel layouts <br> {#styling-panel-layouts-br}
+### Styling panel layouts {#styling-panel-layouts-br}
 
 Themes in AEM Forms support styling of elements in the layout of panels in your forms and interactive communications. Styling of elements in out-of-the-box layouts and custom layouts is supported.
 
@@ -261,7 +261,7 @@ Styling custom layouts from the Theme Editor involves:
 * Defining the CSS properties that can be applied on these components
 * Define the styling for these components interactively from the user interface
 
-### Different styles for different screen sizes <br> {#different-styles-for-different-screen-sizes-br}
+### Different styles for different screen sizes {#different-styles-for-different-screen-sizes-br}
 
 Desktop and mobile layouts can have slightly or entirely different styles. For mobile devices, tablet and phone share similar layouts except for component sizes.
 
@@ -549,7 +549,7 @@ The example below shows masked and unmasked styles in a theme.
 
 ![Masked and unmasked stylings](assets/mask2.png)
 
-## Applying a theme to a form or interactive communication <br> {#applying-a-theme-to-a-form-or-interactive-communication-br}
+## Applying a theme to a form or interactive communication {#applying-a-theme-to-a-form-or-interactive-communication-br}
 
 To apply a theme to an adaptive form:
 

@@ -62,19 +62,19 @@ Perform the following steps in the recommended sequence to set up and configure 
    <th><strong>Notes</strong></th>
   </tr>
   <tr>
-   <td><a data-disable-query="false" href="#installandconfigureaemform">Install and configure AEM Forms</a></td>
+   <td><a href="#installandconfigureaemform">Install and configure AEM Forms</a></td>
    <td>Author and Publish</td>
    <td>Install and configure AEM Forms author and publish instances.</td>
   </tr>
   <tr>
    <td><a href="#ssl">Configure SSL</a></td>
    <td>Author and Publish<br /> </td>
-   <td valign="top">Enable HTTP over SSL for secure communications with Adobe Sign.</td>
+   <td>Enable HTTP over SSL for secure communications with Adobe Sign.</td>
   </tr>
   <tr>
-   <td valign="top" width="163"><p><a href="#externalizer">Configure Day CQ Link Externalizer configuration</a></p> </td>
+   <td><p><a href="#externalizer">Configure Day CQ Link Externalizer configuration</a></p> </td>
    <td>Author and Publish<br /> </td>
-   <td valign="top" width="159"><p>Reference Site use cases deliver emails for different transactions. This setting is required for Newsletter delivery via email. It ensures that URLs and Images point to the publish instance. </p> </td>
+   <td><p>Reference Site use cases deliver emails for different transactions. This setting is required for Newsletter delivery via email. It ensures that URLs and Images point to the publish instance. </p> </td>
   </tr>
   <tr>
    <td><a href="#cqmail">Configure Day CQ Mail Service</a></td>

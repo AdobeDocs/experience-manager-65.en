@@ -343,7 +343,7 @@ To launch the rule editor user interface:
 
 Displays the title of the adaptive form object through which you launched the rule editor and the rule type currently selected. In the above example, the rule editor is launched from an adaptive form object titled Salary and the rule type selected is When.
 
-### B. Form objects and functions <br> {#b-form-objects-and-functions-br}
+### B. Form objects and functions {#b-form-objects-and-functions-br}
 
 The pane on the left in the rule editor user interface includes two tabs — **[!UICONTROL Forms Objects]** and **[!UICONTROL Functions]**.
 
@@ -361,7 +361,7 @@ The Functions tab includes a set of built-in functions, such as Sum Of, Min Of, 
 
 In the left tree of the form objects, you can tap the form objects to display the rules applied to each of the objects. Not only you can navigate through the rules of the various form objects, you can also copy-paste rules between the form objects. For more information, see [Copy-paste rules](../../forms/using/rule-editor.md#p-copy-paste-rules-p).
 
-### C. Form objects and functions toggle <br> {#c-form-objects-and-functions-toggle-br}
+### C. Form objects and functions toggle {#c-form-objects-and-functions-toggle-br}
 
 The toggle button, when tapped, toggles the form objects and functions pane.
 

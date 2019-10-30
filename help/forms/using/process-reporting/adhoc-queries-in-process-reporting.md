@@ -251,7 +251,7 @@ You can view the details of a specific AEM Forms process/task:
 
    However, if the process/task details were found by entering a specific process/task ID, clicking Back to Process/Task Search takes you back to **Process/Task Search**, without displaying any search result.
 
-#### By entering the Process/Task ID in the Process/Task Details panel <br> {#by-entering-the-process-task-id-in-the-process-task-details-panel-br}
+#### By entering the Process/Task ID in the Process/Task Details panel {#by-entering-the-process-task-id-in-the-process-task-details-panel-br}
 
 1. Go to the **Process/Task Details** panel.
 

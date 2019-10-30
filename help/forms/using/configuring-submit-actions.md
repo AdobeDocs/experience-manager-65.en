@@ -135,7 +135,7 @@ Typically, in any online data capture system, developers place some javascript v
 
 The server-side revalidation feature provides the ability to also run the validations that an adaptive forms author has provided while designing an adaptive form on the server. It prevents any possible compromise of data submissions and business rules violations represented in terms of form validations.
 
-### What to validate on Server? <br> {#what-to-validate-on-server-br}
+### What to validate on Server? {#what-to-validate-on-server-br}
 
 All out of the box (OOTB) field validations of an adaptive form thate are rerun at the server are:
 
@@ -143,7 +143,7 @@ All out of the box (OOTB) field validations of an adaptive form thate are rerun 
 * Validation Picture Clause
 * Validation Expression
 
-### Enabling Server-side Validation <br> {#enabling-server-side-validation-br}
+### Enabling Server-side Validation {#enabling-server-side-validation-br}
 
 Use the **Revalidate on server** under** **Adaptive Form Container in the sidebar to enable or disable server-side validation for the current form.
 
@@ -153,7 +153,7 @@ Enabling Server-Side Validation
 
 If end-user bypass those validations and submit the forms, the server again performs the validation. If the validation fails at server end, then the submit transaction is stopped. The end user is presented with the orignal form again. The captured data and submitted data are presented to the user as an error.
 
-### Supporting Custom functions in Validation Expressions <br> {#supporting-custom-functions-in-validation-expressions-br}
+### Supporting Custom functions in Validation Expressions {#supporting-custom-functions-in-validation-expressions-br}
 
 At times, in case of **complex validation rules**, the exact validation script reside in custom functions and author calls these custom functions from field validation expression. To make this custom function library known and available while performing server-side validations, the form author can configure the name of AEM client library under the **Basic** tab of Adaptive Form Container properties as shown below.
 

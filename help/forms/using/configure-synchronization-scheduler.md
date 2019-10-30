@@ -16,15 +16,15 @@ docset: aem65
 
 By default, the synchronization scheduler runs after every 3 minutes to synchronize all the assets modified and updated in the repository via LiveCycle Workbench 11. Applications containing forms and resources are visible in the AEM Forms user interface once the synchronization process is complete.
 
-## Change interval of the synchronization scheduler <br> {#change-interval-of-the-synchronization-scheduler-br}
+## Change interval of the synchronization scheduler {#change-interval-of-the-synchronization-scheduler-br}
 
 Perform the following steps to change the interval of the synchronization scheduler:
 
-1. Log in to AEM Configuration Manager. The URL of Configuration Manager is https://[Server]:[Port]/lc/system/console/configMgr  
+1. Log in to AEM Configuration Manager. The URL of Configuration Manager is https://[Server]:[Port]/lc/system/console/configMgr
 
-1. Locate and open the **FormsManagerConfiguration **bundle.   
+1. Locate and open the **FormsManagerConfiguration **bundle.
 
-1. Specify a new value for the **Synchronization Scheduler Frequency** option.  
+1. Specify a new value for the **Synchronization Scheduler Frequency** option.
    The unit of the frequency is minutes. For example, to configure the scheduler to run after every 60 minutes, specify 60.
 
 ## Synchronizing assets {#synchronizing-assets}

@@ -52,7 +52,7 @@ To add support for a new locale at adaptive forms runtime:
 1. [Add locale support for the dictionary](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
 1. [Restart the server](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
 
-### Add a locale to the Guide Localization service <br> {#add-a-locale-to-the-guide-localization-service-br}
+### Add a locale to the Guide Localization service {#add-a-locale-to-the-guide-localization-service-br}
 
 1. Go to `https://[server]:[port]/system/console/configMgr`.
 1. Click to edit the **Guide Localization Service** component.
@@ -60,7 +60,7 @@ To add support for a new locale at adaptive forms runtime:
 
 ![GuideLocalizationSevice](assets/configservice.png)
 
-### Add XFA client library for a locale <br> {#add-xfa-client-library-for-a-locale-br}
+### Add XFA client library for a locale {#add-xfa-client-library-for-a-locale-br}
 
 Create a node of type `cq:ClientLibraryFolder` under `etc/<folderHierarchy>`, with category `xfaforms.I18N.<locale>`, and add the following files to the client library:
 
@@ -74,7 +74,7 @@ I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
 ```
 
-### Add adaptive form client library for a locale <br> {#add-adaptive-form-client-library-for-a-locale-br}
+### Add adaptive form client library for a locale {#add-adaptive-form-client-library-for-a-locale-br}
 
 Create a node of type `cq:ClientLibraryFolder` under `etc/<folderHierarchy>`, with category as `guides.I18N.<locale>` and and dependencies as `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` and `guide.common`. ``
 
@@ -89,7 +89,7 @@ i18n.js
 LogMessages.js
 ```
 
-### Add locale support for the dictionary <br> {#add-locale-support-for-the-dictionary-br}
+### Add locale support for the dictionary {#add-locale-support-for-the-dictionary-br}
 
 Perform this step only if the `<locale>` you are adding is not among `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw`, `ja`, `ko-kr`.
 

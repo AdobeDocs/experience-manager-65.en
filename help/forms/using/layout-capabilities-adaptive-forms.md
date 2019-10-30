@@ -41,7 +41,7 @@ All these panel layouts are defined in the following location:
 >
 >To change the layout of an adaptive form, use the Authoring Mode in AEM.
 
-![Location of layouts in CRX repository](assets/layouts_location_in_crx.png) 
+![Location of layouts in CRX repository](assets/layouts_location_in_crx.png)
 
 ## Panel layout {#panel-layout}
 
@@ -53,11 +53,11 @@ The Panel layouts are available at `/libs/fd/af/layouts/panel` location.
 
 List of panel layouts in adaptive forms
 
-### Responsive - everything on one page without navigation <br> {#responsive-everything-on-one-page-without-navigation-br}
+### Responsive - everything on one page without navigation {#responsive-everything-on-one-page-without-navigation-br}
 
 Use this panel layout to create a responsive layout that adjusts to the screen size of your device without any need for specialized navigation.
 
-Using this layout, you can place multiple **[!UICONTROL Panel adaptive form]**components one after another inside the panel. 
+Using this layout, you can place multiple **[!UICONTROL Panel adaptive form]**components one after another inside the panel.
 
 ![A form using responsive layout as seen on a small screen](assets/responsive_layout_seen_on_small_screen.png)
 
@@ -147,7 +147,7 @@ A Toolbar Layout controls positioning and display of any action buttons that you
 
 ![A list of Toolbar Layouts in adaptive forms to control layout of buttons](assets/toolbar-layouts.png)
 
-A list of Toolbar Layouts in adaptive forms 
+A list of Toolbar Layouts in adaptive forms
 
 Toolbar layouts are available at `/libs/fd/af/layouts/toolbar` location. adaptive forms provide the following Toolbar Layouts, by default.
 

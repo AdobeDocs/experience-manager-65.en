@@ -47,7 +47,7 @@ Perform the following steps to add a Link component to the page:
 
    Tap **Done** to save the configuration.
 
-## Best practices for using Link component <br> {#best-practices-for-using-link-component-br}
+## Best practices for using Link component {#best-practices-for-using-link-component-br}
 
 * Ensure that you select PDF as the render type if the path specified in Form Path points to a document which has PDF as its allowed render format.
 * Submit URL for a form can be specified at several places and its order of precedence is as follows:
