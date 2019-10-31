@@ -85,7 +85,7 @@ AEM supports the following use cases and this article describes the usage, conce
  </tbody>
 </table>
 
-Search assets using the Omnisearch field at the top of the AEM web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in AEM, click ![](assets/search_icon.png) in top bar, enter search keyword, and press return. Alternatively, use the keyword shortcut `/` (forward slash) to open the Omnisearch field. `Location:Assets` is pre-selected to limit the searches to DAM assets. You can do advanced searches to increase or limit the [scope of search](#scope).
+Search assets using the Omnisearch field at the top of the AEM web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in AEM, click ![search_icon](assets/search_icon.png) in top bar, enter search keyword, and press return. Alternatively, use the keyword shortcut `/` (forward slash) to open the Omnisearch field. `Location:Assets` is pre-selected to limit the searches to DAM assets. You can do advanced searches to increase or limit the [scope of search](#scope).
 
 Use the **[!UICONTROL Filters]** panel to search for assets, folders, tags, and metadata. You can filter search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. You can customize the Filters panel and add/remove search predicates using [search facets](/help/assets/search-facets.md).
 

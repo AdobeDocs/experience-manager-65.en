@@ -47,11 +47,11 @@ Open the Testing Console to see the registered Test Suites. The Tests panel cont
 
 Navigate to the Tools console via **Global Navigation -&gt; Tools &gt; Operations -&gt; Testing**.
 
-![](assets/chlimage_1-63.png)
+![chlimage_1-63](assets/chlimage_1-63.png)
 
 When opening the console, the Test Suites are listed to the left along with an option to run all of them sequentially. The space to the right shown with a checkered background, is a placeholder for showing page content as the tests run.
 
-![](assets/chlimage_1-64.png)
+![chlimage_1-64](assets/chlimage_1-64.png)
 
 ### Running a Single Test Suite {#running-a-single-test-suite}
 
@@ -69,7 +69,7 @@ To run a Test Suite:
 
 1. In the Tests panel, click or tap the name of the Test Case that you want to run to expand the deatils of the Actions.
 
-   ![](assets/chlimage_1-65.png)
+   ![chlimage_1-65](assets/chlimage_1-65.png)
 
 1. Click or tap the **Run test** button.
 
@@ -77,17 +77,17 @@ To run a Test Suite:
 
 1. The placeholder is replaced with page content as the test executes.
 
-   ![](assets/chlimage_1-66.png)
+   ![chlimage_1-66](assets/chlimage_1-66.png)
 
 1. Review the results of the Test Case by tapping or clicking the description to open the **Result** panel. Tapping or clicking the name of your Test Case in the **Result** panel shows all details.
 
-   ![](assets/chlimage_1-67.png)
+   ![chlimage_1-67](assets/chlimage_1-67.png)
 
 ### Running Multiple Tests {#running-multiple-tests}
 
 Test Suites execute sequentially in the order that they appear in the console. You can drill down into a test to see the detailed results.
 
-![](assets/chlimage_1-68.png)
+![chlimage_1-68](assets/chlimage_1-68.png)
 
 1. On the Tests panel, tap or click either the **Run all tests** button or the **Run tests** button below the title of the Test Suite that you want to run.
 
@@ -95,7 +95,7 @@ Test Suites execute sequentially in the order that they appear in the console. Y
 
 1. To view the results of each Test Case, tap or click the title of the Test Case. Tapping or clicking the name of your test in the **Result** panel shows all details.
 
-   ![](assets/chlimage_1-69.png)
+   ![chlimage_1-69](assets/chlimage_1-69.png)
 
 ## Creating and Using a Simple Test Suite {#creating-and-using-a-simple-test-suite}
 

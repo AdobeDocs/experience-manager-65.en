@@ -44,7 +44,7 @@ To create a new workflow with the editor:
 1. The new model is listed in the **Workflow Models** console.
 1. Select your new workflow, then use [**Edit** to open it for configuration](#editinganexistingworkflow):
 
-   ![](assets/wf-01.png)
+   ![wf-01](assets/wf-01.png)
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ When the changes are synchronized with the runtime (saved) model, **Synched** is
 
 Some steps have mandatory fields and/or built in validation. When these conditions are not satisfied an error will be shown when you attempt to **Sync** the model. For example, when no participant has been defined for a **Participant** step:
 
-![](assets/wf-21.png)
+![wf-21](assets/wf-21.png)
 
 ### Editing a Default or Legacy Workflow for the First Time {#editing-a-default-or-legacy-workflow-for-the-first-time}
 
@@ -102,7 +102,7 @@ Selecting **Edit** will:
 >
 >See [Locations of Workflow Models](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) for further information.
 
-![](assets/wf-22.png)
+![wf-22](assets/wf-22.png)
 
 ### Adding a Step to a Model {#adding-a-step-to-a-model}
 
@@ -110,7 +110,7 @@ You will need to add steps to your model to represent the activity to perform - 
 
 When you edit a model, the available steps appear in the various groups of the **Steps browser**. For example:
 
-![](assets/wf-10.png)
+![wf-10](assets/wf-10.png)
 
 >[!NOTE]
 >
@@ -123,9 +123,9 @@ To add steps to your workflow model:
 
     * **Filter** for specific steps.
     * Use the drop down selector to limit the selection to a specific group of steps.
-    * Select the Show Description icon ![](assets/wf-stepinfo-icon.png) to show more details about the appropriate step.
+    * Select the Show Description icon ![wf-stepinfo-icon](assets/wf-stepinfo-icon.png) to show more details about the appropriate step.
 
-   ![](assets/wf-02.png)
+   ![wf-02](assets/wf-02.png)
 
 1. Drag the appropriate step(s) to the required location in the model.
 
@@ -133,7 +133,7 @@ To add steps to your workflow model:
 
    Once added to the flow you can [configure the step](#configuring-a-workflow-step).
 
-   ![](assets/wf-03.png)
+   ![wf-03](assets/wf-03.png)
 
 1. Add as many steps, or other updates, as required.
 
@@ -141,7 +141,7 @@ To add steps to your workflow model:
 
    You can also copy, cut, paste, group or delete existing steps; as with the [page editor.](/help/sites-authoring/editing-content.md)
 
-   Split steps can also be collapsed/expanded using the toolbar option: ![](assets/wf-collapseexpand-toolbar-icon.png)
+   Split steps can also be collapsed/expanded using the toolbar option: ![wf-collapseexpand-toolbar-icon](assets/wf-collapseexpand-toolbar-icon.png)
 
 1. Confirm the changes with **Sync** (editor toolbar) to generate the runtime model.
 
@@ -163,7 +163,7 @@ You can **Configure** and customize the behavior of a workflow step using the **
 
 1. Configure the **Step Properties** as required; the properties available depend on the step type, there may also be several tabs available. For example, the default **Participant Step**, present in a new workflow as `Step 1`:
 
-   ![](assets/wf-11.png)
+   ![wf-11](assets/wf-11.png)
 
 1. Confirm your updates with the tick.
 1. Confirm the changes with **Sync** (editor toolbar) to generate the runtime model.
@@ -178,7 +178,7 @@ You can create a [Transient](/help/sites-developing/workflows.md#transient-workf
 1. Select **Workflow Model Properties** from the toolbar.
 1. In the dialog activate **Transient Workflow** (or deactivate if required):
 
-   ![](assets/wf-07.png)
+   ![wf-07](assets/wf-07.png)
 
 1. Confirm the change with **Save & Close**; followed by **Sync** (editor toolbar) to generate the runtime model.
 
@@ -213,7 +213,7 @@ You can configure a workflow model for [Multi Resource Support](/help/sites-deve
 
 1. In the dialog activate **Multi Resource Support** (or deactivate if required):
 
-   ![](assets/wf-08.png)
+   ![wf-08](assets/wf-08.png)
 
 1. Confirm the change with **Save & Close**; followed by **Sync** (editor toolbar) to generate the runtime model.
 
@@ -237,12 +237,12 @@ To define **Stages** for your workflow:
 
    For example:
 
-   ![](assets/wf-08-1.png)
+   ![wf-08-1](assets/wf-08-1.png)
 
 1. Click **Save & Close** to save the properties.
 1. Assign a stage to each of the steps in the workflow model. For example:
 
-   ![](assets/wf-09.png)
+   ![wf-09](assets/wf-09.png)
 
    A stage can be assigned to more than one step. For example:
 
@@ -303,7 +303,7 @@ To configure the workflow to be used with your form:
 1. **Configure** the **Form Start** component that appeared in the page.
 1. Use **Start Workflow** to select the desired workflow from those available:
 
-   ![](assets/wf-12.png)
+   ![wf-12](assets/wf-12.png)
 
 1. Confirm the new form configuration with the tick.
 
@@ -389,11 +389,11 @@ To illustrate some of the possibilities for creating a workflow, the following e
 
    Your new workflow model will look like:
 
-   ![](assets/wf-13.png)
+   ![wf-13](assets/wf-13.png)
 
 1. Apply this workflow to your page, so that when the user moves to **Complete** the **Validate Content** step, they can select whether they want to **Publish Page as Requested**, or **Reject Publish Request**.
 
-   ![](assets/chlimage_1-72.png)
+   ![chlimage_1-72](assets/chlimage_1-72.png)
 
 ### Example: Defining a Rule for an OR Split using ECMA script {#defineruleecmascript}
 

@@ -60,7 +60,7 @@ For example, suppose you created an Image profile and assigned it to a folder. A
 1. Near the upper-left corner of the page, from the drop-down list, click** Timeline**.
 1. Near the lower-left corner of the page, to the right of the Comment field, click the carat icon ( **^** ) .
 
-   ![](assets/reprocess-assets1.png)
+   ![reprocess-assets1](assets/reprocess-assets1.png)
 
    The Scene7: Reprocess Workflow.
 
@@ -68,7 +68,7 @@ For example, suppose you created an Image profile and assigned it to a folder. A
 1. From the **Start Workflow** drop-down list, choose **Scene7: Reprocess Assets**.
 1. (Optional) In the **Enter title of workflow** text field, enter a name for the workflow. You can use the name to reference the workflow instance, if necessary.
 
-   ![](assets/reprocess-assets2.png)
+   ![reprocess-assets2](assets/reprocess-assets2.png)
 
    Starting a reprocess workflow
 

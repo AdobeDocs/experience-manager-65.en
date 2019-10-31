@@ -33,7 +33,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
     1. Set initial count of the repeatable Subform to 1.
 
-       ![](assets/intial-count.png)
+       ![intial-count](assets/intial-count.png)
 
     1. Use initialize event of the form to hide primary instance of the Subform. For example, the code below hides the primary instance of the Subform on form initialization. It also verifies the app type to ensure that the script is executed only on the client side:
 

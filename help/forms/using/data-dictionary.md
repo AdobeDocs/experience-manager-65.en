@@ -70,7 +70,7 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
 
    You can tap the three dots on the right side of an element and add an element to the data dictionary structure.
 
-   ![](assets/1_2_createanelement.png)
+   ![1_2_createanelement](assets/1_2_createanelement.png)
 
    Select either Composite Element, Collection Element, or Primitive Element.
 
@@ -90,15 +90,15 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
 
    For information on validations in Data Dictionary, see [Data Dictionary Editor validations](#ddvalidations).
 
-   ![](assets/2_addddpropertiesbasic.png)
+   ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
 1. (Optional) After selecting an element, in the Advanced tab you can add properties (attributes). You can also tap **Add Field **and extend the properties of a DD element.
 
-   ![](assets/3_addddpropertiesadvanced.png)
+   ![3_addddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
 
 1. (Optional) You can remove any element by tapping the three dots on the right side of an element and selecting **Delete**.
 
-   ![](assets/4_deleteelement.png)
+   ![4_deleteelement](assets/4_deleteelement.png)
 
    >[!NOTE]
    >
@@ -139,7 +139,7 @@ While editing or viewing a data dictionary, you can see which elements in the da
 
 1. Tap on a heading to see the name of the assets that refer to the element.
 
-   ![](assets/lentcontent.png)
+   ![lentcontent](assets/lentcontent.png)
 
 1. To view lent content for another element, tap the element.
 1. To display an asset that refers to the element, tap on its name. The browser displays the asset, letter, or Interactive Communication.

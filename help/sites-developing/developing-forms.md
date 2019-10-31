@@ -95,7 +95,7 @@ A range of actions are provided with a standard AEM installation, these can be s
 
 and in the **Action Type** list of the **Form** component:
 
-![](assets/chlimage_1-8.png)
+![chlimage_1-8](assets/chlimage_1-8.png)
 
 This section covers how you can develop your own form action for inclusion in this list.
 
@@ -248,7 +248,7 @@ Changing the visibility of a form field is useful when the field is needed only 
 
 Use the **Edit Show/Hide Rules** dialog box to specify the conditions under which a form component is shown or hidden.
 
-![](assets/showhideeditor.png)
+![showhideeditor](assets/showhideeditor.png)
 
 Use the fields at the top of the dialog box to specify the following information:
 
@@ -263,7 +263,7 @@ One or more conditions appear below these fields. A condition compares the value
 
 For example, a Radio Group component with the title `Receive email notifications?`* * contains `Yes` and `No` radio buttons. A Text Field component with the title of `Email Address` uses the following condition so that it is visible if `Yes` is selected:
 
-![](assets/showhidecondition.png)
+![showhidecondition](assets/showhidecondition.png)
 
 In Javascript, conditions use the value of the Element Name property to refer to fields. In the previous example, the Element Name property of the Radio Group component is `contact`. The following code is the equivalent Javascript code for that example:
 
@@ -287,7 +287,7 @@ In Javascript, conditions use the value of the Element Name property to refer to
 
    For example:
 
-   ![](assets/chlimage_1-9.png)
+   ![chlimage_1-9](assets/chlimage_1-9.png)
 
 1. Click **OK** to save the definition.
 
@@ -295,7 +295,7 @@ In Javascript, conditions use the value of the Element Name property to refer to
 
    Click **OK** to save all changes.
 
-   ![](assets/chlimage_1-10.png)
+   ![chlimage_1-10](assets/chlimage_1-10.png)
 
    >[!CAUTION]
    >

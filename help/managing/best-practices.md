@@ -83,7 +83,7 @@ As always, adjusting any of the factors will impact the others. For example redu
 
 The Four Factors:
 
-![](assets/projectphases_fourphases.png)
+![projectphases_fourphases](assets/projectphases_fourphases.png)
 
 #### Milestones {#milestones}
 

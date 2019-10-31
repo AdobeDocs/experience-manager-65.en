@@ -41,13 +41,13 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/ideation.md#essentials-for-client-side) are included, this is how the `Ideation`component will appear :
 
-![](assets/chlimage_1-71.png)
+![chlimage_1-71](assets/chlimage_1-71.png)
 
 ### Configuring an Ideation {#configuring-an-ideation}
 
 Select the placed `Ideation` component to access and select the `Configure` icon which opens the edit dialog.
 
-![](assets/chlimage_1-72.png) ![](assets/ideation-settings.png)
+![chlimage_1-72](assets/chlimage_1-72.png) ![ideation-settings](assets/ideation-settings.png)
 
 #### Settings tab {#settings-tab}
 
@@ -209,23 +209,23 @@ As with all Communities features, if not signed in, a site visitor may only read
 
 Once signed in, a member may create a new idea.
 
-![](assets/chlimage_1-73.png)
+![chlimage_1-73](assets/chlimage_1-73.png)
 
 Before submitting the idea, it is possible for the member to save a draft.
 
 By selecting the `Save as Draft` button, a draft is saved.
 
-![](assets/chlimage_1-74.png)
+![chlimage_1-74](assets/chlimage_1-74.png)
 
 When viewing saved drafts in the `My Drafts` tab, select `Read More` to re-enter edit mode:
 
-![](assets/chlimage_1-75.png)
+![chlimage_1-75](assets/chlimage_1-75.png)
 
 #### Providing Feedback {#providing-feedback}
 
 Once the idea is published, other members can sign in, open the idea ( `Read More`) and like the idea, thus adding to the vote count, and make comments.
 
-![](assets/chlimage_1-76.png)
+![chlimage_1-76](assets/chlimage_1-76.png)
 
 ### Additional Information {#additional-information}
 

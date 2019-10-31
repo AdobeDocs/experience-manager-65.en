@@ -29,7 +29,7 @@ You can insert special characters in letters:
 * In the [text editor](/help/forms/using/document-fragments.md#createtext)
 * In an [editable, inline module in a correspondence](../../forms/using/create-correspondence.md#managecontent)
 
-![](assets/specialcharactersinlinemodule.png)
+![specialcharactersinlinemodule](assets/specialcharactersinlinemodule.png)
 
 The admin can add support for more/custom special characters by customization. This article provides the instructions on how you can add support for additional, custom special characters.
 

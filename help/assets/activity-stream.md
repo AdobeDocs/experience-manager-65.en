@@ -36,11 +36,11 @@ The activity logs to be displayed in the timeline are fetched from the location 
 
 To view the activity stream, perform one or more of the operations on the asset, select the asset, and then choose **Timeline** from the GlobalNav list.
 
-![](assets/timeline-2.png)
+![timeline-2](assets/timeline-2.png)
 
 The timeline displays the activity stream for the operations you perform on the assets. 
 
-![](assets/activity_stream.png)
+![activity_stream](assets/activity_stream.png)
 
 >[!NOTE]
 >

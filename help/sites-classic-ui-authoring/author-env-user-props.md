@@ -49,15 +49,15 @@ The user icon gives you access to various to the following options:
 * [User Preferences](#user-preferences)
 * [Notification Inbox](/help/sites-classic-ui-authoring/author-env-inbox.md)
 
-![](assets/chlimage_1-122.png)
+![chlimage_1-122](assets/chlimage_1-122.png)
 
 ### User Preferences {#user-preferences}
 
 Each user can set certain properties for themselves. This is available from **Preferences** dialog in the top right corner of the consoles.
 
-![](assets/screen_shot_2012-02-08at105033am.png)
+![screen_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
 
 The dialog offers the following options:
 
-![](assets/chlimage_1-123.png)
+![chlimage_1-123](assets/chlimage_1-123.png)
 

@@ -240,7 +240,7 @@ You need the following in place first to create a correspondence:
 
 1. Select **Create &gt; Letter**. Correspondence Management displays the available layouts (XDPs). These layouts come from Designer. The layouts also include the letter templates that Correspondence Management provides out of the box. For more information on Correspondence Management templates, see [Reference letter templates](/help/forms/using/reference-cm-layout-templates.md). To add your own layouts, create XDP (layout) files in Designer and then [upload them to AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
 
-   ![](assets/create-letter.png)
+   ![create-letter](assets/create-letter.png)
 
 1. Select a layout by tapping it and tap **Next**.
 
@@ -277,7 +277,7 @@ When after creating a correspondence, you tap Open, Correspondence Management di
 
 1. Select Data Module or Layout Fragment for these options for each of the subforms and then choose the Data Modules or the Layout Fragments to insert. A layout fragment allows you to further insert data modules or layout fragments in it according to its design (up to four levels).
 
-   ![](assets/nestedlf.png)
+   ![nestedlf](assets/nestedlf.png)
 
 1. If you insert a layout fragment, the name of the layout fragment appears in the subform. And according to the selected fragment, nested subforms appear in the subform.
 1. After the chosen Data Modules are inserted in the layout, you can tap configure mode and set the following after tapping the Edit icon for each of the modules:
@@ -301,10 +301,10 @@ When after creating a correspondence, you tap Open, Correspondence Management di
 
    In this page, you can also do the following for each of the assets in the subforms:
 
-    1. **Change the order of the assets**: drag-and-drop an asset holding the reorder icon for an asset ( ![](assets/dragndrop.png)).
+    1. **Change the order of the assets**: drag-and-drop an asset holding the reorder icon for an asset ( ![dragndrop](assets/dragndrop.png)).
 
     1. **Delete assets**: Tap the Delete icon next to an asset to delete it.
-    1. **Preview assets**: Tap the show preview icon ( ![](assets/showpreview.png)) next to an asset.
+    1. **Preview assets**: Tap the show preview icon ( ![showpreview](assets/showpreview.png)) next to an asset.
 
 1. Tap **Next**.
 1. The Data page details how data fields and variables are used in the template. Data can be linked to data sources such as a data dictionary or user input. Each field defines properties from which data dictionary maps data or what caption is displayed for user input fields.
@@ -334,7 +334,7 @@ When after creating a correspondence, you tap Open, Correspondence Management di
    >
    >The field and variable validators are only available on fields or variables with linkage type User or unprotected Data Dictionary Elements.
 
-   ![](assets/linkages.png)
+   ![linkages](assets/linkages.png)
 
 1. After specifying linkage, tap **Next**. Correspondence Management displays the Attachments screen.
 
@@ -343,7 +343,7 @@ When after creating a correspondence, you tap Open, Correspondence Management di
 1. Select **Add Asset**.
 1. In the Select Asset screen, tap the assets to attach with the letter and tap **Done**. You need to have the assets first uploaded to Assets. It is recommended that you attach only PDF and Microsoft Office documents, but you can also attach images. For more information on uploading assets in DAM, see [Uploading Assets.](/help/assets/managing-assets-touch-ui.md)
 1. To lock the order of the assets in the list so that the Claims Adjustor cannot change the order, tap **Lock Order**. If you do not select this option, the Claims Adjustor can change the order of the list items.
-1. To change the order of the assets, drag-and-drop an asset holding the reorder icon for an asset ( ![](assets/dragndrop.png)).
+1. To change the order of the assets, drag-and-drop an asset holding the reorder icon for an asset ( ![dragndrop](assets/dragndrop.png)).
 1. Tap **Edit** in front of an attachment and specify an attachment as Mandatory if you do not want the author to be able to delete it. Specify an attachment as Selected if you want it to be preselected in the CCR interface.
 1. Select **Library Access** to give the access to the library. If Library Access is enabled, the Claims Adjustor can access content library while creating a letter and insert attachments.
 1. Select **Attachments Configuration** and specify the maximum number of attachments.

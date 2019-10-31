@@ -84,7 +84,7 @@ The sidebar comprises the following browsers:
 
   Lets you edit the properties of a component. Properties change according to a component. To see properties of the adaptive form container:
 
-  Select a component, then tap ![](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![](assets/cmppr.png).
+  Select a component, then tap ![field-level](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![cmppr](assets/cmppr.png).
 
 * **Assets browser**
 
@@ -269,14 +269,14 @@ The sidebar comprises the following browsers:
 
 Some best practices and key points to remember when working with adaptive form components are as follows:
 
-* Each component has associated properties that control its appearance and functionality. To configure the properties of a component, tap the component and tap ![](assets/cmppr.png) to open the component properties in the Properties browser.
-* A component is identified with its element name. When you tap ![](assets/cmppr.png), you can change the name of the component by changing the **[!UICONTROL Element Name]** field value in the properties browser. The Element Name field accepts letters, numbers, hyphens (-), and underscores (_) only. Other special characters are not allowed, and element name should begin with a letter.
+* Each component has associated properties that control its appearance and functionality. To configure the properties of a component, tap the component and tap ![cmppr](assets/cmppr.png) to open the component properties in the Properties browser.
+* A component is identified with its element name. When you tap ![cmppr](assets/cmppr.png), you can change the name of the component by changing the **[!UICONTROL Element Name]** field value in the properties browser. The Element Name field accepts letters, numbers, hyphens (-), and underscores (_) only. Other special characters are not allowed, and element name should begin with a letter.
 
 * You can modify the Title property of an adaptive form component inline in the form editor without opening the Properties browser as long as the title is visible on the form. To do so:
 
     1. Tap to select a component that has a **[!UICONTROL Title]** property and whose **[!UICONTROL Hide title]** property is disabled.
 
-    1. Tap ![](assets/aem_6_3_edit.png) to make the title editable.
+    1. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) to make the title editable.
 
     1. Modify the title and tap the Return key or tap anywhere outside the component to save the changes. Tap the Esc key to discard the changes.
 
@@ -307,11 +307,11 @@ For more best practices around adaptive forms, see [Best practices for working w
 
 The page toolbar on the top provides options that let you preview the form, change form properties, and edit form layout. You can preview the form when you author it, and make changes accordingly. In the page toolbar, you see:
 
-* **Toggle Side Panel ** ![](assets/toggle-side-panel.png): Lets you show or hide Sidebar.
+* **Toggle Side Panel ** ![toggle-side-panel](assets/toggle-side-panel.png): Lets you show or hide Sidebar.
 
-* **Page information** ![](assets/theme-options.png): Lets you view page properties, publish/unpublish a form, start a form workflow, and open the form in classic UI.
+* **Page information** ![theme-options](assets/theme-options.png): Lets you view page properties, publish/unpublish a form, start a form workflow, and open the form in classic UI.
 
-* **Emulator ** ![](assets/ruler.png): Lets you emulate the look of your form for different display sizes such as tablets and phones.
+* **Emulator ** ![ruler](assets/ruler.png): Lets you emulate the look of your form for different display sizes such as tablets and phones.
 
 * **Edit**: Lets you select other modes such as: **Edit, Style, Developer, **and** Design**.
 

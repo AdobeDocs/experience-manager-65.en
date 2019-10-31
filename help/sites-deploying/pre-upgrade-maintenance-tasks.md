@@ -90,7 +90,7 @@ The `PreUpgradeTasksMBean` OSGI component comes preconfigured with a list of pre
 
 1. Modify the list of maintenance tasks that need to run as shown below:
 
-   ![](assets/1487758925984.png)
+   ![1487758925984](assets/1487758925984.png)
 
 The task list differs depending on the run mode that is being used to start the instance. Below is a description of the run mode each maintenance task is designed for.
 

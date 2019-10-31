@@ -45,7 +45,7 @@ Use the following steps to create a task to render and submit a letter in AEM Wo
 
     1. In Presentation Data, select Use A CRX Asset.
     
-       ![](assets/useacrxasset.png)
+       ![useacrxasset](assets/useacrxasset.png)
 
     1. Browse for an asset. In the Select Form Asset dialog, the Letters tab lists all the letters on the server.
     
@@ -106,7 +106,7 @@ Use the following steps to create a task to render and submit a letter in AEM Wo
 1. Log in to the AEM forms workspace at https://[server]:[port]/lc/content/ws.
 1. Open the task you had added, CMRenderer. The Correspondence Management letter appears.
 
-   ![](assets/cminworkspace.png)
+   ![cminworkspace](assets/cminworkspace.png)
 
 1. Fill in the required data and submit the letter. The window closes. In this process, the task gets assigned to the user specified in the workflow in step 9.
 

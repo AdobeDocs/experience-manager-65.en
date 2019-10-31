@@ -30,7 +30,7 @@ When you create a brand using the Offers console, it also appears in the [Activi
 
 1. In the Navigation console, click or tap **Personalization** &gt; **Offers**.
 
-   ![](assets/screen-shot_2019-03-05at124139-1.png)
+   ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
 1. Click or tap **Create** and then **Create** **Brand**.
 1. Select the brand template and click or tap **Next**.
@@ -44,12 +44,12 @@ Add a folder to the offer library of a brand to organize and store offers. You c
 1. In the Offers console, open the location where you want to create the folder. For example, open the brand to create a top-level folder, or open another folder in the library.
 1. Click or tap **Create** &gt; **Create Folder or Offer**.
 
-   ![](assets/screen-shot_2019-03-05at124557.png)
+   ![screen-shot_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
 
 1. Select **Folder** and click **Next**. 
 1. Type a title for the folder as you want it to appear in the offer library and type or select tags.
 
-   ![](assets/chlimage_1-172.png)
+   ![chlimage_1-172](assets/chlimage_1-172.png)
 
 1. Click or tap **Create**.
 
@@ -62,7 +62,7 @@ After you create the offer you can open it to author the content.
 1. In the Offers console, open the location where you want to create the offer. For example, open the brand to create a top-level offer, or open a folder in the library.
 1. Click or tap **Create** &gt; **Create Folder or Offer**.
 
-   ![](assets/screen-shot_2019-03-05at124557-1.png)
+   ![screen-shot_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
 
 1. Select the **Offer Page** template and then click or tap **Next**.
 1. Type a title for the offer and optionally select or type one or more tags to associate with the offer, then click or tap **Create**.
@@ -97,7 +97,7 @@ You can delete an offer while viewing either folder contents in an offer library
 
 Search for offers of any brand using keywords for matching the title.
 
-![](assets/screen-shot_2019-03-05at124731.png)
+![screen-shot_2019-03-05at124731](assets/screen-shot_2019-03-05at124731.png)
 
 The current search criteria appear next to the search results. You can also sort the results by column in ascending or descending order. You can perform a search from any folder of any offer library. The search results are the same regardless of the current folder.
 

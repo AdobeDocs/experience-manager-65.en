@@ -47,7 +47,7 @@ You can use several methods to check the Pattern Detector output:
 1. Go to the AEM Web Console by browsing to *https://serveraddress:serverport/system/console/configMgr*
 1. Select **Status - Pattern Detector** as shown in the image below:
 
-   ![](assets/screenshot-2018-2-5pattern-detector.png)
+   ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Via a reactive text based or regular JSON interface**
 

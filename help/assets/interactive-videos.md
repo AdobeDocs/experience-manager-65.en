@@ -221,7 +221,7 @@ You can skip this task and continue to the next if you intend to use either of t
 
 When a thumbnail is clicked in the authoring environment a preview of the Quickview dialog box appears.
 
-![](assets/chlimage_1-21.png)
+![chlimage_1-21](assets/chlimage_1-21.png)
 
 You can optionally create your own custom Interactive Video viewer preset. You can determine, among other things, the styling of the video player, the interactive thumbnails, and the thumbnail grid view that appears at the end of the video.
 
@@ -289,7 +289,7 @@ To add interactivty to your video:
 
 1. (Optional) Drag the bar on the **Timeline Scale Slider** left to zoom in or right to zoom out, thereby controlling how much detail you see of the segments that you have added.
 
-   ![](assets/chlimage_1-22.png)
+   ![chlimage_1-22](assets/chlimage_1-22.png)
 
    Depending on the length of your video, the Segment Duration defaults to the following values:
 
@@ -326,19 +326,19 @@ To add interactivty to your video:
 
    To illustrate, the following three screenshots are using the same video. Notice that the width of each segment changes depending on the Timeline Scale setting.
 
-   ![](assets/chlimage_1-23.png)
+   ![chlimage_1-23](assets/chlimage_1-23.png)
 
    Screenshot A
 
    Screenshot A above shows you the default view of a 29 second product video. The Timeline Scale is set at the default of 5 seconds.
 
-   ![](assets/chlimage_1-24.png)
+   ![chlimage_1-24](assets/chlimage_1-24.png)
 
    Screenshot B
 
    In Screenshot B above, the Timeline Scale slider was dragged from the default of 5 seconds to 3 seconds. Notice that the individual Timeline Scale time stamps are now all set at 3 second intervals.
 
-   ![](assets/chlimage_1-25.png)
+   ![chlimage_1-25](assets/chlimage_1-25.png)
 
    Screenshot C
 
@@ -356,7 +356,7 @@ To add interactivty to your video:
         * Tap the trailing blue oval to seek the video directly to the end of that segment.
         * Tap the entire segment to return video playback to the start of that segment
 
-   ![](assets/chlimage_1-26.png)
+   ![chlimage_1-26](assets/chlimage_1-26.png)
 
    Repositioning the ending of a timeline segment
 
@@ -448,7 +448,7 @@ To add interactivty to your video:
  </tbody>
 </table>
 
-   ![](assets/experiencefragment_interactivevideos.png)
+   ![experiencefragment_interactivevideos](assets/experiencefragment_interactivevideos.png)
 
    A new text label is added to the thumbnail image.
 
@@ -465,7 +465,7 @@ To add interactivty to your video:
 
    Tap** Merge Segment** on the toolbar.
 
-   ![](assets/chlimage_1-28.png)
+   ![chlimage_1-28](assets/chlimage_1-28.png)
 
    Merging two selected five second segments into one ten second segment.
 
@@ -475,7 +475,7 @@ To add interactivty to your video:
 
    Selecting two or more segments disables the Split Segment feature.
 
-   ![](assets/chlimage_1-29.png)
+   ![chlimage_1-29](assets/chlimage_1-29.png)
 
    Splitting a selected ten second segment into two segments of five seconds each.
 

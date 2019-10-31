@@ -41,7 +41,7 @@ Perform the following steps to add support for a language *New* and the browser 
 
    The following examples contain the translation.json file for English and French locales of AEM Forms workspace.
 
-   ![](assets/translation_json_in_en.png) ![](assets/translation_json_in_fr.png)
+   ![translation_json_in_en](assets/translation_json_in_en.png) ![translation_json_in_fr](assets/translation_json_in_fr.png)
 
 ## Localizing collapsed categories, queues, and processes {#localizing-collapsed-categories-queues-and-processes}
 
@@ -53,7 +53,7 @@ In the following steps, it is assumed that the new localized image files are *Ca
 >
 >To find the browser language locale code of your browser. Open `https://[server]:[port]/lc/libs/ws/Locale.html`.
 
-![](assets/collapsing_panels_image.png)
+![collapsing_panels_image](assets/collapsing_panels_image.png)
 
 Perform the following steps to localize the images:
 

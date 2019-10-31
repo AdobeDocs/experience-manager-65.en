@@ -40,22 +40,22 @@ You can pass the following request parameters in a URL to launch the asset selec
 | mimetype            | mimetype(s) (/jcr:content/metadata/dc:format) of an asset (wildcard also supported)                    | `http://localhost:4502/aem/assetpicker.html?mimetype=image/png`  `http://localhost:4502/aem/assetpicker.html?mimetype=*png`  `http://localhost:4502/aem/assetpicker.html?mimetype=*presentation`  `http://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`     | Use it to filter assets based on MIME type(s)                                                                                                                                                       |
 | dialog              | true, false                                                                                            | `http://localhost:4502/aem/assetpicker.html?dialog=true`                                                                                                                                                                                                                     | Use these parameters to open the asset selector as Granite Dialog. This option is only applicable when you launch the asset selector through Granite Path Field, and configure it as pickerSrc URL. |
 | assettype (S)       | images, documents, multimedia, archives                                                                | http://`localhost:4502/aem/assetpicker.html?assettype=images`  `http://localhost:4502/aem/assetpicker.html?assettype=documents`  `http://localhost:4502/aem/assetpicker.html?assettype=multimedia`  `http://localhost:4502/aem/assetpicker.html?assettype=archives`                      | Use this option to filter asset types based on the value passed.                                                                                                                                    |
-| root                | <folder_path>                                                                                          | `http://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities`                                                                                                                                                                      | Use this option to specify the root folder for the asset selector. In this case, the asset selector lets you select only child assets (direct/indirect) under the root folder.                      |
+| root                | `<folder_path>`                                                                                          | `http://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities`                                                                                                                                                                      | Use this option to specify the root folder for the asset selector. In this case, the asset selector lets you select only child assets (direct/indirect) under the root folder.                      |
 
 ## Using the asset selector {#using-the-asset-selector}
 
 1. To access the asset selector interface, go to `https://&lt;host&gt;:&lt;port&gt;/aem/assetpicker`.
 1. Navigate to the desired folder, and select one or more assets.
 
-   ![](assets/chlimage_1-194.png)
+   ![chlimage_1-194](assets/chlimage_1-194.png)
 
    Alternatively, you can search for the desired asset from the OmniSearch box and then select it.
 
-   ![](assets/chlimage_1-195.png)
+   ![chlimage_1-195](assets/chlimage_1-195.png)
 
    If you search for asssets using the OmniSearch box, you can select various filters from the **Filters** pane to refine your search.
 
-   ![](assets/chlimage_1-196.png)
+   ![chlimage_1-196](assets/chlimage_1-196.png)
 
 1. Tap/click **Select** from the toolbar.
 

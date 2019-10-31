@@ -84,7 +84,7 @@ The Watched Folder service handles the creation, update, and deletion of the end
 
 This diagram illustrates how Watched Folder processes an invocation request.
 
-![](assets/en_watchedfolder.png)
+![en_watchedfolder](assets/en_watchedfolder.png)
 
 The process of invoking a service using watched folders is as follows:
 
@@ -303,7 +303,7 @@ The load balancing and failover behavior changes depending on whether the watche
 
 For synchronous invocations, the Quartz load balancer decides which node will get the polling event. The node that gets the polling event will perform all the tasks: scan the folder, invoke the target service, and handle the results.
 
-![](assets/en_synchwatchedfoldercluster.png)
+![en_synchwatchedfoldercluster](assets/en_synchwatchedfoldercluster.png)
 
 For synchronous invocations, when one node fails, the Quartz scheduler sends new polling events to other nodes. Invocations that were started on the failed node will be lost. For more information about how to recover the files associated with the failed job, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure_points_and_recovery).
 
@@ -311,7 +311,7 @@ For synchronous invocations, when one node fails, the Quartz scheduler sends new
 
 For asynchronous invocations, the Quartz load balancer decides which node will get the polling event. The node that gets the polling event will scan the input folder and invoke the target service by placing the request in the Job Manager service queue. The Job Manager service load balancer, in turn, is responsible for deciding which node will process the invocation request. It is possible that even though node A created the invocation request, node B ends up processing the request. Or the node that started the invocation request may also end up processing the request.
 
-![](assets/en_asynchwatchedfoldercluster.png)
+![en_asynchwatchedfoldercluster](assets/en_asynchwatchedfoldercluster.png)
 
 For asynchronous invocations, when one node fails, the Quartz scheduler sends new polling events to other nodes. Invocation requests that were created on the failed node will be in the Job Manager service queue and will be sent to other nodes for processing. Files for which invocation requests are not created will remain in the stage folder. For more information about how to recover the files associated with the failed job, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure_points_and_recovery).
 

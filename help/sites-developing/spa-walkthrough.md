@@ -45,7 +45,7 @@ The AEM SPA Editor allows front-end developers to create SPAs that can be integr
 
 By being faster, fluid, and more like a native application, a SPA becomes a very attractive experience not only for the visitor of the webpage, but also for marketers and developers due to the nature of how SPAs work.
 
-![](assets/screen_shot_2018-08-20at135550.png)
+![screen_shot_2018-08-20at135550](assets/screen_shot_2018-08-20at135550.png)
 
 **Visitors**
 
@@ -68,7 +68,7 @@ The primary idea behind a SPA is that calls and dependency on a server are reduc
 
 In a traditional, sequential webpage, only the data needed for the immediate page is loaded. This means that when the visitor moves to another page, the server is called for the additional resources. Additinoal calls might be necessary as the visitor interacts with elements on the page. These multiple calls can give a sense of lag or delay as the page has to catch up with the visitor's requests.
 
-![](assets/screen_shot_2018-08-20at140449.png)
+![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
 For a more fluid experience, that approaches what a visitor expects from mobile, native apps, a SPA loads all necessary data for the visitor on the first load. Although this might take a bit longer at first, it then eliminates the need for additional server calls.
 
@@ -96,23 +96,23 @@ When an SPA is built to leverage the AEM SPA Editor, the content author notices 
 
    `https://localhost:4502/editor.html/content/we-retail-journal/react.html`
 
-   ![](assets/screen_shot_2018-06-07at142533.png)
+   ![screen_shot_2018-06-07at142533](assets/screen_shot_2018-06-07at142533.png)
 
 1. Select a heading component and notice that a toolbar appears like for any other component. Select **Edit**.
 
-   ![](assets/screen_shot_2018-06-07at142937.png)
+   ![screen_shot_2018-06-07at142937](assets/screen_shot_2018-06-07at142937.png)
 
 1. Edit the content as normal within AEM and note that the changes are persisted.
 
-   ![](assets/screen_shot_2018-06-07at143419.png)
+   ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
 
 1. Use the Assets Browser to drag-and-drop a new image into an image component.
 
-   ![](assets/screen_shot_2018-06-07at143530.png)
+   ![screen_shot_2018-06-07at143530](assets/screen_shot_2018-06-07at143530.png)
 
 1. The change is persisted.
 
-   ![](assets/screen_shot_2018-06-07at143732.png)
+   ![screen_shot_2018-06-07at143732](assets/screen_shot_2018-06-07at143732.png)
 
 Additional authoring tools such as dragging-and-dropping additional components on the page, rearranging components, and modifying the layout are supported as in any non-SPA application.
 
@@ -132,17 +132,17 @@ Experiencing how an SPA behaves for the end user and then inspecting the SPA pag
 
    `/content/we-retail-journal/react.html`
 
-   ![](assets/screen_shot_2018-06-08at102650.png)
+   ![screen_shot_2018-06-08at102650](assets/screen_shot_2018-06-08at102650.png)
 
    Note the pages structure including navigation to child pages, weather widget, and articles.
 
 1. Navigate to a child page using the menu and see that the page loads immediately without the need for a refresh.
 
-   ![](assets/screen_shot_2018-06-08at102815.png)
+   ![screen_shot_2018-06-08at102815](assets/screen_shot_2018-06-08at102815.png)
 
 1. Open your browser's built-in developer tools and monitor network activity as you navigate the child pages.
 
-   ![](assets/screen_shot_2018-06-08at103922.png)
+   ![screen_shot_2018-06-08at103922](assets/screen_shot_2018-06-08at103922.png)
 
    There is very little traffic as you move from page to page in the app. The page is not reloaded and only the new images are requested.
 
@@ -158,7 +158,7 @@ The next section, [Loading an SPA Application](/help/sites-developing/spa-walkth
 
    `/content/we-retail-journal/react.html`
 
-   ![](assets/screen_shot_2018-06-07at144736.png)
+   ![screen_shot_2018-06-07at144736](assets/screen_shot_2018-06-07at144736.png)
 
 1. Use the built-in tool of your browser to view the source of the page.
 1. Note that the content of the source is extremely limited.
@@ -193,19 +193,19 @@ The next section, [Loading an SPA Application](/help/sites-developing/spa-walkth
 
 1. Use your browser's built-in tools to inspect the page. See the content of the DOM fully loaded.
 
-   ![](assets/screen_shot_2018-06-07at151848.png)
+   ![screen_shot_2018-06-07at151848](assets/screen_shot_2018-06-07at151848.png)
 
 1. Switch to the Network tab in the Inspector and reload the page.
 
    Ignoring image requests, note that the primary resources loaded for the page are the page itself, CSS, the React Javascript, its dependencies, as well as JSON data for the page.
 
-   ![](assets/screen_shot_2018-06-07at152155.png)
+   ![screen_shot_2018-06-07at152155](assets/screen_shot_2018-06-07at152155.png)
 
 1. Load the `react.model.json` in a new tab.
 
    `/content/we-retail-journal/react.model.json`
 
-   ![](assets/screen_shot_2018-06-07at152636.png)
+   ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
 
    The AEM SPA Editor leverages [AEM Content Services](/help/assets/content-fragments.md) to deliver the entire content of the page as a JSON model.
 
@@ -219,13 +219,13 @@ The next section, [Loading an SPA Application](/help/sites-developing/spa-walkth
 
    This behavior is not mandatory and is fully definable.
 
-   ![](assets/screen_shot_2018-06-07at153945.png)
+   ![screen_shot_2018-06-07at153945](assets/screen_shot_2018-06-07at153945.png)
 
 1. To view this difference in behavior, reload the page and clear the network activity of the inspector. Navigate to the blog and about us pages in the page menu and see that there is no network activity reported.
 
    Navigate to the weather page and see that the `weather.model.json` is called asynchronously.
 
-   ![](assets/screen_shot_2018-06-07at155738.png)
+   ![screen_shot_2018-06-07at155738](assets/screen_shot_2018-06-07at155738.png)
 
 ### Interaction with the SPA Editor {#interaction-with-the-spa-editor}
 
@@ -243,7 +243,7 @@ In the following section we will explore the contract that allows the SPA Editor
 
    Note that the component has a new data attribute `data-cq-data-path`.
 
-   ![](assets/screen_shot_2018-06-08at095124.png)
+   ![screen_shot_2018-06-08at095124](assets/screen_shot_2018-06-08at095124.png)
 
    For example
 

@@ -142,11 +142,11 @@ It is possible for an administrator or community moderator to move one or more f
 
 By selecting the Cut action, the content is copied to a clipboard. Multiple posts may be copied and moved as a group to the new location.
 
-![](assets/cutugc.png) ![](assets/putbackugc.png)
+![cutugc](assets/cutugc.png) ![putbackugc](assets/putbackugc.png)
 
 At the other location, when content is present in the clipboard, a Paste button is visible next to New Post with a number identifying the number of posts that will be pasted. The Paste button includes an option to clear the clipboard instead of pasting.
 
-![](assets/chlimage_1-28.png) ![](assets/chlimage_1-29.png)
+![chlimage_1-28](assets/chlimage_1-28.png) ![chlimage_1-29](assets/chlimage_1-29.png)
 
 ### Deny {#deny}
 
@@ -197,7 +197,7 @@ A user generated post (across all the content types, for example blogs, forums, 
 
 Moderator can see such a post and mark the same to allow or deny from appearing on the site. Moderation actions on these posts can be performed either in-context or through bulk moderation UI.
 
-![](assets/spamdetection.png)
+![spamdetection](assets/spamdetection.png)
 
 To enable spam detection engine, follow these steps:
 
@@ -206,7 +206,7 @@ To enable spam detection engine, follow these steps:
 1. Locate **AEM Communities Auto Moderation** configuration, and edit it.
 1. Add the "SpamProcess" entry.
 
-![](assets/spamprocess.png)
+![spamprocess](assets/spamprocess.png)
 
 >[!NOTE]
 >
@@ -253,7 +253,7 @@ To configure sentiment and watchwords :
 * locate `sentimentprocess.name`
 * select the configuration to open in edit mode
 
-![](assets/sentimentprocess.png)
+![sentimentprocess](assets/sentimentprocess.png)
 
 * **Positive Watchwords**
   A comma separated list of words contributing to a positive sentiment that override the defaults. Default is an empty list.
@@ -269,7 +269,7 @@ To configure sentiment and watchwords :
 
 Following is an example of a custom entry for the default watchwords, when `Explicit Path to Watchwords Node` is set to `/libs/settings/community/watchwords/default`.
 
-![](assets/crxde.png)
+![crxde](assets/crxde.png)
 
 ### Moderator Permissions {#moderator-permissions}
 

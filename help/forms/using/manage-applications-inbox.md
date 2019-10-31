@@ -43,17 +43,17 @@ Tasks that are assigned to a group appear in the Inbox of all group members. Any
 
 1. Tap to select the thumbnail of the task. Options to open or delegate the task appear at the top.
 
-   ![](assets/select-task.png)
+   ![select-task](assets/select-task.png)
 
 1. Do one of the following:
 
     * To delegate the task, tap **[!UICONTROL Delegate]**. The Delegate Item dialog Opens. Select a user, optionally add a comment, and tap **[!UICONTROL OK]**.
 
-   ![](assets/delegate.png)
+   ![delegate](assets/delegate.png)
 
     * To claim the task, tap **[!UICONTROL Open]**. The Assign to Self dialog opens. Tap **[!UICONTROL Proceed]** to claim the task. The claimed task appears with you as the assignee in your Inbox.
 
-   ![](assets/claim.png)
+   ![claim](assets/claim.png)
 
 ### View details and perform actions on tasks {#view-details-and-perform-actions-on-tasks}
 
@@ -66,7 +66,7 @@ When you open a task, you can view task details and perform available actions. T
    >
    >If a task is assigned to a group, you must claim it to be able to open it in detailed view.
 
-![](assets/task-details.png)
+![task-details](assets/task-details.png)
 
 The detailed task view comprises the following sections:
 
@@ -89,7 +89,7 @@ The Workflow Details tab at the top shows the progress of the task through vario
 
 In addition, the tab displays task history for each completed stage in the workflow. You can tap **[!UICONTROL View Details]** for a completed stage to know details about that stage. It displays comments, form and task attachments, status, start and end dates, and so on about the task.
 
-![](assets/workflow-details.png)
+![workflow-details](assets/workflow-details.png)
 
 #### Actions toolbar {#actions-toolbar}
 
@@ -101,10 +101,10 @@ As you take action on the task, it proceeds further in the workflow.
 
 AEM Inbox displays only active tasks. Completed tasks do not appear in the list. However, you can use Inbox filters to filter tasks based on several parameters, such as task type, status, start and end dates, and so on. To view completed tasks:
 
-1. In AEM Inbox, tap ![](assets/toggle-side-panel1.png) to open the filter selector.
+1. In AEM Inbox, tap ![toggle-side-panel1](assets/toggle-side-panel1.png) to open the filter selector.
 1. Tap **[!UICONTROL Task Status]** accordion and select **[!UICONTROL Complete]**. All your completed tasks appear.
 
-   ![](assets/filter.png)
+   ![filter](assets/filter.png)
 
 1. Tap to select a task and click **[!UICONTROL Open]**.
 
@@ -112,9 +112,9 @@ The task opens to display the document or the adaptive form associated with the 
 
 The task details section displays information such as action taken, task status, start date, and end date.
 
-![](assets/completed-task.png)
+![completed-task](assets/completed-task.png)
 
 The **[!UICONTROL Workflow Details]** tab shows each step of the workflow. Tap **[!UICONTROL View details]** for a step for detailed information.
 
-![](assets/completed-task-workflow.png)
+![completed-task-workflow](assets/completed-task-workflow.png)
 

@@ -67,7 +67,7 @@ Test suites have a collection of test cases. You can have multiple test suites. 
 
    Ensure that each property is added to a separate box as displayed below:
 
-   ![](assets/dependencies.png)
+   ![dependencies](assets/dependencies.png)
 
 1. Right-click the **[!UICONTROL WeRetailFormTestCases]**node click **Create** > **Create File. **In the Name field, type `js.txt` and click **OK**.
 1. Open the js.txt file for editing, add the following code, and save the file:
@@ -97,7 +97,7 @@ Test suites have a collection of test cases. You can have multiple test suites. 
 
 1. Open AEM Testing UI (AEM &gt; Tools &gt; Operations &gt; Testing). The test suite - **We retail - Tests** - is listed in the UI.
 
-   ![](assets/we-retail-test-suite.png)
+   ![we-retail-test-suite](assets/we-retail-test-suite.png)
 
 ## Step 2: Create a test case to prefill values in an adaptive form {#step-create-a-test-case-to-prefill-values-in-an-adaptive-form}
 
@@ -218,7 +218,7 @@ A test suite can have multiple test cases. You can run all the test cases in a t
     1. In the Tests panel, tap **[!UICONTROL We retail - Tests (1).]**It The suite expands to display list of test.
     1. Tap the **[!UICONTROL Run tests]** button. The blank area on right side of screen is replaced with adaptive form as the test executes.
 
-   ![](assets/run-all-test.png)
+   ![run-all-test](assets/run-all-test.png)
 
 1. To run a single test from the Test Suite:
 
@@ -227,6 +227,6 @@ A test suite can have multiple test cases. You can run all the test cases in a t
 
 1. Tap the test name, Prefill test, to review the results of the Test Case. It opens the Result panel. Tap the name of your Test Case in the Result panel view all the details of the test.
 
-   ![](assets/review-results.png)
+   ![review-results](assets/review-results.png)
 
 Now the adaptive form is ready for publishing.

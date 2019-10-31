@@ -22,7 +22,7 @@ To prevent unauthorized use of this data, organizations can impose a watermark o
 
 To enable the watermark in preview PDF, select the **[!UICONTROL Apply Watermark]** During Preview option in **[!UICONTROL Correspondence Management Configurations]** at https://[server]:[port]/system/console/configMgr.
 
-![](assets/default-watermark.png)
+![default-watermark](assets/default-watermark.png)
 
 You can use the following steps to customize the text and appearance of the watermark:
 

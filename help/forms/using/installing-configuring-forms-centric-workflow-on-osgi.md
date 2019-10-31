@@ -34,7 +34,7 @@ AEM Forms add-on package is an application deployed onto AEM. You require only a
 
 The following topology is indicative topology to run AEM Forms Interactive Communications, Correspondence Management, AEM Forms data capture, and Forms-Centric workflow on OSGi capabilities. For detailed information about the topology, see [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![](assets/recommended-topology.png)
+![recommended-topology](assets/recommended-topology.png)
 
 AEM Forms Forms-centric workflow on OSGi runs AEM Inbox and AEM Workflow Model creation UI on the Author instances of AEM Forms.
 

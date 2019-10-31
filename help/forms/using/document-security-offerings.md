@@ -39,7 +39,7 @@ The server is included in AEM Forms Document Security add-on offering. You can c
 
 AEM Forms Document Security provides various tools to apply security policies. You can choose a tool as per your requirements and specifications.
 
-![](assets/document-security-offerings.png)
+![document-security-offerings](assets/document-security-offerings.png)
 
 You can use Document Security SDK, Adobe Acrobat, Document Security Extension for Microsoft Office, or Portable Protection Library to apply and track the security policies:
 

@@ -86,13 +86,13 @@ To use a form data model for creating an adaptive form:
 
 1. In Form Model tab on Add Properties screen, select **[!UICONTROL Form Data Model]** in the **[!UICONTROL Select From]** drop-down list.
 
-   ![](assets/create-af-1.png)
+   ![create-af-1](assets/create-af-1.png)
 
 1. Tap to expand **[!UICONTROL Select Form Data Model]**. All available form data models are listed.
 
    Select a from data model.
 
-   ![](assets/create-af-2.png)
+   ![create-af-2](assets/create-af-2.png)
 
 >[!NOTE]
 >

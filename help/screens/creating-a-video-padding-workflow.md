@@ -39,7 +39,7 @@ Before you create a workflow for video, please complete the following prerequisi
 1. Upload a video in **Assets** folder in your AEM instance
 1. Create an AEM Screens project (for example, **TestVideoRendition**) and a channel named (**VideoRendering**), as shown in the figure below:
 
-![](assets/screen_shot_2018-10-17at85307pm.png)
+![screen_shot_2018-10-17at85307pm](assets/screen_shot_2018-10-17at85307pm.png)
 
 ## Creating a Video Padding Workflow {#creating-a-video-padding-workflow-1}
 
@@ -56,23 +56,23 @@ Follow the steps below to create a workflow for your video:
 
 1. Navigate to your AEM instance and click tools from side rail. Select **Workflow** --&gt; **Models** to create a new model.
 
-   ![](assets/screen_shot_2018-10-17at90025pm.png)
+   ![screen_shot_2018-10-17at90025pm](assets/screen_shot_2018-10-17at90025pm.png)
 
 1. Click **Models** --&gt; **Create** --&gt; **Create Model**. Enter the **Title** (as **VideoRendition**) and **Name** in the **Add Workflow Model**. Click **Done** to add the workflow model.
 
-   ![](assets/screen_shot_2018-10-17at90747pm.png)
+   ![screen_shot_2018-10-17at90747pm](assets/screen_shot_2018-10-17at90747pm.png)
 
 1. Once you create the workflow model, select the model (**VideoRendition**), and click **Edit** from the action bar.
 
-   ![](assets/screen_shot_2018-10-17at91256pm.png)
+   ![screen_shot_2018-10-17at91256pm](assets/screen_shot_2018-10-17at91256pm.png)
 
 1. Drag and drop the **Command Line **component to your workflow.
 
-   ![](assets/screen_shot_2018-10-22at14846pm.png)
+   ![screen_shot_2018-10-22at14846pm](assets/screen_shot_2018-10-22at14846pm.png)
 
 1. Select the **Command Line** component and open the properties dialog box.
 
-   ![](assets/screen_shot_2018-10-17at95752pm.png)
+   ![screen_shot_2018-10-17at95752pm](assets/screen_shot_2018-10-17at95752pm.png)
 
 1. Select the **Arguments** tab to enter the fields in the **Command Line - Step Properties** dialog box.
 
@@ -80,15 +80,15 @@ Follow the steps below to create a workflow for your video:
 
    Please refer to the details on **Mime Types** and **Commands** in the note below.
 
-   ![](assets/screen_shot_2018-10-18at105300am.png)
+   ![screen_shot_2018-10-18at105300am](assets/screen_shot_2018-10-18at105300am.png)
 
 1. Select the workflow (**VideoRenditions**) and click **Start Workflow** from the action bar to open the **Run Workflow** dialog bbox.
 
-   ![](assets/screen_shot_2018-10-18at105335am.png)
+   ![screen_shot_2018-10-18at105335am](assets/screen_shot_2018-10-18at105335am.png)
 
 1. Select the path of your asset in the **Payload** (as ***/content/dam/huseinpeyda-crossroads01_512kb 2.mp4***) and enter the **Title **(as ***RunVideo***) and click **Run**.
 
-   ![](assets/screen_shot_2018-10-18at112043am.png)
+   ![screen_shot_2018-10-18at112043am](assets/screen_shot_2018-10-18at112043am.png)
 
 ### Using the Workflow in an AEM Screens Project {#using-the-workflow-in-an-aem-screens-project}
 
@@ -96,15 +96,15 @@ Follow the steps below to use the workflow in your AEM Screens project:
 
 1. Navigate to an AEM Screens project (**TestVideoRendition** --&gt; **Channels** --&gt;**VideoRendition**).
 
-   ![](assets/screen_shot_2018-10-17at100715pm.png)
+   ![screen_shot_2018-10-17at100715pm](assets/screen_shot_2018-10-17at100715pm.png)
 
 1. Click **Edit** from the action bar. Drag and drop the video that you initially uploaded to **Assets**.
 
-   ![](assets/screen_shot_2018-10-17at102806pm.png)
+   ![screen_shot_2018-10-17at102806pm](assets/screen_shot_2018-10-17at102806pm.png)
 
 1. Once you have uploaded the video, click **Preview** to view the output.
 
-   ![](assets/screen_shot_2018-10-22at15151pm.png)
+   ![screen_shot_2018-10-22at15151pm](assets/screen_shot_2018-10-22at15151pm.png)
 
 ## Validating the Output for the Workflow {#validating-the-output-for-the-workflow}
 
@@ -113,5 +113,5 @@ You can validate your output by:
 * Check preview of the video in the channel
 * Navigate to the ***/content/dam/testvideo.mp4/jcr:content/renditions/cq5dam.video.fullhd-hp.mp4*** in CRXDE Lite, as shown in the figure below:
 
-![](assets/screen_shot_2018-10-22at14326pm.png)
+![screen_shot_2018-10-22at14326pm](assets/screen_shot_2018-10-22at14326pm.png)
 

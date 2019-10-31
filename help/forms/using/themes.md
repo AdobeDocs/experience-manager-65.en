@@ -279,7 +279,7 @@ When you select a component in the Canvas, its styling properties are listed in 
 
 Theme editor caches upto 10 styles applied to a component. You can use the cached styles with other component of a theme. Recently-used styles are available right below the selected component in sidebar as a list box. Initially, the recently-used styles list is empty.
 
-![](assets/asset-library.png)
+![asset-library](assets/asset-library.png)
 
 As you style a component, the styles are cached and listed in the list box. In this example, the label of the text box is styled to change the font size and color. You can follow similar steps for choosing an image or changing colors to style a component. Observe how the style is cached and listed in the list box when the field label styling is changed.
 
@@ -316,7 +316,7 @@ When you create a theme, it is created with a form that is shipped with the Them
 
 To replace the current form or interactive communication in Theme Editor Canvas:
 
-1. In the THEME EDITOR panel, click **Theme Options** ![](assets/theme-options.png) &gt; **Configure**.
+1. In the THEME EDITOR panel, click **Theme Options** ![theme-options](assets/theme-options.png) &gt; **Configure**.
 
 1. In the General tab, browse and select a form or interactive communication for the **Adaptive Form/Document** field.
 
@@ -335,7 +335,7 @@ Redo/undo buttons appear when you style a component in the Theme Editor.
 The Theme Editor lets you edit a theme you created or uploaded. Navigate to **Forms & Documents &gt; Themes**, and select a theme and open it. The theme opens in the Theme Editor.
 
 As discussed above, the Theme Editor has two panels: Sidebar and Canvas.
-[ ![](assets/theme-editor.png)
+[ ![theme-editor](assets/theme-editor.png)
 
 Customizing the success state styling of Text Box Widget component in Theme Editor. Component is selected in Canvas, and its state is selected in the sidebar. Styling options available in the sidebar are used to customize the look of a component.
 
@@ -347,22 +347,22 @@ The theme is either created using the out-of-the-box form, or using a form or in
 
 In the Canvas toolbar, you see:
 
-* **Toggle Side Panel** ![](assets/toggle-side-panel.png): Lets you show or hide sidebar.
-* **Theme Options** ![](assets/theme-options.png): Provides three options
+* **Toggle Side Panel** ![toggle-side-panel](assets/toggle-side-panel.png): Lets you show or hide sidebar.
+* **Theme Options** ![theme-options](assets/theme-options.png): Provides three options
 
     * Configure: Provides options to select the preview form or interactive communication, base clientlib, and typekit configuration.
     * View Theme CSS: Generates CSS for the selected theme.
     * Manage Styles: Provides options to manage text and image styles
     * Help: Runs an image guided tour of the Theme Editor.
 
-* **Emulator** ![](assets/ruler.png): Emulates the look of your theme for different display sizes. A display size is treated as a breakpoint in the emulator. You can select a breakpoint and specify a style for it. For example, Desktop and Tablet are two breakpoints. You can specify different styles for each breakpoint.
+* **Emulator** ![ruler](assets/ruler.png): Emulates the look of your theme for different display sizes. A display size is treated as a breakpoint in the emulator. You can select a breakpoint and specify a style for it. For example, Desktop and Tablet are two breakpoints. You can specify different styles for each breakpoint.
 
 When you select a component in the Canvas, you see the component toolbar on top of it. The component toolbar lets you select components, or switch to generic components. For example, you select a numeric text box in a panel. You see the following options in the component toolbar:
 
 * **Numeric Box Widget**: Lets you select the component to customize its look in sidebar.
 * **Field Widget**: Lets you select the generic component for styling. In this example, all text input components (text box/numeric box/numeric stepper/date input) are selected for styling.
 
-* ![](assets/field-level.png): Lets you switch to generic component for styling. If you select numeric box and tap this icon, field component is selected. If you select field component and tap this icon, panel is selected. If you keep tapping this icon for selection, you end up selecting the layout for styling.
+* ![field-level](assets/field-level.png): Lets you switch to generic component for styling. If you select numeric box and tap this icon, field component is selected. If you select field component and tap this icon, panel is selected. If you keep tapping this icon for selection, you end up selecting the layout for styling.
 
 >[!NOTE]
 >
@@ -451,7 +451,7 @@ Perform the following steps to customize styling for a particular component (a n
 
     * **Numeric Box Widget**
     * **Field Widget**
-    * ![](assets/field-level.png)
+    * ![field-level](assets/field-level.png)
 
 1. Select **Numeric Box Widget**.
 1. Sidebar title changes to Numeric Box Widget, and shows options to customize its look.
@@ -477,7 +477,7 @@ To simulate behavior of states other than error and success, use Preview mode. T
 
 ### Styling layouts for smaller displays {#styling-layouts-for-smaller-displays}
 
-Use ruler in Canvas to select breakpoints for devices with smaller displays. Click emulator ![](assets/ruler.png) in Canvas to view ruler and breakpoints. The breakpoints let you preview a form or interactive communication for display sizes pertaining to different devices such as phones and tablets. Multiple display sizes are supported in Theme Editor.
+Use ruler in Canvas to select breakpoints for devices with smaller displays. Click emulator ![ruler](assets/ruler.png) in Canvas to view ruler and breakpoints. The breakpoints let you preview a form or interactive communication for display sizes pertaining to different devices such as phones and tablets. Multiple display sizes are supported in Theme Editor.
 
 To style components for different breakpoints:
 
@@ -494,7 +494,7 @@ You can now use fonts available in a web-service in an adaptive form or interact
 
 Perform the following steps to configure Typekit in AEM:
 
-1. In the author instance, click ![](assets/adobeexperiencemanager.png)Adobe Experience Manager &gt; Tools ![](assets/hammer.png) &gt; Deployment &gt; Cloud Services.
+1. In the author instance, click ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager &gt; Tools ![hammer](assets/hammer.png) &gt; Deployment &gt; Cloud Services.
 1. On the **Cloud Services** page, navigate to **Third Party Services** &gt; **Typekit,** and click **Configure Now** under Typekit. If a configuration is already available, click the **+** button to create a new instance.
 1. On the **Create Configuration** dialog, specify a title for the configuration and click **Create**.
 
@@ -505,7 +505,7 @@ Perform the following steps to configure Typekit in AEM:
 Perform the following steps to configure a theme to use the TypeKit configuration:
 
 1. On the author instance, open a theme in the theme editor.
-1. In the theme editor, navigate to **Theme Options** ![](assets/theme-options.png) &gt; **Configure**.
+1. In the theme editor, navigate to **Theme Options** ![theme-options](assets/theme-options.png) &gt; **Configure**.
 1. In **Typekit Configuration** field, select a kit, and click **Save**.
 
    Now, you can see the fonts are added in the font-family property of the theme.
@@ -517,7 +517,7 @@ You can use the theme configuration service to add more fonts to the theme edito
 1. Log in to AEM Web Console with administrative privileges. URL for the AEM Web Console is `https://[server]:[port]/system/console/configMgr`.
 1. Open **Adaptive Form Theme Configuration Service**.
 
-   ![](assets/theme-config.png)
+   ![theme-config](assets/theme-config.png)
 
 1. Click +, specify the name of the font, and click **Save**. The font is added and available in theme editor.
 
@@ -533,7 +533,7 @@ In addition to the theme configuration option, you can also add your font from t
 
 When you select a font, it is added under the font family list. You can use the Mask option in theme editor to disable or enable the listed fonts.
 
-![](assets/multi-fonts.jpg)
+![multi-fonts](assets/multi-fonts.jpg)
 
 You can see the component font change.
 
@@ -541,7 +541,7 @@ The Font Family field supports multiple fonts. When you type a font, browser loo
 
 #### Mask styles applied in theme editor {#mask-styles-applied-in-theme-editor}
 
-You can mask styles applied in a theme. In the theme editor sidebar, you can use the ![](assets/toggle_eye.png)icon to disable an applied style. For example, if you change dimensions of a component in a form or interactive communication, then you can use the mask button on the left of a property to disable it. When you save a theme, the selected masking options are retained.
+You can mask styles applied in a theme. In the theme editor sidebar, you can use the ![toggle_eye](assets/toggle_eye.png)icon to disable an applied style. For example, if you change dimensions of a component in a form or interactive communication, then you can use the mask button on the left of a property to disable it. When you save a theme, the selected masking options are retained.
 
 ![Mask option available in theme editor sidebar](assets/mask-styles.png)
 
@@ -554,21 +554,21 @@ The example below shows masked and unmasked styles in a theme.
 To apply a theme to an adaptive form:
 
 1. Open your form in edit mode. To open a form in edit mode, select a form and click **Open**.
-1. In the edit mode, select a component, then click ![](assets/field-level.png) &gt; **Adaptive Form Container**, and then click ![](assets/cmppr.png).
+1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) &gt; **Adaptive Form Container**, and then click ![cmppr](assets/cmppr.png).
 
    You can edit properties of your form in the sidebar.
 
 1. In the sidebar, click **Styling**.
-1. Select your theme from the **Adaptive Form Theme** drop-down and click **Done** ![](assets/check-button.png).
+1. Select your theme from the **Adaptive Form Theme** drop-down and click **Done** ![check-button](assets/check-button.png).
 
 To apply a theme to an interactive communication:
 
 1. Open your interactive communication in edit mode. To open a interactive communication in edit mode, select a form and click **Open**.
-1. In the edit mode, select a component, then click ![](assets/field-level.png) &gt;**Document Container**, and then click ![](assets/cmppr.png).
+1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) &gt;**Document Container**, and then click ![cmppr](assets/cmppr.png).
 
    You can edit properties of your form in the sidebar.
 
-1. In the sidebar, under** Basic**, select your theme from the **Theme** drop-down and click **Done** ![](assets/check-button.png)
+1. In the sidebar, under** Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
 
 ### Change theme of a form at runtime {#change-theme-of-a-form-at-runtime}
 
@@ -625,13 +625,13 @@ When you specify styles for components in Theme Editor, a CSS is generated. When
 You can see the generated CSS using the following options:
 
 * **View CSS** option in the sidebar: When you select a component in the Theme, you can see the VIEW CSS option in the sidebar. It shows the generated CSS, including CSS for `::before` and `::after` pseudo elements.
-* **View Theme CSS** option in the canvas toolbar: In the Canvas Toolbar, click ![](assets/theme-options.png) &gt; **View Theme CSS**. You can see the entire theme CSS generated from the properties you define in the Theme Editor.
+* **View Theme CSS** option in the canvas toolbar: In the Canvas Toolbar, click ![theme-options](assets/theme-options.png) &gt; **View Theme CSS**. You can see the entire theme CSS generated from the properties you define in the Theme Editor.
 
 ## Troubleshooting, recommendations, and best practices {#troubleshooting-recommendations-and-best-practices}
 
 * **Avoiding assets from another Theme**
 
-  When you edit a theme, you can browse and add assets (such as images) from other themes. For example, you are editing the background of a page. For example, when you select **Page** ![](assets/edit-button.png)&gt; **Background** &gt; **Add** &gt; **Image**, you see a dialog that lets you browse and add images in other theme.
+  When you edit a theme, you can browse and add assets (such as images) from other themes. For example, you are editing the background of a page. For example, when you select **Page** ![edit-button](assets/edit-button.png)&gt; **Background** &gt; **Add** &gt; **Image**, you see a dialog that lets you browse and add images in other theme.
 
 * You can face issues with your current theme if an asset is added from another theme, and the other theme is moved or deleted. It is recommended that you avoid browsing and adding assets from other themes.
 * **Using base clientlib, theme editor, and inline styling**

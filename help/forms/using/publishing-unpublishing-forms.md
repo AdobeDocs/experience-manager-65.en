@@ -64,13 +64,13 @@ An asset can have the following states:
 1. Log in to the AEM Forms server. 
 1. Use one of the following to select and publish an asset.
 
-    1. Move the pointer over an asset and tap **[!UICONTROL Publish]** ![](assets/aem6forms_globe.pngasset.png).
+    1. Move the pointer over an asset and tap **[!UICONTROL Publish]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
     1. Do one of following and then tap Publish:
 
-        * If you are in the card view, tap **[!UICONTROL Enter Selection]** ![](assets/aem6forms_check-circle.png), and tap the asset. The asset is selected.
+        * If you are in the card view, tap **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), and tap the asset. The asset is selected.
         * If you are in the list view, select the checkbox of an asset. The asset is selected.  
         * Tap an asset to display its details.
-        * Display an asset's properties by tapping View Properties ![](assets/viewproperties.png).
+        * Display an asset's properties by tapping View Properties ![viewproperties](assets/viewproperties.png).
 
        >[!NOTE]
        >
@@ -102,14 +102,14 @@ Complete the following steps to publish all the Correspondence Management assets
 
 1. Log in to the AEM Forms server. 
 1. Tap **Adobe Experience Manager** in the global navigation bar.
-1. Tap ![](assets/tools.png), and then tap **Forms**.
+1. Tap ![tools](assets/tools.png), and then tap **Forms**.
 1. Tap **Publish Correspondence Management Assets**. 
 
-   ![](assets/publish-cmp-assets.png)
+   ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
    The Publish All Correspondence Management Assets page appears and displays the information about the last time the Publish Correspondence Management Assets process was attempted.
 
-   ![](assets/publish-last-run-details.png)
+   ![publish-last-run-details](assets/publish-last-run-details.png)
 
 1. Tap **Publish** and, in the confirm message, tap **OK**.
 
@@ -126,24 +126,24 @@ AEM Forms let you schedule asset publishing and unpublishing for Forms & Documen
 Follow these steps to schedule the date and time of publishing and unpublishing Forms & Documents assets:
 
 1. Select an asset and tap **[!UICONTROL View Properties]**. The Metadata Properties page opens.
-1. In the Metadata Properties page, tap **[!UICONTROL Advanced]**, and then tap **[!UICONTROL Edit]** ![](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+1. In the Metadata Properties page, tap **[!UICONTROL Advanced]**, and then tap **[!UICONTROL Edit]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 1. In the **[!UICONTROL Publish On Time]** and **[!UICONTROL Publish Off Time]** fields, select the date and time.  
-   Tap **[!UICONTROL Done]** ![](assets/aem6forms_check.png).
+   Tap **[!UICONTROL Done]** ![aem6forms_check](assets/aem6forms_check.png).
 
 ## Unpublish an asset {#unpublish-an-asset}
 
-1. Select an asset that is published and tap **[!UICONTROL Unpublish]** ![](assets/unpublish.png).
+1. Select an asset that is published and tap **[!UICONTROL Unpublish]** ![unpublish](assets/unpublish.png).
 1. Use one of the following to select and unpublish an asset.
 
-    1. Move the pointer over an asset and tap **[!UICONTROL Unpublish]** ![](assets/unpublish.png).
+    1. Move the pointer over an asset and tap **[!UICONTROL Unpublish]** ![unpublish](assets/unpublish.png).
     1. Do one of following and then tap unpublish:
 
-        * If you are in the card view, tap **[!UICONTROL Enter Selection]** ![](assets/aem6forms_check-circle.png), and tap the asset. The asset is selected.
+        * If you are in the card view, tap **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), and tap the asset. The asset is selected.
         
-        * If you are in the list view, hover over an asset and tap ![](assets/selectassetcheckmark.png) . The asset is selected.  
+        * If you are in the list view, hover over an asset and tap ![selectassetcheckmark](assets/selectassetcheckmark.png) . The asset is selected.  
         
         * Tap an asset to display its details.
-        * Display an asset's properties by tapping View Properties ![](assets/viewproperties.png).
+        * Display an asset's properties by tapping View Properties ![viewproperties](assets/viewproperties.png).
 
 1. When the Unpublish process starts, a confirmation dialog appears. Tap **[!UICONTROL Unpublish]**.
 
@@ -159,7 +159,7 @@ Everytime you publish an asset or letter after editing it, a version of the asse
 >
 >Do not revert a letter to a last published state if any dependent asset used in that published letter is deleted from the system.
 
-1. Select an asset and tap **[!UICONTROL Revert to Previously Published Version]** ![](assets/reverttopreviouslypublishedversion.png).
+1. Select an asset and tap **[!UICONTROL Revert to Previously Published Version]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
 1. Before the asset is reverted, a confirmation dialog appears. Tap **[!UICONTROL Revert]**.
 
    The asset or letter is rolled back to its previously published version.
@@ -170,17 +170,17 @@ Everytime you publish an asset or letter after editing it, a version of the asse
 >
 >Deleting an asset removes it from the publish instance. Deleting an assets also removes its version history except the base version.
 
-1. Select an asset and tap **[!UICONTROL Delete]** ![](assets/delete.png).
+1. Select an asset and tap **[!UICONTROL Delete]** ![delete](assets/delete.png).
 
    >[!NOTE]
    >
-   >The Delete option is also available when you display asset details by tapping an asset or you display an asset's properties by tapping View Properties ![](assets/viewproperties.png).
+   >The Delete option is also available when you display asset details by tapping an asset or you display an asset's properties by tapping View Properties ![viewproperties](assets/viewproperties.png).
 
 1. Before the asset is deleted, a confirmation dialog appears. Tap **[!UICONTROL Delete]**.
 
    >[!NOTE]
    >
-   >Only the selected asset is deleted, and the dependent assets and are not deleted. To check references of an asset, tap ![](assets/references.png) and then select an asset. 
+   >Only the selected asset is deleted, and the dependent assets and are not deleted. To check references of an asset, tap ![references](assets/references.png) and then select an asset. 
    >
    >
    >If the asset you are attempting to delete is child asset of another asset, it is not deleted. To delete such an asset, remove references of this asset from other assets and then retry.

@@ -58,7 +58,7 @@ A **DemoProject** will be added to your AEM Screens.  ***Creating a Channel***
 1. Enter the **Title** as **TestChannel** and click **Create**.
 
 A **TestChannel** will be added to your **DemoProject**.   
-![](assets/screen_shot_2019-07-29at105101am.png)
+![screen_shot_2019-07-29at105101am](assets/screen_shot_2019-07-29at105101am.png)
 
 >[!NOTE]
 >
@@ -74,14 +74,14 @@ Follow the steps below to leverage the content from **We.Retail** to your **Test
     
     1. Click **Edit** from the action bar to open the page you want to use as an experience fragment for your Screens channel.
 
-   ![](assets/screen_shot_2018-06-06at105309am.png)
+   ![screen_shot_2018-06-06at105309am](assets/screen_shot_2018-06-06at105309am.png)
 
 1. **Re-using the Content**
 
     1. Select the fragment you want to include in your channel.
     1. Click the last icon from the right to open the **Convert to experience fragment** dialog box.
 
-   ![](assets/screen_shot_2019-07-29at105314am.png)
+   ![screen_shot_2019-07-29at105314am](assets/screen_shot_2019-07-29at105314am.png)
 
 1. **Creating Experience fragment**
 
@@ -94,14 +94,14 @@ Follow the steps below to leverage the content from **We.Retail** to your **Test
     
     1. Click the check mark to complete the creation of a new experience fragment.
 
-   ![](assets/screen_shot_2019-07-29at105918am.png)
+   ![screen_shot_2019-07-29at105918am](assets/screen_shot_2019-07-29at105918am.png)
 
 1. **Creating Live Copy of Experience Fragment**
 
     1. Navigate to the AEM home page.
     1. Select **Experience Fragments** and highlight the **ScreensFragment** and click **Variation as live-copy**, as shown in the figure below:
 
-   ![](assets/screen_shot_2019-07-29at110443am.png)
+   ![screen_shot_2019-07-29at110443am](assets/screen_shot_2019-07-29at110443am.png)
 
    c. Select the** ScreensFragment **from** Create Live Copy** wizard and click **Next**.
 
@@ -111,7 +111,7 @@ Follow the steps below to leverage the content from **We.Retail** to your **Test
 
    f. Click **Done** to move back to **ScreensFragment** page.
 
-   ![](assets/screen_shot_2019-07-29at110616am.png)
+   ![screen_shot_2019-07-29at110616am](assets/screen_shot_2019-07-29at110616am.png)
 
    >[!NOTE]
    >
@@ -125,7 +125,7 @@ Follow the steps below to leverage the content from **We.Retail** to your **Test
 
    You can add the **Client-side Libraries** (java and css) and **Static Files** to your experience fragment.  
 
-   The following example shows the addition of client-side libraries and the fonts as a part of static files to your experience fragment.  ![](assets/fragment.gif)
+   The following example shows the addition of client-side libraries and the fonts as a part of static files to your experience fragment.  ![fragment](assets/fragment.gif)
 
 1. **Using Experience Fragment as a Component in Screens Channel**
 
@@ -135,17 +135,17 @@ Follow the steps below to leverage the content from **We.Retail** to your **Test
     1. Click the components icon from the side tab.  
     1. Drag and drop the **Experience Fragment** to your channel.
 
-   ![](assets/screen_shot_2019-07-29at123115pm.png)
+   ![screen_shot_2019-07-29at123115pm](assets/screen_shot_2019-07-29at123115pm.png)
 
    e. Select the **Experience Fragment** component and select the top left (wrench) icon to open the **Experience Fragment** dialog box.
 
    f. Select the **Screens** live copy of the fragment you created in *Step 3* in the **Path **field.
 
-   ![](assets/screen_shot_2019-07-26at82650pm.png)
+   ![screen_shot_2019-07-26at82650pm](assets/screen_shot_2019-07-26at82650pm.png)
 
    f. Select the **Screens** live copy of the fragment you created in *Step 3* in the **Experience Fragment **field.
 
-   ![](assets/screen_shot_2019-07-26at82509pm.png)
+   ![screen_shot_2019-07-26at82509pm](assets/screen_shot_2019-07-26at82509pm.png)
 
    h. Enter the seconds in the** Duration** field.
 
@@ -155,7 +155,7 @@ Follow the steps below to leverage the content from **We.Retail** to your **Test
    >
    >If you want to add client-side libraries or the static files in addition to what you configured in step (4), you can add from the **Offline Config** tab in the **Experience Fragment** dialog box.
 
-   ![](assets/screen_shot_2019-07-26at82844pm.png)
+   ![screen_shot_2019-07-26at82844pm](assets/screen_shot_2019-07-26at82844pm.png)
 
    j. Click the check mark to complete the process.
 
@@ -167,7 +167,7 @@ After completion of preceding steps, you can validate your experience fragment i
 1. Selecting the **Preview** from the action bar.
 
 You will view the content from the **Sites** page (live-copy of the experience fragment) in your channel, as shown in the figure below:   
-![](assets/screen_shot_2018-06-08at120739pm.png) 
+![screen_shot_2018-06-08at120739pm](assets/screen_shot_2018-06-08at120739pm.png) 
 
 ## Propagating Changes from the Master Page {#propagating-changes-from-the-master-page}
 
@@ -183,29 +183,29 @@ Follow the steps below to propagate changes from the Master channel to your dest
 
 1. Select the Experience Fragment from the **Sites** (Master) page and click the pencil icon to edit the items in the Experience Fragment.
 
-   ![](assets/screen_shot_2018-06-08at122655pm.png)
+   ![screen_shot_2018-06-08at122655pm](assets/screen_shot_2018-06-08at122655pm.png)
 
 1. Select the Experience Fragment and click the wrench icon to open the dialog box to edit the images.
 
-   ![](assets/screen_shot_2018-06-08at25031pm.png)
+   ![screen_shot_2018-06-08at25031pm](assets/screen_shot_2018-06-08at25031pm.png)
 
 1. The **Product Grid** dialog box opens.
 
-   ![](assets/screen_shot_2018-06-08at25306pm.png)
+   ![screen_shot_2018-06-08at25306pm](assets/screen_shot_2018-06-08at25306pm.png)
 
 1. You can edit any of the images. For example, here the first image is replaced in this fragment.
 
-   ![](assets/screen_shot_2018-06-08at25608pm.png)
+   ![screen_shot_2018-06-08at25608pm](assets/screen_shot_2018-06-08at25608pm.png)
 
 1. Select the Experience Fragment and click the Rollout icon to propagate changes to the fragment that is used in your channel.
 
-   ![](assets/screen_shot_2018-06-08at31352pm.png)
+   ![screen_shot_2018-06-08at31352pm](assets/screen_shot_2018-06-08at31352pm.png)
 
 1. Click Rollout to confirm the changes.
 
    You will see that the changes are rolled out.
 
-   ![](assets/screen_shot_2018-06-08at32148pm.png)
+   ![screen_shot_2018-06-08at32148pm](assets/screen_shot_2018-06-08at32148pm.png)
 
 ### Validating the Changes {#validating-the-changes}
 
@@ -216,5 +216,5 @@ Follow the steps below to confirm the changes in your channel:
 1. Click **Preview** from the action bar to confirm the changes.
 
 The following image illustrates the changes in your **TestChannel**:   
-![](assets/screen_shot_2018-06-08at33351pm.png)
+![screen_shot_2018-06-08at33351pm](assets/screen_shot_2018-06-08at33351pm.png)
 

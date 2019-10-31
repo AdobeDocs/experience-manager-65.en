@@ -78,7 +78,7 @@ The content fragments enable:
 
 1. Initially the content from the **Main** Element and **Master** (variation) will be shown. You can [select other elements and/or variations](#selecting-the-element-or-variation) as required.
 
-   ![](assets/cfm-6420-01.png)
+   ![cfm-6420-01](assets/cfm-6420-01.png)
 
    >[!NOTE]
    >
@@ -155,7 +155,7 @@ For in-between content you can:
 >
 >The in-between content is page content. It is not stored in the content fragment.
 
-![](assets/cfm-6420-02.png)
+![cfm-6420-02](assets/cfm-6420-02.png)
 
 >[!NOTE]
 >
@@ -190,7 +190,7 @@ Once you have added a fragment with associated content to your page a new tab (*
 
 From here you can drag the assets to the required location (either to an existing component or to the required position where the appropriate component will be created):
 
-![](assets/cfm-6420-03.png)
+![cfm-6420-03](assets/cfm-6420-03.png)
 
 ### Assets Inserted into the Fragment {#assets-inserted-into-the-fragment}
 

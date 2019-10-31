@@ -17,7 +17,7 @@ docset: aem65
 
 Use page analytics data to gauge the effectiveness of their page content.
 
-![](assets/chlimage_1-80.png)
+![chlimage_1-80](assets/chlimage_1-80.png)
 
 Page analytics data is displayed in the Sites console. When sites are displayed in list format, the following columns are available by default:
 

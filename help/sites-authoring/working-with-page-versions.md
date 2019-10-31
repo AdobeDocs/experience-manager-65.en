@@ -35,12 +35,12 @@ You can create a version of your resource from:
 1. Open the **Timeline** column.
 1. Click/tap on the arrowhead by the comment field to reveal the options:
 
-   ![](assets/screen-shot_2019-03-05at112335.png)
+   ![screen-shot_2019-03-05at112335](assets/screen-shot_2019-03-05at112335.png)
 
 1. Select **Save as Version**.
 1. Enter a **Label** and **Comment** if required.
 
-   ![](assets/chlimage_1-42.png)
+   ![chlimage_1-42](assets/chlimage_1-42.png)
 
 1. Confirm the new version with **Create**.
 
@@ -53,7 +53,7 @@ You can create a version of your resource from:
 1. Select the **Create** option from the toolbar.
 1. The dialog will open. You can enter a **Label** and a **Comment** if required:
 
-   ![](assets/screen_shot_2012-02-15at105050am.png)
+   ![screen_shot_2012-02-15at105050am](assets/screen_shot_2012-02-15at105050am.png)
 
 1. Confirm the new version with **Create**.
 
@@ -84,7 +84,7 @@ To revert to a previous version:
 1. Open the **Timeline** column and select either **Show All** or **Versions**. The page versions for the selected page will be listed.
 1. Select the version you want to revert to. The possible options will be shown:
 
-   ![](assets/screen-shot_2019-03-05at112505.png)
+   ![screen-shot_2019-03-05at112505](assets/screen-shot_2019-03-05at112505.png)
 
 1. Select **Revert to this Version**. The selected version will be restored and the information in timeline will be updated.
 
@@ -97,7 +97,7 @@ You can preview a specific version:
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
 1. The page versions will be listed. Select the version you want to preview:
 
-   ![](assets/screen-shot_2019-03-05at112505-1.png)
+   ![screen-shot_2019-03-05at112505-1](assets/screen-shot_2019-03-05at112505-1.png)
 
 1. Select **Preview**. The page will be shown in a new tab.
 
@@ -120,7 +120,7 @@ To compare a previous version with the current page:
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
 1. The page versions will be listed. Select the version you want to compare:
 
-   ![](assets/screen-shot_2019-03-05at112505-2.png)
+   ![screen-shot_2019-03-05at112505-2](assets/screen-shot_2019-03-05at112505-2.png)
 
 1. Select **Compare to Current**. The [page diff](/help/sites-authoring/page-diff.md) will open and display the differences.
 
@@ -143,15 +143,15 @@ Timewarp is a [mode](/help/sites-authoring/author-environment-tools.md#page-mode
 
 1. Start the editor for the page where you wish to start Timewarp and then select **Timewarp** in the mode selection.
 
-   ![](assets/wwpv-01.png)
+   ![wwpv-01](assets/wwpv-01.png)
 
 1. In the dialogue set a target date and time and click or tap **Set Date**. If you do not select a time, the current time will default.
 
-   ![](assets/wwpv-02.png)
+   ![wwpv-02](assets/wwpv-02.png)
 
 1. The page is displayed based on the date set. Timewarp mode is indicated via the blue status bar at the top of the window. Use the links in the status bar to select a new target date or exit Timewarp mode.
 
-   ![](assets/wwpv-03.png)
+   ![wwpv-03](assets/wwpv-03.png)
 
 ### Timewarp Limitations {#timewarp-limitations}
 

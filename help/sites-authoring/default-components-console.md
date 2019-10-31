@@ -19,7 +19,7 @@ The Components console allows you to browse through all components defined for y
 
 It can be accessed from **Tools -&gt;** **General -&gt;** **Components**. In the console, card and list view are available. Because there is no tree structure for components, column view is not available.
 
-![](assets/screen-shot_2019-03-05at113145.png)
+![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ It can be accessed from **Tools -&gt;** **General -&gt;** **Components**. In the
 
 With the **Content Only** icon (top left) you can open the **Search** panel to search and/or filter the components:
 
-![](assets/screen-shot_2019-03-05at113251.png)
+![screen-shot_2019-03-05at113251](assets/screen-shot_2019-03-05at113251.png)
 
 ### Component Details {#component-details}
 
@@ -37,7 +37,7 @@ To view details about a specific component tap/click on the required resource. T
 
 * **Properties**
 
-  ![](assets/screen_shot_2018-03-27at165847.png)
+  ![screen_shot_2018-03-27at165847](assets/screen_shot_2018-03-27at165847.png)
 
   On the Properties tab you can:
 
@@ -56,11 +56,11 @@ To view details about a specific component tap/click on the required resource. T
 
 * **Policies**
 
-  ![](assets/chlimage_1-169.png)
+  ![chlimage_1-169](assets/chlimage_1-169.png)
 
 * **Live Usage**
 
-  ![](assets/chlimage_1-170.png)
+  ![chlimage_1-170](assets/chlimage_1-170.png)
 
   >[!CAUTION]
   >
@@ -70,5 +70,5 @@ To view details about a specific component tap/click on the required resource. T
 
   If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.
 
-  ![](assets/chlimage_1-171.png)
+  ![chlimage_1-171](assets/chlimage_1-171.png)
 

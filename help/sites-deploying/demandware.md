@@ -53,13 +53,13 @@ The server connection between AEM and the Demandware Sandbox needs to be configu
 1. Click **Demandware Client**.
 1. Enter the **Instance endpoint ip or hostname** as required.
 
-   ![](assets/chlimage_1-5.png)
+   ![chlimage_1-5](assets/chlimage_1-5.png)
 
 1. Click **Save**.
 1. Click **Demandware TransportHandler Plugin for WebDAV**.
 1. Set the **WebDAV user** and the **WebDAV user password**.
 
-   ![](assets/chlimage_1-6.png)
+   ![chlimage_1-6](assets/chlimage_1-6.png)
 
 1. Click **Save**.
 
@@ -80,7 +80,7 @@ For staging and productions systems, the OAuth clients need to be configured wit
 1. Navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Click **Demandware Access Token provider**.
 
-   ![](assets/chlimage_1-7.png)
+   ![chlimage_1-7](assets/chlimage_1-7.png)
 
 1. Modify the values as required and click **Save**.
 

@@ -13,7 +13,7 @@ docset: aem65
 
 # Tutorial: Create document fragments{#tutorial-create-document-fragments}
 
- ![](assets/05-create-form-data-model-main_small.png)
+ ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
 This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
@@ -29,7 +29,7 @@ This tutorial walks you through the steps to create multiple text document fragm
 * Create variables
 * Create and apply rules
 
-![](assets/text_document_fragments.gif)
+![text_document_fragments](assets/text_document_fragments.gif)
 
 The following is the list of document fragments that are created in this tutorial:
 
@@ -101,7 +101,7 @@ Execute the following steps to create variables for fields with Agent UI as the 
 1. Select the **Data Model Objects** tab in the left pane.
 1. Place the cursor next to the **Your Plan** field and double-click the **customer** &gt; **customerplan** property.
 
-   ![](assets/bill_details_customerplan_fdm.png)
+   ![bill_details_customerplan_fdm](assets/bill_details_customerplan_fdm.png)
 
 1. Click **Save **to create the Bill Details text document fragment.
 
@@ -301,7 +301,7 @@ Execute the following steps to create static text and use form data model elemen
 
    Based on this condition, Value Added Services Charges row is displayed only if the value for the Call Charges field is less than 60.
 
-   ![](assets/create_rules_caption.gif)
+   ![create_rules_caption](assets/create_rules_caption.gif)
 
 1. Click **Save **to create the Summary of charges text document fragment.
 

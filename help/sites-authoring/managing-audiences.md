@@ -41,7 +41,7 @@ To create a ContextHub segment in the Audiences console:
 1. In the Navigation console, click or tap **Personalization**. Click or tap **Audiences**.
 1. Tap or click **Create ContextHub Segment**.
 
-   ![](assets/screen-shot_2019-03-05at124034.png)
+   ![screen-shot_2019-03-05at124034](assets/screen-shot_2019-03-05at124034.png)
 
 1. In the **New ContextHub Segment** dialog box, enter a title and adjust the boost and click **Create**. Your new ContextHub segment appears in the audience list.
 
@@ -67,11 +67,11 @@ To create an Adobe Target audience:
 
 1. In the Navigation console, click or tap **Personalization**. Click or tap **Audiences**.
 
-   ![](assets/screen-shot_2019-03-05at124139.png)
+   ![screen-shot_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
 1. In the Audiences console, tap or click **Create** and then** Create Target Audience**.
 
-   ![](assets/chlimage_1-168.png)
+   ![chlimage_1-168](assets/chlimage_1-168.png)
 
 1. In the **Adobe Target Configuration** dialog box, select the target configuration and tap or click **OK**.
 1. In the Rule#1 area, tap or click the attribute type and enter any attribute information in the fields that are available. When finished, select the check mark to the right of the attribute to save it. See [Attributes and their options](#attributes-and-their-options) for information on all the attributes.

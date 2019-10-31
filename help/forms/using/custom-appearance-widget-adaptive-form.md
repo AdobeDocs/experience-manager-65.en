@@ -222,7 +222,7 @@ Let's now look at an example to create a custom appearance for a numeric field t
 
     1. Click **[!UICONTROL Finish]**.
 
-       ![](assets/eclipse-screenshot.png)
+       ![eclipse-screenshot](assets/eclipse-screenshot.png)
 
 1. Select the widget to be used for the custom appearance. This sample uses the following numeric stepper widget:
 

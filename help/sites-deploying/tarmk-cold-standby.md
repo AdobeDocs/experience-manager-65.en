@@ -44,7 +44,7 @@ The standby periodically requests the segment ID of the current head of the prim
 
 A typical TarMK Cold Standby deployment:
 
-![](assets/chlimage_1.png)
+![chlimage_1](assets/chlimage_1.png)
 
 ## Other characteristics {#other-characteristics}
 

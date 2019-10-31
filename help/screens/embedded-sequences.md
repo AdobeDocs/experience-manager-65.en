@@ -73,7 +73,7 @@ By default, it is set to **normal**. Setting the value to **normal*** (Play all 
 
 The following example shows the addition of an embedded sequence (**Idle Channel - Night**) to an already existing channel (**Idle Channel**).
 
-![](assets/new2.gif)
+![new2](assets/new2.gif)
 
 ### Adding a Dynamic Embedded Sequence {#adding-a-dynamic-embedded-sequence}
 
@@ -99,5 +99,5 @@ Follow the steps below to add an embedded sequence to your channel:
 
 1. Select the **Duration (ms)** in **Sequence** tab for your embedded channel in the sequence.
 
-![](assets/latest.gif)
+![latest](assets/latest.gif)
 

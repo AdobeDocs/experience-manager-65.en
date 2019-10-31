@@ -28,11 +28,11 @@ When upgrading your AEM environments, you need to consider the differences in ap
 
 The assumed topology for this section consists of an Author server running on TarMK with a Cold Standby. Replication occurs from the Author server to the TarMK publish farm. While not illustrated here, this approach can also be leveraged for deployments that use offloading. Make sure to upgrade or rebuild the offloading instance on the new version after disabling replication agents on the Author instance and before re-enabling them.
 
-![](assets/tarmk_starting_topology.jpg)
+![tarmk_starting_topology](assets/tarmk_starting_topology.jpg)
 
 ### Upgrade Preparation {#upgrade-preparation}
 
-![](assets/upgrade-preparation-author.png)
+![upgrade-preparation-author](assets/upgrade-preparation-author.png)
 
 1. Stop content authoring
 
@@ -44,7 +44,7 @@ The assumed topology for this section consists of an Author server running on Ta
 
 ### Upgrade Execution {#upgrade-execution}
 
-![](assets/execute_upgrade.jpg)
+![execute_upgrade](assets/execute_upgrade.jpg)
 
 1. Run the [in-place upgrade](/help/sites-deploying/in-place-upgrade.md)
 1. Update the dispatcher module *if needed*
@@ -55,7 +55,7 @@ The assumed topology for this section consists of an Author server running on Ta
 
 ### If Successful {#if-successful}
 
-![](assets/if_successful.jpg)
+![if_successful](assets/if_successful.jpg)
 
 1. Copy the upgraded instance to create a new Cold Standby
 
@@ -65,7 +65,7 @@ The assumed topology for this section consists of an Author server running on Ta
 
 ### If Unsuccessful (Rollback) {#if-unsuccessful-rollback}
 
-![](assets/rollback.jpg)
+![rollback](assets/rollback.jpg)
 
 1. Start the Cold Standby instance as the new Primary
 
@@ -77,11 +77,11 @@ The assumed topology for this section consists of an Author server running on Ta
 
 The assumed topology for this section consists of a MongoMK Author cluster with at least two AEM Author instances, backed by at least two MongoMK databases. All Author instances share a datastore. These steps should apply to both S3 and File datastores. Replication occurs from the Author servers to the TarMK Publish farm.
 
-![](assets/mongo-topology.jpg)
+![mongo-topology](assets/mongo-topology.jpg)
 
 ### Upgrade Preparation {#upgrade-preparation-1}
 
-![](assets/mongo-upgrade_prep.jpg)
+![mongo-upgrade_prep](assets/mongo-upgrade_prep.jpg)
 
 1. Stop content authoring
 1. Clone the data store for backup
@@ -95,7 +95,7 @@ The assumed topology for this section consists of a MongoMK Author cluster with 
 
 ### Upgrade Execution {#Upgrade-execution-1}
 
-![](assets/mongo-execution.jpg)
+![mongo-execution](assets/mongo-execution.jpg)
 
 1. Run an [in-place upgrade](/help/sites-deploying/in-place-upgrade.md) on the primary Author
 1. Update the Dispatcher or Web Module *if needed*
@@ -103,7 +103,7 @@ The assumed topology for this section consists of a MongoMK Author cluster with 
 
 ### If Successful {#if-successful-1}
 
-![](assets/mongo-secondaries.jpg)
+![mongo-secondaries](assets/mongo-secondaries.jpg)
 
 1. Create new 6.5 Author instances, connected to the upgraded Mongo instance
 
@@ -117,7 +117,7 @@ The assumed topology for this section consists of a MongoMK Author cluster with 
 
 ### If Unsuccessful (Rollback)  {#if-unsuccessful-rollback-2}
 
-![](assets/mongo-rollback.jpg)
+![mongo-rollback](assets/mongo-rollback.jpg)
 
 1. Reconfigure the secondary Author instances to connect to the cloned data store
 
@@ -139,11 +139,11 @@ The assumed topology for this section consists of a MongoMK Author cluster with 
 
 The assumed topology for this section consists of two TarMK publish instances, fronted by Dispatchers that are in turn fronted by a load balancer. Replication occurs from the Author server to the TarMK Publish farm.
 
-![](assets/tarmk-pub-farmv5.png)
+![tarmk-pub-farmv5](assets/tarmk-pub-farmv5.png)
 
 ### Upgrade Execution {#upgrade-execution-2}
 
-![](assets/upgrade-publish2.png)
+![upgrade-publish2](assets/upgrade-publish2.png)
 
 1. Stop traffic to the Publish 2 instance at the load balancer
 1. Run [pre-upgrade maintenance](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) on Publish 2
@@ -157,7 +157,7 @@ The assumed topology for this section consists of two TarMK publish instances, f
 
 ### If Successful {#if-successful-2}
 
-![](assets/upgrade-publish1.png)
+![upgrade-publish1](assets/upgrade-publish1.png)
 
 1. Enable traffic to Publish 2
 1. Stop traffic to Publish 1
@@ -170,7 +170,7 @@ The assumed topology for this section consists of two TarMK publish instances, f
 
 ### If Unsuccessful (Rollback) {#if-unsuccessful-rollback-1}
 
-![](assets/pub_rollback.jpg)
+![pub_rollback](assets/pub_rollback.jpg)
 
 1. Create a copy of Publish 1
 1. Replace the Publish 2 instance with a copy of Publish 1
@@ -187,5 +187,5 @@ The assumed topology for this section consists of two TarMK publish instances, f
 1. Resume content authoring
 1. Perform [post-upgrade checks](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).
 
-![](assets/final.jpg)
+![final](assets/final.jpg)
 

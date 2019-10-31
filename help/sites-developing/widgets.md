@@ -148,7 +148,7 @@ Include the **1. Dialog Basics** component in the sample page:
 
 The component displays as follows:
 
-![](assets/chlimage_1-60.png)
+![chlimage_1-60](assets/chlimage_1-60.png)
 
 #### Example 1: Full Dialog {#example-full-dialog}
 
@@ -167,7 +167,7 @@ The **Full** dialog displays a window with three tabs, each tab having two text 
 
 The dialog displays as follows:
 
-![](assets/screen_shot_2012-01-31at45411pm.png)
+![screen_shot_2012-01-31at45411pm](assets/screen_shot_2012-01-31at45411pm.png)
 
 #### Example 2: Single Panel Dialog {#example-single-panel-dialog}
 
@@ -199,7 +199,7 @@ To use the Single Panel dialog:
 
 1. Edit the component: the dialog displays as follows:
 
-![](assets/screen_shot_2012-01-31at45952pm.png)
+![screen_shot_2012-01-31at45952pm](assets/screen_shot_2012-01-31at45952pm.png)
 
 #### Example 3: Multi Panel Dialog {#example-multi-panel-dialog}
 
@@ -227,7 +227,7 @@ To use the Multi Panel dialog:
 
 1. Edit the component: the dialog displays as follows:
 
-![](assets/screen_shot_2012-01-31at50119pm.png)
+![screen_shot_2012-01-31at50119pm](assets/screen_shot_2012-01-31at50119pm.png)
 
 #### Example 4: Rich Dialog {#example-rich-dialog}
 
@@ -253,7 +253,7 @@ To use the **Rich** dialog:
 
 1. Edit the component: the dialog displays as follows:
 
-![](assets/screen_shot_2012-01-31at50429pm.png) ![](assets/screen_shot_2012-01-31at50519pm.png)
+![screen_shot_2012-01-31at50429pm](assets/screen_shot_2012-01-31at50429pm.png) ![screen_shot_2012-01-31at50519pm](assets/screen_shot_2012-01-31at50519pm.png)
 
 ### Dynamic Dialogs {#dynamic-dialogs}
 
@@ -271,7 +271,7 @@ To include the **2. Dynamic Dialogs** component on the sample page:
 
 The component displays as follows:
 
-![](assets/chlimage_1-61.png)
+![chlimage_1-61](assets/chlimage_1-61.png)
 
 #### Example 1: Switch Tabs Dialog {#example-switch-tabs-dialog}
 
@@ -320,7 +320,7 @@ The logic is implemented through event listeners and javascript code as follows:
 
 It displays as follows:
 
-![](assets/screen_shot_2012-02-01at114745am.png)
+![screen_shot_2012-02-01at114745am](assets/screen_shot_2012-02-01at114745am.png)
 
 #### Example 2: Arbitrary Dialog {#example-arbitrary-dialog}
 
@@ -366,7 +366,7 @@ To use the **Arbitrary** dialog:
 
 1. Edit the component: the dialog displays as follows:
 
-![](assets/screen_shot_2012-02-01at115300am.png)
+![screen_shot_2012-02-01at115300am](assets/screen_shot_2012-02-01at115300am.png)
 
 #### Example 3: Toggle Fields Dialog {#example-toggle-fields-dialog}
 
@@ -409,7 +409,7 @@ To use the **Toggle Fields** dialog:
 
 1. Edit the component: the dialog displays as follows:
 
-![](assets/screen_shot_2012-02-01at115518am.png)
+![screen_shot_2012-02-01at115518am](assets/screen_shot_2012-02-01at115518am.png)
 
 ### Custom Widgets {#custom-widgets}
 
@@ -427,7 +427,7 @@ The custom widgets and the plugin are included in the component called **3. Cust
 1. The component displays a title, some text and, when clicking the **PROPERTIES** link, the properties of the paragraph stored in the repository. Clicking again hides the properties.
    The component displays as follows:
 
-![](assets/chlimage_1-62.png)
+![chlimage_1-62](assets/chlimage_1-62.png)
 
 #### Example 1: Custom Multifield Widget {#example-custom-multifield-widget}
 
@@ -480,7 +480,7 @@ The custom multifield widget (xtype = `ejstcustom`):
 
 The **Custom Multifield** widget based dialog displays as follows:
 
-![](assets/screen_shot_2012-02-01at115840am.png)
+![screen_shot_2012-02-01at115840am](assets/screen_shot_2012-02-01at115840am.png)
 
 #### Example 2: Custom Treebrowse Widget {#example-custom-treebrowse-widget}
 
@@ -533,7 +533,7 @@ To use the **Custom Treebrowse** widget based dialog:
 
 1. Edit the component: the dialog displays as follows:
 
-![](assets/screen_shot_2012-02-01at120104pm.png)
+![screen_shot_2012-02-01at120104pm](assets/screen_shot_2012-02-01at120104pm.png)
 
 #### Example 3: Rich Text Editor (RTE) Plug-In {#example-rich-text-editor-rte-plug-in}
 
@@ -586,7 +586,7 @@ To use the **Rich Text Editor (RTE) Plug-in** based dialog:
 
 The **Rich Text Editor (RTE) Plug-in** based dialog displays as follows:
 
-![](assets/screen_shot_2012-02-01at120254pm.png)
+![screen_shot_2012-02-01at120254pm](assets/screen_shot_2012-02-01at120254pm.png)
 
 >[!NOTE]
 >
@@ -608,7 +608,7 @@ To include the **Tree Overview** component to the sample page:
 
 The component displays as follows:
 
-![](assets/screen_shot_2012-02-01at120639pm.png)
+![screen_shot_2012-02-01at120639pm](assets/screen_shot_2012-02-01at120639pm.png)
 
 The Tree Overview component:
 
@@ -659,7 +659,7 @@ The component dialog:
 
 * ``Displays as follows:
 
-![](assets/screen_shot_2012-02-01at120745pm.png)
+![screen_shot_2012-02-01at120745pm](assets/screen_shot_2012-02-01at120745pm.png)
 
 ### Grid Overview {#grid-overview}
 
@@ -687,7 +687,7 @@ To include the Grid Overview component to the sample page:
 
 The component displays as follows:
 
-![](assets/screen_shot_2012-02-01at121109pm.png)
+![screen_shot_2012-02-01at121109pm](assets/screen_shot_2012-02-01at121109pm.png)
 
 #### Example 1: Default Grid {#example-default-grid}
 
@@ -765,7 +765,7 @@ Switch the .js file that is referenced in the component jsp:
 
 The component displays as follows:
 
-![](assets/screen_shot_2012-02-01at121429pm.png)
+![screen_shot_2012-02-01at121429pm](assets/screen_shot_2012-02-01at121429pm.png)
 
 The javascript code referenced in the component jsp ( `referencesearch.js`) defines the `getGridPanel()` method called from the component jsp and returns a ` [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` object, based on data that are dynamically retrieved from the repository. The logic in `referencesearch.js` defines some dynamic data as a base for the GridPanel:
 

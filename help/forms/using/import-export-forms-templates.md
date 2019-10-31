@@ -34,7 +34,7 @@ For these asset types, you must use AEM Package Manager to create a CRX package 
 To download Forms & Documents assets:
 
 1. Log in to the AEM Forms instance.
-1. Tap Experience Manager ![](assets/adobeexperiencemanager.png) icon &gt; navigation ![](assets/compass.png) icon&gt; Forms &gt; Forms & Documents.
+1. Tap Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon &gt; navigation ![compass](assets/compass.png) icon&gt; Forms &gt; Forms & Documents.
 1. Select the forms assets and tap the **Download** icon.
 1. In the Download Asset(s), choose one of the following options, and tap **Download**.
 
@@ -57,7 +57,7 @@ To upload Forms & Documents assets:
 >[!VIDEO](https://vimeo.com/)
 
 1. Log in to the AEM Forms instance.
-1. Tap Experience Manager ![](assets/adobeexperiencemanager.png) icon &gt; navigation ![](assets/compass.png) icon&gt; Forms&gt; Forms & Documents.
+1. Tap Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon &gt; navigation ![compass](assets/compass.png) icon&gt; Forms&gt; Forms & Documents.
 1. Tap **Create **&gt;** File Upload**. An upload forms or package dialog appears.
 1. In the dialog box, browse and select the package or the archive to import. You can also select PDF document, XSDs, images, stylesheets, and XDP forms. Tap **Open**. The folder or the file name that you select must not include any special characters.
 
@@ -80,7 +80,7 @@ You can export themes in AEM Forms that you can use in other projects or instanc
 To download a theme:
 
 1. Log in to the AEM Forms instance.
-1. Tap Experience Manager ![](assets/adobeexperiencemanager.png) icon &gt; navigation ![](assets/compass.png) icon&gt; Forms&gt; Themes.
+1. Tap Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon &gt; navigation ![compass](assets/compass.png) icon&gt; Forms&gt; Themes.
 1. Select the theme and tap **Download**. The theme is downloaded as an archive (.zip file).
 
 ### Uploading a theme {#uploading-a-theme}
@@ -95,7 +95,7 @@ To upload a theme:
    The uploaded theme is available in the themes page.
 
 1. Log in to the AEM Forms instance.
-1. Tap Experience Manager ![](assets/adobeexperiencemanager.png) icon &gt; navigation ![](assets/compass.png) icon&gt; Forms&gt; Themes.
+1. Tap Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon &gt; navigation ![compass](assets/compass.png) icon&gt; Forms&gt; Themes.
 1. click **Create **&gt; **File Upload**. In the File Upload prompt, browse and select a theme package on your computer and click **Upload**. The theme is uploaded.
 
 ## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
@@ -109,7 +109,7 @@ To share assets, such as data dictionaries, letters, and document fragments, bet
 1. Tap **Download**.
 1. Correspondence Management displays Download Asset(s) dialog with a list of assets in the export list.
 
-   ![](assets/export.png)
+   ![export](assets/export.png)
 
 1. To view the dependencies that are exported, Tap Resolve. Or skip to the next step. Even if you do not tap resolve, the dependencies are still exported.
 1. To download the .cmp file, tap **OK**.
@@ -127,14 +127,14 @@ To download all the Correspondence Management assets and related dependencies as
 
 1. Log in to AEM Forms server as a forms user.
 1. Tap **Adobe Experience Manager** in the Global Navigation bar.
-1. Tap tools ( ![](assets/tools.png)) and then tap **Forms**.
+1. Tap tools ( ![tools](assets/tools.png)) and then tap **Forms**.
 1. Tap **Export Correspondence Management Assets**.
 
-   ![](assets/publish-cmp-assets-1.png)
+   ![publish-cmp-assets-1](assets/publish-cmp-assets-1.png)
 
    ( ``The Export All Correspondence Management Assets page appears and displays the information about the last time the Export process was attempted and a link to download the last successfully exported package.
 
-   ![](assets/export-last-run-details.png)
+   ![export-last-run-details](assets/export-last-run-details.png)
 
 1. Tap **Export** and, in the confirm message, tap **OK**.
 
@@ -210,11 +210,11 @@ To create a folder, complete the following steps:
 
 1. A new folder with the title you defined is displayed at the current location in the asset listing.
 
-   If a folder exists with the name specified, the submission fails with an error. You can view the error message by hovering over the error ![](assets/aem6forms_error_alert.png) icon that appears beside the name field.
+   If a folder exists with the name specified, the submission fails with an error. You can view the error message by hovering over the error ![aem6forms_error_alert](assets/aem6forms_error_alert.png) icon that appears beside the name field.
 
    You can tap the newly created folder to go inside the folder and create assets or folders within the folder. Further, you can select a folder and choose to queue it for download, delete it, or edit its name.
 
-   ![](assets/editdeletedownloadafolder.png)
+   ![editdeletedownloadafolder](assets/editdeletedownloadafolder.png)
 
 ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
 
@@ -235,9 +235,9 @@ Complete the following steps to create copies of assets and letters:
 
 AEM Forms UI allows you to search your content. Using the top bar, you can tap Search **[A] **to search your content for resources such as assets and documents.
 
-When you search for assets, AEM Forms displays the side panel. You can also tap ![](assets/assets-browser-content-only.png) &gt; Filter **[B] **to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+When you search for assets, AEM Forms displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B] **to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
 
-![](assets/search_topbar.png)
+![search_topbar](assets/search_topbar.png)
 
 **A.** Search **B.** Filter
 

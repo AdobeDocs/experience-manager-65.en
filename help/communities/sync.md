@@ -43,7 +43,7 @@ For detailed, step-by-step instructions, on how to enable synchronization across
 
 ## User sync in the background  {#user-sync-in-the-background}
 
-![](assets/sling-dist-workflow.png)
+![sling-dist-workflow](assets/sling-dist-workflow.png)
 
 * **vlt  package**: is a zip file of all the changes done on a publisher, which need to be distributed across publishers. Changes on a publisher generate events that are picked by the change event listener. This creates a vlt package that contains all the changes.
 
@@ -123,7 +123,7 @@ On AEM author instance:
 
      These endpoints define where you want to get the content from and where you want to push the content. Author fetches the content from the specified exporter endpoint and pushes the content to the publishers (other than the publisher from which it fetched the content).
 
-![](assets/sync-agent-fact.png)
+![sync-agent-fact](assets/sync-agent-fact.png)
 
 ### Adobe Granite Distribution - Encrypted Password Transport Secret Provider {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
@@ -150,7 +150,7 @@ On AEM author instance:
 
    For example, **usersync - admin**
 
-![](assets/granite-paswrd-trans.png)
+![granite-paswrd-trans](assets/granite-paswrd-trans.png)
 
 ### Apache Sling Distribution Agent - Queue Agents Factory {#apache-sling-distribution-agent-queue-agents-factory}
 
@@ -174,7 +174,7 @@ On AEM publish instance:
 1. Specify the node paths that are to be replicated in **Allowed roots**.
 1. Repeat for each **publish** instance.
 
-![](assets/queue-agents-fact.png)
+![queue-agents-fact](assets/queue-agents-fact.png)
 
 ### Adobe Granite Distribution - Diff Observer Factory {#adobe-granite-distribution-diff-observer-factory}
 
@@ -198,7 +198,7 @@ On each AEM publish instance:
 1. Select the **Enabled** checkbox.
 1. Specify **rep:members** as description for propertyName in **looked properties names**, and Save.
 
-![](assets/diff-obs.png)
+![diff-obs](assets/diff-obs.png)
 
 ### Apache Sling Distribution Trigger - Scheduled Triggers Factory {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
@@ -220,7 +220,7 @@ On AEM author instance:
 
    * Set the Interval in Seconds to the desired interval, and save.
 
-![](assets/scheduled-trigger.png)
+![scheduled-trigger](assets/scheduled-trigger.png)
 
 ### AEM Communities User Sync Listener {#aem-communities-user-sync-listener}
 
@@ -274,7 +274,7 @@ On each AEM publish instance:
 
     rep:cache (since we use sticky sessions, we need not sync this node to different publishers)
 
-![](assets/user-sync-listner.png)
+![user-sync-listner](assets/user-sync-listner.png)
 
 ### Unique Sling ID {#unique-sling-id}
 
@@ -289,7 +289,7 @@ On each publish instance:
 1. Browse to [https://_host:port_/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings).
 1. Check the value of **Sling ID.**
 
-  ![](assets/slingid.png)
+  ![slingid](assets/slingid.png)
 
 If the Sling ID of a publish instance matches the Sling ID of any other publish instance, then:
 

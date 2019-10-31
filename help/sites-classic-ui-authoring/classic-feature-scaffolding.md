@@ -31,11 +31,11 @@ Scaffolds are stored in the **Tools** console of the site admin.
 * Under this click on **geometrixx**.
 * Under **geometrixx** you will find a *scaffold page* called **News**. Double click to open this page.
 
-![](assets/howscaffolds_work.png)
+![howscaffolds_work](assets/howscaffolds_work.png)
 
 The scaffold consists of a form with a field for each piece of content that will make up the page to be created and four important parameters which are accessed through the **Page Properties** of the scaffold page.
 
-![](assets/pageprops.png)
+![pageprops](assets/pageprops.png)
 
 The scaffolding page properties are:
 
@@ -63,7 +63,7 @@ To create a new scaffold go to the **Tools** console, then **Default Page Scaffo
 
 *Next, you have to define the structure of the page that this scaffold will create. To do this go into * [design mode](/help/sites-authoring/page-authoring.md#sidekick)* on the scaffold page. A link will appear allowing you to edit the scaffold in the** dialog editor**.*
 
-![](assets/cq5_dialog_editor.png)
+![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
 Using the dialog editor you specifiy the properties that will be created each time a new page is created using this scaffold.
 
@@ -77,11 +77,11 @@ A look at the example **News** scaffold dialog in the dialog editor helps to exp
 
 Now, click on the dialog field **Dialog &gt; Tab Panel &gt; Text &gt; Text**, like this:
 
-![](assets/textedit.png)
+![textedit](assets/textedit.png)
 
 The property list for this field will appear on the right side of the dialog editor, like this:
 
-![](assets/list_of_properties.png)
+![list_of_properties](assets/list_of_properties.png)
 
 Notice the name property for this field. It has the value
 
@@ -98,11 +98,11 @@ Note that in a normal component dialog you would not have to specify this inform
 
 To specify these two pieces of information you use hidden fields. Click on the first hidden field **Dialog &gt; Tab Panel &gt; Text &gt; Hidden**, like this:
 
-![](assets/hidden.png)
+![hidden](assets/hidden.png)
 
 The properties of this hidden field are as follows:
 
-![](assets/hidden_list_props.png)
+![hidden_list_props](assets/hidden_list_props.png)
 
 The name property of this hidden field is
 
@@ -118,11 +118,11 @@ Because we know that the text should be interpreted as a rich text we specify th
 
 The second hidden field can be seen by clicking on it like this:
 
-![](assets/hidden2.png)
+![hidden2](assets/hidden2.png)
 
 The properties of this hidden field are as follows:
 
-![](assets/hidden_list_props2.png)
+![hidden_list_props2](assets/hidden_list_props2.png)
 
 The name property of this hidden field is
 
@@ -145,7 +145,7 @@ When you open a page in **Scaffolding** mode (using the icon at the bottom of si
 
 These show that the component cannot be edited - until inheritance is cancelled.
 
-![](assets/chlimage_1.jpeg)
+![chlimage_1](assets/chlimage_1.jpeg)
 
 >[!NOTE]
 >
@@ -156,7 +156,7 @@ Clicking on either the lock symbol or the image icon allows you to break inherit
 * the symbol will change to an open padlock.
 * once unlocked, you can edit the content.
 
-![](assets/chlimage_1-1.jpeg)
+![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
 After unlocking you can restore inheritance by clicking on the unlocked padlock symbol - this will lose any edits you have made.
 

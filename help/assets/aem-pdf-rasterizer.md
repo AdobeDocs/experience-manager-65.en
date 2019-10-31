@@ -39,15 +39,15 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
 
     * Open the **Process Thumbnails** step, and add *application/pdf* or *application/postscript* in the **Skip Mime Types** field under the **Thumbnails** tab as necessary.
 
-   ![](assets/skip_mime_types-2.png)
+   ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
     * In the **Web Enabled Image** tab, add *application/pdf* or *application/postscript* under **Skip List** depending upon your requirements.
 
-   ![](assets/web_enabled_imageskiplist.png)
+   ![web_enabled_imageskiplist](assets/web_enabled_imageskiplist.png)
 
 1. Open the **Rasterize PDF/AI Image Preview Rendition** step, and remove the MIME type for which you want to skip the default generation of preview image renditions. For example, remove the MIME type *application/pdf*, *application/postscript,* or *application/illustrator *from the **MIME Types** list.
 
-   ![](assets/process_arguments.png)
+   ![process_arguments](assets/process_arguments.png)
 
 1. Drag the **PDF Rasterizer Handler** step from the side panel to below the **Process Thumbnails** step.
 1. Configure the following arguments for the **PDF Rasterizer Handler** step:
@@ -74,11 +74,11 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
 1. To delete intermediate renditions, select **Delete Generated Rendition**.
 1. To let PDF Rasterize generate web renditions, select **Generate Web Rendition**.
 
-   ![](assets/generate_web_renditions1.png)
+   ![generate_web_renditions1](assets/generate_web_renditions1.png)
 
 1. Specify the settings in the **Web Enabled Image** tab.
 
-   ![](assets/web_enabled_image1.png)
+   ![web_enabled_image1](assets/web_enabled_image1.png)
 
 1. Save the workflow.
 1. To enable PDF Rasterizer to process PDF pages with PDF libraries, open the **DAM Process Subasset** model from the Workflow console.
@@ -107,11 +107,11 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
 1. To delete intermediate renditions, select **Delete Generated Rendition**.
 1. To let PDF Rasterize generate web renditions, select **Generate Web Rendition**.
 
-   ![](assets/generate_web_renditions.png)
+   ![generate_web_renditions](assets/generate_web_renditions.png)
 
 1. Specify the settings in the **Web Enabled Image** tab.
 
-   ![](assets/web_enabled_image-1.png)
+   ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Save the workflow.
 1. Upload a PDF or AI file to AEM Assets. PDF Rasterizer generates the thumbnails and web renditions for the file.

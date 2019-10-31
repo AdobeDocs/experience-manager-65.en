@@ -138,7 +138,7 @@ You can add an adaptive form as a child form multiple times. Ensure that the `bi
 Perform the following steps to add an adaptive form as a child form using asset browser.
 
 1. Open the parent form in edit mode.
-1. In the sidebar, click **Assets** ![](assets/assets-browser.png). Under Assets, select **Adaptive Form** from the drop-down.
+1. In the sidebar, click **Assets** ![assets-browser](assets/assets-browser.png). Under Assets, select **Adaptive Form** from the drop-down.
    [ ![Selecting adaptive form under Assets](assets/asset.png)](assets/asset-1.png)
 
 1. Drag-drop the adaptive form you want to add as a child form. 

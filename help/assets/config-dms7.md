@@ -27,7 +27,7 @@ With the new architecture, AEM is responsible for master assets and synchs with 
 1. After the renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
 1. After content is ready to be published and approved, it triggers the Dynamic Media service to push content out to delivery servers and cache content at the CDN.
 
-![](assets/chlimage_1-15.png)
+![chlimage_1-15](assets/chlimage_1-15.png)
 
 ## Enabling Dynamic Media in Scene7 mode {#enabling-dynamic-media-in-scene-mode}
 
@@ -99,7 +99,7 @@ To configure dynamic media cloud services:
    >
    >After an asset is activated, any updates are immediately published live to S7 Delivery.
 
-   ![](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Tap or click **Save**.
 1. To securely preview Dynamic Media content before it gets published, you will need to "whitelist" the AEM author instance to connect to Dynamic Media:
@@ -227,7 +227,7 @@ See [Uploading Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
 
-   ![](assets/mimetypes.png)
+   ![mimetypes](assets/mimetypes.png)
 
 1. Under the mimeTypes folder, select a mime type.
 1. On the right side of the CRXDE Lite page, in the lower portion:
@@ -251,25 +251,25 @@ You can add custom MIME types for unsupported formats in AEM Assets. To ensure t
 
 1. From AEM, click **Tools** &gt; **Operations** &gt; **Web Console**.
 
-   ![](assets/2019-08-02_16-13-14.png)
+   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
 1. A new browser tab opens to the **Adobe Experience Manager Web Console Configuration** page.
 
-   ![](assets/2019-08-02_16-17-29.png)
+   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
 1. On the page, scroll down to the name *Adobe CQ Scene7 Asset MIME type Service* as seen the following screenshot. To the right of the name, tap the "Edit the configuration values" (pencil icon).
 
-   ![](assets/2019-08-02_16-44-56.png)
+   ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
 
 1. On the **Adobe CQ Scene7 Asset MIME type Service** page, click any plus sign icon &lt;+&gt;. The location in the table where you click the plus sign to add the new mime type is trivial.
 
-   ![](assets/2019-08-02_16-27-27.png)
+   ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
 
 1. Type ` `DWG=image/vnd.dwg`` in the empty text field that you just added.
 
    Note that the example `* `DWG=image/vnd.dwg`*` is for illustration purposes only. The MIME type that you add here can be any other unsupported format.
 
-   ![](assets/2019-08-02_16-36-36.png)
+   ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
 1. In the lower-right corner of the page, click **Save**.
 
@@ -278,7 +278,7 @@ You can add custom MIME types for unsupported formats in AEM Assets. To ensure t
 1. Return to the browser tab that has your open AEM console.
 1. From AEM, click **Tools** &gt; **General** &gt; **CRXDE Lite**.
 
-   ![](assets/2019-08-02_16-55-41.png)
+   ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
 1. In the left rail, navigate to the following:
 
@@ -286,12 +286,12 @@ You can add custom MIME types for unsupported formats in AEM Assets. To ensure t
 
 1. Drag the mime type `image_vnd.dwg` and drop it directly above image_ in the tree as seen in the following screenshot.
 
-   ![](assets/crxdelite_cqdoc-14627.png)
+   ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
 1. With the mime type `image_vnd.dwg` still selected, from the **Properties** tab, in the **enabled** row, under the **Value** column header, double-click the value to open the **[!UICONTROL Value]** drop-down list.
 1. Type `false` in the field (or select **[!UICONTROL false]** from the drop-down list).
 
-   ![](assets/2019-08-02_16-60-30.png)
+   ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
 
 1. Near the upper-left corner of the CRXDE Lite page, click **[!UICONTROL Save All]**.
 
@@ -397,7 +397,7 @@ spin-01-01
 
 With this information, your Batch Set Type recipe might be created as follows:
 
-![](assets/chlimage_1-16.png)
+![chlimage_1-16](assets/chlimage_1-16.png)
 
 Grouping for the shared asset name part of the spinset is added to the **Match** field (as highlighted). The variable part of the asset name containing the row and column is added to the **Row** and **Column** fields, respectively.
 
@@ -487,7 +487,7 @@ The Granite Transit Workflow queue is used for the **DAM Update Asset** workflow
 
    Adobe recommends that 32 **Maximum Parallel Jobs** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7).
 
-   ![](assets/chlimage_1.jpeg)
+   ![chlimage_1](assets/chlimage_1.jpeg)
 
 1. Tap or click **Save**.
 
@@ -509,7 +509,7 @@ The Granite Workflow queue is used for non-transient workflows. In Dynamic Media
 
    For most use cases, the 0.5 default setting is sufficient.
 
-   ![](assets/chlimage_1-1.jpeg)
+   ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
 1. Tap or click **Save**.
 
@@ -528,7 +528,7 @@ The Scene7 Upload Connection setting synchronizes AEM assets to Dynamic Media Cl
 
    For most use cases, the setting of 2100 is sufficient.
 
-   ![](assets/chlimage_1-2.jpeg)
+   ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
 1. Tap or click **Save**.
 
@@ -582,7 +582,7 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
 1. In AEM, tap or click the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **General **&gt; **CRXDE Lite**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` to review the filters.
 
-   ![](assets/chlimage_1-17.png)
+   ![chlimage_1-17](assets/chlimage_1-17.png)
 
 1. To define the Mime Type for the filter, you can locate the Mime Type as follows:
 
@@ -590,7 +590,7 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
 
    The following graphic is an example of an asset's path to dc:format.
 
-   ![](assets/chlimage_1-18.png)
+   ![chlimage_1-18](assets/chlimage_1-18.png)
 
    Notice that the `dc:format` for the asset `Fiji Red.jpg` is `image/jpeg`.
 
@@ -627,7 +627,7 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
 
    The following graphic is an example of an asset's renditions.
 
-   ![](assets/chlimage_1-19.png)
+   ![chlimage_1-19](assets/chlimage_1-19.png)
 
    If you only wanted to replicate the original, then you would enter `+original`.
 

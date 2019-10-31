@@ -60,26 +60,26 @@ To create an new Asset Share page in the **Websites** console:
 
 1. Select the** Asset Share** page and click **Create**. The new page is created and the asset share page is listed in the **Websites** tab.
 
-![](assets/dam8.png)
+![dam8](assets/dam8.png)
 
 The basic page created using the Geometrixx DAM Asset Share template looks as follows:
 
-![](assets/screen_shot_2012-04-18at115456am.png)
+![screen_shot_2012-04-18at115456am](assets/screen_shot_2012-04-18at115456am.png)
 
 To customize your Asset Share page, you use elements from the sidekick and you also edit query builder properties. The page **Geometrixx Press Center** is a customized version of a page based on this template:
 
-![](assets/screen_shot_2012-04-19at123048pm.png)
+![screen_shot_2012-04-19at123048pm](assets/screen_shot_2012-04-19at123048pm.png)
 
 To create a new asset share page via the digital asset manager:
 
 1. In the digital asset manager, in **New**, select **New Asset Share**.
 1. In the **Title**, enter the name of the asset share page. If desired, enter a name for the URL.
 
-   ![](assets/screen_shot_2012-04-19at23626pm.png)
+   ![screen_shot_2012-04-19at23626pm](assets/screen_shot_2012-04-19at23626pm.png)
 
 1. Double-click the asset share page to open it and configure the page.
 
-   ![](assets/screen_shot_2012-04-19at24114pm.png)
+   ![screen_shot_2012-04-19at24114pm](assets/screen_shot_2012-04-19at24114pm.png)
 
    By default, when you create an Asset Share page from **New**, an Asset viewer and Asset editor are automatically created for you.
 
@@ -93,7 +93,7 @@ To add actions to the Asset Share page:
 
 The following actions are available:
 
-![](assets/assetshare2.bmp)
+![assetshare2](assets/assetshare2.bmp)
 
 <table>
  <tbody>
@@ -130,7 +130,7 @@ The following actions are available:
 
 1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
 
-![](assets/chlimage_1-159.png)
+![chlimage_1-159](assets/chlimage_1-159.png)
 
 #### Determining how Search Results are Presented {#determining-how-search-results-are-presented}
 
@@ -140,7 +140,7 @@ To change how search results are viewed:
 
 1. In the Asset Share page that you want to customize, click Search.
 
-![](assets/chlimage_1.bmp)
+![chlimage_1](assets/chlimage_1.bmp)
 
 1. Drag the appropriate lens to the top center of the page. In the Press Center, the lenses are already available. Users press the appropriate lens icon to display search results as desired.
 
@@ -153,11 +153,11 @@ The following lenses are available:
 
 #### Mosaic Lens {#mosaic-lens}
 
-![](assets/chlimage_1-160.png)
+![chlimage_1-160](assets/chlimage_1-160.png)
 
 #### List Lens {#list-lens}
 
-![](assets/chlimage_1-161.png)
+![chlimage_1-161](assets/chlimage_1-161.png)
 
 #### Customizing the Query Builder {#customizing-the-query-builder}
 
@@ -168,21 +168,21 @@ To customize the query builder:
 1. In the Asset Share page that you want to customize, click **Edit** in the Query Builder. By default, the **General** tab opens.
 1. Select the number of results per page, the path of the asset editor (if you have a customized asset editor) and the Actions title.
 
-![](assets/screen_shot_2012-04-23at15055pm.png)
+![screen_shot_2012-04-23at15055pm](assets/screen_shot_2012-04-23at15055pm.png)
 
 1. Click the **Paths** tab. Enter a path or multiple paths that the search will run. These paths are overwritten if the user uses the Paths predicate.
 
-![](assets/screen_shot_2012-04-23at15150pm.png)
+![screen_shot_2012-04-23at15150pm](assets/screen_shot_2012-04-23at15150pm.png)
 
 1. Enter another node type, if desired.
 
 1. In the **Query Builder URL** field, you can override or wrap the query builder and enter the new servlet URLs with the existing query builder component. In the **Feed URL** field, you can override the Feed URL as well.
 
-![](assets/screen_shot_2012-04-23at15313pm.png)
+![screen_shot_2012-04-23at15313pm](assets/screen_shot_2012-04-23at15313pm.png)
 
 1. In the **Text** field, enter the text you want to appear for results and page numbers of results. Click **OK** when finished making changes.
 
-![](assets/screen_shot_2012-04-23at15300pm.png)
+![screen_shot_2012-04-23at15300pm](assets/screen_shot_2012-04-23at15300pm.png)
 
 #### Adding Predicates {#adding-predicates}
 
@@ -192,11 +192,11 @@ To add predicates:
 
 1. In the Asset Share page that you want to customize, click **Search**.
 
-![](assets/assetshare3.bmp)
+![assetshare3](assets/assetshare3.bmp)
 
 1. Drag the appropriate predicates to the Asset Share page underneath the query builder. Doing so creates the appropriate fields.
 
-![](assets/assetshare4.bmp)
+![assetshare4](assets/assetshare4.bmp)
 
 The following predicates are available:
 
@@ -211,7 +211,7 @@ For more information, see the [predicate javadocs](https://helpx.adobe.com/exper
 
 1. To configure the predicate further, double-click it. For example, when you open the Path Predicate, you need to assign the root path.
 
-![](assets/screen_shot_2012-04-23at15640pm.png)
+![screen_shot_2012-04-23at15640pm](assets/screen_shot_2012-04-23at15640pm.png)
 
 ## Creating and Configuring an Asset Editor Page {#creating-and-configuring-an-asset-editor-page}
 
@@ -230,15 +230,15 @@ To create an Asset Editor page:
 1. In the **Websites** tab, navigate to the place where you want to create an asset editor page and click **New**.
 1. Select **Geometrixx Asset Editor** and click **Create**. The new page is created and the page is listed in the **Websites** tab.
 
-![](assets/screen_shot_2012-04-23at15858pm.png)
+![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
 The basic page created using the Geometrixx Asset Editor template looks as follows:
 
-![](assets/assetshare5.bmp)
+![assetshare5](assets/assetshare5.bmp)
 
 To customize your Asset Editor page, use elements from the sidekick. The Asset Editor page that is accessed from the **Geometrixx Press Center** is a customized version of a page based on this template:
 
-![](assets/assetshare6.bmp)
+![assetshare6](assets/assetshare6.bmp)
 
 #### Setting which Asset Editor opens from an Asset Share page {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
@@ -248,13 +248,13 @@ To set the Asset Editor page:
 
 1. In the Asset Share page, click **Edit** next to the Query Builder.
 
-![](assets/screen_shot_2012-04-23at20123pm.png)
+![screen_shot_2012-04-23at20123pm](assets/screen_shot_2012-04-23at20123pm.png)
 
 1. Click the **General** tab if it is not already selected.
 
 1. In the **Path of Asset Editor** field, enter the path to the asset editor you want the Asset Share page to open assets in and click **OK**.
 
-![](assets/screen_shot_2012-04-23at21653pm.png)
+![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
 #### Adding Asset Editor Components {#adding-asset-editor-components}
 
@@ -274,7 +274,7 @@ To add asset editor components:
 >
 >When designing the asset editor page, you create components that are either read-only or editable. Users know a field can be edited if an image of a pencil appears in that component. By default, most components are set up as read-only.
 
-| **Component** |**Description ** |
+| **Component** |**Description** |
 |---|---|
 | **Metadata Form and Text Field** |Lets you add additional metadata to an asset and perform an action, such as submitting, on that asset. |
 | **Sub Assets** |Lets you customize sub-assets. |
@@ -282,7 +282,7 @@ To add asset editor components:
 | **Thumbnail** |Shows a thumbnail of the asset, its filename, and lets you add an alternate text. You can add asset editor actions here as well. |
 | **Title** |Displays the asset title, which can be customized. |
 
-![](assets/screen_shot_2012-04-23at22743pm.png)
+![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
 
 #### Metadata Form and Text Field - Configuring the View Metadata Component {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
@@ -290,31 +290,31 @@ The Metadata Form is a form that includes a start and end action. In between, yo
 
 1. Create a start action by clicking **Edit** in the Start area of the form. You can enter a Box title, if desired. By default, the Box title is **Metadata**. Select the Client Validation check box if you want the java-script client code for validation generated.
 
-![](assets/screen_shot_2012-04-23at22911pm.png)
+![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
 1. Create an End action by clicking **Edit** in the End area of the form. For example, you may want to create a **Submit** button to allow users to submit their metadata changes. Optionally, you can add a **Reset** button that resets the metadata to its original state.
 
-![](assets/screen_shot_2012-04-23at23138pm.png)
+![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
 1. In between the **Form Start** and the **Form End**, drag Metadata Text Fields to the form. Users populate metadata into these text fields, which they can submit or complete another action on.
 
 1. Double-click the field name, for example, **Title** to open the metadata field and make changes. In the **General** tab of the** Edit Component** window, you define the namespace and the field label as well as type, for example, **dc:title**.
 
-![](assets/screen_shot_2012-04-23at23305pm.png)
+![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
 See [Customizing and Extending AEM Assets](/help/assets/extending-assets.md) for information on modifying the namespaces available in the metadata form.
 
 1. Click the **Constraints** tab. Here you can select whether a field is required and if necessary, add any constraints.
 
-![](assets/screen_shot_2012-04-23at23435pm.png)
+![screen_shot_2012-04-23at23435pm](assets/screen_shot_2012-04-23at23435pm.png)
 
 1. Click the **Display** tab. Here, you can enter a new width and number of rows for the metadata field. Select the **Field is read only** checkbox to allow users to edit the metadata.
 
-![](assets/screen_shot_2012-04-23at23446pm.png)
+![screen_shot_2012-04-23at23446pm](assets/screen_shot_2012-04-23at23446pm.png)
 
 The following is an example of a Metadata form with various fields:
 
-![](assets/chlimage_1-162.png)
+![chlimage_1-162](assets/chlimage_1-162.png)
 
 On the Asset Editor page, users can then enter values into the metadata fields (if they are editable) and perform the end action (for example, submitting the changes).
 
@@ -322,71 +322,71 @@ On the Asset Editor page, users can then enter values into the metadata fields (
 
 The Sub Assets component is where you can view and select sub-assets. You can determine what names appear under the [main asset](/help/assets/assets.md#what-are-digital-assets) and sub-assets.
 
-![](assets/screen_shot_2012-04-23at24025pm.png)
+![screen_shot_2012-04-23at24025pm](assets/screen_shot_2012-04-23at24025pm.png)
 
 Double-click the Sub Assets component to open the sub assets dialog where you can change the titles for the main asset and any sub assets. The default values appear below the corresponding field.
 
-![](assets/screen_shot_2012-04-23at23907pm.png)
+![screen_shot_2012-04-23at23907pm](assets/screen_shot_2012-04-23at23907pm.png)
 
 The following is an example of a populated Sub Assets component:
 
-![](assets/screen_shot_2012-04-23at24442pm.png)
+![screen_shot_2012-04-23at24442pm](assets/screen_shot_2012-04-23at24442pm.png)
 
 For example, if you select a sub asset, note how the component displays the appropriate page and the Box title changes from Sub Assets to Siblings.
 
-![](assets/screen_shot_2012-04-23at24552pm.png)
+![screen_shot_2012-04-23at24552pm](assets/screen_shot_2012-04-23at24552pm.png)
 
 #### Tags {#tags}
 
 The Tags component is a component where users can assign existing tags to an asset, which helps later in organization and retrieval. You can make this component read-only, so users cannot add tags, but only view them.
 
-![](assets/screen_shot_2012-04-23at25031pm.png)
+![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
 Double-click the Tags component to open the tags dialog where you can change the title from Tags, if desired, and where you can select the allocated namespaces. To make this field editable, clear the **Hide Edit** **button** check box. By default, tags are editable.
 
-![](assets/screen_shot_2012-04-23at24731pm.png)
+![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 
 If users can edit tags, then they can click the pencil to add tags by selecting them from the Tags drop-down menu.
 
-![](assets/screen_shot_2012-04-23at25150pm.png)
+![screen_shot_2012-04-23at25150pm](assets/screen_shot_2012-04-23at25150pm.png)
 
 The following is a populated Tags component:
 
-![](assets/screen_shot_2012-04-23at25244pm.png)
+![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
 #### Thumbnail {#thumbnail}
 
 The Thumbnail component is where the asset displays the selected thumbnail (for many of the formats the thumbnail is extracted automatically). In addition, the component displays the filename, and [actions that you can modify](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
-![](assets/screen_shot_2012-04-23at25452pm.png)
+![screen_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
 
 Double-click the thumbnail component to open the thumbnail dialog where you can change the alt text. By default, the thumbnail alt text defaults to **Click to download** asset.
 
-![](assets/screen_shot_2012-04-23at25604pm.png)
+![screen_shot_2012-04-23at25604pm](assets/screen_shot_2012-04-23at25604pm.png)
 
 The following is an example of a populated Thumbnail component:
 
-![](assets/screen_shot_2012-04-23at34815pm.png)
+![screen_shot_2012-04-23at34815pm](assets/screen_shot_2012-04-23at34815pm.png)
 
 #### Title {#title}
 
 The Title component displays the title of the asset and a description.
 
-![](assets/chlimage_1-163.png)
+![chlimage_1-163](assets/chlimage_1-163.png)
 
 By default, it is in read-only mode so users cannot edit it. To make it editable, double-click the component and clear the **Hide edit button** checkbox. In addition, enter a title for multiple assets.
 
-![](assets/screen_shot_2012-04-23at35100pm.png)
+![screen_shot_2012-04-23at35100pm](assets/screen_shot_2012-04-23at35100pm.png)
 
 If the Title can be edited, you can add a title and description by clicking the Pencil to open the **Asset Properties** window. In addition, you can turn the asset on and off by selecting the date and time.
 
 When users edit the Title by clicking the Pencil icon, they can change the **Title**, **Description**, and enter **On** and **Off Times** to turn the asset on and off.
 
-![](assets/screen_shot_2012-04-23at35241pm.png)
+![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
 The following is an example of a populated Title component:
 
-![](assets/chlimage_1-164.png)
+![chlimage_1-164](assets/chlimage_1-164.png)
 
 #### Adding Asset Editor Actions {#adding-asset-editor-actions}
 
@@ -396,7 +396,7 @@ To add actions to the Asset Editor page:
 
 1. In the Asset Editor page that you want to customize, click **Asset Editor** in the sidekick.
 
-![](assets/screen_shot_2012-04-23at35515pm.png)
+![screen_shot_2012-04-23at35515pm](assets/screen_shot_2012-04-23at35515pm.png)
 
 The following actions are available:
 
@@ -411,7 +411,7 @@ The following actions are available:
 
 1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
 
-![](assets/chlimage_1-165.png)
+![chlimage_1-165](assets/chlimage_1-165.png)
 
 ## Multi-Editing Assets with the Asset Editor page {#multi-editing-assets-with-the-asset-editor-page}
 

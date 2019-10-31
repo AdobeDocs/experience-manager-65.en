@@ -129,7 +129,7 @@ Use the following steps to upload the custom logo file to CRX:
 
    jcr:content's properties appear. 
 
-   ![](assets/jcrcontentproperties.png)
+   ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
 1. Double-click the **jcr:data **property.
 

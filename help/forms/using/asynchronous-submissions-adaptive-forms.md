@@ -24,7 +24,7 @@ Read on for details about asynchronous submission in adaptive forms.
 
 To configure asynchronous submission for an adaptive form:
 
-1. In adaptive form authoring mode, select the Form Container object and tap ![](assets/cmppr1.png) to open its properties.
+1. In adaptive form authoring mode, select the Form Container object and tap ![cmppr1](assets/cmppr1.png) to open its properties.
 1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
 1. In the **[!UICONTROL On Submit]** section, select one of the following options to perform on successful form submission.
 
@@ -32,7 +32,7 @@ To configure asynchronous submission for an adaptive form:
     
     * **[!UICONTROL Show Message]**: Displays a message on form submission. You can write a message in the text field below the Show Message option. The text field support rich text formatting.
 
-1. Tap ![](assets/check-button1.png) to save the properties.
+1. Tap ![check-button1](assets/check-button1.png) to save the properties.
 
 ## How asynchronous submission works {#how-asynchronous-submission-works}
 
@@ -94,7 +94,7 @@ Form developers and authors can write rules, at form level, in code editor to ov
 
 Perform the following steps to write rules in code editor to handle success and error events.
 
-1. Open the adaptive form in authoring mode, select any form object, and tap ![](assets/edit-rules1.png) to open the rule editor.
+1. Open the adaptive form in authoring mode, select any form object, and tap ![edit-rules1](assets/edit-rules1.png) to open the rule editor.
 1. Select **[!UICONTROL Form]** in the Form Objects tree and tap **[!UICONTROL Create]**.
 1. Select **[!UICONTROL Code Editor]** from the mode selection drop-down.
 1. In the code editor, tap **[!UICONTROL Edit Code]**. Tap **[!UICONTROL Edit]** on the confirmation dialog.

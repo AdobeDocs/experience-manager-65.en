@@ -29,7 +29,7 @@ AEM Forms is a powerful enterprise-class platform and the data capture (adaptive
 
 AEM Forms add-on package is an application deployed onto AEM. You require only a minimum of one AEM Author and AEM Publish instance to run AEM Forms data capture capabilities. The following topology is suggested to run AEM Forms AEM Forms data capture capabilities. For detailed information about the topology, see [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![](assets/recommended-topology.png)
+![recommended-topology](assets/recommended-topology.png)
 
 ## System Requirements {#system-requirements}
 

@@ -38,7 +38,7 @@ Follow the steps below to implement the Retail Inventory Activation use case:
     1. Navigate to the ContextHubDemo Google Sheet.
     1. Add three columns (Red, Green, and Blue) with corresponding values for three different sweatshirts.
 
-   ![](assets/screen_shot_2019-05-06at101755am.png)
+   ![screen_shot_2019-05-06at101755am](assets/screen_shot_2019-05-06at101755am.png)
 
 1. **Configuring the Audiences as per the requirements**
 
@@ -66,15 +66,15 @@ Follow the steps below to implement the Retail Inventory Activation use case:
 
     1. Select **googlesheets/value/1/0** from the drop-down in **Second Property name**
 
-   ![](assets/screen_shot_2019-05-06at102600am.png)
+   ![screen_shot_2019-05-06at102600am](assets/screen_shot_2019-05-06at102600am.png)
 
    Similarly, edit and add comparison property rules to **For_Blue** segment as shown in the figure below:
 
-   ![](assets/screen_shot_2019-05-06at103728am.png)
+   ![screen_shot_2019-05-06at103728am](assets/screen_shot_2019-05-06at103728am.png)
 
    Similarly, edit and add comparison property rules to** For_Green **segment as shown in the figure below:
 
-   ![](assets/screen_shot_2019-05-06at103418am.png)
+   ![screen_shot_2019-05-06at103418am](assets/screen_shot_2019-05-06at103418am.png)
 
    >[!NOTE]
    >
@@ -82,13 +82,13 @@ Follow the steps below to implement the Retail Inventory Activation use case:
 
 1. Navigate and select your **DataDrivenRetail **channel (a sequencel channel) and click **Edit** from the action bar.
 
-   ![](assets/screen_shot_2019-05-06at104257am.png)
+   ![screen_shot_2019-05-06at104257am](assets/screen_shot_2019-05-06at104257am.png)
 
    >[!CAUTION]
    >
    >You should have set up your **ContextHub** **Configurations** using the channel **Properties** --&gt; **Personalization** tab.
 
-   ![](assets/screen_shot_2019-05-06at105214am.png)
+   ![screen_shot_2019-05-06at105214am](assets/screen_shot_2019-05-06at105214am.png)
 
    >[!NOTE]
    >
@@ -101,22 +101,22 @@ Follow the steps below to implement the Retail Inventory Activation use case:
 
     1. Click **Start Targeting**.
 
-   ![](assets/screen_shot_2019-05-06at121253pm.png)
+   ![screen_shot_2019-05-06at121253pm](assets/screen_shot_2019-05-06at121253pm.png)
 
    >[!NOTE]
    >
    >Before you start targeting, you must add the segments (**For_Green**, **For_Red**, and **For_Blue**) by clicking on **+ Add Experience Targeting** from the side rail as shown in the figure below.
 
-   ![](assets/screen_shot_2019-05-06at123554pm.png)
+   ![screen_shot_2019-05-06at123554pm](assets/screen_shot_2019-05-06at123554pm.png)
 
 1. Add the images to all the three different screnarios as shown below.
 
-   ![](assets/retail_targeting.gif)
+   ![retail_targeting](assets/retail_targeting.gif)
 
 1. **Checking the Preview**
 
     1. Click **Preview.** Also, open your Google Sheet and update its value.
     1. Change the value for all three different columns and you will notice the display image updates as per the highest value in inventory.
 
-   ![](assets/retail_result.gif)
+   ![retail_result](assets/retail_result.gif)
 

@@ -21,8 +21,8 @@ docset: aem65
 >
 >The [Assets HTTP API](/help/assets/mac-api-assets.md) encompasses the:
 >
->* Assets REST API >
->    * including support for Content Fragments
+>* Assets REST API
+>* including support for Content Fragments
 >
 >The current implementation of AEM Assets HTTP API is REST.
 

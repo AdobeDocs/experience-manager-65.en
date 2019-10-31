@@ -70,19 +70,19 @@ To create an Experience Fragment:
 
 1. Select Experience Fragments from the Global Navigation.
 
-   ![](assets/xf-01.png)
+   ![xf-01](assets/xf-01.png)
 
 1. Select **Create**. You can create **Folders** and/or **Experience Fragments**.
 
    Creating folders allows you to create a meaningful structure for your Experience Fragments.
 
-   ![](assets/xf-02.png)
+   ![xf-02](assets/xf-02.png)
 
 1. From the required folder, select **Create** then **Experience Fragment** to open the **Create Experience Fragment** wizard.
 
    Select the required **Template**, then **Next**:
 
-   ![](assets/xf-03.png)
+   ![xf-03](assets/xf-03.png)
 
    >[!NOTE]
    >
@@ -92,7 +92,7 @@ To create an Experience Fragment:
 
    A **Title** is mandatory. If the **Name** is left blank it will be derived from the **Title**.
 
-   ![](assets/xf-04.png)
+   ![xf-04](assets/xf-04.png)
 
 1. Click **Create**.
 
@@ -114,7 +114,7 @@ The following example procedure illustrates how to create a teaser for a product
 
 1. Drag and drop a **Teaser** from the [Components Browser](/help/sites-authoring/author-environment-tools.md#components-browser).
 
-   ![](assets/xf-05.png)
+   ![xf-05](assets/xf-05.png)
 
 1. Select ** [Configure](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** from the component toolbar.
 1. Add the **Asset** and define the **Properties** as required.
@@ -128,7 +128,7 @@ You can create variations of your Experience Fragment, depending on your needs:
 1. Open your fragment for [editing](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
 1. Open the **Variations** tab.
 
-   ![](assets/xf-authoring-06.png)
+   ![xf-authoring-06](assets/xf-authoring-06.png)
 
 1. **Create** allows you to create:
 
@@ -143,11 +143,11 @@ You can create variations of your Experience Fragment, depending on your needs:
     * **Description**
     * **Variation tags**
 
-   ![](assets/xf-06.png)
+   ![xf-06](assets/xf-06.png)
 
 1. Confirm with **Done** (tick icon), the new variation will be shown in the panel:
 
-   ![](assets/xf-07.png)
+   ![xf-07](assets/xf-07.png)
 
 ## Using your Experience Fragment {#using-your-experience-fragment}
 
@@ -159,14 +159,14 @@ You can now use your Experience Fragment when authoring your pages:
 
 1. Create an instance of the Experience Fragment component, by dragging the component from the Components browser to the page paragraph system:
 
-   ![](assets/xf-08.png)
+   ![xf-08](assets/xf-08.png)
 
 1. Add the actual Experience Fragment to the component instance; either:
 
     * Drag the required fragment from the Assets Browser and drop onto the component
     * Select **Configure** from the component toolbar and specify the fragment to use, confirm with **Done** (tick)
 
-   ![](assets/xf-09.png)
+   ![xf-09](assets/xf-09.png)
 
    >[!NOTE]
    >
@@ -182,19 +182,19 @@ To create a new Building Block:
 
 1. In the Experience Fragment editor, select the components you want to re-use:
 
-   ![](assets/xf-10.png)
+   ![xf-10](assets/xf-10.png)
 
 1. From the components toolbar, select **Convert to building block**:
 
-   ![](assets/xf-authoring-13-icon.png)
+   ![xf-authoring-13-icon](assets/xf-authoring-13-icon.png)
 
 1. Enter the name of the **Building Block**, and confirm with **Convert**:
 
-   ![](assets/xf-11.png)
+   ![xf-11](assets/xf-11.png)
 
 1. The **Building Block** will be shown in the tab, and can be selected in the paragraph system:
 
-   ![](assets/xf-12.png)
+   ![xf-12](assets/xf-12.png)
 
 #### Managing a Building Block {#managing-a-building-block}
 
@@ -204,7 +204,7 @@ Your building block is visible in the **Building Blocks** tab. For each block, t
 * Rename
 * Delete
 
-![](assets/xf-13.png)
+![xf-13](assets/xf-13.png)
 
 #### Using a Building Block {#using-a-building-block}
 
@@ -216,11 +216,11 @@ Details of your fragment can be seen:
 
 1. Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):
 
-   ![](assets/ef-03.png)
+   ![ef-03](assets/ef-03.png)
 
 1. When you open the **Properties** of the Experience Fragment:
 
-   ![](assets/ef-04.png)
+   ![ef-04](assets/ef-04.png)
 
    The properties are available in various tabs:
 
@@ -231,7 +231,7 @@ Details of your fragment can be seen:
    >
    >If you **Open Properties** when editing an Experience Fragment, the appropriate [Page Properties](/help/sites-authoring/editing-page-properties.md) are shown.
 
-   ![](assets/ef-05.png)
+   ![ef-05](assets/ef-05.png)
 
     * **Basic**
 
@@ -281,11 +281,11 @@ For export to Adobe Target, JSON can also be used. See [Target Integration with 
 
 1. Select **Configuration options**:
 
-   ![](assets/ef-02.png)
+   ![ef-02](assets/ef-02.png)
 
 1. Specify the required templates in the **Configure Experience Fragments** dialog:
 
-   ![](assets/ef-01.png)
+   ![ef-01](assets/ef-01.png)
 
    >[!NOTE]
    >

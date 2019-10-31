@@ -602,7 +602,7 @@ Pages created from editable templates:
     * `cq:templateType`
       Provides a reference to the template type.
 
-![](assets/chlimage_1-71.png)
+![chlimage_1-71](assets/chlimage_1-71.png)
 
 The above diagram shows how templates, content, and components interrelate:
 

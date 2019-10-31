@@ -13,7 +13,7 @@ docset: aem65
 
 # Tutorial: Create form data model {#tutorial-create-form-data-model}
 
- ![](assets/04-create-form-data-model-main.png)
+ ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
 This tutorial is a step in the [Create Your First Adaptive Form](../../forms/using/create-your-first-adaptive-form.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
@@ -32,7 +32,7 @@ This tutorial walks you through the steps to prepare, create, configure, and ass
 
 The form data model will look similar to the following:
 
-![](assets/form-data-model_l.png)
+![form-data-model_l](assets/form-data-model_l.png)
 
 **A.** Configured data sources **B.** Data source schemas **C.** Available services **D.** Data model objects **E.** Configured services
 
@@ -79,7 +79,7 @@ Do the following to configure your MySQL database:
 
    A configuration similar to the following is created.
 
-   ![](assets/relational-database-data-source-configuration.png)
+   ![relational-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
 
 ## Step 2: Create form data model {#create-fdm}
 
@@ -92,7 +92,7 @@ Do the following to create form data model:
 1. In the Create Form Data Model dialog, specify a **name **for the form data model. For example, **customer-shipping-billing-details**. Tap **Next**.
 1. The select datasource screen lists all configured data sources. Select **WeRetailMySQL** data source and tap **Create**.
 
-   ![](assets/data-source-selection.png)
+   ![data-source-selection](assets/data-source-selection.png)
 
 The **customer-shipping-billing-details** form data model is created.
 
@@ -110,7 +110,7 @@ Do the following to configure the form data model:
 
    The selected data source **WeRetailMySQL** is configured in the form data model.
 
-   ![](assets/default-fdm.png)
+   ![default-fdm](assets/default-fdm.png)
 
 1. Expand the WeRailMySQL data source tree. Select the following data model objects and services from **weretail** **&gt; customerdetails** schema to form data model:
 
@@ -139,23 +139,23 @@ Do the following to configure the form data model:
 1. Configure read and write services for the data model object.
 
     1. Select the **customerdetails** data model object and tap **Edit Properties**.
-    1. Select **get** from the Read Service drop-down. The **id** argument, which is the primary key in the customerdetails data model object is added automatically. Tap ![](assets/aem_6_3_edit.png) and configure the argument as follows.
+    1. Select **get** from the Read Service drop-down. The **id** argument, which is the primary key in the customerdetails data model object is added automatically. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) and configure the argument as follows.
 
-       ![](assets/read-default.png)
+       ![read-default](assets/read-default.png)
 
     1. Similarly, select **update** as the Write Service. The **customerdetails** object is added as an argument automatically. The argument is configured as follows.
 
-       ![](assets/write-default.png)
+       ![write-default](assets/write-default.png)
 
        Add and configure the **id** argument as follows.
 
-       ![](assets/id-arg.png)
+       ![id-arg](assets/id-arg.png)
 
     1. Tap **Done** to save the data model object properties. Then, tap **Save** to save the form data model.
 
        The **get** and **update** services are added as default services for the data model object.
 
-       ![](assets/data-model-object.png)
+       ![data-model-object](assets/data-model-object.png)
 
 1. Go to the **Services** tab and configure **get** and **update** services.
 
@@ -176,7 +176,7 @@ Do the following to configure the form data model:
 
        Tap **Done**. Service to retrieve customer details from the MySQL database is configured.
 
-       ![](assets/shiiping-address-retrieval.png)
+       ![shiiping-address-retrieval](assets/shiiping-address-retrieval.png)
 
     1. Select the **update** service and tap **Edit Properties**. The properties dialog opens.
 
@@ -197,7 +197,7 @@ Do the following to configure the form data model:
 
        Tap **Done**. The **update** service to update customer details in the MySQL database is configured.
 
-       ![](assets/shiiping-address-update.png)
+       ![shiiping-address-update](assets/shiiping-address-update.png)
 
 The data model object and services in the form data model are configured. You can now test the form data model.
 
@@ -213,15 +213,15 @@ Do the following to run the test:
 
    The customer details associated with the specified id are fetched and displayed in the **Output** section as shown below.
 
-   ![](assets/test-read-model.png)
+   ![test-read-model](assets/test-read-model.png)
 
 1. Similarly, you can test the Write model object and services.
 
    In the following example, the update service successfully updates the address details for the id 7102715 in the database.
 
-   ![](assets/test-write-model.png)
+   ![test-write-model](assets/test-write-model.png)
 
    Now, if you test the read model service again for the id 7107215, it will fetch and display the updated customer details as shown below.
 
-   ![](assets/read-updated.png)
+   ![read-updated](assets/read-updated.png)
 

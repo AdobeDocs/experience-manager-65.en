@@ -40,7 +40,7 @@ If the criteria are not met, then a TarMK active/standby deployment is recommend
 
 Below is a minimal deployment for AEM on MongoDB. For simplicity, SSL termination and HTTP Proxy components have been generalised. It consists of a single MongoBD replica set, with one primary and two secondaries.
 
-![](assets/chlimage_1-4.png)
+![chlimage_1-4](assets/chlimage_1-4.png)
 
 A minimal deployment requires 3 `mongod` instances configured as a replica set. One instance will be elected primary with the other instances being secondaries, with the election managed by `mongod`. Attached to each instance is a local disk. In order for the cluster to support the load, a minimum throughoput of 12MB/s with more than 3000 I/O Operations per Second (IOPS) is recommended.
 

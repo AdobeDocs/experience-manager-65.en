@@ -36,7 +36,7 @@ Follow the steps below to implement the Travel Center Local Temperature Activati
     1. Navigate to the ContextHubDemo Google Sheet.
     1. Add a column with **Heading1** with corresponding value for temperature.
 
-   ![](assets/screen_shot_2019-05-08at112911am.png)
+   ![screen_shot_2019-05-08at112911am](assets/screen_shot_2019-05-08at112911am.png)
 
 1. **Configuring the segments in Audiences as per the requirements**
 
@@ -66,22 +66,22 @@ Follow the steps below to implement the Travel Center Local Temperature Activati
    >
    >Your channel should already have a default image and the Audiences should be pre-configured as described in [**Configuring ContextHub in AEM Screens**](/help/screens/configuring-context-hub.md).
 
-   ![](assets/screen_shot_2019-05-08at113022am.png)
+   ![screen_shot_2019-05-08at113022am](assets/screen_shot_2019-05-08at113022am.png)
 
    >[!CAUTION]
    >
    >You should have set up your **ContextHub** **Configurations** using the channel **Properties** --&gt; **Personalization** tab.
 
-   ![](assets/screen_shot_2019-05-08at114106am.png)
+   ![screen_shot_2019-05-08at114106am](assets/screen_shot_2019-05-08at114106am.png)
 
 1. Select **Targeting** from the editor and select **Brand** and the **Activity** from the drop-down menu and click **Start Targeting**.
 
-   ![](assets/new_activity3.gif)
+   ![new_activity3](assets/new_activity3.gif)
 
 1. **Checking the Preview**
 
     1. Click **Preview.** Also, open your Google Sheet and update its value.
     1. Change the value to less than 50, you should be able to view the an image of summer drinks. If the value in the Google Sheet is 50 or greater than should be able to view the an image of hot drink.
 
-    ![](assets/result3.gif)
+    ![result3](assets/result3.gif)
 

@@ -35,7 +35,7 @@ Activities are displayed with a label describing what kind of activity is define
 * A/B - Adobe Target A/B testing
 * AEM - Adobe Experience Manager targeting (contexthub or clientcontext driven)
 
-![](assets/chlimage_1-114.png)
+![chlimage_1-114](assets/chlimage_1-114.png)
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ When you create a brand using the Activities console, it also appears in the [Of
 
 1. In the Navigation console, click or tap **Personalization**. Click or tap **Activities**.
 
-   ![](assets/screen_shot_2018-03-21at151821.png)
+   ![screen_shot_2018-03-21at151821](assets/screen_shot_2018-03-21at151821.png)
 
 1. In the Activities console, click or tap **Create **then** Create Brand**.
 1. Select the brand template and click or tap **Next**.
@@ -149,7 +149,7 @@ To publish or unpublish activities:
 1. Click or tap the brand and then the area that contains the activity you want to publish or unpublish.
 1. Tap or click the icon next to the activity or activities you want to publish or unpublish.
 
-   ![](assets/screen-shot_2019-03-05at123846.png)
+   ![screen-shot_2019-03-05at123846](assets/screen-shot_2019-03-05at123846.png)
 
 1. To publish, tap or click **Publish**. To unpublish, tap or click **Unpublish**. Your activity or activities are published or unpublished and their status changes in the Activities console (may require a refresh).
 
@@ -170,7 +170,7 @@ To view activity performance and convert winning experiences:
 1. Click or tap the brand for which you want to see activities.
 1. Select the activity and click or tap **View Properties **and click the **Reports** tab and select the activity that you want to view performance for/convert winning experiences for. Performance data is displayed.
 
-   ![](assets/chlimage_1-115.png)
+   ![chlimage_1-115](assets/chlimage_1-115.png)
 
 1. Click or tap the **Push winner **link** **to push that experience as the default experience.
 
@@ -179,7 +179,7 @@ To view activity performance and convert winning experiences:
     * It disables the current activity
     * Modifies all pages and replaces the targeted content with the actual content of the winning experience. The content of the winning experience becomes part of the normal page **without** targeting.
 
-   ![](assets/chlimage_1-116.png)
+   ![chlimage_1-116](assets/chlimage_1-116.png)
 
    A winning experience is the experience that generates more Lift in the reports, which is based on the conversion rate.
 
@@ -200,7 +200,7 @@ When an activity is synchronized, a corresponding campaign is created in Adobe T
 * Activities on the publish instance have the same name as the corresponding Adobe Target campaign.
 * Activities on the author instance correspond with Target campaigns of the same name with the `_author` suffix.
 
-![](assets/chlimage_1-117.png)
+![chlimage_1-117](assets/chlimage_1-117.png)
 
 The _author activities are synchronized immediately when the activity is modified. Immediate synchronization enables the simulation of activities with Client Context or ContextHub.
 

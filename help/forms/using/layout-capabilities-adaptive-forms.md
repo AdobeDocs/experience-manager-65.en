@@ -123,7 +123,7 @@ The Mobile Layouts are available at `/libs/fd/af/layouts/mobile/` location. The 
 
 List of Mobile Layouts in adaptive forms
 
-When using a mobile layout, the form menu, to access various form panels, is available by tapping ![](assets/aem6forms_form_menu.png) icon.
+When using a mobile layout, the form menu, to access various form panels, is available by tapping ![aem6forms_form_menu](assets/aem6forms_form_menu.png) icon.
 
 ### Layout with panel titles in the form header {#layout-with-panel-titles-in-the-form-header}
 

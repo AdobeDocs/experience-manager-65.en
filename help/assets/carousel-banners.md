@@ -21,17 +21,17 @@ Creating and modifying content featured in promotional banners can be time-consu
 
 Carousel Banners are designated by a banner with the word **CAROUSELSET**:
 
-![](assets/chlimage_1-191.png)
+![chlimage_1-191](assets/chlimage_1-191.png)
 
 On your website, a carousel banner can look as follows:
 
-![](assets/chlimage_1-192.png)
+![chlimage_1-192](assets/chlimage_1-192.png)
 
 Here you can navigate through the images (by clicking on the numbers). In addition, the slides automatically rotate based on a time interval you can customize. Images that you add in the carousel banner support both hotspots and image maps, where users can either tap or to go to a hyperlink or access a quick view window.
 
 In this example, a user has tapped or clicked an image map and accessed the quick view window for gloves:
 
-![](assets/chlimage_1-193.png)
+![chlimage_1-193](assets/chlimage_1-193.png)
 
 ## Watch how carousel banners are created {#watch-how-carousel-banners-are-created}
 
@@ -314,7 +314,7 @@ To add hotspots to an image banner:
 
       **Note**: Be aware that the social media sharing tools in Carousel Banner are not supported when you embed the viewer in an Experience Fragment.  To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
 
-   ![](assets/experience_fragment-carouselbanner.png)
+   ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    You can also preview what the carousel banner will look like. See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners).
 
@@ -385,7 +385,7 @@ To preview carousel banners:
 1. Tap **Edit**.
 1. In the viewer presets list in the right-hand corner of the toolbar, select a viewer to preview the carousel banner.
 
-   ![](assets/experience_fragment-carouselbanner-viewerdropdown.png)
+   ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
 1. Tap **Preview**.
 1. Tap the hotspots or image maps on the image to test their associated actions.

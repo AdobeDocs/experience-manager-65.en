@@ -19,7 +19,7 @@ Image Sets give users an integrated viewing experience, where users can see diff
 
 Image Sets are designated by a banner with the word **IMAGESET**. In addition, if the Image Set is published, then the publish date, indicated by the **World** icon is on the banner along with the last modification date, indicated by the **Pencil** icon displays.
 
-![](assets/chlimage_1-133.png)
+![chlimage_1-133](assets/chlimage_1-133.png)
 
 Within the image set, you can also create swatches by creating an Image Set and adding thumbnails.
 
@@ -122,11 +122,11 @@ To create an Image Set:
 
    You can also create the set from inside a folder that contains your assets.
 
-   ![](assets/6_5_imagesets-createpulldown.png)
+   ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
 1. In the Image Set Editor page, in the **Title** field, enter a name for the image set. The name appears in the banner across the Image Set. Optionally, enter a description.
 
-   ![](assets/6_5_imageset-creatingnewset.png)
+   ![6_5_imageset-creatingnewset](assets/6_5_imageset-creatingnewset.png)
 
 1. Do either one of the following:
 
@@ -140,13 +140,13 @@ To create an Image Set:
 
    See [Working with Selectors.](/help/assets/working-with-selectors.md)
 
-   ![](assets/6_5_imageset-addingassets.png)
+   ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 
 1. When you add assets to your set, they are automatically added in alphanumeric order. You can manually re-order or sort assets after you add them.
 
    If necessary, drag an asset's Reorder icon to the right of the asset's file name to re-order images up or down the set list.
 
-   ![](assets/6_5_imageset-reorderassets.png)
+   ![6_5_imageset-reorderassets](assets/6_5_imageset-reorderassets.png)
 
    If you want to change a thumbnail or swatch, click the **+** **thumbnail** icon next to the image and navigate to the thumbnail or swatch you want. When done selecting all the images click **Save.**
 
@@ -170,17 +170,17 @@ However, sets created using batch set presets, do **not** appear in the user int
 
 * Open the properties of an individual asset. Properties indicate what sets the selected asset is referenced or a member of. Click the name of the set to see the entire set.
 
-  ![](assets/6_5_imageset-assetproperties.png)
+  ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
 * From a member image of any set. Select the **Sets** menu to display the sets that the asset is a member of.
 
-  ![](assets/6_5_imageset-setspulldownmenu.png)
+  ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
 * From search, you can select **Filter,** then expand **Dynamic Media** and select **Sets**.
 
   The search returns matching sets that were manually created in the UI or automatically created through batch set presets. For automated sets, the search query is conducted using "Starts with" search criteria which is different from AEM search which is based on using "Contains" search criteria. Setting the filter to **Sets** istheonly way to search automated sets.
 
-  ![](assets/chlimage_1-134.png)
+  ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >

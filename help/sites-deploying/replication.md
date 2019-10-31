@@ -42,7 +42,7 @@ Replication, to a publish instance or dispatcher, takes place in several steps:
 
 * multiple author and publish environments can be configured.
 
-![](assets/chlimage_1-21.png)
+![chlimage_1-21](assets/chlimage_1-21.png)
 
 ### Replicating from Publish to Author {#replicating-from-publish-to-author}
 
@@ -361,7 +361,7 @@ From the Tools tab in the author environment you can configure replication agent
 1. Click the appropriate agent name (which is a link) to show detailed information on that agent.
 1. Click **Edit** to open the configuration dialog:
 
-   ![](assets/chlimage_1-22.png)
+   ![chlimage_1-22](assets/chlimage_1-22.png)
 
 1. The values provided should be sufficient for a default installation. If you make changes then click **OK** to save them (see [Replication Agents - Configuration Parameters](#replication-agents-configuration-parameters) for more details of the individual parameters).
 
@@ -392,11 +392,11 @@ To do this you need:
 
 If you want to use reverse replication then ensure that this agent is activated.
 
-![](assets/chlimage_1-23.png)
+![chlimage_1-23](assets/chlimage_1-23.png)
 
 **A reverse replication agent in the publish environment (an outbox)** This is the passive element as it acts as an "outbox". User input is placed here, from where it is collected by the agent in the author environment.
 
-![](assets/chlimage_1-1.jpeg)
+![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
 ### Configuring Replication for Multiple Publish Instances {#configuring-replication-for-multiple-publish-instances}
 
@@ -513,7 +513,7 @@ If you navigate to `/etc/replication` you can see the following three nodes:
 
 The two `agents` hold configuration information about the appropriate environment, and are only active when that environment is running. For example, `agents.publish` will only be used in the publish environment. The following screenshot shows the publish agent in the author environment, as included with AEM WCM:
 
-![](assets/chlimage_1-24.png)
+![chlimage_1-24](assets/chlimage_1-24.png)
 
 ## Monitoring your Replication Agents {#monitoring-your-replication-agents}
 
@@ -527,7 +527,7 @@ To monitor a replication agent:
 
 1. Click the appropriate agent name (which is a link) to show detailed information on that agent:
 
-   ![](assets/chlimage_1-2.jpeg)
+   ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
    Here you can:
 

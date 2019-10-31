@@ -136,7 +136,7 @@ An Adobe Analytics framework is a set of mappings between Adobe Analytics variab
 1. In the Report Suites section of the side pod, click **Add Item**, then use the drop-down to select the Report Suite ID (for example, JJEsquire) with which the framework will interact.
 1. Next to the Report Suite ID, select the server instances that you want to send information to the Report Suite.
 
-   ![](assets/information_to_send_to_report_suite.png)
+   ![information_to_send_to_report_suite](assets/information_to_send_to_report_suite.png)
 
 1. Drag a **Form Analytics component** from the **other **category from SideKick onto the framework.
 1. To map Analytics variables with variables that are defined in the component, drag a variable from AEM Content Finder onto a field on the tracking component.

@@ -27,11 +27,11 @@ To get the AEM Forms app source, perform the following steps:
 
 The following image displays the extracted contents of the `adobe-lc-mobileworkspace-src-<version>.zip`.
 
-![](assets/mws-content-1.png)
+![mws-content-1](assets/mws-content-1.png)
 
 The following image displays the directory structure of the `windows` folder in the `src` folder.
 
-![](assets/win-dir.png) 
+![win-dir](assets/win-dir.png) 
 
 ## Setting up the environment {#setting-up-the-environment}
 
@@ -63,7 +63,7 @@ Perform the following steps to build and deploy AEM Forms app.
 1. Select Windows-AnyCPU, Windows-x64, or Windows-x86 based on your platform. Windows-AnyCPU is recommended.
 1. In the Visual Studio Solution Explorer, right-click the project **CordovaApp.Windows** and select **Store &gt; Create AppPackages**.
 
-   ![](assets/createapppackages.png)
+   ![createapppackages](assets/createapppackages.png)
 
    The Create App Packages wizard appears.
 
@@ -71,15 +71,15 @@ Perform the following steps to build and deploy AEM Forms app.
 
    If you encounter the error `Retarget to windows 8.1 required`, right-click the error and in the pop-up menu, select **Retarget To Windows 8.1**. 
 
-   ![](assets/retarget-solution.png)
+   ![retarget-solution](assets/retarget-solution.png)
 
 1. In the Create App Packages wizard, select weather or not you want to upload your app to the windows store and then click **Next**.
 
-   ![](assets/createapppackageswizard1.png)
+   ![createapppackageswizard1](assets/createapppackageswizard1.png)
 
 1. Make the changes in the parameters, such as the version and output location of the app build, as required.
 
-   ![](assets/createapppackageswizard2.png)
+   ![createapppackageswizard2](assets/createapppackageswizard2.png)
 
 1. After the project is built, you can install the app using:
 

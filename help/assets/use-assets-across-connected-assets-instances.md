@@ -159,7 +159,7 @@ To configure Connected Assets and local Sites connectivity, follow these steps.
 
     1. Login using the administrator credentials. Search for Cross-Origin. Access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
-    1. To create a CORS configuration for AEM Sites instance, click ![](assets/aem_assets_add_icon.png) icon next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
+    1. To create a CORS configuration for AEM Sites instance, click ![aem_assets_add_icon](assets/aem_assets_add_icon.png) icon next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
     1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local Sites, that is, `https://[local_sites]:[port]`. Save the configuration.
 

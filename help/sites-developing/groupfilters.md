@@ -162,11 +162,11 @@ public class ScreenSizeLarge implements DeviceGroupFilter {
 
 The String value that the getTitle method returns appars in the drop down list of the device group properties.
 
-![](assets/filteraddtogroup.png)
+![filteraddtogroup](assets/filteraddtogroup.png)
 
 The String values that the getTitle and getDescription methods return are included at the bottom of the device group summary page.
 
-![](assets/filterdescription.png)
+![filterdescription](assets/filterdescription.png)
 
 ### The Maven POM File {#the-maven-pom-file}
 

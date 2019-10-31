@@ -33,19 +33,19 @@ The weather component is found in the top-left of the We.Retail Journal app. It 
 
 ### Using the Weather Widget {#using-the-weather-widget}
 
-![](assets/screen_shot_2018-06-08at143224.png)
+![screen_shot_2018-06-08at143224](assets/screen_shot_2018-06-08at143224.png)
 
 When authoring content of the SPA in the SPA Editor, the weather component appears as any other AEM component, complete with a toolbar, and is editable.
 
-![](assets/screen_shot_2018-06-08at143304.png)
+![screen_shot_2018-06-08at143304](assets/screen_shot_2018-06-08at143304.png)
 
 The city can be updated in a dialog just like any other AEM component.
 
-![](assets/screen_shot_2018-06-08at143446.png)
+![screen_shot_2018-06-08at143446](assets/screen_shot_2018-06-08at143446.png)
 
 The change is persisted and the component updates itself automatically with new weather data.
 
-![](assets/screen_shot_2018-06-08at143524.png)
+![screen_shot_2018-06-08at143524](assets/screen_shot_2018-06-08at143524.png)
 
 ### Weather Component Implementation {#weather-component-implementation}
 
@@ -53,7 +53,7 @@ The weather component is actually based on a publicly-available React component,
 
 The following are snippets of the NPM documentation of the usage of the React Open Weather component.
 
-![](assets/screen_shot_2018-06-08at144723.png) ![](assets/screen_shot_2018-06-08at144215.png)
+![screen_shot_2018-06-08at144723](assets/screen_shot_2018-06-08at144723.png) ![screen_shot_2018-06-08at144215](assets/screen_shot_2018-06-08at144215.png)
 
 Reviewing the code of the customized weather component ( `Weather.js`) in the We.Retail Journal application:
 

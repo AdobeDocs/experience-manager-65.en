@@ -63,7 +63,7 @@ For all AEM 6.3 author and publish instances
 
         * select **Save**
 
-![](assets/chlimage_1-176.png)
+![chlimage_1-176](assets/chlimage_1-176.png)
 
 ### On-premise Storage {#on-premise-storage}
 

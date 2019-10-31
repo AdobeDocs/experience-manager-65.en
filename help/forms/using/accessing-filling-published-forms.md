@@ -91,6 +91,6 @@ There are certain forms that you need to fill and submit quite often. For exampl
 
 AEM Forms can help optimize the form filling experience and significantly reduce the time to fill and submit a form again. End-users can start a new form using data from a submitted form. This functionality is built-in in the [Drafts and Submissions component](../../forms/using/draft-submission-component.md). When you add Drafts and Submission component to your forms portal page and publish it, end-users will find an option in Submitted Forms and Draft Forms tabs to start a new form using data from a submitted form. The following image highlights that option.
 
-![](assets/start-a-new-form.png)
+![start-a-new-form](assets/start-a-new-form.png)
 
 When you click the button to initiate a new form, it opens a new form with data from the corresponding submitted form. You can now review and update the information, as required, and submit the form.

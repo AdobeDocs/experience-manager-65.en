@@ -31,7 +31,7 @@ Output service enables you to create applications that let you:
 
 ## Creating non-interactive form documents {#creating-non-interactive-form-documents}
 
-![](assets/usingoutput_modified.png)
+![usingoutput_modified](assets/usingoutput_modified.png)
 
 Typically, you create templates using AEM Forms Designer. The `generatePDFOutput` and `generatePrintedOutput` APIs of the Output service let you directly convert these templates to various formats, including PDF, PostScript, ZPL, and PCL.
 

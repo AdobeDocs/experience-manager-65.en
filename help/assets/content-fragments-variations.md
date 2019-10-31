@@ -56,19 +56,19 @@ For example:
 
   A simple fragment consists of one multi-line text field (visual assets can be added from the full-screen editor).
 
-  ![](assets/cfm-6420-21.png)
+  ![cfm-6420-21](assets/cfm-6420-21.png)
 
 * Editing a fragment with structured content
 
   A structured fragment contains various fields, of various data-types, that were defined in the content model. For any multi-line fields the [full-screen editor](#full-screen-editor) is available.
 
-  ![](assets/cfm-6420-16.png)
+  ![cfm-6420-16](assets/cfm-6420-16.png)
 
 ### Full-Screen Editor {#full-screen-editor}
 
 When editing a multi-line text field you can open the full-screen editor:
 
-![](assets/cf-fullscreeneditor-icon.png)
+![cf-fullscreeneditor-icon](assets/cf-fullscreeneditor-icon.png)
 
 The full-screen editor provides:
 
@@ -161,7 +161,7 @@ You can also open the full-screen editor for further [actions](#actions).
 
 When the full-screen editor is open, the action **Text Statistics** will display a range of information about the text. For example:
 
-![](assets/cfx-6420-22.png)
+![cfx-6420-22](assets/cfx-6420-22.png)
 
 ### Uploading Content {#uploading-content}
 
@@ -200,7 +200,7 @@ Summarizing text is designed to help users reduce the length of their text to a 
 
 1. Select **Summarize text** from the toolbar.
 
-   ![](assets/cf-17.png)
+   ![cf-17](assets/cf-17.png)
 
 1. Specify the target number of words and select **Start**:
 1. The original text is displayed side-by-side with the proposed summarization:
@@ -209,7 +209,7 @@ Summarizing text is designed to help users reduce the length of their text to a 
     * Click on any highlighted sentence to keep it in the summarized content.
     * Click on any non-highlighted sentence to have it eliminated.
 
-   ![](assets/cfm-6420-23.png)
+   ![cfm-6420-23](assets/cfm-6420-23.png)
 
 1. Select **Summarize** to confirm the changes.
 
@@ -221,7 +221,7 @@ To annotate a fragment:
 1. Open the full-screen editor.
 1. Select some text. The **Annotate** icon becomes available.
 
-   ![](assets/cfm-6420-24.png)
+   ![cfm-6420-24](assets/cfm-6420-24.png)
 
 1. A dialog will open. Here you can enter your annotation.
 
@@ -241,7 +241,7 @@ Annotations:
 
 * Can be listed, and deleted, by selecting the **Annotations** tab in the fragment editor.
 
-  ![](assets/cfm-6420-25.png)
+  ![cfm-6420-25](assets/cfm-6420-25.png)
 
 * Can be viewed, and deleted, in [Timeline](https://helpx.adobe.com/experience-manager/6-3/help/assets/content-fragments-managing.html#timeline-for-content-fragments) for the selected fragment.
 
@@ -264,7 +264,7 @@ They will be added to the paragraph sequence of the fragment without any formatt
 1. Position the cursor at the position you want to add the image.
 1. Use the **Insert Asset** icon to open the search dialog.
 
-   ![](assets/cf-insertasset-icon.png)
+   ![cf-insertasset-icon](assets/cf-insertasset-icon.png)
 
 1. In the dialog you can either:
 
@@ -312,7 +312,7 @@ You can make changes to the variation content after either:
 * [Creating your variation](#creating-a-variation).
 * Opening an existing fragment, then selecting the required variation from the side panel.
 
-![](assets/cfm-6420-26.png)
+![cfm-6420-26](assets/cfm-6420-26.png)
 
 ### Renaming a Variation {#renaming-a-variation}
 
@@ -372,7 +372,7 @@ When editing a variation you have access to the action for synchronizing the cur
     * green indicates content added (to the variation)
     * red indicates content removed (from the variation)
 
-   ![](assets/cfm-6420-27.png)
+   ![cfm-6420-27](assets/cfm-6420-27.png)
 
 1. Select **Synchronize**, the variation will updated and shown.
 

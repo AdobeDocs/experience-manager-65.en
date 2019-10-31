@@ -27,7 +27,7 @@ If you make subsequent modifications to the original asset or folder in AEM Asse
 
    Alternatively, select the desired folder and follow the further steps.
 
-   ![](assets/publish2bp.png)
+   ![publish2bp](assets/publish2bp.png)
 
 1. **Publish folders now**
 
@@ -49,13 +49,13 @@ If you make subsequent modifications to the original asset or folder in AEM Asse
     1. Once you have selected assets/ folders to publish, select **Manage Publication **from the tool bar at the top.
     1. On** Manage Publication** page, select **Publish to Brand Portal **from **Action** and select** Later **from **Scheduling**.
 
-       ![](assets/publishlaterbp.png)
+       ![publishlaterbp](assets/publishlaterbp.png)
 
     1. Select an **Activation date **and specify time. Tap/ click **Next**.
     1. Confirm your selection in **Scope**. Tap/ click **Next**.
     1. Specify a Workflow title under **Workflows**. Tap/ click **Publish Later**.
 
-       ![](assets/manageschedulepub.png)
+       ![manageschedulepub](assets/manageschedulepub.png)
 
 ## Unpublish folders from Brand Portal {#unpublish-folders-from-brand-portal}
 
@@ -65,7 +65,7 @@ You have the option to unpublish folders from Brand Portal quickly or schedule i
 
 1. From the AEM Assets interface in AEM Author instance, select the folder you want to unpublish.
 
-   ![](assets/publish2bp-1.png)
+   ![publish2bp-1](assets/publish2bp-1.png)
 
 1. From the toolbar, tap/click **Manage Publication**.
 
@@ -77,7 +77,7 @@ You have the option to unpublish folders from Brand Portal quickly or schedule i
        Tap/ click **Next.**
     1. Within **Scope**, confirm your selection and tap/ click **Unpublish from Brand Portal**.
 
-   ![](assets/confirm-unpublish.png)
+   ![confirm-unpublish](assets/confirm-unpublish.png)
 
    **Unpublish from Brand Portal later**
 
@@ -89,7 +89,7 @@ You have the option to unpublish folders from Brand Portal quickly or schedule i
     1. Within **Scope**, confirm your selection and tap/ click **Next**.
     1. Specify a **Workflow title** under **Workflows**. Tap/ click **Unpublish Later.**
 
-       ![](assets/unpublishworkflows.png)
+       ![unpublishworkflows](assets/unpublishworkflows.png)
 
 >[!NOTE]
 >

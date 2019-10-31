@@ -37,7 +37,7 @@ In previous releases of AEM many APIs were exposed via the Uber Jar. Some of the
 >
 >The concept of `Private` and `Public` in this context should not be confused with Java notions of public and private classes.
 
-![](assets/image2018-2-12_23-52-48.png)
+![image2018-2-12_23-52-48](assets/image2018-2-12_23-52-48.png)
 
 #### Content Classifications {#content-classifications}
 
@@ -65,15 +65,15 @@ Mixins applied in CRXDE Lite will show content nodes and trees that are marked a
 
 **Public**
 
-![](assets/image2018-2-8_23-34-5.png)
+![image2018-2-8_23-34-5](assets/image2018-2-8_23-34-5.png)
 
 **Final**
 
-![](assets/image2018-2-8_23-34-56.png)
+![image2018-2-8_23-34-56](assets/image2018-2-8_23-34-56.png)
 
 **Internal**
 
-![](assets/image2018-2-8_23-38-23.png)
+![image2018-2-8_23-38-23](assets/image2018-2-8_23-38-23.png)
 
 **Content Health Check**
 
@@ -94,14 +94,14 @@ In order to access this new health check, you need to do the following:
 1. From the AEM Home Screen, navigate to **Tools &gt; Operations &gt; Health Reports**
 1. Click on the **Sling/Granite Content Access Check** as shown below:
 
-   ![](assets/screen_shot_2017-12-14at55648pm.png)
+   ![screen_shot_2017-12-14at55648pm](assets/screen_shot_2017-12-14at55648pm.png)
 
 After the scan is complete, a list of warnings will appear notifiying an end user of the protected node that is being improperly referenced:
 
-![](assets/screenshot-2018-2-5healthreports.png)
+![screenshot-2018-2-5healthreports](assets/screenshot-2018-2-5healthreports.png)
 
 After fixing the violations it will return to green state:
 
-![](assets/screenshot-2018-2-5healthreports-violations.png)
+![screenshot-2018-2-5healthreports-violations](assets/screenshot-2018-2-5healthreports-violations.png)
 
 The health check displays information collected by a background service that asynchronously checks whenever an overlay or resource type is used across all Sling search paths. If content mixins are used incorrectly it reports a violation.

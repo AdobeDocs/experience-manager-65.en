@@ -24,9 +24,9 @@ AEM Forms allows you to limit rule editor access to users based on their role or
 ## Specify user groups that can access rule editor {#specify-user-groups-that-can-access-rule-editor}
 
 1. Log in to AEM Forms as an administrator.
-1. In the author instance, click ** ![](assets/adobeexperiencemanager.png)Adobe Experience Manager &gt; Tools ![](assets/hammer.png) &gt; Operations &gt; Web Console. **The Web Console opens in a new window.
+1. In the author instance, click ** ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager &gt; Tools ![hammer](assets/hammer.png) &gt; Operations &gt; Web Console. **The Web Console opens in a new window.
 
-   ![](assets/1-2.png)
+   ![1-2](assets/1-2.png)
 
 1. In Web Console Window, locate and click **Adaptive Form Configuration** **Service**. **Adaptive Form Configuration Service **dialog appears. Do not change any value and click **Save**.
 
@@ -43,13 +43,13 @@ AEM Forms allows you to limit rule editor access to users based on their role or
 
    ![Create User](assets/create_user_new.png)
 
-   Now, when a user that is not a part of the a specified user group (here RuleEditorsUserGroup) taps a field, the Edit Rule icon ( ![](assets/edit-rules1.png)) is not available for her in the components toolbar:
+   Now, when a user that is not a part of the a specified user group (here RuleEditorsUserGroup) taps a field, the Edit Rule icon ( ![edit-rules1](assets/edit-rules1.png)) is not available for her in the components toolbar:
 
-   ![](assets/componentstoolbarwithre.png)
+   ![componentstoolbarwithre](assets/componentstoolbarwithre.png)
 
    Components toolbar as visible to a user with rule editor access
 
-   ![](assets/componentstoolbarwithoutre.png)
+   ![componentstoolbarwithoutre](assets/componentstoolbarwithoutre.png)
 
    Components toolbar as visible to a user without rule editor access
 

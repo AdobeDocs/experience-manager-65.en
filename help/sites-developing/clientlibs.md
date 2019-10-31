@@ -113,7 +113,7 @@ Client library folders contain the following items:
   **Note: **You can use subfolders to organize source files.
 * One `js.txt` file and/or one `css.txt` file that identifies the source files to merge in the generated JS and/or CSS files.
 
-![](assets/clientlibarch.png)
+![clientlibarch](assets/clientlibarch.png)
 
 For information about requirements that are specific to client libraries for widgets, see [Using and Extending Widgets](/help/sites-developing/widgets.md).
 
@@ -268,7 +268,7 @@ The following client library categories are incuded with AEM. You should embed o
 
 When you embed CSS files, the generated CSS code uses paths to resources that are relative to the embedding library. For example, the publicly-accessible library `/etc/client/libraries/myclientlibs/publicmain` embeds the `/apps/myapp/clientlib` client library:
 
-![](assets/screen_shot_2012-05-29at20122pm.png)
+![screen_shot_2012-05-29at20122pm](assets/screen_shot_2012-05-29at20122pm.png)
 
 The `main.css` file contains the following style:
 

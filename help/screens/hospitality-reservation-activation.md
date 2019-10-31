@@ -37,7 +37,7 @@ Follow the steps below to implement the hospitality reservation activation use c
 
    For example, apply the formula to the third column **AdTarget**, as shown in the figure below.
 
-   ![](assets/screen_shot_2019-04-29at94132am.png)
+   ![screen_shot_2019-04-29at94132am](assets/screen_shot_2019-04-29at94132am.png)
 
 1. **Configuring the segments in Audiences as per the requirements**
 
@@ -65,13 +65,13 @@ Follow the steps below to implement the hospitality reservation activation use c
    >
    >Your channel should already have a default image and the Audiences should be pre-configured as described in [**Configuring ContextHub in AEM Screens**](/help/screens/configuring-context-hub.md).
 
-   ![](assets/screen_shot_2019-05-08at14652pm.png)
+   ![screen_shot_2019-05-08at14652pm](assets/screen_shot_2019-05-08at14652pm.png)
 
    >[!CAUTION]
    >
    >You should have set up your **ContextHub** **Configurations** using the channel **Properties** --&gt; **Personalization** tab.
 
-   ![](assets/screen_shot_2019-05-08at114106am.png)
+   ![screen_shot_2019-05-08at114106am](assets/screen_shot_2019-05-08at114106am.png)
 
 1. Select **Targeting** from the editor and select **Brand** and the **Activity** from the drop-down menu and click **Start Targeting**.
 1. **Checking the Preview**
@@ -79,5 +79,5 @@ Follow the steps below to implement the hospitality reservation activation use c
     1. Click **Preview.** Also, open your Google Sheets and update its value.
     1. Update the value in **Restaurant1** and **Restaurant2** columns. If **Restaurant1** &gt; **Restaurant2,** you should be able to view an image of *Steak* food otherwise, *Thai* food image displays on your screen.
 
-   ![](assets/result5.gif)
+   ![result5](assets/result5.gif)
 

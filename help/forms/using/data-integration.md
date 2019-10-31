@@ -24,7 +24,7 @@ While a distributed, modular system has its own benefits, the challenge lies in 
 
 ## Data Integration overview {#data-integration-overview}
 
-![](assets/aem-forms-data-integeration.png)
+![aem-forms-data-integeration](assets/aem-forms-data-integeration.png)
 
 AEM Forms Data Integration allows configuring and connecting disparate data sources with AEM Forms. It provides an intuitive user interface to create a unified data representation schema of business entities and services across connected data sources. The unified representation is known as a form data model, an extension of JSON schema. The entities in a form data model are referred to as data model objects. A form data model allows you to:
 

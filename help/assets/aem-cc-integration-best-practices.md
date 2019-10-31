@@ -202,6 +202,8 @@ To support asset distribution use cases, other solutions should be considered:
 
 ### Considerations when using AEM and Creative Cloud integration {#considerations-when-using-aem-and-creative-cloud-integration}
 
+<!--incomplete-->
+
 * DA2.0 best practices: See troubleshooting.md
 * Stock integration: See ?
 * AAL: See ?
@@ -209,12 +211,12 @@ To support asset distribution use cases, other solutions should be considered:
 
 This is a brief summary of best practices for AEM & Creative Cloud Integration. Read the rest of this document to get the detailed understanding of these.
 
-* **For creative users, working in Photoshop, InDesign, or Illustrator: **Adobe Asset Link provides the best user experience, including clean handling of the Work-in-progress on assets checked out from AEM
-* **For simplifying access to assets from desktop for any generic file format or application: **use AEM desktop app
+* **For creative users, working in Photoshop, InDesign, or Illustrator:** Adobe Asset Link provides the best user experience, including clean handling of the Work-in-progress on assets checked out from AEM
+* **For simplifying access to assets from desktop for any generic file format or application:** use AEM desktop app
 * **Understand why and when to store assets in DAM:** Updates to be made available to the broader team in your organization
 * **Mind the volume of assets shared:** If your use case is asset distribution, governance and security might be the most important aspects. Consider using tools built for doing that at scale, like Brand Portal.
-* **Understand asset lifecycle: **Know how assets are handled in your organization by different teams
-* **Handle frequent saves to assets with care: **Adobe Asset Link takes care of that for you with PS, AI, ID. For other applications, don't carry out work in progress tasks in mapped/shared folder unless you need all the changes in DAM
+* **Understand asset lifecycle:** Know how assets are handled in your organization by different teams
+* **Handle frequent saves to assets with care:** Adobe Asset Link takes care of that for you with PS, AI, ID. For other applications, don't carry out work in progress tasks in mapped/shared folder unless you need all the changes in DAM
 
 ### Access to Adobe Stock assets from AEM Assets {#access-to-adobe-stock-assets-from-aem-assets}
 

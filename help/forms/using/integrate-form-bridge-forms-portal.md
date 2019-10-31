@@ -82,7 +82,7 @@ An existing HTML application can leverage the FormBridge API to interact with a 
    >
    >The following screen shot shows how the form displays in a browser.
 
-   ![](assets/portal.jpg)
+   ![portal](assets/portal.jpg)
 
    The left side is part of the **HTML page**. The right side containing the fields is the **xfa form**.
 

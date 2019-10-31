@@ -47,7 +47,7 @@ Search & Lister Component in a page with Grid layout
 
 The List pane is an area where your forms are listed. The Search & Lister component provides various configuration options that you can use to control the display of forms in the List pane.
 
-To configure the List pane, tap the Search and Lister component and then tap ![](assets/settings_icon.png). The **[!UICONTROL  Edit Component]** dialog opens.
+To configure the List pane, tap the Search and Lister component and then tap ![settings_icon](assets/settings_icon.png). The **[!UICONTROL  Edit Component]** dialog opens.
 
 ![List pane in edit mode](assets/edit-list.png)
 
@@ -166,7 +166,7 @@ The Date Predicate component, when added, enables search on the listed forms tha
 
 To configure the Date Predicate component:
 
-1. Tap the component and then tap ![](assets/settings_icon.png). The Edit dialog opens.
+1. Tap the component and then tap ![settings_icon](assets/settings_icon.png). The Edit dialog opens.
 1. Specify the following:
 
     * **Type: **The only option available is **Last Modified Date**
@@ -185,7 +185,7 @@ The Full Text Predicate component implements full text search on form data, such
 
 To configure the Full Text Predicate component:
 
-1. Tap the component and then tap ![](assets/settings_icon.png). The Edit dialog opens.
+1. Tap the component and then tap ![settings_icon](assets/settings_icon.png). The Edit dialog opens.
 1. Specify the title in the **Main Title **field.
 1. Tap **Ok**
 
@@ -195,7 +195,7 @@ The Properties Predicate component implements searching of forms based on form p
 
 To configure the Properties Predicate component:
 
-1. Tap the component and then tap ![](assets/settings_icon.png). The Edit dialog opens.
+1. Tap the component and then tap ![settings_icon](assets/settings_icon.png). The Edit dialog opens.
 1. In the General tab, specify the search label. The default value is **Properties**
 
 1. In the Options tab, tap **Add Item.**
@@ -211,7 +211,7 @@ The Tags Predicate component implements searching of forms based on tags defined
 
 To configure the Tags Predicate component:
 
-1. Tap the component and then tap ![](assets/settings_icon.png). The Edit dialog opens.
+1. Tap the component and then tap ![settings_icon](assets/settings_icon.png). The Edit dialog opens.
 1. Tap the down-arrow button next to the Tags field.
 1. Select appropriate tags
 1. Tap **OK**

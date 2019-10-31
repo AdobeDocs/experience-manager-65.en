@@ -23,7 +23,7 @@ The **Sites** console allows you to navigate and manage your website, using the 
 
 For example, column view:
 
-![](assets/ateat-01.png)
+![ateat-01](assets/ateat-01.png)
 
 ## Editing Page Content {#editing-page-content}
 
@@ -31,7 +31,7 @@ You can edit a page with the page editor. For example:
 
 `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
-![](assets/ateat-02.png)
+![ateat-02](assets/ateat-02.png)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ The components browser shows all components that are available for use on your c
 
 The components browser is a tab within the side panel (together with the [assets browser](/help/sites-authoring/author-environment-tools.md#assets-browser) and [content tree](/help/sites-authoring/author-environment-tools.md#content-tree)). To open (or close) the side panel use the icon at the top left of the toolbar:
 
-![](assets/ateat-03.png)
+![ateat-03](assets/ateat-03.png)
 
 When you open the side panel it will slide open from the left side (select the **Components** tab if necessary). When open you can browse through all the components available for your page.
 
@@ -70,7 +70,7 @@ The actual appearance and handling is dependent on the device type you are using
 
   To add a component to your page touch-and-hold the required component and move it towards the right - the component browser will close to show the page again - where you can position the component.
 
-  ![](assets/ateat-04.png)
+  ![ateat-04](assets/ateat-04.png)
 
 * **Desktop device**
 
@@ -78,7 +78,7 @@ The actual appearance and handling is dependent on the device type you are using
 
   To add a component to your page click on the required component and drag it to the required location.
 
-  ![](assets/ateat-05.png)
+  ![ateat-05](assets/ateat-05.png)
 
   Components are represented by
 
@@ -96,7 +96,7 @@ The actual appearance and handling is dependent on the device type you are using
 
   For a more detailed description of the component, you can click or tap the information icon next to the component in the **Components** browser (if available). For example, for the **Layout Container**:
 
-  ![](assets/ateat-06.png)
+  ![ateat-06](assets/ateat-06.png)
 
   For even more information about the components available to you see the [Component Console](/help/sites-authoring/default-components-console.md).
 
@@ -106,15 +106,15 @@ The assets browser shows all [assets](/help/assets/home.md) that are available f
 
 The assets browser is a tab within the side panel along with the [components browse](/help/sites-authoring/author-environment-tools.md#components-browser)r and [content tree](/help/sites-authoring/author-environment-tools.md#content-tree). To open or close the side panel use the icon at the top left of the toolbar:
 
-![](assets/ateat-03-1.png)
+![ateat-03-1](assets/ateat-03-1.png)
 
 When you open the side panel it will slide open from the left side. Select the **Assets** tab if necessary.
 
-![](assets/ateat-07.png)
+![ateat-07](assets/ateat-07.png)
 
 When the assets browser is open you can browse through all the assets available for your page. Infinite scrolling is used to expand the list when required.
 
-![](assets/ateat-08.png)
+![ateat-08](assets/ateat-08.png)
 
 To add an asset to your page, select and drag to the required location. This can be:
 
@@ -151,7 +151,7 @@ The actual appearance and handling is dependent on the device type you are using
 
   To add an asset to your page touch-and-hold the required asset, then move it towards the right - the assets browser will close to show the page again, where you can add the asset to the required component.
 
-  ![](assets/ateat-09.png)
+  ![ateat-09](assets/ateat-09.png)
 
 * **Desktop device**
 
@@ -159,7 +159,7 @@ The actual appearance and handling is dependent on the device type you are using
 
   To add an asset to your page click on the required asset and drag it to the required component or location.
 
-  ![](assets/ateat-10.png)
+  ![ateat-10](assets/ateat-10.png)
 
 If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/managing-assets-touch-ui.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.
 
@@ -175,7 +175,7 @@ The Content Tree is a tab within the side panel (together with the components an
 
 When you open the side panel it will slide open (from the left side). Select the **Content Tree** tab if necessary. When open you can see a tree view representation of your page or template, so that it's easier to understand how its content is structured hierarchically. Additionally on a complex page, it makes it easier to jump between components of the page.
 
-![](assets/ateat-11.png)
+![ateat-11](assets/ateat-11.png)
 
 A page can easily be composed of many of the same type of components, so the content (component) tree displays descriptive text (in grey) after the name of the component type (in black). The descriptive text comes from common properties of the component such as title or text.
 
@@ -183,7 +183,7 @@ Component types will be shown in the user language, whereas the component descri
 
 Clicking the chevron next to a component will collapse or expand that level.
 
-![](assets/screen_shot_2018-03-22at142559.png)
+![screen_shot_2018-03-22at142559](assets/screen_shot_2018-03-22at142559.png)
 
 >[!NOTE]
 >
@@ -195,7 +195,7 @@ Clicking on the component will highlight the component in the page editor. The a
 
   `https://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html`
 
-  ![](assets/ateat-12.png)
+  ![ateat-12](assets/ateat-12.png)
 
   If the component you click in the tree is editable a wrench icon will appear to the right of the name. Clicking on this icon will directly start the edit dialogue for the component.
 
@@ -205,7 +205,7 @@ Clicking on the component will highlight the component in the page editor. The a
 
   `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
-  ![](assets/ateat-13.png)
+  ![ateat-13](assets/ateat-13.png)
 
 ## Fragments - Associated Content Browser {#fragments-associated-content-browser}
 
@@ -225,11 +225,11 @@ If your page contains Content Fragments then you will also have access to the [b
 
 Open the required console, then navigate to the required resource and open **References** using:
 
-![](assets/screen_shot_2018-03-22at153653.png)
+![screen_shot_2018-03-22at153653](assets/screen_shot_2018-03-22at153653.png)
 
 [Select your required resource](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) to show a list of references types relevant to that resource:
 
-![](assets/ateat-22.png)
+![ateat-22](assets/ateat-22.png)
 
 Select the appropriate reference type for more information. In certain situations further actions are available when you select a specific reference, including:
 
@@ -245,7 +245,7 @@ Select the appropriate reference type for more information. In certain situation
 
 For example, you can fix a broken reference within a Reference component:
 
-![](assets/ateat-14.png)
+![ateat-14](assets/ateat-14.png)
 
 ## Events - Timeline {#events-timeline}
 
@@ -253,17 +253,17 @@ For appropriate resources (e.g. pages from the **Sites** console, or assets from
 
 Open the required console, then navigate to the required resource and open **Timeline**, using:
 
-![](assets/ateat-15.png)
+![ateat-15](assets/ateat-15.png)
 
 [Select your required resource](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), then either **Show All** or **Activities** to list any recent actions on the selected resources:
 
-![](assets/ateat-16.png)
+![ateat-16](assets/ateat-16.png)
 
 ## Page Information {#page-information}
 
 The Page Information (equalizer icon) opens a menu that also provides details about the last edit and the last publication. Depending on the characteristics of the page, its site, and your instance, more or fewer options might be available:
 
-![](assets/ateat-17.png)
+![ateat-17](assets/ateat-17.png)
 
 * [Open Properties](/help/sites-authoring/editing-page-properties.md)
 * [Rollout Page](/help/sites-administering/msm.md#msm-from-the-ui)
@@ -307,7 +307,7 @@ There are various modes when editing a page allowing for different actions:
 
 You can access these using the icons in the top right corner. The actual icon will change to reflect the mode you are currently using:
 
-![](assets/ateat-18.png)
+![ateat-18](assets/ateat-18.png)
 
 >[!NOTE]
 >
@@ -333,13 +333,13 @@ Clicking the **Open Selection Dialog** button in the path field opens the [path 
 
 Alternatively you can start typing in the path field and AEM will offer matching paths as you type.
 
-![](assets/ateat-19.png)
+![ateat-19](assets/ateat-19.png)
 
 ### Path Browser {#path-browser}
 
 The path browser is organized like the [column view](/help/sites-authoring/basic-handling.md#column-view) of the sites console, allowing for more detailed selection of resources.
 
-![](assets/screen_shot_2018-03-22at154521.png)
+![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
 * Once a resource is selected, the **Select** button at the upper-right of the dialogue becomes active. Click or tap to confirm the selection or **Cancel** to abort.
 * If the context allows for the selection of multiple resources, selecting a resource also activates the **Select** button, but also adds a count of the number of selected resources to the upper-right of the window. Click the **X** next to the number to deselect all.
@@ -347,7 +347,7 @@ The path browser is organized like the [column view](/help/sites-authoring/basic
 * At any time you can use the search field at the top of the dialogue. Click the **X** in the search field to clear the search.
 * To narrow your search, you can reveal the filter options and filter your results based on a certain path.
 
-  ![](assets/ateat-21.png)
+  ![ateat-21](assets/ateat-21.png)
 
 ## Keyboard Shortcuts {#keyboard-shortcuts}
 

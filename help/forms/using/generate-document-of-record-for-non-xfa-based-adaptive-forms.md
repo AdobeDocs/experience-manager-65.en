@@ -301,11 +301,11 @@ While generating a document of record, you can change branding information for t
 
 To localize the branding information that you enter in the Document of Record tab, you need to ensure the locale of the browser is set appropriately. To customize the branding information of document of record, complete the following steps:
 
-1. Select a panel (root panel) in the document of record and then tap ![](assets/configure.png).
-1. Tap ![](assets/dortab.png). The Document of Record tab appears.
+1. Select a panel (root panel) in the document of record and then tap ![configure](assets/configure.png).
+1. Tap ![dortab](assets/dortab.png). The Document of Record tab appears.
 1. Select either the default template or a custom template for rendering the document of record. If you select the default template, a thumbnail preview of the document of record appears below the Template drop-down.
 
-   ![](assets/brandingtemplate.png)
+   ![brandingtemplate](assets/brandingtemplate.png)
 
    If you choose to select a custom template, browse a select an XDP on your AEM Forms server. If you want to use a template that is not already on your AEM Forms server, you need to first upload the XDP to your AEM Forms server.
 
@@ -361,7 +361,7 @@ Fields in a panel rendered in a column layout in the document of record
 
 Document of record settings let you choose options you want to include in the document of record. For example, a bank accepts name, age, social security number, and phone number in a form. The form generates a bank account number, and branch details. You can choose to display only the name, social security number, bank account, and branch details in document of record.
 
-The document of record settings of a component are available under its properties. To access the properties a component, select the component and click ![](assets/cmppr.png) in the overlay. The properties are listed in the sidebar, and you can find the following settings in it.
+The document of record settings of a component are available under its properties. To access the properties a component, select the component and click ![cmppr](assets/cmppr.png) in the overlay. The properties are listed in the sidebar, and you can find the following settings in it.
 
 **Field level settings**
 

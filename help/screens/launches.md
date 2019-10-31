@@ -87,23 +87,23 @@ Follow the steps below to implement future publish functionality to your AEM Scr
    >
    >You must create a launch from a pre-existing channel in your AEM Screens project.
 
-   ![](assets/screen_shot_2019-06-25at15052pm.png)
+   ![screen_shot_2019-06-25at15052pm](assets/screen_shot_2019-06-25at15052pm.png)
 
 1. Select the channel **FutureLaunch** and and click **Create**. Select **Launch** from the drop-down menu.
 
-   ![](assets/screen_shot_2019-06-25at15459pm.png)
+   ![screen_shot_2019-06-25at15459pm](assets/screen_shot_2019-06-25at15459pm.png)
 
 1. The **Create Launch** wizard opens. Click **+ Add Pages** to select the AEM Screens channels for which you want to create the launch.
 
-   ![](assets/screen_shot_2019-06-11at93710am.png)
+   ![screen_shot_2019-06-11at93710am](assets/screen_shot_2019-06-11at93710am.png)
 
 1. Navigate to the channel and click **Select**.
 
-   ![](assets/screen_shot_2019-06-25at20030pm.png)
+   ![screen_shot_2019-06-25at20030pm](assets/screen_shot_2019-06-25at20030pm.png)
 
 1. Once you have the page selected, click **Next** to move one step further in **Create Launch** wizard.
 
-   ![](assets/screen_shot_2019-06-25at20128pm.png)
+   ![screen_shot_2019-06-25at20128pm](assets/screen_shot_2019-06-25at20128pm.png)
 
 1. Enter the **Launch Title** as **SummerPromotions** and you do not need to set the** Launch Date**, as shown in the figure below. Click **Create**.
 
@@ -114,7 +114,7 @@ Follow the steps below to implement future publish functionality to your AEM Scr
    >
    >*Disabling or unchecking* **Inherit source page live data** allows the channels to be be copied without any live relationship in the launch. So, if any changes are made to the original channel, those changes are not applied to launch channels.
 
-   ![](assets/screen_shot_2019-06-25at20215pm.png)
+   ![screen_shot_2019-06-25at20215pm](assets/screen_shot_2019-06-25at20215pm.png)
 
    >[!NOTE]
    >
@@ -122,11 +122,11 @@ Follow the steps below to implement future publish functionality to your AEM Scr
 
 1. You will see that your launch is created. You can either click **Open** to view the pages in the editor or click **Done** to navigate back to your project.
 
-   ![](assets/screen_shot_2019-06-25at20355pm.png)
+   ![screen_shot_2019-06-25at20355pm](assets/screen_shot_2019-06-25at20355pm.png)
 
    Clicking **Done** allows you to navigate back to your **LaunchesDemo** project.
 
-   ![](assets/screen_shot_2019-06-25at20434pm.png)
+   ![screen_shot_2019-06-25at20434pm](assets/screen_shot_2019-06-25at20434pm.png)
 
 ### Editing the launch properties to set the live date and scope {#editing-the-launch-properties-to-set-the-live-date-and-scope}
 
@@ -140,11 +140,11 @@ Follow the steps below to edit the launch properties:
    >
    >Select the **Content Tree **option from the left rail to open the launch you created.
 
-   ![](assets/screen_shot_2019-06-25at25852pm.png)
+   ![screen_shot_2019-06-25at25852pm](assets/screen_shot_2019-06-25at25852pm.png)
 
 1. Navigate to **Launches** and select the launch (**SummerPromotions**) you created. Click **Edit Properties**.
 
-   ![](assets/screen_shot_2019-06-25at30008pm.png)
+   ![screen_shot_2019-06-25at30008pm](assets/screen_shot_2019-06-25at30008pm.png)
 
 1. The launch **SummerPromotions** dialog box opens. Populate the following fields:
 
@@ -174,7 +174,7 @@ Follow the steps below to edit the launch properties:
    >
    >
 
-   ![](assets/screen_shot_2019-06-26at113805am.png)
+   ![screen_shot_2019-06-26at113805am](assets/screen_shot_2019-06-26at113805am.png)
 
    >[!CAUTION]
    >
@@ -182,5 +182,5 @@ Follow the steps below to edit the launch properties:
 
 1. Click **Save & Close** to navigate back to **FutureLaunch** channel.
 
-   ![](assets/screen_shot_2019-06-26at114332am.png)
+   ![screen_shot_2019-06-26at114332am](assets/screen_shot_2019-06-26at114332am.png)
 

@@ -29,11 +29,11 @@ The Rich Text Editor (RTE) is a basic building block for inserting textual conte
 
 Selecting a text-based component with a single tap or click will reveal the [component toolbar](/help/sites-authoring/editing-content.md#editmovecopypastedeletetouchoptimizedui) as with any component.
 
-![](assets/screen_shot_2018-03-21at163054.png)
+![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
 Tapping/clicking agin or initially selecting the component with a slow double-tap/click will open in-place editing, which has its own toolbar. Here you can edit the content and make basic formatting changes.
 
-![](assets/screen_shot_2018-03-21at163214.png)
+![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 
 This toolbar provides the following options:
 
@@ -58,7 +58,7 @@ For text-based components, selecting the full screen mode from the [toolbar](#co
 
 Fullscreen mode will show all options of your rich text editor, which can vary [depending on the configuration](/help/sites-administering/rich-text-editor.md).
 
-![](assets/screen_shot_2018-03-21at163248.png)
+![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
 Additional rich text editor options include:
 
@@ -71,5 +71,5 @@ Additional rich text editor options include:
 
 Close fullscreen mode by clicking the minimize icon.
 
-![](assets/screen_shot_2018-03-21at163323.png)
+![screen_shot_2018-03-21at163323](assets/screen_shot_2018-03-21at163323.png)
 

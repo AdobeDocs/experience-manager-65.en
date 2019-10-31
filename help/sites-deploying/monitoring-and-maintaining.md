@@ -99,7 +99,7 @@ The **Purge Versions **tool is available in the ** [Tools](/help/sites-administe
 
 `https://<server>:<port>/etc/versioning/purge.html`
 
-![](assets/screen_shot_2012-03-15at14418pm.png)
+![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
 
 **Start Path** An absolute path on which the purge must be done. You can select the Start Path by clicking the repository tree navigator.
 
@@ -157,7 +157,7 @@ In the next example:
 * The **Shirts **versions are purged because their version age is greater than 2 days.
 * The **Tonga Fashions!** versions are purged because their number of versions is greater than 5.
 
-![](assets/global_version_screenshot.png)
+![global_version_screenshot](assets/global_version_screenshot.png)
 
 ## Working with Audit Records and Log Files {#working-with-audit-records-and-log-files}
 
@@ -449,7 +449,7 @@ Audit records are held to provide a record of who did what and when. Different a
 1. From the sidekick you can select the tab with the lock icon, then double-click on **Audit Log...**
 1. A new window will open showing the list of audit records for the current page.
 
-   ![](assets/screen_shot_2012-02-02at43601pm.png)
+   ![screen_shot_2012-02-02at43601pm](assets/screen_shot_2012-02-02at43601pm.png)
 
 1. Click **OK** when you want to close the window.
 
@@ -463,7 +463,7 @@ These entries hold the same information as shown when editing a page.
 
 OSGi events also generate audit records which can be seen from the **Configuration Status** tab -&gt; **Log Files **tab in the AEM Web Console:
 
-![](assets/screen_shot_2012-02-13at50346pm.png)
+![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
 ## Monitoring Your Replication Agents {#monitoring-your-replication-agents}
 
@@ -485,7 +485,7 @@ To monitor a replication agent:
 
 1. Click the appropriate agent name (which is a link) to show detailed information on that agent:
 
-   ![](assets/chlimage_1.jpeg)
+   ![chlimage_1](assets/chlimage_1.jpeg)
 
    Here you can:
 
@@ -894,7 +894,7 @@ The tool command `jconsole` is available with the JDK.
 
 1. From within the `Local` application, double-click `com.day.crx.quickstart.Main`; the Overview will be shown as default:
 
-   ![](assets/chlimage_1-1.png)
+   ![chlimage_1-1](assets/chlimage_1-1.png)
 
    After this you can select other options.
 
@@ -915,11 +915,11 @@ Since JDK 1.6, the tool command `jvisualvm` is available. After you have install
 
 1. From within the `Local` application, double-click `com.day.crx.quickstart.Main`; the Overview will be shown as default:
 
-   ![](assets/chlimage_1-2.png)
+   ![chlimage_1-2](assets/chlimage_1-2.png)
 
    After this you can select other options, including Monitor:
 
-   ![](assets/chlimage_1-3.png)
+   ![chlimage_1-3](assets/chlimage_1-3.png)
 
 You can use this tool to generate thread dumps and memory head dumps. This information is often requested by the technical support team.
 

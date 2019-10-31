@@ -51,7 +51,7 @@ The assets in the conditions that are rendered based on the applied rules and th
 
    Create Condition page appears.
 
-   ![](assets/createcondition.png)
+   ![createcondition](assets/createcondition.png)
 
 1. Tap **[!UICONTROL Add Assets]**.
 
@@ -65,11 +65,11 @@ The assets in the conditions that are rendered based on the applied rules and th
 
    Create Condition page appears and lists the added assets.
 
-   ![](assets/createconditionassetsadd.png)
+   ![createconditionassetsadd](assets/createconditionassetsadd.png)
 
    You can use the following options to manage assets in a condition:
 
-   ![](assets/createconditionscreenassetsaddedannotated.png)
+   ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
    **[A] Reject Change.** Tap this icon to reject the changes you may have made to the asset and the rule in the condition.
    **[B] Accept Change.** Tap this icon to accept the changes you have made in the asset and rule in the condition.
@@ -81,13 +81,13 @@ The assets in the conditions that are rendered based on the applied rules and th
 
     * **Multiple Results Evaluation Disabled\Multiple Results Evaluation Enabled**: When this option is enabled (appears as "Multiple Results Evaluation Enabled"), all the rules are evaluated and the result is the sum of all the true rules. If this option is disabled (appears as "Multiple Results Evaluation Disabled") then only the first rule that is found to be true is evaluated and becomes the output of the condition.
 
-    * **Page Break**: Select this option ( ![](assets/break.png)) to add a page break between the assets of the conditions. When this option is not selected ( ![](assets/nobreak.png)), if a condition is overflowing to the next page in the print output, the whole condition is shifted to the next page instead of breaking in the page between the assets in the condition.
+    * **Page Break**: Select this option ( ![break](assets/break.png)) to add a page break between the assets of the conditions. When this option is not selected ( ![nobreak](assets/nobreak.png)), if a condition is overflowing to the next page in the print output, the whole condition is shifted to the next page instead of breaking in the page between the assets in the condition.
 
 1. Tap **[!UICONTROL Create Rule]** to add rules to display or hide the assets, as required. To use variables in the rules, see [creating variables](#variables). For more information, see [Adding rules to condition](#ruleeditor).
 
    The created rules appear in the RULE column in the Create Condition screen.
 
-   ![](assets/createconditionscreenrulesadded.png)
+   ![createconditionscreenrulesadded](assets/createconditionscreenrulesadded.png)
 
    >[!NOTE]
    >
@@ -124,14 +124,14 @@ Using rule editor in a condition, you can create rules to display or hide assets
 
 ### Create rule in condition {#create-rule-in-condition}
 
-1. While creating or editing a condition, tap ![](assets/ruleeditoricon.png) (Rule Editor) icon for the relevant asset.
+1. While creating or editing a condition, tap ![ruleeditoricon](assets/ruleeditoricon.png) (Rule Editor) icon for the relevant asset.
 
    The Create Rule dialog appears. In addition to string, number, mathematical expression, and date, the following are also available in the Rule Editor for creating statements of the rules:
 
     * Associated form data model's properties
     * Any [variables](#variables) that you may have created.
 
-   ![](assets/createruledialog.png)
+   ![createruledialog](assets/createruledialog.png)
 
    Select the appropriate option to be evaluated.
 
@@ -146,7 +146,7 @@ Using rule editor in a condition, you can create rules to display or hide assets
 
    Rule to show an asset when policy type is standard
 
-    * While creating or editing a rule, you can also tap ![](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. The expanded, full-window dialog allows you to create [variables](#variables) to construct rules. Tap Resize again to go back to the regular Create Rule dialog.
+    * While creating or editing a rule, you can also tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. The expanded, full-window dialog allows you to create [variables](#variables) to construct rules. Tap Resize again to go back to the regular Create Rule dialog.
 
     * You can also create multiple conditions in a rule.
 
@@ -156,7 +156,7 @@ Using rule editor in a condition, you can create rules to display or hide assets
 
 ## Creating and using variables in a condition {#variables}
 
-While creating or editing a rule in a condition, you can tap ![](assets/icon_resize.png) (Resize) to expand the Create Rule\Edit Rule dialog. The expanded, full-window dialog allows you to:
+While creating or editing a rule in a condition, you can tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule\Edit Rule dialog. The expanded, full-window dialog allows you to:
 
 * Create and use variables in the rule
 * Drag-and-drop form data model's properties and variables in the rule
@@ -165,17 +165,17 @@ Tap Resize again to go back to the Create Rule\Edit Rule dialog.
 
 ### Create variables {#create-variables}
 
-1. While creating or editing a rule in a condition, you can tap ![](assets/icon_resize.png) (Resize) to expand the Create Rule\Edit Rule dialog.
+1. While creating or editing a rule in a condition, you can tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule\Edit Rule dialog.
 
    The Expanded, full-window dialog appears.
 
-   ![](assets/expandededitruledialog.png)
+   ![expandededitruledialog](assets/expandededitruledialog.png)
 
 1. In the left pane, tap **[!UICONTROL Variables]**.
 
    The Variables pane appears.
 
-   ![](assets/expandededitrulevariables.png)
+   ![expandededitrulevariables](assets/expandededitrulevariables.png)
 
 1. Tap **[!UICONTROL Create]**.
 

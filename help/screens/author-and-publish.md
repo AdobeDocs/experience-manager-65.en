@@ -61,31 +61,31 @@ Follow the steps below to create a default replication agent:
 
 1. Navigate to your AEM instance --&gt; hammer icon --&gt; **Operations** --&gt; **Configuration**.
 
-   ![](assets/screen_shot_2019-02-25at24621pm.png)
+   ![screen_shot_2019-02-25at24621pm](assets/screen_shot_2019-02-25at24621pm.png)
 
 1. Select the **Replication** from the left navigation tree.
 
-   ![](assets/screen_shot_2019-02-25at24715pm.png)
+   ![screen_shot_2019-02-25at24715pm](assets/screen_shot_2019-02-25at24715pm.png)
 
 1. Select the **Agents on author** from the **Replication** folder and click **New** to create a new standard replication agent.
 
-   ![](assets/screen_shot_2019-02-25at25400pm.png)
+   ![screen_shot_2019-02-25at25400pm](assets/screen_shot_2019-02-25at25400pm.png)
 
 1. Enter the **Title** and **Name** to create the replication agent and click **Create**.
 
-   ![](assets/screen_shot_2019-02-25at25737pm.png)
+   ![screen_shot_2019-02-25at25737pm](assets/screen_shot_2019-02-25at25737pm.png)
 
 1. Right click the replication agent and click **Open** to edit the settings.
 
-   ![](assets/screen_shot_2019-02-25at30018pm.png)
+   ![screen_shot_2019-02-25at30018pm](assets/screen_shot_2019-02-25at30018pm.png)
 
 1. Click **Edit** to open the **Agent Settings** dialog box to enter the details.
 
-   ![](assets/screen_shot_2019-02-25at30134pm.png)
+   ![screen_shot_2019-02-25at30134pm](assets/screen_shot_2019-02-25at30134pm.png)
 
 1. Navigate to the **Transport** tab and enter the **URI**, **User** and **Password**.
 
-   ![](assets/screen_shot_2019-03-04at34955pm.png)
+   ![screen_shot_2019-03-04at34955pm](assets/screen_shot_2019-03-04at34955pm.png)
 
    >[!NOTE]
    >
@@ -195,7 +195,7 @@ As an example, the following image displays on successful configuration of Activ
 
 If you do not see the following configuration from */system/console/mq*, then navigate to */system/console/mq* and click **Restart** to restart the broker.
 
-![](assets/image-2018-06-18-18-14-55-449.png)
+![image-2018-06-18-18-14-55-449](assets/image-2018-06-18-18-14-55-449.png)
 
 #### Remove referrer header requirement {#remove-referrer-header-requirement}
 
@@ -264,13 +264,13 @@ You can also activate the device from the Device Management Console. Follow the 
 1. Click **Device Manager **from the action bar.
 1. Select the device and click **Activate** from the action bar, as in shown in the figure below.
 
-![](assets/screen_shot_2019-02-21at111036am.png)
+![screen_shot_2019-02-21at111036am](assets/screen_shot_2019-02-21at111036am.png)
 
 >[!NOTE]
 >
 >Alternatively, once you have activated the device you also can edit or update the server URL by clicking **Edit server URL **from the action bar, as shown in the figure below and your changes will be propagated to the AEM Screens player.
 
-![](assets/screen_shot_2019-02-21at105527am.png)
+![screen_shot_2019-02-21at105527am](assets/screen_shot_2019-02-21at105527am.png)
 
 ### Publishing Check list {#publishing-check-list}
 
@@ -304,7 +304,7 @@ Alternatively, you can also update/edit the server URL from the device managemen
 1. Click **Device Manager** from the action bar.
 1. Select the device and click **Edit server URL **from the action bar, as shown in the figure below and your changes will be propagated to the AEM Screens player.
 
-![](assets/screen_shot_2019-02-07at31028pm.png)
+![screen_shot_2019-02-07at31028pm](assets/screen_shot_2019-02-07at31028pm.png)
 
 ## Managing Publication: Delivering Content Updates from Author to Publish to Device {#managing-publication-delivering-content-updates-from-author-to-publish-to-device}
 
@@ -317,15 +317,15 @@ Follow the steps below to deliver content updates from author to publish to devi
 1. Navigate to your AEM Screens project.
 1. Click **Manage Publication** from the action bar to publish the project to publish instance.
 
-   ![](assets/screen_shot_2019-02-25at21420pm.png)
+   ![screen_shot_2019-02-25at21420pm](assets/screen_shot_2019-02-25at21420pm.png)
 
 1. The **Manage Publication** wizard opens. You can select the **Action** and also schedule the publishing time for now or later. Click **Next**.
 
-   ![](assets/screen_shot_2019-02-07at120304pm.png)
+   ![screen_shot_2019-02-07at120304pm](assets/screen_shot_2019-02-07at120304pm.png)
 
 1. Check the box to select the entire project from **Manage Publication** wizard.
 
-   ![](assets/screen_shot_2019-02-25at22712pm.png)
+   ![screen_shot_2019-02-25at22712pm](assets/screen_shot_2019-02-25at22712pm.png)
 
 1. Click **+ Include Children** from the action bar and un-check all the options to publish all the modules in your project and click **Add** to publish.
 
@@ -333,11 +333,11 @@ Follow the steps below to deliver content updates from author to publish to devi
    >
    >By default, all the boxes will be checked and you will have to manually un-check the boxes to publish all the modules in your project.
 
-   ![](assets/screen_shot_2019-02-25at23116pm.png)
+   ![screen_shot_2019-02-25at23116pm](assets/screen_shot_2019-02-25at23116pm.png)
 
 1. Click **Publish** from the **Manage Publication wizard.**
 
-   ![](assets/screen_shot_2019-02-25at23341pm.png)
+   ![screen_shot_2019-02-25at23341pm](assets/screen_shot_2019-02-25at23341pm.png)
 
    >[!NOTE]
    >
@@ -360,7 +360,7 @@ Follow the steps below to deliver content updates from author to publish to devi
 
    Navigate to the project and click **Update Offline Content** from the action bar. This action forwards the same command to publish instance, so that the offline zips are created on the publish instance as well.
 
-   ![](assets/screen_shot_2019-02-25at23451pm.png)
+   ![screen_shot_2019-02-25at23451pm](assets/screen_shot_2019-02-25at23451pm.png)
 
    >[!CAUTION]
    >
@@ -377,15 +377,15 @@ Follow the steps below to deliver content updates from author to publish to devi
 1. Navigate to your Screens project and select the channel.
 1. Click **Manage Publication** from the action bar to publish the channel to publish instance.
 
-   ![](assets/screen_shot_2019-02-07at115800am.png)
+   ![screen_shot_2019-02-07at115800am](assets/screen_shot_2019-02-07at115800am.png)
 
 1. The **Manage Publication** wizard opens. You can select the **Action** and also schedule the publishing time for now or later. Click **Next**.
 
-   ![](assets/screen_shot_2019-02-07at120304pm.png)
+   ![screen_shot_2019-02-07at120304pm](assets/screen_shot_2019-02-07at120304pm.png)
 
 1. Click **Publish** from the **Manage Publication wizard.**
 
-   ![](assets/screen_shot_2019-02-07at120507pm.png)
+   ![screen_shot_2019-02-07at120507pm](assets/screen_shot_2019-02-07at120507pm.png)
 
    >[!NOTE]
    >
@@ -395,7 +395,7 @@ Follow the steps below to deliver content updates from author to publish to devi
 
    Navigate to the channel dashboard and click **Update Offline Content**. This action forwards the same command to publish instance, so that the offline zips are created on the publish instance as well.
 
-   ![](assets/screen_shot_2019-02-07at21608pm.png)
+   ![screen_shot_2019-02-07at21608pm](assets/screen_shot_2019-02-07at21608pm.png)
 
    >[!CAUTION]
    >

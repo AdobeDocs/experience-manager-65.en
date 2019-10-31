@@ -34,7 +34,7 @@ The label that is perceived by screen readers need not necessarily be the same a
 
 To use the Accessibility option, follow these steps:
 
-1. Select a component and tap ![](assets/cmppr.png).
+1. Select a component and tap ![cmppr](assets/cmppr.png).
 1. Click **Accessibility **in the sidebar to choose the desired accessibility option.
 
 ### Accessibility options in form components {#accessibility-options-in-form-components}
@@ -65,7 +65,7 @@ Images can help improve comprehension for some users. However, for users using s
 
 Ensure that the text describes the object and its purpose in the form. A screen reader reads this alternative text when it encounters an image. An image must always have an alternative text specified.
 
-Select an image component and tap ![](assets/cmppr.png). In the sidebar, under Properties, specify alternate text for an image.
+Select an image component and tap ![cmppr](assets/cmppr.png). In the sidebar, under Properties, specify alternate text for an image.
 
 ![Alternate text for an image](assets/image-properties.png)
 

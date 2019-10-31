@@ -38,11 +38,11 @@ Only when signed in as an administrator, or a member with ` [moderator permissio
 
 Access to the Moderation console from a published community site is through an Administration link which appears when a community moderator is signed in.
 
-![](assets/publishweretail.png)
+![publishweretail](assets/publishweretail.png)
 
 By selecting the Administration link, the Moderation console appears :
 
-![](assets/moderationconsole-publish.png)
+![moderationconsole-publish](assets/moderationconsole-publish.png)
 
 ## Author Environment Access {#author-environment-access}
 
@@ -56,7 +56,7 @@ Only when signed in as an administrator, or as a member with ` [moderator permis
 >
 >UGC from the publish environment will only be visible on author if the chosen SRP implements a common store. For example, by default the storage is JSRP, which is not a common store for author and publish. See [Community Content Storage](/help/communities/working-with-srp.md).
 
-![](assets/moderationconsoleauthor.png)
+![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
 ## Moderation Console UI {#moderation-console-ui}
 
@@ -79,12 +79,12 @@ The toolbar, located beneath the top navigation bar, provides the following togg
 
 The toolbar, located beneath the top navigation bar, provides the following toggle switch on the left side:
 
-![](assets/toggleswitch.png)
+![toggleswitch](assets/toggleswitch.png)
 
 [Filter rail](/help/communities/moderation.md#filterrail)
 opens a rail, on selecting Search, which allows a choice of properties on which to filter the content.
 
-![](assets/filterrail.png)
+![filterrail](assets/filterrail.png)
 
 ### Content Area {#content-area}
 
@@ -106,7 +106,7 @@ The content area contains information for posted UGC :
 
 ### Filter Rail {#ootbfilters}
 
-![](assets/chlimage_1-212.png)
+![chlimage_1-212](assets/chlimage_1-212.png)
 
 The side-panel icon opens the filter rail. The filter rail, which appears to the left of the content area, provides different filters, each having an immediate effect on the referenced UGC that appears in the content area.
 
@@ -120,7 +120,7 @@ However if you check **Question** and **Pending**, you will only see content tha
 >
 >Community moderators can bookmark the pre-defined filters on moderation console UI. As these filters are appended toward the end of the URL (as query string parameters), moderators can get back to the bookmarked filters later and also share these links.
 
-![](assets/searchicon.png)
+![searchicon](assets/searchicon.png)
 
 When the filter rail is open, the Search icon toggles the side-panel closed. However to close the filter rail and only view the user generated content, click the Search icon and select the Content Only option.
 
@@ -128,19 +128,19 @@ When the filter rail is open, the Search icon toggles the side-panel closed. How
 
 Content Path limits the reference UGC displayed to the posts placed in specified content repository.
 
-![](assets/content-path.png)
+![content-path](assets/content-path.png)
 
 #### Text search {#text-search}
 
 Text search limits the referenced UGC displayed to posts to which contain the text entered.
 
-![](assets/chlimage_1-213.png)
+![chlimage_1-213](assets/chlimage_1-213.png)
 
 #### Site {#site}
 
 Site limits the referenced UGC displayed to posts to selected community sites. If no sites are checked, then all references to UGC are displayed.
 
-![](assets/chlimage_1-214.png)
+![chlimage_1-214](assets/chlimage_1-214.png)
 
 >[!NOTE]
 >
@@ -166,7 +166,7 @@ Content Type limits the referenced UGC displayed to posts of the selected resour
 * **Idea**
 * **Ideation Comment**
 
-![](assets/content-types.png)
+![content-types](assets/content-types.png)
 
 #### Additional Content Types {#additional-content-types}
 
@@ -182,7 +182,7 @@ To add additional resources on which to filter :
     * for example, to filter on included Voting components, enter:
       `Voting=social/tally/components/hbs/voting`
 
-![](assets/chlimage_1-215.png)
+![chlimage_1-215](assets/chlimage_1-215.png)
 
 * select Save
 * refresh the Communities - Moderation console
@@ -199,7 +199,7 @@ Status limits the referenced UGC displayed to posts of the selected status, whic
 >
 >If only the Not Answered status is selected, then the moderator will see all the content (for all content types) except the answered questions. It is so because the property responsible for the Answered Question does not exist in the case of not-answered questions and other content such as forum topic, blog article, or comments.
 
-![](assets/statuses.png)
+![statuses](assets/statuses.png)
 
 #### Flagging {#flagging}
 
@@ -207,31 +207,31 @@ Flagging limits the referenced UGC displayed to posts which are flagged or hidde
 
 Once a piece of content is flagged, it remains flagged until you unflag that single piece of content by selecting the **Flag **button once again. Note that there are no flagging levels, such as important or followup.
 
-![](assets/chlimage_1-216.png)
+![chlimage_1-216](assets/chlimage_1-216.png)
 
 #### Members {#members}
 
 Members limits the referenced UGC displayed to UGC posted by the member name entered.
 
-![](assets/chlimage_1-217.png)
+![chlimage_1-217](assets/chlimage_1-217.png)
 
 #### Posted in the last {#posted-in-the-last}
 
 Posted In The Last limits the referenced UGC displayed to posts made in the last hour, day, week, month, or year.
 
-![](assets/chlimage_1-218.png)
+![chlimage_1-218](assets/chlimage_1-218.png)
 
 #### Sentiment {#sentiment}
 
 [Sentiment](/help/communities/moderate-ugc.md#sentiment) limits the referenced UGC displayed to posts with a sentiment value that is either positive, negative or neutral.
 
-![](assets/chlimage_1-219.png)
+![chlimage_1-219](assets/chlimage_1-219.png)
 
 ## Custom Filters {#custom-filters}
 
 Apart from the out of the box filters in [Filter Rail](/help/communities/moderation.md#ootbfilters), additional custom filters on metadata can be added to moderation UI. Developers can use the sample code in Github to extend the existing moderation UI filters.
 
-![](assets/custom-tag-filter.png)
+![custom-tag-filter](assets/custom-tag-filter.png)
 
 The [sample project](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) on Github implements Tag filter, to filter the UGC list based on whether the specific tags are applied on user-generated content. You can follow the sample code and build analogous filters for other similar UGC metadata fields.
 
@@ -262,7 +262,7 @@ To expose the custom filters on existing Community sites:
 
 [Moderation actions](/help/communities/moderate-ugc.md#moderation-actions) can be performed on one or more selections made in the content area or when viewing content detail.
 
-To bulk-moderate the posts, in the content area click the Select ( ![](assets/selecticon.png)) icon on a post, which appears on hovering over it with the mouse (desktop) or pressing and holding a finger on the post (mobile). By doing this, you enter the multi-select mode and can now select the subsequent posts to be bulk moderated by simply clicking them. Use the buttons displayed on the toolbar to perform moderation actions on the selected posts. All the actions will prompt for confirmation.
+To bulk-moderate the posts, in the content area click the Select ( ![selecticon](assets/selecticon.png)) icon on a post, which appears on hovering over it with the mouse (desktop) or pressing and holding a finger on the post (mobile). By doing this, you enter the multi-select mode and can now select the subsequent posts to be bulk moderated by simply clicking them. Use the buttons displayed on the toolbar to perform moderation actions on the selected posts. All the actions will prompt for confirmation.
 
 To moderate a single post in the content area, hover over it with the mouse (desktop) or press and hold a finger on the post (mobile) such that buttons appear on the post. When operating on a single content detail, only a delete action will prompt for confirmation.
 
@@ -270,7 +270,7 @@ To moderate a single post in the content area, hover over it with the mouse (des
 
 Enter the bulk selection mode by clicking the `Select` icon on a post:
 
-![](assets/select-icon.png)
+![select-icon](assets/select-icon.png)
 
 To exit the bulk selection mode, select the cancel (x) icon on the toolbar:
 
@@ -282,7 +282,7 @@ The moderation actions that can be performed on multiple posts are:
 
 The icons allowing these actions only appear on the toolbar when multiple posts are selected.
 
-![](assets/bulkmoderate.png)
+![bulkmoderate](assets/bulkmoderate.png)
 
 ### Moderating a single post {#moderating-a-single-post}
 
@@ -305,23 +305,23 @@ Present on the card view above the moderation action icons is the text of the po
 * if has been approved
 * when the UGC was posted
 
-![](assets/singleselectmode.png)
+![singleselectmode](assets/singleselectmode.png)
 
 #### Reply {#reply}
 
-![](assets/chlimage_1-220.png)
+![chlimage_1-220](assets/chlimage_1-220.png)
 
 When working with a single post, a Reply icon will appear if the UGC type supports replies and is configured to allow replies.
 
 #### Allow {#allow}
 
-![](assets/chlimage_1-221.png)
+![chlimage_1-221](assets/chlimage_1-221.png)
 
 When working with a single post, the Allow icon will appear when the post has been either flagged or denied. If flagged, selecting Allow will clear all flags.
 
 #### Deny {#deny}
 
-![](assets/chlimage_1-222.png)
+![chlimage_1-222](assets/chlimage_1-222.png)
 
 The **Deny **moderation action is only available for content that is moderated, and does not appear on unmoderated content except in multi-selection mode.
 
@@ -333,19 +333,19 @@ Content that leaves the pending state can never return to a pending state. Conte
 
 #### Delete {#delete}
 
-![](assets/chlimage_1-223.png)
+![chlimage_1-223](assets/chlimage_1-223.png)
 
 In single selection or bulk mode, you can select items and delete them. The delete action results in a confirmation dialog. Once deleted, those items immediately disappear from the content area. **Once UGC is deleted, it is permanently removed from the repository and cannot later be retrieved.**
 
 #### Close {#close}
 
-![](assets/chlimage_1-224.png)
+![chlimage_1-224](assets/chlimage_1-224.png)
 
 When working with a single post, a Close icon will appear if the UGC type supports the ability to prevent further posts for that resource.
 
 #### Moderation History {#moderation-history}
 
-![](assets/chlimage_1-225.png)
+![chlimage_1-225](assets/chlimage_1-225.png)
 
 When working with a single post, a Moderation History icon will appear when hovering over it. Selecting the icon will display a pane containing a history of actions taken regarding the UGC post.
 
@@ -353,11 +353,11 @@ To return to the content area display of multiple UGC posts, select the X in the
 
 For example :
 
-![](assets/chlimage_1-226.png)
+![chlimage_1-226](assets/chlimage_1-226.png)
 
 #### View Detail {#view-detail}
 
-![](assets/chlimage_1-227.png)
+![chlimage_1-227](assets/chlimage_1-227.png)
 
 When working wtih a single post, more details can be viewed by opening up the UGC in detail mode.
 
@@ -367,5 +367,5 @@ To return to the content area display of multiple UGC posts, select the X in the
 
 For example :
 
-![](assets/chlimage_1-228.png)
+![chlimage_1-228](assets/chlimage_1-228.png)
 

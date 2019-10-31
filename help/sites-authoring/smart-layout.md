@@ -40,7 +40,7 @@ Smart Layout allows you to create variations of your experience that are tailore
 >
 >Variations of the Experience Fragments are created for the various audiences.
 
-![](assets/sl-02-architecture.png) 
+![sl-02-architecture](assets/sl-02-architecture.png) 
 
 ## Prerequisites and Configuration {#prerequisites-and-configuration}
 
@@ -74,7 +74,7 @@ To use Smart Layout you need:
 
 Using Smart Layout follows the work flow:
 
-![](assets/sl-01-mvpworkflow.png)
+![sl-01-mvpworkflow](assets/sl-01-mvpworkflow.png)
 
 To use Smart Layouting to create variations targeted at the appropriate audience there are several stages:
 

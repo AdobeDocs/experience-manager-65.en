@@ -68,15 +68,15 @@ There are various aspects to finding a page; you can navigate and/or search:
 
 1. Navigate down the tree by tapping/clicking on the appropriate page. How the page resources are represented depends on the view you are using - [Card, List, or Column](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
-   ![](assets/screen_shot_2018-03-21at160214.png)
+   ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
 1. Navigate up the tree using [the breadcrumb in the header](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), which allows you to return to the selected location:
 
-   ![](assets/qgtap-01.png)
+   ![qgtap-01](assets/qgtap-01.png)
 
 1. You can also [Search](/help/sites-authoring/search.md) for a page. You can select your page from the results shown.
 
-   ![](assets/qgtap-03.png)
+   ![qgtap-03](assets/qgtap-03.png)
 
 ### Creating a New Page {#creating-a-new-page}
 
@@ -85,7 +85,7 @@ To [create a new page](/help/sites-authoring/managing-pages.md#creating-a-new-pa
 1. [Navigate to the location](#finding-your-page) where you want to create the new page.
 1. Use the **Create** icon and then select **Page** from the list:
 
-   ![](assets/qgtap-02.png)
+   ![qgtap-02](assets/qgtap-02.png)
 
 1. This opens the wizard that will guide you through collecting the information needed when [creating your new page](/help/sites-authoring/managing-pages.md#creating-a-new-page). Follow the on screen instructions.
 
@@ -110,7 +110,7 @@ How to select a page depends on which view you are using in the console:
         * Mobile device: tap-and-hold
         * Desktop: the [quick action](/help/sites-authoring/basic-handling.md#quick-actions) - tick icon:
 
-   ![](assets/screen_shot_2018-03-21at160503.png)
+   ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
     * The card will be overlaid with a tick to show that the page has been selected.
 
@@ -125,7 +125,7 @@ How to select a page depends on which view you are using in the console:
 1. [Navigate to the page](#finding-your-page) you want to take action on.
 1. Hover your mouse pointer over the card that represents your required resource; the quick actions will be shown:
 
-   ![](assets/screen_shot_2018-03-21at160503-1.png)
+   ![screen_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)
 
 ### Editing Your Page Content {#editing-your-page-content}
 
@@ -134,7 +134,7 @@ To edit your page:
 1. [Navigate to the page](#finding-your-page) you want to edit.
 1. [Open your page for editing](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing) using the Edit (pencil) icon:
 
-   ![](assets/screen_shot_2018-03-21at160607.png)
+   ![screen_shot_2018-03-21at160607](assets/screen_shot_2018-03-21at160607.png)
 
    This can be accessed from either:
 
@@ -210,7 +210,7 @@ There are two (main) methods of [editing page properties](/help/sites-authoring/
         * [Quick Actions (Card View/Desktop Only)](#quick-actions-card-view-desktop-only) for the approprate resource.
         * The toolbar when your [page has been selected](#selectiingyourpageforfurtheraction).
 
-  ![](assets/screen_shot_2018-03-21at160850.png)
+  ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
     1. The page properties will be shown. You can make updates as required, then use Save to persist these
 
@@ -219,7 +219,7 @@ There are two (main) methods of [editing page properties](/help/sites-authoring/
     1. Open the **Page Information** menu.
     1. Select **Open Properties** to open the dialog for editing the properties.
 
-  ![](assets/screen_shot_2018-03-21at160920.png)
+  ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
 ### Publishing Your Page (or Unpublishing) {#publishing-your-page-or-unpublishing}
 
@@ -233,20 +233,20 @@ There are two main methods of [publishing your page](/help/sites-authoring/publi
         * [Quick Actions (Card View/Desktop Only)](#quick-actions-card-view-desktop-only) for the approprate resource.
         * The toolbar when your [page has been selected](#selectiingyourpageforfurtheraction) (also gives access to [Publish Later](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
 
-  ![](assets/screen_shot_2018-03-21at160957.png)
+  ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * When [editing your page](#editing-your-page-content):
 
     1. Open the **Page Information** menu.
     1. Select **Publish Page**.
 
-  ![](assets/screen_shot_2018-03-21at161026.png)
+  ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
 * Unpublishing a page from the console can only be done via the **Manage Publication** option, which is only available on the toolbar (not via the quick actions).
 
   The **Unpublish Page** option is still available via the **Page Information** menu in the editor.
 
-  ![](assets/screen_shot_2018-03-21at161059.png)
+  ![screen_shot_2018-03-21at161059](assets/screen_shot_2018-03-21at161059.png)
 
   See [Publishing Pages](/help/sites-authoring/publishing-pages.md#unpublishing-pages) for more information.
 
@@ -288,7 +288,7 @@ These actions can all be triggered by:
 
 For example, the lock icon looks like this:
 
-![](assets/screen_shot_2018-03-21at161124.png) 
+![screen_shot_2018-03-21at161124](assets/screen_shot_2018-03-21at161124.png) 
 
 ### Accessing Page References {#accessing-page-references}
 
@@ -296,11 +296,11 @@ For example, the lock icon looks like this:
 
 1. Select **References** using the toolbar icon (either before or after [selecting your page](#selecting-your-page-for-further-action)):
 
-   ![](assets/screen_shot_2018-03-21at161210.png)
+   ![screen_shot_2018-03-21at161210](assets/screen_shot_2018-03-21at161210.png)
 
    A list of reference types is shown:
 
-   ![](assets/screen-shot_2019-03-05at114412.png)
+   ![screen-shot_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
 
 1. Tap/click on the required type of reference to show more details and (when appropriate) take further actions.
 
@@ -310,11 +310,11 @@ To create a [version](/help/sites-authoring/working-with-page-versions.md) of yo
 
 1. To open the Timeline rail, select ** [Timeline](/help/sites-authoring/basic-handling.md#timeline)** using the toolbar icon (either before or after [selecting your page](#selecting-your-page-for-further-action)):
 
-   ![](assets/screen_shot_2018-03-21at161355.png)
+   ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
 1. Tap/click on the up-arrow at the bottom right of the Timeline column to reveal extra buttons, including **Save as Version**.
 
-   ![](assets/screen-shot_2019-03-05at114600.png)
+   ![screen-shot_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 
 1. Select **Save as Version**, then **Create**.
 
@@ -324,7 +324,7 @@ The same basic mechanism is used when restoring and/or comparing versions of you
 
 1. Select ** [Timeline](/help/sites-authoring/basic-handling.md#timeline)** using the toolbar icon (either before or after [selecting your page](#selecting-your-page-for-further-action)):
 
-   ![](assets/screen_shot_2018-03-21at161355-1.png)
+   ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
    If a version of your page has already been saved, this will be listed in the Timeline. 
 

@@ -123,7 +123,7 @@ The following example walks you through creation of a test suite for testing mul
    >
    >The granite.testing.calvin.af clientlib contains all the adaptive forms APIs. These APIs are part of the calvin namespace.
 
-   ![](assets/1_aftestregistration.png)
+   ![1_aftestregistration](assets/1_aftestregistration.png)
 
 1. Right-click the test node (here **afTestRegistration)** and then click **Create** &gt; **Create File**. Name the file js.txt and click **OK**.
 1. In the js.txt file, add the following text:
@@ -170,7 +170,7 @@ The following example walks you through creation of a test suite for testing mul
    >
    >This example uses a dependency on the client lib granite.testing.calvin.tests for better management. This example also adds a client lib category, "granite.testing.hobbes.tests.testForm" to reuse this client lib, if necessary.
 
-   ![](assets/2_testformproperties.png)
+   ![2_testformproperties](assets/2_testformproperties.png)
 
 1. Right-click the folder you have created for the test form (here testForm) and select **Create** &gt; **Create File**. Name the file scriptingTest.js and add the following code to the file and click **Save All.**
 
@@ -281,27 +281,27 @@ You can also install the package in the attached file SampleTestPackage.zip to a
 
 Tests Suites can be run individually. When you run a Test Suite, the page changes as the Test Cases and their Actions are executed and the results appear after completion of the test. Icons indicate the results.
 
-A checkmark icon indicates a passed test: ![](assets/checkmark.png)
+A checkmark icon indicates a passed test: ![checkmark](assets/checkmark.png)
 
-An "X" icon indicates a failed test: ![](assets/cross.png)
+An "X" icon indicates a failed test: ![cross](assets/cross.png)
 
 To run a Test Suite:
 
 1. In the Tests panel, click or tap the name of the Test Case that you want to run to expand the deatils of the Actions.
 
-   ![](assets/1_tapnameoftestcase.png)
+   ![1_tapnameoftestcase](assets/1_tapnameoftestcase.png)
 
-1. Click or tap the Run tests button. ![](assets/runtestcase.png)
+1. Click or tap the Run tests button. ![runtestcase](assets/runtestcase.png)
 
-   ![](assets/2_clickrun.png)
+   ![2_clickrun](assets/2_clickrun.png)
 
 1. The placeholder is replaced with page content as the test executes.
 
-   ![](assets/3_pagecontent.png)
+   ![3_pagecontent](assets/3_pagecontent.png)
 
 1. Review the results of the Test Case by tapping or clicking the description to open the Result panel. Tapping or clicking the name of your Test Case in the Result panel shows all details.
 
-   ![](assets/4_reviewresults.png)
+   ![4_reviewresults](assets/4_reviewresults.png)
 
 The steps for testing your AEM adaptive forms are similar to steps for testing your AEM UI. For more information on testing your adaptive forms, see the following topics in [Testing Your UI](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
 

@@ -13,7 +13,7 @@ docset: aem65
 
 # Tutorial: Create templates{#tutorial-create-templates}
 
- ![](assets/07-apply-rules-to-adaptive-form_small.png)
+ ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
 This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
@@ -49,7 +49,7 @@ Based on the [use case](/help/forms/using/create-your-first-interactive-communic
 * Pay Now: Includes an image
 * Value Added Services: Includes an image
 
-![](assets/create_print_template.gif)
+![create_print_template](assets/create_print_template.gif)
 
 These subforms are displayed as target areas in the Print template after uploading the XDP file to the Forms server. All entities such as document fragments, charts, layout fragments, and images are added to target areas while creating the Interactive Communication.
 
@@ -195,7 +195,7 @@ Based on the [use case](/help/forms/using/create-your-first-interactive-communic
 * Pay Now: Includes a **Pay Now** button and an image
 * Value Added Services: Includes an image and a **Subscribe** button.
 
-![](assets/create_web_template.gif)
+![create_web_template](assets/create_web_template.gif)
 
 All the entities such as document fragments, charts, tables, images, and buttons are added while creating the Interactive Communication.
 

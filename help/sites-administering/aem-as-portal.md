@@ -183,20 +183,20 @@ To configure a replication agent for the portal:
 1. In the Websites tab, click the *Tools* tab.
 1. Click **New Page...** in the replication agents **New...** menu.
 
-   ![](assets/screen_shot_2012-02-15at40647pm.png)
+   ![screen_shot_2012-02-15at40647pm](assets/screen_shot_2012-02-15at40647pm.png)
 
 1. In *Template*, select *Replication Agent*, and enter a name for the agent. Click *Create*.
 
-   ![](assets/screen_shot_2012-02-15at40817pm.png)
+   ![screen_shot_2012-02-15at40817pm](assets/screen_shot_2012-02-15at40817pm.png)
 
 1. Double-click the replication agent you just created. It displays as invalid as it has not yet been configured.
 
-   ![](assets/screen_shot_2012-02-15at41001pm.png)
+   ![screen_shot_2012-02-15at41001pm](assets/screen_shot_2012-02-15at41001pm.png)
 
 1. Click **Edit.**
 1. In the **Settings** tab, select the **Enabled** check box, select **Dispatcher Flush **as the serialization type, and enter a retry timeout (for example, 60000).
 
-   ![](assets/screen_shot_2012-02-15at42101pm.png)
+   ![screen_shot_2012-02-15at42101pm](assets/screen_shot_2012-02-15at42101pm.png)
 
 1. Click the **Transport** tab.
 1. In the **URI **field, enter the flush URI (URL) of the portlet. The URI is in the following form:
@@ -205,11 +205,11 @@ To configure a replication agent for the portal:
    https://<wps-host>:<port>/<wps-context>/<cq5-portlet-context>/cqbridge/cqpcache
    ```
 
-   ![](assets/screen_shot_2012-02-15at42322pm.png)
+   ![screen_shot_2012-02-15at42322pm](assets/screen_shot_2012-02-15at42322pm.png)
 
 1. Click the **Extended** tab.
 
-   ![](assets/screen_shot_2012-02-15at42515pm.png)
+   ![screen_shot_2012-02-15at42515pm](assets/screen_shot_2012-02-15at42515pm.png)
 
 1. In the **HTTP Method** field, type **GET**.
 1. In the **HTTP Headers** field, click **+** to add a new entry and type **Path: {path}**.
@@ -217,7 +217,7 @@ To configure a replication agent for the portal:
 1. Click **OK** to save changes.
 1. To test the connection, click the **Test Connection** link. A log message appears that indicates whether the replication test succeeded. For example:
 
-   ![](assets/screen_shot_2012-02-15at42639pm.png)
+   ![screen_shot_2012-02-15at42639pm](assets/screen_shot_2012-02-15at42639pm.png)
 
 #### Manually Flushing the Portlet Cache {#manually-flushing-the-portlet-cache}
 
@@ -347,7 +347,7 @@ To enable SSO authentication in a AEM portlet:
 1. In the Configuration menu, select Day Portal Director Authenticator from the list of available configurations.
 1. In Mode, select SSO. Leave the other parameters with their default values.
 
-   ![](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
 1. Click Save to enable SSO for the portlet.
 
@@ -669,7 +669,7 @@ Add the portlet component to the paragraph system so that it is available to aut
 
 1. In the **General** component category, select the check box next to the Portlet component and click OK.
 
-![](assets/chlimage_1-25.jpeg)
+![chlimage_1-25](assets/chlimage_1-25.jpeg)
 
 ### Configuring and deploying your portlet applications {#configuring-and-deploying-your-portlet-applications}
 
@@ -721,7 +721,7 @@ Use the Portal component to add a portlet window to your web page. Use the compo
 
 1. Click **OK**. The portlet displays on your AEM page.
 
-   ![](assets/chlimage_1-136.png)
+   ![chlimage_1-136](assets/chlimage_1-136.png)
 
 ## Installing, Configuring, and Using AEM in a Portlet {#installing-configuring-and-using-aem-in-a-portlet}
 
@@ -775,7 +775,7 @@ To configure the portlet:
     * **Author Is Used As Publish**: Is the author instance used as a publish
       instance (for development)?
 
-   ![](assets/chlimage_1-137.png)
+   ![chlimage_1-137](assets/chlimage_1-137.png)
 
 1. Click **Save**. You can now add the portlet to portal pages and use the portal.
 

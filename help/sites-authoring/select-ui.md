@@ -75,7 +75,7 @@ When using the touch-enabled UI desktop users might want to revert to the classi
 
   For examples, the links from **Sites** to **siteadmin**:
 
-  ![](assets/syui-01.png)
+  ![syui-01](assets/syui-01.png)
 
 * **URL**
 
@@ -100,7 +100,7 @@ When using the touch-enabled UI desktop users might want to revert to the classi
 
 If enabled, **Open the Classic UI** is available from the **Page Information** dialog:
 
-![](assets/syui-02.png)
+![syui-02](assets/syui-02.png)
 
 ### UI Overrides for the Editor {#ui-overrides-for-the-editor}
 

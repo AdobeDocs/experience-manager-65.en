@@ -65,7 +65,7 @@ Note that
 
 ## Notifications from Following {#notifications-from-following}
 
-![](assets/chlimage_1-243.png)
+![chlimage_1-243](assets/chlimage_1-243.png)
 
 The **Follow **button provides a means to follow entries as activities, subscriptions and/or notifications. Each time the **Follow **button is selected, it is possible to toggle on or off a selection. The `Email Subscriptions` selection is only present when configured.
 
@@ -88,17 +88,17 @@ By selecting the Notification Settings link from the Notifications page, it is p
 
 The web channel is always enabled.
 
-![](assets/chlimage_1-244.png)
+![chlimage_1-244](assets/chlimage_1-244.png)
 
 The email channel, which relies on proper [configuration of email](/help/communities/email.md), provides the same settings as for the web channel.
 
 The email channel is off by default.
 
-![](assets/chlimage_1-245.png)
+![chlimage_1-245](assets/chlimage_1-245.png)
 
 It may be turned on by a member, but still depends on email being configured.
 
-![](assets/chlimage_1-246.png)
+![chlimage_1-246](assets/chlimage_1-246.png)
 
 ## Viewing Notifications {#viewing-notifications}
 
@@ -108,13 +108,13 @@ A [wizard created community site](/help/communities/sites-console.md) now includ
 
 When visiting the published site, selecting the `Notifications` link will display all notifications for the member.
 
-![](assets/chlimage_1-247.png)
+![chlimage_1-247](assets/chlimage_1-247.png)
 
 ### Email Notifications {#email-notifications}
 
 When the email channel is enabled, the member receives an email which contains a link to the content on the web.
 
-![](assets/chlimage_1-248.png)
+![chlimage_1-248](assets/chlimage_1-248.png)
 
 ## Customize email notifications {#customize-email-notifications}
 

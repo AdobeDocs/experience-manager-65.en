@@ -62,17 +62,17 @@ The following key points below helps to configure and AEM server to be ready to 
 
 1. Navigate to **Adobe Experience Manager Web Console Configuration **via AEM instance --&gt; hammer icon --&gt; **Operations** --&gt; **Web Console**.
 
-   ![](assets/screen_shot_2019-07-31at91253am.png)
+   ![screen_shot_2019-07-31at91253am](assets/screen_shot_2019-07-31at91253am.png)
 
 1. **Adobe Experience Manager Web Console Configuration** opens. Search for sling referrer.
 
    For searching the sling referrer property, press **Command+F** for **Mac** and **Control+F** for **Windows**.
 
-   ![](assets/screen_shot_2019-07-31at91728am.png)
+   ![screen_shot_2019-07-31at91728am](assets/screen_shot_2019-07-31at91728am.png)
 
 1. Check the **Allow Empty **option, as shown in the figure below.
 
-   ![](assets/screen_shot_2019-07-31at91807am.png)
+   ![screen_shot_2019-07-31at91807am](assets/screen_shot_2019-07-31at91807am.png)
 
 1. Click **Save** to enable the Apache Sling Referrer Filter Allow Empty.
 
@@ -85,7 +85,7 @@ AEM Screens requires TOUCH UI and will not work with CLASSIC UI of Adobe Experie
 
 Alternatively, you can also perform the same setting using*&lt;yourAuthorInstance&gt; *-&gt;* tools (hammer icon)* -&gt; **Operations** -&gt;** Web Console** and search for **WCM Authoring UI Mode Service**.
 
-![](assets/screen_shot_2018-12-04at22425pm.png)
+![screen_shot_2018-12-04at22425pm](assets/screen_shot_2018-12-04at22425pm.png)
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Follow the steps below to configure ***DeviceServiceImpl***:
 
 1. **Adobe Experience Manager Web Console Configuration **opens. Search for deviceservice. For searching the property, press **Command+F** for **Mac** and **Control+F** for **Windows**.
 
-![](assets/screen_shot_2019-07-31at92058am.png)
+![screen_shot_2019-07-31at92058am](assets/screen_shot_2019-07-31at92058am.png)
 
 #### Dispatcher Configuration {#dispatcher-configuration}
 

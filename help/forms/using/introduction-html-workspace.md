@@ -19,7 +19,7 @@ Forms workflow increases organizational efficiency by automating and providing v
 
 AEM Forms workspace is compatible with more devices and form factors. It allows for task management on clients without Flash® Player and Adobe® Reader®. It facilitates rendition of HTML Forms in addition to PDF forms.
 
-![](assets/html-ws.png)
+![html-ws](assets/html-ws.png)
 
 **Key capabilities**:
 

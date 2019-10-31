@@ -41,7 +41,7 @@ The body cells are text boxes, by default. You can replace a body cell with any 
 
 For example, the first body row in the following table includes text box, date picker, and drop-down list components as cells.
 
-![](assets/row-cell-types.png)
+![row-cell-types](assets/row-cell-types.png)
 
 You can merge two or more body cells by selecting the cells you want to merge, right-click, and select **Merge**. Also, you can split a merged cell by right-clicking it and selecting **Split Cells**.
 
@@ -57,7 +57,7 @@ To add or delete a row or column or move a row, click any cell in the row or col
 
 The drop-down menu for the row also provides the Edit operation to edit row properties, settings, and styling options.
 
-![](assets/add-delete-move-row-column.png)
+![add-delete-move-row-column](assets/add-delete-move-row-column.png)
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ The drop-down menu for the row also provides the Edit operation to edit row prop
 
 You can add a description of the table to explain how the information is organized that screen readers can interpret and read out. To add the description:
 
-1. Select the table and tap ![](assets/cmppr.png) to see its properties in the sidebar.
+1. Select the table and tap ![cmppr](assets/cmppr.png) to see its properties in the sidebar.
 1. Specify summary in the Accessibility tab.
 1. Click **Done**.
 
@@ -106,9 +106,9 @@ To enable sorting:
 
 You can define the style for a table by using the Style mode in the page toolbar. Perform the following steps to switch to style mode and edit the table styling
 
-1. In the page toolbar, before Preview, tap ![](assets/canvas-drop-down.png) &gt; **Style**.
+1. In the page toolbar, before Preview, tap ![canvas-drop-down](assets/canvas-drop-down.png) &gt; **Style**.
 
-1. In the sidebar select table and tap the edit button ![](assets/edit-button.png).
+1. In the sidebar select table and tap the edit button ![edit-button](assets/edit-button.png).
    You can see the styling properties in the sidebar.
 
 ![Styling properties of a table](assets/style-table.png)
@@ -121,13 +121,13 @@ You can define the style for a table by using the Style mode in the page toolbar
 
 Tables provide out-of-the box support for dynamically adding or deleting rows at runtime.
 
-1. Select a table row and tap ![](assets/cmppr.png).
+1. Select a table row and tap ![cmppr](assets/cmppr.png).
 1. In the Repeat settings tab, specify the minimum and maximum counts to limit the number of rows in the table.
 1. Click **Done**.
 
 At runtime, you will see **+** and *-* buttons to add or delete a row.
 
-![](assets/add-delete-rows-dynamically.png)
+![add-delete-rows-dynamically](assets/add-delete-rows-dynamically.png)
 
 >[!NOTE]
 >
@@ -181,11 +181,11 @@ In the Collapsible column layout, the columns in the table collapse to show one 
 
 The following images compare how a table looks on a device with collapsed and expanded columns.
 
-![](assets/collapsed-column.png)
+![collapsed-column](assets/collapsed-column.png)
 
 Collapsed columns of a table with only two columns showing up on a mobile device
 
-![](assets/collapsible_column.png)
+![collapsible_column](assets/collapsible_column.png)
 
 Expanded column of a table on a mobile device
 
@@ -195,7 +195,7 @@ Tables in adaptive forms allow you to populate the table at runtime using data f
 
 Let’s take example of the following bank transaction summary table that we want to populate with data from an XML file.
 
-![](assets/data-merge-table.png)
+![data-merge-table](assets/data-merge-table.png)
 
 In this example, the Element name property for:
 
@@ -270,7 +270,7 @@ To merge this data with the table at runtime, we need to point the adaptive form
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&wcmmode=disabled*
 
-![](assets/data-merged-table.png)
+![data-merged-table](assets/data-merged-table.png)
 
 ## Use XDP components and XSD complex types {#use-xdp-components-and-xsd-complex-types}
 

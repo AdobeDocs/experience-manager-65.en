@@ -259,11 +259,11 @@ The following table describes the device, browser, and playback method of videos
 
 The following graphic shows the overall authoring workflow of videos that are uploaded and encoded by way of DMGateway (in Dynamic Media Hybrid mode) and made available for public consumption.
 
-![](assets/chlimage_1-181.png)
+![chlimage_1-181](assets/chlimage_1-181.png)
 
 ## Hybrid publishing architecture for videos {#hybrid-publishing-architecture-for-videos}
 
-![](assets/chlimage_1-182.png)
+![chlimage_1-182](assets/chlimage_1-182.png)
 
 ## Best practices for encoding videos {#best-practices-for-encoding-videos}
 
@@ -454,7 +454,7 @@ To configure Google Cloud settings:
 1. On the Dashboard page, to the right of **Google Cloud Platform**, click the Project drop-down list to open the Select a Project dialog box.
 1. In the Select a project dialog box, tap **New Project**.
 
-   ![](assets/6_5_googleaccount-newproject.png)
+   ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
 1. In the New Project dialog box, in the Project Name field, type the name of your new project.
 
@@ -467,17 +467,17 @@ To configure Google Cloud settings:
     * On your project’s Dashboard, in the Getting Started card, tap **Explore and enable APIs**.
     * On your project's Dashboard, in the APIs card, tap **Go to APIs overview**.
 
-   ![](assets/6_5_googleaccount-apis-enable2.png)
+   ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Near the top of the APIs & Services page, tap **Enable APIs and Services**.
 1. On the API Library page, on the left side, under **Category**, tap **YouTube**. On the right side of the page, tap **YouTube Data API**.
 1. On the YouTube Data API v3 page, tap **Enable**.
 
-   ![](assets/6_5_googleaccount-apis-enable3.png)
+   ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
 1. To use the API, you may need credentials. If necessary, click **Create Credentials**.
 
-   ![](assets/6_5_googleaccount-apis-createcredentials.png)
+   ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
 
 1. On the **Add credentials to your project** page, step 1, do the following:
 
@@ -487,7 +487,7 @@ To configure Google Cloud settings:
 
     * From the **What data will you be accessing?** drop-down list, tap **User data**.
 
-   ![](assets/6_5_googleaccount-apis-createcredentials2.png)
+   ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. Tap **What credentials do I need?**
 1. On the **Add credentials to your project** page, step 2, under the **Create an OAuth 2.0 client ID** heading, in the Name field, enter a unique name if desired. Or, you can use the default name specified by Google.
@@ -499,7 +499,7 @@ To configure Google Cloud settings:
 
    **Note**: The path examples above is intended for illustration purposes only.
 
-   ![](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
+   ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
 
 1. Under the **Authorized redirect URIs** heading, in the text field, enter the following path, substituting your own domain and port number in the path, then press **Enter** to add the path to the list:
 
@@ -512,7 +512,7 @@ To configure Google Cloud settings:
 1. Click **Create OAuth client ID**.
 1. On the **Add credentials to your project** page, step 3, under the **Set up the OAuth 2.0 consent screen** heading, select the Gmail email address that you are currently using.
 
-   ![](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
+   ![6_5_googleaccount-apis-createcredentials-consentscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
 
 1. Under the **Product name shown to users** heading, in the text field, enter what you want to show on the consent screen.
 
@@ -521,7 +521,7 @@ To configure Google Cloud settings:
 1. Click **Continue**.
 1. On the Add credentials to your project page, step 4, under the **Download credentials** heading, tap **Download**.
 
-   ![](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
+   ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
 
 1. Save the `client_id.json` file.
 
@@ -590,7 +590,7 @@ Starting with AEM 6.4, a new touch user interface method was introducted to set 
    You specified the project ID when you initially configured Google Cloud settings earlier.
    Leave the Create YouTube Configuration page open; you will return to it in a moment.
 
-   ![](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
+   ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
 1. Using a plain text editor, open the JSON file that you downloaded and saved earlier in the task [Configuring Google Cloud settings](/help/assets/video.md#configuring-google-cloud-settings).
 1. Select and copy the entire JSON text.
@@ -833,19 +833,19 @@ To monitor progress (including failed encoding/YouTube publish):
 
     * In card view, video encoding progress displays on the asset by percent. If there is an error, this information also displays on the asset.
 
-   ![](assets/chlimage_1-183.png)
+   ![chlimage_1-183](assets/chlimage_1-183.png)
 
     * In list view, video encoding progress displays in the **Processing Status** column. If there is an error, this message displays in that same column.
 
-   ![](assets/chlimage_1-184.png)
+   ![chlimage_1-184](assets/chlimage_1-184.png)
 
    This column does not display by default. To enable the column, select **View Settings** from the views drop-down menu, and add the **Processing Status** column and tap or click **Update**.
 
-   ![](assets/chlimage_1-185.png)
+   ![chlimage_1-185](assets/chlimage_1-185.png)
 
 1. View progress in the asset details. When you tap or click an asset, open the drop-down menu and select **Timeline**. To narrow it down to workflow activities like encoding or YouTube publishing, select **Workflows**.
 
-   ![](assets/chlimage_1-186.png)
+   ![chlimage_1-186](assets/chlimage_1-186.png)
 
    Any workflow information--such as encoding--displays in the timeline. For YouTube publish, the Workflow timeline also includes the name of the YouTube channel and the YouTube video URL. In addition, you see any failure notifications in the Workflow timeline after the publish is complete.
 
@@ -865,11 +865,11 @@ To monitor progress (including failed encoding/YouTube publish):
    >
    >You may need administrative rights to access the **Tools** menu.
 
-   ![](assets/chlimage_1-187.png)
+   ![chlimage_1-187](assets/chlimage_1-187.png)
 
    Select the instance and tap or click **Open History**.
 
-   ![](assets/chlimage_1-188.png)
+   ![chlimage_1-188](assets/chlimage_1-188.png)
 
    From the Workflow Instances area, you can also suspend, terminate, or rename workflows. See [Administering workflows](/help/sites-administering/workflows-administering.md) for more information.
 
@@ -879,7 +879,7 @@ To monitor progress (including failed encoding/YouTube publish):
    >
    >You may need administrative rights to access the **Tools** menu.
 
-   ![](assets/chlimage_1-189.png)
+   ![chlimage_1-189](assets/chlimage_1-189.png)
 
    >[!NOTE]
    >
@@ -900,7 +900,7 @@ To monitor progress (including failed encoding/YouTube publish):
    >
    >You may need administrative rights to access the **Tools** menu.
 
-   ![](assets/chlimage_1-190.png)
+   ![chlimage_1-190](assets/chlimage_1-190.png)
 
 1. You may receive email notifications about aborted or failed workflow jobs. These email notifications are configurable by an administrator. See [Configuring email notifications](#configuring-e-mail-notifications).
 
@@ -921,15 +921,15 @@ How you configure notification depends on whether you want notifications for enc
 1. Near the upper-right corner of the Publish to YouTube workflow page, tap **Edit**.
 1. Hover the mouse pointer on the YouTube Upload component, then tap once to display the inline toolbar.
 
-   ![](assets/6_5_publishtoyoutubeworkflow.png)
+   ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
 
 1. On the inline toolbar, tap the Configuration icon (wrench). Click the **Arguments** tab.
 
-   ![](assets/6_5_publishtoyoutubeworkflow-configurationicon.png)
+   ![6_5_publishtoyoutubeworkflow-configurationicon](assets/6_5_publishtoyoutubeworkflow-configurationicon.png)
 
 1. In the YouTube Upload Process - Step Properties dialog box, tap the **Arguments** tab.
 
-   ![](assets/6_5_publishtoyoutubeworkflow-arguments-tab.png)
+   ![6_5_publishtoyoutubeworkflow-arguments-tab](assets/6_5_publishtoyoutubeworkflow-arguments-tab.png)
 
 1. You can select or clear the following check boxes:
 

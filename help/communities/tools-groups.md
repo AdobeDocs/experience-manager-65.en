@@ -45,7 +45,7 @@ This will bring up the Site Editor panel which contains 3 sub-panels:
 
 ### Basic Info {#basic-info}
 
-![](assets/chlimage_1-137.png)
+![chlimage_1-137](assets/chlimage_1-137.png)
 
 On the Basic Info panel, a name, description and whether the template is enabled or disabled are configured:
 
@@ -62,7 +62,7 @@ On the Basic Info panel, a name, description and whether the template is enabled
 
 #### Thumbnail {#thumbnail}
 
-![](assets/chlimage_1-138.png)
+![chlimage_1-138](assets/chlimage_1-138.png)
 
 (Optional) Select the Upload Image icon to display a Thumbnail along with the Name and Description to creators of community sites.
 

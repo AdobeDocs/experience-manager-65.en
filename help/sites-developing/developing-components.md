@@ -489,6 +489,6 @@ For this reason, it is quite easy to make any existing documentation markdown yo
 
 All you need to do is place a `README.md` file in the component structure. This markdown will then be displayed in the [component console](/help/sites-authoring/default-components-console.md).
 
-![](assets/chlimage_1-7.png)
+![chlimage_1-7](assets/chlimage_1-7.png)
 
 The supported markdown is the same as that for [content fragments](/help/assets/content-fragments-markdown.md).

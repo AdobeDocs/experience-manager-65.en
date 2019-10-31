@@ -59,11 +59,11 @@ Completely integrated into AEM, AEM Assets lets you do the following:
 
 AEM Assets is fully integrated with CQ WCM and functionality is available using the DAM icon:
 
-![](assets/screen_shot_2012-04-17at15946pm.png) ![](assets/screen_shot_2012-04-17at20100pm.png)
+![screen_shot_2012-04-17at15946pm](assets/screen_shot_2012-04-17at15946pm.png) ![screen_shot_2012-04-17at20100pm](assets/screen_shot_2012-04-17at20100pm.png)
 
 Assets managed within CQ DAM can then be accessed via the content finder of WCM:
 
-![](assets/screen_shot_2012-04-17at20214pm.png)
+![screen_shot_2012-04-17at20214pm](assets/screen_shot_2012-04-17at20214pm.png)
 
 >[!NOTE]
 >

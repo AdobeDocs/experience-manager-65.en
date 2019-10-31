@@ -45,7 +45,7 @@ To author a web channel template Complete the following steps:
 
 1. Create a Template folder to keep your Interactive Communication web templates, if you do not already have one. For more information, see Template Folders in [Page Templates - Editable](/help/sites-developing/page-templates-editable.md).
 
-    1. Tap **[!UICONTROL Tools]** ![](assets/tools.png) > **[!UICONTROL Configuration Browser]**. **[!UICONTROL]**
+    1. Tap **[!UICONTROL Tools]** ![tools](assets/tools.png) > **[!UICONTROL Configuration Browser]**. **[!UICONTROL]**
     1. In the Configuration Browser page, tap **[!UICONTROL Create]**.
     1. In the Create Configuration dialog, specify a title for the folder, check **[!UICONTROL Editable Templates]**, and tap **[!UICONTROL Create]**.
 
@@ -64,13 +64,13 @@ To author a web channel template Complete the following steps:
 
        The Template Editor appears.
 
-       ![](assets/webchanneltemplate.png)
+       ![webchanneltemplate](assets/webchanneltemplate.png)
 
        When creating or editing a template, there are various aspects that a Template Author can define. Creating or editing a template is similar to page authoring. For more information, see Editing Templates - Template Authors in [Creating Page Templates](/help/sites-authoring/templates.md).
 
 1. To allow usage of this template for Interactive Communication creation, enable the template.
 
-    1. Tap **[!UICONTROL Tools]** ![](assets/tools.png) > **[!UICONTROL Templates]**.
+    1. Tap **[!UICONTROL Tools]** ![tools](assets/tools.png) > **[!UICONTROL Templates]**.
     1. Navigate to the appropriate template, select it, and tap **[!UICONTROL Enable]** and in the alert message, tap **[!UICONTROL Enable]**.
 
        The template is enabled and its status is displayed as Enabled. Now you can proceed to creating an Interactive Communication where you can use the newly created web channel template.

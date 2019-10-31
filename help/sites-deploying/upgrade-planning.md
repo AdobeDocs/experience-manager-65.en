@@ -93,7 +93,7 @@ A lot of work goes into planning and executing an AEM upgrade. In order to clari
 
 With any new release, there are potential changes to the UI and user workflows that may be introduced. Additionally, new releases introduce new features that may be beneficial for the business to leverage. We recommend reviewing the functional changes that have been introduced and organizing a plan to train your users on leveraging them effectively.
 
-![](assets/unu_cropped.png)
+![unu_cropped](assets/unu_cropped.png)
 
 New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/release-notes/release-notes.md). Make sure to note any changes to UIs or product features that are commonly used in your organization. As you look through the new features, also take note of any that can be of value to your organization. After looking through what has changed in AEM 6.5, develop a training plan for your authors. This could involve leveraging freely available resources like the helpx feature videos or formal training offered through [Adobe Digital Learning Services](https://www.adobe.com/training.html).
 
@@ -101,7 +101,7 @@ New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/rel
 
 Each customer's implementation of AEM is unique and has been customized to meet their business requirements. As a result, it is important to determine all of the customizations that have been made to the system so that they can be included in a test plan. This test plan will power the QA process that we perform on the upgraded instance.
 
-![](assets/test-plan.png)
+![test-plan](assets/test-plan.png)
 
 The exact production environment needs to be duplicated and testing should be performed on it after the upgrade to make sure all applications and custom code still run as desired. You need to regress all your customization and execute performance, load and security testing. When organizing your test plan, make sure to cover all customizations that have been made to the system in addition to out of the box UIs and workflows that are leveraged in your day to day operations. These can include custom OSGI services and servlets, integrations to the Adobe Marketing Cloud, integrations with third parties through AEM connectors, custom third party integrations, custom components and templates, custom UI overlays in AEM, and custom workflows. For customers migrating from a version prior to AEM 6, any custom queries should be analyzed as these may need to be indexed. For customers who are already on an AEM 6.x version, these queries should still be tested to ensure that their indexes are continuing to work effectively after upgrading.
 
@@ -109,7 +109,7 @@ The exact production environment needs to be duplicated and testing should be pe
 
 When upgrading, it is possible that you may also need to upgrade other components in your technical stack such as the operating system or JVM. Additionally, it is possible that due to changes in the repository makeup that additional hardware may be required. This usually only comes up for customers migrating from pre 6.x instances but is important to consider. Finally, there may be changes needed to your operational practices including monitoring, maintenance, and backup and disaster recovery processes.
 
-![](assets/doi_cropped.png)
+![doi_cropped](assets/doi_cropped.png)
 
 Review the Technical Requirements for AEM 6.5 and ensure that your current hardware and software will be sufficient. For potential changes to your operational processes, see the following documents:
 
@@ -143,7 +143,7 @@ There are two approaches you can take to assessing the complexity of the upgrade
 
 After the initial assessment, a more comprehensive next step could be to perform an upgrade on a test instance and perform some basic smoke testing. Adobe also provides some . Additionally, the list of [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md) should be reviewed not only for the version that you are upgrading to, but also for any versions between your source and target versions. For example, if upgrading from AEM 6.2 to 6.5, it is important to review the AEM 6.3 deprecated and removed features in addition to those for AEM 6.5.
 
-![](assets/trei_cropped.png)
+![trei_cropped](assets/trei_cropped.png)
 
 The Pattern Detector introduced in recently should give you a fairly accurate estimate of what to expect during an upgrade for most cases. However, for more complex customizations and deployments where you have incompatible changes you can upgrade a development instance to AEM 6.5 according to the instructions in [Performing an In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md). Once complete, perform some high-level smoke testing on this environment. The goal of this exercise is not to exhaustively complete the test case inventory and produce a formal inventory of defects but to give us a rough estimate of the amount of work that will be required to upgrade the code for 6.5 compatibility. When combined with the [Pattern Detection](/help/sites-deploying/pattern-detector.md) and the architectural changes that were determined in the previous section, a rough estimate can be provided to the project management team for planning the upgrade.
 
@@ -151,7 +151,7 @@ The Pattern Detector introduced in recently should give you a fairly accurate es
 
 While Adobe has documented the process for upgrading an AEM instance, each customer's network layout, deployment architecture and customizations will require fine-tuning and tailoring of this approach. For this reason, we encourage you to review all of the documentation that we have provided and use it to inform a project specific runbook that outlines the specific upgrade and rollback procedures that you will be following in your environment. If upgrading from CRX2, make sure to evaluate how long the content migration will take when moving from CRX2 to Oak. For large repositories, it could be substantial.
 
-![](assets/runbook-diagram.png)
+![runbook-diagram](assets/runbook-diagram.png)
 
 We have provided upgrade and rollback procedures in [Upgrade Procedure](/help/sites-deploying/upgrade-procedure.md) as well as step-by-step instructions for applying the upgrade in Performing an [In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md). These instructions should be reviewed and taken into consideration with your system architecture, customizations, and downtime tolerance to determine the appropriate switch-over and rollback procedures that you will be executing during the upgrade. Any changes to architecture or server sizes should be included when drafting your customized runbook. It is important to note that this should be treated as a first draft. As your team completes their QA and development cycles and deploys the upgrade to the staging environment, it is likely that the need for some additional steps may be required. Ideally, this document should contain enough information such that if it were handed to a member of your operations staff, they would be able to complete the upgrade completely from the information contained within.
 
@@ -159,7 +159,7 @@ We have provided upgrade and rollback procedures in [Upgrade Procedure](/help/si
 
 We can use the output from the previous exercises to build a project plan covering the expected timelines for our test or development efforts, training, and actual upgrade execution.
 
-![](assets/develop-project-plan.png)
+![develop-project-plan](assets/develop-project-plan.png)
 
 A comprehensive project plan should include:
 
@@ -176,7 +176,7 @@ A comprehensive project plan should include:
 
 We have provided procedures for [Upgrading Code and Customizations](/help/sites-deploying/upgrading-code-and-customizations.md) to be compatible with AEM 6.5. As this iterative process is executed, changes should be made to the runbook as needed. Also see [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md) on information on how your customizations can stay backward compatible in most cases without requiring development immediately after upgrade.
 
-![](assets/patru_cropped.png)
+![patru_cropped](assets/patru_cropped.png)
 
 The development and testing process is usually an iterative one. Due to customizations, changes made during the upgrade could potentially make an entire section of the product unusable. Once developers have addressed the root cause of the issue and the testing team has access to test these features, there is potential for discovering additional problems. As issues are discovered that require adjustments to the upgrade process, make sure to add them to your custom upgrade runbook. After several iterations of testing and fixing, the code base should be fully validated and ready for deployment to the staging environment.
 
@@ -184,7 +184,7 @@ The development and testing process is usually an iterative one. Due to customiz
 
 We recommend a final round of testing after the codebase has been certified by your organization's QA team. This round of testing will involve validating your runbook on a staging environment followed by rounds of user acceptance, performance, and security testing.
 
-![](assets/cinci_cropped.png)
+![cinci_cropped](assets/cinci_cropped.png)
 
 This step is vital as it is the only time that you are able to validate the steps in the runbook against a production-like environment. Once the environment has been upgraded, it is important to allow end-users some time to log in and go through the activities they do when using the system in their day-to-day activities. It is not uncommon for users to be leveraging a part of the system that was not previously considered. Finding and correcting issues in these areas before go-live can help to prevent costly production outages. As a new version of AEM contains significant changes to the underlying platform, it is also important to perform performance, load and security tests on the system as if we were launching it for the first time.
 
@@ -192,6 +192,6 @@ This step is vital as it is the only time that you are able to validate the step
 
 Once final sign off has been received from all stakeholders, it is time to execute on the runbook procedures that have been defined. We have provided steps for upgrade and rollback in [Upgrade Procedure](/help/sites-deploying/upgrade-procedure.md) and installation steps in Performing an [In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md) as a reference point.
 
-![](assets/perform-upgrade.png)
+![perform-upgrade](assets/perform-upgrade.png)
 
 We have provided some steps in the upgrade instructions for environment validation. These include basic checks like scanning the upgrade logs and verifying that all OSGi bundles have properly started, but we recommend also validating with your own test cases based on your business processes. We also recommend checking the schedule of AEM's Online Revision Cleanup and related routines to ensure that they will be occurring during a quiet time for your company. These routines are essential to the long-term performance of AEM.

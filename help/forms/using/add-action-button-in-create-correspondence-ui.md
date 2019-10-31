@@ -444,6 +444,6 @@ After you have configured the action and button for sending the letter for revie
 
 3. Click **Submit**.
 
-![](assets/sendreview.png)
+![sendreview](assets/sendreview.png)
 
 The reviewer receives an email from the system with the letter as a PDF attachment.

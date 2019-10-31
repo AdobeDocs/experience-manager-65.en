@@ -28,21 +28,21 @@ You add Dynamic Media assets directly to the page if you are using AEM as your W
 Adding a Dynamic Media, Interactive Media, Panoramic Media, or Video 360 Media component to a page is the same as adding a component to any page. The Dynamic Media components are described in the following sections.
 
 1. In AEM, open the page where you want to add the Dynamic Media component.
-1. In the left pane, tap the **Components **icon, then filter for Dynamic Media.
+1. In the left pane, tap the **Components** icon, then filter for Dynamic Media.
 
    If no Dynamic Media components are available, you need to enable the Dynamic Media components. See [Editing Page Templates](/help/sites-authoring/templates.md#editing-templates-template-authors) for more information.
 
-   ![](assets/6_5_360video_wcmcomponent.png)
+   ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. Drag a **Dynamic Media** component and drop it in the desired location on the page.
 
    In the example below, the **Video 360 Media** component is being used.
 
-   ![](assets/6_5_360video_wcmcomponentdrag.png)
+   ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
 
-1. Hover the mouse pointer directly on the component. When the component is surrounded by a blue box, tap once to display the component's toolbar. Tap the** Configuration** (wrench)** **icon**.**
+1. Hover the mouse pointer directly on the component. When the component is surrounded by a blue box, tap once to display the component's toolbar. Tap the **Configuration (wrench)** icon.
 
-   ![](assets/6_5_360video_wcmcomponentconfigure.png)
+   ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
 
 1. Depending on the Dynamic Media component you dropped onto the page, a configuration dialog box opens. [Set the component's options](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components) as necessary.
 
@@ -60,7 +60,7 @@ You can localize Dynamic Media components in one of two ways:
 
 * Within a web page in Sites, open **Properties** and select the **Advanced** tab. Select the desired language for localization.
 
-  ![](assets/chlimage_1-172.png)
+  ![chlimage_1-172](assets/chlimage_1-172.png)
 
 * From the site selector, select the desired page or page group. Tap **Properties** and select the **Advanced** tab. Select the desired language for localization.
 
@@ -76,14 +76,14 @@ The Dynamic Media components that are available include the following:
 
 * Dynamic Media - Use for such assets as images, video, eCatalogs, and spin sets.
 * Interactive Media - Use for any interactive assets such as interactive video, interactive images, or carousel sets.
-* Panormic Media - Use for panoramic image or panoramic VR image assets.
+* Panoramic Media - Use for panoramic image or panoramic VR image assets.
 * Video 360 Media - Use for 360 video and 360 VR video assets.
 
 >[!NOTE]
 >
 >These components are not available by default and need to be made available by way of the template editor before using. [After they are made available i](/help/sites-authoring/templates.md#editing-templates-template-authors)n the template editor, you can add the components to your page as you would any other AEM component.
 
-![](assets/6_5_dynamicmediawcmcomponents.png)
+![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
 ### Dynamic Media component {#dynamic-media-component}
 
@@ -113,7 +113,7 @@ You can also configure the viewer preset, image preset, or image format directly
 
 You can edit the following Dynamic Media Settings by tapping the **Edit** icon in the component and then **Dynamic Media Settings**.
 
-![](assets/dm-settings-image-preset.png)
+![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
@@ -155,13 +155,13 @@ This option is not available if you are viewing image sets, spin sets, or mixed 
 
 Use the Dynamic Media component to add dynamic video to your web pages. When you edit the component you can choose to use a predefined video viewer preset for playing the video on the page.
 
-![](assets/chlimage_1-173.png)
+![chlimage_1-173](assets/chlimage_1-173.png)
 
 You can edit the following Dynamic Media Settings by clicking **Edit** in the component.
 
 >[!NOTE]
 >
->By default, the Dynamic Media video component is adaptive. If you want to make it a fixed size, set it in the component with the **Width** and **Height **in** **the** Advanced **tab.
+>By default, the Dynamic Media video component is adaptive. If you want to make it a fixed size, set it in the component with the **Width** and **Height** in the **Advanced** tab.
 
 **Viewer preset** Select an existing video viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you may need to make it visible. See Managing Viewer Presets.
 
@@ -184,7 +184,7 @@ Use the Dynamic Media component to add Smart Crop image assets to your web pages
 
 See also [Image Profiles](/help/assets/image-profiles.md).
 
-![](assets/dm-settings-smart-crop.png)
+![dm-settings-smart-crop](assets/dm-settings-smart-crop.png)
 
 You can edit the following Dynamic Media Setting by clicking **Edit** in the component.
 
@@ -227,7 +227,7 @@ The Interactive Media component is smart - depending on whether you add an image
 >
 >You can, however, use the same viewer preset for all Interactive Media components that use assets of the same type, within the page.
 
-![](assets/chlimage_1-174.png)
+![chlimage_1-174](assets/chlimage_1-174.png)
 
 You can edit the following **General** settings by clicking **Edit** in the component.
 
@@ -265,7 +265,7 @@ Both the aspect ratio and keyword criteria apply to panoramic assets for the ass
 >
 >You can, however, use the same viewer preset for all Panoramic Media components that use assets of the same type, within the page.
 
-![](assets/panoramic-media-viewer-preset.png)
+![panoramic-media-viewer-preset](assets/panoramic-media-viewer-preset.png)
 
 You can edit the following** **setting by clicking **Configure** in the component.
 
@@ -281,7 +281,7 @@ During playback on a flat display the user has control of the viewing angle; pla
 
 The viewer includes native support for the delivery of 360 video assets. By default, no additional configuration is necessary for viewing or playback. You deliver 360 Video using standard video extensions such as .mp4, .mkv, and .mov. The most common codec is H.264.
 
-![](assets/6_5_360video_wcmcomponent-1.png)
+![6_5_360video_wcmcomponent-1](assets/6_5_360video_wcmcomponent-1.png)
 
 You can edit the following** **setting by clicking **Configure** in the component.
 
@@ -295,7 +295,7 @@ HTTP/2 is the new, updated web protocol that improves the way browsers and serve
 
 See [HTTP2 Delivery of Content](/help/assets/http2.md) for complete details on getting started using HTTP/2 with your Dynamic Media account.
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Using the Video Player in AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/help/assets/dynamic-media-video-player-feature-video-use.html)
 >* [Using Interactive Video with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/help/assets/dynamic-media-interactive-video-feature-video-use.html)

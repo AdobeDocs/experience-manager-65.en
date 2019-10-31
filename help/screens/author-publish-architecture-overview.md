@@ -40,7 +40,7 @@ AEM Screens architecture resembles a traditional AEM Sites architecture. Content
 
 The following diagram illustrates the author and publish environments.
 
-![](assets/screen_shot_2019-03-04at30236pm.png)
+![screen_shot_2019-03-04at30236pm](assets/screen_shot_2019-03-04at30236pm.png)
 
 ## Architectural Design {#architectural-design}
 
@@ -59,7 +59,7 @@ Standard replication agents are used to replicate screens channel content, locat
 
 The following diagram illustrates the replication process:
 
-![](assets/screen_shot_2019-03-04at33935pm.png)
+![screen_shot_2019-03-04at33935pm](assets/screen_shot_2019-03-04at33935pm.png)
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ Registration continues to originate on the AEM author instance. AEM Screens Devi
 
 Once a device has been registered on the author environment the device configuration and channel/schedule assignments are replicated to the AEM publish instances. The AEM Screens Device configuration is then updated to point to the Load Balancer in front the AEM publish farm. This is intended to be a one-time setup, once the Screens Device is successfully connected to the publish environment it can continue to recieve commands originating from the author environment and there should be no need to ever connect the Screens device to the author environment directly.
 
-![](assets/screen_shot_2019-02-25at15218pm.png)
+![screen_shot_2019-02-25at15218pm](assets/screen_shot_2019-02-25at15218pm.png)
 
 ### The Next Steps {#the-next-steps}
 

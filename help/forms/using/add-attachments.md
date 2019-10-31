@@ -16,7 +16,7 @@ docset: aem65
 
 ## Adding attachments in forms synced with AEM Forms Workflow server (AEM Forms on JEE) {#adding-annotations}
 
-AEM Forms app lets you attach images, scribbled notes, and text notes to your form synced with AEM Forms JEE server. If your form is loaded from an AEM Forms Workflow server, your attachments are added to the form. You can tap the attachment button ![](assets/attachments-app.png) to see all the attachments in a form together. The red notification specifies the number of attachments in the form. If there are no attachments in the form, you cannot see the red notifications button. If there are no attachments in the form, when you tap the attachments button ![](assets/attch.png), you get options to attach photos or scribbles.
+AEM Forms app lets you attach images, scribbled notes, and text notes to your form synced with AEM Forms JEE server. If your form is loaded from an AEM Forms Workflow server, your attachments are added to the form. You can tap the attachment button ![attachments-app](assets/attachments-app.png) to see all the attachments in a form together. The red notification specifies the number of attachments in the form. If there are no attachments in the form, you cannot see the red notifications button. If there are no attachments in the form, when you tap the attachments button ![attch](assets/attch.png), you get options to attach photos or scribbles.
 
 Your options are:
 
@@ -24,7 +24,7 @@ Your options are:
 
 * **Camera**: Lets you take a picture and add it to the form.  
 
-* **Notes**: Lets you add a scribble or a text note. Use ![](assets/scribble.png) to add a scribble, and ![](assets/keyboard.png) to add a text note.
+* **Notes**: Lets you add a scribble or a text note. Use ![scribble](assets/scribble.png) to add a scribble, and ![keyboard](assets/keyboard.png) to add a text note.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Your options are:
 
 ### The Attachments screen {#the-attachments-screen}
 
-To see all the attachments in a place, tap ![](assets/attachments-app.png). You can add, rename, and delete attachments here. 
+To see all the attachments in a place, tap ![attachments-app](assets/attachments-app.png). You can add, rename, and delete attachments here. 
 
 ![All attachments in a place](assets/attachments-screen.png)
 
@@ -43,15 +43,15 @@ You can use the **+ **button in the Attachments screen to attach another picture
 
 You can use the camera of your mobile device or saved pictures in your device to attach a picture in the form.
 
-1. Tap the attachment button ![](assets/attch.png) at the bottom of the window.
+1. Tap the attachment button ![attch](assets/attch.png) at the bottom of the window.
 1. Tap **Gallery** or **Camera** in the pop-up that appears. 
 1. Based on the option you select, perform the following:
 
     1. If you select **Camera**.
 
-       Take a photograph. Then tap the **Use** ![](assets/use-pic.png) button.
+       Take a photograph. Then tap the **Use** ![use-pic](assets/use-pic.png) button.
 
-       Or tap the **Retake ** ![](assets/retake.png) button to retake the photograph.
+       Or tap the **Retake ** ![retake](assets/retake.png) button to retake the photograph.
     
     1. If you select **Gallery**.
 
@@ -61,7 +61,7 @@ You can use the camera of your mobile device or saved pictures in your device to
 
 The **Notes** option lets you add freehand scribbles and text attachments in your form.
 
-1. Tap the attachment button ![](assets/attch.png) at the bottom of the window.
+1. Tap the attachment button ![attch](assets/attch.png) at the bottom of the window.
 1. Tap **Notes** in the pop-up that appears.
 1. In the Notes user interface that is launched, capture a freehand scribble.
 
@@ -74,7 +74,7 @@ The **Notes** option lets you add freehand scribbles and text attachments in you
     * **Clear**: Clears the screen.
     * **Done button**: Attaches the current scribble.
     * **Cancel button**: Discards the current scribble and exits the Scribble user interface.
-    * ![](assets/keyboard.png): Clears the scribble and lets you add a text note.
+    * ![keyboard](assets/keyboard.png): Clears the scribble and lets you add a text note.
 
    ![Keyboard in AEM Forms app scribble](assets/keyboard-inapp.png)
 

@@ -40,7 +40,7 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/essentials-comments.md#essentials-for-client-side) are included, this is how the `Comments`component appears.
 
-![](assets/chlimage_1-143.png)
+![chlimage_1-143](assets/chlimage_1-143.png)
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ When the [required client-side libraries](/help/communities/essentials-comments.
 
 Select the placed `Comments` component to access and select the `Configure` icon which opens the edit dialog.
 
-![configure icon](assets/configure.png) ![](assets/commentssettings.png)
+![configure icon](assets/configure.png) ![commentssettings](assets/commentssettings.png)
 
 #### Comments tab {#comments-tab}
 
@@ -155,7 +155,7 @@ Once the custom resource types are known, enter [Design Mode](/help/sites-author
 
 Under the **Resource Types **tab, specify the custom resourceType for new instances of the `Comments or Voting`components:
 
-![](assets/chlimage_1-144.png)
+![chlimage_1-144](assets/chlimage_1-144.png)
 
 * **Comment Resource Type**
 

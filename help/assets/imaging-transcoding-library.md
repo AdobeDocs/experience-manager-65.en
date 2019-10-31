@@ -141,15 +141,15 @@ The command line arguments for Imaging Transcoding Library can include the follo
 1. From the **Workflow Models** page, open the **DAM Update Asset** workflow model in edit mode.
 1. Open the **Process Thumbnails** workflow process step. In the **Thumbnails** tab, add the MIME types for which you want to skip the default thumbnail generation process in the **Skip Mime Types** list. For example, if you want to create thumbnails for a JPEG image using Imaging Transcoding Library, specify `skip:image/jpeg` in the **Skip Mime Types** field.
 
-   ![](assets/skip_mime_types-1.png)
+   ![skip_mime_types-1](assets/skip_mime_types-1.png)
 
 1. In the **Web Enabled Image** tab, add the MIME types for which you want to skip the default web rendition generation process in **Skip List**. For example, if you skipped MIME type `image/jpeg` in step 6, add `image/jpeg` to the skip list.
 
-   ![](assets/skip_web_renditions.png)
+   ![skip_web_renditions](assets/skip_web_renditions.png)
 
 1. Open the **EPS thumbnails (powered by ImageMagick)** step navigate to the **Arguments** tab. In the **Mime Types** list, add the MIME types you want Imaging Transcoding Library to process. For example, if you skipped the MIME type `image/jpeg` in step 6, add image/jpeg to the **Mime Types** list.
 
-   ![](assets/process_arguments.jpg)
+   ![process_arguments](assets/process_arguments.jpg)
 
 1. Add commands to SwitchEngine Handler using one of the following ways:
 
@@ -160,15 +160,15 @@ The command line arguments for Imaging Transcoding Library can include the follo
     1. `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
     1. `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
 
-   ![](assets/chlimage_1-63.png)
+   ![chlimage_1-63](assets/chlimage_1-63.png)
 
     * Generate thumbnails from an intermediate rendition using a single command. The intermediate rendition acts as source to generate static and web renditions. This method is faster than the earlier method. However, you cannot apply custom parameters to thumbnails using this method.
 
-   ![](assets/chlimage_1-64.png)
+   ![chlimage_1-64](assets/chlimage_1-64.png)
 
    To generate web renditions, configure parameters in the** Web-Enabled Image** tab as depicted in the following image.
 
-   ![](assets/web_enabled_imagetab.png)
+   ![web_enabled_imagetab](assets/web_enabled_imagetab.png)
 
 1. Save the workflow.
 

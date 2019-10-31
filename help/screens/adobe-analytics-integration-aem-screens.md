@@ -54,7 +54,7 @@ An AEM Screens customers wants to understand what content was shown at what time
 
 The following architectural diagram explains the Adobe Analytics Integration with AEM Screens:
 
-![](assets/screen_shot_2018-09-12at85611am.png)
+![screen_shot_2018-09-12at85611am](assets/screen_shot_2018-09-12at85611am.png)
 
 ## Enabling Adobe Analytics in AEM Screens {#enabling-adobe-analytics-in-aem-screens}
 
@@ -62,7 +62,7 @@ The Adobe Analytics settings can be configured from the OSGi console.
 
 Navigate to **Adobe Experience Manager Web Console Configuration** to configure Adobe Analytics for AEM Screens, as shown in the figure below:
 
-![](assets/screen_shot_2018-09-04at25550pm.png)
+![screen_shot_2018-09-04at25550pm](assets/screen_shot_2018-09-04at25550pm.png)
 
 ## Screens Analytics: Enablement Flow {#screens-analytics-enablement-flow}
 

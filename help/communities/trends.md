@@ -43,17 +43,17 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When first placed on a page of a community site, this is how the component appears :
 
-![](assets/chlimage_1-54.png)
+![chlimage_1-54](assets/chlimage_1-54.png)
 
 ### Configuring Community Activity List  {#configuring-community-activity-list}
 
 Select the placed `Community Activity List` component to access and select the `Configure` icon which opens the edit dialog.
 
-![](assets/chlimage_1-55.png)
+![chlimage_1-55](assets/chlimage_1-55.png)
 
 Under the **Comments **tab, specify if and how comments for uploaded files appear :
 
-![](assets/chlimage_1-56.png)
+![chlimage_1-56](assets/chlimage_1-56.png)
 
 * **Type**
 
@@ -120,5 +120,5 @@ Under the **Comments **tab, specify if and how comments for uploaded files appea
 
 **Trending Content** config: Type = Content, Activity type = Posts
 
-![](assets/chlimage_1-57.png)
+![chlimage_1-57](assets/chlimage_1-57.png)
 

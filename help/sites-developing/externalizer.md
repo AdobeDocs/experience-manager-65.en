@@ -37,7 +37,7 @@ To define a domain mapping for the **Externalizer** service:
    >
    >The direct link to the configuration is `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`
 
-   ![](assets/aem-externalizer-01.png)
+   ![aem-externalizer-01](assets/aem-externalizer-01.png)
 
 1. Define a **Domains** mapping: a mapping consists of a unique name that can be used in the code to reference the domain, a space and the domain:
 

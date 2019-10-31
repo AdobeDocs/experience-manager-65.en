@@ -31,7 +31,7 @@ The Long Running Processes report displays the AEM Forms processes that have tak
 1. To view the list of pre-defined reports in Process Reporting, on the **Process Reporting** tree view, click the **Reports **node.
 1. Click the **Long Running Processes** report node.
 
-   ![](assets/long_running_node.png)
+   ![long_running_node](assets/long_running_node.png)
 
    When you select a report, the **Report Parameters** panel is displayed to the right of the tree view.
 
@@ -47,7 +47,7 @@ The Long Running Processes report displays the AEM Forms processes that have tak
 
    The report displays in the **Report **panel on the right of the **Process Reporting** window.
 
-   ![](assets/long_running_processes.png)
+   ![long_running_processes](assets/long_running_processes.png)
 
    Use the options in the upper right corner of the **Report **panel to perform the following operations on the report.
 
@@ -64,7 +64,7 @@ The Process Duration report displays the number of instances of a Forms process 
 1. To view the pre-defined reports in Process Reporting, on the **Process Reporting** tree view, click the **Reports **node.
 1. Click the **Processes Duration** report node.
 
-   ![](assets/process_duration_node.png)
+   ![process_duration_node](assets/process_duration_node.png)
 
    When you select a report, the **Report Parameters** panel is displayed to the right of the tree view.
 
@@ -78,7 +78,7 @@ The Process Duration report displays the number of instances of a Forms process 
 
    The report displays in the **Report **panel on the right of the Process Reporting window.
 
-   ![](assets/process_duration_report.png)
+   ![process_duration_report](assets/process_duration_report.png)
 
    Use the options in the upper right corner of the **Report **panel to perform the following operations on the report.
 
@@ -95,7 +95,7 @@ The Workflow Volume report displays the number of currently running and complete
 1. To view the pre-defined reports in Process Reporting, on the **Process Reporting **tree view, click the **Reports **node.
 1. Click the **Workflow Volume** report node.
 
-   ![](assets/workflow_volume_node.png)
+   ![workflow_volume_node](assets/workflow_volume_node.png)
 
    When you select a report, the **Report Parameters** panel is displayed to the right of the tree view.
 
@@ -113,7 +113,7 @@ The Workflow Volume report displays the number of currently running and complete
 
    The report displays in the **Report **panel on the right of the **Process Reporting** window.
 
-   ![](assets/workflow_volume_report.png)
+   ![workflow_volume_report](assets/workflow_volume_report.png)
 
    Use the options in the upper right corner of the **Report **panel to perform the following operations on the report.
 

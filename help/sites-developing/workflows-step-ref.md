@@ -79,7 +79,7 @@ The following properties are available for many workflow step components, on the
 
 The **AND Split** creates a split in the workflow, after which both branches will be active. You add workflow steps to each branch as required. This step enables you to introduce multiple processing paths into the workflow. For example, you can allow certain review steps to occur in parallel, so saving time.
 
-![](assets/wf-26.png)
+![wf-26](assets/wf-26.png)
 
 ### AND Split - Configuration {#and-split-configuration}
 
@@ -92,7 +92,7 @@ To configure the split:
 
 * Add workflow steps to the branches as required.
 
-  ![](assets/wf-27.png)
+  ![wf-27](assets/wf-27.png)
 
 ## Container Step {#container-step}
 
@@ -100,7 +100,7 @@ A container step starts another workflow model that executes as a child workflow
 
 This container can allow you to reuse workflow models to implement common sequences of steps. For example a translation workflow model could be used in multiple editing workflows.
 
-![](assets/wf-28.png)
+![wf-28](assets/wf-28.png)
 
 ### Container Step - Configuration {#container-step-configuration}
 
@@ -333,7 +333,7 @@ You can store widget data in the workflow payload or in the work item metadata. 
 
    `/apps/myapp/workflow/dialogs/EmailWatch/cq:dialog`
 
-   ![](assets/wf-30.png)
+   ![wf-30](assets/wf-30.png)
 
 1. **Example Dialog Definition**
 
@@ -367,7 +367,7 @@ You can store widget data in the workflow payload or in the work item metadata. 
 
    This example will, in the case of the touch-enabled UI, result in a dialog such as:
 
-   ![](assets/chlimage_1-70.png)
+   ![chlimage_1-70](assets/chlimage_1-70.png)
 
 ### Dynamic Participant Step {#dynamic-participant-step}
 
@@ -541,7 +541,7 @@ The form can be located anywhere in the repository, however workflow users must 
 
 The **Random Participant Chooser** step is a participant chooser that assigns the generated work item to a user that is randomly selected from a list.
 
-![](assets/wf-31.png)
+![wf-31](assets/wf-31.png)
 
 #### Random Participant Chooser - Configuration {#random-participant-chooser-configuration}
 
@@ -566,7 +566,7 @@ To configure the step, edit using the following tabs:
 
 A **Process Step** executes an ECMAScript or calls an OSGi service to perform automatic processing.
 
-![](assets/wf-32.png)
+![wf-32](assets/wf-32.png)
 
 ### Process Step - Configuration {#process-step-configuration}
 

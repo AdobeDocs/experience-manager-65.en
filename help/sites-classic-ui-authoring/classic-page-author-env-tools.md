@@ -21,7 +21,7 @@ The authoring environment of AEM provides various mechanisms for organizing and 
 
 The **Websites** console allows you to manage and navigate your website. Using the two panes the structure of your website can be expanded and actions taken on the required element:
 
-![](assets/chlimage_1-108.png)
+![chlimage_1-108](assets/chlimage_1-108.png)
 
 ## Editing your Page Content {#editing-your-page-content}
 
@@ -29,7 +29,7 @@ There is a separate page editor with the classic UI, using the content finder an
 
 `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-![](assets/chlimage_1-109.png)
+![chlimage_1-109](assets/chlimage_1-109.png)
 
 ## Accessing Help {#accessing-help}
 
@@ -51,7 +51,7 @@ Or by using the **Help** button in the edit dialog of specific components; this 
 
 The **Components** tab of the sidekick allows you to browse the components available to be added to the current page. The required group can be expanded, then a component dragged to the required location on the page.
 
-![](assets/chlimage_1-110.png)
+![chlimage_1-110](assets/chlimage_1-110.png)
 
 ## The Content Finder {#the-content-finder}
 
@@ -77,7 +77,7 @@ This tab lists any images in the repository.
 
 After you have created an Image paragraph on your page, you can drag an item and drop it into the paragraph.
 
-![](assets/chlimage_1-111.png)
+![chlimage_1-111](assets/chlimage_1-111.png)
 
 ### Finding Documents {#finding-documents}
 
@@ -85,7 +85,7 @@ This tab lists any documents in the repository.
 
 After you have created a Download paragraph on your page, you can drag an item and drop it into the paragraph.
 
-![](assets/chlimage_1-112.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Finding Movies {#finding-movies}
 
@@ -93,37 +93,37 @@ This tab lists any movies (for example, Flash items) in the repository.
 
 After you have created an appropriate paragraph (for example, Flash) on your page, you can drag an item and drop it into the paragraph.
 
-![](assets/chlimage_1-113.png)
+![chlimage_1-113](assets/chlimage_1-113.png)
 
 ### Products {#products}
 
 This tab lists any products. After you have created an appropriate paragraph (for example, Product) on your page, you can drag an item and drop it into the paragraph.
 
-![](assets/chlimage_1-114.png)
+![chlimage_1-114](assets/chlimage_1-114.png)
 
 ### Finding Pages {#finding-pages}
 
 This tab shows all pages. Double-click any page to open it for editing.
 
-![](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 ### Referencing Paragraphs from other Pages {#referencing-paragraphs-from-other-pages}
 
 This tab allows you to search for another page. All paragraphs from that page will be listed. You can then drag a paragraph to your current page, this will create a reference to the original paragraph.
 
-![](assets/chlimage_1-116.png)
+![chlimage_1-116](assets/chlimage_1-116.png)
 
 ### Using the Full Repository View {#using-the-full-repository-view}
 
 This tab shows all the resources in the repository.
 
-![](assets/chlimage_1-117.png)
+![chlimage_1-117](assets/chlimage_1-117.png)
 
 ### Using Search with the Content Browser {#using-search-with-the-content-browser}
 
 On all options you can search for specific items. Any tags and any resources that match the search pattern are listed:
 
-![](assets/screen_shot_2012-02-08at100746am.png)
+![screen_shot_2012-02-08at100746am](assets/screen_shot_2012-02-08at100746am.png)
 
 You can also use wildcards for search. Supported wildcards are:
 
@@ -162,11 +162,11 @@ To show direct page references:
 
 1. In the sidekick, select the **Page** tab icon.
 
-   ![](assets/screen_shot_2012-02-16at83127pm.png)
+   ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
 1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
 
-   ![](assets/screen_shot_2012-02-16at83311pm.png)
+   ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
 In certain situations further actions are available from Sidekick, including:
 
@@ -181,7 +181,7 @@ Other [inter-page relationships can be seen in the Websites console](/help/sites
 
 The **Audit Log** can be accessed from the **Information** tab of the sidekick. It lists the recent actions taken on the current page; for example:
 
-![](assets/chlimage_1-118.png)
+![chlimage_1-118](assets/chlimage_1-118.png)
 
 ## Page Information {#page-information}
 

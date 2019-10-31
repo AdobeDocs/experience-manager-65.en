@@ -59,7 +59,7 @@ The following template options are available while using the wizard such as:
 
 The following example shows the creation of a Sequence Channel (C*hannelOne*) for a Screens project (*DemoProject*).
 
-![](assets/demochannel.gif)
+![demochannel](assets/demochannel.gif)
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ You can edit, view properties and dashboard, copy, preview, and delete a channel
 >
 >Click on the icon on the left to select an item. For example, click on the icon for channel and perform the following actions, as shown in the figure below.
 
-![](assets/screen_shot_2019-07-24at103723am.png)
+![screen_shot_2019-07-24at103723am](assets/screen_shot_2019-07-24at103723am.png)
 
 ### Adding/Editing Content to a Channel {#adding-editing-content-to-a-channel}
 
@@ -90,7 +90,7 @@ To add or edit content in a channel, follow the steps below:
 >
 >You can add components to your channel. Refer to ** [Adding Components to a Channel](/help/screens/adding-components-to-a-channel.md)** for more details.
 
-![](assets/demochannel1.gif)
+![demochannel1](assets/demochannel1.gif)
 
 **Uploading Videos to the Channel** Follow the steps below to upload videos to your channel:
 
@@ -109,7 +109,7 @@ To view or edit properties of a channel, follow the steps below:
 1. Click on the Channel you want to edit.
 1. Click **Properties **from the action bar to view/edit the channel properties. The following tabs allow you to change the options.
 
-![](assets/properties.gif)
+![properties](assets/properties.gif)
 
 ### Viewing Dashboard {#viewing-dashboard}
 
@@ -118,7 +118,7 @@ To view dashboard of a channel, follow the steps below:
 1. Click on the Channel you want to edit.
 1. Click **Dashboard **from the action bar to view the dashobard. The **CHANNEL INFORMATION**,** ASSIGNED DISPLAYS**,** **and** PENDING LAUNCHES **panel opens, as shown in the figure below:
 
-![](assets/dashboard.gif)
+![dashboard](assets/dashboard.gif)
 
 ### Channel Information {#channel-information}
 
@@ -126,7 +126,7 @@ The Channel Information panel describes the Channel properties, along with the p
 
 Click on the (**...**) in the **Channel Information** action bar to view properties, edit the content, or to update cache (offline content) for the channel.
 
-![](assets/screen_shot_2017-12-20at82048am.png)
+![screen_shot_2017-12-20at82048am](assets/screen_shot_2017-12-20at82048am.png)
 
 ### Online and Offline Channels {#online-and-offline-channels}
 
@@ -144,31 +144,31 @@ Follow the steps below to make the channel online:
 
    Select the channel.
 
-   ![](assets/screen_shot_2019-08-01at31406pm.png)
+   ![screen_shot_2019-08-01at31406pm](assets/screen_shot_2019-08-01at31406pm.png)
 
    Click **Dashboard** from the action bar to view the status of the player. The **CHANNEL INFORMATION **panel provides information on whether the channel is online or offline.
 
-   ![](assets/screen_shot_2019-08-01at31458pm.png)
+   ![screen_shot_2019-08-01at31458pm](assets/screen_shot_2019-08-01at31458pm.png)
 
 1. Click **Properties** from the action bar and navigate to the **Channel** tab as shown below:
 
-   ![](assets/screen_shot_2019-08-01at31542pm.png)
+   ![screen_shot_2019-08-01at31542pm](assets/screen_shot_2019-08-01at31542pm.png)
 
 1. Check the **Developer** **mode (force channel to be online)** to make the channel as online.
 
    Click **Save & Close** to save your option.
 
-   ![](assets/screen_shot_2019-08-01at31658pm.png)
+   ![screen_shot_2019-08-01at31658pm](assets/screen_shot_2019-08-01at31658pm.png)
 
    Navigate back to the channel dashboard and now the **CHANNEL INFORMATION** panel shows the online status of the player.
 
-   ![](assets/screen_shot_2019-08-01at31821pm.png)
+   ![screen_shot_2019-08-01at31821pm](assets/screen_shot_2019-08-01at31821pm.png)
 
 >[!NOTE]
 >
 >If you want to configure your channel again as offline, un-check the Developer mode option from the **Properties** tab (as shown in step (3)) and then from the **CHANNEL INFORMATION** panel click **Update Offline Content**, as shown in the figure below.
 
-![](assets/dashboard2.gif)
+![dashboard2](assets/dashboard2.gif)
 
 #### Automatic versus Manual Updates from the Device Dashboard {#automatic-versus-manual-updates-from-the-device-dashboard}
 
@@ -216,7 +216,7 @@ The assigned displays panel shows the display associated to the channel. It prov
 
 The associated displays will list in the **Assigned Displays** panel, as shown below:
 
-![](assets/chlimage_1-27.png)
+![chlimage_1-27](assets/chlimage_1-27.png)
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ The associated displays will list in the **Assigned Displays** panel, as shown b
 
 Additionally, click on the display in the **ASSIGNED DISPLAYS** panel, to view the display information, as shown below:
 
-![](assets/chlimage_1-28.png)
+![chlimage_1-28](assets/chlimage_1-28.png)
 
 ### The Next Steps {#the-next-steps}
 

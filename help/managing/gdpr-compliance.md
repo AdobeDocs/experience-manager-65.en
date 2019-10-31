@@ -32,7 +32,7 @@ Adobe Experience Manager (AEM) must be considered as part of a company's GDPR co
 
 AEM instances, and the custom applications that might process Personal Data, are owned and operated by AEM customers. This means that the Data Subject requests for access and erasure (deletion) as defined in GDPR are both owned and managed by the AEM customer, so AEM 6.4 does not include any out-of-the-box service to handle GDPR requests.
 
-![](assets/gdpr-01.png)
+![gdpr-01](assets/gdpr-01.png)
 
 The diagram above illustrates what a GDPR request workflow might look like.
 

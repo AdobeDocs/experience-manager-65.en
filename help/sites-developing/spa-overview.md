@@ -51,7 +51,7 @@ If the SPA page component inherits from the page core component, there are two o
 
 For each resource in the exported model the SPA will map an actual component which will do the
 rendering. The model, represented as JSON, are then rendered using the component mappings within a container.
-![](assets/screen_shot_2018-08-20at144152.png)
+![screen_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
 
 >[!CAUTION]
 >
@@ -61,7 +61,7 @@ rendering. The model, represented as JSON, are then rendered using the component
 
 When the `cq.authoring.pagemodel.messaging` category is added to the page, it will send a message to the Page Editor to establish the JSON communication data type. When the communication data type is set to JSON, the GET requests will communicate with the Sling Model end-points of a component. After an update occurs in the page editor, the JSON representation of the updated component is sent to the Page Model library. The Page Model library then informs the SPA of updates.
 
-![](assets/screen_shot_2018-08-20at143628.png)
+![screen_shot_2018-08-20at143628](assets/screen_shot_2018-08-20at143628.png)
 
 ## Workflow {#workflow}
 
@@ -72,13 +72,13 @@ You can understand the flow of the interaction between the SPA and AEM by thinki
 * The page model manager notifies the editor it is ready for edition and passes the page model as a JSON structure.
 * The editor doesn't alter or even access the DOM structure of the page being authored rather it provides the latest page model.
 
-![](assets/screen_shot_2018-08-20at144324.png)
+![screen_shot_2018-08-20at144324](assets/screen_shot_2018-08-20at144324.png)
 
 ### Basic SPA Editor Workflow {#basic-spa-editor-workflow}
 
 Keeping in mind the key elements of the SPA Editor, the high-level workflow of editing a SPA within AEM appears to the author as follows.
 
-![](assets/untitled1.gif)
+![untitled1](assets/untitled1.gif)
 
 1. SPA Editor loads.
 
@@ -103,7 +103,7 @@ Keeping in mind the key elements of the SPA Editor, the high-level workflow of e
 
 This is a more detailed overview of the client-server interaction when editing a SPA.
 
-![](assets/page_editor_spa_authoringmediator-2.png)
+![page_editor_spa_authoringmediator-2](assets/page_editor_spa_authoringmediator-2.png)
 
 1. The SPA initializes itself and requests the page model from the Sling Model Exporter.
 
@@ -153,7 +153,7 @@ This is a more detailed overview of the client-server interaction when editing a
 
 This is a more detailed overview focusing on the authoring experience.
 
-![](assets/spa_content_authoringmodel.png)
+![spa_content_authoringmodel](assets/spa_content_authoringmodel.png)
 
 1. The SPA fetches the page model.
 

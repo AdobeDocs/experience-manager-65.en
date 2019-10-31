@@ -76,7 +76,7 @@ Do the following to add or update data sources to an existing form data model.
     * To replace an existing data source with another data source of the same type, tap the **[!UICONTROL Edit]** icon for the data source and select from the list of available data sources.
     * To delete an existing data source, tap the **[!UICONTROL Delete]** icon for the data source. The Delete icon is disabled if a data model object in the data source is added in the form data model.
 
-   ![](assets/fdm-properties.png)
+   ![fdm-properties](assets/fdm-properties.png)
 
 1. Tap **[!UICONTROL Save & Close]** to save the updates.
 

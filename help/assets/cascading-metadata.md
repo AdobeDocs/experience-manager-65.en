@@ -39,17 +39,17 @@ Irrespective of the asset type chosen, display the copyright information as a re
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then tap/click **[!UICONTROL Edit]** from the toolbar to edit the schema.
 
-   ![](assets/select_form.png)
+   ![select_form](assets/select_form.png)
 
 1. (Optional) In the metadata schema editor, create a new field to conditionalize. Specify a name and property path in the **[!UICONTROL Settings]** tab.
 
    To create a new tab, tap/click **[!UICONTROL +]** to add a tab and then add a metadata field.
 
-   ![](assets/add_tab.png)
+   ![add_tab](assets/add_tab.png)
 
 1. Add a Dropdown field for asset type. Specify a name and property path in the **[!UICONTROL Settings]** tab. Add an optional description.
 
-   ![](assets/asset_type_field.png)
+   ![asset_type_field](assets/asset_type_field.png)
 
 1. Key-values pairs are the options provided to a form-user. You can provide the key-value pairs either manually or from a JSON file.
 
@@ -59,7 +59,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
    Both options are mutually exclusive. You cannot import the options from a JSON file and edit manually.
 
-   ![](assets/add_choice.png)
+   ![add_choice](assets/add_choice.png)
 
    >[!NOTE]
    >
@@ -73,16 +73,16 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
    Similarly, add dependent fields for other asset types. For example, add fields page count and author for document assets, such as PDF and Word files.
 
-   ![](assets/video_dependent_fields.png)
+   ![video_dependent_fields](assets/video_dependent_fields.png)
 
 1. To create a dependency between the asset type field and other fields, choose the dependent field and open the **[!UICONTROL Rules]** tab.
 
-   ![](assets/select_dependentfield.png)
+   ![select_dependentfield](assets/select_dependentfield.png)
 
 1. Under **[!UICONTROL Requirement]**, choose the **[!UICONTROL Required, based on new rule]** option.
 1. Tap/click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
 
-   ![](assets/define_rule.png)
+   ![define_rule](assets/define_rule.png)
 
    >[!NOTE]
    >
@@ -92,7 +92,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
 1. Tap/click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
 
-   ![](assets/define_visibilityrule.png)
+   ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!NOTE]
    >

@@ -166,7 +166,7 @@ These code blocks illustrate how your React and Angular components need nothing 
 * Everything that is inside the JavaScript component is AEM-agnostic.
 * What is however specific to AEM is that the JS component must be mapped to an AEM component with the MapTo helper.
 
-![](assets/screen_shot_2018-12-11at144019.png)
+![screen_shot_2018-12-11at144019](assets/screen_shot_2018-12-11at144019.png)
 
 The `MapTo` helper is the “glue” that allows the back-end and the front-end components to be matched together:
 
@@ -182,7 +182,7 @@ For more information about using `MapTo` and building SPAs for AEM in general, s
 
 The general architecture of AEM including development, authoring, and publishing environments does not change when using SPAs. However it is helpful to understand how SPA development fits into this architecture.
 
-![](assets/screen_shot_2018-12-11at145348.png)
+![screen_shot_2018-12-11at145348](assets/screen_shot_2018-12-11at145348.png)
 
 * **Build Environment**
 

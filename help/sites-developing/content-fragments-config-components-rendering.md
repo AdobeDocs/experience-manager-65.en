@@ -57,7 +57,7 @@ The configuration needs to be bound to the OSGi service **Content Fragment Compo
 
 For example:
 
-![](assets/cfm-01.png)
+![cfm-01](assets/cfm-01.png)
 
 The OSGi configuration is:
 

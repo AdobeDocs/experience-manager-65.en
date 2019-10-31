@@ -35,7 +35,7 @@ Create a list, for example, **Geometrixx Newsletter**, in MCM for the newsletter
 
 The following shows an example of a list:
 
-![](assets/mcm_listcreate.png)
+![mcm_listcreate](assets/mcm_listcreate.png)
 
 ## Create a Sign Up Form {#create-a-sign-up-form}
 
@@ -49,15 +49,15 @@ The following example is a form created at https://localhost:4502/cf#/content/ge
 
 1. Create the form.
 
-   ![](assets/mcm_newsletterpage.png)
+   ![mcm_newsletterpage](assets/mcm_newsletterpage.png)
 
 1. Click **Edit** in the Form component to configure the form to go to a Thank you page (see [Creating Thank You Pages](#creating-a-thank-you-page)).
 
-   ![](assets/dc_formstart_thankyou.png)
+   ![dc_formstart_thankyou](assets/dc_formstart_thankyou.png)
 
 1. Set the Form action (that is what will happen when you submit the form) and configure the group to assign registered users to the list you previously created (for example, geometrixx-newsletter).
 
-   ![](assets/dc_formstart_thankyouadvanced.png)
+   ![dc_formstart_thankyouadvanced](assets/dc_formstart_thankyouadvanced.png)
 
 ### Creating a Thank You Page {#creating-a-thank-you-page}
 
@@ -65,7 +65,7 @@ When users click **Subscribe Now**, you want a Thank You page to automatically o
 
 Submitting the request takes the user to a **Thank You** page after which they will receive an email. This Thank You page was created at /content/geometrixx/en/toolbar/newsletter/thank_you.
 
-![](assets/mcm_newsletter_thankyoupage.png)
+![mcm_newsletter_thankyoupage](assets/mcm_newsletter_thankyoupage.png)
 
 ### Adding Teasers {#adding-teasers}
 
@@ -75,11 +75,11 @@ To add teasers to make an effective newsletter landing page:
 
 1. Create a teaser paragraph for a sign-up gift. Select **First** as the strategy and include text that informs them what gift they will receive.
 
-   ![](assets/dc_teaser_thankyou.png)
+   ![dc_teaser_thankyou](assets/dc_teaser_thankyou.png)
 
 1. Create a teaser paragraph for the Thank You page. Select **First** as the strategy and include text that indicates that the gift is on its way.
 
-   ![](assets/chlimage_1-103.png)
+   ![chlimage_1-103](assets/chlimage_1-103.png)
 
 1. Create a campaign with the two teasers -- tag one with business and one untagged.
 

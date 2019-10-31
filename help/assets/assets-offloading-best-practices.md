@@ -30,7 +30,7 @@ AEM Assets implements a native asset-specific workflow extension for offloading.
 
 The following diagram depicts the main components in Asset offloading process:
 
-![](assets/chlimage_1.png)
+![chlimage_1](assets/chlimage_1.png)
 
 ### DAM Update Asset Offloading workflow {#dam-update-asset-offloading-workflow}
 
@@ -91,7 +91,7 @@ If you conclude that Assets offloading is an appropriate approach for you, Adobe
 
 With AEM and Oak, there are several deployment scenarios possible. For Assets offloading, a TarMK based deployment with a shared datastore is recommended. The following diagram outlines the recommended deployment:
 
-![](assets/chlimage_1-1.png)
+![chlimage_1-1](assets/chlimage_1-1.png)
 
 For details around configuring a datastore, see [Configuring node stores and data stores in AEM](/help/sites-deploying/data-store-config.md).
 

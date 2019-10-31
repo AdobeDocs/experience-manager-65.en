@@ -213,7 +213,7 @@ The Adobe Analytics tracking data examples that follow apply to Milestone tracki
 
 For this example, the Video component appears as follows on the framework page:
 
-![](assets/video1.png)
+![video1](assets/video1.png)
 
 >[!NOTE]
 >
@@ -221,7 +221,7 @@ For this example, the Video component appears as follows on the framework page:
 
 Calls to Adobe Analytics using the example provided should look like this when viewed with DigitalPulse Debugger:
 
-![](assets/chlimage_1-128.png)
+![chlimage_1-128](assets/chlimage_1-128.png)
 
 *This is the **first call** made to Adobe Analytics containing the following values:*
 
@@ -229,7 +229,7 @@ Calls to Adobe Analytics using the example provided should look like this when v
 * *props2-4, along with eVar2 and eVar3 containing contentType (video) and segment (1:O:1-4) *
 * *event3 which was mapped to eventdata.events.a.media.view.*
 
-![](assets/chlimage_1-129.png)
+![chlimage_1-129](assets/chlimage_1-129.png)
 
 *This is the **third call** made to Adobe Analytics:*
 
@@ -319,7 +319,7 @@ This method is similar to the Milestones method with the difference that the mil
 
    **Sample calls** to Adobe Analytics using the example provided should look like this when viewed with DigitalPulse Debugger:
 
-   ![](assets/lmilestones1.png)
+   ![lmilestones1](assets/lmilestones1.png)
 
    *The **pev3** variable sent in the call contains the following information:*
 
@@ -376,7 +376,7 @@ When using the** legacy seconds** method, Adobe Analytics calls get triggered ev
 
    Calls to Adobe Analytics using the example provided should look like this when viewed with DigitalPulse Debugger:
 
-   ![](assets/lseconds.png)
+   ![lseconds](assets/lseconds.png)
 
    *The call is similar to the Legacy Milestones call above. Please see the information on pev3 ** [provided there](/help/sites-administering/adobeanalytics.md)**.*
 

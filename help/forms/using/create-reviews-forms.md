@@ -21,7 +21,7 @@ A Review is a mechanism that allows one or more reviewers to comment on an asset
 ## Setting up a review {#setting-up-a-review}
 
 1. Navigate to the Forms tab and select a form.
-1. If the asset does not have a review in progress, a Start Review ![](assets/aem6forms_review_chat_comment.png) icon appears in the Action bar. Click the Start Review ![](assets/aem6forms_review_chat_comment.png) icon.
+1. If the asset does not have a review in progress, a Start Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon appears in the Action bar. Click the Start Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon.
 1. Enter the following information:
 
     * Review name: Mandatory, can contain alphanumeric characters, hyphen, or underscore.
@@ -52,9 +52,9 @@ This section describes what happens when a review is created or set up.
 
 1. Navigate to the Forms tab and select a form.  
 
-1. If an asset has a review in progress and you are the initiator of the review, a Manage Review ![](assets/aem6forms_review_chat_comment.png) icons appears in the Action bar. Only review initiator can manage (update/end) the review.
+1. If an asset has a review in progress and you are the initiator of the review, a Manage Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icons appears in the Action bar. Only review initiator can manage (update/end) the review.
 
-   Click the Manage Review ![](assets/aem6forms_review_chat_comment.png)icon.
+   Click the Manage Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)icon.
 
    For user other than initiator the Manage Review icon is disabled. 
 

@@ -99,13 +99,13 @@ The following sample configuration within Adobe Launch demonstrates how to track
 
 1. From the **[!UICONTROL Data Elements]** tab, define a data element `AssetName` that references `asset` parameter of the `LOAD` event from the Dynamic Media Viewers extension.
 
-   ![](assets/image2019-11.png)
+   ![image2019-11](assets/image2019-11.png)
 
 1. From the **[!UICONTROL Rules]** tab, define a rule *TrackAssetOnLoad*.
 
    In this rule, the **[!UICONTROL Event]** field uses the **[!UICONTROL LOAD]** event from the Dynamic Media Viewers extension.
 
-   ![](assets/image2019-22.png)
+   ![image2019-22](assets/image2019-22.png)
 
 1. The Action configuration has two Action types from the Adobe Analytics extension:
 
@@ -113,11 +113,11 @@ The following sample configuration within Adobe Launch demonstrates how to track
 
    *Send Beacon*, which sends tracking information to Adobe Analytics.
 
-   ![](assets/image2019-3.png)
+   ![image2019-3](assets/image2019-3.png)
 
 1. The resulting rule configuration looks like the following:
 
-   ![](assets/image2019-4.png)
+   ![image2019-4](assets/image2019-4.png)
 
 ### About Adobe Analytics for Audio and Video {#about-adobe-analytics-for-audio-and-video}
 
@@ -180,7 +180,7 @@ When you check (enable or "turn on") this option, and if Adobe Media Analytics f
 
 Note that if you enable this option *without* having Adobe Media Analytics for Audio and Video extension installed, the option has no effect.
 
-![](assets/image2019-7-22_12-4-23.png)
+![image2019-7-22_12-4-23](assets/image2019-7-22_12-4-23.png)
 
 ### About Data Elements in the Dynamic Media Viewers extension {#about-data-elements-in-the-dynamic-media-viewers-extension}
 
@@ -192,7 +192,7 @@ When selected, the Data Element editor renders a form with two fields:
 
 * **[!UICONTROL Tracking parameter]** - an argument of the selected Dynamic Media viewer event.
 
-![](assets/image2019-7-22_12-5-46.png)
+![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
 See the [Dynamic Media Viewers reference guide](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html) for the list of supported events by each viewer type; go to specific viewer section, then click Support for Adobe Analytics tracking sub-section. Currently, the Dynamic Media Viewers reference guide does not document event arguments.
 
@@ -242,7 +242,7 @@ In the Event editor, the Dynamic Media Viewers extension adds a new **[!UICONTRO
 
 When selected, the Event editor renders the drop-down **[!UICONTROL Dynamic Media Viewer events]**, listing all the available events that are supported by Dynamic Media viewers.
 
-![](assets/image2019-8-2_15-13-1.png)
+![image2019-8-2_15-13-1](assets/image2019-8-2_15-13-1.png)
 
 #### About the Actions editor {#about-the-actions-editor}
 
@@ -253,13 +253,13 @@ The simplest method to do that is to complete the following two-step process:
 * First, define one or more Data Elements, where each Data Element represents a parameter of a Dynamic Media Viewer event.
 * Finally, in the Set Variables editor of the Adobe Analytics extension click the Data Element picker icon (three stacked disks) to open the Select Data Element dialog box, then select a Data Element from it.
 
-![](assets/image2019-7-10_20-41-52.png)
+![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
 It is possible, however, to use an alternative approach and bypass Data Element creation. You can directly reference an argument from a Dynamic Media Viewer event by entering the fully qualified name of the event argument in the **[!UICONTROL value]** input field of the Analytics variable assignment, surrounded by percent (%) signs. For example,
 
 `%event.detail.dm.LOAD.asset%`
 
-![](assets/image2019-7-12_19-2-35.png)
+![image2019-7-12_19-2-35](assets/image2019-7-12_19-2-35.png)
 
 Note that there is an important difference between using Data Elements and direct event argument reference. For Data Element, it does not matter which event triggers the Set Variables action, the event that triggers the Rule can be unrelated to Dynamic Viewer (like a mouse click on the web page from the Core extension). But, when using a direct argument reference it is important to ensure that the event that triggers the rule corresponds to the event argument that it references.
 
@@ -430,7 +430,7 @@ See also [Analytics Implementation Guide](https://docs.adobe.com/content/help/en
 
 1. Start by accessing Adobe Analytics from the Experience Cloud [home page](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/). On the menu bar, click the Solutions icon (a three by three table of dots) near the upper-right corner of the page, then clicking **[!UICONTROL Analytics]**.
 
-   ![](assets/2019-07-22_18-08-47.png)
+   ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
    You will now select a report suite.
 
@@ -446,7 +446,7 @@ See also [Analytics Implementation Guide](https://docs.adobe.com/content/help/en
 
    In Adobe Analytics, report suites are managed under **[!UICONTROL Admin > Report Suites]**.
 
-   ![](assets/2019-07-22_18-09-49.png)
+   ![2019-07-22_18-09-49](assets/2019-07-22_18-09-49.png)
 
    You will now set up Adobe Analytics variables.
 
@@ -467,7 +467,7 @@ See also [Analytics Implementation Guide](https://docs.adobe.com/content/help/en
 
    The following screenshot is an example of a Custom Traffic variable ( **[!UICONTROL prop30]**) for tracking a asset name used by the viewer:
 
-   ![](assets/image2019-6-26_23-6-59.png)
+   ![image2019-6-26_23-6-59](assets/image2019-6-26_23-6-59.png)
 
 1. At the bottom of the variables list, click **[!UICONTROL Save]**.
 
@@ -481,7 +481,7 @@ See also [Analytics Implementation Guide](https://docs.adobe.com/content/help/en
 
    Visiting this report right after **[!UICONTROL Viewer asset (prop 30)]** creation shows no data; that is expected at this point in the integration.
 
-   ![](assets/image2019-6-26_23-12-49.png)
+   ![image2019-6-26_23-12-49](assets/image2019-6-26_23-12-49.png)
 
 ## Configuring Adobe Launch for the integration {#configuring-adobe-launch-for-the-integration}
 
@@ -498,7 +498,7 @@ After you configure Adobe Launch, the following will be set up for the integrati
 
    You can also [open Adobe Launch directly](https://launch.adobe.com/).
 
-   ![](assets/image2019-7-8_15-38-44.png)
+   ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
 ### Creating a property in Adobe Launch {#creating-a-property-in-adobe-launch}
 
@@ -511,7 +511,7 @@ See also [Create a Property](https://docs.adobe.com/content/help/en/launch/using
 1. In the **[!UICONTROL Domains]** field, enter your website's domain.
 1. In the **[!UICONTROL Advanced Options]** drop-down, enable **[!UICONTROL Configure for extension development (cannot be modified later)]** in case the extension you want to use--in this case, *Dynamic Media Viewers*--is not yet released.
 
-   ![](assets/image2019-7-8_16-3-47.png)
+   ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
 1. Click **[!UICONTROL Save]**.
 
@@ -537,11 +537,11 @@ To configure this extension, you will first need the Report Suite ID found in Ad
 
 (For demonstration purposes only, the Report Suite ID of the **[!UICONTROL DynamicMediaViewersExtensionDoc]** Report Suite will be used in the following screenshots. This ID was created and used in [Selecting a Report Suite](#selecting-a-report-suite) earlier.)
 
-![](assets/image2019-7-8_16-45-34.png)
+![image2019-7-8_16-45-34](assets/image2019-7-8_16-45-34.png)
 
 On the Install Extension page, enter the Report Suite ID in the **[!UICONTROL Development Report Suites]** field, the **[!UICONTROL Staging Report Suites]** field, and the **[!UICONTROL Production Report Suites]** field.
 
-![](assets/image2019-7-8_16-47-40.png)
+![image2019-7-8_16-47-40](assets/image2019-7-8_16-47-40.png)
 
 *Configure the following item only if you plan to use video tracking:*
 
@@ -569,7 +569,7 @@ See [Creating a property in Adobe Launch](#creating-a-property-in-adobe-launch).
 
 After the extensions are installed and setup, at minimum, the following five extensions (four if you are not tracking video) will be listed in the Extensions &gt; Installed area.
 
-![](assets/image2019-7-22_12-7-36.png)
+![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 
 ### Setting up Data Elements and Rules {#setting-up-data-elements-and-rules}
 
@@ -600,7 +600,7 @@ Publishing a library involves the following two steps:
 
    In the left column, click **[!UICONTROL Add New Library]**.
 
-   ![](assets/image2019-7-15_14-43-17.png)
+   ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
 1. On the Create New Library page, in the **[!UICONTROL Name]** field, enter descriptive name for the new library. For example,
 
@@ -608,13 +608,13 @@ Publishing a library involves the following two steps:
 
    From the Environment drop-down list, choose the Environment level. Initially, only the Development level is available for selection. Near the lower-left side of the page, click **[!UICONTROL Add All Changed Resources]**.
 
-   ![](assets/image2019-7-15_14-49-41.png)
+   ![image2019-7-15_14-49-41](assets/image2019-7-15_14-49-41.png)
 
 1. Near the upper-right corner of the page, click **[!UICONTROL Save & Build for Development]**.
 
    In few minutes the library is created and ready to use.
 
-   ![](assets/image2019-7-15_15-3-34.png)
+   ![image2019-7-15_15-3-34](assets/image2019-7-15_15-3-34.png)
 
    >[!NOTE]
    >
@@ -627,23 +627,23 @@ Publishing a library involves the following two steps:
 
 1. After a new library is added, it is initially located in the Development environment. To move it to the Staging environment level (which corresponds to the Submitted column), from the library's drop-down menu, click **[!UICONTROL Submit for Approval]**.
 
-   ![](assets/image2019-7-15_15-52-37.png)
+   ![image2019-7-15_15-52-37](assets/image2019-7-15_15-52-37.png)
 
 1. In the confirmation dialog box, click **[!UICONTROL Submit]**.
 
    After the library moves to the Submitted column, from the library's drop-down menu, click **[!UICONTROL Build for Staging]**.
 
-   ![](assets/image2019-7-15_15-54-37.png)
+   ![image2019-7-15_15-54-37](assets/image2019-7-15_15-54-37.png)
 
 1. Follow a similar process to move the library from the Staging environment to the Production environmenet (which is the Published column).
 
    First, from the drop-down menu, click **[!UICONTROL Approve for Publishing]**.
 
-   ![](assets/image2019-7-15_16-7-39.png)
+   ![image2019-7-15_16-7-39](assets/image2019-7-15_16-7-39.png)
 
 1. From the drop-down menu, click **[!UICONTROL Build & Publish to Production]**.
 
-   ![](assets/image2019-7-15_16-8-9.png)
+   ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
    See [Publishing](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html) for more information about the publishing process in Adobe Launch.
 
@@ -664,7 +664,7 @@ The AEM configuration consists of the following two major steps:
 
 1. In AEM author, click the Tools icon (hammer), then click **[!UICONTROL Security > Adobe IMS Configurations]**.
 
-   ![](assets/2019-07-25_11-52-58.png)
+   ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
 1. On the Adobe IMC Configuration page, near the upper-left corner, click **[!UICONTROL Create]**.
 1. On the **[!UICONTROL Adobe IMS Technical Account Configuration]** page, in the **[!UICONTROL Cloud Solution]** drop-down list, click **[!UICONTROL Adobe Launch]**.
@@ -676,7 +676,7 @@ The AEM configuration consists of the following two major steps:
 
    Click **[!UICONTROL OK]** to dismiss the Info dialog box.
 
-   ![](assets/2019-07-25_12-09-24.png)
+   ![2019-07-25_12-09-24](assets/2019-07-25_12-09-24.png)
 
 1. Click **[!UICONTROL Download Public Key]** to download a public key file (&#42;.crt) to your local system.
 
@@ -684,18 +684,18 @@ The AEM configuration consists of the following two major steps:
    >
    >At this point, ***leave open*** the **[!UICONTROL Adobe IMS Technical Account Configuration]** page; ***do not*** close the page and ***do not*** click Next. You will return to this page later in the steps.
 
-   ![](assets/2019-07-25_12-52-24.png)
+   ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
 1. In a new browser tab, navigate to the [Adobe I/O Console](https://console.adobe.io/integrations).
 
 1. From the **[!UICONTROL Adobe I/O Console Integrations]** page, near the upper-right corner, click **[!UICONTROL New integration]**.
 1. In the **[!UICONTROL Create a new integration]** dialog box, ensure that **[!UICONTROL Access an API]** radio button is selected, then click **[!UICONTROL Continue]**.
 
-   ![](assets/2019-07-25_13-04-20.png)
+   ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
 
 1. On the second **[!UICONTROL Create a new integration]** page, enable (turn on) the **[!UICONTROL Experience Platform Launch API]** radio button. In the lower-right corner of the page, click **[!UICONTROL Continue]**.
 
-   ![](assets/2019-07-25_13-13-54.png)
+   ![2019-07-25_13-13-54](assets/2019-07-25_13-13-54.png)
 
 1. On the third **[!UICONTROL Create a new integration]** page, do the following:
 
@@ -709,12 +709,12 @@ The AEM configuration consists of the following two major steps:
 
     * Under the **[!UICONTROL Select one or more product profiles for Experience Platform Launch API]** heading, select the product profile named **[!UICONTROL Launch - <your_company_name>]**.
 
-   ![](assets/2019-07-25_13-49-18.png)
+   ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
 1. Click **[!UICONTROL Create integration]**.
 1. On the **[!UICONTROL Integration created]** page, click **[!UICONTROL Continue to integration details]**.
 
-   ![](assets/2019-07-25_14-16-33.png)
+   ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
 1. An Integrations details page appears, **[!UICONTROL]**similar to the following:
 
@@ -722,7 +722,7 @@ The AEM configuration consists of the following two major steps:
    >
    >***Leave open this Integration details page***. You will need various pieces of information from the **[!UICONTROL Overview]** and **[!UICONTROL JWT]** tabs in just a moment.
 
-   ![](assets/2019-07-25_14-35-30.png)
+   ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
 
    Integration details page.
 
@@ -730,13 +730,13 @@ The AEM configuration consists of the following two major steps:
 
    (If you accidently closed the page earlier, return to AEM author, then click **[!UICONTROL Tools > Security > Adobe IMS Configurations]**. Click **[!UICONTROL Create]**. In the **[!UICONTROL Cloud Solution]** drop-down list, select **[!UICONTROL Adobe Launch]**. In the **[!UICONTROL Certificate]** drop-down list, select the name of the previously created certificate.)
 
-   ![](assets/2019-07-25_20-57-50.png)
+   ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
 
    Adobe IMS Technical Account Configuration - Certificate page.
 
 1. The **[!UICONTROL Account]** page has five fields that will require you to fill out using information from the Integration details page from the previous step.
 
-   ![](assets/2019-07-25_20-42-45.png)
+   ![2019-07-25_20-42-45](assets/2019-07-25_20-42-45.png)
 
    Adobe IMS Technical Account Configuration - Account page.
 
@@ -749,7 +749,7 @@ The AEM configuration consists of the following two major steps:
    For example, `https://ims-na1.adobelogin.com/`
    (the example server name is for illustration purposes only)
 
-   ![](assets/2019-07-25_15-01-53.png)
+   ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
 
    Integration detail page - JWT tab
 
@@ -757,7 +757,7 @@ The AEM configuration consists of the following two major steps:
 
    Return to the **[!UICONTROL Account]** page, then paste the key into the respective **[!UICONTROL]**field.
 
-   ![](assets/2019-07-25_14-35-333.png)
+   ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
 
    Integration details page.
 
@@ -769,31 +769,31 @@ The AEM configuration consists of the following two major steps:
 
    Return to the **[!UICONTROL Account]** page, then paste the code into the respective field.
 
-   ![](assets/2019-07-25_21-59-12.png)
+   ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
 
    Integration details page - JWT tab
 
    The Account page, with all fields filled out, will look similar to the following:
 
-   ![](assets/2019-07-25_22-08-30.png)
+   ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
 1. Near the upper-right corner of the **[!UICONTROL Account]** page, click **[!UICONTROL Create]**.
 
    With AEM IMS configured, you now have a new IMSAccount listed under **[!UICONTROL Adobe IMS Configurations]**.
 
-   ![](assets/image2019-7-15_14-17-54.png)
+   ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
 ## Configuring Adobe Launch Cloud for the integration {#configuring-adobe-launch-cloud-for-the-integration}
 
 1. In AEM author, near the upper-left corner, click the Tools icon (hammer), then click **[!UICONTROL Cloud Services > Adobe Launch Configurations]**.
 
-   ![](assets/2019-07-26_12-10-38.png)
+   ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
 1. On the **[!UICONTROL Adobe Launch Configurations]** page, in the left panel, select an AEM Site for which you want to apply your Adobe Launch Configuration.
 
    For illustration purposes only, the **[!UICONTROL We.Retail]** Site is selected in the screenshot below.
 
-   ![](assets/2019-07-26_12-20-06.png)
+   ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
 1. Near the upper-left corner of the page, click **[!UICONTROL Create]**.
 1. On the **[!UICONTROL General]** page (1/3 pages) of the **[!UICONTROL Create Adobe Launch Configuration]** window, fill in the following fields:
@@ -808,7 +808,7 @@ The AEM configuration consists of the following two major steps:
 
    After completing all the fields, your **[!UICONTROL General]** page will look similar to the following:
 
-   ![](assets/image2019-7-15_14-34-23.png)
+   ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
 1. Near the upper-left corner, click **[!UICONTROL Next]**.
 1. On the **[!UICONTROL Staging]** page (2/3 pages) of the **[!UICONTROL Create Adobe Launch Configuration]** window, fill in the following field:
@@ -826,7 +826,7 @@ The AEM configuration consists of the following two major steps:
 
    Your **[!UICONTROL Staging]** page should look similar to the following. Note that the **[!UICONTROL Archive]** and **[!UICONTROL Load Library Asynchronously]** options are ***not*** set:
 
-   ![](assets/image2019-7-15_15-21-8.png)
+   ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
 1. Near the upper-right corner, click **[!UICONTROL Next]**.
 1. On the **[!UICONTROL Production]** page (3/3 pages) of the **[!UICONTROL Create Adobe Launch Configuration]** window, if needed, fix the auto-populated production URI similar to how it was done on the previous **[!UICONTROL Staging]** page.
@@ -838,7 +838,7 @@ The AEM configuration consists of the following two major steps:
 
 1. Select your new Adobe Launch Cloud Configuration (a check mark appears to the left of the configuration title when it is selected). On the toolbar, click **[!UICONTROL Publish]**.
 
-   ![](assets/image2019-7-15_15-47-6.png)
+   ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
 
 Currently, AEM author does not support the integration of Dynamic Media Viewers with Adobe Launch.
 

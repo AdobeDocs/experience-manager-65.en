@@ -47,11 +47,11 @@ If you are a customer of Dynamic Media, you are required to use hybrid delivery 
 
 ## Hybrid publishing architecture for videos {#hybrid-publishing-architecture-for-videos}
 
-![](assets/chlimage_1-142.png)
+![chlimage_1-142](assets/chlimage_1-142.png)
 
 ## Hybrid publishing architecture for images {#hybrid-publishing-architecture-for-images}
 
-![](assets/chlimage_1-143.png)
+![chlimage_1-143](assets/chlimage_1-143.png)
 
 ## Supported Dynamic Media Configurations {#supported-dynamic-media-configurations}
 
@@ -270,11 +270,11 @@ To set up authentication:
 1. In AEM, tap the AEM logo to access the global navigation console, then tap **Tools **&gt; **Security** &gt; **Users**.
 1. On the User Management page, navigate to the **dynamic-media-replication **user, then tap to open.
 
-   ![](assets/dm-replication.png)
+   ![dm-replication](assets/dm-replication.png)
 
 1. In the Edit User Settings For dynamic-media-replication page, tap the **Keystore** tab, then click **Create KeyStore**.
 
-   ![](assets/dm-replication-keystore.png)
+   ![dm-replication-keystore](assets/dm-replication-keystore.png)
 
 1. Enter a password and confirm the password in the **Set KeyStore Access Password** dialog box.
 
@@ -282,7 +282,7 @@ To set up authentication:
    >
    >Remember the password that you enter. You will need to enter it again when you configure the Replication Agent later.
 
-   ![](assets/chlimage_1-144.png)
+   ![chlimage_1-144](assets/chlimage_1-144.png)
 
 1. On the **Edit User Settings For dynamic-media-replication** page, expand the **Add Private Key from KeyStore file **area and add the following (see the images that follow):
 
@@ -292,7 +292,7 @@ To set up authentication:
     * In the **Private Key Password** field, enter the private key password (may be the same private key password provided in the previous step). Adobe provides the private key password in the Welcome email sent to you during provisioning. Contact Adobe Customer Care if you did not receive a private key password.
     * In the** Private Key Alias** field, enter the private key alias. For example, `*companyname*-alias`. Adobe provides the private key alias in the Welcome email sent to you during provisioning. Contact Adobe Customer Care if you did not receive a private key alias.
 
-   ![](assets/edit_settings_fordynamic-media-replication2.png)
+   ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
 1. Tap **Save & Close** to save your changes to this user.
 
@@ -315,7 +315,7 @@ To configure the replication agent:
 
    The following image shows the replication agent with sample data:
 
-   ![](assets/chlimage_1-145.png)
+   ![chlimage_1-145](assets/chlimage_1-145.png)
 
 1. Tap **OK**.
 
@@ -492,7 +492,7 @@ To test your configuration:
 1. Publish the image asset. (Select the asset and tap **Quick Publish**.)
 1. Navigate to the renditions for that image by opening the image, and tapping or clicking **Renditions**.
 
-   ![](assets/chlimage_1-146.png)
+   ![chlimage_1-146](assets/chlimage_1-146.png)
 
 1. Select any dynamic rendition.
 1. Click **URL** to obtain the URL for this asset.
@@ -597,7 +597,7 @@ Make sure that the Video Analytics preset package from the first Author node is 
 
       If you see the following error message, the report suite is available, but unpopulated. This error is correct--and desired--in a new installation before the system collects any data.
 
-   ![](assets/screen_shot_2018-05-23at52254pm.png)
+   ![screen_shot_2018-05-23at52254pm](assets/screen_shot_2018-05-23at52254pm.png)
 
    To generate reporting data, upload and publish one video. Use **Copy URL** and run the video at least one time.
 
@@ -605,7 +605,7 @@ Make sure that the Video Analytics preset package from the first Author node is 
 
    If there is an error and the report suite is not set correctly, the following alert is displayed.
 
-   ![](assets/screen_shot_2018-05-23at52612pm.png)
+   ![screen_shot_2018-05-23at52612pm](assets/screen_shot_2018-05-23at52612pm.png)
 
    This error is also displayed if Video Reporting is run before you configure Dynamic Media Configuration (Pre 6.3) services.
 
@@ -743,7 +743,7 @@ If you are using Dynamic Media for imaging in non-production deployments, follow
 1. In AEM, tap **Tools** &gt; **General** &gt; **CRXDE Lite**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
 
-   ![](assets/image-2018-01-16-10-22-40-410.png)
+   ![image-2018-01-16-10-22-40-410](assets/image-2018-01-16-10-22-40-410.png)
 
 1. Locate **filter-images**, right-click it and select **Copy**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/publish`
@@ -758,7 +758,7 @@ This sets up the AEM publish instance to deliver the images to your non-producti
 >
 >If you are using more than one filter on a server - for example, one filter for replication to publish and a second filter for s7delivery - then you need to ensure that these two filters have a different **userId** assigned to them in the **jcr:content** node. See the image that follows:
 
-![](assets/image-2018-01-16-10-26-28-465.png)
+![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
 
 ### Customizing Asset Filters for Replication {#customizing-asset-filters-for-replication}
 
@@ -767,7 +767,7 @@ To optionally customize asset filters for replication:
 1. In AEM, tap or click the AEM logo to access the global navigation console and tap **Tools** &gt; **General **&gt; **CRXDE Lite**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` to review the filters.
 
-   ![](assets/chlimage_1-147.png)
+   ![chlimage_1-147](assets/chlimage_1-147.png)
 
 1. To define the Mime Type for the filter, you can locate the Mime Type as follows:
 
@@ -775,7 +775,7 @@ To optionally customize asset filters for replication:
 
    The following graphic is an example of an asset's path to dc:format.
 
-   ![](assets/chlimage_1-148.png)
+   ![chlimage_1-148](assets/chlimage_1-148.png)
 
    Notice that the `dc:format` for the asset `Fiji Red.jpg` is `image/jpeg`.
 
@@ -812,7 +812,7 @@ To optionally customize asset filters for replication:
 
    The following graphic is an example of an asset's renditions.
 
-   ![](assets/chlimage_1-149.png)
+   ![chlimage_1-149](assets/chlimage_1-149.png)
 
    Using the example above, if you only wanted to replicate the PTIFF (Pyramid TIFF), then you would enter `+cqdam,*` which includes all the renditions that start with `cqdam`. Inthe example, that rendition is `cqdam.pyramid.tiff`.
 
@@ -908,7 +908,7 @@ The location of the default manifest configuration is taken from the **Catalog r
 
 **/conf/global/settings/dam/dm/imageserver/**
 
-![](assets/configimageservercrxdelite.png)
+![configimageservercrxdelite](assets/configimageservercrxdelite.png)
 
 You can change the values of the properties, as described in the table below, by entering new values.
 
@@ -916,7 +916,7 @@ When you are finished making changes to the default manifest, in the upper-left 
 
 Be sure you click the **Access Control** tab (to the right of the Properties tab), then set the access control privileges to `jcr:read` for the everyone and dynamic-media-replication users.
 
-![](assets/configimageservercrxdeliteaccesscontroltab.png)
+![configimageservercrxdeliteaccesscontroltab](assets/configimageservercrxdeliteaccesscontroltab.png)
 
 Table of Manifest settings and their default values:
 
@@ -1015,7 +1015,7 @@ To configure the default color profiles:
 
 1. In **Tools** &gt; **General** &gt; **CRXDE Lite**, navigate to */conf/global/settings/dam/dm/imageserver/jcr:content *which contains the default Adobe Color Profiles.
 
-   ![](assets/chlimage_1-150.png)
+   ![chlimage_1-150](assets/chlimage_1-150.png)
 
 1. Add* *a color correction property by scrolling to the bottom of the **Properties** tab and manually entering the property name, type, and value, which are described in the following tables. After you enter the values, click **Add** and then **Save All** to save your values.
 
@@ -1023,7 +1023,7 @@ To configure the default color profiles:
 
    For example, in **Name**, add `iccprofilecmyk`, select **Type** `String`, and add `WebCoated` as a **Value**. Then click **Add** and then **Save All **to save your values.
 
-   ![](assets/chlimage_1-151.png)
+   ![chlimage_1-151](assets/chlimage_1-151.png)
 
    **Color Correction Properties Table**
 

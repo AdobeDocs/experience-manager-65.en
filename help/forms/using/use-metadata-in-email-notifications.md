@@ -175,7 +175,7 @@ You can also use custom metadata in an email notification. Custom metadata conta
 
 1. Click Save All. Now, the script is available for selection in AEM workflow model.
 
-   ![](assets/assigntask-metadata.png)
+   ![assigntask-metadata](assets/assigntask-metadata.png)
 
 1. (Optional) Specify the title of the script:
 

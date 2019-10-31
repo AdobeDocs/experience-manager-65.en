@@ -19,7 +19,7 @@ You can easily make static images rich, engaging experiences for customers by dr
 
 The following is a shoppable banner with a Quickview pop-up. A user activates the Quickview by tapping the circle or "hotspot" on the model.
 
-![](assets/chlimage_1-152.png)
+![chlimage_1-152](assets/chlimage_1-152.png)
 
 See interactive images in action on the web page above by going to the following:
 

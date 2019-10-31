@@ -27,7 +27,7 @@ Transaction recording is disabled by default. You can [enable transaction record
 
 Do not author content (Create adaptive forms, interactive communication, themes, and other authoring activities) and process documents (Use workflows, document services, and other processing activities) on the same AEM instance. Keep the transaction recording disabled for AEM Forms servers used to author content. Keep the transaction recording enabled for AEM Forms servers used to process documents.
 
-![](assets/sample-transaction-report-author-1.png)
+![sample-transaction-report-author-1](assets/sample-transaction-report-author-1.png)
 
 A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
 
@@ -39,7 +39,7 @@ Transaction reports are available only on AEM Forms on OSGi environment. It supp
 
 The transaction count is reverse replicated from publish instances to author or processing instances. An indicative author-publish topology is displayed below:
 
-![](assets/simple-author-publish-topology.png)
+![simple-author-publish-topology](assets/simple-author-publish-topology.png)
 
 >[!NOTE]
 >
