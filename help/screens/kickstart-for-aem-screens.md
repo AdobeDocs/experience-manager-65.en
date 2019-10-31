@@ -25,7 +25,7 @@ The following steps allow you to create a sample project for Screens and publish
 
    AEM Screens is also available in **Google Play**.
 
-   For implementation of Chrome OS Player, see [**Chrome Management Console**](/help/screens/implementing-chrome-os-player.md?cq_ck=1513900475345) for more information.
+   For implementation of Chrome OS Player, see [**Chrome Management Console**](/help/screens/implementing-chrome-os-player.md) for more information.
 
    See [Installing and Configuring Screens](/help/screens/configuring-screens-introduction.md) for more details.
 
