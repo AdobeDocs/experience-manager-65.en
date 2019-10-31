@@ -37,7 +37,7 @@ CRXDE Lite is recommended when you do not have direct access to the AEM server, 
 To get started with CRXDE Lite, proceed as follows:
 
 1. Install AEM.
-1. In your browser, enter https://<host>:<port>/crx/de. By default it is `https://localhost:4502/crx/de`.
+1. In your browser, enter `https://<host>:<port>/crx/de`. By default it is `https://localhost:4502/crx/de`.
 1. Enter your **username** and **password**. By default it is `admin` and `admin`.
 
 1. Click **OK**.

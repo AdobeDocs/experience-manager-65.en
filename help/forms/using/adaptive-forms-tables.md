@@ -1,8 +1,8 @@
 ---
 title: Tables in adaptive forms
 seo-title: Tables in adaptive forms
-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components. 
-seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components. 
+description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
+seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
 uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -19,19 +19,19 @@ AEM Forms provides a Table component in the components browser in sidebar that l
 
 * Responsive layout on mobile devices
 * Configurable rows and columns
-* Dynamic addition and deletion of rows at runtime  
+* Dynamic addition and deletion of rows at runtime
 * Combine or merge and split cells
 * Accessible by screen readers
 * Custom layout using CSS
 * Compatible and mapped with XDP table component
-* Support for adding rows or cells using XSD complex type elements  
+* Support for adding rows or cells using XSD complex type elements
 * Merge data from an XML file
 
 ## Create a table {#create-a-table}
 
 To create a table, drag-and-drop the Table component from the components browser in the sidekick on the adaptive form. By default, the table contains two columns and three rows, including the header row.
 
-![Table component in AEM sidebar](assets/sidebar-tables.png) 
+![Table component in AEM sidebar](assets/sidebar-tables.png)
 
 ### About header and body cells {#about-header-and-body-cells}
 
@@ -108,7 +108,7 @@ You can define the style for a table by using the Style mode in the page toolbar
 
 1. In the page toolbar, before Preview, tap ![](assets/canvas-drop-down.png) &gt; **Style**.
 
-1. In the sidebar select table and tap the edit button ![](assets/edit-button.png).   
+1. In the sidebar select table and tap the edit button ![](assets/edit-button.png).
    You can see the styling properties in the sidebar.
 
 ![Styling properties of a table](assets/style-table.png)
@@ -264,13 +264,13 @@ The XML file that contains data in the following format:
 
 ```
 
-In the sample XML, the data for a row is defined by the <Row1> tags, which is the element name for the row in the table. Within the `<Row1>` tag, the data for each cell is defined within the tag for its element name, such as `<tableItem1>`, `<tableItem2>`, `<tableItem3>`, and `<type>`.
+In the sample XML, the data for a row is defined by the `<Row1>` tags, which is the element name for the row in the table. Within the `<Row1>` tag, the data for each cell is defined within the tag for its element name, such as `<tableItem1>`, `<tableItem2>`, `<tableItem3>`, and `<type>`.
 
 To merge this data with the table at runtime, we need to point the adaptive form containing the table to the absolute XML location with wcmmode disabled. For example, if the adaptive form is at *https://localhost:4502/myForms/bankTransaction.html* and the data XML file is saved at *C:/myTransactions/bankSummary.xml*, you can view the table with data at the following URL:
 
-*https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&wcmmode=disabled* 
+*https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&wcmmode=disabled*
 
-![](assets/data-merged-table.png) 
+![](assets/data-merged-table.png)
 
 ## Use XDP components and XSD complex types {#use-xdp-components-and-xsd-complex-types}
 
@@ -295,7 +295,7 @@ In addition, you can drag-drop a group of XSD complex type elements to create a 
 ## Key considerations {#key-considerations}
 
 * If you move rows up and down while authoring an XSD-based table, some data loss from table rows is seen in the data XML generated on submitting the form.
-* Each body cell in a default table has a predefined element name associated with it. If you add another table in the adaptive form, the default body cells in the new table will have the same element name as in the first table. In such scenario, the data generated on submitting the form will include data in the default body cells of only one of the tables. Therefore, ensure that you rename the element names for default body cells to keep them unique across tables and avoid data loss.  
-  
+* Each body cell in a default table has a predefined element name associated with it. If you add another table in the adaptive form, the default body cells in the new table will have the same element name as in the first table. In such scenario, the data generated on submitting the form will include data in the default body cells of only one of the tables. Therefore, ensure that you rename the element names for default body cells to keep them unique across tables and avoid data loss.
+
   Note that this is applicable only to the default body cells. If you add more rows or columns to a table will autogenerate unique element names for non-default body cells.
 

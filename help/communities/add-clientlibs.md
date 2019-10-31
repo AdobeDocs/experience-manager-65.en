@@ -15,9 +15,6 @@ docset: aem65
 
 # Add Clientlibs{#add-clientlibs}
 
-| **[⇐ Develop Sandbox Application](/help/communities/develop-app.md)** |**[Develop Sandbox Content ⇒](/help/communities/develop-content.md)** |
-|---|---|
-
 ## Add a ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
 Create a ClientLibraryFolder named `clientlibs`which will contain the JS and CSS used to render the pages of your site.
@@ -182,8 +179,4 @@ To create a package:
 
 * click **Build**
 
-Now you can select **Download **to save it to disk and **Upload Package** elsewhere, as well as select **More &gt; Replicate** in order to push the sandbox to a localhost publish instance to expand the realm of your sandbox.
-
-| ** [⇐ Develop Sandbox Application](/help/communities/develop-app.md)** |** [Develop Sandbox Content ⇒](/help/communities/develop-content.md)** |
-|---|---|
-
+Now you can select **Download** to save it to disk and **Upload Package** elsewhere, as well as select **More &gt; Replicate** in order to push the sandbox to a localhost publish instance to expand the realm of your sandbox.

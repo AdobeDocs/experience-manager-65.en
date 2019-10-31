@@ -34,7 +34,7 @@ This saves both time and money during initial project setup or when extending th
 
 The following diagram showcases the architectural overview for Project Importer feature:
 
-![](assets/screen_shot_2019-05-14at20618pm.png) 
+![](assets/screen_shot_2019-05-14at20618pm.png)
 
 ### Data Model {#data-model}
 
@@ -60,7 +60,7 @@ The spreadsheet (CSV/XLS) file, thus requires the following columns:
 
 >[!NOTE]
 >
->Any column that does not match the conditions above will just be ignored. For example, if you have any other column defined in your sheet (CSV/XLS) file other than*** *path**,** template**,** title **, and** description **in your file, those fields will be ignored and **Project Importer** will not validate those additional fields for importing your project to your AEM Screens project.
+>Any column that does not match the conditions above will just be ignored. For example, if you have any other column defined in your sheet (CSV/XLS) file other than **path**,**template**,**title**, and **description** in your file, those fields will be ignored and **Project Importer** will not validate those additional fields for importing your project to your AEM Screens project.
 
 ## Using Project Importer {#using-project-importer}
 
@@ -68,14 +68,15 @@ The following section describes how the Project Importer is used in an AEM Scree
 
 >[!CAUTION]
 >
->### Limitations: {#limitations}>
+>Limitations:
+>
 >* Files other than CSV/XLS/XLSX extensions are not supported in the current release.
 >* No filtering of the properties exists for imported files and anything starting with "./" will be imported.
 >
 
 ### Prerequisites {#prerequisites}
 
-* Create a new project titled as **DemoProjectImport** 
+* Create a new project titled as **DemoProjectImport**
 
 * Use a sample CSV or excel file that you need to import.
 

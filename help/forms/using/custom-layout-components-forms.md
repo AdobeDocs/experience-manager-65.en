@@ -28,22 +28,20 @@ The Adaptive Form Panel Layout component controls the way adaptive form componen
 1. Copy a panel layout from the location `/libs/fd/af/layouts/panel` (for example, `tabbedPanelLayout`) to `/apps` (for example, `/apps/af-custom-layout`).
 1. Rename the layout you copied to `customPanelLayout`. Change the properties of the nodes `qtip` and `jcr:description`. For example, change them to `Custom layout - Toggle tabs`.
 
-   |  
-   qtip   |
-   |---|
+qtip
 
-   ![Custom Panel Layout CRX DE Snapshot](assets/custom_layout_new.png)
+![Custom Panel Layout CRX DE Snapshot](assets/custom_layout_new.png)
 
-   >[!NOTE]
-   >
-   >Setting the property `guideComponentType`to the value `fd/af/layouts/panel` determines that the layout is a panel-layout.
+>[!NOTE]
+>
+>Setting the property `guideComponentType`to the value `fd/af/layouts/panel` determines that the layout is a panel-layout.
 
 1. Rename the file `tabbedPanelLayout.jsp` under the new layout to customPanelLayout.jsp.
 1. To introduce new styles and behavior, create a client library under the `etc` node. For example, at the location /etc/af-custom-layout-clientlib, create the node client-library. Let the node have the categories property af.panel.custom. It has following .css and .js files:
 
    ```css
    /** CSS defining new styles used by custom layout **/
-   
+
    .menu-nav {
        background-color: rgb(198, 38, 76);
        height: 30px;
@@ -53,33 +51,33 @@ The Adaptive Form Panel Layout component controls the way adaptive form componen
        -webkit-transition: -webkit-transform 1s;  /* For Safari 3.1 to 6.0 */
     transition: transform 1s;
    }
-   
+
    .tab-content {
     border: 1px solid #08b1cf;
    }
-   
+
    .custom-navigation {
        -webkit-transition: width 1s, height 1s, -webkit-transform 1s;  /* For Safari 3.1 to 6.0 */
     transition: width 1s, height 1s, transform 1s;
    }
-   
+
    .panel-name {
        padding-left: 30px;
        font-size: 20px;
    }
-   
+
    @media (min-width: 992px) {
     .nav-close {
      width: 0px;
        }
    }
-   
+
    @media (min-width: 768px) and (max-width: 991px) {
     .nav-close {
      height: 0px;
        }
    }
-   
+
    @media (max-width: 767px) {
     .menu-nav, .custom-navigation {
         display: none;
@@ -90,13 +88,13 @@ The Adaptive Form Panel Layout component controls the way adaptive form componen
    ```
    /** function for toggling the navigators **/
    var toggleNav = function () {
-   
+
        var nav = $('.custom-navigation');
        if (nav) {
            nav.toggleClass('nav-close');
        }
    }
-   
+
    /** function to populate the panel title **/
    $(window).on('load', function() {
        if (window.guideBridge) {
@@ -117,7 +115,7 @@ The Adaptive Form Panel Layout component controls the way adaptive form componen
 
    ```
    <%-- jsp encapsulating navigator container and panel container divs --%>
-   
+
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
    <cq:includeClientLib categories="af.panel.custom"/>
    <div>
@@ -146,7 +144,7 @@ The Adaptive Form Panel Layout component controls the way adaptive form componen
 
    ```
    <%-- jsp governing the navigation part --%>
-   
+
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
    <%@ page import="com.adobe.aemds.guide.utils.StyleUtils" %>
    <%-- navigation tabs --%>
@@ -175,14 +173,14 @@ The Adaptive Form Panel Layout component controls the way adaptive form componen
 
    ```
    <%-- jsp governing the panel content --%>
-   
+
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
-   
+
    <div id="${guidePanel.id}_guide-item-container" class="tab-content">
        <c:if test="${guidePanel.hasToolbar && (guidePanel.toolbarPosition == 'Top') }">
            <sling:include path="${guidePanel.toolbar.path}"/>
        </c:if>
-   
+
    <c:forEach items="${guidePanel.items}" var="panelItem">
        <div class="tab-pane" id="${panelItem.id}_guide-item" role="tabpanel">
            <c:set var="isNestedLayout" value="${guide:hasNestablePanelLayout(guidePanel,panelItem)}"/>

@@ -13,10 +13,7 @@ docset: aem65
 
 ---
 
-# Alter the Appearance{#alter-the-appearance}
-
-| **[⇐ Create Nodes](/help/communities/overlay-create-nodes.md)** |  |
-|---|---|
+# Alter the Appearance {#alter-the-appearance}
 
 ## Modify the Script {#modify-the-script}
 
@@ -74,7 +71,4 @@ If you login to the publish instance as an administrator, e.g., https://localhos
 If you logout and re-login as `aaron.mcdonald@mailinator.com/password` and refresh the page, you will observe that the posted comment no longer displays with an avatar, instead a simple 'xxx' is displayed.
 
 ![](assets/chlimage_1-78.png)
-
-| **[⇐ Create Nodes](/help/communities/overlay-create-nodes.md)** |  |
-|---|---|
 

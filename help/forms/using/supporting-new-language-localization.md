@@ -18,7 +18,7 @@ docset: aem65
 
 The localization of adaptive forms relies on two types of locale dictionaries:
 
-**Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions, and so on. It is managed as a set of XLIFF files for each locale and you can access it at https://<host>:<port>/libs/cq/i18n/translator.html.
+**Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions, and so on. It is managed as a set of XLIFF files for each locale and you can access it at `https://<host>:<port>/libs/cq/i18n/translator.html`.
 
 **Global dictionaries** There are two global dictionaries, managed as JSON objects, in AEM client library. These dictionaries contain default error messages, month names, currency symbols, date and time patterns, and so on. You can find these dictionaries in CRXDe Lite at /libs/fd/xfaforms/clientlibs/I18N. These locations contains separate folders for each locale. Because global dictionaries are usually not updated frequently, keeping separate JavaScript files for each locale enables browsers to cache them and reduce network bandwidth usage when accessing different adaptive forms on same server.
 

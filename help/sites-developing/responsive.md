@@ -43,7 +43,7 @@ See the following topics for information about implementing responsive design be
 * [Fluid grids](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [Adaptive images](/help/sites-developing/responsive.md#using-adaptive-images)
 
-As you design, use **!UICONTROL Sidekick]** to preview your pages for various screen sizes.
+As you design, use **[!UICONTROL Sidekick]** to preview your pages for various screen sizes.
 
 ## Before you develop {#before-you-develop}
 

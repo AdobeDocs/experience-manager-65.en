@@ -26,54 +26,54 @@ AEM supports the following use cases and this article describes the usage, conce
    <th><strong>Work with search results</strong></th>
   </tr>
   <tr>
-   <td><a disablelinktracking="false" href="#searchbasics">Basic searches</a></td>
+   <td><a href="#searchbasics">Basic searches</a></td>
    <td><a href="#searchindex">Search index</a></td>
    <td><a href="#sort">Sort results</a></td>
   </tr>
   <tr>
-   <td><a disablelinktracking="false" href="#searchui">Understand search UI</a></td>
+   <td><a href="#searchui">Understand search UI</a></td>
    <td><a href="#configvisualsearch">Visual or similarity search</a></td>
    <td><a href="#checkinfo">Check properties and metadata of an asset</a></td>
   </tr>
   <tr>
-   <td><a disablelinktracking="false" href="#searchsuggestions">Search suggestions</a><br /> </td>
+   <td><a href="#searchsuggestions">Search suggestions</a><br /> </td>
    <td><a href="#mandatorymetadata">Mandatory metadata</a></td>
    <td><a href="#download">Download</a></td>
   </tr>
   <tr>
-   <td><a disablelinktracking="false" href="#searchbehavior">Understand search results and behavior<br /> </a></td>
+   <td><a href="#searchbehavior">Understand search results and behavior<br /> </a></td>
    <td><a href="#searchfacets">Modify search facets</a></td>
-   <td><a disablelinktracking="false" href="#metadataupdates">Bulk metadata updates</a></td>
+   <td><a href="#metadataupdates">Bulk metadata updates</a></td>
   </tr>
   <tr>
-   <td><a disablelinktracking="false" href="#searchrank">Search rank and boosting</a><br /> </td>
+   <td><a href="#searchrank">Search rank and boosting</a><br /> </td>
    <td><a href="#extracttextupload">Text extraction</a></td>
    <td><a href="#collections">Smart collections</a></td>
   </tr>
   <tr>
-   <td><a disablelinktracking="false" href="#scope">Advanced search: filtering and scope of search</a></td>
+   <td><a href="#scope">Advanced search: filtering and scope of search</a></td>
    <td><a href="#custompredicates">Custom predicates</a></td>
    <td><a href="#unexpectedresults">Understand unexpected results</a> and <a href="#troubleshoot">Troubleshoot</a></td>
   </tr>
   <tr>
-   <td><p><a disablelinktracking="false" href="#beyondomnisearch">Search from other solutions and apps</a>:<br /> </p>
+   <td><p><a href="#beyondomnisearch">Search from other solutions and apps</a>:<br /> </p>
     <ul>
-     <li><a disablelinktracking="false" href="#aal">Asset Link</a></li>
-     <li><a disablelinktracking="false" href="#brandportal">Brand Portal</a></li>
-     <li><a disablelinktracking="false" href="#desktopapp">Desktop app</a></li>
-     <li><a disablelinktracking="false" href="#adobestock">Adobe Stock images</a></li>
-     <li><a disablelinktracking="false" href="#dynamicmedia">Dynamic Media assets</a></li>
+     <li><a href="#aal">Asset Link</a></li>
+     <li><a href="#brandportal">Brand Portal</a></li>
+     <li><a href="#desktopapp">Desktop app</a></li>
+     <li><a href="#adobestock">Adobe Stock images</a></li>
+     <li><a href="#dynamicmedia">Dynamic Media assets</a></li>
     </ul> </td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a disablelinktracking="false" href="#assetselector">Asset selector/picker</a></td>
+   <td><a href="#assetselector">Asset selector/picker</a></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a disablelinktracking="false" href="#limitations">Limitations</a> and <a href="#tips">Tips</a><br /> </td>
+   <td><a href="#limitations">Limitations</a> and <a href="#tips">Tips</a><br /> </td>
    <td> </td>
    <td> </td>
   </tr>
@@ -508,7 +508,7 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/managing-smart-tags.md).
 
-### Mandatory metadata {##mandatorymetadata}
+### Mandatory metadata {#mandatorymetadata}
 
 Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
 

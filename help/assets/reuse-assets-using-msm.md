@@ -226,7 +226,7 @@ A synchronize action pulls the modifications from a source only to the selected 
   <tr>
    <td>Live Copy Overview console</td>
    <td>Quickly synchronize multiple assets (not necessarily all) when source folder is selected or Live Copy Overview console is already open. Sync action is initiated for one asset at a time but is a faster way to do sync for multiple assets in one go.<br /> </td>
-   <td>See <a data-disable-query="false" href="#bulkactions">Actions on many assets in a live copy folder</a></td>
+   <td>See <a href="#bulkactions">Actions on many assets in a live copy folder</a></td>
   </tr>
  </tbody>
 </table>

@@ -33,10 +33,10 @@ You require the following to integrate Adobe Sign with AEM Forms:
 
 After prerequisites are in place, perform the following steps to configure Adobe Sign with AEM Forms on the Author instance:
 
-1. On AEM Forms author instance, navigate to **Tools ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/aem-forms/icons/Hammer.png) &gt; General &gt; Configuration Browser**.
+1. On AEM Forms author instance, navigate to **Tools** ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/aem-forms/icons/Hammer.png) &gt; **General** &gt; **Configuration Browser**.
 1. On the **[!UICONTROL Configuration Browser]** page, tap **[!UICONTROL Create]**.
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a **[!UICONTROL Title]** for the configuration, enable **[!UICONTROL Cloud Configurations]**, and tap **[!UICONTROL Create]**. It creates a configuration container for cloud services.
-1. Navigate to **Tools ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/aem-forms/icons/Hammer.png) &gt; Cloud Services &gt; Adobe Sign** and select the configuration container you created in the above step.
+1. Navigate to **Tools** ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/aem-forms/icons/Hammer.png) &gt; **Cloud Services** &gt; **Adobe Sign** and select the configuration container you created in the above step.
 
    >[!NOTE]
    >
@@ -62,7 +62,7 @@ After prerequisites are in place, perform the following steps to configure Adobe
     * workflow_read
 
    For step-by-step information to configure OAuth settings for an Adobe Sign application and obtain the keys, see [Configure oAuth settings for the application](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md) developer documentation.
-   [ ![OAuth Config](assets/oauthconfig_new.png)](OAuth Config.md)
+   [![OAuth Config](assets/oauthconfig_new.png)](OAuth Config.md)
 
 1. Go back to the **Create Adobe Sign Configuration** page. In the **[!UICONTROL Settings]** tab, the **[!UICONTROL OAuth URL]** field mentions the following default URL:
 
@@ -74,15 +74,15 @@ After prerequisites are in place, perform the following steps to configure Adobe
 
    You can modify the value for the database shard. Restart the server to be able to use the new value for the database shard.
 
-1. Specify the **Client ID **(also referred to as Application ID) and **Client Secret**. Select the **Enable Adobe Sign for attachments also **option to append files attached to an adaptive form to the corresponding Adobe Sign document sent for signing.
+1. Specify the **Client ID** (also referred to as Application ID) and **Client Secret**. Select the **Enable Adobe Sign for attachments also **option to append files attached to an adaptive form to the corresponding Adobe Sign document sent for signing.
 
    Tap **[!UICONTROL Connect to Adobe Sign]**. When prompted for credentials, provide username and password of the account used while creating Adobe Sign application.
 
    Tap **[!UICONTROL Create]** to create the Adobe Sign configuration.
 
-1. Open AEM Web Console. The URL is https://[server]:[port]/system/console/configMgr
+1. Open AEM Web Console. The URL is `https://[server]:[port]/system/console/configMgr`
 1. Open **Forms Common Configuration Service.**
-1. In the **Allow **field**, **select** All users - All the users, anonymous or logged in, can preview attachments, verify and sign forms**, and click **Save. **Author instance is configured to use Adobe Sign.
+1. In the **Allow** field, **select** All users - All the users, anonymous or logged in, can preview attachments, verify and sign forms**, and click **Save.** Author instance is configured to use Adobe Sign.
 1. On the [Publish](/help/sites-deploying/deploy.md) instance, log in and open the following URL:
 
    `https://<server-name>:<port>/libs/granite/configurations/content/view.html/conf`
@@ -107,8 +107,6 @@ Default interval to sync status of Adobe Sign is now changed.
 ## Related Articles {#related-articles}
 
 * [Using Adobe Sign in an adaptive form](../../forms/using/working-with-adobe-sign.md)
-
-* [Using Adobe Sign with AEM Forms (Video)
-  ](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
+* [Using Adobe Sign with AEM Forms (Video)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
 * [Integrate Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
 

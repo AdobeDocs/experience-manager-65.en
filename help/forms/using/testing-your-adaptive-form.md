@@ -14,8 +14,7 @@ docset: aem65
 
  ![](do-not-localize/10-test-your-adaptive-form.png)
 
-| This tutorial is a step in the [Create Your First Adaptive Form](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case. |
-|---|
+This tutorial is a step in the [Create Your First Adaptive Form](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
 After the adaptive form is ready, it is important to test your adaptive before rolling it out to end users. You can manually test (functional testing) every field or automate testing of your adaptive form. When you have multiple adaptive forms, manually testing every field of all the adaptive forms becomes a daunting task.
 

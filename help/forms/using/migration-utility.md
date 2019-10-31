@@ -46,7 +46,7 @@ Then you need to import your asset package (zip or cmp) on the new setup and the
 
 Due to [backward compatibility-related](/help/sites-deploying/backward-compatibility.md) changes, locations of a few folders in crx-repository are changed. Manually export and import dependencies (custom libraries and assets) from previous setup to fresh environment.
 
-## Read before you proceed with the migration {##prerequisites}
+## Read before you proceed with the migration {#prerequisites}
 
 For Correspondence Management assets:
 

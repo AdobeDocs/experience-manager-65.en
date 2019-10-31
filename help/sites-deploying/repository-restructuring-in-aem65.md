@@ -231,9 +231,9 @@ The table below includes an additional column named "Configuration Type" to expl
     <ul>
      <li>Remain in read-only mode in audience console.</li>
      <li>Still loaded on the page (if the given path is selected in <strong>Page Properties &gt; Personalization &gt; Segments Path</strong>).</li>
-     <li>Can be used for content targetting.</li>
+     <li>Can be used for content targeting.</li>
     </ul> </td>
-   <td>You can use the <a href="/help/sites-deploying/upgrading-code-and-customizations.md#migrateconfigurations" target="_blank">Segments Migration Tool</a> to migrate to the new location.</td>
+   <td>You can use the <a href="/help/sites-deploying/upgrading-code-and-customizations.md#migrateconfigurations">Segments Migration Tool</a> to migrate to the new location.</td>
   </tr>
   <tr>
    <td>AEM Communities</td>
@@ -357,7 +357,7 @@ The table below includes an additional column named "Configuration Type" to expl
     <ul>
      <li>Create configurations using the new Touch UI<br /> or<br /> </li>
      <li>Copy the configurations from <code>/etc/cloudservices/translation</code> to their respective new location(s)</li>
-    </ul> <p>Once this is done, the configurations need to be associated with Sites via <strong>Sites → Properties</strong> in the user interface.</p> <p><em>Note: Translation connectors must be compatible with AEM 6.5 for this to work.</em></p> </td>
+    </ul> <p>Once this is done, the configurations need to be associated with Sites via <strong>Sites > Properties</strong> in the user interface.</p> <p><em>Note: Translation connectors must be compatible with AEM 6.5 for this to work.</em></p> </td>
   </tr>
   <tr>
    <td>All</td>
@@ -369,7 +369,7 @@ The table below includes an additional column named "Configuration Type" to expl
     <ul>
      <li>Create configurations using the new Touch UI or<br /> </li>
      <li>Copy older configurations from <code>/etc/cloudservices/translation</code> to their respective new location(s)</li>
-    </ul> <p>Once this is done, the configurations need to be associated with Sites via <strong>Sites → Properties</strong> in the user interface.</p> </td>
+    </ul> <p>Once this is done, the configurations need to be associated with Sites via <strong>Sites > Properties</strong> in the user interface.</p> </td>
   </tr>
   <tr>
    <td>All</td>
@@ -666,34 +666,19 @@ See each table row for any supported extensibility model. Content in this sectio
   </tr>
   <tr>
    <td>AEM Forms</td>
-   <td><code>/etc/
-     <g class="gr_ gr_205 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="205" id="205">
-       aep
-     </g></code></td>
-   <td><code>/var/
-     <g class="gr_ gr_206 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="206" id="206">
-       fd
-     </g>/content/annotations</code></td>
+   <td><code>/etc/aep</code></td>
+   <td><code>/var/fd/content/annotations</code></td>
    <td>Legacy Correspondence Management annotation files. Not meant to be directly consumed. Will be cleaned up after upgrade using a cleanup filter.</td>
    <td>Legacy location cleaned-up post-upgrade using a cleanup filter.</td>
   </tr>
   <tr>
    <td>All</td>
    <td><code>/etc/tags</code></td>
-   <td><code>/content/
-     <g class="gr_ gr_202 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="202" id="202">
-       cq
-     </g>
-     <g class="gr_ gr_209 gr-alert gr_gramm gr_inline_cards gr_run_anim Style replaceWithoutSep" data-gr-id="209" id="209">
-       :tags
-     </g></code></td>
+   <td><code>/content/cq:tags</code></td>
    <td>The Tag Manager API supports both the legacy and the new location. When the JCR Tag Manager Factory OSGi Component starts, it detects if it is running on an upgraded instance or a legacy one, and uses the appropriate location.<br /> </td>
    <td><p>In order to properly align with the new model:</p>
     <ol>
-     <li>Replace the references to the old model (<code>/etc/tags</code>) with the new one (<code>/content/
-       <g class="gr_ gr_201 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="201" id="201">
-         cq
-       </g>:tags</code>) by using the <code>tagID.</code></li>
+     <li>Replace the references to the old model (<code>/etc/tags</code>) with the new one (<code>/content/cq:tags</code>) by using the <code>tagID.</code></li>
      <li>Log in to CRXDE Lite</li>
      <li>Move the tags from <code>/etc/tags</code> to <code>/content/cq:tags</code></li>
      <li>Restart the OSGi Component <code class="code">com.day.cq.tagging.impl.JcrTagManagerFactoryImpl.

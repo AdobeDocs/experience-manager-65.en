@@ -353,10 +353,7 @@ The `scoringRules`property on a badging rule simply restricts which scoring rule
    <td><em>(optional)</em> Identifies the scoring engine as either "basic" or "advanced". If the advanced scoring engine is desired, see <a href="/help/communities/advanced.md">Advanced Scoring and Badges</a>. The default is "basic".</td>
   </tr>
   <tr>
-   <td>
-    <g class="gr_ gr_16 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="16" id="16">
-      scoringRules
-    </g></td>
+   <td>scoringRules</td>
    <td>String[]</td>
    <td>(<em>optional</em>) A multi-value string to restrict the badging rule to scoring events identified by the scoring rules</td>
   </tr>

@@ -528,7 +528,7 @@ In order to see what platforms are certified to run with this release, please re
 
 ### Install AEM forms add-on package {#install-aem-forms-add-on-package}
 
-#### Install AEM forms add-on {##installaemformsaddon}
+#### Install AEM forms add-on {#installaemformsaddon}
 
 >[!NOTE]
 >
