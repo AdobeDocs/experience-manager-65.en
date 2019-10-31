@@ -61,7 +61,7 @@ To embed an adaptive form or Interactive Communication using AEM Forms for SPA C
    >
    >Rendering multiple AEM Forms SPA Container components on a page are not supported. You can have multiple AEM Forms SPA Container on a page but only one component is rendered at a time. Ensure that only one component is visible on a page to avoid discrepancies.
 
-1. Tap the embedded AEM Forms SPA Container component in the sites page, and then tap ![](assets/settings_icon.png) on the action bar. The **Edit AEM Forms SPA Container **dialog opens.
+1. Tap the embedded AEM Forms SPA Container component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **Edit AEM Forms SPA Container **dialog opens.
 1. In the **Edit AEM Forms Container** dialog, specify the following:
 
     * **Asset Type:** Select the type of asset to embed. The options are **Adaptive Form** and **Interactive Communication** 

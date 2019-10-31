@@ -23,7 +23,7 @@ Adobe Experience Manager (AEM) Assets fetches usage data around AEM assets used 
 
 1. In AEM, click **Tools** &gt; **Assets**.
 
-   ![](assets/chlimage_1-72.png)
+   ![chlimage_1-72](assets/chlimage_1-72.png)
 
 1. Click the **Insights Configuration** card.
 1. In the wizard, select a data center and provide your credentials including the name of your organization, user name, and Shared Secret.
@@ -42,7 +42,7 @@ After you configure your Analytics account, the Page Tracker code is generated f
 
 1. In AEM, click **Tools** &gt; **Assets**.
 
-   ![](assets/chlimage_1-73.png)
+   ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. From the **Navigation** page, click the **Insights Page Tracker** card.
 1. Click the **Download** icon to download the page tracker code.

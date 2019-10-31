@@ -36,13 +36,13 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/essentials-file-library.md#essentials-for-client-side) are included, this is how the `File Library` component will appear :
 
-![](assets/chlimage_1-145.png)
+![chlimage_1-145](assets/chlimage_1-145.png)
 
 ### Configuring File Library {#configuring-file-library}
 
 Select the placed `File Library` component to access and select the `Configure` icon which opens the edit dialog.
 
-![](assets/chlimage_1-146.png) ![](assets/forum-config-1.png)
+![chlimage_1-146](assets/chlimage_1-146.png) ![forum-config-1](assets/forum-config-1.png)
 
 #### Comments tab {#comments-tab}
 

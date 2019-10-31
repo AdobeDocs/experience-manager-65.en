@@ -42,7 +42,7 @@ See the NPM package [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/pac
 
 When initializing the `PageModelManager`, the library first loads the provided root model of the App (via parameter, meta property, or current URL). If the library identifies that the model of the current page is not part of the root model it fetches and include it as the model of a child page.
 
-![](assets/page_model_consolidation.png)
+![page_model_consolidation](assets/page_model_consolidation.png)
 
 ### ComponentMapping {#componentmapping}
 

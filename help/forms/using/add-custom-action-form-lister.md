@@ -45,5 +45,5 @@ You can add similar actions in your custom template. To define a JavaScript func
 
 After making the edits to the template, the sample portal page contains a button to send the link of the form via email, as shown below.
 
-![](assets/email.png)
+![email](assets/email.png)
 

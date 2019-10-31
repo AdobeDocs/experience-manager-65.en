@@ -40,7 +40,7 @@ See the following additional topics:
 
 The projects console is where you access and manage your projects within AEM.
 
-![](assets/screen-shot_2019-03-05at125110.png)
+![screen-shot_2019-03-05at125110](assets/screen-shot_2019-03-05at125110.png)
 
 * Select **Timeline** and then a project to view its timeline.
 * Click/tap **Select** to enter selection mode.
@@ -69,17 +69,17 @@ You can have the following tiles associated with your project. Each is described
 
 In the **Assets** tile, you can gather all assets that you use for a particular project.
 
-![](assets/chlimage_1-70.png)
+![chlimage_1-70](assets/chlimage_1-70.png)
 
 You upload assets directly in the tile. In addition you can create Image Sets, Spin Sets, or Mixed Media Sets if you have the Dynamic Media add-on.
 
-![](assets/chlimage_1-71.png)
+![chlimage_1-71](assets/chlimage_1-71.png)
 
 ### Asset Collections {#asset-collections}
 
 Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.
 
-![](assets/chlimage_1-72.png)
+![chlimage_1-72](assets/chlimage_1-72.png)
 
 Add a collection by clicking **Add Collection** and selecting the appropriate collection from the list.
 
@@ -87,11 +87,11 @@ Add a collection by clicking **Add Collection** and selecting the appropriate co
 
 The **Experiences** tile lets you add a Mobile app, web site, or publication to the project.
 
-![](assets/chlimage_1-73.png)
+![chlimage_1-73](assets/chlimage_1-73.png)
 
 The icons indicate which kind of experience is represented: web site, mobile application or a publication. Add experiences by clicking the + sign or clicking **Add Experience** and selecting the type of experience.
 
-![](assets/chlimage_1-74.png)
+![chlimage_1-74](assets/chlimage_1-74.png)
 
 Select the path for the thumbnails and if applicable, change the thumbnail for the experience. Experiences are grouped together in the **Experiences** tile.
 
@@ -99,47 +99,47 @@ Select the path for the thumbnails and if applicable, change the thumbnail for t
 
 The Links tile lets you associate external links with your project.
 
-![](assets/chlimage_1-75.png)
+![chlimage_1-75](assets/chlimage_1-75.png)
 
 You can name the link with an easy-to-recognize name as well as change the thumbnail.
 
-![](assets/chlimage_1-76.png)
+![chlimage_1-76](assets/chlimage_1-76.png)
 
 ### Project Info {#project-info}
 
 The Project Information tile provides general information on the project including a description, project status (inactive or active), a due date, and members. In addition, you can add a project thumbnail, which is displayed on the main Projects page.
 
-![](assets/chlimage_1-77.png)
+![chlimage_1-77](assets/chlimage_1-77.png)
 
 Team members can be assigned and deleted from this tile (or have their roles changed) as well as the Team tile.
 
-![](assets/chlimage_1-78.png)
+![chlimage_1-78](assets/chlimage_1-78.png)
 
 ### Translation Job {#translation-job}
 
 The Translation Job tile is where you start a translation and also where you see the status of your translations. To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).
 
-![](assets/chlimage_1-79.png)
+![chlimage_1-79](assets/chlimage_1-79.png)
 
 Click the ellipsis at the bottom of the **Translation Job** card to view the assets in the translation workflow. The translation job list also displays entries for asset metadata and tags. These entries indicate that the metadata and tags for the assets are also translated.
 
-![](assets/chlimage_1-80.png)
+![chlimage_1-80](assets/chlimage_1-80.png)
 
 ### Team {#team}
 
 In this tile, you can specify the members of the project team. When editing, you can enter the name of the team member and assign the user role.
 
-![](assets/chlimage_1-81.png)
+![chlimage_1-81](assets/chlimage_1-81.png)
 
 You can add and delete team members from the team. In addition, you can edit the [user role](#userroles) assigned to the team member.
 
-![](assets/chlimage_1-82.png)
+![chlimage_1-82](assets/chlimage_1-82.png)
 
 ### Landing Pages {#landing-pages}
 
 The **Landing** Pages tile lets you request a new landing page.
 
-![](assets/chlimage_1-83.png)
+![chlimage_1-83](assets/chlimage_1-83.png)
 
 This workflow is described in [Create a Landing Page workflow](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow).
 
@@ -147,7 +147,7 @@ This workflow is described in [Create a Landing Page workflow](/help/sites-autho
 
 The **Emails** tile helps you manage requests for email. It starts the Request for Email workflow.
 
-![](assets/chlimage_1-84.png)
+![chlimage_1-84](assets/chlimage_1-84.png)
 
 More information is described in the [Request Email workflow.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
 
@@ -155,7 +155,7 @@ More information is described in the [Request Email workflow.](/help/sites-autho
 
 You can assign your project to follow certain workflows. If any workflows are running, their status displays in the **Workflows** tile in Projects.
 
-![](assets/chlimage_1-85.png)
+![chlimage_1-85](assets/chlimage_1-85.png)
 
 You can assign your project to follow certain workflows. Depending on which project you choose you have different workflows available.
 
@@ -165,13 +165,13 @@ These are described in [Working with Project Workflows.](/help/sites-authoring/p
 
 The Launches tile shows any launches that have been requested with a [Request Launch workflow.](/help/sites-authoring/projects-with-workflows.md)
 
-![](assets/chlimage_1-86.png)
+![chlimage_1-86](assets/chlimage_1-86.png)
 
 ### Tasks {#tasks}
 
 Tasks let you monitor the status of any project-related tasks, including workflows. Tasks are covered in detail at [Working with Tasks](/help/sites-authoring/task-content.md).
 
-![](assets/chlimage_1-87.png)
+![chlimage_1-87](assets/chlimage_1-87.png)
 
 ## Project Templates {#project-templates}
 

@@ -29,7 +29,7 @@ The user enters values into the form and clicks the Calculate button to view the
 
 The following diagram shows the application’s logic flow.
 
-![](assets/cf_cf_finsrv_loancalcapp_v1.png)
+![cf_cf_finsrv_loancalcapp_v1](assets/cf_cf_finsrv_loancalcapp_v1.png)
 
 The following table describes the steps in this diagram.
 
@@ -68,7 +68,7 @@ Typically, a form that is submitted as PDF content contains scripts that are exe
 
 To illustrate the usage of a form design script, this section examines a simple interactive form that contains a script that is configured to run on the server. The following diagram shows a form design containing a script that adds values that a user enters into the first two fields and displays the result in the third field.
 
-![](assets/cf_cf_caldata.png)
+![cf_cf_caldata](assets/cf_cf_caldata.png)
 
 **A.** A field named NumericField1 **B.** A field named NumericField2 **C.** A field named NumericField3
 

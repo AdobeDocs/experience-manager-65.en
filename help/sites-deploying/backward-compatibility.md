@@ -33,7 +33,7 @@ The Compatibility Package allows you to run AEM in compatibility mode and defer 
 >
 >Please note that the compatibility package is only a temporary solution to defer development required for being AEM 6.5 compatible, its recommended only as a last option if you are not able to address compatibility issues through development immediately after the upgrade. It is strongly recommended to switch to native mode and uninstall the compatibility package once you decide to proceed with 6.5 based custom development and avail of full 6.5 functionality.
 
-![](assets/sase.png)
+![sase](assets/sase.png)
 
 The Compatibility Package has two modes: **Routing Enabled** and **Routing Disabled**.
 
@@ -53,7 +53,7 @@ Compatibility Mode is for customers who have customizations of interfaces that a
 
 Legacy mode is for customers having custom interfaces based on legacy or deprecated code from AEM that has been moved out in the compatibility package.
 
-![](assets/sapte.png)
+![sapte](assets/sapte.png)
 
 ## How to Set Up {#how-to-set-up}
 
@@ -61,6 +61,6 @@ The AEM 6.3 Compatibility Package will be installable as a package using the Pac
 
 Once the Compatibility Package is installed, the routing can be enabled or disabled using a switch in the OSGI configuration as shown below:
 
-![](assets/screen_shot_2017-11-27at122421pm.png)
+![screen_shot_2017-11-27at122421pm](assets/screen_shot_2017-11-27at122421pm.png)
 
 Once the Compatibility Package is installed and set up, the features will be used based on the compatibility mode that has been chosen.

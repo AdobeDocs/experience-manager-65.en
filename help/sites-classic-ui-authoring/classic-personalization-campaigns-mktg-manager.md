@@ -25,7 +25,7 @@ For example:
 
 `https://localhost:4502/libs/mcm/content/admin.html`
 
-![](assets/screen_shot_2012-02-21at114636am.png)
+![screen_shot_2012-02-21at114636am](assets/screen_shot_2012-02-21at114636am.png)
 
 From the MCM you can access:
 
@@ -62,7 +62,7 @@ From the MCM you can access:
 
 The dashboard shows four panes that provide you with an overview of your lists (of leads), segments, reports and campaigns. Access to basic functionality for these is also available here.
 
-![](assets/mcm_dashboard.png)
+![mcm_dashboard](assets/mcm_dashboard.png)
 
 ### Leads {#leads}
 
@@ -79,7 +79,7 @@ Under **Leads** in the left pane you can create, import, edit and delete your le
 >
 >See [Working with Leads](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithleads) for detailed information about specific tasks.
 
-![](assets/screen_shot_2012-02-21at114748am-1.png)
+![screen_shot_2012-02-21at114748am-1](assets/screen_shot_2012-02-21at114748am-1.png)
 
 ### Lists {#lists}
 
@@ -96,7 +96,7 @@ Under **Lists**, you can manage your lists by creating, importing, editing, merg
 >
 >See [Working with Lists](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) for detailed information about specific tasks.
 
-![](assets/screen_shot_2012-02-21at124828pm-1.png)
+![screen_shot_2012-02-21at124828pm-1](assets/screen_shot_2012-02-21at124828pm-1.png)
 
 ### Campaigns {#campaigns}
 
@@ -106,7 +106,7 @@ Under **Lists**, you can manage your lists by creating, importing, editing, merg
 
 To access existing campaigns, in the MCM click **Campaigns**.
 
-![](assets/screen_shot_2012-02-21at11106pm.png)
+![screen_shot_2012-02-21at11106pm](assets/screen_shot_2012-02-21at11106pm.png)
 
 * **In the left pane**:
   There is a list of all brands and campaigns.
@@ -121,7 +121,7 @@ To access existing campaigns, in the MCM click **Campaigns**.
 
 #### Brand Overview {#brand-overview}
 
-![](assets/mcm_brandoverview.png)
+![mcm_brandoverview](assets/mcm_brandoverview.png)
 
 From here you can:
 
@@ -149,7 +149,7 @@ For the individual campaigns there are two views available:
 
    This presents a list of all touchpoints (grey) with a horizontal timeframe of the experiences (green) connected to that touchpoint:
 
-   ![](assets/mcm_banner_calendarview.png)
+   ![mcm_banner_calendarview](assets/mcm_banner_calendarview.png)
 
    From here you can:
 
@@ -167,7 +167,7 @@ For the individual campaigns there are two views available:
 
    This lists all experiences (e.g. teasers and newsletters) for the selected campaign:
 
-   ![](assets/mcm_banner_listview.png)
+   ![mcm_banner_listview](assets/mcm_banner_listview.png)
 
    From here you can:
 
@@ -187,7 +187,7 @@ For the individual campaigns there are two views available:
 
 In the MCM, click **Campaigns**. Ensure that the list view is active, then select the required campaign experience and click **Simulate**. The touchpoint (teaser or newsletter page) will be opened to show the experience that you have selected - as the visitor will see it.
 
-![](assets/mcm_simulateexperience.png)
+![mcm_simulateexperience](assets/mcm_simulateexperience.png)
 
 From here you can also open the sidekick (click the small down arrow) to change to edit mode for updating the page.
 
@@ -195,5 +195,5 @@ From here you can also open the sidekick (click the small down arrow) to change 
 
 In the MCM, click **Campaigns**. Ensure that the list view is active, then select the required campaign experience and select **Analyze...**. A chart of the page impressions over time will be shown.
 
-![](assets/mcm_campaignanalyze.png)
+![mcm_campaignanalyze](assets/mcm_campaignanalyze.png)
 

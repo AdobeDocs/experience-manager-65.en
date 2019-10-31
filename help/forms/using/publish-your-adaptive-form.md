@@ -52,8 +52,8 @@ AEM Forms provide a component, AEM Forms Container, to embed an adaptive form to
 
    The We.Retail site is shipped with AEM. If you do not have the We.Retail site installed, see to [We.Retail Reference Implementation](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) install the site.
 
-1. Tap ![](assets/properties.png) page information and select the **Edit Template** option in the newly created We.Retail site page. The template of the page opens in a new tab of the browser.
-1. Tap inside the **layout container** box and tap ![](assets/feedmanagement.png). In the **Allowed Components** tab, expand the **General** accordion, select the **AEM Form** option, and tap ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/AEM_6_3_Forms_save.PNG). The AEM Forms Container component is enabled for the page.
+1. Tap ![properties](assets/properties.png) page information and select the **Edit Template** option in the newly created We.Retail site page. The template of the page opens in a new tab of the browser.
+1. Tap inside the **layout container** box and tap ![feedmanagement](assets/feedmanagement.png). In the **Allowed Components** tab, expand the **General** accordion, select the **AEM Form** option, and tap ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/AEM_6_3_Forms_save.PNG). The AEM Forms Container component is enabled for the page.
 
 1. Open the browser tab containing AEM Sites page opened in step 1. Tap the **Drag components here** box and tap **+.** In the **Insert New Component** box, tap **AEM Form.** The **AEM Forms Container** component is added to the page.
 1. Tap the **AEM Forms container** component and tap ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/cmppr.png). A dialog box with properties of AEM Forms Container appears. In the **Asset Path** field, browse and select the shipping-address-add-update-form adaptive form. Tap ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/AEM_6_3_Forms_save.PNG). The adaptive form is embedded in the page.
@@ -63,7 +63,7 @@ AEM Forms provide a component, AEM Forms Container, to embed an adaptive form to
     * If you modify only the embedded form in a published site page, publish the original form and the changes reflect in the published site page. The published site page includes a reference to the form and does not require republishing the page.
     * If you modify the sites page and the embedded form, republish the sites page and the form.
 
-   ![](assets/embed-in-aem-sites.png)
+   ![embed-in-aem-sites](assets/embed-in-aem-sites.png)
 
    Shipping and Billing Address Change form added to an AEM Sites page.
 

@@ -19,7 +19,7 @@ Mixed Media Sets let you provide a mix of images, Image Sets, Spin Sets, and vid
 
 Mixed Media Sets are designated by a banner with the word **MixedMediaSet**. In addition, if the Mixed Media Set is published, then the publish date, indicated by the **World** icon is on the banner along with the last modification date, indicated by the **Pencil** icon displays.
 
-![](assets/chlimage_1-137.png)
+![chlimage_1-137](assets/chlimage_1-137.png)
 
 >[!NOTE]
 >
@@ -85,11 +85,11 @@ To create a Mixed Media Set:
 
 1. In Assets, navigate to where you want to create a mixed media set, and click **Create**, and select** Mixed Media Set**. You can also create the set from inside a folder that contains your assets. The Mixed Media Set Editor displays.
 
-   ![](assets/chlimage_1-138.png)
+   ![chlimage_1-138](assets/chlimage_1-138.png)
 
 1. In the Mixed Media Set Editor, in **Title**, enter a name for the Mixed Media Set. The name appears in the banner across the Mixed Media Set. Optionally, enter a description.
 
-   ![](assets/chlimage_1-139.png)
+   ![chlimage_1-139](assets/chlimage_1-139.png)
 
    >[!NOTE]
    >
@@ -101,11 +101,11 @@ To create a Mixed Media Set:
 
    See [Working with Selectors](/help/assets/working-with-selectors.md).
 
-   ![](assets/chlimage_1-140.png)
+   ![chlimage_1-140](assets/chlimage_1-140.png)
 
 1. Re-order the assets by dragging them up or down the list (must select the reorder icon), as necessary.
 
-   ![](assets/chlimage_1-141.png)
+   ![chlimage_1-141](assets/chlimage_1-141.png)
 
    If you want to add thumbnails, click the **+** **thumbnail** icon next to the image and navigate to the thumbnail you want. When done selecting all the thumbnail images click **Save.**
 

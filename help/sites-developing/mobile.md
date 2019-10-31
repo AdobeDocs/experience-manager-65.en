@@ -273,7 +273,7 @@ Create a device group when the groups that AEM installs do not meet your require
 
 The mobile device group configuration dialog looks as follows:
 
-![](assets/screen_shot_2012-02-01at22043pm.png)
+![screen_shot_2012-02-01at22043pm](assets/screen_shot_2012-02-01at22043pm.png)
 
 #### Custom CSS per Device Group {#custom-css-per-device-group}
 
@@ -569,7 +569,7 @@ To view the statistics:
 
 The **Statistics** page looks as follows:
 
-![](assets/screen_shot_2012-02-01at24353pm.png)
+![screen_shot_2012-02-01at24353pm](assets/screen_shot_2012-02-01at24353pm.png)
 
 >[!NOTE]
 >

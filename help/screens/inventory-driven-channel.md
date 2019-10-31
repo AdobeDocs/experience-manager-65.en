@@ -54,7 +54,7 @@ Follow the terms below that play a significant role in understanding and setting
 >
 >Creating four different channels is only for demonstration purposes and to showcase four different use cases in different channels. If you want to follow only one use case as your requirement, please feel free to create only one sequence channel.
 
-![](assets/screen_shot_2019-05-01at42043pm.png)
+![screen_shot_2019-05-01at42043pm](assets/screen_shot_2019-05-01at42043pm.png)
 
 Follow the sections below to create a sample project on creating and managing a data driven asset change using Google Sheets in an AEM Screens project:
 
@@ -77,11 +77,11 @@ Follow the sections below to create a sample project on creating and managing a 
 
    This step allows you to access values in the google sheet.
 
-   ![](assets/screen_shot_2019-04-22at115829am.png)
+   ![screen_shot_2019-04-22at115829am](assets/screen_shot_2019-04-22at115829am.png)
 
 1. When you click **Save** from the preceding step, you will get the link for the Google Sheet. Save the click for future references and click **Done**.
 
-   ![](assets/screen_shot_2019-04-22at120242pm.png)
+   ![screen_shot_2019-04-22at120242pm](assets/screen_shot_2019-04-22at120242pm.png)
 
 >[!CAUTION]
 >
@@ -95,7 +95,7 @@ To learn in how to enable the REST APIs for Google Sheets, refer to Google APIs 
 
 1. Navigate to [Google API Console](https://console.developers.google.com/apis/credentials). Click **CREATE** to create a new project.
 
-   ![](assets/screen_shot_2019-04-22at125028pm.png)
+   ![screen_shot_2019-04-22at125028pm](assets/screen_shot_2019-04-22at125028pm.png)
 
 1. Enter the **Project Name** as **AssetChange** and click **CREATE**.
 1. Once you have created the project to need to set up the API Key. Click **Create credentials** and select **API key **to generate API key for your project. Save the API key for future references.
@@ -134,7 +134,7 @@ The following section describes how to configure Adobe Experience Manager (AEM) 
 
 1. Navigate to your AEM instance and click the tools icon from left sidebar. Click **Sites** --&gt; **ContextHub**, as shown in the figure below.
 
-   ![](assets/screen_shot_2019-04-22at53222pm.png)
+   ![screen_shot_2019-04-22at53222pm](assets/screen_shot_2019-04-22at53222pm.png)
 
 1. **Create a new ContextHub Store Configuration**
 
@@ -188,7 +188,7 @@ The following section describes how to configure Adobe Experience Manager (AEM) 
 
     1. Enter the **Title** as **ContextHubDemo** and click **Create**. Your brand is now created as shown below.
 
-   ![](assets/screen_shot_2019-05-05at44305pm.png)
+   ![screen_shot_2019-05-05at44305pm](assets/screen_shot_2019-05-05at44305pm.png)
 
 1.
 
@@ -232,7 +232,7 @@ The following section describes how to configure Adobe Experience Manager (AEM) 
    >
    >The AEM validates your data from the Google Sheet by showing your segment as green.
 
-   ![](assets/screen_shot_2019-04-23at20142pm.png)
+   ![screen_shot_2019-04-23at20142pm](assets/screen_shot_2019-04-23at20142pm.png)
 
    Similarly, edit the property values to **Sheets A1 2**.
 
@@ -255,7 +255,7 @@ Follow the steps below to set up ContextHub configurations and segments path to 
 1. Navigate to one of the AEM Screens channel (**DataDrivenRetail**) that you created, as a prerequisite.
 1. Select the channel (**DataDrivenRetail**)and click **Properties** from the action bar.
 
-   ![](assets/screen_shot_2019-05-01at43332pm.png)
+   ![screen_shot_2019-05-01at43332pm](assets/screen_shot_2019-05-01at43332pm.png)
 
 1. Select the **Personalization** tab to setup the ContextHub configurations.
 
@@ -269,7 +269,7 @@ Follow the steps below to set up ContextHub configurations and segments path to 
    >
    >Use the ContextHub and the Segments path, where you initially saved your context hub configurations and segments.
 
-   ![](assets/screen_shot_2019-05-01at44030pm.png)
+   ![screen_shot_2019-05-01at44030pm](assets/screen_shot_2019-05-01at44030pm.png)
 
    >[!NOTE]
    >
@@ -281,7 +281,7 @@ Follow the steps below to set up ContextHub configurations and segments path to 
    >
    >If you have set up everything correctly, you will see **Targeting** option in the drop-down from the editor, as shown in the figure below.
 
-   ![](assets/screen_shot_2019-05-01at44231pm.png)
+   ![screen_shot_2019-05-01at44231pm](assets/screen_shot_2019-05-01at44231pm.png)
 
    >[!NOTE]
    >
@@ -306,7 +306,7 @@ Follow the steps below to implement the Retail Inventory Activation use case:
     1. Navigate to the ContextHubDemo Google Sheet.
     1. Add three columns (Red, Green, and Blue) with corresponding values for three different sweatshirts.
 
-   ![](assets/screen_shot_2019-05-06at101755am.png)
+   ![screen_shot_2019-05-06at101755am](assets/screen_shot_2019-05-06at101755am.png)
 
 1. **Configuring the Audiences as per the requirements**
 
@@ -333,15 +333,15 @@ Follow the steps below to implement the Retail Inventory Activation use case:
 
     1. Select **googlesheets/value/1/0** from the drop-down in **Second Property name**
 
-   ![](assets/screen_shot_2019-05-06at102600am.png)
+   ![screen_shot_2019-05-06at102600am](assets/screen_shot_2019-05-06at102600am.png)
 
    Similarly, edit and add comparison property rules to **For_Blue** segment as shown in the figure below:
 
-   ![](assets/screen_shot_2019-05-06at103728am.png)
+   ![screen_shot_2019-05-06at103728am](assets/screen_shot_2019-05-06at103728am.png)
 
    Similarly, edit and add comparison property rules to** For_Green **segment as shown in the figure below:
 
-   ![](assets/screen_shot_2019-05-06at103418am.png)
+   ![screen_shot_2019-05-06at103418am](assets/screen_shot_2019-05-06at103418am.png)
 
    >[!NOTE]
    >
@@ -349,13 +349,13 @@ Follow the steps below to implement the Retail Inventory Activation use case:
 
 1. Navigate and select your **DataDrivenRetail **channel (a sequencel channel) and click **Edit** from the action bar.
 
-   ![](assets/screen_shot_2019-05-06at104257am.png)
+   ![screen_shot_2019-05-06at104257am](assets/screen_shot_2019-05-06at104257am.png)
 
    >[!CAUTION]
    >
    >You should have set up your **ContextHub** **Configurations** using the channel **Properties** --&gt; **Personalization** tab.
 
-   ![](assets/screen_shot_2019-05-06at105214am.png)
+   ![screen_shot_2019-05-06at105214am](assets/screen_shot_2019-05-06at105214am.png)
 
    >[!NOTE]
    >
@@ -368,24 +368,24 @@ Follow the steps below to implement the Retail Inventory Activation use case:
 
     1. Click **Start Targeting**.
 
-   ![](assets/screen_shot_2019-05-06at121253pm.png)
+   ![screen_shot_2019-05-06at121253pm](assets/screen_shot_2019-05-06at121253pm.png)
 
    >[!NOTE]
    >
    >Before you start targeting, you must add the segments (**For_Green**, **For_Red**, and **For_Blue**) by clicking on **+ Add Experience Targeting** from the side rail as shown in the figure below.
 
-   ![](assets/screen_shot_2019-05-06at123554pm.png)
+   ![screen_shot_2019-05-06at123554pm](assets/screen_shot_2019-05-06at123554pm.png)
 
 1. Add the images to all the three different screnarios as shown below.
 
-   ![](assets/retail_targeting.gif)
+   ![retail_targeting](assets/retail_targeting.gif)
 
 1. **Checking the Preview**
 
     1. Click **Preview.** Also, open your Google Sheet and update its value.
     1. Change the value for all three different columns and you will notice the display image updates as per the highest value in inventory.
 
-   ![](assets/retail_result.gif)
+   ![retail_result](assets/retail_result.gif)
 
 ## Use Case 2: Travel Center Weather Activation {#use-case-travel-center-weather-activation}
 
@@ -404,7 +404,7 @@ Follow the steps below to implement the travel center weather activation use cas
     1. Navigate to the ContextHubDemo Google Sheet.
     1. Add a column with **Heading1** with corresponding value for temperature.
 
-   ![](assets/screen_shot_2019-05-08at112911am.png)
+   ![screen_shot_2019-05-08at112911am](assets/screen_shot_2019-05-08at112911am.png)
 
 1. **Configuring the segments in Audiences as per the requirements**
 
@@ -433,13 +433,13 @@ Follow the steps below to implement the travel center weather activation use cas
    >
    >Your channel should already have a default image and the Audiences should be pre-configured as described in Step (3)
 
-   ![](assets/screen_shot_2019-05-08at113022am.png)
+   ![screen_shot_2019-05-08at113022am](assets/screen_shot_2019-05-08at113022am.png)
 
    >[!CAUTION]
    >
    >You should have set up your **ContextHub** **Configurations** using the channel **Properties** --&gt; **Personalization** tab.
 
-   ![](assets/screen_shot_2019-05-08at114106am.png)
+   ![screen_shot_2019-05-08at114106am](assets/screen_shot_2019-05-08at114106am.png)
 
    >[!NOTE]
    >
@@ -451,14 +451,14 @@ Follow the steps below to implement the travel center weather activation use cas
    >
    >If you added the **Brand** under **Targeting Configurations** while setting up **ContextHub Configurations** for your project, you do not need to select the **Brand** and **Activity** in this step.
 
-   ![](assets/new_activity3.gif)
+   ![new_activity3](assets/new_activity3.gif)
 
 1. Checking the Preview
 
     1. Click **Preview.** Also, open your Google Sheet and update its value.
     1. Change the value to less than 50, you should be able to view the an image of summer drinks. If the value in the Google Sheet is 50 or greater than should be able to view the an image of hot drink.
 
-   ![](assets/result3.gif)
+   ![result3](assets/result3.gif)
 
 ## Use Case 3: Hospitality Reservation Activation {#use-case-hospitality-reservation-activation}
 
@@ -478,7 +478,7 @@ Follow the steps below to implement the hospitality reservation activation use c
 
    For example, apply the formula to the third column **AdTarget**, as shown in the figure below.
 
-   ![](assets/screen_shot_2019-04-29at94132am.png)
+   ![screen_shot_2019-04-29at94132am](assets/screen_shot_2019-04-29at94132am.png)
 
 1. **Configuring the segments in Audiences as per the requirements**
 
@@ -505,13 +505,13 @@ Follow the steps below to implement the hospitality reservation activation use c
    >
    >Your channel should already have a default image and the Audiences should be pre-configuredas described in Step (3).
 
-   ![](assets/screen_shot_2019-05-08at14652pm.png)
+   ![screen_shot_2019-05-08at14652pm](assets/screen_shot_2019-05-08at14652pm.png)
 
    >[!CAUTION]
    >
    >You should have set up your **ContextHub** **Configurations** using the channel **Properties** --&gt; **Personalization** tab.
 
-   ![](assets/screen_shot_2019-05-08at14903pm.png)
+   ![screen_shot_2019-05-08at14903pm](assets/screen_shot_2019-05-08at14903pm.png)
 
    >[!NOTE]
    >
@@ -523,7 +523,7 @@ Follow the steps below to implement the hospitality reservation activation use c
     1. Click **Preview.** Also, open your Google Sheet and update its value.
     1. Change the value in Restaurant1 &gt; Restaurant2, you should be able to view the an image of steak picture and Restaurant1 &lt; Restaurant12, you should be able to view thai food picture on your display screen.
 
-   ![](assets/result5.gif)
+   ![result5](assets/result5.gif)
 
 ## Use Case 4: Digital Menu Board Text Overlay {#use-case-digital-menu-board-text-overlay}
 
@@ -542,7 +542,7 @@ Follow the steps below to implement the digital menu board with text overlay use
     1. Navigate to your Google Sheets.
     1. Add a column with pricing value for the use case, as shown in the figure below.
 
-   ![](assets/screen_shot_2019-05-05at111344am.png)
+   ![screen_shot_2019-05-05at111344am](assets/screen_shot_2019-05-05at111344am.png)
 
 1. **Adding an Image to Sequence Channel**
 
@@ -551,7 +551,7 @@ Follow the steps below to implement the digital menu board with text overlay use
     1. Click **Edit** from the action bar to open the editor.
     1. Drag and drop an apple pie image in the editor.
 
-   ![](assets/screen_shot_2019-05-05at112933am.png)
+   ![screen_shot_2019-05-05at112933am](assets/screen_shot_2019-05-05at112933am.png)
 
 1. **Adding Text Overlay to the image**
 
@@ -560,7 +560,7 @@ Follow the steps below to implement the digital menu board with text overlay use
 
     1. Navigate to **ContextHub** tab and configure the value that is to be fetched from the google sheets, as shown in the figure below.
 
-   ![](assets/textoverlay_result.gif)
+   ![textoverlay_result](assets/textoverlay_result.gif)
 
 1. **Checking the Preview**
 
@@ -569,4 +569,4 @@ Follow the steps below to implement the digital menu board with text overlay use
     1. Click **Preview**. Also, open your Google Sheet and update its value.
     1. Change the under **Price** and you will notice the value as used in the text overlay updates accordingly, as shown in the figure below.
     
-    ![](assets/textoverlay_result-1.gif)
+    ![textoverlay_result-1](assets/textoverlay_result-1.gif)

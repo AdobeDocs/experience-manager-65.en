@@ -24,7 +24,7 @@ The integration framework includes an integration layer with an API. This allows
 * plug in an eCommerce system and pull product data into AEM
 * build AEM components for commerce capabilities independent of the specific eCommerce engine
 
-![](assets/chlimage_1.png)
+![chlimage_1](assets/chlimage_1.png)
 
 >[!NOTE]
 >
@@ -153,7 +153,7 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
 * On hybris it is possible to specify feed contents in a declarative way.
 * Mapping the feed structure to the AEM content model happens in the feed adapter on the AEM side.
 
-![](assets/chlimage_1-1.png)
+![chlimage_1-1](assets/chlimage_1-1.png)
 
 * The importer (b) is used for the initial setup of the page tree structure in AEM for catalogs.
 * Catalog changes in hybris are indicated to AEM via a feed, these then propagate to AEM (b)
@@ -433,7 +433,7 @@ public class AxisFilter implements VariantFilter {
 
 * The following illustrates an example of cart information in the ClientContext cart:
 
-![](assets/chlimage_1-2.png)
+![chlimage_1-2](assets/chlimage_1-2.png)
 
 #### Architecture of Checkout {#architecture-of-checkout}
 
@@ -523,7 +523,7 @@ The eCommerce project contains a default search component, located in:
 
 `/libs/commerce/components/search`
 
-![](assets/chlimage_1-3.png)
+![chlimage_1-3](assets/chlimage_1-3.png)
 
 This makes use of the search API to query the selected commerce engine (see [eCommerce Engine Selection](#ecommerce-engine-selection)):
 

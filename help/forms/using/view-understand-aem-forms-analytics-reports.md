@@ -51,7 +51,7 @@ Perform the following steps to view analytics reports:
 1. Select the form for which you want to view the analytics reports.
 1. Select **More &gt; Analytics Reports**.
 
-![](assets/analyticsreport.png)
+![analyticsreport](assets/analyticsreport.png)
 
 **A.** Analytics Report command
 
@@ -67,7 +67,7 @@ By default, the analytics report for the last seven days is displayed. You can v
 >
 >The options such as Last 7 days and Last 15 days do not include data for the day you are generating the analytics report. To include the present day's data, you need to specify the date range including the present day and then run the report.
 
-![](assets/date-range.png)
+![date-range](assets/date-range.png)
 
 ### Conversions graph for adaptive and HTML5 forms {#conversions-graph-for-adaptive-and-html-forms}
 
@@ -77,7 +77,7 @@ The form-level conversions graph gives you an insight into how the form is perfo
 * **Visitors**: The number of visitors to the form
 * **Submissions**: Number of times the form is submitted
 
-![](assets/conversion-graph.png)
+![conversion-graph](assets/conversion-graph.png)
 
 ### Analytics report for adaptive and HTML5 forms {#analytics-report-for-adaptive-and-html-forms}
 

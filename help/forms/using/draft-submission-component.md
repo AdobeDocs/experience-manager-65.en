@@ -27,7 +27,7 @@ The drafts functionality is enabled out of the box. When a user clicks **Save** 
 Perform the following steps to add and configure a Drafts & Submissions component:
 
 1. Drag-and-drop the **Drafts & Submissions** component under Document Services category in the components browser on to your page.
-1. Tap the component and then tap ![](assets/settings_icon.png) to open the Edit dialog for the component.
+1. Tap the component and then tap ![settings_icon](assets/settings_icon.png) to open the Edit dialog for the component.
 
    ![Drafts & Submission component](assets/drafts-submissions-edit.png)
 

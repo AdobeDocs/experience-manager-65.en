@@ -40,7 +40,7 @@ To view the status of the asynchronous operations in detail, navigate to the **A
 1. Tap/click the AEM logo, and go **Assets** &gt; **Jobs**.
 1. In the **Async Job Status** page, review the details of the operations.
 
-   ![](assets/job_status.png)
+   ![job_status](assets/job_status.png)
 
    To ascertain the progress of a particular operation, see the value in the **Status** column. Depending upon the progress, one of the following statuses is displayed:
 
@@ -54,15 +54,15 @@ To view the status of the asynchronous operations in detail, navigate to the **A
 
 1. To stop an active operation, select it from the list and tap/click the **Stop** icon from the toolbar.
 
-   ![](assets/stop_icon.png)
+   ![stop_icon](assets/stop_icon.png)
 
 1. To view extra details, for example description and logs, select the operation and tap/click the **Open** icon from the toolbar.
 
-   ![](assets/open_icon.png)
+   ![open_icon](assets/open_icon.png)
 
    The job details page is displayed.
 
-   ![](assets/job_details.png)
+   ![job_details](assets/job_details.png)
 
 1. To delete the operation from the list, select **Delete** from the toolbar. To download the details in a CSV file, tap/click the **Download** icon.
 
@@ -98,7 +98,7 @@ If the number of assets or folders to be deleted exceed the threshold number, th
 1. From the web console, open the** Async Delete Operation Job Processing** configuration.
 1. In the **Threshold number of assets** box, specify the threshold number of assets/folders for asynchronous processing of delete operations.
 
-   ![](assets/delete_threshold.png)
+   ![delete_threshold](assets/delete_threshold.png)
 
 1. Save the changes.
 
@@ -110,7 +110,7 @@ If the number of assets/folders or references to be moved exceed the threshold n
 1. From the web console, open the** Async Move Operation Job Processing** configuration.
 1. In the **Threshold number of assets/references** box, specify the threshold number of assets/folders or references for asynchronous processing of move operations.
 
-   ![](assets/move_threshold.png)
+   ![move_threshold](assets/move_threshold.png)
 
 1. Save the changes.
 

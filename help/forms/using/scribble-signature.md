@@ -22,7 +22,7 @@ HTML5 forms are increasingly being used on touch devices, and one common require
 1. Open a form in Forms Designer. 
 1. Drag and drop the Signature Scribble field on the page.
 
-   ![](assets/designer_scribble.png)
+   ![designer_scribble](assets/designer_scribble.png)
 
    >[!NOTE]
    >
@@ -58,7 +58,7 @@ HTML5 forms are increasingly being used on touch devices, and one common require
 
 Once a Signature Scribble field has been added to the form and rendered, clicking or tapping on the field opens a dialog box. The user can scribble a signature in the draw area designated by a dotted rectangle, using a mouse, finger or stylus.
 
-![](assets/geolocation.png)
+![geolocation](assets/geolocation.png)
 
 **A.** Brush **B.** Eraser **C.** Geolocation **D.** Geolocation information
 
@@ -87,7 +87,7 @@ Clicking the **OK** icon saves the scribble as an image in the field. The image 
 
 Tapping or clicking the Scribble field opens the dialog box in read-only mode.
 
-![](assets/3.png) 
+![3](assets/3.png) 
 
 ### Selecting Pen size {#selecting-pen-size}
 

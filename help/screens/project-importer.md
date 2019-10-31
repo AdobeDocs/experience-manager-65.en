@@ -34,7 +34,7 @@ This saves both time and money during initial project setup or when extending th
 
 The following diagram showcases the architectural overview for Project Importer feature:
 
-![](assets/screen_shot_2019-05-14at20618pm.png)
+![screen_shot_2019-05-14at20618pm](assets/screen_shot_2019-05-14at20618pm.png)
 
 ### Data Model {#data-model}
 
@@ -92,27 +92,27 @@ Follow the steps below to import a file to locations folder with minimum require
 >
 >The following example showcases the minimum four fields required to import your project:
 
-![](assets/screen_shot_2019-05-14at21523pm.png)
+![screen_shot_2019-05-14at21523pm](assets/screen_shot_2019-05-14at21523pm.png)
 
 1. Navigate to your AEM Screens project (**DemoProjectImport**).
 
-   ![](assets/screen_shot_2019-05-12at52651am.png)
+   ![screen_shot_2019-05-12at52651am](assets/screen_shot_2019-05-12at52651am.png)
 
 1. Select the project,** DemoProjectImporter **--&gt;** Create **--&gt;** Import Locations** from the side bar.
 
-   ![](assets/screen_shot_2019-05-12at52433am.png)
+   ![screen_shot_2019-05-12at52433am](assets/screen_shot_2019-05-12at52433am.png)
 
 1. The **Import** wizard open. Select the file you have for your project with locations or select the file (***minimal-file.xls***) you downloaded from the *Prerequisites* section.
 
    Once you have selected the file, click **Next**.
 
-   ![](assets/screen_shot_2019-05-15at113718am.png)
+   ![screen_shot_2019-05-15at113718am](assets/screen_shot_2019-05-15at113718am.png)
 
 1. Verify the content of the file (locations) from the Import wizard and click **Import**.
 
-   ![](assets/screen_shot_2019-05-12at53131am.png)
+   ![screen_shot_2019-05-12at53131am](assets/screen_shot_2019-05-12at53131am.png)
 
 1. As a result, you will be now be able to view all the locations imported to your project.
 
-   ![](assets/screen_shot_2019-05-12at53450am.png)
+   ![screen_shot_2019-05-12at53450am](assets/screen_shot_2019-05-12at53450am.png)
 

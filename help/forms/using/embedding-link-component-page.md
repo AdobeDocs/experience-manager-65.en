@@ -24,9 +24,9 @@ The Link component allows form portal authors to create a link to an adaptive fo
 
 Perform the following steps to add a Link component to the page:
 
-1. Drag the **Link **component on the page. Select the component and tap ![](assets/cmppr.png). The Edit Link Component dialog opens.
+1. Drag the **Link **component on the page. Select the component and tap ![cmppr](assets/cmppr.png). The Edit Link Component dialog opens.
 
-   ![](assets/edit-link-component.png)
+   ![edit-link-component](assets/edit-link-component.png)
 
 1. In the **Display **tab, specify the following:
 

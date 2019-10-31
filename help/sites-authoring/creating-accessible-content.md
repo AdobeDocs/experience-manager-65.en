@@ -416,18 +416,18 @@ You can make sure your web pages are given the appropriate structure by:
 
   When adding a **Table** you can configure **Table properties**; use:
 
-  ![](assets/cac-02.png)
+  ![cac-02](assets/cac-02.png)
 
   To open the **Table** dialog where you can select the **Table Properties** tab:
 
     * Define an appropriate **Caption**.
     * Ideally remove any default values for **Width**, **Height**, **Border**, **Cell padding**, **Cell spacing**. as these properties can be set in a global style sheet.
 
-  ![](assets/cac-01.png)
+  ![cac-01](assets/cac-01.png)
 
   You can then use the **Cell Properties** to choose whether the cell is a data or header cell:
 
-  ![](assets/cac-03.png)
+  ![cac-03](assets/cac-03.png)
 
 * **Complex Data Tables:**
 
@@ -890,7 +890,7 @@ Providing instructions to help people complete forms is a fundamental part of go
 
 In AEM a default label is added when you add a form component, such as a **Text Field**, to the page. This default title is dependent on the component type, You can add your own title in the **Title and Text** tab of the edit dialog for that field. It is important to ensure that labels help users to understand the data associated with each form component.
 
-![](assets/cac-04.png)
+![cac-04](assets/cac-04.png)
 
 This **Title** field must be used for field elements as it provides a label that is available to assistive technology. Simply writing a label in text beside the field is not sufficient.
 
@@ -900,13 +900,13 @@ For some form components it is also possible to visually hide labels using the *
 
 Where image buttons are used (for example, the **Image Button** component) the **Title** field in the **Title and Text** tab of the edit dialog actually provides the alt text for the image, rather than the label. So, in the example below, the image with the text `Submit` has alt text of `Submit`, added using the **Title** field in the edit dialog.
 
-![](assets/cac-05.png)
+![cac-05](assets/cac-05.png)
 
 #### Groups of Form Fields {#groups-of-form-fields}
 
 Where there is a group of related controls, such as **Radio Group**, a title may be needed for the group, as well as individual controls. When adding a set of radio buttons in AEM, the **Title** field provides this group title, while individual titles are specified as the radio buttons (**Items**) are created.
 
-![](assets/cac-06.png)
+![cac-06](assets/cac-06.png)
 
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
@@ -916,7 +916,7 @@ If data is to be entered in a specific format, make this clear in the label text
 
 If input for a form field is mandatory, make this clear by using the word required as part of the label. AEM adds an asterisk when a field is required, but it would be ideal to include the word `required`in the label itself (in the **Title** field in the edit dialog).
 
-![](assets/cac-07.png)
+![cac-07](assets/cac-07.png)
 
 The positioning of labels is also important as it helps them to locate appropriate fields. This is of particular importance when the user is faced with a complex form. Follow the convention below:
 

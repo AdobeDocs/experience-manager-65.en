@@ -112,7 +112,7 @@ AEM Forms restricts a users' access to only those tasks for which the user has a
 
 The following screen illustrates accessing the tasks of direct reports and the available actions. 
 
-![](assets/cu_manager_view.png)
+![cu_manager_view](assets/cu_manager_view.png)
 
 Access tasks of direct reports and act on the tasks
 

@@ -82,7 +82,7 @@ You can personalize text document fragments by inserting the form data model pro
 
 If you have specified a form data model while creating a text, the properties in the form data model appear in the left pane of the text editor. The specified form data model should be same for the text document fragment as well as the Interactive Communication that includes it. 
 
-![](assets/insertfdmelementtext.png)
+![insertfdmelementtext](assets/insertfdmelementtext.png)
 
 * To insert an form data model property into text, place the cursor where you want to insert the property, then select the **[A]** property in the left pane by tapping on it, and tap **[B]** **[!UICONTROL Add Selected]**. You can also just double-tap the property to insert it at the **[C]** cursor position. Form data model properties are highlighted in a brownish background color.
 
@@ -110,7 +110,7 @@ While creating or editing a text document fragment, you can create and insert va
 
    The Variables pane appears. 
 
-   ![](assets/variablespane.png)
+   ![variablespane](assets/variablespane.png)
 
 1. Tap **[!UICONTROL Create]**.
 
@@ -129,7 +129,7 @@ While creating or editing a text document fragment, you can create and insert va
 
 1. To insert a variable in the text, place the cursor at the appropriate place, select the variable, and tap **[!UICONTROL Add Selected]**. 
 
-   ![](assets/variableinserted.png)
+   ![variableinserted](assets/variableinserted.png)
 
    Variables are highlighted in light blue background color, while form data model properties are highlighted in a brownish color.
 
@@ -152,7 +152,7 @@ Using rule editor in a text, you can create rules to display or hide strings of 
 
 1. While creating or editing a text, select the text string, paragraph, or content that you want to conditionalize using the rule. 
 
-   ![](assets/selectcontentapplyrule.png)
+   ![selectcontentapplyrule](assets/selectcontentapplyrule.png)
 
 1. Tap **[!UICONTROL Create Rule]**.
 
@@ -163,7 +163,7 @@ Using rule editor in a text, you can create rules to display or hide strings of 
 
    Select the appropriate option to be evaluated. 
 
-   ![](assets/ruleeditor.png) ![](assets/ruleeditorfdm.png)
+   ![ruleeditor](assets/ruleeditor.png) ![ruleeditorfdm](assets/ruleeditorfdm.png)
 
    >[!NOTE]
    >
@@ -171,7 +171,7 @@ Using rule editor in a text, you can create rules to display or hide strings of 
 
 1. Select the appropriate operator to evaluate the rule, such as Is Equal To, Contains, and Starts With. 
 
-   ![](assets/ruleeditorfdm-1.png)
+   ![ruleeditorfdm-1](assets/ruleeditorfdm-1.png)
 
 1. Insert the evaluating expression, value, data model property, or variable.
 
@@ -179,7 +179,7 @@ Using rule editor in a text, you can create rules to display or hide strings of 
 
    Rule to display the selected text if the location of the recipient is US according to the source data of FDM
 
-    * While creating or editing a rule, you can also tap ![](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. The expanded, full-window dialog allows you to drag-and-drop form data model properties and variables to construct rules. Tap Resize again to go back to the Create Rule dialog. 
+    * While creating or editing a rule, you can also tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. The expanded, full-window dialog allows you to drag-and-drop form data model properties and variables to construct rules. Tap Resize again to go back to the Create Rule dialog. 
     * You can also create multiple conditions in a rule. 
     * You can also create overlapping rules, in which a rule is applied to a part of a content that already has a rule applied.
 
@@ -187,7 +187,7 @@ Using rule editor in a text, you can create rules to display or hide strings of 
 
    The rule gets applied. The text or content to which the rule is applied is highlighted in green. When you hover over the left handle of the highlight, the applied rule appears.
 
-   ![](assets/appliedruletext.png)
+   ![appliedruletext](assets/appliedruletext.png)
 
    On clicking the left handle of the applied rule, you get the options to edit or remove the rule.
 
@@ -214,13 +214,13 @@ Listing toolbar
 
 To highlight\emphasize parts of text in an editable document fragment, select the text and tap Highlight Color.
 
-![](assets/textbackgroundcolorapplied-1.png)
+![textbackgroundcolorapplied-1](assets/textbackgroundcolorapplied-1.png)
 
 You can either directly tap a basic color **[A]** present in the Basic Colors palette or tap **Select** after using the slider **[B]** to choose the appropriate shade of the color.
 
 Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation **[C]** to create the precise color and then tap Select **[D]** to apply the color to highlight the text. 
 
-![](assets/textbackgroundcolor-2.png) 
+![textbackgroundcolor-2](assets/textbackgroundcolor-2.png) 
 
 ### Paste formatted text {#paste}
 
@@ -228,11 +228,11 @@ To reuse one of more paragraphs of text that exist in another application, such 
 
 You can copy and paste one or more paragraphs of text in an editable text document fragment. For example, you may have an Microsoft® Word document with a bulleted list of acceptable proofs of residence such a following:
 
-![](assets/pastetextmsword-2.png)
+![pastetextmsword-2](assets/pastetextmsword-2.png)
 
 You can directly copy and paste the text from the Microsoft® Word document to an editable text document fragment. The formatting such as bulleted list, font, and text color is retained in the text document fragment.
 
-![](assets/pastetexteditablemodule-1.png)
+![pastetexteditablemodule-1](assets/pastetexteditablemodule-1.png)
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ If required, insert special characters in the document fragment. For example, yo
 * Mathematical symbols such as ∑, √, ∂, and ^
 * Punctuation symbols such as ‟ and ”
 
-![](assets/specialcharacters-2.png)
+![specialcharacters-2](assets/specialcharacters-2.png)
 
 Text editor has built in support for 210 special characters. The admin can [add support for more/custom special characters by customization](/help/forms/using/custom-special-characters.md).
 

@@ -34,7 +34,7 @@ All AEM Forms workflow steps support the use of variables. Variables enable work
 
 The following diagram depicts end-to-end procedure to create, run, and monitor a Forms-centric workflow on OSGi.
 
-![](assets/introduction-to-aem-forms-workflow.jpg)
+![introduction-to-aem-forms-workflow](assets/introduction-to-aem-forms-workflow.jpg)
 
 ## Before you start {#before-you-start}
 
@@ -79,7 +79,7 @@ The example creates a workflow model a mortgage application to be filled by a fr
 
 1. Create workflow stages. A workflow can have multiple stages. These stages are displayed in the AEM Inbox and report progress of the workflow.
 
-   To define a stage, tap the ![](assets/info-circle.png) icon to open workflow model properties, open the **Stages** tab, add stages for the workflow model, and tap **Save & Close**. For the example mortgage application, create stages: loan request, loan request status, to be signed documents, and signed loan document.
+   To define a stage, tap the ![info-circle](assets/info-circle.png) icon to open workflow model properties, open the **Stages** tab, add stages for the workflow model, and tap **Save & Close**. For the example mortgage application, create stages: loan request, loan request status, to be signed documents, and signed loan document.
 
 1. Drag-and-drop the **Assign Task** steps browser to the workflow model. Make it the first step of the model.
 
@@ -87,7 +87,7 @@ The example creates a workflow model a mortgage application to be filled by a fr
 
    You can also use the step to control the behavior of the task. For example, creating an automatic document of record, assign the task to a specific user or group, the path of the submitted data, the path of data to be pre-populated, and default actions. For detailed information about the options of the assign task step, see [Forms-centric workflow on OSGi - Step Reference](../../forms/using/aem-forms-workflow.md) document.
 
-   ![](assets/workflow-editor.png)
+   ![workflow-editor](assets/workflow-editor.png)
 
    For the mortgage application example**,** configure the assign task step to use a Read-only adaptive form and display PDF Document once the task is complete. Also, select to user group allowed to approve the loan request. On the **Actions **tab, disable the **Submit **option. Create an **actionTaken** variable of String data type and specify the variable as the **Route Variable**. For example, actionTaken. Also, add the Approve and Reject routes. The routes are displayed as separate actions (buttons) in AEM Inbox. The workflow selects a branch based on the action (button) a user taps.
 
@@ -121,7 +121,7 @@ The example creates a workflow model a mortgage application to be filled by a fr
 
    The workflow model is ready. You can launch the workflow through various methods. For details, see [Launch a Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow.md#main-pars-header).
 
-   ![](assets/workflow-editor-mortgage.png)
+   ![workflow-editor-mortgage](assets/workflow-editor-mortgage.png)
 
 ## Create a Forms-centric Workflow Application {#create-a-forms-centric-workflow-application}
 
@@ -131,7 +131,7 @@ The application is the adaptive form associated with the workflow. When an appli
 >
 >You must be a member of the fd-administrator group to be able to create and manage workflow applications.
 
-1. On your AEM author instance, go to ![](assets/tools-1.png) **> **[!UICONTROL Forms]**> **[!UICONTROL Manage Workflow Application]** and taps **[!UICONTROL Create]**.
+1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) **> **[!UICONTROL Forms]**> **[!UICONTROL Manage Workflow Application]** and taps **[!UICONTROL Create]**.
 1. In the Create Workflow Application window, provide inputs for the following fields, and taps **Create**. A new application is created and is listed in the Workflow Applications screen.
 
 <table>
@@ -213,7 +213,7 @@ You can configure an adaptive form to sync, submit, and trigger a workflow from 
 
 An administrator (a member of fd-administrators group) can configure a network folder to run a pre-configured workflow when a user places a file (such as a PDF file) in the folder. After the workflow completes, it can save the result file to a specified output folder. Such a folder is known as [Watched Folder](../../forms/using/watched-folder-in-aem-forms.md). Perform the following procedure to configure a watched folder to launch a workflow:
 
-1. On your AEM author instance, go to ![](assets/tools-1.png) **> **[!UICONTROL Forms]**&gt; Configure Watched Folder.** A list of already configured watched folders is displayed.
+1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) **> **[!UICONTROL Forms]**&gt; Configure Watched Folder.** A list of already configured watched folders is displayed.
 1. Tap **[!UICONTROL New]**. A list of fields is displayed. Specify a value for the following fields to configure a Watched Folder for a workflow:
 
 <table>

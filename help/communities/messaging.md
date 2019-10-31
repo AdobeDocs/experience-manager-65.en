@@ -35,7 +35,7 @@ For community sites created using the `Communities Sites console`, an instance o
 
 As shown below, a configuration of the service exists for sites created with the [site creation wizard](/help/communities/sites-console.md). The configuration can be viewed or edited by selecting the pencil icon next to the configuration.
 
-![](assets/messaging-operations.png)
+![messaging-operations](assets/messaging-operations.png)
 
 ### Add new configuration {#add-new-configuration}
 
@@ -117,11 +117,11 @@ To allow registered users to send direct messages in bulk to user groups, make s
 
 **Messaging Operations Service: social console**
 
-![](assets/social-console-op-service.png)
+![social-console-op-service](assets/social-console-op-service.png)
 
 **Messaging Operations Service: social messaging**
 
-![](assets/social-message-op-service.png)
+![social-message-op-service](assets/social-message-op-service.png)
 
 ## Troubleshooting {#troubleshooting}
 

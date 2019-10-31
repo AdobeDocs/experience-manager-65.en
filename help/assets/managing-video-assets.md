@@ -25,7 +25,7 @@ Adobe Experience Manager Assets generates previews for video assets with the ext
 1. To upload the asset, click or tap **Create** from the toolbar and then choose **Files**. Alternatively, drop it directly in the assets area. See [Uploading assets](/help/assets/managing-assets-touch-ui.md#uploading-assets) for details around the upload operation.
 1. To preview a video in the Card view, click the **Play** button on the video asset.
 
-   ![](assets/chlimage_1-65.png)
+   ![chlimage_1-65](assets/chlimage_1-65.png)
 
    You can pause or play video in the Card view only. The Play/Pause button is not available in the list view.
 
@@ -33,7 +33,7 @@ Adobe Experience Manager Assets generates previews for video assets with the ext
 
    The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen.
 
-   ![](assets/chlimage_1-66.png)
+   ![chlimage_1-66](assets/chlimage_1-66.png)
 
 ## Configuration to upload video assets that are larger than 2 GB {#configuration-to-upload-video-assets-that-are-larger-than-gb}
 
@@ -50,7 +50,7 @@ To configure a higher file size limit, perform the following steps in the */apps
 1. From the toolbar, tap the **Overlay Node** button. Alternatively, select **Overlay Node** from the context menu.
 1. In the **Overlay Node** dialog, tap **OK**.
 
-   ![](assets/chlimage_1-67.png)
+   ![chlimage_1-67](assets/chlimage_1-67.png)
 
 1. Refresh the browser. The overlay node `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` is selected.
 1. In the **Properties** tab, enter the appropriate value in bytes to increase the size limit to the desired size. For example, enter the following value to increase the size limit to 30 GB:
@@ -83,15 +83,15 @@ See [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md).
 
    While annotating, you can draw on the canvas and include a comment with the drawing. Comments are auto-saved.
 
-   ![](assets/chlimage_1-68.png)
+   ![chlimage_1-68](assets/chlimage_1-68.png)
 
    To exit the annotation wizard, click **Close**.
 
 1. To jump to a specific point in the video, specify the time in seconds in the **text** field and click **Jump**. For example, to skip the first 10 seconds of video, enter **20** in the **text** field.
 
-   ![](assets/chlimage_1-69.png)
+   ![chlimage_1-69](assets/chlimage_1-69.png)
 
 1. To view it in the timeline, click an annotation. To delete the annotation from the timeline, click **Delete**.
 
-   ![](assets/chlimage_1-70.png)
+   ![chlimage_1-70](assets/chlimage_1-70.png)
 

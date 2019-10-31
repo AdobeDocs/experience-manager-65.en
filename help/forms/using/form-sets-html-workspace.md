@@ -24,11 +24,11 @@ AEM Forms workspace supports formsets. With formsets, multiple forms related to 
 1. Create the business process workflow in Workbench. For more information, see [Workbench help](https://www.adobe.com/go/learn_aemforms_workbench_63).
 1. From the process properties of the startpoint, select **Use A CRX Asset** in Presentation & Data.
 
-   ![](assets/1-3.png)
+   ![1-3](assets/1-3.png)
 
-1. Click ![](assets/browse.png) (Browse) next to the CRX asset path. The Select Form Asset dialog appears.
+1. Click ![browse](assets/browse.png) (Browse) next to the CRX asset path. The Select Form Asset dialog appears.
 
-   ![](assets/2-1.png)
+   ![2-1](assets/2-1.png)
 
 1. Click the **Formset** tab, select the relevant formset from the list, and then click **OK**.
 
@@ -48,7 +48,7 @@ The operations supported on formset through the AEM Forms workspace are:
 * Add Notes
 * Move between forms in a formset using Back or Next buttons
 
-![](assets/3-1.png)
+![3-1](assets/3-1.png)
 
 >[!NOTE]
 >

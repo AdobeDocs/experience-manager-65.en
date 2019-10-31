@@ -38,7 +38,7 @@ To [create a new Content Fragment Model](#creating-a-content-fragment-model) you
     1. Specify a **Title**.
     1. Select **Content Fragment Models** to enable their use.
 
-   ![](assets/cfm-6420-09.png)
+   ![cfm-6420-09](assets/cfm-6420-09.png)
 
 1. Select **Create** to save the definition.
 
@@ -60,7 +60,7 @@ To use other configurations (i.e. excluding global) with a comparable Assets fol
 
 1. Specify the **Model Title**. You can also add a **Description** if required.
 
-   ![](assets/cfm-6420-10.png)
+   ![cfm-6420-10](assets/cfm-6420-10.png)
 
 1. Use **Create** to save the empty model. A message will indicate the success of the action, you can select **Open** to immediately edit the model, or **Done** to return to the console.
 
@@ -86,17 +86,17 @@ The content fragment model effectively defines the structure of the resulting co
    >
    >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
 
-   ![](assets/cfm-6420-12.png)
+   ![cfm-6420-12](assets/cfm-6420-12.png)
 
 1. **To Add a Field**
 
     * Drag a required data type to the required location for a field:
 
-   ![](assets/cfm-6420-11.png)
+   ![cfm-6420-11](assets/cfm-6420-11.png)
 
     * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. For example:
 
-   ![](assets/cfm-6420-13.png)
+   ![cfm-6420-13](assets/cfm-6420-13.png)
 
    >[!NOTE]
    >
@@ -116,11 +116,11 @@ The content fragment model effectively defines the structure of the resulting co
 
    Select the required field, then click/tap the trash-can icon. You will be asked to confirm the action.
 
-   ![](assets/cf-32.png)
+   ![cf-32](assets/cf-32.png)
 
 1. After adding all required fields, and defining the properties, use **Save** to persist the definition. For example:
 
-   ![](assets/cfm-6420-14.png)
+   ![cfm-6420-14](assets/cfm-6420-14.png)
 
 ## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
 

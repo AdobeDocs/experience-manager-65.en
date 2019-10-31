@@ -92,13 +92,13 @@ The default Render and Submit services enable support to render PDFs on a deskto
 
 This process renders an XDP Form on multiple platforms, seamlessly. The process retrieves the user agent from `taskContext`, and uses the data to call the process to render either HTML or PDF.
 
-![](assets/default-render-form.png)
+![default-render-form](assets/default-render-form.png)
 
 ### Default Submit Form {#default-submit-form}
 
 This process submits an XDP form on multiple platforms seamlessly. It retrieves the user agent from `taskContext`and uses the data to call the process to submit either HTML or PDF.
 
-![](assets/default-submit-form.png)
+![default-submit-form](assets/default-submit-form.png)
 
 ## Switch the rendering of mobile forms from PDF to HTML {#switch-the-rendering-of-mobile-forms-from-pdf-to-html}
 
@@ -125,7 +125,7 @@ The default Action Profile rendered the XDP Form as PDF. This behavior has now b
 
 Some frequently asked questions about action profiles are as follows:
 
-![](assets/gen_question_b_20.png) **What Render / Submit processes will be available out of the box?**
+![gen_question_b_20](assets/gen_question_b_20.png) **What Render / Submit processes will be available out of the box?**
 
 * Render Guide (Guides is deprecated)
 * Render Form Guide
@@ -136,21 +136,21 @@ Some frequently asked questions about action profiles are as follows:
 
 And, equivalent Submit processes.
 
-![](assets/gen_question_b_20.png) **What Action Profiles will be available out of the box?**
+![gen_question_b_20](assets/gen_question_b_20.png) **What Action Profiles will be available out of the box?**
 
 For XDP Forms:
 
 * Default (render/submit using the new 'Default Render/Submit' processes)
 
-![](assets/gen_question_b_20.png) **What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?**
+![gen_question_b_20](assets/gen_question_b_20.png) **What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?**
 
 Nothing. The default Action Profile is chosen automatically, and the mode of rendering is taken care of too, automatically.
 
-![](assets/gen_question_b_20.png) **What needs to be done to enable the form to be rendered in HTML on a desktop?**
+![gen_question_b_20](assets/gen_question_b_20.png) **What needs to be done to enable the form to be rendered in HTML on a desktop?**
 
 The user must select the HTML radio button for the default profile.
 
-![](assets/gen_question_b_20.png) **Will there be any upgrade impact on changing the default action profile behavior?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Will there be any upgrade impact on changing the default action profile behavior?**
 
 Yes, since the previous render and submit services associated with the default action profile were different, these are treated as a customization of the existing forms. On clicking **Restore Defaults**, the default render and submit services are set instead.
 

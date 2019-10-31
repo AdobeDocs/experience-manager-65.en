@@ -81,7 +81,7 @@ When you open a task from your To-do list, if your list is shared, you can lock 
    >
    >You can also lock or unlock a task on any tab when the task is open.
 
-   ![](assets/lock_task.png)
+   ![lock_task](assets/lock_task.png)
 
    All Options menu on a task
 
@@ -185,7 +185,7 @@ You may be allowed to add, update, delete, or save any attachments locally.
 
    The Save As Draft dialog appears. The default name of the draft is the task name from the task template.
 
-   ![](assets/saveasdraftdialog.png)
+   ![saveasdraftdialog](assets/saveasdraftdialog.png)
 
    >[!NOTE]
    >
@@ -196,11 +196,11 @@ You may be allowed to add, update, delete, or save any attachments locally.
 
 1. In the Save As Draft dialog, specify a unique name for the task and tap **OK**.
 
-   ![](assets/saveasdraftdialog_name.png)
+   ![saveasdraftdialog_name](assets/saveasdraftdialog_name.png)
 
    The draft is saved with the specified name. The task remains in your To-do list and any changes you made in the form are saved in the Drafts folder. Further, in your To-do list, you can search for the draft using the draft name to resume working on it.
 
-   ![](assets/searchfortask.png)
+   ![searchfortask](assets/searchfortask.png)
 
 ## Completing tasks {#completing-tasks}
 
@@ -256,11 +256,11 @@ You can submit multiple tasks from your To Do list. Only tasks of the same proce
 
 1. Select tasks for bulk approval. Multiple tasks of the same process, with the same task names, and the same route options can be selected. Once you select one task for approval, only the tasks with the same process, with the same task names, and the same route options remain enabled. The rest are disabled.
 
-   ![](assets/1_bulkapproval.png)
+   ![1_bulkapproval](assets/1_bulkapproval.png)
 
 1. Click the available Submit option. The selected tasks get submitted.
 
-   ![](assets/bulkapproval.png)
+   ![bulkapproval](assets/bulkapproval.png)
 
 ## Participating in tasks through email {#participating-in-tasks-through-email}
 

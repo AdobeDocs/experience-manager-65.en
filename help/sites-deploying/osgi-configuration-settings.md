@@ -483,7 +483,7 @@ The overall flow is as follows:
 
 The flow between the user's browser, the CDN, and AEM can be visualized as follows.
 
-![](assets/chlimage_1-8.png)
+![chlimage_1-8](assets/chlimage_1-8.png)
 
 >[!NOTE]
 >

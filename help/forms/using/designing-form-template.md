@@ -34,6 +34,6 @@ The Preview HTML tab is added in the Design mode for Form Designers to preview f
 
 The key target for HTML5 forms is touch devices. Therefore, a new scribble signature control is added in AEM Forms Designer. You can click or drag-and-drop the scribble signature control on your form template and configure it. It is rendered as a scribble field in HTML5 rendition and can be used to scribble signature on touch devices. On desktop machines, it can be used as a scribble field using mouse control. For more information on how to use this feature, see [XFA Scribble Field](../../forms/using/scribble-signature.md).
 
-![](assets/4.png)
+![4](assets/4.png)
 
 [**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)

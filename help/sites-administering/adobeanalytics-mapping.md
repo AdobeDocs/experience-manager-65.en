@@ -17,15 +17,15 @@ docset: aem65
 
 Add components to the framework that gather the data to send to Adobe Analytics. Components that are designed to gather analytics data store the data in the appropriate **CQ variable**. When you add such a component to a framework, the framework displays the list of CQ variables so that you can each to the appropriate **Analytics variable**.
 
-![](assets/aa-11.png)
+![aa-11](assets/aa-11.png)
 
 When the **AEM view** is open the Analytics variables appear in the content finder. 
 
-![](assets/aa-12.png)
+![aa-12](assets/aa-12.png)
 
 You can map multiple Analytics variables with the same **CQ variable**.
 
-![](assets/chlimage_1-68.png)
+![chlimage_1-68](assets/chlimage_1-68.png)
 
 The mapped data is sent to Adobe Analytics when the page loads and the following conditions are met:
 
@@ -36,13 +36,13 @@ Use the following procedure to map CQ component variables with Adobe Analytics r
 
 1. In the **AEM view**, drag a tracking component from sidekick onto the framework. For example, drag the **Page** component component from the **General** category. 
 
-   ![](assets/aa-13.png)
+   ![aa-13](assets/aa-13.png)
 
    There are several default component groups: **General**, **Commerce**, **Communities**, **Search&Promote**, and **Other**. Your AEM instance may be configured to display different groups and components.
 
 1. To map Adobe Analytics variables with variables that are defined in the component, drag an **Analytics variable** from the content finder onto a field on the tracking component. For example, drag `Page Name (pageName)` to `pagedata.title`.
 
-   ![](assets/aa-14.png)
+   ![aa-14](assets/aa-14.png)
 
    >[!NOTE]
    >
@@ -130,7 +130,7 @@ The list can be manipulated in the following ways:
 
     * e.g. in case the **Download component **is the *only one dragged* in CQ view (which has two mappable variables *eventdata.downloadLink* and *eventdata.events.startDownload*), the Content Finder wil look like this when switching to Adobe Analytics view:
 
-   ![](assets/aa-22.png)
+   ![aa-22](assets/aa-22.png)
 
     * The variables can be dragged&dropped onto any Adobe Analytics variable belonging to either one of the 3 variable sections (**Traffic**, **Conversion **and **Events**).
     
@@ -146,7 +146,7 @@ At any given time, users have the option to switch between 2 ways of viewing the
 
 ### AEM View {#aem-view}
 
-![](assets/aa-23.png)
+![aa-23](assets/aa-23.png)
 
 Taking the above image as an example, the **AEM view** has the following properties:
 
@@ -171,7 +171,7 @@ Taking the above image as an example, the **AEM view** has the following propert
 
 ### Analytics View {#analytics-view}
 
-![](assets/aa-24.png)
+![aa-24](assets/aa-24.png)
 
 1. This view can be accessed by switching to the **Analytics view** tab on the framework. 
 1. Left side: Content Finder (cf#) populated by CQ variables based on the components dragged onto the framework in CQ view.

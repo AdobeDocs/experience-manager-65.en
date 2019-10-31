@@ -331,11 +331,11 @@ The **Mode** selector in the toolbar allows you to select and edit the appropria
 * [Initial Content](#editingatemplateinitialcontent)
 * [Layout](#editingatemplatelayout)
 
-![](assets/chlimage_1-133.png)
+![chlimage_1-133](assets/chlimage_1-133.png)
 
 While the **Page Policy** option on the **Page Information** menu allows you to [select the required page policies](#editingatemplatepagepolicies):
 
-![](assets/screen_shot_2018-03-23at120604.png)
+![screen_shot_2018-03-23at120604](assets/screen_shot_2018-03-23at120604.png)
 
 >[!CAUTION]
 >
@@ -351,7 +351,7 @@ In **Structure** mode you define components and content for your template and de
 
 * The design policies for the components and page are defined.
 
-![](assets/screen_shot_2018-03-23at120819.png)
+![screen_shot_2018-03-23at120819](assets/screen_shot_2018-03-23at120819.png)
 
 In **Structure** mode of the template editor:
 
@@ -388,7 +388,7 @@ In **Structure** mode of the template editor:
 
   Take actions on the components once they have been added to the template. Each individual instance has a toolbar that allows you to access the available actions, the toolbar is dependent on the component type.
 
-  ![](assets/screen_shot_2018-03-23at120909.png)
+  ![screen_shot_2018-03-23at120909](assets/screen_shot_2018-03-23at120909.png)
 
   It can also be dependent on actions taken such as when a policy has been associated with the component, then the design configuration icon becomes available.
 
@@ -402,7 +402,7 @@ In **Structure** mode of the template editor:
 
   For example, in the screenshot below the **Text** component is selected, within a **Layout Container** (responsivegrid).
 
-  ![](assets/chlimage_1-134.png)
+  ![chlimage_1-134](assets/chlimage_1-134.png)
 
 * **Policy & Properties (General)**
 
@@ -410,7 +410,7 @@ In **Structure** mode of the template editor:
 
   Create a content policy, or select an existing one, for a component. This allows you to define the design details.
 
-  ![](assets/chlimage_1-135.png) ![](assets/chlimage_1-136.png)
+  ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
 
   The configuration window is divided in two.
 
@@ -425,21 +425,21 @@ In **Structure** mode of the template editor:
 
   Under **Policy** you can select an existing policy to apply to the component via the drop-down.
 
-  ![](assets/chlimage_1-137.png)
+  ![chlimage_1-137](assets/chlimage_1-137.png)
 
   A new policy can be added by selecting the add button next to the **Select policy** dropdown. A new title should then be given in the **Policy Title** field.
 
-  ![](assets/chlimage_1-138.png)
+  ![chlimage_1-138](assets/chlimage_1-138.png)
 
   The selected existing policy in the **Select policy** dropdown can be copied as a new policy using the copy button next to the dropdown. A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
 
-  ![](assets/chlimage_1-139.png)
+  ![chlimage_1-139](assets/chlimage_1-139.png)
 
   A description of the policy is optional in the **Policy Description** field.
 
   In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
 
-  ![](assets/chlimage_1-140.png)
+  ![chlimage_1-140](assets/chlimage_1-140.png)
 
   >[!NOTE]
   >
@@ -460,13 +460,13 @@ In **Structure** mode of the template editor:
 
   If a setting allows for multiple configurations, click or tap the **Add** button to add another configuration.
 
-  ![](assets/chlimage_1-141.png)
+  ![chlimage_1-141](assets/chlimage_1-141.png)
 
   To remove a configuration, click or tap the **Delete** button located to the right of the configuration.
 
   To remove a configuration, click or tap the** Delete** button.
 
-  ![](assets/chlimage_1-142.png)
+  ![chlimage_1-142](assets/chlimage_1-142.png)
 
   *Features*
 
@@ -474,7 +474,7 @@ In **Structure** mode of the template editor:
 
   For example for an image component you can define the cropping proportions, allowed image orientations, and if uploads are allowed.
 
-  ![](assets/chlimage_1-143.png)
+  ![chlimage_1-143](assets/chlimage_1-143.png)
 
   >[!CAUTION]
   >
@@ -518,7 +518,7 @@ In **Structure** mode of the template editor:
     * A search is available to filter for a component by name.
     * The counts listed to the right of the component group name represent the total number of selected components in those groups regardless of the filter.
 
-  ![](assets/chlimage_1-144.png)
+  ![chlimage_1-144](assets/chlimage_1-144.png)
 
   *Default Components*
 
@@ -528,7 +528,7 @@ In **Structure** mode of the template editor:
 
   Select a component in the list and click or tap **Add type** to add an additional MIME type to an already mapped component. Click the **Delete** icon to remove a MIME type.
 
-  ![](assets/chlimage_1-145.png)
+  ![chlimage_1-145](assets/chlimage_1-145.png)
 
   *Responsive Settings*
 
@@ -548,23 +548,23 @@ In **Structure** mode of the template editor:
 
     * The parents of the unlocked component cannot be moved, cut or deleted.
 
-  ![](assets/chlimage_1-146.png)
+  ![chlimage_1-146](assets/chlimage_1-146.png)
 
   This includes unlocking container components so that further components can be added, either in **Initial Content** mode or on resulting pages. If you have already added components/content to the container before unlocking it, then these will no longer be shown when in **Structure** mode but they will be shown in **Initial Content** mode. In **Structure Mode**, only the container component itself will be shown with its list of **Allowed Components**.
 
-  ![](assets/chlimage_1-147.png)
+  ![chlimage_1-147](assets/chlimage_1-147.png)
 
   To save space, the layout container does not grow to accomodate the list of allowed components. Rather the container becomes a scrollable list.
 
   Components that are configurable are shown with a **Policy** icon, which can be tapped or clicked to edit the policy and properties of that component.
 
-  ![](assets/chlimage_1-148.png)
+  ![chlimage_1-148](assets/chlimage_1-148.png)
 
 * **Relationship to Existing Pages**
 
   If the structure is updated after creating pages based on the template, then these pages will reflect the changes to the template. A warning is displayed in the toolbar to remind you of this fact along with confirmation dialogues.
 
-  ![](assets/chlimage_1-149.png)
+  ![chlimage_1-149](assets/chlimage_1-149.png)
 
 ### Editing a Template - Initial Content - Author {#editing-a-template-initial-content-author}
 
@@ -578,17 +578,17 @@ Although all content created in **Structure** mode is visible in **Initial Conte
 
 * Unlocked components that are available for editing are marked. When selected they have a blue border:
 
-  ![](assets/chlimage_1-150.png)
+  ![chlimage_1-150](assets/chlimage_1-150.png)
 
 * Unlocked components have a toolbar allowing you to edit and configure the content:
 
-  ![](assets/chlimage_1-151.png)
+  ![chlimage_1-151](assets/chlimage_1-151.png)
 
 * If a container component has been unlocked (in **Structure** mode) then you can add new components to the container (in **Initial Content** mode). Components added in **Initial Content** mode can be moved on or deleted from resulting pages.
 
   You can add component using either the **Drag components here** area or the **Insert New Component** option from the toolbar of the appropriate container.
 
-  ![](assets/chlimage_1-152.png) ![](assets/chlimage_1-153.png)
+  ![chlimage_1-152](assets/chlimage_1-152.png) ![chlimage_1-153](assets/chlimage_1-153.png)
 
 * If the initial content of the template is updated after pages are created based on the template, then these pages will not be affected by changes to the initial content in the template.
 
@@ -604,7 +604,7 @@ You can define the template layout for a range of devices. [Responsive layout](/
 >
 >Changes to the layout will be reflected in **Initial Content** mode, but no change is seen in **Structure** mode.
 
-![](assets/chlimage_1-154.png)
+![chlimage_1-154](assets/chlimage_1-154.png)
 
 ### Editing a Template - Page Design - Template Author/Developer {#editing-a-template-page-design-template-author-developer}
 
@@ -618,56 +618,56 @@ To access the **Page Design** dialog:
     * The left half defines the [page policies](/help/sites-authoring/templates.md#page-policies)
     * The right half defines the [page properties](/help/sites-authoring/templates.md#page-properties)
 
-   ![](assets/chlimage_1-155.png)
+   ![chlimage_1-155](assets/chlimage_1-155.png)
 
 #### Page Policies {#page-policies}
 
 You can apply a content policy to either the template or resultant pages. This defines the content policy for the main paragraph system on the page.
 
-![](assets/chlimage_1-156.png)
+![chlimage_1-156](assets/chlimage_1-156.png)
 
 * You can select an existing policy for the page from the **Select policy** drop-down.
 
-  ![](assets/chlimage_1-157.png)
+  ![chlimage_1-157](assets/chlimage_1-157.png)
 
   A new policy can be added by selecting the add button next to the **Select policy** dropdown. A new title should then be given in the **Policy Title** field.
 
-  ![](assets/chlimage_1-158.png)
+  ![chlimage_1-158](assets/chlimage_1-158.png)
 
   The selected existing policy in the **Select policy** dropdown can be copied as a new policy using the copy button next to the dropdown. A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
 
-  ![](assets/chlimage_1-159.png)
+  ![chlimage_1-159](assets/chlimage_1-159.png)
 
 * Define a title for the policy in the **Policy Title** field. A policy is required to have a title so that it can be easily selected in the **Select policy** dropdown.
 
-  ![](assets/chlimage_1-160.png)
+  ![chlimage_1-160](assets/chlimage_1-160.png)
 
 * A description of the policy is optional in the **Policy Description** field.
 * In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
 
-  ![](assets/chlimage_1-161.png)
+  ![chlimage_1-161](assets/chlimage_1-161.png)
 
 #### Page Properties {#page-properties}
 
 Using page properties, you can define the required client-side libraries by using the **Page Design** dialog. These client-side libraries include stylesheets and javascript to be loaded with the template and pages created with that template.
 
-![](assets/chlimage_1-162.png)
+![chlimage_1-162](assets/chlimage_1-162.png)
 
 * Specify the client-side libraries you want applied to pages created with this template. Entering the name of a library in the text field in the **Client Side Libraries** section.
 
-  ![](assets/chlimage_1-163.png)
+  ![chlimage_1-163](assets/chlimage_1-163.png)
 
 * If multiple libraries are needed, click the Add button to add an additional text field for the library name.
 
-  ![](assets/chlimage_1-164.png)
+  ![chlimage_1-164](assets/chlimage_1-164.png)
 
   Add as many text fields as necessary for your client-side libraries.
 
-  ![](assets/chlimage_1-165.png)
+  ![chlimage_1-165](assets/chlimage_1-165.png)
 
 * Define the libraries' relative position as necessary by dragging the fields using the drag handle.
 
-  ![](assets/chlimage_1-166.png)
+  ![chlimage_1-166](assets/chlimage_1-166.png)
 
 >[!NOTE]
 >
@@ -681,7 +681,7 @@ Using the **Initial Page Properties** option, you can define the initial [page p
 
 1. In the dialog you can define the properties you want applied to pages created with this template.
 
-   ![](assets/chlimage_1-167.png)
+   ![chlimage_1-167](assets/chlimage_1-167.png)
 
 1. Confirm your definitions with **Done**.
 

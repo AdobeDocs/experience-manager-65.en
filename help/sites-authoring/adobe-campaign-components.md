@@ -41,7 +41,7 @@ A description of these components is in the following section.
 
 The components appear as follows:
 
-![](assets/chlimage_1-43.png)
+![chlimage_1-43](assets/chlimage_1-43.png)
 
 ### Heading (Campaign) {#heading-campaign}
 
@@ -52,7 +52,7 @@ The heading component can either:
 
 You edit the **Heading (Campaign)** component directly. Leave empty to use the page title.
 
-![](assets/chlimage_1-44.png)
+![chlimage_1-44](assets/chlimage_1-44.png)
 
 You can configure the following:
 
@@ -64,7 +64,7 @@ You can configure the following:
 
 The following example shows a Heading (Campaign) component being displayed.
 
-![](assets/chlimage_1-45.png)
+![chlimage_1-45](assets/chlimage_1-45.png)
 
 ### Image (Campaign) {#image-campaign}
 
@@ -74,7 +74,7 @@ You can upload an image, then edit and manipulate it (for example, crop, rotate,
 
 You can either drag and drop an image from the [Asset Browser](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui) directly onto the component or its [Configure dialog](/help/sites-authoring/editing-content.md#editconfigurecopycutdeletepastetouchoptimizedui). You can also upload an image from the Configure dialog; this dialog also controls all definitions and manipulation of the image:
 
-![](assets/chlimage_1-46.png)
+![chlimage_1-46](assets/chlimage_1-46.png)
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ When an image is loaded, you can configure the following:
 
 The following example shows an Image (Campaign) component being displayed.
 
-![](assets/chlimage_1-47.png)
+![chlimage_1-47](assets/chlimage_1-47.png)
 
 ### Link (Campaign) {#link-campaign}
 
@@ -164,19 +164,19 @@ You can configure the following in the **Display**, **URL Info**, or **Advanced*
 
 The following example shows a Link (Campaign) component being displayed.
 
-![](assets/chlimage_1-48.png)
+![chlimage_1-48](assets/chlimage_1-48.png)
 
 ### Scene7 Image Template (Campaign) {#scene-image-template-campaign}
 
 [Scene7 Image Templates](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) are layered are layered image files, where content and properties can be parameterized for variability. The **Image template** component lets you use Scene7 templates within newsletters and change the values of template parameters. In addition, you can use Adobe Campaign metadata variables inside the parameters, so that each user experiences the image in a personalized way.
 
-![](assets/chlimage_1-49.png)
+![chlimage_1-49](assets/chlimage_1-49.png)
 
 Click **Edit** to configure the component. You can configure the settings described in this section. This Scene7 Image template is described in detail in [Scene7 Image Template component](/help/assets/scene7.md#image-template).
 
 In addition, the parameter panel lists all template parameters that have been defined for the template in Scene7. For each of these parameters, you can adapt the value, insert variables, or reset them to their default value.
 
-![](assets/chlimage_1-50.png)
+![chlimage_1-50](assets/chlimage_1-50.png)
 
 ### Targeted reference (Campaign) {#targeted-reference-campaign}
 
@@ -192,7 +192,7 @@ The Text & Image (Campaign) component adds a text block and an image.
 
 When you click to configure the component, you select Text or Image.
 
-![](assets/chlimage_1-51.png)
+![chlimage_1-51](assets/chlimage_1-51.png)
 
 Selecting **Text** displays an in-line editor:
 
@@ -239,7 +239,7 @@ As with the Text & Personalization (Campaign) and Image (Campaign) components, y
 
 The following example shows a Text & Image (Campaign) component being displayed.
 
-![](assets/chlimage_1-52.png)
+![chlimage_1-52](assets/chlimage_1-52.png)
 
 ### Text & Personalization (Campaign) {#text-personalization-campaign}
 
@@ -247,7 +247,7 @@ The Text & Personalization (Campaign) component lets you enter a text block usin
 
 The selection of icons allow you to format your text, including font characteristics, alignment, links, lists and indentation. The functionality is basically the same in [both UIs](/help/sites-authoring/editing-content.md), although the look-and-feel is different:
 
-![](assets/chlimage_1-53.png)
+![chlimage_1-53](assets/chlimage_1-53.png)
 
 In the inplace editor you can add text, change the justification, add and remove links, add context fields or personalization blocks, and enter full-screen mode. When finished adding text/personalization, select the check mark to save your changes (or x to cancel). See [Inplace editing](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) for more information.
 
@@ -258,7 +258,7 @@ In the inplace editor you can add text, change the justification, add and remove
 >
 >See [Inserting Personalization](/help/sites-authoring/campaign.md#inserting-personalization).
 
-![](assets/chlimage_1-54.png)
+![chlimage_1-54](assets/chlimage_1-54.png)
 
 >[!NOTE]
 >
@@ -284,7 +284,7 @@ When you open a form that is configured to integrate with Adobe Campaign, you se
 
 The components appear as follows:
 
-![](assets/chlimage_1-55.png)
+![chlimage_1-55](assets/chlimage_1-55.png)
 
 This section describes each component in detail.
 
@@ -335,7 +335,7 @@ In most components, you can configure the following:
 
 #### Title and Text {#title-and-text}
 
-![](assets/chlimage_1-56.png)
+![chlimage_1-56](assets/chlimage_1-56.png)
 
 * **Title**
   If you want to use a name other than the element name, enter it here.
@@ -359,7 +359,7 @@ You can configure the following:
 * **Reconciliation Key**
   Select this check box if this field is part of the reconciliation key.
 
-![](assets/chlimage_1-57.png)
+![chlimage_1-57](assets/chlimage_1-57.png)
 
 #### Constraints {#constraints}
 
@@ -368,14 +368,14 @@ You can configure the following:
 * **Required Message
   **Optionally, add a message stating that the field is required.
 
-![](assets/chlimage_1-58.png)
+![chlimage_1-58](assets/chlimage_1-58.png)
 
 #### Styling {#styling}
 
 * **CSS**
   Enter the CSS classes you want to use for this component.
 
-![](assets/chlimage_1-59.png)
+![chlimage_1-59](assets/chlimage_1-59.png)
 
 ### Checkbox (Campaign) {#checkbox-campaign}
 
@@ -385,7 +385,7 @@ You can [configure settings common to most Adobe Campaign components](#settings-
 
 The following example shows a Checkbox (Campaign) component being displayed.
 
-![](assets/chlimage_1-60.png)
+![chlimage_1-60](assets/chlimage_1-60.png)
 
 ### Date Field (Campaign) and Date Field/HTML 5 (Campaign) {#date-field-campaign-and-date-field-html-campaign}
 
@@ -403,7 +403,7 @@ In addition to [settings common to most Adobe Campaign components](#settings-com
 
 The following example shows a Date Field (Campaign) component with the width adjusted being displayed.
 
-![](assets/chlimage_1-61.png)
+![chlimage_1-61](assets/chlimage_1-61.png)
 
 ### Encrypted Primary Key (Campaign) {#encrypted-primary-key-campaign}
 
@@ -420,7 +420,7 @@ You can configure the following in the Encrypted Primary Key (Campaign) componen
 
 The following example shows an Encrypted Primary Key (Campaign) component being displayed.
 
-![](assets/chlimage_1-62.png)
+![chlimage_1-62](assets/chlimage_1-62.png)
 
 ### Error Display (Campaign) {#error-display-campaign}
 
@@ -428,7 +428,7 @@ This component lets you display backend errors. The form's error handling needs 
 
 The following example shows an Error Display (Campaign) component being displayed.
 
-![](assets/chlimage_1-63.png)
+![chlimage_1-63](assets/chlimage_1-63.png)
 
 ### Hidden Reconciliation Key (Campaign) {#hidden-reconciliation-key-campaign}
 
@@ -443,7 +443,7 @@ You can configure the following in the Hidden Reconciliation Key (Campaign) comp
 
 The following example shows an Hidden Reconciliation Key (Campaign) component being displayed.
 
-![](assets/chlimage_1-64.png)
+![chlimage_1-64](assets/chlimage_1-64.png)
 
 ### Numeric Field (Campaign) {#numeric-field-campaign}
 
@@ -461,7 +461,7 @@ In addition to [settings common to most Adobe Campaign components](#settings-com
 
 The following example shows a Numeric Field (Campaign) component with the width configured being displayed.
 
-![](assets/chlimage_1-65.png)
+![chlimage_1-65](assets/chlimage_1-65.png)
 
 ### Option Field (Campaign) {#option-field-campaign}
 
@@ -469,11 +469,11 @@ This drop-down list lets you select an option; for example, the gender or status
 
 You can [configure settings common to most Adobe Campaign components](#settings-common-to-most-components) in the Option Field (Campaign) component. To populate the drop-down list, select the appropriate field in the Adobe Campaign personalization fields by clicking or tapping the Adobe Campaign symbol and navigating to the field.
 
-![](assets/chlimage_1-66.png)
+![chlimage_1-66](assets/chlimage_1-66.png)
 
 The following example shows an Option Field (Campaign) component being displayed.
 
-![](assets/chlimage_1-67.png)
+![chlimage_1-67](assets/chlimage_1-67.png)
 
 ### Subscriptions Checklist (Campaign) {#subscriptions-checklist-campaign}
 
@@ -489,7 +489,7 @@ You can [configure settings common to most Adobe Campaign components](#settings-
 
 The following example shows a Subscriptions Checklist (Campaign) component being displayed.
 
-![](assets/chlimage_1-68.png)
+![chlimage_1-68](assets/chlimage_1-68.png)
 
 ### Text Field (Campaign) {#text-field-campaign}
 
@@ -507,5 +507,5 @@ In addition to [settings common to most Adobe Campaign components](#settings-com
 
 The following example shows a Text Field (Campaign) component being displayed.
 
-![](assets/chlimage_1-69.png)
+![chlimage_1-69](assets/chlimage_1-69.png)
 

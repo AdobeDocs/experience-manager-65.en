@@ -43,7 +43,7 @@ You can set up the command line process step for your particular use case. Perfo
 1. From the **[!UICONTROL DAM Update Asset]** workflow model, open the **[!UICONTROL EPS thumbnails (powered by ImageMagick)]** step.
 1. In the **[!UICONTROL Arguments tab]**, add `image/jpeg` to the **[!UICONTROL Mime Types]** list.
 
-   ![](assets/mime_types_jpeg.png)
+   ![mime_types_jpeg](assets/mime_types_jpeg.png)
 
 1. In the **[!UICONTROL Commands]** box, enter the following command:
 
@@ -51,11 +51,11 @@ You can set up the command line process step for your particular use case. Perfo
 
 1. Select the **[!UICONTROL Delete Generated Rendition]** and **[!UICONTROL Generate Web Rendition]** flags.
 
-   ![](assets/select_flags.png)
+   ![select_flags](assets/select_flags.png)
 
 1. In the **[!UICONTROL Web Enabled Image]** tab, specify the details for the rendition with dimensions 1280x1280 pixels. In addition, specify i*mage/jpeg* in the **[!UICONTROL Mimetype]** box.
 
-   ![](assets/web_enabled_image.png)
+   ![web_enabled_image](assets/web_enabled_image.png)
 
 1. Tap/click **[!UICONTROL OK]** to save the changes.
 
@@ -68,11 +68,11 @@ You can set up the command line process step for your particular use case. Perfo
 
 1. Open the **[!UICONTROL Process Thumbnails]** step, and add the MIME type `image/jpeg` under **[!UICONTROL Skip Mime Types]**.
 
-   ![](assets/skip_mime_types.png)
+   ![skip_mime_types](assets/skip_mime_types.png)
 
 1. In the **[!UICONTROL Web Enabled Image]** tab, add the MIME type `image/jpeg` under the **[!UICONTROL Skip List]**. Tap/click **[!UICONTROL OK]** to save the changes.
 
-   ![](assets/web_enabled.png)
+   ![web_enabled](assets/web_enabled.png)
 
 1. Save the workflow.
 1. To check whether ImageMagic is able to process images properly, upload a JPG image to AEM Assets. Verify whether a flipped image and the renditions are generated for it.

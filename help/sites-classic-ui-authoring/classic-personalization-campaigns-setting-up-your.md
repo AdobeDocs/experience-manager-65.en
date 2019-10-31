@@ -55,7 +55,7 @@ To create a new brand:
 
 1. Select **New...** to enter the **Title** and **Name** and template to be used for your new brand:
 
-   ![](assets/chlimage_1-17.png)
+   ![chlimage_1-17](assets/chlimage_1-17.png)
 
 1. Click **Create**. Your new brand will be shown in the MCM (with a default icon).
 
@@ -65,7 +65,7 @@ To create a new brand:
 
    You can enter a **Title**, **Description** and an image to be used as the icon.
 
-   ![](assets/chlimage_1-18.png)
+   ![chlimage_1-18](assets/chlimage_1-18.png)
 
 1. Click **OK** to save.
 
@@ -79,7 +79,7 @@ To create a new campaign:
 
 1. Click **New...** and specify the **Title**, **Name** and template to be used for your new campaign.
 
-   ![](assets/chlimage_1-19.png)
+   ![chlimage_1-19](assets/chlimage_1-19.png)
 
 1. Click **Create**. Your new campaign will be shown in the MCM.
 
@@ -98,7 +98,7 @@ Configure campaign properties that control the behavior:
 
    You can enter various properties, including a **Title**, **Description** and any **Cloud Services** you want.
 
-   ![](assets/chlimage_1-20.png)
+   ![chlimage_1-20](assets/chlimage_1-20.png)
 
 1. Click **OK** to save.
 
@@ -144,7 +144,7 @@ If you have existing experiences you can add a touchpoint directly from the Cale
 
 1. Click **Add Touchpoint...** to open the dialog. Specify the experience you want to add:
 
-   ![](assets/chlimage_1-21.png)
+   ![chlimage_1-21](assets/chlimage_1-21.png)
 
 1. Click **OK** to save.
 
@@ -161,7 +161,7 @@ Leads generally are categorized and put into a list so that later you can perfor
 
 In the Dashboard, you access all leads by clicking **Leads** from the left pane. You can also access leads from the **Lists** pane.
 
-![](assets/screen_shot_2012-02-21at114748am.png)
+![screen_shot_2012-02-21at114748am](assets/screen_shot_2012-02-21at114748am.png)
 
 >[!NOTE]
 >
@@ -176,17 +176,17 @@ To create a new lead manually:
 1. In AEM, navigate to the MCM. In the Dashboard, click **Leads**.
 1. Click **New**. The **Create New** window opens.
 
-   ![](assets/screen_shot_2012-02-21at115008am.png)
+   ![screen_shot_2012-02-21at115008am](assets/screen_shot_2012-02-21at115008am.png)
 
 1. Enter information in the fields, as appropriate. Click the **Address** tab.
 
-   ![](assets/screen_shot_2012-02-21at115045am.png)
+   ![screen_shot_2012-02-21at115045am](assets/screen_shot_2012-02-21at115045am.png)
 
 1. Enter address information, as appropriate. Click **Save** to save the lead. If you need to add additional leads, click** Save and New**.
 
    The new lead appears in the Leads pane. When you click the entry, all entered information appears in the right pane. After creating a lead, you can add it to a list.
 
-   ![](assets/screen_shot_2012-02-21at120307pm.png)
+   ![screen_shot_2012-02-21at120307pm](assets/screen_shot_2012-02-21at120307pm.png)
 
 ### Activating or deactivating leads {#activating-or-deactivating-leads}
 
@@ -198,11 +198,11 @@ To active or deactive leads:
 
 1. Select the leads you want to activate or deactivate and click **Activate** or **Deactivate**.
 
-   ![](assets/screen_shot_2012-02-21at120620pm.png)
+   ![screen_shot_2012-02-21at120620pm](assets/screen_shot_2012-02-21at120620pm.png)
 
    As with AEM pages, the publish status is indicated in the **Published** column.
 
-   ![](assets/screen_shot_2012-02-21at122901pm.png)
+   ![screen_shot_2012-02-21at122901pm](assets/screen_shot_2012-02-21at122901pm.png)
 
 ### Importing new leads {#importing-new-leads}
 
@@ -238,15 +238,15 @@ To import leads from a comma-separated list:
    >
    >
 
-   ![](assets/screen_shot_2012-02-21at123055pm.png)
+   ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
 1. Click** Next**. Here, you preview the leads to ensure they are accurate.
 
-   ![](assets/screen_shot_2012-02-21at123104pm.png)
+   ![screen_shot_2012-02-21at123104pm](assets/screen_shot_2012-02-21at123104pm.png)
 
 1. Click **Next**. Select the list you want the leads to belong to. If you do not want them to belong to a list, delete the information in the field. By default, AEM creates a list name that includes the date and time. Click **Import**.
 
-   ![](assets/screen_shot_2012-02-21at123123pm.png)
+   ![screen_shot_2012-02-21at123123pm](assets/screen_shot_2012-02-21at123123pm.png)
 
    The new lead appears in the Leads pane. If you click on the entry, all entered information appears in the right pane. After creating a lead, you can add it to a list.
 
@@ -258,11 +258,11 @@ To add leads to pre-existing lists:
 
 1. Select the leads you want to add to a list by selecting the check box next to the lead. You can add as many leads as you want.
 
-   ![](assets/screen_shot_2012-02-21at123835pm.png)
+   ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
 1. In the **Tools** menu, select **Add to List....** The **Add to List **window opens.
 
-   ![](assets/screen_shot_2012-02-21at124019pm.png)
+   ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
 1. Select which list you want to add the leads to and click **OK**. The leads are added to the appropriate lists.
 
@@ -270,7 +270,7 @@ To add leads to pre-existing lists:
 
 To view lead information, in the MCM, click the check box next to the lead and a right pane opens with all the lead's information displayed, including list affiliation.
 
-![](assets/screen_shot_2012-02-21at124228pm.png)
+![screen_shot_2012-02-21at124228pm](assets/screen_shot_2012-02-21at124228pm.png)
 
 ### Modifying existing leads {#modifying-existing-leads}
 
@@ -278,7 +278,7 @@ To modify existing lead information:
 
 1. In the MCM, click **Leads**. From the list of leads, select the check box next to the lead you want to edit. All of the lead information appears in the right pane.
 
-   ![](assets/screen_shot_2012-02-21at124514pm.png)
+   ![screen_shot_2012-02-21at124514pm](assets/screen_shot_2012-02-21at124514pm.png)
 
    >[!NOTE]
    >
@@ -286,7 +286,7 @@ To modify existing lead information:
 
 1. Click **Edit**. The **Edit Lead** window opens.
 
-   ![](assets/screen_shot_2012-02-21at124609pm.png)
+   ![screen_shot_2012-02-21at124609pm](assets/screen_shot_2012-02-21at124609pm.png)
 
 1. Make the edits as needed and click **Save** to save your changes.
 
@@ -311,11 +311,11 @@ To delete existing leads in the MCM, select the check box next to the lead and c
 
 Lists let you organize your leads into groups. With lists, you can target your marketing campaigns to a select group of people, for example, you can send a targeted newsletter to a list. Lists are visible in the MCM, either in the Dashboard or by clicking **Lists**. Both provide you with the name of the list and the number of members.
 
-![](assets/screen_shot_2012-02-21at125021pm.png)
+![screen_shot_2012-02-21at125021pm](assets/screen_shot_2012-02-21at125021pm.png)
 
 If you click **Lists**, you also can view if the list is a member of another list and see a description.
 
-![](assets/screen_shot_2012-02-21at124828pm.png)
+![screen_shot_2012-02-21at124828pm](assets/screen_shot_2012-02-21at124828pm.png)
 
 ### Creating new lists {#creating-new-lists}
 
@@ -323,11 +323,11 @@ To create a new list (group):
 
 1. In the MCM dashboard, click **New List ...** or in **Lists**, click **New** ... The Create List window opens.
 
-   ![](assets/screen_shot_2012-02-21at125147pm.png)
+   ![screen_shot_2012-02-21at125147pm](assets/screen_shot_2012-02-21at125147pm.png)
 
 1. Enter a name (required) and if desired, a description and click **Save**. The list appears in the **Lists** pane.
 
-   ![](assets/screen_shot_2012-02-21at125320pm.png)
+   ![screen_shot_2012-02-21at125320pm](assets/screen_shot_2012-02-21at125320pm.png)
 
 ### Modifying existing lists {#modifying-existing-lists}
 
@@ -337,7 +337,7 @@ To modify an existing list:
 
 1. From the list, select the check box next to the list you want to edit and click **Edit**. The **Edit List** window opens.
 
-   ![](assets/screen_shot_2012-02-21at125452pm.png)
+   ![screen_shot_2012-02-21at125452pm](assets/screen_shot_2012-02-21at125452pm.png)
 
    >[!NOTE]
    >
@@ -373,13 +373,13 @@ To merge existing lists:
 
 1. In the **Merge List** window, select the list you want to merge with and click **OK**.
 
-   ![](assets/screen_shot_2012-02-21at10259pm.png)
+   ![screen_shot_2012-02-21at10259pm](assets/screen_shot_2012-02-21at10259pm.png)
 
    The list you merged should increase by one member. To see that your list was merged, select the list you merged and in the **Tools** menu, select **Show Leads**.
 
 1. Repeat the step until you have merged all the lists you want.
 
-   ![](assets/screen_shot_2012-02-21at10538pm.png)
+   ![screen_shot_2012-02-21at10538pm](assets/screen_shot_2012-02-21at10538pm.png)
 
 >[!NOTE]
 >
@@ -401,7 +401,7 @@ To view the leads that belong to a list:
    >
    >In addition, you can delete leads from a list by selecting them and then clicking **Remove Membership**.
 
-   ![](assets/screen_shot_2012-02-21at10828pm.png)
+   ![screen_shot_2012-02-21at10828pm](assets/screen_shot_2012-02-21at10828pm.png)
 
 1. Click **Close** to return to the MCM.
 

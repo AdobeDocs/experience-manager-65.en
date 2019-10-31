@@ -59,7 +59,7 @@ To access an existing community site, for the purpose of authoring, modifying, p
 
 For example, the following image shows the main Communities Sites console displaying the folders for two community sites : [enable](/help/communities/getting-started-enablement.md) and [engage](/help/communities/getting-started.md) :
 
-![](assets/chlimage_1-154.png)
+![chlimage_1-154](assets/chlimage_1-154.png)
 
 ## Site Creation {#site-creation}
 
@@ -73,7 +73,7 @@ The creation process is a series of steps presented as panels containing a set o
 
 ### Step 1 : Site Template {#step-site-template}
 
-![](assets/newsitetemplate.png)
+![newsitetemplate](assets/newsitetemplate.png)
 
 On the Site Template panel, the Title, Description, Site Root, Base Language, Name and Site Template are specified:
 
@@ -106,7 +106,7 @@ The Design panel contains 2 sub-panels for selecing the theme and branding banne
 
 #### COMMUNITY SITE THEME {#community-site-theme}
 
-![](assets/sitetheme.png)
+![sitetheme](assets/sitetheme.png)
 
 The framework uses [Twitter Bootstrap](https://twitterbootstrap.org/) to bring a responsive, flexible design to the site. One of the many preloaded Bootstrap themes may be selected to style the selected community site template, or a Bootstrap theme may be uploaded.
 
@@ -116,7 +116,7 @@ After the community site is published, it is possible to [edit the properties](#
 
 #### COMMUNITY SITE BRANDING {#community-site-branding}
 
-![](assets/chlimage_1-155.png)
+![chlimage_1-155](assets/chlimage_1-155.png)
 
 Community site branding is an image displayed as a header across the top of each page.
 
@@ -159,7 +159,7 @@ The Settings panel contains several sub-panels presenting features to configure 
 
 #### USER MANAGEMENT {#user-management}
 
-![](assets/createsitesettings.png)
+![createsitesettings](assets/createsitesettings.png)
 
 >[!NOTE]
 >
@@ -200,7 +200,7 @@ The Settings panel contains several sub-panels presenting features to configure 
 
 #### TAGGING {#tagging}
 
-![](assets/chlimage_1-156.png)
+![chlimage_1-156](assets/chlimage_1-156.png)
 
 The tags which may be applied to community content are controlled by selecting Tag Namespaces previously defined through the [Tagging Console](/help/sites-administering/tags.md#tagging-console).
 
@@ -230,7 +230,7 @@ Finding community members is easy using type-ahead search.
 
 #### MODERATION {#moderation}
 
-![](assets/chlimage_1-157.png)
+![chlimage_1-157](assets/chlimage_1-157.png)
 
 The global setting for moderating user generated content (UGC) is controlled by these settings. Individual components have additional settings to control moderation.
 
@@ -242,13 +242,13 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
 #### ANALYTICS {#analytics}
 
-![](assets/chlimage_1-158.png)
+![chlimage_1-158](assets/chlimage_1-158.png)
 
 * **Enable Analytics**
   Only available when Adobe Analytics has been [configured](/help/communities/analytics.md) for Communities features.
   Default is unchecked. When checked, an additional selection menu appears :
 
-![](assets/chlimage_1-159.png)
+![chlimage_1-159](assets/chlimage_1-159.png)
 
 * **Cloud Config Framework Reference**
   From the pull-down menu, select the Analytics cloud service framework configured for this community site.
@@ -256,12 +256,12 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
 #### TRANSLATION {#translation}
 
-![](assets/chlimage_1-160.png)
+![chlimage_1-160](assets/chlimage_1-160.png)
 
 * **Allow Machine Translation**
   When checked (default is unchecked), machine translation is enabled for UGC within the site. This does not affect any other content, such as page content, even if the site is setup as a multilingual site. See [Translating User Generated Content](/help/communities/translate-ugc.md) for information on configuring a licensed translation service for AEM Communities. See [Translating Content for Multilingual Sites](/help/sites-administering/translation.md) for a complete overview.
 
-![](assets/chlimage_1-161.png)
+![chlimage_1-161](assets/chlimage_1-161.png)
 
 * **Enable Machine Translation for selected languages**
   The languages enabled for machine translation default to the system setting specified by the [translation integration configuration](/help/communities/translate-ugc.md#translation-integration-configuration). These default settings may be overridden for this site by deleting defaults and/or selecting other languages from the pull-down menu.
@@ -305,7 +305,7 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
 #### ENABLEMENT {#enablement}
 
-![](assets/chlimage_1-162.png)
+![chlimage_1-162](assets/chlimage_1-162.png)
 
 The `ENABLEMENT`settings are applicable when the chosen community site template includes the [assignments function](/help/communities/functions.md#assignments-function), which is available when the enablement features are licensed and [configured](/help/communities/enablement.md). The reference site template that includes the assignments function is `Reference Structured Learning Site Template.`
 
@@ -330,25 +330,25 @@ Once the site is created :
 * disabling the community site template will not affect the created community site
 * it is possible to edit the [STRUCTURE](#modify-structure) of a community site by modifying its properties
 
-![](assets/chlimage_1-163.png)
+![chlimage_1-163](assets/chlimage_1-163.png)
 
 When the process completes, the folder for the new site is displayed in the Communities Sites console, from where authors may add page content or administrators may modify the properties of the site.
 
-![](assets/chlimage_1-164.png)
+![chlimage_1-164](assets/chlimage_1-164.png)
 
 In order to modify a community site, select its project folder to open it :
 
-![](assets/siteactions-1.png)
+![siteactions-1](assets/siteactions-1.png)
 
 When hovering over a site with a mouse, or touching a site card, icons appear which allow for [editing the site in author mode](#authoring-site-content), [opening the site properties for modification](#modifying-site-properties), [publishing the site](#publishing-the-site), [exporting the site](#exporting-the-site), and [deleting the site](#deleting-the-site).
 
 ## Authoring Site Content {#authoring-site-content}
 
-![](assets/chlimage_1-165.png)
+![chlimage_1-165](assets/chlimage_1-165.png)
 
 The content of a site may be authored with the same tools as any other AEM website. To open the site for authoring, select the `Open Site` iconm that appears on hovering the site with mouse. The site will open in a new tab such that the Communities Sites console remains accessible.
 
-![](assets/chlimage_1-166.png)
+![chlimage_1-166](assets/chlimage_1-166.png)
 
 >[!NOTE]
 >
@@ -356,13 +356,13 @@ The content of a site may be authored with the same tools as any other AEM websi
 
 ## Modifying Site Properties {#modifying-site-properties}
 
-![](assets/chlimage_1-167.png)
+![chlimage_1-167](assets/chlimage_1-167.png)
 
 The properties of an exisitng site, specified during the site creation process, can be modified by selecting the `Edit Site`icon that appears on hovering the site with mouse.
 
 `Details of the following properties match the descriptions provided in the` [Site Creation](#site-creation) section.
 
-![](assets/chlimage_1-168.png)
+![chlimage_1-168](assets/chlimage_1-168.png)
 
 ### Modify Basic {#modify-basic}
 
@@ -412,7 +412,7 @@ The STRUCTURE panel allows the modification of the structure initially created f
 
 #### Example : Adding a Catalog Function to a Community Site Structure {#example-adding-a-catalog-function-to-a-community-site-structure}
 
-![](assets/chlimage_1-169.png)
+![chlimage_1-169](assets/chlimage_1-169.png)
 
 ### Modify Design {#modify-design}
 
@@ -448,11 +448,11 @@ See the [ENABLEMENT](#enablement) description.
 
 After a community site has been newly created or modified, it is possible to publish (activate) the site by selecting the `Publish Site` icon, that appears on mouse hover over the site.
 
-![](assets/chlimage_1-170.png)
+![chlimage_1-170](assets/chlimage_1-170.png)
 
 There will be an indication after site is successfully published.
 
-![](assets/chlimage_1-171.png)
+![chlimage_1-171](assets/chlimage_1-171.png)
 
 ### Publishing with Nested Groups {#publishing-with-nested-groups}
 
@@ -460,14 +460,14 @@ After publishing a community site, it is necessary to individually publish each 
 
 ## Exporting the Site {#exporting-the-site}
 
-![](assets/chlimage_1-172.png)
+![chlimage_1-172](assets/chlimage_1-172.png)
 
 Select the export icon, on mouse hover over the site, to create a package of the community site that is both stored in [package manager](/help/sites-administering/package-manager.md) and downloaded.
 Note that UGC is not included in the site package.
 
 ## Deleting the Site {#deleting-the-site}
 
-![](assets/deleteicon.png)
+![deleteicon](assets/deleteicon.png)
 
 To delete the community site, select the Delete Site icon that appears on hovering the mouse over the site in Communities Site Console. This action removes all the items associated with the site, such as UGC, user groups, assets and database records.
 
@@ -515,7 +515,7 @@ To correctly redirect, once a site has been configured and pushed to publish, co
 
 * select **Save**
 
-![](assets/chlimage_1-173.png)
+![chlimage_1-173](assets/chlimage_1-173.png)
 
 ### Test Authentication Redirection {#test-authentication-redirection}
 
@@ -530,7 +530,7 @@ On the same AEM publish instance configured with a login page mapping for the co
 * enter obviously incorrect credentials, such as username "x" and password "x"
 * the login page should be displayed with an "invalid login" error
 
-![](assets/chlimage_1-174.png)
+![chlimage_1-174](assets/chlimage_1-174.png)
 
 ## Accessing Community Sites from Main Sites Console {#accessing-community-sites-from-main-sites-console}
 
@@ -538,5 +538,5 @@ From the global navigation Sites console, community sites are located in the `Co
 
 While it is possible to access a community site in this manner, for administrative tasks, the community site should be accessed from the Communities Sites console.
 
-![](assets/chlimage_1-175.png)
+![chlimage_1-175](assets/chlimage_1-175.png)
 

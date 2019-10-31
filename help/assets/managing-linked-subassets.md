@@ -32,15 +32,15 @@ You can reference existing AEM assets from within an Adobe Illustrator file.
 1. Save the Illustrator file to the mounted drive, or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the AEM repository.
 1. After the worflow completes, go to the asset details page for the asset. The references to existing AEM assets are listed under **Dependencies** in the **References** column.
 
-   ![](assets/chlimage_1-84.png)
+   ![chlimage_1-84](assets/chlimage_1-84.png)
 
 1. The referenced assets that appear under **Dependencies** can also be referenced by files other than the current one. To view a list of referencing files for an asset, click the asset in the under **Dependencies**.
 
-   ![](assets/chlimage_1-85.png)
+   ![chlimage_1-85](assets/chlimage_1-85.png)
 
 1. Click the **View Properties** icon from the toolbar. In the properties page, the list of files that reference the current asset appear under the **References** column in the **Basic** tab.
 
-   ![](assets/chlimage_1-86.png)
+   ![chlimage_1-86](assets/chlimage_1-86.png)
 
 ## Add AEM assets as references in Adobe InDesign {#add-aem-assets-as-references-in-adobe-indesign}
 
@@ -70,7 +70,7 @@ This procedure is similar to [Adding AEM assets as references in Adobe Illustrat
 1. Using a WebDav client, mount AEM Assets as a drive.
 1. To create references to AEM assets in a Photoshop file, navigate to the corresponding assets in the mounted drive using the Place linked functionality in Photoshop.
 
-   ![](assets/chlimage_1-87.png)
+   ![chlimage_1-87](assets/chlimage_1-87.png)
 
 1. Save in Photoshop file to the mounted drive or or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the AEM repository.
 1. After the worflow completes, the references to existing AEM assets are listed in the asset details page.
@@ -92,33 +92,33 @@ You can browse through individual pages of a file from the asset page. You can u
 1. Navigate to the folder in AEM Assets that contains the multi-page file.
 1. Click the asset to view its asset page.
 
-   ![](assets/chlimage_1-88.png)
+   ![chlimage_1-88](assets/chlimage_1-88.png)
 
 1. Click the Global Nav icon, and then choose **Pages** from the menu.
 
-   ![](assets/chlimage_1-89.png)
+   ![chlimage_1-89](assets/chlimage_1-89.png)
 
 1. Click the left or right arrows below the image to navigate to individual pages of the file.
 
-   ![](assets/chlimage_1-90.png)
+   ![chlimage_1-90](assets/chlimage_1-90.png)
 
 1. To annotate a page, click the **Annotate **icon from the toolbar and add a comment.
 
-   ![](assets/chlimage_1-91.png)
+   ![chlimage_1-91](assets/chlimage_1-91.png)
 
 1. To download the file, click the **Download **icon.
 
-   ![](assets/chlimage_1-92.png)
+   ![chlimage_1-92](assets/chlimage_1-92.png)
 
 1. To view all pages of the file simultaneously, click the **Page Overview** icon.
 
-   ![](assets/chlimage_1-93.png)
+   ![chlimage_1-93](assets/chlimage_1-93.png)
 
 1. To view the activity stream for the file, including annotations and downloads, click the Global Nav ico and then choose **Timeline** from the menu.
 
-   ![](assets/chlimage_1-94.png)
+   ![chlimage_1-94](assets/chlimage_1-94.png)
 
 1. To view and edit the metadata properties of the page, click the **View Properties **icon from the toolbar.
 
-   ![](assets/chlimage_1-95.png)
+   ![chlimage_1-95](assets/chlimage_1-95.png)
 

@@ -121,15 +121,15 @@ To install and start AEM as a Windows service:
 
     * In the Services control panel, click cq5 and click Start.
 
-   ![](assets/chlimage_1-11.png)
+   ![chlimage_1-11](assets/chlimage_1-11.png)
 
     * In the command line, type net start cq5.
 
-   ![](assets/chlimage_1-12.png)
+   ![chlimage_1-12](assets/chlimage_1-12.png)
 
 1. Windows indicates that the service is running. AEM starts and the prunsrv executable appears in Task Manager. In your web browser, navigate to AEM, for example, `https://localhost:4502` to start using AEM.
 
-   ![](assets/chlimage_1-13.png)
+   ![chlimage_1-13](assets/chlimage_1-13.png)
 
 >[!NOTE]
 >
@@ -329,7 +329,7 @@ To open CRXDE Lite you can select **CRXDE Lite** from the welcome screen or use 
 For example:
 `https://localhost:4502/crx/de/index.jsp` ``
 
-![](assets/installcq_crxdelite.png)
+![installcq_crxdelite](assets/installcq_crxdelite.png)
 
 #### Accessing the Web Console {#accessing-the-web-console}
 
@@ -344,7 +344,7 @@ For example:
 or for the Bundles page
 `https://localhost:4502/system/console/bundles`
 
-![](assets/chlimage_1-14.png)
+![chlimage_1-14](assets/chlimage_1-14.png)
 
 See [OSGi Configuration with the Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) for further details.
 

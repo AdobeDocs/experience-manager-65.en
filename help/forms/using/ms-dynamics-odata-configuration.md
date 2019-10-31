@@ -13,7 +13,7 @@ docset: aem65
 
 # Microsoft Dynamics OData configuration{#microsoft-dynamics-odata-configuration}
 
- ![](assets/data-integeration.png)
+ ![data-integeration](assets/data-integeration.png)
 
 Microsoft Dynamics is a Customer Relationship Management (CRM) and Enterprise Resource Planning (ERP) software that provides enterprise solutions for creating and managing customer accounts, contacts, leads, opportunities, and cases. [AEM Forms Data Integration](../../forms/using/data-integration.md) provides an OData cloud service configuration to integrate Forms with both online and on-premises Microsoft Dynamics server. It enables you to create form data model based on the entities, attributes, and services defined in Microsoft Dynamics service. The form data model can be used to create adaptive forms that interact with Microsoft Dynamics server to enable business workflows. For example:
 
@@ -140,7 +140,7 @@ To review the form data model, go to **[!UICONTROL Forms > Data Integrations]**.
 
 `https://[*server*]:[*port*]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
-![](assets/default-fdm-1.png)
+![default-fdm-1](assets/default-fdm-1.png)
 
 Next, you can create an adaptive form based on the form data model and use it in various adaptive form use cases, such as:
 

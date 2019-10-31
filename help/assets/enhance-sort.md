@@ -40,7 +40,7 @@ AEM Assets lets you sort folder assets based on the following fields:
 
    The list of assets is sorted based on the field values.
 
-   ![](assets/chlimage_1-166.png)
+   ![chlimage_1-166](assets/chlimage_1-166.png)
 
 >[!NOTE]
 >
@@ -58,12 +58,12 @@ You can sort search results based on the following fields:
 
 1. From the OmniSearch field, search for assets in location Assets.
 
-   ![](assets/chlimage_1-167.png)
+   ![chlimage_1-167](assets/chlimage_1-167.png)
 
 1. Click/tap the Layout icon and toggle to the list view.
 1. Click/tap the Sort icon beside any column header in the list of assets. The list of assets is sorted based on the field values.
 
-   ![](assets/chlimage_1-168.png)
+   ![chlimage_1-168](assets/chlimage_1-168.png)
 
 ## Sort assets in timeline {#sort-assets-in-timeline}
 
@@ -72,13 +72,13 @@ AEM Assets lets you chronologically sort timeline entries, such as annotations, 
 1. From the Assets UI, select an asset for which you want to display the timeline.
 1. Click/tap the GolbalNav icon and select **Timeline**.
 
-   ![](assets/chlimage_1-169.png)
+   ![chlimage_1-169](assets/chlimage_1-169.png)
 
 1. In the timeline, select an entry from the list. For example, select **Comments** to display the list of annotations associated with the asset. 
 
-   ![](assets/chlimage_1-170.png)
+   ![chlimage_1-170](assets/chlimage_1-170.png)
 
 1. Click/tap the **Sort** icon beside the **Date** label. Based on your selection, the annotations are listed in the chronological/reverse chronological order in which they were added to the asset.
 
-   ![](assets/chlimage_1-171.png)
+   ![chlimage_1-171](assets/chlimage_1-171.png)
 

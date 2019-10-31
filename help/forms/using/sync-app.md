@@ -25,7 +25,7 @@ When you are online with the AEM Forms server, by default, your app is synchroni
 
 **To synchronize the app manually**
 
-Tap the Synchronize button ![](assets/sync-app.png) at the lower-right corner of the home screen.
+Tap the Synchronize button ![sync-app](assets/sync-app.png) at the lower-right corner of the home screen.
 
 **To alter the synchronization frequency**
 

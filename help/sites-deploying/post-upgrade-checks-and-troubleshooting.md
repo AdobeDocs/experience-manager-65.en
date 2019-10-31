@@ -57,11 +57,11 @@ To accomodate this, changes have been made in the way logs are generated in the 
 
 Here is a sample report that show no errors during upgrade:
 
-![](assets/1487887443006.png)
+![1487887443006](assets/1487887443006.png)
 
 Here is a sample report that shows a bundle that was not installed during the upgrade process:
 
-![](assets/1487887532730.png)
+![1487887532730](assets/1487887532730.png)
 
 **error.log**
 

@@ -74,7 +74,7 @@ For more details about what else has changed in recent AEM versions, see the com
 
 Upgrading AEM is a multi-step, sometimes multi-month process. The following outline has been provided as an overview of what is included in an upgrade project and the content that has been included in this documentation:
 
-![](assets/screen_shot_2018-03-30at80708am.png)
+![screen_shot_2018-03-30at80708am](assets/screen_shot_2018-03-30at80708am.png)
 
 ## Upgrade Flow {#upgrade-overview-1}
 
@@ -84,5 +84,5 @@ There was a big focus in 6.5 to keep all the new features backward compatible, b
 
 Finally, in your 6.5 development cycle, features introduced under Sustainable Upgrades(see [Sustainable Upgrades](/help/sites-deploying/sustainable-upgrades.md)) help you follow best practices to make future upgrades even more efficient and seamless.
 
-![](assets/6_4_upgrade_overviewflowchart-newpage3.png)
+![6_4_upgrade_overviewflowchart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
 

@@ -22,11 +22,11 @@ The XMP Writeback feature propagates the metadata changes to all or specific ren
 
 Consider a scenario where you modify the Title property of the asset titled "**Classic Leather**" to "**Nylon**."
 
-![](assets/metadata.png)
+![metadata](assets/metadata.png)
 
 In this case, the AEM Assets saves the changes to the **Title** property in the `dc:title` parameter for the asset metadata stored in the asset hierarchy.
 
-![](assets/metadata_stored.png)
+![metadata_stored](assets/metadata_stored.png)
 
 However, AEM Assets does not automatically propagate any metadata changes to the renditions of an asset.
 
@@ -40,7 +40,7 @@ To enable the metadata changes to be propagated to the renditions of the asset w
 1. Open the **Adobe CQ DAM Rendition Maker** configuration.
 1. Select the **Propagate XMP** option, and then save the changes.
 
-   ![](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
 ## Enabling XMP writeback for specific renditions {#enabling-xmp-writeback-for-specific-renditions}
 
@@ -54,7 +54,7 @@ For the XMP Writeback feature to propagate metadata to the rendition thumbnails 
 1. In the Step Properties dialog box, tap/click the **Process** tab.
 1. In the **Arguments** box, add `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, andd then tap/click **OK**.
 
-   ![](assets/step_properties.png)
+   ![step_properties](assets/step_properties.png)
 
 1. Save the changes.
 1. To regenerate the pyramid TIF renditions for Dynamic Media images with the new attributes, add the **Dynamic Media Process Image Assets** step to the DAM Metadata Writeback workflow.
@@ -87,7 +87,7 @@ Whitelist filtering of XMP metadata resolves this issue by letting you define th
 1. Open the **Adobe CQ DAM XmpFilter** configuration.
 1. To apply whitelist filtering, select **Apply Whitelist to XMP Properties**, and specify the properties to be imported in the **Whitelisted XML Names for XMP filtering** box.
 
-   ![](assets/chlimage_1-136.png)
+   ![chlimage_1-136](assets/chlimage_1-136.png)
 
 1. To filter out blacklisted XMP properties after applying whitelist filtering, specify them in the **Blacklisted XML Names for XMP filtering** box.
 

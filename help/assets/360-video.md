@@ -44,7 +44,7 @@ See [Edit 360/VR video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-
 
 360 video assets that are uploaded into AEM are labeled as **Multimedia** on an Asset page, similar to normal video asset.
 
-![](assets/6_5_360video-selecttopreview.png)
+![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
 
 An uploaded 360 video asset seen in the Card view. The asset is labeled as Multimedia.
 
@@ -107,20 +107,20 @@ See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-m
 
 1. In **Assets**, navigate to an existing 360 Video that you have created. Tap the 360 Video asset to open it in preview mode.
 
-   ![](assets/6_5_360video-selecttopreview-1.png)
+   ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
    Tap the 360 video asset to preview the video.
 
 1. On the preview page, near the upper-left corner of the page, tap the drop-down list, then select **Viewers**.
 
-   ![](assets/6_5_360video-preview-viewers.png)
+   ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
 
    From the Viewers list, tap **Video360_social**, then do one of the following:
 
     * Drag the mouse pointer across the video to alter the viewing angle of the static scene.
     * Tap the video's **Play** button to begin playback; as the video plays, drag the mouse pointer across the video to alter your viewing angle.
 
-   ![](assets/6_5_360video-preview-video360-social.png)
+   ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)
 
    A 360 video screenshot
 
@@ -128,7 +128,7 @@ See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-m
 
    Virtual Reality (VR) video is immersive video content that is accessed through the use of virtual reality headsets. As with ordinary videos, you create VR videos at the beginning when a video is being recorded or captured using 360 degree video cameras.
 
-   ![](assets/6_5_360video-preview-video360vr.png)
+   ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
 
    A 360 VR video screenshot.
 

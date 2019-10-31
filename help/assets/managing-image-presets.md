@@ -42,7 +42,7 @@ Administrators can create Image Presets. To create an image preset, you can star
 
 You manage your image presets in AEM by tapping or clicking the AEM logo to access the global navigation console and then tapping or clicking the Tools icon and navigating to **Assets **&gt;** Image Presets**.
 
-![](assets/6_5_tools-assets-imagepresets.png)
+![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
 >[!NOTE]
 >
@@ -197,7 +197,7 @@ To configure thumbnail size:
 1. Tap **Tools **&gt; **Workflow** &gt; **Models** &gt; **DAM Update Asset** &gt; **Edit**.
 1. Tap the **Dynamic Media Process Image Assets** step and tap or click the **Thumbnails** tab. Change the thumbnail size, as needed, then tap **OK**.
 
-   ![](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
+   ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
 1. Tap the **Process Thumbnails** step, then tap the **Thumbnails** tab. Change the thumbnail size, as needed, then tap **OK**.
 
@@ -216,12 +216,12 @@ To increase or decrease the number of image presets displayed:
 1. Navigate to CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigate to the image preset listing node at **/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist**
 
-   ![](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
+   ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
 
 1. In the **limit** property, change the **Value**, which is set to 15 by default, to the desired number.
 1. Navigate to the image preset datasource at **/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource**
 
-   ![](assets/chlimage_1-77.png)
+   ![chlimage_1-77](assets/chlimage_1-77.png)
 
 1. In the limit property, change the number to the desired number, for example `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Tap **Save All**.
@@ -245,7 +245,7 @@ To create an image preset:
 1. In AEM, tap the AEM logo to access the global navigation console, then tap **Tools** &gt; **Assets **&gt; **Image Presets**.
 1. Click **Create**. The **Edit Image Preset** window opens.
 
-   ![](assets/chlimage_1-78.png)
+   ![chlimage_1-78](assets/chlimage_1-78.png)
 
    >[!NOTE]
    >
@@ -253,7 +253,7 @@ To create an image preset:
 
 1. Enter values into the **Basic** and **Advanced** tabs as appropriate, including a name. The options are outlined in [Image Preset Options](#image-preset-options). Presets appear in the left pane and can be used on-the-fly with other assets.
 
-   ![](assets/6_5_imagepreset-edit.png)
+   ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
 1. Click **Save**.
 
@@ -263,7 +263,7 @@ To create a responsive image preset, perform the steps in [Creating Image Preset
 
 Leaving them blank tells AEM that this image preset is responsive. You can adjust the other values as appropriate.
 
-![](assets/chlimage_1-79.png)
+![chlimage_1-79](assets/chlimage_1-79.png)
 
 >[!NOTE]
 >
@@ -436,7 +436,7 @@ The following are some basic examples of what you can do with image modifiers.
   &op_invert=1
   ```
 
-  ![](assets/6_5_imagepreset-edit-invert.png)
+  ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
 * [op_blur](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_blur.html) - Applies a blur filter to the image.
 
@@ -444,7 +444,7 @@ The following are some basic examples of what you can do with image modifiers.
   &op_blur=7
   ```
 
-  ![](assets/6_5_imagepreset-edit-blur.png)
+  ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
 
 * Combined commands - op_blur and op-invert
 
@@ -452,7 +452,7 @@ The following are some basic examples of what you can do with image modifiers.
   &op_invert=1&op_blur=7
   ```
 
-  ![](assets/chlimage_1-80.png)
+  ![chlimage_1-80](assets/chlimage_1-80.png)
 
 * [op_brightness](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_brightness.html) - Decreases or increases the brightness.
 
@@ -460,7 +460,7 @@ The following are some basic examples of what you can do with image modifiers.
   &op_brightness=58
   ```
 
-  ![](assets/6_5_imagepreset-edit-brightness.png)
+  ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
 * [opac](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_opac.html) - Adjusts image opacity. Lets you decrease the foreground opacity.
 
@@ -468,7 +468,7 @@ The following are some basic examples of what you can do with image modifiers.
   opac=29
   ```
 
-  ![](assets/6_5_imagepreset-edit-opacity.png)
+  ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
 ### Modifying Image Presets {#modifying-image-presets}
 
@@ -476,7 +476,7 @@ To edit image presets:
 
 1. In AEM, tap the AEM logo to access the global navigation console, then tap **Tools** &gt; **Assets **&gt; **Image Presets**.
 
-   ![](assets/6_5_imagepreset-editpreset.png)
+   ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
 1. Select a preset and then click **Edit**. The **Edit Image Preset** window opens.
 1. Make changes and click **Save** to save your changes or **Cancel** to cancel your changes.
@@ -493,7 +493,7 @@ To manually publish image presets in Dynamic Media - Hybrid mode:
 1. Select the image preset or multiple image presets from the list of image presets and click or tap **Publish**.
 1. After the image preset is published, the status changes from unpublished to published.
 
-   ![](assets/chlimage_1-81.png)
+   ![chlimage_1-81](assets/chlimage_1-81.png)
 
 ### Deleting Image Presets {#deleting-image-presets}
 

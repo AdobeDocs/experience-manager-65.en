@@ -192,7 +192,7 @@ To change the location and name of the log file:
 1. Log in to Configuration Manager as an administrator. The default URL of Configuration Manager is `https://[*Server*]:[*Port*]/system/console/configMgr`. 
 1. Click **Apache Sling Logging Logger Configuration**. A dialog box appears.
 
-   ![](assets/logconfig-1.png)
+   ![logconfig-1](assets/logconfig-1.png)
 
 1. Change the **Log Level** to Debug.  
 

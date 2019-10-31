@@ -116,5 +116,5 @@ As of AEM 6.2, the modifications previously required to be made manually are inc
 
 Rich media is embeded in a blog article by selecting the `Embed Media from External Sites` icon :
 
-![](assets/chlimage_1-199.png)
+![chlimage_1-199](assets/chlimage_1-199.png)
 

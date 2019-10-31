@@ -46,13 +46,13 @@ In Design mode, the sidekick is minimized and you have the possibility to config
 
 1. Click **Edit** on the Paragraph system (**Design of par**).
 
-   ![](assets/screen_shot_2012-02-08at102726am.png)
+   ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
 1. A dialog will be opened, listing the component groups that are shown in the Sidekick together with the individual components that they contain.
 
    Select as required to add, or remove, the components to be available in the sidekick.
 
-   ![](assets/screen_shot_2012-02-08at103407am.png)
+   ![screen_shot_2012-02-08at103407am](assets/screen_shot_2012-02-08at103407am.png)
 
 1. The Sidekick minimizes in Design mode. By clicking on the arrow you can maximize the Sidekick and return to Edit Mode:
 
@@ -70,7 +70,7 @@ In Design mode, you can also configure attributes for the individual components.
 
    For example, if you click **Edit** on the Image component (**Design of image**) you can configure the component specific parameters:
 
-   ![](assets/chlimage_1-5.png)
+   ![chlimage_1-5](assets/chlimage_1-5.png)
 
 1. Click **OK** to save your changes.
 

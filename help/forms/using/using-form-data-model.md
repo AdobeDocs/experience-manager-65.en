@@ -37,17 +37,17 @@ You can create [adaptive forms](../../forms/using/creating-adaptive-form.md) and
 
 1. In Form Model tab on Add Properties screen, select **[!UICONTROL Form Data Model]** in the **[!UICONTROL Select From]** drop-down list.
 
-   ![](assets/create-af-1-1.png)
+   ![create-af-1-1](assets/create-af-1-1.png)
 
 1. Tap to expand **[!UICONTROL Select Form Data Model]**. All available form data models are listed.
 
    Select a from data model.
 
-   ![](assets/create-af-2-1.png)
+   ![create-af-2-1](assets/create-af-2-1.png)
 
 1. (**Adaptive form fragments only**) You can create an adaptive form fragment based on only one data model object in a form data model. Expand **[!UICONTROL Form Data Model Definitions]** drop-down. It lists all data model objects in the specified form data model. Select a data model object from the list.
 
-   ![](assets/create-af-3.png)
+   ![create-af-3](assets/create-af-3.png)
 
 Once the adaptive form or adaptive form fragment based on a form data model is created, form data model objects appear in the **[!UICONTROL Data Model Objects]** tab of the Content browser in adaptive form editor.
 
@@ -55,7 +55,7 @@ Once the adaptive form or adaptive form fragment based on a form data model is c
 >
 >For an adaptive form fragment, only the data model object selected at the time of authoring and its associated data model objects appear in the Data Model Objects tab.
 
-![](assets/data-model-objects-tab.png)
+![data-model-objects-tab](assets/data-model-objects-tab.png)
 
 You can drag-drop data model objects onto the adaptive form or fragment to add form fields. The added form fields retain the metadata properties and binding with data model object properties. The binding ensures that the field values are updated in the corresponding data sources on form submission and prefilled when the form is rendered.
 
@@ -65,7 +65,7 @@ You can create an interactive communication based on a form data model that you 
 
 You can choose a form data model when creating an interactive communication or a document fragment. The following image shows the General tab of the Create Interactive Communication dialog.
 
-![](assets/create-ic.png)
+![create-ic](assets/create-ic.png)
 
 General tab of Create Interactive Communication dialog
 
@@ -91,7 +91,7 @@ To preview an interactive communication with sample form data model data:
 
 The interactive communication opens with prefilled sample data.
 
-![](assets/web-preview.png)
+![web-preview](assets/web-preview.png)
 
 Similarly, to preview an adaptive form with sample data, open the adaptive adaptive form in author mode and tap **[!UICONTROL Preview]**.
 
@@ -101,11 +101,11 @@ AEM Forms provides out-of-the-box Form Data Model Prefill Service that you can e
 
 To enable the Form Data Model Prefill Service for an adaptive form, open the Adaptive Form Container properties and select **[!UICONTROL Form Data Model Prefill service]** from the **[!UICONTROL Prefill Service]** drop-down in the Basic accordion. Then, save the properties.
 
-![](assets/prefill-service.png)
+![prefill-service](assets/prefill-service.png)
 
 To configure form data model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
 
-![](assets/edit-ic-props.png)
+![edit-ic-props](assets/edit-ic-props.png)
 
 Edit Properties dialog for an interactive communication
 
@@ -117,16 +117,16 @@ To configure the Form Data Model submit action, open Adaptive Form Container pro
 
 On form submission, data for the configured data model object is written to the respective data source.
 
-![](assets/data-submission.png)
+![data-submission](assets/data-submission.png)
 
 You can also submit form attachments to a data source using binary data model object property. Do the following to submit attachments to a JDBC data source:
 
 1. Add a data model object that includes a binary property to the form data model.
 1. In the adaptive form, drag-drop the **[!UICONTROL File Attachment]** component from the Components browser onto the adaptive form.
-1. Tap to select the added component and tap ![](assets/settings_icon.png) to open the Properties browser for the component.
-1. In the Bind Reference field, tap ![](assets/foldersearch_18.png) and navigate to select the binary property you added in the form data model. Configure other properties, as appropriate.
+1. Tap to select the added component and tap ![settings_icon](assets/settings_icon.png) to open the Properties browser for the component.
+1. In the Bind Reference field, tap ![foldersearch_18](assets/foldersearch_18.png) and navigate to select the binary property you added in the form data model. Configure other properties, as appropriate.
 
-   Tap ![](assets/check-button.png) to save the properties. The attachment field is now bound to the binary property of the form data model.
+   Tap ![check-button](assets/check-button.png) to save the properties. The attachment field is now bound to the binary property of the form data model.
 
 1. In the Submission section of the Adaptive Form Container properties, enable **[!UICONTROL Submit Form Attachments]**. It submits the attachment in the binary property field to the data source on form submission.
 
@@ -136,6 +136,6 @@ In an adaptive form based on a form data model, you can [create rules](../../for
 
 For example, the following rule invokes a get service that takes Employee Id as input and the values returned are populated in the corresponding Dependent Id, Last Name, First Name, and Gender fields in the form.
 
-![](assets/invoke-service.png)
+![invoke-service](assets/invoke-service.png)
 
 In addition, you can use the `guidelib.dataIntegrationUtils.executeOperation` API to write a JavaScript in the code editor for the rule editor. For API details, see [API to invoke form data model service](/help/forms/using/invoke-form-data-model-services.md).

@@ -56,17 +56,17 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/blog-developer-basics.md#essentials-for-client-side) are included, this is how the `Blog`component will appear :
 
-![](assets/chlimage_1-229.png)
+![chlimage_1-229](assets/chlimage_1-229.png)
 
 And how the `Blog Sidebar` will appear :
 
-![](assets/chlimage_1-230.png)
+![chlimage_1-230](assets/chlimage_1-230.png)
 
 ### Configuring Blog {#configuring-blog}
 
 Select the placed `Blog` component to access and select the `Configure` icon which opens the edit dialog.
 
-![](assets/chlimage_1-231.png) ![Blog settings](assets/blog-configure.png)
+![chlimage_1-231](assets/chlimage_1-231.png) ![Blog settings](assets/blog-configure.png)
 
 #### Settings tab {#settings-tab}
 
@@ -197,7 +197,7 @@ When you double-click the `Blog Sidebar` component, an edit dialog opens up.
 
 Under the **Journal Sidebar Settings** tab, specify the date format for archives and what type of entries to display in the sidebar :
 
-![](assets/blog-component-sidebar.png)
+![blog-component-sidebar](assets/blog-component-sidebar.png)
 
 * **Date format**
   The format used to display for archives of blog entries. The format uses placeholders following the Java convention.
@@ -249,7 +249,7 @@ The blog articles will appear under the appropriate tab (Published, Drafts or Sc
 
 When the signed in user has moderator or administrator privileges, they are able to perform [moderation tasks](/help/communities/moderate-ugc.md) (as permitted by the configuration of the component) on all blog articles and comments posted to a blog.
 
-![](assets/chlimage_1-232.png)
+![chlimage_1-232](assets/chlimage_1-232.png)
 
 #### Members {#members}
 
@@ -264,13 +264,13 @@ Specifically, they may
 * delete their own blog article or comment
 * flag others' blog articles or comments
 
-![](assets/chlimage_1-233.png) ![](assets/chlimage_1-234.png)
+![chlimage_1-233](assets/chlimage_1-233.png) ![chlimage_1-234](assets/chlimage_1-234.png)
 
 #### Anonymous {#anonymous}
 
 Site visitors who are not signed in may only read posted blog articles and comments, translate them if supported, but may not add a blog article or comment nor flag others' articles or comments.
 
-![](assets/chlimage_1-235.png)
+![chlimage_1-235](assets/chlimage_1-235.png)
 
 ## Additional Information {#additional-information}
 

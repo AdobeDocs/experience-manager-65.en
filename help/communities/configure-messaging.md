@@ -29,7 +29,7 @@ The messaging feature provides the ability to:
 **F** - delete a message
 **G **- restore a deleted message
 
-![](assets/messaging-section.png) ![](assets/restore-message.png)
+![messaging-section](assets/messaging-section.png) ![restore-message](assets/restore-message.png)
 
 To enable and modify the messaging feature, see:
 
@@ -56,11 +56,11 @@ To modify the configuration of the list of messages for **Inbox**, **Sent Items*
 
 1. Once the configuration is complete, it is necessary to restore inheritance by selecting the `broken link` icon.
 
-![](assets/configure-message-list.png)
+![configure-message-list](assets/configure-message-list.png)
 
 #### Basic tab {#basic-tab}
 
-![](assets/basic-tab-messagelist.png)
+![basic-tab-messagelist](assets/basic-tab-messagelist.png)
 
 * **Service selector**
   (*Required*) Set this to the value of the property**`serviceSelector.name`** from the [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service).
@@ -82,7 +82,7 @@ To modify the configuration of the list of messages for **Inbox**, **Sent Items*
 
 #### Display tab {#display-tab}
 
-![](assets/display-tab-message-list.png)
+![display-tab-message-list](assets/display-tab-message-list.png)
 
 * **Mark Read Button**
   If checked, displays a `Read`button allowing a message to be marked as read.
@@ -117,11 +117,11 @@ To modify the configuration of the compose message page, open the site in [autho
 
 * Once the configuration is complete, it is necessary to restore inheritance by selecting the `broken link`icon.
 
-![](assets/config-compose-message.png)
+![config-compose-message](assets/config-compose-message.png)
 
 #### Basic tab {#basic-tab-1}
 
-![](assets/basic-tab-compose.png)
+![basic-tab-compose](assets/basic-tab-compose.png)
 
 * **Redirect URL**
   Enter the URL of the page shown after the message is sent. For example, `../messaging.html`.
@@ -140,7 +140,7 @@ To modify the configuration of the compose message page, open the site in [autho
 
 #### Display tab {#display-tab-1}
 
-![](assets/display-tab-compose.png)
+![display-tab-compose](assets/display-tab-compose.png)
 
 * **Show Subject Field**
   If checked, show the `Subject` field and enable adding a subject to the message. Default is not checked.

@@ -38,7 +38,7 @@ When you [create a new or edit an existing Interactive Communication](../../form
 
 <!-- Click to enlarge
 
-![](assets/sidebar-comps-3.png)-->
+![sidebar-comps-3](assets/sidebar-comps-3.png)-->
 
 The sidebar includes the following:
 
@@ -52,7 +52,7 @@ The Channel browser helps you switch between the print and web channels of the I
 * **Properties browser**
 
   Lets you edit the properties of a component. Properties change according to the component. For example, to see properties of the document container:
-  Select a component, then tap ![](assets/field-level.png) &gt; **Document Container**, and then tap ![](assets/cmppr.png).
+  Select a component, then tap ![field-level](assets/field-level.png) &gt; **Document Container**, and then tap ![cmppr](assets/cmppr.png).
 
 * **Assets** **browser**
   Segregates different types of content such as layout fragments, images, documents, pages, videos. Author can drag-and-drop assets into the Interactive Communication.
@@ -81,12 +81,12 @@ The Channel browser helps you switch between the print and web channels of the I
 
 Key points when working with interactive communication components are as follows:
 
-* Each component has associated properties that control its appearance and functionality. To configure the properties of a component, tap the component and tap ![](assets/cmppr.png) to open the component properties in the Properties browser.
-* A component is identified with its element name. When you tap ![](assets/cmppr.png), you can change the name of the component by changing the Element Name field value in the properties browser. The Element Name field accepts letters, numbers, hyphens (-), and underscores (_) only. Other special characters are not allowed, and element name should begin with a letter.
+* Each component has associated properties that control its appearance and functionality. To configure the properties of a component, tap the component and tap ![cmppr](assets/cmppr.png) to open the component properties in the Properties browser.
+* A component is identified with its element name. When you tap ![cmppr](assets/cmppr.png), you can change the name of the component by changing the Element Name field value in the properties browser. The Element Name field accepts letters, numbers, hyphens (-), and underscores (_) only. Other special characters are not allowed, and element name should begin with a letter.
 * You can modify the Title property of an Interactive Communication component inline in the editor without opening the Properties browser as long as the title is visible on the Interactive Communication. To do so:
 
     1. Tap to select a component that has a Title property and whose Hide title property is disabled.
-    1. Tap ![](assets/aem_6_3_edit.png) to make the title editable.
+    1. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) to make the title editable.
 
     1. Modify the title and tap the Return key or tap anywhere outside the component to save the changes. Tap the Esc key to discard the changes.
 
@@ -128,9 +128,9 @@ In addition, the **Replace** option on the toolbar lets you replace the existing
 
 The Page toolbar on the top provides options that let you preview the Interactive Communication and change its properties. You can preview the Interactive Communication when you author it, and make changes accordingly. In the page toolbar, you see:
 
-* Toggle Side Panel ![](assets/toggle-side-panel.png): Lets you show or hide Sidebar.
-* Page information ![](assets/pageinformationad.png): Lets you view page properties.
-* Emulator ![](assets/ruler.png): Lets you emulate the look of your Interactive Communication for different display sizes such as tablets and phones.
+* Toggle Side Panel ![toggle-side-panel](assets/toggle-side-panel.png): Lets you show or hide Sidebar.
+* Page information ![pageinformationad](assets/pageinformationad.png): Lets you view page properties.
+* Emulator ![ruler](assets/ruler.png): Lets you emulate the look of your Interactive Communication for different display sizes such as tablets and phones.
 * Edit: Lets you select other modes such as: Edit, Style, Developer, and Design.
 
     * Edit: Lets you edit the properties of the Interactive Communication and its components. For example, adding a component, dropping an image, and specifying mandatory fields.

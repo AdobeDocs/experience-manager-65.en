@@ -43,13 +43,13 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/essentials-forum.md#essentials-for-client-side) are included, this is how the `Forum`component will appear :
 
-![](assets/chlimage_1-104.png)
+![chlimage_1-104](assets/chlimage_1-104.png)
 
 ### Configuring a Forum {#configuring-a-forum}
 
 Select the placed `Forum` component to access and select the `Configure` icon which opens the edit dialog.
 
-![](assets/chlimage_1-105.png) ![](assets/forum-config.png)
+![chlimage_1-105](assets/chlimage_1-105.png) ![forum-config](assets/forum-config.png)
 
 #### Settings tab {#settings-tab}
 

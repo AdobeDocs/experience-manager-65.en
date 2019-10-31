@@ -39,7 +39,7 @@ You can use the Barcoded Forms service to accomplish the following tasks:
 
 For each barcode in an image, the Barcoded Forms service locates the barcode, decodes it, and extracts the data. The service returns the barcode data (using entity encoding where required) in a content element of an XML document. For example, the following scanned TIFF image of a form contains two barcodes:
 
-![](assets/example.png)
+![example](assets/example.png)
 
 The Barcoded Forms service returns the following XML document after decoding the barcodes:
 

@@ -37,15 +37,15 @@ Perform these steps to enable Asset Insights through DTM.
     
     * Update the fields as appropriate, and tap/click **Create Property*** *(see [documentation](https://helpx.adobe.com/experience-manager/using/dtm.html)).
 
-   ![](assets/chlimage_1-57.png)
+   ![chlimage_1-57](assets/chlimage_1-57.png)
 
 1. In the **Rules** tab, select **Page Load Rules** from the navigation pane and tap/click **Create New Rule***.*
 
-   ![](assets/chlimage_1-58.png)
+   ![chlimage_1-58](assets/chlimage_1-58.png)
 
 1. Expand **Javascript /Third Party Tags**. Then tap/click **Add New Script** in the **Sequential HTML** tab to open the Script dialog.
 
-   ![](assets/chlimage_1-59.png)
+   ![chlimage_1-59](assets/chlimage_1-59.png)
 
 1. Tap/click the AEM logo, and go to **Tools** &gt; **Assets**.
 1. Tap/click **Insights Page Tracker**, copy the tracker code, and then paste it in the Script dialog you opened in step 6. Save the changes.
@@ -64,17 +64,17 @@ Perform these steps to enable Asset Insights through DTM.
 
 1. Open https://dtm.adobe.com. Click **Overview** in the web property and click **Add Tool** or open an existing Adobe Analytics Tool. While creating the tool, you can set **Configuration Method** to **Automatic***.*
 
-   ![](assets/chlimage_1-60.png)
+   ![chlimage_1-60](assets/chlimage_1-60.png)
 
    Select Staging/Production report suites, as appropriate.
 
 1. Expand **Library Management**, and ensure that **Load Library at** is set to **Page Top**.
 
-   ![](assets/chlimage_1-61.png)
+   ![chlimage_1-61](assets/chlimage_1-61.png)
 
 1. Expand **Customize Page Code**, and click or tap **Open Editor***.*
 
-   ![](assets/chlimage_1-62.png)
+   ![chlimage_1-62](assets/chlimage_1-62.png)
 
 1. Paste the following code in the window:
 

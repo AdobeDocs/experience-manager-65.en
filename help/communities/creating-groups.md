@@ -31,13 +31,13 @@ The examples that follow use the community site created from the `Reference Site
 
 This is the page that loads on publish when the **Groups **menu item is selected:
 
-![](assets/chlimage_1-85.png)
+![chlimage_1-85](assets/chlimage_1-85.png)
 
 When you select the **New Group** icon, an edit dialog opens up.
 
 Under the **Settings **tab, you provide the basic features of the group:
 
-![](assets/chlimage_1-86.png)
+![chlimage_1-86](assets/chlimage_1-86.png)
 
 * **Group Name**
   The title of the group to display on the community site.
@@ -59,21 +59,21 @@ Under the **Settings **tab, you provide the basic features of the group:
 
 Under the **Template **tab is the ability to select from the list of community group templates that were specified when the groups function was included in the community site's structure or in a community site template.
 
-![](assets/chlimage_1-87.png)
+![chlimage_1-87](assets/chlimage_1-87.png)
 
 Under the **Image **tab is the ability to upload an image to display for the group on the community site's Groups page. The default style sheet will size the image to 170 x 90 pixels.
 
-![](assets/chlimage_1-88.png)
+![chlimage_1-88](assets/chlimage_1-88.png)
 
 By selecting the **Create Group** button, the pages for the group are created based on the chosen template, and a user group is created for membership and the Groups page will be updated to show the new sub-community.
 
 For example, the Groups page with a new sub-community titled "Focus Group", for which an image thumbnail was uploaded, will appear as follows (still signed in as a community group administrator):
 
-![](assets/chlimage_1-89.png)
+![chlimage_1-89](assets/chlimage_1-89.png)
 
 Selecting the `Focus Group` link will open the Focus Group page in the browser, which has an initial appearance based on the chosen template, and includes a submenu underneath the main community site's menu:
 
-![](assets/chlimage_1-90.png)
+![chlimage_1-90](assets/chlimage_1-90.png)
 
 ### Community Group Member List Component {#community-group-member-list-component}
 

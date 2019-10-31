@@ -28,7 +28,7 @@ To view your notifications:
 
 1. Open the notification inbox: in the **Websites** console, click the user button in the top right corner and select **Notification Inbox**.
 
-   ![](assets/screen_shot_2012-02-08at105226am.png)
+   ![screen_shot_2012-02-08at105226am](assets/screen_shot_2012-02-08at105226am.png)
 
    >[!NOTE]
    >
@@ -42,7 +42,7 @@ To view your notifications:
     * [Subscribing to Notifications](#subscribing-to-notifications)
     * [Processing your Notifications](#processing-your-notifications)
 
-   ![](assets/chlimage_1-4.jpeg)
+   ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
 ## Subscribing to Notifications {#subscribing-to-notifications}
 
@@ -50,7 +50,7 @@ To subscribe to notifications:
 
 1. Open the notification inbox: in the **Websites** console, click the user button in the top right corner and select **Notification Inbox**.
 
-   ![](assets/screen_shot_2012-02-08at105226am-1.png)
+   ![screen_shot_2012-02-08at105226am-1](assets/screen_shot_2012-02-08at105226am-1.png)
 
    >[!NOTE]
    >
@@ -61,7 +61,7 @@ To subscribe to notifications:
 
 1. Click **Configure...** in the top left corner to open the configuration dialog.
 
-   ![](assets/screen_shot_2012-02-08at111056am.png)
+   ![screen_shot_2012-02-08at111056am](assets/screen_shot_2012-02-08at111056am.png)
 
 1. Select the notification channel:
 
@@ -106,5 +106,5 @@ If you have chosen to receive notifications in your AEM inbox, your inbox will f
 
 * Delete it by clicking **Delete**.
 
-![](assets/chlimage_1-5.jpeg)
+![chlimage_1-5](assets/chlimage_1-5.jpeg)
 

@@ -18,7 +18,7 @@ You can search for your forms or form assets, using a text string or text string
 
 When you select one or more criteria and also specify a text string, the intersection of the text and criteria are returned as search results. The search results are as good as the form and asset metadata provided.
 
-Click ![](assets/aem6forms_search.png), to show or hide the search panel.
+Click ![aem6forms_search](assets/aem6forms_search.png), to show or hide the search panel.
 
 ## Basic search {#basic-search}
 

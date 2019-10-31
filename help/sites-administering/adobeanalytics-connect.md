@@ -37,7 +37,7 @@ The Adobe Analytics account needs to:
 >
 >Providing **Administrator** privileges (within Adobe Analytics) is not enough to allow a user to connect from AEM to Adobe Analytics. The account must also have **Web Service Access** privileges.
 
-![](assets/chlimage_1-67.png)
+![chlimage_1-67](assets/chlimage_1-67.png)
 
 Before proceeding, ensure your credentials allow you to log in to Adobe Analytics. Via either:
 
@@ -61,7 +61,7 @@ AEM uses the San Jose (https://api.omniture.com/admin/1.4/rest/) data center by 
 
 Use the [Web Console to configure the OSGi bundle](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) **Adobe AEM Analytics HTTP Client**. Add the **Data Center URL** for the data center that hosts a report suite for which your AEM pages collect data.
 
-![](assets/aa-07.png)
+![aa-07](assets/aa-07.png)
 
 1. Open the Web console in your web browser. ([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
 1. Enter your credentials to access the console.
@@ -197,7 +197,7 @@ For the Report Suite ID (RSID) that you are using, you can control which server 
 
 1. Then use the **Run Mode** drop down (next to the Report Suite ID) to select the server instances that you want to send information to the Report Suite.
 
-   ![](assets/aa-framework-01.png)
+   ![aa-framework-01](assets/aa-framework-01.png)
 
 1. To make the framework available on the publish instance of your site, on the **Page** tab of sidekick, click **Activate Framework.**
 
@@ -211,7 +211,7 @@ The framework system lets you change the server settings within each Adobe Analy
 
 Start by opening the panel. Press the downward arrow next to **Servers**:
 
-![](assets/server_001.png)
+![server_001](assets/server_001.png)
 
 * **Tracking Server**
 

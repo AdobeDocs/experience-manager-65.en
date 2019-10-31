@@ -66,7 +66,7 @@ In the Data tab, fill up the available layout fields and placeholders.
 
    Tap a data field value in the HTML letter preview to highlight the corresponding data field in the Data tab.
 
-   ![Enter data in the letter](assets/2_enterdata.png) ![](assets/2_1_enterdata.png)
+   ![Enter data in the letter](assets/2_enterdata.png) ![2_1_enterdata](assets/2_1_enterdata.png)
 
 ### Manage Content {#managecontent}
 
@@ -80,15 +80,15 @@ In the content tab, manage the content such as document fragments and content va
 
    For example, the line "We have reviewed... " is selected in the below graphic and the relevant content module is selected in the Content tab.
 
-   ![](assets/4_highlightmoduleincontent.png)
+   ![4_highlightmoduleincontent](assets/4_highlightmoduleincontent.png)
 
-   In the Content or Data tab, by tapping Highlight Selected Modules ( ![](assets/highlightselectedmodulesincontentccr.png)) on upper left of the HTML letter preview, you can disable or enable functionality to go to the content/data module when the relevant text, paragraph, or data field is selected in the letter preview.
+   In the Content or Data tab, by tapping Highlight Selected Modules ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) on upper left of the HTML letter preview, you can disable or enable functionality to go to the content/data module when the relevant text, paragraph, or data field is selected in the letter preview.
 
    For more information on the actions available for various modules in the Create Correspondence user interface, see [Actions and info available in the Create Correspondence user interface](../../forms/using/create-letter.md#main-pars-header-9).
 
 1. To locate content modules, use the Find field. Enter full or partial name or title of the content module to search for it in the correspondence.
-1. Tap the Display icon ( ![](assets/display.png)) in front of a list, text, condition, or target area to show or hide it in the letter.
-1. To edit an inline or editable text module, tap the relevant **Edit** icon ( ![](assets/edittextmodule.png)) or double-click the relevant text module in the letter preview.
+1. Tap the Display icon ( ![display](assets/display.png)) in front of a list, text, condition, or target area to show or hide it in the letter.
+1. To edit an inline or editable text module, tap the relevant **Edit** icon ( ![edittextmodule](assets/edittextmodule.png)) or double-click the relevant text module in the letter preview.
 
    The system displays a text editor to edit and format the text.
 
@@ -96,17 +96,17 @@ In the content tab, manage the content such as document fragments and content va
 
    You can also use the various keyboard shortcuts in the text editor to manage, edit, and format text. For more information on [Text Editor](/help/forms/using/keyboard-shortcuts.md#correspondence-management) keyboard shortcuts in Correspondence Management Keyboard Shortcuts.
 
-   ![](assets/5_edittextmodule.png)
+   ![5_edittextmodule](assets/5_edittextmodule.png)
 
    You may want to reuse one of more paragraphs of text that exist in another application of document. You can directly copy and paste text, such as from MS Word, HTML pages, or any other application.
 
    You can copy and paste one or more paragraphs of text in an editable text module. For example, you may have an MS Word document with a bulleted list of acceptable proofs of residence such a following:
 
-   ![](assets/pastetextmsword.png)
+   ![pastetextmsword](assets/pastetextmsword.png)
 
    You can directly copy and paste the text from the MS Word document to an editable text module. The formatting such as bulleted list, font, and text color is retained in the text module.
 
-   ![](assets/pastetexteditablemodule.png)
+   ![pastetexteditablemodule](assets/pastetexteditablemodule.png)
 
    >[!NOTE]
    >
@@ -114,7 +114,7 @@ In the content tab, manage the content such as document fragments and content va
 
    You can indent the text and numbers in your letter using the Tab key. For example, you can use the Tab key to align multiple columns of text in a list into a tabular format.
 
-   ![](assets/tabspaces.png)
+   ![tabspaces](assets/tabspaces.png)
 
    Example: Using the Tab key to align multiple columns of text into a tabular format
 
@@ -128,26 +128,26 @@ In the content tab, manage the content such as document fragments and content va
     * Mathematical symbols such as ∑, √, ∂, and ^
     * Punctuation symbols such as ‟ and ”
 
-   ![](assets/specialcharacters.png)
+   ![specialcharacters](assets/specialcharacters.png)
 
    Correspondence Management has built in support for 210 special characters. The admin can [add support for more/custom special characters by customization](../../forms/using/custom-special-characters.md).
 
 1. To highlight\emphasize parts of text in an editable inline module, select the text and tap Highlight Color.
 
-   ![](assets/letterbackgroundcolor.png)
+   ![letterbackgroundcolor](assets/letterbackgroundcolor.png)
 
    You can either directly tap a basic color **[A]** present in the Basic Colors palette or tap **Select** after using the slider **[B]** to choose the appropriate shade of the color.
 
    Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation **[C]** to create the precise color and then tap Select **[D]** to apply the color to highlight the text.
 
-   ![](assets/textbackgroundcolor.png)
+   ![textbackgroundcolor](assets/textbackgroundcolor.png)
 
-1. Make the appropriate content and format changes and tap **Save**. Tap ( ![](assets/editnextmoduleccr.png)) to move between editable text modules, or tap **Save and Next** to save the changes and move to the next editable text module.
+1. Make the appropriate content and format changes and tap **Save**. Tap ( ![editnextmoduleccr](assets/editnextmoduleccr.png)) to move between editable text modules, or tap **Save and Next** to save the changes and move to the next editable text module.
 1. The system also displays the unfilled variables for each of the branches. When there are no unfilled variables, unfilled variables are shown as 0. If there is unfilled variable, you can tap a branch to expand it and locate the unfilled variable. Use the content toolbar to Delete content, increase/decrease indent of the content, and insert page breaks before/after the content.
 
    You can insert page breaks above and below data modules even when they are part of lists and conditions.
 
-1. Tap Open/Close Content Variable ( ![](assets/opencontentvariables.png)) to open the content variables and fill them appropriately.
+1. Tap Open/Close Content Variable ( ![opencontentvariables](assets/opencontentvariables.png)) to open the content variables and fill them appropriately.
 1. Once you fill in the unfilled variable correctly, the count of unfilled variable is set to 0.
 
    In the Create Correspondence user interface, the unfilled variable count is displayed at each level of the hierarchy of any module that contains at least one variable. If a module contains unfilled variables, the count is displayed at the variable, module, target area, and letter template level.
@@ -206,7 +206,7 @@ In the content tab, manage the content such as document fragments and content va
 
 1. Select **Attachments**. Correspondence Management displays the available attachments, as set up while creating the letter template.
 1. You can choose not to submit an attachment along with the letter by tapping the view icon and you can tap the cross in the attachment to delete it from the letter. For the attachments specified, while creating a letter template, as Mandatory, the View and Delete icons are disabled.
-1. Tap the Library Access ( ![](assets/libraryaccess.png)) icon to access Content Library to insert DAM assets as attachments.
+1. Tap the Library Access ( ![libraryaccess](assets/libraryaccess.png)) icon to access Content Library to insert DAM assets as attachments.
 
    >[!NOTE]
    >
@@ -230,11 +230,11 @@ You can make layout and content related changes to ensure the letter looks the w
 
    For example, the line "To allow us to access..." is selected in the below graphic and the corresponding content module is selected in the Content tab.
 
-   By tapping Highlight Selected Modules in Content ( ![](assets/highlightselectedmodulesincontentccr.png)), you can disable or enable functionality to highlight the content module in Content tab when the relevant text, paragraph, or data field is tapped in the letter preview.
+   By tapping Highlight Selected Modules in Content ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)), you can disable or enable functionality to highlight the content module in Content tab when the relevant text, paragraph, or data field is tapped in the letter preview.
 
    For more information on the actions available for various modules in the Create Correspondence user interface, see [Actions and info available in the Create Correspondence user interface](../../forms/using/create-letter.md#main-pars-header-9).
 
-1. To add a page break to the letter, tap where you want to insert a page break and select Page Break Before or Page Break After ( ![](assets/pagebreakbeforeafter.png)).
+1. To add a page break to the letter, tap where you want to insert a page break and select Page Break Before or Page Break After ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
    An explicit page break placeholder gets inserted in the letter. To view how an explicit page break affects the letter, see the flattened PDF preview.
 
@@ -246,11 +246,11 @@ You can make layout and content related changes to ensure the letter looks the w
 
 1. To save the letter as a draft, which you can continue working on later, tap Save As Draft. To use this option, your letter needs to be [published](../../forms/using/publishing-unpublishing-forms.md#publishanasset). For more information, see Draft Instance under [Saving drafts and submitting letter instances](#savingdrafts).
 
-   ![](assets/saveasdraft.png)
+   ![saveasdraft](assets/saveasdraft.png)
 
    The Draft Letter Name dialog appears with the letter instance id. You can, optionally edit this ID. Make a note of the letter Id and then tap **Done**. You can later use this ID to [reload the draft letter](../../forms/using/submit-letter-topostprocess.md#main-pars-header-1).
 
-1. To preview the letter as a flattened PDF with the exact layout and page breaks as it will be submitted, tap ( ![](assets/preview.png)) Preview.
+1. To preview the letter as a flattened PDF with the exact layout and page breaks as it will be submitted, tap ( ![preview](assets/preview.png)) Preview.
 
    The letter appears as a flattened PDF. The flattened PDF is the exact representation of the letter as it will be submitted with the correct fonts, breaks, and layout of the letter.
 

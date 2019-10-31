@@ -73,11 +73,11 @@ Use the WCM Websites console to create a page for showing search results. The re
 
 The components that enable users to review search results are Results, and Pagination. The **Results** component has no configurable properties in Edit or Design mode. The Results component simply lists search results, which provide links to other pages, and displays the number of results for the search keyword.
 
-![](assets/srchresultscomp.png)
+![srchresultscomp](assets/srchresultscomp.png)
 
 The **Pagination** component enables users to navigate multiple pages of search results. User can see the number of pages, move to the next or previous page, select a page to open, or consolidate all results on one page.
 
-![](assets/srchpagination.png)
+![srchpagination](assets/srchpagination.png)
 
 You can configure the following component properties in Edit mode to control runtime behavior:
 
@@ -98,25 +98,25 @@ The **Checkbox List Facet** component displays a list of facets with an accompan
 
 A check box appears for each facet that is associated with a search result. When a user selects a check box, the page reloads with an updated result set. All checkboxes remain on the page so that customers can add or remove facets to the filter at any time:
 
-![](assets/sandpcheckboxcomp.png)
+![sandpcheckboxcomp](assets/sandpcheckboxcomp.png)
 
 The **Dropdown Facet** component enables customers to select a facet item from a drop-down list. This component is useful when you want customers to focus on a single facet item at once. For example, the Department facet is appropriate for enabling customers to narrow product searches by gender. John searches for *jeans* and then filters on the Men's department.
 
 The drop-down list is populated with the facets that are associated with all search results. Upon selecting an item in the drop-down list, the page reloads with an updated result set. The items in the drop-down list do not change so that customers can switch from facet to facet at any time.
 
-![](assets/sandpdropdowndepartment.png)
+![sandpdropdowndepartment](assets/sandpdropdowndepartment.png)
 
 The **Link List Facet** component enables customers to progressively narrow their focus on items that are categorized under multiple facet members or facets.
 
 Facet members appear as a list of links. The text of each link is the name of a facet member that is associated with the current search results. When a customer clicks a facet link, the page reloads and a subset of the search results appears. The list of links is updated accordingly enabling an even narrower focus.
 
-![](assets/sandplinklistcomp.png)
+![sandplinklistcomp](assets/sandplinklistcomp.png)
 
 The links in the list also changes when a filter is applied from a different type of Search&Promote component. The use of multiple types filter components can provide effective filter combinations.
 
 The **Breadcrumbs** component enables customers to see the filters that are currently applied to search results, in the order in which they were applied. Customers can click the items in the breadcrumb to revert to that filter combination.
 
-![](assets/sandpbreadcrumbcomp.png)
+![sandpbreadcrumbcomp](assets/sandpbreadcrumbcomp.png)
 
 You can configure the following properties for Breadcrumbs in Edit mode to customize the component's look:
 
@@ -132,7 +132,7 @@ Configure the following properties in Edit mode to control runtime behavior:
 * Result Page Path: The path to the page that displays search results.
 * Enable Auto-Complete: Select to cause suggested search keywords to appear when the customer begins typing in the search box.
 
-![](assets/sandpsearchcomp.png)
+![sandpsearchcomp](assets/sandpsearchcomp.png)
 
 ### Adding banners {#adding-banners}
 
@@ -144,5 +144,5 @@ The Banners component provides one configurable property named Banner Area. In E
 
 This diagram shows the components that are added to a page to create the fully-functional Search&Promote results page below.
 
-![](assets/1328213789109.png) ![](assets/sandppageexample.png)
+![1328213789109](assets/1328213789109.png) ![sandppageexample](assets/sandppageexample.png)
 

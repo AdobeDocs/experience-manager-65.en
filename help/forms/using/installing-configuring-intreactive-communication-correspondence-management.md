@@ -26,7 +26,7 @@ AEM Forms is a powerful enterprise-class platform. Interactive communication is 
 
 AEM Forms add-on package is an application deployed onto AEM. You require only a minimum of one AEM Author and Processing instance to run the Interactive Communications capability. The following topology is indicative topology to run AEM Forms Interactive Communications, Correspondence Management, AEM Forms data capture, and Forms-Centric workflow on OSGi capabilities. For detailed information about the topology, see [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![](assets/recommended-topology.png)
+![recommended-topology](assets/recommended-topology.png)
 
 AEM Forms Interactive Communications run admin, authoring, and agent user interfaces on the Author instances of AEM Forms. The Publish instances host final version of interactive communications which are ready for consumption by end-users.
 

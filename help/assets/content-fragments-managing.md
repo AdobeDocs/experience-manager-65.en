@@ -49,7 +49,7 @@ The method of creating a content fragment is (basically) the same for both simpl
 
    After selection, use **Next** to proceed.
 
-   ![](assets/cfm-6420-15.png)
+   ![cfm-6420-15](assets/cfm-6420-15.png)
 
 1. In the **Properties** step specify:
 
@@ -77,7 +77,7 @@ In the **Assets** console a range of actions are available for your content frag
 * From the toolbar; after selection of your fragment all appropriate actions are available.
 * As [quick actions](/help/sites-authoring/basic-handling.md#quick-actions); a subset of actions available for the individual fragment cards.
 
-![](assets/cfm-6420-17.png)
+![cfm-6420-17](assets/cfm-6420-17.png)
 
 Select the fragment to reveal the toolbar with applicable actions:
 
@@ -128,7 +128,7 @@ To open your fragment for editing:
 
    The fragment editor will open:
 
-   ![](assets/cfm-6420-18.png)
+   ![cfm-6420-18](assets/cfm-6420-18.png)
 
    >[!NOTE]
    >
@@ -145,7 +145,7 @@ To open your fragment for editing:
     * [Associated Content](#associating-content-with-your-fragment)
     * [Metadata](#viewingandeditingthemetadataofyourfragment)
 
-   ![](assets/cfm-10.png)
+   ![cfm-10](assets/cfm-10.png)
 
 1. After making changes, use **Save** or **Cancel** as required.
 
@@ -256,7 +256,7 @@ In addition to the standard options, [Timeline](/help/assets/managing-assets-tou
 
 For example:
 
-![](assets/cfm-6420-19-2019.png)
+![cfm-6420-19-2019](assets/cfm-6420-19-2019.png)
 
 ## Comparing Fragment Versions {#comparing-fragment-versions}
 
@@ -284,7 +284,7 @@ They will be shown side-by-side, where:
 >
 >You cannot edit the fragment content when comparing fragments.
 
-![](assets/cfm-6420-20.png)
+![cfm-6420-20](assets/cfm-6420-20.png)
 
 ## Reverting to a Version  {#reverting-to-a-version}
 

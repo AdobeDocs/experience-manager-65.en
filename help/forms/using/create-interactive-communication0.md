@@ -13,7 +13,7 @@ docset: aem65
 
 # Tutorial: Create Interactive Communication {#tutorial-create-interactive-communication}
 
- ![](assets/09-style-your-adaptive-form-small.png)
+ ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
 
 This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
@@ -152,12 +152,12 @@ The following is the list of resources that have already been created in this tu
    ![Table for Interactive Communication](assets/table_ic_web_new.png)
 
 1. Select **Mobilenum** table column heading and select **More options** &gt; **Delete column**. Similarly, delete the **Calltype** column.
-1. Select the **Calldate** table column heading and tap ![](assets/edit.png) (Edit) to rename the text to **Call Date**. Similarly, rename other column headings in the table.
+1. Select the **Calldate** table column heading and tap ![edit](assets/edit.png) (Edit) to rename the text to **Call Date**. Similarly, rename other column headings in the table.
 1. Based on the use case, insert a **Pay Now** button in the Interactive Communication that provides the user an option to make the payment by clicking the button. Execute the following steps to insert the button:
 
     1. Tap **Pay Now** target area, and tap **+** to add a **Text** component.
 
-    1. Tap the text component and tap ![](assets/edit.png) (Edit).
+    1. Tap the text component and tap ![edit](assets/edit.png) (Edit).
     1. Rename the text to **Pay Now**.
     1. Select the text and tap the Hyperlink icon.
     1. Specify the payment URL in the **Path** field.
@@ -171,7 +171,7 @@ The following is the list of resources that have already been created in this tu
 
 1. Style the hyperlink text to display it as a button in the Interactive Communication using the following steps:
 
-    1. Tap the text component and select ![](assets/edit.png) (Edit).
+    1. Tap the text component and select ![edit](assets/edit.png) (Edit).
     1. In the **Border** section, specify **1.5px** as **Border Width**, select **Solid** as **Border Style**, and specify **46px** as **Border Radius**.
 
     1. Select Red as the background color for the button from the **Background** section.
@@ -219,11 +219,11 @@ Execute the following steps to derive the Web channel content using Print channe
 
    The print channel content is inserted below the Web channel template content. To modify the Web channel content that has been auto-generated from the Print channel, you can cancel the inheritance for any target area.
 
-   Hover over the relevant target area in the web channel and select ![](assets/cancelinheritance.png) (Cancel Inheritance) and then in the **Cancel Inheritance** dialog, tap **Yes**.
+   Hover over the relevant target area in the web channel and select ![cancelinheritance](assets/cancelinheritance.png) (Cancel Inheritance) and then in the **Cancel Inheritance** dialog, tap **Yes**.
 
    ![Cancel inheritance](assets/cancel_inheritance_web_channel_new.png)
 
-   If you have canceled inheritance of a component, you can re-enable it. To re-enable inheritance, hover over the boundary of the relevant target area, which includes the component, and tap ![](assets/reenableinheritance.png).
+   If you have canceled inheritance of a component, you can re-enable it. To re-enable inheritance, hover over the boundary of the relevant target area, which includes the component, and tap ![reenableinheritance](assets/reenableinheritance.png).
 
 1. Select the **Content** tab in the left pane.
 1. Drag-and-drop the auto-generated Web channel content to the existing panels in the Web template using the content tree. The following is the list of components that need to be rearranged:

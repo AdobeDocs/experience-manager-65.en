@@ -33,7 +33,7 @@ To view the default components to your Screens project, follow the steps below:
 1. Click the **+** icon from the side bar to open the components.
 1. All the components that are included by default in an AEM Screens project displays, as shown in the figure below.
 
-![](assets/screen_shot_2017-12-18at21350pm.png)
+![screen_shot_2017-12-18at21350pm](assets/screen_shot_2017-12-18at21350pm.png)
 
 ### Adding a New Component {#adding-a-new-component}
 
@@ -48,7 +48,7 @@ The following example shows the addition of a Livefyre component to a an AEM Scr
 1. Select the entire design editor on the right and click on the settings symbol to open the **ParSys Design** dialog box.
 1. You can select the components that you want to import to your AEM Screens project. The following example showstheaddition of **Livefyre** component to an AEM Screens project.
 
-![](assets/adding_components.gif)
+![adding_components](assets/adding_components.gif)
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Application component has the following properties:
 
 The following example shows how to embedd an application component along with the preview of its properties:
 
-![](assets/adding_componentsapplication.gif)
+![adding_componentsapplication](assets/adding_componentsapplication.gif)
 
 >[!NOTE]
 >
@@ -193,7 +193,7 @@ An Experience Fragment allows you to add an experience fragment (group of one or
 
 To learn more about how to create an experience fragment and leverage it into an AEM Screens project, refer to ** [Using Experience Fragments](/help/screens/experience-fragments-in-screens.md)**.
 
-![](assets/exp.gif)
+![exp](assets/exp.gif)
 
 | **Property** |**Description** |
 |---|---|
@@ -233,7 +233,7 @@ The Transition component allows you to add a transition to your Screens project.
 
 The following image shows the transition component (added via drag and drop) to the editor.
 
-![](assets/screen_shot_2019-07-25at104237am.png)
+![screen_shot_2019-07-25at104237am](assets/screen_shot_2019-07-25at104237am.png)
 
 Select the transition icon and click the **Configure** (wrench icon) to open the **Transition** dialog box. This dialog box includes three tabs:
 
@@ -245,7 +245,7 @@ Select the transition icon and click the **Configure** (wrench icon) to open the
 >
 >By default, the sequence is set to 600 ms. You can update the transition sequence to other value using the **Sequence** tab.
 
-![](assets/transition.gif)
+![transition](assets/transition.gif)
 
 The transition component has the following properties:
 

@@ -45,11 +45,11 @@ You can insert inline condition in a letter by inserting the inline condition in
 
 1. In the relevant text module, select the part of text that you want to conditionalize and tap **Condition**.
 
-   ![](assets/1_selecttext.png)
+   ![1_selecttext](assets/1_selecttext.png)
 
    The Condition dialog appears with an empty condition.
 
-   ![](assets/2_conditiondialog.png)
+   ![2_conditiondialog](assets/2_conditiondialog.png)
 
    >[!NOTE]
    >
@@ -68,7 +68,7 @@ You can insert inline condition in a letter by inserting the inline condition in
 
    Once the condition is inserted, you can hover over the handle on the left of the condition to view the condition. You can tap the handle to view the pop-up menu of the condition, which allows you to edit or remove the condition.
 
-   ![](assets/3_hoverhandle.png) ![](assets/4_editconditionremoveconditionpopup.png)
+   ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
 1. Insert similar condition by selecting the text `Ma'am`.
 
@@ -83,7 +83,7 @@ You can insert inline condition in a letter by inserting the inline condition in
 
    For more information, see [Data Dictionary](../../forms/using/data-dictionary.md).
 
-   ![](assets/5_letteroutput.png)
+   ![5_letteroutput](assets/5_letteroutput.png)
 
 ## Repeat {#repeat}
 
@@ -97,7 +97,7 @@ The following example gives you the steps for using repeat to structure and rend
 
 1. In a form data model-based text document fragment, insert the relevant form data model objects (and embedded text required for the labels, as in this example):
 
-   ![](assets/1_elementstext.png)
+   ![1_elementstext](assets/1_elementstext.png)
 
    >[!NOTE]
    >
@@ -105,13 +105,13 @@ The following example gives you the steps for using repeat to structure and rend
 
 1. Select the content on which to apply repeat.
 
-   ![](assets/2_selection.png)
+   ![2_selection](assets/2_selection.png)
 
 1. Tap Repeat.
 
    The Repeat dialog appears.
 
-   ![](assets/3_repeatdialog.png)
+   ![3_repeatdialog](assets/3_repeatdialog.png)
 
 1. Select Line Break as separator and, if required, tap Add Condition to create a rule. You can also use text as separator and specify the text charaters to be used as separator.
 
@@ -123,17 +123,17 @@ The following example gives you the steps for using repeat to structure and rend
    >
    >This example assumes that the Agent will be creating the statement at the end of March 2018. Otherwise, you can create another rule to include transactions before 2018-04-01 to exclude transactions after March 2018.
 
-   ![](assets/4_createrule.png)
+   ![4_createrule](assets/4_createrule.png)
 
 1. Save the condition/rule and then save the repeat. Conditional repeat gets applied to the selected content.
 
-   ![](assets/5_onmouseoverconditionrule.png)
+   ![5_onmouseoverconditionrule](assets/5_onmouseoverconditionrule.png)
 
    On mouse over, the text document fragment displays the Condition and the separator used in the repeat applied to the content.
 
 1. Save the text document fragment and preview the relevant Interactive Communication. Depending on the data in the form data model, the repeat applied on the elements renders the transaction details similar to the following in the preview:
 
-   ![](assets/screen_shot_2018-03-09at155516copy.png)
+   ![screen_shot_2018-03-09at155516copy](assets/screen_shot_2018-03-09at155516copy.png)
 
 ### Example: Using repeat in a letter to format, structure, and display a list of credit card transactions {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
@@ -152,7 +152,7 @@ The following example gives you the steps for using repeat to structure and rend
 
 1. Embed the text within the DD elements to make the statement more readable, such as following:
 
-   ![](assets/1_repeat.png)
+   ![1_repeat](assets/1_repeat.png)
 
    ```
 
@@ -162,17 +162,17 @@ The following example gives you the steps for using repeat to structure and rend
 
    The job of rendering a well formatted statement, however, is not done yet. If you render a letter based on the work done so far, it appears as the following:
 
-   ![](assets/1_1renderwithoutrepeat.png)
+   ![1_1renderwithoutrepeat](assets/1_1renderwithoutrepeat.png)
 
    To repeat the static text along with the DD elements, you need to apply repeat as explained in the further steps.
 
 1. Select the static text as well as the DD elements that you want to repeat, as shown below:
 
-   ![](assets/2_repeat_selecttext.png)
+   ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 
 1. Tap **Repeat**. The Repeat dialog appears with an empty inline condition.
 
-   ![](assets/3_repeat_dialog.png)
+   ![3_repeat_dialog](assets/3_repeat_dialog.png)
 
 1. If required, insert a condition to selectively render the transactions, such as to render transaction amounts bigger than 50 cents:
 
@@ -189,11 +189,11 @@ The following example gives you the steps for using repeat to structure and rend
 
    Once the condition is inserted, the text with repeat is highlighted in red and a handle appears on its left. You can hover over the handle on the left of the repeat to view the repeat construct.
 
-   ![](assets/4_repeat_hoverdetail.png)
+   ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
 
    You can tap the handle to view the pop-up menu of the repeat, which allows you to edit or remove the repeat construct.
 
-   ![](assets/5_repeateditremove.png)
+   ![5_repeateditremove](assets/5_repeateditremove.png)
 
 1. Preview the relevant letter and notice that the text is rendered according to repeat. You can input the value of DD elements using:
 
@@ -202,7 +202,7 @@ The following example gives you the steps for using repeat to structure and rend
 
    For more information, see [Data Dictionary](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
 
-   ![](assets/6_repeatoutputpreview.png)
+   ![6_repeatoutputpreview](assets/6_repeatoutputpreview.png)
 
    The static text repeats with the transaction details. Repeating static text is facilitated by the repeat applied to the text in this procedure. The condition, ${DD_creditcard_TransactionAmount &gt; 0.5}, ensures that the transactions below USD .5 are not rendered in the letter.
 
@@ -220,7 +220,7 @@ For example, following is repeat (formatted in red) within a condition (formatte
 
 While the repeat renders the credit card transactions, the condition ${DD_creditcard_nooftransactions &gt; 0} ensures that the repeat construct is rendered only if there's at least one transaction.
 
-![](assets/repeatwitincondition.png)
+![repeatwitincondition](assets/repeatwitincondition.png)
 
 Similarly, according to your requirement, you can create:
 
@@ -232,6 +232,6 @@ Similarly, according to your requirement, you can create:
 
 You may need to insert empty inline conditions and embed text and DD elements later. Correspondence Management allows you to do that.
 
-![](assets/emptycondition.png)
+![emptycondition](assets/emptycondition.png)
 
 It is, however, recommended that if possible, you insert the text and DD elements first in the text module with the intended formatting, such as bullets, and apply an inline condition afterwards.

@@ -236,7 +236,7 @@ After creating your brand and campaign you can create and set up your teaser exp
 1. Navigate to the content page where you want to place the teaser paragraph that will lead to your campaign page.
 1. Add a **Teaser** component (available in the **Personalization** section of sidekick) in the required position. When first created it will show that the campaign path is not yet configured:
 
-   ![](assets/chlimage_1.png)
+   ![chlimage_1](assets/chlimage_1.png)
 
 1. Edit the teaser component to add the:
 
@@ -246,15 +246,15 @@ After creating your brand and campaign you can create and set up your teaser exp
     * **[Strategy](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
       Method used for selection when multiple segments resolve successfully.
 
-   ![](assets/chlimage_1-1.png)
+   ![chlimage_1-1](assets/chlimage_1-1.png)
 
 1. Click **OK** to save. Depending on the segments you have set on the teaser and the profile of the user you are currently logged in as, the appropriate content will be displayed:
 
-   ![](assets/chlimage_1-2.png)
+   ![chlimage_1-2](assets/chlimage_1-2.png)
 
 1. Mouse over the teaser paragraph to reveal the question mark icon (bottom right corner of the component). Click this to view the segments applied and whether they currently resolve.
 
-   ![](assets/chlimage_1-3.png)
+   ![chlimage_1-3](assets/chlimage_1-3.png)
 
 ### Teaser Overview {#teaser-overview}
 
@@ -266,5 +266,5 @@ As well as the campaign view in the MCM, the campaign page also gives informatio
 
    This shows an overview of the teaser definitions and viewing statistics:
 
-   ![](assets/chlimage_1-4.png)
+   ![chlimage_1-4](assets/chlimage_1-4.png)
 

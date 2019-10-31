@@ -65,7 +65,7 @@ Select the desired style to apply to the template. When selected, the theme will
 
 (optional) Upload a banner image to display across the site pages. The banner is pinned to the left edge of the browser, between the community site header and menu (navigation links). The banner height is cropped to 120 pixels. There is no resizing of the banner to fit the width of the browser and 120 pixel height.
 
-![](assets/chlimage_1-2.png) ![](assets/chlimage_1.jpeg)
+![chlimage_1-2](assets/chlimage_1-2.png) ![chlimage_1](assets/chlimage_1.jpeg)
 
 Select **Next**.
 
@@ -87,7 +87,7 @@ Ensure most checkboxes are deselected for [User Management](/help/communities/si
 * do NOT allow login with Facebook
 * do NOT allow login with Twitter
 
-![](assets/chlimage_1-3.png)
+![chlimage_1-3](assets/chlimage_1-3.png)
 
 #### TAGGING {#tagging}
 
@@ -100,7 +100,7 @@ Finding namespaces is easy using type-ahead search. For example,
 * type 'tut'
 * select `Tutorial`
 
-![](assets/chlimage_1-4.png)
+![chlimage_1-4](assets/chlimage_1-4.png)
 
 ### ROLES {#roles}
 
@@ -123,7 +123,7 @@ For example,
 
 Accept the default global settings for [moderating](/help/communities/sites-console.md#moderation) user generated content (UGC).
 
-![](assets/chlimage_1-5.png)
+![chlimage_1-5](assets/chlimage_1-5.png)
 
 #### ANALYTICS {#analytics}
 
@@ -131,7 +131,7 @@ From the drop-down, select the Analytics cloud service framework configured for 
 
 The selection seen in the screenshot, `Communities`, is the framework example from the [configuration documentation.](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
-![](assets/chlimage_1-6.png)
+![chlimage_1-6](assets/chlimage_1-6.png)
 
 #### TRANSLATION {#translation}
 
@@ -140,7 +140,7 @@ The [Translation settings](/help/communities/sites-console.md#translation) speci
 * check **Allow Machine Translation**
 * use the default settings
 
-![](assets/chlimage_1-7.png)
+![chlimage_1-7](assets/chlimage_1-7.png)
 
 #### ENABLEMENT {#enablement}
 
@@ -155,7 +155,7 @@ For an enablement community, it is necessary to identify one or more Community E
 * **Marketing Cloud Org Id**
   (optional) The ID for an Adobe Analytics account which is necessary when including [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) in the enablement reporting.
 
-![](assets/chlimage_1-8.png)
+![chlimage_1-8](assets/chlimage_1-8.png)
 
 Select **Next**.
 
@@ -163,11 +163,11 @@ Select **Next**.
 
 Select **Create.**
 
-![](assets/chlimage_1-9.png)
+![chlimage_1-9](assets/chlimage_1-9.png)
 
 When the process completes, the folder for the new site is displayed in the Communities - Sites console.
 
-![](assets/enablementsitecreated.png)
+![enablementsitecreated](assets/enablementsitecreated.png)
 
 ### Publish the New Community Site {#publish-the-new-community-site}
 
@@ -175,11 +175,11 @@ The created site should be managed from the Communities - Sites console, the sam
 
 After selecting the community site's folder, hover over the site icon such that four action icons appear :
 
-![](assets/siteactionicons.png)
+![siteactionicons](assets/siteactionicons.png)
 
 On selecting the ellipses icon (More Actions icon), Export Site and Delete Site options show up.
 
-![](assets/siteactionsnew.png)
+![siteactionsnew](assets/siteactionsnew.png)
 
 From left to right they are :
 
@@ -199,17 +199,17 @@ From left to right they are :
 * **Delete Site**
   To delete the community site, select the Delete Site icon that appears on hovering the mouse over the site in Communities Site Console. This action removes all the items associated with the site, such as UGC, user groups, assets and database records.
 
-![](assets/enablesiteactions.png)
+![enablesiteactions](assets/enablesiteactions.png)
 
 #### Select Publish {#select-publish}
 
 Select the world icon to publish the community site.
 
-![](assets/chlimage_1-10.png)
+![chlimage_1-10](assets/chlimage_1-10.png)
 
 There will be an indication the site was published.
 
-![](assets/chlimage_1-11.png)
+![chlimage_1-11](assets/chlimage_1-11.png)
 
 ## Community Users & User Groups {#community-users-user-groups}
 
@@ -219,7 +219,7 @@ Along with the new community site, new user groups are created which have the ap
 
 For this new community site, given the site name "enable" in Step 1, the new user groups that exist in the publish environment may be seen from the [Communities Members & Groups console](/help/communities/members.md#groups-console) :
 
-![](assets/chlimage_1-12.png)
+![chlimage_1-12](assets/chlimage_1-12.png)
 
 ### Assign Members to Community Enable Members Group {#assign-members-to-community-enable-members-group}
 
@@ -238,13 +238,13 @@ In this example, the group `Community Ski Class` is added as a member of the gro
 
 * select **Save**
 
-![](assets/chlimage_1-13.png)
+![chlimage_1-13](assets/chlimage_1-13.png)
 
 ## Configurations on Publish {#configurations-on-publish}
 
 `https://localhost:4503/content/sites/enable/en.html {#http-localhost-content-sites-enable-en-html}`
 
-![](assets/chlimage_1-14.png)
+![chlimage_1-14](assets/chlimage_1-14.png)
 
 ### Configure for Authentication Error {#configure-for-authentication-error}
 
@@ -303,13 +303,13 @@ To get started
 >
 >To disable, simply pre-pend the `sling:match` property value with an 'x' - `xlocalhost.4503/$` - and **Save All**.
 
-![](assets/chlimage_1-15.png)
+![chlimage_1-15](assets/chlimage_1-15.png)
 
 #### Troubleshooting: Error Saving Map {#troubleshooting-error-saving-map}
 
 If unable to save changes, be sure the node name is `localhost.4503`, with a 'dot' separator, and not `localhost:4503` with a 'colon' separator, as `localhost`is not a valid namespace prefix.
 
-![](assets/chlimage_1-16.png)
+![chlimage_1-16](assets/chlimage_1-16.png)
 
 #### Troubleshooting: Fail to Redirect {#troubleshooting-fail-to-redirect}
 
@@ -346,11 +346,11 @@ Select the STRUCTURE panel to add a Catalog or modify an existing Catalog :
 * **Select All Namespaces**: leave as default.
 * select **Save**
 
-![](assets/chlimage_1-17.png)
+![chlimage_1-17](assets/chlimage_1-17.png)
 
 Use the Position Icon to move the Catalog function to the second position, after Assignments.
 
-![](assets/chlimage_1-18.png)
+![chlimage_1-18](assets/chlimage_1-18.png)
 
 Select **Save** in the upper right corner to save the changes to the community site.
 

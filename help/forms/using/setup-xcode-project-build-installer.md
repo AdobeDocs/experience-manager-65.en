@@ -29,7 +29,7 @@ To get the AEM Forms app source, perform the following steps:
 
 The following image displays the extracted contents of the `adobe-lc-mobileworkspace-src-<version>.zip`.
 
-![](assets/mws-content.png)
+![mws-content](assets/mws-content.png)
 
 The following table details contents of the `adobe-lc-mobileworkspace-src-[version]/ios` folder.
 
@@ -123,7 +123,7 @@ For detailed information about Code Signing and adding devices to the iOS Provis
 1. Connect a provisioned iPad to a Mac machine.
 1. Select the provisioned device for the **AEM Forms **project.
 
-   ![](assets/ipad.png)
+   ![ipad](assets/ipad.png)
 
    A provisioned device, iPad Air 2, is selected.
 
@@ -137,7 +137,7 @@ You need to archive the Xcode project to build the installer (an .ipa file) and 
 1. Connect a provisioned iPad to a Mac machine. For detailed information about provisioning an iPad, see [Creating and Downloading Development Provisioning Profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
 1. Select the provisioned device for the **AEM Forms **project.
 
-   ![](assets/ipad-1.png)
+   ![ipad-1](assets/ipad-1.png)
 
    A provisioned device, iPad Air 2, is selected.
 

@@ -47,7 +47,7 @@ To track the changes you have made, you can view the launch in **References** an
 1. Open the ** [References](/help/sites-authoring/basic-handling.md#references)** panel and select **Launches**.
 1. Select your specific launch then **Compare to Source**:
 
-   ![](assets/screen-shot_2019-03-05at121952.png)
+   ![screen-shot_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
 
 1. The two pages (launch and source) will be opened side-by-side.
 
@@ -99,5 +99,5 @@ At any time you can edit the properties for a launch:
 
 The status is shown when you select a specific launch from the references tab (see [Launches in References (Sites Console)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
-![](assets/screen-shot_2019-03-05at121901.png)
+![screen-shot_2019-03-05at121901](assets/screen-shot_2019-03-05at121901.png)
 

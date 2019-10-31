@@ -90,14 +90,14 @@ Once a form set is created, you can perform following actions on that form set:
 * Preview: Preview provides two options: Preview as HTML (without data) and custom preview with sample data.
 * View/Edit Properties: You can view/edit the metadata properties of a selected form set.
 
-![](assets/createformset3.png)
+![createformset3](assets/createformset3.png)
 
 ### Edit a form set {#edit-a-form-set}
 
 To edit a form set, do the following:
 
 1. Select Forms &gt; Forms and Documents.
-1. Locate the form set you want to edit. Hover over it and select Edit ( ![](assets/editicon.png)).
+1. Locate the form set you want to edit. Hover over it and select Edit ( ![editicon](assets/editicon.png)).
 1. In the Configure Form(s) page, you can edit the following:
 
     * Form Order

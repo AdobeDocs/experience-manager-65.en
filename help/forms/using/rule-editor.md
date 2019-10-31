@@ -114,11 +114,11 @@ When you have a multi-value component, such as radio buttons or list, while crea
 
 For example, a list has four options: Red, Blue, Green, and Yellow. While creating the rule, the options (radio buttons) are automatically retrieved and made available to the rule creator as following:
 
-![](assets/multivaluefcdisplaysoptions.png)
+![multivaluefcdisplaysoptions](assets/multivaluefcdisplaysoptions.png)
 
 While writing a When rule, you can trigger the Clear Value Of action. Clear Value Of action clears the value of the specified object. Having Clear Value of as an option in the When statement allows you to create complex conditions with multiple fields.
 
-![](assets/clearvalueof.png)
+![clearvalueof](assets/clearvalueof.png)
 
 **Hide** Hides the specified object.
 
@@ -196,7 +196,7 @@ When (optional):
 
 The following example takes the value in `dependentid` field as input and sets the value of the `Relation` field to the output of the `Relation` argument of the `getDependent` form data model service.
 
-![](assets/set-value-web-service.png)
+![set-value-web-service](assets/set-value-web-service.png)
 
 Example of Set Value rule using form data model service
 
@@ -298,7 +298,7 @@ A typical Validate rule is structured as follows:
 >
 >If the specified value doesn't comply with the Validate rule, you can display a validation message to the user. You can specify the message in the **[!UICONTROL Script validation message]** field in the component properties in the sidebar.
 
-![](assets/script-validation.png)
+![script-validation](assets/script-validation.png)
 
 ### Set Options Of {#setoptionsof}
 
@@ -326,9 +326,9 @@ Rule editor provides a comprehensive yet simple user interface to write and mana
 To launch the rule editor user interface:
 
 1. Open an adaptive form in authoring mode.
-1. Tap the form object for which you want to write a rule, and in Component Toolbar tap ![](assets/edit-rules.png). The rule editor user interface appears.
+1. Tap the form object for which you want to write a rule, and in Component Toolbar tap ![edit-rules](assets/edit-rules.png). The rule editor user interface appears.
 
-   ![](assets/create-rules.png)
+   ![create-rules](assets/create-rules.png)
 
    Any existing rules on the selected form objects are listed in this view. For information about managing existing rules, see [Manage rules](../../forms/using/rule-editor.md#p-manage-rules-p).
 
@@ -399,7 +399,7 @@ Let's first look at how to write rules using visual editor.
 
 Let's understand how to create a rule in visual editor using the following example form.
 
-![](assets/create-rule-example.png)
+![create-rule-example](assets/create-rule-example.png)
 
 The Loan Requirements section in the example loan application form requires applicants to specify their marital status, salary, and if married, their spouse's salary. Based on the user inputs, the rule computes the loan eligibility amount and displays in the Loan Eligibility field. Apply the following rules to implement the scenario:
 
@@ -410,9 +410,9 @@ Perform the following steps to write rules:
 
 1. First, write the rule to control the visibility of the Spouse Salary field based on the option user selects for the Marital Status radio button.
 
-   Open the loan application form in authoring mode. Tap the **Marital Status** component and tap ![](assets/edit-rules.png). Next, tap **[!UICONTROL Create]** to launch the rule editor.
+   Open the loan application form in authoring mode. Tap the **Marital Status** component and tap ![edit-rules](assets/edit-rules.png). Next, tap **[!UICONTROL Create]** to launch the rule editor.
 
-   ![](assets/write-rules-visual-editor-1.png)
+   ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
 
    When you launch the rule editor, the When rule is selected by default. Also, the form object (in this case, Marital Status) from where you launched the rule editor is specified in the When statement.
 
@@ -420,7 +420,7 @@ Perform the following steps to write rules:
 
 1. Tap **[!UICONTROL Select State]** drop-down and select **[!UICONTROL is equal to]**. The **[!UICONTROL Enter a String]** field appears.
 
-   ![](assets/write-rules-visual-editor-2.png)
+   ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
 
    In the Marital Status radio button, **Married** and **Single** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
 
@@ -428,45 +428,45 @@ Perform the following steps to write rules:
 
 1. In the **Enter a String** field in the rule, specify **0**.
 
-   ![](assets/write-rules-visual-editor-4.png)
+   ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4.png)
 
    You have defined the condition as `When Marital Status is equal to Married`. Next, define the action to perform if this condition is True.
 
 1. In the Then statement, select **[!UICONTROL Show]** from the **[!UICONTROL Select Action]** drop-down.
 
-   ![](assets/write-rules-visual-editor-5.png)
+   ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
 1. Drag-drop the **Spouse Salary** field from the Form Objects tab on the **Drop object or select here **field. Alternatively, tap the **Drop object or select here** field and select the **Spouse Salary** field from the pop-up menu, which lists all form objects in the form.
 
-   ![](assets/write-rules-visual-editor-6.png)
+   ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
    The rule appears as follows in the rule editor.
 
-   ![](assets/write-rules-visual-editor-7.png)
+   ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
 
    Tap **Done** to save the rule.
 
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![](assets/write-rules-visual-editor-8.png)
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8.png)
 
    >[!NOTE]
    >
    >Alternatively, you can write one Show rule on the Spouse Salary field, instead of two When rules on the Marital Status field, to implement the same behavior.
 
-   ![](assets/write-rules-visual-editor-9.png)
+   ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9.png)
 
 1. Next, write a rule to compute the loan eligibility amount, which is 50% of the total salary, and display it in the Loan Eligibility field. To achieve this, create **Set value Of** rules on Loan Eligibility field.
 
-   In authoring mode, tap the **[!UICONTROL Loan Eligibility]** field and tap ![](assets/edit-rules.png). Next, tap **[!UICONTROL Create]** to launch the rule editor.
+   In authoring mode, tap the **[!UICONTROL Loan Eligibility]** field and tap ![edit-rules](assets/edit-rules.png). Next, tap **[!UICONTROL Create]** to launch the rule editor.
 
 1. Select **[!UICONTROL Set Value Of]** rule from the rule drop-down.
 
-   ![](assets/write-rules-visual-editor-10.png)
+   ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
 1. Tap **[!UICONTROL Select Option]** and select **[!UICONTROL Mathematical Expression]**. A field to write mathematical expression opens.
 
-   ![](assets/write-rules-visual-editor-11.png)
+   ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
 1. In the expression field:
 
@@ -476,15 +476,15 @@ Perform the following steps to write rules:
 
     * Select or drag-drop from the Forms Object tab the **Spouse Salary** field in the other **Drop object or select here** field.
 
-   ![](assets/write-rules-visual-editor-12.png)
+   ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
 1. Next, tap in the highlighted area around the expression field and tap **Extend Expression**.
 
-   ![](assets/write-rules-visual-editor-13.png)
+   ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
    In the extended expression field, select **divided by** from the **Select Operator** field and **Number** from the **Select Option** field. Then, specify **2** in the number field.
 
-   ![](assets/write-rules-visual-editor-14.png)
+   ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14.png)
 
    >[!NOTE]
    >
@@ -494,7 +494,7 @@ Perform the following steps to write rules:
 
 1. Tap **Add Condition **to add a When statement.
 
-   ![](assets/write-rules-visual-editor-15.png)
+   ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
 
    In the When statement:
 
@@ -504,13 +504,13 @@ Perform the following steps to write rules:
 
     * Select String in the other **Drop object or select here** field and specify **Married** in the **Enter a String** field.
 
-   The rule finally appears as follows in the rule editor.  ![](assets/write-rules-visual-editor-16.png)
+   The rule finally appears as follows in the rule editor.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
    Tap **Done** to save the rule.
 
 1. Repeat steps 7 through 12 to define another rule to compute the loan eligibility if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![](assets/write-rules-visual-editor-17.png)
+   ![write-rules-visual-editor-17](assets/write-rules-visual-editor-17.png)
 
 >[!NOTE]
 >
@@ -518,7 +518,7 @@ Perform the following steps to write rules:
 >
 >Similarly, you can write a combined rule to control visibility of the Spouse Salary field and compute loan eligibility when the Marital Status is Married.
 
-![](assets/write-rules-visual-editor-18.png)
+![write-rules-visual-editor-18](assets/write-rules-visual-editor-18.png)
 
 ### Using code editor {#using-code-editor}
 
@@ -535,7 +535,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 * Hints and suggestions for Form objects, functions, and their properties
 * Auto completion of form component names and common JavaScript functions
 
-![](assets/javascriptruleeditor.png)
+![javascriptruleeditor](assets/javascriptruleeditor.png)
 
 #### Custom functions in rule editor {#custom-functions}
 
@@ -609,12 +609,12 @@ After you have added your client library in the CRX repository, use it in your a
 
 1. Open your form in edit mode.
    To open a form in edit mode, select a form and tap **Open**.
-1. In the edit mode, select a component, then tap ![](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![](assets/cmppr.png).
+1. In the edit mode, select a component, then tap ![field-level](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![cmppr](assets/cmppr.png).
 1. In the sidebar, under Name of Client Library, add your client library. ( `customfunction` in the example.)
 
    ![Adding the custom function client library](assets/clientlib.png)
 
-1. Select the input numeric box, and tap ![](assets/edit-rules.png) to open the rule editor.
+1. Select the input numeric box, and tap ![edit-rules](assets/edit-rules.png) to open the rule editor.
 1. Tap **Create Rule**. Using options shown below, create a rule to save the squared value of the input in the Output field of your form.
    [ ![Using custom functions to create a rule](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Tap **Done**. Your custom function is added.
 
@@ -683,16 +683,16 @@ var c = {
 
 ## Manage rules {#manage-rules}
 
-Any existing rules on a form object are listed when you tap the object and tap ![](assets/edit-rules1.png). You can view the title and a preview the rule summary. Furthermore, the UI allows you to expand and view the complete rule summary, change the order of rules, edit rules, and delete rules.
+Any existing rules on a form object are listed when you tap the object and tap ![edit-rules1](assets/edit-rules1.png). You can view the title and a preview the rule summary. Furthermore, the UI allows you to expand and view the complete rule summary, change the order of rules, edit rules, and delete rules.
 
-![](assets/list-rules.png)
+![list-rules](assets/list-rules.png)
 
 You can perform the following actions on rules:
 
-* **Expand/Collapse**: The Content column in the rule list displays the rule content. If the entire rule content is not visible in the default view, tap ![](assets/expand-rule-content.png) to expand it.
+* **Expand/Collapse**: The Content column in the rule list displays the rule content. If the entire rule content is not visible in the default view, tap ![expand-rule-content](assets/expand-rule-content.png) to expand it.
 
 * **Reorder**: Any new rule you create is stacked at the bottom of the rule list. The rules are executed from top to bottom. The rule at the top executes first followed by other rules of the same type. For example, if you have When, Show, Enable, and When rules at first, second, third, and fourth positions from top, respectively, the When rule at the top gets executed first followed by the When rule at the fourth position. Then, the Show and Enable rules will be executed.
-  You can change the order of a rule by tapping ![](assets/sort-rules.png) against it or drag-drop it to the desired order in the list.
+  You can change the order of a rule by tapping ![sort-rules](assets/sort-rules.png) against it or drag-drop it to the desired order in the list.
 
 * **Edit**: To edit a rule, select the check box next to the rule title. Additional options to edit and delete the rule appear. Tap **Edit** to open the selected rule in the rule editor in visual or code editor mode depending the mode used to create the rule.
 
@@ -700,7 +700,7 @@ You can perform the following actions on rules:
 
 * **Enable/Disable**: You may need to suspend usage of a rule temporarily. You can select one or more rules and tap Disable in the Actions toolbar to disable them. If a rule is disabled, it does not execute at the runtime. To enable a rule that is disabled, you can select it and tap Enable in the actions toolbar. The status column of the rule displays whether the rule is enabled or disabled.
 
-![](assets/disablerule.png)
+![disablerule](assets/disablerule.png)
 
 ## Copy-paste rules {#copy-paste-rules}
 
@@ -708,15 +708,15 @@ You can copy-paste a rule from one field to other similar fields to save time.
 
 To copy-paste rules, do the following:
 
-1. Tap the form object from which you want to copy a rule, and in the component toolbar tap ![](assets/editrule.png). The rule editor user interface appears with the form object selected and the existing rules appear.
+1. Tap the form object from which you want to copy a rule, and in the component toolbar tap ![editrule](assets/editrule.png). The rule editor user interface appears with the form object selected and the existing rules appear.
 
-   ![](assets/copyrule.png)
+   ![copyrule](assets/copyrule.png)
 
    For information about managing existing rules, see [Manage rules](../../forms/using/rule-editor.md#p-manage-rules-p).
 
 1. Select the check box next to the rule title. Additional options to manage the rule appear. Tap **Copy**.
 
-   ![](assets/copyrule2.png)
+   ![copyrule2](assets/copyrule2.png)
 
 1. Select another form object to which you want to paste the rule and tap **Paste**. Further, you can edit the rule to make changes in it.
 
@@ -732,11 +732,11 @@ Rule editor allows you to use multiple AND and OR operators to create nested rul
 
 Following is an example of a nested rule that displays a message to the user about eligibility for a child's custody when the required conditions are met.
 
-![](assets/complexexpression.png)
+![complexexpression](assets/complexexpression.png)
 
-You can also drag-and-drop conditions within a rule to edit it. Tap and hover over the handle ( ![](assets/handle.png)) before a condition. Once the pointer turns into the hand symbol as shown below, drag and drop the condition anywhere within the rule. The rule structure changes.
+You can also drag-and-drop conditions within a rule to edit it. Tap and hover over the handle ( ![handle](assets/handle.png)) before a condition. Once the pointer turns into the hand symbol as shown below, drag and drop the condition anywhere within the rule. The rule structure changes.
 
-![](assets/drag-and-drop.png)
+![drag-and-drop](assets/drag-and-drop.png)
 
 ## Date expression conditions {#dateexpression}
 
@@ -746,11 +746,11 @@ Following is an example condition that displays a static text object if the mort
 
 When the date of mortgage of the property as filled in by the user is in the past, the adaptive form displays a note about the income calculation. The following rule compares the date filled in by the user with the current date and if the date filled in by the user is earlier than the current date, the form displays the text message (named Income).
 
-![](assets/dateexpressioncondition.png)
+![dateexpressioncondition](assets/dateexpressioncondition.png)
 
 When filled date is earlier than the current date, the form displays the text message (Income) as following:
 
-![](assets/dateexpressionconditionmet.png)
+![dateexpressionconditionmet](assets/dateexpressionconditionmet.png)
 
 ## Number comparison conditions {#number-comparison-conditions}
 
@@ -758,11 +758,11 @@ Rule editor allows you to create conditions that compare two numbers.
 
 Following is an example condition that displays a static text object if the number of months an applicant is staying at his current address is less than 36.
 
-![](assets/numbercomparisoncondition.png)
+![numbercomparisoncondition](assets/numbercomparisoncondition.png)
 
 When the user signifies that he has been living at his present residential address for less than 36 months, the form displays a notification that additional proof of residence may be requested.
 
-![](assets/additionalproofrequested.png)
+![additionalproofrequested](assets/additionalproofrequested.png)
 
 ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
@@ -778,7 +778,7 @@ Consider a web service `GetInterestRates` that takes loan amount, tenure, and ap
 
 The following rule shows how you will configure the Invoke service action to accomplish the example scenario.
 
-![](assets/example-invoke-services.png)
+![example-invoke-services](assets/example-invoke-services.png)
 
 Invoke form data model service using adaptive form rule
 
@@ -790,7 +790,7 @@ In a loan application form, you want to capture whether the loan applicant is an
 
 * A text field, **Geometrixx customer ID**, to specify the customer ID.
 
-When you write a When rule on the radio button to implement this behavior, the rule appears as follows in the visual rule editor.  ![](assets/when-rule-example.png)
+When you write a When rule on the radio button to implement this behavior, the rule appears as follows in the visual rule editor.  ![when-rule-example](assets/when-rule-example.png)
 
 Rule in the visual editor
 
@@ -798,7 +798,7 @@ In the example rule, the statement in the When section is the condition, which w
 
 The rule appears as follows in the code editor.
 
-![](assets/when-rule-example-code.png)
+![when-rule-example-code](assets/when-rule-example-code.png)
 
 Rule in the code editor
 
@@ -810,19 +810,19 @@ In a purchase order form, you have the following table, in which users will fill
 * The title of the cell in Product Quantity column of the repeatable row is Quantity. The element name for this cell is `productquantity`.
 * The second row in the table is non-repeatable and the title of the cell in Product Quantity column in this row is Total Quantity.
 
-![](assets/example-function-table.png)
+![example-function-table](assets/example-function-table.png)
 
 **A.** Row1 **B.** Quantity **C.** Total Quantity
 
 Now, you want to add specified quantities in the Product Quantity column for all products and display the sum in the Total Quantity cell. You can achieve this by writing a Set Value Of rule on the Total Quantity cell as shown below.
 
-![](assets/example-function-output.png)
+![example-function-output](assets/example-function-output.png)
 
 Rule in the visual editor
 
 The rule appears as follows in the code editor.
 
-![](assets/example-function-output-code.png)
+![example-function-output-code](assets/example-function-output-code.png)
 
 Rule in the code editor
 
@@ -830,13 +830,13 @@ Rule in the code editor
 
 In the purchase order form explained in the previous example, you want to restrict user from ordering more than one quantity of any product that is priced more that 10000. To do this, you can write a Validate rule as shown below.
 
-![](assets/example-validate.png)
+![example-validate](assets/example-validate.png)
 
 Rule in the visual editor
 
 The rule appears as follows in the code editor.
 
-![](assets/example-validate-code.png)
+![example-validate-code](assets/example-validate-code.png)
 
 Rule in the code editor
 

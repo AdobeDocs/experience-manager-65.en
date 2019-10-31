@@ -25,7 +25,7 @@ AEM Forms Designer includes a number of Speak Text options that can be passed to
 * Captions for fields on the form.
 * Names of objects, as specified in the Name option of the Binding tab.
 
-![](assets/accessibility.png)
+![accessibility](assets/accessibility.png)
 
 When multiple options like tool tip, Screen Reader Text, and Caption are available on a Form control, the Screen Reader uses only one of these properties. The default order is Custom Screen Reader Text, tool tip, Caption, and Name. You can override the default order using the Screen Reader **Precedence **option in the Accessibility palette.
 

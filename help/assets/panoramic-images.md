@@ -19,7 +19,7 @@ This section describes working with the Panoramic Image viewer to render spheric
 
 See also [Managing Viewer Presets](/help/assets/managing-viewer-presets.md).
 
-![](assets/panoramic-image2.png)
+![panoramic-image2](assets/panoramic-image2.png)
 
 ## Uploading assets for use with the Panoramic Image viewer {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 

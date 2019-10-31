@@ -23,7 +23,7 @@ For information about using the JMX Console, see [Monitoring Server Resources Us
 
 On the Apache Felix platform, you deploy MBeans as OSGi services. When an MBean service is registered in the OSGi Service Registry, the Aries JMX Whiteboard module automatically registers the MBean with the MBean Server. The MBean is then available to the JMX Console which exposes the public attributes and operations.
 
-![](assets/jmxwhiteboard.png)
+![jmxwhiteboard](assets/jmxwhiteboard.png)
 
 ## Creating MBeans for CQ5 and CRX {#creating-mbeans-for-cq-and-crx}
 
@@ -126,7 +126,7 @@ public class ExampleMBeanImpl extends AnnotatedStandardMBean implements ExampleM
 
 The following graphic shows the page for this MBean in the JMX Console.
 
-![](assets/jmxdescription.png)
+![jmxdescription](assets/jmxdescription.png)
 
 ### Registering MBeans {#registering-mbeans}
 
@@ -224,7 +224,7 @@ WorkflowMBeanManagerImpl includes a component activation method. When the compon
 
 The MBean metadata appears in the JMX Console with the com.adobe.example domain, the workflow_model type, and Properties is the path of the workflow model condfiguration node.
 
-![](assets/jmxworkflowmbean.png)
+![jmxworkflowmbean](assets/jmxworkflowmbean.png)
 
 ### The Example MBean {#the-example-mbean}
 

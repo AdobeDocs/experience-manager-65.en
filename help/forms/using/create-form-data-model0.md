@@ -13,7 +13,7 @@ docset: aem65
 
 # Tutorial: Create form data model{#tutorial-create-form-data-model}
 
- ![](assets/04-create-form-data-model-main.png)
+ ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
 This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
@@ -49,7 +49,7 @@ Before you begin, ensure that you have the following:
 A database is essential to create an Interactive Communication. This tutorial uses a database to display Form Data Model and persistence capabilities of Interactive Communications. Set up a database containing customer, bills, and calls tables.
 The following image illustrates sample data for the customer table:
 
-![](assets/sample_data_cust.png)
+![sample_data_cust](assets/sample_data_cust.png)
 
 The calls table includes the call details such as call date, call time, call number, call duration, and call charges. The customer table is linked to the calls table using the Mobile Number (mobilenum) field. For each mobile number listed in the customer table, there are multiple records in the calls table. For example, you can retrieve the call details for the **1457892541** mobile number by referring to the calls table.
 
@@ -259,7 +259,7 @@ Perform the following steps to create associations between data model objects:
 
    The following image depicts the associations between the data model objects and the properties used to create associations between them:
 
-   ![](assets/fdm_associations.gif)
+   ![fdm_associations](assets/fdm_associations.gif)
 
 ### Edit data model object properties {#edit-data-model-object-properties}
 

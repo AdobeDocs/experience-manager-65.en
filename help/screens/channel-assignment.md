@@ -39,7 +39,7 @@ Follow the steps below to assign a channel to a display:
 
 1. Navigate to the required display, for example, **DemoProject*** *--&gt; **Locations** --&gt; **SanJose** --&gt; **StoreDisplay**.
 
-   ![](assets/screen_shot_2018-08-23at25359pm.png)
+   ![screen_shot_2018-08-23at25359pm](assets/screen_shot_2018-08-23at25359pm.png)
 
 1. Tap/click **Assign Channel **in the action bar
 
@@ -47,7 +47,7 @@ Follow the steps below to assign a channel to a display:
 
    Tap/click **Dashboard **and** **click** +Assign Channel **from the** ASSIGNED CHANNNELS **panel to open the **Channel Assignment** dialog box.
 
-   ![](assets/screen_shot_2018-08-23at25938pm.png)
+   ![screen_shot_2018-08-23at25938pm](assets/screen_shot_2018-08-23at25938pm.png)
 
    You can configure the following properties from the **Channel Assignment **dialog box:
 

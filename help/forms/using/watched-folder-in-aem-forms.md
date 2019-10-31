@@ -203,7 +203,7 @@ You can create mutable variables for workflow-based file processing methods. The
 >
 >JCR specification mandates a default value for the properties. The default values are available to the steps of a workflow for processing. So, specify proper default values.
 
-![](assets/custom-configuration-parameters2.png) 
+![custom-configuration-parameters2](assets/custom-configuration-parameters2.png) 
 
 ## Various methods for processing files {#variousmethodsforprocessingfiles}
 
@@ -641,19 +641,19 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
 
 1. In the Models view, click **New**. In the New Workflow dialog, specify **Title**, and click **OK**.
 
-   ![](assets/create-a-workflow-pdf.png)
+   ![create-a-workflow-pdf](assets/create-a-workflow-pdf.png)
 
 1. Select the newly created workflow and click **Edit**. The workflow opens in a new window.  
 
 1. Delete the default workflow step. Drag-and-drop the Process Step from the Sidekick to the Workflow.
 
-   ![](assets/create-a-workflow-pdf-(2).png)
+   ![create-a-workflow-pdf-(2)](assets/create-a-workflow-pdf-(2).png)
 
 1. Right-click the Process Step and select **Edit**. The Step Properties window appears.  
 
 1. In the Process tab, select the ECMAScript. For example, the pdfg-openOffice-sample.ecma script created in [Create an ECMAScript](#p-create-an-ecmascript-p). Enable the **Handler Advance **option and click **OK**.
 
-   ![](assets/create-a-workflow3-pdf.png)
+   ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 
 ### Configure the Watched Folder {#configure-the-watched-folder}
 
@@ -661,7 +661,7 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
 
 1. Navigate to the /etc/fd/watchfolder/config/ folder and create a node of type nt:unstructured.
 
-   ![](assets/configure-the-watched-folder-pdf.png)
+   ![configure-the-watched-folder-pdf](assets/configure-the-watched-folder-pdf.png)
 
 1. Add the following properties to the node:
 

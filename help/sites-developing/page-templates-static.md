@@ -112,7 +112,7 @@ There are two aspects to be considered:
 
 A Template is created under a node of type **cq:Template**.
 
-![](assets/screen_shot_2012-02-13at63646pm.png)
+![screen_shot_2012-02-13at63646pm](assets/screen_shot_2012-02-13at63646pm.png)
 
 Various properties can be set, in particular:
 
@@ -121,11 +121,11 @@ Various properties can be set, in particular:
 
 This node contains a jcr:content (cq:PageContent) node which be used as the basis for the content node of resulting pages; this references, using sling:resourceType, the component to be used for rendering the actual content of a new page.
 
-![](assets/screen_shot_2012-02-13at64010pm.png)
+![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
 
 This component is used to define the structure and design of the content when a new page is created.
 
-![](assets/screen_shot_2012-02-13at64137pm.png)
+![screen_shot_2012-02-13at64137pm](assets/screen_shot_2012-02-13at64137pm.png)
 
 ### The content produced by a Template {#the-content-produced-by-a-template}
 
@@ -192,7 +192,7 @@ In the last two cases, if there is more than one applicable design, use the one 
 
 This is a graphical representation of the [Design Path Resolution](/help/sites-developing/page-templates-static.md#design-path-resolution) logic.
 
-![](assets/design_path_resolution.png)
+![design_path_resolution](assets/design_path_resolution.png)
 
 ### Example {#example}
 
@@ -283,7 +283,7 @@ To create a new template based on an existing template:
    >
    >If you want your template to be displayed in the **Create Page** dialog when creating a page right under **Websites** from the **Websites** console, set the `allowedPaths` property of the template node to: `/content(/.*)?`
 
-   ![](assets/chlimage_1-88.png)
+   ![chlimage_1-88](assets/chlimage_1-88.png)
 
 1. Copy the component on which the template is based (this is indicated by the **sling:resourceType** property of the **jcr:content** node within the template) to create a new instance.
 
@@ -318,5 +318,5 @@ This example illustrates how to allow a template to be used for certain content 
 1. In CRXDE Lite, navigate to the template you want to use for your page, for example, the Newsletter template.
 1. Change the `allowedPaths` property and other properties used for [template availabillity](/help/sites-developing/templates.md#template-availability). For example, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` means that this template is allowed in any path under `/content/geometrixx-outdoors`.
 
-   ![](assets/chlimage_1-89.png)
+   ![chlimage_1-89](assets/chlimage_1-89.png)
 

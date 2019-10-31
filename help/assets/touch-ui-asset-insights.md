@@ -46,7 +46,7 @@ You can view the Asset Insights scores from the metadata page.
     * **Social**: The number of times the asset was used in solutions, such as Adobe Social and Adobe Campaign
     * **Email**: The number of times the asset was used in email campaigns
 
-   ![](assets/usage_statistics.png)
+   ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
@@ -54,7 +54,7 @@ You can view the Asset Insights scores from the metadata page.
 
 1. To view performance statistics for the asset graphically over a period of time, select period in the **Performance Statistics** section. Details, including clicks and impressions are displayed as trend lines of a graph.
 
-   ![](assets/chlimage_1-3.jpeg)
+   ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
    >[!NOTE]
    >
@@ -62,7 +62,7 @@ You can view the Asset Insights scores from the metadata page.
 
 1. To obtain the embed code for the asset that you include in websites to gets performance data, tap/click **Get Embed Code** below the asset thumbnail. For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/touch-ui-using-page-tracker.md).
 
-   ![](assets/chlimage_1-98.png)
+   ![chlimage_1-98](assets/chlimage_1-98.png)
 
 ## Viewing aggregate statistics for images {#viewing-aggregate-statistics-for-images}
 
@@ -79,7 +79,7 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 1. Tap the AEM logo, and go to **Tools** &gt; **Operations** &gt; **Web Console**.
 1. Open the **Adobe CQ DAM Asset Performance Report Sync Job** service configuration.
 
-   ![](assets/chlimage_1-99.png)
+   ![chlimage_1-99](assets/chlimage_1-99.png)
 
 1. Specify the desired scheduler frequency and the start time for the job in the property scheduler expression. Save the changes.
 

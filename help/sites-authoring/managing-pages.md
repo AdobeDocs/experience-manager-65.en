@@ -78,7 +78,7 @@ This structure can be viewed From the **Sites** console, where you can [navigate
 
 From any point, you can see the upward branch from breadcrumbs in the header bar:
 
-![](assets/caop-01.png)
+![caop-01](assets/caop-01.png)
 
 ### Page Naming Conventions {#page-naming-conventions}
 
@@ -138,7 +138,7 @@ If you supply only a page **Title** when creating a new page, AEM will derive th
 
 When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.
 
-![](assets/caop-02.png)
+![caop-02](assets/caop-02.png)
 
 >[!NOTE]
 >
@@ -193,7 +193,7 @@ Unless all pages have been created for you in advance, before you can start crea
 1. Navigate to the location where you want to create the new page.
 1. Open the drop down selector using **Create** in the toolbar, then select **Page** from the list:
 
-   ![](assets/caop-03.png)
+   ![caop-03](assets/caop-03.png)
 
 1. From the first stage of the wizard you can either:
 
@@ -201,7 +201,7 @@ Unless all pages have been created for you in advance, before you can start crea
 
     * **Cancel** to abort the process.
 
-   ![](assets/caop-04.png)
+   ![caop-04](assets/caop-04.png)
 
 1. From the final stage of the wizard you can either:
 
@@ -228,11 +228,11 @@ Unless all pages have been created for you in advance, before you can start crea
 
    The minimum information required to create a new page is the **Title**.
 
-   ![](assets/caop-05.png)
+   ![caop-05](assets/caop-05.png)
 
 1. Use **Create** to complete the process and create your new page. The confirmation dialog will ask whether you want to **Open** the page immediately or return to the console (**Done**):
 
-   ![](assets/chlimage_1-118.png)
+   ![chlimage_1-118](assets/chlimage_1-118.png)
 
    >[!NOTE]
    >
@@ -240,7 +240,7 @@ Unless all pages have been created for you in advance, before you can start crea
 
 1. If you return to the console you will see your new page:
 
-   ![](assets/caop-06.png)
+   ![caop-06](assets/caop-06.png)
 
 >[!CAUTION]
 >
@@ -259,7 +259,7 @@ After creating a page, or navigating to an existing page (in the console), you c
 
    And then select the **Edit** icon:
 
-   ![](assets/screen_shot_2018-03-22at105355.png)
+   ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
 
 1. The page will be opened and you can [edit the page](/help/sites-authoring/editing-content.md#touchoptimizedui) as required.
 
@@ -279,7 +279,7 @@ You can copy a page and all of its subpages to a new location:
 
    And then the **Copy** page icon:
 
-   ![](assets/screen_shot_2018-03-22at105425.png)
+   ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
 
    >[!NOTE]
    >
@@ -288,7 +288,7 @@ You can copy a page and all of its subpages to a new location:
 1. Navigate to the location for the new copy of the page.
 1. Use the **Paste** page icon:
 
-   ![](assets/screen_shot_2018-03-22at105510.png)
+   ![screen_shot_2018-03-22at105510](assets/screen_shot_2018-03-22at105510.png)
 
    A copy of the original page and any subpages will be created at this location.
 
@@ -322,7 +322,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
    And then select the **Move** page icon:
 
-   ![](assets/screen_shot_2018-03-22at105534.png)
+   ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
 
    This will open the move page wizard.
 
@@ -332,7 +332,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
     * **Cancel** to abort the process.
 
-   ![](assets/caop-07.png)
+   ![caop-07](assets/caop-07.png)
 
    The page name can remain the same if you are only moving the page.
 
@@ -353,7 +353,7 @@ AEM offers you the functionality to update any internal links that refer to the 
    >
    >By default the parent of the page you are moving/renaming will be selected as the destination.
 
-   ![](assets/caop-08.png)
+   ![caop-08](assets/caop-08.png)
 
    >[!NOTE]
    >
@@ -367,7 +367,7 @@ AEM offers you the functionality to update any internal links that refer to the 
    >
    >If the page is neither linked to nor referenced, then this step will not be available.
 
-   ![](assets/caop-09.png)
+   ![caop-09](assets/caop-09.png)
 
 1. Selecting **Move** will complete the process and move/rename your page as appropriate.
 
@@ -384,7 +384,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 1. Navigate until you can see the page you want to delete.
 1. Use [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) to select the required page, then use **Delete** from the toolbar:
 
-   ![](assets/screen_shot_2018-03-22at105622.png)
+   ![screen_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
 
    >[!NOTE]
    >
@@ -406,7 +406,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
 You can [lock/unlock a page](/help/sites-authoring/editing-content.md#locking-a-page) from either a console or when editing an individual page. Information about whether a page is locked is also shown in both locations.
 
-![](assets/screen_shot_2018-03-22at105713.png) ![](assets/screen_shot_2018-03-22at105720.png)
+![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
 
 ### Creating a New Folder {#creating-a-new-folder}
 
@@ -427,7 +427,7 @@ You can create folders to help organize your files and pages.
 1. To open the option list, select **Create** from the toolbar
 1. Select **Folder** to open the dialog. Here you can enter the **Name** and **Title**:
 
-   ![](assets/chlimage_1-119.png)
+   ![chlimage_1-119](assets/chlimage_1-119.png)
 
 1. Select **Create** to create the folder.
 

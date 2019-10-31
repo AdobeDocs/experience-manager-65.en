@@ -35,7 +35,7 @@ The ***sequencing process*** starts with data storage service that activates Ado
 
 The following sequencing diagram explains the Adobe Analytics Integration with AEM Screens:
 
-![](assets/analytics_chunking.png)
+![analytics_chunking](assets/analytics_chunking.png)
 
 ## Sending Custom Events Using Offline Adobe Analytics {#sending-custom-events-using-offline-adobe-analytics}
 

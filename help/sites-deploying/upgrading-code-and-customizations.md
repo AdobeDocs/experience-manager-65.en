@@ -39,7 +39,7 @@ Before proceeding with an upgrade you should have a stable application code base
 In addition to the option of upgrading your code base and customizations to work with the new AEM version, 6.5 also helps manage your customizations more efficiently with the Backward Compatibility feature as described on [this page](/help/sites-deploying/backward-compatibility.md).
 
 As mentioned above and shown in the diagram below,running the [Pattern Detector](/help/sites-deploying/pattern-detector.md) in the first step will help you assess the overall complexity of the upgrade and whether you want to run in compatibility mode or update your customizations to use all the new AEM 6.5 features. Please see the [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md) page for more details.
-[ ![](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+[ ![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## Upgrade the Code Base {#upgrade-code-base}
 
@@ -131,7 +131,7 @@ To generate asset IDs for existing assets, upgrade the assets when you upgrade y
 
 To upgrade assets, configure the Associate Asset IDs package in the JMX console. Depending on the number of assets in the repository, `migrateAllAssets` may take a long time. Our internal tests estimate roughly one hour for 125 thousand assets on TarMK.
 
-![](assets/1487758945977.png)
+![1487758945977](assets/1487758945977.png)
 
 If you require asset IDs for a subset of your entire assets, use the `migrateAssetsAtPath` API.
 

@@ -28,11 +28,11 @@ On AEM Author instance, from global navigation:
 
 The result is to reach the [Groups console](/help/communities/groups.md):
 
-![](assets/chlimage_1-91.png)
+![chlimage_1-91](assets/chlimage_1-91.png)
 
 The groups function will display as a folder in which instances of groups are created. Select the Groups folder to open it. The group created on publish is visible.
 
-![](assets/chlimage_1-92.png)
+![chlimage_1-92](assets/chlimage_1-92.png)
 
 ## Create Main Arts Group {#create-main-arts-group}
 
@@ -88,11 +88,11 @@ The `groups` folder now contains two groups (refresh the page).
 
 Before creating groups nested within the `arts`group, hover over the `arts` card and select the publish icon to publish it.
 
-![](assets/chlimage_1-93.png)
+![chlimage_1-93](assets/chlimage_1-93.png)
 
 Wait for confirmation that the group was published.
 
-![](assets/chlimage_1-94.png)
+![chlimage_1-94](assets/chlimage_1-94.png)
 
 The `arts` group should also contain a `groups` folder, but one that is empty and in which new groups can be created. Navigate to the arts group folder and create 3 nested groups, each with a different membership setting:
 
@@ -131,11 +131,11 @@ To navigate to the nested groups from the Communities Sites console:
 * select arts card
 * select Groups folder
 
-![](assets/chlimage_1-95.png)
+![chlimage_1-95](assets/chlimage_1-95.png)
 
 ## Publishing Groups {#publishing-groups}
 
-![](assets/chlimage_1-96.png)
+![chlimage_1-96](assets/chlimage_1-96.png)
 
 After publishing the main community site:
 
@@ -147,7 +147,7 @@ After publishing the main community site:
 
     * all groups must be published in a top-down fashion.
 
-![](assets/chlimage_1-97.png)
+![chlimage_1-97](assets/chlimage_1-97.png)
 
 ## Experience on Publish {#experience-on-publish}
 

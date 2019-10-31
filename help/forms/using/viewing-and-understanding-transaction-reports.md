@@ -74,7 +74,7 @@ You can view transaction reports on author or publish instances. The transaction
 
 AEM Forms displays transaction reports since the configured date, as shown in a summary report below:
 
-![](assets/sample-transaction-report-author.png)
+![sample-transaction-report-author](assets/sample-transaction-report-author.png)
 
 * Use the **Reset the date to today** options to reset transaction records. When you reset the date to today, all previous transaction records are lost. When you reset the date on an author instance, the change does not affect transaction reports on the Publish instances and conversely.
 * Use the **Show transactions of only Publish instances** to view all the transactions that occurred only on the configured publish instance or publish farm.

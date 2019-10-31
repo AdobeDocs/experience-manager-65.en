@@ -33,7 +33,7 @@ Creating and managing an application using AEM Screens is simple and intuitive. 
 
 The following diagram shows the general architecture of an AEM Screens player:
 
-![](assets/chlimage_1-29.png)
+![chlimage_1-29](assets/chlimage_1-29.png)
 
 ### Create a Digital Signage Experience in 5 minutes {#create-a-digital-signage-experience-in-minutes}
 
@@ -49,7 +49,7 @@ Starting a new digital signage experience requires a cohesion of roles before it
 
 The following figure defines the personas and their roles for AEM Screens.
 
-![](assets/chlimage_1-30.png)
+![chlimage_1-30](assets/chlimage_1-30.png)
 
 >[!NOTE]
 >

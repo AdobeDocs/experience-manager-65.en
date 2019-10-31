@@ -30,7 +30,7 @@ Process Reporting consists of the following modules:
 
 ## Process Reporting architecture {#process-reporting-architecture-br}
 
-![](assets/processreportingarchitecture.png)
+![processreportingarchitecture](assets/processreportingarchitecture.png)
 
 ## Process Reporting modules {#process-reporting-modules}
 

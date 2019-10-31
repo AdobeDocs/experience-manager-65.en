@@ -124,15 +124,15 @@ After you've completed the configuration, you can use a JMX MBean to validate th
 
 1. Open the step in edit mode. Under **Advanced Settings**, ensure that the **Handler Advance** option is selected.
 
-   ![](assets/chlimage_1-3.png)
+   ![chlimage_1-3](assets/chlimage_1-3.png)
 
 1. In the **Arguments** tab, select **Ignore Errors** if you want the workflow to complete even if the automatic tagging step fails.
 
-   ![](assets/chlimage_1-4.png)
+   ![chlimage_1-4](assets/chlimage_1-4.png)
 
    To tag assets when they are uploaded irrespective of whether smart tagging is enabled on folders, select **Ignore Smart Tag Flag**.
 
-   ![](assets/chlimage_1-5.png)
+   ![chlimage_1-5](assets/chlimage_1-5.png)
 
 1. Tap/click **OK** to close the process step, and then save the workflow.
 

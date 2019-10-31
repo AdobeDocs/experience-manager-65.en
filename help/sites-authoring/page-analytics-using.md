@@ -20,7 +20,7 @@ Use page analytics data to gauge the effectiveness of the page content.
 
 ## Analytics visible from the Console {#analytics-visible-from-the-console}
 
-![](assets/spad-01.png)
+![spad-01](assets/spad-01.png)
 
 Page analytics data is displayed in [List View](/help/sites-authoring/basic-handling.md#list-view) of the Sites console. When the pages are displayed in list format, the following columns are available by default:
 
@@ -39,7 +39,7 @@ Each column shows a value for the current reporting period, and also indicates w
 
 1. Again, in the far right of the toolbar, (upper right corner), click or tap the icon then select **View Settings**. The **Configure Columns** dialog will open. Make any changes required and confirm with **Update**.
 
-   ![](assets/spad-02.png)
+   ![spad-02](assets/spad-02.png)
 
 ### Selecting the Reporting Period {#selecting-the-reporting-period}
 
@@ -50,7 +50,7 @@ Select the reporting period for which Analytics data appears on the Sites consol
 * This Year's Data
 
 The current reporting period appears on the toolbar of the Sites console (right of the top toolbar). Use the drop down to select the required reporting period.
-![](assets/aa-05.png)
+![aa-05](assets/aa-05.png)
 
 ### Configuring Available Data Columns {#configuring-available-data-columns}
 
@@ -62,13 +62,13 @@ Members of the analytics-administrators user group can configure the Sites conso
 
 1. In List View, use the view selectors (right of toolbar), select **View Settings** and then A**dd Custom Analytics Data**.
 
-   ![](assets/spad-03.png)
+   ![spad-03](assets/spad-03.png)
 
 1. Select the metrics that you want to expose to authors in the Sites console, and then click **Add**.
 
    The columns that appear are retrieved from Adobe Analytics.
 
-   ![](assets/aa-16.png)
+   ![aa-16](assets/aa-16.png)
 
 ### Opening Content Insights from Sites {#opening-content-insights-from-sites}
 
@@ -91,13 +91,13 @@ Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites
 
 When your website has been [configured for Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), you can use the [mode Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) to view relevant data. For example:
 
-![](assets/aa-07.png)
+![aa-07](assets/aa-07.png)
 
 ### Accessing the Activity Map {#accessing-the-activity-map}
 
 After selecting the [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) mode, you will be requested to enter your Adobe Analytics credentials.
 
-![](assets/aa-03.png)
+![aa-03](assets/aa-03.png)
 
 The **Analytics** floating toolbar is shown; here you can:
 
@@ -107,7 +107,7 @@ The **Analytics** floating toolbar is shown; here you can:
 * Select the analytics to show (various drop-down selectors)
 * Quit the Activity Map, and close the toolbar (x)
 
-![](assets/aa-09.png)
+![aa-09](assets/aa-09.png)
 
 ### Selecting the Analytics to Show {#selecting-the-analytics-to-show}
 
@@ -121,17 +121,17 @@ You can select the analytical data to be shown, and how it should be displayed, 
 
 * period to be shown
 
-![](assets/aa-13.png)
+![aa-13](assets/aa-13.png)
 
 ### Configuring the Activity Map {#configuring-the-activity-map}
 
 Use the **Show Settings** icon to open the **Activity Map Settings** dialog.
 
-![](assets/aa-04.png)
+![aa-04](assets/aa-04.png)
 
 The **Activity Map Settings** dialog provides a range of options on three tabs:
 
-![](assets/aa-06.png)
+![aa-06](assets/aa-06.png)
 
 * General
 

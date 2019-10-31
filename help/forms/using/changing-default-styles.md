@@ -20,7 +20,7 @@ This article provides step-by-step information to change style of an HTML5 form 
 
 The following two images show the difference between the default and customized styles.
 
-![](assets/pictures-002-small.png)
+![pictures-002-small](assets/pictures-002-small.png)
 
 ## Style your forms {#style-your-forms}
 

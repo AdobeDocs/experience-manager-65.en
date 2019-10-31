@@ -47,7 +47,7 @@ For example:
 >
 >Links always reference the publish instance. They are intended to be consumed by third parties, so the link will always be called from the publish instance, not the author.
 
-![](assets/xf-14.png)
+![xf-14](assets/xf-14.png)
 
 The plain rendition selector uses a transformer as opposed to additional scripts; the [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) is used as the transformer. This is configured at
 

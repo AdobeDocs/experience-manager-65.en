@@ -96,7 +96,7 @@ All the properties that were copied from the XDP file to the adaptive form are u
 
 To update the properties in the example adaptive form, click the link (labeled `"Click Here"`) in the message. The title of TextField1 changes from **Text Field** to **My Text Field**.
 
-![](assets/update-property.png)
+![update-property](assets/update-property.png)
 
 >[!NOTE]
 >

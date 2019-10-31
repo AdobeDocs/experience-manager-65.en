@@ -21,7 +21,7 @@ A Spin Set simulates a 360-degree viewing experience. Dynamic Media offers singl
 
 Spin Sets are designated by a banner with the word **SPINSET**. In addition, if the Spin Set is published, then the publish date, indicated by the **World** icon is on the banner along with the last modification date, indicated by the **Pencil** icon displays.
 
-![](assets/chlimage_1-154.png)
+![chlimage_1-154](assets/chlimage_1-154.png)
 
 >[!NOTE]
 >
@@ -110,11 +110,11 @@ This section describes how to create Spin Sets in AEM.
 
 1. In Assets, navigate to where you want to create a spin set, click **Create**, and select** Spin Set**. You can also create the set from inside a folder that contains your assets. The Spin Set Editor displays.
 
-   ![](assets/6_5_spinset-createpulldownmenu.png)
+   ![6_5_spinset-createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
 1. In the Spin Set Editor, in the **Title** field, enter a name for the Spin Set. The name appears in the banner across the Spin Set. Optionally, enter a description.
 
-   ![](assets/6_5_spinset-spinseteditortitle.png)
+   ![6_5_spinset-spinseteditortitle](assets/6_5_spinset-spinseteditortitle.png)
 
    >[!NOTE]
    >
@@ -132,7 +132,7 @@ This section describes how to create Spin Sets in AEM.
 
    See [Working with Selectors](/help/assets/working-with-selectors.md).
 
-   ![](assets/chlimage_1-155.png)
+   ![chlimage_1-155](assets/chlimage_1-155.png)
 
 1. When you add assets to your set, they are automatically added in alphanumeric order. You can manually re-order or sort assets after you add them.
 
@@ -162,17 +162,17 @@ You can create spin sets either in the user interface or automatically using [ba
 
 1. When opening the properties of an individual asset. Properties indicate what sets the selected asset is a member of (under **Member of Sets**). Click the name of the set to see the entire set.
 
-   ![](assets/chlimage_1-156.png)
+   ![chlimage_1-156](assets/chlimage_1-156.png)
 
 1. From a member image of any set. Select the **Sets** menu to display the sets that the asset is a member of.
 
-   ![](assets/chlimage_1-157.png)
+   ![chlimage_1-157](assets/chlimage_1-157.png)
 
 1. From search, you can Select **Filters**, then expand **Dynamic Media** and select **Sets**.
 
    The search returns matching sets that were manually created in the UI or automatically created through batch set presets. For automated sets, the search query is conducted using "Starts with" search criteria which is different from AEM search which is based on using "Contains" search criteria. Setting the filter to **Sets** istheonly way to search automated sets.
 
-   ![](assets/chlimage_1-158.png)
+   ![chlimage_1-158](assets/chlimage_1-158.png)
 
 ## Editing Spin Sets {#editing-spin-sets}
 

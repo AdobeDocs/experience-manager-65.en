@@ -66,7 +66,7 @@ Follow the steps below to add the interative REACT app to AEM Screens:
    >
    >Refer to [Creating and Managing Channels](/help/screens/managing-channels.md) for more details.
 
-   ![](assets/screen_shot_2019-02-15at100330am.png)
+   ![screen_shot_2019-02-15at100330am](assets/screen_shot_2019-02-15at100330am.png)
 
 1. Edit any sequence channel and drag and drop an embedded page component.
 
@@ -78,11 +78,11 @@ Follow the steps below to add the interative REACT app to AEM Screens:
 
 1. Click **Edit** from the action bar to edit the properties of the sequence channel.
 
-   ![](assets/screen_shot_2019-02-15at100555am.png)
+   ![screen_shot_2019-02-15at100555am](assets/screen_shot_2019-02-15at100555am.png)
 
 1. Drag and drop the **Embedded Page** component and select the home page under the mysamplespa application for example, ***/content/mysamplespa/en/home***.
 
-   ![](assets/screen_shot_2019-02-15at101104am.png)
+   ![screen_shot_2019-02-15at101104am](assets/screen_shot_2019-02-15at101104am.png)
 
 1. Register a player against this project and you should now be able to see your interactive application running on AEM Screens.
 

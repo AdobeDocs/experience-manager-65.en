@@ -31,7 +31,7 @@ In this scenario, a single TarMK instance runs on a single server.
 
 **This is the default deployment for author instances.**
 
-![](assets/chlimage_1-15.png)
+![chlimage_1-15](assets/chlimage_1-15.png)
 
 The advantages:
 
@@ -50,7 +50,7 @@ One TarMK instance acts as the primary instance. The repository from the primary
 
 The cold standby mechanism can also be used as a backup because the complete repository is constantly replicated to the failover server. The failover server is running in cold standby mode, which means that only the HttpReceiver of the instance is running.
 
-![](assets/chlimage_1-16.png)
+![chlimage_1-16](assets/chlimage_1-16.png)
 
 The advantages:
 
@@ -83,7 +83,7 @@ For AEM Communities, user generated content (UGC) is never replicated. For suppo
 
 **This is the default deployment for publish environments.**
 
-![](assets/chlimage_1-17.png)
+![chlimage_1-17](assets/chlimage_1-17.png)
 
 The advantages:
 
@@ -95,7 +95,7 @@ The advantages:
 
 This approach implies multiple Oak instances accessing a MongoDB replica set within a single data center, in effect creating an active-active cluster for the AEM author environment. Replica sets in MongoDB are used to provide high availability and redundancy in the event of a hardware or network failure.
 
-![](assets/chlimage_1-18.png)
+![chlimage_1-18](assets/chlimage_1-18.png)
 
 The advantages:
 
@@ -110,7 +110,7 @@ The disadvantages:
 
 This approach implies multiple Oak instances accessing a MongoDB replica set across multiple data centers, in effect creating an active-active cluster for the AEM author environment. With multiple data centers, MongoDB replication provides the same high availability and redundancy but now includes the ability to handle a data center outage.
 
-![](assets/oakclustermongofailover2datacenters.png)
+![oakclustermongofailover2datacenters](assets/oakclustermongofailover2datacenters.png)
 
 The advantages:
 
@@ -198,11 +198,11 @@ Below are a set of decisional matrices that can assist you in choosing the best 
 
 #### Choosing the deployment type for author instances {#choosing-the-deployment-type-for-author-instances}
 
-![](assets/chlimage_1-19.png)
+![chlimage_1-19](assets/chlimage_1-19.png)
 
 #### Choosing the deployment type for publish instances {#choosing-the-deployment-type-for-publish-instances}
 
-![](assets/chlimage_1-20.png)
+![chlimage_1-20](assets/chlimage_1-20.png)
 
 >[!NOTE]
 >

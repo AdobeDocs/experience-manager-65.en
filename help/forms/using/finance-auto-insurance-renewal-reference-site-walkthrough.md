@@ -55,7 +55,7 @@ Sarah receives an email with an attachment from We.Finance which reminds her tha
 
 Sarah clicks **Renew Now** and is directed to the web version of her Auto Insurance letter. On top of this letter, Sarah finds number of days left for her policy to expire. The page provides Sarah a basic overview of her Insurance Policy details such as Policy Number, Amount Due, and other information such as discount offers and loyalty rewards. Sarah again clicks **Renew Now** at the bottom of the policy.
 
-![](assets/ref1.png) 
+![ref1](assets/ref1.png) 
 
 #### How it works {#how-it-works}
 

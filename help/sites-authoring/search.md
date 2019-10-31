@@ -43,18 +43,18 @@ To search and filter your resources:
 
 1. Open **Search** (with the magnifying glass in the toolbar) and enter your search term. Suggestions will be made and can be selected:
 
-   ![](assets/s-01.png)
+   ![s-01](assets/s-01.png)
 
    By default the search results will be limited to your current location (i.e. console and related resource type):
 
-   ![](assets/screen_shot_2018-03-23at101445.png)
+   ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
 1. If required, you can remove the location filter (select **X** on the filter you want removed) to search across all consoles/resource types.
 1. The results will be shown, grouped according to console and related resource type.
 
    You can either select a specific resource (for further action), or drill down by selecting the required resource type; for example **View All Sites**:
 
-   ![](assets/screen-shot_2019-03-05at101900.png)
+   ![screen-shot_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 
 1. If you want to drill down further, select the Rail symbol (top left) to open the side panel **Filters & Options**.
 
@@ -80,11 +80,11 @@ To search and filter your resources:
    >
    >
 
-   ![](assets/screen-shot_2019-03-05at102509.png)
+   ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
 
 1. You can also add additional search terms:
 
-   ![](assets/screen-shot_2019-03-05at102613.png)
+   ![screen-shot_2019-03-05at102613](assets/screen-shot_2019-03-05at102613.png)
 
 1. Close **Search** with the **X** (top right).
 
@@ -100,15 +100,15 @@ As well as searching by a wide range of facets you can also save a particular se
 
 1. Define your search criteria and select **Save**.
 
-   ![](assets/screen-shot_2019-03-05at102613-1.png)
+   ![screen-shot_2019-03-05at102613-1](assets/screen-shot_2019-03-05at102613-1.png)
 
 1. Assign a name, then use **Save** to confirm:
 
-   ![](assets/screen-shot_2019-03-05at102725.png)
+   ![screen-shot_2019-03-05at102725](assets/screen-shot_2019-03-05at102725.png)
 
 1. Your saved search will be available from the selector the next time you access the search panel:
 
-   ![](assets/screen-shot_2019-03-05at102927.png)
+   ![screen-shot_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
 
 1. Once saved you can:
 
@@ -117,5 +117,5 @@ As well as searching by a wide range of facets you can also save a particular se
 
 Saved searches can be modified by selecting the saved search and clicking **Edit Saved Search** at the bottom of the search panel.
 
-![](assets/screen-shot_2019-03-05at103010.png)
+![screen-shot_2019-03-05at103010](assets/screen-shot_2019-03-05at103010.png)
 

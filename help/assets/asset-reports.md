@@ -43,12 +43,12 @@ AEM administrators can easily generate and customize these reports for your impl
 
 1. Tap/click the AEM logo, and go to **Tools** &gt; **Assets** &gt; **Reports**.
 
-   ![](assets/navigation.png)
+   ![navigation](assets/navigation.png)
 
 1. In the Asset Reports page, tap/click **Create** from the toolbar.
 1. From the **Create Report** page, choose the report you want to create and tap/click **Next**.
 
-   ![](assets/choose_report.png)
+   ![choose_report](assets/choose_report.png)
 
    >[!NOTE]
    >
@@ -60,7 +60,7 @@ AEM administrators can easily generate and customize these reports for your impl
 
 1. Configure report details such as title, description, thumbnail, and folder path in the CRX repository where the report is stored. By default, the folder path is */content/dam*. You can specify a different path.
 
-   ![](assets/report_configuration.png)
+   ![report_configuration](assets/report_configuration.png)
 
    Choose the date range for your report.
 
@@ -78,34 +78,34 @@ AEM administrators can easily generate and customize these reports for your impl
    >
    >The **Disk Usage** report does not include date range fields because it indicates current disk space usage only.
 
-   ![](assets/disk_usage_configuration.png)
+   ![disk_usage_configuration](assets/disk_usage_configuration.png)
 
    When you create the **Files** report, you can include/exclude subfolders. However, you cannot include asset renditions for this report.
 
-   ![](assets/files_report.png)
+   ![files_report](assets/files_report.png)
 
    The **Link Share** report displays URLs to assets that are shared with external users from within AEM Assets. It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. The columns are not customizable.
 
    The **Link Share** report, does not include options for subfolders and renditions because it merely publishes the shared URLs that appear under */var/dam/share*.
 
-   ![](assets/link_share.png)
+   ![link_share](assets/link_share.png)
 
 1. Tap/click **Next** from the toolbar.  
 
 1. In the **Configure Columns** page, some columns are selected to appear in the report by default. You can select additional columns. Deselect a selected column to exclude it in the report.
 
-   ![](assets/configure_columns.png)
+   ![configure_columns](assets/configure_columns.png)
 
    To display a custom column name or property path, configure the properties for the asset binary under the jcr:content node in CRX. Alternatively, add it through property path picker.
 
-   ![](assets/custom_columns.png)
+   ![custom_columns](assets/custom_columns.png)
 
 1. Tap/click **Create** from the toolbar. A message notifies that report generation has been initiated.
 1. In the Asset Reports page, the report generation status is based on the current state of the report job, for example Success, Failed, Queued, or Scheduled. The same status appears in the notifications inbox.
 
    To view the report page, tap/click the report link. Alternatively, select the report, and tap/click the View icon from the toolbar.
 
-   ![](assets/report_page.png)
+   ![report_page](assets/report_page.png)
 
    Tap/click Download icon from the toolbar to download the report in CSV format.
 
@@ -129,15 +129,15 @@ You can add custom columns to the following reports to display more data for you
 
 1. To display a custom column, specify the name of the column in under **Custom Columns**.
 
-   ![](assets/custom_columns-1.png)
+   ![custom_columns-1](assets/custom_columns-1.png)
 
 1. Add the property path under the `jcr:content` node in CRXDE using the property path picker.
 
-   ![](assets/property_picker.png)
+   ![property_picker](assets/property_picker.png)
 
    Alternatively, type the path in the property path field.
 
-   ![](assets/property_path.png)
+   ![property_path](assets/property_path.png)
 
    To add more custom columns, tap/click **Add** and repeat steps 5 and 6.
 

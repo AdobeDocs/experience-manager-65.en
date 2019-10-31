@@ -62,7 +62,7 @@ From the global navigation, select **Tools, Deployment, Replication** and then *
 
 For the Start Path enter `/apps/social/commons`** **and select **Activate**.
 
-![](assets/chlimage_1-77.png)
+![chlimage_1-77](assets/chlimage_1-77.png)
 
 ### View Results {#view-results}
 
@@ -70,5 +70,5 @@ If you login to the publish instance as an administrator, e.g., https://localhos
 
 If you logout and re-login as `aaron.mcdonald@mailinator.com/password` and refresh the page, you will observe that the posted comment no longer displays with an avatar, instead a simple 'xxx' is displayed.
 
-![](assets/chlimage_1-78.png)
+![chlimage_1-78](assets/chlimage_1-78.png)
 

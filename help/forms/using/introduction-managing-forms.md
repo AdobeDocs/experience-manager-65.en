@@ -27,7 +27,7 @@ it on a portal server for end users. You can use the AEM Forms user interface to
 
 ## Access AEM Forms components {#access-aem-forms-components}
 
-Along with options to create forms, documents, and related assets, AEM provides options to create sites, assets, manage an AEM instance, and more. You can click the ![](assets/adobeexperiencemanager.png) Experience Manager logo to navigate to all the available tools. Along with links to the consoles of other components, it also contains links for AEM Forms . To navigate to AEM Forms, click the Experience Manager logo ![](assets/adobeexperiencemanager.png) &gt; navigation ![](assets/compass.png) &gt; Forms. Links of the following consoles are displayed:
+Along with options to create forms, documents, and related assets, AEM provides options to create sites, assets, manage an AEM instance, and more. You can click the ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Experience Manager logo to navigate to all the available tools. Along with links to the consoles of other components, it also contains links for AEM Forms . To navigate to AEM Forms, click the Experience Manager logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) &gt; navigation ![compass](assets/compass.png) &gt; Forms. Links of the following consoles are displayed:
 
 * Forms & Documents
 * Themes
@@ -56,7 +56,7 @@ The create button is the starting point of the process of creating or uploading 
     * **General Folder:** These folders are used for assets created within AEM Forms user interface. These folders do not have a strict folder structure. You can rename, create subfolders, and store adaptive forms, Interactive Communications, adaptive form fragments, Form Templates (XDPs), PDF Forms, Documents, and related assets in these folders.
     * **Forms Workflow folder:** Forms workflow folders are created when Workbench processes (LiveCycle archives) are migrated and synchronized with AEM Forms user interface. It is not allowed to rename, create a subfolder, create an Interactive Communication, an adaptive form fragment, or an Interactive Communication. It is also not allowed to delete a version folder or create and upload an adaptive form, an adaptive form fragment, or an Interactive Communication in parallel to the version folder.
 
-![](assets/folders.png)
+![folders](assets/folders.png)
 
 **A.** General folder **B.** Forms Workflow folder
 
@@ -89,7 +89,7 @@ For information about creating and using data dictionaries, see creating [data d
 
 ## Accessing AEM Forms Configurations {#accessing-aem-forms-configurations}
 
-AEM tools panel contains tools for various components. To navigate to AEM Forms-specific tools, click the Experience Manager logo ![](assets/adobeexperiencemanager.png) &gt; tools ![](assets/hammer.png) &gt; Forms. Tools to perform the following functions are displayed:
+AEM tools panel contains tools for various components. To navigate to AEM Forms-specific tools, click the Experience Manager logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) &gt; tools ![hammer](assets/hammer.png) &gt; Forms. Tools to perform the following functions are displayed:
 
 * **Configure Watched Folder:** An administrator can configure a network folder, known as a watched folder, so that when a user places a file (such as a PDF file) in the watched folder, a pre-configured operation is started and manipulates the file. For detailed information, see [Create and Configure a watched folder](/help/forms/using/creating-configure-watched-folder.md).
 * **Configure Forms App Offline Service:** The AEM Forms app offline service caches the paths or URLs of the resources used in a form. Caching paths or URLs of the resources used in a form improves server-side performance. To configure the server-side offline component of AEM Forms app, see [Working in the offline mode](/help/forms/using/work-offline-mode.md).
@@ -102,14 +102,14 @@ AEM tools panel contains tools for various components. To navigate to AEM Forms-
 
 ## Common elements of user interface {#commonelements}
 
-* **Left rail:** You can click the left rail icon ![](assets/railleftpng.png) to reveal Timeline and References capabilities of AEM Forms.
+* **Left rail:** You can click the left rail icon ![railleftpng](assets/railleftpng.png) to reveal Timeline and References capabilities of AEM Forms.
 
     * **Timeline:** You can add and view comment on an asset that is available for review in the timeline. For detailed instructions, see [Creating and managing reviews for assets in forms](../../forms/using/create-reviews-forms.md).
     * **References:** An AEM Forms asset can be used in multiple AEM Forms assets. For example, a document fragment can be used in multiple letters. References is a list of assets (other forms or resources) that the selected asset is used in and also the list of other assets that the selected asset is using.
 
 * **Breadcrumbs:** A Breadcrumb represents the title of the current console or folder. You can click the Breadcrumb option to navigate between the level of folders that are higher in hierarchy.
-* **View Switcher:** You can click the View Switcher icon ![](assets/viewlist.png) or ![](assets/viewcard.png) to quickly switch between list and card view. For more information about common user interface components, see [Authoring](/help/sites-authoring/author.md).
-* **Search:** The search option ![](assets/search.png) provides capability to quickly find and jump to the content and tools you need. Type the name of content or product capability and select from the suggestions, for example, type "Documents" to quickly find and navigate to Forms & Documents or Document Fragments console. For more information about search, see AEM 6.2 [search](/help/sites-authoring/search.md) article
+* **View Switcher:** You can click the View Switcher icon ![viewlist](assets/viewlist.png) or ![viewcard](assets/viewcard.png) to quickly switch between list and card view. For more information about common user interface components, see [Authoring](/help/sites-authoring/author.md).
+* **Search:** The search option ![search](assets/search.png) provides capability to quickly find and jump to the content and tools you need. Type the name of content or product capability and select from the suggestions, for example, type "Documents" to quickly find and navigate to Forms & Documents or Document Fragments console. For more information about search, see AEM 6.2 [search](/help/sites-authoring/search.md) article
 
 * **Actions toolbar**: On selecting an asset, the actions toolbar appears above the list of assets. It contains all the management tools for the selected asset. You can hover over a tool icon to view the tool tip describing its functionality
 

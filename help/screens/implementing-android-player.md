@@ -73,7 +73,7 @@ The cross-Android watchdog service is implemented as a cordova plugin using *Ala
 
 The following diagram shows the implementation of watchdog service:
 
-![](assets/chlimage_1-31.png)
+![chlimage_1-31](assets/chlimage_1-31.png)
 
 **1. Initialization** At the time of initialization of the cordova plugin, permissions are checked to see if we have system privileges and thus the Reboot permission. If these two criteria are met, a pending Intent for Reboot is created, otherwise a pending Intent to restart the application (based on its Launch Activity) is created.
 

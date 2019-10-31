@@ -28,7 +28,7 @@ To create a new version of a page:
 1. In your browser, open the page for which you want to create a new version.
 1. In the Sidekick, select the **Versioning** tab, then the **Create Version** sub tab.
 
-   ![](assets/screen_shot_2012-02-14at40259pm.png)
+   ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Enter a **Comment** (optional).
 1. To set a label to the version (optional), click the **More &gt;&gt;** button and set the **Label** to name the version. If the label is not set, the version is an automatically incremented number.
@@ -46,7 +46,7 @@ To restore the page to a previous version:
 1. Open the page for which you want to restore a previous version.
 1. In the sidekick, select the **Versioning** tab, then the **Restore Version** sub-tab.
 
-   ![](assets/screen_shot_2012-02-14at42949pm.png)
+   ![screen_shot_2012-02-14at42949pm](assets/screen_shot_2012-02-14at42949pm.png)
 
 1. Select the version you want to restore and select **Restore**.
 
@@ -57,11 +57,11 @@ This method can be used to restore a page version. It can also be used to restor
 1. In the **Websites** console, navigate to the page you want to restore and select it.
 1. From the top menu select **Tools**, then **Restore**:
 
-   ![](assets/screen_shot_2012-02-08at41326pm.png)
+   ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
 1. Selecting** Restore Version...** lists versions of documents in the current folder. Even if a page has been deleted, the last version will be listed:
 
-   ![](assets/screen_shot_2012-02-08at45743pm.png)
+   ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
 1. Select the version you want to restore and click **Restore**. AEM restores the version(s) (or trees) that you select.
 
@@ -73,7 +73,7 @@ This method can be used to restore a page version. It can also be used to restor
 1. From the top menu select **Tools**, then **Restore**.
 1. Selecting** Restore Tree...** opens the dialog to let you select the tree you want to restore:
 
-   ![](assets/screen_shot_2012-02-08at45743pm-1.png)
+   ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
 
 1. Click **Restore**. AEM restores the tree you have selected.
 
@@ -84,7 +84,7 @@ To compare the current version of the page with a previous version:
 1. In your browser, open the page for which you want to compare with a previous version.
 1. In the Sidekick, select the **Versioning** tab, then the **Restore Versio**n sub tab.
 
-   ![](assets/screen_shot_2012-02-14at42949pm-1.png)
+   ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
 1. Select the version you want to compare and click the **Diff** button.
 1. The differences between the current version and the selected version are displayed as follows:
@@ -93,7 +93,7 @@ To compare the current version of the page with a previous version:
     * Text that has been added is green and highlighted.
     * Images that have been added or deleted are green-framed.
 
-   ![](assets/chlimage_1-75.png)
+   ![chlimage_1-75](assets/chlimage_1-75.png)
 
 1. In the Sidekick, select the **Restore Version** sub tab and click the **&lt;&lt;Back** button to display the current version.
 
@@ -122,7 +122,7 @@ The calendar version is used if you have a specific day to be viewed:
 
 1. Open the **Versioning** tab and then click **Timewarp** (near the bottom of the sidekick). The following dialog will be shown:
 
-   ![](assets/chlimage_1-76.png)
+   ![chlimage_1-76](assets/chlimage_1-76.png)
 
 1. Using the date and time selectors specify the date/time you want and click **Go**.
 
@@ -145,7 +145,7 @@ The calendar version is used if you have a specific day to be viewed:
     * **Exit Timewarp** to exit and return to the current author page.
     * [Show Timeline](#using-the-timewarp-timeline) to view the timeline.
 
-   ![](assets/chlimage_1-77.png)
+   ![chlimage_1-77](assets/chlimage_1-77.png)
 
 ### Using the Timewarp Timeline {#using-the-timewarp-timeline}
 
@@ -161,7 +161,7 @@ If you want to view the timeline of the document:
 
 1. Click on **Show Timeline** - the document's timeline will appear; for example:
 
-   ![](assets/chlimage_1-78.png)
+   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. Select and move (hold and drag) the timeline to move through the document's timeline.
 
@@ -169,7 +169,7 @@ If you want to view the timeline of the document:
       When a page is activated, a new line starts. Every time the document is edited a new color appears.
       In the example below, the red line indicates that the page was edited during the timeframe of the initial green version and the yellow line indicates that the page was edited sometime during the red version etc.
 
-   ![](assets/chlimage_1-79.png)
+   ![chlimage_1-79](assets/chlimage_1-79.png)
 
 1. Click:
 

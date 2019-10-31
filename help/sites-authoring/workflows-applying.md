@@ -60,7 +60,7 @@ You can start a workflow from the toolbar of the **Sites** console:
 
 1. From the **Create** option in the toolbar you can now select **Workflow**.
 
-   ![](assets/screen_shot_2019-03-06at121237pm.png)
+   ![screen_shot_2019-03-06at121237pm](assets/screen_shot_2019-03-06at121237pm.png)
 
 1. The **Create Workflow** wizard will help you [specify the workflow details](#specifying-workflow-details-in-the-create-workflow-wizard).
 
@@ -71,7 +71,7 @@ From the **Timeline** you can start a workflow to be applied to your selected re
 1. [Select the resource](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) and open [Timeline](/help/sites-authoring/basic-handling.md#timeline) (or open Timeline and then select the resource).
 1. The arrowhead by the comment field can be used to reveal **Start Workflow**:
 
-   ![](assets/screen-shot_2019-03-05at120026.png)
+   ![screen-shot_2019-03-05at120026](assets/screen-shot_2019-03-05at120026.png)
 
 1. The **Create Workflow** wizard will help you [specify the workflow details](#specifying-workflow-details-in-the-create-workflow-wizard).
 
@@ -106,7 +106,7 @@ You can specify details:
 
    When complete, use **Next** to proceed.
 
-   ![](assets/wf-52.png)
+   ![wf-52](assets/wf-52.png)
 
 1. In the **Scope** step you can select:
 
@@ -125,7 +125,7 @@ You can specify details:
 
         * **Remove Selection** to remove that resource from the workflow.
 
-   ![](assets/wf-53.png)
+   ![wf-53](assets/wf-53.png)
 
    >[!NOTE]
    >
@@ -137,5 +137,5 @@ You can specify details:
 
 When editing a page you can select **Page Information** from the toolbar. The drop down menu has the option **Start in Workflow**. This will open a dialog where you can specify the required workflow, together with a title if required:
 
-![](assets/wf-54.png)
+![wf-54](assets/wf-54.png)
 

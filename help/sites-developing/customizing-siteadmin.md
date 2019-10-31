@@ -120,7 +120,7 @@ To make sure that the new service is running after having deployed the bundle co
 
 1. The response should display the new properties as follows:
 
-![](assets/screen_shot_2012-02-13at163046.png)
+![screen_shot_2012-02-13at163046](assets/screen_shot_2012-02-13at163046.png)
 
 ### Displaying the New Column {#displaying-the-new-column}
 
@@ -165,7 +165,7 @@ The last step consists in adapting the nodes structure of the Websites Administr
 
 1. The new column called **Starred** is available, displaying custom information as follows:
 
-![](assets/screen_shot_2012-02-14at104602.png)
+![screen_shot_2012-02-14at104602](assets/screen_shot_2012-02-14at104602.png)
 
 >[!CAUTION]
 >
