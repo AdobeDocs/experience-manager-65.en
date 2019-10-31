@@ -274,7 +274,7 @@ To add asset editor components:
 >
 >When designing the asset editor page, you create components that are either read-only or editable. Users know a field can be edited if an image of a pencil appears in that component. By default, most components are set up as read-only.
 
-| **Component** |**Description ** |
+| **Component** |**Description** |
 |---|---|
 | **Metadata Form and Text Field** |Lets you add additional metadata to an asset and perform an action, such as submitting, on that asset. |
 | **Sub Assets** |Lets you customize sub-assets. |

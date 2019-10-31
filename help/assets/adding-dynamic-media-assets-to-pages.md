@@ -28,7 +28,7 @@ You add Dynamic Media assets directly to the page if you are using AEM as your W
 Adding a Dynamic Media, Interactive Media, Panoramic Media, or Video 360 Media component to a page is the same as adding a component to any page. The Dynamic Media components are described in the following sections.
 
 1. In AEM, open the page where you want to add the Dynamic Media component.
-1. In the left pane, tap the **Components **icon, then filter for Dynamic Media.
+1. In the left pane, tap the **Components** icon, then filter for Dynamic Media.
 
    If no Dynamic Media components are available, you need to enable the Dynamic Media components. See [Editing Page Templates](/help/sites-authoring/templates.md#editing-templates-template-authors) for more information.
 
@@ -40,7 +40,7 @@ Adding a Dynamic Media, Interactive Media, Panoramic Media, or Video 360 Media c
 
    ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
 
-1. Hover the mouse pointer directly on the component. When the component is surrounded by a blue box, tap once to display the component's toolbar. Tap the** Configuration** (wrench)** **icon**.**
+1. Hover the mouse pointer directly on the component. When the component is surrounded by a blue box, tap once to display the component's toolbar. Tap the **Configuration (wrench)** icon.
 
    ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
 
@@ -76,7 +76,7 @@ The Dynamic Media components that are available include the following:
 
 * Dynamic Media - Use for such assets as images, video, eCatalogs, and spin sets.
 * Interactive Media - Use for any interactive assets such as interactive video, interactive images, or carousel sets.
-* Panormic Media - Use for panoramic image or panoramic VR image assets.
+* Panoramic Media - Use for panoramic image or panoramic VR image assets.
 * Video 360 Media - Use for 360 video and 360 VR video assets.
 
 >[!NOTE]
@@ -161,7 +161,7 @@ You can edit the following Dynamic Media Settings by clicking **Edit** in the co
 
 >[!NOTE]
 >
->By default, the Dynamic Media video component is adaptive. If you want to make it a fixed size, set it in the component with the **Width** and **Height **in** **the** Advanced **tab.
+>By default, the Dynamic Media video component is adaptive. If you want to make it a fixed size, set it in the component with the **Width** and **Height** in the **Advanced** tab.
 
 **Viewer preset** Select an existing video viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you may need to make it visible. See Managing Viewer Presets.
 
@@ -295,7 +295,7 @@ HTTP/2 is the new, updated web protocol that improves the way browsers and serve
 
 See [HTTP2 Delivery of Content](/help/assets/http2.md) for complete details on getting started using HTTP/2 with your Dynamic Media account.
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Using the Video Player in AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/help/assets/dynamic-media-video-player-feature-video-use.html)
 >* [Using Interactive Video with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/help/assets/dynamic-media-interactive-video-feature-video-use.html)

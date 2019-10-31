@@ -73,7 +73,7 @@ The Product Photo Shoot workflows (both commerce and without commerce) are cover
 
 In the Project Approval workflow, you assign content to a user, review, and then approve the content.
 
-1. In your Simple project, select the ****+** sign in the **Workflows** tile and select **Project Approval Workflow**.
+1. In your Simple project, select the **`+`** sign in the **Workflows** tile and select **Project Approval Workflow**.
 1. Enter a title and select who to assign it to from the Team list. If applicable, enter a description, content path, task priority and a due date.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)

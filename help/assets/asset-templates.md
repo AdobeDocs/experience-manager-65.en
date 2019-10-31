@@ -40,9 +40,7 @@ When you choose a template for your collateral, AEM Assets creates a copy of the
 You can export the updated file within the parent folder in the following formats:
 
 • INDD
-
 • PDF
-
 • JPG
 
 You can also download the output in these formats to your local system.
@@ -148,19 +146,13 @@ You can edit a collateral immediately after you create it. Alternatively, you op
    >
    >The Preview and Done icons are enabled only when the editable image fields within the collateral do not have any missing icons. If there are missing icons in your collateral, it is because AEM is unable to resolve the images in the InDesign template. Usually, AEM is unable to resolve images in the following cases:
    >
-   >
-   >
    >    * Images are not embeded in the underlying InDesign template
    >    * Images are linked from the local file system
    >
-   >
    >To enable AEM to resolve images, do the following:
-   >
-   >
    >
    >    * Embed images while creating InDesign templates (See [About links and embedded graphics](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >    * Mount AEM to your local file system, and then map missing icons with existing AEM assets.
-   >
    >
    >For more information around working with InDesign documents, see [Best Practices for Working with InDesign Documents in AEM](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
