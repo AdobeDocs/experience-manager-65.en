@@ -55,7 +55,7 @@ The permissions needed to edit/update a fragment need to be applied to either th
 
 For example, a folder that will hold all content fragments, such as:
 
-`/content/dam/contentfragments`
+* `/content/dam/contentfragments`
 
 >[!CAUTION]
 >

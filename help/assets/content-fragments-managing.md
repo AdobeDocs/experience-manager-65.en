@@ -56,16 +56,21 @@ The method of creating a content fragment is (basically) the same for both simpl
     * **Basic**
 
         * **Title**
+  
           The fragment title.
+
           Mandatory.
 
         * **Description**
+
         * **Tags**
 
     * **Advanced**
 
         * **Name**
+
           The name; will be used to form the URL.
+
           Mandatory; will be automatically derived from the title, but can be updated.
 
 1. Select **Create** to complete the action, then either **Open** the fragment for editing or return to the console with **Done**.
@@ -249,7 +254,8 @@ In addition to the standard options, [Timeline](/help/assets/managing-assets-tou
 >* Made in Timeline
 >* Related to the fragment asset
 >
->Annotations (for Content Fragments) are:  >
+>Annotations (for Content Fragments) are:  
+>
 >* Entered in the fragment editor
 >* Specific to a selected segment of text within the fragment
 >
@@ -291,6 +297,7 @@ They will be shown side-by-side, where:
 You can revert to a specific version of your fragment:
 
 * Directly from the [Timeline](/help/assets/content-fragments-managing.md#timeline-for-content-fragments).
+
   Select the required version, then the **Revert to this Version** action.
 
 * While [comparing a version to the current version](/help/assets/content-fragments-managing.md#comparing-fragment-versions) you can **Revert** to the selected version.
