@@ -39,7 +39,7 @@ The AEM Release Notes cover important information about the latest release of AE
 * [HTL User Guide](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Core Components User Guide](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR Readiness](/help/managing/gdpr-compliance.md)
+* [GDPR Readiness](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
 
