@@ -71,6 +71,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Integrating Assets with Activity Stream](extending-activity-stream.md)
     + [Extending Asset Editor](asseteditorx.md)
     + [Assets HTTP API](mac-api-assets.md)
+    + [Content Fragments Support in AEM Assets HTTP API](assets-api-content-fragments.md)
     + [Assets Proxy Development](proxy.md)
 + Administer Assets {#administer}
     + [Assets supported formats](assets-formats.md)
@@ -157,6 +158,5 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Smart Content Service Training Guidelines](smart-tags-training-guidelines.md)
     + [Video renditions](video-renditions.md)
 + From AEM 65 {#from65}
-    + [Content Fragments Support in AEM Assets HTTP API](/help/assets/assets-api-content-fragments.md)
     + [Getting Started with AEM Assets](/help/assets/getting-started-with-aem-assets.md)
     + [temp article for acrolinx checks](/help/assets/temp-article-for-acrolinx-checks.md)

@@ -14,7 +14,7 @@ The European Union's General Data Protection Regulation on data privacy rights t
 
 >[!NOTE]
 >
->See [AEM GDPR Readiness](/help/managing/gdpr-compliance.md) for further details.
+>See [AEM GDPR Readiness](/help/managing/data-protection-and-privacy.md) for further details.
 
 ![screen_shot_2018-03-22at111606](assets/screen_shot_2018-03-22at111606.jpg)
 
