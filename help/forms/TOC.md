@@ -22,6 +22,8 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Tutorial: Create form data model](using/create-form-data-model.md)
     + [Tutorial: Apply rules to adaptive form fields l](using/apply-rules-to-adaptive-form-fields.md)
     + [Tutorial: Style your adpative form](using/style-your-adaptive-form.md)
+    + [Tutorial: Publish your adaptive form](/help/forms/using/publish-your-adaptive-form.md)
+    + [Tutorial: Testing your adaptive form](/help/forms/using/testing-your-adaptive-form.md)
   + Tutorial: Create your First Interactive Communication {#create-first-interactive-communication}
     + [Tutorial: Create your first Interactive Communication](using/create-your-first-interactive-communication.md)
     + [Tutorial: Plan the Interactive Communication](using/planning-interactive-communications.md)
@@ -30,9 +32,10 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Tutorial: Create templates](using/create-templates-print-web.md)
     + [Tutorial: Create Interactive Communication](using/create-interactive-communication0.md)
   + AEM Forms Reference Collaterals {#aem-forms-reference-collaterals}
-    + [Set up and configure AEM Forms reference sites](using/setup-reference-sites.md)
+    + [Set up and configure We.Finance and Employee self-service reference sites](using/setup-reference-sites.md)
+    + [Set up and configure We.Gov reference site](/help/forms/using/forms-install-configure-gov-reference-site.md)
     + [We.Finance reference site walkthrough](using/finance-reference-site-walkthrough.md)
-    + [We.Gov reference site walkthrough](using/gov-reference-site-walkthrough.md)
+    + [We.Gov reference site walkthrough](/help/forms/using/forms-gov-reference-site-user-demo.md)
     + [Employee self-service reference site walkthrough](/help/forms/using/employee-self-service-reference-site.md)
     + [Employee recruitment reference site walkthrough](/help/forms/using/employee-recruitment-reference-site.md)
     + [We.Finance Auto Insurance Renewal reference site](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
@@ -146,6 +149,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [AEM Forms Keyboard Shortcuts](using/keyboard-shortcuts.md)
   + [Associating submission reviewers with a form](using/adding-reviewers-form.md)
   + [Authoring in-context help for form fields](using/authoring-in-field-help.md)
+  + [Use Layout mode to resize components](/help/forms/using/resize-using-layout-mode.md)
 + Adaptive Forms - Advanced Authoring {#adaptive-forms-advanced-authoring}
   + [Creating adaptive forms using JSON Schema](using/adaptive-form-json-schema-form-model.md)
   + [Creating adaptive forms using XML Schema](using/adaptive-form-xml-schema-form-model.md)
@@ -171,6 +175,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Synchronizing Adaptive Forms with XFA Form Templates](using/synchronizing-adaptive-forms-xfa.md)
   + [Integrate Adobe Sign with AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
   + [Creating and managing reviews for assets in forms](using/create-reviews-forms.md)
+  + [Embed an adaptive form or Interactive Communication in AEM Sites Single Page Application](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
 + Interactive Communications {#interactive-communications}
   + [Introduction to Interactive Communication authoring UI](using/introduction-interactive-communication-authoring.md)
   + [Create an Interactive Communication](using/create-interactive-communication.md)
@@ -186,6 +191,8 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Dynamically select a user or group for AEM Forms-centric workflow steps](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
   + [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](using/capabilities-osgi-jee-workflows.md)
   + [Initiate Document Services APIs from AEM Workflow](using/initiating-document-services-apis-aem.md)
+  + [Logging in AEM Forms workflows](/help/forms/using/forms-workflow-logs.md)
+  + [Variables in AEM workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
 + AEM Forms Workspace {#use-aem-forms-workspace}
   + [Introduction to AEM Forms workspace](using/introduction-html-workspace.md)
   + [Working with AEM Forms workspace](using/html-workspace-overview.md)
@@ -658,14 +665,5 @@ user-guide-title: AEM 6.5 Forms User Guide
       + [Programmatically Managing Endpoints](developing/programmatically-endpoints.md)
       + [Programmatically managing the Preferences Nodes](developing/programmatically-preferences-nodes.md)
       + [Protecting Documents with Policies](developing/protecting-documents-policies.md)
-      + [Validate a DDX document using theweb service API](developing/validate-ddx-document-using-web.md)
-+ From AEM65 {#aem65}
-  + [Embed an adaptive form or Interactive Communication in AEM Sites Single Page Application](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
-  + [We.Gov reference site walkthrough](/help/forms/using/forms-gov-reference-site-user-demo.md)
-  + [Set up and configure We.Gov reference site](/help/forms/using/forms-install-configure-gov-reference-site.md)
-  + [Logging in AEM Forms workflows](/help/forms/using/forms-workflow-logs.md)
-  + [Tutorial: Publish your adaptive form](/help/forms/using/publish-your-adaptive-form.md)
-  + [Use Layout mode to resize components](/help/forms/using/resize-using-layout-mode.md)
-  + [Tutorial: Testing your adaptive form](/help/forms/using/testing-your-adaptive-form.md)
-  + [Variables in AEM workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
+      + [Validate a DDX document using theweb service API](developing/validate-ddx-document-using-web.md)  
   
