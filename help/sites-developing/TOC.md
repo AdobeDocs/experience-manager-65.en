@@ -144,6 +144,8 @@ user-guide-title: AEM 6.5 Developing User Guide
     + [Customizing Views of Page Properties](page-properties-views.md)
     + [Configuring your Page for Bulk Editing of Page Properties](bulk-editing.md)
     + [Customizing and Extending Content Fragments](customizing-content-fragments.md)
+    + [Content Fragments Configuring Components for Rendering](content-fragments-config-components-rendering.md)
+    + [Experience Fragments](experience-fragments.md)
     + Extending Workflows{#extending-workflows}
       + [Developing and Extending Workflows](workflows.md)
       + [Creating Workflow Models](workflows-models.md)
@@ -212,7 +214,5 @@ user-guide-title: AEM 6.5 Developing User Guide
     + [Creating Sites for Mobile Devices](mobile.md)
     + [Emulators](emulators.md)
 + From AEM 65 {#from65}
-  + [Content Fragments Configuring Components for Rendering](/help/sites-developing/content-fragments-config-components-rendering.md)
-  + [Experience Fragments](/help/sites-developing/experience-fragments.md)
   + [Migration to the Touch UI](/help/sites-developing/touch-ui-migration.md)
   + [Variables in AEM workflows](/help/sites-developing/using-variables-in-aem-workflows.md)

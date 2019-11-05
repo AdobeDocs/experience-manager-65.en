@@ -137,6 +137,7 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [Integrating with the Adobe Marketing Cloud](marketing-cloud.md)
     + [Manually Configuring the Integration with Adobe Target](target-configuring.md)
     + [Prerequisites for Integrating with Adobe Target](target-requirements.md)
+    + [Integration with Adobe Target using Adobe I/O](integration-ims-adobe-io.md)
     + [Adobe Classifications](adobeanalytics-classifications.md)
     + [Integrating with Adobe Search&Promote](search-and-promote.md)
     + [Solutions Integration](integration.md)
@@ -159,6 +160,5 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [WebDAV Access](webdav-access.md)
 + From AEM 65 {#from65}
     + [Troubleshoot issues with AEM Rich Text Editor](/help/sites-administering/aem-rte-faq.md)
-    + [Integration with Adobe Target using Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md)
     + [Principal View for Permissions Management](/help/sites-administering/touch-ui-principal-view.md)
     + [Bulk Processing Operations](/help/sites-administering/bulk-processing-operations.md)

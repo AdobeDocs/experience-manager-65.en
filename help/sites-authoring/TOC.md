@@ -48,6 +48,7 @@ user-guide-title: AEM 6.5 Authoring User Guide
     + [Configuring Components in Design Mode](default-components-designmode.md)
     + [Foundation Components](default-components-foundation.md)
     + [Scaffolding](scaffolding.md)
+    + [Seeing Page Analytics Data](page-analytics-using.md)
 + Projects {#projects}
     + [Projects](projects.md)
     + [Managing Projects](touch-ui-managing-projects.md)
@@ -85,5 +86,3 @@ user-guide-title: AEM 6.5 Authoring User Guide
     + [Targeting your Adobe Campaign](target-adobe-campaign.md)
     + [Creating Adobe Campaign Forms in AEM](adobe-campaign-forms.md)
     + [Adobe Campaign Components](adobe-campaign-components.md)
-+ From AEM 65 {#from65}
-    + [Seeing Page Analytics Data](/help/sites-authoring/page-analytics-using.md)
