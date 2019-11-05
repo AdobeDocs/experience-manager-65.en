@@ -27,7 +27,7 @@ To make the association you first need to [add your media asset(s) to a collecti
 
 1. Open your fragment and select **Associated Content** from the side panel.
 
-   ![chlimage_1-71](assets/chlimage_1-71.png)
+   ![chlimage_1-207](assets/chlimage_1-207.png)
 
 1. Select **Associate Content** or **Associate Collection** (as appropriate, depending on whether any collections have already been associated or not).
 1. Select the required collection.
