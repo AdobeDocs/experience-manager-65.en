@@ -1,6 +1,6 @@
 ---
 title: Manage smart tags and searches
-description: Update or remove the inaccurate smart tags to improve the relevance of tags.
+description: Update or remove the inaccurate smart tags to improve the relevance of tags
 uuid: 0f34aa3a-cb8b-422c-8bdc-783a2a85b33e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
