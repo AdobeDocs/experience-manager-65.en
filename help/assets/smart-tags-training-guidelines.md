@@ -1,10 +1,8 @@
 ---
 title: Smart Content Service Training Guidelines
-seo-title: Smart Content Service Training Guidelines
-description: null
-seo-description: null
+description: Train the AI service to apply smart tags to assets
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
-contentOwner: asgupta
+contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
 ---
 
@@ -16,11 +14,11 @@ To be able to effectively tag your brand images, the Smart Content Service requi
 
 For best results, images in your training set should conform to the following guidelines:
 
-**Quantity and size:** Minimum **30 images per tag**. Minimum of 500 pixels on the longer side.
+**Quantity and size:** Minimum 30 images per tag. Minimum of 500 pixels on the longer side.
 
 **Coherence**: Images for a tag should be visually similar.
 
-For example, it is not a good idea to tag all of these images as *my-party* (for training) because they are not visually similar.
+For example, it is not a good idea to tag all of these images as `my-party` (for training) because they are not visually similar.
 
 ![Illustrative images to exemplify the guidelines for training](do-not-localize/coherence.png)
 
