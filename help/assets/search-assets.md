@@ -1,12 +1,9 @@
 ---
-title: Search assets in AEM
-seo-title: Search assets in AEM
+title: Search digital assets and images in AEM
 description: Learn how to find the required assets in AEM by using Filters panel, and how to use the assets that show up in search.
-seo-description: Learn how to find the required assets in AEM by using filters panel, and how to use the assets that display in search.
 uuid: c343b550-724d-4124-ae76-9331ca877ae7
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: authoring
 discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
 docset: aem65
 
