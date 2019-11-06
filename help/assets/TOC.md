@@ -157,6 +157,3 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Private folder sharing](private-folder.md)
     + [Smart Content Service Training Guidelines](smart-tags-training-guidelines.md)
     + [Video renditions](video-renditions.md)
-+ From AEM 65 {#from65}
-    + [Getting Started with AEM Assets](/help/assets/getting-started-with-aem-assets.md)
-    + [temp article for acrolinx checks](/help/assets/temp-article-for-acrolinx-checks.md)

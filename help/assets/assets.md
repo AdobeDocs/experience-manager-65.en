@@ -92,9 +92,7 @@ When working with digital assets in AEM, you need to understand the following te
 
 **Collection** A collection of assets, either based on physical location (folder), common properties (saved search folder), or user selection (lightbox folders).
 
-**Metadata**
-
-Assets have metadata; for example, author, expiry date, DRM Information (Digital Rights Management), and so on. Metadata is under access control. AEM Assets supports the following various common metadata schemata out of the box:
+**Metadata** Assets have metadata; for example, author, expiry date, DRM Information (Digital Rights Management), and so on. Metadata is under access control. AEM Assets supports the following various common metadata schemata out of the box:
 
 * Dublin Core: including author, description, date, subject, and so on.
 * IPTC: including event, model, location, and so on.

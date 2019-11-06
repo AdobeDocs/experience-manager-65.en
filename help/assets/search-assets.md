@@ -12,7 +12,7 @@ docset: aem65
 
 ---
 
-# Search assets in AEM{#search-assets-in-aem}
+# Search assets in AEM {#search-assets-in-aem}
 
 You can achieve higher content velocity using AEM's user-friendly asset discovery options. Your teams can reduce time to market with seamless, intelligent search experience using out-of-the-box functionality and custom methods. Searching assets is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators. Simple, advanced, and custom searches that you can perform via AEM Assets user interface or other apps and surfaces help fulfill these use cases.
 
@@ -96,8 +96,7 @@ AEM search capability supports searching for collections and searching for asset
 Familiarize yourself with the search interface and the available actions.
 
 ![Understanding parts of Assets search results interface](assets/aem_search_results.png)
-
-Understanding parts of Assets search results interface
+*Figure:* Understanding parts of Assets search results interface
 
 **A.** Save the search as a Smart Collection. **B.** Filters (predicates) to narrow the search results. **C.** Display Files, Folders, or both in the search results. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F.** Omnisearch field with user-provided search keyword **G.** Check box to select all the search results **H.** Number of displayed search results out of the total search results **I.** Close the search **J.** Switch between card view and list view
 
