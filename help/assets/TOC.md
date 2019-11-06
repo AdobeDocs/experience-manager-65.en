@@ -14,7 +14,6 @@ user-guide-title: AEM 6.5 Assets User Guide
 + Use AEM Assets {#using}
     + [AEM Assets home page experience](assets-home-page.md)
     + [Search assets in AEM](search-assets.md)
-    + [GQL full-text search](gql-search.md)
     + [Multilingual assets](multilingual-assets.md)
     + [Use Adobe Stock assets in AEM Assets](aem-assets-adobe-stock.md)
     + [Review folder assets and collections](bulk-approval.md)
@@ -133,12 +132,10 @@ user-guide-title: AEM 6.5 Assets User Guide
 + Manage Assets {#managing}
     + [Managing Assets with the Touch-Optimized UI](managing-assets-touch-ui.md)
     + [Managing multiple assets and collections](managing-multiple-assets.md)
-    + [Asset selector](asset-selector.md)
     + [Managing Collections](managing-collections-touch-ui.md)
     + [Check in and check out files in Assets](check-out-and-submit-assets.md)
     + [Configure asset tagging using the Smart Content Service](config-smart-tagging.md)
     + [Enabling duplicate detection](duplicate-detection.md)
-    + [Enhanced sorting of assets in AEM](enhance-sort.md)
     + [Organize digital assets](organize-assets.md)
     + [Managing video assets](managing-video-assets.md)
     + [Creating Translation Projects](translation-projects.md)
@@ -153,7 +150,6 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Managing Compound Assets](managing-linked-subassets.md)
     + [Related Assets](related-assets.md)
     + [Asset Insights](touch-ui-asset-insights.md)
-    + [Searching Video Assets](search-video-assets.md)
     + [Private folder sharing](private-folder.md)
     + [Smart Content Service Training Guidelines](smart-tags-training-guidelines.md)
     + [Video renditions](video-renditions.md)
