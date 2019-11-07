@@ -173,7 +173,7 @@ The Dynamic Media Classic **[!UICONTROL Image]** component lets you add Dynamic 
 
 **[!UICONTROL Output Format]** &ndash; Select the output format of the image, for example jpeg. Depending on the output format you select, you may have additional configuration options. See [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options).
 
-**[!UICONTROL Sharpening]** &ndash; Select how you want to sharpen the image. Sharpening is explained in detail in [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options) and [Sharpening best practices](https://marketing.adobe.com/resources/help/en_US/s7/sharpening/s7_sharpening_images.pdf).
+**[!UICONTROL Sharpening]** &ndash; Select how you want to sharpen the image. Sharpening is explained in detail in [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options) and [Sharpening best practices](/help/assets/assets/s7_sharpening_images.pdf).
 
 **[!UICONTROL URL Modifiers]** &ndash; You can change image effects by supplying additional Dynamic Media Classic image commands. These are described in [Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html).
 
