@@ -167,6 +167,11 @@ This section lists features and capabilities that have been removed from AEM 6.5
    <td><strong>Replacement</strong></td>
   </tr>
   <tr>
+   <td>Analytics Activity Map</td>
+   <td>The version of the Activity Map that is included within AEM.</td>
+   <td><p>Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM.</br></br>The <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">ActivityMap plugin provided by Adobe Analytics</a> should now be used.</p></td>
+  </tr>
+  <tr>
    <td>Integrations</td>
    <td>ExactTarget integration has been removed from the default distribution (Quickstart) and it is no longer available.</td>
    <td>No replacement</td>

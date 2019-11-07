@@ -81,78 +81,8 @@ Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites
 
 ## Analytics visible from the Page Editor (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
->[!NOTE]
+>[!CAUTION]
 >
->This will be shown if the [Activity Map has been configured](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) for your website.
-
->[!NOTE]
+>Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM.
 >
->Data for the Activity Map is taken from Adobe Analytics.
-
-When your website has been [configured for Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), you can use the [mode Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) to view relevant data. For example:
-
-![aa-07](assets/aa-07.png)
-
-### Accessing the Activity Map {#accessing-the-activity-map}
-
-After selecting the [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) mode, you will be requested to enter your Adobe Analytics credentials.
-
-![aa-03](assets/aa-03.png)
-
-The **Analytics** floating toolbar is shown; here you can:
-
-* change the toolbar format using the double arrows (**&gt;&gt;**)
-* Toggle Page Details (eye icon)
-* Configure the Activity Map Settings ( cog icon)
-* Select the analytics to show (various drop-down selectors)
-* Quit the Activity Map, and close the toolbar (x)
-
-![aa-09](assets/aa-09.png)
-
-### Selecting the Analytics to Show {#selecting-the-analytics-to-show}
-
-You can select the analytical data to be shown, and how it should be displayed, using the various criteria:
-
-* **Standard**/**Live**
-
-* event type
-* user group
-* **Bubbles**/**Gradient**/**Gainers & Losers**/**Off**
-
-* period to be shown
-
-![aa-13](assets/aa-13.png)
-
-### Configuring the Activity Map {#configuring-the-activity-map}
-
-Use the **Show Settings** icon to open the **Activity Map Settings** dialog.
-
-![aa-04](assets/aa-04.png)
-
-The **Activity Map Settings** dialog provides a range of options on three tabs:
-
-![aa-06](assets/aa-06.png)
-
-* General
-
-    * Report Suite
-    * Page Name
-    * Language
-    * Label Overlays with
-    * Label Font Size
-    * Gradient Color
-    * Bubble Color
-    * Color Gradient Based On
-    * Gradient Transparency
-
-* Standard
-
-    * Display (type and number of links)
-    * Hide overlays for links that received no hits
-
-* Live
-
-    * Display Top (Gainers or Losers
-    * Exclude bottom %
-    * Auto Update (data and period)
-
+>The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
