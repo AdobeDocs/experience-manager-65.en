@@ -144,10 +144,10 @@ In order to enable the S3 data store functionality, a feature pack containing th
 
 >[!NOTE]
 >
->When using AEM 6.4 with TarMK, binaries will be stored by default in the `FileDataStore`. To use TarMK with the S3 Datastore, you need to start AEM using the `crx3tar-nofds` runmode, for example:
+>When using AEM with TarMK, binaries will be stored by default in the `FileDataStore`. To use TarMK with the S3 Datastore, you need to start AEM using the `crx3tar-nofds` runmode, for example:
 
 ```shell
-java -jar aem6.4.jar -r crx3tar-nofds
+java -jar <aem-jar-file>.jar -r crx3tar-nofds
 ```
 
 Once downloaded, you can install and configure the S3 Connector as follows:
@@ -382,10 +382,10 @@ In order to enable the Azure data store functionality, a feature pack containing
 
 >[!NOTE]
 >
->When using AEM 6.4 with TarMK, binaries will be stored by default in the FileDataStore. To use TarMK with the Azure DataStore, you need to start AEM using the `crx3tar-nofds` runmode, for example:
+>When using AEM with TarMK, binaries will be stored by default in the FileDataStore. To use TarMK with the Azure DataStore, you need to start AEM using the `crx3tar-nofds` runmode, for example:
 
 ```shell
-java -jar aem6.4.jar -r crx3tar-nofds
+java -jar <aem-jar-file>.jar -r crx3tar-nofds
 ```
 
 Once downloaded, you can install and configure the Azure connector as follows:
