@@ -1,29 +1,21 @@
 ---
 title: Managing Assets with the Touch-Optimized UI
-seo-title: Managing Assets with the Touch-Optimized UI
 description: Learn about various asset management and editing tasks that you can perform using the Touch-optimized user interface of AEM Assets.
-seo-description: Learn how to upload, manage, and edit assets using the touch-optimized user interface
 uuid: 7ee746f1-bbca-4bce-82e7-fed9fa9e1170
-contentOwner: msm-service
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-content-type: reference
-topic-tags: authoring
 discoiquuid: 83a825ff-5c3d-4e2c-a265-eead090a5984
 docset: aem65
 
 ---
 
-# Managing Assets with the Touch-Optimized UI{#managing-assets-with-the-touch-optimized-ui}
+# Managing assets with the Touch-optimized UI {#managing-assets-with-the-touch-optimized-ui}
 
-This article describes how to manage and edit assets using the Adobe Experience Manager (AEM) Assets Touch-optimized user interface (UI). For elementary knowledge about the UI, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md).
-
->[!CAUTION]
->
->See also [Managing Content Fragments](/help/assets/content-fragments-managing.md) assets.
+This article describes how to manage and edit assets using the Adobe Experience Manager (AEM) Assets Touch-optimized user interface (UI). For elementary knowledge about the UI, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
 
 ## Creating folders {#creating-folders}
 
-When organizing a collection of assets, for example, all *Nature* images, you can create folders to keep them together. You can use folders to categorize and organize your assets. AEM Assets does not require you to organize assets in folders to work better.
+When organizing a collection of assets, for example, all `Nature` images, you can create folders to keep them together. You can use folders to categorize and organize your assets. AEM Assets does not require you to organize assets in folders to work better.
 
 >[!NOTE]
 >
@@ -39,6 +31,11 @@ The following (space-separated list of) characters are not supported:
 * asset folder name must not contain `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Uploading Assets {#uploading-assets}
+
+<!-- TBD the following:
+Move this section into a new article. Already a CQDOC ticket is created for this.
+In this complete article, replace emphasis with UICONTROL where appropriate.
+-->
 
 You can upload various types of assets (including images, PDF files, RAW files, and so on) from your local folder or a network drive to AEM Assets.
 
@@ -635,11 +632,7 @@ See also [Previewing Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 1. Navigate to the location of the asset whose metadata you want to edit.
 
-1. Select the asset, and tap/click **Properties** from the toolbar to view asset properties.
-
-   ![properties](assets/properties.png)
-
-   Alternatively, choose the **Properties** quick action on the asset card.
+1. Select the asset, and tap/click **Properties** from the toolbar to view asset properties. Alternatively, choose the **Properties** quick action on the asset card.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
@@ -653,17 +646,9 @@ See also [Previewing Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **Off Time** field.
+1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **Off Time** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
-
-   >[!NOTE]
-   >
-   >The deactivation date should be later than the activation date for an asset.
-
-   >[!NOTE]
-   >
-   >After the Off time is reached, the asset and its renditions are no longer available in the Assets UI.
 
 1. In the **Tags** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in AEM.
 
