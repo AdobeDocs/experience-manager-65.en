@@ -23,7 +23,7 @@ You can import and export search template definitions and global settings for Wo
 
 For example, you can move from a development environment to a production environment by exporting the search template definitions and global settings from one environment and importing them into the other.
 
-After you export the global settings file, you can modify the settings in an XML or text editor. However, the only settings you may want to edit are the JChannelConnectionProperties, formViewOnly, and specialRoutes settings. For more information, see [Workspace global settings](importing-exporting-global-settings.md#workspace_global_settings).
+After you export the global settings file, you can modify the settings in an XML or text editor. However, the only settings you may want to edit are the JChannelConnectionProperties, formViewOnly, and specialRoutes settings. For more information, see [Workspace global settings](importing-exporting-global-settings.md#workspace-global_settings).
 
 >[!NOTE]
 >

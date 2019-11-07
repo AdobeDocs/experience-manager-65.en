@@ -116,7 +116,7 @@ Perform the following steps to add fields to an adaptive form and customize vari
    >
    >
 
-1. Select the **Adobe Sign Block** component and tap the **Edit ** ![aem_6_3_edit](assets/aem_6_3_edit.png) icon. It displays options to add fields and format appearance of a field.
+1. Select the **Adobe Sign Block** component and tap the **Edit** ![aem_6_3_edit](assets/aem_6_3_edit.png) icon. It displays options to add fields and format appearance of a field.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
@@ -152,7 +152,7 @@ Perform the following steps to select a cloud service and order of signing:
 
 ![cloud-service](assets/cloud-service.png)
 
-1. In the Content browser, tap **Form Container**, and tap the **Configure ** ![configure](assets/configure.png) icon. It opens properties browser and displays Adaptive Form container properties.
+1. In the Content browser, tap **Form Container**, and tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser and displays Adaptive Form container properties.
 1. In the properties browser, expand the **Electronic Signature **accordion, and select the **Enable Adobe Sign** option. It enables Adobe Sign for an adaptive form.
 1. Select a cloud service from the already configured list of Adobe Sign Cloud Services.
 
@@ -164,18 +164,18 @@ Perform the following steps to select a cloud service and order of signing:
 
    In simultaneous order, multiple signers can sign a form at a time.
 
-1. [Add Signers to an adaptive form](../../forms/using/working-with-adobe-sign.md#main-pars-header-1374317451) and tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
+1. [Add Signers to an adaptive form](../../forms/using/working-with-adobe-sign.md#main-pars-header-1374317451) and tap the Done ![aem-6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
 
 ### Add Signers to an adaptive form {#addsignerstoanadaptiveform}
 
 You can have only one signer or multiple signers for an adaptive form. When you add a signer, you can also configure authentication details for the signer. You can also select if the form filler and singer are the same person. Perform the following steps to add and provide various details about a signer:
 
-1. In the Content browser, tap **Form Container**, and tap the **Configure ** ![configure](assets/configure.png) icon. It opens properties browser with Adaptive Form container properties.
+1. In the Content browser, tap **Form Container**, and tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser with Adaptive Form container properties.
 1. In the properties browser, expand the **Electronic Signature **accordion, and select the **Enable Adobe Sign** option. It enables Adobe Sign for an adaptive form.
 1. Tap **Add Signer** under **Signer Configuration. **It adds a signer to the adaptive form. You can add multiple Adobe Sign signers to an adaptive form.
 1. ![phone-details](assets/phone-details.png)
 
-   Click the **Edit ** ![aem_6_3_edit](assets/aem_6_3_edit.png) icon to specify the following information about the signer:
+   Click the **Edit** ![aem_6_3_edit](assets/aem_6_3_edit.png) icon to specify the following information about the signer:
 
     * **Title: **Specify a title to uniquely identify a signer.
 
@@ -224,7 +224,7 @@ After [editing adaptive form properties for Adobe sign](../../forms/using/workin
 
    ![Sign block](assets/sign-block-new.png)
 
-1. Select the **Adobe Sign Block** component and tap the **Edit ** ![aem_6_3_edit](assets/aem_6_3_edit.png) icon. It displays options to add fields and format appearance of a field.
+1. Select the **Adobe Sign Block** component and tap the **Edit** ![aem_6_3_edit](assets/aem_6_3_edit.png) icon. It displays options to add fields and format appearance of a field.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
@@ -267,7 +267,7 @@ Use the Signature Step component to provide an area to electronically sign the f
 Perform the following steps to configure the Signature Step component:
 
 1. Drag-and-drop the **Signature Step** component from the Components browser to the form.
-1. Select the newly added Signature step component and tap the **Configure ** ![configure](assets/configure.png) icon. It opens properties browser and displays Signature step properties. Configure the following properties:
+1. Select the newly added Signature step component and tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser and displays Signature step properties. Configure the following properties:
 
     * **Element Name**: Specify the name of the component.
 
