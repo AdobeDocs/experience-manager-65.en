@@ -80,18 +80,15 @@ The properties are distributed across several tabs.
 
   Allows you to enter a vanity URL for this page, which can allow you to have a shorter and/or more expressive URL.
 
-  For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
+  For example, if the Vanity URL is set to `welcome`to the page identified by the path `/v1.0/startpage`for the website `http://example.com,` then `http://example.com/welcome`would be the vanity URL of `http://example.com/content/v1.0/startpage`
 
   >[!CAUTION]
   >
   >Vanity URLs:
   >
-  >
-  >
-  >    * Must be unique so you should take care that the value is not already used by another page.
-  >    * Do not support regex patterns.
-  >    * Should not be set to an existing page.
-  >
+  >* Must be unique so you should take care that the value is not already used by another page.
+  >* Do not support regex patterns.
+  >* Should not be set to an existing page.
   >
 
   You also need to configure Dispatcher to enable access to vanity URLs. See [Enabling Access to Vanity URLs](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) for more details.
@@ -126,9 +123,7 @@ The properties are distributed across several tabs.
   >
   >Alias sets the `sling:alias` property to define an alias name for the resource (this only impacts the resource, not the path).
   >
-  >
   >For example: if you define an alias of `latin-lang` for the node `/content/we-retail/spanish` node, then this page can be accessed via `/content/we-retail/latin-language`
-  >
   >
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
 
@@ -154,7 +149,7 @@ The properties are distributed across several tabs.
 
   >[!CAUTION]
   >
-  >The ** [Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message will be shown under **Authentication Requirement** and the option will not be editable, nor will the [Permissions](/help/sites-authoring/editing-page-properties.md#permissions) be editable.
+  >The **[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message will be shown under **Authentication Requirement** and the option will not be editable, nor will the [Permissions](/help/sites-authoring/editing-page-properties.md#permissions) be editable.
   >
   >
   >In such a case the CUG permissions must be edited in the [classic UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -271,7 +266,7 @@ You can define page properties:
 
 ### From the Sites Console - Single Page {#from-the-sites-console-single-page}
 
-Clicking or tapping** Properties** to define the page properties:
+Clicking or tapping **Properties** to define the page properties:
 
 1. Using the **Sites** console, navigate to the location of the page for which you want to view and edit properties.
 
@@ -296,7 +291,7 @@ When editing a page you can use **Page Information** to define the page properti
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Select** Open Properties** and a dailog will open allowing you to edit the properties, sorted by the appropriate tab. The following buttons are also available at the right of the toolbar:
+1. Select **Open Properties** and a dailog will open allowing you to edit the properties, sorted by the appropriate tab. The following buttons are also available at the right of the toolbar:
 
     * **Cancel**
     * **Save & Close**
@@ -320,7 +315,7 @@ You can select multiple pages for bulk editing by various methods, including:
 
 ![epp-01](assets/epp-01.png)
 
-After selecting the pages and then clicking or tapping the **Properties **option,** **the bulk properties will be shown:
+After selecting the pages and then clicking or tapping the **Properties option**, the bulk properties will be shown:
 
 ![epp-02](assets/epp-02.png)
 
@@ -371,4 +366,3 @@ Once you have entered Bulk Editing you can:
 >[!NOTE]
 >
 >The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
-
