@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: AEM 6.5 Forms User Guide
 ---
 # AEM 6.5 - Forms User Guide {#forms}
-
+<!--
 + [AEM 6.5 Forms User Guide](home.md)
 + Release Notes {#release-notes-new-features}
   + [Release Notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/forms.html)
@@ -73,7 +73,7 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Performance tuning of AEM Forms server](using/performance-tuning-aem-forms.md)
     + [Configure adaptive forms cache](using/configure-adaptive-forms-cache.md)
     + [Configuring AEM DS settings](using/configuring-the-processing-server-url-.md)
-    <!-- + [Configuring the synchronization scheduler](using/configure-synchronization-scheduler.md) -->
+    + [Configuring the synchronization scheduler](using/configure-synchronization-scheduler.md)
     + [Configuring the Connector for Microsoft SharePoint](http://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
     + [Connecting AEM Forms with Adobe LiveCycle](using/aem-livecycle-connector.md)
     + [Configuring AEM Forms to submit form data to an AEM Forms on JEE process](using/submit-form-data-livecycle-process.md)
@@ -139,7 +139,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Inline styling of adaptive form components](using/inline-style-adaptive-forms.md)
   + [Introduction to multi-step form sequence](using/introduction-form-sequence.md)
   + [Layout capabilities of adaptive forms](using/layout-capabilities-adaptive-forms.md)
-  <!-- + [Placeholder text in AEM Forms](using/placeholder-text-in-aem-forms-.md) -->
+  + [Placeholder text in AEM Forms](using/placeholder-text-in-aem-forms-.md)
   + [Previewing a form](using/previewing-forms.md)
   + [Reusing adaptive forms](using/reusing-adaptive-forms.md)
   + [Separator component in adaptive forms](using/separator-component-in-adaptive-forms.md)
@@ -663,4 +663,6 @@ user-guide-title: AEM 6.5 Forms User Guide
       + [Programmatically managing the Preferences Nodes](developing/programmatically-preferences-nodes.md)
       + [Protecting Documents with Policies](developing/protecting-documents-policies.md)
       + [Validate a DDX document using theweb service API](developing/validate-ddx-document-using-web.md)  
+
+-->
   
