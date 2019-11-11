@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: AEM 6.5 Forms User Guide
 ---
 # AEM 6.5 - Forms User Guide {#forms}
-
+<!--
 + [AEM 6.5 Forms User Guide](home.md)
 + Release Notes {#release-notes-new-features}
   + [Release Notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/forms.html)
@@ -663,4 +663,5 @@ user-guide-title: AEM 6.5 Forms User Guide
       + [Programmatically managing the Preferences Nodes](developing/programmatically-preferences-nodes.md)
       + [Protecting Documents with Policies](developing/protecting-documents-policies.md)
       + [Validate a DDX document using theweb service API](developing/validate-ddx-document-using-web.md)  
+-->
   
