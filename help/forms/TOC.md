@@ -139,7 +139,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Inline styling of adaptive form components](using/inline-style-adaptive-forms.md)
   + [Introduction to multi-step form sequence](using/introduction-form-sequence.md)
   + [Layout capabilities of adaptive forms](using/layout-capabilities-adaptive-forms.md)
-  + [Placeholder text in AEM Forms](using/placeholder-text-in-aem-forms-.md)
+  <!-- + [Placeholder text in AEM Forms](using/placeholder-text-in-aem-forms-.md) -->
   + [Previewing a form](using/previewing-forms.md)
   + [Reusing adaptive forms](using/reusing-adaptive-forms.md)
   + [Separator component in adaptive forms](using/separator-component-in-adaptive-forms.md)
