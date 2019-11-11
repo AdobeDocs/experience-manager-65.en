@@ -79,7 +79,7 @@ The full-screen editor provides:
 
 The following actions are also available (for all the [formats](#formats)) when the full-screen editor (i.e. multi-line text) is open:
 
-* Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text,](#plaintext,) [Markdown](#markdown))
+* Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text,](#plain-text) [Markdown](#markdown))
 
 * [Show Text Statistics](#viewing-key-statistics)
 
