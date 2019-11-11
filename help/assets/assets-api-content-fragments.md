@@ -67,7 +67,7 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 
 All requests are atomic.
 
-This means that subsequent ( `write`) requests cannot be combined into a single transaction that could succeed or fail as a single entity.
+This means that subsequent (`write`) requests cannot be combined into a single transaction that could succeed or fail as a single entity.
 
 ### AEM (Assets) REST API versus AEM Components {#aem-assets-rest-api-versus-aem-components}
 

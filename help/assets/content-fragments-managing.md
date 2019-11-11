@@ -191,7 +191,7 @@ The editor has two options:
 
 While editing your content fragment AEM automatically creates versions to ensure that prior content can be restored if you **Cancel** your changes:
 
-1. When a content fragment is opened for editing AEM checks for the existence of the cookie-based token that indicates whether an *editing session *exists:
+1. When a content fragment is opened for editing AEM checks for the existence of the cookie-based token that indicates whether an *editing session* exists:
 
     1. If the token is found, the fragment is considered to be part of the existing editing session.
     1. If the token is *not* available and the user starts editing content, a version is created and a token for this new editing session is sent to the client, where it is saved in a cookie.

@@ -181,7 +181,7 @@ Summarizing text is designed to help users reduce the length of their text to a 
 >
 >For example, `en/` as in the following path:
 >
->`/content/dam/my-brand/`**en**`/path-down/my-content-fragment`
+>`/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
 >
@@ -320,7 +320,7 @@ To rename an existing variation:
 
 1. Open your fragment and select **Variations** from the side panel.
 1. Select the required variation.
-1. Select **Rename** from the ***Actions*** drop down.
+1. Select **Rename** from the **Actions** drop down.
 
 1. Enter the new **Title** and/or **Description** in the resulting dialog box.
 
@@ -336,7 +336,7 @@ To delete an existing variation:
 
 1. Open your fragment and select **Variations** from the side panel.
 1. Select the required variation.
-1. Select **Delete** from the ***Actions*** drop down.
+1. Select **Delete** from the **Actions** drop down.
 
 1. Confirm the **Delete** action in the dialog.
 
