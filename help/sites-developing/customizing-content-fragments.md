@@ -196,14 +196,20 @@ Content fragments can be integrated with:
     * The individual translations of a content fragment are actually separate fragments; for example:
 
         * they are located under different language roots:
-          `/content/dam/<*path*/en/<*to*>/<*fragment*>`
+         
+          `/content/dam/<path>/en/<to>/<fragment>`
+        
           vs.
-          `/content/dam/<*path*>/de/<*to*>/<*fragment*>`
+        
+          `/content/dam/<path>/de/<to>/<fragment>`
 
         * but they share exactly the same relative path below the language root:
-          `/content/dam/<*path*>/en/<*to*>/<*fragment*>`
+        
+          `/content/dam/<path>/en/<to>/<fragment>`
+        
           vs.
-          `/content/dam/<*path*>/de/<*to*>/<*fragment*>`
+        
+          `/content/dam/<path>/de/<to>/<fragment>`
 
     * Besides the rule-based paths, there is no further connection between the different language versions of a content fragment; they are handled as two separate fragments, although the UI provides the means to navigate between the language variants.
 
@@ -211,19 +217,18 @@ Content fragments can be integrated with:
   >
   >The AEM translation workflow works with `/content`:
   >
-  >
-  >
   >    * As the content fragment models reside in `/conf`, these are not included in such translations. You can [internationalize the UI strings](/help/sites-developing/i18n-dev.md).
   >
   >    * Templates are copied to create the fragment so this is implicit.
-  >
   >
 
 * **Metadata schemas**
 
     * Content fragments (re)use the [metadata schemas](/help/assets/metadata-schemas.md), that can be defined with standard assets.
     * CFM provides its own, specific schema:
+
       `/libs/dam/content/schemaeditors/forms/contentfragment`
+
       this can be extended if required.
 
     * The respective schema form is integrated with the fragment editor.
@@ -242,7 +247,7 @@ You can use the server-side API to access your content fragments; see:
 
 The following three interfaces can serve as entry points:
 
-* **Fragment Template** ( ` [FragmentTemplate](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)`)
+* **Fragment Template** ([FragmentTemplate](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
   Use `FragmentTemplate.createFragment()` for creating a new fragment.
 
@@ -286,7 +291,7 @@ The following three interfaces can serve as entry points:
 
         * Get basic data (name, title, description)
 
-* **Content Fragment** ( ` [ContentFragment](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)`)
+* **Content Fragment** ([ContentFragment](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
   This interface allows you to work with a content fragment in an abstract way.
 
@@ -318,7 +323,7 @@ The following three interfaces can serve as entry points:
 
   Interfaces that represent the prime elements of a fragment are:
 
-    * **Content Element** ( ` [ContentElement](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentElement.html)`)
+    * **Content Element** ([ContentElement](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
         * Get basic data (name, title, description)
         * Get/Set content
@@ -332,7 +337,7 @@ The following three interfaces can serve as entry points:
 
         * Shortcut for resolving variations (applying some additional, implementation-specific fallback logic if the specified variation is not available for an element)
 
-    * **Content Variation** ( ` [ContentVariation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html)`)
+    * **Content Variation** ([ContentVariation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
         * Get basic data (name, title, description)
         * Get/Set content
