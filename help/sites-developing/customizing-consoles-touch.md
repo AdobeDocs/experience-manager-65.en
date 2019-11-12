@@ -98,7 +98,7 @@ You can customize the default view (column, card, list) for a console:
 
    This can then be connected to a toolbar item on your console:
 
-   `/apps/<*yourProject*>/admin/ext/launches`
+   `/apps/<yourProject>/admin/ext/launches`
 
    For example, in selection mode:
 
