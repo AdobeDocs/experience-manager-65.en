@@ -102,7 +102,7 @@ Use the following procedure to create a task for an SEO recommendation.
     * Task Priority: The priority of the task.
     * Due Date: The date by which the task should be completed.
 
-   **Note: **The task that is created also includes the path to the page to which the SEO recommendation applies.
+   **Note:** The task that is created also includes the path to the page to which the SEO recommendation applies.
 
 1. Click or tap Done to close the Task Created message.
 

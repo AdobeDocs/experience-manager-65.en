@@ -41,7 +41,7 @@ Follow the steps below to implement the hospitality reservation activation use c
 
 1. **Configuring the segments in Audiences as per the requirements**
 
-    1. Navigate to the segments in your audience (Refer to ***Step 2: Setting up Audience Segmentation*** in ** [Configuring ContextHub in AEM Screens](/help/screens/configuring-context-hub.md)** page for more details).
+    1. Navigate to the segments in your audience (Refer to ***Step 2: Setting up Audience Segmentation*** in **[Configuring ContextHub in AEM Screens](/help/screens/configuring-context-hub.md)** page for more details).
 
     1. Select the **Sheets A1 1** and click **Edit**.
 

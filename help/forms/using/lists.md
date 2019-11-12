@@ -224,7 +224,7 @@ A list is a group of related content that can be used in a letter template as a 
 1. Specify the following information for the list:
 
     * **Title (Optional): Enter** the title for the list. Title needs not be unique and can have special characters and non-english characters. Lists are referred by their titles (when available) such as in thumbnails and asset properties.
-    * **Name: **The unique name for the list. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated with the value in the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
+    * **Name:** The unique name for the list. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated with the value in the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
     * **Description (Optional)**: Type a description of the asset.
     * **Data Dictionary (Optional)**: Optionally, select the data dictionary to which to connect. Only assets that use the same data dictionary as the list, or assets that have no data dictionary assigned, can be added to the list. Assigning a data dictionary to a list makes it easier for the person creating a letter template to find the appropriate list.
     * **Tags (Optional)**: Select the tags to apply. You can also type in a new tag’s name and create it. (The new tag is created when you tap **Save**.)
@@ -252,14 +252,14 @@ A list is a group of related content that can be used in a letter template as a 
 
 1. You can select the following options to specify how each asset in the list behaves at runtime:
 
-    * **Editable: **When this option is selected, the content can be edited in Create Correspondence user interface. (This option is not available for List and Image modules.)
-    * **Mandatory: **When this option is selected, the content is required in Create Correspondence user interface.
-    * **Selected: **When this option is selected, the content is preselected in Create Correspondence user interface.
-    * **Skip Style: **When this option is selected, the content skips bullets and numbering in Create Correspondence user interface. (This option is not available for Image modules. Also, between Skip Style, Compound, and Ignore List Style, only one of the options can be applied to a module. One of these options can be used for a module when you select Add Bullets for a module.)
-    * **Indentation: **You can change the indentation level of each module/content selected as part of the List. Indentation is specified in terms of Levels (starting with zero), such that each level of indent corresponds to a padding of 36pts.
-    * **Compound: **When selected, the compound numbering is applied as a combination of the outer (parent) List's style and it's own style. The compound numbering on this nested List is based on the order in which this nested List appears in the outer List.
-    * **Ignore list style: **If the Compound Numbering option is deselected, then the option to Ignore List Style is enabled. This selection ignores the nested List's own style and the numbering continues from the outer List. Therefore the modules of the nested list are treated as part of the outer list itself, disregarding any styles specified on the nested List. If the Ignore List Style option is deselected for a nested List, the modules that are part of that nested List have their own numbering style.
-    * **Keep With Next: **Sets the page break for the assets contained in a list. If you set the Keep With Next property of one asset of a list to **On**, that asset and the next asset stays on the same page. This implies that the contents of the selected asset and the next asset will not break across pages.
+    * **Editable:** When this option is selected, the content can be edited in Create Correspondence user interface. (This option is not available for List and Image modules.)
+    * **Mandatory:** When this option is selected, the content is required in Create Correspondence user interface.
+    * **Selected:** When this option is selected, the content is preselected in Create Correspondence user interface.
+    * **Skip Style:** When this option is selected, the content skips bullets and numbering in Create Correspondence user interface. (This option is not available for Image modules. Also, between Skip Style, Compound, and Ignore List Style, only one of the options can be applied to a module. One of these options can be used for a module when you select Add Bullets for a module.)
+    * **Indentation:** You can change the indentation level of each module/content selected as part of the List. Indentation is specified in terms of Levels (starting with zero), such that each level of indent corresponds to a padding of 36pts.
+    * **Compound:** When selected, the compound numbering is applied as a combination of the outer (parent) List's style and it's own style. The compound numbering on this nested List is based on the order in which this nested List appears in the outer List.
+    * **Ignore list style:** If the Compound Numbering option is deselected, then the option to Ignore List Style is enabled. This selection ignores the nested List's own style and the numbering continues from the outer List. Therefore the modules of the nested list are treated as part of the outer list itself, disregarding any styles specified on the nested List. If the Ignore List Style option is deselected for a nested List, the modules that are part of that nested List have their own numbering style.
+    * **Keep With Next:** Sets the page break for the assets contained in a list. If you set the Keep With Next property of one asset of a list to **On**, that asset and the next asset stays on the same page. This implies that the contents of the selected asset and the next asset will not break across pages.
 
 1. Tap **Save**.
 
@@ -270,7 +270,7 @@ A list is a group of related content that can be used in a letter template as a 
 * The following rules apply when using the List Editor to change a list:
 
     * Update of properties: Allowed
-    * **Change of data dictionary: **Allowed until no item that uses the data dictionary is associated with it. You cannot change the data dictionary on update.
+    * **Change of data dictionary:** Allowed until no item that uses the data dictionary is associated with it. You cannot change the data dictionary on update.
 
 ## Conditions {#conditions}
 
@@ -295,8 +295,8 @@ The Condition editor enables you to specify a default condition. If the value of
 1. Select **Create &gt; Condition**.
 1. Specify the following information for the list:
 
-    * **Title (Optional): **Enter the title for the condition. Title needs not be unique and can have special characters and non-english characters. Conditions are referred by their titles (when available) such as in thumbnails and asset properties.
-    * **Name: **The unique name for the condition. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
+    * **Title (Optional):** Enter the title for the condition. Title needs not be unique and can have special characters and non-english characters. Conditions are referred by their titles (when available) such as in thumbnails and asset properties.
+    * **Name:** The unique name for the condition. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
     * **Description (Optional)** Type a description of the condition.
     * **Data Dictionary (Optional)**: Optionally, select the data dictionary to which to connect. Only assets that use the same data dictionary as the condition, or assets that have no data dictionary assigned, can be added to the list. Assigning a data dictionary to a list makes it easier for the person creating a letter template to find the appropriate condition.
     * **Tags (Optional)**: Optionally, select the tags to apply. You can also type in a new tag’s name and create it. (The new tag is created when you tap **Save**.)
@@ -326,10 +326,10 @@ The Condition editor enables you to specify a default condition. If the value of
 * Use appropriate data dictionary binding
 * The following rules apply when using the Condition Editor to edit a condition:
 
-    * **Addition of variable: **Allowed
-    * **Removal of variable: **Allowed
-    * **Update of properties: **Allowed
-    * **Change of data dictionary: **Allowed until data dictionary element is not used.
+    * **Addition of variable:** Allowed
+    * **Removal of variable:** Allowed
+    * **Update of properties:** Allowed
+    * **Change of data dictionary:** Allowed until data dictionary element is not used.
 
 ## Layout Fragments {#layoutfragments}
 
@@ -384,8 +384,8 @@ For a detailed example of using static and dynamic tables in layout fragments, s
 1. Correspondence Management displays the available XDPs. Select the XDP on which you want to base your layout fragment and tap **Next**.
 1. Specify the following information for the layout:
 
-    * **Title (Optional): **Enter the title for the layout fragment. Title needs not be unique and can have special characters and non-english characters. Layout fragments are referred by their titles (when available) such as in thumbnails and asset properties.
-    * **Name: **The unique name for the layout fragment. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value. This name appears in the list in the Manage Assets user interface.
+    * **Title (Optional):** Enter the title for the layout fragment. Title needs not be unique and can have special characters and non-english characters. Layout fragments are referred by their titles (when available) such as in thumbnails and asset properties.
+    * **Name:** The unique name for the layout fragment. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value. This name appears in the list in the Manage Assets user interface.
     * **Description (Optional)**: Description that appears in the list in the Manage Assets user interface.
     * **Tags (Optional)**: Optionally, select the tags to apply to the condition. You can also type in a new tag’s name and create it.
 
@@ -401,7 +401,7 @@ For a detailed example of using static and dynamic tables in layout fragments, s
     * **Header**: text to show for the header
     * **Footer**: text to show for the footer
     * **Type**: type of additional column. Field or Target Area. Type is enabled for static place holder tables. Type can be defined at column level and not at cell level. All the cells in an extended column would be of the same type. For a dynamic table, all the columns are of Field type. For non-placeholder tables, you cannot define the type of additional columns. In this case, type of additional cells in extended column is same as the type of last column in that row; and type of cell in additional row is same as type of last cell in that column.
-    * **Width ratio: **ratio of the table column widths.
+    * **Width ratio:** ratio of the table column widths.
 
    For a detailed example of using static and dynamic tables in layout fragments, see [Example with sample files: using static and dynamic tables in a letter](#main-pars-header-28).
 

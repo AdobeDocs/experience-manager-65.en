@@ -780,11 +780,11 @@ Default security profiles are installed, which can then be configured to meet yo
 
    To specify the run-time identity used by a service to execute operations, select Specify Run As, select an option from the associated list, and then click Save. Choose from the following options:
 
-   **Invoker: **Uses the same identity as the user who invoked the service.
+   **Invoker:** Uses the same identity as the user who invoked the service.
 
-   **System: **Uses the System user to run the service with full privileges.
+   **System:** Uses the System user to run the service with full privileges.
 
-   **Named User: **Enables you to run the service as a specific user. When you select this option, click Select User to display the Select Principal page, where you can search for and select the user.
+   **Named User:** Enables you to run the service as a specific user. When you select this option, click Select User to display the Select Principal page, where you can search for and select the user.
 
    If you do not select Specify Run As, the default behavior is used.
 

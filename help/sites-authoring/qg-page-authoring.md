@@ -308,7 +308,7 @@ For example, the lock icon looks like this:
 
 To create a [version](/help/sites-authoring/working-with-page-versions.md) of your page:
 
-1. To open the Timeline rail, select ** [Timeline](/help/sites-authoring/basic-handling.md#timeline)** using the toolbar icon (either before or after [selecting your page](#selecting-your-page-for-further-action)):
+1. To open the Timeline rail, select **[Timeline](/help/sites-authoring/basic-handling.md#timeline)** using the toolbar icon (either before or after [selecting your page](#selecting-your-page-for-further-action)):
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
@@ -322,7 +322,7 @@ To create a [version](/help/sites-authoring/working-with-page-versions.md) of yo
 
 The same basic mechanism is used when restoring and/or comparing versions of your page:
 
-1. Select ** [Timeline](/help/sites-authoring/basic-handling.md#timeline)** using the toolbar icon (either before or after [selecting your page](#selecting-your-page-for-further-action)):
+1. Select **[Timeline](/help/sites-authoring/basic-handling.md#timeline)** using the toolbar icon (either before or after [selecting your page](#selecting-your-page-for-further-action)):
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 

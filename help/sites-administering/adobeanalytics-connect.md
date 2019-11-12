@@ -169,7 +169,7 @@ When a page is associated with an Adobe Analytics framework, the page sends data
 Descendents of the page inherit the association with the framework. For example, when you associate the root page of your site with a framework, all pages of the site are associated with the framework.
 
 1. From the **Sites** console, select the page you wish to set up with tracking.
-1. Open the ** [Page Properties](/help/sites-authoring/editing-page-properties.md)**, either directly from the console, or the page editor.
+1. Open the **[Page Properties](/help/sites-authoring/editing-page-properties.md)**, either directly from the console, or the page editor.
 1. Open the** Cloud Services** tab.
 
 1. Use the **Add Configuration** drop down to select **Adobe Analytics** from the available options. If inheritance is place you need to disable that before the selector becomes available.
@@ -177,7 +177,7 @@ Descendents of the page inherit the association with the framework. For example,
 1. The drop down selector for **Adobe Analytics** will be appended to the options available. Use this to select the required framework configuration.
 
 1. Select **Save & Close**.
-1. ** [Publish](/help/sites-authoring/publishing-pages.md)** the page to activate the page and any connected configurations/files.
+1. **[Publish](/help/sites-authoring/publishing-pages.md)** the page to activate the page and any connected configurations/files.
 1. The final step is to visit the page on the publish instance and search for a keyword (e.g. aubergine) using the **Search** component.
 1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Marketing Cloud Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger_install.html).
 1. Using the example provided, the call should contain the value entered (i.e. aubergine) in eVar7 and the events list should contain event3.

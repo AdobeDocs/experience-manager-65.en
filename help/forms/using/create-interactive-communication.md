@@ -147,7 +147,7 @@ For more information on the Interactive Communication authoring interface, see [
     * **Text Fragment**: If selected, you can browse and select a text document fragment whose content is rendered in the field. Only those text document fragments can be bound to variables that have no variables within.
     * **Data Model Object**: Select a form data model property whose value is populated in the field.
     * **Default Value:** You can define a default value for the variable using this field. The value is displayed when you preview the Interactive Communication or in the Agent UI.
-    * **Display Pattern: **You can also define a display format for a variable. Select any of the pre-defined options from the **Type** drop-down list to apply a display format to a variable. Select **Custom** to define a display pattern that is not available in the list. For more information, see [Data display patterns](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146).
+    * **Display Pattern:** You can also define a display format for a variable. Select any of the pre-defined options from the **Type** drop-down list to apply a display format to a variable. Select **Custom** to define a display pattern that is not available in the list. For more information, see [Data display patterns](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146).
 
    Navigate to [Variables and Data Model Objects](../../forms/using/create-interactive-communication.md#hiddenvariables) to set up binding of hidden variables in the document fragment.
 
@@ -575,15 +575,15 @@ Once you have auto-generated content in the web channel using the Synchronize op
 
 Tap the component to view the following options:
 
-* **Copy: **Copy a component and paste it in other places in the Interactive Communication.
-* **Cut: **Move a component from one place to another in the Interactive Communication.
-* **Insert Component: **Insert a component above the selected component.
-* **Paste: **Paste the component you cut or copied using the options described above.
-* **Group: **Select multiple components if you want to cut, copy, or paste more than one component together.
-* **Parent: **Select the parent of a component.
-* **View SOM Expression: **View the [SOM expression](../../forms/using/using-som-expressions-adaptive-forms.md) for the component.
+* **Copy:** Copy a component and paste it in other places in the Interactive Communication.
+* **Cut:** Move a component from one place to another in the Interactive Communication.
+* **Insert Component:** Insert a component above the selected component.
+* **Paste:** Paste the component you cut or copied using the options described above.
+* **Group:** Select multiple components if you want to cut, copy, or paste more than one component together.
+* **Parent:** Select the parent of a component.
+* **View SOM Expression:** View the [SOM expression](../../forms/using/using-som-expressions-adaptive-forms.md) for the component.
 
-* **Group Objects in Panel: **Group the components in a panel to be able to perform operations on those components simultaneously. For details, see ** [Group objects in Panel](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**.
+* **Group Objects in Panel:** Group the components in a panel to be able to perform operations on those components simultaneously. For details, see **[Group objects in Panel](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**.
 
 * **Cancel Inheritance:** [Cancel the inheritance](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) of the components within the target area to edit them.
 

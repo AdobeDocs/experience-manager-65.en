@@ -121,5 +121,5 @@ Analytics events are stored offline in indexedDB and later chunked and sent to t
 
 >[!NOTE]
 >
->To learn more about the ***Sequencing ***and*** Standard Data Model for Events***, please refer to ** [Configuring Adobe Analytics for AEM Screens](/help/screens/configuring-adobe-analytics-aem-screens.md)** in Developer's section of AEM Screens.
+>To learn more about the ***Sequencing ***and*** Standard Data Model for Events***, please refer to **[Configuring Adobe Analytics for AEM Screens](/help/screens/configuring-adobe-analytics-aem-screens.md)** in Developer's section of AEM Screens.
 

@@ -753,7 +753,7 @@ The slideshow component then repeatedly displays each in sequence, for a short p
 
 >[!NOTE]
 >
->The **Table** Fourndation Component is based on the [Rich Text editor](/help/sites-authoring/rich-text-editor.md), as is the ** [Text](#text)** Foundation Component.
+>The **Table** Fourndation Component is based on the [Rich Text editor](/help/sites-authoring/rich-text-editor.md), as is the **[Text](#text)** Foundation Component.
 
 The **Table** component is preconfigured to let you construct, fill and format a table. Using the dialog you can configure your table and create the contents by either:
 

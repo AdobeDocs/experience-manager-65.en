@@ -58,11 +58,11 @@ The Link component allows you to create a link to a form anywhere on the page. C
 Forms portal enables you to list forms from the forms repository onto your portal page. It also allows you to specify search criteria to enable your portal users to search across the list of forms. You can also use the Drafts & Submissions component to display forms that are saved as a draft for completing later and submitted forms. You have to perform a certain set of operations before these functionalities become available on a Sites page. Perform the steps in the listed sequence to make the components and respective functionalities available on a sites page:
 
 1. **Enable Forms Portal components**: Out of the box, forms portal components are not available for use. [Enable the components from AEM sidekick](/help/forms/using/enabling-forms-portal-components.md) for an AEM Sites page.
-1. **List forms on a page (create forms portal page): **You can list forms on both AEM Sites and non-AEM Site pages. The list contains forms available on the publish instance. A user can open forms and start filling those. Whenever a user opens a form, a new instance of the form is created:
+1. **List forms on a page (create forms portal page):** You can list forms on both AEM Sites and non-AEM Site pages. The list contains forms available on the publish instance. A user can open forms and start filling those. Whenever a user opens a form, a new instance of the form is created:
 
     1. **List forms on an AEM Sites page**: Add the **[Search & Lister](../../forms/using/creating-form-portal-page.md)** component to the page and configure the **[List Pane](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** in it, to list forms on a page. Add and configure the **Search Pane** component to the **Search & Lister** component also to add search functionality to the page. The page with forms portal component is known as [forms portal page](../../forms/using/creating-form-portal-page.md).
 
-    1. **List forms on a non-AEM Sites page: **Use the [forms portal search APIs](/help/forms/using/listing-forms-webpage-using-apis.md) to query, retrieve, and list forms on non-AEM Sites pages.
+    1. **List forms on a non-AEM Sites page:** Use the [forms portal search APIs](/help/forms/using/listing-forms-webpage-using-apis.md) to query, retrieve, and list forms on non-AEM Sites pages.
 
 1. **List draft and submitted forms on a forms portal page**: Add and configure the Drafts & Submissions component to the forms portal page. The component lists all the forms that are in the draft state and the forms that are already submitted.
 

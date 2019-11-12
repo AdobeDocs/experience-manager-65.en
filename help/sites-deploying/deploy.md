@@ -113,13 +113,13 @@ AEM Managed Services is a complete solution for Digital Experience management. I
 
 With AEM Managed Services customers can realize the following benefits:
 
-**Faster Time to Market: **With flexible cloud infrastructure of Adobe Managed Services, organizations can rapidly plan, launch and optimize successful digital experiences. Adobe manages the cloud architecture with no additional capital, hardware, or software required and Adobe’s Customer Success Engineers, help with AEM architecture, provisioning, customization for connecting to back-end apps and go-live best practices.
+**Faster Time to Market:** With flexible cloud infrastructure of Adobe Managed Services, organizations can rapidly plan, launch and optimize successful digital experiences. Adobe manages the cloud architecture with no additional capital, hardware, or software required and Adobe’s Customer Success Engineers, help with AEM architecture, provisioning, customization for connecting to back-end apps and go-live best practices.
 
-**Higher Performance: **Provides reliable digital experiences for your business with four service availability options 99.5%, 99.9%, 99.95%, and 99.99%. Additionally, it allows automatic backup and multimode disaster recovery models to help ensure reliability and contingency management.
+**Higher Performance:** Provides reliable digital experiences for your business with four service availability options 99.5%, 99.9%, 99.95%, and 99.99%. Additionally, it allows automatic backup and multimode disaster recovery models to help ensure reliability and contingency management.
 
-**Optimized IT Costs: **Proactive guidance and expertise helps organizations stay current on the latest version of AEM. Adobe Platinum Maintenance and Support is automatically included in new deployments of AMS Enterprise/Basic, offering technical expertise and operational experience to help organizations maintain their mission-critical applications. Free basic Analytics or Target capabilities offer additional value especially for mid-market organizations with limited needs for analytics and personalization.
+**Optimized IT Costs:** Proactive guidance and expertise helps organizations stay current on the latest version of AEM. Adobe Platinum Maintenance and Support is automatically included in new deployments of AMS Enterprise/Basic, offering technical expertise and operational experience to help organizations maintain their mission-critical applications. Free basic Analytics or Target capabilities offer additional value especially for mid-market organizations with limited needs for analytics and personalization.
 
-**Highest Security: **Ensures enterprise-grade physical, network, and data security by hosting customer applications in a restricted-access facility, behind firewall systems, or inside a virtual private cloud. It includes single-tenant virtual machines with robust data storage encryption, antivirals, and data isolation.
+**Highest Security:** Ensures enterprise-grade physical, network, and data security by hosting customer applications in a restricted-access facility, behind firewall systems, or inside a virtual private cloud. It includes single-tenant virtual machines with robust data storage encryption, antivirals, and data isolation.
 
 **Cloud Manager**: Cloud Manager, part of the Adobe Experience Manager Managed Services offering is a self-service portal that further enables organizations to self-manage Adobe Experience Manager in the cloud. It includes a state-of-the-art continuous integration and continuous delivery (CI/CD) pipeline that lets IT teams and implementation partners speed the delivery of customizations or updates without compromising performance or security. Cloud Manager is only available for Adobe Managed Service customers.
 
@@ -143,7 +143,7 @@ The AEM software package is available in two foms:
 
 * **cq-quickstart-6.5.0.jar:** A standalone executable *jar* file that includes everything needed to get up and running.
 
-* **cq-quickstart-6.5.0.war: **A *war* file for deployment in a third-party application server.
+* **cq-quickstart-6.5.0.war:** A *war* file for deployment in a third-party application server.
 
 In the following section we describe the **standalone installation**. For details on installing AEM in an application server see [Application Server Install](/help/sites-deploying/application-server-install.md).
 

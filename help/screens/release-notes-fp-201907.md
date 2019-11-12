@@ -33,7 +33,7 @@ The player switches to a channel showing the emergency info upon receiving an ev
 
 Refer to [**Emergency Channel**](/help/screens/emergency-channel.md) Use Case for implementation.
 
-Additionally, refer to the use case example, ** [Data Triggered Asset Change](/help/screens/data-triggered-asset-change.md)** that describes how to achieve personalized content based on weather of your location.
+Additionally, refer to the use case example, **[Data Triggered Asset Change](/help/screens/data-triggered-asset-change.md)** that describes how to achieve personalized content based on weather of your location.
 
 * **Targeting Enabled for asynchronous components (*such as videos, embedded sequence*)**
 

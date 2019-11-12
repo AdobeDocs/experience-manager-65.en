@@ -42,7 +42,7 @@ You can use the Metadata Schema Forms editor to modify existing schemas or add c
     * **default**: The base metadata schema form for assets.
 
    The following child forms inherit the properties of the default form:
-   i. ** image**: Schema form for assets with the MIME type "image", for example, *image/jpeg*, *image/png*, and so on.
+   i. **image**: Schema form for assets with the MIME type "image", for example, *image/jpeg*, *image/png*, and so on.
    The "image" form has the following child form templates:
    a. **jpeg**: Schema form for assets with sub type jpeg.
    b. **tiff**: Schema form for the assets with sub type tiff.
@@ -50,10 +50,10 @@ You can use the Metadata Schema Forms editor to modify existing schemas or add c
    ii. **application**: Schema form for assets with MIME type "application", for example *application*/ *pdf*, *application*/ *zip*, and so on.
    a. **pdf**: Schema form for assets with sub type pdf.
 
-   iii. ** video**: Schema form for assets with MIME type "video", such as *video*/ *avi*, *video*/ *mp4* and so on.
+   iii. **video**: Schema form for assets with MIME type "video", such as *video*/ *avi*, *video*/ *mp4* and so on.
 
     * **collection**: Schema form for collections
-    * **contentfragment: **Schema form for content fragments
+    * **contentfragment:** Schema form for content fragments
     * **forms**: This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md)
 
 >[!NOTE]
