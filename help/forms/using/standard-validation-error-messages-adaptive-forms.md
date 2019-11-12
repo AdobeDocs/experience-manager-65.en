@@ -77,7 +77,7 @@ AEM Forms provides out-of-the-box success and error handlers for form submission
 
 Execute the following steps to add custom error handler on adaptive form submission:
 
-1. Open the adaptive form in authoring mode, select any form object, and tap ![Rule Editor](assets/af_edit_rules.png) to open the rule editor.
+1. Open the adaptive form in authoring mode, select any form object, and tap <!--![Rule Editor](assets/af_edit_rules.png)--> to open the rule editor.
 1. Select **[!UICONTROL Form]** in the Form Objects tree and tap **[!UICONTROL Create]**.
 1. Select **[!UICONTROL Error in Submission]** from the Event drop-down list.
 1. Write a rule to convert custom error structure to the standard error structure and tap **[!UICONTROL Done]** to save the rule.
