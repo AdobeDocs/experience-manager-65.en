@@ -518,7 +518,7 @@ The UI can be used to filter indexes in the table by typing in the filter criter
 
 ### Download Status ZIP {#download-status-zip}
 
-This will trigger the download of a zip containing useful information about the system status and configuration. The archive contains contains instance configurations, a list of bundles, OSGI, Sling metrics and statistics and this can result in a large file. You can reduce the impact of large status files by using the **Download Status ZIP **window. The window can be accessed from: **AEM &gt; Tools &gt; Operations &gt; Diagnosis &gt; Download Status ZIP.**
+This will trigger the download of a zip containing useful information about the system status and configuration. The archive contains contains instance configurations, a list of bundles, OSGI, Sling metrics and statistics and this can result in a large file. You can reduce the impact of large status files by using the **Download Status ZIP **window. The window can be accessed from:** AEM &gt; Tools &gt; Operations &gt; Diagnosis &gt; Download Status ZIP.**
 
 From this window you can select what to export (log files and or thread dumps) and the number of days of logs included in the download relative to the current date.
 

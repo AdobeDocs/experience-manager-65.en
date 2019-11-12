@@ -117,7 +117,7 @@ Follow the steps below to configure ***DeviceServiceImpl***:
 
 #### Dispatcher Configuration {#dispatcher-configuration}
 
-To learn how to configure dispatcher for an AEM Screens project, refer to ** [Configuring Dispatcher for an AEM Screens project](/help/screens/dispatcher-configurations-aem-screens.md)**.
+To learn how to configure dispatcher for an AEM Screens project, refer to **[Configuring Dispatcher for an AEM Screens project](/help/screens/dispatcher-configurations-aem-screens.md)**.
 
 #### Java encoding {#java-encoding}
 

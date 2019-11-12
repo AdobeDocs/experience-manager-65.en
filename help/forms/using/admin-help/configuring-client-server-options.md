@@ -767,8 +767,8 @@ In the document security configuration file, you can specify the default frequen
 
 You can configure document security to deny services to applications that meet specific criteria. The criteria can specify a single attribute such as a platform name or it can specify multiple sets of attributes. This feature can help you control the requests document security must handle. Here are some applications of this feature:
 
-* **Revenue protection: **You may want to deny access to any client application that does not support your revenue conventions.
-* **Application compatibility: **Some application may be incompatible with the policies or behavior of your document security server.
+* **Revenue protection:** You may want to deny access to any client application that does not support your revenue conventions.
+* **Application compatibility:** Some application may be incompatible with the policies or behavior of your document security server.
 
 When client applications attempt to establish a link with document security, they supply application, version, and platform information. Document security compares this information against Denials settings it obtains from the document security configuration file.
 
@@ -798,21 +798,21 @@ Several Adobe applications include product information when requesting document 
 
 When Acrobat or Adobe Reader request a service from document security, it supplies the following product information:
 
-* **Integrator: **Adobe Systems, Inc.
-* **Integrator version: **1.0
-* **Application family: **Acrobat
-* **Application name: **Acrobat
-* **Application version: **9.0.0
+* **Integrator:** Adobe Systems, Inc.
+* **Integrator version:** 1.0
+* **Application family:** Acrobat
+* **Application name:** Acrobat
+* **Application version:** 9.0.0
 
 **Acrobat Reader DC extensions for Microsoft Office**
 
 Acrobat Reader DC extensions for Microsoft Office is a plug-in used with the Microsoft Office products Microsoft Word, Microsoft Excel, and Microsoft PowerPoint. When it requests a service, it supplies the following information:
 
-* **Integrator: **Adobe Systems Incorporated
-* **Integrator version: **8.2
-* **Application family: **Acrobat Reader DC extensions for Microsoft Office
-* **Application name: **Microsoft Word, Microsoft Excel, or Microsoft PowerPoint
-* **Application version: **2003 or 2007
+* **Integrator:** Adobe Systems Incorporated
+* **Integrator version:** 8.2
+* **Application family:** Acrobat Reader DC extensions for Microsoft Office
+* **Application name:** Microsoft Word, Microsoft Excel, or Microsoft PowerPoint
+* **Application version:** 2003 or 2007
 
 **Configure document security to deny services for specific applications**
 

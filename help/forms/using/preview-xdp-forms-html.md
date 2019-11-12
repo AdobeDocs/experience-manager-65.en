@@ -68,7 +68,7 @@ The [protected mode](../../forms/using/get-xdp-pdf-documents-aem.md) is on, by d
     * **Server URL**: AEM Forms server URL.  
     
     * **HTTP port number**: AEM server port. The default value is 4502.
-    * **HTML Preview Context: **Path of the profile for rendering XFA forms. The following default profiles are used to preview the form in Designer. However, you can also specify path to a custom profile.
+    * **HTML Preview Context:** Path of the profile for rendering XFA forms. The following default profiles are used to preview the form in Designer. However, you can also specify path to a custom profile.
 
         * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)  
         
@@ -79,7 +79,7 @@ The [protected mode](../../forms/using/get-xdp-pdf-documents-aem.md) is on, by d
         * `/aem/forms` (AEM Forms on OSGi)
         * `/lc/forms` (AEM Forms on JEE)
 
-   **Note: ***Ensure that AEM Forms server is up and running. The HTML preview connects to the CRX server to *generate* a preview.*
+   **Note:** Ensure that AEM Forms server is up and running. The HTML preview connects to the CRX server to *generate* a preview.
 
    ![AEM Forms Designer options ](assets/server_options.png)
 

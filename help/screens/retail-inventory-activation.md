@@ -42,7 +42,7 @@ Follow the steps below to implement the Retail Inventory Activation use case:
 
 1. **Configuring the Audiences as per the requirements**
 
-    1. Navigate to the segments in your audience (Refer to ***Step 2: Setting up Audience Segmentation*** in ** [Configuring ContextHub in AEM Screens](/help/screens/configuring-context-hub.md)** page for more details).
+    1. Navigate to the segments in your audience (Refer to ***Step 2: Setting up Audience Segmentation*** in **[Configuring ContextHub in AEM Screens](/help/screens/configuring-context-hub.md)** page for more details).
 
     1. Add three new segments **For_Red**, **For_Green**, and **For_Blue**.
 

@@ -23,20 +23,20 @@ Both the components provide a window, as displayed below, to sign a form. You ca
 
 1. Create a Document of Record option enabled or form template based adaptive form. For step-by-step information, see [Creating an adaptive form](../../forms/using/creating-adaptive-form.md).
 1. Drag-and-drop the **Scribble Signature** component from component browser to the adaptive form.
-1. Tap the **Configure ** ![configure](assets/configure.png) icon. It opens properties browser and displays properties of the Scribble Signature component. Configure properties of the Scribble Signature component. 
+1. Tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser and displays properties of the Scribble Signature component. Configure properties of the Scribble Signature component. 
 1. Drag-and-drop the Signature Step component from component browser to the adaptive form.
 
    >[!NOTE]
    >
    >The Signature Step component takes up full width available for the form. It is recommended to not have any other component on the section containing the Signature Step component.
 
-1. In the Content browser, tap **Form Container**, and tap the **Configure ** ![](https://chl-author-preview.corp.adobe.com/content/dam/help/icons/Configure.png) icon. It opens properties browser and displays Adaptive Form container properties. Navigate to **Adaptive Form Container** &gt; **Electronic Signature** and deselect the **Enable Adobe Sign** option. Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
+1. In the Content browser, tap **Form Container**, and tap the **Configure** ![](https://chl-author-preview.corp.adobe.com/content/dam/help/icons/Configure.png) icon. It opens properties browser and displays Adaptive Form container properties. Navigate to **Adaptive Form Container** &gt; **Electronic Signature** and deselect the **Enable Adobe Sign** option. Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
 
    >[!NOTE]
    >
    >When you add a Signature Step component to an adaptive form, the Enable Adobe Sign option is selected automatically.
 
-1. Tap the **Configure ** ![configure](assets/configure.png) icon. It opens properties browser and displays Signature step properties. Configure the following properties:
+1. Tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser and displays Signature step properties. Configure the following properties:
 
     * **Element Name**: Specify name of the component.  
     

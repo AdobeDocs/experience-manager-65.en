@@ -21,7 +21,7 @@ There are several methods available for tracking video events, 2 of which are le
 >
 >Before you continue, make sure** **that you have a** playable video** uploaded within AEM.
 
->To ensure that your videos play on the page, consult ** [this tutorial](/help/sites-authoring/default-components-foundation.md#video)** for information about how to transcode video files in AEM.
+>To ensure that your videos play on the page, consult **[this tutorial](/help/sites-authoring/default-components-foundation.md#video)** for information about how to transcode video files in AEM.
 
 Use the following procedure to set up a framework for video tracking using each method.
 
@@ -378,7 +378,7 @@ When using the** legacy seconds** method, Adobe Analytics calls get triggered ev
 
    ![lseconds](assets/lseconds.png)
 
-   *The call is similar to the Legacy Milestones call above. Please see the information on pev3 ** [provided there](/help/sites-administering/adobeanalytics.md)**.*
+   *The call is similar to the Legacy Milestones call above. Please see the information on pev3 **[provided there](/help/sites-administering/adobeanalytics.md)**.*
 
 **References used in this tutorial:**
 

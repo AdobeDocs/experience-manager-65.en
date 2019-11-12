@@ -51,8 +51,8 @@ Follow these steps to create an adaptive form.
 
     * **Title:** Specifies the display name of the form. The title helps you identify the form in the AEM Forms user interface.
     * **Name:** Specifies the name of the form. A node with the specified name is created in the repository. As you start typing a title, value for the name field is automatically generated. You can change the suggested value. The name field can include only alphanumeric characters, hyphens, and underscores. All the invalid inputs are replaced with a hyphen.
-    * **Description: **Specifies the detailed information about the form. 
-    * **Tags: **Specifies tags to uniquely identify the adaptive form. Tags help in searching the form. To create tags, type new tag names in the **Tags **box.
+    * **Description:** Specifies the detailed information about the form. 
+    * **Tags:** Specifies tags to uniquely identify the adaptive form. Tags help in searching the form. To create tags, type new tag names in the **Tags **box.
 
 1. You can create an adaptive form based on one of following form models:
 

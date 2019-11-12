@@ -81,8 +81,8 @@ Do the following to configure your MySQL database:
         * **JDBC driver class**: Specify Java class name of the JDBC driver. For MySQL database, specify **com.mysql.jdbc.Driver**.
 
         * **JDBC connection URI**: Specify connection URL of the database. For MySQL database running on port 3306 and schema teleca, the URL is: jdbc:mysql://[server]:3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8
-        * **Username: **Username of the database. It is required to enable JDBC driver to establish a connection with the database.
-        * **Password: **Password of the database. It is required to enable JDBC driver to establish a connection with the database.
+        * **Username:** Username of the database. It is required to enable JDBC driver to establish a connection with the database.
+        * **Password:** Password of the database. It is required to enable JDBC driver to establish a connection with the database.
         * **Test on Borrow:** Enable the **Test on Borrow** option.
 
         * **Test on Return:** Enable the **Test on Return** option.

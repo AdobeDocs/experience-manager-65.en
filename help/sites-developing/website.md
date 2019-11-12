@@ -47,7 +47,7 @@ After performing all the steps, your pages will look as follows:
 
 To follow along with the tutorial rather than performing the exercises, download website-1.0.zip. This file is an AEM content package that contains the results of this tutorial. Use [Package Manager](/help/sites-administering/package-manager.md) to install the package to your author instance.
 
-**NOTE: **Installing this package will overwrite any resources on your authoring instance that you have created using this tutorial.
+**NOTE:** Installing this package will overwrite any resources on your authoring instance that you have created using this tutorial.
 
 Website content package
 
@@ -124,7 +124,7 @@ A template defines the default content of a new page. Complex websites may use s
     * **Label**: contentpage
     * **Title**: My Website Content Page Template
     * **Description**: This is my Website Content Page Template
-    * **Resource Type: **mywebsite/components/contentpage
+    * **Resource Type:** mywebsite/components/contentpage
 
    Use the default value for the Ranking property.
 
@@ -285,8 +285,8 @@ For example, in your component JSP code, you can reference the scripts that the 
     1. Select the `/apps/mywebsite/components/contentpage` node.
     1. At the bottom of the Properties tab, type the following property values and then click Add:
 
-        * **Name: **sling:resourceSuperType
-        * **Type: **String
+        * **Name:** sling:resourceSuperType
+        * **Type:** String
         * **Value:** foundation/components/page
 
     1. Click Save All.

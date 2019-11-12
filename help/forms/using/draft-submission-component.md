@@ -20,7 +20,7 @@ The Drafts & Submissions component lists all the forms that are in the draft sta
 
 The Drafts & Submissions component has two tabs: Drafts and Submissions.
 
-To enable submission of an adaptive form to appear in the submissions tab, set the **Submit action** to ** [Forms Portal Submit Action](../../forms/using/configuring-submit-actions.md). Alternatively,** enable the Forms Portal Submit option. Whenever, a user submits the form, the form is added to the submissions tab.
+To enable submission of an adaptive form to appear in the submissions tab, set the **Submit action** to **[Forms Portal Submit Action](../../forms/using/configuring-submit-actions.md). Alternatively,** enable the Forms Portal Submit option. Whenever, a user submits the form, the form is added to the submissions tab.
 
 The drafts functionality is enabled out of the box. When a user clicks **Save** on an adaptive form, the form is added to the drafts tab.
 

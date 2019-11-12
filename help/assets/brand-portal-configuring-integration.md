@@ -26,7 +26,7 @@ Use this configuration to publish assets from AEM Assets to Brand Portal. At the
 
 ## Create JWT application {#create-jwt-application}
 
-1. Log in to [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) with your Adobe ID. You reach ** JWT  Applications** page.
+1. Log in to [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) with your Adobe ID. You reach **JWT  Applications** page.
 
    >[!NOTE]
    >

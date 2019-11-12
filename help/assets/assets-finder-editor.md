@@ -200,7 +200,7 @@ To add predicates:
 
 The following predicates are available:
 
-| **Predicate** |**Description ** |
+| **Predicate** |**Description** |
 |---|---|
 | **Date Predicate** |Lets users search for assets that were modified before and after certain dates. |
 | **Options Predicate** |The site owner can specify a property to search for (as in the property predicate, for example cq:tags) and a content tree to populate the options from (for example the tag tree). Doing so generates a list of options where the users can select the values (tags) that the selected property (tag property) should have. This predicate lets you build list controls like the list of tags, file types, image orientations, and so on. It is great for a fixed set of options. |

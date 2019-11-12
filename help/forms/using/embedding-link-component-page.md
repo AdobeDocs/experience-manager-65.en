@@ -39,7 +39,7 @@ Perform the following steps to add a Link component to the page:
     * **Asset Path**: Repository path where the asset is stored.
 
     * **Render Type**: The render format--PDF, HTML, or Auto. The Auto render type detects the user environment and accordingly renders the form as HTML or as PDF. For example, if the form is accessed from a mobile device, the Auto render type render the form in HTML.
-    * **Submit URL: ** URL to the servlet where the form data is submitted.
+    * **Submit URL:**  URL to the servlet where the form data is submitted.
     * **HTML Profile**: Profile for rendering the form as HTML.
     * **PDF Profile**: Profile for rendering the form as PDF document.
 

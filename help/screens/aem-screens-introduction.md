@@ -37,7 +37,7 @@ The following diagram shows the general architecture of an AEM Screens player:
 
 ### Create a Digital Signage Experience in 5 minutes {#create-a-digital-signage-experience-in-minutes}
 
-To create a demo Screens project and publish your content in Screens player, see ** [Kickstart for AEM Screens](/help/screens/kickstart-for-aem-screens.md)**.
+To create a demo Screens project and publish your content in Screens player, see **[Kickstart for AEM Screens](/help/screens/kickstart-for-aem-screens.md)**.
 
 ## Starting a New AEM Screens Project {#starting-a-new-aem-screens-project}
 
@@ -67,7 +67,7 @@ Refer to the following tutorials and resources to learn Adobe Experience Manager
 
 ### Guided Implementation Essentials {#guided-implementation-essentials}
 
-Follow the guided learning path ** [AEM Screens Implementation Essentials](https://guided.adobe.com/?launch=AEM-7a#recommended/solutions/experience-manager)**, that covers foundational as well as advanced features supported in AEM Screens.
+Follow the guided learning path **[AEM Screens Implementation Essentials](https://guided.adobe.com/?launch=AEM-7a#recommended/solutions/experience-manager)**, that covers foundational as well as advanced features supported in AEM Screens.
 
 While creating a new project, different functions may overlap depending on your organizational and business requirements. You can refer to the following resources for detailed step-by-step functions that will allow you to create and manage AEM Screens project:
 
