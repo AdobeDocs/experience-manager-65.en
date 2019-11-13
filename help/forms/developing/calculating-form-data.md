@@ -214,6 +214,3 @@ Calculate form data by using the Forms API (web service):
 
 **See also**
 [Invoking AEM Forms using Base64 encoding](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
-[Quick Start (Base64): Handling a form containing a calculation script using web service API](#unresolvedlink-lc-qs-forms-fo.xml#ws624e3cba99b79e12e69a9941333732bac8-7e20.2)
-
-
