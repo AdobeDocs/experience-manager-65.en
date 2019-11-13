@@ -55,7 +55,7 @@ Your Adaptive Forms may utilize some configutaions, settings, and customizations
 
 An asset can have the following states:
 
-* **Unpublished: **An asset that has never been published (The unpublished state is applicable only to Forms assets. Correspondence Management assets do not have an Unpublished state.) 
+* **Unpublished:** An asset that has never been published (The unpublished state is applicable only to Forms assets. Correspondence Management assets do not have an Unpublished state.) 
 * **Published**: An asset that has been published and is available on the Publish instance
 * **Modified**: An asset that is modified after being published
 

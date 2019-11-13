@@ -126,14 +126,13 @@ You can perform a direct upgrade from AEM 6.3 Forms or AEM 6.4 Forms to AEM 6.5 
 
 1. Verify that the server is upgraded successfully, all the data is also migrated successfully, and it can operate normally.
 
-    * **Verify the status of the bundles: **Ensure that all the bundles are in active state.
-
+    * **Verify the status of the bundles:** Ensure that all the bundles are in active state.
     * **Verify replication and reverse replication:** Publish, fill, and submit a few migrated forms. Verify the submitted data also.
     * **Verify access to admin and developer user interfaces:** Log in to AEM instance from an admin account and verify that you have access to the following URLs:
 
-        * https://[server]:[port]/crx/packmgr
-        * https://[server]:[port]/crx/de
-        * https://[server]:[port]/aem/forms.html/content/dam/formsanddocuments
+      * https://`[server]`:`[port]`/crx/packmgr
+      * https://`[server]`:`[port]`/crx/de
+      * https://`[server]`:`[port]`/aem/forms.html/content/dam/formsanddocuments
 
    >[!NOTE]
    >

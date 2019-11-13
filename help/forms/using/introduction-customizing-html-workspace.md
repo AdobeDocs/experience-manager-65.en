@@ -233,7 +233,7 @@ CRX package can be deployed on the CRX™ repository. It is available at `[*LC r
 
 This package can be built using the three profiles described below.
 
-| **Profile ** |**Description ** |**Usage ** |
+| **Profile** |**Description** |**Usage** |
 |---|---|---|
 | Ship profile |This profile creates a CRX package of the smallest possible size using minification. This package is the most efficient. All the JavaScript™ files are combined and minified into a single JS file. |Use this profile when no further semantic changes are required in JS files. |
 | Debug profile |This profile creates a moderately efficient CRX package. The size of the package is slightly more than the package created using Ship profile. This package has most of the JavaScript files combined into a single JS file. |Use this profile for debugging. |

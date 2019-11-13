@@ -44,7 +44,7 @@ You can edit the common and IOS Metadata:
 
 ## Add and Remove Screenshots {#add-and-remove-screenshots}
 
-You can include App screenshots to the metadata roll up. Some vendors require accurate screenshots when submitting any app to their app store. These images must already exist in Assets. See [Asset Picker](/help/assets/asset-selector.md) to upload your screenshots.
+You can include App screenshots to the metadata roll up. Some vendors require accurate screenshots when submitting any app to their app store. These images must already exist in Assets. See [Asset Picker](/help/assets/search-assets.md#assetselector) to upload your screenshots.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 

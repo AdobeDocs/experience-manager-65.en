@@ -64,7 +64,7 @@ The lists pair a **Pattern**, a regular expression matched to the request, with 
 
 For example, the:
 
-**Pattern ** `^[^/]+/[^/]+/welcome$`
+**Pattern** `^[^/]+/[^/]+/welcome$`
 
 will trigger the:
 

@@ -17,12 +17,15 @@ The Core Configurations page in administration console provides settings that ca
 
 For information about enabling safe backup mode, see [Enabling and disabling safe backup mode](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
 
+
 >[!NOTE]
 >
 >The files in the temp directory and the long-lived documents in the global document storage (GDS) root directory may contain sensitive user information, such as information that requires special credentials when accessed by using the APIs or user interfaces. Therefore, it is important that this directory is properly secured by using whatever methods are available to the operating system. It is recommended that only the operating system account that is used to run the application server has read and write access to this directory.
 
+
 1. In administration console, click **[!UICONTROL Settings > Core System Settings > Configurations]**.
 1. On the Core Configurations page, change the options as required and click **[!UICONTROL OK]**. For details about the options, see [Core Configurations options](configure-general-aem-forms-settings.md#core-configurations-options).
+
 
 ## Core Configurations options {#core-configurations-options}
 

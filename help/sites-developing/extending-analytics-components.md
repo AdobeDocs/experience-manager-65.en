@@ -191,7 +191,7 @@ Configure the topnav component and edit the JSP file to define the tracking even
     * Value: General
 
 1. Click Save All.
-1. Open the topnav.jsp file.
+1. Open the `topnav.jsp` file.
 1. In the a element, add the following attribute:
 
    ```xml
@@ -219,7 +219,7 @@ Configure the topnav component and edit the JSP file to define the tracking even
 
 1. Click Save All.
 
-The content of the topnav.jsp file should appear as follows:
+The content of the `topnav.jsp` file should appear as follows:
 
 ```xml
 <%@page session="false"%><%--

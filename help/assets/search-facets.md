@@ -1,12 +1,8 @@
 ---
 title: Search Facets
-seo-title: Search Facets
 description: This article describes how to create, modify, and use search facets in AEM.
-seo-description: Learn how to create, modify, and use search facets in AEM.
 uuid: 213bec95-2f9a-49d2-a45b-0c7d1bb4fbf8
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: 4c03f218-6c0c-4482-b10e-a6ccddb30d57
 ---
 
@@ -377,4 +373,3 @@ If you are not assigned an administrator role, here is a list of permissions you
 >
 >* [Extending Assets' search](searchx.md)
 >* [Searching Assets](search-assets.md)
->* [Searching video assets](search-video-assets.md)

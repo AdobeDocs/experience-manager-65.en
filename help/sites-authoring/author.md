@@ -91,4 +91,4 @@ When the AEM site is a [community site](/help/communities/overview.md), or inclu
 
 #### Dispatcher {#dispatcher}
 
-To optimize performance for visitors to your website, the ** [dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)** implements load balancing and caching.
+To optimize performance for visitors to your website, the **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)** implements load balancing and caching.

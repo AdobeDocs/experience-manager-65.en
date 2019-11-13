@@ -53,7 +53,7 @@ The **Project Heartbeat** worksheet provides a graphical overview of critical me
 
 ## Status by Role {#status-by-role}
 
-The **Status by Role** worksheet shows detailed breakdown of [**Health**, **Quality** and **Completeness**](#projectheartbeat) by ** [Phase](#phases-and-milestones)** and ** [Persona](#persona)**.
+The **Status by Role** worksheet shows detailed breakdown of [**Health**, **Quality** and **Completeness**](#projectheartbeat) by **[Phase](#phases-and-milestones)** and **[Persona](#persona)**.
 
 ## Phases and Milestones {#phases-and-milestones}
 

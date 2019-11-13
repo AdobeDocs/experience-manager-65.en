@@ -28,6 +28,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following Java code example applies usage rights to a PDF document named *Loan.pdf*. The rights-enabled PDF document is saved as a PDF file named *LoanUsageRights.pdf*. The following usage rights are applied to this PDF document: `enabledComments`, `enabledFormFillIn`, and `enabledDigitalSignatures`. (See [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md).)
 
+
 ```as3
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 

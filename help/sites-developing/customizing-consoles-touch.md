@@ -98,7 +98,7 @@ You can customize the default view (column, card, list) for a console:
 
    This can then be connected to a toolbar item on your console:
 
-   `/apps/<*yourProject*>/admin/ext/launches`
+   `/apps/<yourProject>/admin/ext/launches`
 
    For example, in selection mode:
 
@@ -148,7 +148,7 @@ To customize the columns in the list view:
 
 1. Optionally:
 
-    * If you want to plug additional data, you need to write a ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` with a
+    * If you want to plug additional data, you need to write a [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) with a
       `pageInfoProviderType` property.
 
    For example, see the class/bundle attached (from GitHub) below.

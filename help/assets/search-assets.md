@@ -1,18 +1,15 @@
 ---
-title: Search assets in AEM
-seo-title: Search assets in AEM
+title: Search digital assets and images in AEM
 description: Learn how to find the required assets in AEM by using Filters panel, and how to use the assets that show up in search.
-seo-description: Learn how to find the required assets in AEM by using filters panel, and how to use the assets that display in search.
 uuid: c343b550-724d-4124-ae76-9331ca877ae7
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: authoring
 discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
 docset: aem65
 
 ---
 
-# Search assets in AEM{#search-assets-in-aem}
+# Search assets in AEM {#search-assets-in-aem}
 
 You can achieve higher content velocity using AEM's user-friendly asset discovery options. Your teams can reduce time to market with seamless, intelligent search experience using out-of-the-box functionality and custom methods. Searching assets is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators. Simple, advanced, and custom searches that you can perform via AEM Assets user interface or other apps and surfaces help fulfill these use cases.
 
@@ -96,8 +93,7 @@ AEM search capability supports searching for collections and searching for asset
 Familiarize yourself with the search interface and the available actions.
 
 ![Understanding parts of Assets search results interface](assets/aem_search_results.png)
-
-Understanding parts of Assets search results interface
+*Figure:* Understanding parts of Assets search results interface
 
 **A.** Save the search as a Smart Collection. **B.** Filters (predicates) to narrow the search results. **C.** Display Files, Folders, or both in the search results. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F.** Omnisearch field with user-provided search keyword **G.** Check box to select all the search results **H.** Number of displayed search results out of the total search results **I.** Close the search **J.** Switch between card view and list view
 

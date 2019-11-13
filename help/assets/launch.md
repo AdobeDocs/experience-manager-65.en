@@ -13,11 +13,11 @@ docset: aem65
 
 ---
 
-# Integrating Dynamic Media Viewers with Adobe Analytics and Adobe Launch{#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Integrating Dynamic Media Viewers with Adobe Analytics and Adobe Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## What is Dynamic Media Viewers integration with Adobe Analytics and Adobe Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
-The new* Dynamic Media Viewers* extension for Adobe Launch, along with the recent release of Dynamic Media Viewers 5.13, lets customers of Dynamic Media, Adobe Analytics, and Adobe Launch to use events and data specific for the Dynamic Media Viewers in their Adobe Launch configuration.
+The new *Dynamic Media Viewers* extension for Adobe Launch, along with the recent release of Dynamic Media Viewers 5.13, lets customers of Dynamic Media, Adobe Analytics, and Adobe Launch to use events and data specific for the Dynamic Media Viewers in their Adobe Launch configuration.
 
 This integration means that you can track usage of Dynamic Media Viewers on your website with Adobe Analytics. At the same time, you can use the events and data exposed by the viewers with any other Launch extension that comes from Adobe or a third-party.
 
@@ -189,7 +189,6 @@ The only Data Element type that the Dynamic Media Viewers extension provides is 
 When selected, the Data Element editor renders a form with two fields:
 
 * **[!UICONTROL DM viewers event data type]** - a drop-down list that identifies all viewer events that are supported by the Dynamic Media Viewers extension which have arguments, plus a special **[!UICONTROL COMMON]** item. A **[!UICONTROL COMMON]** item represents a list of event parameters that are common to all type of events sent by the viewers.
-
 * **[!UICONTROL Tracking parameter]** - an argument of the selected Dynamic Media viewer event.
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
@@ -475,7 +474,7 @@ See also [Analytics Implementation Guide](https://docs.adobe.com/content/help/en
 
 1. Generally, setting up a Report in Adobe Analytics is driven by specific project needs. As such, detailed report setup is beyond the scope for this integration.
 
-   It is, however, enough to know that the Custom Traffic reports become automatically available in Adobe Analytics after you setup Custom Traffic variables in ** [Setting up Adobe Analytics variables](#setting-up-adobe-analytics-variables)**.
+   It is, however, enough to know that the Custom Traffic reports become automatically available in Adobe Analytics after you setup Custom Traffic variables in **[Setting up Adobe Analytics variables](#setting-up-adobe-analytics-variables)**.
 
    For example, the report for **[!UICONTROL Viewer asset (prop 30)]** variable is available from the Reports menu under **[!UICONTROL Custom Traffic > Custom Traffic 21-30 > Viewer asset (prop 30)]**.
 

@@ -78,7 +78,7 @@ You can complete a participant step from either:
 
 Use the following procedure to complete the work item:
 
-1. Open the ** [AEM Inbox](/help/sites-authoring/inbox.md)**.
+1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Complete** from the toolbar.
 1. The **Complete Work Item** dialog will open. Select the **Next Step** from the drop down selector and add a **Comment** if required.
@@ -137,7 +137,7 @@ You can delegate a participant step from either:
 
 Use the following procedure to delegate a work item:
 
-1. Open the ** [AEM Inbox](/help/sites-authoring/inbox.md)**.
+1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Delegate** from the toolbar.
 1. The dialog will open. Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
@@ -187,7 +187,7 @@ You can perform step back on a participant step from either:
 
 Use the following procedure to step back:
 
-1. Open the ** [AEM Inbox](/help/sites-authoring/inbox.md)**.
+1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Step Back** to open the dialog.
 
@@ -249,7 +249,7 @@ You can open the work item details from either:
 
 To open a workflow item and view the details:
 
-1. Open the ** [AEM Inbox](/help/sites-authoring/inbox.md)**.
+1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Open** to open the information tabs.
 
@@ -272,7 +272,7 @@ You can view details of the payload associated with the workflow instance. Initi
 
 To view the payload, and resources, of the workflow instance:
 
-1. Open the ** [AEM Inbox](/help/sites-authoring/inbox.md)**.
+1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **View Payload** from the toolbar to open the dialog.
 
