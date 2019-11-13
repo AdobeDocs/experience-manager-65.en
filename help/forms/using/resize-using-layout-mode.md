@@ -51,7 +51,7 @@ Select **Layout** from the drop-down list that appears at the top of the adaptiv
 
 ### Example {#example}
 
-**Objective: **You want to insert a table component and an Image component and position them parallel to each other in an Interactive Communication.
+**Objective:** You want to insert a table component and an Image component and position them parallel to each other in an Interactive Communication.
 
 1. Insert the table and image components using Edit mode in the web channel. The image component display after the table component.
 1. Switch to Layout mode and tap the Table component. The blue dots to resize the component display at column 1 and 12.

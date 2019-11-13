@@ -24,6 +24,7 @@ You can use the Service Management page to configure settings for each of the se
    >
    >Not all of the services listed on the Service Management page have a Configuration tab. For processes that you have created, the Configuration tab appears only if you have added a configuration parameter to the process in Workbench. (See “Configuration parameters” in the * [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) .) *
 
+
 1. Click the Security tab and set the security settings for the service. See [Modifying security settings for a service](configure-service-settings.md#modifying-security-settings-for-a-service).
 1. If the service has an Endpoints tab, use it to change the endpoint settings. See [Managing Endpoints](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md).
 1. Click the Pooling tab and set the pooling settings. See [Configuring pooling for a service](configure-service-settings.md#configuring-pooling-for-a-service).
@@ -792,11 +793,11 @@ Default security profiles are installed, which can then be configured to meet yo
 
    To specify the run-time identity used by a service to execute operations, select Specify Run As, select an option from the associated list, and then click Save. Choose from the following options:
 
-   **Invoker: **Uses the same identity as the user who invoked the service.
+   **Invoker:** Uses the same identity as the user who invoked the service.
 
-   **System: **Uses the System user to run the service with full privileges.
+   **System:** Uses the System user to run the service with full privileges.
 
-   **Named User: **Enables you to run the service as a specific user. When you select this option, click Select User to display the Select Principal page, where you can search for and select the user.
+   **Named User:** Enables you to run the service as a specific user. When you select this option, click Select User to display the Select Principal page, where you can search for and select the user.
 
    If you do not select Specify Run As, the default behavior is used.
 

@@ -1,13 +1,9 @@
 ---
 title: Assets HTTP API
-seo-title: Assets HTTP API
 description: Learn about the implementation, data model, and features of Assets HTTP API. Use Assets HTTP API to perform various tasks around assets.
-seo-description: Learn about the implementation, data model, and features of Assets HTTP API. Use Assets HTTP API to perform various tasks around assets.
 uuid: 24bd2b1e-8f4c-4177-8715-b53a51f02d6e
-contentOwner: User
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: extending-assets
-content-type: reference
 discoiquuid: 2bb815f0-c1da-491e-81e5-286e596c5197
 docset: aem65
 
@@ -21,10 +17,12 @@ The Assets HTTP API is exposed at */api/assets*, and allows for create-read-upda
 
 To access the API:
 
-1. Open the API service document at `https://[hostname]:[port]/api.json`. ``
+1. Open the API service document at `https://[hostname]:[port]/api.json`.
 1. Follow the Assets service link leading to `https://[hostname]:[server]/api/assets.json`.
 
 The API's response is a JSON for some mime types and a response code for all mime types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
+
+After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API. The API returns 404 error message if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
 
 ## Content Fragments {#content-fragments}
 
@@ -55,9 +53,7 @@ title -- Optional title of the folder which can be displayed instead of its name
 >
 >Some properties of folder or asset are mapped to a different prefix. The `jcr` prefix of `jcr:title`, `jcr:description`, and `jcr:language` are replaced with `dc` prefix. Hence in the returned JSON, `dc:title` and `dc:description` contain the values of `jcr:title` and `jcr:description`, respectively.
 
-**Links**
-
-Folders expose three links:
+**Links** Folders expose three links:
 
 ```xml
 self      -- Link to itself

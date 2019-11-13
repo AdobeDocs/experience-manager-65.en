@@ -337,8 +337,8 @@ Use the following procedure to configure link tracking for a **Text** component:
 
 1. (Optional) To track variable data with the link click, add Adobe Analytics variables in the **Include Adobe Analytics Variables** field. Use either of the following formats:
 
-    * `*<Variable-name>*: *<Dynamic Value>*`
-    * `*<Variable-name>*: *‘CONSTANT’*`
+    * *`<Variable-name>`*: *`<Dynamic Value>`*
+    * *`<Variable-name>`*: *`‘CONSTANT'`*
 
    The following examples illustrate each format:
 

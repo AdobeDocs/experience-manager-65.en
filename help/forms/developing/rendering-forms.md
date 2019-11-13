@@ -26,7 +26,8 @@ Depending upon the type of client application, you can write the form to a clien
 * The web service (Java Base64) examples are a Java servlet.
 * The web service (MTOM) examples are a console application (not all quick starts have a MTOM example).
 
-  ***Note**: For information about creating a web application that uses java servlets to invoke the Forms service, see [Creating Web Applications that Renders Forms](/help/forms/developing/creating-web-applications-renders-forms.md).*
+***Note**: For information about creating a web application that uses java servlets to invoke the Forms service, see [Creating Web Applications that Renders Forms](/help/forms/developing/creating-web-applications-renders-forms.md).*
+
 
   You can pass a form design (an XDP file) or a PDF document to the Forms service using one of two ways:
 

@@ -37,9 +37,7 @@ You can use the **Synchronize Assets from Repository **option to manually synchr
 
    Figure 1 - AEM Forms user interface
 
-1. Click the ** ![aem6forms_sync](assets/aem6forms_sync.png)
-
-   ** icon in the toolbar. If you do not have any assets at last configured path then the dialog box as shown below. Click **Start **to initiate the synchronization.
+1. Click the **![aem6forms_sync](assets/aem6forms_sync.png)** icon in the toolbar. If you do not have any assets at last configured path then the dialog box as shown below. Click **Star** to initiate the synchronization.
 
    ![Synchronization dialog box](assets/migrate-and-syncronize.png)
 

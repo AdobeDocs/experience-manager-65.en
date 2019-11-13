@@ -58,11 +58,11 @@ Use the following procedure to map CQ component variables with Adobe Analytics r
    >
    >It is highly recommended that:
    >    
-   >    * `eVars` and `props` are mapped to CQ variables beginning with either `pagedata.X`** **or `eventdata.X`   
+   >    * `eVars` and `props` are mapped to CQ variables beginning with either `pagedata.X` or `eventdata.X`   
    >    
    >    * whereas events should be mapped to variables starting with `eventdata.events.X`
 
-1. To make the framework available on the publish instance of your site, open the **Page **tab of sidekick, and click **Activate Framework.**
+1. To make the framework available on the publish instance of your site, open the **Page** tab of sidekick, and click **Activate Framework.**
 
 ## Mapping Product-Related Variables {#mapping-product-related-variables}
 
@@ -70,12 +70,12 @@ AEM uses a convention for naming product-related variables and events that are m
 
 | CQ Variable |Analytics Variable |Description |
 |---|---|---|
-| `product.category` | `product.categor`y (conversion variable) |The product category. |
+| `product.category` | `product.category` (conversion variable) |The product category. |
 | `product.sku` | `product.sku` (conversion variable) |The product sku. |
 | `product.quantity` | `product.quantity` (conversion variable) |The number of products being purchased. |
 | `product.price` | `product.price` (conversion variable) |The product price. |
-| `product.events.*eventName*` |The success event(s) to associate with the product in your report. | `product.events` is the prefix for events named *eventName.* |
-| `product.evars.*eVarName*` |The conversion variable(s) ( `eVar`) to associate with the product. | `product.evars` is the prefix for eVar variables named *eVarName.* |
+| `product.events.<eventName>` |The success event(s) to associate with the product in your report. | `product.events` is the prefix for events named *eventName.* |
+| `product.evars.<eVarName>` |The conversion variable(s) ( `eVar`) to associate with the product. | `product.evars` is the prefix for eVar variables named *eVarName.* |
 
 Several AEM Commerce components use these variable names.
 
@@ -109,8 +109,8 @@ The list can be manipulated in the following ways:
 1. When in **AEM view**, the list can be filtered depending on what variable type is selected using the 3 filter buttons:
 
     * If *no button* is selected, the list shows the full list.
-    * If the **Traffic*** **button*** is selected, the list will only show the variables belonging to the Traffic section.
-    * If the **Conversion*** **button*** is selected, the list will only show the variables belonging to the Conversion section.
+    * If the **Traffic** button is selected, the list will only show the variables belonging to the Traffic section.
+    * If the **Conversion** button is selected, the list will only show the variables belonging to the Conversion section.
     * If the **Events** button is selected, the list will only show the variables belonging to the Events section.
 
    >[!NOTE]
@@ -128,11 +128,11 @@ The list can be manipulated in the following ways:
 
 1. When in Adobe Analytics view, the Content Finder displays all CQ variables belonging to the tracking components dragged in CQ view.
 
-    * e.g. in case the **Download component **is the *only one dragged* in CQ view (which has two mappable variables *eventdata.downloadLink* and *eventdata.events.startDownload*), the Content Finder wil look like this when switching to Adobe Analytics view:
+    * e.g. in case the **Download component** is the *only one dragged* in CQ view (which has two mappable variables *eventdata.downloadLink* and *eventdata.events.startDownload*), the Content Finder wil look like this when switching to Adobe Analytics view:
 
    ![aa-22](assets/aa-22.png)
 
-    * The variables can be dragged&dropped onto any Adobe Analytics variable belonging to either one of the 3 variable sections (**Traffic**, **Conversion **and **Events**).
+    * The variables can be dragged&dropped onto any Adobe Analytics variable belonging to either one of the 3 variable sections (**Traffic**, **Conversion** and **Events**).
     
     * When dragging a new tracking component onto the framework in CQ view, the CQ variables belonging to the component get automatically added to the Content Finder(cf#) in Adobe Analytics view.
 

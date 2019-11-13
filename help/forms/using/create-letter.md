@@ -222,10 +222,8 @@ This table provides some guidelines that you can use to classify your letters:
 You need the following in place first to create a correspondence:
 
 * [Compatibility Package](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html). Install the Compatibility Package to view the **Letters** option on the **Forms** page.
-
 * The letter XDP ([layout](/help/forms/using/document-fragments.md)).
 * Other XDPs ([layout fragments](/help/forms/using/document-fragments.md#main-pars-header-13)) that form parts of the letter. The XDPs\Layouts are created in [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/). 
-
 * The relevant [data dictionary](/help/forms/using/data-dictionary.md) (Optional). 
 * The [data modules](/help/forms/using/document-fragments.md) you want to use in the correspondence.
 * [Test Data](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) is the XML file with the test data ported in it. Test data is required if you are using a data dictionary.

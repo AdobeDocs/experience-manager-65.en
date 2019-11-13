@@ -15,6 +15,7 @@ discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 
 Java API Quick Start(SOAP) is available for components and services.
 
+
 [Quick Start (SOAP mode): Deploying a component using the Java API](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
 
 [Quick Start (SOAP mode): Setting the execution context of a service using the Java API](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
@@ -27,11 +28,11 @@ Java API Quick Start(SOAP) is available for components and services.
 
 [Quick Start (SOAP mode): Removing components using the Java API](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
+
 AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
 
 * ***Note**: You cannot programmatically manipulate components and services by using web services.*
-
-  ***Note**: Quick starts located in Programming with AEM forms are based on the Forms server being deployed on JBoss and the Windows operating system. However, if you are using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. (See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+* ***Note**: Quick starts located in Programming with AEM forms are based on the Forms server being deployed on JBoss and the Windows operating system. However, if you are using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. (See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
 >[!NOTE]
 >

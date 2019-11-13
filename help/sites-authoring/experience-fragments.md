@@ -37,7 +37,7 @@ You can use Experience Fragments:
 >
 >Write access for experience fragments requires the user account to be registered in the group:
 >
->`experience-fragments-editors`
+>&nbsp;&nbsp;&nbsp;&nbsp;`experience-fragments-editors`
 >
 >Please contact your system administrator if you are experiencing any issues.
 
@@ -116,7 +116,7 @@ The following example procedure illustrates how to create a teaser for a product
 
    ![xf-05](assets/xf-05.png)
 
-1. Select ** [Configure](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** from the component toolbar.
+1. Select **[Configure](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** from the component toolbar.
 1. Add the **Asset** and define the **Properties** as required.
 1. Confirm the definitions with **Done** (tick icon).
 1. Add more components as required.

@@ -92,7 +92,7 @@ Various Forms Portal components provide exclusive sets of OOTB metadata that you
 
 ### Search &amp; Lister component {#search-amp-lister-component}
 
-* **Title: **Title of the form
+* **Title:** Title of the form
 * **name**: Name of the form (mostly it is the same as the title)
 * **description**: Description of the form
 * **formUrl**: URL to render the form as HTML
@@ -116,7 +116,7 @@ Support for localization, sorting, and using configuration properties on the use
 
 ### Link component {#link-component}
 
-* **Title: **Title of the form
+* **Title:** Title of the form
 * **formUrl**: URL to render the form as HTML
 * **target**: Target attribute of the link. Valid values are “_blank” and “_self.”
 * **linkText**: Link caption

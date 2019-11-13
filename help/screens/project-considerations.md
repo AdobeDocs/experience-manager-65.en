@@ -86,4 +86,4 @@ audience segmentation, day parts, business operations requirements, and site rea
 
 Once you understand the elements that are identified during project discovery along with stakeholder input to assess the project and prepare an appropriate design, you need to learn the key terms involved in an overall project plan such as project cycle, actions surrounding hardware testing, Proof Of Concept, pilots and rollouts.
 
-Navigate to ** [Testing, POCs, Pilots & Rollouts](/help/screens/testing-pocs-pilots-rollouts.md)** for more details.
+Navigate to **[Testing, POCs, Pilots & Rollouts](/help/screens/testing-pocs-pilots-rollouts.md)** for more details.

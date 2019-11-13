@@ -213,7 +213,11 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 1. Enter the details in the **Adobe Target Settings** tab:
 
-    * **Client Code**: the Target account Client Code
+    * **Client Code**: the Adobe IMS Tenant ID
+
+      >[!CAUTION]
+      >
+      >The Adobe IMS Tenant ID must be entered in the field labelled Client Code. 
 
     * **Authentication**: IMS
     * **IMS Configuration**: select the name of the IMS Configuration

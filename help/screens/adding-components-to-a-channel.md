@@ -191,7 +191,7 @@ The dynamic embedded sequence has the following properties:
 
 An Experience Fragment allows you to add an experience fragment (group of one or more components including content and layout that can be referenced within pages) to your AEM Screens channel. Drag and drop the component to AEM editor and select the experience fragment.
 
-To learn more about how to create an experience fragment and leverage it into an AEM Screens project, refer to ** [Using Experience Fragments](/help/screens/experience-fragments-in-screens.md)**.
+To learn more about how to create an experience fragment and leverage it into an AEM Screens project, refer to **[Using Experience Fragments](/help/screens/experience-fragments-in-screens.md)**.
 
 ![exp](assets/exp.gif)
 

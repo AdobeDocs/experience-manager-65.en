@@ -118,9 +118,9 @@ J. **View SOM Expression:** Lets you view the [SOM expression](../../forms/using
 
 K: **Group objects in Panel:** Lets you group the components in a panel to be able to perform operations on those components simultaneously. For details, see [Group objects in Panel](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576).
 
-L. **Add Child Panel **(for panels only)**: **Lets you add a child panel to the panel.
+L. **Add Child Panel** (for panels only): Lets you add a child panel to the panel.
 
-M: **Add Panel Toolbar **(for panels only)**: **Lets you add the Toolbar for Panel component. You can then perform further actions on the toolbar.
+M: **Add Panel Toolbar** (for panels only):Lets you add the Toolbar for Panel component. You can then perform further actions on the toolbar.
 
 In addition, the **Replace** option on the toolbar lets you replace the existing component with an alternate component. The option is not available for the Panel component.
 

@@ -60,9 +60,7 @@ For example, by default the [**Create Page** wizard](/help/sites-authoring/manag
    >
    >As reference, see:
    >
-   >```
-   >/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog
-   >```
+   >&nbsp;&nbsp;&nbsp;&nbsp;`/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
    >
    >However, you ***must*** not change anything in the `/libs` path.
    >

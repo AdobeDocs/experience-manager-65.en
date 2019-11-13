@@ -299,7 +299,7 @@ The chart plots the amount for transactions performed in a certain date range. T
 To accomplish this, specify the following properties:
 
 * **Name:** Specify the name for the chart.
-* **Chart Type: **Select **Quadrant** from the drop-down list.
+* **Chart Type:** Select **Quadrant** from the drop-down list.
 
 * Select the **Multiple Series** checkbox.
 * **Data Model Object**: Specify the data model object property for the series. The data model object property for the bank name is a parent to the data model object properties plotted in X-axis and Y-axis.

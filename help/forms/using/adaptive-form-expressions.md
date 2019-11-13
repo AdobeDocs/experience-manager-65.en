@@ -154,7 +154,7 @@ The Value Commit script is triggered when:
 
 **Return Type:** The value commit script expression does not return any value. If any expression returns a value, the value is ignored.
 
-**Example: **To convert the case of alphabets entered in the field to uppercase on commit, the value commit expression is:
+**Example:** To convert the case of alphabets entered in the field to uppercase on commit, the value commit expression is:
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]

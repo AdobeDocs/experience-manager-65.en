@@ -57,7 +57,7 @@ When you use custom javascript code to customize the framework, you alter the co
 
 ## Configuring Adobe Analytics Properties {#configuring-adobe-analytics-properties}
 
-There are a number of predefined variables within Adobe Analytics that are configurable on a framework**. **The **charset**, **cookieLifetime**, **currencyCode** and **trackInlineStats** variables are included in the **General Analytics Settings** list by default.
+There are a number of predefined variables within Adobe Analytics that are configurable on a framework. The **charset**, **cookieLifetime**, **currencyCode** and **trackInlineStats** variables are included in the **General Analytics Settings** list by default.
 
 ![aa-22](assets/aa-22.png)
 

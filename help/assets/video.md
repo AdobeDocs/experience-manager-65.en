@@ -57,7 +57,7 @@ The following step-by-step workflow description is designed to help you get up a
         * [Organizing digital assets](/help/assets/organize-assets.md)
           Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/best-practices-for-file-management.md)
 
-        * [Searching video assets](/help/assets/search-video-assets.md) or [Searching assets](/help/assets/managing-assets-touch-ui.md#searchingassets)
+        * [Searching video assets](/help/assets/search-assets.md#custompredicates) or [Searching assets](/help/assets/managing-assets-touch-ui.md#searchingassets)
 
     * Preview and publish video assets
 

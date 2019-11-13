@@ -65,7 +65,7 @@ Because HTL is the preferred technology for developing AEM sites, HTL should be 
 In HTL, client libraries are loaded through a helper template provided by AEM, which can be accessed through [ `data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Three templates are available in this file, which can be called through [ `data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css** - Loads only the CSS files of the referenced client libraries.
-* **js ** - Loads only the JavaScript files of the referenced client libraries.
+* **js** - Loads only the JavaScript files of the referenced client libraries.
 * **all** - Loads all the files of the referenced client libraries (both CSS and JavaScript).
 
 Each helper template expects a `categories` option for referencing the desired client libraries. That option can be either an array of string values, or a string containing a comma separated values list.
@@ -110,7 +110,7 @@ Client library folders contain the following items:
 * The JS and/or CSS source files to merge.
 * Resources that support CSS styles, such as image files.
 
-  **Note: **You can use subfolders to organize source files.
+  **Note:** You can use subfolders to organize source files.
 * One `js.txt` file and/or one `css.txt` file that identifies the source files to merge in the generated JS and/or CSS files.
 
 ![clientlibarch](assets/clientlibarch.png)
@@ -171,7 +171,7 @@ Then you set the `allowProxy` property on `foo` to true.
 
 1. Add source files to the library folder by any means. For example, use a WebDav client to copy files, or create a file and author the content manually.
 
-   **Note: **You can organize source files in subfolders if desired.
+   **Note:** You can organize source files in subfolders if desired.
 
 1. Select the client library folder and click **Create &gt; Create file**.
 1. In the file name box, type one of the following file names and click OK:
@@ -201,7 +201,7 @@ When the code in your client library folder references other libraries, identify
 The dependencies must be another `cq:ClientLibraryFolder`. To identify dependencies, add a property to your `cq:ClientLibraryFolder` node with the following attributes:
 
 * **Name:** dependencies
-* **Type: **String[]
+* **Type:** String[]
 * **Values:** The value of the categories property of the cq:ClientLibraryFolder node that the current library folder depends on.
 
 For example, the / `etc/clientlibs/myclientlibs/publicmain` has a dependency on the `cq.jquery` library. The JSP that references the main client library generates HTML that includes the following code:
@@ -299,7 +299,7 @@ Use the `channels` property of a client library folder to identify the mobile gr
 To associate a client library folder with a device group, add a property to your `cq:ClientLibraryFolder` node with the following attributes:
 
 * **Name:** channels
-* **Type: **String[]
+* **Type:** String[]
 * **Values:** The name of the mobile group. To exclude the library folder from a group, prefix the name with an exclamation mark ("!").
 
 For example, the following table lists the value of the `channels` property for each client library folder of the `cq.widgets` category:

@@ -90,10 +90,12 @@ The process of invoking a service using watched folders is as follows:
 1. When the job scan interval occurs, the Scheduler service invokes the provider.file_scan_service to process the files or folders in the input folder.
 1. The provider.file_scan_service performs these tasks:
 
+
     * Scans the input folder for files or folders that match the include file pattern and excludes files or folders for the specified exclude file pattern. The oldest files or folders are picked up first. Files and folders that are older than the wait time are also picked up. In one scan, the number of files or folders that are processed are based on the batch size. For information about file patterns, see [About file patterns](configuring-watched-folder-endpoints.md#about-file-patterns). For information about setting the batch size, see [Watched Folder service settings](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
     * Picks up the files or folders for processing. If the files or folders are not completely downloaded, they are picked up in the next scan. To make sure that folders are completely downloaded, administrators should create a folder with a name by using the exclude file pattern. After the folder has all the files, it must be renamed to the pattern specified in the include file pattern. This step ensures that the folder has all the necessary files needed for invoking the service. For more information about ensuring that folders are completely downloaded, see [Tips and tricks for watched folders](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders). 
     * Moves the files or folders to the stage folder after selecting them for processing.
     * Converts the files or folders in the stage folder to the appropriate input based on the endpoint input parameter mappings. For examples of input parameter mappings, see [Tips and tricks for watched folders](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+
 
 1. The target service configured for the endpoint is invoked either synchronously or asynchronously. The target service is invoked using the user name and password configured for the endpoint.
 
@@ -103,6 +105,7 @@ The process of invoking a service using watched folders is as follows:
 1. The provider.file_write_results_service handles the response or failure of the target service invocation. When successful, the output is saved to the result folder based on the endpoint configuration. The provider.file_write_results_service also preserves the source if the endpoint is configured to preserve the results upon successful completion.
 
    When the invocation of the target service results in a failure, the provider.file_write_results_service logs the reason for the failure in a failure.log file and places that file in the failure folder. The failure folder is created based on the configuration parameters specified for the endpoint. When the administrator sets the Preserve On Failure option for the endpoint configuration, the provider.file_write_results_service also copies the source files into the failure folder. For information about recovering files from the failure folder, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+
 
 ## Watched folder endpoint settings {#watched-folder-endpoint-settings}
 
@@ -171,6 +174,7 @@ You can use file patterns to include:
     * &ast;.[Xx][Mm][Ll]
 
 For more information about file patterns, see [About file patterns](configuring-watched-folder-endpoints.md#about-file-patterns).
+
 
 **Result Folder:** The folder where the saved results are stored. If the results do not appear in this folder, check the failure folder. Read-only files are not processed and will be saved in the failure folder. This value can be an absolute or relative path with the following file patterns:
 
@@ -277,6 +281,7 @@ Throttling prevents Watched Folder from invoking new jobs when the previous jobs
 * If the forms server goes down before Watched Folder can invoke the jobs, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 * If the forms server is running but Watched Folder is not running when the Job Manager service calls back, which occurs when services do not start in the ordered sequence, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
+
 ## Performance and scalability {#performance-and-scalability}
 
 Watched Folder can serve 100 folders in total on one single node. The performance of Watched Folder is dependent on the performance of the forms server. For asynchronous invocation, performance is more dependent on the system load and jobs that are in the Job Manager queue.
@@ -305,6 +310,7 @@ For synchronous invocations, the Quartz load balancer decides which node will ge
 
 For synchronous invocations, when one node fails, the Quartz scheduler sends new polling events to other nodes. Invocations that were started on the failed node will be lost. For more information about how to recover the files associated with the failed job, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
+
 ### Asynchronous watched folder in a cluster {#asynchronous-watched-folder-in-a-cluster}
 
 For asynchronous invocations, the Quartz load balancer decides which node will get the polling event. The node that gets the polling event will scan the input folder and invoke the target service by placing the request in the Job Manager service queue. The Job Manager service load balancer, in turn, is responsible for deciding which node will process the invocation request. It is possible that even though node A created the invocation request, node B ends up processing the request. Or the node that started the invocation request may also end up processing the request. 
@@ -312,6 +318,7 @@ For asynchronous invocations, the Quartz load balancer decides which node will g
 ![en_asynchwatchedfoldercluster](assets/en_asynchwatchedfoldercluster.png)
 
 For asynchronous invocations, when one node fails, the Quartz scheduler sends new polling events to other nodes. Invocation requests that were created on the failed node will be in the Job Manager service queue and will be sent to other nodes for processing. Files for which invocation requests are not created will remain in the stage folder. For more information about how to recover the files associated with the failed job, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+
 
 ## Failure points and recovery {#failure-points-and-recovery}
 
@@ -412,6 +419,7 @@ For all services, you should adjust the batch size and repeat interval of the wa
 * Watched Folder does not wait for the Process Engine to finish the job before it picks up new files or folders. It keeps scanning the watched folder and invoking the target service. This behavior can overload the engine, causing resourcing issues and time-outs. Ensure that you use repeat interval and batch size to throttle the Watched Folder input. You can increase the repeat interval and reduce the batch size if more watched folders exist or enable throttling on the endpoint. For information about throttling, see [About throttling](configuring-watched-folder-endpoints.md#about-throttling). 
 * Watched Folder impersonates the user specified in the user name and domain name. Watched Folder invokes the service as this user if invoked directly or if the process is short-lived. For a long-lived process, the process is invoked with the System context. Administrators can set operating system policies for Watched Folder to determine which user to allow or deny access to. 
 * Use file patterns to organize result, failure, and preserve folders. (See [About file patterns](configuring-watched-folder-endpoints.md#about-file-patterns).)
+
 * Watched Folder relies on the Quartz scheduler for scanning the watched folders. The Quartz scheduler has a thread pool to scan them. If the repeat interval for the watched folder is very low (&lt; 5 seconds) and the batch size is high (&gt; 2), a race condition can occur. When this condition occurs, one file is picked up by two Quartz threads:
 
     * One of the threads successfully finds the file and invokes the target service with the file. 
