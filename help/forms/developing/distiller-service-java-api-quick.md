@@ -73,7 +73,7 @@ The following code example converts a PostScript file called *Loan.ps *to a PDF 
      * mode, see "Setting connection properties" in Programming
      * with AEM Forms
      */
- 
+
  import java.io.File;
  import java.io.FileInputStream;
  import java.util.Properties;
@@ -82,9 +82,9 @@ The following code example converts a PostScript file called *Loan.ps *to a PDF 
  import com.adobe.idp.dsc.clientsdk.ServiceClientFactory;
  import com.adobe.idp.dsc.clientsdk.ServiceClientFactoryProperties;
  import com.adobe.livecycle.distiller.client.DistillerServiceClient;
- 
+
  public class JavaAPICreatePDFSoap {
- 
+
      public static void main(String[] args)
      {
          try
@@ -96,21 +96,21 @@ The following code example converts a PostScript file called *Loan.ps *to a PDF 
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
- 
+
          // Create a ServiceClientFactory instance
          ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps);
- 
+
          DistillerServiceClient disClient = new DistillerServiceClient(factory );
- 
+
          // Get a PS file document to convert to a PDF document and populate a com.adobe.idp.Document object
          String inputFileName = "C:\\Adobe\Loan.ps";
          FileInputStream fileInputStream = new FileInputStream(inputFileName);
          Document inDoc = new Document(fileInputStream);
- 
+
          //Set run-time options
          String adobePDFSettings = "Standard";
           String securitySettings = "No Security";
- 
+
           //Convert a PS  file into a PDF file
          CreatePDFResult result = new CreatePDFResult();
          result = disClient.createPDF(
@@ -121,10 +121,10 @@ The following code example converts a PostScript file called *Loan.ps *to a PDF 
                  null,
                  null
              );
- 
+
           //Get the newly created document
           Document createdDocument = result.getCreatedDocument();
- 
+
           //Save the PDF file
          createdDocument.copyToFile(new File("C:\\Adobe\Loan.pdf"));
          }
@@ -134,4 +134,3 @@ The following code example converts a PostScript file called *Loan.ps *to a PDF 
      }
  }
 ```
-

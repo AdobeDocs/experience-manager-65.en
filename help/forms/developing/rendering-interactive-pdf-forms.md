@@ -83,11 +83,11 @@ The following code shows the syntax of a Java Servlet named GetLoanForm:
      public class GetLoanForm extends HttpServlet implements Servlet {
          public void doGet(HttpServletRequest req, HttpServletResponse resp
          throws ServletException, IOException {
- 
+
          }
          public void doPost(HttpServletRequest req, HttpServletResponse resp
          throws ServletException, IOException {
- 
+
              }
 ```
 

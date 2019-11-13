@@ -1,8 +1,8 @@
 ---
 title: Using autosave in AEM Forms app
 seo-title: Using autosave in AEM Forms app
-description: Learn how to use autosave feature in AEM Forms app that lets you avoid data loss. 
-seo-description: Learn how to use autosave feature in AEM Forms app that lets you avoid data loss. 
+description: Learn how to use autosave feature in AEM Forms app that lets you avoid data loss.
+seo-description: Learn how to use autosave feature in AEM Forms app that lets you avoid data loss.
 uuid: 00fe6a10-1a72-443d-a840-0415dc769199
 contentOwner: sashanka
 content-type: reference
@@ -20,7 +20,7 @@ When a user enters data in the Adobe Experience Manager Forms app, the autosave 
 Your app can accidentally close:
 
 * If your device shuts down due to low battery
-* If the user kills the app  
+* If the user kills the app
 * If an unexpected crash occurs
 
 You can specify the intervals after which the app saves the entered data.
@@ -32,7 +32,7 @@ You can specify the intervals after which the app saves the entered data.
 Perform the following steps to use the autosave feature in AEM Forms app:
 
 1. Log in to the app, and navigate to **Settings &gt; General**.
-1. In the General screen, use the **Autosave Frequency** option to select the intervals at which you want the app to save the entered data. 
+1. In the General screen, use the **Autosave Frequency** option to select the intervals at which you want the app to save the entered data.
    [ ![Setting autosave frequency](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
 1. When you restart the app and log in with the same user, you are prompted to restore your task with Recover Unsaved Task dialog. Click **OK** in the Recover Unsaved Task dialog to resume working with the saved task. You can click **Cancel **to delete the saved data corresponding to the last triggered autosave and start working with a new task.

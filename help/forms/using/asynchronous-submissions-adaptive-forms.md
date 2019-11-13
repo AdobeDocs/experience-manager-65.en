@@ -28,8 +28,7 @@ To configure asynchronous submission for an adaptive form:
 1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
 1. In the **[!UICONTROL On Submit]** section, select one of the following options to perform on successful form submission.
 
-    * **[!UICONTROL Redirect to URL]**: Redirects to the specified URL or page on form submission. You can specify a URL or browse to choose the path to a page in the **[!UICONTROL Redirect URL/Path]** field. 
-    
+    * **[!UICONTROL Redirect to URL]**: Redirects to the specified URL or page on form submission. You can specify a URL or browse to choose the path to a page in the **[!UICONTROL Redirect URL/Path]** field.
     * **[!UICONTROL Show Message]**: Displays a message on form submission. You can write a message in the text field below the Show Message option. The text field support rich text formatting.
 
 1. Tap ![check-button1](assets/check-button1.png) to save the properties.
@@ -48,9 +47,9 @@ The structure for the server response for submission success event is as follows
 
 ```
 {
-  contentType : "<xmlschema or jsonschema>", 
-  data : "<dataXML or dataJson>" , 
-  thankYouOption : <page/message>, 
+  contentType : "<xmlschema or jsonschema>",
+  data : "<dataXML or dataJson>" ,
+  thankYouOption : <page/message>,
   thankYouContent : "<thank you page url/thank you message>"
 }
 ```

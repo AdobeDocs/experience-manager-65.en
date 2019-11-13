@@ -21,7 +21,7 @@ AEM Forms supports CAPTCHA in adaptive forms. You can use reCAPTCHA service by G
 
 >[!NOTE] {graybox="true"}
 >
->* AEM Forms support only reCaptcha v2. Any other version is not supported.   
+>* AEM Forms support only reCaptcha v2. Any other version is not supported.
 >* CAPTCHA in adaptive forms is not supported in offline mode on AEM Forms app.
 >
 
@@ -40,7 +40,7 @@ To implement the reCAPTCHA service in AEM Forms:
     1. Do the following to enable the global folder for cloud configurations or skip this step to create and configure another folder for cloud service configurations.
 
         1. In the Configuration Browser, select the **[!UICONTROL global]** folder and tap **[!UICONTROL Properties]**.
-        
+
         1. In the Configuration Properties dialog, enable **[!UICONTROL Cloud Configurations]**.
         1. Tap **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
 
