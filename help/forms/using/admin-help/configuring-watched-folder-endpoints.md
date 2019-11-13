@@ -3,17 +3,15 @@ title: Configuring watched folder endpoints
 seo-title: Configuring watched folder endpoints
 description: Learn how to configure watched folder endpoints.
 seo-description: Learn how to configure watched folder endpoints.
-uuid: 469d351c-66e4-4a32-bfbe-c8357b21df85
+uuid: 01fb5ff8-2071-44bd-9241-7d5d41a5b26e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: cc6cc1c1-86ab-4080-af2d-568efce98f28
-docset: aem65
-
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
+discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 ---
 
-# Configuring watched folder endpoints{#configuring-watched-folder-endpoints}
+# Configuring watched folder endpoints {#configuring-watched-folder-endpoints}
 
 An administrator can configure a network folder, known as a *watched folder*, so that when a user places a file (such as a PDF file) in the watched folder, a configured service operation is invoked and manipulates the file. After the service performs the specified operation, it saves the modified file in a specified output folder.
 
@@ -39,14 +37,14 @@ In a clustered environment, the folder that will be used as a watched folder mus
 
 In Windows, if the application server is running as a service, it must be started with appropriate access to the shared folder in one of the following ways:
 
-* Configure the application server service Log On As**parameter** to start as a specific user with appropriate access to the shared watched folder.
+* Configure the application server service Log On As **parameter** to start as a specific user with appropriate access to the shared watched folder.
 * Configure the application server service Start as Local System option to Allow Service to Interact with the desktop. This option requires that the shared watched folder is accessible and writable to everyone.
 
 ## Chaining together watched folders {#chaining-together-watched-folders}
 
 Watched folders can be chained together so that a result document of one watched folder is the input document of the next watched folder. Each watched folder can invoke a different service. By configuring watched folders in this manner, multiple services can be invoked. For example, one watched folder could convert PDF files to Adobe PostScript® and a second watched folder could convert the PostScript files to PDF/A format. To do this, simply set the *result* folder of the watched folder defined by your first endpoint to point to the *input* folder of the watched folder defined by your second endpoint.
 
-Output from the first conversion would go to \*path*\result. Input for the second conversion would be \*path*\result, and output from the second conversion would go to \*path*\result\result (or the directory you define in the Result Folder box for the second conversion).
+Output from the first conversion would go to \path\result. Input for the second conversion would be \path\result, and output from the second conversion would go to \path\result\result (or the directory you define in the Result Folder box for the second conversion).
 
 ## How users interact with watched folders {#how-users-interact-with-watched-folders}
 
@@ -64,7 +62,7 @@ If the job contains more than one input file, the user must create a folder outs
 
 When the input is a folder and the output consists of multiple files, AEM forms creates an output folder with the same name as the input folder and copies the output files into that folder. When the output consists of a document map containing a key-value pair, such as the output from an Output process, the key will be used as the output file name.
 
-The output file names that result from an endpoint process cannot contain characters other than letters, numbers, and a period `(.)` before the file extension. AEM forms converts other characters to their hexadecimal values.
+The output file names that result from an endpoint process cannot contain characters other than letters, numbers, and a period (.) before the file extension. AEM forms converts other characters to their hexadecimal values.
 
 Client applications pick up the result documents from the watched folder result folder. Process errors are logged in the watched folder failure folder.
 
@@ -92,19 +90,19 @@ The process of invoking a service using watched folders is as follows:
 1. When the job scan interval occurs, the Scheduler service invokes the provider.file_scan_service to process the files or folders in the input folder.
 1. The provider.file_scan_service performs these tasks:
 
-    * Scans the input folder for files or folders that match the include file pattern and excludes files or folders for the specified exclude file pattern. The oldest files or folders are picked up first. Files and folders that are older than the wait time are also picked up. In one scan, the number of files or folders that are processed are based on the batch size. For information about file patterns, see [About file patterns](configuring-watched-folder-endpoints.md#about_file_patterns). For information about setting the batch size, see [Watched Folder service settings](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
-    * Picks up the files or folders for processing. If the files or folders are not completely downloaded, they are picked up in the next scan. To make sure that folders are completely downloaded, administrators should create a folder with a name by using the exclude file pattern. After the folder has all the files, it must be renamed to the pattern specified in the include file pattern. This step ensures that the folder has all the necessary files needed for invoking the service. For more information about ensuring that folders are completely downloaded, see [Tips and tricks for watched folders](configuring-watched-folder-endpoints.md#tips_and_tricks_for_watched_folders).
+    * Scans the input folder for files or folders that match the include file pattern and excludes files or folders for the specified exclude file pattern. The oldest files or folders are picked up first. Files and folders that are older than the wait time are also picked up. In one scan, the number of files or folders that are processed are based on the batch size. For information about file patterns, see [About file patterns](configuring-watched-folder-endpoints.md#about-file-patterns). For information about setting the batch size, see [Watched Folder service settings](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
+    * Picks up the files or folders for processing. If the files or folders are not completely downloaded, they are picked up in the next scan. To make sure that folders are completely downloaded, administrators should create a folder with a name by using the exclude file pattern. After the folder has all the files, it must be renamed to the pattern specified in the include file pattern. This step ensures that the folder has all the necessary files needed for invoking the service. For more information about ensuring that folders are completely downloaded, see [Tips and tricks for watched folders](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders). 
     * Moves the files or folders to the stage folder after selecting them for processing.
-    * Converts the files or folders in the stage folder to the appropriate input based on the endpoint input parameter mappings. For examples of input parameter mappings, see [Tips and tricks for watched folders](configuring-watched-folder-endpoints.md#tips_and_tricks_for_watched_folders).
+    * Converts the files or folders in the stage folder to the appropriate input based on the endpoint input parameter mappings. For examples of input parameter mappings, see [Tips and tricks for watched folders](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 1. The target service configured for the endpoint is invoked either synchronously or asynchronously. The target service is invoked using the user name and password configured for the endpoint.
 
-    * Synchronous invocation calls the target service directly and immediately handles the response.
+    * Synchronous invocation calls the target service directly and immediately handles the response. 
     * For asynchronous invocation, the target service is called through the Job Manager service, which places the request in a queue. The Job Manager Service, in turn, calls the provider.file_write_results_service to handle the results.
 
 1. The provider.file_write_results_service handles the response or failure of the target service invocation. When successful, the output is saved to the result folder based on the endpoint configuration. The provider.file_write_results_service also preserves the source if the endpoint is configured to preserve the results upon successful completion.
 
-   When the invocation of the target service results in a failure, the provider.file_write_results_service logs the reason for the failure in a failure.log file and places that file in the failure folder. The failure folder is created based on the configuration parameters specified for the endpoint. When the administrator sets the Preserve On Failure option for the endpoint configuration, the provider.file_write_results_service also copies the source files into the failure folder. For information about recovering files from the failure folder, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure_points_and_recovery).
+   When the invocation of the target service results in a failure, the provider.file_write_results_service logs the reason for the failure in a failure.log file and places that file in the failure folder. The failure folder is created based on the configuration parameters specified for the endpoint. When the administrator sets the Preserve On Failure option for the endpoint configuration, the provider.file_write_results_service also copies the source files into the failure folder. For information about recovering files from the failure folder, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 ## Watched folder endpoint settings {#watched-folder-endpoint-settings}
 
@@ -140,60 +138,60 @@ When files are dropped into the watched folder, it lists the files in the input,
 
 **Wait Time:** The time, in milliseconds, to wait before you scan a folder or file after it is created. For example, if the wait time is 3,600,000 milliseconds (one hour) and the file was created one minute ago, this file will be picked up after 59 or more minutes have passed. The default value is 0.
 
-This setting is useful to ensure that a file or folder is completely copied to the input folder. For example, if you have a large file to process and the file takes ten minutes to download, set the wait time to 10&#42;60 &#42;1000 milliseconds. This prevents the watched folder from scanning the file if it is not ten minutes old.
+This setting is useful to ensure that a file or folder is completely copied to the input folder. For example, if you have a large file to process and the file takes ten minutes to download, set the wait time to 10&ast;60 &ast;1000 milliseconds. This prevents the watched folder from scanning the file if it is not ten minutes old.
 
-**Exclude File Pattern:** A semi-colon (;) delimited list of patterns that a watched folder uses to determine which files and folders to scan and pick up. Any file or folder with this pattern will not be scanned for processing.
+**Exclude File Pattern:** A semi-colon **;** delimited list of patterns that a watched folder uses to determine which files and folders to scan and pick up. Any file or folder with this pattern will not be scanned for processing.
 
 This setting is useful when the input is a folder with multiple files. The contents of the folder can be copied into a folder with a name that will be picked up by the watched folder. This prevents the watched folder from picking up a folder for processing before the folder is completely copied into the input folder.
 
 You can use file patterns to exclude:
 
-* Files with specific filename extensions; for example, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-* Files with specific names; for example, data.&#42; would exclude files and folders named *data1*, *data2*, and so on.
+* Files with specific filename extensions; for example, &ast;.dat, &ast;.xml, &ast;.pdf.
+* Files with specific names; for example, data.&ast; would exclude files and folders named *data1*, *data2*, and so on.
 * Files with composite expressions in the name and extension, as in these examples:
 
     * Data[0-9][0-9][0-9].[dD][aA][tT]
-    * &#42;.[dD][Aa][Tt]
-    * &#42;.[Xx][Mm][Ll]
+    * &ast;.[dD][Aa][Tt]
+    * &ast;.[Xx][Mm][Ll]
 
-For more information about file patterns, see [About file patterns](configuring-watched-folder-endpoints.md#about_file_patterns).
+For more information about file patterns, see [About file patterns](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**Include File Pattern:** (Mandatory) A semi-colon (;) delimited list of patterns that the watched folder uses to determine which folders and files to scan and pick up. For example, if the Include File Pattern is input&#42;, all files and folders that match input&#42; are picked up. This includes files and folders named input1, input2, and so on.
+**Include File Pattern:** (Mandatory) A semi-colon **;** delimited list of patterns that the watched folder uses to determine which folders and files to scan and pick up. For example, if the Include File Pattern is input&ast;, all files and folders that match input&ast; are picked up. This includes files and folders named input1, input2, and so on.
 
-The default value is &#42; and indicates all files and folders.
+The default value is &ast; and indicates all files and folders.
 
 You can use file patterns to include:
 
-* Files with specific filename extensions; for example, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-* Files with specific names; for example, data.&#42; would include files and folders named *data1*, *data2*, and so on.
+* Files with specific filename extensions; for example, &ast;.dat, &ast;.xml, &ast;.pdf.
+* Files with specific names; for example, data.&ast; would include files and folders named *data1*, *data2*, and so on.
 * Files with composite expressions in the name and extension, as in these examples:
 
     * Data[0-9][0-9][0-9].[dD][aA][tT]
-    * &#42;.[dD][Aa][Tt]
-    * &#42;.[Xx][Mm][Ll]
+    * &ast;.[dD][Aa][Tt]
+    * &ast;.[Xx][Mm][Ll]
 
-For more information about file patterns, see [About file patterns](configuring-watched-folder-endpoints.md#about_file_patterns).
+For more information about file patterns, see [About file patterns](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 **Result Folder:** The folder where the saved results are stored. If the results do not appear in this folder, check the failure folder. Read-only files are not processed and will be saved in the failure folder. This value can be an absolute or relative path with the following file patterns:
 
-* %F = filename prefix
+* %F = filename prefix 
 * %E = filename extension
-* %Y = year (full)
-* %y = year (last two digits)
+* %Y = year (full) 
+* %y = year (last two digits) 
 * %M = month
-* %D = day of month
-* %d = day of year
-* %H = hour (24-hour clock)
-* %h = hour (12-hour clock)
-* %m = minute
-* %s = second
-* %l = millisecond
-* %R = random number (between 0 and 9)
+* %D = day of month 
+* %d = day of year 
+* %H = hour (24-hour clock) 
+* %h = hour (12-hour clock) 
+* %m = minute 
+* %s = second 
+* %l = millisecond 
+* %R = random number (between 0 and 9) 
 * %P = process or job id
 
 For example, if it is 8 PM on July 17, 2009 and you specify `C:/Test/WF0/failure/%Y/%M/%D/%H/`, the result folder is `C:/Test/WF0/failure/2009/07/17/20`.
 
-If the path is not absolute but relative, the folder will be created inside the watched folder. The default value is result/%Y/%M/%D/, which is the Result folder inside the watched folder. For more information about file patterns, see [About file patterns](configuring-watched-folder-endpoints.md#about_file_patterns).
+If the path is not absolute but relative, the folder will be created inside the watched folder. The default value is result/%Y/%M/%D/, which is the Result folder inside the watched folder. For more information about file patterns, see [About file patterns](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 ***Note**: The smaller the size of the result folders, the better Watched Folder performance will be. For example, if the estimated load for the watched folder is 1000 files every hour, try a pattern like `result/%Y%M%D%H` so that a new subfolder is created every hour. If the load is smaller (for example, 1000 files per day), you could use a pattern like `result/%Y%M%D`.*
 
@@ -219,25 +217,25 @@ A value of -1 days indicates to never delete the results folder. The default val
 
 **Literal:** The watched folder uses the value entered in the field as it is displayed. All basic Java types are supported. For example, if an API uses input such as String, long, int, and Boolean, the string is converted to the proper type and the service is invoked.
 
-**Variable:** The value entered is a file pattern that the watched folder uses to pick the input. For example, in the case of the encrypt password service, where the input document must be a PDF file, the user can use &#42;.pdf as the file pattern. The watched folder will pick up all files in the watched folder that match this pattern and invoke the service for each file. When a variable is used, all input files are converted to documents. Only APIs that use Document as the input type are supported.
+**Variable:** The value entered is a file pattern that the watched folder uses to pick the input. For example, in the case of the encrypt password service, where the input document must be a PDF file, the user can use &ast;.pdf as the file pattern. The watched folder will pick up all files in the watched folder that match this pattern and invoke the service for each file. When a variable is used, all input files are converted to documents. Only APIs that use Document as the input type are supported.
 
 **Output Parameter Mappings:** Used to configure the outputs of the service and operation. The settings available depend on which service is using the watched folder endpoint.
 
 Watched Folder output can be a single document, a list of documents, or a map of documents. These output documents are then saved in the result folder, using the pattern specified in the Output Parameter Mapping.
 
-***Note**: Specifying names that result in unique output filenames improves performance. For example, consider the case where the service returns one output document and the Output Parameter Mapping maps it to `%F.%E` (the file name and extension of the input file). In this case, if users drop files with the same name every minute, and the result folder is configured to `result/%Y/%M/%D`, and the Overwrite Duplicate Filename setting is off, Watched Folder will try to resolve the duplicate file names. The process of resolving duplicate file names can affect performance. In this situation, changing the Output Parameter Mapping to `%F_%h_%m_%s_%l` to add hours, minutes, seconds, and milliseconds to the name, or ensuring that dropped files have unique names may improve performance.*
+**Note**: *Specifying names that result in unique output filenames improves performance. For example, consider the case where the service returns one output document and the Output Parameter Mapping maps it to `%F.%E` (the file name and extension of the input file). In this case, if users drop files with the same name every minute, and the result folder is configured to `result/%Y/%M/%D`, and the Overwrite Duplicate Filename setting is off, Watched Folder will try to resolve the duplicate file names. The process of resolving duplicate file names can affect performance. In this situation, changing the Output Parameter Mapping to `%F_%h_%m_%s_%l` to add hours, minutes, seconds, and milliseconds to the name, or ensuring that dropped files have unique names may improve performance.*
 
 ## About file patterns {#about-file-patterns}
 
 Administrators can specify the type of file that can invoke a service. Multiple file patterns can be established for each watched folder. A file pattern can be one of the following file properties:
 
-* Files with specific file name extensions; for example, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-* Files with specific names; for example, data.&#42;
+* Files with specific file name extensions; for example, &ast;.dat, &ast;.xml, &ast;.pdf,;
+* Files with specific names; for example, data.&ast;
 * Files with composite expressions in the name and extension, as in these examples:
 
     * Data[0-9][0-9][0-9].[dD][aA][tT]
-    * &#42;.[dD][Aa][Tt]
-    * &#42;.[Xx][Mm][Ll]
+    * &ast;.[dD][Aa][Tt]
+    * &ast;.[Xx][Mm][Ll]
 
 The administrator can define the file pattern of the output folder in which to store the results. For the output folders (result, preserve, and failure), the administrator can specify any of these file patterns:
 
@@ -259,7 +257,7 @@ Output parameter mappings can also specify additional patterns, such as these:
 * %F = Source Filename
 * %E = Source Filename Extension
 
-If the output parameter mapping pattern ends with “File.separator”, (which is the path separator), a folder is created and the content is copied into that folder. If the pattern does not end with “File.separator”, the content (result file or folder) is created with that name. For more information about output parameter mappings, see [Tips and tricks for watched folders](configuring-watched-folder-endpoints.md#tips_and_tricks_for_watched_folders).
+If the output parameter mapping pattern ends with “File.separator”, (which is the path separator), a folder is created and the content is copied into that folder. If the pattern does not end with “File.separator”, the content (result file or folder) is created with that name. For more information about output parameter mappings, see [Tips and tricks for watched folders](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 ## About throttling {#about-throttling}
 
@@ -276,8 +274,8 @@ Watched Folder scans the input folder at each Repeat Interval, picks up the numb
 Throttling prevents Watched Folder from invoking new jobs when the previous jobs are not completed. Watched Folder will detect jobs in progress and process new jobs based on the batch size minus jobs in progress. For example, in the second invocation, if the number of jobs completed is only three and one job is still in progress, Watched Folder invokes only three more jobs.
 
 * Watched Folder relies on the number of files present in the stage folder to find out how many jobs are in progress. If files remain unprocessed in the stage folder, Watched Folder will not invoke any more jobs. For example, if the batch size is four and three jobs are stalled, Watched Folder will invoke only one job in subsequent invocations. There are multiple scenarios that can cause files to remain unprocessed in the stage folder. When jobs are stalled, the administrator can terminate the process on the forms workflow administration page so that Watched Folder moves the files out of the stage folder.
-* If the forms server goes down before Watched Folder can invoke the jobs, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure_points_and_recovery).
-* If the forms server is running but Watched Folder is not running when the Job Manager service calls back, which occurs when services do not start in the ordered sequence, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure_points_and_recovery).
+* If the forms server goes down before Watched Folder can invoke the jobs, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* If the forms server is running but Watched Folder is not running when the Job Manager service calls back, which occurs when services do not start in the ordered sequence, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 ## Performance and scalability {#performance-and-scalability}
 
@@ -301,19 +299,19 @@ The load balancing and failover behavior changes depending on whether the watche
 
 ### Synchronous watched folder in a cluster {#synchronous-watched-folder-in-a-cluster}
 
-For synchronous invocations, the Quartz load balancer decides which node will get the polling event. The node that gets the polling event will perform all the tasks: scan the folder, invoke the target service, and handle the results.
+For synchronous invocations, the Quartz load balancer decides which node will get the polling event. The node that gets the polling event will perform all the tasks: scan the folder, invoke the target service, and handle the results. 
 
 ![en_synchwatchedfoldercluster](assets/en_synchwatchedfoldercluster.png)
 
-For synchronous invocations, when one node fails, the Quartz scheduler sends new polling events to other nodes. Invocations that were started on the failed node will be lost. For more information about how to recover the files associated with the failed job, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure_points_and_recovery).
+For synchronous invocations, when one node fails, the Quartz scheduler sends new polling events to other nodes. Invocations that were started on the failed node will be lost. For more information about how to recover the files associated with the failed job, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 ### Asynchronous watched folder in a cluster {#asynchronous-watched-folder-in-a-cluster}
 
-For asynchronous invocations, the Quartz load balancer decides which node will get the polling event. The node that gets the polling event will scan the input folder and invoke the target service by placing the request in the Job Manager service queue. The Job Manager service load balancer, in turn, is responsible for deciding which node will process the invocation request. It is possible that even though node A created the invocation request, node B ends up processing the request. Or the node that started the invocation request may also end up processing the request.
+For asynchronous invocations, the Quartz load balancer decides which node will get the polling event. The node that gets the polling event will scan the input folder and invoke the target service by placing the request in the Job Manager service queue. The Job Manager service load balancer, in turn, is responsible for deciding which node will process the invocation request. It is possible that even though node A created the invocation request, node B ends up processing the request. Or the node that started the invocation request may also end up processing the request. 
 
 ![en_asynchwatchedfoldercluster](assets/en_asynchwatchedfoldercluster.png)
 
-For asynchronous invocations, when one node fails, the Quartz scheduler sends new polling events to other nodes. Invocation requests that were created on the failed node will be in the Job Manager service queue and will be sent to other nodes for processing. Files for which invocation requests are not created will remain in the stage folder. For more information about how to recover the files associated with the failed job, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure_points_and_recovery).
+For asynchronous invocations, when one node fails, the Quartz scheduler sends new polling events to other nodes. Invocation requests that were created on the failed node will be in the Job Manager service queue and will be sent to other nodes for processing. Files for which invocation requests are not created will remain in the stage folder. For more information about how to recover the files associated with the failed job, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 ## Failure points and recovery {#failure-points-and-recovery}
 
@@ -360,11 +358,11 @@ Here are some tips and tricks when configuring the Watched Folder endpoint:
 * If you have a watched folder on Windows that is processing image files, specify values for the Include File Pattern or Exclude File Pattern option to prevent the Windows auto-generated Thumbs.db file from being polled by the watched folder.
 * If a cron expression is specified, the repeat interval is ignored. The cron expression usage is based on the Quartz open source job-scheduling system, version 1.4.0.
 * The batch size is the number of files or folders that will be picked up in each scan of the watched folder. If the batch size is set to two and ten files or folders are dropped in the watched folder input folder, only two will be picked up in each scan. In the next scan, which will happen after the time specified in the repeat interval, the next two files will be picked up.
-* For file patterns, administrators can specify regular expressions with added support of wild card patterns to specify file patterns. Watched Folder modifies the regular expression to support wild card patterns such as &#42;.&#42; or &#42;.pdf. These wild card patterns are not supported by the regular expressions.
+* For file patterns, administrators can specify regular expressions with added support of wild card patterns to specify file patterns. Watched Folder modifies the regular expression to support wild card patterns such as &ast;.&ast; or &ast;.pdf. These wild card patterns are not supported by the regular expressions.
 * Watched Folder scans the input folder for the input and does not know if the source file or folder is completely copied to the input folder before it starts processing the file or folder. To ensure that the source file or folder is completely copied to the input folder of the watched folder before the file or folder is picked up, do these tasks:
 
-    * Use Wait time, which is the time in milliseconds that Watched Folder waits from the last modified time. Use this feature if you have large files to process. For example, if a file takes 10 minutes to download, specify the wait time as 10&#42;60 &#42;1000 milliseconds. This will prevent Watched Folder from picking up the file if it is not as old as 10 minutes.
-    * Use exclude file pattern and include file pattern. For example, if the exclude file pattern is `ex*` and the include file pattern is `in*`, Watched Folder will pick up the files that start with "in" and will not pick up the files that start with "ex". To copy large files or folders, first rename the file or folder so that the name starts with "ex". After the file or folder named "ex" is completely copied to the watched folder, rename it to "in&#42;".
+    * Use Wait time, which is the time in milliseconds that Watched Folder waits from the last modified time. Use this feature if you have large files to process. For example, if a file takes 10 minutes to download, specify the wait time as 10&ast;60 &ast;1000 milliseconds. This will prevent Watched Folder from picking up the file if it is not as old as 10 minutes.
+    * Use exclude file pattern and include file pattern. For example, if the exclude file pattern is `ex*` and the include file pattern is `in*`, Watched Folder will pick up the files that start with "in" and will not pick up the files that start with "ex". To copy large files or folders, first rename the file or folder so that the name starts with "ex". After the file or folder named "ex" is completely copied to the watched folder, rename it to "in&ast;".
 
 * Use purge duration to keep the result folder clean. Watched Folder cleans up all the files that are older than the duration mentioned in the purge duration. The duration is in days.
 * When adding a Watched Folder endpoint, after selecting the operation name, the input parameter mapping is populated. For each input of the operation, one input parameter mapping field is generated. Here are examples of input parameter mappings:
@@ -383,12 +381,10 @@ Here are some tips and tricks when configuring the Watched Folder endpoint:
 
     * Workaround 1
 
-    1. Specify a pattern for Exclude File Pattern, such as temp&#42;.ps.
-
-      2. Copy files that begin with temp (for example, temp1.ps) to the watched folder.
-
-      3. After the file has been completely copied to the watched folder, rename the file to correspond with the pattern specified for Include File Pattern. Watched Folder then moves the completed file to stage.
-
+      1. Specify a pattern for Exclude File Pattern, such as temp&ast;.ps.
+      1. Copy files that begin with temp (for example, temp1.ps) to the watched folder.
+      1. After the file has been completely copied to the watched folder, rename the file to correspond with the pattern specified for Include File Pattern. Watched Folder then moves the completed file to stage.
+    
     * Workaround 2
 
       If you know the maximum length of time it will take to copy your files to a watched folder, specify the time in seconds for Wait Time. Watched Folder then waits the specified length of time before moving the file to stage.
@@ -412,12 +408,12 @@ For all services, you should adjust the batch size and repeat interval of the wa
 
 * For best performance when processing barcoded forms (small files), enter `10` for Batch Size and `2` for Repeat Interval.
 * When many files are placed in the input folder, errors with hidden files called *thumbs.db* may occur. It is therefore recommended that you set the Include File Pattern for the include files to the same value specified for the input Variable (for example, `*.tiff`). This prevents Watched Folder from processing the DB files.
-* A Batch Size value of `5` and Repeat Interval of `2` is normally sufficient because the Barcoded Forms service usually takes about .5 seconds to process one barcode.
-* Watched Folder does not wait for the Process Engine to finish the job before it picks up new files or folders. It keeps scanning the watched folder and invoking the target service. This behavior can overload the engine, causing resourcing issues and time-outs. Ensure that you use repeat interval and batch size to throttle the Watched Folder input. You can increase the repeat interval and reduce the batch size if more watched folders exist or enable throttling on the endpoint. For information about throttling, see [About throttling](configuring-watched-folder-endpoints.md#about_throttling).
-* Watched Folder impersonates the user specified in the user name and domain name. Watched Folder invokes the service as this user if invoked directly or if the process is short-lived. For a long-lived process, the process is invoked with the System context. Administrators can set operating system policies for Watched Folder to determine which user to allow or deny access to.
-* Use file patterns to organize result, failure, and preserve folders. (See [About file patterns](configuring-watched-folder-endpoints.md#about_file_patterns).)
+* A Batch Size value of `5` and Repeat Interval of `2` is normally sufficient because the Barcoded Forms service usually takes about .5 seconds to process one barcode. 
+* Watched Folder does not wait for the Process Engine to finish the job before it picks up new files or folders. It keeps scanning the watched folder and invoking the target service. This behavior can overload the engine, causing resourcing issues and time-outs. Ensure that you use repeat interval and batch size to throttle the Watched Folder input. You can increase the repeat interval and reduce the batch size if more watched folders exist or enable throttling on the endpoint. For information about throttling, see [About throttling](configuring-watched-folder-endpoints.md#about-throttling). 
+* Watched Folder impersonates the user specified in the user name and domain name. Watched Folder invokes the service as this user if invoked directly or if the process is short-lived. For a long-lived process, the process is invoked with the System context. Administrators can set operating system policies for Watched Folder to determine which user to allow or deny access to. 
+* Use file patterns to organize result, failure, and preserve folders. (See [About file patterns](configuring-watched-folder-endpoints.md#about-file-patterns).)
 * Watched Folder relies on the Quartz scheduler for scanning the watched folders. The Quartz scheduler has a thread pool to scan them. If the repeat interval for the watched folder is very low (&lt; 5 seconds) and the batch size is high (&gt; 2), a race condition can occur. When this condition occurs, one file is picked up by two Quartz threads:
 
-    * One of the threads successfully finds the file and invokes the target service with the file.
+    * One of the threads successfully finds the file and invokes the target service with the file. 
     * The second thread sees the file but fails when it tries to find out if the file is valid (read or write file), which causes false failures that indicate that the file cannot be processed because it is read-only. This happens only with a low repeat interval and a high batch size.
 

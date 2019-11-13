@@ -73,7 +73,7 @@ This section describes installing and configuring the EMC NetWorker software on 
     PATH=C:\WINNT\system32;C:\WINNT;C:\WINNT\system32\WBEM;C:\Documentum\product\6.0\bin;C:\Documentum\fulltext\fast;C:\Documentum\product\6.0\fusion;C:\Program Files\Documentum\Shared;C:\Program Files\Legato\nsr\bin;C:\Program Files\Microsoft SQL Server\80\Tools\Binn;C:\Program Files\Microsoft SQL Server\90\DTS\Binn\;C:\Program Files\Microsoft SQL Server\90\Tools\binn;C:\Program Files\Microsoft SQL Server\90\Tools\Binn\VSShell\Common7\IDE;C:\Program Files\Documentum\java\1.5.0_12\bin;C:\Documentum\config;C:\Documentum
     #See also manifest dctm.jar file for class path locations
     CLASSPATH=.;C:\Program Files\Legato\nsr\bin;C:\Program Files\Legato\nsr\bin\nsrnmdde.jar;C:\Program Files\Documentum\java\1.5.0_12\lib\tools.jar;C:\Program Files\Documentum\Shared\dfc.jar;C:\Program Files\Documentum\Shared\aspectjrt.jar;C:\Program Files\Documentum\dctm.jar;C:\Program Files\Documentum\Shared\workflow.jar;C:\Program Files\Documentum\Shared\log4j.jar;C:\Program Files\Documentum\java\1.5.0_12\lib\dt.jar;C:\Documentum\config
-    
+
     ################################################
     #If not using nsrnmdsv -m ALL|DB|DB_LOG|FTI|FTI_ALL|ICF|SA|SA_ALL, set #for backup
     NMD_SCOPE=ALL
@@ -161,7 +161,7 @@ This section describes installing and configuring the EMC NetWorker software on 
     # Mandatory, listed in the config file at the primary host.
     # (if skipped, backup is treated as local)
     # NMD_RCS_CFG_FILE=rep_name_rcs.cfg
-    
+
     # SA-host mapping add, optional, will override far-store list info.
     # No space around comma.
     # NMD_HOST_SAS_MAP=host01,sa_01,sa_02

@@ -3,14 +3,12 @@ title: Configure service settings
 seo-title: Configure service settings
 description: Learn how to configure service settings.
 seo-description: Learn how to configure service settings.
-uuid: f50a72f2-9015-4ae2-a738-f8ad9fa53251
+uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 1c558816-e8d3-4080-84c8-4e3991649487
-docset: aem65
-
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
+discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 ---
 
 # Configure service settings {#configure-service-settings}
@@ -18,17 +16,17 @@ docset: aem65
 You can use the Service Management page to configure settings for each of the services that are part of AEM forms. The available settings vary depending on the service being configured.
 
 1. In administration console, click Services &gt; Applications and Services &gt; Service Management.
-1. Stop the service before changing it. (See [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting_and_stopping_services).)
+1. Stop the service before changing it. (See [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
 1. Click the name of the service that you want to configure.
 1. If the service has a Configuration tab, use it to change the settings for the service. See the list of links below for details.
 
    >[!NOTE]
    >
-   >Not all of the services listed on the Service Management page have a Configuration tab. For processes that you have created, the Configuration tab appears only if you have added a configuration parameter to the process in Workbench. (See “Configuration parameters” in the *[Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) .)*
+   >Not all of the services listed on the Service Management page have a Configuration tab. For processes that you have created, the Configuration tab appears only if you have added a configuration parameter to the process in Workbench. (See “Configuration parameters” in the * [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) .) *
 
-1. Click the Security tab and set the security settings for the service. See [Modifying security settings for a service](configure-service-settings.md#modifying_security_settings_for_a_service).
+1. Click the Security tab and set the security settings for the service. See [Modifying security settings for a service](configure-service-settings.md#modifying-security-settings-for-a-service).
 1. If the service has an Endpoints tab, use it to change the endpoint settings. See [Managing Endpoints](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md).
-1. Click the Pooling tab and set the pooling settings. See [Configuring pooling for a service](configure-service-settings.md#configuring_pooling_for_a_service).
+1. Click the Pooling tab and set the pooling settings. See [Configuring pooling for a service](configure-service-settings.md#configuring-pooling-for-a-service).
 1. Click Save to save your changes or click Cancel to discard them.
 1. Select the checkbox next to the service name and click Start to restart the service.
 
@@ -60,9 +58,23 @@ The following settings are available for the barcoded forms service.
 
 **Data Source Name:** The name of data source used to maintain state and history information about batch processing jobs. The specified data source must support global (XA) transactions.
 
+## Central Migration Bridge service (Deprecated) settings {#central-migration-bridge-service-settings}
+
+The Central Migration Bridge service ( `CentralMigrationBridge`) invokes a subset of Adobe Central Pro Output Server (Central) functionality, which includes the JFMERGE, JFTRANS, and XMLIMPORT commands. Central Migration Bridge service operations allow you to reuse the following Central assets in AEM forms:
+
+* template design (&ast;.ifd) 
+* output templates (&ast;.mdf) 
+* data files (&ast;.dat files) 
+* preamble files (&ast;.pre files) 
+* data definition files (&ast;.tdf)
+
+The following setting is available for the Central Migration Bridge service.
+
+**Central Install Directory:** The directory where Adobe Central 5.7 is installed.
+
 ## Content Repository Connector for EMC Documentum service settings {#content-repository-connector-for-emc-documentum-service-settings}
 
-The Content Repository Connector for EMC Documentum service (`EMCDocumentumContentRepositoryConnector`) lets you create processes that interact with content that is stored in a Documentum repository.
+The Content Repository Connector for EMC Documentum service ( `EMCDocumentumContentRepositoryConnector`) lets you create processes that interact with content that is stored in a Documentum repository.
 
 The following setting is available for the Content Repository Connector for EMC Documentum service.
 
@@ -140,7 +152,7 @@ New settings can be created through the PDF Generator user interface.
 >
 >Adobe® LiveCycle® Content Services ES (Deprecated) is a content management system installed with LiveCycle. It enables users to design, manage, monitor, and optimize human-centric processes. Content Services (Deprecated) support ends on 12/31/2014. See [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). To know about configuring Content Services (Deprecated), see [Administering Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
-The Document Management service (`DocumentManagementService`) enables processes to use the content management functionality provided by Content Services (Deprecated). Document Management operations provide basic tasks that are required to maintain spaces and content in the content management system. Examples of such tasks are copy, delete, move, retrieve, and store content, create spaces and associations, and get and set content attributes.
+The Document Management service ( `DocumentManagementService`) enables processes to use the content management functionality provided by Content Services (Deprecated). Document Management operations provide basic tasks that are required to maintain spaces and content in the content management system. Examples of such tasks are copy, delete, move, retrieve, and store content, create spaces and associations, and get and set content attributes.
 
 The following settings are available for the Document Management service.
 
@@ -150,7 +162,7 @@ The following settings are available for the Document Management service.
 
 ## Email service settings {#email-service-settings}
 
-Email is commonly used to distribute content or provide status information as part of an automated process. The Email service (`EmailService`) enables processes to receive email messages from a POP3 or IMAP server, and send email messages to an SMTP server.
+Email is commonly used to distribute content or provide status information as part of an automated process. The Email service ( `EmailService`) enables processes to receive email messages from a POP3 or IMAP server, and send email messages to an SMTP server.
 
 For example, a process uses the Email service to send an email message with a PDF form attachment. The Email service connects to an SMTP server to send the email message with the attachment. The PDF form is designed to let the recipient click Submit after completing the form. The action causes the form to be returned as an attachment to the designated email server. The Email service retrieves the returned email message and stores the completed form in a process data form variable.
 
@@ -190,7 +202,7 @@ The following settings are available for the Email service.
 
 ## Encryption service settings {#encryption-service-settings}
 
-The Encryption service (`EncryptionService`) lets you encrypt and decrypt documents. When a document is encrypted, its contents become unreadable. An authorized user can decrypt the document to obtain access to the contents. If a PDF document is encrypted with a password, the user must specify the open password before the document can be viewed in Adobe Reader or Adobe Acrobat. Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.
+The Encryption service ( `EncryptionService`) lets you encrypt and decrypt documents. When a document is encrypted, its contents become unreadable. An authorized user can decrypt the document to obtain access to the contents. If a PDF document is encrypted with a password, the user must specify the open password before the document can be viewed in Adobe Reader or Adobe Acrobat. Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.
 
 The following settings are available for the Encryption service.
 
@@ -208,7 +220,7 @@ The following settings are available for the Encryption service.
 
 ## FTP service settings {#ftp-service-settings}
 
-The FTP service (`FTP`) enables processes to interact with an FTP server. FTP service operations can retrieve files from the FTP server, put files on the FTP server, and delete files from the FTP server. For example, documents such as reports generated from a process may be stored on an FTP server for distribution. Or an external system may generate some files based on previous steps in a process. In a subsequent step in the process, the files may be transferred to a remote location.
+The FTP service ( `FTP`) enables processes to interact with an FTP server. FTP service operations can retrieve files from the FTP server, put files on the FTP server, and delete files from the FTP server. For example, documents such as reports generated from a process may be stored on an FTP server for distribution. Or an external system may generate some files based on previous steps in a process. In a subsequent step in the process, the files may be transferred to a remote location.
 
 The following settings are available for the FTP service.
 
@@ -222,7 +234,7 @@ The following settings are available for the FTP service.
 
 ## Generate PDF service settings {#generate-pdf-service-settings}
 
-The Generate PDF service (`GeneratePDFService`) converts files in various native formats to PDF documents, and converts PDF documents to a number of file formats.
+The Generate PDF service ( `GeneratePDFService`) converts files in various native formats to PDF documents, and converts PDF documents to a number of file formats.
 
 The following settings are available for the Generate PDF service.
 
@@ -266,17 +278,17 @@ Retry PDF conversion if the time consumed for the first conversion attempt was l
 
 When you create a Guide, some resources, such as the Guide definition, are embedded in the Guide. Resources can also exist as references to application assets stored locally or on the AEM forms server. The Guide does not contain data, and the values for the submit location and inputs are not suitable for all external environments.
 
-In most cases, the default Guides render services is sufficient to prepare a Guide for use in Workspace or other external environments. (In the Services view, in Workbench, the default service is Guides (system)/Processes/Render Guide - 1.0.) The Guide Utilities service (`GuidesUtility`) allows you to create a customized process for rendering a Guide, if necessary.
+In most cases, the default Guides render services is sufficient to prepare a Guide for use in Workspace or other external environments. (In the Services view, in Workbench, the default service is Guides (system)/Processes/Render Guide - 1.0.) The Guide Utilities service ( `GuidesUtility`) allows you to create a customized process for rendering a Guide, if necessary.
 
 The Guide Utilities operations allow you to add the following Guide rendering tasks to a process:
 
-* Determine whether data is available to populate the Guide with
-* Embed the Guide data or convert it to a link
-* Convert referenced content to URLs that are externally accessible
-* Substitute values in an HTML document or other wrapper, or convert them to URLs that are externally accessible
-* Set the submit location
-* Specify input values
-* Create a parameter to represent referenced content
+* Determine whether data is available to populate the Guide with 
+* Embed the Guide data or convert it to a link 
+* Convert referenced content to URLs that are externally accessible 
+* Substitute values in an HTML document or other wrapper, or convert them to URLs that are externally accessible 
+* Set the submit location 
+* Specify input values 
+* Create a parameter to represent referenced content 
 * If variations are available, set a variation
 
 The default values for the Guide Utilities service support most use cases. However, if necessary, you can change the following values.
@@ -357,7 +369,7 @@ The following settings are available for the JMS service.
 
 **Other Properties:** Property name and value pairs that you can pass to the JNDI service provider. These properties depend on the implementation and configuration of the provider that you are using.
 
-The property name and value pairs are separated by semi-colons (;). For example, the following text shows the value that would be specified for two properties named name1 and name2, with values value1 and value2, respectively:
+The property name and value pairs are separated by semi-colons **;**. For example, the following text shows the value that would be specified for two properties named name1 and name2, with values value1 and value2, respectively:
 
 `name1=value1;name2=value2`
 
@@ -408,7 +420,7 @@ The following settings are available for the Microsoft SharePoint configuration 
 
 **Offline Support:** Enables users to continue using the mobile client applications even when they do not have a connection to the server (for example, when they are out of cell range or in airplane mode). Users must also enable the Offline Support setting on their mobile devices. This feature is available for Android and iOS devices. By default, this feature is off.
 
-***note**: If Offline support has been enabled and then you disable it, the users’ provisioning profiles are updated immediately, or as soon as they are online. If a user has been working offline, all pending tasks are returned to their Tasks list and all items in their Queue, including pending forms, tasks, and forms containing validation errors, are deleted from the Queue.*
+**Note**: *If Offline support has been enabled and then you disable it, the users’ provisioning profiles are updated immediately, or as soon as they are online. If a user has been working offline, all pending tasks are returned to their Tasks list and all items in their Queue, including pending forms, tasks, and forms containing validation errors, are deleted from the Queue.*
 
 **Android:** Allows Android devices to connect to the server.
 
@@ -430,9 +442,9 @@ The following settings are available for the Microsoft SharePoint configuration 
 
 The Output service `(OutputService)`enables you to merge XML form data with a form design created in AEM forms Designer to create a document output stream in one of the following formats:
 
-* A PDF or PDF/A document output stream.
-* An Adobe PostScript output stream.
-* A Printer Control Language (PCL) output stream.
+* A PDF or PDF/A document output stream. 
+* An Adobe PostScript output stream. 
+* A Printer Control Language (PCL) output stream. 
 * A Zebra Programming Language (ZPL) output stream.
 
 The output stream can be sent to a network printer, a local printer, or a disk file. When you use the Output service as part of a process, you can also send the output stream to an email recipient as a file attachment.
@@ -689,19 +701,19 @@ In a cluster configuration, the batch size for a watched folder endpoint does no
 
 **Result Folder:** The default name for the result folder. This folder is used to copy the results files into. This value can be an empty, relative, or absolute path with the following file pattern.
 
-* %F = filename prefix
+* %F = filename prefix 
 * %E = filename extension
-* %Y = year (full)
-* %y = year (last two digits)
+* %Y = year (full) 
+* %y = year (last two digits) 
 * %M = month
-* %D = day of month
-* %d = day of year
-* %H = hour (24-hour clock)
-* %h = hour (12-hour clock)
-* %m = minute
-* %s = second
-* %l = millisecond
-* %R = random number (from 0 through 9)
+* %D = day of month 
+* %d = day of year 
+* %H = hour (24-hour clock) 
+* %h = hour (12-hour clock) 
+* %m = minute 
+* %s = second 
+* %l = millisecond 
+* %R = random number (from 0 through 9) 
 * %P = process or job id
 
 For example, if it is 8 PM on July 17, 2009 and you specify `C:/Test/WF0/failure/%Y/%M/%D/%H/`, the result folder is `C:/Test/WF0/failure/2009/07/17/20`.
@@ -773,9 +785,9 @@ Default security profiles are installed, which can then be configured to meet yo
 
    If you select Yes, the caller of the service must be authenticated and the user principal for that caller must be authorized to invoke the service; otherwise, the invocation attempt will be refused.
 
-   If you select No, the caller of the service may or may not be authenticated. The invocation of the service will always succeed because there is no authorization check.
+   If you select No, the caller of the service may or may not be authenticated. The invocation of the service will always succeed because there is no authorization check. 
 
-1. For services that contain one or more operations flagged for anonymous access, select or deselect Anonymous Access Allowed. When anonymous access is enabled, any user within the system can invoke operations on the service. If anonymous access is disabled, users must be granted permission to call the service and invoke operations. Users are granted these permissions either directly or as being part of a group that has such permissions.
+1. For services that contain one or more operations flagged for anonymous access, select or deselect Anonymous Access Allowed. When anonymous access is enabled, any user within the system can invoke operations on the service. If anonymous access is disabled, users must be granted permission to call the service and invoke operations. Users are granted these permissions either directly or as being part of a group that has such permissions. 
 1. For some services, the user account that executes the operation affects the results. For example, in Content Services (Deprecated), the user that stores content is made the owner of the content, which affects who can later access the content. If you are using a process to store content, think about what user is used to execute the Document Management service, because that user will own the stored content.
 
    To specify the run-time identity used by a service to execute operations, select Specify Run As, select an option from the associated list, and then click Save. Choose from the following options:
@@ -792,7 +804,7 @@ Default security profiles are installed, which can then be configured to meet yo
    >
    >Render and submit services that are used with xfaForm, Document Form, and Form variables are always executed using the System user account.
 
-1. Click Add Principal to specify the permissions that users and groups have for this service.
+1. Click Add Principal to specify the permissions that users and groups have for this service. 
 1. The Select Principal screen displays the users and groups that are configured in User Management. If the user or group you want is not displayed, use the search function to find it. Click a user or group name.
 1. On the Add Permissions screen, select the permissions to assign to the user or group for this service:
 
@@ -826,9 +838,9 @@ Each service can take advantage of the pooling capabilities to handle incoming i
 1. On the Service Management page, click the service to configure.
 1. Click the Pooling tab.
 1. In the Request Processing Strategy list, select Pooled Instances for All Requests.
-1. In the Initial Service Instance Pool Size box, enter the initial size of the pool. When the service is deployed, this number is used to determine the number of service implementation instances that are created and allocated to the free pool, awaiting invocation requests. This enables the service container to respond immediately to invocation requests without having to first initialize a service instance.
-1. In the Maximum Service Instance Pool Size box, enter the maximum number of instances in the pool for a given service. This setting controls the number of threads that can execute a given service at a given time. The default value is 0, which results in unlimited pool size.
-1. In the Maximum Asynchronous Service Instances box, enter the maximum number of instances from the pool that can be used to service asynchronous requests at any given time. This setting allows the service to limit the number of requests that it can handle in parallel.
+1. In the Initial Service Instance Pool Size box, enter the initial size of the pool. When the service is deployed, this number is used to determine the number of service implementation instances that are created and allocated to the free pool, awaiting invocation requests. This enables the service container to respond immediately to invocation requests without having to first initialize a service instance. 
+1. In the Maximum Service Instance Pool Size box, enter the maximum number of instances in the pool for a given service. This setting controls the number of threads that can execute a given service at a given time. The default value is 0, which results in unlimited pool size. 
+1. In the Maximum Asynchronous Service Instances box, enter the maximum number of instances from the pool that can be used to service asynchronous requests at any given time. This setting allows the service to limit the number of requests that it can handle in parallel. 
 1. In the Invocation Wait Timeout box, enter the number of milliseconds to wait for a service to become available for an invocation request. If you do not specify a value for this setting, the default is 0, which results in no wait time.
 1. Click Save.
 

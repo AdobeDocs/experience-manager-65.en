@@ -461,9 +461,9 @@ The [QuickStart: Adding a Watched Folder endpoint using the Java API](/help/form
      * This class contains constants that can be used when setting Watched Folder
      * configuration values
      */
- 
+
  public final class WatchedFolderEndpointConfigConstants {
- 
+
          public static final String PROPERTY_FILEPROVIDER_URL = "url";
          public static final String PROPERTY_PROPERTY_ASYNCHRONOUS = "asynchronous";
          public static final String PROPERTY_CRON_EXPRESSION = "cronExpression";
@@ -707,7 +707,7 @@ The [QuickStart: Adding an Email endpoint using the Java API](/help/forms/develo
      * configuration values
      */
  public class EmailEndpointConfigConstants {
- 
+
      public static final String PROPERTY_EMAILPROVIDER_CRON_EXPRESSION = "cronExpression";
      public static final String PROPERTY_EMAILPROVIDER_REPREAT_COUNT = "repeatCount";
      public static final String PROPERTY_EMAILPROVIDER_REPREAT_INTERVAL = "repeatInterval";

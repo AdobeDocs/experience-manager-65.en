@@ -164,13 +164,13 @@ Perform the following steps to select a cloud service and order of signing:
 
    In simultaneous order, multiple signers can sign a form at a time.
 
-1. [Add Signers to an adaptive form](../../forms/using/working-with-adobe-sign.md#main-pars-header-1374317451) and tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
+1. [Add Signers to an adaptive form](../../forms/using/working-with-adobe-sign.md#main-pars-header-1374317451) and tap the Done [aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
 
 ### Add Signers to an adaptive form {#addsignerstoanadaptiveform}
 
 You can have only one signer or multiple signers for an adaptive form. When you add a signer, you can also configure authentication details for the signer. You can also select if the form filler and singer are the same person. Perform the following steps to add and provide various details about a signer:
 
-1. In the Content browser, tap **Form Container**, and tap the **Configure ** ![configure](assets/configure.png) icon. It opens properties browser with Adaptive Form container properties.
+1. In the Content browser, tap **Form Container**, and tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser with Adaptive Form container properties.
 1. In the properties browser, expand the **Electronic Signature **accordion, and select the **Enable Adobe Sign** option. It enables Adobe Sign for an adaptive form.
 1. Tap **Add Signer** under **Signer Configuration. **It adds a signer to the adaptive form. You can add multiple Adobe Sign signers to an adaptive form.
 1. ![phone-details](assets/phone-details.png)

@@ -1,8 +1,8 @@
 ---
 title: "DO NOT PUBLISH Tutorial: Apply rules to adaptive form fields"
 seo-title: Apply rules to adaptive form fields
-description: Create rules to add interactivity, business logic, and smart validations to an adaptive form. 
-seo-description: Create rules to add interactivity, business logic, and smart validations to an adaptive form. 
+description: Create rules to add interactivity, business logic, and smart validations to an adaptive form.
+seo-description: Create rules to add interactivity, business logic, and smart validations to an adaptive form.
 page-status-flag: de-activated
 uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -37,7 +37,7 @@ Every customer is assigned a unique Customer ID number, which helps identify rel
 
 1. Open the adaptive form for editing.
 
-   [http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)   
+   [http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 
 1. Tap the **[!UICONTROL Customer ID]** field and tap the **[!UICONTROL Edit Rules]** icon. The Rule Editor window opens.
 1. Tap the **[!UICONTROL + Create]** icon to add a rule. It opens the Visual Editor.
