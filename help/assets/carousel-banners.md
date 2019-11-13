@@ -21,7 +21,7 @@ Creating and modifying content featured in promotional banners can be time-consu
 
 Carousel Banners are designated by a banner with the word **CAROUSELSET**:
 
-![chlimage_1-191](assets/chlimage_1-191.png)
+![chlimage_1-191](assets/chlimage_1-438.png)
 
 On your website, a carousel banner can look as follows:
 
@@ -265,7 +265,9 @@ See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-bann
 >
 >If you are editing interactive images with hotspots and crop the image, your hotspots are removed.
 
-To add hotspots to an image banner:
+See also [Adding Image Maps](/help/assets/image-maps.md).
+
+**To add Hotspots or Image Maps to an Image Banner**:
 
 1. From Assets, navigate to the carousel set you want to make interactive.
 1. Select the carousel set and click or tap **Edit**. The Carousel Viewer Editor opens.
