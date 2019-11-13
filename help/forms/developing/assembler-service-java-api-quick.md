@@ -1,4 +1,4 @@
- ---
+---
 title: Assembler Service Java API QuickStart(SOAP)
 seo-title: Assembler Service Java API QuickStart(SOAP)
 description: null
