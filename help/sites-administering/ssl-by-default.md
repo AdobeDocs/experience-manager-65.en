@@ -3,17 +3,18 @@ title: SSL By Default
 seo-title: SSL By Default
 description: Learn how to use SSL by Default in AEM.
 seo-description: Learn how to use SSL by Default in AEM.
-uuid: 262474b0-f5fa-4cff-8727-9f39c5b5f760
+uuid: 2fbfd020-1d33-4b22-b963-c698e62f5bf6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
-discoiquuid: 3a1817cd-357b-473d-9a09-e18bbfc60dfd
+discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
+docset: aem65
 ---
 
 # SSL By Default{#ssl-by-default}
 
-In an effort to continously improve the security of AEM, Adobe has introduced a feature called SSL By Default. The purpose is to encourage the use of HTTPS to connect to AEM instances.
+In an effort to continuously improve the security of AEM, Adobe has introduced a feature called SSL By Default. The purpose is to encourage the use of HTTPS to connect to AEM instances.
 
 ## Enabling SSL By Default {#enabling-ssl-by-default}
 
@@ -23,7 +24,7 @@ In the list, select and open the **Configure HTTPS** alert:
 
 ![chlimage_1-341](assets/chlimage_1-341.png)
 
->[NOTE!]
+>[!NOTE]
 >
 >If the **Configure HTTPS** alert is not present in the Inbox, you can navigate directly to the HTTPS Wizard by going to *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
