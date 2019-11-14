@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: AEM 6.5 Forms User Guide
 ---
 # AEM 6.5 - Forms User Guide {#forms}
-<!--
+
 + [AEM 6.5 Forms User Guide](home.md)
 + Release Notes {#release-notes-new-features}
   + [Release Notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/forms.html)
@@ -664,4 +664,3 @@ user-guide-title: AEM 6.5 Forms User Guide
       + [Protecting Documents with Policies](developing/protecting-documents-policies.md)
       + [Validate a DDX document using the web service API](developing/validate-ddx-document-using-web.md)
       + [Standard Validation Error Messages Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
--->
