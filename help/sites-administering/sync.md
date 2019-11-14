@@ -3,12 +3,14 @@ title: User Synchronization
 seo-title: User Synchronization
 description: Learn about user synchronization in AEM.
 seo-description: Learn about user synchronization in AEM.
-uuid: 0c7c35a3-9fed-4d48-8bd5-7f4382bf5fa3
+uuid: 0a519daf-21b7-4adc-b419-eeb8c404c54f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 707b150b-7759-437f-9150-9f4784856754
+discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
+docset: aem65
+
 ---
 
 # User Synchronization{#user-synchronization}
@@ -27,15 +29,15 @@ As of AEM 6.1, when user synchronization is enabled, user data is automatically 
 
 ## Sling Distribution {#sling-distribution}
 
-The user data, along with their [ACLs](/help/sites-administering/security.md), are stored in the [Oak Core](/help/sites-deploying/platform.md), the layer below Oak JCR, and are accessed using the [Oak API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). With infrequent updates, it is reasonable for user data to be synchronized with other publish instances using [Sling Content Distribution](https://github.com/apache/sling/blob/trunk/contrib/extensions/distribution/README.md) (Sling distribution).
+The user data, along with their [ACLs](/help/sites-administering/security.md), are stored in the [Oak Core](/help/sites-deploying/platform.md), the layer below Oak JCR, and are accessed using the [Oak API](/https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). With infrequent updates, it is reasonable for user data to be synchronized with other publish instances using [Sling Content Distribution](https://github.com/apache/sling/blob/trunk/contrib/extensions/distribution/README.md) (Sling distribution).
 
-The benefits of user sync using Sling distribution, compared to traditional replication are :
+The benefits of user sync using Sling distribution, compared to traditional replication are:
 
 * *users*, *user profiles* and *user groups* created on publish are not created on author
 
 * Sling distribution sets properties in jcr events, making it possible to act within publish-side event listeners without concern for infinite replication loops
 * Sling distribution only sends user data to non-originating publish instances, eliminating unnecessary traffic
-* [ACLs](/help/sites-administering/security.md) set in the user node are included in the sychronization
+* [ACLs](/help/sites-administering/security.md) set in the user node are included in the synchronization
 
 >[!NOTE]
 >
@@ -65,12 +67,12 @@ Following are the steps necessary to enable user synchronization, followed by a 
 
 1. If users and user groups have already been created on one publisher, it is recommended to [manually sync](#manually-syncing-users-and-user-groups) the user data to all publishers prior to configuring and enabling user sync.
 
-    Once user sync is enabled, only newly created users and groups are syncrhonized.
+Once user sync is enabled, only newly created users and groups are syncrhonized.
 
 1. Ensure the latest code has been installed:
 
 * [AEM platform updates](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
-* [AEM Communities updates](/help/communities/deploy-communities.md#latest-releases)
+* [AEM Communities updates](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Apache Sling Distribution Agent - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
@@ -81,19 +83,17 @@ Following are the steps necessary to enable user synchronization, followed by a 
     * sign in with administrator privileges
     * access the [Web Console](/help/sites-deploying/configuring-osgi.md)
 
-        * for example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+        * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
     * locate `Apache Sling Distribution Agent - Sync Agents Factory`
 
         * select the existing configuration to open for edit (pencil icon)
-
           Verify `name`: **`socialpubsync`**
 
         * select the `Enabled` checkbox
         * select `Save`
 
-
-![chlimage_1-387](assets/chlimage_1-387.png)
+![](assets/chlimage_1-20.png)
 
 ### 2. Create Authorized User {#createauthuser}
 
@@ -105,14 +105,14 @@ This authorized user will be used in step 3 to configure Sling distribution on a
     * sign in with administrator privileges
     * access the [Security Console](/help/sites-administering/security.md)
 
-        * for example, [http://localhost:4503/useradmin](http://localhost:4503/useradmin)
+        * for example, [https://localhost:4503/useradmin](https://localhost:4503/useradmin)
 
     * create a new user
 
         * for example, `usersync-admin`
 
     * add this user to the **`administrators`** user group
-    * [add ACL for this user to /home](#addacls)
+    * [add ACL for this user to /home](#howtoaddacl)
 
         * `Allow jcr:all` with restriction `rep:glob=*/activities/*`
 
@@ -128,28 +128,33 @@ This authorized user will be used in step 3 to configure Sling distribution on a
 
 * access CRXDE Lite
 
-    * for example, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
+    * for example, [https://localhost:4503/crx/de](https://localhost:4503/crx/de)
 
 * select `/home` node
 * in right pane, select the `Access Control` tab
 * select the `+` button to add an ACL entry
 
     * **Principal**: *search for user created for user sync*
+
     * **Type**: `Allow`
+
     * **Privileges**: `jcr:all`
+
     * **Restrictions** rep:glob: `*/activities/*`
+
     * select **OK**
 
 * select **Save All**
+*
 
-![chlimage_1-388](assets/chlimage_1-388.png)
+![](assets/chlimage_1-21.png)
 
 See also
 
 * [Access Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Troubleshooting section [Modify Operation Exception During Response Processing](#modify-operation-exception-during-response-processing).
 
-### 3. Adobe Granite Distribution - Encrypted Password Transport Secret Provider {#adobegraniteencpasswrd}
+### 3. Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider {#adobegraniteencpasswrd}
 
 **Configure permissions**
 
@@ -160,88 +165,86 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
     * sign in with administrator privileges
     * access the [Web Console](/help/sites-deploying/configuring-osgi.md)
 
-        * for example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+        * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-    * locate `Adobe Granite Distribution - Encrypted Password Transport Secret Provider`
+    * locate `Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider`
     * select the existing configuration to open for edit (pencil icon)
+      Verify `property name`: **`socialpubsync-publishUser`**
 
-      Verify `property name` : **`socialpubsync-publishUser`**
-
-    * set the username and password to the [authorized user](#createauthuser) created on publish in step 2
+    * set the username and password to the [authorized user](#createauthorizeduser) created on publish in step 2
 
         * for example, `usersync-admin`
 
-![chlimage_1-389](assets/chlimage_1-389.png)
+![](assets/chlimage_1-22.png)
 
 ### 4. Apache Sling Distribution Agent - Queue Agents Factory {#apache-sling-distribution-agent-queue-agents-factory}
 
 **Enable user sync**
 
-* **on publish** :
+* **on publish**:
 
     * sign in with administrator privileges
     * access the [Web Console](/help/sites-deploying/configuring-osgi.md)
 
-        * for example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+        * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
     * locate `Apache Sling Distribution Agent - Queue Agents Factory`
 
         * select the existing configuration to open for edit (pencil icon)
-
-          Verify `Name` : `socialpubsync-reverse`
+          Verify `Name`: `socialpubsync-reverse`
 
         * select the `Enabled` checkbox
         * select `Save`
 
-    * **repeat** for each publish instance
+    * **repeat **for each publish instance
 
-![chlimage_1-390](assets/chlimage_1-390.png)
+![](assets/chlimage_1-23.png)
 
-### 5. Adobe Granite Distribution - Diff Observer Factory {#diffobserver}
+### 5. Adobe Social Sync - Diff Observer Factory {#diffobserver}
 
 **Enable group sync**
 
-* **on each publish instance** :
+* **on each publish instance**:
 
     * sign in with administrator privileges
     * access the [Web Console](/help/sites-deploying/configuring-osgi.md)
 
-        * for example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+        * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
-    * locate `Adobe Granite Distribution - Diff Observer Factory`
+    * locate **`Adobe Social Sync - Diff Observer Factory`**
 
         * select the existing configuration to open for edit (pencil icon)
 
-          Verify `agent name` : `socialpubsync-reverse`
+          Verify `agent name`: `socialpubsync-reverse`
 
         * select the `Enabled` checkbox
         * select `Save`
 
-![chlimage_1-391](assets/chlimage_1-391.png)
+![](assets/screen-shot_2019-05-24at090809.png)
 
 ### 6. Apache Sling Distribution Trigger - Scheduled Triggers Factory {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 **(Optional) modify polling interval**
 
-By default, author will poll for changes every 30 seconds. To alter this interval :
+By default, author will poll for changes every 30 seconds. To alter this interval:
 
 * **on author**
 
     * sign in with administrator privileges
     * access the [Web Console](/help/sites-deploying/configuring-osgi.md)
 
-        * for example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+        * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
     * locate `Apache Sling Distribution Trigger - Scheduled Triggers Factory`
 
         * select the existing configuration to open for edit (pencil icon)
 
-            * Verify `Name` : `socialpubsync-scheduled-trigger`
+            * Verify `Name`: `socialpubsync-scheduled-trigger`
 
         * set the `Interval in Seconds` to the desired interval
         * select `Save`
 
-![chlimage_1-392](assets/chlimage_1-392.png)
+![](assets/chlimage_1-24.png)
 
 ## Configure for Multiple Publish Instances {#configure-for-multiple-publish-instances}
 
@@ -249,34 +252,33 @@ The default configuration is for a single publish instance. As the reason for en
 
 ### 7. Apache Sling Distribution Agent - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory-1}
 
-**Add Publish Instances :**
+**Add Publish Instances:**
 
 * **on author**
 
     * sign in with administrator privileges
     * access the [Web Console](/help/sites-deploying/configuring-osgi.md)
 
-        * for example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+        * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
     * locate `Apache Sling Distribution Agent - Sync Agents Factory`
 
         * select the existing configuration to open for edit (pencil icon)
+          Verify `Name`: `socialpubsync`
 
-          Verify `Name` : `socialpubsync`
-
-![chlimage_1-393](assets/chlimage_1-393.png)
+![](assets/chlimage_1-25.png)
 
 * **Exporter Endpoints**
   There should be an exporter endpoint for each publisher. For example, if there are 2 publishers, localhost:4503 and 4504, there should be 2 entries:
 
-    * http://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse
-    * http://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse
+    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
+    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
 * **Importer Endpoints**
   There should be an importer endpoint for each publisher. For example, if there are 2 publishers, localhost:4503 and 4504, there should be 2 entries:
 
-    * http://localhost:4503/libs/sling/distribution/services/importers/socialpubsync
-    * http://localhost:4504/libs/sling/distribution/services/importers/socialpubsync
+    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
+    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
 
 * select `Save`
 
@@ -291,19 +293,16 @@ If there is custom data that is desired to be synchronized across multiple publi
     * sign in with administrator privileges
     * access the [Web Console](/help/sites-deploying/configuring-osgi.md)
 
-        * for example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+        * for example, `https://localhost:4503/system/console/configMgr`
 
     * locate `AEM Communities User Sync Listener`
     * select the existing configuration to open for edit (pencil icon)
-
       Verify `Name`: `socialpubsync-scheduled-trigger`
 
-![chlimage_1-394](assets/chlimage_1-394.png)
+![](assets/chlimage_1-26.png)
 
 * **Node Types**
-
   This is the list of node types that will synchronize. Any node type other than sling:Folder needs to be listed here (sling:folder is handled separately).
-
   Default list of node types to synchronize:
 
     * rep:User
@@ -311,26 +310,20 @@ If there is custom data that is desired to be synchronized across multiple publi
     * nt:resource
 
 * **Ignorable Properties**
-
   This is the list of properties that will be ignored if any change is detected. Changes to these properties might get synchronized as a side effect of other changes (since synchronization is always at the node level), but changes to these properties will not by themselves trigger synchronization.
-
   Default property to ignore:
 
     * cq:lastModified
 
 * **Ignorable Nodes**
-
   Subpaths that will be entirely ignored during synchronization. Nothing under these subpaths will be synchronized at any time.
-
   Default nodes to ignore:
 
     * .tokens
     * system
 
 * **Distributed Folders**
-
   Most sling:Folders are ignored because synchronization is not necessary. The few exceptions are listed here.
-
   Default folders to synchronize
 
     * segments/scoring
@@ -345,12 +338,12 @@ If there is custom data that is desired to be synchronized across multiple publi
 
 If the Sling ID is the same for multiple publish instances in a publish farm, then user groups will not be synchronized.
 
-To validate that all Sling ID values differ, on each publish instance :
+To validate that all Sling ID values differ, on each publish instance:
 
-1. browse to [https://*host:port*/system/console/status-slingsettings](http://localhost:4503/system/console/status-slingsettings)
+1. browse to [https://*host:port*/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings)
 1. check the value of **Sling ID**
 
-![chlimage_1-395](assets/chlimage_1-395.png)
+![](assets/chlimage_1-27.png)
 
 If the Sling ID of a publish instance matches the Sling ID of any other publish instance, then:
 
@@ -360,11 +353,9 @@ If the Sling ID of a publish instance matches the Sling ID of any other publish 
     * search for and delete the file named *sling.id.file*
 
         * for example, on a Linux system:
-
           `rm -i $(find . -type f -name sling.id.file)`
 
         * for example, on a Windows system:
-
           `use windows explorer and search for *sling.id.file*`
 
 1. start the publish instance
@@ -377,34 +368,34 @@ Repeat these steps until all publish instances have an unique Sling ID.
 
 ## Vault Package Builder Factory {#vault-package-builder-factory}
 
-In order for updates to sync properly, it is necessary to modify the vault package builder for user sync :
+In order for updates to sync properly, it is necessary to modify the vault package builder for user sync:
 
 * on each AEM publish instance
 * access the [Web Console](/help/sites-deploying/configuring-osgi.md)
 
-    * for example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+    * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
-* locate the `Apache Sling Distribution Packaging - Vault Package Builder Factor`
+* locate the `Apache Sling Distribution Packaging - Vault Package Builder Factory`
 
     * `Builder name: socialpubsync-vlt`
 
 * select the edit icon
-* add two `Package Filters` :
+* add two `Package Node Filters`:
 
     * `/home/users|-.*/.tokens`
     * `/home/users|-.*/rep:cache`
 
-* policy handling :
+* policy handling:
 
-    * to overwrite existing rep:policy nodes with new ones, add a third Package Filter :
+    * to overwrite existing rep:policy nodes with new ones, add a third Package Filter:
 
         * `/home/users|+.*/rep:policy`
 
     * to prevent policies from being distributed, set
 
-        * `Acl Handling :` `IGNORE`
+        * `Acl Handling:` `IGNORE`
 
-![chlimage_1-396](assets/chlimage_1-396.png)
+![Vault Package Builder Factory](assets/vault-package-builder-factory.png)
 
 ## What Happens When ... {#what-happens-when}
 
@@ -443,13 +434,13 @@ To check the state of the distribution queue:
             * named with the pattern `socialpubsync-vlt*`
             * created by `communities-user-admin`
 
-When the distribution queue is empty, disable user sync :
+When the distribution queue is empty, disable user sync:
 
 * on author
 
     * *uncheck *the `Enabled` checkbox for [Apache Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory)
 
-Once tasks are completed, to re-enable user sync :
+Once tasks are completed, to re-enable user sync:
 
 * on author
 
@@ -463,21 +454,21 @@ On author, simply navigate from the main console through **Tools, Operations, Di
 
 Simply entering the User Sync Diagnostics console will display the results.
 
-This is what is displayed when User Synchronization has not been enabled :
+This is what is displayed when User Synchronization has not been enabled:
 
-![chlimage_1-397](assets/chlimage_1-397.png)
+![](assets/chlimage_1-28.png)
 
 #### How To Run Diagnostics for Publishers {#how-to-run-diagnostics-for-publishers}
 
-When the diagnoistic is run from the author environment, the pass/fail results will include an [INFO] section displaying the list of configured publish instances for confirmation.
+When the diagnostic is run from the author environment, the pass/fail results will include an [INFO] section displaying the list of configured publish instances for confirmation.
 
-Included in the list is an URL for each publish instance that will run the diagnostics for that instance. The url param `syncUser` is appended to the diagnostics URL with its value set to the *authorized sync user* created in [Step 2](/help/sites-administering/sync.md#createauthuser).
+Included in the list is an URL for each publish instance that will run the diagnostics for that instance. The url param `syncUser` is appended to the diagnostics URL with its value set to the *authorized sync user* created in [Step 2](/help/sites-administering/sync.md#2createauthorizeduser).
 
-**Note** : before launching the URL, the *authorized sync user* must already be signed into that publish instance.
+**Note**: before launching the URL, the *authorized sync user* must already be signed into that publish instance.
 
-![chlimage_1-398](assets/chlimage_1-398.png)
+![](assets/chlimage_1-29.png)
 
-### Configuration Improperly Added {#improperconfig}
+### Configuration Improperly Added {#configuration-improperly-added}
 
 When user sync fails to work, the most common problem is that additional configurations were *added*. Instead, the *existing *default configuration should have been *edited*.
 
@@ -485,27 +476,27 @@ Following are views of how the edited, default configurations should appear in t
 
 #### (author) One Apache Sling Distribution Agent - Sync Agents Factory {#author-one-apache-sling-distribution-agent-sync-agents-factory}
 
-![chlimage_1-399](assets/chlimage_1-399.png)
+![](assets/chlimage_1-30.png)
 
-#### (author) One Adobe Granite Distribution - Encrypted Password Transport Secret Provider {#author-one-adobe-granite-distribution-encrypted-password-transport-secret-provider}
+#### (author) One Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider {#author-one-apache-sling-distribution-transport-credentials-user-credentials-based-distributiontransportsecretprovider}
 
-![chlimage_1-400](assets/chlimage_1-400.png)
+![](assets/chlimage_1-31.png)
 
 #### (publish) One Apache Sling Distribution Agent - Queue Agents Factory {#publish-one-apache-sling-distribution-agent-queue-agents-factory}
 
-![chlimage_1-401](assets/chlimage_1-401.png)
+![](assets/chlimage_1-32.png)
 
-#### (publish) One Adobe Granite Distribution - Diff Observer Factory {#publish-one-adobe-granite-distribution-diff-observer-factory}
+#### (publish) One Adobe Social Sync - Diff Observer Factory {#publish-one-adobe-social-sync-diff-observer-factory}
 
-![chlimage_1-402](assets/chlimage_1-402.png)
+![](assets/chlimage_1-33.png)
 
 #### (author) One Apache Sling Distribution Trigger - Scheduled Triggers Factory {#author-one-apache-sling-distribution-trigger-scheduled-triggers-factory}
 
-![chlimage_1-403](assets/chlimage_1-403.png)
+![](assets/chlimage_1-34.png)
 
 ### Modify Operation Exception During Response Processing {#modify-operation-exception-during-response-processing}
 
-If the following is visible in the log :
+If the following is visible in the log:
 
 `org.apache.sling.servlets.post.impl.operations.ModifyOperation Exception during response processing.`
 
@@ -517,15 +508,15 @@ This section describes creating an authorized user, who exists on all publish in
 
 The authorized user should be made a member of the **`administrators`** user group and permissions for that group should not be altered.
 
-The authorized user should explicitly have the following privileges and restriction on all publish instances :
+The authorized user should explicitly have the following privileges and restriction on all publish instances:
 
 | **path** |**jcr:all** |**rep:glob** |
 |---|---|---|
-| /home |X |&ast;/activities/&ast; |
-| /home/users |X |&ast;/activities/&ast; |
-| /home/groups |X |&ast;/activities/&ast; |
+| /home |X |&#42;/activities/&#42; |
+| /home/users |X |&#42;/activities/&#42; |
+| /home/groups |X |&#42;/activities/&#42; |
 
-As a member of the `administrators` group, the authorized user should have the following privileges on all publish instances :
+As a member of the `administrators` group, the authorized user should have the following privileges on all publish instances:
 
 | **path** |**jcr:all** |**jcr:read** |**rep:write** |
 |---|---|---|---|
@@ -543,19 +534,19 @@ See section [9. Unique Sling ID](#unique-sling-id)
 
 ### Manually Syncing Users and User Groups {#manually-syncing-users-and-user-groups}
 
-* on publisher on which users and user groups exist :
+* on publisher on which users and user groups exist:
 
     * [if enabled, disable user sync](#how-to-take-user-sync-offline)
     * [create a package](/help/sites-administering/package-manager.md#creating-a-new-package) of `/home`
 
         * when editing the package
 
-            * Filters tab : Add Filter : Root path: `/home`
-            * Advanced tab : AC Handling : `Overwrite`
+            * Filters tab: Add Filter: Root path: `/home`
+            * Advanced tab: AC Handling: `Overwrite`
 
     * [export the package](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
 
-* on other publish instances :
+* on other publish instances:
 
     * [import the package](/help/sites-administering/package-manager.md#installing-packages)
 
@@ -567,7 +558,7 @@ When a publish instance becomes unavailable, it should not be removed if it will
 
 If the publish instance will never be back online, if it is offline permanently, then it must be removed because the queue buildup will result in noticeable disk space usage in the author environment.
 
-When a publisher is down, the author log will have exceptions similar to :
+When a publisher is down, the author log will have exceptions similar to:
 
 ```
 28.01.2016 15:57:48.475 ERROR
@@ -581,10 +572,10 @@ When a publisher is down, the author log will have exceptions similar to :
 
 To remove a publisher from the [Apache Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory), the distribution queue must be empty and quiet.
 
-* on author :
+* on author:
 
     * [Take user sync offline](#how-to-take-user-sync-offline)
-    * follow [step 7](#apache-sling-distribution-agent-sync-agents-factory) to remove the publisher from both server lists :
+    * follow [step 7](#apache-sling-distribution-agent-sync-agents-factory) to remove the publisher from both server lists:
 
         * `Exporter Endpoints`
         * `Importer Endpoints`
@@ -592,4 +583,3 @@ To remove a publisher from the [Apache Sling Distribution Agent - Sync Agents Fa
     * re-enable user sync
 
         * check the `Enabled` checkbox for [Apache Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory)
-
