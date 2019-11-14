@@ -28,7 +28,7 @@ user-guide-title: AEM 6.5 Developing User Guide
     + [Sling Cheatsheet](sling-cheatsheet.md)
     + [Using Sling Adapters](sling-adapters.md)
     + [Tag Libraries](taglib.md)
-    + Templates|{#templates}
+    + Templates{#templates}
       + [Templates](templates.md)
       + [Page Templates - Editable ](page-templates-editable.md)
       + [Page Templates - Static](page-templates-static.md)
@@ -88,7 +88,7 @@ user-guide-title: AEM 6.5 Developing User Guide
       + [Using and Extending Widgets (Classic UI)](widgets.md)
       + [Using xtypes (Classic UI)](xtypes.md)
       + [Developing Forms (Classic UI)](developing-forms.md)
-+ Headless Experience Management|{#headless}
++ Headless Experience Management{#headless}
     + [Headless and Hybrid with AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
     + [Enabling JSON Export for a Component](json-exporter-components.md)
     + Single Page Applications{#spas}
