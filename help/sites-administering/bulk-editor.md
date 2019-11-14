@@ -30,7 +30,7 @@ This section describes how to work with the bulk editor in the **Tools** console
 
 >[!CAUTION]
 >
->With the [deprecation of the Classic UI](../../../release-notes/deprecated-removed-features.md) in AEM 6.4, the Bulk Editor has also been deprecated and thus Adobe does not plan to further enhance the Bulk Editor.
+>With the [deprecation of the Classic UI](/help/release-notes/deprecated-removed-features.md) in AEM 6.4, the Bulk Editor has also been deprecated and thus Adobe does not plan to further enhance the Bulk Editor.
 
 ## Example Use Case for the Bulk Editor {#example-use-case-for-the-bulk-editor}
 
