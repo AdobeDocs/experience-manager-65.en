@@ -38,6 +38,8 @@ When you are done creating the video profile, you apply it to a folder or mutlip
 
 To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/config-dms7.md#configuring-asset-processing).
 
+See also [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
+
 ## Adaptive Video Encoding Presets {#adaptive-video-encoding-presets}
 
 The following table identifies best practice encoding profiles for adaptive video streaming to mobile and tablet devices, and desktop computers. You can use these presets for any aspect ratio video.
