@@ -24,6 +24,7 @@ user-guide-title: AEM 6.5 Developing User Guide
     + [Reference Materials](reference-materials.md)
     + [Create a Fully-Featured Website (Classic UI)](website.md)
     + [Designs and the Designer (Classic UI)](designer.md)
+    + [Migration to the Touch UI](/help/sites-developing/touch-ui-migration.md)
 + Platform{#platform}
     + [Sling Cheatsheet](sling-cheatsheet.md)
     + [Using Sling Adapters](sling-adapters.md)
@@ -154,6 +155,7 @@ user-guide-title: AEM 6.5 Developing User Guide
       + [Workflow Step Reference](workflows-step-ref.md)
       + [Workflow Best Practices](workflows-best-practices.md)
       + [Workflow Process Reference](workflows-process-ref.md)
+      + [Variables in AEM workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
     + [Extending the Multi Site Manager](extending-msm.md)
     + Tracking and Analytics{#extending-analytics}
       + [Extending Event Tracking](extending-analytics.md)
@@ -213,6 +215,3 @@ user-guide-title: AEM 6.5 Developing User Guide
     + [Responsive Design for Web Pages](responsive.md)
     + [Creating Sites for Mobile Devices](mobile.md)
     + [Emulators](emulators.md)
-+ From AEM 65 {#from65}
-  + [Migration to the Touch UI](/help/sites-developing/touch-ui-migration.md)
-  + [Variables in AEM workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
