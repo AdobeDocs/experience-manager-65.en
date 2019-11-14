@@ -47,12 +47,12 @@ The following logic containers are available out-of-the-box and allow you to con
 <table>
  <tbody>
   <tr>
-   <td width="125"> AND Container<br /> </td>
-   <td width="400"> The boolean AND operator.<br /> </td>
+   <td> AND Container<br /> </td>
+   <td> The boolean AND operator.<br /> </td>
   </tr>
   <tr>
-   <td width="125"> OR Container<br /> </td>
-   <td width="400"> The boolean OR operator.</td>
+   <td> OR Container<br /> </td>
+   <td> The boolean OR operator.</td>
   </tr>
  </tbody>
 </table>
@@ -64,51 +64,51 @@ The following segment traits are available out-of-the-box; they can be dragged f
 <table>
  <tbody>
   <tr>
-   <td width="125"> IP Range<br /> </td>
-   <td width="400">Defines a range of IP addresses that the visitor can have.<br /> </td>
+   <td> IP Range<br /> </td>
+   <td>Defines a range of IP addresses that the visitor can have.<br /> </td>
   </tr>
   <tr>
-   <td width="125"> Page Hits<br /> </td>
-   <td width="400">How often the page has been requested. <br /> </td>
+   <td> Page Hits<br /> </td>
+   <td>How often the page has been requested. <br /> </td>
   </tr>
   <tr>
-   <td width="125"> Page Property<br /> </td>
-   <td width="400">Any property of the visited page.<br /> </td>
+   <td> Page Property<br /> </td>
+   <td>Any property of the visited page.<br /> </td>
   </tr>
   <tr>
-   <td width="125"> Referral Keywords<br /> </td>
-   <td width="400">Keywords to match with information from the referring website. <br /> </td>
+   <td> Referral Keywords<br /> </td>
+   <td>Keywords to match with information from the referring website. <br /> </td>
   </tr>
   <tr>
-   <td width="125"> Script</td>
-   <td width="400">Javascript expression to be evaluated.<br /> </td>
+   <td> Script</td>
+   <td>Javascript expression to be evaluated.<br /> </td>
   </tr>
   <tr>
-   <td width="125"> Segment Reference <br /> </td>
-   <td width="400">Reference to another segment definition.<br /> </td>
+   <td> Segment Reference <br /> </td>
+   <td>Reference to another segment definition.<br /> </td>
   </tr>
   <tr>
-   <td width="125"> Tag Cloud<br /> </td>
-   <td width="400">Tags to be matched with those from the pages visited.<br /> </td>
+   <td> Tag Cloud<br /> </td>
+   <td>Tags to be matched with those from the pages visited.<br /> </td>
   </tr>
   <tr>
-   <td width="125"> User Age<br /> </td>
-   <td width="400">As taken from the user profile.<br /> </td>
+   <td> User Age<br /> </td>
+   <td>As taken from the user profile.<br /> </td>
   </tr>
   <tr>
-   <td width="125"> User Property<br /> </td>
-   <td width="400">Any other information that is available in the user profile. </td>
+   <td> User Property<br /> </td>
+   <td>Any other information that is available in the user profile. </td>
   </tr>
  </tbody>
 </table>
 
 You can combine these traits using the boolean operators OR and AND (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting this segment.
 
-When the entire statement evaluates to true then this segment has resolved. In the event of multiple segments being applicable, then the ** [Boost](/help/sites-administering/campaign-segmentation.md#boost-factor)** factor is also used.
+When the entire statement evaluates to true then this segment has resolved. In the event of multiple segments being applicable, then the **[Boost](/help/sites-administering/campaign-segmentation.md#boost-factor)** factor is also used.
 
 >[!CAUTION]
 >
->The segment editor does not check for any circular references. For example, segment A references another segment B, which in turn references segment A. You must ensure that your segments do not contain any circular refernces.
+>The segment editor does not check for any circular references. For example, segment A references another segment B, which in turn references segment A. You must ensure that your segments do not contain any circular references.
 
 >[!NOTE]
 >
@@ -133,7 +133,7 @@ To define your new segment:
    ![](assets/screen_shot_2012-02-02at103135am.png)
 
 1. Click **OK** to save your definition:
-1. You can **Edit** the segment definition to give it a **Title**, **Description** and ** [Boost](/help/sites-administering/campaign-segmentation.md#boost-factor)** factor:
+1. You can **Edit** the segment definition to give it a **Title**, **Description** and **[Boost](#boost-factor)** factor:
 
    ![](assets/screen_shot_2012-02-02at103547am.png)
 
@@ -160,10 +160,10 @@ As the main operator is OR you need to start with an **OR Container**. Within th
 
 ## Testing the Application of a Segment {#testing-the-application-of-a-segment}
 
-Once the segment has been defined, potential results can be tested with the help of the ** [Client Context](/help/sites-administering/client-context.md)**:
+Once the segment has been defined, potential results can be tested with the help of the **[Client Context](/help/sites-administering/client-context.md)**:
 
 1. Select the segment to be tested.
-1. Press ** [Ctrl-Alt-C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)** to open the ** [Client Context](/help/sites-administering/client-context.md)**, which shows the data that has been collected. For testing purposes you can **Edit** certain values, or **Load** another profile to see the impact there.
+1. Press **[Ctrl-Alt-C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)** to open the **[Client Context](/help/sites-administering/client-context.md)**, which shows the data that has been collected. For testing purposes you can **Edit** certain values, or **Load** another profile to see the impact there.
 
 1. Depending on the traits defined, the data available for the current page may or may not match the segment definition. The status of the match is shown underneath the definition.
 
