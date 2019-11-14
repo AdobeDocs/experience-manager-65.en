@@ -29,15 +29,15 @@ Perform the following steps to change the interval of the synchronization schedu
 
 ## Synchronizing assets {#synchronizing-assets}
 
-You can use the **Synchronize Assets from Repository **option to manually synchronize the assets. Perform the following steps to manually synchronize the assets:
+You can use the **Synchronize Assets from Repository** option to manually synchronize the assets. Perform the following steps to manually synchronize the assets:
 
-1. Log in to AEM Forms. The default URL is https://[Server]:[Port]/lc/aem/forms/.
+1. Log in to AEM Forms. The default URL is `https://[Server]:[Port]/lc/aem/forms/`.
 
    ![AEM Forms user interface](assets/aem_forms_ui.png)
 
    Figure 1 - AEM Forms user interface
 
-1. Click the **![aem6forms_sync](assets/aem6forms_sync.png)** icon in the toolbar. If you do not have any assets at last configured path then the dialog box as shown below. Click **Star** to initiate the synchronization.
+1. Click the ![aem6forms_sync](assets/aem6forms_sync.png) icon in the toolbar. If you do not have any assets at last configured path then the dialog box as shown below. Click **Star** to initiate the synchronization.
 
    ![Synchronization dialog box](assets/migrate-and-syncronize.png)
 
