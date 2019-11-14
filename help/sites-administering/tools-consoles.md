@@ -364,7 +364,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
 <table>
  <tbody>
   <tr>
-   <th width="200">Page or Folder</th>
+   <th>Page or Folder</th>
    <th>Purpose</th>
   </tr>
   <tr>
