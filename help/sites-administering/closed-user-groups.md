@@ -3,12 +3,13 @@ title: Closed User Groups in AEM
 seo-title: Closed User Groups in AEM
 description: Learn about Closed User Groups in AEM.
 seo-description: Learn about Closed User Groups in AEM.
-uuid: a65ed163-fdec-45f3-adf9-984d36f4eb73
+uuid: 83396163-86ce-406b-b797-2457ed975ccd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
+docset: aem65
 ---
 
 # Closed User Groups in AEM{#closed-user-groups-in-aem}
@@ -52,7 +53,7 @@ The key feature of a CUG is restricting read access on a given tree in the conte
 This new type of policy has the following characteristics:
 
 * Access control policy of type org.apache.jackrabbit.api.security.authorization.PrincipalSetPolicy (defined by the Apache Jackrabbit API);
-* PrincipalSetPolicy grants privileges to a modifable set of principals;
+* PrincipalSetPolicy grants privileges to a modifiable set of principals;
 * The privileges granted and the scope of the policy is an implementation detail.
 
 The implementation of PrincipalSetPolicy used to represent CUGs in addition defines that:
@@ -77,14 +78,14 @@ Permission evaluation for CUG policies and the interaction with the default or a
 The following characteristics apply for the permission evaluation associated with the authorization model designed to handle and evaluate CUG policies:
 
 * It only handles read permissions for regular nodes and properties, but not reading access control content
-* It does not handle write permissions nor any kind of permissions required for modification of protected JCR content (access control, node type information, versioning, locking or user management amongst others); These permissions are not afected by a CUG policy and will not be evaluated by the associated authorization model. Whether or not these permissions are granted depends on the other models configured in the security setup.
+* It does not handle write permissions nor any kind of permissions required for modification of protected JCR content (access control, node type information, versioning, locking or user management amongst others); These permissions are not affected by a CUG policy and will not be evaluated by the associated authorization model. Whether or not these permissions are granted depends on the other models configured in the security setup.
 
-The efect of a single CUG policy upon permission evaluation can be summarized as follows:
+The effect of a single CUG policy upon permission evaluation can be summarized as follows:
 
 * Read access is denied for everyone except for subjects containing excluded principals or principals listed in the policy;
-* The policy takes efect on the access controlled node which holds the policy and its properties;
-* The efect is additionally inherited down the hierarchy - that is, the item tree defined by the access controlled node;
-* However, it does neither afect siblings nor ancestors of the access controlled node;
+* The policy takes effect on the access controlled node which holds the policy and its properties;
+* The effect is additionally inherited down the hierarchy - that is, the item tree defined by the access controlled node;
+* However, it does neither affect siblings nor ancestors of the access controlled node;
 * The inheritance of a given CUG stops at a nested CUG.
 
 #### Best Practices {#best-practices}
@@ -113,7 +114,7 @@ These requirements are registered with the Authenticator by means of an OSGi ser
 
 For security reasons the new implementation replaces the usage of a residual JCR property by a dedicated mixin type called `granite:AuthenticationRequired`, which defines a single optional property of type STRING for the login path `granite:loginPath`. Only content changes related to this mixin type will lead to update of the requirements registered with Apache Sling Authenticator. The modifications are tracked upon persisting any transient modifications and thus require a `javax.jcr.Session.save()` call to become effective.
 
-The same applies for the `granite:loginPath` property. It will only be respected if it is defned by the auth-requirement related mixin type. Adding a residual property with this very name at an unstructured JCR node will not show the desired efect and the property will be ignored by the handler responsible for updating the OSGi registration.
+The same applies for the `granite:loginPath` property. It will only be respected if it is defined by the auth-requirement related mixin type. Adding a residual property with this very name at an unstructured JCR node will not show the desired effect and the property will be ignored by the handler responsible for updating the OSGi registration.
 
 >[!NOTE]
 >
@@ -125,7 +126,7 @@ Since this type of authentication requirement is expected to be limited to certa
 
 The default AEM setup now makes use of this configuration by allowing to set the mixin in the author run mode but only have it take effect upon replication to the publish instance. See [this page](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) for details how Sling enforces the authentication requirement.
 
-Adding the `granite:AuthenticationRequired` mixin type within the configured supported paths will cause the OSGi registration of the responsible handler to be updated containing an new, additional entry with the `sling.auth.requirements` property. If a given authentication requirement specifes the optional `granite:loginPath` property, the value is additionally registered with the Authenticator with a '-' prefix in order to be excluded from authentication requirement.
+Adding the `granite:AuthenticationRequired` mixin type within the configured supported paths will cause the OSGi registration of the responsible handler to be updated containing an new, additional entry with the `sling.auth.requirements` property. If a given authentication requirement specifies the optional `granite:loginPath` property, the value is additionally registered with the Authenticator with a '-' prefix in order to be excluded from authentication requirement.
 
 #### Evaluation and Inheritance of the Authentication Requirement {#evaluation-and-inheritance-of-the-authentication-requirement}
 
@@ -170,10 +171,10 @@ The `LoginPathProvider` as implemented by the new auth-requirement support in Gr
 The following best practices should be taken into account when defining authentication requirements:
 
 * Avoid nesting authentication requirements: placing a single auth-requirement marker at the start of a tree should be sufficient and is inherited to the whole subtree defined by the target node. Additional authentication requirements within that tree should be considered redundant and may lead to performance issues while evaluating the authentication requirement within Apache Sling. With the separation of authorization and authentication related CUG areas it is possible to restrict read access by means of CUG or other type of policies while at the same time enforcing authentication for the whole tree.
-* Model repository content such that authentication requirements apply for the whole tree without the need to exclude nested subtrees from requirement again.
+* Model repository content such that authentication requirements apply for the whole tree without the need to exclude nested sub-trees from requirement again.
 * To avoid specifying, and subsequently registering redundant login paths:
 
-    * rely on inheritance and avoid defning nested login paths,
+    * rely on inheritance and avoid defining nested login paths,
     * don't set the optional login path to a value that corresponds to the default or an inherited value,
     * application developers should identify which login paths should be configured in the global login-path configurations (both default and mappings) associated with the `LoginSelectorHandler`.
 
@@ -239,7 +240,7 @@ session.save();
 
 #### Edit An Existing CUG Policy {#edit-an-existing-cug-policy}
 
-The following steps are needed to edit an existing CUG policy. Please note that the modifed policy needs to written back and changes needs to be persisted using `javax.jcr.Session.save()`.
+The following steps are needed to edit an existing CUG policy. Please note that the modified policy needs to written back and changes needs to be persisted using `javax.jcr.Session.save()`.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -273,11 +274,11 @@ if (cugPolicy.addPrincipals(toAdd1, toAdd2) || cugPolicy.removePrincipals(toRemo
 
 ### Retrieve Effective CUG Policies {#retrieve-effective-cug-policies}
 
-The JCR access control management defines a best effort method to retrieve the policies that take effect at a given path. Due to the fact that evaluation of CUG policies is conditional and depends on the corresponding configuration to be enabled, calling `getEffectivePolicies` is a convenient way to verify if a given CUG policy is taking efect in a given installation.
+The JCR access control management defines a best effort method to retrieve the policies that take effect at a given path. Due to the fact that evaluation of CUG policies is conditional and depends on the corresponding configuration to be enabled, calling `getEffectivePolicies` is a convenient way to verify if a given CUG policy is taking effect in a given installation.
 
 >[!NOTE]
 >
->Please note the diference between `getEffectivePolicies` and the subsequent code example that walks up the hierarchy to find if a given path is already part of an existing CUG.
+>Please note the difference between `getEffectivePolicies` and the subsequent code example that walks up the hierarchy to find if a given path is already part of an existing CUG.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -318,7 +319,7 @@ while (isSupportedPath(path)) {
 
 #### Managing CUG Policies by Pincipal {#managing-cug-policies-by-pincipal}
 
-The extensions defined by `JackrabbitAccessControlManager` that allow to edit access control policies by principal are not implemented with CUG access control management, as by definition a CUG policy always afects all principals: those listed with the `PrincipalSetPolicy` are being granted read access while all other principals will be prevented to read content in the tree defined by the target node.
+The extensions defined by `JackrabbitAccessControlManager` that allow to edit access control policies by principal are not implemented with CUG access control management, as by definition a CUG policy always affects all principals: those listed with the `PrincipalSetPolicy` are being granted read access while all other principals will be prevented to read content in the tree defined by the target node.
 
 The corresponding methods always return an empty policy array but will not throw exceptions.
 
@@ -328,7 +329,7 @@ The creation, modification or removal of a new authentication requirements is ac
 
 >[!NOTE]
 >
->The modifications to a given target node mentioned above will only be reflected on the Apache Sling Authenticator if the `RequirementHandler` has been confgured and the target is contained in the trees defined by the supported paths (see section Configuration Options).
+>The modifications to a given target node mentioned above will only be reflected on the Apache Sling Authenticator if the `RequirementHandler` has been configured and the target is contained in the trees defined by the supported paths (see section Configuration Options).
 >
 >For more info, see [Assigning Mixin Node Types](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.10.3 Assigning Mixin Node Types) and [Adding Nodes and Setting Properties](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.4 Adding Nodes and Setting Properties)
 
@@ -345,7 +346,7 @@ session.save();
 
 #### Add a New Auth Requirement with Login Path {#add-a-new-auth-requirement-with-login-path}
 
-Steps to create a new authentication requirement including a login path. Note, that the requirement and the exclusion for the login path will only be registered with the Apache Sling Authenticator if the `RequirementHandler` has been confgured for the tree containing the target node.
+Steps to create a new authentication requirement including a login path. Note, that the requirement and the exclusion for the login path will only be registered with the Apache Sling Authenticator if the `RequirementHandler` has been configured for the tree containing the target node.
 
 ```java
 Node targetNode = [...]
@@ -405,7 +406,7 @@ if (session.propertyExists(propertyPath)) {
 
 #### Remove an Auth Requirement {#remove-an-auth-requirement}
 
-Steps to remove an existing authentication requirement. The requirement will only be unregistered from the Apache Sling Authenticator if the `RequirementHandler` has been confgured for the tree containing the target node.
+Steps to remove an existing authentication requirement. The requirement will only be unregistered from the Apache Sling Authenticator if the `RequirementHandler` has been configured for the tree containing the target node.
 
 ```java
 Node targetNode = [...]
@@ -424,7 +425,7 @@ The following image shows the authentication requirements of an AEM publish inst
 >
 >In this example the optional login path property was not set. Consequently, no second entry has been registered with the authenticator.
 
-![chlimage_1-62](assets/chlimage_1-62.jpeg)
+![chlimage_1-24](assets/chlimage_1-24.jpeg)
 
 #### Retrieve the Effective Login Path {#retrieve-the-effective-login-path}
 
@@ -464,7 +465,7 @@ The following table lists the valid combinations of CUG policies and the authent
 
 | **Authentication Required** |**Login Path** |**Restricted Read Access** |**Expected Efect** |
 |---|---|---|---|
-| Yes |Yes |Yes |A given user will only be able to view the subtree marked with the CUG policy if effective permission evaluation grants access. An unauthenticated user will be redirected to the specifed login page.  |
+| Yes |Yes |Yes |A given user will only be able to view the subtree marked with the CUG policy if effective permission evaluation grants access. An unauthenticated user will be redirected to the specified login page.  |
 | Yes |No |Yes |A given user will only be able to view the subtree marked with the CUG policy if effective permission evaluation grants access. An unauthenticated user will be redirected to an inherited default login page.  |
 | Yes |Yes |No |An unauthenticated user will be redirected to the specified login page. Whether or not it is allowed to view the tree marked with the auth-requirement depends on the effective permissions of the individual items contained in that subtree. No dedicated CUG restricting read access in place.  |
 | Yes |No |No |An unauthenticated user will be redirected to an inherited default login page. Whether or not it is allowed to view the tree marked with the auth requirement depends on the effective permissions of the individual items contained in that subtree. No dedicated CUG restricting read access in place. |
@@ -472,7 +473,7 @@ The following table lists the valid combinations of CUG policies and the authent
 
 >[!NOTE]
 >
->The combination of 'Authentication Requirement' = No and 'Login Path' = Yes is not listed above as the 'Login Path' is an optional attribute associated with an Auth-Requirement. Specifying a JCR property with that name without adding the defining mixin type will have no efect and will be ignored by the corresponding handler.
+>The combination of 'Authentication Requirement' = No and 'Login Path' = Yes is not listed above as the 'Login Path' is an optional attribute associated with an Auth-Requirement. Specifying a JCR property with that name without adding the defining mixin type will have no effect and will be ignored by the corresponding handler.
 
 ## OSGi Components and Configuration {#osgi-components-and-configuration}
 
@@ -524,7 +525,7 @@ The following two OSGi components have been introduced to define authentication 
      <li><code>cugSupportedPaths</code></li>
      <li><code>cugEnabled</code></li>
      <li><code>configurationRanking</code></li>
-    </ul> <p>Also, see <a href="/help/sites-administering/closed-user-groups.md#configuration-options" target="_blank">Configuration Options</a> below.</p> </td>
+    </ul> <p>Also, see <a href="#configuration-options">Configuration Options</a> below.</p> </td>
   </tr>
   <tr>
    <td>Configuration Policy</td>
@@ -749,7 +750,7 @@ There is one limitation of replicating CUG policies. If a given CUG policy gets 
 
 The authentication handler **Adobe Granite HTTP Header Authentication Handler** shipped with the `com.adobe.granite.auth.authhandler` bundle holds a reference to the `CugSupport` interface defined by the same module. It is used to calculate the 'realm' in certain circumstances, falling back to the realm configured with the handler.
 
-This has been adjusted to make the reference to `CugSupport` optional in order to ensure maximal backwards compatibility if a given setup decides to re-enable the deprecated implementation. Installations usingtheimplementation will no longer get the realm extracted from the CUG implementation but will always display the realm as defined with **Adobe Granite HTTP Header Authentication Handler**.
+This has been adjusted to make the reference to `CugSupport` optional in order to ensure maximal backwards compatibility if a given setup decides to re-enable the deprecated implementation. Installations using the implementation will no longer get the realm extracted from the CUG implementation but will always display the realm as defined with **Adobe Granite HTTP Header Authentication Handler**.
 
 >[!NOTE]
 >
@@ -757,7 +758,7 @@ This has been adjusted to make the reference to `CugSupport` optional in order t
 
 ### AEM LiveCopy {#aem-livecopy}
 
-Configuring CUGs in conjuction with LiveCopy is represented in the repository by the addition of one extra node and one extra property as follows:
+Configuring CUGs in conjunction with LiveCopy is represented in the repository by the addition of one extra node and one extra property as follows:
 
 * `/content/we-retail/us/en/blueprint/rep:cugPolicy`
 * `/content/we-retail/us/en/LiveCopy@granite:loginPath`
@@ -770,7 +771,7 @@ Therefore, CUG groups cannot be rolled back from a blueprint to a Live Copy. Ple
 
 The aim of this section is to provide an overview of the changes made to the CUG feature as well as a comparison between the old and the new implementation. It lists the changes affecting the way CUG support is configured and describes how and by whom CUGs are managed in the repository content.
 
-### Diferences in CUG Setup and Configuration {#diferences-in-cug-setup-and-configuration}
+### Differences in CUG Setup and Configuration {#differences-in-cug-setup-and-configuration}
 
 The deprecated OSGi component **Adobe Granite Closed User Group (CUG) Support** ( `com.day.cq.auth.impl.cug.CugSupportImpl`) has been replaced by new components in order to be able to separately handle authorization and authentication related parts of the former CUG functionality.
 
@@ -778,15 +779,15 @@ The deprecated OSGi component **Adobe Granite Closed User Group (CUG) Support** 
 
 The following sections describe the differences between the old and the new implementations from the implementation and security perspectives. While the new implementation aims to provide the same functionality, there are subtle changes that are important to know when using the new CUG.
 
-### Diferences With Regards To Authorization {#diferences-with-regards-to-authorization}
+### Differences With Regards To Authorization {#differences-with-regards-to-authorization}
 
-The main diferences from an authorization perspective are summarized in the list below:
+The main differences from an authorization perspective are summarized in the list below:
 
 **Dedicated Access Control Content For CUGs**
 
 In the old implementation the default authorization model was used to manipulate access control list policies on publish, replacing any existing ACEs by the setup mandated by the CUG. This was triggered by writing regular, residual JCR properties which were interpreted on publish.
 
-With the new implementation the access control setup of the default authorization model is not afected by any CUG being created,modifed or removed. Instead a new type of policy called `PrincipalSetPolicy` is applied as additional access control content to the target node. This additional policy will be located as a child of the target node and would be a sibling of the default policy node if present.
+With the new implementation the access control setup of the default authorization model is not affected by any CUG being created,modified or removed. Instead a new type of policy called `PrincipalSetPolicy` is applied as additional access control content to the target node. This additional policy will be located as a child of the target node and would be a sibling of the default policy node if present.
 
 **Editing CUG Policies In Access Control Management**
 
@@ -796,11 +797,11 @@ This move from residual JCR properties to a dedicated access control policy has 
 
 CUG policies are expected to be created at the JCR node defining the subtree to be subject to restricted read access. This is likely to be a AEM page in case the CUG is expected afect the whole tree.
 
-Note that placing the CUG policy only at the jcr:content node located below a given page will only restrict access to the contents of a given page but will not take effect on any siblings or child pages. This may be a valid use case and it is possible to achieve with a repository editor that allows to apply fine grained access content content. However, it contrasts the former implementation where placing a cq:cugEnabled property on the jcr:content node was internally re-mapped to the page node. This mapping is no longer performed.
+Note that placing the CUG policy only at the jcr:content node located below a given page will only restrict access to the content s.str of a given page but will not take effect on any siblings or child pages. This may be a valid use case and it is possible to achieve with a repository editor that allows to apply fine grained access content content. However, it contrasts the former implementation where placing a cq:cugEnabled property on the jcr:content node was internally re-mapped to the page node. This mapping is no longer performed.
 
 **Permission Evaluation With CUG Policies**
 
-Moving from the old CUG support to an additional authorization model, changes the way effective read permissions are evaluated. As described in the [Jackrabbit documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html), a given principal allowed to view the `CUGcontent` will only be granted read access if the permission evaluation of all models confgured in the Oak repository grant read access.
+Moving from the old CUG support to an additional authorization model, changes the way effective read permissions are evaluated. As described in the [Jackrabbit documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html), a given principal allowed to view the `CUGcontent` will only be granted read access if the permission evaluation of all models configured in the Oak repository grant read access.
 
 In other words, for the evaluation of the effective permissions, both the `CUGPolicy` and the default access control entries will be taken into account and read access on the CUG content will only be granted if it is granted by both types of policies. In a default AEM publish installation where read access to the complete `/content` tree is granted for everyone, the effect of the CUG policies will be the same as with the old implementation.
 
@@ -811,7 +812,7 @@ The CUG authorization model allows to individually turn on access control manage
 * access control management is enabled if the module has one or many supported paths where CUGs can be created
 * permission evaluation is only enabled if option **CUG Evaluation Enabled** is additionally checked.
 
-In the new AEM default setup evaluation of CUG policies it is only enabled with the 'publish' run mode. See the details on the [default configuration since AEM 6.3](#default-configuration-since-aem) for more details. This can be verifed by comparing the effective policies for a given path to the policies stored in the content. Effective policies will only be shown in case permission evaluation for CUGs is enabled.
+In the new AEM default setup evaluation of CUG policies it is only enabled with the 'publish' run mode. See the details on the [default configuration since AEM 6.3](#default-configuration-since-aem) for more details. This can be verified by comparing the effective policies for a given path to the policies stored in the content. Effective policies will only be shown in case permission evaluation for CUGs is enabled.
 
 As explained above the CUG access control policies are now always stored in the content but evaluation of the effective permissions that result from those policies will only be enforced if **CUG Evaluation Enabled** is turned on in the system console at Apache Jackrabbit Oak **CUG Configuration.** By default, it is enabled with the 'publish' run mode only.
 
@@ -869,7 +870,7 @@ For upgraded AEM installation, it is important to ensure that only one CUG imple
 Adobe provides a tool for migrating to the new CUG implementation. In order to use it, perform the following steps:
 
 1. Go to `https://<serveraddress>:<serverport>/system/console/cug-migration` to access the tool.
-1. Enter the root path you want to check CUGs for, and press the **Perform dry run** button. This will scan for CUGs elligible for conversion in the selected location.
+1. Enter the root path you want to check CUGs for, and press the **Perform dry run** button. This will scan for CUGs eligible for conversion in the selected location.
 1. After you have reviewed the results, press the **Perform migration** button to migrate to the new implementation.
 
 >[!NOTE]

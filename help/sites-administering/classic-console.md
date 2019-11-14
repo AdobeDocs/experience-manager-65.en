@@ -3,12 +3,14 @@ title: Classic UI Tagging Console
 seo-title: Classic UI Tagging Console
 description: Learn about the Classic UI Tagging Console.
 seo-description: Learn about the Classic UI Tagging Console.
-uuid: c3080c82-0b34-4922-a263-1674a9522649
+uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
+discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
+docset: aem65
+
 ---
 
 # Classic UI Tagging Console{#classic-ui-tagging-console}
@@ -22,10 +24,9 @@ To access the Classic UI Tagging console :
 * on author
 * sign in with administrative privileges
 * browse to the console
+  for example, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
-  for example, [http://localhost:4502/tagging](http://localhost:4502/tagging)
-
-![managing_tags_usingthetagasministrationconsole-1](assets/managing_tags_usingthetagasministrationconsole-1.png)
+![](assets/managing_tags_usingthetagasministrationconsole.png)
 
 ## Creating Tags and Namespaces {#creating-tags-and-namespaces}
 
@@ -33,17 +34,16 @@ To access the Classic UI Tagging console :
 
    If you select **Tags** you can create a namespace:
 
-   ![creating_tags_andnamespaces-1](assets/creating_tags_andnamespaces-1.png)
+   ![](assets/creating_tags_andnamespaces.png)
 
    If you select a namespace (for example **Demo**) you can create a tag within that namespace:
 
-   ![creating_tags_andnamespacesinnewnamespace](assets/creating_tags_andnamespacesinnewnamespace.png)
+   ![](assets/creating_tags_andnamespacesinnewnamespace.png)
 
 1. In both cases enter
 
     * **Title**
       (*Required*) The display title for the tag. While any character may be entered,
-
       it is recommended to not use these special characters :
 
         * `colon (:)` - namespace delimiter
@@ -52,11 +52,9 @@ To access the Classic UI Tagging console :
       These characters will not be displayed if entered.
 
     * **Name**
-
       (*Required*) The node name for the tag.
 
     * **Description**
-
       (*Optional*) A description for the tag.
 
     * select **Create**
@@ -66,7 +64,7 @@ To access the Classic UI Tagging console :
 1. In the right-hand pane, select the tag that you want to edit.
 1. Click **Edit**.
 1. You can modify the **Title** and the **Description**.
-1. Click **Save** to close the dialog.
+1. Click **Save **to close the dialog.
 
 ## Deleting Tags {#deleting-tags}
 
@@ -85,7 +83,7 @@ To access the Classic UI Tagging console :
 
 **List** opens a new window showing the paths of all pages using the highlighted tag:
 
-![list_showing_wheretagsarereferenced](assets/list_showing_wheretagsarereferenced.png)
+![](assets/list_showing_wheretagsarereferenced.png)
 
 ## Moving Tags {#moving-tags}
 
@@ -102,7 +100,7 @@ To help tags administrators and developers clean up the taxonomy or rename a tag
 
 The **Move Tag** dialog looks as follows:
 
-![move_tag](assets/move_tag.png)
+![](assets/move_tag.png)
 
 >[!NOTE]
 >
@@ -124,7 +122,7 @@ To merge a tag into another one:
 
 The **Merge Tag** dialog looks as follows:
 
-![mergetag](assets/mergetag.png)
+![](assets/mergetag.png)
 
 ## Counting Usage of Tags {#counting-usage-of-tags}
 
@@ -153,7 +151,7 @@ The following procedure shows how to translate the `title`of the tag **Animals**
 
 The dialog looks as follows:
 
-![edit_tag](assets/edit_tag.png)
+![](assets/edit_tag.png)
 
 The Tagging console uses the user language setting, so for the Animal tag, 'Animaux' is displayed for a user who sets the language to French in user properties.
 
@@ -170,13 +168,12 @@ By default the tag `titles`in the page properties are displayed in the page lang
 
    Select the **Animals** (**Animaux**) tag and select outside the dialog to close it and add the tag to the page properties.
 
-   ![french_tag](assets/french_tag.png)
+   ![](assets/french_tag.png)
 
 By default, the Page Properties dialog displays the tag `titles`according to the page language.
 
-In general, the language of the tag is taken from the page language if the page language is available. When the [tag widget](/help/sites-developing/building.md#tagging-on-the-client-side) is used in other cases (for example in forms or in dialogs), the tag language depends on the context.
+In general, the language of the tag is taken from the page language if the page language is available. When the [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) is used in other cases (for example in forms or in dialogs), the tag language depends on the context.
 
 >[!NOTE]
 >
 >The tag cloud and the meta keywords in the standard page component use the localized tag `titles`based on the page language, if available.
-
