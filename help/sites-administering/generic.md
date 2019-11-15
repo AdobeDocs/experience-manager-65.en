@@ -480,7 +480,7 @@ To generate a Catalog:
 
 >[!NOTE]
 >
->The catalog will reference your [Product Data](##products-and-product-variants).
+>The catalog will reference your [Product Data](#products-and-product-variants).
 
 1. Using the **Websites** console, navigate to your **Catalog Blueprint**, then the Base Catalog.
 
