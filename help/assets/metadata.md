@@ -11,7 +11,7 @@ discoiquuid: 7acc1cab-d167-4299-bd13-8eb800a1112e
 
 # Managing Metadata for Digital Assets {#managing-metadata-for-digital-assets}
 
-Adobe Experience Manager (AEM) Assets keeps metadata for every asset. This allows for a easier categorization and organization of assets and it helps people who are looking for a specific asset. With the ability to extract metadata from files uploaded to AEM Assets, metadata management integrates with the creative workflow. With the ability to keep and manage arbitrary metadata with your assets, AEM Assets makes it possible to automatically organize and process assets based on their metadata. Finally AEM Assets end-user interface, the [DAM Finder](/help/sites-classic-ui-authoring/manage-assets-classic-using-share-page.md) can be [customized by site owners and developers](extending-assets.md)to reflect the metadata you are using in your organization.
+Adobe Experience Manager (AEM) Assets keeps metadata for every asset. This allows for a easier categorization and organization of assets and it helps people who are looking for a specific asset. With the ability to extract metadata from files uploaded to AEM Assets, metadata management integrates with the creative workflow. With the ability to keep and manage arbitrary metadata with your assets, AEM Assets makes it possible to automatically organize and process assets based on their metadata.
 
 * [XMP Metadata](xmp.md)
 * [How to edit or add metadata](meta-edit.md)
