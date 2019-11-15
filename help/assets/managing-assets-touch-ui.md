@@ -52,28 +52,28 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 1. In the Assets UI, navigate to the location where you want to add digital assets.
 1. To upload the assets, do one of the following:
 
-    * On the toolbar, tap the **Create** **[!UICONTROL]** icon. Then, on the menu, then tap **Files**. You can rename the file in the presented dialog if needed.
+    * On the toolbar, tap the **[!UICONTROL Create]** icon. Then, on the menu, then tap **[!UICONTROL Files]**. You can rename the file in the presented dialog if needed.
     * In a browser that supports HTML5, drag the assets directly on the Assets UI. The dialog to rename file is not displayed.
 
    ![create_menu](assets/create_menu.png)
 
    To select multiple files, press the Ctrl/Command key and select the assets in the file picker dialog. If using an iPad, you can only select one file at a time.
 
-   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **Pause** icon beside progress bar that appears when the uploading starts.
+   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when the uploading starts.
 
    ![chlimage_1-211](assets/chlimage_1-211.png)
 
-   The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, the **Pause** button in the progress bar appears when assets of size greater than 1000 MB are uploaded.
+   The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
-   The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **Pause** button appears.
+   The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
 
    To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
 
-   When you click the **Pause** icon, it toggles to a **Play** icon. To resume uploading, click the **Play** icon.
+   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
 
    ![chlimage_1-212](assets/chlimage_1-212.png)
 
-   To cancel an ongoing upload, click the '**X**' button beside the progress bar. When you cancel the upload operation, AEM Assets deletes the partially uploaded portion of the asset.
+   To cancel an ongoing upload, click close ('X') next to the progress bar. When you cancel the upload operation, AEM Assets deletes the partially uploaded portion of the asset.
 
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 
