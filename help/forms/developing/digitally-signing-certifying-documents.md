@@ -36,8 +36,8 @@ You can accomplish these tasks using the Signature service:
 * Modify signature fields. (See [Modifying Signature Fields](digitally-signing-certifying-documents.md#modifying-signature-fields).)
 * Digitally sign PDF documents. (See [Digitally Signing PDF Documents](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 * Certify PDF documents. (See [Certifying PDF Documents](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
-* Validate digital signatures located in a PDF document. (See [Verifying Digital Signatures](#unresolvedlink-lc-si).)
-* Validate all digital signatures located in a PDF document. (See [Verifying Multiple Digital Signatures](#unresolvedlink-lc-si).)
+* Validate digital signatures located in a PDF document. (See [Verifying Digital Signatures](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Validate all digital signatures located in a PDF document. (See [Verifying Multiple Digital Signatures](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
 * Remove a digital signature from a signature field. (See [Removing Digital Signatures](digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
   ***Note**: For more information about the Signature service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).*
@@ -1376,9 +1376,9 @@ You can determine the identity of the signer, which can be one of the following 
 
 **See also**
 
-[Verify digital signatures using the Java API](#unresolvedlink-lc-si)
+[Verify digital signatures using the Java API](#verify-digital-signatures-using-the-java-api)
 
-[Verify digital signatures using the web service API](#unresolvedlink-lc-si)
+[Verify digital signatures using the web service API](#verify-digital-signatures-using-the-web-service-api)
 
 [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1392,7 +1392,7 @@ Verify a digital signature by using the Signature Service API (Java):
 
    Include client JAR files, such as adobe-signatures-client.jar, in your Java project’s classpath.
 
-1. [Create a Signature client](#unresolvedlink-lc-si)
+1. Create a Signature client
 
     * Create a `ServiceClientFactory` object that contains connection properties.
     * Create a `SignatureServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
@@ -1430,7 +1430,7 @@ Verify a digital signature by using the Signature Service API (Java):
 
 **See also**
 
-[Verifying Digital Signatures](#unresolvedlink-lc-si)
+[Verifying Digital Signatures](#verify-digital-signatures-using-the-java-api)
 
 [Quick Start (SOAP mode): Verifying a digital signature using the Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
 
@@ -1499,7 +1499,7 @@ Verify a digital signature by using the Signature Service API (web service):
 
 **See also**
 
-[Verifying Digital Signatures](#unresolvedlink-lc-si)
+[Verifying Digital Signatures](#verify-digital-signatures-using-the-java-api)
 
 [Invoking AEM Forms using MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
@@ -1586,7 +1586,7 @@ To verify all digital signatures located in a PDF document, retrieve the digital
 
 **Iterate through all signatures**
 
-Iterate through each signature. That is, for each signature, verify the digital signature, and check the signer’s identity and the status of each signature. (See [Verifying Digital Signatures](#unresolvedlink-lc-si).)
+Iterate through each signature. That is, for each signature, verify the digital signature, and check the signer’s identity and the status of each signature. (See [Verifying Digital Signatures](#verify-digital-signatures-using-the-java-api).)
 
 >[!NOTE]
 >
@@ -1594,9 +1594,9 @@ Iterate through each signature. That is, for each signature, verify the digital 
 
 **See also**
 
-[Verify multiple digital signatures using the Java API](#unresolvedlink-lc-si)
+[Verify multiple digital signatures using the Java API](#verify-digital-signatures-using-the-java-api)
 
-[Verifying multiple digital signatures using the web service API](#unresolvedlink-lc-si)
+[Verifying multiple digital signatures using the web service API](#verify-digital-signatures-using-the-web-service-api)
 
 [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1643,13 +1643,13 @@ Verify multiple digital signatures by using the Signature Service API (Java):
 
 **See also**
 
-[Verifying Multiple Digital Signatures](#unresolvedlink-lc-si)
+[Verifying Multiple Digital Signatures](#verifying-multiple-digital-signatures)
 
 [Quick Start (SOAP mode): Verifying multiple digital signatures using the Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
 
 [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-[Verifying Digital Signatures](#unresolvedlink-lc-si)
+[Verifying Digital Signatures](#verify-digital-signatures-using-the-java-api)
 
 [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1709,7 +1709,7 @@ Verify multiple digital signatures by using the Signature Service API (web servi
 
 **See also**
 
-[Verifying Multiple Digital Signatures](#unresolvedlink-lc-si)
+[Verifying Multiple Digital Signatures](#verifying-multiple-digital-signatures)
 
 [Invoking AEM Forms using MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 

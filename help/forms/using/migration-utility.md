@@ -90,7 +90,7 @@ When you run the Migration Utility for the first time, a log is created with the
 
 1. Do the following to perform the migration:
 
-    * To migrate **assets**, tap AEM Forms Assets Migration, and in the next screen, tap **Start** **Migration**. The following get migrated:
+    * To migrate **assets**, tap AEM Forms Assets Migration, and in the next screen, tap **Start Migration**. The following get migrated:
 
         * Adaptive forms
         * Document fragments
@@ -126,12 +126,12 @@ When you run the Migration Utility for the first time, a log is created with the
    >
    >
 
-    * To migrate adaptive form custom components, tap **Adaptive Forms Custom Components Migration** and in the Custom Components Migration page, tap **Start** **Migration**. The following get migrated:
+    * To migrate adaptive form custom components, tap **Adaptive Forms Custom Components Migration** and in the Custom Components Migration page, tap **Start Migration**. The following get migrated:
 
         * Custom components written for Adaptive Forms
         * Component overlays, if any.
 
-    * To migrate adaptive form templates, tap **Adaptive Forms Template Migration **and in the Custom Components Migration page, tap **Start** **Migration**. The following get migrated:
+    * To migrate adaptive form templates, tap **Adaptive Forms Template Migration **and in the Custom Components Migration page, tap **Start Migration**. The following get migrated:
 
         * Adaptive form templates created under /apps or /conf using AEM Template Editor.
 

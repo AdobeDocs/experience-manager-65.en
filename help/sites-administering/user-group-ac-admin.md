@@ -3,11 +3,12 @@ title: User, Group and Access Rights Administration
 seo-title: User, Group and Access Rights Administration
 description: Learn about user, group and access rights administration in AEM.
 seo-description: Learn about user, group and access rights administration in AEM.
-uuid: 30e0d4dc-261d-4dc2-aff7-29179eca1cc2
+uuid: 26d7bb25-5a38-43c6-bd6a-9ddba582c60f
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: cc0637ef-4a9e-454f-899d-655c9caebe2b
+docset: aem65
 ---
 
 # User, Group and Access Rights Administration{#user-group-and-access-rights-administration}
@@ -17,7 +18,6 @@ Enabling access to a CRX repository involves several topics:
 * [Access Rights](#how-access-rights-are-evaluated) - the concepts of how they are defined and evaluated
 * [User Administration](#user-administration) - managing the individual accounts used for access
 * [Group Administration](#group-administration) - simplify user management by forming groups
-
 * [Access Right Management](#access-right-management) - defining policies that control how these users and groups can access resources
 
 The basic elements are:
@@ -43,7 +43,6 @@ In CRX a group has the following properties:
 * Is applicable for that workspace.
 * It can have members; these can be individual users or other groups.
 * Hierarchical grouping can be achieved with member relationships. You cannot place a group directly below another group in the repository.
-
 * You can define the access rights for all group members.
 
 **Access Rights** CRX uses Access Rights to control access to specific areas of the repository.
@@ -66,7 +65,7 @@ CRX uses two key concepts when evaluating access rights:
 
 * A **principal** is an entity that carries access rights. Principals include:
 
-    * A user account.
+    * A user account
     * A group account
 
       If a user account belongs to one, or more, groups it is also associated with each of those group principals.
@@ -160,7 +159,6 @@ In the above case:
 In this case:
 
 * `aUser` is not granted write permission on `grandChildNode`.
-
 * The second ACE for `aUser` is redundant.
 
 Access rights from multiple group principals are evaluated based on their order, both within the hierarchy and within a single access control list.
@@ -218,24 +216,32 @@ You must be logged into the appropriate workspace, then you can access the dialo
 **Properties**
 
 * **UserID**
+
   Short name for the account, used when accessing CRX.
 
 * **Principal Name**
+
   A full text name for the account.
 
 * **Password**
+
   Needed when accessing CRX with this account.
 
 * **ntlmhash**
+
   Automatically assigned for each new account and updated when the password is changed.
 
 * You can add new properties by defining a name, type and value. Click Save (green tick symbol) for each new property.
 
-**Group Membership** This displays all groups that the account belongs to. The Inherited column indicates membership that has been inherited as a result of membership of another group.
+**Group Membership**
+
+This displays all groups that the account belongs to. The Inherited column indicates membership that has been inherited as a result of membership of another group.
 
 Clicking on a GroupID (when available) will open the [Group Administration](#group-administration) for that group.
 
-**Impersonators** With the Impersonate functionality a user can work on behalf of another user.
+**Impersonators**
+
+With the Impersonate functionality a user can work on behalf of another user.
 
 This means that a user account can specify other accounts (user or group) which can operate with their account. In other words, if user-B is allowed to impersonate user-A, then user-B can take actions using the full account details of user-A (including ID, name and access rights).
 
@@ -272,7 +278,6 @@ If an account impersonates another it is very difficult to see. The log files ho
 ### Updating a User Account {#updating-a-user-account}
 
 1. With the **User Administration** dialog open the list view of all accounts.
-
 1. Navigate through the tree structure.
 1. Click on the required account to open for edit.
 1. Make a change then click on Save (green tick symbol) for that entry.
@@ -281,7 +286,6 @@ If an account impersonates another it is very difficult to see. The log files ho
 ### Removing a User Account {#removing-a-user-account}
 
 1. With the **User Administration** dialog open the list view of all accounts.
-
 1. Navigate through the tree structure.
 1. Select the required account and click **Remove User**; the account will be deleted immediately.
 
@@ -336,20 +340,28 @@ You must be logged into the appropriate workspace, then you can access the dialo
 **Properties**
 
 * **GroupID**
+
   Short name for the group account.
 
 * **Principal Name**
+
   A full text name for the group account.
 
 * You can add new properties by defining a name, type and value. Click Save (green tick symbol) for each new property.
+
 * **Members**
+
   You can add users, or other groups, as members of this group.
 
-**Group Membership** This displays all groups that the current group account belongs to. The Inherited column indicates membership that has been inherited as a result of membership of another group.
+**Group Membership**
+
+This displays all groups that the current group account belongs to. The Inherited column indicates membership that has been inherited as a result of membership of another group.
 
 Clicking on a GroupID will open the dialog for that group.
 
-**Members** Lists all accounts (users and/or groups) that are members of the current group.
+**Members**
+
+Lists all accounts (users and/or groups) that are members of the current group.
 
 The **Inherited** column indicates membership that has been inherited as a result of membership of another group.
 
@@ -376,7 +388,6 @@ The **Inherited** column indicates membership that has been inherited as a resul
 ### Updating a Group Account {#updating-a-group-account}
 
 1. With the **Group Administration** dialog open the list view of all accounts.
-
 1. Navigate through the tree structure.
 1. Click on the required account to open for edit.
 1. Make a change then click on Save (green tick symbol) for that entry.
@@ -385,7 +396,6 @@ The **Inherited** column indicates membership that has been inherited as a resul
 ### Removing a Group Account {#removing-a-group-account}
 
 1. With the **Group Administration** dialog open the list view of all accounts.
-
 1. Navigate through the tree structure.
 1. Select the required account and click **Remove Group**; the account will be deleted immediately.
 
@@ -432,16 +442,19 @@ For example, for **Current Path** select the required resource in the left pane,
 The policies are categorized according to:
 
 * **Applicable Access Control Policies**
+
   These policies can be applied.
 
   These are policies that are available for creating a local policy. Once you select and add an applicable policy it becomes a local policy.
 
 * **Local Access Control Policies**
+
   These are access control policies that you have applied. You can then update, order, or remove them.
 
   A local policy will override any policies inherited from the parent.
 
 * **Effective Access Control Policies**
+
   These are the access control policies that are now in effect for any access requests. They show the aggregated policies derived from both the local policies and any inherited from the parent.
 
 ### Policy Selection {#policy-selection}
@@ -449,12 +462,15 @@ The policies are categorized according to:
 The policies can be selected for:
 
 * **Current Path**
+
   As in the example above, select a resource within the repository. The policies for this "current path" will be shown.
 
 * **Repository**
+
   Selects repository level access control. For example, when setting the `jcr:namespaceManagement` privilege, which is only relevant for the repository, not a node.
 
 * **Principal**
+
   A principal that is registered in the repository.
 
   You can either type in the **Principal** name or click the icon to the right of the field to open the **Select Principal** dialog.
@@ -622,16 +638,12 @@ The order in the list indicates the order in which the policies are applied.
 ### Removing an Access Control Policy {#removing-an-access-control-policy}
 
 1. In the table of **Local Access Control Policies** click the red icon (-) at the right of the entry.
-
 1. The entry will be removed from both the tables for the **Local** and the **Effective Access Control Policies**.
 
 ### Testing an Access Control Policy {#testing-an-access-control-policy}
 
 1. From the CRXDE Lite toolbar select **Tools**, then **Test Access Control...**.
-
 1. A new dialog opens in the top right pane. Select the **Path** and/or **Principal** that you want to test.
-
 1. Click **Test** to see the results for your selection:
 
    ![crx_accesscontrol_test](assets/crx_accesscontrol_test.png)
-

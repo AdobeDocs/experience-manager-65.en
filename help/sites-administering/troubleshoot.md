@@ -3,15 +3,16 @@ title: Troubleshooting AEM
 seo-title: Troubleshooting AEM
 description: Learn about troubleshooting issues with AEM.
 seo-description: Learn about troubleshooting issues with AEM.
-uuid: d68e9ead-8aa6-4108-9f1e-85d7cd7a370f
+uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 1bc19f9a-fa3f-43e3-813e-23ab0b708d43
+docset: aem65
 ---
 
-# Troubleshooting AEM{#troubleshooting-aem}
+# Troubleshooting AEM {#troubleshooting-aem}
 
 The following section covers some issues that you may encounter when using AEM, together with suggestions on how to troubleshoot them.
 
@@ -72,8 +73,7 @@ The thread dump is a list of all the Java threads that are currently active. If 
 
 ### Using Sling Thread Dumper {#using-sling-thread-dumper}
 
-1. Open the **AEM Web Console**; for example at `http://localhost:4502/system/console/`.
-
+1. Open the **AEM Web Console**; for example at `https://localhost:4502/system/console/`.
 1. Select the **Threads **under** Status** tab.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
@@ -112,10 +112,8 @@ To analyze unclosed sessions and find out which code is not closing a session, r
 
 The status of the OSGi bundles can also give an early indication of possible issues.
 
-1. Open the **AEM Web Console**; for example at `http://localhost:4502/system/console/`.
-
+1. Open the **AEM Web Console**; for example at `https://localhost:4502/system/console/`.
 1. Select **Bundles** under **OSGI** tab.
-
 1. Check:
 
     * the Status of the bundles. If any are Inactive or Unsatisfied, then try to stop and restart the bundle. If the issue persists then you may need to investigate further using other methods.
