@@ -243,7 +243,7 @@ A list is a group of related content that can be used in a letter template as a 
 1. You can select the following options to specify how the list behaves in the CCR user interface:
 
     * **Library Access**: To enable library access for adding assets, tap Library Access. When Library Access is enabled, the claims adjustor can add more content to the list. Otherwise, the Claims Adjustor is limited to the content you have defined for the list.
-    * **Lock** **Order**: To lock the order of the assets in the list so that the Claims Adjustor cannot change the order, tap Lock Order. If you do not select this option, the Claims Adjustor can change the order of the list items.
+    * **Lock Order**: To lock the order of the assets in the list so that the Claims Adjustor cannot change the order, tap Lock Order. If you do not select this option, the Claims Adjustor can change the order of the list items.
 
     * **Add Bullets**: Use this option to apply a bullet or numbering style to the module. You can use either a predesigned list style or a custom one. You can also specify the text to be displayed before and after each of the list items.
     * **Page Break**: Select this option ( ![break](assets/break.png)) to add a page break between the list contents. When this option is not selected ( ![nobreak](assets/nobreak.png)), if the contents of the list are overflowing to the next page, the whole list is shifted to the next page instead of breaking in the page between the list.
@@ -380,7 +380,7 @@ For a detailed example of using static and dynamic tables in layout fragments, s
 
 ### Creating a layout fragment {#creating-a-layout-fragment}
 
-1. Select **Create** &gt; **Layout** **Fragment**.
+1. Select **Create** &gt; **Layout Fragment**.
 1. Correspondence Management displays the available XDPs. Select the XDP on which you want to base your layout fragment and tap **Next**.
 1. Specify the following information for the layout:
 
@@ -391,7 +391,7 @@ For a detailed example of using static and dynamic tables in layout fragments, s
 
 1. Tap the **Table **tab and specify the following information for the layout:
 
-    * **Configuration for**: Select the table being configured.** **As a suffix to the table name in the dropdown is (Static) if the table is a static one or (Dynamic) if the table is a dynamic table. Static tables contain a fixed number of rows. Static tables can contain target areas and fields. These target area and fields cannot be bound to repeating DDEs. The data bound to table cells determines the number of rows for dynamic tables.
+    * **Configuration for**: Select the table being configured.As a suffix to the table name in the dropdown is (Static) if the table is a static one or (Dynamic) if the table is a dynamic table. Static tables contain a fixed number of rows. Static tables can contain target areas and fields. These target area and fields cannot be bound to repeating DDEs. The data bound to table cells determines the number of rows for dynamic tables.
 
     * **Rows**: Select the number of rows for the layout. The configured row count must be greater than or equal to the original row count.
     * **Columns**: select the number of columns for the layout. The configured column count must be greater than or equal to the original column count.

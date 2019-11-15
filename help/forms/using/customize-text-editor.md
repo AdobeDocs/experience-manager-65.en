@@ -49,7 +49,7 @@ To customize fonts by editing the tbxeditor-config.xml file, do the following:
 
        **Location:** /apps/
 
-       **Match** **Node Types:** Selected
+       **Match Node Types:** Selected
     
        ![Overlay node](assets/2.png)
 

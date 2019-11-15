@@ -346,7 +346,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 ## Renewal Reminder citizen (Aya) {#renewal-reminder-citizen-aya}
 
-**This section:** Camila also schedules a communication reminder so one year later. (Workflow Step that** **automates/executes and email).
+**This section:** Camila also schedules a communication reminder so one year later. (Workflow Step that automates/executes and email).
 
 ### Aya User Story (Email client) {#aya-user-story-email-client-1}
 

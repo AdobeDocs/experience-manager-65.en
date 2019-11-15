@@ -55,4 +55,3 @@ To resolve the conflict, rename the application, and manually synchronize the as
 ![Conflicts in asset synchronization dialog box](assets/sync-conflict.png)
 
 **Figure:** *Conflicts in asset synchronization dialog box*
-

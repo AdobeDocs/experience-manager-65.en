@@ -279,19 +279,19 @@ Execute the following steps to create static text and use form data model elemen
    ![Summary Charges](assets/summary_charges_static_new.png)
 
 1. Select the **Data Model Objects** tab.
-1. Place the cursor next to the **Call Charges** field and double-click the **bills** &gt; **callcharges **property.
-1. Place the cursor next to the **Conference** **Call Charges** field and double-click the **bills** &gt; **confcallcharges **property.
-1. Place the cursor next to the **SMS Charges** field and double-click the **bills** &gt; **smscharges **property.
-1. Place the cursor next to the **Mobile Internet Charges** field and double-click the **bills** &gt; **internetcharges **property.
-1. Place the cursor next to the **National Roaming Charges** field and double-click the **bills** &gt; **roamingnational **property.
-1. Place the cursor next to the **International Roaming Charges** field and double-click the **bills** &gt; **roamingintnl **property.
-1. Place the cursor next to the **Value Added Services Charges** field and double-click the **bills** &gt; **vas **property.
-1. Place the cursor next to the **Total Charges** field and double-click the **bills** &gt; **usagecharges **property.
-1. Place the cursor next to the **TOTAL PAYABLE** field and double-click the **bills** &gt; **usagecharges **property.
+1. Place the cursor next to the **Call Charges** field and double-click the **bills** &gt; **callcharges** property.
+1. Place the cursor next to the **Conference Call Charges** field and double-click the **bills** &gt; **confcallcharges** property.
+1. Place the cursor next to the **SMS Charges** field and double-click the **bills** &gt; **smscharges** property.
+1. Place the cursor next to the **Mobile Internet Charges** field and double-click the **bills** &gt; **internetcharges** property.
+1. Place the cursor next to the **National Roaming Charges** field and double-click the **bills** &gt; **roamingnational** property.
+1. Place the cursor next to the **International Roaming Charges** field and double-click the **bills** &gt; **roamingintnl** property.
+1. Place the cursor next to the **Value Added Services Charges** field and double-click the **bills** &gt; **vas** property.
+1. Place the cursor next to the **Total Charges** field and double-click the **bills** &gt; **usagecharges** property.
+1. Place the cursor next to the **TOTAL PAYABLE** field and double-click the **bills** &gt; **usagecharges** property.
 
    ![Summary of Charges](assets/summary_charges_static_fdm_new.png)
 
-1. Select the text in the **Value Added Services Charges** row and tap **Create Rule **to create a condition based on which the row is displayed in the Interactive Communication:
+1. Select the text in the **Value Added Services Charges** row and tap **Create Rule** to create a condition based on which the row is displayed in the Interactive Communication:
 1. On the **Create Rule** pop-up window:
 
     1. Select **Data Models and Variables** and then **bills** &gt; **callcharges**.
@@ -303,5 +303,4 @@ Execute the following steps to create static text and use form data model elemen
 
    ![create_rules_caption](assets/create_rules_caption.gif)
 
-1. Click **Save **to create the Summary of charges text document fragment.
-
+1. Click **Save** to create the Summary of charges text document fragment.

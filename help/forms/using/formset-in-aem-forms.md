@@ -59,7 +59,7 @@ To create a form set, do the following:
 
 1. In the Configure Form(s) page, you can do the following:
 
-    * Form Order: Drag-and-drop the forms to reorder them.** **The form order defines the order in which forms are shown to end user in AEM Forms app and stand-alone rendition.
+    * Form Order: Drag-and-drop the forms to reorder them. The form order defines the order in which forms are shown to end user in AEM Forms app and stand-alone rendition.
     * Form Identifier: Specifies a unique identity for the forms to be used in eligibility expressions.
     * Data root: For each form in form set, Author can configure the XPATH where the data of that particular form is positioned in submitted XML. By default, the value is /. If all the forms in form set are schema bound and share the same XML schema, you can change this value. It is recommended that every field in form has proper data binding specified in the XDP. If two fields in two different forms share the common data binding, then the field in the second form shows prefilled values from the first form. Do not bind two subforms with the same internal contents to the same XML node. For more information the XML structure of form set, see [Prefill XML for Form set](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
     * Eligibility expression: Specifies a JavaScript expression that evaluates a Boolean value and indicates whether a form in form set is eligible for filling. If false, user is not asked or even shown the form to fill. Typically, the expression is based on the values of the fields that are captured before this form. Expressions also contain calls to the form set API fs.valueOf to extract the values filled in by the user in a field of a form of the form set:
