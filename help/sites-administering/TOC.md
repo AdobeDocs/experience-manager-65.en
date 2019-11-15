@@ -162,3 +162,4 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [Troubleshoot issues with AEM Rich Text Editor](/help/sites-administering/aem-rte-faq.md)
     + [Principal View for Permissions Management](/help/sites-administering/touch-ui-principal-view.md)
     + [Bulk Processing Operations](/help/sites-administering/bulk-processing-operations.md)
+    + [CUG Mapping](/help/sites-administering/cug-mapping.md)

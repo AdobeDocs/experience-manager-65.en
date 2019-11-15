@@ -8,7 +8,7 @@ contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: c2f190af-656e-4435-9f44-2698d41c4ad1
+discoiquuid: 82a8e807-a2df-4fe3-a68c-2dabc9328eca
 docset: aem65
 ---
 
@@ -28,7 +28,7 @@ At the backend, the AEM server authenticates your profile with the gateway and t
 >
 >AEM to Creative Cloud Folder Sharing feature is deprecated in AEM Assets. Learn more and find replacements in [AEM and Creative Cloud Integration Best Practices](/help/assets/aem-cc-integration-best-practices.md).
 
-![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-287.png)
+![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-48.png)
 
 Flow of data when AEM Assets and Creative Cloud are integrated
 
@@ -52,14 +52,14 @@ Flow of data when AEM Assets and Creative Cloud are integrated
 1. Click **[!UICONTROL Add]** ![aem_assets_addcircle_icon](assets/aem_assets_addcircle_icon.png) to create an application.
 1. From the **[!UICONTROL Client Credentials]** list, select **[!UICONTROL Service Account (JWT Assertion)]**, which is a server-to-server communication service for server authentication.
 
-   ![chlimage_1-288](assets/chlimage_1-288.png)
+   ![chlimage_1-49](assets/chlimage_1-49.png)
 
 1. Specify a name for the application and an optional description.
 1. From the **[!UICONTROL Organization]** list, select the organization for which you want to synchronize assets.
 1. From the **[!UICONTROL Scope]** list, select **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]**, and **[!UICONTROL cc-share]**.
 1. Click **[!UICONTROL Create]**. A message notifies that the application is created.
 
-   ![Notification of successful creation of the application to integrate AEM Assets with Adobe CC](assets/chlimage_1-289.png)
+   ![Notification of successful creation of the application to integrate AEM Assets with Adobe CC](assets/chlimage_1-50.png)
 
 1. Copy the **[!UICONTROL Application ID]** that is generated for the new application.
 
@@ -79,7 +79,7 @@ Flow of data when AEM Assets and Creative Cloud are integrated
 
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a title and name for the new configuration and click **[!UICONTROL Create]**.
 
-   ![Name a new configuration to integrate AEM Assets and CC](assets/cloudservices_configure_mc.png)
+   ![Name a new configuration to integrate AEM Assets and CC](assets/chlimage_1-51.png)
 
 1. In the **[!UICONTROL Tenant URL]** field, specify the URL for AEM Assets.
 
@@ -110,11 +110,11 @@ Flow of data when AEM Assets and Creative Cloud are integrated
 
 1. Display the public key using one of the following methods mentioned in the last step of the procedure [Add a new configuration to Marketing Cloud](/help/sites-administering/configure-assets-cc-integration.md#add-a-new-configuration-to-marketing-cloud). Click **[!UICONTROL Display Public Key]**.
 
-   ![chlimage_1-292](assets/chlimage_1-292.png)
+   ![chlimage_1-52](assets/chlimage_1-52.png)
 
 1. Copy the public key and paste it into the **[!UICONTROL Public Key]** field of configuration interface of the application you created in [Create an application](/help/sites-administering/configure-assets-cc-integration.md#create-an-application).
 
-   ![chlimage_1-293](assets/chlimage_1-293.png)
+   ![chlimage_1-53](assets/chlimage_1-53.png)
 
 1. Click **[!UICONTROL Update]**. Synchronize your assets with the AEM Assets instance now.
 
@@ -125,7 +125,7 @@ Flow of data when AEM Assets and Creative Cloud are integrated
 1. From the list of profiles, click the default replication profile for your organization to open it.
 1. In the dialog, click **[!UICONTROL Test Connection]**.
 
-   ![Test connection and set the default replication profile for your organization](assets/chlimage_1-294.png)
+   ![Test connection and set the default replication profile for your organization](assets/chlimage_1-54.png)
 
 1. When the replication rest completes, check for a success message at the end of the test results.
 
@@ -148,7 +148,7 @@ Flow of data when AEM Assets and Creative Cloud are integrated
 1. Select the folder and click **Share** ![assets_share](assets/assets_share.png).
 1. From the menu, select **[!UICONTROL Adobe Marketing Cloud]** and the click **[!UICONTROL Share]**. A message notifies that the folder is shared with Marketing Cloud.
 
-   ![chlimage_1-295](assets/chlimage_1-295.png)
+   ![chlimage_1-55](assets/chlimage_1-55.png)
 
    >[!NOTE]
    >
@@ -158,6 +158,10 @@ Flow of data when AEM Assets and Creative Cloud are integrated
 1. You can also upload an asset in the replicated copy of the folder in Marketing Cloud. After it is processed, the asset appears in the shared folder in AEM Assets.
 
 ## Exchange assets between AEM Assets and Creative Cloud {#exchange-assets-between-aem-assets-and-creative-cloud}
+
+>[!CAUTION]
+>
+>The AEM to Creative Cloud Folder Sharing feature is deprecated. Customers are strongly advised to use newer capabilities, like [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) or [AEM Desktop App](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Learn more in [AEM and Creative Cloud Integration Best Practices](/help/assets/aem-cc-integration-best-practices.md).
 
 AEM Assets lets you share folders containing assets with Adobe Creative Cloud users.
 

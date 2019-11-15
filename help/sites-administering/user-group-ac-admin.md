@@ -7,7 +7,7 @@ uuid: 26d7bb25-5a38-43c6-bd6a-9ddba582c60f
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: cc0637ef-4a9e-454f-899d-655c9caebe2b
+discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 ---
 
@@ -96,7 +96,7 @@ The list of access rights applicable for the subject is constructed from:
 * the rights that you assign directly to the user account
 * plus all rights assigned to any of the groups that the user belongs to
 
-![chlimage_1-307](assets/chlimage_1-307.png)
+![chlimage_1-56](assets/chlimage_1-56.png)
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ When CRX handles the request it compares the access request from the subject wit
 
 So if Linda requests to update the `/features` node in the following repository structure:
 
-![chlimage_1-308](assets/chlimage_1-308.png)
+![chlimage_1-57](assets/chlimage_1-57.png)
 
 ### Order of Precedence {#order-of-precedence}
 
@@ -211,7 +211,7 @@ You must be logged into the appropriate workspace, then you can access the dialo
 * the **User Administration** link on the Main Console of CRX
 * the **Security** menu of the CRX Explorer
 
-![chlimage_1-309](assets/chlimage_1-309.png)
+![chlimage_1-58](assets/chlimage_1-58.png)
 
 **Properties**
 
@@ -335,7 +335,7 @@ You must be logged into the appropriate workspace, then you can access the dialo
 * the **Group Administration** link on the Main Console of CRX
 * the **Security** menu of the CRX Explorer
 
-![chlimage_1-47](assets/chlimage_1-47.jpeg)
+![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
 **Properties**
 
