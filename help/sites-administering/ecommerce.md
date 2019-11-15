@@ -17,9 +17,9 @@ docset: aem65
 
 * [Concepts](/help/sites-administering/concepts.md)
 * [Administering (generic)](/help/sites-administering/generic.md)
-* [SAP Commerce Cloud](/help/sites-administering/hybris.md)
-* [Salesforce Commerce Cloud](/help/sites-administering/demandware.md)
-* [Magento](/help/sites-administering/magento.md)
+* [SAP Commerce Cloud](/help/sites-deploying/hybris.md)
+* [Salesforce Commerce Cloud](/help/sites-deploying/demandware.md)
+* [Magento](/help/sites-deploying/magento.md)
 
 Adobe provides two versions of the Commerce Integration Framework:
 
