@@ -268,5 +268,5 @@ The Find and Replace feature allows you to search for (and replace) any string o
 
    You can also tap Replace all to replace all the matches in a one go.
 
-   Find & Replace also includes a powerful regular expression search. To use regex in your search, select **[!UICONTROL Reg ex]** and then tap **[!UICONTROL Find]** or **[!UICONTROL Replace]**. **[!UICONTROL]**
+   Find & Replace also includes a powerful regular expression search. To use regex in your search, select **[!UICONTROL Reg ex]** and then tap **[!UICONTROL Find]** or **[!UICONTROL Replace]**.
 

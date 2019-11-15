@@ -346,7 +346,7 @@ You can add dynamic tables in Interactive Communication using layout fragments. 
             * **[!UICONTROL Data model object]**: A form data model property's value is populated in the field. Alternatively, select the **Data Sources** tab and drag-and-drop the property to the field.
 
         * **[!UICONTROL Data Model Object]**: The form data model property whose value is populated in the field.
-        * **[!UICONTROL Default Value]**: Default value ensures that the field is not empty when there is no value provided by the specified data model object. The default value is prepopulated in the field. **[!UICONTROL]**
+        * **[!UICONTROL Default Value]**: Default value ensures that the field is not empty when there is no value provided by the specified data model object. The default value is prepopulated in the field.
 
         * **[!UICONTROL Editable By Agent]**: Select to allow the agent to edit the value in the field in the Agent UI.
 
