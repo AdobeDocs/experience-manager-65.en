@@ -81,7 +81,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. Are there any limitations regarding using hidden subforms?
 
-   Answer: A hidden subform** **with complex hierarchy that is split across pages causes layout issues. A workaround is to mark the subform initially visible and then hide it in an initialize script based on some logic or data.
+   Answer: A hidden subform with complex hierarchy that is split across pages causes layout issues. A workaround is to mark the subform initially visible and then hide it in an initialize script based on some logic or data.
 
 1. Why some text are truncated or are displayed incorrectly in HTML5?
 

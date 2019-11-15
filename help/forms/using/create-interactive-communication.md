@@ -29,7 +29,7 @@ The following are the prerequisites for creating an Interactive Communication:
 ## Create Interactive Communication {#createic}
 
 1. Log in to the AEM author instance and navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Tap **[!UICONTROL Create]** **and select **[!UICONTROL Interactive Communication]**. Create Interactive Communication page appears.
+1. Tap **[!UICONTROL Create]** and select **[!UICONTROL Interactive Communication]**. Create Interactive Communication page appears.
 
    ![create-interactive-communication](assets/create-interactive-communication.png)
 
@@ -477,7 +477,7 @@ To add button and define rules on it:
 1. In the **When** section, select **clicked** from the state of the button drop-down list.
 1. In the **Then** section:
 
-    1. Select an action from the drop-down list. For example, select **Navigate** **to** as the action type.
+    1. Select an action from the drop-down list. For example, select **Navigate to** as the action type.
 
     1. Specify the URL of the Interactive Communication, adaptive form, an asset, or a web page. For example, specify the URL in the following format to navigate to another Interactive Communication: https://&lt;server-name&gt;:&lt;port&gt;/editor.html/content/forms/af/&lt;Interactive Communication name&gt;/channels/&lt;channel name - print or web&gt;.html
     1. Specify the option to open the asset in same tab, new tab, or new window.

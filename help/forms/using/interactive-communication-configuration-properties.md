@@ -30,7 +30,7 @@ The configuration properties include:
 
 ## Document Fragments Configuration {#document-fragments-configuration}
 
-Tap **Document Fragments** **Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for document fragments.
+Tap **Document Fragments configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for document fragments.
 
 <table>
  <tbody> 
@@ -76,7 +76,7 @@ Tap **Document Fragments** **Configuration** on the **Adobe Experience Manager W
 
 ## Create Correspondence Configuration {#create-correspondence-configuration}
 
-Tap **Create Correspondence** **Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Agent UI.
+Tap **Create Correspondence Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Agent UI.
 
 <table>
  <tbody> 

@@ -37,7 +37,7 @@ Once your AEM Forms is configured, map the data XML and attachments from the sub
 
     * **Name of the data xml parameter** (mandatory): Specify the XML property file of the AEM Forms on JEE process that needs to process the submitted data. The default value is **dataxml**.
     
-    * **Name of the file attachments parameter **(optional):** **Specify the list of document objects that the AEM Forms on JEE process needs to process. The default value is **fileAttachmentsList**.
+    * **Name of the file attachments parameter** (optional): Specify the list of document objects that the AEM Forms on JEE process needs to process. The default value is **fileAttachmentsList**.
 
 1. Review the settings and click **Save**.
 
