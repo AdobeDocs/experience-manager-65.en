@@ -3,12 +3,14 @@ title: Working with Logs
 seo-title: Working with Logs
 description: Learn how to troubleshoot AEM by working with logs.
 seo-description: Learn how to troubleshoot AEM by working with logs.
-uuid: b64e0b25-5228-4c2f-9cc1-dde524134026
+uuid: af8b7f50-c8d4-4760-9f00-3feb0b79ee4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: b4c1cb82-865b-48dd-b5c0-946e6610ce8e
+discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
+docset: aem65
+
 ---
 
 # Working with Logs{#working-with-logs}
@@ -49,7 +51,7 @@ The log levels are as follows:
 
 ## Verbose Option Used for Troubleshooting {#verbose-option-used-for-troubleshooting}
 
-When you start CRX, you can add the -v (verbose) option to the command line as in: ``
+When you start CRX, you can add the -v (verbose) option to the command line as in:
 
 ` java -jar crx-<*version*>-<*edition*>.jar -v`
 
