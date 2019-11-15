@@ -99,7 +99,7 @@ The **[!UICONTROL Build Form]** tab lists form items that you use in your folder
 
 To edit the properties of form items, tap/click the component and edit all or a subset of the following properties in the **[!UICONTROL Settings]** tab.
 
-**[!UICONTROL Field Label]**:** **The name of the metadata property that is displayed on the properties page for the folder.
+**[!UICONTROL Field Label]**: The name of the metadata property that is displayed on the properties page for the folder.
 
 **[!UICONTROL Map to Property]**: This property specifies the relative path of the folder node in the CRX repository where it is saved. It starts with "**./**", which indicates that the path is under the folder's node.
 
