@@ -1392,7 +1392,7 @@ Verify a digital signature by using the Signature Service API (Java):
 
    Include client JAR files, such as adobe-signatures-client.jar, in your Java project’s classpath.
 
-1. [Create a Signature client]
+1. Create a Signature client
 
     * Create a `ServiceClientFactory` object that contains connection properties.
     * Create a `SignatureServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.

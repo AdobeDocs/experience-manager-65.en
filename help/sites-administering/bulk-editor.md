@@ -3,12 +3,14 @@ title: The Bulk Editor
 seo-title: The Bulk Editor
 description: Learn how to use the Bulk Editor.
 seo-description: Learn how to use the Bulk Editor.
-uuid: 65158ea4-d0fb-4992-99c6-d4b4fa4c87d2
+uuid: 5f5e4190-d9b2-40a6-8cf4-4b7aebe35ad3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 4da555b4-7fb2-4d55-b29f-8bd21f474c1a
+discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
+docset: aem65
+
 ---
 
 # The Bulk Editor{#the-bulk-editor}
@@ -24,11 +26,11 @@ The Bulk Editor allows for very efficient editing when the visual page context i
 >
 >You can also import content into the repository, but by default this is disabled for the Bulk Editor as available in the **Tools** console.
 
-This section describes how to work with the bulk editor in the **Tools** console. Typically, administrators use the bulk editor to search and edit multiple items. This is done by populating the table using a GQL query and then by selecting the content items to work on. Authors generally use the bulk editor as part of a customized bulk editor application accessible through the [product listing](/help/sites-authoring/default-components.md) component.
+This section describes how to work with the bulk editor in the **Tools** console. Typically, administrators use the bulk editor to search and edit multiple items. This is done by populating the table using a GQL query and then by selecting the content items to work on. Authors generally use the bulk editor as part of a customized bulk editor application accessible through the [product listing](/help/sites-authoring/default-components.md#productlist) component.
 
 >[!CAUTION]
 >
->With the [deprecation of the Classic UI](/help/release-notes/deprecated-removed-features.md) in AEM 6.5, the Bulk Editor has also been deprecated and thus Adobe does not plan to further enhance the Bulk Editor.
+>With the [deprecation of the Classic UI](/help/release-notes/deprecated-removed-features.md) in AEM 6.4, the Bulk Editor has also been deprecated and thus Adobe does not plan to further enhance the Bulk Editor.
 
 ## Example Use Case for the Bulk Editor {#example-use-case-for-the-bulk-editor}
 
@@ -39,11 +41,11 @@ An example to illustrate such a use case is included in the Geometrixx web site:
 1. Navigate to the **Support** page and then to the **Customer Service Satisfaction** survey.
 1. **Edit** the **Start of Form** paragraph. In the dialog click the **Advanced** tab, expand the **Action Configuration**, then click **View Data...**.
 
-   ![custsatsurvey](assets/custsatsurvey.png)
+   ![](assets/custsatsurvey.png)
 
 1. The Bulk Editor is fully customizable., though in this example the bulk editor does not allow users to edit the content, but only lets them export the information to a spreadsheet.
 
-   ![bulkeditor](assets/bulkeditor.png)
+   ![](assets/bulkeditor.png)
 
 ## How to Use the Bulk Editor {#how-to-use-the-bulk-editor}
 
@@ -93,17 +95,16 @@ To use the bulk editor to edit multiple items simultaneously:
 
    For example:
 
-   ![searchfilter](assets/searchfilter.png)
+   ![](assets/searchfilter.png)
 
 1. Click **Search**. The Bulk Editor displays the results.
-
    For the example above, all the pages that meet your search criteria are returned and displayed with the requested columns.
 
-   ![chlimage_1-238](assets/chlimage_1-238.png)
+   ![](assets/chlimage_1-39.png)
 
 1. Make any changes you need by double-clicking in a cell.
 
-   ![srchresultedit](assets/srchresultedit.png)
+   ![](assets/srchresultedit.png)
 
 1. Click **Save** to save your changes (the **Save** button will be activated once you have edited a cell).
 
@@ -131,12 +132,12 @@ To export content:
    >
    >By default, changes are encoded in [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252) (also known as CP-1252). You can check UTF-8 to export the changes in UTF-8.
 
-   ![srchrsesultexport](assets/srchrsesultexport.png)
+   ![](assets/srchrsesultexport.png)
 
 1. Select the location and confirm that you want to download the file.
 1. After you download the file, you can open it from your spreadsheet program, for example, Microsoft Excel. The spreadsheet program imports the file and converts it to a spreadsheet format.
 
-   ![exportinexcel](assets/exportinexcel.png)
+   ![](assets/exportinexcel.png)
 
 ### Importing Content {#importing-content}
 
@@ -150,9 +151,6 @@ To import content:
 
 1. Open the Bulk Editor.
 1. Add `?hib=false` to the URL, e.g.:
-
-   `http://localhost:4502/etc/importers/bulkeditor.html?hib=false`
-
+   `https://localhost:4502/etc/importers/bulkeditor.html?hib=false`
 1. Click **Import**.
 1. Select the `.tsv` file. The data are imported into the repository.
-

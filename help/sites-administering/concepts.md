@@ -3,12 +3,13 @@ title: Concepts
 seo-title: Concepts
 description: General Concepts of eCommerce with AEM.
 seo-description: General Concepts of eCommerce with AEM.
-uuid: 1e3f0518-7797-48a7-bac7-0dc3ddaa0385
+uuid: 9a4cc154-d82b-43e0-a66c-3edf059e8b75
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: e-commerce
 content-type: reference
-discoiquuid: c8ef374a-38d8-4cd4-a86e-69f0a5b4c2bc
+discoiquuid: 6d595c46-b04e-400b-a014-fbecd2010f5f
+docset: aem65
 ---
 
 # Concepts{#concepts}
@@ -639,7 +640,7 @@ Single-sign-on (SSO) is provided, so that authors are known in both AEM and the 
 
 Transaction data from the eCommerce engine is combined with personal information about the shopper. AEM uses some of this data as profile data. A form's action in AEM writes information back to the eCommerce engine.
 
-There is a page which allows you to easily manage your account informations. You can access it by clicking **My Account** at the top of a geometrixx page, or by navigating to `/content/geometrixx-outdoors/en/user/account.html`.
+There is a page which allows you to easily manage your account information. You can access it by clicking **My Account** at the top of a geometrixx page, or by navigating to `/content/geometrixx-outdoors/en/user/account.html`.
 
 ![chlimage_1-176](assets/chlimage_1-176.png)
 
@@ -853,7 +854,7 @@ The eCommerce then manages the checkout process with input from the AEM forms.
 
 Payment details, including credit card information, are often managed by the eCommerce engine. AEM forwards such transactional information to the engine (from where it is then forwarded to a payment processing service).
 
-Payment Card Industry (PCI) complicance can be achieved.
+Payment Card Industry (PCI) compliance can be achieved.
 
 ### Confirmation of Order {#confirmation-of-order}
 

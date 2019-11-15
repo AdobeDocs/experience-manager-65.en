@@ -3,12 +3,13 @@ title: Configure AEM Assets integration with Experience Cloud and Creative Cloud
 seo-title: Configure AEM Assets integration with Marketing Cloud and Creative Cloud
 description: Learn how to configure AEM Assets integration with Experience Cloud and Creative Cloud.
 seo-description: Learn how to configure AEM Assets integration with Experience Cloud and Creative Cloud.
-uuid: 73f90846-71d0-4f72-8784-dc877e0e9c41
-contentOwner: asgupta
+uuid: ec36ea0e-607f-4c73-89df-e095067fccd4
+contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: c2f190af-656e-4435-9f44-2698d41c4ad1
+docset: aem65
 ---
 
 # Configure AEM Assets integration with Experience Cloud and Creative Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
@@ -18,10 +19,14 @@ If you are an Adobe Experience Cloud customer, you can synchronize your assets w
 The workflow to set up this integration is:
 
 1. Create an authentication in Adobe I/O using a public gateway and get an application ID.
-1. Create a profile on your AEM Assets instance using the appplication ID.
+1. Create a profile on your AEM Assets instance using the application ID.
 1. Use this configuration to synchronize your assets within AEM Assets with Creative Cloud.
 
 At the backend, the AEM server authenticates your profile with the gateway and then synchronizes the data between AEM Assets and Experience Cloud.
+
+>[!CAUTION]
+>
+>AEM to Creative Cloud Folder Sharing feature is deprecated in AEM Assets. Learn more and find replacements in [AEM and Creative Cloud Integration Best Practices](/help/assets/aem-cc-integration-best-practices.md).
 
 ![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-287.png)
 
@@ -33,7 +38,7 @@ Flow of data when AEM Assets and Creative Cloud are integrated
 
 >[!CAUTION]
 >
->Adobe Maketing Cloud has been rebranded as Adobe Experience Cloud. The procedures below still mention Marketing Cloud in order to reflect the current interface. These mentions will be changed at a later date.
+>Adobe Marketing Cloud has been rebranded as Adobe Experience Cloud. The procedures below still mention Marketing Cloud in order to reflect the current interface. These mentions will be changed at a later date.
 
 ## Create an application {#create-an-application}
 
@@ -80,7 +85,7 @@ Flow of data when AEM Assets and Creative Cloud are integrated
 
    >[!CAUTION]
    >
-   >Due to rebranding, if you entered the Tenant URL as **https://&lt;tenant_id&gt;.marketing.adobe.com** you need to change it to **https://&lt;tenant_id&gt;.experiencecloud.adobe.com.** In order to do this, follow the steps below:
+   >Due to rebranding, if you entered the Tenant URL as `https://<tenant_id>.marketing.adobe.com` you need to change it to `https://<tenant_id>.experiencecloud.adobe.com.` In order to do this, follow the steps below:
    >
    >1. Navigate to **Tools &gt; Cloud Services &gt; Legacy Cloud Services**.
    >1. Under Adobe Marketing Cloud, click **Show Configurations**.
@@ -174,5 +179,5 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 
 >[!MORELIKETHIS]
 >
->* [AEM and Creative Cloud Integration Best Practices](../assets/aem-cc-integration-best-practices.md)
->* [AEM to Creative Cloud Folder Sharing Best Practices](../assets/aem-cc-folder-sharing-best-practices.md)
+>* [AEM and Creative Cloud Integration Best Practices](/help/assets/aem-cc-integration-best-practices.md)
+>* [AEM to Creative Cloud Folder Sharing Best Practices](/help/assets/aem-cc-folder-sharing-best-practices.md)
