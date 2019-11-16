@@ -3,12 +3,14 @@ title: Analytics with External Providers
 seo-title: Analytics with External Providers
 description: Learn about Analytics with External Providers.
 seo-description: Learn about Analytics with External Providers.
-uuid: bea8ec38-a190-46f9-a5fa-8d65321fdf20
+uuid: 31a773ca-901e-45f2-be8f-951c26f9dbc5
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: bf8fd156-4be9-43f8-8948-cf7f91c25f1b
+discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
+docset: aem65
+
 ---
 
 # Analytics with External Providers{#analytics-with-external-providers}
@@ -50,10 +52,10 @@ Such snippets enable data to be collected and reports generated. The actual data
 >[!CAUTION]
 >
 >The Geometrixx-Outdoors demo site is configured so that the attributes provided in the Page Properties are appended to the html source code (just above the `</html>` endtag) in the corresponding `js` script.
->
+
 >
 >If your own `/apps` do not inherit from the default page component ( `/libs/foundation/components/page`) you (or your developers) have to make sure that the corresponding `js` scripts are included, for example by either including `cq/cloudserviceconfigs/components/servicescomponents`, or using a similar mechanism.
->
+
 >
 >Without this, none of the services (Generic, Analytics, Target, etc) will work.
 
@@ -67,15 +69,15 @@ For the basic configuration:
 
 1. Double-click on **Generic Analytics Snippet** to open the page:
 
-   ![analytics_genericoverview](assets/analytics_genericoverview.png)
+   ![](assets/analytics_genericoverview.png)
 
 1. Click on the + to add a new configuration using the dialog; at a minimum assign a name, for example google analytics:
 
-   ![analytics_addconfig](assets/analytics_addconfig.png)
+   ![](assets/analytics_addconfig.png)
 
 1. Click **Create**, the snippet dialog will open immediately - paste the appropriate javascript snippet into the field:
 
-   ![analytics_snippet](assets/analytics_snippet.png)
+   ![](assets/analytics_snippet.png)
 
 1. Click **OK** to save.
 
@@ -89,13 +91,13 @@ Having created the service configuration you now need configure the required pag
 
 1. Click **Add Service**, then select the required service; for example the **Generic Analytics Snippet**:
 
-   ![analytics_selectservice](assets/analytics_selectservice.png)
+   ![](assets/analytics_selectservice.png)
 
 1. Click **OK** to save.
 
 1. You will be returned to the **Cloud Services** tab. The **Generic Analytics Snippet** is now listed with the message `Configuration reference missing`. Use the drop down list to select your specific service instance; for example google-analytics:
 
-   ![analytics_selectspecificservice](assets/analytics_selectspecificservice.png)
+   ![](assets/analytics_selectspecificservice.png)
 
 1. Click **OK** to save.
 
@@ -106,4 +108,3 @@ Having created the service configuration you now need configure the required pag
    >[!NOTE]
    >
    >If the configuration is attached to a page that has child pages, the service is inherited by those as well.
-

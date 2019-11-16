@@ -13,14 +13,14 @@ docset: aem65
 
 ---
 
-# Connecting to Adobe Analytics and Creating Frameworks{#connecting-to-adobe-analytics-and-creating-frameworks}
+# Connecting to Adobe Analytics and Creating Frameworks {#connecting-to-adobe-analytics-and-creating-frameworks}
 
 To track web data from your AEM pages in Adobe Analytics, create a Adobe Analytics Cloud Services configuration and a Adobe Analytics framework:
 
 * **Adobe Analytics Configuration:** The information about your Adobe Analytics account. The Adobe Analytics configuration enables AEM to connect to Adobe Analytics. Create an Adobe Analytics configuration for each account that you use.
 * **Adobe Analytics Framework:** A set of mappings between Adobe Analytics report suite properties and CQ variables. Use a framework to configure how your website data populates your Adobe Analytics reports. Frameworks are associated with a Adobe Analytics configuration. You can create multiple frameworks for each configuration.
 
-When you assocate a web page with a framework, the framework performs tracking for that page and the descendents of that page. Page views can then be retrieved from Adobe Analytics and displayed in the Sites console.
+When you associate a web page with a framework, the framework performs tracking for that page and the descendants of that page. Page views can then be retrieved from Adobe Analytics and displayed in the Sites console.
 
 ## Prerequisites {#prerequisites}
 

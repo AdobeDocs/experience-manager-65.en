@@ -15,9 +15,9 @@ docset: aem65
 
 ## Introduction {#introduction}
 
-With the newewst version of AEM, the select all button has been extended to all views: List, Column and Card view. The select all button now selects all** **content in a given folder or collection and not just the Assets and Pages that are loaded and visible in the client browser.
+With the newest version of AEM, the select all button has been extended to all views: List, Column and Card view. The select all button now selects all content in a given folder or collection and not just the Assets and Pages that are loaded and visible in the client browser.
 
-Key actions have been enabled for the bulk operation: **Move**, **Delete** and **Copy**. A new dialog will let customers know what are the actuions that bulk processing is unavailable for.
+Key actions have been enabled for the bulk operation: **Move**, **Delete** and **Copy**. A new dialog will let customers know what are the actions that bulk processing is unavailable for.
 
 ## How To Use {#how-to-use}
 

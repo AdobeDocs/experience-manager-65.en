@@ -41,13 +41,13 @@ The benefits of user sync using Sling distribution, compared to traditional repl
 
 >[!NOTE]
 >
->If sessions are required, it is recommended to either use an SSO solution or use sticky session and have customers log in if they get switched to another publsher.
+>If sessions are required, it is recommended to either use an SSO solution or use sticky session and have customers log in if they get switched to another publisher.
 
 >[!CAUTION]
 >
 >Synchronization of the ***administrators** *group is not supported, even when user sync is enabled. Instead, a failure to 'import the diff' will be logged in the error log.
 >
->Therefore, when the deployment is a publish farm, if a user is added to or removed from the ***administrators** *group, the modification must be manually made on each publish instance.
+>Therefore, when the deployment is a publish farm, if a user is added to or removed from the ***administrators** group, the modification must be manually made on each publish instance.
 
 ## Enable User Sync {#enable-user-sync}
 

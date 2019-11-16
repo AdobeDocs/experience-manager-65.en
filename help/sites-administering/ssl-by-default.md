@@ -22,21 +22,21 @@ You can start configuring SSL By Default by clicking the relevant Inbox message 
 
 In the list, select and open the **Configure HTTPS** alert:
 
-![chlimage_1-341](assets/chlimage_1-341.png)
+![chlimage_1-103](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
 >If the **Configure HTTPS** alert is not present in the Inbox, you can navigate directly to the HTTPS Wizard by going to *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
-A service user called **ssl-service** has been created for this feature. Once you open the alert, you will be guided through the follwing configuration wizard:
+A service user called **ssl-service** has been created for this feature. Once you open the alert, you will be guided through the following configuration wizard:
 
 1. First, set up the Store Credentials. These are the credentials for the **ssl-service** system user's key store that will contain the private key and trust store for the HTTPS listener.
 
-   ![chlimage_1-342](assets/chlimage_1-342.png)
+   ![chlimage_1-104](assets/chlimage_1-104.png)
 
 1. Once you enter the credentials, click **Next** in the upper right corner of the page. Then, upload the associated private key and certificate for the SSL connection.
 
-   ![chlimage_1-343](assets/chlimage_1-343.png)
+   ![chlimage_1-105](assets/chlimage_1-105.png)
 
    >[!NOTE]
    >

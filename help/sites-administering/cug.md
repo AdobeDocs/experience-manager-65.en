@@ -3,12 +3,13 @@ title: Creating a Closed User Group
 seo-title: Creating a Closed User Group
 description: Learn how to create a Closed User Group.
 seo-description: Learn how to create a Closed User Group.
-uuid: 03d5fc69-6e4b-41c1-88c9-7454250c29ac
+uuid: dc3c7dbd-2e86-43f9-9377-3b75053203b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: ba73e267-598d-4c70-a1a8-71bcfcfbf9e5
+discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
+docset: aem65
 ---
 
 # Creating a Closed User Group{#creating-a-closed-user-group}

@@ -38,7 +38,6 @@ In order to redirect the logging output to a separate log file, you'll need to c
     * **Log Level:** Information
     * **Log File:** logs/useraudit.log
     * **Message Pattern:** level default
-
     * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
    In order to enter both loggers into the **Logger** field, you need to enter the name of the first, then create another field by pressing the "+" button and entering the name of the second logger.
