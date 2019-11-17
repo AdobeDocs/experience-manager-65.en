@@ -3,12 +3,13 @@ title: User Administration and Security
 seo-title: User Administration and Security
 description: Learn about User Administration and Security in AEM.
 seo-description: Learn about User Administration and Security in AEM.
-uuid: f14619a1-d21f-465c-b79b-c98da1f1c016
+uuid: 4512c0bf-71bf-4f64-99f6-f4fa5a61d572
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: a67b9e56-944d-424d-a64a-025f369faa5b
+discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
+docset: aem65
 ---
 
 # User Administration and Security{#user-administration-and-security}
@@ -267,7 +268,7 @@ When you hover over the asterisk or exclamation mark, a tooltip provides more de
  </tbody>
 </table>
 
-![chlimage_1-348](assets/chlimage_1-348.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 >[!NOTE]
 >
@@ -541,7 +542,7 @@ To add members to a group at in a certain path:
 
 1. Navigate to the path you want to add permissions to and click **Details**. The lower part of the details window provides information about who has permissions for that page.
 
-   ![chlimage_1-349](assets/chlimage_1-349.png)
+   ![chlimage_1-113](assets/chlimage_1-113.png)
 
 1. Select the check box in the **Member** column for the members you want to have permissions to that path. Clear the check box for member you want to remove permissions for. A red triangle appears in the cell you made changes to.
 1. Click **OK** to save your changes.
@@ -588,7 +589,7 @@ To remove members from a group at a certain path:
 
 1. Navigate to the path you want to remove permissions to and click **Details**. The lower part of the details window provides information about who has permissions for that page.
 
-   ![chlimage_1-350](assets/chlimage_1-350.png)
+   ![chlimage_1-114](assets/chlimage_1-114.png)
 
 1. Select the check box in the **Member** column for the members you want to have permissions to that path. Clear the check box for member you want to remove permissions for. A red triangle appears in the cell you made changes to.
 1. Click **OK** to save your changes.
@@ -600,6 +601,10 @@ When the deployment is a [publish farm](/help/sites-deploying/recommended-deploy
 To learn about user sync and how to enable it, see [User Sychronization](/help/sites-administering/sync.md).
 
 ## Managing Permissions {#managing-permissions}
+
+>[!NOTE]
+>
+>Adobe has introduced a new Touch UI based principal view for permissions management. For more details on how to use it, see [this page](/help/sites-administering/touch-ui-principal-view.md).
 
 This section describes how to set permissions, including replication privileges.
 
@@ -686,7 +691,7 @@ To impersonate an existing user:
 1. Click the **Impersonators** tab.
 1. Click the user you want to be able to impersonate the selected user. Drag the user (who will impersonate) from the list to the Impersonate pane. The name appears in the list.
 
-   ![chlimage_1-351](assets/chlimage_1-351.png)
+   ![chlimage_1-115](assets/chlimage_1-115.png)
 
 1. Click **Save**.
 
