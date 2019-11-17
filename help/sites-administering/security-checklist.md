@@ -3,15 +3,16 @@ title: Security Checklist
 seo-title: Security Checklist
 description: Learn about the various security considerations when configuring and deploying AEM.
 seo-description: Learn about the various security considerations when configuring and deploying AEM.
-uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
+uuid: 8e293316-4177-4271-87c6-9dc1a2e85a07
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: a91e1264-8441-42f8-aa83-1d9c983d214a
+discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
+docset: aem65
 ---
 
-# Security Checklist{#security-checklist}
+# Security Checklist {#security-checklist}
 
 This section deals with various steps that you should take to ensure that your AEM installation is secure when deployed. The checklist is meant to be applied from top to bottom.
 
@@ -88,7 +89,7 @@ To do this:
 1. Navigate to the web console at `<server>:<port>/system/console/configMgr`.
 1. Navigate to** Apache Felix OSGi Management Console** and change the **user name** and **password**.
 
-   ![chlimage_1-166](assets/chlimage_1-166.png)
+   ![chlimage_1-3](assets/chlimage_1-3.png)
 
 1. Click **Save**.
 
@@ -134,7 +135,7 @@ All example content and users (e.g. the Geometrixx project and its components) s
 
 >[!NOTE]
 >
->The sample We.Retail applications are removed if this instance is running in [Production Ready Mode](/help/sites-administering/production-ready.md). If, for any reason, this is not the case, you can uninstall the sample content by going to Package Manager, then serarching for and uninstalling all We.Retail packages. Fore more info, see [How to Work With Packages](package-manager.md).
+>The sample We.Retail applications are removed if this instance is running in [Production Ready Mode](/help/sites-administering/production-ready.md). If, for any reason, this is not the case, you can uninstall the sample content by going to Package Manager, then searching for and uninstalling all We.Retail packages. For more info, see [Work With Packages](package-manager.md).
 
 ### Check if the CRX development bundles are present {#check-if-the-crx-development-bundles-are-present}
 
@@ -209,14 +210,14 @@ Some OSGI settings are set by default to allow easier debugging of the applicati
 
 For each of the following services the specified settings need to be changed:
 
-* [Adobe Granite HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md):
+* [Adobe Granite HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager):
 
     * enable **Minify** (to remove CRLF and whitespace characters).
     * enable **Gzip** (to allow files to be gzipped and accessed with one request).
     * disable **Debug**
     * disable **Timing**
 
-* [Day CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md):
+* [Day CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md#day-cq-wcm-debug-filter):
 
     * uncheck **Enable**
 
@@ -224,11 +225,11 @@ For each of the following services the specified settings need to be changed:
 
     * on publish only, set **WCM Mode** to "disabled"
 
-* [Apache Sling Java Script Handler](/help/sites-deploying/osgi-configuration-settings.md):
+* [Apache Sling Java Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler):
 
     * disable **Generate Debug Info**
 
-* [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md):
+* [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-jsp-script-handler):
 
     * disable **Generate Debug Info**
     * disable **Mapped Content**
@@ -294,9 +295,9 @@ To help prevent DoS misuse you can:
 
       **JSON Max results** ( `json.maximumresults`)
 
-      in the configuration for the [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md). When this limit is exceeded the rendering will be collapsed. The default value for Sling within AEM is `200`.
+      in the configuration for the [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). When this limit is exceeded the rendering will be collapsed. The default value for Sling within AEM is `200`.
 
-    * As a preventive measure disable the other default renderers (HTML, plain text, XML). Again by configuring the [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md).
+    * As a preventive measure disable the other default renderers (HTML, plain text, XML). Again by configuring the [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet).
 
    >[!CAUTION]
    >
@@ -322,6 +323,14 @@ In order to mitigate this, please follow the below steps:
 1. After you click on the entry, disable the **Advanced Search Require** in the following window.
 
 1. Click **Save**.
+
+**Mitigate Against DoS Caused by Asset Download Servlet**
+
+The default Asset Download Servlet in AEM allows authenticated users to issue arbitrarily-large, concurrent download requests for creating ZIP files of assets visible to them that can overload the server and/or network.
+
+To mitigate potential DoS risks caused by this feature, `AssetDownloadServlet` OSGi component is disabled by default for publish instances on latest AEM versions.
+
+If your setup requires that the Asset Download Server be enabled, please see [this article](/help/assets/download-assets-from-aem.md) for more information.
 
 ### Disable WebDAV {#disable-webdav}
 
@@ -351,13 +360,13 @@ WebDAV should be disabled on both the author and publish environments. This can 
 
 ### Verify That You Are Not Disclosing Personally Identifiable Information In the Users Home Path {#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path}
 
-It is important you protect your users by making sure that you do not expose any personally indetifiable information in the repository users home path.
+It is important you protect your users by making sure that you do not expose any personally identifiable information in the repository users home path.
 
-Since AEM 6.1, the way user (also known as authorizable) ID node names are stored is changed with a new implementation of the `AuthorizableNodeName` interface. The new interface will no longer expose the user ID in the node name, but will generate a random name instead.
+Since AEM 6.1, the way user (also known as authorizable) ID node names are stored is changed with a new implementation of the `AuthorizableNodeName` interface. The new interface will no longer expose the user ID in the node name but will generate a random name instead.
 
 No configuration needs to be performed in order to enable it, as this is now the default way of generating authorizable IDs in AEM.
 
-Although not recommended, you can disable it in case you need the old implementation for backwards compatibility with your exsiting applications. In order to do this, you need to:
+Although not recommended, you can disable it in case you need the old implementation for backward compatibility with your existing applications. In order to do this, you need to:
 
 1. Go to the Web Console and remove the** org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** entry from property **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
 
@@ -425,7 +434,7 @@ In AEM 6.2 and older versions, the keys are stored in the repository under the `
 
 The recommended way to securely replicate the keys across your instances is to only replicate this node. You can selectively replicate nodes via CRXDE Lite:
 
-1. Open CRXDE Lite by going to *https://&lt;serrveraddress&gt;:4502/crx/de/index.jsp*
+1. Open CRXDE Lite by going to *https://&lt;serveraddress&gt;:4502/crx/de/index.jsp*
 1. Select the `/etc/key` node.
 1. Go to the **Replication** tab.
 1. Press the **Replication** button.

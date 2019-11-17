@@ -3,12 +3,13 @@ title: Configure the Rich Text Editor
 seo-title: Configure the Rich Text Editor
 description: Learn to configure the AEM Rich Text Editor.
 seo-description: Learn to configure the AEM Rich Text Editor.
-uuid: 82d2fe41-676a-4a49-939f-13374b9d869f
+uuid: 4f87745e-586a-4cba-887b-391e37520ffc
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 9248d09c-b749-4aca-9167-1707c1dd8a53
+discoiquuid: 2cde81d3-5fc1-4a32-a307-7dc592f37162
+docset: aem65
 ---
 
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
@@ -21,19 +22,19 @@ The following workflow illustrates a recommended order of completing the RTE con
 
 ![Typical workflow to configure Rich Text Editor](assets/rte_workflow_v1.png)
 
-**Figure:** *Typical workflow to configure Rich Text Editor*
+Typical workflow to configure Rich Text Editor
 
 ## Understand Touch-enabled UI and Classic UI {#understand-touch-enabled-ui-and-classic-ui}
 
 The Touch-enabled UI is the standard UI for AEM. Adobe introduced Touch UI with [responsive design](/help/sites-authoring/responsive-layout.md) for authoring environment, in version 5.6. The Touch UI is designed for touch and desktop devices. The UI differs considerably from the original classic UI.
 
-![Rich Text Editor toolbar in Touch-enabled UI](assets/chlimage_1-404.png)
+![Rich Text Editor toolbar in Touch-enabled UI](assets/chlimage_1-35.png)
 
-**Figure:** *Rich Text Editor toolbar in Touch-enabled UI*
+Rich Text Editor toolbar in Touch-enabled UI
 
 ![Rich Text Editor toolbar in Classic UI](assets/rtedefault.png)
 
-**Figure:** *Rich Text Editor toolbar in Classic UI*
+Rich Text Editor toolbar in Classic UI
 
 **See also**:
 
@@ -92,11 +93,11 @@ Authors can create and edit textual content in AEM using the different modes of 
 
 ### Inline editing {#inline-editing}
 
-When opened (with a slow double-tap/click) the content can be edited within the page. A compact toolbar with basic options is presented.
+When opened (with a slow double-tap/click) the content can be edited within the page. A compact toolbar with very basic options is presented.
 
-![Inline editing with basic toolbar in Touch-enabled UI](assets/chlimage_1-405.png)
+![Inline editing with basic toolbar in Touch-enabled UI](assets/chlimage_1-36.png)
 
-**Figure:** *Inline editing with basic toolbar in Touch-enabled UI*
+Inline editing with basic toolbar in Touch-enabled UI
 
 In Classic UI, a slow double-click on the component allows inline editing and an orange outline highlights the content. If the Content Finder is open, a toolbar with the available RTE formatting options is displayed at the top of the window. If the Content Finder is not open, the formatting options are not displayed and you can do basic text edits only.
 
@@ -104,23 +105,23 @@ In Classic UI, a slow double-click on the component allows inline editing and an
 
 AEM components can be opened in full screen view that hides the page content and occupies the available screen. Consider full screen editing a detailed version of the inline editing as it offers the most editing options. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
 
-The dialog full screen mode provides, a detailed RTE toolbar and the options and the components that are available in the dialog mode. It is applicable only for a dialog that contains RTE alongside other components.
+In the dialog full screen mode, along with a detailed RTE toolbar, the options and components available in a dialog are also available. It is applicable only for a dialog that contains RTE alongside other components.
 
-![The detailed RTE toolbar when editing in full screen mode in Touch-enabled UI](assets/chlimage_1-406.png)
+![The detailed RTE toolbar when editing in full screen mode in Touch-enabled UI](assets/chlimage_1-37.png)
 
-**Figure:** *The detailed RTE toolbar when editing in full screen mode in Touch-enabled UI*
+The detailed RTE toolbar when editing in full screen mode in Touch-enabled UI
 
 ### Dialog editing {#dialog-editing}
 
-When a component is double-clicked in Classic UI, a dialog box opens for editing the contents. The dialog box opens on top of the existing page. In some specific scenarios, the dialog opens as a pop-up window. For example, when a Text component is part of a column in a multicolumn page layout and the area available for the dialog is less.
+When a component is double-clicked a dialog box opens for editing the contents. The dialog box opens on top of the existing page. In some specific scenarios, the dialog opens as a pop-up window. For example, when a Text component is part of a column in a multi-column page layout and the area available for the dialog is less.
 
 ![Dialog editing mode in Touch-enabled UI](assets/dialog_editing_modetouchui.png)
 
-**Figure:** *Dialog editing mode in Touch-enabled UI*
+Dialog editing mode in Touch-enabled UI
 
-![Dialog box in Classic UI that contains detailed toolbar for editing](assets/chlimage_1-407.png)
+![Dialog box in Classic UI that contains detailed toolbar for editing](assets/chlimage_1-38.png)
 
-**Figure:** *Dialog box in Classic UI that contains detailed toolbar for editing*
+Dialog box in Classic UI that contains detailed toolbar for editing
 
 ## About RTE plug-ins and the associated features {#aboutplugins}
 
@@ -128,10 +129,10 @@ The functionality is made available via a series of plug-ins, each with:
 
 * A `features` property:
 
-    * That is used to activate, or deactivate, basic functionality for that plug-in.
-    * That can be configured using a standardized procedure.
+    * Used to activate, or deactivate, basic functionality for that plug-in
+    * That can be configured using a standardized procedure
 
-* Where appropriate, more properties and options that require specialized configuration.
+* Where appropriate, additional properties and options requiring specialized configuration.
 
 Basic features of the RTE are activated, or deactivated, by the value of the `features` property on a node specific to the appropriate plug-in.
 
@@ -166,7 +167,7 @@ The following table lists the current plug-ins, showing:
   <tr>
    <td><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin">image</a></p> </td>
    <td><p>image</p> </td>
-   <td><p>Set some image properties such as alignment and alt text. Basic support to drag and drop images from Content Finder works without this plug-in.</p> <p><em>Note</em>: The authoring behavior may vary with the browser. For example, Mozilla Firefox provides re-sizing capabilities but Google Chrome does not.</p> </td>
+   <td><p>Basic image support (drag from content or Content Finder). Depending on the browser, the support has different behaviors for authors</p> </td>
   </tr>
   <tr>
    <td><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin">keys</a></p> </td>
@@ -280,7 +281,9 @@ Download this sample configuration to understand how to configure RTE. In this p
 
 >[!NOTE]
 >
->The [Core Components text component](https://helpx.adobe.com/experience-manager/core-components/using/text.html) allows template editors to configure many RTE plug-ins in the user interface as content policies, eliminating the need for technical configuration. Content policies can work with RTE user interface configurations as described. For more information, see the [RTE user interface settings and content polices](/help/sites-administering/rich-text-editor.md#rtecontentpolicies), [Create page templates](/help/sites-authoring/templates.md), and the [Core Components developer documentation](https://helpx.adobe.com/experience-manager/core-components/using/developing.html).
+>The [Core Components text component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) allows template editors to configure many RTE plugins in a GUI as content policies, eliminating the need for technical configuration. Content policies can work with RTE UI configurations as described in this document.
+>
+>For more information, see the [RTE UI settings and content polices](/help/sites-administering/rich-text-editor.md) section of this document as well as [Creating Page Templates](/help/sites-authoring/templates.md) and the [Core Components developer documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >
@@ -293,12 +296,14 @@ Download this sample configuration to understand how to configure RTE. In this p
 
 ## Configure RTE toolbar {#dialogfullscreen}
 
-AEM allows you to configure the UI for the RichText Editor differently for the different editing modes. The default settings are provided below. You can override these defaults based on your requirements.
+AEM allows you to configure the interface for the Rich Text Editor differently for the different editing modes. The default settings are provided below. You can override these defaults based on your requirements. You customize only the toolbar features that you want to provide to your authors. You need not specify all the toolbar configurations.
 
-For best authoring experience:
+For best authoring experience,
 
-* In a floating dialog, enable only those plug-ins that do not have a pop-up, as the floating dialog is smaller in size.
-* In full screen dialog, enable all the required plug-ins, even the plug-ins with larger pop-up, such as the `Paste` plug-in. Use the `dialogFullScreen` configuration described below.
+* enable only the plug-ins without pop-up for a floating dialog. Plug-ins without pop-up are smaller in size and are most suitable for floating dialog.
+* Enable the plug-ins with larger pop-up, such as the `Paste` plug-in, only in the full screen dialog mode or in full screen mode. Plug-ins with large pop-up need more screen real-estate to provide a good authoring experience.
+
+To configure the toolbar for `dialogFullScreen`, use the following sample configuration.
 
 ```java
 <uiSettings jcr:primaryType="nt:unstructured">
@@ -309,7 +314,7 @@ For best authoring experience:
       <popovers jcr:primaryType="nt:unstructured">
         <justify
           jcr:primaryType="nt:unstructured"
-          items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+          items="[justify#justifyleft,justify#justifycenter,justify#justifyright,justify#justifyjustify]"
           ref="justify"/>
         <lists
           jcr:primaryType="nt:unstructured"
@@ -323,7 +328,7 @@ For best authoring experience:
     </inline>
     <dialogFullScreen
       jcr:primaryType="nt:unstructured"
-      toolbar="[format#bold,format#italic,format#underline,justify#justifyleft,justify#justifycenter,justify#justifyright,lists#unordered,lists#ordered,lists#outdent,lists#indent,links#modifylink,links#unlink,table#createoredit,#paraformat,image#imageProps]">
+      toolbar="[format#bold,format#italic,format#underline,justify#justifyleft,justify#justifycenter,justify#justifyright,justify#justifyjustify,lists#unordered,lists#ordered,lists#outdent,lists#indent,links#modifylink,links#unlink,table#createoredit,#paraformat,image#imageProps]">
       <popovers jcr:primaryType="nt:unstructured">
         <paraformat
           jcr:primaryType="nt:unstructured"
@@ -339,21 +344,27 @@ For best authoring experience:
 </uiSettings>
 ```
 
-Different UI settings are used for the inline mode and full screen mode. The toolbar property is used to specify the buttons of the toolbar. For example, if the button is itself a feature (for example, `Bold`), it is specified as `PluginName#FeatureName` (for example, `links#modifylink`). If the button is a popover (containing some features of a plug-in), it is specified as `#PluginName` (for example, `#format`). Separators ( | ) between a group of buttons can be specified with '-'.
+Different UI settings are used for the inline mode and full screen mode. The toolbar property is used to specify the buttons of the toolbar.
 
-The pop-up node under inline or full-screen mode contains a list of the popovers being used. Each child node under the `popovers` node is named after the plug-in (for example, `format`). It has a property `items` containing a list of features of the plug-in (for example, `format#bold`).
+For example, if the button is itself a feature (for example, Bold), it is specified as `PluginName#FeatureName` (for example, `links#modifylink`).
+
+If the button is a popover (containing some features of a plug-in), it is specified as `#PluginName` (for example, `#format`).
+
+Separators ( | ) between a group of buttons can be specified with '-'.
+
+The pop-up node under inline or full-screen mode contains a list of the popovers being used. Each child node under the 'popovers' node is named after the plug-in (for example, format). It has a property 'items' containing a list of features of the plug-in (for example, format#bold).
 
 ## RTE user interface settings and content policies {#rtecontentpolicies}
 
-Administrators can control the RTE options using content policies, say instead of doing the configuration as described above. Content policies define the design properties of a component when used as part of an [editable template](../sites-authoring/templates.md). For example, if a text component that uses the RTE is used with an editable template, the content policy can define that the bold option be available and a few paragraph formatting options be available. Content policies are reusable and can be applied across multiple templates.
+Administrators can control the RTE options using content policies, say instead of doing the configuration as described above. Content policies define the design properties of a component when used as part of an [editable template](/help/sites-authoring/templates.md). For example, if a text component that uses the RTE is used with an editable template, the content policy can define that the bold option be available and a few paragraph formatting options be available. Content policies are reusable and can be applied across multiple templates.
 
-AEM 6.4 Service Pack 3 onwards, the available options in the RTE flow downstream from the user interface configurations to the content policies.
+The available options in the RTE flow downstream from the user interface configurations to the content policies.
 
 * User interface configuration settings define which options are available to the content policies.
 * If the user interface configuration of the RTE removed or doesn't enable an item, the content policy cannot configure it.
 * An author has access to only such functionality as is made available by the user interface configurations and the content policies.
 
-As an example, you can see the [Text Core Component documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
+As an example, you can see the [Text Core Component documentation](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Customize mapping between toolbar icons and commands {#iconstoolbar}
 
@@ -393,7 +404,10 @@ On a page, you can either include CoralUI 2 RTE clientlib or the CoralUI 3 RTE c
 
 >[!NOTE]
 >
->Adobe does not recommend the switching as a best practice. Switch to CoralUI 2 RTE as a last resort. Custom plug-ins for CoralUI 2 RTE work with CoralUI 3 RTE if the plug-ins do not depend on RTE internals, such as classes. If you are using custom plug-ins for CoralUI 3 RTE, use `rte.coralui3` library.
+>Adobe does not recommend it as a best practice. Switch to CoralUI 2 RTE as a last resort. Custom plugins for CoralUI 2 RTE work with CoralUI 3 RTE if the plugins do not depend on RTE internals, such as classes.
+>
+>If you are using custom plugins for CoralUI3 RTE, use `rte.coralui3` library.
+
 
 1. Overlay the node `/libs/cq/gui/components/authoring/editors/clientlibs/core` under `/apps`, and do the following:
 
@@ -415,11 +429,11 @@ On a page, you can either include CoralUI 2 RTE clientlib or the CoralUI 3 RTE c
 
 ## Further Information {#further-information}
 
-For more information about configuring the RTE, see the [AEM Widget API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html) reference.
+For more information about configuring the RTE, see the [AEM Widget API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) reference.
 
 In particular, to see the plug-ins and related options available:
 
-* The [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) component provides a form field for editing styled text information (rich text). To know all the parameters available for the rich text form, see the Config Options.
+* The [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) component provides a form field for editing styled text information (rich text). To know all the parameters available for the rich text form, see the Config Options.
 * The RichText component provides a wide range of functionality using plug-ins listed under [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). For each plug-in:
 
     * see the Features for details of functionality that can be enabled (or disabled)
@@ -427,15 +441,17 @@ In particular, to see the plug-ins and related options available:
 
 * More information about HTML Rules for links is also available.
 
-The above options can be used to extend and customize your own RTE. For example, to list the anchors available in the page when creating a link you can provide your own implementation of the `LinkPlugin`.
+These can be used to extend and customize your own RTE, for example:
+
+* To list the anchors available in the page when creating a link you can provide your own implementation of the LinkPlugin.
 
 ## Known limitations {#known-limitations}
 
 AEM RTE capability has the following limitations:
 
-* RTE capabilities are supported only in AEM component dialogs. RTE is not supported on wizards or Foundation-forms like [Page Properties](../sites-developing/page-properties-views.md) and [Scaffolding](../sites-authoring/scaffolding.md) on Touch-enabled UI.
+* RTE capabilities are supported only in AEM component dialogs. RTE is not supported on wizards or Foundation-forms like [Page Properties](/help/sites-developing/page-properties-views.md) and [Scaffolding](/help/sites-authoring/scaffolding.md) on Touch-enabled UI.
 
-* AEM does not work on [Hybrid devices](../release-notes/known-issues.md).
+* AEM does not work on [Hybrid devices](/help/release-notes/known-issues.md).
 
 * Do not name the RTE configuration node `config`. Otherwise, the RTE configuration takes effect for only the administrators and not for the users in the group `content-author`.
 
