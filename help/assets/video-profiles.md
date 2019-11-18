@@ -90,7 +90,7 @@ The following table identifies best practice encoding profiles for adaptive vide
  </tbody>
 </table>
 
-## About smart crop for video
+## About smart crop for video {#about-smart-crop-video}
 Smart Crop for video&ndash;available in Video Profiles&ndash; is a tool that uses the power of artificial intelligence in Adobe Sensei to automatically detect and crop the focal point in any adaptive or progressive video that you have uploaded, regardless of size.
 
 ![Smart Crop for Video](assets/smart-crop-video.png)
