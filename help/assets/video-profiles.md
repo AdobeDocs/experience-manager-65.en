@@ -90,14 +90,12 @@ The following table identifies best practice encoding profiles for adaptive vide
  </tbody>
 </table>
 
-## About smart crop for video {#about-smart-crop-video}
+## About smart crop for video {#about-smart-crop-video} 
 Smart Crop for video&ndash;available in Video Profiles&ndash; is a tool that uses the power of artificial intelligence in Adobe Sensei to automatically detect and crop the focal point in any adaptive or progressive video that you have uploaded, regardless of size.
 
 ![Smart Crop for Video](assets/smart-crop-video.png)
 
 To use smart crop, you simply create an adaptive or progressive video encoding profile. Then, use the Smart Crop Ratio tool to select pre-defined crop ratios. For example, you can add a "mobile landscape" definition with a crop ratio of 16x9 and a "mobile portrait" definition with a crop ration of 9x16. Other crop ratios include 1x1, 4x3, and 4x5.
-
-
 
 >[!IMPORTANT]
 >
