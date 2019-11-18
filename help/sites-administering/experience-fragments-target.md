@@ -20,9 +20,9 @@ docset: aem65
 >
 >6.5.2.0:
 >
->* Experience Fragments can be exported to either: >
->* the default workspace.
->* a named workspace, specified in the Cloud Configuration.
+>* Experience Fragments can be exported to either:
+>   * the default workspace.
+>   * a named workspace, specified in the Cloud Configuration.
 >* AEM must be [integrated with Adobe Target using Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
 >
 >AEM 6.5.0.0 and 6.5.1.0:
@@ -77,6 +77,7 @@ Before exporting a fragment you need to add the **Cloud Configuration** for **Ad
 The required options can be selected in **Page Properties** of the required folder and/or fragment; the specification will be inherited as necessary.
 
 1. Navigate to the **Experience Fragments** console.
+
 1. Open **Page Properties** for the appropriate folder or fragment.
 
    >[!NOTE]
@@ -87,12 +88,12 @@ The required options can be selected in **Page Properties** of the required fold
    >If you add the cloud configuration to the Experience Fragment itself, the configuration is inherited by all varations.
 
 1. Select the **Cloud Services** tab.
+
 1. Under **Cloud Service Configuration**, select **Adobe Target** from the drop-down list.
 
-   >[!NOTE]
+1. >[!NOTE]
    >
    >The JSON format of an Experience Fragment offer can be customized. To do this define a customer Experience Fragment component and then annotate how to export its properties in the component Sling Model.
-   >
    >
    >See the core component:
    >
