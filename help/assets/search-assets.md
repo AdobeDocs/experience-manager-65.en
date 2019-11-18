@@ -353,7 +353,7 @@ You can pass the following request parameters in a URL to launch the asset selec
   </tr>
   <tr>
    <td><p>resource suffix (B)</p> </td>
-   <td><p>Folder path as the resource suffix in the URL:</p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png">https://localhost:4502/aem/assetpicker.html</a>/&amp;lt;folder_path&amp;gt;</p> </td>
+   <td><p>Folder path as the resource suffix in the URL:</p> <p><a href="https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png">https://localhost:4502/aem/assetpicker.html/&lt;folder_path&gt;</a></p> </td>
    <td><p>To launch the asset selector with a particular folder selected, for example with the folder <a href="https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images">/content/dam/we-retail/en/activities</a>, selected, the URL should be of the form: <a href="https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images">https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images</a></p> </td>
    <td><p>If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix.</p> </td>
   </tr>
@@ -383,14 +383,14 @@ You can pass the following request parameters in a URL to launch the asset selec
   </tr>
   <tr>
    <td><p>root</p> </td>
-   <td><p>&amp;lt;folder_path&amp;gt;</p> </td>
+   <td><p>&lt;folder_path&gt;</p> </td>
    <td><p><a href="https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities">https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities</a></p> </td>
    <td><p>Use this option to specify the root folder for the asset selector. In this case, the asset selector lets you select only child assets (direct/indirect) under the root folder.</p> </td>
   </tr>
  </tbody>
 </table>
 
-To access the asset selector interface, go to `https://[aem-server]:[port]/aem/assetpicker`. Navigate to the desired folder, and select one or more assets. Alternatively, search for the desired asset from the Omnisearch box, apply filter as required, and then select it.
+To access the asset selector interface, go to `https://[AEM server]:[port]/aem/assetpicker`. Navigate to the desired folder, and select one or more assets. Alternatively, search for the desired asset from the Omnisearch box, apply filter as required, and then select it.
 
 ![Browse and select asset in the asset picker](assets/assetpicker.png)
 

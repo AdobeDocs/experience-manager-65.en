@@ -1,19 +1,15 @@
 ---
 title: Applying Workflows to Assets
-seo-title: Applying Workflows to Assets
 description: Learn how to apply workflows to assets, folders, and collections in AEM Assets.
-seo-description: Learn how to apply workflows to assets, folders, and collections in AEM Assets.
 uuid: ed02fd9c-6e3a-4c66-9d6c-92dc56304767
-contentOwner: Guillaume Carlino
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-content-type: reference
-topic-tags: authoring
 discoiquuid: 099c9842-ae13-4da7-92b7-61955a8483cb
 docset: aem65
 
 ---
 
-# Applying Workflows to Assets{#applying-workflows-to-assets}
+# Applying Workflows to Assets {#applying-workflows-to-assets}
 
 Applying workflows to digital assets is the same as for website pages. For a complete guide on how to create and use workflows in AEM, see [Starting Workflows](/help/sites-authoring/workflows-participating.md).
 
@@ -28,7 +24,7 @@ For details of applying a workflow to an AEM asset, see [Starting a Workflow on 
 ## Applying a workflow to multiple assets {#applying-a-workflow-to-multiple-assets}
 
 1. From the Assets console, navigate to the location of the assets for which you want to start a workflow, and select the assets.
-1. Click the GlobalNav icon, and the choose **Timeline** from the menu to display the timeline.
+1. Click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
 
    ![screen_shot_2019-03-06at123325pm](assets/screen_shot_2019-03-06at123325pm.png)
 
@@ -36,13 +32,13 @@ For details of applying a workflow to an AEM asset, see [Starting a Workflow on 
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-1. Click **Start Workflow**.
-1. In the **Start Workflow** dialog, select a workflow model from the list.
+1. Click **[!UICONTROL Start Workflow]**.
+1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-31](assets/chlimage_1-31.png)
 
 1. (Optional) Specify a title for the workflow, which can be used to reference the workflow instance.
-1. Click **Start **and then click **Confirm** in the dialog. The workflow runs on all the assets you selected.
+1. Click **[!UICONTROL Start]** and then click **[!UICONTROL Confirm]** in the dialog. The workflow runs on all the assets you selected.
 
 ## Applying a workflow to multiple folders {#applying-a-workflow-to-multiple-folders}
 

@@ -1,16 +1,11 @@
 ---
 title: Configure Asset tagging using the Smart Content Service
-seo-title: Configure Asset tagging using the Smart Content Service
 description: Learn how to configure smart tagging and enhanced smart tagging in AEM, using the Smart Content Service.
-seo-description: How to configure the Smart Tags Content Service from within AEM.
 uuid: 1b25b7e4-2696-471d-8e7c-7e699c2af37e
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: managing-assets
-content-type: reference
 discoiquuid: 84210f44-aa54-47a9-8109-243316ca33ed
 docset: aem65
-legacypath: /content/docs/en/aem/6-2/author/assets/managing-assets-touch-ui/configuring-smart-content-services-integration
 
 ---
 

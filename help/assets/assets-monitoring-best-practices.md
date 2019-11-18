@@ -1,6 +1,5 @@
 ---
 title: Assets Monitoring Best Practices
-seo-title: Assets Monitoring Best Practices
 description: Best practices for monitoring the environment and performance of your AEM instance after it is deployed.
 seo-description: Best practices for monitoring the environment and performance of your AEM instance after it is deployed.
 uuid: a7d63b42-c0b2-47a0-9bd4-df85dfe59313

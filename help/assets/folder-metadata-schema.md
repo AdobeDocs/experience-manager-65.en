@@ -29,7 +29,7 @@ You can edit a newly added or existing metadata schema form, which includes the 
 
 You can map/configure these form items to a field within a metadata node in the CRX repository. You can add new tabs or form items to the metadata schema form.
 
-1. In the Schema Forms page, select the form you created, and then tap/click the **[!UICONTROL Edit]**icon from the toolbar.
+1. In the Schema Forms page, select the form you created, and then tap/click the **[!UICONTROL Edit]** icon from the toolbar.
 1. In the Folder Metadata Schema Editor page, tap/click the **[!UICONTROL +]** icon to add a tab to the form. To rename the tab, tap/click the default name and specify the new name under **[!UICONTROL Settings]**.
 
    ![custom_tab](assets/custom_tab.png)
@@ -52,7 +52,7 @@ You can map/configure these form items to a field within a metadata node in the 
 
 ### Components to build forms {#components-to-build-forms}
 
-The **[!UICONTROL Build Form]** tab lists form items that you use in your folder metadata schema form. The **[!UICONTROL Settings]** tab displays the attributes for each item that you select in the **[!UICONTROL Build Form]** tab. Here is a list the form items available in the **[!UICONTROL Build Form]**tab:
+The **[!UICONTROL Build Form]** tab lists form items that you use in your folder metadata schema form. The **[!UICONTROL Settings]** tab displays the attributes for each item that you select in the **[!UICONTROL Build Form]** tab. Here is a list the form items available in the **[!UICONTROL Build Form]** tab:
 
 <table>
  <tbody>
@@ -152,7 +152,7 @@ If you configure a metadata schema for a folder, the path to the schema form is 
 
 You can assign a folder metadata schema when creating a folder. If at least one folder metadata schema exists in the system, an extra list is displayed in the **[!UICONTROL Create Folder]** dialog. You can select the desired schema. By default, no schema is selected.
 
-1. From the AEM Assets user interface, tap/click **[!UICONTROL Create]**from the toolbar.
+1. From the AEM Assets user interface, tap/click **[!UICONTROL Create]** from the toolbar.
 1. Specify a title and name for the folder.
 1. From the Folder Metadata Schema list, select the desired schema. Then, tap/click **[!UICONTROL Create]**.
 
@@ -165,7 +165,7 @@ You can assign a folder metadata schema when creating a folder. If at least one 
 
 Open the properties for a folder configured with a folder metadata schema. A **[!UICONTROL Folder Metadata]** tab is displayed in the folder properties page. To view the folder metadata schema form, select this tab.
 
-Enter metadata values in the various fields and tap/click **[!UICONTROL Save]**to store the values. The values you specify are stored in the folder node in the CRX repository.
+Enter metadata values in the various fields and tap/click **[!UICONTROL Save]** to store the values. The values you specify are stored in the folder node in the CRX repository.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
 

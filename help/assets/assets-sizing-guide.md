@@ -1,19 +1,15 @@
 ---
 title: Assets Sizing Guide
-seo-title: Assets Sizing Guide
 description: Best practices to determine efficient metrics for estimating the infrastructure and resources required for deploying AEM Assets.
-seo-description: Best practices to determine efficient metrics for estimating the infrastructure and resources required for deploying AEM Assets.
 uuid: ed275e97-59d3-4945-9d1b-3351113f8ce5
-contentOwner: Chiradeep Majumdar
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: 68e9cd31-f1db-4678-840f-75bbced53402
 docset: aem65
 
 ---
 
-# Assets Sizing Guide{#assets-sizing-guide}
+# Assets Sizing Guide {#assets-sizing-guide}
 
 When sizing the environment for an Adobe Experience Manager (AEM) Assets implementation, it is important to ensure that there are sufficient resources available in terms of disk, CPU, memory, IO, and network throughput. Sizing many of these resources requires an understanding of how many assets are being loaded into the system. If a better metric is not available, you can divide the size of the existing library by the age of the library to find the rate at which assets are created.
 

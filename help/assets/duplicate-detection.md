@@ -12,7 +12,7 @@ docset: aem65
 
 If you attempt to upload an asset that exists in Adobe Experience Manager (AEM) Assets, the duplicate detection feature identifies it as duplicate. Duplicate detection is disabled by default. To enable the feature, do the following steps:
 
-1. Go to the AEM Web Console Configuration page at `https://[server]:[port]/system/console/configMgr`.
+1. Open the AEM Web Console Configuration page by accessing `https://[aem_server]:[port]/system/console/configMgr`.
 1. Edit the configuration for the servlet **[!UICONTROL Day CQ DAM Create Asset]**.
 1. Select the **[!UICONTROL detect duplicate]** option, and click/tap **[!UICONTROL Save]**.
 

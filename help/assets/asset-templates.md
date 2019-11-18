@@ -1,19 +1,15 @@
 ---
 title: Asset Templates
-seo-title: Asset Templates
 description: Learn about Asset templates in AEM Assets and how to use Asset templates to create marketing collateral.
-seo-description: Learn about Asset templates in AEM Assets and how to use Asset templates to create marketing collateral.
 uuid: 26ee7c45-e8de-4ee1-a704-b5c7d2809654
-contentOwner: User
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: 9abb6816-b75d-4068-9c7d-e707e55224ec
 docset: aem65
 
 ---
 
-# Asset Templates{#asset-templates}
+# Asset Templates {#asset-templates}
 
 Asset templates are a special class of assets that facilitate quick repurposing of visually-rich content for digital and print media. An asset template includes two parts, the fixed messaging section and the editable section.
 

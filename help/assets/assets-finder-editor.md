@@ -1,13 +1,9 @@
 ---
 title: Creating and Configuring Asset Editor pages
-seo-title: Creating and Configuring Asset Share and Asset Editor pages
 description: Learn how to create custom Asset Editor pages and edit multiple assets simultaneously.
-seo-description: Learn how to create custom Asset Editor pages and edit multiple assets simultaneously.
 uuid: 3bc650de-2392-4df9-a13c-04ce7a537d25
-contentOwner: Chiradeep Majumdar
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: 264b1473-30f3-4cea-a9b0-89184063e15d
 docset: aem65
 
@@ -58,7 +54,7 @@ To create an new Asset Share page in the **Websites** console:
 
 1. In the **Websites** tab, navigate to the place where you want to create an asset share page and click **New**.
 
-1. Select the** Asset Share** page and click **Create**. The new page is created and the asset share page is listed in the **Websites** tab.
+1. Select the **Asset Share** page and click **Create**. The new page is created and the asset share page is listed in the **Websites** tab.
 
 ![dam8](assets/dam8.png)
 
@@ -298,7 +294,7 @@ The Metadata Form is a form that includes a start and end action. In between, yo
 
 1. In between the **Form Start** and the **Form End**, drag Metadata Text Fields to the form. Users populate metadata into these text fields, which they can submit or complete another action on.
 
-1. Double-click the field name, for example, **Title** to open the metadata field and make changes. In the **General** tab of the** Edit Component** window, you define the namespace and the field label as well as type, for example, **dc:title**.
+1. Double-click the field name, for example, **Title** to open the metadata field and make changes. In the **General** tab of the **Edit Component** window, you define the namespace and the field label as well as type, for example, `dc:title`.
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
@@ -342,7 +338,7 @@ The Tags component is a component where users can assign existing tags to an ass
 
 ![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
-Double-click the Tags component to open the tags dialog where you can change the title from Tags, if desired, and where you can select the allocated namespaces. To make this field editable, clear the **Hide Edit** **button** check box. By default, tags are editable.
+Double-click the Tags component to open the tags dialog where you can change the title from Tags, if desired, and where you can select the allocated namespaces. To make this field editable, clear the **[!UICONTROL Hide Edit]** check box. By default, tags are editable.
 
 ![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 

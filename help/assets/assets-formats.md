@@ -1,13 +1,9 @@
 ---
 title: Assets supported formats
-seo-title: Assets supported formats
 description: List of file formats supported by AEM Assets and features supported for each format.
-seo-description: List of file formats supported by AEM Assets and features supported for each format.
 uuid: 83f7a81d-fcb1-4d00-b0ab-372489108702
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: b2a99809-33fc-468c-8dfc-dd0982a3c901
 docset: aem65
 
@@ -236,7 +232,7 @@ The Adobe Camera Raw library enables AEM Assets to ingest raw images. For detail
   <tr>
    <td>RAM, RM</td>
    <td>RealVideo</td>
-   <td>**UNSUPPORTED**</td>
+   <td>Not supported</td>
    <td>Real G2 (RV20), Real 8 (RV30), Real 10 (RV40)</td>
   </tr>
   <tr>

@@ -1,19 +1,15 @@
 ---
 title: Extending Assets Search
-seo-title: Extending Assets Search
 description: Extend the search capabilities of AEM Assets beyond out-of-the-box searches for assets by strings.
-seo-description: Extend the search capabilities of AEM Assets beyond out-of-the-box searches for assets by strings.
 uuid: 1c7f448c-f608-484c-91c2-8b887ec09d85
-contentOwner: Guillaume Carlino
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: extending-assets
-content-type: reference
 discoiquuid: 7eee90c0-4cb9-437d-a202-5b7bddfa6772
 docset: aem65
 
 ---
 
-# Extending Assets Search{#extending-assets-search}
+# Extending Assets Search {#extending-assets-search}
 
 You can extend Adobe Experience Manager (AEM) Assets search capabilities. Out of the box, AEM Assets searches for assets by strings.
 
@@ -75,7 +71,7 @@ To build a property predicate:
 
    ```
 
-1. Add** titlepredicate.jsp**.
+1. Add `titlepredicate.jsp`.
 
    ```xml
    <%--
@@ -148,7 +144,7 @@ To build a property predicate:
 1. To make the component available, you need to be able to edit it. To make a component editable, in CRXDE, add a node **cq:editConfig** of primary type **cq:EditConfig**. So that you can remove paragraphs, add a multi-value property **cq:actions** with a single value of **DELETE**.
 1. Navigate to your browser, and on your sample page (for example, **press.html**) switch to design mode and enable your new component for the predicate paragraph system (for example, **left**).
 
-1. In **Edit** mode, the new component is now available in the sidekick (found in the **Search **group). Insert the component in the **Predicates** column and type a search word, for example, **Diamond** and click the magnifying glass to start the search.
+1. In **Edit** mode, the new component is now available in the sidekick (found in the **Search** group). Insert the component in the **Predicates** column and type a search word, for example, **Diamond** and click the magnifying glass to start the search.
 
    >[!NOTE]
    >
@@ -254,7 +250,7 @@ To build a group predicate:
 
 1. To make the component available, you need to be able to edit it. To make a component editable, in CRXDE, add a node **cq:editConfig** of primary type **cq:EditConfig**. So that you can remove paragraphs, add a multi-value property **cq:actions** with a single value of **DELETE**.
 1. Navigate to your browser, and on your sample page (for example, **press.html**) switch to design mode and enable your new component for the predicate paragraph system (for example, **left**).
-1. In **Edit** mode, the new component is now available in the sidekick (found in the **Search **group). Insert the component in the **Predicates** column.
+1. In **Edit** mode, the new component is now available in the sidekick (found in the **Search** group). Insert the component in the **Predicates** column.
 
 ### Installed Predicate Widgets {#installed-predicate-widgets}
 

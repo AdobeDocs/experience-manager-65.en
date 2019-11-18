@@ -9,7 +9,11 @@ docset: aem65
 
 ---
 
-# Manage smart tags and searches{#manage-smart-tags-and-searches}
+# Manage smart tags and searches {#manage-smart-tags-and-searches}
+
+<!--
+TBD: This article should be merged into a new, uber article for Smart Tags. Delete this article.
+-->
 
 You can curate Smart tags to remove any inaccurate tags that may have been assigned to your brand images so only the most relevant tags are displayed.
 
@@ -29,7 +33,7 @@ You can also assign a higher rank to a tag to increase its relevence with respec
 
 By default, AEM search combines the search terms with an `AND` clause. Using smart tags does not change this default behavior. Using smart tags adds an additional `OR` clause to find any of the search terms in the applies smart tags. For example, consider searching for `woman running`. Assets with just `woman` or just `running` keyword in the metadata do not appear in the search results by default. However, an asset tagged with either `woman` or `running` using smart tags appears in such a search query. So the search results are a combination of,
 
-* assets with `woman` and `running` keywords in the metadata.  
+* assets with `woman` and `running` keywords in the metadata.
 
 * assets smart tagged with either of the keywords.
 
