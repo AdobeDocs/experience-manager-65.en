@@ -237,7 +237,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 1. Click **Connect to Target** to initialize the connection with Adobe Target.
 
-   If the connection is successful, the message** Connection successful** is displayed.
+   If the connection is successful, the message **Connection successful** is displayed.
 
 1. Select **OK** on the message, followed by **OK** on the dialog to confirm the configuration.
 1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that will be sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
