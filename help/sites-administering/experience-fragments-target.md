@@ -107,7 +107,7 @@ The required options can be selected in **Page Properties** of the required fold
 
    For example, for a folder:
 
-   ![](assets/xf-target-integration-01-b.png)
+   ![Folder Cloud Services](assets/xf-target-integration-01.png "Folder Cloud Services")
 
 1. **Save & Close**.
 
