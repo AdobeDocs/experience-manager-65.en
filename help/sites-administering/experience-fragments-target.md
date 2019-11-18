@@ -1,14 +1,14 @@
 ---
-title: Target Integration with Experience Fragments
-seo-title: Target Integration with Experience Fragments
-description: Target Integration with Experience Fragments
-seo-description: Target Integration with Experience Fragments
-uuid: 621f57d4-3b8d-49ea-b193-8530c8fbd74e
+title: Exporting Experience Fragments to Adobe Target
+seo-title: Exporting Experience Fragments to Adobe Target
+description: Exporting Experience Fragments to Adobe Target
+seo-description: Exporting Experience Fragments to Adobe Target
+uuid: 2df0faab-5d5e-4fc1-93b3-28b7e6f3c306
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6911c8e3-b12c-466e-8255-5dcd09557d35
+discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 ---
 
@@ -20,9 +20,9 @@ docset: aem65
 >
 >6.5.2.0:
 >
->* Experience Fragments can be exported to either: >
->* the default workspace.
->* a named workspace, specified in the Cloud Configuration.
+>* Experience Fragments can be exported to either:
+>   * the default workspace.
+>   * a named workspace, specified in the Cloud Configuration.
 >* AEM must be [integrated with Adobe Target using Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
 >
 >AEM 6.5.0.0 and 6.5.1.0:
@@ -77,6 +77,7 @@ Before exporting a fragment you need to add the **Cloud Configuration** for **Ad
 The required options can be selected in **Page Properties** of the required folder and/or fragment; the specification will be inherited as necessary.
 
 1. Navigate to the **Experience Fragments** console.
+
 1. Open **Page Properties** for the appropriate folder or fragment.
 
    >[!NOTE]
@@ -87,12 +88,12 @@ The required options can be selected in **Page Properties** of the required fold
    >If you add the cloud configuration to the Experience Fragment itself, the configuration is inherited by all varations.
 
 1. Select the **Cloud Services** tab.
+
 1. Under **Cloud Service Configuration**, select **Adobe Target** from the drop-down list.
 
-   >[!NOTE]
+1. >[!NOTE]
    >
    >The JSON format of an Experience Fragment offer can be customized. To do this define a customer Experience Fragment component and then annotate how to export its properties in the component Sling Model.
-   >
    >
    >See the core component:
    >
@@ -106,7 +107,7 @@ The required options can be selected in **Page Properties** of the required fold
 
    For example, for a folder:
 
-   ![](assets/xf-target-integration-01-b.png)
+   ![Folder Cloud Services](assets/xf-target-integration-01.png "Folder Cloud Services")
 
 1. **Save & Close**.
 

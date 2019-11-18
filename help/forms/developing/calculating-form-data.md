@@ -119,7 +119,7 @@ After you verify the processing state associated with a submitted form is `1`, y
 [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Calculate form data using the Java API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
 [Calculate form data using the web service API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
-<!--[Setting connection properties](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7fd6.2)-->
+[Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 [Forms Service API Quick Starts](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 [Rendering Interactive PDF Forms](/help/forms/developing/rendering-interactive-pdf-forms.md)
 [Creating Web Applications that Renders Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
@@ -214,6 +214,3 @@ Calculate form data by using the Forms API (web service):
 
 **See also**
 [Invoking AEM Forms using Base64 encoding](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
-<!--[Quick Start (Base64): Handling a form containing a calculation script using web service API](#unresolvedlink-lc-qs-forms-fo.xml#ws624e3cba99b79e12e69a9941333732bac8-7e20.2)-->
-
-

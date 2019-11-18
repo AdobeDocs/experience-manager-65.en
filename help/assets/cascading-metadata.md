@@ -103,8 +103,8 @@ Irrespective of the asset type chosen, display the copyright information as a re
    >You can apply **[!UICONTROL Requirement]** condition and **[!UICONTROL Visibility]** condition independent of each other.
 
 1. Similary, create a dependency between the value Video in the Asset Type field and other fields, such as Codec and Duration.
-1. Repeat the steps to create dependency between document assets (PDF and Word) in the Asset Type** **field and fields such as Page Count and Author.
-1. Click **[!UICONTROL Save]**. Apply the Metadata Schema to a folder.   
+1. Repeat the steps to create dependency between document assets (PDF and Word) in the [!UICONTROL Asset Type] field and fields such as [!UICONTROL Page Count] and [!UICONTROL Author].
+1. Click **[!UICONTROL Save]**. Apply the metadata schema to a folder.
 
 1. Navigate to the folder to which you applied the Metadata Schema and open the properties page of an asset. Depending upon your choice in the Asset Type field, pertinent cascading metadata fields are displayed.
 
@@ -115,4 +115,3 @@ Irrespective of the asset type chosen, display the copyright information as a re
    ![Cascading metadata for document asset](assets/doc_type_fields.png)
 
    Cascading metadata for document asset
-

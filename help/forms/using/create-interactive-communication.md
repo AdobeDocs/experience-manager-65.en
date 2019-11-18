@@ -29,7 +29,7 @@ The following are the prerequisites for creating an Interactive Communication:
 ## Create Interactive Communication {#createic}
 
 1. Log in to the AEM author instance and navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Tap **[!UICONTROL Create]** **and select **[!UICONTROL Interactive Communication]**. Create Interactive Communication page appears.
+1. Tap **[!UICONTROL Create]** and select **[!UICONTROL Interactive Communication]**. Create Interactive Communication page appears.
 
    ![create-interactive-communication](assets/create-interactive-communication.png)
 
@@ -346,7 +346,7 @@ You can add dynamic tables in Interactive Communication using layout fragments. 
             * **[!UICONTROL Data model object]**: A form data model property's value is populated in the field. Alternatively, select the **Data Sources** tab and drag-and-drop the property to the field.
 
         * **[!UICONTROL Data Model Object]**: The form data model property whose value is populated in the field.
-        * **[!UICONTROL Default Value]**: Default value ensures that the field is not empty when there is no value provided by the specified data model object. The default value is prepopulated in the field. **[!UICONTROL]**
+        * **[!UICONTROL Default Value]**: Default value ensures that the field is not empty when there is no value provided by the specified data model object. The default value is prepopulated in the field.
 
         * **[!UICONTROL Editable By Agent]**: Select to allow the agent to edit the value in the field in the Agent UI.
 
@@ -477,7 +477,7 @@ To add button and define rules on it:
 1. In the **When** section, select **clicked** from the state of the button drop-down list.
 1. In the **Then** section:
 
-    1. Select an action from the drop-down list. For example, select **Navigate** **to** as the action type.
+    1. Select an action from the drop-down list. For example, select **Navigate to** as the action type.
 
     1. Specify the URL of the Interactive Communication, adaptive form, an asset, or a web page. For example, specify the URL in the following format to navigate to another Interactive Communication: https://&lt;server-name&gt;:&lt;port&gt;/editor.html/content/forms/af/&lt;Interactive Communication name&gt;/channels/&lt;channel name - print or web&gt;.html
     1. Specify the option to open the asset in same tab, new tab, or new window.

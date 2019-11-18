@@ -19,7 +19,7 @@ Adobe Experience Manager (AEM) Assets can identify if an uploaded file contains 
 
 Besides eliminating redundancy, referencing AEM assets in Adobe Creative Cloud applications enhances collaboration and increases the efficiency and productivity of users.
 
-AEM Assets supports **bidirectional referencing**.** **You can find referenced assets in the asset detail page of the uploaded file. In addition, you can view the referencing files for AEM assets in the asset details page of the referenced asset.
+AEM Assets supports **bidirectional referencing**. You can find referenced assets in the asset detail page of the uploaded file. In addition, you can view the referencing files for AEM assets in the asset details page of the referenced asset.
 
 References are resolved on the basis of path, document ID, and instance ID of the referenced assets.
 

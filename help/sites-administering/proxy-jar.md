@@ -3,12 +3,13 @@ title: Proxy Server Tool (proxy.jar)
 seo-title: Proxy Server Tool (proxy.jar)
 description: Learn about the Proxy Server Tool in AEM.
 seo-description: Learn about the Proxy Server Tool in AEM.
-uuid: 9a095b12-1d54-4b79-b0c5-d973f16479d3
+uuid: 2fc1df24-8d5a-4be7-83fa-238ae65591b0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: ff0b1e93-2fd2-4dc1-898f-4ba4db1b3d98
+discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
+docset: aem65
 ---
 
 # Proxy Server Tool (proxy.jar){#proxy-server-tool-proxy-jar}
@@ -143,7 +144,7 @@ If AEM is running on localhost:4303, start the proxy server as following:
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-You can access the server ( ) without the proxy server, but if you access it via , the proxy server will log the communication. Open a browser and access a page created with the above template. After that, look at the log file.
+You can access the server (`localhost:4303`) without the proxy server, but if you access it via `localhost:4444`, the proxy server will log the communication. Open a browser and access a page created with the above template. After that, look at the log file.
 
 >[!NOTE]
 >

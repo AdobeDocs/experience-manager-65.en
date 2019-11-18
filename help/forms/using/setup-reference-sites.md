@@ -189,7 +189,7 @@ The email templates for We.Finance reference site contain personalized links in 
 
 1. Copy `/libs/cq/xssprotection/config.xml` to `/apps/cq/xssprotection/config.xml`.
 1. Open `/apps/cq/xssprotection/config.xml`.
-1. In the `common-regexps` section, modify the `onsiteURL`** **entry as follows and save the file.
+1. In the `common-regexps` section, modify the `onsiteURL` entry as follows and save the file.
 
    `<regexp name="onsiteURL" value="([\p{L}\p{N}\\\.\#@\$\{\}%\+&;\-_~,\?=/!\*\(\)]*|\#(\w)+)"/>`
 
@@ -311,10 +311,10 @@ Do the following on the publish instance to allow access to anonymous users:
 Do the following on both author and publish instances:
 
 1. Go to CRXDE at https://[server]:[port]/crx/de/index.jsp.
-1. Navigate to** **/conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile** **and open the swagger file.
+1. Navigate to **/conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile** and open the swagger file.
 1. Update the host and port settings as per your environment.
 1. Save the settings.
-1. (**Author instance only**) Go to **Tools **> **Cloud Services** > **Data Sources **> **global. **Select** roi-rest **and tap** Properties.** Tap **Authentication Settings** and set **Authentication Type** to** Basic Authentication**. Specify `admin`/ `admin`as the username/password to access the service. Tap **Save & Close**.
+1. (**Author instance only**) Go to **Tools** > **Cloud Services** > **Data Sources** > **global**. Select **roi-rest** and tap** Properties.Tap **Authentication Settings** and set **Authentication Type** to **Basic Authentication**. Specify `admin`/ `admin`as the username/password to access the service. Tap **Save & Close**.
 
 ## Integrate with Marketing Cloud {#integrate-with-marketing-cloud}
 

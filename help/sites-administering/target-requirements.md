@@ -3,12 +3,13 @@ title: Prerequisites for Integrating with Adobe Target
 seo-title: Prerequisites for Integrating with Adobe Target
 description: Find out about the prerequisites for integrating with Adobe Target.
 seo-description: Find out about the prerequisites for integrating with Adobe Target.
-uuid: 88be6a97-c964-4e42-a3a2-ed9b2c9ee49e
+uuid: 55d87a96-5fe7-4f7e-93c1-fdf7fbb7c971
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: a84fd0ab-0bcd-48cf-bba3-fb29308fa0f8
+discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
+docset: aem65
 ---
 
 # Prerequisites for Integrating with Adobe Target{#prerequisites-for-integrating-with-adobe-target}
@@ -17,7 +18,7 @@ As part of the [integration of AEM and Adobe Target](/help/sites-administering/t
 
 ## Registering with Adobe Target {#registering-with-adobe-target}
 
-To integrate AEM with Adobe Target, you must have a valid Adobe Target account. This account must have **approver **level permissions at a minimum. When you register with Adobe Target, you receive a client code. You need the client code and your Adobe Target login name and password to connect AEM to Adobe Target.
+To integrate AEM with Adobe Target, you must have a valid Adobe Target account. This account must have **approver** level permissions at a minimum. When you register with Adobe Target, you receive a client code. You need the client code and your Adobe Target login name and password to connect AEM to Adobe Target.
 
 The Client Code identifies the Adobe Target customer account when calling the Adobe Target server.
 
@@ -26,7 +27,7 @@ The Client Code identifies the Adobe Target customer account when calling the Ad
 >Your account must also be enabled by the Target team in order to use the integration.
 >
 >
->If it's not the case, please contact [Adobe Target Customer Care](https://marketing.adobe.com/resources/help/en_US/target/target/r_problem.html).
+>If it is not the case, please contact [Adobe Target Customer Care](https://marketing.adobe.com/resources/help/en_US/target/target/r_problem.html).
 
 ## Enabling the Target Replication Agent {#enabling-the-target-replication-agent}
 
@@ -57,14 +58,22 @@ The **cq:ActivitySettings** node under the activity's jcr:content is protected b
 
 These settings ensure that normal users do not have access to the node properties. Use the same ACLs on author and on publish. See [User Administration and Security](/help/sites-administering/security.md) for more information.
 
-## Configuring the AEM externalizer {#configuring-the-aem-externalizer}
+## Configuring the AEM Link Externalizer {#configuring-the-aem-link-externalizer}
 
-When editing an activity in Adobe Target, the URL points to **localhost** unless you change the URL on the AEM author node.
+When editing an activity in Adobe Target, the URL points to **localhost** unless you change the URL on the AEM author node. You can configure the AEM Link Externalizer if you want the exported content to point to a specific *publish* domain.
+
+>[!NOTE]
+>
+>See also [Add the Cloud Configuration](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration).
 
 To configure the AEM externalizer:
+
+>[!NOTE]
+>
+>For more details see [Externalizing URLs](/help/sites-developing/externalizer.md).
 
 1. Navigate to the OSGi web console at **https://&lt;server&gt;:&lt;port&gt;/system/console/configMgr.**
 1. Find **Day CQ Link Externalizer** and enter the domain for the author node.
 
-   ![chlimage_1-120](assets/chlimage_1-120.png)
+   ![chlimage_1-120](assets/aem-externalizer-01.png)
 

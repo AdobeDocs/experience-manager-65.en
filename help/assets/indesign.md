@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Integrating AEM Assets with InDesign Server{#integrating-aem-assets-with-indesign-server}
+# Integrating AEM Assets with InDesign Server {#integrating-aem-assets-with-indesign-server}
 
 Adobe Experience Manager (AEM) Assets uses:
 
@@ -189,14 +189,14 @@ To customize, you can edit the **Arguments** tab of the** Page Extraction** step
 
 1. Double-click the **IDS worker** to open for configuration.
 
-1. Click **Edit** to open the configuration dialog and define the required settings:
+1. Click **[!UICONTROL Edit]** to open the configuration dialog and define the required settings:
 
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
     * **IDS Pool**
       The SOAP endpoint(s) to be used for communicating with the InDesign Server. You can add, remove and order items are required.
 
-1. Click **OK** to save.
+1. Click OK to save.
 
 ### Configuring Day CQ Link Externalizer  {#configuring-day-cq-link-externalizer}
 
@@ -241,7 +241,7 @@ To configure the number of parallel IDS jobs:
 
    `com.day.cq.dam.ids.impl.IDSJobProcessor.name configuration`
 
-1. Create a [pool of < `*x*>` IDS workers by adding SOAP endpoints to the IDS Worker configuration](#configuring-the-proxy-worker-for-indesign-server).
+1. Create a [pool of `<*x*>` IDS workers by adding SOAP endpoints to the IDS Worker configuration](#configuring-the-proxy-worker-for-indesign-server).
 
    If there are multiple machines running InDesign Servers, add SOAP endpoints (number of processors per machine -1) for each machine.
 
@@ -253,7 +253,7 @@ To configure the number of parallel IDS jobs:
    >To do so, enable the "enable.retry.name" checkbox, under the `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuration, which enables IDS job retrials.
    >
    >
-   >Also, under the `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuration, set a positive value for max.errors.to.blacklist parameter which determines number of job retrials before barring an IDS from the job handlers list
+   >Also, under the `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuration, set a positive value for `max.errors.to.blacklist` parameter which determines number of job retrials before barring an IDS from the job handlers list
    >
    >
    >By default, after the configurable (retry.interval.to.whitelist.name) time in minutes the IDS worker is revalidated. If the worker is found online, it is removed from the blacklist
@@ -263,8 +263,8 @@ To configure the number of parallel IDS jobs:
 For InDesign server 10.0 or higher, perform the following steps to enable multi-session support.
 
 1. Open Configuration Manager from your AEM Assets instance [https://&lt;Host Name&gt;:&lt;Port&gt;/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-1. Edit the configuration ***com.day.cq.dam.ids.impl.IDSJobProcessor.name***.
-1. Select the **ids.cc.enable** option, and click **Save**.
+1. Edit the configuration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`.
+1. Select the **[!UICONTROL ids.cc.enable]** option, and click **[!UICONTROL Save]**.
 
 >[!NOTE]
 >
@@ -274,7 +274,6 @@ For InDesign server 10.0 or higher, perform the following steps to enable multi-
 
 You can change the default administrator credentials (user name and password) for accessing the InDesign server from your AEM instance without breaking the intergration with the InDesign server.
 
-1. Go to */etc/cloudservices/proxy.html*.
+1. Go to `/etc/cloudservices/proxy.html`.
 1. In the dialog, specify the new user name and password.
 1. Save the credentials.
-

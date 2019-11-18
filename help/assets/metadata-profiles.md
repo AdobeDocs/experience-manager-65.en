@@ -34,7 +34,7 @@ See also [Profiles for Processing Metadata, Images, and Videos](processing-profi
 
     * **Field Label**: The display name of the metadata property. It is only for the user reference.
     
-    * **Map to Property**: The value of this property provides the relative path/name to the asset node where it is saved in the repository. The value should always start with "**./**" because it indicates that the path is under the asset's node.
+    * **Map to Property**: The value of this property provides the relative path/name to the asset node where it is saved in the repository. The value should always start with `./` because it indicates that the path is under the asset's node.
 
    ![chlimage_1-199](assets/chlimage_1-199.png)
 
@@ -137,7 +137,7 @@ See also [Profiles for Processing Metadata, Images, and Videos](processing-profi
 
    ![chlimage_1-205](assets/chlimage_1-205.png)
 
-1. Click **Delete** **Metadata Profiles **in the toolbar.
+1. Click **Delete Metadata Profiles** in the toolbar.
 1. In the dialog, click **Delete** to confirm the delete operation. The metadata profile is deleted from the list.
 
 ## Applying a metadata profile to folders {#applying-a-metadata-profile-to-folders}

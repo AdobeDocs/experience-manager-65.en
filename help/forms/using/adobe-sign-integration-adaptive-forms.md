@@ -16,7 +16,7 @@ docset: aem65
 
 Adobe Sign enables e-signature workflows for adaptive forms. E-signatures improve workflows to process documents for legal, sales, payroll, human resource management, and many more areas.
 
-In a typical Adobe Sign and adaptive forms scenario, a user fills an adaptive form to** **apply for a service**. **For example, a credit card application and a citizen benefits form. When a user fills, submits, and signs the application form, the form is sent to the service provider for further action. Service provider reviews the application and uses Adobe Sign to mark the application approved. To enable similar electronic-signature workflows, you can integrate Adobe Sign with AEM Forms.
+In a typical Adobe Sign and adaptive forms scenario, a user fills an adaptive form to **apply for a service**. For example, a credit card application and a citizen benefits form. When a user fills, submits, and signs the application form, the form is sent to the service provider for further action. Service provider reviews the application and uses Adobe Sign to mark the application approved. To enable similar electronic-signature workflows, you can integrate Adobe Sign with AEM Forms.
 
 To use Adobe Sign with AEM Forms, configure Adobe Sign in AEM Cloud Services:
 
@@ -95,7 +95,7 @@ After prerequisites are in place, perform the following steps to configure Adobe
 
 An Adobe Sign enabled adaptive form is submitted only after all the signers complete the signing process. By default, the Adobe Sign Scheduler services is scheduled to check (poll) signer response after every 24 hours. You can change the default interval for your environment. Perform the following steps to change the default interval:
 
-1. Log in to AEM Forms server with admin credentials and navigate to **Tools **&gt; **Operations **&gt; **Web Console**.
+1. Log in to AEM Forms server with admin credentials and navigate to **Tools** &gt; **Operations** &gt; **Web Console**.
 
    You can also open the following URL in a browser window:
    `https://[localhost]:[port]/system/console/configMgr`

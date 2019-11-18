@@ -35,7 +35,7 @@ Use the following procedure to set up a framework for video tracking using each 
 
 1. [Create an Adobe Analytics configuration and framework](/help/sites-administering/adobeanalytics.md).
 
-    * The examples in the sections that follow use the name **my-sc-configuration** for the configuration and** videofw** for the framework**.**
+    * The examples in the sections that follow use the name **my-sc-configuration** for the configuration and **videofw** for the framework.
 
 1. On the framework page, select an RSID and set the usage to all. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
 1. From the General component category in Sidekick, drag the Video component onto the framework.
@@ -311,11 +311,11 @@ This method is similar to the Milestones method with the difference that the mil
 
    >[!NOTE]
    >
-   >You can set a video's **user friendly **name by opening the video for editing in the DAM, and setting the **Title **metadata field to the desired name. You also need to Save the changes made when finished.
+   >You can set a video's **user-friendly** name by opening the video for editing in the DAM, and setting the **Title** metadata field to the desired name. You also need to Save the changes made when finished.
 
 1. Map these variables to props 1 to 3
 
-   The **rest of the relevant information** in the call will be sent concatinated into **one** variable named **pev3**.
+   The **rest of the relevant information** in the call will be sent concatenated into **one** variable named **pev3**.
 
    **Sample calls** to Adobe Analytics using the example provided should look like this when viewed with DigitalPulse Debugger:
 
