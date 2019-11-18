@@ -1,4 +1,4 @@
-__---
+---
 title: Exporting Experience Fragments to Adobe Target
 seo-title: Exporting Experience Fragments to Adobe Target
 description: Exporting Experience Fragments to Adobe Target
