@@ -141,7 +141,7 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [Adobe Classifications](adobeanalytics-classifications.md)
     + [Integrating with Adobe Search&Promote](search-and-promote.md)
     + [Solutions Integration](integration.md)
-    + [Target Integration with Experience Fragments](experience-fragments-target.md)
+    + [Exporting Experience Fragments to Adobe Target](experience-fragments-target.md)
     + [Best Practices for Email Templates](best-practices-for-email-templates.md)
 + Best Practices {#bestpractices}
     + [Best Practices](administer-best-practices.md)
