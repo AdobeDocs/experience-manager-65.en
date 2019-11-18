@@ -54,7 +54,7 @@ The Channel browser helps you switch between the print and web channels of the I
   Lets you edit the properties of a component. Properties change according to the component. For example, to see properties of the document container:
   Select a component, then tap ![field-level](assets/field-level.png) &gt; **Document Container**, and then tap ![cmppr](assets/cmppr.png).
 
-* **Assets** **browser**
+* **Assets browser**
   Segregates different types of content such as layout fragments, images, documents, pages, videos. Author can drag-and-drop assets into the Interactive Communication.
 
 * **Components browser**

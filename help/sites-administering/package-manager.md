@@ -3,12 +3,13 @@ title: How to Work With Packages
 seo-title: How to Work With Packages
 description: Learn the basics of working with packages in AEM.
 seo-description: Learn the basics of working with packages in AEM.
-uuid: e9eb4f88-9df6-4019-92e0-2aafcffe1aab
+uuid: cba76a5f-5d75-4d63-a0f4-44c13fa1baf2
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: 8e568c59-5455-422f-94a6-baf6d2aae070
+discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
+docset: aem65
 ---
 
 # How to Work With Packages{#how-to-work-with-packages}
@@ -79,7 +80,7 @@ The **Package Settings** dialog is available via the **Edit** button when [creat
 | Description |A brief description of the package. HTML markup can be used for formatting. |
 | Thumbnail |The icon that appears with the package listing. Click Browse to select a local file. |
 
-![chlimage_1-344](assets/chlimage_1-344.png)
+![chlimage_1-108](assets/chlimage_1-108.png)
 
 <table>
  <tbody>
@@ -154,7 +155,7 @@ Filters can include zero or more rules. When no rules are defined, the package c
 
 You can define one or more filter definitions for a package. Use more than one filter to include content from multiple root paths.
 
-![chlimage_1-345](assets/chlimage_1-345.png)
+![chlimage_1-109](assets/chlimage_1-109.png)
 
 The following table describes these rules and provides examples:
 
@@ -204,13 +205,13 @@ As a package can contain an icon, the following conventions are used for officia
 
 Official Hotfix package:
 
-![](do-not-localize/chlimage_1-28.png)
+![](do-not-localize/chlimage_1-16.png)
 
 Official AEM Installation or Extension package:
 
 Official Feature packs:
 
-![](do-not-localize/chlimage_1-29.png)
+![](do-not-localize/chlimage_1-17.png)
 
 ## Package Manager {#package-manager}
 
@@ -226,7 +227,7 @@ To grant users the right to create, modify, upload, and install packages, you mu
 * **/etc/packages** (full rights excluding delete)
 * the node that contains the package contents
 
-See [Setting permissions](/help/sites-administering/security.md) for instructions on changing permissions.
+See [Setting permissions](/help/sites-administering/security.md#setting-page-permissions) for instructions on changing permissions.
 
 ### Creating a New Package {#creating-a-new-package}
 
@@ -408,7 +409,7 @@ A package upload allows you to upload a package from your file system into the A
 
 >[!NOTE]
 >
->See [Uploading packages to the company-internal Package Share](#uploading-a-package) to upload a package to your company's private area of Package Share.
+>See [Uploading packages to the company-internal Package Share](#uploading-packages-to-the-company-internal-package-share) to upload a package to your company's private area of Package Share.
 
 To upload a package:
 
@@ -704,7 +705,7 @@ To gain access to Package Share:
 
 #### Signing In to Package Share {#signing-in-to-package-share}
 
-1. On the AEM Welcome screen, click **Tools** -&gt; **Deployment**
+1. On the AEM Welcome screen, click **Tools**.
 1. Then select **Package Share**. You will be required to either:
 
     * login with your Adobe ID
@@ -716,7 +717,7 @@ To gain access to Package Share:
 
    >[!NOTE]
    >
-   >If you have forgotten your password, please use the **Trouble signing in?** link in the sign in dialog.
+   >If you have forgotten your password, please use the [Help pages](https://enterprise-dev.adobe.com/content/edev/en/registration/account.html) link (also on the sign in dialog).
 
 #### Validating your Adobe ID {#validating-your-adobe-id}
 
@@ -784,7 +785,7 @@ In Package Share packages are arranged in tree subtrees:
 * Shared packages that have been provided by others companies and have been made public by Adobe.
 * Your company packages that are private.
 
-![chlimage_1-346](assets/chlimage_1-346.png)
+![chlimage_1-110](assets/chlimage_1-110.png)
 
 ### Searching and Filtering Packages {#searching-and-filtering-packages}
 
@@ -861,7 +862,7 @@ To upload packages your the company-internal Package Share:
 
    When you are logged in, AEM will display details about the package to be uploaded:
 
-   ![chlimage_1-347](assets/chlimage_1-347.png)
+   ![chlimage_1-111](assets/chlimage_1-111.png)
 
 1. Click **Share** to upload the package to your company's internal Package Share.
 
@@ -881,11 +882,24 @@ You can only delete packages that you have uploaded by proceed as follows:
 1. Click on the package.
 1. Click the delete button.
 
-   ![](do-not-localize/chlimage_1-30.png)
+   ![chlimage_1-18](do-not-localize/chlimage_1-18.png)
 
 1. Click **Delete** to confirm you want to delete the package.
 
 ### Making Packages Semi-Private {#making-packages-semi-private}
 
 You can share packages outside your organization, but not publicly. These packages would be considered as semi-private. To share these semi-private packages you will need some help from Adobe Support. To do this, open a ticket with Adobe Support requesting a package be made available outside your organization. They will ask you for a list of Adobe ID's you want to grant access to your packages.
+
+## Software Distribution (Beta) {#software-distribution-beta}
+
+[Software Distribution](https://downloads.experiencecloud.adobe.com) is the new user interface designed to simplify the search and download of AEM Packages. It is currently in beta status and only accessible to Adobe Managed Services customers.
+
+>[!NOTE]
+>
+>* [Package Share](#package-share) will remain accessible until all customers have access to Software Distribution.
+>* All packages are available from both Package Share and Software Distribution.
+
+>[!CAUTION]
+>
+>AEM package manager is not usable with Software Distribution for the moment, you download your packages to your local disk.
 

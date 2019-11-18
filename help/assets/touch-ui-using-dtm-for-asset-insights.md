@@ -1,13 +1,9 @@
 ---
 title: Enable Asset Insights through DTM
-seo-title: Enable Asset Insights through DTM
 description: Learn how to use Adobe Dynamic Tag Management (DTM) to enable Asset Insights.
-seo-description: Learn how to use Adobe Dynamic Tag Management (DTM) to enable Asset Insights.
 uuid: bf069679-f0e4-49a5-8f46-a25f16bfa5ac
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: managing-assets
-content-type: reference
 discoiquuid: 0c20a3ee-069d-451b-a682-111f1b033e73
 docset: aem65
 
@@ -25,10 +21,10 @@ Although you can customize your tracking code to enable third-party CMS solution
 
 Perform these steps to enable Asset Insights through DTM.
 
-1. Tap/click the AEM logo, and go to **Tools** &gt; **Assets** &gt; **Insights Configuration**.
+1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Insights Configuration]**.
 1. [Configure AEM instance with DTM Cloud Service](/help/sites-administering/dtm.md)
 
-   The API token should be available once you log on to [https://dtm.adobe.com](https://dtm.adobe.com/) and visit *Account Settings* from the Profile Icon. This step is not required from the Asset Insights standpoint, because the integration of AEM Sites with Asset Insights is still in the works.
+   The API token should be available once you log on to [https://dtm.adobe.com](https://dtm.adobe.com/) and visit **[!UICONTROL Account Settings]** from the Profile icon. This step is not required from the Asset Insights standpoint, because the integration of AEM Sites with Asset Insights is still in the works.
 
 1. Log on to [https://dtm.adobe.com](https://dtm.adobe.com/), and select a Company, as appropriate.
 1. Create/Open an the existing Web Property

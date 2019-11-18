@@ -3,17 +3,16 @@ title: SharePoint Connector
 seo-title: SharePoint Connector
 description:  Day JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013, version 4.0.
 seo-description: Learn about the Sharepoint Connector in AEM.
-uuid: 2f3b90f9-ec6b-4808-bbd4-20e67b6a7573
+uuid: df650476-4e2a-486f-a007-b5ac437ff99f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: e3f2dc5a-ef5e-432c-be07-b3dedbd6549b
+discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
+docset: aem65
 ---
 
 # SharePoint Connector{#sharepoint-connector}
-
- Day JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013, version 4.0.
 
 This article includes details around the Adobe JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013, version 4.0.
 
@@ -117,7 +116,7 @@ To set the URL of the SharePoint server and advanced options, perform these step
 1. Set the SharePoint Server URL as the value of **Workspaces**.
 1. Tap/click **Save**.
 
-![chlimage_1-81](assets/chlimage_1-81.png)
+![chlimage_1-62](assets/chlimage_1-62.png)
 
 'Workspaces' and 'Default Workspace Name' parameters:
 
@@ -133,13 +132,9 @@ In AEM, perform one more step apart from above configuration steps. Whitelist th
 To whitelist bundles in AEM, perform the following steps:
 
 1. Navigate to the OSGi Management Console: http://localhost:4502/system/console/configMgr.
-
 1. Search for " Apache Sling Login Admin Whitelist" service.
-
 1. Select Bypass the whitelist.
-
 1. Add '**com.day.cq.dam.cq-dam-jcr-connectors**' in whitelist bundles default
-
 1. Click Save.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
@@ -209,7 +204,7 @@ Go to: [http://localhost:4502/system/console/bundles](http://localhost:4502/syst
 1. Search “Day JCR Connector for Microsoft Sharepoint”
 1. Click “Edit the configuration values”
 1. Set the value of ‘Sharepoint Connection Factory’ as ‘com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory’
-1. Click **Save**
+1. Click **Save**.
 
 **Configuring Basic Authentication (Windows)**
 
@@ -231,18 +226,18 @@ To create a user in AEM:
 1. Click Tools.
 1. Click Security.
 1. Click Users.
-1. Click **Create User**
-1. Provide the user ID (User name having access on SharePoint)
-1. Provide the corresponding password
-1. Click the Green tick symbol to create the user
+1. Click **Create User**.
+1. Provide the user ID (User name having access on SharePoint).
+1. Provide the corresponding password.
+1. Click the Green tick symbol to create the user.
 
 To add the user in the admin group:
 
-1. Go to Group Administration
-1. Click the ‘a’ node
-1. Click ‘administrators’
-1. Type the user ID create above in the text box before **Browse** button
-1. Click the Green tick symbol to add the user to admin group
+1. Go to Group Administration.
+1. Click the ‘a’ node.
+1. Click ‘administrators’.
+1. Type the user ID create above in the text box before **Browse** button.
+1. Click the Green tick symbol to add the user to admin group.
 
 ### Disable Token Authentication {#disable-token-authentication}
 

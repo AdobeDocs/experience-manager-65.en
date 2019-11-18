@@ -83,7 +83,7 @@ Perform the following steps to enable debug logging for AEM Forms workflows:
 1. Tap **[!UICONTROL Add new Logger.]**
 1. Select **[!UICONTROL Debug]** as the **[!UICONTROL Log Level]**.
 1. Specify the location of the log file. The default location for the log file is: *logs\error.log*
-1. Specify the name of the package as **com.adobe.granite.workflow.core **in the** **[!UICONTROL Logger]** **column.
+1. Specify the name of the package as **com.adobe.granite.workflow.core** in the **[!UICONTROL Logger]** column.
 
    Executing these steps enables storing the debug logs for the **com.adobe.granite.workflow.core** package. Tap **[!UICONTROL +]** and add the following package names to the list:
 

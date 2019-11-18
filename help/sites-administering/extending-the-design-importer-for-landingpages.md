@@ -3,12 +3,13 @@ title: Extending and Configuring the Design Importer for Landing Pages
 seo-title: Extending and Configuring the Design Importer for Landing Pages
 description: Learn how to configure the Design Importer for landing pages.
 seo-description: Learn how to configure the Design Importer for landing pages.
-uuid: b2bfe831-bfaf-43f3-babc-687bf229dd44
+uuid: a2dd0c30-03e4-4e52-ba01-6b0b306c90fc
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: f8991416-995b-4160-a705-d131e78089ee
+discoiquuid: e02f5484-fbc2-40dc-8d06-ddb53fd9afc2
+docset: aem65
 ---
 
 # Extending and Configuring the Design Importer for Landing Pages{#extending-and-configuring-the-design-importer-for-landing-pages}
@@ -32,6 +33,10 @@ Here are the logical steps to make design importer recognize your custom compone
     * The TagHandlerFactory is an OSGi component. Any references that you wish to provide to your TagHandler must be via this factory.
 
 1. Make sure that your TagHandlerFactory has a better ranking if you wish to override the default.
+
+>[!CAUTION]
+>
+>The Design Importer, used to import landing pages, [has been deprecated with AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 ## Preparing the HTML for Import {#preparing-the-html-for-import}
 
@@ -522,7 +527,7 @@ The below table briefly describes the properties:
 >
 >For example, if the default configuration is
 >
->`/\&ast *CQ_DESIGN_PATH *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >And you need to replace `CQ_DESIGN_PATH` with `VIPURL` in the search pattern, then your search pattern should look like this:
 >
