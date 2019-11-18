@@ -1,14 +1,14 @@
 ---
-title: Target Integration with Experience Fragments
-seo-title: Target Integration with Experience Fragments
-description: Target Integration with Experience Fragments
-seo-description: Target Integration with Experience Fragments
-uuid: 621f57d4-3b8d-49ea-b193-8530c8fbd74e
+title: Exporting Experience Fragments to Adobe Target
+seo-title: Exporting Experience Fragments to Adobe Target
+description: Exporting Experience Fragments to Adobe Target
+seo-description: Exporting Experience Fragments to Adobe Target
+uuid: 2df0faab-5d5e-4fc1-93b3-28b7e6f3c306
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6911c8e3-b12c-466e-8255-5dcd09557d35
+discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 ---
 
