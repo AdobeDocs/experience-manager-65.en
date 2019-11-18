@@ -97,6 +97,8 @@ Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening
 
 To define advanced processing parameters for other asset types, see [Configuring Asset Processing](config-dms7.md#configuring-asset-processing).
 
+See also [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
+
 **To create Dynamic Media image profiles**:
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
