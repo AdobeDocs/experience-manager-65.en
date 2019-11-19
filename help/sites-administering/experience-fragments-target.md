@@ -117,9 +117,8 @@ The required options can be selected in **Page Properties** of the required fold
 
    >[!CAUTION]
    >
-   >The externalizer domain is optional. An AEM externalizer is configured when you want the exported content to point to a specific *publish* domain. For more details see [Configuring the AEM Link Externalizer](/help/site-administering/../sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >The externalizer domain is optional. An AEM externalizer is configured when you want the exported content to point to a specific *publish* domain. For more details see [Configuring the AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
 
-   <!-- check image -->
    For example, for a folder:
 
    ![Folder - Cloud Services](assets/xf-target-integration-01.png "Folder - Cloud Services")
