@@ -120,4 +120,4 @@ It is difficult to accurately estimate the size of the TIFF file supported out-o
 
 ## Size of Assets {#size-of-assets}
 
-AEM currently lets you upload up to 2 GB of assets at a time. For more information on configuring maximum file upload sizes, see [Managing Assets](/help/assets/managing-assets-touch-ui.md).
+By default, AEM allows you to upload assets of file sizes up to 2 GBs. To upload very large assets in AEM, see [Configuration to upload very large assets](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).
