@@ -134,7 +134,7 @@ When you register MBeans as an OSGi service, they are automatically registered w
 
 In addition to the OSGi-related metadata, you must also provide metadata that the Aries JMX Whiteboard module requires for registering the MBean with the MBean Server:
 
-* **The name of the DynamicMBean interface: **Declare that the MBean service implements the `javax.management.DynamicMBea`n interface. This declaration notifies the Aries JMX Whiteboard module that the service is an MBean service.
+* **The name of the DynamicMBean interface:** Declare that the MBean service implements the `javax.management.DynamicMBea`n interface. This declaration notifies the Aries JMX Whiteboard module that the service is an MBean service.
 
 * **The MBean domain and key properties:** On Felix, you provide this information as a property of the MBean's OSGi service. This is the same information that you ordinarily provide to the MBean Server in a `javax.management.ObjectName` object.
 

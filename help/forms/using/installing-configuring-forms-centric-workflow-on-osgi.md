@@ -180,7 +180,7 @@ Perform the following steps to configure the adaptive forms cache:
 
 Adobe Sign enables e-signature workflows for adaptive forms. E-signatures improve workflows to process documents for legal, sales, payroll, human resource management, and many more areas.
 
-In a typical Adobe Sign and Forms-centric workflow on OSGi scenario, a user fills an adaptive form to** **apply for a service**. **For example, a credit card application and a citizen benefits form. When a user fills, submits, and signs the application form, an approval/rejection workflow is started. The service provider reviews the application in AEM Inbox and uses Adobe Sign to electronically sign the application. To enable similar electronic-signature workflows, you can integrate Adobe Sign with AEM Forms.
+In a typical Adobe Sign and Forms-centric workflow on OSGi scenario, a user fills an adaptive form to **apply for a service**. For example, a credit card application and a citizen benefits form. When a user fills, submits, and signs the application form, an approval/rejection workflow is started. The service provider reviews the application in AEM Inbox and uses Adobe Sign to electronically sign the application. To enable similar electronic-signature workflows, you can integrate Adobe Sign with AEM Forms.
 
 To use Adobe Sign with AEM Forms, [Integrate Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 

@@ -367,14 +367,14 @@ The document of record settings of a component are available under its propertie
 
 * **Exclude From Document Of Record**: Setting the property true excludes the field from document of record. This is script-able property named `excludeFromDoR`. Its behavior depends on **Exclude fields from DoR if hidden** form level property.
 
-* **Display panel as table: **Setting the property displays panel as table in document of record if panel has less than 6 fields in it. Applicable for panel only.
-* **Exclude title from Document of Record: **Setting the property excludes title of the panel/table from document of record. Applicable for panel and table only.
-* **Exclude description from Document of Record: **Setting the property excludes description of the panel/table from document of record. Applicable for panel and table only.
+* **Display panel as table:** Setting the property displays panel as table in document of record if panel has less than 6 fields in it. Applicable for panel only.
+* **Exclude title from Document of Record:** Setting the property excludes title of the panel/table from document of record. Applicable for panel and table only.
+* **Exclude description from Document of Record:** Setting the property excludes description of the panel/table from document of record. Applicable for panel and table only.
 
 **Form level settings**
 
-* **Include unbound fields in DoR: **Setting the property includes unbound fields from Schema based adaptive form in document of record. By default it is true.
-* **Exclude fields from DoR if hidden: **Setting the property overrides the behavior of “Exclude From Document of Record” field level property when it’s not true. If fields are hidden at the time of form submission, they will be excluded from document of record if the property is set true, provided “Exclude From Document of Record” property is not set.
+* **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based adaptive form in document of record. By default it is true.
+* **Exclude fields from DoR if hidden:** Setting the property overrides the behavior of “Exclude From Document of Record” field level property when it’s not true. If fields are hidden at the time of form submission, they will be excluded from document of record if the property is set true, provided “Exclude From Document of Record” property is not set.
 
 ## Key considerations when working with document of record {#key-considerations-when-working-with-document-of-record}
 

@@ -91,11 +91,13 @@ In **Unsharp Mask**, you have the following filtering options:
  </tbody>
 </table>
 
-Sharpening is described in [Sharpening Images](https://marketing.adobe.com/resources/help/en_US/s7/sharpening/s7_sharpening_images.pdf).
+Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening_images.pdf.
 
 ## Creating Dynamic Media image profiles {#creating-image-profiles}
 
 To define advanced processing parameters for other asset types, see [Configuring Asset Processing](config-dms7.md#configuring-asset-processing).
+
+See also [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
 
 **To create Dynamic Media image profiles**:
 

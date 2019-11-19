@@ -141,7 +141,7 @@ Refer to [AEM Assets vs. AEM MediaLibrary](/help/assets/medialibrary.md) for mor
 
 Yes, a customer using WordPress can use Adobe Asset Picker to select images from their AEM Assets server to add to posts on their WordPress site.
 
-Refer to [Asset Selector](/help/assets/asset-selector.md) for more information.
+Refer to [Asset Selector](/help/assets/search-assets.md#assetselector) for more information.
 
 #### Is it possible to extend the search facets in AEM Assets to add additional predicates ? {#is-it-possible-to-extend-the-search-facets-in-aem-assets-to-add-additional-predicates}
 

@@ -77,4 +77,3 @@ user-guide-title: AEM 6.5 Classic UI Authoring User Guide
     + [Adding Scene7 Features to your Page](manage-assets-classic-s7.md)
     + [Working with Dynamic Media](dynamic-media-assets.md)
     + [Naming conventions for assets testing](asset-naming-conventions.md)
-    + [Using Asset Share Pages](manage-assets-classic-using-share-page.md)

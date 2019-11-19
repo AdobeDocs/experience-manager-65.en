@@ -1,15 +1,14 @@
 ---
 title: Folder Metadata Schema
-seo-title: Folder Metadata Schema
-description: This article describes how to create metadata schema for asset folders in AEM Assets.
-seo-description: How to create metadata schema for asset folders in AEM Assets.
+description: Learn how to create metadata schema for asset folders in AEM Assets
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 uuid: bf8d066c-0f23-4d18-9ce9-860fa505dea2
 discoiquuid: 23009e50-a026-4823-8e4c-7a313a11b38c
 docset: aem65
 
 ---
 
-# Folder Metadata Schema{#folder-metadata-schema}
+# Folder Metadata Schema {#folder-metadata-schema}
 
 Adobe Experience Manager (AEM) Assets lets you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages.
 
@@ -17,7 +16,7 @@ Adobe Experience Manager (AEM) Assets lets you create metadata schemas for asset
 
 Use the Folder Metadata Schema Forms editor to create and edit metadata schemas for folders.
 
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]**> **[!UICONTROL Folder Metadata Schemas]**.
+1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
 1. In the Folder Metadata Schema Forms page, tap/click **[!UICONTROL Create]**.
 1. Specify a name for the form, and tap/click **[!UICONTROL Create]**. The new schema form is listed in the Schema Forms page.
 
@@ -100,7 +99,7 @@ The **[!UICONTROL Build Form]** tab lists form items that you use in your folder
 
 To edit the properties of form items, tap/click the component and edit all or a subset of the following properties in the **[!UICONTROL Settings]** tab.
 
-**[!UICONTROL Field Label]**:** **The name of the metadata property that is displayed on the properties page for the folder.
+**[!UICONTROL Field Label]**: The name of the metadata property that is displayed on the properties page for the folder.
 
 **[!UICONTROL Map to Property]**: This property specifies the relative path of the folder node in the CRX repository where it is saved. It starts with "**./**", which indicates that the path is under the folder's node.
 

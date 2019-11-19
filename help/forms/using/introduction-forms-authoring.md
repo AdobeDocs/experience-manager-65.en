@@ -70,7 +70,7 @@ The Sidebar allows you to
 
 The sidebar comprises the following browsers:
 
-* **Content** **browser**
+* **Content browser**
   In the content browser, you can see
 
     * **Form Objects**
@@ -307,11 +307,11 @@ For more best practices around adaptive forms, see [Best practices for working w
 
 The page toolbar on the top provides options that let you preview the form, change form properties, and edit form layout. You can preview the form when you author it, and make changes accordingly. In the page toolbar, you see:
 
-* **Toggle Side Panel ** ![toggle-side-panel](assets/toggle-side-panel.png): Lets you show or hide Sidebar.
+* **Toggle Side Panel** ![toggle-side-panel](assets/toggle-side-panel.png): Lets you show or hide Sidebar.
 
 * **Page information** ![theme-options](assets/theme-options.png): Lets you view page properties, publish/unpublish a form, start a form workflow, and open the form in classic UI.
 
-* **Emulator ** ![ruler](assets/ruler.png): Lets you emulate the look of your form for different display sizes such as tablets and phones.
+* **Emulator** ![ruler](assets/ruler.png): Lets you emulate the look of your form for different display sizes such as tablets and phones.
 
 * **Edit**: Lets you select other modes such as: **Edit, Style, Developer, **and** Design**.
 
@@ -374,16 +374,16 @@ The adaptive form page is the actual form. It is like any other WCM page modeled
 
 The content structure typically contains the following primary components:
 
-* **guideContainer**: The root of an adaptive form, which is marked as **Start of adaptive form **in the adaptive form UI. In** **this component, you can specify:
+* **guideContainer**: The root of an adaptive form, which is marked as **Start of adaptive form **in the adaptive form UI. In this component, you can specify:
 
     * *Mobile Layout of the adaptive form*: Defines the appearance of the form on mobile devices.
     * *Thank You page*: Defines the page where the user is redirected after submitting the form.
     * *Submit Action*: Defines how the form is processed on the server once the user submits the form.
     * *Styling*: Specifies the path to the CSS file used to customize the appearance of the form.
 
-* **rootPanel: **The root panel of an adaptive form. It can contain subpanels under the items node. Each panel including the root panel can have a layout associated with it. The layout of the panel dictates how the form is laid out. For example, in the Accordion layout*, *its items are laid out as Accordion steps.
+* **rootPanel:** The root panel of an adaptive form. It can contain subpanels under the items node. Each panel including the root panel can have a layout associated with it. The layout of the panel dictates how the form is laid out. For example, in the Accordion layout*, *its items are laid out as Accordion steps.
 
-* **toolbar: **An adaptive form container has an associated global toolbar, which is global to the form. This toolbar can be added using the **Add Toolbar **action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
+* **toolbar:** An adaptive form container has an associated global toolbar, which is global to the form. This toolbar can be added using the **Add Toolbar **action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
 
-* **assets: **This node contains additional information used for form authoring. For example, form model details, localization details, and so on).
+* **assets:** This node contains additional information used for form authoring. For example, form model details, localization details, and so on).
 

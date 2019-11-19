@@ -13,14 +13,14 @@ docset: aem65
 
 ---
 
-# Connecting to Adobe Analytics and Creating Frameworks{#connecting-to-adobe-analytics-and-creating-frameworks}
+# Connecting to Adobe Analytics and Creating Frameworks {#connecting-to-adobe-analytics-and-creating-frameworks}
 
 To track web data from your AEM pages in Adobe Analytics, create a Adobe Analytics Cloud Services configuration and a Adobe Analytics framework:
 
 * **Adobe Analytics Configuration:** The information about your Adobe Analytics account. The Adobe Analytics configuration enables AEM to connect to Adobe Analytics. Create an Adobe Analytics configuration for each account that you use.
 * **Adobe Analytics Framework:** A set of mappings between Adobe Analytics report suite properties and CQ variables. Use a framework to configure how your website data populates your Adobe Analytics reports. Frameworks are associated with a Adobe Analytics configuration. You can create multiple frameworks for each configuration.
 
-When you assocate a web page with a framework, the framework performs tracking for that page and the descendents of that page. Page views can then be retrieved from Adobe Analytics and displayed in the Sites console.
+When you associate a web page with a framework, the framework performs tracking for that page and the descendants of that page. Page views can then be retrieved from Adobe Analytics and displayed in the Sites console.
 
 ## Prerequisites {#prerequisites}
 
@@ -78,88 +78,19 @@ Use the [Web Console to configure the OSGi bundle](/help/sites-deploying/configu
 
 ## Configuring the Connection to Adobe Analytics {#configuring-the-connection-to-adobe-analytics}
 
-Create a Adobe Analytics configuration so that AEM can authenticate with the Adobe Analytics server. To create the configuration you provide the credentials for your Adobe Analytics account.
-
-1. Using **Navigation**, select **Tools**, **Cloud Services**, then **Legacy Cloud Services**.
-1. Scroll to **Adobe Analytics**:
-
-    * If **Configure now** is shown, select this link.
-    * If **Show Configurations** is shown, select this link and then click **[+]** next to **Available Configurations**.
-
-1. In the **Create Configurations** dialog:
-
-    * Specify a title.
-    * Optionally, specify a **Name** for the node used to store the configuration in the repostory.
-    * Do not change the Parent Configuration property; for example, **Adobe Analytics Configuration**.
-
-1. Select **Create**.
-1.
-
-   >[!NOTE]
-   >
-   >The Shared Secret can be seen in the **Account Information** in Adobe Analytics.
-
-   When the **Edit Component** dialog opens, specify values for the following properties:
-
-    * **Company**: your company's name as featured on Adobe Analytics
-    * **Username**: the name used to log in to Adobe Analytics
-    * **Shared Secret**: the Adobe Analytics shared secret for the above account
-    * **Data Center**: The location of the Adobe Analytics data center that your account is associated with.
-
-    * **Do not add tracking tag to page**: Select this option when you are using Adobe Analytics reports in the [Content Insights](/help/sites-authoring/content-insights.md) feature, and you are also using [Dynamic Tag Management](/help/sites-administering/dtm.md) (DTM) with AEM, and the DTM web property has the Adobe Analytics tool installed. In this case, selecting this option prevents two instances of the tracking code being added to pages.
-
-    * **Do not track the page load event**: as appropriate
-
-    * **Use App Measurement**: as appropriate
-
-    * **Use ClientContext**: as appropriate
-
-    * **Additional context data**: as appropriate
-
-    * **Segment**: as appropriate
-
-   Please contact your Adobe Analytics representative to confirm any details and make sure you fill in these credentials correctly.
-
-1. Click **Connect to Adobe Analytics**. When the message that indicates that the connection was successful appears, click **OK**.
-1. On the dialog, click **OK**.
+>[!CAUTION]
+>
+>Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM.
+>
+>The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
 
 ## Configuring for the Activity Map {#configuring-for-the-activity-map}
 
-To be able to see and use the [Activity Map in the page editor](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor), you need to configure:
-
-* Users (for both editing and/or configuring) need to be in the group:
-  `analytics-administrators`
-  as there is a restriction on node `/libs/cq/activitymap/content/settings`
-
-    * The settings are loaded via `/mnt/override/libs/cq/activitymap/content/settings` so you can override this group restriction.
-
-* The page in question needs to be published.
-* Analytics Integration
-
-    * Use AppMeasurement set to `true`
-
-    * Report Suite configured to use the `all` run mode
-
-* DTM Integration
-
-    * Use `AppMeasurement.js`
-
-    * `Include Production code on Author` set to true
-
->[!NOTE]
+>[!CAUTION]
 >
->Since `ActivityMap` inspects the tag (report suite) on the page to fetch report data (and publishing data is a key aim) `ActivityMap` is only supported if the report suite on author and publish is the same.
-
->`ActivityMap` cannot show data from report suites other than the ones used for tracking on the page.
-
->[!NOTE]
+>Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM.
 >
->For details see also:
->
->* [Enable Activity Map](https://marketing.adobe.com/resources/help/en_US/analytics/activitymap/activitymap-enable.html) from the Analytics documentation.
->
->* The videos at [Set up Adobe Anslytics Activity Map with AEM Sites](https://helpx.adobe.com/experience-manager/kt/sites/using/activity-map-feature-video-setup.html).
->
+>The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
 
 ## Creating a Adobe Analytics Framework {#creating-a-adobe-analytics-framework}
 
@@ -176,8 +107,8 @@ For the Report Suite ID (RSID) that you are using, you can control which server 
 >For example, a framework is configured to use the *diiweretail* report suite and author is the selected server instance. When pages are published along with the framework, calls are still made to Adobe Analytics, however these calls do not contain the RSID. Only calls from the author instance include the RSID.
 
 1. Using **Navigation**, select **Tools**, **Cloud Services**, then **Legacy Cloud Services**.
-1. Scroll to **Adobe Analytics** and click **[+]** next to **Available Configurations**.
-1. Click the **[+]** link next to your Adobe Analytics configuration.
+1. Scroll to **Adobe Analytics** and click **&#91;+&#93;** next to **Available Configurations**.
+1. Click the **&#91;+&#93;** link next to your Adobe Analytics configuration.
 
 1. In the **Create Framework** dialog:
 
@@ -217,7 +148,7 @@ Start by opening the panel. Press the downward arrow next to **Servers**:
 
     * contains the URL used to send Adobe Analytics calls
 
-        * cname - defaults to the Adobe Analytics account's *Company name *
+        * cname - defaults to the Adobe Analytics account's *Company name*
         * d1 - corresponds to the data center the information will be sent to (can be either d1, d2 or d3)
         * sc.omtrdc.net - domain name
 
@@ -238,7 +169,7 @@ When a page is associated with an Adobe Analytics framework, the page sends data
 Descendents of the page inherit the association with the framework. For example, when you associate the root page of your site with a framework, all pages of the site are associated with the framework.
 
 1. From the **Sites** console, select the page you wish to set up with tracking.
-1. Open the ** [Page Properties](/help/sites-authoring/editing-page-properties.md)**, either directly from the console, or the page editor.
+1. Open the **[Page Properties](/help/sites-authoring/editing-page-properties.md)**, either directly from the console, or the page editor.
 1. Open the** Cloud Services** tab.
 
 1. Use the **Add Configuration** drop down to select **Adobe Analytics** from the available options. If inheritance is place you need to disable that before the selector becomes available.
@@ -246,7 +177,7 @@ Descendents of the page inherit the association with the framework. For example,
 1. The drop down selector for **Adobe Analytics** will be appended to the options available. Use this to select the required framework configuration.
 
 1. Select **Save & Close**.
-1. ** [Publish](/help/sites-authoring/publishing-pages.md)** the page to activate the page and any connected configurations/files.
+1. **[Publish](/help/sites-authoring/publishing-pages.md)** the page to activate the page and any connected configurations/files.
 1. The final step is to visit the page on the publish instance and search for a keyword (e.g. aubergine) using the **Search** component.
 1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Marketing Cloud Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger_install.html).
 1. Using the example provided, the call should contain the value entered (i.e. aubergine) in eVar7 and the events list should contain event3.

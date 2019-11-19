@@ -70,4 +70,4 @@ Considering all these stages as part overall project plan, will help manage expe
 
 Once you are thorough with testing, Proofs of Concept, pilot programs and roll outs, follow the next tutorial that dives deep into Project Management and the processes involved.
 
-Navigate to ** [Part 4: Project Management and Deployment](/help/screens/project-management-and-deployment.md)** for more details.
+Navigate to **[Part 4: Project Management and Deployment](/help/screens/project-management-and-deployment.md)** for more details.

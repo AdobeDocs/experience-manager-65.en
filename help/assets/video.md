@@ -57,7 +57,7 @@ The following step-by-step workflow description is designed to help you get up a
         * [Organizing digital assets](/help/assets/organize-assets.md)
           Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/best-practices-for-file-management.md)
 
-        * [Searching video assets](/help/assets/search-video-assets.md) or [Searching assets](/help/assets/managing-assets-touch-ui.md#searchingassets)
+        * [Searching video assets](/help/assets/search-assets.md#custompredicates) or [Searching assets](/help/assets/managing-assets-touch-ui.md#searchingassets)
 
     * Preview and publish video assets
 
@@ -273,8 +273,8 @@ The following are best-practice tips for encoding source video files.
 
 For advice about video encoding, see the following:
 
-* Article: *Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution: * [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
-* Video: *Video Encoding Basics: * [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en).
+* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
+* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
 
 ### Source video files {#source-video-files}
 

@@ -54,11 +54,11 @@ To associate post processes with letters or interactive communications, you firs
 
    Go to the Adobe Experience Manager Web Console Configurations page > **[!UICONTROL Correspondence Management Configurations]** and set up the following parameters:
 
-    1. **inPDFDoc (PDF document parameter): **A PDF document as input. This input contains the rendered letter as input. The parameter names indicated are configurable. They can be configured from Correspondence Management configurations from configuration.
-    1. **inXMLDoc (XML data parameter): **An XML document as input. This input contains data entered by user in the form of XML.
-    1. **inXDPDoc (XDP document parameter): **An XML document as input. This input contains underlying layout (XDP).
-    1. **inAttachmentDocs (Attachment Documents parameter): **A list input parameter. This input contains all the attachments as input.
-    1. **redirectURL (Redirect URL Output): **An output type indicating the url to redirect to.
+    1. **inPDFDoc (PDF document parameter):** A PDF document as input. This input contains the rendered letter as input. The parameter names indicated are configurable. They can be configured from Correspondence Management configurations from configuration.
+    1. **inXMLDoc (XML data parameter):** An XML document as input. This input contains data entered by user in the form of XML.
+    1. **inXDPDoc (XDP document parameter):** An XML document as input. This input contains underlying layout (XDP).
+    1. **inAttachmentDocs (Attachment Documents parameter):** A list input parameter. This input contains all the attachments as input.
+    1. **redirectURL (Redirect URL Output):** An output type indicating the url to redirect to.
 
    Your forms workflow must have either PDF document parameter or XML data parameter as input with the same name as specified in **[!UICONTROL Correspondence Management Configurations]**. This is required for the process to be listed in the Post Process dropdown.
 

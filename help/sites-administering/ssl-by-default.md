@@ -3,17 +3,18 @@ title: SSL By Default
 seo-title: SSL By Default
 description: Learn how to use SSL by Default in AEM.
 seo-description: Learn how to use SSL by Default in AEM.
-uuid: 262474b0-f5fa-4cff-8727-9f39c5b5f760
+uuid: 2fbfd020-1d33-4b22-b963-c698e62f5bf6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
-discoiquuid: 3a1817cd-357b-473d-9a09-e18bbfc60dfd
+discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
+docset: aem65
 ---
 
 # SSL By Default{#ssl-by-default}
 
-In an effort to continously improve the security of AEM, Adobe has introduced a feature called SSL By Default. The purpose is to encourage the use of HTTPS to connect to AEM instances.
+In an effort to continuously improve the security of AEM, Adobe has introduced a feature called SSL By Default. The purpose is to encourage the use of HTTPS to connect to AEM instances.
 
 ## Enabling SSL By Default {#enabling-ssl-by-default}
 
@@ -21,21 +22,21 @@ You can start configuring SSL By Default by clicking the relevant Inbox message 
 
 In the list, select and open the **Configure HTTPS** alert:
 
-![chlimage_1-341](assets/chlimage_1-341.png)
+![chlimage_1-103](assets/chlimage_1-103.png)
 
->[NOTE!]
+>[!NOTE]
 >
 >If the **Configure HTTPS** alert is not present in the Inbox, you can navigate directly to the HTTPS Wizard by going to *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
-A service user called **ssl-service** has been created for this feature. Once you open the alert, you will be guided through the follwing configuration wizard:
+A service user called **ssl-service** has been created for this feature. Once you open the alert, you will be guided through the following configuration wizard:
 
 1. First, set up the Store Credentials. These are the credentials for the **ssl-service** system user's key store that will contain the private key and trust store for the HTTPS listener.
 
-   ![chlimage_1-342](assets/chlimage_1-342.png)
+   ![chlimage_1-104](assets/chlimage_1-104.png)
 
 1. Once you enter the credentials, click **Next** in the upper right corner of the page. Then, upload the associated private key and certificate for the SSL connection.
 
-   ![chlimage_1-343](assets/chlimage_1-343.png)
+   ![chlimage_1-105](assets/chlimage_1-105.png)
 
    >[!NOTE]
    >

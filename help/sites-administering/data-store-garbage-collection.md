@@ -3,12 +3,13 @@ title: Data Store Garbage Collection
 seo-title: Data Store Garbage Collection
 description: Learn how to configure Data Store Garbage Collection to free up disk space.
 seo-description: Learn how to configure Data Store Garbage Collection to free up disk space.
-uuid: 1f49e9e9-3a0d-4687-844d-8a32fb30f2b4
+uuid: 49488a81-986a-4d1a-96c8-aeb6595fc094
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 5ee9d11a-85c2-440d-b487-a38d04dc040b
+discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
+docset: aem65
 ---
 
 # Data Store Garbage Collection {#data-store-garbage-collection}
@@ -105,15 +106,15 @@ Before running data store garbage collection you should check that no backups ar
 1. Open the Operations Dashboard by **Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Maintenance**.
 1. Click or tap the **Weekly Maintenance Window**.
 
-   ![chlimage_1-121](assets/chlimage_1-121.png)
+   ![chlimage_1-64](assets/chlimage_1-64.png)
 
 1. Select the **Data Store Garbage Collection** task and then click or tap the **Run** icon.
 
-   ![chlimage_1-122](assets/chlimage_1-122.png)
+   ![chlimage_1-65](assets/chlimage_1-65.png)
 
 1. Data store garbage collection runs and its status is displayed in the dashboard.
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+   ![chlimage_1-66](assets/chlimage_1-66.png)
 
 >[!NOTE]
 >
@@ -167,7 +168,7 @@ If you don't wish to run data store garbage collection with the Weekly Maintenan
 Here is an example curl command to invoke data store garbage colleciton via the command line:
 
 ```shell
-curl -u admin:admin -X POST --data markOnly=true  http://localhost:4503/system/console/jmx/org.apache.jackrabbit.oak"%"3Aname"%"3Drepository+manager"%"2Ctype"%"3DRepositoryManagement/op/startDataStoreGC/boolean
+curl -u admin:admin -X POST --data markOnly=true  https://localhost:4503/system/console/jmx/org.apache.jackrabbit.oak"%"3Aname"%"3Drepository+manager"%"2Ctype"%"3DRepositoryManagement/op/startDataStoreGC/boolean
 
 ```
 
@@ -178,9 +179,7 @@ The curl command returns immediately.
 The data store consistency check will report any data store binaries that are missing but are still referenced. To start a consistency check, follow these steps:
 
 1. Go to the JMX console. For information on how to use the JMX console, see [this article](/help/sites-administering/jmx-console.md#using-the-jmx-console).
-
-1. Search for the **Blob GC** Mbean and click it.
-
+1. Search for the **BlobGarbageCollection** Mbean and click it.
 1. Click the `checkConsistency()` link.
 
 After the consistency check is complete, a message will show the number of binaries reported as missing. If the number is greater than 0, check the `error.log` for more details on the missing binaries.

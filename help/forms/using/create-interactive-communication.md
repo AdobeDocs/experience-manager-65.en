@@ -29,7 +29,7 @@ The following are the prerequisites for creating an Interactive Communication:
 ## Create Interactive Communication {#createic}
 
 1. Log in to the AEM author instance and navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Tap **[!UICONTROL Create]** **and select **[!UICONTROL Interactive Communication]**. Create Interactive Communication page appears.
+1. Tap **[!UICONTROL Create]** and select **[!UICONTROL Interactive Communication]**. Create Interactive Communication page appears.
 
    ![create-interactive-communication](assets/create-interactive-communication.png)
 
@@ -147,7 +147,7 @@ For more information on the Interactive Communication authoring interface, see [
     * **Text Fragment**: If selected, you can browse and select a text document fragment whose content is rendered in the field. Only those text document fragments can be bound to variables that have no variables within.
     * **Data Model Object**: Select a form data model property whose value is populated in the field.
     * **Default Value:** You can define a default value for the variable using this field. The value is displayed when you preview the Interactive Communication or in the Agent UI.
-    * **Display Pattern: **You can also define a display format for a variable. Select any of the pre-defined options from the **Type** drop-down list to apply a display format to a variable. Select **Custom** to define a display pattern that is not available in the list. For more information, see [Data display patterns](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146).
+    * **Display Pattern:** You can also define a display format for a variable. Select any of the pre-defined options from the **Type** drop-down list to apply a display format to a variable. Select **Custom** to define a display pattern that is not available in the list. For more information, see [Data display patterns](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146).
 
    Navigate to [Variables and Data Model Objects](../../forms/using/create-interactive-communication.md#hiddenvariables) to set up binding of hidden variables in the document fragment.
 
@@ -346,7 +346,7 @@ You can add dynamic tables in Interactive Communication using layout fragments. 
             * **[!UICONTROL Data model object]**: A form data model property's value is populated in the field. Alternatively, select the **Data Sources** tab and drag-and-drop the property to the field.
 
         * **[!UICONTROL Data Model Object]**: The form data model property whose value is populated in the field.
-        * **[!UICONTROL Default Value]**: Default value ensures that the field is not empty when there is no value provided by the specified data model object. The default value is prepopulated in the field. **[!UICONTROL]**
+        * **[!UICONTROL Default Value]**: Default value ensures that the field is not empty when there is no value provided by the specified data model object. The default value is prepopulated in the field.
 
         * **[!UICONTROL Editable By Agent]**: Select to allow the agent to edit the value in the field in the Agent UI.
 
@@ -477,7 +477,7 @@ To add button and define rules on it:
 1. In the **When** section, select **clicked** from the state of the button drop-down list.
 1. In the **Then** section:
 
-    1. Select an action from the drop-down list. For example, select **Navigate** **to** as the action type.
+    1. Select an action from the drop-down list. For example, select **Navigate to** as the action type.
 
     1. Specify the URL of the Interactive Communication, adaptive form, an asset, or a web page. For example, specify the URL in the following format to navigate to another Interactive Communication: https://&lt;server-name&gt;:&lt;port&gt;/editor.html/content/forms/af/&lt;Interactive Communication name&gt;/channels/&lt;channel name - print or web&gt;.html
     1. Specify the option to open the asset in same tab, new tab, or new window.
@@ -575,15 +575,15 @@ Once you have auto-generated content in the web channel using the Synchronize op
 
 Tap the component to view the following options:
 
-* **Copy: **Copy a component and paste it in other places in the Interactive Communication.
-* **Cut: **Move a component from one place to another in the Interactive Communication.
-* **Insert Component: **Insert a component above the selected component.
-* **Paste: **Paste the component you cut or copied using the options described above.
-* **Group: **Select multiple components if you want to cut, copy, or paste more than one component together.
-* **Parent: **Select the parent of a component.
-* **View SOM Expression: **View the [SOM expression](../../forms/using/using-som-expressions-adaptive-forms.md) for the component.
+* **Copy:** Copy a component and paste it in other places in the Interactive Communication.
+* **Cut:** Move a component from one place to another in the Interactive Communication.
+* **Insert Component:** Insert a component above the selected component.
+* **Paste:** Paste the component you cut or copied using the options described above.
+* **Group:** Select multiple components if you want to cut, copy, or paste more than one component together.
+* **Parent:** Select the parent of a component.
+* **View SOM Expression:** View the [SOM expression](../../forms/using/using-som-expressions-adaptive-forms.md) for the component.
 
-* **Group Objects in Panel: **Group the components in a panel to be able to perform operations on those components simultaneously. For details, see ** [Group objects in Panel](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**.
+* **Group Objects in Panel:** Group the components in a panel to be able to perform operations on those components simultaneously. For details, see **[Group objects in Panel](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**.
 
 * **Cancel Inheritance:** [Cancel the inheritance](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) of the components within the target area to edit them.
 

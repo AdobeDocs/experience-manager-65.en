@@ -275,10 +275,10 @@ To get started:
 
     * Select **Create Node:**
 
-        * **Name **localhost.4503
-          (do *not *use ':')
+        * **Name** localhost.4503
+          (do *not* use ':')
 
-        * **Type ** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+        * **Type** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. With newly created `localhost.4503` node selected:
 

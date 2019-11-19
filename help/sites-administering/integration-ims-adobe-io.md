@@ -17,9 +17,9 @@ docset: aem65
 
 >[!CAUTION]
 >
->Before starting this procedure [Adobe Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) must provision your account for Adobe I/O, Adobe Target and Adobe IMS (Idendity Management System).
+>Before starting this procedure [Adobe Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) must provision your account for Adobe I/O, Adobe Target and Adobe IMS (Identity Management System).
 
-The integration of AEM with Adobe Target via the Target Standard API requires the configuration of Adobe IMS (Identity Managment System) and Adobe I/O.
+The integration of AEM with Adobe Target via the Target Standard API requires the configuration of Adobe IMS (Identity Management System) and Adobe I/O.
 
 >[!NOTE]
 >
@@ -38,7 +38,6 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
 1. Select **Create** to open the **Adobe IMS Technical Account Configuration**.
 1. Using the drop down under **Cloud Configuration**, select **Adobe Target**.
 1. Activate **Create new certificate** and enter a new alias.
-
 1. Confirm with **Create certificate**.
 
    ![](assets/integrate-target-io-01.png)
@@ -198,7 +197,6 @@ To confirm that the configuration is operating as expected:
 The configuration can now be referenced for a Cloud Service to use the Target Standard API:
 
 1. Open the **Tools** menu. Then, within the **Cloud Services** section, select **Legacy Cloud Services**.
-
 1. Scroll down to **Adobe Target** and select **Configure now**.
 
    The **Create Configuration** dialog will open.
@@ -213,7 +211,11 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 1. Enter the details in the **Adobe Target Settings** tab:
 
-    * **Client Code**: the Target account Client Code
+    * **Client Code**: the Adobe IMS Tenant ID
+
+      >[!CAUTION]
+      >
+      >The Adobe IMS Tenant ID must be entered in the field labelled Client Code.
 
     * **Authentication**: IMS
     * **IMS Configuration**: select the name of the IMS Configuration
@@ -235,7 +237,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 1. Click **Connect to Target** to initialize the connection with Adobe Target.
 
-   If the connection is successful, the message** Connection successful** is displayed.
+   If the connection is successful, the message **Connection successful** is displayed.
 
 1. Select **OK** on the message, followed by **OK** on the dialog to confirm the configuration.
 1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that will be sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.

@@ -33,8 +33,7 @@ A [Knowledge Base](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quick
 
 ## Assets {#assets}
 
-* **Search: **Search does not result any returns if the search string contains leading space(s) ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
-
+* **Search:** Search does not result any returns if the search string contains leading space(s) ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
 * **Folder Metadata Schema**: After adding a choice button, the ID and Value field are not rendered as expected and the delete functionality does not work. (CQ-4261144)
 * When renaming an asset, it is not possible to use a whitespace in the asset name. (CQ-4266403)
 

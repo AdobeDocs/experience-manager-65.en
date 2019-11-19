@@ -45,7 +45,7 @@ Sarah receives an email with the subject “Your Auto Insurance Renewal”.
 
 #### See it yourself {#see-it-yourself}
 
-Go to **Adobe Experience Manager &gt; Forms &gt; Forms & Documents &gt; We.Finance &gt; Auto Insurance. **Select the** Auto Insurance Renewal **interactive communication** **and** **click** Open Agent UI**. The interactive communication opens up in the Agent UI. Enter a valid email address to receive the email with attached policy document and click Submit.
+Go to **Adobe Experience Manager** &gt; **Forms** &gt; **Forms & Documents** &gt; **We.Finance** &gt; **Auto Insurance**. Select the Auto Insurance Renewal **interactive communication** and click **Open Agent UI**. The interactive communication opens up in the Agent UI. Enter a valid email address to receive the email with attached policy document and click Submit.
 
 You can access and review the Auto Insurance Renewal interactive communication directly from `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
@@ -83,7 +83,7 @@ The Renew Now button directs Sarah to the payment page. The payment page is an a
 
 #### See it yourself {#see-it-yourself-2}
 
-Click **Renew Now **to reach to the Payment page. Fill in your Credit Card information, and click **Make Payment.**
+Click **Renew Now** to reach to the Payment page. Fill in your Credit Card information, and click **Make Payment.**
 
 You can reach the payment page in the authoring instance at
 

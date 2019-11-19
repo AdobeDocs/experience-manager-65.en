@@ -1,29 +1,21 @@
 ---
 title: Managing Assets with the Touch-Optimized UI
-seo-title: Managing Assets with the Touch-Optimized UI
 description: Learn about various asset management and editing tasks that you can perform using the Touch-optimized user interface of AEM Assets.
-seo-description: Learn how to upload, manage, and edit assets using the touch-optimized user interface
 uuid: 7ee746f1-bbca-4bce-82e7-fed9fa9e1170
-contentOwner: msm-service
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-content-type: reference
-topic-tags: authoring
 discoiquuid: 83a825ff-5c3d-4e2c-a265-eead090a5984
 docset: aem65
 
 ---
 
-# Managing Assets with the Touch-Optimized UI{#managing-assets-with-the-touch-optimized-ui}
+# Managing assets with the Touch-optimized UI {#managing-assets-with-the-touch-optimized-ui}
 
-This article describes how to manage and edit assets using the Adobe Experience Manager (AEM) Assets Touch-optimized user interface (UI). For elementary knowledge about the UI, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md).
-
->[!CAUTION]
->
->See also [Managing Content Fragments](/help/assets/content-fragments-managing.md) assets.
+This article describes how to manage and edit assets using the Adobe Experience Manager (AEM) Assets Touch-optimized user interface (UI). For elementary knowledge about the UI, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
 
 ## Creating folders {#creating-folders}
 
-When organizing a collection of assets, for example, all *Nature* images, you can create folders to keep them together. You can use folders to categorize and organize your assets. AEM Assets does not require you to organize assets in folders to work better.
+When organizing a collection of assets, for example, all `Nature` images, you can create folders to keep them together. You can use folders to categorize and organize your assets. AEM Assets does not require you to organize assets in folders to work better.
 
 >[!NOTE]
 >
@@ -40,6 +32,11 @@ The following (space-separated list of) characters are not supported:
 
 ## Uploading Assets {#uploading-assets}
 
+<!-- TBD the following:
+Move this section into a new article. Already a CQDOC ticket is created for this.
+In this complete article, replace emphasis with UICONTROL where appropriate.
+-->
+
 You can upload various types of assets (including images, PDF files, RAW files, and so on) from your local folder or a network drive to AEM Assets.
 
 >[!NOTE]
@@ -55,28 +52,28 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 1. In the Assets UI, navigate to the location where you want to add digital assets.
 1. To upload the assets, do one of the following:
 
-    * On the toolbar, tap the **Create** **[!UICONTROL]** icon. Then, on the menu, then tap **Files**. You can rename the file in the presented dialog if needed.
+    * On the toolbar, tap the **[!UICONTROL Create]** icon. Then, on the menu, then tap **[!UICONTROL Files]**. You can rename the file in the presented dialog if needed.
     * In a browser that supports HTML5, drag the assets directly on the Assets UI. The dialog to rename file is not displayed.
 
    ![create_menu](assets/create_menu.png)
 
    To select multiple files, press the Ctrl/Command key and select the assets in the file picker dialog. If using an iPad, you can only select one file at a time.
 
-   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **Pause** icon beside progress bar that appears when the uploading starts.
+   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when the uploading starts.
 
    ![chlimage_1-211](assets/chlimage_1-211.png)
 
-   The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, the **Pause** button in the progress bar appears when assets of size greater than 1000 MB are uploaded.
+   The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
-   The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **Pause** button appears.
+   The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
 
    To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
 
-   When you click the **Pause** icon, it toggles to a **Play** icon. To resume uploading, click the **Play** icon.
+   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
 
    ![chlimage_1-212](assets/chlimage_1-212.png)
 
-   To cancel an ongoing upload, click the '**X**' button beside the progress bar. When you cancel the upload operation, AEM Assets deletes the partially uploaded portion of the asset.
+   To cancel an ongoing upload, click close ('X') next to the progress bar. When you cancel the upload operation, AEM Assets deletes the partially uploaded portion of the asset.
 
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 
@@ -635,11 +632,7 @@ See also [Previewing Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 1. Navigate to the location of the asset whose metadata you want to edit.
 
-1. Select the asset, and tap/click **Properties** from the toolbar to view asset properties.
-
-   ![properties](assets/properties.png)
-
-   Alternatively, choose the **Properties** quick action on the asset card.
+1. Select the asset, and tap/click **Properties** from the toolbar to view asset properties. Alternatively, choose the **Properties** quick action on the asset card.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
@@ -653,17 +646,9 @@ See also [Previewing Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **Off Time** field.
+1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **Off Time** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
-
-   >[!NOTE]
-   >
-   >The deactivation date should be later than the activation date for an asset.
-
-   >[!NOTE]
-   >
-   >After the Off time is reached, the asset and its renditions are no longer available in the Assets UI.
 
 1. In the **Tags** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in AEM.
 

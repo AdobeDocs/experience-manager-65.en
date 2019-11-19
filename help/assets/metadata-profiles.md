@@ -4,7 +4,7 @@ seo-title: Metadata Profiles
 description: Know about metadata profiles for assets. Learn how to create a metadata profile and apply it to folder assets.
 seo-description: Know about metadata profiles for assets. Learn how to create a metadata profile and apply it to folder assets.
 uuid: 05732f17-863a-4aa6-bb1a-9549565be076
-contentOwner: Rick Brough
+contentOwner: author
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
@@ -17,9 +17,11 @@ docset: aem65
 
 A Metadata Profile lets you apply default metadata to assets within a folder. Create a Metadata Profile and apply it to a folder. Any asset that you subsequently upload to the folder inherits the default metadata that you configured in the Metadata Profile.
 
+See also [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
+
 ## Adding a metadata profile {#adding-a-metadata-profile}
 
-1. Tap or click the AEM logo and navigate to **Tools **&gt; **Assets **&gt; **Metadata Profiles**, and then tap or click **Create**.
+1. Tap or click the AEM logo and navigate to **Tools** &gt; **Assets** &gt; **Metadata Profiles**, and then tap or click **Create**.
 1. Enter a title for the Metadata Profile, for example Sample Metadata, and click **Submit**. The Edit Form for the Metadata Profile is displayed. 
 
    ![chlimage_1-197](assets/chlimage_1-197.png)
@@ -30,9 +32,9 @@ A Metadata Profile lets you apply default metadata to assets within a folder. Cr
 
    Edit the following properties for the **Description** component:
 
-    * **Field Label**:** **The display name of the metadata property. It is only for the user reference.
+    * **Field Label**: The display name of the metadata property. It is only for the user reference.
     
-    * **Map to Property**: The value of this property provides the relative path/name to the asset node where it is saved in the repository. The value should always start with "**./**" because it indicates that the path is under the asset's node.
+    * **Map to Property**: The value of this property provides the relative path/name to the asset node where it is saved in the repository. The value should always start with `./` because it indicates that the path is under the asset's node.
 
    ![chlimage_1-199](assets/chlimage_1-199.png)
 
@@ -46,7 +48,7 @@ A Metadata Profile lets you apply default metadata to assets within a folder. Cr
    >
    >Adding a default value to a new metadata property (which doesn't exist already at the . `/jcr:content/metadata` node) does not display the property and its value on the asset's Properties page by default. To view the new property on the assets's Properties page, modify the corresponding schema form.
 
-1. (Optional) Add more components to the Edit Form from the **Build Form** tab, and configure their properties in the **Settings** tab. The following properties are available from the **Build Form **tab:
+1. (Optional) Add more components to the Edit Form from the **Build Form** tab, and configure their properties in the **Settings** tab. The following properties are available from the **Build Form** tab:
 
 <table>
  <tbody> 
@@ -135,7 +137,7 @@ A Metadata Profile lets you apply default metadata to assets within a folder. Cr
 
    ![chlimage_1-205](assets/chlimage_1-205.png)
 
-1. Click **Delete** **Metadata Profiles **in the toolbar.
+1. Click **Delete Metadata Profiles** in the toolbar.
 1. In the dialog, click **Delete** to confirm the delete operation. The metadata profile is deleted from the list.
 
 ## Applying a metadata profile to folders {#applying-a-metadata-profile-to-folders}
@@ -160,12 +162,12 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 To apply a metadata profile to folders from the Profiles user interface:
 
-1. Tap or click the AEM logo and navigate to **Tools **&gt; **Assets **&gt; **Metadata Profiles.**
+1. Tap the AEM logo and navigate to **Tools** &gt; **Assets** &gt; **Metadata Profiles.**
 1. Select the metadata profile that you want to apply to a folder or multiple folders.
 
    ![chlimage_1-207](assets/chlimage_1-207.png)
 
-1. Tap/click **Apply Metadata Profile to Folder(s) **and select the folder or multiple folders you want use to receive the newly uploaded assets and tap/click **Done**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+1. Tap **Apply Metadata Profile to Folder(s)** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap/click **Done**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
 #### Applying metadata profiles to folders from Properties {#applying-metadata-profiles-to-folders-from-properties}
 
@@ -184,13 +186,13 @@ To apply a metadata profile to folders from properties:
 
 In addition to applying a profile to a folder, you can also apply one globally so that any content uploaded into AEM assets in any folder has the selected profile applied.
 
-To apply a profile globally, do one of the following:
+**To apply a profile globally, do one of the following**:
 
-* Navigate to **https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam** and apply the appropriate profile and tap or click **Save**.
+* Navigate to **https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam** and apply the appropriate profile and tap **Save**.
 
   ![chlimage_1-209](assets/chlimage_1-209.png)
 
-* Navigate to CRXDE Lite to the following node: **/content/dam/jcr:content. **Add the property** metadataProfile:/etc/dam/metadata/dynamicmedia/&lt;name of metadata profile&gt; **and tap or click **Save All**. 
+* Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` and tap **Save All**. 
 
   ![chlimage_1-210](assets/chlimage_1-210.png)
 
@@ -214,6 +216,6 @@ To remove a metadata profile from folders via Profiles user interface:
 
 To remove a metadata profile from folders via properties:
 
-1. Tap or click the AEM logo and navigate **Assets **and then to the folder that you want to remove an metadata profile from.
-1. On the folder, tap or click the check mark to select it and then tap or click **Properties**.
+1. Tap the AEM logo and navigate **Assets** and then to the folder that you want to remove an metadata profile from.
+1. On the folder, tap the check mark to select it and then tap or click **Properties**.
 1. Select the **Metadata Profiles** tab and select **None** from the drop-down menu and click **Save**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.

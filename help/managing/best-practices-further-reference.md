@@ -284,7 +284,7 @@ There are several mechanisms you can use to monitor the response times:
 
 * **Monitoring response times with HTML comments**
 
-  `*HTML comments* can be used to include response time information within the source of each page:`
+  HTML comments can be used to include response time information within the source of each page:
 
   `</body> </html>v <-- Page took 58 milliseconds to be rendered by the server --> Response times for search requests`
 

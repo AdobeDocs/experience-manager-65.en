@@ -26,7 +26,7 @@ Form authors can configure a page for each form, to which the form users are red
 
 Redirect page configuration
 
-Form authors can use the following parameters that are passed to the Thank you page. For all the available submit actions, `status`** **and `owner` parameters are passed. Besides these two parameters, some additional parameters are passed for the following submit actions:
+Form authors can use the following parameters that are passed to the Thank you page. For all the available submit actions, `status` and `owner` parameters are passed. Besides these two parameters, some additional parameters are passed for the following submit actions:
 
 * **Store content action** (deprecated) : `contentPath`--the path of the node in the repository where submitted data is stored--is passed.
 

@@ -33,7 +33,7 @@ Before performing above steps, ensure that you follow the steps listed at [Gener
 
 Perform the following steps to add support for a language *New* and the browser locale code *nw*.
 
-1. Log in to CRXDE Lite.  
+1. Log in to CRXDE Lite.
    The default URL of CRXDE Lite is `https://[server]:[port]/lc/crx/de/index.jsp`.
 1. Navigate to the location `apps/ws/locales` and create a new folder `nw.`
 1. Copy the file `translation.json`from the location `/apps/ws/locales/en-US` to location `/apps/ws/locales/nw` .
@@ -64,11 +64,11 @@ Perform the following steps to localize the images:
    #categoryListBar .content.nw {
         background: #3e3e3e url(../images/Categories_nw.png) no-repeat 10px 10px;
     }
-    
+
    #filterListBar .content.nw {
        background: #3e3e3e url(../images/Queues_nw.png) no-repeat 10px 10px;
    }
-    
+
    #processNameListBar .content.nw {
        background: #3e3e3e url(../images/Processes_nw.png) no-repeat 10px 10px;
    }
@@ -88,7 +88,7 @@ Perform the following steps to localize the images:
                window.lcWorkspace.locale = lang;
            }
        }
-   
+
    ```
 
    ```
@@ -108,8 +108,8 @@ Perform the following steps to localize the images:
 You require development package to localize the *datepicker *API. For detailed information about creating development package, see [Building AEM Forms workspace code](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3).
 
 1. Download and extract the [jQuery UI Package](https://jqueryui.com/download/all/), navigate to *&lt;extracted jquery UI package&gt;*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
-1. Copy the jquery.ui.datepicker-nw.js file for locale code nw to apps/ws/js/libs/jqueryui and make locale specific changes to the file. 
-1. Navigate to `apps/ws/js` and open the `jquery.ui.datepicker-nw.js` file for editing. 
+1. Copy the jquery.ui.datepicker-nw.js file for locale code nw to apps/ws/js/libs/jqueryui and make locale specific changes to the file.
+1. Navigate to `apps/ws/js` and open the `jquery.ui.datepicker-nw.js` file for editing.
 1. In the main.js file create an alias for `jquery.ui.datepicker-nw.js.` The code to create an alias for the `jquery.ui.datepicker-nw.js` file is:
 
    ```
@@ -176,7 +176,7 @@ You require development package to localize the *datepicker *API. For detailed i
    } else {
       $.datepicker.setDefaults($.datepicker.regional['']);
    }
-    
+
    ```
 
    ```

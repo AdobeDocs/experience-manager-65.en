@@ -185,7 +185,7 @@ The new rollout configuration is then available to you when setting rollout conf
 1. Click **Create**.
 1. Double-click on the rollout configuration that you created to open it for further configuration.
 1. Click **Edit**.
-1. In the **Rollout Config** dialog, select the ** [Sync Trigger](/help/sites-administering/msm-sync.md#rollout-triggers)** to define the action that causes the rollout to occur.
+1. In the **Rollout Config** dialog, select the **[Sync Trigger](/help/sites-administering/msm-sync.md#rollout-triggers)** to define the action that causes the rollout to occur.
 1. Click **OK** to save the changes.
 
 #### Add Synchronization Actions to the Rollout Configuration {#add-synchronization-actions-to-the-rollout-configuration}

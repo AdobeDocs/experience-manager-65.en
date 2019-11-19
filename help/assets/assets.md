@@ -1,13 +1,9 @@
 ---
-title: Administering Assets
-seo-title: Administering Assets
-description: Learn about the activities typically performed by an AEM Assets administrator.
-seo-description: Learn about the activities typically performed by an AEM Assets administrator.
+title: About AEM Assets
+description: Learn what is digital asset management, its use cases, and Adobe's AEM Asset offering
 uuid: f0f21a32-0b05-47b6-b160-a2e2f4889019
-contentOwner: Chiradeep Majumdar
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: ce2cbff1-0b04-47a3-9241-8dad77794701
 docset: aem65
 
@@ -92,13 +88,11 @@ When working with digital assets in AEM, you need to understand the following te
 
 **Collection** A collection of assets, either based on physical location (folder), common properties (saved search folder), or user selection (lightbox folders).
 
-**Metadata**
-
-Assets have metadata; for example, author, expiry date, DRM Information (Digital Rights Management), and so on. Metadata is under access control. AEM Assets supports the following various common metadata schemata out of the box:
+**Metadata** Assets have metadata; for example, author, expiry date, DRM Information (Digital Rights Management), and so on. Metadata is under access control. AEM Assets supports the following various common metadata schemata out of the box:
 
 * Dublin Core: including author, description, date, subject, and so on.
 * IPTC: including event, model, location, and so on.
-* WCM: including page properties, on- and offtimes, and so on.
+* WCM: including page properties, [!UICONTROL On Time] and [!UICONTROL Off Time], and so on.
 
 **Tagging** Assets can be tagged and classified. See Using Tags and Administering Tags.
 

@@ -3,12 +3,14 @@ title: Configuring Segmentation
 seo-title: Configuring Segmentation
 description: Learn how to configure segmentation for AEM Campaign.
 seo-description: Learn how to configure segmentation for AEM Campaign.
-uuid: f22e41b6-d9d9-4f18-9925-2d4aebc167b3
+uuid: 604ca34d-cdb9-49ff-8f75-02a44b60a8a2
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 49c9c9ab-632a-40f7-8c30-d6a8c0f1b420
+discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
+docset: aem65
+
 ---
 
 # Configuring Segmentation{#configuring-segmentation}
@@ -21,13 +23,13 @@ Segmentation is a key consideration when creating a campaign. See [Segmentation 
 
 Depending on the information you have already collected about your site visitors and the goals you want to achieve, you will need to define the segments and strategies needed for your targeted content.
 
-These segments are then used to provide a visitor with specifically targeted content. This content is maintained in the [Campaigns](/help/sites-authoring/personalization.md) section of the website. Teaser pages defined here can be included as teaser paragraphs on any page and define which visitor segment the specialized content is applicable for.
+These segments are then used to provide a visitor with specifically targeted content. This content is maintained in the [Campaigns](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) section of the website. Teaser pages defined here can be included as teaser paragraphs on any page and define which visitor segment the specialized content is applicable for.
 
 AEM allows you to easily create and update segments, teasers, and campaigns. It also allows you to verify the results of your definitions.
 
 The **Segment Editor** allows you to easily define a segment:
 
-![segmenteditor-1](assets/segmenteditor-1.png)
+![](assets/segmenteditor.png)
 
 You can **Edit** each segment to specify a **Title**, **Description** and **Boost** factor. Using the sidekick you can add **AND** and **OR** containers to define the **Segment Logic**, then add the required **Segment Traits** to define the selection criteria.
 
@@ -106,7 +108,7 @@ When the entire statement evaluates to true then this segment has resolved. In t
 
 >[!CAUTION]
 >
->The segment editor does not check for any circular references. For example, segment A references another segment B, which in turn references segment A. You must ensure that your segments do not contain any circular refernces.
+>The segment editor does not check for any circular references. For example, segment A references another segment B, which in turn references segment A. You must ensure that your segments do not contain any circular references.
 
 >[!NOTE]
 >
@@ -114,30 +116,30 @@ When the entire statement evaluates to true then this segment has resolved. In t
 >
 >Therefore when creating a segment with such properties is it normally necessary to rely on **browserFamily** for instance instead of **browserFamily_i18n**.
 
-## Creating a New Segment {#creating-a-new-segment}
+### Creating a New Segment {#creating-a-new-segment}
 
 To define your new segment:
 
-1. In the rail, choose **Tools &gt; Operations &gt; Configuration**.
+1. In the rail, choose** Tools &gt; Operations &gt; Configuration**.
 1. Click on the **Segmentation** page in the left pane, and navigate to the required location.
-1. Create a [new page](/help/sites-authoring/managing-pages.md) using the **Segment** template.
+1. Create a [new page](/help/sites-authoring/editing-content.md#creatinganewpage) using the **Segment** template.
 1. Open the new page to see the segment editor:
 
-   ![screen_shot_2012-02-02at101726am](assets/screen_shot_2012-02-02at101726am.png)
+   ![](assets/screen_shot_2012-02-02at101726am.png)
 
 1. Use either the sidekick or the context menu (usually right mouse button click, then select **New...** to open the Insert New Component window) to find the segment trait you need. Then drag it to the **Segment Editor** it will appear in the default **AND** container.
 1. Double-click on the new trait to edit the specific parameters; for example the mouse position:
 
-   ![screen_shot_2012-02-02at103135am-1](assets/screen_shot_2012-02-02at103135am-1.png)
+   ![](assets/screen_shot_2012-02-02at103135am.png)
 
 1. Click **OK** to save your definition:
-1. You can **Edit** the segment definition to give it a **Title**, **Description** and **[Boost](/help/sites-administering/campaign-segmentation.md#boost-factor)** factor:
+1. You can **Edit** the segment definition to give it a **Title**, **Description** and **[Boost](#boost-factor)** factor:
 
-   ![screen_shot_2012-02-02at103547am](assets/screen_shot_2012-02-02at103547am.png)
+   ![](assets/screen_shot_2012-02-02at103547am.png)
 
 1. Add more traits if required. You can formulate boolean expressions using the **AND Container** and **OR Container** components found under **Segment Logic**. With the segment editor you can delete traits or containers not needed anymore, or drag them to new positions within the statement.
 
-## Using AND and OR Containers {#using-and-and-or-containers}
+### Using AND and OR Containers {#using-and-and-or-containers}
 
 You can construct complex segments in AEM. It helps to be aware of a few basic points:
 
@@ -154,24 +156,24 @@ Female and between the ages of 16 and 62
 
 As the main operator is OR you need to start with an **OR Container**. Within this you have 2 AND statements, for each of these you need an **AND Container**, into which you can add the individual traits.
 
-![screen_shot_2012-02-02at105145am-1](assets/screen_shot_2012-02-02at105145am-1.png)
+![](assets/screen_shot_2012-02-02at105145am.png)
 
 ## Testing the Application of a Segment {#testing-the-application-of-a-segment}
 
 Once the segment has been defined, potential results can be tested with the help of the **[Client Context](/help/sites-administering/client-context.md)**:
 
 1. Select the segment to be tested.
-1. Press **[Ctrl-Alt-C](/help/sites-authoring/keyboard-shortcuts.md)** to open the **[Client Context](/help/sites-administering/client-context.md)**, which shows the data that has been collected. For testing purposes you can **Edit** certain values, or **Load** another profile to see the impact there.
+1. Press **[Ctrl-Alt-C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)** to open the **[Client Context](/help/sites-administering/client-context.md)**, which shows the data that has been collected. For testing purposes you can **Edit** certain values, or **Load** another profile to see the impact there.
 
 1. Depending on the traits defined, the data available for the current page may or may not match the segment definition. The status of the match is shown underneath the definition.
 
 For example, a simple segment definition can be based on the age and gender of the user. Loading a specific profile shows that the segment is successfully resolved:
 
-![screen_shot_2012-02-02at105926am-1](assets/screen_shot_2012-02-02at105926am-1.png)
+![](assets/screen_shot_2012-02-02at105926am.png)
 
 Or not:
 
-![screen_shot_2012-02-02at110019am-1](assets/screen_shot_2012-02-02at110019am-1.png)
+![](assets/screen_shot_2012-02-02at110019am.png)
 
 >[!NOTE]
 >
@@ -181,8 +183,8 @@ Such tests can also be performed on content pages and in combination with **Teas
 
 Mouseover on a teaser paragraph will show the segments applied, whether they currently resolve and therefore, why the current teaser instance has been selected:
 
-![chlimage_1-408](assets/chlimage_1-408.png)
+![](assets/chlimage_1-47.png)
 
-## Using Your Segment {#using-your-segment}
+### Using Your Segment {#using-your-segment}
 
-Segments are currently used within [Campaigns](/help/sites-authoring/personalization.md). They are used to steer the actual content seen by specific target audiences. See [Understanding Segments](/help/sites-authoring/segmentation-overview.md) for more information.
+Segments are currently used within [Campaigns](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md). They are used to steer the actual content seen by specific target audiences. See [Understanding Segments](/help/sites-authoring/segmentation-overview.md) for more information.

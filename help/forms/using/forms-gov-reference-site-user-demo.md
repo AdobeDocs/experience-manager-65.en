@@ -321,7 +321,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 ## Welcome Kit citizen (Aya) {#welcome-kit-citizen-aya}
 
-**This section: **Aya receives an email contains a link to an interactive communication which summarizes her benefits and also includes form fields to fill. With PDF benefits statement attached and link to interactive communication letter in the mail (with the same theme/branding as the interactive communication).
+**This section:** Aya receives an email contains a link to an interactive communication which summarizes her benefits and also includes form fields to fill. With PDF benefits statement attached and link to interactive communication letter in the mail (with the same theme/branding as the interactive communication).
 
 ### Aya User Story (Email client) {#aya-user-story-email-client}
 
@@ -346,7 +346,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 ## Renewal Reminder citizen (Aya) {#renewal-reminder-citizen-aya}
 
-**This section: **Camila also schedules a communication reminder so one year later. (Workflow Step that** **automates/executes and email).
+**This section:** Camila also schedules a communication reminder so one year later. (Workflow Step that automates/executes and email).
 
 ### Aya User Story (Email client) {#aya-user-story-email-client-1}
 
@@ -362,7 +362,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 ## Analytics CX Lead (Camila) {#analytics-cx-lead-camila}
 
-**This section: **Camila navigates to a dashboard where she can see across the agency KPI’s such as % of citizens who start filling a service request form and abandon, the average length of time from request submission to approval/denial response, and engagement statistics for the benefits handbooks she has sent to citizens.
+**This section:** Camila navigates to a dashboard where she can see across the agency KPI’s such as % of citizens who start filling a service request form and abandon, the average length of time from request submission to approval/denial response, and engagement statistics for the benefits handbooks she has sent to citizens.
 
 ### Camila reviews Sites reporting (We.Gov Adobe Analytics) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 

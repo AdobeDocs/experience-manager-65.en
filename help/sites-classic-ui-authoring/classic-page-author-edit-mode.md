@@ -653,7 +653,7 @@ The slideshow component then repeatedly displays each in sequence, for a short p
 
 >[!NOTE]
 >
->The **Table** component is based on the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), as is the ** [Text](#text)** component.
+>The **Table** component is based on the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), as is the **[Text](#text)** component.
 >
 >It is recommended to use the **Table** component for tables, although they can also be constructed with the **Text** component.
 
@@ -691,7 +691,7 @@ For more information about applying tags, visit [Using Tags](/help/sites-classic
 
 >[!NOTE]
 >
->The **Text** component is based on the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), as is the ** [Table](#table)** component.
+>The **Text** component is based on the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), as is the **[Table](#table)** component.
 >
 >It is recommended to use the **Table** component for tables, although they can also be constructed with the **Text** component.
 

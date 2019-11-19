@@ -53,9 +53,9 @@ You can use one of the following methods to establish the secure connection:
 1. Open AEM Web Console. The URL is https://[server]:[port]/system/console/configMgr.
 1. Locate and open the **Adobe LiveCycle Client SDK Bundle**. Specify value for the following fields:
 
-    * **Server URL: **Specify HTTPS URL of AEM Forms on JEE server. To enable communication over https, restart the server with the -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file&gt; parameter.
+    * **Server URL:** Specify HTTPS URL of AEM Forms on JEE server. To enable communication over https, restart the server with the -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file&gt; parameter.
     * **Service Name**: Add the RightsManagementService to the list of specified services.
-    * **Username: **Specify user name of the AEM Forms on JEE account to use to initiate calls from AEM server. The account specified must have permissions to start document services on the AEM Forms on JEE server.
+    * **Username:** Specify user name of the AEM Forms on JEE account to use to initiate calls from AEM server. The account specified must have permissions to start document services on the AEM Forms on JEE server.
     * **Password**: Specify password of the AEM Forms on JEE account mentioned in the Username field.
 
    Click **Save**. AEM is enabled to search document security protected PDF documents.
@@ -66,16 +66,12 @@ You can use one of the following methods to establish the secure connection:
 1. Open AEM Web Console. The URL is https://[server]:[port]/system/console/configMgr.
 1. Locate and open the **Adobe LiveCycle Client SDK** Bundle. Specify value for the following properties:
 
-    * **Server URL**:** **Specify HTTPS URL of AEM Forms on JEE server. To enable communication over https, restart the AEM server with the -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file&gt; parameter.
-    
+    * **Server URL**: Specify HTTPS URL of AEM Forms on JEE server. To enable communication over https, restart the AEM server with the -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file&gt; parameter.
     * **Enable 2-way SSL**: Enable the Enable 2-way SSL option.
     * **KeyStore File URL**: Specify the URL of the keystore file.
     * **TrustStore FIle URL**: Specify the URL of the truststore file.  
-    
     * **KeyStore Password**: Specify the password for the keystore file.  
-    
     * **TrustStorePassword**: Specify the password for the truststore file.  
-    
     * **Service Name**: Add the RightsManagementService to the list of specified services.
 
    Click **Save**. AEM is enabled to search document security protected PDF documents

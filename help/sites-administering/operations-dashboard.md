@@ -3,12 +3,13 @@ title: Operations Dashboard
 seo-title: Operations Dashboard
 description: Learn how to use the Operations Dashboard.
 seo-description: Learn how to use the Operations Dashboard.
-uuid: f1a6dcdc-307b-45f4-ade5-cedc58f0c7cf
+uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
+discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
+docset: aem65
 ---
 
 # Operations Dashboard {#operations-dashboard}
@@ -44,11 +45,11 @@ The Health Reports interface can be accessed through the **Tools** - **Operation
 
 `https://<serveraddress>:port/libs/granite/operations/content/healthreports/healthreportlist.html`
 
-![chlimage_1-414](assets/chlimage_1-414.png)
+![chlimage_1-116](assets/chlimage_1-116.png)
 
 The card system exposes three possible states: **OK**, **WARN** and **CRITICAL**. The states are a result of rules and thresholds, which can be configured by hovering the mouse over the card and then clicking the gear icon in the action bar:
 
-![chlimage_1-415](assets/chlimage_1-415.png)
+![chlimage_1-117](assets/chlimage_1-117.png)
 
 ### Health Check Types {#health-check-types}
 
@@ -135,11 +136,10 @@ Creating an individual Health Check involves two steps: implementing a Sling Hea
 A Composite Health Check's role is to aggregate a number of individual Health Checks sharing a set of common features. For instance, the Security Composite Health Check groups together all the individual health checks performing security-related verifications. The first step in order to create a composite check is to add a new OSGI configuration. For it to be displayed in the Operations Dashboard, a new configuration node needs to be added, the same way we did for a simple check.
 
 1. Go to the Web Configuration Manager in the OSGI Console. You can do this by accessing `https://serveraddress:port/system/console/configMgr`
-
 1. Search for the entry called **Apache Sling Composite Health Check**. After you find it, notice that there are two configurations already available: one for the System Checks and another one for the Security Checks.
 1. Create a new configuration by pressing the "+" button on the right hand side of the configuration. A new window will appear, as shown below:
 
-   ![chlimage_1-63](assets/chlimage_1-63.jpeg)
+   ![chlimage_1-23](assets/chlimage_1-23.jpeg)
 
 1. Create a configuration and save it. A Mbean will be created with the new configuration.
 
@@ -340,7 +340,7 @@ The Health Check Dashboard can integrate with Nagios via the Granite JMX Mbeans.
     1. Press the **Hosts** link under the **Monitoring** section.
     1. Add the host definition:
 
-   ![chlimage_1-416](assets/chlimage_1-416.png)
+   ![chlimage_1-118](assets/chlimage_1-118.png)
 
    Below is an example of a host configuration file, in case you are using Nagios Core:
 
@@ -388,7 +388,7 @@ The Health Check Dashboard can integrate with Nagios via the Granite JMX Mbeans.
 
 1. Check your Nagios dashboard for the newly created service:
 
-   ![chlimage_1-417](assets/chlimage_1-417.png)
+   ![chlimage_1-119](assets/chlimage_1-119.png)
 
 ## Diagnosis tools {#diagnosis-tools}
 
@@ -402,7 +402,7 @@ Amongst its most important features are:
 
 You can reach the Diagnosis Tools screen by going to **Tools - Operations - Diagnosis** from the AEM Welcome screen. You can also access the screen by directly accessing the following URL: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
 
-![chlimage_1-418](assets/chlimage_1-418.png)
+![chlimage_1-120](assets/chlimage_1-120.png)
 
 ### Log Messages {#log-messages}
 
@@ -419,7 +419,7 @@ Examples:
 
 * If you plan on capturing all the messages coming from a certain package (for example com.adobe.granite) - the logger name should be set to: "com.adobe.granite", and the logger level to: **DEBUG** (this will capture all the **ERROR**, **WARN**, **INFO** and **DEBUG** messages), as shown in the image below.
 
-![chlimage_1-419](assets/chlimage_1-419.png)
+![chlimage_1-121](assets/chlimage_1-121.png)
 
 >[!NOTE]
 >
@@ -453,7 +453,7 @@ The Request Performance page allows the analysis of the slowest page requests pr
 1. Requests accessing resources under `/etc/design`
 1. Requests having the `".html"` extension
 
-![chlimage_1-420](assets/chlimage_1-420.png)
+![chlimage_1-122](assets/chlimage_1-122.png)
 
 The page displays:
 
@@ -475,7 +475,7 @@ The page displays:
 * The statement of the query
 * The duration in milliseconds
 
-![chlimage_1-421](assets/chlimage_1-421.png)
+![chlimage_1-123](assets/chlimage_1-123.png)
 
 ### Explain Query {#explain-query}
 
@@ -494,7 +494,7 @@ The Explain Query is a tool that explains how Oak is executing a query. It can b
 
 Once you are in the Explain Query UI, all you need to do in order to use it is enter the query and press the **Explain** button:
 
-![chlimage_1-422](assets/chlimage_1-422.png)
+![chlimage_1-124](assets/chlimage_1-124.png)
 
 The first entry in the Query Explanation section is the actual explanation. The explanation will show the type of index that was used to execute the query.
 
@@ -502,7 +502,7 @@ The second entry is the execution plan.
 
 Ticking the **Include execution time** box before running the query will also show the amount of time the query was executed in, allowing for more information that can be used for optimizing the indexes for your application or deployment.
 
-![chlimage_1-423](assets/chlimage_1-423.png)
+![chlimage_1-125](assets/chlimage_1-125.png)
 
 ### The Index Manager {#the-index-manager}
 
@@ -512,13 +512,13 @@ It can be accessed by going to **Tools - Operations - Diagnosis **from the Welco
 
 It can also be accessed directly at this URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
-![chlimage_1-424](assets/chlimage_1-424.png)
+![screen-shot_2019-06-18at154754](assets/screen-shot_2019-06-18at154754.png)
 
 The UI can be used to filter indexes in the table by typing in the filter criteria in the search box in the upper left corner of the screen.
 
 ### Download Status ZIP {#download-status-zip}
 
-This will trigger the download of a zip containing useful information about the system status and configuration. The archive contains contains instance configurations, a list of bundles, OSGI, Sling metrics and statistics and this can result in a large file. You can reduce the impact of large status files by using the **Download Status ZIP **window. The window can be accessed from: **AEM &gt; Tools &gt; Operations &gt; Diagnosis &gt; Download Status ZIP.**
+This will trigger the download of a zip containing useful information about the system status and configuration. The archive contains contains instance configurations, a list of bundles, OSGI, Sling metrics and statistics and this can result in a large file. You can reduce the impact of large status files by using the **Download Status ZIP **window. The window can be accessed from:** AEM &gt; Tools &gt; Operations &gt; Diagnosis &gt; Download Status ZIP.**
 
 From this window you can select what to export (log files and or thread dumps) and the number of days of logs included in the download relative to the current date.
 
@@ -542,23 +542,18 @@ In order to get to the Maintenance page in the Operations Dashboard, you need to
 
 The following tasks are available in the Operations Dashboard:
 
-1. The **Revision Clean Up **task, located under the **Daily Maintenance Window** menu.
-
-1. The **Lucene Binaries Cleanup **task, located under the **Daily Maintenance Window** menu.
-
-1. The **Workflow purge **task, located under the **Weekly Maintenance Window** menu.
-
+1. The **Revision Clean Up**task, located under the **Daily Maintenance Window** menu.
+1. The **Lucene Binaries Cleanup** task, located under the **Daily Maintenance Window** menu.
+1. The **Workflow purge** task, located under the **Weekly Maintenance Window** menu.
 1. The **Data Store Garbage Collection** task, located under the **Weekly Maintenance Window** menu.
-
 1. The **Audit Log Maintenance** task, located under the **Weekly Maintenance Window** menu.
-
 1. The **Version Purge Maintenance** task, located under the **Weekly Maintenance Window** menu.
 
 The default timing for the daily maintenance window is 2 to 5 AM. The tasks configured to run in the weekly maintenance window will execute between 1 and 2 AM on Saturdays.
 
 You can also configure the timings by pressing the gear icon on any of the two maintenance cards:
 
-![chlimage_1-425](assets/chlimage_1-425.png)
+![chlimage_1-126](assets/chlimage_1-126.png)
 
 >[!NOTE]
 >
@@ -566,7 +561,7 @@ You can also configure the timings by pressing the gear icon on any of the two m
 
 ### Revision Clean Up {#revision-clean-up}
 
-For more information on performing Revision Clean Up for AEM 6.4, [see this dedicated article](/help/sites-deploying/revision-cleanup.md).
+For more information on performing Revision Clean Up, [see this dedicated article](/help/sites-deploying/revision-cleanup.md).
 
 ### Lucene Binaries Cleanup {#lucene-binaries-cleanup}
 
@@ -592,7 +587,7 @@ Workflows can also be purged from the Maintenance Dashboard. In order to run the
 
 >[!NOTE]
 >
-> For more detailed information about Workflow Maintenance, see [this page](workflows-administering.md#regular-purging-of-workflow-instances).
+> For more detailed information about Workflow Maintenance, see [this page](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Audit Log Maintenance {#audit-log-maintenance}
 
@@ -650,7 +645,7 @@ Custom maintenance tasks can be implemented as OSGi services. As the maintenance
   </tr>
   <tr>
    <td>granite.maintenance.name</td>
-   <td>A unique name for the task - this is used to reference the task. This is usally a simple name.</td>
+   <td>A unique name for the task - this is used to reference the task. This is usually a simple name.</td>
    <td>MyMaintenanceTask</td>
    <td>Required</td>
   </tr>
@@ -689,7 +684,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 Once the service is deployed, it will be exposed to the Operations Dashboard UI and can be added to one of the available maintenance schedules:
 
-![chlimage_1-426](assets/chlimage_1-426.png)
+![chlimage_1-127](assets/chlimage_1-127.png)
 
 This will add a corresponding resource at /apps/granite/operations/config/maintenance/`schedule`/`taskname`. If the task is run mode dependent, the property granite.operations.conditions.runmode needs to be set on that node with the values of the runmodes which need to be active for this maintenance task.
 
