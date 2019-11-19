@@ -20,7 +20,7 @@ docset: aem65
 >
 >6.5.3.0
 >
->* Externalizer Domains can now be selected.
+>* **Externalizer Domains** can now be selected.
 >
 >6.5.2.0:
 >
