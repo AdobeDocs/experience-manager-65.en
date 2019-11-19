@@ -21,9 +21,9 @@ user-guide-title: AEM 6.5 Deploying Guide
     + [Command Line Start and Stop](command-line-start-and-stop.md)
     + [Configuring node stores and data stores in AEM 6](data-store-config.md)
     + [Revision Cleanup](revision-cleanup.md)
+    + [Oak Queries and Indexing](queries-and-indexing.md)
     + [How to Run AEM with TarMK Cold Standby](tarmk-cold-standby.md)
     + [RDBMS Support in AEM 6.5](rdbms-support-in-aem.md)
-    + [Oak Queries and Indexing](queries-and-indexing.md)
     + [Indexing via the Oak-run Jar](indexing-via-the-oak-run-jar.md)
     + [Oak-run.jar Indexing Use Cases](oak-run-indexing-usecases.md)
     + [Troubleshooting Oak Indexes](troubleshooting-oak-indexes.md)
@@ -94,3 +94,12 @@ user-guide-title: AEM 6.5 Deploying Guide
    + [SAP Commerce Cloud](/help/sites-deploying/hybris.md)
    + [Salesforce Commerce Cloud](/help/sites-deploying/demandware.md)
    + [Magento](/help/sites-deploying/magento.md)
+
+<!-- 
+
+To be removed:
+[Consistency and Traversal Checks](consistency-check.md) [Removing the Geometrixx Sites](removing-the-geometrixx-sites.md)
++ [SAP Commerce Cloud](/help/sites-deploying/hybris.md)
++ [Salesforce Commerce Cloud](/help/sites-deploying/demandware.md)
++ [Magento](/help/sites-deploying/magento.md)
+-->
