@@ -115,16 +115,16 @@ The required options can be selected in **Page Properties** of the required fold
     * an Adobe Target workspace
     * if required - the externalizer domain
 
->[!CAUTION]
->
->The externalizer domain is optional. An AEM externalizer is configured when you want the exported content to point to a specific *publish* domain. For more details see [Configuring the AEM Link Externalizer](/help/site-administering/../sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >[!CAUTION]
+   >
+   >The externalizer domain is optional. An AEM externalizer is configured when you want the exported content to point to a specific *publish* domain. For more details see [Configuring the AEM Link Externalizer](/help/site-administering/../sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
 
-<!-- check image -->
+   <!-- check image -->
    For example, for a folder:
 
    ![Folder - Cloud Services](assets/xf-target-integration-01.png "Folder - Cloud Services")
 
-2. **Save & Close**.
+1. **Save & Close**.
 
 ## Exporting an Experience Fragment to Adobe Target {#exporting-an-experience-fragment-to-adobe-target}
 
