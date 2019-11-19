@@ -92,15 +92,23 @@ The following table identifies best practice encoding profiles for adaptive vide
 
 ## About smart crop for video {#about-smart-crop-video}
 
-Smart Crop for video&ndash;available in Video Profiles&ndash; is a tool that uses the power of artificial intelligence in Adobe Sensei to automatically detect and crop the focal point in any adaptive or progressive video that you have uploaded, regardless of size.
+Smart Crop for video&ndash;an optional feature available in Video Profiles&ndash; is a tool that uses the power of artificial intelligence in Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video that you have uploaded, regardless of size.
 
 ![Smart Crop for Video](assets/smart-crop-video.png)
 
-To use smart crop, you simply create an adaptive or progressive video encoding profile. Then, use the Smart Crop Ratio tool to select pre-defined crop ratios. For example, you can add a "mobile landscape" definition with a crop ratio of 16x9 and a "mobile portrait" definition with a crop ration of 9x16. Other crop ratios include 1x1, 4x3, and 4x5.
-
 >[!IMPORTANT]
 >
->For the smart crop for video settings to work, you must also include video encoding in your video profile.
+>For video smart crop to work, you must include one or more video encoding presets with your video profile.
+
+To use smart crop for video, you create an adaptive or progressive video encoding profile. As part of your profile, use the Smart Crop Ratio tool to select pre-defined crop ratios. As an example, after you define your video encoding presets, you can add a "Mobile Landscape" definition with a smart crop ratio of 16x9, and a "Mobile Portrait" definition with a smart crop ration of 9x16. Other smart crop ratios from which you can choose include 1x1, 4x3, and 4x5.
+
+![Editing a video encoding profile with smart crop](assets/edit-smart-crop-video2.png)
+
+Note that you can toggle video smart crop in the video profile to either on or off using the slider to the far right of "Smart Crop Ratio" in the user interface.  
+
+After you create and save your video profile, you can apply it to the folders you want.
+
+See [Applying video profiles to specific folders](#applying-video-profiles-to-specific-folders) or [Applying a video profile globally](#applying-a-video-profile-globally). 
 
 See also [Smart crop for images](image-profiles.md).
 
@@ -108,7 +116,7 @@ See also [Smart crop for images](image-profiles.md).
 
 Dynamic Media already comes with a predefined Adaptive Video Encoding profile-a group of video upload settings for MP4 H.264-that is optimized for the best viewing experience. You can use this profile when you upload your videos.
 
-However, if this predefined profile does not meet your needs, you can choose to create your own adaptive video encoding profile. When you use the setting **Encode for adaptive streaming**-a best practice-all encoding presets that you add to the profile are validated to ensure that all videos have the same aspect ratio. In addition, the encoded videos are treated as a multi-bitrate set for streaming.
+However, if this predefined profile does not meet your needs, you can choose to create your own adaptive video encoding profile. When you use the setting **Encode for adaptive streaming**&ndash;as a best practice&ndash;all encoding presets that you add to the profile are validated to ensure that all videos have the same aspect ratio. In addition, the encoded videos are treated as a multi-bitrate set for streaming.
 
 When you create the video encoding profile, you will notice that most encoding options are pre-populated with recommended default settings to help you. However, if you select a value other than the recommended default, be aware that it may result in poor video quality during playback and other performance issues.
 
@@ -139,7 +147,7 @@ When you are done creating the video profile, you apply it to a folder or multip
 1. Click or tap **Create** to add a new video profile.
 
 1. Enter a name and description for the profile.
-1. Tap **Add Video Encoding Preset**.
+1. On the Create/Edit Video Encoding Presets page, tap **Add Video Encoding Preset**.
 1. On the **Basic** tab, set the video and audio options.
    Tap the information icon next to each option for additional descriptions or recommended settings based on the selected video format codec.
 1. Under the Video Size heading, ensure that **Keep aspect ratio** is checked.
@@ -154,9 +162,15 @@ When you are done creating the video profile, you apply it to a folder or multip
 1. (Optional) Tap the **Advanced** tab and ensure the **Use Default Values** check box is selected (recommended). Alternatively, modify advanced video and audio settings.
 1. In the upper-right corner of the page, tap **Save** to save the preset.
 1. Do one of the following:
-
     * Repeat steps 4-9 to create additional encoding presets. (Adaptive video streaming requires more than one video preset.)
-    * In the upper-right corner of the page, tap **Save** again to save the profile.
+    * Continue to the next step.
+
+1. (Optional) To add video smart crop to the videos that this profile will be applied to, do the following:
+    * On the Edit Video Profile page, to the right of the Smart Crop Ratio heading, tap **[!UICONTROL Add New]**.
+    * In the Name field, type a name for the crop ratio that will help you identify it easily.
+    * From the Crop Ration drop-down list, select the ratio you want to use.
+    * Continue adding new ratios or continue to the next step.
+1. In the upper-right corner of the page, tap **Save** again to save the profile.
 
 ## Monitoring the progress of an encoding job {#monitoring-the-progress-of-an-encoding-job}
 
@@ -328,11 +342,15 @@ Folders that have a profile assigned to it are indicated in the user interface b
 
 You can apply video profiles to specific folders or globally to all assets.
 
+See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile)
+
 ### Applying video profiles to specific folders {#applying-video-profiles-to-specific-folders}
 
 You can apply a video profile to a folder from within the **Tools** menu or if you are in the folder, from the **Properties**. This section describes how to apply video profiles to folders both ways.
 
 Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+
+See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile)
 
 #### Applying video profiles to folders by way of the Profiles user interface {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
@@ -351,6 +369,8 @@ Folders that have a profile already assigned to it are indicated by the display 
 ### Applying a video profile globally {#applying-a-video-profile-globally}
 
 In addition to applying a profile to a folder, you can also apply one globally so that any content uploaded into AEM assets in any folder has the selected profile applied.
+
+See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile)
 
 **To apply a video profile globally**,
 
