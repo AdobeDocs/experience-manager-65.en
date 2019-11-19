@@ -49,8 +49,6 @@ Documents can be added to the Download component and images can be added to the 
 
 ### Users and groups involved {#users-and-groups-involved}
 
-usersgroups
-
 The various roles that are involved to configure and use the capability and their corresponding user groups are described below. Local scope is used for the use case where a web page is created by an author. Remote scope is used for the DAM deployment hosting the required assets. The Sites author fetches these remote assets.
 
 <table>
@@ -120,7 +118,7 @@ To configure Connected Assets and local Sites connectivity, follow these steps.
 
     1. After a few minutes, the AEM server starts successfully. Consider this AEM Sites deployment as the local machine for web page authoring, say at `https://[local_sites]:4502`.
 
-1. Ensure that the users and roles with local scope exist on the AEM Sites deployment and on the AEM Assets deployment on AMS. Create a technical user on Assets deployment and add to the user group mentioned in [users and groups involved](/help/assets/use-assets-across-connected-assets-instances.md#usersgroups).
+1. Ensure that the users and roles with local scope exist on the AEM Sites deployment and on the AEM Assets deployment on AMS. Create a technical user on Assets deployment and add to the user group mentioned in [users and groups involved](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved).
 
 1. Access the local AEM Sites deployment at `https://[local_sites]:4502`. Click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Connected Assets Configuration]** and provide the following values:
 

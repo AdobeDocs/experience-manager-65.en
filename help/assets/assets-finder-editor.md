@@ -9,7 +9,7 @@ docset: aem65
 
 ---
 
-# Creating and Configuring Asset Editor pages{#creating-and-configuring-asset-editor-pages}
+# Creating and Configuring Asset Editor pages {#creating-and-configuring-asset-editor-pages}
 
 This document describes the following:
 
@@ -272,17 +272,17 @@ To add asset editor components:
 
 | **Component** |**Description** |
 |---|---|
-| **Metadata Form and Text Field** |Lets you add additional metadata to an asset and perform an action, such as submitting, on that asset. |
-| **Sub Assets** |Lets you customize sub-assets. |
-| **Tags** |Lets users select and add tags to an asset. |
-| **Thumbnail** |Shows a thumbnail of the asset, its filename, and lets you add an alternate text. You can add asset editor actions here as well. |
-| **Title** |Displays the asset title, which can be customized. |
+| Metadata Form and Text Field |Lets you add additional metadata to an asset and perform an action, such as submitting, on that asset. |
+| Sub Assets |Lets you customize sub-assets. |
+| Tags |Lets users select and add tags to an asset. |
+| Thumbnail |Shows a thumbnail of the asset, its filename, and lets you add an alternate text. You can add asset editor actions here as well. |
+| Title |Displays the asset title, which can be customized. |
 
 ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
 
 #### Metadata Form and Text Field - Configuring the View Metadata Component {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-The Metadata Form is a form that includes a start and end action. In between, you enter **Text** fields. See [Forms](/help/sites-authoring/default-components.md#form) for more information on working with forms.
+The Metadata Form is a form that includes a start and end action. In between, you enter **Text** fields. See [Forms](/help/sites-authoring/default-components-foundation.md#form-component) for more information on working with forms.
 
 1. Create a start action by clicking **Edit** in the Start area of the form. You can enter a Box title, if desired. By default, the Box title is **Metadata**. Select the Client Validation check box if you want the java-script client code for validation generated.
 

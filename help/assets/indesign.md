@@ -74,7 +74,7 @@ The Adobe InDesign Server can be integrated with AEM Assets so that INDD files c
 To integrate the InDesign Server for use with AEM Assets and after configuring your proxy, you need to:
 
 1. [Install the InDesign Server](#installing-the-indesign-server).
-1. If required, [configure the AEM Assets Workflow](#configuringthecqdamworkflow).
+1. If required, [configure the AEM Assets Workflow](#configuring-the-aem-assets-workflow).
    This is only necessary if the default values are not appropriate for your instance.
 
 1. Configure a [proxy worker for the InDesign Server](#configuring-the-proxy-worker-for-indesign-server).

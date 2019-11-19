@@ -791,7 +791,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    **Deleting a rendition**
 
-   Select a rendition from the **Renditions** panel, and then tap/click the **Delete Rendition** icon from the [toolbar](/help/sites-authoring/basic-handling.md#p-actions-toolbar-p).
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap/click the **[!UICONTROL Delete Rendition]** icon from the toolbar.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 

@@ -38,7 +38,7 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
 
 ## Adobe InDesign Server {#adobe-indesign-server}
 
-Adobe recommends that you use Adobe InDesign Server to extract Adobe InDesign-specific renditions, such as IDML and HTML. For more information, see [Adding AEM assets as references in Adobe InDesign](/help/assets/managing-linked-subassets.md#addingaemassetsasreferencesinadobeindesign).
+Adobe recommends that you use Adobe InDesign Server to extract Adobe InDesign-specific renditions, such as IDML and HTML. For more information, see [Adding AEM assets as references in Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
 
 ## Dynamic Media  {#dynamic-media}
 

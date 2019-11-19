@@ -33,7 +33,7 @@ To open the **[!UICONTROL Collections]** console:
 
 ## Creating a collection {#creating-a-collection}
 
-You can create a collection either with [static references](#creating-a-collection-with-static-references) or based on a [search criteria-based filter](#creatingacollectionwithsearchcriteriabasedfilteralsocalledsmartcollection). You can also create a collection from a lightbox.
+You can create a collection either with [static references](#creating-a-collection-with-static-references) or based on a [search criteria-based filter](#creating-a-smart-collection). You can also create a collection from a lightbox.
 
 ### Creating a collection with static references {#creating-a-collection-with-static-references}
 
