@@ -1,13 +1,9 @@
 ---
 title: AEM to Creative Cloud folder sharing best practices
-seo-title: AEM to Creative Cloud folder sharing best practices
 description: Configure Adobe Experience Manager (AEM) to allow users in AEM Assets to exchange folders with Adobe Creative Cloud (CC) users.
-seo-description: Configure Adobe Experience Manager (AEM) to allow users in AEM Assets to exchange folders with Adobe Creative Cloud (CC) users.
 uuid: 2707faa0-8e0e-40c3-acce-fbbce1fda773
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: e7eaa487-8afd-40d0-a105-7ace66e87584
 docset: aem65
 
@@ -17,7 +13,7 @@ docset: aem65
 
 >[!CAUTION]
 >
->The AEM to Creative Cloud Folder Sharing feature is deprecated. Customers are strongly advised to use newer capabilities, like [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) or [AEM Desktop App](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Learn more in [AEM and Creative Cloud Integration Best Practices](/help/assets/aem-cc-integration-best-practices.md).
+>The AEM to Creative Cloud Folder Sharing feature is deprecated. Customers are strongly advised to use newer capabilities, like [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) or [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Learn more in [AEM and Creative Cloud Integration Best Practices](/help/assets/aem-cc-integration-best-practices.md).
 
 Adobe Experience Manager (AEM) can be configured to allow users in AEM Assets to share folders with the users of Adobe Creative Cloud apps, so they are available as shared folders in the Adobe Creative Cloud Assets service. The feature can be used to exchange files between creative teams and AEM Assets users, especially when the creative users do not have access to the AEM Assets instance (they are not on the enterprise network).
 
@@ -32,7 +28,7 @@ This type of integration can be used in the following use cases, especially when
 
 ## Overview {#overview}
 
-AEM to Creative Cloud folder sharing relies on the server-side sharing of folders and files between AEM Assets and Creative Cloud accounts. Creative professionals, who use the Creative Cloud Desktop app on their desktops, can additionally make the shared folders available directly on their disks using Adobe CreativeSync technology.
+AEM to Creative Cloud folder sharing relies on the server-side sharing of folders and files between AEM Assets and Creative Cloud accounts. Creative professionals, who use the Creative Cloud desktop app on their desktops, can additionally make the shared folders available directly on their disks using Adobe CreativeSync technology.
 
 The following diagram provides an overview of the integration.
 
@@ -44,7 +40,7 @@ The integration includes the following elements:
 * **Adobe Marketing Cloud Assets core service**: Acts as an intermediary between AEM and Creative Cloud storage services. Admin of the company using the integration needs to established trust relationship between the Marketing Cloud organization and the AEM Assets instance. They also [define a list of approved Creative Cloud collaborators](https://marketing.adobe.com/resources/help/en_US/mcloud/t_admin_add_cc_user.html), that AEM Assets users can share folders too for additional security.
 
 * **Creative Cloud Assets web services** (storage and Creative Cloud Files web UI): This is where specific Creative Cloud app users, with whom an AEM Assets folder was shared, would be able to accept the invitation and see the folder in their Creative Cloud account storage.
-* **Creative Cloud Desktop App**: (Optional) Allows for direct access to shared folder/files from creative user’s desktop via sync with Creative Cloud Assets storage.
+* **Creative Cloud desktop app**: (Optional) Allows for direct access to shared folder/files from creative user’s desktop via sync with Creative Cloud Assets storage.
 
 ## Characteristics and limitations {#characteristics-and-limitations}
 
@@ -64,7 +60,7 @@ The integration includes the following elements:
 
 Best practices for leveraging the AEM to Creative Cloud folder sharing include:
 
-* **Volume considerations:** AEM/Creative Cloud Folder Sharing should be used to share smaller number of files, for example, relevant to a specific campaign or activity. To share larger sets of assets, like all approved assets in the organization, use other distribution methods (for example, AEM Assets Brand Portal) or AEM Desktop App.
+* **Volume considerations:** AEM/Creative Cloud Folder Sharing should be used to share smaller number of files, for example, relevant to a specific campaign or activity. To share larger sets of assets, like all approved assets in the organization, use other distribution methods (for example, AEM Assets Brand Portal) or AEM desktop app.
 
 * **Avoid sharing deep hierarchies:** The sharing works recursively and does not allow for selective unsharing. Typically, only folders without subfolders, or with a very shallow hierarchy, like 1 subfolder level, should be considered for sharing.
 * **Separate folders for one-way sharing:** Separate folders should be used for sharing final assets from AEM Assets to Creative Cloud files, and for sharing creative-ready assets back from Creative Cloud files to AEM Assets. Together with a good naming convention for these folders, it creates an easier-to-understand working environment for AEM Assets and Creative Cloud users alike.

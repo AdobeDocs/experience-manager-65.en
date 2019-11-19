@@ -27,13 +27,13 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 The following (space-separated list of) characters are not supported:
 
-* asset file name must not contain `* / : [ \\ ] | # % { } ? &`
-* asset folder name must not contain `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* An asset file name cannot contain any of these characters: `* / : [ \\ ] | # % { } ? &`
+* An asset folder name cannot contain any of these characters: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Uploading Assets {#uploading-assets}
 
 <!-- TBD the following:
-Move this section into a new article. Already a CQDOC ticket is created for this.
+Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
 
@@ -79,7 +79,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
-   To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[*server*]:[*port*]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
+   To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 
    If you upload an asset with the same name as that of an asset already available at the location where you are uploading the asset, a warning dialog is displayed.
 
@@ -624,7 +624,7 @@ See also [Previewing Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
    ![uploadicon](assets/uploadicon.png)
 
-   Tap the **Reset **button to reset the view to the original size.
+   Tap the **Reset** button to reset the view to the original size.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -756,7 +756,7 @@ The other properties and metadata information is retained. A partial copy is not
 
 1. If the assets being moved have any referencing pages, assets, or collections, the **Adjust References** tab appears beside the **Select Destination** tab.
 
-   Do one of the following in the **Adjust References **screen:
+   Do one of the following in the **Adjust References** screen:
 
     * Specify the references to be adjusted based on the new details, and then tap/click **Move** to proceed.
 
@@ -775,7 +775,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. Tap/click the GlobalNav icon, and select **Renditions **from the list.
+1. Tap/click the GlobalNav icon, and select **Renditions** from the list.
 
    ![renditions_menu](assets/renditions_menu.png)
 
@@ -791,13 +791,13 @@ The other properties and metadata information is retained. A partial copy is not
 
    **Deleting a rendition**
 
-   Select a rendition from the **Renditions** panel, and then tap/click the **Delete Rendition **icon from the [toolbar](/help/sites-authoring/basic-handling.md#p-actions-toolbar-p).
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap/click the **[!UICONTROL Delete Rendition]** icon from the toolbar.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
    **Uploading a new rendition**
 
-   Navigate to the asset details page for the asset, and tap/click the **Add Rendition **icon in the toolbar to upload a new rendition for the asset.
+   Navigate to the asset details page for the asset, and tap/click the **Add Rendition** icon in the toolbar to upload a new rendition for the asset.
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
 
@@ -831,7 +831,7 @@ For Word documents, the DAM Parse Word Documents workflow generates a `cq:Page` 
 
 1. To view subassets, navigate to the location of the asset and open its asset page.
 
-1. Tap/click the GlobalNav icon, and choose **Subassets **from the list
+1. Tap/click the GlobalNav icon, and choose **Subassets** from the list
 
    ![chlimage_1-223](assets/chlimage_1-223.png)
 
@@ -905,11 +905,11 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 1. Navigate to the location of the asset/asset folder you want to remove from the publish environment (unpublish).
 
-1. Select the asset/folder to unpublish, and tap/click the **Manage Publication **icon from the toolbar.
+1. Select the asset/folder to unpublish, and tap/click the **Manage Publication** icon from the toolbar.
 
    ![manage_publication](assets/manage_publication.png)
 
-1. Select the **Unpublish **action from the list.
+1. Select the **Unpublish** action from the list.
 
    ![unpublish_action](assets/unpublish_action.png)
 
@@ -919,7 +919,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 1. In the confirmation dialog, tap/click:
 
     * **Cancel** to stop the action
-    * **Unpublish** to confirm that the assets are unpublished (no longer available on the publish environment) at the specified date**.**
+    * **Unpublish** to confirm that the assets are unpublished (no longer available on the publish environment) at the specified date.
 
    >[!NOTE]
    >
@@ -1170,7 +1170,7 @@ To print the annotations and review status, tap/click the **Print** icon and fol
    >
    >If the asset has subassets, you can print all the subassets along with their specific page-wise annotations.
 
-   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the** Annotation PDF configuration** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/managing-assets-touch-ui.md#annotating).
+   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **Annotation PDF configuration** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/managing-assets-touch-ui.md#annotating).
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
@@ -1178,7 +1178,7 @@ To print the annotations and review status, tap/click the **Print** icon and fol
 
 If an asset includes annotations in foreign languages (especially non-latin languages), you must first configure CQ-DAM-Handler-Gibson Font Manager Service on the AEM server to be able to print these annotations. When configuring CQ-DAM-Handler-Gibson Font Manager Service, provide the path where fonts for the desired languages are located.
 
-1. Open the CQ-DAM-Handler-Gibson Font Manager Service configuration page from the URL [https://&lt;server&gt;:&lt;port&gt;/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](https://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl).
+1. Open the CQ-DAM-Handler-Gibson Font Manager Service configuration page from the URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
 1. To configure CQ-DAM-Handler-Gibson Font Manager Service, do one of the following:
 
     * In the System Fonts directory option, specify the complete path to the fonts directory on your system. For example, if you're a Mac user, you can specify the path as */Library/Fonts* in the System Fonts directory option. AEM fetches the fonts from this directory.
@@ -1186,7 +1186,7 @@ If an asset includes annotations in foreign languages (especially non-latin lang
 
     * Create a new folder for fonts in your system, and store the desired fonts in the folder. Then, specify the complete path to that folder in the Customer Fonts directory option.
 
-1. Access the Annotation PDF configuration from the URL [https://&lt;server&gt;:&lt;port&gt;/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](https://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig).
+1. Access the Annotation PDF configuration from the URL `https://[aem_server]:[4502]/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig`.
 1. Configure the Annotation PDF with the correct set of font-family as follows:
 
     * Include the string `<font_family_name_of_custom_font, sans-serif>` within the font-family option. For example, if you want to print annotations in CJK (Chinese, Japanese and Korean), include the string `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` in the font-family option. If you want to print annotations in Hindi, download the appropriate font and configure the font-family as Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
@@ -1212,7 +1212,7 @@ The following are scenarios where you create versions:
 
 * You modify an image in a different application and upload to AEM Assets. A version of the image is created so your original image is not overwritten.
 * You edit the metadata of an asset.
-* You use AEM Desktop App to checkout an existing asset and save your changes. A new version is created everytime the asset is saved.
+* You use AEM desktop app to checkout an existing asset and save your changes. A new version is created everytime the asset is saved.
 
 You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
 
@@ -1304,7 +1304,7 @@ The versioning functionality lets you do the following:
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Tap/click **Start **and then tap/click **Proceed** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
+1. Tap/click **Start** and then tap/click **Proceed** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 

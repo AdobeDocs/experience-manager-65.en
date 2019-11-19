@@ -1,6 +1,5 @@
 ---
 title: Best Practices for Organizing Your Digital Assets for Using Profiles
-seo-title: Best Practices for Organizing Your Digital Assets for Using Profiles
 description: Tips and best-practices for naming, organizing, managing metadata for digital asset files.
 seo-description: Tips and best-practices for naming, organizing, managing metadata for digital asset files.
 uuid: 14aef804-b2b8-4f60-a78c-b8c5168ba7ce

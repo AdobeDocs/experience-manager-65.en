@@ -99,7 +99,6 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Metadata profiles](metadata-profiles.md)
     + [Digital Rights Management in Assets](drm.md)
     + [Using demo package for Asset Insights](touch-ui-using-demo-package-for-asset-insights.md)
-    + [Assets Offloading Best Practices](assets-offloading-best-practices.md)
     + [Assets file format best practices](assets-file-format-best-practices.md)
     + [Assets Monitoring Best Practices](assets-monitoring-best-practices.md)
     + [Best practices for organizing your digital assets for using Profiles](best-practices-for-file-management.md)
