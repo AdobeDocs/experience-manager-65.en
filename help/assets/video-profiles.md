@@ -1,8 +1,8 @@
 ---
 title: Video Profiles
 seo-title: Video Profiles
-description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible.
-seo-description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible.
+description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. You can also add smart crop to your videos.
+seo-description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. You can also add smart crop to your videos.
 uuid: 26a20984-db63-41e9-b16c-6e164b7596a0
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -90,9 +90,9 @@ The following table identifies best practice encoding profiles for adaptive vide
  </tbody>
 </table>
 
-## About smart crop for video {#about-smart-crop-video}
+## About using smart crop in video profiles {#about-smart-crop-video}
 
-Smart Crop for video&ndash;an optional feature available in Video Profiles&ndash; is a tool that uses the power of artificial intelligence in Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video that you have uploaded, regardless of size.
+Smart crop for video&ndash;an optional feature available in Video Profiles&ndash; is a tool that uses the power of artificial intelligence in Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video that you have uploaded, regardless of size.
 
 ![Smart Crop for Video](assets/smart-crop-video.png)
 
@@ -100,11 +100,11 @@ Smart Crop for video&ndash;an optional feature available in Video Profiles&ndash
 >
 >For video smart crop to work, you must include one or more video encoding presets with your video profile.
 
-To use smart crop for video, you create an adaptive or progressive video encoding profile. As part of your profile, use the Smart Crop Ratio tool to select pre-defined crop ratios. As an example, after you define your video encoding presets, you can add a "Mobile Landscape" definition with a smart crop ratio of 16x9, and a "Mobile Portrait" definition with a smart crop ration of 9x16. Other smart crop ratios from which you can choose include 1x1, 4x3, and 4x5.
+To use smart crop for video, you create an adaptive or progressive video encoding profile. As part of your profile, use the **[!UICONTROLSmart Crop Ratio]** tool to select pre-defined crop ratios. As an example, after you define your video encoding presets, you can add a "Mobile Landscape" definition with a smart crop ratio of 16x9, and a "Mobile Portrait" definition with a smart crop ration of 9x16. Other smart crop ratios from which you can choose include 1x1, 4x3, and 4x5.
 
 ![Editing a video encoding profile with smart crop](assets/edit-smart-crop-video2.png)
 
-Note that you can toggle video smart crop in the video profile to either on or off using the slider to the far right of "Smart Crop Ratio" in the user interface.  
+Note that you can toggle video smart crop in the video profile to either on or off using the slider to the far right of **[!UICONTROL Smart Crop Ratio]** in the user interface.  
 
 After you create and save your video profile, you can apply it to the folders you want.
 
@@ -171,12 +171,6 @@ When you are done creating the video profile, you apply it to a folder or multip
     * From the Crop Ration drop-down list, select the ratio you want to use.
     * Continue adding new ratios or continue to the next step.
 1. In the upper-right corner of the page, tap **Save** again to save the profile.
-
-## Monitoring the progress of an encoding job {#monitoring-the-progress-of-an-encoding-job}
-
-A processing indicator (or progress bar) is displayed so you can visually monitor the progress of a video encoding job.
-
-You can also view the `error.log` file to monitor the progress of an encoding job, to see if encoding is finished, or to see any job errors. The `error.log` is found in the `logs` folder where your instance of AEM is installed.
 
 ## Creating a video profile for progressive streaming {#creating-a-video-encoding-profile-for-progressive-streaming}
 
@@ -350,33 +344,42 @@ You can apply a video profile to a folder from within the **Tools** menu or if y
 
 Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile)
+See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
 
 #### Applying video profiles to folders by way of the Profiles user interface {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
 1. Tap the AEM logo and navigate to **Tools** &gt; **Assets** &gt; **Video Profiles.**
 1. Select the video profile that you want to apply to a folder or multiple folders.
 1. Tap/click **Apply Profile to Folder(s) **and select the folder or multiple folders you want use to receive the newly uploaded assets and tap** Apply**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+    You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
 
 #### Applying video profiles to folders from Properties {#applying-video-profiles-to-folders-from-properties}
 
-1. Tap or click the AEM logo and navigate to **Assets **and then to the folder that you want to apply a video profile to.
+1. Tap or click the AEM logo and navigate to **Assets** and then to the folder that you want to apply a video profile to.
 1. On the folder, tap the check mark to select it and then tap **Properties**.
 1. Select the **Video Profiles** tab and select the profile from the drop-down menu and click **Save & Close**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
    ![chlimage_1-177](assets/chlimage_1-177.png)
+You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
 
 ### Applying a video profile globally {#applying-a-video-profile-globally}
 
 In addition to applying a profile to a folder, you can also apply one globally so that any content uploaded into AEM assets in any folder has the selected profile applied.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile)
+See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
 
 **To apply a video profile globally**,
 
 * Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` and tap **Save All**.
 
   ![chlimage_1-178](assets/chlimage_1-178.png)
+* You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
+
+## Monitoring the progress of a video profile processing job {#monitoring-the-progress-of-an-encoding-job}
+
+A processing indicator (or progress bar) is displayed so you can visually monitor the progress of a video profile processing job.
+
+You can also view the `error.log` file to monitor the progress of an encoding job, to see if encoding is finished, or to see any job errors. The `error.log` is found in the `logs` folder where your instance of AEM is installed.
 
 ## Removing a video profile from folders {#removing-a-video-profile-from-folders}
 
