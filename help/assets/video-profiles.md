@@ -342,7 +342,7 @@ Folders that have a profile assigned to it are indicated in the user interface b
 
 You can apply video profiles to specific folders or globally to all assets.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile)
+You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
 
 ### Applying video profiles to specific folders {#applying-video-profiles-to-specific-folders}
 
