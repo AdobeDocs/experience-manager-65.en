@@ -47,6 +47,7 @@ user-guide-title: AEM 6.5 Deploying Guide
     + [Single Sign On](single-sign-on.md)
     + [Resource Mapping](resource-mapping.md)
     + [Enabling HTTP Over SSL](/help/sites-administering/ssl-by-default.md)
+    + [Consistency and Traversal Checks](consistency-check.md)
     + [Performance Guidelines](performance-guidelines.md)
     + [Performance Optimization](configuring-performance.md)
     + [Assets Performance Guide](assets-performance-sizing.md)
@@ -95,10 +96,9 @@ user-guide-title: AEM 6.5 Deploying Guide
 
 <!-- 
 
-To be removed:
-[Consistency and Traversal Checks](consistency-check.md) 
-[Removing the Geometrixx Sites](removing-the-geometrixx-sites.md)
+To be removed: 
 [SAP Commerce Cloud](/help/sites-deploying/hybris.md)
 [Salesforce Commerce Cloud](/help/sites-deploying/demandware.md)
 [Magento](/help/sites-deploying/magento.md)
+[Removing the Geometrixx Sites](removing-the-geometrixx-sites.md)
 -->
