@@ -160,5 +160,3 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [Classic UI Tagging Console](classic-console.md)
     + [Content Management for Screens](content-management-screens.md)
     + [WebDAV Access](webdav-access.md)
-+ From AEM 65 {#from65}
-    + [Troubleshoot issues with AEM Rich Text Editor](/help/sites-administering/aem-rte-faq.md)
