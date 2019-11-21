@@ -228,7 +228,7 @@ The workflow details are shown in tabs and appropriate actions are available in 
 
   ![wf-72](assets/wf-72.png)
 
-* **WORKFLOW INFO**
+* **WORKFLOW INFO** tab:
 
   ![wf-73](assets/wf-73.png)
 
@@ -236,7 +236,7 @@ The workflow details are shown in tabs and appropriate actions are available in 
 
   ![wf-107](assets/wf-107.png)
 
-* **COMMENTS**
+* **COMMENTS** tab:
 
   ![wf-75](assets/wf-75.png)
 
@@ -281,4 +281,3 @@ To view the payload, and resources, of the workflow instance:
    ![wf-78](assets/wf-78.png)
 
 1. The links can be used to open the individual pages.
-

@@ -345,17 +345,13 @@ The properties of a specific cell, or series of cells, can be configured:
 
 * **Height**
 
-* **Horizontal Align
-  **Left, Center or Right
+* **Horizontal Align** - Left, Center or Right
 
-* **Vertical Align
-  **Top, Middle, Bottom or Baseline
+* **Vertical Align** - Top, Middle, Bottom or Baseline
 
-* **Cell type
-  **Data or Header
+* **Cell type**- Data or Header
 
-* **Apply to:**
-* `<li><strong>Single cell</strong><br /> </li>` `<li><strong>Entire row</strong><br /> </li>` `<li><strong>Entire column</strong></li>`
+* **Apply to:** Single cell, Entire row, Entire column
 
 #### Add or Delete Rows {#add-or-delete-rows}
 
@@ -442,4 +438,3 @@ Will looks as follows in source mode (often the source is much longer, so you wi
 >[!CAUTION]
 >
 >When leaving source mode, AEM makes certain validation checks (for example, ensuring that the text is correctly contained/nested in blocks). This can result in changes to your edits.
-

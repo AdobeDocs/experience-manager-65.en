@@ -1026,11 +1026,11 @@ This component is needed to define the start of a new form on a page. You can co
 
         * A script for client validation:
 
-          `/apps/<*myApp*>/form/<*myValidation*>/formclientvalidation.jsp`
+          `/apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
 
         * A script for validation on the server side:
 
-          `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
+          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
     * **Action Configuration**
 
@@ -1341,4 +1341,3 @@ The standard text field can be configured to your required size and with with yo
 This allows you to create a Submit button for use in a workflow.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
-
