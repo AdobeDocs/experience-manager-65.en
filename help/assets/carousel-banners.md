@@ -21,17 +21,17 @@ Creating and modifying content featured in promotional banners can be time-consu
 
 Carousel Banners are designated by a banner with the word **CAROUSELSET**:
 
-![chlimage_1-191](assets/chlimage_1-438.png)
+![chlimage_1-438](assets/chlimage_1-438.png)
 
 On your website, a carousel banner can look as follows:
 
-![chlimage_1-192](assets/chlimage_1-192.png)
+![chlimage_1-439](assets/chlimage_1-439.png)
 
 Here you can navigate through the images (by clicking on the numbers). In addition, the slides automatically rotate based on a time interval you can customize. Images that you add in the carousel banner support both hotspots and image maps, where users can either tap or to go to a hyperlink or access a quick view window.
 
 In this example, a user has tapped or clicked an image map and accessed the quick view window for gloves:
 
-![chlimage_1-193](assets/chlimage_1-193.png)
+![chlimage_1-440](assets/chlimage_1-440.png)
 
 ## Watch how carousel banners are created {#watch-how-carousel-banners-are-created}
 
