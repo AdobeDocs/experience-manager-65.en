@@ -39,7 +39,7 @@ The form portal components allow you to add the following functionality:
 
 ## Available AEM Forms portal components {#available-aem-forms-portal-components}
 
-AEM Forms provides the following portal components out of the box, grouped under **Document Services **and **Document Services Predicates **component groups:
+AEM Forms provides the following portal components out of the box, grouped under **Document Services** and **Document Services Predicates** component groups:
 
 ### Search &amp; Lister {#search-amp-lister}
 
