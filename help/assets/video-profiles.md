@@ -139,11 +139,9 @@ See also [Best Practices for Video Encoding](/help/assets/video.md#best-practice
 
 To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/config-dms7.md#configuring-asset-processing).
 
-When you are done creating the video profile, you apply it to a folder or multiple folders.
+**To create a video profile for adaptive streaming**,
 
-**To create a video encoding profile for adaptive streaming**:
-
-1. Tap or click the AEM logo and navigate to **Tools** &gt; **Assets** &gt; **Video Profiles**.
+1. Tap the AEM logo and navigate to **Tools** &gt; **Assets** &gt; **Video Profiles**.
 1. Click or tap **Create** to add a new video profile.
 
 1. Enter a name and description for the profile.
@@ -168,9 +166,11 @@ When you are done creating the video profile, you apply it to a folder or multip
 1. (Optional) To add video smart crop to the videos that this profile will be applied to, do the following:
     * On the Edit Video Profile page, to the right of the Smart Crop Ratio heading, tap **[!UICONTROL Add New]**.
     * In the Name field, type a name for the crop ratio that will help you identify it easily.
-    * From the Crop Ration drop-down list, select the ratio you want to use.
+    * From the **[!UICONTROL Crop Ration]** drop-down list, select the ratio you want to use.
     * Continue adding new ratios or continue to the next step.
-1. In the upper-right corner of the page, tap **Save** again to save the profile.
+1. In the upper-right corner of the page, tap **[!UICONTROL Save]** again to save the profile.
+
+You can now apply the profile to folders that contain videos. See [Applying a video profile to folders](#applying-a-video-profile-to-folders) or [Applying a video profile globally](#applying-a-video-profile-globally).
 
 ## Creating a video profile for progressive streaming {#creating-a-video-encoding-profile-for-progressive-streaming}
 
@@ -186,8 +186,6 @@ See also [Creating a video encoding profile for adaptive streaming](#creating-a-
 See also [Best Practices for Video Encoding](/help/assets/video.md#best-practices-for-encoding-videos).
 
 To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/config-dms7.md#configuring-asset-processing).
-
-When you are done creating the video profile, you apply it to a folder or multiple folders.
 
 **To create a video profile for progressive streaming:**
 
@@ -211,6 +209,8 @@ When you are done creating the video profile, you apply it to a folder or multip
 
     * Repeat steps 4-9 to create additional encoding presets.
     * In the upper-right corner of the page, tap **Save** to save the profile.
+
+You can now apply the profile to folders that contain videos. See [Applying a video profile to folders](#applying-a-video-profile-to-folders) or [Applying a video profile globally](#applying-a-video-profile-globally).
 
 ## Using custom-added video encoding parameters {#using-custom-added-video-encoding-parameters}
 
@@ -268,7 +268,7 @@ You can edit an existing video encoding profile to take advantage of advanced vi
  </tbody>
 </table>
 
-   ![chlimage_1-175](assets/chlimage_1-175.png)
+   ![chlimage_1-175](assets/chlimage_1-516.png)
 
 1. Near the lower-right corner of the page, tap **Add**.
 1. Do one of the following:
@@ -278,9 +278,9 @@ You can edit an existing video encoding profile to take advantage of advanced vi
 
 1. In the upper-left corner of the CRXDE Lite page, tap the **Back Home** icon to return to AEM.
 
-### Editing a video encoding profile {#editing-a-video-encoding-profile}
+### Editing a video profile {#editing-a-video-encoding-profile}
 
-You can edit any video encoding profile that you have created to add, edit, or delete video presets within that profile.
+You can edit any video profile that you have created to add, edit, or delete video presets within that profile.
 
 By default, you cannot edit the predefined, out-of-the-box **Adaptive Video Encoding** profile that came with Dynamic Media. Instead, you can easily copy the profile and save it with a new name. You can then edit the desired presets in the copied profile.
 
@@ -288,7 +288,7 @@ See also [Best Practices for Video Encoding](/help/assets/video.md#best-practice
 
 To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/config-dms7.md#configuring-asset-processing).
 
-**To edit a video encoding profile**:
+**To edit a video profile**:
 
 1. Tap the AEM logo and navigate to **Tools** &gt; **Assets** &gt; **Video Profiles.**
 1. On the Video Profiles page, check one video profile name.
@@ -302,7 +302,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 1. In the upper-right corner ofthepage, tap **Save**.
 
-### Copying a video encoding profile {#copying-a-video-encoding-profile}
+### Copying a video profile {#copying-a-video-encoding-profile}
 
 1. Tap the AEM logo and navigate to **Tools** &gt; **Assets** &gt; **Video Profiles.**
 1. On the Video Profiles page, check one video profile name.
@@ -317,7 +317,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 1. In the upper-right corner ofthepage, tap **Save**.
 
-### Deleting a video encoding profile {#deleting-a-video-encoding-profile}
+### Deleting a video profile {#deleting-a-video-encoding-profile}
 
 1. Tap the AEM logo and navigate to **Tools** &gt; **Assets** &gt; **Video Profiles**.
 1. On the Video Profiles page, check one or more video profile names.
@@ -332,13 +332,13 @@ If you assigned a different video profile to a folder, the new profile overrides
 
 Folders that have a profile assigned to it are indicated in the user interface by the name of the profile appearing in the card name.
 
-![chlimage_1-176](assets/chlimage_1-176.png)
+![chlimage_1-176](assets/chlimage_1-517.png)
 
 You can apply video profiles to specific folders or globally to all assets.
 
 You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
 
-### Applying video profiles to specific folders {#applying-video-profiles-to-specific-folders}
+### Applying a video profile to specific folders {#applying-video-profiles-to-specific-folders}
 
 You can apply a video profile to a folder from within the **Tools** menu or if you are in the folder, from the **Properties**. This section describes how to apply video profiles to folders both ways.
 
@@ -346,20 +346,20 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
 
-#### Applying video profiles to folders by way of the Profiles user interface {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
+#### Applying a video profile to folders by way of the Profiles user interface {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
 1. Tap the AEM logo and navigate to **Tools** &gt; **Assets** &gt; **Video Profiles.**
 1. Select the video profile that you want to apply to a folder or multiple folders.
 1. Tap/click **Apply Profile to Folder(s) **and select the folder or multiple folders you want use to receive the newly uploaded assets and tap** Apply**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
     You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
 
-#### Applying video profiles to folders from Properties {#applying-video-profiles-to-folders-from-properties}
+#### Applying a video profile to folders from Properties {#applying-video-profiles-to-folders-from-properties}
 
 1. Tap or click the AEM logo and navigate to **Assets** and then to the folder that you want to apply a video profile to.
 1. On the folder, tap the check mark to select it and then tap **Properties**.
 1. Select the **Video Profiles** tab and select the profile from the drop-down menu and click **Save & Close**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
-   ![chlimage_1-177](assets/chlimage_1-177.png)
+   ![chlimage_1-177](assets/chlimage_1-518.png)
 You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
 
 ### Applying a video profile globally {#applying-a-video-profile-globally}
@@ -372,7 +372,7 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 * Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` and tap **Save All**.
 
-  ![chlimage_1-178](assets/chlimage_1-178.png)
+  ![chlimage_1-178](assets/chlimage_1-519.png)
 * You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
 
 ## Monitoring the progress of a video profile processing job {#monitoring-the-progress-of-an-encoding-job}
@@ -381,13 +381,44 @@ A processing indicator (or progress bar) is displayed so you can visually monito
 
 You can also view the `error.log` file to monitor the progress of an encoding job, to see if encoding is finished, or to see any job errors. The `error.log` is found in the `logs` folder where your instance of AEM is installed.
 
+## Editing the smart crop of a single video {#editing-smart-crop-single-video}
+
+You can manually realign or resize the smart crop window of a video to further refine its focal point.
+
+After you edit a smart crop and save, the change is propagated everywhere you use the crop for the specific videos.
+
+You can re-run smart crop to generate the additional crops again, if required.
+
+See also [Editing the smart crop of multiple videos](#editing-smart-crop-multiple-videos).
+
+1.
+1.
+1.
+1.
+1.
+
+## Editing the smart crop of multiple videos {#editing-smart-crop-multiple-videos}
+
+After you apply an video profile&ndash;that contains smart crop&ndash;to a folder, all videos in that folder have a crop applied to them. If desired, you can manually realign or resize the smart crop window in multiple videos to further refine their focal point.
+
+After you edit a smart crop and save, the change is propagated everywhere you use the crop for the specific videos.
+
+You can re-run smart crop to generate the additional crops again, if required.
+
+1.
+1.
+1.
+1.
+1.
+
+
 ## Removing a video profile from folders {#removing-a-video-profile-from-folders}
 
 When you remove a video profile from a folder, any subfolders automatically inherit the removal of the profile from its parent folder. However, any processing of files that has occurred within the folders remains intact.
 
 You can remove a video profile from a folder from within the **Tools** menu or if you are in the folder, from the **Folder Settings**. This section describes how to remove video profiles from folders both ways.
 
-### Removing video profiles from folders by way of the Profiles user interface {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
+### Removing a video profile from folders by way of the Profiles user interface {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
 1. Tap the AEM logo and navigate to **Tools** &gt; **Assets** &gt; **Video Profiles**.
 1. Select the video profile that you want to remove from a folder or multiple folders.
@@ -395,7 +426,7 @@ You can remove a video profile from a folder from within the **Tools** menu or i
 
    You can confirm that the video profile is no longer applied to a folder because the name no longer appears below the folder name.
 
-### Removing video profiles from folders by way of Properties {#removing-video-profiles-from-folders-by-way-of-properties}
+### Removing a video profile from folders by way of Properties {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Tap or click the AEM logo and navigate to **Assets** and then to the folder that you want to remove a video profile from.
 1. On the folder, tap or click the check mark to select it and then tap or click **Properties**.
