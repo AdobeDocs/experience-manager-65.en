@@ -58,14 +58,14 @@ The resulting `export.csv` file can be opened in Excel or any other compatible a
 
 ![]() ![etc-01](assets/etc-01.png)
 
-The create** CSV Report** option is available when browsing the **Sites** console (in List view): it is an option of the **Create** drop down menu:
+The create **CSV Report** option is available when browsing the **Sites** console (in List view): it is an option of the **Create** drop down menu:
 
 ![etc-02](assets/etc-02.png)
 
 To create a CSV export:
 
 1. Open the **Sites** console, navigate to the required location if required.
-1. From the toolbar, select **Create** then** CSV Report** to open the wizard:
+1. From the toolbar, select **Create** then **CSV Report** to open the wizard:
 
    ![etc-03](assets/etc-03.png)
 

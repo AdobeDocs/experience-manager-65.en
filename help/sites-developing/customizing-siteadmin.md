@@ -134,7 +134,7 @@ The last step consists in adapting the nodes structure of the Websites Administr
 
     * Remove **pageText**
 
-    * Set **pathRegex** `` to `/content/geometrixx(/.*)?`
+    * Set **pathRegex** to `/content/geometrixx(/.*)?`
       This will make the grid configuration active for all geometrixx websites.
 
     * Set **storeProxySuffix** to `.pages.json`

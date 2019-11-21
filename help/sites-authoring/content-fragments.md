@@ -116,8 +116,7 @@ In the appropriate configuration dialog you can select the available parameters,
   >
   >The elements available depend on the template used.
 
-*
-  **Variation**
+* **Variation**
 
     * The default **Master** will always be available.
     * A selection will be available if variations were created for the fragment.
