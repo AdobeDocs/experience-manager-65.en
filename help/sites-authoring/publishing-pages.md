@@ -190,7 +190,7 @@ To publish or unpublish a page using Manage Publication:
     * Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
     * Define a title of the workflow package if the option to keep the workflow package was chosen.
 
-   Click **Publish** or **Publish Later **to complete the publication.
+   Click **Publish** or **Publish Later** to complete the publication.
 
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
@@ -268,4 +268,3 @@ You can detemine the publication status of a page:
 * In the [Page Information menu](/help/sites-authoring/author-environment-tools.md#page-information) when editing a page
 
   ![screen_shot_2018-03-21at154456](assets/screen_shot_2018-03-21at154456.png)
-

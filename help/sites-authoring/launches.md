@@ -116,4 +116,3 @@ The Launches console provides an overview of your launches and allows you to tak
 1. Tap/click on the appropriate launch, the list of possible actions will be displayed:
 
    ![screen-shot_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
-
