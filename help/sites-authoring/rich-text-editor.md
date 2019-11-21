@@ -1,13 +1,9 @@
 ---
 title: Use Rich Text Editor to author content
-seo-title: Use Rich Text Editor to author content
 description: Use the Rich Text Editor to author text in AEM.
-seo-description: Use the Rich Text Editor to author text in AEM.
 uuid: 70f4d4b2-cbc6-4fef-9262-1696804008d8
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
 
@@ -37,39 +33,27 @@ Tapping/clicking agin or initially selecting the component with a slow double-ta
 
 This toolbar provides the following options:
 
-* **Format**
-  This allows you to set Bold, Italic and Underline.
-
-* **Lists**
-  With this you can create bulleted or numbered lists, or set the indentation.
-
+* **Format**: This allows you to set Bold, Italic and Underline.
+* **Lists**: With this you can create bulleted or numbered lists, or set the indentation.
 * **Hyperlink**
 * **Unlink**
 * **Fullscreen**
-
 * **Close**
 * **Save**
 
 ## Full-Screen Editing {#full-screen-editing}
 
-For text-based components, selecting the full screen mode from the [toolbar](#componenttoolbar) will open the rich text editor and hide the rest of the page content.
+For text-based components, tapping the full screen mode from the [toolbar](#componenttoolbar) ![](do-not-localize/screen_shot_2018-03-21at163236.png) opens the rich text editor and hides the rest of the page content.
 
-![](do-not-localize/screen_shot_2018-03-21at163236.png)
-
-Fullscreen mode will show all options of your rich text editor, which can vary [depending on the configuration](/help/sites-administering/rich-text-editor.md).
+Fullscreen mode displays all the configured options that you can use for authoring. The availability is options [depends on the configuration](/help/sites-administering/rich-text-editor.md).
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
 Additional rich text editor options include:
 
-* **Anchor**
-  Create an anchor in the text that you can later link to/reference.
-
+* **Anchor**: Create an anchor in the text that you can later link to/reference.
 * **Align Text Left**
-* **Cetner Text**
+* **Center Text**
 * **Align Text Right**
 
-Close fullscreen mode by clicking the minimize icon.
-
-![screen_shot_2018-03-21at163323](assets/screen_shot_2018-03-21at163323.png)
-
+To exit the Fullscreen mode and resume usual editing, click the minimize icon ![screen_shot_2018-03-21at163323](assets/screen_shot_2018-03-21at163323.png).
