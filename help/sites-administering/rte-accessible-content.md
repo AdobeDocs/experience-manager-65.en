@@ -1,13 +1,9 @@
 ---
 title: Configuring RTE for Producing Accessible Sites
-seo-title: Configuring RTE for Producing Accessible Sites
 description: Learn how to configure the AEM Rich Text Editor to produce accessible sites.
-seo-description: Learn how to configure the AEM Rich Text Editor to produce accessible sites.
 uuid: 87539fee-3ecc-49f4-af3d-8dde72399c28
-contentOwner: Guillaume Carlino
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: operations
-content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 ---
 
@@ -17,14 +13,6 @@ AEM supports both:
 
 * standard accessibility features, including alternate text for images
 * as well as additional features that can be accessed when creating content with components that use the rich text editor (RTE)
-
->[!NOTE]
->
->See also:
->
->* our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
->* [Creating accessible content (WCAG 2.0 conformance)](/help/sites-authoring/creating-accessible-content.md)
->
 
 Content authors can use features of the RTE to provide accessibility information while adding content to a page. This can include adding structural information through headings and paragraph elements.
 
@@ -72,11 +60,8 @@ New semantic block formats may be made available for selection by:
 1. [Specify the formats you want to have available in the Paragraphs selection field](/help/sites-administering/rich-text-editor.md).
 1. The paragraph formats are then available to the content author from the selection fields in the RTE. They can be accessed:
 
-    * Using the paragraph ([pilcrow](https://en.wikipedia.org/wiki/Pilcrow)) icon in the touch-enabled UI:
-
-   ![Paragraph (pilcrow) icon.](do-not-localize/chlimage_1-7.png)
-
-    * Using the **Format** field (drop-down selector) in the classic UI.
+    * Using the paragraph pilcrow icon in the Touch-enabled UI.
+    * Using the **Format** field (pop-up selector) in the Classic UI.
 
 With structural elements available in the RTE via the paragraph format options, AEM provides a good basis for the development of accessible content. Content authors cannot use the RTE to format font size or colors or other related attributes, preventing the creation of inline formatting. Instead they must select the appropriate structural elements, such as headings and use global styles chosen from the Styles option. This ensures clean markup, greater options for users who browse with their own style sheets and correctly structured content.
 
@@ -199,3 +184,7 @@ In **Table** you must explicitly set or remove the attribute to/from the DOM ele
 >* The `itemId` property for each corresponding field is set to the name of the appropriate DOM attribute (`TablePropertiesDialog`).
 >* The attribute is set and/or removed on the DOM element explicitly (`Table`).
 
+>[!MORELIKETHIS]
+>
+>* [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md)
+>* [Creating accessible content (WCAG 2.0 conformance)](/help/sites-authoring/creating-accessible-content.md)
