@@ -151,7 +151,7 @@ Customized conflict handlers allow you to implement your own rules. Using the se
 
 Customized conflict handlers can:
 
-* Be named according to your requirements. ``
+* Be named according to your requirements.
 * Be developed/configured according to your requirements; for example, you can develop a handler so that the live copy page is given precedence.
 * Can be designed to be configured using the [OSGi configuration](/help/sites-deploying/configuring-osgi.md); in particular the:
 

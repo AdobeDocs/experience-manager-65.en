@@ -100,11 +100,6 @@ Adobe provides two versions of the Commerce Integration Framework:
 
 For AEM and Magento, please see [AEM and Magento integration](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md) using the [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html).
 
-For other implementations, see:
-
-* [SAP Commerce Cloud](/help/sites-deploying/hybris.md)
-* [Salesforce Commerce Cloud](/help/sites-deploying/demandware.md)
-
 >[!NOTE]
 >
 >For information about concepts and administering eCommerce implementations, see [Administering eCommerce](/help/sites-administering/ecommerce.md).

@@ -21,9 +21,9 @@ user-guide-title: AEM 6.5 Deploying Guide
     + [Command Line Start and Stop](command-line-start-and-stop.md)
     + [Configuring node stores and data stores in AEM 6](data-store-config.md)
     + [Revision Cleanup](revision-cleanup.md)
+    + [Oak Queries and Indexing](queries-and-indexing.md)
     + [How to Run AEM with TarMK Cold Standby](tarmk-cold-standby.md)
     + [RDBMS Support in AEM 6.5](rdbms-support-in-aem.md)
-    + [Oak Queries and Indexing](queries-and-indexing.md)
     + [Indexing via the Oak-run Jar](indexing-via-the-oak-run-jar.md)
     + [Oak-run.jar Indexing Use Cases](oak-run-indexing-usecases.md)
     + [Troubleshooting Oak Indexes](troubleshooting-oak-indexes.md)
@@ -52,7 +52,6 @@ user-guide-title: AEM 6.5 Deploying Guide
     + [Performance Optimization](configuring-performance.md)
     + [Assets Performance Guide](assets-performance-sizing.md)
     + [Configuration How-To Articles](ht-deploy.md)
-    + [Removing the Geometrixx Sites](removing-the-geometrixx-sites.md)
 + Upgrading to AEM 6.5 {#upgrading}
     + [Upgrading to AEM 6.5](upgrade.md)
     + [Planning Your Upgrade](upgrade-planning.md)
@@ -90,7 +89,3 @@ user-guide-title: AEM 6.5 Deploying Guide
    + [Best Practices for Queries and Indexing](best-practices-for-queries-and-indexing.md)
    + [User Interface Recommendations for Customers](ui-recommendations.md)
    + [Performance & Scalability](performance.md)
-+ From AEM 6.5 migration {#fromaem65}
-   + [SAP Commerce Cloud](/help/sites-deploying/hybris.md)
-   + [Salesforce Commerce Cloud](/help/sites-deploying/demandware.md)
-   + [Magento](/help/sites-deploying/magento.md)
