@@ -94,15 +94,15 @@ The following table identifies best practice encoding profiles for adaptive vide
 
 Smart crop for video&ndash;an optional feature available in Video Profiles&ndash; is a tool that uses the power of artificial intelligence in Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video that you have uploaded, regardless of size. 
 
-Supported video formats include MP4, MKV, MOV, AVI, FLV, and WMV.
+Supported video formats for smart cropping include MP4, MKV, MOV, AVI, FLV, and WMV.
 
-<!-- Max support file size for Smart Crop analysis:
+The maximum supported video file size for smart crop is the following criteria:
 
-    5 mins length
-    30FPS
-    300MB
+* Duration of five minutes.
+* 30 frames per second (FPS).
+* 300 MB file size.
 
-Notes: Sensei service is currently limited to 9,000 frames (5mins at 30FPS); if video is higher frame rate, supported video length decreases. For example, a 60FPS video would need to be 2.5 mins long to be supported>
+Note that Adobe Sensei is currently limited to 9000 frames. That is, five minutes at 30 FPS. If your video has a higher FPS, the maximum supported video duration decreases. For example, a 60 FPS video must be two and a half minutes long to be supported by Adobe Sensai and smart crop.
 
 ![Smart Crop for Video](assets/smart-crop-video.png)
 
@@ -161,7 +161,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 1. Under the Video Size heading, ensure that **[!UICONTROL Keep aspect ratio]** is checked.
 1. Set the video frame size resolution in pixels. Use the **[!UICONTROL Auto]** value to automatically scale to match the source aspect ratio (width to height ratio). For example, Auto x 480 or 640 x Auto.
 
-   Do one of the following:
+1.  Do one of the following:
 
     * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto]**. In the **[!UICONTROL Height]** field, enter a value in pixels.
 
@@ -170,14 +170,19 @@ To define advanced processing parameters for other asset types, see [Configuring
 1. (Optional) Tap the **[!UICONTROL Advanced]** tab and ensure the **[!UICONTROL Use Default Values]** check box is selected (recommended). Alternatively, modify advanced video and audio settings.
 1. In the upper-right corner of the page, tap **[!UICONTROL Save]** to save the preset.
 1. Do one of the following:
-    * Repeat steps 4-9 to create additional encoding presets. (Adaptive video streaming requires more than one video preset.)
+    * Repeat steps 4-10 to create additional encoding presets. (Adaptive video streaming requires more than one video preset.)
     * Continue to the next step.
 
 1. (Optional) To add video smart crop to the videos that this profile will be applied to, do the following:
     * On the Edit Video Profile page, to the right of the Smart Crop Ratio heading, tap **[!UICONTROL Add New]**.
     * In the Name field, type a name for the crop ratio that will help you identify it easily.
     * From the **[!UICONTROL Crop Ration]** drop-down list, select the ratio you want to use.
-    * Continue adding new ratios or continue to the next step.
+
+1. Do one of the following:
+
+    * Continue adding new crop ratios as needed.
+    * Continue to the next step.
+
 1. In the upper-right corner of the page, tap **[!UICONTROL Save]** again to save the profile.
 
 You can now apply the profile to folders that contain videos. See [Applying a video profile to folders](#applying-a-video-profile-to-folders) or [Applying a video profile globally](#applying-a-video-profile-globally).
@@ -202,11 +207,14 @@ To define advanced processing parameters for other asset types, see [Configuring
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]**.
 1. Tap **[!UICONTROL Create]** to add a new video profile.
 1. Enter a name and description for the profile.
-1. Tap **[!UICONTROL Add Video Encoding Preset]**.
+1. On the Create/Edit Video Encoding Presets page, tap **[!UICONTROL Add Video Encoding Preset]**.
 1. On the **[!UICONTROL Basic]** tab, set the video and audio options.
    Tap the information icon next to each option for additional descriptions or recommended settings based on the selected video format codec.
 1. (Optional) Under the Video Size heading, uncheck **[!UICONTROL Keep aspect ratio]**.
-1. In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto]**; to the right of the **[!UICONTROL Height]** field, tap the information icon. Use the **[!UICONTROL Size Calculator]** page to further set the video dimension (blue box) how you want. Tap **[!UICONTROL X]** when you are done.
+1. Do the following:
+    * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto]**.
+    * In the **[!UICONTROL Height]** field, enter a value in pixels.
+        To help you visualize the size of the video, tap the Height's information icon to open the **[!UICONTROL Size Calculator]** page. Use the **[!UICONTROL Size Calculator]** page to further set the video dimension (blue box) how you want. When you are done, in the upper-right corner of the dialog box, tap **[!UICONTROL X]**.
 1. (Optional) Do one of the following:
 
     * Tap the **[!UICONTROL Advanced]** tab, and make sure the **[!UICONTROL Use Default Values]** check box is selected (recommended).
@@ -218,7 +226,20 @@ To define advanced processing parameters for other asset types, see [Configuring
 1. Do one of the following:
 
     * Repeat steps 4-9 to create additional encoding presets.
-    * In the upper-right corner of the page, tap **[!UICONTROL Save]** to save the profile.
+    * Continue to the next step.
+
+1. (Optional) To add video smart crop to the videos that this profile will be applied to, do the following:
+
+    * On the Edit Video Profile page, to the right of the Smart Crop Ratio heading, tap **[!UICONTROL Add New]**.
+    * In the Name field, type a name for the crop ratio that will help you identify it easily.
+    * From the **[!UICONTROL Crop Ration]** drop-down list, select the ratio you want to use.
+    
+1. Do one of the following:
+
+    * Continue adding new crop ratios as needed.
+    * Continue to the next step.
+
+1. In the upper-right corner of the page, tap **[!UICONTROL Save]** to save the profile.
 
 You can now apply the profile to folders that contain videos. See [Applying a video profile to folders](#applying-a-video-profile-to-folders) or [Applying a video profile globally](#applying-a-video-profile-globally).
 
@@ -278,7 +299,7 @@ You can edit an existing video encoding profile to take advantage of advanced vi
  </tbody>
 </table>
 
-   ![chlimage_1-175](assets/chlimage_1-516.png)
+   ![chlimage_1-516](assets/chlimage_1-516.png)
 
 1. Near the lower-right corner of the page, tap **[!UICONTROL Add]**.
 1. Do one of the following:
@@ -342,7 +363,7 @@ If you assigned a different video profile to a folder, the new profile overrides
 
 Folders that have a profile assigned to it are indicated in the user interface by the name of the profile appearing in the card name.
 
-![chlimage_1-176](assets/chlimage_1-517.png)
+![chlimage_1-517](assets/chlimage_1-517.png)
 
 You can apply video profiles to specific folders or globally to all assets.
 
@@ -369,7 +390,7 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 1. On the folder, tap the check mark to select it and then tap **[!UICONTROL Properties]**.
 1. Select the **[!UICONTROL Video Profiles]** tab and select the profile from the drop-down menu and click **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
-   ![chlimage_1-177](assets/chlimage_1-518.png)
+   ![chlimage_1-518](assets/chlimage_1-518.png)
 You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
 
 ### Applying a video profile globally {#applying-a-video-profile-globally}
@@ -382,7 +403,7 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 * Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` and tap **[!UICONTROL Save All]**.
 
-  ![chlimage_1-178](assets/chlimage_1-519.png)
+  ![chlimage_1-519](assets/chlimage_1-519.png)
 * You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
 
 ## Monitoring the progress of a video profile processing job {#monitoring-the-progress-of-an-encoding-job}
@@ -390,42 +411,6 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 A processing indicator (or progress bar) is displayed so you can visually monitor the progress of a video profile processing job.
 
 You can also view the `error.log` file to monitor the progress of an encoding job, to see if encoding is finished, or to see any job errors. The `error.log` is found in the `logs` folder where your instance of AEM is installed.
-
-<!--## Editing the smart crop of a single video {#editing-smart-crop-single-video}
-
-You can manually realign or resize the smart crop window of a video to further refine its focal point.
-
-After you edit a smart crop and save, the change is propagated everywhere you use the crop for the specific videos.
-
-You can re-run smart crop to generate the additional crops again, if required.
-
-See also [Editing the smart crop of multiple videos](#editing-smart-crop-multiple-videos).
-
-1. Tap the AEM logo and navigate to Assets, then to the folder that has a smart crop or smart swatch image profile applied to it.
-1. Tap the folder to open its contents.
-1. Tap the image whose smart crop or smart swatch you want to adjust.
-1. On the toolbar, tap Smart Crop.
-1. Do any of the following:
-    * Near the upper-right corner of the page, drag the slider bar left or right to increase or decrease the image display, respectively.
-    * On the image, drag a corner handle to adjust the size of the viewable area of the crop or swatch.
-    * On the image, drag the box/swatch to a new location. You can only edit image swatches; color swatches are static.
-    * Above the image, tap or click Revert to undo all your edits and restore the original crop or swatch.
-1. Near the upper-right corner of the page, tap or click Save, then tap or click Close to return to the folder of assets.
-
-## Editing the smart crop of multiple videos {#editing-smart-crop-multiple-videos}
-
-After you apply an video profile&ndash;that contains smart crop&ndash;to a folder, all videos in that folder have a crop applied to them. If desired, you can manually realign or resize the smart crop window in multiple videos to further refine their focal point.
-
-After you edit a smart crop and save, the change is propagated everywhere you use the crop for the specific videos.
-
-You can re-run smart crop to generate the additional crops again, if required.
-
-1.
-1.
-1.
-1.
-1.-->
-
 
 ## Removing a video profile from folders {#removing-a-video-profile-from-folders}
 
