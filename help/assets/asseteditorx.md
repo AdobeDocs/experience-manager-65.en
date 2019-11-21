@@ -41,7 +41,6 @@ Some of the AEM Assets components require JS functions defined in `component.js`
 
 ```xml
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
-
 ```
 
 The sample loads this javascript source in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
@@ -109,14 +108,12 @@ The sample handles in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.
     else {
         title = currentPage.getTitle() == null ? currentPage.getName() : currentPage.getTitle();
     }
-
 ```
 
 In the HTML part, use the preceding title set (either asset or page title):
 
 ```xml
 <title><%= title %></title>
-
 ```
 
 ## Creating a simple form field component {#creating-a-simple-form-field-component}
@@ -134,7 +131,6 @@ This example describes how to build a component that shows and displays the meta
        sling:resourceSuperType="foundation/components/parbase"
        allowedParents="[*/parsys]"
        componentGroup="Asset Editor"/>
-
    ```
 
 1. Add `samplemeta.jsp` with the following snippet:
@@ -193,7 +189,6 @@ This example describes how to build a component that shows and displays the meta
            }%>
        </div>
    </div>
-
    ```
 
 1. To make the component available, you need to be able to edit it. To make a component editable, in CRXDE Lite, add a node `cq:editConfig` of primary type `cq:EditConfig`. So that you can remove paragraphs, add a multi-value property `cq:actions` with a single value of `DELETE`.
