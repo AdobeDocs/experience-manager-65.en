@@ -1,6 +1,6 @@
 ---
-title: Video Profiles
-seo-title: Video Profiles
+title: Video profiles
+seo-title: Video profiles
 description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. You can also add smart crop to your videos.
 seo-description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. You can also add smart crop to your videos.
 uuid: 26a20984-db63-41e9-b16c-6e164b7596a0
