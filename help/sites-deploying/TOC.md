@@ -89,16 +89,3 @@ user-guide-title: AEM 6.5 Deploying Guide
    + [Best Practices for Queries and Indexing](best-practices-for-queries-and-indexing.md)
    + [User Interface Recommendations for Customers](ui-recommendations.md)
    + [Performance & Scalability](performance.md)
-+ From AEM 6.5 migration {#fromaem65}
-   + [SAP Commerce Cloud](/help/sites-deploying/hybris.md)
-   + [Salesforce Commerce Cloud](/help/sites-deploying/demandware.md)
-   + [Magento](/help/sites-deploying/magento.md)
-
-<!-- 
-
-To be removed: 
-[SAP Commerce Cloud](/help/sites-deploying/hybris.md)
-[Salesforce Commerce Cloud](/help/sites-deploying/demandware.md)
-[Magento](/help/sites-deploying/magento.md)
-[Removing the Geometrixx Sites](removing-the-geometrixx-sites.md)
--->

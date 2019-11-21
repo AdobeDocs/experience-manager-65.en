@@ -68,7 +68,6 @@ To build a property predicate:
        sling:resourceSuperType="foundation/components/parbase"
        allowedParents="[*/parsys]"
        componentGroup="Search"/>
-
    ```
 
 1. Add `titlepredicate.jsp`.
@@ -134,11 +133,8 @@ To build a property predicate:
                "name": id + ".operation",
                "value": "like"
            });
-
        });
-
    </script>
-
    ```
 
 1. To make the component available, you need to be able to edit it. To make a component editable, in CRXDE, add a node **cq:editConfig** of primary type **cq:EditConfig**. So that you can remove paragraphs, add a multi-value property **cq:actions** with a single value of **DELETE**.
@@ -165,7 +161,6 @@ To build a group predicate:
        sling:resourceSuperType="foundation/components/parbase"
        allowedParents="[*/parsys]"
        componentGroup="Search"/>
-
    ```
 
 1. Add **titlepredicate.jsp**:
@@ -243,9 +238,7 @@ To build a group predicate:
                    }
                });
            }
-
        });
-
    ```
 
 1. To make the component available, you need to be able to edit it. To make a component editable, in CRXDE, add a node **cq:editConfig** of primary type **cq:EditConfig**. So that you can remove paragraphs, add a multi-value property **cq:actions** with a single value of **DELETE**.
