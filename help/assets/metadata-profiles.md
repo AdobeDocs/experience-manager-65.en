@@ -152,11 +152,15 @@ Folders that have a profile assigned to it are indicated in the user interface b
 
 You can apply metadata profiles to specific folders or globally to all assets.
 
+You can reprocess assets in a folder that already has an existing metadata profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+
 ### Applying metadata profiles to specific folders {#applying-metadata-profiles-to-specific-folders}
 
 You can apply a metadata profile to a folder from within the **Tools** menu or if you are in the folder, from **Properties**. This section describes how to apply metadata profiles to folders both ways.
 
 Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+
+You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
 
 #### Applying metadata profiles to folders from Profiles user interface {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
@@ -185,6 +189,8 @@ To apply a metadata profile to folders from properties:
 ### Applying a metadata profile globally {#applying-a-metadata-profile-globally}
 
 In addition to applying a profile to a folder, you can also apply one globally so that any content uploaded into AEM assets in any folder has the selected profile applied.
+
+You can reprocess assets in a folder that already has an existing metadata profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
 
 **To apply a profile globally, do one of the following**:
 

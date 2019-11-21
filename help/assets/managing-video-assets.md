@@ -31,9 +31,14 @@ Adobe Experience Manager Assets generates previews for video assets with the ext
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-## Configuration to upload video assets that are larger than 2 GB {#configuration-to-upload-video-assets-that-are-larger-than-gb}
+## Configuration to upload assets that are larger than 2 GB {#configuration-to-upload-assets-that-are-larger-than-gb}
 
 By default, the AEM Assets Touch UI does not let you upload any assets that are larger than 2 GB because of a file size limit. However, you can overwrite this limit by going into CRXDE Lite and creating a node under the `/apps` directory. The node must have the same node name, directory structure, and comparable node properties of order.
+
+ In addition to AEM Assets configuration, change the following configurations to upload large assets:
+
+* Increase the token expiration time. See [!UICONTROL Adobe Granite CSRF Servlet] in Web Console at `https://[aem_server]:[port]/system/console/configMgr`. For more information, see [CSRF protection](/help/sites-developing/csrf-protection.md).
+* Increase the `receiveTimeout` in Dispatcher configuration. For more information, see [Experience Manager Dispatcher configuration](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
 >

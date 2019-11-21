@@ -101,9 +101,7 @@ Instead of manually creating a node structure for the options in the CRX reposit
           {"value" : "image/jpeg","text" : "JPEG"},
           {"value" : "image/png","text" : "PNG"}
  ]
-
 }
-
 ```
 
 If you want to use an existing node, specify it using the selection dialog.
