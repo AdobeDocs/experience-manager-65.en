@@ -150,9 +150,10 @@ Adobe I/O Runtime is the recommended solution for implementing SSR for SPAs in A
 
 For on-premesis AEM instances, it is also possible to implement SSR using a custom Node.js instance in the same way as described above. Although this is supported by Adobe, it is not recommended.
 
-Node.js is not supported for Adobe-hosted AEM instances.
+>[!NOTE]
+>
+>Node.js is not supported for Adobe-hosted AEM instances.
 
 >[!NOTE]
 >
 >If SSR must be implemented via Node.js, Adobe recommends a separate Node.js instance for every AEM environment (author, publish, stage, etc.).
-

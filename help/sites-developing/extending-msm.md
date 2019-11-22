@@ -692,4 +692,3 @@ When `cq-msm-lockable` has been defined, breaking/closing the chain will interac
 >[!NOTE]
 >
 >When you re-enable inheritance, the live copy page property is not automatically synchronized with the source property. You can manually request a synchronization if this is required.
-

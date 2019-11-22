@@ -19,7 +19,7 @@ docset: aem65
 
 AEM provides:
 
-* a [framework for testing component UI](/help/sites-developing/hobbes.md).
+* [a framework for testing component UI](/help/sites-developing/hobbes.md).
 * [a mechanism for testing and debugging components](/help/sites-developing/developer-mode.md).
 
 The following are two Open Source Testing tools:

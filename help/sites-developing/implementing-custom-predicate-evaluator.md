@@ -114,13 +114,20 @@ pom.xml
 
 The following snippet shows the differences, in [unified diff format](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
-<table>
- <tbody>
-  <tr>
-   <td><p> </p> <p><code>@@ -120,6 +120,12 @@</code></p> <p><code> &amp;lt;scope&amp;gt;provided&amp;lt;/scope&amp;gt;</code></p> <p><code> </code></p> <p><code> &amp;lt;dependency&amp;gt;</code></p> <p><code>+ &amp;lt;groupid&amp;gt;com.day.cq&amp;lt;/groupid&amp;gt;</code></p> <p><code>+ &amp;lt;artifactid&amp;gt;cq-search&amp;lt;/artifactid&amp;gt;</code></p> <p><code>+ &amp;lt;version&amp;gt;5.6.4&amp;lt;/version&amp;gt;</code></p> <p><code>+ &amp;lt;scope&amp;gt;provided&amp;lt;/scope&amp;gt;</code></p> <p><code>+ &amp;lt;/dependency&amp;gt;</code></p> <p><code>+ &amp;lt;dependency&amp;gt;</code></p> <p><code> &amp;lt;groupid&amp;gt;junit&amp;lt;/groupid&amp;gt;</code></p> <p><code> &amp;lt;artifactid&amp;gt;junit&amp;lt;/artifactid&amp;gt;</code></p> <p><code> &amp;lt;version&amp;gt;3.8.1&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;</code></p> <p> </p> </td>
-  </tr>
- </tbody>
-</table>
+```
+@@ -120,6 +120,12 @@
+             <scope>provided</scope>
+         <dependency>
++            <groupid>com.day.cq</groupid>
++            <artifactid>cq-search</artifactid>
++            <version>5.6.4</version>
++            <scope>provided</scope>
++        </dependency>
++        <dependency>
+             <groupid>junit</groupid>
+             <artifactid>junit</artifactid>
+             <version>3.8.1</version></dependency>
+```
 
 [aem-search-custom-predicate-evaluator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)- [pom.xml](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/raw/7aed6b35b4c8dd3655296e1b10cf40c0dd1eaa61/pom.xml)
 
@@ -139,13 +146,20 @@ The `cq-search` project contains the `AbstractPredicateEvaluator` abstract class
 
    The following snippet shows the differences, in [unified diff format](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
-<table>
- <tbody>
-  <tr>
-   <td><p> </p> <p><code>@@ -19,8 +19,11 @@</code></p> <p><code> */</code></p> <p><code> package com.adobe.aem.docs.search;</code></p> <p><code> </code></p> <p><code>+import org.apache.felix.scr.annotations.Component;</code></p> <p><code>+</code></p> <p><code> import com.day.cq.search.eval.AbstractPredicateEvaluator;</code></p> <p><code> </code></p> <p><code>+@Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/repli")</code></p> <p><code> public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {</code></p> <p><code> </code></p> <p><code> }</code></p> <p> </p> </td>
-  </tr>
- </tbody>
-</table>
+```
+@@ -19,8 +19,11 @@
+  */
+ package com.adobe.aem.docs.search;
+
++import org.apache.felix.scr.annotations.Component;
++
+ import com.day.cq.search.eval.AbstractPredicateEvaluator;
+
++@Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/repli")
+ public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
+
+ }
+```
 
    [aem-search-custom-predicate-evaluator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)- [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/raw/ec70fac35fbd0d132e00c6066a204804e9cbe70f/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
 
@@ -171,13 +185,123 @@ The complete implementation of this `PredicateEvaluator` might be similar to the
 
 src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java
 
-<table>
- <tbody>
-  <tr>
-   <td><p>1</p> <p>2</p> <p>3</p> <p>4</p> <p>5</p> <p>6</p> <p>7</p> <p>8</p> <p>9</p> <p>10</p> <p>11</p> <p>12</p> <p>13</p> <p>14</p> <p>15</p> <p>16</p> <p>17</p> <p>18</p> <p>19</p> <p>20</p> <p>21</p> <p>22</p> <p>23</p> <p>24</p> <p>25</p> <p>26</p> <p>27</p> <p>28</p> <p>29</p> <p>30</p> <p>31</p> <p>32</p> <p>33</p> <p>34</p> <p>35</p> <p>36</p> <p>37</p> <p>38</p> <p>39</p> <p>40</p> <p>41</p> <p>42</p> <p>43</p> <p>44</p> <p>45</p> <p>46</p> <p>47</p> <p>48</p> <p>49</p> <p>50</p> <p>51</p> <p>52</p> <p>53</p> <p>54</p> <p>55</p> <p>56</p> <p>57</p> <p>58</p> <p>59</p> <p>60</p> <p>61</p> <p>62</p> <p>63</p> <p>64</p> <p>65</p> <p>66</p> <p>67</p> <p>68</p> <p>69</p> <p>70</p> <p>71</p> <p>72</p> <p>73</p> <p>74</p> <p>75</p> <p>76</p> <p>77</p> <p>78</p> <p>79</p> <p>80</p> <p>81</p> <p>82</p> <p>83</p> <p>84</p> <p>85</p> <p>86</p> <p>87</p> <p>88</p> <p>89</p> <p>90</p> <p>91</p> <p>92</p> <p>93</p> <p>94</p> </td>
-   <td><p> </p> <p><code>/*</code></p> <p><code> * #%L</code></p> <p><code> * aem-docs-custom-predicate-evaluator</code></p> <p><code> * %%</code></p> <p><code> * Copyright (C) 2013 Adobe Research</code></p> <p><code> * %%</code></p> <p><code> * Licensed under the Apache License, Version 2.0 (the "License");</code></p> <p><code> * you may not use this file except in compliance with the License.</code></p> <p><code> * You may obtain a copy of the License at</code></p> <p><code> *</code></p> <p><code> * <a href="https://www.apache.org/licenses/LICENSE-2.0">https://www.apache.org/licenses/LICENSE-2.0</a></code></p> <p><code> *</code></p> <p><code> * Unless required by applicable law or agreed to in writing, software</code></p> <p><code> * distributed under the License is distributed on an "AS IS" BASIS,</code></p> <p><code> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</code></p> <p><code> * See the License for the specific language governing permissions and</code></p> <p><code> * limitations under the License.</code></p> <p><code> * #L%</code></p> <p><code> */</code></p> <p><code>package com.adobe.aem.docs.search;</code></p> <p><code> </code></p> <p><code>import org.apache.felix.scr.annotations.Component;</code></p> <p><code>import org.slf4j.Logger;</code></p> <p><code>import org.slf4j.LoggerFactory;</code></p> <p><code> </code></p> <p><code>import com.day.cq.search.Predicate;</code></p> <p><code>import com.day.cq.search.eval.AbstractPredicateEvaluator;</code></p> <p><code>import com.day.cq.search.eval.EvaluationContext;</code></p> <p><code> </code></p> <p><code>@Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/repli")</code></p> <p><code>public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {</code></p> <p><code> static final String PE_NAME = "replic";</code></p> <p><code> </code></p> <p><code> static final String PN_LAST_REPLICATED_BY = "cq:lastReplicatedBy";</code></p> <p><code> static final String PN_LAST_REPLICATED = "cq:lastReplicated";</code></p> <p><code> static final String PN_LAST_REPLICATED_ACTION = "cq:lastReplicationAction";</code></p> <p><code> </code></p> <p><code> static final String PREDICATE_BY = "by";</code></p> <p><code> static final String PREDICATE_SINCE = "since";</code></p> <p><code> static final String PREDICATE_SINCE_OP = " &amp;gt;= ";</code></p> <p><code> static final String PREDICATE_ACTION = "action";</code></p> <p><code> </code></p> <p><code> Logger log = LoggerFactory.getLogger(getClass());</code></p> <p><code> </code></p> <p><code> /**</code></p> <p><code> * Returns a XPath expression filtering by replication metadata.</code></p> <p><code> *</code></p> <p><code> * @see com.day.cq.search.eval.AbstractPredicateEvaluator#getXPathExpression(com.day.cq.search.Predicate,</code></p> <p><code> * com.day.cq.search.eval.EvaluationContext)</code></p> <p><code> */</code></p> <p><code> @Override</code></p> <p><code> public String getXPathExpression(Predicate predicate,</code></p> <p><code> EvaluationContext context) {</code></p> <p><code> </code></p> <p><code> log.debug("predicate {}", predicate);</code></p> <p><code> </code></p> <p><code> String date = predicate.get(PREDICATE_SINCE);</code></p> <p><code> String user = predicate.get(PREDICATE_BY);</code></p> <p><code> String action = predicate.get(PREDICATE_ACTION);</code></p> <p><code> </code></p> <p><code> StringBuilder sb = new StringBuilder();</code></p> <p><code> </code></p> <p><code> if (date != null) {</code></p> <p><code> sb.append(PN_LAST_REPLICATED).append(PREDICATE_SINCE_OP);</code></p> <p><code> sb.append("xs:dateTime('").append(date).append("')");</code></p> <p><code> }</code></p> <p><code> if (user != null) {</code></p> <p><code> addAndOperator(sb);</code></p> <p><code> sb.append(PN_LAST_REPLICATED_BY);</code></p> <p><code> sb.append("='").append(user).append("'");</code></p> <p><code> }</code></p> <p><code> if (action != null) {</code></p> <p><code> addAndOperator(sb);</code></p> <p><code> sb.append(PN_LAST_REPLICATED_ACTION);</code></p> <p><code> sb.append("='").append(action).append("'");</code></p> <p><code> }</code></p> <p><code> String xpath = sb.toString();</code></p> <p><code> </code></p> <p><code> log.debug("xpath **{}**", xpath);</code></p> <p><code> </code></p> <p><code> return xpath;</code></p> <p><code> }</code></p> <p><code> </code></p> <p><code> /**</code></p> <p><code> * Add an and operator if the builder is not empty.</code></p> <p><code> *</code></p> <p><code> * @param sb a {@link StringBuilder} containing the query under construction</code></p> <p><code> */</code></p> <p><code> private void addAndOperator(StringBuilder sb) {</code></p> <p><code> if (sb.length() != 0) {</code></p> <p><code> sb.append(" and ");</code></p> <p><code> }</code></p> <p><code> }</code></p> <p><code>}</code></p> <p> </p> </td>
-  </tr>
- </tbody>
-</table>
+```
+/*
+ * #%L
+ * aem-docs-custom-predicate-evaluator
+ * %%
+ * Copyright (C) 2013 Adobe Research
+ * %%
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * #L%
+ */
+
+package com.adobe.aem.docs.search;
+
+import org.apache.felix.scr.annotations.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.day.cq.search.Predicate;
+import com.day.cq.search.eval.AbstractPredicateEvaluator;
+import com.day.cq.search.eval.EvaluationContext;
+
+@Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/repli")
+
+public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
+
+    static final String PE_NAME = "replic";
+
+
+    static final String PN_LAST_REPLICATED_BY = "cq:lastReplicatedBy";
+    static final String PN_LAST_REPLICATED = "cq:lastReplicated";
+    static final String PN_LAST_REPLICATED_ACTION = "cq:lastReplicationAction";
+
+    static final String PREDICATE_BY = "by";
+    static final String PREDICATE_SINCE = "since";
+    static final String PREDICATE_SINCE_OP = " >= ";
+    static final String PREDICATE_ACTION = "action";
+
+    Logger log = LoggerFactory.getLogger(getClass());
+
+    /**
+     * Returns a XPath expression filtering by replication metadata.
+     *
+     * @see com.day.cq.search.eval.AbstractPredicateEvaluator#getXPathExpression(com.day.cq.search.Predicate,
+     *      com.day.cq.search.eval.EvaluationContext)
+     */
+
+    @Override
+
+    public String getXPathExpression(Predicate predicate,
+            EvaluationContext context) {
+
+        log.debug("predicate {}", predicate);
+
+        String date = predicate.get(PREDICATE_SINCE);
+        String user = predicate.get(PREDICATE_BY);
+        String action = predicate.get(PREDICATE_ACTION);
+
+        StringBuilder sb = new StringBuilder();
+
+        if (date != null) {
+
+            sb.append(PN_LAST_REPLICATED).append(PREDICATE_SINCE_OP);
+            sb.append("xs:dateTime('").append(date).append("')");
+
+        }
+
+        if (user != null) {
+
+            addAndOperator(sb);
+            sb.append(PN_LAST_REPLICATED_BY);
+            sb.append("='").append(user).append("'");
+
+        }
+
+        if (action != null) {
+
+            addAndOperator(sb);
+            sb.append(PN_LAST_REPLICATED_ACTION);
+            sb.append("='").append(action).append("'");
+
+        }
+
+        String xpath = sb.toString();
+
+        log.debug("xpath **{}**", xpath);
+
+        return xpath;
+
+    }
+
+    /**
+     * Add an and operator if the builder is not empty.
+     *
+     * @param sb a {@link StringBuilder} containing the query under construction
+     */
+
+    private void addAndOperator(StringBuilder sb) {
+
+        if (sb.length() != 0) {
+
+            sb.append(" and ");
+
+        }
+
+    }
+
+}
+```
 
 [aem-search-custom-predicate-evaluator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)- [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/blob/master/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)

@@ -50,6 +50,7 @@ Select the reporting period for which Analytics data appears on the Sites consol
 * This Year's Data
 
 The current reporting period appears on the toolbar of the Sites console (right of the top toolbar). Use the drop down to select the required reporting period.
+
 ![aa-05](assets/aa-05.png)
 
 ### Configuring Available Data Columns {#configuring-available-data-columns}

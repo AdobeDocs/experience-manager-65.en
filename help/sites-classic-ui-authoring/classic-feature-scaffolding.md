@@ -48,7 +48,7 @@ The body of the scaffold is the form. When a user wishes to create a page using 
 
 * **Title**: This is the name of the page to be created. This field is always present on every scaffold.
 * **Text**: This field corresponds to a Text Component on the resulting page.
-* Image: This field corresponds to an Image Component on the resulting page.
+* **Image**: This field corresponds to an Image Component on the resulting page.
 * **Image/Advanced**: **Title**: The title of the image.
 * **Image/Advanced**: **Alt Text**: The alt text for the image.
 * **Image/Advanced**: **Description**: The description of the image.
@@ -59,9 +59,9 @@ The body of the scaffold is the form. When a user wishes to create a page using 
 
 To create a new scaffold go to the **Tools** console, then **Default Page Scaffolding** and create a new page. A single page template type will be available, the *Scaffolding Template.*
 
-*Go to the **Page Properties** of the new page and set the *Title Text*, *Description*, *Target Template* and *Target Path*, as described above.*
+Go to the **Page Properties** of the new page and set the *Title Text*, *Description*, *Target Template* and *Target Path*, as described above.
 
-*Next, you have to define the structure of the page that this scaffold will create. To do this go into * [design mode](/help/sites-authoring/page-authoring.md#sidekick)* on the scaffold page. A link will appear allowing you to edit the scaffold in the** dialog editor**.*
+Next, you have to define the structure of the page that this scaffold will create. To do this go into **[design mode](/help/sites-authoring/page-authoring.md#sidekick)** on the scaffold page. A link will appear allowing you to edit the scaffold in the **dialog editor**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
@@ -85,7 +85,7 @@ The property list for this field will appear on the right side of the dialog edi
 
 Notice the name property for this field. It has the value
 
-./jcr:content/par/text/text
+`./jcr:content/par/text/text`
 
 This is the name of the property to which the content of this field will be written when the scaffold is used to create a page. The property is stated as a relative path from the node representing the page to be created. It specifies the property text, below the node text, which is below the node par, which is itself a child of the jcr:content node below the page node.
 
@@ -108,7 +108,7 @@ The name property of this hidden field is
 
 `./jcr:content/par/text/textIsRich`
 
-This is a boolean property used to interpret the text string stored at `./jcr:content/par/text/text.`
+This is a boolean property used to interpret the text string stored at `./jcr:content/par/text/text`.
 
 Because we know that the text should be interpreted as a rich text we specify the `value` property of this field as `true`.
 
@@ -132,7 +132,7 @@ and the fixed value specified for this property is
 
 `foundation/components/textimage`
 
-``This specifies that component to be used to render the text content of this paragraph is the *Text Image* component. Using with the `isRichText` boolean specified in the other hidden field, the component can render the actual text string stored at `./jcr:content/par/text/text` in the desired way.
+This specifies that component to be used to render the text content of this paragraph is the *Text Image* component. Using with the `isRichText` boolean specified in the other hidden field, the component can render the actual text string stored at `./jcr:content/par/text/text` in the desired way.
 
 ### Scaffolding with MSM Inheritance {#scaffolding-with-msm-inheritance}
 

@@ -302,9 +302,9 @@ The properties of a specific cell, or series of cells, can be configured:
 
 * **Width**
 * **Height**
-* **Horizontal Align** Left, Center or Right
-* **Vertical Align** Top, Middle, Bottom or Baseline
-* **Cell type** Data or Header
+* **Horizontal Align** - Left, Center or Right
+* **Vertical Align** - Top, Middle, Bottom or Baseline
+* **Cell type**- Data or Header
 * **Apply to:** Single cell, Entire row, Entire column
 
 #### Add or Delete Rows {#add-or-delete-rows}

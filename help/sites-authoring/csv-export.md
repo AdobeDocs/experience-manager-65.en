@@ -28,27 +28,19 @@ docset: aem65
 The **Create CSV Export** wizard allows you to select:
 
 * Properties to export
-
     * Metadata
-
         * Name
         * Modified
         * Published
         * Template
         * Workflow
-
     * Translation
-
-        * Translated
-
+      * Translated
     * Analytics
-
         * Page Views
         * Unique Visitors
         * Time on Page
-
 * Depth
-
     * Parent Path
     * Direct children only
     * Additional levels of children
@@ -71,4 +63,3 @@ To create a CSV export:
 
 1. Select the required properties to export.
 1. Select **Create**.
-
