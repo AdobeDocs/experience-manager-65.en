@@ -163,16 +163,15 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
 
 * The hybris extension provides a polling importer ("hybris" scheme"), which can be configured to import changes into AEM at a specified interval (for example, every 24 hours where the interval is specified in seconds):
 
-    *
+    * `https://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json`
 
       ```
-      https://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
-       * "jcr:mixinTypes": ["cq:PollConfig"],
-       * "enabled": true,
-       * "source": "hybris:outdoors",
-       * "jcr:primaryType": "cq:PageContent",
-       * "interval": 86400
+        "jcr:mixinTypes": ["cq:PollConfig"],
+        "enabled": true,
+        "source": "hybris:outdoors",
+        "jcr:primaryType": "cq:PageContent",
+        "interval": 86400
        }
       ```
 
@@ -415,8 +414,6 @@ public class AxisFilter implements VariantFilter {
         * `int CommerceSession.getQuantityBreakpoints(Product product)`
         * `String CommerceSession.getProductPrice(Product product)`
 
-  ``
-
 **Storage**
 
 * Storage
@@ -651,4 +648,3 @@ public class MyImportHandler extends DefaultImportHandler {
     ...
 }
 ```
-

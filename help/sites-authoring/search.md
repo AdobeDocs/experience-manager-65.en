@@ -118,4 +118,3 @@ As well as searching by a wide range of facets you can also save a particular se
 Saved searches can be modified by selecting the saved search and clicking **Edit Saved Search** at the bottom of the search panel.
 
 ![screen-shot_2019-03-05at103010](assets/screen-shot_2019-03-05at103010.png)
-

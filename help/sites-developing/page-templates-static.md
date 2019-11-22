@@ -319,4 +319,3 @@ This example illustrates how to allow a template to be used for certain content 
 1. Change the `allowedPaths` property and other properties used for [template availabillity](/help/sites-developing/templates.md#template-availability). For example, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` means that this template is allowed in any path under `/content/geometrixx-outdoors`.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
-

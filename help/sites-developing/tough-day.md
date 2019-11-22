@@ -19,7 +19,7 @@ docset: aem65
 
 "Tough Day 2" is a an application that allows you to stress test the limits of your AEM instance. It can be run out of the box with the default test suite or it can be configured to fit your testing needs. You can watch [this recording](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) for a presentation of the application.
 
-## How to run Tough Day 2 {#how-to-run-tough-day}
+## How to Run Tough Day 2 {#how-to-run-tough-day}
 
 Download the latest version of Tough Day 2 from the [Adobe Repository](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/). After you download the application, you can run it out of the box by providing the `host` parameter. In the following example, the AEM instance runs locally so the `localhost` value is used:
 
@@ -282,7 +282,7 @@ Tough Day 2 can run in one of the following modes: **normal** and **constant loa
 
 The **normal** run mode has two parameters:
 
-* `concurrency`** **- concurrency represents the number of threads that Tough Day 2 will create for test execution. On these threads, tests will be executed until either the duration has run out or there are no more tests to execute.
+* `concurrency` - concurrency represents the number of threads that Tough Day 2 will create for test execution. On these threads, tests will be executed until either the duration has run out or there are no more tests to execute.
 
 * `waittime` - the wait time between two consecutive test executions on the same thread. The value must be expressed in milliseconds.
 
@@ -360,9 +360,9 @@ Tough Day 2 currently reports 9 test metrics that you can evaluate. Metrics with
 | 90p&#42; |90 percentile. |
 | 99p&#42; |99 percentile. |
 | 99.9p&#42; |99.9 percentile. |
-| Real Throughput &#42; |Number of runs divided by the elapsed execution time. |
+| Real Throughput&#42; |Number of runs divided by the elapsed execution time. |
 
-These metrics are written with the help of publishers** **that can be added with the `add` parameter (similarly to adding tests). Currently, there are two options:
+These metrics are written with the help of publishers that can be added with the `add` parameter (similarly to adding tests). Currently, there are two options:
 
 * **CSVPublisher** - the output is a CSV file.
 * **ConsolePublisher** - the output is displayed in the console.
@@ -407,24 +407,3 @@ The logs are not overwritten, subsequent runs will append messages to the existi
 #### Known Issues {#known-issues}
 
 [Get File](assets/toughday-6_1.jar)
-
-#### Example Usage {#example-usage-1}
-
-#### Example Usage {#example-usage-2}
-
-#### Example Usage {#example-usage-3}
-
-#### Example Usage {#example-usage-4}
-
-#### Example Usage {#example-usage-5}
-
-#### Example Usage {#example-usage-6}
-
-#### Example Usage {#example-usage-7}
-
-#### Example Usage {#example-usage-8}
-
-#### Example Usage {#example-usage-9}
-
-#### Example Usage {#example-usage-10}
-

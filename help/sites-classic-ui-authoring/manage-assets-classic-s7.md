@@ -52,7 +52,7 @@ You can publish digital assets to Scene7 either from the Assets console in the c
 
 To publish to Scene7 from the Assets console if the assets are in a Scene7 target folder:
 
-1. In the AEM classic UI, click** Digital Assets** to access the digital asset manager.
+1. In the AEM classic UI, click **Digital Assets** to access the digital asset manager.
 
 1. Select the asset (or assets) or folder from within the target folder you want to publish to Scene7 and right-click and select **Publish to Scene7**. Alternatively, you can select **Publish to Scene7** from the **Tools menu**.
 
@@ -104,8 +104,8 @@ To publish assets that reside outside the CQ target folder:
 
 1. In the sidekick, click the **Page** icon and click **Page Properties**.
 
-1. Click **Cloud Services** and click **Add services **and select **Scene7**.
-1. In the** Adobe Scene7 **drop-down list, select the desired configuration and click **OK**.
+1. Click **Cloud Services** and click **Add services** and select **Scene7**.
+1. In the **Adobe Scene7** drop-down list, select the desired configuration and click **OK**.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
@@ -191,7 +191,7 @@ To add an interactive viewing experience to a responsive site in the classic UI:
 
 Although configuration options vary, the following are common to all Scene7 components:
 
-* **File Reference **- Browse to a file that you want to reference. File reference shows the asset URL and not necessarily the full Scene7 URL including the URL commands and parameters. You cannot add Scene7 URL commands and parameters in this field. They have to be added through the corresponding functionality in the component.
+* **File Reference**- Browse to a file that you want to reference. File reference shows the asset URL and not necessarily the full Scene7 URL including the URL commands and parameters. You cannot add Scene7 URL commands and parameters in this field. They have to be added through the corresponding functionality in the component.
 * **Width** - Lets you set the width.
 * **Height** - Lets you set the height.
 
@@ -247,7 +247,7 @@ The Scene7 Image component lets you add Scene7 functionality to your images, suc
 
 ### Image Template {#image-template}
 
-[Scene7 Image Templates](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) are layered Photoshop content that was imported to Scene7, where content and properties were parameterized for variability. The** Image template** component lets you import images and change the text dynamically in AEM. In addition, you can configure the **Image template** component to use values from client context, so that each user experiences the image in a personalized way.
+[Scene7 Image Templates](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) are layered Photoshop content that was imported to Scene7, where content and properties were parameterized for variability. The **Image template** component lets you import images and change the text dynamically in AEM. In addition, you can configure the **Image template** component to use values from client context, so that each user experiences the image in a personalized way.
 
 Click **Edit** to configure the component. You can configure [settings common to all Scene7 components](/help/sites-administering/scene7.md#settingscommontoallscene7components) as well as other settings described in this section.
 
@@ -306,7 +306,7 @@ The Scene7 **Video** component (available from the Scene7 section of the sidekic
 
 It can be used for adaptive video sets, a single MP4 video, or a single F4V video.
 
-See [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) for more information on how videos work with Scene7 integration. In addition, see how [the **Scene7 video **component compares to the foundation **video** component](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md).
+See [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) for more information on how videos work with Scene7 integration. In addition, see how [the **Scene7 video** component compares to the foundation **video** component](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md).
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -329,7 +329,7 @@ If you have multiple configurations, AEM by default displays the [default config
 >
 >* Assets located in the ad-hoc folder will not appear in the Scene7 content browser.
 >* When [Secure Preview is enabled](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), both published and unpublished assets on Scene7 do appear in the Scene7 content browser.
->* If you do not see **Scene7 **or the** S7 **icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
+>* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
 >
 >* For video, the Scene7 content browser supports: >
 >    * Adaptive Video Sets: container of all video renditions needed for seamless playback across multiple screens
@@ -337,7 +337,7 @@ If you have multiple configurations, AEM by default displays the [default config
 >    * Single F4V video
 >
 
-### Browsing content in the classic UI {#browsing-content-in-the-classic-ui}
+### Browsing Content {#browsing-content-in-the-classic-ui}
 
 Browse content in Scene7 by clicking the **S7** tab.
 
@@ -401,4 +401,3 @@ By default, AEM searches the folder selected and all sub-folders.
 **Publish Status** You can filter for assets based on publication status: Unpublished or Published. If you do not select any Publish Status, AEM by default searches all publish statuses.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
-

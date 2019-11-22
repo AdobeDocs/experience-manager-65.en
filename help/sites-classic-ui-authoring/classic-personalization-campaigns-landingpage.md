@@ -299,10 +299,10 @@ This is an optional field that specifies the path to a node in the repository. W
 If you are validating the complete form, also include one of the following:
 
 * A script for client validation:
-  ` /apps/<*myApp*>/form/<*myValidation*>/formclientvalidation.jsp`
+  ` /apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
 
 * A script for validation on the server side:
-  ` /apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
+  ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
 **Action Configuration** Depending on the selection in Post Options, the Action Configuration changes. For example, when you select Create Lead, you can configure what list the lead is added to.
 
@@ -459,4 +459,3 @@ You can publish the landing page and all its dependencies just like publishing a
 >[!NOTE]
 >
 >Publishing the desktop landing page also publishes its corresponding mobile version (if any). But publishing a mobile landing page does not publish the desktop version.
-

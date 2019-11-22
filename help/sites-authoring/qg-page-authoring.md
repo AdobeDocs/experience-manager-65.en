@@ -288,7 +288,7 @@ These actions can all be triggered by:
 
 For example, the lock icon looks like this:
 
-![screen_shot_2018-03-21at161124](assets/screen_shot_2018-03-21at161124.png) 
+![screen_shot_2018-03-21at161124](assets/screen_shot_2018-03-21at161124.png)
 
 ### Accessing Page References {#accessing-page-references}
 
@@ -326,7 +326,7 @@ The same basic mechanism is used when restoring and/or comparing versions of you
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
-   If a version of your page has already been saved, this will be listed in the Timeline. 
+   If a version of your page has already been saved, this will be listed in the Timeline.
 
 1. Tap/click on the version you want to restore - this will reveal additional action buttons:
 
@@ -337,4 +337,3 @@ The same basic mechanism is used when restoring and/or comparing versions of you
     * **Show Differences**
 
         * The page will be opened with differences (between the two versions) highlighted.
-

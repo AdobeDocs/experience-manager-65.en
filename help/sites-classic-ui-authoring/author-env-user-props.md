@@ -60,4 +60,3 @@ Each user can set certain properties for themselves. This is available from **Pr
 The dialog offers the following options:
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
-

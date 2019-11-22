@@ -430,4 +430,3 @@ You can create folders to help organize your files and pages.
    ![chlimage_1-119](assets/chlimage_1-119.png)
 
 1. Select **Create** to create the folder.
-

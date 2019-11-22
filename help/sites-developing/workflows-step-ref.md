@@ -181,7 +181,7 @@ The **Set Variable** step executes repeatedly incrementing the value of **count*
 
 ## OR Split {#or-split}
 
-The **OR Split **creates a split in the workflow, after which only one branch will be active. This step enables you to introduce conditional processing paths into your workflow. You add workflow steps to each branch as required.
+The **OR Split** creates a split in the workflow, after which only one branch will be active. This step enables you to introduce conditional processing paths into your workflow. You add workflow steps to each branch as required.
 
 >[!NOTE]
 >
@@ -609,4 +609,3 @@ To configure the step, edit and use the following tabs:
 
     * **Specify Value:** Specify a value to map to the variable. The value that you specify in this field depends on the mapping mode.
     * **Add Mapping:** Use this option to add more mappings to set a value for the variable.
-

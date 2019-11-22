@@ -70,11 +70,11 @@ Once a version has been created you can revert to that version if needed.
 >To illustrate:  
 
 >
->* Create versions of any page.
->* The initial labels and version node names will be 1.0, 1.1, 1.2 and so forth.  
->* Restore the first version; i.e. 1.0.
->* Create new versions again.
->* The generated labels and node names will now be 1.0.0, 1.0.1, 1.0.2, etc.
+>1. Create versions of any page.
+>1. The initial labels and version node names will be 1.0, 1.1, 1.2 and so forth.  
+>1. Restore the first version; i.e. 1.0.
+>1. Create new versions again.
+>1. The generated labels and node names will now be 1.0.0, 1.0.1, 1.0.2, etc.
 >
 
 To revert to a previous version:
@@ -168,4 +168,3 @@ Timewarp makes a best effort to reproduce a page at a selected point in time. Ho
 >[!CAUTION]
 >
 >Timewarp is designed as a tool to assit authors with understanding and creating their content. It is not intended as an audit log or for legal purposes.
-

@@ -182,7 +182,7 @@ To create a new lead manually:
 
    ![screen_shot_2012-02-21at115045am](assets/screen_shot_2012-02-21at115045am.png)
 
-1. Enter address information, as appropriate. Click **Save** to save the lead. If you need to add additional leads, click** Save and New**.
+1. Enter address information, as appropriate. Click **Save** to save the lead. If you need to add additional leads, click **Save and New**.
 
    The new lead appears in the Leads pane. When you click the entry, all entered information appears in the right pane. After creating a lead, you can add it to a list.
 
@@ -240,7 +240,7 @@ To import leads from a comma-separated list:
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
-1. Click** Next**. Here, you preview the leads to ensure they are accurate.
+1. Click **Next**. Here, you preview the leads to ensure they are accurate.
 
    ![screen_shot_2012-02-21at123104pm](assets/screen_shot_2012-02-21at123104pm.png)
 
@@ -260,7 +260,7 @@ To add leads to pre-existing lists:
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. In the **Tools** menu, select **Add to List....** The **Add to List **window opens.
+1. In the **Tools** menu, select **Add to List....** The **Add to List** window opens.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
@@ -404,4 +404,3 @@ To view the leads that belong to a list:
    ![screen_shot_2012-02-21at10828pm](assets/screen_shot_2012-02-21at10828pm.png)
 
 1. Click **Close** to return to the MCM.
-

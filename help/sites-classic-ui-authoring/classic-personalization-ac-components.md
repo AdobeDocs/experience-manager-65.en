@@ -27,7 +27,7 @@ When you integrate with Adobe Campaign, you have components available for when w
 
 All the Campaign components follow the best practices outlined in [Best Practices for Email Templates](/help/sites-administering/best-practices-for-email-templates.md) and are based on the Adobe markup language [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html).
 
-When you open a newsletter/email that is configured to integrate with Adobe Campaign, you should see the following components in the **Adobe Campaign Newsletter **section:
+When you open a newsletter/email that is configured to integrate with Adobe Campaign, you should see the following components in the **Adobe Campaign Newsletter** section:
 
 * Heading (Campaign)
 * Image (Campaign)
@@ -212,7 +212,7 @@ You add the text and context fields or personalization blocks to create the cont
 
 >[!NOTE]
 >
->Only the fields defined in the **nms:seedMember** schema or one of its extensions are taken into account. The attributes of the tables linked to **nms:seedMember **are not available.
+>Only the fields defined in the **nms:seedMember** schema or one of its extensions are taken into account. The attributes of the tables linked to `nms:seedMember` are not available.
 
 ## Adobe Campaign Form Components {#adobe-campaign-form-components}
 
@@ -220,7 +220,7 @@ You use Adobe Campaign components to create a form that users fill out to either
 
 Each component field can be linked to an Adobe Campaign database field. The available fields differ according to the type of data they contain as described in the section [Components and Data Type](#components-and-data-type). If you extend your recipient schema in Adobe Campaign, the new fields will be available in the components whose data types match.
 
-When you open a form that is configured to integrate with Adobe Campaign, you see the following components in the **Adobe Campaign **section:
+When you open a form that is configured to integrate with Adobe Campaign, you see the following components in the **Adobe Campaign** section:
 
 * Checkbox (Campaign)
 * Date Field (Campaign) and Date Field/HTML5 (Campaign)
@@ -305,10 +305,8 @@ You can configure the following:
 
 #### Constraints {#constraints}
 
-* **Required
-  **Select this check box to make this component required; that is, users must enter a value.
-* **Required Message
-  **Optionally, add a message stating that the field is required.
+* **Required** - Select this check box to make this component required; that is, users must enter a value.
+* **Required Message** - Optionally, add a message stating that the field is required.
 
 #### Styling {#styling}
 
@@ -331,13 +329,10 @@ Use the date field to allow recipients to a date; for example you may want the r
 
 In addition to [settings common to most Adobe Campaign components](#settings-common-to-most-components), you can configure the following:
 
-* **Constraints - Constraint **drop-down
-  You can select - **None** or **Date - **to add the constraint of a date or no constraint. If you select date, the answer users enter into the field must be in a date format.
+* **Constraints - Constraint** - You can select - **None** or **Date** to add the constraint of a date or no constraint. If you select date, the answer users enter into the field must be in a date format.
 
-* **Constraint Message
-  **In addition, you can add a constraint message so users know how to properly format their answers.
-* **Styling - Width**
-  Adjust the width of the field by clicking or tapping the **+** and **-** icons or entering a number.
+* **Constraint Message** - In addition, you can add a constraint message so users know how to properly format their answers.
+* **Styling - Width** - Adjust the width of the field by clicking or tapping the **+** and **-** icons or entering a number.
 
 The following example shows a Date Field (Campaign) component with the width adjusted being displayed.
 
@@ -351,10 +346,8 @@ Each form displaying and modifying Adobe Campaign profile data **must** include 
 
 You can configure the following in the Encrypted Primary Key (Campaign) component:
 
-* **Title and Text - Element Name
-  **Defaults to encryptedPK. You only need to change the element name when it conflicts with the name of another element on the form. No two form fields can have the same element name.
-* **Adobe Campaign - URL parameter**
-  Add the URL parameter for the EPK. For example, you can use the value **epk**.
+* **Title and Text - Element Name** - Defaults to encryptedPK. You only need to change the element name when it conflicts with the name of another element on the form. No two form fields can have the same element name.
+* **Adobe Campaign - URL parameter** - Add the URL parameter for the EPK. For example, you can use the value **epk**.
 
 The following example shows an Encrypted Primary Key (Campaign) component being displayed.
 
@@ -374,10 +367,8 @@ The Hidden Reconciliation Key (Campaign) component allows you to add hidden fiel
 
 You can configure the following in the Hidden Reconciliation Key (Campaign) component:
 
-* **Title and Text - Element Name
-  **Defaults to reconcilKey. You only need to change the element name when it conflicts with the name of another element on the form. No two form fields can have the same element name.
-* **Adobe Campaign - Mapping**
-  Map to an Adobe Campaign personalization field.
+* **Title and Text - Element Name** - Defaults to reconcilKey. You only need to change the element name when it conflicts with the name of another element on the form. No two form fields can have the same element name.
+* **Adobe Campaign - Mapping** - Map to an Adobe Campaign personalization field.
 
 The following example shows an Hidden Reconciliation Key (Campaign) component being displayed.
 
@@ -392,10 +383,8 @@ In addition to [settings common to most Adobe Campaign components](#settings-com
 * **Constraints - Constraint **drop-down
   You can select - **None** or **Numeric - **to add the constraint of either a number or no constraint. If you select number, the answer users enter into the field must be numeric.
 
-* **Constraint Message
-  **In addition, you can add a constraint message so users know how to properly format their answers.
-* **Styling - Width**
-  Adjust the width of the field by clicking or tapping the **+** and **-** icons or entering a number.
+* **Constraint Message** - In addition, you can add a constraint message so users know how to properly format their answers.
+* **Styling - Width** - Adjust the width of the field by clicking or tapping the **+** and **-** icons or entering a number.
 
 The following example shows a Numeric Field (Campaign) component with the width configured being displayed.
 
@@ -413,7 +402,7 @@ The following example shows an Option Field (Campaign) component being displayed
 
 ### Subscriptions Checklist (Campaign) {#subscriptions-checklist-campaign}
 
-Use the **Subscriptions Checklist (Campaign) **component to modify the subscriptions associated with an Adobe Campaign profile.
+Use the **Subscriptions Checklist (Campaign)** component to modify the subscriptions associated with an Adobe Campaign profile.
 
 When added to a form, this component displays all available subscriptions as check boxes and lets the user select the desired subscriptions. When users submit the form, this component subscribes the user to or unsubscribes the user from the selected services depending on the form action type (**Adobe Campaign: Subscribe to Services** or **Adobe Campaign: Unsubscribe from Services**).
 
@@ -433,15 +422,11 @@ The Text Field (Campaign) component that lets you enter string type data, such a
 
 In addition to [settings common to most Adobe Campaign components](#settings-common-to-most-components), you can configure the following:
 
-* **Constraints - Constraint **drop-down
-  You can select - **None,** **Email, **or** Name (no umlauts) - **to add the constraint of either an email address, name, or no constraint. If you select email, the answer users enter into the field must be an email address. If you select name, it must be a name (umlauts are not allowed).
+* **Constraints - Constraint** - drop-down - You can select - **None**, **Email**, **Name** (no umlauts) to add the constraint of either an email address, name, or no constraint. If you select email, the answer users enter into the field must be an email address. If you select name, it must be a name (umlauts are not allowed).
 
-* **Constraint Message
-  **In addition, you can add a constraint message so users know how to properly format their answers.
-* **Styling - Width**
-  Adjust the width of the field by clicking or tapping the **+** and **-** icons or entering a number.
+* **Constraint Message** - In addition, you can add a constraint message so users know how to properly format their answers.
+* **Styling - Width** - Adjust the width of the field by clicking or tapping the **+** and **-** icons or entering a number.
 
 The following example shows a Text Field (Campaign) component being displayed.
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
-

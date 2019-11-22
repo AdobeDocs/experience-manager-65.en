@@ -22,7 +22,7 @@ Open the [Content Insight](/help/sites-authoring/content-insights.md) page to an
 Use the following procedure to see the Analytics and Recommendations for a page:
 
 1. Navigate to the page that you want to analyze.
-1. In the toolbar, click or tap** Analytics and Recommendations**.
+1. In the toolbar, click or tap **Analytics and Recommendations**.
 
    >[!NOTE]
    >

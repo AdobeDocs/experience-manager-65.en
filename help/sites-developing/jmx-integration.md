@@ -589,4 +589,3 @@ Add the following profile to your maven settings file to use the public Adobe re
      </pluginRepositories>
 </profile>
 ```
-
