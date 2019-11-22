@@ -22,15 +22,15 @@ Typical workflow to configure Rich Text Editor
 
 ## Understand Touch-enabled UI and Classic UI {#understand-touch-enabled-ui-and-classic-ui}
 
-The Touch-enabled UI is the standard UI for AEM. Adobe introduced Touch UI with [responsive design](/help/sites-authoring/responsive-layout.md) for authoring environment, in version 5.6. The Touch UI is designed for touch and desktop devices. The UI differs considerably from the original classic UI.
+The Touch-enabled UI is the standard user interface for AEM. Adobe introduced Touch UI with [responsive design](/help/sites-authoring/responsive-layout.md) for authoring environment. The Touch UI is designed for touch and desktop devices. The UI differs considerably from the original classic UI.
 
 ![Rich Text Editor toolbar in Touch-enabled UI](assets/chlimage_1-35.png)
 
-Rich Text Editor toolbar in Touch-enabled UI
+*Figure: Rich Text Editor toolbar in Touch-enabled UI*
 
 ![Rich Text Editor toolbar in Classic UI](assets/rtedefault.png)
 
-Rich Text Editor toolbar in Classic UI
+*Figure: Rich Text Editor toolbar in Classic UI*
 
 **See also**:
 
@@ -92,8 +92,7 @@ Authors can create and edit textual content in AEM using the different modes of 
 When opened (with a slow double-tap/click) the content can be edited within the page. A compact toolbar with very basic options is presented.
 
 ![Inline editing with basic toolbar in Touch-enabled UI](assets/chlimage_1-36.png)
-
-Inline editing with basic toolbar in Touch-enabled UI
+*Figure: Inline editing with basic toolbar in Touch-enabled UI*
 
 In Classic UI, a slow double-click on the component allows inline editing and an orange outline highlights the content. If the Content Finder is open, a toolbar with the available RTE formatting options is displayed at the top of the window. If the Content Finder is not open, the formatting options are not displayed and you can do basic text edits only.
 
@@ -104,20 +103,17 @@ AEM components can be opened in full screen view that hides the page content and
 In the dialog full screen mode, along with a detailed RTE toolbar, the options and components available in a dialog are also available. It is applicable only for a dialog that contains RTE alongside other components.
 
 ![The detailed RTE toolbar when editing in full screen mode in Touch-enabled UI](assets/chlimage_1-37.png)
-
-The detailed RTE toolbar when editing in full screen mode in Touch-enabled UI
+*Figure: The detailed RTE toolbar when editing in full screen mode in Touch-enabled UI*
 
 ### Dialog editing {#dialog-editing}
 
 When a component is double-clicked a dialog box opens for editing the contents. The dialog box opens on top of the existing page. In some specific scenarios, the dialog opens as a pop-up window. For example, when a Text component is part of a column in a multi-column page layout and the area available for the dialog is less.
 
 ![Dialog editing mode in Touch-enabled UI](assets/dialog_editing_modetouchui.png)
-
-Dialog editing mode in Touch-enabled UI
+*Figure: Dialog editing mode in Touch-enabled UI*
 
 ![Dialog box in Classic UI that contains detailed toolbar for editing](assets/chlimage_1-38.png)
-
-Dialog box in Classic UI that contains detailed toolbar for editing
+*Figure: Dialog box in Classic UI that contains detailed toolbar for editing*
 
 ## About RTE plug-ins and the associated features {#aboutplugins}
 
@@ -270,10 +266,7 @@ RTE functionalities are made available via a series of plug-ins, each with featu
 
 For detailed configurations of the RTE plug-ins, see [how to activate and configure the RTE plug-ins](/help/sites-administering/configure-rich-text-editor-plug-ins.md).
 
-
-Download this sample configuration to understand how to configure RTE. In this package all the features are enabled.
-
-[Get File](/help/assets/assets/rte-sample-all-features-enabled-10.zip)
+**Sample**: Download [this sample configuration](/help/assets/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled.
 
 >[!NOTE]
 >
@@ -342,11 +335,11 @@ To configure the toolbar for `dialogFullScreen`, use the following sample config
 
 Different UI settings are used for the inline mode and full screen mode. The toolbar property is used to specify the buttons of the toolbar.
 
-For example, if the button is itself a feature (for example, Bold), it is specified as `PluginName#FeatureName` (for example, `links#modifylink`).
+For example, if the button is itself a feature (for example, `Bold`), it is specified as `PluginName#FeatureName` (for example, `links#modifylink`).
 
 If the button is a popover (containing some features of a plug-in), it is specified as `#PluginName` (for example, `#format`).
 
-Separators ( | ) between a group of buttons can be specified with '-'.
+Separators (`|`) between a group of buttons can be specified with `-`.
 
 The pop-up node under inline or full-screen mode contains a list of the popovers being used. Each child node under the 'popovers' node is named after the plug-in (for example, format). It has a property 'items' containing a list of features of the plug-in (for example, format#bold).
 
@@ -437,9 +430,7 @@ In particular, to see the plug-ins and related options available:
 
 * More information about HTML Rules for links is also available.
 
-These can be used to extend and customize your own RTE, for example:
-
-* To list the anchors available in the page when creating a link you can provide your own implementation of the LinkPlugin.
+These can be used to extend and customize your own RTE. For example, to list the anchors available in the page when creating a link you can provide your own implementation of the `LinkPlugin`.
 
 ## Known limitations {#known-limitations}
 
