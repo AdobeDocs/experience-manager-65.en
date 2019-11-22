@@ -297,9 +297,9 @@ See [HTTP2 Delivery of Content](/help/assets/http2.md) for complete details on g
 
 >[!MORELIKETHIS]
 >
->* [Using the Video Player in AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/help/assets/dynamic-media-video-player-feature-video-use.html)
->* [Using Interactive Video with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/help/assets/dynamic-media-interactive-video-feature-video-use.html)
->* [Understanding the Asset Viewer with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/help/assets/dynamic-media-viewer-feature-video-understand.html)
->* [Using Custom Video Thumbnail with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/help/assets/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Understanding Color Management with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/help/assets/dynamic-media-color-management-technical-video-setup.html)
->* [Using Image Sharpening with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/help/assets/dynamic-media-image-sharpening-feature-video-use.html)
+>* [Using the Video Player in AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-player-feature-video-use.html)
+>* [Using Interactive Video with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-interactive-video-feature-video-use.html)
+>* [Understanding the Asset Viewer with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-viewer-feature-video-understand.html)
+>* [Using Custom Video Thumbnail with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Understanding Color Management with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-color-management-technical-video-setup.html)
+>* [Using Image Sharpening with AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-image-sharpening-feature-video-use.html)

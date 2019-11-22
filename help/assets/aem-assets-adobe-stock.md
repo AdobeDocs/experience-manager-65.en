@@ -121,7 +121,7 @@ When a user updates a license reference field, the license reference information
 
 ## Related resources {#related-resources}
 
-[Video tutorial on using Adobe Stock assets with AEM Assets](https://helpx.adobe.com/experience-manager/kt/help/assets/stock-assets-feature-video-use.html)
+[Video tutorial on using Adobe Stock assets with AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
 
 [Adobe Stock enterprise plan help](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 
