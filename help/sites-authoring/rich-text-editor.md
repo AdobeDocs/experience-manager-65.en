@@ -61,5 +61,3 @@ Close fullscreen mode by clicking the minimize icon.
 >[!NOTE]
 >
 >Copying nested lists from Microsoft Word into the RTE can give inconsistent results and may require manual adjustement after pasting the text in the RTE.
-
-To exit the Fullscreen mode and resume usual editing, click the minimize icon ![screen_shot_2018-03-21at163323](assets/screen_shot_2018-03-21at163323.png).
