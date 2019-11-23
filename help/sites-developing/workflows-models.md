@@ -29,21 +29,16 @@ When you first create a new workflow model it contains:
 
 * The steps, **Flow Start** and **Flow End**.
   These represent the beginning and end of the workflow. These steps are required and cannot be edited/removed.
-
 * An example **Participant** step named **Step 1**.
   This step is configured to assign a work item to the workflow initiator. Edit or delete this step, and add steps as required.
 
 To create a new workflow with the editor:
 
-1. Open the **Workflow Models** console; via **Tools**, **Workflow**, **Models** or, for example:
-
-   [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
-
+1. Open the **Workflow Models** console; via **Tools**, **Workflow**, **Models** or, for example: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
 1. Select **Create**, then **Create Model**.
 1. The **Add Workflow Model** dialog appears. Enter the **Title** and **Name** (optional) before selecting **Done**.
 1. The new model is listed in the **Workflow Models** console.
 1. Select your new workflow, then use [**Edit** to open it for configuration](#editinganexistingworkflow):
-
    ![wf-01](assets/wf-01.png)
 
 >[!NOTE]
@@ -62,7 +57,6 @@ To create a new workflow with the editor:
 You can edit any existing workflow model to:
 
 * [define steps](#addingasteptoamodel-) and their [parameters](#configuring-a-workflow-step)
-
 * configure workflow properties, including [stages](#configuring-workflow-stages-that-show-workflow-progress), [whether the workflow is transient](#creatingatransientworkflow-) and/or [uses multiple resources](#configuring-a-workflow-for-multi-resource-support)
 
 Editing a [**Default and/or Legacy** (out-of-the-box) workflow](#editing-a-default-or-legacy-workflow-for-the-first-time) has an additional step, to ensure that a [safe copy](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) is taken prior to your changes being made.
@@ -88,12 +82,9 @@ When you open a [Default and/or Legacy model](/help/sites-developing/workflows.m
 * The Steps browser is not available (left side).
 * There is an **Edit** action available in the toolbar (right side).
 * Initially the model, and its properties, is presented in read-only mode as:
-
     * Default workflows are located in `/libs`
     * Legacy workflows are located in `/etc`
-
 Selecting **Edit** will:
-
 * take a copy of the workflow into `/conf`
 * make the Steps browser available
 * enable you to make changes

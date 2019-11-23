@@ -279,6 +279,4 @@ See how a simple SPA works and experiment with an SPA yourself by continuing on 
 For more information about SPAs in AEM, see the following documents:
 
 * [SPA Authoring Overview](/help/sites-developing/spa-overview.md) for an overview of SPAs in AEM and the communication model
-
 * [Getting Started with SPAs in AEM](/help/sites-developing/spa-getting-started-react.md) for a guide to a simple SPA and how it works
-

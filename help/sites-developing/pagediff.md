@@ -53,4 +53,3 @@ However there are a number of limitations that need to be considered by the deve
     * Components that use AJAX to inlcude content
     * Single Page Applications
     * Javascript based components that manipulate the DOM upon user interaction.
-

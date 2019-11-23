@@ -96,7 +96,7 @@ Execute the following steps to add mapping between variables:
 
 Select a variable of XML type to store an XML file. Query the XML variable to set the value for a string variable for the property available in the XML file. Use **Specify XPATH for the XML variable** field to define the property to store in the string variable.
 
-In this example, select a **formdata** XML variable to store the **cc-app.xml** file. Query the **formdata** variable to set the value for the **emailaddress** string variable to store the value for the **emailAddress** property available in the** cc-app.xml** file.
+In this example, select a **formdata** XML variable to store the **cc-app.xml** file. Query the **formdata** variable to set the value for the **emailaddress** string variable to store the value for the **emailAddress** property available in the **cc-app.xml** file.
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "Set value of a variable")
 

@@ -222,15 +222,19 @@ The following is a description of the effects in the repository when moving or m
   This property means that tag A has been moved or merged into tag B. Moving tag B will update this property accordingly. Tag A is thus hidden and is only kept in the repository to resolve tag IDs in content nodes pointing to tag A. The tag garbage collector removes tags like tag A once no more content nodes point to them.
   A special value for the `cq:movedTo` property is `nirvana`: it is applied when the tag is deleted but cannot be removed from the repository because there are subtags with a `cq:movedTo` that must be kept.
 
-**Note**: *The "cq:movedTo" property is only added to the moved or merged tag if either of these conditions are met:*
-*1. Tag is used in content (meaning it has a reference) OR*
-*2. Tag has children that have already been moved.*
+    >[!NOTE]
+    >
+    >The `cq:movedTo` property is only added to the moved or merged tag if either of these conditions are met:
+    > 1. Tag is used in content (meaning it has a reference) OR
+    > 1. Tag has children that have already been moved.
 
 * `cq:backlinks` keeps the references in the other direction, i.e. it keeps a list of all the tags that have been moved to or merged with tag B. This is mostly required to keep `cq:movedTo`properties up to date when tag B is moved/merged/deleted as well or when tag B is activated, in which case all its backlinks tags must be activated as well.
 
-**Note**: *The "cq:backlinks" property is only added to the moved or merged tag if either of these conditions are met:*
-*1. Tag is used in content (meaning it has a reference) OR*
-*2. Tag has children that have already been moved.*
+    >[!NOTE]
+    >
+    >The `cq:backlinks` property is only added to the moved or merged tag if either of these conditions are met:
+    > 1. Tag is used in content (meaning it has a reference) OR
+    > 1. Tag has children that have already been moved.
 
 * Reading a `cq:tags` property of a content node involves the following resolving:
 
@@ -243,4 +247,3 @@ The following is a description of the effects in the repository when moving or m
 * To publish the change when a tag has been moved or merged, the `cq:Tag` node and all its backlinks must be replicated: this is automatically done when the tag is activated in the tag administration console.
 
 * Later updates to the page's `cq:tags` property automatically clean up the "old" references. This is triggered because resolving a moved tag through the API returns the destination tag, thus providing the destination tag ID.
-

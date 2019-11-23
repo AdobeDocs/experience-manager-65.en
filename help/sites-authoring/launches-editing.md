@@ -100,4 +100,3 @@ At any time you can edit the properties for a launch:
 The status is shown when you select a specific launch from the references tab (see [Launches in References (Sites Console)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
 ![screen-shot_2019-03-05at121901](assets/screen-shot_2019-03-05at121901.png)
-

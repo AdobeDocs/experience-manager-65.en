@@ -192,7 +192,7 @@ To create a new folder, you can either do this:
 
 1. You can then define the following properties on the folder root node:
 
-   `<*your-folder-name*> [sling:Folder]`
+   `<your-folder-name> [sling:Folder]`
 
    Name: `jcr:title`
 
@@ -391,8 +391,8 @@ Your site-specific template types should be stored in the comparable location of
 
 Definitions for your customized templates types should be stored in user-defined folders (recommended) or alternatively in `global`. For example:
 
-* `/conf/<*my-folder-01*>/<*my-folder-02*>/settings/wcm/template-types`
-* `/conf/<*my-folder*>/settings/wcm/template-types`
+* `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
+* `/conf/<my-folder>/settings/wcm/template-types`
 * `/conf/global/settings/wcm/template-types`
 
 >[!CAUTION]
@@ -440,8 +440,8 @@ You can find the code of this page on GitHub
 
 Definitions for editable templates are stored [user-defined folders](/help/sites-developing/page-templates-editable.md#template-folders) (recommended) or alternatively in `global`. For example:
 
-* `/conf/<*my-folder*>/settings/wcm/templates`
-* `/conf/<*my-folder-01*>/<*my-folder-02*>/settings/wcm/templates`
+* `/conf/<my-folder>/settings/wcm/templates`
+* `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`
 * `/conf/global/settings/wcm/templates`
 
 The root node of the template is of type `cq:Template` with a skeleton structure of:
@@ -478,7 +478,7 @@ The root node of the template is of type `cq:Template` with a skeleton structure
 
 The main elements are:
 
-* `<*template-name*>`
+* `<template-name>`
 
     * ` [initial](#initial-content)`
     * `jcr:content`
@@ -532,13 +532,13 @@ When [editing a template you can define the layout](/help/sites-authoring/templa
 The content (or design) policies define the design properties of a component. For example, the components available or minimum/maximum dimensions. These are applicable to the template (and pages created with the template). Content policies can be created and selected in the template editor.
 
 * The property `cq:policy`, on the `root` node
-  `/conf/<*your-folder*>/settings/wcm/templates/<*your-template*>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
   Provides a relative reference to the content policy for the page's paragraph system.
 
 * The property `cq:policy`, on the component-explicit nodes under `root`, provide links to the policies for the individual components.
 
 * The actual policy definitions are stored under:
-  `/conf/<*your-folder*>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -569,7 +569,7 @@ Page policies allow you to define the [content policy](#content-policies) for th
     * Setting the status property on the `jcr:content` node.
 
         * For example, on:
-          `/conf/<*your-folder*>/settings/wcm/templates/<*your-template*>/jcr:content`
+          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
         * Define the property:
 
@@ -586,7 +586,7 @@ Page policies allow you to define the [content policy](#content-policies) for th
 
    For example, with a value of:
 
-   `/conf/<*your-folder*>/settings/wcm/templates/.&#42;`
+   `/conf/<your-folder>/settings/wcm/templates/.*`
 
 ## Resultant Content Pages {#resultant-content-pages}
 
@@ -606,16 +606,16 @@ Pages created from editable templates:
 
 The above diagram shows how templates, content, and components interrelate:
 
-* Controller - `/content/<*my-site*>/<*my-page*>`
+* Controller - `/content/<my-site>/<my-page>`
   The resultant page that references the template. The content controls the entire process. According to the definitions it accesses the appropriate template and components.
 
-* Configuration - `/conf/<*my-folder*>/settings/wcm/templates/<*my-template*>`
+* Configuration - `/conf/<my-folder>/settings/wcm/templates/<my-template>`
   The [template and related content policies](#template-definitions) define the page configuration.
 
 * Model - OSGi bundles
   The [OSGI bundles](/help/sites-deploying/osgi-configuration-settings.md) implement the functionality.
 
-* View - `/apps/<*my-site*>/components`
+* View - `/apps/<my-site>/components`
   On both the author and publish environments the content is rendered by [components](/help/sites-developing/components.md).
 
 When rendering a page:
@@ -634,4 +634,3 @@ When rendering a page:
         * The `cq:policy` property of this node points to the actual content policy (i.e. it holds the design configuration for that component).
 
         * This allows you to have multiple templates that re-use the same content policy configurations.
-

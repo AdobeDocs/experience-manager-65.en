@@ -15,7 +15,7 @@ docset: aem65
 
 # Applying Workflows to Pages{#applying-workflows-to-pages}
 
-When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
+When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow.
 
 When you apply the workflow, you specify the following information:
 
@@ -138,4 +138,3 @@ You can specify details:
 When editing a page you can select **Page Information** from the toolbar. The drop down menu has the option **Start in Workflow**. This will open a dialog where you can specify the required workflow, together with a title if required:
 
 ![wf-54](assets/wf-54.png)
-

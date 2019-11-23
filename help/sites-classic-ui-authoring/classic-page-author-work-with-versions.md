@@ -59,7 +59,7 @@ This method can be used to restore a page version. It can also be used to restor
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. Selecting** Restore Version...** lists versions of documents in the current folder. Even if a page has been deleted, the last version will be listed:
+1. Selecting **Restore Version...** lists versions of documents in the current folder. Even if a page has been deleted, the last version will be listed:
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
@@ -71,7 +71,7 @@ This method can be used to restore a page version. It can also be used to restor
 
 1. In the **Websites** console, navigate to the folder you want to restore and select it.
 1. From the top menu select **Tools**, then **Restore**.
-1. Selecting** Restore Tree...** opens the dialog to let you select the tree you want to restore:
+1. Selecting **Restore Tree...** opens the dialog to let you select the tree you want to restore:
 
    ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
 
@@ -191,4 +191,3 @@ Timewarp makes a best effort to reproduce a page at a selected point in time. Ho
 >[!CAUTION]
 >
 >Timewarp is designed as a tool to assit authors with understanding and creating their content. It is not intended as an audit log or for legal purposes.
-
