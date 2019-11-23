@@ -51,6 +51,6 @@ When attachments are enabled, HTML5 form submits multipart data. The mutii-part 
 
 >[!NOTE]
 >
->For backward compatibility, if `mfAllowAttachments`option is turned off, then the HTML5 forms does not send the muti- ``part data. It sends simple data xml in **application/xml **format.
+>For backward compatibility, if `mfAllowAttachments` option is turned off, then the HTML5 forms does not send the muti- ``part data. It sends simple data xml in **application/xml** format.
 
 If the mfAllowAttachments flag is turned on, the [submit service proxy service](/help/forms/using/service-proxy.md) also posts multipart data with dataXml and attachments.

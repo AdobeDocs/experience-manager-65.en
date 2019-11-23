@@ -233,7 +233,7 @@ You can use multiple components in an adaptive form to capture data. For example
 
 You can use a custom theme to apply an identical style to all the buttons of the adaptive form and [inline styling](/help/forms/using/inline-style-adaptive-forms.md) to apply a style to a specific button. To style the buttons:
 
-1. Tap the **Submit** button and tap the **Button **option. Set the following properties and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tap the **Submit** button and tap the **Button** option. Set the following properties and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 <table> 
  <tbody> 
