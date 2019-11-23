@@ -27,7 +27,7 @@ With the new architecture, AEM is responsible for master assets and synchs with 
 1. After the renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
 1. After content is ready to be published and approved, it triggers the Dynamic Media service to push content out to delivery servers and cache content at the CDN.
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+![chlimage_1-550](assets/chlimage_1-550.png)
 
 ## Enabling Dynamic Media in Scene7 mode {#enabling-dynamic-media-in-scene-mode}
 
