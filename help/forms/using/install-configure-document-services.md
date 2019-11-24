@@ -165,7 +165,7 @@ If you are using the UNIX-based operating system, install the following packages
     * /usr/lib/libcrypto.so
     * /usr/lib/libssl.so
 
-* **(PDF Generator only) **PDF Generator service supports WebKit and PhantomJS routes to convert HTML files to PDF documents. To enable conversion for PhantomJS route, install the below listed 64-bit libraries. Generally, these libraries are already installed. If any library is missing, install it manually:
+* **(PDF Generator only)** PDF Generator service supports WebKit and PhantomJS routes to convert HTML files to PDF documents. To enable conversion for PhantomJS route, install the below listed 64-bit libraries. Generally, these libraries are already installed. If any library is missing, install it manually:
 
     * linux-gate.so.1
     * libz.so.1
@@ -322,7 +322,7 @@ You can enable a non-administrator user to use the PDF Generator service. Normal
     1. Microsoft recommends backing up the registry before you modify it. For detailed steps, see [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/help/322756).
     1. Open Microsoft Windows Registry editor. To open registry editor, go to Start &gt; Run, type regedit, and click OK.
     1. Navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\. Ensure value of EnableLUA is set to 0 (zero).
-    1. Ensure value of **EnableLUA **is set to 0 (zero). If the value is not 0, change the value to 0. Close the registry editor.
+    1. Ensure value of **EnableLUA** is set to 0 (zero). If the value is not 0, change the value to 0. Close the registry editor.
 
 1. Restart your computer.
 
