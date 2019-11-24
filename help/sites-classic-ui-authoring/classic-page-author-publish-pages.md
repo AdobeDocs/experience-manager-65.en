@@ -137,7 +137,7 @@ If you want to cancel this deactivation, go to the [Workflow Console](/help/site
 
 You can schedule times for a page to be published/unpublished using the **On Time** and **Off Time** that can be defined in the [Page Properties](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
-### Determining Page Publication Status - Classic UI {#determining-page-publication-status-classic-ui}
+### Determining Page Publication Status {#determining-page-publication-status-classic-ui}
 
 The status can be seen from the [Websites console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). The colors indicate publication status.
 
@@ -167,4 +167,3 @@ From the **Websites** tab you can activate the individual pages. When you have e
     1. Select **Dry Run** if you want to check which pages *would* be activated. This is only an emulation, no pages will be activated.
 
     1. Select **Activate** if you want to activate the pages.
-

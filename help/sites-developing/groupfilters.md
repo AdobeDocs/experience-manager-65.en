@@ -64,9 +64,9 @@ public class myDeviceGroupFilter implements DeviceGroupFilter {
 
 You need to provide code for the following methods:
 
-* getDescription: Returns the filter description. The desciption appears in the Device Group configuration dialog.
-* getTitle: Returns the name of the filter. The name appears when selecting filters for the device group.
-* matches: Determines whether the device has the required capabilities.
+* `getDescription`: Returns the filter description. The desciption appears in the Device Group configuration dialog.
+* `getTitle`: Returns the name of the filter. The name appears when selecting filters for the device group.
+* `matches`: Determines whether the device has the required capabilities.
 
 ### Providing the Filter Name and Description {#providing-the-filter-name-and-description}
 

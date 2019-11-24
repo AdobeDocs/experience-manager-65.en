@@ -21,14 +21,14 @@ The following document describes troubleshooting for Dynamic Media running **dyn
 
 Ensure that Dynamic Media has been set up properly by doing the following:
 
-* Start up command contains the **-r dynamicmedia_scene7** runmode argument.
+* Start up command contains the `-r dynamicmedia_scene7` runmode argument.
 * Any AEM 6.4 cumulative fix packs (CFPs) have been installed first *before* any available Dynamic Media Feature Packs.
 * Optional Feature Pack 18912 is installed.
 
   This optional feature pack is for FTP support or if you are migrating assets to Dynamic Media from Dynamic Media Classic (Scene7).
 
-* Navigate to the Cloud Services user interface and confirm that the provisioned account appears under **Available Configurations**.
-* Ensure that the** Dynamic Media Asset Activation (scene7)** replication agent is enabled.
+* Navigate to the Cloud Services user interface and confirm that the provisioned account appears under **[!UICONTROL Available Configurations]**.
+* Ensure that the `Dynamic Media Asset Activation (scene7)` replication agent is enabled.
 
   This replication agent is found under Agents on Author.
 
@@ -49,13 +49,13 @@ The following asset properties can be reviewed in CRXDE Lite to confirm the succ
 
 ### Synchronization Logging {#synchronization-logging}
 
-Synchronization errors and issues are logged in **error.log** (AEM server directory** /crx-quickstart/logs/**). Sufficient logging is available to determine the root cause of most issues, however you can increase the logging to DEBUG on the ***com.adobe.cq.dam.ips ***package through the Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) to gather more information.
+Synchronization errors and issues are logged in `error.log` (AEM server directory `/crx-quickstart/logs/`). Sufficient logging is available to determine the root cause of most issues, however you can increase the logging to DEBUG on the `com.adobe.cq.dam.ips` package through the Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) to gather more information.
 
 ### Move, Copy, Delete {#move-copy-delete}
 
 Before performing a Move, Copy, or Delete operation, do the following:
 
-* For images and videos, confirm that a **&lt;object_node&gt;/jcr:content/metadata/dam:scene7ID** value exists before performing move, copy, or delete operations.
+* For images and videos, confirm that a `<object_node>/jcr:content/metadata/dam:scene7ID` value exists before performing move, copy, or delete operations.
 * For image and viewer presets, confirm that an `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` value exists before performing move, copy, or delete operations.
 * If above metadata value is missing, you need to re-upload assets before move, copy, or delete operations.
 
@@ -63,7 +63,7 @@ Before performing a Move, Copy, or Delete operation, do the following:
 
 When replacing an existing Dynamic Media asset (same name and location), you have the option to keep both assets or replace/create a version:
 
-* Keeping both will create a new asset with a unique name for the published asset URL; for example,** image.jpg** is the original asset and **image1.jpg** is the newly uploaded asset.
+* Keeping both will create a new asset with a unique name for the published asset URL. For example, `image.jpg` is the original asset and `image1.jpg` is the newly uploaded asset.
 
 * Creating a version is not supported in Dynamic Media - Scene7 mode delivery. The new version will replace the existing asset in delivery.
 

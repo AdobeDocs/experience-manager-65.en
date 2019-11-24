@@ -134,5 +134,3 @@ The settings defined by a user or system administrator can be overriden by the s
 >
 >* Manually edit the URL - A non-standard URL could result in an unknown situation and lack of functionality.
 >* Have both editors open at the same time - For example, in separate windows.
->
-

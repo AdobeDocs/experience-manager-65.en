@@ -157,4 +157,3 @@ For full details about creating your own Test Suites, see the [Hobbes.js API doc
    ```
 
 1. Navigate to the **Testing** console to try your test suite.
-

@@ -351,4 +351,3 @@ The following are the available clientlib categories:
 * testandtarget.util
 * testandtarget.atjs
 * testandtarget.atjs-integration
-

@@ -24,7 +24,6 @@ This article presents important questions to consider when engaging a front-end 
 Developing single page applications on AEM assumes that the front-end developer observes standard best practices when creating an SPA. If as a front end developer you follow these general best practices as well as few AEM-specific principles, your SPA will be functional with [AEM and its content-authoring capabilities](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
 
 * **[Portability](/help/sites-developing/spa-architecture.md#portability) -** As with any components, the components should be built to be as portable as possible. The SPA should be built with portably and reusable components.
-
 * **[AEM Drives Site Structure](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)** - The front end developer creates components and owns their internal structure, but relies on AEM to define the content structure of the site.
 * **[Dynamic Rendering](/help/sites-developing/spa-architecture.md#dynamic-rendering)** - All rendering should be dynamic.
 * **[Dynamic Routing](#dynamic-routing) -** The SPA is responsible for the routing and AEM listens to it and fetches based on it. Any routing should be dynamic as well.
@@ -106,11 +105,9 @@ Follow these steps to get your existing SPA ready to work with AEM.
 1. **Make your JS components modular.**
 
    Make them capable of being rendered in any order, position and size.
-
 1. **Use the containers provided by our SDK to place your components on the screen.**
 
    AEM provides a page and paragraph system component for you to use.
-
 1. **Create an AEM component for each JS component.**
 
    The AEM components define the dialog and JSON output.

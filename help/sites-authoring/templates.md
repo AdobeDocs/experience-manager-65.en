@@ -260,7 +260,7 @@ A template can be made available or unavailable for certain page branches.
 
    The path can be explicit or use patterns. For example:
 
-   `/conf/<*your-folder*>/settings/wcm/templates/.&#42;`
+   `/conf/<your-folder>/settings/wcm/templates/.*`
 
    The order of the paths is irrelevant, all paths will be scanned and any templates retrieved.
 
@@ -595,6 +595,8 @@ Although all content created in **Structure** mode is visible in **Initial Conte
 >[!NOTE]
 >
 >Initial content is intended for preparing components and the page layout that serve as a starting point for creating the content. It is not intended to be the actual content that would remain as is. For this reason, initial content can not be translated.
+>
+>If you need to include translatable text in your template such as in headers or footers, you can use the [localization features of the core components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html).
 
 ### Editing a Template - Layout - Template Author {#editing-a-template-layout-template-author}
 
@@ -726,4 +728,3 @@ When creating templates you should consider:
 
 1. [Creating your own folders](#creatingatemplatefolderdeveloper) for your site-specific templates.
 1. [Publish your templates](#publishingatemplateauthor) from the **Templates** console.
-

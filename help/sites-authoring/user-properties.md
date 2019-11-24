@@ -113,4 +113,3 @@ Each user can set certain properties for himself or herself.
 * **Stock Configuration**
 
   This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).
-

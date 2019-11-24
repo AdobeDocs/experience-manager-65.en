@@ -1,6 +1,8 @@
 ---
-title: Use Rich Text Editor to author content
-description: Use the Rich Text Editor to author text in AEM.
+title: Using the Rich Text Editor to Author Content
+seo-title: Using the Rich Text Editor to Author Content
+description: Using the Rich Text Editor to Author Content
+seo-description: Using the Rich Text Editor to Author Content
 uuid: 70f4d4b2-cbc6-4fef-9262-1696804008d8
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,17 +11,13 @@ docset: aem65
 
 ---
 
-# Use Rich Text Editor to author content{#use-rich-text-editor-to-author-content}
+# Using the Rich Text Editor to Author Content {#use-rich-text-editor-to-author-content}
 
 The Rich Text Editor (RTE) is a basic building block for inserting textual content into AEM. It forms the basis of various components, including:
 
 * Text
 * Text Image
 * Table
-
->[!NOTE]
->
->Copying nested lists into the RTE does not work as expected. When copying nested lists from Microsoft Word, you will need to manually clean up the lists after pasting the text in the RTE.
 
 ## In-Place Editing {#in-place-editing}
 
@@ -56,4 +54,10 @@ Additional rich text editor options include:
 * **Center Text**
 * **Align Text Right**
 
-To exit the Fullscreen mode and resume usual editing, click the minimize icon ![screen_shot_2018-03-21at163323](assets/screen_shot_2018-03-21at163323.png).
+Close fullscreen mode by clicking the minimize icon.
+
+![screen_shot_2018-03-21at163323](assets/screen_shot_2018-03-21at163323.png)
+
+>[!NOTE]
+>
+>Copying nested lists from Microsoft Word into the RTE can give inconsistent results and may require manual adjustement after pasting the text in the RTE.
