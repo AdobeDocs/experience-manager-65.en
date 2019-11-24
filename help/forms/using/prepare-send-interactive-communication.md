@@ -147,7 +147,7 @@ The Agent UI has built in support for 210 special characters. The admin can [add
 * **Delete**: If allowed, delete the document fragment from the Interactive Communication.
 * **Page Break Before** (applicable for child fragments of target area): Inserts page break before the document fragment.
 * **Indent**: Increase or decrease indent of a document fragment.
-* **Page Break After **(applicable for child fragments of target area): Inserts page break after the document fragment.
+* **Page Break After** (applicable for child fragments of target area): Inserts page break after the document fragment.
 
 ![docfragoptions](assets/docfragoptions.png)
 
