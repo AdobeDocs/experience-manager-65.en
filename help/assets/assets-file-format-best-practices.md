@@ -1,19 +1,15 @@
 ---
 title: Assets file format best practices
-seo-title: Assets file format best practices
 description: Best practices for file support in AEM Assets.
-seo-description: Best practices for file support in AEM Assets.
 uuid: 25835316-fe1c-46b8-8caa-184a9e0b1797
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: b58b5ad1-f7da-4027-a8c0-6c7e533c2291
 docset: aem65
 
 ---
 
-# Assets file format best practices{#assets-file-format-best-practices}
+# Assets file format best practices {#assets-file-format-best-practices}
 
 AEM Assets supports many proprietary and third-party file format libraries to cater to diverse file support requirements of users. The supported Adobe libraries include, Adobe Camera Raw, Gibson, Adobe PDF Rasterizer, and Adobe InDesign Server. In addition, AEM Assets supports third-party libraries, including ImageMagick, TwelveMonkeys, and so on.
 
@@ -42,7 +38,7 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
 
 ## Adobe InDesign Server {#adobe-indesign-server}
 
-Adobe recommends that you use Adobe InDesign Server to extract Adobe InDesign-specific renditions, such as IDML and HTML. For more information, see [Adding AEM assets as references in Adobe InDesign](/help/assets/managing-linked-subassets.md#addingaemassetsasreferencesinadobeindesign).
+Adobe recommends that you use Adobe InDesign Server to extract Adobe InDesign-specific renditions, such as IDML and HTML. For more information, see [Adding AEM assets as references in Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
 
 ## Dynamic Media  {#dynamic-media}
 

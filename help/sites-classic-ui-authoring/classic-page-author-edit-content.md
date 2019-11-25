@@ -303,4 +303,3 @@ Form fields that form components render are not meant to have values specified w
 >[!NOTE]
 >
 >Special permissions are required to undo and redo changes to files and images. Also, undo history for changes to files and images lasts for a minimum of hours. Beyond this time however, the undo of the changes is not guaranteed. Your administrator can provide permissions and change the default time of ten hours.
-

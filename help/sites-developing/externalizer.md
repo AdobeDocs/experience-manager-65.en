@@ -27,7 +27,7 @@ The **Externalizer** service allows you to centrally define multiple domains tha
 
 To define a domain mapping for the **Externalizer** service:
 
-1. Navigate to the configuration manager via **Tools**, then** Web Console**, or enter:
+1. Navigate to the configuration manager via **Tools**, then **Web Console**, or enter:
 
    `https://<host>:<port>/system/console/configMgr`
 
@@ -56,7 +56,7 @@ To define a domain mapping for the **Externalizer** service:
 
    For example: `production https://my.production.instance`
 
-   ``The following mapping names are predefined and must always be set as AEM relies on them:
+   The following mapping names are predefined and must always be set as AEM relies on them:
 
     * `local` - the local instance
     * `author` - the authoring system DNS
@@ -125,4 +125,3 @@ This section shows a few examples of how the **Externalizer** service can be use
     * `https://publish-3.internal/contextpath/my/page.html`
 
 1. You can find more examples in the [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
-

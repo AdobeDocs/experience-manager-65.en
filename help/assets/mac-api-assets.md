@@ -9,11 +9,11 @@ docset: aem65
 
 ---
 
-# Assets HTTP API{#assets-http-api}
+# Assets HTTP API {#assets-http-api}
 
 ## Overview {#overview}
 
-The Assets HTTP API is exposed at */api/assets*, and allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments, together with structured content using AEM Content Fragments. The current implementation of AEM Assets HTTP API is REST. It includes [support for Content Fragments](/help/assets/assets-api-content-fragments.md).
+The Assets HTTP API allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments, together with structured content using AEM Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](/help/assets/assets-api-content-fragments.md).
 
 To access the API:
 
@@ -43,11 +43,8 @@ Folders are like directories in tradtional filesystems. They are containers for 
 **Entities**: The entities of a folder are its child elements, which can be folders and assets.
 
 **Properties**:
-
-```
-name  -- Name of the folder. This is the same as the last segment in the URL path without the extension
-title -- Optional title of the folder which can be displayed instead of its name
-```
+* `name`  -- Name of the folder. This is the same as the last segment in the URL path without the extension
+* `title` -- Optional title of the folder which can be displayed instead of its name
 
 >[!NOTE]
 >
@@ -107,7 +104,7 @@ The Assets HTTP API includes the following features:
 
 **Prerequisites**
 
-* Go to `https://<Server>:<Port>/system/console/configMgr`.
+* Go to `https://[aem_server]:[port]/system/console/configMgr`.
 * Navigate to **Adobe Granite CSRF Filter**.
 * Make sure the property **Filter Methods** incudes: POST, PUT, DELETE.
 

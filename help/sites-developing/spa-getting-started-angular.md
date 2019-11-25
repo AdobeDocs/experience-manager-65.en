@@ -29,9 +29,7 @@ This article summarizes the basic functioning of a simple SPA and the minimum th
 For more detail on how SPAs work in AEM, see the following documents:
 
 * [SPA Introduction and Walkthrough](/help/sites-developing/spa-walkthrough.md)
-
 * [SPA Authoring Introduction](/help/sites-developing/spa-overview.md)
-
 * [SPA Blueprint](/help/sites-developing/spa-blueprint.md)
 
 >[!NOTE]
@@ -289,4 +287,3 @@ For further information about how to oraganize yourself to develop SPAs for AEM 
 For further details about the dynamic model to component mapping and how it works within SPAs in AEM, see the article [Dynamic Model to Component Mapping for SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 If you wish to implement SPAs in AEM for a framework other than React or Angular or simply wish to take a deep dive into how the SPA SDK for AEM works, refer to the [SPA Blueprint](/help/sites-developing/spa-blueprint.md) article.
-

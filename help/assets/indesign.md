@@ -1,13 +1,9 @@
 ---
 title: Integrating AEM Assets with InDesign Server
-seo-title: Integrating AEM Assets with InDesign Server
 description: Learn how to integrate AEM Assets with InDesign Server.
-seo-description: Learn how to integrate AEM Assets with InDesign Server.
 uuid: 3b202615-7d8d-484d-83e3-f7eb49b47cc4
-contentOwner: Chiradeep Majumdar
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: 0ed8426d-731a-4bf2-87ef-a1faeb44aae0
 docset: aem65
 
@@ -37,17 +33,17 @@ To fully upload files to AEM Assets that you have created with Adobe InDesign a 
 
 ## How the Extraction Works {#how-the-extraction-works}
 
-The InDesign Server can be integrated with AEM Assets so that files created with InDesign ( `.indd`) can be uploaded, renditions generated, *all* media extracted (for example, video) and stored as assets:
+The Adobe InDesign Server can be integrated with AEM Assets so that INDD files created with InDesign can be uploaded, renditions generated, all media extracted (for example, video) and stored as assets:
 
 >[!NOTE]
 >
 >Previous versions of AEM were able to extract XMP and the thumbnail, now all media can be extracted.
 
-1. Upload your `.indd` file to AEM Assets.
+1. Upload your INDD file to AEM Assets.
 1. A framework sends command script(s) to the InDesign Server via SOAP (Simple Object Access Protocol).
    This command script will:
 
-    * Retrieve the `.indd` file.
+    * Retrieve the INDD file.
     * Execute InDesign Server commands:
 
         * The structure, text and any media files are extracted.
@@ -65,7 +61,7 @@ The InDesign Server can be integrated with AEM Assets so that files created with
 
    >[!CAUTION]
    >
-   >If the InDesign Server is not installed or not configured, then you can still upload an `.indd` file into AEM. However the renditions generated will be limited to `png` and `jpeg`, you will not be able to generate `html`, `idml` or the page renditions.
+   >If the InDesign Server is not installed or not configured, then you can still upload an INDD file into AEM. However the renditions generated will be limited to PNG and JPEG. You will not be able to generate HTML, .idml, or the page renditions.
 
 1. After the extraction and rendition generation:
 
@@ -78,7 +74,7 @@ The InDesign Server can be integrated with AEM Assets so that files created with
 To integrate the InDesign Server for use with AEM Assets and after configuring your proxy, you need to:
 
 1. [Install the InDesign Server](#installing-the-indesign-server).
-1. If required, [configure the AEM Assets Workflow](#configuringthecqdamworkflow).
+1. If required, [configure the AEM Assets Workflow](#configuring-the-aem-assets-workflow).
    This is only necessary if the default values are not appropriate for your instance.
 
 1. Configure a [proxy worker for the InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
@@ -121,9 +117,9 @@ After the setup, uploading InDesign files into AEM Assets (by any of the usual m
 
 #### Media Extraction {#media-extraction}
 
-This step controls the extraction of media from the `.indd` file.
+This step controls the extraction of media from the INDD file.
 
-To customize, you can edit **Arguments** tab of the** Media Extraction** step.
+To customize, you can edit **Arguments** tab of the **Media Extraction** step.
 
 ![Media extraction arguments and script paths](assets/media_extraction_arguments_scripts.png)
 
@@ -152,7 +148,7 @@ You can configure the Process Thumbnails workflow step to generate static rendit
 
 This creates an AEM page from the extracted elements. An extraction handler is used to extract data from a rendition (currently HTML or IDML). This data is then used to create a page using the PageBuilder.
 
-To customize, you can edit the **Arguments** tab of the** Page Extraction** step.
+To customize, you can edit the **Arguments** tab of the **Page Extraction** step.
 
 ![chlimage_1-96](assets/chlimage_1-96.png)
 
@@ -202,7 +198,7 @@ To customize, you can edit the **Arguments** tab of the** Page Extraction** step
 
 If the InDesign server and AEM run on different hosts or either or both these applications do not run on default ports, configure **Day CQ Link Externalizer** to set the host name, port, and content path for the InDesign server.
 
-1. Access Configuration Manager at the URL `https://&lt;AEM server name&gt;:&lt;Port&gt;/system/console/configMgr`.
+1. Access Configuration Manager at the URL `https://[aem_server]:[port]/system/console/configMgr`.
 1. Locate the configuration **Day CQ Link Externalizer**, and click the **Edit** icon to open it.
 1. Specify the host name and context path for the Indesign server and click **Save**.
 
@@ -212,16 +208,14 @@ If the InDesign server and AEM run on different hosts or either or both these ap
 
 You can now enable parallel job processing for IDS.
 
-First you need to determine the maximum number of parallel jobs ( `x`) an InDesign Server can process:
+First you need to determine the maximum number of parallel jobs (`x`) an InDesign Server can process:
 
 * On a single multiprocessor machine, the maximum number of parallel jobs (x) that an InDesign Server can process is one less than the number of processors running IDS.
 * When you are running IDS on multiple machines you need to count the total number of processors available (ie on all machines) then subtract the total number of machines.
 
 To configure the number of parallel IDS jobs:
 
-1. Open the **Configurations** tab of the Felix Console; for example:
-
-   `https://localhost:4502/system/console/configMgr`
+1. Open the **Configurations** tab of the Felix Console; for example: `https://[aem_server]:[port]/system/console/configMgr`.
 
 1. Select the IDS processing queue under:
 
@@ -262,7 +256,7 @@ To configure the number of parallel IDS jobs:
 
 For InDesign server 10.0 or higher, perform the following steps to enable multi-session support.
 
-1. Open Configuration Manager from your AEM Assets instance [https://&lt;Host Name&gt;:&lt;Port&gt;/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Open Configuration Manager from your AEM Assets instance `https://[aem_server]:[port]/system/console/configMgr`.
 1. Edit the configuration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`.
 1. Select the **[!UICONTROL ids.cc.enable]** option, and click **[!UICONTROL Save]**.
 

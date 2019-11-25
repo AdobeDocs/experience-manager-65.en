@@ -27,26 +27,15 @@ This section covers key concepts and issues as an introduction to the details ne
 Before starting to actually configure or code your component you should ask:
 
 * What exactly do you need the new component to do?
-
-  * A clear specification helps at all stages of development, testing and handover.
-
-      Details may change over time, but the specification can be updated (though changes should be documented too).
-
+  * A clear specification helps at all stages of development, testing and handover. Details may change over time, but the specification can be updated (though changes should be documented too).
 * Do you need to create your component from scratch, or can you inherit the basics from an existing component?
-
   * There is no need to reinvent the wheel.
   * There are several mechanisms provided by AEM to allow you to inherit and extend details from another component definition including override, overlay, and the [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md).
-
 * Will your component require logic to select/manipulate the content?
-
   * Logic should be kept separate from the user interface layer. HTL is designed to help ensure this happens.
-
 * Will your component need CSS formatting?
-
   * CSS formatting should be kept separate from the component definitions. Define conventions for naming your HTML elements so that you can modify them through external CSS files.
-
 * What security aspects should I take into consideration?
-
   * See [Security Checklist - Development Best Practices](/help/sites-administering/security-checklist.md#development-best-practices) for further details.
 
 ### Touch-Enabled vs Classic UI {#touch-enabled-vs-classic-ui}
@@ -54,10 +43,9 @@ Before starting to actually configure or code your component you should ask:
 Before any serious discussion starts about developing components you need to know which UI your authors will be using:
 
 * **Touch-Enabled UI**
-  [The standard user interface](/help/sites-developing/touch-ui-concepts.md) that was introduced in AEM 5.6.0 as a preview and extended in 6.x. It is based on the unified user experience for the Adobe Marketing Cloud, using the underlying technologies of [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) and [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui).
-
+  [The standard user interface](/help/sites-developing/touch-ui-concepts.md) is based on the unified user experience for the Adobe Marketing Cloud, using the underlying technologies of [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) and [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **Classic UI**
-  User interface based on ExtJS technology that was introduced with CQ 5.1.
+  User interface based on ExtJS technology that was deprecated with AEM 6.4.
 
 See [UI Interface Recommendations for Customers](/help/sites-deploying/ui-recommendations.md) for more details.
 
@@ -215,25 +203,16 @@ The definition of a component can be broken down as follows:
 The icon or abbreviation for the component is defined via JCR properties of the component when the component is created by the developer. These properties are evaluated in the following order and the first valid property found is used.
 
 1. `cq:icon` - String property pointing to a standard icon in the [Coral UI library](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) to display in the component browser
-
     * Use the value of the HTML attribute of the Coral icon.
-
 1. `abbreviation` - String property to customize the abbreviation of the component name in the component browser
-
     * The abbreviation should be limited to two characters.
     * Providing an empty string will build the abbreviation from first two characters of the `jcr:title` property.
-
         * For example "Im" for "Image"
         * The localized title will be used to build the abbreviation.
-
     * The abbreviation is only translated if the component has an `abbreviation_commentI18n` property, which is then used as translation hint.
-
 1. `cq:icon.png` or `cq:icon.svg` - Icon for this component, which is shown in the component browser
-
     * 20 x 20 pixels is the size of icons of standard components.
-
         * Larger icons will be downsized (client-side).
-
     * The recommended color is rgb(112, 112, 112) &gt; #707070
     * The background of standard component icons is transparent.
     * Only `.png` and `.svg` files are supported.
@@ -418,22 +397,16 @@ Properties of particular interest include:
 
 * `jcr:title` - title of the component; this can be used to identify the component, for example, it appears in the component list within the components browser or sidekick
 * `jcr:description` - description for the component; can be used as mouse-over hint in the component list within sidekick
-
 * `sling:resourceSuperType`: this indicates the path of inheritance when extending a component (by overriding a definition)
 
 Child nodes of particular interest include:
 
 * `cq:editConfig` ( `cq:EditConfig`) - this controls visual aspects; for example, it can define the appearance of a bar or widget, or can add customized controls
-
 * `cq:childEditConfig` ( `cq:EditConfig`) - this controls the visual aspects for child components that do not have their own definitions
-
 * Touch-Enabled UI:
-
     * `cq:dialog` ( `nt:unstructured`) - defines the dialog for editing content of this component
     * `cq:design_dialog` ( `nt:unstructured`) - specifies the design editing options for this component
-
 * Classic UI:
-
     * `dialog` ( `cq:Dialog`) - defines the dialog for editing content of this component (specific to the classic UI)
     * `design_dialog` ( `cq:Dialog`) - specifies the design editing options for this component
     * `icon.png` - graphics file to be used as an icon for the component in the Sidekick
@@ -454,15 +427,12 @@ Dialog definitions are specific to the UI:
 >
 
 * Touch-Enabled UI
-
     * `cq:dialog` ( `nt:unstructured`) nodes:
-
         * define the dialog for editing content of this component
         * specific to the touch-enabled UI
         * are defined using Granite UI components
         * have a property `sling:resourceType`, as standard Sling content structure
         * can have a property `helpPath` to define the context sensitive help resource (absolute or relative path) that is accessed when the Help icon (the ? icon) is selected.
-
             * For out-of-the box components this often references a page in the documentation.
             * If no `helpPath` is specified, the default URL (documentation overview page) is shown.
 
@@ -473,15 +443,12 @@ Dialog definitions are specific to the UI:
   ![screen_shot_2012-02-13at60937pm](assets/screen_shot_2012-02-13at60937pm.png)
 
 * Classic UI
-
     * `dialog` ( `cq:Dialog`) nodes
-
         * define the dialog for editing content of this component
         * specific to the classic UI
         * are defined using ExtJS widgets
         * have a property `xtype`, which refers to ExtJS
         * can have a property `helpPath` to define the context sensitive help resource (absolute or relative path) that is accessed when the **Help** button is selected.
-
             * For out-of-the box components this often references a page in the documentation.
             * If no `helpPath` is specified, the default URL (documentation overview page) is shown.
 
@@ -802,7 +769,7 @@ Each child node of type `cq:DropTargetConfig` defines a drop target in the compo
  <node name of the drop target in the edit configuration>
 ```
 
-The `<*drag and drop prefix*>` is defined by the Java property:
+The `<drag and drop prefix>` is defined by the Java property:
 
 `com.day.cq.wcm.api.components.DropTarget.CSS_CLASS_PREFIX`.
 
@@ -1043,4 +1010,3 @@ With the following configuration the page is refreshed after the component has b
         afterinsert="REFRESH_PAGE"
         afterMove="REFRESH_PAGE"/>
 ```
-

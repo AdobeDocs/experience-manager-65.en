@@ -19,21 +19,17 @@ In Adobe Experience Manager (AEM) Assets, multilingual assets are included in fo
 
 Each language folder is called a language copy. The root folder of a language copy, known as the language root, identifies the language of the content in the language copy. For example, */content/dam/it* is the Italian language root for the Italian language copy. Language copies must use a [correctly-configured language root](preparing-assets-for-translation.md#creating-a-language-root) so that the correct language is targeted when translations of source assets are performed.
 
-The language copy for which you originally add assets is the language master. The language master is the source that is translated into other languages.
+The language copy for which you originally add assets is the language master. The language master is the source that is translated into other languages. A sample folder hierarchy includes several language roots:
 
-The sample folder hierarchy includes several language roots:
-
-```java
 /content
-    /- dam
-             |- en
-             |- fr
-             |- de
-             |- es
-             |- it
-             |- ja
-             |- zh
-```
+&nbsp; &nbsp; /- dam
+&nbsp; &nbsp; &nbsp; |- en
+&nbsp; &nbsp; &nbsp; |- fr
+&nbsp; &nbsp; &nbsp; |- de
+&nbsp; &nbsp; &nbsp; |- es
+&nbsp; &nbsp; &nbsp; |- it
+&nbsp; &nbsp; &nbsp; |- ja
+&nbsp; &nbsp; &nbsp; |- zh
 
 Perform the following steps to prepare your assets for translation:
 
@@ -70,4 +66,3 @@ The touch-optimized UI provides a References panel that shows a list of language
 1. In the References pane, click or tap **[!UICONTROL Language Copies]**. The Language Copies panel shows the language copies of the assets.
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
-

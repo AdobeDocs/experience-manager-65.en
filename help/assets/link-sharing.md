@@ -1,19 +1,15 @@
 ---
 title: Asset link sharing
-seo-title: Asset link sharing
 description: This article describes how to share assets, folders, and collections within AEM Assets as a URL to external parties.
-seo-description: Share assets, folders, and collections as a URL to external parties without them having to first log in to AEM Assets, thereby securing your asset repository.
 uuid: 87aea08d-d5b9-45a9-918f-3302063a3703
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: a13e4d9c-3c3b-4b34-ab48-091756e94a36
 docset: aem65
 
 ---
 
-# Asset link sharing{#asset-link-sharing}
+# Asset link sharing {#asset-link-sharing}
 
 Adobe Experience Manager (AEM) Assets lets you share assets, folders, and collections as a URL with members of your organization and external entities, including partners and vendors. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to AEM Assets.
 
@@ -27,7 +23,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
 >[!NOTE]
 >
->Before you share a link with users, ensure that Day CQ Mail Service is configured. An error occurs if you attempt to share a link without first [configuring Day CQ Mail Service](/help/assets/link-sharing.md#main-pars-title).
+>Before you share a link with users, ensure that Day CQ Mail Service is configured. An error occurs if you attempt to share a link without first [configuring Day CQ Mail Service](/help/assets/link-sharing.md#configmailservice).
 
 1. In the Assets user interface, select the asset to share as a link.
 1. From the toolbar, click/tap the **[!UICONTROL Share Link]** ![assets_share](assets/assets_share.png).
@@ -69,7 +65,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    If the user is a member of your organization, select the user's email ID from the suggested email IDs that appear in the list below the typing area. For an external user, type the complete email ID and then select it from the list.
 
-   To enable emails to be sent out to users, configure the SMTP server details in [Day CQ Mail Service](/help/assets/link-sharing.md#main-pars-title).
+   To enable emails to be sent out to users, configure the SMTP server details in [Day CQ Mail Service](#configmailservice).
 
    ![Share links to assets directly from the Link Sharing dialog](assets/chlimage_1-258.png)
 
@@ -118,9 +114,9 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
 ## Configure Day CQ mail service {#configmailservice}
 
-1. Click or tap the AEM logo, and then navigate to **Tools** &gt; **Operations **&gt; **Web Console**.
-1. From the list of services, locate **Day CQ Mail Service**.
-1. Click the **Edit** icon beside the service, and configure the following parameters for **Day CQ Mail Service** with the details mentioned against their names:
+1. Click or tap the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
+1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
 
     * SMTP server host name: email server host name
     * SMTP server port: email server port

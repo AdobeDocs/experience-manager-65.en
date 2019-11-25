@@ -26,13 +26,10 @@ See also [Managing Viewer Presets](/help/assets/managing-viewer-presets.md).
 
 ## 360 Video in action {#video-in-action}
 
-Click the following screenshot to watch the 360 video in full.
-
-During playback, drag the mouse pointer to a new location to change the viewing angle.
+Tap [Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) to open a browser window and watch a 360-degree video. During video playback, drag the mouse pointer to a new location to change the viewing angle.
 
 ![360 Video sample](assets/6_5_360videoiss_simplified.png)
-
-360 Video frame
+*Video frame from Space Station 360*
 
 ## 360/VR Video and Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
@@ -45,8 +42,7 @@ See [Edit 360/VR video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-
 360 video assets that are uploaded into AEM are labeled as **Multimedia** on an Asset page, similar to normal video asset.
 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
-
-An uploaded 360 video asset seen in the Card view. The asset is labeled as Multimedia.
+*An uploaded 360 video asset seen in the Card view. The asset is labeled as Multimedia.*
 
 **To upload assets for use with the 360 Video viewer:**
 
@@ -103,36 +99,33 @@ See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/
 See [Linking URLs to your web application](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). Note that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
 See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
 
-**To preview 360 Videos**:
+**To preview 360 Videos**
 
-1. In **Assets**, navigate to an existing 360 Video that you have created. Tap the 360 Video asset to open it in preview mode.
+1. In **[!UICONTROL Assets]**, navigate to an existing 360 Video that you have created. Tap the 360 Video asset to open it in preview mode.
 
    ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
    Tap the 360 video asset to preview the video.
 
-1. On the preview page, near the upper-left corner of the page, tap the drop-down list, then select **Viewers**.
+1. On the preview page, near the upper-left corner of the page, tap the drop-down list, then select **[!UICONTROL Viewers]**.
 
    ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
 
-   From the Viewers list, tap **Video360_social**, then do one of the following:
+   From the Viewers list, tap **[!UICONTROL Video360_social]**, then do one of the following:
 
     * Drag the mouse pointer across the video to alter the viewing angle of the static scene.
-    * Tap the video's **Play** button to begin playback; as the video plays, drag the mouse pointer across the video to alter your viewing angle.
+    * Tap the video's **[!UICONTROL Play]** button to begin playback; as the video plays, drag the mouse pointer across the video to alter your viewing angle.
 
-   ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)
+   ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)*A 360 video screenshot.*
 
-   A 360 video screenshot
+    * From the Viewers list, tap **[!UICONTROL Video360VR]**.
 
-   From the Viewers list, tap **Video360VR**.
-
-   Virtual Reality (VR) video is immersive video content that is accessed through the use of virtual reality headsets. As with ordinary videos, you create VR videos at the beginning when a video is being recorded or captured using 360 degree video cameras.
+        Virtual Reality (VR) video is immersive video content that is accessed through the use of virtual reality headsets. As with ordinary videos, you create VR videos at the beginning when a video is being recorded or captured using 360 degree video cameras.
 
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
+   *A 360 VR video screenshot.*
 
-   A 360 VR video screenshot.
-
-1. Near the upper-right of the preview page, tap **Close**.
+1. Near the upper-right of the preview page, tap **[!UICONTROL Close]**.
 
 ## Publishing 360 Video {#publishing-video}
 

@@ -91,4 +91,3 @@ The scope can be changed using the Apache Felix Web Management Console (for exam
 >In a standard AEM installation Find and Replace uses Lucene for the search functionality.
 >
 >Lucene indexes string properties of up to 16k in length. Strings in excess of this will not be searched.
-

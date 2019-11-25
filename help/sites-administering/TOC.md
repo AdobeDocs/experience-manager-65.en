@@ -82,7 +82,9 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [Service Users in AEM](security-service-users.md)
     + [Encryption Support for Configuration Properties](encryption-support-for-configuration-properties.md)
     + [Handling GDPR Requests for the AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
+    + [Principal View for Permissions Management](/help/sites-administering/touch-ui-principal-view.md)
     + [Content Disposition Filter](content-disposition-filter.md)
+    + [Custom User Group Mapping in AEM 6.5](/help/sites-administering/cug-mapping.md)
 + Personalization {#personalization}
     + [Personalization](personalization.md)
     + [Configuring ContextHub](contexthub-config.md)
@@ -158,8 +160,3 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [Classic UI Tagging Console](classic-console.md)
     + [Content Management for Screens](content-management-screens.md)
     + [WebDAV Access](webdav-access.md)
-+ From AEM 65 {#from65}
-    + [Troubleshoot issues with AEM Rich Text Editor](/help/sites-administering/aem-rte-faq.md)
-    + [Principal View for Permissions Management](/help/sites-administering/touch-ui-principal-view.md)
-    + [Bulk Processing Operations](/help/sites-administering/bulk-processing-operations.md)
-    + [CUG Mapping](/help/sites-administering/cug-mapping.md)

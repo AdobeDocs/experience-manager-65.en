@@ -1,19 +1,15 @@
 ---
 title: Assets Sizing Guide
-seo-title: Assets Sizing Guide
 description: Best practices to determine efficient metrics for estimating the infrastructure and resources required for deploying AEM Assets.
-seo-description: Best practices to determine efficient metrics for estimating the infrastructure and resources required for deploying AEM Assets.
 uuid: ed275e97-59d3-4945-9d1b-3351113f8ce5
-contentOwner: Chiradeep Majumdar
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: 68e9cd31-f1db-4678-840f-75bbced53402
 docset: aem65
 
 ---
 
-# Assets Sizing Guide{#assets-sizing-guide}
+# Assets Sizing Guide {#assets-sizing-guide}
 
 When sizing the environment for an Adobe Experience Manager (AEM) Assets implementation, it is important to ensure that there are sufficient resources available in terms of disk, CPU, memory, IO, and network throughput. Sizing many of these resources requires an understanding of how many assets are being loaded into the system. If a better metric is not available, you can divide the size of the existing library by the age of the library to find the rate at which assets are created.
 
@@ -51,7 +47,7 @@ Performing steps 1-9 helps you determine the following:
 
 You can specify these numbers in the Network Sizing spreadsheet to determine the total space required for your datastore. It is also a useful tool to determine the impact of maintaining asset versions or modifying assets in AEM on disk growth.
 
-The example data populated in the tool demonstrates how important it is to perform the steps mentioned. If you size the datastore based solely on the raw images being loaded (1TB), you may have underestimated the repository size by a factor of 15.
+The example data populated in the tool demonstrates how important it is to perform the steps mentioned. If you size the datastore based solely on the raw images being loaded (1 TB), you may have underestimated the repository size by a factor of 15.
 
 [Get File](assets/disk_sizing_tool.xlsx)
 
@@ -96,7 +92,7 @@ It is difficult to arrive at precise sizing figures for a NodeStore or DocumentS
 * Audit logs
 * Archived and active workflows
 
-Because the binaries are be stored in the datastore, each binary occupies some space. Most repositories are below 100GB in size. However, there may be larger repositories upto 1TB in size. Additionally, to perform offline compaction, you require enough free space on the volume to rewrite the compacted repository alongside the pre-compacted version. A good rule-of-thumb is to size the disk to 1.5 times the size expected for the repository.
+Because the binaries are be stored in the datastore, each binary occupies some space. Most repositories are below 100GB in size. However, there may be larger repositories upto 1 TB in size. Additionally, to perform offline compaction, you require enough free space on the volume to rewrite the compacted repository alongside the pre-compacted version. A good rule-of-thumb is to size the disk to 1.5 times the size expected for the repository.
 
 For the repository, use SSDs or disks with an IOPS level greater than 3Kilobyte. To eliminate chances of IOPS introducing performance bottlenecks, monitor CPU IO Wait levels for early signs of issues.
 
@@ -118,10 +114,10 @@ In addition, you can edit the threshold size property of the `com.day.cq.dam.com
 
 The limit to the number of files that can exist in a datastore can be 2.1 billion due to filesystem limitations. It is likely that the repository encounters problems due to large number of nodes long before reaching the datastore limit.
 
-If the renditions are incorrectly generated, use the Camera Raw library. However, in this case, the longest side of the image should not be greater than 65000 pixels. In addition, the image should not contain more than 512 MP (512 &#42; 1024 &#42; 1024 pixels)'.* *The size of the asset is inconsequential.
+If the renditions are incorrectly generated, use the Camera Raw library. However, in this case, the longest side of the image should not be greater than 65000 pixels. In addition, the image should not contain more than 512 MP (512 x 1024 x 1024 pixels). The size of the asset does not matter.
 
 It is difficult to accurately estimate the size of the TIFF file supported out-of-the-box (OOTB) with a specific heap for AEM because additional factors, such as pixel size influence processing. It is possible that AEM can process a file of size of 255 MB OOTB, but cannot process a file size of 18 MB bacause the latter comprises of an unusually higher number pixels compared to the former.
 
 ## Size of Assets {#size-of-assets}
 
-AEM currently lets you upload up to 2 GB of assets at a time. For more information on configuring maximum file upload sizes, see [Managing Assets](/help/assets/managing-assets-touch-ui.md).
+By default, AEM allows you to upload assets of file sizes up to 2 GBs. To upload very large assets in AEM, see [Configuration to upload very large assets](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).

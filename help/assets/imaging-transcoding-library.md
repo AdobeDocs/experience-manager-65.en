@@ -1,19 +1,15 @@
 ---
 title: Imaging Transcoding Library
-seo-title: Imaging Transcoding Library
 description: Learn how to configure and use Adobe's Imaging Transcoding Library, an image processing solution that can perform core image-handling functions, including encoding, transcoding, image resampling, and image resizing.
-seo-description: Learn how to configure and use Adobe's Imaging Transcoding Library, an image processing solution that can perform core image-handling functions, including encoding, transcoding, image resampling, and image resizing.
 uuid: fb0e67a4-ef88-4c08-b1d9-248bb6990ade
-contentOwner: User
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: beecbadd-d31f-4bc6-a99a-491ca579c8d8
 docset: aem65
 
 ---
 
-# Imaging Transcoding Library{#imaging-transcoding-library}
+# Imaging Transcoding Library {#imaging-transcoding-library}
 
 Adobe's Imaging Transcoding Library is a proprietary image processing solution that can perform core image-handling functions, including:
 
@@ -38,26 +34,11 @@ In addition to supporting a wide range of file formats and profiles, Imaging Tra
 
 ## Supported MIME types {#supported-mime-types}
 
-Imaging Transcoding Library supports the following MIME types:
-
-* JPG/JPEG
-* PNG (8 and 16 Bit)
-* GIF
-* BMP
-* TIFF/Compressed TIFF (apart from 32 Bit Tiffs and PTiffs)
-* ICO
-* ICN
+See [supported MIME types article](assets-formats.md#supported-image-transcoding-library), for a list of formats that ITL supports.
 
 ## Supported Platforms {#supported-platforms}
 
-Imaging Transcoding Library is currently available for the following operating systems:
-
-* RHEL 7
-* CentOS 7
-
->[!NOTE]
->
->Currently, only RHEL 7 and CentOS 7 are supported for Linux distros. Mac OS and other &#42;nix distributions (for example, Debian and Ubuntu) are not supported.
+Imaging Transcoding Library is currently available for RHEL 7 and CentOS 7 operating systems. Mac OS and other *nix distributions (for example, Debian and Ubuntu) are not supported.
 
 ## Usage {#usage}
 
@@ -100,42 +81,22 @@ The command line arguments for Imaging Transcoding Library can include the follo
    Only for the bash file, configure `LD_LIBRARY_PATH` using the following steps.
 
     * `vi ~/.bash_profile`
-    * Add " `export LD_LIBRARY_PATH`=**.**"
-    
+    * Add `export LD_LIBRARY_PATH=.`
     * Save and exit.
 
 1. Fetch the value of `LD_LIBRARY_PATH` using the following command:
 
    `echo $LD_LIBRARY_PATH`
 
-   Verify whether the value of `LD_LIBRARY_PATH` is set to "**.**"
+   Verify whether the value of `LD_LIBRARY_PATH` is set to `.`
 
-   If the value is not set to "." restart the session.
+   If the value is not set to `.` restart the session.
 
 1. Download the Imaging Transcoding Library package and install it using the Package Manager.
 
-<table>
- <tbody> 
-  <tr> 
-   <td><p><strong>Package Version</strong></p> </td> 
-   <td><p><strong>Package Share Link</strong></p> </td> 
-   <td><p><strong>Supported Platforms</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>1.4<br /> </p> </td> 
-   <td><a href="https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg">Imaging transcoding library package</a></td> 
-   <td><p>RHEL 7, CentOS7</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-<table>
- <tbody> 
-  <tr> 
-   <td><p>TBD</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+  | Package Version |                                                                                                          Package Share Link                                                                                                          | Supported Platforms |
+  | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
+  | 1.4             | [Imaging transcoding library package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) | RHEL 7, CentOS 7    |
 
 1. Tap/click the AEM logo, and go to **Tools** &gt; **Workflow** &gt; **Models**.
 1. From the **Workflow Models** page, open the **DAM Update Asset** workflow model in edit mode.
@@ -166,9 +127,8 @@ The command line arguments for Imaging Transcoding Library can include the follo
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-   To generate web renditions, configure parameters in the** Web-Enabled Image** tab as depicted in the following image.
+   To generate web renditions, configure parameters in the **Web-Enabled Image** tab as depicted in the following image.
 
    ![web_enabled_imagetab](assets/web_enabled_imagetab.png)
 
 1. Save the workflow.
-

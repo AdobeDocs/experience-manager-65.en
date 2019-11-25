@@ -23,12 +23,9 @@ The goal for this multi-part tutorial is to teach a developer who is new to AEM 
 
 ## WKND Developer Tutorial {#wknd-developer-tutorial}
 
-The tutorial is available [here](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) or click the image below.
-[ ![WKND](assets/screen_shot_2018-11-23at152453.png)
+![WKND](assets/screen_shot_2018-11-23at152453.png)
 
-The WKND Developer Tutorial guides you through creating an AEM project using the latest technologies and best practices.
-
-](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+[The WKND Developer Tutorial is available here](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) and guides you through creating an AEM project using the latest technologies and best practices.
 
 ## Core Concepts {#core-concepts}
 

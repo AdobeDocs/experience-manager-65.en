@@ -23,7 +23,7 @@ Quickviews are supported by the following viewers in Dynamic Media:
 
 While the functionality of each viewer differs, the process of creating a Quickview is the same across all three supported viewers.
 
-**To use Quickviews to create custom pop-ups,**
+**To use Quickviews to create custom pop-ups**
 
 1. Create a Quickview for an uploaded asset.
 
@@ -104,9 +104,9 @@ While the functionality of each viewer differs, the process of creating a Quickv
     * Interactive Image viewer: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_sethandlers.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_sethandlers.html)
     * Interactive Video viewer: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_sethandlers.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_sethandlers.html)
 
-1. You now need to configure the quickViewActivate `` handler.
+1. You now need to configure the `quickViewActivate` handler.
 
-   The quickViewActivate handler controls the Quickviews in the viewer. The handler contains the variable list and function calls for use with the Quickview. The embed code provides mapping for the SKU variable set in the Quickview as well as a sample loadQuickView function call.
+   The `quickViewActivate` handler controls the Quickviews in the viewer. The handler contains the variable list and function calls for use with the Quickview. The embed code provides mapping for the SKU variable set in the Quickview as well as a sample `loadQuickView` function call.
 
    **Variable mapping**
    Map variables for use in your web page to the SKU value and generic variables contained in the Quickview:
@@ -131,7 +131,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    The sample function call assumes the function `loadQuickView()` exists and is accessible.
 
-   Learn more about quickViewActivate method at the following:
+   Learn more about `quickViewActivate` method at the following:
 
     * Interactive Image viewer: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html)
     * Interactive Video viewer: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html)
@@ -144,7 +144,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
         * Update the `loadQuickView(sku,*var1*,*var2*)` call if you are adding additional variables.
 
-    * Create a simple loadQuickView () function on page, outside of the viewer.
+    * Create a simple `loadQuickView` () function on page, outside of the viewer.
 
       For example, the following writes the value of sku to the browser console:
 

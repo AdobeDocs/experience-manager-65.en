@@ -1,11 +1,8 @@
 ---
 title: XMP writeback to renditions
-seo-title: XMP writeback to renditions
 description: Learn how the XMP writeback feature propagates the metadata changes for an asset to all or specific renditions of the asset.
-seo-description: Learn how the XMP writeback feature propagates the metadata changes for an asset to all or specific renditions of the asset.
 uuid: 526e5d6d-a222-4a83-b366-39a2036459f1
-contentOwner: Chiradeep Majumdar
-content-type: reference
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 017b6daa-8aac-4cd9-9085-b5396a81d196
 docset: aem65
@@ -36,7 +33,7 @@ The XMP Writeback feature lets you propagate the metadata changes to all or spec
 
 To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **Adobe CQ DAM Rendition Maker** configuration in Configuration Manager.
 
-1. Open Configuration Manager from *https://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr*.
+1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open the **Adobe CQ DAM Rendition Maker** configuration.
 1. Select the **Propagate XMP** option, and then save the changes.
 
@@ -83,7 +80,7 @@ Whitelist filtering of XMP metadata resolves this issue by letting you define th
 >
 >Filtering works only for the properties derived from XMP sources in asset binaries. For the properties derived from non-XMP sources, such as EXIF and IPTC formats, the filtering does not work. For example, the date of asset creation is stored in property named `CreateDate` in EXIF TIFF. AEM stories this value in the metadata field named `exif:DateTimeOriginal`. As the source is a non-XMP source, filtering does not work on this property.
 
-1. Open Configuration Manager from *https://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr*.
+1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open the **Adobe CQ DAM XmpFilter** configuration.
 1. To apply whitelist filtering, select **Apply Whitelist to XMP Properties**, and specify the properties to be imported in the **Whitelisted XML Names for XMP filtering** box.
 
