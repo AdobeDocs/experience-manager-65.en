@@ -9,7 +9,7 @@ docset: aem65
 
 ---
 
-# Configure Asset tagging using the Smart Content Service{#configure-asset-tagging-using-the-smart-content-service}
+# Configure Asset tagging using the Smart Content Service {#configure-asset-tagging-using-the-smart-content-service}
 
 You can integrate Adobe Experience Manager (AEM) with the Smart Content Service using Adobe I/O. Use this configuration to access the Smart Content Service from within AEM.
 

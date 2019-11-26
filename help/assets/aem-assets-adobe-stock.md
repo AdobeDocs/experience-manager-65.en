@@ -9,7 +9,7 @@ docset: aem65
 
 ---
 
-# Use Adobe Stock assets in AEM Assets{#use-adobe-stock-assets-in-aem-assets}
+# Use Adobe Stock assets in AEM Assets {#use-adobe-stock-assets-in-aem-assets}
 
 Organizations can integrate their Adobe Stock enterprise plan with AEM Assets to ensure that licensed assets are broadly available for their creative and marketing projects, with the powerful asset management capabilities of AEM.
 
@@ -17,7 +17,7 @@ Adobe Stock service provides designers and businesses with access to millions of
 
 ## Prerequisites {#prerequisites}
 
-The integration requires an [enterprise Adobe Stock plan](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) and AEM 6.5 or later.
+The integration requires an [enterprise Adobe Stock plan](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) and AEM 6.5 or later. For AEM 6.5 service pack details, see these [release notes](/help/release-notes/sp-release-notes.md).
 
 ## Integrate AEM and Adobe Stock {#integrate-aem-and-adobe-stock}
 
@@ -29,7 +29,7 @@ To allow communication between AEM and Adobe Stock, create an IMS configuration 
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
-1. Navigate to **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > A **[!UICONTROL dobe IMS Configurations]**. Click **[!UICONTROL Create]** and select **[!UICONTROL Cloud Solution]** > **[!UICONTROL Adobe Stock]**.
+1. Click on AEM logo. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Click **[!UICONTROL Create]** and select **[!UICONTROL Cloud Solution]** > **[!UICONTROL Adobe Stock]**.
 1. Either reuse an existing certificate or select **[!UICONTROL Create new certificate]**.
 1. Click **[!UICONTROL Create certificate]**. Once created, download the public key. Click **[!UICONTROL Next]**.
 1. Provide appropriate values in the fields titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from Adobe I/O.
@@ -37,7 +37,7 @@ To allow communication between AEM and Adobe Stock, create an IMS configuration 
 
 ### Create Adobe Stock configuration in AEM {#create-adobe-stock-configuration-in-aem}
 
-1. Navigate to AEM > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. In the AEM user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. Click **[!UICONTROL Create]** to create a configuration and associate it with your existing IMS Configuration. Select `PROD` as the environment parameter.
 1. In **[!UICONTROL Licensed Assets Path]** field, leave a location as is. Do not change the location where you want to store the Adobe Stock assets.
 1. Complete creation by adding all the required properties. Click **[!UICONTROL Save & Close]**.
@@ -45,7 +45,7 @@ To allow communication between AEM and Adobe Stock, create an IMS configuration 
 
 >[!NOTE]
 >
->If there are multiple Adobe Stock Configurations, select the desired configuration in User Preferences panel ( **[!UICONTROL AEM]**> **[!UICONTROL User Icon]** > **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**).
+>If there are multiple Adobe Stock Configurations, select the desired configuration in [!UICONTROL User Preferences] panel by clicking the AEM logo in the AEM user interface.
 
 ## Use and manage Adobe Stock assets in AEM {#usemanage}
 
@@ -53,27 +53,27 @@ Using this capability, organizations can allow its users to work using Adobe Sto
 
 Once an Adobe Stock asset is licensed in AEM, it can be used and managed like a typical asset. In AEM, the users can search and preview the assets; copy and publish the assets; share the assets on Brand Portal; access and use the assets via AEM desktop app; and so on.
 
-![Search for Adobe Stock assets and filter results from your AEM workspace](assets/adobe-stock-search-results-workspace.png "Search for Adobe Stock assets and filter results from your AEM workspace")
+![Search for Adobe Stock assets and filter results from your AEM workspace](assets/adobe-stock-search-results-workspace.png)
+*Figure: Search for Adobe Stock assets and filter results from your AEM workspace*
 
 **A.** Search assets similar to the assets whose Adobe Stock ID is provided. **B.** Search assets that match your selection of shape or orientation. **C.** Search for one of more supported asset types **D.** Open or collapse the filters pane **E.** License and save the selected asset in AEM **F.** Save the asset in AEM with watermark **G.** Explore assets on Adobe Stock website that are similar to the selected asset **H.** View the selected assets on Adobe Stock website **I.** Number of selected assets from the search results **J.** Switch between Card view and List view
 
 ### Find assets {#find-assets}
 
-Your AEM users, can search for assets in both, AEM and Adobe Stock. When the search location is not limited to Adobe Stock, the search results from AEM and Adobe Stock are displayed in separate areas.
+Your AEM users, can search for assets in both, AEM and Adobe Stock. When the search location is not limited to Adobe Stock, the search results from AEM and Adobe Stock are displayed.
 
 * To search for Adobe Stock assets, click **[!UICONTROL Navigation]** > **[!UICONTROL Assets]** > **[!UICONTROL Search Adobe Stock]**.
 
 * To search for assets across Adobe Stock and AEM Assets, click the search icon ![search_icon](assets/search_icon.png).
 
-Alternatively, start typing ' `Location: Adobe Stock`' in the search bar to select Adobe Stock assets.  AEM offers advanced filtering capabilities on the searched assets, allowing users to quickly zero-in on the required assets using filters, like types of supported assets, image orientation, and licensed state.
+Alternatively, start typing `Location: Adobe Stock` in the search bar to select Adobe Stock assets.  AEM offers advanced filtering capabilities on the searched assets, allowing users to quickly zero-in on the required assets using filters, such as types of supported assets, image orientation, and licensed state.
 
 >[!NOTE]
 >
 >Assets searched from Adobe Stock are just displayed in AEM. Adobe Stock assets are fetched and stored in AEM repository only after a user either [saves an asset](/help/assets/aem-assets-adobe-stock.md#saveassets) or [licenses an asset](/help/assets/aem-assets-adobe-stock.md#licenseassets). Assets that are already stored in AEM are displayed and highlighted for ease of reference and access. Also, such assets are saved with some additional metadata to indicate the source as Adobe Stock.
 
 ![Search filters in AEM and highlighted Adobe Stock assets in search results](assets/aem-search-filters2.jpg)
-
-Search filters in AEM and highlighted Adobe Stock assets in search results
+*Figure: Search filters in AEM and highlighted Adobe Stock assets in search results*
 
 ### Save and view the required assets {#saveassets}
 
@@ -90,8 +90,7 @@ Next time when you search for assets, the saved assets are highlighted with a ba
 Users can license Adobe Stock assets by using the quota of their Adobe Stock Enterprise plan. When you license an asset, it is saved without a watermark and is available for searching and using in AEM Assets.
 
 ![Dialog to license and save Adobe Stock assets in AEM Assets](assets/aem-stock_licenseandsave.jpg)
-
-Dialog to license and save Adobe Stock assets in AEM Assets
+*Figure: Dialog to license and save Adobe Stock assets in AEM Assets*
 
 ### Access metadata and asset properties {#access-metadata-and-asset-properties}
 
@@ -100,12 +99,9 @@ Users can access and preview the metadata, including the Adobe Stock metadata pr
 Users can see the properties for both, licensed and unlicensed assets.
 
 ![View and access metadata and license references of saved assets](assets/metadata_properties.jpg)
-
-View and access metadata and license references of saved assets
+*Figure: View and access metadata and license references of saved assets*
 
 ## Known limitations {#known-limitations}
-
-<!--These next 3 sections used to be accordions until converted to straight Markdown. When accordions are enabled, revert-->
 
 ### Editorial image warning is not displayed
 
@@ -121,9 +117,8 @@ When a user updates a license reference field, the license reference information
 
 ## Related resources {#related-resources}
 
-[Video tutorial on using Adobe Stock assets with AEM Assets](https://helpx.adobe.com/experience-manager/kt/help/assets/stock-assets-feature-video-use.html)
+[Video tutorial on using Adobe Stock assets with AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
 
 [Adobe Stock enterprise plan help](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 
 [Adobe Stock FAQ](https://helpx.adobe.com/stock/faq.html)
-
