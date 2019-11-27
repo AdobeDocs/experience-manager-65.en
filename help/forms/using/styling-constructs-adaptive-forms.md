@@ -60,7 +60,7 @@ The components discussed in this article have their predefined CSS classes. You 
 
 ## Container styling {#container-styling}
 
-A container is the top- `` level component. Other panels and fields lie under the container component.
+A container is the top-level component. Other panels and fields lie under the container component.
 
 <table>
  <tbody>

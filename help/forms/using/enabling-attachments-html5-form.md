@@ -47,10 +47,10 @@ You can upload, preview, and submit attachments with HTML5 forms. By default, th
 
 ## Attachment submission format {#attachment-submission-format}
 
-When attachments are enabled, HTML5 form submits multipart data. The mutii-part submission data has two parts **dataXml** and **attachments**.
+When attachments are enabled, HTML5 form submits multipart data. The multi-part submission data has two parts **dataXml** and **attachments**.
 
 >[!NOTE]
 >
->For backward compatibility, if `mfAllowAttachments` option is turned off, then the HTML5 forms does not send the muti- ``part data. It sends simple data xml in **application/xml** format.
+>For backward compatibility, if `mfAllowAttachments` option is turned off, then the HTML5 forms does not send the multi-part data. It sends simple data xml in **application/xml** format.
 
 If the mfAllowAttachments flag is turned on, the [submit service proxy service](/help/forms/using/service-proxy.md) also posts multipart data with dataXml and attachments.
