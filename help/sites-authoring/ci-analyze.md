@@ -22,7 +22,7 @@ Open the [Content Insight](/help/sites-authoring/content-insights.md) page to an
 Use the following procedure to see the Analytics and Recommendations for a page:
 
 1. Navigate to the page that you want to analyze.
-1. In the toolbar, click or tap** Analytics and Recommendations**.
+1. In the toolbar, click or tap **Analytics and Recommendations**.
 
    >[!NOTE]
    >
@@ -102,7 +102,7 @@ Use the following procedure to create a task for an SEO recommendation.
     * Task Priority: The priority of the task.
     * Due Date: The date by which the task should be completed.
 
-   **Note: **The task that is created also includes the path to the page to which the SEO recommendation applies.
+   **Note:** The task that is created also includes the path to the page to which the SEO recommendation applies.
 
 1. Click or tap Done to close the Task Created message.
 

@@ -91,7 +91,7 @@ In this example, `data` stores the XML data, and `att` stores attachment data.
 
 ## Send Email {#send-email}
 
-The **Send Email **submit action** **sends an email to one or more recipients on successful submission of the form. The email generated can contain form data in a predefined format.
+The **Send Email** submit action sends an email to one or more recipients on successful submission of the form. The email generated can contain form data in a predefined format.
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ All out of the box (OOTB) field validations of an adaptive form thate are rerun 
 
 ### Enabling Server-side Validation {#enabling-server-side-validation-br}
 
-Use the **Revalidate on server** under** **Adaptive Form Container in the sidebar to enable or disable server-side validation for the current form.
+Use the **Revalidate on server** under Adaptive Form Container in the sidebar to enable or disable server-side validation for the current form.
 
 ![Enabling Server-Side Validation](assets/revalidate-on-server.png)
 

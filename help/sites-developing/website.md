@@ -47,7 +47,7 @@ After performing all the steps, your pages will look as follows:
 
 To follow along with the tutorial rather than performing the exercises, download website-1.0.zip. This file is an AEM content package that contains the results of this tutorial. Use [Package Manager](/help/sites-administering/package-manager.md) to install the package to your author instance.
 
-**NOTE: **Installing this package will overwrite any resources on your authoring instance that you have created using this tutorial.
+**NOTE:** Installing this package will overwrite any resources on your authoring instance that you have created using this tutorial.
 
 Website content package
 
@@ -69,9 +69,9 @@ After you have installed AEM, access the CRXDE Lite development environment by c
 
 Use CRXDE Lite to create the mywebsite application structure in the repository:
 
-1. In the tree on the left side of CRXDE Lite, right-click the **`/apps`** folder and click **Create** > **Create** **Folder**. In the **Create Folder **dialog, type `mywebsite` as the folder name and click **OK**.
+1. In the tree on the left side of CRXDE Lite, right-click the **`/apps`** folder and click **Create** > **Create** **Folder**. In the **Create Folder** dialog, type `mywebsite` as the folder name and click **OK**.
 1. Right-click the **`/apps/mywebsite`** folder and click **Create** > **Create Folder**. In the **Create Folder** dialog, type `components` as the folder name and click **OK**.
-1. Right-click the **`/apps/mywebsite`** folder and click **Create** > **Create Folder**. In the** Create Folder **dialog, type `templates` as the folder name and click **OK**.
+1. Right-click the **`/apps/mywebsite`** folder and click **Create** > **Create Folder**. In the **Create Folder** dialog, type `templates` as the folder name and click **OK**.
 
    The structure in the tree should now look something like this:
 
@@ -124,7 +124,7 @@ A template defines the default content of a new page. Complex websites may use s
     * **Label**: contentpage
     * **Title**: My Website Content Page Template
     * **Description**: This is my Website Content Page Template
-    * **Resource Type: **mywebsite/components/contentpage
+    * **Resource Type:** mywebsite/components/contentpage
 
    Use the default value for the Ranking property.
 
@@ -206,7 +206,7 @@ Add code to the contentpage.jsp script to define the page content.
    </html>
    ```
 
-1. Click** Save All** to save your changes.
+1. Click **Save All** to save your changes.
 
 ### Creating your Website Page and Content Pages {#creating-your-website-page-and-content-pages}
 
@@ -216,8 +216,8 @@ In this section, you create the following pages which all use the contentpage te
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-1. In the folder tree, select the **Websites** folder and then click **New **&gt; **New Page**.
-1. In the** Create Page** window, enter the following:
+1. In the folder tree, select the **Websites** folder and then click **New** &gt; **New Page**.
+1. In the **Create Page** window, enter the following:
 
     * Title: `My Website`
     * Name: `mywebsite`
@@ -225,27 +225,27 @@ In this section, you create the following pages which all use the contentpage te
 
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
-1. Click **Create**. In the folder tree, select the **/Websites/My Website** page and click **New** &gt;** New Page**.
+1. Click **Create**. In the folder tree, select the **/Websites/My Website** page and click **New** &gt; **New Page**.
 1. In the Create Page dialog, enter the following property values and then click Create:
 
     * Title: English
     * Name: en
     * Select the My Website Content Page Template
 
-1. In the folder tree, select the **/Websites/My Website/English** page and click **New**&gt;** New Page**.
-1. In the** Create Page** dialog, enter the following property values and then click **Create**:
+1. In the folder tree, select the **/Websites/My Website/English** page and click **New**&gt; **New Page**.
+1. In the **Create Page** dialog, enter the following property values and then click **Create**:
 
     * Title: Products
     * Select the My Website Content Page Template
 
-1. In the folder tree, select the **/Websites/My Website/English** page and click **New** &gt;** New Page**.
+1. In the folder tree, select the **/Websites/My Website/English** page and click **New** &gt; **New Page**.
 1. In the **Create Page** dialog, enter the following property values and then click **Create**:
 
     * Title: Services
     * Select the My Website Content Page Template
 
-1. In the folder tree, select the **/Websites/My Website/English** page and click **New** &gt;** New Page**.
-1. In the** Create Page** dialog, enter the following property values and then click **Create**:
+1. In the folder tree, select the **/Websites/My Website/English** page and click **New** &gt; **New Page**.
+1. In the **Create Page** dialog, enter the following property values and then click **Create**:
 
     * Title: Customers
     * Select the My Website Content Page Template
@@ -285,8 +285,8 @@ For example, in your component JSP code, you can reference the scripts that the 
     1. Select the `/apps/mywebsite/components/contentpage` node.
     1. At the bottom of the Properties tab, type the following property values and then click Add:
 
-        * **Name: **sling:resourceSuperType
-        * **Type: **String
+        * **Name:** sling:resourceSuperType
+        * **Type:** String
         * **Value:** foundation/components/page
 
     1. Click Save All.
@@ -327,7 +327,7 @@ In this section you create several scripts that each generate a part of the page
 
     1. Right-click the node `/apps/mywebsite/components/contentpage`, then select **Create **then **Create File**.
 
-    1. In the window, type `left.jsp` as the** Name** and click **OK**.
+    1. In the window, type `left.jsp` as the **Name** and click **OK**.
 
 1. Edit the file `left.jsp` to remove the existing content and replace with the following code:
 
@@ -477,7 +477,7 @@ The Page component defines properties that enable you to provide subtitles for p
 
 1. In your browser, open the **Products** page.
 1. On the Sidekick **Page** tab, click **Page Properties**.
-1. On the Basic tab of the dialog, expand **More Titles and Description,** and for the **Subtitle **property, type **what we do**. Click **OK**.
+1. On the Basic tab of the dialog, expand **More Titles and Description,** and for the **Subtitle** property, type **what we do**. Click **OK**.
 1. Repeat the previous steps to add the subtitle **about our services** to the **Services** page.
 1. Repeat the previous steps to add the subtitle **the trust we earn** to the **Customers** page.
 
@@ -512,7 +512,7 @@ In this exercise, Sling matches these URLs to the /apps/mywebsite/components/con
    ```
 
 1. Save the changes.
-1. Right-click the `/apps/mywebsite/components/contentpage` node and click **Create **&gt; **Create File**.
+1. Right-click the `/apps/mywebsite/components/contentpage` node and click **Create** &gt; **Create File**.
 1. In the **Create File** window, as **Name**, type `navimage.png.java`.
 
    The .java file name extension indicates to Sling that the Apache Sling Scripting Java Support should be used to compile the script and create a servlet.
@@ -1204,13 +1204,13 @@ In this section, you use a cq:editConfig node to enable you to drag assets from 
 In this section, you add the icon to appear beside the image component when it is listed in Sidekick:
 
 1. In CRXDE Lite, right-click the file `/libs/foundation/components/image/icon.png` and select **Copy.**
-1. Right-click the node `/apps/mywebsite/components/image` and click** Paste**, then click **Save All**.
+1. Right-click the node `/apps/mywebsite/components/image` and click **Paste**, then click **Save All**.
 
 #### Using the Image Component {#using-the-image-component}
 
-In this section, you will view the** Products **page and add your image component to the paragraph system.
+In this section, you will view the **Products** page and add your image component to the paragraph system.
 
-1. In your browser, reload the **Products **page.
+1. In your browser, reload the **Products** page.
 1. In the Sidekick, click the **design mode** icon.
 1. Click the Edit button to edit the design dialog of par.
 1. In the dialog, a list of **Allowed Components** is shown; navigate to **MyWebsite**, select the **My Image Component** and click **OK.**
@@ -1261,7 +1261,7 @@ You have several options, in edit mode as well as design mode.
 
 In this section, you create the component to search for content on the website. This search component can be placed in the paragraph system of any page (for example, on a specialized search result page).
 
-Your search input box will look as follows on the **English **page:
+Your search input box will look as follows on the **English** page:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -1497,7 +1497,7 @@ In this section, you add your search component to the paragraph system.
 1. In your browser, open the Search page.
 1. In the Sidekick, click the design mode icon.
 1. In the Design of par block (below the Search title), click Edit.
-1. In the dialog, scroll down to the** My Websites** group, select **My Search Component** and click **OK**.
+1. In the dialog, scroll down to the  **My Websites** group, select **My Search Component** and click **OK**.
 1. On Sidekick, click the triangle to return to edit mode.
 1. Drag the My Search Component from the Sidekick into the parsys frame. It looks as follows:
 
@@ -1529,4 +1529,3 @@ For this component you can set several parameters in both edit mode and design m
 1. In your browser, reload the** Products** page. The whole page looks as follows:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)
-

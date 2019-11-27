@@ -185,7 +185,7 @@ Code blocks are typically used to illustrate source code. You can create code bl
 
 You can use backslash escapes to generate literal characters which have special meaning in formatting syntax. For example, if you wanted to surround a word with literal asterisks (instead of an HTML &lt;em&gt; tag), you can use backslashes before the asterisks, like this:
 
-&nbsp;&nbsp;&nbsp;&nbsp;`\*literal asterisks\*`
+&nbsp;&nbsp;&nbsp;&nbsp;`\\*literal asterisks\\*`
 
 Backslash escapes are available for the following characters:
 

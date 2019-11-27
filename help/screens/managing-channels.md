@@ -88,7 +88,7 @@ To add or edit content in a channel, follow the steps below:
 
 >[!NOTE]
 >
->You can add components to your channel. Refer to ** [Adding Components to a Channel](/help/screens/adding-components-to-a-channel.md)** for more details.
+>You can add components to your channel. Refer to **[Adding Components to a Channel](/help/screens/adding-components-to-a-channel.md)** for more details.
 
 ![demochannel1](assets/demochannel1.gif)
 

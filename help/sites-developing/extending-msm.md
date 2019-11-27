@@ -185,7 +185,7 @@ The new rollout configuration is then available to you when setting rollout conf
 1. Click **Create**.
 1. Double-click on the rollout configuration that you created to open it for further configuration.
 1. Click **Edit**.
-1. In the **Rollout Config** dialog, select the ** [Sync Trigger](/help/sites-administering/msm-sync.md#rollout-triggers)** to define the action that causes the rollout to occur.
+1. In the **Rollout Config** dialog, select the **[Sync Trigger](/help/sites-administering/msm-sync.md#rollout-triggers)** to define the action that causes the rollout to occur.
 1. Click **OK** to save the changes.
 
 #### Add Synchronization Actions to the Rollout Configuration {#add-synchronization-actions-to-the-rollout-configuration}
@@ -622,7 +622,7 @@ To modify the languages:
 
    Name the new folder `wcm`.
 
-1. Repeat the previous step to create the `/apps/wcm/core` folder tree. Create a node of type `sling:Folder`** **in core called `resources`.
+1. Repeat the previous step to create the `/apps/wcm/core` folder tree. Create a node of type `sling:Folder` in `core` called `resources`.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -692,4 +692,3 @@ When `cq-msm-lockable` has been defined, breaking/closing the chain will interac
 >[!NOTE]
 >
 >When you re-enable inheritance, the live copy page property is not automatically synchronized with the source property. You can manually request a synchronization if this is required.
-

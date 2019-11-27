@@ -54,7 +54,7 @@ Let us review the different components of the form data model editor UI.
 
 **D. Services** Content area where added data source operations or services appear.
 
-**E. Toolbar ** Tools to work with form data model. The toolbar shows more options depending on the selected object in form data model.
+**E. Toolbar** Tools to work with form data model. The toolbar shows more options depending on the selected object in form data model.
 
 **F. Add Selected** Adds selected data model objects and services to the form data model.
 

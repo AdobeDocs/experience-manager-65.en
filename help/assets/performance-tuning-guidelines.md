@@ -1,13 +1,9 @@
 ---
 title: Assets Performance Tuning Guide
-seo-title: Assets Performance Tuning Guide
 description: Key focus areas around AEM configuration, changes to hardware, software, and network components to remove bottlenecks and optimize the performance of AEM Assets.
-seo-description: Key focus areas around AEM configuration, changes to hardware, software, and network components to remove bottlenecks and optimize the performance of AEM Assets.
 uuid: 5e590b0c-7f89-4ba4-8263-43fdb3e920ea
-contentOwner: Chiradeep Majumdar
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: 30f241ef-2dfb-471e-98fd-d21b9e752c4c
 docset: aem65
 tagskeywords: performance tuning, AEM Assets, software optimization, hardware optimization
@@ -257,11 +253,6 @@ Create custom indexes for queries that you run often. For details, see [methodol
 ### Lucene index configurations {#lucene-index-configurations}
 
 Some optimizations can be done on the Oak index configurations that can help improve AEM Assets performance:
-
-Update the LuceneIndexProvider configuration:
-
-1. Navigate to /system/console/configMgrorg.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService
-1. Enable "CopyOnRead", "CopyOnWrite", and "Prefetch Index Files" in versions prior to AEM 6.2. These values are enabled by default in AEM 6.2 and later versions.
 
 Update index configurations to improve reindexing time:
 

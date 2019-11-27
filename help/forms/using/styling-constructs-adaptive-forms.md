@@ -635,7 +635,7 @@ The following is the HTML code for the tab navigator element is (similar to the 
 
 `</div>`
 
-You can change the styling of the navigator using CSS rules that select the elements using **descendant** selectors.** **For example, to add a text decoration style to the anchor tag:
+You can change the styling of the navigator using CSS rules that select the elements using **descendant** selectors. For example, to add a text decoration style to the anchor tag:
 
 Tab navigator on top:
 

@@ -653,7 +653,7 @@ The slideshow component then repeatedly displays each in sequence, for a short p
 
 >[!NOTE]
 >
->The **Table** component is based on the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), as is the ** [Text](#text)** component.
+>The **Table** component is based on the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), as is the **[Text](#text)** component.
 >
 >It is recommended to use the **Table** component for tables, although they can also be constructed with the **Text** component.
 
@@ -691,7 +691,7 @@ For more information about applying tags, visit [Using Tags](/help/sites-classic
 
 >[!NOTE]
 >
->The **Text** component is based on the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), as is the ** [Table](#table)** component.
+>The **Text** component is based on the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), as is the **[Table](#table)** component.
 >
 >It is recommended to use the **Table** component for tables, although they can also be constructed with the **Text** component.
 
@@ -1026,11 +1026,11 @@ This component is needed to define the start of a new form on a page. You can co
 
         * A script for client validation:
 
-          `/apps/<*myApp*>/form/<*myValidation*>/formclientvalidation.jsp`
+          `/apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
 
         * A script for validation on the server side:
 
-          `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
+          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
     * **Action Configuration**
 
@@ -1341,4 +1341,3 @@ The standard text field can be configured to your required size and with with yo
 This allows you to create a Submit button for use in a workflow.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
-

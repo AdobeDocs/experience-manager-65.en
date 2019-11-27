@@ -1,19 +1,15 @@
 ---
 title: AEM and Creative Cloud Integration Best Practices
-seo-title: AEM and Creative Cloud Integration Best Practices
 description: Best practices for integrating an AEM instance with Adobe Creative Cloud to streamline asset transfer workflows and achieve maximum efficiency.
-seo-description: Best practices for integrating an AEM instance with Adobe Creative Cloud.
 uuid: 6d0d9f30-64ef-410c-b826-79e02a4ac6be
-contentOwner: User
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: f3432607-7877-4c94-a678-97a5511a6e12
 docset: aem65
 
 ---
 
-# AEM and Creative Cloud Integration Best Practices{#aem-and-creative-cloud-integration-best-practices}
+# AEM and Creative Cloud Integration Best Practices {#aem-and-creative-cloud-integration-best-practices}
 
 Adobe Experience Manager (AEM) Assets is a digital asset management (DAM) solution that can integrate with Adobe Creative Cloud to help DAM users work together with creative teams, streamlining collaboration in the content creation process.
 
@@ -79,7 +75,7 @@ Read on to know what integrations to pick between desktop and the enterprise-gra
  </tbody>
 </table>
 
-This article focuses primarily on the first two aspects of the collaboration needs. Distribution and sourcing of assets at scale is briefly mentioned as a use case. For such needs solutions, consider Adobe Brand Portal or Asset Share Commons. Alternate solutions such as [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share](/help/assets/assets-finder-editor.md) components, [Link Share](/help/assets/link-sharing.md), using [AEM Assets web UI](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
+This article focuses primarily on the first two aspects of the collaboration needs. Distribution and sourcing of assets at scale is briefly mentioned as a use case. For such needs solutions, consider Adobe Brand Portal or Asset Share Commons. Alternate solutions such as [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [AEM Assets web UI](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
 
 ![Creative Cloud connections for AEM: Deciding which capability to use](assets/creative-connections-aem.png)
 

@@ -1,30 +1,28 @@
 ---
 title: Assets HTTP API
-seo-title: Assets HTTP API
 description: Learn about the implementation, data model, and features of Assets HTTP API. Use Assets HTTP API to perform various tasks around assets.
-seo-description: Learn about the implementation, data model, and features of Assets HTTP API. Use Assets HTTP API to perform various tasks around assets.
 uuid: 24bd2b1e-8f4c-4177-8715-b53a51f02d6e
-contentOwner: User
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: extending-assets
-content-type: reference
 discoiquuid: 2bb815f0-c1da-491e-81e5-286e596c5197
 docset: aem65
 
 ---
 
-# Assets HTTP API{#assets-http-api}
+# Assets HTTP API {#assets-http-api}
 
 ## Overview {#overview}
 
-The Assets HTTP API is exposed at */api/assets*, and allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments, together with structured content using AEM Content Fragments. The current implementation of AEM Assets HTTP API is REST. It includes [support for Content Fragments](/help/assets/assets-api-content-fragments.md).
+The Assets HTTP API allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments, together with structured content using AEM Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](/help/assets/assets-api-content-fragments.md).
 
 To access the API:
 
-1. Open the API service document at `https://[hostname]:[port]/api.json`. ``
+1. Open the API service document at `https://[hostname]:[port]/api.json`.
 1. Follow the Assets service link leading to `https://[hostname]:[server]/api/assets.json`.
 
 The API's response is a JSON for some mime types and a response code for all mime types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
+
+After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API. The API returns 404 error message if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
 
 ## Content Fragments {#content-fragments}
 
@@ -45,19 +43,14 @@ Folders are like directories in tradtional filesystems. They are containers for 
 **Entities**: The entities of a folder are its child elements, which can be folders and assets.
 
 **Properties**:
-
-```
-name  -- Name of the folder. This is the same as the last segment in the URL path without the extension
-title -- Optional title of the folder which can be displayed instead of its name
-```
+* `name`  -- Name of the folder. This is the same as the last segment in the URL path without the extension
+* `title` -- Optional title of the folder which can be displayed instead of its name
 
 >[!NOTE]
 >
 >Some properties of folder or asset are mapped to a different prefix. The `jcr` prefix of `jcr:title`, `jcr:description`, and `jcr:language` are replaced with `dc` prefix. Hence in the returned JSON, `dc:title` and `dc:description` contain the values of `jcr:title` and `jcr:description`, respectively.
 
-**Links**
-
-Folders expose three links:
+**Links** Folders expose three links:
 
 ```xml
 self      -- Link to itself
@@ -111,7 +104,7 @@ The Assets HTTP API includes the following features:
 
 **Prerequisites**
 
-* Go to `https://<Server>:<Port>/system/console/configMgr`.
+* Go to `https://[aem_server]:[port]/system/console/configMgr`.
 * Navigate to **Adobe Granite CSRF Filter**.
 * Make sure the property **Filter Methods** incudes: POST, PUT, DELETE.
 

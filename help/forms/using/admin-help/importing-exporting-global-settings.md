@@ -3,17 +3,15 @@ title: Importing and exporting global settings
 seo-title: Importing and exporting global settings
 description: You can import and export search template definitions and global settings for Workspace.
 seo-description: You can import and export search template definitions and global settings for Workspace.
-uuid: 5c0c699b-dc05-45a0-a3aa-4ee8ea155bd0
+uuid: 8f1f210d-e850-4b2c-bb5a-942fa8299791
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 6c286ca4-4aa4-43a0-b524-072562778905
-docset: aem65
-
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
+discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 ---
 
-# Importing and exporting global settings{#importing-and-exporting-global-settings}
+# Importing and exporting global settings {#importing-and-exporting-global-settings}
 
 You can import and export search template definitions and global settings for Workspace.
 
@@ -23,7 +21,8 @@ You can import and export search template definitions and global settings for Wo
 
 For example, you can move from a development environment to a production environment by exporting the search template definitions and global settings from one environment and importing them into the other.
 
-After you export the global settings file, you can modify the settings in an XML or text editor. However, the only settings you may want to edit are the JChannelConnectionProperties, formViewOnly, and specialRoutes settings. For more information, see [Workspace global settings](importing-exporting-global-settings.md#workspace_global_settings).
+After you export the global settings file, you can modify the settings in an XML or text editor. However, the only settings you may want to edit are the JChannelConnectionProperties, formViewOnly, and specialRoutes settings. For more information, see [Workspace global settings](importing-exporting-global-settings.md#workspace-global-settings).
+
 
 >[!NOTE]
 >
@@ -126,6 +125,5 @@ To define the custom name:
 
 `<client_systemContext_name>[custom name to display]</client_systemContext_name>`
 
-***note**: For the Demo application, the default display name is **Citizen**. For a custom application that you create, the default display name is **System Context Account**.*
-
-**client_idleTimeout: **When a user remains inactive for a specific amount of time, AEM Forms Workspace session expires. To enable the feature, add an entry to Global Settings &lt;client_idleTimeout&gt;*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout&gt;. You can specify value 0 to disable the idle timeout. The amount of time is specified in seconds. 
+**Note**: *For the Demo application, the default display name is **Citizen**. For a custom application that you create, the default display name is **System Context Account**.*
+**client_idleTimeout:** When a user remains inactive for a specific amount of time, AEM Forms Workspace session expires. To enable the feature, add an entry to Global Settings &lt;client_idleTimeout&gt;*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout&gt;. You can specify value 0 to disable the idle timeout. The amount of time is specified in seconds. 

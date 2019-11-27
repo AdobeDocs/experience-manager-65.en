@@ -1,13 +1,9 @@
 ---
 title: Best Practices for Translating Assets Efficiently
-seo-title: Best Practices for Translating Assets Efficiently
 description: Best practices for efficient management of assets to synchronize various translated versions and to streamline translation workflows.
-seo-description: Best practices for efficient management of assets to synchronize various translated versions and to streamline translation workflows.
 uuid: ca0ff03a-62dc-4406-85d9-0c2f74af306d
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: 2480421b-87b1-42d0-ab5f-e81947ffcd65
 ---
 

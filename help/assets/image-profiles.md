@@ -1,6 +1,6 @@
 ---
-title: Dynamic Media image profiles
-seo-title: Dynamic Media image profiles
+title: Dynamic Media Image Profiles
+seo-title: Dynamic Media Image Profiles
 description: Create image profiles that contain settings for unsharp mask, and smart crop, or smart swatch, or both, then apply the profile to a folder of image assets.
 seo-description: Create image profiles that contain settings for unsharp mask, and smart crop, or smart swatch, or both, then apply the profile to a folder of image assets.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 ---
 
-# Dynamic Media image profiles {#image-profiles}
+# Dynamic Media Image Profiles {#image-profiles}
 
 When uploading images, you can automatically crop the image upon upload by applying an image profile to the folder.
 
@@ -62,13 +62,13 @@ You have two image cropping options to choose from and an option for automating 
 
 ## Unsharp Mask {#unsharp-mask}
 
-You use **Unsharp mask** to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that will be ignored. This effect uses the same options as Adobe Photoshop’s “Unsharp Mask” filter.
+You use **[!UICONTROL Unsharp mask]** to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that will be ignored. This effect uses the same options as Adobe Photoshop’s “Unsharp Mask” filter.
 
 >[!NOTE]
 >
 >Unsharp mask is only applied to downscaled renditions within the PTIFF (pyramid tiff) that are downsampled more than 50%. That means that the largest-sized renditions within the ptiff are not affected by unsharp mask whereas smaller-sized renditions such as thumbnails are altered (and will show the unsharp mask).
 
-In **Unsharp Mask**, you have the following filtering options:
+In **[!UICONTROL Unsharp Mask]**, you have the following filtering options:
 
 <table>
  <tbody>
@@ -93,11 +93,15 @@ In **Unsharp Mask**, you have the following filtering options:
 
 Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening_images.pdf.
 
-## Creating Dynamic Media image profiles {#creating-image-profiles}
+## Creating Dynamic Media Image Profiles {#creating-image-profiles}
 
 To define advanced processing parameters for other asset types, see [Configuring Asset Processing](config-dms7.md#configuring-asset-processing).
 
-**To create Dynamic Media image profiles**:
+See [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
+
+See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/best-practices-for-file-management.md).
+
+**To create Dynamic Media Image Profiles**
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. Tap **[!UICONTROL Create]** to add a new image profile.
@@ -111,7 +115,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 1. Tap **[!UICONTROL Save]**. The newly created profile appears in the list of available profiles.
 
-## Editing or deleting Dynamic Media image profiles {#editing-or-deleting-image-profiles}
+## Editing or deleting Dynamic Media Image Profiles {#editing-or-deleting-image-profiles}
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. Select the image profile you want to edit or remove. To edit it, select **[!UICONTROL Edit Image Processing Profile]**. To remove it, select **[!UICONTROL Delete Image Processing Profile]**.
@@ -128,15 +132,19 @@ If you assigned a different image profile to a folder, the new profile overrides
 
 Folders that have a profile assigned to it are indicated in the user interface by the name of the profile appearing in the card.
 
-When you add smart crop to an existing image profile, you need to re-trigger the [DAM Update Asset workflow](assets-workflow.md) if you want to generate crops for existing assets in your asset repository.
+<!-- When you add smart crop to an existing image profile, you need to re-trigger the [DAM Update Asset workflow](assets-workflow.md) if you want to generate crops for existing assets in your asset repository. -->
 
 You can apply image profiles to specific folders or globally to all assets.
+
+You can reprocess assets in a folder that already has an existing image profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
 
 ### Applying Dynamic Media image profiles to specific folders {#applying-image-profiles-to-specific-folders}
 
 You can apply an image profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. This section describes how to apply image profiles to folders both ways.
 
 Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+
+You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
 
 #### Applying Dynamic Media image profiles to folders from Profiles user interface {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
@@ -159,11 +167,13 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 In addition to applying a profile to a folder, you can also apply one globally so that any content uploaded into AEM assets in any folder has the selected profile applied.
 
+You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+
 **To apply an Dynamic Media image profile globally**:
 
 1. Do one of the following:
 
-    * Navigate to **https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam** and apply the appropriate profile and tap **Save**.
+    * Navigate to `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` and apply the appropriate profile and tap **[!UICONTROL Save]**.
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 

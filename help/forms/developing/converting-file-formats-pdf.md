@@ -793,17 +793,17 @@ You must order `window` and `windowList` elements as follows:
  <window caption="Unexpected Failure in DebugActiveProcess">
      <…>
  </window>
- 
+
  <!-- Caption length is 33 characters. -->
  <window caption="Adobe Acrobat - License Agreement">
      <…>
  </window>
- 
+
  <!-- Caption length is 33 characters. -->
  <window caption="Microsoft Visual.*Runtime Library">
      <…>
  </window>
- 
+
  <!-- The caption attribute in the following window element is 28 characters long. It is the shortest caption in this example, so its parent window element appears after the others. -->
  <window caption="Adobe Acrobat - Registration">
      <…>
@@ -875,7 +875,7 @@ In this example, the default configuration data supplied with the Generate PDF s
 
 ```as3
  <filetype-settings>
- 
+
  <!-- Some native app file types were omitted for brevity. -->
  <!-- The following GenericApp element specifies Notepad as the native application that should be used to process files that have a txt file name extension. -->
              <GenericApp

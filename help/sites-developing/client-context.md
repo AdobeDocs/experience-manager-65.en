@@ -17,7 +17,7 @@ docset: aem65
 
 >[!NOTE]
 >
->Client Context has been superseded by ContextHub in the touch UI. Please see the [related documentation](/help/sites-developing/contexthub.md) for details.
+>Client Context has been superseded by ContextHub. Please see the [related documentation](/help/sites-developing/contexthub.md) for details.
 
 The Client Context represents a dynamically assembled collection of user data. You can use the data to determine the content to show on a web page in a given situation (content targeting). The data is also available for web site analytics, and to any javascript on the page.
 

@@ -75,7 +75,7 @@ For static graphics, the basic requirement is to provide an equivalent text alte
 >
 >Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
-The **Alternative Text** field is available in the **Image **component dialog on the **Metadata** tab:
+The **Alternative Text** field is available in the **Image** component dialog on the **Metadata** tab:
 
 ![Edit dialog of the Image component in the touch-optimized UI; shows the Alt Text field.](assets/screen_shot_2018-03-21at165045.png)
 
@@ -102,10 +102,10 @@ Specific types of non-text content that require text alternatives might include:
 
 * Illustrative photos:
   These are images of people, objects or places. Think about the role of the photo in the page; an appropriate text equivalent is likely to be *Photo of [object]*, but may be dependent on the surrounding text.
-* Icons**:**
+* Icons:
   These are small pictograms (graphics) conveying specific information. They must be consistently used across a page and site. All instances of the icon on a page or site should have the same short and succinct text alternative, unless doing so results in unnecessary duplication of adjacent text.
 * Charts and graphs:
-  These typically represent numerical data. So one option for providing a text alternative might be to include a brief summary of the main trends shown in the chart or graphic. If necessary, also provide a more detailed description in text using the **Description** field in the** Advanced **image properties tab. Additionally, you could provide the source data in tabular form elsewhere in the page or site.
+  These typically represent numerical data. So one option for providing a text alternative might be to include a brief summary of the main trends shown in the chart or graphic. If necessary, also provide a more detailed description in text using the **Description** field in the **Advanced** image properties tab. Additionally, you could provide the source data in tabular form elsewhere in the page or site.
 
   ![Example of a graph. Below is the best approach to providing an alternative.](assets/chlimage_1.jpeg)
 
@@ -195,7 +195,7 @@ Inserting multimedia, specifically Flash content, into your AEM web pages is sim
 
 >[!NOTE]
 >
->When you use multimedia with informational content,** **you must also create links to alternatives. For example, to include a text transcript, create an HTML page to display the transcript and then add a link next to or underneath the audio content.
+>When you use multimedia with informational content, you must also create links to alternatives. For example, to include a text transcript, create an HTML page to display the transcript and then add a link next to or underneath the audio content.
 
 #### More Information - Audio-only and Video-only (Pre-recorded) (1.2.1) {#more-information-audio-only-and-video-only-pre-recorded}
 
@@ -255,7 +255,7 @@ There are two approaches that can be adopted to meet this success criterion. Eit
     * During pauses in the existing dialogue, provide information about changes in the scene that are not presented as part of the existing audio track;
     * Provide an new, additional and optional audio track containing the original soundtrack, but also including extra audio information about changes in the scene.
 
-        * This allows users to switch between the existing audio track (which *does not* contain an audio description) and the new audio track (which *does*** **contain an audio description).
+        * This allows users to switch between the existing audio track (which *does not* contain an audio description) and the new audio track (which *does* contain an audio description).
 
         * This prevents disruption to users who do not need the additional description.
 
@@ -365,11 +365,8 @@ You can make sure your web pages are given the appropriate structure by:
   >
   >RTE in a standard AEM installation is set up to use:
   >
-  >
-  >
   >    * &lt;b&gt; for &lt;strong&gt;
   >    * &lt;i&gt; for &lt;em&gt;
-  >
   >
   >They are effectively the same, but &lt;strong&gt; and &lt;em&gt; are preferable as they are semantically correct html. Your development team can configure the RTE to use &lt;strong&gt; and &lt;em&gt; (instead of &lt;b&gt; and &lt;i&gt;) when developing your project instance.
 
@@ -429,9 +426,9 @@ You can make sure your web pages are given the appropriate structure by:
 
   ![cac-03](assets/cac-03.png)
 
-* **Complex Data Tables:**
+* **Complex Data Tables**:
 
-  In some cases, where there are complex tables with two or more levels of headers, then the basic Table Properties may not be enough to provide all the structural information necessary. For these kinds of complex tables, direct relationships need to be created between the headers and their related cells using the **header **and **id **attributes. For example, in the table below headers and ids are matched to make a programmatic association for assistive technology users.
+  In some cases, where there are complex tables with two or more levels of headers, then the basic Table Properties may not be enough to provide all the structural information necessary. For these kinds of complex tables, direct relationships need to be created between the headers and their related cells using the **header** and **id** attributes. For example, in the table below headers and ids are matched to make a programmatic association for assistive technology users.
 
   >[!NOTE]
   >
@@ -593,7 +590,7 @@ People with certain visual impairments may be unable to distinguish between cert
 
 Make sure that the text contrasts sufficiently with its background. Contrast ratios depend on the size and style of the text in question:
 
-* For text less than 18-point (or 14-point bold) in size, the contrast ratio between text/images of text and the background should be at least** **4.5:1.
+* For text less than 18-point (or 14-point bold) in size, the contrast ratio between text/images of text and the background should be at least 4.5:1.
 * For text that is at least 18-point (or 14-point bold) in size, the contrast ratio should be at least 3:1.
 * If a background is patterned, then the background around any text should be shaded so that the 4.5:1 or 3:1 ratio is maintained.
 
@@ -773,7 +770,7 @@ John Smith’s publications
 >
 >The above snippet is an illustration, it is recommended to use the **Image** component.
 
-While it’s advisable to provide link text that identifies the purpose of the link without needing additional context, it is recognized that this is not always possible. Context free links can** **be used in the following cases, HTML examples of which can be found in [How to Meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs).
+While it’s advisable to provide link text that identifies the purpose of the link without needing additional context, it is recognized that this is not always possible. Context free links can be used in the following cases, HTML examples of which can be found in [How to Meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs).
 
 * Where the link text is part of a list of closely related links and when the list item enclosing the link provides enough context.
 * Where the purpose of a link can be clearly identified from the *preceding* (not the following) paragraph text.

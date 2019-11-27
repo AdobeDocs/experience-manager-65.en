@@ -1,25 +1,21 @@
 ---
 title: Managing Compound Assets
-seo-title: Managing Compound Assets
 description: Learn how to create references to AEM assets from within Indesign, Adobe Illustrator, and Photoshop files. Also learn how to use the Page Viewer feature to view individual pages of multi-page files, including PDF, INDD, PPT, PPTX, and Ai files.
-seo-description: Learn how to create references to AEM assets from within Indesign, Adobe Illustrator, and Photoshop files. Also learn how to use the Page Viewer feature to view individual pages of multi-page files, including PDF, INDD, PPT, PPTX, and Ai files.
 uuid: 254f7e1a-351d-4c66-9e4a-af6f1b08d9e2
-contentOwner: Guillaume Carlino
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: managing-assets
-content-type: reference
 discoiquuid: 853c680f-a05f-4e45-9fc4-98e4733b1985
 docset: aem65
 
 ---
 
-# Managing Compound Assets{#managing-compound-assets}
+# Managing Compound Assets {#managing-compound-assets}
 
 Adobe Experience Manager (AEM) Assets can identify if an uploaded file contains references to assets that already exist in the repository. This feature is available for supported file formats only. If the uploaded asset contains any references to AEM assets, a bidirectional link is created between the uploaded and referenced assets.
 
 Besides eliminating redundancy, referencing AEM assets in Adobe Creative Cloud applications enhances collaboration and increases the efficiency and productivity of users.
 
-AEM Assets supports **bidirectional referencing**.** **You can find referenced assets in the asset detail page of the uploaded file. In addition, you can view the referencing files for AEM assets in the asset details page of the referenced asset.
+AEM Assets supports **bidirectional referencing**. You can find referenced assets in the asset detail page of the uploaded file. In addition, you can view the referencing files for AEM assets in the asset details page of the referenced asset.
 
 References are resolved on the basis of path, document ID, and instance ID of the referenced assets.
 
@@ -27,7 +23,7 @@ References are resolved on the basis of path, document ID, and instance ID of th
 
 You can reference existing AEM assets from within an Adobe Illustrator file.
 
-1. Using [AEM Desktop App](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html), mount AEM Assets repository as a drive on your local machine. Within the mounted drive, navigate to the location of the asset that you want to reference.
+1. Using [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html), mount AEM Assets repository as a drive on your local machine. Within the mounted drive, navigate to the location of the asset that you want to reference.
 1. Drag the asset from the mounted drive to the Illustrator file.
 1. Save the Illustrator file to the mounted drive, or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the AEM repository.
 1. After the worflow completes, go to the asset details page for the asset. The references to existing AEM assets are listed under **Dependencies** in the **References** column.
@@ -63,7 +59,7 @@ This procedure is similar to [Adding AEM assets as references in Adobe Illustrat
    Adobe InDesign can export a document and the linked assets as a package. In this case, the exported folder contains a Links folder that contains sub-assets in the InDesign file.
 1. Create a ZIP file and upload it to the AEM repository.
 1. Start the Unarchiver workflow.
-1. When the workflow completes, the references in the Links folder are automatically referenced as subassets. To view a list of referred assets, navigate to the asset details page of the InDesign asset and close the [Rail](/help/sites-authoring/basic-handling.md#therail).
+1. When the workflow completes, the references in the Links folder are automatically referenced as subassets. To view a list of referred assets, navigate to the asset details page of the InDesign asset and close the [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
 ## Add AEM assets as references in Adobe Photoshop {#refps}
 
@@ -102,11 +98,11 @@ You can browse through individual pages of a file from the asset page. You can u
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. To annotate a page, click the **Annotate **icon from the toolbar and add a comment.
+1. To annotate a page, click the **Annotate** icon from the toolbar and add a comment.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
-1. To download the file, click the **Download **icon.
+1. To download the file, click the **Download** icon.
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -118,7 +114,6 @@ You can browse through individual pages of a file from the asset page. You can u
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. To view and edit the metadata properties of the page, click the **View Properties **icon from the toolbar.
+1. To view and edit the metadata properties of the page, click the **View Properties** icon from the toolbar.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
-

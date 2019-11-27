@@ -594,4 +594,3 @@ User Alice gets redirected to `coolpage.feature.html`, and sends that URL to a f
 If `coolpage.feature.html` is served from a front-end cache, AEM does not get a chance to analyze the request to find out that the mobile selector does not match the new User-Agent, and Bob gets the wrong representation.
 
 To solve it, you can include a simple selection UI on the pages, where end users can override the device group that was selected by AEM. In the above example, a link (or an icon) on the page allows the end user to switch to `coolpage.touch.html` if he thinks that his device is good enough for that.
-

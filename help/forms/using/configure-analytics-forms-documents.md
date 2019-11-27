@@ -45,7 +45,7 @@ Analytics data is stored in customer-specific repositories called report suites.
 Perform the following steps to create a report suite.
 
 1. Log in at [https://sc.omniture.com/login/](https://sc.omniture.com/login/ )
-1. In the Marketing Cloud, select **Admin** &gt;** Admin Console **&gt; **Report** **Suites**.
+1. In the Marketing Cloud, select **Admin** &gt; **Admin Console** &gt; **Report Suites**.
 1. Select **Create New** &gt; **Report Suite** in the Report Suite Manager.
 
    ![Create new Report Suite](assets/newreportsuite_new.png)
@@ -132,13 +132,13 @@ An Adobe Analytics framework is a set of mappings between Adobe Analytics variab
 
    Adobe Analytics configuration
 
-1. Type a **Title **and **Name **for the framework, select **Adobe Analytics** Framework, and click **Create**. The framework opens for editing.
+1. Type a **Title** and **Name** for the framework, select **Adobe Analytics** Framework, and click **Create**. The framework opens for editing.
 1. In the Report Suites section of the side pod, click **Add Item**, then use the drop-down to select the Report Suite ID (for example, JJEsquire) with which the framework will interact.
 1. Next to the Report Suite ID, select the server instances that you want to send information to the Report Suite.
 
    ![information_to_send_to_report_suite](assets/information_to_send_to_report_suite.png)
 
-1. Drag a **Form Analytics component** from the **other **category from SideKick onto the framework.
+1. Drag a **Form Analytics component** from the **other** category from SideKick onto the framework.
 1. To map Analytics variables with variables that are defined in the component, drag a variable from AEM Content Finder onto a field on the tracking component.
 
    ![Mapping AEM variables with Adobe Analytics variables](assets/analytics_new.png)

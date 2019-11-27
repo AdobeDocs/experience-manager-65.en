@@ -68,7 +68,7 @@ The blog feature is comprised of two main components that are available by addin
 |  [**clientllibs**](/help/communities/clientlibs.md) |cq.social.hbs.journal_sidebar |
 |  **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 |  **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| ** properties** |see [Blog Feature](/help/communities/blog-feature.md) |
+| **properties** |see [Blog Feature](/help/communities/blog-feature.md) |
 
 * [Client-side Customizations](/help/communities/client-customize.md)
 

@@ -3,12 +3,13 @@ title: Monitoring Server Resources Using the JMX Console
 seo-title: Monitoring Server Resources Using the JMX Console
 description: Learn how to monitor server resources using the JMX console.
 seo-description: Learn how to monitor server resources using the JMX console.
-uuid: b3cfcc0b-69db-415d-9244-ac22a7387247
+uuid: 0a28aafe-61b2-472b-8f8f-2cd6540cbfee
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 0798ae5c-e06e-425f-ba8a-9309eb233083
+discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
+docset: aem65
 ---
 
 # Monitoring Server Resources Using the JMX Console{#monitoring-server-resources-using-the-jmx-console}
@@ -766,12 +767,19 @@ Provides statistics about HTTP requests so that you can monitor the performance 
 * Arguments: none
 * Returned value: none
 
-## Package Manager {#package-manager}
+**id** The String representation of the package ID.
 
-Information about all packages that Package Manager contains.
+**installed** A boolean value that indicates whether the package is installed:
 
-* Domain: com.adobe.granite.packaging
-* Type: manager
+* `true`: Installed.
+* `false`: Not installed.
+
+**installedBy** The ID of the user who last installed the package.
+
+**installedDate** The date when the package was last installed.
+
+**size** A long value that holds the size of the package in bytes.
+
 
 ## Quickstart Launcher {#quickstart-launcher}
 

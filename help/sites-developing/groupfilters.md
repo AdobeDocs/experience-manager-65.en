@@ -64,9 +64,9 @@ public class myDeviceGroupFilter implements DeviceGroupFilter {
 
 You need to provide code for the following methods:
 
-* getDescription: Returns the filter description. The desciption appears in the Device Group configuration dialog.
-* getTitle: Returns the name of the filter. The name appears when selecting filters for the device group.
-* matches: Determines whether the device has the required capabilities.
+* `getDescription`: Returns the filter description. The desciption appears in the Device Group configuration dialog.
+* `getTitle`: Returns the name of the filter. The name appears when selecting filters for the device group.
+* `matches`: Determines whether the device has the required capabilities.
 
 ### Providing the Filter Name and Description {#providing-the-filter-name-and-description}
 
@@ -188,7 +188,7 @@ The DeviceGroup and DeviceGroupFilter interfaces are included in the Day Communi
 
 At the time of authoring, 5.5.2 is the version of the WCM Mobile API bundle that is in the latest release of AEM. Use Adobe Web Console ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) to ensure this is the bundle version that is deployed in your environment.
 
-**POM: **(Your POM will use a different groupId and version.)
+**POM:** (Your POM will use a different groupId and version.)
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"

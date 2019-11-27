@@ -92,7 +92,7 @@ Various Forms Portal components provide exclusive sets of OOTB metadata that you
 
 ### Search &amp; Lister component {#search-amp-lister-component}
 
-* **Title: **Title of the form
+* **Title:** Title of the form
 * **name**: Name of the form (mostly it is the same as the title)
 * **description**: Description of the form
 * **formUrl**: URL to render the form as HTML
@@ -116,7 +116,7 @@ Support for localization, sorting, and using configuration properties on the use
 
 ### Link component {#link-component}
 
-* **Title: **Title of the form
+* **Title:** Title of the form
 * **formUrl**: URL to render the form as HTML
 * **target**: Target attribute of the link. Valid values are “_blank” and “_self.”
 * **linkText**: Link caption
@@ -139,7 +139,7 @@ Support for localization, sorting, and using configuration properties on the use
 
 *Note:*
 
-1. For the delete option in the Drafts section under the Drafts & Submissions component, name the CSS class "__FP_deleteDraft." In addition, include the attribute "draftID" with the value **${draftID}**, which is** **the draft id of corresponding draft.
+1. For the delete option in the Drafts section under the Drafts & Submissions component, name the CSS class "__FP_deleteDraft." In addition, include the attribute "draftID" with the value **${draftID}**, which is the draft id of corresponding draft.
 
 1. While creating links to open drafts and submissions, you can specify **${path}.html **as the value of the **href** attribute for the anchor tag.
 
@@ -161,6 +161,6 @@ Support for localization, sorting, and using configuration properties on the use
 
 1. Do not use single quote (') in any custom template.
 1. For custom metadata, store this property on the **jcr:content/metadata** node only. If you store it at any other place, Forms Portal can't display the metadata.
-1. Ensure that the name of any custom metadata or existing metadata does not include a colon (:). If it does, you cannot display it on the user interface.
+1. Ensure that the name of any custom metadata or existing metadata does not include a colon ( : ). If it does, you cannot display it on the user interface.
 1. **data-repeatable **does not have any significance for a **Link **component. Adobe recommends that you avoid using this property in the template for a Link component.
 

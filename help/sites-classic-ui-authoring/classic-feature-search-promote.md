@@ -88,13 +88,13 @@ You can configure the following component properties in Edit mode to control run
 
 ### Enabling the filtering of results by facets {#enabling-the-filtering-of-results-by-facets}
 
-You can enable users to filter search results by facets. The **Checkbox List Facet, Dropdown Facet,** and **Link List Facet **components enable users to select one or more facets for filtering. When using these components, you should also include the **Breadcrumbs** component. Breadcrumbs indicate the current filters that are used.
+You can enable users to filter search results by facets. The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** components enable users to select one or more facets for filtering. When using these components, you should also include the **Breadcrumbs** component. Breadcrumbs indicate the current filters that are used.
 
-The **Checkbox List Facet, Dropdown Facet,** and** Link List Facet** components each have the following properties that you configure in **Edit** mode:
+The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** components each have the following properties that you configure in **Edit** mode:
 
 * **Facet Name**: The name of the facet that is used for filters.
 
-The **Checkbox List Facet** component displays a list of facets with an accompanying checkbox. Use a **Checkbox List Facet** so that users can view a subset of results that include items from multiple facets. For example, the** **Brand facet is appropriate because several brands supply the same type of product.
+The **Checkbox List Facet** component displays a list of facets with an accompanying checkbox. Use a **Checkbox List Facet** so that users can view a subset of results that include items from multiple facets. For example, the **Brand** facet is appropriate because several brands supply the same type of product.
 
 A check box appears for each facet that is associated with a search result. When a user selects a check box, the page reloads with an updated result set. All checkboxes remain on the page so that customers can add or remove facets to the filter at any time:
 
@@ -145,4 +145,3 @@ The Banners component provides one configurable property named Banner Area. In E
 This diagram shows the components that are added to a page to create the fully-functional Search&Promote results page below.
 
 ![1328213789109](assets/1328213789109.png) ![sandppageexample](assets/sandppageexample.png)
-

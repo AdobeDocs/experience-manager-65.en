@@ -3,12 +3,13 @@ title: Configuring Live Copy Synchronization
 seo-title: Configuring Live Copy Synchronization
 description: Learn about configuring Live Copy Synchronization.
 seo-description: Learn about configuring Live Copy Synchronization.
-uuid: a14fab89-fd1c-4fec-a9e0-9f6511f764a6
+uuid: a5db0bee-a761-4cff-81dc-31b374525f47
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
-discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
+discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
+docset: aem65
 ---
 
 # Configuring Live Copy Synchronization{#configuring-live-copy-synchronization}
@@ -302,7 +303,7 @@ The following table describes the properties that you can configure:
 
 >[!NOTE]
 >
->In the touch-enabled UI see also [Configuring MSM Locks on Page Properties)](/help/sites-developing/extending-msm.md).
+>In the touch-optimized UI see also [Configuring MSM Locks on Page Properties(Touch-Optimized UI)](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-pagep-roperties-touch-optimized-ui).
 
 #### CQ MSM Content Update Action - Exclusions {#cq-msm-content-update-action-exclusions}
 
@@ -310,7 +311,7 @@ Several properties and node types are excluded by default, these are defined in 
 
 By default properties matching the following regular expressions are excluded (i.e. not updated) on rollout:
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![chlimage_1](assets/chlimage_1.png)
 
 You can change the expressions defining the exclusion list as required.
 
@@ -373,13 +374,12 @@ Configure a live copy page with the rollout configurations to use when the sourc
 You can also configure the rollout configurations for a live copy page when you [create the live copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page).
 
 1. Use the **Sites** console to select the live copy page.
-
 1. Select **Properties** from the toolbar.
 1. Open the **Live Copy** tab.
 
    The **Configuration** section shows the rollout configurations that the page inherits.
 
-   ![chlimage_1-19](assets/chlimage_1-19.png)
+   ![chlimage_1-1](assets/chlimage_1-1.png)
 
 1. If required, adjust the **Live Copy Inheritance** flag. If checked the live copy configuration is effective on all children.
 
@@ -387,7 +387,7 @@ You can also configure the rollout configurations for a live copy page when you 
 
    The selected rollout configurations appear below the drop-down list.
 
-   ![chlimage_1-20](assets/chlimage_1-20.png)
+   ![chlimage_1-2](assets/chlimage_1-2.png)
 
 1. Click or tap **Save**.
 

@@ -77,7 +77,7 @@ The structure of prefill XML and the submitted XML for XFA-based adaptive forms 
 
 * **Prefill XML Structure**: The prefill XML for XFA-based adaptive form must be compliant with the data schema of the XFA form template. To prefill unbound fields, wrap the prefill XML structure into `/afData/afBoundData` tag.
 
-* **Submitted XML Structure**: When no prefill XML is used, the submitted XML contains data for both bound and unbound fields in `afData`** **wrapper tag. If a prefill XML is used, the submitted XML has the same structure as the prefill XML. If the prefill XML starts with the `afData` root tag, the output XML also has the same format. If the prefill XML does not have `afData/afBoundData`wrapper and instead starts directly from the schema root tag like `employeeData`, the submitted XML also starts with the `employeeData` tag.
+* **Submitted XML Structure**: When no prefill XML is used, the submitted XML contains data for both bound and unbound fields in `afData` wrapper tag. If a prefill XML is used, the submitted XML has the same structure as the prefill XML. If the prefill XML starts with the `afData` root tag, the output XML also has the same format. If the prefill XML does not have `afData/afBoundData`wrapper and instead starts directly from the schema root tag like `employeeData`, the submitted XML also starts with the `employeeData` tag.
 
 Prefill-Submit-Data-ContentPackage.zip
 
@@ -89,7 +89,7 @@ Sample containing prefill data and submitted data
 The structure of prefill XML and submitted XML for adaptive forms based on XML schema is as follows:
 
 * **Prefill XML structure**: The prefill XML must be compliant to associated XML Schema. To prefill unbound fields, wrap the prefill XML structure into /afData/afBoundData tag.
-* **Submitted XML structure**: if no prefill XML is used, the submitted XML contains data for both bound and unbound fields in `afData`** **wrapper tag. If the prefill XML is used, the submitted XML has the same structure as the prefill XML. If the prefill XML starts with the `afData` root tag, the output XML has the same format. If the prefill XML does not have `afData/afBoundData` wrapper and instead start directly from the schema root tag like `employeeData`, the submitted XML also starts with the `employeeData` tag.
+* **Submitted XML structure**: if no prefill XML is used, the submitted XML contains data for both bound and unbound fields in `afData` wrapper tag. If the prefill XML is used, the submitted XML has the same structure as the prefill XML. If the prefill XML starts with the `afData` root tag, the output XML has the same format. If the prefill XML does not have `afData/afBoundData` wrapper and instead start directly from the schema root tag like `employeeData`, the submitted XML also starts with the `employeeData` tag.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -144,7 +144,7 @@ For fields whose model is XML schema, the data is prefilled in the `afBoundData`
 For adaptive forms based on JSON schema, the structure of prefill JSON and submitted JSON is described below. For more information, see [Creating adaptive forms using JSON schema](../../forms/using/adaptive-form-json-schema-form-model.md).
 
 * **Prefill JSON structure**: The prefill JSON must be compliant with the associated JSON Schema. Optionally, it can be wrapped into the /afData/afBoundData Object if you want to prefill unbound fields as well.
-* **Submitted JSON structure**: if no prefill JSON is used, the submitted JSON contains data for both bound and unbound fields in afData** **wrapper tag. If the prefill JSON is used, the submitted JSON has the same structure as the prefill JSON. If the prefill JSON starts with the afData root object, the output JSON has the same format. If the prefill JSON does not have afData/afBoundData wrapper and instead starts directly from the schema root object such as user, the submitted JSON also starts with the user object.
+* **Submitted JSON structure**: if no prefill JSON is used, the submitted JSON contains data for both bound and unbound fields in afData wrapper tag. If the prefill JSON is used, the submitted JSON has the same structure as the prefill JSON. If the prefill JSON starts with the afData root object, the output JSON has the same format. If the prefill JSON does not have afData/afBoundData wrapper and instead starts directly from the schema root object such as user, the submitted JSON also starts with the user object.
 
 ```
 {
@@ -305,7 +305,7 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 
 ### Setting data attribute in slingRequest {#setting-data-attribute-in-slingrequest}
 
-You can also set the `data`** **attribute in `slingRequest`, where the `data` attribute is a string containing XML or JSON, as shown in the sample code below (Example is for XML):
+You can also set the `data` attribute in `slingRequest`, where the `data` attribute is a string containing XML or JSON, as shown in the sample code below (Example is for XML):
 
 ```java
 <%

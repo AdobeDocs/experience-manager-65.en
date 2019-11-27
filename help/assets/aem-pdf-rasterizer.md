@@ -1,19 +1,15 @@
 ---
 title: Using PDF Rasterizer
-seo-title: Using PDF Rasterizer
 description: This article describes how to generate high-quality thumbnails and renditions using the Adobe PDF Rasterizer library.
-seo-description: Learn how to generate high-quality thumbnails and renditions using the Adobe PDF Rasterizer library.
 uuid: 583e8cb6-92c0-4818-a130-dbbb9a3cdca4
-contentOwner: Chiradeep Majumdar
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: 52d6c489-aa19-4e27-a429-1acae1af4825
 docset: aem65
 
 ---
 
-# Using PDF Rasterizer{#using-pdf-rasterizer}
+# Using PDF Rasterizer {#using-pdf-rasterizer}
 
 Sometimes, when you upload large, content-intensive PDF or AI files to Adobe Experience Manager (AEM) Assets, the default library may not generate an accurate output. In such cases, Adobe's PDF Rasterizer library can generate more reliable and accurate output compared to the output from a default library.
 

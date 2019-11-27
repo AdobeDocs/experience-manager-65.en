@@ -99,7 +99,7 @@ Follow the steps below to enable Kiosk mode:
 
 1. Enable Shell Launcher.
 
-   Refer to section ***Configure Shell Launcher*** in ** [Shell Launcher](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/shell-launcher)** page by Microsoft Windows support for additional information.
+   Refer to section ***Configure Shell Launcher*** in **[Shell Launcher](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/shell-launcher)** page by Microsoft Windows support for additional information.
 
 1. Create a non-administrative user (if you already do not have one) to be used for Kiosk. This can be a local or domain user.
 1. Install the windows player for that Kiosk user from [AEM Screens Player Downloads](https://download.macromedia.com/screens/) page.

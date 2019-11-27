@@ -249,14 +249,10 @@ There are various help resources available:
   >
   >You can access an overview of shortcut keys available at any time using the hotkey `?` (question mark) when in a console.
   >
-  >
   >For an overview of all keyboard shortcuts see the following documentation:
-  >
-  >
   >
   >    * [Keyboard shortcuts for editing pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
   >    * [Keyboard shortcuts for consoles](/help/sites-authoring/keyboard-shortcuts.md)
-  >
   >
 
 ## Actions Toolbar {#actions-toolbar}
@@ -271,7 +267,7 @@ The action available in the toolbar change to reflect the actions you can take o
 
 How you [select a resource](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) depends on the view.
 
-Due to the space restrictions in some windows, the toolbar can quickly become longer than the space available. When this happens** **additional options appears. Clicking or tapping on the ellipsis (the three dots or** ...**) opens a drop down selector holding all remaining actions. For example, after selecting a page in the **Sites** console:
+Due to the space restrictions in some windows, the toolbar can quickly become longer than the space available. When this happens additional options appears. Clicking or tapping on the ellipsis (the three dots or **...**) opens a drop down selector holding all remaining actions. For example, after selecting a page in the **Sites** console:
 
 ![bh-12](assets/bh-12.png)
 
@@ -463,7 +459,7 @@ Selecting a resource in the leftmost column will display the child resources in 
         * Click or tap the checkbox to select all.
         * Click or tap the checkbox again to deselect all.
 
-* Select the columns to be shown using **View Settings **option located under the Views button. The following columns are available for display:
+* Select the columns to be shown using **View Settings** option located under the Views button. The following columns are available for display:
 
     * **Name** - Page name, which can be useful in a multilingual authoring environment since it is part of the page's URL and does not change regardless of language
     * **Modified** - Last modified date and last modified by user

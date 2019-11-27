@@ -1,13 +1,9 @@
 ---
 title: Assets Monitoring Best Practices
-seo-title: Assets Monitoring Best Practices
 description: Best practices for monitoring the environment and performance of your AEM instance after it is deployed.
-seo-description: Best practices for monitoring the environment and performance of your AEM instance after it is deployed.
 uuid: a7d63b42-c0b2-47a0-9bd4-df85dfe59313
-contentOwner: Chiradeep Majumdar
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: fb1dd06d-3470-45cd-b3ba-6b4e9a2e1f3c
 docset: aem65
 
@@ -92,17 +88,19 @@ Here are some baseline parameters that you can monitor for JVM:
 Memory
 
 * `MBean: lava.lang:type=Memory`
-* URL: */system/console/jmx/java.lang:type=Memory*
+* URL: `/system/console/jmx/java.lang:type=Memory`
 * Instances: All servers
 * Alarm threshold: When the heap or non-heap memory utilization exceeds 75% of the corresponding maximum memory.
 * Alarm definition: Either system memory is insufficient, or there is a memory leak in the code. Analyze a thread dump to arrive at a definition.
 
-**Note**: Information provided by this bean is expressed in bytes.
+>[!Note]
+>
+>The information provided by this bean is expressed in bytes.
 
 Threads
 
 * MBean: `java.lang:type=Threading`
-* URL: */system/console/jmx/java.lang:type=Threading*
+* URL: `/system/console/jmx/java.lang:type=Threading`
 * Instances: All servers
 * Alarm threshold: When the number of threads is greater than 150% of the baseline.
 * Alarm definition: Either there is an active runaway process, or an inefficient operation consumes a large amount of resources. Analyze a thread dump to arrive at a definition.
@@ -116,13 +114,15 @@ Here are some baseline parameters that you can monitor for AEM:
 Replication agents
 
 * MBean: `com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>”`
-* URL: */system/console/jmx/com.adobe.granite.replication:type=agent,id=”&lt;AGENT_NAME&gt;”*
+* URL: `/system/console/jmx/com.adobe.granite.replication:type=agent,id=”&lt;AGENT_NAME&gt;"`
 * Instances: One Author and all publish instances (for flush agents)
-* Alarm threshold: When the value of `QueueBlocked` is true or the value of `QueueNumEntries` is greater than 150% of the baseline.
+* Alarm threshold: When the value of `QueueBlocked` is `true` or the value of `QueueNumEntries` is greater than 150% of the baseline.
 
 * Alarm definition: Presence of a blocked queue in the system indicating that the replication target is down or unreachable. Often, network or infrastructure issues cause excessive entries to be queued, which can adversely impact system performance.
 
-**Note**: For the MBean and URL parameters, replace `<AGENT_NAME>` with the name of the replication agent you want to monitor.
+>[!Note]
+>
+>For the MBean and URL parameters, replace `<AGENT_NAME>` with the name of the replication agent you want to monitor.
 
 Session counter
 

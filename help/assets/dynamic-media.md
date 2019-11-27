@@ -25,7 +25,7 @@ Dynamic media serves interactive viewing experiences, including zoom, 360-degree
 
 Dynamic Media lets you manage your assets before publishing them. How to work with assets in general is covered in detail in [Working with Digital Assets](managing-assets-touch-ui.md). General topics include uploading, downloading, editing, and publishing assets; viewing and editing properties, and searching for assets.
 
-Dynamic-Media-only features include the following:
+Dynamic Media-only features include the following:
 
 * [Carousel Banners](carousel-banners.md)
 * [Image Sets](image-sets.md)

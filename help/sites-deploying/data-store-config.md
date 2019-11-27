@@ -208,7 +208,7 @@ If you need to upgrade to a new version of the 1.8.x S3 connector (for example, 
 You can use the configuration file with the following options:
 
 * accessKey: The AWS access key.
-* secretKey: The AWS secret access key. **Note: **Alternatively, [IAM roles](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) can be used for authentication. If you are using IAM roles you no longer need to specify the `accessKey` and `secretKey`.
+* secretKey: The AWS secret access key. **Note:** Alternatively, [IAM roles](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) can be used for authentication. If you are using IAM roles you no longer need to specify the `accessKey` and `secretKey`.
 
 * s3Bucket: The bucket name.
 * s3Region: The bucket region.

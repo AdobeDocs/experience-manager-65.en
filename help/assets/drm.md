@@ -1,15 +1,10 @@
 ---
 title: Digital Rights Management in Assets
-seo-title: Digital Rights Management in Assets
 description: Learn how to manage asset expiration states and information for licensed assets in AEM.
-seo-description: Learn how to manage asset expiration states and information for licensed assets in AEM.
 uuid: 3df3a25d-551b-46ad-9398-883736d530ec
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: 63dd7d4a-c97e-4949-a4d1-3861e1248ff3
-legacypath: /content/docs/en/aem/6-2/author/assets/managing-assets-touch-ui/drm
 ---
 
 # Digital Rights Management in Assets {#digital-rights-management-in-assets}
@@ -61,9 +56,7 @@ You can also view the expiration status of assets in the **[!UICONTROL Reference
 
 You can search for expired assets, including expired subassets in the Search panel.
 
-1. In the Assets console, click the **Search** icon in the toolbar to display the Omni Search box.
-
-   ![chlimage_1-149](assets/chlimage_1-149.png)
+1. In the Assets console, click the Search icon in the toolbar to display the Omni Search box.
 
 1. With the cursor in the Omni Search box, hit the Return key to display the Search Results page.
 

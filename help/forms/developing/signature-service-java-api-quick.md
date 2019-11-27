@@ -899,7 +899,7 @@ The following Java code example certifies a PDF document that is based on a PDF 
 
 ## Quick Start (SOAP mode): Verifying a digital signature using the Java API {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
 
-The following Java code example verifies a digital signature that is located in a signed PDF document that is based on a PDF file named LoanSigned.pdf. The verification time is set to current time and the revocation checking option is set to best effort. (See [Verifying Digital Signatures](#unresolvedlink-lc-si).)
+The following Java code example verifies a digital signature that is located in a signed PDF document that is based on a PDF file named LoanSigned.pdf. The verification time is set to current time and the revocation checking option is set to best effort. (See [Verifying Digital Signatures](#verifying-digital-signatures).)
 
 ```as3
  /*
@@ -1063,7 +1063,7 @@ The following Java code example verifies a digital signature that is located in 
 
 ## Quick Start (SOAP mode): Verifying multiple digital signatures using the Java API {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
 
-The following Java code example verifies multiple digital signatures that are located in a signed PDF document that is based on a PDF file named LoanAllSigs.pdf. The verification time is set to current time and the revocation checking option is set to best effort. (See [Verifying Multiple Digital Signatures](#unresolvedlink-lc-si).)
+The following Java code example verifies multiple digital signatures that are located in a signed PDF document that is based on a PDF file named LoanAllSigs.pdf. The verification time is set to current time and the revocation checking option is set to best effort. (See [Verifying Multiple Digital Signatures](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
 
 ```as3
  /*

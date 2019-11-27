@@ -1,6 +1,7 @@
 ---
 title: Smart Content Service Training Guidelines
 description: Train the AI service to apply smart tags to assets
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd

@@ -77,4 +77,3 @@ In Design mode, you can also configure attributes for the individual components.
 1. The Sidekick minimizes in Design mode. By clicking on the arrow you can maximize the Sidekick and return to Edit Mode:
 
    ![](do-not-localize/sidekick-collapsed-1.png)
-

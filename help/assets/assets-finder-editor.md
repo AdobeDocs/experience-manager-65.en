@@ -1,19 +1,15 @@
 ---
 title: Creating and Configuring Asset Editor pages
-seo-title: Creating and Configuring Asset Share and Asset Editor pages
 description: Learn how to create custom Asset Editor pages and edit multiple assets simultaneously.
-seo-description: Learn how to create custom Asset Editor pages and edit multiple assets simultaneously.
 uuid: 3bc650de-2392-4df9-a13c-04ce7a537d25
-contentOwner: Chiradeep Majumdar
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: 264b1473-30f3-4cea-a9b0-89184063e15d
 docset: aem65
 
 ---
 
-# Creating and Configuring Asset Editor pages{#creating-and-configuring-asset-editor-pages}
+# Creating and Configuring Asset Editor pages {#creating-and-configuring-asset-editor-pages}
 
 This document describes the following:
 
@@ -58,7 +54,7 @@ To create an new Asset Share page in the **Websites** console:
 
 1. In the **Websites** tab, navigate to the place where you want to create an asset share page and click **New**.
 
-1. Select the** Asset Share** page and click **Create**. The new page is created and the asset share page is listed in the **Websites** tab.
+1. Select the **Asset Share** page and click **Create**. The new page is created and the asset share page is listed in the **Websites** tab.
 
 ![dam8](assets/dam8.png)
 
@@ -200,7 +196,7 @@ To add predicates:
 
 The following predicates are available:
 
-| **Predicate** |**Description ** |
+| **Predicate** |**Description** |
 |---|---|
 | **Date Predicate** |Lets users search for assets that were modified before and after certain dates. |
 | **Options Predicate** |The site owner can specify a property to search for (as in the property predicate, for example cq:tags) and a content tree to populate the options from (for example the tag tree). Doing so generates a list of options where the users can select the values (tags) that the selected property (tag property) should have. This predicate lets you build list controls like the list of tags, file types, image orientations, and so on. It is great for a fixed set of options. |
@@ -276,17 +272,17 @@ To add asset editor components:
 
 | **Component** |**Description** |
 |---|---|
-| **Metadata Form and Text Field** |Lets you add additional metadata to an asset and perform an action, such as submitting, on that asset. |
-| **Sub Assets** |Lets you customize sub-assets. |
-| **Tags** |Lets users select and add tags to an asset. |
-| **Thumbnail** |Shows a thumbnail of the asset, its filename, and lets you add an alternate text. You can add asset editor actions here as well. |
-| **Title** |Displays the asset title, which can be customized. |
+| Metadata Form and Text Field |Lets you add additional metadata to an asset and perform an action, such as submitting, on that asset. |
+| Sub Assets |Lets you customize sub-assets. |
+| Tags |Lets users select and add tags to an asset. |
+| Thumbnail |Shows a thumbnail of the asset, its filename, and lets you add an alternate text. You can add asset editor actions here as well. |
+| Title |Displays the asset title, which can be customized. |
 
 ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
 
 #### Metadata Form and Text Field - Configuring the View Metadata Component {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-The Metadata Form is a form that includes a start and end action. In between, you enter **Text** fields. See [Forms](/help/sites-authoring/default-components.md#form) for more information on working with forms.
+The Metadata Form is a form that includes a start and end action. In between, you enter **Text** fields. See [Forms](/help/sites-authoring/default-components-foundation.md#form-component) for more information on working with forms.
 
 1. Create a start action by clicking **Edit** in the Start area of the form. You can enter a Box title, if desired. By default, the Box title is **Metadata**. Select the Client Validation check box if you want the java-script client code for validation generated.
 
@@ -298,7 +294,7 @@ The Metadata Form is a form that includes a start and end action. In between, yo
 
 1. In between the **Form Start** and the **Form End**, drag Metadata Text Fields to the form. Users populate metadata into these text fields, which they can submit or complete another action on.
 
-1. Double-click the field name, for example, **Title** to open the metadata field and make changes. In the **General** tab of the** Edit Component** window, you define the namespace and the field label as well as type, for example, **dc:title**.
+1. Double-click the field name, for example, **Title** to open the metadata field and make changes. In the **General** tab of the **Edit Component** window, you define the namespace and the field label as well as type, for example, `dc:title`.
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
@@ -342,7 +338,7 @@ The Tags component is a component where users can assign existing tags to an ass
 
 ![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
-Double-click the Tags component to open the tags dialog where you can change the title from Tags, if desired, and where you can select the allocated namespaces. To make this field editable, clear the **Hide Edit** **button** check box. By default, tags are editable.
+Double-click the Tags component to open the tags dialog where you can change the title from Tags, if desired, and where you can select the allocated namespaces. To make this field editable, clear the **[!UICONTROL Hide Edit]** check box. By default, tags are editable.
 
 ![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 

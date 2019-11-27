@@ -49,8 +49,6 @@ Documents can be added to the Download component and images can be added to the 
 
 ### Users and groups involved {#users-and-groups-involved}
 
-usersgroups
-
 The various roles that are involved to configure and use the capability and their corresponding user groups are described below. Local scope is used for the use case where a web page is created by an author. Remote scope is used for the DAM deployment hosting the required assets. The Sites author fetches these remote assets.
 
 <table>
@@ -120,7 +118,7 @@ To configure Connected Assets and local Sites connectivity, follow these steps.
 
     1. After a few minutes, the AEM server starts successfully. Consider this AEM Sites deployment as the local machine for web page authoring, say at `https://[local_sites]:4502`.
 
-1. Ensure that the users and roles with local scope exist on the AEM Sites deployment and on the AEM Assets deployment on AMS. Create a technical user on Assets deployment and add to the user group mentioned in [users and groups involved](/help/assets/use-assets-across-connected-assets-instances.md#usersgroups).
+1. Ensure that the users and roles with local scope exist on the AEM Sites deployment and on the AEM Assets deployment on AMS. Create a technical user on Assets deployment and add to the user group mentioned in [users and groups involved](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved).
 
 1. Access the local AEM Sites deployment at `https://[local_sites]:4502`. Click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Connected Assets Configuration]** and provide the following values:
 
@@ -132,10 +130,9 @@ To configure Connected Assets and local Sites connectivity, follow these steps.
     1. Select **[!UICONTROL Datastore Shared with Connected Assets]**, if you use a datastore to store your assets and the Datastore is the common storage between both AEM deployments. In this case, the threshold limit does not matter as actual asset binaries reside on the datastore and are not transfered.
 
    ![A typical configuration for Connected Assets](assets/connected-assets-typical-config.png)
+   *Figure: A typical configuration for Connected Assets*
 
-   A typical configuration for Connected Assets
-
-1. As the assets are already processed and the renditions are fetched, disable the workflow launchers. Adjust the launcher configurations on the local (AEM Sites) deployment to exclude the **[!UICONTROL connectedassets]** folder, in which the remote assets are fetched.
+1. As the assets are already processed and the renditions are fetched, disable the workflow launchers. Adjust the launcher configurations on the local (AEM Sites) deployment to exclude the `connectedassets` folder, in which the remote assets are fetched.
 
     1. On AEM Sites deployment, click **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]**.
 
@@ -153,7 +150,7 @@ To configure Connected Assets and local Sites connectivity, follow these steps.
 
    >[!NOTE]
    >
-   >All renditions available on the remote AEM deployment are fetched, when authors fetch an asset. If you want to create more renditions of a fetched asset, skip this configuration step. The DAM Update Asset workflow gets triggered and creates more renditions. These renditions are available only on the local Sites deployment and not on the remote DAM deployment.
+   >All renditions that are available on the remote AEM deployment are fetched, when authors fetch an asset. If you want to create more renditions of a fetched asset, skip this configuration step. The DAM Update Asset workflow gets triggered and creates more renditions. These renditions are available only on the local Sites deployment and not on the remote DAM deployment.
 
 1. Add the AEM Sites instance as one of the **[!UICONTROL Allowed Origins]** on the remote AEM Assets' CORS configuration.
 
@@ -175,9 +172,9 @@ The tags applied on the remote assets are also fetched from Connected Assets and
 
 Use the above setup to try the authoring experience to understand how the functionality works. Use documents or images of your choice on the remote DAM deployment.
 
-1. Navigate to the Assets UI on the remote deployment by accessing **[!UICONTROL Assets]** > **[!UICONTROL Files]** from AEM workspace. Alternatively, access `https://[*assets_servername_ams*]:[*port*]/assets.html/content/dam` in a browser. Upload the assets of your choice.
+1. Navigate to the Assets UI on the remote deployment by accessing **[!UICONTROL Assets]** > **[!UICONTROL Files]** from AEM workspace. Alternatively, access `https://[assets_servername_ams]:[port]/assets.html/content/dam` in a browser. Upload the assets of your choice.
 1. On the Sites instance, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Provide `ksaner` as user name, select the option provided, and click **[!UICONTROL OK]**.
-1. Open a We.Retail website page at **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Edit the page. Alternatively, access `https://[*server*]:[port]/editor.html/content/we-retail/us/en/men.html` in a browser to edit a page.
+1. Open a We.Retail website page at **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Edit the page. Alternatively, access `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` in a browser to edit a page.
 
    Click **[!UICONTROL Toggle Side Panel]** on upper left.
 
@@ -188,14 +185,12 @@ Use the above setup to try the authoring experience to understand how the functi
    The fetched assets are read-only on the local AEM Sites deployment. You can still use the options provided by your AEM Sites components to edit the fetched asset. The editing by components is non-destructive.
 
    ![Options to filter document types and images when searching assets on remote DAM](assets/filetypes_filter_connected_assets.png)
-
-   Options to filter document types and images when searching assets on remote DAM
+   *Figure: Options to filter document types and images when searching assets on remote DAM*
 
 1. A site author is notified if an asset is fetched asynchronously and if any fetch task fails. While authoring or even after authoring, the authors can see detailed information about fetch tasks and errors in the [async jobs](/help/assets/asynchronous-jobs.md) user interface.
 
    ![Notification about asynchronous fetching of assets that happens in the background.](assets/assets_async_transfer_fails.png)
-
-   Notification about asynchronous fetching of assets that happens in the background.
+   *Figure: Notification about asynchronous fetching of assets that happens in the background.*
 
 1. When publishing a page, AEM displays a complete list of assets that are used in the page. Ensure that the remote assets are fetched successfully at the time of publishing. To check the status of each fetched asset, see [async jobs](/help/assets/asynchronous-jobs.md) user interface.
 
@@ -243,4 +238,3 @@ Follow these steps to troubleshoot for the common error scenarios:
 
 * If you cannot search for remote assets from the Content Finder, re-check and ensure that the required roles and permissions are in place.
 * An asset fetched from remote dam may not be published on a web page for the following reasons: it doesn't exist on remote; lack of appropriate permissions to fetch it; network failure. Ensure that the asset is not removed from the remote DAM or permissions aren't changed; ensure that appropriate prerequisities are met; retry adding the asset to the page and republish. Check the [list of asynchronous jobs](/help/assets/asynchronous-jobs.md) for errors in asset fetching.
-

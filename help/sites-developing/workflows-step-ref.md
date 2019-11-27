@@ -130,7 +130,7 @@ To configure the step, edit and use the following tabs:
     * **Target step**: Select the step to execute after evaluating the condition for the routing expression.
     * **Routing Expression**: Select Rule Definition, External Script, or an ECMA script that determines whether to execute the **Target Step**.
 
-        * **Rule Definition: **Use the [expression editor](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) to define the rule**.**
+        * **Rule Definition:** Use the [expression editor](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) to define the rule.
         * **External Script:** The path of the external script.
         * **ECMA Script**: The script that determines whether to execute the **Goto Step**.
 
@@ -181,7 +181,7 @@ The **Set Variable** step executes repeatedly incrementing the value of **count*
 
 ## OR Split {#or-split}
 
-The **OR Split **creates a split in the workflow, after which only one branch will be active. This step enables you to introduce conditional processing paths into your workflow. You add workflow steps to each branch as required.
+The **OR Split** creates a split in the workflow, after which only one branch will be active. This step enables you to introduce conditional processing paths into your workflow. You add workflow steps to each branch as required.
 
 >[!NOTE]
 >
@@ -371,7 +371,7 @@ You can store widget data in the workflow payload or in the work item metadata. 
 
 ### Dynamic Participant Step {#dynamic-participant-step}
 
-The **Dynamic Participant Step** component is similar to ** [Participant Step](#participant-step)** with the difference that the participant is selected automatically at run time.
+The **Dynamic Participant Step** component is similar to **[Participant Step](#participant-step)** with the difference that the participant is selected automatically at run time.
 
 To configure the step, you select a **Participant Chooser** that identifies the participant to assign the work item to, together with a dialog.
 
@@ -609,4 +609,3 @@ To configure the step, edit and use the following tabs:
 
     * **Specify Value:** Specify a value to map to the variable. The value that you specify in this field depends on the mapping mode.
     * **Add Mapping:** Use this option to add more mappings to set a value for the variable.
-

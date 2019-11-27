@@ -17,21 +17,21 @@ docset: aem65
 
 Carousel banners enable marketers to drive conversion by easily creating interactive rotating promotional content and delivering it to any screen.
 
-Creating and modifying content featured in promotional banners can be time-consuming, limiting your ability to quickly publish new content or make it more targeted. Carousel Banners enable you to quickly create or modify rotating banners, add interactivity such as hotspots linking to product detail or related resources, and deliver them to any screen - letting you bring new promotional content to market faster.
+Creating and modifying content featured in promotional banners can be time-consuming, limiting your ability to quickly publish new content or make it more targeted. Carousel Banners enable you to quickly create or modify rotating banners, add interactivity such as hotspots linking to product detail or related resources, and deliver them to any screen&mdash;letting you bring new promotional content to market faster.
 
-Carousel Banners are designated by a banner with the word **CAROUSELSET**:
+Carousel Banners are designated by a banner with the word **[!UICONTROL CAROUSELSET]**:
 
-![chlimage_1-191](assets/chlimage_1-191.png)
+![chlimage_1-438](assets/chlimage_1-438.png)
 
 On your website, a carousel banner can look as follows:
 
-![chlimage_1-192](assets/chlimage_1-192.png)
+![chlimage_1-439](assets/chlimage_1-439.png)
 
 Here you can navigate through the images (by clicking on the numbers). In addition, the slides automatically rotate based on a time interval you can customize. Images that you add in the carousel banner support both hotspots and image maps, where users can either tap or to go to a hyperlink or access a quick view window.
 
 In this example, a user has tapped or clicked an image map and accessed the quick view window for gloves:
 
-![chlimage_1-193](assets/chlimage_1-193.png)
+![chlimage_1-440](assets/chlimage_1-440.png)
 
 ## Watch how carousel banners are created {#watch-how-carousel-banners-are-created}
 
@@ -39,7 +39,7 @@ Watch a 10 minute and 33 second walkthrough on [how carousel banners are created
 
 >[!NOTE]
 >
->Non-administrative users must be added to the **dam-users** group in order to be able to create or edit carousel banners. If you are having trouble creating or editing, please see your system administrator who can add you to the **dam-users** group.
+>Non-administrative users must be added to the **[!UICONTROL dam-users]** group in order to be able to create or edit carousel banners. If you are having trouble creating or editing, please see your system administrator who can add you to the **d[!UICONTROL am-users]** group.
 
 ## Quick Start: Carousel Banners {#quick-start-carousel-banners}
 
@@ -68,7 +68,7 @@ To get you up and running quickly:
 
    In Carousels Sets, users navigate through banner images and tap hotspots or image maps to access relevant content.
 
-   To create a Carousel Set in Assets, click **Create**, then select **Carousel Sets**. Add assets to slides and click **Save**. You can also edit the appearance and behavior of the carousel directly within the editor.
+   To create a Carousel Set in Assets, tap **[!UICONTROL Create]**, then select **[!UICONTROL Carousel Sets]**. Add assets to slides and tap **[!UICONTROL Save]**. You can also edit the appearance and behavior of the carousel directly within the editor.
 
 1. [Add hotspots or image maps to an image banner.](#adding-hotspots-or-image-maps-to-an-image-banner)
 
@@ -78,7 +78,7 @@ To get you up and running quickly:
 
 1. [Publish Carousel Banners.](#publishing-carousel-banners)
 
-   You publish a Carousel Set as you would any asset. In Assets, navigate to the Carousel Set and select it and tap or click **Publish**. Publishing a Carousel Set activates the URL and Embed string.
+   You publish a Carousel Set as you would any asset. In Assets, navigate to the Carousel Set and select it and tap **[!UICONTROL Publish]**. Publishing a Carousel Set activates the URL and Embed string.
 
 1. Do one of the following:
 
@@ -112,7 +112,7 @@ Sometimes it may be enough to consult with IT specialists responsible for the ex
 
 The majority of quick view implementations use the following paradigm:
 
-* User activates a user interface element on the website. For example, clicking a **Quick View **button.
+* User activates a user interface element on the website. For example, tapping a **[!UICONTROL Quick View]** button.
 * The website sends an Ajax request to the backend to load the quick view data or content, if needed.
 * The quick view data is translated into the content in preparation for rendering on the web page.
 * Finally, the front-end code visually renders such content on the screen.
@@ -121,7 +121,7 @@ The approach then is to visit different areas of the existing website where the 
 
 Normally there is no need for you to use any specialized debugging tools. Modern web browsers feature web inspectors that do an adequate job. The following are a few examples of web browsers that include web inspectors:
 
-* To see all outgoing HTTP requests in Google Chrome, press F12 (Windows) or Command-Option-I (Mac) to open the Developer Tools panel, and then click the Network tab.
+* To see all outgoing HTTP requests in Google Chrome, press F12 (Windows) or Command-Option-I (Mac) to open the Developer Tools panel, and then tap the Network tab.
 * In Firefox, you can either activate the Firebug plug-in by pressing F12 (Windows) or Command-Option-I (Mac) and use its Net tab, or you can use the built-in Inspector tool and its Network tab.
 
 When network monitoring is turned on in the browser, trigger the quick view on the page.
@@ -184,22 +184,22 @@ To upload image banners, see [Uploading assets](/help/assets/managing-assets-tou
 
 >[!NOTE]
 >
->Non-administrative users must be added to the **dam-users** group to be able to create or edit carousel banners. If you are having trouble creating or editing, please see your system administrator who can add you to the **dam-users** group.
+>Non-administrative users must be added to the **[!UICONTROL dam-users]** group to be able to create or edit carousel banners. If you are having trouble creating or editing, please see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
 
-**To create a Carousel Set**:
+**To create a Carousel Set**
 
-1. In Assets, navigate to the folder where you want to create the Carousel Set and click **Create** &gt; **Carousel Set**.
-1. On the Carousel Banner Editor page tap **Tap to open Asset Selector** to select the image for your first slide.
+1. In Assets, navigate to the folder where you want to create the Carousel Set and tap **[!UICONTROL Create > Carousel Set]**.
+1. On the Carousel Banner Editor page tap **[!UICONTROL Tap to open Asset Selector]** to select the image for your first slide.
 
    On the Carousel Banner Editor page, do either one of the following:
 
-    * Near the upper-left corner of the page, tap **Add Slide** icon.
+    * Near the upper-left corner of the page, tap **[!UICONTROL Add Slide]** icon.
 
-    * Near the middle of the page, tap **Tap to open Asset Selector**.
+    * Near the middle of the page, tap **[!UICONTROL Tap to open Asset Selector]**.
 
-   Tap to select assets that you want to include in your Carousel Set. Selected assets have a checkmark icon over them. When you are finished, near the upper-right corner of the page, tap **Select**.
+   Tap to select assets that you want to include in your Carousel Set. Selected assets have a checkmark icon over them. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select**.
 
-   With the Asset Selector, you can search for assets by typing in a keyword and tapping or clicking **Return**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then tap the **Filter** icon on the toolbar. Change the view by tapping the View icon and selecting **Column View**, **Card View**, or **List View**.
+   With the Asset Selector, you can search for assets by typing in a keyword and tapping or clicking **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then tap the **[!UICONTROL Filter]** icon on the toolbar. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
 
    See [Working with Selectors](/help/assets/working-with-selectors.md) for more information.
 
@@ -207,11 +207,11 @@ To upload image banners, see [Uploading assets](/help/assets/managing-assets-tou
 1. (Optional) Do any of the following:
 
     * If necessary, drag slide's to re-order images intheset list.
-    * To delete an image, select the image, then tap **Delete Slide **on the toolbar.
+    * To delete an image, select the image, then tap **[!UICONTROL Delete Slide]** on the toolbar.
 
     * To apply a preset, near the upper-right corner of the page, tap the preset drop-down list, then select a preset to apply to the set at once.
 
-   To delete a slide, tap or click the slide and tap or click **Delete Slide** in the toolbar. To move a slide, tap the reoreder icon and hold and move to the desired location.
+   To delete a slide, tap or click the slide and tap or click **[!UICONTROL Delete Slide]** in the toolbar. To move a slide, tap the reoreder icon and hold and move to the desired location.
 
 1. After you have added the images in slides, you can add a hotspot, image map, or both to your image. See [adding hotspots or image maps](#adding-hotspots-or-image-maps-to-an-image-banner).
 1. You can change the visual design and behavior of carousel sets by tapping or clicking the Behavior and Appearance tabs and making adjustments to how your carousel banner looks or how specific components behave. See [managing viewer presets](/help/assets/viewer-presets.md) for more information on how to use the viewer editor.
@@ -219,9 +219,6 @@ To upload image banners, see [Uploading assets](/help/assets/managing-assets-tou
    >[!NOTE]
    >
    >For carousel banners, the following may be things you want to adjust:
-   >
-   >
-   >
    >    * Duration that an image displays. By default, each image displays for 9 seconds.
    >    * Animation. By default, each slide transition is a fade. You can change that to a slide transition.
    >    * Style of the buttons. Users can rotate through the banners by tapping each dot or number. You can change where the set indicator buttons appear (and if they are numeric or a dotted style) and how large they are.
@@ -235,7 +232,7 @@ To upload image banners, see [Uploading assets](/help/assets/managing-assets-tou
 
    You can also preview what the carousel banner will look like. See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners).
 
-1. Click **Save** when finished.
+1. Tap **[!UICONTROL Save]** when finished.
 
 ## Adding Hotspots or Image Maps to an Image Banner {#adding-hotspots-or-image-maps-to-an-image-banner}
 
@@ -247,7 +244,8 @@ See [Experience Fragment](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
->Be aware that the social media sharing tools in Carousel Banner are not supported when you embed the viewer in an Experience Fragment.  To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
+>Be aware that the social media sharing tools in Carousel Banner are not supported when you embed the viewer in an Experience Fragment.
+To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
 
 As you add hotspots or image maps to an image, remember to save your work. Undo and Redo options, near the upper-right corner of the page, are supported during your current creation/editing session.
 
@@ -257,7 +255,7 @@ See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-bann
 
 >[!NOTE]
 >
->When you add hotspots to an image in an [Interactive Image](/help/assets/interactive-images.md) or a Carousel Banner, the hotspot information is stored in the same metadata location - relative to the image's location--regardless of whether it is an Interactive Image or a Carousel Banner. This functionality means that you can easily re-use the same image - along with its defined hotspot data - in either viewer.
+>When you add hotspots to an image in an [Interactive Image](/help/assets/interactive-images.md) or a Carousel Banner, the hotspot information is stored in the same metadata location&mdash;relative to the image's location&mdashregardless of whether it is an Interactive Image or a Carousel Banner. This functionality means that you can easily re-use the same image&mdash;along with its defined hotspot data&mdash;in either viewer.
 
 >Be aware, however, that Carousel Banners support image maps on images that can also contain hotspots; an Interactive Image does not. Keep this in mind if you intend to create an Interactive Image or Carousel Banner that uses the same image. You may want to create Interactive Images and Carousel Banners using separate copies of the same image instead.
 
@@ -265,12 +263,14 @@ See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-bann
 >
 >If you are editing interactive images with hotspots and crop the image, your hotspots are removed.
 
-To add hotspots to an image banner:
+See also [Adding Image Maps](/help/assets/image-maps.md).
+
+**To add Hotspots or Image Maps to an Image Banner**
 
 1. From Assets, navigate to the carousel set you want to make interactive.
-1. Select the carousel set and click or tap **Edit**. The Carousel Viewer Editor opens.
+1. Select the carousel set and tap **[!UICONTROL Edit]**. The Carousel Viewer Editor opens.
 1. Select the slide you want to make interactive.
-1. Near the upper-left corner of the page, tap or click **Hotspot **or** Image Map**.
+1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]** or **[!UICONTROL Image Map]**.
 1. Do either of the following:
 
     * For hotspots: On the image, tap a location where you want the hotspot to appear.
@@ -278,26 +278,28 @@ To add hotspots to an image banner:
 
    If necessary, drag the hotspot or the image map to a new location. Add additional hotspots or image maps as necessary.
 
-   To delete a hotspot or image map, tap the **Actions** tab. Under the **Maps & Hotspots** heading, from the **Selected Type** drop-down menu, select the name of the hotspot or image map you want to remove. Tap the** Trash **icon next to the menu, then tap **Delete**.
+   To delete a hotspot or image map, tap the **[!UICONTROL Actions]** tab. Under the **[!UICONTROL Maps & Hotspots]** heading, from the **[!UICONTROL Selected Type]** drop-down menu, select the name of the hotspot or image map you want to remove. Tap the **[!UICONTROL Trash]** icon next to the menu, then tap **[!UICONTROL Delete]**.
 
-1. In the Name text field, type the name of the hotspot or the image map. This name also appears in the **Maps & Hotspot** drop-down list. Providing a name makes it easy to identify the hotspot or image map if you decide to make changes to it in the future.
-1. Do one of the following in the **Actions** tab:
+1. In the Name text field, type the name of the hotspot or the image map. This name also appears in the **[!UICONTROL Maps & Hotspot]** drop-down list. Providing a name makes it easy to identify the hotspot or image map if you decide to make changes to it in the future.
+1. Do one of the following in the **[!UICONTROL Actions]** tab:
 
-    * Tap **Quickview**.
+    * Tap **[!UICONTROL Quickview]**.
 
-        * If you are an AEM Sites and Ecommerce customer, tap or click the Product Picker icon (magnifying glass) to open the Select Product page. Tap or click the product you want to use, then tap the check mark in the upper-right corner of the page to return to the Carousel Banner Editor.
+        * If you are an AEM Sites and Ecommerce customer, tap the Product Picker icon (magnifying glass) to open the Select Product page. Tap the product you want to use, then tap the check mark in the upper-right corner of the page to return to the Carousel Banner Editor.
         * If you are not an AEM Sites or Ecommerce customer
 
             * See [Identifying hotspot variables](#identifying-hotspot-and-image-map-variables) as you may want to define these variables.
             * Then, manually enter the SKU value. In the SKU Value text field, type the product's SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. The entered SKU value automatically populates the variable portion of the quick view template so that the system knows to associate the tapped hotspot with a particular SKU's quick view.
-            * (Optional) If there are other variables within the quick view that you need to use to further identify a product, tap **Add Generic Variable**. In the text field, specify an additional variable. For example, category=Mens is an added variable.
+            * (Optional) If there are other variables within the quick view that you need to use to further identify a product, tap **[!UICONTROL Add Generic Variable]**. In the text field, specify an additional variable. For example, category=Mens is an added variable.
 
             * See [Working with Selectors](/help/assets/working-with-selectors.md) for more information.
 
-    * Tap **Hyperlink**.
+    * Tap **[!UICONTROL Hyperlink]**.
 
-        * If you are an AEM Sites customer, tap or click the Site Selector icon (folder) to navigate to a URL.
-          **Note**: The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
+        * If you are an AEM Sites customer, tap the Site Selector icon (folder) to navigate to a URL.
+          >[!NOTE]
+          >
+          >The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
 
         * If you are a standalone customer, in the HREF text field, specify the full URL path to a linked web page.
 
@@ -305,20 +307,23 @@ To add hotspots to an image banner:
 
    See [Working with Selectors](/help/assets/working-with-selectors.md) for more information.
 
-    * Tap **Experience Fragment**.
+    * Tap **[!UICONTROL Experience Fragment]**.
 
-        * If you are an AEM Sites customer, tap or click the Search icon (magnifying glass) to open the Experience Fragment page. Tap or click the Experience Fragment you want to use, then tap Select in the upper-right corner of the page to return to the Hotspot management page.
+        * If you are an AEM Sites customer, tap the Search icon (magnifying glass) to open the Experience Fragment page. Tap or click the Experience Fragment you want to use, then tap Select in the upper-right corner of the page to return to the Hotspot management page.
           See [Experience Fragments](/help/sites-authoring/experience-fragments.md).
 
         * Specify the width and height of the Experience Fragment as it will appear on the banner.
 
-      **Note**: Be aware that the social media sharing tools in Carousel Banner are not supported when you embed the viewer in an Experience Fragment.  To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
+          >[!NOTE]
+          >
+          >Be aware that the social media sharing tools in Carousel Banner are not supported when you embed the viewer in an Experience Fragment.
+          To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    You can also preview what the carousel banner will look like. See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners).
 
-1. Tap **Save**.
+1. Tap **[!UICONTROL Save]**.
 1. Publish the carousel set. Publishing creates the embed code or URL that you can use on your website page. If you are an AEM Sites customer, you may add the carousel set directly to your webpage.
 
    See [Publishing assets](/help/assets/publishing-dynamicmedia-assets.md).
@@ -329,7 +334,7 @@ To add hotspots to an image banner:
 
 >[!NOTE]
 >
->Non-administrative users must be added to the **dam-users** group in order to be able to create or edit carousel banners. If you are having trouble creating or editing, please see your system administrator who can add you to the **dam-users** group.
+>Non-administrative users must be added to the **[!UICONTROL dam-users]** group in order to be able to create or edit carousel banners. If you are having trouble creating or editing, please see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
 
 You can perform a variety of editing tasks on Carousel Sets such as the following:
 
@@ -340,27 +345,25 @@ You can perform a variety of editing tasks on Carousel Sets such as the followin
 * Delete the Carousel Set.
 * Add or edit hotspots and image maps. See also [Working with Selectors](/help/assets/working-with-selectors.md).
 
-To edit a Carousel Set:
+**To edit a Carousel Set**
 
 1. Do any one of the following:
 
-    * Hover over an Carousel Set asset, then tap **Edit** (pencil icon).
-    * Hover over an Carousel Set asset, tap **Select** (checkmark icon), then tap **Edit** on the toolbar.
+    * Hover over an Carousel Set asset, then tap **[!UICONTROL Edit]** (pencil icon).
+    * Hover over an Carousel Set asset, tap **[!UICONTROL Select]** (checkmark icon), then tap **[!UICONTROL Edit]** on the toolbar.
 
-    * Tap on a Carousel Set asset, then in the upper-left corner of the page tap **Edit** (pencil icon).
+    * Tap on a Carousel Set asset, then in the upper-left corner of the page tap **[!UICONTROL Edit]** (pencil icon).
 
 1. To edit the Carousel Set, do any of the following:
 
-    * To add a slide, click the Add Slide icon** **then navigate to the asset you want to add to that slide and tap or click the checkmark.
+    * To add a slide, tap the **[!UICONTROL Add Slide]** icon then navigate to the asset you want to add to that slide and tap or click the checkmark.
     * To reorder slides, drag an slide to a new location (select the reorder icon to move items).
     * To add a hotspot or image map, click the hotspot or image map icons and see [adding hotspots and image maps](#adding-hotspots-or-image-maps-to-an-image-banner).
-    * To edit the appearance or behavior of the carousel set, tap the **Appearance** tab or **Behavior** tab, then set the options you want.
-
-    * To edit hotspots or image maps, on the appropriate slide, select a hotspot or image map and make changes as necessary under the **Actions** tab.
-    * To delete an slide, select it, then tap **Delete Slide** on the toolbar.
-    * To apply a preset, near the upper-right corner of the page, tap the preset drop-down list**,** then select a viewer preset.
-
-    * To delete an entire Carousel Set, navigate to the Carousel Set, select it, then tap **Delete**.
+    * To edit the appearance or behavior of the carousel set, tap the **[!UICONTROL Appearance]** tab or **[!UICONTROL Behavior]** tab, then set the options you want.
+    * To edit hotspots or image maps, on the appropriate slide, select a hotspot or image map and make changes as necessary under the **[!UICONTROL Actions]** tab.
+    * To delete an slide, select it, then tap **[!UICONTROL Delete Slide]** on the toolbar.
+    * To apply a preset, near the upper-right corner of the page, tap the **[!UICONTROL Preset]** drop-down list, then select a viewer preset.
+    * To delete an entire Carousel Set, navigate to the Carousel Set, select it, then tap **[!UICONTROL Delete]**.
 
    >[!NOTE]
    >
@@ -377,24 +380,24 @@ See [Embedding the Video or Image Viewer on a Web Page](/help/assets/embed-code.
 See [Linking URLs to your web application](/help/assets/linking-urls-to-yourwebapplication.md). Note that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
 See [Adding Dynamic Media Assets to pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
-You can preview carousel banners from the Carousel Editor (preferred method) or from the **Viewers** list.
+You can preview carousel banners from the Carousel Editor (preferred method) or from the **[!UICONTROL Viewers]** list.
 
-To preview carousel banners:
+**To preview carousel banners**
 
-1. In **Assets**, navigate to an existing carousel banner that you have created and tap to open it.
-1. Tap **Edit**.
+1. In **[!UICONTROL Assets]**, navigate to an existing carousel banner that you have created and tap to open it.
+1. Tap **[!UICONTROL Edit]**.
 1. In the viewer presets list in the right-hand corner of the toolbar, select a viewer to preview the carousel banner.
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Tap **Preview**.
+1. Tap **Preview]**.
 1. Tap the hotspots or image maps on the image to test their associated actions.
 
-To preview carousel banners from the Viewers list:
+**To preview carousel banners from the Viewers list**
 
-1. In **Assets**, navigate to an existing carousel banner that you have created and tap to open it.
+1. In **[!UICONTROL Assets]**, navigate to an existing carousel banner that you have created and tap to open it.
 1. Near the upper-left corner of the Preview page, click the Content icon.
-1. In the **Viewers** list in the panel on the left side of the page, tap the name of the carousel banner viewer preset you want to use.
+1. In the **[!UICONTROL Viewers]** list in the panel on the left side of the page, tap the name of the carousel banner viewer preset you want to use.
 1. Tap the hotspots or image maps on the image to test their associated actions.
 
 ## Publishing Carousel Banners {#publishing-carousel-banners}

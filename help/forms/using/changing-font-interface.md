@@ -19,7 +19,7 @@ You can change the font displayed in AEM Forms workspace. Fonts used in a specif
 
 Follow the [Generic steps for AEM Forms workspace customization](../../forms/using/generic-steps-html-workspace-customization.md) and depending on your requirements, follow the steps for customizing CSS, HTML, or both.
 
-1. Change or add the font-family in an existing style.  
+1. Change or add the font-family in an existing style.
 1. Change or add the font-family inline for the HTML element.
 1. Add a style and use it for the HTML element.
 
@@ -30,7 +30,7 @@ As an example, to change the font of the top navigation bar anchor text to Couri
 
     1. To change the font-family in an existing style, add the following in the newStyle.css file at /apps/ws/css.
 
-       ```css    
+       ```css
        #topnav a {
           font-family: "Courier New";
        }
@@ -40,26 +40,26 @@ As an example, to change the font of the top navigation bar anchor text to Couri
 
        Update the /apps/ws/js/runtime/templates/appnavigation.html file as follows:
 
-       ```    
+       ```
        <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>
        <li class="todo"><a href="#/todo" title="<%= $.t('index.header.topnav.todo.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.todo.name')%></a></li>
        <li class="track"><a href="#/tracking" title="<%= $.t('index.header.topnav.tracking.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.tracking.name')%></a></li>
        <li class="preference"><a href="#/preferences" title="<%= $.t('index.header.topnav.preferences.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.preferences.name')%></a></li>
-       ```    
-    
+       ```
+
        Open the /apps/ws/js/registry.js file for editing and replace `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` with `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
-    
+
     1. To add a style defining the font-family, add the following in the newStyle.css file at /apps/ws/css.
 
-       ```css    
+       ```css
        .myNewFontStyle a {
           font-family: "Courier New";
        }
-       ```    
-    
+       ```
+
        To add the font-family inline for the HTML element, add the following in the appnavigation.html file at /apps/ws/js/runtime/templates.
 
-       ```css    
+       ```css
        <div id="topnav" class="myNewFontStyle">
            <ul>
                <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>

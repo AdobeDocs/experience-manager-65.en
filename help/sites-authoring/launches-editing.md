@@ -44,7 +44,7 @@ See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#chang
 To track the changes you have made, you can view the launch in **References** and compare the launch page with its source page:
 
 1. In the **Sites** console, [navigate to the source page of your launch and select it](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
-1. Open the ** [References](/help/sites-authoring/basic-handling.md#references)** panel and select **Launches**.
+1. Open the **[References](/help/sites-authoring/basic-handling.md#references)** panel and select **Launches**.
 1. Select your specific launch then **Compare to Source**:
 
    ![screen-shot_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
@@ -100,4 +100,3 @@ At any time you can edit the properties for a launch:
 The status is shown when you select a specific launch from the references tab (see [Launches in References (Sites Console)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
 ![screen-shot_2019-03-05at121901](assets/screen-shot_2019-03-05at121901.png)
-

@@ -1,13 +1,9 @@
 ---
 title: Camera Raw Support
-seo-title: Camera Raw Support
 description: Learn how to enable Camera Raw support in Adobe Experience Manager (AEM) Assets.
-seo-description: Learn how to enable Camera Raw support in Adobe Experience Manager (AEM) Assets.
 uuid: b0463513-ca1f-41b4-adaf-040cdc1ddd26
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: e5f3dfb7-5a9f-4ee0-8ec1-fcb50bcb76e3
 docset: aem65
 
@@ -25,7 +21,7 @@ To enable Camera Raw support in Adobe Experience Manager (AEM) Assets:
 
 1. Download the Camera Raw package version [1.3.16](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from the Package Share.
 1. Access `https://[AEM server]:[Port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
-1. Open the **[!UICONTROL Process Thumbnails]** step.  
+1. Open the **[!UICONTROL Process Thumbnails]** step.
 
 1. Provide the following configuration in the **[!UICONTROL Thumbnails]** tab:
 
@@ -79,4 +75,3 @@ After saving the edits to a Camera Raw image, a new rendition `AdjustedPreview.j
 >[!NOTE]
 >
 >The Camera Raw library has limitations around the total pixels it can process at a time. Currently, it can process a maximum of 1073741824 (1024 x 1024 x 1024) pixels.
-

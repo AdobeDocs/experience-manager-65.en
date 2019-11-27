@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Panoramic Images{#panoramic-images}
+# Panoramic images{#panoramic-images}
 
 This section describes working with the Panoramic Image viewer to render spherical panoramic images for an immersive 360° viewing experience of a room, property, location, or landscape.
 
@@ -31,7 +31,7 @@ For an uploaded asset to qualify as a spherical panorama image that you intend t
 
 * Tagged with the keywords `equirectangular`, or `spherical`and `panorama`, or `spherical` and `panoramic`. See [Using Tags](/help/sites-authoring/tags.md).
 
-Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the "Panoramic Media" WCM component.
+Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
 
 To upload assets for use with the Panoramic Image viewer, see [Uploading Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
@@ -41,11 +41,11 @@ For the Panoramic Image viewer to work properly within AEM, you must synchronize
 
 1. [Log into your instance of Dynamic Media Classic (Scene7)](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) for each company account.
 
-1. Near the upper-right corner of the page, click **Setup** &gt; **Application Setup** &gt; **Publish Setup** &gt; **Image Server**.
-1. On the Image Server Publish page, from the **Publish Context** drop-down menu near the top, select **Image Serving**.
+1. Near the upper-right corner of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
+1. On the Image Server Publish page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving]**.
 
-1. On the same Image Server Publish page, locate the heading **Request Attributes**.
-1. Under the Request Attributes heading, locate **Reply Image Size Limit**. Then, in the associated Width and Height fields, increase the maximum allowable image size for panoramic images.
+1. On the same Image Server Publish page, locate the heading **[!UICONTROL Request Attributes]**.
+1. Under the Request Attributes heading, locate **[!UICONTROL Reply Image Size Limit]**. Then, in the associated Width and Height fields, increase the maximum allowable image size for panoramic images.
 
    Dynamic Media Classic (Scene7) has a limit of 25,000,000 pixels. The maximum allowable size for images with a 2:1 aspect ratio is 7000 x 3500. However, for typical desktop screens, 4096 x 2048 pixels is sufficient.
 
@@ -55,24 +55,24 @@ For the Panoramic Image viewer to work properly within AEM, you must synchronize
 
 1. Under the Request Attributes heading, do the following:
 
-    * Set Request Obfuscation Mode to **Disabled**.
-    * Set Request Locking Mode to **Disabled**.
+    * Set Request Obfuscation Mode to **[!UICONTROL Disabled]**.
+    * Set Request Locking Mode to **[!UICONTROL Disabled]**.
 
-   These settings are necessary for using the Panoramic Media WCM component in AEM.
+   These settings are necessary for using the `Panoramic Media` WCM component in AEM.
 
-1. At the bottom of the Image Server Publish page, on the left side, click **Save**.
+1. At the bottom of the Image Server Publish page, on the left side, click **[!UICONTROL Save]**.
 
-1. In the lower-right corner, click **Close**.
+1. In the lower-right corner, click **[!UICONTROL Close]**.
 
 ### Troubleshooting the Panoramic Media WCM component {#troubleshooting-the-panoramic-media-wcm-component}
 
 If you dropped an image into the Panoramic Media component in your WCM and the component placeholder collapsed, you may want to troubleshoot the following:
 
-* If you experience a 403 Forbidden error, it may have been caused by the requested image size being too large. Review the **Reply Image Size Limit** settings in [Configuring Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
+* If you experience a 403 Forbidden error, it may have been caused by the requested image size being too large. Review the **[!UICONTROL Reply Image Size Limit]** settings in [Configuring Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
 
 * For an "Invalid lock" on the asset or "Parsing error" displayed on the page, check Request Obfuscation Mode and Request Locking Mode to ensure they are disabled.
 * For a tainted canvas error, setup a Rule Set Definition File Path and Invalidate CTN for the previous requests for the image asset.
-* If image quality becomes very low after an image request with sizing above the supported limit, check that the **JPEG Encoding Attributes** &gt; **Quality** setting is not empty. A typical setting for the **Quality** field is 95. You can find the setting on the Image Server Publish page. To access the page, see [Configuring Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
+* If image quality becomes very low after an image request with sizing above the supported limit, check that the **[!UICONTROL JPEG Encoding Attributes > Quality]** setting is not empty. A typical setting for the **[!UICONTROL Quality]** field is `95`. You can find the setting on the Image Server Publish page. To access the page, see [Configuring Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
 
 ## Previewing Panoramic Images {#previewing-panoramic-images}
 

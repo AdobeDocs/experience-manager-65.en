@@ -53,7 +53,7 @@ The **Project Heartbeat** worksheet provides a graphical overview of critical me
 
 ## Status by Role {#status-by-role}
 
-The **Status by Role** worksheet shows detailed breakdown of [**Health**, **Quality** and **Completeness**](#projectheartbeat) by ** [Phase](#phases-and-milestones)** and ** [Persona](#persona)**.
+The **Status by Role** worksheet shows detailed breakdown of [**Health**, **Quality** and **Completeness**](#projectheartbeat) by **[Phase](#phases-and-milestones)** and **[Persona](#persona)**.
 
 ## Phases and Milestones {#phases-and-milestones}
 
@@ -602,8 +602,12 @@ Deliverables are often used as **Required Documents** for either the current or 
 
 For best practices on deploying, administering, developing, or authoring, see the following:
 
-* [Other Best Practices and Guidelines related to Managing an AEM project](/help/managing/manage-reference.md)
-* [Deploying and Maintaining best practices](/help/sites-deploying/best-practices.md)
+* Other Best Practices and Guidelines related to Managing an AEM project:
+    * [Hardware Sizing Guidelines](/help/managing/hardware-sizing-guidelines.md)
+    * [Enterprise DevOps](/help/managing/enterprise-devops.md)
+    * [SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md)
+    * [AEM and the Web Accessibility Guidelines](/help/managing/web-accessibility.md)
+    * [General Data Protection Regulation](/help/managing/data-protection-and-privacy.md)* [Deploying and Maintaining best practices](/help/sites-deploying/best-practices.md)
 * [Administering best practices](/help/sites-administering/administer-best-practices.md)
 * [Developing best practices](/help/sites-developing/best-practices.md)
 * [Authoring best practices](/help/sites-authoring/best-practices.md)

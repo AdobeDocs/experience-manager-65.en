@@ -28,45 +28,45 @@ You can also use the component to control the behavior of the task. For example,
 * **Description:** Explanation of the operations being performed in the task. This information is useful for other process developers when you are working in a shared development environment.  
 
 * **Thumbnail Path:** Path of the task thumbnail. If no path is specified, for an adaptive form default thumbnail is displayed and for Document of Record, a default icon is displayed.
-* **Workflow Stage: **A workflow can have multiple stages. These stages are displayed in the AEM Inbox. You can define these stages in the properties of the model (Sidekick &gt; Page &gt; Page Properties &gt; Stages).
-* **Priority: **Selected priority is displayed in the AEM Inbox. The available options are High, Medium, and Low. The default value is Medium.
+* **Workflow Stage:** A workflow can have multiple stages. These stages are displayed in the AEM Inbox. You can define these stages in the properties of the model (Sidekick &gt; Page &gt; Page Properties &gt; Stages).
+* **Priority:** Selected priority is displayed in the AEM Inbox. The available options are High, Medium, and Low. The default value is Medium.
 * **Due Date:** Specify the number of days or hours after which the task is marked overdue. If you select **Off**, then the task is never marked overdue. You can also specify a time-out handler to perform specific tasks after the task is overdue.
 
-* **Days: **The number of days before which the task is to be completed. The number of days are counted after the task is assigned to a user. If a task is not complete and crosses the number of days specifies in the Days field, then, if selected, a timeout handler is triggered after the due date.
+* **Days:** The number of days before which the task is to be completed. The number of days are counted after the task is assigned to a user. If a task is not complete and crosses the number of days specifies in the Days field, then, if selected, a timeout handler is triggered after the due date.
 * **Hours:** The number of hours before which the task is to be completed. The number of hours are counted after the task is assigned to a user. If a task is not complete and crosses the number of hours specifies in the Hours field, then, if selected, a timeout handler is triggered after the due hours.
-* **Time-out after Due Date: **Select this option to enable the Timeout Handler selection field.
-* **Timeout Handler: **Select the script to be executed when the assign task step crosses the due date. Scripts placed in the CRX-repository at [apps]/fd/dashboard/scripts/timeoutHandler are available for selection. The specified path does not exist in crx-repository. An administrator creates the path before using it.
-* **Highlight the action and comment from the last task in Task Details: **Select this option to display the last action that was taken and comment received on the task details section of a task.
-* **Type: **Choose the type of document to be filled when the workflow is started. You can choose an adaptive form, read-only adaptive form, a non-interactive PDF document, Interactive Communication Agent UI, or Interactive Communication Web Channel Document.
+* **Time-out after Due Date:** Select this option to enable the Timeout Handler selection field.
+* **Timeout Handler:** Select the script to be executed when the assign task step crosses the due date. Scripts placed in the CRX-repository at [apps]/fd/dashboard/scripts/timeoutHandler are available for selection. The specified path does not exist in crx-repository. An administrator creates the path before using it.
+* **Highlight the action and comment from the last task in Task Details:** Select this option to display the last action that was taken and comment received on the task details section of a task.
+* **Type:** Choose the type of document to be filled when the workflow is started. You can choose an adaptive form, read-only adaptive form, a non-interactive PDF document, Interactive Communication Agent UI, or Interactive Communication Web Channel Document.
 * **Use Adaptive Form:** Specify the method to locate the input adaptive form. This option is available if you select Adaptive form or Read-only adaptive form from the Type drop-down list. You can use the adaptive form submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path.  
   You can associate multiple adaptive forms with a workflow. As a result, you can specify an adaptive form on the runtime using the available input methods.
 
-* **Use Interactive Communication: **Specify the method to locate the input interactive communication. You can use the interactive communication submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.  
+* **Use Interactive Communication:** Specify the method to locate the input interactive communication. You can use the interactive communication submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.  
   **Note:** You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.
 
 * **Adaptive Form or Interactive Communication Path**: Specify the path of the adaptive form or Interactive Communication. You can use the adaptive form or interactive communication that is submitted to the workflow, available at an absolute path, or retrieve the adaptive form from a path stored in a variable of string data type.
-* **Select input PDF using: **Specify the path of a non-interactive PDF document. The field is available when you choose a non-interactive PDF document in the Type field. You can select the input PDF using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/PDF/credit-card.pdf. The path does not exist in crx-repository. An administrator creates the path before using it. You require a Document of Record option enabled or form template based adaptive forms for using the PDF Path option.
+* **Select input PDF using:** Specify the path of a non-interactive PDF document. The field is available when you choose a non-interactive PDF document in the Type field. You can select the input PDF using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/PDF/credit-card.pdf. The path does not exist in crx-repository. An administrator creates the path before using it. You require a Document of Record option enabled or form template based adaptive forms for using the PDF Path option.
 * **For completed task, render the adaptive form as**: When a task is marked complete, you can render the adaptive form as a read-only adaptive form or a PDF document. You require a Document of Record option enabled or form template based adaptive forms for rendering the adaptive form as Document of Record.
 * **Pre-populated:** The following fields listed below serve as inputs to the task:
 
     * **Select input data file using:** Path of input data file (.json,. xml, .doc, or form data model). You can retrieve the input data file using a path that is relative to the payload or retrieve the file stored in a variable of Document, XML, or JSON data type. For example, the file contains the data submitted for the form through an AEM Inbox application. An example path is [Payload_Directory]/workflow/data.
-    * **Select input attachments using: **Attachments available at the location are attached to the form associated with the task. The path is always relative to the payload. An example path is [Payload_Directory]/attachments/
-    * **Choose input JSON: **Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
-    * **Choose a custom prefill service: **Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.   
+    * **Select input attachments using:** Attachments available at the location are attached to the form associated with the task. The path is always relative to the payload. An example path is [Payload_Directory]/attachments/
+    * **Choose input JSON:** Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+    * **Choose a custom prefill service:** Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.   
     
-    * **Use the prefill service of the interactive communication selected above: **Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list.
-    * **Request Attribute Mapping: **Use the Request Attribute Mapping section to define the [name and value of the request attribute](../../forms/using/work-with-form-data-model.md#bindargument). Retrieve the details from the data source based on the attribute name and value specified in the request. You can define a request attribute value using a literal value or a variable of String data type.  
+    * **Use the prefill service of the interactive communication selected above:** Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list.
+    * **Request Attribute Mapping:** Use the Request Attribute Mapping section to define the [name and value of the request attribute](../../forms/using/work-with-form-data-model.md#bindargument). Retrieve the details from the data source based on the attribute name and value specified in the request. You can define a request attribute value using a literal value or a variable of String data type.  
       The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
 * **Submitted information:** The following fields listed below serve as output locations to the task:
 
     * **Save output data file using:** Save the data file (.json,. xml, .doc, or form data model). The data file contains information submitted through the associated form. You can save the output data file using a path that is relative to the payload or store it in a variable of Document, XML, or JSON data type. For example, [Payload_Directory]/Workflow/data, where data is a file.
-    * **Save attachments using: **Save the form attachments provide in a task. You can save the attachments using a path that is relative to the payload or store it in a variable of array of Document data type.
-    * **Save Document of Record using: **Path to save a Document of Record file. For example, [Payload_Directory]/DocumentofRecord/credit-card.pdf. You can save the Document of Record using a path that is relative to the payload or store it in a variable of Document data type. If you select **Relative to Payload** option, The Document of Record is not generated if the path field is left empty. This option is available only if you select Adaptive form from the Type drop-down list.
+    * **Save attachments using:** Save the form attachments provide in a task. You can save the attachments using a path that is relative to the payload or store it in a variable of array of Document data type.
+    * **Save Document of Record using:** Path to save a Document of Record file. For example, [Payload_Directory]/DocumentofRecord/credit-card.pdf. You can save the Document of Record using a path that is relative to the payload or store it in a variable of Document data type. If you select **Relative to Payload** option, The Document of Record is not generated if the path field is left empty. This option is available only if you select Adaptive form from the Type drop-down list.
     
-    * **Save Web Channel data using: **Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
-    * **Save PDF document using: **Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
-    * **Save layout template using: **Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](../../forms/using/layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
+    * **Save Web Channel data using:** Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
+    * **Save PDF document using:** Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
+    * **Save layout template using:** Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](../../forms/using/layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
 
 * **Assignee &gt; Assign options:** Specify the method to assign the task to a user. You can dynamically assign the task to a user or a group using the Participant Chooser script or assign the task to a specific AEM user or group.
 * **Participant Chooser:** The option is available when the **Dynamically to a user or group** option is selected in the Assign options field. You can use an ECMAScript or a service to dynamically select a user or a group. For more information, see [Dynamically assign a workflow to the users](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) and [Creating a custom Adobe Experience Manager Dynamic Participant step.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
@@ -75,7 +75,7 @@ You can also use the component to control the behavior of the task. For example,
 
 * **Assignee:** The field is available when the **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** is selected in the **Participant Chooser** field. The field allows you to select a variable of String data type to define the assignee.
 
-* **Arguments: **The field is available when a script other than the RandomParticipantChoose script is selected in the Participant Chooser field. The field allows you to provide a list of a comma separated arguments for the script selected in the Participant Chooser field.  
+* **Arguments:** The field is available when a script other than the RandomParticipantChoose script is selected in the Participant Chooser field. The field allows you to provide a list of a comma separated arguments for the script selected in the Participant Chooser field.  
 
 * **User or Group:** The task is assigned to selected user or group. The option is available when the **To a specific user or group option** is selected in the **Assign options** field. The field lists all the users and groups of the workflow-users group.  
   The **User or Group** drop-down menu lists the users and groups that the logged-in user has access to. The username display depends on if you have access permissions on the **users** node in crx-repository for that particular user. 
@@ -102,9 +102,9 @@ You can also use the component to control the behavior of the task. For example,
 >Use the Attachments tab in Agent UI during runtime to associate the attachments to an Interactive Communication. The associated attachments display as task attachments in the sidekick after opening the work item in a Complete state.
 
 * **Use custom metadata:** Select this option to enable the custom metadata field. Custom metadata is used in email templates.
-* **Custom Metadata: **Select a custom metadata for the email templates. The custom metadata is available in crx-repository at apps/fd/dashboard/scripts/metadataScripts. The specified path does not exist in crx-repository. An administrator creates the path before using it. You can also use a service for the custom metadata. You can also extend the WorkitemUserMetadataService interface to provide custom metadata.
+* **Custom Metadata:** Select a custom metadata for the email templates. The custom metadata is available in crx-repository at apps/fd/dashboard/scripts/metadataScripts. The specified path does not exist in crx-repository. An administrator creates the path before using it. You can also use a service for the custom metadata. You can also extend the WorkitemUserMetadataService interface to provide custom metadata.
 * **Show Data from Previous Steps**: Select this option to enable assignees to view previous assignees, action already taken on the task, comments added to the task, and document of record of the completed task, if available. 
-* **Show Data from Subsequent Steps: **Select this option to enable the current assignee to view the action taken and comments added to task by subsequent assignees. It also allows the current assignee to view a document of record of the completed task, if available.
+* **Show Data from Subsequent Steps:** Select this option to enable the current assignee to view the action taken and comments added to task by subsequent assignees. It also allows the current assignee to view a document of record of the completed task, if available.
 * **Visibility of data type:** By default, an assignee can view a Document of Record, assignees, action taken, and comments that previous and subsequent assignees have added. Use the visibility of data type option to limit the type of data visible to the assignees.
 
 ## Send Email Step {#send-email-step}
@@ -115,7 +115,7 @@ The email step uses Day CQ Mail Service to send emails. Before using the email s
 
 **Title:** Title of the step helps identify the step in the workflow editor.
 
-**Description: **Explanation is useful for other process developers when you are working in a shared development environment.
+**Description:** Explanation is useful for other process developers when you are working in a shared development environment.
 
 **Email Subject:** Subject can be retrieved from a workflow metadata, specified manually, or retrieved from the value stored in a variable. Select from the following options:
 
@@ -133,13 +133,13 @@ The email step uses Day CQ Mail Service to send emails. Before using the email s
 * **Asset URL:** Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server.
 * **Image:** Use the option to embed an image to the email. After selecting the option, browse and choose the image. The image option is available only for the image tags (&lt;img src="&#42;"/&gt;) available in the email template.
 
-**Sender’s / Recipient's Email Address:** Select the **Literal **option to manually specify an email address or select the ** Retrieve from Workflow metadata** option to retrieve the email address from a metadata property. You can also specify a list of metadata property arrays for the** Retrieve from Workflow metadata** option. Select the **Variable** option to retrieve the e-mail address from the value stored in a variable of string data type.
+**Sender’s / Recipient's Email Address:** Select the **Literal** option to manually specify an email address or select the **Retrieve from Workflow metadata** option to retrieve the email address from a metadata property. You can also specify a list of metadata property arrays for the **Retrieve from Workflow metadata** option. Select the **Variable** option to retrieve the e-mail address from the value stored in a variable of string data type.
 
 **File Attachment:** The asset available at the specified location is attached to the email. The path of the asset can be relative to the payload or absolute path. An example path is [Payload_Directory]/attachments/.
 
-Select the **Variable **option to retrieve the file attachment stored in a variable of Document, XML, or JSON data type.
+Select the **Variable** option to retrieve the file attachment stored in a variable of Document, XML, or JSON data type.
 
-**File Name: **Name of the email attachment file. The Email Step changes the original file name of the attachment to the specified file name. The name can be specified manually or retrieved from a workflow metadata property or a variable. Use the **Literal** option when you know the exact value to specify. Use the **Variable** option to retrieve the file name from the value stored in a variable of string data type. Use the **Retrieve from a Workflow Metadata** option when the value to use is saved in a workflow metadata property.
+**File Name:** Name of the email attachment file. The Email Step changes the original file name of the attachment to the specified file name. The name can be specified manually or retrieved from a workflow metadata property or a variable. Use the **Literal** option when you know the exact value to specify. Use the **Variable** option to retrieve the file name from the value stored in a variable of string data type. Use the **Retrieve from a Workflow Metadata** option when the value to use is saved in a workflow metadata property.
 
 ## Generate Document of Record step {#generate-document-of-record-step}
 
@@ -154,11 +154,11 @@ You can associate multiple adaptive forms with a workflow. As a result, you can 
 
 **Select Input data using:** Path of the input data for the adaptive form. You can keep the data at a location relative to the payload, specify an absolute path of the data, or retrieve data stored in a variable of Document, JSON, or XML data type. The input data is merged with the adaptive form to create a document of record.
 
-**Select Input attachment path using: **Path of the attachments. These attachments are included in the Document of Record. You can keep the attachments at a location relative to the payload, specify an absolute path of the attachments, or retrieve attachments stored in a variable of array of Document data type.
+**Select Input attachment path using:** Path of the attachments. These attachments are included in the Document of Record. You can keep the attachments at a location relative to the payload, specify an absolute path of the attachments, or retrieve attachments stored in a variable of array of Document data type.
 
 If you specify the path of a folder, for example, attachments, all the files directly available in the folder are attached to Document of Record. If any files are available in the folders directly available in the specified attachment path, the files are included in Document of Record as attachments. If there are any folders in directly available folders, those are skipped.
 
-**Save Generated Document of Record using below options: **Specify the location to keep a document of record file. You can choose to overwrite the payload folder, place document of record at a location within the payload directory, or store the document of record in a variable of Document data type.
+**Save Generated Document of Record using below options:** Specify the location to keep a document of record file. You can choose to overwrite the payload folder, place document of record at a location within the payload directory, or store the document of record in a variable of Document data type.
 
 **Locale**: Specify the language of the document of record. Select **Literal** to select the locale from a drop-down list or select **Variable** to retrieve the locale from the value stored in a variable of string data type. You must define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
 
@@ -231,7 +231,7 @@ The Invoke Form Data Model Service step has the below listed fields to facilitat
 * **Input for services &gt; Provide input data using literal, variable, or workflow metadata, and a JSON file**: A service can have multiple arguments. Select the option to obtain the value of the service arguments from a workflow metadata property, a JSON object, a variable, or directly enter the value in the provided text box:
 
     * **Literal:** Use the option when you know the exact value to specify. For example, srose@we.info.
-    * **Variable: **Use the option to retrieve the value stored in a variable.
+    * **Variable:** Use the option to retrieve the value stored in a variable.
     * **Retrieve from Workflow Metadata:** Use the option when the value to use is saved in a workflow metadata property. For example, emailAddress.
     * **JSON Dot Notation:** Use the option when the value to use is in a JSON file. For example, insurance.customerDetails.emailAddress. The JSON Dot Notation option is available only if Map input fields from input JSON option is selected.
     * **Map input fields from input JSON:** Specify path of a JSON file to obtain input value of some service arguments from the JSON file. Path of the JSON file can be relative to the payload, an absolute path, or you can select an input JSON document using a variable of JSON or Form Data Model type.

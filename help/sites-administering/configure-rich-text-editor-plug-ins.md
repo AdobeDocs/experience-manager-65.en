@@ -1,15 +1,12 @@
 ---
 title: Configure the Rich Text Editor plug-ins
-seo-title: Configure the Rich Text Editor plug-ins
 description: Learn to configure the AEM Rich Text Editor plug-ins to enable individual functionalities.
-seo-description: Learn to configure the AEM Rich Text Editor plug-ins to enable individual functionalities.
-uuid: d6a029fb-e431-4f12-9002-7d794e4beb0d
-contentOwner: asgupta
+uuid: 012552b7-5e32-4d74-be07-b441c3d4b47b
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: operations
-content-type: reference
-discoiquuid: e0328f9c-26c6-4c40-8594-3190c38cebd8
-noindex: true
+discoiquuid: 87dc79ad-0a71-43f6-af04-4d26c7472dc5
+mini-toc-levels: 1
+docset: aem65
 ---
 
 # Configure the Rich Text Editor plug-ins {#configure-the-rich-text-editor-plug-ins}
@@ -30,7 +27,7 @@ By default, `format`, `link`, `list`, `justify`, and `control` plugins and all t
 
 >[!NOTE]
 >
->The respective rtePlugins node is referred to as &lt;*rtePlugins-node*&gt; to avoid duplication in this article.
+>The respective `rtePlugins` node is referred to as `<rtePlugins-node>` to avoid duplication in this article.
 
 1. Using CRXDE Lite, locate the text component for your project.
 1. Create the parent node of `<rtePlugins-node>` if it does not exist, before configuring any RTE plug-ins:
@@ -53,43 +50,20 @@ By default, `format`, `link`, `list`, `justify`, and `control` plugins and all t
     * **Name** `rtePlugins`
     * **Type** `nt:unstructured`
 
-1. Create a node for each plug-in that you want to activate:
+1. Below this, create a node for each plug-in that you want to activate:
 
     * **Type** `nt:unstructured`
     * **Name** the Plug-in ID of the plug-in required
 
 After activating a plug-in, follow these guidelines to configure the `features` property.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong> </strong></td>
-   <th><strong>Enable all features<br /> </strong></th>
-   <th><strong>Enable a few specific features</strong></th>
-   <th><strong>Disable all features<br /> </strong></th>
-  </tr>
-  <tr>
-   <td><strong>Name</strong></td>
-   <td>features</td>
-   <td>features</td>
-   <td>features</td>
-  </tr>
-  <tr>
-   <td><strong>Type</strong></td>
-   <td>String</td>
-   <td>String[] (multi-string; set Type to String and click Multi in CRXDE Lite)</td>
-   <td>String</td>
-  </tr>
-  <tr>
-   <td><strong>Value</strong></td>
-   <td>* (an asterisk)<br /> </td>
-   <td>set to one, or more, feature values</td>
-   <td><strong>-</strong></td>
-  </tr>
- </tbody>
-</table>
+| | Enable all features | Enable a few specific features | Disable all features |
+|---|---|---|---|
+|Name| features | features | features |
+|Type| String | String[] (multi-string; set Type to String and click Multi in CRXDE Lite) | String |
+|Value| `*` (an asterisk) | set to one, or more, feature values | - |
 
-## Understand the findreplace plug-in {#understand--findreplace-plugin}
+## Understand the findreplace plug-in {#findreplace}
 
 The `findreplace` plug-in does not need any configuration. It works as expected, out of the box.
 
@@ -111,16 +85,13 @@ You can provide some, all, or none of these three icons to your authors in the R
 
 * **[!UICONTROL Paste (Ctrl+V)]**: Can be pre-configured to correspond to one of the above three Paste modes.
 
-* **[!UICONTROL Paste as Text]**: Provides Plain text mode functionality.
+* **[!UICONTROL Paste as Text]**: Provides plain text mode functionality.
 
 * **[!UICONTROL Paste from Word]**: Provides MS Word mode functionality.
 
 To configure RTE to display the required icons, follow these steps.
 
-1. Navigate to your component; for example:
-
-   `/apps/<myProject>/components/text`
-
+1. Navigate to your component, say for example `/apps/<myProject>/components/text`.
 1. Navigate to the node `rtePlugins/edit`. See [activate a plug-in](#activateplugin) if the node does not exist.
 1. Create the `features` property on the `edit` node and add one or more of the features. Save all changes.
 
@@ -193,7 +164,7 @@ To configure which formats are allowed when pasting text into AEM from another p
   <tr>
    <td>allowBlockTags</td>
    <td>String[]</td>
-   <td><p>Defines the list of block tags allowed.</p> <p>Possible block tags include (amongst others):</p>
+   <td><p>Defines the list of block tags allowed.</p> <p>A few possible block tags include:</p>
     <ul>
      <li>headlines (h1, h2, h3)</li>
      <li>paragraphs (p)</li>
@@ -309,12 +280,16 @@ Then, specify the location(s) of the style sheet(s) you want to reference:
 >
 >The Rich Text Editor uses a container DOM element with an ID of `CQrte` which may be used to provide different styles for viewing and editing:
 >
+>```>
 >#CQ td {
-> // defines the style for viewing }
->
+> // defines the style for viewing
+> }
+>```>
+>```>
 >#CQrte td {
-> // defines the style for editing }
->
+> // defines the style for editing
+> }
+>```>
 
 ### Specify the available Styles in the pop-up list {#stylesindropdown}
 
@@ -344,6 +319,43 @@ Then, specify the location(s) of the style sheet(s) you want to reference:
 1. Save the changes.
 
    Repeat the above steps for each required style.
+
+### Configure RTE for optimal word breaks in Japanese {#jpwordwrap}
+
+Authors using AEM to author Japanese language content can apply a style to characters to avoid line break where a break is not required. This allows authors to let the sentences break at the desired position. The style for this functionality is based on CSS class that is pre-defined in the CSS style sheet.
+
+>[!NOTE]
+>
+>This feature requires at least AEM 6.5 Service Pack 1.
+
+To create the style that authors can apply to Japanese text, follow these steps:
+
+1. Create a new node under the styles node. See [specify a new style](#stylesindropdown).
+   * Name: `jpn-word-wrap`
+   * Type: `nt:unstructure
+
+1. Add the property `cssName` to the node to reference the CSS class. This class name is a reserved name for Japanese word wrap feature.
+   * Name: `cssName`
+   * Type: `String`
+   * Value: `jpn-word-wrap` (without a preceding `.`)
+
+1. Add the property text to the same node. The value is the name of the style that the authors see when selecting the style.
+   * Name: `text`
+   *Type: `String`
+   * Value: `Japanese word-wrap`
+
+1. Create a stylesheet and specify its path. See [specify location of stylesheet](#locationofstylesheet). Add the following contents to the stylesheet. Change the background color as desired.
+
+   ```css
+   .text span.jpn-word-wrap {
+       display:inline-block;
+   }
+   .is-edited span.jpn-word-wrap {
+       background-color: #ffddff;
+   }
+   ```
+
+   ![Stylesheet to make Japanese word wrap feature available to authors](assets/rte_jpwordwrap_stylesheet.jpg)
 
 ## Configure the paragraph formats {#paraformats}
 
@@ -387,7 +399,7 @@ First enable the paraformat plug-in:
 
 >[!CAUTION]
 >
->When configuring the paragraph formats of the RTE, do not remove the paragraph tag &lt;p&gt; as a formatting option. If the &lt;p&gt; tag is removed, then the content author can not select the **Paragraph formats** option even if there are additional formats configured.
+>When configuring the paragraph formats of the RTE, do not remove the paragraph tag &lt;p&gt; as a formatting option. If the `<p>` tag is removed, then the content author can not select the **Paragraph formats** option even if there are additional formats configured.
 
 ### Specify the available Paragraph Formats {#paraformatsindropdown}
 
@@ -470,15 +482,13 @@ You can configure the RTE to make your own selection of characters available; ei
 
 1. Save the changes.
 
-After the property is saved, the represented character is displayed in CRXDE. See the example of half below. Repeat the above steps to make more special characters available to the authors.
+In CRXDE, once the property is saved, the represented character is displayed. See below the example of half. Repeat the above steps to make more special characters available to authors.
 
-   ![In CRXDE, add a single character to be made available in the RTE toolbar](assets/chlimage_1-412.png)
-
-   In CRXDE, add a single character to be made available in the RTE toolbar
+   ![In CRXDE, add a single character to be made available in the RTE toolbar](assets/chlimage_1-106.png "In CRXDE, add a single character to be made available in the RTE toolbar")
 
 ### Define a range of characters {#definerangechar}
 
-1. Use steps 1 to 3 from [Defining a Single Character](#definesinglechar).
+1. Use steps 1 to 3 from [Defining a Single Character](#definingasinglecharacter).
 1. Under `chars` add a new node to hold the definition of the character range:
 
     * **Name** you can specify the name, but it should reflect the character range; for example, pencils.
@@ -498,13 +508,11 @@ After the property is saved, the represented character is displayed in CRXDE. Se
 
    For example, define a range from 9998 - 10000 provides you with the following characters.
 
-   ![In CRXDE, define a range of characters to be made available in RTE](assets/chlimage_1-413.png)
+   ![In CRXDE, define a range of characters to be made available in RTE](assets/chlimage_1-107.png)
 
-   &nbsp; &nbsp; &nbsp; *In CRXDE, define a range of characters to be made available in RTE*
+   *Figure: In CRXDE, define a range of characters to be made available in RTE*
 
-   ![Special characters available in RTE are displayed to authors in a pop-up window](assets/rtepencil.png)
-
-   &nbsp; &nbsp; &nbsp; *Special characters available in RTE are displayed to authors in a pop-up window*
+   ![Special characters available in RTE are displayed to authors in a pop-up window](assets/rtepencil.png "Special characters available in RTE are displayed to authors in a pop-up window")
 
 ## Configure table styles {#tablestyles}
 
@@ -523,7 +531,7 @@ Styles are typically applied on text, but a separate set of Styles can also be a
 
     * **Name** `features`
     * **Type** `String`
-    * **Value** `*` (asterisk)
+    * **Value** `*`
 
    >[!NOTE]
    >
@@ -608,7 +616,7 @@ A standard AEM installation includes the dictionaries for:
 
 To add more dictionaries, if required, follow these steps.
 
-1. Navigate to the page [http://download.services.openoffice.org/contrib/dictionaries/](http://download.services.openoffice.org/contrib/dictionaries/).
+1. Navigate to the page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 1. Select the required language and download the ZIP file with the spelling definitions. Extract the contents of the archive on your file system.
 
    >[!CAUTION]
@@ -635,23 +643,22 @@ RTE allows authors to undo or redo a few last edits. By default, 50 edits are st
 
     * **Name** `maxUndoSteps`
     * **Type** `Long`
-    * **Value** the number of undo steps you want saved in the history.
-
-        * The default is 50.
-        * Use 0 to disable undo/redo completely.
+    * **Value** the number of undo steps you want saved in the history. The default is 50. Use `0` to completely disable undo/redo.
 
 1. Save the changes.
 
 ## Configure the tab size {#tabsize}
 
-When the tab character is pressed within any text a predefined number of spaces is inserted; by default this is three non-breaking spaces and one space. To define the tab size:
+When the tab character is pressed within any text a predefined number of spaces is inserted; by default this is three non-breaking spaces and one space.
+
+To define the tab size:
 
 1. In your component, navigate to the node `<rtePlugins-node>/keys`. Create the nodes if these do not exist. For more details, see [activate a plug-in](#activateplugin).
 1. On the `keys` node create the property:
 
     * **Name** `tabSize`
     * **Type** `String`
-    * **Value** the number of space characters to be used for the tabulator
+    * **Value** the number of space characters to be used for the tabulator.
 
 1. Save the changes.
 
@@ -668,9 +675,13 @@ When indentation is enabled (default) you can define the size of indent:
 
     * **Name**: `identSize`
     * **Type**: `Long`
-    * **Value**: number of pixels required for the indent margin
+    * **Value**: number of pixels required for the indent margin.
 
 ## Configure the height of editable space {#editablespace}
+
+>[!NOTE]
+>
+>This is only applicable when using the RTE in a dialog (not in-place editing in classic UI).
 
 You can define the height of the editable space shown within the component dialog:
 
@@ -678,17 +689,13 @@ You can define the height of the editable space shown within the component dialo
 
     * **Name** `height`
     * **Type** `Long`
-    * **Value** the height of the edit canvas in pixels
+    * **Value** the height of the edit canvas in pixels.
 
    >[!NOTE]
    >
    >This does not change the height of the dialog window.
 
 1. Save the changes.
-
->[!NOTE]
->
->This is only applicable when using the RTE in a dialog (not in-place editing in classic UI).
 
 ## Configure styles and protocols for links {#linkstyles}
 
@@ -714,7 +721,6 @@ To configure how links are added in AEM from another program, define the HTML ru
    >* **Value** `richtext`
    >
    >The location of the `../items/text` node can vary, depending on the structure of your dialog; two examples include:
-   >
    >* `/apps/myProject>/components/text/dialog/items/text`
    >* `/apps/<myProject>/components/text/dialog/items/panel/items/text`
 

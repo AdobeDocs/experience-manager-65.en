@@ -3,12 +3,13 @@ title: Integrating with Silverpop Engage
 seo-title: Integrating with Silverpop Engage
 description: Learn how to integrate AEM with Silverpop Engage
 seo-description: Learn how to integrate AEM with Silverpop Engage
-uuid: dfff7aaf-5264-4763-995f-5647f565c03b
+uuid: e17deeb6-5339-4ead-9086-cbe2167cdec6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: dfff6bdc-0d5f-4338-aa8a-7d0eb04bc19a
+discoiquuid: 01029a80-f80e-450c-9c73-16d0662af26d
+docset: aem65
 ---
 
 # Integrating with Silverpop Engage{#integrating-with-silverpop-engage}
@@ -57,7 +58,7 @@ To create a Silverpop configuration in Tools:
 1. Select **Tools**, then **Cloud Services Configurations,** then **Silverpop Engage**.
 1. Click **New** to open the **Create Page** window.
 
-   ![chlimage_1-44](assets/chlimage_1-44.jpeg)
+   ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
 1. Enter the **Title** and optionally the **Name**, and click **Create**.
 1. Enter the configuration information as outlined in step 4 in the previous procedure. Follow that procedure to finish configuring Silverpop.
@@ -73,7 +74,7 @@ To add multiple configurations:
 
 Currently, AEM has six unsecured end points (Engage 1 to 6). Silverpop now provides two new end points as well as changed connection end points for the existing ones.
 
-To configure the API end points :
+To configure the API end points:
 
 1. Go to `/libs/mcm/silverpop/components/silverpoppage/dialog/items/general/items/apiendpoint/options node` on `https://<hostname>:<port>/crxde.`
 1. Right-click and select **Create**, then **Create Node**.
@@ -83,7 +84,7 @@ To configure the API end points :
     1. **Name**: `text`, **Type**: `String`, **Value**: `Engage 0`
     1. **Name**: `value`, **Type**: `String`, **Value**: `https://api0.silverpop.com`
 
-   ![chlimage_1-286](assets/chlimage_1-286.png)
+   ![chlimage_1-42](assets/chlimage_1-42.png)
 
    Click on "Save All" button.
 
@@ -107,5 +108,5 @@ To configure the API end points :
 
 1. Click **Save All**. AEM is now ready to connect to Silverpop over secured end points.
 
-   ![chlimage_1-45](assets/chlimage_1-45.jpeg)
+   ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 

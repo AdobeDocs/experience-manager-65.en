@@ -115,7 +115,7 @@ Select the fragment to reveal the toolbar with applicable actions:
 
 >[!NOTE]
 >
->Many of these are [standard actions for Assets](/help/assets/managing-assets-touch-ui.md) and/or the [Desktop App](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>Many of these are [standard actions for Assets](/help/assets/managing-assets-touch-ui.md) and/or the [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
 
 ## Opening the Fragment Editor {#opening-the-fragment-editor}
 
@@ -148,7 +148,7 @@ To open your fragment for editing:
 
     * [Annotations](/help/assets/content-fragments-variations.md#annotating-a-content-fragment)
     * [Associated Content](#associating-content-with-your-fragment)
-    * [Metadata](#viewingandeditingthemetadataofyourfragment)
+    * [Metadata](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 
    ![cfm-10](assets/cfm-10.png)
 
@@ -191,7 +191,7 @@ The editor has two options:
 
 While editing your content fragment AEM automatically creates versions to ensure that prior content can be restored if you **Cancel** your changes:
 
-1. When a content fragment is opened for editing AEM checks for the existence of the cookie-based token that indicates whether an *editing session *exists:
+1. When a content fragment is opened for editing AEM checks for the existence of the cookie-based token that indicates whether an *editing session* exists:
 
     1. If the token is found, the fragment is considered to be part of the existing editing session.
     1. If the token is *not* available and the user starts editing content, a version is created and a token for this new editing session is sent to the client, where it is saved in a cookie.

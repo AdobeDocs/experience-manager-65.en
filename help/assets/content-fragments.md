@@ -70,7 +70,7 @@ Together with the JSON export capabilities of AEM core components, this structur
 
 >[!NOTE]
 >
->**Content Fragments** and ** [Experience Fragments](/help/sites-authoring/experience-fragments.md)** are different features within AEM:
+>**Content Fragments** and **[Experience Fragments](/help/sites-authoring/experience-fragments.md)** are different features within AEM:
 >* **Content Fragments** are editorial content, primarily text and related images. They are pure content, without design and layout.
 >* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
@@ -109,7 +109,7 @@ Content fragments are:
   * Content fragments (and their variations) can be created and maintained from the **Assets** console.
   * Authored and edited in the Content Fragment Editor.
 
-* Used in the [page editor by means of the **Content Fragment** component](/help/sites-authoring/content-fragments.md) (referencing component):
+* Used in the [page editor by means of the Content Fragment component](/help/sites-authoring/content-fragments.md) (referencing component):
 
   * The **Content Fragment** component is available to page authors. It allows them to reference, and deliver, the required content fragment in either HTML or JSON format.
 
@@ -174,7 +174,7 @@ The content fragment assets are made up of the following parts (either directly 
 
   * In the [Rich Text](/help/assets/content-fragments-variations.md#rich-text) and [Markdown](/help/assets/content-fragments-variations.md#markdown) modes, a paragraph can be formatted as a header, in which case it and the following paragraph belong together as one unit.
 
-    * Enable content control during page authoring.
+  * Enable content control during page authoring.
 
 * **Assets Inserted into a Fragment (Mixed-Media Fragments)**
 
@@ -227,7 +227,7 @@ The content fragment assets are made up of the following parts (either directly 
     * Every content fragment has one instance of Master.
     * Master cannot be deleted.
 
-  * Master is accessible in the fragment editor under ** [Variations](/help/assets/content-fragments-variations.md)**.
+  * Master is accessible in the fragment editor under **[Variations](/help/assets/content-fragments-variations.md)**.
   * Master is not a variation as such, but is the basis of all variations.
 
 * **Variations**
@@ -287,4 +287,4 @@ A fragment, with its elements and variations, can be used to create coherent con
 
 A sample fragment can be seen at:
 
-` [https://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](https://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)`
+`https://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten`

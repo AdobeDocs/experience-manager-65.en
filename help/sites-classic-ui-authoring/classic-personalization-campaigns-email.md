@@ -178,14 +178,13 @@ To customize newsletter settings:
 1. At the top of the newsletter, click **Settings**.
 
    ![mcm_newsletter_settings](assets/mcm_newsletter_settings.png)
+1. Enter the **From** e-mail address
 
-1.
+1. Modify the **Subject** of the e-mail, if necessary.
 
-    1. Enter the **From** e-mail address
+1. Select a **Default Recipients List** from the drop down list.
 
-    1. Modify the **Subject** of the e-mail, if necessary.
-    1. Select a **Default Recipients List** from the drop down list.
-    1. Click **OK**.
+1. Click **OK**.
 
    When you test or send the newsletter, recipients will receive e-mails with the specified e-mail address and subject.
 
@@ -298,4 +297,3 @@ To subscribe to a newsletter (using the Geometrixx web site as an example):
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
 1. In the Geometrixx Newsletter **Sign Up** field, enter your e-mail address and click **Sign Up**. You are now subscribed to the newsletter.
-

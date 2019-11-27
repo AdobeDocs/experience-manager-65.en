@@ -3,12 +3,13 @@ title: Reporting
 seo-title: Reporting
 description: Learn how to work with Reporting in AEM.
 seo-description: Learn how to work with Reporting in AEM.
-uuid: d6105d54-4d38-40a4-bd60-00057b84f7b8
+uuid: eee4befd-5fa9-4ebc-8eea-56e1534a6b9b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
+discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
+docset: aem65
 ---
 
 # Reporting {#reporting}
@@ -168,7 +169,7 @@ Once data collection has started you can select:
 
 Select your requirements, then click **Go** to apply them to the report. To update the display after further snapshots have been made, click **Go** again.
 
-![chlimage_1-62](assets/chlimage_1-62.png)
+![chlimage_1-43](assets/chlimage_1-43.png)
 
 When snapshots are being collected you can:
 
@@ -189,7 +190,7 @@ When snapshots are being collected you can:
 
 >[!NOTE]
 >
->The preconfigured reports are not perfomance intensive, but it is still recommended to use daily snapshots on a production environment. If possible run these daily snapshots at a time of day when there is not much activity on your website; this can be defined with the `Daily snapshots (repconf.hourofday)` parameter for **Day CQ Reporting Configuration**; see [OSGI Configuration](/help/sites-deploying/configuring-osgi.md) for more details on how to configure this.
+>The pre-configured reports are not performance intensive, but it is still recommended to use daily snapshots on a production environment. If possible run these daily snapshots at a time of day when there is not much activity on your website; this can be defined with the `Daily snapshots (repconf.hourofday)` parameter for **Day CQ Reporting Configuration**; see [OSGI Configuration](/help/sites-deploying/configuring-osgi.md) for more details on how to configure this.
 
 #### Display Limits {#display-limits}
 
@@ -197,7 +198,7 @@ The historical data report can also change slightly in appearance due to limits 
 
 Each horizontal line is known as a series (and corresponds to an entry in the chart legend), each vertical column of dots represents the aggregated snapshots.
 
-![chlimage_1-63](assets/chlimage_1-63.png)
+![chlimage_1-44](assets/chlimage_1-44.png)
 
 To keep the chart clean over longer periods of time there are limits which can be set. For the standard reports these are:
 
@@ -210,7 +211,7 @@ So when the (appropriate) limits are exceeded the:
 * the dots will not be displayed
 * the legend for the historical data chart might show a different number of entries to that of the current data chart
 
-![chlimage_1-64](assets/chlimage_1-64.png)
+![chlimage_1-45](assets/chlimage_1-45.png)
 
 Customized reports can also show the **Total** value for all series. This is shown as a series (horizontal line and entry in the legend).
 
@@ -259,13 +260,13 @@ This is one location where the period for collecting snapshots for [Historic dat
 
 The **Load data** button is only visible when **manually refresh data** has been selected from **[Edit](#edit-report)**.
 
-![chlimage_1-65](assets/chlimage_1-65.png)
+![chlimage_1-46](assets/chlimage_1-46.png)
 
 Clicking on **Load data** will reload the data and update the report being shown.
 
 Selecting to manually refresh data means that:
 
-1. As soon as you changethereport configuration, the table of report data will be blanked out.
+1. As soon as you change the report configuration, the table of report data will be blanked out.
 
    For example, if you change the sort mechanism for a column, the data will not be shown.
 

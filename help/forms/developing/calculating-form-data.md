@@ -3,18 +3,16 @@ title: Calculating Form Data
 seo-title: Calculating Form Data
 description: null
 seo-description: null
-uuid: 9980380c-363d-490f-83b8-5188e2fecce6
+uuid: ccd85bc7-8ccc-44d9-9424-dfc1f603e688
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
-discoiquuid: e28216c2-6d0d-4608-a1d3-c1a3404df47c
-docset: aem65
-
+discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 ---
 
-# Calculating Form Data{#calculating-form-data}
+# Calculating Form Data {#calculating-form-data}
 
 The Forms service can calculate the values that a user enters into a form and display the results. To calculate form data, you must perform two tasks. First, you create a form design script that calculates form data. A form design supports three types of scripts. One script type runs on the client, another runs on the server, and the third type runs on both the server and the client. The script type discussed in this topic runs on the server. Server-side calculations are supported for HTML, PDF, and form Guide (deprecated) transformations.
 
@@ -25,7 +23,8 @@ The user enters values into the form and clicks the Calculate button to view the
 * The user accesses an HTML page named StartLoan.html that acts as the web application’s start page. This page invokes a Java Servlet named `GetLoanForm`.
 * The `GetLoanForm` servlet renders a loan form. This form contains a script, interactive fields, a calculate button, and a submit button.
 * The user enters values into the form’s fields and clicks the Calculate button. The form is sent to the `CalculateData` Java Servlet where the script is executed. The form is sent back to the user with the calculation results displayed in the form.
-* The user continues entering and calculating values until a satisfactory result is displayed. When satisfied, the user clicks the Submit button to process the form. The form is sent to another Java Servlet named `ProcessForm` that is responsible for retrieving submitted data. (See [Handling Submitted Forms](/programming-with-aem-forms/rendering-forms-rendering-forms handling-submitted-forms-handling-submitted.md#handling_submitted_forms).)
+* The user continues entering and calculating values until a satisfactory result is displayed. When satisfied, the user clicks the Submit button to process the form. The form is sent to another Java Servlet named `ProcessForm` that is responsible for retrieving submitted data. (See [Handling Submitted Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
+
 
 The following diagram shows the application’s logic flow.
 
@@ -107,7 +106,7 @@ Before you can programmatically perform a Forms service Client API operation, yo
 
 **Retrieve a form containing a calculation script**
 
-You use the Forms service Client API to create application logic that handles a form that contains a script configured to run on the server. The process is similar to handling a submitted form. (See [Handling Submitted Forms](/help/forms/developing/handling-submitted-forms.md#handling_submitted_forms).)
+You use the Forms service Client API to create application logic that handles a form that contains a script configured to run on the server. The process is similar to handling a submitted form. (See [Handling Submitted Forms](/help/forms/developing/rendering-forms-rendering-forms handling-submitted-forms-handling-submitted.md#handling-submitted-forms).)
 
 Verify that the processing state associated with the submitted form is `1` `(Calculate)`, which means that the Forms service is performing a calculation operation on the form data and the results must be written back to the user. In this situation, a script configured to run on the server is automatically executed.
 
@@ -117,23 +116,13 @@ After you verify the processing state associated with a submitted form is `1`, y
 
 **See also**
 
-[Calculate form data using the Java API](/help/forms/developing/calculating-form-data.md#calculate_form_data_using_the_java_api)
-
-[Calculate form data using the web service API](/help/forms/developing/calculating-form-data.md#calculate_form_data_using_the_web_service_api)
-
-<!-- unresolved
-[Including AEM Forms Java library files](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7b4b.2)
-
-[Setting connection properties](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7fd6.2)
-
-[Forms Service API Quick Starts](#unresolvedlink-lc-qs-forms-fo.xml#ws624e3cba99b79e12e69a9941333732bac8-7af6.2)
--->
-
-[Rendering Interactive PDF Forms](/programming-with-aem-forms/rendering-forms-rendering-forms rendering-interactive-pdf-forms-rendering.md#rendering_interactive_pdf_forms)
-
-[Rendering Forms as HTML](/programming-with-aem-forms/rendering-forms-rendering-forms rendering-forms-html-rendering-forms rendering-forms-html-rendering-forms.md#rendering_forms_as_html)
-
-[Creating Web Applications that Renders Forms](/programming-with-aem-forms/rendering-forms-rendering-forms creating-web-applications-renders-forms.md#creating_web_applications_that_renders_forms)
+[Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Calculate form data using the Java API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
+[Calculate form data using the web service API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
+[Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Forms Service API Quick Starts](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Rendering Interactive PDF Forms](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Creating Web Applications that Renders Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calculate form data using the Java API {#calculate-form-data-using-the-java-api}
 
@@ -172,15 +161,9 @@ Calculate form data by using the Forms API (Java):
 
 **See also**
 
-[Calculating Form Data](/programming-with-aem-forms/rendering-forms-rendering-forms calculating-form-data-calculating-form calculating-form-data-calculating-form.md#calculating_form_data)
 
-<!-- unresolved
-[Quick Start (EJB mode): Handling a form containing a calculation script using the Java API](#unresolvedlink-lc-qs-forms-fo.xml#ws624e3cba99b79e12e69a9941333732bac8-7e21.2)
-
-[Including AEM Forms Java library files](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7b4b.2)
-
-[Setting connection properties](#unresolvedlink-lc-in-invoke-using-java-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7fd6.2)
--->
+[Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Calculate form data using the web service API {#calculate-form-data-using-the-web-service-api}
 
@@ -230,11 +213,4 @@ Calculate form data by using the Forms API (web service):
     * Invoke the `javax.servlet.http.HttpServletResponse` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**
-
-<!-- broken and unresolved
-[Calculating Form Data](/programming-with-aem-forms/rendering-forms-rendering-forms-calculating-form-data-calculating-form calculating-form-data-calculating-form.md#calculating_form_data)
-
-[Quick Start (Base64): Handling a form containing a calculation script using web service API](#unresolvedlink-lc-qs-forms-fo.xml#ws624e3cba99b79e12e69a9941333732bac8-7e20.2)
-
-[Invoking AEM Forms using Base64 encoding](#unresolvedlink-lc-in-invoke-using-web-services-iu.xml#ws624e3cba99b79e12e69a9941333732bac8-7fca.2)
--->
+[Invoking AEM Forms using Base64 encoding](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

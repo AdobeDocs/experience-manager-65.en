@@ -222,7 +222,7 @@ There are two icons in the bottom border of the sidekick that are important to p
 
 ## Find & Replace {#find-replace}
 
-For larger scale edits of the same phrase a ** [Find & Replace](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** menu option allows you to search for, and replace multiple instances of a string, within a section of the website.
+For larger scale edits of the same phrase a **[Find & Replace](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** menu option allows you to search for, and replace multiple instances of a string, within a section of the website.
 
 ## Locking a Page {#locking-a-page}
 
@@ -303,4 +303,3 @@ Form fields that form components render are not meant to have values specified w
 >[!NOTE]
 >
 >Special permissions are required to undo and redo changes to files and images. Also, undo history for changes to files and images lasts for a minimum of hours. Beyond this time however, the undo of the changes is not guaranteed. Your administrator can provide permissions and change the default time of ten hours.
-
