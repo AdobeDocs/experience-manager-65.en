@@ -61,13 +61,11 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Installing and configuring AEM Forms Document Security server](using/installing-and-configuring-the-document-security-server.md)
     + [Prepare to install AEM Forms single server](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
     + [Install and deploying AEM Forms on JEE for JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
-    + [Install and deploying AEM Forms on JEE for WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_65)
     + [Install and deploying AEM Forms on JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
     + [Install AEM Forms Workbench](http://help.adobe.com/en_US/AEMForms/6.1/InstallWorkbench/index.html)
     + [Install and configure Designer](using/installing-configuring-designer.md)
     + [Prepare to install AEM Forms server cluster](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
     + [Configure AEM Forms on JEE on JBoss cluster](http://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
-    + [Configure AEM Forms on JEE on WebLogic cluster](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
     + [Configure AEM Forms on JEE on WebSphere cluster](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
   + Configure AEM Forms {#configure-aem-forms}
     + [Performance tuning of AEM Forms server](using/performance-tuning-aem-forms.md)
@@ -90,7 +88,6 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Upgrade to AEM 6.5 forms on JEE](using/upgrade-forms-jee.md)
     + [Upgrading from an AEM Forms release to AEM 6.5 Forms on JEE for JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
     + [Upgrading from an AEM Forms release to AEM 6.5 Forms on JEE for JBoss turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
-    + [Upgrading from an AEM Forms release to AEM 6.5 Forms on JEE for WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
     + [Upgrading from an AEM Forms release to AEM 6.5 Forms on JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
 + Manage AEM Forms {#manage-administer-aem-forms}
   + [AEM Forms on OSGi Groups and Privileges](using/forms-groups-privileges-tasks.md)
@@ -466,7 +463,6 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Overview of configuring SSL](/help/forms/using/admin-help/overview-6.md)
     + [Configuring SSL for JBoss Application Server](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
     + [Configuring SSL on Windows Vista](/help/forms/using/admin-help/configuring-ssl-windows-vista.md)
-    + [Configuring SSL for WebLogic Server](/help/forms/using/admin-help/configuring-ssl-weblogic-server.md)
     + [Configuring SSL for WebSphere Application Server](/help/forms/using/admin-help/configuring-ssl-websphere-application-server.md)
   + Working with document security {#work-with-document-security}
     + [About document security](/help/forms/using/admin-help/document-security.md)
@@ -539,7 +535,6 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Application server websites](/help/forms/using/admin-help/application-server-websites.md)
     + [Global document storage directory](/help/forms/using/admin-help/global-document-storage-directory.md)
     + [Considerations when running AdministrationConsole](/help/forms/using/admin-help/considerations-running-administration-console.md)
-    + [Starting and stopping WebLogic Server](/help/forms/using/admin-help/starting-stopping-weblogic-server.md)
     + [Enhancing application server performance](/help/forms/using/admin-help/enhancing-application-server-performance.md)
     + [Starting and stopping WebSphere Application Server](/help/forms/using/admin-help/starting-stopping-websphere-application-server.md)
   + AEM forms Backup and Recovery {#aem-forms-backup-recovery}
