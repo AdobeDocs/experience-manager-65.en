@@ -155,12 +155,6 @@ By default, AEM runs a maximum number of parallel jobs equal to the number of pr
 
 Setting a queue to half of the available processors is a workable solution to start with. However, you may have to increase or decrease this number to achieve maximum throughput and tune it by environment. There are separate queues for transient and non-transient workflows as well as other processes, such as external workflows. If several queues set to 50% of the processors are active simultaneously, the system can get overloaded quickly. The queues that are heavily used vary greatly across user implementations. Therefore, you may have to configure them thoughtfully for maximum efficiency without sacrificing server stability.
 
-### Offloading {#offloading}
-
-For high-volume of workflows or workflows that are resource intensive, such as video transcoding, you may offload DAM Update Asset workflows to a second author instance. Often, the problem with offloading is that any load that is saved by offloading the workflow processing is offset by the cost of replicating the content back and forth between instances.
-
-As of AEM 6.2 and with a feature pack for AEM 6.1, you can perform offloading with binary-less replication. In this model, the author instances share a common datastore and only send the metadata back and forth through forward replication. While this approach works well with a shared file datastore, there can be issues with an S3 datastore. Because background writing threads can induce latency, it is possible that an asset may not have been written to the datastore before the offloading job starts.
-
 ### DAM Update Asset configuration {#dam-update-asset-configuration}
 
 The DAM Update Asset workflow contains a full suite of steps that are configured for tasks, such as Scene7 PTIFF generation and InDesign Server integration. However, most users may not require several of these steps. Adobe recommends you create a custom copy of the DAM Update Asset workflow model, and remove any unnecessary steps. In this case, update the launchers for DAM Update Asset to point to the new model.
@@ -310,7 +304,7 @@ When creating queries that generate large result sets, use the `guessTotal` para
 
 There are two major known issues related to large files in AEM. When files reach sizes greater than 2 GB, cold standby synchronization can run into an out-of-memory situation. In some cases, it prevents standby sync from running. In other cases, it causes the primary instance to crash. This scenario applies to any file in AEM that is larger than 2GB, including content packages.
 
-Likewise, when files reach 2 GB in size while using a shared S3 datastore, it may take some time for the file to be fully persisted from the cache to the filesystem. As a result, when using binary-less replication, it is possible that the binary data may not have been persisted before replication completes. This situation can lead to issues, especially if the availability of data is important, for example in offloading scenarios.
+Likewise, when files reach 2 GB in size while using a shared S3 datastore, it may take some time for the file to be fully persisted from the cache to the filesystem. As a result, when using binary-less replication, it is possible that the binary data may not have been persisted before replication completes. This situation can lead to issues, especially if the availability of data is important.
 
 ## Performance testing {#performance-testing}
 
