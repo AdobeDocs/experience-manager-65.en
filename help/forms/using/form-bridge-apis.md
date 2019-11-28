@@ -91,23 +91,29 @@ Returns the version number of the Scripting library
           *window.formBridge.registerConfig("pagingConfig":{pagingDisabled: <true | false>, shrinkPageDisabled: <true | false> }).*
 
         * **LoggingConfig:** Allows the user to override the level of logging, disable logging for a category, or whether to display the logs console or send to server. The configuration can be overridden as follows:**
-        * *formBridge.registerConfig{
-          **"LoggerConfig" : {
-        * *{
-        * *"on":`<true *| *false>`,
-        * *"category":`<array of categories>`,
-        * *"level":`<level of categories>`, "
-        * *type":`<"console"/"server"/"both">`
-        * *}
-          **}*
+
+        ``` JavaScript
+        formBridge.registerConfig{
+          "LoggerConfig" : {
+        {
+        "on":`<true *| *false>`,
+        "category":`<array of categories>`,
+        "level":`<level of categories>`, "
+        type":`<"console"/"server"/"both">`
+        }
+          }
+        ```
 
         * ***SubmitServiceProxyConfig:** Allow the users to register submission and logger proxy services.
-          *window.formBridge.registerConfig("submitServiceProxyConfig",
+
+          ``` JavaScript
+          window.formBridge.registerConfig("submitServiceProxyConfig",
           {
           "submitServiceProxy" : "`<submitServiceProxy>`",
           "logServiceProxy": "`<logServiceProxy>`",
           "submitUrl" : "`<submitUrl>`"
           });
+          ```
 
     * **config:** Value of the configuration
 
@@ -185,7 +191,7 @@ Returns the version number of the Scripting library
 
 ### Example of&nbsp;getFieldValue() API {#example-of-nbsp-getfieldvalue-api}
 
-```
+```JavaScript
 var a =  formBridge.getFieldValue(“xfa.form.form1.Subform1.TextField”);
 if(a.errors) {
     var err;
@@ -221,7 +227,7 @@ if(a.errors) {
 
 ## Sample Usage of Form Bridge API {#sample-usage-of-form-bridge-api}
 
-```
+```JavaScript
 // Example 1: FormBridge.restoreFormState
   function loadFormState() {
     var suc = function(obj) {

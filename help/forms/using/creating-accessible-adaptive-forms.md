@@ -35,7 +35,7 @@ The label that is perceived by screen readers need not necessarily be the same a
 To use the Accessibility option, follow these steps:
 
 1. Select a component and tap ![cmppr](assets/cmppr.png).
-1. Click **Accessibility **in the sidebar to choose the desired accessibility option.
+1. Click **Accessibility** in the sidebar to choose the desired accessibility option.
 
 ### Accessibility options in form components {#accessibility-options-in-form-components}
 

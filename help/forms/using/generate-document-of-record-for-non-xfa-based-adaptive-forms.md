@@ -264,7 +264,7 @@ Perform the following steps to configure a document of record for adaptive forms
 
    >[!NOTE]
    >
-   >In the Form Model tab, ensure that you select** Schema** or **None** from the **Select From** drop-down. **[!UICONTROL Document of record is not supported for XFA-based or adaptive forms with Form Template as form model.]**
+   >In the Form Model tab, ensure that you select **Schema** or **None** from the **Select From** drop-down. **[!UICONTROL Document of record is not supported for XFA-based or adaptive forms with Form Template as form model.]**
 
 1. In the Document of Record Template Configuration section of the Form Model tab, select one of the following options.
 
