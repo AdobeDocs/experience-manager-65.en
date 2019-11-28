@@ -9,7 +9,7 @@ docset: aem65
 
 ---
 
-# Assets supported formats{#assets-supported-formats}
+# Assets supported formats {#assets-supported-formats}
 
 The article list all the formats that are supported by AEM Assets and the specific features that support each format.
 
@@ -282,7 +282,9 @@ The Adobe Camera Raw library enables AEM Assets to ingest raw images. For detail
 
 ## Supported MIME types {#supported-mime-types}
 
-MIME types are available in CRXDE Lite at `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
+By default, AEM detects the file type using the file extension. AEM can detect it from the contents of the files. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the AEM Web Console.
+
+A list of supported MIME types are available in CRXDE Lite at `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 See [Configure MIME type-based for upload job parameters support](/help/assets/config-dynamic.md).
 
@@ -729,6 +731,3 @@ See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/
   </tr>
  </tbody>
 </table>
-
-By default, files types are detected using the file extension. AEM can detect file types from the content of the files. For latter, enable **[!UICONTROL Detect MIME type from content]** option in **[!UICONTROL Day CQ DAM Mime Type Service]** in the AEM Web Console.
-
