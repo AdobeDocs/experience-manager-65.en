@@ -132,7 +132,7 @@ The MS Dynamics OData Cloud Service (OData Service) cloud service is configured 
 
 ## Create form data model {#create-form-data-model}
 
-When you install the AEM Forms package, a form data model,** Microsoft Dynamics FDM**, is deployed on your AEM instance. By default, the form data model uses Microsoft Dynamics service configured in the MS Dynamics OData Cloud Service (OData Service) as its data source.
+When you install the AEM Forms package, a form data model,**Microsoft Dynamics FDM**, is deployed on your AEM instance. By default, the form data model uses Microsoft Dynamics service configured in the MS Dynamics OData Cloud Service (OData Service) as its data source.
 
 On opening the form data model for the first time, it connects to the configured Microsoft Dynamics service and fetches entities from your Microsoft Dynamics instance. The "contact" and "lead" entities from Microsoft Dynamics are already added in the form data model.
 

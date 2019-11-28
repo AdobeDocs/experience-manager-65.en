@@ -35,7 +35,7 @@ Once the application is submitted and its fee is paid, the applicant receives an
 
 The We.Gov organization receives the application. The organization gets the application assessed, and approves the applications that are genuine.
 
-After the application is approved, the applicant receives an email from the We.Gov site. The **View Document **option in the email links to a document with the enrollment details of the applicant.
+After the application is approved, the applicant receives an email from the We.Gov site. The **View Document** option in the email links to a document with the enrollment details of the applicant.
 
 The infographic below shows the step-by-step workflow of the We.Gov reference site scenario.
 
@@ -214,7 +214,7 @@ When Sarah fills and submits the child support application, a PDF or Document of
 
 ### See it yourself {#see-it-yourself-2}
 
-Open page `https://<***hostname***>:<*PublishPort***>/content/we-gov/en.html.`On the page, tap **[!UICONTROL Sign In]**, select the **[!UICONTROL Login as representative]** checkbox, log in to the AEM inbox using grios/password as the username/password for Gloria Rios. The child support application appears. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
+Open page `https://<hostname>:<PublishPort>/content/we-gov/en.html.`On the page, tap **[!UICONTROL Sign In]**, select the **[!UICONTROL Login as representative]** checkbox, log in to the AEM inbox using grios/password as the username/password for Gloria Rios. The child support application appears. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
 
 ![Gloria's inbox in We.Gov refsite](assets/gloria-inbox.png)
 

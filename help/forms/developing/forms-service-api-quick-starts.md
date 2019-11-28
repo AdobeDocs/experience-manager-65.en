@@ -47,9 +47,9 @@ The following Quick Starts are available for the Forms service:
 
 Application logic that uses the Forms service API is implemented as Java servlets. AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
 
-* ***Note**: Quick starts located in Programming with v are based on the forms server being you are using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. (See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+* ***Note**: Quick starts located in Programming with v are based on the forms server being you are using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. (See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
-  ***Tip**: The Adobe Developer web site contains the following article that discusses how to create a ASP.NET application that invokes the Forms service and renders forms. See [Creating form rendering ASP.NET applications](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)*.**
+  ***Tip**: The Adobe Developer web site contains the following article that discusses how to create a ASP.NET application that invokes the Forms service and renders forms. See [Creating form rendering ASP.NET applications](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).
 
 ## Quick Start (SOAP mode): Rendering an interactive PDF form using the Java API {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 

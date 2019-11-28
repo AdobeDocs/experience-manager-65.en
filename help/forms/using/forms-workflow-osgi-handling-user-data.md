@@ -129,7 +129,7 @@ You must be an AEM administrator to delete user data from workflow instances by 
     * Paths to payloads for the workflow instances
     * Paths to drafts and history for the workflow instances
 
-1. Perform this step for workflow instances in **RUNNING**,** SUSPENDED**, or **STALE** status:
+1. Perform this step for workflow instances in **RUNNING**, **SUSPENDED**, or **STALE** status:
 
     1. Go to `https://[server]:[port]/aem/start.html` and log in with administrator credentials.
     1. Navigate to **[!UICONTROL Tools > Workflow> Instances]**.

@@ -83,7 +83,7 @@ The Renew Now button directs Sarah to the payment page. The payment page is an a
 
 #### See it yourself {#see-it-yourself-2}
 
-Click **Renew Now** to reach to the Payment page. Fill in your Credit Card information, and click **Make Payment.**
+Click **Renew Now** to reach to the Payment page. Fill in your Credit Card information, and click **Make Payment**.
 
 You can reach the payment page in the authoring instance at
 

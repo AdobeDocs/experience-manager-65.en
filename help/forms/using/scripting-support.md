@@ -1346,6 +1346,6 @@ The following client sided XFA events are supported:
 
 >[!NOTE]
 >
->HTML5 forms are rendered on the client-side (browser). It is recomended to use client side **validate **and **calculate **scripts instead of server-sided scripts.
+>HTML5 forms are rendered on the client-side (browser). It is recomended to use client side **validate** and **calculate** scripts instead of server-sided scripts.
 
 **[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

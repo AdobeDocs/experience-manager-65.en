@@ -8,7 +8,7 @@ user-guide-title: AEM 6.5 Forms User Guide
 
 + [AEM 6.5 Forms User Guide](home.md)
 + Release Notes {#release-notes-new-features}
-  + [Release Notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/forms.html)
+  + [Release Notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html#experience-manager-forms)
   + [New features summary](using/whats-new.md)
   + [Deprecated features](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Getting Started {#getting-started}
@@ -49,7 +49,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Architecture and deployment topologies for AEM Forms](using/aem-forms-architecture-deployment.md)
   + [Choosing a persistence type for an AEM Forms installation](using/choosing-persistence-type-for-aem-forms.md)
   + Install AEM Forms on OSGi {#osgi-installation}
-    + [Supported platforms for AEM forms on OSGi](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/technical-requirements.html)
+    + [Supported platforms for AEM forms on OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/introduction/technical-requirements.html)
     + [Install and configure document services](using/install-configure-document-services.md)
     + [Install and configure data capture capabilities](using/installing-configuring-aem-forms-osgi.md)
     + [Install and Configure Forms-centric workflow on OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)

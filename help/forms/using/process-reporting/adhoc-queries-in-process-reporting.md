@@ -83,9 +83,9 @@ You use Process/Task Search to define filters for querying process/task instance
 
        ![filter_value](assets/filter_value.png)
 
-    1. To add another filter to the query, click **Add **(+) on the right of the filter row.
+    1. To add another filter to the query, click **Add (+)** on the right of the filter row.
 
-       To remove a filter from the query, click **Delete **(-) on the right of the filter row.
+       To remove a filter from the query, click **Delete (-)** on the right of the filter row.
 
        ![filter_add_del](assets/filter_add_del.png)
 

@@ -178,15 +178,10 @@ New features include:
 
 Key enhancements help to find the right assets faster by providing dynamic search facets, and to manage multiple assets more efficiently by providing ability to select all assets from any folder or search result.
 
-### Experience Manager Forms {#experience-manager-forms}
+### Adobe Experience Manager Forms {#experience-manager-forms}
 
 AEM 6.5 Forms brings in several new features and enhancements. The highlights include:
 
-*
-*
-*
-*
-*
 * Transaction reports to track the number of submitted forms, processed documents, and rendered documents
 * Usability improvements to interactive communications
 * Cloud-based digital signatures in adaptive forms
@@ -196,9 +191,7 @@ AEM 6.5 Forms brings in several new features and enhancements. The highlights in
 * Sorting adaptive forms and interactive communication tables
 * Automated validation of input data in form data models
 
-See the [Summary of new features and enhancements in AEM 6.5 Forms](/help/forms/using/whats-new.md) for information about new and improved features and documentation resources. `<sub>``<sup>``<strike>`
-
-* `<sub>``<sup>``<strike>``<sub>``<sup>``<strike>`
+See the [Summary of new features and enhancements in AEM 6.5 Forms](/help/forms/using/whats-new.md) for information about new and improved features and documentation resources.
 
 ### Experience Manager Communities {#communitiesreleasenotes}
 
