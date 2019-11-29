@@ -78,7 +78,6 @@ For this use case it is not required to buy AEM Assets, even the use of the Medi
 * InDesign server integration
 * Asset Templates and catalog producer framework
 * Adobe Photoshop, Illustrator, and InDesign linked-assets
-* DAM Proxy Server - performance offloading
 * Multi-lingual asset management
 * PIM integration
 * Rights Management
