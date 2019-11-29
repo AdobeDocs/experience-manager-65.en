@@ -1,6 +1,7 @@
 ---
 cloud: experience-cloud
 product: Adobe Experience Manager
+sub-product: forms
 audience: end-user
 user-guide-title: AEM 6.5 Forms User Guide
 ---
