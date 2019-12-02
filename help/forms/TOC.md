@@ -604,6 +604,7 @@ user-guide-title: AEM 6.5 Forms User Guide
       + [XMP Utilities Service Java APIQuick Start(SOAP)](developing/xmp-utilities-service-java-api.md)
     + Invoking AEM Forms on JEE using APIs {#invoking-aem-forms-jee-apis}
       + [Invoking AEM Forms using REST Requests](developing/invoking-aem-forms-using-rest.md)
+      + [Invoking AEM Forms using Web Services](developing/invoking-aem-forms-using-web.md)
       + [Invoking AEM Forms using Remoting](developing/invoking-aem-forms-using-remoting.md)
       + [Invoking AEM Forms using Web Services](developing/invoking-human-centric-long-lived.md)
       + [Invoking AEM Forms using the JavaAPI](developing/invoking-aem-forms-using-java.md)
