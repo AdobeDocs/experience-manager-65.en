@@ -42,8 +42,6 @@ If you have an AEM Forms Workflow server, you can render forms as tasks in AEM F
 
 If you have an AEM Forms server, you can render adaptive forms as AEM Inbox application, and tasks in AEM Forms app. For example, you run a banking firm, and customer fills an application to use your services. The application is associated with an adaptive form that accepts information from your customers, and stores it as a submission for review. The administrator reviews the task and approves the verification request to the field worker. Your field worker carries the mobile device to your customer and verifies the details.
 
-For more information on AEM Forms app working with AEM Forms server, see [Conard gets assessment task](/help/forms/using/gov-reference-site-walkthrough.md#contard-assessment-task) in the refsite documentation.
-
 ### Standalone forms or AEM Forms app with servers without AEM Forms Workflow {#standalone-forms-or-aem-forms-app-with-servers-without-aem-forms-workflow}
 
 An AEM Forms server not using AEM Forms Workflow is AEM Forms on OSGi or a standalone mobile form or adaptive form. AEM Forms app works with your AEM Forms implementation on [OSGi](/help/sites-deploying/configuring-osgi.md). Forms you enable and publish for AEM Forms app are available in your app.

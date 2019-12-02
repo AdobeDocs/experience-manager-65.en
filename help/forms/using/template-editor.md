@@ -32,13 +32,13 @@ Once you tap to open a folder, you will find a Create button that allows creatin
 
 After you have created a folder, open the folder and perform the following steps to create a template:
 
-1. In the Template console, tap **Create **inside the folder you have created.
-1. In the Pick a Template Type section, select **Adaptive Form Template **and tap **Next**.
+1. In the Template console, tap **Create** inside the folder you have created.
+1. In the Pick a Template Type section, select **Adaptive Form Template** and tap **Next**.
 
 1. In the Template Details section, provide a Template Title and tap **Create**.
    You can provide a description and thumbnail that you can see when you can select the created template at the time of form authoring.
 
-1. Tap **Done **to return to the console, or tap **Open **to open the template in the editor.
+1. Tap **Done** to return to the console, or tap **Open** to open the template in the editor.
 
 ### Template editor UI {#template-editor-ui}
 
@@ -102,12 +102,14 @@ For example, you add the header component in the template. When you select the c
 
 When the Initial Content option is selected, the Adaptive Form Container of the template opens like an adaptive form for editing. Like authoring an adaptive form, you can specify initial settings, such as selecting a theme and submit actions.
 
-Form authors use it as a base to create a form. Content flow structure is specified in the Initial Content layer of the template. To switch to editing initial content of the form template, before Preview in the page toolbar, tap ![canvas-drop-down](assets/canvas-drop-down.png)**&gt; Initial Content**.
-[ ![Initial Content layer in Template Editor](assets/initial-content-layer.png)
+Form authors use it as a base to create a form. Content flow structure is specified in the Initial Content layer of the template. To switch to editing initial content of the form template, before Preview in the page toolbar, tap ![canvas-drop-down](assets/canvas-drop-down.png) **&gt; Initial Content**.
+![Initial Content layer in Template Editor](assets/initial-content-layer.png)
 
 Initial Content layer in Template Editor showing Adaptive Form Container selected for specifying properties.
 
-](assets/initial-content-layer-1.png) In the Initial Content layer, you create the adaptive form template that your authors use as a base. Authoring a template is similar to authoring a form, you use options available in the Sidebar. Sidebar provides content, properties, assets, and components browsers.
+![initial content](assets/initial-content-layer-1.png) 
+
+In the Initial Content layer, you create the adaptive form template that your authors use as a base. Authoring a template is similar to authoring a form, you use options available in the Sidebar. Sidebar provides content, properties, assets, and components browsers.
 
 See [Sidebar](../../forms/using/introduction-forms-authoring.md#sidebar).
 
@@ -126,12 +128,12 @@ You have added a logo, provided a title, and added a footer in the structure lay
 
 Change the layer from Structure to Initial Content, and start adding content to the form. To create a tabbed structure, add a child Panel in the guideRootPanel of the Adaptive Form container. To add a panel:
 
-* You can add a panel by tapping the **+** button when you select the **Drag components here **option.
+* You can add a panel by tapping the **+** button when you select the **Drag components here** option.
 
 * You can drag-drop the panel component from the components browser in the sidebar.
 * You can add child panel of the `guideRootPanel` from the component toolbar.
 
-To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and tap ![cmppr](assets/cmppr.png) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, tap content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Tap ![cmppr](assets/cmppr.png) in the component toolbar to open its properties. In the Panel Layout field, select **Tabs on Top **and tap **Done**. The tabbed template structure is applied.
+To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and tap ![cmppr](assets/cmppr.png) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, tap content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Tap ![cmppr](assets/cmppr.png) in the component toolbar to open its properties. In the Panel Layout field, select **Tabs on Top** and tap **Done**. The tabbed template structure is applied.
 
 #### Adding content in tabs {#adding-content-in-tabs}
 
@@ -179,8 +181,8 @@ Perform the following steps to show and hide templates:
 
 1. Locate and open the **FormsManager Configuration** settings:
 
-    * To show or hide out of the box adaptive forms template, check or uncheck the **Include Out of the box AF and AD Templates **option.
-    * To show or hide out of the box adaptive form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates **option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
+    * To show or hide out of the box adaptive forms template, check or uncheck the **Include Out of the box AF and AD Templates** option.
+    * To show or hide out of the box adaptive form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed.
 

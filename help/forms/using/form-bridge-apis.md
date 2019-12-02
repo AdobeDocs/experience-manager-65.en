@@ -56,7 +56,7 @@ Returns the version number of the Scripting library
 * **Input**:
 
     * **handler**: Function to execute after Form Bridge is connected
-    * **context**: The object to which the context (this) of the *handler *function are set.
+    * **context**: The object to which the context (this) of the *handler* function are set.
 
 * **Output**: None
 * **Error**: None
@@ -90,7 +90,7 @@ Returns the version number of the Scripting library
 
           *window.formBridge.registerConfig("pagingConfig":{pagingDisabled: <true | false>, shrinkPageDisabled: <true | false> }).*
 
-        * **LoggingConfig:** Allows the user to override the level of logging, disable logging for a category, or whether to display the logs console or send to server. The configuration can be overridden as follows:**
+        * **LoggingConfig:** Allows the user to override the level of logging, disable logging for a category, or whether to display the logs console or send to server. The configuration can be overridden as follows:
 
         ``` JavaScript
         formBridge.registerConfig{
@@ -177,7 +177,7 @@ Returns the version number of the Scripting library
 * **Input:**
 
     * **som:** Array containing Som expressions of the field. The som expression to set value of the fields.
-    * **value:** Array containing values corresponding to Som expressions provided in a **som **array. If the data type of the value is not the same as the fieldType, the value is not modified.
+    * **value:** Array containing values corresponding to Som expressions provided in a **som**array. If the data type of the value is not the same as the fieldType, the value is not modified.
 
 * **Output:** None
 * **Error:** Throws an Exception in the case of an incorrect Som expression
@@ -185,7 +185,7 @@ Returns the version number of the Scripting library
 **getFieldValue (som)** Returns the value of the fields for the given Som expressions
 
 * **Input:** Array containing Som expressions of the fields whose value has to be retrieved
-* **Output:** Object containing the result as Array in **data **property.
+* **Output:** Object containing the result as Array in **data** property.
 
 * **Error:** None
 
@@ -210,7 +210,7 @@ if(a.errors) {
     * **som:** Array containing Som expressions for the fields
     * **property**: Name of the property whose value is required
 
-* **Output:** Object containing the result as Array in *data *property
+* **Output:** Object containing the result as Array in *data* property
 
 * **Error:** None
 
