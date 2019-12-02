@@ -75,5 +75,6 @@ user-guide-title: AEM 6.5 Classic UI Authoring User Guide
     + [Delivering Dynamic Media Assets](dynamic-media-assets-delivering.md)
     + [Adding Dynamic Media Assets to Pages](dynamic-media-assets-adding-to-page.md)
     + [Adding Scene7 Features to your Page](manage-assets-classic-s7.md)
+    + [Video](manage-assets-classic-s7-video.md)
     + [Working with Dynamic Media](dynamic-media-assets.md)
     + [Naming conventions for assets testing](asset-naming-conventions.md)
