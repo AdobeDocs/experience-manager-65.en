@@ -84,7 +84,7 @@ Following is an overview of the procedure to upgrade an existing LiveCycle ES4 S
 
    >[!NOTE]
    >
-   >In AEM 6.5 Forms, the structure of crx-repository has changed. After you upgrade to AEM 6.5 forms, use the changed paths for customization that you create afresh. For the complete list of changed paths, see [Forms Repository Restructuring in AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
+   >In AEM 6.5 Forms, the structure of crx-repository has changed. After you upgrade to AEM 6.5 forms, use the changed paths for customization that you create afresh. For the complete list of changed paths, see [Forms Repository Restructuring in AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md).
 
 **Depending on your existing environment and application server, choose one of the following documents and follow the detailed instructions:**
 
@@ -133,7 +133,7 @@ Following is an overview of the procedure to upgrade an existing LiveCycle ES3 s
 
     Perform a few routine operations on upgraded AEM Forms server to ensure that the server is upgraded successfully. You can fill and submit a few migrated forms or protect documents to ensure a successful upgrade.
 
-    >[!NOTE] In AEM 6.5 Forms, the structure of crx-repository has changed. After you upgrade to AEM 6.5 forms, use the changed paths for customization that you create afresh. For the complete list of changed paths, see [Forms Repository Restructuring in AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
+    >[!NOTE] In AEM 6.5 Forms, the structure of crx-repository has changed. After you upgrade to AEM 6.5 forms, use the changed paths for customization that you create afresh. For the complete list of changed paths, see [Forms Repository Restructuring in AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md).
 
 **Depending on your existing environment and application server, choose one of the following documents and follow the detailed instructions:**
 
