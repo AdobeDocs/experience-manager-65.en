@@ -53,7 +53,7 @@ After the reviewer completes the review (approves or rejects assets), you receiv
 1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. A notification for the new task is sent to the approver.
 1. Log in to AEM Assets as an Approver and navigate to the Assets UI. To approve assets, click/tap the **[!UICONTROL Notifications]** icon and then select the review task from the list.
 
-   ![notification](assets/notification.png)
+   ![notification](assets/Assets-Notification.png)
 
 1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then tap/click **[!UICONTROL Review]**.
 1. In the **[!UICONTROL Review Task]** page, select assets, and tap/click the **[!UICONTROL Approve/Reject]** icon to approve or reject, as appropriate.

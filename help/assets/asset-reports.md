@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Asset Reports{#asset-reports}
+# Asset Reports {#asset-reports}
 
 Asset reporting is a key tool to assess the utility of your Adobe Experience Manager (AEM) Assets deployment. With AEM Assets, you can generate a variety of reports around your digital assets. The reports provide useful information about your system’s usage, how users interact with assets, and which assets are downloaded and shared.
 
@@ -43,7 +43,7 @@ AEM administrators can easily generate and customize these reports for your impl
 
 1. Tap/click the AEM logo, and go to **Tools** &gt; **Assets** &gt; **Reports**.
 
-   ![navigation](assets/navigation.png)
+   ![navigation](assets/Asset-Report-Nav.png)
 
 1. In the Asset Reports page, tap/click **Create** from the toolbar.
 1. From the **Create Report** page, choose the report you want to create and tap/click **Next**.
