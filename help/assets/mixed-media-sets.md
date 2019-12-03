@@ -89,23 +89,23 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 1. In the Mixed Media Set Editor, in **[!UICONTROL Title]**, enter a name for the Mixed Media Set. The name appears in the banner across the Mixed Media Set. Optionally, enter a description.
 
-   ![chlimage_1-139](assets/chlimage_1-139.png)
+   ![chlimage_1-139](assets/chlimage_1-350.png)
 
    >[!NOTE]
    >
    >When creating the mixed media set, you can change the mixed media set thumbnail or allow AEM to select the thumbnail automatically based on the assets in the mixed media set. To select a thumbnail, click **[!UICONTROL Change thumbnail]** and select any image (you can navigate to other folders to find images as well). If you have selected a thumbnail and then decide that you want AEM to generate one from the mixed media set, select **[!UICONTROL Switch to Automatic thumbnail]**.
 
-1. Tap or clicktheAsset Selector to select assets that you want to include in your Mixed Media Set. Select them and click **[!UICONTROL Select]**.
+1. Tap the Asset Selector to select assets that you want to include in your Mixed Media Set. Select them and click **[!UICONTROL Select]**.
 
    With the Asset Selector, you can search for assets by typing in a keyword and tapping **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then tap the **[!UICONTROL Filter]** icon from the toolbar. Change the view by selecting the **[!UICONTROL View]** icon and selecting **[!UICONTROL List View]**, **[!UICONTROL Column View]**, or **[!UICONTROL Card View]**.
 
    See [Working with Selectors](/help/assets/working-with-selectors.md).
 
-   ![chlimage_1-140](assets/chlimage_1-140.png)
+   ![chlimage_1-140](assets/chlimage_1-351.png)
 
 1. Re-order the assets by dragging them up or down the list (must select the **[!UICONTROL Reorder]** icon), as necessary.
 
-   ![chlimage_1-141](assets/chlimage_1-141.png)
+   ![chlimage_1-141](assets/chlimage_1-352.png)
 
    If you want to add thumbnails, click the **+** **[!UICONTROL thumbnail]** icon next to the image and navigate to the thumbnail you want. When done selecting all the thumbnail images click **[!UICONTROL Save]**.
 
