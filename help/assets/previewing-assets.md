@@ -120,13 +120,13 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
     </tbody>
     </table>
 
-# Previewing 3D assets{#previewing-3d-assets}
+## Previewing 3D assets{#previewing-3d-assets}
 
 Experience Manager supports the upload, delivery, and interactive preview of 3D assets as part of the authoring process. 
 
 The interactive 3D viewer is available from the asset details page in AEM. The viewer includes, among other things, a collection of interactive camera controls that let you orbit, zoom, and pan the 3D asset. 
 
-## Supported formats for 3D preview{#supported-3d-previewing-assets} 
+### Supported formats for 3D preview{#supported-3d-previewing-assets} 
 
 Interactive 3D preview supports the following file formats: 
 
@@ -148,7 +148,7 @@ Interactive 3D preview supports the following file formats:
             material_0_baseColor.jpeg
             material_0_normal.jpeg
 
-## Performance considerations when you preview 3D assets{#performance-3d-previewing-assets}
+### Performance considerations when you preview 3D assets{#performance-3d-previewing-assets}
 The time it takes to open a 3D asset in the asset details view page depends on several factors such things as bandwidth, image complexity, and latencies to the server.
 
 In addition, the capabilities of the client computer&mdash;such as a workstation, notebook, or mobile touch device&mdash;are also important to consider when you manipulate the camera interactively. A reasonably powerful system with good graphics capabilities can make the interactive 3D viewing experience smoother and more favorable. 
