@@ -64,7 +64,7 @@ Open the following URL on the publish instance to trigger a newsletter email. En
 
 ### Sarah finds the offer interesting and chooses to apply {#sarah-finds-the-offer-interesting-and-chooses-to-apply}
 
-Sarah decides to apply for the credit card and taps **Apply Now **button on the email. It takes Sarah to the credit card application on We.Finance portal. The application form is organized in sections using a card layout.
+Sarah decides to apply for the credit card and taps **Apply Now** button on the email. It takes Sarah to the credit card application on We.Finance portal. The application form is organized in sections using a card layout.
 
 Sarah selects a credit card from the available options and clicks **[!UICONTROL Continue]**.
 
@@ -160,7 +160,7 @@ The following image depicts the AEM workflow that processes the credit card appl
 
 #### See it yourself {#see-it-yourself-2}
 
-You can access AEM inbox for the we.finance site at https://<*hostname*>:<*PublishPort*>/content/we-finance/global/en.html. On the page, tap **Sign In**, select the** Login as representative** checkbox, log in to the AEM inbox using `grios/password` as the username/password for Gloria Rios, and approve the credit card application. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](../../forms/using/manage-applications-inbox.md).
+You can access AEM inbox for the we.finance site at https://<*hostname*>:<*PublishPort*>/content/we-finance/global/en.html. On the page, tap **Sign In**, select the **Login as representative** checkbox, log in to the AEM inbox using `grios/password` as the username/password for Gloria Rios, and approve the credit card application. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](../../forms/using/manage-applications-inbox.md).
 
 ![inbox-1](assets/inbox-1.png)
 
@@ -192,7 +192,7 @@ Click the Resume button in the email that you received in the previous step. It 
 
 You can also view the welcome kit at the following URL:
 
-https://** &lt;*host*&gt;**:**&lt;*port*&gt;/**content/aemforms-refsite/doclink.html?document=/content/forms/af/we-finance/credit-card/creditcardwelcomekit&customerId=197&channel=web
+https://&lt;*host*&gt; : &lt;*port*&gt;/content/aemforms-refsite/doclink.html?document=/content/forms/af/we-finance/credit-card/creditcardwelcomekit&customerId=197&channel=web
 
 You can access it on author and publish instances.
 
@@ -255,7 +255,7 @@ For you to view and explore the analytics report, we are providing seed data for
 1. Go to **Forms & Documents** UI at https://&lt;*hostname*&gt;:&lt;*AuthorPort*&gt;/aem/forms.html/content/dam/formsanddocuments.
 
 1. Click to open the **We.Finance** Folder.
-1. Select **Application for Credit Card **adaptive form, and then in the toolbar, click **[!UICONTROL Enable Analytics]**.
+1. Select **Application for Credit Card** adaptive form, and then in the toolbar, click **[!UICONTROL Enable Analytics]**.
 
 1. Select the adaptive form again and click **[!UICONTROL Analytics Report]** in the toolbar to generate the report. You will see a a blank report initially.
 
@@ -268,7 +268,7 @@ To generate analytics report with seed data:
 1. In CRXDE, navigate to: `/content/dam/formsanddocuments/we-finance/cc-app/jcr:content/analyticsdatanode/lastsevendays`
 1. In the **[!UICONTROL analyticsdata]** field under **[!UICONTROL Properties]**, paste the copied content of the seed data file.
 
-1. Select **Application for Credit Card **adaptive form and click **[!UICONTROL Analytics Report]** in the toolbar to generate the report with seed data.
+1. Select **Application for Credit Card** adaptive form and click **[!UICONTROL Analytics Report]** in the toolbar to generate the report with seed data.
 
 **A/B testing of the credit card application**
 
@@ -281,7 +281,7 @@ Perform the following steps to experience the creation of A/B test for We.Financ
 1. Go to **Forms & Documents** at https://&lt;*hostname*&gt;:&lt;*AuthorPort*&gt;/aem/forms.html/content/dam/formsanddocuments.
 
 1. Click to open the **We.Finance** folder.
-1. Select **Application for Credit Card **adaptive form.
+1. Select **Application for Credit Card** adaptive form.
 1. Click **More** in toolbar and select **Configure A/B Testing**. The Configure A/B testing page opens.
 
 1. Specify an **Activity Name**.
@@ -297,7 +297,7 @@ Perform the following steps to experience the creation of A/B test for We.Financ
 
    `https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
 
-   >[!NOTE] Note: Remove the cookie with the name **mbox **from browser’s cookie persistence before opening the form next time. You will see experience A and B of the form at random.
+   >[!NOTE] Note: Remove the cookie with the name **mbox** from browser’s cookie persistence before opening the form next time. You will see experience A and B of the form at random.
 
 1. Select the form, click **More**, and click **A/B Testing Report**. You won’t find much data in the report as you have just started the testing. Let’s now provide some seed data to see how A/B Testing report looks like.
 1. Open CRXDE Lite and take a back-up of the following file: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
@@ -531,7 +531,7 @@ Perform the following steps in the author instance to experience the creation of
 1. Go to **Forms & Documents** at https://&lt;*hostname*&gt;:&lt;*AuthorPort*&gt;/aem/forms.html/content/dam/formsanddocuments.
 
 1. Click to open the **We.Finance** folder.
-1. Select **Application for Home Mortgage **adaptive form.
+1. Select **Application for Home Mortgage** adaptive form.
 1. Click **More** in toolbar and select **Configure A/B Testing**. The Configure A/B testing page opens.
 
 1. Specify an **Activity Name**.
@@ -852,7 +852,7 @@ Insurance policy renewal communication is an interactive communication. Conrad S
 
 #### See it yourself  {#see-it-yourself-18}
 
-Log in to** We.Finance Auto Insurance Dashboard** as Conrad Simms (csimms/password). The URL is https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Specify the **Customer ID**. Customer ID of Sarah Rose is 900001. Click **Renew Policy**. The interactive communication opens up in the Agent UI. In the Agent UI, enter a valid email address to send the email with policy document attached and click **Submit**. A message, Submission Initiated, is displayed on the screen and then in few seconds another message, Submitted Successfully, is displayed. An email with the subject **Your Auto Insurance Renewal** and is sent at the specified email address. The policy offered to Sarah Rose is a premium policy.
+Log in to **We.Finance Auto Insurance Dashboard** as Conrad Simms (csimms/password). The URL is https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Specify the **Customer ID**. Customer ID of Sarah Rose is 900001. Click **Renew Policy**. The interactive communication opens up in the Agent UI. In the Agent UI, enter a valid email address to send the email with policy document attached and click **Submit**. A message, Submission Initiated, is displayed on the screen and then in few seconds another message, Submitted Successfully, is displayed. An email with the subject **Your Auto Insurance Renewal** and is sent at the specified email address. The policy offered to Sarah Rose is a premium policy.
 
 The auto insurance walkthrough also contains another customer, Alison Jones. Customer ID of Alison Jones is 900002. When you send the interactive communication to Alison Jones, a standard policy is sent. The difference between standard and premium policy are:
 
@@ -871,7 +871,7 @@ The reference site also provides an interactive communication which uses Microso
 1. Set the value of `FormFieldRequestParameter`to `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
 1. Tap **Save All**. The reference site is configured to use interactive communication which uses MS Dynamics as a data source.
 
-Now, Log in to** We.Finance Auto Insurance Dashboard** as Conrad Simms (csimms/password). The URL is https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Specify the **Customer ID**. Customer ID of Sarah Rose is 900001. Click **Renew Policy**. The interactive communication opens up in the Agent UI. In the Agent UI, enter a valid email address to send the email with policy document attached and click **Submit**. A message, Submission Initiated, is displayed on the screen and then in few seconds another message, Submitted Successfully, is displayed. An email with the subject **Your Auto Insurance Renewal** is sent at the specified email address.
+Now, Log in to **We.Finance Auto Insurance Dashboard** as Conrad Simms (csimms/password). The URL is https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Specify the **Customer ID**. Customer ID of Sarah Rose is 900001. Click **Renew Policy**. The interactive communication opens up in the Agent UI. In the Agent UI, enter a valid email address to send the email with policy document attached and click **Submit**. A message, Submission Initiated, is displayed on the screen and then in few seconds another message, Submitted Successfully, is displayed. An email with the subject **Your Auto Insurance Renewal** is sent at the specified email address.
 
 >[!NOTE]
 >
@@ -889,7 +889,7 @@ Sarah clicks **Renew Now** and is directed to the web version of her auto insura
 
 #### How it works  {#how-it-works-21}
 
-The web and print outputs of your auto insurance letter are created using the multi-channel capabilities of Interactive Communications. The** Renew Now** button in the email is linked to the auto insurance renew application, which is an interactive communication on a publish instance.
+The web and print outputs of your auto insurance letter are created using the multi-channel capabilities of Interactive Communications. The**Renew Now** button in the email is linked to the auto insurance renew application, which is an interactive communication on a publish instance.
 
 ![ic-web-version](assets/ic-web-version.png)
 
@@ -905,7 +905,7 @@ You can check the detailed summary of your auto insurance renewal and click **Re
 
 ### Sarah opens the payment page and makes the payment and completes the process {#sarah-opens-the-payment-page-and-makes-the-payment-and-completes-the-process}
 
-When Sarah clicks** Renew Now** on the web version of the interactive communication, the payments page opens. Sarah rechecks her Policy Number and Date of Expiration with her records. On the right side of the page, she checks the Payment Summary of her renewal with 10% premium discount on the total amount. Sarah fills her Credit Card details and clicks **Make Payment**.
+When Sarah clicks **Renew Now** on the web version of the interactive communication, the payments page opens. Sarah rechecks her Policy Number and Date of Expiration with her records. On the right side of the page, she checks the Payment Summary of her renewal with 10% premium discount on the total amount. Sarah fills her Credit Card details and clicks **Make Payment**.
 
 ![payment-adaptive-form](assets/payment-adaptive-form.png)
 
@@ -915,7 +915,7 @@ The Renew Now button directs Sarah to the payment page. The payment page is an a
 
 #### See it yourself  {#see-it-yourself-20}
 
-Click **Renew Now **to reach to the Payment page. Fill in your Credit Card information, and click **Make Payment. **You can reach the payment page in the authoring instance at:
+Click **Renew Now** to reach to the Payment page. Fill in your Credit Card information, and click **Make Payment**. You can reach the payment page in the authoring instance at:
 
 https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&schema=fdm&customerId=900001
 

@@ -58,7 +58,7 @@ To upload Forms & Documents assets:
 
 1. Log in to the AEM Forms instance.
 1. Tap Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon &gt; navigation ![compass](assets/compass.png) icon&gt; Forms&gt; Forms & Documents.
-1. Tap **Create **&gt;** File Upload**. An upload forms or package dialog appears.
+1. Tap **Create** &gt;**File Upload**. An upload forms or package dialog appears.
 1. In the dialog box, browse and select the package or the archive to import. You can also select PDF document, XSDs, images, stylesheets, and XDP forms. Tap **Open**. The folder or the file name that you select must not include any special characters.
 
    On the dialog box, verify the details of assets being uploaded, and tap **Upload**.
@@ -96,7 +96,7 @@ To upload a theme:
 
 1. Log in to the AEM Forms instance.
 1. Tap Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon &gt; navigation ![compass](assets/compass.png) icon&gt; Forms&gt; Themes.
-1. click **Create **&gt; **File Upload**. In the File Upload prompt, browse and select a theme package on your computer and click **Upload**. The theme is uploaded.
+1. click **Create** &gt; **File Upload**. In the File Upload prompt, browse and select a theme package on your computer and click **Upload**. The theme is uploaded.
 
 ## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
 
@@ -138,7 +138,7 @@ To download all the Correspondence Management assets and related dependencies as
 
 1. Tap **Export** and, in the confirm message, tap **OK**.
 
-   After a batch process is complete, the last run details and the link to download the package are updated. This includes information such as the Administrator login and if the batch r ``n successfully or failed. The assets are exported to a package and the Download Exported Package link appears.
+   After a batch process is complete, the last run details and the link to download the package are updated. This includes information such as the Administrator login and if the batch run successfully or failed. The assets are exported to a package and the Download Exported Package link appears.
 
    >[!NOTE]
    >
@@ -175,12 +175,10 @@ You can use AEM package manger to export workflow applications. The procedure is
 1. Open AEM Forms package manager. URL of package manager is https://&lt;server&gt;:&lt;port&gt;/crx/packmgr.
 1. Click **[!UICONTROL Create Package]**. The **[!UICONTROL New Package]** dialog box appears.
 1. Specify name, version, and group for the package. Click **[!UICONTROL OK]**.
-1. Click **[!UICONTROL Edit]**and open the **[!UICONTROL Filters]**tab. Click **[!UICONTROL Add Filter]**. Specify the path of the workflow application. For example, /etc/fd/dashboard/startpoints/homemortgage.
+1. Click **[!UICONTROL Edit]** and open the **[!UICONTROL Filters]** tab. Click **[!UICONTROL Add Filter]**. Specify the path of the workflow application. For example, /etc/fd/dashboard/startpoints/homemortgage. Click **[!UICONTROL Add rule]**.
 
-   Click **[!UICONTROL Add rule]**.
-
-1. Open the **[!UICONTROL Advanced]** tab. Select **[!UICONTROL Merge]**or **[!UICONTROL Overwrite]**in ACL Handling field. Click **[!UICONTROL Save]**.
-1. Click **[!UICONTROL Build]**to create the package.
+1. Open the **[!UICONTROL Advanced]** tab. Select **[!UICONTROL Merge]** or **[!UICONTROL Overwrite]** in ACL Handling field. Click **[!UICONTROL Save]**.
+1. Click **[!UICONTROL Build]** to create the package.
 
    After the package is built, you can download the package and import it to the other server. The workflow application appears on the server where the package is uploaded.
 
@@ -233,9 +231,9 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search}
 
-AEM Forms UI allows you to search your content. Using the top bar, you can tap Search **[A] **to search your content for resources such as assets and documents.
+AEM Forms UI allows you to search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
 
-When you search for assets, AEM Forms displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B] **to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+When you search for assets, AEM Forms displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
