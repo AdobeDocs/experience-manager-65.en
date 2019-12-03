@@ -145,6 +145,7 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [Solutions Integration](integration.md)
     + [Exporting Experience Fragments to Adobe Target](experience-fragments-target.md)
     + [Best Practices for Email Templates](best-practices-for-email-templates.md)
+    + [Integrating with Livefyre](livefyre.md)
 + Best Practices {#bestpractices}
     + [Best Practices](administer-best-practices.md)
     + [Translation Best Practices](tc-bp.md)
