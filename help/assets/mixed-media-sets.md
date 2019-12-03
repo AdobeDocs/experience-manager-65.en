@@ -19,7 +19,7 @@ Mixed Media Sets let you provide a mix of images, Image Sets, Spin Sets, and vid
 
 Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMediaSet]**. In addition, if the Mixed Media Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
 
-![chlimage_1-137](assets/chlimage_1-137.png)
+![chlimage_1-137](assets/chlimage_1-348.png)
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 1. In Assets, navigate to where you want to create a mixed media set, and click **[!UICONTROL Create]**, and select **[!UICONTROL Mixed Media Set]**. You can also create the set from inside a folder that contains your assets. The Mixed Media Set Editor displays.
 
-   ![chlimage_1-138](assets/chlimage_1-138.png)
+   ![chlimage_1-138](assets/chlimage_1-349.png)
 
 1. In the Mixed Media Set Editor, in **[!UICONTROL Title]**, enter a name for the Mixed Media Set. The name appears in the banner across the Mixed Media Set. Optionally, enter a description.
 

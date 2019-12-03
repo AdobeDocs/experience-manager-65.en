@@ -149,6 +149,7 @@ Interactive 3D preview supports the following file formats:
             material_0_normal.jpeg
 
 ### Performance considerations when you preview 3D assets{#performance-3d-previewing-assets}
+
 The time it takes to open a 3D asset in the asset details view page depends on several factors such things as bandwidth, image complexity, and latencies to the server.
 
 In addition, the capabilities of the client computer&mdash;such as a workstation, notebook, or mobile touch device&mdash;are also important to consider when you manipulate the camera interactively. A reasonably powerful system with good graphics capabilities can make the interactive 3D viewing experience smoother and more favorable. 
