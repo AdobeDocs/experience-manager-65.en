@@ -119,7 +119,7 @@ Use the following steps to add support for custom special characters:
     </ol> </td>
   </tr>
   <tr>
-   <td>Hide multiple special charcters</td>
+   <td>Hide multiple special characters</td>
    <td>
     <ol>
      <li>Add the property "sling:hideChildren (String or String[])" to “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters”. </li>
