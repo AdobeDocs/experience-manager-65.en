@@ -11,7 +11,7 @@ docset: aem65
 
 # AEM and Creative Cloud Integration Best Practices {#aem-and-creative-cloud-integration-best-practices}
 
-Adobe Experience Manager (AEM) Assets is a digital asset management (DAM) solution that can integrate with Adobe Creative Cloud to help DAM users work together with creative teams, streamlining collaboration in the content creation process.
+Adobe Experience Manager Assets is a digital asset management (DAM) solution that can integrate with Adobe Creative Cloud to help DAM users work together with creative teams, streamlining collaboration in the content creation process.
 
 Adobe Creative Cloud provides creative teams with an ecosystem of solutions and services to help them to create digital assets. It includes desktop and mobile applications, cloud services like storage with desktop sync or web experience, as well as marketplaces like Adobe Stock.
 
@@ -21,61 +21,23 @@ Read on to know what integrations to pick between desktop and the enterprise-gra
 >
 >AEM to Creative Cloud folder sharing is now deprecated and no longer covered below. Adobe recommend newer capabilities like Adobe Asset Link or AEM desktop app to provide creative users with access to the assets managed in AEM.
 
-## Collaboration need of creatives, marketers, and DAM users {#collaboration-need-of-creatives-marketers-and-dam-users}
+## Collaboration needs of creatives, marketers, and DAM users {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
-<table>
- <tbody>
-  <tr>
-   <th>Requirements</th>
-   <th>Use case</th>
-   <th>Involved surfaces</th>
-  </tr>
-  <tr>
-   <td>Simplify experience for creatives on desktop</td>
-   <td>Streamline access to asset from a DAM (AEM Assets) for creative professionals, or more broadly, users on desktop working in native asset creation applications. They need an easy and straightforward way to discover, use (open), edit and save changes to AEM, as well as upload new files.</td>
-   <td>Win or Mac desktop; Creative Cloud apps<br /> </td>
-  </tr>
-  <tr>
-   <td>Provide high-quality, ready-to-use assets from Adobe Stock</td>
-   <td>Marketers help accelerate the content creation process by assisting with asset sourcing and discovery. Creative professionals use the approved assets right from within their creative tools.<br /> </td>
-   <td>AEM Assets; Adobe Stock marketplace; metadata fields<br /> </td>
-  </tr>
-  <tr>
-   <td>Distribute and share assets by organizations</td>
-   <td>Internal departments/local branches and external partners, distributors, and agencies use the approved assets shared by the parent organization. The organization wants to securely and seamlessly share the created assets for wider reuse.<br /> </td>
-   <td>Brand Portal, Asset Share Commons<br /> </td>
-  </tr>
- </tbody>
-</table>
+| Requirements | Use case | Involved surfaces |
+|---|---|---|
+| Simplify experience for creatives on desktop | Streamline access to asset from a DAM (AEM Assets) for creative professionals, or more broadly, users on desktop working in native asset creation applications. They need an easy and straightforward way to discover, use (open), edit and save changes to AEM, as well as upload new files. | Win or Mac desktop; Creative Cloud apps |
+| Provide high-quality, ready-to-use assets from Adobe Stock | Marketers help accelerate the content creation process by assisting with asset sourcing and discovery. Creative professionals use the approved assets right from within their creative tools. | AEM Assets; Adobe Stock marketplace; metadata fields |
+| Distribute and share assets by organizations | Internal departments/local branches and external partners, distributors, and agencies use the approved assets shared by the parent organization. The organization wants to securely and seamlessly share the created assets for wider reuse. | Brand Portal, Asset Share Commons |
 
 ## Adobe offerings to support the collaboration need {#adobe-offerings-to-support-the-collaboration-need}
 
-<table>
- <tbody>
-  <tr>
-   <th>Value proposition for the involved personas</th>
-   <th>Adobe offering</th>
-   <th>Involved surfaces</th>
-  </tr>
-  <tr>
-   <td>Creative users discover assets from AEM, open and use them, edit and upload changes to AEM, as well as upload new files into AEM, without leaving Creative Cloud apps.</td>
-   <td><a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">Adobe Asset Link</a></td>
-   <td>Photoshop, Illustrator, and InDesign</td>
-  </tr>
-  <tr>
-   <td>Business users simplify opening and using assets, editing and uploading changes to AEM, and uploading new files into AEM from the desktop environment. They use a generic integration to open any asset type in the native desktop application, including non-Adobe ones.</td>
-   <td><a href="https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html">AEM desktop app</a><br /> </td>
-   <td>AEM desktop app on Win and Mac desktop</td>
-  </tr>
-  <tr>
-   <td>Marketers and business users discover, preview, license and save, and manage the Adobe Stock assets from within AEM. Licensed and saved assets provide select Adobe Stock metadata for better governance.</td>
-   <td><a href="/help/assets/aem-assets-adobe-stock.md">AEM and Adobe Stock integration</a></td>
-   <td>AEM web interface</td>
-  </tr>
- </tbody>
-</table>
+| Value proposition for the involved personas | Adobe offering | Involved surfaces |
+|---|---|---|
+| Creative users discover assets from AEM, open and use them, edit and upload changes to AEM, as well as upload new files into AEM, without leaving Creative Cloud apps. | [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator, and InDesign |
+| Business users simplify opening and using assets, editing and uploading changes to AEM, and uploading new files into AEM from the desktop environment. They use a generic integration to open any asset type in the native desktop application, including non-Adobe ones. | [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | AEM desktop app on Win and Mac desktop |
+| Marketers and business users discover, preview, license and save, and manage the Adobe Stock assets from within AEM. Licensed and saved assets provide select Adobe Stock metadata for better governance. | [Experience Manager and Adobe Stock integration](aem-assets-adobe-stock.md) | AEM web interface |
 
-This article focuses primarily on the first two aspects of the collaboration needs. Distribution and sourcing of assets at scale is briefly mentioned as a use case. For such needs solutions, consider Adobe Brand Portal or Asset Share Commons. Alternate solutions such as [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [AEM Assets web UI](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
+This article focuses primarily on the first two aspects of the collaboration needs. Distribution and sourcing of assets at scale is briefly mentioned as a use case. For such needs solutions, consider Adobe Brand Portal or Asset Share Commons. Alternate solutions such as [Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [Experience Manager Assets](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
 
 ![Creative Cloud connections for AEM: Deciding which capability to use](assets/creative-connections-aem.png)
 
@@ -130,7 +92,7 @@ Deciding on which capability to use
   <tr>
    <td>Edit - work in progress outside AEM</td>
    <td>Yes - Asset available in user's Creative Cloud storage account synced to desktop.</td>
-   <td>Possible - in version 1.10 there is an option to turn off automated upload of local changes to AEM.</td>
+   <td>Yes</td>
    <td> </td>
   </tr>
   <tr>
@@ -174,7 +136,7 @@ Deciding on which capability to use
 
 To support asset distribution use cases, other solutions should be considered:
 
-* [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) for a configurable, SaaS add-on to AEM Assets to publish assets.
+* [Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) for a configurable, SaaS add-on to AEM Assets to publish assets.
 
 * Custom solutions are created based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) code base.
 * AEM [link share](/help/assets/link-sharing.md) to share assets ad hoc using links.
@@ -186,26 +148,21 @@ To support asset distribution use cases, other solutions should be considered:
 
 * **Work-in-progress or creative work-in-progress (WIP):** A phase in asset lifecycle where an asset undergoes multiple changes and is typically not yet ready to be shared with broader teams.
 * **Creative-ready assets:** Assets that are ready to be shared with a broader team, or have been  selected / approved  by the creative team for sharing with marketing or LOB teams.
-
 * **Asset approvals:** The approval process that runs for assets already uploaded to DAM, which typically includes brand approvals, legal approvals, and so on.
 * **Final asset:** An asset that has gone through all  approvals/metadata  tagging and is ready to be used by the broader team. Such an asset is stored in DAM and made available to all (or all interested) users. It can be used in marketing channels or by creative teams to create designs.
-
-* **Minor asset  update/change :** A quick and small change to a digital asset. It is often made in response to a retouching or minor editing request, asset review, or approval (for example, reposition, change text size, adjust saturation/brightness, color, and so on).
-* **Major asset  update/change :** A change to a digital asset that requires considerable work, and sometimes must be done over a longer period of time. It typically includes multiple changes. The asset must be saved multiple times while being updated. Major asset updates typically cause the asset to enter a WIP stage.
+* **Minor asset update/change :** A quick and small change to a digital asset. It is often made in response to a retouching or minor editing request, asset review, or approval (for example, reposition, change text size, adjust saturation/brightness, color, and so on).
+* **Major asset update/change :** A change to a digital asset that requires considerable work, and sometimes must be done over a longer period of time. It typically includes multiple changes. The asset must be saved multiple times while being updated. Major asset updates typically cause the asset to enter a WIP stage.
 * **DAM:** Digital asset management. In this document, it is synonymous with AEM Experience Manager Assets, unless specifically mentioned otherwise.
 * **Creative user:** A creative professional, who creates digital assets using Creative Cloud apps and services. In some cases, a creative user may be a member of a creative team who may use Creative Cloud, but does not create digital assets (like a creative director or creative team manager).
 * **DAM user:** A typical user of a DAM system. Depending on the organization, a DAM user can be a marketing or a non-marketing user, for example a Line-of-Business (LOB) user, librarian, sales person, and so on.
 
 ### Considerations when using AEM and Creative Cloud integration {#considerations-when-using-aem-and-creative-cloud-integration}
 
-<!--incomplete-->
+* See [desktop app best practices](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
+* See [Adobe Stock integration](aem-assets-adobe-stock.md)
+* See [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
-* DA2.0 best practices: See troubleshooting.md
-* Stock integration: See ?
-* AAL: See ?
-* BP: See ?
-
-This is a brief summary of best practices for AEM & Creative Cloud Integration. Read the rest of this document to get the detailed understanding of these.
+This is a brief summary of best practices for Experience Manager and Creative Cloud integration. Read the rest of this document to get the detailed understanding of these.
 
 * **For creative users, working in Photoshop, InDesign, or Illustrator:** Adobe Asset Link provides the best user experience, including clean handling of the Work-in-progress on assets checked out from AEM
 * **For simplifying access to assets from desktop for any generic file format or application:** use AEM desktop app
@@ -226,6 +183,10 @@ A few important points about this integration:
 **Working with assets saved from Adobe Stock into AEM in Creative Cloud**. This integration is independent of Adobe Asset Link, but Adobe Asset Link recognizes these assets saved from Stock that way, and displays additional metadata and Stock icon on these assets in Adobe Asset Link extension UI in Photoshop, Illustrator, or InDesign. The files are available for browsing, opening, and so on - because they are regular AEM assets when saved to AEM.
 Creative users working in Creative Cloud apps with Adobe Asset Link extension present, in addition to having access to already-licensed assets from Adobe Stock into AEM, can also use Creative Cloud Libraries panel to search, preview, and license Adobe Stock assets.
 Assets from Adobe Stock licensed and saved into AEM become available to the broader teams accessing AEM Assets deployment, whereas creatives licensing assets from Adobe Stock via Creative Cloud Libraries panel make them available to themselves only by default in their Creative Cloud account.
+
+<!-- 
+TBD: A condensed version of the below content is better placed in the Adobe DAM article.
+-->
 
 ## About storing assets in a DAM {#about-storing-assets-in-a-dam}
 
