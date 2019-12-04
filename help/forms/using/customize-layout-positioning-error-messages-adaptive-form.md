@@ -30,7 +30,7 @@ You can customize the layout of a single field or of all the fields to change th
 Perform the following steps to apply a custom layout to a single field:
 
 1. Open the form in **Style** mode. To open the form in style mode, in the page toolbar tap ![canvas-drop-down](assets/canvas-drop-down.png) &gt; **Style**.
-1. In the sidebar, under Form Objects**,** select the field and tap the edit button ![edit-button](assets/edit-button.png).
+1. In the sidebar, under **Form Objects**, select the field and tap the edit button ![edit-button](assets/edit-button.png).
 1. Select the state of the field you want to customize, and specify the styling for that state. 
 
    ![Specifying inline styling of a field](assets/edit-error-state.png)
@@ -79,7 +79,7 @@ Create a theme using Theme Editor to customize layout of all fields in your form
    ```
 
 1. To enhance the appearance and behavior, include the client library created in the layout file (errorOnRight.jsp).
-1. Open the edit dialog of the field select the **Styling **tab. In the **Configure Field Layout** drop-down box, select the newly created layout, and click **OK**.
+1. Open the edit dialog of the field select the **Styling** tab. In the **Configure Field Layout** drop-down box, select the newly created layout, and click **OK**.
 
 The ErrorOnRight.zip package contains code to show error messages on the right side of fields.
 
