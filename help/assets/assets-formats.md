@@ -568,7 +568,7 @@ See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/
   <tr>
    <td>PDF</td>
    <td>application/pdf</td>
-   <td><code>pdfprocess=Rasterize&amp;resolution=150&amp;colorspace=Auto&amp;pdfbrochure=true&amp;keywords=true&amp;links=true</code></td>
+   <td><code>pdfprocess=Rasterize&amp;resolution=150&amp;colorspace=Auto&amp;pdfbrochure=false&amp;keywords=false&amp;links=false</code></td>
    <td>
     <ul>
      <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_pdf_options.html">pdfOptions</a></li>
@@ -607,7 +607,7 @@ See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/
   <tr>
    <td>PS</td>
    <td>application/postscript</td>
-   <td><code>psprocess=Rasterize&amp;psresolution=150&amp;pscolorspace=Auto&amp;psalpha=false&amp;psextractsearchwords=true</code></td>
+   <td><code>psprocess=Rasterize&amp;psresolution=150&amp;pscolorspace=Auto&amp;psalpha=false&amp;psextractsearchwords=false&amp;aiprocess=Rasterize&amp;airesolution=150&amp;aicolorspace=Auto&amp;aialpha=false</code></td>
    <td>
     <ul>
      <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_post_script_options.html">postScriptOptions</a></li>
@@ -617,7 +617,7 @@ See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/
   <tr>
    <td>PSD</td>
    <td>image/vnd.adobe.photoshop</td>
-   <td><code>process=MaintainLayers&amp;layerNaming=Layername&amp;anchor=Center&amp;createTemplate=true&amp;extractText=true&amp;extendLayers=false</code></td>
+   <td><code>process=None&amp;layerNaming=Layername&amp;anchor=Center&amp;createTemplate=false&amp;extractText=false&amp;extendLayers=false</code></td>
    <td>
     <ul>
      <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_photoshop_options.html">photoshopOptions</a></li>
