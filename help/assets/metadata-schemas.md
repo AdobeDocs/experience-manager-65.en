@@ -1,5 +1,5 @@
 ---
-title: Metadata Schemas
+title: Metadata schemas
 description: Metadata schema defines the layout of the properties page and the metadata properties displayed for assets. Learn how to create custom metadata schema, edit metadata schema, and how to apply metadata schema to assets.
 uuid: f4894492-aad2-4ba7-a833-3c01381a1474
 contentOwner: AG
@@ -9,7 +9,7 @@ docset: aem65
 
 ---
 
-# Metadata Schemas {#metadata-schemas}
+# Metadata schemas {#metadata-schemas}
 
 In Adobe Experience Manager (AEM) Assets, a metadata schema defines the layout of the properties page and the metadata properties displayed for assets that use the particular schema. Metadata properties include title, description, MIME types, tags, and so on.
 
@@ -27,7 +27,7 @@ You can use the Metadata Schema Forms editor to modify existing schemas or add c
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
-   To modify the MIME type for an asset, use a custom metadata schema form or modify an existing form. See [Editing Metadata Schema Forms](/help/assets/metadata-schemas.md#editing-metadata-schema-forms) for more information. If you modify the metadata schema for a certain MIME type, the properties page layout for assets with the current MIME type and all asset subtypes are modified. For example, modifying a jpeg schema under `default/image` only modifies the metadata layout (asset properties) for assets with MIME type `image/jpeg`. However, if you edit the default schema, your changes modify the metadata layout for all types of assets.
+   To modify the MIME type for an asset, use a custom metadata schema form or modify an existing form. See [Edit Metadata Schema Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) for more information. If you modify the metadata schema for a certain MIME type, the properties page layout for assets with the current MIME type and all asset subtypes are modified. For example, modifying a jpeg schema under `default/image` only modifies the metadata layout (asset properties) for assets with MIME type `image/jpeg`. However, if you edit the default schema, your changes modify the metadata layout for all types of assets.
 
 1. To view a list of forms/templates, click the AEM logo and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**.
 
@@ -56,7 +56,7 @@ You can use the Metadata Schema Forms editor to modify existing schemas or add c
 >
 >To view the child forms of a schema form, click/tap the schema form name.
 
-## Adding a metadata schema form {#adding-a-metadata-schema-form}
+## Add a metadata schema form {#add-a-metadata-schema-form}
 
 1. To add a custom template to the list, click **[!UICONTROL Create]** from the toolbar.
 
@@ -68,7 +68,7 @@ You can use the Metadata Schema Forms editor to modify existing schemas or add c
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-## Editing metadata schema forms {#editing-metadata-schema-forms}
+## Editing metadata schema forms {#edit-metadata-schema-forms}
 
 You can edit a newly-added or existing metadata schema form. The metadata schema form includes the following:
 
@@ -79,7 +79,7 @@ You can map/configure these form items to a field within a metadata node in the 
 
 You can add new tabs or form items to the metadata schema form. The tabs and form items derived from the parent are in the locked state. You cannot alter them at the child level.
 
-1. In the Schema Forms page, select the check box before a form and then click the **Edit icon** on the toolbar.
+1. In the Schema Forms page, select the check box before a form and then click the Edit icon on the toolbar.
 
    ![chlimage_1-39](assets/chlimage_1-39.png)
 
@@ -93,72 +93,24 @@ You can add new tabs or form items to the metadata schema form. The tabs and for
 
 The **[!UICONTROL Build Form]** tab lists form items that you use in your schema form. The **[!UICONTROL Settings]** tab provides the attributes of each item that you select in the **[!UICONTROL Build Form]** tab. The following table lists the form items available in the **[!UICONTROL Build Form]** tab:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Component Name</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>Section Header</td>
-   <td>Add a section heading for a list of common components.</td>
-  </tr>
-  <tr>
-   <td>Single Line Text</td>
-   <td>Add a single line text property. It is stored as a string.</td>
-  </tr>
-  <tr>
-   <td>Multi Value Text</td>
-   <td>Add a multi value text property. It is stored as a string array.</td>
-  </tr>
-  <tr>
-   <td>Number</td>
-   <td>Add a number component.</td>
-  </tr>
-  <tr>
-   <td>Date</td>
-   <td>Add a date component.</td>
-  </tr>
-  <tr>
-   <td>Dropdown</td>
-   <td>Add a dropdown list.</td>
-  </tr>
-  <tr>
-   <td>Standard Tags</td>
-   <td>Add a tag. </td>
-  </tr>
-  <tr>
-   <td>Smart Tags</td>
-   <td>Add to augment search capabilities by automatically adding metadata tags.<br /> </td>
-  </tr>
-  <tr>
-   <td>Hidden Field</td>
-   <td>Add a hidden field. It is sent as a POST parameter when the asset is saved.</td>
-  </tr>
-  <tr>
-   <td>Asset Referenced By</td>
-   <td>Add this component to view list of assets referenced by the asset.</td>
-  </tr>
-  <tr>
-   <td>Asset Referencing</td>
-   <td>Add to display a list of assets that reference the asset.</td>
-  </tr>
-  <tr>
-   <td>Products References</td>
-   <td>Add to show the list of products linked with the asset.</td>
-  </tr>
-  <tr>
-   <td>Asset Rating</td>
-   <td>Add to display options for rating the asset.</td>
-  </tr>
-  <tr>
-   <td>Contextual Metadata</td>
-   <td>Add to control the display of other metadata tabs in the properties page of assets.</td>
-  </tr>
- </tbody>
-</table>
+| Component Name | Description |
+|---------------------|-------------------------------------------------------------------------------------|
+| Section Header | Add a section heading for a list of common components. |
+| Single Line Text | Add a single line text property. It is stored as a string. |
+| Multi Value Text | Add a multi value text property. It is stored as a string array. |
+| Number | Add a number component. |
+| Date | Add a date component. |
+| Dropdown | Add a dropdown list. |
+| Standard Tags | Add a tag. |
+| Smart Tags | Add to augment search capabilities by automatically adding metadata tags. |
+| Hidden Field | Add a hidden field. It is sent as a POST parameter when the asset is saved. |
+| Asset Referenced By | Add this component to view list of assets referenced by the asset. |
+| Asset Referencing | Add to display a list of assets that reference the asset. |
+| Products References | Add to show the list of products linked with the asset. |
+| Asset Rating | Add to display options for rating the asset. |
+| Contextual Metadata | Add to control the display of other metadata tabs in the properties page of assets. |
 
-#### Editing the metadata component {#editing-the-metadata-component}
+#### Edit the metadata component {#edit-the-metadata-component}
 
 To edit the properties of a metadata component on the form, click the component and edit all or a subset of the following properties in the **[!UICONTROL Settings]** tab.
 
@@ -175,21 +127,13 @@ The following are the valid values for this property:
 To ensure that the component is displayed properly in the metadata schema form, the property path should not include any spaces.
 
 **Placeholder**: Use this property to specify relevant placeholder text regarding the metadata property.
-
 **Required**: Use this property to mark a metadata property as mandatory on the properties page.
-
 **Disable Edit**: Use this property to make a metadata property uneditable on the properties page.
-
 **Show Empty Field In Read Only**: Mark this property to display a metadata property on the properties page even if it has no value. By default, when a metadata property has no value, it is not be listed on the properties page.
-
 **Show list ordered**: Use this property to display an ordered list of choices
-
 **Choices**: Use this property to specify choices in a list
-
 **Description** : Use this property to add a short description for the metadata component.
-
 **Class**: Object class the property is associated with.
-
 **Delete**: Click this icon to delete a component from the schema form.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
@@ -210,7 +154,7 @@ To include any tab in the properties page in addition to the tab where the Conte
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 
-### Specifying properties in JSON file {#specifying-properties-in-json-file}
+### Specify properties in JSON file {#specify-properties-in-json-file}
 
 Instead of specifying properties for the options in the **[!UICONTROL Settings]** tab, you can define the options in a JSON file by specifying corresponding key-value pairs. Specify the path of the JSON file in the **[!UICONTROL JSON Path]** field.
 
@@ -226,7 +170,7 @@ Click `X` to delete a tab.
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
-## Deleting metadata schema forms {#deleting-metadata-schema-forms}
+## Delete metadata schema forms {#delete-metadata-schema-forms}
 
 AEM lets you delete custom schema forms only. It does not let you delete the default schema forms/templates. However, you can delete any custom changes in these forms.
 
@@ -246,11 +190,11 @@ To delete a form, select a form and click the delete icon.
 
 AEM Assets provides default forms for various MIME types out of the box. However, you can add custom forms for assets of various MIME types.
 
-### Adding new forms for MIME types {#adding-new-forms-for-mime-types}
+### Add new forms for MIME types {#add-new-forms-for-mime-types}
 
 Create a new form under the appropriate form type. For example, to add a new template for the **image/png** subtype, create the form under the "image" forms. The title for the schema form is the subtype name. In this case, the title is "png.**"**
 
-#### Using an existing schema template for various MIME types {#using-an-existing-schema-template-for-various-mime-types}
+#### Use an existing schema template for various MIME types {#use-an-existing-schema-template-for-various-mime-types}
 
 You can use an existing template for a different MIME type. For example, use the `image/jpeg` form for assets of MIME type `image/png`.
 
@@ -277,11 +221,11 @@ AEM Assets maps the following MIME types and schema forms:
 | video/wmv |video/x-ms-wmv |
 | video/flv |video/x-flv |
 
-## Granting access to metadata schemas {#granting-access-to-metadata-schemas}
+## Grant access to metadata schemas {#grant-access-to-metadata-schemas}
 
 The Metadata Schema feature is available to administrators only. However, administrators can provide access to non administrators by modifying some permissions. The non administrator should have create, modify, and delete permissions on the `/conf` folder.
 
-## Applying folder-specific metadata {#applying-folder-specific-metadata}
+## Apply folder-specific metadata {#apply-folder-specific-metadata}
 
 AEM Assets lets you define a variant of a metadata schema and apply it to a specific folder.
 
@@ -319,7 +263,7 @@ If the folder has a subfolder, the assets within the subfolder inherit the metad
 1. Click **OK** to close the success message.
 1. Navigate to the folder to which you applied the modified metadata schema.
 
-## Defining mandatory metadata {#defining-mandatory-metadata}
+## Define mandatory metadata {#define-mandatory-metadata}
 
 You can define mandatory fields at a folder level, which is enforced on assets that are uploaded to the folder. If you upload assets with missing metadata for the mandatory fields defined earlier, a visual indication for missing metadata appears on the assets in the Card view.
 
