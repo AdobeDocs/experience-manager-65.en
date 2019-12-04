@@ -82,7 +82,7 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [Service Users in AEM](security-service-users.md)
     + [Encryption Support for Configuration Properties](encryption-support-for-configuration-properties.md)
     + [Handling GDPR Requests for the AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
-    + [Principal View for Permissions Management](/help/sites-administering/touch-ui-principal-view.md)
+    + [Principal View for Permissions Management](touch-ui-principal-view.md)
     + [Content Disposition Filter](content-disposition-filter.md)
     + [Custom User Group Mapping in AEM 6.5](/help/sites-administering/cug-mapping.md)
 + Personalization {#personalization}
@@ -145,6 +145,7 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [Solutions Integration](integration.md)
     + [Exporting Experience Fragments to Adobe Target](experience-fragments-target.md)
     + [Best Practices for Email Templates](best-practices-for-email-templates.md)
+    + [Integrating with Livefyre](livefyre.md)
 + Best Practices {#bestpractices}
     + [Best Practices](administer-best-practices.md)
     + [Translation Best Practices](tc-bp.md)
