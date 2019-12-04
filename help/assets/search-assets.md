@@ -506,7 +506,7 @@ For related information, see [understand smart tags in AEM](https://helpx.adobe.
 
 ### Mandatory metadata {#mandatorymetadata}
 
-Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
+Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#define-mandatory-metadata).
 
 ### Modify search facets {#searchfacets}
 
@@ -637,7 +637,7 @@ You can create smart collections based on the search criteria. From the **[!UICO
 
 ## Unexpected search results {#unexpectedresults}
 
-**Search for missing metadata**: When searching for assets that are missing the mandatory metadata, AEM may display some assets that have valid metadata. Missing metadata is detected and reported based on indexed metadata property. Even if the asset metadata is fixed, it continues to show as missing metadata until reindexing occurs. See [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
+**Search for missing metadata**: When searching for assets that are missing the mandatory metadata, AEM may display some assets that have valid metadata. Missing metadata is detected and reported based on indexed metadata property. Even if the asset metadata is fixed, it continues to show as missing metadata until reindexing occurs. See [mandatory metadata](/help/assets/metadata-schemas.md#define-mandatory-metadata).
 
 **Too many search results**: To avoid getting too many search results, consider limiting the search results. For example, to search for assets in DAM, select `Location:Assets` in Omnisearch bar. For more search filters, see [scope of search](#scope).
 

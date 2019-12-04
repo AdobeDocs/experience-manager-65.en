@@ -26,11 +26,11 @@ Here are certain key focus areas around which you discover and fix performance i
 
 While AEM is supported on a number of platforms, Adobe has found the greatest support for native tools on Linux and Windows, which contributes to optimum performance and ease of implementation. Ideally, you should deploy a 64-bit operating system to meet the high memory requirements of an AEM Assets deployment. As with any AEM deployment, you should implement TarMK wherever possible. While TarMK cannot scale beyond a single author instance, it is found to perform better than MongoMK. You can add TarMK offload instances to increase the workflow processing power of your AEM Assets deployment.
 
-### Temp Folder {#temp-folder}
+### Temporary folder {#temp-folder}
 
-To improve asset upload times, use high performance storage for the Java temp directory. On Linux and Windows, a RAM drive or SSD could be used. In cloud-based environments, an equivalent high speed storage type could be used. For example in Amazon EC2, an ["ephemeral drive"](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temp folder.
+To improve asset upload times, use high performance storage for the Java temporary directory. On Linux and Windows, a RAM drive or SSD could be used. In cloud-based environments, an equivalent high speed storage type could be used. For example in Amazon EC2, an ['ephemeral drive'](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temporary folder.
 
-Assuming the server has ample memory, configure a RAM drive. On Linux, run these commands to create an 8GB RAM drive:
+Assuming the server has ample memory, configure a RAM drive. On Linux, run these commands to create an 8 GB RAM drive:
 
 ```
 mkfs -q /dev/ram1 800000
@@ -39,9 +39,9 @@ mkfs -q /dev/ram1 800000
  df -H | grep aem-tmp
 ```
 
-In Windows OS, you would have to use a third-party driver to create a RAM drive or just use high performance storage such as SSD.
+On Windows OS, use a third-party driver to create a RAM drive or just use high performance storage such as SSD.
 
-Once the high performance temp volume is ready, then set the JVM parameter -Djava.io.tmpdir. For example, you could add the JVM parameter below to the CQ_JVM_OPTS variable in the bin/start script of AEM:
+Once the high performance temporary volume is ready, set the JVM parameter `-Djava.io.tmpdir`. For example, you could add the JVM parameter below to the `CQ_JVM_OPTS` variable in the `bin/start` script of AEM:
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
@@ -49,7 +49,11 @@ Once the high performance temp volume is ready, then set the JVM parameter -Djav
 
 ### Java version {#java-version}
 
-Because Oracle has stopped releasing updates for Java 7 as of April 2015, Adobe recommends deploying AEM Assets on Java 8. In some cases, it has demonstrated improved performance.
+Adobe recommends deploying AEM Assets on Java 8 for optimum performance. 
+
+>[!NOTE] 
+>
+>Oracle stopped releasing updates for Java 7 as of April 2015.
 
 ### JVM parameters {#jvm-parameters}
 
@@ -125,33 +129,32 @@ Wherever possible, set the DAM Update Asset workflow to Transient. The setting s
 >
 >By default, the DAM Update Asset workflow is set to Transient in AEM 6.3. In this case, you can skip the following procedure.
 
-1. Navigate to */miscadmin* in the AEM instance to be configured (i.e. [https://localhost:4502/miscadmin)](https://localhost:4502/miscadmin)).
-1. From the navigation tree, expand **Tools** &gt; **Workflow** &gt; **Models** &gt; **dam**.
-1. Double-click **DAM Update Asset**.
-1. From the floating tool panel, switch to the **Page** tab, and then click **Page Properties...**
-1. Select **Transient Workflow**, and then click **OK**.
+1. Navigate to `/miscadmin` in the AEM instance at `https://[aem_server]:[port]/miscadmin`.
+1. Expand **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]** &gt; **[!UICONTROL dam]**.
+1. Open **[!UICONTROL DAM Update Asset]**. From the floating tool panel, switch to the **[!UICONTROL Page]** tab, and then click **[!UICONTROL Page Properties]**.
+1. Select **[!UICONTROL Transient Workflow]** and click **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
    >Some features do not support transient workflows. If your AEM Assets deployment requires these features, do not configure transient workflows.
 
-   In cases where transient workflows cannot be used, run workflow purging regularly to delete archived DAM Update Asset workflows to ensure system performance does not degrade.
+In cases where transient workflows cannot be used, run workflow purging regularly to delete archived DAM Update Asset workflows to ensure system performance does not degrade.
 
-   Normally, you should run purging workflows on a weekly basis. However, in resource-intensive scenarios, such as during wide-scale asset ingestion, you can run it more frequently.
+Typically, execute the purging workflows on a weekly basis. However, in resource-intensive scenarios, such as during wide-scale asset ingestion, you can execute it more frequently.
 
-   To configure workflow purging, add a new Adobe Granite Workflow Purge configuration through the OSGi console. Next, configure and schedule the workflow as part of the weekly maintenance window.
+To configure workflow purging, add a new Adobe Granite Workflow Purge configuration through the OSGi console. Next, configure and schedule the workflow as part of the weekly maintenance window.
 
-   If purging runs for too long, it times out. Therefore, you should ensure that your purging jobs complete to avoid situations where purging workflows fail to complete owing to the high number of workflows.
+If purging runs for too long, it times out. Therefore, you should ensure that your purging jobs complete to avoid situations where purging workflows fail to complete owing to the high number of workflows.
 
-   For example, after running numerous non-transient workflows (that creates workflow instance nodes), you can run [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) on an ad-hoc basis. It removes redundant, completed workflow instances immediately rather than waiting for the Adobe Granite Workflow Purge scheduler to run.
+For example, after executing numerous non-transient workflows (that creates workflow instance nodes), you can run [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) on an ad-hoc basis. It removes redundant, completed workflow instances immediately rather than waiting for the Adobe Granite Workflow Purge scheduler to run.
 
 ### Maximum parallel jobs {#maximum-parallel-jobs}
 
 By default, AEM runs a maximum number of parallel jobs equal to the number of processors on the server. The problem with this setting is that during periods of heavy load, all of the processors are occupied by DAM Update Asset workflows, slowing down UI responsiveness and preventing AEM from running other processes that safeguard server performance and stability. As a good practice, set this value to half the processors that are available on the server by performing the following steps:
 
-1. On AEM Author, go to [https://localhost:4502/system/console/slingevent](https://localhost:4702/system/console/slingevent).
-1. Click Edit on each workflow queue that is relevant to your implementation, for example Granite Transient Workflow Queue.
-1. Change the value of Maximum Parallel Jobs, and click Save.
+1. On AEM Author, go to `https://[aem_server]:[port]/system/console/slingevent`.
+1. Click **[!UICONTROL Edit]** on each workflow queue that is relevant to your implementation, for example **[!UICONTROL Granite Transient Workflow Queue]**.
+1. Update the value of **[!UICONTROL Maximum Parallel Jobs]** and click **[!UICONTROL Save]**.
 
 Setting a queue to half of the available processors is a workable solution to start with. However, you may have to increase or decrease this number to achieve maximum throughput and tune it by environment. There are separate queues for transient and non-transient workflows as well as other processes, such as external workflows. If several queues set to 50% of the processors are active simultaneously, the system can get overloaded quickly. The queues that are heavily used vary greatly across user implementations. Therefore, you may have to configure them thoughtfully for maximum efficiency without sacrificing server stability.
 
@@ -159,15 +162,13 @@ Setting a queue to half of the available processors is a workable solution to st
 
 The DAM Update Asset workflow contains a full suite of steps that are configured for tasks, such as Scene7 PTIFF generation and InDesign Server integration. However, most users may not require several of these steps. Adobe recommends you create a custom copy of the DAM Update Asset workflow model, and remove any unnecessary steps. In this case, update the launchers for DAM Update Asset to point to the new model.
 
->[!NOTE]
->
->Running the DAM Update Asset workflow intensively can sharply increase the size of your file datatastore. Results of an experiment performed by Adobe have shown that the datastore size can increase by approximately 400 GB if around 5500 workflows are performed within 8 hours.
->
->It is a temporary increase, and the datastore is restored to its original size after you run the datastore garbage collection task.
->
->Typically, the datastore garbage collection task runs weekly along with other scheduled maintenance tasks.
->
->If you have a limited disk space and run DAM Update Asset workflows intensively, consider scheduling the garbage collection task more frequently.
+Running the DAM Update Asset workflow intensively can sharply increase the size of your file datatastore. Results of an experiment performed by Adobe have shown that the datastore size can increase by approximately 400 GB if around 5500 workflows are performed within 8 hours.
+
+It is a temporary increase, and the datastore is restored to its original size after you run the datastore garbage collection task.
+
+Typically, the datastore garbage collection task runs weekly along with other scheduled maintenance tasks.
+
+If you have a limited disk space and run DAM Update Asset workflows intensively, consider scheduling the garbage collection task more frequently.
 
 #### Runtime rendition generation {#runtime-rendition-generation}
 
@@ -179,7 +180,7 @@ An alternative approach is to use Scene7 technology to hand off image manipulati
 
 #### ImageMagick {#imagemagick}
 
-If you customize the DAM Update Asset workflow to generate renditions using ImageMagick, Adobe recommends you modify the policy.xml file at */etc/ImageMagick/*. By default, ImageMagick uses the entire available disk space on the OS volume, and the available memory. Make the following configuration changes within the `policymap` section of policy.xml to limit these resources.
+If you customize the DAM Update Asset workflow to generate renditions using ImageMagick, Adobe recommends you modify the `policy.xml` file at `/etc/ImageMagick/`. By default, ImageMagick uses the entire available disk space on the OS volume, and the available memory. Make the following configuration changes within the `policymap` section of `policy.xml` to limit these resources.
 
 ```xml
 <policymap>
@@ -196,7 +197,7 @@ If you customize the DAM Update Asset workflow to generate renditions using Imag
 </policymap>
 ```
 
-In addition, set the path of ImageMagick's temporary folder in the *configure.xml* file (or by setting the environment variable `MAGIC_TEMPORARY_PATH`) to a disk partition that has sufficient space and IOPS.
+In addition, set the path of ImageMagick's temporary folder in the `configure.xml` file (or by setting the environment variable `MAGIC_TEMPORARY_PATH`) to a disk partition that has sufficient space and IOPS.
 
 >[!CAUTION]
 >
@@ -206,11 +207,11 @@ In addition, set the path of ImageMagick's temporary folder in the *configure.xm
 
 >[!NOTE]
 >
->The ImageMagick policy.xml and configure.xml files may be found under /usr/lib64/ImageMagick-&#42;/config/ instead of /etc/ImageMagick/. Refer to the [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for details on the configuration file locations.
+>The ImageMagick `policy.xml` and `configure.xml` files are available at `/usr/lib64/ImageMagick-&#42;/config/` instead of `/etc/ImageMagick/`.See [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for location of the configuration files.
 
->[!NOTE]
+>[!TIP]
 >
->If you are using AEM on Adobe Managed Services (AMS), reach out to Adobe Support if you plan to process lots of large PSD or PSB files.
+>If you are using Experience Manager on Adobe Managed Services (AMS), reach out to Adobe Support if you plan to process lots of large PSD or PSB files. Work with Adobe Customer Care representative to implement these best practices for your AMS deployment and to choose the best possible tools and models for Adobe's proprietary formats.
 
 ### XMP writeback {#xmp-writeback}
 

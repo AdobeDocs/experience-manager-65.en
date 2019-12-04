@@ -507,15 +507,7 @@ XMP write-back is supported and enabled for the following platforms and file for
     * Windows Server
     * Mac OS X (64-bit)
 
-**File Formats**
-
-* JPEG
-* PNG
-* TIFF
-* PDF
-* INDD
-* AI
-* EPS
+* **File Formats**: JPEG, PNG, TIFF, PDF, INDD, AI, and EPS.
 
 ### Requirements for AEM Assets to process metadata-heavy assets on Linux {#assetsonlinux}
 
