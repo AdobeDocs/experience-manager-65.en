@@ -511,4 +511,4 @@ XMP write-back is supported and enabled for the following platforms and file for
 
 ### Requirements for AEM Assets to process metadata-heavy assets on Linux {#assetsonlinux}
 
-XMPFilesProcessor process requires library GLIBC_2.14 to work. Use a Linux kernel that contains GLIBC_2.14, for example Linux kernel version 3.1.x. It improves performance for processing assets that contain a large amount of metadata, like PSD files.
+XMPFilesProcessor process requires library GLIBC_2.14 to work. Use a Linux kernel that contains GLIBC_2.14, for example Linux kernel version 3.1.x. It improves performance for processing assets that contain a large amount of metadata, like PSD files. Using a previous version of GLIBC leads to error in logs starting with `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.

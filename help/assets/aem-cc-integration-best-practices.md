@@ -27,7 +27,7 @@ Read on to know what integrations to pick between desktop and the enterprise-gra
 |---|---|---|
 | Simplify experience for creatives on desktop | Streamline access to asset from a DAM (AEM Assets) for creative professionals, or more broadly, users on desktop working in native asset creation applications. They need an easy and straightforward way to discover, use (open), edit and save changes to AEM, as well as upload new files. | Win or Mac desktop; Creative Cloud apps |
 | Provide high-quality, ready-to-use assets from Adobe Stock | Marketers help accelerate the content creation process by assisting with asset sourcing and discovery. Creative professionals use the approved assets right from within their creative tools. | AEM Assets; Adobe Stock marketplace; metadata fields |
-| Distribute and share assets by organizations | Internal departments/local branches and external partners, distributors, and agencies use the approved assets shared by the parent organization. The organization wants to securely and seamlessly share the created assets for wider reuse. | Brand Portal, Asset Share Commons
+| Distribute and share assets by organizations | Internal departments/local branches and external partners, distributors, and agencies use the approved assets shared by the parent organization. The organization wants to securely and seamlessly share the created assets for wider reuse. | Brand Portal, Asset Share Commons |
 
 ## Adobe offerings to support the collaboration need {#adobe-offerings-to-support-the-collaboration-need}
 
