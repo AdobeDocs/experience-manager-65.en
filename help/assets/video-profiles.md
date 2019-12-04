@@ -27,7 +27,9 @@ The following are other factors that determine the quality of your videos:
 
   By default, the "Width" in the Adaptive Video Encoding profile is set to “Auto.” Again, during playback, the best quaility is used based on the size of the player.
 
-See also [Best Practices for Video Encoding](/help/assets/video.md#best-practices-for-encoding-videos).
+See [Best Practices for Video Encoding](/help/assets/video.md#best-practices-for-encoding-videos).
+
+See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/best-practices-for-file-management.md).
 
 >[!NOTE]
 >

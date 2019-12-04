@@ -63,7 +63,7 @@ Perform the following steps to setup certificates:
 
 1. Log in to AEM Author instance as an administrator.
 
-1. Click** Adobe Experience Manager** on Global Navigation Bar. Go to **Tools** &gt;  **Security** &gt;  **Users**.
+1. Click**Adobe Experience Manager** on Global Navigation Bar. Go to **Tools** &gt;  **Security** &gt;  **Users**.
 1. Click the **name** field of the user account. The **Edit User Settings** page opens.
 1. On the AEM Author instance, certificates reside in a KeyStore. If you have not created a KeyStore earlier, click **Create KeyStore** and set a new password for the KeyStore. If the server already contains a KeyStore, skip this step.
 
@@ -71,7 +71,7 @@ Perform the following steps to setup certificates:
 
 1. On KeyStore Management dialog, expand the **Add Private Key from Key Store file** option and provide an alias. The alias is used to perform the Reader Extensions operation.
 1. To upload the certificate file, click **Select Key Store File** and upload a `.pfx` file.
-1. Add the **Key Store Password**,** Private Key Password**, and **Private Key Alias **that is associated with the certificate to the respective fields. Click **Submit**.
+1. Add the **Key Store Password**,**Private Key Password**, and **Private Key Alias** that is associated with the certificate to the respective fields. Click **Submit**.
 
    >[!NOTE]
    >
@@ -94,7 +94,7 @@ Perform the following steps to setup certificates:
 The alias contains all the parameters that an HSM or etoken requires. Perform the instructions listed below to create an alias for each HSM or etoken credential that eSign or Digital Signatures uses :
 
 1. Open AEM console. The default URL of AEM console is https://&lt;host&gt;:&lt;port&gt;/system/console/configMgr
-1. Open the **HSM Credentials Configuration Service **and specify values for the following fields:
+1. Open the **HSM Credentials Configuration Service** and specify values for the following fields:
 
     * **Credential Alias**: Specify a string used to identify the alias. This value is used as a property for some Digital Signatures operations, such as the Sign Signature Field operation.
     * **DLL Path**: Specify the fully qualified path of your HSM or etoken client library on the server. For example, C:\Program Files\LunaSA\cryptoki.dll. In a clustered environment, this path must be identical for all servers in the cluster.

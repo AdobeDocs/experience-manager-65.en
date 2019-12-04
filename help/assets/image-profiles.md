@@ -1,6 +1,6 @@
 ---
-title: Dynamic Media image profiles
-seo-title: Dynamic Media image profiles
+title: Dynamic Media Image Profiles
+seo-title: Dynamic Media Image Profiles
 description: Create image profiles that contain settings for unsharp mask, and smart crop, or smart swatch, or both, then apply the profile to a folder of image assets.
 seo-description: Create image profiles that contain settings for unsharp mask, and smart crop, or smart swatch, or both, then apply the profile to a folder of image assets.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 ---
 
-# Dynamic Media image profiles {#image-profiles}
+# Dynamic Media Image Profiles {#image-profiles}
 
 When uploading images, you can automatically crop the image upon upload by applying an image profile to the folder.
 
@@ -62,13 +62,13 @@ You have two image cropping options to choose from and an option for automating 
 
 ## Unsharp Mask {#unsharp-mask}
 
-You use **Unsharp mask** to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that will be ignored. This effect uses the same options as Adobe Photoshop’s “Unsharp Mask” filter.
+You use **[!UICONTROL Unsharp mask]** to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that will be ignored. This effect uses the same options as Adobe Photoshop’s “Unsharp Mask” filter.
 
 >[!NOTE]
 >
 >Unsharp mask is only applied to downscaled renditions within the PTIFF (pyramid tiff) that are downsampled more than 50%. That means that the largest-sized renditions within the ptiff are not affected by unsharp mask whereas smaller-sized renditions such as thumbnails are altered (and will show the unsharp mask).
 
-In **Unsharp Mask**, you have the following filtering options:
+In **[!UICONTROL Unsharp Mask]**, you have the following filtering options:
 
 <table>
  <tbody>
@@ -93,13 +93,15 @@ In **Unsharp Mask**, you have the following filtering options:
 
 Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening_images.pdf.
 
-## Creating Dynamic Media image profiles {#creating-image-profiles}
+## Creating Dynamic Media Image Profiles {#creating-image-profiles}
 
 To define advanced processing parameters for other asset types, see [Configuring Asset Processing](config-dms7.md#configuring-asset-processing).
 
-See also [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
+See [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
 
-**To create Dynamic Media image profiles**:
+See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/best-practices-for-file-management.md).
+
+**To create Dynamic Media Image Profiles**
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. Tap **[!UICONTROL Create]** to add a new image profile.
@@ -113,7 +115,7 @@ See also [Profiles for Processing Metadata, Images, and Videos](processing-profi
 
 1. Tap **[!UICONTROL Save]**. The newly created profile appears in the list of available profiles.
 
-## Editing or deleting Dynamic Media image profiles {#editing-or-deleting-image-profiles}
+## Editing or deleting Dynamic Media Image Profiles {#editing-or-deleting-image-profiles}
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. Select the image profile you want to edit or remove. To edit it, select **[!UICONTROL Edit Image Processing Profile]**. To remove it, select **[!UICONTROL Delete Image Processing Profile]**.
@@ -171,7 +173,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 1. Do one of the following:
 
-    * Navigate to **https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam** and apply the appropriate profile and tap **Save**.
+    * Navigate to `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` and apply the appropriate profile and tap **[!UICONTROL Save]**.
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 

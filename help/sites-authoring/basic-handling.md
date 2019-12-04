@@ -459,7 +459,7 @@ Selecting a resource in the leftmost column will display the child resources in 
         * Click or tap the checkbox to select all.
         * Click or tap the checkbox again to deselect all.
 
-* Select the columns to be shown using **View Settings **option located under the Views button. The following columns are available for display:
+* Select the columns to be shown using **View Settings** option located under the Views button. The following columns are available for display:
 
     * **Name** - Page name, which can be useful in a multilingual authoring environment since it is part of the page's URL and does not change regardless of language
     * **Modified** - Last modified date and last modified by user

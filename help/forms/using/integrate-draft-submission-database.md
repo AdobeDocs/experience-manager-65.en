@@ -405,7 +405,7 @@ Perform the following steps to create [a client library](/help/sites-developing/
 
     * **[!UICONTROL multi option:]** Enabled
 
-1. Navigate to `/libs/fd/af/runtime/clientlibs/guideRuntime`and append the `fp.validation` value to the **embed **property.
+1. Navigate to `/libs/fd/af/runtime/clientlibs/guideRuntime`and append the `fp.validation` value to the embed property.
 
 1. Navigate to /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA and append the `fp.validation` value to embed property.
 

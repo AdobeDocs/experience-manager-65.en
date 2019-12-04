@@ -169,7 +169,7 @@ Configure WebLogic so that it uses the Custom Identity keystore and Custom Trust
 1. Click **Release Configuration**.
 1. Under Environment, in Domain Configurations, click **Servers &gt; [*Managed Server*] &gt; Configuration &gt; General**.
 1. Under General, in Configuration, select **Keystores**.
-1. Under the Change Center, click **Lock & Edit **to modify selections and values.
+1. Under the Change Center, click **Lock & Edit** to modify selections and values.
 1. Click **Change** to to get the keystore list as drop-down list and select **Custom Identity And Custom Trust**.
 1. Under Identity, specify the following values:
 

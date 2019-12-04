@@ -9,7 +9,7 @@ docset: aem65
 
 ---
 
-# Assets supported formats{#assets-supported-formats}
+# Assets supported formats {#assets-supported-formats}
 
 The article list all the formats that are supported by AEM Assets and the specific features that support each format.
 
@@ -282,7 +282,9 @@ The Adobe Camera Raw library enables AEM Assets to ingest raw images. For detail
 
 ## Supported MIME types {#supported-mime-types}
 
-MIME types are available in CRXDE Lite at `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
+By default, AEM detects the file type using the file extension. AEM can detect it from the contents of the files. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the AEM Web Console.
+
+A list of supported MIME types are available in CRXDE Lite at `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 See [Configure MIME type-based for upload job parameters support](/help/assets/config-dynamic.md).
 
@@ -566,7 +568,7 @@ See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/
   <tr>
    <td>PDF</td>
    <td>application/pdf</td>
-   <td><code>pdfprocess=Rasterize&amp;resolution=150&amp;colorspace=Auto&amp;pdfbrochure=true&amp;keywords=true&amp;links=true</code></td>
+   <td><code>pdfprocess=Rasterize&amp;resolution=150&amp;colorspace=Auto&amp;pdfbrochure=false&amp;keywords=false&amp;links=false</code></td>
    <td>
     <ul>
      <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_pdf_options.html">pdfOptions</a></li>
@@ -605,7 +607,7 @@ See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/
   <tr>
    <td>PS</td>
    <td>application/postscript</td>
-   <td><code>psprocess=Rasterize&amp;psresolution=150&amp;pscolorspace=Auto&amp;psalpha=false&amp;psextractsearchwords=true</code></td>
+   <td><code>psprocess=Rasterize&amp;psresolution=150&amp;pscolorspace=Auto&amp;psalpha=false&amp;psextractsearchwords=false&amp;aiprocess=Rasterize&amp;airesolution=150&amp;aicolorspace=Auto&amp;aialpha=false</code></td>
    <td>
     <ul>
      <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_post_script_options.html">postScriptOptions</a></li>
@@ -615,7 +617,7 @@ See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/
   <tr>
    <td>PSD</td>
    <td>image/vnd.adobe.photoshop</td>
-   <td><code>process=MaintainLayers&amp;layerNaming=Layername&amp;anchor=Center&amp;createTemplate=true&amp;extractText=true&amp;extendLayers=false</code></td>
+   <td><code>process=None&amp;layerNaming=Layername&amp;anchor=Center&amp;createTemplate=false&amp;extractText=false&amp;extendLayers=false</code></td>
    <td>
     <ul>
      <li><a href="https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_photoshop_options.html">photoshopOptions</a></li>
@@ -729,6 +731,3 @@ See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/
   </tr>
  </tbody>
 </table>
-
-By default, files types are detected using the file extension. AEM can detect file types from the content of the files. For latter, enable **[!UICONTROL Detect MIME type from content]** option in **[!UICONTROL Day CQ DAM Mime Type Service]** in the AEM Web Console.
-

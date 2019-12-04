@@ -16,7 +16,7 @@ discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 
 Follow these steps to create an adaptive form.
 
-1. Access AEM Forms Author instance at `https://*[server]:[port]*/*<custom-context-if-any*>.`
+1. Access AEM Forms Author instance at `https://[server]:[port]/<custom-context-if-any>.`
 
    ```
    

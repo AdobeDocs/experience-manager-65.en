@@ -109,7 +109,7 @@ You can edit a condition using the following steps. You can also choose to edit 
 1. Navigate to the condition and select it.
 1. Tap **[!UICONTROL Edit]**.
 1. Make the required changes in the condition. For more details on the information you can change in a condition, see [Create condition](#createcondition).
-1. Tap **[!UICONTROL Save]**and then tap **[!UICONTROL Close]**.
+1. Tap **[!UICONTROL Save]** and then tap **[!UICONTROL Close]**.
 
 ## Create rules in condition {#ruleeditor}
 

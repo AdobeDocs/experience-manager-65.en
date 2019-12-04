@@ -436,13 +436,13 @@ To successfully invoke a AEM Forms service, set the following connection propert
     * Likewise, if you set this connection property to `JBoss`, the `java.naming.factory.initial` value is set to `org.jnp.interfaces.NamingContextFactory`.
     * You can set the `java.naming.factory.initial` property to a value that meets your requirements if you do not want to use the default values.
 
-  ***Note**: Instead of using a string to set the `DSC_SERVER_TYPE` connection property, you can use a static member of the `ServiceClientFactoryProperties` class. The following values can be used: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, or `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`*.**
+  ***Note**: Instead of using a string to set the `DSC_SERVER_TYPE` connection property, you can use a static member of the `ServiceClientFactoryProperties` class. The following values can be used: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, or `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
 * **DSC_CREDENTIAL_USERNAME:** Specifies the AEM forms user name. For a user to sucessfully invoke a AEM Forms service, they need the Services User role. A user can also have another role that includes the Service Invoke permission. Otherwise, an exception is thrown when they attempt to invoke a service. If service security is disabled, it is not necessary to specify this connection property.
 * **DSC_CREDENTIAL_PASSWORD:** Specifies the corresponding password value. If service security is disabled, it is not necessary to specify this connection property.
 * **DSC_REQUEST_TIMEOUT:** The default request timeout limit for the SOAP request is 1200000 milliseconds (20 minutes). Sometime, a request can require longer time to complete the operation. For example, a SOAP request that retrieves a large set of records can require a longer timeout limit. You can use the `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` to increase the request call timeout limit for the SOAP requests.
 
-  ***note**: Only SOAP-based invocations support the DSC_REQUEST_TIMEOUT property. *
+  ***note**: Only SOAP-based invocations support the DSC_REQUEST_TIMEOUT property.
 
 To set connection properties, perform the following tasks:
 

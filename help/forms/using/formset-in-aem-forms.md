@@ -335,7 +335,7 @@ This tag indicates the start of HTML5 Form XML. This is added in the submit XML 
 
 `children: controlled by the Forms in Form set`
 
-The name rootElement is just a placeholder. The actual name is picked from the forms used in the form set**. **The subtree that starts with rootElement contains the data of the fields and subforms inside the Forms in the form set. There are multiple factors that determine the structure of the rootElement and its children.
+The name rootElement is just a placeholder. The actual name is picked from the forms used in the form set. The subtree that starts with rootElement contains the data of the fields and subforms inside the Forms in the form set. There are multiple factors that determine the structure of the rootElement and its children.
 
 In prefill XML, this tag is optional, but if it’s missing, the entire XML is ignored.
 

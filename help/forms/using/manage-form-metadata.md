@@ -298,7 +298,7 @@ AEM Forms exposes the metadata schemas of the supported forms types in this tool
     1. To delete a field you added, select the field and then click the delete ![delete-1](assets/delete-1.png) icon.
 
 1. If necessary, follow steps 1-3 to add another property.
-1. Click **Done **after making all the changes.
+1. Click **Done** after making all the changes.
 
    You have successfully added a custom metadata property.
 

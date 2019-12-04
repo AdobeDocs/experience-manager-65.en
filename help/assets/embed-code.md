@@ -31,7 +31,7 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 >
 >See [Publishing Image Presets](managing-image-presets.md#publishing-image-presets).
 
-**To embed the Dynamic Media Video or Image viewer on a web page**:
+**To embed the Dynamic Media Video or Image viewer on a web page**
 
 1. Navigate to the *published* video or image asset whose embed code you want to copy.
 

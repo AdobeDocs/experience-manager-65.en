@@ -60,7 +60,7 @@ You can also override the default custom function to define your own logic for f
 
     1. Click the new folder you have created (here `JohnDoe`). The Content Explorer displays the folder's contents as dimmed.
 
-    1. Double-click the **jcr:content **property, set its type as **nt:resource**, and then click the green check mark to save the entry.
+    1. Double-click the **jcr:content** property, set its type as **nt:resource**, and then click the green check mark to save the entry.
 
        If the property is not present, first create a property with name jcr:content.
 

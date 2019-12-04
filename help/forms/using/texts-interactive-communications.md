@@ -70,11 +70,11 @@ The text document fragment in Interactive Communication supports the following t
 
 You can edit an existing text document fragment using the following steps. You can also choose to edit a text document fragment from within an Interactive Communication editor.
 
-1. Select **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**. 
-1. Navigate to a text document fragment and select it. 
-1. Tap **[!UICONTROL Edit]**. 
-1. Make the required changes. For more information on options in text, see [Create text](#createtext). 
-1. Tap **[!UICONTROL Save]**and then tap **[!UICONTROL Close]**.
+1. Select **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
+1. Navigate to a text document fragment and select it.
+1. Tap **[!UICONTROL Edit]**.
+1. Make the required changes. For more information on options in text, see [Create text](#createtext).
+1. Tap **[!UICONTROL Save]** and then tap **[!UICONTROL Close]**.
 
 ## Personalizing a text document fragment using form data model properties {#formdatamodel}
 
@@ -118,16 +118,16 @@ While creating or editing a text document fragment, you can create and insert va
 
 1. Enter the following information and tap **[!UICONTROL Create]**:
 
-    * **[!UICONTROL Name*]**: Name of the variable.
-    * **[!UICONTROL Description]**: Optionally enter a description about the variable. 
-    * **[!UICONTROL Type*]**: Select a type of the variable: String, Number, Boolean, or Date. 
-    * **[!UICONTROL Allow Specific Values Only]**: For String and Number variables, you can ensure that the agent chooses from a specific set of values for a placeholder in the Agent UI. To specify the set of values, select this option and then specify comma-separated values that are allowed in the **[!UICONTROL Values*]** field.
+    * **[!UICONTROL Name*]** : Name of the variable.
+    * **[!UICONTROL Description]** : Optionally enter a description about the variable. 
+    * **[!UICONTROL Type*]** : Select a type of the variable: String, Number, Boolean, or Date. 
+    * **[!UICONTROL Allow Specific Values Only]** : For String and Number variables, you can ensure that the agent chooses from a specific set of values for a placeholder in the Agent UI. To specify the set of values, select this option and then specify comma-separated values that are allowed in the **[!UICONTROL Values*]** field.
 
 1. Tap **[!UICONTROL Create]**.
 
-   The variable is created and listed in the Variables pane. 
+   The variable is created and listed in the Variables pane.
 
-1. To insert a variable in the text, place the cursor at the appropriate place, select the variable, and tap **[!UICONTROL Add Selected]**. 
+1. To insert a variable in the text, place the cursor at the appropriate place, select the variable, and tap **[!UICONTROL Add Selected]**.
 
    ![variableinserted](assets/variableinserted.png)
 

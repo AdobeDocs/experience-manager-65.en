@@ -153,7 +153,7 @@ Import XMP metadata by using the XMP Utilities API (Java):
 
 1. Create an XMPUtilityService client
 
-   Create an `XMPUtilityServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.**
+   Create an `XMPUtilityServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Invoke the XMP metadata import operation
 
@@ -270,7 +270,7 @@ Export XMP metadata by using the XMP Utilities API (Java):
 
 1. Create an XMPUtilityService client
 
-   Create an `XMPUtilityServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.**
+   Create an `XMPUtilityServiceClient` object by using its constructor and passing a `ServiceClientFactory` object that contains connection properties.
 
 1. Invoke the XMP metadata import operation
 

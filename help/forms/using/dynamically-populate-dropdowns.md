@@ -23,7 +23,7 @@ docset: aem65
 
 ## Procedure to dynamically populate drop-down lists {#procedure-to-dynamically-populate-drop-down-lists}
 
-Consider a scenario where you want to populate the **State** drop-down list based on a value that you select in the **Country** drop-down list. If you select Australia in the **Country** drop-down list, the **State **drop-down list displays the states within Australia. The following procedure describes how to accomplish this task.
+Consider a scenario where you want to populate the **State** drop-down list based on a value that you select in the **Country** drop-down list. If you select Australia in the **Country** drop-down list, the **State** drop-down list displays the states within Australia. The following procedure describes how to accomplish this task.
 
 1. Create a project with the following modules:
 

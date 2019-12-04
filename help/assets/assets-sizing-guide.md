@@ -53,11 +53,11 @@ The example data populated in the tool demonstrates how important it is to perfo
 
 ### Shared Datastores {#shared-datastores}
 
-For large datastores, you can implement a shared datastore either through a shared file datastore on a network attached drive or through an S3 datastore. In this case, individual instances need not maintain a copy of the binaries. In addition, a shared datastore facilitates binary-less replication and helps reduce the bandwidth used to replicate assets to publish environments or offloading instances.
+For large datastores, you can implement a shared datastore either through a shared file datastore on a network attached drive or through an S3 datastore. In this case, individual instances need not maintain a copy of the binaries. In addition, a shared datastore facilitates binary-less replication and helps reduce the bandwidth used to replicate assets to publish environments.
 
 #### Use Cases {#use-cases}
 
-The datastore can be shared between a primary and standby author instance to minimize the amount of time that it takes to update the standby instance with changes made in the primary instance. Adobe recommends sharing the datastore between a primary author instance and offload author instances to reduce overheads in workflow offloading. You can also share the datastore between the author and publish instances to minimize the traffic during replication.
+The datastore can be shared between a primary and standby author instance to minimize the amount of time that it takes to update the standby instance with changes made in the primary instance. You can also share the datastore between the author and publish instances to minimize the traffic during replication.
 
 #### Drawbacks {#drawbacks}
 
@@ -81,7 +81,7 @@ A shared datastore requires the binaries to be stored on a network-mounted drive
 
 #### Latency {#latency}
 
-Latency in S3 implementations is introduced by the background writing threads. Backup procedures must take into account this latency and any offloading procedures. The S3 asset may not be present in S3 when an offloading job starts. In addition, Lucene indexes may remain incomplete when making a backup. It applies to any time-sensitive file written to S3 datastore and accessed from another instance.
+Latency in S3 implementations is introduced by the background writing threads. Backup procedures must take into account this latency. In addition, Lucene indexes may remain incomplete when making a backup. It applies to any time-sensitive file written to S3 datastore and accessed from another instance.
 
 ### Node Store/Document Store {#node-store-document-store}
 
