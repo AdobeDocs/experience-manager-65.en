@@ -68,7 +68,7 @@ From the sample diagrams, you can conclude that six devices share a conceptual 1
 
 Designing the topology of the AEM environment requires detailed knowledge of the system configuration and how the network is connected within the user environment.
 
-The sample scenario includes a publish farm with five servers, an S3 binary store, and dynamic media configured.
+The sample scenario includes a publish farm with five servers, an S3 binary store, and Dynamic Media configured.
 
 The dispatcher shares it's 100Mbps connection with two entities, the outside world and the AEM instance. For simultaneous upload and download operations, you should divide this number by two. The attached external storage uses a separate connection.
 
