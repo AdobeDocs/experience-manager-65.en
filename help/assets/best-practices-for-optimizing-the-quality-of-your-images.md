@@ -1,8 +1,8 @@
 ---
 title: Best practices for optimizing the quality of your images
 seo-title: Best practices for optimizing the quality of your images
-description: Learn best practices for optimizing image quality in dynamic media
-seo-description: Learn best practices for optimizing image quality in dynamic media
+description: Learn best practices for optimizing image quality in Dynamic Media
+seo-description: Learn best practices for optimizing image quality in Dynamic Media
 uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -15,7 +15,7 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 
 Optimizing image quality can be a time consuming process as many factors contribute to rendering acceptable results. The outcome is partly subjective because individuals perceive image quality differently. Structured experimentation is key.
 
-AEM includes more than 100 dynamic media image delivery commands for tuning and optimizing images and rendering results. The following guidelines can help you streamline the process and achieve good results quickly using some essential commands and best practices.
+AEM includes more than 100 Dynamic Media image delivery commands for tuning and optimizing images and rendering results. The following guidelines can help you streamline the process and achieve good results quickly using some essential commands and best practices.
 
 ## Best practices for image format (`&fmt=`) {#best-practices-for-image-format-fmt}
 
