@@ -17,6 +17,3 @@ user-guide-title: AEM 6.5 Release Notes
 + [Known Issues](known-issues.md)
 + [AEM Foundation and Repository](wcm-platform.md)
 + [Touch UI Feature Status](touch-ui-features-status.md)
-+ [CRX2OAK Migration Tool](crx2oak.md)
-+ [Smart Content Service Release Notes](smart-content-service-release-notes.md)
-+ [Livefyre Feature Pack 2.0.6 Release Notes](livefyre-feature-pack-206.md)
