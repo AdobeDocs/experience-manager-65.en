@@ -101,13 +101,13 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 
     ![Scene7 Batch Upload component](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. On the **[!UICONTROL Batch Upload to Scene7 &ndash; Step Properties]** dialog box, set the following:
+1. On the **[!UICONTROL Batch Upload to Scene7&mdash;Step Properties]** dialog box, set the following:
     * In the **[!UICONTROL Title]** and **[UICONTROL Description]** text fields, enter a new title and description for the job, if desired.
-    * Select **[!UICONTOL Handler Advance]** if your handler will advance to the next step.
-    * In the **[!UICONTOL Timeout]** field, enter the external process timeout (seconds).
-    * In the **[!UICONTOL Period]** field, enter a polling interval (seconds) to test for the completion of the external process. 
-    * In the **[!UICONTOL Batch field]**, enter the maximum number of assets (50-1000) to process in a Dynamic Media server batch processing upload job.
-    * Select **[!UICONTOL Advance on timeout]** if you want to advance when the timeout is reached. Deselect if you want to proceed to the inbox when the timeout is reached. 
+    * Select **[!UICONTROL Handler Advance]** if your handler will advance to the next step.
+    * In the **[!UICONTROL Timeout]** field, enter the external process timeout (seconds).
+    * In the **[!UICONTROL Period]** field, enter a polling interval (seconds) to test for the completion of the external process. 
+    * In the **[!UICONTROL Batch field]**, enter the maximum number of assets (50-1000) to process in a Dynamic Media server batch processing upload job.
+    * Select **[!UICONTROL Advance on timeout]** if you want to advance when the timeout is reached. Deselect if you want to proceed to the inbox when the timeout is reached. 
 
     ![Properties dialog box](/help/assets/assets-dm/reprocess-assets3.png)
 
