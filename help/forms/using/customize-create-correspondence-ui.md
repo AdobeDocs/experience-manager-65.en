@@ -98,7 +98,7 @@ Use the following steps to create the required folder structure in the /apps bra
        >
        >You can also create the folder structure in the /apps folder manually.
 
-1. Click **Save All **to save the changes on the server.
+1. Click **Save All** to save the changes on the server.
 
 ## Upload the new logo to CRX {#uploadlogo}
 
@@ -131,7 +131,7 @@ Use the following steps to upload the custom logo file to CRX:
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
-1. Double-click the **jcr:data **property.
+1. Double-click the **jcr:data** property.
 
    The Edit jcr:data dialog appears.
 

@@ -21,7 +21,7 @@ A data dictionary is an independent representation of metadata that describes un
 
 The data dictionary is made up of elements of three types: Simple, Composite, and Collection elements. Simple DDEs are primitive elements such as strings, numbers, dates, and Boolean values that hold information such as a city name. A Composite DDE contains other DDEs, which can be of type primitive, composite or collection. For example, an address, which consists of a street address, city, province, country, and postal code. A Collection is a list of similar Simple or Composite DDEs. For example, a customer with multiple locations, or different billing and shipping addresses.
 
-Correspondence Management uses the back end, customer, `` ``or recipient-specific data stored according to the data dictionary’s structure to create correspondence meant for different customers. For example, a document can be created with friendly names, such as "Dear {First Name}","Mr. {Last Name}".
+Correspondence Management uses the back end, customer, or recipient-specific data stored according to the data dictionary’s structure to create correspondence meant for different customers. For example, a document can be created with friendly names, such as "Dear {First Name}","Mr. {Last Name}".
 
 Typically, business users do not require knowledge of metadata representations such as XSD (XML schema), and Java classes. However, they usually require access to these data structures and attributes to build solutions.
 
@@ -53,7 +53,7 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
 
     * **Description**: (Optional) Description of the data dictionary.
     * **Tags:** (Optional) To create custom tag, enter value in text field and press Enter. You can see your tag below text field of tags. When you save this text, the newly added tags also get created.
-    * **Extended Properties**: (Optional) Tap **Add Field **to specify metadata attributes for your data dictionary. In the Property Name column, enter a unique property name. In the Value column, enter a value to associate with the property.
+    * **Extended Properties**: (Optional) Tap **Add Field** to specify metadata attributes for your data dictionary. In the Property Name column, enter a unique property name. In the Value column, enter a value to associate with the property.
 
    ![Data dictionary properties specified in German](do-not-localize/1_ddproperties.png)
 
@@ -65,7 +65,7 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
    >
    >You can skip uploading the schema file and build your data dictionary from scratch using the user interface. To do this, skip this step and continue with the next steps.
 
-1. Tap** Next**.
+1. Tap **Next**.
 1. In the Add Properties screen, add the elements to the data dictionary. You can also add/delete elements and edit their details if you have uploaded a schema to get a basic structure of the data dictionary.
 
    You can tap the three dots on the right side of an element and add an element to the data dictionary structure.
@@ -92,7 +92,7 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
 
    ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
-1. (Optional) After selecting an element, in the Advanced tab you can add properties (attributes). You can also tap **Add Field **and extend the properties of a DD element.
+1. (Optional) After selecting an element, in the Advanced tab you can add properties (attributes). You can also tap **Add Field** and extend the properties of a DD element.
 
    ![3_addddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
 
