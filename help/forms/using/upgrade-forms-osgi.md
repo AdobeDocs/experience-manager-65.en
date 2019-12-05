@@ -105,7 +105,7 @@ You can perform a direct upgrade from AEM 6.2 Forms or AEM 6.3 Forms to AEM 6.5 
 
    >[!NOTE]
    >
-   >In AEM 6.5 Forms, the structure of crx-repository has changed. After you upgrade to AEM 6.5 forms, use the changed paths for customization that you create afresh. For the complete list of changed paths, see [Forms Repository Restructuring in AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
+   >In AEM 6.5 Forms, the structure of crx-repository has changed. After you upgrade to AEM 6.5 forms, use the changed paths for customization that you create afresh. For the complete list of changed paths, see [Forms Repository Restructuring in AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md).
 
 ## AEM 6.0 Forms and AEM 6.1 Forms > AEM 6.5 Forms {#upgrade-aem-forms-60-61-to-64}
 

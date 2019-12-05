@@ -16,14 +16,14 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
 
 **With 6.4 Upgrade**
 
-* [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
+* [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#misc)
 
 **Prior to 6.5 Upgrade**
 
-* [Echosign Cloud Service Configuration](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#echosign-cloud-service-configuration)
-* [Recaptcha Cloud Service Configurations](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#recaptcha-cloud-service-configurations)
-* [Typekit Cloud Service Configurations](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#typekit-cloud-service-configurations)
-* [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
+* [Echosign Cloud Service Configuration](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#echosign-cloud-service-configuration)
+* [Recaptcha Cloud Service Configurations](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#recaptcha-cloud-service-configurations)
+* [Typekit Cloud Service Configurations](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#typekit-cloud-service-configurations)
+* [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#misc)
 
 ## With 6.4 Upgrade {#with-upgrade}
 
