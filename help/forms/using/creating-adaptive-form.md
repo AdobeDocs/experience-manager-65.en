@@ -37,7 +37,7 @@ Follow these steps to create an adaptive form.
     * **[!UICONTROL Title:]** Specifies the display name of the form. The title helps you identify the form in the AEM Forms user interface.
     * **[!UICONTROL Name:]** Specifies the name of the form. A node with the specified name is created in the repository. As you start typing a title, value for the name field is automatically generated. You can change the suggested value. The name field can include only alphanumeric characters, hyphens, and underscores. All the invalid inputs are replaced with a hyphen.
     * **[!UICONTROL Description:]** Specifies the detailed information about the form. 
-    * **[!UICONTROL Tags:]** Specifies tags to uniquely identify the adaptive form. Tags help in searching the form. To create tags, type new tag names in the **Tags **box.
+    * **[!UICONTROL Tags:]** Specifies tags to uniquely identify the adaptive form. Tags help in searching the form. To create tags, type new tag names in the **Tags** box.
 
 1. You can create an adaptive form based on one of following form models:
 
@@ -153,7 +153,7 @@ In addition, you can use the template editor to create your own templates. For m
 
 Adaptive forms are created without a form model (using the None option for form model) or using a form model such as a form template, XML schema or JSON schema, or form data model. You can change the form model for an adaptive form from None to another form model. For adaptive form based on a form model, you can choose another form template, XML schema, JSON schema, or form data model for the same form model. However, you cannot change from one form model to another.
 
-1. Select the adaptive form and tap the **Properties **icon.
+1. Select the adaptive form and tap the **Properties** icon.
 1. Open the **[!UICONTROL Form Model]** tab and do one the following.
 
     * If the adaptive form is without a form model, you can choose another form model and accordingly select a form template, XML or JSON schema, or form data model.

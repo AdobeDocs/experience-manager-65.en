@@ -38,7 +38,7 @@ Perform the following steps to create a watched folder:
     * **Name**: Identifies the watched folder. Use only alphanumeric characters for the name.
     * **Path**: Specifies the watched folder location. In a clustered environment, this setting must point to a shared network folder that is accessible to every user running AEM on different nodes of a cluster.
     * **Process Files Using**: The type of the process to start. You can specify workflow, script, or service.
-    * **Service Name/Script Path/Workflow Path**: The behavior of the field is based on the value specified for the **Process Files Using **field. You can specify the following values:
+    * **Service Name/Script Path/Workflow Path**: The behavior of the field is based on the value specified for the **Process Files Using** field. You can specify the following values:
 
         * For Workflow, specify the workflow model to be executed. For example, /etc/workflow/models/&lt;workflow_name&gt;/jcr:content/model
         * For Script, specify JCR path of the script to be executed. For example, /etc/watchfolder/test/testScript.ecma
@@ -66,7 +66,7 @@ Perform the following steps to create a watched folder:
 
     * **Run Mode**: Specify the comma-separated list of allowed run-modes for workflow execution.
     * **Time Out Staged Files After**: Specify the number of seconds to wait before an input file/folder which has already been picked up for processing is treated as having timed out and marked as a failure. The time-out mechanism only activates when the value for this property is a positive number.
-    * **Delete Timed-out Staged Files When Throttled**: If enabled, the **Time Out Staged Files After **mechanism is activated only when throttling is turned on for the watched folder.
+    * **Delete Timed-out Staged Files When Throttled**: If enabled, the **Time Out Staged Files After** mechanism is activated only when throttling is turned on for the watched folder.
     * **Scan Input Folder After Every:** Specify the time interval, in seconds, for scanning the watched folder for inputs. Unless the Throttle setting is enabled, poll Interval should be longer than the time to process an average job; otherwise, the system might overloaded. The value of the interval must be greater than or equal to one.
     * **Exclude File Pattern**: Specify a semi-colon (;) delimited list of patterns that a watched folder uses to determine which files and folders to scan and pick up. Any file or folder with the specified pattern is not scanned for processing. For more information about file patterns, see [About file patterns](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
     * **Include File Pattern**: Specify a semi-colon (;) delimited list of patterns that the watched folder uses to determine which folders and files to scan and pick up. For example, if the Include File Pattern is input&ast;, all files and folders that match input&ast; are picked up. The default value is &ast; and indicates all files and folders. For more information about file patterns, see [About File Patterns](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
@@ -103,7 +103,7 @@ Perform the following steps to create a watched folder:
     * **Throttle On:** When this option is enabled, it limits the number of watched folder jobs that AEM forms processes at any given time. The Batch Size value determines the maximum number of jobs. For more information, see [throttling](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
     * **Overwrite Existing Files With Similar Name**: When set to True, files in the results folder and preserve folder are overwritten. When set to False, files and folders with a numeric index suffix are used for the name. The default value is False.
     * **Preserve Files On Failure:** When set to True, the input files are preserved in case of failure. The default value is true.
-    * **Include Files With Pattern:** Specify a semi-colon (;) delimited list of patterns that the watched folder uses to determine which folders and files to scan and pick up. For example, if the Include File Pattern is input&ast;, all files and folders that match input&ast; are picked up. For more information, see [Administration Help](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
+    * **Include Files With Pattern:** Specify a semi-colon (;) delimited list of patterns that the watched folder uses to determine which folders and files to scan and pick up. For example, if the Include File Pattern is input, all files and folders that match input are picked up. For more information, see [Administration Help](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
     * **Invoke Watched Folder Asynchronously:** Identifies the invocation type as asynchronous or synchronous. The default value is asynchronous. Asynchronous is recommended for long-lived processes, while synchronous is recommended for transient or short-lived processes.
     * **Enable Watched Folder:** When this option is enabled, the watch folder is enabled. The default value is True.
 
