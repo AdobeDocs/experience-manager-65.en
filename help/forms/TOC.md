@@ -188,7 +188,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](using/capabilities-osgi-jee-workflows.md)
   + [Initiate Document Services APIs from AEM Workflow](using/initiating-document-services-apis-aem.md)
   + [Logging in AEM Forms workflows](/help/forms/using/forms-workflow-logs.md)
-  + [Variables in AEM workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
+  + [Variables in AEM workflows](using/variable-in-aem-workflows.html.md)
 + AEM Forms Workspace {#use-aem-forms-workspace}
   + [Introduction to AEM Forms workspace](using/introduction-html-workspace.md)
   + [Working with AEM Forms workspace](using/html-workspace-overview.md)
