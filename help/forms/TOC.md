@@ -172,6 +172,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Integrate Adobe Sign with AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
   + [Creating and managing reviews for assets in forms](using/create-reviews-forms.md)
   + [Embed an adaptive form or Interactive Communication in AEM Sites Single Page Application](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
+  + [Standard Validation Error Messages Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
 + Interactive Communications {#interactive-communications}
   + [Introduction to Interactive Communication authoring UI](using/introduction-interactive-communication-authoring.md)
   + [Create an Interactive Communication](using/create-interactive-communication.md)
@@ -660,5 +661,3 @@ user-guide-title: AEM 6.5 Forms User Guide
       + [Programmatically managing the Preferences Nodes](developing/programmatically-preferences-nodes.md)
       + [Protecting Documents with Policies](developing/protecting-documents-policies.md)
       + [Validate a DDX document using the web service API](developing/validate-ddx-document-using-web.md)
-      + [Standard Validation Error Messages Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
-      
