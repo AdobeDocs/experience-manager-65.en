@@ -59,7 +59,7 @@ If the server validation error message does not display in the standard format, 
 
 Before adding custom handler, you must configure the adaptive form for asynchronous submission. Execute the following steps:
 
-<!-- 1. In adaptive form authoring mode, select the Form Container object and tap ![adaptive form properties](assets/af_properties.png) to open its properties.
+1. In adaptive form authoring mode, select the Form Container object and tap ![adaptive form properties](assets/configure_icon.png) to open its properties.
 1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
 1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
 1. Select the Submit Action:
@@ -69,7 +69,7 @@ Before adding custom handler, you must configure the adaptive form for asynchron
 
     ![adaptive form submission properties](assets/af_submission_properties.png)
 
-1. Tap ![Save](assets/af_save.png) to save the properties.-->
+1. Tap ![Save](assets/save_icon.png) to save the properties.
 
 ### Add custom error handler on adaptive form submission {#add-custom-error-handler-af-submission}
 
@@ -130,13 +130,13 @@ Using this custom error handler, the adaptive form converts the fields listed in
 
 Execute the following steps to add error handler to convert a custom error structure into the standard error structure using [Rule Editor's](rule-editor.md) Invoke Service action:
 
-<!-- 1. Open the adaptive form in authoring mode, select any form object, and tap ![Rule Editor](assets/af_edit_rules.png) to open the rule editor.
+1. Open the adaptive form in authoring mode, select any form object, and tap ![Rule Editor](assets/rule_editor_icon.png) to open the rule editor.
 1. Tap **[!UICONTROL Create]**.
 1. Create a condition in the **[!UICONTROL When]** section of the rule. For example, When[Name of field] is changed. Select **[!UICONTROL is changed]** from the **[!UICONTROL Select State]** drop-down list to achieve this condition.
 1. In the **[!UICONTROL Then]** section, select **[!UICONTROL Invoke Service]** from the **[!UICONTROL Select Action]** drop-down list.
-1. Select a Post service and its corresponding data bindings from the **[!UICONTROL Input]** section. For example, if you want to validate **Name**, **ID**, and **Status** fields in the adaptive form, select a Post service (pet) and select pet.name, pet.id, and pet.status in the **[!UICONTROL Input]** section.-->
+1. Select a Post service and its corresponding data bindings from the **[!UICONTROL Input]** section. For example, if you want to validate **Name**, **ID**, and **Status** fields in the adaptive form, select a Post service (pet) and select pet.name, pet.id, and pet.status in the **[!UICONTROL Input]** section.
 
-    As a result of this rule, the values that you enter for **Name**, **ID**, and **Status** fields get validated, as soon as the field defined in step 2 is changed and you tab out of the field in the form.
+As a result of this rule, the values that you enter for **Name**, **ID**, and **Status** fields get validated, as soon as the field defined in step 2 is changed and you tab out of the field in the form.
 
 1. Select **[!UICONTROL Code Editor]** from the mode selection drop-down list.
 1. Tap **[!UICONTROL Edit Code]**.
