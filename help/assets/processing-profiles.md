@@ -102,7 +102,7 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
     ![Scene7 Batch Upload component](/help/assets/assets-dm/reprocess-assets8.png)
 
 1. On the **[!UICONTROL Batch Upload to Scene7&mdash;Step Properties]** dialog box, set the following:
-    * In the **[!UICONTROL Title]** and **[UICONTROL Description]** text fields, enter a new title and description for the job, if desired.
+    * In the **[!UICONTROL Title]** and **[!UICONTROL Description]** text fields, enter a new title and description for the job, if desired.
     * Select **[!UICONTROL Handler Advance]** if your handler will advance to the next step.
     * In the **[!UICONTROL Timeout]** field, enter the external process timeout (seconds).
     * In the **[!UICONTROL Period]** field, enter a polling interval (seconds) to test for the completion of the external process. 
