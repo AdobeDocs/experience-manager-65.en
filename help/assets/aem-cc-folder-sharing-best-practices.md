@@ -62,7 +62,7 @@ Best practices for leveraging the AEM to Creative Cloud folder sharing include:
 
 * **Volume considerations:** AEM/Creative Cloud Folder Sharing should be used to share smaller number of files, for example, relevant to a specific campaign or activity. To share larger sets of assets, like all approved assets in the organization, use other distribution methods (for example, AEM Assets Brand Portal) or AEM desktop app.
 
-* **Avoid sharing deep hierarchies:** The sharing works recursively and does not allow for selective unsharing. Typically, only folders without subfolders, or with a very shallow hierarchy, like 1 subfolder level, should be considered for sharing.
+* **Avoid sharing deep hierarchies:** The sharing works recursively and does not allow for selective un-sharing. Typically, only folders without sub-folders, or with a very shallow hierarchy, like 1 sub-folder level, should be considered for sharing.
 * **Separate folders for one-way sharing:** Separate folders should be used for sharing final assets from AEM Assets to Creative Cloud files, and for sharing creative-ready assets back from Creative Cloud files to AEM Assets. Together with a good naming convention for these folders, it creates an easier-to-understand working environment for AEM Assets and Creative Cloud users alike.
 * **Avoid WIP in the shared folder:** Shared folder should not be used for Work in Progress - use a separate folder in Creative Cloud Files to carry out work that requires frequent changes to the file.
 * **Start new work outside of shared folder:** New designs (creative files) should be started in the separate WIP folder in Creative Cloud Files, and when they are ready to be shared with AEM Assets users, they should be moved or saved to the shared folder.

@@ -270,11 +270,11 @@ The recommended approach here is to use an option in AEM desktop app to turn off
 
 You may have a requirement to simultaneously upload a larger number of files into DAM in some scenarios, for example:
 
-* Uploading results of  photoshoots  or larger projects
+* Uploading results of photoshoots or larger projects
 * Uploading assets provided by creative agencies
 * Uploading selected assets from a larger set if the selection is done outside DAM
 
-Note that this description refers to uploading files operationally (for example, every week or with every  photoshoot ), as a normal part of desktop user's workflow. Large asset migrations are not covered here.
+The description refers to uploading files operationally (for example, every week or with every photoshoot), as a normal part of desktop user's workflow. Large asset migrations are not covered here.
 
 You can leverage the following upload capabilities:
 

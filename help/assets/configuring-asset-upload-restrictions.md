@@ -1,13 +1,9 @@
 ---
 title: Configuring Asset Upload Restrictions
-seo-title: Configuring Asset Upload Restrictions
 description: Learn how to configure Adobe Experience Manager (AEM) Assets to restrict the type of assets (files) that users can upload.
-seo-description: Learn how to configure Adobe Experience Manager (AEM) Assets to restrict the type of assets (files) that users can upload.
 uuid: bcde34f1-5d64-4dc3-a124-0482c93be31e
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: ff6b23fb-347d-4e68-932e-52b42b15f784
 ---
 
@@ -20,9 +16,8 @@ You can configure Adobe Experience Manager (AEM) Assets to restrict the type of 
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 
-1. To restrict users to upload files of certain MIME types only, unselect the **[!UICONTROL llow all MIME]** option and specify allowed MIME types in the **[!UICONTROL Allowed Asset MIMEs (regex)]** fields using regular expressions.
+1. To restrict users to upload files of certain MIME types only, unselect the **[!UICONTROL Allow all MIME]** option and specify allowed MIME types in the **[!UICONTROL Allowed Asset MIMEs (regex)]** fields using regular expressions.
 
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
 1. Click/tap **[!UICONTROL Save]** to save the changes. If you specify MIME-strings for allowed MIME types, the upload operation fails for any asset with MIME type that doesn’t match the configured MIME strings in these fields.
-
