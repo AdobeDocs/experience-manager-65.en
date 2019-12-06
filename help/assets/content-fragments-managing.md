@@ -162,7 +162,7 @@ To open your fragment for editing:
 
 >[!NOTE]
 >
->Versions can also be [created, compared and reverted from the Timeline](/help/assets/content-fragments-managing.html#timeline-for-content-fragments).
+>Versions can also be [created, compared and reverted from the Timeline](/help/assets/content-fragments-managing.md#timeline-for-content-fragments).
 
 The editor has two options:
 
@@ -266,7 +266,7 @@ For example:
 
 ## Comparing Fragment Versions {#comparing-fragment-versions}
 
-The **Compare to Current** action is available from the [Timeline](/help/assets/content-fragments-managing.html#timeline-for-content-fragments) after you have selected a specific version.
+The **Compare to Current** action is available from the [Timeline](/help/assets/content-fragments-managing.md#timeline-for-content-fragments) after you have selected a specific version.
 
 This will open:
 

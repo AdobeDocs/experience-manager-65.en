@@ -243,7 +243,7 @@ Annotations:
 
   ![cfm-6420-25](assets/cfm-6420-25.png)
 
-* Can be viewed, and deleted, in [Timeline](/help/assets/content-fragments-managing.html#timeline-for-content-fragments) for the selected fragment.
+* Can be viewed, and deleted, in [Timeline](/help/assets/content-fragments-managing.md#timeline-for-content-fragments) for the selected fragment.
 
 ### Inserting Assets into your Fragment {#inserting-assets-into-your-fragment}
 
