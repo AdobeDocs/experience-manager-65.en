@@ -92,10 +92,10 @@ You can also use the component to control the behavior of the task. For example,
 * **Title**: Specify the title for the route. It is displayed in AEM Inbox.
 * **Coral Icon**: Specify HTML attribute of a coral icon. Adobe CorelUI library provides a vast set of touch-first icons. You can choose and use an icon for the route. It is displayed along with the title in AEM Inbox. If you store the routes in a variable, the routes use a default 'Tags' coral icon.
 * **Allow assignee to add comment**: Select this option to enable comments for the task. An assignee can add the comments from within AEM Inbox at the time of task submission.
-* **Save comment in variable:** Save the comment in a variable of String data type. This option displays only if you select the **Allow assignee to add comment **checkbox.
+* **Save comment in variable:** Save the comment in a variable of String data type. This option displays only if you select the **Allow assignee to add comment** checkbox.
 
 * **Allow assignee to add attachment(s) to the task**: Select this option to enable attachments for the task. An assignee can add the attachments from within AEM Inbox at the time of task submission.
-* **Save output task attachments using**: Specify the location of attachment folder. You can save output task attachments using a path relative to payload or in a variable of array of document data type. This option displays only if you select the **Allow assignee to add attachment(s) to the task **checkbox and select **Adaptive form**, **Read-only adaptive form**, or **Non-interactive PDF document** from the **Type** drop-down list in the **Form/Document** tab.
+* **Save output task attachments using**: Specify the location of attachment folder. You can save output task attachments using a path relative to payload or in a variable of array of document data type. This option displays only if you select the **Allow assignee to add attachment(s) to the task** checkbox and select **Adaptive form**, **Read-only adaptive form**, or **Non-interactive PDF document** from the **Type** drop-down list in the **Form/Document** tab.
 
 >[!NOTE]
 >
