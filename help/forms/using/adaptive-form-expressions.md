@@ -61,7 +61,7 @@ You can use the access expression to enable or disable a field. If the expressio
 
 **Return Type**: The expression returns a Boolean value, representing whether the field is enabled or disabled. **true** represents that the field is enabled and **false** represents the field is disabled.
 
-**Example**: To enable a field only when the value of **field1 **is set to **X**, the access expression is: `field1.value == "X"`
+**Example**: To enable a field only when the value of **field1** is set to **X**, the access expression is: `field1.value == "X"`
 
 ### Calculate Expression {#calculate-expression}
 
@@ -71,7 +71,7 @@ The calculate expression is used to auto-compute the value of a field using an e
 
 **Return Type**: The expression returns a value that is compatible to the field where the expression result is displayed (for example, decimal).
 
-**Example**: The calculate expression to show sum of two fields in **field1 **is:
+**Example**: The calculate expression to show sum of two fields in **field1** is:
 `field2.value + field3.value`
 
 ### Click Expression {#click-expression}
@@ -82,7 +82,7 @@ The click expression handles the actions performed on the click event of a butto
 
 **Return Type**: The click expression does not return any value. If any expression returns a value, the value is ignored.
 
-**Example**: To populate a text box **textbox1 **on the click action of a button with value **AEM Forms**, the click expression of the button is `textbox1.value="AEM Forms"` ``
+**Example**: To populate a text box **textbox1** on the click action of a button with value **AEM Forms**, the click expression of the button is `textbox1.value="AEM Forms"`
 
 ### Initialization Script {#initialization-script}
 
@@ -107,7 +107,7 @@ The options expression is used to dynamically fill options of a drop-down list f
 
 **Return Type**: The options expression returns an array of string values. Each value can be a simple string, such as **Male**, or in a key=value pair format, such as **1=Male**
 
-**Example**: To populate value of a field, based on the value of another field, provide a simple options expression. For example, to populate a field,** Number of Kids**, based on the **Marital Status** expressed in another field, the expression is:
+**Example**: To populate value of a field, based on the value of another field, provide a simple options expression. For example, to populate a field, **Number of Kids**, based on the **Marital Status** expressed in another field, the expression is:
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
@@ -131,13 +131,13 @@ The validate expression is used to validate the fields using the given expressio
 
 **Applies to**: fields
 
-**Return Type**: The expression returns a Boolean value, representing the validation status of the field. The value **false **represents that the field is invalid and **true **represents that the field is valid.
+**Return Type**: The expression returns a Boolean value, representing the validation status of the field. The value **false** represents that the field is invalid and **true** represents that the field is valid.
 
 **Example**: For a field representing postcode of UK, the validation expression is:
 
 (**this.value** && `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
 
-In the above example, if the non-empty value does not match the pattern, the expression returns **false **to indicate that the field is not valid.
+In the above example, if the non-empty value does not match the pattern, the expression returns **false** to indicate that the field is not valid.
 
 >[!NOTE]
 >
@@ -167,9 +167,9 @@ The Visibility expression is used to control the visibility of field/panel. Typi
 
 **Applies to**: fields and panel
 
-**Return Type**: Expression returns a Boolean value, representing the field/panel is visible or not. **false **represents that the field or panel is not visible and true represents that the field or panel is visible.
+**Return Type**: Expression returns a Boolean value, representing the field/panel is visible or not. **false** represents that the field or panel is not visible and true represents that the field or panel is visible.
 
-**Example**: For a panel that becomes visible only if value of **field1 **is set to **Male**, the visibility expression is: `field1.value == "Male"`
+**Example**: For a panel that becomes visible only if value of **field1** is set to **Male**, the visibility expression is: `field1.value == "Male"`
 
 ### Step Completion Expression {#step-completion-expression}
 
@@ -177,24 +177,24 @@ The step completion expression is used to prevent a user from going to the next 
 
 **Applies to**: Panels with layout of item set to wizard.
 
-**Return Type**: Expression returns a Boolean value, representing the current panel is valid or not. **True **represents that the current panel is valid and the user can navigate to next panel.
+**Return Type**: Expression returns a Boolean value, representing the current panel is valid or not. **True** represents that the current panel is valid and the user can navigate to next panel.
 
 **Example**: In a form organized in various panels, before navigating to the next panel the current panel is validated. In such cases, the step completion expressions are used. Generally, these expressions use the GuideBridge validate API. An example of step completion expression is:
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Validations in Adaptive Form {#validations-in-adaptive-form}
 
-There are multiple methods to add field validation to an adaptive form. If a validation check is added on a field, **True **represents that the value entered in the field is valid. **False **represents that the value is invalid. If you tab in and out of a field, the error message is not generated.
+There are multiple methods to add field validation to an adaptive form. If a validation check is added on a field, **True** represents that the value entered in the field is valid. **False** represents that the value is invalid. If you tab in and out of a field, the error message is not generated.
 
 The methods to add validations on a field are:
 
 ### Required {#required}
 
-To make a component mandatory, in the **Edit **dialog of the component, you can select option **Title and Text &gt; Required**. You can also add the appropriate **required message** (optional) as well. .
+To make a component mandatory, in the **Edit** dialog of the component, you can select option **Title and Text &gt; Required**. You can also add the appropriate **required message** (optional) as well. .
 
 ### Validation Patterns {#validation-patterns}
 
-There are multiple out of the box validation patterns available for a field. To select a validation pattern, in the **Edit **dialog of the component, locate the **Patterns **section and select **patterns**. You can create your own custom validation pattern in a **Pattern **text box. The validation status is returned **True **only if the data filled is compliant to the validation pattern, else **False **is returned. To write your own custom validation pattern, see [Picture clause support for HTML5 forms](/help/forms/using/picture-clause-support.md).
+There are multiple out of the box validation patterns available for a field. To select a validation pattern, in the **Edit** dialog of the component, locate the **Patterns** section and select **patterns**. You can create your own custom validation pattern in a **Pattern** text box. The validation status is returned **True** only if the data filled is compliant to the validation pattern, else **False** is returned. To write your own custom validation pattern, see [Picture clause support for HTML5 forms](/help/forms/using/picture-clause-support.md).
 
 ### Validation Expressions {#validation-expressions}
 
