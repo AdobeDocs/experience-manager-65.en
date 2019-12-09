@@ -21,7 +21,7 @@ A common mistake made when sizing the required disk space for an Assets implemen
 
 Most users define custom renditions in addition to the out-of-the-box renditions. In addition to the renditions, AEM Assets lets you extract sub-assets from common file types, such as InDesign and Illustrator.
 
-Finally, AEM’s versioning capabilities store duplicates of the assets in the version history. You can configure the versions to be purged often. However, many users choose to retain versions in the system for a long time, which consumes additional storage space.
+Finally, versioning capabilities of AEM store duplicates of the assets in the version history. You can configure the versions to be purged often. However, many users choose to retain versions in the system for a long time, which consumes additional storage space.
 
 Considering these factors, you require a methodology to calculate an acceptably accurate storage space to store user assets.
 
@@ -51,7 +51,7 @@ The example data populated in the tool demonstrates how important it is to perfo
 
 [Get File](assets/disk_sizing_tool.xlsx)
 
-### Shared Datastores {#shared-datastores}
+### Shared datastores {#shared-datastores}
 
 For large datastores, you can implement a shared datastore either through a shared file datastore on a network attached drive or through an S3 datastore. In this case, individual instances need not maintain a copy of the binaries. In addition, a shared datastore facilitates binary-less replication and helps reduce the bandwidth used to replicate assets to publish environments.
 
@@ -92,7 +92,7 @@ It is difficult to arrive at precise sizing figures for a NodeStore or DocumentS
 * Audit logs
 * Archived and active workflows
 
-Because the binaries are be stored in the datastore, each binary occupies some space. Most repositories are below 100GB in size. However, there may be larger repositories upto 1 TB in size. Additionally, to perform offline compaction, you require enough free space on the volume to rewrite the compacted repository alongside the pre-compacted version. A good rule-of-thumb is to size the disk to 1.5 times the size expected for the repository.
+Because the binaries are be stored in the datastore, each binary occupies some space. Most repositories are below 100GB in size. However, there may be larger repositories up to 1 TB in size. Additionally, to perform offline compaction, you require enough free space on the volume to rewrite the compacted repository alongside the pre-compacted version. A good rule-of-thumb is to size the disk to 1.5 times the size expected for the repository.
 
 For the repository, use SSDs or disks with an IOPS level greater than 3Kilobyte. To eliminate chances of IOPS introducing performance bottlenecks, monitor CPU IO Wait levels for early signs of issues.
 
@@ -116,7 +116,7 @@ The limit to the number of files that can exist in a datastore can be 2.1 billio
 
 If the renditions are incorrectly generated, use the Camera Raw library. However, in this case, the longest side of the image should not be greater than 65000 pixels. In addition, the image should not contain more than 512 MP (512 x 1024 x 1024 pixels). The size of the asset does not matter.
 
-It is difficult to accurately estimate the size of the TIFF file supported out-of-the-box (OOTB) with a specific heap for AEM because additional factors, such as pixel size influence processing. It is possible that AEM can process a file of size of 255 MB OOTB, but cannot process a file size of 18 MB bacause the latter comprises of an unusually higher number pixels compared to the former.
+It is difficult to accurately estimate the size of the TIFF file supported out-of-the-box with a specific heap for AEM because additional factors, such as pixel size influence processing. It is possible that AEM can process a file of size of 255 MB out-of-the-box, but cannot process a file size of 18 MB because the latter comprises of an unusually higher number pixels compared to the former.
 
 ## Size of Assets {#size-of-assets}
 
