@@ -41,7 +41,7 @@ You will have a form similar to the following by end of article:
     * **Title:** Specify `Add new or update shipping address` in the Title field. The title field specifies the display name of the form. The title helps you identify the form in the AEM Forms user interface.
     * **Name:** Specify `shipping-address-add-update-form` in the Name field. The Name field specifies the name of the form. A node with the specified name is created in the repository. As you start typing a title, value for the name field is automatically generated. You can change the suggested value. The name field can include only alphanumeric characters, hyphens, and underscores. All the invalid inputs are replaced with a hyphen.
 
-1. Tap **Create**. An adaptive form is created and a dialog to open the form for editing appears. Tap **Open **to open the newly created form in a new tab. The form opens for editing. It also displays the sidebar to customize the newly created form according to the needs.
+1. Tap **Create**. An adaptive form is created and a dialog to open the form for editing appears. Tap **Open** to open the newly created form in a new tab. The form opens for editing. It also displays the sidebar to customize the newly created form according to the needs.
 
    For information about adaptive form authoring interface and available components, see [Introduction to authoring adaptive forms](/help/forms/using/creating-adaptive-form.md).
 
@@ -147,7 +147,7 @@ Components are building blocks of an adaptive form. AEM Forms provides many comp
  </tbody> 
 </table>
 
-1. Drag a **Submit Button** component to the adaptive form. Place it before the footer component. Open properties of the component, change Element Name to** address_addition_update_submit**, tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). The layout of the form is complete and the form looks like the following:
+1. Drag a **Submit Button** component to the adaptive form. Place it before the footer component. Open properties of the component, change Element Name to **address_addition_update_submit**, tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). The layout of the form is complete and the form looks like the following:
 
    ![adaptive-form-with-all-the-components](assets/adaptive-form-with-all-the-components.png)
 

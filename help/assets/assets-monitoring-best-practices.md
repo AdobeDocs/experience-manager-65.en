@@ -17,11 +17,7 @@ From the Adobe Experience Manager (AEM) Assets standpoint, monitoring should inc
 * System memory usage
 * System disk IO and IO wait time
 * System network IO
-* JMX MBeans for:
-
-    * Heap utilization
-    * Asynchronous processes, such as workflows
-
+* JMX MBeans for heap utilization and asynchronous processes, such as workflows
 * OSGi console health checks
 
 Typically, AEM Assets can be monitored in two ways, live monitoring and long term monitoring.
@@ -114,7 +110,7 @@ Here are some baseline parameters that you can monitor for AEM:
 Replication agents
 
 * MBean: `com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>”`
-* URL: `/system/console/jmx/com.adobe.granite.replication:type=agent,id=”&lt;AGENT_NAME&gt;"`
+* URL: `/system/console/jmx/com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>"`
 * Instances: One Author and all publish instances (for flush agents)
 * Alarm threshold: When the value of `QueueBlocked` is `true` or the value of `QueueNumEntries` is greater than 150% of the baseline.
 

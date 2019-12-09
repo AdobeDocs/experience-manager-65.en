@@ -12,7 +12,7 @@ discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
 
 # Opening a task {#opening-a-task}
 
-If the AEM Forms app syncs with an AEM Forms server, you can work with tasks assigned to you. Tasks are steps in the Workflow defined in workbench or in the AEM workflow editor. For example, see [Conard gets the assessment task in the Geometrixx Gov reference site](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task). You can make changes to any task that is currently assigned to you. All the tasks are available in the Task tab. Tasks saved as drafts remain in tasks tab.
+If the AEM Forms app syncs with an AEM Forms server, you can work with tasks assigned to you. Tasks are steps in the Workflow defined in workbench or in the AEM workflow editor. 
 
 Other forms are saved as draft in the Drafts tab. See [Saving a draft](/help/forms/using/save-as-draft.md).
 

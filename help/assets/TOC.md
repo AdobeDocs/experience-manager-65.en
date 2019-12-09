@@ -16,11 +16,13 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Search assets in AEM](search-assets.md)
     + [Multilingual assets](multilingual-assets.md)
     + [Use Adobe Stock assets in AEM Assets](aem-assets-adobe-stock.md)
+    + [Previewing 3D assets](previewing-3d-assets.md)
     + [Review folder assets and collections](bulk-approval.md)
     + [Activity stream in timeline](activity-stream.md)
     + [Applying Workflows to Assets](assets-workflow.md)
     + [Adding image maps](image-maps.md)
     + [Reuse assets using MSM](reuse-assets-using-msm.md)
+    + [Connected Assets with AEM Sites](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
     + [Dynamic Media Newsletter by Experience League](dynamic-media-newsletter.md)
     + [Setting up Dynamic Media](administering-dynamic-media.md)

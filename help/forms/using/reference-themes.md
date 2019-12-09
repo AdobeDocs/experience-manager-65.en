@@ -34,7 +34,7 @@ For more information on installing the package, see [How to Work With Packages](
 
 ## Beryl {#beryl}
 
-Beryl theme is used by [We.Gov adaptive form](/help/forms/using/gov-reference-site-walkthrough.md), and emphasizes use of background image, transparency, and large, flat icons. In the screenshot below, you can see how the Beryl theme looks, and how it can enhance the styling of your form.
+Beryl theme is used by We.Gov adaptive form, and emphasizes use of background image, transparency, and large, flat icons. In the screenshot below, you can see how the Beryl theme looks, and how it can enhance the styling of your form.
 
 ![Beryl theme](assets/beryl.png)
 

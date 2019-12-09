@@ -1,5 +1,5 @@
 ---
-title: Managing Assets with the Touch-Optimized UI
+title: Manage Assets with the Touch-Optimized user interface
 description: Learn about various asset management and editing tasks that you can perform using the Touch-optimized user interface of AEM Assets.
 uuid: 7ee746f1-bbca-4bce-82e7-fed9fa9e1170
 contentOwner: AG
@@ -9,17 +9,17 @@ docset: aem65
 
 ---
 
-# Managing assets with the Touch-optimized UI {#managing-assets-with-the-touch-optimized-ui}
+# Manage assets with the Touch-optimized UI {#managing-assets-with-the-touch-optimized-ui}
 
-This article describes how to manage and edit assets using the Adobe Experience Manager (AEM) Assets Touch-optimized user interface (UI). For elementary knowledge about the UI, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
+This article describes how to manage and edit assets in Adobe Experience Manager (AEM) Assets. To get started with the user interface and layout, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
 
-## Creating folders {#creating-folders}
+## Create folders {#creating-folders}
 
 When organizing a collection of assets, for example, all `Nature` images, you can create folders to keep them together. You can use folders to categorize and organize your assets. AEM Assets does not require you to organize assets in folders to work better.
 
 >[!NOTE]
 >
->Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Marketing Cloud. If you want to share a folder, do not select Ordered when creating a folder.
+>Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Marketing Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
 
 1. Navigate to the place in your digital assets folder where you want to create a new folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
 1. In the **[!UICONTROL Title]** field, provide a folder name. By default, DAM uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
@@ -30,7 +30,7 @@ The following (space-separated list of) characters are not supported:
 * An asset file name cannot contain any of these characters: `* / : [ \\ ] | # % { } ? &`
 * An asset folder name cannot contain any of these characters: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Uploading Assets {#uploading-assets}
+## Upload Assets {#uploading-assets}
 
 <!-- TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
@@ -49,17 +49,17 @@ For folders that have a processing profile assigned, the profile name appears on
 
 Before uploading an asset, ensure that it is in a [format](/help/assets/assets-formats.md) that AEM Assets supports.
 
-1. In the Assets UI, navigate to the location where you want to add digital assets.
+1. In the Assets user interface, navigate to the location where you want to add digital assets.
 1. To upload the assets, do one of the following:
 
     * On the toolbar, tap the **[!UICONTROL Create]** icon. Then, on the menu, then tap **[!UICONTROL Files]**. You can rename the file in the presented dialog if needed.
-    * In a browser that supports HTML5, drag the assets directly on the Assets UI. The dialog to rename file is not displayed.
+    * In a browser that supports HTML5, drag the assets directly on the Assets user interface. The dialog to rename file is not displayed.
 
    ![create_menu](assets/create_menu.png)
 
-   To select multiple files, press the Ctrl/Command key and select the assets in the file picker dialog. If using an iPad, you can only select one file at a time.
+   To select multiple files, press the Ctrl or Command key and select the assets in the file picker dialog. When using an iPad, you can select only one file at a time.
 
-   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when the uploading starts.
+   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
    ![chlimage_1-211](assets/chlimage_1-211.png)
 
@@ -73,7 +73,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    ![chlimage_1-212](assets/chlimage_1-212.png)
 
-   To cancel an ongoing upload, click close ('X') next to the progress bar. When you cancel the upload operation, AEM Assets deletes the partially uploaded portion of the asset.
+   To cancel an ongoing upload, click close (`X`) next to the progress bar. When you cancel the upload operation, AEM Assets deletes the partially uploaded portion of the asset.
 
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 
@@ -89,25 +89,23 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    >[!NOTE]
    >
-   >When you select **Replace** in the Name Conflict dialog, the asset ID is regenerated for the new asset. This ID is different from the ID of the previous asset.
+   >When you select **[!UICONTROL Replace]** in the [!UICONTROL Name Conflict] dialog, the asset ID is regenerated for the new asset. This ID is different from the ID of the previous asset.
    >
-   >If Asset Insights is enabled to track impressions/clicks with Adobe Analytics, this regenerated asset ID invalidates the data-captured for the asset on Analytics.
-   >
-   >A similar situation may occur if content packages of Assets created with AEM 6.1 (or earlier versions) are installed on an AEM 6.2 instance.
+   >If Asset Insights is enabled to track impressions/clicks with Adobe Analytics, the regenerated asset ID invalidates the data-captured for the asset on Analytics.
 
-   If the asset you upload exists in AEM Assets, the **Duplicates Detected** dialog warns that you are attempting to upload a duplicate asset. The dialog appears only if the SHA 1 checksum value of the binary of the existing asset matches the checksum value of the asset you upload. In this case, the names of assets are immaterial. In other words, the dialog can even appear for assets that have different names if the SHA 1 values for their binaries are the same.
+   If the asset you upload exists in AEM Assets, the **[!UICONTROL Duplicates Detected]** dialog warns that you are attempting to upload a duplicate asset. The dialog appears only if the `SHA 1` checksum value of the binary of the existing asset matches the checksum value of the asset you upload. In this case, the names of assets does not matter.
 
    >[!NOTE]
    >
-   >The **Duplicates Detected** dialog appears only when the Duplicate Detection feature is enabled. To enable the Duplicate Detection feature, see [Enabling Duplicate Detection](/help/assets/duplicate-detection.md).
+   >The [!UICONTROL Duplicates Detected] dialog appears only when the duplicate detection feature is enabled. To enable the duplicate detection feature, see [Enable Duplicate Detection](/help/assets/duplicate-detection.md).
 
    ![chlimage_1-214](assets/chlimage_1-214.png)
 
-   Tap/click **Keep** to retain the duplicate asset in AEM Assets. Tap/click **Delete** to delete the duplicate asset you uploaded.
+   To retain the duplicate asset in AEM Assets, tap/click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, tap/click **[!UICONTROL Delete]**.
 
-   AEM Assets prevents you from uploading assets with forbidden characters in their filenames. If you try to upload an asset that includes unallowed characters, AEM Assets displays a warning message regarding the presence of forbidden characters in the filename and stops the upload until you remove these characters or upload with an allowed name.
+   AEM Assets prevents you from uploading assets with the forbidden characters in their filenames. If you try to upload an asset with file name containing a disallowed character or more, AEM Assets displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
 
-   To suit specific file naming conventions for your organization, the Upload Assets dialog lets you specify long names for the files that you upload.
+   To suit specific file naming conventions for your organization, the [!UICONTROL Upload Assets] dialog lets you specify long names for the files that you upload.
 
    However, the following (space-separated list of) characters are not supported:
 
@@ -132,7 +130,7 @@ Serial uploading of assets is enabled by default. To disable the feature and all
 
 ### Uploading assets using FTP {#uploading-assets-using-ftp}
 
-Dynamic Media enables batch uploading of assets via FTP server. If you intend to upload large assets ( &gt; 1 GB) or upload entire folders and subfolders, you should use FTP. You can even set up FTP upload to occur on a recurring scheduled basis.
+Dynamic Media enables batch uploading of assets via FTP server. If you intend to upload large assets (&gt; 1 GB) or upload entire folders and sub-folders, you should use FTP. You can even set up FTP upload to occur on a recurring scheduled basis.
 
 >[!NOTE]
 >
@@ -140,18 +138,18 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 
 >[!NOTE]
 >
->To upload assets by way of FTP in Dynamic Media - Scene7 mode, you must install Feature Pack 18912 on your AEM author instances. Contact Adobe Support to get access to FP-18912 and complete the setup of your FTP account. See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md).
+>To upload assets via FTP in Dynamic Media - Scene7 mode, install Feature Pack 18912 on the AEM author instances. Contact [Adobe Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. For more information, see [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md).
 >
 >If you use FTP for uploading assets, the upload settings specified in AEM are ignored. Instead, file processing rules, as defined in Dynamic Media Classic, are used.
 
 **To upload assets using FTP**
 
 1. Using your choice of FTP client, log in to the FTP server using the FTP user name and password that you received from the provisioning email. In the FTP client, upload files or folders to the FTP server.
-1. [Log in to Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) using credentials received from the provisioning email. On the Global Navigation Bar, tap **Upload**.
+1. [Log in to Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) using credentials received from the provisioning email. On the Global Navigation Bar, tap **[!UICONTROL Upload]**.
 
-1. On the Upload page, near the upper-left corner, tap the **Via FTP** tab.
+1. On the Upload page, near the upper-left corner, tap the **[!UICONTROL Via FTP]** tab.
 1. On the left side of the page, choose an FTP folder to upload files from; on the right side of the page, choose a destination folder.
-1. Near the lower-right corner of the page, click **Job Options** and then set the options you want based on the assets in the folder you selected.
+1. Near the lower-right corner of the page, click **[!UICONTROL Job Options]** and then set the options you want based on the assets in the folder you selected.
 
    See [Upload Job Options](#upload-job-options).
 
@@ -159,11 +157,11 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
    >
    >When you upload assets via FTP, the upload job options you set in Dynamic Media Classic (S7) take precedent over asset processing parameters set in AEM.
 
-1. In the lower-right corner of the Upload Job Options dialog box, tap **Save**.
-1. In the lower-right corner of the Upload page, tap **Submit Upload**.
+1. In the lower-right corner of the Upload Job Options dialog box, tap **[!UICONTROL Save]**.
+1. In the lower-right corner of the Upload page, tap **[!UICONTROL Submit Upload]**.
 
-   To view the progress of the upload, on the Global Navigation Bar, tap **Jobs**. The Jobs page displays the progress of the upload. You can continue working in AEM and return to the Jobs page in Dynamic Media Classic at any time to review an in-progress job.
-   To cancel an upload job in progress, tap **Cancel** next to the Duration time.
+   To view the progress of the upload, on the Global Navigation Bar, tap **[!UICONTROL Jobs]**. The Jobs page displays the progress of the upload. You can continue working in AEM and return to the Jobs page in Dynamic Media Classic at any time to review an in-progress job.
+   To cancel an upload job in progress, tap **[!UICONTROL Cancel]** next to the Duration time.
 
 #### Upload Job Options {#upload-job-options}
 
@@ -255,7 +253,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
   <tr>
    <td> </td>
    <td>PDF Options</td>
-   <td><p>You can rasterize the files, extract search words and links, auto-generate an eCatalog, set the resolution, and choose a color space.</p> <p>Note that eCatalogs are not supported in AEM</p> <p>See <a href="#setting-pdf-upload-options">Setting PDF upload options</a>.</p> </td>
+   <td><p>You can rasterize the files, extract search words and links, auto-generate an eCatalog, set the resolution, and choose a color space.</p> <p>The eCatalogs are not supported in AEM</p> <p>See <a href="#setting-pdf-upload-options">Setting PDF upload options</a>.</p> </td>
   </tr>
   <tr>
    <td> </td>
@@ -277,7 +275,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 
 #### Setting image editing options at upload {#setting-image-editing-options-at-upload}
 
-When uploading image files, including AI, EPS, and PSD files, you can take the following editing actions in the Upload Job Options dialog box:
+When uploading image files, including AI, EPS, and PSD files, you can take the following editing actions in the [!UICONTROL Upload Job Options] dialog box:
 
 * Crop white space from the edge of images (see description in table above).
 * Crop manually from the sides of images (see description in table above).
@@ -352,7 +350,7 @@ When uploading image files, including AI, EPS, and PSD files, you can take the f
 
 #### Setting PostScript and Illustrator upload options {#setting-postscript-and-illustrator-upload-options}
 
-When you upload PostScript (EPS) or Illustrator (AI) image files, you can format them in various ways. You can rasterize the files, maintain the transparent background, choose a resolution, and choose a color space. Options for formatting PostScript and Illustrator files are available in the Upload Job Options dialog box under PostScript Options and Illustrator Options.
+When you upload PostScript (EPS) or Illustrator (AI) image files, you can format them in various ways. You can rasterize the files, maintain the transparent background, choose a resolution, and choose a color space. Options for formatting PostScript and Illustrator files are available in the [!UICONTROL Upload Job Options] dialog box under [!UICONTROL PostScript Options] and [!UICONTROL Illustrator Options].
 
 <table>
  <tbody>
@@ -406,11 +404,11 @@ When you upload PostScript (EPS) or Illustrator (AI) image files, you can format
 
 #### Setting Photoshop upload options {#setting-photoshop-upload-options}
 
-PSD (Photoshop Document) files are most often used to create image templates. When you upload a PSD file, you can create an image template automatically from the file (select the Create Template option on the Upload screen).
+Photoshop Document (PSD) files are most often used to create image templates. When you upload a PSD file, you can create an image template automatically from the file (select the [!UICONTROL Create Template] option on the Upload screen).
 
 Dynamic Media creates multiple images from a PSD file with layers if you use the file to create a template; it creates one image for each layer.
 
-Use the Crop Options and Color Profile Options, described above, with Photoshop upload options.
+Use the [!UICONTROL Crop Options] and [!UICONTROL Color Profile Options], described above, with Photoshop upload options.
 
 >[!NOTE]
 >
@@ -543,7 +541,7 @@ Choose from the following options:
 
 #### Setting eVideo upload options {#setting-evideo-upload-options}
 
-You can transcode a video file by choosing from a variety of video presets.
+To transcode a video file by choosing from a variety of video presets.
 
 <table>
  <tbody>
@@ -588,11 +586,11 @@ See [Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets](/h
 
 ### Streamed uploads {#streamed-uploads}
 
-If you upload numerous assets, I/O calls to the AEM server increases drastically, which reduces upload efficiency and can even cause it to time out. AEM Assets supports streamed uploading of assets. Streamed uploading reduces disk I/O during the upload operation by avoiding asset storage in a temporary folder on the server before copying it to the repository. Instead, the data is transferred directly to the repository. This way, the time to upload large assets and the possibility of timeouts is reduced. Streamed upload is enabled by default in AEM Assets.
+If you upload many assets to AEM, the I/O requests to server increase drastically, which reduces the upload efficiency and can even cause some upload task to time out. AEM Assets supports streamed uploading of assets. Streamed uploading reduces the disk I/O during the upload operation by avoiding asset storage in a temporary folder on the server before copying it to the repository. Instead, the data is transferred directly to the repository. This way, the time to upload large assets and the possibility of timeouts is reduced. Streamed upload is enabled by default in AEM Assets.
 
 >[!NOTE]
 >
->Streaming upload is disabled for AEM running on JEE server with servlet-api version less than 3.1.
+>Streaming upload is disabled for AEM running on JEE server with servlet-api version lower than 3.1.
 
 ### Extract ZIP archive containing assets {#extractzip}
 
@@ -600,7 +598,7 @@ You can upload ZIP archives just like any other supported asset. The same file n
 
 Select one ZIP archive at a time, click **[!UICONTROL Extract Archive]**, and select a destination folder. Select an option to handle conflicts, if any. If the assets in the ZIP file already exist in the destination folder, you can select one of these options: skip extraction, replace existing files, keep both assets by renaming, or create new version.
 
-After the extraction is complete, AEM notifies you in the notification area. While AEM extracts the ZIP, you can go back to your work without interuppting the extraction.
+After the extraction is complete, AEM notifies you in the notification area. While AEM extracts the ZIP, you can go back to your work without interrupting the extraction.
 
 ![Notification of zip extraction](assets/zip_extract_notification.png)
 
@@ -611,60 +609,62 @@ Some limitations of the feature are:
 * You cannot select two ZIP files at the same time and extract them. You can only extract one ZIP archive at a time.
 * When uploading a ZIP archive, if the upload dialog displays a 500 server error, retry after installing the latest service pack.
 
-## Previewing Assets {#previewing-assets}
+## Preview Assets {#previewing-assets}
 
-See also [Previewing Dynamic Media Assets.](/help/assets/previewing-assets.md)
+To preview an asset, follow these steps.
 
-1. From the Assets UI, navigate to the location of the asset you want to preview.
+1. From the Assets user interface, navigate to the location of the asset you want to preview.
 1. Tap the desired asset to open it.
 
 1. In the preview mode, zoom options are available for [supported Image types](/help/assets/assets-formats.md#supported-raster-image-formats) (with interactive editing).
 
-   To zoom into an asset, tap/click **+** (or tap/click the magnifying glass on the asset). To zoom out, tap/click **-**. When you zoom in, you can look closely at any area of the image by panning. The **Reset Zoom** arrow brings you back to the original view.
+   To zoom into an asset, tap/click `+` (or tap/click the magnifying glass on the asset). To zoom out, tap/click `-`. When you zoom in, you can look closely at any area of the image by panning. The reset zoom arrow brings you back to the original view.
 
    ![uploadicon](assets/uploadicon.png)
 
-   Tap the **Reset** button to reset the view to the original size.
+   Tap **[!UICONTROL Reset]** to reset the view to the original size.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
+
+See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 ## Editing Properties {#editing-properties}
 
 1. Navigate to the location of the asset whose metadata you want to edit.
 
-1. Select the asset, and tap/click **Properties** from the toolbar to view asset properties. Alternatively, choose the **Properties** quick action on the asset card.
+1. Select the asset, and tap/click **[!UICONTROL Properties]** from the toolbar to view asset properties. Alternatively, choose the **[!UICONTROL Properties]** quick action on the asset card.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
-1. In the Properties page, edit the metadata properties under various tabs. For example, under the **Basic** tab, edit the title, description, and so on.
+1. In the [!UICONTROL Properties] page, edit the metadata properties under various tabs. For example, under the **[!UICONTROL Basic]** tab, edit the title, description, and so on.
 
    >[!NOTE]
    >
-   >The layout of the Properties page and the metadata properties available depend on the underlying metadata schema. To learn how to modify the layout of the Properties page, see [Metadata Schemas](/help/assets/metadata-schemas.md).
+   >The layout of the [!UICONTROL Properties] page and the metadata properties available depend on the underlying metadata schema. To learn how to modify the layout of the [!UICONTROL Properties] page, see [Metadata Schemas](/help/assets/metadata-schemas.md).
 
-1. To schedule a particular date/time for the activation of the asset, use the date picker beside the **On Time** field.
+1. To schedule a particular date/time for the activation of the asset, use the date picker beside the **[!UICONTROL On Time]** field.
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **Off Time** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API.
+1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. In the **Tags** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in AEM.
+1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in AEM.
 
    YouTube requires Tags to publish and have a link to YouTube (if a suitable link can be found).
 
    >[!NOTE]
    >
-   >To be able to create tags, you require write permission for */content/cq:tags/default* in the CRX repository.
+   >To create tags, write permission for `/content/cq:tags/default` in the CRX repository are required.
 
-1. To provide a rating to the asset, tap/click the **Advanced** tab and then tap/click the star at the appropriate position to assign the desired rating.
+1. To provide a rating to the asset, tap/click the **[!UICONTROL Advanced]** tab and then tap/click the star at the appropriate position to assign the desired rating.
 
    ![ratings](assets/ratings.png)
 
-   The rating score that you assign to the asset is displayed under **Your Ratings**. The average rating score that the asset received from users who rated the asset is displayed under **Rating**. In addition, the breakup of the rating scores that contribute to the average rating score is displayed under **Rating Breakdown**. You can search assets based on average rating scores.
+   The rating score that you assign to the asset is displayed under **[!UICONTROL Your Ratings]**. The average rating score that the asset received from users who rated the asset is displayed under **[!UICONTROL Rating]**. In addition, the breakup of the rating scores that contribute to the average rating score is displayed under **[!UICONTROL Rating Breakdown]**. You can search assets based on average rating scores.
 
-1. To view usage usage statistics for the asset, click/tap the **Insights** tab.
+1. To view usage usage statistics for the asset, click/tap the **[!UICONTROL Insights]** tab.
 
    Usage statistics include the following:
 
@@ -674,8 +674,8 @@ See also [Previewing Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
    For more details, see [Asset Insights](/help/assets/touch-ui-asset-insights.md).
 
-1. Tap/click **Save & Close**.
-1. Navigate to the Assets UI. The edited metadata properties, including title, description, ratings, and so on are displayed on the asset card in Card view and under relevant columns in the List view.
+1. Tap/click **[!UICONTROL Save & Close]**.
+1. Navigate to the Assets user interface. The edited metadata properties, including title, description, ratings, and so on are displayed on the asset card in Card view and under relevant columns in the List view.
 
 ## Copying Assets {#copying-assets}
 
@@ -689,81 +689,59 @@ A few attributes that are unique to a particular copy of an asset are not carrie
 
 The other properties and metadata information is retained. A partial copy is not created when copying an asset.
 
-1. From the Assets UI, select one or more assets, and then tap/click the **Copy** icon from the toolbar. Alternatively, choose the **Copy** quick action from the asset card.
-
-   ![copy_icon](assets/copy_icon.png)
+1. From the Assets UI, select one or more assets, and then tap/click the **[!UICONTROL Copy]** icon from the toolbar. Alternatively, select the **[!UICONTROL Copy]** ![copy_icon](assets/copy_icon.png) quick action from the asset card.  
 
    >[!NOTE]
    >
-   >If you use the Copy quick action, you can only copy one asset at a time.
+   >If you use the [!UICONTROL Copy] quick action, you can only copy one asset at a time.
 
 1. Navigate to the location where you want to copy the assets.
 
    >[!NOTE]
    >
-   >If you copy an asset at the same location, AEM automatically generates a variation of the name. For example, if you copy an asset titled Square, AEM automatically generates the title for its copy as Square1.
+   >If you copy an asset at the same location, AEM automatically generates a variation of the name. For example, if you copy an asset titled `Square`, AEM automatically generates the title for its copy as `Square1`.
 
-1. Click the **Paste** asset icon from the toolbar:
+1. Click the **[!UICONTROL Paste]** asset icon from the toolbar. Assets are copied to this location.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-   The assets are copied to this location.
-
    >[!NOTE]
    >
-   >The **Paste** icon is available in the toolbar until the paste operation is completed.
+   >The **[!UICONTROL Paste]** icon is available in the toolbar until the paste operation is completed.
 
 ### Moving or Renaming Assets {#moving-or-renaming-assets}
 
 1. Navigate to the location of the asset you want to move.
 
-1. Select the asset, and tap/click the **Move** icon from the toolbar.
-
-   ![move_icon](assets/move_icon.png)
+1. Select the asset, and tap/click the **[!UICONTROL Move]** icon ![move_icon](assets/move_icon.png) from the toolbar.
 
 1. In the Move Assets wizard, do one of the following:
 
-    * Specify the name for the asset after it is moved. Then tap/click **Next** to proceed.
+    * Specify the name for the asset after it is moved. Then tap/click **[!UICONTROL Next]** to proceed.
 
-    * Tap/click **Cancel** to stop the process.
-
-   >[!NOTE]
-   >
-   >
-   >
-   >
-   >    * You can specify the same name for the asset if there is no asset with that name at the new location. However, you should use a different name if you move the asset to a location where an asset with the same name exists. If you use the same name, the system automatically generates a variation of the name. For example if your asset has the name Square, the system generates the name Square1 for its copy.
-   >    * When renaming, whitespace is not allowed in the file name.
-   >
-   >
+    * Tap/click **[!UICONTROL Cancel]** to stop the process.
 
    >[!NOTE]
    >
-   >The following (space-separated list of) characters are not support:
-   >
-   >
-   >
-   >    * asset file name must not contain `* / : [ \\ ] | # % { } ? &`
-   >    * asset folder name must not contain `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
-   >
-   >
+   >* You can specify the same name for the asset if there is no asset with that name at the new location. However, you should use a different name if you move the asset to a location where an asset with the same name exists. If you use the same name, the system automatically generates a variation of the name. For example if your asset has the name Square, the system generates the name Square1 for its copy.
+   >* When renaming, whitespace is not allowed in the file name.
 
-1. In the **Select Destination** screen, do one of the following:
+1. On the **[!UICONTROL Select Destination]** dialog, do one of the following:
 
-    * Navigate to the new location for the assets, and then tap/click **Next** to proceed.
+    * Navigate to the new location for the assets, and then tap/click **[!UICONTROL Next]** to proceed.
 
-    * Tap/click **Back** to return to the **Rename** screen.
+    * Tap/click **[!UICONTROL Back]** to return to the **[!UICONTROL Rename]** screen.
 
-1. If the assets being moved have any referencing pages, assets, or collections, the **Adjust References** tab appears beside the **Select Destination** tab.
+1. If the assets being moved have any referencing pages, assets, or collections, the **[!UICONTROL Adjust References]** tab appears beside the **[!UICONTROL Select Destination]** tab.
 
-   Do one of the following in the **Adjust References** screen:
+   Do one of the following in the **[!UICONTROL Adjust References]** screen:
 
-    * Specify the references to be adjusted based on the new details, and then tap/click **Move** to proceed.
+    * Specify the references to be adjusted based on the new details, and then tap/click **[!UICONTROL Move]** to proceed.
 
-    * From the **Adjust** column, select/unselect references to the assets.
-    * Tap/click **Back** to return to the **Select Destination** screen.
+    * From the **[!UICONTROL Adjust]** column, select/unselect references to the assets.
+    * Tap/click **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** screen.
 
-    * Tap/click **Cancel** to stop the move operation.
+    * Tap/click **[!UICONTROL Cancel]** to stop the move operation.
 
    If you do not update references, they continue to point to the previous path of the asset. If you adjust the references, they are updated to the new asset path.
 
@@ -775,11 +753,11 @@ The other properties and metadata information is retained. A partial copy is not
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. Tap/click the GlobalNav icon, and select **Renditions** from the list.
+1. Tap/click the GlobalNav icon, and select **[!UICONTROL Renditions]** from the list.
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. In the **Renditions** panel, view the list of renditions generated for the asset.
+1. In the **[!UICONTROL Renditions]** panel, view the list of renditions generated for the asset.
 
    ![renditions_panel](assets/renditions_panel.png)
 
@@ -797,25 +775,23 @@ The other properties and metadata information is retained. A partial copy is not
 
    **Uploading a new rendition**
 
-   Navigate to the asset details page for the asset, and tap/click the **Add Rendition** icon in the toolbar to upload a new rendition for the asset.
+   Navigate to the asset details page for the asset, and tap/click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
 
    >[!NOTE]
    >
-   >If you select a rendition from the **Renditions** panel, the toolbar changes context and displays only those actions that are relevant to the rendition. Options, such as the Upload Rendition icon is not displayed. To view these options in the toolbar, navigate to the details page for the asset.
+   >If you select a rendition from the **[!UICONTROL Renditions]** panel, the toolbar changes context and displays only those actions that are relevant to the rendition. Options, such as the Upload Rendition icon is not displayed. To view these options in the toolbar, navigate to the details page for the asset.
 
    You can configure the dimensions for the rendition you want displayed in the details page of an image or video asset. Based on the dimensions you specify, AEM Assets displays the rendition with the exact or closest dimensions.
 
-   To configure rendition dimensions of an image at the asset detail level, overlay the **renditionpicker** node *libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail
-   /items/col1/items/assetview/renditionpicker*) and configure the value of the width property. Configure the property **size (Long) in KB** in place of width to customize rendition on asset detail page based on image size. For size-based customization, the property **preferOriginal** assigns preference to the original if the size of the matched rendition is greater than the original.
+   To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. Configure the property **[!UICONTROL size (Long) in KB]** in place of width to customize rendition on asset detail page based on image size. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
 
-   Similarly, you can customize the Annotation page image by overlaying *libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker*.
+   Similarly, you can customize the Annotation page image by overlaying `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-   To configure rendition dimensions for a video asset, navigate to the **videopicker** node in the CRX repository at the location*/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail
-   /items/col1/items/assetview/videopicker*, overlay the node, and then edit the appropriate property.
+   To configure rendition dimensions for a video asset, navigate to the `videopicker` node in the CRX repository at the location `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, overlay the node, and then edit the appropriate property.
 
    >[!NOTE]
    >
@@ -825,13 +801,13 @@ The other properties and metadata information is retained. A partial copy is not
 
 In AEM, subassets can be generated for assets with supported multi-page formats such as PDF, AI, Powerpoint/Apple Keynote, and InDesign. These subassets are like normal assets, but are linked to their parent asset and facilitate multi-page view in the Touch UI.
 
-Subasset generation is disabled by default. To enable subasset generation, add the **Create Sub Asset** step to the DAM Update Asset workflow.
+Subasset generation is disabled by default. To enable subasset generation, add the **[!UICONTROL Create Sub Asset]** step to the DAM Update Asset workflow.
 
 For Word documents, the DAM Parse Word Documents workflow generates a `cq:Page` component from the contents of the Word document. The images extracted from the document are referenced from the `cq:Page` component. These images are extracted even if subasset generation is disabled.
 
 1. To view subassets, navigate to the location of the asset and open its asset page.
 
-1. Tap/click the GlobalNav icon, and choose **Subassets** from the list
+1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Subassets]** from the list
 
    ![chlimage_1-223](assets/chlimage_1-223.png)
 
@@ -851,17 +827,17 @@ Also, disable the force delete button using an overlay, to disallow users from d
 
 1. Navigate to the location of the asset(s) you want to delete.
 
-1. Select the asset, and tap/click the **Delete** icon from the toolbar.
+1. Select the asset, and tap/click the **[!UICONTROL Delete]** icon from the toolbar.
 
    ![delete_icon](assets/delete_icon.png)
 
 1. In the confirmation dialog, click:
 
-    * **Cancel** to stop the action
-    * **Delete** to confirm the action:
+    * **[!UICONTROL Cancel]** to stop the action
+    * **[!UICONTROL Delete]** to confirm the action:
 
         * If the asset has no references, the asset is deleted.
-        * If the asset has references, an error-message informs you that **One or more assets are referenced.** You can select **Force Delete** or **Cancel**.
+        * If the asset has references, an error-message informs you that **One or more assets are referenced.** You can select **[!UICONTROL Force Delete]** or **[!UICONTROL Cancel]**.
 
    >[!NOTE]
    >
@@ -886,7 +862,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 1. Navigate to the location of the asset(s)/folder you want to publish
 
-1. Either select the **Publish** quick action from the asset card, or select the asset and tap/click the **Quick Publish** icon from the toolbar.
+1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap/click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. If the asset references other assets, its references are listed in the wizard. Only references that are either unpublished or modified since they were last published/unpublished are displayed. Choose the references you want to publish.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -895,7 +871,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
    >
    >If the folder you want to publish includes an empty folder, the empty folder is not published.
 
-1. Tap/click **Publish** to confirm the activation for the assets.
+1. Tap/click **[!UICONTROL Publish]** to confirm the activation for the assets.
 
 >[!CAUTION]
 >
@@ -905,21 +881,21 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 1. Navigate to the location of the asset/asset folder you want to remove from the publish environment (unpublish).
 
-1. Select the asset/folder to unpublish, and tap/click the **Manage Publication** icon from the toolbar.
+1. Select the asset/folder to unpublish, and tap/click the **[!UICONTROL Manage Publication]** icon from the toolbar.
 
    ![manage_publication](assets/manage_publication.png)
 
-1. Select the **Unpublish** action from the list.
+1. Select the **[!UICONTROL Unpublish]** action from the list.
 
    ![unpublish_action](assets/unpublish_action.png)
 
-1. To unpublish the asset later, select **Unpublish Later**, and then select a date for unpublishing the asset.
+1. To unpublish the asset later, select **[!UICONTROL Unpublish Later]**, and then select a date for unpublishing the asset.
 1. Schedule a date for the asset to be unavailable from the publish environment.
-1. If the asset references other assets, choose the references you want to unpublish. Tap/click **Unpublish**.
+1. If the asset references other assets, choose the references you want to unpublish. Tap/click **[!UICONTROL Unpublish]**.
 1. In the confirmation dialog, tap/click:
 
-    * **Cancel** to stop the action
-    * **Unpublish** to confirm that the assets are unpublished (no longer available on the publish environment) at the specified date.
+    * **[!UICONTROL Cancel]** to stop the action
+    * **[!UICONTROL Unpublish]** to confirm that the assets are unpublished (no longer available on the publish environment) at the specified date.
 
    >[!NOTE]
    >
@@ -932,11 +908,11 @@ A closed user group (CUG) is used to limit access to specific asset folders publ
 CUGs are an extra way to restrict access to your assets. You can also configure a login page for the folder.
 
 1. Select a folder from the Assets UI, and tap/click the Properties icon from the toolbar to display the properties page.
-1. From the **Permissions** tab, add members or groups under **Closed User Group**.
+1. From the **[!UICONTROL Permissions]** tab, add members or groups under **[!UICONTROL Closed User Group]**.
 
    ![add_user](assets/add_user.png)
 
-1. To display a login screen when users access the folder, select the **Enable** option. Then, select the path to a login page in AEM, and save the changes.
+1. To display a login screen when users access the folder, select the **[!UICONTROL Enable]** option. Then, select the path to a login page in AEM, and save the changes.
 
    ![login_page](assets/login_page.png)
 
@@ -962,15 +938,15 @@ Quick action icons are available for a single asset at a time. Depending upon yo
 
 ### Navigating and Selecting Assets {#navigating-and-selecting-assets}
 
-You can view, navigate through, and select assets with any of the available views (Card, Column, and List) using the **Select** icon. The **Select** icon appears as a quick action in the Card view.
+You can view, navigate through, and select assets with any of the available views (Card, Column, and List) using the **[!UICONTROL Select]** icon. The **[!UICONTROL Select]** icon appears as a quick action in the Card view.
 
 ![select_quick_action](assets/select_quick_action.png)
 
-In List view, the **Select** icon appears when you hover the mouse icon over the thumbnail before the names of the assets/folder in the list.
+In List view, the **[!UICONTROL Select]** icon appears when you hover the mouse icon over the thumbnail before the names of the assets/folder in the list.
 
 ![select_quick_in_listview](assets/select_quick_in_listview.png)
 
-Similar to List view, the **Select** icon appears when you hover the mouse icon over the thumbnail before the names of the assets/folder in Column view.
+Similar to List view, the **[!UICONTROL Select]** icon appears when you hover the mouse icon over the thumbnail before the names of the assets/folder in Column view.
 
 ![select_quick_in_columnview](assets/select_quick_in_columnview.png)
 
@@ -986,9 +962,9 @@ The editing tools in the AEM Assets interface let you perform small editing jobs
 
 1. Do one of the following to open an asset in edit mode:
 
-    * Select the asset and then click/tap the **Edit** icon in the toolbar.
-    * Tap/click the **Edit** icon that appears on an asset in the Card view.
-    * In the asset page, tap/click the **Edit** icon in the toolbar.
+    * Select the asset and then click/tap the **[!UICONTROL Edit]** icon in the toolbar.
+    * Tap/click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
+    * In the asset page, tap/click the **[!UICONTROL Edit]** icon in the toolbar.
 
    ![edit_icon](assets/edit_icon.png)
 
@@ -1029,19 +1005,18 @@ You can also add image maps using the image editor. For details, see [Adding Ima
 
 >[!NOTE]
 >
->To be able to edit a .TXT file, set **Day CQ Link Externalizer** from Configuration Manager.
+>To edit a TXT file, set **Day CQ Link Externalizer** from Configuration Manager.
 
 ## Timeline {#timeline}
 
 The timeline lets you view various events for a selected item, such as active workflows for an asset, comments/annotations, activity logs, and versions.
 
 ![Sort timeline entries for an asset](assets/sort_timeline.gif)
-
-Sort timeline entries for an asset
+*Figure: Sort timeline entries for an asset*
 
 >[!NOTE]
 >
->In the [Collections console](/help/assets/managing-collections-touch-ui.md#navigating-the-collections-console), the **Show All** list provides options to view comments and workflows only. Moreover, the timeline is displayed only for top-level collections that are listed in the console. It is not displayed if you navigate inside any of the collections.
+>In the [Collections console](/help/assets/managing-collections-touch-ui.md#navigating-the-collections-console), the **[!UICONTROL Show All]** list provides options to view comments and workflows only. Moreover, the timeline is displayed only for top-level collections that are listed in the console. It is not displayed if you navigate inside any of the collections.
 
 >[!NOTE]
 >
@@ -1058,14 +1033,14 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 >For Content Fragments, [annotations are created in the fragment editor](/help/assets/content-fragments-variations.md#annotating-a-content-fragment).
 
 1. Navigate to the location of the asset to which you want to add annotations.
-1. Tap/click the **Annotate** icon from one of the following:
+1. Tap/click the **[!UICONTROL Annotate]** icon from one of the following:
 
     * [Quick actions](/help/assets/managing-assets-touch-ui.md#quick-actions)
     * From the toolbar after selecting the asset or navigating to the asset page
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
-1. Add a comment in the **Comment** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **Add Annotation** dialog.
+1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -1077,7 +1052,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
-1. After adding the annotation, click **Add** to save it. A notification for the annotation is sent to Aaron.
+1. After adding the annotation, click **[!UICONTROL Add]** to save it. A notification for the annotation is sent to Aaron.
 
    ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -1085,18 +1060,18 @@ Video annotations are only supported on browsers with HTML5-compatible video for
    >
    >You can add multiple annotations, before you save them.
 
-1. Tap/click **Close** to exit from the Annotation mode.
-1. To view the notification, log in to AEM Assets with Aaron MacDonald's credentials and click the **Notifications** icon to view the notification.
+1. Tap/click **[!UICONTROL Close]** to exit from the Annotation mode.
+1. To view the notification, log in to AEM Assets with Aaron MacDonald's credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
 
    >[!NOTE]
    >
    >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](/help/assets/managing-video-assets.md).
 
-1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **My Preferences**.
+1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **[!UICONTROL My Preferences]**.
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
-   Specify the desired color in the **Annotation Color** box and then click/tap **Accept**.
+   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click/tap **[!UICONTROL Accept]**.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -1108,19 +1083,19 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
 
-1. Tap/click the GlobalNav icon, and choose **Timeline** from the list.
+1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
-1. From the **Show All** list in the timeline, select **Comments** to filter the results based on annotations.
+1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
-   Tap/click a comment in the **Timeline** panel to view the corresponding annotation on the image.
+   Tap/click a comment in the **[!UICONTROL Timeline]** panel to view the corresponding annotation on the image.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
-   Tap/click **Delete**, to delete a particular comment.
+   Tap/click **[!UICONTROL Delete]**, to delete a particular comment.
 
 ### Printing Annotations {#printing-annotations}
 
@@ -1128,7 +1103,7 @@ If an asset has annotations or it has been subjected to a review workflow, you c
 
 You can also choose to print only the annotations or review status.
 
-To print the annotations and review status, tap/click the **Print** icon and follow the instructions in the wizard. The **Print** icon appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
+To print the annotations and review status, tap/click the **[!UICONTROL Print]** icon and follow the instructions in the wizard. The **[!UICONTROL Print]** icon appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
 
 1. From the Assets UI, open the preview page for an asset.
 1. Do one of the following:
@@ -1144,7 +1119,7 @@ To print the annotations and review status, tap/click the **Print** icon and fol
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
-1. Tap/click the **Print** icon from the toolbar.
+1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
@@ -1152,13 +1127,13 @@ To print the annotations and review status, tap/click the **Print** icon and fol
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
-   You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **Next Page**.
+   You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
    >[!NOTE]
    >
    >Lengthy annotations may not render properly in the PDF file. For optimal rendering, Adobe recommends that you limit annotations to 50 words.
 
-1. Tap/click **Print**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
+1. Tap/click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
@@ -1170,7 +1145,7 @@ To print the annotations and review status, tap/click the **Print** icon and fol
    >
    >If the asset has subassets, you can print all the subassets along with their specific page-wise annotations.
 
-   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **Annotation PDF configuration** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/managing-assets-touch-ui.md#annotating).
+   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/managing-assets-touch-ui.md#annotating).
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
@@ -1182,7 +1157,7 @@ If an asset includes annotations in foreign languages (especially non-latin lang
 1. To configure CQ-DAM-Handler-Gibson Font Manager Service, do one of the following:
 
     * In the System Fonts directory option, specify the complete path to the fonts directory on your system. For example, if you're a Mac user, you can specify the path as */Library/Fonts* in the System Fonts directory option. AEM fetches the fonts from this directory.
-    * Create a directory named **fonts** inside the **crx-quickstart** folder. CQ-DAM-Handler-Gibson Font Manager Service automatically fetches the fonts at the location *crx-quickstart/fonts*. You can override this default path from within the Adobe Server Fonts directory option.
+    * Create a directory named `fonts` inside the ``crx-quickstart`` folder. CQ-DAM-Handler-Gibson Font Manager Service automatically fetches the fonts at the location `crx-quickstart/fonts`. You can override this default path from within the Adobe Server Fonts directory option.
 
     * Create a new folder for fonts in your system, and store the desired fonts in the folder. Then, specify the complete path to that folder in the Customer Fonts directory option.
 
@@ -1224,39 +1199,24 @@ The versioning functionality lets you do the following:
 
 1. Navigate to the location of the asset for which you want to create a version, and tap/click it to open its asset page.
 
-1. Tap/click the GlobalNav icon, and the choose **Timeline** from the menu.
+1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu.
 
    ![timeline](assets/timeline.png)
 
-1. Tap/click the **Actions** (arrow) icon at the bottom to view the available actions you can perform on the asset.
+1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to view the available actions you can perform on the asset.
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
-1. Tap/click **Save as Version** to create a version for the asset.
+1. Tap/click **[!UICONTROL Save as Version]** to create a version for the asset.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Add a label and comment, and then click **Create** to create a version. Alternatively, tap/click **Cancel** to exit the operation.
+1. Add a label and comment, and then click **[!UICONTROL Create]** to create a version. Alternatively, tap/click **Cancel** to exit the operation.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. To view the new version, open the **Show All** list in the timeline from the asset details page or the Assets UI, and choose **Versions**.
+1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
 
-   All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **Versions** from the list.
-
-   All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **Versions** from the list.
-
-   All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **Versions** from the list.
-
-   All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **Versions** from the list.
-
-   All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **Versions** from the list.
-
-   All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **Versions** from the list.
-
-   All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **Versions** from the list.
-
-   All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **Versions** from the list.
    ![versions_option](assets/versions_option.png)
 
 1. Select a specific version for the asset to preview it or enable it to appear in the Assets UI.
@@ -1271,8 +1231,8 @@ The versioning functionality lets you do the following:
 
    ![save_version](assets/save_version.png)
 
-1. To generate a preview for the version, tap/click **Preview Version**.
-1. To display this version in the Assets UI, select **Revert to this Version**.
+1. To generate a preview for the version, tap/click **[!UICONTROL Preview Version]**.
+1. To display this version in the Assets UI, select **[!UICONTROL Revert to this Version]**.
 1. To compare between two versions, go to asset page of the asset and tap/click the version to be compared with the current version.
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
@@ -1284,19 +1244,19 @@ The versioning functionality lets you do the following:
 ### Starting a workflow on an asset {#starting-a-workflow-on-an-asset}
 
 1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
-1. Tap/click the GlobalNav icon, and the choose **Timeline** from the menu to display the timeline.
+1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
 
    ![timeline-1](assets/timeline-1.png)
 
-1. Tap/click the **Actions** (arrow) icon at the bottom to open the list of actions available for the asset.
+1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to open the list of actions available for the asset.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. Tap/click **Start Workflow** from the list.
+1. Tap/click **[!UICONTROL Start Workflow]** from the list.
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
-1. In the **Start Workflow** dialog, select a workflow model from the list.
+1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -1304,7 +1264,7 @@ The versioning functionality lets you do the following:
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Tap/click **Start** and then tap/click **Proceed** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
+1. Tap/click **[!UICONTROL Start]** and then tap/click **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 

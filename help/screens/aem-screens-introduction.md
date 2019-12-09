@@ -86,5 +86,5 @@ While creating a new project, different functions may overlap depending on your 
 
 ### Related Resources {#related-resources}
 
-View **[Understanding AEM Screens](https://helpx.adobe.com/experience-manager/kt/help/screens/screens-concepts-feature-video-understand.html)**, as an additional resource including videos to introduce different areas of an AEM Screens project.
+View **[Understanding AEM Screens](https://helpx.adobe.com/experience-manager/kt/screens/using/screens-concepts-feature-video-understand.html)**, as an additional resource including videos to introduce different areas of an AEM Screens project.
 

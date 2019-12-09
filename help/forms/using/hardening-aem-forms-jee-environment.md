@@ -292,7 +292,7 @@ Web Service Definition Language (WSDL) generation should be enabled only for dev
    ```
 
 1. Click **Settings &gt; Core System Settings &gt; Configurations**.
-1. Deselect **Enable WSDL **and click **OK**.
+1. Deselect **Enable WSDL** and click **OK**.
 
 ### Application server security {#application-server-security}
 
@@ -337,7 +337,7 @@ On Oracle, the database account that you use needs only the CONNECT, RESOURCE, a
 
 1. Add the sqljdbc_auth.dll file to the Windows systems path on the computer that is running the application server. The sqljdbc_auth.dll file is located with the Microsoft SQL JDBC 6.2.1.0 driver installation.
 1. Modify JBoss Windows service (JBoss for AEM Forms on JEE) property for Log On As from Local System to a login account that has AEM Forms database and a minimum set of privileges. If you are running JBoss from the command line instead of as a Windows service, you do not need to perform this step.
-1. Set Security for SQL Server from **Mixed** mode to** Windows Authentication only**.
+1. Set Security for SQL Server from **Mixed** mode to **Windows Authentication only**.
 
 #### Configuring integrated security for SQL Server on Windows for WebLogic {#configuring-integrated-security-for-sql-server-on-windows-for-weblogic}
 
@@ -353,7 +353,7 @@ On Oracle, the database account that you use needs only the CONNECT, RESOURCE, a
 1. Under Domain Structure, click **[base_domain]** &gt; **Services** &gt; **JDBC** &gt; **Data Sources** and, in the right pane, click **RM_DS**.
 1. On the next screen, on the **Configuration** tab, click the **Connection Pool** tab and, in the **Properties** box, type `integratedSecurity=true`.
 1. Add the sqljdbc_auth.dll file to the Windows systems path on the computer that is running the application server. The sqljdbc_auth.dll file is located with the Microsoft SQL JDBC 6.2.1.0 driver installation.
-1. Set Security for SQL Server from **Mixed** mode to** Windows Authentication only**.
+1. Set Security for SQL Server from **Mixed** mode to **Windows Authentication only**.
 
 #### Configuring integrated security for SQL Server on Windows for WebSphere {#configuring-integrated-security-for-sql-server-on-windows-for-websphere}
 
@@ -673,7 +673,7 @@ When you first install Document Services, the Allowed Referrer list is updated w
 
 **Managing Allowed Referrer list**
 
-You can manage the Allowed Referrer list from the User Management Interface of Administration Console. The User Management Interface provides you with the functionality to create, edit, or delete the list. Refer to the * [Preventing CSRF attacks](/help/forms/using/admin-help/preventing-csrf-attacks.md)* section of the *administration help* for more information on working with the Allowed Referrer list.
+You can manage the Allowed Referrer list from the User Management Interface of Administration Console. The User Management Interface provides you with the functionality to create, edit, or delete the list. Refer to the *[Preventing CSRF attacks](/help/forms/using/admin-help/preventing-csrf-attacks.md)* section of the *administration help* for more information on working with the Allowed Referrer list.
 
 **Managing Allowed Referrer Exception and Allowed URI lists**
 
@@ -688,7 +688,7 @@ AEM Forms on JEE provides APIs to manage the Allowed Referrer Exception list and
 * updateAllowedRefererExceptions
 * deleteAllowedRefererExceptions
 
-Refer to the* AEM Forms on JEE API Reference* for more information on the APIs.
+Refer to the *AEM Forms on JEE API Reference* for more information on the APIs.
 
 Use the ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** list for Allowed Referrer Exceptions at the global level i.e. to define exceptions that are applicable to all applications. This list contains only URIs with either an absolute path (e.g. `/index.html`) or a relative path (e.g. `/sample/`). You can also append a regular expression to the end of a relative URI, e.g. `/sample/(.)*`.
 
@@ -708,7 +708,7 @@ Include the `-Dlc.um.csrffilter.disabled=true` JAVA argument in the startup scri
 
 **Referrer Filtering for Custom WAR files**
 
-You may have created custom WAR files to work with AEM Forms on JEE in order to meet your business requirements. To enable Referrer Filtering for your custom WAR files, include ***adobe-usermanager-client.jar*** in the class path for the WAR and include a filter entry in the* web.xml* file with the following parameters:
+You may have created custom WAR files to work with AEM Forms on JEE in order to meet your business requirements. To enable Referrer Filtering for your custom WAR files, include ***adobe-usermanager-client.jar*** in the class path for the WAR and include a filter entry in the *web.xml* file with the following parameters:
 
 **CSRF_CHECK_GETS** controls the Referrer check on GET requests. If this parameter is not defined, the default value is set to false. Include this parameter only if you want to filter your GET requests.
 
@@ -959,7 +959,7 @@ The AEM Forms on JEE turnkey installation sets up a service account, by default,
 1. In the Microsoft Management Console (MMC), create a local user for the forms server service to log in as:
 
     * Select **User cannot change password**.
-    * On the **Member Of **tab, ensure that the Users group is listed.
+    * On the **Member Of** tab, ensure that the Users group is listed.
 
 1. Select **Settings** &gt; **Administrative Tools** &gt; **Services**.
 1. Double-click the application server service and stop the service.

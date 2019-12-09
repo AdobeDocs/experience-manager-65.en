@@ -18,7 +18,7 @@ These operations include:
 * Deleting many assets
 * Moving many assets or assets with many references
 * Exporting/importing asset metadata in bulk.
-* Fetching assets, that are above the threadhold limit set, from a remote AEM deployment.
+* Fetching assets, that are above the threshold limit set, from a remote AEM deployment.
 
 Asynchronous processing involves enqueuing multiple jobs and eventually running them in a serial manner subject to the availability of system resources.
 

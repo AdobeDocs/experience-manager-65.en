@@ -65,7 +65,7 @@ Perform the following steps to change the publishing schedule:
 1. Restart the AEM Forms server instance.
 
 1. Stop the AEM Forms server instance.
-1. Log in to the WebSphere Administrative Console. In the navigation tree, click **Servers **&gt; **Application servers** and then, in the right pane, click the server name.
+1. Log in to the WebSphere Administrative Console. In the navigation tree, click **Servers** &gt; **Application servers** and then, in the right pane, click the server name.
 
 1. Under Server Infrastructure, click **Java and Process Management** &gt; **Process Definition**.
 
@@ -82,8 +82,8 @@ Perform the following steps to change the publishing schedule:
 1. Stop the AEM Forms server instance.
 1. Log in to the WebLogic Administration Console. The default address of WebLogic Administration Console is `https://[hostname]:[port]/console`.
 1. Under Change Center, click **Lock & Edit**.
-1. Under Domain Structure, click **Environment **&gt; **Servers **and, in the right pane, click the managed server name.
-1. On the next screen, click the **Configuration **tab &gt; **Server Start** tab.
+1. Under Domain Structure, click **Environment** &gt; **Servers** and, in the right pane, click the managed server name.
+1. On the next screen, click the **Configuration** tab &gt; **Server Start** tab.
 1. In the Arguments box, add the JVM argument `-Dreporting.publisher.cron = <expression>`.
 
    **Example**: The following cron expression causes Process Reporting to publish AEM Forms data to the Process Reporting repository every 5 hours:
@@ -105,8 +105,8 @@ You can use the Administration console to configure the root (**default**: `/con
 
 #### To configure the Process Reporting repository locations {#to-configure-the-process-reporting-repository-locations}
 
-1. Log in to** Administration Console** with administrator credentials. The default URL of Administration Console is `https://[server]:[port]/adminui`
-1. Navigate to **Home **&gt; **Services **&gt; **Applications and Services** &gt;** Service Management** and open the **ProcessDataStorageProvider** service.
+1. Log in to **Administration Console** with administrator credentials. The default URL of Administration Console is `https://[server]:[port]/adminui`
+1. Navigate to **Home** &gt; **Services** &gt; **Applications and Services** &gt;**Service Management** and open the **ProcessDataStorageProvider** service.
 
    ![process-data-storage-service](assets/process-data-storage-service.png)
 
@@ -131,7 +131,7 @@ The ReportConfiguration service is used by Process Reporting for configuring the
 #### To configure the ReportingConfiguration service {#to-configure-the-reportingconfiguration-service}
 
 1. Log in to **Configuration Manager** with CRX administrator credentials. The default URL of Configuration Manager is `https://[*server*]:[*port*]/lc/system/console/configMgr`
-1. Open the **ReportingConfiguration **service.
+1. Open the **ReportingConfiguration** service.
 1. **Number of Records**
 
    When running a query on the repository, a result can potentially contain a large number of records. If the resultset is large, the query execution can consume server resources.
@@ -153,7 +153,7 @@ The ReportConfiguration service is used by Process Reporting for configuring the
    >
    >If you update the Root Folder option in the ProcessDataStorage configuration, you need to update the CRX Storage Path location in the ReportConfiguration service.
 
-1. Click **Save **and close **CQ Configuration Manager**.
+1. Click **Save** and close **CQ Configuration Manager**.
 
 ### ProcessDataPublisher service {#processdatapublisher-service}
 
@@ -161,11 +161,11 @@ The ProcessDataPublisher service imports process data from the AEM Forms databas
 
 #### To configure ProcessDataPublisher service &nbsp; {#to-configure-processdatapublisher-service-nbsp}
 
-1. Log in to** Administration Console** with administrator credentials.
+1. Log in to **Administration Console** with administrator credentials.
 
    The default URL is `https://[server]:port]/adminui/`.
 
-1. Navigate to **Home **&gt; **Services **&gt; **Applications and Services** &gt;** Service Management** and open the **ProcessDataPublisher** service.
+1. Navigate to **Home** &gt; **Services **&gt; **Applications and Services** &gt;**Service Management** and open the **ProcessDataPublisher** service.
 
 ![processdatapublisherservice-1](assets/processdatapublisherservice-1.png)
 
@@ -235,7 +235,7 @@ Specify your credentials to log in to the Process Reporting module.
 
 ![Login to Process Reporting](assets/capture1_new.png)
 
-When you log in to Process Reporting, the **[!UICONTROL Home]**screen displays.
+When you log in to Process Reporting, the **[!UICONTROL Home]** screen displays.
 
 ### Process Reporting Home screen {#process-reporting-home-screen}
 
