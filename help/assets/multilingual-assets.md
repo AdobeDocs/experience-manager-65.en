@@ -1,17 +1,13 @@
 ---
-title: Multilingual Assets
-seo-title: Multilingual Assets
+title: Multilingual assets
 description: Learn how to automate workflows for translating assets, including binaries, metadata, and tags into multiple languages.
-seo-description: Learn how to automate workflows for translating assets, including binaries, metadata, and tags into multiple languages.
 uuid: 38bb06f6-058b-4b22-871a-bcf028d334a7
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-content-type: reference
-topic-tags: authoring
 discoiquuid: 56c223ea-14b0-4679-b458-c3554e6828fb
 ---
 
-# Multilingual Assets {#multilingual-assets}
+# Multilingual assets {#multilingual-assets}
 
 Adobe Experience Manager (AEM) Assets lets you automate translation workflows on assets (including binaries, metadata, and tags) to generate assets in other languages for use in multilingual projects.
 
@@ -23,12 +19,12 @@ Machine translation: The machine translation service immediately translates the 
 
 Translating assets includes the following:
 
-1. [Connecting AEM with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
-1. [Creating translation integration framework configurations](/help/sites-administering/tc-tic.md)
-1. [Preparing assets for translation](preparing-assets-for-translation.md)
-1. [Applying translation cloud services to folders](transition-cloud-services.md)
+1. [Connect AEM with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
+1. [Create translation integration framework configurations](/help/sites-administering/tc-tic.md)
+1. [Prepare assets for translation](preparing-assets-for-translation.md)
+1. [Apply translation cloud services to folders](transition-cloud-services.md)
 1. [Create translation projects](translation-projects.md)
 
 If your translation service provider does not provide a connector to integrate with AEM, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
-Also see, [Creating translation projects for content fragments](creating-translation-projects-for-content-fragments.md).
+Also see, [Create translation projects for content fragments](creating-translation-projects-for-content-fragments.md).
