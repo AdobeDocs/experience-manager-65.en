@@ -33,37 +33,37 @@ Raster image formats supported for asset management features are as follows:
 | | Storage | Metadata management | Metadata extraction | Thumbnail generation | Interactive editing | Metadata writeback | Insights |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Format** | | | | | | | |
-| PNG | x | x | x | x | x | x | x |
-| GIF | x | x | x | x | x | | x |
-| TIFF | x | x | x | x | | x | x |
-| JPEG | x | x | x | x | x | x | x |
-| BMP | x | x | x | x | x | | x |
-| PNM | x | x | | | | | x |
-| PGM | x | x | | | | | x |
-| PBM | x | x | | | | | x |
-| PPM | x | x | | | | | x |
-| PSD* | x | x | x | x | | | x |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)  | x | x | x | x | | | |
-| PICT | | | | | | | x |
-| PSB | x | x | x | x | | | |
+| PNG | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| GIF | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| TIFF | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| JPEG | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| BMP | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| PNM | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| PGM | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| PBM | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| PPM | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| PSD* | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)  | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | |
+| PICT | | | | | | | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| PSB | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | |
 
 Raster image formats supported for Dynamic Media features are as follows:
 
 | | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
 | **Format** | | | | | |
-| PNG | x | x | x | x | x |
-| GIF | x | x | x | x | x |
-| TIFF | x | x | x | x | x |
-| JPEG | x | x | x | x | x |
-| BMP | | x | | | |
+| PNG | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| GIF | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| TIFF | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| JPEG | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| BMP | | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | |
 | PNM | | | | | |
 | PGM | | | | | |
 | PBM | | | | | |
 | PPM | | | | | |
-| PSD* | x | | | | |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | x | x | x | x | x |
-| PICT | x | | | | |
+| PSD* |![checkmark-icon](do-not-localize/checkmark_icon.png)| | | | |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) |![checkmark-icon](do-not-localize/checkmark_icon.png)|![checkmark-icon](do-not-localize/checkmark_icon.png)|![checkmark-icon](do-not-localize/checkmark_icon.png)|![checkmark-icon](do-not-localize/checkmark_icon.png)| ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| PICT | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | |
 | PSB | | | | | |
 
 &ast; The merged image is extracted from the PSD file. It is an image that is generated by Adobe Photoshop and is included in the PSD file. Depending on the settings, the merged image may or may not be the actual image.
@@ -107,35 +107,35 @@ Document formats supported for asset management features are as follows:
 || Storage | Metadata<br> management | Metadata<br> extraction | Thumbnail<br> generation | Interactive<br> editing | Metadata<br> writeback | Insights |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Format** | | | | | | | |
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | x | x | | x | x | x | x |
-| DOC | x | x | x | x | | | |
-| DOCX | x | x | x | x | | | |
-| ODT | x | x | x | | | | |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | x | x | x | x | x | x | x |
-| HTML | x | x | x | | | | |
-| RTF | x | x | x | | | | |
-| TXT | x | x | x | | | | |
-| XLS | x | x | x | | | | |
-| XLSX | x | x | x | x | | | |
-| ODS | x | x | x | | | | |
-| PPT | x | x | x | x | x | x | |
-| PPTX | x | x | x | x | x | x | |
-| ODP | x | x | x | | | | |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | x | x | | x | x | x | x |
-| PS | x | x | | | | | |
-| QXP | x | x | | | | | |
-| EPUB | x | x | | x | x | | |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| DOC | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | |
+| DOCX | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | |
+| ODT | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| HTML | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | |
+| RTF | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | |
+| TXT | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | |
+| XLS | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | |
+| XLSX | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | |
+| ODS | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | |
+| PPT | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | |
+| PPTX | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | |
+| ODP | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| PS | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | | |
+| QXP | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | | |
+| EPUB | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | |
 
 Document formats supported for Dynamic Media features are as follows:
 
 | | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
 | **Format** | | | | | |
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | x | | | | |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | |
 | DOC | | | | | |
 | DOCX | | | | | |
 | ODT | | | | | |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | x | x | x | x | x |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
 | HTML | | | | | |
 | RTF | | | | | |
 | TXT | | | | | |
@@ -145,7 +145,7 @@ Document formats supported for Dynamic Media features are as follows:
 | PPT | | | | | |
 | PPTX | | | | | |
 | ODP | | | | | |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | x | | | | |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | |
 | PS | | | | | |
 | QXP | | | | | |
 | EPUB | | | | | |
@@ -162,24 +162,24 @@ In addition to the above functionality, consider the following:
 
 | | Storage | Metadata management | Metadata extraction | Thumbnail generation | FFMPEG transcoding |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | x | x | | - | * |
-| MIDI | x | x | | - | * |
-| 3GP | x | x | | - | * |
-| MP3 | x | x | x | - | * |
-| MPG | x | x | | - | * |
-| OGA | x | x | | - | * |
-| OGG | x | x | | - | * |
-| RA | x | x | | - | * |
-| WAV | x | x | | - | * |
-| WMA | x | x | | - | * |
-| DVI | x | x | | * | * |
-| FLV | x | x | | * | * |
-| M4V | x | x | | * | * |
-| MPEG | x | x | | * | * |
-| OGV | x | x | | * | * |
-| MOV | x | x | | * | * |
-| WMV | x | x | | * | * |
-| SWF | x | x | | | |
+| AAC | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | - | * |
+| MIDI | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | - | * |
+| 3GP | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | - | * |
+| MP3 | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | - | * |
+| MPG | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | - | * |
+| OGA | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | - | * |
+| OGG | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | - | * |
+| RA | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | - | * |
+| WAV | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | - | * |
+| WMA | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | - | * |
+| DVI | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | * | * |
+| FLV | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | * | * |
+| M4V | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | * | * |
+| MPEG | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | * | * |
+| OGV | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | * | * |
+| MOV | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | * | * |
+| WMV | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | * | * |
+| SWF | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | |
 
 ## Supported input video formats for Dynamic Media Transcoding {#supported-input-video-formats-for-dynamic-media-transcoding}
 
@@ -209,11 +209,11 @@ The supported archive formats and the applicability of the common DAM workflows,
 | | Storage | Versioning | Workflow | Publishing | Access Control | Dynamic Media Delivery |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Formats** | | | | | | |
-| TGZ | x | x | x | x | x | |
-| JAR | x | x | x | x | x | |
-| RAR | x | x | x | x | x | |
-| TAR | x | x | x | x | x | |
-| ZIP | x | x | x | x | x | x |
+| TGZ | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | |
+| JAR | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | |
+| RAR | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | |
+| TAR | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | |
+| ZIP | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
 
 ## Other supported formats {#other-supported-formats}
 
@@ -223,12 +223,12 @@ The applicability of common DAM workflows for a few other file formats is descri
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | | Storage | Versioning | Workflow | Publishing | Access Control | Dynamic Media Delivery |
 | **Formats** | | | | | | |
-| * | x | x | x | x | x | |
-| SVG | x | x | x | x | x | x |
-| CSS | x | x | x | x | x | x |
-| VTT | x | x | x | x | x | x |
-| XML | x | x | x | x | x | x |
-| JavaScript (when configured with own delivery domain) | | | | | | x |
+| * | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | |
+| SVG | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| CSS | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| VTT | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| XML | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
+| JavaScript (when configured with own delivery domain) | | | | | | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
 
 **&ast;** The other formats are supported in DAM for storage, versioning, ACL, workflow, publishing, and metadata management.
 
