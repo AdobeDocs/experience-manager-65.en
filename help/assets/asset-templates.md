@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Asset Templates{#asset-templates}
+# Asset Templates {#asset-templates}
 
 Asset templates are a special class of assets that facilitate quick repurposing of visually-rich content for digital and print media. An asset template includes two parts, the fixed messaging section and the editable section.
 
