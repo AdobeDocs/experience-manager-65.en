@@ -3,12 +3,10 @@ title: Sample ContextHub Store Candidates
 seo-title: Sample ContextHub Store Candidates
 description: ContextHub provides several sample store candidates that you can use in your solutions
 seo-description: ContextHub provides several sample store candidates that you can use in your solutions
-uuid: feccd813-6077-4e87-a96e-d451114e5527
 contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 7f813b59-d904-49b6-994c-be3badf74464
 ---
 
 # Sample ContextHub Store Candidates{#sample-contexthub-store-candidates}

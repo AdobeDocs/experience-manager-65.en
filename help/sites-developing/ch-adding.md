@@ -5,10 +5,9 @@ description: Learn how to configure Context Hub.
 seo-description: Learn how to configure Context Hub.
 uuid: f2988bb9-6878-42a2-bb51-c3f8683248c5
 contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
+products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 780d1a2d-38f1-4115-a9bd-f466aa3774dd
 ---
 
 # Configuring ContextHub {#configuring-contexthub}
