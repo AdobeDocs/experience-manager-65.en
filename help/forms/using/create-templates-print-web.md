@@ -59,7 +59,7 @@ Execute the following steps to create an XDP template for the Print channel:
 
    Ensure that the **Object Library** and **Object** options are selected from the **Window** menu.
 
-1. Drag-and-drop the **Subform **component from the **Object Library** to the form.
+1. Drag-and-drop the **Subform** component from the **Object Library** to the form.
 1. Select the subform to display the options for the subform in the **Object** window in the right pane.
 1. Select the **Subform** tab and select **Flowed** from the **Content** drop-down list. Drag the left endpoint of the subform to adjust the length.
 1. In the **Bindings** tab:
@@ -83,7 +83,7 @@ Execute the following steps to create an XDP template for the Print channel:
     * BillDetails
     * CustomerDetails
     * BillSummary
-    * Summary - Select the **Subform** tab and select **Positioned** from the **Content **drop-down list for this subform. Insert the following subforms in the **Summary** subform.
+    * Summary - Select the **Subform** tab and select **Positioned** from the **Content** drop-down list for this subform. Insert the following subforms in the **Summary** subform.
 
         * Charges
         * Charts
@@ -115,7 +115,7 @@ Once you have created an XDP template using the Forms Designer, you must upload 
 1. Select **Forms** &gt; **Forms & Documents**.
 1. Tap **Create** &gt; **File Upload**.
 
-   Navigate and select the **create_first_ic_print_template** template (XDP) and tap **Open **to import the XDP template to the AEM Forms server.
+   Navigate and select the **create_first_ic_print_template** template (XDP) and tap **Open** to import the XDP template to the AEM Forms server.
 
 ### Create XDP template for layout fragments {#create-xdp-template-for-layout-fragments}
 
@@ -206,14 +206,14 @@ Execute the following steps to create a template for the Web channel in the **Cr
 1. On the **Pick a Template Type** configuration wizard, select **Interactive Communication - Web Channel** and tap **Next**.
 1. On the **Template Details** configuration wizard, specify **Create_First_IC_Web_Template** as the template title. Specify an optional description and tap **Create**.
 
-   A confirmation message that the **Create_First_IC_Web_Template **is displayed.
+   A confirmation message that the **Create_First_IC_Web_Template** is displayed.
 
 1. Tap **Open** to open the template in the template editor.
 1. Select **Initial Content** from the drop-down list next to the **Preview** option.
 
    ![Template editor](assets/template_editor_initial_content_new.png)
 
-1. Tap **Root Panel **and then tap **+** to view the list of components that you can add to the template.
+1. Tap **Root Panel** and then tap **+** to view the list of components that you can add to the template.
 1. Select **Panel** from the list to add a panel above the **Root Panel**.
 1. Select the **Content** tab in the left pane. The new panel added in step 8 is displayed under the **Root Panel** in the content tree.
 

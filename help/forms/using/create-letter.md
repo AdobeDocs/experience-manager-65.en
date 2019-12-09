@@ -159,21 +159,21 @@ Analyze every letter to uncover the various pieces that make up the letter. The 
 
 ## Benefits of performing the analysis {#benefits-of-performing-the-analysis}
 
-**Content reuse **You have a consolidated list of new content required for generating correspondence. Much of the content such as headers, footers, disclaimers, and introductions are common to many letters and can be reused across various letters. All such common content can be created and approved by experts once and then reused in many pieces of correspondence.
+**Content reuse** You have a consolidated list of new content required for generating correspondence. Much of the content such as headers, footers, disclaimers, and introductions are common to many letters and can be reused across various letters. All such common content can be created and approved by experts once and then reused in many pieces of correspondence.
 
-**Building the data dictionary **There will be data values such as "Customer Id" and "Customer Name" that are common to many letters. You can prepare a consolidated list of all such data values. Typically someone from the enterprise middleware team is consulted when planning the structure. This forms the basis for building the Data Dictionary.
+**Building the data dictionary** There will be data values such as "Customer Id" and "Customer Name" that are common to many letters. You can prepare a consolidated list of all such data values. Typically someone from the enterprise middleware team is consulted when planning the structure. This forms the basis for building the Data Dictionary.
 
-**Sourcing data from backend enterprise systems **You will also know all of the data values that are needed and from where the enterprise system data is obtained. You can then architect the implementation to extract the data from the enterprise system and feed to the Letters solution.
+**Sourcing data from backend enterprise systems** You will also know all of the data values that are needed and from where the enterprise system data is obtained. You can then architect the implementation to extract the data from the enterprise system and feed to the Letters solution.
 
-**Estimating the complexity of letters **It is important to determine how complex it will be to create a particular correspondence. This analysis helps in determining the amount of time and skill sets that will be required to create the letter templates. This in turn will help in estimating the resources and cost of implementing the Letters solution.
+**Estimating the complexity of letters** It is important to determine how complex it will be to create a particular correspondence. This analysis helps in determining the amount of time and skill sets that will be required to create the letter templates. This in turn will help in estimating the resources and cost of implementing the Letters solution.
 
 ## Correspondence complexity {#correspondence-complexity}
 
 The complexity of correspondence can be determined by analyzing the following parameters:
 
-**Layout complexity **How complex is the layout? Letters such as Notice of Cancelation have simple layouts. Whereas letters such as Claims Coverage Confirmation has a complex layout with several tables and more than 60 form fields. Creating complex layouts takes more time and requires advanced layout design skill sets.
+**Layout complexity** How complex is the layout? Letters such as Notice of Cancelation have simple layouts. Whereas letters such as Claims Coverage Confirmation has a complex layout with several tables and more than 60 form fields. Creating complex layouts takes more time and requires advanced layout design skill sets.
 
-**Number of text paragraphs and conditions **A loan contract can be 10 pages long and contain more than 40 text clauses. Many of these clauses would depend `` loan parameters. Based on the exact terms and conditions, the clauses would be included or excluded from the contract. Creating such letters requires thorough planning and careful definition of the complex conditions.
+**Number of text paragraphs and conditions** A loan contract can be 10 pages long and contain more than 40 text clauses. Many of these clauses would depend `` loan parameters. Based on the exact terms and conditions, the clauses would be included or excluded from the contract. Creating such letters requires thorough planning and careful definition of the complex conditions.
 
 This table provides some guidelines that you can use to classify your letters:
 
@@ -253,7 +253,7 @@ You need the following in place first to create a correspondence:
 
    ![Correspondence properties](assets/createcorrespondenceproperties.png)
 
-1. The system displays a message: "Letter created successfully." (in the alert message) Tap **Open** to configure the data modules and layout fragments in it. Or tap **Done **to go back to the previous page. 
+1. The system displays a message: "Letter created successfully." (in the alert message) Tap **Open** to configure the data modules and layout fragments in it. Or tap **Done** to go back to the previous page. 
 
    ![Alert message: letter created successfully](assets/createcorrespondencecreated.png)
 
