@@ -143,7 +143,7 @@ Efficiently design, deliver and optimize experiences on all digital displays fro
 * Personalize by location or configuration of data triggered content by using dynamic placeholders.
 * Unified insights driven by Adobe Analytics integration into the AEM Screens Player
 
-For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](/help/screens/home.md).
+For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 ### Experience Manager Assets {#experience-manager-assets}
 
