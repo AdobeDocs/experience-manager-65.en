@@ -8,15 +8,13 @@ topic-tags: author
 discoiquuid:
 ---
 
-# Install workbench {#install-workbench}
+# About This Document {#about-this-doc}
 
-This document provides instructions for installing and configuring workbench. The installation program also installs Designer.
+This document provides instructions for installing and configuring AEM Forms Workbench. The installation program also installs Forms Designer.
 
-## About {#about}
+## Who should read this document? {#who-should-read-this-doc}
 
-This document is intended for administrators or developers who are responsible for installing, configuring, administering, or deploying Workbench.
-Also included is information needed to configure your system to support your upgraded Adobe® AEM forms® Enterprise Suite (ES) Update 1 (8.2.x) and Adobe® AEM forms® Enterprise Suite 2 (ES2) processes.
-The information provided is based on the assumption that anyone reading this document is familiar with Microsoft® Windows® operating system.
+This document is intended for administrators or developers who are responsible for installing, configuring, administering, or deploying Workbench. Also included is information needed to configure your system to support your upgraded AEM Forms processes. The information provided is based on the assumption that anyone reading this document is familiar with Microsoft® Windows® operating system.
 
 ## Additional information {#additional-information}
 
@@ -29,27 +27,19 @@ The resources in this table can help you learn more about and get started using 
   </tr>
   <tr>
    <td><p>Procedural information for Workbench</p> </td>
-   <td><p><a href="http://www.adobe.com/go/learn_aemforms_workbench_61">Workbench Help</a><br /> <br /> </p> </td>
+   <td><p><a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Workbench Help</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>General information about AEM Forms and how it integrates with other Adobe products</p> </td>
    <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms Overview</a><br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>A tutorial for creating a AEM Forms application and testing it in workspace</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_firstapp_ds_65">Creating your first AEM Forms Application</a><br /> <br /> </p> </td>
-  </tr>
-  <tr>
    <td><p>All the documentation available for AEM Forms</p> </td>
    <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms documentation</a><br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Other services and products that integrate with AEM Forms</p> </td>
-   <td><p><a href="http://www.adobe.com/">www.adobe.com</a><br /> <br /> </p> </td>
-  </tr>
-  <tr>
    <td><p>Patch updates, technical notes, and additional information on this product version</p> </td>
-   <td><p><a href="https://www.adobe.com/account/sign-in.supportportal.html">Contact Adobe Enterprise Support</a><br /> <br /> </p> </td>
+   <td><p>Contact Adobe Enterprise Support</a><br /> <br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -72,6 +62,8 @@ The following illustration depicts the Workbench installation including:
 >
 >The AEM Forms server requires a separate installation program. For more information refer to the AEM Forms on JEE installation documentation.
 
+![default-render-form](assets/installing-workbench.png)
+
 ## System prerequisites {#system-prerequisites}
 
 This section outlines the hardware and software requirements and supported platforms.
@@ -90,16 +82,11 @@ Disk space for installation:
 >If all these locations reside on a single drive, there must be 1.5 GB of space available during installation. The files copied to the temporary directories are deleted when installation is complete.
 
 * Hardware requirement: Intel® Pentium® 4 or AMD equivalent, 1 GHz processor.
-* Download and install the latest version of Adobe AIR (from <a href="http://www.adobe.com/">www.adobe.com</a>) required for Community Help Client, integrated with Workbench.
-* Java™ Runtime Environment (JRE) 6.0 update 22 or later updates to 6.0 *New for 10*.
+* Java™ Runtime Environment (JRE) 7.0 update 51 or later updates to 7.0.
 * Minimum1024 X 768 pixels or greater monitor resolution with 16-bit color or higher.
 * TCP/IPv4 or TCP/IPv6 network connection to the AEM Forms server.
 * Install Visual C++ Redistributable runtime Packages 2012 32-bit.
 * Install Visual C++ Redistributable runtime Packages 2013 32-bit.
-
->[!NOTE]
->
->If you have Adobe® Acrobat® X installed on your machine, ensure that you uninstall it before installing Workbench. You can reinstall Acrobat after installing Workbench.
 
 >[!NOTE]
 >
@@ -122,46 +109,23 @@ The table below has a complete list of possible Designer installation scenarios 
   </tr>
   <tr>
    <td><p>Acrobat Pro or Acrobat Pro Extended (includes Designer)</p> </td>
-   <td><p>None. The Workbench installation detects an instance of Designer on your computer that was installed with either Acrobat Pro or Acrobat Pro Extended.
-Different versions of Designer can coexist on the same system, for example Designer 8.2.x and 9.0.x. It is not necessary to uninstall the version of Designer installed with Acrobat 10 Pro or Acrobat 10 Pro Extended.
-<br /> <br /> </p> </td>
+   <td><p>None.<br /> 
+The Workbench installation detects an instance of Designer on your computer that was installed with either Acrobat Pro or Acrobat Pro Extended.<br />
+Different versions of Designer can coexist on the same system, for example Designer 6.4.x for Workbench 6.4 and Designer 6.5.0.x for Workbench 6.5. It is not necessary to uninstall the version of Designer installed with Acrobat 10 Pro or Acrobat 10 Pro Extended, or above.
+<br /></p> </td>
   </tr>
   <tr>
    <td><p>Designer (stand-alone)</p> </td>
-   <td><p>None. The version of Designer included with Workbench is English-only. The Workbench installer will not reinstall a new version of Designer. Instead an updated version, bundled with the Workbench installer, will be patched. This also allows you to use your localized version of Designer within Workbench.<br /> <br /> </p> </td>
+   <td><p>None. <br />The version of Designer included with Workbench is English-only. <br />The Workbench installer will not reinstall a new version of Designer. Instead an updated version, bundled with the Workbench installer, will be patched. This also allows you to use your localized version of Designer within Workbench.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
-
-### To uninstall Designer (stand-alone) {#uninstall-designer-standalone}
-
-1. Go to **Control Panel > Programs > Programs and Features**
-1. In the Currently installed programs list, select **Adobe Designer**.
-1. Click **Uninstall** and then click **Yes**.
 
 ### To uninstall Designer (stand-alone) on Windows 10 {#uninstall-designer-standalone-windows10}
 
 1. Go to **Control Panel > Programs > Programs and Features**
 1. In the Currently installed programs list, select **Adobe Designer**.
 1. Click **Uninstall** and then click **Yes**.
-
-### To uninstall Designer included with Acrobat Pro or Acrobat Pro Extended {#uninstall-designer-included-with-acrobatpro-or-acrobatextended}
-
-1. Go to **Control Panel > Programs > Programs and Features**
-1. In the Currently installed programs list, select **Adobe Acrobat Pro** or **Adobe Acrobat Pro Extended**.
-1. Click **Change** and then click **Next**.
-1. Select **Modify** and then click **Next**.
-1. Select **Adobe Designer**, select **This feature will not be available**, and then click **Next**
-1. Click **Update** and then click **Finish**
-
-### To uninstall Designer included with Acrobat Pro or Acrobat Pro Extended on Windows 10 {#uninstall-designer-included-with-acrobatpro-or-acrobatextended-windows10}
-
-1. Go to **Control Panel > Programs > Programs and Features**
-1. In the Currently installed programs list, select **Adobe Acrobat Pro** or **Adobe Acrobat Pro Extended**.
-1. Click **Change** and then click **Next**.
-1. Select **Modify** and then click **Next**.
-1. Select **Adobe Designer**, select **This feature will not be available**, and then click **Next**
-1. Click **Update** and then click **Finish**
 
 ## Installing Workbench {#installing-workbench}
 
@@ -179,7 +143,7 @@ Before you install Workbench, you must ensure that your environment includes the
 
    >[!IMPORTANT]
    >
-   >The Workbench installer only runs from a DVD or local drive. It cannot be run from a remote site.
+   >The Workbench installer only runs from a local drive. It cannot be run from a remote site.
 
    >[!NOTE]
    >
@@ -203,60 +167,15 @@ Before you install Workbench, you must ensure that your environment includes the
 1. Review the installation summary. Select Start AEM Forms Workbench to launch Workbench and click Next.
 1. Review the Release Notes and click Done.
 1. The following items are now installed on your computer:
-   * **Workbench**: To run Workbench from the Start menu, select All Programs > AEM Forms > Workbench, if you chose to store the shortcut folder there. For  information,   see the Using Workbench documentation.
-   * **Designer**: You can access Designer from inside Workbench. For information, see Getting Started topic in Designer Help.
-   * **Workbench plug-in**: Follow the instructions in “3.3 Installing the Workbench Eclipse feature” on page 6.
-   * **AEM Forms SDK**: For more information on using the SDK, see <a href="http://www.adobe.com/go/learn_lc_programming_10">Programming with AEM Forms</a>.
+   * **Workbench**: To run Workbench from the Start menu, select All Programs > AEM Forms > Workbench, if you chose to store the shortcut folder there. For  information,   see the <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Using Workbench</a> documentation.
+   * **Designer**: You can access Designer from inside Workbench. For information, see Getting Started topic in <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer Help</a>.
+   * **AEM Forms SDK**: For more information on using the SDK, see <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programming with AEM Forms</a>.
 
 ## Upgrading processes {#upgrading-processes}
 
-AEM Forms Update 1 and LiveCycle ES2 processes can be upgraded to AEM Forms applications using the Upgrade Wizard. See Upgrading legacy artifacts documentation in Workbench Help for more information.
+AEM Forms on JEE processes can be upgraded to AEM Forms applications using the Upgrade Wizard. See Upgrading legacy artifacts documentation in Workbench Help for more information.
 
-### Installing the Workbench Eclipse feature {#installing-workbench-eclipse-feature}
-
-You can optionally add the Workbench feature to Eclipse. You can add Workbench after you have installed Workbench. For example, for JBoss the following location contains the file:
-
-* Workbench_DVD/additional/eclipse
-  Download and install Eclipse 3.6 from <a href="https://www.eclipse.org/downloads/">www.eclipse.org/downloads</a>.
-
-### Configuring Eclipse update feature for Workbench {#configuring-eclipse-update-feature-for-workbench}
-
-Workbench supports the update feature to ensure you are using the most updated Eclipse version. However, you must ensure that certain additional modules are included with each download:
-
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>Eclipse Version</strong></p> </td>
-   <td><p><strong>Workbench required modules</strong></p> </td>
-  </tr>
-  <tr>
-   <td><p>Eclipse 3.6.x</p> </td>
-   <td><p>
-
-* Graphical Editing Framework GEF [org.eclipse.gef.feature.group]: This is contained in the 'Graphical Modeling Framework SDK' [org.eclipse.gmf.sdk.feature.group]
-
-* WST XML Core [org.eclipse.wst.xml_core.feature.feature.group]: This is contained in the 'Eclipse XML Editors and Tools' [org.eclipse.wst.xml_ui.feature.feature.group]
-
-* Plug-in 'org.apache.commons.lang_2.3.0' [n/a]: This is contained in the 'Mylyn Task List (Required)' [org.eclipse.mylyn_feature.feature.group]
-   </p> </td>
-  </tbody>
-  </table>
-
-**To install and deploy the Workbench feature to Eclipse**:
-1. Start Eclipse.
-1. Select Help > Install New Software, click Add to open the Add Repository dialog.
-1. On the Add Repository dialog, click Local and browse to the directory where the Workbench installation saved the plug-in ZIP file, select workbench-updatesite.zip, and then click Open.
-1. Follow the instructions on the subsequent screens to deploy the Workbench feature to Eclipse.
-
-   >[!NOTE]
-   >
-   >Ignore the message "Warning: You are about to install an unsigned feature,” and click Install to continue.
-
-   >[!NOTE]
-   >
-   >The Adobe AEM Forms Discovery Plug-in for Flash Builder enables you to quickly build Adobe Flex and AIR applications that invoke a service that is part of AEM Forms through its remoting endpoints. Information about how to install and update the plug-in is available on the Adobe web site at **Link Required**.
-
-### Configuring and logging to server {#configuring-and-logging-server}
+### Configuring and logging in to a server {#configuring-and-logging-server}
 
 To use Workbench, you must have an instance of AEM Forms running, typically on a separate computer. You must have a user name and password to log in to AEM Forms, as well as details about the location of the server.
 
@@ -266,11 +185,11 @@ To use Workbench, you must have an instance of AEM Forms running, typically on a
 
 ### Configuring time-out settings {#configuring-timeout-settings}
 
-By default, Workbench times out after two hours, regardless of activity or inactivity. To edit the time-out setting, see “Configuring User Management > Configure advanced system attributes” in the administration console Help.
+By default, Workbench times out after two hours, regardless of activity or inactivity. To edit the time-out setting, see “Configuring User Management > Configure advanced system attributes” in the <a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">administration console Help</a>.
 
 ### Configuring Workbench to connect over HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 
-To connect Workbench to a AEM Forms server over HTTPS, you must ensure that the certificate authority (CA) that issued the public key will be recognized as being trusted by Workbench. If the certificate is not recognized as coming from a trusted source, you must update the cacert file located in the [Workbench_HOME]/workbench/jre/lib/security directory.
+To connect Workbench to an AEM Forms server over HTTPS, you must ensure that the certificate authority (CA) that issued the public key will be recognized as being trusted by Workbench. If the certificate is not recognized as coming from a trusted source, you must update the cacert file located in the [Workbench_HOME]/workbench/jre/lib/security directory.
 
 >[!NOTE]
 >
