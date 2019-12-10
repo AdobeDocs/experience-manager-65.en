@@ -1,15 +1,14 @@
 ---
-title: Managing Metadata for Digital Assets
-seo-title: Managing Metadata for Digital Assets
+title: Manage metadata for digital assets
 description: Learn about the types of metadata an how AEM Assets helps manage metadata for assets to allow easier categorization and organization of assets. With the ability to keep and manage arbitrary metadata with your assets, AEM Assets makes it possible to automatically organize and process assets based on their metadata.
-seo-description: Learn about the types of metadata an how AEM Assets helps manage metadata for assets to allow easier categorization and organization of assets. With the ability to keep and manage arbitrary metadata with your assets, AEM Assets makes it possible to automatically organize and process assets based on their metadata.
 uuid: 29215e51-b315-440a-9480-5b5a0ee76547
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 7acc1cab-d167-4299-bd13-8eb800a1112e
+
 ---
 
-# Managing Metadata for Digital Assets {#managing-metadata-for-digital-assets}
+# Manage metadata for digital assets {#managing-metadata-for-digital-assets}
 
 Adobe Experience Manager (AEM) Assets keeps metadata for every asset. This allows for a easier categorization and organization of assets and it helps people who are looking for a specific asset. With the ability to extract metadata from files uploaded to AEM Assets, metadata management integrates with the creative workflow. With the ability to keep and manage arbitrary metadata with your assets, AEM Assets makes it possible to automatically organize and process assets based on their metadata.
 
@@ -87,7 +86,7 @@ There are a variety of ways that metadata can be embedded into files. A selectio
 * XMP: used by AEM Assets to store the extracted metadata within the repository.
 * ID3: for audio and video files.
 * EXIF: for image files.
-* Other/Legacy: from Microsoft Word, Powerpoint, Excel and so on.
+* Other/Legacy: from Microsoft Word, PowerPoint, Excel and so on.
 
 #### XMP {#xmp}
 
@@ -107,12 +106,7 @@ ID3 tags are designed for the MP3 file format. Additional information on formats
 
 #### EXIF {#exif}
 
-EXIF means Exchangeable image file format and is the most popular metadata format used in digital photography. It provides a way of embedding a fixed vocabulary of metadata properties in a number of file formats such as
-
-* JPEG
-* TIFF
-* RIFF
-* WAV
+EXIF means Exchangeable image file format and is the most popular metadata format used in digital photography. It provides a way of embedding a fixed vocabulary of metadata properties in a number of file formats, such as JPEG, TIFF, RIFF, and WAV.
 
 A major limitation of EXIF is that it is not supported by other popular image file formats such as BMP, GIF, or PNG.
 
@@ -124,15 +118,15 @@ Most of the metadata fields defined by EXIF are of a highly technical nature and
 
 #### Other Metadata {#other-metadata}
 
-Other metadata that can be embedded from files include Microsoft Word, Powerpoint, Excel, and so on.
+Other metadata that can be embedded from files include Microsoft Word, PowerPoint, Excel, and so on.
 
 ## Metadata Schemata {#metadata-schemata}
 
-Metadata schemas are predefined sets of metadata property definitions that can be used in a wide variety of applications. Properties are always associated with an asset, meaning that the properties are “about” the resource.
+Metadata schemas are predefined sets of metadata property definitions that can be used in a wide variety of applications. Properties are always associated with an asset, meaning that the properties are about the resource.
 
 You can also design your own metadata schemata if none exist that meet your needs (be careful, however, not to duplicate something that already exists). Within an organization, separating schemata makes it easier to share metadata among organizations.
 
-AEM provides you with an out-of-the-box list of the most popular metadata schemata, allowing you to jumpstart your metadata strategy and pick the metadata properties that you need from an already-defined schemata.
+AEM provides you with an out-of-the-box list of the most popular metadata schemata, allowing you to jump-start your metadata strategy and pick the metadata properties that you need from an already-defined schemata.
 
 The metadata schemata supported are listed in the following section.
 
@@ -140,7 +134,7 @@ The metadata schemata supported are listed in the following section.
 
 * dc - Dublin Core - the most important and widely used set of metadata
 * DICOM - Digital Imaging and Communications in Medicine
-* Iptc4xmpCore & iptc4xmpExt - International Press Communications Standard - lots of subject-specific metdata
+* Iptc4xmpCore & iptc4xmpExt - International Press Communications Standard - lots of subject-specific metadata
 * rdf - Resource Description Framework - for generic semantic web metadata
 * xmp - Extensible Metadata Platform
 * xmpBJ - Basic Job Ticketing
@@ -161,8 +155,8 @@ The metadata schemata supported are listed in the following section.
 * crs - Adobe Photoshop Camera Raw
 * lr - Adobe Lightroom
 * mediapro - IView MediaPro
-* MicrosoftPhoto & MP - Microsoft Photo
-* pdf & pdfx
+* MicrosoftPhoto and MP - Microsoft Photo
+* pdf amd pdfx
 * photoshop & psAux - Adobe Photoshop
 
 ### Digital Rights Management Metadata {#digital-rights-management-metadata}
@@ -202,4 +196,3 @@ For example, some of the ways you could use metadata-driven workflows:
 
 * The workflow can check whether an image has a title. If it does not, the system notifies a particular user to add a title.
 * The workflow can check whether a copyright notice on an asset allows for distribution. If it does, the system sends the asset to one server. If it does not, the system sends the asset to another server.
-
