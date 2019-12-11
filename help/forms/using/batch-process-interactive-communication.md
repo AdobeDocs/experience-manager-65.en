@@ -6,6 +6,9 @@ seo-description: null
 contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+uid: 
+topic-tags: interactive-communication
+discoiquuid: 
 ---
 
 # Generate multiple interactive communications using Batch API {#use-batch-api-to-generate-multiple-ic}
