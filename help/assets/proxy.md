@@ -1,17 +1,13 @@
 ---
-title: Assets Proxy Development
-seo-title: Assets Proxy Development
+title: Assets proxy development
 description: A proxy is an AEM instance that uses proxy workers to process jobs. Learn how to configure an AEM proxy, supported operations, proxy components, and how to develop a custom proxy worker.
-seo-description: A proxy is an AEM instance that uses proxy workers to process jobs. Learn how to configure an AEM proxy, supported operations, proxy components, and how to develop a custom proxy worker.
 uuid: 72ceb9a5-f88a-48fe-99da-8ec10192320a
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: extending-assets
-content-type: reference
 discoiquuid: 5332f700-0871-4ce3-945d-fc2e7b65d46e
 ---
 
-# Assets Proxy Development {#assets-proxy-development}
+# Assets proxy development {#assets-proxy-development}
 
 Adobe Experience Manager (AEM) Assets uses a proxy to distribute processing for certain tasks.
 

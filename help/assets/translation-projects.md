@@ -1,25 +1,20 @@
 ---
-title: Creating Translation Projects
-seo-title: Creating Translation Projects
+title: Creating translation projects
 description: Learn how to create translation projects in AEM.
-seo-description: Learn how to create translation projects in AEM.
 uuid: 9d360f6b-584f-4bd1-afb9-cd32aa8db0b9
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 914d1248-aa7c-4191-ade2-7cb19e95cd35
+
 ---
 
-# Creating Translation Projects {#creating-translation-projects}
+# Create translation projects {#creating-translation-projects}
 
-To create a language copy, trigger one of the following language copy workflows available under the References rail in the Assets UI:
+To create a language copy, trigger one of the following language copy workflows available under the References rail in the AEM user interface.
 
-**Create and translate**
+* **Create and translate**: In this workflow, assets to be translated are copied to the language root of the language to which you want to translate. In addition, depending upon the options you choose, a translation project is created for the assets in the Projects console. Depending on the settings, the translation project can be started manually or allowed to run automatically as soon as the translation project is created.
 
-In this workflow, assets to be translated are copied to the language root of the language to which you want to translate. In addition, depending upon the options you choose, a translation project is created for the assets in the Projects console. Depending on the settings, the translation project can be started manually or allowed to run automatically as soon as the translation project is created.
-
-**Update language copies**
-
-You run this workflow to translate an additional group of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously-translated assets.
+* **Update language copies**: Run this workflow to translate an additional group of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously-translated assets.
 
 >[!NOTE]
 >
@@ -27,11 +22,11 @@ You run this workflow to translate an additional group of assets and include it 
 
 >[!NOTE]
 >
->If you launch a translation workflow for complex assets, such as PDFs and InDesign files, their subassets or renditions (if any) are not submitted for translation.
+>If you launch a translation workflow for complex assets, such as PDF and InDesign files, their subassets or renditions (if any) are not submitted for translation.
 
 ## Create and translate workflow {#create-and-translate-workflow}
 
-You use the Create and translate workflow to generate language copies for a particular language for the first time. The workflow provides the following options:
+You use the create and translate workflow to generate language copies for a particular language for the first time. The workflow provides the following options:
 
 * Create structure only
 * Create a new translation project
@@ -39,7 +34,7 @@ You use the Create and translate workflow to generate language copies for a part
 
 ### Create structure only {#create-structure-only}
 
-Use the **Create structure only** option to create a target folder hierarchy within the target language root to match the hierarchy of the source folder within the source language root. In this case, source assets are copied to the destination folder. However, no translation project is generated.
+Use the **[!UICONTROL Create structure only]** option to create a target folder hierarchy within the target language root to match the hierarchy of the source folder within the source language root. In this case, source assets are copied to the destination folder. However, no translation project is generated.
 
 1. In the Assets UI, select the source folder for which you want to create a structure in the target language root.
 1. Open the **[!UICONTROL References]** pane and click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**.
@@ -277,11 +272,11 @@ If you use this option, the set of assets are added to an existing translation p
 1. Click/tap **[!UICONTROL Start]**.
 1. See steps 9-14 of [Add to existing translation project](translation-projects.md#add-to-existing-translation-project) to complete the rest of the procedure.
 
-## Creating temporary language copies {#creating-temporary-language-copies}
+## Create temporary language copies {#creating-temporary-language-copies}
 
 When you run a translation workflow to update a language copy with edited versions of original assets, the existing language copy is preserved until you approve the translated asset(s). AEM Assets stores the newly-translated asset(s) at a temporary location and updates the existing language copy after you explicitly approve the asset(s). If you reject the asset(s), the language copy remains unchanged.
 
-1. Click/tap the source root folder under **[!UICONTROL Language Copies]** for which you already created a languag copy, and then click/tap **[!UICONTROL Reveal in Assets]** to open the folder in AEM Assets.
+1. Click/tap the source root folder under **[!UICONTROL Language Copies]** for which you already created a language copy, and then click/tap **[!UICONTROL Reveal in Assets]** to open the folder in AEM Assets.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
