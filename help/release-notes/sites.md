@@ -138,4 +138,4 @@ See [Communities Release Notes page](../release-notes/communities-release-notes.
 * Metered playback in a sequence channel
 * Auto create project structure using a source file e.g. Excel sheet
 
-For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](/help/screens/home.md).
+For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html).
