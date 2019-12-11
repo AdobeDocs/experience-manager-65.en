@@ -1,14 +1,10 @@
 ---
 title: Use Batch API to generate multiple interactive communications 
 seo-title: Use Batch API to generate multiple interactive communications
-description: null
-seo-description: null
 contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-uid: 
 topic-tags: interactive-communication
-discoiquuid: 
 ---
 
 # Generate multiple interactive communications using Batch API {#use-batch-api-to-generate-multiple-ic}
@@ -26,7 +22,7 @@ You can use the below-listed methods to specify input data (records) and batch p
 * Specify input data (records) in JSON file format to produce an interactive communication
 * Use input data (records) saved in an external data source and accessed via a form data model to produce an interactive communication
 
-### Specify input data (records) in JSON file format to produce an interactive communication{#specify-input-data-in-JSON-file-format}
+### Specify input data records in JSON file format to produce an interactive communication{#specify-input-data-in-JSON-file-format}
 
 You combine a record with an interactive communication template to produce an interactive communication. You can create a separate JSON file for each record or create a JSON array to keep all the records in a single file:
 
