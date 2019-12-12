@@ -22,7 +22,7 @@ You can use the below-listed methods to specify input data (records) and batch p
 * Specify input data (records) in JSON file format to produce an interactive communication
 * Use input data (records) saved in an external data source and accessed via a form data model to produce an interactive communication
 
-### Specify input data records in JSON file format to produce an interactive communication{#specify-input-data-in-JSON-file-format}
+### Specify input data records in JSON file format to produce an interactive communication {#specify-input-data-in-JSON-file-format}
 
 You combine a record with an interactive communication template to produce an interactive communication. You can create a separate JSON file for each record or create a JSON array to keep all the records in a single file:
 
@@ -79,7 +79,7 @@ To create interactive communication from records saved in a JSON file:
     1. Specify an **[!UICONTROL Output File Pattern]**. For example, the %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) specifies the Watched Folder can find input files in a sub-folder of the Watched Folder\input folder. 
 1. Configure advanced parameters:
     1. Open the **[!UICONTROL Advanced]** tab and add the following custom properties:
-            <table>
+        <table>
         <tr>
             <th>Property</th>
             <th>Type</th>
@@ -88,7 +88,7 @@ To create interactive communication from records saved in a JSON file:
         <tr>
             <td>templatePath </td>
             <td>String</td>
-            <td>Specify path of the interactive communication template to use. For example, /content/dam/formsanddocuments/testsample/mediumic</td>
+            <td>Specify path of the interactive communication template to use. For example, /content/dam/formsanddocuments/testsample/mediumic </td>
         </tr>
         <tr>
             <td>recordPath</td>
@@ -230,8 +230,9 @@ Apart from saving the data on file system, you store JSON files in CRX-repositor
 * **Prefill Service protocol**
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
-    * SERVICE_NAME refers to the name of the OSGI prefill service. Refer Create and run a prefill service.
-    * IDENTIFIER refers to any metadata required by the OSGI prefill service to fetch the prefill data. An identifier to the logged-in user is an example of metadata that could be used.
+    SERVICE_NAME refers to the name of the OSGI prefill service. Refer Create and run a prefill service.
+
+    IDENTIFIER refers to any metadata required by the OSGI prefill service to fetch the prefill data. An identifier to the logged-in user is an example of metadata that could be used.
 
 * **HTTP protocol**
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
