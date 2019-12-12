@@ -401,7 +401,7 @@ Browse and select asset in the asset picker
 The search capability in AEM Assets has the following limitations:
 
 * Do not enter a leading space in the search query otherwise the search does not work.
-* AEM may continue to show the search term after you select properties of an asset from searched results and then cancel the search (CQ-4273540).
+* AEM may continue to show the search term after you select properties of an asset from searched results and then cancel the search<!--(CQ-4273540)-->.
 * When searching for folders or files and folders, the search results cannot be sorted on any parameter.
 * If you press return without tying anything in Omnisearch bar, AEM returns a list of only files and not folders. If you search specifically for folders without using a keyword, AEM does not return any results.
 
@@ -466,10 +466,6 @@ Use of dash to search for assets not containing an excluded keyword
 ### Search index configurations {#searchindex}
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [search index](/help/assets/performance-tuning-guidelines.md#search-indexes), [oak queries and indexing](/help/sites-deploying/queries-and-indexing.md), and [best practices](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
-
-### Sort on Name column {#sortbyname}
-
-In list view, you can sort the search results just as you can sort assets in any folder. Sorting does not work on the `Name` column by default. To sort by the `Name` column, overlay `/libs/dam/gui/content/commons/availablecolumns` and change the value of sortable to `True`.
 
 ### Visual or similarity search {#configvisualsearch}
 
@@ -600,9 +596,9 @@ Once you see some searched assets that match your criteria, you can do the follo
 
 Sorting search results helps you to discover required asset faster. Sorting search results works in list view and only when you select **[!UICONTROL [Files](#searchui)]** from the **[!UICONTROL Filters]** panel. AEM Assets uses server-side sorting to quickly sort all the assets (howsoever numerous) within a folder or results of a search query. Server-side sorting provides faster and more accurate results than client-side sorting.
 
-In list view, you can sort the search results just as you can sort assets in any folder. Sorting works on these columns -- Title, Status, Dimensions, Size, Rating, Usage, (Date) Modified, (Date) Published, Workflow, and Checked out.
+In list view, you can sort the search results just as you can sort assets in any folder. Sorting works on these columns -- Name, Title, Status, Dimensions, Size, Rating, Usage, (Date) Created, (Date) Modified, (Date) Published, Workflow, and Checked out.
 
-See [configure sorting on Name column](#sortbyname). For limitations of sort functionality, see [limitations](#limitations).
+For limitations of sort functionality, see [limitations](#limitations).
 
 ### Check detailed information of an asset {#checkinfo}
 

@@ -16,7 +16,11 @@ docset: aem65
 
 >[!CAUTION]
 >
->Some functionality on this page requires the application of AEM 6.5.2.0.
+>Some functionality on this page requires the application of AEM 6.5.3.0.
+>
+>6.5.3.0
+>
+>* **Externalizer Domains** can now be selected.
 >
 >6.5.2.0:
 >
@@ -58,10 +62,14 @@ AEM Experience Fragments can be exported to the default workspace in Adobe Targe
 
 ## Prerequisites {#prerequisites}
 
+>[!CAUTION]
+>
+>Some functionality on this page requires the application of AEM 6.5.3.0.
+
 Various actions are required:
 
 1. You have to [integrate AEM with Adobe Target using Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
-1. Experience Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Experience Fragment are externalized for web delivery.
+2. Experience Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Experience Fragment are externalized for web delivery.
 
    >[!NOTE]
    >
@@ -73,6 +81,7 @@ Before exporting a fragment you need to add the **Cloud Configuration** for **Ad
 
 * specify the format option(s) to be used for the export
 * select a Target workspace as destination
+* select an externalizer domain for rewriting references in the Experience Fragment (optional)
 
 The required options can be selected in **Page Properties** of the required folder and/or fragment; the specification will be inherited as necessary.
 
@@ -104,10 +113,15 @@ The required options can be selected in **Page Properties** of the required fold
     * the appropriate configuration
     * the required format option
     * an Adobe Target workspace
+    * if required - the externalizer domain
+
+   >[!CAUTION]
+   >
+   >The externalizer domain is optional. An AEM externalizer is configured when you want the exported content to point to a specific *publish* domain. For more details see [Configuring the AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
 
    For example, for a folder:
 
-   ![Folder Cloud Services](assets/xf-target-integration-01.png "Folder Cloud Services")
+   ![Folder - Cloud Services](assets/xf-target-integration-01.png "Folder - Cloud Services")
 
 1. **Save & Close**.
 
