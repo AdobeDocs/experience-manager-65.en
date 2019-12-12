@@ -399,7 +399,7 @@ Clicking the hotspot opens a dialog which let you choose the size and quantity o
 
 1. Modify and move the shape as required.
 1. Click the shape.
-1. Clicking the browse icon opens the [Asset Picker](/help/assets/search-assets.md#usingassetpicker).
+1. Clicking the browse icon opens the [Asset Picker](/help/assets/search-assets.md#assetselector).
 
    >[!NOTE]
    >
