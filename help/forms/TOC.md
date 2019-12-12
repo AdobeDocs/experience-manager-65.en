@@ -182,7 +182,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Prepare and send Interactive Communication using the Agent UI](using/prepare-send-interactive-communication.md)
   + [Print channel and web channel](using/web-channel-print-channel.md)
   + [Interactive Communications configuration properties](using/interactive-communication-configuration-properties.md)
-  + [Generate multiple interactive communications using Batch API](using/batch-process-interactive-communication.md)
+  + [Generate multiple interactive communications](using/generate-multiple-interactive-communication-using-batch-api.md)
 + Workflows {#workflows}
   + [Forms-centric workflow on OSGi](using/aem-forms-workflow.md)
   + [Forms-centric workflow on OSGi - Step Reference](using/aem-forms-workflow-step-reference.md)
