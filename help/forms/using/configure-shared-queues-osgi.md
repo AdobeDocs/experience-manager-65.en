@@ -12,7 +12,7 @@ docset: aem65
 
 # Share and request access to Inbox items of a user {#share-and-request-access}
 
-A queue is a list of items in AEM Inbox of a user. These can be items assigned to a user or items shared to the group a user is a member of. You can access your Inbox to view and take action on the Inbox item. For example, share an item with another user. 
+A queue is a list of items in AEM Inbox of a user. These can be items assigned to a user or items shared to the group a user is a member of. You can access your Inbox to view and take action on the Inbox item. For example, share an item with another user.     
 
 You can also share your Inbox items with another user. Once another user has access to your Inbox items, the user can claim and take appropriate action on shared items. Similarly, you can request access to Inbox items from other users.
 
