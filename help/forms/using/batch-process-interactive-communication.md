@@ -87,28 +87,28 @@ To create interactive communication from records saved in a JSON file:
         </tr>
         <tr>
             <td>templatePath </td>
-            <td> String</td>
-            <td> Specify path of the interactive communication template to use. For example, /content/dam/formsanddocuments/testsample/mediumic</td>
+            <td>String</td>
+            <td>Specify path of the interactive communication template to use. For example, /content/dam/formsanddocuments/testsample/mediumic</td>
         </tr>
         <tr>
-            <td> recordPath</td>
-            <td> String</td>
-            <td> Value of the recordPath field helps set name of an interactive communication. You can set path of a field of a record as value of the recordPath field. For example, if you specify /employee/Id, the value of id field becomes name for corresponding interactive communication. </td>
+            <td>recordPath</td>
+            <td>String</td>
+            <td>Value of the recordPath field helps set name of an interactive communication. You can set path of a field of a record as value of the recordPath field. For example, if you specify /employee/Id, the value of id field becomes name for corresponding interactive communication. </td>
         </tr>
         <tr>
             <td>usePrefillService </td>
             <td>Boolean </td>
-            <td> Set the value to False. You can use the usePrefillService parameter to prefill interactive communication with data fetched from prefill service configured for corresponding interactive communication.</td>
+            <td>Set the value to False. You can use the usePrefillService parameter to prefill interactive communication with data fetched from prefill service configured for corresponding interactive communication.</td>
         </tr>
         <tr>
             <td>batchType </td>
             <td>String </td>
-            <td> Set value to PRINT, WEB, or WEB_AND_PRINT.</td>
+            <td>Set value to PRINT, WEB, or WEB_AND_PRINT.</td>
         </tr>
         <tr>
-            <td> locale</td>
+            <td>locale</td>
             <td>String </td>
-            <td> Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications.</td>
+            <td>Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications.</td>
         </tr>
         </table>
     1. Tap **[!UICONTROL Create]** The watched folder is created.
@@ -171,29 +171,29 @@ You combine data (records) saved in an external data source with an interactive 
             <th>Description</th>
         </tr>
         <tr>
-            <td>templatePath </td>
-            <td> String</td>
-            <td> Specify path of the interactive communication template to use. For example, /content/dam/formsanddocuments/testsample/mediumic</td>
+            <td>templatePath</td>
+            <td>String</td>
+            <td>Specify path of the interactive communication template to use. For example, /content/dam/formsanddocuments/testsample/mediumic</td>
         </tr>
         <tr>
-            <td> recordPath</td>
-            <td> String</td>
-            <td> Value of the recordPath field helps set name of an interactive communication. You can set path of a field of a record as value of the recordPath field. For example, if you specify /employee/Id, the value of id field becomes name for corresponding interactive communication. </td>
+            <td>recordPath</td>
+            <td>String</td>
+            <td>Value of the recordPath field helps set name of an interactive communication. You can set path of a field of a record as value of the recordPath field. For example, if you specify /employee/Id, the value of id field becomes name for corresponding interactive communication. </td>
         </tr>
         <tr>
-            <td>usePrefillService </td>
-            <td>Boolean </td>
-            <td> Set the value to True. When the value is set to true, the Batch API reads data from the configured Form Data Model and fills it to the interactive communication.</td>
+            <td>usePrefillService</td>
+            <td>Boolean</td>
+            <td>Set the value to True. When the value is set to true, the Batch API reads data from the configured Form Data Model and fills it to the interactive communication.</td>
         </tr>
         <tr>
-            <td>batchType </td>
-            <td>String </td>
-            <td> Set value to PRINT, WEB, or WEB_AND_PRINT.</td>
+            <td>batchType</td>
+            <td>String</td>
+            <td>Set value to PRINT, WEB, or WEB_AND_PRINT.</td>
         </tr>
         <tr>
-            <td> locale</td>
-            <td>String </td>
-            <td> Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications.</td>
+            <td>locale</td>
+            <td>String</td>
+            <td>Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications.</td>
         </tr>
         </table>
     1. Tap **[!UICONTROL Create]** The watched folder is created.
@@ -228,13 +228,13 @@ Apart from saving the data on file system, you store JSON files in CRX-repositor
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`  
 
 * **Prefill Service protocol**
-http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]
+`http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
     * SERVICE_NAME refers to the name of the OSGI prefill service. Refer Create and run a prefill service.
     * IDENTIFIER refers to any metadata required by the OSGI prefill service to fetch the prefill data. An identifier to the logged-in user is an example of metadata that could be used.
 
 * **HTTP protocol**
-http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml 
+`http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
 > Only CRX protocol is enabled by default. To enable other supported protocols, see [Configuring prefill service using Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
