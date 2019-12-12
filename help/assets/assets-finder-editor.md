@@ -136,7 +136,7 @@ To change how search results are viewed:
 
 1. In the Asset Share page that you want to customize, click Search.
 
-![chlimage_1](assets/chlimage_1.bmp)
+![chlimage_1](assets/assetshare3.png)
 
 1. Drag the appropriate lens to the top center of the page. In the Press Center, the lenses are already available. Users press the appropriate lens icon to display search results as desired.
 
@@ -188,7 +188,7 @@ To add predicates:
 
 1. In the Asset Share page that you want to customize, click **Search**.
 
-![assetshare3](assets/assetshare3.bmp)
+![assetshare3](assets/assetshare3.png)
 
 1. Drag the appropriate predicates to the Asset Share page underneath the query builder. Doing so creates the appropriate fields.
 
