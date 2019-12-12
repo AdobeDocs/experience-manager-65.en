@@ -12,9 +12,15 @@ docset: aem65
 
 # Share and request access to Inbox items of a user {#share-and-request-access}
 
-A queue is a list of items in AEM Inbox of a user. These can be items assigned to a user or items shared to the group a user is a member of. You can access your Inbox to view and take action on the Inbox item. For example, share an item with another user.     
+A queue is a list of items in AEM Inbox of a user. These can be items assigned to a user or items shared to the group a user is a member of. You can access your Inbox to view and take action on the Inbox item. For example, share an item with another user.
 
 You can also share your Inbox items with another user. Once another user has access to your Inbox items, the user can claim and take appropriate action on shared items. Similarly, you can request access to Inbox items from other users.
+
+## Pre-requisites {#pre-requistes}
+
+* The logged-in user must be a member of the `workflow-users` group. The user can share items or request access of items: 
+    * only from the users the logged-in user have read permissions on
+    * only from the users who have enabled pubic profile
 
 ## Share a single or all the items of your inbox with another user
 
@@ -32,7 +38,7 @@ Perform the following steps to share all the items in an inbox with another user
 
 >[!NOTE]
 >
-> (For Forms-centric workflow items only) Enable the **Allow assignee to share via Inbox sharing** option of the **Assign task** step in the workflow. Only items which have the aforementioned option enabled are displayed to other users.
+> (For Forms-centric workflow items only) Enable the [**Allow assignee to share via Inbox sharing**](aem-forms-workflow-step-reference.md) option of the **Assign task** step in the workflow. Only items which have the aforementioned option enabled are displayed to other users.
 
 ### Share individual items
 
@@ -46,7 +52,7 @@ Perform the following steps to share an Inbox item with another user:
 
 >[!NOTE]
 >
-> (For Forms-centric workflow items only) Enable the **[!UICONTROL Allow assignee to share explicitly in Inbox]** option of the **Assign task** step in the workflow. Only items which have the aforementioned option enabled are displayed to other users.
+> (For Forms-centric workflow items only) Enable the **[Allow assignee to share explicitly in Inbox]((aem-forms-workflow-step-reference.md))** option of the **Assign task** step in the workflow. Only items which have the aforementioned option enabled are displayed to other users.
 
 ## Request access to Inbox items {#request-access}
 
@@ -55,7 +61,8 @@ You can request access to the Inbox items of another user. Once the access is gr
 1. Log in to your AEM instance. Tap the ![View Selector](assets/bell.svg) icon and tap **[!UICONTROL View All]**.
 1. Tap the ![View Selector](assets/viewlist.svg) or ![View Selector](assets/calendar.svg) icon next to the **[!UICONTROL Create]** button and tap **[!UICONTROL Settings]**. The settings dialog appears.
 1. Enter the name of a user in the **[!UICONTROL Request access to Inbox items of the user]** text box and tap **[!UICONTROL Request]**. A request is sent to the user and the status of the request is displayed against the name of the user. Repeat the step to add more users.
-1. Tap **[!UICONTROL Save]**.
+1. Tap **[!UICONTROL Save]**. The request is sent as an Inbox item to the users. The user can the item and tap Approve or Reject to grant or reject the access.  
+
 
 ## Claim items shared by other users {#claim-items}
 
