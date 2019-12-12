@@ -182,6 +182,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Prepare and send Interactive Communication using the Agent UI](using/prepare-send-interactive-communication.md)
   + [Print channel and web channel](using/web-channel-print-channel.md)
   + [Interactive Communications configuration properties](using/interactive-communication-configuration-properties.md)
+  + [Generate multiple interactive communications](using/generate-multiple-interactive-communication-using-batch-api.md)
 + Workflows {#workflows}
   + [Forms-centric workflow on OSGi](using/aem-forms-workflow.md)
   + [Forms-centric workflow on OSGi - Step Reference](using/aem-forms-workflow-step-reference.md)
@@ -190,6 +191,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Initiate Document Services APIs from AEM Workflow](using/initiating-document-services-apis-aem.md)
   + [Logging in AEM Forms workflows](/help/forms/using/forms-workflow-logs.md)
   + [Variables in AEM workflows](using/variable-in-aem-workflows.md)
+  + [Configure Out of Office](using/configure-out-of-office-settings.md)
 + AEM Forms Workspace {#use-aem-forms-workspace}
   + [Introduction to AEM Forms workspace](using/introduction-html-workspace.md)
   + [Working with AEM Forms workspace](using/html-workspace-overview.md)
