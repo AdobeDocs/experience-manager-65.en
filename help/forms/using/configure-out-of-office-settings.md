@@ -14,7 +14,8 @@ You have the option of specifying a start date and time and an end date and time
 
 You can set a default person to which all of your items are sent. You can also specify exceptions for items from specific processes to be sent to a different user or to remain in your Inbox until you return. If the designated person is also out of the office, the item goes to the user that they have designated. If the item cannot be assigned to a user who is not out of the office, the item remains in your Inbox.
 
-You can segregate item delegation based on the workflow models. For example, an item related to Workflow A is assigned to user and an item related to Workflow B is assigned to user B.
+You can segregate item delegation based on the workflow models. For example, you can assign an item related to Workflow A to user A and assign an item related to Workflow B is assigned to user B.
+
 
 >[!NOTE]
 >
@@ -30,7 +31,7 @@ Perform the following steps to Enable the Out of Office setting for your account
 1. Open the **[!UICONTROL Out of Office]** tab on the settings dialog.
 1. Tap the **[!UICONTROL Enable/Disable]** button to enable the Out of Office setting.
 1. Specify the **[!UICONTROL Start Time]**  and **[!UICONTROL End Time]** for the setting. The items are delegated only during the specified period. Leave the **[!UICONTROL End Time]** field empty to delegate items for an indefinite time period.
-1. Select the **[!UICONTROL Forward my items during this period]** checkbox.
+1. Select the **[!UICONTROL Forward my items during this period]** checkbox. If you do not select the option and not specify 
 1. Tap **[!UICONTROL Add Assignee]**. Specify a user in the **[!UICONTROL Assignee]** field to delegate the items to. Specify the **[!UICONTROL Workflow Model]** to delegate to the specified user. You can select more than one workflow model.
 
     In addition, to assign all the items, irrespective of the workflow model, to a particular user, select **[!UICONTROL All Workflows]** from the Workflow Model drop-down list. <br>
