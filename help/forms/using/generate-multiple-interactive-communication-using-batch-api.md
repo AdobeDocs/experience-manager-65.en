@@ -79,38 +79,15 @@ To create interactive communication from records saved in a JSON file:
     1. Specify an **[!UICONTROL Output File Pattern]**. For example, the %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) specifies the Watched Folder can find input files in a sub-folder of the Watched Folder\input folder. 
 1. Configure advanced parameters:
     1. Open the **[!UICONTROL Advanced]** tab and add the following custom properties:
-        <table>
-        <tr>
-            <th>Property</th>
-            <th>Type</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>templatePath </td>
-            <td>String</td>
-            <td>Specify path of the interactive communication template to use. For example, /content/dam/formsanddocuments/testsample/mediumic </td>
-        </tr>
-        <tr>
-            <td>recordPath</td>
-            <td>String</td>
-            <td>Value of the recordPath field helps set name of an interactive communication. You can set path of a field of a record as value of the recordPath field. For example, if you specify /employee/Id, the value of id field becomes name for corresponding interactive communication. </td>
-        </tr>
-        <tr>
-            <td>usePrefillService </td>
-            <td>Boolean </td>
-            <td>Set the value to False. You can use the usePrefillService parameter to prefill interactive communication with data fetched from prefill service configured for corresponding interactive communication.</td>
-        </tr>
-        <tr>
-            <td>batchType </td>
-            <td>String </td>
-            <td>Set value to PRINT, WEB, or WEB_AND_PRINT.</td>
-        </tr>
-        <tr>
-            <td>locale</td>
-            <td>String </td>
-            <td>Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications.</td>
-        </tr>
-        </table>
+
+        |Property|Type|Description|
+        |--- |--- |--- |
+        |templatePath|String|Specify path of the interactive communication template to use. For example, /content/dam/formsanddocuments/testsample/mediumic|
+        |recordPath|String|Value of the recordPath field helps set name of an interactive communication. You can set path of a field of a record as value of the recordPath field. For example, if you specify /employee/Id, the value of id field becomes name for corresponding interactive communication.|
+        |usePrefillService|Boolean|Set the value to False. You can use the usePrefillService parameter to prefill interactive communication with data fetched from prefill service configured for corresponding interactive communication.|
+        |batchType|String|Set value to PRINT, WEB, or WEB_AND_PRINT.|
+        |locale|String|Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications.|
+
     1. Tap **[!UICONTROL Create]** The watched folder is created.
 1. Use the watched folder to generate interactive communication:
     1. Open the Watched Folder. Navigate to the input folder.
@@ -164,38 +141,15 @@ You combine data (records) saved in an external data source with an interactive 
     1. Specify an **[!UICONTROL Output File Pattern]**. For example, the %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) specifies the Watched Folder can find input files in a sub-folder of the Watched Folder\input folder.  
 1. Configure advanced parameters:
     1. Open the **[!UICONTROL Advanced]** tab and add the following custom properties:
-            <table>
-        <tr>
-            <th>Property</th>
-            <th>Type</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>templatePath</td>
-            <td>String</td>
-            <td>Specify path of the interactive communication template to use. For example, /content/dam/formsanddocuments/testsample/mediumic</td>
-        </tr>
-        <tr>
-            <td>recordPath</td>
-            <td>String</td>
-            <td>Value of the recordPath field helps set name of an interactive communication. You can set path of a field of a record as value of the recordPath field. For example, if you specify /employee/Id, the value of id field becomes name for corresponding interactive communication. </td>
-        </tr>
-        <tr>
-            <td>usePrefillService</td>
-            <td>Boolean</td>
-            <td>Set the value to True. When the value is set to true, the Batch API reads data from the configured Form Data Model and fills it to the interactive communication.</td>
-        </tr>
-        <tr>
-            <td>batchType</td>
-            <td>String</td>
-            <td>Set value to PRINT, WEB, or WEB_AND_PRINT.</td>
-        </tr>
-        <tr>
-            <td>locale</td>
-            <td>String</td>
-            <td>Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications.</td>
-        </tr>
-        </table>
+
+        |Property|Type|Description|
+        |--- |--- |--- |
+        |templatePath|String|Specify path of the interactive communication template to use. For example, /content/dam/formsanddocuments/testsample/mediumic|
+        |recordPath|String|Value of the recordPath field helps set name of an interactive communication. You can set path of a field of a record as value of the recordPath field. For example, if you specify /employee/Id, the value of id field becomes name for corresponding interactive communication.|
+        |usePrefillService|Boolean|Set the value to True. When the value is set to true, the Batch API reads data from the configured Form Data Model and fills it to the interactive communication.|
+        |batchType|String|Set value to PRINT, WEB, or WEB_AND_PRINT.|
+        |locale|String|Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications.|
+
     1. Tap **[!UICONTROL Create]** The watched folder is created.
 1. Use the watched folder to generate interactive communication:
     1. Open the Watched Folder. Navigate to the input folder.
