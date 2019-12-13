@@ -99,7 +99,7 @@ See [AEM Sites - Data Protection and Privacy Readiness.](/help/sites-administeri
 
 ## AEM Commerce {#aem-commerce}
 
-[See AEM Commerce - Data Protection and Privacy Readiness](/help/sites-administering/gdpr-compliance-commerce.md).
+See [AEM Commerce - Data Protection and Privacy Readiness](/help/sites-administering/gdpr-compliance-commerce.md).
 
 ## AEM Mobile {#aem-mobile}
 
@@ -107,7 +107,7 @@ See [AEM Mobile - Data Protection and Privacy Readiness](/help/mobile/aem-mobile
 
 ## AEM Integration with Adobe Target & Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-These Adobe Experience Manager integrations are with data protection and privacy (e.g. GDPR) ready services. No personal data from Adobe Target or Adobe Analytics is stored in AEM in relation to the integrations.
+These Adobe Experience Manager integrations are with data protection and privacy (for example, GDPR or CCPA) ready services. No personal data from Adobe Target or Adobe Analytics is stored in AEM in relation to the integrations.
 For further information see:
 
 * [Adobe Target - Privacy Overview](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/privacy.html)  
@@ -122,7 +122,7 @@ Additionally, AEM Communities offers privacy by design owing to its Bulk Moderat
 
 ## AEM Forms {#aem-forms}
 
-AEM Forms includes components and workflows that capture, process, and store data to orchestrate business processes and complete digital transactions. Different components use different data stores and allow integration with custom data stores as well. The following documentation explains procedures and guidelines for accessing and handling user data to support GDPR workflows for a component.
+AEM Forms includes components and workflows that capture, process, and store data to orchestrate business processes and complete digital transactions. Different components use different data stores and allow integration with custom data stores as well. The following documentation explains procedures and guidelines for accessing and handling user data to support data protection and privacy (for example, GDPR or CCPA) workflows for a component.
 
 * [Forms Portal](/help/forms/using/forms-portal-handling-user-data.md)
 * [Correspondence Management](/help/forms/using/correspondence-management-handling-user-data.md)
