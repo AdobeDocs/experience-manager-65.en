@@ -191,6 +191,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Initiate Document Services APIs from AEM Workflow](using/initiating-document-services-apis-aem.md)
   + [Logging in AEM Forms workflows](/help/forms/using/forms-workflow-logs.md)
   + [Variables in AEM workflows](using/variable-in-aem-workflows.md)
+  + [Share and request access to Inbox items of a user](using/configure-shared-queues-osgi.md)
   + [Configure Out of Office](using/configure-out-of-office-settings.md)
 + AEM Forms Workspace {#use-aem-forms-workspace}
   + [Introduction to AEM Forms workspace](using/introduction-html-workspace.md)
