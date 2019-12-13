@@ -23,7 +23,7 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Tutorial: Create an adaptive form](using/create-adaptive-form.md)
     + [Tutorial: Create form data model](using/create-form-data-model.md)
     + [Tutorial: Apply rules to adaptive form fields l](using/apply-rules-to-adaptive-form-fields.md)
-    + [Tutorial: Style your adpative form](using/style-your-adaptive-form.md)
+    + [Tutorial: Style your adaptive form](using/style-your-adaptive-form.md)
     + [Tutorial: Publish your adaptive form](/help/forms/using/publish-your-adaptive-form.md)
     + [Tutorial: Testing your adaptive form](/help/forms/using/testing-your-adaptive-form.md)
   + Tutorial: Create your First Interactive Communication {#create-first-interactive-communication}
@@ -424,7 +424,7 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Configuring Connector for Microsoft SharePoint](/help/forms/using/admin-help/configuring-connector-microsoft-sharepoint.md)
   + Managing certificates and credentials {#manage-certificates-credentials}
     + [Adding and removing user name and password credentials](/help/forms/using/admin-help/adding-removing-user-name-password.md)
-    + [Managing certificate revocationlists](/help/forms/using/admin-help/certificate-revocation-lists.md)
+    + [Managing certificate revocation lists](/help/forms/using/admin-help/certificate-revocation-lists.md)
     + [Basics of managing certificates and credentials](/help/forms/using/admin-help/overview-2.md)
     + [Managing certificates](/help/forms/using/admin-help/certificates.md)
     + [Managing HSM credentials](/help/forms/using/admin-help/hsm-credentials.md)
@@ -612,13 +612,13 @@ user-guide-title: AEM 6.5 Forms User Guide
       + [Invoking AEM Forms using Remoting](developing/invoking-aem-forms-using-remoting.md)
       + [Invoking AEM Forms using Web Services](developing/invoking-human-centric-long-lived.md)
       + [Invoking AEM Forms using the JavaAPI](developing/invoking-aem-forms-using-java.md)
-      + [Creating Flash Builder applicationsthat perform SSO authentication using HTTP tokens](developing/creating-flash-builder-applications-perform.md)
+      + [Creating Flash Builder applications that perform SSO authentication using HTTP tokens](developing/creating-flash-builder-applications-perform.md)
     + Performing Service Operations using APIs {#performing-service-operations-using-apis}
       + [Performing Service Operations Using APIs](developing/performing-service-operations-using-apis.md)
       + [Rendering Forms](developing/rendering-forms.md)
       + [Assembling PDF Documents](developing/assembling-pdf-documents.md)
       + [Programmatically Assembling PDF Documents](developing/programmatically-assembling-pdf-documents.md)
-      + [Converting Between File Formatsand PDF](developing/converting-file-formats-pdf.md)
+      + [Converting Between File Formats and PDF](developing/converting-file-formats-pdf.md)
       + [Programmatically Disassembling PDF Documents](developing/programmatically-disassembling-pdf-documents.md)
       + [Assembling Encrypted PDF Documents](developing/assembling-encrypted-pdf-documents.md)
       + [Assembling Multiple XDP Fragments](developing/assembling-multiple-xdp-fragments.md)

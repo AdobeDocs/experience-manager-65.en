@@ -16,11 +16,9 @@ A queue is a list of items in AEM Inbox of a user. These can be items assigned t
 
 You can also share your Inbox items with another user. Once another user has access to your Inbox items, the user can claim and take appropriate action on shared items. Similarly, you can request access to Inbox items from other users.
 
-## Pre-requisites {#pre-requistes}
+## Pre-requisites {#pre-requisites}
 
-* The logged-in user must be a member of the `workflow-users` group. The user can share items or request access to items: 
-    * only from the users the logged-in user have read permissions on
-    * only from the users who have enabled pubic profile
+* The logged-in user must be a member of the `workflow-users` group. The user can share items or request access to items only from the users the logged-in user have read permissions on or only from the users who have enabled pubic profile.
 
 ## Share a single or all the items of your inbox with another user
 
