@@ -10,7 +10,7 @@ seo-description: Configure Out of Office settings
 
 If you plan to be out of the office, you can specify what happens to items that are assigned to you for that period.
 
-You have the option of specifying a start date and time and an end date and time for your out-of-office settings to be in effect. If you are located in a different time zone from the server, the time zone used is that of the server.
+You have the option of specifying a start date and time and an end date and time for your out-of-office settings to be in effect. If you are located in a different time zone from the server, the time zone used is that of the client.
 
 You can set a default person to which all of your items are sent. You can also specify exceptions for items from specific processes to be sent to a different user or to remain in your Inbox until you return. If the designated person is also out of the office, the item goes to the user that they have designated. If the item cannot be assigned to a user who is not out of the office, the item remains in your Inbox.
 

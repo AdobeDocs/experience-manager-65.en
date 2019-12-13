@@ -81,3 +81,8 @@ Perform the following steps to release an item:
 
 1. Log in to your AEM instance. Tap the Inbox ![Inbox](assets/bell.svg) icon and tap **[!UICONTROL View All]**. A list of your inbox items appear.
 1. Select the item to release and tap **[!UICONTROL UnClaim]**. The item is added back to the pool. Others can now Claim the item.
+
+## Limitations {#limitations}
+
+* Sharing items with a group is not supported.
+* Sharing project tasks is not supported.
