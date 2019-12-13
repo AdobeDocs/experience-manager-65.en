@@ -18,7 +18,7 @@ You can also share your Inbox items with another user. Once another user has acc
 
 ## Pre-requisites {#pre-requisites}
 
-* The logged-in user must be a member of the `workflow-users` group. The user can share items or request access to items only from the users the logged-in user have read permissions on or only from the users who have enabled pubic profile.
+The logged-in user must be a member of the `workflow-users` group. The user can share items or request access to items only from the users the logged-in user have read permissions on or only from the users who have enabled pubic profile.
 
 ## Share a single or all the items of your inbox with another user
 
