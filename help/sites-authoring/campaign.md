@@ -56,7 +56,7 @@ Detailed instructions are described in this document.
    >
    >[Email samples are only available in Geometrixx](/help/sites-developing/we-retail.md). Please download sample Geometrixx content from Package Share.
 
-   ![chlimage_1-15](assets/chlimage_1-15.png)
+   ![chlimage_1-15](assets/chlimage_1-15a.png)
 
 1. Select **Create** then **Create Page**.
 1. Select one of the available templates specific to which Adobe Campaign you are connecting to, then click **Next**. Three templates are available by default:
@@ -80,11 +80,11 @@ From the **Sites** page:
 
 1. In AEM select the email page and click **View Properties**.
 
-   ![chlimage_1-16](assets/chlimage_1-16.png)
+   ![chlimage_1-16](assets/chlimage_1-16a.png)
 
 1. Select **Edit** and then the **Cloud services** tab and scroll down to the bottom and click the + sign to add a configuration and then select **Adobe Campaign**.
 
-   ![chlimage_1-17](assets/chlimage_1-17.png)
+   ![chlimage_1-17](assets/chlimage_1-17a.png)
 
 1. Select the configuration that matches your Adobe Campaign instance from the drop-down list, then confirm by clicking **Save**.
 1. You can view the template that the email has applied to it by clicking the** Adobe Campaign** tab. If you would like to select another template, you can access that from within the email while editing.
@@ -93,13 +93,13 @@ From the **Sites** page:
 
    Which template you select determines which personalization fields are available from Adobe Campaign.
 
-   ![chlimage_1-18](assets/chlimage_1-18.png)
+   ![chlimage_1-18](assets/chlimage_1-18a.png)
 
 From within the newsletter/email in authoring, you might not be able to select the Adobe Campaign cloud service configuration in **Page Properties** due to a layout issue. You can use the workaround described here:
 
 1. In AEM select the email page and click **Edit**. Click **Open Properties**.
 
-   ![chlimage_1-19](assets/chlimage_1-19.png)
+   ![chlimage_1-19](assets/chlimage_1-19a.png)
 
 1. Select **Cloud services** and click **+** to add a configuration. Select any visible configuration (does not matter which one). Click or tap the **+** sign to add another configuration and then select **Adobe Campaign**.
 
@@ -116,7 +116,7 @@ To edit email content:
 
 1. Open the email and by default you enter Edit mode.
 
-   ![chlimage_1-20](assets/chlimage_1-20.png)
+   ![chlimage_1-20](assets/chlimage_1-20a.png)
 
 1. If you would like to change the subject of the email or add plain text for those users who will not view the email in HTML, select **Email** and add a subject and text. Select the page icon to auto-generate a plain text version from HTML. Click the check mark when finished.
 
@@ -126,19 +126,19 @@ To edit email content:
    >
    >If the personalization fields in properties from within the editor are greyed out, please re-examine your configuration.
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+   ![chlimage_1-21](assets/chlimage_1-21a.png)
 
 1. Open the components panel on left side of screen and select **Adobe Campaign Newsletter** from the drop-down menu to find those components.
 
-   ![chlimage_1-22](assets/chlimage_1-22.png)
+   ![chlimage_1-22](assets/chlimage_1-22a.png)
 
 1. Drag components directly onto the page and edit them accordingly. For example, you can drag a **Text & Personalization (Campaign)** component and add personalized text.
 
-   ![chlimage_1-23](assets/chlimage_1-23.png)
+   ![chlimage_1-23](assets/chlimage_1-23a.png)
 
    See [Adobe Campaign Components](/help/sites-authoring/adobe-campaign-components.md) for a detailed description of each component.
 
-   ![chlimage_1-24](assets/chlimage_1-24.png)
+   ![chlimage_1-24](assets/chlimage_1-24a.png)
 
 ### Inserting personalization {#inserting-personalization}
 
@@ -159,11 +159,11 @@ To insert personalization:
 
 1. Insert a new **Newsletter** &gt; **Text & Personalization (Campaign)** component by dragging it onto the page.
 
-   ![chlimage_1-25](assets/chlimage_1-25.png)
+   ![chlimage_1-25](assets/chlimage_1-25a.png)
 
 1. Open the component by clicking the Pencil icon. The inplace editor opens.
 
-   ![chlimage_1-26](assets/chlimage_1-26.png)
+   ![chlimage_1-26](assets/chlimage_1-26a.png)
 
    >[!NOTE]
    >
@@ -181,7 +181,7 @@ To insert personalization:
 
 1. Insert text by typing. Insert context fields or personalization blocks by clicking the Adobe Campaign components and selecting them. When finished select the checkmark.
 
-   ![chlimage_1-27](assets/chlimage_1-27.png)
+   ![chlimage_1-27](assets/chlimage_1-27a.png)
 
    After inserting context fields or personalization blocks, you can preview your newsletter and test your fields. See [Previewing a Newsletter](#previewing-a-newsletter).
 
@@ -191,7 +191,7 @@ You can preview how the newsletter will look as well as preview the personalizat
 
 1. With the newsletter open, click **Preview** in the upper right corner of AEM. AEM displays how the newsletter looks when users receive it.
 
-   ![chlimage_1-28](assets/chlimage_1-28.png)
+   ![chlimage_1-28](assets/chlimage_1-28a.png)
 
    >[!NOTE]
    >
@@ -199,11 +199,11 @@ You can preview how the newsletter will look as well as preview the personalizat
 
 1. To preview the personalization, open ContextHub by clicking/tapping the corresponding icon in the toolbar. The personalization field tags are now replaced by the seed data of the selected persona. See how the variables adapt when switching personas in ContextHub.
 
-   ![chlimage_1-29](assets/chlimage_1-29.png)
+   ![chlimage_1-29](assets/chlimage_1-29a.png)
 
 1. You can view the seed data coming from Adobe Campaign that is associated with the currently selected persona. To do this, click/tap the Adobe Campaign module in the ContextHub bar. This opens a dialog box displaying all seed data of the current profile. Again, the data adapts when switching to a different persona.
 
-   ![chlimage_1-30](assets/chlimage_1-30.png)
+   ![chlimage_1-30](assets/chlimage_1-30a.png)
 
 ### Approving content in AEM {#approving-content-in-aem}
 
@@ -211,21 +211,21 @@ After the content is finished, you can start the approval process. Go to the **W
 
 This out-of-the-box workflow has two steps: revision then approval, or revision then rejection. Nevertheless, this workflow can be extended and adapted to a more complex process.
 
-![chlimage_1-31](assets/chlimage_1-31.png)
+![chlimage_1-31](assets/chlimage_1-31a.png)
 
 To approve content for Adobe Campaign, apply the workflow by selecting **Workflow** and selecting **Approve for Adobe Campaign** and click **Start Workflow**. Go through the steps and approve the content. You can also reject the contents by selecting **Reject** instead of **Approve** in the last workflow step.
 
-![chlimage_1-32](assets/chlimage_1-32.png)
+![chlimage_1-32](assets/chlimage_1-32a.png)
 
 After content is approved, it appears as approved in Adobe Campaign. The email can then be sent.
 
 In Adobe Campaign Standard:
 
-![chlimage_1-33](assets/chlimage_1-33.png)
+![chlimage_1-33](assets/chlimage_1-33a.png)
 
 In Adobe Campaign Classic:
 
-![chlimage_1-34](assets/chlimage_1-34.png)
+![chlimage_1-34](assets/chlimage_1-34a.png)
 
 >[!NOTE]
 >
@@ -249,7 +249,7 @@ Adobe Campaign Standard allows you to recover and link content created in AEM wi
 
 Doing so lets you deliver the content. You see whether a newsletter is linked to a single delivery by the code that displays on the page.
 
-![chlimage_1-35](assets/chlimage_1-35.png)
+![chlimage_1-35](assets/chlimage_1-35a.png)
 
 >[!NOTE]
 >
@@ -259,11 +259,11 @@ To link a page created in AEM with an email from Adobe Campaign:
 
 1. Create a new email based on an AEM-specific email template. Refer to [Creating emails in Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) for more information.
 
-   ![chlimage_1-36](assets/chlimage_1-36.png)
+   ![chlimage_1-36](assets/chlimage_1-36a.png)
 
 1. Open the **Content** block from the delivery dashboard.
 
-   ![chlimage_1-37](assets/chlimage_1-37.png)
+   ![chlimage_1-37](assets/chlimage_1-37a.png)
 
 1. Select **Link with an Adobe Experience Manager content** in the toolbar to access the list of contents available in AEM.
 
@@ -271,7 +271,7 @@ To link a page created in AEM with an email from Adobe Campaign:
    >
    >If the **Link with an Adobe Experience Manager** option does not appear in the action bar, check that the **Content editing mode** is correctly configured set to **Adobe Experience Manager** in the email properties.
 
-   ![chlimage_1-38](assets/chlimage_1-38.png)
+   ![chlimage_1-38](assets/chlimage_1-38a.png)
 
 1. Select the content you would like to use in your email.
 
@@ -312,7 +312,7 @@ Adobe Campaign allows you to recover and synchronize content created in AEM with
 
 In AEM, if a newsletter is linked to a single delivery, the delivery code displays on the page.
 
-![chlimage_1-39](assets/chlimage_1-39.png)
+![chlimage_1-39](assets/chlimage_1-39a.png)
 
 >[!NOTE]
 >
@@ -326,7 +326,7 @@ To synchronize content created in AEM with a delivery from Adobe Campaign:
 
 1. Create a delivery or add a delivery activity to a campaign workflow by selecting the **Email delivery with AEM content (mailAEMContent)** delivery template.
 
-   ![chlimage_1-40](assets/chlimage_1-40.png)
+   ![chlimage_1-40](assets/chlimage_1-40a.png)
 
 1. Select **Synchronize** in the toolbar to access the list of contents available in AEM.
 
@@ -334,7 +334,7 @@ To synchronize content created in AEM with a delivery from Adobe Campaign:
    >
    >If the **Synchronize** option does not appear in the delivery's toolbar, check that the **Content editing mode** field is correctly configured in **AEM** by selecting **Properties** &gt; **Advanced**.
 
-   ![chlimage_1-41](assets/chlimage_1-41.png)
+   ![chlimage_1-41](assets/chlimage_1-41a.png)
 
 1. Select the content you would like to synchronize with your delivery.
 
@@ -349,7 +349,7 @@ To synchronize content created in AEM with a delivery from Adobe Campaign:
    >
    >By default, the content that is already synchronized with a delivery is hidden. However, you can display it and use it. For example, if you want to use content as a template for several deliveries.
 
-   ![chlimage_1-42](assets/chlimage_1-42.png)
+   ![chlimage_1-42](assets/chlimage_1-42a.png)
 
 1. Specify the other parameters of your delivery (target, etc.)
 1. If necessary, start the delivery approval process in Adobe Campaign. Content approval in AEM is necessary in addition to approvals configured in Adobe Campaign (budget, target, etc.). Content approval in Adobe Campaign is only possible if the content is already approved in AEM.
