@@ -136,7 +136,7 @@ To change how search results are viewed:
 
 1. In the Asset Share page that you want to customize, click Search.
 
-![chlimage_1](assets/chlimage_1.bmp)
+![chlimage_1](assets/assetshare3.png)
 
 1. Drag the appropriate lens to the top center of the page. In the Press Center, the lenses are already available. Users press the appropriate lens icon to display search results as desired.
 
@@ -188,7 +188,7 @@ To add predicates:
 
 1. In the Asset Share page that you want to customize, click **Search**.
 
-![assetshare3](assets/assetshare3.bmp)
+![assetshare3](assets/assetshare3.png)
 
 1. Drag the appropriate predicates to the Asset Share page underneath the query builder. Doing so creates the appropriate fields.
 
@@ -203,7 +203,7 @@ The following predicates are available:
 | **Path Predicate** |Lets users define the path and subfolders, if desired. |
 | **Property Predicate** |The site owner specifies a property to search for, e.g. tiff:ImageLength and the user can then enter a value, e.g. 800. This returns all images that are 800 pixels high. Useful predicate if your property can have arbitrary values.  |
 
-For more information, see the [predicate javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
+For more information, see the [predicate Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
 
 1. To configure the predicate further, double-click it. For example, when you open the Path Predicate, you need to assign the root path.
 

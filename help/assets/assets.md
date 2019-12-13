@@ -19,10 +19,10 @@ The following activities are those that you typically perform as a digital asset
 * [Assets Supported Formats](/help/assets/assets-formats.md)
 * [Integrating AEM Assets with InDesign Server](/help/assets/indesign.md)
 * [Managing Metadata for Digital Assets](/help/assets/metadata.md)
-* [Camera Raw Support](/help/assets/camera-raw.md)
-* [Metadata Schemas](/help/assets/metadata-schemas.md)
-* [Profiles for Processing Metadata, Images, and Videos](/help/assets/processing-profiles.md)
-* [XMP writeback to renditions](/help/assets/xmp-writeback.md)
+* [Camera Raw support](/help/assets/camera-raw.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Profiles to process metadata, images, and videos](/help/assets/processing-profiles.md)
+* [XMP write-back to renditions](/help/assets/xmp-writeback.md)
 * [Watermarking](/help/assets/watermarking.md)
 * [Asset link sharing](/help/assets/link-sharing.md)
 * [Best Practices for Assets](/help/assets/best-practices-for-assets.md)
@@ -45,7 +45,7 @@ Assets provides enterprise-wide sharing and distribution of an organization’s 
 Completely integrated into AEM, AEM Assets lets you do the following:
 
 * Add and share images, documents, audio files, and video files in a variety of file formats.
-* Manage assets by grouping them by tags, lightboxes, or stars (your favorites). Add annotations to assets.
+* Manage assets by grouping them by tags, lightbox, or stars (your favorites). Add annotations to assets.
 * Find assets by searching file names, the full text of documents, and by searching dates, document type, and tags.
 * Add or edit metadata information for assets. Metadata is automatically versioned together with the corresponding asset. You can import or export asset metadata.
 * Perform image editing functions such as scaling and adding image filters. Import and export multiple digital assets simultaneously using a WebDAV or CIFS folder.
@@ -67,14 +67,14 @@ Assets managed within CQ DAM can then be accessed via the content finder of WCM:
 
 ### Digital Asset Management versus Image Component {#digital-asset-management-versus-image-component}
 
-When determining whether to put an image into AEM Assets or use CQ's image component, consider the image lifecycle:
+When determining whether to put an image into AEM Assets or use AEM Image component, consider the image lifecycle:
 
 * If the image has the same lifecycle as the page, use the Image Component.
 * If the image has a separate life cycle, for example, if you use the image twice or outside WCM, use AEM Assets.
 
 ## What are Digital Assets? {#what-are-digital-assets}
 
-An asset is a digital document, image, video, or audio (or part thereof) that can have multiple renditions and can have sub-assets (for example, layers in a photoshop file, slides in a Powerpoint file, pages in a pdf, files in a ZIP).
+An asset is a digital document, image, video, or audio (or part thereof) that can have multiple renditions and can have sub-assets (for example, layers in a photoshop file, slides in a PowerPoint file, pages in a pdf, files in a ZIP).
 
 An asset is essentially a binary plus metadata plus renditions plus sub-assets. See the [DAM Performance Guide](/help/sites-deploying/assets-performance-sizing.md) for detailed information.
 
@@ -104,9 +104,9 @@ When working with digital assets in AEM, you need to understand the following te
 
 ### How to Work With Assets {#how-to-work-with-assets}
 
-You perform an action on an asset or collection. Actions can create or modify assets, collections, and renditions. Many of the basic actions you perform on assets - upload, delete, update, save sub-assets - trigger preconfigured workflows. These are automatically turned on in AEM Assets and are described in detail in AEM Assets media handlers.
+You perform an action on an asset or collection. Actions can create or modify assets, collections, and renditions. Many of the basic actions you perform on assets - upload, delete, update, save sub-assets - trigger pre-configured workflows. These are automatically turned on in AEM Assets and are described in detail in AEM Assets media handlers.
 
-The tasks you can perform with these preconfigured workflows:
+The tasks you can perform with these pre-configured workflows:
 
 * save the asset in, or delete the asset from, the repository.
 * extract, and save, metadata for the asset; the individual metadata items are saved as XMP.
@@ -115,6 +115,6 @@ The tasks you can perform with these preconfigured workflows:
 
 Of course, you can apply workflows manually as well. See [AEM Assets Media Handlers](/help/assets/media-handlers.md)for a list of default workflows.
 
-## CQ DAM vs. CQ MediaLibrary {#cq-dam-vs-cq-medialibrary}
+## AEM Assets vs. MediaLibrary {#cq-dam-vs-cq-medialibrary}
 
-See [CQ DAM and the CQ MediaLibrary](/help/assets/medialibrary.md) for information on the differences.
+See [AEM Assets vs. MediaLibrary](/help/assets/medialibrary.md) for information on the differences.

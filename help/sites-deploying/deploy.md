@@ -54,7 +54,7 @@ Once you have familiarized yourself with these basics, you will find in more adv
 * [Performance Guidelines](/help/sites-deploying/performance-guidelines.md)
 * [Getting Started with AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Maintenance Release Vehicle Definitions](/help/sites-deploying/maintenance-release-vehicle-definitions.md)
-* [What is AEM Screens?](/help/screens/aem-screens-introduction.md)
+* [What is AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## Basic Concepts {#basic-concepts}
 
@@ -316,5 +316,5 @@ The above section should give you a good understanding of the basics of AEM inst
 * [Performance Guidelines](/help/sites-deploying/performance-guidelines.md)
 * [Getting Started with AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Maintenance Release Vehicle Definitions](/help/sites-deploying/maintenance-release-vehicle-definitions.md)
-* [What is AEM Screens?](/help/screens/aem-screens-introduction.md)
+* [What is AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 

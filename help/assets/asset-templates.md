@@ -19,9 +19,9 @@ The flexibility to make limited edits while securing global signage makes asset 
 
 As a marketer, you can store and manage templates within AEM Assets and use a single base template to create multiple personalized print experiences with ease. You can create various types of marketing collateral, including brochures, flyers, postcards, business cards, and so on to lucidly convey your marketing message to customers. You can also assemble multi-page print outputs from existing or new print outputs. Above all, you can simultaneously deliver both digital and print experiences with ease to provide a consistent, integrated experience for users.
 
-While asset templates are mostly InDesign files, proficiency in InDesign is not a barrier to creating stellar artifacts. You need not map the fields of your InDesign template with your product fields that you otherwise require to when creating catalogs. You can edit the templates in WYSIWYG mode directly on the web interface. However, for InDesign to process your editing changes, you must first configure AEM Assets to integrate with InDesign server.
+While asset templates are mostly Adobe InDesign files, proficiency in Adobe InDesign is not a barrier to creating stellar artifacts. You need not map the fields of your Adobe InDesign template with your product fields that you otherwise require to when creating catalogs. You can edit the templates in WYSIWYG mode directly on the web interface. However, for Adobe InDesign to process your editing changes, you must first configure AEM Assets to integrate with Adobe InDesign server.
 
-The ability to edit InDesign templates from the web interface helps foster greater collaboration between Creative and Marketing personnel, while reducing the time to market for local promotion initiatives.
+The ability to edit Adobe InDesign templates from the web interface helps foster greater collaboration between Creative and Marketing personnel, while reducing the time to market for local promotion initiatives.
 
 You can do the following with asset templates:
 
@@ -139,7 +139,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
    >
    >The Preview and Done icons are enabled only when the editable image fields within the collateral do not have any missing icons. If there are missing icons in your collateral, it is because AEM is unable to resolve the images in the InDesign template. Usually, AEM is unable to resolve images in the following cases:
    >
-   >    * Images are not embeded in the underlying InDesign template
+   >    * Images are not embedded in the underlying InDesign template
    >    * Images are linked from the local file system
    >
    >To enable AEM to resolve images, do the following:
@@ -154,7 +154,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
-1. Click/tap the PDF rendition from the list of renditions to downloadthePDF file. Open the PDF file to review the collateral.
+1. Click/tap the PDF rendition from the list of renditions to download the PDF file. Open the PDF file to review the collateral.
 
    ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -174,7 +174,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
 
-   You can even search for templates from the OmniSearch box.
+   You can even search for templates from the Omnisearch box.
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
 

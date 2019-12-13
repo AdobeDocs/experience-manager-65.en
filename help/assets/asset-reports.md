@@ -66,7 +66,7 @@ AEM administrators can easily generate and customize these reports for your impl
    >
    >If you choose to schedule the report later, ensure that you specify the date and time in the Date and Time fields. If you do not specify any value, the report engine treats it as a report that is to be generated instantly.
 
-   Configuration fields may differ based on the type of report you create. For example, the **[!UICONTROL Disk Usage]** report provides options to include asset renditions when calculating the disk space used by assets. You can choose to include or exclude assets in subfolders for disk usage calculation.
+   Configuration fields may differ based on the type of report you create. For example, the **[!UICONTROL Disk Usage]** report provides options to include asset renditions when calculating the disk space used by assets. You can choose to include or exclude assets in sub-folders for disk usage calculation.
 
    >[!NOTE]
    >
@@ -74,13 +74,13 @@ AEM administrators can easily generate and customize these reports for your impl
 
    ![disk_usage_configuration](assets/disk_usage_configuration.png)
 
-   When you create the **[!UICONTROL Files]** report, you can include/exclude subfolders. However, you cannot include asset renditions for this report.
+   When you create the **[!UICONTROL Files]** report, you can include/exclude sub-folders. However, you cannot include asset renditions for this report.
 
    ![files_report](assets/files_report.png)
 
    The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within AEM Assets. It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. The columns are not customizable.
 
-   The **[!UICONTROL Link Share]** report, does not include options for subfolders and renditions because it merely publishes the shared URLs that appear under */var/dam/share*.
+   The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
    ![link_share](assets/link_share.png)
 

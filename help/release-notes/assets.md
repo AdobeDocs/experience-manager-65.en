@@ -91,7 +91,7 @@ Dynamic Media viewers now include support for enhanced accessibility features li
 
 AEM 6.5 onwards, marketers can discover the desired assets faster from the search results page. The search facets are updated with the number of assets even before applying the search filter. Seeing the expected count against the filter helps users navigate through the search results efficiently. For more information, see [Search assets in AEM](/help/assets/search-assets.md).
 
-![See the number of assets without filtering search results in search facets](assets/asset_search_results_in_facets_filters.png)
+![See the number of assets without filtering search results in search facets](/help/assets/assets/asset_search_results_in_facets_filters.png)
 
 See the number of assets without filtering search results in search facets.
 
