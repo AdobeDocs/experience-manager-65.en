@@ -11,7 +11,7 @@ topic-tags: interactive-communication
 
 You can use the Batch API to produce multiple interactive communications from a template. The template is an interactive communication without any data. The Batch API combines data with a template to produce an interactive communication. The API is useful in the mass production of interactive communications. For example, telephone bills, credit card statements for multiple customers.
 
-The Batch API accepts records (data) in JSON format and from a Form Data Model and produces interactive communications. The number of produced interactive communications is equal to the records specified in the input JSON file in the configured Form Data Model. You can use the API to produce both Print and Web output. The PRINT option produces a PDF document and the WEB option produces data in JSON format for each individual record. Data produced in JSON format is used to generate Web output for an interactive communication. You can also use the WEB_AND_PRINT option to generate both Web and Print outputs. The number of interactive communications produced doubles when the WEB_AND_PRINT option is used.
+The Batch API accepts records (data) in JSON format and from a Form Data Model and produces interactive communications. The number of produced interactive communications is equal to the records specified in the input JSON file in the configured Form Data Model. You can use the API to produce both Print and Web output. The PRINT option produces a PDF document and the WEB option produces data in JSON format for each individual record.
 
 ## Using the Batch API {#using-the-batch-api}
 
@@ -70,7 +70,7 @@ You combine a record with an interactive communication template to produce an in
 
 To create interactive communication from records saved in a JSON file:
 
-1. Create a Watch folder and configure it to use the Batch API:
+1. Create a [Watched folder](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) and configure it to use the Batch API:
     1. Log in to AEM Forms author instance.
     1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tap **[!UICONTROL New]**.
     1. Specify the **[!UICONTROL Name]** and physical **[!UICONTROL Path]** of the folder. For example, `c:\batchprocessing`.
@@ -79,14 +79,15 @@ To create interactive communication from records saved in a JSON file:
     1. Specify an **[!UICONTROL Output File Pattern]**. For example, the %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) specifies the Watched Folder can find input files in a sub-folder of the Watched Folder\input folder. 
 1. Configure advanced parameters:
     1. Open the **[!UICONTROL Advanced]** tab and add the following custom properties:
+    
 
         |Property|Type|Description|
         |--- |--- |--- |
         |templatePath|String|Specify path of the interactive communication template to use. For example, /content/dam/formsanddocuments/testsample/mediumic|
         |recordPath|String|Value of the recordPath field helps set name of an interactive communication. You can set path of a field of a record as value of the recordPath field. For example, if you specify /employee/Id, the value of id field becomes name for corresponding interactive communication.|
-        |usePrefillService|Boolean|Set the value to False. You can use the usePrefillService parameter to prefill interactive communication with data fetched from prefill service configured for corresponding interactive communication.|
-        |batchType|String|Set value to PRINT, WEB, or WEB_AND_PRINT.|
-        |locale|String|Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications.|
+        |usePrefillService|Boolean|Set the value to False. You can use the usePrefillService parameter to prefill interactive communication with data fetched from prefill service configured for corresponding interactive communication. When usePrefillService is set to true, input JSON data (for each record) is treated as FDM Arguments. The default value is false.|
+        |batchType|String|Set value to PRINT, WEB, or WEB_AND_PRINT. The default value is WEB_AND_PRINT.|
+        |locale|String|Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications. The default value is en_US|
 
     1. Tap **[!UICONTROL Create]** The watched folder is created.
 1. Use the watched folder to generate interactive communication:
@@ -132,7 +133,7 @@ You combine data (records) saved in an external data source with an interactive 
 
     1. Save and close the file.
 
-1. Create a Watch folder and configure it to use the Batch API service:
+1. Create a [Watched folder](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) and configure it to use the Batch API service:
     1. Log in to AEM Forms author instance.
     1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tap **[!UICONTROL New]**.
     1. Specify the **[!UICONTROL Name]** and physical **[!UICONTROL Path]** of the folder. For example, `c:\batchprocessing`.
@@ -146,9 +147,9 @@ You combine data (records) saved in an external data source with an interactive 
         |--- |--- |--- |
         |templatePath|String|Specify path of the interactive communication template to use. For example, /content/dam/formsanddocuments/testsample/mediumic|
         |recordPath|String|Value of the recordPath field helps set name of an interactive communication. You can set path of a field of a record as value of the recordPath field. For example, if you specify /employee/Id, the value of id field becomes name for corresponding interactive communication.|
-        |usePrefillService|Boolean|Set the value to True. When the value is set to true, the Batch API reads data from the configured Form Data Model and fills it to the interactive communication.|
-        |batchType|String|Set value to PRINT, WEB, or WEB_AND_PRINT.|
-        |locale|String|Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications.|
+        |usePrefillService|Boolean|Set the value to True. The default value is false.  When the value is set to true, the Batch API reads data from the configured Form Data Model and fills it to the interactive communication. When usePrefillService is set to true, input JSON data (for each record) is treated as FDM Arguments.|
+        |batchType|String|Set value to PRINT, WEB, or WEB_AND_PRINT. The default value is WEB_AND_PRINT.|
+        |locale|String|Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications. The default value is en_US.|
 
     1. Tap **[!UICONTROL Create]** The watched folder is created.
 1. Use the watched folder to generate interactive communication:
@@ -162,7 +163,7 @@ You combine data (records) saved in an external data source with an interactive 
 
 ## Pre-fill a web template {#web-template}
 
-When you set the batchType to WEB for the Batch API, the API generates a JSON file for every data record. You can use the following syntax to merge the JSON file with corresponding Web Channel to generate an interactive communication: 
+When you set the batchType to render the Web Channel, the API generates a JSON file for every data record. You can use the following syntax to merge the JSON file with corresponding Web Channel to generate an interactive communication: 
 
 **Syntax**
 `http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>` 
