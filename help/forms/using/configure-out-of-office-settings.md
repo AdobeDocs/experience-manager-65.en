@@ -31,7 +31,7 @@ Perform the following steps to Enable the Out of Office setting for your account
 1. Open the **[!UICONTROL Out of Office]** tab on the settings dialog.
 1. Tap the **[!UICONTROL Enable/Disable]** button to enable the Out of Office setting.
 1. Specify the **[!UICONTROL Start Time]**  and **[!UICONTROL End Time]** for the setting. The items are delegated only during the specified period. Leave the **[!UICONTROL End Time]** field empty to delegate items for an indefinite time period.
-1. Select the **[!UICONTROL Forward my items during this period]** checkbox. If you do not select the option and not specify 
+1. Select the **[!UICONTROL Forward my items during this period]** checkbox. If you do not select the option and not specify an assignee, your items are not forward to any user. Although, you are away and the setting is enabled, the items remain in your Inbox.  
 1. Tap **[!UICONTROL Add Assignee]**. Specify a user in the **[!UICONTROL Assignee]** field to delegate the items to. Specify the **[!UICONTROL Workflow Model]** to delegate to the specified user. You can select more than one workflow model.
 
     In addition, to assign all the items, irrespective of the workflow model, to a particular user, select **[!UICONTROL All Workflows]** from the Workflow Model drop-down list. <br>
