@@ -56,7 +56,7 @@ Goals:
 * Create submit action to send an email containing form content
 * Preview and submit an adaptive form
 
-[ ![](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
+[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
 
 ## Step 2: Create Form Data Model {#step-create-form-data-model}
 
@@ -72,7 +72,7 @@ Goals:
 * Configure read and write services for the form data model
 * Test form data model and configured services with test data
 
-[ ![](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
+[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## Step 3: Apply rules to adaptive form fields {#step-apply-rules-to-adaptive-form-fields}
 
@@ -85,7 +85,7 @@ Goals:
 * Create and apply rules to adaptive form fields
 * Use rules to trigger form data model services to update data to database
 
-[ ![](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
+[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## Step 4: Style your adaptive form {#step-style-your-adaptive-form}
 
@@ -99,7 +99,7 @@ Goals:
 * Create a theme for adaptive form using the theme editor
 * Use web fonts in a custom theme
 
-[ ![](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
 ## Step 5: Test your adaptive form {#step-test-your-adaptive-form}
 
@@ -113,7 +113,7 @@ Goals:
 * Create test cases for the adaptive forms
 * Run the test cases
 
-[ ![](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](testing-your-adaptive-form.md)
+[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](testing-your-adaptive-form.md)
 
 ## Step 6: Publish your adaptive form {#step-publish-your-adaptive-form}
 
@@ -127,4 +127,4 @@ Goals:
 * Embed the adaptive form in an AEM Sites Page
 * Embed the adaptive form in an external webpage (a non-AEM webpage hosted outside AEM)
 
-[ ![](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)
+[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)
