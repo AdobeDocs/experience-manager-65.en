@@ -1,8 +1,8 @@
 ---
 title: Previewing Assets
 seo-title: Previewing Assets
-description: Learn how to preview assets in dynamic media
-seo-description: Learn how to preview assets in dynamic media
+description: Learn how to preview assets in Dynamic Media
+seo-description: Learn how to preview assets in Dynamic Media
 uuid: 09e97245-373b-4d50-8ba3-5d1034a29988
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -15,7 +15,7 @@ docset: aem65
 
 # Previewing assets{#previewing-assets}
 
-You can use Preview to see how a digital asset looks when it is viewed by a customer in their own web browser. The default embedded, cross-device viewer that is assigned to the asset is used for the Preview.
+You can use Preview to see how a digital asset that you have uploaded looks when it is viewed by a customer in their own web browser. The default embedded, cross-device viewer that is assigned to the asset is used for the Preview.
 
 A viewer is a collection of various settings or "presets," such as the viewer display size, zoom behavior, color schemes, borders, fonts, and so forth, that determine how users view rich-media assets on their computer screens and mobile devices.
 
@@ -119,4 +119,3 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       </tr>
     </tbody>
     </table>
-

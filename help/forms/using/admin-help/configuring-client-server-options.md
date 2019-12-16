@@ -740,11 +740,6 @@ You can make the following changes using the configuration file:
 1. Click Browse to go to the configuration file and then click Import. You cannot type the path directly in the File Name box.
 1. Click OK.
 
-1.
-1.
-1.
-1.
-
 ### Specify a timeout period for offline synchronization {#specify-a-timeout-period-for-offline-synchronization}
 
 Document security enables users to open and use protected document when they are not connected to the document security server. The user’s client application must regularly synchronize with the server to keep documents valid for offline use. The first time users open a protected document, they are asked whether their computer should be authorized to perform periodic client synchronization.

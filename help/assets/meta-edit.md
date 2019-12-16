@@ -1,21 +1,20 @@
 ---
 title: How to edit or add metadata
-seo-title: How to edit or add metadata
 description: Learn about asset metadata in AEM Assets an various ways by which you can edit asset metadata.
-seo-description: Learn about asset metadata in AEM Assets an various ways by which you can edit asset metadata.
 uuid: 37b19dab-17cc-487e-a3fc-0098400a2ad8
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 7d731038-13a3-4ff9-b9f0-ec0c54b94c73
+
 ---
 
 # How to edit or add metadata {#how-to-edit-or-add-metadata}
 
 Metadata is additional information about the asset that can be searched. It is automatically extracted when you upload an image. You can edit the existing metadata or add new metadata properties to existing fields (for example, when a metadata field is blank).
 
-Because companies need controlled and reliable metadata vocabularies, AEM Assets does not allow for adhoc adding of new metadata properties. Although authors cannot add new metadata fields for assets, developers can. See [Creating New Metadata Property for Assets](meta-edit.md#editing-metadata-schema).
+Because companies need controlled and reliable metadata vocabularies, AEM Assets does not allow for ad-hoc adding of new metadata properties. Although authors cannot add new metadata fields for assets, developers can. See [Create new metadata property for assets](meta-edit.md#editing-metadata-schema).
 
-## Editing metadata for an asset {#editing-metadata-for-an-asset}
+## Edit metadata for an asset {#editing-metadata-for-an-asset}
 
 To edit metadata:
 
@@ -35,19 +34,19 @@ To edit metadata:
    >
    >If a text field is empty, there is no existing metadata set. You can enter a value into the field and save it to add that metadata property.
 
-Any changes to the metadata of an asset are written back to the original binary as part of its XMP data. This is done via AEM's Metadata write-back workflow. Changes made to the existing properties (such as `dc:title`) are overwritten and newly created properties (including custom properties like `cq:tags`) are added together with the schema.
+Any changes to the metadata of an asset are written back to the original binary as part of its XMP data. This is done via AEM metadata write-back workflow. Changes made to the existing properties (such as `dc:title`) are overwritten and newly created properties (including custom properties like `cq:tags`) are added together with the schema.
 
-XMP write-back is supported and enabled for the platforms and file formats described in [Technical Requirements.](/help/sites-deploying/technical-requirements.md)
+XMP write-back is supported and enabled for the platforms and file formats described in [technical requirements.](/help/sites-deploying/technical-requirements.md)
 
-## Editing Metadata Schema {#editing-metadata-schema}
+## Edit metadata schema {#editing-metadata-schema}
 
-For details on how to edit metadata schema, see [Editing metadata schema forms](metadata-schemas.md#editing-metadata-schema-forms).
+For details on how to edit metadata schema, see [Edit metadata schema forms](metadata-schemas.md#edit-metadata-schema-forms).
 
-## Registering a custom namespace within AEM {#registering-a-custom-namespace-within-aem}
+## Register a custom namespace within AEM {#registering-a-custom-namespace-within-aem}
 
 You can add your own namespaces within AEM. Just as there are predefined namespaces such as cq, jcr and sling, you can have a namespace for your repository metadata and xml processing.
 
-1. Go to the node type administration page *https://&lt;host&gt;:&lt;port&gt;/crx/explorer/nodetypes/index.jsp*.
+1. Go to the node type administration page `https:[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
 1. Click or tap **[!UICONTROL Namespaces]** at the top of the page. The namespace administration page is displayed in a window.
 
 1. To add a namespace, click or tap **[!UICONTROL New]** at the bottom.

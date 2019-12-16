@@ -13,6 +13,10 @@ discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 
 # AEM Sites - GDPR Readiness{#aem-sites-gdpr-readiness}
 
+>[!IMPORTANT]
+>
+>GDPR is used as an example in the sections below, but the details covered are applicable to all data protection and privacy regulations; such as GDPR, CCPA etc.
+
 The European Union's General Data Protection Regulation on data privacy rights takes effect as of May 2018.
 
 AEM Sites is ready to help customers with their GDPR compliance obligations. This page guides customers through the procedures to handle GDPR requests in AEM Sites. It describes the location of private data stored, and how to remove them manually or with code.

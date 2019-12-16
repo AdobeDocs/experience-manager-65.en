@@ -72,4 +72,3 @@ This process is invoked when an applicant submits a loan form. The process is no
 >[!NOTE]
 >
 >This process can be created by following the tutorial specified in [Creating Your First AEM Forms Application](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63).
-

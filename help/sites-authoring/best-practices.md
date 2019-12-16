@@ -31,7 +31,7 @@ Specific documents are described and linked to in the tables that follow.
 
 ## Assets {#assets}
 
-Best practices around Assets, including the dynamic media capability and Scene 7 integration, are described in the following topics:
+Best practices around Assets, including the Dynamic Media capability and Dynamic Media Classic integration, are described in the following topics:
 
 <table>
  <tbody>

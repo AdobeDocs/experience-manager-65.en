@@ -31,7 +31,7 @@ You can use one of the following methods to create repeatable panels:
 
 1. The parent of the panel, which is to be repeated, should contain add and delete buttons to manage instances of the repeatable panels. Perform the following steps to insert buttons to the parent and enable scripts on the buttons:
 
-    1. From the sidebar, drag-and-drop a button component to the parent of the panel**. **Select the component and tap ![edit-rules](assets/edit-rules.png). The rules of the button open in the rule editor.
+    1. From the sidebar, drag-and-drop a button component to the parent of the panel. Select the component and tap ![edit-rules](assets/edit-rules.png). The rules of the button open in the rule editor.
     1. In the Rule Editor window, click **Create**.
 
        Select **Visual Editor** in the Form Objects and Functions row.
@@ -92,7 +92,7 @@ You can use one of the following methods to create repeatable panels:
 A panel has various layouts options. The Layout for accordian design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordian design option:
 
 1. On the parent of panel to be repeated, tap ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
-1. On a panel, which is to be repeated, tap ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum **and **Minimum** fields.
+1. On a panel, which is to be repeated, tap ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
 
    Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
 

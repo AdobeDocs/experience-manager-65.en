@@ -66,7 +66,7 @@ The example creates a workflow model a mortgage application to be filled by a fr
 1. Open the Workflow Models console. The default URL is https://[Server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models
 1. Select **Create**, then **Create Model**. The Add Workflow Model dialog appears.
 1. Enter the **Title** and **Name** (optional). For example, a mortgage application. Tap **Done**.
-1. Select the newly created workflow model and tap **Edit. **Now, you can add workflow steps to build business logic. When you first create a workflow model, it contains:
+1. Select the newly created workflow model and tap **Edit**. Now, you can add workflow steps to build business logic. When you first create a workflow model, it contains:
 
     * The steps: Flow Start and Flow End. These steps represent the beginning and end of the workflow. These steps are required and cannot be edited or removed.
     * An example Participant step named Step 1. This step is configured to assign a work item to the admin user. Remove this step.
@@ -89,7 +89,7 @@ The example creates a workflow model a mortgage application to be filled by a fr
 
    ![workflow-editor](assets/workflow-editor.png)
 
-   For the mortgage application example**,** configure the assign task step to use a Read-only adaptive form and display PDF Document once the task is complete. Also, select to user group allowed to approve the loan request. On the **Actions **tab, disable the **Submit **option. Create an **actionTaken** variable of String data type and specify the variable as the **Route Variable**. For example, actionTaken. Also, add the Approve and Reject routes. The routes are displayed as separate actions (buttons) in AEM Inbox. The workflow selects a branch based on the action (button) a user taps.
+   For the mortgage application example, configure the assign task step to use a Read-only adaptive form and display PDF Document once the task is complete. Also, select to user group allowed to approve the loan request. On the **Actions** tab, disable the **Submit** option. Create an **actionTaken** variable of String data type and specify the variable as the **Route Variable**. For example, actionTaken. Also, add the Approve and Reject routes. The routes are displayed as separate actions (buttons) in AEM Inbox. The workflow selects a branch based on the action (button) a user taps.
 
    You can import the example package, available for download in the starting of the section, for the complete set of values of all the fields of the assign task step configured for example mortgage application.
 
@@ -101,13 +101,13 @@ The example creates a workflow model a mortgage application to be filled by a fr
 
    **Routing expression for Branch 1**
 
-   When a user taps **Approve **in AEM Inbox, Branch 1 is activated.
+   When a user taps **Approve** in AEM Inbox, Branch 1 is activated.
 
    ![OR Split example](assets/orsplit_branch1_active_new.png)
 
    **Routing expression for Branch 2**
 
-   When a user taps **Reject **in AEM Inbox, Branch 2 is activated.
+   When a user taps **Reject** in AEM Inbox, Branch 2 is activated.
 
    ![OR Split example](assets/orsplit_branch2_active_new.png)
 
@@ -131,7 +131,7 @@ The application is the adaptive form associated with the workflow. When an appli
 >
 >You must be a member of the fd-administrator group to be able to create and manage workflow applications.
 
-1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) **> **[!UICONTROL Forms]**> **[!UICONTROL Manage Workflow Application]** and taps **[!UICONTROL Create]**.
+1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]**> **[!UICONTROL Manage Workflow Application]** and taps **[!UICONTROL Create]**.
 1. In the Create Workflow Application window, provide inputs for the following fields, and taps **Create**. A new application is created and is listed in the Workflow Applications screen.
 
 <table>
@@ -265,7 +265,7 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 
 1. Go to AEM configuration manager at https://[server]:[port]/system/console/configMgr.
 1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
-1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]**field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
+1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
 ### Purge workflow instances {#purge-workflow-instances}
 

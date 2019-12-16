@@ -4,7 +4,7 @@ seo-title: Video
 description: Learn about the centralized video asset management AEM Assets where you can upload videos for auto-encoding to Dynamic Media Classic and access Dynamic Media Classic videos directly from AEM Assets. Dynamic Media Classic video integration extends the reach of optimized video to all screens.
 seo-description: Learn about the centralized video asset management AEM Assets where you can upload videos for auto-encoding to Dynamic Media Classic and access Dynamic Media Classic videos directly from AEM Assets. Dynamic Media Classic video integration extends the reach of optimized video to all screens.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
-contentOwner: rbrough
+contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference

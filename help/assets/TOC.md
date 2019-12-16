@@ -16,6 +16,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Search assets in AEM](search-assets.md)
     + [Multilingual assets](multilingual-assets.md)
     + [Use Adobe Stock assets in AEM Assets](aem-assets-adobe-stock.md)
+    + [Previewing 3D assets](previewing-3d-assets.md)
     + [Review folder assets and collections](bulk-approval.md)
     + [Activity stream in timeline](activity-stream.md)
     + [Applying Workflows to Assets](assets-workflow.md)

@@ -135,7 +135,7 @@ The following is the list of resources that have already been created in this tu
 1. Tap the Chart component and select ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure). The chart properties display in the left pane:
 
     1. Specify a name for the chart.
-    1. Select **Pie** from the **Chart Type **drop-down list.
+    1. Select **Pie** from the **Chart Type** drop-down list.
 
     1. Select the **calltype** property from the **calls** data model object type in the **X-axis** section. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png).
 
@@ -145,7 +145,7 @@ The following is the list of resources that have already been created in this tu
 
     1. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the chart properties.
 
-1. Select the **Data Sources** tab from the left pane and drag-and-drop the **calls** data model object to the **Itemised Calls** target area. All properties in the **calls** data model object are displayed as table columns in the** Itemised Calls** target area in the right pane.
+1. Select the **Data Sources** tab from the left pane and drag-and-drop the **calls** data model object to the **Itemised Calls** target area. All properties in the **calls** data model object are displayed as table columns in the **Itemised Calls** target area in the right pane.
 
    Based on the use case, you require Call Date, Call Time, Call Number, Call Duration, and Call Charges columns in the table.
 

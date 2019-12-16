@@ -11,7 +11,7 @@ docset: aem65
 
 # Camera Raw Support{#camera-raw-support}
 
-The Camera Raw package enables support for various raw file formats, such as .cr2, .nef, .raf, and so on. The Camera Raw functionality is supported in AEM to render your assets in JPEG format. The supported pacakge is available at [https://blogs.adobe.com/lightroomjournal/2017/03/acr-9-9-now-available.html](https://blogs.adobe.com/lightroomjournal/2017/03/acr-9-9-now-available.html).
+The Camera Raw package enables support for various raw file formats, such as .cr2, .nef, .raf, and so on. The Camera Raw functionality is supported in AEM to render your assets in JPEG format. The supported package is available at [https://blogs.adobe.com/lightroomjournal/2017/03/acr-9-9-now-available.html](https://blogs.adobe.com/lightroomjournal/2017/03/acr-9-9-now-available.html).
 
 >[!NOTE]
 >

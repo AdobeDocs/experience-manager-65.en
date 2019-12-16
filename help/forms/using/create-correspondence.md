@@ -41,7 +41,7 @@ Select the letter to preview using the following steps:
 
    If you do not the required permissions, request the admin for the appropriate access. For more information on creating and adding users to groups, see [Adding Users or Groups to a Group](/help/sites-administering/security.md). If you try to render a correspondence without having the appropriate permissions, the 404 error page appears.
 
-1. If you've selected **Preview **&gt; **Custom**, a dialog opens. In the dialog, select a data file, corresponding to the data dictionary, to preview the letter with and then select **Preview**. A data file is created based on a data dictionary for a specific letter. For more information on the data file, see [Data Dictionary](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
+1. If you've selected **Preview** &gt; **Custom**, a dialog opens. In the dialog, select a data file, corresponding to the data dictionary, to preview the letter with and then select **Preview**. A data file is created based on a data dictionary for a specific letter. For more information on the data file, see [Data Dictionary](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
 
    ![Preview letter](assets/8_previewcustomdatafile.png)
 
@@ -165,10 +165,10 @@ In the content tab, manage the content such as document fragments and content va
 
    The modules in a letter template display the unfilled variable count as described below:
 
-    * **Text **Displays the sum of the unique unfilled placeholder variables and data dictionary elements contained in the text module.
-    * **Condition **Displays the sum of the unique unfilled condition variables contained in the condition and the variables contained in the resultant modules.
-    * **List **Displays the sum of all unique unfilled variables contained in the modules assigned to the list.
-    * **Target area **Displays the sum of all unique unfilled variables contained in the modules assigned to the target area.
+    * **Text** Displays the sum of the unique unfilled placeholder variables and data dictionary elements contained in the text module.
+    * **Condition** Displays the sum of the unique unfilled condition variables contained in the condition and the variables contained in the resultant modules.
+    * **List** Displays the sum of all unique unfilled variables contained in the modules assigned to the list.
+    * **Target area** Displays the sum of all unique unfilled variables contained in the modules assigned to the target area.
 
    Note the following regarding variables with default values:
 

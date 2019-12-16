@@ -158,7 +158,7 @@ You can improve the relevance of keywords for particular assets to help boost se
 1. In the **[!UICONTROL Search Promote]** box, specify a keyword for which you want to boost the search for the image and then click/tap **[!UICONTROL Add]**. You can specify multiple keywords in the same way.
 1. Click/tap **[!UICONTROL Save & Close]**. The asset which you promoted for this keyword appears among the top search results.
 
-You can use this to your advantage by boosting the rank of some assets in the search results for the targeted keyword. See the example video below. For detailed info, see [search in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/search-feature-video-use.html).
+You can use this to your advantage by boosting the rank of some assets in the search results for the targeted keyword. See the example video below. For detailed info, see [search in AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -401,7 +401,7 @@ Browse and select asset in the asset picker
 The search capability in AEM Assets has the following limitations:
 
 * Do not enter a leading space in the search query otherwise the search does not work.
-* AEM may continue to show the search term after you select properties of an asset from searched results and then cancel the search (CQ-4273540).
+* AEM may continue to show the search term after you select properties of an asset from searched results and then cancel the search<!--(CQ-4273540)-->.
 * When searching for folders or files and folders, the search results cannot be sorted on any parameter.
 * If you press return without tying anything in Omnisearch bar, AEM returns a list of only files and not folders. If you search specifically for folders without using a keyword, AEM does not return any results.
 
@@ -467,10 +467,6 @@ Use of dash to search for assets not containing an excluded keyword
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [search index](/help/assets/performance-tuning-guidelines.md#search-indexes), [oak queries and indexing](/help/sites-deploying/queries-and-indexing.md), and [best practices](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
-### Sort on Name column {#sortbyname}
-
-In list view, you can sort the search results just as you can sort assets in any folder. Sorting does not work on the `Name` column by default. To sort by the `Name` column, overlay `/libs/dam/gui/content/commons/availablecolumns` and change the value of sortable to `True`.
-
 ### Visual or similarity search {#configvisualsearch}
 
 Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After configuring smart tagging functionality, follow these steps.
@@ -502,11 +498,11 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
 
-For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/managing-smart-tags.md).
+For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/managing-smart-tags.md).
 
 ### Mandatory metadata {#mandatorymetadata}
 
-Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
+Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#define-mandatory-metadata).
 
 ### Modify search facets {#searchfacets}
 
@@ -600,9 +596,9 @@ Once you see some searched assets that match your criteria, you can do the follo
 
 Sorting search results helps you to discover required asset faster. Sorting search results works in list view and only when you select **[!UICONTROL [Files](#searchui)]** from the **[!UICONTROL Filters]** panel. AEM Assets uses server-side sorting to quickly sort all the assets (howsoever numerous) within a folder or results of a search query. Server-side sorting provides faster and more accurate results than client-side sorting.
 
-In list view, you can sort the search results just as you can sort assets in any folder. Sorting works on these columns -- Title, Status, Dimensions, Size, Rating, Usage, (Date) Modified, (Date) Published, Workflow, and Checked out.
+In list view, you can sort the search results just as you can sort assets in any folder. Sorting works on these columns -- Name, Title, Status, Dimensions, Size, Rating, Usage, (Date) Created, (Date) Modified, (Date) Published, Workflow, and Checked out.
 
-See [configure sorting on Name column](#sortbyname). For limitations of sort functionality, see [limitations](#limitations).
+For limitations of sort functionality, see [limitations](#limitations).
 
 ### Check detailed information of an asset {#checkinfo}
 
@@ -637,7 +633,7 @@ You can create smart collections based on the search criteria. From the **[!UICO
 
 ## Unexpected search results {#unexpectedresults}
 
-**Search for missing metadata**: When searching for assets that are missing the mandatory metadata, AEM may display some assets that have valid metadata. Missing metadata is detected and reported based on indexed metadata property. Even if the asset metadata is fixed, it continues to show as missing metadata until reindexing occurs. See [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
+**Search for missing metadata**: When searching for assets that are missing the mandatory metadata, AEM may display some assets that have valid metadata. Missing metadata is detected and reported based on indexed metadata property. Even if the asset metadata is fixed, it continues to show as missing metadata until reindexing occurs. See [mandatory metadata](/help/assets/metadata-schemas.md#define-mandatory-metadata).
 
 **Too many search results**: To avoid getting too many search results, consider limiting the search results. For example, to search for assets in DAM, select `Location:Assets` in Omnisearch bar. For more search filters, see [scope of search](#scope).
 

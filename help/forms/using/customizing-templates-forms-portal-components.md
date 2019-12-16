@@ -44,7 +44,7 @@ Perform the following steps to create a custom template for various Forms Portal
 
    Add a title that you want displayed while selecting layout templates.
 
-   *Note: The title can be different from the node name of sling:Folder you created. * 
+   *Note: The title can be different from the node name of sling:Folder you created.* 
    *The following image depicts the configuration for the Search & Lister component.* ![Creating a sling:Folder](assets/1.png)
 
 1. Create a file template.html in this folder to serve as the custom template.
@@ -80,11 +80,11 @@ Forms Portal provides a syntax for place-holders to display custom/OOTB metadata
 
 To include a repeatable entry, configure the value of the attribute **data-repeatable** to **true**.
 
-*In the example discussed, two Div elements are present at the top in the custom template. The first, with "__FP_boxes-container" CSS class, works as a container element for the forms that are listed. The second, with "__FP_boxes" CSS class, is a template for the basic entities, in this case a Form. The **data-repeatable **attribute present in the Div element has the value **true**.*
+*In the example discussed, two Div elements are present at the top in the custom template. The first, with "__FP_boxes-container" CSS class, works as a container element for the forms that are listed. The second, with "__FP_boxes" CSS class, is a template for the basic entities, in this case a Form. The **data-repeatable** attribute present in the Div element has the value **true**.*
 
-Each placeholder has an exclusive OOTB metadata set. To display custom metadata at a particular place on the form, add the **${metadata_prop} property **at the place.
+Each placeholder has an exclusive OOTB metadata set. To display custom metadata at a particular place on the form, add the **${metadata_prop} property** at the place.
 
-*In the example, the metadata property is used at multiple instance. For example, it is used in **description**, **name**, **formUrl**, **htmlStyle**, **pdfUrl**, **pdfStyle**, and **path **in the prescribed manner.*
+*In the example, the metadata property is used at multiple instance. For example, it is used in **description**, **name**, **formUrl**, **htmlStyle**, **pdfUrl**, **pdfStyle**, and **path** in the prescribed manner.*
 
 ## Out of the box metadata {#out-of-the-box-metadata}
 
@@ -97,22 +97,22 @@ Various Forms Portal components provide exclusive sets of OOTB metadata that you
 * **description**: Description of the form
 * **formUrl**: URL to render the form as HTML
 * **pdfUrl**: URL to render the form as PDF
-* **assetType**: Type of the asset. Valid values include **Form**,** PDF Form**,** Print Form**, and **Adaptive Form**
+* **assetType**: Type of the asset. Valid values include **Form**,**PDF Form**, **Print Form**, and **Adaptive Form**
 
 * **htmlStyle **& **pdfStyle**: Display style for HTML and PDF icons respectively used for rendering. Valid values are “**__FP_display_none**” or **blank  
-  ***Note: Remember to use the __FP_display_none class in your custom style sheet*
+  **Note:** Remember to use the __FP_display_none class in your custom style sheet
 
 * **downloadUrl**: URL to download an asset.
 
 Support for localization, sorting, and using configuration properties on the user interface (Search & Lister Only):
 
-1. **Localization Support**: To localize any static text use the attribute **${localize-***YOUR_TEXT***} **and make the localized value available, if doesn't exist already.  
-   *In the example discussed, the attributes ${localize-Apply} and ${localize-Download} are used to localize the Apply and Download text.*
+1. **Localization Support**: To localize any static text use the attribute `${localize-YOUR_TEXT}` and make the localized value available, if doesn't exist already.  
+   *In the example discussed, the attributes `${localize-Apply}` and `${localize-Download}` are used to localize the Apply and Download text.*
 
 1. **Support for Sorting**: Click the HTML element to sort search results. To implement sorting in a tabled layout, add the "data-sortKey" attribute on the particular table header. In addition, add its value as the metadata for which you want to sort.  
    For example, for the "Title" header in the grid view, the value of the "data-sortKey" header is "title". Click the heading to sort the values in a particular column.
 
-1. **Using configuration properties**: The Search & Lister component has several configurations that you can use on the user interface. For example, to display HTML ToolTip text saved through the edit dialog, use the **${config-htmlLinkText} attribute. **Similarly, for PDF tool tip text, use the** ${config-pdfLinkText}** attribute.
+1. **Using configuration properties**: The Search & Lister component has several configurations that you can use on the user interface. For example, to display HTML ToolTip text saved through the edit dialog, use the `${config-htmlLinkText}` attribute. **Similarly, for PDF tool tip text, use the** `${config-pdfLinkText}` attribute.
 
 ### Link component {#link-component}
 
@@ -141,11 +141,11 @@ Support for localization, sorting, and using configuration properties on the use
 
 1. For the delete option in the Drafts section under the Drafts & Submissions component, name the CSS class "__FP_deleteDraft." In addition, include the attribute "draftID" with the value **${draftID}**, which is the draft id of corresponding draft.
 
-1. While creating links to open drafts and submissions, you can specify **${path}.html **as the value of the **href** attribute for the anchor tag.
+1. While creating links to open drafts and submissions, you can specify **${path}.html** as the value of the **href** attribute for the anchor tag.
 
 ![Drafts and Submission node](assets/raw-image-with-index.png)
 
-***A**. Container element
+**A**. Container element
 
 **B.** "path" metadata with a fixed hierarchy to obtain the thumbnail stored for each form.
 
@@ -162,5 +162,5 @@ Support for localization, sorting, and using configuration properties on the use
 1. Do not use single quote (') in any custom template.
 1. For custom metadata, store this property on the **jcr:content/metadata** node only. If you store it at any other place, Forms Portal can't display the metadata.
 1. Ensure that the name of any custom metadata or existing metadata does not include a colon ( : ). If it does, you cannot display it on the user interface.
-1. **data-repeatable **does not have any significance for a **Link **component. Adobe recommends that you avoid using this property in the template for a Link component.
+1. **data-repeatable** does not have any significance for a **Link** component. Adobe recommends that you avoid using this property in the template for a Link component.
 

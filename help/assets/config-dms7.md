@@ -4,7 +4,7 @@ seo-title: Configuring Dynamic Media - Scene7 mode
 description: Information on how to configure Dynamic Media - Scene7 mode.
 seo-description: Information on how to configure Dynamic Media - Scene7 mode.
 uuid: ce43c589-d415-4611-9266-b4e8887e4cdc
-contentOwner: User
+contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
