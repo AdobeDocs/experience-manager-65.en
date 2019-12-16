@@ -28,8 +28,7 @@ It is easier to create and manage forms when a proper process is followed. In th
 * [Preview and submit an adaptive form](/help/forms/using/create-adaptive-form.md)
 
 You will have a form similar to the following by end of article:  
-
-    [ ![](do-not-localize/form-preview-mobile.gif)](assets/form-preview-mobile.gif) 
+[![](do-not-localize/form-preview-mobile.gif)](do-not-localize/form-preview-mobile.gif)
 
 ## Step 1: Create the adaptive form {#step-create-the-adaptive-form}
 
