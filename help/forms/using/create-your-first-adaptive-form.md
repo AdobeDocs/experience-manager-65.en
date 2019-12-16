@@ -16,7 +16,7 @@ docset: aem65
 
 ## Introduction {#introduction}
 
-Are you looking for a mobile-friendly **forms experience** that simplifies enrolment, increases engagement and reduces turnaround time, **adaptive forms** is a perfect fit for you. Adaptive forms provide a mobile, automation, and analytics-friendly forms experience. You can easily build forms that are resposnisive and intreactive in nature, use automated processes to reduce administrative and repetitive tasks, and use data analytics to improve and personalize the experience customers have with your forms.
+Are you looking for a mobile-friendly **forms experience** that simplifies enrolment, increases engagement and reduces turnaround time, **adaptive forms** is a perfect fit for you. Adaptive forms provide a mobile, automation, and analytics-friendly forms experience. You can easily build forms that are responsive and interactive in nature, use automated processes to reduce administrative and repetitive tasks, and use data analytics to improve and personalize the experience customers have with your forms.
 
 This tutorial provides an end-to-end framework to create an adaptive form. The tutorial is organized into a use case and multiple guides. Each guide helps you learn and add new features to the adaptive form that is created in this tutorial. You have a working adaptive form after every guide. The guide to create an adaptive form is available. Subsequent guides will be available soon. At the end of this tutorial, you will be able to:
 
@@ -25,7 +25,7 @@ This tutorial provides an end-to-end framework to create an adaptive form. The t
 * Use adaptive form rule editor to build business rules.
 * Test and publish an adaptive form.
 
-![create-daptive-form-workflow](assets/create-daptive-form-workflow.png)
+![create-adaptive-form-workflow](assets/create-daptive-form-workflow.png)
 
 The journey starts with learning the use case:
 
