@@ -23,7 +23,7 @@ legacypath: /content/docs/en/aem/6-1/release-notes-sp1
 | Version |6.5.3.0 |
 | Type |Service Pack Release |
 | Date |December 12, 2019 |
-| Download URL | [AEM 6.5.3.0 on PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0) |
+| Download URL | AEM 6.5.3.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0), [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aem.html#package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.3.zip) |
 
 ## What's included in AEM 6.5.3.0 {#what-s-included-in-aem}
 
