@@ -35,7 +35,7 @@ For example, for the tag *casual-shoe*, the second image is not a good training 
 
 ![Illustrative images to exemplify the guidelines for training](do-not-localize/distraction.png)
 
-**Completeness:** If an image qualifies for more than one tag, add all applicable tags before including the image for training. For example, for tags, such as *raincoat* and *model-side-view*, add both the tags on the eligible asset before including it for training.
+**Completeness:** If an image qualifies for more than one tag, add all applicable tags before including the image for training. For example, for tags, such as `raincoat` and `model-side-view`, add both the tags on the eligible asset before including it for training.
 
 ![Illustrative images to exemplify the guidelines for training](do-not-localize/completeness.png)
 
@@ -45,13 +45,12 @@ Enhanced smart tags are based on learning models of brand images and their tags.
 
 * Inability to recognize subtle differences in images. For example, slim versus regular fitted shirts. 
 * Inability to identify tags based on tiny patterns/parts of an image. For example, logos on T-shirts.
-* Tagging is supported in the locales that AEM is supported in. For a list of languages, see [Smart Content Services release notes](/help/release-notes/smart-content-service-release-notes.md).
+* Tagging is supported in the locales that AEM is supported in. For a list of languages, see [Smart Content Services release notes](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
 
-To search for assets with smart tags (regular or enhanced), use the Assets Omni-search (full-text search). There is no separate search predicate for smart tags. 
+To search for assets with smart tags (regular or enhanced), use the Assets Omnisearch (full-text search). There is no separate search predicate for smart tags.
 
 >[!NOTE]
 >
 >The ability of the Smart Content Service to train on your tags and apply them on other images depends on the quality of images you use for training. 
 >
 >For best results, Adobe recommends that you use visually similar images to train the service for each tag.
-

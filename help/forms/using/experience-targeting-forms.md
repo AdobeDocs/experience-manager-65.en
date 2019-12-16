@@ -84,7 +84,7 @@ Configure Adobe Target in AEM to use it with adaptive forms and interactive comm
    >
    >AEM Forms supports targeting only image components. Ensure that the panel hosting the image component does not contain any other component and the number of columns for the panel are set to 1.
 
-1. Switch from **Edit **to **Targeting **mode. The option to switch modes is near the Top-Right corner.
+1. Switch from **Edit** to **Targeting** mode. The option to switch modes is near the Top-Right corner.
 1. Select a **BRAND**, select **ACTIVITY**, and tap **Start Targeting**. The **Audiences** menu appears on right side of the editor.
 
    ![targeting-menu](assets/targeting-menu.png)

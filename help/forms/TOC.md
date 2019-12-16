@@ -1,6 +1,7 @@
 ---
 cloud: experience-cloud
 product: Adobe Experience Manager
+sub-product: forms
 audience: end-user
 user-guide-title: AEM 6.5 Forms User Guide
 ---
@@ -22,7 +23,7 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Tutorial: Create an adaptive form](using/create-adaptive-form.md)
     + [Tutorial: Create form data model](using/create-form-data-model.md)
     + [Tutorial: Apply rules to adaptive form fields l](using/apply-rules-to-adaptive-form-fields.md)
-    + [Tutorial: Style your adpative form](using/style-your-adaptive-form.md)
+    + [Tutorial: Style your adaptive form](using/style-your-adaptive-form.md)
     + [Tutorial: Publish your adaptive form](/help/forms/using/publish-your-adaptive-form.md)
     + [Tutorial: Testing your adaptive form](/help/forms/using/testing-your-adaptive-form.md)
   + Tutorial: Create your First Interactive Communication {#create-first-interactive-communication}
@@ -171,6 +172,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Integrate Adobe Sign with AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
   + [Creating and managing reviews for assets in forms](using/create-reviews-forms.md)
   + [Embed an adaptive form or Interactive Communication in AEM Sites Single Page Application](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
+  + [Standard Validation Error Messages Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
 + Interactive Communications {#interactive-communications}
   + [Introduction to Interactive Communication authoring UI](using/introduction-interactive-communication-authoring.md)
   + [Create an Interactive Communication](using/create-interactive-communication.md)
@@ -180,6 +182,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Prepare and send Interactive Communication using the Agent UI](using/prepare-send-interactive-communication.md)
   + [Print channel and web channel](using/web-channel-print-channel.md)
   + [Interactive Communications configuration properties](using/interactive-communication-configuration-properties.md)
+  + [Generate multiple interactive communications](using/generate-multiple-interactive-communication-using-batch-api.md)
 + Workflows {#workflows}
   + [Forms-centric workflow on OSGi](using/aem-forms-workflow.md)
   + [Forms-centric workflow on OSGi - Step Reference](using/aem-forms-workflow-step-reference.md)
@@ -187,7 +190,9 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](using/capabilities-osgi-jee-workflows.md)
   + [Initiate Document Services APIs from AEM Workflow](using/initiating-document-services-apis-aem.md)
   + [Logging in AEM Forms workflows](/help/forms/using/forms-workflow-logs.md)
-  + [Variables in AEM workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
+  + [Variables in AEM workflows](using/variable-in-aem-workflows.md)
+  + [Share and request access to Inbox items of a user](using/configure-shared-queues-osgi.md)
+  + [Configure Out of Office](using/configure-out-of-office-settings.md)
 + AEM Forms Workspace {#use-aem-forms-workspace}
   + [Introduction to AEM Forms workspace](using/introduction-html-workspace.md)
   + [Working with AEM Forms workspace](using/html-workspace-overview.md)
@@ -419,7 +424,7 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Configuring Connector for Microsoft SharePoint](/help/forms/using/admin-help/configuring-connector-microsoft-sharepoint.md)
   + Managing certificates and credentials {#manage-certificates-credentials}
     + [Adding and removing user name and password credentials](/help/forms/using/admin-help/adding-removing-user-name-password.md)
-    + [Managing certificate revocationlists](/help/forms/using/admin-help/certificate-revocation-lists.md)
+    + [Managing certificate revocation lists](/help/forms/using/admin-help/certificate-revocation-lists.md)
     + [Basics of managing certificates and credentials](/help/forms/using/admin-help/overview-2.md)
     + [Managing certificates](/help/forms/using/admin-help/certificates.md)
     + [Managing HSM credentials](/help/forms/using/admin-help/hsm-credentials.md)
@@ -603,16 +608,17 @@ user-guide-title: AEM 6.5 Forms User Guide
       + [XMP Utilities Service Java APIQuick Start(SOAP)](developing/xmp-utilities-service-java-api.md)
     + Invoking AEM Forms on JEE using APIs {#invoking-aem-forms-jee-apis}
       + [Invoking AEM Forms using REST Requests](developing/invoking-aem-forms-using-rest.md)
+      + [Invoking AEM Forms using Web Services](developing/invoking-aem-forms-using-web.md)
       + [Invoking AEM Forms using Remoting](developing/invoking-aem-forms-using-remoting.md)
       + [Invoking AEM Forms using Web Services](developing/invoking-human-centric-long-lived.md)
       + [Invoking AEM Forms using the JavaAPI](developing/invoking-aem-forms-using-java.md)
-      + [Creating Flash Builder applicationsthat perform SSO authentication using HTTP tokens](developing/creating-flash-builder-applications-perform.md)
+      + [Creating Flash Builder applications that perform SSO authentication using HTTP tokens](developing/creating-flash-builder-applications-perform.md)
     + Performing Service Operations using APIs {#performing-service-operations-using-apis}
       + [Performing Service Operations Using APIs](developing/performing-service-operations-using-apis.md)
       + [Rendering Forms](developing/rendering-forms.md)
       + [Assembling PDF Documents](developing/assembling-pdf-documents.md)
       + [Programmatically Assembling PDF Documents](developing/programmatically-assembling-pdf-documents.md)
-      + [Converting Between File Formatsand PDF](developing/converting-file-formats-pdf.md)
+      + [Converting Between File Formats and PDF](developing/converting-file-formats-pdf.md)
       + [Programmatically Disassembling PDF Documents](developing/programmatically-disassembling-pdf-documents.md)
       + [Assembling Encrypted PDF Documents](developing/assembling-encrypted-pdf-documents.md)
       + [Assembling Multiple XDP Fragments](developing/assembling-multiple-xdp-fragments.md)
@@ -658,5 +664,3 @@ user-guide-title: AEM 6.5 Forms User Guide
       + [Programmatically managing the Preferences Nodes](developing/programmatically-preferences-nodes.md)
       + [Protecting Documents with Policies](developing/protecting-documents-policies.md)
       + [Validate a DDX document using the web service API](developing/validate-ddx-document-using-web.md)
-      + [Standard Validation Error Messages Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
-      

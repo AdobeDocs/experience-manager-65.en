@@ -10,6 +10,10 @@ discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 
 # AEM Mobile - GDPR Readiness {#aem-mobile-gdpr-readiness}
 
+>[!IMPORTANT]
+>
+>GDPR is used as an example in the sections below, but the details covered are applicable to all data protection and privacy regulations; such as GDPR, CCPA etc.
+
 ## AEM Mobile GDPR Support {#aem-mobile-gdpr-support}
 
 AEM Mobile is ready to assist customers with their GDPR compliance obligations. No personal data is stored in AEM Mobile. If you are provisioned, you can login to Adobe Experience Mobile with your Adobe ID.

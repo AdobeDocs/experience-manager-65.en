@@ -1,8 +1,8 @@
 ---
 title: Interactive images
 seo-title: Interactive images
-description: Learn how to work with interactive images in dynamic media
-seo-description: Learn how to work with interactive images in dynamic media
+description: Learn how to work with interactive images in Dynamic Media
+seo-description: Learn how to work with interactive images in Dynamic Media
 uuid: 0bdb73f7-6ce9-4cdf-b6b5-a4d3d4e19a23
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

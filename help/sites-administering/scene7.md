@@ -561,11 +561,11 @@ Specifically, you configure the accepted file format by MIME type in the OSGi (O
 
    >[!NOTE]
    >
-   >If you are uploading PSD files, process them as templates with layer extractions. To do so, enter the following in the **[!UICONTROL jobParam]** value field:
+   >If you are uploading PSD files, and you want to process them as templates with layer extractions, enter the following in the **[!UICONTROL jobParam]** value field:
    >
    >`process=MaintainLayers&createTemplate=true`
    >
-   >Be sure that your PSD file has “layers”. If it is strictly one image or an image with mask, it will only be processed as an image because there are no layers to process.
+   >Be sure that your PSD file has “layers.” If it is strictly one image or an image with mask, it is processed as an image because there are no layers to process.
 
 1. In the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
 

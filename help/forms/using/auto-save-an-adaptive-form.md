@@ -20,7 +20,7 @@ You can configure an adaptive form to automatically start saving the content bas
 
 ## Enable autosave for an adaptive form {#enable-autosave-for-an-adaptive-form}
 
-For an adaptive form, the auto save option is not enabled out of the box. You can enable the auto save option from the **Auto Save** section in the properties of an adaptive form. The **Auto Save **section also provides several other configuration options. Perform the following steps to enable and configure the auto save option for an adaptive form:
+For an adaptive form, the auto save option is not enabled out of the box. You can enable the auto save option from the **Auto Save** section in the properties of an adaptive form. The **Auto Save** section also provides several other configuration options. Perform the following steps to enable and configure the auto save option for an adaptive form:
 
 1. To access the auto-save section in the properties, select a component, then tap ![field-level](assets/field-level.png) &gt; **[!UICONTROL Adaptive Form Container]**, and then tap ![cmppr](assets/cmppr.png).
 1. In the **[!UICONTROL Auto Save]** section, **[!UICONTROL Enable]** the auto-save option.
@@ -43,9 +43,9 @@ For an adaptive form, the auto save option is not enabled out of the box. You ca
 
 1. (Event-based auto save only) Perform the following steps to configure options for Event-based auto save.
 
-    1. In the** Auto save after this event** box, specify a [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) event. The form is saved every time the expression evaluates to TRUE.
+    1. In th **Auto save after this event** box, specify a [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) event. The form is saved every time the expression evaluates to TRUE.
 
-1. (Optional) To automatically save the content for anonymous users, select the** Enable Autosave for anonymous users** option, and click **[!UICONTROL OK]**.
+1. (Optional) To automatically save the content for anonymous users, select the **Enable Autosave for anonymous users** option, and click **[!UICONTROL OK]**.
 
    >[!NOTE]
    >

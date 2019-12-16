@@ -82,7 +82,7 @@ After you have configured the workflow according to your needs, you have two opt
 
 ### Activating Assets {#activating-assets}
 
-For deployments that have a publish tier, you need to activate the assets out to the publish farm. While Adobe recommends running more than a single publish instance, it is most efficient to replicate all of the assets to a single publish instance and then clone that instance. When activating large numbers of assets, after triggering a tree activation, you may need to intervene. Here's why: When firing off activations, items are added to the Sling jobs/eventing queue. After the size of this queue begins to exceed approximately 40,000 items, processing slows dramatically. After the size of this queue exceeds 100,000 items, system stability starts to suffer.
+For deployments that have a publish tier, you need to activate the assets out to the publish farm. While Adobe recommends running more than a single publish instance, it is most efficient to replicate all of the assets to a single publish instance and then clone that instance. When activating large numbers of assets, after triggering a tree activation, you may need to intervene. Here's why: When firing off activations, items are added to the Sling jobs/event queue. After the size of this queue begins to exceed approximately 40,000 items, processing slows dramatically. After the size of this queue exceeds 100,000 items, system stability starts to suffer.
 
 To work around this issue, you can use the [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) to manage asset replication. This works without using the Sling queues, lowering overhead, while throttling the workload to prevent the server from becoming overloaded. An example of using FAM to manage replication is shown on the feature’s documentation page.
 
@@ -100,9 +100,9 @@ After the assets have been activated, you can clone your publish instance to cre
 
 1. Back up the source instance and the datastore.
 1. Restore the backup of the instance and datastore to the target location. The following steps all refer to this new instance.
-1. Perform a filesystem search under **crx-quickstart/launchpad/felix** for **sling.id**. Delete this file.
-1. Under the root path of the datastore, locate and delete any **repository-XXX** files.
-1. Edit **crx-quickstart/install/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config** and **crx-quickstart/launchpad/config/org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStore.config** to point to the location of the datastore on the new environment.
+1. Perform a filesystem search under `crx-quickstart/launchpad/felix` for `sling.id`. Delete this file.
+1. Under the root path of the datastore, locate and delete any `repository-XXX` files.
+1. Edit `crx-quickstart/install/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` and `crx-quickstart/launchpad/config/org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStore.config` to point to the location of the datastore on the new environment.
 1. Start the environment.
 1. Update the configuration of any replication agents on the author(s) to point to the correct publish instances or dispatcher flush agents on the new instance to point to the correct dispatchers for the new environment.
 
@@ -116,30 +116,21 @@ While not nearly as common, sometimes you need to migrate large amounts of data 
 
 In this case, your assets are already populated with metadata and renditions are already generated. You can simply focus on moving assets from one instance to another. When migrating between AEM instances, you perform the following steps:
 
-1. Disable workflows.
+1. Disable workflows. Because you are migrating renditions along with our assets, you want to disable the workflow launchers for DAM Update Asset.
 
-   Because you are migrating renditions along with our assets, you want to disable the workflow launchers for DAM Update Asset.
-
-1. Migrate tags.
-
-   Because you already have tags loaded in the source AEM instance, you can build them in a content package and install the package on the target instance.
+1. Migrate tags. Because you already have tags loaded in the source AEM instance, you can build them in a content package and install the package on the target instance.
 
 1. Migrate assets.
 
    There are two tools that are recommended for moving assets from one AEM instance to another:
 
-    * **Vault Remote Copy**, or vlt rcp, allows you to use vlt across a network. You can specify a source and destination directory and vlt downloads all repository data from one instance and loads it into the other. Vlt rcp is documented at [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
+    * **Vault Remote Copy** or vlt rcp, allows you to use vlt across a network. You can specify a source and destination directory and vlt downloads all repository data from one instance and loads it into the other. Vlt rcp is documented at [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
     * **Grabbit** is an open-source content synchronization tool that was developed by Time Warner Cable for their AEM implementation. Because it uses continuous data streams, in comparison to vlt rcp, it has a lower latency and claims a speed improvement of two to ten times faster than vlt rcp. Grabbit also supports synchronization of delta content only, which allows it to sync changes after an initial migration pass has been completed.
 
-1. Activate assets.
+1. Activate assets. Follow the instructions for [activating assets](#activating-assets) documented for the initial migration to AEM.
 
-   Follow the instructions for [activating assets](#activating-assets) documented for the inital migration to AEM.
-
-1. Clone publish.
-
-   As with a new migration, loading a single publish instance and cloning it is more efficient than activating the content on both nodes. See [Cloning Publish.](#cloning-publish)
+1. Clone publish. As with a new migration, loading a single publish instance and cloning it is more efficient than activating the content on both nodes. See [Cloning Publish.](#cloning-publish)
 
 1. Enabling workflows.
 
    After you have completed migration, re-enable the launchers for the DAM Update Asset workflows to support rendition generation and metadata extraction for ongoing day-to-day system usage.
-

@@ -168,11 +168,11 @@ To view activity performance and convert winning experiences:
 
 1. In **Personalization**, click or tap **Activities** to navigate to the **Activities** console.
 1. Click or tap the brand for which you want to see activities.
-1. Select the activity and click or tap **View Properties **and click the **Reports** tab and select the activity that you want to view performance for/convert winning experiences for. Performance data is displayed.
+1. Select the activity and click or tap **View Properties** and click the **Reports** tab and select the activity that you want to view performance for/convert winning experiences for. Performance data is displayed.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. Click or tap the **Push winner **link** **to push that experience as the default experience.
+1. Click or tap the **Push winner** link to push that experience as the default experience.
 
    Converting the winner does the following:
 

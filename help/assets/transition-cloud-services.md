@@ -1,27 +1,24 @@
 ---
-title: Applying translation cloud services to folders
-seo-title: Applying translation cloud services to folders
-description: null
-seo-description: null
+title: Apply translation cloud services to folders
+description: Apply translation cloud services to folders
 uuid: ffbe5f8a-faef-4d61-9301-c323c21ec16c
-contentOwner: User
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: managing-assets
-content-type: reference
 discoiquuid: 5344cc2e-f4eb-4d43-87ae-e0f04a82c377
+
 ---
 
-# Applying translation cloud services to folders {#applying-translation-cloud-services-to-folders}
+# Apply translation cloud services to folders {#applying-translation-cloud-services-to-folders}
 
 Adobe Experience Manager (AEM) lets you avail cloud-based translation services from the translation provider of your choice to ensure your assets are translated based on your requirements.
 
 You can apply the translation cloud service directly to your asset folder so they can be utilized during translation workflows.
 
-## Applying the translation services {#applying-the-translation-services}
+## Apply the translation services {#applying-the-translation-services}
 
 Applying translation cloud services directly to your asset folder eliminates the need to configure translation services when you create or update translation workflows.
 
-1. From the Assets UI, select the folder to which you want to apply translation services.
+1. From the Assets user interface, select the folder to which you want to apply translation services.
 1. From the toolbar, click/tap the **[!UICONTROL Properties]** icon to display the **[!UICONTROL Folder Properties]** page.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
@@ -37,7 +34,7 @@ Applying translation cloud services directly to your asset folder eliminates the
 
 1. From the toolbar, click/tap **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the dialog.The translation service is applied to the folder.
 
-## Applying custom translation connector  {#applying-custom-translation-connector}
+## Apply custom translation connector  {#applying-custom-translation-connector}
 
 If you want to apply a custom connector for the translation services you want to use in translation workflows. To apply a custom connector, first install the connector from Package Manager. Then, configure the connector from the Cloud Services console. After you configure the connector, it is available in the list of connectors in the Cloud Services tab described in [Applying the translation services](transition-cloud-services.md#applying-the-translation-services). After you apply the custom connector and run translation workflows, the **[!UICONTROL Translation Summary]** tile of the translation project displays the connector details under the heads **[!UICONTROL Provider]** and **[!UICONTROL Method]**.
 
@@ -55,4 +52,3 @@ If you want to apply a custom connector for the translation services you want to
 1. Run any translation workflow described in [Creating Translation Projects](translation-projects.md) after you apply the custom connector. Verify the details of the connector in the **[!UICONTROL Translation Summary]** tile of the translation project in the **[!UICONTROL Projects]** console.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
-

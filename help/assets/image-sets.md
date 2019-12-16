@@ -1,8 +1,8 @@
 ---
 title: Image Sets
 seo-title: Image Sets
-description: Learn how to work with image sets in dynamic media
-seo-description: Learn how to work with image sets in dynamic media
+description: Learn how to work with image sets in Dynamic Media
+seo-description: Learn how to work with image sets in Dynamic Media
 uuid: ca2fd5b0-656e-4960-b10c-f0ec3d418760
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
