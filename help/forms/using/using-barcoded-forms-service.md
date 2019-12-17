@@ -18,13 +18,13 @@ docset: aem65
 
 The Barcoded Forms service extracts data from electronic images of barcodes. The service accepts TIFF and PDF files that include one or more barcodes as input and extracts the barcode data. Barcode data can be formatted in various ways, including XML, delimited string, or any custom format created with JavaScript.
 
-The Barcoded Forms service supports the following** two-dimensional (2D) **symbologies supplied as scanned TIFF or PDF documents:
+The Barcoded Forms service supports the following **two-dimensional (2D)** symbologies supplied as scanned TIFF or PDF documents:
 
 * PDF417
 * Data Matrix
 * QR Code
 
-The service also supports the following **one-dimensional **symbologies supplied as scanned TIFF or PDF documents:
+The service also supports the following **one-dimensional** symbologies supplied as scanned TIFF or PDF documents:
 
 * Codabar
 * Code128
@@ -119,7 +119,7 @@ When you use the BCF APIs, consider the following limitations:
 
 ### Other limitations {#other-limitations}
 
-Also, conside ``r the following limitations when using the Barcoded Forms service:
+Also, consider the following limitations when using the Barcoded Forms service:
 
 * The service fully supports AcroForms and static forms containing 2D barcodes that are saved using Adobe Reader or Acrobat. However, for 1D barcodes, either flatten the form or supply it as scanned PDF or TIFF document.
 * Dynamic XFA forms are not fully supported. To properly decode 1D and 2D barcodes in a dynamic form, either flatten the form or supply it as scanned PDF or TIFF document.

@@ -17,7 +17,7 @@ In addition to using pre-existing editor components, Adobe Experience Manager (A
 
 ## Creating an Asset Editor Template {#creating-an-asset-editor-template}
 
-The following sample pages are included in geometrixx:
+The following sample pages are included in Geometrixx:
 
 * Geometrixx Sample Page: `/content/geometrixx/en/press/asseteditor.html`
 * Sample Template: `/apps/geometrixx/templates/asseteditor`
@@ -138,7 +138,7 @@ This example describes how to build a component that shows and displays the meta
    ```xml
    <%--
 
-     Sample metadata field comopnent
+     Sample metadata field component
 
    --%><%@ page import="com.day.cq.dam.api.Asset,
                     java.security.AccessControlException" %><%

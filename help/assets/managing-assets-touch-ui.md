@@ -253,7 +253,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
   <tr>
    <td> </td>
    <td>PDF Options</td>
-   <td><p>You can rasterize the files, extract search words and links, auto-generate an eCatalog, set the resolution, and choose a color space.</p> <p>Note that eCatalogs are not supported in AEM</p> <p>See <a href="#setting-pdf-upload-options">Setting PDF upload options</a>.</p> </td>
+   <td><p>You can rasterize the files, extract search words and links, auto-generate an eCatalog, set the resolution, and choose a color space.</p> <p>The eCatalogs are not supported in AEM</p> <p>See <a href="#setting-pdf-upload-options">Setting PDF upload options</a>.</p> </td>
   </tr>
   <tr>
    <td> </td>

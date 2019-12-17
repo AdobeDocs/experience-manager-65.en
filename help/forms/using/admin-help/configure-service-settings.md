@@ -616,7 +616,7 @@ The following settings are available for the Signature service.
 
 **TSP Response Size:** Estimated size, in bytes, of the TSP response. This value should represent the maximum size of the timestamp response that the configured timestamp provider could return. Do not change this unless you are absolutely sure. The minimum value is 60B and the maximum value is 10240B. The default value is 4096B.
 
-**Ignore TimeStamp Server Extension**: Select the** Ignore TimeStamp Server Extension** option to stop AEM Forms server from contacting the specified time stamp server. Selecting the option helps avoid process failures which happen due to connection timeout between AEM Forms and time stamp servers.
+**Ignore TimeStamp Server Extension**: Select the **Ignore TimeStamp Server Extension** option to stop AEM Forms server from contacting the specified time stamp server. Selecting the option helps avoid process failures which happen due to connection timeout between AEM Forms and time stamp servers.
 
 ### Certificate Revocation List Options {#certificate-revocation-list-options}
 

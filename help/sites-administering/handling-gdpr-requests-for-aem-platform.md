@@ -10,6 +10,10 @@ discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 
 # Handling GDPR Requests for the AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
+>[!IMPORTANT]
+>
+>GDPR is used as an example in the sections below, but the details covered are applicable to all data protection and privacy regulations; such as GDPR, CCPA etc.
+
 ## AEM Foundation GDPR support {#aem-foundation-gdpr-support}
 
 At the AEM Foundation level, the Personal Data that is stored  is  the User Profile. Therefore, the information in this article primarily addresses how to access and delete user profiles, to address the GDPR Access and Delete requests respectively.

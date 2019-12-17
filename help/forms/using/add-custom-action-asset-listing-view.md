@@ -72,7 +72,7 @@ To customize Correspondence Management to allow your users to download a flat PD
 
 1. Under the newly created items folder, add a node for the custom button/action in a particular asset (Example: downloadFlatPDF) using the following steps:
 
-    1. Right-click the **items **folder and select **Create &gt; Create Node**.
+    1. Right-click the **items** folder and select **Create** &gt; **Create Node**.
 
     1. Ensure that the Create Node dialog has the following values and click **OK**:
 
@@ -350,7 +350,7 @@ After you have added custom functionality to download flat PDF of your letters, 
 
 1. Select **Forms &gt; Letters**. Correspondence Management lists the letters available in the system.
 1. Click **Select** and then click a letter to select it.
-1. Select **More &gt; &lt;Download Flat PDF&gt;** (The custom functionality created using the instructions this article). Download Letter as PDF dialog appears.
+1. Select **More** &gt; **&lt;Download Flat PDF&gt;** (The custom functionality created using the instructions this article). Download Letter as PDF dialog appears.
 
    The menu item name, functionality, and alt-text is according to the customization created in [Scenario: Add a command to the Letters list user interface to download flat PDF version of a letter.](#addcommandtoletters)
 

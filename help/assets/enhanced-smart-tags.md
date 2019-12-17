@@ -1,13 +1,11 @@
 ---
 title: Enhanced Smart Tags
-seo-title: Enhanced Smart Tags
-description: null
-seo-description: null
+description: Enhanced Smart Tags
 uuid: 4452ca05-1f20-4f80-884a-a739ae7b8b0e
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
+
 ---
 
 # Enhanced Smart Tags {#enhanced-smart-tags}
@@ -54,7 +52,7 @@ The onboarding process is complete when the administrator configures the service
 
 >[!NOTE]
 >
->The Smart Content Service is supported on AEM 6.4 only. If you are running a previous version of AEM and require automatic tagging service for your assets, see [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html).
+>If you are using AEM 6.3 or earlier version and require automatic tagging service for your assets, see [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Smart Tags do not use the latest AI capabilities and are hence less accurate than the Enhanced Smart Tagging capability.
 
 ## Reviewing assets and tags {#reviewing-assets-and-tags}
 
@@ -69,7 +67,6 @@ Add the assets to a folder and apply the tags to each asset from the properties 
 >1. Training is an irrevocable process. Adobe recommends that you review the tags in the curated set of assets well before training the Smart Content Service on the tags.
 >1. Please do read [Smart Content Service training guidelines](smart-tags-training-guidelines.md) before starting training for any tag.
 >1. When you train the Smart Content Service for the first time, Adobe recommends that you train it on at least two distinct tags.
->
 
 ## Training the Smart Content Service {#training-the-smart-content-service}
 

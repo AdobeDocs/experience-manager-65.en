@@ -27,7 +27,7 @@ This guide covers how to manage an AEM project successfully
 | [Administering Guide](/help/sites-administering/home.md) | Understand how to administer AEM |
 | [Authoring Guide](/help/sites-authoring/home.md) | This guide explains the concepts of authoring in AEM. |
 | [Classic UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | This guide explains the concepts of authoring in AEM in the classic user interface. |
-| [Screens User Guide](/help/screens/home.md) | Learn about the digital signage solution to publish dynamic and interactive digital experiences. |
+| [Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Learn about the digital signage solution to publish dynamic and interactive digital experiences. |
 | [Deploying User Guide](/help/sites-deploying/home.md) | This guide shows you the basics of AEM.  |
 | [Developing User Guide](/help/sites-developing/home.md)| Learn how to build out your AEM instance. |
 | [Managing User Guide](/help/managing/home.md)| This guide describes how to manage an AEM project successfully. |

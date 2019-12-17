@@ -1,17 +1,13 @@
 ---
 title: Related Assets
-seo-title: Related Assets
 description: Learn how to relate assets that share certain common attributes. You can also use the feature to create source/derived relationships between assets.
-seo-description: Learn how to relate assets that share certain common attributes. You can also use the feature to create source/derived relationships between assets.
 uuid: 6a2b1105-1cb0-48ca-bd1d-0ee034b8a0c1
-contentOwner: User
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: managing-assets
-content-type: reference
 discoiquuid: 2bd38e3b-a244-4f18-b081-f10c4eb0149b
 ---
 
-# Related Assets {#related-assets}
+# Related assets {#related-assets}
 
 Adobe Experience Manager (AEM) Assets lets you manually relate assets based on the needs of your organization using the Related Assets feature. For example, you can relate a license file with an asset or an image/video on a similar topic. You can relate assets that share certain common attributes. You can also use the feature to create source/derived relationships between assets. For example, if you have a PDF file that is generated from an INDD file, you can relate the PDF file to its source INDD file.
 
@@ -68,12 +64,12 @@ Creating source/derived relationships between assets using the Related Assets fe
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-If the source file is related to another asset, AEM Assets fetches the refenced asset and includes it for translation.
+If the source file is related to another asset, AEM Assets fetches the referenced asset and includes it for translation.
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 
 1. Translate the assets in the source folder to a target language by following the steps in [Create a new translation project](translation-projects.md#create-a-new-translation-project). For example, in this case, translate your assets to French.
-1. From the Projects page, open the translation folder.
+1. From the [!UICONTROL Projects] page, open the translation folder.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
@@ -96,4 +92,3 @@ If the source file is related to another asset, AEM Assets fetches the refenced 
 1. Select the asset that is related to the source, and then click/tap **[!UICONTROL Reveal in Assets]**. The translated related asset is displayed.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
-

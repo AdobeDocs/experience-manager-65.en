@@ -79,7 +79,7 @@ For iPads, this setting can be altered by modifying the value of `geoLocManadato
 
 ### Clearing a signature {#clearing-a-signature}
 
-While using this feature, a user can click the **Eraser **icon to clear the field, and start over. If geolocation information was added it is cleared, too.
+While using this feature, a user can click the **Eraser** icon to clear the field, and start over. If geolocation information was added it is cleared, too.
 
 ### Saving a signature {#saving-a-signature}
 
@@ -91,7 +91,7 @@ Tapping or clicking the Scribble field opens the dialog box in read-only mode.
 
 ### Selecting Pen size {#selecting-pen-size}
 
-Click the **Brushes **icon to display a list of available pen sizes. Click or tap a pen size to use the corresponding pen.
+Click the **Brushes** icon to display a list of available pen sizes. Click or tap a pen size to use the corresponding pen.
 
 ### Delete Signatures from the form {#delete-signatures-from-the-form}
 

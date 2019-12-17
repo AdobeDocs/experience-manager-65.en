@@ -4,7 +4,7 @@ seo-title: Video profiles
 description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. You can also add smart crop to your videos.
 seo-description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. You can also add smart crop to your videos.
 uuid: 26a20984-db63-41e9-b16c-6e164b7596a0
-contentOwner: Chiradeep Majumdar
+contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
@@ -112,7 +112,7 @@ Note that Adobe Sensei is currently limited to 9000 frames. That is, five minute
 >
 >For video smart crop to work, you must include one or more video encoding presets with your video profile.
 
-To use smart crop for video, you create an adaptive or progressive video encoding profile. As part of your profile, use the **[!UICONTROLSmart Crop Ratio]** tool to select pre-defined aspect ratios. As an example, after you define your video encoding presets, you can add a "Mobile Landscape" definition with an aspect ratio of 16x9, and a "Mobile Portrait" definition with an aspect ratio of 9x16. Other aspect or crop ratios from which you can choose include 1x1, 4x3, and 4x5.
+To use smart crop for video, you create an adaptive or progressive video encoding profile. As part of your profile, use the **[!UICONTROL Smart Crop Ratio]** tool to select pre-defined aspect ratios. As an example, after you define your video encoding presets, you can add a "Mobile Landscape" definition with an aspect ratio of 16x9, and a "Mobile Portrait" definition with an aspect ratio of 9x16. Other aspect or crop ratios from which you can choose include 1x1, 4x3, and 4x5.
 
 ![Editing a video encoding profile with smart crop](assets/edit-smart-crop-video2.png)
 

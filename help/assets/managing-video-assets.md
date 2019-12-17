@@ -11,21 +11,21 @@ docset: aem65
 
 # Manage video assets {#manage-video-assets}
 
-Learn how to manage and edit the video assets in Adobe Experience Manager (AEM) Assets. Also, if you are licensed to use Dynamic Media, see the [Dynamic Media Video documentation](/help/assets/video.md).
+Learn how to manage and edit the video assets in Adobe Experience Manager (AEM) Assets. Also, if you are licensed to use Dynamic Media, see the [Dynamic Media video documentation](/help/assets/video.md).
 
-## Upload and Preview video assets {#upload-and-preview-video-assets}
+## Upload and preview video assets {#upload-and-preview-video-assets}
 
 Adobe Experience Manager Assets generates previews for video assets with the extension MP4. If the format of the asset is not MP4, install the FFmpeg pack to generate a preview. FFmpeg creates video renditions of type OGG and MP4. You can preview these renditions in the AEM Assets user interface.
 
 1. In the Digital Assets folder or subfolders, navigate to the location where you want to add digital assets.
 1. To upload the asset, click or tap **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Files]**. Alternatively, drop it directly in the assets area. See [Uploading assets](managing-assets-touch-ui.md#uploading-assets) for details around the upload operation.
-1. To preview a video in the Card view, click the **[!UICONTROL Play]** button on the video asset.
+1. To preview a video in the Card view, tap the **[!UICONTROL Play]** button on the video asset.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-   You can pause or play video in the Card view only. The Play/Pause button is not available in the list view.
+   You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] buttons are not available in the list view.
 
-1. To preview the video in the asset details page, click/tap the Edit icon on the card.
+1. To preview the video in the asset details page, click or tap the **[!UICONTROL Edit]** icon on the card.
 
    The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen.
 
@@ -33,9 +33,9 @@ Adobe Experience Manager Assets generates previews for video assets with the ext
 
 ## Configuration to upload assets that are larger than 2 GB {#configuration-to-upload-assets-that-are-larger-than-gb}
 
-By default, the AEM Assets Touch UI does not let you upload any assets that are larger than 2 GB because of a file size limit. However, you can overwrite this limit by going into CRXDE Lite and creating a node under the `/apps` directory. The node must have the same node name, directory structure, and comparable node properties of order.
+By default, the Experience Manager Assets does not let you upload any assets that are larger than 2 GB because of a file size limit. However, you can overwrite this limit by going into CRXDE Lite and creating a node under the `/apps` directory. The node must have the same node name, directory structure, and comparable node properties of order.
 
- In addition to AEM Assets configuration, change the following configurations to upload large assets:
+ In addition to Experience Manager Assets configuration, change the following configurations to upload large assets:
 
 * Increase the token expiration time. See [!UICONTROL Adobe Granite CSRF Servlet] in Web Console at `https://[aem_server]:[port]/system/console/configMgr`. For more information, see [CSRF protection](/help/sites-developing/csrf-protection.md).
 * Increase the `receiveTimeout` in Dispatcher configuration. For more information, see [Experience Manager Dispatcher configuration](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
@@ -70,21 +70,19 @@ To configure a higher file size limit, perform the following steps in the `/apps
 
 ## Publish video assets {#publish-video-assets}
 
-After your video assets are published, they are available to you for including in a web page by way of a URL or embedding on a web page. See [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md).
+After your video assets are published, they are available to you for including in a web page by way of a URL or embedding on a web page. See [publishing assets](/help/assets/publishing-dynamicmedia-assets.md).
 
 ## Annotate video assets {#annotate-video-assets}
 
-1. From the Assets console, click or tap the Edit icon on the asset card to display the asset details page.
-1. To play the video, click/tap the Preview icon.
-1. To annotate the video, click the **[!UICONTROL Annotate]** button. An annotation is added at the particular timepoint (frame) in the video.
-
-   While annotating, you can draw on the canvas and include a comment with the drawing. Comments are auto-saved.
+1. From the Assets console, click or tap the [!UICONTROL Edit] icon on the asset card to display the asset details page.
+1. To play the video, click or tap the [!UICONTROL Preview] icon.
+1. To annotate the video, click the **[!UICONTROL Annotate]** button. An annotation is added at the particular timepoint (frame) in the video. When annotating, you can draw on the canvas and include a comment with the drawing. Comments are auto-saved.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
    To exit the annotation wizard, click **[!UICONTROL Close]**.
 
-1. To jump to a specific point in the video, specify the time in seconds in the **text** field and click **Jump**. For example, to skip the first 10 seconds of video, enter **20** in the **text** field.
+1. Seek to a specific point in the video, specify the time in seconds in the **text** field and click **Jump**. For example, to skip the first 10 seconds of video, enter 20 in the text field.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 

@@ -508,8 +508,7 @@ These options determine how Microsoft Word files are converted. For instructions
 
 If a Microsoft Word style name includes a comma (,) or equal sign (=), precede the special characters with the escape character (“\_). For example, specify a style named “Heading, 1" as Heading\, 1.
 
-**Acrobat PDFMaker Encoding:** Specifies the encoding type of the input plain-text files to the Acrobat PDFMaker. For example, if you are using a UTF-8 encoded file, select UTF-8 for best results.**
-**
+**Acrobat PDFMaker Encoding:** Specifies the encoding type of the input plain-text files to the Acrobat PDFMaker. For example, if you are using a UTF-8 encoded file, select UTF-8 for best results.
 
 ## Microsoft Visio settings (Windows only) {#visio}
 

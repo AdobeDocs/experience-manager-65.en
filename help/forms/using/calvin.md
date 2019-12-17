@@ -97,7 +97,7 @@ The following example walks you through creation of a test suite for testing mul
 
    The clientlibs folder contains the registration aspect of your application (JS and Init). It is recommended that you register all Hobbes test suites objects specific to a form in the clientlibs folder.
 
-1. Specify the following property values in the newly created node (here afTestRegistration) and then click** Save All**. These properties help Hobbes recognize the folder as a test. To reuse this client library as a dependency in other client libraries, name it as granite.testing.calvin.tests.
+1. Specify the following property values in the newly created node (here afTestRegistration) and then click **Save All**. These properties help Hobbes recognize the folder as a test. To reuse this client library as a dependency in other client libraries, name it as granite.testing.calvin.tests.
 
 <table>
  <tbody>
@@ -154,7 +154,7 @@ The following example walks you through creation of a test suite for testing mul
 
    The above code creates a test suite named **Adaptive Form - Demo Test**. To create a test suite with a different name, change the name accordingly.
 
-1. Click **Create** > **Create Node** to create a node under the clientlib folder for each form that you want to test. This example uses a node named **testForm **to test an adaptive form named **testForm** `.`Specify the following properties and click **OK**:
+1. Click **Create** > **Create Node** to create a node under the clientlib folder for each form that you want to test. This example uses a node named **testForm** to test an adaptive form named **testForm**. Specify the following properties and click **OK**:
 
     * Name: testForm (your form name)
     * Type: cq:ClientLibraryFolder

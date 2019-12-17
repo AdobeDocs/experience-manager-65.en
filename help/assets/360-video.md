@@ -4,7 +4,7 @@ seo-title: 360 VR Virtual Reality Video
 description: Learn how to work with 360 and Virtual Reality (VR) Video in Dynamic Media.
 seo-description: Learn how to work with 360 and Virtual Reality (VR) Video in Dynamic Media.
 uuid: c21bf2c0-7acc-401f-857e-0186de86e7a1
-contentOwner: rbrough
+contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference

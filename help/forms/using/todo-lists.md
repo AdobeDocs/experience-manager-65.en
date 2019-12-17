@@ -252,7 +252,7 @@ You can submit multiple tasks from your To Do list. Only tasks of the same proce
 
    >[!NOTE]
    >
-   >This option is not available for tasks for which isMustOpenToComplete field is selected in the Assign Task step in Workbench, while designing a process. Checkboxes of such tasks in the TO- ``DO list remain disabled always.
+   >This option is not available for tasks for which isMustOpenToComplete field is selected in the Assign Task step in Workbench, while designing a process. Checkboxes of such tasks in the TO-DO list remain disabled always.
 
 1. Select tasks for bulk approval. Multiple tasks of the same process, with the same task names, and the same route options can be selected. Once you select one task for approval, only the tasks with the same process, with the same task names, and the same route options remain enabled. The rest are disabled.
 
@@ -350,7 +350,7 @@ If you are granted access to another user’s To-do list, you cannot view any ta
 **Access another queue**
 
 1. In the **Preferences **tab, open the **Queues** tab.
-1. Click '+' for the 'User queues that I have access to'. Search for the name of the user in the pop- ``up dialog.
+1. Click '+' for the 'User queues that I have access to'. Search for the name of the user in the pop-up dialog.
 1. Select the name of the user and click **Request**.
 
    >[!NOTE]
@@ -374,7 +374,7 @@ You can set a default person to which all of your tasks are sent. You can also s
 1. Click **Preferences** and click **Out Of Office**.
 1. To specify when you are out of the office, perform one of these steps:
 
-    * To specify that you are out of the office now for an indefinite time period, in the** I am currently** list, select **Out of the Office** but do not add a date range.
+    * To specify that you are out of the office now for an indefinite time period, in the **I am currently** list, select **Out of the Office** but do not add a date range.
     * To specify a start date and time that you are out of the office and click '+' for **Out of Office Schedule**. Use the calendar and time list to specify the start date and time. If you do not specify an end date and time, you are considered out of the office indefinitely from the start date and time until you change your preferences.
 
 1. To specify how your tasks are to be handled by default, select one of these options from the **When Out of the Office: Default User for Out of Office tasks** list:
