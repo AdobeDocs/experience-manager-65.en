@@ -43,7 +43,7 @@ The hybris extension of the eCommerce Integration Framework has been updated to 
 
 >[!NOTE]
 >
->* Supports up to hybris 6.4 with OCC version 2.
+>* Supports versions 18.11 and above.
 >* You will need Java 7 to run the [hybris 5 server.](https://www.hybris.com/en/architecture-technology)
 >* The hybris add-on, the [Telco Accelerator](https://www.hybris.com/en/products/telecommunication), is not supported by the AEM extension.
 >
@@ -192,7 +192,11 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 
 1. In your browser, navigate to the **hybris management console** at:
 
-   [http://localhost:9002/hmc/hybris](http://localhost:9002/hmc/hybris)
+   [https://localhost:9002/backoffice](https://localhost:9002/backoffice) 
+   
+   Use these credentials:
+   * username: admin
+   * password: nimda
 
 1. From the sidebar navigation, expland **System** and **Tools**. Then select **Import** to open the **Wizard: CSV Import** window.
 1. In the **Configuration** tab, **Upload** the following **Import file**:
