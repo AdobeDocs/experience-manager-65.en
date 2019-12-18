@@ -35,7 +35,7 @@ If a project has any related tasks, a Task Tile is displayed inside the project.
 * Percentage of active tasks
 * Percentage of overdue tasks
 
-![chlimage_1-98](assets/chlimage_1-98.png)
+![chlimage_1-98](assets/chlimage_1-98a.png)
 
 ### Viewing or Modifying the Tasks in a Project {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -45,19 +45,19 @@ Besides tracking progress, you may also want to view more information about the 
 
 Click the ellipsis (...) in the Task tile to display the list of the tasks related to the project. The tasks are divided by parent workflows. The task details are displayed along with metadata such as due date, assignee, priority, and status.
 
-![chlimage_1-99](assets/chlimage_1-99.png)
+![chlimage_1-99](assets/chlimage_1-99a.png)
 
 #### Task Details {#task-details}
 
-For more information on a particular task, in the Task List, tap/click the task and **Task Details **open.
+For more information on a particular task, in the Task List, tap/click the task and **Task Details** open.
 
-![chlimage_1-100](assets/chlimage_1-100.png)
+![chlimage_1-100](assets/chlimage_1-100a.png)
 
 ### Viewing and Modifying Task Comments {#viewing-and-modifying-task-comments}
 
 In Task details, you can edit or add comments. In addition all comments in a project are visible in the Comments area.
 
-![chlimage_1-101](assets/chlimage_1-101.png)
+![chlimage_1-101](assets/chlimage_1-101a.png)
 
 ### Adding Tasks {#adding-tasks}
 
@@ -68,7 +68,7 @@ To add a task:
 1. In the project, in the **Tasks** tile, tap/click the + icon. The **Add Task** window opens.
 1. Enter information about the task. The title of the task and which group it is assigned to are mandatory. Additional information such as the content path, description, task priority, and due date are optional. In addition, you can select the **Advanced** tab to enter the name of the task, which is used to name the URL.
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![chlimage_1-102](assets/chlimage_1-102a.png)
 
 1. Tap/click **Create**.
 
@@ -76,7 +76,7 @@ To add a task:
 
 Another way to access tasks is from the Inbox. From the inbox, you can open the content to implement the required changes. When done, you set the task status to Completed. Tasks also appear in your inbox when they are assigned to a user group that you belong to. In this case, any member of the group can perform the work and complete the task.
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![chlimage_1-103](assets/chlimage_1-103a.png)
 
 To complete a task, select the task and click **Complete**. Add information to the task and then click **Done**. See [Your Inbox](/help/sites-authoring/inbox.md) for more information.
 
