@@ -41,98 +41,23 @@ This article focuses primarily on the first two aspects of the collaboration nee
 
 ![Creative Cloud connections for AEM: Deciding which capability to use](assets/creative-connections-aem.png)
 
-Deciding on which capability to use
-
 ### Mapping of use cases and Adobe solutions {#mapping-of-use-cases-and-adobe-solutions}
 
-<table>
- <tbody>
-  <tr>
-   <th><strong>Use Case</strong></th>
-   <th><strong>Adobe Asset Link</strong></th>
-   <th><strong>AEM desktop app</strong></th>
-   <th><strong>Remarks / Other Solutions</strong></th>
-  </tr>
-  <tr>
-   <td>Discover - browse AEM folders</td>
-   <td>Yes</td>
-   <td>AEM Web UI + desktop actions</td>
-   <td>When browsing the network share, turn off the thumbnails to avoid downloading binary files of assets.<br /> </td>
-  </tr>
-  <tr>
-   <td>Discover - access AEM collections</td>
-   <td>Yes</td>
-   <td>AEM Web UI + desktop actions</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Discover - search for assets from AEM</td>
-   <td>Yes</td>
-   <td>AEM Web UI + desktop actions</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Use - open asset</td>
-   <td>Yes</td>
-   <td>Yes - for any app</td>
-   <td><a href="/help/assets/managing-assets-touch-ui.md#previewing-assets">Open from Web UI</a> or from Finder</td>
-  </tr>
-  <tr>
-   <td>Use - place asset from AEM into a document</td>
-   <td>Yes - embedding</td>
-   <td>Yes - linking or embedding</td>
-   <td>AEM desktop app gives access to assets as files on the local file system. These links in the native apps are represented by local paths.</td>
-  </tr>
-  <tr>
-   <td>Edit - open for editing</td>
-   <td>Yes - Check-out action</td>
-   <td ><p>Yes - Open action (in the network share)</p> </td>
-   <td><a href="https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html">Check-out in AAL</a> saves the asset to user's creative cloud storage account (synchronized by Creative Cloud app) by default. </td>
-  </tr>
-  <tr>
-   <td>Edit - work in progress outside AEM</td>
-   <td>Yes - Asset available in user's Creative Cloud storage account synced to desktop.</td>
-   <td>Yes</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Edit - upload changes</td>
-   <td>Yes - <a href="https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html">Check-in action</a> with optional comment</td>
-   <td>Yes</td>
-   <td><p> </p> </td>
-  </tr>
-  <tr>
-   <td>Upload - single file</td>
-   <td>Yes - uploads current active document</td>
-   <td>Yes</td>
-   <td><a href="/help/assets/managing-assets-touch-ui.md#uploading-assets">Web UI Upload</a></td>
-  </tr>
-  <tr>
-   <td>Upload - multiple files / hierarchical folder structures</td>
-   <td>No</td>
-   <td>Yes</td>
-   <td><a href="/help/assets/managing-assets-touch-ui.md#uploading-assets">Web UI Upload</a></p> <p>Custom script / tool </p> </td>
-  </tr>
-  <tr>
-   <td>Misc - user and login</td>
-   <td >Creative Cloud user logged into Creative Cloud desktop app gets recognized (SSO)</td>
-   <td>AEM user / login</td>
-   <td >Users of both solutions count against the AEM user quota.</td>
-  </tr>
-  <tr>
-   <td>Misc - network and access</td>
-   <td>Requires access from user's desktop to AEM deployment over network</td>
-   <td>Requires access from user's desktop to AEM deployment over network<br /> <br /> </td>
-   <td>Adobe Asset Link does not share network proxy environment.<br /> </td>
-  </tr>
-  <tr>
-   <td>Misc - Migrate large number of assets</td>
-   <td>No<br /> <br /> </td>
-   <td>No<br /> <br /> </td>
-   <td><a href="/help/assets/assets-migration-guide.md">Migration Guide</a></td>
-  </tr>
- </tbody>
-</table>
+| Use Case | Adobe Asset Link | AEM desktop app | Remarks / Other Solutions |
+|----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| Discover - browse AEM folders | Yes | AEM Web UI + desktop actions | When browsing the network share, turn off the thumbnails to avoid downloading binary files of assets. |
+| Discover - access AEM collections | Yes | AEM Web UI + desktop actions |  |
+| Discover - search for assets from AEM | Yes | AEM Web UI + desktop actions |  |
+| Use - open asset | Yes | Yes - for any app | [Open from Web interface](/help/assets/managing-assets-touch-ui.md#previewing-assets) or from Finder |
+| Use - place asset from AEM into a document | Yes - embedding | Yes - linking or embedding | AEM desktop app gives access to assets as files on the local file system. These links in the native apps are represented by local paths. |
+| Edit - open for editing | Yes - Check-out action | Yes - Open action (in the network share) | [Check-out in AAL](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) saves the asset to user's creative cloud storage account (synchronized by Creative Cloud app) by default. |
+| Edit - work in progress outside AEM | Yes - Asset available in user's Creative Cloud storage account synced to desktop. | Yes |  |
+| Edit - upload changes | Yes - [Check-in action](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) with optional comment | Yes |  |
+| Upload - single file | Yes - uploads current active document | Yes | [Upload via web interface](/help/assets/managing-assets-touch-ui.md#uploading-assets) |
+| Upload - multiple files / hierarchical folder structures | No | Yes | [Upload via web interface](/help/assets/managing-assets-touch-ui.md#uploading-assets); Custom scripting or tool |
+| Misc - user and login | Creative Cloud user logged into Creative Cloud desktop app gets recognized (SSO) | AEM user / login | Users of both solutions count against the AEM user quota. |
+| Misc - network and access | Requires access from user's desktop to AEM deployment over network | Requires access from user's desktop to AEM deployment over network | Adobe Asset Link does not share network proxy environment. |
+| Misc - Migrate large number of assets | No | No | [Migration Guide](/help/assets/assets-migration-guide.md) |
 
 To support asset distribution use cases, other solutions should be considered:
 

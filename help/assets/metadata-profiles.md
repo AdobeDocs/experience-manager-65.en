@@ -100,7 +100,7 @@ You can apply a metadata profile to a folder from within the **[!UICONTROL Tools
 
 Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
-You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
 #### Apply metadata profiles to folders from Profiles user interface {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
