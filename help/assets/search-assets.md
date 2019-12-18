@@ -401,9 +401,10 @@ Browse and select asset in the asset picker
 The search capability in AEM Assets has the following limitations:
 
 * Do not enter a leading space in the search query otherwise the search does not work.
-* AEM may continue to show the search term after you select properties of an asset from searched results and then cancel the search<!--(CQ-4273540)-->.
+* AEM may continue to show the search term after you select properties of an asset from searched results and then cancel the search. <!-- (CQ-4273540) -->
 * When searching for folders or files and folders, the search results cannot be sorted on any parameter.
 * If you press return without tying anything in Omnisearch bar, AEM returns a list of only files and not folders. If you search specifically for folders without using a keyword, AEM does not return any results.
+* Using the [!UICONTROL Select All] check box, you can only select the first 100 searched assets in card view and first 200 searched assets in list view.
 
 Visual search or similarity search has the following limitations:
 
@@ -414,7 +415,7 @@ Visual search or similarity search has the following limitations:
 
 * When monitoring the review status of assets, use the appropriate option to find which assets are approved or assets that are pending approval.
 * Use the Insights predicate to search for supported assets based on their usage statistics obtained from various Creative apps. Usage data is grouped under Usage score, Impressions, Clicks, and Media channels where the assets appear categories.
-* Use check box to select all the search results or the filtered search results to operate on the selection. It selects all searched assets irrespective of how many assets are displayed in the current user view. For example, you can download all the selected assets, update metadata properties in bulk for all the selected assets, or add selected assets to a Collection.
+* Use the [!UICONTROL Select All] check box to select the searched assets. It selects first 100 assets in card view and first 200 assets in list view. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection.
 * To search for assets that do not contain the mandatory metadata, see [mandatory metadata](#mandatorymetadata).
 * Search uses all metadata fields. A generic search, such as searching for 12, usually returns many results. For better results, use double (not single) quotes or ensure that the number is contiguous to a word without a special character (for example *shoe12*).
 * Full text search supports operators such as -, ^, and so on. To search these letters as string literals, enclose the search expression in double quotes. For example, use "Notebook - Beauty" instead of Notebook - Beauty.
@@ -660,4 +661,4 @@ See the issues and possible course of action below:
 * If an expected search filter/predicate is not visible, contact your administrator.
 * When searching for visually similar images, at times an expected image may be missing from the search results. Check if such assets are indexed and smart tagged.
 * When searching for visually similar images, at times a seemingly irrelevant image may be displayed in the search results. AEM displays as many potentially relevant assets as possible. Less relevant images, if any, are added to the results but with a lower search ranking. The quality of the matches and relevance of searched assets decrease as you scroll down the search results.
-
+* When selecting and operating on searched assets, all searched assets may not be operated upon. The [!UICONTROL Select All] option only selects first 100 search results in card view and first 200 search results in list view.

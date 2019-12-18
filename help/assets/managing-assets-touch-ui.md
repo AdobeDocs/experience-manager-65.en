@@ -936,23 +936,25 @@ Quick action icons are available for a single asset at a time. Depending upon yo
 * Touch devices: Touch and hold. For example, on an iPad, you can tap-and-hold an asset so that the quick actions display.
 * Non-touch devices: Hover pointer. For example, On a desktop device, the quick action bar is displayed if you hover the pointer over the asset thumbnail.
 
-### Navigating and Selecting Assets {#navigating-and-selecting-assets}
+### Navigate and select assets {#navigating-and-selecting-assets}
 
-You can view, navigate through, and select assets with any of the available views (Card, Column, and List) using the **[!UICONTROL Select]** icon. The **[!UICONTROL Select]** icon appears as a quick action in the Card view.
+You can view, navigate through, and select assets with any of the available views (Card, Column, and List) using the **[!UICONTROL Select]** option. 
 
-![select_quick_action](assets/select_quick_action.png)
-
-In List view, the **[!UICONTROL Select]** icon appears when you hover the mouse icon over the thumbnail before the names of the assets/folder in the list.
+In list view and column view, the **[!UICONTROL Select]** option displays when you hover the pointer over the asset thumbnail.
 
 ![select_quick_in_listview](assets/select_quick_in_listview.png)
 
-Similar to List view, the **[!UICONTROL Select]** icon appears when you hover the mouse icon over the thumbnail before the names of the assets/folder in Column view.
-
 ![select_quick_in_columnview](assets/select_quick_in_columnview.png)
 
-For more information, see [Viewing and Selecting your Resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+In card view, the **[!UICONTROL Select]** option displays as a quick action.
 
-## Editing Images {#editing-images}
+![select_quick_action](assets/select_quick_action.png)
+
+When browsing a folder or a collection in the Assets user interface in a browser, you can select all the assets by using the [!UICONTROL Select All] option from the upper-right corner.
+
+For more information, see [view and selecting your resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+
+## Edit images {#editing-images}
 
 The editing tools in the AEM Assets interface let you perform small editing jobs on image assets. You can crop, rotate, flip, and perform other editing jobs on images. You can also add image maps to assets.
 
