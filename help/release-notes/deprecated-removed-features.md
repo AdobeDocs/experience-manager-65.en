@@ -123,7 +123,7 @@ Customers are advised to review if they make use of the feature/capability in th
    <td>Adobe recommends customers that still require jQuery UI for thier code to add it into thier project code base.</td>
   </tr>
   <tr>
-   <td>Developres</td>
+   <td>Developers</td>
    <td><p>jQuery Animiation client library (granite.jquery.animation)</p> <p>Adobe does not plan to further maintain and update the jQuery Animation client library that is shipped as part of the distribution (Quickstart)</p> </td>
    <td>Adobe recommends customers that still require jQuery Animations for thier code to add it into thier project code base.</td>
   </tr>
