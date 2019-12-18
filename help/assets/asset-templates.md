@@ -41,9 +41,9 @@ You can export the updated file within the parent folder in the following format
 
 You can also download the output in these formats to your local system.
 
-## Creating a Collateral {#creating-a-collateral}
+## Create a Collateral {#creating-a-collateral}
 
-Consider a scenario where you want to create digital printable collateral, such as brochures, flyers, and ads for an upcoming campaign and share with outlet stores globally. Creating collateral based on a template helps deliver a unified customer experience across channels. Designers can create the campaign templates (single-page or multi-page) using a creative solution, such as InDesign and upload the templates to AEM Assets for you.
+Consider a scenario where you want to create digital printable collateral, such as brochures, flyers, and ads for an upcoming campaign and share with outlet stores globally. Creating collateral based on a template helps deliver a unified customer experience across channels. Designers can create the campaign templates (single-page or multi-page) using a creative solution, such as InDesign and upload the templates to AEM Assets for you. Before creating a collateral, have one or more INDD templates uploaded to and available in Experience Manager in advance.
 
 1. Click or tap the AEM logo, and then click/tap Assets.
 1. From the options, choose **[!UICONTROL Templates]**.
@@ -54,7 +54,7 @@ Consider a scenario where you want to create digital printable collateral, such 
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
-1. Choose a template for your brochure, and click/tap **[!UICONTROL Next]**.
+1. Have one or more INDD templates uploaded to and available in Experience Manager in advance. Choose a template for your brochure, and click/tap **[!UICONTROL Next]**.
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
