@@ -94,21 +94,21 @@ You can add new tabs or form items to the metadata schema form. The tabs and for
 The **[!UICONTROL Build Form]** tab lists form items that you use in your schema form. The **[!UICONTROL Settings]** tab provides the attributes of each item that you select in the **[!UICONTROL Build Form]** tab. The following table lists the form items available in the **[!UICONTROL Build Form]** tab:
 
 | Component Name | Description |
-|---------------------|-------------------------------------------------------------------------------------|
-| Section Header | Add a section heading for a list of common components. |
-| Single Line Text | Add a single line text property. It is stored as a string. |
-| Multi Value Text | Add a multi value text property. It is stored as a string array. |
-| Number | Add a number component. |
-| Date | Add a date component. |
-| Dropdown | Add a dropdown list. |
-| Standard Tags | Add a tag. |
-| Smart Tags | Add to augment search capabilities by automatically adding metadata tags. |
-| Hidden Field | Add a hidden field. It is sent as a POST parameter when the asset is saved. |
-| Asset Referenced By | Add this component to view list of assets referenced by the asset. |
-| Asset Referencing | Add to display a list of assets that reference the asset. |
-| Products References | Add to show the list of products linked with the asset. |
-| Asset Rating | Add to display options for rating the asset. |
-| Contextual Metadata | Add to control the display of other metadata tabs in the properties page of assets. |
+|---|---|
+| [!UICONTROL Section Header] | Add a section heading for a list of common components. |
+| [!UICONTROL Single Line Text] | Add a single line text property. It is stored as a string. |
+| [!UICONTROL Multi Value Text] | Add a multi value text property. It is stored as a string array. |
+| [!UICONTROL Number] | Add a number component. |
+| [!UICONTROL Date] | Add a date component. |
+| [!UICONTROL Dropdown] | Add a dropdown list. |
+| [!UICONTROL Standard Tags] | Add a tag. |
+| [!UICONTROL Smart Tags] | Add to augment search capabilities by automatically adding metadata tags. |
+| [!UICONTROL Hidden Field] | Add a hidden field. It is sent as a POST parameter when the asset is saved. |
+| [!UICONTROL Asset Referenced By] | Add this component to view list of assets referenced by the asset. |
+| [!UICONTROL Asset Referencing] | Add to display a list of assets that reference the asset. |
+| [!UICONTROL Products References] | Add to show the list of products linked with the asset. |
+| [!UICONTROL Asset Rating] | Add to display options for rating the asset. |
+| [!UICONTROL Contextual Metadata] | Add to control the display of other metadata tabs in the properties page of assets. |
 
 #### Edit the metadata component {#edit-the-metadata-component}
 
@@ -200,26 +200,26 @@ You can use an existing template for a different MIME type. For example, use the
 
 In this case, create a new node at `/etc/dam/metadataeditor/mimetypemappings` in the CRX repository. Specify a name for the node and define the following properties:
 
-| **Name** |**Description** |**Type** |**Value** |
+| Name | Description | Type | Value |
 |---|---|---|---|
-| `exposedmimetype` |Name of the existing form to be mapped  |String |`image/jpeg` |
-| `mimetypes` |List of MIME types that use the form defined in the `exposedmimetype` attribute |String | `image/png` |
+| `exposedmimetype` | Name of the existing form to be mapped | `String` | `image/jpeg` |
+| `mimetypes` | List of MIME types that use the form defined in the `exposedmimetype` attribute | `String` | `image/png` |
 
 AEM Assets maps the following MIME types and schema forms:
 
-| Schema Form |MIME types |
+| Schema Form | MIME types |
 |---|---|
-| image/jpeg |image/pjpeg |
-| image/tiff |image/x-tiff |
-| application/pdf |application/postscript |
-| application/x-ImageSet |Multipart/Related; type=application/x-ImageSet |
-| application/x-SpinSet |Multipart/Related; type=application/x-SpinSet |
-| application/x-MixedMediaSet |Multipart/Related; type=application/x-MixedMediaSet |
-| video/quicktime |video/x-quicktime |
-| video/mpeg4 |video/mp4 |
-| video/avi |video/avi, video/msvideo, video/x-msvideo |
-| video/wmv |video/x-ms-wmv |
-| video/flv |video/x-flv |
+| image/jpeg | image/pjpeg |
+| image/tiff | image/x-tiff |
+| application/pdf | application/postscript |
+| application/x-ImageSet | Multipart/Related; type=application/x-ImageSet |
+| application/x-SpinSet | Multipart/Related; type=application/x-SpinSet |
+| application/x-MixedMediaSet | Multipart/Related; type=application/x-MixedMediaSet |
+| video/quicktime | video/x-quicktime |
+| video/mpeg4 | video/mp4 |
+| video/avi | video/avi, video/msvideo, video/x-msvideo |
+| video/wmv | video/x-ms-wmv |
+| video/flv | video/x-flv |
 
 ## Grant access to metadata schemas {#grant-access-to-metadata-schemas}
 
@@ -298,4 +298,4 @@ You can define mandatory fields at a folder level, which is enforced on assets t
 
    >[!CAUTION]
    >
-   >The metadata validation checks are resource intensive and may impact the performance of your system. Schedule the checks accordingly. If the server cannot cope up with the load, try disabling this job
+   >The metadata validation checks are resource intensive and may impact the performance of your system. Schedule the checks accordingly. If the server cannot cope up with the load, try disabling this job.
