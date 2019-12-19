@@ -128,9 +128,7 @@ When creating a new editable template you:
 * [Edit the template](#editingtemplates) to define the:
 
     * [Structure](#editingatemplatestructureauthor) - Predefined content that cannot be changed on pages created with the template.
-
     * [Initial Content](#editing-a-template-initial-content-author) - Predefined content that can be changed on pages created with the template.
-
     * [Layout](#editingatemplatelayoutauthor) - For a range of devices.
     * [Styles](/help/sites-authoring/style-system.md) - Define the styles to be used with the template and its components.
 
