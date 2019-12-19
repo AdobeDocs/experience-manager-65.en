@@ -44,20 +44,20 @@ This article focuses primarily on the first two aspects of the collaboration nee
 ### Mapping of use cases and Adobe solutions {#mapping-of-use-cases-and-adobe-solutions}
 
 | Use Case | Adobe Asset Link | AEM desktop app | Remarks / Other Solutions |
-|----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+|---|---|---|---|
 | Discover - browse AEM folders | Yes | AEM Web UI + desktop actions | When browsing the network share, turn off the thumbnails to avoid downloading binary files of assets. |
-| Discover - access AEM collections | Yes | AEM Web UI + desktop actions |  |
-| Discover - search for assets from AEM | Yes | AEM Web UI + desktop actions |  |
-| Use - open asset | Yes | Yes - for any app | [Open from Web interface](/help/assets/managing-assets-touch-ui.md#previewing-assets) or from Finder |
+| Discover - access AEM collections| Yes | AEM Web UI + desktop actions | |
+| Discover - search for assets from AEM  | Yes | AEM Web UI + desktop actions| |
+| Use - open asset  | Yes | Yes - for any app  | [Open from Web interface](managing-assets-touch-ui.md#previewing-assets) or from Finder |
 | Use - place asset from AEM into a document | Yes - embedding | Yes - linking or embedding | AEM desktop app gives access to assets as files on the local file system. These links in the native apps are represented by local paths. |
 | Edit - open for editing | Yes - Check-out action | Yes - Open action (in the network share) | [Check-out in AAL](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) saves the asset to user's creative cloud storage account (synchronized by Creative Cloud app) by default. |
-| Edit - work in progress outside AEM | Yes - Asset available in user's Creative Cloud storage account synced to desktop. | Yes |  |
-| Edit - upload changes | Yes - [Check-in action](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) with optional comment | Yes |  |
-| Upload - single file | Yes - uploads current active document | Yes | [Upload via web interface](/help/assets/managing-assets-touch-ui.md#uploading-assets) |
-| Upload - multiple files / hierarchical folder structures | No | Yes | [Upload via web interface](/help/assets/managing-assets-touch-ui.md#uploading-assets); Custom scripting or tool |
-| Misc - user and login | Creative Cloud user logged into Creative Cloud desktop app gets recognized (SSO) | AEM user / login | Users of both solutions count against the AEM user quota. |
+| Edit - work in progress outside AEM | Yes - Asset available in user's Creative Cloud storage account synced to desktop. | Yes | |
+| Edit - upload changes | Yes - [Check-in action](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) with optional comment | Yes | |
+| Upload - single file | Yes - uploads current active document | Yes | [Upload via web interface](managing-assets-touch-ui.md#uploading-assets) |
+| Upload - multiple files / hierarchical folder structures | No | Yes | [Upload via web interface](managing-assets-touch-ui.md#uploading-assets);<br>Custom scripting or tool |
+| Misc - user and login | Creative Cloud user logged into Creative Cloud desktop app gets recognized (SSO) | AEM user/ login | Users of both solutions count against the AEM user quota. |
 | Misc - network and access | Requires access from user's desktop to AEM deployment over network | Requires access from user's desktop to AEM deployment over network | Adobe Asset Link does not share network proxy environment. |
-| Misc - Migrate large number of assets | No | No | [Migration Guide](/help/assets/assets-migration-guide.md) |
+| Misc - Migrate large number of assets | No | No | [Migration Guide](assets-migration-guide.md) |
 
 To support asset distribution use cases, other solutions should be considered:
 

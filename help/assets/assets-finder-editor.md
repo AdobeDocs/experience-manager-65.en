@@ -91,38 +91,14 @@ The following actions are available:
 
 ![assetshare2](assets/assetshare2.bmp)
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Action</strong></td>
-   <td><strong>Description </strong></td>
-  </tr>
-  <tr>
-   <td><strong>Delete Action</strong></td>
-   <td>Users can delete the selected assets.</td>
-  </tr>
-  <tr>
-   <td><strong>Download Action</strong></td>
-   <td>Lets users download selected assets to their computers.</td>
-  </tr>
-  <tr>
-   <td><strong>Lightbox Action</strong></td>
-   <td>Saves assets to a "lightbox" where you can perform other actions on them. This comes in handy when working with assets across multiple pages. The lightbox can also be used as a shopping cart for assets.<br /> </td>
-  </tr>
-  <tr>
-   <td><strong>Move Action</strong></td>
-   <td>Users can move the asset to another location</td>
-  </tr>
-  <tr>
-   <td><strong>Tags Action</strong></td>
-   <td>Lets users add tags to selected assets</td>
-  </tr>
-  <tr>
-   <td><strong>View Asset Action </strong></td>
-   <td>Opens the asset in the Asset editor for user manipulation.</td>
-  </tr>
- </tbody>
-</table>
+ | Action | Description |
+ |---|---|
+ | [!UICONTROL Delete Action] | Users can delete the selected assets. |
+ | [!UICONTROL Download Action] | Lets users download selected assets to their computers. |
+ | [!UICONTROL Lightbox Action] | Saves assets to a "lightbox"   where you can perform other actions on them. This comes in handy when working   with assets across multiple pages. The lightbox can also be used as a   shopping cart for assets. |
+ | [!UICONTROL Move Action] | Users can move the asset to another   location |
+ | [!UICONTROL Tags Action] | Lets users add tags to selected assets |
+ | [!UICONTROL View Asset Action] | Opens the asset in the Asset editor for   user manipulation. |
 
 1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
 
@@ -142,10 +118,10 @@ To change how search results are viewed:
 
 The following lenses are available:
 
-| **Lens** |**Description** |
+| Lens | Description |
 |---|---|
-| **List Lens** |Presents the assets in a list fashion with details. |
-| **Mosaic Lens** |Presents assets in a mosaic fashion.  |
+| **[!UICONTROL List Lens]** |Presents the assets in a list fashion with details. |
+| **[!UICONTROL Mosaic Lens]** |Presents assets in a mosaic fashion. |
 
 #### Mosaic Lens {#mosaic-lens}
 
@@ -196,12 +172,12 @@ To add predicates:
 
 The following predicates are available:
 
-| **Predicate** |**Description** |
-|---|---|
-| **Date Predicate** |Lets users search for assets that were modified before and after certain dates. |
-| **Options Predicate** |The site owner can specify a property to search for (as in the property predicate, for example cq:tags) and a content tree to populate the options from (for example the tag tree). Doing so generates a list of options where the users can select the values (tags) that the selected property (tag property) should have. This predicate lets you build list controls like the list of tags, file types, image orientations, and so on. It is great for a fixed set of options. |
-| **Path Predicate** |Lets users define the path and subfolders, if desired. |
-| **Property Predicate** |The site owner specifies a property to search for, e.g. tiff:ImageLength and the user can then enter a value, e.g. 800. This returns all images that are 800 pixels high. Useful predicate if your property can have arbitrary values.  |
+| Predicate | Description |
+ |---|---|
+ | **[!UICONTROL Date Predicate]** |Lets users search for assets that were modified before and after certain dates. |
+ | **[!UICONTROL Options Predicate]** |The site owner can specify a property to search for (as in the property predicate, for example cq:tags) and a content tree to populate the options from (for example the tag tree). Doing so generates a list of options where the users can select the values (tags) that the selected property (tag property) should have. This predicate lets you build list controls like the list of tags, file types, image orientations, and so on. It is great for a fixed set of options. |
+ | **[!UICONTROL Path Predicate]** |Lets users define the path and subfolders, if desired. |
+ | **[!UICONTROL Property Predicate]** |The site owner specifies a property to search for, e.g. tiff:ImageLength and the user can then enter a value, e.g. 800. This returns all images that are 800 pixels high. Useful predicate if your property can have arbitrary values. |
 
 For more information, see the [predicate Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
 
@@ -270,13 +246,13 @@ To add asset editor components:
 >
 >When designing the asset editor page, you create components that are either read-only or editable. Users know a field can be edited if an image of a pencil appears in that component. By default, most components are set up as read-only.
 
-| **Component** |**Description** |
+| Component | Description |
 |---|---|
-| Metadata Form and Text Field |Lets you add additional metadata to an asset and perform an action, such as submitting, on that asset. |
-| Sub Assets |Lets you customize sub-assets. |
-| Tags |Lets users select and add tags to an asset. |
-| Thumbnail |Shows a thumbnail of the asset, its filename, and lets you add an alternate text. You can add asset editor actions here as well. |
-| Title |Displays the asset title, which can be customized. |
+| **[!UICONTROL Metadata Form] and [!UICONTROL Metadata Text Field]** | Lets you add additional metadata to an asset and perform an action, such as submitting, on that asset. |
+| **[!UICONTROL Sub Assets]** | Lets you customize sub-assets. |
+| **Tags** | Lets users select and add tags to an asset. |
+| **[!UICONTROL Thumbnail]** | Shows a thumbnail of the asset, its filename, and lets you add an alternate text. You can add asset editor actions here as well. |
+| **[!UICONTROL Title]** | Displays the asset title, which can be customized. |
 
 ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
 
@@ -396,14 +372,14 @@ To add actions to the Asset Editor page:
 
 The following actions are available:
 
-| **Action** |**Description** |
-|---|---|
-| **Download** |Lets users download selected assets to their computers. |
-| **Editors** |Lets users edit an image (interactive editing)  |
-| **Lightbox** |Saves assets to a "lightbox" where you can perform other actions on them. This comes in handy when working with assets across multiple pages. |
-| **Locking** |Lets users lock an asset. This functionality is not enabled by default and needs to be enabled in the list of components. |
-| **References** |Click this to show on what pages the asset is being used.  |
-| **Versioning** |Lets you create and restore versions of an asset.  |
+ | Action | Description |
+ |---|---|
+ | [!UICONTROL Download] | Lets users download selected   assets to their computers. |
+ | [!UICONTROL Editors] | Lets users edit an image   (interactive editing) |
+ | [!UICONTROL Lightbox] | Saves assets to a   "lightbox" where you can perform other actions on them. This comes   in handy when working with assets across multiple pages. |
+ | [!UICONTROL Locking] | Lets users lock an asset. This   functionality is not enabled by default and needs to be enabled in the list   of components. |
+ | [!UICONTROL References] | Click this to show on what pages   the asset is being used. |
+ | [!UICONTROL Versioning] | Lets you create and restore   versions of an asset. |
 
 1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
 
