@@ -124,7 +124,7 @@ AEM provides a console to check the statues of all the live copies of a source f
 1. Select a source folder. Click **[!UICONTROL Properties]** from the toolbar. Alternatively, use the keyboard shortcut `p`.
 1. Click **[!UICONTROL Live Copy Source]**. To open the console, click **[!UICONTROL Live Copy Overview]**. This dashboard provides a top-level status of all the child assets.
 
-   ![View statuses of live copies in Live Copy Console of source](assets/livecopy_statuses.png)
+   ![View statuses of live copies in Live Copy Console of source](assets/livecopy-statuses.png)
    *Figure: View statuses of live copies in Live Copy Console of source*
 
 1. To view the detailed information about each asset in the live copy folder, select an asset and click **[!UICONTROL Relationship Status]** from the toolbar.
