@@ -1,8 +1,8 @@
 ---
-title: Forms Repository Restructuring in AEM 6.4
-seo-title: Forms Repository Restructuring in AEM 6.4
-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Forms.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Forms.
+title: Forms Repository Restructuring in AEM 6.5
+seo-title: Forms Repository Restructuring in AEM 6.5
+description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Forms.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Forms.
 uuid: e60830d4-23ca-4be9-941a-ee4abe4786a6
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,22 +10,22 @@ topic-tags: repo_restructuring
 discoiquuid: 1ce9a622-5968-407f-a74b-d325a2bff669
 ---
 
-# Forms Repository Restructuring in AEM 6.4{#forms-repository-restructuring-in-aem}
+# Forms Repository Restructuring in AEM 6.5{#forms-repository-restructuring-in-aem}
 
-As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.4 should use this page to assess the work effort associated with repository changes impacting the AEM Forms Solution. Some changes require work effort during the AEM 6.4 upgrade process, while others can be deferred until a 6.5 upgrade.
+As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the AEM Forms Solution. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a future upgrade.
 
-**With 6.4 Upgrade**
+**With 6.5 Upgrade**
 
-* [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#misc)
+* [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
 
-**Prior to 6.5 Upgrade**
+**Prior to Future Upgrade**
 
-* [Echosign Cloud Service Configuration](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#echosign-cloud-service-configuration)
-* [Recaptcha Cloud Service Configurations](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#recaptcha-cloud-service-configurations)
-* [Typekit Cloud Service Configurations](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#typekit-cloud-service-configurations)
-* [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#misc)
+* [Echosign Cloud Service Configuration](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#echosign-cloud-service-configuration)
+* [Recaptcha Cloud Service Configurations](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#recaptcha-cloud-service-configurations)
+* [Typekit Cloud Service Configurations](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#typekit-cloud-service-configurations)
+* [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
 
-## With 6.4 Upgrade {#with-upgrade}
+## With 6.5 Upgrade {#with-upgrade}
 
 ### Misc {#misc}
 
@@ -83,7 +83,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
 | **Restructuring guidance** |Changing these clientlibs was never recommended or supported. If modifications have been made to these clientlibs, they should be rolled back to use the AEM-provided code. |
 | **Notes** |N/A |
 
-## Prior to 6.5 Upgrade {#prior-to-upgrade}
+## Prior to Future Upgrade {#prior-to-upgrade}
 
 ### Echosign Cloud Service Configuration {#echosign-cloud-service-configuration}
 

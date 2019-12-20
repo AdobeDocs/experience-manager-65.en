@@ -1,8 +1,8 @@
 ---
-title: Common Repository Restructuring in AEM 6.4
-seo-title: Common Repository Restructuring in AEM 6.4
-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 that are common for all areas of AEM.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 that are common for all areas of AEM.
+title: Common Repository Restructuring in AEM 6.5
+seo-title: Common Repository Restructuring in AEM 6.5
+description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 that are common for all areas of AEM.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 that are common for all areas of AEM.
 uuid: a4bb64e5-387b-4084-9258-54e68db12f3b
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,40 +11,40 @@ topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 ---
 
-# Common Repository Restructuring in AEM 6.4 {#common-repository-restructuring-in-aem}
+# Common Repository Restructuring in AEM 6.5 {#common-repository-restructuring-in-aem}
 
-As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.4 should use this page to assess the work effort associated with repository changes potentially impacting all solutions. Some changes require work effort during the AEM 6.4 upgrade process, while others can be deferred until a 6.5 upgrade.
+As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes potentially impacting all solutions. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a future upgrade.
 
-**With 6.4 Upgrade**
+**With 6.5 Upgrade**
 
-* [Workflow Instances](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#workflow-instances)
-* [Workflow Models](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#workflow-models)
-* [Workflow Launchers](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#workflow-launchers)
-* [Workflow Scripts](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#workflow-scripts)
+* [Workflow Instances](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-instances)
+* [Workflow Models](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-models)
+* [Workflow Launchers](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-launchers)
+* [Workflow Scripts](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-scripts)
 
-**Prior to 6.5 Upgrade**
+**Prior to Future Upgrade**
 
-* [ContextHub Configurations](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#contexthub-configurations)
-* [Classic Cloud Services Designs](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#classic-cloud-services-designs)
-* [Classic Dashboards Designs](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#classic-dashboards-designs)
-* [Classic Reports Designs](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#classic-reports-designs)
-* [Default Designs](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#default-designs)
-* [Adobe DTM JavaScript Endpoint](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#adobe-dtm-javascript-endpoint)
-* [Adobe DTM Web-Hook Endpoint](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#adobe-dtm-web-hook-endpoint)
-* [Inbox Tasks](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#inbox-tasks)
-* [Multi-site Manager Blueprint Configurations](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
-* [AEM Projects Dashboard Gadget Configurations](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#aem-projects-dashboard-gadget-configurations)
-* [Replication Notification E-mail Template](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#replication-notification-e-mail-template)
-* [Tags](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#tags)
-* [Translation Cloud Services](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-cloud-services)
-* [Translation Languages](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-languages)
-* [Translation Rules](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-rules)
-* [Translation Widget Client Library](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-widget-client-library)
-* [Tree Activation Web Console](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#tree-activation-web-console)
-* [Vendor Translation Connector Cloud Services](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#vendor-translation-connector-cloud-services)
-* [Workflow Notification Email Templates](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#workflow-notification-email-templates)
+* [ContextHub Configurations](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#contexthub-configurations)
+* [Classic Cloud Services Designs](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-cloud-services-designs)
+* [Classic Dashboards Designs](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-dashboards-designs)
+* [Classic Reports Designs](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-reports-designs)
+* [Default Designs](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#default-designs)
+* [Adobe DTM JavaScript Endpoint](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#adobe-dtm-javascript-endpoint)
+* [Adobe DTM Web-Hook Endpoint](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#adobe-dtm-web-hook-endpoint)
+* [Inbox Tasks](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#inbox-tasks)
+* [Multi-site Manager Blueprint Configurations](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#multi-site-manager-blueprint-configurations)
+* [AEM Projects Dashboard Gadget Configurations](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#aem-projects-dashboard-gadget-configurations)
+* [Replication Notification E-mail Template](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#replication-notification-e-mail-template)
+* [Tags](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags)
+* [Translation Cloud Services](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-cloud-services)
+* [Translation Languages](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-languages)
+* [Translation Rules](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules)
+* [Translation Widget Client Library](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-widget-client-library)
+* [Tree Activation Web Console](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tree-activation-web-console)
+* [Vendor Translation Connector Cloud Services](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#vendor-translation-connector-cloud-services)
+* [Workflow Notification Email Templates](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
-## With 6.4 Upgrade {#with-upgrade}
+## With 6.5 Upgrade {#with-upgrade}
 
 ### Workflow Models {#workflow-models}
 
@@ -185,7 +185,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
  </tbody>
 </table>
 
-## Prior to 6.5 Upgrade {#prior-to-upgrade}
+## Prior to Future Upgrade {#prior-to-upgrade}
 
 ### ContextHub Configurations {#contexthub-configurations}
 
