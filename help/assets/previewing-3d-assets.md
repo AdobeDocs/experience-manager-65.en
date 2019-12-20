@@ -19,7 +19,7 @@ The interactive 3D viewer is available from the asset details page in AEM. The v
 Interactive 3D preview supports the following file formats: 
 
 |3D file extension |File format | MIME type |Notes |
-|-|-|-|-|
+|---|---|---|---|
 | GLB |Binary GL Transmission|model/gltf-binary ||
 | GLTF |GL Transmission Format|model/gltf+json |See **Note** below. |
 | OBJ |WaveFront 3D Object File|application/x-tgif ||

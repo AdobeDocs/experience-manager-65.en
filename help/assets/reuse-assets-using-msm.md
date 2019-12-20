@@ -199,10 +199,10 @@ Alternatively, you can initiate a rollout action from the References rail after 
 A synchronize action pulls the modifications from a source only to the selected live copy. Sync action respects and maintains the local modifications done after canceling inheritance. The local modifications are not overwritten and the canceled inheritance is not re-established. You can initiate a sync action in three ways.
 
 | Where in AEM interface | When and why to use | How to use |
-|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| References rail | Quickly synchronize when you already have the source selected. | See [Quick actions from References rail for source](#refrailsource) |
-| Toolbar in the Properties page | Initiate a sync when you already have the live copy properties open. | See [Synchronize a live copy](#synclc) |
-| Live Copy Overview console | Quickly synchronize multiple assets (not necessarily all) when source folder is selected or Live Copy Overview console is already open. Sync action is initiated for one asset at a time but is a faster way to do sync for multiple assets in one go. | See [Actions on many assets in a live copy folder](#bulkactions) |
+|---|---|---|
+| [!UICONTROL References] rail | Quickly synchronize when you already have the source selected. | See [Quick actions from References rail for source](#refrailsource) |
+| Toolbar in the [!UICONTROL Properties] page | Initiate a sync when you already have the live copy properties open. | See [Synchronize a live copy](#synclc) |
+| [!UICONTROL Live Copy Overview] console|Quickly synchronize multiple assets (not necessarily all) when source folder is selected or [!UICONTROL Live Copy Overview] console is already open. Sync action is initiated for one asset at a time but is a faster way to do sync for multiple assets in one go. | See [Actions on many assets in a live copy folder](#bulkactions) |
 
 ### Synchronize a live copy {#synclc}
 
