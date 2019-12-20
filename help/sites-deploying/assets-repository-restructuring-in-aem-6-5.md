@@ -1,8 +1,8 @@
 ---
-title: Assets Repository Restructuring in AEM 6.4
-seo-title: Assets Repository Restructuring in AEM 6.4
-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Assets.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Assets.
+title: Assets Repository Restructuring in AEM 6.5
+seo-title: Assets Repository Restructuring in AEM 6.5
+description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Assets.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Assets.
 uuid: 0e3d8163-6274-4d1b-91c7-32ca927fb83c
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,26 +10,26 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 ---
 
-# Assets Repository Restructuring in AEM 6.4 {#assets-repository-restructuring-in-aem}
+# Assets Repository Restructuring in AEM 6.5 {#assets-repository-restructuring-in-aem}
 
-As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.4 should use this page to assess the work effort associated with repository changes impacting the AEM Assets Solution. Some changes require work effort during the AEM 6.4 upgrade process, while others can be deferred until a 6.5 upgrade.
+As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the AEM Assets Solution. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a future upgrade.
 
-**With 6.4 Upgrade**
+**With 6.5 Upgrade**
 
-* [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc)
+* [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#misc)
 
-**Prior to 6.5 Upgrade**
+**Prior to Future Upgrade**
 
-* [Asset/Collection Event E-mail Notification Template](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#asset-collection-event-e-mail-notification-template)
-* [Classic Asset Share Designs](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#classic-asset-share-designs)
-* [Download Asset E-mail Notification Template](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#download-asset-e-mail-notification-template)
-* [Example DRM Licenses](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#example-drm-licenses)
-* [Link Share E-mail Notification Template](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#link-share-e-mail-notification-template)
-* [InDesign Workflow Scripts](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#indesign-workflow-scripts)
-* [Video Transcoding Configurations](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#video-transcoding-configurations)
-* [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc2)
+* [Asset/Collection Event E-mail Notification Template](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#asset-collection-event-e-mail-notification-template)
+* [Classic Asset Share Designs](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#classic-asset-share-designs)
+* [Download Asset E-mail Notification Template](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#download-asset-e-mail-notification-template)
+* [Example DRM Licenses](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#example-drm-licenses)
+* [Link Share E-mail Notification Template](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#link-share-e-mail-notification-template)
+* [InDesign Workflow Scripts](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#indesign-workflow-scripts)
+* [Video Transcoding Configurations](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#video-transcoding-configurations)
+* [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#misc2)
 
-## With 6.4 Upgrade {#with-upgrade}
+## With 6.5 Upgrade {#with-upgrade}
 
 ### Misc {#misc}
 
@@ -54,7 +54,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
  </tbody>
 </table>
 
-## Prior to 6.5 Upgrade {#prior-to-upgrade}
+## Prior to Future Upgrade {#prior-to-upgrade}
 
 ### Asset/Collection Event E-mail Notification Template {#asset-collection-event-e-mail-notification-template}
 
