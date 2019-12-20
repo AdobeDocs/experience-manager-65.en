@@ -16,7 +16,7 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 ## Adding a metadata profile {#adding-a-metadata-profile}
 
 1. Navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]** and tap **[!UICONTROL Create]**.
-1. Enter a title for the Metadata Profile, for example Sample Metadata, and tap **[!UICONTROL Submit]**. The [!UICONTROL Edit Form] for the metadata profile is displayed.
+1. Enter a title for the Metadata Profile, for example Sample Metadata, and tap **[!UICONTROL Create]**. The [!UICONTROL Edit Form] for the metadata profile is displayed.
 
    ![chlimage_1-197](assets/chlimage_1-480.png)
 
@@ -45,13 +45,13 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 1. (Optional) Add more components to the Edit Form from the **[!UICONTROL Build Form]** tab, and configure their properties in the **[!UICONTROL Settings]** tab. The following properties are available from the **[!UICONTROL Build Form]** tab:
 
 | Component | Properties |
-|------------------|----------------------------------------------------|
-| Section Header | Field Label <br /> Description |
-| Single Line Text | Field Label <br /> Map to property <br /> Default Value |
-| Multi Value Text | Field Label <br /> Map to property <br /> Default Value |
-| Number | Field Label <br /> Map to property <br /> Default Value |
-| Date | Field Label <br /> Map to property <br /> Default Value |
-| Standard Tags | Field Label <br /> Map to property <br /> Default Value <br /> Description |
+|---|---|
+| [!UICONTROL Section Header] | Field Label, <br> Description |
+| [!UICONTROL Single Line Text] | Field Label, <br> Map to property, <br> Default Value |
+| [!UICONTROL Multi Value Text] | Field Label, <br> Map to property, <br> Default Value |
+| [!UICONTROL Number] | Field Label, <br> Map to property, <br> Default Value |
+| [!UICONTROL Date] | Field Label, <br> Map to property, <br> Default Value |
+| [!UICONTROL Standard Tags] | Field Label, <br> Map to property, <br> Default Value, <br> Description |
 
    ![chlimage_1-201](assets/chlimage_1-484.png)
 
