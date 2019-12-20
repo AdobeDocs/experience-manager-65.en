@@ -43,6 +43,6 @@ While planning for an upgrade to AEM 6.5, the following per-solution pages shoul
 * [AEM Communities repository restructuring](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
 * [AEM Commerce repository restructuring](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
 
-Each page contains two sections corresponding to the urgency of the necessary changes. Anything under the "With 6.5 Upgrade" section should be tackled as part of the AEM 6.5 upgrade project. Anything under the "Prior to Future Upgrade" can be optionally deferred until post-upgrade.
+Each page contains two sections corresponding to the urgency of the necessary changes. Anything under the "With 6.5 Upgrade" section should be tackled as part of the AEM 6.5 upgrade project. Anything under the "Prior to Future Upgrade" can be optionally deferred until post upgrade.
 
 Each entry on the page includes a "Restructuring guidance" field, which details the recommended technical strategy for aligning with the new 6.5 repository  model so that the new locations are referenced for content previously located under the /etc folder. An additional "Notes" field provides any additional useful context.
