@@ -65,7 +65,7 @@ You have the option to unpublish folders from Brand Portal quickly or schedule i
 
 1. From the AEM Assets interface in AEM Author instance, select the folder you want to unpublish.
 
-   ![publish2bp-1](assets/publish2bp-1.png)
+   ![publish2bp-1](assets/publish2bp.png)
 
 1. From the toolbar, tap/click **Manage Publication**.
 

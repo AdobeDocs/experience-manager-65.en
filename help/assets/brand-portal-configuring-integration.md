@@ -137,7 +137,7 @@ After replication succeeds, you can publish assets, folders, and Collections  to
 
    Alternatively, select the assets you want to publish to Brand Portal.
 
-   ![publish2bp-2](assets/publish2bp-2.png)
+   ![publish2bp-2](assets/publish2bp.png)
 
 1. **Publish assets now**
 
