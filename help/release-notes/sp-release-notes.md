@@ -439,7 +439,7 @@ The key highlights for AEM 6.5.2.0 forms are:
 
 #### Forms add-on package {#forms-add-on-package}
 
-#### Back end integration {#backend-integration}
+#### Back end integration {#back-end-integration}
 
 * Unable to configure Form Data Model using an AWS hosted load balanced URL. NPR-30123: Hotfix for CQ-4273359
 * While creating the Form Data Model (FDM) with the Web Service Definition Language (WSDL), the error message `Caused by: com.adobe.aem.dermis.exception.DermisException: java.lang.Exception: Unable to handle content type` is returned: NPR-30477: Hotfix for CQ-4272921
