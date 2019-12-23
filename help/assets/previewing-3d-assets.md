@@ -10,7 +10,7 @@ docset: aem65
 
 # Previewing 3D assets{#previewing-3d-assets}
 
-Experience Manager supports the upload, delivery, and interactive preview of 3D assets as part of the authoring process. 
+Experience Manager supports the upload, delivery, and interactive preview of 3D assets as part of the authoring process.
 
 The interactive 3D viewer is available from the asset details page in AEM. The viewer includes, among other things, a collection of interactive camera controls that let you orbit, zoom, and pan the 3D asset. 
 

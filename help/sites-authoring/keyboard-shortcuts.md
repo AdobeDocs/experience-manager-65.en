@@ -24,7 +24,7 @@ Various keyboard shortcuts are available throughout AEM. Some apply to the use o
 The following shortcuts are available for the Sites, Commerce, Screens, Assets, Users, Groups, Projects, and Experience Fragments consoles.
 
 |Location|Shortcut|Description|
-|-|-|-|
+|---|---|---|
 |General|`Ctrl+Click`|Multi-select on a desktop device|
 |Console - Column View & Content View|`Right Arrow`|Navigate down into the structure of your website / expand tree node|
 ||`Left Arrow`|Navigate up the tree structure / collapse tree node|
@@ -53,7 +53,7 @@ Various keyboard shortcuts are also available for desktop users when using the [
 The modfier keys used for the keyboard shortcuts vary depending on the operating system used by the client.
 
 |Windows/Linux|macOS|
-|-|-|
+|---|---|
 |`Alt`|`Option`|
 |`Ctrl`|`Command`|
 
