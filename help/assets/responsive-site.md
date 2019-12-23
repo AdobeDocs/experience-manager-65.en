@@ -29,7 +29,7 @@ See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplicat
 
 1. Select a responsive image preset. The **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons appear.
 
-   ![chlimage_1-409](assets/chlimage_1-409.png)
+   ![chlimage_1-409](assets/chlimage_1-208.png)
 
    >[!NOTE]
    >
