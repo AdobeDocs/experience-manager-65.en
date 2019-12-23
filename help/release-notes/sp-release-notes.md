@@ -1,16 +1,11 @@
 ---
 title: AEM 6.5 Service Pack Release Notes
-seo-title: AEM 6.5 Service Pack Release Notes
 description: Release notes specific to Adobe Experience Manager 6.5 Service Pack 3.
-seo-description: Release notes specific to Adobe Experience Manager 6.5 Service Pack 3.
 uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
 contentOwner: User
-topic-tags: release-notes
-content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
-legacypath: /content/docs/en/aem/6-1/release-notes-sp1
 
 ---
 
@@ -101,7 +96,7 @@ Some key highlights of this service pack release are:
 
 * DAM workflows go into stale state when certain mp4 assets are uploaded, causing all the remaining workflows to go into stale state (NPR-30662).
 
-* Out of Memory Error is observed when a large PDF files (of several Giga Bytes) is uploaded to DAM and its sub-assets are processed (NPR-30614).
+* Out of Memory Error is observed when a large PDF files (of several Gigabytes) is uploaded to DAM and its sub-assets are processed (NPR-30614).
 
 * Bulk movement of assets is failing and displaying warning message (NPR-30610).
 
@@ -149,7 +144,7 @@ Some key highlights of this service pack release are:
 
 * PDF files are not indexed and content within is not searchable (CQ-4278916).
 
-* An error "Group not listed by user picker: expected false to equal true" is observed on adding Closed User Group with different principalName and authorizableId (CQ-4278177).
+* An error "Group not listed by user picker: expected false to equal true" is observed on adding Closed User Group with different `principalName` and `authorizableId` (CQ-4278177).
 
 * Assets UI Column View is showing all paths regardless of specific tenant's dam root path (CQ-4278175).
 
@@ -175,7 +170,7 @@ Some key highlights of this service pack release are:
 * When a user focuses on left rail fields and uses a keyboard shortcut to paste content, it pastes the content of the page editor clipboard instead of the content copied from the left rail fields (NPR-31172).
 * When a user adds a File Upload field to a multi-field, the image path is stored in the component node instead of the multi-field node (NPR-30882).
 * The ResponsiveGridExporter API does not return com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter interface. The com.day.cq.wcm.foundation.model.impl package is declared as private package (NPR-31398).
-* When a page containing some ExperienceFragments is opened in non-editor mode (either in Author without the editor.html prefix and wcmmode=disabled, or in Publisher)., the request ends in HTTP status error code 500 (NPR-30743).
+* When a page containing some ExperienceFragments is opened in non-editor mode (either in Author without the `editor.html` prefix and `wcmmode=disabled`, or in Publisher)., the request ends in HTTP status error code 500 (NPR-30743).
 
 ### Search and user interface {#search-ui-interface}
 
@@ -236,7 +231,7 @@ Some key highlights of this service pack release are:
 * Quick links to manage groups (Open/Edit/Publish/Delete Groups) are not visible to the Community administrators (Group admin/Site admin) (NPR-31627).
 * A submitted blog is not displayed unless the page is manually refreshed/reload (NPR-31599).
 * The JCR query used by the "Mentions" feature is case sensitive and takes too long to return results (NPR-31475).
-* AEM 6.5 Uber jar file throws exeception, cq-social-translation bundle missing from AEM 6.5 Uber jar file (NPR-31186).
+* AEM 6.5 Uber jar file throws exception, `cq-social-translation` bundle missing from AEM 6.5 Uber jar file (NPR-31186).
 * Jackson Databind libraries updated to version 2.9.9.3 to address new vulnerabilities (NPR-30967).
 * Activities and Notifications titles are inconsistent (NPR-30941).
 * Pagination is not working properly in Communities Blogs (NPR-30914).
@@ -372,7 +367,7 @@ Some key highlights of this service pack release are:
 * Implemented option to mute video on load in VideoPlayer. Hotfix for CQ-4266465
 * [Viewers] VideoViewer: poster=none works incorrectly in case of an external video used. Hotfix for CQ-4265536
 * Wait icon is visible during video play on IE11 and MS Edge browsers. Hotfix for CQ-4251539
-* 3.8 SDK and 5.13 viewers READMEs are not updated and contain information from previous releases. Hotfix for CQ-4273737
+* 3.8 SDK and 5.13 viewers README files are not updated and contain information from previous releases. Hotfix for CQ-4273737
 * Content Fragment gets versioned even before saving the changes. NPR-30616: Hotfix for CQ-4273088
 * Replace Asset#getMetadata(String) with Asset#getMetadataValueFromJcr(String) in thumbnail process. NPR-30491: Hotfix for CQ-4273067
 * Uploading jpg causes multiple instances of the message: "ReplicateOnModifyWorker Replicating UPDATED" for each asset, causing performance degradation.
@@ -388,7 +383,7 @@ Some key highlights of this service pack release are:
 * When a user focuses on left rail fields and uses keyboard shortcut to paste content, it pastes content of page editor clipboard instead of the content copied from left rail fields. (NPR-31172)
 * When a user adds a File Upload field to a multi-field, the image path is stored in the component node instead of the multi-field node. (NPR-30882)
 * The ResponsiveGridExporter API does not return com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter interface. The com.day.cq.wcm.foundation.model.impl package is declared as private package. (NPR-31398)
-* When a page containing some ExperienceFragments is opened in non-editor mode (either in Author without the editor.html prefix and wcmmode=disabled, or in Publisher), the request ends in HTTP status error code 500. (NPR-30743)
+* When a page containing some ExperienceFragments is opened in non-editor mode (either in Author without the `editor.html` prefix and `wcmmode=disabled`, or in Publisher), the request ends in HTTP status error code 500. (NPR-30743)
 
 #### WCM - Page Editor {#wcm-page-editor-6520}
 
@@ -444,7 +439,7 @@ The key highlights for AEM 6.5.2.0 forms are:
 
 #### Forms add-on package {#forms-add-on-package}
 
-#### Backend Integration {#backend-integration}
+#### Back end integration {#backend-integration}
 
 * Unable to configure Form Data Model using an AWS hosted load balanced URL. NPR-30123: Hotfix for CQ-4273359
 * While creating the Form Data Model (FDM) with the Web Service Definition Language (WSDL), the error message `Caused by: com.adobe.aem.dermis.exception.DermisException: java.lang.Exception: Unable to handle content type` is returned: NPR-30477: Hotfix for CQ-4272921
@@ -532,7 +527,7 @@ Some key highlights of this service pack release are:
 ### Sites
 
 * Empty properties and multiple properties do not propagate from blueprint during rollout. Reset live copy with blueprint does not work for components. NPR-29253: Hotfix for CQ-4264928, CQ-4264926, CQ-4267722
-* CoralUI, when used with Multifield, stores the fileReferenceParameter at the component level instead of multifield level. NPR-29537: Hotfix for CQ-4266129
+* CoralUI, when used with `Multifield`, stores the `fileReferenceParameter` at the component level instead of multifield level. NPR-29537: Hotfix for CQ-4266129
 * Enhancement of AEM text component and Text Editor to Japanese. NPR-29785: Hotfix for CQ-4265090
 * Page restored with Timewarp should refer to the correct picture at the time of versioning. NPR-29431: Hotfix for CQ-4262638
 * An issue with the inheritance of Style System nodes from parent to child. NPR-29516: Hotfix for CQ-4270330
@@ -616,9 +611,9 @@ Some key highlights of this service pack release are:
 
 The key highlights for AEM 6.5.1.0 forms are:
 
-* [OSGi only] Added a new attribute PAGECOUNT in Output and Forms Service.
+* [OSGi only] Added a new attribute `PAGECOUNT` in Output and Forms Service.
 
-* [OSGI only] Enabled support to create static PDFs using Forms Service.
+* [OSGI only] Enabled support to create static PDF files using Forms Service.
 * Enabled permissions on XMLForm.exe for administrator and root users.
 * Enabled support for ADFS v3.0 for Dynamics on-premise integration.
 
@@ -711,7 +706,7 @@ The key highlights for AEM 6.5.1.0 forms are:
 * PDF fails conversion to PDF/A-1b with Form field does not have appearance dict. NPR-29940: Hotfix for CQ-4269618
 
 * [OSGi] Unable to determine the number of pages generated during rendering. NPR-28922: Hotfix for CQ-4270870
-* Enabled support for Static PDFs using Forms Service in AEM Forms OSGi. NPR-28572: Hotfix for CQ-4270869
+* Enabled support for Static PDF files using Forms Service in AEM Forms OSGi. NPR-28572: Hotfix for CQ-4270869
 * Unable to change the permissions on the XMLForm.exe. NPR-29828, NPR-29237: Hotfix for Q-4267080
 * The static PDF created by the AEM Forms server’s output module does not populate the language attribute/tag with the language of the document created. NPR-27332: Hotfix for CQ-4271002
 
@@ -734,7 +729,7 @@ The key highlights for AEM 6.5.1.0 forms are:
 ### Forms - Document Services - Included
 
 * [OSGi only] Added a new attribute PAGECOUNT in Output and Forms Service.. NPR-28922: Hotfix for CQ-4270870
-* [OSGi only] Enabled support to create static PDFs using Forms Service. NPR-28572: Hotfix for CQ-4270869
+* [OSGi only] Enabled support to create static PDF files using Forms Service. NPR-28572: Hotfix for CQ-4270869
 * Enabled permissions on XMLForm.exe for administrator and root users. NPR-29237: Hotfix for CQ-4267080
 
 ## OSGi bundles and Content Packages

@@ -1,12 +1,8 @@
 ---
 title: Known Issues
-seo-title: Known Issues
-description: Release notes specific to the Known Issues with Adobe Experience Manager 6.3.
-seo-description: Release notes specific to the Known Issues with Adobe Experience Manager 6.3.
+description: Release notes specific to the Known Issues with Adobe Experience Manager 6.3
 uuid: 8fbdb167-833a-4179-aad1-0a26a4e5b3a7
 contentOwner: msm-service
-topic-tags: release-notes
-content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
 docset: aem65

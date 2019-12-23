@@ -1,12 +1,8 @@
 ---
 title: AEM Communities Release Notes
-seo-title: AEM Communities
 description: Release notes specific to Adobe Experience Manager 6.5 Communities.
-seo-description: Release notes specific to Adobe Experience Manager 6.5 Communities.
 uuid: 1b436959-581c-4b34-b2df-cccc5727da59
 contentOwner: msm-service
-topic-tags: release-notes
-content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: c3505807-1550-491a-8619-e87839afca4f
 docset: aem65
@@ -77,4 +73,3 @@ The enablement functionality of AEM 6.5 Communities support Shareable Content Ob
 
 * **Solr 7 support
   **AEM 6.5 Communities supports Apache Solr 7.0 version of the search platform while setting up MSRP and DSRP.
-

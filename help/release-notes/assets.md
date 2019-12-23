@@ -1,12 +1,8 @@
 ---
 title: AEM Assets Release Notes
-seo-title: AEM Assets
 description: The new capabilities and enhancements to Adobe Experience Manager 6.5 Assets.
-seo-description: The new capabilities and enhancements to Adobe Experience Manager 6.5 Assets.
 uuid: f785029d-e0fd-494f-b215-7b4caca4e806
 contentOwner: Guillaume Carlino
-topic-tags: release-notes
-content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 1ab34a42-2f0e-4b05-a7b6-2fc8dca07ef5
 docset: aem65
@@ -47,7 +43,7 @@ Preview Adobe Stock image and license from within AEM Assets
 
 Search and filter the licensed Adobe Stock images in AEM
 
-### Dynamic references in InDesign {#dynamic-references-in-indesign}
+### Dynamic references in Adobe InDesign {#dynamic-references-in-indesign}
 
 The AEM Assets used in Adobe InDesign files are dynamic. The references update automatically if the referenced assets moves in the JCR hierarchy. For more information see, [Managing compound assets](/help/assets/managing-linked-subassets.md).
 
