@@ -36,10 +36,7 @@ You can view the expiration status of an asset in the timeline. Select the asset
 You can also view the expiration status of assets in the **[!UICONTROL References]** rail. It manages asset expiration statuses and relationships between compound assets and referenced subassets, collections, and projects.
 
 1. Navigate to the asset for which you want to view referencing web pages and compound assets.
-1. Select the asset, and click/tap the global navigation icon.
-
-   ![chlimage_1-145](assets/chlimage_1-145.png)
-
+1. Select the asset, and the Experience Manager logo.
 1. Choose **[!UICONTROL References]** from the menu.
 
    ![chlimage_1-146](assets/chlimage_1-146.png)
@@ -56,13 +53,13 @@ You can also view the expiration status of assets in the **[!UICONTROL Reference
 
 You can search for expired assets, including expired subassets in the Search panel.
 
-1. In the Assets console, click the Search icon in the toolbar to display the Omni Search box.
+1. In the Assets console, click the **[!UICONTROL Search]** in the toolbar to display the Omnisearch box.
 
-1. With the cursor in the Omni Search box, hit the Return key to display the Search Results page.
+1. With the cursor in the Omnisearch box, hit the Return key to display the Search Results page.
 
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
-1. Click the GlobalNav icon to display the Search panel.
+1. Click Experience Manager logo to display the search panel.
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -108,7 +105,7 @@ The Assets console of Adobe Experience Manager (AEM) Assets can display various 
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. Tap/click the **[!UICONTROL Publish]** icon from the toolbar. If you can't see the **Publish** icon on the toolbar, tap/click **[!UICONTROL More]** on the toolbar and locate the **[!UICONTROL Publish]** icon.
+1. Tap **[!UICONTROL Publish]** from the toolbar. If you don't see **Publish** on the toolbar, tap **[!UICONTROL More]** on the toolbar and locate **[!UICONTROL Publish]** option.
 
    ![chlimage_1-156](assets/chlimage_1-156.png)
 
@@ -117,7 +114,7 @@ The Assets console of Adobe Experience Manager (AEM) Assets can display various 
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. In the Assets UI, select an asset and tap/click the **[!UICONTROL Properties]** icon to display its asset details page.
+1. In the Assets UI, select an asset and tap **[!UICONTROL Properties]** to display its asset details page.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -132,15 +129,15 @@ The Assets console of Adobe Experience Manager (AEM) Assets can display various 
 
 1. In the Assets console, select a folder and create a review task on the folder.
 1. Review and approve/reject the assets in the review task and click **[!UICONTROL Complete]**.
-1. Navigate to the folder for which you created the review task. The status for the assets that you approved/reject is displayed at the bottom in the card view. In the list view, the approval and expiry statuses are diaplayed in appropriate columns.
+1. Navigate to the folder for which you created the review task. The status for the assets that you approved/reject is displayed at the bottom in the card view. In the list view, the approval and expiry statuses are displayed in appropriate columns.
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. To search for assets based on their status, click/tap the **[!UICONTROL Search]** icon to display the Omni Search bar.
+1. To search for assets based on their status, tap **[!UICONTROL Search]** to display the Omnisearch bar.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Hit the Return key and then click/tap the **[!UICONTROL GlobalNav]** icon to display the Search panel.
+1. Press return and then tap **[!UICONTROL GlobalNav]** to display the Search panel.
 1. In the Search panel, tap/click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
@@ -161,7 +158,7 @@ The Assets console of Adobe Experience Manager (AEM) Assets can display various 
 
 This feature enforces the acceptance of the license agreement before you can download a licensed asset from Adobe Experience Manager (AEM) Assets.
 
-If you select a protected asset and click the **[!UICONTROL Download]** icon, you are redirected to a license page where you accept the license agreement. If you do not accept the license agreement, the **[!UICONTROL Download]** button is disabled.
+If you select a protected asset and tap **[!UICONTROL Download]**, you are redirected to a license page where you accept the license agreement. If you do not accept the license agreement, the **[!UICONTROL Download]** button is disabled.
 
 If the selection contains multiple protected assets, select one asset at a time, accept the license agreement, and proceed to download the asset.
 
@@ -172,13 +169,13 @@ An asset is considered protected if either of these conditions are fulfilled:
 
 >[!NOTE]
 >
->The location */etc/dam/drm/licences* used for storing licenses in earlier releases of AEM is deprecated.
+>The location `/etc/dam/drm/licences` used for storing licenses in earlier releases of AEM is deprecated.
 >
 >If you create or modify licence pages, or port them from previous AEM releases, Adobe recommends that you store them under */apps/settings/dam/drm/licenses* or */conf/&ast;/settings/dam/drm/licenses*.
 
 ### Downloading DRM assets {#downloading-drm-assets}
 
-1. In the Card view, select the assets you want to download and click the **[!UICONTROL Download]** icon.
+1. In the Card view, select the assets you want to download and click **[!UICONTROL Download]**.
 1. In the **[!UICONTROL Copyright Management]** page, select the asset you want to download from the list.
 1. In the License pane, choose **[!UICONTROL Agree]**. A tick mark appears beside the asset for which you accept the license agreement. Tap/click the **[!UICONTROL Download]** button.
 
@@ -189,4 +186,3 @@ An asset is considered protected if either of these conditions are fulfilled:
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
 1. In the dialog, tap/click **[!UICONTROL Download]** to download the asset or its renditions.
-

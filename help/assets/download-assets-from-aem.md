@@ -17,7 +17,7 @@ You can download assets including static and dynamic renditions. Alternatively, 
 >
 >Recipients of emails must be members of the `dam-users` group to access the ZIP download link in the email message. To be able to download the assets, the members must have permissions to launch workflows that trigger downloading of assets.
 
-To download assets, navigate to an asset, select the asset, and tap/click the **[!UICONTROL Download]** icon from the toolbar. In the resulting dialog, specify your download options.
+To download assets, navigate to an asset, select the asset, and tap **[!UICONTROL Download]** from the toolbar. In the resulting dialog, specify your download options.
 
 The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets cannot be downloaded.
 

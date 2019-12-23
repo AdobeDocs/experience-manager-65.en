@@ -18,18 +18,7 @@ This feature helps prevent other users from overriding the changes made by an au
 ## Checking Out Assets {#checking-out-assets}
 
 1. From the Assets UI, select the asset you want to check out. You can also select multiple assets to check out.
-
-   ![chlimage_1-468](assets/chlimage_1-468.png)
-
-1. From the toolbar, click/tap the **[!UICONTROL Checkout]** icon.
-
-   ![chlimage_1-469](assets/chlimage_1-469.png)
-
-   Observe that the **[!UICONTROL Checkout]** icon toggles to the **[!UICONTROL Checkin]** icon with the lock open.
-
-   ![chlimage_1-470](assets/chlimage_1-470.png)
-
-   To verify whether other users can edit the asset you checked out, log in as a different user. A lock icon appears on the thumbnail of the asset that you checked out.
+1. From the toolbar, click/tap **[!UICONTROL Checkout]**. The **[!UICONTROL Checkout]** option toggles to **[!UICONTROL Checkin]**. To verify whether other users can edit the asset you checked out, log in as a different user. A lock symbol displays on the thumbnail of the asset that you checked out.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
 
@@ -37,9 +26,9 @@ This feature helps prevent other users from overriding the changes made by an au
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   You can, however, click/tap the **[!UICONTROL View Properties]** icon to edit the metadata for the locked asset.
+   You can, however, tap **[!UICONTROL View Properties]** to edit the metadata for the locked asset.
 
-1. Click/tap the Edit icon to open the asset in edit mode.
+1. Tap **[!UICONTROL Edit]** to open the asset in edit mode.
 
    ![chlimage_1-473](assets/chlimage_1-473.png)
 
@@ -49,11 +38,7 @@ This feature helps prevent other users from overriding the changes made by an au
 
    You can also choose to annotate or publish the asset.
 
-1. Select the edited asset from the Assets UI, and click/tap the **[!UICONTROL Checkin]** icon from the toolbar.
-
-   ![chlimage_1-475](assets/chlimage_1-475.png)
-
-   The modified asset is checked in to AEM Assets and is available to other users for editing.
+1. Select the edited asset from the Assets UI, and tap **[!UICONTROL Checkin]** from the toolbar. The modified asset is checked in to AEM Assets and is available to other users for editing.
 
 ## Forced Check In {#forced-check-in}
 
@@ -64,6 +49,4 @@ Administrators can check in assets that are checked out by other users.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. From the toolbar, click/tap the **[!UICONTROL Release Lock]** icon. The asset is checked back in and available for edit to other users.
-
-   ![chlimage_1-477](assets/chlimage_1-477.png)
+1. From the toolbar, tap **[!UICONTROL Release Lock]**. The asset is checked back in and available for edit to other users.
