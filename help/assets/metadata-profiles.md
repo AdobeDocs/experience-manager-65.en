@@ -16,7 +16,7 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 ## Adding a metadata profile {#adding-a-metadata-profile}
 
 1. Navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]** and tap **[!UICONTROL Create]**.
-1. Enter a title for the Metadata Profile, for example Sample Metadata, and tap **[!UICONTROL Submit]**. The [!UICONTROL Edit Form] for the metadata profile is displayed.
+1. Enter a title for the Metadata Profile, for example Sample Metadata, and tap **[!UICONTROL Create]**. The [!UICONTROL Edit Form] for the metadata profile is displayed.
 
    ![chlimage_1-197](assets/chlimage_1-480.png)
 
@@ -45,13 +45,13 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 1. (Optional) Add more components to the Edit Form from the **[!UICONTROL Build Form]** tab, and configure their properties in the **[!UICONTROL Settings]** tab. The following properties are available from the **[!UICONTROL Build Form]** tab:
 
 | Component | Properties |
-|------------------|----------------------------------------------------|
-| Section Header | Field Label <br /> Description |
-| Single Line Text | Field Label <br /> Map to property <br /> Default Value |
-| Multi Value Text | Field Label <br /> Map to property <br /> Default Value |
-| Number | Field Label <br /> Map to property <br /> Default Value |
-| Date | Field Label <br /> Map to property <br /> Default Value |
-| Standard Tags | Field Label <br /> Map to property <br /> Default Value <br /> Description |
+|---|---|
+| [!UICONTROL Section Header] | Field Label, <br> Description |
+| [!UICONTROL Single Line Text] | Field Label, <br> Map to property, <br> Default Value |
+| [!UICONTROL Multi Value Text] | Field Label, <br> Map to property, <br> Default Value |
+| [!UICONTROL Number] | Field Label, <br> Map to property, <br> Default Value |
+| [!UICONTROL Date] | Field Label, <br> Map to property, <br> Default Value |
+| [!UICONTROL Standard Tags] | Field Label, <br> Map to property, <br> Default Value, <br> Description |
 
    ![chlimage_1-201](assets/chlimage_1-484.png)
 
@@ -100,7 +100,7 @@ You can apply a metadata profile to a folder from within the **[!UICONTROL Tools
 
 Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
-You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
 #### Apply metadata profiles to folders from Profiles user interface {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 

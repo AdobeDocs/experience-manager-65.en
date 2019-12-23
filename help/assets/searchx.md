@@ -251,158 +251,47 @@ The following predicates are available as preconfigured ExtJS widgets.
 
 #### FulltextPredicate {#fulltextpredicate}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property<br /> </strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>predicateName</td>
-   <td>String</td>
-   <td>Name of the predicate. Defaults to 'fulltext'</td>
-  </tr>
-  <tr>
-   <td>searchCallback</td>
-   <td>Function</td>
-   <td>Callback for triggering search on event 'keyup'. Default to 'CQ.wcm.SiteAdmin.doSearch'</td>
-  </tr>
- </tbody>
-</table>
+| Property | Type | Description |
+|---|---|---|
+| predicateName | String | Name of the predicate. Defaults to `fulltext` |
+| searchCallback | Function | Callback for triggering search on event `keyup`. Defaults to `CQ.wcm.SiteAdmin.doSearch` |
 
 #### PropertyPredicate {#propertypredicate}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property<br /> </strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>predicateName</td>
-   <td>String</td>
-   <td>Name of the predicate. Defaults to 'property'</td>
-  </tr>
-  <tr>
-   <td>propertyName</td>
-   <td>String </td>
-   <td>Name of the JCR property. Default to 'jcr:title'</td>
-  </tr>
-  <tr>
-   <td>defaultValue<br /> </td>
-   <td>String<br /> </td>
-   <td>Prefilled default value.<br /> </td>
-  </tr>
- </tbody>
-</table>
+| Property | Type | Description |
+|---|---|---|
+| predicateName | String | Name of the predicate. Defaults to `property` |
+| propertyName | String | Name of the JCR property. Defaults to `jcr:title` |
+| defaultValue | String | Prefilled default value. |
 
 #### PathPredicate {#pathpredicate}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property<br /> </strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>predicateName</td>
-   <td>String</td>
-   <td>Name of the predicate. Defaults to 'path'</td>
-  </tr>
-  <tr>
-   <td>rootPath</td>
-   <td>String </td>
-   <td>Root path of the predicate. Default to '/content/dam'</td>
-  </tr>
-  <tr>
-   <td>pathFieldPredicateName</td>
-   <td>String</td>
-   <td>Default to 'folder'</td>
-  </tr>
-  <tr>
-   <td>showFlatOption</td>
-   <td>Boolean</td>
-   <td>Flag to show Checkbox 'search in subfolders'. Defaults to true.</td>
-  </tr>
- </tbody>
-</table>
+| Property | Type | Description |
+|---|---|---|
+| predicateName | String | Name of the predicate. Defaults to `path` |
+| rootPath | String | Root path of the predicate. Defaults to `/content/dam` |
+| pathFieldPredicateName | String | Defaults to `folder` |
+| showFlatOption | Boolean | Flag to show Checkbox `search in subfolders`. Defaults to true. |
 
 #### DatePredicate {#datepredicate}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property<br /> </strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>predicateName</td>
-   <td>String</td>
-   <td>Name of the predicate. Defaults to 'daterange'</td>
-  </tr>
-  <tr>
-   <td>propertyname</td>
-   <td>String</td>
-   <td>Name of the JCR property. Default to 'jcr:content/jcr:lastModified'</td>
-  </tr>
-  <tr>
-   <td>defaultValue </td>
-   <td>String </td>
-   <td>Prefilled default value </td>
-  </tr>
- </tbody>
-</table>
+| Property | Type | Description |
+|---|---|---|
+| predicateName | String | Name of the predicate. Defaults to `daterange` |
+| propertyname | String | Name of the JCR property. Defaults to `jcr:content/jcr:lastModified` |
+| defaultValue | String | Prefilled default value |
 
 #### OptionsPredicate {#optionspredicate}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property<br /> </strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>title </td>
-   <td>String </td>
-   <td>Adds an additional top title </td>
-  </tr>
-  <tr>
-   <td>predicateName</td>
-   <td>String</td>
-   <td>Name of the predicate. Defaults to 'daterange'</td>
-  </tr>
-  <tr>
-   <td>propertyname</td>
-   <td>String</td>
-   <td>Name of the JCR property. Default to 'jcr:content/metadata/cq:tags'</td>
-  </tr>
-  <tr>
-   <td>collapse</td>
-   <td>String</td>
-   <td>Collapse level. Defaults to 'level1'</td>
-  </tr>
-  <tr>
-   <td>triggerSearch</td>
-   <td>Boolean </td>
-   <td>Flag for triggering search on check. Defaults to false</td>
-  </tr>
-  <tr>
-   <td>searchCallback</td>
-   <td>Function</td>
-   <td>Callback for triggering search. Defaults to 'CQ.wcm.SiteAdmin.doSearch'</td>
-  </tr>
-  <tr>
-   <td>searchTimeoutTime</td>
-   <td>Number</td>
-   <td>Timeout before searchCallback is fired. Defaults to 800ms</td>
-  </tr>
- </tbody>
-</table>
+| Property | Type | Description |
+|---|---|---|
+| title | String | Adds an additional top title |
+| predicateName | String | Name of the predicate. Defaults to `daterange` |
+| propertyname | String | Name of the JCR property. Defaults to `jcr:content/metadata/cq:tags` |
+| collapse | String | Collapse level. Defaults to `level1` |
+| triggerSearch | Boolean | Flag for triggering search on check. Defaults to false |
+| searchCallback | Function | Callback for triggering search. Defaults to `CQ.wcm.SiteAdmin.doSearch` |
+| searchTimeoutTime | Number | Timeout before searchCallback is fired. Defaults to 800ms |
 
 ### Customizing Search Results {#customizing-search-results}
 

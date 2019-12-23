@@ -37,17 +37,17 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 1. Tap/click the AEM logo, and go **[!UICONTROL Assets]** &gt; **[!UICONTROL Jobs]**.
 1. In the **[!UICONTROL Async Job Status]** page, review the details of the operations.
 
-   ![job_status](assets/job_status.png)
+    ![job_status](assets/AsyncOperation-status.png)
 
    To ascertain the progress of a particular operation, see the value in the **[!UICONTROL Status]** column. Depending upon the progress, one of the following statuses is displayed:
 
-   **[!UICONTROL Active]**: The operation is being processed
+   * **[!UICONTROL Active]**: The operation is being processed
 
-   **[!UICONTROL Success]**: The operation is complete
+   * **[!UICONTROL Success]**: The operation is complete
 
-   **[!UICONTROL Fail]** or **[!UICONTROL Error]**: The operation could not be processed
+   * **[!UICONTROL Fail]** or **[!UICONTROL Error]**: The operation could not be processed
 
-   **[!UICONTROL Scheduled]**: The operation is scheduled for processing a later time
+   * **[!UICONTROL Scheduled]**: The operation is scheduled for processing a later time
 
 1. To stop an active operation, select it from the list and tap/click the **[!UICONTROL Stop]** icon from the toolbar.
 

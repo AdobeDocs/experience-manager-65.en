@@ -9,7 +9,7 @@ docset: aem65
 
 ---
 
-# Import and export asset metadata in bulk{#import-and-export-asset-metadata-in-bulk}
+# Import and export asset metadata in bulk {#import-and-export-asset-metadata-in-bulk}
 
 AEM Assets lets you import asset metadata in bulk using a CSV file. You can do bulk updates for the recently uploaded assets or the existing assets by importing a CSV file. You can also ingest asset metadata in bulk from third-party system in CSV format.
 
@@ -26,13 +26,13 @@ The metadata import is asynchronous and does not impede the system performance. 
 1. In the **[!UICONTROL Metadata Import]** page, tap/click **[!UICONTROL Select File]**. Select the CSV file with the metadata.
 1. Specify the following parameters:
 
-   |       Parameter        |                                                                                                       Description                                                                                                        |
-   | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-   | Batch Size             | Number of assets in a batch for which metadata is to be imported. The default value is 50. Maximum value is 100.                                                                                                         |
-   | Field Separator        | Default value is `,` (a comma). You can specify any other character.                                                                                                                                                     |
-   | Multi value Delimiter  | Separator for metadata values. Default value is `|`.                                                                                                                                                                     |
-   | Launch Workflows       | False by default. When set to `true` and default Launcher settings are in effect for the DAM Metadata WriteBack Workflow (that writes metadata to the binary XMP data). Enabling launch workflows slows the system down. |
-   | Asset Path Column Name | Defines the column name for the CSV file with assets.                                                                                                                                                                    |
+    | Metadata import parameters | Description |
+    |:---|:---|
+    | [!UICONTROL Batch Size] | Number of assets in a batch for which metadata is to be imported. Default value is 50. Maximum value is 100. |
+    | [!UICONTROL Field Separator] | Default value is `,` (a comma). You can specify any other character. |
+    | [!UICONTROL Multi Value Delimiter] | Separator for metadata values. Default value is `|`. |
+    | [!UICONTROL Launch Workflows] | False by default. When set to `true` and default Launcher settings are in effect for the DAM Metadata WriteBack Workflow (that writes metadata to the binary XMP data). Enabling launch workflows slows the system down. |
+    | [!UICONTROL Asset Path Column Name] | Defines the column name for the CSV file with assets. |
 
 1. Tap/click **[!UICONTROL Import]** from the toolbar. After the metadata is imported, a notification is sent to your Notification inbox. Navigate to asset property page and verify whether the metadata values are correctly imported for assets.
 

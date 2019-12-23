@@ -10,6 +10,10 @@ discoiquuid: c637964a-dfcb-41fe-9c92-934620fe2cb3
 
 # AEM Commerce - GDPR Readiness{#aem-commerce-gdpr-readiness}
 
+>[!IMPORTANT]
+>
+>GDPR is used as an example in the sections below, but the details covered are applicable to all data protection and privacy regulations; such as GDPR, CCPA etc.
+
 The European Union's General Data Protection Regulation on data privacy rights takes effect as of May 2018. For further information see the [GDPR page at the Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
