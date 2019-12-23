@@ -62,7 +62,7 @@ Consider a scenario where you want to create digital printable collateral, such 
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. (Optional) Click/tap the Tags icon beside **[!UICONTROL Tags]** field, and select one or more tags for the brochure. Click/tap **[!UICONTROL Confirm]** to confirm your selection.
+1. (Optional) Tap **[!UICONTROL Tags]** and select one or more tags for the brochure. Tap **[!UICONTROL Confirm]** to confirm your selection.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
@@ -82,8 +82,8 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
     * Open the collateral (brochure in this case) you created in step 7 of [Creating a Collateral](/help/assets/asset-templates.md#creating-a-collateral).
     * From the Templates page, navigate to a folder where you created the collateral, and click/tap the Edit quick action on the thumbnail of a collateral.
-    * In the asset page for the collateral, click/tap the Edit icon from the toolbar.
-    * Select the collateral, and click/tap the Edit icon from the toolbar.
+    * In the asset page for the collateral, tap **[!UICONTROL Edit]** from the toolbar.
+    * Select the collateral and tap **[!UICONTROL Edit]** from the toolbar.
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -109,11 +109,11 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    You can edit the text properties, for example font style, color, size using the options provided.
 
-1. Click/tap the preview icon to preview the text changes.
+1. Tap **[!UICONTROL Preview]** to preview the text changes.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
-1. To swap an image, click/tap the Asset Finder icon.
+1. To swap an image, tap the **[!UICONTROL Asset Finder]**.
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
@@ -125,7 +125,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. Click/tap the preview icon to preview the image.
+1. Tap **[!UICONTROL Preview]** to preview the image.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -133,7 +133,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    ![chlimage_1-117](assets/chlimage_1-117.png)
 
-1. Click/tap the preview icon on the toolbar to preview all the changes. Click/tap **[!UICONTROL Done]** to save the editing changes to the collateral.
+1. Tap **[!UICONTROL Preview]**  on the toolbar to preview all the changes. Click/tap **[!UICONTROL Done]** to save the editing changes to the collateral.
 
    >[!NOTE]
    >
@@ -166,7 +166,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
-1. From the Template Merge page, click/tap the Merge icon.
+1. From the [!UICONTROL Template Merge] page, tap **[!UICONTROL Merge]**.
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
