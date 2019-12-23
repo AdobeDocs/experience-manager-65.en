@@ -682,7 +682,7 @@ The editing tools in the AEM Assets interface let you perform small editing jobs
 
 1. Select the desired option from the list. The crop area appears on the image based on the option you choose. The **Free Hand** option lets you crop the image without any aspect ratio restrictions.
 
-   ![chlimage_1-227](assets/chlimage_1-227.png)
+   ![chlimage_1-227](/help/assets/assets/do-not-localize/chlimage_1-227.png)
 
 1. Select the area to be cropped, and resize or reposition it on the image.
 1. Use the **Finish** icon (top right corner) to crop the image. Clicking the **Finish** icon also triggers the regeneration of renditions.

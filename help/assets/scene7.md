@@ -139,7 +139,7 @@ The HTML5 Zoom component displays a larger image when you press the **[!UICONTRO
 
 The asset has zoom tools at the bottom. Tap **[!UICONTROL +]** to enlarge. Tap **[!UICONTROL -]** to reduce. Tapping the **[!UICONTROL x]** or the reset zoom arrow brings the image back to the original size it was imported as. Tap the diagonal arrows to make it full screen. Tap **[!UICONTROL Edit]** to configure the component. With this component, you can configure [settings common to all [!UICONTROL Dynamic Media Classic] components](#settings-common-to-all-scene-components).
 
-![chlimage_1-227](assets/chlimage_1-227.png)
+![chlimage_1-227](/help/assets/assets/do-not-localize/chlimage_1-227.png)
 
 ### Flyout {#flyout}
 
