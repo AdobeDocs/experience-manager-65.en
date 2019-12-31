@@ -46,9 +46,9 @@ Some key highlights of this service pack release are:
 
 * Updated version of jQuery bundled in ContextHub to 3.4.1.
 
-## List of changes {#list-of-changes}
+### List of changes {#list-of-changes}
 
-### Assets {#assets-6530-enhancements}
+#### Assets {#assets-6530-enhancements}
 
 **Product Enhancements**
 
@@ -160,7 +160,7 @@ Some key highlights of this service pack release are:
 
 * An exception displays in AEM while polling for job details of an Asset (CQ-4283569).
 
-### Sites {#sites}
+#### Sites {#sites}
 
 * If the LiveCopy inheritance is broken, live copy pages display language copy links instead of LiveCopy links (NPR-30980).
 * For a new Blueprint, If the number of records is more than 40, only the first 40 records are displayed. Blueprint displays blank lines for the rest of the records (NPR-31182).
@@ -172,7 +172,7 @@ Some key highlights of this service pack release are:
 * The ResponsiveGridExporter API does not return com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter interface. The com.day.cq.wcm.foundation.model.impl package is declared as private package (NPR-31398).
 * When a page containing some ExperienceFragments is opened in non-editor mode (either in Author without the `editor.html` prefix and `wcmmode=disabled`, or in Publisher)., the request ends in HTTP status error code 500 (NPR-30743).
 
-### Search and user interface {#search-ui-interface}
+#### Search and user interface {#search-ui-interface}
 
 * When switching from the Card view to the List view on a search results page, there is a lag before the page can be scrolled (NPR-31286).
 
@@ -182,11 +182,11 @@ Some key highlights of this service pack release are:
 
 * The metadata editor displays tags that do not exist (NPR-31119).
 
-### Translation {#translation}
+#### Translation {#translation}
 
 * Two calendar pop-ups appear on selecting the Due Date option in a Translation Job (NPR-31270).
 
-### Platform {#platform}
+#### Platform {#platform}
 
 * The Mime type option in the Web console does not work (NPR-31108).
 
@@ -206,11 +206,11 @@ Some key highlights of this service pack release are:
 
 * The ``org.apache.sling.distribution.api`` bundle is hidden in the configuration manager and therefore not available to custom bundles (NPR-31720).
 
-### Projects {#projects}
+#### Projects {#projects}
 
 * Switching calendar views does not work (NPR-31271).
 
-### Brand Portal {#assets-brand-portal}
+#### Brand Portal {#assets-brand-portal}
 
 **Product Enhancements**
 
@@ -224,7 +224,7 @@ Some key highlights of this service pack release are:
 * Creation of Contribution folder within a Contribution folder (nested folder) is prohibited to avoid complexity (CQ-4278391).
 * System throws an exception on uploading the Brand Portal user list (.csv file) imported from AEM Admin Console. Only Email, FirstName, and LastName fields in the .csv file are mandatory (CQ-4278390).
 
-### Communities {#communities}
+#### Communities {#communities}
 
 **Fixes**
 
@@ -237,59 +237,59 @@ Some key highlights of this service pack release are:
 * Pagination is not working properly in Communities Blogs (NPR-30914).
 * Analytics reports are not populated in AEM author environment, blank page appears (NPR-30913).
 
-### Oak {#oak}
+#### Oak {#oak}
 
 * Lucene index updates causing author server to slow down (NPR-31548).
 
-### Forms {#forms-6530}
+#### Forms {#forms-6530}
 
 >[!NOTE]
 >
 >AEM Service Pack does not include fixes for AEM Forms. They are delivered using a separate Forms add-on package. In addition, a cumulative installer is released that includes fixes for AEM Forms on JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
-### Forms add-on package {#forms-add-on-package-6530}
+##### Forms add-on package {#forms-add-on-package-6530}
 
-#### Adaptive Forms {#adaptive-forms-6530}
+**Adaptive Forms**
 
 * Strings contain the dictionary key while localizing adaptive forms (NPR-31110).
 
-#### Interactive Communication {#interactive-communication-6530}
+**Interactive Communication**
 
 * **MissingNode.toString()** returns inaccurate results after upgrading Jackson libraries to 2.10.0 (NPR-31549).
 
 * Text editor randomly removes space characters from the text copied from Microsoft Word (NPR-31113).
 
-#### Correspondence Management {#correspondence-management-6530}
+**Correspondence Management**
 
 * Captions and tooltips do not display while migrating letters from LiveCycle ES4SP1 to AEM 6.5 (NPR-31615).
 
 * **Textflow formatting is no more supported** error message displays while saving letters as drafts (NPR-30463).
 
-#### Workflow {#forms-workflow-6530}
+**Workflow**
 
 * OSGi workflow fails due to 100% CPU utilization (NPR-31233).
 
-#### HTML5 Forms {#html-forms-6530}
+**HTML5 Forms**
 
 * Generating HTML5 preview of an XDP form displays a flicker while adding instances of a subform (NPR-30909).
 
-### Forms JEE installer {#forms-jee-installer-6530}
+##### Forms JEE installer {#forms-jee-installer-6530}
 
-#### Forms - Document Services {#forms-document-services-6530}
+**Forms - Document Services**
 
 * SOAP web service using MTOM in a .NET project displays exceptions for AssemblerServiceClient invoke and HtmlToPDF2 methods (NPR-4281771).
 
-#### Foundation JEE {#forms-foundation-jee-6530}
+**Foundation JEE**
 
 * Action configuration does not load the process names for Invoke a Forms Workflow submit action (NPR-31478).
 
-## Feature Packs Included {#feature-packs-included-6530}
+### Feature Packs Included {#feature-packs-included-6530}
 
 >[!NOTE]
 >
 >For AEM Forms customers, it is essential to install AEM Forms add-on package after installing any AEM Service Pack, Cumulative Fix Pack, or Feature Pack.
 
-### Forms - Foundation JEE {#forms-foundation-jee-feature}
+#### Forms - Foundation JEE {#forms-foundation-jee-feature}
 
 * AEM Forms support for Oracle 18c (NPR-29155).
 
@@ -437,27 +437,27 @@ The key highlights for AEM 6.5.2.0 forms are:
 
 * Added 'Auto' setting to `RenderAtClient` in `PDFFormRenderOptions` API for AEM Forms OSGi.
 
-#### Forms add-on package {#forms-add-on-package}
+##### Forms add-on package {#forms-add-on-package}
 
-#### Back end integration {#back-end-integration}
+**Back end integration**
 
 * Unable to configure Form Data Model using an AWS hosted load balanced URL. NPR-30123: Hotfix for CQ-4273359
 * While creating the Form Data Model (FDM) with the Web Service Definition Language (WSDL), the error message `Caused by: com.adobe.aem.dermis.exception.DermisException: java.lang.Exception: Unable to handle content type` is returned: NPR-30477: Hotfix for CQ-4272921
 
-#### Correspondence Management {#correspondence-management}
+**Correspondence Management**
 
 * ``Create Correspondence UI's (CCR UI) rendition fails intermittently with below error in console:
   `- Uncaught Error: variable [object Object]is already known the letter`- NPR-30127
 
-#### Interactive Communication {#interactive-communication}
+**Interactive Communication**
 
 * A field marked required in form data model is displayed as required in Create Correspondence UI (CCR UI). NPR-30623: Hotfix for CQ-4274902
 
-#### Forms - Workflow {#forms-workflow}
+**Forms - Workflow**
 
 * Unmapped output variables on Watched Folders cause invocation to fail. Hotfix for CQ-4264451
 
-#### HTML5 Forms {#html-forms}
+**HTML5 Forms**
 
 * When the custom code or project is deployed for the second time, the page does not render and the following error occurs:
 
@@ -467,36 +467,36 @@ The key highlights for AEM 6.5.2.0 forms are:
 
 * When using NonVisual Desktop Access in Browse mode to read an HTML5 form, the Chrome browser reads "graphic" before each Scalable Vector Graphic (SVG) in the form design. NPR-30449: Hotfix for CQ-4274732
 
-#### Forms JEE installer {#forms-jee-installer}
+##### Forms JEE installer {#forms-jee-installer}
 
-#### Forms - Document Security {#forms-document-security}
+**Forms - Document Security**
 
 * Applying a signature with timestamp fails with error: ALC-DSC-003-000: com.adobe.idp.dsc.DSCInvocationException: Invocation error. NPR-30820: Hotfix for CQ-4275852
 
-#### Forms - Document Services {#forms-document-services}
+**Forms - Document Services**
 
 * If the "SubmitURL" contains an ampersand (&), parsing errors are seen in the log when POST request is made to renderpdf servlet. NPR-30865: Hotfix for CQ-4278232
 
-#### Forms - Foundation JEE {#forms-foundation-jee}
+**Forms - Foundation JEE**
 
 * HTMLtoPDF service is not show maxReuseCount in JMX console. NPR-30134, NPR-30304: Hotfix for CQ-4273763
 * Adding or editing a Web Service connection by invoking web services from AEM Forms Workbench throws an error: ClassNotFoundException org.apache.axis.message.SOAPBodyElement. NPR-30105: Hotfix for CQ-4273217
 
-## Feature Packs Included {#feature-packs-included}
+#### Feature Packs Included {#feature-packs-included}
 
 >[!NOTE]
 >
 >For AEM Forms customers, it is essential to install AEM Forms add-on package after installing any AEM Service Pack, Cumulative Fix Pack, or Feature Pack.
 
-### Sites {#sites-feature-packs-included}
+##### Sites {#sites-feature-packs-included}
 
 * Added a configuration property to allow exporting Experience Fragments directly to user-defined workspaces for Adobe Target. NPR-29189: Hotfix for CQ-4249782
 
-#### Forms - Document Services {#forms-document-services-1}
+##### Forms - Document Services {#forms-document-services-1}
 
 * Added 'Auto' setting to `RenderAtClient` in `PDFFormRenderOptions` API for AEM Forms OSGi. NPR-30759: Hotfix for CQ-4278193
 
-## AEM 6.5.1.0 {#release-6510}
+### AEM 6.5.1.0 {#release-6510}
 
  AEM 6.5.1.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of AEM 6.5 in *April 2019.* It can be installed on top of AEM 6.5.
 
@@ -506,7 +506,7 @@ Some key highlights of this service pack release are:
 * Included support for the delivery of 360-degree video assets in Dynamic Media Scene 7.
 * Enabled *Japanese Word Wrap* feature via the styles plugin of Rich Text Editor. For more information, see [Configure Japanese word wrap](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)
 
-### Assets
+#### Assets
 
 * Updated DAM DMGateway interface for S3 multipart support. NPR-29740: Hotfix for CQ-4226303
 * Renditions preview generates `Only empty tenantId is currently supported` error after upgrading to AEM 6.5\. NPR-29986: Hotfix for CQ-4272353
@@ -524,7 +524,7 @@ Some key highlights of this service pack release are:
 * The metadata schema only contains items from the global configuration and is missing the ones from the active tenant. The formPath URL value reverts to the default even when changed. NPR-29945: Hotfix for CQ-4262898
 * Publish image presets to Brand Portal fails with 500 error code. NPR-29510: Hotfix for CQ-4268659
 
-### Sites
+#### Sites
 
 * Empty properties and multiple properties do not propagate from blueprint during rollout. Reset live copy with blueprint does not work for components. NPR-29253: Hotfix for CQ-4264928, CQ-4264926, CQ-4267722
 * CoralUI, when used with `Multifield`, stores the `fileReferenceParameter` at the component level instead of multifield level. NPR-29537: Hotfix for CQ-4266129
@@ -535,79 +535,79 @@ Some key highlights of this service pack release are:
 * The rendered thumbnail on Content Fragment shows internal calendar representation for Date and Time field. NPR-29531: Hotfix for CQ-4269362
 * Opening the permissions tab in Coral2 implementation does not show the buttons. Hotfix for CQ-4269419
 
-### Commerce
+#### Commerce
 
 * ConstraintViolationException, when running lazy content migration for e-commerce. NPR-29247: Hotfix for CQ-4264383
 
-### Content Fragment Management
+#### Content Fragment Management
 
 * Parsing error when opening a Content Fragment which has characters dollar `($)` and open brace `({)`. Hotfix for CQ-4270266
 
-### Experience Fragments
+#### Experience Fragments
 
 * Export AEM Experience Fragments to Adobe Target. Hotfix for CQ-4265469
 * Experience Fragments export to target fails with smart image. Hotfix for CQ-4269606
 
 * The user hits a dead end when tries to move the Experience Fragments through Omnisearch in card view. Hotfix for CQ-4263848
 
-### WCM - Page Editor
+#### WCM - Page Editor
 
 * Reflected Cross-site scripting (XSS) when using an invalid selector. Hotfix for CQ-4270397
 
-### Replication
+#### Replication
 
 * User-provided data is not escaped on output in the `cq/replication/components/agent` component, resulting in a stored Cross-site scripting (XSS) vulnerability. Hotfix for CQ-4266263
 
-### Workflow
+#### Workflow
 
 * Dialog participant's calendar picker field broken. NPR-29727: Hotfix for CQ-4270423
 
-### WCM - SPA Editor
+#### WCM - SPA Editor
 
 * Enabled fetching pre-rendered content from a remote endpoint. Hotfix for CQ-4270238
 * Warnings in logs when opening a SPA Template Page rendered server-side. Hotfix for CQ-4270238
 
-### WCM - MSM
+#### WCM - MSM
 
 * Upgrade to AEM 6.4.3 makes Multi-Site Manager take a long time to roll out. Hotfix for CQ-4271410
 
-### Integration
+#### Integration
 
 * BrightEdge credentials fail with connection error. NPR-29168: Hotfix for CQ-4265872
 
 * An exception message is displayed when trying to edit and save the AEM launch configuration. NPR-29176: Hotfix for CQ-4265782/CQ-4266153
 
-### User Interface
+#### User Interface
 
 * Added support for tracking dynamic-UI-states as custom attributes while tracking certain events in the foundation tracking API. Hotfix for GRANITE-26283
 * Unable to set the tracking feature on the submit button. Hotfix for GRANITE-26326
 * The wizard is unable to set the tracking feature on the submit button. NPR-29995, NPR-30025: Hotfix for CQ-4264289
 
-### Communities
+#### Communities
 
 * Unable to align new badges in the dropdown on the member profile page. NPR-29381: Hotfix for CQ-4267987
 * Visitors and members, with no moderator privileges, are able to see unapproved/pending posts by pasting the URL. NPR-29724: Hotfix for CQ-4271124, CQ-4271441
 * High response time up to 40-50 seconds is observed on user sign-in for Community. NPR-29677: Hotfix for CQ-4269444
 
-### Replication
+#### Replication
 
 * Replication Agent component is susceptible to a vulnerability which discloses sensitive information to unauthorized users. NPR-29611: Hotfix for GRANITE-25070
 
 * Session leak during OAuth for every replication to Brand Portal. NPR-30001: Hotfix for GRANITE-26196
 
-### Projects
+#### Projects
 
 * Publish Assets from AEM Author /content/dam/mac folder to Brand Portal doesn't work. NPR-29819: Hotfix for CQ-4271118
 
-### Platform
+#### Platform
 
 * HtmlLibraryManager deletes all of the contents of crx-quickstart on cache invalidation. NPR-29863: Hotfix for GRANITE-26197
 
-### Felix
+#### Felix
 
 * Memory Usage details do not show up in the system console when using Java11\. NPR-29669
 
-### Forms
+#### Forms
 
 The key highlights for AEM 6.5.1.0 forms are:
 
@@ -617,9 +617,9 @@ The key highlights for AEM 6.5.1.0 forms are:
 * Enabled permissions on XMLForm.exe for administrator and root users.
 * Enabled support for ADFS v3.0 for Dynamics on-premise integration.
 
-### Forms add-on package
+##### Forms add-on package
 
-#### Backend Integration
+**Backend Integration**
 
 * Failure in fetching protected Web Service Definition Language (WSDL). NPR-29944: Hotfix for CQ-4270777
 * When AEM Forms is installed on IBM WebSphere, creating a form data model based on SOAP fails. Hotfix for CQ-4251134
@@ -631,7 +631,7 @@ The key highlights for AEM 6.5.1.0 forms are:
 
 * Even when no content is expected from the REST API output, form data model's invoke operation throws an error. Hotfix for CQ-4268828
 
-#### Adaptive Forms
+**Adaptive Forms**
 
 * Unable to add new instance in Adaptive Form Fragment during lazy loading. NPR-29818: Hotfix for CQ-4269875
 * Verify component does not log or display any error for Document of Record templates. Hotfix for CQ-4272999
@@ -645,7 +645,7 @@ The key highlights for AEM 6.5.1.0 forms are:
 
 * When accessed through anonymous account on a publish instance, the GuideRuntime script fails to load. Hotfix for CQ-4268679
 
-#### Forms - Interactive Communication
+**Forms - Interactive Communication**
 
 * Interactive Communication template does not list header and footer components in allowed component list. Hotfix for CQ-4237895
 * When you create an interactive communication print template containing an image field, the title of the chart is set to blank. Hotfix for CQ-4264772
@@ -656,7 +656,7 @@ The key highlights for AEM 6.5.1.0 forms are:
 * Agent settings are not visible as Editable by Agent checkbox gets unchecked when binding type is changed from Text fragment to None/Data Model Object for String field/variable. Hotfix for CQ-4261953
 * On the submission of Agent UI, resulting web data json file stores information for inheritance-cancelled unbound fields. Hotfix for CQ-4265621
 
-#### Forms - Workflow
+**Forms - Workflow**
 
 * When a form is resubmitted from the outbox of adaptive forms app, it results in loss of data. NPR-28345: Hotfix for CQ-4260929
 * Documents are not closed while saving for non-variable cases. Hotfix for CQ-4269784
@@ -671,37 +671,37 @@ The key highlights for AEM 6.5.1.0 forms are:
 * Submissions from workspace fail with umlaut character. Hotfix for CQ-4263172
 * On an upgraded setup, if the workflow is opened for editing, an error is shown instead of workflow name in watch folder user interface (UI). Hotfix for CQ-4238579
 
-#### Forms - Management
+**Forms - Management**
 
 * When an extension other than xsd or schema.json is uploaded, upload does not happen and, no error message is generated. Hotfix for CQ-4266716
 
-#### Forms - Correspondence Management
+**Forms - Correspondence Management**
 
 * AEM 6.5 Forms Create Correspondence UI (CCR UI) fails to open correspondence created with AEM 6.3 Forms. Hotfix for CQ-4266392
 * Sum function in XDP does not work if the DDE data type is of type number. Hotfix for CQ-4227403
 * Letters in-memory cache invalidation logic to be updated, because when an asset is published, its last modified time is not updated. Hotfix for CQ-4250465
 * Unable to Publish Document fragment, DD & Letters. Hotfix for CQ-4272893
 
-### Forms JEE installer
+##### Forms JEE installer
 
-#### PDF Generator
+**PDF Generator**
 
 * CAD files to PDF conversion are failing with 64-bit JDK. NPR-29924, NPR-29925: Hotfix for CQ-4272113
 * Replaced the name of PhantomJS to WebToPDF for HTMLtoPDF conversion. NPR-29933: Hotfix for CQ-4234545
 * An error is generated while converting zip file to PDF. Hotfix for CQ-4268628
 
-#### Forms - Designer
+**Forms - Designer**
 
 * When a full accessibility check is performed on the static PDF created using AEM Form Designer, the Primary Language check fails due to missing language attribute. Hotfix for CQ-4272923, CQ-4271002
 
-#### Forms - Document Security
+**Forms - Document Security**
 
 * Digital Signature with Hardware Security Module (HSM) is not working on OSGi Linux on Java 11 and Java 8\. NPR-29838: Hotfix for CQ-4270441
 * Digital Signature with Hardware Security Module (HSM) is not working on JEE Linux, and all supported app servers i.e., JBoss and Websphere. NPR-29839: Hotfix for CQ-4266721
 * Verifying signatures in a PDF using PDF Advanced Electronic Signatures (PAdES) generates InvalidOperationException. NPR-29842: Hotfix for CQ-4244837
 * Added Document Security Extension support for Office 2019\. Hotfix for CQ-4254369, CQ-4259764
 
-#### Forms - Document Services
+**Forms - Document Services**
 
 * PDF fails conversion to PDF/A-1b with Form field does not have appearance dict. NPR-29940: Hotfix for CQ-4269618
 
@@ -710,23 +710,23 @@ The key highlights for AEM 6.5.1.0 forms are:
 * Unable to change the permissions on the XMLForm.exe. NPR-29828, NPR-29237: Hotfix for Q-4267080
 * The static PDF created by the AEM Forms server’s output module does not populate the language attribute/tag with the language of the document created. NPR-27332: Hotfix for CQ-4271002
 
-#### Forms - Foundation JEE
+**Forms - Foundation JEE**
 
 * Unavailable pdfg_srt in final artifacts causes the installer to fail. NPR-29854: Hotfix for CQ-4270137
 * LCBackupMode.sh is not working. NPR-29840: Hotfix for CQ-4269424
 * UDP port reference should be removed from user interface (UI) for WebSphere. Hotfix for CQ-4264782
 
-## Feature Packs Included
+#### Feature Packs Included
 
-### Assets - Included
+##### Assets - Included
 
 * Enabled Multi-Site Manager support for Assets. For more information, see [Reuse assets using MSM for Assets](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html). NPR-29199: Hotfix for CQ-4259922
 
-### Sites - Included
+##### Sites - Included
 
 * Export AEM Experience Fragments to Adobe Target. For more details, see [The Experience Fragment Link Rewriter Provider - HTML](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/experience-fragments.html#TheExperienceFragmentLinkRewriterProviderHTML). Hotfix for CQ-4265469
 
-### Forms - Document Services - Included
+##### Forms - Document Services - Included
 
 * [OSGi only] Added a new attribute PAGECOUNT in Output and Forms Service.. NPR-28922: Hotfix for CQ-4270870
 * [OSGi only] Enabled support to create static PDF files using Forms Service. NPR-28572: Hotfix for CQ-4270869
@@ -810,7 +810,7 @@ In order to see what platforms are certified to run with this release, please re
 1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the forms add-on package as described in [Installing AEM forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
-### Install AEM Forms JEE installer {#install-aem-forms-jee-installer}
+#### Install AEM Forms JEE installer {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
