@@ -37,6 +37,7 @@ You can also view the expiration status of assets in the **[!UICONTROL Reference
 
 1. Navigate to the asset for which you want to view referencing web pages and compound assets.
 1. Select the asset, and the Experience Manager logo.
+
 1. Choose **[!UICONTROL References]** from the menu.
 
    ![chlimage_1-146](assets/chlimage_1-146.png)

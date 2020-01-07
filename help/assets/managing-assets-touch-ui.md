@@ -61,7 +61,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
-   ![chlimage_1-211](assets/chlimage_1-211.png)
+   ![chlimage_1-211](assets/chlimage_1-5.png)
 
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
@@ -71,7 +71,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
 
-   ![chlimage_1-212](assets/chlimage_1-212.png)
+   ![chlimage_1-212](assets/chlimage_1-6.png)
 
    To cancel an ongoing upload, click close (`X`) next to the progress bar. When you cancel the upload operation, AEM Assets deletes the partially uploaded portion of the asset.
 
@@ -85,7 +85,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotations, croppings, and so on) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with the number 1 appended to its name.
 
-   ![chlimage_1-213](assets/chlimage_1-213.png)
+   ![chlimage_1-213](assets/chlimage_1-7.png)
 
    >[!NOTE]
    >
@@ -99,7 +99,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
    >
    >The [!UICONTROL Duplicates Detected] dialog appears only when the duplicate detection feature is enabled. To enable the duplicate detection feature, see [Enable Duplicate Detection](/help/assets/duplicate-detection.md).
 
-   ![chlimage_1-214](assets/chlimage_1-214.png)
+   ![chlimage_1-214](assets/chlimage_1-8.png)
 
    To retain the duplicate asset in AEM Assets, tap/click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, tap/click **[!UICONTROL Delete]**.
 
@@ -112,7 +112,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
     * asset file name must not contain `* / : [ \\ ] | # % { } ? &`
     * asset folder name must not contain `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-   ![chlimage_1-215](assets/chlimage_1-215.png)
+   ![chlimage_1-215](assets/chlimage_1-10.png)
 
    In addition, the Assets user interface displays the most recent asset that you upload or the folder that you created first.
 
@@ -330,7 +330,7 @@ To preview an asset, follow these steps.
 
    Tap **[!UICONTROL Reset]** to reset the view to the original size.
 
-   ![chlimage_1-216](assets/chlimage_1-216.png)
+   ![chlimage_1-216](assets/chlimage_1-11.png)
 
 See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
@@ -350,11 +350,11 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 1. To schedule a particular date/time for the activation of the asset, use the date picker beside the **[!UICONTROL On Time]** field.
 
-   ![chlimage_1-217](assets/chlimage_1-217.png)
+   ![chlimage_1-217](assets/chlimage_1-12.png)
 
 1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API.
 
-   ![chlimage_1-218](assets/chlimage_1-218.png)
+   ![chlimage_1-218](assets/chlimage_1-13.png)
 
 1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in AEM.
 
@@ -362,7 +362,7 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
    >[!NOTE]
    >
-   >To create tags, write permission for `/content/cq:tags/default` in the CRX repository are required.
+   >To create tags, you need write permission for `/content/cq:tags/default` in the CRX repository.
 
 1. To provide a rating to the asset, tap/click the **[!UICONTROL Advanced]** tab and then tap/click the star at the appropriate position to assign the desired rating.
 
@@ -395,7 +395,8 @@ A few attributes that are unique to a particular copy of an asset are not carrie
 
 The other properties and metadata information is retained. A partial copy is not created when copying an asset.
 
-1. From the Assets UI, select one or more assets, and then tap/click the **[!UICONTROL Copy]** icon from the toolbar. Alternatively, select the **[!UICONTROL Copy]** ![copy_icon](assets/copy_icon.png) quick action from the asset card.  
+1. From the Assets UI, select one or more assets, and then tap/click the **[!UICONTROL Copy]** icon from the toolbar. Alternatively, select the **[!UICONTROL Copy]** quick action from the asset card.
+ ![copy_icon](assets/copy_icon.png)
 
    >[!NOTE]
    >
@@ -407,9 +408,10 @@ The other properties and metadata information is retained. A partial copy is not
    >
    >If you copy an asset at the same location, AEM automatically generates a variation of the name. For example, if you copy an asset titled `Square`, AEM automatically generates the title for its copy as `Square1`.
 
-1. Click the **[!UICONTROL Paste]** asset icon from the toolbar. Assets are copied to this location.
+1. Click/ tap the **[!UICONTROL Paste]** asset icon from the toolbar.
 
-   ![chlimage_1-219](assets/chlimage_1-219.png)
+   ![chlimage_1-219](assets/chlimage_1-14.png)
+   Assets are then copied to this location.
 
    >[!NOTE]
    >
@@ -419,7 +421,8 @@ The other properties and metadata information is retained. A partial copy is not
 
 1. Navigate to the location of the asset you want to move.
 
-1. Select the asset, and tap/click the **[!UICONTROL Move]** icon ![move_icon](assets/move_icon.png) from the toolbar.
+1. Select the asset, and tap/click the **[!UICONTROL Move]** icon from the toolbar.
+![move_icon](assets/move_icon.png)
 
 1. In the Move Assets wizard, do one of the following:
 
@@ -457,7 +460,7 @@ The other properties and metadata information is retained. A partial copy is not
 
 1. Tap/click the asset to open its asset page.
 
-   ![chlimage_1-220](assets/chlimage_1-220.png)
+   ![chlimage_1-220](assets/chlimage_1-15.png)
 
 1. Tap/click the GlobalNav icon, and select **[!UICONTROL Renditions]** from the list.
 
@@ -483,7 +486,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    Navigate to the asset details page for the asset, and tap/click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
-   ![chlimage_1-221](assets/chlimage_1-221.png)
+   ![chlimage_1-221](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
@@ -495,7 +498,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    Similarly, you can customize the Annotation page image by overlaying `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![chlimage_1-222](assets/chlimage_1-222.png)
+   ![chlimage_1-222](assets/chlimage_1-17.png)
 
    To configure rendition dimensions for a video asset, navigate to the `videopicker` node in the CRX repository at the location `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, overlay the node, and then edit the appropriate property.
 
@@ -515,7 +518,7 @@ For Word documents, the DAM Parse Word Documents workflow generates a `cq:Page` 
 
 1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Subassets]** from the list
 
-   ![chlimage_1-223](assets/chlimage_1-223.png)
+   ![chlimage_1-223](assets/chlimage_1-18.png)
 
    >[!NOTE]
    >
@@ -523,7 +526,7 @@ For Word documents, the DAM Parse Word Documents workflow generates a `cq:Page` 
 
    When you select **Subassets** from the list, the **subassets** page displays the subassets linked to the parent asset.
 
-   ![chlimage_1-224](assets/chlimage_1-224.png)
+   ![chlimage_1-224](assets/chlimage_1-19.png)
 
 ## Deleting Assets {#deleting-assets}
 
@@ -571,7 +574,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap/click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. If the asset references other assets, its references are listed in the wizard. Only references that are either unpublished or modified since they were last published/unpublished are displayed. Choose the references you want to publish.
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![chlimage_1-225](assets/chlimage_1-21.png)
 
    >[!NOTE]
    >
@@ -644,7 +647,7 @@ Quick action icons are available for a single asset at a time. Depending upon yo
 
 ### Navigate and select assets {#navigating-and-selecting-assets}
 
-You can view, navigate through, and select assets with any of the available views (Card, Column, and List) using the **[!UICONTROL Select]** option. 
+You can view, navigate through, and select assets with any of the available views (Card, Column, and List) using the **[!UICONTROL Select]** option.
 
 In list view and column view, the **[!UICONTROL Select]** option displays when you hover the pointer over the asset thumbnail.
 
@@ -678,32 +681,32 @@ The editing tools in the AEM Assets interface let you perform small editing jobs
 
 1. To crop the image, tap/click the **Crop** icon.
 
-   ![chlimage_1-226](assets/chlimage_1-226.png)
+   ![chlimage_1-226](assets/chlimage_1-22.png)
 
 1. Select the desired option from the list. The crop area appears on the image based on the option you choose. The **Free Hand** option lets you crop the image without any aspect ratio restrictions.
 
-   ![chlimage_1-227](/help/assets/assets/do-not-localize/chlimage_1-227.png)
+   ![chlimage_1-227](/help/assets/assets/chlimage_1-23.png)
 
 1. Select the area to be cropped, and resize or reposition it on the image.
 1. Use the **Finish** icon (top right corner) to crop the image. Clicking the **Finish** icon also triggers the regeneration of renditions.
 
-   ![chlimage_1-228](assets/chlimage_1-228.png)
+   ![chlimage_1-228](assets/chlimage_1-24.png)
 
 1. Use the **Undo** and **Redo** icons on the top right to revert to the uncropped image or retain the cropped image, respectively.
 
-   ![chlimage_1-229](assets/chlimage_1-229.png)
+   ![chlimage_1-229](assets/chlimage_1-25.png)
 
 1. Tap/click the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
 
-   ![chlimage_1-230](assets/chlimage_1-230.png)
+   ![chlimage_1-230](assets/chlimage_1-26.png)
 
 1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![chlimage_1-231](assets/chlimage_1-27.png)
 
 1. Tap/click the **Finish** icon to save the changes.
 
-   ![chlimage_1-232](assets/chlimage_1-232.png)
+   ![chlimage_1-232](assets/chlimage_1-28.png)
 
 >[!NOTE]
 >
@@ -746,11 +749,11 @@ Video annotations are only supported on browsers with HTML5-compatible video for
     * [Quick actions](/help/assets/managing-assets-touch-ui.md#quick-actions)
     * From the toolbar after selecting the asset or navigating to the asset page
 
-   ![chlimage_1-233](assets/chlimage_1-233.png)
+   ![chlimage_1-233](assets/chlimage_1-29.png)
 
 1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
 
-   ![chlimage_1-234](assets/chlimage_1-234.png)
+   ![chlimage_1-234](assets/chlimage_1-30.png)
 
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
 
@@ -758,11 +761,11 @@ Video annotations are only supported on browsers with HTML5-compatible video for
    >
    >For a non-administrator user, suggestions appear only if the user has Read permissions at */home* in Crx-de.
 
-   ![chlimage_1-235](assets/chlimage_1-235.png)
+   ![chlimage_1-235](assets/chlimage_1-31.png)
 
 1. After adding the annotation, click **[!UICONTROL Add]** to save it. A notification for the annotation is sent to Aaron.
 
-   ![chlimage_1-236](assets/chlimage_1-236.png)
+   ![chlimage_1-236](assets/chlimage_1-32.png)
 
    >[!NOTE]
    >
@@ -777,11 +780,11 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **[!UICONTROL My Preferences]**.
 
-   ![chlimage_1-237](assets/chlimage_1-237.png)
+   ![chlimage_1-237](assets/chlimage_1-33.png)
 
    Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click/tap **[!UICONTROL Accept]**.
 
-   ![chlimage_1-238](assets/chlimage_1-238.png)
+   ![chlimage_1-238](assets/chlimage_1-34.png)
 
 >[!NOTE]
 >
@@ -793,15 +796,15 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
 
-   ![chlimage_1-239](assets/chlimage_1-239.png)
+   ![chlimage_1-239](assets/chlimage_1-35.png)
 
 1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
 
-   ![chlimage_1-240](assets/chlimage_1-240.png)
+   ![chlimage_1-240](assets/chlimage_1-36.png)
 
    Tap/click a comment in the **[!UICONTROL Timeline]** panel to view the corresponding annotation on the image.
 
-   ![chlimage_1-241](assets/chlimage_1-241.png)
+   ![chlimage_1-241](assets/chlimage_1-37.png)
 
    Tap/click **[!UICONTROL Delete]**, to delete a particular comment.
 
@@ -821,19 +824,19 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
 
 1. To print specific annotations, select the annotations from the timeline.
 
-   ![chlimage_1-242](assets/chlimage_1-242.png)
+   ![chlimage_1-242](assets/chlimage_1-38.png)
 
    To print the review status only, select it from the timeline.
 
-   ![chlimage_1-243](assets/chlimage_1-243.png)
+   ![chlimage_1-243](assets/chlimage_1-39.png)
 
 1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
 
-   ![chlimage_1-244](assets/chlimage_1-244.png)
+   ![chlimage_1-244](assets/chlimage_1-40.png)
 
 1. From the Print dialog, choose the position you want the annotations/review status to be displayed on the PDF. For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. It is selected by default.
 
-   ![chlimage_1-245](assets/chlimage_1-245.png)
+   ![chlimage_1-245](assets/chlimage_1-41.png)
 
    You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
@@ -843,11 +846,11 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
 
 1. Tap/click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
 
-   ![chlimage_1-246](assets/chlimage_1-246.png)
+   ![chlimage_1-246](assets/chlimage_1-42.png)
 
 1. Download or print the PDF using the options at the top-right.
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-43.png)
 
    >[!NOTE]
    >
@@ -855,7 +858,7 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
 
    To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![chlimage_1-248](assets/chlimage_1-248.png)
+   ![chlimage_1-248](assets/chlimage_1-44.png)
 
    Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
 
@@ -913,15 +916,15 @@ The versioning functionality lets you do the following:
 
 1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to view the available actions you can perform on the asset.
 
-   ![chlimage_1-249](assets/chlimage_1-249.png)
+   ![chlimage_1-249](assets/chlimage_1-45.png)
 
 1. Tap/click **[!UICONTROL Save as Version]** to create a version for the asset.
 
-   ![chlimage_1-250](assets/chlimage_1-250.png)
+   ![chlimage_1-250](assets/chlimage_1-46.png)
 
 1. Add a label and comment, and then click **[!UICONTROL Create]** to create a version. Alternatively, tap/click **Cancel** to exit the operation.
 
-   ![chlimage_1-251](assets/chlimage_1-251.png)
+   ![chlimage_1-251](assets/chlimage_1-47.png)
 
 1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
 
@@ -954,27 +957,27 @@ The versioning functionality lets you do the following:
 1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
 1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
 
-   ![timeline-1](assets/timeline-1.png)
+   ![timeline-1](assets/timeline.png)
 
 1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to open the list of actions available for the asset.
 
-   ![chlimage_1-252](assets/chlimage_1-252.png)
+   ![chlimage_1-252](assets/chlimage_1-45.png)
 
 1. Tap/click **[!UICONTROL Start Workflow]** from the list.
 
-   ![chlimage_1-253](assets/chlimage_1-253.png)
+   ![chlimage_1-253](assets/chlimage_1-49.png)
 
 1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
-   ![chlimage_1-254](assets/chlimage_1-254.png)
+   ![chlimage_1-254](assets/chlimage_1-50.png)
 
 1. (Optional) Specify a title for the workflow, which can be used to reference the workflow instance.
 
-   ![chlimage_1-255](assets/chlimage_1-255.png)
+   ![chlimage_1-255](assets/chlimage_1-51.png)
 
 1. Tap/click **[!UICONTROL Start]** and then tap/click **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
 
-   ![chlimage_1-256](assets/chlimage_1-256.png)
+   ![chlimage_1-256](assets/chlimage_1-52.png)
 
 ## Collections {#collections}
 

@@ -102,7 +102,7 @@ The following actions are available:
 
 1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
 
-![chlimage_1-159](assets/chlimage_1-159.png)
+![chlimage_1-159](assets/chlimage_1-387.png)
 
 #### Determining how Search Results are Presented {#determining-how-search-results-are-presented}
 
@@ -125,11 +125,11 @@ The following lenses are available:
 
 #### Mosaic Lens {#mosaic-lens}
 
-![chlimage_1-160](assets/chlimage_1-160.png)
+![chlimage_1-160](assets/chlimage_1-388.png)
 
 #### List Lens {#list-lens}
 
-![chlimage_1-161](assets/chlimage_1-161.png)
+![chlimage_1-161](assets/chlimage_1-389.png)
 
 #### Customizing the Query Builder {#customizing-the-query-builder}
 
@@ -286,7 +286,7 @@ See [Customizing and Extending AEM Assets](/help/assets/extending-assets.md) for
 
 The following is an example of a Metadata form with various fields:
 
-![chlimage_1-162](assets/chlimage_1-162.png)
+![chlimage_1-162](assets/chlimage_1-390.png)
 
 On the Asset Editor page, users can then enter values into the metadata fields (if they are editable) and perform the end action (for example, submitting the changes).
 
@@ -344,7 +344,7 @@ The following is an example of a populated Thumbnail component:
 
 The Title component displays the title of the asset and a description.
 
-![chlimage_1-163](assets/chlimage_1-163.png)
+![chlimage_1-163](assets/chlimage_1-391.png)
 
 By default, it is in read-only mode so users cannot edit it. To make it editable, double-click the component and clear the **Hide edit button** checkbox. In addition, enter a title for multiple assets.
 
@@ -358,7 +358,7 @@ When users edit the Title by clicking the Pencil icon, they can change the **Tit
 
 The following is an example of a populated Title component:
 
-![chlimage_1-164](assets/chlimage_1-164.png)
+![chlimage_1-164](assets/chlimage_1-392.png)
 
 #### Adding Asset Editor Actions {#adding-asset-editor-actions}
 
@@ -383,7 +383,7 @@ The following actions are available:
 
 1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
 
-![chlimage_1-165](assets/chlimage_1-165.png)
+![chlimage_1-165](assets/chlimage_1-393.png)
 
 ## Multi-Editing Assets with the Asset Editor page {#multi-editing-assets-with-the-asset-editor-page}
 
