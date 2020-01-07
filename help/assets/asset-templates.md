@@ -46,33 +46,34 @@ You can also download the output in these formats to your local system.
 Consider a scenario where you want to create digital printable collateral, such as brochures, flyers, and ads for an upcoming campaign and share with outlet stores globally. Creating collateral based on a template helps deliver a unified customer experience across channels. Designers can create the campaign templates (single-page or multi-page) using a creative solution, such as InDesign and upload the templates to AEM Assets for you. Before creating a collateral, have one or more INDD templates uploaded to and available in Experience Manager in advance.
 
 1. Click or tap the AEM logo, and then click/tap Assets.
+
 1. From the options, choose **[!UICONTROL Templates]**.
 
-   ![chlimage_1-101](assets/chlimage_1-101.png)
+   ![chlimage_1-101](assets/chlimage_1-306.png)
 
 1. Click/tap **[!UICONTROL Create]**, and then choose the collateral you want to create from the menu. For example, choose **[!UICONTROL Brochure]**.
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![chlimage_1-102](assets/chlimage_1-307.png)
 
 1. Have one or more INDD templates uploaded to and available in Experience Manager in advance. Choose a template for your brochure, and click/tap **[!UICONTROL Next]**.
 
-   ![chlimage_1-103](assets/chlimage_1-103.png)
+   ![chlimage_1-103](assets/chlimage_1-308.png)
 
 1. Specify a name and an optional description for the brochure.
 
-   ![chlimage_1-104](assets/chlimage_1-104.png)
+   ![chlimage_1-104](assets/chlimage_1-309.png)
 
 1. (Optional) Tap **[!UICONTROL Tags]** and select one or more tags for the brochure. Tap **[!UICONTROL Confirm]** to confirm your selection.
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![chlimage_1-105](assets/chlimage_1-310.png)
 
 1. Click **[!UICONTROL Create]**. A dialog confirms that a new brochure is created. Click/tap **[!UICONTROL Open]** to open the brochure in edit mode.
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   ![chlimage_1-106](assets/.png)
 
    Alternatively, close the dialog and navigate to the folder in the Templates page you started with to view the brochure you created. The type of the collateral appears on its thumbnail in card view. For example, in this case, Brochure is displayed on the thumbnail.
 
-   ![chlimage_1-107](assets/chlimage_1-107.png)
+   ![chlimage_1-107](assets/chlimage_1-312.png)
 
 ## Editing a Collateral {#editing-a-collateral}
 
