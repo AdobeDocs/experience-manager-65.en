@@ -45,24 +45,24 @@ The following steps describe how to do this using the creation of a new page wit
 
 1. Prepare the action you wish to invoke within AEM. In this case, we have proceded to the end of the **Create Page** wizard, but have not yet clicked **Create**.
 
-   ![chlimage_1-66](assets/chlimage_1-66.png)
+   ![chlimage_1-66](assets/chlimage_1-66a.png)
 
 1. Start the developer tools and select the **Network** tab. Click the **Preserve log** option before clearing the console.
 
-   ![chlimage_1-67](assets/chlimage_1-67.png)
+   ![chlimage_1-67](assets/chlimage_1-67a.png)
 
 1. Click **Create** in the **Create Page** wizard to actually create the workflow.
 1. Right-click on the resulting POST action and select **Copy** -&gt; **Copy as cURL**.
 
-   ![chlimage_1-68](assets/chlimage_1-68.png)
+   ![chlimage_1-68](assets/chlimage_1-68a.png)
 
 1. Copy the cURL command to a text editor and remove all headers from the command, which start with `-H` (highligted in blue in the image below) and add the proper authentication parameter such as `-u admin:admin`.
 
-   ![chlimage_1-69](assets/chlimage_1-69.png)
+   ![chlimage_1-69](assets/chlimage_1-69a.png)
 
 1. Execute the cURL command via the command line and view the response.
 
-   ![chlimage_1-70](assets/chlimage_1-70.png)
+   ![chlimage_1-70](assets/chlimage_1-70a.png)
 
 ## Common Operational AEM cURL Commands {#common-operational-aem-curl-commands}
 

@@ -79,7 +79,7 @@ To configure an AEM external account:
 
 1. Go to **Administration** &gt; **Application settings** &gt; **External accounts**.
 
-   ![chlimage_1-124](assets/chlimage_1-124.png)
+   ![chlimage_1-124](assets/chlimage_1-124a.png)
 
 1. Select the default **aemInstance** external account or create a new one by clicking the **Create** button.
 1. Select **Adobe Experience Manager**i n the **Type** field and enter the access parameters used for your AEM authoring instance: server address, account name and password.
@@ -119,7 +119,7 @@ To create an AEM-specific email delivery template:
 
    Email deliveries created from this template will have the AEM content feature enabled.
 
-   ![chlimage_1-125](assets/chlimage_1-125.png)
+   ![chlimage_1-125](assets/chlimage_1-125a.png)
 
 ## Configuring Adobe Experience Manager {#configuring-adobe-experience-manager}
 
@@ -145,7 +145,7 @@ To configure replication between AEM instances:
 
 1. From the authoring instance, select **AEM logo**&gt; **Tools **icon &gt; **Deployment** &gt; **Replication** &gt; **Agents on author**, then click **Default Agent**.
 
-   ![chlimage_1-126](assets/chlimage_1-126.png)
+   ![chlimage_1-126](assets/chlimage_1-126a.png)
 
    >[!NOTE]
    >
@@ -154,7 +154,7 @@ To configure replication between AEM instances:
 1. Click **Edit** then select the **Transport** tab.
 1. Configure the URI by replacing **localhost** with the IP address or the address of the AEM publishing instance.
 
-   ![chlimage_1-127](assets/chlimage_1-127.png)
+   ![chlimage_1-127](assets/chlimage_1-127a.png)
 
 ### Connecting AEM to Adobe Campaign {#connecting-aem-to-adobe-campaign}
 
@@ -163,7 +163,7 @@ Before you can use AEM and Adobe Campaign together, you must establish the link 
 1. Connect to your AEM authoring instance.
 1. Select **Tools** &gt; **Operations** &gt; **Cloud** &gt; **Cloud Services**, then **Configure now** in the Adobe Campaign section.
 
-   ![chlimage_1-128](assets/chlimage_1-128.png)
+   ![chlimage_1-128](assets/chlimage_1-128a.png)
 
 1. Create a new configuration by entering a **Title** and click **Create**, or choose the existing configuration that you want to link with your Adobe Campaign instance.
 1. Edit the configuration so that it matches the parameters of your Adobe Campaign instance.
@@ -174,13 +174,13 @@ Before you can use AEM and Adobe Campaign together, you must establish the link 
 
 1. Select **Connect to Adobe Campaign** and click **OK**.
 
-   ![chlimage_1-129](assets/chlimage_1-129.png)
+   ![chlimage_1-129](assets/chlimage_1-129a.png)
 
    >[!NOTE]
    >
    >After you [create your email and publish it](/help/sites-authoring/campaign.md), you need to re-publish the configuration onto your publish instance.
 
-   ![chlimage_1-130](assets/chlimage_1-130.png)
+   ![chlimage_1-130](assets/chlimage_1-130a.png)
 
 >[!NOTE]
 >
@@ -198,5 +198,5 @@ See [Configure the externalizer](/help/sites-developing/externalizer.md) for gen
 
 If it points to `localhost:4503` or another server that Adobe Campaign cannot reach, your images will not appear on the Adobe Campaign console.
 
-![chlimage_1-131](assets/chlimage_1-131.png)
+![chlimage_1-131](assets/chlimage_1-131a.png)
 
