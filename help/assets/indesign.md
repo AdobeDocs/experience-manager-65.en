@@ -29,7 +29,6 @@ To fully upload files to AEM Assets that you have created with Adobe InDesign a 
 >* [InDesign Server](https://www.adobe.com/products/indesignserver.html)
 >  This engine enables you to programmatically create automated documents based on what you have created with InDesign. It operates as a service offering an interface to its [ExtendScript](https://www.adobe.com/devnet/scripting.html) engine.
 >  The scripts are written in ExtendScript, which is similar to javascript. For information about InDesign scripts see [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
->
 
 ## How the extraction works {#how-the-extraction-works}
 
@@ -147,12 +146,8 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
 
 ![chlimage_1-96](assets/chlimage_1-96.png)
 
-* **Page Extraction Handler**: From the drop down list, select the handler that you want to use. An extraction handler operates on a specific rendition, chosen by a related `RenditionPicker` (see the `ExtractionHandler` API).
-
-In a standard AEM installation the following is available:
-
-  * IDML Export Extraction Handler
-    Operates on the `IDML` rendition generated in the MediaExtract step.
+* **Page Extraction Handler**: From the popup list, select the handler that you want to use. An extraction handler operates on a specific rendition, chosen by a related `RenditionPicker` (see the `ExtractionHandler` API). In a standard AEM installation the following is available:
+  * IDML Export Extraction Handle: Operates on the `IDML` rendition generated in the MediaExtract step.
 
 * **Page Name**: Specify the name you want to have assigned to the resulting page. If left blank then the name is "page" (or a derivative if "page" already exists).
 
