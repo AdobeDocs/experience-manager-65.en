@@ -46,33 +46,34 @@ You can also download the output in these formats to your local system.
 Consider a scenario where you want to create digital printable collateral, such as brochures, flyers, and ads for an upcoming campaign and share with outlet stores globally. Creating collateral based on a template helps deliver a unified customer experience across channels. Designers can create the campaign templates (single-page or multi-page) using a creative solution, such as InDesign and upload the templates to AEM Assets for you. Before creating a collateral, have one or more INDD templates uploaded to and available in Experience Manager in advance.
 
 1. Click or tap the AEM logo, and then click/tap Assets.
+
 1. From the options, choose **[!UICONTROL Templates]**.
 
-   ![chlimage_1-101](assets/chlimage_1-101.png)
+   ![chlimage_1-101](assets/chlimage_1-306.png)
 
 1. Click/tap **[!UICONTROL Create]**, and then choose the collateral you want to create from the menu. For example, choose **[!UICONTROL Brochure]**.
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![chlimage_1-102](assets/chlimage_1-307.png)
 
 1. Have one or more INDD templates uploaded to and available in Experience Manager in advance. Choose a template for your brochure, and click/tap **[!UICONTROL Next]**.
 
-   ![chlimage_1-103](assets/chlimage_1-103.png)
+   ![chlimage_1-103](assets/chlimage_1-308.png)
 
 1. Specify a name and an optional description for the brochure.
 
-   ![chlimage_1-104](assets/chlimage_1-104.png)
+   ![chlimage_1-104](assets/chlimage_1-309.png)
 
 1. (Optional) Tap **[!UICONTROL Tags]** and select one or more tags for the brochure. Tap **[!UICONTROL Confirm]** to confirm your selection.
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![chlimage_1-105](assets/chlimage_1-310.png)
 
 1. Click **[!UICONTROL Create]**. A dialog confirms that a new brochure is created. Click/tap **[!UICONTROL Open]** to open the brochure in edit mode.
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   <!--![chlimage_1-106](assets/.png) -->
 
    Alternatively, close the dialog and navigate to the folder in the Templates page you started with to view the brochure you created. The type of the collateral appears on its thumbnail in card view. For example, in this case, Brochure is displayed on the thumbnail.
 
-   ![chlimage_1-107](assets/chlimage_1-107.png)
+   ![chlimage_1-107](assets/chlimage_1-312.png)
 
 ## Editing a Collateral {#editing-a-collateral}
 
@@ -85,7 +86,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
     * In the asset page for the collateral, tap **[!UICONTROL Edit]** from the toolbar.
     * Select the collateral and tap **[!UICONTROL Edit]** from the toolbar.
 
-   ![chlimage_1-108](assets/chlimage_1-108.png)
+   <!--![chlimage_1-108](assets/chlimage_1-313.png) -->
 
    The asset finder and the text editor is displayed on the left of the page. The text editor is open by default.
 
@@ -93,11 +94,11 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    Using the asset finder, you can browse or search for images within AEM Assets and replace the editable images in the template with images of your choice.
 
-   ![chlimage_1-109](assets/chlimage_1-109.png)
+   ![chlimage_1-109](assets/chlimage_1-314.png)
 
    The editable are displayed on the right. For a field to be editable in AEM Assets, corresponding field in the template must be tagged in InDesign. In other words, they should be marked as editable in InDesign.
 
-   ![chlimage_1-110](assets/chlimage_1-110.png)
+   ![chlimage_1-110](assets/chlimage_1-315.png)
 
    >[!NOTE]
    >
@@ -105,33 +106,33 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
 1. To modify the text in an editable field, click/tap the text field from the list of editable fields and edit the text in the field.
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+   ![chlimage_1-111](assets/chlimage_1-316.png)
 
    You can edit the text properties, for example font style, color, size using the options provided.
 
 1. Tap **[!UICONTROL Preview]** to preview the text changes.
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-317.png)
 
 1. To swap an image, tap the **[!UICONTROL Asset Finder]**.
 
-   ![chlimage_1-113](assets/chlimage_1-113.png)
+   ![chlimage_1-113](assets/chlimage_1-318.png)
 
 1. Select the image field from the list of editable fields and then drag a desired image from the asset picker to the editable field.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-114](assets/chlimage_1-319.png)
 
    You can also search for images using keywords, tags, and based on their publish status. You can browse through the AEM Assets repository and navigate to the location of the desired image.
 
-   ![chlimage_1-115](assets/chlimage_1-115.png)
+   ![chlimage_1-115](assets/chlimage_1-320.png)
 
 1. Tap **[!UICONTROL Preview]** to preview the image.
 
-   ![chlimage_1-116](assets/chlimage_1-116.png)
+   ![chlimage_1-116](assets/chlimage_1-321.png)
 
 1. To edit a specific page in a multi-page collateral, use the page navigator at the bottom.
 
-   ![chlimage_1-117](assets/chlimage_1-117.png)
+   ![chlimage_1-117](assets/chlimage_1-322.png)
 
 1. Tap **[!UICONTROL Preview]**  on the toolbar to preview all the changes. Click/tap **[!UICONTROL Done]** to save the editing changes to the collateral.
 
@@ -152,11 +153,11 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 1. To generate a PDF rendition for the brochure, select the Acrobat option in the dialog and then click **[!UICONTROL Continue]**.
 1. The collateral is created in the folder you started with. To view the renditions, open the collateral and choose **[!UICONTROL Renditions]** from the GlobalNav list.
 
-   ![chlimage_1-118](assets/chlimage_1-118.png)
+   ![chlimage_1-118](assets/chlimage_1-323.png)
 
 1. Click/tap the PDF rendition from the list of renditions to download the PDF file. Open the PDF file to review the collateral.
 
-   ![chlimage_1-119](assets/chlimage_1-119.png)
+   ![chlimage_1-119](assets/chlimage_1-324.png)
 
 ## Merge Collateral {#merge-collateral}
 
@@ -164,36 +165,36 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 1. From the options, choose **[!UICONTROL Templates]**.
 1. Click/tap **[!UICONTROL Create]** and the choose **[!UICONTROL Merge]** from the menu.
 
-   ![chlimage_1-120](assets/chlimage_1-120.png)
+   ![chlimage_1-120](assets/chlimage_1-325.png)
 
 1. From the [!UICONTROL Template Merge] page, tap **[!UICONTROL Merge]**.
 
-   ![chlimage_1-121](assets/chlimage_1-121.png)
+   ![chlimage_1-121](assets/chlimage_1-326.png)
 
 1. Navigate to the location of the collateral you want to merge, click/tap the thumbnails of the collateral you want to merge to select them.
 
-   ![chlimage_1-122](assets/chlimage_1-122.png)
+   ![chlimage_1-122](assets/chlimage_1-327.png)
 
-   You can even search for templates from the Omnisearch box.
+   You can also search for templates from the Omnisearch box.
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+   ![chlimage_1-123](assets/chlimage_1-328.png)
 
    You can browse through the AEM Assets repository or collections, and navigate to the location of the desired templates and then select them to merge.
 
-   ![chlimage_1-124](assets/chlimage_1-124.png)
+   ![chlimage_1-124](assets/chlimage_1-329.png)
 
    You can apply various filters to search the desired templates. For example, you can search for templates based on file type or tags.
 
-   ![chlimage_1-125](assets/chlimage_1-125.png)
+   ![chlimage_1-125](assets/chlimage_1-330.png)
 
 1. Click/tap **[!UICONTROL Next]** from the toolbar.
 1. In the **[!UICONTROL Preview & Reorder]** screen, rearrange the templates if required and preview the selection of templates to merge. Then, click/tap **[!UICONTROL Next]** from the toolbar.
 
-   ![chlimage_1-126](assets/chlimage_1-126.png)
+   ![chlimage_1-126](assets/chlimage_1-331.png)
 
 1. In the Configure Template screen, specify a name for the collateral. Optionally, specify any tags that you consider appropriate. If you want to export the output in PDF format, select the **Acrobat (.PDF)** option. By default, the collateral is exported in JPG and InDesign format. To change the display thumbnail for the multi-page collateral, click/tap **[!UICONTROL Change Thumbnail]**.
 
-   ![chlimage_1-127](assets/chlimage_1-127.png)
+   ![chlimage_1-127](assets/chlimage_1-332.png)
 
 1. Click/tap **[!UICONTROL Save]** and then click/tap **[!UICONTROL OK]** in the dialog to close the dialog. The multi-page collateral is created in the folder you started with.
 
