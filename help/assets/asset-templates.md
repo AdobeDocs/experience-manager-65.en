@@ -75,7 +75,7 @@ Consider a scenario where you want to create digital printable collateral, such 
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
-## Editing a Collateral {#editing-a-collateral}
+## Edit a Collateral {#editing-a-collateral}
 
 You can edit a collateral immediately after you create it. Alternatively, you open it from the Templates page or the asset page.
 

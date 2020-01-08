@@ -6,6 +6,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 358b490d-c514-42ba-b9f0-8e29d5e6046e
 docset: aem65
+mini-toc-levels: 1
 
 ---
 

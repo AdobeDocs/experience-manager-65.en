@@ -31,7 +31,7 @@ To fully upload files to AEM Assets that you have created with Adobe InDesign a 
 >  The scripts are written in ExtendScript, which is similar to javascript. For information about InDesign scripts see [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 >
 
-## How the Extraction Works {#how-the-extraction-works}
+## How the extraction works {#how-the-extraction-works}
 
 The Adobe InDesign Server can be integrated with AEM Assets so that INDD files created with InDesign can be uploaded, renditions generated, all media extracted (for example, video) and stored as assets:
 
@@ -113,67 +113,56 @@ AEM Assets has a pre-configured workflow **[!UICONTROL DAM Update Asset]**, that
 
 This workflow is setup with default values that can be adapted for your setup on the various author instances (this is a standard workflow, so further information is available under [Editing a Workflow](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). If you are using the default values (including the SOAP port), then no configuration is needed.
 
-After the setup, uploading InDesign files into AEM Assets (by any of the usual methods) will trigger the workflow required to process the asset and prepare the various renditions. Test your configuration by uploading an `.indd` file into AEM Assets to confirm that you see the different renditions created by IDS under `<*your_asset*>.indd/Renditions`
+After the setup, uploading InDesign files into AEM Assets (by any of the usual methods) will trigger the workflow required to process the asset and prepare the various renditions. Test your configuration by uploading an INDD file into AEM Assets to confirm that you see the different renditions created by IDS under `<*your_asset*>.indd/Renditions`
 
 #### Media extraction {#media-extraction}
 
 This step controls the extraction of media from the INDD file.
 
-To customize, you can edit **Arguments** tab of the **Media Extraction** step.
+To customize, you can edit **[!UICONTROL Arguments]** tab of the **[!UICONTROL Media Extraction]** step.
 
 ![Media extraction arguments and script paths](assets/media_extraction_arguments_scripts.png)
 
 Media extraction arguments and script paths
 
-* **ExtendScript library**
-  This is a simple http get/post method library, required by the other scripts.
+* **ExtendScript library**: This is a simple http get/post method library, required by the other scripts.
 
-* **Extend Scripts**
-  You can specify different script combinations here. If you want your own scripts to be executed on the InDesign Server, save the scripts at `/apps/settings/dam/indesign/scripts`.
-  For information about Indesign scripts see:
-  [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+* **Extend Scripts**: You can specify different script combinations here. If you want your own scripts to be executed on the InDesign Server, save the scripts at `/apps/settings/dam/indesign/scripts`.
+
+For information about Indesign scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
 >[!CAUTION]
 >
->Do **not** change the **ExtendScript library**.
-
->
->This library provides the HTTP functionality required to communicate with Sling. This setting specifies the library to be send to the InDesign Server for use there.
+>Do not change the ExtendScript library. This library provides the HTTP functionality required to communicate with Sling. This setting specifies the library to be send to the InDesign Server for use there.
 
 The `ThumbnailExport.jsx` script run by the Media Extraction workflow step generates a thumbnail rendition in .jpg format. This rendition is used by the Process Thumbnails workflow step to generate the static renditions required by AEM.
 
 You can configure the Process Thumbnails workflow step to generate static renditions at different sizes. Ensure that you do not remove the defaults, because they are required by the AEM Assets UI. Finally, the Delete Image Preview Rendition workflow step removes the .jpg thumbnail rendition, as it is no longer needed.
 
-#### Page Extraction {#page-extraction}
+#### Page extraction {#page-extraction}
 
 This creates an AEM page from the extracted elements. An extraction handler is used to extract data from a rendition (currently HTML or IDML). This data is then used to create a page using the PageBuilder.
 
-To customize, you can edit the **Arguments** tab of the **Page Extraction** step.
+To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTROL Page Extraction]** step.
 
 ![chlimage_1-96](assets/chlimage_1-96.png)
 
-* **Page Extraction Handler**
-  From the drop down list, select the handler that you want to use. An extraction handler operates on a specific rendition, chosen by a related `RenditionPicker` (see the `ExtractionHandler` API).
-  In a standard AEM installation the following is available:
+* **Page Extraction Handler**: From the drop down list, select the handler that you want to use. An extraction handler operates on a specific rendition, chosen by a related `RenditionPicker` (see the `ExtractionHandler` API).
+
+In a standard AEM installation the following is available:
 
   * IDML Export Extraction Handler
     Operates on the `IDML` rendition generated in the MediaExtract step.
 
-* **Page Name**
-  Specify the name you want to have assigned to the resulting page. If left blank then the name is "page" (or a derivative if "page" already exists).
+* **Page Name**: Specify the name you want to have assigned to the resulting page. If left blank then the name is "page" (or a derivative if "page" already exists).
 
-* **Page Title**
-  Specify the title you want to have assigned to the resulting page.
+* **Page Title**: Specify the title you want to have assigned to the resulting page.
 
-* **Page Root Path**
-  The path to the root location of the resulting page.
-  If left blank the node holding the asset's renditions will be used.
+* **Page Root Path**: The path to the root location of the resulting page. If left blank the node holding the asset's renditions will be used.
 
-* **Page Template**
-  The template to use when generating the resulting page.
+* **Page Template**: The template to use when generating the resulting page.
 
-* **Page Design**
-  The page design to be used when generating the resulting page.
+* **Page Design**: The page design to be used when generating the resulting page.
 
 ### Configure the proxy worker for InDesign Server {#configuring-the-proxy-worker-for-indesign-server}
 
@@ -181,9 +170,9 @@ To customize, you can edit the **Arguments** tab of the **Page Extraction** step
 >
 >The worker resides on the proxy instance.
 
-1. In the Tools console, expand **Cloud Services Configurations** in the left pane. Then expand **Cloud Proxy Configuration**.
+1. In the Tools console, expand **[!UICONTROL Cloud Services Configurations]** in the left pane. Then expand **[!UICONTROL Cloud Proxy Configuration]**.
 
-1. Double-click the **IDS worker** to open for configuration.
+1. Double-click the **[!UICONTROL IDS worker]** to open for configuration.
 
 1. Click **[!UICONTROL Edit]** to open the configuration dialog and define the required settings:
 
@@ -199,12 +188,12 @@ To customize, you can edit the **Arguments** tab of the **Page Extraction** step
 If the InDesign server and AEM run on different hosts or either or both these applications do not run on default ports, configure [!UICONTROL Day CQ Link Externalizer] to set the host name, port, and content path for the InDesign server.
 
 1. Access the Web Console at `https://[aem_server]:[port]/system/console/configMgr`.
-1. Locate the configuration **Day CQ Link Externalizer**, and tap **[!UICONTROL Edit]** to open it.
+1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and tap **[!UICONTROL Edit]** to open it.
 1. Specify the host name and context path for the Indesign server and click **Save**.
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
-### Enable parallel job processing for InDesign Servers {#enabling-parallel-job-processing-for-indesign-server-s}
+### Enable parallel job processing for InDesign servers {#enabling-parallel-job-processing-for-indesign-server-s}
 
 You can now enable parallel job processing for IDS.
 
