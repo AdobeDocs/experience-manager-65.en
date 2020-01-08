@@ -198,7 +198,8 @@ Lock icon against an option on the Search Forms page indicate that the default s
 To restore the default search facet, perform these steps:
 
 1. Select **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.
-1. Tap **[!UICONTROL Delete]** ![deleteoutline](assets/deleteoutline.png) in the toolbar.
+1. Tap **[!UICONTROL Delete]** in the toolbar.
+ ![deleteoutline](assets/deleteoutline.png)
 1. In the confirmation dialog, tap **[!UICONTROL Delete]** to remove the custom changes.
 
    After you delete the custom changes to search facets, the Lock icon reappears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.
