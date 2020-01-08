@@ -68,7 +68,7 @@ You can use the Metadata Schema Forms editor to modify existing schemas or add c
 
    ![chlimage_1-38](assets/chlimage_1-174.png)
 
-## Editing metadata schema forms {#edit-metadata-schema-forms}
+## Edit metadata schema forms {#edit-metadata-schema-forms}
 
 You can edit a newly-added or existing metadata schema form. The metadata schema form includes the following:
 
@@ -158,7 +158,7 @@ To include any tab in the properties page in addition to the tab where the Conte
 
 Instead of specifying properties for the options in the **[!UICONTROL Settings]** tab, you can define the options in a JSON file by specifying corresponding key-value pairs. Specify the path of the JSON file in the **[!UICONTROL JSON Path]** field.
 
-#### Adding/deleting a tab in the schema form {#adding-deleting-a-tab-in-the-schema-form}
+#### Add or delete a tab in the schema form {#adding-deleting-a-tab-in-the-schema-form}
 
 The schema editor lets you add or delete a tab. The default schema form includes the **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]**, and **[!UICONTROL IPTC Extension]** tabs, by default.
 

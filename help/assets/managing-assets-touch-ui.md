@@ -6,6 +6,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 83a825ff-5c3d-4e2c-a265-eead090a5984
 docset: aem65
+mini-toc-levels: 1
 
 ---
 
@@ -128,7 +129,7 @@ To overcome this situation, AEM Assets ingests one asset at a time (serial uploa
 
 Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
 
-### Uploading assets using FTP {#uploading-assets-using-ftp}
+### Upload assets using FTP {#uploading-assets-using-ftp}
 
 Dynamic Media enables batch uploading of assets via FTP server. If you intend to upload large assets (&gt; 1 GB) or upload entire folders and sub-folders, you should use FTP. You can even set up FTP upload to occur on a recurring scheduled basis.
 
@@ -184,7 +185,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 | | EVideo Options | You can transcode a video file by choosing a Video Preset.<br> See [Setting eVideo upload options](#setting-evideo-upload-options). |
 | | Batch Set Presets | To create an Image Set, or Spin Set from the uploaded files, click the Active column for the preset you want to use. You can select more than one preset. You create the presets in the Application Setup/Batch Set Presets page of Dynamic Media Classic.<br> See [Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) to learn more about creating batch set presets.<br> See [Setting Batch Set Presets at upload](#setting-batch-set-presets-at-upload). |
 
-#### Setting image editing options at upload {#setting-image-editing-options-at-upload}
+#### Set image editing options at upload {#setting-image-editing-options-at-upload}
 
 When uploading image files, including AI, EPS, and PSD files, you can take the following editing actions in the [!UICONTROL Upload Job Options] dialog box:
 
@@ -210,7 +211,7 @@ When uploading image files, including AI, EPS, and PSD files, you can take the f
 | | Tolerance | Optional.<br> Controls the allowable amount of variation in pixel color matching based on the Corner location that you set.<br> Use a value of 0.0 to match pixel colors exactly or, use a value of 1.0 to allow for the greatest variation. |
 -->
 
-#### Setting PostScript and Illustrator upload options {#setting-postscript-and-illustrator-upload-options}
+#### Set PostScript and Illustrator upload options {#setting-postscript-and-illustrator-upload-options}
 
 When you upload PostScript (EPS) or Illustrator (AI) image files, you can format them in various ways. You can rasterize the files, maintain the transparent background, choose a resolution, and choose a color space. Options for formatting PostScript and Illustrator files are available in the [!UICONTROL Upload Job Options] dialog box under [!UICONTROL PostScript Options] and [!UICONTROL Illustrator Options].
 
@@ -225,7 +226,7 @@ When you upload PostScript (EPS) or Illustrator (AI) image files, you can format
 | | Force As CMYK | Converts to the CMYK color space. |
 | | Force As Grayscale | Converts to the grayscale color space.|
 
-#### Setting Photoshop upload options {#setting-photoshop-upload-options}
+#### Set Photoshop upload options {#setting-photoshop-upload-options}
 
 Photoshop Document (PSD) files are most often used to create image templates. When you upload a PSD file, you can create an image template automatically from the file (select the [!UICONTROL Create Template] option on the Upload screen).
 
@@ -249,7 +250,7 @@ Use the [!UICONTROL Crop Options] and [!UICONTROL Color Profile Options], descri
 | | Photoshop and Layer Name | Names the images after the PSD file followed by the layer name or layer number. The layer number is used if the layer names in the PSD file are default Photoshop layer names. For example, a layer named Price Tag in a PSD file named SpringAd is named Spring Ad_Price Tag. A layer with the default name Layer 2 is called Spring Ad_2. |
 | Anchor | | Specify how images are anchored in templates that are generated from the layered composition produced from the PSD file. By default, the anchor is the center. A center anchor allows replacement images to best fill the same space, no matter the aspect ratio of the replacement image. Images with a different aspect that replace this image, when referencing the template and using parameter substitution, effectively occupy the same space. Change to a different setting if your application requires the replacement images to fill the allocated space in the template. |
 
-#### Setting PDF upload options {#setting-pdf-upload-options}
+#### Set PDF upload options {#setting-pdf-upload-options}
 
 When you upload a PDF file, you can format it in various ways. You crop its pages, extract search words, enter a pixels-per-inch resolution, and choose a color space. PDF files often contain a trim margin, crop marks, registration marks, and other printer’s marks. You can crop these marks from the sides of pages as you upload a PDF file.
 
@@ -272,7 +273,7 @@ Choose from the following options:
 | | Force as CMYK | Converts to the CMYK color space. |
 | | Force as Grayscale | Converts to the grayscale color space. |
 
-#### Setting eVideo upload options {#setting-evideo-upload-options}
+#### Set eVideo upload options {#setting-evideo-upload-options}
 
 To transcode a video file by choosing from a variety of video presets.
 
@@ -284,7 +285,7 @@ To transcode a video file by choosing from a variety of video presets.
 | | Mobile | Create an MP4 file for delivery on iPhone or Android mobile devices.Select one or more aspect ratios with the resolution size and target data rate you desire. |
 | | Tablet | Create an MP4 file for delivery on iPad or Android tablet devices.Select one or more aspect ratios with the resolution size and target data rate you desire. |
 
-#### Setting Batch Set Presets at upload {#setting-batch-set-presets-at-upload}
+#### Set Batch Set Presets at upload {#setting-batch-set-presets-at-upload}
 
 If you want to automatically create an Image Set or Spin Set from uploaded images, click the Active column for the preset you want to use. You can select more than one preset.
 
@@ -334,7 +335,7 @@ To preview an asset, follow these steps.
 
 See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
-## Editing Properties {#editing-properties}
+## Edit properties and metadata {#editing-properties}
 
 1. Navigate to the location of the asset whose metadata you want to edit.
 
@@ -383,7 +384,7 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 1. Tap/click **[!UICONTROL Save & Close]**.
 1. Navigate to the Assets user interface. The edited metadata properties, including title, description, ratings, and so on are displayed on the asset card in Card view and under relevant columns in the List view.
 
-## Copying Assets {#copying-assets}
+## Copy assets {#copying-assets}
 
 When you copy an asset or a folder, the entire asset or the folder is copied, along with its content structure. A copied asset or a folder is duplicated at the target location. The asset at the source location is not alterted.
 
@@ -417,7 +418,7 @@ The other properties and metadata information is retained. A partial copy is not
    >
    >The **[!UICONTROL Paste]** icon is available in the toolbar until the paste operation is completed.
 
-### Moving or Renaming Assets {#moving-or-renaming-assets}
+### Move or rename assets {#moving-or-renaming-assets}
 
 1. Navigate to the location of the asset you want to move.
 
@@ -454,7 +455,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    If you do not update references, they continue to point to the previous path of the asset. If you adjust the references, they are updated to the new asset path.
 
-### Managing Renditions {#managing-renditions}
+### Manage renditions {#managing-renditions}
 
 1. You can add or remove renditions for an asset, except the original. Navigate to the location of the asset for which you want to add or remove renditions.
 
@@ -506,7 +507,7 @@ The other properties and metadata information is retained. A partial copy is not
    >
    >Video annotations are supported only on browsers with HTML5 compatible video formats. In addition, depending on the browser, different video formats are supported.
 
-### Viewing Subassets {#viewing-subassets}
+### View subassets {#viewing-subassets}
 
 In AEM, subassets can be generated for assets with supported multi-page formats such as PDF, AI, Powerpoint/Apple Keynote, and InDesign. These subassets are like normal assets, but are linked to their parent asset and facilitate multi-page view in the Touch UI.
 
@@ -528,7 +529,7 @@ For Word documents, the DAM Parse Word Documents workflow generates a `cq:Page` 
 
    ![chlimage_1-224](assets/chlimage_1-19.png)
 
-## Deleting Assets {#deleting-assets}
+## Delet assets {#deleting-assets}
 
 To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset.
 
@@ -559,11 +560,11 @@ Also, disable the force delete button using an overlay, to disallow users from d
    >
    >Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
 
-## Downloading Assets {#downloading-assets}
+## Download assets {#downloading-assets}
 
 See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
-## Publishing Assets {#publishing-assets}
+## Publish assets {#publishing-assets}
 
 >[!NOTE]
 >
@@ -586,7 +587,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 >
 >If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
 
-## Unpublishing Assets {#unpublishing-assets}
+## Unpublish assets {#unpublishing-assets}
 
 1. Navigate to the location of the asset/asset folder you want to remove from the publish environment (unpublish).
 
@@ -733,7 +734,7 @@ The timeline lets you view various events for a selected item, such as active wo
 >
 >Timeline contains several [options specific to content fragments](/help/assets/content-fragments-managing.md#timeline-for-content-fragments).
 
-## Annotating {#annotating}
+## Annotate assets {#annotating}
 
 Annotations are comments or explanatory notes added to images or videos. Annotations provide marketers the ability to collaborate and leave feedback about assets.
 
@@ -790,7 +791,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 >
 >You can also add annotations to a collection. However, if a collection contains child collections, you can add annotations/comments to the parent collection only. The Annotate option is not available for child collections.
 
-### Viewing Saved Annotations {#viewing-saved-annotations}
+### View saved annotations {#viewing-saved-annotations}
 
 1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
 
@@ -808,7 +809,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
    Tap/click **[!UICONTROL Delete]**, to delete a particular comment.
 
-### Printing Annotations {#printing-annotations}
+### Print annotations {#printing-annotations}
 
 If an asset has annotations or it has been subjected to a review workflow, you can print the asset along with annotations and review status as a PDF file for offline review.
 
@@ -890,7 +891,7 @@ Here is an example of how you can configure AEM to print annotations in CJK (Chi
 1. Configure the annotation PDF file by setting the font-family parameter to `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. This configuration is available by default and works for all European and CJK languages.
 1. If the language of your choice is different from the languages mentioned in step 2, append an appropriate (comma separated) entry to the default font-family.
 
-## Asset Versioning {#asset-versioning}
+## Asset versions {#asset-versioning}
 
 Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset.
 
@@ -952,7 +953,7 @@ The versioning functionality lets you do the following:
 
    ![compare_versions](assets/compare_versions.png)
 
-### Starting a workflow on an asset {#starting-a-workflow-on-an-asset}
+### Start a workflow on an asset {#starting-a-workflow-on-an-asset}
 
 1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
 1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
@@ -981,9 +982,9 @@ The versioning functionality lets you do the following:
 
 ## Collections {#collections}
 
-A collection is an ordered set of assets. Use collections to share assets between users.
+A collection is an ordered set of assets. Use collections to share related assets between users or to cluster together similar assets for easy discovery.
 
 * A collection can include assets from different locations because they only contain references to these assets. Each collection maintains the referential integrity of assets.
 * You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
 
-See [Managing Collections](/help/assets/managing-collections-touch-ui.md) for details on collection management.
+See [manage collections](/help/assets/managing-collections-touch-ui.md) for details on collection management.

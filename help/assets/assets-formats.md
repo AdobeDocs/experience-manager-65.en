@@ -6,6 +6,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: b2a99809-33fc-468c-8dfc-dd0982a3c901
 docset: aem65
+
 ---
 
 # Assets supported formats {#assets-supported-formats}
