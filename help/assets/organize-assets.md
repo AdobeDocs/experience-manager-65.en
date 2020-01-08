@@ -38,7 +38,7 @@ You can limit who can access certain folders in Assets by making the folder part
 
 1. Click the **[!UICONTROL CUG]** tab.
 
-   ![chlimage_1-76](assets/chlimage_1-76.png)
+   ![chlimage_1-76](assets/chlimage_1-248.png)
 
 1. Select the **[!UICONTROL Enabled]** check box to make the folder and its assets available only to a closed user group.  
 
