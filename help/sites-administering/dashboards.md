@@ -19,7 +19,6 @@ When using AEM you are able of managing a lot of content of different types (e.g
 >
 >AEM Dashboards are created on a per user basis, so a user can only access to their own dashboard.
 >
->
 >However, [Dashboard templates](#creating-a-dashboard-template) can be used to share common configuration and Dashboard layout.
 
 ![chlimage_1-22](assets/chlimage_1-22.jpeg)
@@ -31,13 +30,9 @@ When using AEM you are able of managing a lot of content of different types (e.g
 To create a new Dashboard, proceed as follows:
 
 1. In the **Tools** section, click **Configuration Console**.
-
 1. In the tree, Double-Click **Dashboard**.
-
 1. Click **New Dashboard**.
-
 1. Type the **Title** (e.g. My Dashboard) and the **Name**.
-
 1. Click **Create**.
 
 ### Cloning A Dashboard {#cloning-a-dashboard}
@@ -111,7 +106,7 @@ Each component also defines specific settings.
 
 #### Overtime Report {#overtime-report}
 
-![chlimage_1-26](assets/chlimage_1-26.png)
+![chlimage_1-26](assets/chlimage_1-26a.png)
 
 **Date Granularity** Time unit of the X axis (e.g. day, hour).
 
@@ -121,7 +116,7 @@ Each component also defines specific settings.
 
 #### Ranked List Report {#ranked-list-report}
 
-![chlimage_1-27](assets/chlimage_1-27.png)
+![chlimage_1-27](assets/chlimage_1-27a.png)
 
 **Elements** The element that breaks down the metrics data in the graph.
 
@@ -131,7 +126,7 @@ Each component also defines specific settings.
 
 #### Ranked Report {#ranked-report}
 
-![chlimage_1-28](assets/chlimage_1-28.png)
+![chlimage_1-28](assets/chlimage_1-28a.png)
 
 **Metrics** The event you want to display.
 
@@ -141,13 +136,13 @@ Each component also defines specific settings.
 
 This component displays a graph showing the more visited section of a website according to the following configuration.
 
-![chlimage_1-29](assets/chlimage_1-29.png)
+![chlimage_1-29](assets/chlimage_1-29a.png)
 
 **No. of top items** Number of section displayed by in the report.
 
 #### Trended Report {#trended-report}
 
-![chlimage_1-30](assets/chlimage_1-30.png)
+![chlimage_1-30](assets/chlimage_1-30a.png)
 
 **Date Granularity** Time unit of the X axis (e.g. day, hour).
 
@@ -177,7 +172,7 @@ Dashboard templates are created like other page templates, except that they are 
 
 Developing a Dashboard component consists of creating a regular AEM Component. This section describes an example of a component that displays the top 10 of contributors.
 
-![chlimage_1-31](assets/chlimage_1-31.png)
+![chlimage_1-31](assets/chlimage_1-31a.png)
 
 The top author components is stored in the repository at `/apps/geometrixx-outdoors/components/reporting` and is composed of :
 
@@ -185,7 +180,7 @@ The top author components is stored in the repository at `/apps/geometrixx-outdo
 
 1. a client-side library containing one `js` file that fetches and orders the data, then fills the `html` placeholder.
 
-![chlimage_1-32](assets/chlimage_1-32.png)
+![chlimage_1-32](assets/chlimage_1-32a.png)
 
 The following Javascript file is defined in the `geout.reporting.topauthors` [Client Library](/help/sites-developing/clientlibs.md) as a child of the component itself.
 

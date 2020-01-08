@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Configuring Segmentation{#configuring-segmentation}
+# Configuring Segmentation {#configuring-segmentation}
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ When the entire statement evaluates to true then this segment has resolved. In t
 
 To define your new segment:
 
-1. In the rail, choose** Tools &gt; Operations &gt; Configuration**.
+1. In the rail, choose **Tools &gt; Operations &gt; Configuration**.
 1. Click on the **Segmentation** page in the left pane, and navigate to the required location.
 1. Create a [new page](/help/sites-authoring/editing-content.md#creatinganewpage) using the **Segment** template.
 1. Open the new page to see the segment editor:
