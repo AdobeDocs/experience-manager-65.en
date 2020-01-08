@@ -45,7 +45,7 @@ The benefits of user sync using Sling distribution, compared to traditional repl
 
 >[!CAUTION]
 >
->Synchronization of the ***administrators** *group is not supported, even when user sync is enabled. Instead, a failure to 'import the diff' will be logged in the error log.
+>Synchronization of the ***administrators*** group is not supported, even when user sync is enabled. Instead, a failure to 'import the diff' will be logged in the error log.
 >
 >Therefore, when the deployment is a publish farm, if a user is added to or removed from the ***administrators** group, the modification must be manually made on each publish instance.
 
@@ -121,7 +121,7 @@ This authorized user will be used in step 3 to configure Sling distribution on a
 >A new user must be created.
 >
 >* The default user assigned is **`admin`**.
->* Do not use `*communities-user-admin *user*.*`
+>* Do not use `communities-user-admin user.`
 >
 
 #### How to Add ACL {#addacls}
@@ -135,17 +135,12 @@ This authorized user will be used in step 3 to configure Sling distribution on a
 * select the `+` button to add an ACL entry
 
     * **Principal**: *search for user created for user sync*
-
     * **Type**: `Allow`
-
     * **Privileges**: `jcr:all`
-
     * **Restrictions** rep:glob: `*/activities/*`
-
     * select **OK**
 
 * select **Save All**
-*
 
 ![](assets/chlimage_1-21.png)
 
