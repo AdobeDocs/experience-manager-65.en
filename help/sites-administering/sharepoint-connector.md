@@ -132,12 +132,12 @@ In AEM, perform one more step apart from above configuration steps. Whitelist th
 To whitelist bundles in AEM, perform the following steps:
 
 1. Navigate to the OSGi Management Console: http://localhost:4502/system/console/configMgr.
-1. Search for " Apache Sling Login Admin Whitelist" service.
+1. Search for "Apache Sling Login Admin Whitelist" service.
 1. Select Bypass the whitelist.
 1. Add '**com.day.cq.dam.cq-dam-jcr-connectors**' in whitelist bundles default
 1. Click Save.
 
-![chlimage_1-82](assets/chlimage_1-82.png)
+![chlimage_1-82](assets/chlimage_1-82a.png)
 
 >[!NOTE]
 >

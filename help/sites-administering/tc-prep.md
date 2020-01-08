@@ -62,12 +62,12 @@ The following procedure uses the touch-optimized UI to create a language copy of
 
 1. Click or tap Create, and then click or tap Create Page.
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+   ![chlimage_1-21](assets/chlimage_1-21a.png)
 
 1. Select the page template and then click or tap Next.
 1. In the Name field type the country code in the format of `<language-code>` or `<language-code>_<country-code>`, for example `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Type a title for the page.
 
-   ![chlimage_1-22](assets/chlimage_1-22.png)
+   ![chlimage_1-22](assets/chlimage_1-22a.png)
 
 1. Click or tap Create. In the confirmation dialog box, click or tap either **Done** to return to the Sites console, or **Open** to open the language copy.
 
@@ -75,13 +75,13 @@ The following procedure uses the touch-optimized UI to create a language copy of
 
 The touch-optimized UI provides a References panel that shows a list of language roots that have been created.
 
-![chlimage_1-23](assets/chlimage_1-23.png)
+![chlimage_1-23](assets/chlimage_1-23a.png)
 
 The following procedure uses the touch-optimized UI to open the References panel for a page.
 
 1. On the Sites console, select a page of the site and then click or tap **References**.
 
-   ![chlimage_1-24](assets/chlimage_1-24.png)
+   ![chlimage_1-24](assets/chlimage_1-24a.png)
 
 1. In the references panel, click or tap **Language Copies**. The Language Copies panel shows the language copies of the web site.
 

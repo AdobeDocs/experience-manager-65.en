@@ -170,7 +170,7 @@ There are 4 attributes that you can change via the UI: `isDeep`, `inherit`, `tra
 
 For example, child nodes are getting added into a translation job even when the parent node is having property `draftOnly` set to true to flag draft content. Here `isDeep` comes into play and checks if the parent nodes have property `draftOnly` as true and excludes those child nodes.
 
-In the Editor, you can check/uncheck **I`s Deep`** in the **Filters** tab.
+In the Editor, you can check/uncheck **Is Deep** in the **Filters** tab.
 
 ![chlimage_1-59](assets/chlimage_1-59.jpeg)
 
