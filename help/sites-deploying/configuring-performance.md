@@ -132,7 +132,7 @@ Due to the large volume of data involved when loading and editing digital assets
 
 Two things affect performance here:
 
-* CPU - multipe cores allow for smoother work when transcoding
+* CPU - multiple cores allow for smoother work when transcoding
 * Hard disk - parallel RAID disks achieve the same
 
 To improve performance you can consider the following:
@@ -153,7 +153,7 @@ To improve performance you can consider the following:
 
 Performance (or the lack of it) is one of the first things that your users notice, so as with any application with a user interface, performance is of key importance. To optimize the performance of your CQ installation you need to monitor various attributes of the instance and its behavior.
 
-For information about how to perform performance monitoriing, see [Monitoring Performance](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
+For information about how to perform performance monitoring, see [Monitoring Performance](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
 
 The problems that cause performance issues are often difficult to track down, even when their effects are easy to see.
 
