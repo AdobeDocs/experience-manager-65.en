@@ -73,7 +73,7 @@ You can drag assets from the Assets UI to a collection. You can also create a co
 
    Alternatively, tap/click the **[!UICONTROL To Collection]** icon from the toolbar.
 
-   ![chlimage_1-6](assets/chlimage_1-6.png)
+   ![chlimage_1-6](assets/chlimage_1-109.png)
 
 1. In the **[!UICONTROL Add To Collection]** page, tap/click the **[!UICONTROL Create Collection]** icon from the toolbar.
 
@@ -112,7 +112,7 @@ A Smart Collection uses a search criteria to dynamically populate assets. You ca
 
    The label of the **[!UICONTROL Create Smart Selection]** button changes to **[!UICONTROL Edit Smart Selection]**. To edit the settings of the smart collection, select **[!UICONTROL Files]** from the **[!UICONTROL Files & Folders]** list. Then, tap/click the **[!UICONTROL Edit Smart Selection]** button.
 
-   ![chlimage_1-7](assets/chlimage_1-7.png)
+   ![chlimage_1-7](assets/chlimage_1-112.png)
 
 ## Add assets to a collection {#adding-assets-to-a-collection}
 
@@ -125,7 +125,7 @@ You can add assets to a collection that contains a list of referenced assets or 
 1. In the Assets UI, navigate to the location of the asset that you want to add to a collection.
 1. Select the asset and tap/click the **[!UICONTROL To Collection]** icon from the toolbar.
 
-   ![chlimage_1-8](assets/chlimage_1-8.png)
+   ![chlimage_1-8](assets/chlimage_1-113.png)
 
    Alternatively, you can drag the asset to the **[!UICONTROL Drop in Collection]** zone. Release the mouse button when the drop zone becomes active and its label changes to **[!UICONTROL Drop to Add]**.
 
@@ -138,7 +138,7 @@ Smart collections are built by saving a search so you can alter their content by
 
 1. In the Assets UI, tap/click the **[!UICONTROL Search]** icon from the toolbar.
 
-   ![chlimage_1-9](assets/chlimage_1-9.png)
+   ![chlimage_1-9](assets/chlimage_1-110.png)
 
 1. With the cursor in the Omnisearch box, press the Return key.
 1. Tap/click the GlobalNav icon to display the Filters panel.
@@ -204,13 +204,11 @@ You can edit collection settings, such as title and description, or to add membe
 
 1. Tap/click **[!UICONTROL Save]** to save the changes.
 
-   ![chlimage_1-10](assets/chlimage_1-10.png)
-
 ## Delete a collection {#deleting-a-collection}
 
 1. From the Collections console, select one or more collections and tap/click the delete icon in the toolbar.
 
-   ![chlimage_1-11](assets/chlimage_1-11.png)
+   ![chlimage_1-11](assets/chlimage_1-177.png)
 
 1. In the dialog, tap/click **[!UICONTROL Delete]** to confirm the delete action.
 
@@ -234,7 +232,7 @@ You can add a collection to another collection, thereby creating a nested collec
 
 1. From the Collections console, select the desired collection or group of collections, and tap or click the **[!UICONTROL To Collection]** icon in the toolbar.
 
-   ![chlimage_1-12](assets/chlimage_1-12.png)
+   ![chlimage_1-12](assets/chlimage_1-109.png)
 
 1. From the **[!UICONTROL Add To Collection]** page, select the collection in which to add the collection.
 
@@ -270,7 +268,7 @@ Editing saved searches is the same as editing smart collections. For details, se
 
 1. Navigate to the Assets UI, and tap/click the Search icon on the toolbar.
 
-   ![chlimage_1-13](assets/chlimage_1-13.png)
+   ![chlimage_1-13](assets/chlimage_1-114.png)
 
 1. With the cursor in the Omni Search box, press the Return key.
 1. Click or tap the GlobalNav icon to display the Filters panel.
@@ -289,7 +287,7 @@ You can run a workflow for the assets within a collection. If the collection con
 1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
 1. From the timeline, click or tap the Caret icon at the bottom, and then tap **[!UICONTROL Start Workflow]**.
 
-   ![chlimage_1-14](assets/chlimage_1-14.png)
+   ![chlimage_1-14](assets/chlimage_1-137.png)
 
 1. In the **[!UICONTROL Start Workflow]** section, select a workflow model from the list. For example, select the **[!UICONTROL DAM Update Asset]** model.
 1. Enter a title for the workflow, and tap/click **[!UICONTROL Start]**.

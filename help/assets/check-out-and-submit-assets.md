@@ -18,7 +18,9 @@ This feature helps prevent other users from overriding the changes made by an au
 ## Checking Out Assets {#checking-out-assets}
 
 1. From the Assets UI, select the asset you want to check out. You can also select multiple assets to check out.
-1. From the toolbar, click/tap **[!UICONTROL Checkout]**. The **[!UICONTROL Checkout]** option toggles to **[!UICONTROL Checkin]**. To verify whether other users can edit the asset you checked out, log in as a different user. A lock symbol displays on the thumbnail of the asset that you checked out.
+1. From the toolbar, click/tap **[!UICONTROL Checkout]**.
+    The **[!UICONTROL Checkout]** option toggles to **[!UICONTROL Checkin]**. 
+    To verify whether other users can edit the asset you checked out, log in as a different user. A lock symbol displays on the thumbnail of the asset that you checked out.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
 

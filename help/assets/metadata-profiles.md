@@ -136,7 +136,7 @@ You can reprocess assets in a folder that already has an existing metadata profi
 
   ![chlimage_1-209](assets/chlimage_1-492.png)
 
-* Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` and tap **Save All**. 
+* Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` and tap **Save All**.
 
   ![chlimage_1-210](assets/chlimage_1-493.png)
 

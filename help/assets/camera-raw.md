@@ -27,13 +27,13 @@ To enable Camera Raw support in Adobe Experience Manager (AEM) Assets:
     * Thumbnails: `140:100:false, 48:48:false, 319:319:false`
     * Skip Mime Types: `skip:image/dng, skip:image/x-raw-(.*)`
 
-   ![chlimage_1-128](assets/chlimage_1-128.png)
+   ![chlimage_1-128](assets/chlimage_1-334.png)
 
 1. In the **[!UICONTROL Web Enabled Image]** tab, specify the following:
 
     * Skip List: `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`
 
-   ![chlimage_1-129](assets/chlimage_1-129.png)
+   ![chlimage_1-129](assets/chlimage_1-335.png)
 
 1. From SideKick, add the **[!UICONTROL Camera Raw/DNG Handler]** step below the **[!UICONTROL Thumbnail creation]** step.
 1. In the **[!UICONTROL Camera Raw/DNG Handler]** step, provide the following configuration in the **[!UICONTROL Arguments]** tab:
@@ -47,7 +47,7 @@ To enable Camera Raw support in Adobe Experience Manager (AEM) Assets:
     * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
     * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
 
-   ![chlimage_1-130](assets/chlimage_1-130.png)
+   ![chlimage_1-130](assets/chlimage_1-336.png)
 
 1. Click **[!UICONTROL Save]**.
 
@@ -59,11 +59,11 @@ To enable Camera Raw support in Adobe Experience Manager (AEM) Assets:
 
    After you install the Camera RAW package and configure the required workflow, **[!UICONTROL Image Adjust]** option appears in the list of panes.
 
-   ![chlimage_1-131](assets/chlimage_1-131.png)
+   ![chlimage_1-131](assets/chlimage_1-337.png)
 
    Click **[!UICONTROL Image Adjust]** from the list and use the options in the **[!UICONTROL Image Adjust]** pane to make lightweight edits to your image.
 
-   ![chlimage_1-132](assets/chlimage_1-132.png)
+   ![chlimage_1-132](assets/chlimage_1-338.png)
 
 >[!NOTE]
 >
