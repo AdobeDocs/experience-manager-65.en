@@ -211,8 +211,8 @@ To configure the number of parallel IDS jobs:
     * **Maximum Parallel Jobs** - `<*x*>` (as calculated above)
 
 1. Save these changes.
-1. To enable multi-session support for Adobe CS6 and above, check `enable.multisession.name` checkbox, under `com.day.cq.dam.ids.impl.IDSJobProcessor.name configuration`.
-1. Create a [pool of `<*x*>` IDS workers by adding SOAP endpoints to the IDS Worker configuration](#configuring-the-proxy-worker-for-indesign-server).
+1. To enable multi-session support for Adobe CS6 and above, check `enable.multisession.name` checkbox, under `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuration.
+1. Create a [pool of &lt;x&gt; IDS workers by adding SOAP endpoints to the IDS Worker configuration](#configuring-the-proxy-worker-for-indesign-server).
 
    If there are multiple machines running InDesign Servers, add SOAP endpoints (number of processors per machine -1) for each machine.
 
@@ -221,13 +221,13 @@ To configure the number of parallel IDS jobs:
    >You may choose to enable Blacklisting of IDS workers when working with pool of workers.
    >
    >
-   >To do so, enable the "enable.retry.name" checkbox, under the `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuration, which enables IDS job retrials.
+   >To do so, enable the **[!UICONTROL enable.retry.name]** checkbox, under the `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuration, which enables IDS job retrials.
    >
    >
-   >Also, under the `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuration, set a positive value for `max.errors.to.blacklist` parameter which determines number of job retrials before barring an IDS from the job handlers list
+   >Also, under the `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuration, set a positive value for `max.errors.to.blacklist` parameter which determines number of job retrials before barring an IDS from the job handlers list.
    >
    >
-   >By default, after the configurable (retry.interval.to.whitelist.name) time in minutes the IDS worker is revalidated. If the worker is found online, it is removed from the blacklist
+   >By default, after the configurable (retry.interval.to.whitelist.name) time in minutes the IDS worker is revalidated. If the worker is found online, it is removed from the blacklist.
 
 ## Enable support for InDesign server 10.0 or later {#enabling-support-for-indesign-server-or-later}
 

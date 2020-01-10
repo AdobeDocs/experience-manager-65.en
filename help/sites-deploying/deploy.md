@@ -252,7 +252,7 @@ When the quickstart jar is launched for the first time it will unpack itself int
         readme.txt
 ```
 
-If the instance was installed from the GUI, then a browser window will open auomatically and a desktop application window will also open displaying the host and port of the instance and an on/off switch:
+If the instance was installed from the UI, then a browser window will open automatically and a desktop application window will also open displaying the host and port of the instance and an on/off switch:
 
 ![start up screen](assets/screen_shot_.png)
 

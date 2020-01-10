@@ -52,7 +52,7 @@ A typical AEM setup consists of an author and a publish environment. These envir
 In a typical project setup, you have several environments on which to stage project phases:
 
 * **Development environment**
-  To develop new features or make significant changes. Best practise is to work using a development environment per developer (usually local installations on their personal systems).
+  To develop new features or make significant changes. Best practice is to work using a development environment per developer (usually local installations on their personal systems).
 
 * **Author test environment**
   To verify changes. The number of test environments can vary depending on the project requirements (for example, separate for QA, integration testing, or user acceptance testing).
