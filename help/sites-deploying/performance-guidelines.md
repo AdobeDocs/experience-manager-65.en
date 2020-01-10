@@ -609,7 +609,7 @@ The benchmark tests were performed on the following specifications:
 | Datastore |File DS  |N/A |
 | Scenario |Single Product: Assets / 30 concurrent threads |Single Product: Assets / 30 concurrent threads |
 
-### Performance Benchmark Results {#performance-benchmark-results}
+### Performance Benchmark Results {#performance-benchmark-results-1}
 
 >[!NOTE]
 >
