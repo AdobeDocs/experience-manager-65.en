@@ -16,15 +16,15 @@ AEM comes with a set of sample Geometrixx websites. You can remove this sample c
 
 The individual geometrixx-related packages are:
 
-* `cq-geometrixx-outdoors-ugc-pkg-*<version>*.zip`
-* `cq-geometrixx-pkg-*<version>*.zip`
-* `cq-content-mac-*<version>*.zip`
-* `cq-geometrixx-login-pkg-*<version>*.zip`
-* `cq-geometrixx-users-pkg-*<version>*.zip`
-* `cq-geometrixx-workflow-pkg-*<version>*.zip`
-* `cq-geometrixx-outdoors-pkg-*<version>*.zip`
-* `cq-geometrixx-commons-pkg-*<version>*.zip`
-* `cq-geometrixx-media-pkg-*<version>*.zip`
+* `cq-geometrixx-outdoors-ugc-pkg-<version>.zip`
+* `cq-geometrixx-pkg-<version>.zip`
+* `cq-content-mac-<version>.zip`
+* `cq-geometrixx-login-pkg-<version>.zip`
+* `cq-geometrixx-users-pkg-<version>.zip`
+* `cq-geometrixx-workflow-pkg-<version>.zip`
+* `cq-geometrixx-outdoors-pkg-<version>.zip`
+* `cq-geometrixx-commons-pkg-<version>.zip`
+* `cq-geometrixx-media-pkg-<version>.zip`
 
 To remove an individual package, simple click **Uninstall** on that package.
 
