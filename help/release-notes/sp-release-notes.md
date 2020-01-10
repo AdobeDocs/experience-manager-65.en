@@ -171,6 +171,7 @@ Some key highlights of this service pack release are:
 * When a user adds a File Upload field to a multi-field, the image path is stored in the component node instead of the multi-field node (NPR-30882).
 * The ResponsiveGridExporter API does not return com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter interface. The com.day.cq.wcm.foundation.model.impl package is declared as private package (NPR-31398).
 * When a page containing some ExperienceFragments is opened in non-editor mode (either in Author without the `editor.html` prefix and `wcmmode=disabled`, or in Publisher)., the request ends in HTTP status error code 500 (NPR-30743).
+* Users cannot change their password and access their profile page (NPR-31161).
 
 #### Search and user interface {#search-ui-interface}
 
