@@ -144,7 +144,7 @@ This creates an AEM page from the extracted elements. An extraction handler is u
 
 To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTROL Page Extraction]** step.
 
-![chlimage_1-96](assets/chlimage_1-96.png)
+![chlimage_1-96](assets/chlimage_1-289.png)
 
 * **Page Extraction Handler**: From the popup list, select the handler that you want to use. An extraction handler operates on a specific rendition, chosen by a related `RenditionPicker` (see the `ExtractionHandler` API). In a standard AEM installation the following is available:
   * IDML Export Extraction Handle: Operates on the `IDML` rendition generated in the MediaExtract step.
@@ -186,7 +186,7 @@ If the InDesign server and AEM run on different hosts or either or both these ap
 1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and tap **[!UICONTROL Edit]** to open it.
 1. Specify the host name and context path for the Indesign server and click **Save**.
 
-   ![chlimage_1-97](assets/chlimage_1-97.png)
+   ![chlimage_1-97](assets/chlimage_1-290.png)
 
 ### Enable parallel job processing for InDesign servers {#enabling-parallel-job-processing-for-indesign-server-s}
 

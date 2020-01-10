@@ -24,18 +24,18 @@ For details of applying a workflow to an AEM asset, see [start a workflow on an 
 ## Applying a workflow to multiple assets {#applying-a-workflow-to-multiple-assets}
 
 1. From the Assets console, navigate to the location of the assets for which you want to start a workflow, and select the assets.
-1. Tap the Experience Manager logo, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
+1. Click/ tap the Experience Manager logo, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
 
-   ![screen_shot_2019-03-06at123325pm](assets/screen_shot_2019-03-06at123325pm.png)
+   ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
-1. Tap **[!UICONTROL Actions]** at the bottom.
+1. Click/ tap **[!UICONTROL Actions]** at the bottom.
 
-   ![chlimage_1-30](assets/chlimage_1-30.png)
+   ![chlimage_1-30](assets/chlimage_1-137.png)
 
 1. Tap **[!UICONTROL Start Workflow]**.
 1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
-   ![chlimage_1-31](assets/chlimage_1-31.png)
+   ![chlimage_1-31](assets/chlimage_1-138.png)
 
 1. (Optional) Specify a title for the workflow, which can be used to reference the workflow instance.
 1. Tap **[!UICONTROL Start]** and then tap **[!UICONTROL Confirm]** in the dialog. The workflow runs on all the assets you selected.
