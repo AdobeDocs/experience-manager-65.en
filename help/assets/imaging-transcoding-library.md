@@ -38,14 +38,21 @@ See [supported MIME types article](assets-formats.md#supported-image-transcoding
 
 ## Supported Platforms {#supported-platforms}
 
-Imaging Transcoding Library is currently available for RHEL 7 and CentOS 7 operating systems. Mac OS and other *nix distributions (for example, Debian and Ubuntu) are not supported.
+Imaging Transcoding Library is currently available for the following operating systems:
+
+* RHEL 7
+* CentOS 7
+
+>[! NOTE]
+>
+> Mac OS and other *nix distributions (for example, Debian and Ubuntu) are not supported. Currently, RHEL 7 and CentOS 7 are supported for Linux distros.
 
 ## Usage {#usage}
 
 The command line arguments for Imaging Transcoding Library can include the following:
 
-```
--destMime PNG/JPEG: Mime type of output rendition
+```shell
+ -destMime PNG/JPEG: Mime type of output rendition
  -BitDepth 8/16: Preserves Bit Depth. Bitdepth ‘4’ is automatically converted to ‘8’
  -preserveBitDepth: Downscales Bit Depth (No upscaling)
  -preserveCMYK: Preserves CMYK color space
@@ -54,15 +61,15 @@ The command line arguments for Imaging Transcoding Library can include the follo
  -resize
 ```
 
-: `You can configure the following options for the` `-resize` `parameter:`
+You can configure the following options for the `-resize` `parameter:`
 
 * `X`: `Works similar to AEM. For example -resize 319.`
 * `WxH`: `Aspect Ratio will not be maintained, For example -resize 319X319.`
 * `Wx`: `Fixes the width and calculates the height maintaining the aspect ratio. For example -resize 319x.`
 * `xH`: `Fixes the height and calculates the width maintaining the aspect ratio. For example -resize x319.`
 
-```s
--AllowUpsampling (Resizes smaller images)
+```shell
+ -AllowUpsampling (Resizes smaller images)
  -input <fileName>
  -output <fileName>
 ```
