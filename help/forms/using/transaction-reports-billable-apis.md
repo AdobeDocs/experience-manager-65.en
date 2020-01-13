@@ -158,6 +158,13 @@ Billing APIs does not account for the number of pages, the length of a document 
    <td>Additional Information</td>
   </tr>
   <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-" target="_blank">generatePDFOutput</a></td>
+   <td>Merges data and templates to create a PDF document.</td>
+   <td>Documents Processed</td>
+   <td> </td>
+  </tr>
+  <tr>
+    <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-" target="_blank">generatePDFOutput</a></td>
    <td>Merges data and templates to create a PDF document.</td>
    <td>Documents Processed</td>
