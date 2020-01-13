@@ -1,13 +1,9 @@
 ---
 title: AEM Foundation & Repository
-seo-title: AEM Foundation & Repository
 description: Release notes specific to Adobe Experience Manager 6.3 AEM Platform and Repository.
-seo-description: Release notes specific to Adobe Experience Manager 6.3 AEM Platform and Repository.
 uuid: 70626eda-c514-44bd-9f28-ff7abdc22f53
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
-topic-tags: release-notes
-content-type: reference
 discoiquuid: 66ecf4c5-6d0f-4586-880d-7d1c8a5a5614
 docset: aem65
 
@@ -43,7 +39,7 @@ docset: aem65
 
 ### Search {#search}
 
-* Search in Oak now supports dynamic facets. For exampe the filter rail in assets search show the estimated amount of results.
+* Search in Oak now supports dynamic facets. For example the filter rail in assets search show the estimated amount of results.
 * QueryBuilder was extended to provide results with dynamic facets
 
 ### Security {#security}

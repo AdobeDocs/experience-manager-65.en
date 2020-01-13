@@ -28,7 +28,7 @@ When organizing a collection of assets, for example, all *Nature* images, you ca
 1. In the **[!UICONTROL Title]** field, provide a folder name. By default, DAM uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
 1. Click **[!UICONTROL Create]**. Your folder is displayed in the digital assets folder.
 
-![When you create a new asset folder, it is instantly displayed in the folder list.](assets/create-asset-folder.png)
+![new asset folder is instantly displayed in the folder list](assets/create-asset-folder.png)
 
 ## Add CUG properties to folders {#add-cug-properties-to-folders}
 
@@ -38,7 +38,7 @@ You can limit who can access certain folders in Assets by making the folder part
 
 1. Click the **[!UICONTROL CUG]** tab.
 
-   ![chlimage_1-76](assets/chlimage_1-76.png)
+   ![chlimage_1-76](assets/chlimage_1-248.png)
 
 1. Select the **[!UICONTROL Enabled]** check box to make the folder and its assets available only to a closed user group.  
 

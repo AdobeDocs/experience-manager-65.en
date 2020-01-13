@@ -18,15 +18,17 @@ Each language folder is called a language copy. The root folder of a language co
 
 The language copy for which you originally add assets is the language master. The language master is the source that is translated into other languages. A sample folder hierarchy includes several language roots:
 
-/content
-&nbsp; &nbsp; /- dam
-&nbsp; &nbsp; &nbsp; |- en
-&nbsp; &nbsp; &nbsp; |- fr
-&nbsp; &nbsp; &nbsp; |- de
-&nbsp; &nbsp; &nbsp; |- es
-&nbsp; &nbsp; &nbsp; |- it
-&nbsp; &nbsp; &nbsp; |- ja
-&nbsp; &nbsp; &nbsp; |- zh
+```
+ /content
+  /- dam
+   |- en
+   |- fr
+   |- de
+   |- es
+   |- it
+   |- ja
+   |- zh
+```
 
 Perform the following steps to prepare your assets for translation:
 
@@ -39,7 +41,7 @@ Perform the following steps to prepare your assets for translation:
 
 To create the language root, you create a folder and use an ISO language code as the value for the Name property. After you create the language root, you can create a language copy at any level within the language root.
 
-For example, the root page of the Italian language copy of the sample hierarchy has `it` as the Name property. The Name property is used as the name of the asset node in the repository, and therefore determines the path of the assets. (`https://[aem_server];[port]/assets.html/content/dam/it/`).
+For example, the root page of the Italian language copy of the sample hierarchy has `it` as the Name property. The Name property is used as the name of the asset node in the repository, and therefore determines the path of the assets. (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
 1. From the Assets console, click/tap **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
 

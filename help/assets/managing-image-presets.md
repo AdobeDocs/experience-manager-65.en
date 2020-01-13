@@ -69,7 +69,7 @@ Adobe Illustrator's file format is a variant of PDF. The main differences, in th
 
 The sub-assets are created by the `Create Sub Asset process` component within the overall `DAM Update Asset` workflow. To see this process component within the workflow, tap **[!UICONTROL Tools > Workflow > Models > DAM Update Asset > Edit]**.
 
-See also [Viewing pages of a multi-page file](/help/assets/managing-linked-subassets.md#viewingpagesofamultipagefile).
+See also [Viewing pages of a multi-page file](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file).
 
 You can view the sub-assets or the pages when you open the asset, tap the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages]**. The sub-assets are real assets. That is, PDF pages are extracted by the `Create Sub Asset` workflow component. They are then stored as `page1.pdf`, `page2.pdf`, and so on below the main asset. After they are stored, the `DAM Update Asset` workflow processes them.
 

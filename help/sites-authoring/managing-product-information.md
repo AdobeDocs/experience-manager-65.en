@@ -28,7 +28,7 @@ In particular, you can use Creative Project to streamline the following tasks in
 
 ## Exploring Product Photo Shoot workflows  {#exploring-product-photo-shoot-workflows}
 
-Creative Project provides various project templates to meet diverse project requirements. The **Product Photo Shoot Project **template is available out of the box. This template includes photo shoot workflows that let you initiate and manage product photo shoot requests. It also includes a series of tasks that enable you to obtain digital images for products through appropriate review and approval processes.
+Creative Project provides various project templates to meet diverse project requirements. The **Product Photo Shoot Project** template is available out of the box. This template includes photo shoot workflows that let you initiate and manage product photo shoot requests. It also includes a series of tasks that enable you to obtain digital images for products through appropriate review and approval processes.
 
 The template includes the following workflows:
 
@@ -43,15 +43,15 @@ The template includes the following workflows:
 
 1. In the **Projects** console, tap/click **Create** and then choose **Create Project** from the list.
 
-   ![chlimage_1-132](assets/chlimage_1-132.png)
+   ![chlimage_1-132](assets/chlimage_1-132a.png)
 
 1. In the **Create Project** page, select the photoshoot project template and tap/click **Next**.
 
-   ![chlimage_1-133](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133a.png)
 
 1. Enter project details, including title, description, and due date. Add users and assign various roles to them. You can also add a thumbnail for the project.
 
-   ![chlimage_1-134](assets/chlimage_1-134.png)
+   ![chlimage_1-134](assets/chlimage_1-134a.png)
 
 1. Tap/click **Create**. A confirmation message notifies that the project is created.
 1. Tap/click **Done** to return to the **Projects** console. Alternatively, tap/click **Open** to view the assets within the photoshoot project.
@@ -60,7 +60,7 @@ The template includes the following workflows:
 
 To initiate a photo shoot request, tap or click a project and then tap/click **Add Work** within the project details page to start a workflow.
 
-![chlimage_1-135](assets/chlimage_1-135.png)
+![chlimage_1-135](assets/chlimage_1-135a.png)
 
 A Product Photo Shoot project includes the following out-of-the-box workflows:
 
@@ -112,11 +112,11 @@ The Task card provides the following details:
 * Percentage of active tasks
 * Percentage of completed tasks
 
-![chlimage_1-136](assets/chlimage_1-136.png)
+![chlimage_1-136](assets/chlimage_1-136a.png)
 
 The Task list provides detailed information around the currently active workflow task for the project. To display the list, tap/click the Task card. The Task list also displays metadata such as start date, due date, assignee, priority, and status of the task.
 
-![chlimage_1-137](assets/chlimage_1-137.png)
+![chlimage_1-137](assets/chlimage_1-137a.png)
 
 ## Workflow Configuration {#workflow-configuration}
 
@@ -127,11 +127,11 @@ To configure the **Product Photo Shoot** workflow:
 1. Navigate to **Tools** &gt; **Workflows**, and then tap the **Models** tile to open the **Workflow Models** page.
 1. Select the **Product Photo Shoot** workflow, and the tap the **Edit** icon from the toolbar to open it in edit mode.
 
-   ![chlimage_1-138](assets/chlimage_1-138.png)
+   ![chlimage_1-138](assets/chlimage_1-138a.png)
 
 1. In the **Product Photo Shoot Workflow** page, open a project task. For example, open the **Upload Shot List** task.
 
-   ![chlimage_1-139](assets/chlimage_1-139.png)
+   ![chlimage_1-139](assets/chlimage_1-139a.png)
 
 1. Click the **Task** tab to configure the following:
 
@@ -159,16 +159,16 @@ This section describes how to integrate product information management with your
 1. Navigate to a Product Photo Shoot project, and tap/click the **Add Work** icon on the **Workflows** card.
 1. Select the **Product Photo Shoot (Commerce Integration)** workflow card to start the Product Photo Shoot (Commerce Integration) workflow. If the product information isn't available under /etc/commerce, select the **Product Photo Shoot** workflow and start the Product Photo Shoot workflow.
 
-   ![chlimage_1-140](assets/chlimage_1-140.png)
+   ![chlimage_1-140](assets/chlimage_1-140a.png)
 
 1. Tap/click **Next** to initiate the workflow in the project.
 1. Enter workflow details on the next page.
 
-   ![chlimage_1-141](assets/chlimage_1-141.png)
+   ![chlimage_1-141](assets/chlimage_1-141a.png)
 
    Click **Submit** to start the photo shoot workflow. The project details page for the photo shoot project is displayed.
 
-   ![chlimage_1-142](assets/chlimage_1-142.png)
+   ![chlimage_1-142](assets/chlimage_1-142a.png)
 
 ### Workflow Tasks Details {#workflow-tasks-details}
 
@@ -180,32 +180,32 @@ The **Create Shot List** task enables the project owner to select products for w
 
 1. In the project folder, tap/click the ellipses in the [Tasks Card](#tracking-project-progress) to view the task item in the workflow.
 
-   ![chlimage_1-143](assets/chlimage_1-143.png)
+   ![chlimage_1-143](assets/chlimage_1-143a.png)
 
 1. Select the **Create Shot List** task, and then tap/click the **Open** icon from the toolbar.
 
-   ![chlimage_1-144](assets/chlimage_1-144.png)
+   ![chlimage_1-144](assets/chlimage_1-144a.png)
 
 1. Review the task details and then tap/click the **Create Shot List** button.
 
-   ![chlimage_1-145](assets/chlimage_1-145.png)
+   ![chlimage_1-145](assets/chlimage_1-145a.png)
 
 1. Select products for which product data exists without associated images.
 
-   ![chlimage_1-146](assets/chlimage_1-146.png)
+   ![chlimage_1-146](assets/chlimage_1-146a.png)
 
 1. Tap/click the **Add To Shotlist** icon to create a CSV file that contains a list of all such products. A message confirms that the shot list is created for the selected products. Click **Close** to complete the workflow.
 1. After you create a shot list, the **View Shot List** link appears. To add more products to the shot list, tap/click **Add to Shot List**. In this case, the data gets appended to the initially created shot list.
 
-   ![chlimage_1-147](assets/chlimage_1-147.png)
+   ![chlimage_1-147](assets/chlimage_1-147a.png)
 
 1. Tap/click **View Shot List** to view the new shot list.
 
-   ![chlimage_1-148](assets/chlimage_1-148.png)
+   ![chlimage_1-148](assets/chlimage_1-148a.png)
 
    To edit the existing data or add new data, tap/click **Edit** from the toolbar. Only the **Product **and **Description** fields are editable.
 
-   ![chlimage_1-149](assets/chlimage_1-149.png)
+   ![chlimage_1-149](assets/chlimage_1-149a.png)
 
    After you update the file, tap/click **Save** on toolbar to save the file.
 
@@ -236,16 +236,16 @@ A product can belong to a particular category. The product category can be liste
 1. In the project folder, tap/click the ellipses in the [Tasks Card](#tracking-project-progress) to view the list of tasks in the workflow.
 1. Select the **Upload Shot List** task, and then tap/click the **Open** icon from the toolbar.
 
-   ![chlimage_1-150](assets/chlimage_1-150.png)
+   ![chlimage_1-150](assets/chlimage_1-150a.png)
 
 1. Review the task details and then tap/click the **Upload Shot List** button.
 
-   ![chlimage_1-151](assets/chlimage_1-151.png)
+   ![chlimage_1-151](assets/chlimage_1-151a.png)
 
 1. Tap/click the **Upload Shot List** button to upload the CSV file with filename shotlist.csv. The workflow recognizes this file as a source to be used to extract product data for the next task.
-1. Upload a CSV file containing product information in the appropriate format. The **View Uploaded Assets **link appears under the card after the CSV file is uploaded.
+1. Upload a CSV file containing product information in the appropriate format. The **View Uploaded Assets** link appears under the card after the CSV file is uploaded.
 
-   ![chlimage_1-152](assets/chlimage_1-152.png)
+   ![chlimage_1-152](assets/chlimage_1-152a.png)
 
    Click the **Complete** icon to complete the task.
 
@@ -262,9 +262,9 @@ You can either upload the images directly or upload a ZIP file that contains the
 1. Under the project folder, tap/click the ellipses in the [Task Card](#tracking-project-progress) to view the task item in the workflow.
 1. Select the **Upload Photo Shoot** task, and then tap/click the **Open** icon from the toolbar.
 
-   ![chlimage_1-153](assets/chlimage_1-153.png)
+   ![chlimage_1-153](assets/chlimage_1-153a.png)
 
-1. Tap/click **Upload Photo Shoot **and upload the photo shoot images.
+1. Tap/click **Upload Photo Shoot** and upload the photo shoot images.
 1. Tap/click the **Complete** icon from the toolbar to complete the task.
 
 ### Retouch Photo Shoot Task {#retouch-photo-shoot-task}
@@ -274,15 +274,15 @@ If you have editing rights, perform the Retouch Photo Shoot task to edit the ima
 1. Under the project folder, tap/click the ellipses in the [Task Card](#tracking-project-progress) to view the task item in the workflow.
 1. Select the **Retouch Photo Shoot** task, and then tap/click the **Open** icon from the toolbar.
 
-   ![chlimage_1-154](assets/chlimage_1-154.png)
+   ![chlimage_1-154](assets/chlimage_1-154a.png)
 
 1. Tap/click the **View Uploaded Assets** link in the **Retouch Photo Shoot** page to browse the uploaded images.
 
-   ![chlimage_1-155](assets/chlimage_1-155.png)
+   ![chlimage_1-155](assets/chlimage_1-155a.png)
 
    If necessary, edit the images using an Adobe Creative Cloud application.
 
-   ![chlimage_1-156](assets/chlimage_1-156.png)
+   ![chlimage_1-156](assets/chlimage_1-156a.png)
 
 1. Tap/click the **Complete** icon from the toolbar to complete the task.
 
@@ -293,15 +293,15 @@ In this task, you review the photo shoot images uploaded by a photographer and m
 1. Under the project folder, tap/click the ellipses in the [Task Card](#tracking-project-progress) to view the task item in the workflow.
 1. Select the **Review & Approve** task, and then tap/click the **Open** icon from the toolbar.
 
-   ![chlimage_1-157](assets/chlimage_1-157.png)
+   ![chlimage_1-157](assets/chlimage_1-157a.png)
 
 1. In the **Review & Approve** page, assign the review task to role, for example Reviewers, and then tap/click **Review **to start reviewing the uploaded product images.
 
-   ![chlimage_1-158](assets/chlimage_1-158.png)
+   ![chlimage_1-158](assets/chlimage_1-158a.png)
 
 1. Select a product image, and tap/click the Approve icon from the toolbar to mark it as approved.
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+   ![chlimage_1-159](assets/chlimage_1-159a.png)
 
    Once you approve an image, an approved banner displays over it.
 
@@ -315,7 +315,7 @@ You can navigate to project assets using the Assets UI and verify the approved i
 
 Tap/click the next level to view products as per your product data hierarchy.
 
-Creative Project associates approved assets with the referenced product. The asset metadata is updated with the product reference and basic information in the **Product Data **tab under asset properties they appear in the AEM Asset Metadata section.
+Creative Project associates approved assets with the referenced product. The asset metadata is updated with the product reference and basic information in the **Product Data** tab under asset properties they appear in the AEM Asset Metadata section.
 
 >[!NOTE]
 >
@@ -328,15 +328,15 @@ This task moves the approved assets to the production-ready folder to make them 
 1. Under the project folder, tap/click the ellipses in the [Task Card](#tracking-project-progress) to view the task item in the workflow.
 1. Select the **Move to Production** task, and then tap/click the **Open** icon from the toolbar.
 
-   ![chlimage_1-160](assets/chlimage_1-160.png)
+   ![chlimage_1-160](assets/chlimage_1-160a.png)
 
 1. To view the approved assets for the photo shoot prior to moving them to production ready folder, click the **View Approved Assets** link below the project thumbnail on the **Move to Production** task page.
 
-   ![chlimage_1-161](assets/chlimage_1-161.png)
+   ![chlimage_1-161](assets/chlimage_1-161a.png)
 
 1. Enter the path of the production-ready folder in the **Move To** field.
 
-   ![chlimage_1-162](assets/chlimage_1-162.png)
+   ![chlimage_1-162](assets/chlimage_1-162a.png)
 
    Tap/click **Move to Production**. Close the confirmation message. The assets are moved to the mentioned path and a spin set is authomatically created for the approved assets for each product based on the folder hierarchy.
 
@@ -356,16 +356,16 @@ You can customize the Project Photo Shoot workflows based on requirements. This 
 1. Select the **Product Photo Shoot (Commerce Integration)** workflow or the **Product Photo Shoot** workflow and the click/tap **Edit** from the toolbar to open the workflow in edit mode.
 1. Open the **Projects** tasks in the side kick, and drag the **Create Role Based Project Task** step to the workflow.
 
-   ![chlimage_1-163](assets/chlimage_1-163.png)
+   ![chlimage_1-163](assets/chlimage_1-163a.png)
 
 1. Open the **Role Based Task** step.
 1. In the **Task** tab, provide a name for the Task that will display in the **Task** List. You may also assign the task to a role, set the default priority, provide a description, and specify a time when the task is due.
 
-   ![chlimage_1-164](assets/chlimage_1-164.png)
+   ![chlimage_1-164](assets/chlimage_1-164a.png)
 
 1. In the **Routing** tab, specify the actions for the task. To add multiple actions, tap/click the **Add Item **link.
 
-   ![chlimage_1-165](assets/chlimage_1-165.png)
+   ![chlimage_1-165](assets/chlimage_1-165a.png)
 
 1. After adding the options click **OK** to add the changes to the step.
 
@@ -401,19 +401,19 @@ You can customize the Project Photo Shoot workflows based on requirements. This 
    >
    >For details around scripting in workflow steps, see [Defining a Rule for an OR Split](/help/sites-developing/workflows-models.md).
 
-   ![chlimage_1-166](assets/chlimage_1-166.png)
+   ![chlimage_1-166](assets/chlimage_1-166a.png)
 
 1. Tap/click **OK**.
 
 1. Tap/click **Save** to save the workflow.
 
-   ![chlimage_1-167](assets/chlimage_1-167.png)
+   ![chlimage_1-167](assets/chlimage_1-167a.png)
 
 1. A new Project owner acceptance task now comes up after the [Move to Production task](#move-to-production-task) is completed and is assigned to the owner.
 
    The user in the Owner role can complete the task and select an action (from the list of actions added in the workflow step configurations) from the list in the comments popup.
 
-   ![chlimage_1-168](assets/chlimage_1-168.png)
+   ![chlimage_1-168](assets/chlimage_1-168a.png)
 
    Select the appropriate option and click **Complete** to run the **Goto Step** in the workflow.
 

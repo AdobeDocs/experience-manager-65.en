@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f920892-c52e-42ca-900c-2c7ab3c503b3
 ---
 
-# Product Feed{#product-feed}
+# Product Feed {#product-feed}
 
 AEM integrates with [Search&Promote](https://www.adobe.com/solutions/testing-targeting/searchandpromote.html) and allows you to:
 
@@ -20,7 +20,7 @@ AEM integrates with [Search&Promote](https://www.adobe.com/solutions/testing-tar
 * leverage the Remote Control feature of Search&Promote to perform on-demand or scheduled requests of the product feed
 * feed generation for different Search&Promote accounts, configured as cloud services configurations.
 
-You need to have a valid acount and to [configure the connection to Search&Promote](/help/sites-administering/search-and-promote.md#configuring-the-connection-to-search-promote). You also have to verify that you are using the correct [data center](/help/sites-administering/search-and-promote.md#configuring-the-data-center) and make sure that the **Remote server URI **is configured.
+You need to have a valid account and to [configure the connection to Search&Promote](/help/sites-administering/search-and-promote.md#configuring-the-connection-to-search-promote). You also have to verify that you are using the correct [data center](/help/sites-administering/search-and-promote.md#configuring-the-data-center) and make sure that the **Remote server URI **is configured.
 
 ## Set up the Product Feed {#set-up-the-product-feed}
 
@@ -65,7 +65,7 @@ A scheduler is configured as a child configuration of your specific Search&Promo
 1. Enter a **[!UICONTROL Title]** that is recognizable to page authors, and a unique **[!UICONTROL Name]**.
 1. Click **[!UICONTROL Create]**. A dialog opens.
 
-   ![chlimage_1-108](assets/chlimage_1-108.png)
+   ![chlimage_1-108](assets/chlimage_1-108a.png)
 
 1. Enter the **[!UICONTROL Remote Control Password]**. It is the password you configured in your Search&Pronote account.
 

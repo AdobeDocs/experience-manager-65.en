@@ -37,23 +37,23 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 1. Tap/click the AEM logo, and go **[!UICONTROL Assets]** &gt; **[!UICONTROL Jobs]**.
 1. In the **[!UICONTROL Async Job Status]** page, review the details of the operations.
 
-   ![job_status](assets/job_status.png)
+    ![job_status](assets/AsyncOperation-status.png)
 
    To ascertain the progress of a particular operation, see the value in the **[!UICONTROL Status]** column. Depending upon the progress, one of the following statuses is displayed:
 
-   **[!UICONTROL Active]**: The operation is being processed
+   * **[!UICONTROL Active]**: The operation is being processed
 
-   **[!UICONTROL Success]**: The operation is complete
+   * **[!UICONTROL Success]**: The operation is complete
 
-   **[!UICONTROL Fail]** or **[!UICONTROL Error]**: The operation could not be processed
+   * **[!UICONTROL Fail]** or **[!UICONTROL Error]**: The operation could not be processed
 
-   **[!UICONTROL Scheduled]**: The operation is scheduled for processing a later time
+   * **[!UICONTROL Scheduled]**: The operation is scheduled for processing a later time
 
-1. To stop an active operation, select it from the list and tap/click the **[!UICONTROL Stop]** icon from the toolbar.
+1. To stop an active operation, select it from the list and tap **[!UICONTROL Stop]** from the toolbar.
 
    ![stop_icon](assets/stop_icon.png)
 
-1. To view extra details, for example description and logs, select the operation and tap/click the **[!UICONTROL Open]** icon from the toolbar.
+1. To view extra details, for example description and logs, select the operation and tap **[!UICONTROL Open]** from the toolbar.
 
    ![open_icon](assets/open_icon.png)
 
@@ -61,7 +61,7 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 
    ![job_details](assets/job_details.png)
 
-1. To delete the operation from the list, select **[!UICONTROL Delete]** from the toolbar. To download the details in a CSV file, tap/click the **[!UICONTROL Download]** icon.
+1. To delete the operation from the list, select **[!UICONTROL Delete]** from the toolbar. To download the details in a CSV file, tap **[!UICONTROL Download]**.
 
    >[!NOTE]
    >

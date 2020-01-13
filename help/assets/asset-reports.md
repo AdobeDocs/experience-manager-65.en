@@ -39,7 +39,7 @@ AEM administrators can easily generate and customize these reports for your impl
 
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Reports]**.
 
-   ![navigation](assets/navigation.png)
+   ![navigation](assets/AssetsReportNavigation.png)
 
 1. In the Asset Reports page, tap/click **[!UICONTROL Create]** from the toolbar.
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and tap/click **[!UICONTROL Next]**.
@@ -95,13 +95,11 @@ AEM administrators can easily generate and customize these reports for your impl
    ![custom_columns](assets/custom_columns.png)
 
 1. Tap/click **[!UICONTROL Create]** from the toolbar. A message notifies that report generation has been initiated.
-1. In the Asset Reports page, the report generation status is based on the current state of the report job, for example Success, Failed, Queued, or Scheduled. The same status appears in the notifications inbox.
-
-   To view the report page, tap/click the report link. Alternatively, select the report, and tap/click the View icon from the toolbar.
+1. In the Asset Reports page, the report generation status is based on the current state of the report job, for example Success, Failed, Queued, or Scheduled. The same status appears in the notifications inbox.To view the report page, tap/click the report link. Alternatively, select the report, and tap **[!UICONTROL View]** from the toolbar.
 
    ![report_page](assets/report_page.png)
 
-   Tap/click Download icon from the toolbar to download the report in CSV format.
+   Tap **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
 
 ## Add custom columns {#add-custom-columns}
 
