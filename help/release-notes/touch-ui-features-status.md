@@ -1,12 +1,8 @@
 ---
 title: Touch UI Feature Status
-seo-title: Touch UI Feature Status
 description: Release notes specific to Adobe Experience Manager Touch-Enabled UI.
-seo-description: Release notes specific to Adobe Experience Manager Touch-Enabled UI.
 uuid: ceb081cc-7c33-4408-8032-3ac83d461268
 contentOwner: msm-service
-topic-tags: release-notes
-content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: f736581d-e6ea-4ec8-bfc7-16b9aa592097
 docset: aem65
@@ -19,7 +15,7 @@ docset: aem65
 >
 >[Classic UI has been deprecated](../release-notes/deprecated-removed-features.md) since AEM 6.4. Adobe does not plan to make further enhancements to the Classic UI and users are encouraged to leverage the powerful new features available under the touch-enabled UI.
 
-Starting with version 6.0, AEM introduced a new user interface referred to as the "touch-enabled UI" (also known simply as "touch UI") that is aligned to the Adobe Marketing Cloud and to the overall Adobe user interface guidelines. With near feature partity reached, this has become the standard UI in AEM with the legacy, desktop-oriented interface referred to as "classic UI."
+Starting with version 6.0, AEM introduced a new user interface referred to as the "touch-enabled UI" (also known simply as "touch UI") that is aligned to the Adobe Marketing Cloud and to the overall Adobe user interface guidelines. With near feature parity reached, this has become the standard UI in AEM with the legacy, desktop-oriented interface referred to as "classic UI."
 
 While most capabilities are present in the touch-enabled UI, there are features that are not yet complete and will be added in future releases.
 

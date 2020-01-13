@@ -132,7 +132,7 @@ Flow of data when AEM Assets and Creative Cloud are integrated
 ## Add users to Marketing Cloud {#add-users-to-marketing-cloud}
 
 1. Log in to Marketing Cloud using administrator credentials.
-1. From the rails, go to **[!UICONTROL Administration]**and then click/tap **[!UICONTROL Launch Enterprise Dashboard]**.
+1. From the rails, go to **[!UICONTROL Administration]** and then click/tap **[!UICONTROL Launch Enterprise Dashboard]**.
 1. From the rail, click **[!UICONTROL Users]** to open the **[!UICONTROL User Management]** page.
 1. From the toolbar, click/tap **Add** ![aem_assets_add_icon](assets/aem_assets_add_icon.png).
 1. Add one or more users that you want to provide the ability to share assets with Creative Cloud.

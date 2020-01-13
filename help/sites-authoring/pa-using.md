@@ -57,7 +57,7 @@ Members of the analytics-administrators user group can configure the Sites conso
 >
 >When a tree of pages contains children that are associated with different Adobe Analytics cloud configurations, you cannot configure available data columns for the pages.
 
-1. In List View, use the view selectors (right of toolbar), select **View Settings** and then A**dd Custom Analytics Data**.
+1. In List View, use the view selectors (right of toolbar), select **View Settings** and then **Add Custom Analytics Data**.
 
    ![aa-15](assets/aa-15.png)
 
@@ -74,7 +74,7 @@ Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites
 1. In the Sites console, select the page for which you want to see Content Insights.
 1. On the tool bar, click the Analytics and Recommendations icon.
 
-   ![](do-not-localize/chlimage_1-16.png)
+   ![](do-not-localize/chlimage_1-16a.png)
 
 ## Analytics visible from the Page Editor (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 

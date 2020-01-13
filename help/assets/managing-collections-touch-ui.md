@@ -1,15 +1,16 @@
 ---
-title: Managing Collections
+title: Manage asset collections
 description: Understand the concept of collection in AEM Assets. Learn how to collections, manage, edit, and collections with other users.
 uuid: b23c4cf5-fb3d-45cb-b393-d3b9dc6b03bb
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: f2b11641-a88d-453b-8ec7-b5c83c78578f
 docset: aem65
+mini-toc-levels: 1
 
 ---
 
-# Managing Collections {#managing-collections}
+# Manage collections {#managing-collections}
 
 A collection is a set of assets within Adobe Experience Manager (AEM) Assets. Use collections to share assets between users.
 
@@ -24,18 +25,18 @@ Collections are of the following types, based on the way they collate assets:
 
 * A Smart collection that dynamically includes assets based on a search criteria
 
-## Navigating the Collections console {#navigating-the-collections-console}
+## Navigate the collections console {#navigating-the-collections-console}
 
 To open the **[!UICONTROL Collections]** console:
 
 1. Tap or click the AEM logo.
 1. From the Navigation page, go to **[!UICONTROL Assets]** &gt; **[!UICONTROL Collections]**. The **[!UICONTROL Collections]** console is displayed.
 
-## Creating a collection {#creating-a-collection}
+## Create a collection {#creating-a-collection}
 
 You can create a collection either with [static references](#creating-a-collection-with-static-references) or based on a [search criteria-based filter](#creating-a-smart-collection). You can also create a collection from a lightbox.
 
-### Creating a collection with static references {#creating-a-collection-with-static-references}
+### Create a collection with static references {#creating-a-collection-with-static-references}
 
 You can create a collection with static references, for example a collection with references to assets, folders, collections, spin sets, and image sets.
 
@@ -72,7 +73,7 @@ You can drag assets from the Assets UI to a collection. You can also create a co
 
    Alternatively, tap/click the **[!UICONTROL To Collection]** icon from the toolbar.
 
-   ![chlimage_1-6](assets/chlimage_1-6.png)
+   ![chlimage_1-6](assets/chlimage_1-109.png)
 
 1. In the **[!UICONTROL Add To Collection]** page, tap/click the **[!UICONTROL Create Collection]** icon from the toolbar.
 
@@ -81,7 +82,7 @@ You can drag assets from the Assets UI to a collection. You can also create a co
 1. In the **[!UICONTROL Create New Collection]** dialog, specify a name for the collection. If you want the collection to be accessible to all users, select **[!UICONTROL Public Collection]**.
 1. Tap/click **[!UICONTROL Continue]** to create the collection.
 
-### Creating a smart collection {#creating-a-smart-collection}
+### Create a smart collection {#creating-a-smart-collection}
 
 A Smart Collection uses a search criteria to dynamically populate assets. You can create a Smart Collection using only files and not folders or files and folders.
 
@@ -111,9 +112,9 @@ A Smart Collection uses a search criteria to dynamically populate assets. You ca
 
    The label of the **[!UICONTROL Create Smart Selection]** button changes to **[!UICONTROL Edit Smart Selection]**. To edit the settings of the smart collection, select **[!UICONTROL Files]** from the **[!UICONTROL Files & Folders]** list. Then, tap/click the **[!UICONTROL Edit Smart Selection]** button.
 
-   ![chlimage_1-7](assets/chlimage_1-7.png)
+   ![chlimage_1-7](assets/chlimage_1-112.png)
 
-## Adding assets to a collection {#adding-assets-to-a-collection}
+## Add assets to a collection {#adding-assets-to-a-collection}
 
 You can add assets to a collection that contains a list of referenced assets or folders.
 
@@ -124,20 +125,20 @@ You can add assets to a collection that contains a list of referenced assets or 
 1. In the Assets UI, navigate to the location of the asset that you want to add to a collection.
 1. Select the asset and tap/click the **[!UICONTROL To Collection]** icon from the toolbar.
 
-   ![chlimage_1-8](assets/chlimage_1-8.png)
+   ![chlimage_1-8](assets/chlimage_1-113.png)
 
    Alternatively, you can drag the asset to the **[!UICONTROL Drop in Collection]** zone. Release the mouse button when the drop zone becomes active and its label changes to **[!UICONTROL Drop to Add]**.
 
 1. In the **[!UICONTROL Add To Collection]** page, select the collection to which you want to add the asset.
 1. Tap/click **[!UICONTROL Add]**, and then close the confirmation message. The asset is added to the collection.
 
-## Editing a smart collection {#editing-a-smart-collection}
+## Edit a smart collection {#editing-a-smart-collection}
 
 Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#editing-saved-searches).
 
 1. In the Assets UI, tap/click the **[!UICONTROL Search]** icon from the toolbar.
 
-   ![chlimage_1-9](assets/chlimage_1-9.png)
+   ![chlimage_1-9](assets/chlimage_1-110.png)
 
 1. With the cursor in the Omnisearch box, press the Return key.
 1. Tap/click the GlobalNav icon to display the Filters panel.
@@ -156,7 +157,7 @@ Smart collections are built by saving a search so you can alter their content by
 1. Tap/click **[!UICONTROL Overwrite]** to replace the original smart collection with the edited collection. Alternatively, select **[!UICONTROL Save As]** to save the edited collection separately.
 1. In the confirmation dialog, tap/click **[!UICONTROL Save]** to complete the process.
 
-## Viewing and editing collection metadata {#viewing-and-editing-collection-metadata}
+## View and edit collection metadata {#viewing-and-editing-collection-metadata}
 
 Collection metadata comprises data about the collection, including any tags that are added.
 
@@ -164,7 +165,7 @@ Collection metadata comprises data about the collection, including any tags that
 1. In the **[!UICONTROL Collection Metadata]** page, view the collection metadata from the **[!UICONTROL Basic]** and **Advanced** tabs.
 1. Modify the metadata, as necessary, and then tap/click **[!UICONTROL Save & Close]** from the toolbar to save the changes.
 
-### Editing collection metadata in bulk {#editing-collection-metadata-in-bulk}
+### Edit collection metadata in bulk {#editing-collection-metadata-in-bulk}
 
 You can edit the metadata of multiple collections simultaneously. This functionality helps you quickly replicate common metadata in multiple collections.
 
@@ -178,23 +179,23 @@ You can edit the metadata of multiple collections simultaneously. This functiona
    >
    >The Append mode works only for fields that can contain multiple values. For fields that can contain only a single value, the new metadata is not appended to the existing value in the field even if you select **[!UICONTROL Append mode]**.
 
-## Searching {#searching}
+## Search {#searching}
 
 The Search feature within Collections supports both [Searching for Collections](#searching-collections) and [Searching for assets within a Collection](#searching-within-collections).
 
-### Searching Collections {#searching-collections}
+### Search collections {#searching-collections}
 
 You can search collections from the Collections console. When you search with keywords in the Omnisearch box, AEM Assets searches for collection names, metadata, and the tags added to the collections.
 
 If you search for collections from the top level, only individual collections are returned in search results. Assets or folders within the collections are excluded. In all other cases (for example, within an individual collection or in a folder hierarchy), all relevant assets, folders, and collections are returned.
 
-### Searching within Collections {#searching-within-collections}
+### Search within collections {#searching-within-collections}
 
 In the Collections console, tap/click a collection to open it.
 
 Within a collection, AEM Asset search is restricted to assets (and their tags and metadata) within the collection that you are viewing. When you search within a folder, all matching assets and child folders within the current folder are returned. When you search within a collection, only matching assets, folders, and other collections that are direct members of the collection are returned.
 
-## Editing Collection Settings {#editing-collection-settings}
+## Edit collection settings {#editing-collection-settings}
 
 You can edit collection settings, such as title and description, or to add members to a collection.
 
@@ -203,13 +204,11 @@ You can edit collection settings, such as title and description, or to add membe
 
 1. Tap/click **[!UICONTROL Save]** to save the changes.
 
-   ![chlimage_1-10](assets/chlimage_1-10.png)
-
-## Deleting a collection {#deleting-a-collection}
+## Delete a collection {#deleting-a-collection}
 
 1. From the Collections console, select one or more collections and tap/click the delete icon in the toolbar.
 
-   ![chlimage_1-11](assets/chlimage_1-11.png)
+   ![chlimage_1-11](assets/chlimage_1-177.png)
 
 1. In the dialog, tap/click **[!UICONTROL Delete]** to confirm the delete action.
 
@@ -217,7 +216,7 @@ You can edit collection settings, such as title and description, or to add membe
    >
    >You can also detete Smart collections by [deleting saved searches](#deleting-saved-searches).
 
-## Downloading a collection {#downloading-a-collection}
+## Download a collection {#downloading-a-collection}
 
 When you download a collection, the entire hierarchy of assets within the collection is downloaded, including folders and child collections.
 
@@ -227,13 +226,13 @@ When you download a collection, the entire hierarchy of assets within the collec
 
    When you select a collection to download, the complete folder hierarchy under the collection is downloaded. To include each collection you download (including assets in child collections nested under the parent collection) in an individual folder, select **[!UICONTROL Create separate folder for each asset]**.
 
-## Creating nested collections {#creating-nested-collections}
+## Create nested collections {#creating-nested-collections}
 
 You can add a collection to another collection, thereby creating a nested collection.
 
 1. From the Collections console, select the desired collection or group of collections, and tap or click the **[!UICONTROL To Collection]** icon in the toolbar.
 
-   ![chlimage_1-12](assets/chlimage_1-12.png)
+   ![chlimage_1-12](assets/chlimage_1-109.png)
 
 1. From the **[!UICONTROL Add To Collection]** page, select the collection in which to add the collection.
 
@@ -253,7 +252,7 @@ In the Assets UI, you can search or filter assets based on certain rules, search
 
 ![saved_searches_list](assets/saved_searches_list.png)
 
-### Creating Saved Searches {#creating-saved-searches}
+### Create saved searches {#creating-saved-searches}
 
 Saved searches are created when you create a smart collection. Smart collections are automatically added to the **[!UICONTROL Saved Searches]** list. The Saved Searches query for the collection is saved in the `dam:query` property in crxde at the relative location `/content/dam/collections/`.
 
@@ -261,42 +260,41 @@ Saved searches are created when you create a smart collection. Smart collections
 >
 >You can share smart collections in the same way as you share static collections.
 
-### Editing Saved Searches {#editing-saved-searches}
+### Edit saved searches {#editing-saved-searches}
 
 Editing saved searches is the same as editing smart collections. For details, see [Editing a smart collection](/help/assets/managing-collections-touch-ui.md#editing-a-smart-collection).
 
-### Deleting Saved Searches {#deleting-saved-searches}
+### Delete saved searches {#deleting-saved-searches}
 
 1. Navigate to the Assets UI, and tap/click the Search icon on the toolbar.
 
-   ![chlimage_1-13](assets/chlimage_1-13.png)
+   ![chlimage_1-13](assets/chlimage_1-114.png)
 
 1. With the cursor in the Omni Search box, press the Return key.
 1. Click or tap the GlobalNav icon to display the Filters panel.
 
-1. From the **Saved Searches** list, tap/click the **Delete** icon next to the smart collection you want to delete.
+1. From the **[!UICONTROL Saved Searches]** list, tap **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
    ![select_smart_collection-1](assets/select_smart_collection-1.png)
 
-1. In the dialog, tap/click **Delete** to delete the saved search.
+1. In the dialog, tap **[!UICONTROL Delete]** to delete the saved search.
 
-## Running a workflow on a collection {#running-a-workflow-on-a-collection}
+## Execute a workflow on a collection {#running-a-workflow-on-a-collection}
 
 You can run a workflow for the assets within a collection. If the collection contains nested collections, the workflow also runs on the assets within the nested collections. However, if the collection and the nested collection contain duplicate assets, the workflow only runs once for such assets.
 
 1. From the Collections console, select a collection on which you want to run a workflow.
-1. Tap/click the GlobalNav icon, and choose **Timeline** from the list.
-1. From the timeline, click or tap the Caret icon at the bottom, and then tap/click **Start Workflow**.
+1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
+1. From the timeline, click or tap the Caret icon at the bottom, and then tap **[!UICONTROL Start Workflow]**.
 
-   ![chlimage_1-14](assets/chlimage_1-14.png)
+   ![chlimage_1-14](assets/chlimage_1-137.png)
 
-1. In the **Start Workflow** section, select a workflow model from the list. For example, select the **DAM Update Asset** model.
-1. Enter a title for the workflow, and tap/click **Start**.
-1. In the dialog, tap/click **Proceed**. The workflow runs on all the assets in the collection.
+1. In the **[!UICONTROL Start Workflow]** section, select a workflow model from the list. For example, select the **[!UICONTROL DAM Update Asset]** model.
+1. Enter a title for the workflow, and tap/click **[!UICONTROL Start]**.
+1. In the dialog, tap/click **[!UICONTROL Proceed]**. The workflow runs on all the assets in the collection.
 
-## See also {#see-also}
-
-* [Configure AEM Assets email notifications](/help/sites-administering/notification.md#assetsconfig)
-* [Edit metadata properties of multiple Collections](/help/assets/managing-multiple-assets.md)
-* [Create a review task for Collections](/help/assets/bulk-approval.md)
-
+>[!MORELIKETHIS]
+>
+>* [Configure AEM Assets email notifications](/help/sites-administering/notification.md#assetsconfig)
+>* [Edit metadata properties of multiple Collections](/help/assets/managing-multiple-assets.md)
+>* [Create a review task for Collections](/help/assets/bulk-approval.md)

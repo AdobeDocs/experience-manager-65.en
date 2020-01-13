@@ -101,7 +101,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
    See [Working with Selectors](/help/assets/working-with-selectors.md).
 
-   ![chlimage_1-140](assets/chlimage_1-351.png)
+   ![chlimage_1-140](assets/chlimage_1-383.png)
 
 1. Re-order the assets by dragging them up or down the list (must select the **[!UICONTROL Reorder]** icon), as necessary.
 

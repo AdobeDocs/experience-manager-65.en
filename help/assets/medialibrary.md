@@ -48,7 +48,7 @@ If you are planning to edit metadata other than title, description and tags, it 
 
 ### I want to use the category predicate on my website. Do I need AEM Assets? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-Yes, the category predicate, together with all other components used in Geometrixx Press Center are part of AEM Assets and require an AEM Assets license.
+Yes, the category predicate is part of AEM Assets and require an AEM Assets license.
 
 #### I want to automatically resize images upon import. Do I need AEM Assets? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 

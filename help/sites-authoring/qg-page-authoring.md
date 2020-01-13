@@ -24,7 +24,7 @@ They:
 
 For full details about authoring with AEM see:
 
-* [First Steps for Authors](/help/sites-authoring/first-steps.md)  
+* [First Steps for Authors](/help/sites-authoring/first-steps.md)
 * [Authoring Pages](/help/sites-authoring/page-authoring.md)
 
 ## A Few Quick Hints {#a-few-quick-hints}
@@ -57,14 +57,14 @@ Before giving the overview of specifics, here is a small collection of general t
 >There are a number of keyboard shortcuts that can make the authoring experience easier.
 >
 >* [Keyboard Shortcuts When Editing Pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
->* [Keyboard Shortcuts for Consoles](/help/sites-authoring/keyboard-shortcuts.md)  
+>* [Keyboard Shortcuts for Consoles](/help/sites-authoring/keyboard-shortcuts.md)
 >
 
 ### Finding Your Page {#finding-your-page}
 
 There are various aspects to finding a page; you can navigate and/or search:
 
-1. Open the **Sites** console (using the **Sites** option in the [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation) - this is triggered (drop down) when you select the Adobe Experience Manager link (top left).  
+1. Open the **Sites** console (using the **Sites** option in the [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation) - this is triggered (drop down) when you select the Adobe Experience Manager link (top left).
 
 1. Navigate down the tree by tapping/clicking on the appropriate page. How the page resources are represented depends on the view you are using - [Card, List, or Column](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 

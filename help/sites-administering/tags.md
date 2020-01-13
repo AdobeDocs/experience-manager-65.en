@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 ---
 
-# Administering Tags{#administering-tags}
+# Administering Tags {#administering-tags}
 
 Tags are a quick and easy method of classifying content within a website. They can be thought of as keywords or labels (metadata) that allow content to be more quickly found as the result of a search.
 
@@ -29,14 +29,14 @@ In addition to pages and assets, tags are used for AEM Communities features
 
 ## Tag Features {#tag-features}
 
-Some of the features of tags within AEM include :
+Some of the features of tags within AEM include:
 
 * Tags can be grouped into various namespaces. Such hierarchies allow taxonomies to be built. These taxonomies are global throughout AEM.
 * The main restriction for newly created tags is they must be unique within a specific namespace.
 * A tag's title should not include tag path separation chars (nor will they be displayed if present)
 
-    * colon (:) - delimits the namespace tag
-    * forward slash (/) - delimits sub-tags
+    * colon `:` - delimits the namespace tag
+    * forward slash `/` - delimits sub-tags
 
 * Tags can be applied by authors and site visitors. Irrespective of their creator, all forms of tags are made available for selection, both when assigning to a page, or when searching.
 * Tags can be created and their taxonomy modified by members of the "tag-administrators" group and members who have modification rights to `/content/cq:tags`.
@@ -68,7 +68,7 @@ To access the Tagging console :
     * select **`General`**
     * select **`Tagging`**
 
-![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsole.png)
+![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
 
 ### Creating a Namespace {#creating-a-namespace}
 
@@ -76,16 +76,16 @@ To create a new namespace, select the **`Create Namespace`** icon.
 
 The namespace is itself a tag, and need not contain any sub-tags. However, to continue creating a taxonomy, [create sub-tags](#creating-tags), which in turn may be either leaf tags or container tags.
 
-![chlimage_1-183](assets/chlimage_1-183.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespaces.png)
+![chlimage_1-183](assets/chlimage_1-183a.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespacesa.png)
 
 * **Title**
-  *(required) *A display title for the namespace.
+  *(required)* A display title for the namespace.
 
 * **Name**
-  *(optional) *A name for the namespace. If not specified, a valid node name is created from the Title. See [TagID](/help/sites-developing/framework.md#tagid).
+  *(optional)* A name for the namespace. If not specified, a valid node name is created from the Title. See [TagID](/help/sites-developing/framework.md#tagid).
 
 * **Description**
-  *(optional) *A description of the namespace.
+  *(optional)* A description of the namespace.
 
 Once the required information is entered
 
@@ -93,7 +93,7 @@ Once the required information is entered
 
 ### Operations on Tags {#operations-on-tags}
 
-Selecting a namespace or other tag makes available the following operations :
+Selecting a namespace or other tag makes available the following operations:
 
 * [View Properties](#viewing-tag-properties)
 * [References](#showing-tag-references)
@@ -131,7 +131,7 @@ When a namespace or other tag is selected, selecting the **`View Properties`** i
 
 ![chlimage_1-190](assets/chlimage_1-190.png)
 
-When a namespace or other tag is selected, selecting the **`References`**icon will identify the content to which the tag has been applied.
+When a namespace or other tag is selected, selecting the **References** icon will identify the content to which the tag has been applied.
 
 The initial display is a count of tags applied.
 
@@ -197,7 +197,6 @@ When a namespace or other tag is selected, selecting the **`Move`** icon will al
 * **Rename to**
   Initially displays the current `name`of the tag. A new `name`may be entered.
 
-*
 * select **Save**
 
 ### Merging Tags {#merging-tags}
@@ -206,7 +205,7 @@ When a namespace or other tag is selected, selecting the **`Move`** icon will al
 
 Merging tags can be used when a taxonomy has duplicates. When tag A is merged into tag B, all the pages tagged with tag A will be tagged with tag B and tag A is no longer available to authors.
 
-When a namespace or other tag is selected, selecting the **`Merge`**icon will open a panel where the path to merge into may be selected.
+When a namespace or other tag is selected, selecting the **Merge** icon will open a panel where the path to merge into may be selected.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
@@ -218,7 +217,7 @@ When a namespace or other tag is selected, selecting the **`Merge`**icon will op
 
 >[!NOTE]
 >
->After the merge, the **Path **originally selected will (virtually) no longer exist.
+>After the merge, the **Path** originally selected will (virtually) no longer exist.
 >
 >When a referenced tag is moved or merged, the tag is not physically deleted such that it is possible to maintain references.
 
@@ -226,7 +225,7 @@ When a namespace or other tag is selected, selecting the **`Merge`**icon will op
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
-When a namespace or other tag is selected, selecting the **`Publish`**icon to activate the tag in the publish environment. Similar to page content, only the selected tag is published, regardless of whether it is a container tag or not.
+When a namespace or other tag is selected, selecting the **Publish** icon to activate the tag in the publish environment. Similar to page content, only the selected tag is published, regardless of whether it is a container tag or not.
 
 To publish a taxonomy (a namespace and sub-tags), the best practice is to create a [package](/help/sites-administering/package-manager.md) of the namespace (see [Taxonomy Root Node](/help/sites-developing/framework.md#taxonomy-root-node)). Be sure to [apply permissions](#setting-tag-permissions) to the namespace before creating the package.
 
@@ -234,13 +233,13 @@ To publish a taxonomy (a namespace and sub-tags), the best practice is to create
 
 ![chlimage_1-202](assets/chlimage_1-202.png)
 
-When a namespace or other tag is selected, selecting the **`Unpublish`**icon will deactivate the tag in the author environment and remove it from the publish environment. Similar to the `Delete`operation, if the selected tag is a container tag, all of its child tags will be deactivated in the author environment and removed from the publish environment.
+When a namespace or other tag is selected, selecting the **Unpublish** icon will deactivate the tag in the author environment and remove it from the publish environment. Similar to the `Delete`operation, if the selected tag is a container tag, all of its child tags will be deactivated in the author environment and removed from the publish environment.
 
 ### Deleting Tags {#deleting-tags}
 
 ![chlimage_1-203](assets/chlimage_1-203.png)
 
-When a namespace or other tag is selected, selecting the **`Delete`**icon will permanently remove the tag from the author environment. If the tag was published, it is also removed from the publish environment. If the selected tag is a container tag, all of its child tags will be removed as well.
+When a namespace or other tag is selected, selecting the **Delete** icon will permanently remove the tag from the author environment. If the tag was published, it is also removed from the publish environment. If the selected tag is a container tag, all of its child tags will be removed as well.
 
 ## Setting Tag Permissions {#setting-tag-permissions}
 
@@ -287,7 +286,7 @@ The Edit Tag panel presents the ability to choose languages into which the tag t
 
 As each language is selected, a text entry box appears into which the translated title may be entered.
 
-Once all translations are entered, select **Save **to exit edit mode.
+Once all translations are entered, select **Save** to exit edit mode.
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 

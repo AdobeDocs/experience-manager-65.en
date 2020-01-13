@@ -37,7 +37,7 @@ java -jar aem6.3.jar
 
 Upon running the instance from the command line, you will be presented with the option to change the admin password during the installation process:
 
-![chlimage_1-116](assets/chlimage_1-116.png)
+![chlimage_1-116](assets/chlimage_1-116a.png)
 
 >[!NOTE]
 >
