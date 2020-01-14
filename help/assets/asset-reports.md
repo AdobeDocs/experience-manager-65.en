@@ -1,6 +1,6 @@
 ---
-title: Asset Reports
-description: This article describes various reports around assets in AEM Assets and how to generate reports.
+title: Reports about your digital assets
+description: Understand reports about your assets in AEM Assets that help your understand usage, activity, and sharing of your digital assets.
 uuid: 8984171b-799a-4587-9862-f4c7ce3f1a76
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

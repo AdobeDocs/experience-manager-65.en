@@ -1,13 +1,14 @@
 ---
-title: Smart Content Service Training Guidelines
-description: Train the AI service to apply smart tags to assets
+title: Smart Content Service training guidelines
+description: Train the Adobe Sensei's AI service to apply smart tags to assets
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
+
 ---
 
-# Smart Content Service Training Guidelines {#smart-content-service-training-guidelines}
+# Smart Content Service training guidelines {#smart-content-service-training-guidelines}
 
 To be able to effectively tag your brand images, the Smart Content Service requires that the training images conform to certain guidelines.
 
@@ -41,7 +42,7 @@ For example, for the tag *casual-shoe*, the second image is not a good training 
 
 ## Limitations {#limitations}
 
-Enhanced smart tags are based on learning models of brand images and their tags. These models are not always perfect at identifying tags. The current version of the Smart Content Service has the following limitations:
+Enhanced smart tags are based on learning models of images and their tags. These models are not always perfect at identifying tags. The current version of the Smart Content Service has the following limitations:
 
 * Inability to recognize subtle differences in images. For example, slim versus regular fitted shirts.
 * Inability to identify tags based on tiny patterns/parts of an image. For example, logos on T-shirts.
@@ -51,6 +52,4 @@ To search for assets with smart tags (regular or enhanced), use the Assets Omnis
 
 >[!NOTE]
 >
->The ability of the Smart Content Service to train on your tags and apply them on other images depends on the quality of images you use for training. 
->
->For best results, Adobe recommends that you use visually similar images to train the service for each tag.
+>The ability of the Smart Content Service to train on your tags and apply them on other images depends on the quality of images you use for training. For best results, Adobe recommends that you use visually similar images to train the service for each tag.

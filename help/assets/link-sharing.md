@@ -1,5 +1,5 @@
 ---
-title: Asset link sharing
+title: Generate a URL to shared assets
 description: This article describes how to share assets, folders, and collections within AEM Assets as a URL to external parties.
 uuid: 87aea08d-d5b9-45a9-918f-3302063a3703
 contentOwner: AG
@@ -9,7 +9,7 @@ docset: aem65
 
 ---
 
-# Asset link sharing {#asset-link-sharing}
+# Share asset via a link {#asset-link-sharing}
 
 Adobe Experience Manager (AEM) Assets lets you share assets, folders, and collections as a URL with members of your organization and external entities, including partners and vendors. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to AEM Assets.
 
@@ -38,16 +38,11 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    >[!NOTE]
    >
-   >If you want to share links from your AEM Author instance to external entities, ensure that you only expose the following URLs (which are used for link sharing) for GET requests only:
+   >If you want to share links from your AEM Author instance to external entities, ensure that you only expose the following URLs (which are used for link sharing) for `GET` requests only. Block other URLs to ensure security of AEM Author.
    >
-   >
-   >
-   >    * &lt;AEM Server&gt;/linkshare.html
-   >    * &lt;AEM Server&gt;/linksharepreview.html
-   >    * &lt;AEM Server&gt;/linkexpired.html
-   >
-   >
-   >Block other URLs to ensure that your Author instance is secure.
+   >    * http://[aem_server]:[port]/linkshare.html
+   >    * http://[aem_server]:[port]/linksharepreview.html
+   >    * http://[aem_server]:[port]/linkexpired.html
 
    >[!NOTE]
    >
@@ -108,7 +103,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
 1. To view the assets you shared as links, go to the Assets UI and tap the Experience Manager logo. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
 1. From the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
-1. To unshare an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar.
+1. To un-share an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar.
 
    A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 
@@ -129,7 +124,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
 ## Configure maximum data size {#maxdatasize}
 
-When you download assets from the link shared using the Link Sharing feature, AEM compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, configure the maximum size using the **Max Content Size (uncompressed)** parameter for Day CQ DAM Adhoc Asset Share Proxy Servlet in Configuration Manager. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
+When you download assets from the link shared using the Link Sharing feature, AEM compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, configure the maximum size using the **Max Content Size (uncompressed)** parameter for `Day CQ DAM Adhoc Asset Share Proxy Servlet` in Configuration Manager. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
 
 1. Click/Tap the AEM logo and then go to **Tools** &gt; **Operations** &gt; **Web Console**.
 1. From the web console, locate the **Day CQ DAM Adhoc Asset Share Proxy Servlet** configuration.

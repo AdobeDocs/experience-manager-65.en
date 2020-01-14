@@ -12,14 +12,14 @@ docset: aem65
 # Manage smart tags and searches {#manage-smart-tags-and-searches}
 
 <!--
-TBD: This article should be merged into a new, uber article for Smart Tags. Delete this article.
+TBD: This article should be merged into a new, uber article for Smart Tags. Delete this article then. Cloud service article is merged.
 -->
 
 You can curate Smart tags to remove any inaccurate tags that may have been assigned to your brand images so only the most relevant tags are displayed.
 
 Moderating Smart tags also helps refine tag-based searches for images by ensuring that your image appears in search results for the most relevant tags. Essentially, it helps eliminate the chances of unrelated images from showing up in search results.
 
-You can also assign a higher rank to a tag to increase its relevence with respect to an image. Promoting a tag for an image increases the chances of the image appearing in search results when a search is performed based on the particular tag.
+You can also assign a higher rank to a tag to increase its relevance with respect to an image. Promoting a tag for an image increases the chances of the image appearing in search results when a search is performed based on the particular tag.
 
 1. In the OmniSearch box, search for assets based on a tag.
 1. Inspect the search results to identify an image that you don't find relevant to your search.

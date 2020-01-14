@@ -1,6 +1,6 @@
 ---
-title: Manage Assets with the Touch-Optimized user interface
-description: Learn about various asset management and editing tasks that you can perform using the Touch-optimized user interface of AEM Assets.
+title: Manage your digital assets using AEM Assets
+description: Learn the asset management tasks like upload, download, edit, search, delete, annotate, and version your digital assets.
 uuid: 7ee746f1-bbca-4bce-82e7-fed9fa9e1170
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,7 +10,7 @@ mini-toc-levels: 1
 
 ---
 
-# Manage assets with the Touch-optimized UI {#managing-assets-with-the-touch-optimized-ui}
+# Manage your digital assets {#managing-assets-with-the-touch-optimized-ui}
 
 This article describes how to manage and edit assets in Adobe Experience Manager (AEM) Assets. To get started with the user interface and layout, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
 
@@ -31,7 +31,7 @@ The following (space-separated list of) characters are not supported:
 * An asset file name cannot contain any of these characters: `* / : [ \\ ] | # % { } ? &`
 * An asset folder name cannot contain any of these characters: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Upload Assets {#uploading-assets}
+## Upload assets {#uploading-assets}
 
 <!-- TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
@@ -307,7 +307,7 @@ Select one ZIP archive at a time, click **[!UICONTROL Extract Archive]**, and se
 
 After the extraction is complete, AEM notifies you in the notification area. While AEM extracts the ZIP, you can go back to your work without interrupting the extraction.
 
-![Notification of zip extraction](assets/zip_extract_notification.png)
+![Notification of ZIP extraction](assets/zip_extract_notification.png)
 
 Some limitations of the feature are:
 
@@ -316,7 +316,7 @@ Some limitations of the feature are:
 * You cannot select two ZIP files at the same time and extract them. You can only extract one ZIP archive at a time.
 * When uploading a ZIP archive, if the upload dialog displays a 500 server error, retry after installing the latest service pack.
 
-## Preview Assets {#previewing-assets}
+## Preview assets {#previewing-assets}
 
 To preview an asset, follow these steps.
 
@@ -529,7 +529,7 @@ For Word documents, the DAM Parse Word Documents workflow generates a `cq:Page` 
 
    ![chlimage_1-224](assets/chlimage_1-19.png)
 
-## Delet assets {#deleting-assets}
+## Delete assets {#deleting-assets}
 
 To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset.
 
@@ -551,14 +551,11 @@ Also, disable the force delete button using an overlay, to disallow users from d
 
    >[!NOTE]
    >
-   >You require delete permissions on dam/asset to be able to delete an asset. If you only have modify permissions, you can only edit the asset metadata and add annotations to the asset. However, you cannot delete the asset or its metadata.
+   >To delete assets, a user requires delete permissions on `dam/asset`. If you only have modify permissions, you can only edit the asset metadata and add annotations to the asset. However, you cannot delete the asset or its metadata.
 
    >[!NOTE]
    >
-   >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset.
-   >
-   >
-   >Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
+   >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
 
 ## Download assets {#downloading-assets}
 
@@ -579,7 +576,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
    >[!NOTE]
    >
-   >If the folder you want to publish includes an empty folder, the empty folder is not published.
+   >Empty folders, that are part of a folder that you've published, are not published.
 
 1. Tap/click **[!UICONTROL Publish]** to confirm the activation for the assets.
 

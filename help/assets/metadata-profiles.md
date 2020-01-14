@@ -1,5 +1,5 @@
 ---
-title: Metadata Profiles
+title: Metadata profiles to customize metadata requirements of assets
 description: Know about metadata profiles for assets. Learn how to create a metadata profile and apply it to folder assets.
 uuid: 05732f17-863a-4aa6-bb1a-9549565be076
 contentOwner: AG
@@ -13,7 +13,7 @@ docset: aem65
 
 A metadata profile lets you apply default metadata to assets within a folder. Create a metadata profile and apply it to a folder. Any asset that you subsequently upload to the folder inherits the default metadata that you configured in the metadata profile.
 
-## Adding a metadata profile {#adding-a-metadata-profile}
+## Add a metadata profile {#adding-a-metadata-profile}
 
 1. Navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]** and tap **[!UICONTROL Create]**.
 1. Enter a title for the Metadata Profile, for example Sample Metadata, and tap **[!UICONTROL Create]**. The [!UICONTROL Edit Form] for the metadata profile is displayed.

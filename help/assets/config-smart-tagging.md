@@ -9,7 +9,7 @@ docset: aem65
 
 ---
 
-# Configure Asset tagging using the Smart Content Service {#configure-asset-tagging-using-the-smart-content-service}
+# Configure asset tagging using the Smart Content Service {#configure-asset-tagging-using-the-smart-content-service}
 
 You can integrate Adobe Experience Manager (AEM) with the Smart Content Service using Adobe I/O. Use this configuration to access the Smart Content Service from within AEM.
 
@@ -49,9 +49,9 @@ A public certificate allows you to authenticate your profile on Adobe I/O.
 
    ![A representation of the settings created for the smart tagging service](assets/download_link.png)
 
-### Reconfigure when the certificate expires {#certrenew}
+### Reconfigure when a certificate expires {#certrenew}
 
-When the certificate expires it is no longer trusted. To add a new certificate, follow these steps.
+When the certificate expires it is no longer trusted. To add a new certificate, follow these steps. You cannot renew an expired certificate.
 
 1. Log in your AEM deployment as an administrator. Click **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.  
 
