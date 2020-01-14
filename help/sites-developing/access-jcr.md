@@ -139,5 +139,5 @@ try {
 
 After you run the full code example and create the nodes, you can view the new nodes in the **[!UICONTROL CRXDE Lite]**, as shown in the following illustration.
 
-![chlimage_1-68](assets/chlimage_1-68.png)
+![chlimage_1-68](assets/chlimage_1-68a.png)
 
