@@ -40,14 +40,12 @@ The reference sites provide reusable assets that you can use as templates to cre
 
 Before you set up the reference site, ensure that you have the following:
 
-* **AEM essentials
-  **AEM QuickStart, AEM Forms add-on package, and reference site packages. See [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for add-on and reference sites packages details.
+* **AEM essentials** AEM QuickStart, AEM Forms add-on package, and reference site packages. See [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for add-on and reference sites packages details.
 
 * **An SMTP service**
   You can use any SMTP service.
 
-* **Adobe Sign developer account and Adobe Sign API application
-  **To use digital signing capabilities, Adobe Sign developer account is required. See [Adobe Sign](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html).
+* **Adobe Sign developer account and Adobe Sign API application** To use digital signing capabilities, Adobe Sign developer account is required. See [Adobe Sign](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html).
 
 * A running instance of Microsoft Dynamics 365 to integrate with AEM Forms. To run the reference site, you import the sample data into the Microsoft Dynamics instance to prefill the interactive communication used in the reference site.
 * A running instance of AEM with Forms add-on package. For more information, see [Installing and configuring AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
@@ -236,7 +234,7 @@ To import the custom entity for auto insurance application:
 
 To import the custom entity for auto insurance application:
 
-1. Download the** AEMFormsFSIRefsite_1_0.zip** package from https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip. Select and import the package.
+1. Download the **AEMFormsFSIRefsite_1_0.zip** package from https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip. Select and import the package.
 
 1. In your Microsoft Dynamics instance, go to **Settings &gt; Solutions** and click **Import**. Select and import the package.
 
@@ -250,21 +248,21 @@ To import the customer and insurance policy records:
 
 1. In your Microsoft Dynamics instance, do the following:
 
-    * Go to **Sales **&gt; **We.Finance Customers** and click **Import**.
+    * Go to **Sales** &gt; **We.Finance Customers** and click **Import**.
 
-    * Go to **Sales **&gt; **We.Finance Auto Insurance** and click **Import**.
+    * Go to **Sales** &gt; **We.Finance Auto Insurance** and click **Import**.
 
-    * Go to **Sales **&gt; **We.Finance Home Mortgage **and click **Import**.
+    * Go to **Sales** &gt; **We.Finance Home Mortgage** and click **Import**.
 
 ## Configure OAuth cloud service for Microsoft Dynamics {#configure-oauth-cloud-service-for-microsoft-dynamics}
 
 Configure the OAuth cloud service in AEM Forms to enable communication between AEM Forms and Microsoft Dynamics. Perform the following steps to configure the OAuth Cloud Service on AEM author and publish instances:
 
-1. On AEM author instance, go to **Tools **&gt; **Cloud Services** &gt; **Data Sources** &gt; **global**. Tap **Refsite Dynamics Integration** icon and tap Properties.
+1. On AEM author instance, go to **Tools** &gt; **Cloud Services** &gt; **Data Sources** &gt; **global**. Tap **Refsite Dynamics Integration** icon and tap Properties.
 1. Go to Microsoft Azure Active Directory account. Add the copied cloud service configuration URL in the **Reply URL** setting for your registered application. Save the configuration.
 1. In the Authentication Settings tab, specify **Service Root**, **Client Id**, **Client Secret**, and **Resource URL** for your Microsoft Dynamics instance. Click **Connect to OAuth** that redirects to the Microsoft Dynamics login page.
 1. Provide your login credentials. Once logged in, you are redirected to the AEM Forms cloud service configuration page. Click **Save & Close**. The cloud service configuration is saved.
-1. Go to **Forms **&gt; **Data Integrations** &gt; **We.Finance**. Select Auto Insurance (Dynamics) and click Edit. Microsoft Dynamics entities are listed under the Data Sources tab. Wait until all entities are fetched from Microsoft Dynamics and listed under the data sources tab.
+1. Go to **Forms** &gt; **Data Integrations** &gt; **We.Finance**. Select Auto Insurance (Dynamics) and click Edit. Microsoft Dynamics entities are listed under the Data Sources tab. Wait until all entities are fetched from Microsoft Dynamics and listed under the data sources tab.
 1. Select the **AutoInsuranceRenewal entity** and click **Test Model Object**. In the input request section, specify the value for customer ID as “900001” and click **Test**. The Output section displays the records fetched from Microsoft Dynamics for customer ID 900001.
 1. In the input request section, specify the value for customer ID as “900001” and click **Test**. The Output section displays the records fetched from Microsoft Dynamics for customer ID 900001.
 1. Repeat steps 1-6 on the publish instance.
@@ -287,11 +285,11 @@ Do the following on both author and publish instances:
 
 Do the following on both author and publish instances:
 
-1. Go to **Tools **&gt; **Cloud Services** &gt; **Adobe Sign** &gt; **global**. Select **AEM Forms Reference Site Sign** and tap Properties.
+1. Go to **Tools** &gt; **Cloud Services** &gt; **Adobe Sign** &gt; **global**. Select **AEM Forms Reference Site Sign** and tap Properties.
 
    >[!CAUTION]
    >
-   >Ensure that the https://[host]:[ssl_port]/mnt/overlay/adobesign/cloudservices/adobesign/properties.html URL is added to the redirect URL list of OAuth configuration of Adobe Sign API application.
+   >Ensure that the `https://[host]:[ssl_port]/mnt/overlay/adobesign/cloudservices/adobesign/properties.html` URL is added to the redirect URL list of OAuth configuration of Adobe Sign API application.
 
 1. Specify Client Id and secret of the Adobe Sign application OAuth configuration.
 1. (Optional) Select the **[!UICONTROL Enable Adobe Sign for attachments also]** option, and tap **[!UICONTROL Connect to Adobe Sign]**. It appends the files attached to an adaptive forms to the corresponding Adobe Sign document sent for signing.
@@ -301,7 +299,7 @@ Do the following on both author and publish instances:
 
 Do the following on the publish instance to allow access to anonymous users:
 
-1. Go to AEM Web Configuration console at https://[server]:[port]/system/console/configMgr.
+1. Go to AEM Web Configuration console at `https://[server]:[port]/system/console/configMgr`.
 1. Find and tap **[!UICONTROL Forms Common Configuration Service]** to open it for configuration.
 1. Configure the **[!UICONTROL Allow]** field for **[!UICONTROL All Users]**.
 1. Tap **[!UICONTROL Save]**.
@@ -310,11 +308,11 @@ Do the following on the publish instance to allow access to anonymous users:
 
 Do the following on both author and publish instances:
 
-1. Go to CRXDE at https://[server]:[port]/crx/de/index.jsp.
+1. Go to CRXDE at `https://[server]:[port]/crx/de/index.jsp`.
 1. Navigate to **/conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile** and open the swagger file.
 1. Update the host and port settings as per your environment.
 1. Save the settings.
-1. (**Author instance only**) Go to **Tools** > **Cloud Services** > **Data Sources** > **global**. Select **roi-rest** and tap** Properties.Tap **Authentication Settings** and set **Authentication Type** to **Basic Authentication**. Specify `admin`/ `admin`as the username/password to access the service. Tap **Save & Close**.
+1. (**Author instance only**) Go to **Tools** > **Cloud Services** > **Data Sources** > **global**. Select **roi-rest** and tap **Properties**.Tap **Authentication Settings** and set **Authentication Type** to **Basic Authentication**. Specify `admin`/ `admin`as the username/password to access the service. Tap **Save & Close**.
 
 ## Integrate with Marketing Cloud {#integrate-with-marketing-cloud}
 
@@ -355,18 +353,18 @@ The reference site showcases the integration of AEM Forms with Adobe Target that
 
 To experience the integration in the reference site, do the following to configure Target in AEM:
 
-1. Start the author quickstart with the jvm argument `-Dabtesting.enabled=true` to enable A/B testing on the server.**
-   Note**: If the AEM instance is running on JBoss, which is started as a service from Turnkey installation, add the `-Dabtesting.enabled=true` parameter in the following entry in the `jboss\bin\standalone.conf.bat` file, :
+1. Start the author quickstart with the jvm argument `-Dabtesting.enabled=true` to enable A/B testing on the server.
+   **Note**: If the AEM instance is running on JBoss, which is started as a service from Turnkey installation, add the `-Dabtesting.enabled=true` parameter in the following entry in the `jboss\bin\standalone.conf.bat` file, :
    `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
-1. Access https://&lt;*hostname*&gt;:&lt;*port*&gt;/libs/cq/core/content/tools/cloudservices.html.
+1. Access `https://&lt;*hostname*&gt;:&lt;*port*&gt;/libs/cq/core/content/tools/cloudservices.html`.
 
 1. In the **[!UICONTROL Adobe Target]** section, click **[!UICONTROL Show Configurations]**. You can see the We.Finance Target Configuration available. Click to open the configuration. In the configuration page, click **[!UICONTROL Edit]**. The **[!UICONTROL Edit Component]** dialog for the configuration opens.
 
 1. Specify your Client Code, Email and Password associated with your Target account. Select API type as **[!UICONTROL REST]**.
 1. Click **[!UICONTROL Connect to Adobe target]**. Once the Target account is configured successfully, click **[!UICONTROL OK]**. You can see the packaged configuration has a Target Framework.
 
-1. Go to https://&lt;*hostname*&gt;:&lt;*port*&gt;/system/console/configMgr.
+1. Go to `https://&lt;*hostname*&gt;:&lt;*port*&gt;/system/console/configMgr`.
 
 1. Click **[!UICONTROL AEM Forms Target Configuration]**.
 1. Select a Target framework.
