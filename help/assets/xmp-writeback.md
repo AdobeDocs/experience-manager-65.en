@@ -17,7 +17,7 @@ When you change the metadata for an asset from within AEM Assets or while upload
 
 The XMP Writeback feature propagates the metadata changes to all or specific renditions of the asset.
 
-Consider a scenario where you modify the Title property of the asset titled "**Classic Leather**" to "**Nylon**."
+Consider a scenario where you modify the Title property of the asset titled `Classic Leather` to `Nylon`.
 
 ![metadata](assets/metadata.png)
 

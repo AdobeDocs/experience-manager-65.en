@@ -1,5 +1,5 @@
 ---
-title: Customizing and Extending Assets
+title: Customize and extend AEM Assets
 description: Learn ways by which you can customize and extend Asset Share and Asset Editor, which presents users with a specifically tailored interface and set of functionality.
 uuid: 18e36100-aff9-4238-a0e9-4fd61d61863f
 contentOwner: AG
@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: a73b26c0-1a5f-4841-b002-bd43ff1ee766
 ---
 
-# Customize and Extend Assets {#customizing-and-extending-assets}
+# Customize and extend Assets {#customizing-and-extending-assets}
 
 The Asset Editor is the primary point of access that users of a Adobe Enterprise Manager (AEM) website will use to find, view, and manipulate the digital assets in your repository.
 
@@ -15,14 +15,14 @@ As an AEM developer, you can customize and extend the Asset Editor in a number o
 
 The following aspects of the functionality can be customized or enhanced:
 
-* [Extending Asset Editor](asseteditorx.md)
-* [Extending Assets Search](searchx.md)
-* [Processing Assets Using Media Handlers and Workflows](media-handlers.md)
-* [Integrating Assets with Activity Stream](extending-activity-stream.md)
-* [Assets Proxy Development](proxy.md)
-* [Best Practices for Configuring ImageMagick](best-practices-for-imagemagick.md)
+* [Extend Asset Editor](asseteditorx.md)
+* [Extend Assets Search](searchx.md)
+* [Process Assets Using Media Handlers and Workflows](media-handlers.md)
+* [Integrate Assets with activity stream](extending-activity-stream.md)
+* [Assets proxy development](proxy.md)
+* [Best practices to configure ImageMagick](best-practices-for-imagemagick.md)
 
-## Customizing the Look and Feel {#customizing-the-look-and-feel}
+## Customize the appearance {#customizing-the-look-and-feel}
 
 The following aspects of the look and feel of the Asset Editor are customizable:
 
@@ -30,7 +30,7 @@ The following aspects of the look and feel of the Asset Editor are customizable:
 * Colors and Fonts: You can change the colors and fonts used in the interface.
 * HTML Code: For more thorough customization you can change the underlying HTML code that defines the interfaces.
 
-## Customizing Renditions {#customizing-renditions}
+## Customize renditions {#customizing-renditions}
 
 In AEM Assets terminology a rendition is the form in which an asset is presented. In general, a particular asset may have multiple renditions. For example, full-color image may have one rendition in its original size, another at a scaled-down size and another that is both scaled down and converted to grayscale.
 

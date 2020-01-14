@@ -1,5 +1,5 @@
 ---
-title: Private folder sharing
+title: Create and share a private folder in AEM
 description: Learn how to create a private folder in the Adobe Experience Manager (AEM) Assets and share it with other users and the assign various privileges to them.
 uuid: 9bda6c43-2203-46aa-a7b6-4d472a37d065
 contentOwner: AG

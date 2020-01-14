@@ -1,5 +1,5 @@
 ---
-title: Creating translation projects
+title: Create translation projects
 description: Learn how to create translation projects in AEM.
 uuid: 9d360f6b-584f-4bd1-afb9-cd32aa8db0b9
 contentOwner: AG

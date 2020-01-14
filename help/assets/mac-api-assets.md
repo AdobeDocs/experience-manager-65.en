@@ -374,4 +374,3 @@ DELETE /api/assets/myFolder/myAsset.png/renditions/original
 412 - PRECONDITION FAILED - if root collection cannot be found or accessed
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
-

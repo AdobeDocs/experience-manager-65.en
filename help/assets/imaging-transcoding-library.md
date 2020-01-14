@@ -11,6 +11,8 @@ docset: aem65
 
 # Imaging Transcoding Library {#imaging-transcoding-library}
 
+<!-- TBD: Add UICONTROL tags. Run spellcheck. -->
+
 Adobe's Imaging Transcoding Library is a proprietary image processing solution that can perform core image-handling functions, including:
 
 * Encoding
@@ -36,7 +38,7 @@ In addition to supporting a wide range of file formats and profiles, Imaging Tra
 
 See [supported MIME types article](assets-formats.md#supported-image-transcoding-library), for a list of formats that ITL supports.
 
-## Supported Platforms {#supported-platforms}
+## Supported platforms {#supported-platforms}
 
 Imaging Transcoding Library is currently available for the following operating systems:
 
@@ -74,7 +76,7 @@ You can configure the following options for the `-resize` `parameter:`
  -output <fileName>
 ```
 
-## Configuring Imaging Transcoding Library {#configuring-imaging-transcoding-library}
+## Configure Imaging Transcoding Library {#configuring-imaging-transcoding-library}
 
 1. When executing the `SWitchEngine` command, create a conf file to point to the libraries using the following commands:
 

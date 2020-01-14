@@ -1,6 +1,6 @@
 ---
-title: Adding Image Maps
-description: Learn how to add hyperlinked image maps to image assets.
+title: Add image maps with hyperlinks to digital images
+description: Learn how to add image map with hyperlinks to an image.
 uuid: 83694f01-5e3d-445b-921b-c06562086a00
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

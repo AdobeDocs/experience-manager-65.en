@@ -117,7 +117,7 @@ If you want to use an existing node, specify it using the selection dialog.
 1. Do one of the following:
 
     * In the **[!UICONTROL Property Name]** field, mention the path of the JSON file where you define the nodes for the options and specify corresponding key-value pairs.
-    * Tap or click the **[!UICONTROL +]** symbol next to the Options field to specify the display text and value for the options you want to supply in the Filters panel. To add another option, tap/click **[!UICONTROL +]** symbol and repeat the step.
+    * Tap or click the `+` symbol next to the Options field to specify the display text and value for the options you want to supply in the Filters panel. To add another option, tap/click `+` symbol and repeat the step.
 
 1. Ensure that **[!UICONTROL Single Select]** is cleared to let the user select multiple options for file types at a time (for example, Images, Documents, Multimedia, and Archives). If you select **[!UICONTROL Single Select]**, the user can select only one option for file types at a time.
 
@@ -125,15 +125,15 @@ If you want to use an existing node, specify it using the selection dialog.
 
    The available fields in the Options predicate
 
-1. In the **Description** field, enter an optional description and then click **[!UICONTROL Done]**.
+1. In the **[!UICONTROL Description]** field, enter an optional description and then click **[!UICONTROL Done]**.
 1. Navigate to the Search panel. The Options predicate is added to the **Search** panel. The options for **[!UICONTROL File Type]** are displayed as checkboxes.
 
-## Add a Multi Value Property predicate {#adding-a-multi-value-property-predicate}
+## Add a multi-value property predicate {#adding-a-multi-value-property-predicate}
 
 The Multi Value Property predicate lets you search assets for multiple values. Consider a scenario where you have images of multiple products in AEM Assets and the metadata for each image includes an SKU number associated with the product. You can use this predicate to search for product images based on multiple SKU numbers.
 
 1. Click the AEM logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. On the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, the tap **Edit** ![aemassets_edit](assets/aemassets_edit.png).
+1. On the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, the tap **[!UICONTROL Edit]** ![aemassets_edit](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag a **[!UICONTROL Multi Value Property Predicate]** from the **[!UICONTROL Select Predicate]** tab to the main pane.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. You can also use the selection dialog to select a node.
 1. Ensure that **[!UICONTROL Delimiter Support]** is selected. In the **[!UICONTROL Input Delimiters]** field, specify delimiters to separate individual values. By default, comma is specified as the delimiter. You can specify a different delimiter.
@@ -146,7 +146,7 @@ The Multi Value Property predicate lets you search assets for multiple values. C
 The Tag predicate allows you to perform tag-based searches for assets. By default, AEM Assets searches assets for one or more tags matches based on the tags you specify. In other words, the search query performs an OR operation using the specified tags. However, you can use the match all tags option to search for assets that include all tags that you specify.
 
 1. Click the AEM logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]** and then tap **Edit** ![aemassets_edit](assets/aemassets_edit.png).
+1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]** and then tap **[!UICONTROL Edit]** ![aemassets_edit](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
 1. In the Settings tab, enter a placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. Alternatively, you can select a node in CRXDE from the selection dialog.
 1. Configure the Root tags path property of this predicate to populate various tags in the Tags list.
@@ -173,7 +173,7 @@ Similar to the way you add a Property predicate or an Options predicate, you can
 | Predicate Name | Description | Properties |
 |---|---|---|
 | [!UICONTROL Fulltext] | Search predicate to perform full text search on an entire asset node. It is mapped with the jcr:contains operator. You can specify a relative path if you want to perform a full text search on a specific part of the asset node. | <ul><li>Label</li><li>Placeholder</li><li>Property name</li><li>Description</li></ul> |
-| [!UICONTROL Path Browser] | Search predicate to search for assets in folders and subfolders at a preconfigured root path | <ul><li>Placeholder</li><li>Root path</li><li>Description</li></ul> |
+| [!UICONTROL Path Browser] | Search predicate to search for assets in folders and subfolders at a pre-configured root path | <ul><li>Placeholder</li><li>Root path</li><li>Description</li></ul> |
 | [!UICONTROL Path] | Use it to filter results on location. You can specify different paths as options. | <ul><li>Label</li><li>Path</li><li>Description</li></ul> |
 | [!UICONTROL Publish Status] | Search predicate to search assets based on their publish status | <ul><li>Label</li><li>Property name</li><li>Description</li></ul> |
 | [!UICONTROL Relative Date] | Search predicate to search assets based on the relative date of their creation. For example, you can configure options, such as 2 months ago, 3 weeks ago, and so on. | <ul><li>Label</li><li>Property name</li><li>Relative date</li></ul> |
@@ -216,5 +216,5 @@ If you are not assigned an administrator role, here is a list of permissions you
 
 >[!MORELIKETHIS]
 >
->* [Extending Assets' search](searchx.md)
->* [Searching Assets](search-assets.md)
+>* [Extend asset search capability](searchx.md)
+>* [Search assets](search-assets.md)
