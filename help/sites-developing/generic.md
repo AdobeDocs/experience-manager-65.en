@@ -55,7 +55,7 @@ The eCommerce framework can be used with any eCommerce solution, the engine bein
 In a standard AEM installation a specific implementation is required, for example:
 
 |||
-|-|-|
+|---|---|
 |`cq:commerceProvider = geometrixx`|geometrixx example; this includes minimal extensions to the generic API|
 
 ### Example {#example}

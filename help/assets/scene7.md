@@ -4,7 +4,7 @@ seo-title: Adding Dynamic Media Classic Features to your Page
 description: Learn how to add Dynamic Media Classic features and components to your AEM page.
 seo-description: Learn how to add Dynamic Media Classic features and components to your AEM page.
 uuid: aa5a4735-bfec-43b8-aec0-a0c32bff134f
-contentOwner: Alva Ware-Bevacqui
+contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 topic-tags: managing-assets
@@ -78,7 +78,7 @@ For more information about this important change, see [Flash Viewer End-of-Life 
 
 Adding a Dynamic Media Classic (Scene7) component to a page is the same as adding a component to any page. Dynamic Media Classic components are described in detail in the following sections.
 
-**To add a Dynamic Media Classic (Scene7) component to a page**:
+**To add a Dynamic Media Classic (Scene7) component to a page**
 
 1. In AEM, open the page where you want to add the Dynamic Media Classic (Scene7) component.
 
@@ -105,7 +105,7 @@ Responsive design for your assets means that your assets adapts depending on whe
 
 See also [Responsive Design for Web Pages](/help/sites-developing/responsive.md).
 
-**To add an interactive viewing experience to a responsive site**:
+**To add an interactive viewing experience to a responsive site**
 
 1. Log in to AEM, and ensure that you have [configured Adobe Dynamic Media Classic Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration) and that Dynamic Media Classic components are available.
 
@@ -139,7 +139,7 @@ The HTML5 Zoom component displays a larger image when you press the **[!UICONTRO
 
 The asset has zoom tools at the bottom. Tap **[!UICONTROL +]** to enlarge. Tap **[!UICONTROL -]** to reduce. Tapping the **[!UICONTROL x]** or the reset zoom arrow brings the image back to the original size it was imported as. Tap the diagonal arrows to make it full screen. Tap **[!UICONTROL Edit]** to configure the component. With this component, you can configure [settings common to all [!UICONTROL Dynamic Media Classic] components](#settings-common-to-all-scene-components).
 
-![chlimage_1-227](assets/chlimage_1-227.png)
+![chlimage_1-227](/help/assets/assets/do-not-localize/chlimage_1-227.png)
 
 ### Flyout {#flyout}
 
@@ -155,7 +155,7 @@ In the HTML5 **[!UICONTROL Flyout]** component, the asset is shown as split scre
 
 ### Image {#image}
 
-The Dynamic Media Classic **[!UICONTROL Image]** component lets you add Dynamic Media Classic functionality to your images, such as Dynamic Media Classic modifiers, image or viewer presets, and sharpening. The Dynamic Media Classic **[!UICONTROL Image]** component is similar to other image components in AEM with special Dynamic Media Classic functionality. In this example, the image has the Dynamic Media Classic URL modifier, **&op_invert=1** applied.
+The Dynamic Media Classic **[!UICONTROL Image]** component lets you add Dynamic Media Classic functionality to your images, such as Dynamic Media Classic modifiers, image or viewer presets, and sharpening. The Dynamic Media Classic **[!UICONTROL Image]** component is similar to other image components in AEM with special Dynamic Media Classic functionality. In this example, the image has the Dynamic Media Classic URL modifier, `&op_invert=1` applied.
 
 ![chlimage_1-229](assets/chlimage_1-229.png)
 
@@ -195,7 +195,7 @@ Tap **[!UICONTROL Edit]** to configure the component. You can configure [setting
 
 **[!UICONTROL Title, Alt Text]** &ndash; In the Dynamic Media Classic Image Template tab, add a title to the image and alt text for those users who have graphics turned off.
 
-**[!UICONTROL URL, Open in]** You can set an asset from to open a link. Set the URL and in Open in indicate whether you want it to open in the same window or a new window.
+**[!UICONTROL URL, Open in]** &ndash; You can set an asset from to open a link. Set the URL and in Open in indicate whether you want it to open in the same window or a new window.
 
 ![chlimage_1-232](assets/chlimage_1-232.png)
 

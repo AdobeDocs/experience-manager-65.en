@@ -50,6 +50,7 @@ Select the reporting period for which Analytics data appears on the Sites consol
 * This Year's Data
 
 The current reporting period appears on the toolbar of the Sites console (right of the top toolbar). Use the drop down to select the required reporting period.
+
 ![aa-05](assets/aa-05.png)
 
 ### Configuring Available Data Columns {#configuring-available-data-columns}
@@ -60,7 +61,7 @@ Members of the analytics-administrators user group can configure the Sites conso
 >
 >When a tree of pages contains children that are associated with different Adobe Analytics cloud configurations, you cannot configure available data columns for the pages.
 
-1. In List View, use the view selectors (right of toolbar), select **View Settings** and then A**dd Custom Analytics Data**.
+1. In List View, use the view selectors (right of toolbar), select **View Settings** and then **Add Custom Analytics Data**.
 
    ![spad-03](assets/spad-03.png)
 

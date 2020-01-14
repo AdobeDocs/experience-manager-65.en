@@ -194,12 +194,12 @@ To configure a replication agent for the portal:
    ![screen_shot_2012-02-15at41001pm](assets/screen_shot_2012-02-15at41001pm.png)
 
 1. Click **Edit.**
-1. In the **Settings** tab, select the **Enabled** check box, select **Dispatcher Flush **as the serialization type, and enter a retry timeout (for example, 60000).
+1. In the **Settings** tab, select the **Enabled** check box, select **Dispatcher Flush** as the serialization type, and enter a retry timeout (for example, 60000).
 
    ![screen_shot_2012-02-15at42101pm](assets/screen_shot_2012-02-15at42101pm.png)
 
 1. Click the **Transport** tab.
-1. In the **URI **field, enter the flush URI (URL) of the portlet. The URI is in the following form:
+1. In the **URI** field, enter the flush URI (URL) of the portlet. The URI is in the following form:
 
    ```xml
    https://<wps-host>:<port>/<wps-context>/<cq5-portlet-context>/cqbridge/cqpcache

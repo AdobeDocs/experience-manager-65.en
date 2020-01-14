@@ -1,19 +1,15 @@
 ---
 title: Assets Monitoring Best Practices
-seo-title: Assets Monitoring Best Practices
 description: Best practices for monitoring the environment and performance of your AEM instance after it is deployed.
-seo-description: Best practices for monitoring the environment and performance of your AEM instance after it is deployed.
 uuid: a7d63b42-c0b2-47a0-9bd4-df85dfe59313
-contentOwner: Chiradeep Majumdar
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: fb1dd06d-3470-45cd-b3ba-6b4e9a2e1f3c
 docset: aem65
 
 ---
 
-# Assets Monitoring Best Practices{#assets-monitoring-best-practices}
+# Assets Monitoring Best Practices {#assets-monitoring-best-practices}
 
 From the Adobe Experience Manager (AEM) Assets standpoint, monitoring should include observing and reporting on the following processes and technologies:
 
@@ -21,11 +17,7 @@ From the Adobe Experience Manager (AEM) Assets standpoint, monitoring should inc
 * System memory usage
 * System disk IO and IO wait time
 * System network IO
-* JMX MBeans for:
-
-    * Heap utilization
-    * Asynchronous processes, such as workflows
-
+* JMX MBeans for heap utilization and asynchronous processes, such as workflows
 * OSGi console health checks
 
 Typically, AEM Assets can be monitored in two ways, live monitoring and long term monitoring.
@@ -52,7 +44,7 @@ Typically, you use these tools together to obtain a comprehensive idea about the
 >
 >These tools are standard tools and not directly supported by Adobe. They don’t require additional licenses.
 
-![chlimage_1-32](assets/chlimage_1-32.png) ![chlimage_1-33](assets/chlimage_1-33.png)
+![chlimage_1-32](assets/chlimage_1-142.png) <br> ![chlimage_1-33](assets/chlimage_1-143.png)
 
 ## Long Term Monitoring {#long-term-monitoring}
 
@@ -92,17 +84,19 @@ Here are some baseline parameters that you can monitor for JVM:
 Memory
 
 * `MBean: lava.lang:type=Memory`
-* URL: */system/console/jmx/java.lang:type=Memory*
+* URL: `/system/console/jmx/java.lang:type=Memory`
 * Instances: All servers
 * Alarm threshold: When the heap or non-heap memory utilization exceeds 75% of the corresponding maximum memory.
 * Alarm definition: Either system memory is insufficient, or there is a memory leak in the code. Analyze a thread dump to arrive at a definition.
 
-**Note**: Information provided by this bean is expressed in bytes.
+>[!Note]
+>
+>The information provided by this bean is expressed in bytes.
 
 Threads
 
 * MBean: `java.lang:type=Threading`
-* URL: */system/console/jmx/java.lang:type=Threading*
+* URL: `/system/console/jmx/java.lang:type=Threading`
 * Instances: All servers
 * Alarm threshold: When the number of threads is greater than 150% of the baseline.
 * Alarm definition: Either there is an active runaway process, or an inefficient operation consumes a large amount of resources. Analyze a thread dump to arrive at a definition.
@@ -116,13 +110,15 @@ Here are some baseline parameters that you can monitor for AEM:
 Replication agents
 
 * MBean: `com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>”`
-* URL: */system/console/jmx/com.adobe.granite.replication:type=agent,id=”&lt;AGENT_NAME&gt;”*
+* URL: `/system/console/jmx/com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>"`
 * Instances: One Author and all publish instances (for flush agents)
-* Alarm threshold: When the value of `QueueBlocked` is true or the value of `QueueNumEntries` is greater than 150% of the baseline.
+* Alarm threshold: When the value of `QueueBlocked` is `true` or the value of `QueueNumEntries` is greater than 150% of the baseline.
 
 * Alarm definition: Presence of a blocked queue in the system indicating that the replication target is down or unreachable. Often, network or infrastructure issues cause excessive entries to be queued, which can adversely impact system performance.
 
-**Note**: For the MBean and URL parameters, replace `<AGENT_NAME>` with the name of the replication agent you want to monitor.
+>[!Note]
+>
+>For the MBean and URL parameters, replace `<AGENT_NAME>` with the name of the replication agent you want to monitor.
 
 Session counter
 
@@ -139,52 +135,51 @@ Health checks that are available in the [operations dashboard](/help/sites-admin
 Here are some out-of-the-box health checks that are helpful to monitor:
 
 * System Checks
-
-    * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthChec`k 
-    * URL: */system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck*
-    * Instances: One author, all publish servers
-    * Alarm threshold: When the status is not OK
-    * Alarm definition: The status of one of the metrics is either WARN or CRITICAL. Check the log attribute for more information on the cause of the issue.
+  * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthChec`k 
+  * URL: */system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck*
+  * Instances: One author, all publish servers
+  * Alarm threshold: When the status is not OK
+  * Alarm definition: The status of one of the metrics is either WARN or CRITICAL. Check the log attribute for more information on the cause of the issue.
 
 * Replication Queue
 
-    * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
-    * URL: */system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck*
-    * Instances: One author, all publish servers
-    * Alarm threshold: When the status is not OK
-    * Alarm definition: The status of one of the metrics is either WARN or CRITICAL. Check the log attribute for more information on the queue that caused the issue.
+  * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+  * URL: */system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck*
+  * Instances: One author, all publish servers
+  * Alarm threshold: When the status is not OK
+  * Alarm definition: The status of one of the metrics is either WARN or CRITICAL. Check the log attribute for more information on the queue that caused the issue.
 
 * Response Performance
 
-    * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck `
-    * URL: */system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck*
-    * Instances: All servers
-    * Alarm duration: When the status is not OK
-    * Alarm definition: The status of one of the metrics is either WARN or CRITICAL status. Check the log attribute for more information on the queue that caused the issue.
+  * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck `
+  * URL: */system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck*
+  * Instances: All servers
+  * Alarm duration: When the status is not OK
+  * Alarm definition: The status of one of the metrics is either WARN or CRITICAL status. Check the log attribute for more information on the queue that caused the issue.
 
 * Query Performance
 
-    * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck `
-    * URL: */system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck*
-    * Instances: One author, all publish servers
-    * Alarm threshold: When the status is not OK
-    * Alarm definition: One or more queries running slowly in the system. Check the log attribute for more information on the queries that caused the issue.
+  * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck `
+  * URL: */system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck*
+  * Instances: One author, all publish servers
+  * Alarm threshold: When the status is not OK
+  * Alarm definition: One or more queries running slowly in the system. Check the log attribute for more information on the queries that caused the issue.
 
 * Active Bundles
 
-    * MBean: org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck 
-    * URL: */system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck*
-    * Instances: All servers
-    * Alarm threshold: When the status is not OK
-    * Alarm definition: Presence of inactive or unresolved OSGi bundles on the system. Check the log attribute for more information on the bundles that caused the issue.
+  * MBean: org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck 
+  * URL: */system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck*
+  * Instances: All servers
+  * Alarm threshold: When the status is not OK
+  * Alarm definition: Presence of inactive or unresolved OSGi bundles on the system. Check the log attribute for more information on the bundles that caused the issue.
 
 * Log Errors
 
-    * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck `
-    * URL: */system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck*
-    * Instances: All servers
-    * Alarm threshold: When the status is not OK
-    * Alarm definition: There are errors in the log files. Check the log attribute for more information on the cause of the issue.
+  * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck `
+  * URL: */system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck*
+  * Instances: All servers
+  * Alarm threshold: When the status is not OK
+  * Alarm definition: There are errors in the log files. Check the log attribute for more information on the cause of the issue.
 
 ## Common Issues and Resolutions  {#common-issues-and-resolutions}
 
@@ -199,4 +194,3 @@ In the process of monitoring, if you encounter issues, here are some troubleshoo
 * Investigate the egress points from the client network and the ingress points to the AEM instance network, including the dispatcher. Frequently, these are bottleneck areas. For more information, see [Assets network considerations](/help/assets/assets-network-considerations.md).
 * Upsize your AEM server. You may have an inadequately sized your AEM instance. Adobe Support can help you identify whether your server is undersized.
 * Examine the `access.log` and `error.log` files for entries around the time of something went wrong. Look for patterns that can potentially indicate custom code anomalies. Add them to the list of events you monitor.
-

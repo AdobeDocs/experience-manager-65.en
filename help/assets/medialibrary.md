@@ -31,10 +31,10 @@ The AEM Media Library is a designated part of the AEM WCM content repository whe
 
 Unique features that are only available to customers of AEM Assets are:
 
-1. the ability to extract and edit metadata other than title, tags and description.  
-1. the AEM Assets Admin, available from the welcome screen by clicking the second button next to the siteadmin  
-1. All workflow steps related to Digital Asset Management, namely AEM Assets Ingestion, AEM Assets Deletion, AEM Assets Sub-Asset-Handling, AEM Assets metadata extraction  
-1. libraries including "dam" im package space
+1. the ability to extract and edit metadata other than title, tags and description.
+1. the AEM Assets Admin, available from the welcome screen by clicking the second button next to the siteadmin.
+1. All workflow steps related to Digital Asset Management, namely AEM Assets Ingestion, AEM Assets Deletion, AEM Assets Sub-Asset-Handling, AEM Assets metadata extraction.
+1. libraries including "dam" im package space.
 
 Using these features requires a valid license of AEM Assets.
 
@@ -48,7 +48,7 @@ If you are planning to edit metadata other than title, description and tags, it 
 
 ### I want to use the category predicate on my website. Do I need AEM Assets? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-Yes, the category predicate, together with all other components used in Geometrixx Press Center are part of AEM Assets and require an AEM Assets license.
+Yes, the category predicate is part of AEM Assets and require an AEM Assets license.
 
 #### I want to automatically resize images upon import. Do I need AEM Assets? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
@@ -78,7 +78,6 @@ For this use case it is not required to buy AEM Assets, even the use of the Medi
 * InDesign server integration
 * Asset Templates and catalog producer framework
 * Adobe Photoshop, Illustrator, and InDesign linked-assets
-* DAM Proxy Server - performance offloading
 * Multi-lingual asset management
 * PIM integration
 * Rights Management

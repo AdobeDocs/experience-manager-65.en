@@ -15,39 +15,29 @@ docset: aem65
 
 # Concepts of the AEM Touch-Enabled UI{#concepts-of-the-aem-touch-enabled-ui}
 
-With AEM 5.6 Adobe introduced a new touch-enabled UI with [responsive design](/help/sites-authoring/responsive-layout.md) for the author environment. This differs considerably from the original classic UI as it is designed to operate on both touch and desktop devices.
-
-This touch-enabled UI is now the standard UI for AEM, superseding the classic UI.
+AEM features a touch-enabled UI with [responsive design](/help/sites-authoring/responsive-layout.md) for the author environment which is designed to operate on both touch and desktop devices.
 
 >[!NOTE]
 >
->The touch-enabled UI is the standard UI for AEM, though the classic UI is still supported.
+>The touch-enabled UI is the standard UI for AEM. The classic UI was deprecated with AEM 6.4.
 
 The touch-enabled UI includes:
 
 * The suite header that:
-
     * Shows the logo
     * Provides a link to the Global Navigation
     * Provides link to other generic actions; such as Search, Help, Marketing Cloud Solutions, Notifications and User Settings.
-
 * The left-hand rail (shown when needed and hidable), which can show:
-
     * Timeline
     * References
     * Filters
-
 * The navigation header, which is again context sensitive and can show:
-
     * Indicates which console you are currently using and/or your location within that console
     * Selection for the left-hand rail
     * Breadcrumbs
     * Access to appropriate **Create** actions
-
     * View selections
-
 * The content area that:
-
     * Lists the items of content (be they pages, assets, forum posts, etc)
     * Can be formatted as requested, e.g. column, card, or list
     * Uses a responsive design (the display resizes automatically according to your device and/or window size)
@@ -132,7 +122,6 @@ The Granite UI:
 
 * [Granite UI Foundation Components](#granite-ui-foundation-components)
   This library of foundation components can be used or extended by other libraries.
-
 * [Granite UI Administration Components](#granite-ui-administration-components)
 
 ### Client Side vs Server Side {#client-side-vs-server-side}
@@ -292,7 +281,7 @@ Coral UI (CUI) is an implementation of Adobe's visual style for the touch-enable
 >Coral UI is a UI library made available to AEM customers for building applications and web interfaces within the boundaries of their licensed use of the product.
 >
 >Use of Coral UI is only permitted:
-
+>
 >
 >* When it has been shipped and bundled with AEM.
 >* For use when extending the existing UI of the authoring environment.
@@ -508,4 +497,3 @@ Purpose:
 Implementation:
 
 * jQuery plugins or AMD-compliant JavaScript modules
-

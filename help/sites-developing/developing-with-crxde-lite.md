@@ -151,7 +151,7 @@ To create a project with CRXDE Lite:
 1. In the Navigation pane, right-click a node, select **Create ...**, then **Create Project ...**.
    Note: you can right-click any node in the tree navigation, as the new project nodes are, by design, created below `/apps,` `/content` and `/etc/packages`.
 
-1. Define**:**
+1. Define:
 
     * **Project Name** - the project name is used to create the new nodes and the bundle, e.g. `myproject`.
 
@@ -179,7 +179,9 @@ The following nodes are created:
 
 The structure looks as follows in CRXDE Lite with a project called **myproject** and a java package suffix called **mycompany**:
 
-![chlimage_1-19](assets/chlimage_1-19.png) ![chlimage_1-20](assets/chlimage_1-20.png)
+![chlimage_1-19](assets/chlimage_1-19.png) 
+
+![chlimage_1-20](assets/chlimage_1-20.png)
 
 ## Creating a Folder {#creating-a-folder}
 
@@ -188,7 +190,7 @@ To create a folder with CRXDE Lite:
 1. Open CRXDE Lite in your browser.
 1. In the Navigation pane, right-click the folder under which you want to create the new folder, select **Create ...**, then **Create Folder ...**.
 
-1. Enter the folder** Name** and click **OK**.
+1. Enter the folder **Name** and click **OK**.
 
 1. Click **Save All** to save the changes on the server.
 
@@ -297,7 +299,7 @@ To create a new script:
 1. Open CRXDE Lite in your browser.
 1. In the Navigation pane, right-click the component where you want to create the script, select **Create ...**, then **Create File ...**.
 
-1. Enter the File** Name** including its extension. Click **OK**.
+1. Enter the File **Name** including its extension. Click **OK**.
 
 1. The new file opens as a tab in the Edit pane.
 1. Edit the file.
@@ -307,7 +309,7 @@ To create a new script:
 
 With CRXDE Lite, it is straightforward to create an OSGI bundle, add Java classes to it, and build it. The bundle is then automatically installed and started in the OSGI container.
 
-This section describes how to create a `Test` bundle with a `HelloWorld` Java class that displays** Hello World! **in your browser when the resource is requested.
+This section describes how to create a `Test` bundle with a `HelloWorld` Java class that displays **Hello World!** in your browser when the resource is requested.
 
 ### Creating a Bundle {#creating-a-bundle}
 
@@ -316,12 +318,7 @@ To create the Test bundle with CRXDE Lite:
 1. In CRXDE Lite create `myapp` project with the [project wizard](#creating-a-project). Among others the following nodes are created:
 
     * `/apps/myapp/src`
-    *
-
-      ```
-      /apps/myapp/install
-
-      ```
+    * `/apps/myapp/install`
 
 1. Right-click the folder `/apps/myapp/src` that will contain the `Test` bundle, select **Create ...**, then **Create Bundle ...**.
 
@@ -427,14 +424,15 @@ To create the `HelloWorld` Java class within the Test Bundle:
 
 1. The `HelloWorld.java` file opens in the Edit pane.
 1. Add the following lines into `HelloWorld.java`:
-   package com.mycompany.test;
+    ```
+      package com.mycompany.test;
 
-   public class HelloWorld {
-   public String getString(){
-   return "Hello World!";
-   }
-   }
-
+      public class HelloWorld {
+      public String getString(){
+      return "Hello World!";
+      }
+      }
+    ```
 1. Click **Save All** to save the changes on the server.
 
 ### Building a Bundle {#building-a-bundle}
@@ -455,15 +453,18 @@ To see the effect of the Test Bundle, create a component that uses the Java meth
 1. Create the component `mycomp` under `myapp/components`.
 
 1. Edit `mycomp.jsp` and replace the code with the following lines:
-   &lt;%@ page import="com.mycompany.test.HelloWorld"%&gt;&lt;%
-   %&gt;&lt;%@ include file="/libs/foundation/global.jsp"%&gt;&lt;%
-   %&gt;&lt;% HelloWorld hello = new HelloWorld();%&gt;&lt;%
-   %&gt;
-   &lt;html&gt;
-   &lt;body&gt;
-   &lt;b&gt;&lt;%= hello.getString() %&gt;&lt;/b&gt;&lt;br&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
+
+    ```
+      <%@ page import="com.mycompany.test.HelloWorld"%><%
+      %><%@ include file="/libs/foundation/global.jsp"%><%
+      %><% HelloWorld hello = new HelloWorld();%><%
+      %>
+      <html>
+      <body>
+      <b><%= hello.getString() %></b><br>
+      </body>
+      </html>
+    ```
 
 1. Create the resource `test_node` of type `nt:unstructured` under `/content`.
 
@@ -483,14 +484,14 @@ To export a node type definition:
 
 1. Open CRXDE Lite in your browser.
 1. Select your required node.
-1. Select **Tools **then **Export Node Type**.
+1. Select **Tools** then **Export Node Type**.
 
 1. The definition, in cnd notation will be displayed in your browser. Save the information if required.
 
 To import a node type definition:
 
 1. Open CRXDE Lite in your browser.
-1. Select **Tools **then **Import Node Type...**.
+1. Select **Tools** then **Import Node Type...**.
 
 1. Enter the CND notation for the definition n the text box.
 1. Check **Allow Update** if you are updating an existing definition.
@@ -517,4 +518,3 @@ You can:
 >[!NOTE]
 >
 >See [Users, Groups and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md) for more information.
-

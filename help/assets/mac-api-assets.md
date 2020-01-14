@@ -9,24 +9,24 @@ docset: aem65
 
 ---
 
-# Assets HTTP API{#assets-http-api}
+# Assets HTTP API {#assets-http-api}
 
 ## Overview {#overview}
 
-The Assets HTTP API is exposed at */api/assets*, and allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments, together with structured content using AEM Content Fragments. The current implementation of AEM Assets HTTP API is REST. It includes [support for Content Fragments](/help/assets/assets-api-content-fragments.md).
+The Assets HTTP API allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments, together with structured content using AEM Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](/help/assets/assets-api-content-fragments.md).
 
 To access the API:
 
 1. Open the API service document at `https://[hostname]:[port]/api.json`.
 1. Follow the Assets service link leading to `https://[hostname]:[server]/api/assets.json`.
 
-The API's response is a JSON for some mime types and a response code for all mime types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
+The API response is a JSON file for some mime types and a response code for all mime types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
 
 After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API. The API returns 404 error message if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
 
 ## Content Fragments {#content-fragments}
 
-A [content fragment](/help/assets/content-fragments.md) is a special type of asset. It can be used to access structured data, such as texts, numbers, dates, amongst others. As there are several differences to *standard* assets (such as images or documents), some additional rules apply to handling content fragments.
+A [content fragment](/help/assets/content-fragments.md) is a special type of asset. It can be used to access structured data, such as texts, numbers, dates, amongst others. As there are several differences to `standard` assets (such as images or documents), some additional rules apply to handling content fragments.
 
 For further information see [Content Fragments Support in the AEM Assets HTTP API](/help/assets/assets-api-content-fragments.md).
 
@@ -38,54 +38,38 @@ Additionally, it exposes more detailed elements for the custom data models that 
 
 ### Folders {#folders}
 
-Folders are like directories in tradtional filesystems. They are containers for other folders or asserts. Folders have the following components:
+Folders are like directories in traditional file systems. They are containers for other folders or asserts. Folders have the following components:
 
 **Entities**: The entities of a folder are its child elements, which can be folders and assets.
 
 **Properties**:
-
-```
-name  -- Name of the folder. This is the same as the last segment in the URL path without the extension
-title -- Optional title of the folder which can be displayed instead of its name
-```
+* `name`  -- Name of the folder. This is the same as the last segment in the URL path without the extension
+* `title` -- Optional title of the folder which can be displayed instead of its name
 
 >[!NOTE]
 >
 >Some properties of folder or asset are mapped to a different prefix. The `jcr` prefix of `jcr:title`, `jcr:description`, and `jcr:language` are replaced with `dc` prefix. Hence in the returned JSON, `dc:title` and `dc:description` contain the values of `jcr:title` and `jcr:description`, respectively.
 
 **Links** Folders expose three links:
-
-```xml
-self      -- Link to itself
-parent    -- Link to the parent folder
-thumbnail -- (Optional) link to a folder thumbnail image
-```
+* `self`: Link to itself
+* `parent`: Link to the parent folder
+* `thumbnail`: (Optional) link to a folder thumbnail image
 
 ### Assets {#assets}
 
->[!NOTE]
->
->Standard assets (such as images and documents) consist of the following elements.
->
->For information about elements in Content Fragments see [Content Fragments Support in AEM Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
-
-Assets are actually multi-part elements:
+In AEM an assets contains the following elements:
 
 * The properties and metadata of the asset
 * Multiple renditions such as the original rendition (which is the originally uploaded asset), a thumbnail and various other renditions. Additional renditions may be images of different sizes, different video encodings, or extracted pages from PDF or InDesign.
 * Optional comments
 
-Folders have the following components:
+For information about elements in Content Fragments see [Content Fragments Support in AEM Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
 
-**Entities**
+In AEM a folder has the following components:
 
-The children of Assets are its renditions.
-
-**Properties**
-
-**Links**
-
-## Available features {#available-features}
+* Entities: The children of Assets are its renditions.
+* Properties
+* Links
 
 The Assets HTTP API includes the following features:
 
@@ -103,15 +87,15 @@ The Assets HTTP API includes the following features:
 
 >[!NOTE]
 >
->For the ease of readability the following examples omit the full cURL notation. In fact the notation does correlate with [Resty](https://github.com/micha/resty) which is a script wrapper for cURL.
+>For the ease of readability the following examples omit the full cURL notation. In fact the notation does correlate with [Resty](https://github.com/micha/resty) which is a script wrapper for `cURL`.
 
 **Prerequisites**
 
-* Go to `https://<Server>:<Port>/system/console/configMgr`.
+* Go to `https://[aem_server]:[port]/system/console/configMgr`.
 * Navigate to **Adobe Granite CSRF Filter**.
-* Make sure the property **Filter Methods** incudes: POST, PUT, DELETE.
+* Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
 
-### Retrieve a Folder Listing {#retrieve-a-folder-listing}
+## Retrieve a folder listing {#retrieve-a-folder-listing}
 
 Retrieves a Siren representation of an existing folder and of its child entities (subfolders or assets).
 
@@ -135,7 +119,7 @@ The class of the entity returned is assets/folder.
 
 Properties of contained entities are a subset of the full set of properties of each entity. In order to obtain a full representation of the entity, clients should retrieve the contents of the URL pointed to by the link with a `rel` of `self`.
 
-### Create a Folder {#create-a-folder}
+## Create a Folder {#create-a-folder}
 
 Creates a new `sling`: `OrderedFolder` at the given path. If a &#42; is given instead of a node name the servlet will use the parameter name as node name. Accepted as request data is either a Siren representation of the new folder or a set of name-value pairs, encoded as `application/www-form-urlencoded` or `multipart`/ `form`- `data`, useful for creating a folder directly from an HTML form. Additionally, properties of the folder can be specified as URL query parameters.
 
@@ -143,9 +127,7 @@ The operation will fail with a `500` response code if the parent node of the giv
 
 **Parameters**
 
-```
-name - Folder name
-```
+* `name` - Folder name
 
 **Request**
 
@@ -153,7 +135,7 @@ name - Folder name
 POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'
 ```
 
-Or
+or
 
 ```
 POST /api/assets/* -F"name=myfolder" -F"title=My Folder"
@@ -168,16 +150,14 @@ POST /api/assets/* -F"name=myfolder" -F"title=My Folder"
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Create an Asset {#create-an-asset}
+## Create an Asset {#create-an-asset}
 
 Creates a DAM asset at the given path with the given file. If a &#42; is given instead of a node name the servlet will use the parameter name or the file name as node name.
 
 **Parameters**
 
-```
-name - Asset name
-file - File reference
-```
+* `name` - Asset name
+* `file` - File reference
 
 **Request**
 
@@ -200,7 +180,7 @@ POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Update Asset binary {#update-asset-binary}
+## Update Asset binary {#update-asset-binary}
 
 Updates an Assets binary (rendition with name original). This will trigger the default Asset workflow if configured.
 
@@ -219,9 +199,9 @@ PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Update Asset metadata {#update-asset-metadata}
+## Update asset metadata {#update-asset-metadata}
 
-Updates the Asset metadata properties.
+Updates the Asset metadata properties. If you update any property in the `dc:` namespace, the API updates the same property in the `jcr` namespace. The API does not sync the properties under the two namespaces.
 
 **Request**
 
@@ -238,16 +218,14 @@ PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"cl
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Create an Asset Rendition {#create-an-asset-rendition}
+## Create an Asset Rendition {#create-an-asset-rendition}
 
 Creates a new asset rendition for an asset. If request parameter name is not provided the file name is used as rendition name.
 
 **Parameters**
 
-```
-name - Rendition name
-file - File reference
-```
+* `name` - Rendition name
+* `file` - File reference
 
 **Request**
 
@@ -270,7 +248,7 @@ POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"fil
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Update an Asset Rendition {#update-an-asset-rendition}
+## Update an Asset Rendition {#update-an-asset-rendition}
 
 Updates respectively replaces an asset rendition with the new binary data.
 
@@ -289,16 +267,14 @@ PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type:
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Create an Asset Comment {#create-an-asset-comment}
+## Create an Asset Comment {#create-an-asset-comment}
 
 Creates a new asset comment.
 
 **Parameters**
 
-```
-message - Message
-annotationData - Annotation data (JSON)
-```
+* `message` - Message
+* `annotationData` - Annotation data (JSON)
 
 **Request**
 
@@ -315,7 +291,7 @@ POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"ann
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Copy a Folder or Asset {#copy-a-folder-or-asset}
+## Copy a Folder or Asset {#copy-a-folder-or-asset}
 
 Copies a folder or asset at the given path to a new destination.
 
@@ -342,7 +318,7 @@ COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Move a Folder or Asset {#move-a-folder-or-asset}
+## Move a Folder or Asset {#move-a-folder-or-asset}
 
 Moves a folder or asset at the given path to a new destination.
 
@@ -369,7 +345,7 @@ MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-### Delete a Folder, Asset, or Rendition {#delete-a-folder-asset-or-rendition}
+## Delete a Folder, Asset, or Rendition {#delete-a-folder-asset-or-rendition}
 
 Deletes a resource (-tree) at the given path.
 

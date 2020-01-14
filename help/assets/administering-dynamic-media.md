@@ -21,8 +21,8 @@ discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 
 If you are administering dynamic media, the following topics are of interest:
 
-* [Configuring Dynamic Media-Scene7 mode](config-dms7.md) - Use this configuration if you are a new Dynamic Media customer.
-* [Configuring Dynamic Media-Hybrid mode](config-dynamic.md) - Use this configuration if you are an existing Dynamic Media customer upgrading AEM.
+* [Configuring Dynamic Media-Scene7 mode](config-dms7.md) &mdash; Use this configuration if you are a new Dynamic Media customer.
+* [Configuring Dynamic Media-Hybrid mode](config-dynamic.md) &mdash; Use this configuration if you are an existing Dynamic Media customer upgrading AEM.
 * [Managing Image Presets](managing-image-presets.md)
 * [Managing Viewer Presets](managing-viewer-presets.md)
 * [Troubleshooting Dynamic Media - Scene7 mode](troubleshoot-dms7.md)

@@ -11,18 +11,18 @@ topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 ---
 
-# Common Repository Restructuring in AEM 6.5{#common-repository-restructuring-in-aem}
+# Common Repository Restructuring in AEM 6.5 {#common-repository-restructuring-in-aem}
 
-As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes potentially impacting all solutions. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a 6.5 upgrade.
+As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes potentially impacting all solutions. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a future upgrade.
 
-**With 6.4 Upgrade**
+**With 6.5 Upgrade**
 
 * [Workflow Instances](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-instances)
 * [Workflow Models](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-models)
 * [Workflow Launchers](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-launchers)
 * [Workflow Scripts](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-scripts)
 
-**Prior to 6.5 Upgrade**
+**Prior to Future Upgrade**
 
 * [ContextHub Configurations](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#contexthub-configurations)
 * [Classic Cloud Services Designs](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-cloud-services-designs)
@@ -44,7 +44,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 * [Vendor Translation Connector Cloud Services](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#vendor-translation-connector-cloud-services)
 * [Workflow Notification Email Templates](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
-## With 6.4 Upgrade {#with-upgrade}
+## With 6.5 Upgrade {#with-upgrade}
 
 ### Workflow Models {#workflow-models}
 
@@ -62,7 +62,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
    <td><strong>Restructuring guidance</strong></td>
    <td><p>Any new or modified Workflow Models must be migrated to /conf/global/workflow/models.</p>
     <ol>
-     <li>Deploy the modified Workflow Models into a local AEM 6.5 development instance, such that they exist in the Previous location.</li>
+     <li>Deploy the modified Workflow Models into a local AEM 6.4 development instance, such that they exist in the Previous location.</li>
      <li>Edit the Workflow Model using AEM's Workflow Model Editor at AEM &gt; Tools &gt; Workflow &gt; Models.</li>
      <li>When migrating modified AEM-provided Workflow Models
       <ol>
@@ -185,7 +185,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
  </tbody>
 </table>
 
-## Prior to 6.5 Upgrade {#prior-to-upgrade}
+## Prior to Future Upgrade {#prior-to-upgrade}
 
 ### ContextHub Configurations {#contexthub-configurations}
 

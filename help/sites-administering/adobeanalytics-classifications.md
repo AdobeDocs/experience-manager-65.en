@@ -24,7 +24,7 @@ To configure this:
 
 1. Click **Create** to configure the settings.
 
-   ![chlimage_1](assets/chlimage_1.png)
+   ![chlimage_1](assets/chlimage_1a.png)
 
    Properties include the following:
 
@@ -65,7 +65,7 @@ To change the page size:
 
 An Exporter may use a Transformer to transform the export data to a specific format. For Adobe Classifications, a subinterface `SAINTTransformer<String[]>` implementing the Transformer interface has been provided. This interface is used to restrict the data type to `String[]` which is used by the SAINT API and to have a marker interface to find such services for selection.
 
-In the default implementation SAINTDefaultTransformer, the child resources of the exporter source are treated as records with property names as keys and property values as values. The **Key** column is added automatically as first column - its value will be the node name. Namespaced properties (containing :) are disregarded.
+In the default implementation SAINTDefaultTransformer, the child resources of the exporter source are treated as records with property names as keys and property values as values. The **Key** column is added automatically as first column - its value will be the node name. Namespaced properties (containing `:`) are disregarded.
 
 *Node structure:*
 

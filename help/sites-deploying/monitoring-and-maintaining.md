@@ -128,7 +128,7 @@ To purge versions of a web site, proceed as follows:
 1. Set the maximun version age in days (for each node) that you want to keep. Leave empty to not use this setting.
 
 1. Click **Dry Run** to preview what the purge process would do.
-1. Click **Purge **to launch the process.
+1. Click **Purge** to launch the process.
 
 >[!CAUTION]
 >
@@ -154,7 +154,7 @@ Moreover the console provides useful information about the versions:
 
 In the next example:
 
-* The **Shirts **versions are purged because their version age is greater than 2 days.
+* The **Shirts** versions are purged because their version age is greater than 2 days.
 * The **Tonga Fashions!** versions are purged because their number of versions is greater than 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
@@ -167,9 +167,9 @@ Auditing records and log files relating to Adobe Experience Manager (AEM) can be
 
 AEM WCM records detailed logs. After you unpack and start Quickstart, you can find logs in:
 
-* `<*cq-installation-dir*>/crx-quickstart/logs/` ``
+* `<cq-installation-dir>/crx-quickstart/logs/`
 
-* `<*cq-installation-dir*>/crx-quickstart/repository/`
+* `<cq-installation-dir>/crx-quickstart/repository/`
 
 #### Log file rotation {#log-file-rotation}
 
@@ -187,7 +187,7 @@ Log file rotation refers to the process that limits the growth of file by creati
 
 Various log files are held on the file server where you installed AEM:
 
-* `<*cq-installation-dir*>/crx-quickstart/logs`
+* `<cq-installation-dir>/crx-quickstart/logs`
 
     * `access.log`
       All access requests to AEM WCM and the repository are registered here.
@@ -199,13 +199,13 @@ Various log files are held on the file server where you installed AEM:
       Error messages (of varying levels of severity) are registered here.
 
     * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)
-      This log is only used if dynamic media is enabled. It provides statistics and analytical information used for analyzing behavior of the internal ImageServer process.
+      This log is only used if Dynamic Media is enabled. It provides statistics and analytical information used for analyzing behavior of the internal ImageServer process.
 
     * `request.log`
       Each access request is registered here together with the response.
 
     * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)
-      This log is only used if dynamic media is enabled. The s7access log records each request made to Dynamic Media through `/is/image` and `/is/content`.
+      This log is only used if Dynamic Media is enabled. The s7access log records each request made to Dynamic Media through `/is/image` and `/is/content`.
 
     * `stderr.log`
       Holds error messages, again of varying levels of severity, generated during startup. By default the log level is set to `Warning` ( `WARN`)

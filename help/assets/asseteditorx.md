@@ -1,13 +1,9 @@
 ---
 title: Extending Asset Editor
-seo-title: Extending Asset Editor
 description: Learn how to extend the capabilities of Asset Editor using custom components.
-seo-description: Learn how to extend the capabilities of Asset Editor using custom components.
 uuid: b2e6701d-9fbf-4b3f-a175-67aab05340d3
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: extending-assets
-content-type: reference
 discoiquuid: 90dc9025-ad40-47ea-9e17-af8c93ef650c
 ---
 
@@ -21,7 +17,7 @@ In addition to using pre-existing editor components, Adobe Experience Manager (A
 
 ## Creating an Asset Editor Template {#creating-an-asset-editor-template}
 
-The following sample pages are included in geometrixx:
+The following sample pages are included in Geometrixx:
 
 * Geometrixx Sample Page: `/content/geometrixx/en/press/asseteditor.html`
 * Sample Template: `/apps/geometrixx/templates/asseteditor`
@@ -45,7 +41,6 @@ Some of the AEM Assets components require JS functions defined in `component.js`
 
 ```xml
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
-
 ```
 
 The sample loads this javascript source in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
@@ -113,14 +108,12 @@ The sample handles in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.
     else {
         title = currentPage.getTitle() == null ? currentPage.getName() : currentPage.getTitle();
     }
-
 ```
 
 In the HTML part, use the preceding title set (either asset or page title):
 
 ```xml
 <title><%= title %></title>
-
 ```
 
 ## Creating a simple form field component {#creating-a-simple-form-field-component}
@@ -138,7 +131,6 @@ This example describes how to build a component that shows and displays the meta
        sling:resourceSuperType="foundation/components/parbase"
        allowedParents="[*/parsys]"
        componentGroup="Asset Editor"/>
-
    ```
 
 1. Add `samplemeta.jsp` with the following snippet:
@@ -146,7 +138,7 @@ This example describes how to build a component that shows and displays the meta
    ```xml
    <%--
 
-     Sample metadata field comopnent
+     Sample metadata field component
 
    --%><%@ page import="com.day.cq.dam.api.Asset,
                     java.security.AccessControlException" %><%
@@ -197,7 +189,6 @@ This example describes how to build a component that shows and displays the meta
            }%>
        </div>
    </div>
-
    ```
 
 1. To make the component available, you need to be able to edit it. To make a component editable, in CRXDE Lite, add a node `cq:editConfig` of primary type `cq:EditConfig`. So that you can remove paragraphs, add a multi-value property `cq:actions` with a single value of `DELETE`.

@@ -12,9 +12,9 @@ discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
 
 # Dynamic Media repository restructuring in AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the Dynamic Media Solution. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a 6.5 upgrade.
+As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the Dynamic Media Solution. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a future upgrade.
 
-**Prior to 6.5 Upgrade**
+**Prior to Future Upgrade**
 
 * [Custom Adaptive Video Encoding Configurations](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#custom-adaptive-video-encoding-configurations)
 * [Dynamic Media (DMS7) Cloud Configuration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
@@ -22,7 +22,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 * [Dynamic Media - YouTube Cloud Service Configuration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
 * [Misc](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#misc)
 
-## Prior to 6.5 Upgrade {#prior-to-upgrade}
+## Prior to Future Upgrade {#prior-to-upgrade}
 
 ### Custom Adaptive Video encoding configurations  {#custom-adaptive-video-encoding-configurations}
 

@@ -165,7 +165,7 @@ If you are using the UNIX-based operating system, install the following packages
     * /usr/lib/libcrypto.so
     * /usr/lib/libssl.so
 
-* **(PDF Generator only) **PDF Generator service supports WebKit and PhantomJS routes to convert HTML files to PDF documents. To enable conversion for PhantomJS route, install the below listed 64-bit libraries. Generally, these libraries are already installed. If any library is missing, install it manually:
+* **(PDF Generator only)** PDF Generator service supports WebKit and PhantomJS routes to convert HTML files to PDF documents. To enable conversion for PhantomJS route, install the below listed 64-bit libraries. Generally, these libraries are already installed. If any library is missing, install it manually:
 
     * linux-gate.so.1
     * libz.so.1
@@ -322,7 +322,7 @@ You can enable a non-administrator user to use the PDF Generator service. Normal
     1. Microsoft recommends backing up the registry before you modify it. For detailed steps, see [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/help/322756).
     1. Open Microsoft Windows Registry editor. To open registry editor, go to Start &gt; Run, type regedit, and click OK.
     1. Navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\. Ensure value of EnableLUA is set to 0 (zero).
-    1. Ensure value of **EnableLUA **is set to 0 (zero). If the value is not 0, change the value to 0. Close the registry editor.
+    1. Ensure value of **EnableLUA** is set to 0 (zero). If the value is not 0, change the value to 0. Close the registry editor.
 
 1. Restart your computer.
 
@@ -335,6 +335,11 @@ To avoid receiving the error, you can disable the Windows error reporting. For m
 ### Configure HTML to PDF conversion {#configure-html-to-pdf-conversion}
 
 The PDF Generator service provides WebKit, WebCapture, and PhantomJS routes or methods to convert HTML files to PDF documents. On Windows, to enable conversion for WebKit and Acrobat WebCapture routes, copy the Unicode font to %windir%\fonts directory.
+
+>[!NOTE]
+>
+> Whenever you install new fonts to the fonts folder, restart the AEM Forms instance.
+>
 
 ### Extra configurations for HTML to PDF conversion  {#extra-configurations-for-html-to-pdf-conversion}
 
@@ -359,6 +364,7 @@ Copy the Unicode font to any of the following directories as appropriate for you
 >* Ensure that the directories /usr/lib/X11/fonts and /usr/share/fonts exist. If the directories do not exist, then use the ln command to create* a symbolic link from /usr/share/X11/fonts to /usr/lib/X11/fonts and another symbolic link from /usr/share/fonts to /usr/share/X11/fonts. *Also ensure that the courier fonts are available at /usr/lib/X11/fonts.
 >* Ensure that all the fonts (Unicode and non-unicode) are available in the /usr/share/fonts or /usr/share/X11/fonts directory.  
 >* When you run PDF Generator service as a non-root user, provide the non-root user read and write access to all the font directories.
+>* Whenever you install new fonts to the fonts folder, restart the AEM Forms instance.
 >
 
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
@@ -406,6 +412,8 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
    >[!NOTE]
    >
    >Your right to use fonts provided by parties other than Adobe is governed by the license agreements provided to you by such parties with those fonts, and is not covered under your license to use Adobe software. Adobe recommends that you review and ensure that you are in compliance with all applicable non-Adobe license agreements before using non-Adobe fonts with Adobe software, particularly with respect to use of fonts in a server environment.
+   > When you install new fonts to the fonts folder, restart the AEM Forms instance.
+   >
 
 ### Configure a local user account to run the PDF Generator service  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 

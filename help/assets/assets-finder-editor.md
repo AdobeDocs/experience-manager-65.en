@@ -1,19 +1,15 @@
 ---
 title: Creating and Configuring Asset Editor pages
-seo-title: Creating and Configuring Asset Share and Asset Editor pages
 description: Learn how to create custom Asset Editor pages and edit multiple assets simultaneously.
-seo-description: Learn how to create custom Asset Editor pages and edit multiple assets simultaneously.
 uuid: 3bc650de-2392-4df9-a13c-04ce7a537d25
-contentOwner: Chiradeep Majumdar
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: 264b1473-30f3-4cea-a9b0-89184063e15d
 docset: aem65
 
 ---
 
-# Creating and Configuring Asset Editor pages{#creating-and-configuring-asset-editor-pages}
+# Creating and Configuring Asset Editor pages {#creating-and-configuring-asset-editor-pages}
 
 This document describes the following:
 
@@ -58,7 +54,7 @@ To create an new Asset Share page in the **Websites** console:
 
 1. In the **Websites** tab, navigate to the place where you want to create an asset share page and click **New**.
 
-1. Select the** Asset Share** page and click **Create**. The new page is created and the asset share page is listed in the **Websites** tab.
+1. Select the **Asset Share** page and click **Create**. The new page is created and the asset share page is listed in the **Websites** tab.
 
 ![dam8](assets/dam8.png)
 
@@ -95,42 +91,18 @@ The following actions are available:
 
 ![assetshare2](assets/assetshare2.bmp)
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Action</strong></td>
-   <td><strong>Description </strong></td>
-  </tr>
-  <tr>
-   <td><strong>Delete Action</strong></td>
-   <td>Users can delete the selected assets.</td>
-  </tr>
-  <tr>
-   <td><strong>Download Action</strong></td>
-   <td>Lets users download selected assets to their computers.</td>
-  </tr>
-  <tr>
-   <td><strong>Lightbox Action</strong></td>
-   <td>Saves assets to a "lightbox" where you can perform other actions on them. This comes in handy when working with assets across multiple pages. The lightbox can also be used as a shopping cart for assets.<br /> </td>
-  </tr>
-  <tr>
-   <td><strong>Move Action</strong></td>
-   <td>Users can move the asset to another location</td>
-  </tr>
-  <tr>
-   <td><strong>Tags Action</strong></td>
-   <td>Lets users add tags to selected assets</td>
-  </tr>
-  <tr>
-   <td><strong>View Asset Action </strong></td>
-   <td>Opens the asset in the Asset editor for user manipulation.</td>
-  </tr>
- </tbody>
-</table>
+ | Action | Description |
+ |---|---|
+ | [!UICONTROL Delete Action] | Users can delete the selected assets. |
+ | [!UICONTROL Download Action] | Lets users download selected assets to their computers. |
+ | [!UICONTROL Lightbox Action] | Saves assets to a "lightbox"   where you can perform other actions on them. This comes in handy when working   with assets across multiple pages. The lightbox can also be used as a   shopping cart for assets. |
+ | [!UICONTROL Move Action] | Users can move the asset to another   location |
+ | [!UICONTROL Tags Action] | Lets users add tags to selected assets |
+ | [!UICONTROL View Asset Action] | Opens the asset in the Asset editor for   user manipulation. |
 
 1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
 
-![chlimage_1-159](assets/chlimage_1-159.png)
+![chlimage_1-159](assets/chlimage_1-387.png)
 
 #### Determining how Search Results are Presented {#determining-how-search-results-are-presented}
 
@@ -140,24 +112,24 @@ To change how search results are viewed:
 
 1. In the Asset Share page that you want to customize, click Search.
 
-![chlimage_1](assets/chlimage_1.bmp)
+![chlimage_1](assets/assetshare3.png)
 
 1. Drag the appropriate lens to the top center of the page. In the Press Center, the lenses are already available. Users press the appropriate lens icon to display search results as desired.
 
 The following lenses are available:
 
-| **Lens** |**Description** |
+| Lens | Description |
 |---|---|
-| **List Lens** |Presents the assets in a list fashion with details. |
-| **Mosaic Lens** |Presents assets in a mosaic fashion.  |
+| **[!UICONTROL List Lens]** |Presents the assets in a list fashion with details. |
+| **[!UICONTROL Mosaic Lens]** |Presents assets in a mosaic fashion. |
 
 #### Mosaic Lens {#mosaic-lens}
 
-![chlimage_1-160](assets/chlimage_1-160.png)
+![chlimage_1-160](assets/chlimage_1-388.png)
 
 #### List Lens {#list-lens}
 
-![chlimage_1-161](assets/chlimage_1-161.png)
+![chlimage_1-161](assets/chlimage_1-389.png)
 
 #### Customizing the Query Builder {#customizing-the-query-builder}
 
@@ -192,7 +164,7 @@ To add predicates:
 
 1. In the Asset Share page that you want to customize, click **Search**.
 
-![assetshare3](assets/assetshare3.bmp)
+![assetshare3](assets/assetshare3.png)
 
 1. Drag the appropriate predicates to the Asset Share page underneath the query builder. Doing so creates the appropriate fields.
 
@@ -200,14 +172,14 @@ To add predicates:
 
 The following predicates are available:
 
-| **Predicate** |**Description** |
-|---|---|
-| **Date Predicate** |Lets users search for assets that were modified before and after certain dates. |
-| **Options Predicate** |The site owner can specify a property to search for (as in the property predicate, for example cq:tags) and a content tree to populate the options from (for example the tag tree). Doing so generates a list of options where the users can select the values (tags) that the selected property (tag property) should have. This predicate lets you build list controls like the list of tags, file types, image orientations, and so on. It is great for a fixed set of options. |
-| **Path Predicate** |Lets users define the path and subfolders, if desired. |
-| **Property Predicate** |The site owner specifies a property to search for, e.g. tiff:ImageLength and the user can then enter a value, e.g. 800. This returns all images that are 800 pixels high. Useful predicate if your property can have arbitrary values.  |
+| Predicate | Description |
+ |---|---|
+ | **[!UICONTROL Date Predicate]** |Lets users search for assets that were modified before and after certain dates. |
+ | **[!UICONTROL Options Predicate]** |The site owner can specify a property to search for (as in the property predicate, for example cq:tags) and a content tree to populate the options from (for example the tag tree). Doing so generates a list of options where the users can select the values (tags) that the selected property (tag property) should have. This predicate lets you build list controls like the list of tags, file types, image orientations, and so on. It is great for a fixed set of options. |
+ | **[!UICONTROL Path Predicate]** |Lets users define the path and subfolders, if desired. |
+ | **[!UICONTROL Property Predicate]** |The site owner specifies a property to search for, e.g. tiff:ImageLength and the user can then enter a value, e.g. 800. This returns all images that are 800 pixels high. Useful predicate if your property can have arbitrary values. |
 
-For more information, see the [predicate javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
+For more information, see the [predicate Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
 
 1. To configure the predicate further, double-click it. For example, when you open the Path Predicate, you need to assign the root path.
 
@@ -274,19 +246,19 @@ To add asset editor components:
 >
 >When designing the asset editor page, you create components that are either read-only or editable. Users know a field can be edited if an image of a pencil appears in that component. By default, most components are set up as read-only.
 
-| **Component** |**Description** |
+| Component | Description |
 |---|---|
-| **Metadata Form and Text Field** |Lets you add additional metadata to an asset and perform an action, such as submitting, on that asset. |
-| **Sub Assets** |Lets you customize sub-assets. |
-| **Tags** |Lets users select and add tags to an asset. |
-| **Thumbnail** |Shows a thumbnail of the asset, its filename, and lets you add an alternate text. You can add asset editor actions here as well. |
-| **Title** |Displays the asset title, which can be customized. |
+| **[!UICONTROL Metadata Form] and [!UICONTROL Metadata Text Field]** | Lets you add additional metadata to an asset and perform an action, such as submitting, on that asset. |
+| **[!UICONTROL Sub Assets]** | Lets you customize sub-assets. |
+| **Tags** | Lets users select and add tags to an asset. |
+| **[!UICONTROL Thumbnail]** | Shows a thumbnail of the asset, its filename, and lets you add an alternate text. You can add asset editor actions here as well. |
+| **[!UICONTROL Title]** | Displays the asset title, which can be customized. |
 
 ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
 
 #### Metadata Form and Text Field - Configuring the View Metadata Component {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-The Metadata Form is a form that includes a start and end action. In between, you enter **Text** fields. See [Forms](/help/sites-authoring/default-components.md#form) for more information on working with forms.
+The Metadata Form is a form that includes a start and end action. In between, you enter **Text** fields. See [Forms](/help/sites-authoring/default-components-foundation.md#form-component) for more information on working with forms.
 
 1. Create a start action by clicking **Edit** in the Start area of the form. You can enter a Box title, if desired. By default, the Box title is **Metadata**. Select the Client Validation check box if you want the java-script client code for validation generated.
 
@@ -298,7 +270,7 @@ The Metadata Form is a form that includes a start and end action. In between, yo
 
 1. In between the **Form Start** and the **Form End**, drag Metadata Text Fields to the form. Users populate metadata into these text fields, which they can submit or complete another action on.
 
-1. Double-click the field name, for example, **Title** to open the metadata field and make changes. In the **General** tab of the** Edit Component** window, you define the namespace and the field label as well as type, for example, **dc:title**.
+1. Double-click the field name, for example, **Title** to open the metadata field and make changes. In the **General** tab of the **Edit Component** window, you define the namespace and the field label as well as type, for example, `dc:title`.
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
@@ -314,7 +286,7 @@ See [Customizing and Extending AEM Assets](/help/assets/extending-assets.md) for
 
 The following is an example of a Metadata form with various fields:
 
-![chlimage_1-162](assets/chlimage_1-162.png)
+![chlimage_1-162](assets/chlimage_1-390.png)
 
 On the Asset Editor page, users can then enter values into the metadata fields (if they are editable) and perform the end action (for example, submitting the changes).
 
@@ -342,7 +314,7 @@ The Tags component is a component where users can assign existing tags to an ass
 
 ![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
-Double-click the Tags component to open the tags dialog where you can change the title from Tags, if desired, and where you can select the allocated namespaces. To make this field editable, clear the **Hide Edit** **button** check box. By default, tags are editable.
+Double-click the Tags component to open the tags dialog where you can change the title from Tags, if desired, and where you can select the allocated namespaces. To make this field editable, clear the **[!UICONTROL Hide Edit]** check box. By default, tags are editable.
 
 ![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 
@@ -372,7 +344,7 @@ The following is an example of a populated Thumbnail component:
 
 The Title component displays the title of the asset and a description.
 
-![chlimage_1-163](assets/chlimage_1-163.png)
+![chlimage_1-163](assets/chlimage_1-391.png)
 
 By default, it is in read-only mode so users cannot edit it. To make it editable, double-click the component and clear the **Hide edit button** checkbox. In addition, enter a title for multiple assets.
 
@@ -386,7 +358,7 @@ When users edit the Title by clicking the Pencil icon, they can change the **Tit
 
 The following is an example of a populated Title component:
 
-![chlimage_1-164](assets/chlimage_1-164.png)
+![chlimage_1-164](assets/chlimage_1-392.png)
 
 #### Adding Asset Editor Actions {#adding-asset-editor-actions}
 
@@ -400,18 +372,18 @@ To add actions to the Asset Editor page:
 
 The following actions are available:
 
-| **Action** |**Description** |
-|---|---|
-| **Download** |Lets users download selected assets to their computers. |
-| **Editors** |Lets users edit an image (interactive editing)  |
-| **Lightbox** |Saves assets to a "lightbox" where you can perform other actions on them. This comes in handy when working with assets across multiple pages. |
-| **Locking** |Lets users lock an asset. This functionality is not enabled by default and needs to be enabled in the list of components. |
-| **References** |Click this to show on what pages the asset is being used.  |
-| **Versioning** |Lets you create and restore versions of an asset.  |
+ | Action | Description |
+ |---|---|
+ | [!UICONTROL Download] | Lets users download selected   assets to their computers. |
+ | [!UICONTROL Editors] | Lets users edit an image   (interactive editing) |
+ | [!UICONTROL Lightbox] | Saves assets to a   "lightbox" where you can perform other actions on them. This comes   in handy when working with assets across multiple pages. |
+ | [!UICONTROL Locking] | Lets users lock an asset. This   functionality is not enabled by default and needs to be enabled in the list   of components. |
+ | [!UICONTROL References] | Click this to show on what pages   the asset is being used. |
+ | [!UICONTROL Versioning] | Lets you create and restore   versions of an asset. |
 
 1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
 
-![chlimage_1-165](assets/chlimage_1-165.png)
+![chlimage_1-165](assets/chlimage_1-393.png)
 
 ## Multi-Editing Assets with the Asset Editor page {#multi-editing-assets-with-the-asset-editor-page}
 

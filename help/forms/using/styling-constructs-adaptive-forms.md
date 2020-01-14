@@ -60,7 +60,7 @@ The components discussed in this article have their predefined CSS classes. You 
 
 ## Container styling {#container-styling}
 
-A container is the top- `` level component. Other panels and fields lie under the container component.
+A container is the top-level component. Other panels and fields lie under the container component.
 
 <table>
  <tbody>
@@ -134,7 +134,7 @@ Fields include labels, widgets, Help description (both Long and Short descriptio
 
 ## Label styling {#label-styling}
 
-The HTML element **label** used for the field includes the classes **left** or **top **depending on whether the label is at the top or left.
+The HTML element **label** used for the field includes the classes **left** or **top** depending on whether the label is at the top or left.
 
 <table>
  <tbody>
@@ -174,7 +174,7 @@ The HTML element **label** used for the field includes the classes **left** or *
  </tbody>
 </table>
 
-The CSS rules for the label are applied using the **guideFieldLabel **label. If you are an author, override this rule to make your custom changes visible.
+The CSS rules for the label are applied using the **guideFieldLabel** label. If you are an author, override this rule to make your custom changes visible.
 
 ## Widgets styling {#widgets-styling}
 
@@ -715,7 +715,7 @@ The guideNavIcon class provides a default icon to tab navigators (both left and 
 
 >[!NOTE]
 >
->You can change the icon for a particular navigator by providing a CSS class on the panel in authoring, form example &lt;CLASS_NAME&gt;. You add a **&lt;CLASS_NAME&gt;_nav **for the icon of the navigator.
+>You can change the icon for a particular navigator by providing a CSS class on the panel in authoring, form example &lt;CLASS_NAME&gt;. You add a **&lt;CLASS_NAME&gt;_nav** for the icon of the navigator.
 
 <table>
  <tbody>

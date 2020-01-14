@@ -35,7 +35,7 @@ Perform the following steps to configure server-side logs:
    >
    >To generate logs in the HTML5 forms log directory, add ../logs/ before the filename.
 
-1. Change **Logger** to **HTMLFormsPerfLogger. **Click **Save**.
+1. Change **Logger** to **HTMLFormsPerfLogger**. Click **Save**.
 
 ## Configuring client logging {#configuring-client-logging}
 
@@ -46,7 +46,7 @@ You can use the following methods to enable client-side logging in HTML5 forms:
 
 ### Enabling logging using request parameter {#enabling-logging-using-request-parameter}
 
-Using this method, you can generate logs for a particular request. The name of the request parameter is `log`**. **The log URL is as follows:
+Using this method, you can generate logs for a particular request. The name of the request parameter is `log. The log URL is as follows:
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
@@ -189,7 +189,7 @@ By default, all the information is added to the error.log file at the /crx-repos
 
 To change the location and name of the log file:
 
-1. Log in to Configuration Manager as an administrator. The default URL of Configuration Manager is `https://[*Server*]:[*Port*]/system/console/configMgr`. 
+1. Log in to Configuration Manager as an administrator. The default URL of Configuration Manager is `https://[Server]:[Port]/system/console/configMgr`. 
 1. Click **Apache Sling Logging Logger Configuration**. A dialog box appears.
 
    ![logconfig-1](assets/logconfig-1.png)

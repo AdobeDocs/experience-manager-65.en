@@ -210,7 +210,7 @@ JBoss Application Server uses 8080 as the default HTTP port. JBoss also has pre-
 
    Cluster installtions: [JBoss root]/domain/configuration/domain.xml
 
-1. Chnage the value of **port** attribute in the** &lt;socket-binding&gt;** tag to a custom port number. For example, the following uses port 8090:
+1. Chnage the value of **port** attribute in the **&lt;socket-binding&gt;** tag to a custom port number. For example, the following uses port 8090:
 
    &lt;socket-binding name="http" port="8090"/&gt;
 

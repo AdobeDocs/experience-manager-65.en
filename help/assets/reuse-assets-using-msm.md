@@ -1,18 +1,16 @@
 ---
 title: Reuse assets using MSM for Assets
-seo-title: Reuse assets using MSM for Assets
 description: Use assets across multiple pages/folders that are derived from and linked to parent assets. The assets stay in sync with a master copy and with a few clicks, receive the updates from parent assets.
-seo-description: Use assets across multiple pages/folders that are derived from and linked to parent assets. The assets stay in sync with a master copy and with a few clicks, receive the updates from parent assets.
 uuid: 5319bfd6-911b-4351-88d6-eeafc5ef5541
-contentOwner: asgupta
-topic-tags: managing-assets
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 358b490d-c514-42ba-b9f0-8e29d5e6046e
 docset: aem65
+mini-toc-levels: 1
 
 ---
 
-# Reuse assets using MSM for Assets{#reuse-assets-using-msm-for-assets}
+# Reuse assets using MSM for Assets {#reuse-assets-using-msm-for-assets}
 
 Multi Site Manager (MSM) functionality in Adobe Experience Manager (AEM) enables users to reuse content that is authored once and reused across multiple web-locations. The same is available for digital assets as MSM for Assets functionality. Using MSM for Assets, you can:
 
@@ -62,18 +60,16 @@ MSM maintains a live relationship between the source asset and its live copies s
 To create live copy from one or more source assets or folders, follow either of the following:
 
 * Method 1: Select the source assets and click **[!UICONTROL Create > Live Copy]** from toolbar at the top.
-
 * Method 2: In AEM user interface, click **[!UICONTROL Create > Live Copy]** from upper-right corner of the interface.
 
-You can create live copies of an asset or a folder one at a time. You can create live copies that are derived from an asset or a folder that is a live copy itself.  Content Fragments (CFs) are not supported for the use case. When attempting to create their live copies, CFs are copied over as is without any relationship. The copied CFs are a snapshot in time and does not update when original CFs are updated.
+You can create live copies of an asset or a folder one at a time. You can create live copies that are derived from an asset or a folder that is a live copy itself. Content Fragments (CFs) are not supported for the use case. When attempting to create their live copies, CFs are copied over as is without any relationship. The copied CFs are a snapshot in time and does not update when original CFs are updated.
 
 To create live copies using the first method, follow these steps:
 
 1. Select source assets or folders. From the toolbar, click **[!UICONTROL Create > Live Copy]**.
 
    ![Create live copy from AEM interface](assets/create_lc1.png)
-
-   Create live copy from AEM interface
+   *Figure: Create live copy from AEM interface*
 
 1. Select a destination folder. Click **[!UICONTROL Next]**.
 1. Provide title and name. Assets do not have children. When creating live copy of folders, you can choose to include or exclude children.
@@ -84,8 +80,7 @@ To create live copies using the second method, follow these steps:
 1. In AEM interface, from upper-right corner, click **[!UICONTROL Create > Live Copy]**.
 
    ![Create live copy from AEM interface](assets/create_lc2.png)
-
-   Create live copy from AEM interface
+   *Figure: Create live copy from AEM interface*
 
 1. Select source asset or folder. Click **[!UICONTROL Next]**.
 1. Select destination folder. Click **[!UICONTROL Next]**.
@@ -105,7 +100,9 @@ The following two methods work for assets and folders:
 * Select live copy asset and find the information in its Properties page.
 * Select source folder and find the detailed information of each live copy from the Live Copy Console.
 
-**Tip**: To check the status of a few separate live copies, use the first method that is see the Properties page. To check statuses of many live copies, use the second method, that is, see the **[!UICONTROL Relationship Status]** page.
+>[!TIP]
+>
+>To check the status of a few separate live copies, use the first method that is see the Properties page. To check statuses of many live copies, use the second method, that is, see the **[!UICONTROL Relationship Status]** page.
 
 ### Information and status of a live copy {#statuslcasset}
 
@@ -115,8 +112,7 @@ To check the information and statuses of a live copy asset or a folder, follow t
 1. Click **[!UICONTROL Live Copy]**. You can check the path of the source, suspension status, synchronization status, last rollout date, and the user who did the last rollout.
 
    ![Live copy information and statuses are displayed in a console in Properties](assets/lcfolder_info_properties.png)
-
-   Live copy information and statuses
+   *Figure: Live copy information and statuses*
 
 1. You can enable or disable if child assets borrow the live copy configuration.
 
@@ -129,9 +125,8 @@ AEM provides a console to check the statues of all the live copies of a source f
 1. Select a source folder. Click **[!UICONTROL Properties]** from the toolbar. Alternatively, use the keyboard shortcut `p`.
 1. Click **[!UICONTROL Live Copy Source]**. To open the console, click **[!UICONTROL Live Copy Overview]**. This dashboard provides a top-level status of all the child assets.
 
-   ![View statuses of live copies in Live Copy Console of source](assets/livecopy_statuses.png)
-
-   View statuses of live copies in Live Copy Console of source
+   ![View statuses of live copies in Live Copy Console of source](assets/livecopy-statuses.png)
+   *Figure: View statuses of live copies in Live Copy Console of source*
 
 1. To view the detailed information about each asset in the live copy folder, select an asset and click **[!UICONTROL Relationship Status]** from the toolbar.
 
@@ -139,7 +134,9 @@ AEM provides a console to check the statues of all the live copies of a source f
 
    Detailed information and status of a live copy child asset in a folder
 
-**Tip**: You can quickly see the statuses of live copies of other folders without having to browse too much. Just change the folder in the pop-up list in the upper middle part of the **[!UICONTROL Live Copy Overview]** interface.
+>[!TIP]
+>
+>You can quickly see the statuses of live copies of other folders without having to browse too much. Just change the folder in the pop-up list in the upper middle part of the **[!UICONTROL Live Copy Overview]** interface.
 
 ### Quick actions from References rail for source {#refrailsource}
 
@@ -151,15 +148,15 @@ For a source asset or folder, you can see the following information and take the
 * Suspend relationship or change rollout configuration for a specific live copy.
 * Access the live copy overview console.
 
-Select the source asset or folder, open the left rail, and click **[!UICONTROL References]**. Alternatively, select an asset or folder and use the keyboard shortcut `Alt + 4`.  ![Actions and information available in the References rail for the selected source](assets/referencerail_source.png)
+Select the source asset or folder, open the left rail, and click **[!UICONTROL References]**. Alternatively, select an asset or folder and use the keyboard shortcut `Alt + 4`.
 
-Actions and information available in the References rail for the selected source
+![Actions and information available in the References rail for the selected source](assets/referencerail_source.png)
+*Figure: Actions and information available in the References rail for the selected source*
 
 For a specific live copy, click **[!UICONTROL Edit Live Copy]** to suspend relationship or change rollout configuration.
 
 ![For a specific live copy the option to suspend relationship or change rollout configuration is accessible from References rail when source asset is selected](assets/referencerail_editlc_options.png)
-
-Suspend relationship or change rollout configuration of a specific live copy
+*Figure: Suspend relationship or change rollout configuration of a specific live copy*
 
 ### Quick actions from References rail for live copy {#refraillc}
 
@@ -169,9 +166,10 @@ For a live copy asset or folder, you can see the following information and take 
 * Open or reveal a specific live copy in AEM user interface.
 * Roll out the updates.
 
-Select a live copy asset or folder, open the left rail, and click **[!UICONTROL References]**. Alternatively, select an asset or folder and use the keyboard shortcut `Alt + 4`.  ![Actions available in the References rail for the selected live copy](assets/referencerail_livecopy.png)
+Select a live copy asset or folder, open the left rail, and click **[!UICONTROL References]**. Alternatively, select an asset or folder and use the keyboard shortcut `Alt + 4`.
 
-Actions available in the References rail for the selected live copy
+![Actions available in the References rail for the selected live copy](assets/referencerail_livecopy.png)
+*Figure: Actions available in the References rail for the selected live copy*
 
 ## Propagate modifications from source to live copies {#rolloutsync}
 
@@ -183,14 +181,10 @@ You can initiate a rollout action from the source asset and update all or a few 
 
 1. Select a live copy asset or a folder. Click **[!UICONTROL Properties]** from the toolbar. Alternatively, use the keyboard shortcut `p`.
 1. Click **[!UICONTROL Live Copy Source]**. Click **[!UICONTROL Rollout]** from the toolbar at the top.
-
-1. Select the live copies you want to update. Click **[!UICONTROL Rollout]**.
-
-   To roll out the updates made to the child assets, select **[!UICONTROL Rollout Source and all Children]**.
+1. Select the live copies you want to update. Click **[!UICONTROL Rollout]**. To roll out the updates made to the child assets, select **[!UICONTROL Rollout Source and all Children]**.
 
    ![Roll out the modifications of source to a few or all live copies](assets/livecopy_rollout_page.png)
-
-   Roll out the modifications of source to a few or all live copies
+   *Figure: Roll out the modifications of source to a few or all live copies*
 
 >[!NOTE]
 >
@@ -199,37 +193,17 @@ You can initiate a rollout action from the source asset and update all or a few 
 Alternatively, you can initiate a rollout action from the References rail after selecting a specific live copy. For more information, see [Quick actions from References rail for live copy](#refraillc). In this method of rollout, only the selected live copy and optionally its children are updated.
 
 ![Roll out the modifications of source to the selected live copy](assets/livecopy_rollout_dialog.png)
-
-Roll out the modifications of source to the selected live copy
+*Figure: Roll out the modifications of source to the selected live copy*
 
 ### About synchronize action {#aboutsync}
 
 A synchronize action pulls the modifications from a source only to the selected live copy. Sync action respects and maintains the local modifications done after canceling inheritance. The local modifications are not overwritten and the canceled inheritance is not re-established. You can initiate a sync action in three ways.
 
-<table>
- <tbody>
-  <tr>
-   <th><strong>Where in AEM interface</strong><br /> </th>
-   <th><strong>When and why to use</strong><br /> </th>
-   <th><strong>How to use</strong><br /> </th>
-  </tr>
-  <tr>
-   <td>References rail</td>
-   <td>Quickly synchronize when you already have the source selected.<br /> </td>
-   <td>See <a href="#refrailsource">Quick actions from References rail for source</a></td>
-  </tr>
-  <tr>
-   <td>Toolbar in the Properties page<br /> </td>
-   <td>Initiate a sync when you already have the live copy properties open.<br /> </td>
-   <td>See <a href="#synclc">Synchronize a live copy</a></td>
-  </tr>
-  <tr>
-   <td>Live Copy Overview console</td>
-   <td>Quickly synchronize multiple assets (not necessarily all) when source folder is selected or Live Copy Overview console is already open. Sync action is initiated for one asset at a time but is a faster way to do sync for multiple assets in one go.<br /> </td>
-   <td>See <a href="#bulkactions">Actions on many assets in a live copy folder</a></td>
-  </tr>
- </tbody>
-</table>
+| Where in AEM interface | When and why to use | How to use |
+|---|---|---|
+| [!UICONTROL References] rail | Quickly synchronize when you already have the source selected. | See [Quick actions from References rail for source](#refrailsource) |
+| Toolbar in the [!UICONTROL Properties] page | Initiate a sync when you already have the live copy properties open. | See [Synchronize a live copy](#synclc) |
+| [!UICONTROL Live Copy Overview] console|Quickly synchronize multiple assets (not necessarily all) when source folder is selected or [!UICONTROL Live Copy Overview] console is already open. Sync action is initiated for one asset at a time but is a faster way to do sync for multiple assets in one go. | See [Actions on many assets in a live copy folder](#bulkactions) |
 
 ### Synchronize a live copy {#synclc}
 
@@ -238,8 +212,7 @@ To start a sync action, open **[!UICONTROL Properties]** page of a live copy, cl
 To see the statuses and information related to a synchronize action, see [Information and status of a live copy](#statuslcasset) and [Information and statuses of all live copies of a folder](#statuslcfolder).
 
 ![Synchronize action pulls the changes made to the source](assets/livecopy_sync.png)
-
-Synchronize action pulls the changes made to the source
+*Figure: Synchronize action pulls the changes made to the source*
 
 >[!NOTE]
 >
@@ -262,8 +235,7 @@ However, you have the flexibility to make local modifications to a live copy to 
 You can undo all the local modifications and revert the asset to the state of its source. Reset action irrevocably and instantly overrides all local modifications and re-establishes inheritance on all metadata fields. To revert, from the **[!UICONTROL Properties]** page of a live copy asset, click **[!UICONTROL Reset]** from the toolbar.
 
 ![Reset action overwrites local edits and brings the live copy at part with its source.](assets/livecopy_reset.png)
-
-Reset action overwrites local edits and brings the live copy at part with its source.
+*Figure: Reset action overwrites local edits and brings the live copy at part with its source*
 
 ## Remove live relationship {#detach}
 
@@ -274,8 +246,7 @@ You can completely remove the relationship between a source and a live copy usin
 1. Click **[!UICONTROL Live Copy]**. Click **[!UICONTROL Detach]** in the toolbar. Click **[!UICONTROL Detach]** from the dialog presented.
 
    ![Detach action completely removes the relationship between source and live copy](assets/livecopy_detach.png)
-
-   Detach action completely removes the relationship between source and live copy
+   *Figure: Detach action completely removes the relationship between source and live copy*
 
    >[!CAUTION]
    >
@@ -289,24 +260,18 @@ If you have multiple assets in a live copy folder, initiating actions on each as
 
 1. Select a source folder. Click **[!UICONTROL Properties]** from the toolbar. Alternatively, use the keyboard shortcut `p`.
 1. Click **[!UICONTROL Live Copy Source]**. To open the console, click **[!UICONTROL Live Copy Overview]**.
-
-1. In this dashboard, select a live copy asset from a live copy folder. Click the desired actions from the toolbar. The actions available are **[!UICONTROL Synchronize]**, **[!UICONTROL Reset]**, **[!UICONTROL Suspend]**, and **[!UICONTROL Detach]**.
-
-   You can quickly initiate these actions on any asset in any number of live copy folders that are in a live relationship with the selected source folder.
+1. In this dashboard, select a live copy asset from a live copy folder. Click the desired actions from the toolbar. The actions available are **[!UICONTROL Synchronize]**, **[!UICONTROL Reset]**, **[!UICONTROL Suspend]**, and **[!UICONTROL Detach]**. You can quickly initiate these actions on any asset in any number of live copy folders that are in a live relationship with the selected source folder.
 
    ![Easily update many assets in live copy folders from the Live Copy Overview console](assets/livecopyconsole_update_many_assets.png)
-
-   Easily update many assets in live copy folders from the Live Copy Overview console
+   *Figure: Easily update many assets in live copy folders from the Live Copy Overview console*
 
 ## Extend MSM for Assets {#extendapi}
 
 AEM allows you to extend the functionality using the MSM Java APIs. For Assets, the extending works just the same as it works with MSM for Site. For details, see [Extending the MSM](/help/sites-developing/extending-msm.md) and the following for information about specific tasks:
 
 * [Overview of APIs](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
-
 * [Create a new synchronization action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
 * [Create a new rollout configuration](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
-
 * [Create and use a simple LiveActionFactory class](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
 
 >[!NOTE]
@@ -314,7 +279,6 @@ AEM allows you to extend the functionality using the MSM Java APIs. For Assets, 
 >* Blueprint in MSM for Site is called Live Copy source in MSM for Assets.
 >* Removing the chapters step in the create site wizard is not supported in MSM for Assets.
 >* Configuring MSM locks on page properties (Touch-enabled UI) is not supported in MSM for Assets.
->
 
 ## Impact of asset management tasks on live copies {#manageassets}
 
@@ -344,11 +308,9 @@ In more scenarios, MSM for Assets matches the behavior of MSM for Sites function
 Some best practices for MSM are:
 
 * Plan the parent-children relationships of the assets and content flows before starting the implementation.
-*
 
 ## Limitations and known issues of MSM for Assets {#limitations}
 
 Following is a limitation of MSM for Assets.
 
 * Content Fragments (CFs) are not supported for the use case. When attempting to create their live copies, CFs are copied over as is without any relationship. The copied CFs are a snapshot in time and does not update when original CFs are updated.
-

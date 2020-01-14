@@ -25,7 +25,7 @@ AEM offers WebDAV support that lets you display and edit repository content. Con
 http://localhost:4502
 ```
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-111](assets/chlimage_1-111a.png)
 
 This URL, when connected from the operating system level, provides WebDAV access to the default workspace ( `crx.default`). While being simpler for the user, it does not give them the additional flexibility of specifying workspace names, which can be accomplished using additional [WebDAV URLs](/help/sites-administering/webdav-access.md#webdav-urls).
 
@@ -144,7 +144,7 @@ To connect to AEM via WebDAV in a Windows environment:
 
 1. Open **Windows Explorer** or **File Explorer** and click on **Computer** or **This PC**.
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112a.png)
 
 1. Click **Map network drive** to start the wizard.
 1. Enter the mapping details:
@@ -155,7 +155,7 @@ To connect to AEM via WebDAV in a Windows environment:
 
    Click Finish
 
-   ![chlimage_1-113](assets/chlimage_1-113.png)
+   ![chlimage_1-113](assets/chlimage_1-113a.png)
 
    >[!NOTE]
    >
@@ -163,11 +163,11 @@ To connect to AEM via WebDAV in a Windows environment:
 
 1. Enter username `admin` and password `admin`. Adobe recommends that you use the pre-configured admin account for testing.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-114](assets/chlimage_1-114a.png)
 
 1. The wizard closes and the newly-mapped drive is opened in a Windows Explorer or File Explorer window.
 
-   ![chlimage_1-115](assets/chlimage_1-115.png)
+   ![chlimage_1-115](assets/chlimage_1-115a.png)
 
 Windows has now mapped AEM as a drive via WebDAV and you can use it as any other drive.
 

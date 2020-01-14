@@ -1,8 +1,8 @@
 ---
-title: E-Commerce Repository Restructuring in AEM 6.4
-seo-title: E-Commerce Repository Restructuring in AEM 6.4
-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for E-Commerce.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for E-Commerce.
+title: E-Commerce Repository Restructuring in AEM 6.5
+seo-title: E-Commerce Repository Restructuring in AEM 6.5
+description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for E-Commerce.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for E-Commerce.
 uuid: 1fff1a4b-c8d0-4016-92fb-e2ea26e3a302
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,11 +10,11 @@ topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
 ---
 
-# E-Commerce Repository Restructuring in AEM 6.4{#e-commerce-repository-restructuring-in-aem}
+# E-Commerce Repository Restructuring in AEM 6.5{#e-commerce-repository-restructuring-in-aem}
 
-As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.4 should use this page to assess the work effort associated with repository changes impacting the AEM E-Commerce Solution. Some changes require work effort during the AEM 6.4 upgrade process, while others can be deferred until a 6.5 upgrade.
+As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the AEM E-Commerce Solution. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a future upgrade.
 
-## With 6.4 Upgrade {#with-upgrade}
+## With 6.5 Upgrade {#with-upgrade}
 
 ### Product, Order, Collections, Classifications, Shipping Methods and Payment Methods Data {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
 

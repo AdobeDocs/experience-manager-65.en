@@ -1,12 +1,8 @@
 ---
 title: General Release Notes for Adobe Experience Manager 6.5
-seo-title: Release Notes
 description: Adobe Experience Manager 6.5 notes outlining the release information, what's new, how to install, and detailed change lists.
-seo-description: Adobe Experience Manager 6.5 notes outlining the release information, what's new, how to install, and detailed change lists.
 uuid: b916624e-9486-4391-8c6f-cb4045e78490
 contentOwner: chuesler
-topic-tags: release-notes
-content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 7d3ceccb-4f00-4e11-9c9f-6de46a455e02
 docset: aem65
@@ -118,7 +114,7 @@ First shipped as part of AEM 6.4 SP2, with AEM 6.5 the SPA support gains followi
 
 AEM has the ability to serve the content in various formats and from various levels of the stack. Some have been around since 2008 with the [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) and [POST Servlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). Content Services ([Sling Model Exporter](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html)) was introduced in AEM 6.3 and is the method used by the AEM SJ SDK to hydrate single-page apps. The [HTTP API for Assets](/help/assets/mac-api-assets.md) is a CRUD API, that was extended for AEM 6.5.
 
-New HTTP API capabilites:
+New HTTP API capabilities:
 
 * Added [Content Fragment support to HTTP API for Assets](/help/assets/assets-api-content-fragments.md) to create, update, read and delete fragments.
 * Expose lists of Content Fragments via Content Services with the [Content Fragment List Core Component](https://opensource.adobe.com/aem-core-wcm-components/library/content-fragment-list.html).
@@ -143,7 +139,7 @@ Efficiently design, deliver and optimize experiences on all digital displays fro
 * Personalize by location or configuration of data triggered content by using dynamic placeholders.
 * Unified insights driven by Adobe Analytics integration into the AEM Screens Player
 
-For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](/help/screens/home.md).
+For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 ### Experience Manager Assets {#experience-manager-assets}
 
@@ -153,7 +149,7 @@ AEM 6.5 introduces the following capabilities and enhancements to boost producti
 
 #### Integration with Adobe Creative Cloud {#integration-with-adobe-creative-cloud}
 
-Introduction of [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html), an in-app experience for creative users working in Adobe Creative Cloud applications, including Photoshop, Illustrator, and InDesign, streamlines collaboration between creatives and marketers in the content creation process. AEM Desktop App continues to support the needs of users working with assets from AEM on desktop, using any file type and any destkop application.
+Introduction of [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html), an in-app experience for creative users working in Adobe Creative Cloud applications, including Photoshop, Illustrator, and InDesign, streamlines collaboration between creatives and marketers in the content creation process. AEM desktop app continues to support the needs of users working with assets from AEM on desktop, using any file type and any desktop application.
 
 Additionally, AEM integrates with Adobe Stock to help find, preview, license and save Adobe Stock assets directly from the AEM Web UI.
 
@@ -161,7 +157,7 @@ Additionally, AEM integrates with Adobe Stock to help find, preview, license and
 
 #### Connected Assets {#connected-assets}
 
-Connected Assets capability is targeted at larger deployments with a number of AEM Sites deploymetns that need to leverage assets from a central AEM Assets DAM deployment. It allows for improving governance around assets managed centrally while allowing for high efficiency of supplying assets to the various Sites deployments.
+Connected Assets capability is targeted at larger deployments with a number of AEM Sites deployments that need to leverage assets from a central AEM Assets DAM deployment. It allows for improving governance around assets managed centrally while allowing for high efficiency of supplying assets to the various Sites deployments.
 
 ### Dynamic Media {#dynamic-media}
 
@@ -172,21 +168,16 @@ New features include:
 * Support for 360-video & VR headsets
 * Custom Video Thumbnails
 * Enhanced accessibility support
-* Hotlinking protection
+* Hot-linking protection
 
 #### User Experience and Search {#user-experience-and-search}
 
 Key enhancements help to find the right assets faster by providing dynamic search facets, and to manage multiple assets more efficiently by providing ability to select all assets from any folder or search result.
 
-### Experience Manager Forms {#experience-manager-forms}
+### Adobe Experience Manager Forms {#experience-manager-forms}
 
 AEM 6.5 Forms brings in several new features and enhancements. The highlights include:
 
-*
-*
-*
-*
-*
 * Transaction reports to track the number of submitted forms, processed documents, and rendered documents
 * Usability improvements to interactive communications
 * Cloud-based digital signatures in adaptive forms
@@ -196,9 +187,7 @@ AEM 6.5 Forms brings in several new features and enhancements. The highlights in
 * Sorting adaptive forms and interactive communication tables
 * Automated validation of input data in form data models
 
-See the [Summary of new features and enhancements in AEM 6.5 Forms](/help/forms/using/whats-new.md) for information about new and improved features and documentation resources. `<sub>``<sup>``<strike>`
-
-* `<sub>``<sup>``<strike>``<sub>``<sup>``<strike>`
+See the [Summary of new features and enhancements in AEM 6.5 Forms](/help/forms/using/whats-new.md) for information about new and improved features and documentation resources.
 
 ### Experience Manager Communities {#communitiesreleasenotes}
 

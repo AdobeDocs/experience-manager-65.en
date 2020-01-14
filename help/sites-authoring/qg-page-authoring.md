@@ -24,7 +24,7 @@ They:
 
 For full details about authoring with AEM see:
 
-* [First Steps for Authors](/help/sites-authoring/first-steps.md)  
+* [First Steps for Authors](/help/sites-authoring/first-steps.md)
 * [Authoring Pages](/help/sites-authoring/page-authoring.md)
 
 ## A Few Quick Hints {#a-few-quick-hints}
@@ -57,14 +57,14 @@ Before giving the overview of specifics, here is a small collection of general t
 >There are a number of keyboard shortcuts that can make the authoring experience easier.
 >
 >* [Keyboard Shortcuts When Editing Pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
->* [Keyboard Shortcuts for Consoles](/help/sites-authoring/keyboard-shortcuts.md)  
+>* [Keyboard Shortcuts for Consoles](/help/sites-authoring/keyboard-shortcuts.md)
 >
 
 ### Finding Your Page {#finding-your-page}
 
 There are various aspects to finding a page; you can navigate and/or search:
 
-1. Open the **Sites** console (using the **Sites** option in the [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation) - this is triggered (drop down) when you select the Adobe Experience Manager link (top left).  
+1. Open the **Sites** console (using the **Sites** option in the [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation) - this is triggered (drop down) when you select the Adobe Experience Manager link (top left).
 
 1. Navigate down the tree by tapping/clicking on the appropriate page. How the page resources are represented depends on the view you are using - [Card, List, or Column](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
@@ -288,7 +288,7 @@ These actions can all be triggered by:
 
 For example, the lock icon looks like this:
 
-![screen_shot_2018-03-21at161124](assets/screen_shot_2018-03-21at161124.png) 
+![screen_shot_2018-03-21at161124](assets/screen_shot_2018-03-21at161124.png)
 
 ### Accessing Page References {#accessing-page-references}
 
@@ -326,7 +326,7 @@ The same basic mechanism is used when restoring and/or comparing versions of you
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
-   If a version of your page has already been saved, this will be listed in the Timeline. 
+   If a version of your page has already been saved, this will be listed in the Timeline.
 
 1. Tap/click on the version you want to restore - this will reveal additional action buttons:
 
@@ -337,4 +337,3 @@ The same basic mechanism is used when restoring and/or comparing versions of you
     * **Show Differences**
 
         * The page will be opened with differences (between the two versions) highlighted.
-

@@ -32,7 +32,7 @@ This section describes how to create, modify, and generally manage image presets
 
 Like a macro, an Image Preset is a predefined collection of sizing and formatting commands saved under a name. To understand how Image Presets work, suppose your web site requires each product image to appear in different sizes, different formats, and compression rates for desktop and mobile delivery.
 
-You could create two image presets: one with 500 x 500 pixels for desktop version and 150 x 150 pixels for the mobile version. You create two Image Presets, one called **Enlarge** to display images at 500x500 pixels and one called **Thumbnail** to display images at 150 x 150 pixels. To deliver images at the **Enlarge** and **Thumbnail** size, AEM looks up the definition of the Enlarge Image Preset and Thumbnail Image Preset. Then AEM dynamically generates an image at the size and formatting specifications of each Image Preset.
+You could create two image presets: one with 500 x 500 pixels for desktop version and 150 x 150 pixels for the mobile version. You create two Image Presets, one called `Enlarge` to display images at 500x500 pixels and one called `Thumbnail` to display images at 150 x 150 pixels. To deliver images at the `Enlarge` and `Thumbnail` size, AEM looks up the definition of the Enlarge Image Preset and Thumbnail Image Preset. Then AEM dynamically generates an image at the size and formatting specifications of each Image Preset.
 
 Images that are reduced in size when they are delivered dynamically can lose sharpness and detail. For this reason, each Image Preset contains formatting controls for optimizing an image when it is delivered at a particular size. These controls make sure that your images are sharp and clear when they are delivered to your web site or application.
 
@@ -40,7 +40,7 @@ Administrators can create Image Presets. To create an image preset, you can star
 
 ## Managing Image Presets {#managing-image-presets-1}
 
-You manage your image presets in AEM by tapping or clicking the AEM logo to access the global navigation console and then tapping or clicking the Tools icon and navigating to **Assets **&gt;** Image Presets**.
+You manage your image presets in AEM by tapping or clicking the AEM logo to access the global navigation console and then tapping or clicking the Tools icon and navigating to **[!UICONTROL Assets > Image Presets]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -48,7 +48,7 @@ You manage your image presets in AEM by tapping or clicking the AEM logo to acce
 >
 >Any image presets you create are also available as dynamic renditions when you preview or deliver assets.
 >
->In *Dynamic Media - Scene7 mode*, you do **not** need to publish image presets as image presets are automatically published.
+>In *Dynamic Media - Scene7 mode*, you do *not* need to publish image presets as image presets are automatically published.
 >
 >In *Dynamic Media - Hybrid mode*, you need to manually publish image presets.
 >
@@ -56,7 +56,7 @@ You manage your image presets in AEM by tapping or clicking the AEM logo to acce
 
 >[!NOTE]
 >
->The system shows a variety of renditions when you select **Renditions** in an asset's Detail View. You can increase or decrease the number of image presets that display. See [Increasing the number of image presets that display](#increasingthenumberofimagepresetsthatdisplay).
+>The system shows a variety of renditions when you select **[!UICONTROL Renditions]** in an asset's Detail View. You can increase or decrease the number of image presets that display. See [Increasing the number of image presets that display](#increasingthenumberofimagepresetsthatdisplay).
 
 ### Adobe Illustrator (AI), Postscript (EPS), and PDF file formats {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
@@ -67,11 +67,11 @@ Adobe Illustrator's file format is a variant of PDF. The main differences, in th
 * Adobe Illustrator documents consist of a single page with multiple layers. Each layer is extracted as a PNG sub-asset under the main Illustrator asset.
 * PDF documents consist of one or more pages. Each page is extracted as a single page PDF sub-asset under the main multi-page PDF document.
 
-The sub-assets are created by the `Create Sub Asset process` component within the overall `DAM Update Asset` workflow. To see this process component within the workflow, tap **Tools **&gt; **Workflow** &gt; **Models** &gt; **DAM Update Asset** &gt; **Edit**.
+The sub-assets are created by the `Create Sub Asset process` component within the overall `DAM Update Asset` workflow. To see this process component within the workflow, tap **[!UICONTROL Tools > Workflow > Models > DAM Update Asset > Edit]**.
 
-See also [Viewing pages of a multi-page file](/help/assets/managing-linked-subassets.md#viewingpagesofamultipagefile).
+See also [Viewing pages of a multi-page file](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file).
 
-You can view the sub-assets or the pages when you open the asset, tap the Content menu, and select **Subassets** or **Pages**. The sub-assets are real assets. That is, PDF pages are extracted by the `Create Sub Asset` workflow component. They are then stored as `page1.pdf`, `page2.pdf`, and so on below the main asset. After they are stored, the `DAM Update Asset` workflow processes them.
+You can view the sub-assets or the pages when you open the asset, tap the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages]**. The sub-assets are real assets. That is, PDF pages are extracted by the `Create Sub Asset` workflow component. They are then stored as `page1.pdf`, `page2.pdf`, and so on below the main asset. After they are stored, the `DAM Update Asset` workflow processes them.
 
 To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or PDF files, the following processing steps are required:
 
@@ -81,7 +81,7 @@ To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or P
 
 >[!NOTE]
 >
->In the DAM Update Asset workflow, the **EPS thumbnails** step generates thumbnails for EPS files.
+>In the DAM Update Asset workflow, the **[!UICONTROL EPS thumbnails]** step generates thumbnails for EPS files.
 
 #### PDF/AI/EPS asset metadata properties {#pdf-ai-eps-asset-metadata-properties}
 
@@ -92,7 +92,7 @@ To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or P
 
 You access `Rasterize PDF/AI Image Preview Rendition` process component options by way of the `DAM Update Asset` workflow.
 
-Tap on Adobe Experience Manager in the upper left, navigate to **Tools **> **Workflow** > **Models**. On the Workflow Models page, select **DAM Update Asset**, then on the toolbar tap **Edit**. On the DAM Update Asset workflow page, double-tap the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
+Tap on Adobe Experience Manager in the upper left, navigate to **[!UICONTROL Tools > Workflow > Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar tap **[!UICONTROL Edit]**. On the DAM Update Asset workflow page, double-tap the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
 
 #### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -177,56 +177,56 @@ The following scripts, are used by Dynamic Media integration:
  </tbody>
 </table>
 
-### Configuring Image Thumbnail Size {#configuring-image-thumbnail-size}
+### Configuring image thumbnail size {#configuring-image-thumbnail-size}
 
-You can configure the size of thumbnails by configuring those settings in the **DAM Update Asset **workflow. There are two steps in the workflow where you can configure the thumbnail size of image assets. Although one (**Dynamic Media Process Image Assets**) is used for dynamic image assets and the other (**Process Thumbnails**) for static thumbnail generation or when all other processes fail to generate thumbnails, *both* should have the same settings.
+You can configure the size of thumbnails by configuring those settings in the **[!UICONTROL DAM Update Asset]** workflow. There are two steps in the workflow where you can configure the thumbnail size of image assets. Although one (**[!UICONTROL Dynamic Media Process Image Assets]**) is used for dynamic image assets and the other (**[!UICONTROL Process Thumbnails]**) for static thumbnail generation or when all other processes fail to generate thumbnails, *both* should have the same settings.
 
-With the **Dynamic Media Process Image Assets** step, thumbnails are generated by the image server, and this configuration is independent of the configuration applied to the **Process Thumbnails** step. Generating thumbnails through the **Process Thumbnails** step is the slowest and most memory intensive way to create thumbnails.
+With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails are generated by the image server, and this configuration is independent of the configuration applied to the **[!UICONTROL Process Thumbnails]** step. Generating thumbnails through the **[!UICONTROL Process Thumbnails]** step is the slowest and most memory intensive way to create thumbnails.
 
-Thumbnail sizing is defined in the following format: **width:height:center**, for example *80:80:false*. The width and height determine the size in pixels of the thumbnail; the center value is either false or true and if set to true, it indicates that the thumbnail image has exactly the size given in the configuration. If the resized image is smaller, it will be centered within the thumbnail.
+Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:center]**, for example *80:80:false*. The width and height determine the size in pixels of the thumbnail; the center value is either false or true and if set to true, it indicates that the thumbnail image has exactly the size given in the configuration. If the resized image is smaller, it will be centered within the thumbnail.
 
 >[!NOTE]
 >
->* Thumbnail size for EPS files are configured in the **EPS thumbnails **step, in the **Arguments** tab under Thumbnails.
+>* Thumbnail size for EPS files are configured in the **[!UICONTROL EPS thumbnails]** step, in the **[!UICONTROL Arguments]** tab under Thumbnails.
 >
->* Thumbnail size for videos are configured in the **FFmpeg thumbnails** step, in the **Process** tab under **Arguments**.
+>* Thumbnail size for videos are configured in the **[!UICONTROL FFmpeg thumbnails]** step, in the **[!UICONTROL Process]** tab under **[!UICONTROL Arguments]**.
 >
 
-To configure thumbnail size:
+**To configure image thumbnail size**
 
-1. Tap **Tools **&gt; **Workflow** &gt; **Models** &gt; **DAM Update Asset** &gt; **Edit**.
-1. Tap the **Dynamic Media Process Image Assets** step and tap or click the **Thumbnails** tab. Change the thumbnail size, as needed, then tap **OK**.
+1. Tap **[!UICONTROL Tools > Workflow > Models > DAM Update Asset > Edit]**.
+1. Tap the **[!UICONTROL Dynamic Media Process Image Assets]** step and tap or click the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. Tap the **Process Thumbnails** step, then tap the **Thumbnails** tab. Change the thumbnail size, as needed, then tap **OK**.
+1. Tap the **[!UICONTROL Process Thumbnails]** step, then tap the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
-   >The values in the thumbnails argument in the **Process Thumbnails** step must match the thumbnails argument in the **Dynamic Media Process Image Assets** step.
+   >The values in the thumbnails argument in the **[!UICONTROL Process Thumbnails]** step must match the thumbnails argument in the **[!UICONTROL Dynamic Media Process Image Assets]** step.
 
-1. Tap **Save** to save the changes to the workflow.
+1. Tap **[!UICONTROL Save]** to save the changes to the workflow.
 
 ### Increasing or decreasing the number of image presets that display {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-Image presets you create are available as dynamic renditions when you preview assets. AEM shows a variety of dynamic renditions when viewing an assets from **Detail View** &gt; **Renditions**. You can increase or decrease the limit of renditions that are displayed.
+Image presets you create are available as dynamic renditions when you preview assets. AEM shows a variety of dynamic renditions when viewing an assets from **[!UICONTROL Detail View > Renditions]**. You can increase or decrease the limit of renditions that are displayed.
 
-To increase or decrease the number of image presets displayed:
+**To increase or decrease the number of image presets displayed**
 
 1. Navigate to CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
-1. Navigate to the image preset listing node at **/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist**
+1. Navigate to the image preset listing node at `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
 
-1. In the **limit** property, change the **Value**, which is set to 15 by default, to the desired number.
-1. Navigate to the image preset datasource at **/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource**
+1. In the **[!UICONTROL limit]** property, change the **[!UICONTROL Value]**, which is set to 15 by default, to the desired number.
+1. Navigate to the image preset datasource at `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource`
 
-   ![chlimage_1-77](assets/chlimage_1-77.png)
+   ![chlimage_1-495](assets/chlimage_1-495.png)
 
 1. In the limit property, change the number to the desired number, for example `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Tap **Save All**.
+1. Tap **[!UICONTROL Save All]**.
 
-### Creating Image Presets {#creating-image-presets}
+### Creating an Image Preset {#creating-image-presets}
 
 Creating an image preset lets you apply those settings to any images when previewing or publishing.
 
@@ -240,48 +240,50 @@ See [Adobe Illustrator (AI), Postscript (EPS), and PDF file formats](#adobe-illu
 If you intend to support the ingestion of INDD files so that you can generate dynamic rendition of this file format, you may want to review the following information before you create image presets.
 See [InDesign (INDD) file format](#indesign-indd-file-format).
 
-To create an image preset:
+**To create an image preset**
 
-1. In AEM, tap the AEM logo to access the global navigation console, then tap **Tools** &gt; **Assets **&gt; **Image Presets**.
-1. Click **Create**. The **Edit Image Preset** window opens.
+1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Assets > Image Presets]**.
+1. Click **[!UICONTROL Create]**. The **[!UICONTROL Edit Image Preset]** window opens.
 
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   ![chlimage_1-496](assets/chlimage_1-496.png)
 
    >[!NOTE]
    >
-   >To make this image preset responsive, erase the values in the **width** and **height** fields and leave them blank.
+   >To make this image preset responsive, erase the values in the **[!UICONTROL width]** and **[!UICONTROL height]** fields and leave them blank.
 
-1. Enter values into the **Basic** and **Advanced** tabs as appropriate, including a name. The options are outlined in [Image Preset Options](#image-preset-options). Presets appear in the left pane and can be used on-the-fly with other assets.
+1. Enter values into the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs as appropriate, including a name. The options are outlined in [Image Preset Options](#image-preset-options). Presets appear in the left pane and can be used on-the-fly with other assets.
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. Click **Save**.
+1. Click **[!UICONTROL Save**.
 
-### Creating a Responsive Image Preset {#creating-a-responsive-image-preset}
+### Creating a responsive Image Preset {#creating-a-responsive-image-preset}
 
-To create a responsive image preset, perform the steps in [Creating Image Presets](#creating-image-presets). When entering the height and width in the **Edit Image Preset** window, erase the values and leave them blank.
+To create a responsive image preset, perform the steps in [Creating Image Presets](#creating-image-presets). When entering the height and width in the **[!UICONTROL Edit Image Preset]** window, erase the values and leave them blank.
 
 Leaving them blank tells AEM that this image preset is responsive. You can adjust the other values as appropriate.
 
-![chlimage_1-79](assets/chlimage_1-79.png)
+
 
 >[!NOTE]
 >
->In order to see the **URL** and **RESS** buttons when applying an image preset to an asset, the asset must be published.
+>In order to see the **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons when applying an image preset to an asset, the asset must be published.
+>
+>![chlimage_1-79](assets/chlimage_1-498.png)
 >
 >In Dynamic Media - Scene7 mode, image presets and image assets are automatically published.
 >
 >In Dynamic Media - Hybrid mode, you must manually publish image presets and image assets.
 
-### Image Preset Options {#image-preset-options}
+### Image Preset options {#image-preset-options}
 
 When you create or edit image presets, you have the options described in this section. In addition, Adobe recommends these “best practice” option choices to start:
 
-* **Format** (**Basic** tab) - Select **JPEG** or another format that meets your requirements. All web browsers support the JPEG image format; it offers a good balance between small files sizes and image quality. However, JPEG format images use a lossy compression scheme that can introduce unwanted image artifacts if the compression setting is too low. For that reason, Adobe recommends setting the compression quality to 75. This setting offers a good balance between image quality and small file size.
+* **[!UICONTROL Format** (**[!UICONTROL Basic]** tab) - Select **[!UICONTROL JPEG]** or another format that meets your requirements. All web browsers support the JPEG image format; it offers a good balance between small files sizes and image quality. However, JPEG format images use a lossy compression scheme that can introduce unwanted image artifacts if the compression setting is too low. For that reason, Adobe recommends setting the compression quality to 75. This setting offers a good balance between image quality and small file size.
 
-* **Enable Simple Sharpening** - Do not select **Enable Simple** **Sharpening** (this sharpening filter offers less control than Unsharp Masking settings).
+* **[!UICONTROL Enable Simple Sharpening]** - Do not select **[!UICONTROL Enable Simple Sharpening]** (this sharpening filter offers less control than Unsharp Masking settings).
 
-* **Sharpening: Resampling Mode** - Select **Bi-Cubic**.
+* **[!UICONTROL Sharpening: Resampling Mode]** - Select **[!UICONTROL Bi-Cubic]**.
 
 #### Basic tab options {#basic-tab-options}
 
@@ -385,7 +387,7 @@ When you create or edit image presets, you have the options described in this se
     </ul>
     <div>
       Sharpening is described in
-     <a href="https://microsite.omniture.com/t2/help/en_US/s7/sharpening/s7_sharpening_images.pdf">Sharpening Images</a>.
+     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/s7_sharpening_images.pdf">Sharpening Images</a>.
     </div> </td>
   </tr>
   <tr>
@@ -420,7 +422,7 @@ When you create or edit image presets, you have the options described in this se
  </tbody>
 </table>
 
-### Defining Image Preset Options with Image Modifiers {#defining-image-preset-options-with-image-modifiers}
+### Defining Image Preset options with Image Modifiers {#defining-image-preset-options-with-image-modifiers}
 
 In addition to the options available in the Basic and Advanced tabs, you can define image modifiers to give you more options when defining image presets. Image Rendering relies on the Scene7 image rendering API and are defined in detail in the [HTTP Protocol Reference](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/c_http_protocol_reference.html).
 
@@ -452,7 +454,7 @@ The following are some basic examples of what you can do with image modifiers.
   &op_invert=1&op_blur=7
   ```
 
-  ![chlimage_1-80](assets/chlimage_1-80.png)
+  ![chlimage_1-80](assets/chlimage_1-501.png)
 
 * [op_brightness](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_brightness.html) - Decreases or increases the brightness.
 
@@ -470,16 +472,14 @@ The following are some basic examples of what you can do with image modifiers.
 
   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-### Modifying Image Presets {#modifying-image-presets}
+### Editing Image Presets {#modifying-image-presets}
 
-To edit image presets:
-
-1. In AEM, tap the AEM logo to access the global navigation console, then tap **Tools** &gt; **Assets **&gt; **Image Presets**.
+1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Assets > Image Presets]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
-1. Select a preset and then click **Edit**. The **Edit Image Preset** window opens.
-1. Make changes and click **Save** to save your changes or **Cancel** to cancel your changes.
+1. Select a preset and then click **[!UICONTROL Edit]**. The **[!UICONTROL Edit Image Preset]** window opens.
+1. Make changes and click **[!UICONTROL Save]** to save your changes or **[!UICONTROL Cancel]** to cancel your changes.
 
 ### Publishing Image Presets {#publishing-image-presets}
 
@@ -487,18 +487,18 @@ If you are running Dynamic Media - Hybrid mode, you must manually publish image 
 
 (If you are running Dynamic Media - Scene7 mode, image presets are automatically published for you; you do not need to complete these steps.)
 
-To manually publish image presets in Dynamic Media - Hybrid mode:
+**To manually publish image presets in Dynamic Media - Hybrid mode**
 
-1. In AEM, tap or click the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **Assets **&gt; **Image Presets**.
-1. Select the image preset or multiple image presets from the list of image presets and click or tap **Publish**.
+1. In AEM, tap or click the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets > Image Presets]**.
+1. Select the image preset or multiple image presets from the list of image presets and click or tap **[!UICONTROL Publish]**.
 1. After the image preset is published, the status changes from unpublished to published.
 
-   ![chlimage_1-81](assets/chlimage_1-81.png)
+   ![chlimage_1-81](assets/chlimage_1-505.png)
 
 ### Deleting Image Presets {#deleting-image-presets}
 
-To delete image presets:
+**To delete image presets**
 
-1. In AEM, tap or click the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **Assets **&gt; **Image Presets**.
-1. Select a preset, and then click **Delete**. Dynamic Media confirms that you want to delete it. Click **Delete** to delete or click **Cancel** to abort.
+1. In AEM, tap or click the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets > Image Presets]**.
+1. Select a preset, and then click **[!UICONTROL Delete**. Dynamic Media confirms that you want to delete it. Tap **[!UICONTROL Delete]** to delete or tap **[!UICONTROL Cancel]** to abort.
 

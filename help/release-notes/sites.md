@@ -1,13 +1,9 @@
 ---
 title: AEM Sites Release Notes
-seo-title: AEM Sites
 description: Release notes specific to Adobe Experience Manager 6.4 Sites.
-seo-description: Release notes specific to Adobe Experience Manager 6.4 Sites.
 uuid: 676ead61-3d97-4f23-b616-c647d590bc8f
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
-topic-tags: release-notes
-content-type: reference
 discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
 docset: aem65
 
@@ -55,7 +51,7 @@ See the following for AEM Sites 6.5 enhancements in detail:
     * Create and edit templates for single-page apps that are using the JS SDK (also called SPA Editor)
 
 * Reference Site We.Retail 4.0, see [Github for release notes](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
-* Toolkit to upgrade existing sites to leverage the latest editor capabilities, see [Github repo](https://github.com/adobe/aem-modernize-tools)
+* Toolkit to upgrade existing sites to leverage the latest editor capabilities, see [Github repository](https://github.com/adobe/aem-modernize-tools)
 
 >[!CAUTION]
 >
@@ -75,7 +71,7 @@ See the following for AEM Sites 6.5 enhancements in detail:
 ## Content Fragments &amp; Editor {#content-fragments-amp-editor}
 
 * New [Annotations](/help/assets/content-fragments-variations.md#viewing-editing-deleting-annotations) rail in Content Fragment Editor to make general comments and see comments make within the text (also show up in Timeline rail)
-* Ability to set the default content type of a multiline text element in a [content fragment model](/help/assets/content-fragments-models.md) to simple text, rich text or markdown
+* Ability to set the default content type of a multi-line text element in a [Content Fragment model](/help/assets/content-fragments-models.md) to simple text, rich text or markdown
 * Add [comment/annotations](/help/assets/content-fragments-variations.md#annotating-a-content-fragment) by selecting text in the RTE (full-screen view)
 * [Compare versions](/help/assets/content-fragments-managing.md#comparing-fragment-versions) of a Content Fragment side-by-side via Reference rail
 * The assets Download Report now shows Content Fragments accordingly
@@ -109,24 +105,24 @@ See the following for AEM Sites 6.5 enhancements in detail:
 
 * ContextHub data layer and client-side rules engine JavaScript has been updated to use jQuery 3 by default.
 
-## AEM &amp; Adobe Target {#aem-amp-adobe-target}
+## AEM and Adobe Target {#aem-amp-adobe-target}
 
 >[!CAUTION]
 >
 >at.js 2.x is not supported with AEM at the point of the AEM 6.5 release. Please use latest version of at.js 1.x
 
 * Adobe Target integration is can now use the Target Standard API. Earlier versions of AEM use the Target Classic HTTP API which is now deprecated.
-* Adobe Target mbox.js version 63 is included. Adobe strongly recommends to switch implementation to at.js 1.x.
-* at.js version 1.5.0 now included. Adobe recommends to use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision at.js 1.x into the site.
+* Adobe Target `mbox.js` version 63 is included. Adobe strongly recommends to switch implementation to `at.js` v1.x.
+* `at.js` version 1.5.0 is now included. Adobe recommends that you use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision `at.js` v1.x into the site.
 
-## AEM &amp; Adobe Analytics {#aem-amp-adobe-analytics}
+## AEM and Adobe Analytics {#aem-amp-adobe-analytics}
 
-* s_code.js H.27.5 is included. Adobe stronlgy recommends to switch implementation to AppMeasurement.js
-* AppMeasurement.js 1.8.0 is included. Adobe recommends to use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision AppMeasurement.js into the site.
+* `s_code.js` H.27.5 is included. Adobe recommends that you switch implementation to `AppMeasurement.js`
+* `AppMeasurement.js` v1.8.0 is included. Adobe recommends to use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision AppMeasurement.js into the site.
 
-## AEM & Commerce {#aem-commerce}
+## AEM and Commerce {#aem-commerce}
 
-Improvements to the Commerce Integation Framework are on a faster release cycle since AEM 6.4. [Learn more here](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/docs.html).
+Improvements to the Commerce Integration Framework are on a faster release cycle since AEM 6.4. [Learn more here](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/docs.html).
 
 ## Communities Add-On {#communities-add-on}
 
@@ -138,4 +134,4 @@ See [Communities Release Notes page](../release-notes/communities-release-notes.
 * Metered playback in a sequence channel
 * Auto create project structure using a source file e.g. Excel sheet
 
-For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](/help/screens/home.md).
+For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html).

@@ -3,15 +3,13 @@ title: Sample ContextHub UI Module Types
 seo-title: Sample ContextHub UI Module Types
 description: ContextHub provides several sample UI modules that you can use in your solutions
 seo-description: ContextHub provides several sample UI modules that you can use in your solutions
-uuid: af1a8fa1-8f8b-49c8-b2ca-ba92c955871e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: fa68c786-5102-4cc3-b61c-2565ee919768
 ---
 
-# Sample ContextHub UI Module Types{#sample-contexthub-ui-module-types}
+# Sample ContextHub UI Module Types {#sample-contexthub-ui-module-types}
 
 ContextHub provides several sample UI modules that you can use in your solutions. The following information is provided:
 
@@ -40,7 +38,7 @@ The source code is located at /libs/granite/contexthub/code/ui/container/js/Cont
 Configure the contexthub.base UI module using a Javascript object in JSON format. Include any of the following properties to configure the UI module features:
 
 * **image:** A URL to an image to display as the icon.
-* **icon:** The name of a [Coral UI icon](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) class. If you specify a value for both the icon and image properties, the image is used.
+* **icon:** The name of a [Coral UI icon](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) class. If you specify a value for both the icon and image properties, the image is used.
 
 * **title:** A title for the UI module. The title appears when the pointer is paused over the UI module icon.
 * **fullscreen:** A boolean value that indicates whether the UI module supports fullscreen mode. Use `true` to support fullscreen and `false` to prevent fullscreen mode.
@@ -50,24 +48,24 @@ Configure the contexthub.base UI module using a Javascript object in JSON format
 * **storeMapping:** A key/store mapping. Use the key in Handlebar templates to access the associated ContextHub store data.
 * **list:** An array of items to display as a list in a popover when the UI module is clicked. If you include this item, do not include popoverTemplate. The value is an array of objects with the following keys:
 
-    * title: The text to display for this item
-    * image: (Optional) A URL to an image that should be displayed on the left
-    * icon: (Optional) A CUI icon class that should be displayed on the left; ignored if an image is specified
-    * selected: (Optional) A boolean value that specifies whether this item should be displayed as selected (true=selected). By default, selected items appear using a bold font. Use a `listType` property to configure other appearances (see below).
+  * title: The text to display for this item
+  * image: (Optional) A URL to an image that should be displayed on the left
+  * icon: (Optional) A CUI icon class that should be displayed on the left; ignored if an image is specified
+  * selected: (Optional) A boolean value that specifies whether this item should be displayed as selected (true=selected). By default, selected items appear using a bold font. Use a `listType` property to configure other appearances (see below).
 
 * **listType:** The style to use for popover list items. Use one of the following values:
 
-    * checkmark
-    * checkbox
-    * radio
+  * checkmark
+  * checkbox
+  * radio
 
 * **popoverTemplate:** A Handlebars template that specifies the content to render in the popover when the UI module is clicked. If you include this item, do not include the `list` item.
 
-**Example**
+### Example {#example}
 
 The following example configures a contexthub.base UI module to display information from a [contexthub.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) store. The `template` item demonstrates how to obtain data from the store by using the key that the `storeMapping` item establishes.
 
-```
+```xml
 {
    "icon": "coral-Icon--move",
     "title": "Screen Resolution",
@@ -78,13 +76,13 @@ The following example configures a contexthub.base UI module to display informat
 }
 ```
 
-![chlimage_1-76](assets/chlimage_1-76.png)
+![chlimage_1-76](assets/chlimage_1-76a.png)
 
 ## contexthub.browserinfo UI Module Type {#contexthub-browserinfo-ui-module-type}
 
 The contexthub.browserinfo UI module displays information about the client web browser and operating system. Information is obtained from the surferinfo store, based on the [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) store candidate.
 
-![chlimage_1-77](assets/chlimage_1-77.png)
+![chlimage_1-77](assets/chlimage_1-77a.png)
 
 The source code for the UI module is located at /libs/granite/contexthub/components/modules/browserinfo. Although contexthub.browserinfo extends the contexthub.base UI module, it does not override or provide additional functions. The implementation provides a default configuration for rendering browser information.
 
@@ -105,7 +103,7 @@ Instances of the contexthub.browserinfo UI module do not require a value for the
 
 The contexthub.datetime UI module displays the date and time that is stored in a store named datetime that is based on the [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) store candidate.
 
-![chlimage_1-78](assets/chlimage_1-78.png)
+![chlimage_1-78](assets/chlimage_1-78a.png)
 
 The module provides a popover form that enables you to change the date and time in the store.
 
@@ -115,7 +113,7 @@ The source of the contexthub.datetime UI module is located at /libs/granite/cont
 
 Instances of the contexthub.datetime UI module do not require a value for the Detail Configuration. The following JSON text represents the default configuration of the module.
 
-```
+```xml
 {
    "icon":"coral-Icon--clock",
    "title":"DATE&TIME",
@@ -126,34 +124,11 @@ Instances of the contexthub.datetime UI module do not require a value for the De
 }
 ```
 
-## contexthub.device UI Module Type {#contexthub-device-ui-module-type}
-
-The contexthub.device UI Module displays the name of the client device. The module obtains information from a ContextHub store named emulators that is based on the [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) store candidate.
-
-![chlimage_1-79](assets/chlimage_1-79.png)
-
-The source code for the module is located at /etc/cloudsettings/default/contexthub/emulators.
-
-### Configuration {#configuration-3}
-
-Instances of the contexthub.datetime UI module do not require a value for the Detail Configuration. The following JSON text represents the default configuration of the module. Note that the `clickable` property is false by default. If you override the default configuration to set clickable to `true`, clicking the module reveals a popup where you can select the current device.
-
-```xml
-{
-   "icon":"coral-Icon--deviceMobile",
-   "title":"Device",
-   "clickable":false,
-   "storeMapping":{"emulator":"emulators"},
-   "template":"<p>{{i18n \"Device\"}}</p><p>{{emulator.currentDevice.title}}",
-   "listReference":"/emulators/devices","listType":"checkmark"
-}
-```
-
 ## contexthub.location UI Module Type {#contexthub-location-ui-module-type}
 
 The contexthub.location UI module displays the longitude and latitude of the client. The module provides a popover that displays a Google map that you can click to change the current location. The module obtains information from a ContextHub store named geolocation that is based on the [contexthub.geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) store candidate.
 
-![chlimage_1-80](assets/chlimage_1-80.png)
+![chlimage_1-80](assets/chlimage_1-80a.png)
 
 The source of the UI module is located at /etc/cloudsettings/default/contexthub/geolocation.
 
@@ -196,7 +171,7 @@ Instances of the contexthub.location UI module do not require a value for the De
 
 The contexthub.screen-orientation UI module displays the current screen orientation of the client. Although disabled by default, the module provides a popover that enables you to select an orientation. The module obtains information from a ContextHub store named emulators that is based on the [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) store candidate.
 
-![chlimage_1-81](assets/chlimage_1-81.png)
+![chlimage_1-81](assets/chlimage_1-81a.png)
 
 The source of the UI module is located at /libs/granite/contexthub/components/modules/screen-orientation.
 
@@ -220,7 +195,7 @@ Instances of the contexthub.screen-orientation UI module do not require a value 
 
 The contexthub.tagcloud UI module displays information about tags. On the toolbar the UI module shows the number of tags. The popup reveals a tagcloud and a texbox for adding new tags. The UI module obtains information from a ContextHub store named tagcloud that is based on the [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) store candidate.
 
-![chlimage_1-82](assets/chlimage_1-82.png)
+![chlimage_1-82](assets/chlimage_1-82a.png)
 
 The source of the UI module is located at /libs/granite/contexthub/components/modules/tagcloud.
 
@@ -244,7 +219,7 @@ Instances of the contexthub.tagcloud UI module do not require a value for the De
 
 The granite.profile ContextHub UI module displays the display name of the current user. The popup reveals the login name of the user and enables you to change the value of the display name. The UI module obtains information from a ContextHub store named profile that is based on the [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) store candidate.
 
-![chlimage_1-83](assets/chlimage_1-83.png)
+![chlimage_1-83](assets/chlimage_1-83a.png)
 
 The source of the UI module is at /libs/granite/contexthub/components/modules/profile.
 
@@ -266,4 +241,3 @@ Instances of the grantie.profile UI module do not require a value for the Detail
    "listType":"checkmark"
 }
 ```
-

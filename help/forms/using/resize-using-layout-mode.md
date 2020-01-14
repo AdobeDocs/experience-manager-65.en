@@ -43,7 +43,7 @@ Select **Layout** from the drop-down list that appears at the top of the adaptiv
     * **Parent:** Select the parent of a component.
     * **Float to new line:** Shift the component to the next line if there are multiple components within the same line.
 
-   You can undo all resizing changes and apply default layout to the panel containing resized components using the **[!UICONTROL Revert breakpoint layout]** ( ![screen_shot_2018-03-23at091013](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/help/sites-authoring/responsive-layout/_jcr_content/main-pars/procedure_1/proc_par/step_3/step_par/image_d278/screen_shot_2018-03-23at091013.png)) option. Tap the parent of the resized component to view the option.
+   You can undo all resizing changes and apply default layout to the panel containing resized components using the **[!UICONTROL Revert breakpoint layout]** ( ![Revert Breakpoint](assets/reverttopreviouslypublishedversion.png)) option. Tap the parent of the resized component to view the option.
 
    >[!NOTE]
    >
@@ -65,6 +65,17 @@ Select **Layout** from the drop-down list that appears at the top of the adaptiv
 
    You can select the Image component and tap the **Float to new line** option available in the toolbar to shift the Image component to the next line.
 
+## Resize panels {#resize-panels-layout-mode}
+
+Execute the following steps if you want to resize the entire panel instead of individual components:
+
+1. Tap any of the components in the panel that you want to resize, select ![Select Parent](assets/select_parent_icon.svg), and select the first option in the drop-down list, if the panel is the immediate parent of the component.
+
+   The blue dots display at the start and end of the responsive grid. 
+
+1. Drag-and drop the blue dots to define the position of the panel in the responsive grid.
+   You can repeat steps 1 and 2 and select ![Select Parent](assets/float_to_new_line_icon.svg) to shift the resized panel to the next line.
+
 ## Enable the new responsive grid for old responsive layouts {#enableresponsivegrid}
 
 Enable the new responsive grid for forms that you create using AEM Forms 6.4 or lower version to resize components.
@@ -76,7 +87,7 @@ Enable the new responsive grid for forms that you create using AEM Forms 6.4 or 
 Perform the following steps to enable the new responsive grid:
 
 1. Select **Layout** from the drop-down list that appears at the top next to the **Preview** option. A confirmation to enable the Layout mode displays. 
-1. Tap **Yes **to enable the **Layout** mode for the form.
+1. Tap **Yes** to enable the **Layout** mode for the form.
 
 ### Embed an old fragment in an adaptive form with new responsive layout {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -94,11 +105,11 @@ You can disable the Layout mode for forms with old responsive layout by editing 
 
 Perform the following steps to disable the Layout mode:
 
-1. Select **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]** and open the template used in the form in **[!UICONTROL Edit]**mode.
+1. Select **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]** and open the template used in the form in **[!UICONTROL Edit]** mode.
 1. Select the Document Container in the left pane and tap **[!UICONTROL Policy.]**
 
    ![Disable Layout mode](assets/policy_disable_layout_mode.png)
 
 1. Tap the **[!UICONTROL Layout Settings]** tab and select **[!UICONTROL Disable Layout Mode]**. 
-1. Tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the template properties.
+1. Tap ![Save changes](assets/save_icon.png) to save the template properties.
 

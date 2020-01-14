@@ -3,12 +3,10 @@ title: Sample ContextHub Store Candidates
 seo-title: Sample ContextHub Store Candidates
 description: ContextHub provides several sample store candidates that you can use in your solutions
 seo-description: ContextHub provides several sample store candidates that you can use in your solutions
-uuid: feccd813-6077-4e87-a96e-d451114e5527
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 7f813b59-d904-49b6-994c-be3badf74464
 ---
 
 # Sample ContextHub Store Candidates{#sample-contexthub-store-candidates}
@@ -19,19 +17,23 @@ ContextHub provides several sample store candidates that you can use in your sol
 * How to configure the stores that you create from the store candidates.
 * How the store data is structured so that you can access it.
 
+>[!WARNING]
+>
+>The sample store candidates are provided as reference configurations to help you build your own dedicated configuration for your project and as such should not be used directly.
+
 ## aem.segmentation Sample Store Candidate {#aem-segmentation-sample-store-candidate}
 
 Store for resolved and unresolved ContextHub segments. Automatically retrieves segments from the ContextHub SegmentManager.
 
-**Source Location**
+### Source Location {#source-location-segmentation}
 
-/libs/cq/contexthub/components/stores/segmentation
+`/libs/settings/cloudsettings/legacy/contexthub/segmentation`
 
-**Base Implementation**
+### Base Implementation {#base-implementation-segmentation}
 
 The aem.segmentation store candidate extends [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
-**Configuration**
+### Configuration {#configuration-segmentation}
 
 When you create an aem.segmentation store, you do not need to provide a detailed configuration. The default configuration specifies the location of the ContextHub segment definitions.
 
@@ -45,144 +47,23 @@ When you create an aem.segmentation store, you do not need to provide a detailed
 }
 ```
 
-## aem.resolvedsegments Sample Store Candidate {#aem-resolvedsegments-sample-store-candidate}
-
-Stores the currently resolved segments. Listens to the ContextHub SegmentManager service to automatically update the store.
-
-**Source Location**
-
-/libs/cq/contexthub/components/stores/resolvedsegments
-
-**Base Implementation**
-
-The aem.resolvedsegments store candidate extends [`ContextHub.Store.SessionStore`](/help/sites-developing/contexthub-api.md#contexthub-store-sessionstore).
-
-**Configuration**
-
-The default configuration is inherited from `ContextHub.Store.SessionStore`.
-
-**Data Tree**
-
-Stores that use this store candidate have a data tree that is similar to the following example:
-
-```xml
-{
-   "segments":[],
-   "summary":"No segment"
-}
-```
-
-## contexthub.datetime Sample Store Candidate {#contexthub-datetime-sample-store-candidate}
-
-Stores current date and time information of the client.
-
-**Source Location**
-
-/libs/granite/contexthub/components/stores/datetime
-
-**Base Implementation**
-
-The contexthub.datetime store candidate extends [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
-
-**Configuration**
-
-The default configuration is inherited from `ContextHub.Store.PersistedStore`.
-
-**Data Tree**
-
-Stores that use this store candidate have a data tree that is similar to the following example:
-
-```xml
-{
-   "date":{
-      "year":2015,
-      "month":7,
-      "day":22
-   },
-   "time":{
-      "hours":11,
-      "minutes":52,
-      "seconds":28,
-      "milliseconds":27,
-      "timezoneOffset":240
-   },
-   "formatted":{
-      "utc":{
-         "date":{
-            "year":2015,
-            "month":6,
-            "day":3
-         },
-         "time":{
-            "hours":15,
-            "minutes":52,
-            "seconds":28,
-            "milliseconds":29
-         }
-      },
-      "iso":"2015-07-22T15:52:28Z",
-      "locale":{
-         "date":"7/22/2015",
-         "time":"11:52:28 AM"
-      }
-   },
-   "season":"Spring"
-}
-```
-
-## contexthub.generic-jsonp Sample Store Candidate {#contexthub-generic-jsonp-sample-store-candidate}
-
-Stores data from a JSONP service. For an example of a store configuration for this store candidate, see [Creating a contexthub.generic-jsonp Store](/help/sites-administering/contexthub-config.md#creating-a-contexthub-generic-jsonp-store).
-
-**Source Location**
-
-/libs/granite/contexthub/components/stores/generic-jsonp
-
-**Base Implementation**
-
-The contexthub.datetime store candidate extends [ `ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
-
-**Configuration**
-
-When you create a store based on this store candidate, you need to provide a service object that contains details about the JSONP service to call. The following JSON code illustrates the required format to use for the service object:
-
-```xml
-{
-   "service": {
-      "jsonp": false,
-      "timeout": 1000,
-      "ttl": 1800000,
-      "secure": false,
-      "host": "md5.jsontest.com",
-      "port": 80,
-      "params":{
-         "text":"text to md5"
-      }
-   }
-}
-```
-
-**Data Tree**
-
-The data that the JSONP service returns determines the data tree of the store.
-
 ## contexthub.geolocation Sample Store Candidate {#contexthub-geolocation-sample-store-candidate}
 
 The contexthub.geolocation sample store candidate uses Google Maps to obtain and store information about the client location.
 
-**Source Location**
+### Source Location {#source-location-geolocation}
 
-/libs/granite/contexthub/components/stores/geolocation
+`/libs/settings/cloudsettings/legacy/contexthub/geolocation`
 
-**Base Implementation**
+### Base Implementation {#base-implementation-geolocation}
 
-The contexthub.geolocation store candidate extends [ `ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+The contexthub.geolocation store candidate extends [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
-**Configuration**
+### Configuration {#configuration-geolocation}
 
 The default configuration specifies information about the Google service and the initial latitude and longitude coordinates.
 
-```
+```xml
 {
         "service": {
             "jsonp": false,
@@ -209,7 +90,7 @@ The default configuration specifies information about the Google service and the
     }
 ```
 
-**Data Items**
+### Data Items {#data-items-geolocation}
 
 The store uses a data tree that is similar to the following example:
 
@@ -228,19 +109,19 @@ The store uses a data tree that is similar to the following example:
 
 Stores information about the current client environment such as the device, window, browser, date and time.
 
-**Source Location**
+### Source Location {#source-location-surferinfo
 
-/libs/granite/contexthub/components/stores/profile
+`/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
-**Base Implementation**
+### Base Implementation {#base-implementation-surferinfo}
 
-The contexthub.datetime store candidate extends [ `ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+The contexthub.datetime store candidate extends [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
-**Configuration**
+### Configuration {#configuration-surferinfo}
 
 The default configuration is inherited from `ContextHub.Store.PersistedStore`.
 
-**Data Tree**
+### Data Items {#data-items-surferinfo}
 
 Stores that use this store candidate have a data tree that is similar to the following example:
 
@@ -291,76 +172,19 @@ Stores that use this store candidate have a data tree that is similar to the fol
 }
 ```
 
-## contexthub.tagcloud Sample Data Store {#contexthub-tagcloud-sample-data-store}
-
-The granite.tagcloud sample store candidate stores information about tag usage. Optionally, the store can automatically add tags from named HTML elements.
-
-**Source Location**
-
-/libs/granite/contexthub/components/stores/tagcloud
-
-**Base Implementation**
-
-The contexthub.geolocation store candidate extends [ `ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
-
-**Configuration**
-
-Configure stores based on this store candidate using an object that contains the following items:
-
-* **parseMeta:** (Boolean) Whether tags should be added from HTML `meta` elements that exist on the page.
-
-* **metaName:** (String) If `parseMeta` is `true`, the value of the `name` attribute of the `meta` element that contains the tags.
-
-* **`tags[]`:** (String) An array of tags to add to the store.
-
-Provide different device profiles in the Detail Configuration as required. The following configuration is the default:
-
-```xml
-{
-   "parseMeta":true,
-   "metaName":"ch.tagcloud",
-   "tags":[]
-}
-```
-
-**Data Tree**
-
-Stores that use this store candidate have a data tree that is similar to the following example. The store contains tags `tag1` and `tag2`.
-
-```xml
-{
-   "default":{
-      "tag1":{
-         ".count":1
-      },
-      ".recentAdded":{
-         "name":"default:tag2",
-         "count":1
-      },
-      "tag2":{
-         ".count":1
-      }
-   },
-   ".recentAdded":{
-      "name":"default:tag2",
-      "count":1
-   }
-}
-```
-
 ## granite.emulators Sample Store Candidate {#granite-emulators-sample-store-candidate}
 
 The granite.emulators sample store candidate stores information about client devices.
 
-**Source Location**
+### Source Location {#source-location-emulators}
 
-/libs/granite/contexthub/components/stores/emulators
+`/libs/settings/cloudsettings/legacy/contexthub/emulators`
 
-**Base Implementation**
+### Base Implementation {#base-implementation-emulators}
 
-The contexthub.geolocation store candidate extends [ `ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+The contexthub.geolocation store candidate extends [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
-**Configuration**
+### Configuration {#configuration-emulators}
 
 The default configuration includes an array named `defaultEmulators` that contains information about different devices. When you create a store, provide different device profiles in the Detail Configuration property as required, using the format illustrated in the following example:
 
@@ -407,7 +231,7 @@ The default configuration includes an array named `defaultEmulators` that contai
 }
 ```
 
-**Data Items**
+### Data Items {#data-items-emulators}
 
 The store data tree is similar to the following example:
 
@@ -486,15 +310,15 @@ The store data tree is similar to the following example:
 
 Stores information about the current user.
 
-**Source Location**
+### Source Location {#source-location-profile}
 
-/libs/granite/contexthub/components/stores/profile
+`/libs/settings/cloudsettings/legacy/contexthub/profile`
 
-**Base Implementation**
+### Base Implementation {#base-implementation-profile}
 
-The contexthub.datetime store candidate extends [ `ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+The contexthub.datetime store candidate extends [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
-**Configuration**
+### Configuration {#configuration-profile}
 
 The following default configuration is used. You should not change this configuration.
 
@@ -509,7 +333,7 @@ The following default configuration is used. You should not change this configur
 }
 ```
 
-**Data Tree**
+### Data Items {#data-items-profile}
 
 Stores that use this store candidate have a data tree that is similar to the following example:
 
@@ -521,4 +345,3 @@ Stores that use this store candidate have a data tree that is similar to the fol
    "authorizableId":"anonymous"
 }
 ```
-

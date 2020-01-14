@@ -17,7 +17,7 @@ docset: aem65
 
 Use the Offers console to create offers that you can [use in activity experiences](/help/sites-authoring/content-targeting-touch.md). Creating offers in the Offers console saves time when several experiences require the same offer:
 
-* Create the offer once in the library and use it in multiple experieces of your brand activities. 
+* Create the offer once in the library and use it in multiple experieces of your brand activities.
 * Change the offer in the library and the change affects all of the experiences that use it.
 
 The Offers console organizes offers by brand. Each brand contains a library of offers that can be used in a brand's experiences. Use folders to define a heirarchical structure for organizing offers in each library. A logical folder structure enables authors to easily find offers by browsing. Tagging and search tools also enable authors to find offers.
@@ -46,7 +46,7 @@ Add a folder to the offer library of a brand to organize and store offers. You c
 
    ![screen-shot_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
 
-1. Select **Folder** and click **Next**. 
+1. Select **Folder** and click **Next**.
 1. Type a title for the folder as you want it to appear in the offer library and type or select tags.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
@@ -103,6 +103,5 @@ The current search criteria appear next to the search results. You can also sort
 
 To search offers:
 
-1. At the top of the Offers console, click or tap the magnifying glass icon. By default the search is limited to offers. 
+1. At the top of the Offers console, click or tap the magnifying glass icon. By default the search is limited to offers.
 1. Enter your keyword to search for offers. Select from the results.
-

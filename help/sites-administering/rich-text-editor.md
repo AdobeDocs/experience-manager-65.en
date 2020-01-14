@@ -1,13 +1,9 @@
 ---
-title: Configure the Rich Text Editor
-seo-title: Configure the Rich Text Editor
-description: Learn to configure the AEM Rich Text Editor.
-seo-description: Learn to configure the AEM Rich Text Editor.
+title: Configure the Rich Text Editor to author content in AEM 
+description: Learn to configure the AEM Rich Text Editor to author content in AEM.
 uuid: 4f87745e-586a-4cba-887b-391e37520ffc
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: operations
-content-type: reference
 discoiquuid: 2cde81d3-5fc1-4a32-a307-7dc592f37162
 docset: aem65
 ---
@@ -20,72 +16,36 @@ RTE can be configured to enable, disable, and extend the features available in t
 
 The following workflow illustrates a recommended order of completing the RTE configuration tasks.
 
-![Typical workflow to configure Rich Text Editor](assets/rte_workflow_v1.png)
-
-Typical workflow to configure Rich Text Editor
+![Sequence of steps to learn how to configure rte](assets/rte_workflow_v1.png)
+*Figure: Sequence of steps to learn how to configure RTE*
 
 ## Understand Touch-enabled UI and Classic UI {#understand-touch-enabled-ui-and-classic-ui}
 
-The Touch-enabled UI is the standard UI for AEM. Adobe introduced Touch UI with [responsive design](/help/sites-authoring/responsive-layout.md) for authoring environment, in version 5.6. The Touch UI is designed for touch and desktop devices. The UI differs considerably from the original classic UI.
+The Touch-enabled UI is the standard user interface for AEM. Adobe introduced Touch UI with [responsive design](/help/sites-authoring/responsive-layout.md) for authoring environment. The Touch UI is designed for touch and desktop devices. The UI differs considerably from the original classic UI.
 
 ![Rich Text Editor toolbar in Touch-enabled UI](assets/chlimage_1-35.png)
-
-Rich Text Editor toolbar in Touch-enabled UI
+*Figure: Rich Text Editor toolbar in Touch-enabled UI*
 
 ![Rich Text Editor toolbar in Classic UI](assets/rtedefault.png)
+*Figure: Rich Text Editor toolbar in Classic UI*
 
-Rich Text Editor toolbar in Classic UI
-
-**See also**:
-
-* [UI recommendations](/help/sites-deploying/ui-recommendations.md)
-* About deprecating the Classic UI, see [AEM 6.5 Release Notes](/help/release-notes/deprecated-removed-features.md)
-* For difference between the UIs, see [Touch UI and Classic UI](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
-* To understand the Touch-enabled UI in detail, see [Concepts of AEM Touch UI](/help/sites-developing/touch-ui-concepts.md)
+>[!MORELIKETHIS]
+>
+>* [UI recommendations](/help/sites-deploying/ui-recommendations.md)
+>* About deprecating the Classic UI, see [AEM 6.5 Release Notes](/help/release-notes/deprecated-removed-features.md)
+>* For difference between the UIs, see [Touch UI and Classic UI](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
+>* To understand the Touch-enabled UI in detail, see [Concepts of AEM Touch UI](/help/sites-developing/touch-ui-concepts.md)
 
 ## Various modes of editing {#editingmodes}
 
 Authors can create and edit textual content in AEM using the different modes of components. The toolbar options for authoring and formatting content and the user experience of RTE-enabled components in different editing mode varies based on RTE configurations.
 
-<table>
- <tbody>
-  <tr>
-   <th>Editing mode</th>
-   <th>Editing area</th>
-   <th>Recommended features to be enabled<br /> </th>
-   <th>Touch UI</th>
-   <th>Classic UI</th>
-  </tr>
-  <tr>
-   <td>Inline</td>
-   <td>In-place editing for quick, minor edits; Format without opening a dialog box</td>
-   <td>Minimal RTE features</td>
-   <td>Y</td>
-   <td>Y</td>
-  </tr>
-  <tr>
-   <td>RTE full screen</td>
-   <td>Covers entire page<br /> </td>
-   <td>All the required RTE features<br /> </td>
-   <td>Y</td>
-   <td>N<br /> </td>
-  </tr>
-  <tr>
-   <td>Dialog</td>
-   <td>Dialog box on top of the page content but does not cover the entire page</td>
-   <td>All the required RTE features in Classic UI; judiciously enable features in Touch UI<br /> </td>
-   <td>Y</td>
-   <td>Y</td>
-  </tr>
-  <tr>
-   <td>Dialog full screen<br /> </td>
-   <td>Same as Full screen mode; contains fields of the dialog alongside RTE<br /> </td>
-   <td>All the required RTE features</td>
-   <td>Y</td>
-   <td>N</td>
-  </tr>
- </tbody>
-</table>
+|Editing mode|Editing area|Recommended features to be enabled|Touch UI|Classic UI|
+|--- |--- |--- |--- |--- |
+|Inline|In-place editing for quick, minor edits; Format without opening a dialog box|Minimal RTE features|Y|Y|
+|RTE full screen|Covers entire page|All the required RTE features|Y|N|
+|Dialog|Dialog box on top of the page content but does not cover the entire page|All the required RTE features in Classic UI; judiciously enable features in Touch UI|Y|Y|
+|Dialog full screen|Same as Full screen mode; contains fields of the dialog alongside RTE|All the required RTE features|Y|N|
 
 >[!NOTE]
 >
@@ -96,8 +56,7 @@ Authors can create and edit textual content in AEM using the different modes of 
 When opened (with a slow double-tap/click) the content can be edited within the page. A compact toolbar with very basic options is presented.
 
 ![Inline editing with basic toolbar in Touch-enabled UI](assets/chlimage_1-36.png)
-
-Inline editing with basic toolbar in Touch-enabled UI
+*Figure: Inline editing with basic toolbar in Touch-enabled UI*
 
 In Classic UI, a slow double-click on the component allows inline editing and an orange outline highlights the content. If the Content Finder is open, a toolbar with the available RTE formatting options is displayed at the top of the window. If the Content Finder is not open, the formatting options are not displayed and you can do basic text edits only.
 
@@ -108,20 +67,17 @@ AEM components can be opened in full screen view that hides the page content and
 In the dialog full screen mode, along with a detailed RTE toolbar, the options and components available in a dialog are also available. It is applicable only for a dialog that contains RTE alongside other components.
 
 ![The detailed RTE toolbar when editing in full screen mode in Touch-enabled UI](assets/chlimage_1-37.png)
-
-The detailed RTE toolbar when editing in full screen mode in Touch-enabled UI
+*Figure: The detailed RTE toolbar when editing in full screen mode in Touch-enabled UI*
 
 ### Dialog editing {#dialog-editing}
 
 When a component is double-clicked a dialog box opens for editing the contents. The dialog box opens on top of the existing page. In some specific scenarios, the dialog opens as a pop-up window. For example, when a Text component is part of a column in a multi-column page layout and the area available for the dialog is less.
 
 ![Dialog editing mode in Touch-enabled UI](assets/dialog_editing_modetouchui.png)
-
-Dialog editing mode in Touch-enabled UI
+*Figure: Dialog editing mode in Touch-enabled UI*
 
 ![Dialog box in Classic UI that contains detailed toolbar for editing](assets/chlimage_1-38.png)
-
-Dialog box in Classic UI that contains detailed toolbar for editing
+*Figure: Dialog box in Classic UI that contains detailed toolbar for editing*
 
 ## About RTE plug-ins and the associated features {#aboutplugins}
 
@@ -142,90 +98,24 @@ The following table lists the current plug-ins, showing:
 * Permitted values for the `features` property.
 * A description of the functionality provided by the plug-in.
 
-<table>
- <tbody>
-  <tr>
-   <td><p>Plug-in ID<br /> <br /> </p> </td>
-   <td><p>features<br /> <br /> </p> </td>
-   <td><p>Description<br /> <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>edit</p> </td>
-   <td><p>cut<br /> copy<br /> paste-default<br /> paste-plaintext<br /> paste-wordhtml</p> </td>
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">Cut, copy and, the three paste modes</a>.</p> </td>
-  </tr>
-  <tr>
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin">findreplace</a></p> </td>
-   <td><p>find<br /> replace</p> </td>
-   <td><p>Find and replace.</p> </td>
-  </tr>
-  <tr>
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin">format</a></p> </td>
-   <td><p>bold<br /> italic<br /> underline</p> </td>
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">Basic text formatting</a>.</p> </td>
-  </tr>
-  <tr>
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin">image</a></p> </td>
-   <td><p>image</p> </td>
-   <td><p>Basic image support (drag from content or Content Finder). Depending on the browser, the support has different behaviors for authors</p> </td>
-  </tr>
-  <tr>
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin">keys</a></p> </td>
-   <td><p> </p> </td>
-   <td><p>To define this value, see <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize" target="_blank">tab size</a>.</p> </td>
-  </tr>
-  <tr>
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin">justify</a></p> </td>
-   <td><p>justifyleft<br /> justifycenter<br /> justifyright</p> </td>
-   <td><p>Paragraph alignment.</p> </td>
-  </tr>
-  <tr>
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin">links</a></p> </td>
-   <td><p>modifylink<br /> unlink<br /> anchor</p> </td>
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles" target="_blank">Hyperlinks and anchors</a>.</p> </td>
-  </tr>
-  <tr>
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin">lists</a></p> </td>
-   <td><p>ordered<br /> unordered<br /> indent<br /> outdent</p> </td>
-   <td><p>This plug-in controls both <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin" target="_blank">indentation and lists</a>; including nested lists.</p> </td>
-  </tr>
-  <tr>
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin">misctools</a></p> </td>
-   <td><p>specialchars<br /> sourceedit</p> </td>
-   <td>Miscellaneous tools allow authors to enter <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar" target="_blank">special characters</a> or edit the HTML source. Also, you can add a whole <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar" target="_blank">range of special characters</a> if you want to define your own list.</td>
-  </tr>
-  <tr>
-   <td><p>Paraformat</p> </td>
-   <td><p>paraformat</p> </td>
-   <td>The default paragraph formats are Paragraph, Heading 1, Heading 2, and Heading 3 (&lt;p&gt;, &lt;h1&gt;, &lt;h2&gt;, and &lt;h3&gt;). You can <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats" target="_blank">add more paragraph formats</a> or extend the list.</td>
-  </tr>
-  <tr>
-   <td><p>spellcheck</p> </td>
-   <td><p>checktext</p> </td>
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict" target="_blank">Language aware spell checker</a>.</p> </td>
-  </tr>
-  <tr>
-   <td><p>styles</p> </td>
-   <td><p>styles</p> </td>
-   <td>Support for styling using a CSS class. <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="-blank">Add new text styles</a> if you want to add (or extend) your own range of styles for use with text.</td>
-  </tr>
-  <tr>
-   <td><p>subsuperscript</p> </td>
-   <td><p>subscript<br /> superscript</p> </td>
-   <td><p>Extensions to the basic formats, adding sub- and super-script.</p> </td>
-  </tr>
-  <tr>
-   <td><p>table</p> </td>
-   <td><p>table<br /> removetable<br /> insertrow<br /> removerow<br /> insertcolumn<br /> removecolumn<br /> cellprops<br /> mergecells<br /> splitcell<br /> selectrow<br /> selectcolumns</p> </td>
-   <td>See <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles" target="_blank">configure table styles</a>, if you want to add your own styles for either entire tables or individual cells.</td>
-  </tr>
-  <tr>
-   <td><p>undo</p> </td>
-   <td><p>undo<br /> redo</p> </td>
-   <td>History size of <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory" target="_blank">undo and redo</a> operations.</td>
-  </tr>
- </tbody>
-</table>
+
+|Plug-in ID|features|Description|
+|--- |--- |--- |
+|edit|cut copy paste-default paste-plaintext paste-wordhtml| [Cut, copy and, the three paste modes](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles).|
+|[findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin)|find replace| Find and replace.|
+|[format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin)|bold italic underline| [Basic text formatting](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles).|
+|[image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin)|image|Basic image support (drag from content or Content Finder). Depending on the browser, the support has different behaviors for authors|
+|[keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin)||To define this value, see [tab size](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize).|
+|[justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin)|justifyleft justifycenter justifyright|Paragraph alignment.|
+|[links](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin)|modifylink unlink anchor|[Hyperlinks and anchors](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles).|
+|[lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin)|ordered unordered indent outdent|This plug-in controls both [indentation and lists](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); including nested lists.|
+|[misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin)|specialchars sourceedit|Miscellaneous tools allow authors to enter [special characters](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) or edit the HTML source. Also, you can add a whole [range of special characters](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) if you want to define your own list.|
+|Paraformat|paraformat|The default paragraph formats are Paragraph, Heading 1, Heading 2, and Heading 3 (`<p>`, `<h1>`, `<h2>`, and `<h3>`). You can [add more paragraph formats](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) or extend the list.|
+|spellcheck|checktext|[Language aware spell checker](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict).|
+|styles|styles|Support for styling using a CSS class. [Add new text styles](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) if you want to add (or extend) your own range of styles for use with text.|
+|subsuperscript|subscript superscript|Extensions to the basic formats, adding sub- and super-script.|
+|table|table removetable insertrow removerow insertcolumn removecolumn cellprops mergecells splitcell selectrow selectcolumns|See [configure table styles](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles), if you want to add your own styles for either entire tables or individual cells.|
+|undo|undo redo|History size of [undo and redo](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory) operations.|
 
 >[!NOTE]
 >
@@ -245,11 +135,8 @@ The [mode of RTE editing (and the UI)](#editingmodes) that you provide for your 
 >[!NOTE]
 >
 >Do not name the node under `cq:inplaceEditing` as `config`. On `cq:inplaceEditing` node, define the following properties:
->
 >* **Name**: `configPath`
->
 >* **Type**: `String`
->
 >* **Value**: path of the node containing the actual configuration
 >
 >Do not name the RTE configuration node as `config`. Otherwise, the RTE configurations take effect for only the administrators and not for the users in the group `content-author`.
@@ -274,10 +161,7 @@ RTE functionalities are made available via a series of plug-ins, each with featu
 
 For detailed configurations of the RTE plug-ins, see [how to activate and configure the RTE plug-ins](/help/sites-administering/configure-rich-text-editor-plug-ins.md).
 
-
-Download this sample configuration to understand how to configure RTE. In this package all the features are enabled.
-
-[Get File](/help/assets/assets/rte-sample-all-features-enabled-10.zip)
+**Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled.
 
 >[!NOTE]
 >
@@ -297,11 +181,6 @@ Download this sample configuration to understand how to configure RTE. In this p
 ## Configure RTE toolbar {#dialogfullscreen}
 
 AEM allows you to configure the interface for the Rich Text Editor differently for the different editing modes. The default settings are provided below. You can override these defaults based on your requirements. You customize only the toolbar features that you want to provide to your authors. You need not specify all the toolbar configurations.
-
-For best authoring experience,
-
-* enable only the plug-ins without pop-up for a floating dialog. Plug-ins without pop-up are smaller in size and are most suitable for floating dialog.
-* Enable the plug-ins with larger pop-up, such as the `Paste` plug-in, only in the full screen dialog mode or in full screen mode. Plug-ins with large pop-up need more screen real-estate to provide a good authoring experience.
 
 To configure the toolbar for `dialogFullScreen`, use the following sample configuration.
 
@@ -346,11 +225,11 @@ To configure the toolbar for `dialogFullScreen`, use the following sample config
 
 Different UI settings are used for the inline mode and full screen mode. The toolbar property is used to specify the buttons of the toolbar.
 
-For example, if the button is itself a feature (for example, Bold), it is specified as `PluginName#FeatureName` (for example, `links#modifylink`).
+For example, if the button is itself a feature (for example, `Bold`), it is specified as `PluginName#FeatureName` (for example, `links#modifylink`).
 
 If the button is a popover (containing some features of a plug-in), it is specified as `#PluginName` (for example, `#format`).
 
-Separators ( | ) between a group of buttons can be specified with '-'.
+Separators (`|`) between a group of buttons can be specified with `-`.
 
 The pop-up node under inline or full-screen mode contains a list of the popovers being used. Each child node under the 'popovers' node is named after the plug-in (for example, format). It has a property 'items' containing a list of features of the plug-in (for example, format#bold).
 
@@ -395,7 +274,6 @@ Below is a sample snippet to map the command Bold to the Coral icon named `textI
         </cui>
     </uiSettings>
 </text>
-
 ```
 
 ## Switch to CoralUI 2 Rich Text Editor {#switch-to-coralui-rich-text-editor}
@@ -441,9 +319,7 @@ In particular, to see the plug-ins and related options available:
 
 * More information about HTML Rules for links is also available.
 
-These can be used to extend and customize your own RTE, for example:
-
-* To list the anchors available in the page when creating a link you can provide your own implementation of the LinkPlugin.
+These can be used to extend and customize your own RTE. For example, to list the anchors available in the page when creating a link you can provide your own implementation of the `LinkPlugin`.
 
 ## Known limitations {#known-limitations}
 
@@ -456,6 +332,48 @@ AEM RTE capability has the following limitations:
 * Do not name the RTE configuration node `config`. Otherwise, the RTE configuration takes effect for only the administrators and not for the users in the group `content-author`.
 
 * RTE does not support inline frame or iframe to embed content.
+
+## Best practices and tips {#best-practices-and-tips}
+
+* Enable only the plug-ins without pop-up for a floating dialog. Plug-ins without pop-up are smaller in size and are most suitable for a floating dialog.
+* Enable the plug-ins with larger pop-up, such as the `Paste` plug-in, only in the full-screen dialog mode or in full-screen mode. Plug-ins with large pop-up need more screen real-estate to provide a good authoring experience.
+* If you are using custom plugins for CoralUI3 RTE, use `rte.coralui3` library.
+
+## Troubleshoot frequent issues with RTE {#troubleshoot-issues-with-aem-rich-text-editor}
+
+**How to select multiple table cells?**
+
+To select multiple cells in a table, press `Ctrl` or `Cmd` key and then click the table cells one-by-one.
+
+Now perform operation on the selection, say set the properties of the selected cells.
+
+**Hyperlinks are lost when editing a component using Configure button**
+
+Add a hyperlink in a text component by editing it using the Configure button. You may lose the hyperlink when editing it again and validating the hyperlink for the second time.
+
+A workaround is to click in the text component when the edit dialog is displayed the second time and then run the link validation.
+
+This issue is resolved in AEM 6.3 and later.
+
+**HTML content added in source-edit mode is lost**
+
+Do not add a XSS-prone HTML. AEM, and not RTE, may remove some HTML content to adhere to the XSS antisamy rules.
+
+To verify that the pasted HTML is saved, check the saved content in CRXDE (in the content node).
+
+If not saved, the HTML must have been removed by RTE as it did not adhere to the RTE’s rules.
+
+If saved in CRXDE but not rendered on the Page (to check rendering, see page's [preview](/help/sites-authoring/editing-content.md#preview-mode), it is removed by AEM XSS rules.
+
+**Multifield component is not working as expected**
+
+To create multifield component, use CoralUI 3 exclusively. Do not use CoralUI 2 component dialogs.
+
+Also, verify that your multifield implementation code and node structure are correct.
+
+**Configuration available to administrators are not available to authors**
+
+If the interface configurations updates are reflected for administrators but not for author accounts, ensure that the configuration node is not named `config`. Use the [`configPath` property](/help/sites-developing/components-basics.md#cq-inplaceediting).
 
 >[!MORELIKETHIS]
 >

@@ -1,13 +1,9 @@
 ---
 title: Best Practices for Translating Assets Efficiently
-seo-title: Best Practices for Translating Assets Efficiently
 description: Best practices for efficient management of assets to synchronize various translated versions and to streamline translation workflows.
-seo-description: Best practices for efficient management of assets to synchronize various translated versions and to streamline translation workflows.
 uuid: ca0ff03a-62dc-4406-85d9-0c2f74af306d
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: 2480421b-87b1-42d0-ab5f-e81947ffcd65
 ---
 
@@ -32,18 +28,17 @@ You can also make a few configuration changes to a couple of workflows and the t
     * [Set up File Data Store](/help/sites-deploying/data-store-config.md)
     * [Set up Amazon S3 Data Store](/help/sites-deploying/data-store-config.md)
 
-1. Disable the [DAM MetaData Writeback](/help/sites-administering/workflow-offloader.md#disable-offloading) workflow
+1. Disable the [DAM MetaData Write-back](/help/sites-administering/workflow-offloader.md#disable-offloading) workflow
 
-   As the name suggests, the *DAM Metadata Writeback* workflow rewrites the metadata to the binary file. Because the metadata changes after translation, writing it back to the binary file generates a different binary for a language copy.
+   As the name suggests, the [!UICONTROL DAM Metadata Writeback] workflow rewrites the metadata to the binary file. Because the metadata changes after translation, writing it back to the binary file generates a different binary for a language copy.
 
    >[!NOTE]
    >
-   >Disabling the *DAM MetaData Writeback* workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
+   >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
 
-1. Enable the *Set last modified date* workflow.
+1. Enable the [!UICONTROL Set last modified date] workflow.
 
-   The *DAM MetaData Writeback* workflow configures the last modified date for an asset. Because you disable this workflow in step 2, AEM Assets is no longer able to keep the last modified date of assets up-to-date. Therefore, enable the *Set last modified date* workflow to ensure that last modified dates of assets are up-to-date. Assets with outdated last modified dates can cause errors.
+   The [!UICONTROL DAM MetaData Writeback] workflow configures the last modified date for an asset. Because you disable this workflow in step 2, AEM Assets is no longer able to keep the last modified date of assets up-to-date. Therefore, enable the *Set last modified date* workflow to ensure that last modified dates of assets are up-to-date. Assets with outdated last modified dates can cause errors.
 
-1. [Configure the translation integration framework](/help/sites-administering/tc-tic.md) to stop translating asset binaries. Unselect the “Translate Assets" option under the Assets tab to stop the translation of Asset binaries.
+1. [Configure the translation integration framework](/help/sites-administering/tc-tic.md) to stop translating asset binaries. Unselect the **[!UICONTROL Translate Assets]** option under the Assets tab to stop the translation of Asset binaries.
 1. Translate asset metadata/tags using [Multilingual Asset workflows](multilingual-assets.md).
-

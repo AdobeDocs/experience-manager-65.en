@@ -243,6 +243,6 @@ When the validation of a field results in a warning, an inline warning is displa
 
 `Styling Fields with Validation Errors`
 
-When validation for a field fails, the style of the widget changes. This style change is done by applying a CSS class **widgetError **on the widget component. To modify the default styling, override the **widgetError** class.
+When validation for a field fails, the style of the widget changes. This style change is done by applying a CSS class **widgetError** on the widget component. To modify the default styling, override the **widgetError** class.
 
 [Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

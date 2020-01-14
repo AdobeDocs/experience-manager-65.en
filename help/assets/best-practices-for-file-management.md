@@ -1,6 +1,5 @@
 ---
 title: Best Practices for Organizing Your Digital Assets for Using Profiles
-seo-title: Best Practices for Organizing Your Digital Assets for Using Profiles
 description: Tips and best-practices for naming, organizing, managing metadata for digital asset files.
 seo-description: Tips and best-practices for naming, organizing, managing metadata for digital asset files.
 uuid: 14aef804-b2b8-4f60-a78c-b8c5168ba7ce
@@ -26,15 +25,15 @@ The following are best practice tips for organizing your digital asset files.
   * See [Metadata Profiles.](metadata-profiles.md)
   * See [Metadata for Digital Asset Management](metadata.md).
 
-* In most cases, your collection of digital assets are always growing. Therefore, it is important, earlier on, to formalize metadata use, folder structure, and file naming among all your uploaded assets. Standardizing on these things ensures that as your pool of digital assets grows, you can apply processing profiles to folders with greater precision and consistency.
-* Use folders only to impose a consisistent storage structure for your digital assets. For example, folder structures that can help you refine what profiles to assign may include the following:
+* In most cases, your collection of digital assets are always growing. Therefore, it is important&mdash;earlier on&mdash;to formalize metadata use, folder structure, and file naming among all your uploaded assets. Standardizing on these things ensures that as your pool of digital assets grows, you can apply processing profiles to folders with greater precision and consistency.
+* Use folders only to impose a consistent storage structure for your digital assets. For example, folder structures that can help you refine what profiles to assign may include the following:
 
     * **Development folders** &ndash; contains digital assets that you are currently working on.
     * **Client folders** &ndash; contains digital assets based on clients or project names.
     * **Master folders** &ndash; contains original, source digital assets.
     * **Rendition folders** &ndash; contains renditions and copies of the original, source digital assets.
     * **File Size folders** &ndash; contains digital assets based on small, medium, or large file sizes.
-    * **Sgitang folders** &ndash; contains digital assets that are ready to publish live on your website.
+    * **Staging folders** &ndash; contains digital assets that are ready to publish live on your website.
     * **Mime type folders** &ndash; contains digital assets that are specific to mime types such as images, documents, and multimedia.
     * **Archive folders** &ndash; contains retired digital assets.
     * **Date-based folders** &ndash; contains digital assets based on a creation date or a last modified date.

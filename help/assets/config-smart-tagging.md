@@ -1,20 +1,15 @@
 ---
 title: Configure Asset tagging using the Smart Content Service
-seo-title: Configure Asset tagging using the Smart Content Service
 description: Learn how to configure smart tagging and enhanced smart tagging in AEM, using the Smart Content Service.
-seo-description: How to configure the Smart Tags Content Service from within AEM.
 uuid: 1b25b7e4-2696-471d-8e7c-7e699c2af37e
-contentOwner: asgupta
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: managing-assets
-content-type: reference
 discoiquuid: 84210f44-aa54-47a9-8109-243316ca33ed
 docset: aem65
-legacypath: /content/docs/en/aem/6-2/author/assets/managing-assets-touch-ui/configuring-smart-content-services-integration
 
 ---
 
-# Configure Asset tagging using the Smart Content Service{#configure-asset-tagging-using-the-smart-content-service}
+# Configure Asset tagging using the Smart Content Service {#configure-asset-tagging-using-the-smart-content-service}
 
 You can integrate Adobe Experience Manager (AEM) with the Smart Content Service using Adobe I/O. Use this configuration to access the Smart Content Service from within AEM.
 
@@ -120,19 +115,24 @@ After you've completed the configuration, you can use a JMX MBean to validate th
 1. Tap/click **[!UICONTROL Edit]** from the toolbar.
 1. Expand the Side Panel to display the steps. Drag **[!UICONTROL Smart Tag Asset]** step that is available in the DAM Workflow section and place it after the **[!UICONTROL Process Thumbnails]** step.
 
-   ![Add smart tag asset step after the process thumbnail  step in the DAM Update Asset workflow](assets/chlimage_1-2.png)
+   ![Add smart tag asset step after the process thumbnail  step in the DAM Update Asset workflow](assets/chlimage_1-105.png)
 
-1. Open the step in edit mode. Under **Advanced Settings**, ensure that the **Handler Advance** option is selected.
+1. Open the step in edit mode. Under **[!UICONTROL Advanced Settings]**, ensure that the **[!UICONTROL Handler Advance]** option is selected.
 
-   ![chlimage_1-3](assets/chlimage_1-3.png)
+   ![chlimage_1-3](assets/chlimage_1-106.png)
 
-1. In the **Arguments** tab, select **Ignore Errors** if you want the workflow to complete even if the automatic tagging step fails.
+1. In the **[!UICONTROL Arguments]** tab, select **[!UICONTROL Ignore Errors]** if you want the workflow to complete even if the automatic tagging step fails.
 
-   ![chlimage_1-4](assets/chlimage_1-4.png)
+   ![chlimage_1-4](assets/chlimage_1-107.png)
 
-   To tag assets when they are uploaded irrespective of whether smart tagging is enabled on folders, select **Ignore Smart Tag Flag**.
+   To tag assets when they are uploaded irrespective of whether smart tagging is enabled on folders, select **[!UICONTROL Ignore Smart Tag Flag]**.
 
-   ![chlimage_1-5](assets/chlimage_1-5.png)
+   ![chlimage_1-5](assets/chlimage_1-108.png)
 
-1. Tap/click **OK** to close the process step, and then save the workflow.
+1. Tap **[!UICONTROL OK]** to close the process step, and then save the workflow.
 
+>[!MORELIKETHIS]
+>
+>* [Manage Smart Tags](managing-smart-tags.md)
+>* [Overview of and how to train Smart Tags](enhanced-smart-tags.md)
+>* [Guidelines and rules to train the Smart Content Service](smart-tags-training-guidelines.md)

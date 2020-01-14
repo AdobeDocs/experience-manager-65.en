@@ -1,0 +1,35 @@
+SYMBOLIC NAME                                       BUNDLE NAME                                                  VERSION
+com.adobe.cq.social.cq-social-console               AEM Communities Console - Bundle                             1.4.35
+com.adobe.cq.social.cq-social-reporting-management  AEM Communities Enablement Reporting Management- Bundle      1.1.26
+com.adobe.cq.cq-dam-mac-sync                        Adobe CQ DAM - Adobe Marketing Cloud Synchronisation Bundle  1.3.44
+com.adobe.cq.cq-dam-mac-sync-helper                 Adobe CQ DAM - Adobe Marketing Cloud Synchronisation Helper  1.3.22
+com.adobe.cq.dam.cq-scene7-imaging                  Adobe CQ DAM Scene7 Dynamic Imaging                          1.4.162
+com.day.cq.wcm.cq-wcm-translation                   Adobe CQ Translation Workflow                                1.3.148
+com.adobe.granite.cors                              Adobe Granite CORS Support                                   1.0.4.CQ630-B0004
+com.adobe.granite.jetty.ssl                         Adobe Granite SSL ContextFactory for Jetty                   0.0.14.CQ630-B0002
+org.apache.commons.codec                            Apache Commons Codec                                         1.12.0
+org.apache.commons.io                               Apache Commons IO                                            2.6.0
+org.apache.jackrabbit.jackrabbit-api                Apache Jackrabbit API                                        2.14.8
+com.adobe.cq.cq-product-info-provider               CQ ProductInfo Provider                                      6.3.38
+com.day.cq.mcm.cq-mcm-campaign                      Day Communique 5 Adobe Campaign Integration                  1.2.18
+com.day.cq.dam.cq-dam-core                          Day Communique 5 DAM Core Implementation                     5.10.332
+com.day.cq.wcm.cq-msm-core                          Day Communique 5 WCM Multi Site Management Core              5.10.72
+org.apache.jackrabbit.jackrabbit-data               Jackrabbit Data                                              2.14.8
+org.apache.jackrabbit.jackrabbit-jcr-commons        Jackrabbit JCR Commons                                       2.14.8
+org.apache.jackrabbit.jackrabbit-jcr-rmi            Jackrabbit JCR-RMI                                           2.14.8
+org.apache.jackrabbit.jackrabbit-spi                Jackrabbit SPI                                               2.14.8
+org.apache.jackrabbit.jackrabbit-spi-commons        Jackrabbit SPI Commons                                       2.14.8
+org.apache.jackrabbit.jackrabbit-webdav             Jackrabbit WebDAV Library                                    2.14.8
+com.fasterxml.jackson.core.jackson-annotations      Jackson-annotations                                          2.10.0
+com.fasterxml.jackson.core.jackson-core             Jackson-core                                                 2.10.0
+org.apache.jackrabbit.oak-blob                      Oak Blob Store                                               1.6.18
+org.apache.jackrabbit.oak-authorization-cug         Oak CUG Authorization                                        1.6.18
+org.apache.jackrabbit.oak-commons                   Oak Commons                                                  1.6.18
+org.apache.jackrabbit.oak-core                      Oak Core                                                     1.6.18
+org.apache.jackrabbit.oak-auth-external             Oak External Authentication Support                          1.6.18
+org.apache.jackrabbit.oak-jcr                       Oak JCR Binding                                              1.6.18
+org.apache.jackrabbit.oak-auth-ldap                 Oak LDAP Authentication Support                              1.6.18
+org.apache.jackrabbit.oak-lucene                    Oak Lucene                                                   1.6.18
+org.apache.jackrabbit.oak-segment-tar               Oak Segment Tar                                              1.6.18
+org.apache.jackrabbit.oak-solr-osgi                 Oak Solr OSGi                                                1.6.18
+com.fasterxml.jackson.core.jackson-databind         jackson-databind                                             2.10.0

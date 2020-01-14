@@ -1,10 +1,8 @@
 ---
 title: Metadata Schemata Reference
-seo-title: Metadata Schemata Reference
 description: Learn about standard conventions for describing asset metadata, including Dublin Core, IPTC, and other metadata schema. 
-seo-description: Learn about standard conventions for describing asset metadata, including Dublin Core, IPTC, and other metadata schema. 
 uuid: f37126b9-0f78-4621-b442-1ff5b2573275
-contentOwner: Chiradeep Majumdar
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
@@ -25,74 +23,23 @@ The simple Dublin Core Metadata Element Set (DCMES) contains 15 metadata element
 
 In addition to the DCMES, there are other metadata elements created by the Dublin Core Initiative. See the [Dublin Core Initiative](https://dublincore.org/) for more information.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property</strong></td> 
-   <td><strong>Description</strong></td> 
-  </tr>
-  <tr>
-   <td>contributor</td> 
-   <td>The person or company responsible for making contributions to the content.</td> 
-  </tr>
-  <tr>
-   <td>coverage</td> 
-   <td>The geographic location or time period that the asset covers.<br /> </td> 
-  </tr>
-  <tr>
-   <td>creator</td> 
-   <td>The person or company responsible for creating the content.</td> 
-  </tr>
-  <tr>
-   <td>date</td> 
-   <td>Date or period of time associated with the asset.<br /> </td> 
-  </tr>
-  <tr>
-   <td>description</td> 
-   <td>More information about the asset.</td> 
-  </tr>
-  <tr>
-   <td>format</td> 
-   <td>The file format, physical medium, or dimensions of the asset. AEM uses <code>dc:format</code> to denote the mime-type of the asset.<br /> </td> 
-  </tr>
-  <tr>
-   <td>identifier</td> 
-   <td>A unique reference to the asset.</td> 
-  </tr>
-  <tr>
-   <td>language</td> 
-   <td>The language of the asset (for example, en for English).</td> 
-  </tr>
-  <tr>
-   <td>publisher</td> 
-   <td>The person or company responsible for making the asset available.</td> 
-  </tr>
-  <tr>
-   <td>relation</td> 
-   <td>A related asset.</td> 
-  </tr>
-  <tr>
-   <td>rights</td> 
-   <td>Information about who has the rights to this asset.</td> 
-  </tr>
-  <tr>
-   <td>source</td> 
-   <td>A related asset from which the asset is derived.</td> 
-  </tr>
-  <tr>
-   <td>subject</td> 
-   <td>The topic of the asset.<br /> </td> 
-  </tr>
-  <tr>
-   <td>title</td> 
-   <td>A name for the asset.</td> 
-  </tr>
-  <tr>
-   <td>type</td> 
-   <td>The nature or genre of the asset.</td> 
-  </tr>
- </tbody>
-</table>
+| Property | Description |
+|---|---|
+| contributor | The person or company responsible for making contributions to the content. |
+| coverage | The geographic location or time period that the asset covers. |
+| creator | The person or company responsible for creating the content. |
+| date | Date or period of time associated with the asset. |
+| description | More information about the asset. |
+| format | The file format, physical medium, or dimensions of the asset. AEM uses dc:format to denote the mime-type of the asset. |
+| identifier | A unique reference to the asset. |
+| language | The language of the asset (for example, en for English). |
+| publisher | The person or company responsible for making the asset available. |
+| relation | A related asset. |
+| rights | Information about who has the rights to this asset. |
+| source | A related asset from which the asset is derived. |
+| subject | The topic of the asset. |
+| title | A name for the asset. |
+| type | The nature or genre of the asset. |
 
 ## IPTC {#iptc}
 

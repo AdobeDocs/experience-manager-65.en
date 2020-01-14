@@ -23,9 +23,9 @@ You can opt into usage statistics collection by using either the Touch UI or the
 
 >[!NOTE]
 >
->The European Union's General Data Protection Regulation on data privacy rights takes effect as of May 2018. AEM Sites is ready to help customers with their GDPR compliance obligations. This page guides customers through the procedures to opt-in (or out) of Aggregated Usage Statistics Collection.
+>There are various data protection and privacy regulations; including, for example, GDPR and CCPA. AEM Sites is ready to help customers with their data protection and privacy compliance obligations. This page guides customers through the procedures to opt-in (or out) of Aggregated Usage Statistics Collection.
 >
->For further information, also see the [GDPR page at the Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+>For further information, also see the [Adobe's Privacy Center](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ The first time you start AEM, you can opt-in by using the Touch UI as follows:
 
 You can opt-in (or opt-out) by using the Web Console as follows:
 
-1. On the AEM Navigation screen, click **Tools **and then **Operations**.
+1. On the AEM Navigation screen, click **Tools** and then **Operations**.
 
    ![usage_statisticsopsdashboard](assets/usage_statisticsopsdashboard.png)
 

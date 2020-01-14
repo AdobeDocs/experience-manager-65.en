@@ -115,7 +115,7 @@ Select the fragment to reveal the toolbar with applicable actions:
 
 >[!NOTE]
 >
->Many of these are [standard actions for Assets](/help/assets/managing-assets-touch-ui.md) and/or the [Desktop App](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>Many of these are [standard actions for Assets](/help/assets/managing-assets-touch-ui.md) and/or the [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
 
 ## Opening the Fragment Editor {#opening-the-fragment-editor}
 
@@ -162,7 +162,7 @@ To open your fragment for editing:
 
 >[!NOTE]
 >
->Versions can also be [created, compared and reverted from the Timeline](https://helpx.adobe.com/experience-manager/6-3/help/assets/content-fragments-managing.html#timeline-for-content-fragments).
+>Versions can also be [created, compared and reverted from the Timeline](/help/assets/content-fragments-managing.md#timeline-for-content-fragments).
 
 The editor has two options:
 
@@ -194,9 +194,9 @@ While editing your content fragment AEM automatically creates versions to ensure
 1. When a content fragment is opened for editing AEM checks for the existence of the cookie-based token that indicates whether an *editing session* exists:
 
     1. If the token is found, the fragment is considered to be part of the existing editing session.
-    1. If the token is *not* available and the user starts editing content, a version is created and a token for this new editing session is sent to the client, where it is saved in a cookie.
+    2. If the token is *not* available and the user starts editing content, a version is created and a token for this new editing session is sent to the client, where it is saved in a cookie.
 
-1. While there is an *active* editing session, the content being edited is automatically saved every 600 seconds (default).
+2. While there is an *active* editing session, the content being edited is automatically saved every 600 seconds (default).
 
    >[!NOTE]
    >
@@ -208,8 +208,8 @@ While editing your content fragment AEM automatically creates versions to ensure
    >
    >`/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-1. If the user selects to **Cancel** the edit, the version created at the start of the editing session is restored and the token is removed to end the editing session.
-1. If the user selects to **Save** the edits, the updated elements/variations are persisted and the token is removed to end the editing session.
+3. If the user selects to **Cancel** the edit, the version created at the start of the editing session is restored and the token is removed to end the editing session.
+4. If the user selects to **Save** the edits, the updated elements/variations are persisted and the token is removed to end the editing session.
 
 ## Editing the Content of your Fragment {#editing-the-content-of-your-fragment}
 
@@ -266,7 +266,7 @@ For example:
 
 ## Comparing Fragment Versions {#comparing-fragment-versions}
 
-The **Compare to Current** action is available from the [Timeline](https://helpx.adobe.com/experience-manager/6-3/help/assets/content-fragments-managing.html#timeline-for-content-fragments) after you have selected a specific version.
+The **Compare to Current** action is available from the [Timeline](/help/assets/content-fragments-managing.md#timeline-for-content-fragments) after you have selected a specific version.
 
 This will open:
 
@@ -324,14 +324,14 @@ Content Fragments must be published for use in the publish enviroment. They can 
 To delete a fragment:
 
 1. In the **Assets** console navigate to the location of the content fragment.
-1. Select the fragment.
+2. Select the fragment.
 
    >[!NOTE]
    >
    >The **Delete** action is not available as a quick action.
 
-1. Select **Delete** from the toolbar.
-1. Confirm the **Delete** action.
+3. Select **Delete** from the toolbar.
+4. Confirm the **Delete** action.
 
    >[!CAUTION]
    >

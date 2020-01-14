@@ -41,12 +41,6 @@ As well as accessing [help from the console toolbars](/help/sites-classic-ui-aut
 
 Or by using the **Help** button in the edit dialog of specific components; this will show context sensitive help.
 
-* Step text
-* Step text
-* Step text
-* Step text
-* Step text
-
 ## Sidekick {#sidekick}
 
 The **Components** tab of the sidekick allows you to browse the components available to be added to the current page. The required group can be expanded, then a component dragged to the required location on the page.

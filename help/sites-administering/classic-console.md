@@ -44,7 +44,7 @@ To access the Classic UI Tagging console :
 
     * **Title**
       (*Required*) The display title for the tag. While any character may be entered,
-      it is recommended to not use these special characters :
+      it is recommended to not use these special characters:
 
         * `colon (:)` - namespace delimiter
         * `forward slash (/)` - sub-tag delimiter
@@ -64,7 +64,7 @@ To access the Classic UI Tagging console :
 1. In the right-hand pane, select the tag that you want to edit.
 1. Click **Edit**.
 1. You can modify the **Title** and the **Description**.
-1. Click **Save **to close the dialog.
+1. Click **Save** to close the dialog.
 
 ## Deleting Tags {#deleting-tags}
 
@@ -72,7 +72,7 @@ To access the Classic UI Tagging console :
 1. Click **Delete**.
 1. Click **Yes** to close the dialog.
 
-   The tag shouldn't be listed anymore.
+   The tag should not be listed anymore.
 
 ## Activating and Deactivating Tags {#activating-and-deactivating-tags}
 

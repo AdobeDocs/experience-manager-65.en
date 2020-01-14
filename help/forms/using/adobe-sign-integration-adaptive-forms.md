@@ -74,7 +74,7 @@ After prerequisites are in place, perform the following steps to configure Adobe
 
    You can modify the value for the database shard. Restart the server to be able to use the new value for the database shard.
 
-1. Specify the **Client ID** (also referred to as Application ID) and **Client Secret**. Select the **Enable Adobe Sign for attachments also **option to append files attached to an adaptive form to the corresponding Adobe Sign document sent for signing.
+1. Specify the **Client ID** (also referred to as Application ID) and **Client Secret**. Select the **Enable Adobe Sign for attachments also** option to append files attached to an adaptive form to the corresponding Adobe Sign document sent for signing.
 
    Tap **[!UICONTROL Connect to Adobe Sign]**. When prompted for credentials, provide username and password of the account used while creating Adobe Sign application.
 
@@ -82,7 +82,7 @@ After prerequisites are in place, perform the following steps to configure Adobe
 
 1. Open AEM Web Console. The URL is `https://[server]:[port]/system/console/configMgr`
 1. Open **Forms Common Configuration Service.**
-1. In the **Allow** field, **select** All users - All the users, anonymous or logged in, can preview attachments, verify and sign forms**, and click **Save.** Author instance is configured to use Adobe Sign.
+1. In the **Allow** field, **select** All users - All the users, anonymous or logged in, can preview attachments, verify and sign forms, and click **Save.** Author instance is configured to use Adobe Sign.
 1. On the [Publish](/help/sites-deploying/deploy.md) instance, log in and open the following URL:
 
    `https://<server-name>:<port>/libs/granite/configurations/content/view.html/conf`

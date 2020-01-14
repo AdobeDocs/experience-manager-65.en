@@ -1,17 +1,13 @@
 ---
 title: Support for IPTC Metadata
-seo-title: Support for IPTC Metadata
 description: Learn how Adobe Experience Manager (AEM) Assets supports the IPTC metadata, Creative ratings, and keywords added to assets through Adobe Bridge and other Creative Apps.
-seo-description: Learn how Adobe Experience Manager (AEM) Assets supports the IPTC metadata, Creative ratings, and keywords added to assets through Adobe Bridge and other Creative Apps.
 uuid: 63c9716a-1fa4-4462-a987-ab231157433d
-contentOwner: User
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 discoiquuid: 58910ea9-5fa0-4a34-8713-a68ff6e85e5c
 ---
 
-# Support for IPTC Metadata {#support-for-iptc-metadata}
+# Support for IPTC metadata {#support-for-iptc-metadata}
 
 Learn how Adobe Experience Manager (AEM) Assets supports the IPTC metadata, Creative ratings, and keywords added to assets through Adobe Bridge and other Creative Apps.
 
@@ -22,14 +18,14 @@ The default metadata schema for assets now incorporates the IPTC Core and IPTC E
 The Properties page for assets now includes separate tabs to display the IPTC Core and IPTC Extension metadata in editable fields.
 
 1. From the Assets user interface, select an image.
-1. Click or tap the **[!UICONTROL Properties]** icon from the toolbar.
-1. In the Properties page, click/tap the **[!UICONTROL IPTC]** tab to view IPTC metadata for the asset.
-1. Edit the IPTC metadata properties, as necessary.
+1. Tap **[!UICONTROL Properties]** from the toolbar.
+1. Tap the **[!UICONTROL IPTC]** tab to view the IPTC metadata for the asset.
+1. Edit the IPTC metadata properties, as required.
 
    ![iptc_tab](assets/iptc_tab.png)
 
 1. Click/tap the **[!UICONTROL IPTC Extension]** tab to view IPTC Extension metadata for the asset.
-1. Edit the ITPC Extension metadata properties, as necessary.
+1. Edit the IPTC Extension metadata properties, as required.
 1. Tap/click **[!UICONTROL Save & Close]** to save the changes.
 
 ## Creative Rating Support {#creative-rating-support}
@@ -47,4 +43,3 @@ However, this property is currently not indexed to avoid any conflict with custo
 The **[!UICONTROL IPTC]** tab of the Properties page also displays keywords added to assets through Adobe Bridge and other Creative Apps. You can also edit these keywords and add more keywords from the **[!UICONTROL IPTC]** tab.
 
 ![keywords](assets/keywords.png)
-

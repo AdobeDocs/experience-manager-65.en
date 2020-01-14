@@ -1,18 +1,15 @@
 ---
 title: Cascading Metadata
-seo-title: Cascading Metadata
 description: This article describes how to define cascading metadata for assets.
-seo-description: How to define cascading metadata for assets.
 uuid: 4660774b-3915-4b9b-8346-c8a207486a6f
-contentOwner: cmajumda
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: authoring
 discoiquuid: 89db8d26-744f-4d5c-8f00-6f69a4c5ca5e
 docset: aem65
 
 ---
 
-# Cascading Metadata{#cascading-metadata}
+# Cascading Metadata {#cascading-metadata}
 
 When capturing the metadata information of an asset, users provide information in the various available fields. You can display specific metadata fields or field values that are dependent on the options selected in the other fields. Such conditional display of metadata is called cascading metadata. In other words, you can create a dependency between a particular metadata field/value and one or more fields and/or their values.
 
@@ -54,7 +51,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 1. Key-values pairs are the options provided to a form-user. You can provide the key-value pairs either manually or from a JSON file.
 
     * To specify the values manually, select **[!UICONTROL Add Manually]**, and tap/click **[!UICONTROL Add Choice]** and specify the option text and value. For example, specify Video, PDF, Word, and Image asset types.
-    
+
     * To fetch the values from a JSON file dynamically, select **[!UICONTROL Add Through JSON Path]** and provide the path of the JSON file. AEM fetches the key-value pairs in the real time when the form is presented to the user.
 
    Both options are mutually exclusive. You cannot import the options from a JSON file and edit manually.
@@ -88,7 +85,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
    >
    >Dropdown with manually predefined values can be used with rules. Dropdown menus with configured JSON path can't be used with rules that use predefined values to apply conditions. If the values are loaded from JSON at runtime, it is not possible to apply a predefined rule.
 
-1. Under **[!UICONTROL Visibility]**, choose the **[!UICONTROL Visible, based on new rule]** option.  
+1. Under **[!UICONTROL Visibility]**, choose the **[!UICONTROL Visible, based on new rule]** option.
 
 1. Tap/click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
 
@@ -102,16 +99,14 @@ Irrespective of the asset type chosen, display the copyright information as a re
    >
    >You can apply **[!UICONTROL Requirement]** condition and **[!UICONTROL Visibility]** condition independent of each other.
 
-1. Similary, create a dependency between the value Video in the Asset Type field and other fields, such as Codec and Duration.
+1. Similarly, create a dependency between the value Video in the Asset Type field and other fields, such as Codec and Duration.
 1. Repeat the steps to create dependency between document assets (PDF and Word) in the [!UICONTROL Asset Type] field and fields such as [!UICONTROL Page Count] and [!UICONTROL Author].
 1. Click **[!UICONTROL Save]**. Apply the metadata schema to a folder.
 
 1. Navigate to the folder to which you applied the Metadata Schema and open the properties page of an asset. Depending upon your choice in the Asset Type field, pertinent cascading metadata fields are displayed.
 
    ![Cascading metadata for Video asset](assets/video_asset.png)
-
-   Cascading metadata for Video asset
+   *Figure: Cascading metadata for Video asset*
 
    ![Cascading metadata for document asset](assets/doc_type_fields.png)
-
-   Cascading metadata for document asset
+   *Figure: Cascading metadata for document asset*

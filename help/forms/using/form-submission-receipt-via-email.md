@@ -18,13 +18,13 @@ docset: aem65
 
 Adaptive forms provides several out-of-the-box [submit actions](../../forms/using/configuring-submit-actions.md) workflows for submitting the form data to different endpoints.
 
-For example, the **Email action **submit action sends an email on successful submission of an adaptive form. It can also be configured to send the form data and the PDF in the email.
+For example, the **Email action** submit action sends an email on successful submission of an adaptive form. It can also be configured to send the form data and the PDF in the email.
 
 This article details the steps to enable the Email action on an adaptive form and different configurations it provides.
 
 >[!NOTE]
 >
->You can also use the **Email PDF action **to send the completed form by email as a PDF attachment. The configuration options available for this action are the same as the options available for the Email action. The Email PDF action is available only for XFA-based adaptive forms
+>You can also use the **Email PDF action** to send the completed form by email as a PDF attachment. The configuration options available for this action are the same as the options available for the Email action. The Email PDF action is available only for XFA-based adaptive forms
 
 ## Email action {#email-action}
 
@@ -38,7 +38,7 @@ The Email action enables an author to send email automatically to one or more re
 
 1. Open an adaptive form in edit mode.  
 
-1. Click **Edit** next to the **Start of an Adaptive Form **toolbar.
+1. Click **Edit** next to the **Start of an Adaptive Form** toolbar.
 
    The Edit Component dialog opens.
 
@@ -62,7 +62,7 @@ The Email action enables an author to send email automatically to one or more re
    >
    >If you choose the **Email PDF action**, you must select the Include attachments option.
 
-1. Click **OK **to save the changes.
+1. Click **OK** to save the changes.
 
 ### Using adaptive form field names to dynamically create email content {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 

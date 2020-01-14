@@ -56,7 +56,7 @@ Returns the version number of the Scripting library
 * **Input**:
 
     * **handler**: Function to execute after Form Bridge is connected
-    * **context**: The object to which the context (this) of the *handler *function are set.
+    * **context**: The object to which the context (this) of the *handler* function are set.
 
 * **Output**: None
 * **Error**: None
@@ -90,24 +90,30 @@ Returns the version number of the Scripting library
 
           *window.formBridge.registerConfig("pagingConfig":{pagingDisabled: <true | false>, shrinkPageDisabled: <true | false> }).*
 
-        * **LoggingConfig:** Allows the user to override the level of logging, disable logging for a category, or whether to display the logs console or send to server. The configuration can be overridden as follows:**
-        * *formBridge.registerConfig{
-          **"LoggerConfig" : {
-        * *{
-        * *"on":`<true *| *false>`,
-        * *"category":`<array of categories>`,
-        * *"level":`<level of categories>`, "
-        * *type":`<"console"/"server"/"both">`
-        * *}
-          **}*
+        * **LoggingConfig:** Allows the user to override the level of logging, disable logging for a category, or whether to display the logs console or send to server. The configuration can be overridden as follows:
+
+        ``` JavaScript
+        formBridge.registerConfig{
+          "LoggerConfig" : {
+        {
+        "on":`<true *| *false>`,
+        "category":`<array of categories>`,
+        "level":`<level of categories>`, "
+        type":`<"console"/"server"/"both">`
+        }
+          }
+        ```
 
         * ***SubmitServiceProxyConfig:** Allow the users to register submission and logger proxy services.
-          *window.formBridge.registerConfig("submitServiceProxyConfig",
+
+          ``` JavaScript
+          window.formBridge.registerConfig("submitServiceProxyConfig",
           {
           "submitServiceProxy" : "`<submitServiceProxy>`",
           "logServiceProxy": "`<logServiceProxy>`",
           "submitUrl" : "`<submitUrl>`"
           });
+          ```
 
     * **config:** Value of the configuration
 
@@ -171,7 +177,7 @@ Returns the version number of the Scripting library
 * **Input:**
 
     * **som:** Array containing Som expressions of the field. The som expression to set value of the fields.
-    * **value:** Array containing values corresponding to Som expressions provided in a **som **array. If the data type of the value is not the same as the fieldType, the value is not modified.
+    * **value:** Array containing values corresponding to Som expressions provided in a **som**array. If the data type of the value is not the same as the fieldType, the value is not modified.
 
 * **Output:** None
 * **Error:** Throws an Exception in the case of an incorrect Som expression
@@ -179,13 +185,13 @@ Returns the version number of the Scripting library
 **getFieldValue (som)** Returns the value of the fields for the given Som expressions
 
 * **Input:** Array containing Som expressions of the fields whose value has to be retrieved
-* **Output:** Object containing the result as Array in **data **property.
+* **Output:** Object containing the result as Array in **data** property.
 
 * **Error:** None
 
 ### Example of&nbsp;getFieldValue() API {#example-of-nbsp-getfieldvalue-api}
 
-```
+```JavaScript
 var a =  formBridge.getFieldValue(“xfa.form.form1.Subform1.TextField”);
 if(a.errors) {
     var err;
@@ -204,7 +210,7 @@ if(a.errors) {
     * **som:** Array containing Som expressions for the fields
     * **property**: Name of the property whose value is required
 
-* **Output:** Object containing the result as Array in *data *property
+* **Output:** Object containing the result as Array in *data* property
 
 * **Error:** None
 
@@ -221,7 +227,7 @@ if(a.errors) {
 
 ## Sample Usage of Form Bridge API {#sample-usage-of-form-bridge-api}
 
-```
+```JavaScript
 // Example 1: FormBridge.restoreFormState
   function loadFormState() {
     var suc = function(obj) {

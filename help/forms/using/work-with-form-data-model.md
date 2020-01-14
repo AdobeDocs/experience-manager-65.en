@@ -288,7 +288,7 @@ A computed property is the one whose value is computed based on a rule or an exp
 For example, you can create a computed property **FullName** whose value is a result of concatenation the existing **FirstName** and **LastName** properties. To do so:
 
 1. Create a new property with the name `FullName` whose data type is String.
-1. Enable **[!UICONTROL Computed]**and tap **[!UICONTROL Done]**to create the property.
+1. Enable **[!UICONTROL Computed]** and tap **[!UICONTROL Done]** to create the property.
 
    ![computed](assets/computed.png)
 

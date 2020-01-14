@@ -33,7 +33,7 @@ ECMAScript is a scripting language. It is used for client-side scripting and ser
 
 1. Add display name of the script. This name is displayed in workflow steps. To specify the name:
 
-    1. Expand the script node, right-click the **[!UICONTROL jcr:content]**node, and click **[!UICONTROL Mixins]**.
+    1. Expand the script node, right-click the **[!UICONTROL jcr:content]** node, and click **[!UICONTROL Mixins]**.
     1. Add the `mix:title` property in Edit Mixins dialog and click **OK**.
     1. Add the following property to the jcr:content node of script:
 
