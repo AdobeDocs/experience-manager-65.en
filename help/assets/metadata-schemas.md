@@ -6,7 +6,6 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 4c78de71-ca73-4e09-9f99-bb86d4443d01
 docset: aem65
-
 ---
 
 # Metadata schemas {#metadata-schemas}
@@ -120,9 +119,11 @@ To edit the properties of a metadata component on the form, click the component 
 
 The following are the valid values for this property:
 
-* . `/jcr:content/metadata/dc:title`: Stores the value at the asset's metadata node as the property `dc:title`.
+The following are the valid values for this property:
 
-* . `/jcr:created`: Displays the jcr property at the asset's node. If you configure these properties on view properties, we recommend that you mark them as Disable Edit, because they are protected. Otherwise, the error "Asset(s) failed to modify" occurs when you save the asset's properties.
+* `./jcr:content/metadata/dc:title`: Stores the value at the asset's metadata node as the property `dc:title`.
+
+* `./jcr:created`: Displays the JCR property at the asset's node. If you configure these properties on view properties, we recommend that you mark them as Disable Edit, because they are protected. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset's properties.
 
 To ensure that the component is displayed properly in the metadata schema form, the property path should not include any spaces.
 
