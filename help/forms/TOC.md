@@ -63,7 +63,7 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Prepare to install AEM Forms single server](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
     + [Install and deploying AEM Forms on JEE for JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
     + [Install and deploying AEM Forms on JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
-    + [Install AEM Forms Workbench](http://help.adobe.com/en_US/AEMForms/6.1/InstallWorkbench/index.html)
+    + [Install AEM Forms Workbench](using/install-workbench.md)
     + [Install and configure Designer](using/installing-configuring-designer.md)
     + [Prepare to install AEM Forms server cluster](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
     + [Configure AEM Forms on JEE on JBoss cluster](http://www.adobe.com/go/learn_aemforms_clusterJBoss_65)

@@ -233,7 +233,7 @@ The content fragment assets are made up of the following parts (either directly 
 * **Variations**
 
   * Renditions of fragment text that are specific to editorial purpose; can be related to channel but is not compulsory, can also be for ad-hoc local modifications.
-  * Are created as copies of **Master**, but can then be edited a required; there is usually content overlap between the variations themselves.
+  * Are created as copies of **Master**, but can then be edited as required; there is usually content overlap between the variations themselves.
   * Can be defined during fragment authoring or pre-defined in fragment templates.
   * Stored in the fragment, to help avoid scattering of content copies.
   * Variations can be [synchronized](/help/assets/content-fragments-variations.md#synchronizing-with-master) with Master if the Master content has been updated.
