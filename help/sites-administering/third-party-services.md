@@ -27,7 +27,7 @@ With AEM, you can integrate with the following non-Adobe products out of the box
 * Twitter - social networking
 * YouTube - video sharing
 
-In addition, you can integrate AEM with the [marketing cloud](/help/sites-administering/marketing-cloud.md) and with the [creative cloud](/help/sites-administering/creative-cloud.md).
+In addition, you can integrate AEM with the [marketing cloud](/help/sites-administering/marketing-cloud.md) and with the [Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md).
 
 ## Integrating with Salesforce {#integrating-with-salesforce}
 

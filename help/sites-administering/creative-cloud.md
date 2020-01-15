@@ -13,11 +13,11 @@ docset: aem65
 
 ---
 
-# Folder sharing with Adobe Creative Cloud{#folder-sharing-with-adobe-creative-cloud}
+# Folder sharing with Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}
 
 >[!CAUTION]
 >
->The AEM to Creative Cloud Folder Sharing feature is deprecated. Customers are strongly advised to use newer capabilities, like [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) or [AEM Desktop App](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Learn more in [AEM and Creative Cloud Integration Best Practices](/help/assets/aem-cc-integration-best-practices.md).
+>The AEM to Creative Cloud Folder Sharing feature is deprecated. Customers are strongly advised to use newer capabilities, like [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) or [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Learn more in [AEM and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
 
 Adobe Experience Manager (AEM) Assets lets you share folders containing assets with Adobe Creative Cloud users. For details on how to configure Adobe Marketing Cloud to let you share assets with Adobe Creative Cloud, see [Configuring Assets-Creative Cloud integration](/help/sites-administering/configure-assets-cc-integration.md).
 
@@ -25,7 +25,7 @@ Adobe Experience Manager (AEM) Assets lets you share folders containing assets w
 
    ![](assets/chlimage_1-139.png)
 
-1. From the toolbar, click the **Share** icon.
+1. From the toolbar, click **Share**.
 
    ![](assets/chlimage_1-140.png)
 
