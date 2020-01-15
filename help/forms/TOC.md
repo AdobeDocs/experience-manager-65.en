@@ -76,7 +76,7 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Configuring the Connector for Microsoft SharePoint](http://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
     + [Connecting AEM Forms with Adobe LiveCycle](using/aem-livecycle-connector.md)
     + [Configuring AEM Forms to submit form data to an AEM Forms on JEE process](using/submit-form-data-livecycle-process.md)
-    + [AEM Desktop App for AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
+    + [AEM desktop app for AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
 + Upgrade AEM Forms {#upgrade-aem-forms}
   + [Available upgrade paths](using/upgrade.md)
   + Upgrade AEM Forms on OSGi {#aem-forms-osgi-upgrade}
