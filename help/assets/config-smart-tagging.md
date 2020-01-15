@@ -72,10 +72,10 @@ When the certificate expires it is no longer trusted. To add a new certificate, 
 To use Smart Content Service APIs, create an integration in Adobe I/O to generate API Key, Technical Account Id, Organization Id, and Client Secret.
 
 1. Access [https://console.adobe.io](https://console.adobe.io/).
-1. From the **[!UICONTROL Integrations]** page, select your organization.
-1. Tap/click **[!UICONTROL New Integration]**.
-1. On the **[!UICONTROL Create a new integration]** page, select **[!UICONTROL Access an API]**. Tap/click **[!UICONTROL Continue]**.
-1. Under **[!UICONTROL Experience Cloud]**, select **[!UICONTROL Smart Content]**. Tap/click **[!UICONTROL Continue]**.
+1. On the **[!UICONTROL Integrations]** page, select the appropriate account and verify that the associated organization role is system administrator.
+1. Tap **[!UICONTROL New integration]**.
+1. On the **[!UICONTROL Create a new integration]** page, select **[!UICONTROL Access an API]**. Tap **[!UICONTROL Continue]**.
+1. Under **[!UICONTROL Experience Cloud]**, select **[!UICONTROL Smart Content]**. Tap **[!UICONTROL Continue]**.
 
    ![When creating a new integration select Smart Content under Experience Cloud from the available options](assets/smart_content.png)
 
@@ -136,3 +136,4 @@ After you've completed the configuration, you can use a JMX MBean to validate th
 >* [Manage Smart Tags](managing-smart-tags.md)
 >* [Overview of and how to train Smart Tags](enhanced-smart-tags.md)
 >* [Guidelines and rules to train the Smart Content Service](smart-tags-training-guidelines.md)
+>* [Video tutorial about how to configure smart tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
