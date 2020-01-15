@@ -44,7 +44,7 @@ To access the Classic UI Tagging console :
 
     * **Title**
       (*Required*) The display title for the tag. While any character may be entered,
-      it is recommended to not use these special characters :
+      it is recommended to not use these special characters:
 
         * `colon (:)` - namespace delimiter
         * `forward slash (/)` - sub-tag delimiter

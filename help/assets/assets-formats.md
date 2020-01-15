@@ -18,9 +18,9 @@ Use the legend to understand the support level.
 
 | Support Level | Description |
 |:---:|---|
-| ![checkmark-icon](do-not-localize/checkmark_icon.png) |Supported |
-| &#42; |Supported with add-on features |
-| - |Not applicable |
+| ![checkmark-icon](do-not-localize/checkmark_icon.png) | Supported |
+| &#42; | Supported with add-on features |
+| - | Not applicable |
 
 ## Supported Raster image formats {#supported-raster-image-formats}
 
@@ -38,7 +38,7 @@ Raster image formats supported for asset management features are as follows:
 | PBM | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
 | PPM | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
 | PSD* | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)  | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)  | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | ![checkmark-icon](do-not-localize/checkmark_icon.png) | |
 | PICT | | | | | | | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
 | PSB | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | |
 
@@ -50,7 +50,7 @@ Raster image formats supported for Dynamic Media features are as follows:
 | GIF | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
 | TIFF | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
 | JPEG | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
-| BMP | | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | |
+| BMP | ![checkmark-icon](do-not-localize/checkmark_icon.png) | | | | |
 | PNM | | | | | |
 | PGM | | | | | |
 | PBM | | | | | |
@@ -198,7 +198,7 @@ In addition to the above functionality, consider the following:
 
 The supported archive formats and the applicability of the common DAM workflows, is covered in the following table.
 
-| Format | Storage | Versioning | Workflow | Publishing | Access Control | Dynamic Media Delivery |
+| Formats | Storage | Versioning | Workflow | Publishing | Access Control | Dynamic Media Delivery |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | |
 | JAR | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | |
@@ -210,9 +210,8 @@ The supported archive formats and the applicability of the common DAM workflows,
 
 The applicability of common DAM workflows for a few other file formats is described in the table below.
 
-| Features | | | | | | |
+| Formats | Storage | Versioning | Workflow | Publishing | Access Control | Dynamic Media Delivery |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Format | Storage | Versioning | Workflow | Publishing | Access Control | Dynamic Media Delivery |
 | * | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | |
 | SVG | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
 | CSS | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) | ![checkmark-icon](do-not-localize/checkmark_icon.png) |
@@ -245,11 +244,7 @@ See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/
 | BMP | image/bmp | | |
 | CSS | text/css | | |
 | DOC | application/msword | | |
-| EPS | application/postscript | | |
-| EPS | application/eps | | |
-| EPS | application/x-eps | | |
-| EPS | image/eps | | |
-| EPS | image/x-eps | | |
+| EPS | <ul><li>application/postscript</li><li>application/eps</li><li>application/x-eps</li><li>image/eps</li><li>image/x-eps</li></ul> | | |
 | F4V | video/x-f4v | | ExcludeMasterVideoFromAVS |
 | FLA | application/x-shockwave-flash | | |
 | FLV | video/x-flv | | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
@@ -282,8 +277,7 @@ See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/
 | SVG | image/svg+xml | | |
 | SWF | application/x-shockwave-flash | | |
 | TAR | application/x-tar | | |
-| TIF | image/tiff | | |
-| TIFF | image/tiff | | |
+| TIF / TIFF | image/tiff | | |
 | TTC | application/x-font-ttf | | |
 | TTF | application/x-font-ttf | | |
 | VOB | video/dvd | | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |

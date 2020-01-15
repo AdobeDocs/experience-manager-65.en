@@ -1,5 +1,5 @@
 ---
-title: Using Page Tracker and Embed code in web pages
+title: Use Page Tracker and embed code in web pages
 description: Lear how to include Page Tracker and embed JavaScript codes in your website code to enable Adobe Analytics to capture usage data around assets.
 uuid: 64148026-a877-4926-92d3-785cbd6342ee
 contentOwner: AG
@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: dc819c2b-d497-472a-8435-89c8a215f207
 ---
 
-# Using Page Tracker and Embed code in web pages {#using-page-tracker-and-embed-code-in-web-pages}
+# Use page tracker and embed code in web pages {#using-page-tracker-and-embed-code-in-web-pages}
 
 Page Tracker is a piece of JavaScript code that you include in third-party websites' code to enable Adobe Analytics to capture usage data around Adobe Experience Manager (AEM) assets on these websites.
 
@@ -57,7 +57,7 @@ The following sample code displays how a web page that contains both the Page Tr
 </html>
 ```
 
-## Adding Page Tracker code {#adding-page-tracker-code}
+## Add page tracker code {#adding-page-tracker-code}
 
 You add the page tracker code within the header section of your website code. The following code snippet displays the Page Tracker code included in a sample web page:
 
@@ -77,7 +77,7 @@ You add the page tracker code within the header section of your website code. Th
  </head>
 ```
 
-## Adding Embed code {#adding-embed-code}
+## Add embed code {#add-embed-code}
 
 You add the embed code within the body of your website code. The following code snippet displays the Embed code included in a sample web page:
 

@@ -13,11 +13,11 @@ docset: aem65
 
 ---
 
-# Lazy Content Migration{#lazy-content-migration}
+# Lazy Content Migration {#lazy-content-migration}
 
 For the sake of backwards compatibility, content and configuration in **/etc** and **/content** starting with AEM 6.3 will not be touched or transformed immediately with the upgrade. This is done in order to ensure that dependencies of customer applications on those structures stay intact. The functionality relating to these content structures is still the same even though the content in an out of the box AEM 6.5 would be hosted in another place.
 
-While not all of those locations may be transformed automatically, there are a few delayed `CodeUpgradeTasks` also refered to as Lazy Content Migration. This allows customers to trigger those automatic transformations by restarting the instance with this system property:
+While not all of those locations may be transformed automatically, there are a few delayed `CodeUpgradeTasks` also referred to as Lazy Content Migration. This allows customers to trigger those automatic transformations by restarting the instance with this system property:
 
 ```shell
 -Dcom.adobe.upgrade.forcemigration=true

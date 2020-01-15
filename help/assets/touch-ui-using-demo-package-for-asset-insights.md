@@ -1,10 +1,11 @@
 ---
-title: Using demo package for Asset Insights
+title: Use demo package for Asset Insights
 description: Use the demo package to enable Adobe Asset Insights to capture data from and generate insights for a web page.
 uuid: 7e9752b9-dfd8-47b9-9cb5-f5ffa784c01f
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9009619a-ca5e-4586-8c67-b7e72f58e2a2
+
 ---
 
 # Use demo package for Asset Insights {#using-demo-package-for-asset-insights}

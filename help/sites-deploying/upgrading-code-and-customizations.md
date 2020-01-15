@@ -25,7 +25,7 @@ When planning an upgrade the following areas of an implementation need to be inv
 
 ## Overview {#overview}
 
-1. **Pattern Detector** - Run the Pattern Detector as described in upgrade planning and described in detail in [this page](/help/sites-deploying/pattern-detector.md) to get a pattern detector report that contains more details on areas that need to be addressed in addition to the unvailable APIs/bundles in the Target version of AEM. The Pattern Detection report should give you an indication of any incompatibilities in your code, if there are none then your deployment is already 6.5 compatible, you can still choose to do new development for utilizing 6.5 functionality, but you do't need it just for maintaining compatibility. If there are incompatibilities reported then you can choose to either a) Run in compatibility mode and defer your development for new 6.5 features or compatibility, b) Decide to do development after upgrade, and move to step 2. Please see please see [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md) for more details.
+1. **Pattern Detector** - Run the Pattern Detector as described in upgrade planning and described in detail in [this page](/help/sites-deploying/pattern-detector.md) to get a pattern detector report that contains more details on areas that need to be addressed in addition to the unavailable APIs/bundles in the Target version of AEM. The Pattern Detection report should give you an indication of any incompatibilities in your code, if there are none then your deployment is already 6.5 compatible, you can still choose to do new development for utilizing 6.5 functionality, but you don't need it just for maintaining compatibility. If there are incompatibilities reported then you can choose to either a) Run in compatibility mode and defer your development for new 6.5 features or compatibility, b) Decide to do development after upgrade, and move to step 2. Please see please see [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md) for more details.
 
 1. **Develop Code Base for 6.5 **- Create a dedicated branch or repository for the code base for the Target version. Use info from Pre-Upgrade Compatibility to plan areas of code to update.
 1. **Compile with 6.5 Uber jar **- Update code base POMs to point to 6.5 uber jar and compile code against this.
@@ -127,7 +127,7 @@ You can prepare customizations to the Assets UI by doing the following:
 
 ### Generating Asset IDs for Existing Assets {#generating-asset-ids-for-existing-assets}
 
-To generate asset IDs for existing assets, upgrade the assets when you upgrade your AEM instance to run AEM 6.5. This is required to enable the [Assets Insights feature](/help/assets/touch-ui-asset-insights.md). For more details, see [Adding Embed code](/help/assets/touch-ui-using-page-tracker.md#contentbody_title_1017167766).
+To generate asset IDs for existing assets, upgrade the assets when you upgrade your AEM instance to run AEM 6.5. This is required to enable the [Assets Insights feature](/help/assets/touch-ui-asset-insights.md). For more details, see [Add embed code](/help/assets/touch-ui-using-page-tracker.md#add-embed-code).
 
 To upgrade assets, configure the Associate Asset IDs package in the JMX console. Depending on the number of assets in the repository, `migrateAllAssets` may take a long time. Our internal tests estimate roughly one hour for 125 thousand assets on TarMK.
 

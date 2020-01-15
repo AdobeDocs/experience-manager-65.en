@@ -1,6 +1,6 @@
 ---
-title: Lightbox
-description: Learn about Lightbox in AEM Assets.
+title: Lightbox as your personal image gallery in AEM Assets
+description: Learn about Lightbox as your personal image gallery in AEM Assets.
 uuid: 9fc349a0-8b4e-4f28-a4d6-ade4249cab49
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

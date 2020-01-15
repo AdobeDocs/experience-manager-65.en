@@ -4,7 +4,7 @@ seo-title: Forms-centric workflow on OSGi - Step Reference
 description: Forms-centric workflow on OSGi steps allow you rapidly build adaptive forms based workflows.
 seo-description: Forms-centric workflow on OSGi steps allow you rapidly build adaptive forms based workflows.
 uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
-contentOwner: aheimoz
+contentOwner: 
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
@@ -84,6 +84,9 @@ You can also use the component to control the behavior of the task. For example,
 
 * **HTML Email Template**: Select email template for the notification email. To edit a template, modify the file located at /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in crx-repository.
 * **Allow Delegation To:** AEM Inbox provides an option to the logged in user to delegate the assigned workflow to another user. You are allowed to delegate within the same group or to the workflow user of another group. If the task is assigned to a single user and the **allow delegation to members of the assignee group** option is selected, then it is not possible to delegate the task to another user or group.
+* **Share Settings:** AEM Inbox provides options to share a single or all the tasks in the inbox with another users:
+    * When the **Allow assignee to share explicitly in inbox** option is selected, the user can click on the task and share it with another AEM user. 
+    * When the **Allow assignee to share via inbox sharing** option is selected and a user shares his Inbox items or allows other users to access his Inbox items, only tasks with aforementioned option enabled are shared with other users.
 
 * **Actions &gt; Default Actions:** Out of the box, Submit, Save, and Reset actions are available. All the default actions are enabled, by default. 
 * **Route Variable:** Name of the route variable. The route variable captures custom actions that a user selects in AEM Inbox.

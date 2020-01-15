@@ -47,7 +47,7 @@ If you are a customer of Dynamic Media, you are required to use hybrid delivery 
 
 ## Hybrid publishing architecture for videos {#hybrid-publishing-architecture-for-videos}
 
-![chlimage_1-506](assets/chlimage_1-506.png)
+![chlimage_1-506](assets/chlimage_1-428.png)
 
 ## Hybrid publishing architecture for images {#hybrid-publishing-architecture-for-images}
 
@@ -809,7 +809,7 @@ To optionally customize asset filters for replication:
 
    The following graphic is an example of an asset's renditions.
 
-   ![chlimage_1-513](assets/chlimage_1-513.png)
+   ![chlimage_1-513](assets/chlimage_1-4.png)
 
    Using the example above, if you only wanted to replicate the PTIFF (Pyramid TIFF), then you would enter `+cqdam,*` which includes all the renditions that start with `cqdam`. Inthe example, that rendition is `cqdam.pyramid.tiff`.
 

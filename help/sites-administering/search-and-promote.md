@@ -54,7 +54,7 @@ Configure one or more connections to Search&Promote so that your web pages can i
 
 1. If this is the first time you are configuring Adobe Search&Promote, click **Configure Now** to open the Create Configuration panel.
 
-   If you would like to learn more about Search&Promote click** Learn More **instead.
+   If you would like to learn more about Search&Promote click **Learn More**instead.
 
    ![](assets/chlimage_1-59.png)
 

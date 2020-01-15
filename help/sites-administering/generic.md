@@ -63,7 +63,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Using the **Products** console navigate to the required location.
 1. Use the **Import Products** icon to open the wizard.
 
-   ![chlimage_1-1](do-not-localize/chlimage_1-1.png)
+   ![chlimage_1-1](do-not-localize/chlimage_1-13.png)
 
 1. Specify:
 
@@ -140,7 +140,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
     * **Create Product**
     * **Create Product Variation**
 
-   ![chlimage_1-2](do-not-localize/chlimage_1-2.png)
+   ![chlimage_1-14](do-not-localize/chlimage_1-14.png)
 
 1. The wizard will open. Use the **Basic** and **Product Tabs** to enter the [product attributes](/help/sites-administering/concepts.md#product-attributes) for the new product or product variant.
 
@@ -176,7 +176,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 
    Select the **View Product Data** icon:
 
-   ![chlimage_1-3](do-not-localize/chlimage_1-3.png)
+   ![chlimage_1-3](do-not-localize/chlimage_1-15.png)
 
 1. The [product attributes](/help/sites-administering/concepts.md#product-attributes) will be shown. Use **Edit** and **Done** to make any changes.
 
@@ -187,7 +187,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Using the **Products** console (via **Commerce**) navigate to your product information.
 1. Open the secondary rail for References with the icon:
 
-   ![chlimage_1-4](do-not-localize/chlimage_1-4.png)
+   ![chlimage_1-4](do-not-localize/chlimage_1-16.png)
 
 1. Select your required product - the secondary rail will update to show the reference types available:
 
@@ -206,7 +206,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Navigate to the **Products** console, via **Commerce**.
 1. Open the secondary rail for Search with the icon:
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![](do-not-localize/chlimage_1-17.png)
 
 1. Several facets are available for you to search for products. You can use only one or several facets for a search. The products found will appear:
 
@@ -335,7 +335,7 @@ The mechanism to select the image to be displayed is as follows:
 
    Select the **Publish** or **Unpublish** icon as required:
 
-   ![chlimage_1-6](do-not-localize/chlimage_1-6.png) ![chlimage_1-7](do-not-localize/chlimage_1-7.png)
+   ![chlimage_1-6](do-not-localize/chlimage_1-18.png) ![chlimage_1-7](do-not-localize/chlimage_1-19.png)
 
    The product information will be published or unpublished as appropriate.
 
@@ -365,7 +365,7 @@ For the `PRODUCT_*` events, the path points to the base product in `/etc/commerc
 
 You can look at them in the Web Console in OSGI events ( `/system/console/events`), for example:
 
-![](do-not-localize/chlimage_1-8.png)
+![](do-not-localize/chlimage_1-20.png)
 
 >[!NOTE]
 >
@@ -395,11 +395,11 @@ Clicking the hotspot opens a dialog which let you choose the size and quantity o
 
 1. Click one of the shape icons.
 
-   ![chlimage_1-9](do-not-localize/chlimage_1-9.png)
+   ![chlimage_1-21](do-not-localize/chlimage_1-21.png)
 
 1. Modify and move the shape as required.
 1. Click the shape.
-1. Clicking the browse icon opens the [Asset Picker](/help/assets/search-assets.md#usingassetpicker).
+1. Clicking the browse icon opens the [Asset Picker](/help/assets/search-assets.md#assetselector).
 
    >[!NOTE]
    >
@@ -410,7 +410,7 @@ Clicking the hotspot opens a dialog which let you choose the size and quantity o
 1. Click the confirm icon twice then click exit fullscreen.
 1. Click somewhere on the page next to the component. The page should refresh and you should see the following symbol on your image:
 
-   ![](do-not-localize/chlimage_1-10.png)
+   ![](do-not-localize/chlimage_1-22.png)
 
 1. Switch to [preview](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui) mode.
 1. Click the + hotspot. A dialog opens where you can choose the size and quantity of the product you entered in **Path**.
@@ -455,7 +455,7 @@ To generate a Catalog:
 1. Navigate to the location where you want to create the new page.
 1. To open the option list, use the **Create** icon:
 
-   ![](do-not-localize/chlimage_1-11.png)
+   ![](do-not-localize/chlimage_1-23.png)
 
 1. From the list select **Create Catalog**, the Create Catalog wizard will open.
 
@@ -521,10 +521,10 @@ To rollout a catalog:
 
    Select the **Rollout Changes** icon:
 
-   ![](do-not-localize/chlimage_1-12.png)
+   ![](do-not-localize/chlimage_1-24.png)
 
 1. In the wizard, set the rollout as needed and then tap/click **Rollout Changes**.
-1. A dialog opens. Tap/click **Done **when the process is finished.
+1. A dialog opens. Tap/click **Done** when the process is finished.
 
 #### Rolling out a Catalog - Classic UI {#rolling-out-a-catalog-classic-ui}
 

@@ -70,7 +70,7 @@ There are two types of configurations available from the drop down lists on this
 
 Selecting any entry from the lists will display the parameters related to that configuration:
 
-![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-21](assets/chlimage_1-21a.png)
 
 You can then update the parameters as required and:
 
@@ -166,7 +166,7 @@ A list of components will be shown. Various icons are available to enable you to
 
 Clicking on the name of a particular component will display further information on its status. Here you can also enable, disable or reload the component.
 
-![chlimage_1-22](assets/chlimage_1-22.png)
+![chlimage_1-22](assets/chlimage_1-22a.png)
 
 >[!NOTE]
 >

@@ -76,13 +76,13 @@ The following example configures a contexthub.base UI module to display informat
 }
 ```
 
-![chlimage_1-76](assets/chlimage_1-76.png)
+![chlimage_1-76](assets/chlimage_1-76a.png)
 
 ## contexthub.browserinfo UI Module Type {#contexthub-browserinfo-ui-module-type}
 
 The contexthub.browserinfo UI module displays information about the client web browser and operating system. Information is obtained from the surferinfo store, based on the [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) store candidate.
 
-![chlimage_1-77](assets/chlimage_1-77.png)
+![chlimage_1-77](assets/chlimage_1-77a.png)
 
 The source code for the UI module is located at /libs/granite/contexthub/components/modules/browserinfo. Although contexthub.browserinfo extends the contexthub.base UI module, it does not override or provide additional functions. The implementation provides a default configuration for rendering browser information.
 
@@ -103,7 +103,7 @@ Instances of the contexthub.browserinfo UI module do not require a value for the
 
 The contexthub.datetime UI module displays the date and time that is stored in a store named datetime that is based on the [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) store candidate.
 
-![chlimage_1-78](assets/chlimage_1-78.png)
+![chlimage_1-78](assets/chlimage_1-78a.png)
 
 The module provides a popover form that enables you to change the date and time in the store.
 
@@ -128,7 +128,7 @@ Instances of the contexthub.datetime UI module do not require a value for the De
 
 The contexthub.location UI module displays the longitude and latitude of the client. The module provides a popover that displays a Google map that you can click to change the current location. The module obtains information from a ContextHub store named geolocation that is based on the [contexthub.geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) store candidate.
 
-![chlimage_1-80](assets/chlimage_1-80.png)
+![chlimage_1-80](assets/chlimage_1-80a.png)
 
 The source of the UI module is located at /etc/cloudsettings/default/contexthub/geolocation.
 
@@ -171,7 +171,7 @@ Instances of the contexthub.location UI module do not require a value for the De
 
 The contexthub.screen-orientation UI module displays the current screen orientation of the client. Although disabled by default, the module provides a popover that enables you to select an orientation. The module obtains information from a ContextHub store named emulators that is based on the [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) store candidate.
 
-![chlimage_1-81](assets/chlimage_1-81.png)
+![chlimage_1-81](assets/chlimage_1-81a.png)
 
 The source of the UI module is located at /libs/granite/contexthub/components/modules/screen-orientation.
 
@@ -195,7 +195,7 @@ Instances of the contexthub.screen-orientation UI module do not require a value 
 
 The contexthub.tagcloud UI module displays information about tags. On the toolbar the UI module shows the number of tags. The popup reveals a tagcloud and a texbox for adding new tags. The UI module obtains information from a ContextHub store named tagcloud that is based on the [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) store candidate.
 
-![chlimage_1-82](assets/chlimage_1-82.png)
+![chlimage_1-82](assets/chlimage_1-82a.png)
 
 The source of the UI module is located at /libs/granite/contexthub/components/modules/tagcloud.
 
@@ -219,7 +219,7 @@ Instances of the contexthub.tagcloud UI module do not require a value for the De
 
 The granite.profile ContextHub UI module displays the display name of the current user. The popup reveals the login name of the user and enables you to change the value of the display name. The UI module obtains information from a ContextHub store named profile that is based on the [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) store candidate.
 
-![chlimage_1-83](assets/chlimage_1-83.png)
+![chlimage_1-83](assets/chlimage_1-83a.png)
 
 The source of the UI module is at /libs/granite/contexthub/components/modules/profile.
 

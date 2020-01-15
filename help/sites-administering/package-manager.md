@@ -205,13 +205,13 @@ As a package can contain an icon, the following conventions are used for officia
 
 Official Hotfix package:
 
-![](do-not-localize/chlimage_1-16.png)
+![](do-not-localize/chlimage_1-28.png)
 
 Official AEM Installation or Extension package:
 
 Official Feature packs:
 
-![](do-not-localize/chlimage_1-17.png)
+![](do-not-localize/chlimage_1-29.png)
 
 ## Package Manager {#package-manager}
 
@@ -882,7 +882,7 @@ You can only delete packages that you have uploaded by proceed as follows:
 1. Click on the package.
 1. Click the delete button.
 
-   ![chlimage_1-18](do-not-localize/chlimage_1-18.png)
+   ![chlimage_1-18](do-not-localize/chlimage_1-30.png)
 
 1. Click **Delete** to confirm you want to delete the package.
 

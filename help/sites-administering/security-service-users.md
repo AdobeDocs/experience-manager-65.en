@@ -119,11 +119,11 @@ You can create service users by:
 1. Logging in as admin by pressing the **Log In** link in the upper left corner of the screen.
 1. Next, create and name your system user. In order to create the user as a system one, set the intermediate path as `system` and add optional subfolders depending on your needs:
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![chlimage_1-102](assets/chlimage_1-102a.png)
 
 1. Verify that your system user node looks as follows:
 
-   ![chlimage_1-103](assets/chlimage_1-103.png)
+   ![chlimage_1-103](assets/chlimage_1-103a.png)
 
    >[!NOTE]
    >

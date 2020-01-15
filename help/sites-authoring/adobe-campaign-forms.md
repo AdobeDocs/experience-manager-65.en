@@ -53,7 +53,7 @@ First of all, check the connection between the author and publish instances and 
 1. In AEM, in Sites, navigate to where you want to create a new page.
 1. Create a page and select **Adobe Campaign Classic Profile **or** Adobe Campaign Standard Profile** and click **Next**.
 
-   ![chlimage_1-43](assets/chlimage_1-43.png)
+   ![chlimage_1-43](assets/chlimage_1-43a.png)
 
    >[!NOTE]
    >
@@ -63,7 +63,7 @@ First of all, check the connection between the author and publish instances and 
 1. In the **Title** field, enter a title and click **Create**.
 1. Open the page and select **Open Properties** and in Cloud Services add the Adobe Campaign configuration and select the checkmark to save your changes.
 
-   ![chlimage_1-44](assets/chlimage_1-44.png)
+   ![chlimage_1-44](assets/chlimage_1-44a.png)
 
 1. On the page, in the **Form Start** component, select the type of form it is - **Subscribe, Unsubscribe, **or** Save Profile**. You can only have one type per form. You can now [edit the form's content](#editing-form-content).
 
@@ -79,11 +79,11 @@ This section only details specific links to Adobe Campaign. For more information
 
 1. Select **Open Properties** and in Cloud Services add the Adobe Campaign configuration and select the checkmark to save your changes.
 
-   ![chlimage_1-45](assets/chlimage_1-45.png)
+   ![chlimage_1-45](assets/chlimage_1-45a.png)
 
 1. On the page, in the **Form Start** component, click the Configuration icon.
 
-   ![chlimage_1-46](assets/chlimage_1-46.png)
+   ![chlimage_1-46](assets/chlimage_1-46a.png)
 
 1. Click the **Advanced** tab and select the type of form it is - **Subscribe, Unsubscribe,** or **Save Profile** and click **OK.** You can only have one type per form.
 
@@ -96,14 +96,14 @@ This section only details specific links to Adobe Campaign. For more information
 
    Generated links to this form need to use this URL parameter and assign it the encrypted primary key of an Adobe Campaign profile. The encrypted primary key must be properly URL (percent) encoded.
 
-   ![chlimage_1-47](assets/chlimage_1-47.png)
+   ![chlimage_1-47](assets/chlimage_1-47a.png)
 
 1. Add components to the form as needed, such as a Text field, Date field, Checkbox field, Option field, and so on. See [Adobe Campaign Form Components](/help/sites-authoring/adobe-campaign-components.md) for more information on each component.
 1. Click the Configuration icon to open the component. For example, in **Text Field (Campaign)** component, change the title and text.
 
    Click **Adobe Campaign** to map the form field to an Adobe Campaign metadata variable. When you submit the form, the mapped field is updated in Adobe Campaign. Only fields with matching types are available in the variable picker (for example, string variables for text fields).
 
-   ![chlimage_1-48](assets/chlimage_1-48.png)
+   ![chlimage_1-48](assets/chlimage_1-48a.png)
 
    >[!NOTE]
    >

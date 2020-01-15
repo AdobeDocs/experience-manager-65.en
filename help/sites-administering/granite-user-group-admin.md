@@ -19,13 +19,13 @@ These accounts are the underlying basis of the [AEM accounts](/help/sites-admini
 
 Granite user and group administration consoles are both available from the **[Tools](/help/sites-administering/tools-consoles.md)** console of the touch-optimized UI:
 
-![chlimage_1-72](assets/chlimage_1-72.png)
+![chlimage_1-72](assets/chlimage_1-72a.png)
 
 Choosing either **Users** or **Groups** from the Tools console will open the appropriate console. In both you can take action either by using the clickbox and then actions from the toolbar, or by opening the account details via the link under **Name**.
 
 * [User Administration](#user-administration)
 
-  ![chlimage_1-73](assets/chlimage_1-73.png)
+  ![chlimage_1-73](assets/chlimage_1-73a.png)
 
   The **Users** console lists:
 
@@ -35,7 +35,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
 * [Group Administration](#group-administration)
 
-  ![chlimage_1-74](assets/chlimage_1-74.png)
+  ![chlimage_1-74](assets/chlimage_1-74a.png)
 
   The **Groups** console lists:
 
@@ -53,7 +53,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
 1. The **Create User** form will open:
 
-   ![chlimage_1-75](assets/chlimage_1-75.png)
+   ![chlimage_1-75](assets/chlimage_1-75a.png)
 
    Here you can enter the user details for the account (most are standard and self-explanatory):
 
@@ -125,11 +125,11 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
 1. You can now edit the details as in [Adding a New User](#adding-a-new-user). Under **Account Settings** there is a link for **Change Password**.
 
-   ![chlimage_1-76](assets/chlimage_1-76.png)
+   ![chlimage_1-76](assets/chlimage_1-76a.png)
 
 1. The **Change Password** dialog will open. Enter and retype the new password, together with your password. Use **OK** to confirm the changes.
 
-   ![chlimage_1-77](assets/chlimage_1-77.png)
+   ![chlimage_1-77](assets/chlimage_1-77a.png)
 
    An message will confirm that the password has been changed.
 
@@ -142,7 +142,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
    To open the group selection drop down:
 
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   ![chlimage_1-78](assets/chlimage_1-78a.png)
 
 1. In the selection box you can select or deselect groups to which the user account should belong.
 
@@ -170,7 +170,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
 1. The **Create Group** form will open:
 
-   ![chlimage_1-79](assets/chlimage_1-79.png)
+   ![chlimage_1-79](assets/chlimage_1-79a.png)
 
    Here you can enter the group details:
 
