@@ -254,7 +254,7 @@ To create the new component, we use the standard textimage component as a basis 
 
 1. Copy the standard textimage component from `/libs/foundation/components/textimage` into the Geometrixx component folder, `/apps/geometrixx/components`, using textimage as the target node name. (Copy the component by navigating to the component, right-clicking and selecting Copy and browsing to the target directory.)
 
-   ![chlimage_1-59](assets/chlimage_1-59.png)
+   ![chlimage_1-59](assets/chlimage_1-59a.png)
 
 1. To keep this example simple, navigate to the component you copied and delete all the subnodes of the new textimage node except for the following ones:
 
@@ -286,7 +286,7 @@ To create the new component, we use the standard textimage component as a basis 
 
    After this step, the component node looks like this:
 
-   ![chlimage_1-60](assets/chlimage_1-60.png)
+   ![chlimage_1-60](assets/chlimage_1-60a.png)
 
 1. Change the `sling:resourceType` property of the edit configuration node of the image (property: `textimage/cq:editConfig/cq:dropTargets/image/parameters/sling:resourceType`) to `geometrixx/components/textimage.`
 
@@ -323,7 +323,7 @@ To create the new component, we use the standard textimage component as a basis 
 
    Image position is persisted in content as the `imagePosition`property of the node representing `textimage` paragraph. After these steps, the component dialog box looks like this:
 
-   ![chlimage_1-61](assets/chlimage_1-61.png)
+   ![chlimage_1-61](assets/chlimage_1-61a.png)
 
 1. Extend the component script, `textimage.jsp`, with extra handling of the new parameter:
 
@@ -369,7 +369,7 @@ To disable this capability, we use the standard image component as a basis and m
 
 1. Copy the standard image component from `/libs/foundation/components/image` into the Geometrixx component folder, `/apps/geometrixx/components`, using image as the target node name.
 
-   ![chlimage_1-62](assets/chlimage_1-62.png)
+   ![chlimage_1-62](assets/chlimage_1-62a.png)
 
 1. Edit the component metadata:
 
@@ -382,7 +382,7 @@ To disable this capability, we use the standard image component as a basis and m
     * **Type**: `String`
     * **Value**: `false`
 
-   ![chlimage_1-63](assets/chlimage_1-63.png)
+   ![chlimage_1-63](assets/chlimage_1-63a.png)
 
 1. Click **Save All**. The component is ready to test.
 1. Open a page in Geometrixx such as English / Company.
@@ -391,11 +391,11 @@ To disable this capability, we use the standard image component as a basis and m
 
    Original image component:
 
-   ![chlimage_1-64](assets/chlimage_1-64.png)
+   ![chlimage_1-64](assets/chlimage_1-64a.png)
 
    Your new image component:
 
-   ![chlimage_1-65](assets/chlimage_1-65.png)
+   ![chlimage_1-65](assets/chlimage_1-65a.png)
 
 1. The component is now ready to use.
 
