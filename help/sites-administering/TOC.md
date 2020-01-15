@@ -120,7 +120,6 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [Related Community Articles](related-community-articles.md)
     + [Integrating with Adobe Campaign Standard](campaignstandard.md)
     + [Flash Viewers End-of-Life Notice](flash-viewers-eol.md)
-    + [Integrating with Adobe Creative Cloud](creative-cloud.md)
     + [Product Feed](product-feed.md)
     + [Integrating with Adobe Dynamic Tag Management](dtm.md)
     + [Opting Into Adobe Analytics and Adobe Target](opt-in.md)

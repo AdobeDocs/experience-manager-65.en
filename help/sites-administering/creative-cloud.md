@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Folder sharing with Adobe Creative Cloud{#folder-sharing-with-adobe-creative-cloud}
+# Folder sharing with Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}
 
 >[!CAUTION]
 >
@@ -25,7 +25,7 @@ Adobe Experience Manager (AEM) Assets lets you share folders containing assets w
 
    ![](assets/chlimage_1-139.png)
 
-1. From the toolbar, click the **Share** icon.
+1. From the toolbar, click **Share**.
 
    ![](assets/chlimage_1-140.png)
 
