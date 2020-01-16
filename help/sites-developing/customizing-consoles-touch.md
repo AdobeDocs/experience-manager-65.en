@@ -85,9 +85,7 @@ You can customize the default view (column, card, list) for a console:
    Define the following property:
 
     * **Name**: `sling:orderBefore`
-
     * **Type**: `String`
-
     * **Value**: `column`
 
 ### Add New Action to the Toolbar {#add-new-action-to-the-toolbar}

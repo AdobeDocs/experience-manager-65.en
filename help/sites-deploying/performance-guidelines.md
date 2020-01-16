@@ -235,7 +235,7 @@ Illustrated below are the deployment options available for AEM (scroll to view a
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><p>Desktop app</p> </td>
+   <td><p>desktop app</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>

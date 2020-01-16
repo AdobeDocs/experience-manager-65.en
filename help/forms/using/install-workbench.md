@@ -8,7 +8,7 @@ topic-tags: author
 discoiquuid:
 ---
 
-# About This Document {#about-this-doc}
+# Install Workbench {#install-workbench}
 
 This document provides instructions for installing and configuring AEM Forms Workbench. The installation program also installs Forms Designer.
 
