@@ -40,9 +40,9 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >
    >If you want to share links from your AEM Author instance to external entities, ensure that you only expose the following URLs (which are used for link sharing) for `GET` requests only. Block other URLs to ensure security of AEM Author.
    >
-   >    * http://[aem_server]:[port]/linkshare.html
-   >    * http://[aem_server]:[port]/linksharepreview.html
-   >    * http://[aem_server]:[port]/linkexpired.html
+   >* http://&lt;aem_server&gt;:&lt;port&gt;/     linkshare.html
+   >* http://&lt;aem_server&gt;:&lt;port&gt;/linksharepreview.html
+   >* http://&lt;aem_server&gt;:&lt;port&gt;/linkexpired.html
 
    >[!NOTE]
    >
