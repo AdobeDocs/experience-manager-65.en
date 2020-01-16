@@ -26,7 +26,7 @@ Use this configuration to publish assets from AEM Assets to Brand Portal. At the
 
 ## Create JWT application {#create-jwt-application}
 
-1. Log in to [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) with your Adobe ID. You reach **JWT  Applications** page.
+1. Login to [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) with your Adobe ID. **JWT  Applications** page opens.
 
    >[!NOTE]
    >
@@ -34,9 +34,9 @@ Use this configuration to publish assets from AEM Assets to Brand Portal. At the
 
 1. Select **[!UICONTROL Add Application]** to create an application.
 1. Specify a name for the application and an optional description.
-1. From the [!UICONTROL Organization] list, select the organization for which you want to synchronize assets.
-1. From the [!UICONTROL Scope] list, select **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]**, and **[!UICONTROL cc-share]**.
-1. Tap/ click **[!UICONTROL Add]**. A JWT Service application is created. You can edit the application and Save.
+1. From the **[!UICONTROL Organization]** list, select the organization for which you want to synchronize assets.
+1. From the **[!UICONTROL Scope]** list, select **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]**, and **[!UICONTROL cc-share]**.
+1. Click **[!UICONTROL Add]**. A JWT Service application is created. You can edit the application and Save.
 1. Copy the Application ID that is generated for the new application.
 
    >[!NOTE]
@@ -45,25 +45,23 @@ Use this configuration to publish assets from AEM Assets to Brand Portal. At the
 
 ## Create a new cloud configuration {#create-a-new-cloud-configuration}
 
-1. From the [!UICONTROL Navigation] page of your local AEM Assets instance, tap/click the **[!UICONTROL Tools]** icon on the left.
-
-   ![chlimage_1-82](assets/chlimage_1-252.png)
+1. From the **[!UICONTROL Navigation]** page of your local AEM Assets instance, click **[!UICONTROL Tools]** icon on the left.
 
 1. Navigate to **[!UICONTROL Cloud Services] &gt; [!UICONTROL Legacy Cloud Services]**.
 
    ![AEM Tools](assets/aem-tools.png)
 
-1. In the [!UICONTROL Cloud Services] page, locate the **[!UICONTROL Assets Brand Portal]** service under [!UICONTROL Adobe Experience Cloud].
+1. In **[!UICONTROL Cloud Services]**, locate the **[!UICONTROL Assets Brand Portal]** service under **[!UICONTROL Adobe Experience Cloud]**.
 
    ![Adobe Experience Cloud Services](assets/experience-cloud-services.png)
 
-1. Tap/ click the **[!UICONTROL Configure now]** link below the service to display the **[!UICONTROL Create Configuration]** dialog.
-1. In the **[!UICONTROL Create Configuration]** dialog, specify a title and name for the new configuration and tap/click **[!UICONTROL Create]**.
+1. Click **[!UICONTROL Configure now]** link below the service to display the **[!UICONTROL Create Configuration]** dialog.
+1. In **[!UICONTROL Create Configuration]** dialog, specify a title and name for the new configuration and click **[!UICONTROL Create]**.
 
    ![bp-config](assets/bp-config.png)
 
-1. In the [!UICONTROL AEM Assets Brand Portal Replication] dialog, specify the URL of your organization in the [!UICONTROL Tenant URL] field.
-1. In the [!UICONTROL Client ID] field, paste the application ID you copied at the end of the procedure [Create an application](/help/assets/brand-portal-configuring-integration.md#create-jwt-application). Select **[!UICONTROL OK]**.
+1. In the **[!UICONTROL AEM Assets Brand Portal Replication]** dialog, specify the URL of your organization in the **[!UICONTROL Tenant URL]** field.
+1. In the **[!UICONTROL Client ID]** field, paste the application ID you copied at the end of the procedure [Create an application](/help/assets/brand-portal-configuring-integration.md#create-jwt-application). Select **[!UICONTROL OK]**.
 
    ![public-folder-publish](assets/public-folder-publish.png)
 
@@ -71,9 +69,9 @@ Use this configuration to publish assets from AEM Assets to Brand Portal. At the
 
    >[!NOTE]
    >
-   >The option to enable [!UICONTROL Public Folder Publish] is available in AEM 6.3.2.1 onwards.
+   >The option to enable **[!UICONTROL Public Folder Publish]** is available in AEM 6.3.2.1 onwards.
 
-1. From the [!UICONTROL Brand Portal Configuration] page, tap/click **[!UICONTROL Display Public Key]** to display the public key generated for your instance.
+1. From the **[!UICONTROL Brand Portal Configuration]** page, click **[!UICONTROL Display Public Key]** to display the public key generated for your instance.
 
    ![display-public-key](assets/display-public-key.png)
 
@@ -83,28 +81,26 @@ Use this configuration to publish assets from AEM Assets to Brand Portal. At the
 
 1. Display the public key using one of the following methods mentioned in the last step of the procedure [Add a new configuration to Marketing Cloud](/help/assets/brand-portal-configuring-integration.md#create-a-new-cloud-configuration).
 
-    * Click the **[!UICONTROL Display Public Key]** button to display the key.
+    * Click **[!UICONTROL Display Public Key]** button to display the key.
     * Open the downloaded file containing the key.
 
-1. Open the Marketing Cloud Developer Connection interface and click the application you created in [Create an application](/help/assets/brand-portal-configuring-integration.md#create-jwt-application).
-1. Paste the public key into the [!UICONTROL Public Key] field of the configuration interface
-1. Tap/click **[!UICONTROL Save]**. A message confirms that the application has been updated.
+1. Open the Marketing Cloud Developer Connection interface and click on the application you created in [Create an application](/help/assets/brand-portal-configuring-integration.md#create-jwt-application).
+1. Paste the public key into the **[!UICONTROL Public Key]** field of the configuration interface
+1. Click **[!UICONTROL Save]**. A message confirms that the application has been updated.
 
 ## Test the integration {#test-the-integration}
 
-1. From the [!UICONTROL Navigation] page of your local AEM Assets instance, click the **[!UICONTROL Tools]** icon on the left.
-
-   ![chlimage_1-83](assets/chlimage_1-253.png)
+1. From the **[!UICONTROL Navigation]** page of your local AEM Assets instance, click **[!UICONTROL Tools]** icon on the left.
 
 1. Navigate to **[!UICONTROL Deployment]** &gt; **[!UICONTROL Replication]**.
 
    ![deploymentreplication](assets/deploymentreplication.png)
 
-1. In the [!UICONTROL Replication] page, tap/click **[!UICONTROL Agents on author]**.
+1. In the **[!UICONTROL Replication]** page, click **[!UICONTROL Agents on author]**.
 
    ![agents_on_author](assets/agents_on_author.png)
 
-1. To verify the connection between AEM Author and Brand Portal, open any of the four replication agents and tap/click **[!UICONTROL Test Connection]**.
+1. To verify the connection between AEM Author and Brand Portal, open any of the four replication agents and click **[!UICONTROL Test Connection]**.
 
    >[!NOTE]
    >
@@ -133,7 +129,7 @@ After replication succeeds, you can publish assets, folders, and Collections  to
 >
 >Adobe recommends staggered publishing, preferably during non-peak hours, so that the AEM author does not occupy excess resources.
 
-1. From the Assets console, hover over the desired assets and select **[!UICONTROL Publish]** option from the quick actions.
+1. From the Assets console, select the assets/folder that you want to publish and click **[!UICONTROL Quick Publish]** option from the toolbar.
 
    Alternatively, select the assets you want to publish to Brand Portal.
 
@@ -151,11 +147,11 @@ To publish the selected assets to Brand Portal, do either of the following:
 
 * From the toolbar, select **[!UICONTROL Manage Publication]**.
 
-  1. Then from the [!UICONTROL Action] select **[!UICONTROL Publish to Brand Portal]**, and from [!UICONTROL Scheduling] select **[!UICONTROL Now]**. Tap/ click **[!UICONTROL Next]**.
+  1. Then from the **[!UICONTROL Action]** select **[!UICONTROL Publish to Brand Portal]**, and from **[!UICONTROL Scheduling]** select **[!UICONTROL Now]**. Click **[!UICONTROL Next]**.
 
-  2. Within [!UICONTROL Scope], confirm your selection and tap/ click **[!UICONTROL Publish to Brand Portal]**.
+  2. Within **[!UICONTROL Scope]**, confirm your selection and click **[!UICONTROL Publish to Brand Portal]**.
 
-A message appears stating that the assets have been queued up for publishing to Brand Portal. Log in to the Brand Portal interface to see the published assets.
+A message appears stating that the assets have been queued up for publishing to Brand Portal. Login to the Brand Portal interface to see the published assets.
 
 ### Publish assets later {#publish-to-bp-later}
 
@@ -163,18 +159,18 @@ To schedule publishing the assets to Brand Portal to a later date or time:
 
 1. Once you have selected assets/ folders to publish, select **[!UICONTROL Manage Publication]** from the tool bar at the top.
   
-1. On [!UICONTROL Manage Publication] page, select **[!UICONTROL Publish to Brand Portal]** from [!UICONTROL Action] and select **[!UICONTROL Later]** from [!UICONTROL Scheduling].
+1. On **[!UICONTROL Manage Publication]** page, select **[!UICONTROL Publish to Brand Portal]** from **[!UICONTROL Action]** and select **[!UICONTROL Later]** from **[!UICONTROL Scheduling]**.
 
     ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
-1. Select an **[!UICONTROL Activation date]** and specify time. Tap/ click **[!UICONTROL Next]**.
+1. Select an **[!UICONTROL Activation date]** and specify time. Click **[!UICONTROL Next]**.
 
-1. Select an **Activation date** and specify time. Tap/ click **Next**.
+1. Select an **Activation date** and specify time. Click **Next**.
 
-1. Specify a Workflow title under [!UICONTROL Workflows]. Tap/ click **[!UICONTROL Publish Later]**.
+1. Specify a **[!UICONTROL Workflow title]** in **[!UICONTROL Workflows]**. Click **[!UICONTROL Publish Later]**.
 
     ![publishworkflow](assets/publishworkflow.png)
 
-Now, log in to Brand Portal to see whether the published assets are available on  Brand  Portal interface.
+Now, login to Brand Portal to see whether the published assets are available on  Brand  Portal interface.
 
    ![bp_landing_page](assets/bp_landing_page.png)
