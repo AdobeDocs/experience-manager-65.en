@@ -6,7 +6,6 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 199fa254-e5bf-4982-b157-2036a708018c
 docset: aem65
-
 ---
 
 # Configure Asset Insights {#configure-asset-insights}
@@ -24,7 +23,7 @@ Adobe Experience Manager (AEM) Assets fetches usage data around AEM assets used 
 1. Click the **[!UICONTROL Insights Configuration]** card.
 1. In the wizard, select a data center and provide your credentials including the name of your organization, user name, and Shared Secret.
 
-   ![Configure Adobe Analytics for Assets Insights in AEM](assets/insights_config2.png)
+   ![Configure Adobe Analytics for Assets Insights in AEM](assets/insights_config2.png) <br>
    *Figure: Configure Adobe Analytics for Assets Insights in AEM*
 
 1. Click/tap **[!UICONTROL Authenticate]**.
