@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Publish collections to Brand Portal{#publish-collections-to-brand-portal}
+# Publish collections to Brand Portal {#publish-collections-to-brand-portal}
 
 As an Adobe Experience Manager (AEM) Assets administrator, you can publish collections to the AEM Assets Brand Portal instance for your organization. However, you must first integrate AEM Assets with Brand Portal. For details, see [Configure AEM Assets integration with Brand Portal](/help/assets/brand-portal-configuring-integration.md).
 
@@ -27,16 +27,14 @@ If you make subsequent modifications to the original collection in AEM Assets, t
 
 ## Publish a collection to Brand Portal {#publish-a-collection-to-brand-portal}
 
-1. In the AEM Assets UI, tap/click the AEM logo. Then, go to **Assets** &gt; **Collections** from the **Navigation** page.
-1. From the Collections console, select the collection you want to publish to Brand Portal.
+1. In the AEM Assets UI, click AEM logo. 
+1. From **Navigation** page, go to **Assets > Collections**.
+1. From the Collections console, select the collection that you want to publish to Brand Portal.
 
    ![select_collection](assets/select_collection.png)
 
-1. From the toolbar, tap/click **Publish to Brand Portal**.
-
-   ![publish_to_bp_icon](assets/publish_to_bp_icon.png)
-
-1. In the confirmation dialog, tap/click **Publish**.
+1. From the toolbar, click **Publish to Brand Portal**.
+1. In the confirmation dialog, click **Publish**.
 1. Close the confirmation message.
 1. Log in to Brand Portal as an administrator. The published collection is available in the Collections console.
 
@@ -50,10 +48,7 @@ You can unpublish collections that you publish from AEM Assets to Brand Portal. 
 
    ![select_collection-1](assets/select_collection-1.png)
 
-1. From the toolbar, tap/click the **Remove from Brand Portal** icon.
-
-   ![remove_from_bp_icon](assets/remove_from_bp_icon.png)
-
-1. In the dialog, tap/click **Unpublish**.
+1. From the toolbar, click **Remove from Brand Portal** icon.
+1. In the dialog, click **Unpublish**.
 1. Close the confirmation message. The collection is removed from the Brand Portal interface.
 
