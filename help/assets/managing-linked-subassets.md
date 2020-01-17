@@ -81,7 +81,9 @@ This procedure is similar to [Adding AEM assets as references in Adobe Illustrat
 
 ## View pages of a multi-page file {#view-pages-of-a-multi-page-file}
 
-The Page Viewer feature of AEM Assets lets you view individual pages of multi-page files, including PDF, INDD, PPT, PPTX, and Ai files. For InDesign, you can extract pages using InDesign server. If the previews of pages are saved during InDesign file creation , then InDesign Server is not required for page extraction.
+The [!UICONTROL Page Viewer] feature of AEM Assets lets you view individual pages of multi-page files, including PDF, INDD, PPT, PPTX, and AI files. For InDesign, you can extract pages using InDesign server. If the previews of pages are saved during InDesign file creation , then InDesign Server is not required for page extraction.
+
+To make the subassets available in AEM, see [how to generate subassets](/help/assets/managing-assets-touch-ui.md#generate-subassets).
 
 You can browse through individual pages of a file from the asset page. You can use options from the toolbar to annotate individual pages of the file. You can also use the **[!UICONTROL Page Overview]** option to view all the pages simultaneously.
 

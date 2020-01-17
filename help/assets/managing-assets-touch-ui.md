@@ -386,7 +386,7 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 ## Copy assets {#copying-assets}
 
-When you copy an asset or a folder, the entire asset or the folder is copied, along with its content structure. A copied asset or a folder is duplicated at the target location. The asset at the source location is not alterted.
+When you copy an asset or a folder, the entire asset or the folder is copied, along with its content structure. A copied asset or a folder is duplicated at the target location. The asset at the source location is not altered.
 
 A few attributes that are unique to a particular copy of an asset are not carried forward. Some examples are:
 
@@ -455,7 +455,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    If you do not update references, they continue to point to the previous path of the asset. If you adjust the references, they are updated to the new asset path.
 
-### Manage renditions {#managing-renditions}
+## Manage renditions {#managing-renditions}
 
 1. You can add or remove renditions for an asset, except the original. Navigate to the location of the asset for which you want to add or remove renditions.
 
@@ -507,25 +507,20 @@ The other properties and metadata information is retained. A partial copy is not
    >
    >Video annotations are supported only on browsers with HTML5 compatible video formats. In addition, depending on the browser, different video formats are supported.
 
+### Create subassets {#generate-subassets}
+
+Supported assets with multi-page formats &mdash; PDF files, AI files, Microsoft PowerPoint and Apple Keynote files, and Adobe InDesign files &mdash; can generate subassets for each individual page. These subassets are linked to the parent asset and facilitate multi-page view. For all other purposes, the subassets are treated like normal assets in AEM.
+
+Subasset generation is disabled by default. AEM offers two methods to generate subassets:
+
+* Add the **[!UICONTROL Create Sub Asset]** step to the **[!UICONTROL DAM Update Asset]** workflow. When the [!UICONTROL DAM Update Assets] workflow applies to the multi-page assets, the subassets are generated.
+* Select a specific multi-page asset and execute the **[!UICONTROL DAM Process Sub-Asset]** workflow from the [!UICONTROL Timeline] sidebar.
+
+Specifically for Microsoft Word documents, use the **[!UICONTROL DAM Parse Word Documents]** workflow. It generates a `cq:Page` component from the contents of the Microsoft Word document. The images extracted from the document are referenced from the `cq:Page` component. These images are extracted even if subasset generation is disabled.
+
 ### View subassets {#viewing-subassets}
 
-In AEM, subassets can be generated for assets with supported multi-page formats such as PDF, AI, Powerpoint/Apple Keynote, and InDesign. These subassets are like normal assets, but are linked to their parent asset and facilitate multi-page view in the Touch UI.
-
-Subasset generation is disabled by default. To enable subasset generation, add the **[!UICONTROL Create Sub Asset]** step to the DAM Update Asset workflow.
-
-For Word documents, the DAM Parse Word Documents workflow generates a `cq:Page` component from the contents of the Word document. The images extracted from the document are referenced from the `cq:Page` component. These images are extracted even if subasset generation is disabled.
-
-1. To view subassets, navigate to the location of the asset and open its asset page.
-
-1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Subassets]** from the list
-
-   ![chlimage_1-223](assets/chlimage_1-18.png)
-
-   >[!NOTE]
-   >
-   >The **Subassets** option is displayed only if subassets are-available/have-been-generated for the asset.
-
-   When you select **Subassets** from the list, the **subassets** page displays the subassets linked to the parent asset.
+The subassets are displayed only if the subassets are generated and are available for the selected multi-page asset. To view the generated subassets, navigate to the multi-page asset and open its asset page. Tap the AEM icon, and choose **[!UICONTROL Subassets]** from the list. When you select **[!UICONTROL Subassets]** from the list, the subassets page displays the subassets linked to the parent asset.
 
    ![chlimage_1-224](assets/chlimage_1-19.png)
 
