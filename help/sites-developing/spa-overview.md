@@ -182,4 +182,4 @@ The AEM SPA Editor SDK was introduced with AEM 6.4 service pack 2. It is fully s
 * Page diff and Time Warp
 * Features performing HTML rewriting server-side such as Link Checker, CDN rewriter service, URL shortening etc.
 * Developer mode
-* Launch
+* AEM Launches
