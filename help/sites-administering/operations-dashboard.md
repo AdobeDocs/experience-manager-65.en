@@ -682,7 +682,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 [experiencemanager-java-maintenancetask-sample](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample)- [src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
 
-Once the service is deployed, it will be exposed to the Operations Dashboard UI and can be added to one of the available maintenance schedules:
+After the service is deployed, it is exposed to the Operations Dashboard UI. You can add it to one of the available maintenance schedules:
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 

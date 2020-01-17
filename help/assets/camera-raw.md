@@ -1,5 +1,5 @@
 ---
-title: Camera Raw Support
+title: Camera Raw support
 description: Learn how to enable Camera Raw support in Adobe Experience Manager (AEM) Assets.
 uuid: b0463513-ca1f-41b4-adaf-040cdc1ddd26
 contentOwner: AG
@@ -9,29 +9,29 @@ docset: aem65
 
 ---
 
-# Camera Raw Support {#camera-raw-support}
+# Support for Camera Raw processing {#camera-raw-support}
 
-The Camera Raw package enables support for various raw file formats, such as .cr2, .nef, .raf, and so on. The Camera Raw functionality is supported in AEM to render your assets in JPEG format. The supported package is available at [https://blogs.adobe.com/lightroomjournal/2017/03/acr-9-9-now-available.html](https://blogs.adobe.com/lightroomjournal/2017/03/acr-9-9-now-available.html).
+You can enable the Camera Raw support to process raw file formats, such as CR2, NEF, and RAF, and render the images in JPEG format. The Camera Raw functionality is supported in AEM via a package available at [https://blogs.adobe.com/lightroomjournal/2017/03/acr-9-9-now-available.html](https://blogs.adobe.com/lightroomjournal/2017/03/acr-9-9-now-available.html).
 
 >[!NOTE]
 >
->The functionality supports only JPEG renditions. It is supported on Windows 64 Bit, Mac OS, and RHEL 7.x.
+>The functionality supports only JPEG renditions. It is supported on Windows 64 bit, Mac OS, and RHEL 7.x.
 
-To enable Camera Raw support in Adobe Experience Manager (AEM) Assets:
+To enable Camera Raw support in Adobe Experience Manager (AEM) Assets, follow these steps:
 
-1. Download the Camera Raw package version [1.3.16](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from the Package Share.
-1. Access `https://[AEM server]:[Port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
+1. Download the [Camera Raw package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from the Package Share.
+1. Access `https://[aem_server]:[port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
 1. Open the **[!UICONTROL Process Thumbnails]** step.
 1. Provide the following configuration in the **[!UICONTROL Thumbnails]** tab:
 
-    * Thumbnails: `140:100:false, 48:48:false, 319:319:false`
-    * Skip Mime Types: `skip:image/dng, skip:image/x-raw-(.*)`
+    * **[!UICONTROL Thumbnails]**: `140:100:false, 48:48:false, 319:319:false`
+    * **[!UICONTROL Skip Mime Types]**: `skip:image/dng, skip:image/x-raw-(.*)`
 
    ![chlimage_1-128](assets/chlimage_1-334.png)
 
 1. In the **[!UICONTROL Web Enabled Image]** tab, specify the following:
 
-    * Skip List: `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`
+    * **[!UICONTROL Skip List]**: `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`
 
    ![chlimage_1-129](assets/chlimage_1-335.png)
 

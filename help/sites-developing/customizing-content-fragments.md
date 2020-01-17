@@ -196,19 +196,19 @@ Content fragments can be integrated with:
     * The individual translations of a content fragment are actually separate fragments; for example:
 
         * they are located under different language roots:
-         
+
           `/content/dam/<path>/en/<to>/<fragment>`
-        
+
           vs.
-        
+
           `/content/dam/<path>/de/<to>/<fragment>`
 
         * but they share exactly the same relative path below the language root:
-        
+
           `/content/dam/<path>/en/<to>/<fragment>`
-        
+
           vs.
-        
+
           `/content/dam/<path>/de/<to>/<fragment>`
 
     * Besides the rule-based paths, there is no further connection between the different language versions of a content fragment; they are handled as two separate fragments, although the UI provides the means to navigate between the language variants.

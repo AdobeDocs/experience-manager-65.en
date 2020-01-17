@@ -1,6 +1,6 @@
 ---
-title: Assets file format best practices
-description: Best practices for file support in AEM Assets.
+title: Best practices to process the various supported file formats using AEM Assets.
+description: Best practices to process the various supported file types using AEM Assets.
 uuid: 25835316-fe1c-46b8-8caa-184a9e0b1797
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

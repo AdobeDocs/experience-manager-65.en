@@ -1,5 +1,5 @@
 ---
-title: Assets Network Considerations
+title: Assets network considerations and requirements
 description: Discusses network considerations when designing an AEM Assets deployment.
 uuid: 40171fba-8e57-4aee-a765-269877e77f2d
 contentOwner: AG
@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 70258b2a-2196-4804-94de-9a530eff36b9
 ---
 
-# Assets Network Considerations {#assets-network-considerations}
+# Assets network considerations {#assets-network-considerations}
 
 Understanding your network is as important as understanding Adobe Experience Manager (AEM) Assets. The network can affect upload, download, and user experiences. Diagramming your network topology helps identify choke points and sub-optimized areas in the network that you must fix to improve network performance and user experience.
 

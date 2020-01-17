@@ -1,6 +1,6 @@
 ---
-title: Preparing assets for translation
-description: Create language root folders to prepare for translating multilingual assets.
+title: Prepare assets for translation
+description: Create language root folders to prepare assets for translation to support multilingual assets.
 uuid: 8a146234-60c0-4ee6-8f54-1275c887be23
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -37,7 +37,7 @@ Perform the following steps to prepare your assets for translation:
 1. Add assets to your language master.
 1. Create the language root of each target language for which you require a language copy.
 
-## Creating a Language Root {#creating-a-language-root}
+## Create a language root {#creating-a-language-root}
 
 To create the language root, you create a folder and use an ISO language code as the value for the Name property. After you create the language root, you can create a language copy at any level within the language root.
 
@@ -53,7 +53,7 @@ For example, the root page of the Italian language copy of the sample hierarchy 
 
 1. Click or tap **[!UICONTROL Create]**. The language root is created in the Assets console.
 
-## Viewing Language Roots {#viewing-language-roots}
+## View language roots {#viewing-language-roots}
 
 AEM interface provides a **[!UICONTROL References]** panel that displays a list of language roots that have been created within AEM Assets.
 

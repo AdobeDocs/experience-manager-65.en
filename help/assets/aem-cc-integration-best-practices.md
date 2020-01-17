@@ -1,6 +1,6 @@
 ---
-title: AEM and Creative Cloud Integration Best Practices
-description: Best practices for integrating an AEM instance with Adobe Creative Cloud to streamline asset transfer workflows and achieve maximum efficiency.
+title: AEM and Creative Cloud integration best practices
+description: Best practices to integrate AEM with Adobe Creative Cloud to streamline asset transfer workflows and achieve maximum efficiency.
 uuid: 6d0d9f30-64ef-410c-b826-79e02a4ac6be
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,7 +9,7 @@ docset: aem65
 
 ---
 
-# AEM and Creative Cloud Integration Best Practices {#aem-and-creative-cloud-integration-best-practices}
+# AEM and Creative Cloud integration best practices {#aem-and-creative-cloud-integration-best-practices}
 
 Adobe Experience Manager Assets is a digital asset management (DAM) solution that can integrate with Adobe Creative Cloud to help DAM users work together with creative teams, streamlining collaboration in the content creation process.
 
@@ -207,7 +207,7 @@ You can leverage the following upload capabilities:
 * To upload a few files from a single folder, drag the files directly to the web interface or use the Create option in the AEM Assets web interface.
 * Depending upon your business requirements, you can also use custom uploaders.
 
-#### Managing digital assets directly from desktop {#managing-digital-assets-directly-from-desktop}
+#### Manage digital assets directly from desktop {#managing-digital-assets-directly-from-desktop}
 
 If you use Network File Shares to manage digital assets, just using the network share mapped by AEM desktop app could be seen as a convenient substitute. When transitioning from network file shares, AEM web interface provides a rich set of Digital Asset Management capabilities that go well beyond what is possible on a network share (search, collections, metadata, collaboration, previews, and so on), and AEM desktop app provides a handy link to connect the server-side DAM repository with the work on desktop.
 
