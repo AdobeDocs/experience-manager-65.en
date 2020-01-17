@@ -268,5 +268,5 @@ Before your network printer administrator uses the XDC Editor, relocate the samp
 
 **To obtain the XDC Editor Help**:
 1. Go to the AEM Forms documentation website.
-1. Click the Develop tab and navigate to Creating device profiles using XDC Editor. Download the xdc_editor_help_web.zip file and install the Help files by following the instructions provided in the Readme file.
+1. Click the **Develop** tab and navigate to Creating device profiles using XDC Editor. Download the xdc_editor_help_web.zip file and install the Help files by following the instructions provided in the Readme file.
 

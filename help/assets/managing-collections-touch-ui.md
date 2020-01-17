@@ -7,7 +7,6 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: f2b11641-a88d-453b-8ec7-b5c83c78578f
 docset: aem65
 mini-toc-levels: 1
-
 ---
 
 # Manage collections {#managing-collections}
