@@ -44,7 +44,8 @@ Using tags, as a metadata, you can easily search assets, create collections usin
 Adobe Experience Manager Assets uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, our artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
 
 For more information see,
-* [Tags in AEM](/help/sites-authoring/tags.md)
+
+* [About tags in AEM](/help/sites-authoring/tags.md)
 * [Edit asset metadata](meta-edit.md)
 * [Enhanced Smart Tags in Assets](enhanced-smart-tags.md)
 
@@ -56,7 +57,7 @@ For more information, see [manage collections](managing-collections-touch-ui.md)
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
-Add backlinks to blog posts by marketing?
+Add back links to blog posts by marketing?
 -->
 
 ## Organize your assets to use profiles {#organize-to-use-profiles}
@@ -66,6 +67,7 @@ A processing profile contains Assets processing commands that apply to assets th
 Standardizing metadata usage, file naming, and folder structure ensures that as your pool of digital assets grows, you can apply processing profiles to folders with greater precision and consistency.
 
 For more information on various profiles that you can create and manage to process assets, see,
+
 * [Profiles to process metadata, images, and videos](processing-profiles.md)
 * [Metadata profiles](metadata-profiles.md)
 * [Video profiles](video-profiles.md)

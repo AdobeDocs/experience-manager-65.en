@@ -99,7 +99,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 See [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
 
-See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/best-practices-for-file-management.md).
+See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/organize-assets.md).
 
 **To create Dynamic Media Image Profiles**
 
