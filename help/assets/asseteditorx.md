@@ -1,5 +1,5 @@
 ---
-title: Extending Asset Editor
+title: Extend Asset Editor
 description: Learn how to extend the capabilities of Asset Editor using custom components.
 uuid: b2e6701d-9fbf-4b3f-a175-67aab05340d3
 contentOwner: AG
@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 90dc9025-ad40-47ea-9e17-af8c93ef650c
 ---
 
-# Extending Asset Editor {#extending-asset-editor}
+# Extend Asset Editor {#extending-asset-editor}
 
 The Asset Editor is the page that opens when an asset found through the Asset Share is clicked allowing the user to edit such aspects of the asset as metadata, thumbnail, title and tags.
 
@@ -15,7 +15,7 @@ Configuration of the editor using the predefined editing components is covered i
 
 In addition to using pre-existing editor components, Adobe Experience Manager (AEM) developers can also create their own components.
 
-## Creating an Asset Editor Template {#creating-an-asset-editor-template}
+## Create an Asset Editor template {#creating-an-asset-editor-template}
 
 The following sample pages are included in Geometrixx:
 
@@ -23,7 +23,7 @@ The following sample pages are included in Geometrixx:
 * Sample Template: `/apps/geometrixx/templates/asseteditor`
 * Sample Page Component: `/apps/geometrixx/components/asseteditor`
 
-### Configuring Clientlib {#configuring-clientlib}
+### Configure Clientlib {#configuring-clientlib}
 
 AEM Assets components use an extension of the WCM edit clientlib. The clientlibs are usually loaded in `init.jsp`.
 
@@ -35,7 +35,7 @@ Compared to the default clientlib loading (in core's `init.jsp`), an AEM Assets 
 
 In most cases, copying the existing sample `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) should meet these needs.
 
-### Configuring JS actions {#configuring-js-actions}
+### Configure JS actions {#configuring-js-actions}
 
 Some of the AEM Assets components require JS functions defined in `component.js`. Copy this file to your component directory and link it.
 
@@ -45,7 +45,7 @@ Some of the AEM Assets components require JS functions defined in `component.js`
 
 The sample loads this javascript source in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
-### Additional Style Sheets {#additional-style-sheets}
+### Additional style sheets {#additional-style-sheets}
 
 Some of the AEM Assets components use the AEM widgets library. To be rendered properly in the content context, an additional style sheet has to be loaded. The tag action component requires one more.
 
@@ -116,7 +116,7 @@ In the HTML part, use the preceding title set (either asset or page title):
 <title><%= title %></title>
 ```
 
-## Creating a simple form field component {#creating-a-simple-form-field-component}
+## Create a simple form field component {#creating-a-simple-form-field-component}
 
 This example describes how to build a component that shows and displays the metadata of a loaded asset.
 
@@ -197,7 +197,7 @@ This example describes how to build a component that shows and displays the meta
 
 1. In **Edit** mode, the new component (for example, **Sample Metadata**) is now available in the sidekick (found in the **Asset Editor** group). Insert the component. To be able to store the metadata, it must be added to the metadata form.
 
-## Modifying Metadata Options {#modifying-metadata-options}
+## Modify metadata options {#modifying-metadata-options}
 
 You can modify the namespaces available in the [metadata form](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
 

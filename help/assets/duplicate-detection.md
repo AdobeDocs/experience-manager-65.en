@@ -6,6 +6,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 41ff1835-4144-4381-9c5d-afb9449fcbd7
 docset: aem65
+
 ---
 
 # Enable detection of duplicate assets {#enable-detection-of-duplicate-assets}
@@ -16,12 +17,11 @@ If you attempt to upload an asset that exists in Adobe Experience Manager (AEM) 
 1. Edit the configuration for the servlet **[!UICONTROL Day CQ DAM Create Asset]**.
 1. Select the **[!UICONTROL detect duplicate]** option, and click/tap **[!UICONTROL Save]**.
 
-   ![Select detect duplicate option in the servlet](assets/chlimage_1-377.png)
-
-   Select detect duplicate option in the servlet
+   ![Select detect duplicate option in the servlet](assets/chlimage_1-377.png)<br>
+   *Figure: Select detect duplicate option in the servlet*
 
 The detect duplicate feature is now enabled in AEM Assets. When a user attempts to upload an asset that exists in AEM, the system checks for conflict and indicates it. The assets are identified using SHA-1 hash stored at `jcr:content/metadata/dam:sha1`, which means duplicate assets are detected irrespective of the filenames.
 
 >[!MORELIKETHIS]
 >
->[Duplicate assets in existing repository (a tutorial from community member)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
+>[Duplicate assets in existing repository (a tutorial from a community member)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)

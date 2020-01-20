@@ -1,5 +1,5 @@
 ---
-title: Check In and Check Out Files in Assets
+title: Check in and check out your digital assets for editing
 description: Learn how to check out assets for editing and check them back in after the changes are complete.
 uuid: d84850d3-fa29-47b3-ad99-151407360833
 contentOwner: AG
@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: e93cf898-498b-418f-a25c-be350914cc76
 ---
 
-# Check-in and check-out files in Assets {#check-in-and-check-out-files-in-assets}
+# Check-in and check-out files in AEM DAM {#check-in-and-check-out-files-in-assets}
 
 Adobe Experience Manager (AEM) Assets lets you check out assets for editing and check them back in after you complete making the changes. After you check out an asset, only you can edit, annotate, publish, move, or delete the asset. Checking out an asset locks the asset. Other users cannot perform any of these operations on the asset until you check the asset back in to AEM Assets. However, they can still change the metadata for the locked asset.
 
@@ -15,11 +15,11 @@ To be able to check out/in assets, you require Write access on them.
 
 This feature helps prevent other users from overriding the changes made by an author where multiple users collaborate on editing workflows across teams.
 
-## Checking Out Assets {#checking-out-assets}
+## Check out assets {#checking-out-assets}
 
 1. From the Assets UI, select the asset you want to check out. You can also select multiple assets to check out.
 1. From the toolbar, click/tap **[!UICONTROL Checkout]**.
-    The **[!UICONTROL Checkout]** option toggles to **[!UICONTROL Checkin]**. 
+    The **[!UICONTROL Checkout]** option toggles to **[!UICONTROL Checkin]**.
     To verify whether other users can edit the asset you checked out, log in as a different user. A lock symbol displays on the thumbnail of the asset that you checked out.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
@@ -42,7 +42,7 @@ This feature helps prevent other users from overriding the changes made by an au
 
 1. Select the edited asset from the Assets UI, and tap **[!UICONTROL Checkin]** from the toolbar. The modified asset is checked in to AEM Assets and is available to other users for editing.
 
-## Forced Check In {#forced-check-in}
+## Forced check in {#forced-check-in}
 
 Administrators can check in assets that are checked out by other users.
 
@@ -52,3 +52,8 @@ Administrators can check in assets that are checked out by other users.
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
 1. From the toolbar, tap **[!UICONTROL Release Lock]**. The asset is checked back in and available for edit to other users.
+
+>[!MORELIKETHIS]
+>
+> [Understand check in and check out in AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
+> [Video tutorial to understand check in and check out in AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)

@@ -1,5 +1,5 @@
 ---
-title: Metadata Schemata Reference
+title: Metadata schemata reference
 description: Learn about standard conventions for describing asset metadata, including Dublin Core, IPTC, and other metadata schema. 
 uuid: f37126b9-0f78-4621-b442-1ff5b2573275
 contentOwner: AG
@@ -11,7 +11,7 @@ docset: aem65
 
 ---
 
-# Metadata Schemata Reference {#metadata-schemata-reference}
+# Metadata schemata reference {#metadata-schemata-reference}
 
 The following reference includes information about a particular metadata schemata (in alphabetical order) as well as a list of properties and their definitions.
 
