@@ -55,9 +55,9 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 
    ![chlimage_1-201](assets/chlimage_1-484.png)
 
-1. Tap **[!UICONTROL Done]**. The Metadata Profile is added to the list of profiles in the **[!UICONTROL Metadata Profiles]** page.
+1. Tap/ click **[!UICONTROL Done]**. The Metadata Profile is added to the list of profiles in the **[!UICONTROL Metadata Profiles]** page.
 
-   ![chlimage_1-202](assets/chlimage_1-485.png)
+   ![Metadata profile added in Metadata Profiles page](assets/MetadataProfiles-page.png)
 
 ## Copy a metadata profile {#copying-a-metadata-profile}
 
@@ -67,9 +67,9 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 
 1. Tap **[!UICONTROL Copy]** from the toolbar.
 1. In the **[!UICONTROL Copy Metadata Profile]** dialog, enter a title for the new copy of the Metadata Profile.
-1. Tap **[!UICONTROL Copy]**. The copy of the Metadata Profile appears in the list of profiles in the **[!UICONTROL Metadata Profiles]** page. 
+1. Tap **[!UICONTROL Copy]**. The copy of the Metadata Profile appears in the list of profiles in the **[!UICONTROL Metadata Profiles]** page.
 
-   ![chlimage_1-204](assets/chlimage_1-487.png)
+   ![A copy of metadata profile added in Metadata Profiles page](assets/copy-metadata-profile.png)
 
 ## Delete a metadata profile {#deleting-a-metadata-profile}
 
