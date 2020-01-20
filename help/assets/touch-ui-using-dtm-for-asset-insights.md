@@ -6,7 +6,6 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 0c20a3ee-069d-451b-a682-111f1b033e73
 docset: aem65
-
 ---
 
 # Enable Asset Insights through DTM {#enable-asset-insights-through-dtm}
@@ -33,7 +32,7 @@ Perform these steps to enable Asset Insights through DTM.
 
     * Update the fields as appropriate, and tap/click **[!UICONTROL Create Property]**. See [documentation](https://helpx.adobe.com/experience-manager/using/dtm.html).
 
-   ![chlimage_1-57](assets/chlimage_1-193.png)
+   ![Create edit web property](assets/Create-edit-web-property.png)
 
 1. In the **[!UICONTROL Rules]** tab, select **[!UICONTROL Page Load Rules]** from the navigation pane and tap/click **[!UICONTROL Create New Rule]**.
 
@@ -55,7 +54,7 @@ Perform these steps to enable Asset Insights through DTM.
 
 1. Access `https://dtm.adobe.com`. Click **[!UICONTROL Overview]** in the web property and click **[!UICONTROL Add Tool]** or open an existing Adobe Analytics Tool. While creating the tool, you can set **[!UICONTROL Configuration Method]** to **[!UICONTROL Automatic]**.
 
-   ![chlimage_1-60](assets/chlimage_1-196.png)
+   ![Add Adobe Analytics tool](assets/Add-Adobe-Analytics-Tool.png)
 
    Select Staging/Production report suites, as appropriate.
 

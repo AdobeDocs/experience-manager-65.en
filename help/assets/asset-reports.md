@@ -39,7 +39,7 @@ AEM administrators can easily generate and customize these reports for your impl
 
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Reports]**.
 
-![navigation](assets/AssetsReportNavigation.png)
+![Navigate assets report](assets/AssetsReportNavigation.png)
 
 1. In the Asset Reports page, tap/click **[!UICONTROL Create]** from the toolbar.
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and tap/click **[!UICONTROL Next]**.

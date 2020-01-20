@@ -34,11 +34,11 @@ The Assets home page is disabled by default. To enable it, perform the following
 
 1. Open the **[!UICONTROL User Preferences]** dialog, and select **[!UICONTROL Enable Assets Home Page]**. Save the changes.
 
-   ![user_preferences](assets/Annotation-color.png)
+   ![Enable assets home page on User Preferences dialog](assets/Annotation-color.png)
 
 After enabling the Assets Home page, navigate to the Assets user interface either from the Navigation page or access it directly from the URL `https://<Server Name>:<Port>/aem/assetshome.html/content/dam`.
 
-![home_page](assets/aemAssetshome-page.png)
+![configure experience link on Assets user interface](assets/config-experience-link.png)
 
 Tap/click the **[!UICONTROL Click here to configure your experience link]** to add your username, background image, and profile image.
 
