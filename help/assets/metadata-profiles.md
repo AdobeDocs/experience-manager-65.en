@@ -163,4 +163,4 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 >[!MORELIKETHIS]
 >
 >* [Profiles to process metadata, images, and videos](processing-profiles.md)
->* [Best Practices to organize your digital assets to use processing profiles](/help/assets/best-practices-for-file-management.md)
+>* [Best Practices to organize your digital assets to use processing profiles](/help/assets/organize-assets.md)
