@@ -58,16 +58,16 @@ For that to work, follow the instructions on [How-To Work with JSPs](/help/sites
 
 1. In the Import dialog, select the POM file of your project.
 
-   ![chlimage_1-45](assets/chlimage_1-45.png)
+   ![chlimage_1-45](assets/chlimage_1-45a.png)
 
 1. Continue with the default settings as shown in the dialog below.
 
-   ![chlimage_1-46](assets/chlimage_1-46.png)
+   ![chlimage_1-46](assets/chlimage_1-46a.png)
 
 1. Continue through the following dialogs by clicking **Next** and **Finish**.
 1. You are now set up for AEM Development using IntelliJ IDEA
 
-   ![chlimage_1-47](assets/chlimage_1-47.png)
+   ![chlimage_1-47](assets/chlimage_1-47a.png)
 
 ### Debugging JSPs with IntelliJ IDEA {#debugging-jsps-with-intellij-idea}
 
@@ -87,7 +87,7 @@ IntelliJ IDEA needs to understand where to find the JSPs for debugging. As IDEA 
 1. Click **+** above the list of modules and select **Web**
 1. As the Web Resource Directory, select the `content/src/main/content/jcr_root subdirectory` of your project as shown in the screen shot below.
 
-![chlimage_1-48](assets/chlimage_1-48.png)
+![chlimage_1-48](assets/chlimage_1-48a.png)
 
 #### Install the JSR45 support plugin {#install-the-jsr-support-plugin}
 
@@ -96,7 +96,7 @@ IntelliJ IDEA needs to understand where to find the JSPs for debugging. As IDEA 
 1. Click **Apply**
 1. Restart IntelliJ IDEA when requested to
 
-![chlimage_1-49](assets/chlimage_1-49.png)
+![chlimage_1-49](assets/chlimage_1-49a.png)
 
 #### Configure a Debug Profile {#configure-a-debug-profile}
 
@@ -108,7 +108,7 @@ IntelliJ IDEA needs to understand where to find the JSPs for debugging. As IDEA 
 1. On the **Startup/Connection** pane, adjust the port if required
 1. Copy the command line arguments that IntelliJ IDEA proposes
 
-![chlimage_1-50](assets/chlimage_1-50.png) ![chlimage_1-51](assets/chlimage_1-51.png)
+![chlimage_1-50](assets/chlimage_1-50a.png) ![chlimage_1-51](assets/chlimage_1-51a.png)
 
 #### Configure AEM for Debug Mode {#configure-aem-for-debug-mode}
 
@@ -141,7 +141,7 @@ You are now all set up for debugging your JSPs in AEM.
 1. Set breakpoints in your component code
 1. Access a page in your browser
 
-![chlimage_1-52](assets/chlimage_1-52.png)
+![chlimage_1-52](assets/chlimage_1-52a.png)
 
 ### Debugging Bundles with IntelliJ IDEA {#debugging-bundles-with-intellij-idea}
 
