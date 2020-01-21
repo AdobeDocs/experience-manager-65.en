@@ -15,6 +15,10 @@ discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 
 This document includes details about the various types of Adobe Experience Manager (AEM) releases, including full releases, feature packs, and services packs that Adobe delivers to its customers.
 
+>[!Note]
+>
+>For release schedule of AEM maintenance releases, refer to [AEM maintenance releases roadmap](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html). 
+
 ## Full Release {#full-release}
 
 <table>
@@ -97,6 +101,7 @@ This document includes details about the various types of Adobe Experience Manag
    <td><strong>Inclusions</strong></td>
    <td>
     <ul>
+     <li>New features</li>
      <li>Improvements</li>
      <li>Bug fixes</li>
      <li>Common Interest feature packs (if any)</li>
@@ -134,7 +139,7 @@ This document includes details about the various types of Adobe Experience Manag
  </tbody>
 </table>
 
-## Cumulative Fix Pack (AEM <= 6.3) {#cumulative-fix-pack-aem}
+## Cumulative Fix Pack  {#cumulative-fix-pack-aem}
 
 <table>
  <tbody>
@@ -161,7 +166,7 @@ This document includes details about the various types of Adobe Experience Manag
   </tr>
   <tr>
    <td><strong>Cadence</strong></td>
-   <td>Monthly</td>
+   <td>Quaterly</td>
   </tr>
   <tr>
    <td><strong>Availability and Installation</strong></td>
@@ -346,7 +351,7 @@ This document includes details about the various types of Adobe Experience Manag
    <td><strong>Availability and Installation</strong></td>
    <td>
     <ul>
-     <li>Delivered as a package</li>
+     <li>Delivered via Service Packs</li>
      <li>Available on Package Share. Customers accept Adobe's Terms and Conditions through Package Share.</li>
     </ul> </td>
   </tr>
