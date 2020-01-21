@@ -193,7 +193,7 @@ Do the following to configure the form data model:
 
         * **Output type**: Select **BOOLEAN**.
 
-        * **Arguments**: Select argument named **ID **and **customerdetails**.
+        * **Arguments**: Select argument named **ID** and **customerdetails**.
 
        Tap **Done**. The **update** service to update customer details in the MySQL database is configured.
 
