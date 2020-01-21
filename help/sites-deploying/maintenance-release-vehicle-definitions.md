@@ -17,7 +17,7 @@ This document includes details about the various types of Adobe Experience Manag
 
 >[!Note]
 >
->Feature Packs are delivered via Service Packs. There are no Service Packs planned in future for AEM 6.2, AEM 6.3, and AEM 6.4. Therefore, Adobe will not release any Feature Pack for these versions. For release schedule of AEM maintenance releases, refer to [AEM maintenance releases roadmap](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html). 
+>For release schedule of AEM maintenance releases, refer to [AEM maintenance releases roadmap](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html). 
 
 ## Full Release {#full-release}
 
