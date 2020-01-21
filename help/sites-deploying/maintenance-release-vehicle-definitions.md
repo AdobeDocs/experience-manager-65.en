@@ -101,9 +101,9 @@ This document includes details about the various types of Adobe Experience Manag
    <td><strong>Inclusions</strong></td>
    <td>
     <ul>
+     <li>New features</li>
      <li>Improvements</li>
      <li>Bug fixes</li>
-     <li>New Features</li>
      <li>Common Interest feature packs (if any)</li>
     </ul> </td>
   </tr>
