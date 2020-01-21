@@ -33,9 +33,7 @@ This means that:
 >The eCommerce framework can be used with:
 >
 >* [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
->
 >* [SAP Commerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
->
 >* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
 >
 

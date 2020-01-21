@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Analytics with External Providers{#analytics-with-external-providers}
+# Analytics with External Providers {#analytics-with-external-providers}
 
 Analytics can provide you with important and interesting information about how your website is being used.
 
@@ -64,9 +64,7 @@ Such snippets enable data to be collected and reports generated. The actual data
 For the basic configuration:
 
 1. Open the **Tools** console.
-
 1. From the left pane expand **Cloud Services Configurations**.
-
 1. Double-click on **Generic Analytics Snippet** to open the page:
 
    ![](assets/analytics_genericoverview.png)
@@ -86,15 +84,12 @@ For the basic configuration:
 Having created the service configuration you now need configure the required pages to use it:
 
 1. Navigate to the page.
-
 1. Open the **Page Properties** from sidekick, then the **Cloud Services** tab.
-
 1. Click **Add Service**, then select the required service; for example the **Generic Analytics Snippet**:
 
    ![](assets/analytics_selectservice.png)
 
 1. Click **OK** to save.
-
 1. You will be returned to the **Cloud Services** tab. The **Generic Analytics Snippet** is now listed with the message `Configuration reference missing`. Use the drop down list to select your specific service instance; for example google-analytics:
 
    ![](assets/analytics_selectspecificservice.png)

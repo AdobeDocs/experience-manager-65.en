@@ -10,7 +10,7 @@ topic-tags: deploying
 discoiquuid: c8a505ab-a075-47da-8007-43645a8c3ce5
 ---
 
-# Indexing via the Oak-run Jar{#indexing-via-the-oak-run-jar}
+# Indexing via the Oak-run Jar {#indexing-via-the-oak-run-jar}
 
 Oak-run supports all indexing use cases on the command line without having to operate from the JMX level. Advantages of the oak-run approach are:
 
@@ -39,7 +39,6 @@ Below you will find a list of use cases that can be leveraged when performing in
 >For more detailed information regarding this scenario, see [Use Case 2 - Index Statistics](/help/sites-deploying/oak-run-indexing-usecases.md#usecase2indexstatistics)
 
 * `oak-run.jar` dumps all index definitions, important index stats and index contents for offline analysis.
-
 * Safe to execute on an in-use AEM instance.
 
 ![image2017-12-19_9-47-40](assets/image2017-12-19_9-47-40.png)

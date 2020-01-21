@@ -27,11 +27,11 @@ Use the following procedure to set up a framework for video tracking using each 
 
 >[!NOTE]
 >
->For new implementations, it is recommended that you **do not use** the legacy options for video tracking. Please use the **Milestones **method instead.
+>For new implementations, it is recommended that you **do not use** the legacy options for video tracking. Please use the **Milestones** method instead.
 
 ## Common steps {#common-steps}
 
-1. Set up a web page by dragging a** video component** from the sidekick and adding a playable **video as an asset** for the component
+1. Set up a web page by dragging a **video component** from the sidekick and adding a playable **video as an asset** for the component
 
 1. [Create an Adobe Analytics configuration and framework](/help/sites-administering/adobeanalytics.md).
 
@@ -123,7 +123,7 @@ The following table describes the default CQ variables that are provided for the
 
 >[!NOTE]
 >
->You can set a video's **user friendly **name by opening the video for editing in the DAM, and setting the **Title** metadata field to the desired name.
+>You can set a video's **user-friendly** name by opening the video for editing in the DAM, and setting the **Title** metadata field to the desired name.
 
 1. After selecting Milestones as the tracking method, in the Track Offset box, enter a comma-separated list of tracking offsets in seconds. For example, the following value defines milestones at 4, 8, 16, 20 and 28 seconds after the start of the video:
 
@@ -225,22 +225,19 @@ Calls to Adobe Analytics using the example provided should look like this when v
 
 *This is the **first call** made to Adobe Analytics containing the following values:*
 
-* *prop1 and eVar1 for eventdata.a.media.name, *
-* *props2-4, along with eVar2 and eVar3 containing contentType (video) and segment (1:O:1-4) *
+* *prop1 and eVar1 for eventdata.a.media.name,*
+* *props2-4, along with eVar2 and eVar3 containing contentType (video) and segment (1:O:1-4)*
 * *event3 which was mapped to eventdata.events.a.media.view.*
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
 *This is the **third call** made to Adobe Analytics:*
 
-* *prop1 and eVar1 contain a.media.name; *
-* *event1 because a segment has been viewed
-  *
+* *prop1 and eVar1 contain a.media.name;*
+* *event1 because a segment has been viewed*
 * *event2 sent with time played = 4*
-* *event11 sent because eventdata.events.milestone8 has been reached
-  *
-* *prop2 to 4 are not sent (since eventdata.events.a.media.view was not triggered)
-  *
+* *event11 sent because eventdata.events.milestone8 has been reached*
+* *prop2 to 4 are not sent (since eventdata.events.a.media.view was not triggered)*
 
 ## Non-Legacy Milestones {#non-legacy-milestones}
 
@@ -368,7 +365,7 @@ When using the** legacy seconds** method, Adobe Analytics calls get triggered ev
 
    >[!NOTE]
    >
-   >You can set a video's **user friendly **name by opening the video for editing in the DAM, and setting the **Title** metadata field to the desired name. You also need to Save the changes made when finished.
+   >You can set a video's **user-friendly** name by opening the video for editing in the DAM, and setting the **Title** metadata field to the desired name. You also need to Save the changes made when finished.
 
 1. Map these variables to prop1, prop2 and prop3
 

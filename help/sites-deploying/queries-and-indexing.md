@@ -372,9 +372,9 @@ AEM can also be confiured to work with a remote Solr server instance:
 1. Go to CRXDE and login as Admin.
 1. Create a new node called **solrIndex** under **oak:index**, and set the following properties:
 
-    * **type:**solr (of type String)
-    * **async:**async (of type String)
-    * **reindex:**true (of type Boolean)
+    * **type:** solr (of type String)
+    * **async:** async (of type String)
+    * **reindex:** true (of type Boolean)
 
 1. Save the changes.
 
@@ -437,15 +437,10 @@ You can enable logging by following this procedure:
 
 1. Point your browser to `https://serveraddress:port/system/console/slinglog`
 1. Click the **Add new Logger** button in the lower part of the console.
-
 1. In the newly created row, add the categories mentioned above. You can use the **+** sign to add more than one category to a single logger.
-
 1. Choose **DEBUG** from the **Log level** drop down list.
-
 1. Set the output file to `logs/queryDebug.log`. This will correlate all the DEBUG events into a single log file.
-
 1. Run the query or render the page that is using the query you wish to debug.
-
 1. Once you have executed the query, go back to the logging console and change the log level of the newly created logger to **INFO**.
 
 #### Index Configuration {#index-configuration}

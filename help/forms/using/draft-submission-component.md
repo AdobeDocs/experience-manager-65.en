@@ -73,7 +73,7 @@ Perform the following steps to add and configure a Drafts & Submissions componen
   <tr>
    <td> </td>
    <td>Layout Template</td>
-   <td><p>Specifies the layout to use for Draft Forms list.</p> <p><strong>Note:</strong> Do not use the Default (Deprecated) option.<br /> </p> </td>
+   <td>Specifies the layout to use for Draft Forms list.</td>
   </tr>
   <tr>
    <td>Submitted Forms Tab Configuration</td>

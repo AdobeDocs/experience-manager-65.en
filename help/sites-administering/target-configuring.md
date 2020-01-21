@@ -166,7 +166,7 @@ Use the following procedure to create a Target cloud configuration in AEM:
    >
    >If you have ***already*** created targeted components and you change this setting, your changes do not affect those components. You must make any changes to those component directly.
 
-1. Click **Connect to Target** to initialize the connection with Target. If the connection is successful, the message** Connection successful** is displayed. Click **OK** on the message and then **OK** on the dialog.
+1. Click **Connect to Target** to initialize the connection with Target. If the connection is successful, the message **Connection successful** is displayed. Click **OK** on the message and then **OK** on the dialog.
 
    If you cannot connect to Target, see the [troubleshooting](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) section.
 

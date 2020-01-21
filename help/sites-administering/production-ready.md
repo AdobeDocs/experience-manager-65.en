@@ -23,7 +23,7 @@ The new runmode will not only automatically configure the instance to adhere to 
 >
 >Also, note that running AEM in Production Ready Mode will effectively disable access to CRXDE Lite. If you need it for debugging purposes, see [Enabling CRXDE Lite in AEM](/help/sites-administering/enabling-crxde-lite.md).
 
-![chlimage_1-83](assets/chlimage_1-83.png)
+![chlimage_1-83](assets/chlimage_1-83a.png)
 
 In order to run AEM in production ready mode all you need to do is add the `nosamplecontent` via the `-r` runmode switch to your existing startup arguments:
 

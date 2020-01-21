@@ -71,7 +71,7 @@ To apply the CUG to a page:
 1. In the following window, go to the **Advanced** tab.
 1. Scroll down and enable the tickbox in the **Authentication Requirement** section.
 
-1. Add your comnfiguration path below, then press Save.
+1. Add your configuration path below, then press Save.
 1. Next, go to the **Permissions** tab and press the **Edit Closed User Group** button.
 
    ![screenshot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)

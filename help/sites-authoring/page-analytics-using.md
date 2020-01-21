@@ -61,7 +61,7 @@ Members of the analytics-administrators user group can configure the Sites conso
 >
 >When a tree of pages contains children that are associated with different Adobe Analytics cloud configurations, you cannot configure available data columns for the pages.
 
-1. In List View, use the view selectors (right of toolbar), select **View Settings** and then A**dd Custom Analytics Data**.
+1. In List View, use the view selectors (right of toolbar), select **View Settings** and then **Add Custom Analytics Data**.
 
    ![spad-03](assets/spad-03.png)
 

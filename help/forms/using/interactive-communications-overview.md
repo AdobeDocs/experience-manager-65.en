@@ -49,7 +49,7 @@ To create an Interactive Communication, have the [building blocks](#buildingbloc
 1. Using the [drag-and-drop interface](/help/forms/using/introduction-interactive-communication-authoring.md), add document fragments, images, components to print and web channel of the Interactive Communication as required.
 1. Configure the properties for the components inserted, such as the following:
 
-    1. Images
+    1. [Images](/help/forms/using/create-interactive-communication.md#step2)
     1. [Tables](/help/forms/using/create-interactive-communication.md#tables) (Including Layout Fragments)
     1. [Charts](/help/forms/using/chart-component-interactive-communications.md)
     1. [Document fragments](/help/forms/using/create-interactive-communication.md#document-fragment-properties)

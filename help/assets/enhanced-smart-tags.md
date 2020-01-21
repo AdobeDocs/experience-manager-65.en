@@ -52,9 +52,9 @@ The onboarding process is complete when the administrator configures the service
 
 >[!NOTE]
 >
->If you are using AEM 6.3 or earlier version and require automatic tagging service for your assets, see [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Smart Tags do not use the latest AI capabilities and are hence less accurate than the Enhanced Smart Tagging capability.
+>If you are using AEM 6.3 or earlier version and require tagging service for your assets, see [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Smart Tags do not use the latest AI capabilities and are hence less accurate than the enhanced smart tagging service.
 
-## Reviewing assets and tags {#reviewing-assets-and-tags}
+## Review assets and tags {#reviewing-assets-and-tags}
 
 After you are onboarded, the first thing you want to do is identify a set of tags that best describe these images in the context of your business.
 
@@ -68,7 +68,7 @@ Add the assets to a folder and apply the tags to each asset from the properties 
 >1. Please do read [Smart Content Service training guidelines](smart-tags-training-guidelines.md) before starting training for any tag.
 >1. When you train the Smart Content Service for the first time, Adobe recommends that you train it on at least two distinct tags.
 
-## Training the Smart Content Service {#training-the-smart-content-service}
+## Train the Smart Content Service {#training-the-smart-content-service}
 
 For the Smart Content Service to recognize your business taxonomy, run it on a set of assets that already include tags that are relevant to your business. After training, the service can apply the same taxonomy on a similar set of assets.
 
@@ -103,7 +103,7 @@ You can train the Smart Content Service whenever required from the Workflow cons
 >
 >Once the assets in a folder are processed for training, only the modified assets are processed in subsequent training cycles.
 
-### Viewing training reports {#viewing-training-reports}
+### View training reports {#viewing-training-reports}
 
 To check whether the Smart Content Service is trained on your tags in the training set of assets, review the training workflow report from the Reports console.
 
@@ -111,16 +111,16 @@ To check whether the Smart Content Service is trained on your tags in the traini
 1. In the **[!UICONTROL Asset Reports]** page, tap/click **[!UICONTROL Create]**.
 1. Select the **[!UICONTROL Smart Tags Training]** report, and then tap/click **[!UICONTROL Next]** from the toolbar.
 1. Specify a title and description for the report. Under **[!UICONTROL Schedule Report]**, leave the **[!UICONTROL Now]** option selected. If you want to schedule the report for later, select **[!UICONTROL Later]** and specify a date and time. Then, tap/click **[!UICONTROL Create]** from the toolbar.
-1. In the **[!UICONTROL Asset Reports]** page, select the report you generated. To view the report, tap/click the **[!UICONTROL View]** icon from the toolbar.
+1. In the **[!UICONTROL Asset Reports]** page, select the report you generated. To view the report, tap **[!UICONTROL View]** from the toolbar.
 1. Review the details of the report.
 
    The report displays the training status for the tags you trained. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Content Service is trained for the tag. Yellow color indicates that the service is not completely trained for a particular tag. In this case, add more images with the particular tag and run the training workflow to train the service completely on the tag.
 
    If you do not see your tags in this report, run the training workflow again for these tags.
 
-1. To download the report, select it from the list, and tap/click the **[!UICONTROL Download]** icon from the toolbar. The report downloads as an Excel file.
+1. To download the report, select it from the list, and tap **[!UICONTROL Download]** from the toolbar. The report downloads as an Excel file.
 
-## Tagging assets automatically {#tagging-assets-automatically}
+## Automatically tag assets {#tagging-assets-automatically}
 
 After you have trained the Smart Content Service, you can trigger the tagging workflow to automatically apply appropriate tags on a different set of similar assets.
 
@@ -134,7 +134,7 @@ You can run the tagging workflow periodically or whenever required.
 
 You can enable the Smart Content Service to periodically tag assets within a folder. Open the properties page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
 
-Once this option is selected for a folder, the Smart Content Service automatically tags the assets within the folder. By default,thetagging workflow runs every day at 12:00 AM.
+Once this option is selected for a folder, the Smart Content Service automatically tags the assets within the folder. By default, the tagging workflow runs every day at 12:00 AM.
 
 ### On-demand tagging {#on-demand-tagging}
 
@@ -147,7 +147,7 @@ You can trigger the tagging workflow from the following to instantly tag your as
 >
 >If you run the tagging workflow from the timeline, you can apply tags on a maximum of 15 assets at a time.
 
-#### Tagging assets from the Workflow console {#tagging-assets-from-the-workflow-console}
+#### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
 
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Workflow > Models]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then tap/click **[!UICONTROL Start Workflow]** from the toolbar.
@@ -161,11 +161,11 @@ You can trigger the tagging workflow from the following to instantly tag your as
 
    Navigate to the asset folder and review the tags to verify whether the Smart Content Service tagged your assets properly. For details, see [Managing Smart Tags](managing-smart-tags.md).
 
-#### Tagging assets from the timeline {#tagging-assets-from-the-timeline}
+#### Tag assets from the timeline {#tagging-assets-from-the-timeline}
 
 1. From the Assets user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
-1. Tap/click the GlobalNav icon and open the timeline.
-1. Tap/click the arrow at the bottom, and then tap/click **[!UICONTROL Start Workflow]**.
+1. Tap Experience Manager logo and open the timeline.
+1. Tap the arrow at the bottom, and then tap/click **[!UICONTROL Start Workflow]**.
 
    ![start_workflow](assets/start_workflow.png)
 
@@ -179,4 +179,3 @@ You can trigger the tagging workflow from the following to instantly tag your as
 >However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours.
 >
 >For periodic tagging workflows, unaltered assets are tagged when the gap exceeds 6 months.
-

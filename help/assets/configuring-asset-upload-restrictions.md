@@ -1,13 +1,14 @@
 ---
-title: Configuring Asset Upload Restrictions
-description: Learn how to configure Adobe Experience Manager (AEM) Assets to restrict the type of assets (files) that users can upload.
+title: Configure asset upload restrictions
+description: Restrict the type of assets (files) that users can upload 
 uuid: bcde34f1-5d64-4dc3-a124-0482c93be31e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: ff6b23fb-347d-4e68-932e-52b42b15f784
+
 ---
 
-# Configuring Asset Upload Restrictions {#configuring-asset-upload-restrictions}
+# Configure asset upload restrictions {#configuring-asset-upload-restrictions}
 
 You can configure Adobe Experience Manager (AEM) Assets to restrict the type of assets (files) that users can upload. This feature helps you eliminate the possibility of users uploading assets in an undesired format or uploading any malicious files. The `Day CQ DAM Asset Upload Restriction` service enables you to control the type of files that users can upload. By default, AEM Assets allows users to upload assets of all MIME types. However, you can configure the service to restrict users to upload files of specific MIME types only.
 

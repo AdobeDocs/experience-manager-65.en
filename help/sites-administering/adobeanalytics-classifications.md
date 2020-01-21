@@ -24,7 +24,7 @@ To configure this:
 
 1. Click **Create** to configure the settings.
 
-   ![chlimage_1](assets/chlimage_1.png)
+   ![chlimage_1](assets/chlimage_1a.png)
 
    Properties include the following:
 

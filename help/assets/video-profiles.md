@@ -25,11 +25,11 @@ The following are other factors that determine the quality of your videos:
 
 * **Video player size**
 
-  By default, the "Width" in the Adaptive Video Encoding profile is set to “Auto.” Again, during playback, the best quaility is used based on the size of the player.
+  By default, the "Width" in the Adaptive Video Encoding profile is set to “Auto.” Again, during playback, the best quality is used based on the size of the player.
 
 See [Best Practices for Video Encoding](/help/assets/video.md#best-practices-for-encoding-videos).
 
-See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/best-practices-for-file-management.md).
+See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/organize-assets.md).
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ Note that Adobe Sensei is currently limited to 9000 frames. That is, five minute
 >
 >For video smart crop to work, you must include one or more video encoding presets with your video profile.
 
-To use smart crop for video, you create an adaptive or progressive video encoding profile. As part of your profile, use the **[!UICONTROLSmart Crop Ratio]** tool to select pre-defined aspect ratios. As an example, after you define your video encoding presets, you can add a "Mobile Landscape" definition with an aspect ratio of 16x9, and a "Mobile Portrait" definition with an aspect ratio of 9x16. Other aspect or crop ratios from which you can choose include 1x1, 4x3, and 4x5.
+To use smart crop for video, you create an adaptive or progressive video encoding profile. As part of your profile, use the **[!UICONTROL Smart Crop Ratio]** tool to select pre-defined aspect ratios. As an example, after you define your video encoding presets, you can add a "Mobile Landscape" definition with an aspect ratio of 16x9, and a "Mobile Portrait" definition with an aspect ratio of 9x16. Other aspect or crop ratios from which you can choose include 1x1, 4x3, and 4x5.
 
 ![Editing a video encoding profile with smart crop](assets/edit-smart-crop-video2.png)
 

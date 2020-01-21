@@ -73,11 +73,11 @@ Catalog Producer uses product information management (PIM) data to map product p
 
    If the metadata of the products that you reference in the catalog pages is changed, the changes are not automatically reflected in the catalog pages. A banner labeled **Stale** appears on the product images in the referencing catalog pages, indicating that the metadata for the referenced products is not up-to-date.
 
-   ![chlimage_1-117](assets/chlimage_1-117.png)
+   ![chlimage_1-117](assets/chlimage_1-117a.png)
 
    To ensure that the product images reflect the latest metadata changes, select the page in the Catalog console and click/tap the **Update page** icon from the toolbar.
 
-   ![chlimage_1-118](assets/chlimage_1-118.png)
+   ![chlimage_1-118](assets/chlimage_1-118a.png)
 
    >[!NOTE]
    >
@@ -93,7 +93,7 @@ On selecting the **Done** option, a dialog box opens to select whether you want 
 
 1. To generate a preview for the catalog you created, select it in the **Catalogs** console, and then click the **Preview** icon from the toolbar.
 
-   ![chlimage_1-119](assets/chlimage_1-119.png)
+   ![chlimage_1-119](assets/chlimage_1-119a.png)
 
    Review the pages in your catalog in the preview. Tap/click **Close** to close the preview.
 

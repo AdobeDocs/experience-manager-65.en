@@ -1,21 +1,22 @@
 ---
-title: Related Assets
+title: Related assets
 description: Learn how to relate assets that share certain common attributes. You can also use the feature to create source/derived relationships between assets.
 uuid: 6a2b1105-1cb0-48ca-bd1d-0ee034b8a0c1
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 2bd38e3b-a244-4f18-b081-f10c4eb0149b
+
 ---
 
 # Related assets {#related-assets}
 
-Adobe Experience Manager (AEM) Assets lets you manually relate assets based on the needs of your organization using the Related Assets feature. For example, you can relate a license file with an asset or an image/video on a similar topic. You can relate assets that share certain common attributes. You can also use the feature to create source/derived relationships between assets. For example, if you have a PDF file that is generated from an INDD file, you can relate the PDF file to its source INDD file.
+Adobe Experience Manager (AEM) Assets lets you manually relate assets based on the needs of your organization using the related assets feature. For example, you can relate a license file with an asset or an image/video on a similar topic. You can relate assets that share certain common attributes. You can also use the feature to create source/derived relationships between assets. For example, if you have a PDF file that is generated from an INDD file, you can relate the PDF file to its source INDD file.
 
-This way, you have the flexibility to share a low resolution file (for example PDF/JPG) to vendors/agencies and make available the high resolution file (for example INDD) only on request.
+Using this feature, you have the flexibility to share a low resolution PDF file or JPG file with vendors or agencies and make the high resolution INDD file available only on request.
 
-## Relating assets {#relating-assets}
+## Relate assets {#relating-assets}
 
-1. From the Assets interface, open the properties page for an asset you want to relate.
+1. From the AEM interface, open the [!UICONTROL Properties] page for an asset that you want to relate.
 
    ![chlimage_1-272](assets/chlimage_1-272.png)
 
@@ -48,11 +49,11 @@ This way, you have the flexibility to share a low resolution file (for example P
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. To unrelate an asset, click/tap the **[!UICONTROL Unrelate]** icon from the toolbar.
+1. To un-relate an asset, click/tap **[!UICONTROL Unrelate]** from the toolbar.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
-1. Select the asset(s) you want to unrelate from the **[!UICONTROL Remove Relations]** dialog, and the click/tap **[!UICONTROL Unrelate]**.
+1. Select the asset(s) you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click/tap **[!UICONTROL Unrelate]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 

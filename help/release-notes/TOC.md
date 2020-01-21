@@ -9,7 +9,9 @@ user-guide-title: AEM 6.5 Release Notes
 
 + [AEM 6.5 overview](home.md)
 + [General Release Notes](release-notes.md)
-+ [Service Pack Release Notes](sp-release-notes.md)
++ Service Pack Release Notes {#service-pack}
+  + [Hotfixes and feature packs included in latest service pack](sp-release-notes.md)
+  + [Hotfixes and feature packs included in previous service packs](previous-hotfixes-featurepacks.md)
 + [AEM Sites Release Notes](sites.md)
 + [AEM Assets Release Notes](assets.md)
 + [AEM Communities Release Notes](communities-release-notes.md)

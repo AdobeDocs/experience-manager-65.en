@@ -1,5 +1,5 @@
 ---
-title: Creating translation projects
+title: Create translation projects
 description: Learn how to create translation projects in AEM.
 uuid: 9d360f6b-584f-4bd1-afb9-cd32aa8db0b9
 contentOwner: AG
@@ -86,7 +86,7 @@ If you use this option, assets to be translated are copied to the language root 
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-1. Click/tap on **[!UICONTROL Create]**. Assets from the source folder are copied to the target folders for the locales you selected in step 4.
+1. Click/tap **[!UICONTROL Create]**. Assets from the source folder are copied to the target folders for the locales you selected in step 4.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 

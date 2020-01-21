@@ -1,5 +1,5 @@
 ---
-title: Metadata Schemata Reference
+title: Metadata schemata reference
 description: Learn about standard conventions for describing asset metadata, including Dublin Core, IPTC, and other metadata schema. 
 uuid: f37126b9-0f78-4621-b442-1ff5b2573275
 contentOwner: AG
@@ -11,7 +11,7 @@ docset: aem65
 
 ---
 
-# Metadata Schemata Reference {#metadata-schemata-reference}
+# Metadata schemata reference {#metadata-schemata-reference}
 
 The following reference includes information about a particular metadata schemata (in alphabetical order) as well as a list of properties and their definitions.
 
@@ -24,13 +24,13 @@ The simple Dublin Core Metadata Element Set (DCMES) contains 15 metadata element
 In addition to the DCMES, there are other metadata elements created by the Dublin Core Initiative. See the [Dublin Core Initiative](https://dublincore.org/) for more information.
 
 | Property | Description |
-|-------------|------------------------------------------------------------------------------------------------------------------------|
+|---|---|
 | contributor | The person or company responsible for making contributions to the content. |
 | coverage | The geographic location or time period that the asset covers. |
 | creator | The person or company responsible for creating the content. |
 | date | Date or period of time associated with the asset. |
 | description | More information about the asset. |
-| format | The file format, physical medium, or dimensions of the asset. AEM uses `dc:format` to denote the mime-type of the asset. |
+| format | The file format, physical medium, or dimensions of the asset. AEM uses dc:format to denote the mime-type of the asset. |
 | identifier | A unique reference to the asset. |
 | language | The language of the asset (for example, en for English). |
 | publisher | The person or company responsible for making the asset available. |
