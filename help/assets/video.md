@@ -497,7 +497,7 @@ To configure Google Cloud settings:
 
    For example, `https://1a2b3c.mycompany.com:4321`
 
-   **Note**: The path examples above is intended for illustration purposes only.
+   **Note**: The path example above is intended for illustration purposes only.
 
    ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
 
