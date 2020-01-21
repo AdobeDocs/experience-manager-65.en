@@ -6,7 +6,6 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: a13e4d9c-3c3b-4b34-ab48-091756e94a36
 docset: aem65
-
 ---
 
 # Share asset via a link {#asset-link-sharing}
@@ -40,7 +39,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >
    >If you want to share links from your AEM Author instance to external entities, ensure that you only expose the following URLs (which are used for link sharing) for `GET` requests only. Block other URLs to ensure security of AEM Author.
    >
-   >* http://&lt;aem_server&gt;:&lt;port&gt;/     linkshare.html
+   >* http://&lt;aem_server&gt;:&lt;port&gt;/linkshare.html
    >* http://&lt;aem_server&gt;:&lt;port&gt;/linksharepreview.html
    >* http://&lt;aem_server&gt;:&lt;port&gt;/linkexpired.html
 
