@@ -36,8 +36,7 @@ When you create an adaptive form, you can select a form model. Your options are:
   Lets you select an XML schema definition for your adaptive form. When you select an XML schema for your adaptive form, you can:
 
     * Associate an XFA template for document of record. Ensure that associated XFA template uses the same XML schema as your adaptive form
-    * Automatically generate document of record*
-      *
+    * Automatically generate document of record
 
 * None
   Lets you create an adaptive form without a form model. The document of record is automatically generated for your adaptive form.

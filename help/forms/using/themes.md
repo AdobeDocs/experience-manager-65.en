@@ -17,7 +17,7 @@ docset: aem65
 
 ## Introduction {#introduction}
 
-You can create and apply themes to stylize an adaptive form or an interactive communication. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme the specified style reflects on the corresponding components. Theme are managed independently without a reference to an adaptive form or intreactive comunication.
+You can create and apply themes to stylize an adaptive form or an interactive communication. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme the specified style reflects on the corresponding components. Theme are managed independently without a reference to an adaptive form or interactive communication.
 
 You can:
 
@@ -39,7 +39,7 @@ Perform the following steps to create a theme:
 1. In the Themes page, click **Create &gt; Theme**.
    A wizard to create a theme is launched.
 
-1. In the Basic tab of the Create Theme wizard, provide **Title **and **Name **of the theme. These are mandatory fields.
+1. In the Basic tab of the Create Theme wizard, provide **Title** and **Name** of the theme. These are mandatory fields.
 
 1. In the Advanced tab, you get two fields:
 
@@ -192,7 +192,7 @@ List of meta-properties of a theme (found in properties page of a theme).
 
 AEM Forms ships with Theme Editor. It is a business-user and web-designer/developer friendly interface that provides functionalities required to specify the styling of various adaptive form and interactive communication elements easily. When you create a theme, it is stored as a separate entity like forms, interactive communications, letters, document fragments, and data dictionaries.
 
-The Theme Editor lets you customize styles of the components styled in a theme. You can customize how a form or intreactive communication looks on a device.
+The Theme Editor lets you customize styles of the components styled in a theme. You can customize how a form or interactive communication looks on a device.
 
 The Theme Editor is divided in two panels:
 
@@ -200,7 +200,7 @@ The Theme Editor is divided in two panels:
 
 * **Sidebar**- Appears on the left side. It has the following items:
 
-    * **Selector:*** *Shows the component selected for styling, and its properties that you can style. The selector represents all the components of a type. If you select a text box component in a theme for styling, all the text boxes in your form or interactive communication inherit the style. Selectors let you select a generic component or a specific component for styling. For example, a field component is a generic component, and a text box is a specific component.
+    * **Selector:** Shows the component selected for styling, and its properties that you can style. The selector represents all the components of a type. If you select a text box component in a theme for styling, all the text boxes in your form or interactive communication inherit the style. Selectors let you select a generic component or a specific component for styling. For example, a field component is a generic component, and a text box is a specific component.
 
       **Styling generic component:**
       A field can be a numeric box field, such as age, or a text box field, such as address.
@@ -295,9 +295,7 @@ The plus button against the asset library lets you permanently save the style wi
 
 When you provide a custom name for a style, the style is tied to a theme and is no longer available to other themes. To delete a saved style:
 
-1. On the CANVAS toolbar, click **Theme Options ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/theme-options.png)
-
-   **&gt;** Manage Styles.**
+1. On the CANVAS toolbar, click **Theme Options ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/theme-options.png)** &gt; **Manage Styles**.
 1. In the Manage Styles dialog, select a saved style, click **Delete**.
 
    ![Delete the saved style](assets/manage-styles.png)
@@ -568,7 +566,7 @@ To apply a theme to an interactive communication:
 
    You can edit properties of your form in the sidebar.
 
-1. In the sidebar, under** Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
+1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
 
 ### Change theme of a form at runtime {#change-theme-of-a-form-at-runtime}
 

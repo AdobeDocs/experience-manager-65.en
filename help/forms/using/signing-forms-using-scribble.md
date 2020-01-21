@@ -13,7 +13,7 @@ docset: aem65
 
 # Apply electronic signatures to a form using (Deprecated) scribble signatures{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
-You can use the (Deprecated) **Scribble Signature **component and **Signature Step **component to draw (Scribble) signature on an adaptive form. The Signature step component displays a PDF version of the adaptive form. You require a Document of Record option enabled or form template based adaptive forms to use the Signature step component.
+You can use the (Deprecated) **Scribble Signature** component and **Signature Step** component to draw (Scribble) signature on an adaptive form. The Signature step component displays a PDF version of the adaptive form. You require a Document of Record option enabled or form template based adaptive forms to use the Signature step component.
 
 Both the components provide a window, as displayed below, to sign a form. You can also click the geolocation icon ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) to add geolocation to the signature.
 

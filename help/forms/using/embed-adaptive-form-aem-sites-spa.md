@@ -18,7 +18,7 @@ docset: aem65
 
 AEM Forms allows form developers to seamlessly embed adaptive forms and Interactive Communications in an AEM Sites Single Page Application (SPA). The embedded adaptive form and Interactive Communication is fully functional and users can fill and submit the form without leaving the page. It helps user remain in context of other elements on the web page and simultaneously interact with the adaptive form or Interactive Communication.
 
-In AEM Sites Single Page Application, you can add an adaptive form or Interactive Communication using the [AEM Forms SPA Container component](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)** [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) **It is an AEM Forms component for AEM Sites SPAs that you can add to your Sites page.
+In AEM Sites Single Page Application, you can add an adaptive form or Interactive Communication using the [AEM Forms SPA Container component](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) It is an AEM Forms component for AEM Sites SPAs that you can add to your Sites page.
 
 For information about embedding an adaptive form in a non-SPA AEM Sites, see [Embed an adaptive form or interactive communication in AEM Sites page](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
@@ -61,13 +61,13 @@ To embed an adaptive form or Interactive Communication using AEM Forms for SPA C
    >
    >Rendering multiple AEM Forms SPA Container components on a page are not supported. You can have multiple AEM Forms SPA Container on a page but only one component is rendered at a time. Ensure that only one component is visible on a page to avoid discrepancies.
 
-1. Tap the embedded AEM Forms SPA Container component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **Edit AEM Forms SPA Container **dialog opens.
+1. Tap the embedded AEM Forms SPA Container component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **Edit AEM Forms SPA Container** dialog opens.
 1. In the **Edit AEM Forms Container** dialog, specify the following:
 
     * **Asset Type:** Select the type of asset to embed. The options are **Adaptive Form** and **Interactive Communication** 
     
     * **Asset Path**: Browse and select the adaptive form or Interactive Communication to embed. The field is auto-populated if an adaptive form or Interactive Communication is inserted using the Assets browser.
-    * **Channel **(Interactive Communication Only): Select the type of interactive channel to embed. The options are** Web Channel** and** Print Channel**.  
+    * **Channel** (Interactive Communication Only): Select the type of interactive channel to embed. The options are **Web Channel** and **Print Channel**.  
     
     * **Theme**: Select a theme that defines styling for components of your adaptive form or Interactive Communication. Styling includes appearance properties such as font style, background color, dimensions, and alignment.
 

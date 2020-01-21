@@ -58,7 +58,7 @@ Apply the Ultramarine-Accessible theme to your existing adaptive form. To apply 
 
 1. Open the adaptive form for editing.
 1. Select a component and tap the parent icon. In the context menu, tap **[!UICONTROL Adaptive Form Container]** and then tap the configure icon.
-1. Select the Ultramarine-Accessible theme in the properties browser and tap **[!UICONTROL Save] icon.
+1. Select the Ultramarine-Accessible theme in the properties browser and tap **[!UICONTROL Save]** icon.
 1. Refresh the browser window. The theme is applied to the adaptive form.  
 
 After applying an accessible theme, perform the below listed additional fixes. The fixes are in addition to accessibility fixes covered in the accessible theme:

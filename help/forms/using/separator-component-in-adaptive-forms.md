@@ -30,7 +30,7 @@ To specify properties of a separator component:
 1. Click a tab in the Inline CSS Properties section to specify CSS properties. For example: a. In the Field tab, click **Add Item**. A row with two fields gets added.
 1. In the first field from left, specify a CSS3 property you want to apply. For example, **border**. You can also select a property by clicking the down-arrow button. The drop-down list is not exhaustive and you can specify any supported CSS3 property name in this field.
 1. In the adjoining field, specify a valid value for the specified CSS3 property. For example, **3px solid black**.
-1. Click **Add Item **to specify another property and its value.
-1. Click **Preview **to preview the changes in the form.
-1. Click **OK **to confirm the changes or **Cancel **to exit the dialog without any changes.
+1. Click **Add Item** to specify another property and its value.
+1. Click **Preview** to preview the changes in the form.
+1. Click **OK** to confirm the changes or **Cancel** to exit the dialog without any changes.
 
