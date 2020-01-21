@@ -357,18 +357,18 @@ To experience the integration in the reference site, do the following to configu
    **Note**: If the AEM instance is running on JBoss, which is started as a service from Turnkey installation, add the `-Dabtesting.enabled=true` parameter in the following entry in the `jboss\bin\standalone.conf.bat` file, :
    `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
-1. Access `https://&lt;*hostname*&gt;:&lt;*port*&gt;/libs/cq/core/content/tools/cloudservices.html`.
+1. Access `https://<hostname>:<port>/libs/cq/core/content/tools/cloudservices.html`.
 
 1. In the **[!UICONTROL Adobe Target]** section, click **[!UICONTROL Show Configurations]**. You can see the We.Finance Target Configuration available. Click to open the configuration. In the configuration page, click **[!UICONTROL Edit]**. The **[!UICONTROL Edit Component]** dialog for the configuration opens.
 
 1. Specify your Client Code, Email and Password associated with your Target account. Select API type as **[!UICONTROL REST]**.
 1. Click **[!UICONTROL Connect to Adobe target]**. Once the Target account is configured successfully, click **[!UICONTROL OK]**. You can see the packaged configuration has a Target Framework.
 
-1. Go to `https://&lt;*hostname*&gt;:&lt;*port*&gt;/system/console/configMgr`.
+1. Go to `https://<hostname>:<port>/system/console/configMgr`.
 
 1. Click **[!UICONTROL AEM Forms Target Configuration]**.
 1. Select a Target framework.
-1. In the **[!UICONTROL Target URLs]** field, specify the URL to AEM Forms. For example: https://&lt;*hostname*&gt;:&lt;*port*&gt;.
+1. In the **[!UICONTROL Target URLs]** field, specify the URL to AEM Forms. For example: `https://<hostname>:<port>/`.
 
 1. Click **[!UICONTROL Save]**.
 
