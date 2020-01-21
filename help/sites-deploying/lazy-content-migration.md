@@ -54,9 +54,6 @@ Below is the full list of `CodeUpgradeTasks` introduced in 6.5:
 | `CQ64CommunitiesConfigsCleanupTask` |< 6.3 |Delayed |Moving SRP cloud configurations, community watchwords configurations, cleans up **/etc/social** and **/etc/enablement** (any references and data needs to be be adjusted when lazy migration is run - no application part should be depending on this sturcture anymore). |
 | `CQ64LegacyCloudSettingsCleanupTask` |< 6.4 |Delayed |Cleans up **/etc/cloudsettings** (containing ContextHub Configuration). Configuration is automatically migrated on first access. In case Lazy Content Migration is started along with upgrade this content in **/etc/cloudsettings** must be preserved via package before the upgrade and reinstalled for the implicit transformation to kick in, along with a subsequent uninstallation of the package after completion. |
 | `CQ64UsersTitleFixTask` |< 6.4 |Delayed |Adjusts legacy title structure to title in user profile node. |
-| `CQ64UsersTitleFixTask` |< 6.4 |Delayed |Adjusts legacy title structure to title in user profile node. |
-| `CQ64CommunitiesConfigsCleanupTask` |< 6.4 |Delayed ||
-| `CQ64LegacyCloudSettingsCleanupTask` |< 6.4 |Delayed ||
-| `CQ65DMMigrationTask` |< 6.4 |Delayed ||
-| `CQ65LegacyClientlibsCleanupTask` |< 6.4 |Delayed ||
-
+| `CQ64CommerceMigrationTask` |< 6.4 |Delayed |Migrate commerce content from **/etc/commerce** to **/var/commerce**. During migration content is moved and references to moved content are updated to reflect the new location. |
+| `CQ65DMMigrationTask` |< 6.5 |Delayed |Migrate legacy catalog settings and dynamic media cloud services settings from **/etc** to **/conf**|
+| `CQ65LegacyClientlibsCleanupTask` |< 6.5 |Delayed |Clean up legacy clientlibs existing under **/etc/clientlibs**|
