@@ -6,7 +6,6 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 0c20a3ee-069d-451b-a682-111f1b033e73
 docset: aem65
-
 ---
 
 # Enable Asset Insights through DTM {#enable-asset-insights-through-dtm}
@@ -30,18 +29,18 @@ Perform these steps to enable Asset Insights through DTM.
 1. Create/Open an the existing Web Property
 
     * Select the **[!UICONTROL Web Properties]** tab, and then tap/click **[!UICONTROL Add Property]**.
-    
+
     * Update the fields as appropriate, and tap/click **[!UICONTROL Create Property]**. See [documentation](https://helpx.adobe.com/experience-manager/using/dtm.html).
 
-   ![chlimage_1-57](assets/chlimage_1-57.png)
+   ![Create edit web property](assets/Create-edit-web-property.png)
 
 1. In the **[!UICONTROL Rules]** tab, select **[!UICONTROL Page Load Rules]** from the navigation pane and tap/click **[!UICONTROL Create New Rule]**.
 
-   ![chlimage_1-58](assets/chlimage_1-58.png)
+   ![chlimage_1-58](assets/chlimage_1-194.png)
 
 1. Expand **[!UICONTROL Javascript /Third Party Tags]**. Then tap/click **[!UICONTROL Add New Script]** in the **[!UICONTROL Sequential HTML]** tab to open the Script dialog.
 
-   ![chlimage_1-59](assets/chlimage_1-59.png)
+   ![chlimage_1-59](assets/chlimage_1-195.png)
 
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Assets]**.
 1. Tap/click **[!UICONTROL Insights Page Tracker]**, copy the tracker code, and then paste it in the Script dialog you opened in step 6. Save the changes.
@@ -55,23 +54,23 @@ Perform these steps to enable Asset Insights through DTM.
 
 1. Access `https://dtm.adobe.com`. Click **[!UICONTROL Overview]** in the web property and click **[!UICONTROL Add Tool]** or open an existing Adobe Analytics Tool. While creating the tool, you can set **[!UICONTROL Configuration Method]** to **[!UICONTROL Automatic]**.
 
-   ![chlimage_1-60](assets/chlimage_1-60.png)
+   ![Add Adobe Analytics tool](assets/Add-Adobe-Analytics-Tool.png)
 
    Select Staging/Production report suites, as appropriate.
 
 1. Expand **[!UICONTROL Library Management]**, and ensure that **[!UICONTROL Load Library at]** is set to **[!UICONTROL Page Top]**.
 
-   ![chlimage_1-61](assets/chlimage_1-61.png)
+   ![chlimage_1-61](assets/chlimage_1-197.png)
 
 1. Expand **[!UICONTROL Customize Page Code]**, and click or tap **[!UICONTROL Open Editor]**.
 
-   ![chlimage_1-62](assets/chlimage_1-62.png)
+   ![chlimage_1-62](assets/chlimage_1-198.png)
 
 1. Paste the following code in the window:
 
-   ```
+   ```Java
    var sObj;
-    
+  
    if (arguments.length > 0) {
      sObj = arguments[0];
    } else {
@@ -107,11 +106,9 @@ Perform these steps to enable Asset Insights through DTM.
 
     * The page load rule in DTM only includes the pagetracker.js code. Any `assetAnalytics` fields are considered as overrides for default values. They are not required by default.
     * The code calls `assetAnalytics.dispatcher.init`() after making sure that `_satellite.getToolsByType('sc')[0].getS`() is initialized and `assetAnalytics,dispatcher.init` is available. Therefore, you can skip adding it in step 11.
-    
     * As indicated in comments within the Insights Page Tracker code (**[!UICONTROL Tools > Assets > Insights Page Tracker]**), when Page Tracker does not create an `AppMeasurement` object, the first three arguments (RSID, Tracking Server, and Visitor Namespace) are irrelevant. Empty strings are passed instead to highlight this.  
       The remaining arguments correspond to what is configured in the Insights Configuration page (**[!UICONTROL Tools > Assets > Insights Configuration]**).
-    
     * The AppMeasurement object is retrieved by querying `satelliteLib` for all available SiteCatalyst engines. If multiple tags are configured, change the index of the array selector appropriately. Entries in the array are ordered as per SiteCatalyst tools available in the DTM interface.
 
 1. Save and close the Code Editor window, and then save the changes in the Tool configuration.
-1. In the **[!UICONTROL Approvals]** tab, approve both the pending approvals. The DTM tag is ready for insertion in your web page. For details on how to insert DTM tags in web pages, see [Integrating DTM in custom page templates](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/).
+1. In the **[!UICONTROL Approvals]** tab, approve both the pending approvals. The DTM tag is ready for insertion in your web page. For details on how to insert DTM tags in web pages, see [Integrate DTM in custom page templates](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/).

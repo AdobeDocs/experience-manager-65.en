@@ -1,6 +1,6 @@
 ---
-title: Assets Sizing Guide
-description: Best practices to determine efficient metrics for estimating the infrastructure and resources required for deploying AEM Assets.
+title: Assets sizing guide
+description: Best practices to determine efficient metrics to estimate the infrastructure and resources required to deploy AEM Assets.
 uuid: ed275e97-59d3-4945-9d1b-3351113f8ce5
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,7 +9,7 @@ docset: aem65
 
 ---
 
-# Assets Sizing Guide {#assets-sizing-guide}
+# Assets sizing guide {#assets-sizing-guide}
 
 When sizing the environment for an Adobe Experience Manager (AEM) Assets implementation, it is important to ensure that there are sufficient resources available in terms of disk, CPU, memory, IO, and network throughput. Sizing many of these resources requires an understanding of how many assets are being loaded into the system. If a better metric is not available, you can divide the size of the existing library by the age of the library to find the rate at which assets are created.
 
@@ -55,7 +55,7 @@ The example data populated in the tool demonstrates how important it is to perfo
 
 For large datastores, you can implement a shared datastore either through a shared file datastore on a network attached drive or through an S3 datastore. In this case, individual instances need not maintain a copy of the binaries. In addition, a shared datastore facilitates binary-less replication and helps reduce the bandwidth used to replicate assets to publish environments.
 
-#### Use Cases {#use-cases}
+#### Use cases {#use-cases}
 
 The datastore can be shared between a primary and standby author instance to minimize the amount of time that it takes to update the standby instance with changes made in the primary instance. You can also share the datastore between the author and publish instances to minimize the traffic during replication.
 
@@ -63,19 +63,19 @@ The datastore can be shared between a primary and standby author instance to min
 
 Owing to some pitfalls, sharing a datastore is not recommended in all cases.
 
-#### Single Point of Failure {#single-point-of-failure}
+#### Single point of failure {#single-point-of-failure}
 
 Having a shared datastore, introduces a single point of failure in an infrastructure. Consider a scenario where your system has one author and two publish instances, each with their own datastore. If any one of them crashes, the other two still can continue running. However, if the datastore is shared, a single disk failure can take down the entire infrastructure. Therefore, ensure that you maintain a backup of the shared datastore from where you can restored the datastore quickly.
 
 Deploying the AWS S3 service for shared datastores is preferred because it significantly reduces the probability of failure compared to normal disk architectures.
 
-#### Increased Complexity {#increased-complexity}
+#### Increased complexity {#increased-complexity}
 
 Shared datastores also increase the complexity of operations, such as garbage collection. Normally, garbage collection for a standalone datastore can be initiated with a single click. However, shared datastores require mark sweep operations on each member that uses the datastore, in addition to running the actual collection on a single node.
 
 For AWS operations, implementing a single central location (via S3), rather than building a RAID array of EBS volumes, can significantly offset the complexity and operational risks on the system.
 
-#### Performance Concerns {#performance-concerns}
+#### Performance concerns {#performance-concerns}
 
 A shared datastore requires the binaries to be stored on a network-mounted drive that is shared between all instances. Because these binaries are accessed over a network, the system performance is adversely impacted. You can partially mitigate the impact by using a fast network connection to a fast array of disks. However, this is an expensive proposition. In the case of AWS operations, all disks are remote and require network connectivity. Ephemeral volumes lose data when the instance starts or stops.
 
@@ -83,7 +83,7 @@ A shared datastore requires the binaries to be stored on a network-mounted drive
 
 Latency in S3 implementations is introduced by the background writing threads. Backup procedures must take into account this latency. In addition, Lucene indexes may remain incomplete when making a backup. It applies to any time-sensitive file written to S3 datastore and accessed from another instance.
 
-### Node Store/Document Store {#node-store-document-store}
+### Node store or document store {#node-store-document-store}
 
 It is difficult to arrive at precise sizing figures for a NodeStore or DocumentStore because of the resources consumed by the following:
 
@@ -118,6 +118,6 @@ If the renditions are incorrectly generated, use the Camera Raw library. However
 
 It is difficult to accurately estimate the size of the TIFF file supported out-of-the-box with a specific heap for AEM because additional factors, such as pixel size influence processing. It is possible that AEM can process a file of size of 255 MB out-of-the-box, but cannot process a file size of 18 MB because the latter comprises of an unusually higher number pixels compared to the former.
 
-## Size of Assets {#size-of-assets}
+## Size of assets {#size-of-assets}
 
-By default, AEM allows you to upload assets of file sizes up to 2 GBs. To upload very large assets in AEM, see [Configuration to upload very large assets](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).
+By default, AEM allows you to upload assets of file size up to 2 GB. To upload very large assets in AEM, see [Configuration to upload very large assets](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).

@@ -141,7 +141,7 @@ To define your new segment:
 1. Drag a comparison or reference to the segment editor it will appear in the default AND container.
 1. Double-click on or tap the configure option of the new reference or segment to edit the specific parameters. In this example, we are testing for people in San Jose.
 
-   ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135am.png)
+   ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
 
    Always set a **Data Type** if possible to ensure that your comparisons are evaluated properly. See [Comparisons](/help/sites-administering/segmentation.md#comparisons) for more information.
 
@@ -165,7 +165,7 @@ Female and between the ages of 30 and 59
 
 You start by placing an OR container component within the default AND container. Within the OR container, you add two AND containers and within both of these you can add the property or reference components.
 
-![screen_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145am.png)
+![screen_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145ama.png)
 
 ### Using Script References {#using-script-references}
 

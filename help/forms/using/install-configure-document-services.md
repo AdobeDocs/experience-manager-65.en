@@ -336,6 +336,11 @@ To avoid receiving the error, you can disable the Windows error reporting. For m
 
 The PDF Generator service provides WebKit, WebCapture, and PhantomJS routes or methods to convert HTML files to PDF documents. On Windows, to enable conversion for WebKit and Acrobat WebCapture routes, copy the Unicode font to %windir%\fonts directory.
 
+>[!NOTE]
+>
+> Whenever you install new fonts to the fonts folder, restart the AEM Forms instance.
+>
+
 ### Extra configurations for HTML to PDF conversion  {#extra-configurations-for-html-to-pdf-conversion}
 
 On UNIX-based platforms, the PDF Generator service supports WebKit and PhantomJS routes to convert HTML files to PDF documents. To enable HTML to PDF conversion, perform the following configurations, applicable to your preferred conversion route:
@@ -359,6 +364,7 @@ Copy the Unicode font to any of the following directories as appropriate for you
 >* Ensure that the directories /usr/lib/X11/fonts and /usr/share/fonts exist. If the directories do not exist, then use the ln command to create* a symbolic link from /usr/share/X11/fonts to /usr/lib/X11/fonts and another symbolic link from /usr/share/fonts to /usr/share/X11/fonts. *Also ensure that the courier fonts are available at /usr/lib/X11/fonts.
 >* Ensure that all the fonts (Unicode and non-unicode) are available in the /usr/share/fonts or /usr/share/X11/fonts directory.  
 >* When you run PDF Generator service as a non-root user, provide the non-root user read and write access to all the font directories.
+>* Whenever you install new fonts to the fonts folder, restart the AEM Forms instance.
 >
 
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
@@ -406,6 +412,8 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
    >[!NOTE]
    >
    >Your right to use fonts provided by parties other than Adobe is governed by the license agreements provided to you by such parties with those fonts, and is not covered under your license to use Adobe software. Adobe recommends that you review and ensure that you are in compliance with all applicable non-Adobe license agreements before using non-Adobe fonts with Adobe software, particularly with respect to use of fonts in a server environment.
+   > When you install new fonts to the fonts folder, restart the AEM Forms instance.
+   >
 
 ### Configure a local user account to run the PDF Generator service  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 

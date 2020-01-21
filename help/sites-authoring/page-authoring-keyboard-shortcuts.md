@@ -22,7 +22,7 @@ Various keyboard shortcuts are available throughout AEM. Some apply when editing
 ## Editing Keyboard Shortcuts {#editing-keyboard-shortcuts}
 
 |Location|Shortcut|Description|
-|-|-|-|
+|---|---|---|
 |Any edit window mode|`Ctrl-Shift-m`|Toggle between **Preview** and the currently selected [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (e.g. **Edit**, **Layout**, etc)*|
 |**Edit** mode|`Ctrl-z`|[Undo last change](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)|
 ||`Ctrl-y`|[Redo last change](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)|
@@ -50,6 +50,6 @@ Various keyboard shortcuts are also available for desktop users when using the [
 The modifier keys used for the keyboard shortcuts vary depending on the operating system used by the client.
 
 |Windows and Linux|macOS|
-|-|-|
+|---|---|
 |`Ctrl`|`Command`|
 |`Alt`|`Option`|

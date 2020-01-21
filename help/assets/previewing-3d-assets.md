@@ -10,7 +10,7 @@ docset: aem65
 
 # Previewing 3D assets{#previewing-3d-assets}
 
-Experience Manager supports the upload, delivery, and interactive preview of 3D assets as part of the authoring process. 
+Experience Manager supports the upload, delivery, and interactive preview of 3D assets as part of the authoring process.
 
 The interactive 3D viewer is available from the asset details page in AEM. The viewer includes, among other things, a collection of interactive camera controls that let you orbit, zoom, and pan the 3D asset. 
 
@@ -19,7 +19,7 @@ The interactive 3D viewer is available from the asset details page in AEM. The v
 Interactive 3D preview supports the following file formats: 
 
 |3D file extension |File format | MIME type |Notes |
-|-|-|-|-|
+|---|---|---|---|
 | GLB |Binary GL Transmission|model/gltf-binary ||
 | GLTF |GL Transmission Format|model/gltf+json |See **Note** below. |
 | OBJ |WaveFront 3D Object File|application/x-tgif ||

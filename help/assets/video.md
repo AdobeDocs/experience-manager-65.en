@@ -23,7 +23,7 @@ The following step-by-step workflow description is designed to help you get up a
 
 >[!NOTE]
 >
->Before you work with video in Dynamic Media, make sure that your AEM admininistrator has already enabled and configured Dynamic Media Cloud Services in either Dynamic Media - Scene7 mode or Dynamic Media - Hybrid mode.
+>Before you work with video in Dynamic Media, make sure that your AEM administrator has already enabled and configured Dynamic Media Cloud Services in either Dynamic Media - Scene7 mode or Dynamic Media - Hybrid mode.
 >
 >* See [Configuring Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configuring Dynamic Media - Scene7 mode and [Troubleshooting Dynamic Media - Scene7 mode.](/help/assets/troubleshoot-dms7.md)
 >
@@ -40,7 +40,7 @@ The following step-by-step workflow description is designed to help you get up a
     * Associate the video processing profile to one or more folders where you are going to upload your master videos.
 
         * [Applying a video profile to folders](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-        * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/best-practices-for-file-management.md).
+        * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/organize-assets.md).
         * Learn more about [Organizing digital assets](/help/assets/organize-assets.md).
 
     * Upload your master videos to the folders. You can upload video files that are up to 20 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
@@ -55,14 +55,14 @@ The following step-by-step workflow description is designed to help you get up a
     * Organize, browse, and search video assets
 
         * [Organizing digital assets](/help/assets/organize-assets.md)
-          Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/best-practices-for-file-management.md)
+          Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/organize-assets.md)
 
-        * [Searching video assets](/help/assets/search-assets.md#custompredicates) or [Searching assets](/help/assets/managing-assets-touch-ui.md#searchingassets)
+        * [Searching video assets](/help/assets/search-assets.md#custompredicates) or [Searching assets](/help/assets/managing-assets-touch-ui.md#search-assets)
 
     * Preview and publish video assets
 
         * View the source video and encoded renditions of the video along with its associated thumbnails:
-          [Previewing videos](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets) or [Previewing assets](/help/assets/previewing-assets.md)
+          [Previewing videos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](/help/assets/previewing-assets.md)
           [Viewing video renditions](/help/assets/video-renditions.md)
           [Managing video renditions](/help/assets/managing-assets-touch-ui.md#managing-renditions)
 
@@ -82,7 +82,7 @@ The following step-by-step workflow description is designed to help you get up a
 
     * Review, approve, and annotate videos, and maintain full version control
 
-        * [Annotating videos](/help/assets/managing-video-assets.md#annotatingvideoassets) or [Annotating assets](/help/assets/managing-assets-touch-ui.md#annotating)
+        * [Annotating videos](/help/assets/managing-video-assets.md#annotate-video-assets) or [Annotating assets](/help/assets/managing-assets-touch-ui.md#annotating)
 
         * [Creating a version](/help/assets/managing-assets-touch-ui.md#asset-versioning)
         * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
@@ -1081,7 +1081,7 @@ To add captions or subtitles to video:
 
    For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load**. See [Obtaining a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtainingaurlstringforanasset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load**. See [Obtaining a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.
 
    Now follow the onscreen instructions from the site to author and save your WebVTT file. When you have finished, copy the caption file contents and paste it into a plain text editor and save it with a .vtt filename extension.
 

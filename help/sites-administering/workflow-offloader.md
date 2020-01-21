@@ -22,19 +22,19 @@ Use Configuration Manager to add the URL for the leader instance and the host na
 1. Tap/click the AEM logo, and choose **Tools** &gt; **Operations** &gt; **Web Console** to open Configuration Manager.
 1. From the Web Console, select **Sling** &gt;  **Topology Management**.
 
-   ![chlimage_1-44](assets/chlimage_1-44.png)
+   ![chlimage_1-44](assets/chlimage_1-44a.png)
 
 1. In the Topology Management page, tap/click the **Configure Discovery.Oak Service** link.
 
-   ![chlimage_1-45](assets/chlimage_1-45.png)
+   ![chlimage_1-45](assets/chlimage_1-45a.png)
 
 1. In the Discovery Service Configuration page, specify the connector URL for the leader instance in the **Topology Connector URLs** field.
 
-   ![chlimage_1-46](assets/chlimage_1-46.png)
+   ![chlimage_1-46](assets/chlimage_1-46a.png)
 
 1. In the **Topology Connector Whitelist** field, specify IP address or host names of offloader instances that are allowed to connect with the leader instance. Tap/click **Save**.
 
-   ![chlimage_1-47](assets/chlimage_1-47.png)
+   ![chlimage_1-47](assets/chlimage_1-47a.png)
 
 1. To see the offloader instances connected to the leader instance, go to **Tools** &gt; **Deployment** &gt; **Topology** and tap/click the Cluster view.
 
@@ -42,11 +42,11 @@ Use Configuration Manager to add the URL for the leader instance and the host na
 
 1. Tap/click the AEM logo, and choose **Tools** &gt; **Deployment** &gt; **Offloading**. The **Offloading Browser** page displays topics and the server instances that can consume the topics.
 
-   ![chlimage_1-48](assets/chlimage_1-48.png)
+   ![chlimage_1-48](assets/chlimage_1-48a.png)
 
 1. Disable the *com/adobe/granite/workflow/offloading* topic on the leader instances with which users interact to upload or change AEM assets.
 
-   ![chlimage_1-49](assets/chlimage_1-49.png)
+   ![chlimage_1-49](assets/chlimage_1-49a.png)
 
 ## Configure workflow launchers on the leader instance {#configure-workflow-launchers-on-the-leader-instance}
 
@@ -54,25 +54,25 @@ Configure workflow launchers to use the **DAM Update Asset Offloading** workflow
 
 1. Tap/click the AEM logo, and choose, **Tools** &gt; **Workflow** &gt; **Launchers** to open the **Workflow Launchers** console.
 
-   ![chlimage_1-50](assets/chlimage_1-50.png)
+   ![chlimage_1-50](assets/chlimage_1-50a.png)
 
 1. Locate the two Launcher configurations with event type **Node Created** and **Node Modified** respectively, which run the **DAM Update Asset** workflow.
 1. For each configuration, select the checkbox before it and tap/click the **View Properties** icon from the toolbar to display the **Launcher Properties** dialog.
 
-   ![chlimage_1-51](assets/chlimage_1-51.png)
+   ![chlimage_1-51](assets/chlimage_1-51a.png)
 
 1. From the **Workflow** list, choose **DAM Update Asset Offloading** and tap/click **Save**.
 
-   ![chlimage_1-52](assets/chlimage_1-52.png)
+   ![chlimage_1-52](assets/chlimage_1-52a.png)
 
 1. Tap/click the AEM logo, and choose, **Tools** &gt; **Workflow** &gt; **Models** to open the **Workflow Models** page.
 1. Select the **DAM Update Asset Offloading** workflow, and tap/click **Edit** from the toolbar to display its details.
 
-   ![chlimage_1-53](assets/chlimage_1-53.png)
+   ![chlimage_1-53](assets/chlimage_1-53a.png)
 
 1. Display the context menu for the **DAM Workflow Offloading** step, and choose **Edit**. Verify the entry in the **Job Topic** field of the **Generic Arguments** tab of the configuration dialog.
 
-   ![chlimage_1-54](assets/chlimage_1-54.png)
+   ![chlimage_1-54](assets/chlimage_1-54a.png)
 
 ## Disable the workflow launchers on the offloader instances {#disable-the-workflow-launchers-on-the-offloader-instances}
 
@@ -80,16 +80,16 @@ Disable the workflow launchers that run the **DAM Update Asset** workflow on the
 
 1. Tap/click the AEM logo, and choose, **Tools** &gt; **Workflow** &gt; **Launchers** to open the **Workflow Launchers** console.
 
-   ![chlimage_1-55](assets/chlimage_1-55.png)
+   ![chlimage_1-55](assets/chlimage_1-55a.png)
 
 1. Locate the two Launcher configurations with event type **Node Created** and **Node Modified** respectively, which run the **DAM Update Asset** workflow.
 1. For each configuration, select the checkbox before it and tap/click the **View Properties** icon from the toolbar to display the **Launcher Properties** dialog.
 
-   ![chlimage_1-56](assets/chlimage_1-56.png)
+   ![chlimage_1-56](assets/chlimage_1-56a.png)
 
-1. In the **Activate **section, drag the slider to disable the workflow launcher and tap/click **Save** to disable it.
+1. In the **Activate** section, drag the slider to disable the workflow launcher and tap/click **Save** to disable it.
 
-   ![chlimage_1-57](assets/chlimage_1-57.png)
+   ![chlimage_1-57](assets/chlimage_1-57a.png)
 
 1. Upload any asset of type image at the leader instance. Verify the thumbnails generated and ported back for the asset by the offloaded instance.
 

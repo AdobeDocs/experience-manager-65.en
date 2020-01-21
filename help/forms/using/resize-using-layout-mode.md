@@ -65,6 +65,17 @@ Select **Layout** from the drop-down list that appears at the top of the adaptiv
 
    You can select the Image component and tap the **Float to new line** option available in the toolbar to shift the Image component to the next line.
 
+## Resize panels {#resize-panels-layout-mode}
+
+Execute the following steps if you want to resize the entire panel instead of individual components:
+
+1. Tap any of the components in the panel that you want to resize, select ![Select Parent](assets/select_parent_icon.svg), and select the first option in the drop-down list, if the panel is the immediate parent of the component.
+
+   The blue dots display at the start and end of the responsive grid. 
+
+1. Drag-and drop the blue dots to define the position of the panel in the responsive grid.
+   You can repeat steps 1 and 2 and select ![Select Parent](assets/float_to_new_line_icon.svg) to shift the resized panel to the next line.
+
 ## Enable the new responsive grid for old responsive layouts {#enableresponsivegrid}
 
 Enable the new responsive grid for forms that you create using AEM Forms 6.4 or lower version to resize components.

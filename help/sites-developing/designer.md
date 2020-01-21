@@ -33,7 +33,7 @@ Here you can create the structure required to store the design, then upload the 
 
 Designs are stored under `/etc/designs`. The path to the design to be used for a website is specified using the `cq:designPath` property of the `jcr:content` node.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
+![chlimage_1-74](assets/chlimage_1-74a.png)
 
 >[!NOTE]
 >
@@ -44,7 +44,6 @@ Designs are stored under `/etc/designs`. The path to the design to be used for a
 To realize your design you will need:
 
 **CSS** - The Cascading Style Sheets define the formats of specific areas on your pages.
-
 **Images** - Any images that you use for features such as backgrounds, buttons.
 
 ### Considerations When Designing Your Website {#considerations-when-designing-your-website}

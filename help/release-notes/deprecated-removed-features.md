@@ -1,25 +1,21 @@
 ---
 title: Deprecated and Removed Features
-seo-title: Deprecated and Removed Features
 description: Release notes specific to deprecated and removed features in Adobe Experience Manager 6.5.
-seo-description: Release notes specific to deprecated and removed features in Adobe Experience Manager 6.5.
 uuid: 81d9a064-e712-4eff-bd3b-6e15513a5435
 contentOwner: msm-service
-topic-tags: release-notes
-content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 
 ---
 
-# Deprecated and Removed Features{#deprecated-and-removed-features}
+# Deprecated and Removed Features {#deprecated-and-removed-features}
 
 Adobe constantly evaluates product capabilities, to over time reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility.
 
 To communicate the impending removal/replacement of AEM capabilities, the following rules apply:
 
-1. Announcement of deprecation comes first. While deprecated, capabiiities are still available, but they will not be further enhanced.
+1. Announcement of deprecation comes first. While deprecated, capabilities are still available, but they will not be further enhanced.
 1. Removal of deprecated capabilities will occur in the following major release at the earliest. Actual target date for removal will be announced.
 
 This process gives customers at least one release cycle to adapt their implementation to a new version or successor of a deprecated capability, before actual removal.
@@ -33,14 +29,14 @@ Customers are advised to review if they make use of the feature/capability in th
 <table>
  <tbody>
   <tr>
-   <td>Area</td>
-   <td>Feature</td>
-   <td>Replacement</td>
+   <td><b>Area</b></td>
+   <td><b>Feature</b></td>
+   <td><b>Replacement</b></td>
   </tr>
   <tr>
    <td>Creative Cloud integration</td>
-   <td><p><a href="/help/sites-administering/creative-cloud.md">AEM to Creative Cloud Folder Sharing</a> was introduced in AEM 6.2 as a way to give creative users access to assets from AEM, so that they could open them in CC applications and upload new files or save changes to AEM. A new capability released in Creative Cloud application, Adobe Asset Link, provides a much better user expereince and more powerful access to assets from AEM directly from inside Photoshop, InDesign, and Illustrator.</p> <p>Adobe does not plan to make further enhancements to the AEM to Creative Cloud Folder Sharing integration. While the feature is included in AEM, customers are strongly advised to use replacement solutions.</p> </td>
-   <td>Customers are advised to switch to new Creative Cloud integration capabilities, including Adobe Assset Link or AEM Desktop App. Please review <a href="/help/assets/aem-cc-integration-best-practices.md">AEM and Creative Cloud Integration Best Practices</a> for more details.</td>
+   <td><p><a href="/help/assets/aem-cc-folder-sharing-best-practices.md">AEM to Creative Cloud Folder Sharing</a> was introduced in AEM 6.2 as a way to give creative users access to assets from AEM, so that they could open them in CC applications and upload new files or save changes to AEM. A new capability released in Creative Cloud application, Adobe Asset Link, provides a much better user experience and more powerful access to assets from AEM directly from inside Photoshop, InDesign, and Illustrator.</p> <p>Adobe does not plan to make further enhancements to the AEM to Creative Cloud Folder Sharing integration. While the feature is included in AEM, customers are strongly advised to use replacement solutions.</p> </td>
+   <td>Customers are advised to switch to new Creative Cloud integration capabilities, including Adobe Asset Link or AEM desktop app. Please review <a href="/help/assets/aem-cc-integration-best-practices.md">AEM and Creative Cloud Integration Best Practices</a> for more details.</td>
   </tr>
   <tr>
    <td>Assets</td>
@@ -57,7 +53,7 @@ Customers are advised to review if they make use of the feature/capability in th
   </tr>
   <tr>
    <td>Adobe Search &amp; Promote</td>
-   <td><p>The integation with Adobe Search &amp; Promote is deprecated.</p> <p>Adobe does not plan to make further enhancements to the Search &amp; Promote integration. Note that Search &amp; Promote integration remains fully supported while being deprecated.</p> </td>
+   <td><p>The integration with Adobe Search &amp; Promote is deprecated.</p> <p>Adobe does not plan to make further enhancements to the Search &amp; Promote integration. Note that Search &amp; Promote integration remains fully supported while being deprecated.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -114,38 +110,38 @@ Customers are advised to review if they make use of the feature/capability in th
   </tr>
   <tr>
    <td>Developers</td>
-   <td><p>Hobbes.js </p> <p>Adobe does not plan to make further enhancements to the hobbes.js UI testing framework.</p> </td>
-   <td>Adobe recommends customers to Selenium automation</td>
+   <td><p>Hobbes.js</p> <p>Adobe does not plan to make further enhancements to the hobbes.js user interface testing framework.</p> </td>
+   <td>Adobe recommends that customers use Selenium automation.</td>
   </tr>
   <tr>
    <td>Developers</td>
    <td><p>jQuery UI client library</p> <p>Adobe does not plan to further maintain and update the jQuery UI client library that is shipped as part of the distribution (Quickstart)</p> </td>
-   <td>Adobe recommends customers that still require jQuery UI for thier code to add it into thier project code base.</td>
+   <td>Adobe recommends customers that still require jQuery UI for their code to add it into their project code base.</td>
   </tr>
   <tr>
-   <td>Developres</td>
-   <td><p>jQuery Animiation client library (granite.jquery.animation)</p> <p>Adobe does not plan to further maintain and update the jQuery Animation client library that is shipped as part of the distribution (Quickstart)</p> </td>
-   <td>Adobe recommends customers that still require jQuery Animations for thier code to add it into thier project code base.</td>
+   <td>Developers</td>
+   <td><p>jQuery Animation client library (granite.jquery.animation)</p> <p>Adobe does not plan to further maintain and update the jQuery Animation client library that is shipped as part of the distribution (Quickstart)</p> </td>
+   <td>Adobe recommends customers that still require jQuery Animations for their code to add it into their project code base.</td>
   </tr>
   <tr>
    <td>Developers</td>
    <td><p>Handlebars client library</p> <p>Adobe does not plan to further maintain and update the Handlebar client library that is shipped as part of the distribution (Quickstart)</p> </td>
-   <td>Adobe recommends customers that still require Handlebars for thier code to add it into thier project code base.</td>
+   <td>Adobe recommends customers that still require Handlebars for their code to add it into their project code base.</td>
   </tr>
   <tr>
    <td>Developers</td>
    <td><p>Lawnchair client library</p> <p>Adobe does not plan to further maintain and update the Lawnchair client library that is shipped as part of the distribution (Quickstart)</p> </td>
-   <td>Adobe recommends customers that still require Lawnchair for thier code to add it into thier project code base.</td>
+   <td>Adobe recommends customers that still require Lawnchair for their code to add it into their project code base.</td>
   </tr>
   <tr>
    <td>Developers</td>
    <td><p>Granite.Sling.js client library</p> <p>Adobe does not plan to further enhance the Granite.Sling.js client library that is shipped as part of the distribution (Quickstart)</p> </td>
-   <td>Adobe recommends customers that are relying on the capablity of the library to refactor thier code to no longer use it.</td>
+   <td>Adobe recommends customers that are relying on the capability of the library to refactor their code to no longer use it.</td>
   </tr>
   <tr>
    <td>Developers</td>
    <td>Using YUI to compress/minify JavaScript client libraries. Adobe does not plan to further update the YUI library. Up until AEM 6.4, YUI was default to minify JavaScript with the option to switch to Google Closure Compiler (GCC). Starting AEM 6.5, GCC is default.</td>
-   <td>Adobe recommends customers that upgrade to AEM 6.5 to switch to GCC for thier implementation</td>
+   <td>Adobe recommends customers that upgrade to AEM 6.5 to switch to GCC for their implementation</td>
   </tr>
   <tr>
    <td>Developers</td>
@@ -157,84 +153,25 @@ Customers are advised to review if they make use of the feature/capability in th
 
 ## Removed Features {#removed-features}
 
-This section lists features and capabilities that have been removed from AEM 6.5. Prior releases had these capabilites marked as depreacted.
+This section lists features and capabilities that have been removed from AEM 6.5. Prior releases had these capabilities marked as deprecated.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Area </strong></td>
-   <td><strong>Feature</strong></td>
-   <td><strong>Replacement</strong></td>
-  </tr>
-  <tr>
-   <td>Analytics Activity Map</td>
-   <td>The version of the Activity Map that is included within AEM.</td>
-   <td><p>Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM.</br></br>The <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">ActivityMap plugin provided by Adobe Analytics</a> should now be used.</p></td>
-  </tr>
-  <tr>
-   <td>Integrations</td>
-   <td>ExactTarget integration has been removed from the default distribution (Quickstart) and it is no longer available.</td>
-   <td>No replacement</td>
-  </tr>
-  <tr>
-   <td>Integrations</td>
-   <td>Salesforce Force API integration has been removed from the default distribution (Quickstart) and is now an extra package to install from PackageShare.</td>
-   <td>Feature is still available.</td>
-  </tr>
-  <tr>
-   <td>Forms</td>
-   <td>Support for Adobe Central Migration Bridge service has been removed as Adobe Central product is no longer supported.</td>
-   <td>No replacement<br /> </td>
-  </tr>
-  <tr>
-   <td>Forms</td>
-   <td>com.adobe.fd.df.fdinternal.model.ConfigurationInstance</td>
-   <td>No replacement</td>
-  </tr>
-  <tr>
-   <td>Forms<br /> </td>
-   <td>com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer<br /> </td>
-   <td>No replacement</td>
-  </tr>
-  <tr>
-   <td>Developers</td>
-   <td>Firebug Lite has been removed from the default distribution (Quickstart)</td>
-   <td>Use the browser built-in developer consoles</td>
-  </tr>
-  <tr>
-   <td>Developers</td>
-   <td>Remove customJavaScriptPath support in HTML Client Library Manager.</td>
-   <td>No replacement</td>
-  </tr>
-  <tr>
-   <td>Assets</td>
-   <td>The Assets Offloading feature has been removed in AEM 6.5</td>
-   <td>No replacement</td>
-  </tr>
-  <tr>
-   <td>Cache</td>
-   <td><code>system/console/slingjsp</code> is removed is no longer available in AEM 6.5.</td>
-   <td>Classes and Slightly cache is stored under the <strong>Apache Sling Commons FileSystem ClassLoader</strong> bundle. You can check the bundle number in the <strong>AEM Web Console</strong> and remove the cache folder directly from the file system (<code>crx-quickstart/launchpad/felix/bundle&lt;ID&gt;</code>).</td>
-  </tr>
- </tbody>
-</table>
+|Area|Feature|Replacement|
+|--- |--- |--- |
+|Analytics Activity Map|The version of the Activity Map that is included within AEM.|Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM. Use the [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html).|
+|Integrations|ExactTarget integration has been removed from the default distribution (Quickstart) and it is no longer available.|No replacement|
+|Integrations|Salesforce Force API integration has been removed from the default distribution (Quickstart) and is now an extra package to install from PackageShare.|Feature is still available.|
+|Forms|Support for Adobe Central Migration Bridge service has been removed as Adobe Central product is no longer supported.|No replacement|
+|Forms|`com.adobe.fd.df.fdinternal.model.ConfigurationInstance`|No replacement|
+|Forms|`com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer`|No replacement|
+|Developers|Firebug Lite has been removed from the default distribution (Quickstart)|Use the browser built-in developer consoles|
+|Developers|Remove `customJavaScriptPath` support in HTML Client Library Manager.|No replacement|
+|Assets|The Assets offloading feature has been removed in AEM 6.5|No replacement|
+|Cache|`system/console/slingjsp` is removed is no longer available in AEM 6.5.|Classes and Slightly cache is stored under the Apache Sling Commons FileSystem ClassLoader bundle. You can check the bundle number in the AEM Web Console and remove the cache folder directly from the file system (`crx-quickstart/launchpad/felix/bundle<ID>`).|
 
 ## Pre-announcement for Next Release {#pre-announcement-for-next-release}
 
 This section is used to pre-announce changes in future release, that are not deprecated, but will impact customers. These are provided for planning purpose.
 
-<table>
- <tbody>
-  <tr>
-   <td>Area<br /> </td>
-   <td>Feature<br /> </td>
-   <td>Annoucement</td>
-  </tr>
-  <tr>
-   <td>Foundation</td>
-   <td>UI Framework</td>
-   <td>Adobe is planning to deprecate the Coral UI 2 components in 2019. Coral UI 3 was introduced with AEM 6.2, and AEM 6.5 is fully based on Coral 3. Adobe recommends customers and partners that have build custom UIs with Coral 2 to refactored them to Coral 3. Adobe is providing a tool to convert Coral 2 dialogs to Coral 3 - <a href="/help/sites-developing/dialog-conversion.md">Read more</a>.</td>
-  </tr>
- </tbody>
-</table>
-
+|Area|Feature|Announcement|
+|--- |--- |--- |
+|Foundation|UI Framework|Adobe is planning to deprecate the Coral UI 2 components in 2019. Coral UI 3 was introduced with AEM 6.2, and AEM 6.5 is fully based on Coral 3. Adobe recommends customers and partners that have build custom UIs with Coral 2 to refactored them to Coral 3. Adobe is providing a tool to convert Coral 2 dialogs to Coral 3 - [Read more](/help/sites-developing/dialog-conversion.md).|

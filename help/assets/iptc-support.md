@@ -1,5 +1,5 @@
 ---
-title: Support for IPTC Metadata
+title: Support for IPTC metadata
 description: Learn how Adobe Experience Manager (AEM) Assets supports the IPTC metadata, Creative ratings, and keywords added to assets through Adobe Bridge and other Creative Apps.
 uuid: 63c9716a-1fa4-4462-a987-ab231157433d
 contentOwner: AG
@@ -18,14 +18,14 @@ The default metadata schema for assets now incorporates the IPTC Core and IPTC E
 The Properties page for assets now includes separate tabs to display the IPTC Core and IPTC Extension metadata in editable fields.
 
 1. From the Assets user interface, select an image.
-1. Click or tap the **[!UICONTROL Properties]** icon from the toolbar.
-1. In the Properties page, click/tap the **[!UICONTROL IPTC]** tab to view IPTC metadata for the asset.
-1. Edit the IPTC metadata properties, as necessary.
+1. Tap **[!UICONTROL Properties]** from the toolbar.
+1. Tap the **[!UICONTROL IPTC]** tab to view the IPTC metadata for the asset.
+1. Edit the IPTC metadata properties, as required.
 
    ![iptc_tab](assets/iptc_tab.png)
 
 1. Click/tap the **[!UICONTROL IPTC Extension]** tab to view IPTC Extension metadata for the asset.
-1. Edit the ITPC Extension metadata properties, as necessary.
+1. Edit the IPTC Extension metadata properties, as required.
 1. Tap/click **[!UICONTROL Save & Close]** to save the changes.
 
 ## Creative Rating Support {#creative-rating-support}

@@ -11,6 +11,8 @@ docset: aem65
 
 # Imaging Transcoding Library {#imaging-transcoding-library}
 
+<!-- TBD: Add UICONTROL tags. Run spellcheck. -->
+
 Adobe's Imaging Transcoding Library is a proprietary image processing solution that can perform core image-handling functions, including:
 
 * Encoding
@@ -36,16 +38,23 @@ In addition to supporting a wide range of file formats and profiles, Imaging Tra
 
 See [supported MIME types article](assets-formats.md#supported-image-transcoding-library), for a list of formats that ITL supports.
 
-## Supported Platforms {#supported-platforms}
+## Supported platforms {#supported-platforms}
 
-Imaging Transcoding Library is currently available for RHEL 7 and CentOS 7 operating systems. Mac OS and other *nix distributions (for example, Debian and Ubuntu) are not supported.
+Imaging Transcoding Library is currently available for the following operating systems:
+
+* RHEL 7
+* CentOS 7
+
+>[! NOTE]
+>
+> Mac OS and other *nix distributions (for example, Debian and Ubuntu) are not supported. Currently, RHEL 7 and CentOS 7 are supported for Linux distros.
 
 ## Usage {#usage}
 
 The command line arguments for Imaging Transcoding Library can include the following:
 
-```
--destMime PNG/JPEG: Mime type of output rendition
+```shell
+ -destMime PNG/JPEG: Mime type of output rendition
  -BitDepth 8/16: Preserves Bit Depth. Bitdepth ‘4’ is automatically converted to ‘8’
  -preserveBitDepth: Downscales Bit Depth (No upscaling)
  -preserveCMYK: Preserves CMYK color space
@@ -54,29 +63,29 @@ The command line arguments for Imaging Transcoding Library can include the follo
  -resize
 ```
 
-: `You can configure the following options for the` `-resize` `parameter:`
+You can configure the following options for the `-resize` `parameter:`
 
 * `X`: `Works similar to AEM. For example -resize 319.`
 * `WxH`: `Aspect Ratio will not be maintained, For example -resize 319X319.`
 * `Wx`: `Fixes the width and calculates the height maintaining the aspect ratio. For example -resize 319x.`
 * `xH`: `Fixes the height and calculates the width maintaining the aspect ratio. For example -resize x319.`
 
-```
--AllowUpsampling (Resizes smaller images)
+```shell
+ -AllowUpsampling (Resizes smaller images)
  -input <fileName>
  -output <fileName>
 ```
 
-## Configuring Imaging Transcoding Library {#configuring-imaging-transcoding-library}
+## Configure Imaging Transcoding Library {#configuring-imaging-transcoding-library}
 
 1. When executing the `SWitchEngine` command, create a conf file to point to the libraries using the following commands:
 
-    1. cd /etc/ld.so.conf.d
-    1. touch SWitchEngineLibs.conf
-    1. vi SWitchEngineLibs.conf
-    1. cat SWitchEngineLibs.conf  
+    * cd /etc/ld.so.conf.d
+    * touch SWitchEngineLibs.conf
+    * vi SWitchEngineLibs.conf
+    * cat SWitchEngineLibs.conf  
        /opt/aem/author/crx-quickstart/launchpad/felix/bundle545/data/binaries
-    1. ldconfig
+    * ldconfig
 
    Only for the bash file, configure `LD_LIBRARY_PATH` using the following steps.
 
@@ -92,11 +101,7 @@ The command line arguments for Imaging Transcoding Library can include the follo
 
    If the value is not set to `.` restart the session.
 
-1. Download the Imaging Transcoding Library package and install it using the Package Manager.
-
-  | Package Version |                                                                                                          Package Share Link                                                                                                          | Supported Platforms |
-  | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
-  | 1.4             | [Imaging transcoding library package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) | RHEL 7, CentOS 7    |
+1. Download the [Imaging Transcoding Library package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. RHEL 7 and CentOS 7 are the supported platforms.
 
 1. Tap/click the AEM logo, and go to **Tools** &gt; **Workflow** &gt; **Models**.
 1. From the **Workflow Models** page, open the **DAM Update Asset** workflow model in edit mode.
@@ -121,11 +126,11 @@ The command line arguments for Imaging Transcoding Library can include the follo
     1. `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
     1. `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
 
-   ![chlimage_1-63](assets/chlimage_1-63.png)
+   ![chlimage_1-63](assets/chlimage_1-199.png)
 
     * Generate thumbnails from an intermediate rendition using a single command. The intermediate rendition acts as source to generate static and web renditions. This method is faster than the earlier method. However, you cannot apply custom parameters to thumbnails using this method.
 
-   ![chlimage_1-64](assets/chlimage_1-64.png)
+   ![chlimage_1-64](assets/chlimage_1-200.png)
 
    To generate web renditions, configure parameters in the **Web-Enabled Image** tab as depicted in the following image.
 
