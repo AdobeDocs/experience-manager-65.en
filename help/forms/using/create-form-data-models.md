@@ -65,7 +65,7 @@ For more information about form data model editor and how you can work with it t
 Do the following to add or update data sources to an existing form data model.
 
 1. Go to **[!UICONTROL Forms > Data Integrations]**, select the form data model in which you want to add or update data sources, and tap **[!UICONTROL Properties]**.
-1. In the form data model properties, go to the **[!UICONTROL Update Source]**tab.
+1. In the form data model properties, go to the **[!UICONTROL Update Source]** tab.
 
    In the Update Source tab:
 

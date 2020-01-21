@@ -17,7 +17,7 @@ docset: aem65
 
 A submit action is triggered when a user clicks the Submit button on an adaptive form. You can configure the submit action on adaptive form. Adaptive forms provide a few out of the box submit actions. You can copy and extend the default submit actions to create you own submit action. However, based on your requirements, you can write and register your own submit action to process data in the submitted form. The submit action can use [synchronous or asynchronous submission](../../forms/using/asynchronous-submissions-adaptive-forms.md).
 
-You can configure a submit action in the **Submission **section of the Adaptive Form Container properties, in the sidebar.
+You can configure a submit action in the **Submission** section of the Adaptive Form Container properties, in the sidebar.
 
 ![Configure Submit Action](assets/thank-you-setting.png)
 
@@ -56,7 +56,7 @@ The **Submit to REST endpoint** submit option passes the data filled in the form
 
 As shown in the image below, `param1` and `param2` are passed as parameters with values copied from the **textbox** and **numericbox** fields for the next action.
 
-You can also **Enable POST request **and provide a URL to post the request. To submit data to the AEM server hosting the form, use a relative path corresponding to the root path of the AEM server. For example, /content/forms/af/SampleForm.html. To submit data to any other server, use absolute path.
+You can also **Enable POST request** and provide a URL to post the request. To submit data to the AEM server hosting the form, use a relative path corresponding to the root path of the AEM server. For example, /content/forms/af/SampleForm.html. To submit data to any other server, use absolute path.
 
 ![Configuring Rest Endpoint Submit Action](assets/action-config.png)
 
@@ -99,9 +99,9 @@ The **Send Email** submit action sends an email to one or more recipients on suc
 
 ## Send PDF via Email {#send-pdf-via-email}
 
-The **Send PDF via Email **submit action sends an email with a PDF containing form data, to one or more recipients on successful submission of the form.
+The **Send PDF via Email** submit action sends an email with a PDF containing form data, to one or more recipients on successful submission of the form.
 
-**Note:** *This submit action is available for XFA-based adaptive forms and XSD-based adaption forms that have the Document of Record template.*
+**Note:** This submit action is available for XFA-based adaptive forms and XSD-based adaption forms that have the Document of Record template.
 
 ## Invoke a forms workflow {#invoke-a-forms-workflow}
 
