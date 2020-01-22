@@ -1,8 +1,6 @@
 ---
 title: Applying Dynamic Media viewer presets
-seo-title: Applying Dynamic Media viewer presets
 description: Learn how to apply viewer presets in Dynamic Media
-seo-description: Learn how to apply viewer presets in Dynamic Media
 uuid: cebad000-2bda-4e62-a0d1-7155151daf6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

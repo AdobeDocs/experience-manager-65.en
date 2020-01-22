@@ -1,8 +1,6 @@
 ---
 title: Working with Dynamic Media
-seo-title: Working with Dynamic Media
 description: Learn how to use Dynamic Media to deliver assets for consumption on web, mobile, and social sites.
-seo-description: Learn how to use Dynamic Media to deliver assets for consumption on web, mobile, and social sites.
 uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

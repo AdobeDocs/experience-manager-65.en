@@ -1,8 +1,6 @@
 ---
 title: Troubleshooting Dynamic Media - Scene7 mode
-seo-title: Troubleshooting Dynamic Media - Scene7 mode
 description: Troubleshooting Dynamic Media in Scene7 runmode.
-seo-description: Troubleshooting Dynamic Media in Scene7 runmode.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
