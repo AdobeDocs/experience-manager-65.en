@@ -1,8 +1,6 @@
 ---
 title: Adding Dynamic Media Classic Features to your Page
-seo-title: Adding Dynamic Media Classic Features to your Page
 description: Learn how to add Dynamic Media Classic features and components to your AEM page.
-seo-description: Learn how to add Dynamic Media Classic features and components to your AEM page.
 uuid: aa5a4735-bfec-43b8-aec0-a0c32bff134f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

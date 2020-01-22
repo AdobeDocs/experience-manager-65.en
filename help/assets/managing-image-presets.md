@@ -1,8 +1,6 @@
 ---
 title: Managing Image Presets
-seo-title: Managing Image Presets
 description: Understand image presets and learn how to create, modify, and manage image presets
-seo-description: Understand image presets and learn how to create, modify, and manage image presets
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
