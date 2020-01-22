@@ -1,8 +1,6 @@
 ---
 title: Carousel Banners
-seo-title: Carousel Banners
 description: Learn how to work with carousel banners in Dynamic Media
-seo-description: Learn how to work with carousel banners in Dynamic Media
 uuid: 73684a08-d84d-4665-ab89-3a1bf88ac5dd
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

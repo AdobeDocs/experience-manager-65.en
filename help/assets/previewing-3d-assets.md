@@ -1,8 +1,6 @@
 ---
 title: Previewing 3D assets
-seo-title: Previewing 3D assets
 description: Learn how to preview 3D assets
-seo-description: Learn how to preview 3D assets
 contentOwner: Rick Brough
 docset: aem65
 
