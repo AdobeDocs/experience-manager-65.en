@@ -9,7 +9,7 @@ docset: aem65
 
 ---
 
-# Organize digital assets {#organize-digital-assets}
+# Organize your digital assets {#organize-digital-assets}
 
 All digital assets, metadata and content of Microsoft Office and PDF documents are extracted and made searchable. Search allows sophisticated filtering on assets and fully respects the proper permissions. Metadata is covered in detail in metadata in Digital Asset Management.
 
@@ -17,12 +17,10 @@ AEM Assets supports multiple ways of organizing content. You can organize them i
 
 ## Organize assets in folders {#organize-using-folders}
 
-The most basic way to organize assets is to save these in folders. It is analogous to organizing files in folders in our local filesystem. For more information about how to create and manage folders, see [Manage assets](managing-assets-touch-ui.md).
-
-The most basic way to organize assets is to save these in folders. It is analogous to organizing files in folders in our local filesystem. How you name files and folders, how you arrange sub-folders, and how you handle the files within these folders can have a significant impact on how those assets are processed. By using consistent and appropriate file and folder naming strategies, along with good metadata practice, you can make the most of your digital assets repository.
+The most basic way to organize assets is to save these in folders. It is analogous to organizing files in folders in our local filesystem. For more information about how to create and manage folders, see [Manage assets](managing-assets-touch-ui.md). How you name files and folders, how you arrange sub-folders, and how you handle the files within these folders can have a significant impact on how those assets are processed. By using consistent and appropriate file and folder naming strategies, along with good metadata practice, you can make the most of your digital assets repository.
 
 * In most cases, your digital assets repository is always growing. Therefore, it is important to formalize metadata use, folder structure, and file naming early in the content creation cycle.
-* Use folders only to impose a consistent storage structure for your digital assets. This consistency helps your process and manage your assets better.  For example, assets placed in the following types of folders will help you refine what [profiles to use for asset processing](processing-profiles.md):
+* Use folders only to impose a consistent storage structure for your digital assets. This consistency helps your process and manage your assets better. For example, assets placed in the following types of folders can help you use appropriate [profiles to use for asset processing](processing-profiles.md):
 
     * **Development folders** &ndash; contains digital assets that you are currently working on.
     * **Client folders** &ndash; contains digital assets based on clients or project names.
@@ -43,7 +41,7 @@ Using tags, as a metadata, you can easily search assets, create collections usin
 
 Adobe Experience Manager Assets uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, our artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
 
-For more information see,
+For more information, see the following articles:
 
 * [About tags in AEM](/help/sites-authoring/tags.md)
 * [Edit asset metadata](meta-edit.md)

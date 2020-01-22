@@ -1,12 +1,7 @@
 ---
 title: Assets sizing guide
 description: Best practices to determine efficient metrics to estimate the infrastructure and resources required to deploy AEM Assets.
-uuid: ed275e97-59d3-4945-9d1b-3351113f8ce5
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 68e9cd31-f1db-4678-840f-75bbced53402
-docset: aem65
-
 ---
 
 # Assets sizing guide {#assets-sizing-guide}
