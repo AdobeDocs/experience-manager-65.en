@@ -19,7 +19,7 @@ Some key highlights of this service pack release are:
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.10.3.
 * Added a configuration property to allow exporting Experience Fragments directly to user-defined workspaces for Adobe Target.
-* Assets users can search visually similar images. AEM displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [visual search](/help/assets/search-assets.md#visualsearch).
+* Assets users can search visually similar images. AEM displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [visual search](../assets/search-assets.md#visualsearch).
 
 * Enhanced the Connected Assets functionality to add support to fetch documents from remote DAM deployments. Site Authors can now search and filter supported documents types in Content Finder. The remote documents can be added to Download component on web pages. See [use connected assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
