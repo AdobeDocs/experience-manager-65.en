@@ -43,7 +43,7 @@ To add a Dynamic Media component/viewer to a page:
 
 [!UICONTROL Dynamic Media] and [!UICONTROL Interactive Media] are available in the [!UICONTROL Sidekick] under **[!UICONTROL Dynamic Media]**. You use the **[!UICONTROL Interactive Media]** component for any interactive assets such as interactive video, interactive images, or carousel sets. For all other dynamic media components, use the **[!UICONTROL Dynamic Media]** component.
 
-![chlimage_1-71](assets/chlimage_1-71.png)
+![chlimage_1-71](assets/chlimage_1-71a.png)
 
 >[!NOTE]
 >
@@ -67,11 +67,11 @@ The [!UICONTROL Dynamic Media] component lets you add dynamic images, including 
 
 You can also configure the viewer preset, image preset, or image format directly in the component. To make an image responsive you can either set the breakpoints or apply a responsive image preset.
 
-![chlimage_1-72](assets/chlimage_1-72.png)
+![chlimage_1-72](assets/chlimage_1-72a.png)
 
 You can edit the following Dynamic Media settings by clicking **[!UICONTROL Edit]** in the component and then clicking the **[!UICONTROL Dynamic Media Settings]** tab.
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![chlimage_1-73](assets/chlimage_1-73a.png)
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ This option is not available if you are viewing image sets, spin sets, or mixed 
 
 Use the [!UICONTROL Dynamic Media] component to add dynamic video to your web pages. When you edit the component you can choose to use a predefined video viewer preset for playing the video on the page.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
+![chlimage_1-74](assets/chlimage_1-74a.png)
 
 You can edit the following [!UICONTROL Dynamic Media Settings] by clicking **[!UICONTROL Edit]** in the component.
 
@@ -139,7 +139,7 @@ Interactive Media component is for those assets that have interactivity on them 
 
 The [!UICONTROL Interactive Media] component is smart &ndash; depending on whether you add an image or a video, you have various options. In addition, the viewer is responsive. That is, the size of the screen changes automatically based on screen size. All viewers are HTML5-based viewers.
 
-![chlimage_1-75](assets/chlimage_1-75.png)
+![chlimage_1-75](assets/chlimage_1-75a.png)
 
 You can edit the following **[!UICONTROL General]** settings by clicking **[!UICONTROL Edit]** in the component.
 

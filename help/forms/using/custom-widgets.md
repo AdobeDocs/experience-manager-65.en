@@ -102,4 +102,4 @@ where “identifier” is a jQuery CSS selector that represents a particular fie
 | All fields of type ‘type’(where type is NumericField, DateField, and so on.): |Identifier: "div.type" |For Timefield and DateTimeField, the type is textfield as these fields are not supported. |
 | All fields |Identifier: "div.field" |  |
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

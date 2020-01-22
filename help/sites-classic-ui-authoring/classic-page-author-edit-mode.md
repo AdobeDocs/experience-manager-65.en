@@ -259,6 +259,7 @@ The external application integration component (**External**) enables you to emb
 * **External**
 
     * **Target application**
+
       Specify the URL of the web application to be integrated; for example:
 
       ```
@@ -267,10 +268,12 @@ The external application integration component (**External**) enables you to emb
       ```
 
     * **Pass parameters**
+
       Check the box for parameters to be passed to the application when required.
 
-    * **Width and Height
-      **Define the size of the iframe
+    * **Width and Height**
+
+      Define the size of the iframe
 
 The external application is integrated into the paragraph system of the AEM page; for example, when using a Target application of `https://en.wikipedia.org/wiki/Main_Page`:
 

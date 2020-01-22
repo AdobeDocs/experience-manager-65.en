@@ -277,4 +277,4 @@ For details on the data publishing service and how to schedule this service, see
 * **[!UICONTROL Help]**: View the Help documentation on Process Reporting.
 * **[!UICONTROL Logout]**: Log out of Process Reporting
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

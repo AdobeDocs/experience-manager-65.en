@@ -21,13 +21,13 @@ You can configure the logger utility to start creating logs for HTML5 forms. The
 
 Perform the following steps to configure server-side logs:
 
-1. Go to https://[server]:[port]/system/console/configMgr. Locate and open the *Apace Sling logging logger configuration* option. A dialog box appears: 
+1. Go to https://[server]:[port]/system/console/configMgr. Locate and open the *Apace Sling logging logger configuration* option. A dialog box appears:
 
    ![ Apace Sling logging logger configuration option dialog box](assets/logconfig.png)
 
    Apace Sling logging logger configuration option
 
-1. Change the **Log Level** to **Debug**.  
+1. Change the **Log Level** to **Debug**.
 
 1. Specify name and path of the **Log File**.
 
@@ -55,90 +55,90 @@ The log configuration is made up of the log level and the logger category.
 #### Log Destination {#log-destination}
 
 <table>
- <tbody> 
-  <tr> 
-   <th><strong>Log Destination</strong></th> 
-   <th><strong>Description</strong></th> 
-  </tr> 
-  <tr> 
-   <td>1</td> 
-   <td>Logs are directed to the browser <strong>Console</strong></td> 
-  </tr> 
-  <tr> 
-   <td>2</td> 
-   <td>Logs are collected in a JavaScript object on client side and can be posted to <strong>Server</strong> </td> 
-  </tr> 
-  <tr> 
-   <td>3</td> 
-   <td>Both of the above options<br /> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th><strong>Log Destination</strong></th>
+   <th><strong>Description</strong></th>
+  </tr>
+  <tr>
+   <td>1</td>
+   <td>Logs are directed to the browser <strong>Console</strong></td>
+  </tr>
+  <tr>
+   <td>2</td>
+   <td>Logs are collected in a JavaScript object on client side and can be posted to <strong>Server</strong> </td>
+  </tr>
+  <tr>
+   <td>3</td>
+   <td>Both of the above options<br /> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Log Levels {#log-levels}
 
 <table>
- <tbody> 
-  <tr> 
-   <th>Log Level</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>0</td> 
-   <td>OFF<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>1</td> 
-   <td>FATAL<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>2</td> 
-   <td>ERROR<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>3</td> 
-   <td>WARN<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>4</td> 
-   <td>INFO<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>5</td> 
-   <td>DEBUG<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>6</td> 
-   <td>TRACE<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>7</td> 
-   <td>ALL<br type="_moz" /> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th>Log Level</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>0</td>
+   <td>OFF<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>1</td>
+   <td>FATAL<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>2</td>
+   <td>ERROR<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>3</td>
+   <td>WARN<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>4</td>
+   <td>INFO<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>5</td>
+   <td>DEBUG<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>6</td>
+   <td>TRACE<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>7</td>
+   <td>ALL<br type="_moz" /> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Logger Categories {#logger-categories}
 
 <table>
- <tbody> 
-  <tr> 
-   <th>Log Category</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>a</td> 
-   <td>xfa (Scripting engine-related logs)</td> 
-  </tr> 
-  <tr> 
-   <td>b</td> 
-   <td>xfaView (Layout engine-related logs)<br type="_moz" /> </td> 
-  </tr> 
-  <tr> 
-   <td>c</td> 
-   <td>xfaPerf (Performance-related logs)<br type="_moz" /> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th>Log Category</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>a</td>
+   <td>xfa (Scripting engine-related logs)</td>
+  </tr>
+  <tr>
+   <td>b</td>
+   <td>xfaView (Layout engine-related logs)<br type="_moz" /> </td>
+  </tr>
+  <tr>
+   <td>c</td>
+   <td>xfaPerf (Performance-related logs)<br type="_moz" /> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Log Configuration {#log-configuration}
@@ -150,23 +150,23 @@ In the log URL, the log configuration query string parameter is defined as follo
 For example:
 
 <table>
- <tbody> 
-  <tr> 
-   <th>Log Configuration</th> 
-   <th>Description</th> 
-  </tr> 
-  <tr> 
-   <td>2-a4-b5-c6<br type="_moz" /> </td> 
-   <td>Destination: Server<br /> xfa level: INFO<br /> xfaView level: DEBUG<br /> xfaPerf level: TRACE</td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <th>Log Configuration</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>2-a4-b5-c6<br type="_moz" /> </td>
+   <td>Destination: Server<br /> xfa level: INFO<br /> xfaView level: DEBUG<br /> xfaPerf level: TRACE</td>
+  </tr>
+ </tbody>
 </table>
 
 >[!NOTE]
 >
->The default log level for each log category a (xfa), b (xfaView), and c (xfaPerf) is 2 (ERROR). Accordingly, for log configuration: 2-b6, the log levels for different categories are:  
->a (xfa): 2 (default level ERROR)  
->b (xfaView): 6 (user specified TRACE)  
+>The default log level for each log category a (xfa), b (xfaView), and c (xfaPerf) is 2 (ERROR). Accordingly, for log configuration: 2-b6, the log levels for different categories are:
+>a (xfa): 2 (default level ERROR)
+>b (xfaView): 6 (user specified TRACE)
 >a (xfaPerf): 2 (default level ERROR)
 
 ### Enabling logging using Configuration Manager {#enabling-logging-using-configuration-manager}
@@ -189,12 +189,12 @@ By default, all the information is added to the error.log file at the /crx-repos
 
 To change the location and name of the log file:
 
-1. Log in to Configuration Manager as an administrator. The default URL of Configuration Manager is `https://[Server]:[Port]/system/console/configMgr`. 
+1. Log in to Configuration Manager as an administrator. The default URL of Configuration Manager is `https://[Server]:[Port]/system/console/configMgr`.
 1. Click **Apache Sling Logging Logger Configuration**. A dialog box appears.
 
    ![logconfig-1](assets/logconfig-1.png)
 
-1. Change the **Log Level** to Debug.  
+1. Change the **Log Level** to Debug.
 
 1. Specify path and name of the **Log File**.
 
@@ -204,4 +204,4 @@ To change the location and name of the log file:
 
 1. Change the **Logger** to **HTMLFormsPerfLogger** and click **Save**.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

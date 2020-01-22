@@ -17,20 +17,20 @@ You can use the (Deprecated) **Scribble Signature **component and **Signature St
 
 Both the components provide a window, as displayed below, to sign a form. You can also click the geolocation icon ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) to add geolocation to the signature.
 
-![Scribble sign dialog](assets/scribble-signature.png) 
+![Scribble sign dialog](assets/scribble-signature.png)
 
 ## Configure an adaptive form to use Scribble Signature {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Create a Document of Record option enabled or form template based adaptive form. For step-by-step information, see [Creating an adaptive form](../../forms/using/creating-adaptive-form.md).
 1. Drag-and-drop the **Scribble Signature** component from component browser to the adaptive form.
-1. Tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser and displays properties of the Scribble Signature component. Configure properties of the Scribble Signature component. 
+1. Tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser and displays properties of the Scribble Signature component. Configure properties of the Scribble Signature component.
 1. Drag-and-drop the Signature Step component from component browser to the adaptive form.
 
    >[!NOTE]
    >
    >The Signature Step component takes up full width available for the form. It is recommended to not have any other component on the section containing the Signature Step component.
 
-1. In the Content browser, tap **Form Container**, and tap the **Configure** ![](https://chl-author-preview.corp.adobe.com/content/dam/help/icons/Configure.png) icon. It opens properties browser and displays Adaptive Form container properties. Navigate to **Adaptive Form Container** &gt; **Electronic Signature** and deselect the **Enable Adobe Sign** option. Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
+1. In the Content browser, tap **Form Container**, and tap the **Configure** ![](/help/forms/using/assets/configure.png) icon. It opens properties browser and displays Adaptive Form container properties. Navigate to **Adaptive Form Container** &gt; **Electronic Signature** and deselect the **Enable Adobe Sign** option. Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
 
    >[!NOTE]
    >
@@ -38,12 +38,12 @@ Both the components provide a window, as displayed below, to sign a form. You ca
 
 1. Tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser and displays Signature step properties. Configure the following properties:
 
-    * **Element Name**: Specify name of the component.  
-    
+    * **Element Name**: Specify name of the component.
+
     * **Title:** Specify unique title of the component.
     * **Template message:** Specify the message to be displayed while the signature PDF is being loaded. Adobe Sign services take some time to prepare and load signature PDF.
-    * **Signing Service:** Select the **Scribble Signature** option.  
-    
+    * **Signing Service:** Select the **Scribble Signature** option.
+
     * **CSS Class**: Specify CSS class of the client library, if any. It is recommended to use [themes](../../forms/using/themes.md) and [in-line styles](../../forms/using/inline-style-adaptive-forms.md) instead of CSS Class.
 
    Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes. The Signature is configured sucessfully.
@@ -60,9 +60,9 @@ Both the components provide a window, as displayed below, to sign a form. You ca
 
    ![Scribble sign dialog](assets/scribblewidget.jpg)
 
-1. Click complete to finish the signing process. 
+1. Click complete to finish the signing process.
 
    ![Complete the signing process](assets/scribblecomplete.jpg)
 
-The signatures are added to the form and the form control moves to the next panel.  
+The signatures are added to the form and the form control moves to the next panel.
 

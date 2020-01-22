@@ -59,10 +59,10 @@ The following are the prerequisites for creating an Interactive Communication:
     * **[!UICONTROL Theme]** and **[!UICONTROL Select Theme*]**: Browse and select the theme to style the web channel of the Interactive Communication. For more information, see [Themes in AEM Forms](/help/forms/using/themes.md).
 
     * **[!UICONTROL Use Print As Master for Web Channel]**: Select this option to create the web channel in sync with the print channel. Using print channel as master for web channel ensures the content and data binding of the web channel is derived from the print channel and the changes made in the print channel are reflected in the web channel when you tap Synchronize. The authors are, however, allowed to break the inheritance for specific components in the web channel, as required. For more information, see [Synchronize Web channel with Print channel](../../forms/using/create-interactive-communication.md#synchronize).
-      If you select the **[!UICONTROL Use Print As Master for Web Channel]**option, you can select any of the following modes to generate Web channel:
+      If you select the **[!UICONTROL Use Print As Master for Web Channel]** option, you can select any of the following modes to generate Web channel:
 
         * **[!UICONTROL Auto layout]**: Select this mode to automatically generate placeholders, content, and data binding for Web channel from Print channel.
-        * **[!UICONTROL Manually organize]**: Select this mode to manually select and add Print channel elements to the Web channel using the master content available in the **[!UICONTROL Data Sources]** tab. For more information, see [Select Print channel elements to create Web channel content](https://chl-author-preview.corp.adobe.com/content/help/en/experience-manager/aem-beta/forms/create-interactive-communication.html#main-pars_header_1388725261).
+        * **[!UICONTROL Manually organize**: Select this mode to manually select and add Print channel elements to the Web channel using the master content available in the **[!UICONTROL Data Sources]** tab. For more information, see [Select Print channel elements to create Web channel content](#selectprintchannelelements).
 
    For more information on print channel and web channel, see [Print channel and web channel](/help/forms/using/web-channel-print-channel.md).
 
@@ -139,7 +139,7 @@ For more information on the Interactive Communication authoring interface, see [
 
    ![Unbound variable](assets/df_unbound_variable_new.png)
 
-   Tap the document fragment, tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to each data model object or variable to edit the properties.
+   Tap the document fragment, tap ![configure_icon](assets/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to each data model object or variable to edit the properties.
 
 1. To set up binding of variables, tap a variable and select ![configure_icon](assets/configure_icon.png) (Configure) and then set up the binding properties in the Properties panel in the sidebar.
 
@@ -181,7 +181,7 @@ For more information on the Interactive Communication authoring interface, see [
 
    ![webchannelassets](assets/webchannelassets.png)
 
-   Tap the document fragment, tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to each data model object or variable to edit the properties. In addition, for document fragments that have been [auto-generated](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) in Web channel using Print channel, use the ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/create-ad/CancelInheritance.png) (Cancel Inheritance) icon next to each data model object and variable to [cancel inheritance](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) and to be able to edit them.
+   Tap the document fragment, tap ![configure_icon](assets/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to each data model object or variable to edit the properties. In addition, for document fragments that have been [auto-generated](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) in Web channel using Print channel, use the ![](assets/cancelinheritance.png) (Cancel Inheritance) icon next to each data model object and variable to [cancel inheritance](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) and to be able to edit them.
 
 1. To add additional components in the Web channel, with the Web channel selected, tap **[!UICONTROL Components]**. Drag-and-drop components in the web channel of your Interactive Communication as required and proceed to configure them.
 
@@ -473,7 +473,7 @@ You can add button as a component to the web channel of the Interactive Communic
 To add button and define rules on it:
 
 1. Tap the root panel in the Web template and tap **+** to add the **Button** component to the Interactive Communication.
-1. Tap the button component and tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/aem-forms/6-2/edit-rules.png) to define rules on the tap of the button.
+1. Tap the button component and tap ![](assets/edit-rules.png) to define rules on the tap of the button.
 1. In the **When** section, select **clicked** from the state of the button drop-down list.
 1. In the **Then** section:
 
@@ -518,7 +518,7 @@ The authors are, however, allowed to break the inheritance for components in the
 If you select the **[!UICONTROL Use Print As Master for Web Channel]** option, you can select any of the following modes to generate Web channel:
 
 * **[!UICONTROL Auto layout]**: Select this mode to automatically generate placeholders, content, and data binding for Web channel from Print channel.
-* **[!UICONTROL Manually organize]**: Select this mode to manually select and add Print channel elements to the Web channel using the master content available in the Data Sources tab. For more information, see [Select Print channel elements to create Web channel content](https://chl-author-preview.corp.adobe.com/content/help/en/experience-manager/aem-beta/forms/create-interactive-communication.html#main-pars_header_1388725261).
+* **[!UICONTROL Manually organize]**: Select this mode to manually select and add Print channel elements to the Web channel using the master content available in the Data Sources tab. For more information, see [Select Print channel elements to create Web channel content](#selectprintchannelelements).
 
 ![Create IC options](assets/create_ic_options_updated_new.png)
 
