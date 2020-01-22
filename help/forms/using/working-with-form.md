@@ -19,7 +19,6 @@ The forms are downloaded on your app, and are available offline. For example, yo
 To sync your form in AEM Forms app:
 
 1. In author instance, select a form, and click **View Properties**.
-
 1. In the properties page, click **Advanced.**
 1. Under Advanced, enable option: **Sync with AEM Forms App**, and tap **Save**.
 
