@@ -22,7 +22,7 @@ To customize the metadata properties page, including adding, modifying, deleting
 
 >[!NOTE]
 >
->The bulk editing methods work for assets available in a folder or a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](/help/assets/search-assets.md#metadataupdates).
+>The bulk editing methods work for assets available in a folder or a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](search-assets.md#metadataupdates).
 
 ## Edit metadata properties of multiple assets {#editing-metadata-properties-of-multiple-assets}
 

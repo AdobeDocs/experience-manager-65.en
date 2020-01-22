@@ -52,7 +52,7 @@ Familiarize yourself with the search interface and the available actions.
 
 ### Dynamic search facets {#dynamicfacets}
 
-You can discover the desired assets faster from the search results page using the dynamically updated number of expected search results in the search facets. The expected number of assets are updated even before applying the search filter. Seeing the expected count against the filter helps you navigate through the search results quickly and efficiently. For more info, see [Search assets in AEM](/help/assets/search-assets.md).
+You can discover the desired assets faster from the search results page using the dynamically updated number of expected search results in the search facets. The expected number of assets are updated even before applying the search filter. Seeing the expected count against the filter helps you navigate through the search results quickly and efficiently. For more info, see [Search assets in AEM](search-assets.md).
 
 ![See the approximate number of assets without filtering search results in search facets.](assets/asset_search_results_in_facets_filters.png)
 <br>

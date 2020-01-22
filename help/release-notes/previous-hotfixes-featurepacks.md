@@ -21,7 +21,7 @@ Some key highlights of this service pack release are:
 * Added a configuration property to allow exporting Experience Fragments directly to user-defined workspaces for Adobe Target.
 * Assets users can search visually similar images. AEM displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [visual search](../assets/search-assets.md#visualsearch).
 
-* Enhanced the Connected Assets functionality to add support to fetch documents from remote DAM deployments. Site Authors can now search and filter supported documents types in Content Finder. The remote documents can be added to Download component on web pages. See [use connected assets](/help/assets/use-assets-across-connected-assets-instances.md).
+* Enhanced the Connected Assets functionality to add support to fetch documents from remote DAM deployments. Site Authors can now search and filter supported documents types in Content Finder. The remote documents can be added to Download component on web pages. See [use connected assets](../assets/use-assets-across-connected-assets-instances.md).
 
 * EnhanceDocument type filters with more MIME types to support multi-valued options.
 * Introduced an external Reprocess workflow for multi-resource support.
@@ -37,7 +37,7 @@ Some key highlights of this service pack release are:
 
 * Enhanced the Connected Assets functionality to add support to fetch documents from remote DAM deployments. Site Authors can now search and filter supported documents types in Content Finder. The remote documents can be added to Download component on web pages. Hotfix for CQ-4270245. See [use connected assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* Assets users can search visually similar images. AEM displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [visual search](/help/assets/search-assets.md#visualsearch).
+* Assets users can search visually similar images. AEM displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [visual search](../assets/search-assets.md#visualsearch).
 
 **Fixes**
 
