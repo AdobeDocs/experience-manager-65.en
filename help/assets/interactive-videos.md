@@ -1,8 +1,6 @@
 ---
 title: Interactive Videos
-seo-title: Interactive Videos
 description: Learn how to work with interactive video and shoppable video in Dynamic Media
-seo-description: Learn how to work with interactive video and shoppable video in Dynamic Media
 uuid: c3ff6839-fff5-4709-8163-5c4245b80e6d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

@@ -1,8 +1,6 @@
 ---
 title: Publishing Dynamic Media Assets
-seo-title: Publishing Dynamic Media Assets
 description: How to publish dynamic media assets
-seo-description: How to publish dynamic media assets
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
