@@ -1,10 +1,7 @@
 ---
 title: Extend Asset Editor
 description: Learn how to extend the capabilities of Asset Editor using custom components.
-uuid: b2e6701d-9fbf-4b3f-a175-67aab05340d3
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 90dc9025-ad40-47ea-9e17-af8c93ef650c
 ---
 
 # Extend Asset Editor {#extending-asset-editor}

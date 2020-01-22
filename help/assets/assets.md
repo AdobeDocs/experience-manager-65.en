@@ -1,12 +1,7 @@
 ---
 title: About AEM Assets
 description: Learn what is digital asset management, its use cases, and Adobe's AEM Asset offering
-uuid: f0f21a32-0b05-47b6-b160-a2e2f4889019
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: ce2cbff1-0b04-47a3-9241-8dad77794701
-docset: aem65
-
 ---
 
 # Administering Assets {#administering-assets}
