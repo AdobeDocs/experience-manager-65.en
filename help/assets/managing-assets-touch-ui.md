@@ -56,7 +56,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
     * On the toolbar, tap the **[!UICONTROL Create]** icon. Then, on the menu, then tap **[!UICONTROL Files]**. You can rename the file in the presented dialog if needed.
     * In a browser that supports HTML5, drag the assets directly on the Assets user interface. The dialog to rename file is not displayed.
 
-   ![create_menu](assets/create_menu.png)
+   ![create option in aem](assets/create-options.png)
 
    To select multiple files, press the Ctrl or Command key and select the assets in the file picker dialog. When using an iPad, you can select only one file at a time.
 
@@ -307,7 +307,7 @@ Select one ZIP archive at a time, click **[!UICONTROL Extract Archive]**, and se
 
 After the extraction is complete, AEM notifies you in the notification area. While AEM extracts the ZIP, you can go back to your work without interrupting the extraction.
 
-![Notification of ZIP extraction](assets/zip_extract_notification.png)
+![Notification of ZIP extraction](assets/Zip-extraction-notification.png)
 
 Some limitations of the feature are:
 
@@ -773,11 +773,11 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **[!UICONTROL My Preferences]**.
 
-   ![chlimage_1-237](assets/chlimage_1-33.png)
+   ![Select user profile icon and then My Preeferences to open User Preferences](assets/User-profile-preferences.png)
 
    Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click/tap **[!UICONTROL Accept]**.
 
-   ![chlimage_1-238](assets/chlimage_1-34.png)
+   ![Select annotation color in User Preferences to set User Persona color](assets/Annotation-color.png)
 
 >[!NOTE]
 >
@@ -829,7 +829,7 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
 
 1. From the Print dialog, choose the position you want the annotations/review status to be displayed on the PDF. For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. It is selected by default.
 
-   ![chlimage_1-245](assets/chlimage_1-41.png)
+   ![Select position of annotation/ review status to display on PDF from Print dialog](assets/Print-annotation-dialog.png)
 
    You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 

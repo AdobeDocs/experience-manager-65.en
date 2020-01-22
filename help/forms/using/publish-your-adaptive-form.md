@@ -32,7 +32,7 @@ You have the following methods to publish an adaptive form:
 
 ## Publish the adaptive form as an AEM Page {#publish-the-adaptive-form-as-an-aem-page}
 
-When the adaptive form is published as an AEM Page, then the entire web page contains only published form. You can use the URL of the adaptive form to link it from another web page. To publish the **shipping-address-add-update-form **adaptive form as an AEM Page:
+When the adaptive form is published as an AEM Page, then the entire web page contains only published form. You can use the URL of the adaptive form to link it from another web page. To publish the **shipping-address-add-update-form** adaptive form as an AEM Page:
 
 1. Log in to AEM Forms author instance and locate the shipping-address-add-update-form adaptive form in the AEM Forms UI.
    `https://localhost:4502/aem/forms.html/content/dam/formsanddocuments`

@@ -45,11 +45,11 @@ For example, the root page of the Italian language copy of the sample hierarchy 
 
 1. From the Assets console, click/tap **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
 
-   ![chlimage_1-120](assets/chlimage_1-120.png)
+   ![Create folder](assets/Create-folder.png)
 
 1. In the **[!UICONTROL Name]** field type the country code in the format of `<language-code>`.
 
-   ![chlimage_1-121](assets/chlimage_1-121.png)
+   ![Add language code in folder](assets/Add-language-code-in-folder.png)
 
 1. Click or tap **[!UICONTROL Create]**. The language root is created in the Assets console.
 

@@ -117,7 +117,7 @@ The following properties are available to configure a pooled connection service.
 
 The JDBC Connections Pool service is a factory. Therefore, if you use a `sling:OsgiConfig` node to configure the connection service, the name of the node must include the factory service PID followed by *`-alias`*. The alias that you use must be unique for all configuration nodess for that PID. An example node name is `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
 
-![chlimage_1-7](assets/chlimage_1-7.png)
+![chlimage_1-7](assets/chlimage_1-7a.png)
 
 ### Connecting to the Database {#connecting-to-the-database}
 

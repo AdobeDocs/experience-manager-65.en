@@ -23,7 +23,7 @@ The following step-by-step workflow description is designed to help you get up a
 
 >[!NOTE]
 >
->Before you work with video in Dynamic Media, make sure that your AEM admininistrator has already enabled and configured Dynamic Media Cloud Services in either Dynamic Media - Scene7 mode or Dynamic Media - Hybrid mode.
+>Before you work with video in Dynamic Media, make sure that your AEM administrator has already enabled and configured Dynamic Media Cloud Services in either Dynamic Media - Scene7 mode or Dynamic Media - Hybrid mode.
 >
 >* See [Configuring Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configuring Dynamic Media - Scene7 mode and [Troubleshooting Dynamic Media - Scene7 mode.](/help/assets/troubleshoot-dms7.md)
 >
@@ -40,7 +40,7 @@ The following step-by-step workflow description is designed to help you get up a
     * Associate the video processing profile to one or more folders where you are going to upload your master videos.
 
         * [Applying a video profile to folders](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-        * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/best-practices-for-file-management.md).
+        * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/organize-assets.md).
         * Learn more about [Organizing digital assets](/help/assets/organize-assets.md).
 
     * Upload your master videos to the folders. You can upload video files that are up to 20 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
@@ -55,7 +55,7 @@ The following step-by-step workflow description is designed to help you get up a
     * Organize, browse, and search video assets
 
         * [Organizing digital assets](/help/assets/organize-assets.md)
-          Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/best-practices-for-file-management.md)
+          Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/organize-assets.md)
 
         * [Searching video assets](/help/assets/search-assets.md#custompredicates) or [Searching assets](/help/assets/managing-assets-touch-ui.md#search-assets)
 
@@ -497,7 +497,7 @@ To configure Google Cloud settings:
 
    For example, `https://1a2b3c.mycompany.com:4321`
 
-   **Note**: The path examples above is intended for illustration purposes only.
+   **Note**: The path example above is intended for illustration purposes only.
 
    ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
 

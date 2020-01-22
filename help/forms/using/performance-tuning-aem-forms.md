@@ -32,7 +32,7 @@ The available options for caching are as follows:
 The default cache settings for AEM Forms may not be good enough to achieve optimal performance. Therefore, it is recommended to use the following settings:
 
 * **Cache Strategy**: Aggressive
-* **Cache size **(in terms of number of forms): As required
+* **Cache size** (in terms of number of forms): As required
 * **Max Object Size**: As required
 
 ![Mobile Forms Configurations](assets/snap.png)

@@ -6,7 +6,6 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: a13e4d9c-3c3b-4b34-ab48-091756e94a36
 docset: aem65
-
 ---
 
 # Share asset via a link {#asset-link-sharing}
@@ -30,9 +29,9 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    An asset link is auto-created in the **[!UICONTROL Share Link]** field. Copy this link and share it with the users. The default expiration time for the link is one day.
 
-   ![Dialog with the Link Share](assets/chlimage_1-542.png)
+   ![Dialog with the Link Share](assets/Link-sharing-dialog-box.png)
 
-   Dialog with the Link Share
+   *Figure:Dialog with the Link Share*
 
    Alternatively, proceed to perform steps 3-7 of this procedure to add email recipients, configure the expiration time for the link, and send it from the dialog.
 
@@ -40,7 +39,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >
    >If you want to share links from your AEM Author instance to external entities, ensure that you only expose the following URLs (which are used for link sharing) for `GET` requests only. Block other URLs to ensure security of AEM Author.
    >
-   >* http://&lt;aem_server&gt;:&lt;port&gt;/     linkshare.html
+   >* http://&lt;aem_server&gt;:&lt;port&gt;/linkshare.html
    >* http://&lt;aem_server&gt;:&lt;port&gt;/linksharepreview.html
    >* http://&lt;aem_server&gt;:&lt;port&gt;/linkexpired.html
 
@@ -62,7 +61,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    To enable emails to be sent out to users, configure the SMTP server details in [Day CQ Mail Service](#configmailservice).
 
-   ![Share links to assets directly from the Link Sharing dialog](assets/chlimage_1-543.png)
+   ![Share links to assets directly from the Link Sharing dialog](assets/Asset-Sharing-LinkShareDialog.png)
 
    Share links to assets directly from the Link Sharing dialog
 
@@ -74,7 +73,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 1. In the **[!UICONTROL Message]** box, enter an optional message.
 1. In the **[!UICONTROL Expiration]** field, specify an expiration date and time for the link using the date picker. By default, the expiration date is set for a week from the date you share the link.
 
-   ![chlimage_1-259](assets/chlimage_1-544.png)
+   ![Set expiration date of shared link](assets/Set-shared-link-expiration.png)
 
 1. To let users download the original image along with the renditions, select **[!UICONTROL Allow download of original file]**.
 

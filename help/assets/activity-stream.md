@@ -1,12 +1,7 @@
 ---
 title: Activity stream in timeline
 description: This article describes how to display activity logs for assets on the timeline.
-uuid: 62c76c08-1def-445e-8db7-1a8e1cab4f6c
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 16f9b8a6-5e4f-46d7-8d4f-dabd11eacbab
-docset: aem65
-
 ---
 
 # Activity stream in timeline {#activity-stream-in-timeline}

@@ -104,7 +104,6 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Use demo package for asset insights](touch-ui-using-demo-package-for-asset-insights.md)
     + [Assets file format best practices](assets-file-format-best-practices.md)
     + [Best practices to monitor assets](assets-monitoring-best-practices.md)
-    + [Best practices to organize your digital assets to use profiles](best-practices-for-file-management.md)
     + [Camera Raw support](camera-raw.md)
     + [Detect MIME type of assets using Apache Tika](detect-asset-mime-type-with-tika.md)
     + [Imaging Transcoding Library](imaging-transcoding-library.md)

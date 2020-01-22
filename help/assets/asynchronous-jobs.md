@@ -1,12 +1,7 @@
 ---
 title: Asynchronous operations
 description: AEM Assets optimizes performance by asynchronously completing some resource-intensive tasks.
-uuid: b5ea91a1-a4a5-4ae7-8da1-fdc0c3c144ba
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 7f11bbb9-f4af-47a4-bb21-93cfa3054a88
-docset: aem65
-
 ---
 
 # Asynchronous operations {#asynchronous-operations}
@@ -37,7 +32,7 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 1. Tap/click the AEM logo, and go **[!UICONTROL Assets]** &gt; **[!UICONTROL Jobs]**.
 1. In the **[!UICONTROL Async Job Status]** page, review the details of the operations.
 
-    ![job_status](assets/AsyncOperation-status.png)
+    ![Status and details of Asynchronous operations](assets/AsyncOperation-status.png)
 
    To ascertain the progress of a particular operation, see the value in the **[!UICONTROL Status]** column. Depending upon the progress, one of the following statuses is displayed:
 

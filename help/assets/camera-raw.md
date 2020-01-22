@@ -1,23 +1,18 @@
 ---
 title: Camera Raw support
-description: Learn how to enable Camera Raw support in Adobe Experience Manager (AEM) Assets.
-uuid: b0463513-ca1f-41b4-adaf-040cdc1ddd26
+description: Learn how to enable Camera Raw support in Adobe Experience Manager Assets.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: e5f3dfb7-5a9f-4ee0-8ec1-fcb50bcb76e3
-docset: aem65
-
 ---
 
 # Support for Camera Raw processing {#camera-raw-support}
 
-You can enable the Camera Raw support to process raw file formats, such as CR2, NEF, and RAF, and render the images in JPEG format. The Camera Raw functionality is supported in AEM via a package available at [https://blogs.adobe.com/lightroomjournal/2017/03/acr-9-9-now-available.html](https://blogs.adobe.com/lightroomjournal/2017/03/acr-9-9-now-available.html).
+You can enable the Camera Raw support to process raw file formats, such as CR2, NEF, and RAF, and render the images in JPEG format. The functionality is supported in Adobe Experience Manager Assets using the [Camera Raw package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) available via Package Share.
 
 >[!NOTE]
 >
 >The functionality supports only JPEG renditions. It is supported on Windows 64 bit, Mac OS, and RHEL 7.x.
 
-To enable Camera Raw support in Adobe Experience Manager (AEM) Assets, follow these steps:
+To enable Camera Raw support in Adobe Experience Manager Assets, follow these steps:
 
 1. Download the [Camera Raw package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from the Package Share.
 1. Access `https://[aem_server]:[port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
@@ -73,4 +68,4 @@ After saving the edits to a Camera Raw image, a new rendition `AdjustedPreview.j
 
 >[!NOTE]
 >
->The Camera Raw library has limitations around the total pixels it can process at a time. Currently, it can process a maximum of 1073741824 (1024 x 1024 x 1024) pixels.
+>The Camera Raw library has limitations around the total pixels it can process at a time. Currently, it can process a maximum of 65000 pixels on the long side of a file or 512 MP whatever criteria is encountered first.
