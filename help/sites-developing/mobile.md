@@ -38,14 +38,12 @@ To create a mobile site, proceed as follows:
 1. Create the page template:
 
     * Set the `sling:resourceType` property to the newly created page component.
-
     * Set the `allowedPaths` property.
 
 1. Create the design page for the site.
 1. Create the site root page below the `/content` node:
 
     * Set the `cq:allowedTemplates` property.
-
     * Set the `cq:designPath` property.
 
 1. In the page properties of the site root page, set the device groups in the **Mobile** tab.
@@ -353,7 +351,6 @@ AEM supports device client-side detection based on `BrowserMap`. `BrowserMap` is
 `BrowserMap` provides you with three strategies you can use to provide an alternate website to a client, which are employed in the following order:
 
 1. [Alternate links](#providing-alternate-links)
-
 1. [Device Group Specific URL](#definingdevicegroupspecificurl)
 1. [Selector-based URL](#defining-selector-based-urls)
 
@@ -368,9 +365,7 @@ The `PageVariantsProvider` OSGi service is capable of generating alternate links
 The `cq:siteVariant` node needs to have the following properties:
 
 * `cq:childNodesMapTo` - determines to which attribute of the link element the child nodes will be mapped; it is recommended to organize the content of your website in such a way so that the children of the root node represent the root for a language variant of your global website (e.g. `/content/mysite/en`, `/content/mysite/de`), in which case the value of the `cq:childNodesMapTo` should be `hreflang`;
-
 * `cq:variantDomain` - indicates what `Externalizer` domain will be used to generate the page variants absolute URLs; if this value is not set then the page variants will be generated using relative links;
-
 * `cq:variantFamily` - indicates to which family of websites this site belongs; multiple device-specific representations of the same website should belong to the same family;
 * `media` - stores the values of the media attribute of the link element; it is recommended to use the name of the `BrowserMap` registered `DeviceGroups`, so that the `BrowserMap` library can automatically forward the clients to the correct variant of the website.
 
@@ -545,7 +540,6 @@ AEM processes a request issued by a mobile device that belongs to the touch devi
 1. AEM determines whether the site of the requested page is a mobile site (by checking whether the first level page `/content/geometrixx_mobile` extends the mobile page component). If yes:
 1. AEM looks up the device capabilities based on the User-Agent in the request header.
 1. AEM maps the device capabilities to the device group and sets `touch` as the device group selector.
-
 1. AEM redirects the request to `https://localhost:4503/content/geometrixx_mobile/en/products.touch.html.`
 1. AEM sends the response to the iPad:
 
@@ -564,7 +558,6 @@ To view the statistics:
 
 1. Go to the **Tools** console.
 1. Open the **Device Statistics** page below **Tools** &gt; **Mobile**.
-
 1. Click the link to view the statistics for a specific year, month or day.
 
 The **Statistics** page looks as follows:

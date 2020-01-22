@@ -1,12 +1,7 @@
 ---
 title: Create and configure Asset Editor pages
 description: Learn how to create custom Asset Editor pages and edit multiple assets simultaneously.
-uuid: 3bc650de-2392-4df9-a13c-04ce7a537d25
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 264b1473-30f3-4cea-a9b0-89184063e15d
-docset: aem65
-
 ---
 
 # Create and configure Asset Editor pages {#creating-and-configuring-asset-editor-pages}
