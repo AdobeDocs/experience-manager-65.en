@@ -398,8 +398,9 @@ Customers are advised to review if they make use of the feature/capability in th
 
 ## Known Issues {#known-issues}
 
-The following errors and warning may occur during installation of AEM 6.5.x.x and can be safely ignored:
+The following errors and warning messages may display during installation of AEM 6.5.x.x and can be safely ignored:
 
+* If **Connected assets configuration** wizard returns a 404 error message after installing AEM 6.5.3.0, manually reinstall the **cq-remotedam-client-ui-content** and **cq-remotedam-client-ui-components** packages using the Package Manager.
 * “When the Target integration is configured in AEM using the Target Standard API (IMS authentication), then exporting Experience Fragments to Target results in wrong offer types getting created. Instead of type “Experience Fragment”/source “Adobe Experience Manager,” Target creates several offers with type “HTML”/source “Adobe Target Classic.”
 * com.adobe.granite.maintenance.impl.TaskScheduler: No maintenance windows found at granite/operations/maintenance.
 * Adaptive Form server-side validation fails when aggregate functions like SUM, MAX, MIN, etc. are used. CQ-4274424
