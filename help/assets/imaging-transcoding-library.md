@@ -1,17 +1,10 @@
 ---
 title: Imaging Transcoding Library
 description: Learn how to configure and use Adobe's Imaging Transcoding Library, an image processing solution that can perform core image-handling functions, including encoding, transcoding, image resampling, and image resizing.
-uuid: fb0e67a4-ef88-4c08-b1d9-248bb6990ade
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: beecbadd-d31f-4bc6-a99a-491ca579c8d8
-docset: aem65
-
 ---
 
 # Imaging Transcoding Library {#imaging-transcoding-library}
-
-<!-- TBD: Add UICONTROL tags. Run spellcheck. -->
 
 Adobe's Imaging Transcoding Library is a proprietary image processing solution that can perform core image-handling functions, including:
 
@@ -72,6 +65,8 @@ You can configure the following options for the `-resize` `parameter:`
 
 ## Configure Imaging Transcoding Library {#configuring-imaging-transcoding-library}
 
+To configure ITL processing, create a configuration file and update the workflow to execute it.
+
 ### Create configuration file for extracted bundle {#create-conf-file}
 
 To configure the library, create a .conf file to indicate the libraries using the following steps. You need administrator or root permissions.
@@ -80,64 +75,63 @@ To configure the library, create a .conf file to indicate the libraries using th
 
 1. To know a bundle id for `com.day.cq.dam.cq-dam-switchengine`, log in to the Web Console and tap **[!UICONTROL OSGi > Bundles]**. Alternatively, to open the bundles console, access `https://[aem_server:[port]/system/console/bundles/` URL. Locate `com.day.cq.dam.cq-dam-switchengine` bundle and its ID.
 
-1. Ensure that all the required libraries are extracted, by checking the folder using the command `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, where the folder name is constructed using the bundle ID. For example, the command will be `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` if bundle id is `588`.
+1. Ensure that all the required libraries are extracted, by checking the folder using the command `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, where the folder name is constructed using the bundle ID. For example, the command is `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` if bundle id is `588`.
 
-1. Create `SWitchEngineLibs.conf` file to point to the libraries using the following commands:
+1. Create `SWitchEngineLibs.conf` file to link to the library.
 
-    ```
+    ```shell
     cd `/etc/ld.so.conf.d`
     touch SWitchEngineLibs.conf
     vi SWitchEngineLibs.conf
     ```
 
-   Add `/aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` path to the conf file using `cat SWitchEngineLibs.conf` command.
+1. Add `/aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` path to the conf file using `cat SWitchEngineLibs.conf` command.
 
 1. Execute `ldconfig` command to create the necessary links and cache.
 
 1. In the account that is used to start AEM, edit `.bash_profile` file. Add `LD_LIBRARY_PATH` by adding the following.
 
-   ```
+   ```shell
    LD_LIBRARY_PATH=.
    export LD_LIBRARY_PATH
    ```
 
-   To ensure that the value of the path is set to `.`, use `echo $LD_LIBRARY_PATH` command. The output should just be `.`. If the value is not set to "." restart the session.
+1. To ensure that the value of the path is set to `.`, use `echo $LD_LIBRARY_PATH` command. The output should just be `.`. If the value is not set to `.`, restart the session.
 
-### Configure DAM Update Assets workflow {#configure-dam-asset-update-workflow}
+### Configure DAM Update Asset workflow {#configure-dam-asset-update-workflow}
+
+Update the [!UICONTROL DAM Update Asset] workflow to use the library for processing images.
 
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Workflow > Models]**.
 
 1. From the **[!UICONTROL Workflow Models]** page, open the **[!UICONTROL DAM Update Asset]** workflow model in edit mode.
 
 1. Open the **[!UICONTROL Process Thumbnails]** workflow process step. In the **[!UICONTROL Thumbnails]** tab, add the MIME types for which you want to skip the default thumbnail generation process in the **[!UICONTROL Skip Mime Types]** list.
-For example, if you want to create thumbnails for a TIFF image using Imaging Transcoding Library, specify `skip:image/tiff` in the **[!UICONTROL Skip Mime Types]** field.
+For example, if you want to create thumbnails for a TIFF image using Imaging Transcoding Library, specify `image/tiff` in the **[!UICONTROL Skip Mime Types]** field.
 
 1. In the **[!UICONTROL Web Enabled Image]** tab, add the MIME types for which you want to skip the default web rendition generation process in **[!UICONTROL Skip List]**. For example, if you skipped MIME type `image/tiff` in the above step, add `image/tiff` to the skip list.
 
 1. Open the **[!UICONTROL EPS thumbnails (powered by ImageMagick)]** step, navigate to the **[!UICONTROL Arguments]** tab. In the **[!UICONTROL Mime Types]** list, add the MIME types you want Imaging Transcoding Library to process. For example, if you skipped the MIME type `image/tiff` in the above step, add `image/jpeg` to the **[!UICONTROL Mime Types]** list.
 
-1. Remove the default commands if any exists.
+1. Remove the default commands if any exist.
 
 1. Toggle side panel and from the list of steps add **[!UICONTROL SWitchEngine Handler]**.
 
-1. Add commands to the [!UICONTROL SwitchEngine Handler] based on your custom requirements. Tune the parameters of commands that you specify to meet your requirements. For example, if you want to preserve the color profile of your JPEG image, add the following commands to the **Commands** list:
+1. Add commands to the [!UICONTROL SwitchEngine Handler] based on your custom requirements. Tune the parameters of commands that you specify to meet your requirements. For example, if you want to preserve the color profile of your JPEG image, add the following commands to the **[!UICONTROL Commands]** list:
 
     * `SWitchEngine -input ${file} -destMime PNG -resize 48 -output ${directory}cq5dam.thumbnail.48.48.png`
     * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
     * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
     * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
 
-   ![chlimage_1-63](assets/chlimage_1-199.png)
+   ![chlimage](assets/chlimage_1-199.png)
 
 1. (Optional) Generate thumbnails from an intermediate rendition using a single command. The intermediate rendition acts as source to generate static and web renditions. This method is faster than the earlier method. However, you cannot apply custom parameters to thumbnails using this method.
 
-   ![chlimage_1-64](assets/chlimage_1-200.png)
+   ![chlimage](assets/chlimage_1-200.png)
 
 1. To generate web renditions, configure parameters in the **[!UICONTROL Web-Enabled Image]** tab.
 
 1. Sync the updated [!UICONTROL DAM Update Asset] workflow model. Save the workflow.
-
-<!-- Hiding the screenshot for now.
-![web_enabled_imagetab](assets/web_enabled_imagetab.png) -->
 
 The verify the configuration, upload a TIFF image and monitor the error.log file. You will notice `INFO` messages with mentions of `SwitchEngineHandlingProcess execute: executing command line`. The logs mention the renditions generated. Once the workflow completes, you can view the new renditions in AEM.
