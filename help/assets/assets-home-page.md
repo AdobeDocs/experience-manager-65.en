@@ -1,10 +1,7 @@
 ---
 title: AEM Assets Home Page Experience
 description: Personalize the AEM Assets Home page for a rich welcome screen experience, including a snapshot of recent activities around assets.
-uuid: 787ebcc3-9c20-4e25-8ce5-ecba1b42d123
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: c7d6bac8-0897-4a5e-a286-823968dfb52e
 ---
 
 # AEM Assets Home Page Experience {#aem-assets-home-page-experience}

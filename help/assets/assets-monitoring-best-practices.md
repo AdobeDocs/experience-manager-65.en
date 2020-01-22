@@ -1,12 +1,7 @@
 ---
 title: Best practices to monitor AEM Assets deployment
 description: Best practices to monitor the environment and performance of your AEM instance after it is deployed.
-uuid: a7d63b42-c0b2-47a0-9bd4-df85dfe59313
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: fb1dd06d-3470-45cd-b3ba-6b4e9a2e1f3c
-docset: aem65
-
 ---
 
 # Best practices to monitor AEM Assets deployment {#assets-monitoring-best-practices}

@@ -1,12 +1,7 @@
 ---
 title: Reports about your digital assets
 description: Understand reports about your assets in AEM Assets that help your understand usage, activity, and sharing of your digital assets.
-uuid: 8984171b-799a-4587-9862-f4c7ce3f1a76
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 4f4438b8-e5c4-4a15-8def-a909cb2e1382
-docset: aem65
-
 ---
 
 # Asset Reports {#asset-reports}
