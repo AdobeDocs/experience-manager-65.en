@@ -233,8 +233,7 @@ To localize an adaptive form that contains adaptive form fragments, you need to 
 * When you republish an updated adaptive form fragment, the changes reflect in the published instances of the adaptive form in which the fragment is used.
 * Adaptive form containing the Verify component does not support anonymous users. Also, it is not reommended to use the Verify component in an adaptive form fragment.
 * (**Mac only**) To ensure that the form fragments functionality works perfectly in all the scenarios, add the following entry to the /private/etc/hosts file:
-  `127.0.0.1 <Host machine>`**
-  Host machine**: The Apple Mac machine on which AEM Forms is deployed.
+  `127.0.0.1 <Host machine>` **Host machine**: The Apple Mac machine on which AEM Forms is deployed.
 
 ## Reference Fragments {#reference-fragments}
 

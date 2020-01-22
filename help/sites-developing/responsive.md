@@ -27,7 +27,7 @@ Design your web pages so that they adapt to the client viewport in which they ar
 * Navigation: Device-specific tools are provided for accessing other pages.
 * Images: Serving image renditions that are appropriate for the client viewport. according to the window dimensions.
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+![chlimage_1-4](assets/chlimage_1-4a.png)
 
 Develop Adobe Experience Manager (AEM) applications that generate HTML5 pages that adapt to multiple window sizes and orientations. For example, the following ranges of viewport widths correspond with various device types and orientations
 
@@ -167,7 +167,7 @@ The JSP script generates the following HTML code that references the style sheet
 
 See previews of your pages in different viewport sizes to test the behavior of your responsive design. In **[!UICONTROL Preview]** mode, **[!UICONTROL Sidekick]** includes a **[!UICONTROL Devices]** drop-down menu that you use to select a device. When you select a device, the page changes to adapt to the viewport size.
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![chlimage_1-5](assets/chlimage_1-5a.png)
 
 To enable the device preview in **[!UICONTROL Sidekick]**, you must configure the page and the **[!UICONTROL MobileEmulatorProvider]** service. Another page configuration controls the list of devices that appears in the **[!UICONTROL Devices]** list.
 
@@ -329,7 +329,7 @@ To customize image rendering, you should understand the default AEM static image
 1. Image request: The web browser loads the page, and requests the image according to the src attribute of the img element.
 1. Image rendering: The image-rendering servlet returns the image to the web browser.
 
-![chlimage_1-6](assets/chlimage_1-6.png)
+![chlimage_1-6](assets/chlimage_1-6a.png)
 
 For example, the JSP of the Image component generates the following HTML element:
 
@@ -858,13 +858,13 @@ For each range of viewport widths that you are targeting, use a static page widt
 
 Use grids to scale content blocks to adapt to different viewport sizes. Content blocks span a specific number of columns. As column widths increase or decrease to fit different viewport sizes, the width of the content blocks increase or decrease accordingly. Scaling can support both large- and medium-sized viewports that are wide enough to accommodate the side-by-side placement of content blocks.
 
-![](do-not-localize/chlimage_1-1.png)
+![](do-not-localize/chlimage_1-1a.png)
 
 #### Repositioning content in the grid {#repositioning-content-in-the-grid}
 
 The size of content blocks can be constrained by a minimum width, beyond which scaling is no longer effective. For smaller viewports, the grid can be used to vertically distribute blocks of content rather than horizontally.
 
-![](do-not-localize/chlimage_1-2.png)
+![](do-not-localize/chlimage_1-2a.png)
 
 ### Designing the grid {#designing-the-grid}
 
@@ -949,7 +949,7 @@ Use the float style of the `.row-fluid` class to control whether the content blo
 
 Add the style to the `.row-fluid` selector inside each media query. Set the value according to the page layout that you are using for that media query. For example, the following diagram illustrates a row that distributes content horizontally for wide viewports, and vertically for narrow viewports.
 
-![](do-not-localize/chlimage_1-3.png)
+![](do-not-localize/chlimage_1-3a.png)
 
 The following CSS could implement this behavior:
 

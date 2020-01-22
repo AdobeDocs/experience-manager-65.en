@@ -1,10 +1,7 @@
 ---
 title: Assets network considerations and requirements
 description: Discusses network considerations when designing an AEM Assets deployment.
-uuid: 40171fba-8e57-4aee-a765-269877e77f2d
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 70258b2a-2196-4804-94de-9a530eff36b9
 ---
 
 # Assets network considerations {#assets-network-considerations}

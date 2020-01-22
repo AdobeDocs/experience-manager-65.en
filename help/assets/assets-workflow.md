@@ -1,12 +1,7 @@
 ---
 title: Applying Workflows to Assets
 description: Learn how to apply workflows to assets, folders, and collections in AEM Assets.
-uuid: ed02fd9c-6e3a-4c66-9d6c-92dc56304767
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 099c9842-ae13-4da7-92b7-61955a8483cb
-docset: aem65
-
 ---
 
 # Apply workflows to process assets {#applying-workflows-to-assets}

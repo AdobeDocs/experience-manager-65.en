@@ -1,12 +1,7 @@
 ---
 title: Asset templates
 description: Learn about Asset templates in AEM Assets and how to use asset templates to create marketing collateral.
-uuid: 26ee7c45-e8de-4ee1-a704-b5c7d2809654
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 9abb6816-b75d-4068-9c7d-e707e55224ec
-docset: aem65
-
 ---
 
 # Asset templates {#asset-templates}
