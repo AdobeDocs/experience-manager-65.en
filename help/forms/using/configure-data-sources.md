@@ -125,6 +125,8 @@ Do the following to configure RESTful services:
 
     * Select the authentication type — None, OAuth2.0, Basic Authentication, API Key, or Custom Authentication — to access the RESTful service, and accordingly provide details for authentication.
 
+    If you select **[!UICONTROL API Key]** as the authentication type, specify the value for the API key. The API key can be sent as a request header or as a query parameter. Select one of these options from the **[!UICONTROL Location]** drop-down list and specify the name of the header or the query parameter in the **[!UICONTROL Parameter Name]** field accordingly.
+
 1. Tap **[!UICONTROL Create]** to create the cloud configuration for the RESTful service.
 
 ## Configure SOAP web services {#configure-soap-web-services}
