@@ -1,8 +1,6 @@
 ---
 title: About managing Dynamic Media assets
-seo-title: About managing Dynamic Media assets
 description: Learn how to work with Dynamic Media assets
-seo-description: Learn how to work with Dynamic Media assets
 uuid: 9c7f9d4e-caab-434f-a1ae-eca16c883461
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
