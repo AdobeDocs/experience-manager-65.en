@@ -226,7 +226,7 @@ Execute the following steps to create a template for the Web channel in the **Cr
     1. Specify **Bill Details** in the Title field.
     1. Select **1** from the **Number of Columns** drop-down list.
 
-    1. Tap ![](/help/forms/using/assets/Done_Icon.png) to save the properties.
+    1. Tap ![](/help/forms/using/assets/done_icon.png) to save the properties.
 
    The name of the panel is updated to **Bill Details** in the content tree.
 
@@ -270,4 +270,4 @@ Based on the use case, you must include the **Pay Now** and **Subscribe** button
 
    ![Allowed components](assets/allowed_components_af_new.png)
 
-1. Tap ![](assets/Done_Icon.png) to save the properties.
+1. Tap ![](assets/done_icon.png) to save the properties.
