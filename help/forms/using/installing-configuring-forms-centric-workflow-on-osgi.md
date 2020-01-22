@@ -139,7 +139,7 @@ Perform the following steps on all the Author and Publish instances to whitelist
 
 1. Open AEM Configuration Manager in a browser window. The default URL is https://[server]:[port]/system/console/configMgr.
 1. Search and open **Deserialization Firewall Configuration**.
-1. Add the **sun.util.calendar **package to the **whitelist **field. Click Save.
+1. Add the **sun.util.calendar** package to the **whitelist** field. Click Save.
 1. Repeat steps 1-3 on all the Author and Publish instances.
 
 ### Optional post-installation configurations {#optional-post-installation-configurations}
@@ -158,7 +158,7 @@ Dispatcher is caching and load balancing tool for AEM. AEM Dispatcher also helps
 
 1. Configure the referrer filter service:
 
-   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is https://[server]:[port_number]/system/console/configMgr. In the **Configurations **menu, select the **Apache Sling Referrer Filter** option. In the Allow Hosts field, enter host name of the dispatcher to allow it as a referrer and click **Save**. The format of the entry is https://[server]:[port].
+   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is https://[server]:[port_number]/system/console/configMgr. In the **Configurations** menu, select the **Apache Sling Referrer Filter** option. In the Allow Hosts field, enter host name of the dispatcher to allow it as a referrer and click **Save**. The format of the entry is `https://[server]:[port]`.
 
 #### Configure Cache {#configure-cache}
 
@@ -169,7 +169,7 @@ Caching is a mechanism to shorten data access times, reduce latency, and improve
 
 Perform the following steps to configure the adaptive forms cache:
 
-1. Go to AEM web console configuration manager at https://[server]:[port]/system/console/configMgr.
+1. Go to AEM web console configuration manager at `https://[server]:[port]/system/console/configMgr`.
 1. Click **Adaptive Form Configuration Service** to edit its configuration values. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. The default value is 100. Click **Save**.
 
    >[!NOTE]

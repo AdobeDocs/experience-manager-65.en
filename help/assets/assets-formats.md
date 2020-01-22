@@ -1,11 +1,7 @@
 ---
 title: Assets supported formats
 description: List of file formats supported by AEM Assets and features supported for each format.
-uuid: 83f7a81d-fcb1-4d00-b0ab-372489108702
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: b2a99809-33fc-468c-8dfc-dd0982a3c901
-docset: aem65
 ---
 
 # Assets supported formats {#assets-supported-formats}

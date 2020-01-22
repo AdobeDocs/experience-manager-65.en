@@ -206,7 +206,7 @@ Aya needs to review some documents at home before she can complete the service r
 **User Instructions:**
 
 1. Check the “**I agree**” box.
-1. Click “Accept”.
+1. Click “**Accept**”.
 1. Scroll to the bottom of the reviewed document.
 1. Click on the highlighted yellow tab to sign the document.
 
@@ -334,11 +334,11 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
     1. This will open the web channel version of the same document.
 
-1. &#42;For a quick reference to PDF directly:
+1. For a quick reference to PDF directly:
 
    *https://&lt;aemserver&gt;:&lt;port&gt;/aem/formdetails.html/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook*
 
-1. &#42;For a quick reference to IC directly:
+1. For a quick reference to IC directly:
 
    *https://&lt;aemserver&gt;:&lt;port&gt;/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook/jcr:content?channel=web&mode=preview&wcmmode=disabled*
 

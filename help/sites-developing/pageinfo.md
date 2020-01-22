@@ -15,7 +15,7 @@ discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 
 To obtain the page information, send a request to the PageInfo servlet to obtain the page metadata in JSON format.
 
-The PageInfo servlet returns information about resources in the respository. The servlet is bound to the URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` and uses the `path` parameter to identify the resource. The following example URL returns information about the `/content/we-retail/us/en` node:
+The PageInfo servlet returns information about resources in the repository. The servlet is bound to the URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` and uses the `path` parameter to identify the resource. The following example URL returns information about the `/content/we-retail/us/en` node:
 
 ```shell
 http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retail/us/en
@@ -40,7 +40,7 @@ Page components can be associated with one or more `com.day.cq.wcm.api.PageInfoP
 1. The PageInfo servlet calls each PageInfoProvider that is associated with the component.
 1. The servlet aggregates the metadata that each PageInfoProvider returns and adds the metadata to the HTTP response in a JSON object.
 
-![chlimage_1-2](assets/chlimage_1-2.png)
+![chlimage_1-2](assets/chlimage_1-2a.png)
 
 >[!NOTE]
 >
@@ -598,7 +598,7 @@ public class PageUrlInfoProvider implements PageInfoProvider {
 
 The following example, in CRXDE Lite, shows the page component that is configured to use the PageUrlInfoProvider service:
 
-![chlimage_1-3](assets/chlimage_1-3.png)
+![chlimage_1-3](assets/chlimage_1-3a.png)
 
 The PageUrlInfoProvider service returns the following data for the `/content/we-retail/us/en` node:
 

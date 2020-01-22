@@ -61,11 +61,11 @@ See [Discover Sling in 15 minutes](https://sling.apache.org/documentation/gettin
 
 The following diagram explains Sling script resolution: it shows how to get from HTTP request to content node, from content node to resource type, from resource type to script and what scripting variables are available.
 
-![chlimage_1-84](assets/chlimage_1-84.png)
+![chlimage_1-84](assets/chlimage_1-97.png)
 
 The following diagram explains all the hidden, but powerful, request parameters you can use when dealing with the SlingPostServlet, the default handler for all POST requests that gives you endless options for creating, modifying, deleting, copying and moving nodes in the repository.
 
-![chlimage_1-85](assets/chlimage_1-85.png)
+![chlimage_1-85](assets/chlimage_1-98.png)
 
 ### Sling is Content Centric {#sling-is-content-centric}
 
@@ -123,7 +123,7 @@ Using these principles:
 
 The figure below illustrates the mechanism used, which will be discussed in more detail in the following sections.
 
-![chlimage_1-86](assets/chlimage_1-86.png)
+![chlimage_1-86](assets/chlimage_1-86a.png)
 
 With Sling, you specify which script renders a certain entity (by setting the `sling:resourceType` property in the JCR node). This mechanism offers more freedom than one in which the script accesses the data entities (as an SQL statement in a PHP script would do) as a resource can have several renditions.
 

@@ -1,15 +1,13 @@
 ---
 title: AEM and Creative Cloud integration best practices
 description: Best practices to integrate AEM with Adobe Creative Cloud to streamline asset transfer workflows and achieve maximum efficiency.
-uuid: 6d0d9f30-64ef-410c-b826-79e02a4ac6be
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: f3432607-7877-4c94-a678-97a5511a6e12
-docset: aem65
-
 ---
 
 # AEM and Creative Cloud integration best practices {#aem-and-creative-cloud-integration-best-practices}
+
+<!-- TBD: Backmerge with 6.4 article that's behind of this article in terms of content streamlining and structuring.
+-->
 
 Adobe Experience Manager Assets is a digital asset management (DAM) solution that can integrate with Adobe Creative Cloud to help DAM users work together with creative teams, streamlining collaboration in the content creation process.
 
@@ -19,7 +17,7 @@ Read on to know what integrations to pick between desktop and the enterprise-gra
 
 >[!NOTE]
 >
->AEM to Creative Cloud folder sharing is now deprecated and no longer covered below. Adobe recommend newer capabilities like Adobe Asset Link or AEM desktop app to provide creative users with access to the assets managed in AEM.
+>AEM to Creative Cloud folder sharing is deprecated and no longer covered in this guide. Adobe recommends using newer capabilities such as [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) or [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html) to provide creative user with access to assets managed in AEM.
 
 ## Collaboration needs of creatives, marketers, and DAM users {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
@@ -62,7 +60,6 @@ This article focuses primarily on the first two aspects of the collaboration nee
 To support asset distribution use cases, other solutions should be considered:
 
 * [Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) for a configurable, SaaS add-on to AEM Assets to publish assets.
-
 * Custom solutions are created based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) code base.
 * AEM [link share](/help/assets/link-sharing.md) to share assets ad hoc using links.
 * [AEM Assets web interface](/help/assets/managing-assets-touch-ui.md) with areas for external parties secured by AEM Access Control setup and with necessary IT / network configuration adjustments, giving these external users access to AEM.
@@ -216,3 +213,10 @@ Avoid using AEM desktop app to manage assets directly in the network share of AE
 #### Asset migration {#asset-migration}
 
 To plan and execute asset migrations from existing system to a new system or migration of large volume of assets stored on servers, see the [Migration Guide](/help/assets/assets-migration-guide.md). AEM desktop app and AEM to Creative Cloud integrations do not support such migrations. Due to the large volumes of assets to be ingested, and additional requirements around metadata mapping, transformation, and ingestion, migrations should be handled using different tools and approaches.
+
+>[!MORELIKETHIS]
+>
+>* [Adobe Asset Link](https://helpx.adobe.com/in/enterprise/using/adobe-asset-link.html)
+>* [AEM desktop app best practices](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
+>* [AEM Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
+>* [AEM and Adobe Stock integration](aem-assets-adobe-stock.md)
