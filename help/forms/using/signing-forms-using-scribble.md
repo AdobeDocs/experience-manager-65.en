@@ -30,7 +30,7 @@ Both the components provide a window, as displayed below, to sign a form. You ca
    >
    >The Signature Step component takes up full width available for the form. It is recommended to not have any other component on the section containing the Signature Step component.
 
-1. In the Content browser, tap **Form Container**, and tap the **Configure** ![](assets/Configure.png) icon. It opens properties browser and displays Adaptive Form container properties. Navigate to **Adaptive Form Container** &gt; **Electronic Signature** and deselect the **Enable Adobe Sign** option. Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
+1. In the Content browser, tap **Form Container**, and tap the **Configure** ![](/help/forms/using/assets/Configure.png) icon. It opens properties browser and displays Adaptive Form container properties. Navigate to **Adaptive Form Container** &gt; **Electronic Signature** and deselect the **Enable Adobe Sign** option. Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
 
    >[!NOTE]
    >
