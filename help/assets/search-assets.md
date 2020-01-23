@@ -7,7 +7,6 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
 docset: aem65
 mini-toc-levels: 1
-
 ---
 
 # Search assets in AEM {#search-assets-in-aem}
@@ -24,7 +23,7 @@ AEM supports the following use cases and this article describes the usage, conce
 | [Understand search results and behavior](#searchbehavior) | [Modify search facets](#searchfacets) | [Bulk metadata updates](#metadataupdates) |
 | [Search rank and boosting](#searchrank) | [Text extraction](#extracttextupload) | [Smart collections](#collections) |
 | [Advanced search: filtering and scope of search](#scope) | [Custom predicates](#custompredicates) | [Understand unexpected results and Troubleshoot](#troubleshoot-unexpected-search-results-and-issues) |
-| [Search from other solutions and apps](#beyondomnisearch):<ul><li>[Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Desktop app](#desktopapp)</li><li>[Adobe Stock images](#adobestock)</li><li>[Dynamic Media assets](#dynamicmedia)</li></ul> | | |
+| [Search from other solutions and apps](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[AEM desktop app](#desktopapp)</li><li>[Adobe Stock images](#adobestock)</li><li>[Dynamic Media assets](#dynamicmedia)</li></ul> | | |
 | [Asset selector/picker](#assetselector) | | |
 | [Limitations](#limitations) and [Tips](#tips) | | |
 | [Illustrated examples](#samples)| | |
@@ -66,7 +65,7 @@ At times, you may see some unexpected assets in the search results. For more inf
 
 AEM can search many file formats and the search filters can be customized to suit your business requirements. Contact your administrator to understand what search options are made available for your DAM repository and what restrictions your account has.
 
-### Results with and without Smart Tags {#withsmarttags}
+### Results with and without Enhanced Smart Tags {#withsmarttags}
 
 By default, AEM search combines the search terms with an AND clause. For example, consider searching for keywords woman running. Only the assets with both woman and running keywords in the metadata appear in the search results by default. The same behavior is retained when special characters (periods, underscores, or dashes) are used with the keywords. The following search queries return the same results:
 
