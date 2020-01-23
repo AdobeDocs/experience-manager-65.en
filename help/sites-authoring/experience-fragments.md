@@ -64,6 +64,97 @@ Experience Fragments should be used:
     * Sharing commerce-related content on [social media](/help/sites-developing/experience-fragments.md#social-variations) channels at scale
     * Making touchpoints transactional
 
+## Organizing your Experience Fragments {#organizing-your-experience-fragments}
+
+It is recommended to:
+* use folders to organize your Experience Fragments, 
+
+* [configure the allowed templates on these folders](#configure-allowed-templates-folder).
+
+Creating folders allows you to:
+
+* create a meaningful structure for your Experience Fragments; for example, according to classification
+
+  >[!NOTE]
+  >
+  >It is not necessary to align the structure of your Experience Fragments with the page structure of your site.
+
+* [allocate the allowed templates at the folder level](#configure-allowed-templates-folder)
+
+  >[!NOTE]
+  >
+  >You can use the [template editor](/help/sites-authoring/templates.md) to create your own template. 
+
+The WKND project structures some Experience Fragments according to `Contributors`. The structure used also illustrates how other features, such as Multi Site Management (including language copies), can be used. 
+
+See:
+
+`http://localhost:4502/aem/experience-fragments.html/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master`
+
+   ![Folders for Experience Fragments](/help/sites-authoring/assets/xf-folders.png)
+
+## Creating and Configuring a Folder for your Experience Fragments {#creating-and-configuring-a-folder-for-your-experience-fragments}
+
+To create and configure a folder for your Experience Fragments it is recommended to:
+
+1. [Create a folder](/help/sites-authoring/managing-pages.md#creating-a-new-folder).
+
+1. [Configure the allowed Experience Fragment templates for that folder](#configure-allowed-templates-folder).
+
+>[!NOTE]
+>
+>It is also possible to configure the [Allowed Templates for your instance](#configure-allowed-templates-instance), but this method is **not** recommended as the values can be overwritten upon upgrade.
+
+### Configure the Allowed Templates for your Folder {#configure-allowed-templates-folder}
+
+>[!NOTE]
+>
+>This is the recommended method for specifying the **Allowed Templates**, as the values will not be overwritten upon upgrade.
+
+1. Navigate to the required **Experience Fragments** folder.
+
+1. Select the folder, and then **Properties**.
+
+1. Specify the regular expression for retrieving the required templates in the **Allowed Templates** field.
+   
+   For example:
+   `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
+   
+   See:
+   `http://localhost:4502/mnt/overlay/cq/experience-fragments/content/experience-fragments/folderproperties.html/content/experience-fragments/wknd`
+
+   ![Experience Fragment Properties - Allowed Templates](/help/sites-authoring/assets/xf-folders-templates.png)
+
+   >[!NOTE]
+   >
+   >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
+
+1. Select **Save and Close**.
+
+### Configure the Allowed Templates for your Instance {#configure-allowed-templates-instance}
+
+>[!CAUTION]
+>
+>It is not recommended to change the **Allowed Templates** by this method, as the templates specified can be overwritten upon upgrade.
+>
+>Please use this dialog for information purposes only.
+
+1. Navigate to the required **Experience Fragments** console.
+
+1. Select **Configuration options**:
+
+   ![Configuration button](assets/ef-02.png)
+
+1. Specify the required templates in the **Configure Experience Fragments** dialog:
+
+   ![Configure Experience Fragments](assets/ef-01.png)
+
+   >[!NOTE]
+   >
+   >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
+
+1. Select **Save**.
+
 ## Creating an Experience Fragment {#creating-an-experience-fragment}
 
 To create an Experience Fragment:
@@ -72,21 +163,15 @@ To create an Experience Fragment:
 
    ![xf-01](assets/xf-01.png)
 
-1. Select **Create**. You can create **Folders** and/or **Experience Fragments**.
-
-   Creating folders allows you to create a meaningful structure for your Experience Fragments.
+1. Navigate to the required folder and select **Create**.
 
    ![xf-02](assets/xf-02.png)
 
-1. From the required folder, select **Create** then **Experience Fragment** to open the **Create Experience Fragment** wizard.
+1. Select **Experience Fragment** to open the **Create Experience Fragment** wizard.
 
    Select the required **Template**, then **Next**:
 
    ![xf-03](assets/xf-03.png)
-
-   >[!NOTE]
-   >
-   >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
 
 1. Enter the **Properties** for your **Experience Fragment**.
 
@@ -274,22 +359,3 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 By default, Experience Fragments are delivered in the HTML format. This can be used by both AEM and third party channels alike.
 
 For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.
-
-## Configuring Allowed Templates {#configuring-allowed-templates}
-
-1. Navigate to the required **Experience Fragments** folder.
-
-1. Select **Configuration options**:
-
-   ![ef-02](assets/ef-02.png)
-
-1. Specify the required templates in the **Configure Experience Fragments** dialog:
-
-   ![ef-01](assets/ef-01.png)
-
-   >[!NOTE]
-   >
-   >See [Templates for Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) for further details.
-
-1. Select **Save**.
-
