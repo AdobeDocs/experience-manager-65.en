@@ -358,4 +358,4 @@ Perform the following steps to customize Details task actions pop-up menu:
 * Locate the following text: `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
 * Replace the located text with the following text: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

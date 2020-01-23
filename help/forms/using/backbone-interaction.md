@@ -55,4 +55,4 @@ An example:
 1. Another view, task details view listens to this event from task model.
 1. Task details view then changes the task details template to display the rendered task (form, details, attachments, notes, and so on) to the user.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

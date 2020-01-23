@@ -132,7 +132,6 @@ The validate expression is used to validate the fields using the given expressio
 **Applies to**: fields
 
 **Return Type**: The expression returns a Boolean value, representing the validation status of the field. The value **false** represents that the field is invalid and **true** represents that the field is valid.
-
 **Example**: For a field representing postcode of UK, the validation expression is:
 
 (**this.value** && `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`

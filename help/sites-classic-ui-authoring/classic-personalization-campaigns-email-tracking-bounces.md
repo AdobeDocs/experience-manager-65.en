@@ -19,9 +19,9 @@ discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 >
 >The recommendation is to [leverage Adobe Campaign and its AEM integration](/help/sites-administering/campaign.md).
 
-When you send a newsletter to many users, there are usually some invalid emails adresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those adresses after the configured bounce counter is exceeded. By default, the bounce rate is set to 3 but is configurable.
+When you send a newsletter to many users, there are usually some invalid emails addresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those addresses after the configured bounce counter is exceeded. By default, the bounce rate is set to 3 but is configurable.
 
-To set AEM up to track bounced emails, you need to set up AEM to poll an existing mailbox where bounced emails are received (usually this is the "from" email address that you specify where you send the newsletter). AEM polls this inbox and imports all emails below the path specified in the polling configuration. A workflow is then triggered to search for the bounced email adresses within the users and updates the bounceCounter property value of the user accordingly. After the configured max bounces is exceeded, the user is removed from the newsletter list.
+To set AEM up to track bounced emails, you need to set up AEM to poll an existing mailbox where bounced emails are received (usually this is the "from" email address that you specify where you send the newsletter). AEM polls this inbox and imports all emails below the path specified in the polling configuration. A workflow is then triggered to search for the bounced email addresses within the users and updates the bounceCounter property value of the user accordingly. After the configured max bounces is exceeded, the user is removed from the newsletter list.
 
 ## Configuring the Feed Importer {#configuring-the-feed-importer}
 
@@ -33,7 +33,7 @@ To configure the feed importer for tracking bounced emails:
 
 1. Click **Add** to create a new configuration.
 
-   ![chlimage_1](assets/chlimage_1.png)
+   ![chlimage_1](assets/chlimage_1a.png)
 
 1. Add a new configuration by selecting the type and by adding information to the polling URL to configure the host and port. In addition, you need to add some mail and protocol-specific parameters to the URL query. Set the configuration to poll at least once a day.
 
@@ -82,7 +82,7 @@ To configure the newsletter service:
 
 1. Configure the service and save the changes when finished.
 
-   ![chlimage_1-1](assets/chlimage_1-1.png)
+   ![chlimage_1-1](assets/chlimage_1-1a.png)
 
    The following configurations can be set to adjust the behavior:
 
