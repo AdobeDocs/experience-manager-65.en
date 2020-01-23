@@ -625,11 +625,11 @@ CUGs are an extra way to restrict access to your assets. You can also configure 
 1. Publish the folder, and then try accessing it from the publish instance. A login screen is displayed.
 1. If you are a CUG member, enter your security credentials. The folder is displayed after AEM authenticates you.
 
-## Search assets {#search-assets}
+## Search assets {#assetsearch}
 
 Searching assets is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators.
 
-For simple, advanced, and custom searches to discover and use the most appropriate assets, see [search assets in AEM](/help/assets/search-assets.md).
+For simple, advanced, and custom searches to discover and use the most appropriate assets, see [search assets in AEM](search-assets.md).
 
 ## Quick actions {#quick-actions}
 
