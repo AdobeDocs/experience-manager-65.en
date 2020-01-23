@@ -18,7 +18,7 @@ Asset expiration is an effective way of enforcing license requirements for asset
 You can view the expiration status for an asset in the Assets console in both the Card and List views.
 
 ![expired_flag_card](assets/expired_flag_card.png)
-*Figure: In card view, a flag on the card indicates expired asset.*
+<br> *Figure: In card view, a flag on the card indicates expired asset.*
 
 **List view**
 
