@@ -44,19 +44,19 @@ Use the following steps to create a task to render and submit a letter in AEM Wo
 1. Drag the Start Point activity picker and configure it:
 
     1. In Presentation Data, select Use A CRX Asset.
-    
+
        ![useacrxasset](assets/useacrxasset.png)
 
     1. Browse for an asset. In the Select Form Asset dialog, the Letters tab lists all the letters on the server.
-    
+
        ![Letter tab](assets/letter_tab_new.png)
 
     1. Select the appropriate letter and click **OK**.
 
 1. Click Manage Action Profiles. The Manage Action Profile dialog appears. Ensure that the Render Process and Submit Process are appropriately selected.
-1. To open the letter with a data XML file, browse and select the appropriate data file in the Prepare Data Process. 
+1. To open the letter with a data XML file, browse and select the appropriate data file in the Prepare Data Process.
 1. Click OK.
-1. Define the variables for Start Point Output and Task Attachments. The defined variables will contain Start Point Output and Task Attachments data. 
+1. Define the variables for Start Point Output and Task Attachments. The defined variables will contain Start Point Output and Task Attachments data.
 1. (Optional) To add another user in the workflow, drag an activity picker, configure it, and assign it to a user. Write a custom wrapper (sample given below) or download and install the DSC (given below) to extact Letter template, Start Point Output, and task Attachment.
 
    A sample custom wrapper is as listed below:
@@ -66,35 +66,35 @@ Use the following steps to create a task to render and submit a letter in AEM Wo
    try {
    if(dataXML == null)
    throw new Exception("dataXML is missing");
-   
+
    CoreService coreService = getRemoteCoreService();
    if (coreService == null)
    throw new Exception("Unable to retrive service. Please verify connection details.");
    Map<String, Object> result = coreService.getLetterInstanceInfo(IOUtils.toString(dataXML.getInputStream(), "UTF-8"));
    LetterInstanceInfo letterInstanceInfo = new LetterInstanceInfo();
-   
+
    List<Document> attachmentDocs = new ArrayList<Document>();
    List<byte[]> attachments = (List<byte[]>)result.get(CoreService.ATTACHMENT_KEY);
    if (attachments != null){
    for (byte[] attachment : attachments)
    { attachmentDocs.add(new Document(attachment)); }
-   
+
    }
    letterInstanceInfo.setLetterAttachments(attachmentDocs);
-   
+
    byte[] updateLayout = (byte[])result.get(CoreService.LAYOUT_TEMPLATE_KEY);
    if (updateLayout != null)
    { letterInstanceInfo.setLetterTemplate(new Document(updateLayout)); }
-   
+
    else
    { throw new Exception("template bytes missing while getting Letter instance Info."); }
-   
+
    return letterInstanceInfo;
    } catch (Exception e)
    { throw new Exception(e); }
-   
+
    }
-   
+
    ```
 
    [Get File](assets/dscsample.zip)
@@ -114,4 +114,4 @@ Use the following steps to create a task to render and submit a letter in AEM Wo
    >
    >The Submit button is not enabled until all the required variables in the letter are filled in.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

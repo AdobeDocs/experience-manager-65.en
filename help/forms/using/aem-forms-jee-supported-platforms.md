@@ -731,4 +731,4 @@ Adobe reserves the right to change the third-party reference platforms supported
 
 Additional information for third-party patches can also be found by searching the Adobe Enterprise Support site for knowledgebase articles related to your product.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)
