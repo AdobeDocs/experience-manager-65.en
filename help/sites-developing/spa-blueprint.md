@@ -16,6 +16,10 @@ docset: aem65
 
 To enable the author to use the AEM SPA Editor to edit the content of an SPA, there are requirements that the SPA must fulfill, which are described in this document.
 
+>[!NOTE]
+>
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
+
 ## Introduction {#introduction}
 
 This document describes the general contract that any SPA framework should fulfill (i.e. the kind of AEM support layer) in order to implement editable SPA components within AEM.

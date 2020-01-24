@@ -19,6 +19,10 @@ Single page applications (SPAs) can offer compelling experiences for website use
 
 The SPA Editor offers a comprehensive solution for supporting SPAs within AEM. This article walks through using a basic SPA application for authoring and shows how it relates to the underlying AEM SPA Editor.
 
+>[!NOTE]
+>
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
+
 ## Introduction {#introduction}
 
 ### Article Objective {#article-objective}
