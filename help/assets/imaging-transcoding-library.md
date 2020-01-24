@@ -24,17 +24,13 @@ In addition to supporting a wide range of file formats and profiles, Imaging Tra
 * **High throughput:** The response time is lower and throughput is consistently higher than ImageMagick. Therefore, Imaging Transcoding Library should decrease the wait time for users and the cost of hosting.
 * **Scale better with concurrent load:** Imaging Transcoding Library performs optimally under concurrent load conditions. It provides high throughput with optimum CPU performance, memory usage, and low response time, which helps reduce the cost of hosting.
 
-## Supported MIME types {#supported-mime-types}
-
-See [supported MIME types article](assets-formats.md#supported-image-transcoding-library), for a list of formats that ITL supports.
-
 ## Supported platforms {#supported-platforms}
 
 Imaging Transcoding Library is available only for RHEL 7 and CentOS 7 distributions.
 
 >[!NOTE]
 >
-> Mac OS and other *nix distributions (for example, Debian and Ubuntu) are not supported. Currently, RHEL 7 and CentOS 7 are supported for Linux distros.
+>Mac OS and other *nix distributions (for example, Debian and Ubuntu) are not supported.
 
 ## Usage {#usage}
 
@@ -50,7 +46,7 @@ The command line arguments for Imaging Transcoding Library can include the follo
  -resize
 ```
 
-You can configure the following options for the `-resize` `parameter:`
+You can configure the following options for the `-resize` parameter:
 
 * `X`: `Works similar to AEM. For example -resize 319.`
 * `WxH`: `Aspect Ratio will not be maintained, For example -resize 319X319.`
@@ -135,3 +131,7 @@ For example, if you want to create thumbnails for a TIFF image using Imaging Tra
 1. Sync the updated [!UICONTROL DAM Update Asset] workflow model. Save the workflow.
 
 The verify the configuration, upload a TIFF image and monitor the error.log file. You will notice `INFO` messages with mentions of `SwitchEngineHandlingProcess execute: executing command line`. The logs mention the renditions generated. Once the workflow completes, you can view the new renditions in AEM.
+
+>[!MORELIKETHIS]
+>
+>* [Supported MIME types article](assets-formats.md#supported-image-transcoding-library)

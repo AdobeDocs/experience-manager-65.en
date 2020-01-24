@@ -21,7 +21,7 @@ You can view the status of asynchronous jobs from the **[!UICONTROL Async Job St
 
 >[!NOTE]
 >
->By default, jobs in AEM Assets run in parallel. If N is the number of CPU cores, N/2 jobs can run in parallel, by default. To use custom settings for the job queue, modify the **Async Operation Default Queue** configuration from the web console. For more information, see [Queue Configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
+>By default, jobs in AEM Assets run in parallel. If N is the number of CPU cores, N/2 jobs can run in parallel, by default. To use custom settings for the job queue, modify the **[!UICONTROL Async Operation Default Queue]** configuration from the web console. For more information, see [queue configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
 ## Monitor the status of asynchronous operations {#monitoring-the-status-of-asynchronous-operations}
 
@@ -29,7 +29,7 @@ Whenever AEM Assets processes an operation asynchronously, you receive a notific
 
 To view the status of the asynchronous operations in detail, navigate to the **[!UICONTROL Async Job Status]** page.
 
-1. Tap/click the AEM logo, and go **[!UICONTROL Assets]** &gt; **[!UICONTROL Jobs]**.
+1. Tap/click the AEM logo, and go **[!UICONTROL Operations]** &gt; **[!UICONTROL Jobs]**.
 1. In the **[!UICONTROL Async Job Status]** page, review the details of the operations.
 
     ![Status and details of Asynchronous operations](assets/AsyncOperation-status.png)
@@ -73,8 +73,6 @@ You can modify the schedule for the purge job and the duration for which details
 1. Specify the threshold number of days after which completed jobs are deleted and the maximum number of jobs for which details are retained in history.
 
    ![Configuration to schedule the purging of asynchronous jobs](assets/configmgr_purge_asyncjobs.png)
-
-   Configuration to schedule the purging of asynchronous jobs
 
 1. Save the changes.
 

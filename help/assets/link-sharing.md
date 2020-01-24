@@ -14,7 +14,7 @@ Adobe Experience Manager (AEM) Assets lets you share assets, folders, and collec
 
 >[!NOTE]
 >
->You require Edit ACL permission on the folder/asset you want to share as a link.
+>You require Edit ACL permission on the folder or the asset that you want to share as a link.
 
 ## Share assets {#sharelink}
 
@@ -45,7 +45,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    >[!NOTE]
    >
-   >If a shared asset is moved to a different location, its link stops working. Re-create the link and reshare with the users.
+   >If a shared asset is moved to a different location, its link stops working. Re-create the link and re-share with the users.
 
 1. From the web console, open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against each:
 
@@ -102,13 +102,11 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
 1. To view the assets you shared as links, go to the Assets UI and tap the Experience Manager logo. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
 1. From the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
-1. To un-share an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar.
+1. To un-share an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar. A confirmation message follows. The entry for the asset is removed from the list.
 
-   A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
+## Configure Day CQ Mail Service {#configmailservice}
 
-## Configure Day CQ mail service {#configmailservice}
-
-1. Tap the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. On the Experience Manager home page, navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
 1. Tap **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
@@ -119,15 +117,15 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    ![chlimage_1-263](assets/chlimage_1-548.png)
 
-1. Click/tap **Save**.
+1. Click/tap **[!UICONTROL Save]**.
 
 ## Configure maximum data size {#maxdatasize}
 
-When you download assets from the link shared using the Link Sharing feature, AEM compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, configure the maximum size using the **Max Content Size (uncompressed)** parameter for `Day CQ DAM Adhoc Asset Share Proxy Servlet` in Configuration Manager. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
+When you download assets from the link shared using the Link Sharing feature, AEM compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, configure the maximum size using the **[!UICONTROL Max Content Size (uncompressed)]** parameter for [!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet] in Configuration Manager. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
 
-1. Click/Tap the AEM logo and then go to **Tools** &gt; **Operations** &gt; **Web Console**.
-1. From the web console, locate the **Day CQ DAM Adhoc Asset Share Proxy Servlet** configuration.
-1. Open the **Day CQ DAM Adhoc Asset Share Proxy Servlet** configuration in edit mode, and modify the value of the **Max Content Size (uncompressed)** parameter.
+1. Click/Tap the AEM logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. From the Web Console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
+1. Open the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
 
    ![chlimage_1-264](assets/chlimage_1-549.png)
 
