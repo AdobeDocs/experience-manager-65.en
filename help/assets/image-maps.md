@@ -1,10 +1,7 @@
 ---
 title: Add image maps with hyperlinks to digital images
 description: Learn how to add image map with hyperlinks to an image.
-uuid: 83694f01-5e3d-445b-921b-c06562086a00
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: da4157a7-4a24-446f-8136-171add5ca96f
 ---
 
 # Add image maps {#adding-image-maps}

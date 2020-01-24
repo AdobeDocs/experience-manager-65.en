@@ -14,7 +14,7 @@ Before actually performing any of the steps in this methodology, please review a
 
 >[!NOTE]
 >
->The following asset migration tools are not part of AEM and are not supported by Adobe Support:
+>The following asset migration tools are not part of AEM and are not supported by Adobe:
 >
 >* ACS AEM Tools Tag Maker
 >* ACS AEM Tools CSV Asset Importer
@@ -113,21 +113,17 @@ While not nearly as common, sometimes you need to migrate large amounts of data 
 
 In this case, your assets are already populated with metadata and renditions are already generated. You can simply focus on moving assets from one instance to another. When migrating between AEM instances, you perform the following steps:
 
-1. Disable workflows. Because you are migrating renditions along with our assets, you want to disable the workflow launchers for DAM Update Asset.
+1. Disable workflows: Because you are migrating renditions along with our assets, you want to disable the workflow launchers for DAM Update Asset.
 
-1. Migrate tags. Because you already have tags loaded in the source AEM instance, you can build them in a content package and install the package on the target instance.
+1. Migrate tags: Because you already have tags loaded in the source AEM instance, you can build them in a content package and install the package on the target instance.
 
-1. Migrate assets.
-
-   There are two tools that are recommended for moving assets from one AEM instance to another:
+1. Migrate assets: There are two tools that are recommended for moving assets from one AEM instance to another:
 
     * **Vault Remote Copy** or vlt rcp, allows you to use vlt across a network. You can specify a source and destination directory and vlt downloads all repository data from one instance and loads it into the other. Vlt rcp is documented at [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
     * **Grabbit** is an open-source content synchronization tool that was developed by Time Warner Cable for their AEM implementation. Because it uses continuous data streams, in comparison to vlt rcp, it has a lower latency and claims a speed improvement of two to ten times faster than vlt rcp. Grabbit also supports synchronization of delta content only, which allows it to sync changes after an initial migration pass has been completed.
 
-1. Activate assets. Follow the instructions for [activating assets](#activating-assets) documented for the initial migration to AEM.
+1. Activate assets: Follow the instructions for [activating assets](#activating-assets) documented for the initial migration to AEM.
 
-1. Clone publish. As with a new migration, loading a single publish instance and cloning it is more efficient than activating the content on both nodes. See [Cloning Publish.](#cloning-publish)
+1. Clone publish: As with a new migration, loading a single publish instance and cloning it is more efficient than activating the content on both nodes. See [Cloning Publish.](#cloning-publish)
 
-1. Enabling workflows.
-
-   After you have completed migration, re-enable the launchers for the DAM Update Asset workflows to support rendition generation and metadata extraction for ongoing day-to-day system usage.
+1. Enable workflows: After you have completed migration, re-enable the launchers for the DAM Update Asset workflows to support rendition generation and metadata extraction for ongoing day-to-day system usage.

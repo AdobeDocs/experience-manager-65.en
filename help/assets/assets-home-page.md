@@ -33,7 +33,7 @@ The Assets home page is disabled by default. To enable it, perform the following
 
    ![Enable assets home page on User Preferences dialog](assets/Annotation-color.png)
 
-After enabling the Assets Home page, navigate to the Assets user interface either from the Navigation page or access it directly from the URL `https://<Server Name>:<Port>/aem/assetshome.html/content/dam`.
+After enabling the Assets Home page, navigate to the Assets user interface either from the Navigation page or access it directly from the URL `https://[aem_server]:[port]/aem/assetshome.html/content/dam`.
 
 ![configure experience link on Assets user interface](assets/config-experience-link.png)
 

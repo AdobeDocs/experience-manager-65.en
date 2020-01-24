@@ -1,13 +1,10 @@
 ---
 title: Digital Rights Management in Assets
 description: Learn how to manage asset expiration states and information for licensed assets in AEM.
-uuid: 3df3a25d-551b-46ad-9398-883736d530ec
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 63dd7d4a-c97e-4949-a4d1-3861e1248ff3
 ---
 
-# Digital Rights Management for digial assets {#digital-rights-management-in-assets}
+# Digital Rights Management for digital assets {#digital-rights-management-in-assets}
 
 Digital assets are often associated with a license, which specifies their terms and duration of use. Because Adobe Experience Manager (AEM) Assets is fully integrated with the AEM platform, you can efficiently manage asset expiration information and asset states. You can also associate licensing information with assets.
 
@@ -166,7 +163,7 @@ An asset is considered protected if either of these conditions are fulfilled:
 
 >[!NOTE]
 >
->The location `/etc/dam/drm/licences` used for storing licenses in earlier releases of AEM is deprecated.
+>The location `/etc/dam/drm/licenses` used for storing licenses in earlier releases of AEM is deprecated.
 >
 >If you create or modify licence pages, or port them from previous AEM releases, Adobe recommends that you store them under `/apps/settings/dam/drm/licenses` or `/conf/&ast;/settings/dam/drm/licenses`.
 

@@ -1,10 +1,7 @@
 ---
 title: Review folder assets and collections
 description: Set up review workflows for assets within a folder or a collection and share it with reviewers or creative partners to seek feedback.
-uuid: 60e137ec-ee0b-42cc-908d-2a7ab229893a
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 93455c0c-c3da-4d8c-8e43-933a5fd08770
 ---
 
 # Review folder assets and collections {#review-folder-assets-and-collections}
@@ -19,7 +16,7 @@ After you share the assets, reviewers can approve or reject them. Notifications 
 
 After the reviewer completes the review (approves or rejects assets), you receive a review completion notification.
 
-## Creating a review task for folders {#creating-a-review-task-for-folders}
+## Create a review task for folders {#creating-a-review-task-for-folders}
 
 1. From the Assets user interface, select the folder for which you want to create a review task.
 1. From the toolbar, tap **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, tap/click **[!UICONTROL More]** and then select the option.
@@ -57,17 +54,17 @@ After the reviewer completes the review (approves or rejects assets), you receiv
    ![review_task](assets/review_task.png)
 
 1. Tap **[!UICONTROL Complete]** from the toolbar. In the dialog, enter a comment and tap/click  **[!UICONTROL Complete]** to confirm.
-1. Navigate to the Assets UI, and open the folder. The approval status icons for the assets appear in both the Card and List views.
+1. Navigate to the Assets user interface and open the folder. The approval status icons for the assets appear in card view and list view.
 
    **Card view**
 
-   ![chlimage_1-404](assets/chlimage_1-404.png)
+   ![Review status as seen in card view](assets/chlimage_1-404.png)
 
    **List view**
 
-   ![review_status_listview](assets/review_status_listview.png)
+   ![Review status as seen in list view](assets/review_status_listview.png)
 
-## Creating a review task for collections {#creating-a-review-task-for-collections}
+## Create a review task for collections {#creating-a-review-task-for-collections}
 
 1. From the Collections page, select the collection for which you want to create a review task.
 1. From the toolbar, tap **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, tap **[!UICONTROL More]** and then select the option.
