@@ -95,11 +95,15 @@ To create an experience fragment template that is detected by the **Create Exper
        `experience-fragments`
        This allows users to create experience fragments in /content/experience-fragments as the `cq:allowedTemplates` property of this folder includes all the templates that have names beginning with `experience-fragment`. Customers can update this property to include their own naming scheme or template locations.
 
+1. [Allowed templates](/help/sites-authoring/experience-fragments.md#configuring-allowed-templates) can be configured in the Experience Fragments console.
+<!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
+-->
 
->[!NOTE]
+<!-- >[!NOTE]
 >
 >[Allowed templates](/help/sites-authoring/experience-fragments.md#configuring-allowed-templates) can be configured in the Experience Fragments console.
+-->
 
 ## Components for Experience Fragments {#components-for-experience-fragments}
 
