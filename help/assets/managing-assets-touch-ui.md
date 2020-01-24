@@ -1,13 +1,8 @@
 ---
 title: Manage your digital assets using AEM Assets
 description: Learn the asset management tasks like upload, download, edit, search, delete, annotate, and version your digital assets.
-uuid: 7ee746f1-bbca-4bce-82e7-fed9fa9e1170
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 83a825ff-5c3d-4e2c-a265-eead090a5984
-docset: aem65
 mini-toc-levels: 1
-
 ---
 
 # Manage your digital assets {#managing-assets-with-the-touch-optimized-ui}
@@ -84,7 +79,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    If you upload an asset with the same name as that of an asset already available at the location where you are uploading the asset, a warning dialog is displayed.
 
-   You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotations, croppings, and so on) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with the number 1 appended to its name.
+   You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotate or crop) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with number `1` appended to its name.
 
    ![chlimage_1-213](assets/chlimage_1-7.png)
 
@@ -203,7 +198,7 @@ When uploading image files, including AI, EPS, and PSD files, you can take the f
 | Unsharp Masking | | Lets you fine-tune a sharpening filter effect on the final downsampled image, controlling the intensity of the effect, the radius of the effect (as measured in pixels), and a threshold of contrast that is ignored.<br> This effect uses the same options as Photoshop’s Unsharp Mask filter. Contrary to what the name suggests, Unsharp Mask is a sharpening filter. Under Unsharp Masking, set the options you want. Setting options are described in the following: |
 | | Amount | Controls the amount of contrast that is applied to edge pixels.<br> Think of it as the intensity of the effect. The main difference between the amount values of Unsharp Mask in Dynamic Media and the amount values in Adobe Photoshop, is that Photoshop has an amount range of 1% to 500%. Whereas, in Dynamic Media, the value range is 0.0 to 5.0. A value of 5.0 is the rough equivalent of 500% in Photoshop; a value of 0.9 is the equivalent of 90%, and so on. |
 | | Radius | Controls the radius of the effect. The value range is 0-250.<br> The effect is run on all pixels in an image and radiates out from all pixels in all directions. The radius is measured in pixels. For example, to get a similar sharpening effect for a 2000 x 2000 pixel image and 500 x 500 pixel image, you would set a radius of two pixels on the 2000 x 2000 pixel image and a radius value of one pixel on the 500 x 500 pixel image. A larger value is used for an image that has more pixels. |
-| | Threshold | Threshold is a range of contrast that is ignored when the Unsharp Mask filter is applied. It is important so that no "noise" is introduced to an image when this filter is used. The value range is 0-255, which is the number of brightness steps in a grayscale image. 0=black, 128=50% gray and 255=white.<br> For example, a threshold value of 12 ignores slight variations is skin tone brightness to avoid adding noise, but still add edge contrast to contrasty areas such as where eyelashes meet skin.<br> For example, if you have a photo of someone’s face, the Unsharp Mask affects the contrasty parts of the image, such as where eyelashes and skin meet to create an obvious area of contrast, and the smooth skin itself. Even the smoothest skin exhibits subtle changes in brightness values. If you do not use a threshold value, the filter accentuates these subtle changes in skin pixels. In turn, a noisy and undesirable effect is created while contrast on the eyelashes is increased, enhancing sharpness.<br> To avoid this issue, a threshold value is introduced that tells the filter to ignore pixels that do not change contrast dramatically, like smooth skin.<br> In the zipper graphic shown earlier, notice the texture next to the zippers. Image noise is exhibited because the threshold values were too low to suppress the noise. |
+| | Threshold | Threshold is a range of contrast that is ignored when the Unsharp Mask filter is applied. It is important so that no "noise" is introduced to an image when this filter is used. The value range is 0-255, which is the number of brightness steps in a grayscale image. 0=black, 128=50% gray and 255=white.<br> For example, a threshold value of 12 ignores slight variations is skin tone brightness to avoid adding noise, but still add edge contrast to areas such as where eyelashes meet skin.<br> For example, if you have a photo of someone’s face, the Unsharp Mask affects the parts of the image, such as where eyelashes and skin meet to create an obvious area of contrast, and the smooth skin itself. Even the smoothest skin exhibits subtle changes in brightness values. If you do not use a threshold value, the filter accentuates these subtle changes in skin pixels. In turn, a noisy and undesirable effect is created while contrast on the eyelashes is increased, enhancing sharpness.<br> To avoid this issue, a threshold value is introduced that tells the filter to ignore pixels that do not change contrast dramatically, like smooth skin.<br> In the zipper graphic shown earlier, notice the texture next to the zippers. Image noise is exhibited because the threshold values were too low to suppress the noise. |
 | | Monochrome | Select to unsharp-mask image brightness (intensity).<br> Deselect to unsharp-mask each color component separately. |
 | Knockout Background | | Automatically removes the background of an image when you upload it. This technique is useful to draw attention to a particular object and make it stand out from a busy background. Select to enable or “turn on” the Knockout Background feature and the following sub-options: |
 | | Corner | Required.<br> The corner of the image that is used to define the background color to knockout.<br> You can choose from **Upper Left**, **Bottom Left**, **Upper Right**, or **Bottom Right**. |
@@ -477,13 +472,13 @@ The other properties and metadata information is retained. A partial copy is not
 
 1. Select a rendition to either view or delete the rendition.
 
-   **Deleting a rendition**
+   **Delete a rendition**
 
    Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap/click the **[!UICONTROL Delete Rendition]** icon from the toolbar.
 
-   ![delete_renditionicon](assets/delete_renditionicon.png)
+   ![Option to delete a rendition](assets/delete_renditionicon.png)
 
-   **Uploading a new rendition**
+   **Upload a new rendition**
 
    Navigate to the asset details page for the asset, and tap/click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
@@ -507,22 +502,7 @@ The other properties and metadata information is retained. A partial copy is not
    >
    >Video annotations are supported only on browsers with HTML5 compatible video formats. In addition, depending on the browser, different video formats are supported.
 
-### Create subassets {#generate-subassets}
-
-Supported assets with multi-page formats &mdash; PDF files, AI files, Microsoft PowerPoint and Apple Keynote files, and Adobe InDesign files &mdash; can generate subassets for each individual page. These subassets are linked to the parent asset and facilitate multi-page view. For all other purposes, the subassets are treated like normal assets in AEM.
-
-Subasset generation is disabled by default. AEM offers two methods to generate subassets:
-
-* Add the **[!UICONTROL Create Sub Asset]** step to the **[!UICONTROL DAM Update Asset]** workflow. When the [!UICONTROL DAM Update Assets] workflow applies to the multi-page assets, the subassets are generated.
-* Select a specific multi-page asset and execute the **[!UICONTROL DAM Process Sub-Asset]** workflow from the [!UICONTROL Timeline] sidebar.
-
-Specifically for Microsoft Word documents, use the **[!UICONTROL DAM Parse Word Documents]** workflow. It generates a `cq:Page` component from the contents of the Microsoft Word document. The images extracted from the document are referenced from the `cq:Page` component. These images are extracted even if subasset generation is disabled.
-
-### View subassets {#viewing-subassets}
-
-The subassets are displayed only if the subassets are generated and are available for the selected multi-page asset. To view the generated subassets, navigate to the multi-page asset and open its asset page. Tap the AEM icon, and choose **[!UICONTROL Subassets]** from the list. When you select **[!UICONTROL Subassets]** from the list, the subassets page displays the subassets linked to the parent asset.
-
-   ![chlimage_1-224](assets/chlimage_1-19.png)
+For more information about generating and viewing subassets, see [manage subassets](managing-linked-subassets.md#generate-subassets).
 
 ## Delete assets {#deleting-assets}
 
