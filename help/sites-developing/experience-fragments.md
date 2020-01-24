@@ -118,13 +118,13 @@ One of the use cases for such groups is for embedding content in third party tou
 
 ### Default Link Rewriting {#default-link-rewriting}
 
-Using the [Export to Target](https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-5/help/sites-administering/experience-fragments-target.html) feature, you can:
+Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
 
 * create an Experience Fragment,
 * add components to it,
 * and then export it as an Adobe Target Offer, either in HTML Format or JSON Format.
 
-This feature can be [enabled on an author instance of AEM](https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-5/help/sites-administering/experience-fragments-target.html#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
+This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 
 The Link Externalizer is used to determine the correct URLs needed when creating the HTML version of the Target Offer, which is subsequently sent to Adobe Target. This is necessary as Adobe Target requires that all links inside the Target HTML Offer can be publicly accessed; this means that any resources the links reference, and the Experience Fragment itself, must be published before they can be used.
 
