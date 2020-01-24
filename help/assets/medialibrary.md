@@ -48,7 +48,7 @@ Yes, the category predicate is part of AEM Assets and require an AEM Assets lice
 
 #### I want to automatically resize images upon import. Do I need AEM Assets? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
-Yes. Image resizing and automatic workflow-driven transformation as well as the ability to manage renditions is part of AEM Assets and requires an AEM Assets license.
+No. Resizing and automatic workflow-driven transformation of static images as well as the ability to manage renditions are part of AEM Media Library. These features do not require an AEM Assets license.
 
 ### I want to resize images using a customized image component. Do I need AEM Assets? {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
 
