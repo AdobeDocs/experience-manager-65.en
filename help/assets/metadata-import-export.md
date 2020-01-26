@@ -1,12 +1,7 @@
 ---
 title: Import and export asset metadata in bulk
 description: Import and export asset metadata in bulk
-uuid: b0fa3e59-e8f0-43dc-af89-e91f8a5546f5
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: f14f5487-bac1-4192-84cb-970636d57200
-docset: aem65
-
 ---
 
 # Import and export asset metadata in bulk {#import-and-export-asset-metadata-in-bulk}

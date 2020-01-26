@@ -1,11 +1,7 @@
 ---
 title: Generate a URL to shared assets
 description: This article describes how to share assets, folders, and collections within AEM Assets as a URL to external parties.
-uuid: 87aea08d-d5b9-45a9-918f-3302063a3703
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: a13e4d9c-3c3b-4b34-ab48-091756e94a36
-docset: aem65
 ---
 
 # Share asset via a link {#asset-link-sharing}

@@ -1,12 +1,7 @@
 ---
 title: Add watermark to your digital assets.
 description: Learn how to use the Watermarking feature to add a digital watermark to assets.
-uuid: d4194185-7ce9-4869-a66d-f0985cee37f9
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 7ce1b154-dc55-4721-bfe9-eb444c01cf64
-docset: aem65
-
 ---
 
 # Watermark your digital assets {#watermarking}

@@ -1,12 +1,7 @@
 ---
 title: Manage video assets
 description: Learn how to upload, preview, annotate, and publish video assets.
-uuid: 7e27adf0-527f-4cdc-8fed-ccc3302e90fe
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: b9cbf283-ebbb-4e33-af19-7b17b4a1e323
-docset: aem65
-
 ---
 
 # Manage video assets {#manage-video-assets}
