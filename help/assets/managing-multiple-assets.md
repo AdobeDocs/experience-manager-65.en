@@ -1,12 +1,7 @@
 ---
 title: Manage multiple assets and collections
 description: Learn how to edit the metadata of multiple assets and collections simultaneously to quickly propagate common metadata changes.
-uuid: b4677aa5-5114-4f64-826d-8395c6cfa37d
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 32816785-6acd-4cc7-9698-f867f4d79e2e
-docset: aem65
-
 ---
 
 # Manage assets and collections {#managing-multiple-assets-and-collections}

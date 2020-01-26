@@ -1,12 +1,7 @@
 ---
 title: Compare AEM Assets and AEM Media Library offering
 description: Compare AEM Assets and AEM Media Library offerings and know the differences.
-uuid: 47c789f6-f8b9-4de3-b04b-2caf53e8a9d5
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 9af77d13-f860-4615-a7cd-b0eedbc48a87
-docset: aem65
-
 ---
 
 # AEM Assets versus AEM Media Library {#aem-assets-vs-aem-medialibrary}

@@ -1,11 +1,7 @@
 ---
 title: Related assets
 description: Learn how to relate assets that share certain common attributes. You can also use the feature to create source/derived relationships between assets.
-uuid: 6a2b1105-1cb0-48ca-bd1d-0ee034b8a0c1
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 2bd38e3b-a244-4f18-b081-f10c4eb0149b
-
 ---
 
 # Related assets {#related-assets}

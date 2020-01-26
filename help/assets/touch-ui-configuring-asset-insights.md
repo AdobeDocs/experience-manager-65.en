@@ -1,11 +1,7 @@
 ---
 title: Configure Asset Insights
 description: Configure Asset Insights in AEM Assets.
-uuid: 02ffa1cb-2675-479c-afdf-8b082b96fccc
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 199fa254-e5bf-4982-b157-2036a708018c
-docset: aem65
 ---
 
 # Configure Asset Insights {#configure-asset-insights}
