@@ -177,7 +177,7 @@ You combine data (records) saved in an external data source with an interactive 
 
     ``` java
 
-    package com.adobe.fd.ccm.multichannel.batch.integration;
+            package com.adobe.fd.ccm.multichannel.batch.integration;
 
             import java.io.File;
             import java.io.FileInputStream;
