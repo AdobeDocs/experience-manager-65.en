@@ -39,7 +39,7 @@ In the author environment, authors may apply tags by accessing the page properti
 
 To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the `Tags/Keywords` field pull-down to select from the list of tags permitted for the page. Tthe **Standard Tags** tab is the default namespace, which means there is no `namespace-string:` prefixed to the taxonomy.
 
-![chlimage_1-2](assets/chlimage_1-2.png)
+![chlimage_1-2](assets/chlimage_1-2a.png)
 
 ### Publishing Tags {#publishing-tags}
 
@@ -73,5 +73,5 @@ You can search for tags in both the author and publish environments.
 
 Adding a [Search component](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) to a page provides a search capability which includes tags and can be used in both the author and publish environments.
 
-![chlimage_1-3](assets/chlimage_1-3.png)
+![chlimage_1-3](assets/chlimage_1-3a.png)
 

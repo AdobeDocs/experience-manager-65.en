@@ -20,21 +20,21 @@ We.Retail has been built with a globalized site structure offering a language ma
 1. Open the sites console from **Global Navigation -&gt; Sites**.
 1. Switch to column view (if not already active) and select We.Retail. Note the example country structure with Switzerland, the United States, France, etc., along side the Language Masters.
 
-   ![chlimage_1-87](assets/chlimage_1-87.png)
+   ![chlimage_1-87](assets/chlimage_1-87a.png)
 
 1. Select Switzerland and see the language roots for the languages of that country. Note that there is not yet any content below these roots.
 
-   ![chlimage_1-88](assets/chlimage_1-88.png)
+   ![chlimage_1-88](assets/chlimage_1-88a.png)
 
 1. Switch to the list view and see that the language copies for the countries are all live copies.
 
-   ![chlimage_1-89](assets/chlimage_1-89.png)
+   ![chlimage_1-89](assets/chlimage_1-89a.png)
 
 1. Return to column view and click on the Language Master and see the language master roots with content. Note that only English has content.
 
    We.Retail does not come with any translated content, but the structure and configuration is in place to allow you to demonstrate the translation services.
 
-   ![chlimage_1-90](assets/chlimage_1-90.png)
+   ![chlimage_1-90](assets/chlimage_1-90a.png)
 
 1. With the English Language Master selected, open the **References** rail in the sites console and select **Language Copies**.
 

@@ -381,7 +381,7 @@ Adobe recommends runing maintenance on a regular basis to prevent excessive repo
 1. Stop the standby process on the standby instance by going to the JMX Console and using the **org.apache.jackrabbit.oak: Status ("Standby")** bean. For more info on how to do this, see the above section on [Monitoring](/help/sites-deploying/tarmk-cold-standby.md#monitoring).
 
 1. Stop the primary AEM instance.
-1. Run the oak compaction tool on the primary instance. For more details, see [Maintaining the Repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining the repository).
+1. Run the oak compaction tool on the primary instance. For more details, see [Maintaining the Repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 1. Start the primary instance.
 1. Start the standby process on the standby instance using the same JMX bean as described in the first step.
 1. Watch the logs and wait for synchronization to complete. It is possible that substantial growth in the standby repository will be seen at this time.

@@ -22,17 +22,17 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 1. Perform the following actions:
 
     1. Replicate the hierarchical structure: of `/libs/livecycle/core/content` at `/apps/livecycle/core/content`. Maintain the same (node/folder) properties and access control.
-    
-    1. Copy the content folder: from `/libs/livecycle/core` to `/apps/livecycle/core`.  
-    
+
+    1. Copy the content folder: from `/libs/livecycle/core` to `/apps/livecycle/core`.
+
     1. Delete the contents of `/apps/livecycle/core` folder.
 
 1. Perform these actions:
 
     1. Replicate the hierarchical structure: of `/libs/livecycle/core/components/login` at `/apps/livecycle/core/components/login`. Maintain the same (node/folder) properties and access control.
-    
-    1. Copy the components folder: from `/libs/livecycle/core` to `/apps/livecycle/core`.  
-    
+
+    1. Copy the components folder: from `/libs/livecycle/core` to `/apps/livecycle/core`.
+
     1. Delete the contents of the folder: `/apps/livecycle/core/components/login`.
 
 ### Adding a new locale {#adding-a-new-locale}
@@ -54,7 +54,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
 1. Copy `login.jsp`:
 
-    * from `/libs/livecycle/core/components/login` 
+    * from `/libs/livecycle/core/components/login`
     * to `/apps/livecycle/core/components/login`
 
 1. Modify the following snippet of code for `/apps/livecycle/core/components/login/login.jsp`:
@@ -83,9 +83,9 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                break;
            }
        }
-   
+
    To
-   
+
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -137,9 +137,9 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                break;
            }
        }
-   
+
    To
-   
+
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -172,9 +172,9 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
    ```
    String browserLocale = "en";
    for(int i=0; i<locales.length; i++)
-   
+
    To
-   
+
    String browserLocale = "ar";
    for(int i=0; i<locales.length; i++)
    ```
@@ -192,13 +192,13 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
     1. Create a node of type `sling:MessageEntry`, or copy an existing node and rename it, under all the locale folders.
     1. Copy `login.jsp` :
 
-        * from `/libs/livecycle/core/components/login`  
-        
+        * from `/libs/livecycle/core/components/login`
+
         * to `/apps/livecycle/core/components/login`
 
     1. Modify `/apps/livecycle/core/components/login/login.jsp` to incorporate the newly added text.
 
-   ![Add new key-value pair](assets/capture_new.png) 
+   ![Add new key-value pair](assets/capture_new.png)
 
    ```
    div class="loginContent">
@@ -206,9 +206,9 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                        <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></code>
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
-   
+
    To
-   
+
    div class="loginContent">
                        <span class="loginFlow"></code>
                        <span class="loginVersion"><%= i18n.get("My Welcome Message") %></code>
@@ -221,7 +221,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
 1. Copy `login` node:
 
-    * from `/libs/livecycle/core/content` 
+    * from `/libs/livecycle/core/content`
     * to `/apps/livecycle/core/content`
 
 1. Delete files `login.js` and `jquery-1.8.0.min.js`, from the node `/apps/livecycle/core/content/login.`
@@ -231,8 +231,8 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
     1. Add new styles to `/apps/livecycle/core/content/login/login.css`
     1. Copy `login.jsp`
 
-        * from `/libs/livecycle/core/components/login`  
-        
+        * from `/libs/livecycle/core/components/login`
+
         * to `/apps/livecycle/core/components/login`
 
     1. Modify `/apps/livecycle/core/components/login/login.jsp` to incorporate the newly added styles.
@@ -242,7 +242,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
     * Add the following to `/apps/livecycle/core/content/login/login.css`.
 
    ```css
-   
+
    .newLoginContentArea {
     width: 700px;
     padding: 100px 0px 0px 100px;
@@ -254,9 +254,9 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
    ```
    <div class="loginContentArea">
-   
+
    To
-   
+
    <div class="newLoginContentArea">
    ```
 
@@ -271,7 +271,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
     1. Install WebDAV client.
     1. Navigate to `/apps/livecycle/core/content/login` folder, using webDAV client. For more information, see: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
-    
+
     1. Add new images.
 
 1. Add new styles in `/apps/livecycle/core/content/login/login.css,` corresponding to new images added in `/apps/livecycle/core/content/login`.
@@ -293,10 +293,10 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
    ```
    <div class="loginContainerBkg">
-   
+
    To
-   
+
    <div class="newLginContainerBkg">
    ```
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

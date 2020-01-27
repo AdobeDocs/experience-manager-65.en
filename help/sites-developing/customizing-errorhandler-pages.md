@@ -15,7 +15,7 @@ discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
 
 AEM comes with a standard error handler for handling HTTP errors; for example, by showing:
 
-![chlimage_1-67](assets/chlimage_1-67.png)
+![chlimage_1-67](assets/chlimage_1-67a.png)
 
 System provided scripts exist (under `/libs/sling/servlet/errorhandler`) to respond to error codes, by default the following are available with a standard CQ instance:
 

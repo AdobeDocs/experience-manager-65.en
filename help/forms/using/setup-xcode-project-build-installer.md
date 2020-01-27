@@ -158,4 +158,4 @@ You need to archive the Xcode project to build the installer (an .ipa file) and 
 1. Replace all the spaces in the URL of your .ipa file with %20.
 1. Save and close the `AEM Forms-info.plist` file.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

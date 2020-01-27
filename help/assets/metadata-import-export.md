@@ -1,12 +1,7 @@
 ---
 title: Import and export asset metadata in bulk
-description: This article describes how to import and export metadata in bulk.
-uuid: b0fa3e59-e8f0-43dc-af89-e91f8a5546f5
+description: Import and export asset metadata in bulk
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: f14f5487-bac1-4192-84cb-970636d57200
-docset: aem65
-
 ---
 
 # Import and export asset metadata in bulk {#import-and-export-asset-metadata-in-bulk}
@@ -38,7 +33,7 @@ The metadata import is asynchronous and does not impede the system performance. 
 
 ## Export Metadata {#export-metadata}
 
-You can export metada for multiple assets in a CSV format. The metadata is exported asynchronously and does not impact the performance of the system. To export metadata, AEM traverses through the properties of the asset node `jcr:content/metadata` and its child nodes and exports the metadata properties in a CSV file.
+You can export metadata for multiple assets in a CSV format. The metadata is exported asynchronously and does not impact the performance of the system. To export metadata, AEM traverses through the properties of the asset node `jcr:content/metadata` and its child nodes and exports the metadata properties in a CSV file.
 
 A few use cases for exporting metadata in bulk are:
 
@@ -60,5 +55,8 @@ A few use cases for exporting metadata in bulk are:
 1. Open the inbox notification for the export job. Select the job and click **[!UICONTROL Open]** from the toolbar. To download the CSV file with the metadata, tap/click **[!UICONTROL CSV Download]** from the toolbar. Click **[!UICONTROL Close]**.
 
    ![Dialog  to download the CSV file containing metadata exported in bulk](assets/csv_download.png)
+   *Figure: Dialog to download the CSV file containing metadata exported in bulk*
 
-   Dialog  to download the CSV file containing metadata exported in bulk
+>[!MORELIKETHIS]
+>
+> [Metadata import and export in AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)

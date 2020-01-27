@@ -152,4 +152,4 @@ Finally, you need to include an entry in the dev package for each property that 
 
    ```
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -1,17 +1,14 @@
 ---
-title: Assets Performance Tuning Guide
-description: Key focus areas around AEM configuration, changes to hardware, software, and network components to remove bottlenecks and optimize the performance of AEM Assets.
-uuid: 5e590b0c-7f89-4ba4-8263-43fdb3e920ea
+title: Assets performance tuning guide
+description: Suggestions and guidance about AEM configuration, changes to hardware, software, and network components to remove bottlenecks and optimize the performance of AEM Assets.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 30f241ef-2dfb-471e-98fd-d21b9e752c4c
-docset: aem65
-tagskeywords: performance tuning, AEM Assets, software optimization, hardware optimization
 mini-toc-levels: 1
 
 ---
 
-# Assets Performance Tuning Guide{#assets-performance-tuning-guide}
+<!-- TBD: Formatting using backticks. Add UICONTROL tag. Redundant info as reviewed by engineering. -->
+
+# Assets performance tuning guide {#assets-performance-tuning-guide}
 
 An Adobe Experience Manager (AEM) Assets setup contains a number of hardware, software, and network components. Depending upon your deployment scenario, you may require specific configuration changes to hardware, software, and network components to remove performance bottlenecks.
 
@@ -240,30 +237,29 @@ When replicating assets to a large number of publish instances, for example in a
 >
 >Adobe does not recommend auto-activating assets. However, if necessary, Adobe recommends doing this as the final step in a workflow, usually DAM Update Asset.
 
-## Search indexes {#search-indexes}
+## Search indices {#search-indexes}
 
-Make sure you implement the latest service packs and performance-related hotfixes as they often include updates to system indexes. See [Performance tuning tips | 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) for some index optimizations that can be applied, depending on your version of AEM.
+Make sure you implement the latest service packs and performance-related hotfixes as they often include updates to system indexes. See [Performance tuning tips](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) for some index optimizations.
 
 Create custom indexes for queries that you run often. For details, see [methodology for analyzing slow queries](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) and [crafting custom indexes](/help/sites-deploying/queries-and-indexing.md). For additional insights around query and index best practices, see [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ### Lucene index configurations {#lucene-index-configurations}
 
-Some optimizations can be done on the Oak index configurations that can help improve AEM Assets performance:
+Some optimizations can be done on the Oak index configurations that can help improve AEM Assets performance. Update the index configurations to improve the re-indexing time:
 
-Update index configurations to improve reindexing time:
-
-1. Open CRXDe /crx/de/index.jsp and log in as an administrative user
-1. Browse to /oak:index/lucene
-1. Add a String[] property named "excludedPaths" with values "/var", "/etc/workflow/instances", and "/etc/replication"
-1. Browse to /oak:index/damAssetLucene
-1. Add a String[] property named "includedPaths" with one value "/content/dam"
-1. Save
+1. Open CRXDe `/crx/de/index.jsp` and log in as an administrative user
+1. Browse to `/oak:index/lucene`
+1. Add a String[] property `excludedPaths` with values `/var`, `/etc/workflow/instances`, and `/etc/replication`.
+1. Browse to `/oak:index/damAssetLucene`. Add a `String[]` property `includedPaths` with value `/content/dam`.
+1. Save.
 
 (AEM6.1 and 6.2 only) Update the ntBaseLucene index to improve asset delete and move performance:
 
-1. Browse to */oak:index/ntBaseLucene/indexRules/nt:base/properties*
-1. Add two nt:unstructured nodes "slingResource" and "damResolvedPath" under */oak:index/ntBaseLucene/indexRules/nt:base/properties*
-1. Set the properties below on the nodes (where ordered and propertyIndex properties are of type *Boolean*:
+1. Browse to `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
+1. Add two nt:unstructured nodes `slingResource` and `damResolvedPath` under `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
+1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
+
+   ```
    slingResource
    name="sling:resource"
    ordered=false
@@ -274,9 +270,9 @@ Update index configurations to improve reindexing time:
    ordered=false
    propertyIndex=true
    type="String"
+   ```
 
-1. On the /oak:index/ntBaseLucene node, set the property *reindex=true*
-1. Click "Save All"
+1. On the `/oak:index/ntBaseLucene` node, set the property `reindex=true`. Click **[!UICONTROL Save All]**.
 1. Monitor the error.log to see when indexing is completed:
    Reindexing completed for indexes: [/oak:index/ntBaseLucene]
 1. You can also see that indexing is completed by refreshing the /oak:index/ntBaseLucene node in CRXDe as the reindex property would go back to false
@@ -324,7 +320,7 @@ For all network performance concerns from the customer, perform the following ta
 
 ### AEM instance testing {#aem-instance-testing}
 
-To minimize latency and achieve high throughput through efficient CPU utilization and loadsharing, monitor the performance of your AEM instance regularly. In particular:
+To minimize latency and achieve high throughput through efficient CPU utilization and load-sharing, monitor the performance of your AEM instance regularly. In particular:
 
 * Run load tests against the AEM instance
 * Monitor upload performance and UI responsiveness
@@ -344,4 +340,3 @@ To minimize latency and achieve high throughput through efficient CPU utilizatio
 * Optimize indexes with the latest service packs and hotfixes. Check with Adobe Support for any additional index optimizations that may be available.
 * Use guessTotal to optimize query performance.
 * If you configure AEM to detect file types from the content of the files (by enabling **[!UICONTROL Day CQ DAM Mime Type Service]** in the **[!UICONTROL AEM Web Console]**), upload many files in bulk during non-peak hours as it is resource-intensive.
-

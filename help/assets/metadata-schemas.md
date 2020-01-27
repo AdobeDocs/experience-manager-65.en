@@ -1,11 +1,7 @@
 ---
 title: Metadata schemas
 description: Metadata schema defines the layout of the properties page and the metadata properties displayed for assets. Learn how to create custom metadata schema, edit metadata schema, and how to apply metadata schema to assets.
-uuid: f4894492-aad2-4ba7-a833-3c01381a1474
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 4c78de71-ca73-4e09-9f99-bb86d4443d01
-docset: aem65
 ---
 
 # Metadata schemas {#metadata-schemas}

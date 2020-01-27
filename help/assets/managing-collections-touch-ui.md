@@ -1,13 +1,8 @@
 ---
 title: Manage asset collections
-description: Understand the concept of collection in AEM Assets. Learn how to collections, manage, edit, and collections with other users.
-uuid: b23c4cf5-fb3d-45cb-b393-d3b9dc6b03bb
+description: Learn tasks to manage Collections of assets, such as create, view, delete, edit, and download collections.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: f2b11641-a88d-453b-8ec7-b5c83c78578f
-docset: aem65
 mini-toc-levels: 1
-
 ---
 
 # Manage collections {#managing-collections}
@@ -58,7 +53,7 @@ You can create a collection with static references, for example a collection wit
 
    To add assets to the collection, navigate to the Assets user interface. For details, see [Adding assets to a collection](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection).
 
-### Create collections using Dropzone {#create-collections-using-dropzone}
+### Create collections using dropzone {#create-collections-using-dropzone}
 
 You can drag assets from the Assets UI to a collection. You can also create a copy of a collection and drag the assets there.
 
@@ -87,7 +82,7 @@ You can drag assets from the Assets UI to a collection. You can also create a co
 A Smart Collection uses a search criteria to dynamically populate assets. You can create a Smart Collection using only files and not folders or files and folders.
 
 1. Navigate to the Assets UI, and tap/click the **[!UICONTROL Search]** icon.
-1. Enter search keyword in the Omni Search box and press Enter. Tap/click the GlobalNav icon to display the Filters panel and apply a search filter from the Search panel.
+1. Enter search keyword in the Omnisearch box and press Enter. Tap/click the GlobalNav icon to display the Filters panel and apply a search filter from the Search panel.
 1. From the **[!UICONTROL Files & Folders]** list, select **[!UICONTROL Files]**.
 
    ![files_option](assets/files_option.png)
@@ -179,17 +174,13 @@ You can edit the metadata of multiple collections simultaneously. This functiona
    >
    >The Append mode works only for fields that can contain multiple values. For fields that can contain only a single value, the new metadata is not appended to the existing value in the field even if you select **[!UICONTROL Append mode]**.
 
-## Search {#searching}
-
-The Search feature within Collections supports both [Searching for Collections](#searching-collections) and [Searching for assets within a Collection](#searching-within-collections).
-
-### Search collections {#searching-collections}
+## Search collections {#searching-collections}
 
 You can search collections from the Collections console. When you search with keywords in the Omnisearch box, AEM Assets searches for collection names, metadata, and the tags added to the collections.
 
 If you search for collections from the top level, only individual collections are returned in search results. Assets or folders within the collections are excluded. In all other cases (for example, within an individual collection or in a folder hierarchy), all relevant assets, folders, and collections are returned.
 
-### Search within collections {#searching-within-collections}
+## Search within collections {#searching-within-collections}
 
 In the Collections console, tap/click a collection to open it.
 

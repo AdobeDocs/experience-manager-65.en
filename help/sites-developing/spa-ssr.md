@@ -17,6 +17,10 @@ docset: aem65
 
 >[!NOTE]
 >
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
+
+>[!NOTE]
+>
 >AEM 6.5.1.0 or later is required to use the SPA server side rendering features as described in this document.
 
 ## Overview {#overview}
@@ -47,7 +51,7 @@ For more information on Adobe I/O Runtime, please see
 * [https://www.adobe.io/apis/experienceplatform/runtime.html](https://www.adobe.io/apis/experienceplatform/runtime.html) - for an overview of the service
 * [https://www.adobe.io/apis/experienceplatform/runtime/docs.html](https://www.adobe.io/apis/experienceplatform/runtime/docs.html) - for detailed documentation on the platform
 
-The following secitons detail how Adobe I/O Runtime can be used to implement SSR for your SPA in two different models:
+The following sections detail how Adobe I/O Runtime can be used to implement SSR for your SPA in two different models:
 
 * [AEM-Driven Communication Flow](/help/sites-developing/spa-ssr.md#aem-driven-communication-flow)
 * [Adobe I/O Runtime-Driven Communication Flow](/help/sites-developing/spa-ssr.md#adobe-i-o-runtime-driven-communication-flow)

@@ -162,4 +162,4 @@ After unlocking you can restore inheritance by clicking on the unlocked padlock 
 
 >[!NOTE]
 >
->If the inheritance is cancelled at the page level (from the Livecopy tab of Page Properties) then all components will be editable in **Scaffolding** mode (they will be shown in unlocked state).
+>If the inheritance is canceled at the page level (from the Livecopy tab of Page Properties) then all components will be editable in **Scaffolding** mode (they will be shown in unlocked state).

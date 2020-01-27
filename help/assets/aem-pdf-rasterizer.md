@@ -1,15 +1,10 @@
 ---
-title: Using PDF Rasterizer
+title: Use PDF rasterizer to generate renditions
 description: This article describes how to generate high-quality thumbnails and renditions using the Adobe PDF Rasterizer library.
-uuid: 583e8cb6-92c0-4818-a130-dbbb9a3cdca4
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 52d6c489-aa19-4e27-a429-1acae1af4825
-docset: aem65
-
 ---
 
-# Using PDF Rasterizer {#using-pdf-rasterizer}
+# Use PDF rasterizer {#using-pdf-rasterizer}
 
 Sometimes, when you upload large, content-intensive PDF or AI files to Adobe Experience Manager (AEM) Assets, the default library may not generate an accurate output. In such cases, Adobe's PDF Rasterizer library can generate more reliable and accurate output compared to the output from a default library.
 
@@ -39,7 +34,7 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
 
     * In the **[!UICONTROL Web Enabled Image]** tab, add `application/pdf` or `application/postscript` under **[!UICONTROL Skip List]** depending upon your requirements.
 
-   ![web_enabled_imageskiplist](assets/web_enabled_imageskiplist.png)
+   ![Configuration to skip thumbnail processing for an image format](assets/web_enabled_imageskiplist.png)
 
 1. Open the **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** step, and remove the MIME type for which you want to skip the default generation of preview image renditions. For example, remove the MIME type `application/pdf`, `application/postscript`, or `application/illustrator` from the **[!UICONTROL MIME Types]** list.
 
@@ -72,7 +67,7 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
 
-1. Specify the settings in the **Web Enabled Image** tab.
+1. Specify the settings in the **[!UICONTROL Web Enabled Image]** tab.
 
    ![web_enabled_image1](assets/web_enabled_image1.png)
 

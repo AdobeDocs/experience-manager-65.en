@@ -22,7 +22,7 @@ docset: aem65
 >
 >See [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md).
 
-AEM provides a framework for automating tests for your AEM UI. Using the framework, you write and run UI tests directly in a web browser. The framework provides ajavascript API for creating tests.
+AEM provides a framework for automating tests for your AEM UI. Using the framework, you write and run UI tests directly in a web browser. The framework provides a javascript API for creating tests.
 
 The AEM test framework uses Hobbes.js, a testing library written in Javascript. The Hobbes.js framework was developed for testing AEM as part of the development process. The framework is now available for public use for testing your AEM applications.
 

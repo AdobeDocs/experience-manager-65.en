@@ -1,5 +1,5 @@
 ---
-title: Folder Metadata Schema
+title: Folder metadata schema
 description: Learn how to create metadata schema for asset folders in AEM Assets
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 uuid: bf8d066c-0f23-4d18-9ce9-860fa505dea2
@@ -8,7 +8,7 @@ docset: aem65
 
 ---
 
-# Folder Metadata Schema {#folder-metadata-schema}
+# Folder metadata schema {#folder-metadata-schema}
 
 Adobe Experience Manager (AEM) Assets lets you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages.
 
@@ -30,11 +30,11 @@ You can edit a newly added or existing metadata schema form, which includes the 
 You can map/configure these form items to a field within a metadata node in the CRX repository. You can add new tabs or form items to the metadata schema form.
 
 1. In the Schema Forms page, select the form you created, and then tap/click the **[!UICONTROL Edit]** icon from the toolbar.
-1. In the Folder Metadata Schema Editor page, tap/click the **[!UICONTROL +]** icon to add a tab to the form. To rename the tab, tap/click the default name and specify the new name under **[!UICONTROL Settings]**.
+1. In the Folder Metadata Schema Editor page, tap `+` to add a tab to the form. To rename the tab, tap/click the default name and specify the new name under **[!UICONTROL Settings]**.
 
    ![custom_tab](assets/custom_tab.png)
 
-   To add more tabs, tap/click the **[!UICONTROL +]** icon. Tap/click **[!UICONTROL X]** to delete a tab.
+   To add more tabs, tap `+`. Tap `X` on a tab to delete it.
 
 1. In the active tab, add one or more components from the **[!UICONTROL Build Form]** tab.
 

@@ -28,7 +28,7 @@ See [Integrating AEM with Adobe Campaign 6.1](/help/sites-administering/campaign
 
 The standard integration between AEM and Campaign is based on JSON and JSSP (JavaScript Server Page). These JSSP files can be found in the Campaign console, and all start with **amc** (Adobe Marketing Cloud).
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+![chlimage_1-15](assets/chlimage_1-15a.png)
 
 >[!NOTE]
 >
@@ -38,11 +38,11 @@ In this example, we create a new custom JSSP file and call that from the AEM sid
 
 1. In Adobe Campaign, to create a new JSSP file, click the **New** icon.
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![](do-not-localize/chlimage_1-4a.png)
 
 1. Enter the name of this JSSP file. In this example, we use **cus:custom.jssp** (meaning it will be in the **cus** namespace).
 
-   ![chlimage_1-16](assets/chlimage_1-16.png)
+   ![chlimage_1-16](assets/chlimage_1-16a.png)
 
 1. Put the following code inside the jssp-file:
 
@@ -160,7 +160,7 @@ public class CustomServlet extends SlingSafeMethodsServlet {
 
 AEM offers out of the box APIs to retrieve the objects available anywhere in the siteadmin explorer view.
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+![chlimage_1-17](assets/chlimage_1-17a.png)
 
 >[!NOTE]
 >

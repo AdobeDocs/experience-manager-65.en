@@ -1,10 +1,7 @@
 ---
-title: Support for IPTC Metadata
+title: Support for IPTC metadata
 description: Learn how Adobe Experience Manager (AEM) Assets supports the IPTC metadata, Creative ratings, and keywords added to assets through Adobe Bridge and other Creative Apps.
-uuid: 63c9716a-1fa4-4462-a987-ab231157433d
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 58910ea9-5fa0-4a34-8713-a68ff6e85e5c
 ---
 
 # Support for IPTC metadata {#support-for-iptc-metadata}
@@ -22,13 +19,13 @@ The Properties page for assets now includes separate tabs to display the IPTC Co
 1. Tap the **[!UICONTROL IPTC]** tab to view the IPTC metadata for the asset.
 1. Edit the IPTC metadata properties, as required.
 
-   ![iptc_tab](assets/iptc_tab.png)
+   ![iptc_tab](assets/keywords-in-iptc-tab.png)
 
 1. Click/tap the **[!UICONTROL IPTC Extension]** tab to view IPTC Extension metadata for the asset.
 1. Edit the IPTC Extension metadata properties, as required.
 1. Tap/click **[!UICONTROL Save & Close]** to save the changes.
 
-## Creative Rating Support {#creative-rating-support}
+## Creative rating support {#creative-rating-support}
 
 In addition to displaying individual user ratings and aggregate ratings, the Properties page now displays the ratings assigned to assets through Adobe Bridge and other Creative Apps
 
@@ -38,8 +35,8 @@ This rating is a read-only property and ranges between 1-5. You can search for a
 
 However, this property is currently not indexed to avoid any conflict with custom changes made by users.
 
-## Keyword Support {#keyword-support}
+## Keyword support {#keyword-support}
 
-The **[!UICONTROL IPTC]** tab of the Properties page also displays keywords added to assets through Adobe Bridge and other Creative Apps. You can also edit these keywords and add more keywords from the **[!UICONTROL IPTC]** tab.
+The **[!UICONTROL IPTC]** tab of the [!UICONTROL Properties] page also displays keywords added to assets through Adobe Bridge and other Adobe Creative Cloud apps. You can also edit these keywords and add more keywords from the **[!UICONTROL IPTC]** tab.
 
-![keywords](assets/keywords.png)
+![keywords](assets/keywords-in-iptc-tab.png)

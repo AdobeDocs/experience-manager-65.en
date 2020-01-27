@@ -1,15 +1,10 @@
 ---
-title: Asset Templates
-description: Learn about Asset templates in AEM Assets and how to use Asset templates to create marketing collateral.
-uuid: 26ee7c45-e8de-4ee1-a704-b5c7d2809654
+title: Asset templates
+description: Learn about Asset templates in AEM Assets and how to use asset templates to create marketing collateral.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 9abb6816-b75d-4068-9c7d-e707e55224ec
-docset: aem65
-
 ---
 
-# Asset Templates {#asset-templates}
+# Asset templates {#asset-templates}
 
 Asset templates are a special class of assets that facilitate quick re-purposing of visually-rich content for digital and print media. An asset template includes two parts, the fixed messaging section and the editable section.
 
@@ -41,7 +36,7 @@ You can export the updated file within the parent folder in the following format
 
 You can also download the output in these formats to your local system.
 
-## Create a Collateral {#creating-a-collateral}
+## Create a collateral {#creating-a-collateral}
 
 Consider a scenario where you want to create digital printable collateral, such as brochures, flyers, and ads for an upcoming campaign and share with outlet stores globally. Creating collateral based on a template helps deliver a unified customer experience across channels. Designers can create the campaign templates (single-page or multi-page) using a creative solution, such as InDesign and upload the templates to AEM Assets for you. Before creating a collateral, have one or more INDD templates uploaded to and available in Experience Manager in advance.
 
@@ -75,13 +70,13 @@ Consider a scenario where you want to create digital printable collateral, such 
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
-## Edit a Collateral {#editing-a-collateral}
+## Edit a collateral {#editing-a-collateral}
 
 You can edit a collateral immediately after you create it. Alternatively, you open it from the Templates page or the asset page.
 
 1. To open the collateral for editing, do one of the following:
 
-    * Open the collateral (brochure in this case) you created in step 7 of [Creating a Collateral](/help/assets/asset-templates.md#creating-a-collateral).
+    * Open the collateral (brochure in this case) you created in step 7 of [Create a collateral](/help/assets/asset-templates.md#creating-a-collateral).
     * From the Templates page, navigate to a folder where you created the collateral, and click/tap the Edit quick action on the thumbnail of a collateral.
     * In the asset page for the collateral, tap **[!UICONTROL Edit]** from the toolbar.
     * Select the collateral and tap **[!UICONTROL Edit]** from the toolbar.
@@ -159,7 +154,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    ![chlimage_1-119](assets/chlimage_1-324.png)
 
-## Merge Collateral {#merge-collateral}
+## Merge collateral {#merge-collateral}
 
 1. Click or tap the AEM logo, and then click/tap Assets on the Navigation page.
 1. From the options, choose **[!UICONTROL Templates]**.

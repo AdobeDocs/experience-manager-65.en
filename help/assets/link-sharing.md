@@ -1,21 +1,16 @@
 ---
-title: Asset link sharing
+title: Generate a URL to shared assets
 description: This article describes how to share assets, folders, and collections within AEM Assets as a URL to external parties.
-uuid: 87aea08d-d5b9-45a9-918f-3302063a3703
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: a13e4d9c-3c3b-4b34-ab48-091756e94a36
-docset: aem65
-
 ---
 
-# Asset link sharing {#asset-link-sharing}
+# Share asset via a link {#asset-link-sharing}
 
 Adobe Experience Manager (AEM) Assets lets you share assets, folders, and collections as a URL with members of your organization and external entities, including partners and vendors. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to AEM Assets.
 
 >[!NOTE]
 >
->You require Edit ACL permission on the folder/asset you want to share as a link.
+>You require Edit ACL permission on the folder or the asset that you want to share as a link.
 
 ## Share assets {#sharelink}
 
@@ -30,28 +25,23 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    An asset link is auto-created in the **[!UICONTROL Share Link]** field. Copy this link and share it with the users. The default expiration time for the link is one day.
 
-   ![Dialog with the Link Share](assets/chlimage_1-542.png)
+   ![Dialog with the Link Share](assets/Link-sharing-dialog-box.png)
 
-   Dialog with the Link Share
+   *Figure:Dialog with the Link Share*
 
    Alternatively, proceed to perform steps 3-7 of this procedure to add email recipients, configure the expiration time for the link, and send it from the dialog.
 
    >[!NOTE]
    >
-   >If you want to share links from your AEM Author instance to external entities, ensure that you only expose the following URLs (which are used for link sharing) for GET requests only:
+   >If you want to share links from your AEM Author instance to external entities, ensure that you only expose the following URLs (which are used for link sharing) for `GET` requests only. Block other URLs to ensure security of AEM Author.
    >
-   >
-   >
-   >    * &lt;AEM Server&gt;/linkshare.html
-   >    * &lt;AEM Server&gt;/linksharepreview.html
-   >    * &lt;AEM Server&gt;/linkexpired.html
-   >
-   >
-   >Block other URLs to ensure that your Author instance is secure.
+   >* http://&lt;aem_server&gt;:&lt;port&gt;/linkshare.html
+   >* http://&lt;aem_server&gt;:&lt;port&gt;/linksharepreview.html
+   >* http://&lt;aem_server&gt;:&lt;port&gt;/linkexpired.html
 
    >[!NOTE]
    >
-   >If a shared asset is moved to a different location, its link stops working. Re-create the link and reshare with the users.
+   >If a shared asset is moved to a different location, its link stops working. Re-create the link and re-share with the users.
 
 1. From the web console, open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against each:
 
@@ -67,7 +57,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    To enable emails to be sent out to users, configure the SMTP server details in [Day CQ Mail Service](#configmailservice).
 
-   ![Share links to assets directly from the Link Sharing dialog](assets/chlimage_1-543.png)
+   ![Share links to assets directly from the Link Sharing dialog](assets/Asset-Sharing-LinkShareDialog.png)
 
    Share links to assets directly from the Link Sharing dialog
 
@@ -79,7 +69,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 1. In the **[!UICONTROL Message]** box, enter an optional message.
 1. In the **[!UICONTROL Expiration]** field, specify an expiration date and time for the link using the date picker. By default, the expiration date is set for a week from the date you share the link.
 
-   ![chlimage_1-259](assets/chlimage_1-544.png)
+   ![Set expiration date of shared link](assets/Set-shared-link-expiration.png)
 
 1. To let users download the original image along with the renditions, select **[!UICONTROL Allow download of original file]**.
 
@@ -108,13 +98,11 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
 1. To view the assets you shared as links, go to the Assets UI and tap the Experience Manager logo. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
 1. From the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
-1. To unshare an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar.
+1. To un-share an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar. A confirmation message follows. The entry for the asset is removed from the list.
 
-   A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
+## Configure Day CQ Mail Service {#configmailservice}
 
-## Configure Day CQ mail service {#configmailservice}
-
-1. Tap the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. On the Experience Manager home page, navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
 1. Tap **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
@@ -125,15 +113,15 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    ![chlimage_1-263](assets/chlimage_1-548.png)
 
-1. Click/tap **Save**.
+1. Click/tap **[!UICONTROL Save]**.
 
 ## Configure maximum data size {#maxdatasize}
 
-When you download assets from the link shared using the Link Sharing feature, AEM compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, configure the maximum size using the **Max Content Size (uncompressed)** parameter for Day CQ DAM Adhoc Asset Share Proxy Servlet in Configuration Manager. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
+When you download assets from the link shared using the Link Sharing feature, AEM compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, configure the maximum size using the **[!UICONTROL Max Content Size (uncompressed)]** parameter for [!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet] in Configuration Manager. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
 
-1. Click/Tap the AEM logo and then go to **Tools** &gt; **Operations** &gt; **Web Console**.
-1. From the web console, locate the **Day CQ DAM Adhoc Asset Share Proxy Servlet** configuration.
-1. Open the **Day CQ DAM Adhoc Asset Share Proxy Servlet** configuration in edit mode, and modify the value of the **Max Content Size (uncompressed)** parameter.
+1. Click/Tap the AEM logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. From the Web Console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
+1. Open the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
 
    ![chlimage_1-264](assets/chlimage_1-549.png)
 

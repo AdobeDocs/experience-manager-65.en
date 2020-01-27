@@ -12,7 +12,7 @@ docset: aem65
 
 ---
 
-# Add custom action/button in Create Correspondence UI{#add-custom-action-button-in-create-correspondence-ui}
+# Add custom action/button in Create Correspondence UI {#add-custom-action-button-in-create-correspondence-ui}
 
 ## Overview {#overview}
 

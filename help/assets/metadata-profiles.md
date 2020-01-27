@@ -1,19 +1,14 @@
 ---
-title: Metadata Profiles
+title: Metadata profiles to customize metadata requirements of assets
 description: Know about metadata profiles for assets. Learn how to create a metadata profile and apply it to folder assets.
-uuid: 05732f17-863a-4aa6-bb1a-9549565be076
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 641bb668-e3b2-4370-9805-576db1d205d3
-docset: aem65
-
 ---
 
 # Metadata profiles {#metadata-profiles}
 
 A metadata profile lets you apply default metadata to assets within a folder. Create a metadata profile and apply it to a folder. Any asset that you subsequently upload to the folder inherits the default metadata that you configured in the metadata profile.
 
-## Adding a metadata profile {#adding-a-metadata-profile}
+## Add a metadata profile {#adding-a-metadata-profile}
 
 1. Navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]** and tap **[!UICONTROL Create]**.
 1. Enter a title for the Metadata Profile, for example Sample Metadata, and tap **[!UICONTROL Create]**. The [!UICONTROL Edit Form] for the metadata profile is displayed.
@@ -55,9 +50,9 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 
    ![chlimage_1-201](assets/chlimage_1-484.png)
 
-1. Tap **[!UICONTROL Done]**. The Metadata Profile is added to the list of profiles in the **[!UICONTROL Metadata Profiles]** page.
+1. Tap/ click **[!UICONTROL Done]**. The Metadata Profile is added to the list of profiles in the **[!UICONTROL Metadata Profiles]** page.
 
-   ![chlimage_1-202](assets/chlimage_1-485.png)
+   ![Metadata profile added in Metadata Profiles page](assets/MetadataProfiles-page.png)
 
 ## Copy a metadata profile {#copying-a-metadata-profile}
 
@@ -67,9 +62,9 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 
 1. Tap **[!UICONTROL Copy]** from the toolbar.
 1. In the **[!UICONTROL Copy Metadata Profile]** dialog, enter a title for the new copy of the Metadata Profile.
-1. Tap **[!UICONTROL Copy]**. The copy of the Metadata Profile appears in the list of profiles in the **[!UICONTROL Metadata Profiles]** page. 
+1. Tap **[!UICONTROL Copy]**. The copy of the Metadata Profile appears in the list of profiles in the **[!UICONTROL Metadata Profiles]** page.
 
-   ![chlimage_1-204](assets/chlimage_1-487.png)
+   ![A copy of metadata profile added in Metadata Profiles page](assets/copy-metadata-profile.png)
 
 ## Delete a metadata profile {#deleting-a-metadata-profile}
 
@@ -163,4 +158,4 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 >[!MORELIKETHIS]
 >
 >* [Profiles to process metadata, images, and videos](processing-profiles.md)
->* [Best Practices to organize your digital assets to use processing profiles](/help/assets/best-practices-for-file-management.md)
+>* [Best Practices to organize your digital assets to use processing profiles](/help/assets/organize-assets.md)

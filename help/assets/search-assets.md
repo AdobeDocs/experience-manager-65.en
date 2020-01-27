@@ -1,18 +1,12 @@
 ---
 title: Search digital assets and images in AEM
 description: Learn how to find the required assets in AEM by using Filters panel, and how to use the assets that show up in search.
-uuid: c343b550-724d-4124-ae76-9331ca877ae7
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
-docset: aem65
-mini-toc-levels: 1
-
 ---
 
 # Search assets in AEM {#search-assets-in-aem}
 
-You can achieve higher content velocity using AEM's user-friendly asset discovery options. Your teams can reduce time to market with seamless, intelligent search experience using out-of-the-box functionality and custom methods. Searching assets is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators. Simple, advanced, and custom searches that you can perform via AEM Assets user interface or other apps and surfaces help fulfill these use cases.
+Adobe Experience Manager (AEM) Assets provides robust asset discovery methods that help you achieve higher content velocity. Your teams reduce time to market with seamless, intelligent search experience using out-of-the-box functionality and custom methods. Searching assets is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators. Simple, advanced, and custom searches that you can perform via AEM Assets user interface or other apps and surfaces help fulfill these use cases.
 
 AEM supports the following use cases and this article describes the usage, concepts, configurations, limitations, and troubleshooting for these use cases.
 
@@ -23,15 +17,15 @@ AEM supports the following use cases and this article describes the usage, conce
 | [Search suggestions](#searchsuggestions) | [Mandatory metadata](#mandatorymetadata) | [Download](#download) |
 | [Understand search results and behavior](#searchbehavior) | [Modify search facets](#searchfacets) | [Bulk metadata updates](#metadataupdates) |
 | [Search rank and boosting](#searchrank) | [Text extraction](#extracttextupload) | [Smart collections](#collections) |
-| [Advanced search: filtering and scope of search](#scope) | [Custom predicates](#custompredicates) | [Understand unexpected results and Troubleshoot](#unexpectedresults) |
-| [Search from other solutions and apps:](#beyondomnisearch)<ul><li>[Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Desktop app](#desktopapp)</li><li>[Adobe Stock images](#adobestock)</li><li>[Dynamic Media assets](#dynamicmedia)</li></ul> | | |
+| [Advanced search: filtering and scope of search](#scope) | [Custom predicates](#custompredicates) | [Understand unexpected results and Troubleshoot](#troubleshoot-unexpected-search-results-and-issues) |
+| [Search from other solutions and apps](#beyondomnisearch):<ul><li>[Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Desktop app](#desktopapp)</li><li>[Adobe Stock images](#adobestock)</li><li>[Dynamic Media assets](#dynamicmedia)</li></ul> | | |
 | [Asset selector/picker](#assetselector) | | |
 | [Limitations](#limitations) and [Tips](#tips) | | |
 | [Illustrated examples](#samples)| | |
 
-Search assets using the Omnisearch field at the top of the AEM web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in AEM, click ![search_icon](assets/search_icon.png) in top bar, enter search keyword, and press return. Alternatively, use the keyword shortcut `/` (forward slash) to open the Omnisearch field. `Location:Assets` is pre-selected to limit the searches to DAM assets. You can do advanced searches to increase or limit the [scope of search](#scope).
+Search for assets using the Omnisearch field at the top of the AEM web interface. Go to **[!UICONTROL Assets]** &gt; **[!UICONTROL Files]** in AEM, click search icon in top bar, enter search keyword, and press return. Alternatively, use the keyword shortcut / (forward slash) to open the Omnisearch field. Location:Assets is pre-selected to limit the searches to DAM assets. AEM provides suggestions as your start typing a search keyword.
 
-Use the **[!UICONTROL Filters]** panel to search for assets, folders, tags, and metadata. You can filter search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. You can customize the Filters panel and add/remove search predicates using [search facets](/help/assets/search-facets.md).
+Use the **[!UICONTROL Filters]** panel to narrow your search by filtering search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. Your administrators can customize the Filters panel and add/remove search predicates using search facets.
 
 AEM search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/managing-collections-touch-ui.md).
 
@@ -39,44 +33,34 @@ AEM search capability supports searching for collections and searching for asset
 
 Familiarize yourself with the search interface and the available actions.
 
-![Understanding parts of Assets search results interface](assets/aem_search_results.png)
-*Figure:* Understanding parts of Assets search results interface
+![Understanding parts of Assets search results interface](assets/aem_search_results.png) <br>
+*Figure: Understanding parts of Assets search results interface*
 
-**A.** Save the search as a Smart Collection. **B.** Filters (predicates) to narrow the search results. **C.** Display Files, Folders, or both in the search results. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F.** Omnisearch field with user-provided search keyword **G.** Check box to select all the search results **H.** Number of displayed search results out of the total search results **I.** Close the search **J.** Switch between card view and list view
+**A.** Save the search as a Smart Collection. **B.** Filters (predicates) to narrow the search results. **C.** Display Files, Folders, or both in the search results. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F.** Omnisearch field with user-provided search keyword. **G.** Check box to select all the search results. **H.** Number of displayed search results out of the total search results. **I.** Close the search **J.** Switch between card view and list view.
 
 ### Dynamic search facets {#dynamicfacets}
 
-You can discover the desired assets faster from the search results page using the dynamically updated number of expected search results in the search facets. The expected number of assets are updated even before applying the search filter. Seeing the expected count against the filter helps you navigate through the search results quickly and efficiently. For more info, see [Search assets in AEM](/help/assets/search-assets.md).
+You can discover the desired assets faster from the search results page using the dynamically updated number of expected search results in the search facets. The expected number of assets are updated even before applying the search filter. Seeing the expected count against the filter helps you navigate through the search results quickly and efficiently. For more info, see [Search assets in AEM](search-assets.md).
 
 ![See the approximate number of assets without filtering search results in search facets.](assets/asset_search_results_in_facets_filters.png)
-
-See the approximate number of assets without filtering search results in search facets.
-
-## Search suggestions as you type {#searchsuggestions}
-
-When you start typing a keyword, AEM suggests the possible search keywords or phrases. The suggestions are based on the assets in AEM. AEM indexes all the metadata fields to help with search. To provide search suggestions, the system uses the values of the following few metadata fields. To provide search suggestions, consider populating the following fields with appropriate keywords:
-
-* Asset tags. (maps to `jcr:content/metadata/cq:tags`)
-* Asset title. (maps to `jcr:content/metadata/dc:title`)
-* Asset description. (maps to `jcr:content/metadata/dc:description`)
-* Title in the JCR repository. The value may get mapped to Asset title. (maps to `jcr:content/jcr:title`)
-* Description in the JCR repository. The value may get mapped to Asset description. (maps to `jcr:content/jcr:description`)
+<br>
+*Figure: See the approximate number of assets without filtering search results in search facets.*
 
 ## Understand search results and behavior {#searchbehavior}
 
 ### Basic search terms and results {#searchbasics}
 
-You can run keyword searches from the OmniSearch field. The keyword search is not case sensitive and is a full-text search (across the popular metadata fields). If more than one keyword is used, `AND` is the default operator between the keywords. The results are sorted by relevance, starting with closest matches. For multiple keywords, more relevant results are the assets that contain both terms in their metadata. Within metadata, keywords appearing as smart tags are higher ranked than keywords appearing in other metadata fields.
+You can run keyword searches from the OmniSearch field. The keyword search is not case sensitive and is a full-text search (across the popular metadata fields. If more than one keyword is searched for, default operator between the keywords is `AND` for default search and it is `OR` when assets are smart tagged.
 
-AEM allows giving a particular search term higher weightage. Also, it is possible to boost the rank of a few targeted assets for specific search terms. AEM administrators can do these configurations as described below.
+The results are sorted by relevance, starting with closest matches. For multiple keywords, more relevant results are the assets that contain both terms in their metadata. Within metadata, keywords appearing as smart tags are higher ranked than keywords appearing in other metadata fields. AEM allows giving a particular search term higher weightage. Also, it is possible to [boost the rank](#searchrank) of a few targeted assets for specific search terms.
 
-To quickly find the relevant assets, the rich interface provides filtering, sorting, and selection mechanisms. You can filter results based on multiple criteria and see number of searched assets for various filters. Alternatively, you can rerun search by changing the query in the Omnisearch field. When you change your search terms or filters, the other filters remain applied to preserve your search's context.
+To quickly find the relevant assets, the rich interface provides filtering, sorting, and selection mechanisms. You can filter results based on multiple criteria and see number of searched assets for various filters. Alternatively, you can rerun search by changing the query in the Omnisearch field. When you change your search terms or filters, the other filters remain applied to preserve your search's context. When results are more than 1000, AEM does not display all searched assets and displays 1000+ as the number of searched assets. This is to improve search performance. As you scroll to see more assets, beyond 1000, the number gradually increases in steps of 200.
 
 At times, you may see some unexpected assets in the search results. For more info, see [unexpected results](#unexpectedresults).
 
-AEM can search many file formats and the search filters can be customized to suit your business requirements. Contact your administrators for understand what search options are made available for your DAM repository and what restrictions your login may have.
+AEM can search many file formats and the search filters can be customized to suit your business requirements. Contact your administrator to understand what search options are made available for your DAM repository and what restrictions your account has.
 
-### Results with and without Enhanced Smart Tags {#withsmarttags}
+### Results with and without Smart Tags {#withsmarttags}
 
 By default, AEM search combines the search terms with an AND clause. For example, consider searching for keywords woman running. Only the assets with both woman and running keywords in the metadata appear in the search results by default. The same behavior is retained when special characters (periods, underscores, or dashes) are used with the keywords. The following search queries return the same results:
 
@@ -90,6 +74,23 @@ Using smart tags adds an extra `OR` clause to find any of the search terms as th
 * Assets with `woman` and `running` keywords in the metadata (default behavior).
 
 * Assets smart tagged with either of the keywords (Smart Tags behavior).
+
+### Search suggestions as you type {#searchsuggestions}
+
+When you start typing keywords, AEM suggests the possible search keywords or phrases. The suggestions are based on the metadata of the existing assets. AEM indexes all the metadata fields to help with search. To provide search suggestions, the system uses the values of the following few metadata fields. To provide search suggestions, consider populating the following fields with appropriate keywords:
+
+* Asset tags. (maps to `jcr:content/metadata/cq:tags`)
+* Asset title. (maps to `jcr:content/metadata/dc:title`)
+* Asset description. (maps to `jcr:content/metadata/dc:description`)
+* Title in the JCR repository. The value may get mapped to Asset title. (maps to `jcr:content/jcr:title`)
+* Description in the JCR repository. The value may get mapped to Asset description. (maps to `jcr:content/jcr:description`)
+
+To receive suggestions for more than one search keywords, continue to type all keywords without selecting any suggestion for a single keyword.
+
+![Type multiple keywords to view suggestions that fit them all](assets/search_suggestionsmanykeywords.gif)
+<br>
+
+*Figure: Type multiple keywords to view suggestions that fit them all*
 
 ### Search ranking and boosting {#searchrank}
 
@@ -121,7 +122,9 @@ AEM provides various methods like filters that apply to the searched assets, to 
 
 ![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
 
-Limit search results to a folder by adding a folder path in Filters panel
+<br>
+
+*Figure: Limit search results to a folder by adding a folder path in Filters panel*
 
 ### Find similar images {#visualsearch}
 
@@ -129,7 +132,9 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 
 ![Find similar images using the option in the card view](assets/search_find_similar.png)
 
-Find similar images using the option in the card view
+<br>
+
+*Figure: Find similar images using the option in the card view*
 
 ### Adobe Stock images {#adobestock}
 
@@ -141,7 +146,7 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 
 ### Search using specific values in metadata fields {#gqlsearch}
 
-You can for assets based on exact values of specific metadata fields, such as, title, description, and author. The GQL full-text search feature fetches only those assets whose metadata value exactly matches your search query. The names of the properties (for example author, title, and so on) and the values are case-sensitive.
+You can search for assets based on exact values of specific metadata fields, such as, title, description, and author. The GQL full-text search feature fetches only those assets whose metadata value exactly matches your search query. The names of the properties (for example author, title, and so on) and the values are case-sensitive.
 
 | Metadata field | Facet value and usage |
 |---|---|
@@ -223,8 +228,8 @@ You can pass the following request parameters in a URL to launch the asset selec
 
 | Name | Values | Example | Purpose |
 |---|---|---|---|
-| resource suffix (B) | Folder path as the resource suffix in the URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path&gt;](https://localhost:4502/aem/assetpicker.html) | To launch the asset selector with a particular folder selected, for example with the folder /content/dam/we-retail/en/activities, selected, the URL should be of the form: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix. |
-| mode | single, multiple | [https://localhost:4502/aem/assetpicker.html?mode=multiplehttps://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=multiplehttps://localhost:4502/aem/assetpicker.html?mode=single) | In multiple mode, you can select several assets simultaneously using the asset selector. |
+| resource suffix (B) | Folder path as the resource suffix in the URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path&gt;](https://localhost:4502/aem/assetpicker.html) | To launch the asset selector with a particular folder selected, for example with the folder `/content/dam/we-retail/en/activities` selected, the URL should be of the form: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix. |
+| mode | single, multiple | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | In multiple mode, you can select several assets simultaneously using the asset selector. |
 | mimetype | mimetype(s) (`/jcr:content/metadata/dc:format`) of an asset (wildcard also supported) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png)</li></ul> | Use it to filter assets based on MIME type(s) |
 | dialog | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use these parameters to open the asset selector as Granite Dialog. This option is only applicable when you launch the asset selector through Granite Path Field, and configure it as pickerSrc URL. |
 | assettype (S) | images, documents, multimedia, archives | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Use this option to filter asset types based on the value passed. |
@@ -234,7 +239,9 @@ To access the asset selector interface, go to `https://[AEM server]:[port]/aem/a
 
 ![Browse and select asset in the asset picker](assets/assetpicker.png)
 
-Browse and select asset in the asset picker
+<br>
+
+*Figure: Browse and select asset in the asset picker*
 
 ## Limitations {#limitations}
 
@@ -243,7 +250,7 @@ The search capability in AEM Assets has the following limitations:
 * Do not enter a leading space in the search query otherwise the search does not work.
 * AEM may continue to show the search term after you select properties of an asset from searched results and then cancel the search. <!-- (CQ-4273540) -->
 * When searching for folders or files and folders, the search results cannot be sorted on any parameter.
-* If you press return without tying anything in Omnisearch bar, AEM returns a list of only files and not folders. If you search specifically for folders without using a keyword, AEM does not return any results.
+* If you press return without typing anything in Omnisearch bar, AEM returns a list of only files and not folders. If you search specifically for folders without using a keyword, AEM does not return any results.
 * Using the [!UICONTROL Select All] check box, you can only select the first 100 searched assets in card view and first 200 searched assets in list view.
 
 Visual search or similarity search has the following limitations:
@@ -251,11 +258,15 @@ Visual search or similarity search has the following limitations:
 * Visual search works best with larger repositories. While there is no minimum number of images required for good results, the quality of matches with a few images may not be as good as the matches from a large repository.
 * You cannot change the model or train AEM to find similar images. For example, adding or removing smart tags to a few assets does not change the model. The assets do get excluded from the visually similar search results.
 
+Search functionality may have performance limitations in the following scenarios:
+
+* Card view has a faster load time as compared to list view to display the search results.
+
 ## Search tips {#tips}
 
 * When monitoring the review status of assets, use the appropriate option to find which assets are approved or assets that are pending approval.
 * Use the Insights predicate to search for supported assets based on their usage statistics obtained from various Creative apps. Usage data is grouped under Usage score, Impressions, Clicks, and Media channels where the assets appear categories.
-* Use the [!UICONTROL Select All] check box to select the searched assets. It selects first 100 assets in card view and first 200 assets in list view. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection.
+* Use the **[!UICONTROL Select All]** check box to select the searched assets. It selects first 100 assets in card view and first 200 assets in list view. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection.
 * To search for assets that do not contain the mandatory metadata, see [mandatory metadata](#mandatorymetadata).
 * Search uses all metadata fields. A generic search, such as searching for 12, usually returns many results. For better results, use double (not single) quotes or ensure that the number is contiguous to a word without a special character (for example *shoe12*).
 * Full text search supports operators such as -, ^, and so on. To search these letters as string literals, enclose the search expression in double quotes. For example, use "Notebook - Beauty" instead of Notebook - Beauty.
@@ -271,7 +282,9 @@ Use double quotations around keywords to find assets that contain the exact phra
 
 ![Search behavior with and without quotation marks](assets/search_with_quotes.gif)
 
-Search behavior with and without quotation marks
+<br>
+
+*Figure: Search behavior with and without quotation marks*
 
 **Search with asterisk wildcard**: To broaden the search, use an asterisk before or after the search word to match any number of characters. For example, searching for run without an asterisk does not return assets containing any variation of the word (including in the metadata). An asterisk substitutes for any number of characters. For example,
 
@@ -282,7 +295,9 @@ Search behavior with and without quotation marks
 
 ![Illustrating use of asterisk wildcard in Asset search using an example](assets/search_with_asterisk_run.gif)
 
-Illustrating use of asterisk wildcard in Asset search using an example
+<br>
+
+*Figure: Illustrating use of asterisk wildcard in Asset search using an example*
 
 **Search with question mark wildcard**: To broaden the search, use one or more '?' characters to match exact number of characters. For example, in the following illustration,
 
@@ -294,13 +309,17 @@ Illustrating use of asterisk wildcard in Asset search using an example
 
 ![Illustrating use of question mark wildcard in Asset search using an example](assets/search_with_questionmark_run.gif)
 
-Illustrating use of question mark wildcard in Asset search using an example
+<br>
+
+*Figure: Illustrating use of question mark wildcard in Asset search using an example*
 
 **Exclude a keyword**: Use dash to search for assets that do not contain a keyword. For example, `running -shoe` query returns assets that contain `running`, but not `shoe`. Similarly, `camp -night` query returns assets that contain `camp` but not `night`. Note that `camp-night` query returns assets that contain both `camp` and `night`.
 
 ![Use of dash to search for assets not containing an excluded keyword](assets/search_dash_exclude_keyword.gif)
 
-Use of dash to search for assets not containing an excluded keyword
+<br>
+
+*Figure: Use of dash to search for assets not containing an excluded keyword*
 
 ## Configuration and administration tasks related to search functionality {#configadmin}
 
@@ -403,7 +422,9 @@ To check the comments on an asset or version history of an asset, click the asse
 
 ![Sort timeline entries for a search asset](assets/sort_timeline_search_results.gif)
 
-Sort timeline entries for a search asset
+<br>
+
+*Figure: Sort timeline entries for a search asset*
 
 ### Download searched assets {#download}
 
@@ -424,33 +445,22 @@ A collection is an ordered set of assets that can include assets from different 
 
 You can create smart collections based on the search criteria. From the **[!UICONTROL Filters]** panel, select **[!UICONTROL Files]** and click **[!UICONTROL Save Smart Collection]**. See [manage collections](/help/assets/managing-collections-touch-ui.md).
 
-## Unexpected search results {#unexpectedresults}
+## Troubleshoot unexpected search results and issues {#troubleshoot-unexpected-search-results-and-issues}
 
-**Search for missing metadata**: When searching for assets that are missing the mandatory metadata, AEM may display some assets that have valid metadata. Missing metadata is detected and reported based on indexed metadata property. Even if the asset metadata is fixed, it continues to show as missing metadata until reindexing occurs. See [mandatory metadata](/help/assets/metadata-schemas.md#define-mandatory-metadata).
+| Error, issues, symptoms | Possible reason | Possible fix or understanding of the issue |
+|---|---|---|
+| Incorrect results when searching for assets with missing metadata| When searching for assets that are missing the mandatory metadata, AEM may display some assets that have valid metadata. The results are based on indexed metadata property. | After the metadata is updated, reindexing is required to reflect correct state of assets metadata. See [mandatory metadata](metadata-schemas.md#define-mandatory-metadata).|
+| Too many search results| Broad search parameter.| Consider limiting the [scope of search](#scope). Use of smart tags may give you more search results than you expected. See [search behavior with smart tags](#withsmarttags). |
+| Unrelated or partly-related search results | Search behavior changes with smart tagging.| Understand [how search changes after smart tagging](#withsmarttags).|
+| No auto-complete suggestions for assets| Newly uploaded assets are not indexed yet. The metadata is not immediately available as suggestions when you start typing a search keyword in Omnisearch bar.| AEM Assets waits until the expiry of a timeout period (one hour by default) before running a background job to index the metadata for all newly uploaded or updated assets and then adds the metadata to the list of suggestions. |
+| No search results| <ul><li>No assets exist that match your query.</li><li>You added a whitespace before the search query.</li><li>An unsupported metadata field contains the keyword that you search for.</li><li>On time and off time is configured for asset and the search was made during an asset's off time.</li></ul> | <ul><li>Search using a different keyword. Alternatively, use (smart) tagging to improve search results.</li><li>It is a [known limitation](#limitations).</li><li>Not all metadata fields are considered for searches. See [scope](#scope).</li><li>Search later or modify on and off timings for the required assets.</li></ul> |
+| Search filter/ predicate is not available | <ul><li>The search filter is either not configured.</li><li>It is not available for your login.</li><li>(Less likely) The search options are not customized on the deployment you are using.</li></ul> | <ul><li>Contact administrator to check if the search customizations are available or not.</li><li>Contact administrator to check if your account has the priviledge/permissions to use the customization.</li><li>Contact administrator and check the available customizations for the AEM Assets deployment you are using.</li></ul> |
+| When searching for visually similar images, an expected image is missing | <ul><li>Image is not available in AEM.</li><li>Image is not indexed. Typically, when it is recently uploaded.</li><li>Image is not smart tagged.</li></ul> | <ul><li>Add the image to AEM Assets.</li><li>Contact your administrator to re-index the repository. Also, ensure that you are using the appropriate index.</li><li>Contact your administrator to smart tag the relevant assets.</li></ul> |
+| When searching for visually similar images, an irrelevant image is displayed | Visual search behavior.| AEM displays as many potentially relevant assets as possible. Less relevant images, if any, are added to the results but with a lower search ranking. The quality of the matches and relevance of searched assets decrease as you scroll down the search results. |
+| When selecting and operating on searched assets, all searched assets are not operated upon | The [!UICONTROL Select All] option only selects first 100 search results in card view and first 200 search results in list view. ||
 
-**Too many search results**: To avoid getting too many search results, consider limiting the search results. For example, to search for assets in DAM, select `Location:Assets` in Omnisearch bar. For more search filters, see [scope of search](#scope).
-
-Another reason to get more than expected search results can be use of smarts tags. See [search behavior with smart tags](#withsmarttags).
-
-**Partially related or unrelated search results**: AEM may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
-
-**No auto-complete suggestions for newly uploaded assets**: The metadata (titles, tags, and so on) of the recently uploaded assets is not immediately available as suggestions when you start typing a search keyword in Omnisearch bar. AEM Assets waits until the expiry of a timeout period (one hour by default) before running a background job to index the metadata for all newly uploaded or updated assets and then adds the metadata to the list of suggestions.
-
-**No search results**: If AEM and displays an empty page for a search query, the following may be reasons:
-
-* No assets exist that match your query.
-* You add a whitespace before the search query. It is a [known limitation](#limitations).
-
-* An unsupported metadata field contains the keyword that you search for. Not all metadata fields are considered for searches. See [scope](#scope).
-* On time and off time is configured for asset and the search was made during an asset's off time.
-
-**Search filter/predicate is not available**: If an expected customization to search filters is not available on the user interface, contact your administrator to check if the customization was implemented for all authors and on the production server you are using. It is possible that the configuration was incorrect.
-
-## Troubleshoot search-related issues {#troubleshoot}
-
-See the issues and possible course of action below:
-
-* If an expected search filter/predicate is not visible, contact your administrator.
-* When searching for visually similar images, at times an expected image may be missing from the search results. Check if such assets are indexed and smart tagged.
-* When searching for visually similar images, at times a seemingly irrelevant image may be displayed in the search results. AEM displays as many potentially relevant assets as possible. Less relevant images, if any, are added to the results but with a lower search ranking. The quality of the matches and relevance of searched assets decrease as you scroll down the search results.
-* When selecting and operating on searched assets, all searched assets may not be operated upon. The [!UICONTROL Select All] option only selects first 100 search results in card view and first 200 search results in list view.
+>[!MORE LIKE THIS]
+>
+>* [AEM search implementation guide](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [Advanced configuration of multi-value and tag search predicates](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
+>* [Configure smart translation search](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)

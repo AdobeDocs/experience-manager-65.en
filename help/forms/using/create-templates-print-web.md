@@ -219,14 +219,14 @@ Execute the following steps to create a template for the Web channel in the **Cr
 
    ![Content tree](assets/content_tree_root_panel_new.png)
 
-1. Select the panel and tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
+1. Select the panel and tap ![](assets/configure_icon.png) (Configure).
 1. In the Properties pane:
 
     1. Specify **billdetails** in the Name field.
     1. Specify **Bill Details** in the Title field.
     1. Select **1** from the **Number of Columns** drop-down list.
 
-    1. Tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties.
+    1. Tap ![](/help/forms/using/assets/done_icon.png) to save the properties.
 
    The name of the panel is updated to **Bill Details** in the content tree.
 
@@ -270,5 +270,4 @@ Based on the use case, you must include the **Pay Now** and **Subscribe** button
 
    ![Allowed components](assets/allowed_components_af_new.png)
 
-1. Tap ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the properties.
-
+1. Tap ![](assets/done_icon.png) to save the properties.

@@ -11,7 +11,7 @@ topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 ---
 
-# Developing with SAP Commerce Cloud{#developing-with-sap-commerce-cloud}
+# Developing with SAP Commerce Cloud {#developing-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ The integration framework includes an integration layer with an API. This allows
 * plug in an eCommerce system and pull product data into AEM
 * build AEM components for commerce capabilities independent of the specific eCommerce engine
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![chlimage_1-11](assets/chlimage_1-11a.png)
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
 * On hybris it is possible to specify feed contents in a declarative way.
 * Mapping the feed structure to the AEM content model happens in the feed adapter on the AEM side.
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![chlimage_1-12](assets/chlimage_1-12a.png)
 
 * The importer (b) is used for the initial setup of the page tree structure in AEM for catalogs.
 * Catalog changes in hybris are indicated to AEM via a feed, these then propagate to AEM (b)
@@ -429,7 +429,7 @@ public class AxisFilter implements VariantFilter {
 
 * The following illustrates an example of cart information in the ClientContext cart:
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![chlimage_1-13](assets/chlimage_1-13a.png)
 
 #### Architecture of Checkout {#architecture-of-checkout}
 
@@ -519,7 +519,7 @@ The eCommerce project contains a default search component, located in:
 
 `/libs/commerce/components/search`
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![chlimage_1-14](assets/chlimage_1-14a.png)
 
 This makes use of the search API to query the selected commerce engine (see [eCommerce Engine Selection](#ecommerce-engine-selection)):
 

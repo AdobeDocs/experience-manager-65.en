@@ -43,7 +43,7 @@ For additional complex data types available in AEM Forms workflows, see [Variabl
 
 Execute the following steps to create a variable:
 
-1. On an AEM instance, navigate to Tools ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/aem-forms/icons/Hammer.png) &gt; Workflow &gt; Models.
+1. On an AEM instance, navigate to Tools &gt; Workflow &gt; Models.
 1. Tap **[!UICONTROL Create]** and specify the title and an optional name for the workflow model. Select the model and tap **[!UICONTROL Edit]**.
 1. Tap the variables icon available in the sidekick of the workflow model and tap **[!UICONTROL Add Variable]**.
 
