@@ -317,9 +317,6 @@ You combine data (records) saved in an external data source with an interactive 
                                 outputStream.write(bytes, 0, read);
                             }
 
-                            // commons-io
-                            //IOUtils.copy(inputStream, outputStream);
-
                         }
 
                     }
