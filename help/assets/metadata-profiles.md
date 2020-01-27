@@ -1,12 +1,7 @@
 ---
 title: Metadata profiles to customize metadata requirements of assets
 description: Know about metadata profiles for assets. Learn how to create a metadata profile and apply it to folder assets.
-uuid: 05732f17-863a-4aa6-bb1a-9549565be076
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 641bb668-e3b2-4370-9805-576db1d205d3
-docset: aem65
-
 ---
 
 # Metadata profiles {#metadata-profiles}

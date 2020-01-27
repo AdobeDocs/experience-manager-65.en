@@ -1,12 +1,7 @@
 ---
 title: Assets performance tuning guide
 description: Suggestions and guidance about AEM configuration, changes to hardware, software, and network components to remove bottlenecks and optimize the performance of AEM Assets.
-uuid: 5e590b0c-7f89-4ba4-8263-43fdb3e920ea
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 30f241ef-2dfb-471e-98fd-d21b9e752c4c
-docset: aem65
-tagskeywords: performance tuning, AEM Assets, software optimization, hardware optimization
 mini-toc-levels: 1
 
 ---

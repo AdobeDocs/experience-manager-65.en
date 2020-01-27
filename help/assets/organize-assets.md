@@ -1,12 +1,7 @@
 ---
 title: Organize your digital assets
 description: Organize your digital assets, images, files, folders, and so on using Experience Manager.
-uuid: 3baf6563-c90e-4bf6-8c04-c68877e3f146
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 5877f8f8-1f4b-430c-a173-13c40b233c33
-docset: aem65
-
 ---
 
 # Organize your digital assets {#organize-digital-assets}

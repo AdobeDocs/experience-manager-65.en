@@ -270,7 +270,7 @@ To send out a newsletter from a list:
 
 1. Select the check box next to the list of leads you want to send a newsletter to.
 
-1. In the **Tools **menu, select **Send Newsletter**. The **Send Newsletter** window opens.
+1. In the **Tools** menu, select **Send Newsletter**. The **Send Newsletter** window opens.
 
    ![mcm_newslettersendfromlist](assets/mcm_newslettersendfromlist.png)
 

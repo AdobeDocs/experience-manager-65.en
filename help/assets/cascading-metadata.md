@@ -1,12 +1,7 @@
 ---
 title: Cascading Metadata
 description: This article describes how to define cascading metadata for assets.
-uuid: 4660774b-3915-4b9b-8346-c8a207486a6f
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 89db8d26-744f-4d5c-8f00-6f69a4c5ca5e
-docset: aem65
-
 ---
 
 # Cascading metadata {#cascading-metadata}
@@ -93,7 +88,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
    >[!NOTE]
    >
-   >Tapping/clicking on whitespaces (or anyplace other than values) resets the values. If it happens, re-select the values.
+   >Tapping/clicking on a whitespace (or any place other than the values) resets the values. If it happens, re-select the values.
 
    >[!NOTE]
    >

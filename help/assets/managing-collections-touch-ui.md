@@ -1,11 +1,7 @@
 ---
 title: Manage asset collections
 description: Learn tasks to manage Collections of assets, such as create, view, delete, edit, and download collections.
-uuid: b23c4cf5-fb3d-45cb-b393-d3b9dc6b03bb
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: f2b11641-a88d-453b-8ec7-b5c83c78578f
-docset: aem65
 mini-toc-levels: 1
 ---
 
@@ -86,7 +82,7 @@ You can drag assets from the Assets UI to a collection. You can also create a co
 A Smart Collection uses a search criteria to dynamically populate assets. You can create a Smart Collection using only files and not folders or files and folders.
 
 1. Navigate to the Assets UI, and tap/click the **[!UICONTROL Search]** icon.
-1. Enter search keyword in the Omni Search box and press Enter. Tap/click the GlobalNav icon to display the Filters panel and apply a search filter from the Search panel.
+1. Enter search keyword in the Omnisearch box and press Enter. Tap/click the GlobalNav icon to display the Filters panel and apply a search filter from the Search panel.
 1. From the **[!UICONTROL Files & Folders]** list, select **[!UICONTROL Files]**.
 
    ![files_option](assets/files_option.png)

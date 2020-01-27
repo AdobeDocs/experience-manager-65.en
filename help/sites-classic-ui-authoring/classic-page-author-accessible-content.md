@@ -76,7 +76,7 @@ For static graphics, the basic requirement is to provide an equivalent text alte
 
 The **Alt Text** field is available in the **Advanced** image properties tab of the **Image** component dialog:
 
-![Edit dialog of the Image component in the classic UI; shows the Alt Text field.](assets/chlimage_1-17.png)
+![Edit dialog of the Image component in the classic UI; shows the Alt Text field.](assets/chlimage_1-17a.png)
 
 AEM adds an **Alt Text** to your images by default. For the classic UI there are two different scenarios for how the default attribute is created (though the default value may not be sufficient as an alternative and will most likely need to be edited in the **Advanced** image properties tab):
 
@@ -127,7 +127,7 @@ Specific types of non-text content that require text alternatives might include:
 
   These typically represent numerical data. So one option for providing a text alternative might be to include a brief summary of the main trends shown in the chart or graphic. If necessary, also provide a more detailed description in text using the **Description** field in the **Advanced** image properties tab. Additionally, you could provide the source data in tabular form elsewhere in the page or site.
 
-  ![Example of a graph. Below is the best approach to providing an alternative.](assets/chlimage_1-2.jpeg)
+  ![Example of a graph. Below is the best approach to providing an alternative.](assets/chlimage_1-2a.jpeg)
 
   To provide an alternative for this example chart, add a concise `alt` text to the image itself and then follow the image with a full text alternative.
 
@@ -368,7 +368,7 @@ AEM makes it easy to construct web pages using the appropriate HTML elements. Op
 
 The following image shows text that has been styled as paragraph text; the source code view being used shows it has the correct opening and closing &lt;p&gt; and &lt;/p&gt; tags.
 
-![An example of the Paragraph element shown in source edit mode (classic UI).](assets/chlimage_1-18.png)
+![An example of the Paragraph element shown in source edit mode (classic UI).](assets/chlimage_1-18a.png)
 
 You can make sure your web pages are given the appropriate structure by:
 
@@ -378,7 +378,7 @@ You can make sure your web pages are given the appropriate structure by:
 
   The following image demonstrates an example of the different types of headings.
 
-  ![Headings H1 through to H3 shown in the drop down selector (classic UI).](assets/chlimage_1-19.png)
+  ![Headings H1 through to H3 shown in the drop down selector (classic UI).](assets/chlimage_1-19a.png)
 
 * **Emphasized text**:
 
@@ -440,11 +440,11 @@ You can make sure your web pages are given the appropriate structure by:
     * an appropriate **Caption**.
     * Ideally remove any default values for **Width**, **Height**, **Border**, **Cell padding**, **Cell spacing**. as these properties can be set in a global style sheet.
 
-  ![Table properties dialog.](assets/chlimage_1-20.png)
+  ![Table properties dialog.](assets/chlimage_1-20a.png)
 
-  You can then use the **Cell propertires** to choose whether the cell is a data or header cell and, if a header cell, whether it relates to a row or column or both:
+  You can then use the **Cell properties** to choose whether the cell is a data or header cell and, if a header cell, whether it relates to a row or column or both:
 
-  ![Call properties dialog; setting a row (usually the first one) as a header row.](assets/chlimage_1-21.png)
+  ![Call properties dialog; setting a row (usually the first one) as a header row.](assets/chlimage_1-21a.png)
 
 * **Complex Data Tables:**
 
@@ -909,7 +909,7 @@ Providing instructions to help people complete forms is a fundamental part of go
 
 In AEM a default label is added when you add a form component, such as a **Text Field**, to the page. This default title is dependent on the component type, You can add your own title in the **Title and Text** tab of the edit dialog for that field. It is important to ensure that labels help users to understand the data associated with each form component.
 
-![Title and Text tab (edit dialog); the title ‘Description’ has been added.](assets/chlimage_1-22.png)
+![Title and Text tab (edit dialog); the title ‘Description’ has been added.](assets/chlimage_1-22a.png)
 
 This **Title** field must be used for field elements as it provides a label that is available to assistive technology. Simply writing a label in text beside the field is not sufficient.
 
@@ -919,13 +919,13 @@ For some form components it is also possible to visually hide labels using the *
 
 Where image buttons are used (for example, the **Image Button** component) the **Title** field in the **Title and Text** tab of the edit dialog actually provides the alt text for the image, rather than the label. So, in the example below, the image with the text `Submit` has alt text of `Submit`, added using the **Title** field in the edit dialog.
 
-![Image button with the Alt Text set in the Title field (edit dialog).](assets/chlimage_1-23.png)
+![Image button with the Alt Text set in the Title field (edit dialog).](assets/chlimage_1-23a.png)
 
 #### Groups of Form Fields {#groups-of-form-fields}
 
 Where there is a group of related controls, such as **Radio Group**, a title may be needed for the group, as well as individual controls. When adding a set of radio buttons in AEM, the **Title** field provides this group title, while individual titles are specified as the radio buttons (**Items**) are created.
 
-![Adding items to the radio group. The group title is 'Contact me by' - defined in the Title field.](assets/chlimage_1-24.png)
+![Adding items to the radio group. The group title is 'Contact me by' - defined in the Title field.](assets/chlimage_1-24a.png)
 
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
@@ -935,7 +935,7 @@ If data is to be entered in a specific format, make this clear in the label text
 
 If input for a form field is mandatory, make this clear by using the word required as part of the label. AEM adds an asterisk when a field is required, but it would be ideal to include the word `required`in the label itself (in the **Title** field in the edit dialog).
 
-![Adding additional information (the word required) for screen reader users in the ‘Title’ field.](assets/chlimage_1-25.png)
+![Adding additional information (the word required) for screen reader users in the ‘Title’ field.](assets/chlimage_1-25a.png)
 
 The positioning of labels is also important as it helps them to locate appropriate fields. This is of particular importance when the user is faced with a complex form. Follow the convention below:
 

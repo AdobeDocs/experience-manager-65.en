@@ -13,14 +13,14 @@ docset: aem65
 
 # Embed adaptive form in external web page{#embed-adaptive-form-in-external-web-page}
 
-You can [embed adaptive forms in an AEM Sites page](https://chl-author-preview.corp.adobe.com/content/help/en/experience-manager/6-4/forms/using/embed-adaptive-form-aem-sites.html) or a web page hosted outside AEM. The embedded adaptive form is fully functional and users can fill and submit the form without leaving the page. It helps the user remain in the context of other elements on the web page and simultaneously interact with the form..
+You can [embed adaptive forms in an AEM Sites page](/help/forms/using/embed-adaptive-form-aem-sites.md) or a web page hosted outside AEM. The embedded adaptive form is fully functional and users can fill and submit the form without leaving the page. It helps the user remain in the context of other elements on the web page and simultaneously interact with the form..
 
 ## Prerequisites {#prerequisites}
 
 Perform the following steps before embedding an adaptive form to an external website
 
-* Publish the adaptive form to be embeded to the publish instance of AEM Forms server.  
-* Create or identify a webpage on your website to host the adaptive form. Ensure that the webpage can [read jQuery files from a CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) or has a local copy of the jQuery embeded. jQuery is required to render an adaptive form. 
+* Publish the adaptive form to be embeded to the publish instance of AEM Forms server.
+* Create or identify a webpage on your website to host the adaptive form. Ensure that the webpage can [read jQuery files from a CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) or has a local copy of the jQuery embeded. jQuery is required to render an adaptive form.
 * When AEM server and the web page are on different domains, perform the steps listed in sectiion, [enable AEM Forms to serve adaptive forms to a cross domain site](#cross-domain).
 
 ## Embed adaptive form {#embed-adaptive-form}
@@ -50,7 +50,7 @@ To embed the adaptive form:
        if(options.path) {
            // options.path refers to the publish URL of the adaptive form
            // For Example: https:myserver:4503/content/forms/af/ABC, where ABC is the adaptive form
-           // Note: If AEM server is running on a context path, the adaptive form URL must contain the context path 
+           // Note: If AEM server is running on a context path, the adaptive form URL must contain the context path
            var path = options.path;
            path += "/jcr:content/guideContainer.html";
            $.ajax({
@@ -84,7 +84,7 @@ To embed the adaptive form:
            }
        }
     }(options);
-    
+
     </script>
      </body>
    </html>
@@ -92,19 +92,19 @@ To embed the adaptive form:
 
 1. In the embedded code:
 
-    * Change value of the* options.path* variable with the path of the publish URL of the adaptive form. If the AEM server is running on a context path, ensure that the URL includes the context path. For example, the above code and adaptive from reside on same aem forms server so the example uses context path of adaptive form /content/forms/af/locbasic.html. 
-    * Replace *options.dataRef* with attributes to pass with the URL. You can use the dataref variable to [prefill an adaptive form](/help/forms/using/prepopulate-adaptive-form-fields.md). 
-    
+    * Change value of the* options.path* variable with the path of the publish URL of the adaptive form. If the AEM server is running on a context path, ensure that the URL includes the context path. For example, the above code and adaptive from reside on same aem forms server so the example uses context path of adaptive form /content/forms/af/locbasic.html.
+    * Replace *options.dataRef* with attributes to pass with the URL. You can use the dataref variable to [prefill an adaptive form](/help/forms/using/prepopulate-adaptive-form-fields.md).
+
     * Replace *options.themePath* with the path to a theme other than the theme configured in the adaptive form. Alternatively, you can specify the theme path using the request attribute.
     * CSS_Selector is the CSS selector of the form container in which the adaptive form is embedded. For example, .customafsection css class is the CSS selector in the above example.
 
 The adaptive form is embedded in the web page. Observe the following in the embedded adaptive form:
 
 * Header and footer in the original adaptive form are not included in the embedded form.
-* Drafts and submitted forms are available in the Drafts and Submissions tab in the Forms Portal. 
+* Drafts and submitted forms are available in the Drafts and Submissions tab in the Forms Portal.
 * Submit action configured on the original adaptive form is retained in the embedded form.
 * Adaptive form rules are retained and fully functional in the embedded form.
-* Experience targeting and A/B tests configured in the original adaptive form do not work in the embedded form. 
+* Experience targeting and A/B tests configured in the original adaptive form do not work in the embedded form.
 * If Adobe Analytics is configured on the original form, the analytics data is captured in Adobe Analytics server. However, it is not available in the Forms analytics report.
 
 ## Sample topology {#sample-topology}
@@ -116,14 +116,14 @@ Let's look at an example how you can set up an Apache 2.4 reverse proxy server w
 1. Open the `httpd.conf` configuration file and uncomment the following lines of code. Alternatively, you can add these lines of code in the file.
 
    ```
-   LoadModule proxy_html_module modules/mod_proxy_html.so 
+   LoadModule proxy_html_module modules/mod_proxy_html.so
     LoadModule proxy_http_module modules/mod_proxy_http.so
    ```
 
 1. Set up proxy rules by adding the following lines of code in the `httpd-proxy.conf` configuration file.
 
    ```
-   ProxyPass /forms https://[AEM_Instance]/forms 
+   ProxyPass /forms https://[AEM_Instance]/forms
     ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
 
@@ -137,7 +137,7 @@ ProxyPass /etc https://<AEM_Instance>/etc
 ProxyPass /etc.clientlibs https://<AEM_Instance>/etc.clientlibs
 # CSRF Filter
 ProxyPass /libs/granite/csrf/token.json https://<AEM_Instance>/libs/granite/csrf/token.json
-  
+
 ProxyPassReverse /etc https://<AEM_Instance>/etc
 ProxyPassReverse /etc.clientlibs https://<AEM_Instance>/etc.clientlibs
 # written for thank you page and other URL present in AF during redirect
@@ -153,8 +153,8 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 When embedding an adaptive form in a web page, consider the following best practices:
 
 * Ensure that the styling rules defined in the web page CSS do not conflict with the form object CSS. To avoid the conflicts, you can reuse the web page CSS in the adaptive form theme using AEM client library. For information about using client library in adaptive form themes, see [Themes in AEM Forms](../../forms/using/themes.md).
-* Make the form container in the web page use the entire window width. It ensures that the CSS rules configured for mobile devices work without any changes. If the form container does not take the entire window width, you need to write custom CSS to make the form adapt to different mobile devices. 
-* Use ` [getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API to get the XML or JSON representation of form data in client. 
+* Make the form container in the web page use the entire window width. It ensures that the CSS rules configured for mobile devices work without any changes. If the form container does not take the entire window width, you need to write custom CSS to make the form adapt to different mobile devices.
+* Use ` [getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API to get the XML or JSON representation of form data in client.
 * Use ` [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API to unload the adaptive form from HTML DOM.
 * Set up the access-control-origin header when sending response from AEM server.
 

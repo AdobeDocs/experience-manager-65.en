@@ -1,11 +1,7 @@
 ---
 title: Prepare assets for translation
 description: Create language root folders to prepare assets for translation to support multilingual assets.
-uuid: 8a146234-60c0-4ee6-8f54-1275c887be23
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 61f86320-71a6-4d3c-839d-155a2083d995
-
 ---
 
 # Prepare assets for translation {#preparing-assets-for-translation}

@@ -33,10 +33,10 @@ You require the following to integrate Adobe Sign with AEM Forms:
 
 After prerequisites are in place, perform the following steps to configure Adobe Sign with AEM Forms on the Author instance:
 
-1. On AEM Forms author instance, navigate to **Tools** ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/aem-forms/icons/Hammer.png) &gt; **General** &gt; **Configuration Browser**.
+1. On AEM Forms author instance, navigate to **Tools** ![](assets/hammer.png) &gt; **General** &gt; **Configuration Browser**.
 1. On the **[!UICONTROL Configuration Browser]** page, tap **[!UICONTROL Create]**.
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a **[!UICONTROL Title]** for the configuration, enable **[!UICONTROL Cloud Configurations]**, and tap **[!UICONTROL Create]**. It creates a configuration container for cloud services.
-1. Navigate to **Tools** ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/aem-forms/icons/Hammer.png) &gt; **Cloud Services** &gt; **Adobe Sign** and select the configuration container you created in the above step.
+1. Navigate to **Tools** ![](assets/hammer.png) &gt; **Cloud Services** &gt; **Adobe Sign** and select the configuration container you created in the above step.
 
    >[!NOTE]
    >
@@ -52,7 +52,6 @@ After prerequisites are in place, perform the following steps to configure Adobe
     1. Open a browser window and sign in to the Adobe Sign developer account.
     1. Select the application configured for AEM Forms, and tap Configure OAuth for Application.
     1. In the **Redirect URL** box, add the HTTPS URL copied in the previous step and click **Save**.
-
     1. Enable the following OAuth settings for the Adobe Sign application and click **Save**.
 
     * aggrement_read
@@ -62,7 +61,8 @@ After prerequisites are in place, perform the following steps to configure Adobe
     * workflow_read
 
    For step-by-step information to configure OAuth settings for an Adobe Sign application and obtain the keys, see [Configure oAuth settings for the application](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md) developer documentation.
-   [![OAuth Config](assets/oauthconfig_new.png)](OAuth Config.md)
+
+   ![OAuth Config](assets/oauthconfig_new.png)
 
 1. Go back to the **Create Adobe Sign Configuration** page. In the **[!UICONTROL Settings]** tab, the **[!UICONTROL OAuth URL]** field mentions the following default URL:
 

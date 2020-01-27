@@ -16,7 +16,6 @@ discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
 This document describes how the dynamic model to component mapping occurs in the Javascript SPA SDK for AEM.
 
 >[!NOTE]
->The Single-Page Application (SPA) Editor feature requires AEM 6.4 service pack 2 or newer.
 >
 >The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
 

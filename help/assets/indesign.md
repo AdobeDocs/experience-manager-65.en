@@ -1,12 +1,7 @@
 ---
 title: Integrate AEM Assets with Adobe InDesign Server
 description: Learn how to integrate AEM Assets with Adobe InDesign Server.
-uuid: 3b202615-7d8d-484d-83e3-f7eb49b47cc4
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 0ed8426d-731a-4bf2-87ef-a1faeb44aae0
-docset: aem65
-
 ---
 
 # Integrate AEM Assets with Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
@@ -53,10 +48,7 @@ The Adobe InDesign Server can be integrated with AEM Assets so that INDD files c
 
    >[!NOTE]
    >
-   >IDML is an XML-based format that renders *everything* in the InDesign file. It is stored as an compressed package using [Zip](https://www.techterms.com/definition/zip) compression.
-   >
-   >
-   >See [Adobe Press - InDesign Interchange Formats INX and IDML](https://www.adobepress.com/articles/article.asp?p=1381880&seqNum=8) for further information.
+   >IDML is an XML-based format that renders all contents of the InDesign file. It is stored as an compressed package using [ZIP](https://www.techterms.com/definition/zip) compression. For more information, see [InDesign Interchange Formats INX and IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&seqNum=8).
 
    >[!CAUTION]
    >
@@ -75,7 +67,6 @@ To integrate the InDesign Server for use with AEM Assets and after configuring y
 1. [Install the InDesign Server](#installing-the-indesign-server).
 1. If required, [configure the AEM Assets Workflow](#configuring-the-aem-assets-workflow).
    This is only necessary if the default values are not appropriate for your instance.
-
 1. Configure a [proxy worker for the InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
 ### Install the InDesign Server {#installing-the-indesign-server}
@@ -83,10 +74,6 @@ To integrate the InDesign Server for use with AEM Assets and after configuring y
 To install and start the InDesign Server for use with AEM:
 
 1. Download and install the Adobe InDesign Server.
-
-   >[!NOTE]
-   >
-   >InDesign Server (CS6 and higher).
 
 1. If required, you can customize the configuration of your InDesign Server instance.
 
@@ -99,8 +86,6 @@ To install and start the InDesign Server for use with AEM:
    >[!NOTE]
    >
    >If you want to save the output messages to a file then use redirection; for example, under Windows:
-   >
-   >
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
 ### Configure the AEM Assets workflow {#configuring-the-aem-assets-workflow}
@@ -190,20 +175,16 @@ If the InDesign server and AEM run on different hosts or either or both these ap
 
 ### Enable parallel job processing for InDesign servers {#enabling-parallel-job-processing-for-indesign-server-s}
 
-You can now enable parallel job processing for IDS.
+You can now enable parallel job processing for IDS. Determine the maximum number of parallel jobs (`x`) an InDesign Server can process:
 
-First you need to determine the maximum number of parallel jobs (`x`) an InDesign Server can process:
-
-* On a single multiprocessor machine, the maximum number of parallel jobs (x) that an InDesign Server can process is one less than the number of processors running IDS.
+* On a single multiprocessor machine, the maximum number of parallel jobs (`x`) that an InDesign Server can process is one less than the number of processors running IDS.
 * When you are running IDS on multiple machines you need to count the total number of processors available (ie on all machines) then subtract the total number of machines.
 
 To configure the number of parallel IDS jobs:
 
 1. Open the **[!UICONTROL Configurations]** tab of the Felix Console; for example: `https://[aem_server]:[port]/system/console/configMgr`.
 
-1. Select the IDS processing queue under:
-
-   `Apache Sling Job Queue Configuration`
+1. Select the IDS processing queue under `Apache Sling Job Queue Configuration`.
 
 1. Set:
 
@@ -211,8 +192,8 @@ To configure the number of parallel IDS jobs:
     * **Maximum Parallel Jobs** - `<*x*>` (as calculated above)
 
 1. Save these changes.
-1. To enable multi-session support for Adobe CS6 and above, check `enable.multisession.name` checkbox, under `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuration.
-1. Create a [pool of &lt;x&gt; IDS workers by adding SOAP endpoints to the IDS Worker configuration](#configuring-the-proxy-worker-for-indesign-server).
+1. To enable multi-session support for Adobe CS6 and later, check `enable.multisession.name` checkbox, under `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuration.
+1. Create a [pool of `x` IDS workers by adding SOAP endpoints to the IDS Worker configuration](#configuring-the-proxy-worker-for-indesign-server).
 
    If there are multiple machines running InDesign Servers, add SOAP endpoints (number of processors per machine -1) for each machine.
 
@@ -248,3 +229,7 @@ You can change the default administrator credentials (user name and password) fo
 1. Go to `/etc/cloudservices/proxy.html`.
 1. In the dialog, specify the new user name and password.
 1. Save the credentials.
+
+>[!MORELIKETHIS]
+>
+> [About Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)

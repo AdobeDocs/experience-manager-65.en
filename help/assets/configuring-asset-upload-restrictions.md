@@ -1,11 +1,7 @@
 ---
 title: Configure asset upload restrictions
 description: Restrict the type of assets (files) that users can upload 
-uuid: bcde34f1-5d64-4dc3-a124-0482c93be31e
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: ff6b23fb-347d-4e68-932e-52b42b15f784
-
 ---
 
 # Configure asset upload restrictions {#configuring-asset-upload-restrictions}

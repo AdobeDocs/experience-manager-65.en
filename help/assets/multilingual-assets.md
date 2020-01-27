@@ -1,10 +1,7 @@
 ---
 title: Multilingual assets
 description: Learn how to automate workflows to translate assets, including binaries, metadata, and tags into multiple languages.
-uuid: 38bb06f6-058b-4b22-871a-bcf028d334a7
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 56c223ea-14b0-4679-b458-c3554e6828fb
 ---
 
 # Multilingual assets {#multilingual-assets}
