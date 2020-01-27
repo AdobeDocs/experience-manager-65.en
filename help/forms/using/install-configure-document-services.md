@@ -300,7 +300,7 @@ Change the Microsoft Office trust center settings to enable the PDF Generator se
 The user account used to start the application server requires the **Replace a process level token** privilege. The local system account has the **Replace a process level token** privilege by default. For the servers running with a user of the Local Administrators group, the privilege must be granted explicitly. Perform the following steps to grant the privilege:
 
 1. Open the Group Policy Editor for Microsoft Windows. To open the Group Policy Editor, click **[!UICONTROL Start]**, type **gpedit.msc** in the Start Search box, and click **[!UICONTROL Group Policy Editor]**.
-1. Navigate to **[!UICONTROL Local Computer Policy** &gt; **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt; **User Rights Assignment]** and edit the **[!UICONTROL Replace a process level token]** policy and include the Administrators group.
+1. Navigate to **[!UICONTROL Local Computer Policy]** &gt; **[!UICONTROL Computer Configuration]** &gt; **[!UICONTROL Windows Settings]** &gt; **[!UICONTROL Security Settings]** &gt; **[!UICONTROL Local Policies]** &gt; **[!UICONTROL User Rights Assignment]** and edit the **[!UICONTROL Replace a process level token]** policy and include the Administrators group.
 1. Add the user to the Replace a Process Level Token entry.
 
 #### Enable the PDF Generator service for non-administrators {#enable-the-pdf-generator-service-for-non-administrators}
@@ -336,6 +336,11 @@ To avoid receiving the error, you can disable the Windows error reporting. For m
 
 The PDF Generator service provides WebKit, WebCapture, and PhantomJS routes or methods to convert HTML files to PDF documents. On Windows, to enable conversion for WebKit and Acrobat WebCapture routes, copy the Unicode font to %windir%\fonts directory.
 
+>[!NOTE]
+>
+> Whenever you install new fonts to the fonts folder, restart the AEM Forms instance.
+>
+
 ### Extra configurations for HTML to PDF conversion  {#extra-configurations-for-html-to-pdf-conversion}
 
 On UNIX-based platforms, the PDF Generator service supports WebKit and PhantomJS routes to convert HTML files to PDF documents. To enable HTML to PDF conversion, perform the following configurations, applicable to your preferred conversion route:
@@ -356,9 +361,10 @@ Copy the Unicode font to any of the following directories as appropriate for you
 >
 >* On RedHat Enterprise Linux 6.x and later, the courier fonts are not available. To install the courier fonts, download the font-ibm-type1-1.0.3.zip archive. Extract the archive at /usr/share/fonts. Create a symbolic link from /usr/share/X11/fonts to /usr/share/fonts.  
 >* Delete all the .lst font cache files from the Html2PdfSvc/bin and /usr/share/fonts directories.
->* Ensure that the directories /usr/lib/X11/fonts and /usr/share/fonts exist. If the directories do not exist, then use the ln command to create* a symbolic link from /usr/share/X11/fonts to /usr/lib/X11/fonts and another symbolic link from /usr/share/fonts to /usr/share/X11/fonts. *Also ensure that the courier fonts are available at /usr/lib/X11/fonts.
+>* Ensure that the directories /usr/lib/X11/fonts and /usr/share/fonts exist. If the directories do not exist, then use the ln command to create a symbolic link from /usr/share/X11/fonts to /usr/lib/X11/fonts and another symbolic link from /usr/share/fonts to /usr/share/X11/fonts. Also ensure that the courier fonts are available at /usr/lib/X11/fonts.
 >* Ensure that all the fonts (Unicode and non-unicode) are available in the /usr/share/fonts or /usr/share/X11/fonts directory.  
 >* When you run PDF Generator service as a non-root user, provide the non-root user read and write access to all the font directories.
+>* Whenever you install new fonts to the fonts folder, restart the AEM Forms instance.
 >
 
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
@@ -406,6 +412,8 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
    >[!NOTE]
    >
    >Your right to use fonts provided by parties other than Adobe is governed by the license agreements provided to you by such parties with those fonts, and is not covered under your license to use Adobe software. Adobe recommends that you review and ensure that you are in compliance with all applicable non-Adobe license agreements before using non-Adobe fonts with Adobe software, particularly with respect to use of fonts in a server environment.
+   > When you install new fonts to the fonts folder, restart the AEM Forms instance.
+   >
 
 ### Configure a local user account to run the PDF Generator service  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
@@ -423,7 +431,7 @@ A local user account is required to run the PDF Generator service. For steps to 
 
    `jacorb.connection.client.pending_reply_timeout=600000`
 
-1. Log in to the AEM author instance and navigate to **[!UICONTROL Adobe Experience Manager** &gt; **Tools**&gt;**Forms &gt; Configure PDF Generator]**. The default URL is http://localhost:4502/libs/fd/pdfg/config/ui.html.
+1. Log in to the AEM author instance and navigate to **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Tools]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Configure PDF Generator]**. The default URL is http://localhost:4502/libs/fd/pdfg/config/ui.html.
 
    Open the **[!UICONTROL General Configuration]** tab and modify the value of the following fields for your environment:
 

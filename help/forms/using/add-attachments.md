@@ -20,31 +20,31 @@ AEM Forms app lets you attach images, scribbled notes, and text notes to your fo
 
 Your options are:
 
-* **Gallery**: Lets you add a picture from the pictures saved on your device.  
+* **Gallery**: Lets you add a picture from the pictures saved on your device.
 
-* **Camera**: Lets you take a picture and add it to the form.  
+* **Camera**: Lets you take a picture and add it to the form.
 
 * **Notes**: Lets you add a scribble or a text note. Use ![scribble](assets/scribble.png) to add a scribble, and ![keyboard](assets/keyboard.png) to add a text note.
 
 >[!NOTE]
 >
->Attachments added by one user are visible to other AEM Forms app users. Other users cannot delete attachments added by a user. 
+>Attachments added by one user are visible to other AEM Forms app users. Other users cannot delete attachments added by a user.
 >
 
 ### The Attachments screen {#the-attachments-screen}
 
-To see all the attachments in a place, tap ![attachments-app](assets/attachments-app.png). You can add, rename, and delete attachments here. 
+To see all the attachments in a place, tap ![attachments-app](assets/attachments-app.png). You can add, rename, and delete attachments here.
 
 ![All attachments in a place](assets/attachments-screen.png)
 
-You can use the **+ **button in the Attachments screen to attach another picture, scribble, or text.
+You can use the **+** button in the Attachments screen to attach another picture, scribble, or text.
 
 ### Adding a photograph {#adding-a-photograph}
 
 You can use the camera of your mobile device or saved pictures in your device to attach a picture in the form.
 
 1. Tap the attachment button ![attch](assets/attch.png) at the bottom of the window.
-1. Tap **Gallery** or **Camera** in the pop-up that appears. 
+1. Tap **Gallery** or **Camera** in the pop-up that appears.
 1. Based on the option you select, perform the following:
 
     1. If you select **Camera**.
@@ -52,7 +52,7 @@ You can use the camera of your mobile device or saved pictures in your device to
        Take a photograph. Then tap the **Use** ![use-pic](assets/use-pic.png) button.
 
        Or tap the **Retake** ![retake](assets/retake.png) button to retake the photograph.
-    
+
     1. If you select **Gallery**.
 
        The image browser of device pops up. In the picture browser of your device, tap the picture you want to attach.
@@ -86,4 +86,5 @@ Form level attachments are not supported for adaptive forms loaded in the app fr
 
 In case of adaptive forms, you can view the attached files in the document of record (DoR). See, [Generate Document of Record for non-XFA adaptive forms](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)
+

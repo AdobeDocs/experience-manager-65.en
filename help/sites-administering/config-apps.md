@@ -26,6 +26,6 @@ To configure the referrer filter service:
 * Check the Allow Empty field, to allow empty/missing referrer headers.
 * Click **Save** to save your changes.
 
-![chlimage_1-58](assets/chlimage_1-58.png)
+![chlimage_1-58](assets/chlimage_1-58a.png)
 
 See the [OSGI Configuration Settings](/help/sites-deploying/osgi-configuration-settings.md) and [Security Checklist - Issues with Cross-Site Request Forgery](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) for further details.

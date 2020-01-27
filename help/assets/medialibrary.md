@@ -1,19 +1,10 @@
 ---
-title: AEM Assets vs. AEM MediaLibrary
-seo-title: AEM Assets vs. AEM MediaLibrary
-description: Frequently asked questions around AEM Assets and. AEM Media Library, including differences between the two.
-seo-description: Frequently asked questions around AEM Assets and. AEM Media Library, including differences between the two.
-uuid: 47c789f6-f8b9-4de3-b04b-2caf53e8a9d5
-contentOwner: Chiradeep Majumdar
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
-discoiquuid: 9af77d13-f860-4615-a7cd-b0eedbc48a87
-docset: aem65
-
+title: Compare AEM Assets and AEM Media Library offering
+description: Compare AEM Assets and AEM Media Library offerings and know the differences.
+contentOwner: AG
 ---
 
-# AEM Assets vs. AEM MediaLibrary{#aem-assets-vs-aem-medialibrary}
+# AEM Assets versus AEM Media Library {#aem-assets-vs-aem-medialibrary}
 
 Adobe Experience Manager (AEM) Assets is an integral part of the AEM platform. This smooth integration is seen as a major advantage of AEM and ensures consistency in content management and high productivity for content authors.
 
@@ -48,11 +39,11 @@ If you are planning to edit metadata other than title, description and tags, it 
 
 ### I want to use the category predicate on my website. Do I need AEM Assets? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-Yes, the category predicate, together with all other components used in Geometrixx Press Center are part of AEM Assets and require an AEM Assets license.
+Yes, the category predicate is part of AEM Assets and require an AEM Assets license.
 
 #### I want to automatically resize images upon import. Do I need AEM Assets? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
-Yes. Image resizing and automatic workflow-driven transformation as well as the ability to manage renditions is part of AEM Assets and requires an AEM Assets license.
+No. Resizing and automatic workflow-driven transformation of static images as well as the ability to manage renditions are part of AEM Media Library. These features do not require an AEM Assets license.
 
 ### I want to resize images using a customized image component. Do I need AEM Assets? {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
 

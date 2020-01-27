@@ -1,8 +1,6 @@
 ---
 title: Working with Selectors
-seo-title: Working with Selectors
 description: Selecting assets for interactive images, interactive video, and carousel banners
-seo-description: Selecting assets for interactive images, interactive video, and carousel banners
 uuid: 6231739c-bf49-4069-90a4-57848cc68d9a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

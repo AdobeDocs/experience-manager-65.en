@@ -10,7 +10,7 @@ docset: aem65
 
 ---
 
-# AEM FAQs{#aem-faqs}
+# AEM FAQs {#aem-faqs}
 
 Know the answers to some AEM troubleshooting and configuration issues.
 
@@ -54,13 +54,13 @@ For details, refer to the additional resources below:
 #### How to audit AEM capabilities such as, login attempts and ACL or permission changes? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
 AEM has introduced the ability to log administrative changes for better troubleshooting and audit. By default, the information is logged in the `error.log` file. To make monitoring easier, it is recommended that they be redirected to a separate log file.
-To redirect the output to a separate log file, see [How to audit user management operations in AEM](https://chl-author./content/help/en/experience-manager/6-5/help/sites-administering/audit-user-management-operations.html).
+To redirect the output to a separate log file, see [How to audit user management operations in AEM](/help/sites-administering/audit-user-management-operations.md).
 
 #### How to enable SSL by default? {#how-to-enable-ssl-by-default}
 
 Adobe Experience Manager (AEM) 6.4 ships with the SSL wizard and offers a User Interface to configure Jetty and Granite Jetty SSL support.
 
-To enable SSL by default, see [SSL by default](https://chl-author.c/content/help/en/experience-manager/6-5/help/sites-administering/ssl-by-default.html).
+To enable SSL by default, see [SSL by default](/help/sites-administering/ssl-by-default.md).
 
 #### What is the recommended architecture when using AEM’s Content Services from a mobile app, ideally React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
@@ -90,9 +90,9 @@ If the user, uploading the movie files does not have delete permissions under as
 
 #### What is the maximum number of digital assets that can be operated with AEM 6.4 at a time? {#what-is-the-maximum-number-of-digital-assets-that-can-be-operated-with-aem-at-a-time}
 
-Adobe Experience Manager (AEM) 6.4 currently lets you upload up to 2 GB of assets at a time.
+Adobe Experience Manager (AEM) 6.5 currently lets you upload up to 2 GB of assets at a time.
 
-For additional information on maximum number of assets that can be operated with AEM 6.4, see [Assets sizing guide](https://chl-author.c/content/help/en/experience-manager/6-5/help/assets/assets-sizing-guide.html).
+For additional information on maximum number of assets that can be operated with AEM 6.5, see [Assets sizing guide](/help/assets/assets-sizing-guide.md).
 
 #### What are the default settings for OOTB configurations while creating Language Copy? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
@@ -111,7 +111,7 @@ As a workaround, you can also manually disable the component either via the UI o
 
 `curl -u admin:$(pass CQ_Admin) 'https://localhost:4502/system/console/components/com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporter' --data 'action=disable'`
 
-#### How to configure Asset Insights with AEM 6.4 instance? {#how-to-configure-asset-insights-with-aem-instance}
+#### How to configure Asset Insights with AEM 6.5 instance? {#how-to-configure-asset-insights-with-aem-instance}
 
 To setup and configure Asset Insights for Experience Manager deployed via Adobe Activation (DTM), please refer to [Set up Asset Insights with AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
 
@@ -141,7 +141,7 @@ Refer to [AEM Assets vs. AEM MediaLibrary](/help/assets/medialibrary.md) for mor
 
 Yes, a customer using WordPress can use Adobe Asset Picker to select images from their AEM Assets server to add to posts on their WordPress site.
 
-Refer to [Asset Selector](/help/assets/search-assets.md#assetselector) for more information.
+Refer to [Asset Selector](../assets/search-assets.md#assetselector) for more information.
 
 #### Is it possible to extend the search facets in AEM Assets to add additional predicates ? {#is-it-possible-to-extend-the-search-facets-in-aem-assets-to-add-additional-predicates}
 

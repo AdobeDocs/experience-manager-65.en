@@ -112,9 +112,9 @@ You can add personalized fields in an email by adding the **Text and Personaliza
 
 1. Open the e-mail to be published to your e-mail service.
 1. To enable personalization field from your email service, add the framework configuration while configuring the email service. See [configuring Silverpop Engage](/help/sites-administering/silverpop.md) and [configuring Exact Target](/help/sites-administering/exacttarget.md) for more information.
-1. nAdd the component **Text & Personalization** from the sidekick. This component is the part of newsletter group. Open this component in the edit mode.
+1. Add the component **Text & Personalization** from the sidekick. This component is the part of newsletter group. Open this component in the edit mode.
 
-   ![chlimage_1-110](assets/chlimage_1-110.png)
+   ![chlimage_1-110](assets/chlimage_1-110a.png)
 
 1. Add the required personalized field to the text by selecting the field from the drop-down menu and clicking **Insert**.
 1. Click **OK** to finish.
@@ -128,7 +128,7 @@ To apply your E-mail service configuration to a newsletter:
 1. Open the email/newsletter settings by either clicking **Settings** or by clicking **Page Properties in** the sidekick.
 1. Click **Add Service** in **Cloud Services** tab. You see the list of services. Select your required configuration - either **ExactTarget** or **Silverpop** - from the list from the drop-down list.
 
-   ![chlimage_1-5](assets/chlimage_1-5.jpeg)
+   ![chlimage_1-5](assets/chlimage_1-5a.jpeg)
 
 1. Click **OK**.
 

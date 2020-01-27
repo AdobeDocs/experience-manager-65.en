@@ -380,8 +380,8 @@ Use the numeric field to allow recipients to enter numbers, for example their ag
 
 In addition to [settings common to most Adobe Campaign components](#settings-common-to-most-components), you can configure the following:
 
-* **Constraints - Constraint **drop-down
-  You can select - **None** or **Numeric - **to add the constraint of either a number or no constraint. If you select number, the answer users enter into the field must be numeric.
+* **Constraints - Constraint** drop-down
+  You can select - **None** or **Numeric -** to add the constraint of either a number or no constraint. If you select number, the answer users enter into the field must be numeric.
 
 * **Constraint Message** - In addition, you can add a constraint message so users know how to properly format their answers.
 * **Styling - Width** - Adjust the width of the field by clicking or tapping the **+** and **-** icons or entering a number.

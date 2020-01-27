@@ -17,6 +17,10 @@ docset: aem65
 
 In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
 
+>[!NOTE]
+>
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
+
 ## Introduction {#introduction}
 
 The page component for an SPA doesn't provide the HTML elements of its child components via a JSP or HTL file and resource objects. This operation is delegated to the SPA framework. The representation of child components is fetched as a JSON data structure (i.e. the model). The SPA components are then added to the page according to the provided JSON model. As such the page component initial body composition differs from its pre-rendered HTML counterparts.

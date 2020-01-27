@@ -219,7 +219,7 @@ You can use the Assembler service to create an XFA form that is created from ano
 
 Support for dynamic insertion of form fragments supports single-source control. You maintain a single source of commonly used components. For example, you can create a fragment for your company banner. If the banner changes, you only have to modify the fragment. The other forms that include the fragment are unchanged.
 
-Form designers use LiveC ycle Designer to create form fragments. These fragments are uniquely named subforms within an XFA form. The form designers also use Designer to create XFA forms that have uniquely named insertion points. You (the programmer) write DDX documents that specify how fragments are inserted into the XFA form.
+Form designers use LiveCycle Designer to create form fragments. These fragments are uniquely named subforms within an XFA form. The form designers also use Designer to create XFA forms that have uniquely named insertion points. You (the programmer) write DDX documents that specify how fragments are inserted into the XFA form.
 
 The following illustration shows two XML forms (XFA templates). The form on the left contains an insertion point named myInsertionPoint. The form on the right contains a fragment named myFragment.
 

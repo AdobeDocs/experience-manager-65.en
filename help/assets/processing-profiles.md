@@ -1,8 +1,6 @@
 ---
 title: Profiles for Processing Metadata, Images, and Videos
-seo-title: Profiles for Processing Metadata, Images, and Videos
 description: A profile a set of rules around the options to be applied to assets uploaded to a folder. Specify what metadata profile and video encoding profile to apply to video assets that you upload. For image assets, you can also specify what imaging profile to apply to image assets to have them properly cropped.
-seo-description: A profile a set of rules around the options to be applied to assets uploaded to a folder. Specify what metadata profile and video encoding profile to apply to video assets that you upload. For image assets, you can also specify what imaging profile to apply to image assets to have them properly cropped.
 uuid: 6ded2a2f-a0d3-4f43-af97-02fbc0902c25
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -27,7 +25,8 @@ You must have Administrator rights to create, edit, and delete metadata, image, 
 
 After you create your metadata, image, or video profile, you assign it to one or more folders that you use as the destination for newly uploaded assets.
 
-See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/best-practices-for-file-management.md).
+An important concept regarding the use of profiles in AEM Assets is that they are assigned to folders. Within a profile are settings in the form of metadata profiles, along with video profiles or image profiles. These settings process the contents of a folder along with any of its sub-folders. Therefore, how you name files and folders, how you arrange sub-folders, and how you handle the files within these folders has a significant impact on how those assets are processed by a profile.
+By using consistent and appropriate file and folder naming strategies, along with good metadata practice, you can make the most of your digital asset collection and ensure that the right files are processed by the right profile.
 
 >[!NOTE]
 >
@@ -41,9 +40,9 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 >
 >Applies to *Dynamic Media - Scene7 mode* only in AEM 6.4.6.0 or later.
 
-You can reprocess assets in a folder that already has an existing processing profile that you later changed. 
+You can reprocess assets in a folder that already has an existing processing profile that you later changed.
 
-For example, suppose you created an Image profile and assigned it to a folder. Any image assets you uploaded to the folder automatically had the Image profile applied to the assets. However, later you decide to add a new smart crop ratio to the profile. Now, instead of having select and reupload the assets to the folder all over again, you simply run the *Scene7: Reprocess Assets* workflow. 
+For example, suppose you created an Image profile and assigned it to a folder. Any image assets you uploaded to the folder automatically had the Image profile applied to the assets. However, later you decide to add a new smart crop ratio to the profile. Now, instead of having select and reupload the assets to the folder all over again, you simply run the *Scene7: Reprocess Assets* workflow.
 
 You can run the reprocess workflow on an asset for which processing failed the first time. As such, even if you have not edited a processing profile or applied a processing profile, you can still run the reprocess workflow on a folder of assets any time.
 

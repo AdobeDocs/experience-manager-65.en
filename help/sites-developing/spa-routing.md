@@ -17,8 +17,6 @@ For single page applications in AEM, the app is responsible for the routing. Thi
 
 >[!NOTE]
 >
->The Single-Page Application (SPA) Editor feature requires AEM 6.4 service pack 2 or newer.
->
 >The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
 
 ## Project Routing {#project-routing}

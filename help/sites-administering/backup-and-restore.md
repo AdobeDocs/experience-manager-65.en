@@ -115,11 +115,11 @@ To create a backup:
 1. Go to **Tools - Operations - Backup.**
 1. Click **Create**. The backup console will open.
 
-   ![chlimage_1-1](assets/chlimage_1-1.png)
+   ![chlimage_1-1](assets/chlimage_1-1a.png)
 
 1. On the backup console, specify the **[Target Path](#aem-online-backup)** and **[Delay](#aem-online-backup)**.
 
-   ![chlimage_1-2](assets/chlimage_1-2.png)
+   ![chlimage_1-2](assets/chlimage_1-2a.png)
 
    >[!NOTE]
    >
@@ -136,7 +136,7 @@ To create a backup:
 
 1. When the backup is complete, the zip files are listed in the backup window.
 
-   ![chlimage_1-3](assets/chlimage_1-3.png)
+   ![chlimage_1-3](assets/chlimage_1-3a.png)
 
    >[!NOTE]
    >

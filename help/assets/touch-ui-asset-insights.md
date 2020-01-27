@@ -1,12 +1,7 @@
 ---
 title: Asset Insights
 description:  Learn how the Asset Insights feature lets you track user ratings and usage statistics of images that are used in third-party websites, marketing campaigns, and Adobe's creative solutions.
-uuid: edd3795b-cf49-40b8-bd1c-7d9219e6b73d
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 60acd35e-300c-4866-90c2-52d2150b0f7f
-docset: aem65
-
 ---
 
 # Asset Insights {#asset-insights}
@@ -58,7 +53,7 @@ You can view the Asset Insights scores from the metadata page.
 
 1. To obtain the embed code for the asset that you include in websites to gets performance data, tap/click **[!UICONTROL Get Embed Code]** below the asset thumbnail. For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and embed code in web pages](/help/assets/touch-ui-using-page-tracker.md).
 
-   ![chlimage_1-98](assets/chlimage_1-98.png)
+   ![chlimage_1-98](assets/chlimage_1-303.png)
 
 ## View aggregate statistics for images {#viewing-aggregate-statistics-for-images}
 
@@ -75,6 +70,6 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 1. Tap the AEM logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
 
-   ![chlimage_1-99](assets/chlimage_1-99.png)
+   ![chlimage_1-99](assets/chlimage_1-304.png)
 
 1. Specify the desired scheduler frequency and the start time for the job in the property scheduler expression. Save the changes.

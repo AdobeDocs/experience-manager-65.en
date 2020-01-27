@@ -1,13 +1,10 @@
 ---
-title: Processing Assets Using Media Handlers and Workflows
-description: Learn about various media handlers and how to use them in workflows to perform tasks on assets.
-uuid: 4ef96bfc-d194-4aea-8d6c-ae91d04456aa
+title: Process assets using media handlers and workflows
+description: Learn about the media handlers and how to use workflows to perform tasks on your digital assets.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 8cd78c84-71ba-4095-b882-90d0dc00289d
 ---
 
-# Processing Assets Using Media Handlers and Workflows {#processing-assets-using-media-handlers-and-workflows}
+# Processe assets using media handlers and workflows {#processing-assets-using-media-handlers-and-workflows}
 
 Adobe Experience Manager (AEM) Assets comes with a set of default workflows and media handlers to process assets. The workflow defines the general tasks to be executed on the assets, then delegates the specific tasks to the media handlers, for example thumbnail generation or metadata extraction.
 
@@ -26,75 +23,20 @@ The following media handlers are available within AEM Assets and handle the most
 <!-- TBD: Apply correct formatting once table is moved to MD.
 -->
 
-<table>
- <tbody>
-  <tr>
-   <td>Handler name</td>
-   <td>Service Name (in the System Console)</td>
-   <td>Supported MIME types</td>
-  </tr>
-  <tr>
-   <td>TextHandler</td>
-   <td><p>com.day.cq.dam.core.impl.handler.TextHandler</p> </td>
-   <td>text/plain</td>
-  </tr>
-  <tr>
-   <td>PdfHandler</td>
-   <td><p>com.day.cq.dam.handler.standard.pdf.PdfHandler</p> </td>
-   <td><p>application/pdf<br /> application/illustrator</p> </td>
-  </tr>
-  <tr>
-   <td>JpegHandler</td>
-   <td><p>com.day.cq.dam.core.impl.handler.JpegHandler</p> </td>
-   <td>image/jpeg</td>
-  </tr>
-  <tr>
-   <td>Mp3Handler</td>
-   <td><p>com.day.cq.dam.handler.standard.mp3.Mp3Handler</p> </td>
-   <td><p>audio/mpeg</p> </td>
-  </tr>
-  <tr>
-   <td>ZipHandler</td>
-   <td><p>com.day.cq.dam.handler.standard.zip.ZipHandler</p> </td>
-   <td><p>application/java-archive</p> <p>application/zip</p> </td>
-  </tr>
-  <tr>
-   <td>PictHandler</td>
-   <td><p>com.day.cq.dam.handler.standard.pict.PictHandler</p> </td>
-   <td><p>image/pict</p> </td>
-  </tr>
-  <tr>
-   <td>StandardImageHandler</td>
-   <td><p>com.day.cq.dam.core.impl.handler.StandardImageHandler</p> </td>
-   <td><p>image/gif</p> <p>image/png</p> <p>application/photoshop</p> <p>image/jpeg</p> <p>image/tiff</p> <p>image/x-ms-bmp</p> <p>image/bmp</p> </td>
-  </tr>
-  <tr>
-   <td>MSOfficeHandler</td>
-   <td>com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler</td>
-   <td>application/msword<br /> </td>
-  </tr>
-  <tr>
-   <td>MSPowerPointHandler</td>
-   <td>com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler</td>
-   <td>application/vnd.ms-powerpoint<br /> </td>
-  </tr>
-  <tr>
-   <td>OpenOfficeHandler</td>
-   <td>com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler</td>
-   <td>application/vnd.openxmlformats-officedocument.wordprocessingml.document<br /> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet<br /> application/vnd.openxmlformats-officedocument.presentationml.presentation<br /> <br /> </td>
-  </tr>
-  <tr>
-   <td>EPubHandler</td>
-   <td>com.day.cq.dam.handler.standard.epub.EPubHandler</td>
-   <td>application/epub+zip</td>
-  </tr>
-  <tr>
-   <td>GenericAssetHandler</td>
-   <td><p>com.day.cq.dam.core.impl.handler.GenericAssetHandler</p> </td>
-   <td>fallback in case no other handler was found to extract data from an asset</td>
-  </tr>
- </tbody>
-</table>
+| Handler name | Service Name (in the System Console) | Supported MIME types |
+|---|---|---|
+| [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
+| [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
+| [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg |
+| [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
+| [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
+| [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
+| [!UICONTROL MSOfficeHandler] | com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler | application/msword |
+| [!UICONTROL MSPowerPointHandler] | com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler | application/vnd.ms-powerpoint |
+| [!UICONTROL OpenOfficeHandler] | com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
+| [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
+| [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | fallback in case no other handler was found to extract data from an asset |
 
 All the handlers perform the following tasks:
 
@@ -109,7 +51,7 @@ It is possible to view the active media handlers:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## Using Media Handlers in Workflows to perform tasks on Assets {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## Use Media Handlers in Workflows to perform tasks on Assets {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 Media handlers are services that are usually used in combination with workflows.
 
@@ -119,7 +61,7 @@ Existing workflows can be extended and new ones can be created to process assets
 
 The following example shows how to enhance the **[!UICONTROL AEM Assets Synchronization]** workflow so that sub-assets are generated for all assets except PDF documents.
 
-### Disabling/Enabling a Media Handler {#disabling-enabling-a-media-handler}
+### Disable or enable a Media Handler {#disabling-enabling-a-media-handler}
 
 The media handlers can be disabled or enabled through the Apache Felix Web Management Console. When the media handler is disabled, its tasks are not performed on the assets.
 
@@ -130,7 +72,7 @@ To enable/disable a media handler:
 1. Refresh the page: an icon is displayed beside the media handler indicating it is disabled.
 1. To enable the media handler, click **[!UICONTROL Enable]** next to the name of the media handler.
 
-### Creating a new Media Handler {#creating-a-new-media-handler}
+### Create a new Media Handler {#creating-a-new-media-handler}
 
 To support a new media type or to execute specific tasks on an asset, it is necessary to create a new media handler. This section describes how to proceed.
 
@@ -558,26 +500,11 @@ This section describes how to set the **Process Arguments** of the **CommandLine
 
 The values of the **Process Arguments** must be separated by a comma and must not start with a whitespace.
 
-<table>
- <tbody>
-  <tr>
-   <td> Argument-Format</td>
-   <td>Description</td>
-  </tr>
-  <tr>
-   <td> mime:&lt;mime-type&gt;</td>
-   <td><p>Optional argument. The process is applied if the asset has the same mime-type as the one of the argument.</p> <p>Several mime-types can be defined.</p> </td>
-  </tr>
-  <tr>
-   <td> tn:&lt;width&gt;:&lt;height&gt;</td>
-   <td><p>Optional argument. The process creates a thumbnail with the dimensions defined in the argument.</p> <p>Several thumbnails can be defined.<br /> </p> </td>
-  </tr>
-  <tr>
-   <td> cmd: &lt;command&gt;</td>
-   <td><p>Defines the command that will be executed. The syntax depends on the command line tool.</p> <p>Only one command can be defined.</p> <p>The following variables can be used to create the command:<br/></p> <p><code>${filename}</code>: name of the input file, e.g. original.jpg<br/><code>${file}</code>: full path name of the input file, e.g. /tmp/cqdam0816.tmp/original.jpg<br/><code>${directory}</code>: directory of the input file, e.g. /tmp/cqdam0816.tmp.<br/> <code>${basename}</code>: name of the input file without its extension, e.g. original<br/> <code>${extension}</code>: extension of the input file, e.g. jpg<br/></p></td>
-  </tr>
- </tbody>
-</table>
+| Argument-Format | Description |
+|---|---|
+| mime:&lt;mime-type&gt; | Optional argument. The process is applied if the asset has the same mime-type as the one of the argument. <br>Several mime-types can be defined. |
+| tn:&lt;width&gt;:&lt;height&gt; | Optional argument. The process creates a thumbnail with the dimensions defined in the argument. <br>Several thumbnails can be defined. |
+| cmd: &lt;command&gt; | Defines the command that will be executed. The syntax depends on the command line tool. Only one command can be defined. <br>The following variables can be used to create the command:<br>`${filename}`: name of the input file, for example original.jpg <br> `${file}`: full path name of the input file, for example /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: directory of the input file, for example /tmp/cqdam0816.tmp <br>`${basename}`: name of the input file without its extension, for example original <br>`${extension}`: extension of the input file, for example jpg |
 
 For example, if ImageMagick is installed on the disk hosting the AEM server and if you create a process step using **CommandLineProcess** as Implementation and the following values as **Process Arguments**:
 

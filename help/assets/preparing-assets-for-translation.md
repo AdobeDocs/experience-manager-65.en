@@ -1,11 +1,7 @@
 ---
-title: Preparing assets for translation
-description: Create language root folders to prepare for translating multilingual assets.
-uuid: 8a146234-60c0-4ee6-8f54-1275c887be23
+title: Prepare assets for translation
+description: Create language root folders to prepare assets for translation to support multilingual assets.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 61f86320-71a6-4d3c-839d-155a2083d995
-
 ---
 
 # Prepare assets for translation {#preparing-assets-for-translation}
@@ -18,15 +14,17 @@ Each language folder is called a language copy. The root folder of a language co
 
 The language copy for which you originally add assets is the language master. The language master is the source that is translated into other languages. A sample folder hierarchy includes several language roots:
 
-/content
-&nbsp; &nbsp; /- dam
-&nbsp; &nbsp; &nbsp; |- en
-&nbsp; &nbsp; &nbsp; |- fr
-&nbsp; &nbsp; &nbsp; |- de
-&nbsp; &nbsp; &nbsp; |- es
-&nbsp; &nbsp; &nbsp; |- it
-&nbsp; &nbsp; &nbsp; |- ja
-&nbsp; &nbsp; &nbsp; |- zh
+```
+ /content
+  /- dam
+   |- en
+   |- fr
+   |- de
+   |- es
+   |- it
+   |- ja
+   |- zh
+```
 
 Perform the following steps to prepare your assets for translation:
 
@@ -35,23 +33,23 @@ Perform the following steps to prepare your assets for translation:
 1. Add assets to your language master.
 1. Create the language root of each target language for which you require a language copy.
 
-## Creating a Language Root {#creating-a-language-root}
+## Create a language root {#creating-a-language-root}
 
 To create the language root, you create a folder and use an ISO language code as the value for the Name property. After you create the language root, you can create a language copy at any level within the language root.
 
-For example, the root page of the Italian language copy of the sample hierarchy has `it` as the Name property. The Name property is used as the name of the asset node in the repository, and therefore determines the path of the assets. (`https://[aem_server];[port]/assets.html/content/dam/it/`).
+For example, the root page of the Italian language copy of the sample hierarchy has `it` as the Name property. The Name property is used as the name of the asset node in the repository, and therefore determines the path of the assets. (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
 1. From the Assets console, click/tap **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
 
-   ![chlimage_1-120](assets/chlimage_1-120.png)
+   ![Create folder](assets/Create-folder.png)
 
 1. In the **[!UICONTROL Name]** field type the country code in the format of `<language-code>`.
 
-   ![chlimage_1-121](assets/chlimage_1-121.png)
+   ![Add language code in folder](assets/Add-language-code-in-folder.png)
 
 1. Click or tap **[!UICONTROL Create]**. The language root is created in the Assets console.
 
-## Viewing Language Roots {#viewing-language-roots}
+## View language roots {#viewing-language-roots}
 
 AEM interface provides a **[!UICONTROL References]** panel that displays a list of language roots that have been created within AEM Assets.
 

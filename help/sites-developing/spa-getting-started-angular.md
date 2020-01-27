@@ -22,6 +22,10 @@ The SPA authoring feature offers a comprehensive solution for supporting SPAs wi
 >
 >This article is based on the Angular framework. For the corresponding document for the React framework see [Getting Started with SPAs in AEM - React](/help/sites-developing/spa-getting-started-react.md).
 
+>[!NOTE]
+>
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
+
 ## Introduction {#introduction}
 
 This article summarizes the basic functioning of a simple SPA and the minimum that you need to know to get yours running.

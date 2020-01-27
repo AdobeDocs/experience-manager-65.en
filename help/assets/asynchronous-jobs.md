@@ -1,12 +1,7 @@
 ---
 title: Asynchronous operations
 description: AEM Assets optimizes performance by asynchronously completing some resource-intensive tasks.
-uuid: b5ea91a1-a4a5-4ae7-8da1-fdc0c3c144ba
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 7f11bbb9-f4af-47a4-bb21-93cfa3054a88
-docset: aem65
-
 ---
 
 # Asynchronous operations {#asynchronous-operations}
@@ -26,34 +21,34 @@ You can view the status of asynchronous jobs from the **[!UICONTROL Async Job St
 
 >[!NOTE]
 >
->By default, jobs in AEM Assets run in parallel. If N is the number of CPU cores, N/2 jobs can run in parallel, by default. To use custom settings for the job queue, modify the **Async Operation Default Queue** configuration from the web console. For more information, see [Queue Configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
+>By default, jobs in AEM Assets run in parallel. If N is the number of CPU cores, N/2 jobs can run in parallel, by default. To use custom settings for the job queue, modify the **[!UICONTROL Async Operation Default Queue]** configuration from the web console. For more information, see [queue configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
-## Monitoring the status of asynchronous operations {#monitoring-the-status-of-asynchronous-operations}
+## Monitor the status of asynchronous operations {#monitoring-the-status-of-asynchronous-operations}
 
 Whenever AEM Assets processes an operation asynchronously, you receive a notification at your inbox and through email.
 
 To view the status of the asynchronous operations in detail, navigate to the **[!UICONTROL Async Job Status]** page.
 
-1. Tap/click the AEM logo, and go **[!UICONTROL Assets]** &gt; **[!UICONTROL Jobs]**.
+1. Tap/click the AEM logo, and go **[!UICONTROL Operations]** &gt; **[!UICONTROL Jobs]**.
 1. In the **[!UICONTROL Async Job Status]** page, review the details of the operations.
 
-   ![job_status](assets/job_status.png)
+    ![Status and details of Asynchronous operations](assets/AsyncOperation-status.png)
 
    To ascertain the progress of a particular operation, see the value in the **[!UICONTROL Status]** column. Depending upon the progress, one of the following statuses is displayed:
 
-   **[!UICONTROL Active]**: The operation is being processed
+   * **[!UICONTROL Active]**: The operation is being processed
 
-   **[!UICONTROL Success]**: The operation is complete
+   * **[!UICONTROL Success]**: The operation is complete
 
-   **[!UICONTROL Fail]** or **[!UICONTROL Error]**: The operation could not be processed
+   * **[!UICONTROL Fail]** or **[!UICONTROL Error]**: The operation could not be processed
 
-   **[!UICONTROL Scheduled]**: The operation is scheduled for processing a later time
+   * **[!UICONTROL Scheduled]**: The operation is scheduled for processing a later time
 
-1. To stop an active operation, select it from the list and tap/click the **[!UICONTROL Stop]** icon from the toolbar.
+1. To stop an active operation, select it from the list and tap **[!UICONTROL Stop]** from the toolbar.
 
    ![stop_icon](assets/stop_icon.png)
 
-1. To view extra details, for example description and logs, select the operation and tap/click the **[!UICONTROL Open]** icon from the toolbar.
+1. To view extra details, for example description and logs, select the operation and tap **[!UICONTROL Open]** from the toolbar.
 
    ![open_icon](assets/open_icon.png)
 
@@ -61,13 +56,13 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 
    ![job_details](assets/job_details.png)
 
-1. To delete the operation from the list, select **[!UICONTROL Delete]** from the toolbar. To download the details in a CSV file, tap/click the **[!UICONTROL Download]** icon.
+1. To delete the operation from the list, select **[!UICONTROL Delete]** from the toolbar. To download the details in a CSV file, tap **[!UICONTROL Download]**.
 
    >[!NOTE]
    >
    >You cannot delete a job if its status is either active or queued.
 
-## Purging completed jobs {#purging-completed-jobs}
+## Purge completed jobs {#purging-completed-jobs}
 
 AEM Assets runs a purge job everyday at 1:00 AM to delete completed asynchronous jobs that are more than a day old.
 
@@ -79,15 +74,13 @@ You can modify the schedule for the purge job and the duration for which details
 
    ![Configuration to schedule the purging of asynchronous jobs](assets/configmgr_purge_asyncjobs.png)
 
-   Configuration to schedule the purging of asynchronous jobs
-
 1. Save the changes.
 
-## Configuring thresholds for asynchronous processing {#configuring-thresholds-for-asynchronous-processing}
+## Configure thresholds for asynchronous processing {#configuring-thresholds-for-asynchronous-processing}
 
 You can configure the threshold number of assets or references for AEM Assets to process a particular operation asynchronously.
 
-### Configuring thresholds for asynchronous delete operations {#configuring-thresholds-for-asynchronous-delete-operations}
+### Configure thresholds for asynchronous delete operations {#configuring-thresholds-for-asynchronous-delete-operations}
 
 If the number of assets or folders to be deleted exceed the threshold number, the delete operation is performed asynchronously.
 
@@ -99,7 +92,7 @@ If the number of assets or folders to be deleted exceed the threshold number, th
 
 1. Save the changes.
 
-### Configuring thresholds for asynchronous move operations {#configuring-thresholds-for-asynchronous-move-operations}
+### Configure thresholds for asynchronous move operations {#configuring-thresholds-for-asynchronous-move-operations}
 
 If the number of assets/folders or references to be moved exceed the threshold number, the move operation is performed asynchronously.
 

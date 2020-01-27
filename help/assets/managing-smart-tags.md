@@ -1,31 +1,26 @@
 ---
 title: Manage smart tags and searches
 description: Update or remove the inaccurate smart tags to improve the relevance of tags
-uuid: 0f34aa3a-cb8b-422c-8bdc-783a2a85b33e
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: d6814136-118d-4608-a57d-bc913a283a87
-docset: aem65
-
 ---
 
 # Manage smart tags and searches {#manage-smart-tags-and-searches}
 
 <!--
-TBD: This article should be merged into a new, uber article for Smart Tags. Delete this article.
+TBD: This article should be merged into a new, uber article for Smart Tags. Delete this article then. Cloud service article is merged.
 -->
 
 You can curate Smart tags to remove any inaccurate tags that may have been assigned to your brand images so only the most relevant tags are displayed.
 
 Moderating Smart tags also helps refine tag-based searches for images by ensuring that your image appears in search results for the most relevant tags. Essentially, it helps eliminate the chances of unrelated images from showing up in search results.
 
-You can also assign a higher rank to a tag to increase its relevence with respect to an image. Promoting a tag for an image increases the chances of the image appearing in search results when a search is performed based on the particular tag.
+You can also assign a higher rank to a tag to increase its relevance with respect to an image. Promoting a tag for an image increases the chances of the image appearing in search results when a search is performed based on the particular tag.
 
 1. In the OmniSearch box, search for assets based on a tag.
 1. Inspect the search results to identify an image that you don't find relevant to your search.
-1. Select the image, and then click/tap the **[!UICONTROL Manage Tags]** icon from the toolbar.
-1. From the **[!UICONTROL Manage Tags]** page, inspect the tags. If you don't want the image to be searched based on a specific tag, select the tag and then click/tap the delete icon from the toolbar. Alternatively, click/tap `X` symbol that appears beside the label.
-1. To assign a higher rank to a tag, select the tag and click/tap the promote icon from the toolbar. The tag you promote, is moved to the **[!UICONTROL Tags]** section.
+1. Select the image, and then tap **[!UICONTROL Manage Tags]** from the toolbar.
+1. From the **[!UICONTROL Manage Tags]** page, inspect the tags. If you don't want the image to be searched based on a specific tag, select the tag and then tap **[!UICONTROL Delete]** from the toolbar. Alternatively, click/tap `X` symbol that appears beside the label.
+1. To assign a higher rank to a tag, select the tag and tap **[!UICONTROL Promote]** from the toolbar. The tag you promote, is moved to the **[!UICONTROL Tags]** section.
 1. Click/tap **[!UICONTROL Save]**, and then click/tap **[!UICONTROL OK]** to close the Success dialog.
 1. Navigate to the properties page for the image. Observe that the tag you promoted is assigned a high relevance and, therefore, appears higher in the search results.
 

@@ -36,7 +36,7 @@ To create an ExactTarget configuration in Cloud Services:
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
-1. Enter a title and optionally, a name and click **Create**. The** ExactTarget Settings** configuration window opens.
+1. Enter a title and optionally, a name and click **Create**. The **ExactTarget Settings** configuration window opens.
 
    ![chlimage_1](assets/chlimage_1.jpeg)
 

@@ -1,15 +1,10 @@
 ---
-title: Extending Assets Search
-description: Extend the search capabilities of AEM Assets beyond out-of-the-box searches for assets by strings.
-uuid: 1c7f448c-f608-484c-91c2-8b887ec09d85
+title: Extend search functionality of AEM Assets
+description: Extend the search capabilities of AEM Assets beyond the defaults.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 7eee90c0-4cb9-437d-a202-5b7bddfa6772
-docset: aem65
-
 ---
 
-# Extending Assets Search {#extending-assets-search}
+# Extend assets search {#extending-assets-search}
 
 You can extend Adobe Experience Manager (AEM) Assets search capabilities. Out of the box, AEM Assets searches for assets by strings.
 
@@ -19,11 +14,11 @@ You can also add additional tabs to the AEM Assets admin panel.
 
 >[!CAUTION]
 >
->As of AEM 6.4, Classic UI is deprecated. For announcement, see [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md). You are encouraged to use Touch-enabled UI. For customizations, see [Search Facets](/help/assets/search-facets.md).
+>As of AEM 6.4, Classic UI is deprecated. For announcement, see [Deprecated and removed features](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). You are encouraged to use Touch-enabled UI. For customization, see [Search Facets](/help/assets/search-facets.md).
 
-## Overlaying {#overlaying}
+## Overlay {#overlaying}
 
-To overlay the preconfigured predicates, copy the `facets` node from `/libs/dam/content/search/searchpanel` to `/apps/dam/content/search/searchpanel/` or specify another `facetURL` property in the searchpanel configuration (the default is to `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
+To overlay the pre-configured predicates, copy the `facets` node from `/libs/dam/content/search/searchpanel` to `/apps/dam/content/search/searchpanel/` or specify another `facetURL` property in the `searchpanel` configuration (the default is to `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
 ![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
 
@@ -32,18 +27,18 @@ To overlay the preconfigured predicates, copy the `facets` node from `/libs/dam/
 >By default, the directory structure under / `apps` does not exist and needs to be created. Ensure that the node types match those under / `libs`.
 >
 
-### Adding tabs {#adding-tabs}
+## Add tabs {#adding-tabs}
 
-You can add additional Search tabs by configuring them in the AEM Assets Admin. To create additional tabs:
+You can add additional search tabs by configuring them in the AEM Assets Admin. To create additional tabs:
 
 1. Create the folder structure `/apps/wcm/core/content/damadmin/tabs,`if it does not already exist, and copy the `tabs` node from `/libs/wcm/core/content/damadmin` and paste it.
 1. Create and configure the second tab, as desired.
 
    >[!NOTE]
    >
-   >When you create a second siteadminsearchpanel, be sure to set an `id` property in order to prevent form conflicts.
+   >When you create a second `siteadminsearchpanel`, be sure to set an `id` property in order to prevent form conflicts.
 
-### Creating Custom Predicates {#creating-custom-predicates}
+## Create custom predicates {#creating-custom-predicates}
 
 AEM Assets comes with a set of predefined predicates that can be used to customize an Asset Share page. Customizing an Asset Share in this way is covered in [Creating and Configuring an Asset Share Page](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
@@ -53,7 +48,7 @@ Creating custom predicates requires basic knowledge about the [Widgets framework
 
 The best practice is to copy an existing predicate and adjust it. Sample predicates are located in **/libs/cq/search/components/predicates**.
 
-#### Example: Build a simple property predicate {#example-build-a-simple-property-predicate}
+### Example: Build a simple property predicate {#example-build-a-simple-property-predicate}
 
 To build a property predicate:
 
@@ -146,7 +141,7 @@ To build a property predicate:
    >
    >When searching, be sure to type in the term exactly, including the correct case.
 
-#### Example: Build a simple group predicate {#example-build-a-simple-group-predicate}
+### Example: Build a simple group predicate {#example-build-a-simple-group-predicate}
 
 To build a group predicate:
 
@@ -245,166 +240,55 @@ To build a group predicate:
 1. Navigate to your browser, and on your sample page (for example, **press.html**) switch to design mode and enable your new component for the predicate paragraph system (for example, **left**).
 1. In **Edit** mode, the new component is now available in the sidekick (found in the **Search** group). Insert the component in the **Predicates** column.
 
-### Installed Predicate Widgets {#installed-predicate-widgets}
+## Installed Predicate Widgets {#installed-predicate-widgets}
 
-The following predicates are available as preconfigured ExtJS widgets.
+The following predicates are available as pre-configured ExtJS widgets.
 
-#### FulltextPredicate {#fulltextpredicate}
+### FulltextPredicate {#fulltextpredicate}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property<br /> </strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>predicateName</td>
-   <td>String</td>
-   <td>Name of the predicate. Defaults to 'fulltext'</td>
-  </tr>
-  <tr>
-   <td>searchCallback</td>
-   <td>Function</td>
-   <td>Callback for triggering search on event 'keyup'. Default to 'CQ.wcm.SiteAdmin.doSearch'</td>
-  </tr>
- </tbody>
-</table>
+| Property | Type | Description |
+|---|---|---|
+| predicateName | String | Name of the predicate. Defaults to `fulltext` |
+| searchCallback | Function | Callback for triggering search on event `keyup`. Defaults to `CQ.wcm.SiteAdmin.doSearch` |
 
-#### PropertyPredicate {#propertypredicate}
+### PropertyPredicate {#propertypredicate}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property<br /> </strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>predicateName</td>
-   <td>String</td>
-   <td>Name of the predicate. Defaults to 'property'</td>
-  </tr>
-  <tr>
-   <td>propertyName</td>
-   <td>String </td>
-   <td>Name of the JCR property. Default to 'jcr:title'</td>
-  </tr>
-  <tr>
-   <td>defaultValue<br /> </td>
-   <td>String<br /> </td>
-   <td>Prefilled default value.<br /> </td>
-  </tr>
- </tbody>
-</table>
+| Property | Type | Description |
+|---|---|---|
+| predicateName | String | Name of the predicate. Defaults to `property` |
+| propertyName | String | Name of the JCR property. Defaults to `jcr:title` |
+| defaultValue | String | Pre-filled default value. |
 
-#### PathPredicate {#pathpredicate}
+### PathPredicate {#pathpredicate}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property<br /> </strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>predicateName</td>
-   <td>String</td>
-   <td>Name of the predicate. Defaults to 'path'</td>
-  </tr>
-  <tr>
-   <td>rootPath</td>
-   <td>String </td>
-   <td>Root path of the predicate. Default to '/content/dam'</td>
-  </tr>
-  <tr>
-   <td>pathFieldPredicateName</td>
-   <td>String</td>
-   <td>Default to 'folder'</td>
-  </tr>
-  <tr>
-   <td>showFlatOption</td>
-   <td>Boolean</td>
-   <td>Flag to show Checkbox 'search in subfolders'. Defaults to true.</td>
-  </tr>
- </tbody>
-</table>
+| Property | Type | Description |
+|---|---|---|
+| predicateName | String | Name of the predicate. Defaults to `path` |
+| rootPath | String | Root path of the predicate. Defaults to `/content/dam` |
+| pathFieldPredicateName | String | Defaults to `folder` |
+| showFlatOption | Boolean | Flag to show Checkbox `search in subfolders`. Defaults to true. |
 
-#### DatePredicate {#datepredicate}
+### DatePredicate {#datepredicate}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property<br /> </strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>predicateName</td>
-   <td>String</td>
-   <td>Name of the predicate. Defaults to 'daterange'</td>
-  </tr>
-  <tr>
-   <td>propertyname</td>
-   <td>String</td>
-   <td>Name of the JCR property. Default to 'jcr:content/jcr:lastModified'</td>
-  </tr>
-  <tr>
-   <td>defaultValue </td>
-   <td>String </td>
-   <td>Prefilled default value </td>
-  </tr>
- </tbody>
-</table>
+| Property | Type | Description |
+|---|---|---|
+| predicateName | String | Name of the predicate. Defaults to `daterange` |
+| propertyname | String | Name of the JCR property. Defaults to `jcr:content/jcr:lastModified` |
+| defaultValue | String | Pre-filled default value |
 
-#### OptionsPredicate {#optionspredicate}
+### OptionsPredicate {#optionspredicate}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property<br /> </strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>title </td>
-   <td>String </td>
-   <td>Adds an additional top title </td>
-  </tr>
-  <tr>
-   <td>predicateName</td>
-   <td>String</td>
-   <td>Name of the predicate. Defaults to 'daterange'</td>
-  </tr>
-  <tr>
-   <td>propertyname</td>
-   <td>String</td>
-   <td>Name of the JCR property. Default to 'jcr:content/metadata/cq:tags'</td>
-  </tr>
-  <tr>
-   <td>collapse</td>
-   <td>String</td>
-   <td>Collapse level. Defaults to 'level1'</td>
-  </tr>
-  <tr>
-   <td>triggerSearch</td>
-   <td>Boolean </td>
-   <td>Flag for triggering search on check. Defaults to false</td>
-  </tr>
-  <tr>
-   <td>searchCallback</td>
-   <td>Function</td>
-   <td>Callback for triggering search. Defaults to 'CQ.wcm.SiteAdmin.doSearch'</td>
-  </tr>
-  <tr>
-   <td>searchTimeoutTime</td>
-   <td>Number</td>
-   <td>Timeout before searchCallback is fired. Defaults to 800ms</td>
-  </tr>
- </tbody>
-</table>
+| Property | Type | Description |
+|---|---|---|
+| title | String | Adds an additional top title |
+| predicateName | String | Name of the predicate. Defaults to `daterange` |
+| propertyname | String | Name of the JCR property. Defaults to `jcr:content/metadata/cq:tags` |
+| collapse | String | Collapse level. Defaults to `level1` |
+| triggerSearch | Boolean | Flag for triggering search on check. Defaults to false |
+| searchCallback | Function | Callback for triggering search. Defaults to `CQ.wcm.SiteAdmin.doSearch` |
+| searchTimeoutTime | Number | Timeout before searchCallback is fired. Defaults to 800ms |
 
-### Customizing Search Results {#customizing-search-results}
+## Customize search results {#customizing-search-results}
 
 The presentation of search results on an Asset Share page is governed by the selected lens. AEM Assets comes with a set of predefined lenses that can be used to customize an Asset Share page. Customizing an Asset Share in this way is covered in [Creating and Configuring an Asset Share Page](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 

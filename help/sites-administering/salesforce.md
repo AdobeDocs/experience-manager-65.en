@@ -145,7 +145,7 @@ To view or edit the current mapping configuration between an AEM user and a Sale
 
    ![chlimage_1-80](assets/chlimage_1-80.png)
 
-1. Change mappings, as required. The default mapping follows the pattern** aemUserAttribute=sfLeadAttribute**. Click **Save** to save your changes.
+1. Change mappings, as required. The default mapping follows the pattern **aemUserAttribute=sfLeadAttribute**. Click **Save** to save your changes.
 
 ## Configuring Salesforce Client Context Store {#configuring-salesforce-client-context-store}
 

@@ -53,7 +53,7 @@ After installation you can configure your instance:
    >
    >For Hybris 5.0.0 open the `Indexed Types` tab, double-click on `ClothesVariantProduct`, then the tab `SOLR Sort`.
 
-   ![chlimage_1-36](assets/chlimage_1-36.png)
+   ![chlimage_1-36](assets/chlimage_1-36a.png)
 
 1. In the **Indexed Types** tab set the **Composed Type** to:
 
@@ -77,20 +77,20 @@ After installation you can configure your instance:
    >
    >For hybris 5.2 make sure that the `Facet` attribute in the Properties table is selected according to the screenshot below:
 
-   ![chlimage_1-37](assets/chlimage_1-37.png) ![chlimage_1-38](assets/chlimage_1-38.png)
+   ![chlimage_1-37](assets/chlimage_1-37a.png) ![chlimage_1-38](assets/chlimage_1-38a.png)
 
 1. Open the **Facet Settings** tab and adjust the field values:
 
-   ![chlimage_1-39](assets/chlimage_1-39.png)
+   ![chlimage_1-39](assets/chlimage_1-39a.png)
 
 1. **Save** the changes.
 1. Again from **SOLR Item types**, adjust the `price` facet according to the following screenshots. As with `category`, double-click on `price` to open the **Indexed property** tab:
 
-   ![chlimage_1-40](assets/chlimage_1-40.png)
+   ![chlimage_1-40](assets/chlimage_1-40a.png)
 
 1. Open the **Facet Settings** tab and adjust the field values:
 
-   ![chlimage_1-41](assets/chlimage_1-41.png)
+   ![chlimage_1-41](assets/chlimage_1-41a.png)
 
 1. **Save** the changes.
 1. Open **System**, **Facet search**, then **Indexer operation wizard**. Start a cronjob:
@@ -227,7 +227,7 @@ The following properties indicate the link with hybris:
 
 1. Configure the required parameters; for example:
 
-   ![chlimage_1-42](assets/chlimage_1-42.png)
+   ![chlimage_1-42](assets/chlimage_1-42a.png)
 
 1. Click **Import Catalog** to start the import.
 
@@ -287,7 +287,7 @@ The import process can take a long time, so as an extension to the Product Synch
 
 1. In hybris, add the product(s) to the Express Queue; for example:
 
-   ![chlimage_1-43](assets/chlimage_1-43.png)
+   ![chlimage_1-43](assets/chlimage_1-43a.png)
 
 1. Open the hybris importer in AEM:
 
