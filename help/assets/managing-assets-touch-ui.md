@@ -7,7 +7,6 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 83a825ff-5c3d-4e2c-a265-eead090a5984
 docset: aem65
 mini-toc-levels: 1
-
 ---
 
 # Manage your digital assets {#managing-assets-with-the-touch-optimized-ui}
@@ -53,7 +52,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 1. In the Assets user interface, navigate to the location where you want to add digital assets.
 1. To upload the assets, do one of the following:
 
-    * On the toolbar, tap the **[!UICONTROL Create]** icon. Then, on the menu, then tap **[!UICONTROL Files]**. You can rename the file in the presented dialog if needed.
+    * On the toolbar, tap the **[!UICONTROL Create]** icon. Then on the menu, tap **[!UICONTROL Files]**. You can rename the file in the presented dialog if needed.
     * In a browser that supports HTML5, drag the assets directly on the Assets user interface. The dialog to rename file is not displayed.
 
    ![create option in aem](assets/create-options.png)
@@ -948,15 +947,15 @@ The versioning functionality lets you do the following:
 ### Start a workflow on an asset {#starting-a-workflow-on-an-asset}
 
 1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
-1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
+1. Tap the GlobalNav icon, then select **[!UICONTROL Timeline]** from the menu to display the timeline.
 
    ![timeline-1](assets/timeline.png)
 
-1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to open the list of actions available for the asset.
+1. Tap the **[!UICONTROL Actions]** (arrow) icon at the bottom to open the list of actions available for the asset.
 
    ![chlimage_1-252](assets/chlimage_1-45.png)
 
-1. Tap/click **[!UICONTROL Start Workflow]** from the list.
+1. Tap **[!UICONTROL Start Workflow]** from the list.
 
    ![chlimage_1-253](assets/chlimage_1-49.png)
 
@@ -968,7 +967,7 @@ The versioning functionality lets you do the following:
 
    ![chlimage_1-255](assets/chlimage_1-51.png)
 
-1. Tap/click **[!UICONTROL Start]** and then tap/click **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
+1. Tap **[!UICONTROL Start]**, then tap **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
 
    ![chlimage_1-256](assets/chlimage_1-52.png)
 

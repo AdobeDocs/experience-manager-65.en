@@ -30,7 +30,7 @@ AEM supports the following use cases and this article describes the usage, conce
 
 Search for assets using the Omnisearch field at the top of the AEM web interface. Go to **[!UICONTROL Assets]** &gt; **[!UICONTROL Files]** in AEM, click search icon in top bar, enter search keyword, and press return. Alternatively, use the keyword shortcut / (forward slash) to open the Omnisearch field. Location:Assets is pre-selected to limit the searches to DAM assets. AEM provides suggestions as your start typing a search keyword.
 
-Use the **[!UICONTROL Filters]** panel to narrow your search by filtering search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. Your administrators can customize the Filters panel and add/remove search predicates using search facets.
+Use the **[!UICONTROL Filters]** panel to narrow your search by filtering search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. Your administrators can customize the Filters panel and add or remove search predicates using search facets.
 
 AEM search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/managing-collections-touch-ui.md).
 
@@ -38,7 +38,8 @@ AEM search capability supports searching for collections and searching for asset
 
 Familiarize yourself with the search interface and the available actions.
 
-![Understanding parts of Assets search results interface](assets/aem_search_results.png) <br>
+![Understanding parts of Assets search results interface](assets/aem_search_results.png)
+
 *Figure: Understanding parts of Assets search results interface*
 
 **A.** Save the search as a Smart Collection. **B.** Filters (predicates) to narrow the search results. **C.** Display Files, Folders, or both in the search results. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F.** Omnisearch field with user-provided search keyword. **G.** Check box to select all the search results. **H.** Number of displayed search results out of the total search results. **I.** Close the search **J.** Switch between card view and list view.
@@ -48,7 +49,8 @@ Familiarize yourself with the search interface and the available actions.
 You can discover the desired assets faster from the search results page using the dynamically updated number of expected search results in the search facets. The expected number of assets are updated even before applying the search filter. Seeing the expected count against the filter helps you navigate through the search results quickly and efficiently. For more info, see [Search assets in AEM](search-assets.md).
 
 ![See the approximate number of assets without filtering search results in search facets.](assets/asset_search_results_in_facets_filters.png)
-<br>
+
+
 *Figure: See the approximate number of assets without filtering search results in search facets.*
 
 ## Understand search results and behavior {#searchbehavior}
@@ -93,7 +95,7 @@ When you start typing keywords, AEM suggests the possible search keywords or phr
 To receive suggestions for more than one search keywords, continue to type all keywords without selecting any suggestion for a single keyword.
 
 ![Type multiple keywords to view suggestions that fit them all](assets/search_suggestionsmanykeywords.gif)
-<br>
+
 
 *Figure: Type multiple keywords to view suggestions that fit them all*
 
@@ -127,7 +129,6 @@ AEM provides various methods like filters that apply to the searched assets, to 
 
 ![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
 
-<br>
 
 *Figure: Limit search results to a folder by adding a folder path in Filters panel*
 
@@ -137,7 +138,6 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 
 ![Find similar images using the option in the card view](assets/search_find_similar.png)
 
-<br>
 
 *Figure: Find similar images using the option in the card view*
 
@@ -244,7 +244,6 @@ To access the asset selector interface, go to `https://[AEM server]:[port]/aem/a
 
 ![Browse and select asset in the asset picker](assets/assetpicker.png)
 
-<br>
 
 *Figure: Browse and select asset in the asset picker*
 
@@ -287,7 +286,6 @@ Use double quotations around keywords to find assets that contain the exact phra
 
 ![Search behavior with and without quotation marks](assets/search_with_quotes.gif)
 
-<br>
 
 *Figure: Search behavior with and without quotation marks*
 
@@ -300,7 +298,6 @@ Use double quotations around keywords to find assets that contain the exact phra
 
 ![Illustrating use of asterisk wildcard in Asset search using an example](assets/search_with_asterisk_run.gif)
 
-<br>
 
 *Figure: Illustrating use of asterisk wildcard in Asset search using an example*
 
@@ -314,7 +311,6 @@ Use double quotations around keywords to find assets that contain the exact phra
 
 ![Illustrating use of question mark wildcard in Asset search using an example](assets/search_with_questionmark_run.gif)
 
-<br>
 
 *Figure: Illustrating use of question mark wildcard in Asset search using an example*
 
@@ -322,7 +318,6 @@ Use double quotations around keywords to find assets that contain the exact phra
 
 ![Use of dash to search for assets not containing an excluded keyword](assets/search_dash_exclude_keyword.gif)
 
-<br>
 
 *Figure: Use of dash to search for assets not containing an excluded keyword*
 
@@ -427,7 +422,6 @@ To check the comments on an asset or version history of an asset, click the asse
 
 ![Sort timeline entries for a search asset](assets/sort_timeline_search_results.gif)
 
-<br>
 
 *Figure: Sort timeline entries for a search asset*
 
