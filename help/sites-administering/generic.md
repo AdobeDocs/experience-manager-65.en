@@ -12,7 +12,7 @@ discoiquuid: 9167cbe2-2efb-422d-b58b-0c24b9476fe6
 docset: aem65
 ---
 
-# Administering generic eCommerce{#administering-generic-ecommerce}
+# Administering generic eCommerce {#administering-generic-ecommerce}
 
 The AEM generic solution provides methods of managing the commerce information held within the repository (as opposed to using an external ecommerce engine). This includes:
 
@@ -399,7 +399,7 @@ Clicking the hotspot opens a dialog which let you choose the size and quantity o
 
 1. Modify and move the shape as required.
 1. Click the shape.
-1. Clicking the browse icon opens the [Asset Picker](/help/assets/search-assets.md#assetselector).
+1. Clicking the browse icon opens the [Asset Picker](../assets/search-assets.md#assetselector).
 
    >[!NOTE]
    >

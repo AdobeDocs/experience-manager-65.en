@@ -1,21 +1,18 @@
 ---
-title: Integrate Assets with Activity Stream
+title: Integrate Assets with activity stream
 description: Describes the recording capabilities of AEM and how to configure AEM to record specific events.
-uuid: 95f58e89-45c0-4643-8671-f1b819c08c87
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 4b945204-f141-4656-a122-1334822e6d02
 ---
 
-# Integrate Assets with Activity Stream {#integrating-assets-with-activity-stream}
+# Integrate Assets with activity stream {#integrating-assets-with-activity-stream}
 
 Adobe Experience Manager (AEM) Assets users perform many actions like creating, uploading and deleting Assets. These actions can be recorded so you are able to provide an history of what has been done by a user. This section describes the recording capabilities of AEM and how to configure AEM in order to record specific events.
 
-## Performance Considerations and Default Behavior {#performance-considerations-and-default-behavior}
+## Performance considerations and default behavior {#performance-considerations-and-default-behavior}
 
 This integration could be CPU and disk space consuming for example when doing bulk import. For these reasons the AEM Assets integration with the Activity Stream is disabled by default.
 
-## Supported Action Events {#supported-action-events}
+## Supported action events {#supported-action-events}
 
 The following events can be configured to be recorded:
 
@@ -35,11 +32,11 @@ The following events can be configured to be recorded:
 * Sub-asset updated (SUBASSET_UPDATED)
 * Sub-asset removed (SUBASSET_REMOVED)
 
-## Configuring AEM Assets Events Recording {#configuring-aem-assets-events-recording}
+## Configure AEM Assets events recording {#configuring-aem-assets-events-recording}
 
 The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to the AEM Assets Event Recorder tuning. To configure the AEM Assets Event Recorder, proceed as follows:
 
-1. Navigate to the **[!UICONTROL Web console]**
+1. Navigate to the **[!UICONTROL Web Console]**
 
 1. Click **[!UICONTROL Configuration]**.
 
@@ -51,6 +48,6 @@ The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to 
 
 1. Click **[!UICONTROL Save]**.
 
-## Reading recorded events {#reading-recorded-events}
+## Read recorded events {#reading-recorded-events}
 
-The recorded events are stored as activities. You can read them programmatically by using the [ActivityManager API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+The recorded events are stored as activities. You can read them programmatically using the [ActivityManager API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

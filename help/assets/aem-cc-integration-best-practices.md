@@ -6,7 +6,7 @@ contentOwner: AG
 
 # AEM and Creative Cloud integration best practices {#aem-and-creative-cloud-integration-best-practices}
 
-<!-- TBD: Backmerge with 6.4 article that's behind of this article in terms of content streamlining and structuring.
+<!-- TBD: Reconcile with 6.4 article that's behind this article in terms of content streamlining and structuring.
 -->
 
 Adobe Experience Manager Assets is a digital asset management (DAM) solution that can integrate with Adobe Creative Cloud to help DAM users work together with creative teams, streamlining collaboration in the content creation process.
@@ -202,7 +202,7 @@ You can leverage the following upload capabilities:
 
 * To upload large/hierarchical folders in bulk, use AEM desktop app that provides [folder upload](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#bulkupload) functionality. You can also upload hierarchical folder structures. Assets are uploaded in background and, therefore, it is not tied to a web browser session
 * To upload a few files from a single folder, drag the files directly to the web interface or use the Create option in the AEM Assets web interface.
-* Depending upon your business requirements, you can also use custom uploaders.
+* Depending upon your business requirements, you can also use custom uploader.
 
 #### Manage digital assets directly from desktop {#managing-digital-assets-directly-from-desktop}
 

@@ -17,6 +17,10 @@ docset: aem65
 
 >[!NOTE]
 >
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
+
+>[!NOTE]
+>
 >AEM 6.5.1.0 or later is required to use the SPA server side rendering features as described in this document.
 
 ## Overview {#overview}

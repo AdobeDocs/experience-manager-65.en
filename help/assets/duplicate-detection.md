@@ -1,12 +1,7 @@
 ---
 title: Enable detection of duplicate assets
 description: Learn how to enable the detection of duplicate assets in AEM.
-uuid: 9b37a746-c966-4c0b-8d96-27783a7cf2d8
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 41ff1835-4144-4381-9c5d-afb9449fcbd7
-docset: aem65
-
 ---
 
 # Enable detection of duplicate assets {#enable-detection-of-duplicate-assets}

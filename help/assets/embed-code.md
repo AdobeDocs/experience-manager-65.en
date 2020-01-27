@@ -1,8 +1,6 @@
 ---
 title: Embedding the Dynamic Media Video or Image viewer on a web page
-seo-title: Embedding the Dynamic Media Video or Image viewer on a web page
 description: Learn how to embed Dynamic Media video or images on a web page
-seo-description: Learn how to embed Dynamic media video or images on a web page
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

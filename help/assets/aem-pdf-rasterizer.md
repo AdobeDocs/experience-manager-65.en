@@ -34,7 +34,7 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
 
     * In the **[!UICONTROL Web Enabled Image]** tab, add `application/pdf` or `application/postscript` under **[!UICONTROL Skip List]** depending upon your requirements.
 
-   ![web_enabled_imageskiplist](assets/web_enabled_imageskiplist.png)
+   ![Configuration to skip thumbnail processing for an image format](assets/web_enabled_imageskiplist.png)
 
 1. Open the **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** step, and remove the MIME type for which you want to skip the default generation of preview image renditions. For example, remove the MIME type `application/pdf`, `application/postscript`, or `application/illustrator` from the **[!UICONTROL MIME Types]** list.
 
@@ -67,7 +67,7 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
 
-1. Specify the settings in the **Web Enabled Image** tab.
+1. Specify the settings in the **[!UICONTROL Web Enabled Image]** tab.
 
    ![web_enabled_image1](assets/web_enabled_image1.png)
 

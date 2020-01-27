@@ -1,11 +1,7 @@
 ---
 title: Manage metadata for digital assets
 description: Learn about the types of metadata an how AEM Assets helps manage metadata for assets to allow easier categorization and organization of assets.
-uuid: 29215e51-b315-440a-9480-5b5a0ee76547
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 7acc1cab-d167-4299-bd13-8eb800a1112e
-
 ---
 
 # Manage metadata for digital assets {#managing-metadata-for-digital-assets}

@@ -40,7 +40,7 @@ To create segments:
 To create a brand:
 
 1. In **Sites**, navigate to the **Campaigns** folder (for example in We.Retail).
-1. Click **Create Page **and enter a title for the page, for example We.Retail Brand and select the **Brand **template.
+1. Click **Create Page** and enter a title for the page, for example We.Retail Brand and select the **Brand** template.
 
 ### Creating a Campaign {#creating-a-campaign}
 

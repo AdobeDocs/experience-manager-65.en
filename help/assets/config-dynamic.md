@@ -1,8 +1,6 @@
 ---
 title: Configuring Dynamic Media - Hybrid mode
-seo-title: Configuring Dynamic Media - Hybrid mode
 description: Learn how to configure Dynamic Media - Hybrid mode.
-seo-description: Learn how to configure Dynamic Media - Hybrid mode.
 uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

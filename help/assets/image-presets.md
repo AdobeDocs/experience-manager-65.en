@@ -1,8 +1,6 @@
 ---
 title: Applying Dynamic Media Image Presets
-seo-title: Applying Dynamic Media Image Presets
 description: Learn how to apply image presets in Dynamic Media
-seo-description: Learn how to apply image presets in Dynamic Media
 uuid: 8bafcbd0-6df0-4d5b-b2f7-116ddb4ec060
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

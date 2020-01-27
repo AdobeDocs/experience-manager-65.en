@@ -1,12 +1,7 @@
 ---
 title: Use Connected Assets to share DAM assets in AEM Sites
 description: Use assets available on a remote AEM Assets deployment when creating your web pages.
-uuid: 3e62e432-173e-4804-b4b3-9753330f1347
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 1c3f02c7-d1a0-4d2e-831b-cf4e6d261a36
-docset: aem65
-
 ---
 
 # Use Connected Assets to share DAM assets in AEM Sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}

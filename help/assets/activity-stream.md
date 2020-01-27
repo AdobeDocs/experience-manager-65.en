@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Activity stream in timeline {#activity-stream-in-timeline}
 
-This feature displays activity logs for assets on the timeline. If you perform any of the following asset-related operations in Adobe Experience Manager (AEM) Assets, the Activity stream feature updates the timeline to reflect the activity.
+This feature displays activity logs for assets on the timeline. If you perform any of the following asset-related operations in Adobe Experience Manager (AEM) Assets, the activity stream feature updates the timeline to reflect the activity.
 
 The following operations are logged in the activity stream:
 
@@ -25,7 +25,7 @@ The activity logs to be displayed in the timeline are fetched from the location 
 >
 >Transient workflows are not displayed in the timeline, because no history information is saved for these workflows.
 
-To view the activity stream, perform one or more of the operations on the asset, select the asset, and then choose **Timeline** from the GlobalNav list.
+To view the activity stream, perform one or more of the operations on the asset, select the asset, and then choose **[!UICONTROL Timeline]** from the GlobalNav list.
 
 ![timeline-2](assets/timeline-2.png)
 
