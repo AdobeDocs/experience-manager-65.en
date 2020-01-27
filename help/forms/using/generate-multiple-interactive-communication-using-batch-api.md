@@ -92,7 +92,6 @@ To create interactive communication from records saved in a JSON file:
         |batchType|String|Set value to PRINT, WEB, or WEB_AND_PRINT. The default value is WEB_AND_PRINT.|
         |locale|String|Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications. The default value is en_US|
 
-
     1. Tap **[!UICONTROL Create]** The watched folder is created.
 1. Use the watched folder to generate interactive communication:
     1. Open the Watched Folder. Navigate to the input folder.
@@ -171,11 +170,11 @@ You combine data (records) saved in an external data source with an interactive 
 
  Before you deploy the Java servlet, ensure that you have an interactive communication and corresponding data files are ready. Perform the following steps to create and deploy the Java servlet:  
 
- 1. Log in to your AEM instance and create an Interactive Communication. To use the interactive communication mentioned in the sample code given below, click here. 
+ 1. Log in to your AEM instance and create an Interactive Communication. To use the interactive communication mentioned in the sample code given below, click here.
  1. [Build and deploy an AEM Project using Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) on your AEM instance.
  1. Open the Java project, create a .java file, for example CCMBatchServlet.java. Add the following code to the file:
 
-    ``` java
+    ```java
 
             package com.adobe.fd.ccm.multichannel.batch.integration;
 
@@ -233,7 +232,7 @@ You combine data (records) saved in an external data source with an interactive 
             import java.util.Date;
 
             @Component(service=Servlet.class,
-            property={	
+            property={
                     "sling.servlet.methods=GET",
                     "sling.servlet.paths="+ "/bin/batchServlet"
             })
@@ -281,13 +280,13 @@ You combine data (records) saved in an external data source with an interactive 
                         for (RenditionResult renditionResult : recordResult.getRenditionResults()) {
                             if (renditionResult.isRecordPassed()) {
                                 InputStream output = renditionResult.getDocumentStream().getInputStream();
-                                result.put(recordId +"_"+renditionResult.getContentType(), output); 
+                                result.put(recordId +"_"+renditionResult.getContentType(), output);
 
                                 Date date= new Date();
                                 long time = date.getTime();
 
                                 // Print output
-                                if(getFileExtension(renditionResult.getContentType()).equalsIgnoreCase(".json")) {                		
+                                if(getFileExtension(renditionResult.getContentType()).equalsIgnoreCase(".json")) {
                                     File file = new File(time + getFileExtension(renditionResult.getContentType()));
                                     copyInputStreamToFile(output, file);
                                 } else
@@ -305,7 +304,7 @@ You combine data (records) saved in an external data source with an interactive 
                 }
 
 
-                private static void copyInputStreamToFile(InputStream inputStream, File file) 
+                private static void copyInputStreamToFile(InputStream inputStream, File file)
                         throws IOException {
 
                         try (FileOutputStream outputStream = new FileOutputStream(file)) {
@@ -330,17 +329,16 @@ You combine data (records) saved in an external data source with an interactive 
 
 
             }
-
     ```
 
- 1. In the above code, replace the template path (setTemplatePath) with the path of your template and set value of the setBatchType API: 
+ 1. In the above code, replace the template path (setTemplatePath) with the path of your template and set value of the setBatchType API:
     * When you specify the PRINT option in Watched Folder Configuration, PDF output for the interactive communication is generated.
     * When you specify the WEB option in Watched Folder Configuration, a JSON file per record is generated. You can use the JSON file to [pre-fill a web template](#web-template).
     * When you specify both PRINT and WEB options, both PDF documents and a JSON file per record are generated.
 
  1. [Use maven to deploy the updated code to your AEM instance](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven).
  1. Invoke the batch API to generate the interactive communication. The batch API prints returns a stream of PDF and .json files depending on the number of records. You can use the JSON file to [pre-fill a web template](#web-template).
- 
+
     If you use the above code, the API is deployed at `http://localhost:4502/bin/batchServlet`. If you use the example interactive communication provided in step 1, you can use the records.json (given below) to generate an interactive communication. For example, `http://localhost:4502/bin/batchServlet?filePath=C:/aem/mergedJsonDataan.json>.` It prints and returns a stream of a PDF and a JSON file.
 
 ``` JSON
@@ -457,8 +455,6 @@ You combine data (records) saved in an external data source with an interactive 
 }
 ```
 
-
-
 ### Pre-fill a web template {#web-template}
 
 When you set the batchType to render the Web Channel, the API generates a JSON file for every data record. You can use the following syntax to merge the JSON file with corresponding Web Channel to generate an interactive communication:
@@ -469,7 +465,7 @@ When you set the batchType to render the Web Channel, the API generates a JSON f
 **Example**
 If your JSON file is at `C:\batch\mergedJsonPath.json` and you use the below interactive communication template: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
-Then, the following URL on the publish node displays the Web Channel of the interactive communication 
+Then, the following URL on the publish node displays the Web Channel of the interactive communication
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
 
 Apart from saving the data on file system, you store JSON files in CRX-repository, file system, web server, or can access data via OSGI prefill service. Syntax to merge data using various protocols are:
