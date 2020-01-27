@@ -14,10 +14,10 @@ You can use the Batch API to produce multiple interactive communications from a 
 The Batch API accepts records (data) in JSON format and from a Form Data Model. The number of produced interactive communications is equal to the records specified in the input JSON file in the configured Form Data Model. You can use the API to produce both Print and Web output. The PRINT option produces a PDF document and the WEB option produces data in JSON format for each individual record.
 
 ## Using the Batch API {#using-the-batch-api}
-You can use the Batch API in conjunction with Watched Folders or as a standalone Rest API. You configure a template, output type (HTML, PRINT, or Both), locale, prefill service, and name for the generated interactive communications to use the Batch API. 
 
-You combine a record with an interactive communication template to produce an interactive communication. Batch APIs can read records (data for interactive communication templates) directly from a JSON file or from an external data source accessed via form data model. You can keep each record in a separate JSON file or create a JSON array to keep all the records in a single file. 
+You can use the Batch API in conjunction with Watched Folders or as a standalone Rest API. You configure a template, output type (HTML, PRINT, or Both), locale, prefill service, and name for the generated interactive communications to use the Batch API.
 
+You combine a record with an interactive communication template to produce an interactive communication. Batch APIs can read records (data for interactive communication templates) directly from a JSON file or from an external data source accessed via form data model. You can keep each record in a separate JSON file or create a JSON array to keep all the records in a single file.
 
 **A single record in a JSON file**
 
@@ -63,16 +63,14 @@ You combine a record with an interactive communication template to produce an in
 
 ### Using the Batch API with Watched folders {#using-the-batch-api-watched-folders}
 
-To make it easy to experience the API, AEM Forms provides a Watched Folder service configured to use the Batch API, out of the box. You can access the service via AEM Forms UI to generates multiple interactive communications. You can also create custom services as per your requirements. You can use the below-listed methods to use Batch API with Watched folder: 
+To make it easy to experience the API, AEM Forms provides a Watched Folder service configured to use the Batch API, out of the box. You can access the service via AEM Forms UI to generates multiple interactive communications. You can also create custom services as per your requirements. You can use the below-listed methods to use Batch API with Watched folder:
 
 * Specify input data (records) in JSON file format to produce an interactive communication
 * Use input data (records) saved in an external data source and accessed via a form data model to produce an interactive communication
-* 
 
 #### Specify input data records in JSON file format to produce an interactive communication {#specify-input-data-in-JSON-file-format}
 
 You combine a record with an interactive communication template to produce an interactive communication. You can create a separate JSON file for each record or create a JSON array to keep all the records in a single file:
-
 
 To create interactive communication from records saved in a JSON file:
 
@@ -82,10 +80,9 @@ To create interactive communication from records saved in a JSON file:
     1. Specify the **[!UICONTROL Name]** and physical **[!UICONTROL Path]** of the folder. For example, `c:\batchprocessing`.
     1. Select the **[!UICONTROL Service]** option in the **[!UICONTROL Process File Using]** field.
     1. Select the **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** service in the **[!UICONTROL Service Name]** field.
-    1. Specify an **[!UICONTROL Output File Pattern]**. For example, the %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) specifies the Watched Folder can find input files in a sub-folder of the Watched Folder\input folder. 
+    1. Specify an **[!UICONTROL Output File Pattern]**. For example, the %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) specifies the Watched Folder can find input files in a sub-folder of the Watched Folder\input folder.
 1. Configure advanced parameters:
     1. Open the **[!UICONTROL Advanced]** tab and add the following custom properties:
-    
 
         |Property|Type|Description|
         |--- |--- |--- |
@@ -114,19 +111,19 @@ You combine data (records) saved in an external data source with an interactive 
     1. Open the Form Data Model associated to interactive communication template.
     1. Select your TOP LEVEL MODEL OBJECT and tap Edit Properties.
     1. Select your fetch or get service from the Read Service field under Edit Properties pane.
-    1. Tap the pencil icon for the read service argument to bind the argument to a Request Attribute and specify the binding value. It binds the service argument to the specified binding attribute or literal value, which is passed to the service as an argument to fetch details associated with the specified value from the data source. 
-    
+    1. Tap the pencil icon for the read service argument to bind the argument to a Request Attribute and specify the binding value. It binds the service argument to the specified binding attribute or literal value, which is passed to the service as an argument to fetch details associated with the specified value from the data source.
+
         <br>
         In this example, the id argument takes the value of the id attribute of the user profile and passes it as an argument to the read service. It will read and return values of associated properties from the employee data model object for the specified id. So, if you specify 00250 in the id field in the form, the read service will read details of the employee with 00250 employee id.
         <br>
 
         ![Configure request attribute](assets/request-attribute.png)
-    
-    1. Save properties and Form Data Model. 
+
+    1. Save properties and Form Data Model.
 1. Configure value for Request Attribute:
     1. Create a .json file on your file system and open it for editing.
-    1. Create a JSON array and specify the primary attribute to fetch data from Form Data Model. For example, the following JSON requests FDM to send data of records where id is 27126 or 27127: 
-    
+    1. Create a JSON array and specify the primary attribute to fetch data from Form Data Model. For example, the following JSON requests FDM to send data of records where id is 27126 or 27127:
+
         ```json
             [
                 {
@@ -168,14 +165,13 @@ You combine data (records) saved in an external data source with an interactive 
         * When you specify the WEB option in Watched Folder Configuration, a JSON file per record is generated. You can use the JSON file to [pre-fill a web template](#web-template).
         * When you specify both PRINT and WEB options, both PDF documents and a JSON file per record are generated.
 
- ## Invoke the Batch API using REST requests
+## Invoke the Batch API using REST requests
 
  You can invoke [the Batch API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) through Representational State Transfer (REST) requests. It allows you to provide a REST endpoint to other users to access the API and configure your own methods for processing, storing, and customizing interactive communication. You can develop your own custom Java servlet to deploy the  API on your AEM instance.
 
-
  Before you deploy the Java servlet, ensure that you have an interactive communication and corresponding data files are ready. Perform the following steps to create and deploy the Java servlet:  
 
- 1. Log in to your AEM instance and create an Interactive Communication. To use the interactive communication mentioned in the sample code given below, [click here](). 
+ 1. Log in to your AEM instance and create an Interactive Communication. To use the interactive communication mentioned in the sample code given below, click here. 
  1. [Build and deploy an AEM Project using Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) on your AEM instance.
  1. Open the Java project, create a .java file, for example CCMBatchServlet.java. Add the following code to the file:
 
@@ -225,7 +221,7 @@ You combine data (records) saved in an external data source with an interactive 
             import javax.annotation.PostConstruct;
             import javax.inject.Inject;
             import javax.inject.Named;
-            
+
             import org.apache.sling.api.resource.Resource;
             import org.apache.sling.models.annotations.Default;
             import org.apache.sling.models.annotations.Model;
@@ -242,7 +238,7 @@ You combine data (records) saved in an external data source with an interactive 
                     "sling.servlet.paths="+ "/bin/batchServlet"
             })
             public class CCMBatchServlet extends SlingAllMethodsServlet {
-                
+
                 @Reference
                 private BatchGeneratorService batchGeneratorService;
                 @Reference
@@ -286,10 +282,10 @@ You combine data (records) saved in an external data source with an interactive 
                             if (renditionResult.isRecordPassed()) {
                                 InputStream output = renditionResult.getDocumentStream().getInputStream();
                                 result.put(recordId +"_"+renditionResult.getContentType(), output); 
-                                
+
                                 Date date= new Date();
                                 long time = date.getTime();
-                                
+
                                 // Print output
                                 if(getFileExtension(renditionResult.getContentType()).equalsIgnoreCase(".json")) {                		
                                     File file = new File(time + getFileExtension(renditionResult.getContentType()));
@@ -307,8 +303,8 @@ You combine data (records) saved in an external data source with an interactive 
                     resultObj.put("result", result);
                     writer.write(resultObj.toString());
                 }
-                
-                
+
+
                 private static void copyInputStreamToFile(InputStream inputStream, File file) 
                         throws IOException {
 
@@ -327,15 +323,15 @@ You combine data (records) saved in an external data source with an interactive 
                         }
 
                     }
-                
-                
+
+
                 private String getFileExtension(String contentType) {
                     if (contentType.endsWith(BatchConstants.JSON)) {
                         return ".json";
                     } else return ".pdf";
                 }
-                
-                
+
+
             }
 
     ```
@@ -468,10 +464,10 @@ You combine data (records) saved in an external data source with an interactive 
 
 ### Pre-fill a web template {#web-template}
 
-When you set the batchType to render the Web Channel, the API generates a JSON file for every data record. You can use the following syntax to merge the JSON file with corresponding Web Channel to generate an interactive communication: 
+When you set the batchType to render the Web Channel, the API generates a JSON file for every data record. You can use the following syntax to merge the JSON file with corresponding Web Channel to generate an interactive communication:
 
 **Syntax**
-`http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>` 
+`http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
 **Example**
 If your JSON file is at `C:\batch\mergedJsonPath.json` and you use the below interactive communication template: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
@@ -479,7 +475,7 @@ If your JSON file is at `C:\batch\mergedJsonPath.json` and you use the below int
 Then, the following URL on the publish node displays the Web Channel of the interactive communication 
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
 
-Apart from saving the data on file system, you store JSON files in CRX-repository, file system, web server, or can access data via OSGI prefill service. Syntax to merge data using various protocols are: 
+Apart from saving the data on file system, you store JSON files in CRX-repository, file system, web server, or can access data via OSGI prefill service. Syntax to merge data using various protocols are:
 
 * **CRX protocol**
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
