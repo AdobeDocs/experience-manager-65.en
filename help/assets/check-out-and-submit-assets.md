@@ -1,10 +1,7 @@
 ---
 title: Check in and check out your digital assets for editing
 description: Learn how to check out assets for editing and check them back in after the changes are complete.
-uuid: d84850d3-fa29-47b3-ad99-151407360833
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: e93cf898-498b-418f-a25c-be350914cc76
 ---
 
 # Check-in and check-out files in AEM DAM {#check-in-and-check-out-files-in-assets}

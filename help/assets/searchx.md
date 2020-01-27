@@ -1,12 +1,7 @@
 ---
 title: Extend search functionality of AEM Assets
 description: Extend the search capabilities of AEM Assets beyond the defaults.
-uuid: 1c7f448c-f608-484c-91c2-8b887ec09d85
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 7eee90c0-4cb9-437d-a202-5b7bddfa6772
-docset: aem65
-
 ---
 
 # Extend assets search {#extending-assets-search}

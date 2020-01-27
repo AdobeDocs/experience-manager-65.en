@@ -1,12 +1,7 @@
 ---
 title: Assets HTTP API
 description: Learn about the implementation, data model, and features of Assets HTTP API. Use Assets HTTP API to perform various tasks around assets.
-uuid: 24bd2b1e-8f4c-4177-8715-b53a51f02d6e
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 2bb815f0-c1da-491e-81e5-286e596c5197
-docset: aem65
-
 ---
 
 # Assets HTTP API {#assets-http-api}

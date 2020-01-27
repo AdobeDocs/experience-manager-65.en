@@ -41,4 +41,4 @@ The procedure to apply a workflow to multiple folders is similar to the procedur
 
 ## Applying a workflow to a collection {#applying-a-workflow-to-a-collection}
 
-For details of applying a workflow to a collection, see [runn a workflow on a collection](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
+See [apply a workflow on a collection](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).

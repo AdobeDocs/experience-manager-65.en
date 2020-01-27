@@ -1,11 +1,7 @@
 ---
 title: Enhanced Smart Tags
 description: Enhanced Smart Tags
-uuid: 4452ca05-1f20-4f80-884a-a739ae7b8b0e
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
-
 ---
 
 # Enhanced Smart Tags {#enhanced-smart-tags}

@@ -1,12 +1,7 @@
 ---
 title: Download assets from AEM
 description: Learn how to download assets from AEM and enable or disable the download functionality.
-uuid: 7c76d002-c704-4705-9267-f710168696b1
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: ef329e45-e651-4bee-8427-694b05519b96
-docset: aem65
-
 ---
 
 # Download assets from AEM {#download-assets-from-aem}
