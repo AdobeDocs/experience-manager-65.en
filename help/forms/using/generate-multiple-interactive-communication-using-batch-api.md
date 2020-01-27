@@ -170,7 +170,7 @@ You combine data (records) saved in an external data source with an interactive 
 
  Before you deploy the Java servlet, ensure that you have an interactive communication and corresponding data files are ready. Perform the following steps to create and deploy the Java servlet:  
 
- 1. Log in to your AEM instance and create an Interactive Communication. To use the interactive communication mentioned in the sample code given below, [click here](assets/SimpleMediumIC.zip).
+ 1. Log in to your AEM instance and create an Interactive Communication. To use the interactive communication mentioned in the sample code given below, [click here](/assets/SimpleMediumIC.zip).
  1. [Build and deploy an AEM Project using Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) on your AEM instance.
  1. Open the Java project, create a .java file, for example CCMBatchServlet.java. Add the following code to the file:
 
