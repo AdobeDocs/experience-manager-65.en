@@ -80,4 +80,4 @@ Top navigation bar before font customization
 
 Top navigation bar after font customization of first tab
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -179,7 +179,7 @@ The following nodes are created:
 
 The structure looks as follows in CRXDE Lite with a project called **myproject** and a java package suffix called **mycompany**:
 
-![chlimage_1-19](assets/chlimage_1-19.png) 
+![chlimage_1-19](assets/chlimage_1-19.png)
 
 ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -269,9 +269,7 @@ To create a node with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
 1. In the Navigation pane, right-click the node where you want to create the new node, select **Create ...**, then **Create Node ...**.
-
 1. Enter the **Name** and the **Type**. Click **OK**.
-
 1. Click **Save All** to save the changes on the server.
 
 You can now adapt the node to your needs by modifying properties or creating new nodes.

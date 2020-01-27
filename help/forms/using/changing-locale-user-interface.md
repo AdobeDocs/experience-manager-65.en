@@ -164,7 +164,7 @@ You require development package to localize the *datepicker *API. For detailed i
     * apps\ws\js\runtime\views\searchtemplatedetails.js
     * apps\ws\js\runtime\views\outofoffice.js
 
-   Change the following code to add the new locale:  
+   Change the following code to add the new locale:
 
    ```
    if (locale === 'ja-JP') {
@@ -193,4 +193,4 @@ You require development package to localize the *datepicker *API. For detailed i
    }
    ```
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

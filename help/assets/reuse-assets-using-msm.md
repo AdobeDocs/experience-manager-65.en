@@ -1,12 +1,8 @@
 ---
 title: Reuse assets using MSM for Assets
 description: Use assets across multiple pages/folders that are derived from and linked to parent assets. The assets stay in sync with a master copy and with a few clicks, receive the updates from parent assets.
-uuid: 5319bfd6-911b-4351-88d6-eeafc5ef5541
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 358b490d-c514-42ba-b9f0-8e29d5e6046e
-docset: aem65
-
+mini-toc-levels: 1
 ---
 
 # Reuse assets using MSM for Assets {#reuse-assets-using-msm-for-assets}
@@ -124,7 +120,7 @@ AEM provides a console to check the statues of all the live copies of a source f
 1. Select a source folder. Click **[!UICONTROL Properties]** from the toolbar. Alternatively, use the keyboard shortcut `p`.
 1. Click **[!UICONTROL Live Copy Source]**. To open the console, click **[!UICONTROL Live Copy Overview]**. This dashboard provides a top-level status of all the child assets.
 
-   ![View statuses of live copies in Live Copy Console of source](assets/livecopy_statuses.png)
+   ![View statuses of live copies in Live Copy Console of source](assets/livecopy-statuses.png)
    *Figure: View statuses of live copies in Live Copy Console of source*
 
 1. To view the detailed information about each asset in the live copy folder, select an asset and click **[!UICONTROL Relationship Status]** from the toolbar.
@@ -199,10 +195,10 @@ Alternatively, you can initiate a rollout action from the References rail after 
 A synchronize action pulls the modifications from a source only to the selected live copy. Sync action respects and maintains the local modifications done after canceling inheritance. The local modifications are not overwritten and the canceled inheritance is not re-established. You can initiate a sync action in three ways.
 
 | Where in AEM interface | When and why to use | How to use |
-|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| References rail | Quickly synchronize when you already have the source selected. | See [Quick actions from References rail for source](#refrailsource) |
-| Toolbar in the Properties page | Initiate a sync when you already have the live copy properties open. | See [Synchronize a live copy](#synclc) |
-| Live Copy Overview console | Quickly synchronize multiple assets (not necessarily all) when source folder is selected or Live Copy Overview console is already open. Sync action is initiated for one asset at a time but is a faster way to do sync for multiple assets in one go. | See [Actions on many assets in a live copy folder](#bulkactions) |
+|---|---|---|
+| [!UICONTROL References] rail | Quickly synchronize when you already have the source selected. | See [Quick actions from References rail for source](#refrailsource) |
+| Toolbar in the [!UICONTROL Properties] page | Initiate a sync when you already have the live copy properties open. | See [Synchronize a live copy](#synclc) |
+| [!UICONTROL Live Copy Overview] console|Quickly synchronize multiple assets (not necessarily all) when source folder is selected or [!UICONTROL Live Copy Overview] console is already open. Sync action is initiated for one asset at a time but is a faster way to do sync for multiple assets in one go. | See [Actions on many assets in a live copy folder](#bulkactions) |
 
 ### Synchronize a live copy {#synclc}
 

@@ -23,7 +23,7 @@ When you create the configuration, you specify a title. The title should be desc
     * Configure Now: This link appears when no coniguration has been created.
     * Show Configurations: This link appears when one or more configurations have been created.
 
-   ![chlimage_1-4](assets/chlimage_1-4.png)
+   ![chlimage_1-4](assets/chlimage_1-4a.png)
 
 1. If you clicked Show Configurations, click the + link beside Available Configurations.
 1. Type a title for the configuration. Optionally, type a name for the node that is used to store the configuration in the repository. Click Create.
@@ -36,7 +36,7 @@ Modify the user name and password of a BrightEdge configuration when required. T
 1. On the rail, click Tools &gt; Operations &gt; Cloud &gt; Cloud Services.
 1. In the BrightEdge Content Optimizer section, click Show Configurations.
 
-   ![chlimage_1-5](assets/chlimage_1-5.png)
+   ![chlimage_1-5](assets/chlimage_1-5a.png)
 
 1. Click the name of the configuration that you want to edit.
 1. Click Edit, modify the property values, and then click OK.
@@ -51,7 +51,7 @@ Associate pages with a BrightEdge configuration to send page data to the BrightE
 1. On the Cloud Services tab, click the Add Service button, and in the Cloud Services dialog select BrightEdge Content Optimizer and then click OK.
 1. In the BrightEdge Content Optimizer list, select the BrightEdge configuration to associate with the page and then click OK.
 
-   ![chlimage_1-6](assets/chlimage_1-6.png)
+   ![chlimage_1-6](assets/chlimage_1-6a.png)
 
 ## Activating a BrightEdge Configuration {#activating-a-brightedge-configuration}
 
@@ -60,9 +60,9 @@ Activate a BrightEdge configuration to replicate it on the publish instance and 
 1. On the rail, click Sites, and then browse to and select the page that you associated with the BrightEdge configuration.
 1. Click or tap the Publish icon, and then click or tap Publish.
 
-   ![chlimage_1-7](assets/chlimage_1-7.png)
+   ![chlimage_1-7](assets/chlimage_1-7a.png)
 
 1. In the list of configurations that appear, ensure that your BrightEdge configuration is selected and then click Publish.
 
-   ![chlimage_1-8](assets/chlimage_1-8.png)
+   ![chlimage_1-8](assets/chlimage_1-8a.png)
 

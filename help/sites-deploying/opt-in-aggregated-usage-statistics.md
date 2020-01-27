@@ -53,7 +53,7 @@ The first time you start AEM, you can opt-in by using the Touch UI as follows:
 
 You can opt-in (or opt-out) by using the Web Console as follows:
 
-1. On the AEM Navigation screen, click **Tools **and then **Operations**.
+1. On the AEM Navigation screen, click **Tools** and then **Operations**.
 
    ![usage_statisticsopsdashboard](assets/usage_statisticsopsdashboard.png)
 

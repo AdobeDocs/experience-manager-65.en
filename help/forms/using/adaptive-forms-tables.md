@@ -177,7 +177,7 @@ Mobile view of a table with Header on left layout
 
 In the Collapsible column layout, the columns in the table collapse to show one or two columns, depending on the device size, while other columns are collapsed. You can click the collapse/expand icon to view other columns in the table.
 
-***Note**: While Collapsible column layout is optimized for mobile devices, it will work on desktop as well, if the width available is not enough to show all the columns in a table. *
+**Note**: While Collapsible column layout is optimized for mobile devices, it will work on desktop as well, if the width available is not enough to show all the columns in a table.
 
 The following images compare how a table looks on a device with collapsed and expanded columns.
 

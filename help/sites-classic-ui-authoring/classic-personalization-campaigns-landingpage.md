@@ -356,7 +356,7 @@ To create a new landing page:
 
 1. Go to the **Websites** console.
 1. Select your campaign in the left pane.
-1. Click **New** to open the** Create Page **window.
+1. Click **New** to open the **Create Page** window.
 1. Select the **Importer Page** template and add a title and optionally, a name, and click **Create**.
 
    ![chlimage_1-1-1](assets/chlimage_1-1-1.png)

@@ -34,7 +34,7 @@ If disabled, you can turn CRXDE Lite on by following the below procedure:
 
 1. Click the wrench icon next to it in order to see its configuration options:
 
-   ![chlimage_1-80](assets/chlimage_1-80.png)
+   ![chlimage_1-80](assets/chlimage_1-80a.png)
 
 1. Create the following configuration:
 

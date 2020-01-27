@@ -132,7 +132,7 @@ Flow of data when AEM Assets and Creative Cloud are integrated
 ## Add users to Marketing Cloud {#add-users-to-marketing-cloud}
 
 1. Log in to Marketing Cloud using administrator credentials.
-1. From the rails, go to **[!UICONTROL Administration]**and then click/tap **[!UICONTROL Launch Enterprise Dashboard]**.
+1. From the rails, go to **[!UICONTROL Administration]** and then click/tap **[!UICONTROL Launch Enterprise Dashboard]**.
 1. From the rail, click **[!UICONTROL Users]** to open the **[!UICONTROL User Management]** page.
 1. From the toolbar, click/tap **Add** ![aem_assets_add_icon](assets/aem_assets_add_icon.png).
 1. Add one or more users that you want to provide the ability to share assets with Creative Cloud.
@@ -161,7 +161,7 @@ Flow of data when AEM Assets and Creative Cloud are integrated
 
 >[!CAUTION]
 >
->The AEM to Creative Cloud Folder Sharing feature is deprecated. Customers are strongly advised to use newer capabilities, like [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) or [AEM Desktop App](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Learn more in [AEM and Creative Cloud Integration Best Practices](/help/assets/aem-cc-integration-best-practices.md).
+>The AEM to Creative Cloud Folder Sharing feature is deprecated. Customers are strongly advised to use newer capabilities, like [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) or [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Learn more in [AEM and Creative Cloud Integration Best Practices](/help/assets/aem-cc-integration-best-practices.md).
 
 AEM Assets lets you share folders containing assets with Adobe Creative Cloud users.
 

@@ -11,7 +11,7 @@ topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
 ---
 
-# Editing App Metadata{#editing-app-metadata}
+# Editing App Metadata {#editing-app-metadata}
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ You can edit the common and IOS Metadata:
 
 ## Add and Remove Screenshots {#add-and-remove-screenshots}
 
-You can include App screenshots to the metadata roll up. Some vendors require accurate screenshots when submitting any app to their app store. These images must already exist in Assets. See [Asset Picker](/help/assets/search-assets.md#assetselector) to upload your screenshots.
+You can include App screenshots to the metadata roll up. Some vendors require accurate screenshots when submitting any app to their app store. These images must already exist in Assets. See [Asset Picker](../assets/search-assets.md#assetselector) to upload your screenshots.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 

@@ -41,7 +41,7 @@ Best practices around Assets, including the Dynamic Media capability and Dynamic
   </tr>
   <tr>
    <td>How to organize your content (folder hierarchy)</td>
-   <td><a href="/help/assets/best-practices-for-file-management.md">Best practices for file management</a></td>
+   <td><a href="/help/assets/organize-assets.md">Best practices for file management</a></td>
    <td>Much of processing profiles is folder based as video, metadata, image processing are always applied to folders. This best practice document describes how to define and set up your folder hierarchy as the hierarchy has a significant impact on how content is processed. </td>
   </tr>
   <tr>

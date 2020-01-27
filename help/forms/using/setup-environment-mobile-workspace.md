@@ -42,4 +42,4 @@ You need the following hardware, software, and licenses to build and deploy the 
 >
 >The adobe-lc-mobileworkspace-src.zip contains PhoneGap SDK 5.0. Ensure that PhoneGap SDK is not pre-installed.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

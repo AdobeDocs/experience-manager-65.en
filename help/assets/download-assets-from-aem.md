@@ -1,12 +1,7 @@
 ---
 title: Download assets from AEM
 description: Learn how to download assets from AEM and enable or disable the download functionality.
-uuid: 7c76d002-c704-4705-9267-f710168696b1
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: ef329e45-e651-4bee-8427-694b05519b96
-docset: aem65
-
 ---
 
 # Download assets from AEM {#download-assets-from-aem}
@@ -17,7 +12,7 @@ You can download assets including static and dynamic renditions. Alternatively, 
 >
 >Recipients of emails must be members of the `dam-users` group to access the ZIP download link in the email message. To be able to download the assets, the members must have permissions to launch workflows that trigger downloading of assets.
 
-To download assets, navigate to an asset, select the asset, and tap/click the **[!UICONTROL Download]** icon from the toolbar. In the resulting dialog, specify your download options.
+To download assets, navigate to an asset, select the asset, and tap **[!UICONTROL Download]** from the toolbar. In the resulting dialog, specify your download options.
 
 The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets cannot be downloaded.
 
@@ -26,13 +21,13 @@ The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets canno
 
 The following are the Export/Download options. Dynamic renditions are unique to Dynamic Media and let you generate renditions on-the-fly in addition to the asset you selected - that option is only available if you have Dynamic Media enabled.
 
-|Export or download options|Descriptions|
+| Export or download options | Descriptions |
 |---|---|
-| [!UICONTROL Assets]| Select this to download the asset in its original form without any renditions.|
-| [!UICONTROL Renditions] |A rendition is the binary representation of an asset. Assets have a primary representation - that of the uploaded file. They can have any number of representations. <br> With this option, you can select the renditions you want downloaded. The renditions available depend on the asset you select.|
-| [!UICONTROL Dynamic Renditions] |A dynamic rendition generates other renditions on-the-fly. When you select this option, you also select the renditions you want to create dynamically by selecting from the [Image Preset](image-presets.md) list. <br>In addition, you can select the size and unit of measurement, format, color space, resolution, and any image modifiers (for example to invert the image)|
-| [!UICONTROL Email] |An email notification is sent to the user. Standard emails templates are available at the following locations:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> Templates that you customize during deployment should be present at these locations: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>You can store tenant-specific custom templates at these locations:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>|
-| [!UICONTROL Create separate folder for each asset] |Select this to preserve the folder hierarchy while downloading assets. By default, the folder hierarchy is ignored and all assets are downloaded in one folder in your local system.|
+| [!UICONTROL Assets] | Select this to download the asset in its original form without any renditions.|
+| [!UICONTROL Renditions] | A rendition is the binary representation of an asset. Assets have a primary representation - that of the uploaded file. They can have any number of representations. <br> With this option, you can select the renditions you want downloaded. The renditions available depend on the asset you select. |
+| [!UICONTROL Dynamic Renditions] | A dynamic rendition generates other renditions on-the-fly. When you select this option, you also select the renditions you want to create dynamically by selecting from the [Image Preset](image-presets.md) list. <br>In addition, you can select the size and unit of measurement, format, color space, resolution, and any image modifiers (for example to invert the image) |
+| [!UICONTROL Email] | An email notification is sent to the user. Standard emails templates are available at the following locations:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> Templates that you customize during deployment should be present at these locations: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>You can store tenant-specific custom templates at these locations:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> |
+| [!UICONTROL Create separate folder for each asset] | Select this to preserve the folder hierarchy while downloading assets. By default, the folder hierarchy is ignored and all assets are downloaded in one folder in your local system.|
 
 The option renditions option is available if the asset has any renditions. The subassets option is available if the asset includes subassets.
 

@@ -66,7 +66,7 @@ Do the following to configure your MySQL database:
     1. Log in to AEM Forms Author Instance as an administrator and go to AEM web console bundles. The default URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
     1. Tap **Install/Update**. An **Upload / Install Bundles** dialog appears.
 
-    1. Tap **Choose File** to browse and select the MySQL JDBC driver OSGi bundle. Select **Start Bundle** and **Refresh Packages**, and tap **Install **or **Update**. Ensure that the Oracle Corporation's JDBC Driver for MySQL is active. The driver is installed.
+    1. Tap **Choose File** to browse and select the MySQL JDBC driver OSGi bundle. Select **Start Bundle** and **Refresh Packages**, and tap **Install** or **Update**. Ensure that the Oracle Corporation's JDBC Driver for MySQL is active. The driver is installed.
 
 1. Configure MySQL database as a data source:
 

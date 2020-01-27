@@ -17,7 +17,7 @@ discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 
 The `start` script is available under *the &lt;cq-installation&gt;/bin* directory. Both Unix and Windows versions are provided. The script starts the instance installed in *&lt;cq-installation&gt;* directory.
 
-Those two versions support a list of environement variables that could be used to start and tune the AEM instance.
+Those two versions support a list of environment variables that could be used to start and tune the AEM instance.
 
 <table>
  <tbody>

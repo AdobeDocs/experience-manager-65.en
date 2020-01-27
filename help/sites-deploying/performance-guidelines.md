@@ -235,7 +235,7 @@ Illustrated below are the deployment options available for AEM (scroll to view a
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><p>Desktop app</p> </td>
+   <td><p>desktop app</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
@@ -273,7 +273,7 @@ This chapter gives a general overview of the AEM architecture and its most impor
 
 The AEM platform consists of the following components:
 
-![chlimage_1](assets/chlimage_1.png)
+![chlimage_1](assets/chlimage_1a.png)
 
 For more information on the AEM platform, see [What is AEM](/help/sites-deploying/deploy.md#what-is-aem).
 
@@ -281,13 +281,13 @@ For more information on the AEM platform, see [What is AEM](/help/sites-deployin
 
 There are three important building blocks to an AEM deployment. The **Author Instance** which is used by content authors, editors, and approvers to create and review content. When the content is approved, it is published to a second instance type named the **Publish Instance** from where it is accessed by the end users. The third building block is the **Dispatcher** which is a module that handles caching and URL filtering and is installed on the webserver. For additional information about the AEM architecture, see [Typical Deployment Scenarios](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
 
-![chlimage_1-1](assets/chlimage_1-1.png)
+![chlimage_1-1](assets/chlimage_1-1a.png)
 
 ### Micro Kernels {#micro-kernels}
 
 Micro Kernels act as persistence managers in AEM. There are three types of Micro Kernels used with AEM: TarMK, MongoDB, and Relational Database (under restricted support). Choosing one to fit your needs depends on the purpose of your instance and the deployment type you are considering. For additional information about Micro Kernels, see the [Recommended Deployments](/help/sites-deploying/recommended-deploys.md) page.
 
-![chlimage_1-2](assets/chlimage_1-2.png)
+![chlimage_1-2](assets/chlimage_1-2a.png)
 
 ### Nodestore {#nodestore}
 
@@ -301,7 +301,7 @@ In AEM, binary data can be stored independently from content nodes. The location
 >
 >The Relational Database Micro Kernel is under restricted support. Contact [Adobe Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) before using this type of Micro Kernel.
 
-![chlimage_1-3](assets/chlimage_1-3.png)
+![chlimage_1-3](assets/chlimage_1-3a.png)
 
 ### Data Store {#data-store}
 
@@ -325,7 +325,7 @@ Listed in this section are the custom index providers used with AEM. To know mor
 >
 >For most deployments, Adobe recommends using the Lucene Index. You should use Solr only for scalability in specialized and complex deployments.
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+![chlimage_1-4](assets/chlimage_1-4a.png)
 
 ### Development Guidelines {#development-guidelines}
 
@@ -416,11 +416,11 @@ Illustrated below are the architecture guidelines for AEM sites and AEM Assets.
 
 **Tar Architecture Guidelines for AEM Sites**
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![chlimage_1-5](assets/chlimage_1-5a.png)
 
 **Tar Architecture Guidelines for AEM Assets**
 
-![chlimage_1-6](assets/chlimage_1-6.png)
+![chlimage_1-6](assets/chlimage_1-6a.png)
 
 ### TarMK Settings Guideline {#tarmk-settings-guideline}
 
@@ -499,13 +499,13 @@ The benchmark tests were performed on the following specifications:
 | Datastore |File DS  |
 | Scenario |Single Product: Assets / 30 concurrent threads |
 
-#### Performance Bechmark Results {#performance-bechmark-results}
+#### Performance Benchmark Results {#performance-benchmark-results}
 
 >[!NOTE]
 >
 >The numbers presented below have been normalized to 1 as the baseline and are not the actual throughput numbers.
 
-![chlimage_1-7](assets/chlimage_1-7.png) ![chlimage_1-8](assets/chlimage_1-8.png)
+![chlimage_1-7](assets/chlimage_1-7a.png) ![chlimage_1-8](assets/chlimage_1-8a.png)
 
 ## MongoMK {#mongomk}
 
@@ -530,7 +530,7 @@ To establish good performance when using MongoMK, you should start from the foll
 >
 >Binary-less replication should be turned **ON** if the File Datastore is shared.
 
-![chlimage_1-9](assets/chlimage_1-9.png)
+![chlimage_1-9](assets/chlimage_1-9a.png)
 
 ### MongoMK Settings Guidelines {#mongomk-settings-guidelines}
 
@@ -609,13 +609,13 @@ The benchmark tests were performed on the following specifications:
 | Datastore |File DS  |N/A |
 | Scenario |Single Product: Assets / 30 concurrent threads |Single Product: Assets / 30 concurrent threads |
 
-### Performance Benchmark Results {#performance-benchmark-results}
+### Performance Benchmark Results {#performance-benchmark-results-1}
 
 >[!NOTE]
 >
 >The numbers presented below have been normalized to 1 as the baseline and are not the actual throughput numbers.
 
-![chlimage_1-10](assets/chlimage_1-10.png) ![chlimage_1-11](assets/chlimage_1-11.png)
+![chlimage_1-10](assets/chlimage_1-10a.png) ![chlimage_1-11](assets/chlimage_1-11a.png)
 
 ## TarMK vs MongoMK {#tarmk-vs-mongomk}
 
@@ -730,7 +730,7 @@ For further details on TarMK vs MongoMK, see [Recommended Deployments](/help/sit
 
 ### Scenario 1 Performance Benchmark Results {#scenario-performance-benchmark-results}
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![chlimage_1-12](assets/chlimage_1-12a.png)
 
 ### Scenario 2 Technical Specifications {#scenario-technical-specifications-1}
 
@@ -817,11 +817,11 @@ For further details on TarMK vs MongoMK, see [Recommended Deployments](/help/sit
 
 ### Scenario 2 Performance Benchmark Results {#scenario-performance-benchmark-results-1}
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![chlimage_1-13](assets/chlimage_1-13a.png)
 
 ### Architecture Scalability Guidelines For AEM Sites and Assets {#architecture-scalability-guidelines-for-aem-sites-and-assets}
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![chlimage_1-14](assets/chlimage_1-14a.png)
 
 ## Summary of Performance Guidelines  {#summary-of-performance-guidelines}
 

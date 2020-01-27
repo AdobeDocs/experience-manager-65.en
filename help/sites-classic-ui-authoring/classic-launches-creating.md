@@ -36,7 +36,7 @@ The following procedure creates a launch.
     * **Keep In Sync**: Select this option to automatically update the content of launch pages when the source pages change. This is achieved by making the launch a [live copy](/help/sites-administering/msm.md).
     * **Launch Date**: The date and time when the launch copy is to be activated (dependent on the **Production Ready** flag; see [Launches - the Order of Events](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
-   ![chlimage_1-99](assets/chlimage_1-99.png)
+   ![chlimage_1-99](assets/chlimage_1-99a.png)
 
 1. Click **Create**.
 
@@ -47,7 +47,7 @@ You can also delete a launch.
 1. In the [launches console](/help/sites-classic-ui-authoring/classic-launches.md), select the required launch.
 1. Click **Delete** - confirmation is required:
 
-   ![chlimage_1-100](assets/chlimage_1-100.png)
+   ![chlimage_1-100](assets/chlimage_1-100a.png)
 
    >[!CAUTION]
    >

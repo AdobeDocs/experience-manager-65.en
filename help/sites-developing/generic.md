@@ -55,7 +55,7 @@ The eCommerce framework can be used with any eCommerce solution, the engine bein
 In a standard AEM installation a specific implementation is required, for example:
 
 |||
-|-|-|
+|---|---|
 |`cq:commerceProvider = geometrixx`|geometrixx example; this includes minimal extensions to the generic API|
 
 ### Example {#example}
@@ -337,7 +337,7 @@ public class AxisFilter implements VariantFilter {
 
 * The following illustrates an example of cart information in the ClientContext cart:
 
-![chlimage_1-33](assets/chlimage_1-33.png)
+![chlimage_1-33](assets/chlimage_1-33a.png)
 
 #### Architecture of Checkout {#architecture-of-checkout}
 
@@ -403,7 +403,7 @@ The eCommerce project contains a default search component, located in:
 
 `/libs/commerce/components/search`
 
-![chlimage_1-34](assets/chlimage_1-34.png)
+![chlimage_1-34](assets/chlimage_1-34a.png)
 
 This makes use of the search API to query the selected commerce engine (see [eCommerce Engine Selection](#ecommerce-engine-selection)):
 

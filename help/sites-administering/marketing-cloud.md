@@ -24,7 +24,7 @@ With Adobe Experience Manager (AEM), you can seamlessly integrate with the follo
 * Adobe Search&Promote gives marketers the ability to control and optimize the search results on their sites.
 * Adobe Campaign lets you manage email delivery content directly in Adobe Experience Manager.
 
-In addition, you can integrate AEM with the [creative cloud](/help/sites-administering/creative-cloud.md) and with [third-party services](/help/sites-administering/third-party-services.md).
+In addition, you can [integrate AEM with Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md) and with [third-party services](/help/sites-administering/third-party-services.md).
 
 ## Integrating with Adobe Analytics {#integrating-with-adobe-analytics}
 
@@ -59,7 +59,7 @@ You can also use the [Opt-in wizard](/help/sites-administering/opt-in.md) to eas
 
 AEM provides a simple opt-in procedure to integrate with Adobe Analytics and Adobe Target. When you log in as an administrator and visit the Projects console you are presented with an opt-in wizard.
 
-![chlimage_1-107](assets/chlimage_1-107.png)
+![chlimage_1-107](assets/chlimage_1-107a.png)
 
 Opt into the integration with Analytics and/or Target to enable the use of their page tracking and analysis capabilities, and personalization capabilities. When you opt in you need to provide your user account information and specify the pages that are tracked.
 

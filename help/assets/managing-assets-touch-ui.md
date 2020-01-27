@@ -1,15 +1,11 @@
 ---
-title: Manage Assets with the Touch-Optimized user interface
-description: Learn about various asset management and editing tasks that you can perform using the Touch-optimized user interface of AEM Assets.
-uuid: 7ee746f1-bbca-4bce-82e7-fed9fa9e1170
+title: Manage your digital assets using AEM Assets
+description: Learn the asset management tasks like upload, download, edit, search, delete, annotate, and version your digital assets.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 83a825ff-5c3d-4e2c-a265-eead090a5984
-docset: aem65
-
+mini-toc-levels: 1
 ---
 
-# Manage assets with the Touch-optimized UI {#managing-assets-with-the-touch-optimized-ui}
+# Manage your digital assets {#managing-assets-with-the-touch-optimized-ui}
 
 This article describes how to manage and edit assets in Adobe Experience Manager (AEM) Assets. To get started with the user interface and layout, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
 
@@ -30,7 +26,7 @@ The following (space-separated list of) characters are not supported:
 * An asset file name cannot contain any of these characters: `* / : [ \\ ] | # % { } ? &`
 * An asset folder name cannot contain any of these characters: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Upload Assets {#uploading-assets}
+## Upload assets {#uploading-assets}
 
 <!-- TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
@@ -55,13 +51,13 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
     * On the toolbar, tap the **[!UICONTROL Create]** icon. Then, on the menu, then tap **[!UICONTROL Files]**. You can rename the file in the presented dialog if needed.
     * In a browser that supports HTML5, drag the assets directly on the Assets user interface. The dialog to rename file is not displayed.
 
-   ![create_menu](assets/create_menu.png)
+   ![create option in aem](assets/create-options.png)
 
    To select multiple files, press the Ctrl or Command key and select the assets in the file picker dialog. When using an iPad, you can select only one file at a time.
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
-   ![chlimage_1-211](assets/chlimage_1-211.png)
+   ![chlimage_1-211](assets/chlimage_1-5.png)
 
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
@@ -71,7 +67,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
 
-   ![chlimage_1-212](assets/chlimage_1-212.png)
+   ![chlimage_1-212](assets/chlimage_1-6.png)
 
    To cancel an ongoing upload, click close (`X`) next to the progress bar. When you cancel the upload operation, AEM Assets deletes the partially uploaded portion of the asset.
 
@@ -83,9 +79,9 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    If you upload an asset with the same name as that of an asset already available at the location where you are uploading the asset, a warning dialog is displayed.
 
-   You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotations, croppings, and so on) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with the number 1 appended to its name.
+   You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotate or crop) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with number `1` appended to its name.
 
-   ![chlimage_1-213](assets/chlimage_1-213.png)
+   ![chlimage_1-213](assets/chlimage_1-7.png)
 
    >[!NOTE]
    >
@@ -99,7 +95,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
    >
    >The [!UICONTROL Duplicates Detected] dialog appears only when the duplicate detection feature is enabled. To enable the duplicate detection feature, see [Enable Duplicate Detection](/help/assets/duplicate-detection.md).
 
-   ![chlimage_1-214](assets/chlimage_1-214.png)
+   ![chlimage_1-214](assets/chlimage_1-8.png)
 
    To retain the duplicate asset in AEM Assets, tap/click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, tap/click **[!UICONTROL Delete]**.
 
@@ -112,7 +108,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
     * asset file name must not contain `* / : [ \\ ] | # % { } ? &`
     * asset folder name must not contain `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-   ![chlimage_1-215](assets/chlimage_1-215.png)
+   ![chlimage_1-215](assets/chlimage_1-10.png)
 
    In addition, the Assets user interface displays the most recent asset that you upload or the folder that you created first.
 
@@ -128,7 +124,7 @@ To overcome this situation, AEM Assets ingests one asset at a time (serial uploa
 
 Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
 
-### Uploading assets using FTP {#uploading-assets-using-ftp}
+### Upload assets using FTP {#uploading-assets-using-ftp}
 
 Dynamic Media enables batch uploading of assets via FTP server. If you intend to upload large assets (&gt; 1 GB) or upload entire folders and sub-folders, you should use FTP. You can even set up FTP upload to occur on a recurring scheduled basis.
 
@@ -165,115 +161,26 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 
 #### Upload Job Options {#upload-job-options}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Upload option</strong></td>
-   <td><strong>Sub-option</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>Job Name</td>
-   <td> </td>
-   <td><p>The default name that is pre-filled in the text field includes the user-entered portion of the name and the date-and-time stamp. You can use the default name or enter a name of your own creation for this upload job.</p> <p>The job and other upload and publishing jobs are recorded on the Jobs page, where you can check the status of jobs. </p> </td>
-  </tr>
-  <tr>
-   <td>Publish After Uploading</td>
-   <td> </td>
-   <td>Automatically publishes the assets that you upload.</td>
-  </tr>
-  <tr>
-   <td>Overwrite in any folder, same base asset name regardless of extension</td>
-   <td> </td>
-   <td>Select this option if you want the files you upload to replace existing files with the same names. The name of this option could be different, depending on the settings in <strong>Application Setup</strong> &gt; <strong>General Settings</strong> &gt; <strong>Upload to Application</strong> &gt; <strong>Overwrite Images</strong>.</td>
-  </tr>
-  <tr>
-   <td>Uncompress Zip or Tar Files on Upload</td>
-   <td> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Job Options<br /> </td>
-   <td> </td>
-   <td><p>Tap/click Job Options to open the Upload Job Options dialog box and choose options that affect the entire upload job. These options are the same for all file types.</p> <p>You can choose default options for uploading files starting on the Application General Settings page. To open this page, choose <strong>Setup</strong> &gt; <strong>Application Setup</strong>. Tap the <strong>Default Upload Options</strong> button to open the Upload Job Options dialog box. </p> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>When</td>
-   <td>Select One-Time or Recurring. To set a recurring job, choose a Repeat option—Daily, Weekly, Monthly, or Custom—to specify when you want the FTP upload job to recur. Then specify the scheduling options as necessary.</td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Include subfolders</td>
-   <td>Upload all subfolders within the folder you intend to upload. The names of the folder and its subfolders you upload are entered automatically in AEM Assets.</td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Crop Options</td>
-   <td>
-    <div class="section">
-     <p>To manually crop from the sides of an image, select the Crop menu and choose Manual. Then enter the number of pixels to crop from any side or each side of the image. How much of the image is cropped depends on the ppi (pixels per inch) setting in the image file. For example, if the image displays 150 ppi and you enter 75 in the Top, Right, Bottom, and Left text boxes, a half-inch is cropped from each side.</p>
-    </div> <p>To automatically crop white-space pixels from an image, open the Crop menu, choose Manual, and enter pixel measurements in the Top, Right, Bottom, and Left fields to crop from the sides. You can also choose Trim on the Crop menu and choose these options:</p>
-    <ul>
-     <li>Trim Away Based On
-      <ul>
-       <li>Color - Choose the Color option. Then select the Corner menu and choose the corner of the image with the color that best represents the white-space color you want to crop.</li>
-       <li>Transparency - Choose the Transparency option.
-        <ul>
-         <li>Tolerance - Drag the slider to specify a tolerance from 0 through 1.<br /> For trimming based on color, specify 0 to crop pixels only if they exactly match the color you selected in the corner of the image. Numbers closer to 1 allow for more color difference.<br /> For trimming based on transparency, specify 0 to crop pixels only if they are transparent. Numbers closer to 1 allow for more transparency.</li>
-        </ul> </li>
-      </ul> </li>
-    </ul> <p>Note that these crop options are non-destructive.</p> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Color Profile Options</td>
-   <td><p>Choose a color conversion when you create optimized files that are used for delivery:</p>
-    <ul>
-     <li>Default Color Preservation: Maintains the source image colors whenever the images contain color space information; there is no color conversion. Nearly all images today have the appropriate color profile already embedded. However, if a CMYK source image does not contain an embedded color profile, the colors are converted to sRGB (standard Red Green Blue) color space. sRGB is the recommended color space for displaying images on web pages.</li>
-     <li>Keep Original Color Space: Retains the original colors without any color conversion at the point. For images without an embedded color profile, any color conversion is done using the default color profiles configured in the Publish settings. The color profiles may not align with the color in the files created with this option. Therefore, you are encouraged to use the option Default Color Preservation.</li>
-     <li>Custom From &gt; To<br /> Opens menus so you can choose a Convert From and Convert To color space. This advanced option overrides any color information that is embedded in the source file. Select this option when all the images that you are submitting contain incorrect or missing color profile data.<br /> </li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Image Editing Options</td>
-   <td><p>You can preserve the clipping masks in images, and choose a color profile.</p> <p>See <a href="#setting-image-editing-options-at-upload">Setting image editing options at upload</a>.</p> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Postscript Options</td>
-   <td><p>You can rasterize PostScript® files, crop files, maintain transparent backgrounds, choose a resolution, and choose a color space.</p> <p>See <a href="#setting-postscript-and-illustrator-upload-options">Setting PostScript and Illustrator upload options</a>.</p> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Photoshop Options</td>
-   <td><p>You can create templates from Adobe® Photoshop® files, maintain layers, specify how layers are named, extract text, and specify how images are anchored into templates.</p> <p>Note that templates are not supported in AEM.</p> <p>See <a href="#setting-photoshop-upload-options">Setting Photoshop upload options</a>.</p> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>PDF Options</td>
-   <td><p>You can rasterize the files, extract search words and links, auto-generate an eCatalog, set the resolution, and choose a color space.</p> <p>The eCatalogs are not supported in AEM</p> <p>See <a href="#setting-pdf-upload-options">Setting PDF upload options</a>.</p> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Illustrator Options</td>
-   <td><p>You can rasterize Adobe Illustrator® files, maintain transparent backgrounds, choose a resolution, and choose a color space.</p> <p>See <a href="#setting-postscript-and-illustrator-upload-options">Setting PostScript and Illustrator upload options</a>.</p> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>EVideo Options</td>
-   <td><p>You can transcode a video file by choosing a Video Preset.</p> <p>See <a href="#setting-evideo-upload-options">Setting eVideo upload options</a>.</p> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Batch Set Presets<br /> </td>
-   <td><p>To create an Image Set, or Spin Set from the uploaded files, click the Active column for the preset you want to use. You can select more than one preset. You create the presets in the Application Setup/Batch Set Presets page of Dynamic Media Classic.</p> <p>See <a href="/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets" target="_blank">Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets</a> to learn more about creating batch set presets.</p> <p>See <a href="/help/assets/managing-assets-touch-ui.md#setting-batch-set-presets-at-upload">Setting Batch Set Presets at upload</a>.</p> <p> </p> </td>
-  </tr>
- </tbody>
-</table>
+| Upload option | Sub-option | Description |
+|---|---|---|
+| Job Name | | The default name that is pre-filled in the text field includes the user-entered portion of the name and the date-and-time stamp. You can use the default name or enter a name of your own creation for this upload job. <br>The job and other upload and publishing jobs are recorded on the Jobs page, where you can check the status of jobs. |
+| Publish After Uploading | | Automatically publishes the assets that you upload. |
+| Overwrite in any folder, same base asset name regardless of extension | | Select this option if you want the files you upload to replace existing files with the same names. The name of this option could be different, depending on the settings in **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** > **[!UICONTROL Upload to Application]** > **[!UICONTROL Overwrite Images]**. |
+| Uncompress Zip or Tar Files on Upload | | |
+| Job Options | | Tap/ click **[!UICONTROL Job Options]** to open the [!UICONTROL Upload Job Options] dialog box and choose options that affect the entire upload job. These options are the same for all file types.<br>You can choose default options for uploading files starting on the Application General Settings page. To open this page, choose **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**. Tap the **[!UICONTROL Default Upload Options]** button to open the [!UICONTROL Upload Job Options] dialog box. |
+| | When | Select One-Time or Recurring. To set a recurring job, choose a Repeat option—Daily, Weekly, Monthly, or Custom—to specify when you want the FTP upload job to recur. Then specify the scheduling options as necessary. |
+| | Include subfolders | Upload all subfolders within the folder you intend to upload. The names of the folder and its subfolders you upload are entered automatically in AEM Assets. |
+| | Crop Options | To manually crop from the sides of an image, select the Crop menu and choose Manual. Then enter the number of pixels to crop from any side or each side of the image. How much of the image is cropped depends on the ppi (pixels per inch) setting in the image file. For example, if the image displays 150 ppi and you enter 75 in the Top, Right, Bottom, and Left text boxes, a half-inch is cropped from each side.<br> To automatically crop white-space pixels from an image, open the Crop menu, choose Manual, and enter pixel measurements in the Top, Right, Bottom, and Left fields to crop from the sides. You can also choose Trim on the Crop menu and choose these options:<br> **Trim Away Based On** <ul><li>**Color** - Choose the Color option. Then select the Corner menu and choose the corner of the image with the color that best represents the white-space color you want to crop.</li><li>**Transparency** - Choose the Transparency option.<br> **Tolerance** - Drag the slider to specify a tolerance from 0 through 1.For trimming based on color, specify 0 to crop pixels only if they exactly match the color you selected in the corner of the image. Numbers closer to 1 allow for more color difference.<br>For trimming based on transparency, specify 0 to crop pixels only if they are transparent. Numbers closer to 1 allow for more transparency.</li></ul><br>Note that these crop options are non-destructive. |
+| | Color Profile Options | Choose a color conversion when you create optimized files that are used for delivery:<ul><li>Default Color Preservation: Maintains the source image colors whenever the images contain color space information; there is no color conversion. Nearly all images today have the appropriate color profile already embedded. However, if a CMYK source image does not contain an embedded color profile, the colors are converted to sRGB (standard Red Green Blue) color space. sRGB is the recommended color space for displaying images on web pages.</li><li>Keep Original Color Space: Retains the original colors without any color conversion at the point. For images without an embedded color profile, any color conversion is done using the default color profiles configured in the Publish settings. The color profiles may not align with the color in the files created with this option. Therefore, you are encouraged to use the option Default Color Preservation.</li><li>Custom From > To<br> Opens menus so you can choose a Convert From and Convert To color space. This advanced option overrides any color information that is embedded in the source file. Select this option when all the images that you are submitting contain incorrect or missing color profile data.</li></ul> |
+| | Image Editing Options | You can preserve the clipping masks in images, and choose a color profile.<br> See [Setting image editing options at upload](#setting-image-editing-options-at-upload). |
+| | Postscript Options | You can rasterize PostScript® files, crop files, maintain transparent backgrounds, choose a resolution, and choose a color space.<br> See [Setting PostScript and Illustrator upload options](#setting-postscript-and-illustrator-upload-options). |
+| | Photoshop Options | You can create templates from Adobe® Photoshop® files, maintain layers, specify how layers are named, extract text, and specify how images are anchored into templates.<br> Note that templates are not supported in AEM.<br> See [Setting Photoshop upload options](#setting-photoshop-upload-options). |
+| | PDF Options | You can rasterize the files, extract search words and links, auto-generate an eCatalog, set the resolution, and choose a color space.<br> Note that eCatalogs are not supported in AEM. <br> See [Setting PDF upload options](#setting-pdf-upload-options). |
+| | Illustrator Options | You can rasterize Adobe Illustrator® files, maintain transparent backgrounds, choose a resolution, and choose a color space.<br> See [Setting PostScript and Illustrator upload options](#setting-postscript-and-illustrator-upload-options). |
+| | EVideo Options | You can transcode a video file by choosing a Video Preset.<br> See [Setting eVideo upload options](#setting-evideo-upload-options). |
+| | Batch Set Presets | To create an Image Set, or Spin Set from the uploaded files, click the Active column for the preset you want to use. You can select more than one preset. You create the presets in the Application Setup/Batch Set Presets page of Dynamic Media Classic.<br> See [Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) to learn more about creating batch set presets.<br> See [Setting Batch Set Presets at upload](#setting-batch-set-presets-at-upload). |
 
-#### Setting image editing options at upload {#setting-image-editing-options-at-upload}
+#### Set image editing options at upload {#setting-image-editing-options-at-upload}
 
 When uploading image files, including AI, EPS, and PSD files, you can take the following editing actions in the [!UICONTROL Upload Job Options] dialog box:
 
@@ -284,125 +191,37 @@ When uploading image files, including AI, EPS, and PSD files, you can take the f
 * Sharpen images with unsharp masking options
 * Knockout Background
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>Sub-option</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>Create Mask From Clipping Path<br /> </td>
-   <td> </td>
-   <td>C<strong></strong>reate a mask for the image based on its clipping path information. This option applies to images created with image-editing applications in which a clipping path was created.</td>
-  </tr>
-  <tr>
-   <td>Unsharp Masking</td>
-   <td> </td>
-   <td><p>Lets you fine-tune a sharpening filter effect on the final downsampled image, controlling the intensity of the effect, the radius of the effect (as measured in pixels), and a threshold of contrast that is ignored.</p> <p>This effect uses the same options as Photoshop’s Unsharp Mask filter. Contrary to what the name suggests, Unsharp Mask is a sharpening filter. Under Unsharp Masking, set the options you want. Setting options are described in the following:</p> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Amount</td>
-   <td><p>Controls the amount of contrast that is applied to edge pixels.</p> <p>Think of it as the intensity of the effect. The main difference between the amount values of Unsharp Mask in Dynamic Media and the amount values in Adobe Photoshop, is that Photoshop has an amount range of 1% to 500%. Whereas, in Dynamic Media, the value range is 0.0 to 5.0. A value of 5.0 is the rough equivalent of 500% in Photoshop; a value of 0.9 is the equivalent of 90%, and so on.</p> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Radius</td>
-   <td><p>Controls the radius of the effect. The value range is 0-250.</p> <p>The effect is run on all pixels in an image and radiates out from all pixels in all directions. The radius is measured in pixels. For example, to get a similar sharpening effect for a 2000 x 2000 pixel image and 500 x 500 pixel image, you would set a radius of two pixels on the 2000 x 2000 pixel image and a radius value of one pixel on the 500 x 500 pixel image. A larger value is used for an image that has more pixels.<br /> </p> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Threshold</td>
-   <td><p>Threshold is a range of contrast that is ignored when the Unsharp Mask filter is applied. It is important so that no "noise" is introduced to an image when this filter is used. The value range is 0-255, which is the number of brightness steps in a grayscale image. 0=black, 128=50% gray and 255=white.</p> <p>For example, a threshold value of 12 ignores slight variations is skin tone brightness to avoid adding noise, but still add edge contrast to contrasty areas such as where eyelashes meet skin.</p> <p>For example, if you have a photo of someone’s face, the Unsharp Mask affects the contrasty parts of the image, such as where eyelashes and skin meet to create an obvious area of contrast, and the smooth skin itself. Even the smoothest skin exhibits subtle changes in brightness values. If you do not use a threshold value, the filter accentuates these subtle changes in skin pixels. In turn, a noisy and undesirable effect is created while contrast on the eyelashes is increased, enhancing sharpness.</p> <p>To avoid this issue, a threshold value is introduced that tells the filter to ignore pixels that do not change contrast dramatically, like smooth skin.</p> <p>In the zipper graphic shown earlier, notice the texture next to the zippers. Image noise is exhibited because the threshold values were too low to suppress the noise.</p> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Monochrome</td>
-   <td><p>Select to unsharp-mask image brightness (intensity).</p> <p>Deselect to unsharp-mask each color component separately.</p> </td>
-  </tr>
-  <tr>
-   <td>Knockout Background</td>
-   <td> </td>
-   <td>Automatically removes the background of an image when you upload it. This technique is useful to draw attention to a particular object and make it stand out from a busy background. Select to enable or “turn on” the Knockout Background feature and the following sub-options:</td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Corner</td>
-   <td><p>Required.</p> <p>The corner of the image that is used to define the background color to knockout.</p> <p>You can choose from <strong><strong>Upper Left</strong></strong>, <strong><strong>Bottom Left</strong></strong>, <strong><strong>Upper Right</strong></strong>, or <strong><strong>Bottom Right</strong></strong>.</p> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Fill Method</td>
-   <td><p>Required.</p> <p>Controls pixel transparency from the Corner location that you set.</p> <p>You can choose from the following fill methods:<strong></strong></p>
-    <ul>
-     <li><strong>Flood Fill</strong> - turns all pixels transparent that match the Corner that you have specified and are connected to it.<strong></strong></li>
-     <li><strong>Match Pixel</strong> - turns all matching pixels transparent, regardless of their location on the image.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Tolerance</td>
-   <td><p>Optional.</p> <p>Controls the allowable amount of variation in pixel color matching based on the Corner location that you set.</p> <p>Use a value of 0.0 to match pixel colors exactly or, use a value of 1.0 to allow for the greatest variation.</p> </td>
-  </tr>
- </tbody>
-</table>
+<!--
+| Option | Sub-option | Description |
+|---|---|---|
+| Create Mask From Clipping Path | | Create a mask for the image based on its clipping path information. This option applies to images created with image-editing applications in which a clipping path was created. |
+| Unsharp Masking | | Lets you fine-tune a sharpening filter effect on the final downsampled image, controlling the intensity of the effect, the radius of the effect (as measured in pixels), and a threshold of contrast that is ignored.<br> This effect uses the same options as Photoshop’s Unsharp Mask filter. Contrary to what the name suggests, Unsharp Mask is a sharpening filter. Under Unsharp Masking, set the options you want. Setting options are described in the following: |
+| | Amount | Controls the amount of contrast that is applied to edge pixels.<br> Think of it as the intensity of the effect. The main difference between the amount values of Unsharp Mask in Dynamic Media and the amount values in Adobe Photoshop, is that Photoshop has an amount range of 1% to 500%. Whereas, in Dynamic Media, the value range is 0.0 to 5.0. A value of 5.0 is the rough equivalent of 500% in Photoshop; a value of 0.9 is the equivalent of 90%, and so on. |
+| | Radius | Controls the radius of the effect. The value range is 0-250.<br> The effect is run on all pixels in an image and radiates out from all pixels in all directions. The radius is measured in pixels. For example, to get a similar sharpening effect for a 2000 x 2000 pixel image and 500 x 500 pixel image, you would set a radius of two pixels on the 2000 x 2000 pixel image and a radius value of one pixel on the 500 x 500 pixel image. A larger value is used for an image that has more pixels. |
+| | Threshold | Threshold is a range of contrast that is ignored when the Unsharp Mask filter is applied. It is important so that no "noise" is introduced to an image when this filter is used. The value range is 0-255, which is the number of brightness steps in a grayscale image. 0=black, 128=50% gray and 255=white.<br> For example, a threshold value of 12 ignores slight variations is skin tone brightness to avoid adding noise, but still add edge contrast to areas such as where eyelashes meet skin.<br> For example, if you have a photo of someone’s face, the Unsharp Mask affects the parts of the image, such as where eyelashes and skin meet to create an obvious area of contrast, and the smooth skin itself. Even the smoothest skin exhibits subtle changes in brightness values. If you do not use a threshold value, the filter accentuates these subtle changes in skin pixels. In turn, a noisy and undesirable effect is created while contrast on the eyelashes is increased, enhancing sharpness.<br> To avoid this issue, a threshold value is introduced that tells the filter to ignore pixels that do not change contrast dramatically, like smooth skin.<br> In the zipper graphic shown earlier, notice the texture next to the zippers. Image noise is exhibited because the threshold values were too low to suppress the noise. |
+| | Monochrome | Select to unsharp-mask image brightness (intensity).<br> Deselect to unsharp-mask each color component separately. |
+| Knockout Background | | Automatically removes the background of an image when you upload it. This technique is useful to draw attention to a particular object and make it stand out from a busy background. Select to enable or “turn on” the Knockout Background feature and the following sub-options: |
+| | Corner | Required.<br> The corner of the image that is used to define the background color to knockout.<br> You can choose from **Upper Left**, **Bottom Left**, **Upper Right**, or **Bottom Right**. |
+| | Fill Method | Required.<br> Controls pixel transparency from the Corner location that you set.<br> You can choose from the following fill methods: <ul><li>**Flood Fill** - turns all pixels transparent that match the Corner that you have specified and are connected to it.</li><li>**Match Pixel** - turns all matching pixels transparent, regardless of their location on the image.</li></ul> |
+| | Tolerance | Optional.<br> Controls the allowable amount of variation in pixel color matching based on the Corner location that you set.<br> Use a value of 0.0 to match pixel colors exactly or, use a value of 1.0 to allow for the greatest variation. |
+-->
 
-#### Setting PostScript and Illustrator upload options {#setting-postscript-and-illustrator-upload-options}
+#### Set PostScript and Illustrator upload options {#setting-postscript-and-illustrator-upload-options}
 
 When you upload PostScript (EPS) or Illustrator (AI) image files, you can format them in various ways. You can rasterize the files, maintain the transparent background, choose a resolution, and choose a color space. Options for formatting PostScript and Illustrator files are available in the [!UICONTROL Upload Job Options] dialog box under [!UICONTROL PostScript Options] and [!UICONTROL Illustrator Options].
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>Sub-option</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>Processing</td>
-   <td> </td>
-   <td>Choose <strong>Rasterize</strong> to convert vector graphics in the file to the bitmap format.</td>
-  </tr>
-  <tr>
-   <td>Maintain transparent background in rendered image</td>
-   <td> </td>
-   <td>Maintain the background transparency of the file.</td>
-  </tr>
-  <tr>
-   <td>Resolution</td>
-   <td> </td>
-   <td>Determines the resolution setting. This setting determines how many pixels are displayed per inch in the file.</td>
-  </tr>
-  <tr>
-   <td>Colorspace</td>
-   <td> </td>
-   <td>Select the Color Space menu and choose from the following color space options:</td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Detect Automatically</td>
-   <td>Retains the color space of the file.</td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Force As RGB</td>
-   <td>Converts to the RGB color space.<br /> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Forece As CMYK</td>
-   <td>Converts to the CMYK color space.<br /> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Force As Grayscale</td>
-   <td>Converts to the grayscale color space.<br /> </td>
-  </tr>
- </tbody>
-</table>
+| Option | Sub-option | Description |
+|---|---|---|
+| Processing | | Choose **[!UICONTROL Rasterize]** to convert vector graphics in the file to the bitmap format. |
+| Maintain transparent background in rendered image | | Maintain the background transparency of the file. |
+| Resolution | | Determines the resolution setting. This setting determines how many pixels are displayed per inch in the file. |
+| Colorspace | | Select the Color Space menu and choose from the following color space options: |
+| | Detect Automatically | Retains the color space of the file. |
+| | Force As RGB | Converts to the RGB color space. |
+| | Force As CMYK | Converts to the CMYK color space. |
+| | Force As Grayscale | Converts to the grayscale color space.|
 
-#### Setting Photoshop upload options {#setting-photoshop-upload-options}
+#### Set Photoshop upload options {#setting-photoshop-upload-options}
 
 Photoshop Document (PSD) files are most often used to create image templates. When you upload a PSD file, you can create an image template automatically from the file (select the [!UICONTROL Create Template] option on the Upload screen).
 
@@ -414,62 +233,19 @@ Use the [!UICONTROL Crop Options] and [!UICONTROL Color Profile Options], descri
 >
 >Templates are not supported in AEM.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>Sub-option</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>Maintain Layers</td>
-   <td> </td>
-   <td>Rips the layers in the PSD, if any, into individual assets. The asset layers remain associated with the PSD. You can view them by opening the PSD file in Detail view and selecting the layer panel.</td>
-  </tr>
-  <tr>
-   <td>Create Template</td>
-   <td> </td>
-   <td>Creates a template from the layers in the PSD file.</td>
-  </tr>
-  <tr>
-   <td>Extract Text</td>
-   <td> </td>
-   <td>Extracts the text so that users can search for text in a Viewer.</td>
-  </tr>
-  <tr>
-   <td>Extend layers to background size</td>
-   <td> </td>
-   <td>Extends the size of ripped image layers to the size of the background layer.</td>
-  </tr>
-  <tr>
-   <td>Layer Naming</td>
-   <td> </td>
-   <td>Layers in the PSD file are uploaded as separate images. </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Layer Name</td>
-   <td>Names the images after their layer names in the PSD file. For example, a layer named Price Tag in the original PSD file becomes an image named Price Tag. However, if the layer names in the PSD file are default Photoshop layer names (Background, Layer 1, Layer 2, and so on), the images are named after their layer numbers in the PSD file, not their default layer names.</td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Photoshop and Layer Number</td>
-   <td>Names the images after their layer numbers in the PSD file, ignoring original layer names. Images are named with the Photoshop filename and an appended layer number. For example, the second layer of a file called Spring Ad.psd is named Spring Ad_2 even if it had a non-default name in Photoshop.</td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Photoshop and Layer Name</td>
-   <td>Names the images after the PSD file followed by the layer name or layer number. The layer number is used if the layer names in the PSD file are default Photoshop layer names. For example, a layer named Price Tag in a PSD file named SpringAd is named Spring Ad_Price Tag. A layer with the default name Layer 2 is called Spring Ad_2.</td>
-  </tr>
-  <tr>
-   <td>Anchor</td>
-   <td> </td>
-   <td><p>Specify how images are anchored in templates that are generated from the layered composition produced from the PSD file. By default, the anchor is the center. A center anchor allows replacement images to best fill the same space, no matter the aspect ratio of the replacement image. Images with a different aspect that replace this image, when referencing the template and using parameter substitution, effectively occupy the same space. Change to a different setting if your application requires the replacement images to fill the allocated space in the template.</p> </td>
-  </tr>
- </tbody>
-</table>
+| Option | Sub-option | Description |
+|---|---|---|
+| Maintain Layers | | Rips the layers in the PSD, if any, into individual assets. The asset layers remain associated with the PSD. You can view them by opening the PSD file in Detail view and selecting the layer panel. |
+| Create Template | | Creates a template from the layers in the PSD file. |
+| Extract Text | | Extracts the text so that users can search for text in a Viewer. |
+| Extend layers to background size | | Extends the size of ripped image layers to the size of the background layer. |
+| Layer Naming | | Layers in the PSD file are uploaded as separate images. |
+| | Layer Name | Names the images after their layer names in the PSD file. For example, a layer named Price Tag in the original PSD file becomes an image named Price Tag. However, if the layer names in the PSD file are default Photoshop layer names (Background, Layer 1, Layer 2, and so on), the images are named after their layer numbers in the PSD file, not their default layer names. |
+| | Photoshop and Layer Number | Names the images after their layer numbers in the PSD file, ignoring original layer names. Images are named with the Photoshop filename and an appended layer number. For example, the second layer of a file called Spring Ad.psd is named Spring Ad_2 even if it had a non-default name in Photoshop. |
+| | Photoshop and Layer Name | Names the images after the PSD file followed by the layer name or layer number. The layer number is used if the layer names in the PSD file are default Photoshop layer names. For example, a layer named Price Tag in a PSD file named SpringAd is named Spring Ad_Price Tag. A layer with the default name Layer 2 is called Spring Ad_2. |
+| Anchor | | Specify how images are anchored in templates that are generated from the layered composition produced from the PSD file. By default, the anchor is the center. A center anchor allows replacement images to best fill the same space, no matter the aspect ratio of the replacement image. Images with a different aspect that replace this image, when referencing the template and using parameter substitution, effectively occupy the same space. Change to a different setting if your application requires the replacement images to fill the allocated space in the template. |
 
-#### Setting PDF upload options {#setting-pdf-upload-options}
+#### Set PDF upload options {#setting-pdf-upload-options}
 
 When you upload a PDF file, you can format it in various ways. You crop its pages, extract search words, enter a pixels-per-inch resolution, and choose a color space. PDF files often contain a trim margin, crop marks, registration marks, and other printer’s marks. You can crop these marks from the sides of pages as you upload a PDF file.
 
@@ -479,106 +255,32 @@ When you upload a PDF file, you can format it in various ways. You crop its page
 
 Choose from the following options:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>Sub-option</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>Processing</td>
-   <td>Rasterize<br /> </td>
-   <td>(Default) Rips the pages in the PDF file and converts vector graphics to bitmap images. Choose this option to create an eCatalog.</td>
-  </tr>
-  <tr>
-   <td>Extract</td>
-   <td>Search words</td>
-   <td>Extracts words from the PDF file so that the file can be searched by keyword in an eCatalog Viewer.</td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Links</td>
-   <td>Extracts links from the PDF files and coverts them to Image Maps that are used in an eCatalog Viewer.</td>
-  </tr>
-  <tr>
-   <td>Auto-Generate eCatalog from multiple page PDF</td>
-   <td> </td>
-   <td>Automatically creates an eCatalog from the PDF file. The eCatalog is named after the PDF file you uploaded. (This option is only available if you rasterize the PDF file as you upload it.)</td>
-  </tr>
-  <tr>
-   <td>Resolution</td>
-   <td> </td>
-   <td>Determines the resolution setting. This setting determines how many pixels are displayed per inch in the PDF file. The default is 150.</td>
-  </tr>
-  <tr>
-   <td>Colorspace</td>
-   <td> </td>
-   <td>Select the Color Space menu and choose a color space for the PDF file. Most PDF files have both RGB and CMYK color images. The RGB color space is preferable for online viewing.</td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Detect automatically</td>
-   <td>Retains the color space of the PDF file.</td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Force as RGB</td>
-   <td>Converts to the RGB color space.</td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Force as CMYK</td>
-   <td>Converts to the CMYK color space.</td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Force as Grayscale</td>
-   <td>Converts to the grayscale color space.</td>
-  </tr>
- </tbody>
-</table>
+| Option | Sub-option | Description |
+|---|---|---|
+| Processing | Rasterize | (Default) Rips the pages in the PDF file and converts vector graphics to bitmap images. Choose this option to create an eCatalog. |
+| Extract | Search words | Extracts words from the PDF file so that the file can be searched by keyword in an eCatalog Viewer. |
+| | Links | Extracts links from the PDF files and coverts them to Image Maps that are used in an eCatalog Viewer. |
+| Auto-Generate eCatalog from multiple page PDF | | Automatically creates an eCatalog from the PDF file. The eCatalog is named after the PDF file you uploaded. (This option is only available if you rasterize the PDF file as you upload it.) |
+| Resolution | | Determines the resolution setting. This setting determines how many pixels are displayed per inch in the PDF file. The default is 150.|
+| Colorspace | | Select the Color Space menu and choose a color space for the PDF file. Most PDF files have both RGB and CMYK color images. The RGB color space is preferable for online viewing. |
+| | Detect automatically | Retains the color space of the PDF file. |
+| | Force as RGB | Converts to the RGB color space. |
+| | Force as CMYK | Converts to the CMYK color space. |
+| | Force as Grayscale | Converts to the grayscale color space. |
 
-#### Setting eVideo upload options {#setting-evideo-upload-options}
+#### Set eVideo upload options {#setting-evideo-upload-options}
 
 To transcode a video file by choosing from a variety of video presets.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>Sub-option</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>Adaptive Video</td>
-   <td> </td>
-   <td><p>A single encoding preset that works with any aspect ratio to create videos for delivery to mobile, tablet, and desktop. Uploaded source videos that are encoded with this preset are set with a fixed height. However, the width automatically scales to preserve the video’s aspect ratio.</p> <p>Best practice is to use Adaptive Video encoding.</p> </td>
-  </tr>
-  <tr>
-   <td>Single Encoding Presets</td>
-   <td>Sort Encoding Presets</td>
-   <td>Select <strong>Name</strong> or <strong>Size</strong> to sort the encoding presets listed under Desktop, Mobile, and Tablet by name or by resolution size.<br /> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Desktop</td>
-   <td><p>Create an MP4 file for delivering a streaming or progressive video experience to desktop computers.</p> <p>Select one or more aspect ratios with the resolution size and target data rate you desire.</p> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Mobile</td>
-   <td><p>Create an MP4 file for delivery on iPhone or Android mobile devices.</p> <p>Select one or more aspect ratios with the resolution size and target data rate you desire.<br /> </p> </td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Tablet</td>
-   <td><p>Create an MP4 file for delivery on iPad or Android tablet devices.</p> <p>Select one or more aspect ratios with the resolution size and target data rate you desire.</p> </td>
-  </tr>
- </tbody>
-</table>
+| Option | Sub-option | Description |
+|---|---|---|
+| Adaptive Video | | A single encoding preset that works with any aspect ratio to create videos for delivery to mobile, tablet, and desktop. Uploaded source videos that are encoded with this preset are set with a fixed height. However, the width automatically scales to preserve the video’s aspect ratio. <br>Best practice is to use Adaptive Video encoding. |
+| Single Encoding Presets | Sort Encoding Presets | Select Name or Size to sort the encoding presets listed under Desktop, Mobile, and Tablet by name or by resolution size. |
+| | Desktop | Create an MP4 file for delivering a streaming or progressive video experience to desktop computers.Select one or more aspect ratios with the resolution size and target data rate you desire. |
+| | Mobile | Create an MP4 file for delivery on iPhone or Android mobile devices.Select one or more aspect ratios with the resolution size and target data rate you desire. |
+| | Tablet | Create an MP4 file for delivery on iPad or Android tablet devices.Select one or more aspect ratios with the resolution size and target data rate you desire. |
 
-#### Setting Batch Set Presets at upload {#setting-batch-set-presets-at-upload}
+#### Set Batch Set Presets at upload {#setting-batch-set-presets-at-upload}
 
 If you want to automatically create an Image Set or Spin Set from uploaded images, click the Active column for the preset you want to use. You can select more than one preset.
 
@@ -600,7 +302,7 @@ Select one ZIP archive at a time, click **[!UICONTROL Extract Archive]**, and se
 
 After the extraction is complete, AEM notifies you in the notification area. While AEM extracts the ZIP, you can go back to your work without interrupting the extraction.
 
-![Notification of zip extraction](assets/zip_extract_notification.png)
+![Notification of ZIP extraction](assets/Zip-extraction-notification.png)
 
 Some limitations of the feature are:
 
@@ -609,7 +311,7 @@ Some limitations of the feature are:
 * You cannot select two ZIP files at the same time and extract them. You can only extract one ZIP archive at a time.
 * When uploading a ZIP archive, if the upload dialog displays a 500 server error, retry after installing the latest service pack.
 
-## Preview Assets {#previewing-assets}
+## Preview assets {#previewing-assets}
 
 To preview an asset, follow these steps.
 
@@ -624,11 +326,11 @@ To preview an asset, follow these steps.
 
    Tap **[!UICONTROL Reset]** to reset the view to the original size.
 
-   ![chlimage_1-216](assets/chlimage_1-216.png)
+   ![chlimage_1-216](assets/chlimage_1-11.png)
 
 See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
-## Editing Properties {#editing-properties}
+## Edit properties and metadata {#editing-properties}
 
 1. Navigate to the location of the asset whose metadata you want to edit.
 
@@ -644,11 +346,11 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 1. To schedule a particular date/time for the activation of the asset, use the date picker beside the **[!UICONTROL On Time]** field.
 
-   ![chlimage_1-217](assets/chlimage_1-217.png)
+   ![chlimage_1-217](assets/chlimage_1-12.png)
 
 1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API.
 
-   ![chlimage_1-218](assets/chlimage_1-218.png)
+   ![chlimage_1-218](assets/chlimage_1-13.png)
 
 1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in AEM.
 
@@ -656,7 +358,7 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
    >[!NOTE]
    >
-   >To create tags, write permission for `/content/cq:tags/default` in the CRX repository are required.
+   >To create tags, you need write permission for `/content/cq:tags/default` in the CRX repository.
 
 1. To provide a rating to the asset, tap/click the **[!UICONTROL Advanced]** tab and then tap/click the star at the appropriate position to assign the desired rating.
 
@@ -677,9 +379,9 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 1. Tap/click **[!UICONTROL Save & Close]**.
 1. Navigate to the Assets user interface. The edited metadata properties, including title, description, ratings, and so on are displayed on the asset card in Card view and under relevant columns in the List view.
 
-## Copying Assets {#copying-assets}
+## Copy assets {#copying-assets}
 
-When you copy an asset or a folder, the entire asset or the folder is copied, along with its content structure. A copied asset or a folder is duplicated at the target location. The asset at the source location is not alterted.
+When you copy an asset or a folder, the entire asset or the folder is copied, along with its content structure. A copied asset or a folder is duplicated at the target location. The asset at the source location is not altered.
 
 A few attributes that are unique to a particular copy of an asset are not carried forward. Some examples are:
 
@@ -689,7 +391,8 @@ A few attributes that are unique to a particular copy of an asset are not carrie
 
 The other properties and metadata information is retained. A partial copy is not created when copying an asset.
 
-1. From the Assets UI, select one or more assets, and then tap/click the **[!UICONTROL Copy]** icon from the toolbar. Alternatively, select the **[!UICONTROL Copy]** ![copy_icon](assets/copy_icon.png) quick action from the asset card.  
+1. From the Assets UI, select one or more assets, and then tap/click the **[!UICONTROL Copy]** icon from the toolbar. Alternatively, select the **[!UICONTROL Copy]** quick action from the asset card.
+ ![copy_icon](assets/copy_icon.png)
 
    >[!NOTE]
    >
@@ -701,19 +404,21 @@ The other properties and metadata information is retained. A partial copy is not
    >
    >If you copy an asset at the same location, AEM automatically generates a variation of the name. For example, if you copy an asset titled `Square`, AEM automatically generates the title for its copy as `Square1`.
 
-1. Click the **[!UICONTROL Paste]** asset icon from the toolbar. Assets are copied to this location.
+1. Click/ tap the **[!UICONTROL Paste]** asset icon from the toolbar.
 
-   ![chlimage_1-219](assets/chlimage_1-219.png)
+   ![chlimage_1-219](assets/chlimage_1-14.png)
+   Assets are then copied to this location.
 
    >[!NOTE]
    >
    >The **[!UICONTROL Paste]** icon is available in the toolbar until the paste operation is completed.
 
-### Moving or Renaming Assets {#moving-or-renaming-assets}
+### Move or rename assets {#moving-or-renaming-assets}
 
 1. Navigate to the location of the asset you want to move.
 
-1. Select the asset, and tap/click the **[!UICONTROL Move]** icon ![move_icon](assets/move_icon.png) from the toolbar.
+1. Select the asset, and tap/click the **[!UICONTROL Move]** icon from the toolbar.
+![move_icon](assets/move_icon.png)
 
 1. In the Move Assets wizard, do one of the following:
 
@@ -745,13 +450,13 @@ The other properties and metadata information is retained. A partial copy is not
 
    If you do not update references, they continue to point to the previous path of the asset. If you adjust the references, they are updated to the new asset path.
 
-### Managing Renditions {#managing-renditions}
+## Manage renditions {#managing-renditions}
 
 1. You can add or remove renditions for an asset, except the original. Navigate to the location of the asset for which you want to add or remove renditions.
 
 1. Tap/click the asset to open its asset page.
 
-   ![chlimage_1-220](assets/chlimage_1-220.png)
+   ![chlimage_1-220](assets/chlimage_1-15.png)
 
 1. Tap/click the GlobalNav icon, and select **[!UICONTROL Renditions]** from the list.
 
@@ -767,17 +472,17 @@ The other properties and metadata information is retained. A partial copy is not
 
 1. Select a rendition to either view or delete the rendition.
 
-   **Deleting a rendition**
+   **Delete a rendition**
 
    Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap/click the **[!UICONTROL Delete Rendition]** icon from the toolbar.
 
-   ![delete_renditionicon](assets/delete_renditionicon.png)
+   ![Option to delete a rendition](assets/delete_renditionicon.png)
 
-   **Uploading a new rendition**
+   **Upload a new rendition**
 
    Navigate to the asset details page for the asset, and tap/click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
-   ![chlimage_1-221](assets/chlimage_1-221.png)
+   ![chlimage_1-221](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
@@ -789,7 +494,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    Similarly, you can customize the Annotation page image by overlaying `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![chlimage_1-222](assets/chlimage_1-222.png)
+   ![chlimage_1-222](assets/chlimage_1-17.png)
 
    To configure rendition dimensions for a video asset, navigate to the `videopicker` node in the CRX repository at the location `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, overlay the node, and then edit the appropriate property.
 
@@ -797,29 +502,9 @@ The other properties and metadata information is retained. A partial copy is not
    >
    >Video annotations are supported only on browsers with HTML5 compatible video formats. In addition, depending on the browser, different video formats are supported.
 
-### Viewing Subassets {#viewing-subassets}
+For more information about generating and viewing subassets, see [manage subassets](managing-linked-subassets.md#generate-subassets).
 
-In AEM, subassets can be generated for assets with supported multi-page formats such as PDF, AI, Powerpoint/Apple Keynote, and InDesign. These subassets are like normal assets, but are linked to their parent asset and facilitate multi-page view in the Touch UI.
-
-Subasset generation is disabled by default. To enable subasset generation, add the **[!UICONTROL Create Sub Asset]** step to the DAM Update Asset workflow.
-
-For Word documents, the DAM Parse Word Documents workflow generates a `cq:Page` component from the contents of the Word document. The images extracted from the document are referenced from the `cq:Page` component. These images are extracted even if subasset generation is disabled.
-
-1. To view subassets, navigate to the location of the asset and open its asset page.
-
-1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Subassets]** from the list
-
-   ![chlimage_1-223](assets/chlimage_1-223.png)
-
-   >[!NOTE]
-   >
-   >The **Subassets** option is displayed only if subassets are-available/have-been-generated for the asset.
-
-   When you select **Subassets** from the list, the **subassets** page displays the subassets linked to the parent asset.
-
-   ![chlimage_1-224](assets/chlimage_1-224.png)
-
-## Deleting Assets {#deleting-assets}
+## Delete assets {#deleting-assets}
 
 To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset.
 
@@ -841,20 +526,17 @@ Also, disable the force delete button using an overlay, to disallow users from d
 
    >[!NOTE]
    >
-   >You require delete permissions on dam/asset to be able to delete an asset. If you only have modify permissions, you can only edit the asset metadata and add annotations to the asset. However, you cannot delete the asset or its metadata.
+   >To delete assets, a user requires delete permissions on `dam/asset`. If you only have modify permissions, you can only edit the asset metadata and add annotations to the asset. However, you cannot delete the asset or its metadata.
 
    >[!NOTE]
    >
-   >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset.
-   >
-   >
-   >Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
+   >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
 
-## Downloading Assets {#downloading-assets}
+## Download assets {#downloading-assets}
 
 See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
-## Publishing Assets {#publishing-assets}
+## Publish assets {#publishing-assets}
 
 >[!NOTE]
 >
@@ -865,11 +547,11 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap/click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. If the asset references other assets, its references are listed in the wizard. Only references that are either unpublished or modified since they were last published/unpublished are displayed. Choose the references you want to publish.
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![chlimage_1-225](assets/chlimage_1-21.png)
 
    >[!NOTE]
    >
-   >If the folder you want to publish includes an empty folder, the empty folder is not published.
+   >Empty folders, that are part of a folder that you've published, are not published.
 
 1. Tap/click **[!UICONTROL Publish]** to confirm the activation for the assets.
 
@@ -877,7 +559,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 >
 >If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
 
-## Unpublishing Assets {#unpublishing-assets}
+## Unpublish assets {#unpublishing-assets}
 
 1. Navigate to the location of the asset/asset folder you want to remove from the publish environment (unpublish).
 
@@ -923,11 +605,11 @@ CUGs are an extra way to restrict access to your assets. You can also configure 
 1. Publish the folder, and then try accessing it from the publish instance. A login screen is displayed.
 1. If you are a CUG member, enter your security credentials. The folder is displayed after AEM authenticates you.
 
-## Search assets {#search-assets}
+## Search assets {#assetsearch}
 
 Searching assets is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators.
 
-For simple, advanced, and custom searches to discover and use the most appropriate assets, see [search assets in AEM](/help/assets/search-assets.md).
+For simple, advanced, and custom searches to discover and use the most appropriate assets, see [search assets in AEM](search-assets.md).
 
 ## Quick actions {#quick-actions}
 
@@ -936,23 +618,25 @@ Quick action icons are available for a single asset at a time. Depending upon yo
 * Touch devices: Touch and hold. For example, on an iPad, you can tap-and-hold an asset so that the quick actions display.
 * Non-touch devices: Hover pointer. For example, On a desktop device, the quick action bar is displayed if you hover the pointer over the asset thumbnail.
 
-### Navigating and Selecting Assets {#navigating-and-selecting-assets}
+### Navigate and select assets {#navigating-and-selecting-assets}
 
-You can view, navigate through, and select assets with any of the available views (Card, Column, and List) using the **[!UICONTROL Select]** icon. The **[!UICONTROL Select]** icon appears as a quick action in the Card view.
+You can view, navigate through, and select assets with any of the available views (Card, Column, and List) using the **[!UICONTROL Select]** option.
 
-![select_quick_action](assets/select_quick_action.png)
-
-In List view, the **[!UICONTROL Select]** icon appears when you hover the mouse icon over the thumbnail before the names of the assets/folder in the list.
+In list view and column view, the **[!UICONTROL Select]** option displays when you hover the pointer over the asset thumbnail.
 
 ![select_quick_in_listview](assets/select_quick_in_listview.png)
 
-Similar to List view, the **[!UICONTROL Select]** icon appears when you hover the mouse icon over the thumbnail before the names of the assets/folder in Column view.
-
 ![select_quick_in_columnview](assets/select_quick_in_columnview.png)
 
-For more information, see [Viewing and Selecting your Resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+In card view, the **[!UICONTROL Select]** option displays as a quick action.
 
-## Editing Images {#editing-images}
+![select_quick_action](assets/select_quick_action.png)
+
+When browsing a folder or a collection in the Assets user interface in a browser, you can select all the assets by using the [!UICONTROL Select All] option from the upper-right corner.
+
+For more information, see [view and selecting your resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+
+## Edit images {#editing-images}
 
 The editing tools in the AEM Assets interface let you perform small editing jobs on image assets. You can crop, rotate, flip, and perform other editing jobs on images. You can also add image maps to assets.
 
@@ -970,32 +654,32 @@ The editing tools in the AEM Assets interface let you perform small editing jobs
 
 1. To crop the image, tap/click the **Crop** icon.
 
-   ![chlimage_1-226](assets/chlimage_1-226.png)
+   ![chlimage_1-226](assets/chlimage_1-22.png)
 
 1. Select the desired option from the list. The crop area appears on the image based on the option you choose. The **Free Hand** option lets you crop the image without any aspect ratio restrictions.
 
-   ![chlimage_1-227](assets/chlimage_1-227.png)
+   ![chlimage_1-227](/help/assets/assets/chlimage_1-23.png)
 
 1. Select the area to be cropped, and resize or reposition it on the image.
 1. Use the **Finish** icon (top right corner) to crop the image. Clicking the **Finish** icon also triggers the regeneration of renditions.
 
-   ![chlimage_1-228](assets/chlimage_1-228.png)
+   ![chlimage_1-228](assets/chlimage_1-24.png)
 
 1. Use the **Undo** and **Redo** icons on the top right to revert to the uncropped image or retain the cropped image, respectively.
 
-   ![chlimage_1-229](assets/chlimage_1-229.png)
+   ![chlimage_1-229](assets/chlimage_1-25.png)
 
 1. Tap/click the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
 
-   ![chlimage_1-230](assets/chlimage_1-230.png)
+   ![chlimage_1-230](assets/chlimage_1-26.png)
 
 1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![chlimage_1-231](assets/chlimage_1-27.png)
 
 1. Tap/click the **Finish** icon to save the changes.
 
-   ![chlimage_1-232](assets/chlimage_1-232.png)
+   ![chlimage_1-232](assets/chlimage_1-28.png)
 
 >[!NOTE]
 >
@@ -1022,7 +706,7 @@ The timeline lets you view various events for a selected item, such as active wo
 >
 >Timeline contains several [options specific to content fragments](/help/assets/content-fragments-managing.md#timeline-for-content-fragments).
 
-## Annotating {#annotating}
+## Annotate assets {#annotating}
 
 Annotations are comments or explanatory notes added to images or videos. Annotations provide marketers the ability to collaborate and leave feedback about assets.
 
@@ -1038,11 +722,11 @@ Video annotations are only supported on browsers with HTML5-compatible video for
     * [Quick actions](/help/assets/managing-assets-touch-ui.md#quick-actions)
     * From the toolbar after selecting the asset or navigating to the asset page
 
-   ![chlimage_1-233](assets/chlimage_1-233.png)
+   ![chlimage_1-233](assets/chlimage_1-29.png)
 
 1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
 
-   ![chlimage_1-234](assets/chlimage_1-234.png)
+   ![chlimage_1-234](assets/chlimage_1-30.png)
 
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
 
@@ -1050,11 +734,11 @@ Video annotations are only supported on browsers with HTML5-compatible video for
    >
    >For a non-administrator user, suggestions appear only if the user has Read permissions at */home* in Crx-de.
 
-   ![chlimage_1-235](assets/chlimage_1-235.png)
+   ![chlimage_1-235](assets/chlimage_1-31.png)
 
 1. After adding the annotation, click **[!UICONTROL Add]** to save it. A notification for the annotation is sent to Aaron.
 
-   ![chlimage_1-236](assets/chlimage_1-236.png)
+   ![chlimage_1-236](assets/chlimage_1-32.png)
 
    >[!NOTE]
    >
@@ -1069,35 +753,35 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **[!UICONTROL My Preferences]**.
 
-   ![chlimage_1-237](assets/chlimage_1-237.png)
+   ![Select user profile icon and then My Preeferences to open User Preferences](assets/User-profile-preferences.png)
 
    Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click/tap **[!UICONTROL Accept]**.
 
-   ![chlimage_1-238](assets/chlimage_1-238.png)
+   ![Select annotation color in User Preferences to set User Persona color](assets/Annotation-color.png)
 
 >[!NOTE]
 >
 >You can also add annotations to a collection. However, if a collection contains child collections, you can add annotations/comments to the parent collection only. The Annotate option is not available for child collections.
 
-### Viewing Saved Annotations {#viewing-saved-annotations}
+### View saved annotations {#viewing-saved-annotations}
 
 1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
 
 1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
 
-   ![chlimage_1-239](assets/chlimage_1-239.png)
+   ![chlimage_1-239](assets/chlimage_1-35.png)
 
 1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
 
-   ![chlimage_1-240](assets/chlimage_1-240.png)
+   ![chlimage_1-240](assets/chlimage_1-36.png)
 
    Tap/click a comment in the **[!UICONTROL Timeline]** panel to view the corresponding annotation on the image.
 
-   ![chlimage_1-241](assets/chlimage_1-241.png)
+   ![chlimage_1-241](assets/chlimage_1-37.png)
 
    Tap/click **[!UICONTROL Delete]**, to delete a particular comment.
 
-### Printing Annotations {#printing-annotations}
+### Print annotations {#printing-annotations}
 
 If an asset has annotations or it has been subjected to a review workflow, you can print the asset along with annotations and review status as a PDF file for offline review.
 
@@ -1113,19 +797,19 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
 
 1. To print specific annotations, select the annotations from the timeline.
 
-   ![chlimage_1-242](assets/chlimage_1-242.png)
+   ![chlimage_1-242](assets/chlimage_1-38.png)
 
    To print the review status only, select it from the timeline.
 
-   ![chlimage_1-243](assets/chlimage_1-243.png)
+   ![chlimage_1-243](assets/chlimage_1-39.png)
 
 1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
 
-   ![chlimage_1-244](assets/chlimage_1-244.png)
+   ![chlimage_1-244](assets/chlimage_1-40.png)
 
 1. From the Print dialog, choose the position you want the annotations/review status to be displayed on the PDF. For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. It is selected by default.
 
-   ![chlimage_1-245](assets/chlimage_1-245.png)
+   ![Select position of annotation/ review status to display on PDF from Print dialog](assets/Print-annotation-dialog.png)
 
    You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
@@ -1135,11 +819,11 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
 
 1. Tap/click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
 
-   ![chlimage_1-246](assets/chlimage_1-246.png)
+   ![chlimage_1-246](assets/chlimage_1-42.png)
 
 1. Download or print the PDF using the options at the top-right.
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-43.png)
 
    >[!NOTE]
    >
@@ -1147,7 +831,7 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
 
    To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![chlimage_1-248](assets/chlimage_1-248.png)
+   ![chlimage_1-248](assets/chlimage_1-44.png)
 
    Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
 
@@ -1179,7 +863,7 @@ Here is an example of how you can configure AEM to print annotations in CJK (Chi
 1. Configure the annotation PDF file by setting the font-family parameter to `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. This configuration is available by default and works for all European and CJK languages.
 1. If the language of your choice is different from the languages mentioned in step 2, append an appropriate (comma separated) entry to the default font-family.
 
-## Asset Versioning {#asset-versioning}
+## Asset versions {#asset-versioning}
 
 Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset.
 
@@ -1205,15 +889,15 @@ The versioning functionality lets you do the following:
 
 1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to view the available actions you can perform on the asset.
 
-   ![chlimage_1-249](assets/chlimage_1-249.png)
+   ![chlimage_1-249](assets/chlimage_1-45.png)
 
 1. Tap/click **[!UICONTROL Save as Version]** to create a version for the asset.
 
-   ![chlimage_1-250](assets/chlimage_1-250.png)
+   ![chlimage_1-250](assets/chlimage_1-46.png)
 
 1. Add a label and comment, and then click **[!UICONTROL Create]** to create a version. Alternatively, tap/click **Cancel** to exit the operation.
 
-   ![chlimage_1-251](assets/chlimage_1-251.png)
+   ![chlimage_1-251](assets/chlimage_1-47.png)
 
 1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
 
@@ -1241,38 +925,38 @@ The versioning functionality lets you do the following:
 
    ![compare_versions](assets/compare_versions.png)
 
-### Starting a workflow on an asset {#starting-a-workflow-on-an-asset}
+### Start a workflow on an asset {#starting-a-workflow-on-an-asset}
 
 1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
 1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
 
-   ![timeline-1](assets/timeline-1.png)
+   ![timeline-1](assets/timeline.png)
 
 1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to open the list of actions available for the asset.
 
-   ![chlimage_1-252](assets/chlimage_1-252.png)
+   ![chlimage_1-252](assets/chlimage_1-45.png)
 
 1. Tap/click **[!UICONTROL Start Workflow]** from the list.
 
-   ![chlimage_1-253](assets/chlimage_1-253.png)
+   ![chlimage_1-253](assets/chlimage_1-49.png)
 
 1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
-   ![chlimage_1-254](assets/chlimage_1-254.png)
+   ![chlimage_1-254](assets/chlimage_1-50.png)
 
 1. (Optional) Specify a title for the workflow, which can be used to reference the workflow instance.
 
-   ![chlimage_1-255](assets/chlimage_1-255.png)
+   ![chlimage_1-255](assets/chlimage_1-51.png)
 
 1. Tap/click **[!UICONTROL Start]** and then tap/click **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
 
-   ![chlimage_1-256](assets/chlimage_1-256.png)
+   ![chlimage_1-256](assets/chlimage_1-52.png)
 
 ## Collections {#collections}
 
-A collection is an ordered set of assets. Use collections to share assets between users.
+A collection is an ordered set of assets. Use collections to share related assets between users or to cluster together similar assets for easy discovery.
 
 * A collection can include assets from different locations because they only contain references to these assets. Each collection maintains the referential integrity of assets.
 * You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
 
-See [Managing Collections](/help/assets/managing-collections-touch-ui.md) for details on collection management.
+See [manage collections](/help/assets/managing-collections-touch-ui.md) for details on collection management.

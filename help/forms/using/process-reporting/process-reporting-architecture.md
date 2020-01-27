@@ -74,4 +74,4 @@ You can create your own custom reports and display these reports in the Custom R
 
 For the steps to create a custom report, see To create a custom report in the article [Custom Reports in Process Reporting](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

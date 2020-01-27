@@ -1,8 +1,6 @@
 ---
 title: Mixed Media Sets
-seo-title: Mixed Media Sets
 description: Learn how to work with mixed media sets in Dynamic Media
-seo-description: Learn how to work with mixed media sets in Dynamic Media
 uuid: cecad772-ed05-46f6-ba44-107195866b0d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -101,7 +99,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
    See [Working with Selectors](/help/assets/working-with-selectors.md).
 
-   ![chlimage_1-140](assets/chlimage_1-351.png)
+   ![chlimage_1-140](assets/chlimage_1-383.png)
 
 1. Re-order the assets by dragging them up or down the list (must select the **[!UICONTROL Reorder]** icon), as necessary.
 

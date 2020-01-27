@@ -69,7 +69,7 @@ Test suites have a collection of test cases. You can have multiple test suites. 
 
    ![dependencies](assets/dependencies.png)
 
-1. Right-click the **[!UICONTROL WeRetailFormTestCases]**node click **Create** > **Create File. **In the Name field, type `js.txt` and click **OK**.
+1. Right-click the **[!UICONTROL WeRetailFormTestCases]** node click **Create** > **Create File**. In the Name field, type `js.txt` and click **OK**.
 1. Open the js.txt file for editing, add the following code, and save the file:
 
    ```
@@ -127,7 +127,7 @@ An action is a specific activity on an adaptive form such as clicking a button. 
 
 1. Navigate to `/etc/clientlibs`. Right-click the `/etc/clientlibs` subfolder and click **[!UICONTROL Create]**> **[!UICONTROL Create Node]**.
 
-   In the **[!UICONTROL Name]**field type `WeRetailFormTests`. Select the type as `cq:ClientLibraryFolder` and click **[!UICONTROL OK]**.
+   In the **[!UICONTROL Name]** field type `WeRetailFormTests`. Select the type as `cq:ClientLibraryFolder` and click **[!UICONTROL OK]**.
 
 1. Add the following properties to the **[!UICONTROL WeRetailFormTests]** node.
 
@@ -161,7 +161,7 @@ An action is a specific activity on an adaptive form such as clicking a button. 
  </tbody>
 </table>
 
-1. Create a file, js.txt,in the **[!UICONTROL WeRetailFormTests]**node. Add the following to the file:
+1. Create a file, js.txt,in the **[!UICONTROL WeRetailFormTests]** node. Add the following to the file:
 
    ```shell
    #base=.
@@ -170,7 +170,7 @@ An action is a specific activity on an adaptive form such as clicking a button. 
 
    Click **[!UICONTROL Save All]**.
 
-1. Create a file, `prefillTest.js`,in the **[!UICONTROL WeRetailFormTests]**node. Add the below code to the file. The code creates a test case. The test case prefills all the fields of a form and validates some fields to ensure correct values are entered.
+1. Create a file, `prefillTest.js`,in the **[!UICONTROL WeRetailFormTests]** node. Add the below code to the file. The code creates a test case. The test case prefills all the fields of a form and validates some fields to ensure correct values are entered.
 
    ```
    (function (window, hobs) {
@@ -215,7 +215,7 @@ A test suite can have multiple test cases. You can run all the test cases in a t
 1. Navigate to AEM icon > **[!UICONTROL Tools]**> **[!UICONTROL Operations]**> **[!UICONTROL Testing]**
 1. To run all the tests of the Test Suite:
 
-    1. In the Tests panel, tap **[!UICONTROL We retail - Tests (1).]**It The suite expands to display list of test.
+    1. In the Tests panel, tap **[!UICONTROL We retail - Tests (1)]**. It The suite expands to display list of test.
     1. Tap the **[!UICONTROL Run tests]** button. The blank area on right side of screen is replaced with adaptive form as the test executes.
 
    ![run-all-test](assets/run-all-test.png)

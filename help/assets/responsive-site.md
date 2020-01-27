@@ -1,8 +1,6 @@
 ---
 title: Delivering Optimized Images for a Responsive Site
-seo-title: Delivering Optimized Images for a Responsive Site
 description: How to use the responsive code feature to deliver optimized images
-seo-description: How to use the responsive code feature to deliver optimized images
 uuid: 7c6baef5-7513-4644-94ed-2383e8724c17
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -29,7 +27,7 @@ See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplicat
 
 1. Select a responsive image preset. The **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons appear.
 
-   ![chlimage_1-409](assets/chlimage_1-409.png)
+   ![chlimage_1-409](assets/chlimage_1-208.png)
 
    >[!NOTE]
    >

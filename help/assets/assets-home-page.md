@@ -1,10 +1,7 @@
 ---
 title: AEM Assets Home Page Experience
 description: Personalize the AEM Assets Home page for a rich welcome screen experience, including a snapshot of recent activities around assets.
-uuid: 787ebcc3-9c20-4e25-8ce5-ecba1b42d123
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: c7d6bac8-0897-4a5e-a286-823968dfb52e
 ---
 
 # AEM Assets Home Page Experience {#aem-assets-home-page-experience}
@@ -34,11 +31,11 @@ The Assets home page is disabled by default. To enable it, perform the following
 
 1. Open the **[!UICONTROL User Preferences]** dialog, and select **[!UICONTROL Enable Assets Home Page]**. Save the changes.
 
-   ![user_preferences](assets/user_preferences.png)
+   ![Enable assets home page on User Preferences dialog](assets/Annotation-color.png)
 
-After enabling the Assets Home page, navigate to the Assets user interface either from the Navigation page or access it directly from the URL `https://[AEM_server]:[port]/aem/assetshome.html/content/dam`.
+After enabling the Assets Home page, navigate to the Assets user interface either from the Navigation page or access it directly from the URL `https://[aem_server]:[port]/aem/assetshome.html/content/dam`.
 
-![home_page](assets/home_page.png)
+![configure experience link on Assets user interface](assets/config-experience-link.png)
 
 Tap/click the **[!UICONTROL Click here to configure your experience link]** to add your username, background image, and profile image.
 

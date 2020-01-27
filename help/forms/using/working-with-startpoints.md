@@ -45,4 +45,4 @@ If the app is online, the task is synchronized with the AEM Forms server and ass
 
 To work with the task in your task list, see [Opening a task](/help/forms/using/open-task.md).
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

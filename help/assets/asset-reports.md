@@ -1,12 +1,7 @@
 ---
-title: Asset Reports
-description: This article describes various reports around assets in AEM Assets and how to generate reports.
-uuid: 8984171b-799a-4587-9862-f4c7ce3f1a76
+title: Reports about your digital assets
+description: Understand reports about your assets in AEM Assets that help your understand usage, activity, and sharing of your digital assets.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 4f4438b8-e5c4-4a15-8def-a909cb2e1382
-docset: aem65
-
 ---
 
 # Asset Reports {#asset-reports}
@@ -39,7 +34,7 @@ AEM administrators can easily generate and customize these reports for your impl
 
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Reports]**.
 
-   ![navigation](assets/navigation.png)
+![Navigate assets report](assets/AssetsReportNavigation.png)
 
 1. In the Asset Reports page, tap/click **[!UICONTROL Create]** from the toolbar.
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and tap/click **[!UICONTROL Next]**.
@@ -95,13 +90,11 @@ AEM administrators can easily generate and customize these reports for your impl
    ![custom_columns](assets/custom_columns.png)
 
 1. Tap/click **[!UICONTROL Create]** from the toolbar. A message notifies that report generation has been initiated.
-1. In the Asset Reports page, the report generation status is based on the current state of the report job, for example Success, Failed, Queued, or Scheduled. The same status appears in the notifications inbox.
-
-   To view the report page, tap/click the report link. Alternatively, select the report, and tap/click the View icon from the toolbar.
+1. In the Asset Reports page, the report generation status is based on the current state of the report job, for example Success, Failed, Queued, or Scheduled. The same status appears in the notifications inbox.To view the report page, tap/click the report link. Alternatively, select the report, and tap **[!UICONTROL View]** from the toolbar.
 
    ![report_page](assets/report_page.png)
 
-   Tap/click Download icon from the toolbar to download the report in CSV format.
+   Tap **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
 
 ## Add custom columns {#add-custom-columns}
 

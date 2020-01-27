@@ -1,15 +1,10 @@
 ---
 title: XMP writeback to renditions
 description: Learn how the XMP writeback feature propagates the metadata changes for an asset to all or specific renditions of the asset.
-uuid: 526e5d6d-a222-4a83-b366-39a2036459f1
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 017b6daa-8aac-4cd9-9085-b5396a81d196
-docset: aem65
-
 ---
 
-# XMP writeback to renditions{#xmp-writeback-to-renditions}
+# XMP writeback to renditions {#xmp-writeback-to-renditions}
 
 This XMP Writeback feature in Adobe Experience Manager (AEM) Assets replicates asset metadata changes to the renditions of the asset.
 
@@ -17,7 +12,7 @@ When you change the metadata for an asset from within AEM Assets or while upload
 
 The XMP Writeback feature propagates the metadata changes to all or specific renditions of the asset.
 
-Consider a scenario where you modify the Title property of the asset titled "**Classic Leather**" to "**Nylon**."
+Consider a scenario where you modify the Title property of the asset titled `Classic Leather` to `Nylon`.
 
 ![metadata](assets/metadata.png)
 
@@ -37,7 +32,7 @@ To enable the metadata changes to be propagated to the renditions of the asset w
 1. Open the **Adobe CQ DAM Rendition Maker** configuration.
 1. Select the **Propagate XMP** option, and then save the changes.
 
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-346.png)
 
 ## Enabling XMP writeback for specific renditions {#enabling-xmp-writeback-for-specific-renditions}
 
@@ -84,7 +79,7 @@ Whitelist filtering of XMP metadata resolves this issue by letting you define th
 1. Open the **Adobe CQ DAM XmpFilter** configuration.
 1. To apply whitelist filtering, select **Apply Whitelist to XMP Properties**, and specify the properties to be imported in the **Whitelisted XML Names for XMP filtering** box.
 
-   ![chlimage_1-136](assets/chlimage_1-136.png)
+   ![chlimage_1-136](assets/chlimage_1-347.png)
 
 1. To filter out blacklisted XMP properties after applying whitelist filtering, specify them in the **Blacklisted XML Names for XMP filtering** box.
 
@@ -93,4 +88,3 @@ Whitelist filtering of XMP metadata resolves this issue by letting you define th
    >The **Apply Blacklist to XMP Properties** option is selected by default. In other words, blacklist filtering is enabled by default. To disable blacklist filtering, unselect the **Apply Blacklist to XMP Properties** option.
 
 1. Save the changes.
-

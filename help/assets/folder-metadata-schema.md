@@ -1,5 +1,5 @@
 ---
-title: Folder Metadata Schema
+title: Folder metadata schema
 description: Learn how to create metadata schema for asset folders in AEM Assets
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 uuid: bf8d066c-0f23-4d18-9ce9-860fa505dea2
@@ -8,7 +8,7 @@ docset: aem65
 
 ---
 
-# Folder Metadata Schema {#folder-metadata-schema}
+# Folder metadata schema {#folder-metadata-schema}
 
 Adobe Experience Manager (AEM) Assets lets you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages.
 
@@ -30,11 +30,11 @@ You can edit a newly added or existing metadata schema form, which includes the 
 You can map/configure these form items to a field within a metadata node in the CRX repository. You can add new tabs or form items to the metadata schema form.
 
 1. In the Schema Forms page, select the form you created, and then tap/click the **[!UICONTROL Edit]** icon from the toolbar.
-1. In the Folder Metadata Schema Editor page, tap/click the **[!UICONTROL +]** icon to add a tab to the form. To rename the tab, tap/click the default name and specify the new name under **[!UICONTROL Settings]**.
+1. In the Folder Metadata Schema Editor page, tap `+` to add a tab to the form. To rename the tab, tap/click the default name and specify the new name under **[!UICONTROL Settings]**.
 
    ![custom_tab](assets/custom_tab.png)
 
-   To add more tabs, tap/click the **[!UICONTROL +]** icon. Tap/click **[!UICONTROL X]** to delete a tab.
+   To add more tabs, tap `+`. Tap `X` on a tab to delete it.
 
 1. In the active tab, add one or more components from the **[!UICONTROL Build Form]** tab.
 
@@ -54,46 +54,16 @@ You can map/configure these form items to a field within a metadata node in the 
 
 The **[!UICONTROL Build Form]** tab lists form items that you use in your folder metadata schema form. The **[!UICONTROL Settings]** tab displays the attributes for each item that you select in the **[!UICONTROL Build Form]** tab. Here is a list the form items available in the **[!UICONTROL Build Form]** tab:
 
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>Component Name</strong></p> </td>
-   <td><p><strong>Description</strong></p> </td>
-  </tr>
-  <tr>
-   <td><p>Section Header</p> </td>
-   <td><p> Add a section heading for a list of common components.</p> </td>
-  </tr>
-  <tr>
-   <td><p>Single Line Text</p> </td>
-   <td><p> Add a single-line text property. It is stored as a string.</p> </td>
-  </tr>
-  <tr>
-   <td><p>Multi Value Text</p> </td>
-   <td><p> Add a multi value text property. It is stored as a string array.</p> </td>
-  </tr>
-  <tr>
-   <td><p>Number</p> </td>
-   <td><p> Add a number component.</p> </td>
-  </tr>
-  <tr>
-   <td><p>Date</p> </td>
-   <td><p> Add a date component.</p> </td>
-  </tr>
-  <tr>
-   <td><p>Dropdown</p> </td>
-   <td><p> Add a drop-down list.</p> </td>
-  </tr>
-  <tr>
-   <td><p>Standard Tags</p> </td>
-   <td><p> Add a tag. </p> </td>
-  </tr>
-  <tr>
-   <td><p>Hidden Field</p> </td>
-   <td><p> Add a hidden field. It is sent as a POST parameter when the asset is saved.</p> </td>
-  </tr>
- </tbody>
-</table>
+| Component Name | Description |
+|---|---|
+| [!UICONTROL Section Header] | Add a section heading for a list of common components. |
+| [!UICONTROL Single Line Text] | Add a single-line text property. It is stored as a string. |
+| [!UICONTROL Multi Value Text] | Add a multi value text property. It is stored as a string array. |
+| [!UICONTROL Number] | Add a number component. |
+| [!UICONTROL Date] | Add a date component. |
+| [!UICONTROL Dropdown] | Add a drop-down list. |
+| [!UICONTROL Standard Tags] | Add a tag. |
+| [!UICONTROL Hidden Field] | Add a hidden field. It is sent as a POST parameter when the asset is saved. |
 
 ### Editing form items {#editing-form-items}
 
