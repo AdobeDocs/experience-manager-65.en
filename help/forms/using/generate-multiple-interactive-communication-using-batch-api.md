@@ -11,20 +11,13 @@ topic-tags: interactive-communication
 
 You can use the Batch API to produce multiple interactive communications from a template. The template is an interactive communication without any data. The Batch API combines data with a template to produce an interactive communication. The API is useful in the mass production of interactive communications. For example, telephone bills, credit card statements for multiple customers.
 
-The Batch API accepts records (data) in JSON format and from a Form Data Model and produces interactive communications. The number of produced interactive communications is equal to the records specified in the input JSON file in the configured Form Data Model. You can use the API to produce both Print and Web output. The PRINT option produces a PDF document and the WEB option produces data in JSON format for each individual record.
+The Batch API accepts records (data) in JSON format and from a Form Data Model. The number of produced interactive communications is equal to the records specified in the input JSON file in the configured Form Data Model. You can use the API to produce both Print and Web output. The PRINT option produces a PDF document and the WEB option produces data in JSON format for each individual record.
 
 ## Using the Batch API {#using-the-batch-api}
+You can use the Batch API in conjunction with Watched Folders or as a standalone Rest API. You configure a template, output type (HTML, PRINT, or Both), locale, prefill service, and name for the generated interactive communications to use the Batch API. 
 
-The Batch API works in conjunction with Watched Folders. Out of the Box, AEM Forms provide a Watched Folder service. The service generates interactive communications and allows you to configure a template, output type (HTML, PRINT, or Both), locale, prefill service, and name of the generated interactive communications. You can also create custom services as per your requirements. To use the Batch API:
+You combine a record with an interactive communication template to produce an interactive communication. Batch APIs can read records (data for interactive communication templates) directly from a JSON file or from an external data source accessed via form data model. You can keep each record in a separate JSON file or create a JSON array to keep all the records in a single file. 
 
-You can use the below-listed methods to specify input data (records) and batch produce interactive communications. You can:
-
-* Specify input data (records) in JSON file format to produce an interactive communication
-* Use input data (records) saved in an external data source and accessed via a form data model to produce an interactive communication
-
-### Specify input data records in JSON file format to produce an interactive communication {#specify-input-data-in-JSON-file-format}
-
-You combine a record with an interactive communication template to produce an interactive communication. You can create a separate JSON file for each record or create a JSON array to keep all the records in a single file:
 
 **A single record in a JSON file**
 
@@ -68,6 +61,19 @@ You combine a record with an interactive communication template to produce an in
 
 ```
 
+### Using the Batch API with Watched folders {#using-the-batch-api-watched-folders}
+
+To make it easy to experience the API, AEM Forms provides a Watched Folder service configured to use the Batch API, out of the box. You can access the service via AEM Forms UI to generates multiple interactive communications. You can also create custom services as per your requirements. You can use the below-listed methods to use Batch API with Watched folder: 
+
+* Specify input data (records) in JSON file format to produce an interactive communication
+* Use input data (records) saved in an external data source and accessed via a form data model to produce an interactive communication
+* 
+
+#### Specify input data records in JSON file format to produce an interactive communication {#specify-input-data-in-JSON-file-format}
+
+You combine a record with an interactive communication template to produce an interactive communication. You can create a separate JSON file for each record or create a JSON array to keep all the records in a single file:
+
+
 To create interactive communication from records saved in a JSON file:
 
 1. Create a [Watched folder](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) and configure it to use the Batch API:
@@ -100,7 +106,7 @@ To create interactive communication from records saved in a JSON file:
         * When you specify the WEB option in Watched Folder Configuration, a JSON file per record is generated. You can use the JSON file to [pre-fill a web template](#web-template).
         * When you specify both PRINT and WEB options, both PDF documents and a JSON file per record are generated.
 
-### Use input data saved in an external data source and accessed via form data model to produce an interactive communication {#use-fdm-as-data-source}
+#### Use input data saved in an external data source and accessed via form data model to produce an interactive communication {#use-fdm-as-data-source}
 
 You combine data (records) saved in an external data source with an interactive communication template to produce an interactive communication. When you create an interactive communication, you connect it to an external data source via a Form Data Model (FDM) to access data. You can configure Watched Folders batch process service to fetch data using the same Form Data Model from an external data source. To [create an interactive communication from records saved in an external data source](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
 
@@ -162,7 +168,305 @@ You combine data (records) saved in an external data source with an interactive 
         * When you specify the WEB option in Watched Folder Configuration, a JSON file per record is generated. You can use the JSON file to [pre-fill a web template](#web-template).
         * When you specify both PRINT and WEB options, both PDF documents and a JSON file per record are generated.
 
-## Pre-fill a web template {#web-template}
+ ## Invoke the Batch API using REST requests
+
+ You can invoke [the Batch API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) through Representational State Transfer (REST) requests. It allows you to provide a REST endpoint to other users to access the API and configure your own methods for processing, storing, and customizing interactive communication. You can develop your own custom Java servlet to deploy the  API on your AEM instance.
+
+
+ Before you deploy the Java servlet, ensure that you have an interactive communication and corresponding data files are ready. Perform the following steps to create and deploy the Java servlet:  
+
+ 1. Log in to your AEM instance and create an Interactive Communication. To use the interactive communication mentioned in the sample code given below, [click here](). 
+ 1. [Build and deploy an AEM Project using Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) on your AEM instance.
+ 1. Open the Java project, create a .java file, for example CCMBatchServlet.java. Add the following code to the file:
+
+    ``` java
+
+    package com.adobe.fd.ccm.multichannel.batch.integration;
+
+            import java.io.File;
+            import java.io.FileInputStream;
+            import java.io.FileOutputStream;
+            import java.io.IOException;
+            import java.io.InputStream;
+            import java.io.OutputStream;
+            import java.io.PrintWriter;
+            import java.util.List;
+            import java.util.logging.FileHandler;
+            import java.util.logging.Logger;
+            import java.util.logging.SimpleFormatter;
+
+            import javax.servlet.Servlet;
+            import javax.servlet.ServletContext;
+
+            import com.adobe.aemfd.watchfolder.service.api.ContentProcessor;
+
+            import org.apache.commons.io.IOUtils;
+            import org.apache.sling.api.SlingHttpServletRequest;
+            import org.apache.sling.api.SlingHttpServletResponse;
+            import org.apache.sling.api.servlets.SlingAllMethodsServlet;
+            import org.json.JSONArray;
+            import org.json.JSONObject;
+            import org.osgi.service.component.annotations.Component;
+            import org.osgi.service.component.annotations.Reference;
+
+            import com.adobe.aemfd.docmanager.Document;
+            import com.adobe.aemfd.docmanager.passivation.DocumentPassivationHandler;
+            import com.adobe.fd.ccm.multichannel.batch.api.factory.BatchComponentBuilderFactory;
+            import com.adobe.fd.ccm.multichannel.batch.api.model.BatchConfig;
+            import com.adobe.fd.ccm.multichannel.batch.api.model.BatchInput;
+            import com.adobe.fd.ccm.multichannel.batch.api.model.BatchResult;
+            import com.adobe.fd.ccm.multichannel.batch.api.model.BatchType;
+            import com.adobe.fd.ccm.multichannel.batch.api.model.RecordResult;
+            import com.adobe.fd.ccm.multichannel.batch.api.model.RenditionResult;
+            import com.adobe.fd.ccm.multichannel.batch.api.service.BatchGeneratorService;
+            import com.adobe.fd.ccm.multichannel.batch.util.BatchConstants;
+            import com.adobe.icc.render.obj.Content;
+
+            import javax.annotation.PostConstruct;
+            import javax.inject.Inject;
+            import javax.inject.Named;
+            
+            import org.apache.sling.api.resource.Resource;
+            import org.apache.sling.models.annotations.Default;
+            import org.apache.sling.models.annotations.Model;
+            import org.apache.sling.settings.SlingSettingsService;
+            import org.apache.sling.api.resource.ResourceUtil;
+
+
+            import org.slf4j.*;
+            import java.util.Date;
+
+            @Component(service=Servlet.class,
+            property={	
+                    "sling.servlet.methods=GET",
+                    "sling.servlet.paths="+ "/bin/batchServlet"
+            })
+            public class CCMBatchServlet extends SlingAllMethodsServlet {
+                
+                @Reference
+                private BatchGeneratorService batchGeneratorService;
+                @Reference
+                private BatchComponentBuilderFactory batchBuilderFactory;
+                public void doGet(SlingHttpServletRequest req, SlingHttpServletResponse resp) {
+                    try {
+                        executeBatch(req,resp);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+                private void executeBatch(SlingHttpServletRequest req, SlingHttpServletResponse resp) throws Exception {
+                    int count = 0;
+                    JSONArray inputJSONArray = new JSONArray();
+                    String filePath = req.getParameter("filePath");
+                    InputStream is = new FileInputStream(filePath);
+                    String data = IOUtils.toString(is);
+                    try {
+                        // If input file is json object, then create json object and add in json array, if not then try for json array
+                        JSONObject inputJSON = new JSONObject(data);
+                        inputJSONArray.put(inputJSON);
+                    } catch (Exception e) {
+                        try {
+                            // If input file is json array, then iterate and add all objects into inputJsonArray otherwise throw exception
+                            JSONArray inputArray = new JSONArray(data);
+                            for(int i=0;i<inputArray.length();i++) {
+                                inputJSONArray.put(inputArray.getJSONObject(i));
+                            }
+                        } catch (Exception ex) {
+                            throw new Exception("Invalid JSON Data. File name : " + filePath, ex);
+                        }
+                    }
+                    BatchInput batchInput = batchBuilderFactory.getBatchInputBuilder().setData(inputJSONArray).setTemplatePath("/content/dam/formsanddocuments/testsample/mediumic").build();
+                    BatchConfig batchConfig = batchBuilderFactory.getBatchConfigBuilder().setBatchType(BatchType.WEB_AND_PRINT).build();
+                    BatchResult batchResult = batchGeneratorService.generateBatch(batchInput, batchConfig);
+                    List<RecordResult> recordList = batchResult.getRecordResults();
+                    JSONObject result = new JSONObject();
+                    for (RecordResult recordResult : recordList) {
+                        String recordId = recordResult.getRecordID();
+                        for (RenditionResult renditionResult : recordResult.getRenditionResults()) {
+                            if (renditionResult.isRecordPassed()) {
+                                InputStream output = renditionResult.getDocumentStream().getInputStream();
+                                result.put(recordId +"_"+renditionResult.getContentType(), output); 
+                                
+                                Date date= new Date();
+                                long time = date.getTime();
+                                
+                                // Print output
+                                if(getFileExtension(renditionResult.getContentType()).equalsIgnoreCase(".json")) {                		
+                                    File file = new File(time + getFileExtension(renditionResult.getContentType()));
+                                    copyInputStreamToFile(output, file);
+                                } else
+                                {
+                                    File file = new File(time + getFileExtension(renditionResult.getContentType()));
+                                    copyInputStreamToFile(output, file);
+                                }
+                            }
+                        }
+                    }
+                    PrintWriter writer = resp.getWriter();
+                    JSONObject resultObj = new JSONObject();
+                    resultObj.put("result", result);
+                    writer.write(resultObj.toString());
+                }
+                
+                
+                private static void copyInputStreamToFile(InputStream inputStream, File file) 
+                        throws IOException {
+
+                        try (FileOutputStream outputStream = new FileOutputStream(file)) {
+
+                            int read;
+                            byte[] bytes = new byte[1024];
+
+                            while ((read = inputStream.read(bytes)) != -1) {
+                                outputStream.write(bytes, 0, read);
+                            }
+
+                            // commons-io
+                            //IOUtils.copy(inputStream, outputStream);
+
+                        }
+
+                    }
+                
+                
+                private String getFileExtension(String contentType) {
+                    if (contentType.endsWith(BatchConstants.JSON)) {
+                        return ".json";
+                    } else return ".pdf";
+                }
+                
+                
+            }
+
+    ```
+
+ 1. In the above code, replace the template path (setTemplatePath) with the path of your template and set value of the setBatchType API: 
+    * When you specify the PRINT option in Watched Folder Configuration, PDF output for the interactive communication is generated.
+    * When you specify the WEB option in Watched Folder Configuration, a JSON file per record is generated. You can use the JSON file to [pre-fill a web template](#web-template).
+    * When you specify both PRINT and WEB options, both PDF documents and a JSON file per record are generated.
+
+ 1. [Use maven to deploy the updated code to your AEM instance](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven).
+ 1. Invoke the batch API to generate the interactive communication. The batch API prints returns a stream of PDF and .json files depending on the number of records. You can use the JSON file to [pre-fill a web template](#web-template).
+ 
+    If you use the above code, the API is deployed at `http://localhost:4502/bin/batchServlet`. If you use the example interactive communication provided in step 1, you can use the records.json (given below) to generate an interactive communication. For example, `http://localhost:4502/bin/batchServlet?filePath=C:/aem/mergedJsonDataan.json>.` It prints and returns a stream of a PDF and a JSON file.
+
+``` JSON
+{
+    "account_1507709387480": {
+        "accNum": 28,
+        "custId": 32,
+        "expiryDate": "2169-05-10T16:02:19.221Z",
+        "acctStatment": 13,
+        "totalPoint": 25,
+        "transaction_transaction_1507709514814": [
+            {
+                "TransDate": "2430-06-03T13:25:52.110Z",
+                "TransAmount": 47,
+                "accNum": 46,
+                "Comment": "irure sint laboris",
+                "Type": "est enim labore exerci",
+                "TransId": 38
+            },
+            {
+                "TransDate": "4228-04-09T04:07:29.756Z",
+                "TransAmount": 1,
+                "accNum": 47,
+                "Comment": "eiusmod ",
+                "Type": "in esse commodo",
+                "TransId": 46
+            },
+            {
+                "TransDate": "3293-22-24T20:25:38.263Z",
+                "TransAmount": 47,
+                "accNum": 14,
+                "Comment": "id do",
+                "Type": "ut vol",
+                "TransId": 17
+            },
+            {
+                "TransDate": "2185-04-02T08:03:02.299Z",
+                "TransAmount": 100,
+                "accNum": 26,
+                "Comment": "ea irure",
+                "Type": "do cupidata",
+                "TransId": 77
+            },
+            {
+                "TransDate": "4296-08-22T14:47:14.836Z",
+                "TransAmount": 32,
+                "accNum": 29,
+                "Comment": "aliqua",
+                "Type": "elitesse pariatur ex",
+                "TransId": 56
+            }
+        ],
+        "creditcardNum": "magna non cillum"
+    },
+    "customer_1507709387480": {
+        "id": 132245,
+        "name": "nulla ut dolore in tempor",
+        "age": 1,
+        "dob": "2017-01-03T22:51:34.506Z",
+        "mobileNo": 22,
+        "ZIP": 81,
+        "profilePicture": "non culpa",
+        "account_account_1507709480363": {
+            "accNum": 72,
+            "custId": 21,
+            "expiryDate": "4111-06-06T23:27:13.271Z",
+            "acctStatment": 31,
+            "totalPoint": 50,
+            "transaction_transaction_1507709514814": [
+                {
+                    "TransDate": "4563-22-24T02:13:41.767Z",
+                    "TransAmount": 11,
+                    "accNum": 69,
+                    "Comment": "sed pariatur",
+                    "Type": "ut sed in in",
+                    "TransId": 57
+                },
+                {
+                    "TransDate": "4290-10-09T02:48:29.462Z",
+                    "TransAmount": 67,
+                    "accNum": 90,
+                    "Comment": "dolor magna",
+                    "Type": "adipisic",
+                    "TransId": 8
+                },
+                {
+                    "TransDate": "2980-05-17T14:15:09.141Z",
+                    "TransAmount": 91,
+                    "accNum": 65,
+                    "Comment": "eu magna",
+                    "Type": "culpa dolor irure",
+                    "TransId": 31
+                },
+                {
+                    "TransDate": "4697-09-23T23:46:11.147Z",
+                    "TransAmount": 62,
+                    "accNum": 29,
+                    "Comment": "Duis exe",
+                    "Type": "ea deserunt Excepteur D",
+                    "TransId": 35
+                }
+            ],
+            "creditcardNum": "ut deserunt l"
+        }
+    },
+    "transaction_1507709387480": {
+        "TransDate": "4506-01-08T22:18:54.949Z",
+        "TransAmount": 33,
+        "accNum": 41,
+        "Comment": "amet veni",
+        "Type": "culpa Ut",
+        "TransId": 42
+    }
+}
+```
+
+
+
+### Pre-fill a web template {#web-template}
 
 When you set the batchType to render the Web Channel, the API generates a JSON file for every data record. You can use the following syntax to merge the JSON file with corresponding Web Channel to generate an interactive communication: 
 
