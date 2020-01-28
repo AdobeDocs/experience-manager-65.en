@@ -332,8 +332,8 @@ You combine data (records) saved in an external data source with an interactive 
     ```
 
  1. In the above code, replace the template path (setTemplatePath) with the path of your template and set value of the setBatchType API:
-    * When you specify the PRINT option in Watched Folder Configuration, PDF output for the interactive communication is generated.
-    * When you specify the WEB option in Watched Folder Configuration, a JSON file per record is generated. You can use the JSON file to [pre-fill a web template](#web-template).
+    * When you specify the PRINT option PDF output for the interactive communication is generated.
+    * When you specify the WEB option a JSON file per record is generated. You can use the JSON file to [pre-fill a web template](#web-template).
     * When you specify both PRINT and WEB options, both PDF documents and a JSON file per record are generated.
 
  1. [Use maven to deploy the updated code to your AEM instance](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven).
