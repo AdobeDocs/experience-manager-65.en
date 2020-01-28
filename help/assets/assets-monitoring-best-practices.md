@@ -39,7 +39,12 @@ Typically, you use these tools together to obtain a comprehensive idea about the
 >
 >These tools are standard tools and not directly supported by Adobe. They don’t require additional licenses.
 
-![chlimage_1-32](assets/chlimage_1-142.png) <br> ![chlimage_1-33](assets/chlimage_1-143.png)
+![chlimage_1-33](assets/chlimage_1-143.png)
+
+*Figure: Live monitoring using Visual VM tool*
+
+
+![chlimage_1-32](assets/chlimage_1-142.png)
 
 ## Long-term monitoring {#long-term-monitoring}
 
