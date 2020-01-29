@@ -416,7 +416,7 @@ List of OSGi bundles included in AEM 6.5.3.0
 
 List of Content Packages included in AEM 6.5.3.0
 
-[Get File](assets/6530_packages.txt)
+[Get File](assets/sp_6530_packages.txt)
 
 ## Helpful resources {#helpful-resources}
 
