@@ -17,7 +17,7 @@ This document includes details about the various types of Adobe Experience Manag
 
 >[!Note]
 >
->For release schedule of AEM maintenance releases, refer to [AEM maintenance releases roadmap](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html). 
+>For release schedule of AEM maintenance releases, refer to [AEM maintenance releases roadmap](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)
 
 ## Full Release {#full-release}
 
