@@ -18,10 +18,6 @@ Follow these steps to create an adaptive form.
 
 1. Access AEM Forms Author instance at `https://[server]:[port]/<custom-context-if-any>.`
 
-   ```
-   
-   ```
-
 1. Enter your credentials on the AEM login page.
 
    After you are logged in, in the top-left corner, tap **[!UICONTROL Adobe Experience Manager &gt; Forms &gt; Forms & Documents]**.
@@ -36,7 +32,7 @@ Follow these steps to create an adaptive form.
 
     * **[!UICONTROL Title:]** Specifies the display name of the form. The title helps you identify the form in the AEM Forms user interface.
     * **[!UICONTROL Name:]** Specifies the name of the form. A node with the specified name is created in the repository. As you start typing a title, value for the name field is automatically generated. You can change the suggested value. The name field can include only alphanumeric characters, hyphens, and underscores. All the invalid inputs are replaced with a hyphen.
-    * **[!UICONTROL Description:]** Specifies the detailed information about the form. 
+    * **[!UICONTROL Description:]** Specifies the detailed information about the form.
     * **[!UICONTROL Tags:]** Specifies tags to uniquely identify the adaptive form. Tags help in searching the form. To create tags, type new tag names in the **Tags** box.
 
 1. You can create an adaptive form based on one of following form models:
@@ -50,9 +46,9 @@ Follow these steps to create an adaptive form.
 
 1. Tap **Create**. An adaptive form is created and a dialog to open the form for editing appears.
 
-   Once you have finished specifying all the properties, click **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears. 
+   Once you have finished specifying all the properties, click **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears.
 
-   Once you have finished specifying all the properties, click **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears.  
+   Once you have finished specifying all the properties, click **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears.
 
 1. Tap **[!UICONTROL Open]** to open the newly created form in a new tab. The form opens for editing and displays the contents available in the template. It also displays the sidebar to customize the newly created form according to the needs.
 
@@ -172,4 +168,35 @@ By default, the contents of an adaptive form are saved on a user action, such as
 
 ### Enable Auto Save for an adaptive form {#enable-auto-save-for-an-adaptive-form}
 
-By default, the auto save option is not enabled. You can enable the auto save option from the Auto Save tab of an adaptive form. The Auto Save tab also provides several other configuration options. Perform the following steps to enable and configure the auto save option for an adaptive form: 
+By default, the auto save option is not enabled. You can enable the auto save option from the Auto Save tab of an adaptive form. The Auto Save tab also provides several other configuration options. Perform the following steps to enable and configure the auto save option for an adaptive form:
+
+1. To access the auto-save section in the properties, select a component, then tap ![field-level](assets/field-level.png) &gt; **[!UICONTROL Adaptive Form Container]**, and then tap ![cmppr](assets/cmppr.png).
+1. In the **[!UICONTROL Auto Save]** section, **[!UICONTROL Enable]** the auto-save option.
+1. In the **[!UICONTROL Adaptive Form Event]** box, specify 1 or TRUE to automatically start saving the form when the form is loaded in the browser. You can also specify a conditional expression for an event, which when triggered and returns true, starts saving the content of the form.
+1. Specify the Trigger. Auto-save is triggered based on your configuration. Your options are:
+
+    * **[!UICONTROL Time based:]** Select the option to start saving the content based on a specific time interval.
+    * **[!UICONTROL Event based:]** Select the option to start saving the content based when an event is triggered.
+
+   When you select a trigger, Strategy Configuration box is enabled. Strategy Configuration box lets you:
+
+    * Specify a time interval if you select **[!UICONTROL Time based]** trigger.
+    * Specify an event name if you select **[!UICONTROL Event based]** trigger.
+
+   You can also create and add your own custom strategy to the list. For details, see [Implement a custom strategy to autosave the forms](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
+
+1. (Time-based autosave only) Perform the following steps to configure options for the Time-based autosave.
+
+    1. In the **[!UICONTROL Auto save on this interval]** box, specify the time interval in seconds. The form is saved repeatedly after the number of seconds specified in the interval box elapse.
+
+1. (Event-based auto save only) Perform the following steps to configure options for Event-based auto save.
+
+    1. In the **Auto save after this event** box, specify a [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) event. The form is saved every time the expression evaluates to TRUE.
+
+1. (Optional) To automatically save the content for anonymous users, select the **Enable Autosave for anonymous users** option, and click **[!UICONTROL OK]**.
+
+   >[!NOTE]
+   >
+   >For auto save option to work for anonymous users, ensure that you configure the Forms Common Configuration Service to allow all users to preview, verify, and sign forms.
+   >
+   >To configure the service, go to AEM Web Console configuration at `https://[server]:[host]/system/console/configMgr` and edit the **[!UICONTROL Forms Common Configuration Service]** to choose the **[!UICONTROL All Users]** option in the **[!UICONTROL Allow]** field, and save the configuration.

@@ -97,3 +97,14 @@ Forms portal allows you to store data at local AEM repository, remote AEM reposi
 Forms portal provides out of the box services (APIs) to store data on crx-repository of local and remote AEM Forms publish instances. You can replace the default implementations, described in [Configuring storage services for drafts and submissions](/help/forms/using/configuring-draft-submission-storage.md) article, with custom implementations to replace default functionality. For detailed information about the methods required in a custom implementation to store content at a secured location, see [Customizing Draft and Submission data services](/help/forms/using/custom-draft-submission-data-services.md) and [Custom storage for drafts and submissions component.](/help/forms/using/adding-custom-storage-provider-forms.md)
 
 AEM Forms documentation provides a [Sample for integrating drafts & submissions component with database](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html). You can use the sample implementation to develop your own custom implementation.
+
+## Related Articles
+
+* [Enable forms portal components](/help/forms/using/enabling-forms-portal-components.md)
+* [Create forms portal page](/help/forms/using/creating-form-portal-page.md)
+* [List forms on a web page using APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
+* [Use Drafts and submissions component](/help/forms/using/draft-submission-component.md)
+* [Customize storage of drafts and submitted forms](/help/forms/using/draft-submission-component.md)
+* [Sample for integrating drafts & submissions component with database](/help/forms/using/integrate-draft-submission-database.md)
+* [Customizing templates for forms portal components](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Introduction to publishing forms on a portal](/help/forms/using/introduction-publishing-forms.md)
