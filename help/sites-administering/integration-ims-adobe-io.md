@@ -15,10 +15,6 @@ docset: aem65
 
 # Integration with Adobe Target using Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
 
->[!CAUTION]
->
->Before starting this procedure [Adobe Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) must provision your account for Adobe I/O, Adobe Target and Adobe IMS (Identity Management System).
-
 The integration of AEM with Adobe Target via the Target Standard API requires the configuration of Adobe IMS (Identity Management System) and Adobe I/O.
 
 >[!NOTE]
@@ -28,6 +24,15 @@ The integration of AEM with Adobe Target via the Target Standard API requires th
 >Using the Adobe Target Classic API in AEM is still supported for backward compatibility. The [Target Classic API uses user credentials authentication](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 >
 >The API selection is driven by the authentication method used for AEM/Target integration.
+
+## Prerequisites {#prerequisites}
+
+Before starting this procedure [Adobe Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) must provision your account for:
+
+* Adobe I/O
+* Adobe Target and 
+* Adobe IMS (Identity Management System)
+* Adobe Console
 
 ## Configuring an IMS Configuration - Generating a Public Key {#configuring-an-ims-configuration-generating-a-public-key}
 
