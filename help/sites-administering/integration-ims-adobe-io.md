@@ -29,10 +29,10 @@ The integration of AEM with Adobe Target via the Target Standard API requires th
 
 Before starting this procedure [Adobe Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) must provision your account for:
 
+* Adobe Console
 * Adobe I/O
 * Adobe Target and 
 * Adobe IMS (Identity Management System)
-* Adobe Console
 
 ## Configuring an IMS Configuration - Generating a Public Key {#configuring-an-ims-configuration-generating-a-public-key}
 
