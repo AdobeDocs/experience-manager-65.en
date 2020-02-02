@@ -9,20 +9,20 @@ docset: aem65
 
 ---
 
-# AEM 6.5 Service Pack Release Notes {#aem-service-pack-release-notes}
+# Adobe Experience Manager 6.5 Service Pack Release Notes {#aem-service-pack-release-notes}
 
 ## Release Information {#release-information}
 
-| Products |**Adobe Experience Manager (AEM) 6.5** |
+| Products |**Adobe Experience Manager 6.5** |
 |---|---|
 | Version |6.5.3.0 |
 | Type |Service Pack Release |
 | Date |December 12, 2019 |
-| Download URL | AEM 6.5.3.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0), [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aem.html#package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.3.zip) |
+| Download URL | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0), [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aem.html#package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.3.zip) |
 
-## What's included in AEM 6.5.3.0 {#what-s-included-in-aem}
+## What's included in Adobe Experience Manager 6.5.3.0 {#what-s-included-in-aem}
 
-AEM 6.5.3.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of AEM 6.5 in **April 2019**. It can be installed on top of AEM 6.5.
+Adobe Experience Manager (AEM) 6.5.3.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of 6.5 release in **April 2019**. It can be installed on top of Adobe Experiece Manager (AEM) 6.5.
 
 Some key highlights of this service pack release are:
 
