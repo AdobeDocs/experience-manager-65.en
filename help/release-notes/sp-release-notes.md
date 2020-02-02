@@ -232,7 +232,7 @@ Some key highlights of this service pack release are:
 * Quick links to manage groups (Open/Edit/Publish/Delete Groups) are not visible to the Community administrators (Group admin/Site admin) (NPR-31627).
 * A submitted blog is not displayed unless the page is manually refreshed/reload (NPR-31599).
 * The JCR query used by the "Mentions" feature is case sensitive and takes too long to return results (NPR-31475).
-* AEM 6.5 Uber jar file throws exception, `cq-social-translation` bundle missing from AEM 6.5 Uber jar file (NPR-31186).
+* AEM 6.5 UberJar file throws exception, `cq-social-translation` bundle missing from AEM 6.5 UberJar file (NPR-31186).
 * Jackson Databind libraries updated to version 2.9.9.3 to address new vulnerabilities (NPR-30967).
 * Activities and Notifications titles are inconsistent (NPR-30941).
 * Pagination is not working properly in Communities Blogs (NPR-30914).
@@ -246,7 +246,7 @@ Some key highlights of this service pack release are:
 
 >[!NOTE]
 >
->AEM Service Pack does not include fixes for AEM Forms. They are delivered using a separate Forms add-on package. In addition, a cumulative installer is released that includes fixes for AEM Forms on JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
+>AEM Service Pack does not include fixes for AEM Forms. They are delivered using a separate Forms add-on package. In addition, a cumulative installer is released that includes fixes for AEM Forms on JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
 
 ##### Forms add-on package {#forms-add-on-package-6530}
 
@@ -274,7 +274,7 @@ Some key highlights of this service pack release are:
 
 * Generating HTML5 preview of an XDP form displays a flicker while adding instances of a subform (NPR-30909).
 
-##### Forms JEE installer {#forms-jee-installer-6530}
+##### Forms on JEE installer {#forms-jee-installer-6530}
 
 **Forms - Document Services**
 
@@ -312,8 +312,7 @@ Some key highlights of this service pack release are:
 
 Perform the following steps to install the Service Pack on an existing AEM 6.5 instance:
 
-1. Login to Package Share within AEM or directly from your browser and download the [AEM 6.5.3.0 package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0).
-   (search for "AEM-6.5.3.0" to find it)
+1. Login to Package Share from within AEM or directly from your browser and download the [AEM 6.5.3.0 package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0).
 
 1. Install the downloaded package using Package Manager.
 
@@ -327,7 +326,7 @@ Perform the following steps to install the Service Pack on an existing AEM 6.5 i
 
 There are two ways to automatically install AEM 6.5.3.0 into a running instance:
 
-A. Place the package into ..*/crx-quickstart/install* folder while the server is running. The package gets installed automatically.
+A. Place the package into ..*/crx-quickstart/install* folder while the server is available online. The package gets installed automatically.
 
 B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) - make sure that you use cmd=install&recursive=true - so the nested packages  are  installed.
 
@@ -337,14 +336,14 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 **Validate installation**
 
-1. The Product Information page (*/system/console/  productinfo *) should now show the updated version string `Adobe Experience Manager, Version 6.5.3.0` under Installed Products.
+1. The Product Information page (/system/console/ productinfo) displays the updated version string `Adobe Experience Manager, Version 6.5.3.0` under Installed Products.
 
-1. All  OSGi  bundles are either ACTIVE or FRAGMENT in the OSGi Console (Use Web Console: /system/console/bundles).
+1. All  OSGi  bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: /system/console/bundles).
 1. The OSGI bundle org.apache.jackrabbit.oak-core is on version 1.10.6 or higher (Use Web Console: /system/console/bundles).
 
 In order to see what platforms are certified to run with this release, please refer to the [Technical Requirements](/help/sites-deploying/technical-requirements.md).
 
-### Install AEM forms add-on package {#install-aem-forms-add-on-package}
+### Install AEM Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
@@ -352,29 +351,29 @@ In order to see what platforms are certified to run with this release, please re
 
 >[!NOTE]
 >
->AEM 6.5.3.0 includes a new version of [AEM Forms compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/AEM-FORMS-6.5.3.0-COMPAT). If you are using an older version of AEM Forms Compatibility Package and updating to AEM 6.5.3.0, install the latest version of AEM Forms compatibility package post installation of Forms Add-On Package.
+>AEM 6.5.3.0 includes a new version of [AEM Forms Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/AEM-FORMS-6.5.3.0-COMPAT). If you are using an older version of AEM Forms Compatibility package and updating to AEM 6.5.3.0, install the latest version of AEM Forms Compatibility package post installation of Forms add-On Package.
 
 1. Ensure that you have installed the AEM Service Pack.
-1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
-1. Install the forms add-on package as described in [Installing AEM forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
+1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
+1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
-### Install AEM Forms JEE installer {#install-aem-forms-jee-installer}
+### Install AEM Forms on JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->Skip if you are not using AEM Forms on JEE. Fixes in AEM Forms JEE are delivered through a separate installer.
+>Skip if you are not using AEM Forms on JEE. Fixes in AEM Forms on JEE are delivered through a separate installer.
 
-For information about installing the cumulative installer for AEM Forms JEE and post-deployment configuration, see the [release notes for patch 0007](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0007.html).
+For information about installing the cumulative installer for AEM Forms on JEE and post-deployment configuration, see the [release notes for patch 0007](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0007.html).
 
 #### Workbench installer
 
 As it is a full installer, the file size is more as compared to the patch version. Uninstall the previous Workbench version before installing the new one.
 
-## Uber Jar {#uber-jar}
+## UberJar {#uber-jar}
 
-The Uber Jar for AEM 6.5.3.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.3/).
+The UberJar for AEM 6.5.3.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.3/).
 
-To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
+To use UberJar in a Maven project, refer to the article, [How to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
 ```shell
 <dependency>
@@ -386,23 +385,23 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 </dependency>
 ```
 
-## Removed/Deprecated Features {#removed-deprecated-features}
+## Deprecated Features {#removed-deprecated-features}
 
-This section lists features and capabilities that have been marked as deprecated with AEM 6.5.3.0. Generally, features that are planned to be removed in a future release are set to deprecated first, with an alternative provided.
+This section lists features and capabilities that have been marked as deprecated with AEM 6.5.3.0. Features that are planned to be removed in a future release are set to deprecated first, with an alternate option to use.
 
-Customers are advised to review if they make use of the feature/capability in their current deployment, and make plans to change their implementation to use the alternative provided.
+Customers are advised to review if they make use of the feature or capability in their current deployment, and make plans to change their implementation to use the alternate option..
 
 | Area |Feature |Replacement |
 |---|---|---|
-| Integrations |The “AEM Cloud Services Opt-In” screen has been deprecated. With the AEM/Target integration updated in AEM 6.5 to support the Target Standard API, which uses authentication via Adobe IMS and I/O, and the growing role of Adobe Launch for instrumenting AEM pages for analytics and personalization, the Opt-In wizard has become functionally irrelevant.  |Configure system connections, Adobe IMS authentication, and Adobe I/O integrations via respective AEM cloud services  |
+| Integrations |The **[!UICONTROL AEM Cloud Services Opt-In]** screen has been deprecated. With the AEM and Target integration updated in AEM 6.5 to support the Target Standard API, which uses authentication via Adobe IMS and I/O, and the growing role of Adobe Launch for instrumenting AEM pages for analytics and personalization, the Opt-In wizard has become functionally irrelevant.  |Configure system connections, Adobe IMS authentication, and Adobe I/O integrations via respective AEM cloud services  |
 
 ## Known Issues {#known-issues}
 
 * If **Connected assets configuration** wizard returns a 404 error message after installing AEM 6.5.3.0, manually reinstall the **cq-remotedam-client-ui-content** and **cq-remotedam-client-ui-components** packages using the Package Manager.
-* The following errors and warning messages may display during installation of AEM 6.5.x.x and can be safely ignored:
+* The following errors and warning messages may display during installation of AEM 6.5.x.x:
   * “When the Target integration is configured in AEM using the Target Standard API (IMS authentication), then exporting Experience Fragments to Target results in wrong offer types getting created. Instead of type “Experience Fragment”/source “Adobe Experience Manager,” Target creates several offers with type “HTML”/source “Adobe Target Classic.”
   * com.adobe.granite.maintenance.impl.TaskScheduler: No maintenance windows found at granite/operations/maintenance.
-  * Adaptive Form server-side validation fails when aggregate functions like SUM, MAX, MIN, etc. are used. CQ-4274424
+  * Adaptive Form server-side validation fails when aggregate functions such as  SUM, MAX, and MIN are used. CQ-4274424
   * com.adobe.granite.maintenance.impl.TaskScheduler - No maintenance windows found at granite/operations/maintenance.
   * Hotspot in a Dynamic Media Interactive image is not visible while previewing the asset through Shoppable Banner viewer.
 
@@ -418,17 +417,18 @@ List of Content Packages included in AEM 6.5.3.0
 
 [Get File](assets/sp_6530_packages.txt)
 
-## Helpful resources {#helpful-resources}
+## Helpful Resources {#helpful-resources}
 
 * [AEM 6.5 release notes](/help/release-notes/release-notes.md)
 * [AEM product page](https://www.adobe.com/solutions/web-experience-management.html)
 * [AEM developer support](https://docs.adobe.com/content/ddc/en.html)
 * [AEM 6.5 documentation](https://helpx.adobe.com/support/experience-manager/6-5.html)
-* Subscribe to [Adobe Priority Product Updates](https://marketing.adobe.com/resources/help/en_US/whatsnew/)
+* Subscribe to [Adobe Priority Product Updates](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
 
 ## Restricted Sites {#restricted-sites}
 
 These sites are only available to customers. If you are a customer and need access, contact your Adobe account manager.
 
 * [Product download at licensing.adobe.com](https://licensing.adobe.com/)
-* [Contact customer support](https://daycare.day.com/)
+* [Contact customer support](https://daycare.day.com/public/contact.html)
+For more information on accessing the support portal, see [Accessing the support portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
