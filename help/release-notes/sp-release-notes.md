@@ -385,7 +385,7 @@ To use UberJar in a Maven project, refer to the article, [How to use UberJar](/h
 </dependency>
 ```
 
-## Deprecated features {#removed-deprecated-features}
+## Deprecated Features {#removed-deprecated-features}
 
 This section lists features and capabilities that have been marked as deprecated with AEM 6.5.3.0. Features that are planned to be removed in a future release are set to deprecated first, with an alternate option to use.
 
