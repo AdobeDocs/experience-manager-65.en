@@ -22,7 +22,7 @@ docset: aem65
 
 ## What's included in Adobe Experience Manager 6.5.3.0 {#what-s-included-in-aem}
 
-Adobe Experience Manager (AEM) 6.5.3.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of 6.5 release in **April 2019**. It can be installed on top of Adobe Experiece Manager (AEM) 6.5.
+Adobe Experience Manager 6.5.3.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of 6.5 release in **April 2019**. It can be installed on top of Adobe Experiece Manager (AEM) 6.5.
 
 Some key highlights of this service pack release are:
 
