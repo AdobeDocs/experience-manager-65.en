@@ -59,4 +59,4 @@ A few use cases for exporting metadata in bulk are:
 
 >[!MORELIKETHIS]
 >
-> [Metadata import and export in AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Metadata import and export in AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
