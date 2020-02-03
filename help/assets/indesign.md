@@ -232,4 +232,4 @@ You can change the default administrator credentials (user name and password) fo
 
 >[!MORELIKETHIS]
 >
-> [About Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
+>* [About Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
