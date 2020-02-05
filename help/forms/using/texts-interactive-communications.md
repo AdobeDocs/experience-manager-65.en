@@ -55,7 +55,7 @@ The text document fragment in Interactive Communication supports the following t
 
     * [Repeat](/help/forms/using/cm-inline-condition.md)
     * [Special characters](#special)
-    * [Searching and replacing text](#search)
+    * [Searching and replacing text](#searching)
     * [Keyboard shortcuts](/help/forms/using/keyboard-shortcuts.md)
 
    >[!NOTE]
@@ -250,7 +250,7 @@ If required, insert special characters in the document fragment. For example, yo
 
 Text editor has built in support for 210 special characters. The admin can [add support for more/custom special characters by customization](/help/forms/using/custom-special-characters.md).
 
-## Searching and replacing text {#search}
+## Searching and replacing text {#searching}
 
 When working with text document fragments containing a large amount of text, you need to search for a specific text string. You may also need to replace a specific string of text with an alternative string.
 
