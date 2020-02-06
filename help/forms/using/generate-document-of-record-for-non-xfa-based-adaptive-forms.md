@@ -275,8 +275,6 @@ Perform the following steps to configure a document of record for adaptive forms
 
    **Generate Document of Record** Select this option to use an XDP file as a base template for defining the styling and appearance for the document of record. On selecting this option, all XDP files available in AEM Forms repository are displayed. Select the appropriate file.
 
-   **Generate Document of Record** Discuss this with Vinay and redraft...
-
    **[!UICONTROL Select this option to use an XDP file as a base template for defining the styling and appearance for the document of record. On selecting this option, all XDP files available in AEM Forms repository are displayed. Select the appropriate file.]**
 
    **Select Forms Template as base template to generate Document of Record** Select this option to use an XDP file as a base template for defining the styling and appearance for the document of record. On selecting this option, all XDP files available in AEM Forms repository are displayed. Select the appropriate file.

@@ -243,3 +243,14 @@ You can customize a forms portal page to provide a distinct appearance to the pa
 AEM Forms UI allows you to add custom metadata to forms. Custom metadata is useful in providing a listing and searching forms experience to the end users. For more information about Custom metadata, see [Customizing templates for Forms Portal Components](../../forms/using/customizing-templates-forms-portal-components.md).
 
 Out of the box, forms portal provides rendering actions. You can customize forms portal to add more actions. For detailed information, see [Adding custom action on form lister items.](../../forms/using/add-custom-action-form-lister.md)
+
+## Related Articles
+
+* [Enable forms portal components](/help/forms/using/enabling-forms-portal-components.md)
+* [Create forms portal page](/help/forms/using/creating-form-portal-page.md)
+* [List forms on a web page using APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
+* [Use Drafts and submissions component](/help/forms/using/draft-submission-component.md)
+* [Customize storage of drafts and submitted forms](/help/forms/using/draft-submission-component.md)
+* [Sample for integrating drafts & submissions component with database](/help/forms/using/integrate-draft-submission-database.md)
+* [Customizing templates for forms portal components](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Introduction to publishing forms on a portal](/help/forms/using/introduction-publishing-forms.md)
