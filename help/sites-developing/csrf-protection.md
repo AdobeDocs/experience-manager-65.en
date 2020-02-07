@@ -23,11 +23,11 @@ The framework makes use of tokens to guarantee that the client request is legiti
 
 ## Requirements {#requirements}
 
-**Dependencies**
+### Dependencies {#dependencies}
 
 Any component that relies on the `granite.jquery` dependency will benefit from the CSRF Protection Framework automatically. If this is not the case for any of your components, you must declare a dependency to `granite.csrf.standalone` before you can use the framework.
 
-**Replicating the Crypto Key**
+### Replicating the Crypto Key {#replicating-crypto-keys}
 
 In order to make use of the tokens, you need to replicate the `/etc/keys/hmac` binary to all of the instances in your deployment. A convenient way to copy the HMAC key to all the instances is to create a package containing the key and install it via the Package Manager on all the instances.
 
@@ -39,5 +39,4 @@ In order to make use of the tokens, you need to replicate the `/etc/keys/hmac` b
 >
 >If you use the manifest cache with your web application, make sure you add "**&ast;**" to the manifest in order to make sure the token does not take the CSRF token generation call offline. For more information, consult this [link](https://www.w3.org/TR/offline-webapps/).
 >
->For more information on CSRF attacks and ways to mitigate them, see the [Cross-Site Request Forgery OWASP page](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29).
-
+>For more information on CSRF attacks and ways to mitigate them, see the [Cross-Site Request Forgery OWASP page](https://owasp.org/www-community/attacks/csrf).
