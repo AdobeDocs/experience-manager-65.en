@@ -37,7 +37,7 @@ docset: aem65
 
 * New Workflow Model editor introduced in 6.4 has been improved to include more operations like Copy and Publish, Variable support in Workflow steps and enhanced OR and AND splits.
 
-### Search {#search}
+### Search {#searching}
 
 * Search in Oak now supports dynamic facets. For example the filter rail in assets search show the estimated amount of results.
 * QueryBuilder was extended to provide results with dynamic facets

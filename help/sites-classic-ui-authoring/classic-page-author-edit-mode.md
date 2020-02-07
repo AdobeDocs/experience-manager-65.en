@@ -547,7 +547,7 @@ Once configured the content will appear exactly as on the source page. The fact 
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
-### Search {#search}
+### Search {#searching}
 
 The Search component adds search capability to your page.
 

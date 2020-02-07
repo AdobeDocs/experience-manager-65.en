@@ -52,5 +52,5 @@ Administrators can check in assets that are checked out by other users.
 
 >[!MORELIKETHIS]
 >
-> [Understand check in and check out in AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
-> [Video tutorial to understand check in and check out in AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+>* [Understand check in and check out in AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
+>* [Video tutorial to understand check in and check out in AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)

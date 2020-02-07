@@ -168,7 +168,7 @@ public class ComponentWhichHasAEMInterfaceInjected implements TitleTrimmer {
 }
 ```
 
-To unit test either of these methods, a developer would use a mocking framework such as [JMockit](https://jmockit.org/), [Mockito](https://mockito.org/), [JMock](https://www.jmock.org/), or [Easymock](https://easymock.org/) to create a mock object for the AEM API referenced. These samples use JMockit, but for this particular use case, the difference between these frameworks is largely syntatical.
+To unit test either of these methods, a developer would use a mocking framework such as [JMockit](http://jmockit.github.io), [Mockito](https://mockito.org/), [JMock](https://www.jmock.org/), or [Easymock](https://easymock.org/) to create a mock object for the AEM API referenced. These samples use JMockit, but for this particular use case, the difference between these frameworks is largely syntatical.
 
 ```java
 @RunWith(JMockit.class)
@@ -573,7 +573,15 @@ To achieve deletion of the classes compiled from the JSPs, we set up the Maven C
 >Depending on whether you actually make use of JSP code in `/libs` (i.e. include JSPs from there), you will need to refine which JSPs are copied for compilation.
 >
 >E.g. if you include `/libs/foundation/global.jsp`, you can use the following configuration for the `maven-resources-plugin` instead of the configuration above which completely skips over `/libs`.
->`<pre> &lt;resource&gt; &lt;directory&gt;src/main/content/jcr_root&lt;/directory&gt; &lt;includes&gt; &lt;include&gt;apps/**&lt;/include&gt; &lt;include&gt;libs/foundation/global.jsp&lt;/include&gt; &lt;/includes&gt; &lt;/resource&gt; </pre>`
+>```
+> <resource>  
+>      <directory>src/main/content/jcr_root</directory>  
+>      <includes>  
+>          <include>apps/**</include>  
+>          <include>libs/foundation/global.jsp</include>
+>    </includes>  
+>  </resource>  
+>  ```
 
 ### How-To Work with SCM Systems {#how-to-work-with-scm-systems}
 

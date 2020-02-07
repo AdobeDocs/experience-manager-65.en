@@ -628,7 +628,7 @@ Once configured the content will appear exactly as on the source page. The fact 
 
 ![chlimage_1-96](assets/chlimage_1-96.png)
 
-### Search {#search}
+### Search {#searching}
 
 >[!CAUTION]
 >
