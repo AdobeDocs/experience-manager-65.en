@@ -174,7 +174,7 @@ For more conceptual information, see the [Description of reusable components](/h
 
 ### SDK package {#sdk-package}
 
-The package contains the source code of AEM Forms workspace. The package is available at `[*LC root*]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
+The package contains the source code of AEM Forms workspace. The package is available at `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
 
 It is primarily meant for customizations, as it provides the capability to generate:
 
@@ -229,7 +229,7 @@ It is primarily meant for customizations, as it provides the capability to gener
 
 ### CRX Package {#crx-package}
 
-CRX package can be deployed on the CRX™ repository. It is available at `[*LC root*]\crx-repository\install\adobe-lc-workspace-pkg.zip`.
+CRX package can be deployed on the CRX™ repository. It is available at `[LC root]\crx-repository\install\adobe-lc-workspace-pkg.zip`.
 
 This package can be built using the three profiles described below.
 
