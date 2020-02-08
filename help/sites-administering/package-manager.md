@@ -892,7 +892,7 @@ You can share packages outside your organization, but not publicly. These packag
 
 ## Software Distribution (Beta) {#software-distribution-beta}
 
-[Software Distribution](https://downloads.experiencecloud.adobe.com) is the new user interface designed to simplify the search and download of AEM Packages. It is currently in beta status and only accessible to customers of AEM as a Cloud Service and Adobe Managed Services, as well as Adobe employees.
+[Software Distribution](https://downloads.experiencecloud.adobe.com) is the new user interface designed to simplify the search and download of AEM Packages. It is currently in beta status and only accessible to Adobe Managed Services and AEM as a Cloud Service customers, as well as Adobe employees.
 
 >[!NOTE]
 >
