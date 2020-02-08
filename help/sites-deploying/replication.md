@@ -555,7 +555,32 @@ To monitor a replication agent:
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
-### Additional Resources {#additional-resources}
+## Batch Replication {#batch-replication}
+
+The batch replication does not replicate individual pages or assets, but waits for the fist threshold of the two, based on time or size, to be triggered.
+
+It then packs all replication items into a package, which is then replicated as one single file to the publisher.
+
+The publisher will unpack all the items, save them and report back to the author.
+
+### Configuring Batch Replication {#configuring-batch-replication}
+
+1. Go to `http://serveraddress:serverport/siteadmin`
+1. Press the **[!UICONTROL Tools]** icon in the uppper side of the screen
+1. From the left hand side navigation rail, go to **[!UICONTROL Replication - Agents on Author]** and double click **[!UICONTROL Default Agent]**.
+   * You can also reach the default publish replication agent by going directly to `http://serveraddress:serverport/etc/replication/agents.author/publish.html`
+1. Press the **[!UICONTROL Edit]** button above the replication queue.
+1. In the following window, go to the **[!UICONTROL Batch]** tab:
+   ![batchreplication](assets/batchreplication.png)
+1. Configure the agent.
+
+### Parameters {#parameters}
+
+* `[!UICONTROL Enable Batch Mode]` - enables or disables batch replication mode
+* `[!UICONTROL Max Wait Time]` - Maximum wait time until a batch request is started, in seconds. The default is 2 seconds.
+* `[!UICONTROL Trigger Size]` - Starts batch replication when this size limit 
+
+## Additional Resources {#additional-resources}
 
 For details about troubleshooting, you can read the [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md) page.
 

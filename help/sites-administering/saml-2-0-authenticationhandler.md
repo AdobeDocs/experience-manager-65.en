@@ -89,13 +89,12 @@ The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to 
 
 SAML assertions are signed and may optionally be encrypted. In order for this to work you have to provide at least the public certificate of the IdP in the repository. In order to do this you need to:
 
-1. Go to: [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html)
-1. Click on any of the users in the list.
-1. Go under **Account Settings**, and press the **Create TrustStore** link.
-1. Enter the password for the TrustStore and press **Save**.
-1. Click on **Manage TrustStore**.
+1. Go to *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
+1. Press the **[!UICONTROL Create TrustStore link]**
+1. Enter the password for the TrustStore and press **[!UICONTROL Save]**.
+1. Click on **[!UICONTROL Manage TrustStore]**.
 1. Upload the IdP certificate.
-1. Take note of the certificate Alias. The alias is **admin#1436172864930** in the example below.
+1. Take note of the certificate Alias. The alias is **[!UICONTROL admin#1436172864930]** in the example below.
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
