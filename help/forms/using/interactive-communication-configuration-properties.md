@@ -15,11 +15,11 @@ docset: aem65
 
 # Interactive Communications configuration properties{#interactive-communications-configuration-properties}
 
-Interactive Communications includes properties that are configured automatically after installing the [AEM Forms add-on](../../forms/using/installing-configuring-aem-forms-osgi.md) package. Interactive Communication authors can edit these default configuration properties using the **Adobe Experience Manager Web Console Configuration **page.
+Interactive Communications includes properties that are configured automatically after installing the [AEM Forms add-on](../../forms/using/installing-configuring-aem-forms-osgi.md) package. Interactive Communication authors can edit these default configuration properties using the **Adobe Experience Manager Web Console Configuration** page.
 
 Open the **Adobe Experience Manager Web Console Configuration** page using the following URL:
 
-https://&lt;server&gt;:&lt;port&gt;/&lt;contextPath&gt;/system/console/configMgr
+`https://&lt;server&gt;:&lt;port&gt;/&lt;contextPath&gt;/system/console/configMgr`
 
 The configuration properties include:
 

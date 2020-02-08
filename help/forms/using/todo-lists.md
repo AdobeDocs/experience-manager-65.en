@@ -94,7 +94,7 @@ When you open and claim a task from a group or shared list, the task is moved fr
 1. On the To-do page, in the left pane, select a group or shared To-do list. All the tasks are displayed in the middle pane.
 1. Perform one of these steps:
 
-    * To claim a task, without opening it, from a group or shared To-do list, click **Claim **by hovering the pointer over the task. Alternatively, when task is open, the Claim button is available in the action bar below the task pane. Upon claiming, a task moves from the group or shared To-do list to your list.
+    * To claim a task, without opening it, from a group or shared To-do list, click  **Claim** by hovering the pointer over the task. Alternatively, when task is open, the Claim button is available in the action bar below the task pane. Upon claiming, a task moves from the group or shared To-do list to your list.
     * To claim and open a task from a group or shared To-do list, click **Claim and open**.
 
 ## Working with tasks {#working-with-tasks}
@@ -145,7 +145,7 @@ You can forward a task along with any notes or attachments to another user or sh
 
 You may be allowed to work on a task offline and later submit its form from Adobe® Reader® or Adobe® Acrobat® Professional or Adobe® Acrobat® Standard. When the form is submitted, your email client is started with the appropriate server email address. You can then email the completed form to the server.
 
-1. On any tab, click** Offline**.
+1. On any tab, click **Offline**.
 1. Specify a filename to save the form under and click **Save**. The form that is associated with the task is saved locally and the task remains in your To-do list until the form is submitted.
 
 ### Work with attachments {#work-with-attachments}
@@ -181,7 +181,7 @@ You may be allowed to add, update, delete, or save any attachments locally.
 
 ### Save your work without completing the task {#save-your-work-without-completing-the-task}
 
-1. On any tab, tap** Save**.
+1. On any tab, tap **Save**.
 
    The Save As Draft dialog appears. The default name of the draft is the task name from the task template.
 
@@ -349,7 +349,7 @@ If you are granted access to another user’s To-do list, you cannot view any ta
 
 **Access another queue**
 
-1. In the **Preferences **tab, open the **Queues** tab.
+1. In the **Preferences** tab, open the **Queues** tab.
 1. Click '+' for the 'User queues that I have access to'. Search for the name of the user in the pop-up dialog.
 1. Select the name of the user and click **Request**.
 

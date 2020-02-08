@@ -100,7 +100,7 @@ Execute the following steps to add mapping between variables:
 
 Select a variable of XML type to store an XML file. Query the XML variable to set the value for a string variable for the property available in the XML file. Use **Specify XPATH for the XML variable** field to define the property to store in the string variable.
 
-In this example, select a **formdata** XML variable to store the **cc-app.xml** file. Query the **formdata** variable to set the value for the **emailaddress** string variable to store the value for the **emailAddress** property available in the** cc-app.xml** file.
+In this example, select a **formdata** XML variable to store the **cc-app.xml** file. Query the **formdata** variable to set the value for the **emailaddress** string variable to store the value for the **emailAddress** property available in the **cc-app.xml** file.
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "Set value of a variable")
 
@@ -229,7 +229,7 @@ You can use an API to set variables and pass them to invoke workflow instances.
 
 [workflowSession.startWorkflow](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) uses model, wfData, and metaData as arguments. Use MetaDataMap to set value for the variable.
 
-In this API, the **variableName** variable is set to **value **using metaData.put(variableName, value);
+In this API, the **variableName** variable is set to **value** using metaData.put(variableName, value);
 
 ```java
 import com.adobe.granite.workflow.model.WorkflowModel;
