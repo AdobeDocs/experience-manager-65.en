@@ -63,7 +63,7 @@ To generate a document of record for adaptive forms, you need the following comp
 
 **Base template (recommended)** XFA template (XDP file) created in AEM Designer. Base template is used to specify styling and branding information for document of record template.
 
-See [Base template of a document of record](#base-template-of-a-document-of-recordr)
+See [Base template of a document of record](#base-template-of-a-document-of-record)
 
 >[!NOTE]
 >
