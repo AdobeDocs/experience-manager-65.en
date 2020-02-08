@@ -36,9 +36,9 @@ The following are the prerequisites for creating an Interactive Communication:
 1. Enter the following information. :
 
     * **[!UICONTROL Title]**: Enter the title of the Interactive Communication.
-    * **[!UICONTROL Name*]**: The name of the Interactive Communication is derived from the title you enter. Edit it, if necessary.
+    * **[!UICONTROL Name]**: The name of the Interactive Communication is derived from the title you enter. Edit it, if necessary.
     * **[!UICONTROL Description]**: Enter a description about the Interactive Communication.
-    * **[!UICONTROL Form Data Model*]**: Browse and select the form data model. For more information on Form Data Model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
+    * **[!UICONTROL Form Data Model]**: Browse and select the form data model. For more information on Form Data Model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
     * **[!UICONTROL Prefill Service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication.
     * **[!UICONTROL Post Process Type]**: You can select AEM or Forms workflow to be triggered when the Interactive Communication is submitted. Select the type of the workflow to be triggered.
@@ -53,10 +53,10 @@ The following are the prerequisites for creating an Interactive Communication:
 1. Enter the following:
 
     * **[!UICONTROL Print]**: Select this option to generate the print channel of the Interactive Communication.
-    * **[!UICONTROL Print Template*:]** Browse and select an XDP as the print template.
-    * **[!UICONTROL Web:]** Select this option to generate the web channel or the responsive output of Interactive Communication.
-    * **[!UICONTROL Interactive Communication Web Template*:]** Browse and select the web template.
-    * **[!UICONTROL Theme]** and **[!UICONTROL Select Theme*]**: Browse and select the theme to style the web channel of the Interactive Communication. For more information, see [Themes in AEM Forms](/help/forms/using/themes.md).
+    * **[!UICONTROL Print Template]**: Browse and select an XDP as the print template.
+    * **[!UICONTROL Web]**: Select this option to generate the web channel or the responsive output of Interactive Communication.
+    * **[!UICONTROL Interactive Communication Web Template]**: Browse and select the web template.
+    * **[!UICONTROL Theme]** and **[!UICONTROL Select Theme]**: Browse and select the theme to style the web channel of the Interactive Communication. For more information, see [Themes in AEM Forms](/help/forms/using/themes.md).
 
     * **[!UICONTROL Use Print As Master for Web Channel]**: Select this option to create the web channel in sync with the print channel. Using print channel as master for web channel ensures the content and data binding of the web channel is derived from the print channel and the changes made in the print channel are reflected in the web channel when you tap Synchronize. The authors are, however, allowed to break the inheritance for specific components in the web channel, as required. For more information, see [Synchronize Web channel with Print channel](../../forms/using/create-interactive-communication.md#synchronize).
       If you select the **[!UICONTROL Use Print As Master for Web Channel]** option, you can select any of the following modes to generate Web channel:
@@ -125,7 +125,7 @@ For more information on the Interactive Communication authoring interface, see [
  </tbody>
 </table>
 
-   You can also replace the binding between a target area and a document fragment by dropping the new fragment on the target area using the** Assets** tab. The blue color shading of the target area while dragging the fragment indicates that the document fragment can be dropped to the target area.
+   You can also replace the binding between a target area and a document fragment by dropping the new fragment on the target area using the **Assets** tab. The blue color shading of the target area while dragging the fragment indicates that the document fragment can be dropped to the target area.
 
    For more information on document fragments, see [Document Fragments](/help/forms/using/document-fragments.md).
 
@@ -203,7 +203,7 @@ For more information on the Interactive Communication authoring interface, see [
 
 ## Preview the Interactive Communication {#previewic}
 
-You can use the **Preview option **to evaluate appearance of the Interactive Communication. The web channel of Interactive Communication also provides an option to Emulate experience of an Interactive Communication for various devices. For example, iPhone, iPad, and Desktop. You can use both **Preview** and **Emulator** ![ruler](assets/ruler.png) options in conjunction with each other to preview the web outputs for devices of different screen sizes. The sample data in the preview is populated from the specified forms data model.
+You can use the **Preview option** to evaluate appearance of the Interactive Communication. The web channel of Interactive Communication also provides an option to Emulate experience of an Interactive Communication for various devices. For example, iPhone, iPad, and Desktop. You can use both **Preview** and **Emulator** ![ruler](assets/ruler.png) options in conjunction with each other to preview the web outputs for devices of different screen sizes. The sample data in the preview is populated from the specified forms data model.
 
 1. Select the (print or web) channel to preview and tap preview. The Interactive Communication appears.
 
@@ -340,7 +340,7 @@ You can add dynamic tables in Interactive Communication using layout fragments. 
 
         * **[!UICONTROL Name]**: JCR node name.
         * **[!UICONTROL Title]**: Enter a title that will be visible in the Interactive Communication editor.
-        * **[!UICONTROL Binding Type]**&#42;: Select one of the following binding types for the field.
+        * **[!UICONTROL Binding Type]**: Select one of the following binding types for the field.
 
             * **[!UICONTROL None]**
             * **[!UICONTROL Data model object]**: A form data model property's value is populated in the field. Alternatively, select the **Data Sources** tab and drag-and-drop the property to the field.
@@ -499,7 +499,7 @@ Perform the following steps to add a Panel component to the web channel:
 
     * From the **Component** browser panel, drag-drop the **Panel** component on the Interactive Communication.
 
-    * Tap the **Panel **in the **Content** browser panel and tap **Add Child Panel**. Selecting the **Add Child Panel **option displays the **Add Child Panel** dialog box. Enter the title and an optional description and name for the Panel component.
+    * Tap the **Panel** in the **Content** browser panel and tap **Add Child Panel**. Selecting the **Add Child Panel** option displays the **Add Child Panel** dialog box. Enter the title and an optional description and name for the Panel component.
 
 1. Tap the panel from the **Content** browser to perform additional actions on the Panel such as configure, edit rules, copy, delete, and insert component.
 
