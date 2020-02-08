@@ -57,7 +57,7 @@ List of panel layouts in adaptive forms
 
 Use this panel layout to create a responsive layout that adjusts to the screen size of your device without any need for specialized navigation.
 
-Using this layout, you can place multiple **[!UICONTROL Panel adaptive form]**components one after another inside the panel.
+Using this layout, you can place multiple **[!UICONTROL Panel adaptive form]** components one after another inside the panel.
 
 ![A form using responsive layout as seen on a small screen](assets/responsive_layout_seen_on_small_screen.png)
 
