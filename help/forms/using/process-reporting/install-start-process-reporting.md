@@ -51,8 +51,8 @@ Perform the following steps to change the publishing schedule:
 1. Stop the AEM Forms server instance.
 1.
 
-    * (For Windows) Open the `[*JBoss root*]/bin/run.conf.bat` file in an editor.
-    * (For Linux, AIX and Solaris) `[*JBoss root*]/bin/run.conf.sh` file in an editor.
+    * (For Windows) Open the `[JBoss root]/bin/run.conf.bat` file in an editor.
+    * (For Linux, AIX and Solaris) `[JBoss root]/bin/run.conf.sh` file in an editor.
 
 1. Add the JVM argument `-Dreporting.publisher.cron = <expression>.`
 
@@ -90,7 +90,7 @@ Perform the following steps to change the publishing schedule:
 
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. Click **Save **and then click **Activate Changes**.
+1. Click **Save** and then click **Activate Changes**.
 1. Restart the AEM Forms server instance.
 
 ![processdatapublisherservice](assets/processdatapublisherservice.png)
@@ -130,7 +130,7 @@ The ReportConfiguration service is used by Process Reporting for configuring the
 
 #### To configure the ReportingConfiguration service {#to-configure-the-reportingconfiguration-service}
 
-1. Log in to **Configuration Manager** with CRX administrator credentials. The default URL of Configuration Manager is `https://[*server*]:[*port*]/lc/system/console/configMgr`
+1. Log in to **Configuration Manager** with CRX administrator credentials. The default URL of Configuration Manager is `https://[server]:[port]/lc/system/console/configMgr`
 1. Open the **ReportingConfiguration** service.
 1. **Number of Records**
 
@@ -165,7 +165,7 @@ The ProcessDataPublisher service imports process data from the AEM Forms databas
 
    The default URL is `https://[server]:port]/adminui/`.
 
-1. Navigate to **Home** &gt; **Services **&gt; **Applications and Services** &gt;**Service Management** and open the **ProcessDataPublisher** service.
+1. Navigate to **Home** &gt; **Services** &gt; **Applications and Services** &gt;**Service Management** and open the **ProcessDataPublisher** service.
 
 ![processdatapublisherservice-1](assets/processdatapublisherservice-1.png)
 
