@@ -450,7 +450,7 @@ When you want to send the same letter in different languages to your customers, 
 
 1. Archive the .properties file (or files for multiple locales) into a single .zip file.
 
-1. In the Data Dictionaries page, select **More** &gt; **Upload Localization Data **and select the zip file with localized properties files.
+1. In the Data Dictionaries page, select **More** &gt; **Upload Localization Data** and select the zip file with localized properties files.
 1. To view the localization changes, change your browser locale.
 
 ## Data Dictionary validations {#ddvalidations}

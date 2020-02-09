@@ -154,7 +154,7 @@ public class RemoteFuntionImpl implements RemoteFunction {
 Below are sample archives to use:
 
 * **GoodFunctions.jar.zip** is the jar file with bundle containing a sample remote function definition. Download the GoodFunctions.jar.zip file and unzip it to get the jar file.
-* **GoodFunctions.zip **is the package of source code for defining a custom remote function and creating a bundle for it.
+* **GoodFunctions.zip** is the package of source code for defining a custom remote function and creating a bundle for it.
 
 GoodFunctions.jar.zip
 

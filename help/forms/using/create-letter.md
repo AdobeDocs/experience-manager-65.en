@@ -314,7 +314,7 @@ When after creating a correspondence, you tap Open, Correspondence Management di
     * **Optional**: You can specify if the value for field or variable is optional or not. The optional field option is available for fields and variables with linkage type User or unprotected Data Dictionary Elements.
 
     * **Field / Variable Validation**: To provide enhanced validation of the value of a field or variable, you can assign a validator to the field or variable. This option is available only for fields and variables with linkage type User or unprotected Data Dictionary Elements.
-    * **Caption **and **Tooltip**: Caption is the label of the field that appears before the field in the CCR user interface. This option is available for fields and variables with linkage type User or unprotected Data Dictionary Elements.
+    * **Caption** and **Tooltip**: Caption is the label of the field that appears before the field in the CCR user interface. This option is available for fields and variables with linkage type User or unprotected Data Dictionary Elements.
 
    Following are the types of validation you can use for the fields:
 

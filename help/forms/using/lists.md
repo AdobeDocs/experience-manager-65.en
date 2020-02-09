@@ -37,8 +37,8 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
 ### Create text {#create-text}
 
-1. Select **Forms **&gt; **Document Fragments**.
-1. Tap **Create** &gt; **Text. **Or select a text asset and tap **Edit**.
+1. Select **Forms** &gt; **Document Fragments**.
+1. Tap **Create** &gt; **Text** Or select a text asset and tap **Edit**.
 1. Specify the following information for the text:
 
     * **Title: (Optional)** Enter the title for the text asset. Titles need not be unique and can have special characters and non-english characters. Texts are referred by their titles (when available) such as in thumbnails and asset properties.
@@ -150,7 +150,7 @@ The Find and Replace feature allows you to search for (and replace) any string o
 1. Enter the text to search in the Find text box and press Find. The search text is highlighted in the text module.
 1. To search for the next instance of the text, press Find again.
 
-   If you continue to press the Find button, the search continues down the page. After the last instance of the text is found, the message **Reached end of module **indicates that no more search results were found.
+   If you continue to press the Find button, the search continues down the page. After the last instance of the text is found, the message **Reached end of module** indicates that no more search results were found.
 
    However, if no instance of the search text is found in the text module, the message displayed is: **Match Not Found**.
 
@@ -162,7 +162,7 @@ The Find and Replace feature allows you to search for (and replace) any string o
 
 **Whole word:** Search returns only whole words.
 
-**Note:**If you enter any special characters in the Find text box, the Whole Word option is disabled.
+**Note:** If you enter any special characters in the Find text box, the Whole Word option is disabled.
 
 **Reg ex:** Search using regular expressions. For example, the following regular expression searches for email addresses in a text module:
 
@@ -219,7 +219,7 @@ A list is a group of related content that can be used in a letter template as a 
 
 1. Select **Forms** &gt; **Document Fragments**.
 
-1. Select **Create **&gt; **List**.
+1. Select **Create** &gt; **List**.
 
 1. Specify the following information for the list:
 
@@ -389,7 +389,7 @@ For a detailed example of using static and dynamic tables in layout fragments, s
     * **Description (Optional)**: Description that appears in the list in the Manage Assets user interface.
     * **Tags (Optional)**: Optionally, select the tags to apply to the condition. You can also type in a new tag’s name and create it.
 
-1. Tap the **Table **tab and specify the following information for the layout:
+1. Tap the **Table** tab and specify the following information for the layout:
 
     * **Configuration for**: Select the table being configured.As a suffix to the table name in the dropdown is (Static) if the table is a static one or (Dynamic) if the table is a dynamic table. Static tables contain a fixed number of rows. Static tables can contain target areas and fields. These target area and fields cannot be bound to repeating DDEs. The data bound to table cells determines the number of rows for dynamic tables.
 
