@@ -143,9 +143,7 @@ This section contains details and instructions on the post-deployment configurat
 
 ### Email server configuration {#email-server-configuration}
 
-1. Review setup documentation:
-
-   [https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/notification.html](https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/notification.html)
+1. Review setup documentation [Configuring Email Notification](/help/sites-administering/notification.md)
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/system/console/configMgr*
 1. Locate and click on the **Day CQ Mail Service **service to configure.
@@ -169,7 +167,7 @@ This section contains details on configuring SSL on the AEM instance in order to
 
 **References:**
 
-1. [https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-administering/ssl-by-default.html](https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-administering/ssl-by-default.html)
+1. [SSL By Default](/help/sites-administering/ssl-by-default.md)
 
 **Notes:**
 
@@ -188,7 +186,7 @@ This section contains details and instructions on the Adobe Sign Cloud Configura
 
 **References:**
 
-1. [https://helpx.adobe.com/ca/experience-manager/6-4/forms/using/adobe-sign-integration-adaptive-forms.html](https://helpx.adobe.com/ca/experience-manager/6-4/forms/using/adobe-sign-integration-adaptive-forms.html)
+1. [https://helpx.adobe.com/ca/experience-manager/6-4/forms/using/adobe-sign-integration-adaptive-forms.html](https://helpx.adobe.com/ca/experience-manager/6-4/forms/using/adobe-sign-integration-adaptive-forms.md)
 
 #### Cloud configuration {#cloud-configuration}
 

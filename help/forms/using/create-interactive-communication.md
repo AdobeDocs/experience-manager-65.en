@@ -380,12 +380,12 @@ Tap the root panel in the Web template and tap **+** to add a **Table** componen
 
 #### Add or edit text in table cells {#addedittexttable}
 
-1. Select the default text box in the table cell and tap ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit).
+1. Select the default text box in the table cell and tap ![](assets/edit.png) (Edit).
 1. Type the text in the table cell and tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save it.
 
 #### Create binding between table cells and data model object elements {#createbindingtablecells}
 
-1. Select the default text box in the table row and tap ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit).
+1. Select the default text box in the table row and tap ![](assets/edit.png) (Edit).
 1. Tap the Data Model objects drop-down list and select the property.
 1. Tap to save and create a binding between the table cell and the data model object property.
 
@@ -393,10 +393,10 @@ Tap the root panel in the Web template and tap **+** to add a **Table** componen
 
 #### Create a hyperlink for text in the table cell {#createhyperlinktable}
 
-1. Select the default text box in the table cell and tap ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit).
+1. Select the default text box in the table cell and tap ![](assets/edit.png) (Edit).
 1. Select the text in the table cell and tap the Hyperlink icon.
 1. Specify the URL in the **Path** field.
-1. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the hyperlink properties.
+1. Tap ![](assets/Done_Icon.png) to save the hyperlink properties.
 
 ![Create hyperlink](assets/create_hyperlink_table_new.png)
 
