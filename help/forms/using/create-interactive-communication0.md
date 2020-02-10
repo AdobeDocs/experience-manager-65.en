@@ -76,7 +76,7 @@ The following is the list of resources that have already been created in this tu
     1. Select **Pie** from the **Chart Type** drop-down list.
     1. Select the **calltype** property from the **calls** data model object type in the **X-axis** section. Tap ![](assets/done_icon.png).
     1. Select **Frequency** from the **Function** drop-down list.
-    1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tap ![](assets/chart-component/done_icon.png).
+    1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tap ![](assets/done_icon.png).
     1. Tap ![](assets/done_icon.png) to save the chart properties.
 
 1. Go to the **Assets** tab and apply the filter to display only the layout fragments in the left pane. Drag-and-drop the **table_lf** layout fragment to the **Itemised Calls** target area.
@@ -137,7 +137,7 @@ The following is the list of resources that have already been created in this tu
     1. Specify a name for the chart.
     1. Select **Pie** from the **Chart Type** drop-down list.
 
-    1. Select the **calltype** property from the **calls** data model object type in the **X-axis** section. Tap ![](assets/chart-component/done_icon.png).
+    1. Select the **calltype** property from the **calls** data model object type in the **X-axis** section. Tap ![](assets/done_icon.png).
 
     1. Select **Frequency** from the **Function** drop-down list.
 

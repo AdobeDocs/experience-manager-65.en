@@ -268,7 +268,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 1. On the edit workflow page, tap the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
 1. Tap the ![](assets/edit.png) (Edit) icon next to the variable name that you want to edit.
-1. Edit the variable information and tap ![](assets/chart-component/done_icon.png) to save the changes. You cannot edit the **[!UICONTROL Name]** and **[!UICONTROL Type]** fields for a variable.
+1. Edit the variable information and tap ![](assets/done_icon.png) to save the changes. You cannot edit the **[!UICONTROL Name]** and **[!UICONTROL Type]** fields for a variable.
 
 ## Delete a variable {#delete-a-variable}
 
