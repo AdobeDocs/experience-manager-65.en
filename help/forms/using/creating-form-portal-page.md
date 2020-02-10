@@ -53,7 +53,7 @@ To configure the List pane, tap the Search and Lister component and then tap ![s
 
 List pane in edit mode
 
-The **Edit **dialog includes several tabs that provide configuration options described in the table below. Tap **OK **to save the configuration, when done.
+The **Edit** dialog includes several tabs that provide configuration options described in the table below. Tap **OK** to save the configuration, when done.
 
 <table>
  <tbody>
@@ -186,7 +186,7 @@ The Full Text Predicate component implements full text search on form data, such
 To configure the Full Text Predicate component:
 
 1. Tap the component and then tap ![settings_icon](assets/settings_icon.png). The Edit dialog opens.
-1. Specify the title in the **Main Title **field.
+1. Specify the title in the **Main Title** field.
 1. Tap **Ok**
 
 #### Properties Predicate {#properties-predicate}

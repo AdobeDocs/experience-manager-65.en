@@ -86,7 +86,7 @@ Returns the version number of the Scripting library
 
           *formBridge.registerConfig("widgetConfig":{/&ast;configuration&ast;/})*
 
-        * ***pagingConfig:** Allows the user to override the default behavior of rendering only the first page. The configuration is overridden as follows:
+        * **pagingConfig:** Allows the user to override the default behavior of rendering only the first page. The configuration is overridden as follows:
 
           *window.formBridge.registerConfig("pagingConfig":{pagingDisabled: <true | false>, shrinkPageDisabled: <true | false> }).*
 
@@ -104,7 +104,7 @@ Returns the version number of the Scripting library
           }
         ```
 
-        * ***SubmitServiceProxyConfig:** Allow the users to register submission and logger proxy services.
+        * **SubmitServiceProxyConfig:** Allow the users to register submission and logger proxy services.
 
           ``` JavaScript
           window.formBridge.registerConfig("submitServiceProxyConfig",

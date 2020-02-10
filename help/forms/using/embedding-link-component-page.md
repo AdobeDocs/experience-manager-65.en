@@ -24,11 +24,11 @@ The Link component allows form portal authors to create a link to an adaptive fo
 
 Perform the following steps to add a Link component to the page:
 
-1. Drag the **Link **component on the page. Select the component and tap ![cmppr](assets/cmppr.png). The Edit Link Component dialog opens.
+1. Drag the **Link** component on the page. Select the component and tap ![cmppr](assets/cmppr.png). The Edit Link Component dialog opens.
 
    ![edit-link-component](assets/edit-link-component.png)
 
-1. In the **Display **tab, specify the following:
+1. In the **Display** tab, specify the following:
 
     * **Link Caption**: Link text or caption for the link.
     * **Link Tooltip**: Tool tip for the link.
@@ -43,7 +43,7 @@ Perform the following steps to add a Link component to the page:
     * **HTML Profile**: Profile for rendering the form as HTML.
     * **PDF Profile**: Profile for rendering the form as PDF document.
 
-1. Open the **Advanced **tab. You can specify the additional parameters in the key-value pair format. When the link is clicked, these additional parameters and passed along with the form.
+1. Open the **Advanced** tab. You can specify the additional parameters in the key-value pair format. When the link is clicked, these additional parameters and passed along with the form.
 
    Tap **Done** to save the configuration.
 
@@ -55,4 +55,3 @@ Perform the following steps to add a Link component to the page:
     1. Submit URL embedded in the form (in submit button) has the highest priority.
     1. Submit URL mentioned in Forms Manager has the medium priority.
     1. Submit URL mentioned in forms portal has the lowest priority.
-

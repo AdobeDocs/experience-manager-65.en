@@ -90,11 +90,11 @@ An existing HTML application can leverage the FormBridge API to interact with a 
 
    The following is a sample script you can add to set values in a form field.
 
-   For example, if you want to set the **EmployeeName **using the values in the Fields **First Name** and **Last Name**, call the **window.formBridge.setFieldValue** function.
+   For example, if you want to set the **EmployeeName** using the values in the Fields **First Name** and **Last Name**, call the **window.formBridge.setFieldValue** function.
 
-   Similarly, you can read the value by calling **window.formBridge.getFieldValue **API.
+   Similarly, you can read the value by calling **window.formBridge.getFieldValue** API.
 
-   ```
+   ```javascript
    $(function() {
                $(".input").blur(function() {
                    window.formBridge.setFieldValue(
