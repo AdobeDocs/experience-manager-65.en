@@ -74,14 +74,14 @@ The following is the list of resources that have already been created in this tu
 
     1. Specify a name for the chart.
     1. Select **Pie** from the **Chart Type** drop-down list.
-    1. Select the **calltype** property from the **calls** data model object type in the **X-axis** section. Tap ![](assets/Done_Icon.png).
+    1. Select the **calltype** property from the **calls** data model object type in the **X-axis** section. Tap ![](assets/done_icon.png).
     1. Select **Frequency** from the **Function** drop-down list.
-    1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tap ![](assets/chart-component/Done_Icon.png).
-    1. Tap ![](assets/Done_Icon.png) to save the chart properties.
+    1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tap ![](assets/chart-component/done_icon.png).
+    1. Tap ![](assets/done_icon.png) to save the chart properties.
 
 1. Go to the **Assets** tab and apply the filter to display only the layout fragments in the left pane. Drag-and-drop the **table_lf** layout fragment to the **Itemised Calls** target area.
 1. Select the Text Field in the **Date** column and tap ![](assets/configure_icon.png) (Configure).
-1. Select **Data Model Object** from the **Binding Type** drop-down list and select **calls** &gt; **calldate**. Tap ![](assets/Done_Icon.png) twice to save the properties.
+1. Select **Data Model Object** from the **Binding Type** drop-down list and select **calls** &gt; **calldate**. Tap ![](assets/done_icon.png) twice to save the properties.
 
    Similarly, create binding with **calltime**, **callnumber**, **callduration**, and **callcharges** for text fields in the **Time**, **Number**, **Duration**, and **Charges** columns respectively.
 
@@ -90,7 +90,7 @@ The following is the list of resources that have already been created in this tu
 
     1. Specify **PayNow** as the name of the image in the **Name** field.
     1. Tap **Upload**, select the image saved on the local file system, and tap **Open**.
-    1. Tap ![](assets/Done_Icon.png) to save the image properties.
+    1. Tap ![](assets/done_icon.png) to save the image properties.
 
 1. Repeat steps 13 and 14 to add **ValueAddedServices** image to the **ValueAddedServices** target area.
 
@@ -137,13 +137,13 @@ The following is the list of resources that have already been created in this tu
     1. Specify a name for the chart.
     1. Select **Pie** from the **Chart Type** drop-down list.
 
-    1. Select the **calltype** property from the **calls** data model object type in the **X-axis** section. Tap ![](assets/chart-component/Done_Icon.png).
+    1. Select the **calltype** property from the **calls** data model object type in the **X-axis** section. Tap ![](assets/chart-component/done_icon.png).
 
     1. Select **Frequency** from the **Function** drop-down list.
 
-    1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tap ![](assets/Done_Icon.png).
+    1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tap ![](assets/done_icon.png).
 
-    1. Tap ![](assets/Done_Icon.png) to save the chart properties.
+    1. Tap ![](assets/done_icon.png) to save the chart properties.
 
 1. Select the **Data Sources** tab from the left pane and drag-and-drop the **calls** data model object to the **Itemised Calls** target area. All properties in the **calls** data model object are displayed as table columns in the **Itemised Calls** target area in the right pane.
 
@@ -163,7 +163,7 @@ The following is the list of resources that have already been created in this tu
     1. Specify the payment URL in the **Path** field.
     1. Select **New Tab** from **Target** drop-down list.
 
-    1. Tap ![](assets/Done_Icon.png) to save the hyperlink properties.
+    1. Tap ![](assets/done_icon.png) to save the hyperlink properties.
 
 1. Select **Style** from the drop-down list next to the **Preview** option.
 
@@ -186,7 +186,7 @@ The following is the list of resources that have already been created in this tu
 
     1. Tap **Upload**, select the **PayNowWeb** image saved on the local file system, and tap **Open**.
 
-    1. Tap ![](assets/Done_Icon.png) to save the image properties.
+    1. Tap ![](assets/done_icon.png) to save the image properties.
 
 1. Based on the use case, insert a **Subscribe** button in the Interactive Communication that provides the user an option to subscribe to the value added services by clicking the button.
 

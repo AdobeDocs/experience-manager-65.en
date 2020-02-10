@@ -57,7 +57,7 @@ Execute the following steps to create a variable:
     * Form Data Model - Specify a Form Data Model path.
     * ArrayList - Specify a sub-type for the collection.
 
-1. Specify an optional description for the variable and tap ![](assets/Done_Icon.png) to save the changes. The variable displays in the list available in the left pane.
+1. Specify an optional description for the variable and tap ![](assets/done_icon.png) to save the changes. The variable displays in the list available in the left pane.
 
 When you create variables, consider the following practices:
 
@@ -94,7 +94,7 @@ Execute the following steps to add mapping between variables:
 1. Drag-and-drop the **Set Variable** step to the workflow editor, tap the step and select ![](assets/configure_icon.png) (Configure).
 1. On the Set Variable dialog, select **[!UICONTROL Mapping]** > **[!UICONTROL Add Mapping]**.
 1. In the **Map Variable** section, select the variable to store data, select the mapping mode, and specify a value to store in the variable. The mapping modes vary based on the type of variable.
-1. Map more variables to make a meaningful expression. Tap ![](assets/Done_Icon.png) to save the changes.
+1. Map more variables to make a meaningful expression. Tap ![](assets/done_icon.png) to save the changes.
 
 ### Example 1: Query an XML variable to set value for a string variable {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -268,7 +268,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 1. On the edit workflow page, tap the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
 1. Tap the ![](assets/edit.png) (Edit) icon next to the variable name that you want to edit.
-1. Edit the variable information and tap ![](assets/chart-component/Done_Icon.png) to save the changes. You cannot edit the **[!UICONTROL Name]** and **[!UICONTROL Type]** fields for a variable.
+1. Edit the variable information and tap ![](assets/chart-component/done_icon.png) to save the changes. You cannot edit the **[!UICONTROL Name]** and **[!UICONTROL Type]** fields for a variable.
 
 ## Delete a variable {#delete-a-variable}
 
@@ -278,7 +278,7 @@ Execute the following steps to delete a variable:
 
 1. On the edit workflow page, tap the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
 1. Tap the Delete icon next to the variable name that you want to delete.
-1. Tap ![](assets/Done_Icon.png) to confirm and delete the variable.
+1. Tap ![](assets/done_icon.png) to confirm and delete the variable.
 
 ## References {#references}
 
