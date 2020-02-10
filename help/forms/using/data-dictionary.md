@@ -34,7 +34,7 @@ Typically, business users do not require knowledge of metadata representations s
 
 ## Prerequisite {#prerequisite}
 
-Install the [Compatibility Package](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html) to view the **Data Dictionaries** option on the **Forms** page.
+Install the [Compatibility Package](compatibility-package.md) to view the **Data Dictionaries** option on the **Forms** page.
 
 ## Create a data dictionary {#createdatadictionary}
 
