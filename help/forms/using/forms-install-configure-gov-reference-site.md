@@ -186,7 +186,7 @@ This section contains details and instructions on the Adobe Sign Cloud Configura
 
 **References:**
 
-1. [https://helpx.adobe.com/ca/experience-manager/6-4/forms/using/adobe-sign-integration-adaptive-forms.html](https://helpx.adobe.com/ca/experience-manager/6-4/forms/using/adobe-sign-integration-adaptive-forms.md)
+1. [Integrate Adobe Sign with AEM Forms](adobe-sign-integration-adaptive-forms.md)
 
 #### Cloud configuration {#cloud-configuration}
 
@@ -213,8 +213,8 @@ This section contains details and instructions on the MS Dynamics Cloud Configur
 
 **References:**
 
-1. [https://helpx.adobe.com/ca/experience-manager/6-4/forms/using/ms-dynamics-odata-configuration.html](https://helpx.adobe.com/ca/experience-manager/6-4/forms/using/ms-dynamics-odata-configuration.html)
-1. [https://helpx.adobe.com/experience-manager/kt/forms/using/config-dynamics-for-aem-forms.html](https://helpx.adobe.com/experience-manager/kt/forms/using/config-dynamics-for-aem-forms.html)
+1. [Microsoft Dynamics OData configuration](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/ms-dynamics-odata-configuration.html)
+1. [Configuring Microsoft Dynamics for AEM Forms](https://helpx.adobe.com/experience-manager/kt/forms/using/config-dynamics-for-aem-forms.html)
 
 #### MS Dynamics OData cloud service {#ms-dynamics-odata-cloud-service}
 

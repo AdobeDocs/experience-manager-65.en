@@ -87,7 +87,7 @@ To enable sorting:
 
 1. Select the table and tap ![](assets/configure_icon.png) (Configure). You can also select the table using the **Content** browser in the sidekick of the Interactive Communication.
 1. Select **Enable Sorting**.
-1. Tap ![](assets/Done_Icon.png) to save the table properties. The sorting icons, up and down arrows, in columns headers represent that the sorting has been enabled.
+1. Tap ![](assets/done_icon.png) to save the table properties. The sorting icons, up and down arrows, in columns headers represent that the sorting has been enabled.
 
    ![Enable sorting](assets/enable_sorting_new.png)
 

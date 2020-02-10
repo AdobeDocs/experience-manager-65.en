@@ -381,7 +381,7 @@ Tap the root panel in the Web template and tap **+** to add a **Table** componen
 #### Add or edit text in table cells {#addedittexttable}
 
 1. Select the default text box in the table cell and tap ![](assets/edit.png) (Edit).
-1. Type the text in the table cell and tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save it.
+1. Type the text in the table cell and tap ![](assets/done_icon.png) to save it.
 
 #### Create binding between table cells and data model object elements {#createbindingtablecells}
 
@@ -393,10 +393,10 @@ Tap the root panel in the Web template and tap **+** to add a **Table** componen
 
 #### Create a hyperlink for text in the table cell {#createhyperlinktable}
 
-1. Select the default text box in the table cell and tap ![](assets/edit.png) (Edit).
+1. Select the default text box in the table cell and tap ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit).
 1. Select the text in the table cell and tap the Hyperlink icon.
 1. Specify the URL in the **Path** field.
-1. Tap ![](assets/Done_Icon.png) to save the hyperlink properties.
+1. Tap ![](assets/done_icon.png) to save the hyperlink properties.
 
 ![Create hyperlink](assets/create_hyperlink_table_new.png)
 
@@ -420,9 +420,9 @@ Sorting can be applied to tables columns containing:
 
 To enable sorting:
 
-1. Select the table and tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure). You can also select the table using the **Content** browser in the sidekick of the Interactive Communication.
+1. Select the table and tap ![](assets/configure_icon.png) (Configure). You can also select the table using the **Content** browser in the sidekick of the Interactive Communication.
 1. Select **Enable Sorting.**
-1. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the table properties. The sorting icons, up and down arrows, in columns headers represent that the sorting has been enabled.
+1. Tap ![](assets/done_icon.png) to save the table properties. The sorting icons, up and down arrows, in columns headers represent that the sorting has been enabled.
 
    ![Enable sorting](assets/enable_sorting_new-1.png)
 
