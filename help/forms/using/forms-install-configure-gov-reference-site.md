@@ -312,11 +312,11 @@ This section contains details and instructions on the Adobe Analytics Cloud Conf
 
 **References:**
 
-1. [https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/adobeanalytics.html](https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/adobeanalytics.html)
-1. [https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/adobeanalytics-connect.html](https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/adobeanalytics-connect.html)
-1. [https://helpx.adobe.com/experience-manager/6-4/help/sites-authoring/pa-using.html](https://helpx.adobe.com/experience-manager/6-4/help/sites-authoring/pa-using.html)
-1. [https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-analytics-forms-documents.html](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-analytics-forms-documents.html)
-1. [https://helpx.adobe.com/experience-manager/6-4/forms/using/view-understand-aem-forms-analytics-reports.html](https://helpx.adobe.com/experience-manager/6-4/forms/using/view-understand-aem-forms-analytics-reports.html)
+1. [https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics.html](https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics.html)
+1. [https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics-connect.html](https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics-connect.html)
+1. [https://helpx.adobe.com/experience-manager/6-5/help/sites-authoring/pa-using.html](https://helpx.adobe.com/experience-manager/6-5/help/sites-authoring/pa-using.html)
+1. [https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-analytics-forms-documents.html](https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-analytics-forms-documents.html)
+1. [https://helpx.adobe.com/experience-manager/6-5/forms/using/view-understand-aem-forms-analytics-reports.html](https://helpx.adobe.com/experience-manager/6-5/forms/using/view-understand-aem-forms-analytics-reports.html)
 
 ### Adobe Analytics cloud service configuration {#adobe-analytics-cloud-service-configuration}
 
@@ -432,7 +432,7 @@ The editable templates included in this package also come preconfigured with tem
 
 Templates included in this package also support the Style System:
 
-[https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-authoring/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-authoring/style-system.html)
+[https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html)
 
 #### Template logos {#template-logos}
 
@@ -446,7 +446,7 @@ When editing the Page and Form Templates, one may choose to update brand logos b
 
 See Editing Page Content for more information:
 
-[https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-authoring/editing-content.html#main-pars_title_32](https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-authoring/editing-content.html#main-pars_title_32)
+[https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/editing-content.html#main-pars_title_32](https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/editing-content.html#main-pars_title_32)
 
 ### Sites pages customization {#sites-pages-customization}
 
@@ -458,7 +458,7 @@ These site pages also make use of the AEM Grid package to control the layout of 
 
 Pages included in this package also support the Style System:
 
-[https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-authoring/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-authoring/style-system.html)
+[https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html)
 
 You can also refer to [Templates customization style system](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) for documentation on supported styles.
 
@@ -480,8 +480,8 @@ These forms can be customized to fit certain use cases. Note that certain fields
 
 Adaptive forms can also be styled using the Style Editor or Theme editor:
 
-* [https://helpx.adobe.com/experience-manager/6-4/forms/using/inline-style-adaptive-forms.html](https://helpx.adobe.com/experience-manager/6-4/forms/using/inline-style-adaptive-forms.html)
-* [https://helpx.adobe.com/ca/experience-manager/6-4/forms/using/themes.html](https://helpx.adobe.com/ca/experience-manager/6-4/forms/using/themes.html)
+* [https://helpx.adobe.com/experience-manager/6-5/forms/using/inline-style-adaptive-forms.html](https://helpx.adobe.com/experience-manager/6-5/forms/using/inline-style-adaptive-forms.html)
+* [https://helpx.adobe.com/ca/experience-manager/6-5/forms/using/themes.html](https://helpx.adobe.com/ca/experience-manager/6-5/forms/using/themes.html)
 
 ### Workflow customization {#workflow-customization}
 
