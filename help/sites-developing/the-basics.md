@@ -160,7 +160,7 @@ A few other points to note are:
     * `.java`: Java Servlet Compiler (server-side execution)
     * `.jst`: JavaScript templates (client-side execution)
 
-The list of script engines supported by the given instance of CQ are listed on the Felix Management Console ( `http://localhost:4502/system/console/config/slingscripting.txt`).
+The list of script engines supported by the given instance of AEM are listed on the Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`).
 
 Additionally, Apache Sling supports integration with other popular scripting engines (e.g., Groovy, JRuby, Freemarker), and provides a way of integrating new scripting engines.
 
@@ -315,7 +315,7 @@ This enables you to perform the following actions on any of the packages within 
 * see the current status
 * access more detailed information (e.g. symbolic name, version, location, etc) about the specific bundles
 
-See [the Web Console](/help/sites-deploying/configuring-web-console.md), [OSGI Configuration](/help/sites-deploying/configuring-osgi.md) and [OSGi Configuration Settings](/help/sites-deploying/osgi-configuration-settings.md) for more information.
+See [the Web Console](/help/sites-deploying/web-console.md), [OSGI Configuration](/help/sites-deploying/configuring-osgi.md) and [OSGi Configuration Settings](/help/sites-deploying/osgi-configuration-settings.md) for more information.
 
 ## Development Objects in the AEM Environment {#development-objects-in-the-aem-environment}
 
