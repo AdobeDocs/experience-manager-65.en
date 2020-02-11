@@ -315,7 +315,7 @@ This enables you to perform the following actions on any of the packages within 
 * see the current status
 * access more detailed information (e.g. symbolic name, version, location, etc) about the specific bundles
 
-See [the Web Console](/help/sites-deploying/configuring-web-console.md), [OSGI Configuration](/help/sites-deploying/configuring-osgi.md) and [OSGi Configuration Settings](/help/sites-deploying/osgi-configuration-settings.md) for more information.
+See [the Web Console](/help/sites-deploying/web-console.md), [OSGI Configuration](/help/sites-deploying/configuring-osgi.md) and [OSGi Configuration Settings](/help/sites-deploying/osgi-configuration-settings.md) for more information.
 
 ## Development Objects in the AEM Environment {#development-objects-in-the-aem-environment}
 
