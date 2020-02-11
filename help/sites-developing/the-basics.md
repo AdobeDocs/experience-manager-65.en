@@ -160,7 +160,7 @@ A few other points to note are:
     * `.java`: Java Servlet Compiler (server-side execution)
     * `.jst`: JavaScript templates (client-side execution)
 
-The list of script engines supported by the given instance of CQ are listed on the Felix Management Console ( `http://localhost:4502/system/console/config/slingscripting.txt`).
+The list of script engines supported by the given instance of AEM are listed on the Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`).
 
 Additionally, Apache Sling supports integration with other popular scripting engines (e.g., Groovy, JRuby, Freemarker), and provides a way of integrating new scripting engines.
 
