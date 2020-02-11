@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Search{#search}
+# Search{#searching}
 
 The author environment of AEM provides various mechanisms for searching for content, dependent on the resource type.
 

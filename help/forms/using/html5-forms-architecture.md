@@ -126,7 +126,7 @@ The scripting engine of HTML Forms is written in JavaScript to support the XFA s
 
 At render time, the FormCalc script is translated (and cached) into JavaScript on the server transparent to the user or designer.
 
-This scripting engine uses some of the feature of ECMAScript5 like Object.defineProperty. The engine / library is delivered as CQ Client Lib with the category name **xfaforms.profile**. It also provides **FormBridge API **to enable external portals or apps to interact with form. Using FormBridge, an external app can programmatically hide certain elements, get or set their values, or change their attributes.
+This scripting engine uses some of the feature of ECMAScript5 like Object.defineProperty. The engine / library is delivered as CQ Client Lib with the category name **xfaforms.profile**. It also provides **FormBridge API** to enable external portals or apps to interact with form. Using FormBridge, an external app can programmatically hide certain elements, get or set their values, or change their attributes.
 
 For more details, see the [Form Bridge](/help/forms/using/form-bridge-apis.md) article.
 

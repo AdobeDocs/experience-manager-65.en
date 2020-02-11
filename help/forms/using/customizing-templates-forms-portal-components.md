@@ -30,7 +30,7 @@ Perform the following steps to create a custom template for various Forms Portal
 
 ## Creating a&nbsp;custom template {#creating-a-nbsp-custom-template}
 
-1. Create a sling:Folder node under */apps *
+1. Create a sling:Folder node under /apps
 
    Add a "fpContentType" property. Specify appropriate values for the property depending on the component for which you are defining the custom template.
 
@@ -99,7 +99,8 @@ Various Forms Portal components provide exclusive sets of OOTB metadata that you
 * **pdfUrl**: URL to render the form as PDF
 * **assetType**: Type of the asset. Valid values include **Form**,**PDF Form**, **Print Form**, and **Adaptive Form**
 
-* **htmlStyle **& **pdfStyle**: Display style for HTML and PDF icons respectively used for rendering. Valid values are “**__FP_display_none**” or **blank
+* **htmlStyle **& **pdfStyle**: Display style for HTML and PDF icons respectively used for rendering. Valid values are “**__FP_display_none**” or blank.
+
   **Note:** Remember to use the __FP_display_none class in your custom style sheet
 
 * **downloadUrl**: URL to download an asset.

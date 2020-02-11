@@ -143,9 +143,7 @@ This section contains details and instructions on the post-deployment configurat
 
 ### Email server configuration {#email-server-configuration}
 
-1. Review setup documentation:
-
-   [https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/notification.html](https://helpx.adobe.com/experience-manager/6-4/help/sites-administering/notification.html)
+1. Review setup documentation [Configuring Email Notification](/help/sites-administering/notification.md)
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/system/console/configMgr*
 1. Locate and click on the **Day CQ Mail Service **service to configure.
@@ -169,7 +167,7 @@ This section contains details on configuring SSL on the AEM instance in order to
 
 **References:**
 
-1. [https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-administering/ssl-by-default.html](https://helpx.adobe.com/ca/experience-manager/6-4/help/sites-administering/ssl-by-default.html)
+1. [SSL By Default](/help/sites-administering/ssl-by-default.md)
 
 **Notes:**
 
@@ -188,7 +186,7 @@ This section contains details and instructions on the Adobe Sign Cloud Configura
 
 **References:**
 
-1. [https://helpx.adobe.com/ca/experience-manager/6-4/forms/using/adobe-sign-integration-adaptive-forms.html](https://helpx.adobe.com/ca/experience-manager/6-4/forms/using/adobe-sign-integration-adaptive-forms.html)
+1. [Integrate Adobe Sign with AEM Forms](adobe-sign-integration-adaptive-forms.md)
 
 #### Cloud configuration {#cloud-configuration}
 
@@ -215,8 +213,8 @@ This section contains details and instructions on the MS Dynamics Cloud Configur
 
 **References:**
 
-1. [https://helpx.adobe.com/ca/experience-manager/6-4/forms/using/ms-dynamics-odata-configuration.html](https://helpx.adobe.com/ca/experience-manager/6-4/forms/using/ms-dynamics-odata-configuration.html)
-1. [https://helpx.adobe.com/experience-manager/kt/forms/using/config-dynamics-for-aem-forms.html](https://helpx.adobe.com/experience-manager/kt/forms/using/config-dynamics-for-aem-forms.html)
+1. [Microsoft Dynamics OData configuration](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/ms-dynamics-odata-configuration.html)
+1. [Configuring Microsoft Dynamics for AEM Forms](https://helpx.adobe.com/experience-manager/kt/forms/using/config-dynamics-for-aem-forms.html)
 
 #### MS Dynamics OData cloud service {#ms-dynamics-odata-cloud-service}
 

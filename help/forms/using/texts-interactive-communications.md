@@ -34,7 +34,7 @@ The text document fragment in Interactive Communication supports the following t
     * **[!UICONTROL Name]**: The unique name for the text, within a folder. No two document fragments (text, condition, or list) in any state can exist with the same name in a folder. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.  
     
     * **[!UICONTROL Description]**: Type a description of the text.
-    * **[!UICONTROL Form Data Model]**: Optionally, select the Form Data Model radio button to create the text based on a form data model. When you select Form Data Model radio button, **[!UICONTROL Form Data Model*]** field appears. Browse and select a form data model. While creating text and condition for an Interactive Communication, ensure that you use the same data model that you intend to use in the Interactive Communication. For more information on Form Data Model, see [Data Integration](/help/forms/using/data-integration.md). 
+    * **[!UICONTROL Form Data Model]**: Optionally, select the Form Data Model radio button to create the text based on a form data model. When you select Form Data Model radio button, **[!UICONTROL Form Data Model]** field appears. Browse and select a form data model. While creating text and condition for an Interactive Communication, ensure that you use the same data model that you intend to use in the Interactive Communication. For more information on Form Data Model, see [Data Integration](/help/forms/using/data-integration.md). 
     
     * **[!UICONTROL Tags]**: Optionally, to create custom tag enter value in text field and press Enter. When you save this text, the newly added tags get created.
 
@@ -55,7 +55,7 @@ The text document fragment in Interactive Communication supports the following t
 
     * [Repeat](/help/forms/using/cm-inline-condition.md)
     * [Special characters](#special)
-    * [Searching and replacing text](#search)
+    * [Searching and replacing text](#searching)
     * [Keyboard shortcuts](/help/forms/using/keyboard-shortcuts.md)
 
    >[!NOTE]
@@ -118,10 +118,10 @@ While creating or editing a text document fragment, you can create and insert va
 
 1. Enter the following information and tap **[!UICONTROL Create]**:
 
-    * **[!UICONTROL Name*]** : Name of the variable.
+    * **[!UICONTROL Name]** : Name of the variable.
     * **[!UICONTROL Description]** : Optionally enter a description about the variable. 
-    * **[!UICONTROL Type*]** : Select a type of the variable: String, Number, Boolean, or Date. 
-    * **[!UICONTROL Allow Specific Values Only]** : For String and Number variables, you can ensure that the agent chooses from a specific set of values for a placeholder in the Agent UI. To specify the set of values, select this option and then specify comma-separated values that are allowed in the **[!UICONTROL Values*]** field.
+    * **[!UICONTROL Type]** : Select a type of the variable: String, Number, Boolean, or Date. 
+    * **[!UICONTROL Allow Specific Values Only]** : For String and Number variables, you can ensure that the agent chooses from a specific set of values for a placeholder in the Agent UI. To specify the set of values, select this option and then specify comma-separated values that are allowed in the **[!UICONTROL Values]** field.
 
 1. Tap **[!UICONTROL Create]**.
 
@@ -250,7 +250,7 @@ If required, insert special characters in the document fragment. For example, yo
 
 Text editor has built in support for 210 special characters. The admin can [add support for more/custom special characters by customization](/help/forms/using/custom-special-characters.md).
 
-## Searching and replacing text {#search}
+## Searching and replacing text {#searching}
 
 When working with text document fragments containing a large amount of text, you need to search for a specific text string. You may also need to replace a specific string of text with an alternative string.
 

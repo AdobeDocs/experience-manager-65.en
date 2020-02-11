@@ -158,7 +158,6 @@ Using the following steps, you can configure email submit action and demo submit
 
 1. Configure the email server. For details, see [Configuring Email Notification](/help/sites-administering/notification.md).
 
-   /content/help/en/experience-manager/6-4/sites-administering/notification.html 
 
 1. Tap **Form Container** in the Content browser and tap ![cmppr](assets/cmppr.png). The properties browser opens on the left. 
 1. Go to **Submission** &gt;  **Submit Action**. Select **Send Email**. Specify the following values and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).

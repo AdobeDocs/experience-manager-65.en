@@ -69,7 +69,7 @@ The following image displays the directory structure of the `android`folder in t
 
    **For Windows® users**: Update the `local.properties` file present in the `%HOMEPATH%\Projects\[your-project]\android` folder and point the `sdk.dir` variable to `SDK` location on your desktop.
 
-1. Click **[!UICONTROL Finish]**to build the project.
+1. Click **[!UICONTROL Finish]** to build the project.
 
    The project is available in the ADT Project Explorer.
 
