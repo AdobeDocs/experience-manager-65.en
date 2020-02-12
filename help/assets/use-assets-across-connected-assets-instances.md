@@ -112,7 +112,7 @@ The website authors use Content Finder to connect to the DAM instance. The autho
 
 Authors can use the assets available on both, the local DAM and the remote DAM instances, in a single web page. Use the Content Finder to switch between searching the local DAM or searching the remote DAM.
 
-Only those tags of remote assets are fetched that have an exact corresponding tag&mdash;with the same taxonomy hierarchy&mdash;available on the local Sites instance. Any other tags are discarded.
+Only those tags of remote assets are fetched that have an exact corresponding tag&mdash;with the same taxonomy hierarchy&mdash;available on the local Sites instance. Any other tags are discarded. Authors can search for remote assets using all the tags present on the remote AEM deployment, as AEM offers a full-text search.
 
 ### Walk-through of usage {#walk-through-of-usage}
 
