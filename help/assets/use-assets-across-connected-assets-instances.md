@@ -1,6 +1,6 @@
 ---
-title: Use Connected Assets to share DAM assets in AEM Sites
-description: Use assets available on a remote AEM Assets deployment when creating your web pages.
+title: Use Connected Assets to share DAM assets in Adobe Experience Manager Sites authoring workflow
+description: Use assets available on a remote Adobe Experience Manager Assets deployment when creating your web pages on another Experience Manager Site deployment.
 contentOwner: AG
 ---
 
@@ -112,7 +112,7 @@ The website authors use Content Finder to connect to the DAM instance. The autho
 
 Authors can use the assets available on both, the local DAM and the remote DAM instances, in a single web page. Use the Content Finder to switch between searching the local DAM or searching the remote DAM.
 
-The tags applied on the remote assets are also fetched from Connected Assets and merged with the local taxonomy. When the fetched assets are published, the tags are published on the local Sites instance as well.
+Only those tags of remote assets are fetched that have an exact corresponding tag&mdash;with the same taxonomy hierarchy&mdash;available on the local Sites instance. Any other tags are discarded. Authors can search for remote assets using all the tags present on the remote AEM deployment, as AEM offers a full-text search.
 
 ### Walk-through of usage {#walk-through-of-usage}
 
@@ -122,7 +122,7 @@ Use the above setup to try the authoring experience to understand how the functi
 1. On the Sites instance, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Provide `ksaner` as user name, select the option provided, and click **[!UICONTROL OK]**.
 1. Open a We.Retail website page at **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Edit the page. Alternatively, access `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` in a browser to edit a page.
 
-   Click **[!UICONTROL Toggle Side Panel]** on upper left.
+   Click **[!UICONTROL Toggle Side Panel]** on upper-left corner of the page.
 
 1. Open the Assets tab and click **[!UICONTROL Log in to Connected Assets]**.
 1. Provide the credentials -- `ksaner` as user name and `password` as password. This user has authoring permissions on both the AEM deployments.
@@ -148,7 +148,7 @@ Use the above setup to try the authoring experience to understand how the functi
 
 >[!CAUTION]
 >
->Once used in a web page, the fetched remote assets are searchable and usable by anyone who has permissions to access the local folder where the fetched assets are stored (`connectedassets` in the above walk-through). The assets are also searchable and visible in the local repository via Content Finder.
+>Once used in a web page, the fetched remote assets are searchable and usable by anyone who has permissions to access the local folder where the fetched assets are stored (`connectedassets` in the above walk-through). The assets are also searchable and visible in the local repository via [!UICONTROL Content Finder].
 
 The fetched assets can be used as any other local asset, except that the associated metadata cannot be edited.
 
@@ -164,6 +164,7 @@ The fetched assets can be used as any other local asset, except that the associa
 * All Sites Authors have read permissions on the fetched copies, even if they do not have access to the remote DAM deployment.
 * No API support to customize the integration.
 * The functionality supports seamless search and use of remote assets. To make many remote assets available on local deployment in one-go, consider migrating the assets. See [Assets migration guide](assets-migration-guide.md).
+* It is not possible to use remote assets directly on the [!UICONTROL Properties] page.
 
 **Set up and licensing**
 
@@ -174,7 +175,8 @@ The fetched assets can be used as any other local asset, except that the associa
 
 **Usage**
 
-* Fetch operation times out after 5 seconds. Authors can have issues fetching assets, say if there are network issues. Authors can re-attempt by dragging the remote asset from Content Finder to Page Editor.
+* Only functionality supported is searching for remote assets and dragging the remote assets on local page to author content.
+* Fetch operation times out after 5 seconds. Authors can have issues fetching assets, say if there are network issues. Authors can re-attempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
 * Simple edits that are non-destructive and the edit supported via the AEM `Image` component, can be done on fetched assets. Assets are read-only.
 
 ## Troubleshoot issues {#troubleshoot}
