@@ -38,7 +38,7 @@ If the criteria are not met, then a TarMK active/standby deployment is recommend
 
 ### Minimal MongoDB Deployment for AEM {#minimal-mongodb-deployment-for-aem}
 
-Below is a minimal deployment for AEM on MongoDB. For simplicity, SSL termination and HTTP Proxy components have been generalised. It consists of a single MongoBD replica set, with one primary and two secondaries.
+Below is a minimal deployment for AEM on MongoDB. For simplicity, SSL termination and HTTP Proxy components have been generalised. It consists of a single MongoDB replica set, with one primary and two secondaries.
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
