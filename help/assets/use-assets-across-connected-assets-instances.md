@@ -164,7 +164,7 @@ The fetched assets can be used as any other local asset, except that the associa
 * All Sites Authors have read permissions on the fetched copies, even if they do not have access to the remote DAM deployment.
 * No API support to customize the integration.
 * The functionality supports seamless search and use of remote assets. To make many remote assets available on local deployment in one-go, consider migrating the assets. See [Assets migration guide](assets-migration-guide.md).
-* It is not possible to use remote assets directly on the [!UICONTROL Properties] page.
+* It is not possible to view remote assets in the Thumbnail tab in Page Properties.
 
 **Set up and licensing**
 
