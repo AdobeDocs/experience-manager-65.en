@@ -50,7 +50,8 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 
    ![chlimage_1-201](assets/chlimage_1-484.png)
 
-1. Tap/ click **[!UICONTROL Done]**. The Metadata Profile is added to the list of profiles in the **[!UICONTROL Metadata Profiles]** page.
+1. Tap/ click **[!UICONTROL Done]**. The Metadata Profile is added to the list of profiles in the **[!UICONTROL Metadata Profiles]** page.<br>
+
 
    ![Metadata profile added in Metadata Profiles page](assets/MetadataProfiles-page.png)
 
