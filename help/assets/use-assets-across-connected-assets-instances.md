@@ -16,7 +16,7 @@ When editing pages in Page Editor, the authors can seamlessly search, browse, an
 
 For the Sites authors, the remote assets are available as read-only local assets. The functionality supports seamless search and use of a few remote assets at a time. To make many remote assets available on local deployment in one-go, consider migrating the assets in bulk. See [Assets migration guide](/help/assets/assets-migration-guide.md).
 
-### Prerequisites {#prerequisites}
+### Prerequisites and supported deployments {#prerequisites}
 
 Before you use or configure this capability, ensure the following:
 
@@ -164,7 +164,7 @@ The fetched assets can be used as any other local asset, except that the associa
 * All Sites Authors have read permissions on the fetched copies, even if they do not have access to the remote DAM deployment.
 * No API support to customize the integration.
 * The functionality supports seamless search and use of remote assets. To make many remote assets available on local deployment in one-go, consider migrating the assets. See [Assets migration guide](assets-migration-guide.md).
-* It is not possible to view remote assets in the Thumbnail tab in Page Properties.
+* It is not possible to use a remote asset as a thumbnail for a web page in the [!UICONTROL Thumbnail] tab in [!UICONTROL Page Properties] by clicking [!UICONTROL Select Image].
 
 **Set up and licensing**
 
