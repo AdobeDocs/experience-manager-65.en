@@ -20,9 +20,14 @@ For the Sites authors, the remote assets are available as read-only local assets
 
 Before you use or configure this capability, ensure the following:
 
-* An AEM 6.5 Assets deployment on AMS.
-* AEM 6.5 Sites deployment on AMS or an on-premise deployment.
 * The users are part of appropriate user groups on each deployment.
+* For Adobe Experience Manager deployment types, one of the supported criterion is met. AEM 6.5 Assets works with AEM as a Cloud Service. For more information, see [Connected Assets functionality in AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+
+  ||AEM Sites as a Cloud Service |AEM 6.5 Sites on AMS| AEM 6.5 Sites on-premise|
+  |---|---|---|---|
+  |**AEM Assets as a Cloud Service**| Supported | Supported | Supported |
+  |**AEM 6.5 Assets on AMS** | Not Supported | Supported | Supported |
+  |**AEM 6.5 Assets on-premise** | Not Supported |Not Supported | Not Supported |
 
 ### Supported file formats {#mimetypes}
 
