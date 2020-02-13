@@ -100,7 +100,7 @@ When you add a directory to a domain, specify the following directory settings.
 
 **Unique Identifier:** (Mandatory) A unique and constant attribute used to identify users. Use a non-DN attribute as the unique identifier because a user’s DN may change if they move to another part of the organization. This setting depends on the directory server. The value is objectGUID for Active Directory 2003, nsuniqueID for Sun™ One, and guid for eDirectory.
 
-***Note**: Ensure that you enter an attribute that is guaranteed to be unique in your organization. Entering an incorrect value can cause serious system problems. *
+**Note**: Ensure that you enter an attribute that is guaranteed to be unique in your organization. Entering an incorrect value can cause serious system problems. *
 
 **Base DN:** Set as the starting point for synchronizing users and groups from the LDAP hierarchy. It is best to specify a base DN at the lowest level of the hierarchy that encompasses all users and groups that need to be synchronized for services.
 

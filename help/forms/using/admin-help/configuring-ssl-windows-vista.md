@@ -23,13 +23,13 @@ You can run keytool by using a single command that includes all the information 
 
 **Create an SSL certificate**
 
-1. In a command prompt, navigate to *[JAVA HOME]*/bin and type the following command to create the certificate and keystore:
+1. In a command prompt, navigate to *`[JAVA HOME]`*/bin and type the following command to create the certificate and keystore:
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Host Name* `, OU=`*Group Name* `, O=`*Company Name* `,L=`*City Name* `, S=`*State* `, C=`*Country Code* `" -alias`*"LC Cert"* `-keypass` `*key*`*_**password* `-keystore`*keystorename* `.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*Host Name* `, OU=`*Group Name* `, O=`*Company Name* `,L=`*City Name* `, S=`*State* `, C=`*Country Code* `" -alias`*"LC Cert"* `-keypass` `key`*_* *password* `-keystore`*keystorename* `.keystore`
 
    >[!NOTE]
    >
-   >Replace *[JAVA_HOME] with the directory where the JDK is installed, and replace the text in italic with values that correspond with your environment.*
+   >Replace *`[JAVA_HOME]` with the directory where the JDK is installed, and replace the text in italic with values that correspond with your environment.*
 
 1. Type `changeit` as the password. This password is the default for a Java installation, and the system administrator may have changed it.
 
