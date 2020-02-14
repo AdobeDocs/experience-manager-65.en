@@ -79,7 +79,7 @@ To be able to translate content fragments that include mixed media, first edit t
 
 1. Insert an asset into the content fragment.
 
-   ![chlimage_1-450](assets/chlimage_1-450.png)
+   ![insert asset in to content fragment](assets/column-view.png)
 
 1. Click/tap the **[!UICONTROL Associate Content]** icon.
 
