@@ -68,7 +68,7 @@ When using MySQL as your AEM forms database, the following limitations apply:
 
 * Use only single-byte (ASCII) characters for the domain ID and domain name. If you use extended ASCII characters, AEM forms will be in an unstable state and may throw an exception if you attempt to delete the domain. To recover from this unstable state, see the " [Remove a domain that contains extended or multi-byte characters](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)" topic on this page.
 * You cannot create two domains that have the same name but differ in case. For example, attempting to create a domain named *Adobe* when a domain named *adobe* already exists results in an error.
-* User Management cannot differentiate between two domain names that differ only in the use of extended characters. For example, if you create a domain named *abcde* and a domain named *âbcdè *, they are considered the same.
+* User Management cannot differentiate between two domain names that differ only in the use of extended characters. For example, if you create a domain named *abcde* and a domain named *âbcdè*, they are considered the same.
 
 ### Remove a domain that contains extended or multi-byte characters {#remove-a-domain-that-contains-extended-or-multi-byte-characters}
 

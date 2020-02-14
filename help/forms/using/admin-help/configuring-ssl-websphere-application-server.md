@@ -35,7 +35,7 @@ For enabling SSL, WebSphere needs access to a user account in the local OS user 
 
    >[!NOTE]
    >
-   >(Linux and Solaris) For WebSphere Application Server Local OS security registry to work, a shadow password file must exist. The shadow password file is usually named **/etc/shadow*** and is based on the /etc/passwd file. If the shadow password file does not exist, an error occurs after enabling global security and configuring the user registry as Local OS.*
+   >(Linux and Solaris) For WebSphere Application Server Local OS security registry to work, a shadow password file must exist. The shadow password file is usually named **/etc/shadow** and is based on the /etc/passwd file. If the shadow password file does not exist, an error occurs after enabling global security and configuring the user registry as Local OS.
 
 1. Open the group file from the /etc directory in a text editor.
 1. Add the user who you created in step 2 to the `root` group.
@@ -168,7 +168,7 @@ Perform the following steps to set the port to be dynamic and resolve the issue:
 
 ## Configure the sling.properties file {#configure-the-sling-properties-file}
 
-1. Open [aem-forms_root]\crx-repository\launchpad\sling.properties file for editing.
+1. Open `[aem-forms_root]`\crx-repository\launchpad\sling.properties file for editing.
 1. Locate the `sling.bootdelegation.ibm` property and add `com.ibm.websphere.ssl.*`to its value field. The updated field look like the following:
 
    ```as3

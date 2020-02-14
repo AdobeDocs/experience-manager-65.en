@@ -75,7 +75,7 @@ If the ZIP file contains more than one HTML file at the lowest level of its fold
 
     * To use custom settings, select Use Custom Settings, specify the security and file type settings, and specify a time-out value. The default value is 270 seconds.
 
-      ***Note**: If you configured the Generate PDF service to use Acrobat WebCapture, the File Type Settings that you select on this page do not affect the PDF produced. Instead, make the appropriate changes to the version of Acrobat that is installed on the server. *
+      **Note**: If you configured the Generate PDF service to use Acrobat WebCapture, the File Type Settings that you select on this page do not affect the PDF produced. Instead, make the appropriate changes to the version of Acrobat that is installed on the server.
 
     * To use an existing settings file, select Upload Settings File and click Browse to go to the file location.
 

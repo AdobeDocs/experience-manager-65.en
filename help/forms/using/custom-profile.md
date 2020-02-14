@@ -16,7 +16,7 @@ A profile is a resource node in [Apache Sling](https://sling.apache.org/). It re
 
 The profile node has the **sling:resourceSuperType** property and the default value is **xfaforms/profile**. The render script for the node is at /libs/xfaforms/profile.
 
-The Sling scripts are JSP scripts. These JSP scripts serve as containers for putting together the HTML for requested form and the required JS / CSS artifacts. These Sling scripts are also referred as **Profile Renderer scripts. **The profile renderer calls the Forms OSGi service to render the requested form.
+The Sling scripts are JSP scripts. These JSP scripts serve as containers for putting together the HTML for requested form and the required JS / CSS artifacts. These Sling scripts are also referred as **Profile Renderer scripts**. The profile renderer calls the Forms OSGi service to render the requested form.
 
 The profile script is in html.jsp and html.POST.jsp for GET and POST requests. You can copy and modify one or more files to override and add your customizations. Do not make any in-place changes, the patch update overwrites such changes.
 

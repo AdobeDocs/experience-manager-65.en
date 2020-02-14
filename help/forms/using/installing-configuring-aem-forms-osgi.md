@@ -213,6 +213,6 @@ AEM forms integrates with Adobe Target, an Adobe Marketing Cloud solution, to de
 You have configured an environment to use AEM Forms data capture capabilities. Now, the next steps towards using the capability are:
 
 * [Create your first adaptive form](/help/forms/using/create-your-first-adaptive-form.md)
-* [Create your first PDF form](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/designer-quickstart.pdf)
+* [Create your first PDF form](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
 * [Introduction to HTML5 Forms](/help/forms/using/introduction.md)
 

@@ -492,7 +492,7 @@ You can create dynamic watermark templates. These templates remain available as 
 
 1. Under Use As Background, select either Yes or No.
 
-   ***note**: Currently, the watermark appears in the foreground irrespective of this setting. *
+   **note**: Currently, the watermark appears in the foreground irrespective of this setting.
 
 1. To control where the watermark is displayed on the document, configure the Vertical Alignment and Horizontal Alignment options.
 1. Either select Fit to Page or select % and type a percentage in the box. The value must be a whole number, not a fraction. To configure the watermark size, you can use a value that is the percentage of the page or set the watermark to fit the size of the page.
@@ -943,7 +943,7 @@ By default, you can specify a maximum of five elements in a watermark. Also, the
 1. Open the configuration file in an editor and locate the `ServerSettings` node.
 1. In the `ServerSettings` node, add the following entries and then save the file: `<entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/> <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>`
 
-   The first entry, *max file size *is the maximum file size (in KB) that is allowed for a PDF watermark element. Default is 100KB.
+   The first entry, *max file size* is the maximum file size (in KB) that is allowed for a PDF watermark element. Default is 100KB.
 
    The second entry, *max elements* is the maximum number of elements that is allowed in a watermark. Default is 5.
 
@@ -958,8 +958,8 @@ By default, you can specify a maximum of five elements in a watermark. Also, the
 
 Many document security users do not have access to external links such as **www.adobe.com** while they are using the Right Management user interfaces:
 
-* https://[host]:[port]/adminui
-* https://[host]:[port]/edc.
+* `https://[host]:[port]/adminui`
+* `https://[host]:[port]/edc`.
 
 The following changes to the config.xml disables all external links from the Right Management user interfaces.
 

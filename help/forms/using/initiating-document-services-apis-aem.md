@@ -81,7 +81,7 @@ Specify the source of the document to convert to a PDF/A compliant document in o
 Conversion Options allow you to specify options that alter the process of PDF/A conversion.
 
 * *Compliance* : Specifies the PDF/A standard to which the output PDF/A must comply.
-* *Result Level *: Specifies the log level to be used for PDF/A conversion logs.
+* *Result Level* : Specifies the log level to be used for PDF/A conversion logs.
 * *Signatures* : Specifies how the signatures in input document must be processed during conversion.
 * *Color Space* : Specifies the predefined color space to be used for output PDF/A document.
 * *Verify* Conversion: Specifies whether the converted PDF/A document should be verified for PDF/A compliance after conversion.

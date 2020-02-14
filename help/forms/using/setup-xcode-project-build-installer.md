@@ -66,9 +66,9 @@ For detailed information about Code Signing and adding devices to the iOS Provis
 
    Log in to your Mac machine that has Xcode and iOS SDK installed and configured.
 
-1. Copy the `adobe-lc-mobileworkspace-src-<version>.zip` archive from the downloads folder to `[*User_Home*]/Projects/`.
-1. Extract the archive in the `[*User_Home*]/Projects/[your-project]`directory.
-1. Navigate to the ` [*User_Home*]/Projects/ `[your-project]`/adobe-lc-mobileworkspace-src-[version]/ios` directory.
+1. Copy the `adobe-lc-mobileworkspace-src-<version>.zip` archive from the downloads folder to `[User_Home]/Projects/`.
+1. Extract the archive in the `[User_Home]/Projects/[your-project]`directory.
+1. Navigate to the ` [User_Home]/Projects/ `[your-project]`/adobe-lc-mobileworkspace-src-[version]/ios` directory.
 1. Open the `AEM Forms.xcodeproj` project in Xcode.
 1. Click **AEM Forms**, under **TARGETS**, select **AEM Forms**. Select the **Build Settings **tab, locate the **Code Signing Entitlement** section, and in Debug and Release fields do one of the following:
 
@@ -119,7 +119,7 @@ For detailed information about Code Signing and adding devices to the iOS Provis
    >
    >This step is required only if AEM Forms app needs to connect to a server that does not follow App Transport Security requirements.
 
-1. Under **PROJECT**, select **AEM Forms **and ensure that the appropriate signature is selected for **Code Signing Identity**, **Debug**, **Release** and **Any iOS SDK**.
+1. Under **PROJECT**, select **AEM Forms** and ensure that the appropriate signature is selected for **Code Signing Identity**, **Debug**, **Release** and **Any iOS SDK**.
 1. Connect a provisioned iPad to a Mac machine.
 1. Select the provisioned device for the **AEM Forms** project.
 
@@ -135,7 +135,7 @@ For detailed information about Code Signing and adding devices to the iOS Provis
 You need to archive the Xcode project to build the installer (an .ipa file) and a property list (a .plist file) file. The property list file contains configuration information of the hosted in-house app, such as the name and the hosting location of the app. For more information about property list file, see [About Information Property List Files](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
 
 1. Connect a provisioned iPad to a Mac machine. For detailed information about provisioning an iPad, see [Creating and Downloading Development Provisioning Profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
-1. Select the provisioned device for the **AEM Forms **project.
+1. Select the provisioned device for the **AEM Forms** project.
 
    ![ipad-1](assets/ipad-1.png)
 
@@ -148,7 +148,7 @@ You need to archive the Xcode project to build the installer (an .ipa file) and 
 1. Select **Save for Enterprise or Ad-Hoc Deployment** as the method of distribution and click **Next**.
 1. Select the appropriate **Code Signing Identity** and click **Next**. Click **Allow** to apply the signature.
 1. Provide name of the app and select **Save for Enterprise Distribution**.
-1. Provide the **Application URL** for the app. For example, to host the app on a CRX server, provide URL `https://[*LC_host*]:[*port*]/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
+1. Provide the **Application URL** for the app. For example, to host the app on a CRX server, provide URL `https://[LC_host]:[port]/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
 1. In the **Title** field, specify AEM Forms.
 1. Click **Save** and close Xcode.
 
@@ -157,5 +157,3 @@ You need to archive the Xcode project to build the installer (an .ipa file) and 
 1. Open the `AEM Forms-info.plist` file in an editor.
 1. Replace all the spaces in the URL of your .ipa file with %20.
 1. Save and close the `AEM Forms-info.plist` file.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -37,7 +37,7 @@ HTML5 forms are increasingly being used on touch devices, and one common require
 
        >[!NOTE]
        >
-       >To open the XML Source tab, click **View **&gt; **XML Source**.
+       >To open the XML Source tab, click **View** &gt; **XML Source**.
 
     1. Locate the `<ui>` tag in the `<field>` tag and modify the source code to look like the following:
 

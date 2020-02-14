@@ -17,7 +17,7 @@ The credential contains information describing its intended use that is accessib
 
 1. Open a web browser and enter this URL:
 
-   http://localhost:*[port]*/ReaderExtensions (where *[port]* is your application server’s port number)
+   http://localhost:port/ReaderExtensions (where *port* is your application server’s port number)
 
 1. Log in using the default user name and password:
 

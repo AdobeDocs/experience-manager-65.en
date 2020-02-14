@@ -262,7 +262,7 @@ To show only images for actions, customize the images used in route actions. For
 Perform the following steps to customize Details task actions pop-up menu:
 
 * Copy the /libs/ws/js/runtime/templates/taskdetails.html file to the `/apps/ws/js/runtime/templates/` folder:
-* Encapsulate icon tag inside the anchor tag instead of text. For example, the *new code *listed below encapsulates the icon tag inside the anchor tag:
+* Encapsulate icon tag inside the anchor tag instead of text. For example, the *new code* listed below encapsulates the icon tag inside the anchor tag:
 
 ```
 // Original code
