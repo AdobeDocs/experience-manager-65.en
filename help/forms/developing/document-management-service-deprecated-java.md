@@ -41,7 +41,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 ## Quick Start (SOAP mode): Create Content Services spaces using the Java API (Deprecated) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-The following Java code example creates a new space named *Test Directory *located in Company Home. The identification value of the new space is written to the console.
+The following Java code example creates a new space named *Test Directory* located in Company Home. The identification value of the new space is written to the console.
 
 ```as3
  /*

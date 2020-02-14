@@ -23,7 +23,7 @@ The long-lived process that is invoked is named *FirstAppSolution/PreLoanProcess
 
 A human-centric process involves a task that a user can respond to by using Workspace. For example, using Workbench, you can create a process that lets a bank manager approve or deny a loan application. The following illustration shows the process *FirstAppSolution/PreLoanProcess*.
 
-The* FirstAppSolution/PreLoanProcess* process accepts an input parameter named* formData* whose data type is XML. The XML data is merged with a form design named *PreLoanForm.xdp*. The following illustration shows a form that represents a task assigned to a user to approve or deny a loan application. The user approves or denies the application by using Workspace. The Workspace user can approve the loan request by clicking the Approve button shown in the following illustration. Likewise, the user can deny the loan request by clicking the deny button.
+The *FirstAppSolution/PreLoanProcess* process accepts an input parameter named *formData* whose data type is XML. The XML data is merged with a form design named *PreLoanForm.xdp*. The following illustration shows a form that represents a task assigned to a user to approve or deny a loan application. The user approves or denies the application by using Workspace. The Workspace user can approve the loan request by clicking the Approve button shown in the following illustration. Likewise, the user can deny the loan request by clicking the deny button.
 
 A long-lived process is invoked asynchronously and cannot be invoked synchronously due to the following factors:
 
@@ -51,7 +51,7 @@ The `FirstAppSolution/PreLoanProcess` process is invoked when an applicant submi
 
 XML data passed to a process must match the fields located in the form used in the process. Otherwise, data is not displayed within the form. All applications that invoke the `FirstAppSolution/PreLoanProcess` process must pass this XML data source. The applications created in *Invoking Human-Centric Long-Lived Processes* dynamically create the XML data source from values that a user entered into a web client.
 
-Using a client application, you can send the *FirstAppSolution/PreLoanProcess *process the required XML data. A long-lived process returns an invocation identifier value as its return value. The following illustration shows client applications invoking the*FirstAppSolution/PreLoanProcess *long-lived process. The client applications send XML data and get back a string value that represents the invocation identifier value.
+Using a client application, you can send the *FirstAppSolution/PreLoanProcess* process the required XML data. A long-lived process returns an invocation identifier value as its return value. The following illustration shows client applications invoking the*FirstAppSolution/PreLoanProcess long-lived process. The client applications send XML data and get back a string value that represents the invocation identifier value.
 
 **See also**
 
@@ -70,7 +70,7 @@ The following illustration shows a web-based client application that posts name,
 The Java servlet performs the following tasks:
 
 * Retrieves the values posted from the HTML page to the Java servlet.
-* Dynamically creates an XML data source to pass to the* FirstAppSolution/PreLoanProcess *process. The name, phone (or email), and amount values are specified in the XML data source.
+* Dynamically creates an XML data source to pass to the *FirstAppSolution/PreLoanProcess* process. The name, phone (or email), and amount values are specified in the XML data source.
 * Invokes the *FirstAppSolution/PreLoanProcess* process by using the AEM Forms Invocation API.
 * Returns the invocation identifier value to the client web browser.
 
@@ -91,7 +91,7 @@ To create a Java web-based application that invokes the `FirstAppSolution/PreLoa
 
 ### Create a web project {#create-a-web-project}
 
-The first step to create a web application is to create a web project. The Java IDE that this document is based on is Eclipse 3.3. Using the Eclipse IDE, create a web project and add the required JAR files to your project. Add an HTML page named *index.html *and a Java servlet to your project.
+The first step to create a web application is to create a web project. The Java IDE that this document is based on is Eclipse 3.3. Using the Eclipse IDE, create a web project and add the required JAR files to your project. Add an HTML page named *index.html*  and a Java servlet to your project.
 
 The following list specifies the JAR files to include in your web project:
 
@@ -352,7 +352,7 @@ The following Java code example represents the Java servlet that invokes the `Fi
 
 ### Create the web page for the web application {#create-the-web-page-for-the-web-application}
 
-The* index.html *web page provides an entry point to the Java servlet that invokes the `FirstAppSolution/PreLoanProcess` process. This web page is a basic HTML form that contains an HTML form and a submit button. When the user clicks the submit button, form data is posted to the `SubmitXML` Java servlet.
+The *index.html* web page provides an entry point to the Java servlet that invokes the `FirstAppSolution/PreLoanProcess` process. This web page is a basic HTML form that contains an HTML form and a submit button. When the user clicks the submit button, form data is posted to the `SubmitXML` Java servlet.
 
 The Java servlet captures the data that is posted from the HTML page by using the following Java code:
 

@@ -28,7 +28,7 @@ However, there are situations where a process cannot be completed synchronously 
 
   These types of processes are known as long-lived processes. A long-lived process is performed asynchronously, allowing for systems to interact as resources permit and allowing for the tracking and monitoring of the operation. When a long-lived process is invoked, AEM Forms creates an invocation identifier value as part of a record that tracks the long-lived process status. The record is stored in the AEM Forms database. You can purge long-lived process records when they are no longer required.
 
-  ***Note**: AEM Forms does not create a record when a short-lived process is invoked. *
+  **Note**: AEM Forms does not create a record when a short-lived process is invoked.
 
   Using the invocation identifier value, you can track the status of the long-lived process. For example, you can use the process invocation identifier value to perform Process Manager operations such as terminating a running process instance.
 
@@ -67,7 +67,7 @@ When this short-lived process is invoked, it performs the following actions:
 
 The following illustration is an example of a long-lived process.
 
-This process is invoked when an applicant submits a loan form. The process is not complete until a loan officer approves or rejects the loan request. The name of this long-lived process is* FirstAppSolution/PreLoanProcess *and its operation is `invoke_Async`. This process must be invoked asynchronously. For information about programmatically invoking this long-lived process, see [Invoking Human-Centric Long-Lived Processes](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
+This process is invoked when an applicant submits a loan form. The process is not complete until a loan officer approves or rejects the loan request. The name of this long-lived process is *FirstAppSolution/PreLoanProcess* and its operation is `invoke_Async`. This process must be invoked asynchronously. For information about programmatically invoking this long-lived process, see [Invoking Human-Centric Long-Lived Processes](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
 
 >[!NOTE]
 >

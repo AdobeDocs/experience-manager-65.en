@@ -43,7 +43,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 ## Quick Start (SOAP mode): Assembling a PDF document using the Java API {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
-The following Java code example merges two PDF source documents named* map.pdf* and *directions.pdf* into a single PDF document. The name of the single PDF document is *AssemblerResultPDF.pdf*. The name of the DDX document is *shell.xml*. (See [Programmatically Assembling PDF Documents](/help/forms/developing/assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
+The following Java code example merges two PDF source documents named *map.pdf* and *directions.pdf* into a single PDF document. The name of the single PDF document is *AssemblerResultPDF.pdf*. The name of the DDX document is *shell.xml*. (See [Programmatically Assembling PDF Documents](/help/forms/developing/assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
 
 ```as3
  /*
