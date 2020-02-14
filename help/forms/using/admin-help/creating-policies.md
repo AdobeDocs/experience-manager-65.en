@@ -33,7 +33,7 @@ When you first install document security, it contains one shared policy, named *
 
 **Microsoft Outlook auto-generated policies**
 
-Using Acrobat, you can apply policies to documents that you send as email attachments in Microsoft Outlook. In Outlook, you can protect a document by using an existing policy or by using an auto-generated policy that Acrobat generates with default confidentiality settings and applies to the document that is attached to an email message. (See * [Acrobat Help](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*.)
+Using Acrobat, you can apply policies to documents that you send as email attachments in Microsoft Outlook. In Outlook, you can protect a document by using an existing policy or by using an auto-generated policy that Acrobat generates with default confidentiality settings and applies to the document that is attached to an email message. (See *[Acrobat Help](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*.)
 
 >[!NOTE]
 >

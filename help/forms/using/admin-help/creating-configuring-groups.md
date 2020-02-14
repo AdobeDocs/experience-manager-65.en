@@ -57,7 +57,7 @@ In a dynamic group, you do not individually select the users who belong to the g
 
 Use one of these two ways to create dynamic groups:
 
-* Enable the automatic creation of dynamic groups based on email domains, such as @adobe.com. When you enable this feature, User Management creates a dynamic group for each unique email domain in the AEM forms database. Use a cron expression to specify how often User Management searches the AEM forms database for new email domains. These dynamic groups are added to the DefaultDom local domain and are named "All users with an *[email domain] *mail ID."
+* Enable the automatic creation of dynamic groups based on email domains, such as @adobe.com. When you enable this feature, User Management creates a dynamic group for each unique email domain in the AEM forms database. Use a cron expression to specify how often User Management searches the AEM forms database for new email domains. These dynamic groups are added to the DefaultDom local domain and are named "All users with an *`[email domain]`* mail ID."
 * Create a dynamic group based on specified criteria, including the user’s email domain, description, canonical name, and domain name. To belong to the dynamic group, a user must meet all the specified criteria. To set up an "or" condition, create two separate dynamic groups and add them both to a local group. For example, use that approach to create a group of users who belong to the @adobe.com email domain or whose canonical name contains ou=adobe.com. However, the users do not necessarily have to meet both conditions.
 
 A dynamic group contains only users. It cannot contain other groups. However, a dynamic group can belong to a parent group.
