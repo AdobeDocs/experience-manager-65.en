@@ -205,7 +205,7 @@ Handle a submitted form by using the Forms API (Java):
 
    >[!NOTE]
    >
-   >You can instruct the Forms service to create XDP or XML data from submitted PDF content by invoking the `RenderOptionsSpec` object’s `setPDF2XDP` method and passing `true` and also calling `setXMLData` and passing `true`. You can then invoke the `FormsResult` object’s `getOutputXML` method to retrieve the XML data that corresponds to the XDP/XML data. (The `FormsResult` object is returned by the `processFormSubmission`* method, which is explained in the next sub-step.)*
+   >You can instruct the Forms service to create XDP or XML data from submitted PDF content by invoking the `RenderOptionsSpec` object’s `setPDF2XDP` method and passing `true` and also calling `setXMLData` and passing `true`. You can then invoke the `FormsResult` object’s `getOutputXML` method to retrieve the XML data that corresponds to the XDP/XML data. (The `FormsResult` object is returned by the `processFormSubmission` method, which is explained in the next sub-step.)
 
     * Invoke the `FormsServiceClient` object’s `processFormSubmission` method and pass the following values:
 

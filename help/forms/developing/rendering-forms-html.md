@@ -275,7 +275,7 @@ Render an HTML form by using the Forms API (Java):
 
    >[!NOTE]
    >
-   >Forms are not successfully rendered in HTML when the `StandAlone` option is `true` and the `ApplicationWebRoot` references a server other than the J2EE application server hosting AEM Forms (the `ApplicationWebRoot` value is specified using the `URLSpec` object that is passed to the `FormsServiceClient` object’s `(Deprecated) renderHTMLForm` method). When the `ApplicationWebRoot`* is another server from the one hosting AEM Forms, the value of the web root URI in the administration console needs to be set as the Form's web application URI value. This can be done by logging in to the administration console, clicking Services &gt; Forms, and setting the Web Root URI as https://server-name:port/FormServer. Then, save your settings.*
+   >Forms are not successfully rendered in HTML when the `StandAlone` option is `true` and the `ApplicationWebRoot` references a server other than the J2EE application server hosting AEM Forms (the `ApplicationWebRoot` value is specified using the `URLSpec` object that is passed to the `FormsServiceClient` object’s `(Deprecated) renderHTMLForm` method). When the `ApplicationWebRoot` is another server from the one hosting AEM Forms, the value of the web root URI in the administration console needs to be set as the Form's web application URI value. This can be done by logging in to the administration console, clicking Services &gt; Forms, and setting the Web Root URI as https://server-name:port/FormServer. Then, save your settings.
 
 1. Render an HTML form
 
@@ -333,7 +333,7 @@ Render an HTML form by using the Forms API (web service):
 
    >[!NOTE]
    >
-   >Forms are not successfully rendered in HTML when the `StandAlone` option is `true` and the `ApplicationWebRoot` references a server other than the J2EE application server hosting AEM Forms (the `ApplicationWebRoot` value is specified using the `URLSpec` object that is passed to the `FormsServiceClient` object’s `(Deprecated) renderHTMLForm` method). When the `ApplicationWebRoot`* is another server from the one hosting AEM Forms, the value of the web root URI in the administration console needs to be set as the Form's web application URI value. This can be done by logging in to the administration console, clicking Services &gt; Forms, and setting the Web Root URI as https://server-name:port/FormServer. Then, save your settings. *
+   >Forms are not successfully rendered in HTML when the `StandAlone` option is `true` and the `ApplicationWebRoot` references a server other than the J2EE application server hosting AEM Forms (the `ApplicationWebRoot` value is specified using the `URLSpec` object that is passed to the `FormsServiceClient` object’s `(Deprecated) renderHTMLForm` method). When the `ApplicationWebRoot` is another server from the one hosting AEM Forms, the value of the web root URI in the administration console needs to be set as the Form's web application URI value. This can be done by logging in to the administration console, clicking Services &gt; Forms, and setting the Web Root URI as https://server-name:port/FormServer. Then, save your settings.
 
 1. Render an HTML form
 

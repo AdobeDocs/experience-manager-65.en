@@ -47,9 +47,9 @@ The following Quick Starts are available for the Forms service:
 
 Application logic that uses the Forms service API is implemented as Java servlets. AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
 
-* ***Note**: Quick starts located in Programming with v are based on the forms server being you are using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. (See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+* **Note**: Quick starts located in Programming with v are based on the forms server being you are using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. (See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
-  ***Tip**: The Adobe Developer web site contains the following article that discusses how to create a ASP.NET application that invokes the Forms service and renders forms. See [Creating form rendering ASP.NET applications](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).
+  **Tip**: The Adobe Developer web site contains the following article that discusses how to create a ASP.NET application that invokes the Forms service and renders forms. See [Creating form rendering ASP.NET applications](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).
 
 ## Quick Start (SOAP mode): Rendering an interactive PDF form using the Java API {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
@@ -195,7 +195,7 @@ The following code example renders an interactive PDF form named *Loan.xdp* to a
 
 ## Quick Start (SOAP mode): Rendering a form at the client using the Java API {#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api}
 
-The following code example renders a form named *Loan.xdp *at the client using the Forms service Java API. Notice that the form design is part of an application and is referenced by using the content root URI value `repository:///`. (See [Rendering Forms at the Client](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client).)
+The following code example renders a form named *Loan.xdp* at the client using the Forms service Java API. Notice that the form design is part of an application and is referenced by using the content root URI value `repository:///`. (See [Rendering Forms at the Client](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client).)
 
 ```as3
  /*
@@ -2488,7 +2488,7 @@ The following code example optimizes performance by setting the caching, standal
 
 ## Quick Start (SOAP mode): Rendering by value using the Java API {#quick-start-soap-mode-rendering-by-value-using-the-java-api}
 
-The following Java quick start renders an interactive PDF form that is based on a form design named *Loan.xdp* by value. Notice that the form design is used to populate a `com.adobe.idp.Document` object named* inputXDP*. (See [Rendering Forms By Value](/help/forms/developing/rendering-forms.md#rendering-forms-by-value).)
+The following Java quick start renders an interactive PDF form that is based on a form design named *Loan.xdp* by value. Notice that the form design is used to populate a `com.adobe.idp.Document` object named *inputXDP*. (See [Rendering Forms By Value](/help/forms/developing/rendering-forms.md#rendering-forms-by-value).)
 
 ```as3
  /*

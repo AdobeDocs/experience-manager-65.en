@@ -101,7 +101,7 @@ Render a rights-enabled form by using the Forms API (Java):
 
    >[!NOTE]
    >
-   >It is not necessary to invoke the `ReaderExtensionSpec` object’s `setReCredentialPassword`* method. This method is not used by the Forms service. *
+   >It is not necessary to invoke the `ReaderExtensionSpec` object’s `setReCredentialPassword` method. This method is not used by the Forms service.
 
 1. Render a rights-enabled form
 

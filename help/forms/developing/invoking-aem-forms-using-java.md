@@ -442,7 +442,7 @@ To successfully invoke a AEM Forms service, set the following connection propert
 * **DSC_CREDENTIAL_PASSWORD:** Specifies the corresponding password value. If service security is disabled, it is not necessary to specify this connection property.
 * **DSC_REQUEST_TIMEOUT:** The default request timeout limit for the SOAP request is 1200000 milliseconds (20 minutes). Sometime, a request can require longer time to complete the operation. For example, a SOAP request that retrieves a large set of records can require a longer timeout limit. You can use the `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` to increase the request call timeout limit for the SOAP requests.
 
-  ***note**: Only SOAP-based invocations support the DSC_REQUEST_TIMEOUT property.
+  **note**: Only SOAP-based invocations support the DSC_REQUEST_TIMEOUT property.
 
 To set connection properties, perform the following tasks:
 
@@ -454,7 +454,7 @@ To set connection properties, perform the following tasks:
 
    >[!NOTE]
    >
-   >If you are using the SOAP connection mode, specify the `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` enumeration value instead of the `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT`* enumeration value.*
+   >If you are using the SOAP connection mode, specify the `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` enumeration value instead of the `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` enumeration value.
 
 1. To set the `DSC_TRANSPORT_PROTOCOL` connection property, invoke the `java.util.Properties` object’s `setProperty` method and pass the following values:
 
@@ -463,7 +463,7 @@ To set connection properties, perform the following tasks:
 
    >[!NOTE]
    >
-   >If you are using the SOAP connection mode, specify the `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`enumeration value instead of the `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL`* enumeration value.*
+   >If you are using the SOAP connection mode, specify the `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`enumeration value instead of the `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` enumeration value.
 
 1. To set the `DSC_SERVER_TYPE` connection property, invoke the `java.util.Properties` object’s `setProperty` method and pass the following values:
 

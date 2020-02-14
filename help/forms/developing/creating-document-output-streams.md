@@ -229,7 +229,7 @@ Create a PDF document by using the Output API (Java):
 
    >[!NOTE]
    >
-   >You cannot set the version of the PDF document by using the `RenderOptionsSpec` object’s `setPdfVersion` method if the input document is an Acrobat form (a form created in Acrobat) or an XFA document that is signed or certified. The output PDF document retains the original PDF version. Likewise, you cannot set the tagged Adobe PDF option by invoking the `RenderOptionsSpec` object’s `setTaggedPDF`* method if the input document is an Acrobat form or a signed or certified XFA document. *
+   >You cannot set the version of the PDF document by using the `RenderOptionsSpec` object’s `setPdfVersion` method if the input document is an Acrobat form (a form created in Acrobat) or an XFA document that is signed or certified. The output PDF document retains the original PDF version. Likewise, you cannot set the tagged Adobe PDF option by invoking the `RenderOptionsSpec` object’s `setTaggedPDF` method if the input document is an Acrobat form or a signed or certified XFA document.
 
    >[!NOTE]
    >
@@ -290,7 +290,7 @@ Create a PDF document by using the Output API (web service):
 
    >[!NOTE]
    >
-   >Replace `localhost`* with the IP address of the server hosting AEM Forms. *
+   >Replace `localhost` with the IP address of the server hosting AEM Forms.
 
 1. Create an Output Client object.
 
@@ -512,7 +512,7 @@ Create a PDF/A document by using the Output API (Java):
 
    >[!NOTE]
    >
-   >The `OutputResult` object’s `getRecordLevelMetaDataList` method returns `null`*. *
+   >The `OutputResult` object’s `getRecordLevelMetaDataList` method returns `null`.
 
    >[!NOTE]
    >
@@ -526,7 +526,7 @@ Create a PDF/A document by using the Output API (Java):
 
    >[!NOTE]
    >
-   >Although the Output service writes the PDF/A document to the location specified by the argument that is passed to the `PDFOutputOptionsSpec` object’s `setFileURI` method, you can programmatically retrieve the PDF/A document by invoking the `OutputResult` object’s `getGeneratedDoc`* method.*
+   >Although the Output service writes the PDF/A document to the location specified by the argument that is passed to the `PDFOutputOptionsSpec` object’s `setFileURI` method, you can programmatically retrieve the PDF/A document by invoking the `OutputResult` object’s `getGeneratedDoc` method.
 
 **See also**
 
@@ -548,7 +548,7 @@ Create a PDF/A document by using the Output API (web service):
 
    >[!NOTE]
    >
-   >Replace `localhost`* with the IP address of the server hosting AEM Forms. *
+   >Replace `localhost` with the IP address of the server hosting AEM Forms.
 
 1. Create an Output Client object.
 
@@ -748,7 +748,7 @@ Pass a document retrieved from Content Services (deprecated) by using the Output
 
    >[!NOTE]
    >
-   >Replace `localhost`* with the IP address of the server hosting AEM Forms. *
+   >Replace `localhost` with the IP address of the server hosting AEM Forms.
 
 1. Create an Output and a Document Management Client API object.
 
@@ -766,7 +766,7 @@ Pass a document retrieved from Content Services (deprecated) by using the Output
 
    >[!NOTE]
    >
-   >Repeat these steps for the `DocumentManagementServiceClient`* service client. *
+   >Repeat these steps for the `DocumentManagementServiceClient`service client.
 
 1. Retrieve the form design from Content Services (deprecated).
 
@@ -1072,7 +1072,7 @@ Create a PDF document based on fragments by using the Output Service API and Ass
 
    >[!NOTE]
    >
-   >Replace `localhost`* with the IP address of the server hosting AEM Forms. *
+   >Replace `localhost` with the IP address of the server hosting AEM Forms.
 
 1. Create an Output and Assembler Client object.
 
@@ -1090,7 +1090,7 @@ Create a PDF document based on fragments by using the Output Service API and Ass
 
    >[!NOTE]
    >
-   >Repeat these steps for the `AssemblerServiceClient`* object. *
+   >Repeat these steps for the `AssemblerServiceClient`object.
 
 1. Use the Assembler service to generate the form design.
 
@@ -1234,7 +1234,7 @@ Print to a file using the Output API (Java):
 1. Set print run-time options required to print to a file.
 
     * Create a `PrintedOutputOptionsSpec` object by using its constructor.
-    * Specify the file by invoking the PrintedOutputOptionsSpec object’s `setFileURI` method and passing a string value that represents the name and location of the file. For example, if you want the Output service to print to a PostScript file named* MortgageForm.ps* located in C:\Adobe, specify C:\\Adobe\MortgageForm.ps.
+    * Specify the file by invoking the PrintedOutputOptionsSpec object’s `setFileURI` method and passing a string value that represents the name and location of the file. For example, if you want the Output service to print to a PostScript file named MortgageForm.ps located in C:\Adobe, specify C:\\Adobe\MortgageForm.ps.
     * Specify the number of copies to print by invoking the `PrintedOutputOptionsSpec` object’s `setCopies` method and passing an integer value that represents the number of copies.
 
 1. Print the print stream to a file.
@@ -1252,7 +1252,7 @@ Print to a file using the Output API (Java):
 
    >[!NOTE]
    >
-   >The `OutputResult` object’s `getRecordLevelMetaDataList` method returns `null`*. *
+   >The `OutputResult` object’s `getRecordLevelMetaDataList` method returns `null`.
 
 1. Retrieve the results of the operation.
 
@@ -1280,7 +1280,7 @@ Print to a file using the Output API (web service):
 
    >[!NOTE]
    >
-   >Replace `localhost`* with the IP address of the server hosting AEM Forms. *
+   >Replace `localhost` with the IP address of the server hosting AEM Forms.
 
 1. Create an Output Client object.
 
@@ -1526,7 +1526,7 @@ Send a print stream to a network printer by using the Output API (Java):
 
    >[!NOTE]
    >
-   >You cannot set the pagination value by using the `PrintedOutputOptionsSpec` object’s `setPagination` method if you are generating a ZPL print stream. Likewise, you cannot set the following options for a ZPL print stream: OutputJog, PageOffset, and Staple. The `setPagination`* method is not valid for PostScript generation. It is valid only for PCL generation. *
+   >You cannot set the pagination value by using the `PrintedOutputOptionsSpec` object’s `setPagination` method if you are generating a ZPL print stream. Likewise, you cannot set the following options for a ZPL print stream: OutputJog, PageOffset, and Staple. The `setPagination` method is not valid for PostScript generation. It is valid only for PCL generation.
 
 1. Retrieve a document to print
 
@@ -1566,7 +1566,7 @@ Send a print stream to a network printer by using the Output API (web service):
 
    >[!NOTE]
    >
-   >Replace `localhost`* with the IP address of the server hosting AEM Forms. *
+   >Replace `localhost` with the IP address of the server hosting AEM Forms.
 
 1. Create an Output Client object.
 
@@ -1595,7 +1595,7 @@ Send a print stream to a network printer by using the Output API (web service):
 
    >[!NOTE]
    >
-   >You cannot set the pagination value by using the `PrintedOutputOptionsSpec` object’s `pagination` data member if you are generating a ZPL print stream. Likewise, you cannot set the following options for a ZPL print stream: OutputJog, PageOffset and Staple. The `pagination`* data member is not valid for PostScript generation. It is valid only for PCL generation. *
+   >You cannot set the pagination value by using the `PrintedOutputOptionsSpec` object’s `pagination` data member if you are generating a ZPL print stream. Likewise, you cannot set the following options for a ZPL print stream: OutputJog, PageOffset and Staple. The `pagination` data member is not valid for PostScript generation. It is valid only for PCL generation. 
 
 1. Retrieve a document to print.
 
