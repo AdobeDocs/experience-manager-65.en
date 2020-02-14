@@ -23,7 +23,7 @@ A custom tally component can be created by extending the abstract tally class.
 
 [Rating](rating-basics.md) is an implementation of tally that uses a star system for expressing a range of opinions from positive to negative.
 
-As of AEM 6.1, the [poll](poll-basics.md) component is not currently available.
+As of AEM 6.1, the [poll](poll-basics.md) component is no longer available.
 
 [Reviews](reviews-basics.md) is an SCF component that is a hybrid of [comments](essentials-comments.md) and [rating](rating-basics.md).
 
