@@ -58,7 +58,7 @@ In the following steps, it is assumed that the new localized image files are *Ca
 Perform the following steps to localize the images:
 
 1. Using a WebDAV client, place the image files in the */apps/ws/images* folder.
-1. Navigate to* /apps/ws/css*. Open *newStyle.css* for editing and add the following entries:
+1. Navigate to */apps/ws/css*. Open *newStyle.css* for editing and add the following entries:
 
    ```
    #categoryListBar .content.nw {
@@ -75,7 +75,7 @@ Perform the following steps to localize the images:
    ```
 
 1. Perform all the semantic changes listed in the [Workspace Customization](../../forms/using/introduction-customizing-html-workspace.md) article.
-1. Navigate to the *js/runtime/utility* folder and open the* usersession.js* file for editing.
+1. Navigate to the *js/runtime/utility* folder and open the *usersession.js* file for editing.
 1. Locate the code listed in orignal code block and add condition *lang !== 'nw'* to the if statement:
 
    ```
@@ -105,7 +105,7 @@ Perform the following steps to localize the images:
 
 ## Localizing Date Picker {#localizing-date-picker}
 
-You require development package to localize the *datepicker *API. For detailed information about creating development package, see [Building AEM Forms workspace code](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3).
+You require development package to localize the *datepicker* API. For detailed information about creating development package, see [Building AEM Forms workspace code](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3).
 
 1. Download and extract the [jQuery UI Package](https://jqueryui.com/download/all/), navigate to *&lt;extracted jquery UI package&gt;*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copy the jquery.ui.datepicker-nw.js file for locale code nw to apps/ws/js/libs/jqueryui and make locale specific changes to the file.

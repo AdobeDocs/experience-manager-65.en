@@ -13,7 +13,7 @@ docset: aem65
 
 # Apply electronic signatures to a form using (Deprecated) scribble signatures{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
-You can use the (Deprecated) **Scribble Signature **component and **Signature Step **component to draw (Scribble) signature on an adaptive form. The Signature step component displays a PDF version of the adaptive form. You require a Document of Record option enabled or form template based adaptive forms to use the Signature step component.
+You can use the (Deprecated) **Scribble Signature** component and **Signature Step** component to draw (Scribble) signature on an adaptive form. The Signature step component displays a PDF version of the adaptive form. You require a Document of Record option enabled or form template based adaptive forms to use the Signature step component.
 
 Both the components provide a window, as displayed below, to sign a form. You can also click the geolocation icon ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) to add geolocation to the signature.
 
@@ -48,7 +48,7 @@ Both the components provide a window, as displayed below, to sign a form. You ca
 
    Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes. The Signature is configured sucessfully.
 
-   Now, when you fill a form, a PDF version of adaptive form is displayed and options to sign the PDF document are provided. For detailed information, see [Sign an adaptive form using Scribble Signature](../../forms/using/signing-forms-using-scribble.md#p-sign-an-adaptive-form-using-scribble-signature-p).
+   Now, when you fill a form, a PDF version of adaptive form is displayed and options to sign the PDF document are provided. For detailed information, see [Sign an adaptive form using Scribble Signature](../../forms/using/signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 
 ## Sign an adaptive form using Scribble Signature {#sign-an-adaptive-form-using-scribble-signature}
 

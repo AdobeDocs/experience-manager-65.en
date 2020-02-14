@@ -19,7 +19,7 @@ AEM Forms JEE workflows provide tools to design, create, and manage business pro
 * Using watched folder
 * Using Email
 
-For more information about creating AEM Forms JEE workflow process, see [Workbench Help](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/WorkbenchHelp.pdf).
+For more information about creating AEM Forms JEE workflow process, see [Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## User data and data stores {#user-data-and-data-stores}
 

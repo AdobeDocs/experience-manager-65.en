@@ -21,7 +21,7 @@ You can configure the logger utility to start creating logs for HTML5 forms. The
 
 Perform the following steps to configure server-side logs:
 
-1. Go to https://[server]:[port]/system/console/configMgr. Locate and open the *Apace Sling logging logger configuration* option. A dialog box appears:
+1. Go to `https://[server]:[port]/system/console/configMgr`. Locate and open the *Apace Sling logging logger configuration* option. A dialog box appears:
 
    ![ Apace Sling logging logger configuration option dialog box](assets/logconfig.png)
 

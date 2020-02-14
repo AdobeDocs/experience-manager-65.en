@@ -48,7 +48,7 @@ The transaction count is reverse replicated from publish instances to author or 
 ### Guidelines for using transaction reports {#guidelines-for-using-transaction-reports}
 
 * Disable transaction reports on all author instances as reports on author instances includes transactions registered during authoring activities.
-* Enable the **Show transactions from publish only **option on the author instance to view cumulative transactions from all publish instances. You can also view transaction reports on each publish instance for actual transactions on that particular publish instance only.
+* Enable the **Show transactions from publish only** option on the author instance to view cumulative transactions from all publish instances. You can also view transaction reports on each publish instance for actual transactions on that particular publish instance only.
 * Do not use author instances to run workflows and process documents.
 * Before using transaction reporting, if you are have a toplogy with publish servers, ensure that the reverse replication is enabled for all the publish instances.
 * Transaction data is reverse-replicated from a publish instance to only corresponding author or processing instance. The author or processing instance cannot further replicate data to another instance. For example, if you have author-processing-publish topology, aggregated transaction data is replicated only to the processing instance.

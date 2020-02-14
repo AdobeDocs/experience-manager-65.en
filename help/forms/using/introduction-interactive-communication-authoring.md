@@ -58,7 +58,7 @@ The Channel browser helps you switch between the print and web channels of the I
   Segregates different types of content such as layout fragments, images, documents, pages, videos. Author can drag-and-drop assets into the Interactive Communication.
 
 * **Components browser**
-  Includes components that you can use to build the print and web channels of a document. You can drag components to the Interactive Communication to add elements, and configure added element as per the requirements. The following table describes the components listed in Components browser for print and web channels**:**
+  Includes components that you can use to build the print and web channels of a document. You can drag components to the Interactive Communication to add elements, and configure added element as per the requirements. The following table describes the components listed in Components browser for print and web channels:
 
 | **Component** |**Print Channel** |**Web Channel** |**Functionality** |
 |---|---|---|---|

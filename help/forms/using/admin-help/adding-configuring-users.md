@@ -86,7 +86,7 @@ AEM forms cannot differentiate between user accounts that have identical user ID
 
 When using SQL Server as your database, you cannot create a user ID that exceeds 255 characters.
 
-When using MySQL, the user ID can contain extended characters. However, when a comparison is made between two strings, such as abcde and âbcdè, they are considered the same. For example, when syncing, if a new user was added to the database, a comparison is made to check whether a user with the same user ID exists in the database. If user *abcde* already exists in the database when the new user *âbcdè * is added, the comparison cannot distinguish between the two names. It is assumed that the user already exists in the database, and the new user is ignored and not added.
+When using MySQL, the user ID can contain extended characters. However, when a comparison is made between two strings, such as abcde and âbcdè, they are considered the same. For example, when syncing, if a new user was added to the database, a comparison is made to check whether a user with the same user ID exists in the database. If user *abcde* already exists in the database when the new user *âbcdè* is added, the comparison cannot distinguish between the two names. It is assumed that the user already exists in the database, and the new user is ignored and not added.
 
 Avoid creating user names that begin with a number sign (#). Performing task searches returns no results for those user names. (See [Working with tasks](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
 

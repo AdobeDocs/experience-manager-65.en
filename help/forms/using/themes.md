@@ -39,7 +39,7 @@ Perform the following steps to create a theme:
 1. In the Themes page, click **Create &gt; Theme**.
    A wizard to create a theme is launched.
 
-1. In the Basic tab of the Create Theme wizard, provide **Title **and **Name **of the theme. These are mandatory fields.
+1. In the Basic tab of the Create Theme wizard, provide **Title** and **Name** of the theme. These are mandatory fields.
 
 1. In the Advanced tab, you get two fields:
 
@@ -200,7 +200,7 @@ The Theme Editor is divided in two panels:
 
 * **Sidebar**- Appears on the left side. It has the following items:
 
-    * **Selector:*** *Shows the component selected for styling, and its properties that you can style. The selector represents all the components of a type. If you select a text box component in a theme for styling, all the text boxes in your form or interactive communication inherit the style. Selectors let you select a generic component or a specific component for styling. For example, a field component is a generic component, and a text box is a specific component.
+    * **Selector:** Shows the component selected for styling, and its properties that you can style. The selector represents all the components of a type. If you select a text box component in a theme for styling, all the text boxes in your form or interactive communication inherit the style. Selectors let you select a generic component or a specific component for styling. For example, a field component is a generic component, and a text box is a specific component.
 
       **Styling generic component:**
       A field can be a numeric box field, such as age, or a text box field, such as address.
@@ -295,9 +295,7 @@ The plus button against the asset library lets you permanently save the style wi
 
 When you provide a custom name for a style, the style is tied to a theme and is no longer available to other themes. To delete a saved style:
 
-1. On the CANVAS toolbar, click **Theme Options ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/theme-options.png)
-
-   **&gt;** Manage Styles.**
+1. On the CANVAS toolbar, click **Theme Options** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/theme-options.png) &gt; **Manage Styles**.
 1. In the Manage Styles dialog, select a saved style, click **Delete**.
 
    ![Delete the saved style](assets/manage-styles.png)
@@ -335,11 +333,9 @@ Redo/undo buttons appear when you style a component in the Theme Editor.
 The Theme Editor lets you edit a theme you created or uploaded. Navigate to **Forms & Documents &gt; Themes**, and select a theme and open it. The theme opens in the Theme Editor.
 
 As discussed above, the Theme Editor has two panels: Sidebar and Canvas.
-[ ![theme-editor](assets/theme-editor.png)
+![theme-editor](assets/theme-editor.png)
 
 Customizing the success state styling of Text Box Widget component in Theme Editor. Component is selected in Canvas, and its state is selected in the sidebar. Styling options available in the sidebar are used to customize the look of a component.
-
-](assets/theme-editor-1.png)
 
 ### Using Canvas {#using-canvas}
 
@@ -450,8 +446,7 @@ Perform the following steps to customize styling for a particular component (a n
 1. When you select the numeric box, you can see the component toolbar with three options:
 
     * **Numeric Box Widget**
-    * **Field Widget**
-    * ![field-level](assets/field-level.png)
+    * **Field Widget** ![field-level](assets/field-level.png)
 
 1. Select **Numeric Box Widget**.
 1. Sidebar title changes to Numeric Box Widget, and shows options to customize its look.
@@ -670,4 +665,3 @@ You can see the generated CSS using the following options:
 
   Use theme editor if you want to style header and footer using styling options such as font style, background, and transparency.
   If you want to provide information such as a logo image, company name in header, and copyright information in the footer, use the form editor options.
-

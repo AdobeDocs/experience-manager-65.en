@@ -122,7 +122,7 @@ Adding a button with an action (here send letter for review) to the Create Corre
 
 The ACMExtensionsMessages.properties file includes labels and tooltip messages of various fields in Create Correspondence user interface. For the customized actions/buttons to work, make a copy of this file in the /apps branch.
 
-1. Right-click the **locale **folder at the following path and select **Overlay Node**:
+1. Right-click the **locale** folder at the following path and select **Overlay Node**:
 
    /libs/fd/cm/config/defaultApp/locale
 
@@ -140,7 +140,7 @@ The ACMExtensionsMessages.properties file includes labels and tooltip messages o
 
    `/libs/fd/cm/config/defaultApp/locale/ACMExtensionsMessages.properties`
 
-1. Right-click the **locale **folder at the following path and select **Paste**:
+1. Right-click the **locale** folder at the following path and select **Paste**:
 
    `/apps/fd/cm/config/defaultApp/locale/`
 

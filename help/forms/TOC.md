@@ -569,6 +569,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [HTML Template Language](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
   + [AEM plug-in to debug adaptive forms](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
   + [AEM Forms Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
+  + [AEM Forms on JEE Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
   + [Form Bridge APIs for HTML5 forms](using/form-bridge-apis.md)
   + [Assembler Service and DDX Reference](http://www.adobe.com/go/learn_aemforms_ddxRef_65)
   + [Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_65)

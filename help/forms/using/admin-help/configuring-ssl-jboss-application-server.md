@@ -152,7 +152,7 @@ In this procedure:
 
     * For Adobe preconfigured or manually configured JBoss installations:
 
-        * From a command prompt, navigate to* [appserver root]*/bin.
+        * From a command prompt, navigate to *`[appserver root]`*/bin.
         * Stop the server by entering the following command:
 
             * (Windows) `shutdown.bat -S`
@@ -176,7 +176,7 @@ In this procedure:
 
    >[!NOTE]
    >
-   >Replace *[JAVA_HOME] with the directory where the JDK is installed, and replace the text in italic with values that correspond with your environment.*
+   >Replace *`[JAVA_HOME]` with the directory where the JDK is installed, and replace the text in italic with values that correspond with your environment.*
 
 1. Type the following command to generate a certificate request to send to the certificate authority:
 
@@ -186,7 +186,7 @@ In this procedure:
 
 ## Use a credential obtained from a CA to enable SSL {#use-a-credential-obtained-from-a-ca-to-enable-ssl}
 
-1. In a command prompt, navigate to *[JAVA HOME]*/bin and type the following command to import the root certificate of the CA with which the CSR has been signed:
+1. In a command prompt, navigate to *`[JAVA HOME]`*/bin and type the following command to import the root certificate of the CA with which the CSR has been signed:
 
    `keytool -import -trustcacerts -file`*rootcert* `.pem -keystore`*keystorename* `.keystore -alias root`
 
@@ -194,16 +194,15 @@ In this procedure:
 
    >[!NOTE]
    >
-   >Replace *[JAVA_HOME] with the directory where the JDK is installed, and replace the text in italic with values that correspond with your environment.*
+   >Replace *`[JAVA_HOME]` with the directory where the JDK is installed, and replace the text in italic with values that correspond with your environment.*
 
-1. In a command prompt, navigate to *[JAVA HOME]*/bin and type the following command to import the credential into the keystore:
+1. In a command prompt, navigate to *`[JAVA HOME]`*/bin and type the following command to import the credential into the keystore:
 
    `keytool -import -trustcacerts -file`*CACertificateName* `.crt -keystore`*keystorename* `.keystore`
 
    >[!NOTE]
    >
-   >* Replace [JAVA_HOME] with the directory where the JDK is installed, and replace the text in italic with values that correspond with your environment.
+   >* Replace `[JAVA_HOME]` with the directory where the JDK is installed, and replace the text in italic with values that correspond with your environment.
    >* The imported CA signed certificate will replace a self-signed public certificate if it exists.
 
 1. Complete steps 13 - 18 of Create an SSL credential.
-

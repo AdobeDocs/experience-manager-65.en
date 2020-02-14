@@ -221,7 +221,7 @@ This table provides some guidelines that you can use to classify your letters:
 
 You need the following in place first to create a correspondence:
 
-* [Compatibility Package](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html). Install the Compatibility Package to view the **Letters** option on the **Forms** page.
+* [Compatibility Package](compatibility-package.md). Install the Compatibility Package to view the **Letters** option on the **Forms** page.
 * The letter XDP ([layout](/help/forms/using/document-fragments.md)).
 * Other XDPs ([layout fragments](/help/forms/using/document-fragments.md#main-pars-header-13)) that form parts of the letter. The XDPs\Layouts are created in [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/). 
 * The relevant [data dictionary](/help/forms/using/data-dictionary.md) (Optional). 
@@ -314,7 +314,7 @@ When after creating a correspondence, you tap Open, Correspondence Management di
     * **Optional**: You can specify if the value for field or variable is optional or not. The optional field option is available for fields and variables with linkage type User or unprotected Data Dictionary Elements.
 
     * **Field / Variable Validation**: To provide enhanced validation of the value of a field or variable, you can assign a validator to the field or variable. This option is available only for fields and variables with linkage type User or unprotected Data Dictionary Elements.
-    * **Caption **and **Tooltip**: Caption is the label of the field that appears before the field in the CCR user interface. This option is available for fields and variables with linkage type User or unprotected Data Dictionary Elements.
+    * **Caption** and **Tooltip**: Caption is the label of the field that appears before the field in the CCR user interface. This option is available for fields and variables with linkage type User or unprotected Data Dictionary Elements.
 
    Following are the types of validation you can use for the fields:
 

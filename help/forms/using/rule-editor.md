@@ -302,7 +302,7 @@ A typical Validate rule is structured as follows:
 
 ### Set Options Of {#setoptionsof}
 
-The **Set Options Of **rule type enables you to define rules to add check boxes dynamically to the adaptive form. You can use a form data model or a custom function to define the rule.
+The **Set Options Of** rule type enables you to define rules to add check boxes dynamically to the adaptive form. You can use a form data model or a custom function to define the rule.
 
 To define a rule based on a custom function, select **Function Output** from the drop-down list, and drag-and-drop a custom function from the **Functions** tab. The number of checkboxes defined in the custom function are added to the adaptive form.
 
@@ -436,7 +436,7 @@ Perform the following steps to write rules:
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. Drag-drop the **Spouse Salary** field from the Form Objects tab on the **Drop object or select here **field. Alternatively, tap the **Drop object or select here** field and select the **Spouse Salary** field from the pop-up menu, which lists all form objects in the form.
+1. Drag-drop the **Spouse Salary** field from the Form Objects tab on the **Drop object or select here** field. Alternatively, tap the **Drop object or select here** field and select the **Spouse Salary** field from the pop-up menu, which lists all form objects in the form.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -492,7 +492,7 @@ Perform the following steps to write rules:
 
    Next, create a condition, which when returns True, the expression executes.
 
-1. Tap **Add Condition **to add a When statement.
+1. Tap **Add Condition** to add a When statement.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
 
@@ -539,7 +539,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Custom functions in rule editor {#custom-functions}
 
-Apart from the out-of-the-box functions like *Sum of, *that are listed under Functions Output, you can write custom functions that you frequently need. Ensure that the function you write is accompanied by the `jsdoc` above it.
+Apart from the out-of-the-box functions like *Sum of* that are listed under Functions Output, you can write custom functions that you frequently need. Ensure that the function you write is accompanied by the `jsdoc` above it.
 
 Accompanying `jsdoc` is required:
 
