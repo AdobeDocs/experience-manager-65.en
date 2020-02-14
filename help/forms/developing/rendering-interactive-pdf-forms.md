@@ -202,7 +202,7 @@ Render an interactive PDF form by using the Forms API (Java):
 
    >[!NOTE]
    >
-   >Repeat this step for each file to attach to the form. This step is optional and you can pass `null`* if you do not want to send file attachments.*
+   >Repeat this step for each file to attach to the form. This step is optional and you can pass `null` if you do not want to send file attachments.
 
 1. Render an interactive PDF form
 

@@ -39,7 +39,7 @@ For the purpose of this discussion, the unique page identifier is placed in a do
  </DDX>
 ```
 
-This DDX document merges two PDF documents named *map.pdf* and* directions.pdf* into a single PDF document. The resultant PDF document contains a header that consists of a unique page identifier. For example, the document in the above illustration shows 000016.
+This DDX document merges two PDF documents named *map.pdf* and *directions.pdf* into a single PDF document. The resultant PDF document contains a header that consists of a unique page identifier. For example, the document in the above illustration shows 000016.
 
 >[!NOTE]
 >

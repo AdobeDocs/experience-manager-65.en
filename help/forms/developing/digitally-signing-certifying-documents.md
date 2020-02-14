@@ -562,7 +562,7 @@ The Signature service performs the following steps when a PDF document is signed
 1. The Truststore searches for the specified credential.
 1. The credential is returned to the Signature service and is used to sign the document. The credential is also cached against the alias for future requests.
 
-For information about handling the security credential, see the* Installing and Deploying AEM Forms* guide for your application server.
+For information about handling the security credential, see the *Installing and Deploying AEM Forms* guide for your application server.
 
 >[!NOTE]
 >
@@ -666,7 +666,7 @@ Time stamping refers to the process of tracking the time when a signed or certif
 
 To successfully sign a PDF document, you can specify the fully qualified name of the signature field that will contain the digital signature, such as `form1[0].#subform[1].SignatureField3[3]`. When using an XFA form field, the partial name of the signature field can also be used: `SignatureField3[3]`.
 
-You must also reference a security credential to digitally sign a PDF document. To reference a security credential, you specify an alias. The alias is a reference to an actual credential that may be in a PKCS#12 file (with a .pfx extension), or a hardware security module (HSM). For information about the security credential, see the* Installing and Deploying AEM Forms* guide for your application server.
+You must also reference a security credential to digitally sign a PDF document. To reference a security credential, you specify an alias. The alias is a reference to an actual credential that may be in a PKCS#12 file (with a .pfx extension), or a hardware security module (HSM). For information about the security credential, see the *Installing and Deploying AEM Forms* guide for your application server.
 
 **Save the signed PDF document**
 
