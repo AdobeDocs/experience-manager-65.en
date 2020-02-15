@@ -63,7 +63,7 @@ When the results are many assets, AEM displays the first 100 in the card view an
 
 >[!VIDEO](https://www.youtube.com/watch?v=LcrGPDLDf4o)
 
-At times, you may see some unexpected assets in the search results. For more info, see [unexpected results](#unexpectedresults).
+At times, you may see some unexpected assets in the search results. For more info, see [unexpected results](#troubleshoot-unexpected-search-results-and-issues).
 
 AEM can search many file formats and the search filters can be customized to suit your business requirements. Contact your administrator to understand what search options are made available for your DAM repository and what restrictions your account has.
 
