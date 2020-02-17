@@ -177,7 +177,7 @@ You can create a [Transient](/help/sites-developing/workflows.md#transient-workf
 
 >[!NOTE]
 >
->When you run a workflow under the [transient](/help/sites-developing/workflows.md#transient-workflows) mode AEM does not store any workflow history. Therefore, [Timeline](/help/sites-authoring/basic-handling.md#timeline) does not display any information related to that workflow. [](/help/sites-authoring/basic-handling.md#timeline)
+>When you run a workflow in [transient](/help/sites-developing/workflows.md#transient-workflows) mode AEM does not store any workflow history. Therefore, [Timeline](/help/sites-authoring/basic-handling.md#timeline) does not display any information related to that workflow. [](/help/sites-authoring/basic-handling.md#timeline)
 
 ## Make workflow models available in Touch UI {#classic2touchui}
 
@@ -192,7 +192,7 @@ If a workflow model is present in Classic UI, but missing in the selection popup
 
 1. Navigate to **[!UICONTROL Tools > Workflow > Models]**. Select **[!UICONTROL Request for Activation]**, then select **[!UICONTROL Edit]**.
 
-1. Select **[!UICONTROL Edit]**, open the **[!UICONTROL Page Information]** menu, and from there select **[UICONTROL Open Properties]** and go to the **[!UICONTROL Basic]** tab (if not already open).
+1. Select **[!UICONTROL Edit]**, open the **[!UICONTROL Page Information]** menu, and from there select **[!UICONTROL Open Properties]** and go to the **[!UICONTROL Basic]** tab (if not already open).
 
 1. Add `Workflow : DAM` to **[!UICONTROL Tags]** field. Confirm the selection with the check (tick). 
 
