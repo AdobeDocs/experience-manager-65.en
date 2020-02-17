@@ -457,7 +457,7 @@ You can create smart collections based on the search criteria. From the **[!UICO
 | When searching for visually similar images, an irrelevant image is displayed | Visual search behavior.| AEM displays as many potentially relevant assets as possible. Less relevant images, if any, are added to the results but with a lower search ranking. The quality of the matches and relevance of searched assets decrease as you scroll down the search results. |
 | When selecting and operating on searched assets, all searched assets are not operated upon | The [!UICONTROL Select All] option only selects first 100 search results in card view and first 200 search results in list view. ||
 
->[!MORE LIKE THIS]
+>[!MORELIKETHIS]
 >
 >* [AEM search implementation guide](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Advanced configuration of multi-value and tag search predicates](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
