@@ -20,14 +20,14 @@ While designing a form in AEM Forms Designer, besides previewing the PDF renditi
 To enable Designer to generate HTML preview of XDP forms, perform the following configurations:
 
 * Configure Apache Sling Authentication Service
-* Disable protected mode   
+* Disable protected mode
 * Provide details of AEM Forms server
 
 ### Configure Apache Sling Authentication Service {#configure-apache-sling-authentication-service}
 
-1. Go to https://[*server*]:[*port*]/system/console/configMgr on AEM Forms running on OSGi or   
-   https://[*server*]:[*port*]/lc/system/console/configMgr on AEM Forms running on JEE.
-1. Locate and click **Apache Sling Authentication Service** configuration to open it in edit mode.  
+1. Go to `https://[server]:[port]/system/console/configMgr` on AEM Forms running on OSGi or
+   `https://[server]:[port]/lc/system/console/configMgr` on AEM Forms running on JEE.
+1. Locate and click **Apache Sling Authentication Service** configuration to open it in edit mode.
 
 1. Depending on whether you are running AEM Forms on OSGi or JEE, add the following in the **Authentication Requirements** field:
 
@@ -54,24 +54,24 @@ The [protected mode](../../forms/using/get-xdp-pdf-documents-aem.md) is on, by d
 
 1. Log in to AEM Web Console as an administrator.
 
-    * URL for AEM Forms on OSGi is https://[server]:[port]/system/console/configMgr  
-    * URL for AEM Forms on JEE is https://[*server*]:[*port*]/lc/system/console/configMgr
+    * URL for AEM Forms on OSGi is `https://[server]:[port]/system/console/configMgr`
+    * URL for AEM Forms on JEE is `https://[server]:[port]/lc/system/console/configMgr`
 
 1. Open **[!UICONTROL Mobile Forms Configurations]** for editing.
 1. Deselect the **[!UICONTROL Protected Mode]** option and click **[!UICONTROL Save]**.
 
 ### Provide details of AEM Forms server {#provide-details-of-aem-forms-server}
 
-1. In Designer, go to **Tools **&gt; **Options**.
+1. In Designer, go to **Tools** &gt; **Options**.
 1. In the Options window, select **Server Options** page, provide the following details, and click **OK**.
 
-    * **Server URL**: AEM Forms server URL.  
-    
+    * **Server URL**: AEM Forms server URL.
+
     * **HTTP port number**: AEM server port. The default value is 4502.
     * **HTML Preview Context:** Path of the profile for rendering XFA forms. The following default profiles are used to preview the form in Designer. However, you can also specify path to a custom profile.
 
-        * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)  
-        
+        * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
+
         * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
 
     * **Forms Manager Context:** Context path at which Forms Manager UI is deployed. The default values are:
@@ -90,11 +90,11 @@ The [protected mode](../../forms/using/get-xdp-pdf-documents-aem.md) is on, by d
    >[!NOTE]
    >
    >
-   >    
-   >    
+   >
+   >
    >    * If HTML Preview tab is closed, Press F4 to open the Preview HTML tab. You can also select Preview HTML from View menu to open the Preview HTML tab.
-   >    * The HTML preview does not support PDF documents, the HTML preview is only for XDP documents. 
-   >    
+   >    * The HTML preview does not support PDF documents, the HTML preview is only for XDP documents.
+   >
    >
 
    >[!CAUTION]
@@ -109,9 +109,9 @@ If you do not have sample data, Designer can create it, or you can create it you
 
 Testing your form by using a sample data source ensures that the data and fields are mapped and that repeating subforms repeat as you expected. You can create a balanced form layout that provides the appropriate space for each object to display the merged data.
 
-1. Select **File &gt; Form Properties**.  
+1. Select **File &gt; Form Properties**.
 
-1. Click the **Preview **tab and, in the Data File box, type the full path to your test data file. You can also use the Browse button to navigate to the file.  
+1. Click the **Preview** tab and, in the Data File box, type the full path to your test data file. You can also use the Browse button to navigate to the file.
 
 1. Click **OK**. The next time you preview the form in the **Preview HTML** tab, the data values from the sample XML file will appear in the respective objects.
 
@@ -119,4 +119,4 @@ Testing your form by using a sample data source ensures that the data and fields
 
 In AEM Forms, you can preview forms and documents in a repository. Preview helps to know exactly how the forms look and behave as they will be used end users.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

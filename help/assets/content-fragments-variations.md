@@ -177,7 +177,7 @@ Summarizing text is designed to help users reduce the length of their text to a 
 
 >[!CAUTION]
 >
->The content fragment must have a valid language folder as an ancestor; this is used to determine the language model to be used.
+>The content fragment must have a valid language (ISO code) folder as an ancestor; this is used to determine the language model to be used.
 >
 >For example, `en/` as in the following path:
 >
@@ -262,30 +262,25 @@ They will be added to the paragraph sequence of the fragment without any formatt
 >There are various methods of adding [images](/help/assets/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
 1. Position the cursor at the position you want to add the image.
-2. Use the **Insert Asset** icon to open the search dialog.
+1. Use the **Insert Asset** icon to open the search dialog.
 
    ![cf-insertasset-icon](assets/cf-insertasset-icon.png)
 
-3. In the dialog you can either:
+1. In the dialog you can either:
 
     * navigate to the required asset in DAM
     * search for the asset in DAM
 
    Once located, select the required asset by clicking on the thumbnail.
 
-4. Use **Select** to add the asset to the paragraph system of your content fragment at the current location.
+1. Use **Select** to add the asset to the paragraph system of your content fragment at the current location.
 
    >[!CAUTION]
    >
    >If, after adding an asset, you change format to:
    >
-   >
-   >
-   >    * **Plain Text**: the asset will be completely lost from the fragment.
-   >    * **Markdown**: the asset will not be visible, but will still be there when you return to **Rich Text**.
-   >
-   >
-   >
+   >* **Plain Text**: the asset will be completely lost from the fragment.
+   >* **Markdown**: the asset will not be visible, but will still be there when you return to **Rich Text**.
 
 ## Managing Variations {#managing-variations}
 
@@ -363,7 +358,7 @@ When editing a variation you have access to the action for synchronizing the cur
 1. Open your content fragment in the fragment editor. Ensure that the **Master** has been edited.
 1. Select a specific variation, then the appropriate synchronization action from either:
 
-    * the **Actions** drop down selector - **Select current element with master**
+    * the **Actions** drop down selector - **Sync current element with master**
 
     * the toolbar of the full-screen editor - **Sync with master**
 

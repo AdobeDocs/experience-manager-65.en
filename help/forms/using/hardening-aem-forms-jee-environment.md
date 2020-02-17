@@ -34,7 +34,7 @@ You should not install or configure AEM Forms on JEE using a root shell. By defa
 
 **Installation and configuration on Windows**
 
-You should perform the installation on Windows as an administrator if you are installing AEM Forms on JEE on JBoss by using the turnkey method or if you are installing PDF Generator. Also, when installing PDF Generator on Windows with native application support, you must run the installation as the same Windows user who installed Microsoft Office. For more information about installation privileges, see the* Installing and Deploying AEM Forms on JEE* document for your application server.
+You should perform the installation on Windows as an administrator if you are installing AEM Forms on JEE on JBoss by using the turnkey method or if you are installing PDF Generator. Also, when installing PDF Generator on Windows with native application support, you must run the installation as the same Windows user who installed Microsoft Office. For more information about installation privileges, see the **Installing and Deploying AEM Forms on JEE** document for your application server.
 
 ### Network layer security {#network-layer-security}
 

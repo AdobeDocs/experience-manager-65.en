@@ -34,7 +34,7 @@ Typically, business users do not require knowledge of metadata representations s
 
 ## Prerequisite {#prerequisite}
 
-Install the [Compatibility Package](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html) to view the **Data Dictionaries** option on the **Forms** page.
+Install the [Compatibility Package](compatibility-package.md) to view the **Data Dictionaries** option on the **Forms** page.
 
 ## Create a data dictionary {#createdatadictionary}
 
@@ -450,7 +450,7 @@ When you want to send the same letter in different languages to your customers, 
 
 1. Archive the .properties file (or files for multiple locales) into a single .zip file.
 
-1. In the Data Dictionaries page, select **More** &gt; **Upload Localization Data **and select the zip file with localized properties files.
+1. In the Data Dictionaries page, select **More** &gt; **Upload Localization Data** and select the zip file with localized properties files.
 1. To view the localization changes, change your browser locale.
 
 ## Data Dictionary validations {#ddvalidations}

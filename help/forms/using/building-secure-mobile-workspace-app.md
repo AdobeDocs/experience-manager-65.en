@@ -29,7 +29,7 @@ You need to archive the Xcode project for AEM Forms app to build the installer (
 1. Log in to your Mac machine that has Xcode, and iOS SDK installed and configured.
 1. Open the `AEM Forms.xcodeproj` project in Xcode.
 1. Click **[!UICONTROL AEM Forms]**, under **[!UICONTROL TARGETS]**, select **[!UICONTROL AEM Forms]**. Select the **[!UICONTROL Build Settings]** tab, locate the **[!UICONTROL Code Signing Entitlement]** section and in the Entitlements dropdown, select the **[!UICONTROL LC Enterprise]** option.
-1. Locate and open the `LC Enterprise.entitlements` file in the Xcode for editing. Under the **XCode entitlements, **add the same key-value pair as present in your provisioning profile.
+1. Locate and open the `LC Enterprise.entitlements` file in the Xcode for editing. Under the **XCode entitlements**, add the same key-value pair as present in your provisioning profile.
 1. In the **[!UICONTROL Build Settings]** tab, click **[!UICONTROL All]** and then click **[!UICONTROL Combined]**.
 1. From the **[!UICONTROL Settings]** list, expand **[!UICONTROL Code Signing]**.
 1. For **[!UICONTROL Code Signing Identity]**, select the appropriate signature. Ensure that the same signature is selected for **[!UICONTROL Debug]**, **[!UICONTROL Release]**, and **[!UICONTROL Any iOS SDK]**.

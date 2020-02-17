@@ -1,19 +1,10 @@
 ---
-title: AEM Assets vs. AEM MediaLibrary
-seo-title: AEM Assets vs. AEM MediaLibrary
-description: Frequently asked questions around AEM Assets and. AEM Media Library, including differences between the two.
-seo-description: Frequently asked questions around AEM Assets and. AEM Media Library, including differences between the two.
-uuid: 47c789f6-f8b9-4de3-b04b-2caf53e8a9d5
-contentOwner: Chiradeep Majumdar
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
-discoiquuid: 9af77d13-f860-4615-a7cd-b0eedbc48a87
-docset: aem65
-
+title: Compare AEM Assets and AEM Media Library offering
+description: Compare AEM Assets and AEM Media Library offerings and know the differences.
+contentOwner: AG
 ---
 
-# AEM Assets vs. AEM MediaLibrary{#aem-assets-vs-aem-medialibrary}
+# AEM Assets versus AEM Media Library {#aem-assets-vs-aem-medialibrary}
 
 Adobe Experience Manager (AEM) Assets is an integral part of the AEM platform. This smooth integration is seen as a major advantage of AEM and ensures consistency in content management and high productivity for content authors.
 
@@ -31,10 +22,10 @@ The AEM Media Library is a designated part of the AEM WCM content repository whe
 
 Unique features that are only available to customers of AEM Assets are:
 
-1. the ability to extract and edit metadata other than title, tags and description.
-1. the AEM Assets Admin, available from the welcome screen by clicking the second button next to the siteadmin.
-1. All workflow steps related to Digital Asset Management, namely AEM Assets Ingestion, AEM Assets Deletion, AEM Assets Sub-Asset-Handling, AEM Assets metadata extraction.
-1. libraries including "dam" im package space.
+* the ability to extract and edit metadata other than title, tags and description.
+* the AEM Assets Admin, available from the welcome screen by selecting the second button next to the siteadmin.
+* all the workflow steps related to Digital Asset Management, namely AEM Assets Ingestion, AEM Assets Deletion, AEM Assets Sub-Asset-Handling, AEM Assets metadata extraction.
+* libraries including "dam" im package space.
 
 Using these features requires a valid license of AEM Assets.
 
@@ -48,11 +39,11 @@ If you are planning to edit metadata other than title, description and tags, it 
 
 ### I want to use the category predicate on my website. Do I need AEM Assets? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-Yes, the category predicate is part of AEM Assets and require an AEM Assets license.
+Yes, the category predicate is part of AEM Assets and requires an AEM Assets license.
 
-#### I want to automatically resize images upon import. Do I need AEM Assets? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
+### I want to automatically resize images upon import. Do I need AEM Assets? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
-Yes. Image resizing and automatic workflow-driven transformation as well as the ability to manage renditions is part of AEM Assets and requires an AEM Assets license.
+No. Resizing and automatic workflow-driven transformation of static images as well as the ability to manage renditions are part of AEM Media Library. These features do not require an AEM Assets license.
 
 ### I want to resize images using a customized image component. Do I need AEM Assets? {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
 
@@ -66,7 +57,7 @@ You can remove all AEM Assets-specific workflows, components, taxonomies, option
 
 For this use case it is not required to buy AEM Assets, even the use of the Media Library is not required to use images on a website as the smart image component allows uploading images directly into the page.
 
-### A detail list of features available in AEM Assets vs Media Library {#listoffeatures}
+### A detailed list of features available in AEM Assets vs Media Library {#listoffeatures}
 
 **AEM Assets**
 
@@ -85,7 +76,7 @@ For this use case it is not required to buy AEM Assets, even the use of the Medi
 * Search Facets Management and configuration
 * Pre-built DAM workflows (for example, photoshoot)
 * Asset Reporting and Analytics: Asset Insights
-* 3D Asset Management   
+* 3D Asset Management
 * Connected Assets
 * Brand Portal
 * Self-service access

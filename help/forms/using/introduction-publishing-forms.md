@@ -66,7 +66,7 @@ Forms portal enables you to list forms from the forms repository onto your porta
 
 1. **List draft and submitted forms on a forms portal page**: Add and configure the Drafts & Submissions component to the forms portal page. The component lists all the forms that are in the draft state and the forms that are already submitted.
 
-   To enable a submitted adaptive form to appear in the submissions tab, set the **Submit action** to **[Forms Portal Submit Action](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/configuring-submit-actions.html).** Alternatively,enable the Forms Portal Submit option. Whenever a user submits the form, the form is added to the submissions tab.
+   To enable a submitted adaptive form to appear in the submissions tab, set the **Submit action** to **[Forms Portal Submit Action](configuring-submit-actions.md).** Alternatively,enable the Forms Portal Submit option. Whenever a user submits the form, the form is added to the submissions tab.
 
 1. **Configure storage for the draft and submitted forms data:** By default, draft and submissions data is stored in the AEM repository. In a production environment, it is recommended not to store draft or submitted form data in AEM repository. [Configure forms portal component to save data to a secure location](../../forms/using/draft-submission-component.md#customizing-the-storage).
 1. **(Optional) Customizing the forms portal components:** [Customize your forms portal page templates](../../forms/using/customizing-templates-forms-portal-components.md) to provide a distinctive appearance to the components.
@@ -80,7 +80,7 @@ Forms portal enables you to list forms from the forms repository onto your porta
 * [List forms on a web page using APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Use Drafts and submissions component](../../forms/using/draft-submission-component.md)
 * [Customize storage of drafts and submitted forms](../../forms/using/draft-submission-component.md#customizing-the-storage)
-* [Sample for integrating drafts & submissions component with database](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html)
+* [Sample for integrating drafts & submissions component with database](integrate-draft-submission-database.md)
 * [Customizing templates for forms portal components](../../forms/using/customizing-templates-forms-portal-components.md)
 * [Introduction to publishing forms on a portal](../../forms/using/introduction-publishing-forms.md)
 

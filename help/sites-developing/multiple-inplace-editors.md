@@ -17,7 +17,7 @@ It is possible to configure your component so that it has multiple in-place edit
 
 When configured you can select the appropriate content and open the appropriate editor. For example:
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![chlimage_1-8](assets/chlimage_1-8a.png)
 
 ## Configuring Multiple Editors {#configuring-multiple-editors}
 

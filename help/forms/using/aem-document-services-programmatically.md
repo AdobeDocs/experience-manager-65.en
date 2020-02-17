@@ -2064,6 +2064,23 @@ public class PassEncryptSignExtend {
 }
 ```
 
+If the following error message displays while reader extending a PDF document:
+
+```xml
+org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.ThreadDeath: null at com.adobe.internal.pdftoolkit.services.javascript.GibsonContextFactory.observeInstructionCount(GibsonContextFactory.java:138)
+```
+
+It signifies that the Reader Extension service is not able to execute the JavaScripts used in the document within the defined timeout interval.
+
+Manage the timeout interval defined for the JavaScripts in the PDF document using:
+
+```xml
+ReaderExtensionsOptionSpec optionSpec = new ReaderExtensionsOptionSpec(usageRights, message);
+optionSpec.setJsScriptExecutionTimeoutInterval(100);
+```
+
+where 100 refers to the timeout interval defined for execution of JavaScripts (in seconds). Set an appropriate value for the timeout interval.
+
 ### Getting credential usage rights {#getting-credential-usage-rights}
 
 To fetch usage rights information of the credential specified by the given `credentialAlias`, call this API from within the `SecureDocument` API.

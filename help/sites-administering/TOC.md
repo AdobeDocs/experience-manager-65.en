@@ -1,6 +1,6 @@
 ---
 cloud: experience-cloud
-product: Adobe Experience Manager
+product: adobe experience manager
 audience: admin-user
 user-guide-title: AEM 6.5 Administering User Guide
 ---
@@ -34,29 +34,29 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [Data Store Garbage Collection](data-store-garbage-collection.md)
     + [Monitoring Server Resources Using the JMX Console](jmx-console.md)
     + [Working with Logs](troubleshooting.md)
+    + [Audit Log Maintenance in AEM 6](operations-audit-log.md)
     + [Configure the Rich Text Editor](rich-text-editor.md)
+    + [Configuring RTE for Producing Accessible Sites](rte-accessible-content.md)
+    + [Configuring Undo for Page Editing](config-undo.md)
+    + [Configure the Rich Text Editor plug-ins](configure-rich-text-editor-plug-ins.md)
     + [Configure the Video component](config-video.md)
     + [The Bulk Editor](bulk-editor.md)
     + [Configuring Email Notification](notification.md)
-    + [Configuring RTE for Producing Accessible Sites](rte-accessible-content.md)
     + [The External Link Checker](external-link-checker.md)
     + [Troubleshooting AEM](troubleshoot.md)
-    + [Audit Log Maintenance in AEM 6](operations-audit-log.md)
-    + [Editor](enable-classic-ui-editor.md)
     + [Managing Access to Workflows](workflows-managing.md)
+    + [Starting Workflows](workflows-starting.md)
+    + [Administering Workflows](workflows.md)
+    + [Administering Workflow Instances](workflows-administering.md)
     + [Using cURL with AEM](curl.md)
-    + [Configuring Undo for Page Editing](config-undo.md)
     + [Proxy Server Tool (proxy.jar)](proxy-jar.md)
     + [Configuring for AEM Apps](config-apps.md)
-    + [Administering Workflows](workflows.md)
     + [Configuring Search Forms](search-forms.md)
     + [Tools Consoles](tools-consoles.md)
     + [Reporting](reporting.md)
-    + [Administering Workflow Instances](workflows-administering.md)
     + [Configuring Layout Container and Layout Mode](configuring-responsive-layout.md)
+    + [Editor](enable-classic-ui-editor.md)
     + [Enabling Access to Classic UI](enable-classic-ui.md)
-    + [Starting Workflows](workflows-starting.md)
-    + [Configure the Rich Text Editor plug-ins](configure-rich-text-editor-plug-ins.md)
     + [Admin Consoles](enable-classic-ui-admin.md)
 + Security {#security}
     + [User Administration and Security](security.md)
@@ -120,7 +120,6 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [Related Community Articles](related-community-articles.md)
     + [Integrating with Adobe Campaign Standard](campaignstandard.md)
     + [Flash Viewers End-of-Life Notice](flash-viewers-eol.md)
-    + [Integrating with Adobe Creative Cloud](creative-cloud.md)
     + [Product Feed](product-feed.md)
     + [Integrating with Adobe Dynamic Tag Management](dtm.md)
     + [Opting Into Adobe Analytics and Adobe Target](opt-in.md)

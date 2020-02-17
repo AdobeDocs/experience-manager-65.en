@@ -21,7 +21,7 @@ The Generate PDF service uses native applications to convert the following file 
 
 * Microsoft Office 2003 and 2007 to convert DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX, XPS, and PUB (Windows only)
 
-  ***Note**: Acrobat® 9.2 or later is required to convert Microsoft XPS format to PDF.*
+  **Note**: Acrobat® 9.2 or later is required to convert Microsoft XPS format to PDF.*
 
 * Autodesk AutoCAD 2005, 2006, 2007, 2008, and 2009 to convert DWF, DWG, and DXW (English only)
 * Corel WordPerfect 12 and X4 to convert WPD, QPW, SHW (English only)
@@ -640,7 +640,7 @@ When this section and the next section describe dialog boxes and their component
 
 From a user’s perspective, the dialog boxes and their components show different behaviors, where some dialog box elements are hidden until activated. From an internal representation perspective, no such issue of behavior exists. For example, the internal representation of a dialog box looks similar to that of the components it contains, with the exception that the components are nested within the dialog box.
 
-This section describes XML elements that provide AppMon with instructions. These elements have names such as the `dialog` element and the `window` element. This document uses a monospaced font to distinguish XML elements. The `*dialog*` element identifies a dialog box that an XML script file can cause to be displayed, either intentionally or unintentionally. The `*window*` element identifies a window element (dialog box or the components of a dialog box).
+This section describes XML elements that provide AppMon with instructions. These elements have names such as the `dialog` element and the `window` element. This document uses a monospaced font to distinguish XML elements. The `dialog` element identifies a dialog box that an XML script file can cause to be displayed, either intentionally or unintentionally. The `window` element identifies a window element (dialog box or the components of a dialog box).
 
 #### Hierarchy {#hierarchy}
 
@@ -710,7 +710,7 @@ If you plan to work on dialog or script XML files, you should install the applic
 
 The dialog and script files reside in the appmondata.jar file. Before you can modify any of these files or add new script or dialog files, you must unpackage this JAR file. For example, assume that you want to add support for the EditPlus application. You create two XML files, named appmon.editplus.script.en_US.xml and appmon.editplus.script.addition.en_US.xml. These XML scripts must be added to the adobe-appmondata.jar file in two locations, as specified below:
 
-* adobe-livecycle-native-jboss-x86_win32.ear &gt; adobe-Native2PDFSvc.war\WEB-INF\lib &gt; adobe-native.jar &gt; Native2PDFSvc-native.jar\bin &gt; adobe-appmondata.jar\com\adobe\appmon. The adobe-livecycle-native-jboss-x86_win32.ear file is in the export folder at *[AEM forms install directory]\*configurationManager. (if AEM Forms is deployed on another J2EE application server, replace the adobe-livecycle-native-jboss-x86_win32.ear file with the EAR file that corresponds to your J2EE application server.)
+* adobe-livecycle-native-jboss-x86_win32.ear &gt; adobe-Native2PDFSvc.war\WEB-INF\lib &gt; adobe-native.jar &gt; Native2PDFSvc-native.jar\bin &gt; adobe-appmondata.jar\com\adobe\appmon. The adobe-livecycle-native-jboss-x86_win32.ear file is in the export folder at `[AEM forms install directory]\configurationManager`. (if AEM Forms is deployed on another J2EE application server, replace the adobe-livecycle-native-jboss-x86_win32.ear file with the EAR file that corresponds to your J2EE application server.)
 * adobe-generatepdf-dsc.jar &gt; adobe-appmondata.jar\com\adobe\appmon (the adobe-appmondata.jar file is within the adobe-generatepdf-dsc.jar file). The adobe-generatepdf-dsc.jar file is in the *[AEM forms install directory]*\deploy folder.
 
 After you add these XML files to the adobe-appmondata.jar file, you must redeploy the GeneratePDF component. To add dialog and script XML files to the adobe-appmondata.jar file, perform these tasks:

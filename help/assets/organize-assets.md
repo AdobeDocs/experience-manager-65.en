@@ -1,57 +1,67 @@
 ---
-title: Organize digital assets
-description: Organize your digital assets.
-uuid: 3baf6563-c90e-4bf6-8c04-c68877e3f146
+title: Organize your digital assets
+description: Organize your digital assets, images, files, folders, and so on using Experience Manager.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 5877f8f8-1f4b-430c-a173-13c40b233c33
-docset: aem65
-
 ---
 
-# Organize digital assets {#organize-digital-assets}
+# Organize your digital assets {#organize-digital-assets}
 
 All digital assets, metadata and content of Microsoft Office and PDF documents are extracted and made searchable. Search allows sophisticated filtering on assets and fully respects the proper permissions. Metadata is covered in detail in metadata in Digital Asset Management.
 
 AEM Assets supports multiple ways of organizing content. You can organize them in a hierarchical manner using folders or you can organize them in an unordered, ad-hoc manner, using for example tags. Users can edit tags in the DAM Asset Editor where sub-assets, renditions, and metadata are displayed.
 
-## Create folders {#create-folders}
+## Organize assets in folders {#organize-using-folders}
 
-When organizing a collection of assets, for example, all *Nature* images, you can create folders to keep them together. You can use folders to categorize and organize your assets. AEM Assets does not require you to organize assets in folders to work better.
+The most basic way to organize assets is to save these in folders. It is analogous to organizing files in folders in our local filesystem. For more information about how to create and manage folders, see [Manage assets](managing-assets-touch-ui.md). How you name files and folders, how you arrange sub-folders, and how you handle the files within these folders can have a significant impact on how those assets are processed. By using consistent and appropriate file and folder naming strategies, along with good metadata practice, you can make the most of your digital assets repository.
 
->[!NOTE]
->
->Sharing an Assets folder (in Marketing Cloud) of the type `sling:OrderedFolder`, is not supported. If you want to share a folder, do not select Ordered when creating a folder.
+* In most cases, your digital assets repository is always growing. Therefore, it is important to formalize metadata use, folder structure, and file naming early in the content creation cycle.
+* Use folders only to impose a consistent storage structure for your digital assets. This consistency helps your process and manage your assets better. For example, assets placed in the following types of folders can help you use appropriate [profiles to use for asset processing](processing-profiles.md):
 
-1. Navigate to the place in your digital assets folder where you want to create a new folder.
-1. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
-1. In the **[!UICONTROL Title]** field, provide a folder name. By default, DAM uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
-1. Click **[!UICONTROL Create]**. Your folder is displayed in the digital assets folder.
+    * **Development folders** &ndash; contains digital assets that you are currently working on.
+    * **Client folders** &ndash; contains digital assets based on clients or project names.
+    * **Master folders** &ndash; contains original, source digital assets.
+    * **Rendition folders** &ndash; contains renditions and copies of the original, source digital assets.
+    * **File Size folders** &ndash; contains digital assets based on small, medium, or large file sizes.
+    * **Staging folders** &ndash; contains digital assets that are ready to publish live on your website.
+    * **MIME type folders** &ndash; contains digital assets that are specific to MIME types such as images, documents, and multimedia.
+    * **Archive folders** &ndash; contains retired digital assets.
+    * **Date-based folders** &ndash; contains digital assets based on a creation date or a last modified date.
 
-![new asset folder is instantly displayed in the folder list](assets/create-asset-folder.png)
+* Create a directory of folders that are not likely to change so that any customization or automation continues to work. For example, the assigned processing profiles continue to work.
+* If an asset is already published, then you use AEM to move the asset to another folder, and re-publish from its new location, the original published asset location is still available, along with the newly re-published asset. The original published asset, however, is *lost* to AEM and cannot be unpublished. Therefore, as a best practice, first unpublish an asset and then move it to a different folder.
 
-## Add CUG properties to folders {#add-cug-properties-to-folders}
+## Organize assets using tags {#use-tags-to-organize-assets}
 
-You can limit who can access certain folders in Assets by making the folder part of a closed user group (CUG). To make a folder part of a CUG:
+Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and leverage Adobe Sensei's AI algorithms for asset discovery.
 
-1. In Assets, right-click the folder you want to add closed user group properties for and select **[!UICONTROL Properties]**.  
+Adobe Experience Manager Assets uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, our artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
 
-1. Click the **[!UICONTROL CUG]** tab.
+For more information, see the following articles:
 
-   ![chlimage_1-76](assets/chlimage_1-76.png)
+* [About tags in AEM](/help/sites-authoring/tags.md)
+* [Edit asset metadata](meta-edit.md)
+* [Enhanced Smart Tags in Assets](enhanced-smart-tags.md)
 
-1. Select the **[!UICONTROL Enabled]** check box to make the folder and its assets available only to a closed user group.  
+## Organize as collections {#organize-as-collections}
 
-1. Browse to the login page, if there is one, to add that information. Add admitted groups by clicking **[!UICONTROL Add item]**. If necessary, add the realm. Click **[!UICONTROL OK]** to save your changes.
+With asset collections in Experience Manager Assets, you can streamline the ability to create, edit and share assets between users. Create several types of collections based on the way you use them, including collections that contain a static reference list of assets, folders and collections, as well as collections that pull in assets based on search criteria.  You also can create collections with assets from different locations and share them with multiple users with different levels of access, viewing and editing privileges.
 
-## Use tags to organize assets {#use-tags-to-organize-assets}
+For more information, see [manage collections](managing-collections-touch-ui.md)
 
-You can use folders or tags or both to organize assets. Adding tags to assets makes them more easy to retrieve during a search. See [Tagging](/help/sites-authoring/tags.md) for more information on tagging.
+<!-- TBD items: add screenshots where applicable
+Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
+Add back links to blog posts by marketing?
+-->
 
-To add tags to an asset:
+## Organize your assets to use profiles {#organize-to-use-profiles}
 
-1. In the Digital Asset Manager, double-click the asset to open it.
-1. In the **[!UICONTROL Tags]** area, click the pop-up menu to reveal the available tags. Select tags as appropriate to add a tag. To delete a tag, hover the mouse over the tag and click the **x** to delete it.
-1. Click **[!UICONTROL Save]** to save any tags you added.
+A processing profile contains Assets processing commands that apply to assets that get uploaded to pre-defined folders. Profiles are used to automate the processing of contents of a folder or freshly uploaded assets. You can leverage profiles to organize your assets better. 
 
-![Apply tags to assets to organize and categorize them](assets/add-tags-to-assets.png)
+Standardizing metadata usage, file naming, and folder structure ensures that as your pool of digital assets grows, you can apply processing profiles to folders with greater precision and consistency.
+
+For more information on various profiles that you can create and manage to process assets, see,
+
+* [Profiles to process metadata, images, and videos](processing-profiles.md)
+* [Metadata profiles](metadata-profiles.md)
+* [Video profiles](video-profiles.md)
+* [Dynamic Media image profiles](image-profiles.md)

@@ -43,7 +43,7 @@ The assets in the conditions that are rendered based on the applied rules and th
     * **[!UICONTROL Name]**: The unique name for the condition, within a folder. No two document fragments (text, condition, or list) in any state can exist with the same name within a folder. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
 
     * **[!UICONTROL Description]**: Type a description of the document fragment.
-    * **[!UICONTROL Form Data Model]**: Optionally, select the Form Data Model radio button to create the condition based on a form data model. When you select Form Data Model radio button, **[!UICONTROL Form Data Model*]** field appears. Browse and select a form data model. While creating condition for an Interactive Communication, ensure that you use the same data model that you intend to use in the Interactive Communication. For more information on form data model, see [Data Integration](../../forms/using/data-integration.md).
+    * **[!UICONTROL Form Data Model]**: Optionally, select the Form Data Model radio button to create the condition based on a form data model. When you select Form Data Model radio button, **[!UICONTROL Form Data Model]** field appears. Browse and select a form data model. While creating condition for an Interactive Communication, ensure that you use the same data model that you intend to use in the Interactive Communication. For more information on form data model, see [Data Integration](../../forms/using/data-integration.md).
 
     * **[!UICONTROL Tags]**: Optionally, to create custom tag enter value in text field and tap Enter. When you save this condition, the newly added tags get created.
 
@@ -183,10 +183,10 @@ Tap Resize again to go back to the Create Rule\Edit Rule dialog.
 
 1. Enter the following information and tap **[!UICONTROL Create]**:
 
-    * **[!UICONTROL Name*]**: Name of the variable.
+    * **[!UICONTROL Name]**: Name of the variable.
     * **[!UICONTROL Description]**: Optionally enter a description about the variable.
-    * **[!UICONTROL Type*]**: Select a type of the variable: String, Number, Boolean, or Date.
-    * **[!UICONTROL Allow Specific Values Only]**: For String and Number variables, you can ensure that the agent chooses from a specific set of values for a placeholder in the Agent UI. To specify the set of values, select this option and then specify comma-separated values that are allowed in the **[!UICONTROL Values*]** field.
+    * **[!UICONTROL Type]**: Select a type of the variable: String, Number, Boolean, or Date.
+    * **[!UICONTROL Allow Specific Values Only]**: For String and Number variables, you can ensure that the agent chooses from a specific set of values for a placeholder in the Agent UI. To specify the set of values, select this option and then specify comma-separated values that are allowed in the **[!UICONTROL Values]** field.
 
 1. Tap **[!UICONTROL Create]**.
 

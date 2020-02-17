@@ -63,7 +63,7 @@ On the default AEM form setup, if a user spends more than 60 seconds on a field,
 
 You can modify the `trackEvent`function available in `/libs/afanalytics/js/custom.js` file to customize the event tracking. Whenever an event that is being tracked occurs in an adaptive form, the `trackEvent`function is called. The `trackEvent` function accepts two parameters: `eventName`and `variableValueMap`.
 
-You can evaluate value of *eventName *and *variableValueMap* arguments to change the tracking behavior of events. For example, you can choose to send the information to analytics server after a certain number of error events occur. You can also choose to perform any of the following customizations:
+You can evaluate value of *eventName* and *variableValueMap* arguments to change the tracking behavior of events. For example, you can choose to send the information to analytics server after a certain number of error events occur. You can also choose to perform any of the following customizations:
 
 * You can set a threshold time before sending the event.
 * You can maintain a state to decide action, for example, *fieldVisit* pushes a dummy event based on the timestamp of the last event.
@@ -73,7 +73,7 @@ You can evaluate value of *eventName *and *variableValueMap* arguments to change
 
 ### Sample {#sample}
 
-In the following example, state for the *error* event of each *fieldName *attribute is maintained*. *The event is sent to the analytics server only if an error occurs again.
+In the following example, state for the *error* event of each *fieldName* attribute is maintained. The event is sent to the analytics server only if an error occurs again.
 
 ```
 case 'error':

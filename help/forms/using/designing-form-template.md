@@ -36,4 +36,4 @@ The key target for HTML5 forms is touch devices. Therefore, a new scribble signa
 
 ![4](assets/4.png)
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

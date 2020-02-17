@@ -1,12 +1,7 @@
 ---
 title: Manage video assets
 description: Learn how to upload, preview, annotate, and publish video assets.
-uuid: 7e27adf0-527f-4cdc-8fed-ccc3302e90fe
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: b9cbf283-ebbb-4e33-af19-7b17b4a1e323
-docset: aem65
-
 ---
 
 # Manage video assets {#manage-video-assets}
@@ -21,7 +16,7 @@ Adobe Experience Manager Assets generates previews for video assets with the ext
 1. To upload the asset, click or tap **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Files]**. Alternatively, drop it directly in the assets area. See [Uploading assets](managing-assets-touch-ui.md#uploading-assets) for details around the upload operation.
 1. To preview a video in the Card view, tap the **[!UICONTROL Play]** button on the video asset.
 
-   ![chlimage_1-65](assets/chlimage_1-65.png)
+   ![chlimage_1-65](assets/chlimage_1-201.png)
 
    You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] buttons are not available in the list view.
 
@@ -29,7 +24,7 @@ Adobe Experience Manager Assets generates previews for video assets with the ext
 
    The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen.
 
-   ![chlimage_1-66](assets/chlimage_1-66.png)
+   ![chlimage_1-66](assets/chlimage_1-202.png)
 
 ## Configuration to upload assets that are larger than 2 GB {#configuration-to-upload-assets-that-are-larger-than-gb}
 
@@ -51,7 +46,7 @@ To configure a higher file size limit, perform the following steps in the `/apps
 1. From the toolbar, tap the **[!UICONTROL Overlay Node]**. Alternatively, select **[!UICONTROL Overlay Node]** from the context menu.
 1. In the **[!UICONTROL Overlay Node]** dialog, tap **[!UICONTROL OK]**.
 
-   ![chlimage_1-67](assets/chlimage_1-67.png)
+   ![chlimage_1-67](assets/chlimage_1-203.png)
 
 1. Refresh the browser. The overlay node `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` is selected.
 1. In the **[!UICONTROL Properties]** tab, enter the appropriate value in bytes to increase the size limit to the desired size. For example, to increase the size limit to 30 GB, enter `{sizeLimit : "32212254720"}` value.
@@ -78,14 +73,14 @@ After your video assets are published, they are available to you for including i
 1. To play the video, click or tap the [!UICONTROL Preview] icon.
 1. To annotate the video, click the **[!UICONTROL Annotate]** button. An annotation is added at the particular timepoint (frame) in the video. When annotating, you can draw on the canvas and include a comment with the drawing. Comments are auto-saved.
 
-   ![chlimage_1-68](assets/chlimage_1-68.png)
+   ![chlimage_1-68](assets/chlimage_1-204.png)
 
    To exit the annotation wizard, click **[!UICONTROL Close]**.
 
 1. Seek to a specific point in the video, specify the time in seconds in the **text** field and click **Jump**. For example, to skip the first 10 seconds of video, enter 20 in the text field.
 
-   ![chlimage_1-69](assets/chlimage_1-69.png)
+   ![chlimage_1-69](assets/chlimage_1-205.png)
 
 1. To view it in the timeline, click an annotation. To delete the annotation from the timeline, click **[!UICONTROL Delete]**.
 
-   ![chlimage_1-70](assets/chlimage_1-70.png)
+   ![chlimage_1-70](assets/chlimage_1-206.png)

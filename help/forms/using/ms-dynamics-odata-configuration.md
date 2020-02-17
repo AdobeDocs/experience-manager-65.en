@@ -28,7 +28,7 @@ When the package is installed, the following entities and services are available
 * MS Dynamics OData Cloud Service (OData Service)
 * Form data model with preconfigured Microsoft Dynamics entities and services.
 
-The OData Cloud Service and form data model with preconfigured Microsoft Dynamics entities and services are available on your AEM Forms instance only if the run mode for the AEM instance is set as `samplecontent`(default). For more information on configuring run modes for an AEM instance, see [Run Modes](https://helpx.adobe.com/in/experience-manager/6-4/help/sites-deploying/configure-runmodes.html).
+The OData Cloud Service and form data model with preconfigured Microsoft Dynamics entities and services are available on your AEM Forms instance only if the run mode for the AEM instance is set as `samplecontent`(default). For more information on configuring run modes for an AEM instance, see [Run Modes](/help/sites-deploying/configure-runmodes.md).
 
 ## Prerequisites {#prerequisites}
 
@@ -117,7 +117,7 @@ The **MS Dynamics OData Cloud Service (OData Service)** configuration comes with
 
     1. Enter the value for the **Service Root** field. Go to the Dynamics instance and navigate to **Developer Resources** to view the value for the Service Root field. For example, https://&lt;tenant-name&gt;/api/data/v9.1/
 
-    1. Replace the default values in the **Client Id **(also referred to as **Application ID**), **Client Secret**, **OAuth URL**, **Refresh Token URL**, **Access Token URL**, and **Resource **fields with values from your Microsoft Dynamics service configuration. It is mandatory to specify the dynamics instance URL in the **Resource **field to configure Microsoft Dynamics with a form data model. Use the Service Root URL to derive the dynamics instance URL. For example, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+    1. Replace the default values in the **Client Id**(also referred to as **Application ID**), **Client Secret**, **OAuth URL**, **Refresh Token URL**, **Access Token URL**, and **Resource** fields with values from your Microsoft Dynamics service configuration. It is mandatory to specify the dynamics instance URL in the **Resource** field to configure Microsoft Dynamics with a form data model. Use the Service Root URL to derive the dynamics instance URL. For example, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
     1. Specify **openid** in the **Authorization Scope** field for authorization process on Microsoft Dynamics.
 
@@ -138,7 +138,7 @@ On opening the form data model for the first time, it connects to the configured
 
 To review the form data model, go to **[!UICONTROL Forms > Data Integrations]**. Select **Microsoft Dynamics FDM** and click **Edit** to open the form data model in edit mode. Alternatively, you can open the form data model directly from the following URL:
 
-`https://[*server*]:[*port*]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
+`https://[server]:[port]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
 ![default-fdm-1](assets/default-fdm-1.png)
 

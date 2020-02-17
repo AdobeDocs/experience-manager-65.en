@@ -33,7 +33,7 @@ Variables are an extension of the existing [MetaDataMap](https://helpx.adobe.com
 You create variables using the Variables section available in the sidekick of the workflow model. AEM workflow variables support the following data types:
 
 * **Primitive data types**: Long, Double, Boolean, Date, and String
-* **Complex data types**: [Document](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html), and Form Data Model instance.
+* **Complex data types**: [Document](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html), and Form Data Model instance.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ You require [AEM Forms add-on package](https://helpx.adobe.com/aem-forms/kb/aem-
 
 Execute the following steps to create a variable:
 
-1. On an AEM instance, navigate to Tools ![](https://chl-author-preview.corp.adobe.com/content/dam/help/en/aem-forms/icons/Hammer.png) &gt; Workflow &gt; Models.
+1. On an AEM instance, navigate to Tools ![](/help/forms/using/assets/hammer.png) &gt; Workflow &gt; Models.
 1. Tap **[!UICONTROL Create]** and specify the title and an optional name for the workflow model. Select the model and tap **[!UICONTROL Edit]**.
 1. Tap the variables icon available in the sidekick of the workflow model and tap **[!UICONTROL Add Variable]**.
 
@@ -57,7 +57,7 @@ Execute the following steps to create a variable:
     * Form Data Model - Specify a Form Data Model path.
     * ArrayList - Specify a sub-type for the collection.
 
-1. Specify an optional description for the variable and tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the changes. The variable displays in the list available in the left pane.
+1. Specify an optional description for the variable and tap ![](assets/done_icon.png) to save the changes. The variable displays in the list available in the left pane.
 
 When you create variables, consider the following practices:
 
@@ -91,16 +91,16 @@ You can also update specific elements of a JSON or XML type variable using JSON 
 Execute the following steps to add mapping between variables:
 
 1. On the workflow edit page, tap the Steps icon available in the sidekick of the workflow model.
-1. Drag-and-drop the **Set Variable** step to the workflow editor, tap the step and select ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
+1. Drag-and-drop the **Set Variable** step to the workflow editor, tap the step and select ![](assets/configure_icon.png) (Configure).
 1. On the Set Variable dialog, select **[!UICONTROL Mapping]** > **[!UICONTROL Add Mapping]**.
 1. In the **Map Variable** section, select the variable to store data, select the mapping mode, and specify a value to store in the variable. The mapping modes vary based on the type of variable.
-1. Map more variables to make a meaningful expression. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the changes.
+1. Map more variables to make a meaningful expression. Tap ![](assets/done_icon.png) to save the changes.
 
 ### Example 1: Query an XML variable to set value for a string variable {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
 Select a variable of XML type to store an XML file. Query the XML variable to set the value for a string variable for the property available in the XML file. Use **Specify XPATH for the XML variable** field to define the property to store in the string variable.
 
-In this example, select a **formdata** XML variable to store the **cc-app.xml** file. Query the **formdata** variable to set the value for the **emailaddress** string variable to store the value for the **emailAddress** property available in the** cc-app.xml** file.
+In this example, select a **formdata** XML variable to store the **cc-app.xml** file. Query the **formdata** variable to set the value for the **emailaddress** string variable to store the value for the **emailAddress** property available in the **cc-app.xml** file.
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "Set value of a variable")
 
@@ -229,7 +229,7 @@ You can use an API to set variables and pass them to invoke workflow instances.
 
 [workflowSession.startWorkflow](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) uses model, wfData, and metaData as arguments. Use MetaDataMap to set value for the variable.
 
-In this API, the **variableName** variable is set to **value **using metaData.put(variableName, value);
+In this API, the **variableName** variable is set to **value** using metaData.put(variableName, value);
 
 ```java
 import com.adobe.granite.workflow.model.WorkflowModel;
@@ -267,8 +267,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Edit a variable {#edit-a-variable}
 
 1. On the edit workflow page, tap the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
-1. Tap the ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to the variable name that you want to edit.
-1. Edit the variable information and tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the changes. You cannot edit the **[!UICONTROL Name]** and **[!UICONTROL Type]** fields for a variable.
+1. Tap the ![](assets/edit.png) (Edit) icon next to the variable name that you want to edit.
+1. Edit the variable information and tap ![](assets/done_icon.png) to save the changes. You cannot edit the **[!UICONTROL Name]** and **[!UICONTROL Type]** fields for a variable.
 
 ## Delete a variable {#delete-a-variable}
 
@@ -278,7 +278,7 @@ Execute the following steps to delete a variable:
 
 1. On the edit workflow page, tap the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
 1. Tap the Delete icon next to the variable name that you want to delete.
-1. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to confirm and delete the variable.
+1. Tap ![](assets/done_icon.png) to confirm and delete the variable.
 
 ## References {#references}
 

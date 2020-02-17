@@ -68,7 +68,7 @@ These PDF files can be opened in Adobe Acrobat 5 and Adobe Acrobat Reader® 5 or
 
 Print jobs fail if they have fonts that cannot be embedded. These PDF files can be opened in Acrobat 5 and Acrobat Reader 5 and later.
 
-***Note**: Before you create a PDF file to send to a commercial printer or prepress service provider, determine the output resolution and other settings, or request a .joboptions file with the recommended settings. You may need to customize the Adobe PDF settings for a particular provider and then provide a .joboptions file of your own. *
+**Note**: Before you create a PDF file to send to a commercial printer or prepress service provider, determine the output resolution and other settings, or request a .joboptions file with the recommended settings. You may need to customize the Adobe PDF settings for a particular provider and then provide a .joboptions file of your own.
 
 **Smallest File Size:** Creates PDF files for displaying on the web or an intranet, or for distribution through an email system for onscreen viewing. This set of options uses compression, downsampling, and a relatively low image resolution. It converts all colors to sRGB and does not embed fonts unless necessary. It also optimizes files for byte serving. These PDF files can be opened in Acrobat 5 and Acrobat Reader 5.0 and later.
 

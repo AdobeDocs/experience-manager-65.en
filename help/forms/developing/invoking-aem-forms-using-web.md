@@ -245,7 +245,7 @@ Here is the correlation between transmission types and the field from which you 
 
 >[!NOTE]
 >
->It is recommended that you do not exceed 30 MB when populating a `BLOB` object by invoking its `setBinaryData` method. Otherwise, there is a possibility that an `OutOfMemory`* exception occurs.*
+>It is recommended that you do not exceed 30 MB when populating a `BLOB` object by invoking its `setBinaryData` method. Otherwise, there is a possibility that an `OutOfMemory` exception occurs.
 
 >[!NOTE]
 >
@@ -422,7 +422,7 @@ You can use JAX-WS to convert a Forms service WSDL to Java proxy classes. These 
 
    >[!NOTE]
    >
-   >Replace `EncryptionService`* with the AEM Forms service name that you want to invoke using Java proxy classes. For example, to create Java proxy classes for the Rights Management service, specify:*
+   >Replace `EncryptionService`with the AEM Forms service name that you want to invoke using Java proxy classes. For example, to create Java proxy classes for the Rights Management service, specify:
 
    ```as3
     http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1
@@ -523,7 +523,7 @@ You can generate Axis Java library files by performing the following steps:
 
    >[!NOTE]
    >
-   >There are different ways to put .JAVA files into a JAR. One way is using a Java IDE like Eclipse. Create a Java project and create a `com.adobe.idp.services`* package (all .JAVA files belong to this package). Next import all the .JAVA files into the package. Finally, export the project as a JAR file.*
+   >There are different ways to put .JAVA files into a JAR. One way is using a Java IDE like Eclipse. Create a Java project and create a `com.adobe.idp.services`package (all .JAVA files belong to this package). Next import all the .JAVA files into the package. Finally, export the project as a JAR file.
 
 1. Amend the URL in the `EncryptionServiceLocator` class to specify the encoding type. For example, to use base64, specify `?blob=base64` to ensure that the `BLOB` object returns binary data. That is, in the `EncryptionServiceLocator` class, locate the following line of code:
 
@@ -673,7 +673,7 @@ You can invoke an AEM Forms service using Java proxy classes and Base64. To invo
 
    >[!NOTE]
    >
-   >Replace `hiro-xp`* with the IP address of the J2EE application servier hosting AEM Forms. *
+   >Replace `hiro-xp`with the IP address of the J2EE application servier hosting AEM Forms.
 
 1. Package the Java proxy classes created using using JAX-WS into a JAR file.
 1. Include the Java proxy JAR file and the JAR files located in the following path:
@@ -740,7 +740,7 @@ When this process is invoked, it performs the following actions:
 
 >[!NOTE]
 >
->JAX WS-based applications that use the MTOM transmission protocol are limited to 25MB of sent and received data. This limitation is due to a bug in JAX-WS. If the combined size of your sent and received files exceeds 25MB, usetheSwaRef transmission protocol instead of the MTOM one. Otherwise, there is a possibility of an `OutOfMemory`* exception.*
+>JAX WS-based applications that use the MTOM transmission protocol are limited to 25MB of sent and received data. This limitation is due to a bug in JAX-WS. If the combined size of your sent and received files exceeds 25MB, usetheSwaRef transmission protocol instead of the MTOM one. Otherwise, there is a possibility of an `OutOfMemory` exception.
 
 The discussion here is about using MTOM withthin a Microsoft .NET project to invoke AEM Forms services. The .NET framework used is 3.5, and the development environment is Visual Studio 2008. If you have Web Service Enhancements (WSE) installed on your development computer, remove it. The .NET 3.5 framework supports a SOAP framework named Windows Communication Foundation (WCF). When invoking AEM Forms by using MTOM, only WCF (not WSE) is supported.
 
@@ -786,7 +786,7 @@ Consider the `MyApplication/EncryptDocument` process that accepts an unsecured P
 
    >[!NOTE]
    >
-   >Replace `hiro-xp`* with the IP address of the J2EE application servier hosting AEM Forms. *
+   >Replace `hiro-xp`with the IP address of the J2EE application servier hosting AEM Forms.
 
 1. Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptDocumentClient.Endpoint.Binding` data member. Cast the return value to `BasicHttpBinding`.
 1. Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` data member to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.

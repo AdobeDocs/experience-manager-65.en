@@ -1,6 +1,6 @@
 ---
 cloud: experience-cloud
-product: Adobe Experience Manager
+product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Deploying Guide
 ---
@@ -28,7 +28,7 @@ user-guide-title: AEM 6.5 Deploying Guide
     + [Oak-run.jar Indexing Use Cases](oak-run-indexing-usecases.md)
     + [Troubleshooting Oak Indexes](troubleshooting-oak-indexes.md)
     + [Opting Into Aggregated Usage Statistics Collection](opt-in-aggregated-usage-statistics.md)
-    + [Maintenance Release Vehicle Definitions](maintenance-release-vehicle-definitions.md)
+    + [Update Release Vehicle Definitions](update-release-vehicle-definitions.md)
     + [Troubleshooting](troubleshooting.md)
 + Configuring AEM {#configuring}
     + [Basic Configuration Concepts](configuring.md)

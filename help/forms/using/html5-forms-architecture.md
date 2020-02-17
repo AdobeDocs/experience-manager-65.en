@@ -126,7 +126,7 @@ The scripting engine of HTML Forms is written in JavaScript to support the XFA s
 
 At render time, the FormCalc script is translated (and cached) into JavaScript on the server transparent to the user or designer.
 
-This scripting engine uses some of the feature of ECMAScript5 like Object.defineProperty. The engine / library is delivered as CQ Client Lib with the category name **xfaforms.profile**. It also provides **FormBridge API **to enable external portals or apps to interact with form. Using FormBridge, an external app can programmatically hide certain elements, get or set their values, or change their attributes.
+This scripting engine uses some of the feature of ECMAScript5 like Object.defineProperty. The engine / library is delivered as CQ Client Lib with the category name **xfaforms.profile**. It also provides **FormBridge API** to enable external portals or apps to interact with form. Using FormBridge, an external app can programmatically hide certain elements, get or set their values, or change their attributes.
 
 For more details, see the [Form Bridge](/help/forms/using/form-bridge-apis.md) article.
 
@@ -183,4 +183,4 @@ As described above, the profile renderer JSP calls Forms Service via a sling inc
 
 HTML5 forms allow developers to create Profile and Profile Renderer to customize the appearance of the forms. For example, HTML forms allow developers to integrate forms in a panel or &lt;div&gt; section of an existing HTML portal.
 For more details on creating custom profiles, see [Creating a Custom Profile](/help/forms/using/custom-profile.md).
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

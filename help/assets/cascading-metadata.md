@@ -1,15 +1,10 @@
 ---
 title: Cascading Metadata
 description: This article describes how to define cascading metadata for assets.
-uuid: 4660774b-3915-4b9b-8346-c8a207486a6f
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 89db8d26-744f-4d5c-8f00-6f69a4c5ca5e
-docset: aem65
-
 ---
 
-# Cascading Metadata {#cascading-metadata}
+# Cascading metadata {#cascading-metadata}
 
 When capturing the metadata information of an asset, users provide information in the various available fields. You can display specific metadata fields or field values that are dependent on the options selected in the other fields. Such conditional display of metadata is called cascading metadata. In other words, you can create a dependency between a particular metadata field/value and one or more fields and/or their values.
 
@@ -40,7 +35,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
 1. (Optional) In the metadata schema editor, create a new field to conditionalize. Specify a name and property path in the **[!UICONTROL Settings]** tab.
 
-   To create a new tab, tap/click **[!UICONTROL +]** to add a tab and then add a metadata field.
+   To create a new tab, tap/click `+` to add a tab and then add a metadata field.
 
    ![add_tab](assets/add_tab.png)
 
@@ -93,7 +88,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
    >[!NOTE]
    >
-   >Tapping/clicking on whitespaces (or anyplace other than values) will reset the values. In this case, you must select them again.
+   >Tapping/clicking on a whitespace (or any place other than the values) resets the values. If it happens, re-select the values.
 
    >[!NOTE]
    >
@@ -106,7 +101,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 1. Navigate to the folder to which you applied the Metadata Schema and open the properties page of an asset. Depending upon your choice in the Asset Type field, pertinent cascading metadata fields are displayed.
 
    ![Cascading metadata for Video asset](assets/video_asset.png)
-   *Figure: Cascading metadata for Video asset*
+   *Figure: Cascading metadata for a video*
 
    ![Cascading metadata for document asset](assets/doc_type_fields.png)
-   *Figure: Cascading metadata for document asset*
+   *Figure: Cascading metadata for a document*

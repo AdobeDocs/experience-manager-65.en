@@ -174,7 +174,7 @@ The MyJobConsumer class generates the following log messages for an input payloa
 
 The Consumed property can be observed using CRXDE Lite:
 
-![chlimage_1-25](assets/chlimage_1-25.png)
+![chlimage_1-25](assets/chlimage_1-25a.png)
 
 ## Maven Dependencies {#maven-dependencies}
 

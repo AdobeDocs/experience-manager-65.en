@@ -143,6 +143,12 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td>Oracle Database 18c </td>
    <td>Repository Microkernel</td>
    <td>Supported</td>
+  </tr> 
+  
+   <tr>
+   <td>Oracle Database 19c </td>
+   <td>Repository Microkernel</td>
+   <td>Supported</td>
   </tr>
   <tr>
    <td><p>Microsoft SQL Server 2016</p> </td>
@@ -189,6 +195,11 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
   </tr>
   <tr>
    <td>Oracle Database 18c</td>
+   <td>Repository Microkernel</td>
+   <td>Supported</td>
+  </tr>
+    <tr>
+   <td>Oracle Database 19c</td>
    <td>Repository Microkernel</td>
    <td>Supported</td>
   </tr>
@@ -731,4 +742,4 @@ Adobe reserves the right to change the third-party reference platforms supported
 
 Additional information for third-party patches can also be found by searching the Adobe Enterprise Support site for knowledgebase articles related to your product.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

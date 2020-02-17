@@ -24,6 +24,11 @@ See also [Characteristics of SRP Options](working-with-srp.md#characteristics-of
 * [MySQL](#mysql-configuration), a relational database
 * [Apache Solr](#solr-configuration), a search platform
 
+>[!NOTE]
+>
+>The default storage configuration is now stored in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) instead of etc path (`/etc/socialconfig/srpc/defaultconfiguration`). You are advised to follow the [migration steps](#zerodt-migration-steps) to make defaultsrp work as expected.
+>
+
 ## Relational Database Configuration {#relational-database-configuration}
 
 ### MySQL Configuration {#mysql-configuration}
@@ -56,6 +61,10 @@ On author, to access the Storage Configuration console
     * Select **[!UICONTROL Storage Configuration]**
 
         * As an example, the resulting location is: [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
+        >[!NOTE]
+        >
+        >The default storage configuration is now stored in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`)      instead of etc path (`/etc/socialconfig/srpc/defaultconfiguration`). You are advised to follow the [migration steps](#zerodt-migration-steps) to make defaultsrp work as expected.
+        >
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
@@ -90,7 +99,17 @@ On author, to access the Storage Configuration console
 
       *default*: collection1
 
-* Select **[!UICONTROL Submit]**
+* Select **[!UICONTROL Submit]**.
+
+### Zero downtime migration steps for defaultsrp {#zerodt-migration-steps}
+
+Follow these steps to ensure that the defaultsrp page [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) works as expected:
+
+1. Rename the path at `/etc/socialconfig` to `/etc/socialconfig_old`, so that system configuration falls back to jsrp(default).
+1. Go to defaultsrp page [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp), where jsrp is configured. Click the **[!UICONTROL submit]** button so that new default configuration node is created at `/conf/global/settings/community/srpc`.
+1. Delete the created default configuration `/conf/global/settings/community/srpc/defaultconfiguration`.
+1. Copy the old configuration `/etc/socialconfig_old/srpc/defaultconfiguration` in place of the deleted node (`/conf/global/settings/community/srpc/defaultconfiguration`) in the previous step.
+1. Delete the old etc node `/etc/socialconfig_old`.
 
 ## Publishing the Configuration {#publishing-the-configuration}
 

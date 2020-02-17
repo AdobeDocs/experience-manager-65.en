@@ -119,13 +119,13 @@ Perform the following steps to create a custom Submit action that saves the data
 
    Add the following properties in the store_and_email node:
 
-    * **guideComponentType **of type **String** and value **fd/af/components/guidesubmittype**
+    * **guideComponentType** of type **String** and value **fd/af/components/guidesubmittype**
 
-    * **guideDataModel** of type **String **and value **xfa, xsd, basic**
+    * **guideDataModel** of type **String** and value **xfa, xsd, basic**
 
-    * **jcr:description **of type **String **and value **Store and Email Action**
+    * **jcr:description** of type **String** and value **Store and Email Action**
 
-1. Open any adaptive form. Click the **Edit** button next to **Start** to open the **Edit** dialog of the adaptive form container. The new action is displayed in the **Submit Actions** Tab. Selecting the **Store and Email Action **displays the configuration added in the dialog node.
+1. Open any adaptive form. Click the **Edit** button next to **Start** to open the **Edit** dialog of the adaptive form container. The new action is displayed in the **Submit Actions** Tab. Selecting the **Store and Email Action** displays the configuration added in the dialog node.
 
    ![Submit action configuration dialog](assets/store_and_email_submit_action_dialog.jpg)
 

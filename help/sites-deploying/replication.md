@@ -110,7 +110,7 @@ The following agents are available in a standard AEM installation:
   Used for replicating from publish to author. Reverse replication is not used for Communities features, such as forums, blogs, and comments. It is effectively disabled as the outbox is not enabled. Use of reverse replication would require custom configuration.
 
 * Static Agent
-  This is an "Agent that stores a static representation of a node into the filesystem.".
+  This is an "Agent that stores a static representation of a node into the filesystem."
   For example with the default settings, content pages and dam assets are stored under `/tmp`, either as HTML or the appropriate asset format. See the `Settings` and `Rules` tabs for the configuration.
   This was requested so that when the page is requested directly from the application server the content can be seen. This is a specialized agent and (probably) will not be required for most instances.
 
@@ -134,9 +134,9 @@ When configuring a replication agent from the Tools console, four tabs are avail
 
   When the agent is **enabled** the queue will be shown as:
 
-    * **Active **when items are being processed.
-    * **Idle **when the queue is empty.
-    * **Blocked **when items are in the queue, but cannot be processed; for example, when the receiving queue is disabled.
+    * **Active** when items are being processed.
+    * **Idle** when the queue is empty.
+    * **Blocked** when items are in the queue, but cannot be processed; for example, when the receiving queue is disabled.
 
 * **Serialization Type**
 
@@ -445,7 +445,6 @@ If you encounter any problems, you can check the logs on the author instance. De
 >[!NOTE]
 >
 >This can be combined with use of the [Agent User Id](#agentuserid) to select different content for replicating to the individual publish environments. For each publish environment:
-
 >
 >1. Configure a replication agent for replicating to that publish environment.
 >1. Configure a user account; with the access rights required to read the content that will be replicated to that specific publish environment.
@@ -458,7 +457,7 @@ Default agents are included with the installation. However, certain configuratio
 
 1. Open the **Tools** tab in AEM.
 1. Click **Deployment**.
-1. Select **Replication **and then **Agents on publish**.
+1. Select **Replication** and then **Agents on publish**.
 1. Double-click on the **Dispatcher Flush** item to open the overview.
 1. Click **Edit** - the **Agent Settings** dialog will open:
 
@@ -556,7 +555,32 @@ To monitor a replication agent:
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
-### Additional Resources {#additional-resources}
+## Batch Replication {#batch-replication}
+
+The batch replication does not replicate individual pages or assets, but waits for the fist threshold of the two, based on time or size, to be triggered.
+
+It then packs all replication items into a package, which is then replicated as one single file to the publisher.
+
+The publisher will unpack all the items, save them and report back to the author.
+
+### Configuring Batch Replication {#configuring-batch-replication}
+
+1. Go to `http://serveraddress:serverport/siteadmin`
+1. Press the **[!UICONTROL Tools]** icon in the uppper side of the screen
+1. From the left hand side navigation rail, go to **[!UICONTROL Replication - Agents on Author]** and double click **[!UICONTROL Default Agent]**.
+   * You can also reach the default publish replication agent by going directly to `http://serveraddress:serverport/etc/replication/agents.author/publish.html`
+1. Press the **[!UICONTROL Edit]** button above the replication queue.
+1. In the following window, go to the **[!UICONTROL Batch]** tab:
+   ![batchreplication](assets/batchreplication.png)
+1. Configure the agent.
+
+### Parameters {#parameters}
+
+* `[!UICONTROL Enable Batch Mode]` - enables or disables batch replication mode
+* `[!UICONTROL Max Wait Time]` - Maximum wait time until a batch request is started, in seconds. The default is 2 seconds.
+* `[!UICONTROL Trigger Size]` - Starts batch replication when this size limit 
+
+## Additional Resources {#additional-resources}
 
 For details about troubleshooting, you can read the [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md) page.
 

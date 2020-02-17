@@ -173,7 +173,7 @@ In **Table** you must explicitly set or remove the attribute to/from the DOM ele
    }
    ```
 
-1. Save your changes using **Save All …**
+1. Save your changes using **Save All…**
 
 >[!NOTE]
 >

@@ -174,7 +174,7 @@ Test whether you have internationalized all of the strings in your UI. To see wh
 
 The following image shows the stub translation for the AEM home page:
 
-![chlimage_1](assets/chlimage_1.jpeg)
+![chlimage_1](assets/chlimage_1a.jpeg)
 
 To set the language for the user, configure the language property of the preferences node for the user account.
 
@@ -182,5 +182,5 @@ The preferences node of a user has a path like this:
 
 `/home/users/<letter>/<hash>/preferences`
 
-![chlimage_1-1](assets/chlimage_1-1.jpeg)
+![chlimage_1-1](assets/chlimage_1-1a.jpeg)
 

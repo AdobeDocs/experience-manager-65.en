@@ -1,12 +1,7 @@
 ---
-title: Managing Multiple Assets and Collections
+title: Manage multiple assets and collections
 description: Learn how to edit the metadata of multiple assets and collections simultaneously to quickly propagate common metadata changes.
-uuid: b4677aa5-5114-4f64-826d-8395c6cfa37d
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 32816785-6acd-4cc7-9698-f867f4d79e2e
-docset: aem65
-
 ---
 
 # Manage assets and collections {#managing-multiple-assets-and-collections}
@@ -18,13 +13,13 @@ Use the properties page to perform metadata changes on multiple assets or collec
 * Change metadata properties to a common value
 * Add or modify tags
 
-To customize the metadata properties page, including adding, modifying, deleting metadata properties, use the Schema editor.
+To customize the metadata properties page, including adding, modifying, deleting metadata properties, use the schema editor.
 
 >[!NOTE]
 >
->The bulk editing methods work for assets available in a folder or a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](/help/assets/search-assets.md#metadataupdates).
+>The bulk editing methods work for assets available in a folder or a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](search-assets.md#metadataupdates).
 
-## Editing metadata properties of multiple assets {#editing-metadata-properties-of-multiple-assets}
+## Edit metadata properties of multiple assets {#editing-metadata-properties-of-multiple-assets}
 
 1. In the Assets user interface, navigate to the location of the assets you want to edit.
 1. Select the assets for which you want to edit common properties.
@@ -52,7 +47,7 @@ To customize the metadata properties page, including adding, modifying, deleting
    >
    >For single-value fields, the new metadata is not appended to the existing value in the field even if you select **[!UICONTROL Append mode]**.
 
-## Editing metadata properties of multiple collections {#editing-metadata-properties-of-multiple-collections}
+## Edit metadata properties of multiple collections {#editing-metadata-properties-of-multiple-collections}
 
 1. From the Collections console, select the collections you want to edit.
 1. From the toolbar, tap/click **[!UICONTROL Properties]** to open the properties page for the selected collections.

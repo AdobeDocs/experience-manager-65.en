@@ -28,7 +28,7 @@ To promote pages, perform the following steps while editing the launch page that
 1. Specify the pages to promote:
 
     * (Default) To promote only the current page, select **Promote Page Changes To Production Version**.
-    * To also promote the child pages of the curent page, select **Include Sub Pages**.
+    * To also promote the child pages of the current page, select **Include Sub Pages**.
     * To promote all pages in the launch, select **Promote Full Launch To Production Version**.
 
 1. To add the production pages to a workflow package, select **Add To Workflow Package** and then select the workflow package.

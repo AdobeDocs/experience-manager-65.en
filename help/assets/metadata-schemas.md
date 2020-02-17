@@ -1,12 +1,7 @@
 ---
 title: Metadata schemas
 description: Metadata schema defines the layout of the properties page and the metadata properties displayed for assets. Learn how to create custom metadata schema, edit metadata schema, and how to apply metadata schema to assets.
-uuid: f4894492-aad2-4ba7-a833-3c01381a1474
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 4c78de71-ca73-4e09-9f99-bb86d4443d01
-docset: aem65
-
 ---
 
 # Metadata schemas {#metadata-schemas}
@@ -68,7 +63,7 @@ You can use the Metadata Schema Forms editor to modify existing schemas or add c
 
    ![chlimage_1-38](assets/chlimage_1-174.png)
 
-## Editing metadata schema forms {#edit-metadata-schema-forms}
+## Edit metadata schema forms {#edit-metadata-schema-forms}
 
 You can edit a newly-added or existing metadata schema form. The metadata schema form includes the following:
 
@@ -120,9 +115,11 @@ To edit the properties of a metadata component on the form, click the component 
 
 The following are the valid values for this property:
 
-* . `/jcr:content/metadata/dc:title`: Stores the value at the asset's metadata node as the property `dc:title`.
+The following are the valid values for this property:
 
-* . `/jcr:created`: Displays the jcr property at the asset's node. If you configure these properties on view properties, we recommend that you mark them as Disable Edit, because they are protected. Otherwise, the error "Asset(s) failed to modify" occurs when you save the asset's properties.
+* `./jcr:content/metadata/dc:title`: Stores the value at the asset's metadata node as the property `dc:title`.
+
+* `./jcr:created`: Displays the JCR property at the asset's node. If you configure these properties on view properties, we recommend that you mark them as Disable Edit, because they are protected. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset's properties.
 
 To ensure that the component is displayed properly in the metadata schema form, the property path should not include any spaces.
 
@@ -158,7 +155,7 @@ To include any tab in the properties page in addition to the tab where the Conte
 
 Instead of specifying properties for the options in the **[!UICONTROL Settings]** tab, you can define the options in a JSON file by specifying corresponding key-value pairs. Specify the path of the JSON file in the **[!UICONTROL JSON Path]** field.
 
-#### Adding/deleting a tab in the schema form {#adding-deleting-a-tab-in-the-schema-form}
+#### Add or delete a tab in the schema form {#adding-deleting-a-tab-in-the-schema-form}
 
 The schema editor lets you add or delete a tab. The default schema form includes the **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]**, and **[!UICONTROL IPTC Extension]** tabs, by default.
 

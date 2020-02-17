@@ -224,9 +224,9 @@ Use a field if you want to capture module data or data dictionary element data i
 
 When elements such as your organization’s logo and address appear on all pages of a letter/Interactive Communication, create form fields for those elements and place them on the master page. Use Name (Field Name) binding for these fields.
 
-## Specify the server&nbsp;render format {#specify-the-server-nbsp-render-format}
+## Specify the server render format {#specify-the-server-nbsp-render-format}
 
 Use the layout’s server render format to Dynamic XML Form; otherwise, any letters/Interactive Communications based on this layout cannot render correctly. By default, the server render format in Forms Designer is set to Dynamic XML Form. To ensure that you are using the correct format:
 
-* In Designer, click **File **&gt; **Form Properties **&gt; **Defaults**, and ensure that the PDF Render/Format setting is set to Dynamic XML Form.
+* In Designer, click **File** &gt; **Form Properties** &gt; **Defaults**, and ensure that the PDF Render/Format setting is set to Dynamic XML Form.
 

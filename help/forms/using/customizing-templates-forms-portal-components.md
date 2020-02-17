@@ -30,7 +30,7 @@ Perform the following steps to create a custom template for various Forms Portal
 
 ## Creating a&nbsp;custom template {#creating-a-nbsp-custom-template}
 
-1. Create a sling:Folder node under */apps *
+1. Create a sling:Folder node under /apps
 
    Add a "fpContentType" property. Specify appropriate values for the property depending on the component for which you are defining the custom template.
 
@@ -44,7 +44,7 @@ Perform the following steps to create a custom template for various Forms Portal
 
    Add a title that you want displayed while selecting layout templates.
 
-   *Note: The title can be different from the node name of sling:Folder you created.* 
+   *Note: The title can be different from the node name of sling:Folder you created.*
    *The following image depicts the configuration for the Search & Lister component.* ![Creating a sling:Folder](assets/1.png)
 
 1. Create a file template.html in this folder to serve as the custom template.
@@ -99,17 +99,18 @@ Various Forms Portal components provide exclusive sets of OOTB metadata that you
 * **pdfUrl**: URL to render the form as PDF
 * **assetType**: Type of the asset. Valid values include **Form**,**PDF Form**, **Print Form**, and **Adaptive Form**
 
-* **htmlStyle **& **pdfStyle**: Display style for HTML and PDF icons respectively used for rendering. Valid values are “**__FP_display_none**” or **blank  
+* **htmlStyle **& **pdfStyle**: Display style for HTML and PDF icons respectively used for rendering. Valid values are “**__FP_display_none**” or blank.
+
   **Note:** Remember to use the __FP_display_none class in your custom style sheet
 
 * **downloadUrl**: URL to download an asset.
 
 Support for localization, sorting, and using configuration properties on the user interface (Search & Lister Only):
 
-1. **Localization Support**: To localize any static text use the attribute `${localize-YOUR_TEXT}` and make the localized value available, if doesn't exist already.  
+1. **Localization Support**: To localize any static text use the attribute `${localize-YOUR_TEXT}` and make the localized value available, if doesn't exist already.
    *In the example discussed, the attributes `${localize-Apply}` and `${localize-Download}` are used to localize the Apply and Download text.*
 
-1. **Support for Sorting**: Click the HTML element to sort search results. To implement sorting in a tabled layout, add the "data-sortKey" attribute on the particular table header. In addition, add its value as the metadata for which you want to sort.  
+1. **Support for Sorting**: Click the HTML element to sort search results. To implement sorting in a tabled layout, add the "data-sortKey" attribute on the particular table header. In addition, add its value as the metadata for which you want to sort.
    For example, for the "Title" header in the grid view, the value of the "data-sortKey" header is "title". Click the heading to sort the values in a particular column.
 
 1. **Using configuration properties**: The Search & Lister component has several configurations that you can use on the user interface. For example, to display HTML ToolTip text saved through the edit dialog, use the `${config-htmlLinkText}` attribute. **Similarly, for PDF tool tip text, use the** `${config-pdfLinkText}` attribute.
@@ -164,3 +165,13 @@ Support for localization, sorting, and using configuration properties on the use
 1. Ensure that the name of any custom metadata or existing metadata does not include a colon ( : ). If it does, you cannot display it on the user interface.
 1. **data-repeatable** does not have any significance for a **Link** component. Adobe recommends that you avoid using this property in the template for a Link component.
 
+## Related Articles
+
+* [Enable forms portal components](/help/forms/using/enabling-forms-portal-components.md)
+* [Create forms portal page](/help/forms/using/creating-form-portal-page.md)
+* [List forms on a web page using APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
+* [Use Drafts and submissions component](/help/forms/using/draft-submission-component.md)
+* [Customize storage of drafts and submitted forms](/help/forms/using/draft-submission-component.md)
+* [Sample for integrating drafts & submissions component with database](/help/forms/using/integrate-draft-submission-database.md)
+* [Customizing templates for forms portal components](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Introduction to publishing forms on a portal](/help/forms/using/introduction-publishing-forms.md)

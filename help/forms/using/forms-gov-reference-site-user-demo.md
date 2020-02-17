@@ -69,9 +69,9 @@ The following groups are also included:
 1. **Links**: Located at the top of the main menu in We.Gov site.
 1. **User Instructions**: A set of numerical steps to follow when navigating through the user's story.
 1. **Forms Portal**: *https://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/formsportal.html*
-1. **Mobile View**:* *We.Gov user to replicate a mobile view with a re-sized browser.*
-1. **Desktop View**: *We.gov user to view demo on a laptop or desktop.*
-1. **Pre-screener Form**:* Form on the Home page of the We.Gov site.*
+1. **Mobile View**:We.Gov user to replicate a mobile view with a re-sized browser.
+1. **Desktop View**: We.gov user to view demo on a laptop or desktop.
+1. **Pre-screener Form**: Form on the Home page of the We.Gov site.
 1. **Adaptive Form**: Enrollment application form for We.gov demo.
 
    *https://&lt;aemserver&gt;:&lt;port&gt;/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
@@ -206,7 +206,7 @@ Aya needs to review some documents at home before she can complete the service r
 **User Instructions:**
 
 1. Check the “**I agree**” box.
-1. Click “Accept”.
+1. Click “**Accept**”.
 1. Scroll to the bottom of the reviewed document.
 1. Click on the highlighted yellow tab to sign the document.
 
@@ -334,11 +334,11 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
     1. This will open the web channel version of the same document.
 
-1. &#42;For a quick reference to PDF directly:
+1. For a quick reference to PDF directly:
 
    *https://&lt;aemserver&gt;:&lt;port&gt;/aem/formdetails.html/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook*
 
-1. &#42;For a quick reference to IC directly:
+1. For a quick reference to IC directly:
 
    *https://&lt;aemserver&gt;:&lt;port&gt;/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook/jcr:content?channel=web&mode=preview&wcmmode=disabled*
 

@@ -103,7 +103,7 @@ Execute the following steps to create variables for fields with Agent UI as the 
 
    ![bill_details_customerplan_fdm](assets/bill_details_customerplan_fdm.png)
 
-1. Click **Save **to create the Bill Details text document fragment.
+1. Click **Save** to create the Bill Details text document fragment.
 
 ## Step 2: Create Customer Details text document fragment {#step-create-customer-details-text-document-fragment}
 
@@ -168,7 +168,7 @@ Execute the following steps to create variables for fields with Agent UI as the 
 
    ![Customer details](assets/customer_details_df2_new.png)
 
-1. Click **Save **to create the Customer Details text document fragment.
+1. Click **Save** to create the Customer Details text document fragment.
 
 ## Step 3: Create Bill Summary text document fragment {#step-create-bill-summary-text-document-fragment}
 
@@ -256,7 +256,7 @@ Execute the following steps to create static text and use form data model elemen
 1. Select **Create** &gt; **Text**.
 1. Specify the following information:
 
-    1. Enter **summary_charges_first_ic **as the name in the **Title** field. The title gets auto-populated in the Name field.
+    1. Enter **summary_charges_first_ic** as the name in the **Title** field. The title gets auto-populated in the Name field.
 
     1. Select **Form Data Model** from the **Data Model** section.
 

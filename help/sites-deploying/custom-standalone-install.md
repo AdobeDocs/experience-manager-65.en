@@ -327,7 +327,7 @@ To open CRXDE Lite you can select **CRXDE Lite** from the welcome screen or use 
 ```
 
 For example:
-`https://localhost:4502/crx/de/index.jsp` ``
+`https://localhost:4502/crx/de/index.jsp`
 
 ![installcq_crxdelite](assets/installcq_crxdelite.png)
 
@@ -336,7 +336,7 @@ For example:
 To access the Adobe CQ Web console you can select **OSGi Console** from the welcome screen or use your browser to navigate to
 
 ```
- https://<<i>host</i>>:<<i>port</i>>/system/console
+ https://<host>:<port>/system/console
 ```
 
 For example:

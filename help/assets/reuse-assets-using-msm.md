@@ -1,12 +1,8 @@
 ---
 title: Reuse assets using MSM for Assets
 description: Use assets across multiple pages/folders that are derived from and linked to parent assets. The assets stay in sync with a master copy and with a few clicks, receive the updates from parent assets.
-uuid: 5319bfd6-911b-4351-88d6-eeafc5ef5541
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 358b490d-c514-42ba-b9f0-8e29d5e6046e
-docset: aem65
-
+mini-toc-levels: 1
 ---
 
 # Reuse assets using MSM for Assets {#reuse-assets-using-msm-for-assets}

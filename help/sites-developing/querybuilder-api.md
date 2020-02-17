@@ -497,18 +497,18 @@ Explain **all** queries during the development cycle against the target index se
 
     * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Paste the XPath query into [Explain Query](/help/sites-administering/operations-dashboard.md#explain-query) as XPath to obtrain the query plan
+* Paste the XPath query into [Explain Query](/help/sites-administering/operations-dashboard.md#explain-query) as XPath to obtain the query plan
 
 **Obtain explain-able XPath via the Query Builder debugger**
 
 * Use the AEM QueryBuilder debugger to generate an explainable XPath query:
 
-![chlimage_1-66](assets/chlimage_1-66.png)
+![chlimage_1-66](assets/chlimage_1-66a.png)
 
 1. Provide the Query Buidler query in the Query Builder debugger
 1. Execute the Search
 1. Obtain the generated XPath
-1. Paste the XPath query into Explain Query as XPath to obtrain the query plan
+1. Paste the XPath query into Explain Query as XPath to obtain the query plan
 
 >[!NOTE]
 >

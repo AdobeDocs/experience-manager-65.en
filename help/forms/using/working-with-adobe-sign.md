@@ -43,13 +43,13 @@ Before using Adobe Sign in an adaptive form:
 
 Perform the following steps to configure Adobe Sign for an adaptive form:
 
-1. [Edit adaptive form properties for Adobe sign](../../forms/using/working-with-adobe-sign.md#main-pars-header-46741052)
-1. [Add Adobe Sign fields to an adaptive form](../../forms/using/working-with-adobe-sign.md#main-pars-header-868561487)
-1. [Enable Adobe Sign for an adaptive form](../../forms/using/working-with-adobe-sign.md#main-pars-header-1414119828)
-1. [Select Adobe Sign Cloud Service for an adaptive form](../../forms/using/working-with-adobe-sign.md#main-pars-header-473098029)
+1. [Edit adaptive form properties for Adobe sign](../../forms/using/working-with-adobe-sign.md#enableadobesign)
+1. [Add Adobe Sign fields to an adaptive form](../../forms/using/working-with-adobe-sign.md#addadobesignfieldstoanadaptiveform)
+1. [Enable Adobe Sign for an adaptive form](../../forms/using/working-with-adobe-sign.md#enableadobsignforanadaptiveform)
+1. [Select Adobe Sign Cloud Service for an adaptive form](../../forms/using/working-with-adobe-sign.md#selectadobesigncloudserviceforanadaptiveform)
 
-1. [Add Adobe Sign Signers to an adaptive form](../../forms/using/working-with-adobe-sign.md#main-pars-header-1374317451)
-1. [Select Submit Action for an adaptive form](../../forms/using/working-with-adobe-sign.md#main-pars-header)
+1. [Add Adobe Sign Signers to an adaptive form](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform)
+1. [Select Submit Action for an adaptive form](../../forms/using/working-with-adobe-sign.md#selectsubmitactionforanadaptiveform)
 
 ![Signer Details](assets/signer_details_new.png)
 
@@ -100,16 +100,13 @@ Adobe Sign has various fields that can be placed on an adaptive form. These fiel
 
 Perform the following steps to add fields to an adaptive form and customize various options related to these fields:
 
-1. Drag-and-drop **Adobe Sign Block** component from the component browser to the adaptive form. The Adobe Sign Block component has all the supported Adobe Sign fields. By default, it adds a **Signature **field to the adaptive form.
+1. Drag-and-drop **Adobe Sign Block** component from the component browser to the adaptive form. The Adobe Sign Block component has all the supported Adobe Sign fields. By default, it adds a **Signature** field to the adaptive form.
 
    ![Sign block](assets/sign_block_new.png)
 
    By default, the Adobe Sign Block is not visible in the published adaptive form. It is visible only in the signing documents. You can change the visibility of Adobe Sign Block from the properties of the Adobe Sign Block component.
 
    >[!NOTE]
-   >
-   >
-   >
    >
    >    * Using Adobe Sign block is not mandatory to use Adobe Sign in an adaptive form. If you do not use Adobe Sign block and add fields for the signers, then the default signature field is displayed at the bottom of the signing documents.
    >    * Use Adobe Sign block only for those adptive forms which automatically generate Document of Record. If you are using a custom XDP for generating Document of Record or a form template based adaptive form, Adobe Sign block is not required.
@@ -128,7 +125,7 @@ Perform the following steps to add fields to an adaptive form and customize vari
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
-   It is mandatory to provide a unique name for a field. You can also select the required option to mark a field mandatory. In addition to the **Name **and **Required **option, some Adobe Sign field have more options. For example, mask and multi-line. Moreover, specify a unique names for each Adobe Sign field whether the fields reside in same or different Adobe Sign blocks.
+   It is mandatory to provide a unique name for a field. You can also select the required option to mark a field mandatory. In addition to the **Name** and **Required**option, some Adobe Sign field have more options. For example, mask and multi-line. Moreover, specify a unique names for each Adobe Sign field whether the fields reside in same or different Adobe Sign blocks.
 
    If you select **Digital Signature** from the drop-down list, you can apply digital signatures to the adaptive form:
 
@@ -140,7 +137,7 @@ Perform the following steps to add fields to an adaptive form and customize vari
 Out of the box, Adobe Sign is not enabled for an adaptive form. Perform the following steps to enable it:
 
 1. In the Content browser, tap **Form Container**, and tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser and displays Adaptive Form container properties.
-1. In the properties browser, expand the **Electronic Signature **accordion, and select the **Enable Adobe Sign** option. It enables Adobe Sign for an adaptive form.
+1. In the properties browser, expand the **Electronic Signature** accordion, and select the **Enable Adobe Sign** option. It enables Adobe Sign for an adaptive form.
 
 ### Select Adobe Sign Cloud Service and signing order {#selectadobesigncloudserviceforanadaptiveform}
 
@@ -153,7 +150,7 @@ Perform the following steps to select a cloud service and order of signing:
 ![cloud-service](assets/cloud-service.png)
 
 1. In the Content browser, tap **Form Container**, and tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser and displays Adaptive Form container properties.
-1. In the properties browser, expand the **Electronic Signature **accordion, and select the **Enable Adobe Sign** option. It enables Adobe Sign for an adaptive form.
+1. In the properties browser, expand the **Electronic Signature** accordion, and select the **Enable Adobe Sign** option. It enables Adobe Sign for an adaptive form.
 1. Select a cloud service from the already configured list of Adobe Sign Cloud Services.
 
    If the **Adobe Sign Cloud Service** list is empty, follow the [Configure Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) artilce to configure the service.
@@ -164,7 +161,7 @@ Perform the following steps to select a cloud service and order of signing:
 
    In simultaneous order, multiple signers can sign a form at a time.
 
-1. [Add Signers to an adaptive form](../../forms/using/working-with-adobe-sign.md#main-pars-header-1374317451) and tap the Done [aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
+1. [Add Signers to an adaptive form](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) and tap the Done [aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
 
 
 ### Add Signers to an adaptive form {#addsignerstoanadaptiveform}
@@ -172,8 +169,8 @@ Perform the following steps to select a cloud service and order of signing:
 You can have only one signer or multiple signers for an adaptive form. When you add a signer, you can also configure authentication details for the signer. You can also select if the form filler and singer are the same person. Perform the following steps to add and provide various details about a signer:
 
 1. In the Content browser, tap **Form Container**, and tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser with Adaptive Form container properties.
-1. In the properties browser, expand the **Electronic Signature **accordion, and select the **Enable Adobe Sign** option. It enables Adobe Sign for an adaptive form.
-1. Tap **Add Signer** under **Signer Configuration. **It adds a signer to the adaptive form. You can add multiple Adobe Sign signers to an adaptive form.
+1. In the properties browser, expand the **Electronic Signature** accordion, and select the **Enable Adobe Sign** option. It enables Adobe Sign for an adaptive form.
+1. Tap **Add Signer** under **Signer Configuration**. It adds a signer to the adaptive form. You can add multiple Adobe Sign signers to an adaptive form.
 1. ![phone-details](assets/phone-details.png)
 
    Click the **Edit** ![aem_6_3_edit](assets/aem_6_3_edit.png) icon to specify the following information about the signer:
@@ -187,9 +184,6 @@ You can have only one signer or multiple signers for an adaptive form. When you 
     * **Signer Authentication Method:** Specify the method to authenticate a user before opening a form for signing. You can choose between phone, knowledge base, and social identity-based authentication.
 
    >[!NOTE]
-   >
-   >
-   >
    >
    >    * By default, the social identity-based authentication provides an option to authenticate using Facebook, Google, and LinkedIn. You can contact Adobe Sign support to enable other social authentication providers.
    >
@@ -219,9 +213,9 @@ Your form signing experience is ready. You can preview the form to verify the si
 
 Cloud-based digital signatures or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can sign an adaptive form with cloud-based digital signatures.
 
-After [editing adaptive form properties for Adobe sign](../../forms/using/working-with-adobe-sign.md#main-pars-header-46741052), perform the following steps to add cloud signature field to an adaptive form:
+After [editing adaptive form properties for Adobe sign](../../forms/using/working-with-adobe-sign.md#enableadobesign), perform the following steps to add cloud signature field to an adaptive form:
 
-1. Drag-and-drop **Adobe Sign Block** component from the component browser to the adaptive form. The Adobe Sign Block component has all the supported Adobe Sign fields. By default, it adds a **Signature **field to the adaptive form.
+1. Drag-and-drop **Adobe Sign Block** component from the component browser to the adaptive form. The Adobe Sign Block component has all the supported Adobe Sign fields. By default, it adds a **Signature** field to the adaptive form.
 
    ![Sign block](assets/sign-block-new.png)
 
@@ -246,18 +240,17 @@ After [editing adaptive form properties for Adobe sign](../../forms/using/workin
 
    After adding the cloud signature field to the adaptive form, perform the following steps to complete the configuration process:
 
-    * [Enable Adobe Sign for an adaptive form](../../forms/using/working-with-adobe-sign.md#main-pars-header-1414119828)
-    * [Select Adobe Sign Cloud Service for an adaptive form](../../forms/using/working-with-adobe-sign.md#main-pars-header-473098029)
-
-    * [Add Adobe Sign Signers to an adaptive form](../../forms/using/working-with-adobe-sign.md#main-pars-header-1374317451)
-    * [Select Submit Action for an adaptive form](../../forms/using/working-with-adobe-sign.md#main-pars-header)
+    * [Enable Adobe Sign for an adaptive form](../../forms/using/working-with-adobe-sign.md#enableadobsignforanadaptiveform)
+    * [Select Adobe Sign Cloud Service for an adaptive form](../../forms/using/working-with-adobe-sign.md#selectadobesigncloudserviceforanadaptiveform)
+    * [Add Adobe Sign Signers to an adaptive form](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform)
+    * [Select Submit Action for an adaptive form](../../forms/using/working-with-adobe-sign.md#selectsubmitactionforanadaptiveform)
 
 ## Create in-form signing experience {#create-in-form-signing-experience}
 
 A user can also sign an adaptive form while filling-up the form. This experience is also known as in-form signing experience. The in-form signing experience is available only for the first singer in a multiple signer environment. Perform the following steps to create an in-form signing experience for an adaptive form:
 
-1. [Add and configure the Signature Step component](../../forms/using/working-with-adobe-sign.md#main-pars-header-1414119828).
-1. [Add the Summary Step component](../../forms/using/working-with-adobe-sign.md#main-pars-header-473098029).
+1. [Add and configure the Signature Step component](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
+1. [Add the Summary Step component](../../forms/using/working-with-adobe-sign.md#configure-the-thank-you-page-or-summary-step-component).
 
 ![In-form Signing Experience](assets/in_form_signing_experience_new.png)
 
@@ -286,9 +279,6 @@ Perform the following steps to configure the Signature Step component:
 
    >[!NOTE]
    >
-   >
-   >
-   >
    >    * When you drag-and-drop the **[!UICONTROL Signature Step]** component to the form, the **[!UICONTROL Is the signer and the person filling the form same?]** option is automatically set to **Yes**. It is required to keep the form working.
    >
    >    * Adobe Sign enabled adaptive forms do not support using Submit button on the section or panel using the Signature Step component. You can add a summary step after the Signature step for the manual submission or an automatic submission is triggered after the interval set using the [Adobe Sign Configuration Service](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
@@ -307,7 +297,7 @@ Now, the in form signing experience is ready. You can preview the form to verify
 
 **Ans:** Adaptive form created using the advanced template is configured to use Adobe Sign. To resolve the error, create and select an Adobe Sign cloud configuration and configure an Adobe Sign signer for the adaptive form.
 
-**Ans:** Yes, you can use text tags in a text component to add Adobe Sign fields to a [Document of Record](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (Auto generated document of record option only) enabled adaptive form. To learn about the procedure and rules to create a text tag, see [Adobe Sign Documentation](https://helpx.adobe.com/sign/help/text-tags.html). Also note, Adaptive forms has a limited support for text tags. You can use the text tags to create only those fields that [Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#main-pars-header-1373840282) supports.
+**Ans:** Yes, you can use text tags in a text component to add Adobe Sign fields to a [Document of Record](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (Auto generated document of record option only) enabled adaptive form. To learn about the procedure and rules to create a text tag, see [Adobe Sign Documentation](https://helpx.adobe.com/sign/help/text-tags.html). Also note, Adaptive forms has a limited support for text tags. You can use the text tags to create only those fields that [Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) supports.
 
 **Ans:** You can use both the components simultaneously in a form. Here are a few recommendations for using these components:
 
@@ -337,4 +327,3 @@ When Adobe Sign service is configured for an adaptive form, the service fails to
 
 * [Using Adobe Sign with AEM Forms (Video)
   ](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
-

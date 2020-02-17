@@ -1,8 +1,6 @@
 ---
 title: Video
-seo-title: Video
 description: Learn how to work with video in Dynamic Media
-seo-description: Learn how to work with video in Dynamic Media
 uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,10 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
-
 ---
 
-# Video{#video}
+# Video {#video}
 
 This section describes working with video in Dynamic Media.
 
@@ -23,7 +20,7 @@ The following step-by-step workflow description is designed to help you get up a
 
 >[!NOTE]
 >
->Before you work with video in Dynamic Media, make sure that your AEM admininistrator has already enabled and configured Dynamic Media Cloud Services in either Dynamic Media - Scene7 mode or Dynamic Media - Hybrid mode.
+>Before you work with video in Dynamic Media, make sure that your AEM administrator has already enabled and configured Dynamic Media Cloud Services in either Dynamic Media - Scene7 mode or Dynamic Media - Hybrid mode.
 >
 >* See [Configuring Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configuring Dynamic Media - Scene7 mode and [Troubleshooting Dynamic Media - Scene7 mode.](/help/assets/troubleshoot-dms7.md)
 >
@@ -40,7 +37,7 @@ The following step-by-step workflow description is designed to help you get up a
     * Associate the video processing profile to one or more folders where you are going to upload your master videos.
 
         * [Applying a video profile to folders](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-        * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/best-practices-for-file-management.md).
+        * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/organize-assets.md).
         * Learn more about [Organizing digital assets](/help/assets/organize-assets.md).
 
     * Upload your master videos to the folders. You can upload video files that are up to 20 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
@@ -55,54 +52,54 @@ The following step-by-step workflow description is designed to help you get up a
     * Organize, browse, and search video assets
 
         * [Organizing digital assets](/help/assets/organize-assets.md)
-          Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/best-practices-for-file-management.md)
+          Learn more about [Best practices for organizing your digital assets for using processing profiles](organize-assets.md)
 
-        * [Searching video assets](/help/assets/search-assets.md#custompredicates) or [Searching assets](/help/assets/managing-assets-touch-ui.md#search-assets)
+        * [Searching video assets](search-assets.md#custompredicates) or [Searching assets](managing-assets-touch-ui.md#search-assets)
 
     * Preview and publish video assets
 
         * View the source video and encoded renditions of the video along with its associated thumbnails:
-          [Previewing videos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](/help/assets/previewing-assets.md)
-          [Viewing video renditions](/help/assets/video-renditions.md)
-          [Managing video renditions](/help/assets/managing-assets-touch-ui.md#managing-renditions)
+          [Previewing videos](managing-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](previewing-assets.md)
+          [Viewing video renditions](video-renditions.md)
+          [Managing video renditions](managing-assets-touch-ui.md#managing-renditions)
 
-        * [Manage viewer presets](/help/assets/managing-viewer-presets.md)
-        * [Publishing assets](/help/assets/publishing-dynamicmedia-assets.md)
+        * [Manage viewer presets](managing-viewer-presets.md)
+        * [Publishing assets](publishing-dynamicmedia-assets.md)
 
     * Work with video metadata
 
         * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:
-          [Viewing video rendition properties](/help/assets/video-renditions.md)
+          [Viewing video rendition properties](video-renditions.md)
 
         * Edit the properties of video such as the title, description, and tags, custom metadata fields:
-          [Editing video properties](/help/assets/managing-assets-touch-ui.md#editing-properties)
+          [Editing video properties](managing-assets-touch-ui.md#editing-properties)
 
-        * [Managing metadata for digital assets](/help/assets/metadata.md)
-        * [Metadata schemas](/help/assets/metadata-schemas.md)
+        * [Managing metadata for digital assets](metadata.md)
+        * [Metadata schemas](metadata-schemas.md)
 
     * Review, approve, and annotate videos, and maintain full version control
 
-        * [Annotating videos](/help/assets/managing-video-assets.md#annotate-video-assets) or [Annotating assets](/help/assets/managing-assets-touch-ui.md#annotating)
+        * [Annotating videos](managing-video-assets.md#annotate-video-assets) or [Annotating assets](managing-assets-touch-ui.md#annotating)
 
-        * [Creating a version](/help/assets/managing-assets-touch-ui.md#asset-versioning)
-        * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
+        * [Creating a version](managing-assets-touch-ui.md#asset-versioning)
+        * [Applying workflows to assets](assets-workflow.md) or see [Starting a workflow on an asset](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
 
-        * [Review folder assets](/help/assets/bulk-approval.md)
-        * [Projects](/help/sites-authoring/projects.md)
+        * [Review folder assets](bulk-approval.md)
+        * [Projects](../sites-authoring/projects.md)
 
 1. **Publish your Dynamic Media videos** by doing one of the following:
 
     * If you are using Adobe Experience Manager as your web content management system you can add videos directly to your web pages.
 
-        * [Adding videos to your web pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+        * [Adding videos to your web pages](adding-dynamic-media-assets-to-pages.md).
 
     * If you are using a third-party web content management system, you can link or embed videos to your web pages.
 
         * Integrate video using URL:
-          [Linking URLs to your web application](/help/assets/linking-urls-to-yourwebapplication.md).
+          [Linking URLs to your web application](linking-urls-to-yourwebapplication.md).
 
         * Integrate video using embed code on web page:
-          [Embedding the video viewer on a web page](/help/assets/embed-code.md).
+          [Embedding the video viewer on a web page](embed-code.md).
 
     * [Publishing videos to YouTube](#publishing-videos-to-youtube).
     * [Generating video reports](#viewing-video-reports).
@@ -131,8 +128,8 @@ For managing single video and Adaptive Video Sets, the following is supported:
 
 * Uploading video from numerous supported video formats and audio formats and encoding video to MP4 H.264 format for playback across multiple screens. You can use predefined adaptive video presets, single video encoding presets, or customize your own encoding to control the quality and size of the video.
 
-    * When an adaptive video set is generated, it includes MP4 videos.
-    * **Note**: Master/source videos are not added to an Adaptive Video Set.
+  * When an adaptive video set is generated, it includes MP4 videos.
+   * **Note**: Master/source videos are not added to an Adaptive Video Set.
 
 * Video captioning in all HTML5 video viewers.
 * Organize, browse, and search video with full metadata support for efficient management of video assets.
@@ -497,7 +494,7 @@ To configure Google Cloud settings:
 
    For example, `https://1a2b3c.mycompany.com:4321`
 
-   **Note**: The path examples above is intended for illustration purposes only.
+   **Note**: The path example above is intended for illustration purposes only.
 
    ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
 

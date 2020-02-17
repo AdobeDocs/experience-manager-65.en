@@ -23,7 +23,7 @@ User management is an AEM Forms JEE component that allows creating, managing, an
 
 ## User data and data stores {#user-data-and-data-stores}
 
-User management stores user data in a database, such as My Sql, Oracle, MS SQL Server, and IBM DB2. In addition, any user who has logged in at least once in Forms applications on AEM author at `https://[*server*]:[*host*]/lc`, the user gets created in AEM repository. Therefore, user management is stored in the following data stores:
+User management stores user data in a database, such as My Sql, Oracle, MS SQL Server, and IBM DB2. In addition, any user who has logged in at least once in Forms applications on AEM author at `https://[server]:[host]/lc`, the user gets created in AEM repository. Therefore, user management is stored in the following data stores:
 
 * Database
 * AEM repository
@@ -82,7 +82,7 @@ User management stores user data in the following database tables:
 
 ### AEM repository {#aem-repository}
 
-User management data for users who have at least once accessed the Forms applications under `https://[*server*]:[*host*]/lc` is stored in AEM repository as well.
+User management data for users who have at least once accessed the Forms applications under `https://[server]:[host]/lc` is stored in AEM repository as well.
 
 ## Access and delete user data {#access-and-delete-user-data}
 
@@ -169,14 +169,14 @@ Forms JEE users have their data in AEM repository if they have accessed the AEM 
 
 #### Access user data {#access-user-data}
 
-To view user created in AEM repository, log into `https://[*server*]:[*port*]/lc/useradmin` with AEM administrator credentials. Note that `*server*` and `*port*` in the URL are that of the AEM author instance. Here, you can search for users with their username. Double-click a user to view information like properties, permissions, and groups for the user. The `Path` property for a user specifies the path to the user node created in AEM repository.
+To view user created in AEM repository, log into `https://[server]:[port]/lc/useradmin` with AEM administrator credentials. Note that `server` and `port` in the URL are that of the AEM author instance. Here, you can search for users with their username. Double-click a user to view information like properties, permissions, and groups for the user. The `Path` property for a user specifies the path to the user node created in AEM repository.
 
 #### Delete user data {#delete-aem}
 
 To delete a user:
 
-1. Go to `https://[*server*]:[*port*]/lc/useradmin` with AEM administrator credentials.
+1. Go to `https://[server]:[port]/lc/useradmin` with AEM administrator credentials.
 1. Search for a user and double-click the username to open user properties. Copy the `Path` property.
-1. Go to AEM CRX DELite at `https://[*server*]:[*port*]/lc/crx/de/index.jsp` and navigate or search the user path.
+1. Go to AEM CRX DELite at `https://[server]:[port]/lc/crx/de/index.jsp` and navigate or search the user path.
 1. Delete the path and click **[!UICONTROL Save All]** to permanently delete the user from AEM repository.
 

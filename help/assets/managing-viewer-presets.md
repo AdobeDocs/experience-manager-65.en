@@ -1,8 +1,6 @@
 ---
 title: Managing viewer presets
-seo-title: Managing viewer presets
 description: How to create and manage viewer presets
-seo-description: How to create and manage viewer presets
 uuid: 64fcf16a-7c4a-435b-bf1a-f27b8b39a715
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

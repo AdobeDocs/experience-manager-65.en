@@ -1,13 +1,10 @@
 ---
-title: Processing Assets Using Media Handlers and Workflows
-description: Learn about various media handlers and how to use them in workflows to perform tasks on assets.
-uuid: 4ef96bfc-d194-4aea-8d6c-ae91d04456aa
+title: Process assets using media handlers and workflows
+description: Learn about the media handlers and how to use workflows to perform tasks on your digital assets.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 8cd78c84-71ba-4095-b882-90d0dc00289d
 ---
 
-# Processing Assets Using Media Handlers and Workflows {#processing-assets-using-media-handlers-and-workflows}
+# Processe assets using media handlers and workflows {#processing-assets-using-media-handlers-and-workflows}
 
 Adobe Experience Manager (AEM) Assets comes with a set of default workflows and media handlers to process assets. The workflow defines the general tasks to be executed on the assets, then delegates the specific tasks to the media handlers, for example thumbnail generation or metadata extraction.
 
@@ -54,7 +51,7 @@ It is possible to view the active media handlers:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## Using Media Handlers in Workflows to perform tasks on Assets {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## Use Media Handlers in Workflows to perform tasks on Assets {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 Media handlers are services that are usually used in combination with workflows.
 
@@ -64,7 +61,7 @@ Existing workflows can be extended and new ones can be created to process assets
 
 The following example shows how to enhance the **[!UICONTROL AEM Assets Synchronization]** workflow so that sub-assets are generated for all assets except PDF documents.
 
-### Disabling/Enabling a Media Handler {#disabling-enabling-a-media-handler}
+### Disable or enable a Media Handler {#disabling-enabling-a-media-handler}
 
 The media handlers can be disabled or enabled through the Apache Felix Web Management Console. When the media handler is disabled, its tasks are not performed on the assets.
 
@@ -75,7 +72,7 @@ To enable/disable a media handler:
 1. Refresh the page: an icon is displayed beside the media handler indicating it is disabled.
 1. To enable the media handler, click **[!UICONTROL Enable]** next to the name of the media handler.
 
-### Creating a new Media Handler {#creating-a-new-media-handler}
+### Create a new Media Handler {#creating-a-new-media-handler}
 
 To support a new media type or to execute specific tasks on an asset, it is necessary to create a new media handler. This section describes how to proceed.
 

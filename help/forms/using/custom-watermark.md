@@ -31,7 +31,7 @@ You can use the following steps to customize the text and appearance of the wate
 1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
 1. In the apps folder, create a folder named **[!UICONTROL previewwatermark]** with path/structure similar to the previewwatermark folder in the libs folder:
 
-    1. Right-click the **previewwatermark **folder at the following path and select **Overlay Node**:
+    1. Right-click the **previewwatermark** folder at the following path and select **Overlay Node**:
 
        `/libs/fd/cm/configFiles/previewwatermark`
     

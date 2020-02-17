@@ -21,7 +21,7 @@ The generic steps to perform any customizations are:
 1. Create a folder named `ws`at `/apps`, if it does not exist. Click **[!UICONTROL Save All]**.
 1. Browse to `/apps/ws`, and navigate to the **[!UICONTROL Access Control]** tab.
 1. In the **[!UICONTROL Access Control]** list, click **[!UICONTROL +]** to add a new entry. Click **[!UICONTROL +]** again.
-1. Search and select the **PERM_WORKSPACE_USER **Principal.
+1. Search and select the **PERM_WORKSPACE_USER** Principal.
 
    ![Select PERM_WORKSPACE_USER principal as part of the generic steps to customize HTML Workspace](assets/perm_workspace_user.png)
 
@@ -38,9 +38,9 @@ The generic steps to perform any customizations are:
 1. Do the following for CSS customizations:
 
     1. Navigate to the `/apps/ws` folder and create a new folder named `css`.
-    
+
     1. In the `css`folder folder, create a new file named `newStyle.css`.
-    
+
     1. Open `/apps/ws/html`.jsp and change from
 
    ```css
@@ -75,25 +75,25 @@ The generic steps to perform any customizations are:
 1. Do the following:
 
     1. Create a folder named `js`at `/apps/ws`. Click **[!UICONTROL Save All]**.
-    
+
     1. Create a folder named `libs`at `/apps/ws/js`. Click **[!UICONTROL Save All]**.
-    
+
     1. Create a folder named `jqueryui`at `/apps/ws/js/libs`. Click **[!UICONTROL Save All]**.
-    
+
     1. Copy `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` to `/apps/ws/js/libs/jqueryui`. Click **[!UICONTROL Save All]**.
 
 1. Do the following for HTML customizations:
 
     1. Under `/apps/ws/js`, create a folder named `runtime`. Click **[!UICONTROL Save All]**.
-    
+
     1. Under `/apps/ws/js/runtime`, create a folder named `templates`. Click **[!UICONTROL Save All]**.
-    
+
     1. Copy `/libs/ws/js/main.js` to `/apps/ws/js/main.js`.
-    
+
     1. Copy /libs/ws/js/registry.js to `/apps/ws/js/registry.js`.
 
 1. Click **[!UICONTROL Save All]**, clear cache, and refresh AEM Forms workspace.
 
    Access the URL `https://[server]:[port]/lc/ws` and log in with administrator/password credentials. The browser redirects to `https://[server]:[port]/lc/apps/ws/index.html`.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

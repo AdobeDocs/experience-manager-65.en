@@ -96,13 +96,13 @@ From here you can [manage your pages](/help/sites-authoring/managing-pages.md) u
 >
 >The basic handling is the same across all consoles. This section concentrates on the **Websites** console as it is the primary console used when authoring.
 
-![chlimage_1-9](assets/chlimage_1-9.png)
+![chlimage_1-9](assets/chlimage_1-9a.png)
 
 ## Accessing Help {#accessing-help}
 
 On various consoles (e.g. Websites) there is also **Help** button is available, this will open either Package Share or the documentation site.
 
-![chlimage_1-10](assets/chlimage_1-10.png)
+![chlimage_1-10](assets/chlimage_1-10a.png)
 
 When editing a page the [sidekick also has a button for accessing help](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
 
@@ -222,5 +222,5 @@ The colors next to pages in the **Published** and **Modified** columns indicate 
 
 The classic UI uses well-known mechanisms for navigating and initiating actions, including click and double-click. Depending on the current situation, a range of context menus (usually opened with the right-mouse-button) are also available:
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![chlimage_1-11](assets/chlimage_1-11a.png)
 

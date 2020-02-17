@@ -74,7 +74,7 @@ See also the interactive [Community Components guide](/help/communities/componen
 
 >[!NOTE]
 >
->The poll component is currently not available. It will be re-introduced in a future release.
+>The poll component is no longer available and supported in Experience Manager Communities.
 
 ## Related Communities Documentation {#related-communities-documentation}
 

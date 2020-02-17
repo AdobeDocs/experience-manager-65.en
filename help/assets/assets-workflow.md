@@ -1,12 +1,7 @@
 ---
 title: Applying Workflows to Assets
 description: Learn how to apply workflows to assets, folders, and collections in AEM Assets.
-uuid: ed02fd9c-6e3a-4c66-9d6c-92dc56304767
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 099c9842-ae13-4da7-92b7-61955a8483cb
-docset: aem65
-
 ---
 
 # Apply workflows to process assets {#applying-workflows-to-assets}
@@ -24,18 +19,18 @@ For details of applying a workflow to an AEM asset, see [start a workflow on an 
 ## Applying a workflow to multiple assets {#applying-a-workflow-to-multiple-assets}
 
 1. From the Assets console, navigate to the location of the assets for which you want to start a workflow, and select the assets.
-1. Tap the Experience Manager logo, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
+1. Click/ tap the Experience Manager logo, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
 
-   ![screen_shot_2019-03-06at123325pm](assets/screen_shot_2019-03-06at123325pm.png)
+   ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
-1. Tap **[!UICONTROL Actions]** at the bottom.
+1. Click/ tap **[!UICONTROL Actions]** at the bottom.
 
-   ![chlimage_1-30](assets/chlimage_1-30.png)
+   ![chlimage_1-30](assets/chlimage_1-137.png)
 
 1. Tap **[!UICONTROL Start Workflow]**.
 1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
-   ![chlimage_1-31](assets/chlimage_1-31.png)
+   ![chlimage_1-31](assets/chlimage_1-138.png)
 
 1. (Optional) Specify a title for the workflow, which can be used to reference the workflow instance.
 1. Tap **[!UICONTROL Start]** and then tap **[!UICONTROL Confirm]** in the dialog. The workflow runs on all the assets you selected.
@@ -46,4 +41,4 @@ The procedure to apply a workflow to multiple folders is similar to the procedur
 
 ## Applying a workflow to a collection {#applying-a-workflow-to-a-collection}
 
-For details of applying a workflow to a collection, see [runn a workflow on a collection](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
+See [apply a workflow on a collection](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).

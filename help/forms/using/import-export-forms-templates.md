@@ -229,7 +229,7 @@ Complete the following steps to create copies of assets and letters:
 1. If required, edit the Title and Name with which you want to save the copy of the asset/letter.
 1. Tap Paste. New copies of the copied assets are created.
 
-## Search {#search}
+## Search {#search-forms}
 
 AEM Forms UI allows you to search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
 

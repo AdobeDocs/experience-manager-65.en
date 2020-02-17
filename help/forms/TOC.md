@@ -1,6 +1,6 @@
 ---
 cloud: experience-cloud
-product: Adobe Experience Manager
+product: adobe experience manager
 sub-product: forms
 audience: end-user
 user-guide-title: AEM 6.5 Forms User Guide
@@ -63,7 +63,7 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Prepare to install AEM Forms single server](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
     + [Install and deploying AEM Forms on JEE for JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
     + [Install and deploying AEM Forms on JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
-    + [Install AEM Forms Workbench](http://help.adobe.com/en_US/AEMForms/6.1/InstallWorkbench/index.html)
+    + [Install AEM Forms Workbench](using/install-workbench.md)
     + [Install and configure Designer](using/installing-configuring-designer.md)
     + [Prepare to install AEM Forms server cluster](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
     + [Configure AEM Forms on JEE on JBoss cluster](http://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
@@ -76,7 +76,7 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Configuring the Connector for Microsoft SharePoint](http://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
     + [Connecting AEM Forms with Adobe LiveCycle](using/aem-livecycle-connector.md)
     + [Configuring AEM Forms to submit form data to an AEM Forms on JEE process](using/submit-form-data-livecycle-process.md)
-    + [AEM Desktop App for AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
+    + [AEM desktop app for AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
 + Upgrade AEM Forms {#upgrade-aem-forms}
   + [Available upgrade paths](using/upgrade.md)
   + Upgrade AEM Forms on OSGi {#aem-forms-osgi-upgrade}
@@ -569,6 +569,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [HTML Template Language](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
   + [AEM plug-in to debug adaptive forms](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
   + [AEM Forms Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
+  + [AEM Forms on JEE Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
   + [Form Bridge APIs for HTML5 forms](using/form-bridge-apis.md)
   + [Assembler Service and DDX Reference](http://www.adobe.com/go/learn_aemforms_ddxRef_65)
   + [Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_65)

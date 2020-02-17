@@ -125,11 +125,11 @@ This is a more detailed overview of the client-server interaction when editing a
 1. The page editor updates the page model reference of the SPA.
 1. The SPA updates its components based on the new page model reference.
 1. The component configurations of the page editors are updated.
-   
+
    **17a** The SPA signals the page editor that content is ready.
-   
+
    **17b** The page editor provides the SPA with component configurations.
-   
+
    **17c** The SPA provides updated component configurations.
 
 ### Authoring Workflow {#authoring-workflow}
@@ -140,13 +140,13 @@ This is a more detailed overview focusing on the authoring experience.
 
 1. The SPA fetches the page model.
 1. **2a** The page model provides the editor with the data required for authoring.
-   
+
    **2b** When notified, the component orchestrator update the content structure of the page.
 1. The component orchestrator queries the mapping between an AEM resource type and a SPA component.
 1. The component orchestrator dynamically instantiates the SPA component based on the page model and component mapping.
 1. The page editor updates the page model.
 1. **6a** The page model provides updated authoring data to the page editor.
-   
+
    **6b** The page model dispatches changes to the component orchestrator.
 1. The component orchestrator fetches the component mapping.
 1. The component orchestrator updates the content of the page.
@@ -182,4 +182,4 @@ The AEM SPA Editor SDK was introduced with AEM 6.4 service pack 2. It is fully s
 * Page diff and Time Warp
 * Features performing HTML rewriting server-side such as Link Checker, CDN rewriter service, URL shortening etc.
 * Developer mode
-* Launch
+* AEM Launches

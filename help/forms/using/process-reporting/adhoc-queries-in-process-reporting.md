@@ -53,7 +53,7 @@ You use Process/Task Search to define filters for querying process/task instance
    ![my_filters_panel](assets/my_filters_panel.png)
 
 1. To execute an existing query, you simply click the query in the **My Filters** panel.
-1. To create a query, click **Add **(+).
+1. To create a query, click **Add** (+).
 
    The **Create Filter** panel displays.
 
@@ -93,7 +93,7 @@ After you create a query, use the options in the upper right corner of the **Cre
 
 * **Cancel**: Cancel the changes and go back to the **My Filters** panel.
 * **Run**: Execute the current query to see and / or verify the results. In this case, you do not need to save the query before executing the query. You can verify the results, make changes if required, and then save the query when you are satisfied with the output.
-* **Save**: Save the filter. The filter can then be viewed and executed from the **My Filters **panel.
+* **Save**: Save the filter. The filter can then be viewed and executed from the **My Filters** panel.
 
 ### Options in My Filters panel {#options-in-my-filters-panel}
 
@@ -103,8 +103,8 @@ Use the options in the **My Filters** panel to **Add** ![lc_pr_add_filter](asset
 
 ### To execute a Search query {#to-execute-a-search-query}
 
-1. To execute a query, click the filter in the **My Filters** panel or click the **Run **button if you are creating or editing a filter.
-1. The results of the query display in the **Report **panel of the **Process Reporting** window.
+1. To execute a query, click the filter in the **My Filters** panel or click the **Run** button if you are creating or editing a filter.
+1. The results of the query display in the **Report** panel of the **Process Reporting** window.
 
    ![process_search_result](assets/process_search_result.png)
 
@@ -112,9 +112,9 @@ Use the options in the **My Filters** panel to **Add** ![lc_pr_add_filter](asset
 
    ![process_result_pgn](assets/process_result_pgn.png)
 
-   In the **Display **drop-down list, choose the number of results to be displayed per page.
+   In the **Display** drop-down list, choose the number of results to be displayed per page.
 
-   In the **Page **text box, enter a page number to go directly to that page.
+   In the **Page** text box, enter a page number to go directly to that page.
 
 1. The following fields are displayed in a Process Search result:
 
@@ -144,7 +144,7 @@ Use the options in the **My Filters** panel to **Add** ![lc_pr_add_filter](asset
 
    ![task_search_result](assets/task_search_result.png)
 
-1. Click the rail button ![lc_pr_rail_button](assets/lc_pr_rail_button.png) on the upper-left to collapse the **My Filters** pane and expands the space available for the **Report **panel.
+1. Click the rail button ![lc_pr_rail_button](assets/lc_pr_rail_button.png) on the upper-left to collapse the **My Filters** pane and expands the space available for the **Report** panel.
 1. Use the options in the upper right corner of the **Report **panel to perform operations on the query result.
 
     * **Refresh**: Refreshes the report with latest data lying in the storage
@@ -267,4 +267,4 @@ You can view the details of a specific AEM Forms process/task:
 
    For a task, the query result displays the details the forms contained in the task.
 
-[**Contact Support**](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)
