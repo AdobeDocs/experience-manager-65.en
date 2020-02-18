@@ -12,7 +12,7 @@ docset: aem65
 
 ---
 
-# View and understand AEM Forms analytics reports{#view-and-understand-aem-forms-analytics-reports}
+# View and understand AEM Forms analytics reports {#view-and-understand-aem-forms-analytics-reports}
 
 Adobe Experience Manager Forms integrates with Adobe Analytics that allows you to capture and track performance metrics for your published forms and documents. The objective behind analyzing these metrics is to make informed decisions based on data about the changes required to make forms or document more usable.
 
