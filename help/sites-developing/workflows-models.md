@@ -46,7 +46,6 @@ To create a new workflow with the editor:
 >If creating models programmatically (using a crx package) you can also create a sub-folder within:
 >
 >`/var/workflow/models`
-
 >
 >For example, `/var/workflow/models/prototypes`
 >
