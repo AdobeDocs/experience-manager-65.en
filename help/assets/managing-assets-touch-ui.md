@@ -352,13 +352,11 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
    ![chlimage_1-218](assets/chlimage_1-13.png)
 
-1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in AEM.
-
-   YouTube requires Tags to publish and have a link to YouTube (if a suitable link can be found).
+1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in AEM. YouTube requires tags to publish. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >
-   >To create tags, you need write permission for `/content/cq:tags/default` in the CRX repository.
+   >To create tags, you need write permission at `/content/cq:tags/default` in the CRX repository.
 
 1. To provide a rating to the asset, tap/click the **[!UICONTROL Advanced]** tab and then tap/click the star at the appropriate position to assign the desired rating.
 
