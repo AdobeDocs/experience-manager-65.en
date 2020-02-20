@@ -46,7 +46,6 @@ To create a new workflow with the editor:
 >If creating models programmatically (using a crx package) you can also create a sub-folder within:
 >
 >`/var/workflow/models`
-
 >
 >For example, `/var/workflow/models/prototypes`
 >
@@ -181,20 +180,26 @@ You can create a [Transient](/help/sites-developing/workflows.md#transient-workf
 
 ## Make workflow models available in Touch UI {#classic2touchui}
 
-If a workflow model that is present in Classic UI but is missing in the selection popup menu in Timeline rail of Touch UI, then follow the configuration to make it available. The following steps illustrates using the AEM Assets workflow models called **[!UICONTROL Request for Activation]** and **[!UICONTROL Request for Deactivation]**.
+If a workflow model is present in Classic UI, but missing in the selection popup menu in the **[!UICONTROL Timeline]** rail of Touch UI, then follow the configuration to make it available. The following steps illustrates using the workflow model called **[!UICONTROL Request for Activation]**.
 
-1. Confirm that the model is not available in Touch-enabled UI. Access an asset using `/assets.html/content/dam` path. Select the asset. Open **[!UICONTROL Timeline]** in left rail. Click **[!UICONTROL Start Workflow]** and notice that **[!UICONTROL Request for Activation]** and **[!UICONTROL Request for Deactivation]** models are not present in the popup list.
-1. Click **[!UICONTROL Tools > General > Tagging]**. Select **[!UICONTROL Workflow]**.
-1. Click **[!UICONTROL Create > Create Tag]**. Set **[!UICONTROL Title]** as `DAM` and **[!UICONTROL Name]** as `dam`. Click **[!UICONTROL Submit]**.
+1. Confirm that the model is not available in Touch-enabled UI. Access an asset using `/assets.html/content/dam` path. Select an asset. Open **[!UICONTROL Timeline]** in left rail. Click **[!UICONTROL Start Workflow]** and confirm that the **[!UICONTROL Request for Activation]** model is not present in the popup list.
 
-   ![Create tag in workflow model](assets/workflow_create_tag.png)
+1. Navigate through **[!UICONTROL Tools > General > Tagging]**. Select **[!UICONTROL Workflow]**.
 
-1. Click **[!UICONTROL Tools > Workflow > Models]**. Select **[!UICONTROL Request for Activation]** (or **[!UICONTROL Request for Deactivation]**). Click **[!UICONTROL Edit]**.
-1. In the sidekick, go to **[!UICONTROL Page]** tab. Open **[!UICONTROL Page Properties]**.
-1. Add `Workflow : DAM` to **[!UICONTROL Tags/Keywords]** field. Click **[!UICONTROL OK]**. Click **[!UICONTROL Save]**.
+1. Select **[!UICONTROL Create > Create Tag]**. Set **[!UICONTROL Title]** as `DAM` and **[!UICONTROL Name]** as `dam`. Select **[!UICONTROL Submit]**.
+![Create tag in workflow model](assets/workflow_create_tag.png)
 
-   ![Edit Page Properties of Model](assets/workflow_model_edit_activation1.png)
+1. Navigate to **[!UICONTROL Tools > Workflow > Models]**. Select **[!UICONTROL Request for Activation]**, then select **[!UICONTROL Edit]**.
 
+1. Select **[!UICONTROL Edit]**, open the **[!UICONTROL Page Information]** menu, and from there select **[!UICONTROL Open Properties]** and go to the **[!UICONTROL Basic]** tab (if not already open).
+
+1. Add `Workflow : DAM` to **[!UICONTROL Tags]** field. Confirm the selection with the check (tick). 
+
+1. Confirm the addition of the tag with **[!UICONTROL Save & Close]**.
+![Edit Page Properties of Model](assets/workflow_model_edit_activation1.png)
+
+1. Complete the process with **[!UICONTROL Sync]**. The workflow is now available in the Touch-enabled UI.
+   
 ### Configuring a Workflow for Multi Resource Support {#configuring-a-workflow-for-multi-resource-support}
 
 You can configure a workflow model for [Multi Resource Support](/help/sites-developing/workflows.md#multi-resource-support) when creating a new model, or by editing an existing one:

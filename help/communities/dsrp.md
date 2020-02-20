@@ -101,7 +101,7 @@ On author, to access the Storage Configuration console
 
 * Select **[!UICONTROL Submit]**.
 
-### 0DT Migration steps for defaultsrp {#zerodt-migration-steps}
+### Zero downtime migration steps for defaultsrp {#zerodt-migration-steps}
 
 Follow these steps to ensure that the defaultsrp page [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) works as expected:
 

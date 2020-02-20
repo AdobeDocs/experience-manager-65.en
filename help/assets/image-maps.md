@@ -12,14 +12,14 @@ Image Maps let you add one or more hyperlinked areas that function like other hy
 
 1. Do any one of the following to open **[!UICONTROL In-place Image Editor]**:
 
-    * Using Quick Actions, tap the **[!UICONTROL Edit]** icon that appears on an asset in the **[!UICONTROL Card]** view. In the List view, select the asset and tap the **Edit** icon in the toolbar.
+   * Using Quick Actions, tap the **[!UICONTROL Edit]** icon that appears on an asset in the **[!UICONTROL Card]** view. In the List view, select the asset and tap the **Edit** icon in the toolbar.
 
         >[!NOTE]
         >
         >Quick Actions is not available in the **[!UICONTROL List]** view.
 
-    * In the **[!UICONTROL Card]** or **[!UICONTROL List]** view, select the asset and tap the **[!UICONTROL Edit]** icon on the toolbar.
-    * Tap the **[!UICONTROL Edit]** icon from the asset page.
+   * In the **[!UICONTROL Card]** or **[!UICONTROL List]** view, select the asset and tap the **[!UICONTROL Edit]** icon on the toolbar.
+   * Tap the **[!UICONTROL Edit]** icon from the asset page.
 
        ![chlimage_1-420](assets/chlimage_1-420.png)
 

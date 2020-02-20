@@ -28,7 +28,7 @@ Following are links to essential information for Communities components, functio
     * [Liking](essentials-liking.md)
     * [Rating](rating-basics.md)
     * [Voting](essentials-voting.md)
-    * *Poll (not currently available)*
+    * *Poll (no longer available)*
 
 ## Components with Functions {#components-with-functions}
 
