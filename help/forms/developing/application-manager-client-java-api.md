@@ -435,7 +435,7 @@ public class GetApplication_SOAP {
 
 The following Java code example gets the applications using the Java API.
 
-***note**: Getting AEM Forms Application API, getApplications(), returns only deployed applications. *
+**note**: Getting AEM Forms Application API, getApplications(), returns only deployed applications.
 
 ```as3
 /*

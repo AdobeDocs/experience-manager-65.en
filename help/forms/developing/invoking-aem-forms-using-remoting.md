@@ -121,9 +121,9 @@ docRef.referenceType = DocumentReference.REF_TYPE_INLINE; 
 docRef.text = "Text for my document";  // Optionally, you can override the server’s default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
 ```
 
-* When the document is not on the server, use the Remoting upload servlet to upload a document to AEM Forms. New in AEM Forms is the ability to upload secure documents. When uploading a secure document, you have to use a user who has the* Document Upload Application User *role. Without this role, the user cannot upload a secure document. It is recommended that you use single sign on to upload a secure document. (See [Passing secure documents to invoke processes using Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+* When the document is not on the server, use the Remoting upload servlet to upload a document to AEM Forms. New in AEM Forms is the ability to upload secure documents. When uploading a secure document, you have to use a user who has the *Document Upload Application User* role. Without this role, the user cannot upload a secure document. It is recommended that you use single sign on to upload a secure document. (See [Passing secure documents to invoke processes using Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
-  **Note**: if AEM Forms is configured to allow unsecure documents to be uploaded, you can use a user that does not have the Document Upload Application User role to upload a document. A user can also have the Document Upload permission. However, if AEM Forms is configured to only allow secure documents, then ensure that the user has the Document Upload Application User role or Document Upload permission. (See [Configuring AEM Forms to accept secure and unsecure documents](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)*.)
+  **Note**: if AEM Forms is configured to allow unsecure documents to be uploaded, you can use a user that does not have the Document Upload Application User role to upload a document. A user can also have the Document Upload permission. However, if AEM Forms is configured to only allow secure documents, then ensure that the user has the Document Upload Application User role or Document Upload permission. (See [Configuring AEM Forms to accept secure and unsecure documents](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
 
   You use standard Flash upload capabilities for the designated upload URL: `https://SERVER:PORT/remoting/lcfileupload`. You can then use the `DocumentReference` object wherever an input parameter of type `Document` is expected
   ` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`The Remoting Quick Start uses the Remoting upload servlet to pass a PDF file to the `MyApplication/EncryptDocument`process. (See [Invoking a short-lived process by passing an unsecure document using (Deprecated for AEM forms) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
@@ -539,7 +539,7 @@ You can start a client application built with Flex and use the centralized login
 
 You can pass secure documents to AEM Forms when invoking a process that requires one or more documents. By passing a secure document, you are protecting business information and confidential documents. In this situation, a document can refer to a PDF document, an XML document, a Word document, and so on. Passing a secure document to AEM Forms from a client application written in Flex is required when AEM Forms is configured to allow secure documents. (See [Configuring AEM Forms to accept secure and unsecure documents](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
 
-When passing a secure document, use single sign-on and specify a AEM forms user who has the* Document Upload Application User *role. Without this role, the user cannot upload a secure document. You can programmatically assign a role to a user. (See [Managing Roles and Permissions](/help/forms/developing/users.md#managing-roles-and-permissions).)
+When passing a secure document, use single sign-on and specify a AEM forms user who has the *Document Upload Application User* role. Without this role, the user cannot upload a secure document. You can programmatically assign a role to a user. (See [Managing Roles and Permissions](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 >[!NOTE]
 >
@@ -620,7 +620,7 @@ The following code example invokes the `MyApplication/EncryptDocument.`A user mu
 
 ![iu_iu_secureremotelogin](assets/iu_iu_secureremotelogin.png)
 
-if AEM Forms is configured to only allow secure documents to be uploaded and the user not have the* Document Upload Application User *role, then an exception is thrown. If the user does have this role, then the file is uploaded and the process is invoked.
+if AEM Forms is configured to only allow secure documents to be uploaded and the user not have the *Document Upload Application User* role, then an exception is thrown. If the user does have this role, then the file is uploaded and the process is invoked.
 
 ```as3
  <?xml version="1.0" encoding="utf-8"?>
@@ -1171,7 +1171,7 @@ The following code example invokes the Customer service and creates a new custom
 
 **Style sheet**
 
-This quick start contains a style sheet named* bank.css*. The following code represents the style sheet that is used.
+This quick start contains a style sheet named *bank.css*. The following code represents the style sheet that is used.
 
 ```as3
  /* CSS file */

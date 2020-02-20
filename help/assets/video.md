@@ -10,7 +10,7 @@ discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 ---
 
-# Video{#video}
+# Video {#video}
 
 This section describes working with video in Dynamic Media.
 

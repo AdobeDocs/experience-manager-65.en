@@ -134,7 +134,7 @@ Pass a document obtained from Content Services (deprecated) by using the Forms s
 
    >[!NOTE]
    >
-   >Replace `localhost`* with the IP address of the server hosting AEM Forms. *
+   >Replace `localhost`with the IP address of the server hosting AEM Forms. 
 
 1. Create a Forms and a Document Management Client API object
 
@@ -152,7 +152,7 @@ Pass a document obtained from Content Services (deprecated) by using the Forms s
 
    >[!NOTE]
    >
-   >Repeat these steps for the `DocumentManagementServiceClient`* service client. *
+   >Repeat these steps for the `DocumentManagementServiceClient`service client.
 
 1. Retrieve the form design from Content Services (deprecated)
 

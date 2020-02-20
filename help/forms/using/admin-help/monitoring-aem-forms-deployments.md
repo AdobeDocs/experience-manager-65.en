@@ -113,7 +113,7 @@ To view MBeans from JConsole, configure the JBoss application server’s JVM sta
 
 **WebLogic 9.2 /10 - configure the JVM startup**
 
-1. Edit the startWebLogic.bat file that is located under* [WebLogic home]*/user_projects/domains/Adobe_Live_Cycle/bin.
+1. Edit the startWebLogic.bat file that is located under `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
 1. Find the JAVA_OPTS line and add the following:
 
    ```as3
