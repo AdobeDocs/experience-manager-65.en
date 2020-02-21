@@ -426,6 +426,7 @@ When you want to send the same letter in different languages to your customers, 
 1. Tap **OK** in the alert. Correspondence Management downloads a zip file to your computer with the name DataDictionary-&lt;DDname&gt;.zip.
 1. The Zip file contains a .properties file. This file defines the downloaded data dictionary. The contents of the property file are similar to the following:
 
+   ```
    #Wed May 20 16:06:23 BST 2015
    DataDictionary.EmployeeDD.description=
    DataDictionary.EmployeeDD.displayName=EmployeeDataDictionary
@@ -433,6 +434,7 @@ When you want to send the same letter in different languages to your customers, 
    DataDictionaryElement.name.displayName=name
    DataDictionaryElement.person.description=
    DataDictionaryElement.person.displayName=person
+   ```
 
    The structure of the properties file defines one line each for the description and the display name for the data dictionary and each data dictionary element in the data dictionary. In addition, the properties file defines one line for an enum value set for each data dictionary element. As with a data dictionary, the corresponding properties file can have multiple data dictionary elements definitions. In addition, the file can contain the definitions for one or more enum value sets.
 
