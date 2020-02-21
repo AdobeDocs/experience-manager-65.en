@@ -43,7 +43,7 @@ Perform the following steps to Enable the Out of Office setting for your account
 
     Repeat the step to add more assignees. <br>
 
-    [!NOTE]
+    >[!NOTE]
     >The order of the assignees is important. When an item is assigned to a user who have enabled the out of office setting, the item is evaluated against the specified assignees list in the order assignees are added. When an item matches the criteria, it is assigned to the assignee and next assignee is not checked.
 
 1. Tap **[!UICONTROL Save]**. The setting takes effect at the specified start date and time. If you log in while you are out of the office, you are not considered in the office until you change your settings.
@@ -51,9 +51,8 @@ Perform the following steps to Enable the Out of Office setting for your account
 Now, items assigned to you during the Out of Office time period are automatically assigned to the specified assignee.  
 ![Out-of-office](assets/out-of-office.png)
 
-[!NOTE]
->
-> (For Forms-centric workflow items only) Enable the **Allow assignee to delegate using 'Out of Office' settings** option of the **Assign task** step in the workflow. Only items which have the aforementioned option enabled are delegated to other users.
+>[!NOTE]
+>(For Forms-centric workflow items only) Enable the **Allow assignee to delegate using 'Out of Office' settings** option of the **Assign task** step in the workflow. Only items which have the aforementioned option enabled are delegated to other users.
 
 ## Limitations {#limitations}
 
