@@ -34,8 +34,8 @@ The code in this tutorial will rely on the main folder name being the same for t
 >* Node names may contain spaces, but when used in an URI, the space must be encoded either as '%20' or '+'
 >* Node names may contain hyphens and underscores, but they must be encoded when referenced as a package name within a Java file. Both hyphens and underscores are escaped with underscore followed by their unicode value:
 >
->  * hyphen becomes '_002d'
->  * underscore becomes '_005f'
+>   * hyphen becomes '_002d'
+>   * underscore becomes '_005f'
 
 ## Set up the Application Directory (/apps) {#setup-the-application-directory-apps}
 
