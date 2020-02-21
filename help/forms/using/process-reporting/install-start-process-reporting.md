@@ -49,10 +49,10 @@ Perform the following steps to change the publishing schedule:
 >If you are running your AEM Forms implementation on a cluster, perform the following steps on each node of the cluster.
 
 1. Stop the AEM Forms server instance.
-1.
+1. &#x200B;
 
-    * (For Windows) Open the `[JBoss root]/bin/run.conf.bat` file in an editor.
-    * (For Linux, AIX and Solaris) `[JBoss root]/bin/run.conf.sh` file in an editor.
+   * (For Windows) Open the `[JBoss root]/bin/run.conf.bat` file in an editor.
+   * (For Linux, AIX and Solaris) `[JBoss root]/bin/run.conf.sh` file in an editor.
 
 1. Add the JVM argument `-Dreporting.publisher.cron = <expression>.`
 
