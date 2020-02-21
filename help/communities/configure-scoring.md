@@ -150,15 +150,15 @@ The screen shots of repository data come from setting up scoring and badging for
 
 * add scoring and badging properties
 
-      ```
-      scoringRules = [/etc/community/scoring/rules/comments-scoring,
-       /etc/community/scoring/rules/forums-scoring]
-      ```
+  ```
+  scoringRules = [/etc/community/scoring/rules/comments-scoring,
+  /etc/community/scoring/rules/forums-scoring]
+  ```
 
-      ```
-      badgingRules =[/etc/community/badging/rules/comments-scoring,
-       /etc/community/badging/rules/forums-scoring]
-      ```
+  ```
+  badgingRules =[/etc/community/badging/rules/comments-scoring,
+  /etc/community/badging/rules/forums-scoring]
+  ```
 
 * locate the forum component node
 
@@ -181,14 +181,14 @@ The screen shots of repository data come from setting up scoring and badging for
 * add scoring and badging properties
 
   ```
-      scoringRules = [/etc/community/scoring/rules/comments-scoring,
-       /etc/community/scoring/rules/forums-scoring]
-      ```
+  scoringRules = [/etc/community/scoring/rules/comments-scoring,
+  /etc/community/scoring/rules/forums-scoring]
+  ```
 
-      ```
-      badgingRules =[/etc/community/badging/rules/comments-scoring,
-       /etc/community/badging/rules/forums-scoring]
-      ```
+  ```
+  badgingRules =[/etc/community/badging/rules/comments-scoring,
+  /etc/community/badging/rules/forums-scoring]
+  ```
 
 * locate the forum component node
 
