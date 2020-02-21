@@ -32,7 +32,7 @@ A key factor here is that to recognize potential issues you need to know how you
 | Regularly purge workflow instances. |Repository size and workflow performance. |See [Regular Purging of Workflow Instances](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
 ## Backups {#backups}
-z
+
 It is good practice to take backups of:
 
 * Your software installation - before/after significant changes in the configuration
