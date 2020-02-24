@@ -288,6 +288,12 @@ Some key highlights of this service pack release are:
 **Foundation JEE**
 
 * Action configuration does not load the process names for Invoke a Forms Workflow submit action (NPR-31478).
+* AEM Forms on JEE users encounter errors similar to the following while importing .lca files or setting up LDAP in admin console:
+
+  `com.ibm.ws.webcontainer.filter.FilterInstanceWrapper doFilter SRVE8109W: Uncaught exception thrown by filter um: java.lang.NoClassDefFoundError: org/apache/commons/io/IOUtils at org.apache.commons.fileupload.util.Streams.copy`
+
+  `Error 500: javax.servlet.ServletException: java.lang.NoClassDefFoundError: org.apache.commons.io.IOUtils` (NPR-30931)
+
 
 ### Feature Packs Included {#feature-packs-included-6530}
 
