@@ -433,7 +433,7 @@ You can download the searched assets and their renditions just as you download r
 
 It is possible to make bulk updates to the common metadata fields of multiple assets. From the search results, select one or more assets. Click **[!UICONTROL Properties]** from the toolbar and update the metadata as required. Click **[!UICONTROL Save and Close]** when done. The previously existing metadata in the updated fields is overwritten.
 
-For the assets that are available in a single folder or a collection, it is easier to [update the metadata in bulk](/help/assets/managing-multiple-assets.md). For the assets that are available across folders or match a common criteria, it is faster to bulk update the metadata via searching.
+For the assets that are available in a single folder or a collection, it is easier to [update the metadata in bulk](/help/assets/managing-multiple-assets.md) without using the search functionality. For the assets that are available across folders or match a common criteria, it is faster to bulk update the metadata via searching.
 
 ### Smart collections {#collections-1}
 
