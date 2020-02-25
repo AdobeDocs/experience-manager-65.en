@@ -785,13 +785,13 @@ Sarah Rose is planning to invest in a mutual fund. She is an existing We.Finance
 
 #### How it works {#how-it-works-17}
 
-The Blue Chip Growth Fund prospectus is an interactive communication. It uses texts, images, charts, and table components (document fragments) to display product summary, stock style, fund performance, fund details and other related information. You can review the interactive communication in the edit mode at https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html
+The Blue Chip Growth Fund prospectus is an interactive communication. It uses texts, images, charts, and table components (document fragments) to display product summary, stock style, fund performance, fund details and other related information. You can review the interactive communication in the edit mode at `https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`
 
-The charts and tables retrieve data from a form data model. The form data model connects to configured datasources, a database in this walkthrough, to retrieve information specific to the fund. You can review the form data model at https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/wealth-management
+The charts and tables retrieve data from a form data model. The form data model connects to configured datasources, a database in this walkthrough, to retrieve information specific to the fund. You can review the form data model at `https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/wealth-management`
 
 #### See it yourself  {#see-it-yourself-15}
 
-Go to We.Finance portal at https://[publishHost]:[publishPort]/wefinance, tap Wealth Management, expand Funds by Asset Class, and tap We.Finance Blue Chip Growth Fund. The We.Finance Blue Chip Growth Fund prospectus opens.
+Go to We.Finance portal at `https://[publishHost]:[publishPort]/wefinance`, tap Wealth Management, expand Funds by Asset Class, and tap We.Finance Blue Chip Growth Fund. The We.Finance Blue Chip Growth Fund prospectus opens.
 
 ### Sarah explores the Blue Chip Growth Fund prospectus to learn about the fund {#sarah-explores-the-blue-chip-growth-fund-prospectus-to-learn-about-the-fund}
 
@@ -803,11 +803,11 @@ Sarah explores the Overview, Price & Performance, Portfolio Management, Fees & M
 
 The Blue Chip Growth Fund interactive communication uses parent and child panels to segregate related information into different sections. The parent panel organizes all the child panels into tabs.
 
-The layout of the parent tab is set to Tabs on Top to convert all the child panels to tabs. You can review the panels of the interactive communication in the edit mode at https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
+The layout of the parent tab is set to Tabs on Top to convert all the child panels to tabs. You can review the panels of the interactive communication in the edit mode at `https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`.
 
 #### See it yourself  {#see-it-yourself-16}
 
-Go to the Blue Chip Growth Fund interactive communication at https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled. Explore all the tabs.
+Go to the Blue Chip Growth Fund interactive communication at `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled`. Explore all the tabs.
 
 ### Sarah views and emails the PDF version of the Blue Chip Growth Fund page {#sarah-views-and-emails-the-pdf-version-of-the-blue-chip-growth-fund-page}
 
@@ -817,15 +817,15 @@ Sarah is traveling to the countryside on the weekend. She plans to discuss the B
 
 #### How it works {#how-it-works-19}
 
-The Blue Chip Growth Fund prospectus is an interactive communication. It has a web and PDF channel. The interactive communication integrates with AEM Workflows to send the PDF version over an email. You can review the workflow model at https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
+The Blue Chip Growth Fund prospectus is an interactive communication. It has a web and PDF channel. The interactive communication integrates with AEM Workflows to send the PDF version over an email. You can review the workflow model at `https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html`.
 
 ![wealth-management](assets/wealth-management.png)
 
 #### See it yourself  {#see-it-yourself-17}
 
-To download the PDF version, go to the Blue Chip Growth Fund interactive communication https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, tap Download PDF.
+To download the PDF version, go to the Blue Chip Growth Fund interactive communication `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`, tap Download PDF.
 
-To send PDF on email, go to the Blue Chip Growth Fund interactive communication https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, tap EMAIL PDF. Specify **Full Name** and **Email Address**. Click **Send Email**.
+To send PDF on email, go to the Blue Chip Growth Fund interactive communication `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`, tap EMAIL PDF. Specify **Full Name** and **Email Address**. Click **Send Email**.
 
 ## Auto insurance application walkthrough {#auto-insurance-application-walkthrough}
 
@@ -846,13 +846,13 @@ Conrad logs into AEM instance, opens the Auto Insurance dashboard specifies Sara
 
 #### How it works {#how-it-works-20}
 
-Insurance policy renewal communication is an interactive communication. Conrad Simms uses Agent UI to send the insurance policy renewal communication to Sarah. The communication includes Print (PDF) and link to the Web channel of the interactive communication. The interactive communication uses AEM Workflow to send the email. You can see the workflow at https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
+Insurance policy renewal communication is an interactive communication. Conrad Simms uses Agent UI to send the insurance policy renewal communication to Sarah. The communication includes Print (PDF) and link to the Web channel of the interactive communication. The interactive communication uses AEM Workflow to send the email. You can see the workflow at `https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html`
 
 ![auto-insurance-workflow](assets/auto-insurance-workflow.png)
 
 #### See it yourself  {#see-it-yourself-18}
 
-Log in to **We.Finance Auto Insurance Dashboard** as Conrad Simms (csimms/password). The URL is https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Specify the **Customer ID**. Customer ID of Sarah Rose is 900001. Click **Renew Policy**. The interactive communication opens up in the Agent UI. In the Agent UI, enter a valid email address to send the email with policy document attached and click **Submit**. A message, Submission Initiated, is displayed on the screen and then in few seconds another message, Submitted Successfully, is displayed. An email with the subject **Your Auto Insurance Renewal** and is sent at the specified email address. The policy offered to Sarah Rose is a premium policy.
+Log in to **We.Finance Auto Insurance Dashboard** as Conrad Simms (csimms/password). The URL is `https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html`. Specify the **Customer ID**. Customer ID of Sarah Rose is 900001. Click **Renew Policy**. The interactive communication opens up in the Agent UI. In the Agent UI, enter a valid email address to send the email with policy document attached and click **Submit**. A message, Submission Initiated, is displayed on the screen and then in few seconds another message, Submitted Successfully, is displayed. An email with the subject **Your Auto Insurance Renewal** and is sent at the specified email address. The policy offered to Sarah Rose is a premium policy.
 
 The auto insurance walkthrough also contains another customer, Alison Jones. Customer ID of Alison Jones is 900002. When you send the interactive communication to Alison Jones, a standard policy is sent. The difference between standard and premium policy are:
 
@@ -860,18 +860,18 @@ The auto insurance walkthrough also contains another customer, Alison Jones. Cus
 * The standard policy costs less than the premium policy.
 * The premium policy has anti-theft reward and standard policy has smart ride reward
 
-Both the policies use same interactive communication. The sections in the policy are changed or hidden based on the policy-type condition. You can access and review the auto insurance renewal interactive communication directly from https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal
+Both the policies use same interactive communication. The sections in the policy are changed or hidden based on the policy-type condition. You can access and review the auto insurance renewal interactive communication directly from `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal`
 
 **Using Microsoft Dynamics as a data source**
 
 The reference site also provides an interactive communication which uses Microsoft Dynamics as a data source for the form data model. Perform the following steps to configure the interactive communication for the auto insurance walkthrough:
 
-1. Log in to https://[author]:[port]/crx/de as an administrator.
+1. Log in to `https://[author]:[port]/crx/de as an administrator`.
 1. Open the `/apps/we-finance/components/ccrui/ccrui.jsp`file.
 1. Set the value of `FormFieldRequestParameter`to `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
 1. Tap **Save All**. The reference site is configured to use interactive communication which uses MS Dynamics as a data source.
 
-Now, Log in to **We.Finance Auto Insurance Dashboard** as Conrad Simms (csimms/password). The URL is https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Specify the **Customer ID**. Customer ID of Sarah Rose is 900001. Click **Renew Policy**. The interactive communication opens up in the Agent UI. In the Agent UI, enter a valid email address to send the email with policy document attached and click **Submit**. A message, Submission Initiated, is displayed on the screen and then in few seconds another message, Submitted Successfully, is displayed. An email with the subject **Your Auto Insurance Renewal** is sent at the specified email address.
+Now, Log in to **We.Finance Auto Insurance Dashboard** as Conrad Simms (csimms/password). The URL is `https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html`. Specify the **Customer ID**. Customer ID of Sarah Rose is 900001. Click **Renew Policy**. The interactive communication opens up in the Agent UI. In the Agent UI, enter a valid email address to send the email with policy document attached and click **Submit**. A message, Submission Initiated, is displayed on the screen and then in few seconds another message, Submitted Successfully, is displayed. An email with the subject **Your Auto Insurance Renewal** is sent at the specified email address.
 
 >[!NOTE]
 >
@@ -899,7 +899,7 @@ You must have received an email with an attached PDF. The PDF is a print version
 
 The **Renew Now** button in the email directs Sarah to the web version of the policy. You can visit the following URL:
 
-https://[publishServer]:[publishPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=900001
+`https://[publishServer]:[publishPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=900001`
 
 You can check the detailed summary of your auto insurance renewal and click **Renew Now** at the bottom of the page.
 
@@ -917,6 +917,6 @@ The Renew Now button directs Sarah to the payment page. The payment page is an a
 
 Click **Renew Now** to reach to the Payment page. Fill in your Credit Card information, and click **Make Payment**. You can reach the payment page in the authoring instance at:
 
-https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&schema=fdm&customerId=900001
+`https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&schema=fdm&customerId=900001`
 
 The thank you message appears after the Make Payment button is clicked.
