@@ -36,8 +36,6 @@ To customize the metadata properties page, including adding, modifying, deleting
    >
    >* In the properties page, you can remove assets from the asset list by deselecting them. The asset list has all the assets selected by default. The metadata for assets that you remove from the list is not updated.
    >* At the top of assets list, select the check box near **[!UICONTROL Title]** to toggle between selecting the assets and clearing the list.
-   >
-   >
 
 1. To select a different metadata schema for the assets, tap/click the **[!UICONTROL Settings]** icon from the toolbar, and select the desired schema.
 1. Save the changes.
@@ -54,3 +52,7 @@ To prevent DOS like situation, AEM limits the number of parameters supported in 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
 To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**) and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
+
+>[!MORELIKETHIS]
+>
+>* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
