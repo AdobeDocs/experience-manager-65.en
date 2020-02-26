@@ -146,19 +146,32 @@ Collection metadata comprises data about the collection, including any tags that
 1. In the **[!UICONTROL Collection Metadata]** page, view the collection metadata from the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs.
 1. Modify the metadata, as necessary, and then tap/click **[!UICONTROL Save & Close]** from the toolbar to save the changes.
 
-### Edit collection metadata in bulk {#editing-collection-metadata-in-bulk}
+## Edit metadata of multiple collections in bulk {#editing-collection-metadata-in-bulk}
 
 You can edit the metadata of multiple collections simultaneously. This functionality helps you quickly replicate common metadata in multiple collections.
 
 1. In the Collections console, select two or more collections for which you want to edit metadata.
 1. From the toolbar, tap/click the **[!UICONTROL Properties]** icon.
 1. In the **[!UICONTROL Collection Metadata]** page, edit the metadata under the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs, as necessary.
+1. To view the metadata properties for a specific collection, deselect the remaining collections in the collections list. The metadata editor fields are populated with the metadata for the particular collection.
+
+   >[!NOTE]
+   >
+   >* In the collection properties page, you can remove collections from the list of collections by deselecting them. The collections list has all the collections selected by default. The metadata for collections that you remove is not updated.
+   >* At the top of the list, select the check box near **[!UICONTROL Title]** to toggle between selecting the collections and clearing the list.
+
 1. Tap/click **[!UICONTROL Save & Close]** from the toolbar, and then close the confirmation dialog to complete the process.
 1. To append the new metadata with the existing metadata, select **[!UICONTROL Append mode]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. Tap/click **[!UICONTROL Submit]**.
 
    >[!NOTE]
    >
-   >The Append mode works only for fields that can contain multiple values. For fields that can contain only a single value, the new metadata is not appended to the existing value in the field even if you select **[!UICONTROL Append mode]**.
+   >The metadata you add for the selected collections overwrites the previous metadata for these collections. Use the [!UICONTROL Append mode] to add new values to the existing metadata in the fields that can contain multiple values. Single-value fields get always overwritten. Any tags you add in the [!UICONTROL Tags] field, are appended to the existing list of tags in the metadata.
+
+To customize the metadata [!UICONTROL Properties] page, including adding, modifying, deleting metadata properties, use the Schema editor.
+
+>[!TIP]
+>
+>The bulk editing method works for assets available in a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](/help/assets/search-assets.md#metadataupdates).
 
 ## Search collections {#searching-collections}
 
@@ -202,33 +215,6 @@ When you download a collection, the entire hierarchy of assets within the collec
 1. In the **[!UICONTROL Download]** dialog, tap/click **[!UICONTROL Download]**. If you want to download the renditions of the assets within the collection, select **[!UICONTROL Renditions]**. Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection.
 
    When you select a collection to download, the complete folder hierarchy under the collection is downloaded. To include each collection you download (including assets in child collections nested under the parent collection) in an individual folder, select **[!UICONTROL Create separate folder for each asset]**.
-
-## Edit metadata properties of multiple collections {#edit-metadata-in-bulk}
-
-Adobe Enterprise Manager (AEM) Assets lets you edit the metadata of many collections in bulk. Use the [!UICONTROL Properties] page to perform metadata changes on multiple collections, for example, change metadata properties to a common value or add or modify tags.
-
-To customize the metadata [!UICONTROL Properties] page, including adding, modifying, deleting metadata properties, use the Schema editor.
-
->[!NOTE]
->
->The bulk editing methods work for assets available in a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](/help/assets/search-assets.md#metadataupdates).
-
-1. From the collections console, select the collections you want to edit.
-1. From the toolbar, tap/click **[!UICONTROL Properties]** to open the [!UICONTROL Properties] page for the selected collections.
-1. Modify the metadata properties for selected collections under the various tabs.
-
-   >[!NOTE]
-   >
-   >The metadata you add for the selected collections overwrites the previous metadata for these collections, except for tags. Any tags you add in the **[!UICONTROL Tags]** field, are appended to the existing list of tags in the metadata.
-
-1. To view the metadata properties for a specific collection, deselect the remaining collections in the collections list. The metadata editor fields are populated with the metadata for the particular collection.
-
-   >[!NOTE]
-   >
-   >* In the collection properties page, you can remove collections from the list of collections by deselecting them. The collections list has all the collections selected by default. The metadata for collections that you remove is not updated.
-   >* At the top of the list, select the check box near **[!UICONTROL Title]** to toggle between selecting the collections and clearing the list.
-
-1. Save the changes.
 
 ## Create nested collections {#creating-nested-collections}
 
@@ -295,5 +281,4 @@ You can run a workflow for the assets within a collection. If the collection con
 >[!MORELIKETHIS]
 >
 >* [Configure Experience Manager Assets email notifications](/help/sites-administering/notification.md#assetsconfig)
->* [Edit metadata properties of multiple Collections](managing-multiple-assets.md)
 >* [Create a review task for Collections](bulk-approval.md)
