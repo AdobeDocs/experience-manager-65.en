@@ -368,15 +368,17 @@ Furthermore information for up to 10 clients (standby instances) that are connec
 
 ## Cold Standby Repository Maintenance {#cold-standby-repository-maintenance}
 
+### Revision Cleanup {revision-clean}
+
 >[!NOTE]
 >
->If you run [Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md) on the primary instance, the manual procedure presented below is not needed. Addittionally, if you are using Online Revision Cleanup, the `cleanup ()` operation on the standby instance will pe performed automatically.
+>If you run [Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md) on the primary instance, the manual procedure presented below is not needed. Additionally, if you are using Online Revision Cleanup, the `cleanup ()` operation on the standby instance will pe performed automatically.
 
 >[!NOTE]
 >
 >Do not run offline revision cleanup on the standby. It is not needed and it will not reduce the segmentstore size.
 
-Adobe recommends runing maintenance on a regular basis to prevent excessive repository growth over time. To manually perform cold standby repository maintenance, follow the steps below:
+Adobe recommends running maintenance on a regular basis to prevent excessive repository growth over time. To manually perform cold standby repository maintenance, follow the steps below:
 
 1. Stop the standby process on the standby instance by going to the JMX Console and using the **org.apache.jackrabbit.oak: Status ("Standby")** bean. For more info on how to do this, see the above section on [Monitoring](/help/sites-deploying/tarmk-cold-standby.md#monitoring).
 
