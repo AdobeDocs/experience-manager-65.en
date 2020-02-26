@@ -36,8 +36,6 @@ To customize the metadata properties page, including adding, modifying, deleting
    >
    >* In the properties page, you can remove assets from the asset list by deselecting them. The asset list has all the assets selected by default. The metadata for assets that you remove from the list is not updated.
    >* At the top of assets list, select the check box near **[!UICONTROL Title]** to toggle between selecting the assets and clearing the list.
-   >
-   >
 
 1. To select a different metadata schema for the assets, tap/click the **[!UICONTROL Settings]** icon from the toolbar, and select the desired schema.
 1. Save the changes.
@@ -47,25 +45,6 @@ To customize the metadata properties page, including adding, modifying, deleting
    >
    >For single-value fields, the new metadata is not appended to the existing value in the field even if you select **[!UICONTROL Append mode]**.
 
-## Edit metadata properties of multiple collections {#editing-metadata-properties-of-multiple-collections}
-
-1. From the Collections console, select the collections you want to edit.
-1. From the toolbar, tap/click **[!UICONTROL Properties]** to open the properties page for the selected collections.
-1. Modify the metadata properties for selected collections under the various tabs.
-
-   >[!NOTE]
-   >
-   >The metadata you add for the selected collections overwrites the previous metadata for these collections, except for tags. Any tags you add in the **[!UICONTROL Tags]** field, are appended to the existing list of tags in the metadata.
-
-1. To view the metadata properties for a specific collection, deselect the remaining collections in the collections list. The metadata editor fields are populated with the metadata for the particular collection.
-
-   >[!NOTE]
-   >
-   >* In the collection properties page, you can remove collections from the list of collections by deselecting them. The collections list has all the collections selected by default. The metadata for collections that you remove is not updated.
-   >* At the top of the list, select the check box near **[!UICONTROL Title]** to toggle between selecting the collections and clearing the list.
-
-1. Save the changes.
-
 ## Configure limit for bulk metadata update {#configlimit}
 
 To prevent DOS like situation, AEM limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. AEM generates the following warning in the logs:
@@ -73,3 +52,7 @@ To prevent DOS like situation, AEM limits the number of parameters supported in 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
 To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**) and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
+
+>[!MORELIKETHIS]
+>
+>* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
