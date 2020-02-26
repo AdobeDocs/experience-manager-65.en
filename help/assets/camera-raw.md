@@ -51,11 +51,9 @@ You can now import camera raw files into AEM Assets. After you install the Camer
 
    ![chlimage_1-131](assets/chlimage_1-337.png)
 
-
    *Figure: Options in the side pane.*
 
    ![chlimage_1-132](assets/chlimage_1-338.png)
-
 
    *Figure: Use option to make lightweight edits to your images.*
 

@@ -64,6 +64,7 @@ To create live copies using the first method, follow these steps:
 1. Select source assets or folders. From the toolbar, click **[!UICONTROL Create > Live Copy]**.
 
    ![Create live copy from AEM interface](assets/create_lc1.png)
+
    *Figure: Create live copy from AEM interface*
 
 1. Select a destination folder. Click **[!UICONTROL Next]**.
@@ -75,6 +76,7 @@ To create live copies using the second method, follow these steps:
 1. In AEM interface, from upper-right corner, click **[!UICONTROL Create > Live Copy]**.
 
    ![Create live copy from AEM interface](assets/create_lc2.png)
+
    *Figure: Create live copy from AEM interface*
 
 1. Select source asset or folder. Click **[!UICONTROL Next]**.
@@ -107,6 +109,7 @@ To check the information and statuses of a live copy asset or a folder, follow t
 1. Click **[!UICONTROL Live Copy]**. You can check the path of the source, suspension status, synchronization status, last rollout date, and the user who did the last rollout.
 
    ![Live copy information and statuses are displayed in a console in Properties](assets/lcfolder_info_properties.png)
+
    *Figure: Live copy information and statuses*
 
 1. You can enable or disable if child assets borrow the live copy configuration.
@@ -121,6 +124,7 @@ AEM provides a console to check the statues of all the live copies of a source f
 1. Click **[!UICONTROL Live Copy Source]**. To open the console, click **[!UICONTROL Live Copy Overview]**. This dashboard provides a top-level status of all the child assets.
 
    ![View statuses of live copies in Live Copy Console of source](assets/livecopy-statuses.png)
+
    *Figure: View statuses of live copies in Live Copy Console of source*
 
 1. To view the detailed information about each asset in the live copy folder, select an asset and click **[!UICONTROL Relationship Status]** from the toolbar.
@@ -146,11 +150,13 @@ For a source asset or folder, you can see the following information and take the
 Select the source asset or folder, open the left rail, and click **[!UICONTROL References]**. Alternatively, select an asset or folder and use the keyboard shortcut `Alt + 4`.
 
 ![Actions and information available in the References rail for the selected source](assets/referencerail_source.png)
+
 *Figure: Actions and information available in the References rail for the selected source*
 
 For a specific live copy, click **[!UICONTROL Edit Live Copy]** to suspend relationship or change rollout configuration.
 
 ![For a specific live copy the option to suspend relationship or change rollout configuration is accessible from References rail when source asset is selected](assets/referencerail_editlc_options.png)
+
 *Figure: Suspend relationship or change rollout configuration of a specific live copy*
 
 ### Quick actions from References rail for live copy {#refraillc}
@@ -164,6 +170,7 @@ For a live copy asset or folder, you can see the following information and take 
 Select a live copy asset or folder, open the left rail, and click **[!UICONTROL References]**. Alternatively, select an asset or folder and use the keyboard shortcut `Alt + 4`.
 
 ![Actions available in the References rail for the selected live copy](assets/referencerail_livecopy.png)
+
 *Figure: Actions available in the References rail for the selected live copy*
 
 ## Propagate modifications from source to live copies {#rolloutsync}
@@ -179,6 +186,7 @@ You can initiate a rollout action from the source asset and update all or a few 
 1. Select the live copies you want to update. Click **[!UICONTROL Rollout]**. To roll out the updates made to the child assets, select **[!UICONTROL Rollout Source and all Children]**.
 
    ![Roll out the modifications of source to a few or all live copies](assets/livecopy_rollout_page.png)
+
    *Figure: Roll out the modifications of source to a few or all live copies*
 
 >[!NOTE]
@@ -188,6 +196,7 @@ You can initiate a rollout action from the source asset and update all or a few 
 Alternatively, you can initiate a rollout action from the References rail after selecting a specific live copy. For more information, see [Quick actions from References rail for live copy](#refraillc). In this method of rollout, only the selected live copy and optionally its children are updated.
 
 ![Roll out the modifications of source to the selected live copy](assets/livecopy_rollout_dialog.png)
+
 *Figure: Roll out the modifications of source to the selected live copy*
 
 ### About synchronize action {#aboutsync}
@@ -207,6 +216,7 @@ To start a sync action, open **[!UICONTROL Properties]** page of a live copy, cl
 To see the statuses and information related to a synchronize action, see [Information and status of a live copy](#statuslcasset) and [Information and statuses of all live copies of a folder](#statuslcfolder).
 
 ![Synchronize action pulls the changes made to the source](assets/livecopy_sync.png)
+
 *Figure: Synchronize action pulls the changes made to the source*
 
 >[!NOTE]
@@ -230,6 +240,7 @@ However, you have the flexibility to make local modifications to a live copy to 
 You can undo all the local modifications and revert the asset to the state of its source. Reset action irrevocably and instantly overrides all local modifications and re-establishes inheritance on all metadata fields. To revert, from the **[!UICONTROL Properties]** page of a live copy asset, click **[!UICONTROL Reset]** from the toolbar.
 
 ![Reset action overwrites local edits and brings the live copy at part with its source.](assets/livecopy_reset.png)
+
 *Figure: Reset action overwrites local edits and brings the live copy at part with its source*
 
 ## Remove live relationship {#detach}
@@ -241,6 +252,7 @@ You can completely remove the relationship between a source and a live copy usin
 1. Click **[!UICONTROL Live Copy]**. Click **[!UICONTROL Detach]** in the toolbar. Click **[!UICONTROL Detach]** from the dialog presented.
 
    ![Detach action completely removes the relationship between source and live copy](assets/livecopy_detach.png)
+
    *Figure: Detach action completely removes the relationship between source and live copy*
 
    >[!CAUTION]
@@ -258,6 +270,7 @@ If you have multiple assets in a live copy folder, initiating actions on each as
 1. In this dashboard, select a live copy asset from a live copy folder. Click the desired actions from the toolbar. The actions available are **[!UICONTROL Synchronize]**, **[!UICONTROL Reset]**, **[!UICONTROL Suspend]**, and **[!UICONTROL Detach]**. You can quickly initiate these actions on any asset in any number of live copy folders that are in a live relationship with the selected source folder.
 
    ![Easily update many assets in live copy folders from the Live Copy Overview console](assets/livecopyconsole_update_many_assets.png)
+
    *Figure: Easily update many assets in live copy folders from the Live Copy Overview console*
 
 ## Extend MSM for Assets {#extendapi}

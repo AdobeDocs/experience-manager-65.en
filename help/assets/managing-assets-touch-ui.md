@@ -694,6 +694,7 @@ You can also add image maps using the image editor. For details, see [Adding Ima
 The timeline lets you view various events for a selected item, such as active workflows for an asset, comments/annotations, activity logs, and versions.
 
 ![Sort timeline entries for an asset](assets/sort_timeline.gif)
+
 *Figure: Sort timeline entries for an asset*
 
 >[!NOTE]

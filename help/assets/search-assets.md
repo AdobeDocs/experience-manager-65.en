@@ -46,7 +46,6 @@ You can discover the desired assets faster from the search results page using th
 
 ![See the approximate number of assets without filtering search results in search facets.](assets/asset_search_results_in_facets_filters.png)
 
-
 *Figure: See the approximate number of assets without filtering search results in search facets.*
 
 ## Understand search results and behavior {#searchbehavior}
@@ -96,7 +95,6 @@ To receive suggestions for more than one search keywords, continue to type all k
 
 ![Type multiple keywords to view suggestions that fit them all](assets/search_suggestionsmanykeywords.gif)
 
-
 *Figure: Type multiple keywords to view suggestions that fit them all*
 
 ### Search ranking and boosting {#searchrank}
@@ -129,7 +127,6 @@ AEM provides various methods like filters that apply to the searched assets, to 
 
 ![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
 
-
 *Figure: Limit search results to a folder by adding a folder path in Filters panel*
 
 ### Find similar images {#visualsearch}
@@ -137,7 +134,6 @@ AEM provides various methods like filters that apply to the searched assets, to 
 To find images that are visually similar to a user-selected image, click **[!UICONTROL Find Similar]** option from the card view of an image or from the toolbar. AEM displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [how to configure similarity search](#configvisualsearch).
 
 ![Find similar images using the option in the card view](assets/search_find_similar.png)
-
 
 *Figure: Find similar images using the option in the card view*
 
@@ -244,7 +240,6 @@ To access the asset selector interface, go to `https://[aem_server]:[port]/aem/a
 
 ![Browse and select asset in the asset picker](assets/assetpicker.png)
 
-
 *Figure: Browse and select asset in the asset picker*
 
 ## Limitations {#limitations}
@@ -286,7 +281,6 @@ Use double quotations around keywords to find assets that contain the exact phra
 
 ![Search behavior with and without quotation marks](assets/search_with_quotes.gif)
 
-
 *Figure: Search behavior with and without quotation marks*
 
 **Search with asterisk wildcard**: To broaden the search, use an asterisk before or after the search word to match any number of characters. For example, searching for run without an asterisk does not return assets containing any variation of the word (including in the metadata). An asterisk substitutes for any number of characters. For example,
@@ -297,7 +291,6 @@ Use double quotations around keywords to find assets that contain the exact phra
 * `*run*` returns all possible combinations.
 
 ![Illustrating use of asterisk wildcard in Asset search using an example](assets/search_with_asterisk_run.gif)
-
 
 *Figure: Illustrating use of asterisk wildcard in Asset search using an example*
 
@@ -311,13 +304,11 @@ Use double quotations around keywords to find assets that contain the exact phra
 
 ![Illustrating use of question mark wildcard in Asset search using an example](assets/search_with_questionmark_run.gif)
 
-
 *Figure: Illustrating use of question mark wildcard in Asset search using an example*
 
 **Exclude a keyword**: Use dash to search for assets that do not contain a keyword. For example, `running -shoe` query returns assets that contain `running`, but not `shoe`. Similarly, `camp -night` query returns assets that contain `camp` but not `night`. Note that `camp-night` query returns assets that contain both `camp` and `night`.
 
 ![Use of dash to search for assets not containing an excluded keyword](assets/search_dash_exclude_keyword.gif)
-
 
 *Figure: Use of dash to search for assets not containing an excluded keyword*
 
@@ -421,7 +412,6 @@ To see all metadata of an asset, select the asset and click **[!UICONTROL proper
 To check the comments on an asset or version history of an asset, click the asset to open large-sized preview. Open timeline in the left rail and select **[!UICONTROL Comments]** or **[!UICONTROL Versions]**. You can also sort the timeline activity like comments or versions in a chronological order.
 
 ![Sort timeline entries for a search asset](assets/sort_timeline_search_results.gif)
-
 
 *Figure: Sort timeline entries for a search asset*
 
