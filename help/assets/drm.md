@@ -15,12 +15,14 @@ Asset expiration is an effective way of enforcing license requirements for asset
 You can view the expiration status for an asset in the Assets console in both the Card and List views.
 
 ![expired_flag_card](assets/expired_flag_card.png)
-<br> *Figure: In card view, a flag on the card indicates expired asset.*
+
+*Figure: In card view, a flag on the card indicates expired asset.*
 
 **List view**
 
 ![expired_flag_list](assets/expired_flag_list.png)
-*Figure: In list view, the **[!UICONTROL Status]** column displays the **[!UICONTROL Expired]** banner.*
+
+*Figure: In list view, the [!UICONTROL Status] column displays the [!UICONTROL Expired] banner.*
 
 You can view the expiration status of an asset in the timeline. Select the asset and choose Timeline from the GlobalNav menu.
 
