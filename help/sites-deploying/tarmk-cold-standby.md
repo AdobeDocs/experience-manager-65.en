@@ -368,7 +368,7 @@ Furthermore information for up to 10 clients (standby instances) that are connec
 
 ## Cold Standby Repository Maintenance {#cold-standby-repository-maintenance}
 
-### Revision Cleanup {revision-clean}
+### Revision Cleanup {#revision-clean}
 
 >[!NOTE]
 >
