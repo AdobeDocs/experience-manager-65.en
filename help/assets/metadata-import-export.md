@@ -55,6 +55,7 @@ A few use cases for exporting metadata in bulk are:
 1. Open the inbox notification for the export job. Select the job and click **[!UICONTROL Open]** from the toolbar. To download the CSV file with the metadata, tap/click **[!UICONTROL CSV Download]** from the toolbar. Click **[!UICONTROL Close]**.
 
    ![Dialog  to download the CSV file containing metadata exported in bulk](assets/csv_download.png)
+
    *Figure: Dialog to download the CSV file containing metadata exported in bulk*
 
 >[!MORELIKETHIS]
