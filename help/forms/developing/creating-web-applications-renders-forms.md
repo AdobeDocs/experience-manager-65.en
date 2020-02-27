@@ -381,7 +381,7 @@ You can deploy the WAR file to the J2EE application server on which AEM Forms is
 
 **To deploy the WAR file to the J2EE application server:**
 
-* Copy the WAR file from the export path to *[Forms Install]*\Adobe\Adobe Experience Manager Forms\jboss\server\all\deploy.
+* Copy the WAR file from the export path to `[Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\all\deploy`.
 
 ### Testing your web application {#testing-your-web-application}
 
