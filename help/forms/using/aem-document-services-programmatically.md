@@ -4471,11 +4471,10 @@ The GeneratePDFService provides APIs to convert various file formats such as .do
    <td><strong>✓</strong></td>
   </tr>
   <tr>
-   <td>exportPDF</td>
+   <td>htmlToPDF</td>
    <td><strong>✓</strong></td>
    <td><strong>✓</strong></td>
   </tr>
-  <tr>
    <td>optimizePDF</td>
    <td><strong>✓</strong></td>
    <td>✖</td>
