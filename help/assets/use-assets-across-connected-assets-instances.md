@@ -169,7 +169,7 @@ The fetched assets can be used as any other local asset, except that the associa
 * All Sites Authors have read permissions on the fetched copies, even if they do not have access to the remote DAM deployment.
 * No API support to customize the integration.
 * The functionality supports seamless search and use of remote assets. To make many remote assets available on local deployment in one-go, consider migrating the assets. See [Assets migration guide](assets-migration-guide.md).
-* It is not possible to use a remote asset as a thumbnail for a web page in the [!UICONTROL Thumbnail] tab in [!UICONTROL Page Properties] by clicking [!UICONTROL Select Image].
+* It is not possible to use a remote asset as a page thumbnail on [!UICONTROL Page Properties] user interface. You can set a thumbnail of a web page in [!UICONTROL Page Properties] user interface from the [!UICONTROL Thumbnail] by clicking [!UICONTROL Select Image].
 
 **Set up and licensing**
 

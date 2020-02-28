@@ -101,7 +101,9 @@ Irrespective of the asset type chosen, display the copyright information as a re
 1. Navigate to the folder to which you applied the Metadata Schema and open the properties page of an asset. Depending upon your choice in the Asset Type field, pertinent cascading metadata fields are displayed.
 
    ![Cascading metadata for Video asset](assets/video_asset.png)
+
    *Figure: Cascading metadata for a video*
 
    ![Cascading metadata for document asset](assets/doc_type_fields.png)
+
    *Figure: Cascading metadata for a document*

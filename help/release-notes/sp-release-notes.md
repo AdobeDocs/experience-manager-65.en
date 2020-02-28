@@ -160,6 +160,8 @@ Some key highlights of this service pack release are:
 
 * An exception displays in AEM while polling for job details of an Asset (CQ-4283569).
 
+* XSS vulnerability in DAM (NPR-31654).
+
 #### Sites {#sites}
 
 * If the LiveCopy inheritance is broken, live copy pages display language copy links instead of LiveCopy links (NPR-30980).
@@ -172,6 +174,9 @@ Some key highlights of this service pack release are:
 * The ResponsiveGridExporter API does not return com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter interface. The com.day.cq.wcm.foundation.model.impl package is declared as private package (NPR-31398).
 * When a page containing some ExperienceFragments is opened in non-editor mode (either in Author without the `editor.html` prefix and `wcmmode=disabled`, or in Publisher)., the request ends in HTTP status error code 500 (NPR-30743).
 * Users cannot change their password and access their profile page (NPR-31161).
+* A JavaScript file with user data gets generated on the server side (NPR-30822).
+* AEM authoring UI allows phishing using external content (NPR-29745).
+* Expression language injection vulnerability in AEM 6.5 metadata editor (NPR-31017).
 
 #### Search and user interface {#search-ui-interface}
 
@@ -283,6 +288,12 @@ Some key highlights of this service pack release are:
 **Foundation JEE**
 
 * Action configuration does not load the process names for Invoke a Forms Workflow submit action (NPR-31478).
+* AEM Forms on JEE users encounter errors similar to the following while importing .lca files or setting up LDAP in admin console:
+
+  `com.ibm.ws.webcontainer.filter.FilterInstanceWrapper doFilter SRVE8109W: Uncaught exception thrown by filter um: java.lang.NoClassDefFoundError: org/apache/commons/io/IOUtils at org.apache.commons.fileupload.util.Streams.copy`
+
+  `Error 500: javax.servlet.ServletException: java.lang.NoClassDefFoundError: org.apache.commons.io.IOUtils` (NPR-30931)
+
 
 ### Feature Packs Included {#feature-packs-included-6530}
 

@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Creating and using themes{#creating-and-using-themes}
+# Creating and using themes {#creating-and-using-themes}
 
 ## Introduction {#introduction}
 

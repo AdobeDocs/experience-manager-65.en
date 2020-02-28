@@ -140,7 +140,7 @@ The following code example converts a PDF document called *Loan.pdf* to a PostSc
 
 ## Quick Start (SOAP mode): Converting a PDF document to JPEG files using the Java API {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-The following Java code example converts a PDF document called *Loan.pdf* to a set of JPEG files and stores them in the C:\Adobe directory. Each file is named *tempFile[index].jpg*, where the first image file is named *tempFile0.jpg*. (See [Converting PDF Documents to Image Formats](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
+The following Java code example converts a PDF document called *Loan.pdf* to a set of JPEG files and stores them in the C:\Adobe directory. Each file is named `tempFile[index].jpg`, where the first image file is named *tempFile0.jpg*. (See [Converting PDF Documents to Image Formats](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
 
 ```as3
  /*

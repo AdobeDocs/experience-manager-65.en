@@ -49,7 +49,7 @@ The path to a resource located in the AEM Forms repository is:
 
 >[!NOTE]
 >
->You can browse the AEM Forms Repository by using a web browser. To browse the repository, enter the following URL into a web browser https://[server name]:[server port]/repository. You can verify quick start results by using a web browser. For example, if you add content to the AEM Forms Repository, you can see the content in a web browser.
+>You can browse the AEM Forms Repository by using a web browser. To browse the repository, enter the following URL into a web browser `https://[server name]:[server port]/repository`. You can verify quick start results by using a web browser. For example, if you add content to the AEM Forms Repository, you can see the content in a web browser.
 
 >[!NOTE]
 >

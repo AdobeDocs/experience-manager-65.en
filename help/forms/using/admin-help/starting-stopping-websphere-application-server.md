@@ -17,7 +17,7 @@ Several procedures require you to stop or start the instance of WebSphere where 
 
 ## View the status of WebSphere Application Server {#view-the-status-of-websphere-application-server}
 
-1. From a command prompt, go to the *[appserver root]*/bin directory.
+1. From a command prompt, go to the `[appserver root]/bin` directory.
 1. Enter the following command, replacing *server_name* with the name of your WebSphere Application Server:
 
     * (Windows) `serverStatus.bat`*server_name*
@@ -25,7 +25,7 @@ Several procedures require you to stop or start the instance of WebSphere where 
 
 ## Start WebSphere Application Server {#start-websphere-application-server}
 
-1. From a command prompt, go to the *[appserver root]*/bin directory.
+1. From a command prompt, go to the `[appserver root]/bin` directory.
 1. Enter the following command, replacing *server_name* with the name of your WebSphere Application Server:
 
     * (Windows) `startServer.bat`*server_name*
@@ -33,7 +33,7 @@ Several procedures require you to stop or start the instance of WebSphere where 
 
 ## Stop WebSphere Application Server {#stop-websphere-application-server}
 
-1. From a command prompt, go to the *[appserver root]*/bin directory.
+1. From a command prompt, go to the `[appserver root]/bin` directory.
 1. Enter the following command, replacing *server_name* with the name of your WebSphere Application Server:
 
     * (Windows) `stopServer.bat`*server_name*
