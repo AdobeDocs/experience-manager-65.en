@@ -383,7 +383,7 @@ When you copy an asset or a folder, the entire asset or the folder is copied, al
 
 A few attributes that are unique to a particular copy of an asset are not carried forward. Some examples are:
 
-* Relative path, asset ID, creation date and time, and versions and version history. Some of these properties are indicated by the properties `dam:relativePath`, `jcr:uuid`, `jcr:created`, and `cq:name`.
+* Asset ID, creation date and time, and versions and version history. Some of these properties are indicated by the properties `jcr:uuid`, `jcr:created`, and `cq:name`.
 
 * Creation time and referenced paths are unique for each asset and each of its rendition.
 
