@@ -212,7 +212,7 @@ Options:
 
 The following are some common tasks performed in VLT. For detailed information on each command see the individual [commands](#vlt-commands).
 
-### Checking Out a Aubtree {#checking-out-a-subtree}
+### Checking Out a Subtree {#checking-out-a-subtree}
 
 If you only want to check out a subtree of the repository for example, `/apps/geometrixx`, you can do so by typing the following:
 
