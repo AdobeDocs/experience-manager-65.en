@@ -83,32 +83,32 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 ## Supported camera raw {#supported-camera-raw}
 
-The Adobe Camera Raw library enables AEM Assets to ingest raw images. See [Camera Raw Support](camera-raw.md).
+The Adobe Camera Raw library enables AEM Assets to ingest raw images. See [Camera Raw support](camera-raw.md).
 
 ## Supported document formats {#supported-document-formats}
 
 Document formats supported for asset management features are as follows:
 
-| Format | Storage | Metadata<br> management | Metadata<br> extraction | Thumbnail<br> generation | Interactive<br> editing | Metadata<br> writeback | Insights |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; |
-| DOC | &#10003; | &#10003; | &#10003; | &#10003; | | | |
-| DOCX | &#10003; | &#10003; | &#10003; | &#10003; | | | |
-| ODT | &#10003; | &#10003; | &#10003; | | | | |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
-| HTML | &#10003; | &#10003; | &#10003; | | | | |
-| RTF | &#10003; | &#10003; | &#10003; | | | | |
-| TXT | &#10003; | &#10003; | &#10003; | | | | |
-| XLS | &#10003; | &#10003; | &#10003; | | | | |
-| XLSX | &#10003; | &#10003; | &#10003; | &#10003; | | | |
-| ODS | &#10003; | &#10003; | &#10003; | | | | |
-| PPT | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | |
-| PPTX | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | |
-| ODP | &#10003; | &#10003; | &#10003; | | | | |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; |
-| PS | &#10003; | &#10003; | | | | | |
-| QXP | &#10003; | &#10003; | | | | | |
-| EPUB | &#10003; | &#10003; | | &#10003; | &#10003; | | |
+| Format | Storage | Metadata<br> management | Metadata<br> extraction | Thumbnail<br> generation | Interactive<br> editing | Metadata<br> writeback | [Insights](touch-ui-asset-insights.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
+| DOC | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
+| DOCX | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
+| ODT | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| HTML | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
+| RTF | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
+| TXT | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
+| XLS | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
+| XLSX | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
+| ODS | &#10003; | &#10003; | &#10003; | | | | | |
+| PPT | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
+| PPTX | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
+| ODP | &#10003; | &#10003; | &#10003; | | | | | |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
+| PS | &#10003; | &#10003; | | | | | | |
+| QXP | &#10003; | &#10003; | | | | | | |
+| EPUB | &#10003; | &#10003; | | &#10003; | &#10003; | | | |
 
 Document formats supported for Dynamic Media features are as follows:
 
@@ -268,4 +268,3 @@ See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/
 >[!MORELIKETHIS]
 >
 >* [Enable MIME type-based Assets/Scene7 upload job parameter support](../sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
->* [Supported formats for Connected Assets feature](/help/assets/use-assets-across-connected-assets-instances.md)

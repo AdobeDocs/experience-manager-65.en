@@ -31,16 +31,10 @@ Before you use or configure this capability, ensure the following:
 
 ### Supported file formats {#mimetypes}
 
-Authors can search for images and the following types of documents in Content Finder and use the searched assets in Page Editor. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components.
+Authors can search for images and the following types of documents in Content Finder and use the searched assets in Page Editor. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. The list of supported formats are:
 
-* Microsoft Word (DOC and DOCX)
-* Microsoft Excel (XLS and XLSX)
-* Microsoft PowerPoint (PPT and PPTX)
-* Adobe PDF (PDF)
-* OpenDocument Text (ODT)
-* Rich Text Format (RTF)
-* Plain text (TXT)
-* Web pages (HTML)
+* **Image formats**: The image formats supported by the [Image component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) are supported by Connected Assets. Dynamic Media Components are not supported.
+* **Document formats**: See [Connected Assets supported document formats](assets-formats.md#supported-document-formats).
 
 ### Users and groups involved {#users-and-groups-involved}
 
