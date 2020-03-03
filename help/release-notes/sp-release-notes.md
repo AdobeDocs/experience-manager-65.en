@@ -18,7 +18,7 @@ docset: aem65
 | Version |6.5.3.0 |
 | Type |Service Pack Release |
 | Date |December 12, 2019 |
-| Download URL | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0), [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aem.html#package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.3.zip) |
+| Download URL | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0) |
 
 ## What's included in Adobe Experience Manager 6.5.3.0 {#what-s-included-in-aem}
 
@@ -431,10 +431,9 @@ List of Content Packages included in AEM 6.5.3.0
 ## Helpful Resources {#helpful-resources}
 
 * [AEM 6.5 release notes](/help/release-notes/release-notes.md)
-* [AEM product page](https://www.adobe.com/solutions/web-experience-management.html)
-* [AEM developer support](https://docs.adobe.com/content/ddc/en.html)
+* [AEM product page](https://www.adobe.com/marketing/experience-manager.html)
 * [AEM 6.5 documentation](https://helpx.adobe.com/support/experience-manager/6-5.html)
-* Subscribe to [Adobe Priority Product Updates](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
+* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
 
 ## Restricted Sites {#restricted-sites}
 
