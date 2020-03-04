@@ -399,8 +399,11 @@ The Generate Printed Output step has the following properties:
   * **[!UICONTROL DPL406DPI]**: Use DPL 400 DPI. The dpl406.xdc is used.
   * **[!UICONTROL DPL600DPI]**: Use DPL 600 DPI. The dpl600.xdc is used. 
 
+**Output Properties**
 
 * **[!UICONTROL Save output document using]**: Specify the location to save the output file. You can save the output file at an location  which is relative to the payload, in a variable, or specify an absolute location to save the output file. If the path does not exist in crx-repository, an administrator can create the path before using it.
+
+**Advanced Properties**
 
 * **[!UICONTROL Select Content Root location using]**: Content root is a string value that specifies the URI, absolute reference, or location in the repository to retrieve relative assets used by the form design. For example, if the form design references an image relatively, such as ../myImage.gif, myImage.gif must be located at repository://. The default value is repository://, which points to the root level of the repository.
 
