@@ -33,7 +33,7 @@ After replication succeeds, you can publish assets, folders, and Collections  to
     * [Publish assets immediately](#publish-to-bp-now)
     * [Publish assets later](#publish-to-bp-now)
 
-### Publish assets now {#publish-to-bp-now}
+## Publish assets now {#publish-to-bp-now}
 
 To publish the selected assets to Brand Portal, do either of the following:
 
@@ -47,7 +47,7 @@ To publish the selected assets to Brand Portal, do either of the following:
 
 A message appears stating that the assets have been queued up for publishing to Brand Portal. Login to the Brand Portal interface to see the published assets.
 
-### Publish assets later {#publish-to-bp-later}
+## Publish assets later {#publish-to-bp-later}
 
 To schedule publishing the assets to Brand Portal to a later date or time:
 
