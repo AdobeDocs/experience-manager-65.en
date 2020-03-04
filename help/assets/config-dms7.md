@@ -21,7 +21,7 @@ The following architecture diagram describes how Dynamic Media - Scene7 mode wor
 
 With the new architecture, AEM is responsible for master assets and synchs with Dynamic Media for asset processing and publishing:
 
-1. When the master asset is uploaded to AEM, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image. (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.)
+1. When the master asset is uploaded to AEM, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
 1. After the renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
 1. After content is ready to be published and approved, it triggers the Dynamic Media service to push content out to delivery servers and cache content at the CDN.
 
