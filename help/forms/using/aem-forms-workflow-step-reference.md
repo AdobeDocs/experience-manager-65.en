@@ -373,53 +373,51 @@ The Generate Printed Output step has the following properties:
 
 **Input properties**
 
-* **Select template file using:** Specify the path of the template file. You can select the template file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it. Moreover, you can also accept payload as the input data file.
+* **[!UICONTROL Select template file using]**: Specify the path of the template file. You can select the template file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it. Moreover, you can also accept payload as the input data file.
 
-* **Select data document using:** Specify the path of a input data file. You can select the input data file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it.
+* **[!UICONTROL Select data document using]**: Specify the path of a input data file. You can select the input data file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it.
 
-* **Input Data:** (Optional) A document value that specifies the data file that is merged with the form design. The data file that you provide is an XML file. If you provide a literal value, clicking the ellipsis button opens the Select Asset dialog box
+* **[!UICONTROL Input Data]**: (Optional) A document value that specifies the data file that is merged with the form design. The data file that you provide is an XML file. If you provide a literal value, clicking the ellipsis button opens the Select Asset dialog box
 
-* **Printer Format:** A PrintFormat value that specifies the page description language to use, when an XDC file is not provided, to generate the output stream. If you provide a literal value, select one of these values:
+* **[!UICONTROL Printer Format]**: A PrintFormat value that specifies the page description language to use, when an XDC file is not provided, to generate the output stream. If you provide a literal value, select one of these values:
 
-  * **Custom PCL:** Use the default XDC file for PCL or specify a custom XDC file for PCL. The default XDC file is hppc5e.xdc.
-  * **Custom PostScript:** Use the default XDC file for PostScript or specify a custom XDC for PostScript. The default XDC file is ps_plain.xdc.
-  * **Custom ZPL:** Use the default XDC file for ZPL or specify a custom XDC file for ZPL. The default XDC file is zpl203.xdc.
-  * **Generic Color PCL (5c):** Use a generic color PCL (5c). The hppcl5c.xdc file is used.
-  * **Generic PostScript Level3:** Use generic PostScript Level 3. The ps_plain_level3.xdc file is used.
-  * **ZPL 300 DPI:** Use ZPL 300 DPI. The zpl300.xdc is used.
-  * **ZPL 600 DPI:** Use ZPL 600 DPI. The zpl600.xdc file is used.
-  * **Custom IPL:** Use a custom IPL. The default XDC file is ipl203.xdc.
-  * **IPL 300 DPI:** Use IPL 300 DPI. The ipl300.xdc is used.
-  * **IPL 400 DPI:** Use IPL 400 DPI. The ipl400.xdc file is used.
-  * **Custom TPCL:** Use the default XDC file for TPCL or specify a custom XDC file for TPCL. The default XDC file is tpcl203.xdc.
-  * **TPCL 305 DPI:** Use TPCL 300 DPI. The tpcl305.xdc file is used.
-  * **TPCL 600 DPI:** Use TPCL 600 DPI. The tpcl600.xdc file is used.
-  * **Custom DPL:** Use the default XDC file for DPL or specify a custom XDC file DPL. The default XDC file is dpl203.xdc.
-  * **DPL300DPI:** Use DPL 300 DPI. The dpl300.xdc file is used.
-  * **DPL406DPI:** Use DPL 400 DPI. The dpl406.xdc is used.
-  * **DPL600DPI:** Use DPL 600 DPI. The dpl600.xdc is used. 
+  * **[!UICONTROL Custom PCL]**: Use the default XDC file for PCL or specify a custom XDC file for PCL. The default XDC file is hppc5e.xdc.
+  * **[!UICONTROL Custom PostScript]**: Use the default XDC file for PostScript or specify a custom XDC for PostScript. The default XDC file is ps_plain.xdc.
+  * **[!UICONTROL Custom ZPL]**: Use the default XDC file for ZPL or specify a custom XDC file for ZPL. The default XDC file is zpl203.xdc.
+  * **[!UICONTROL Generic Color PCL (5c)]**: Use a generic color PCL (5c). The hppcl5c.xdc file is used.
+  * **[!UICONTROL Generic PostScript Level3]**: Use generic PostScript Level 3. The ps_plain_level3.xdc file is used.
+  * **[!UICONTROL ZPL 300 DPI]**: Use ZPL 300 DPI. The zpl300.xdc is used.
+  * **[!UICONTROL ZPL 600 DPI]**: Use ZPL 600 DPI. The zpl600.xdc file is used.
+  * **[!UICONTROL Custom IPL]**: Use a custom IPL. The default XDC file is ipl203.xdc.
+  * **[!UICONTROL IPL 300 DPI]**: Use IPL 300 DPI. The ipl300.xdc is used.
+  * **[!UICONTROL IPL 400 DPI]**: Use IPL 400 DPI. The ipl400.xdc file is used.
+  * **[!UICONTROL Custom TPCL]**: Use the default XDC file for TPCL or specify a custom XDC file for TPCL. The default XDC file is tpcl203.xdc.
+  * **[!UICONTROL TPCL 305 DPI]**: Use TPCL 300 DPI. The tpcl305.xdc file is used.
+  * **[!UICONTROL PCL 600 DPI]**: Use TPCL 600 DPI. The tpcl600.xdc file is used.
+  * **[!UICONTROL ustom DPL]**: Use the default XDC file for DPL or specify a custom XDC file DPL. The default XDC file is dpl203.xdc.
+  * **[!UICONTROL DPL300DPI]**: Use DPL 300 DPI. The dpl300.xdc file is used.
+  * **[!UICONTROL DPL406DPI]**: Use DPL 400 DPI. The dpl406.xdc is used.
+  * **[!UICONTROL DPL600DPI]**: Use DPL 600 DPI. The dpl600.xdc is used. 
 
 
-* **Save output document using:** Specify the location to save the output file. You can save the output file at an location  which is relative to the payload, in a variable, or specify an absolute location to save the output file. If the path does not exist in crx-repository, an administrator can create the path before using it.
+* **[!UICONTROL Save output document using]**: Specify the location to save the output file. You can save the output file at an location  which is relative to the payload, in a variable, or specify an absolute location to save the output file. If the path does not exist in crx-repository, an administrator can create the path before using it.
 
-* **Select Content Root location using:** Content root is a string value that specifies the URI, absolute reference, or location in the repository to retrieve relative assets used by the form design. For example, if the form design references an image relatively, such as ../myImage.gif, myImage.gif must be located at repository://. The default value is repository://, which points to the root level of the repository.
+* **[!UICONTROL Select Content Root location using]**: Content root is a string value that specifies the URI, absolute reference, or location in the repository to retrieve relative assets used by the form design. For example, if the form design references an image relatively, such as ../myImage.gif, myImage.gif must be located at repository://. The default value is repository://, which points to the root level of the repository.
 
-When you pick an asset from your application, the Content Root URI path must have the correct structure. For example, if a form is picked from an application named SampleApp, and is placed at SampleApp/1.0/forms/Test.xdp, the Content Root URI must be specified as repository://administrator@password/Applications/SampleApp/1.0/forms/, or repository:/Applications/SampleApp/1.0/forms/ (when authority is null). When the Content Root URI is specified this way, the paths of all of the referenced assets in the form will be resolved against this URI.
+  When you pick an asset from your application, the Content Root URI path must have the correct structure. For example, if a form is picked from an application named SampleApp, and is placed at SampleApp/1.0/forms/Test.xdp, the Content Root URI must be specified as repository://administrator@password/Applications/SampleApp/1.0/forms/, or repository:/Applications/SampleApp/1.0/forms/ (when authority is null). When the Content Root URI is specified this way, the paths of all of the referenced assets in the form will be resolved against this URI.
 
-* **Select XCI file using:** XCI files are used to describe fonts that are used for form design elements. You can keep an XCI file relative to the payload, at an absolute path, or using a variable of Document data type.
+* **[!UICONTROL Select XCI file using]**: XCI files are used to describe fonts that are used for form design elements. You can keep an XCI file relative to the payload, at an absolute path, or using a variable of Document data type.
 
-* **Locale:** Specifies the language used for generating the PDF document. If you provide a literal value, select a language from the list or select one of these values:
-  * Use Server Default:
-    (Default) Use the Locale setting configured on the AEM Forms  Server. The Locale setting is configured using Administration Console. (See Designer Help.)
+* **[!UICONTROL Locale]**: Specifies the language used for generating the PDF document. If you provide a literal value, select a language from the list or select one of these values:
+  * **To use server default**:
+    (Default) Use the Locale setting configured on the AEM Forms Server. The Locale setting is configured using Administration Console. (See [Designer Help](www.adobe.com/go/learn_aemforms_designer_65).)
 
-  * Use Custom Value:
-    After selecting this option, type the Locale ID of the locale code that is not in the list. For a complete list of supported locale codes, see http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+  * **To use custom value**:
+    Type the Locale code in the literal box or select a string variable containing the locale code. For a complete list of supported locale codes, see http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
 
-  * **Copies:**
-    An integer value that specifies the number of copies to generate for the output. The default value is 1.
+* **[!UICONTROL Copies]**: An integer value that specifies the number of copies to generate for the output. The default value is 1.
 
-  * **Duplex Printing:**  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value.If you provide a literal value, select one of these values:
-    * duplexLongEdge: Use two-sided printing and print using long-edge pagination. 
-    * duplexShortEdge:
-    Use two-sided printing and print using short-edge pagination. 
-    * simplex: Use single-sided printing.
+* **[!UICONTROL Duplex Printing]**:  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value.If you provide a literal value, select one of these values:
+    * **[!UICONTROL Duplex Long Edge]**: Use two-sided printing and print using long-edge pagination. 
+    * **[!UICONTROL Duplex Short Edge]**: Use two-sided printing and print using short-edge pagination. 
+    * **[!UICONTROL Simplex]**: Use single-sided printing.
