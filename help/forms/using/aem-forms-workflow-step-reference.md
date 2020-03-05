@@ -392,10 +392,10 @@ The Generate Printed Output step has the following properties:
   * **[!UICONTROL Custom TPCL]**: UUse the option to specify a custom XDC file for TPCL.
   * **[!UICONTROL TPCL 305 DPI]**: Use TPCL 300 DPI. The tpcl305.xdc file is used.
   * **[!UICONTROL PCL 600 DPI]**: Use TPCL 600 DPI. The tpcl600.xdc file is used.
-  * **[!UICONTROL Custom DPL]**: Use the default XDC file for DPL or specify a custom XDC file DPL. The default XDC file is dpl203.xdc.
+  * **[!UICONTROL Custom DPL]**: Use the option to specify a custom XDC file DPL. The default XDC file is dpl203.xdc.
   * **[!UICONTROL DPL300DPI]**: Use DPL 300 DPI. The dpl300.xdc file is used.
   * **[!UICONTROL DPL406DPI]**: Use DPL 400 DPI. The dpl406.xdc is used.
-  * **[!UICONTROL DPL600DPI]**: Use DPL 600 DPI. The dpl600.xdc is used. 
+  * **[!UICONTROL DPL600DPI]**: Use DPL 600 DPI. The dpl600.xdc is used.
 
 **Output Properties**
 
