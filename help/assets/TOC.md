@@ -117,7 +117,8 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Folder metadata schema](folder-metadata-schema.md)
     + [Manage Smart Tags](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-    + [Configure integration with Brand Portal](brand-portal-configuring-integration.md)
+    + [Configure AEM Assets with Brand Portal](configure-aem-assets-with-brand-portal.md)
+    + [Publish assets to Brand Portal](brand-portal-publish-assets.md)
     + [Publish folders to Brand Portal](brand-portal-publish-folder.md)
     + [Publish collections to Brand Portal](brand-portal-publish-collection.md)
 + Content Fragments {#fragments}
