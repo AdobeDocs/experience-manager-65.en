@@ -26,7 +26,7 @@ Before you use or configure this capability, ensure the following:
   ||AEM Sites as a Cloud Service |AEM 6.5 Sites on AMS| AEM 6.5 Sites on-premise|
   |---|---|---|---|
   |**AEM Assets as a Cloud Service**| Supported | Supported | Supported |
-  |**AEM 6.5 Assets on AMS** | Not Supported | Supported | Supported |
+  |**AEM 6.5 Assets on AMS** | Supported | Supported | Supported |
   |**AEM 6.5 Assets on-premise** | Not Supported |Not Supported | Not Supported |
 
 ### Supported file formats {#mimetypes}
