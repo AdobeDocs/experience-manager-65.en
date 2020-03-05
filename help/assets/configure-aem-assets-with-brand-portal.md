@@ -278,9 +278,10 @@ Perform the following steps to create Brand Portal cloud service configuration:
 
 Brand Portal is successfully configured with your AEM Assets author instance. You can now:
 
-* Publish assets and folders from AEM Assets to Brand Portal
-* Publish collections from AEM Assets to Brand Portal. 
-* Configure Asset Sourcing enabling the Brand Portal users to contribute and publish assets to AEM Assets. 
+* [Publish assets from AEM Assets to Brand Portal](../assets/brand-portal-publish-assets.md)
+* [Publish folders from AEM Assets to Brand Portal](../assets/brand-portal-publish-folder.md)
+* [Publish collections from AEM Assets to Brand Portal](../assets/brand-portal-publish-collection.md) 
+* [Configure Asset Sourcing](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) enabling the Brand Portal users to contribute and publish assets to AEM Assets. 
 
 ## Upgrade configuration {#upgrade-integration-65}
 
