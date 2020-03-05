@@ -36,4 +36,8 @@ The key target for HTML5 forms is touch devices. Therefore, a new scribble signa
 
 ![4](assets/4.png)
 
+#### Rich text format {#rich-text-format}
+
+To add a list of formatting options to a text field in the rendered HTML5 form, you can define a field format for the text field in Forms Designer. Tap the text field in **[!UICONTROL Design View]**. In the **[!UICONTROL Field]** tab, select **[!UICONTROL Rich Text]** from the **[!UICONTROL Field Format]** drop-down list to apply the settings. The text field displays formatting options when rendered in an HTML5 form.
+
 [Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)
