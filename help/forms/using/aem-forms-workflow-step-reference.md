@@ -379,20 +379,20 @@ The Generate Printed Output step has the following properties:
 
 * **[!UICONTROL Printer Format]**: A Print Format value that specifies the page description language to use, when an XDC file is not provided, to generate the output stream. If you provide a literal value, select one of these values:
 
-  * **[!UICONTROL Custom PCL]**: Use the default XDC file for PCL or specify a custom XDC file for PCL.
-  * **[!UICONTROL Custom PostScript]**: Use the default XDC file for PostScript or specify a custom XDC for PostScript. 
-  * **[!UICONTROL Custom ZPL]**: Use the default XDC file for ZPL or specify a custom XDC file for ZPL.
+  * **[!UICONTROL Custom PCL]**: Use the option to specify a custom XDC file for PCL.
+  * **[!UICONTROL Custom PostScript]**: Use the option to specify a custom XDC file for PostScript. 
+  * **[!UICONTROL Custom ZPL]**: Use the option to specify a custom XDC file file for ZPL.
   * **[!UICONTROL Generic Color PCL (5c)]**: Use a generic color PCL (5c).
   * **[!UICONTROL Generic PostScript Level3]**: Use generic PostScript Level 3.
   * **[!UICONTROL ZPL 300 DPI]**: Use ZPL 300 DPI. The zpl300.xdc is used.
   * **[!UICONTROL ZPL 600 DPI]**: Use ZPL 600 DPI. The zpl600.xdc file is used.
-  * **[!UICONTROL Custom IPL]**: Use a custom IPL. The default XDC file is ipl203.xdc.
+  * **[!UICONTROL Custom IPL]**: Use the option to specify a custom XDC file for IPL.
   * **[!UICONTROL IPL 300 DPI]**: Use IPL 300 DPI. The ipl300.xdc is used.
   * **[!UICONTROL IPL 400 DPI]**: Use IPL 400 DPI. The ipl400.xdc file is used.
-  * **[!UICONTROL Custom TPCL]**: Use the default XDC file for TPCL or specify a custom XDC file for TPCL.
+  * **[!UICONTROL Custom TPCL]**: UUse the option to specify a custom XDC file for TPCL.
   * **[!UICONTROL TPCL 305 DPI]**: Use TPCL 300 DPI. The tpcl305.xdc file is used.
   * **[!UICONTROL PCL 600 DPI]**: Use TPCL 600 DPI. The tpcl600.xdc file is used.
-  * **[!UICONTROL ustom DPL]**: Use the default XDC file for DPL or specify a custom XDC file DPL. The default XDC file is dpl203.xdc.
+  * **[!UICONTROL Custom DPL]**: Use the default XDC file for DPL or specify a custom XDC file DPL. The default XDC file is dpl203.xdc.
   * **[!UICONTROL DPL300DPI]**: Use DPL 300 DPI. The dpl300.xdc file is used.
   * **[!UICONTROL DPL406DPI]**: Use DPL 400 DPI. The dpl406.xdc is used.
   * **[!UICONTROL DPL600DPI]**: Use DPL 600 DPI. The dpl600.xdc is used. 
