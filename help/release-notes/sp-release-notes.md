@@ -27,7 +27,7 @@ Adobe Experience Manager 6.5.4.0 is an important update that includes new featur
 
 Some key features and enhancements introduced in AEM 6.5.4.0 include:
 
-* AEM Assets is now [configured with Brand Portal]((https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)) through Adobe I/O.
+* AEM Assets is now configured with Brand Portal through Adobe I/O Console.
 
 * A new [Generate printable Output](../forms/using/aem-forms-workflow-step-reference.md) step is now available for AEM workflows.
 
@@ -39,7 +39,7 @@ Some key features and enhancements introduced in AEM 6.5.4.0 include:
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.10.8.
 
-For complete list of features, key highlights, key features introduced in previous AEM 6.5 service packs, see [What's new in Adobe Experience Manager 6.5 Service Pack 4](new-features-latest-service-pack.md)
+For complete list of features, key highlights, key features introduced in previous AEM 6.5 service packs, see [What's new in Adobe Experience Manager 6.5 Service Pack 4].(new-features-latest-service-pack.md)
 
 ### Assets {#assets-6540-enhancements}
 
