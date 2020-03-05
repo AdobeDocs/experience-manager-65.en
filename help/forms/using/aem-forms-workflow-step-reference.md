@@ -411,7 +411,7 @@ The Generate Printed Output step has the following properties:
 
 * **[!UICONTROL Locale]**: Specifies the language used for generating the PDF document. If you provide a literal value, select a language from the list or select one of these values:
   * **To use server default**:
-    (Default) Use the Locale setting configured on the AEM Forms Server. The Locale setting is configured using Administration Console. (See [Designer Help](www.adobe.com/go/learn_aemforms_designer_65).)
+    (Default) Use the Locale setting configured on the AEM Forms Server. The Locale setting is configured using Administration Console. (See [Designer Help](http://www.adobe.com/go/learn_aemforms_designer_65).)
 
   * **To use custom value**:
     Type the Locale code in the literal box or select a string variable containing the locale code. For a complete list of supported locale codes, see http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
