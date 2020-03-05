@@ -36,8 +36,6 @@ New integrations with Legacy OAuth will not be supported after April 6, 2020 and
 
 You can either create a new integration or upgrade your integration settings to Adobe I/O Console.
 
-For details, see [Configure AEM Assets with Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
-
 ### Accessibility enhancements {#accessibility-enhancements}
 
 * Mixed-state check boxes now have aria-checked attribute with a value of “mixed”, to expose their mixed state to screen readers.
