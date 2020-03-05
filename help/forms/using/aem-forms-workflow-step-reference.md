@@ -377,21 +377,19 @@ The Generate Printed Output step has the following properties:
 
 * **[!UICONTROL Select data document using]**: Specify the path of a input data file. You can select the input data file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it.
 
-* **[!UICONTROL Input Data]**: (Optional) A document value that specifies the data file that is merged with the form design. The data file that you provide is an XML file. If you provide a literal value, clicking the ellipsis button opens the Select Asset dialog box
+* **[!UICONTROL Printer Format]**: A Print Format value that specifies the page description language to use, when an XDC file is not provided, to generate the output stream. If you provide a literal value, select one of these values:
 
-* **[!UICONTROL Printer Format]**: A PrintFormat value that specifies the page description language to use, when an XDC file is not provided, to generate the output stream. If you provide a literal value, select one of these values:
-
-  * **[!UICONTROL Custom PCL]**: Use the default XDC file for PCL or specify a custom XDC file for PCL. The default XDC file is hppc5e.xdc.
-  * **[!UICONTROL Custom PostScript]**: Use the default XDC file for PostScript or specify a custom XDC for PostScript. The default XDC file is ps_plain.xdc.
-  * **[!UICONTROL Custom ZPL]**: Use the default XDC file for ZPL or specify a custom XDC file for ZPL. The default XDC file is zpl203.xdc.
-  * **[!UICONTROL Generic Color PCL (5c)]**: Use a generic color PCL (5c). The hppcl5c.xdc file is used.
-  * **[!UICONTROL Generic PostScript Level3]**: Use generic PostScript Level 3. The ps_plain_level3.xdc file is used.
+  * **[!UICONTROL Custom PCL]**: Use the default XDC file for PCL or specify a custom XDC file for PCL.
+  * **[!UICONTROL Custom PostScript]**: Use the default XDC file for PostScript or specify a custom XDC for PostScript. 
+  * **[!UICONTROL Custom ZPL]**: Use the default XDC file for ZPL or specify a custom XDC file for ZPL.
+  * **[!UICONTROL Generic Color PCL (5c)]**: Use a generic color PCL (5c).
+  * **[!UICONTROL Generic PostScript Level3]**: Use generic PostScript Level 3.
   * **[!UICONTROL ZPL 300 DPI]**: Use ZPL 300 DPI. The zpl300.xdc is used.
   * **[!UICONTROL ZPL 600 DPI]**: Use ZPL 600 DPI. The zpl600.xdc file is used.
   * **[!UICONTROL Custom IPL]**: Use a custom IPL. The default XDC file is ipl203.xdc.
   * **[!UICONTROL IPL 300 DPI]**: Use IPL 300 DPI. The ipl300.xdc is used.
   * **[!UICONTROL IPL 400 DPI]**: Use IPL 400 DPI. The ipl400.xdc file is used.
-  * **[!UICONTROL Custom TPCL]**: Use the default XDC file for TPCL or specify a custom XDC file for TPCL. The default XDC file is tpcl203.xdc.
+  * **[!UICONTROL Custom TPCL]**: Use the default XDC file for TPCL or specify a custom XDC file for TPCL.
   * **[!UICONTROL TPCL 305 DPI]**: Use TPCL 300 DPI. The tpcl305.xdc file is used.
   * **[!UICONTROL PCL 600 DPI]**: Use TPCL 600 DPI. The tpcl600.xdc file is used.
   * **[!UICONTROL ustom DPL]**: Use the default XDC file for DPL or specify a custom XDC file DPL. The default XDC file is dpl203.xdc.
@@ -409,7 +407,7 @@ The Generate Printed Output step has the following properties:
 
   When you pick an asset from your application, the Content Root URI path must have the correct structure. For example, if a form is picked from an application named SampleApp, and is placed at SampleApp/1.0/forms/Test.xdp, the Content Root URI must be specified as repository://administrator@password/Applications/SampleApp/1.0/forms/, or repository:/Applications/SampleApp/1.0/forms/ (when authority is null). When the Content Root URI is specified this way, the paths of all of the referenced assets in the form will be resolved against this URI.
 
-* **[!UICONTROL Select XCI file using]**: XCI files are used to describe fonts that are used for form design elements. You can keep an XCI file relative to the payload, at an absolute path, or using a variable of Document data type.
+* **[!UICONTROL Select XCI file using]**: XCI files are used to describe fonts and other properties that are used for form design elements. You can keep an XCI file relative to the payload, at an absolute path, or using a variable of Document data type.
 
 * **[!UICONTROL Locale]**: Specifies the language used for generating the PDF document. If you provide a literal value, select a language from the list or select one of these values:
   * **To use server default**:
