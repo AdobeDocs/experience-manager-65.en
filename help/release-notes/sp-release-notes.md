@@ -19,7 +19,7 @@ mini-toc-levels: 1
 | Version |6.5.4.0 |
 | Type |Service Pack Release |
 | Date |March 05, 2020 |
-| Download URL | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0) |
+| Download URL | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0) |
 
 ## What's included in Adobe Experience Manager 6.5.4.0 {#what-s-included-in-aem}
 
@@ -39,7 +39,7 @@ Some key features and enhancements introduced in AEM 6.5.4.0 include:
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.10.8.
 
-For complete list of features, key highlights, key features introduced in previous AEM 6.5 service packs, see [What's new in Adobe Experience Manager 6.5 Service Pack 4].(new-features-latest-service-pack.md)
+For complete list of features, key highlights, key features introduced in previous AEM 6.5 service packs, see [What's new in Adobe Experience Manager 6.5 Service Pack 4](new-features-latest-service-pack.md).
 
 ### Assets {#assets-6540-enhancements}
 
@@ -265,7 +265,7 @@ For complete list of features, key highlights, key features introduced in previo
 
 Perform the following steps to install the Service Pack on an existing AEM 6.5 instance:
 
-1. Login to Package Share from within AEM or directly from your browser and download the [AEM 6.5.4.0 package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0).
+1. Login to Package Share from within AEM or directly from your browser and download the [AEM 6.5.4.0 package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0).
 
 1. Install the downloaded package using Package Manager.
 
@@ -316,7 +316,7 @@ In order to see what platforms are certified to run with this release, please re
 >
 >Skip if you are not using AEM Forms on JEE. Fixes in AEM Forms on JEE are delivered through a separate installer.
 
-For information about installing the cumulative installer for AEM Forms on JEE and post-deployment configuration, see the [release notes for patch 0007](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0007.html).
+For information about installing the cumulative installer for AEM Forms on JEE and post-deployment configuration, see the [release notes for patch 0011](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0011.html).
 
 #### Workbench installer
 
@@ -324,7 +324,7 @@ As it is a full installer, the file size is more as compared to the patch versio
 
 ### UberJar {#uber-jar}
 
-The UberJar for AEM 6.5.4.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.3/).
+The UberJar for AEM 6.5.4.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4/).
 
 To use UberJar in a Maven project, refer to the article, [How to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
