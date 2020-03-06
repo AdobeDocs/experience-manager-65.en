@@ -298,6 +298,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Correspondence Management Overview](using/cm-overview.md)
   + [Layout Design](using/layout-design-details.md)
   + [Data Dictionary](using/data-dictionary.md)
+  + [Document Fragments](using/document-fragments.md)
   + [Create Letter](using/create-letter.md)
   + [Create Correspondence](using/create-correspondence.md)
   + [Remote functions in Expression Builder](using/expression-builder.md)
