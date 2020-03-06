@@ -565,8 +565,6 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap/click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. If the asset references other assets, its references are listed in the wizard. Only references that are either unpublished or modified since they were last published/unpublished are displayed. Choose the references you want to publish.
 
-   ![chlimage_1-225](assets/chlimage_1-21.png)
-
    >[!NOTE]
    >
    >Empty folders, that are part of a folder that you've published, are not published.
