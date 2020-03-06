@@ -19,7 +19,7 @@ mini-toc-levels: 1
 | Version |6.5.4.0 |
 | Type |Service Pack Release |
 | Date |March 05, 2020 |
-| Download URL | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0) |
+| Download URL | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0), [Software Distribution(Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.4.zip) |
 
 ## What's included in Adobe Experience Manager 6.5.4.0 {#what-s-included-in-aem}
 
@@ -125,8 +125,6 @@ For complete list of features, key highlights, key features introduced in previo
 
 * When moving the content within the same folder, the page move option is disabled (NPR-31840).
 
-* When URLs ending with /_jcr_content/.html or /jcr:content/.html are accessed, CPU spikes and AEM stops responding (NPR-31837).
-
 * In editable templates structure mode, the allowed components list in layout container displays incorrect results. Only components with design dialog are displayed in the layout container (NPR-31816).
 
 * When a page has read-only permissions for a user, the Open properties option is visible in sites.html but not in editor.html (NPR-31770).
@@ -176,8 +174,6 @@ For complete list of features, key highlights, key features introduced in previo
 ### WCM Template Editor {#wcm-template-editor-6540}
 
 * In editable templates structure mode, allowed components list in layout container is not displaying link button component (CQ-4282099).
-
-* CPU spikes and Experience Manager turns unresponsive when URLs ending with `/_jcr_content/.html` or `/jcr:content/.html` are accessed (CQ-4280770).
 
 ### WCM Page Editor {#wcm-page-editor-6540}
 
