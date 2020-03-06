@@ -128,7 +128,7 @@ The necessary steps are :
 
 1. repeat steps 3 and 4 on all author and publish instances
 
-Further information on installing bundles is found on the [Web Console](/help/sites-deploying/configuring-web-console.md#bundles) page.
+Further information on installing bundles is found on the [Web Console](/help/sites-deploying/web-console.md) page.
 
 #### Example : Installed MySQL Connector Bundle {#example-installed-mysql-connector-bundle}
 
