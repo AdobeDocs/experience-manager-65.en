@@ -8,7 +8,7 @@ mini-toc-levels: 1
 
 # What's new in Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-In 2020, for Adobe Experience Manager (AEM) 6.5, new features and improvements are delivered in quarterly Service Packs. The customers benefit from this new approach as they get to adopt the innovations quicker.
+In 2020, Adobe Experience Manager (AEM) 6.5 delivers features and continuous improvements in quarterly Service Packs. The customers benefit from this new approach as they get to adopt the innovations quicker.
 
 The latest AEM Service Pack 4 (6.5.4.0) is released on **March 5, 2020**. This article highlights the features that the latest Service Pack offers to make your AEM journey more enriching.
 
@@ -16,15 +16,16 @@ The latest AEM Service Pack 4 (6.5.4.0) is released on **March 5, 2020**. This a
 
 ### Performance improvements in various areas {#performance-improvements}
 
-* Reduce the time for loading and initializing ContextHub within a site (contexthub.kernel.js). Results in faster loading 1st page during a site visit.
+* Reduced the time for loading and initializing ContextHub within a site (contexthub.kernel.js). It results in loading a page faster during a site visit.
 
-* In Page Editor, reduce the time the page is refreshed after dragging & dropping Experience Fragments into the page canvas.
+* Reduced the time to refresh a page after dragging & dropping Experience Fragments in the canvas of a page editor.
 
-* In Live Copy Overview, shorten time to load entries when site has many live copies (+200).
+* In Live Copy Overview, shortened the time to load entries when a site has more than 200 live copies.
 
-* In Template Editor, improve handling of incomplete/invalid URLs that might trigger the Template Editor to slow down.
+* In Template Editor, improved the handling of incomplete or invalid URLs that can trigger the Template Editor to slow down.
 
-Further, starting AEM 6.5 SP4, the Style System has been enhanced, the styles can now also be selected within a component dialog.
+In addition, AEM 6.5 SP4 includes Style System enhancements. You can now also select styles within a component dialog.
+
 
 ## AEM Assets {#aem-assets}
 
