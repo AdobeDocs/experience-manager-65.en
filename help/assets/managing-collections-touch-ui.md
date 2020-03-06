@@ -115,7 +115,7 @@ You can add assets to a collection that contains a list of referenced assets or 
 
 ## Edit a smart collection {#editing-a-smart-collection}
 
-Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#editing-saved-searches).
+Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#saved-searches).
 
 1. In the Assets user interface, tap/click the search icon from the toolbar.
 
@@ -204,7 +204,7 @@ You can edit collection settings, such as title and description, or to add membe
 
    >[!NOTE]
    >
-   >You can also delete smart collections by [deleting saved searches](#deleting-saved-searches).
+   >You can also delete smart collections by [deleting saved searches](#saved-searches).
 
 ## Download a collection {#downloading-a-collection}
 

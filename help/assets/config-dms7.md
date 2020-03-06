@@ -21,7 +21,7 @@ The following architecture diagram describes how Dynamic Media - Scene7 mode wor
 
 With the new architecture, AEM is responsible for master assets and synchs with Dynamic Media for asset processing and publishing:
 
-1. When the master asset is uploaded to AEM, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image. (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.)
+1. When the master asset is uploaded to AEM, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
 1. After the renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
 1. After content is ready to be published and approved, it triggers the Dynamic Media service to push content out to delivery servers and cache content at the CDN.
 
@@ -65,11 +65,13 @@ Feature pack 18912 lets you either bulk ingest assets by way of FTP, or migrate 
 
 See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md) for more information.
 
-## Configuring Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
+## Creating a Dynamic Media Configuration {#configuring-dynamic-media-cloud-services}
 
-**Before you configure Dynamic Media Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+**Before you configure Dynamic Media**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
-To configure dynamic media cloud services:
+   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+
+**To create a Dynamic Media Configuration**
 
 1. In AEM, tap the AEM logo to access the global navigation console and tap or click the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]** (do not tap or select the folder icon to the left of **[!UICONTROL global]**), then tap **[!UICONTROL Create]**.
@@ -81,7 +83,7 @@ To configure dynamic media cloud services:
    >
    >After you receive your provisioning email with Dynamic Media credentials, please [log into](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that the Dynamic Media cloud service is set up with the correct credentials.
 
-1. If the connection is successful, you can also set the following:
+1. When the connection is successful, you can also set the following:
 
     * **[!UICONTROL Company]** - the name of the Dynamic Media account. It is possible you may have multiple Dynamic Media accounts for different sub-brands, divisions, or different staging/production environments.
 
@@ -92,14 +94,22 @@ To configure dynamic media cloud services:
     * **[!UICONTROL Secure Preview Server]** - lets you specify the URL path to your secure renditions preview server. That is, after renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
       Unless you have a special arrangment to use your own company's server or a special server, Adobe Systems recommends that you leave this setting as specified.
 
+    * **[!UICONTROL Sync all content]** - <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->Selected by default. Deselect this option if you want to selectively include or exclude assets from the sync to Dynamic Media. Deselecting this option lets you can choose from the following two Dynamic Media sync modes:
+
+    * **[!UICONTROL Dynamic Media sync mode]**
+        * **[!UICONTROL Enabled by default]** - The configuration is applied to all folders by default unless you mark a folder specifically for exclusing. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+        * **[!UICONTROL Disabled by default]** - The configuration is not applied to any folder until you explicitly mark a selected folder for sync to Dynamic Media.
+        To mark a selected folder for sync to Dynamic Media, select an asset folder, then on the toolbar, click **[!UICONTROL Properties]**. On the **[!UICONTROL Details]** tab, in the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options. When you are done tap **[!UICONTROL Save]**. *Remember: these three options are not available if you selected **Sync all content** earlier.*
+            * **[!UICONTROL Inherited]** - No explicit sync value on the folder; insteatd, the folder inherits the sync value from one of its ancestor folders or the default mode in the cloud configuration. The detailed status for inherited shows by way of a tool tip.
+            * **[!UICONTROL Enable for sub-folders]** -  Include everything in this sub-tree for sync to Dynamic Media. The folder-specific settings override the default mode in the cloud configuration.
+            * **[!UICONTROL Disabled for sub-folders]** - Exclude everything in this sub-tree from syncing to Dynamic Media.
+
    >[!NOTE]
    >
    >There is no support for versioning in DMS7. Also, delayed activation applies only if **[!UICONTROL Publish Assets]** in the Edit Dynamic Media Configuration page is set to **[!UICONTROL Upon Activation]**, and then only until the first time the asset is activated.
    >
    >
    >After an asset is activated, any updates are immediately published live to S7 Delivery.
-
-   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Tap **[!UICONTROL Save]**.
 1. To securely preview Dynamic Media content before it gets published, you will need to "whitelist" the AEM author instance to connect to Dynamic Media:
