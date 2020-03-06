@@ -28,7 +28,7 @@ In this section, we cover upgrading an AEM installation to AEM 6.5:
 * [Post Upgrade Checks and Troubleshooting](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
 * [Sustainable Upgrades](/help/sites-deploying/sustainable-upgrades.md)
 * [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md)
-* [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring-in-aem65.md)
+* [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md)
 
 For easier reference to the AEM instances involved in these procedures, the following terms are used throughout these articles:
 
