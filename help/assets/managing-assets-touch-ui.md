@@ -329,6 +329,25 @@ To preview an asset, follow these steps.
 
    ![chlimage_1-216](assets/chlimage_1-11.png)
 
+**Preview assets using keyboard keys only**
+
+To preview an asset using keyboard, follow these steps:
+
+1. From the Assets user interface, navigate to the location of the asset you want to preview, using `Tab` and arrow keys.
+
+1. Open the desired asset.
+
+   In the preview mode, zoom and reset options are available for [supported Image types](/help/assets/assets-formats.md#supported-raster-image-formats) (with interactive editing).
+1. To zoom into the asset:
+   1. Use `Tab` key to move focus to zoom-in icon.
+   1. Use `Enter` key to zoom into the image.
+
+   To zoom out use `Tab` key to move focus to the the zoom-out icon and press `Enter`.
+
+1. Use `Shift` + `Tab` keys to move the focus back on the image.
+
+1. Use arrow keys to move around the zoomed image.
+
 See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 ## Edit properties and metadata {#editing-properties}
