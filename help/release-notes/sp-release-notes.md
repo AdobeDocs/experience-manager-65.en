@@ -29,7 +29,7 @@ Some key features and enhancements introduced in AEM 6.5.4.0 include:
 
 * AEM Assets is now configured with Brand Portal through Adobe I/O Console.
 
-* A new [Generate printable Output](../forms/using/aem-forms-workflow-step-reference.md) step is now available for AEM workflows.
+* A new [Generate printable Output](../forms/using/aem-forms-workflow-step-reference.md) step is now available for AEM Forms workflows.
 
 * [Multi-column support](../forms/using/resize-using-layout-mode.md) for layout mode for adaptive forms and Interactive Communications.
 
@@ -145,9 +145,9 @@ For complete list of features, key highlights, key features introduced in previo
 
 * Mouse control shifts to previous filter field instead of staying in the existing filter field while searching assets using Filter panel (NPR-32538).
 
-* [Or Platform Tagging] Search for tags by typing in the tag fields shows tags outside the root boundaries and does not respect the `rootPath` property of tag fields (NPR-31895).
+* Platform Tagging: Search for tags by typing in the tag fields shows tags outside the root boundaries and does not respect the `rootPath` property of tag fields (NPR-31895).
 
-* [Platform UI] Path browser breaks if invalid path is added in text field (NPR-31884).
+* Platform UI: Path browser breaks if invalid path is added in text field (NPR-31884).
 
 * Notification gets hidden behind a sticky menu on page selection (NPR-31628).
 
@@ -237,9 +237,7 @@ For complete list of features, key highlights, key features introduced in previo
 
 * Document Security: A protected PDF file fails to open offline with DisableGlobalOfflineSynchronizationData option set to True (NPR-32078).
 
-* Designer: If the tagging option is enabled, the subform border disappears in the generated PDF output (NPR-32547).
-
-* Designer: If the tagging option is enabled, the subform border disappears in the generated PDF output (NPR-31983, NPR-31950).
+* Designer: If the tagging option is enabled, the subform border disappears in the generated PDF output (NPR-32547, NPR-31983, NPR-31950).
 
 * Designer: If there are merged cells in a table, the accessibility test fails for the output PDF file converted from an XDP form using the output service (CQ-4285372).
 
