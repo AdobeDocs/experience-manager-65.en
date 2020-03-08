@@ -38,6 +38,6 @@ The key target for HTML5 forms is touch devices. Therefore, a new scribble signa
 
 #### Rich text format {#rich-text-format}
 
-Define a rich text field format for the text field in Forms Designer to add a list of formatting options to the field in rendered HTML5 form. To apply the settings, tap the text field in **[!UICONTROL Design View]**. In the **[!UICONTROL Field]** tab, select **[!UICONTROL Rich Text]** from the **[!UICONTROL Field Format]** drop-down list. The text field displays formatting options when rendered in an HTML5 form.
+Define a rich text field format for the text field in Forms Designer to add a list of formatting options to the field in the rendered HTML5 form. To apply the settings, tap the text field in **[!UICONTROL Design View]**. In the **[!UICONTROL Field]** tab, select **[!UICONTROL Rich Text]** from the **[!UICONTROL Field Format]** drop-down list. The text field displays formatting options when rendered in an HTML5 form.
 
 [Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)
