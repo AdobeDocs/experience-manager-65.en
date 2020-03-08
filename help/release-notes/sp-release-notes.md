@@ -41,6 +41,50 @@ Some key features and enhancements introduced in AEM 6.5.4.0 include:
 
 For complete list of features, key highlights, key features introduced in previous AEM 6.5 service packs, see [What's new in Adobe Experience Manager 6.5 Service Pack 4](new-features-latest-service-pack.md).
 
+### Sites {#sites-fixes}
+
+* When a URL of an AEM Sites pages contains a colon ( : ) or percentage symbol (%), the underlying browser stop responding and CPU cycles show a spike (NPR-32369, NPR-31918).
+
+* When an AEM Sites page is opened for editing and a component is copied, the paste action remains unavailable for some placeholders (NPR-32317).
+
+* When the Manage Publication wizard is opened, an Experience Fragment linked to a Core Component is not displayed in the lists of published references (NPR-32233).
+
+* Live copy overview in Touch UI takes much longer than Classic UI to render (NPR-32149).
+
+* When server-time and machine-time are in different time zones, scheduled publish time displays server time in Touch UI, whereas in Classic UI, machine time is displayed (NPR-32077).
+
+* AEM Sites fails to open a page with a suffix in the URL (NPR-32072).
+
+* When a user edits a Content Fragment, a deleted variation of the Content Fragment is restored (NPR-32062).
+
+* Users are allowed to save a Content Fragment without providing any information in the required fields (NPR-31988).
+
+* kernel.js and ui.js are not pre-complied or cached. It leads to additional time in rendering pages (NPR-31891).
+
+* When PageEventAuditListener is enabled, the length of the commit queue increases. It impacts the performance of many operations such as bulk publishing, navigation, bulk asset movement (NPR-31890).
+
+* When Experience Fragments are dragged, high response time is observed (NPR-31878).
+
+* When you select the Drag component here option in a responsive grid’s placeholder, a GET request is sent and the request results in HTTP 403 error (NPR-31845).
+
+* When moving the content within the same folder, the page move option is disabled (NPR-31840).
+
+* In editable templates structure mode, the allowed components list in layout container displays incorrect results. Only components with design dialog are displayed in the layout container (NPR-31816).
+
+* When a page has read-only permissions for a user, the Open properties option is visible in sites.html but not in editor.html (NPR-31770).
+
+* When a user clicks the Create button, the page option is not available (NPR-31756).
+
+* Unable to synchronize campaign in Adobe campaign containing OOTB (Out of the box) design importer component (NPR-31728).
+
+* When you try to change a bullet list to numbered list, only the first two items of the list are changed (NPR-31636).
+
+* When a page is un-authored and the child node is selected, the selection dialogue still displays the initial node. When the page is authored and user clicks browse, the page redirects to the root node instead of the authored node (NPR-31618).
+
+* The view configuration dialog box does not work properly for Inbox customization workflow feature (NPR-32503 and NPR-32492).
+
+* An error message displays while viewing workflow information using Inbox (CQ-4282168).
+
 ### Assets {#assets-6540-enhancements}
 
 * The button to trigger workflow on assets collection page is disabled (NPR-32471).
@@ -96,50 +140,6 @@ For complete list of features, key highlights, key features introduced in previo
 * Keyboard focus gets stuck in Email drop-down in Download dialog, in Chrome and Safari browsers (NPR-32067).
 
 * Sync all content checkbox is not enabled by default while trying to add DM cloud config on AEM (CQ-4288533).
-
-### Sites {#sites-fixes}
-
-* When a URL of an AEM Sites pages contains a colon ( : ) or percentage symbol (%), the underlying browser stop responding and CPU cycles show a spike (NPR-32369, NPR-31918).
-
-* When an AEM Sites page is opened for editing and a component is copied, the paste action remains unavailable for some placeholders (NPR-32317).
-
-* When the Manage Publication wizard is opened, an Experience Fragment linked to a Core Component is not displayed in the lists of published references (NPR-32233).
-
-* Live copy overview in Touch UI takes much longer than Classic UI to render (NPR-32149).
-
-* When server-time and machine-time are in different time zones, scheduled publish time displays server time in Touch UI, whereas in Classic UI, machine time is displayed (NPR-32077).
-
-* AEM Sites fails to open a page with a suffix in the URL (NPR-32072).
-
-* When a user edits a Content Fragment, a deleted variation of the Content Fragment is restored (NPR-32062).
-
-* Users are allowed to save a Content Fragment without providing any information in the required fields (NPR-31988).
-
-* kernel.js and ui.js are not pre-complied or cached. It leads to additional time in rendering pages (NPR-31891).
-
-* When PageEventAuditListener is enabled, the length of the commit queue increases. It impacts the performance of many operations such as bulk publishing, navigation, bulk asset movement (NPR-31890).
-
-* When Experience Fragments are dragged, high response time is observed (NPR-31878).
-
-* When you select the Drag component here option in a responsive grid’s placeholder, a GET request is sent and the request results in HTTP 403 error (NPR-31845).
-
-* When moving the content within the same folder, the page move option is disabled (NPR-31840).
-
-* In editable templates structure mode, the allowed components list in layout container displays incorrect results. Only components with design dialog are displayed in the layout container (NPR-31816).
-
-* When a page has read-only permissions for a user, the Open properties option is visible in sites.html but not in editor.html (NPR-31770).
-
-* When a user clicks the Create button, the page option is not available (NPR-31756).
-
-* Unable to synchronize campaign in Adobe campaign containing OOTB (Out of the box) design importer component (NPR-31728).
-
-* When you try to change a bullet list to numbered list, only the first two items of the list are changed (NPR-31636).
-
-* When a page is un-authored and the child node is selected, the selection dialogue still displays the initial node. When the page is authored and user clicks browse, the page redirects to the root node instead of the authored node (NPR-31618).
-
-* The view configuration dialog box does not work properly for Inbox customization workflow feature (NPR-32503 and NPR-32492).
-
-* An error message displays while viewing workflow information using Inbox (CQ-4282168).
 
 ### Foundation UI {#foundation-ui-6540}
 
