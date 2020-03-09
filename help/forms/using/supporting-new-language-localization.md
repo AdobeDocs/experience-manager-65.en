@@ -40,7 +40,7 @@ If a client library for the requested locale doesn't exist, it checks for a clie
 
 ## Add localization support for non-supported locales {#add-localization-support-for-non-supported-locales}
 
-AEM Forms currently supports localization of adaptive forms content in English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-br), Chinese- (zh-tn), Chinese-Taiwan (zh-tw), and Korean (ko-kr) locales.
+AEM Forms currently supports localization of adaptive forms content in English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales.
 
 To add support for a new locale at adaptive forms runtime:
 
@@ -91,12 +91,12 @@ LogMessages.js
 
 ### Add locale support for the dictionary {#add-locale-support-for-the-dictionary-br}
 
-Perform this step only if the `<locale>` you are adding is not among `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw`, `ja`, `ko-kr`.
+Perform this step only if the `<locale>` you are adding is not among `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
 1. Create an `nt:unstructured` node `languages` under `etc`, if not present already.
 
 1. Add a multi-valued string property `languages` to the node, if not present already.
-1. Add the `<locale>` default locale values `de`, `es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw`, `ja`, `ko-kr`, if not present already.
+1. Add the `<locale>` default locale values `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, if not present already.
 
 1. Add the `<locale>` to the values of the `languages` property of `/etc/languages`.
 

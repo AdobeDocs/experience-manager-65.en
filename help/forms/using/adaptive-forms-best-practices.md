@@ -241,7 +241,7 @@ Some best practices when localizing adaptive forms are as follows:
 
   `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* AEM Forms currently supports localization of adaptive forms content in English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-br), Chinese- (zh-tn), Chinese-Taiwan (zh-tw), and Korean (ko-kr) locales. However, you can add support for new locales for adaptive forms at runtime. For more information, see [Supporting new locales for adaptive forms localization](/help/forms/using/supporting-new-language-localization.md).
+* AEM Forms currently supports localization of adaptive forms content in English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. However, you can add support for new locales for adaptive forms at runtime. For more information, see [Supporting new locales for adaptive forms localization](/help/forms/using/supporting-new-language-localization.md).
 
 ## Prepare forms project for production {#prepare-forms-project-for-production}
 
