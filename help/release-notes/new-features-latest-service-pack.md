@@ -109,7 +109,7 @@ For more information, see [Designing form templates for HTML5 forms](../forms/us
 
 In addition to the new features, AEM 6.5 Service Pack 4 includes the following key highlights:
 
-* Only selective content subtrees can now be synced to ***Dynamic Media - Scene7 mode*** instead of all of `content/dam`.
+* Only selective content subtrees can now be synced to *Dynamic Media - Scene7 mode* instead of all of `content/dam`.
 
 * Form data model integration using SOAP web service now supports choice groups or attributes on elements.
 
