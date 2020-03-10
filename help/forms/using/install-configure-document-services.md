@@ -467,7 +467,7 @@ On Microsoft Windows, the PDF Generator service uses Adobe Acrobat to convert su
 1. Double-click a PDF document on your system. When Acrobat starts for the first time, the dialog boxes for Sign-in, Welcome screen, and EULA appear. Dismiss these dialog boxes for all the users configured to use PDF Generator. 
 1. Run the PDF Generator utility batch file to configure Acrobat for the PDF Generator service:
 
-    1. Open [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) and download the adobe-aemfd-pdfg-common-pkg-[version].zip file from the package manager. 
+    1. Open [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) and download the `adobe-aemfd-pdfg-common-pkg-[version].zip` file from the package manager.
     1. Unzip the downloaded .zip file. Open the command prompt with administrative privileges.
     1. Navigate to the `[extracted-zip-file]\jcr_root\etc\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\scripts` directory. Run the following batch file:
 
