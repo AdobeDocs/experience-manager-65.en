@@ -80,7 +80,7 @@ Execute the following steps if you want to resize the entire panel instead of in
 
 Execute the following steps to define the number of columns for a panel:
 
-1. In **[!UICONTROL Edit]** mode, tap the panel, select ![Configure](assets/configure_icon.png), and select **[!UICONTROL Responsive - everything on the page without navigation]** option from the **[!UICONTROL Panel Layout]** drop-down list..
+1. In **[!UICONTROL Edit]** mode, tap the panel, select ![Configure](assets/configure_icon.png), and select **[!UICONTROL Responsive - everything on the page without navigation]** option from the **[!UICONTROL Panel Layout]** drop-down list.
 
 1. Tap ![Save](assets/save_icon.svg) to save the properties.
 

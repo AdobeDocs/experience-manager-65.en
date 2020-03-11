@@ -57,11 +57,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
    [ ![Toolbar](assets/advancedediting.png)
 
-   (Click to open full-sized image)
-
-   ](assets/advancedediting-1.png)
-
-    * **Link**: Insert hypertext link in the text.
+    * **Link**: Insert hypertext link in the text. Tap **[!UICONTROL Link]**, specify the link in the **[!UICONTROL URL]** field, remove the default object name from the **[!UICONTROL Alt Text]** field, and tap ![Save](assets/save_icon.svg).
     * **Repeat**: Repeat prints collection element in Data Dictionary using a delimiter.
     * **Condition**: Tap to insert a condition. Insert text based on condition. If condition is true, then text is visible in letter, otherwise not.
     * **Add Description**: Add annotation to a piece of text. This is metadata visible to the Author but not a part of the letter that is created.
