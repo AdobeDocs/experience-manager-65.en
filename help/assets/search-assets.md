@@ -28,6 +28,8 @@ Search for assets using the Omnisearch field at the top of the AEM web interface
 
 Use the **[!UICONTROL Filters]** panel to narrow your search by filtering search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. Your administrators can customize the Filters panel and add or remove search predicates using search facets.
 
+Note that [!UICONTROL File Type] filter in the [!UICONTROL Filters] panel has mixed-state checkboxes, which means unless you select all the nested predicates (or formats) the first level checkboxes are not selected and are striken through instead.
+
 AEM search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/managing-collections-touch-ui.md).
 
 ## Understand search interface {#searchui}
