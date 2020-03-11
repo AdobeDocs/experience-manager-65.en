@@ -128,22 +128,24 @@ For both views (List and Calendar) you can define settings:
 
 ### Inbox - Admin Control {#inbox-admin-control}
 
-Users that are part of the **workflow-administrators** group can view the Admin Control option in the list. Using this option, the administrators can:
+The Admin Control option enables the administrators to:
 
-* Define customizations for the text and logo available in the header.
+* Customize header text and logo
 
-* Control the display of navigation options available in the header and restrict the users to switch to workflow authoring mode or navigate to Help or other solution links.
+* Control the display of navigation links available in header
+
+The Admin Control option displays in the view selector drop-down list only if you are a member of the administrators or workflow-administrators group.
 
 ![admin-control](assets/admin-control.png)
 
 * **Branding Customization**
 
-  * **Customize header text:** Specify the text in this field to replace the existing **Adobe Experience Manager**  text displayed in the header.
+  * **Customize header text:** Specify the text to display in the header.
 
-  * **Customize Logo:** Upload an image in  Digital Asset Management (DAM) and refer to that image using this field to replace the Adobe Experience Manager logo displayed in the header.
+  * **Customize Logo:** Upload an image in  Digital Asset Management (DAM) and refer to that image to display it in the header.
 
 * **User Navigation**
-  * **Hide navigation options:** Select this option to hide navigation options available in the header, such as the option to navigate to other solutions, Help link, and the options that display on tapping Adobe Experience Manager logo or text. 
+  * **Hide navigation options:** Select this option to hide navigation options available in the header. The navigation options include links to other solutions, Help link, and the authoring options available on tapping Adobe Experience Manager logo or text. 
 * **Save:** Tap/click this option to save the settings.
 
 ## Taking Action on an Item {#taking-action-on-an-item}

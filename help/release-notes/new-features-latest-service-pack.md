@@ -8,7 +8,7 @@ mini-toc-levels: 1
 
 # What's new in Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-In 2020, for Adobe Experience Manager (AEM) 6.5, new features and improvements are delivered in quarterly Service Packs. The customers benefit from this new approach as they get to adopt the innovations quicker.
+Adobe Experience Manager (AEM) 6.5 delivers features and continuous improvements through quarterly Service Packs this year. The new approach benefits our customers as they get to adopt the innovations quicker.
 
 The latest AEM Service Pack 4 (6.5.4.0) is released on **March 5, 2020**. This article highlights the features that the latest Service Pack offers to make your AEM journey more enriching.
 
@@ -16,23 +16,21 @@ The latest AEM Service Pack 4 (6.5.4.0) is released on **March 5, 2020**. This a
 
 ### Performance improvements in various areas {#performance-improvements}
 
-* Reduce the time for loading and initializing ContextHub within a site (contexthub.kernel.js). Results in faster loading 1st page during a site visit.
+* Reduced the time for loading and initializing ContextHub within a site (contexthub.kernel.js). It results in loading a page faster during a site visit.
 
-* In Page Editor, reduce the time the page is refreshed after dragging & dropping Experience Fragments into the page canvas.
+* Reduced the time to refresh a page after dragging & dropping Experience Fragments in the canvas of a page editor.
 
-* In Live Copy Overview, shorten time to load entries when site has many live copies (+200).
+* Shortened the time to load entries for a Sites page with more than 200 live copies in Live Copy Overview.
 
-* In Template Editor, improve handling of incomplete/invalid URLs that might trigger the Template Editor to slow down.
+* Improved the handling of incomplete or invalid URLs that can trigger the Template Editor to slow down in Template Editor.
 
-Further, starting AEM 6.5 SP4, the Style System has been enhanced, the styles can now also be selected within a component dialog.
+In addition, AEM 6.5 Service Pack 4 includes Style System enhancements. You can now also select styles within a component dialog.
 
 ## AEM Assets {#aem-assets}
 
 ### Integration with Brand Portal through Adobe I/O Console {#assets-integration-bp}
 
-AEM Assets is now configured with Brand Portal through Adobe I/O, which procures an IMS token for authorization of the Brand Portal tenant. Earlier, it was configured in Classic UI via Legacy OAuth Gateway.
-
-New integrations with Legacy OAuth will not be supported after April 6, 2020 and will shift to Adobe I/O Console. If you do not modify the integration, the existing configurations will continue to work.
+You can now configure AEM Assets with Brand Portal through Adobe I/O Console. The Adobe I/O Console procures an IMS token for authorization of the Brand Portal tenant. Earlier, AEM Assets was configured with Brand Portal in Classic UI via Legacy OAuth Gateway. The configurations using Legacy OAuth Gateway will be supported till April 6, 2020. If you do not modify the integration, the existing configurations will continue to work.
 
 You can either create a new integration or upgrade your integration settings to Adobe I/O Console.
 
@@ -52,7 +50,7 @@ You can either create a new integration or upgrade your integration settings to 
 
 ### Generate printable output in AEM Forms workflows {#generate-printable-output}
 
-If you want a solution to print multiple copies of a source template file and integrate it with a data file with numerous records, a new Generate Printable Output workflow step is available in AEM Forms. For example, if you want to print a source form with a different name each time it is printed, you can have those names in the data file and integrate it with a standard template file.
+If you want a solution to print or save multiple copies of a source template file and integrate it with a data file with numerous records, a new Generate Printable Output workflow step is available in AEM Forms. For example, if you want to print a source form with a different name each time it is printed, you can have those names in the data file and integrate it with a standard template file.
 
 Take advantage of this feature using **Tools** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL Create]** and then search for the **[!UICONTROL Generate Printable Output]** workflow step.
 
@@ -64,7 +62,7 @@ For more information on this feature, see [Forms-centric workflow on OSGi - Step
 
 You can now define the number of columns for a panel in adaptive forms and interactive communications.
 
-You can find the new option by switching to Layout mode, tap the panel that you want to convert to a multi-column format, select its parent and tap multi-column icon, as depicted in the following figure, to define the number of columns for the panel.
+You can find the new option by switching to Layout mode. Tap the panel that you want to convert to a multi-column format, select its parent and tap the multi-column icon, to define the number of columns for the panel.
 
 ![Multi column layout](assets/multi-column-layout.gif)
 
@@ -76,13 +74,13 @@ Do you ever feel the need to customize options available in AEM header? It is no
 
 **Customize header text**
 
-Users that belong to **workflow-administrators** group can now customize header text available at the top with text of your own choice to replace the existing **[!UICONTROL Adobe Experience Manager]** text.
+Workflow administrators can now specify header text of your own choice.
 
 You can find the new **[!UICONTROL Customize header text]** option under view selector (available at top-right of the toolbar) > **[!UICONTROL Admin Control]**.
 
 **Customize logo**
 
-Similar to customizing header text, users that belong to **workflow-administrators** group can now customize logo available at the top with logo of your own choice.
+Similar to customizing header text, workflow administrators can now specify header logo of your own choice. 
 
 You can find the new **[!UICONTROL Customize Logo]** option under view selector > **[!UICONTROL Admin Control]**.
 
@@ -90,7 +88,7 @@ For more information on this feature, see [Your Inbox](../sites-authoring/inbox.
 
 ### User navigation control {#user-navigation-control}
 
-Users that belong to **workflow-administrators** group have the option of making the users work on AEM in a restricted mode based on their role. The administrators can control the display of navigation options available in the header and restrict the users to switch to workflow authoring mode or navigate to Help or other solution links.
+Workflow administrators now have the option of making the users work on AEM in a restricted mode based on their role. The administrators can control the display of navigation options available in the header to restrict the users to switch to workflow authoring mode or other solution links.
 
 Check out the new **[!UICONTROL Hide navigation options]** under view selector > **[!UICONTROL Admin Control]**.
 
@@ -98,19 +96,19 @@ For more information on this feature, see [Your Inbox](../sites-authoring/inbox.
 
 ### Rich text support in HTML5 forms {#rich-text-support}
 
-The text field can now display a list of formatting options in the rendered HTML5 form. You must define a field format for the text field in Forms Designer to apply appropriate settings to the field.
+The text field can now display a list of formatting options in the rendered HTML5 form. You must define a format for the text field in Forms Designer to apply appropriate settings to the field.
 
-To use this feature, tap the text field in **[!UICONTROL Design View]** in Forms Designer. In the **[!UICONTROL Field]** tab, select **[!UICONTROL Rich Text]** from the **[!UICONTROL Field Format]** drop-down list to apply the settings. The text field now displays formatting options when rendered in an HTML5 form.
+To use this feature, tap the text field in **[!UICONTROL Design View]** in Forms Designer. In the **[!UICONTROL Field]** tab, select **[!UICONTROL Rich Text]** from the **[!UICONTROL Field Format]** drop-down list to apply the settings.
 
 For more information, see [Designing form templates for HTML5 forms](../forms/using/designing-form-template.md).
 
 ## Key highlights
 
-In addition to the new features, AEM 6.5 Service Pack 4 includes the following key highlights:
+In addition to new features, AEM 6.5 Service Pack 4 includes the following key highlights:
 
-* Only selective content subtrees can now be synced to Scene7 instead of all of `content/dam`.
+* You can now sync selective content subtrees to *Dynamic Media - Scene7 mode* instead of all available at `content/dam`.
 
-* Form data model integration using SOAP web service now supports choice groups or attributes on elements.
+* Form data model integration with SOAP web service now supports choice groups or attributes on elements.
 
 * SOAP input or output and complex data structures now support Dynamic Group Substitution.
 
@@ -158,7 +156,7 @@ Automate Cloud Manager tasks using the command line tool. We are continuously ex
 The best way to start a new AEM project. With Archetype 23 we are [merging the Project Archetype for SPA and regular sites into one](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23), further providing a default theme to kick-start your front-end development.
 
 * AEM Sites: WKND Reference Site
-All [new reference project](https://www.wknd.site/) packed with best practices on how to build sites with AEM. Learn more reading the completely updated [WKND tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) and grab the code from [GitHub](https://github.com/adobe/aem-guides-wknd/releases).
+All [new reference project](https://www.wknd.site/) packed with best practices on how to build sites with AEM. Learn more by ereading the completely updated [WKND tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) and grabbing the code from [GitHub](https://github.com/adobe/aem-guides-wknd/releases).
 
 * AEM Sites: Commerce CIF Core Components 0.7.0 and 0.9.0
 Integrating AEM Sites and Magento Commerce. We are continuously [extending dedicated Core Components and a Project Archetype with focus on Commerce](https://github.com/adobe/aem-core-cif-components/releases).

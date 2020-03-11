@@ -80,11 +80,11 @@ Execute the following steps if you want to resize the entire panel instead of in
 
 Execute the following steps to define the number of columns for a panel:
 
-1. In **[!UICONTROL Edit]** mode, tap the panel, select ![Configure](assets/configure_icon.png), and select **[!UICONTROL Responsive - everything on the page without navigation]** option.
+1. In **[!UICONTROL Edit]** mode, tap the panel, select ![Configure](assets/configure_icon.png), and select **[!UICONTROL Responsive - everything on the page without navigation]** option from the **[!UICONTROL Panel Layout]** drop-down list..
 
 1. Tap ![Save](assets/save_icon.svg) to save the properties.
 
-1. In the **[!UICONTROL Layout]** mode, tap any of the components in the panel that you want to resize, select ![Select Parent](assets/select_parent_icon.svg), and select the first option in the drop-down list, if panel is the immediate parent of the component.
+1. In the **[!UICONTROL Layout]** mode, tap any of the components in the panel, select ![Select Parent](assets/select_parent_icon.svg), and select the panel.
 
 1. Tap ![multi-column](assets/multi-column.svg) and select the number of columns from the drop-down list. The number of columns can range from 1 to 12. The panel gets divided into a multi-column layout.
 

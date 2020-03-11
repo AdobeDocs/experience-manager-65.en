@@ -252,7 +252,7 @@ The search capability in AEM Assets has the following limitations:
 * AEM may continue to show the search term after you select properties of an asset from searched results and then cancel the search. <!-- (CQ-4273540) -->
 * When searching for folders or files and folders, the search results cannot be sorted on any parameter.
 * If you press return without typing anything in Omnisearch bar, AEM returns a list of only files and not folders. If you search specifically for folders without using a keyword, AEM does not return any results.
-* Using the [!UICONTROL Select All] check box, you can only select the first 100 searched assets in card view and first 200 searched assets in list view. IF you scroll and load more assets in the user interface, you can select more using the [!UICONTROL Select All] option.
+* Using the [!UICONTROL Select All] check box, you can only select the first 100 searched assets in card view and first 200 searched assets in list view. If you scroll and load more assets in the user interface, you can select more using the [!UICONTROL Select All] option.
 
 Visual search or similarity search has the following limitations:
 
