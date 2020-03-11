@@ -48,7 +48,7 @@ You can discover the desired assets faster from the search results page using th
 
 ![See the approximate number of assets without filtering search results in search facets.](assets/asset_search_results_in_facets_filters.png)
 
-*Figure: See the approximate number of assets without filtering search results in search facets.*
+*Figure: See the approximate number of assets without filtering search results in search facets*
 
 ## Understand search results and behavior {#searchbehavior}
 

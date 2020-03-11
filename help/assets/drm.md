@@ -16,7 +16,7 @@ You can view the expiration status for an asset in the Assets console in both th
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
-*Figure: In card view, a flag on the card indicates expired asset.*
+*Figure: In card view, a flag on the card indicates expired asset*
 
 **List view**
 
