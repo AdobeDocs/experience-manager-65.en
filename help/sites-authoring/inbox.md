@@ -134,15 +134,15 @@ The Admin Control option enables the administrators to:
 
 * Control the display of navigation links available in header
 
-The Admin Control option displays in the view selector drop-down list only if you are a member of the administrators or workflow-administrators group.
+The Admin Control option is visible only to the members of the administrators or workflow-administrators group.
 
 ![admin-control](assets/admin-control.png)
 
 * **Branding Customization**
 
-  * **Customize header text:** Specify the text to display in the header.
+  * **Customize header text:** Specify the text to display in the header to replace the default **Adobe Experience Manager** text.
 
-  * **Customize Logo:** Upload an image in  Digital Asset Management (DAM) and refer to that image to display it in the header.
+  * **Customize Logo:** Specify the image to display in the header as logo. Upload an image in  Digital Asset Management (DAM) and refer to that image in the field.
 
 * **User Navigation**
   * **Hide navigation options:** Select this option to hide navigation options available in the header. The navigation options include links to other solutions, Help link, and the authoring options available on tapping Adobe Experience Manager logo or text. 
