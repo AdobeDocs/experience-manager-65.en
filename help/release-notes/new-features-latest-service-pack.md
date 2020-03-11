@@ -16,15 +16,15 @@ The latest AEM Service Pack 4 (6.5.4.0) is released on **March 5, 2020**. This a
 
 ### Performance improvements in various areas {#performance-improvements}
 
-* Reduced the time for loading and initializing ContextHub within a site (contexthub.kernel.js). It results in loading a page faster during a site visit.
+* Reduced the time for loading and initializing ContextHub within a site (contexthub.kernel.js). It results in faster page loads during a site visit.
 
-* Reduced the time to refresh a page after dragging & dropping Experience Fragments in the canvas of a page editor.
+* Reduced the time to refresh a page after dragging & dropping Experience Fragments to Sites page editor.
 
 * Shortened the time to load entries for a Sites page with more than 200 live copies in Live Copy Overview.
 
-* Improved the handling of incomplete or invalid URLs that can trigger the Template Editor to slow down in Template Editor.
+* Improved handling of incomplete or invalid URLs. Such URLs can slow down the Template Editor.
 
-In addition, AEM 6.5 Service Pack 4 includes Style System enhancements. You can now also select styles within a component dialog.
+In addition, AEM 6.5.4.0 includes Style System enhancements. You can now select styles within the component dialog.
 
 ## AEM Assets {#aem-assets}
 
