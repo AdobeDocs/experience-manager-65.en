@@ -241,7 +241,7 @@ For complete list of features, key highlights, key features introduced in previo
 
 * Designer: If there are merged cells in a table, the accessibility test fails for the output PDF file converted from an XDP form using the output service (CQ-4285372).
 
-* Foundation JEE: Server that gets disconnected from a cluster fails to reconnect due to cache issues (NPR-32412).
+* Foundation JEE: If an AEM Forms server is disconnected from a cluster, caching issues prevent it from reconnecting to the server (NPR-32412).
 
 ## Install 6.5.4.0 {#install}
 
