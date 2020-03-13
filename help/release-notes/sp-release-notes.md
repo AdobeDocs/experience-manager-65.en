@@ -7,7 +7,6 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
-
 ---
 
 # Adobe Experience Manager 6.5 Service Pack Release Notes {#aem-service-pack-release-notes}
@@ -35,7 +34,7 @@ Some key features and enhancements introduced in AEM 6.5.4.0 include:
 
 * Support for [Rich Text](../forms/using/designing-form-template.md) in HTML5 forms.
 
-* Accessibility enhancements in Assets.
+* [Accessibility enhancements](new-features-latest-service-pack.md#accessibility-enhancements) in Experience Manager Assets.
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.10.8.
 
