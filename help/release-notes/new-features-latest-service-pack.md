@@ -3,7 +3,6 @@ title: What's new in Adobe Experience Manager 6.5 Service Pack 4
 description: What's new in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
-
 ---
 
 # What's new in Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
@@ -36,15 +35,17 @@ You can either create a new integration or upgrade your integration settings to 
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
-* Mixed-state check boxes now have aria-checked attribute with a value of “mixed”, to expose their mixed state to screen readers.
+Experience Manager Assets includes the following accessibility enhancements:
 
-* Keyboard-based controls are now supported apart from path-based gestures to move around zoomed images.
+* Arrow keys on keyboard can be used to move and pan areas within zoomed images. For more information, see [preview assets using keyboard keys only](../assets/managing-assets-touch-ui.md#previewing-assets).
 
-* Date format constraints have been provided in field labels for keyboard-only users to manually enter date.
+* The mixed state checkboxes (in which unless you select all the nested predicates the first-level checkboxes are not selected and are stricken through) in Filters panel are readable by screen readers.
 
-* Alt attribute has been added to decorative icons and removed role=img attribute, so that such icons and images are not exposed to screen reader users.
+* Date and time format constraints are provided in field labels of date fields, to enable the users to enter the date in correct format using keyboard.
 
-* Alt attribute has been added to close icons to indicate to screen reader users when they tab over it.
+  For example, `On Time (MM-DD-YYYY HH:mm)`. Here MM is month in two-digit format, YYYY is year, DD is day in two-digit format, HH is hour in 24-hour military format, and mm is minute.
+
+* The `X` symbol on the button to remove the currently selected tags are now announced by screen readers along with the number of selected tags.
 
 ## AEM Forms {#aem-forms}
 
