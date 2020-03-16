@@ -9,7 +9,7 @@ docset: aem65
 
 ---
 
-# Known Issues{#known-issues}
+# Known Issues {#known-issues}
 
 This page keeps a list of known issues from Adobe Experience Manager 6.5 that was released in April 2019.
 
