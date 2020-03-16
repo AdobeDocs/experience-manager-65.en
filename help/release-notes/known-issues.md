@@ -38,9 +38,9 @@ This page keeps a list of known issues from Adobe Experience Manager 6.5 that wa
 
 To resolve this error:
 
-  1. Stop the AEM instance. Go to `<aem_server_path_on_server>crx-quickstart\conf` and open the `sling.properties` file. Search for `org.osgi.framework.bootdelegation=`.
+  1. Stop the AEM instance. Go to `<aem_server_path_on_server>crx-quickstart\conf` and open the `sling.properties` file. Adobe recommends taking a backup of this file.
 
-  2. Add `jdk.internal.reflect,jdk.internal.reflect.*` properties to display the result as:
+  2. Search for `org.osgi.framework.bootdelegation=`. Add `jdk.internal.reflect,jdk.internal.reflect.*` properties to display the result as:
 
      ```
      org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.internal.reflect.*
