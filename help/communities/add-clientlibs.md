@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Add Clientlibs{#add-clientlibs}
+# Add Clientlibs {#add-clientlibs}
 
 ## Add a ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
@@ -21,33 +21,33 @@ Create a ClientLibraryFolder named `clientlibs`which will contain the JS and CSS
 
 The `categories`property value given to this client library is the identifier used to directly include this clientlib from a content page or to embed it in other clientlibs.
 
-1. using **CRXDE Lite**, expand `/etc/designs`
+1. Using **CRXDE Lite**, expand `/etc/designs`
 
-1. right click `an-scf-sandbox` and select `Create Node`
+1. Right-click `an-scf-sandbox` and select `Create Node`
 
     * Name : `clientlibs`
     * Type : `cq:ClientLibraryFolder`
 
-1. click **OK**
+1. Click **OK**
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
-In the **Properties** tab for the new `clientlibs` node, enter the **`categories`**property:
+In the **Properties** tab for the new `clientlibs` node, enter the **categories** property:
 
 * Name : **categories**
 * Type : **String**
 * Value : **apps.an-scf-sandbox**
-* click **Add**
-* click **Save All**
+* Click **Add**
+* Click **Save All**
 
-Note : prefacing the categories value with 'apps.' is a convention to identify the 'owning application' as being in the /apps folder, not /libs.  IMPORTANT : Add placeholder `js.tx`t and**`css.tx`**t files. (It's not officially a cq:ClientLibraryFolder without them.)
+Note : prefacing the categories value with 'apps.' is a convention to identify the 'owning application' as being in the /apps folder, not /libs.  IMPORTANT : Add placeholder `js.tx`t and **`css.txt`** files. (It's not officially a cq:ClientLibraryFolder without them.)
 
-1. right click **`/etc/designs/an-scf-sandbox/clientlibs`**
-1. select **Create File...**
-1. enter **Name:** `css.txt`
-1. select **Create File...**
-1. enter **Name:** `js.txt`
-1. click **Save All**
+1. Right-click **`/etc/designs/an-scf-sandbox/clientlibs`**
+1. Select **Create File...**
+1. Enter **Name:** `css.txt`
+1. Select **Create File...**
+1. Enter **Name:** `js.txt`
+1. Click **Save All**
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -74,16 +74,19 @@ In the **Properties** tab for the `clientlibs` node, enter the multi-value Strin
 
 **Note** that this may or may not be the desired approach to use for a production site as there are considerations of convenience versus size/speed of the clientlibs downloaded for every page.
 
-If only using one feature on one page, you could include that feature's complete clientlib directly on the page, e.g., &lt;% ui:includeClientLib categories=cq.social.hbs.forum" %&gt;
+If only using one feature on one page, you could include that feature's complete clientlib directly on the page, e.g., 
+
+`% ui:includeClientLib categories=cq.social.hbs.forum" %`
 
 In this case, including them all and so the more basic SCF clientlibs which are the author clientlibs are prefered:
 
 * Name : **`embed`**
 * Type : **`String`**
-* click **`Multi`**
+* Click **`Multi`**
 * Value: **`cq.social.scf`**
-  *&lt;enter&gt; will pop up a dialog
-  click **[+] **after each entry to add the following clientlib categories:*
+  
+  * It will pop up a dialog,
+  click **`+`** after each entry to add the following clientlib categories:
 
     * **`cq.ckeditor`**
     * **`cq.social.author.hbs.comments`**
@@ -93,7 +96,7 @@ In this case, including them all and so the more basic SCF clientlibs which are 
     * **`cq.social.author.hbs.voting`**
     * click **OK**
 
-* click **Save All**
+* Click **Save All**
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
@@ -113,20 +116,20 @@ Once apps.an-scf-sandbox clientlibs is included, the SCF comments component appe
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-The include statement belongs in the <head> section of the <html> script. The default **`foundation head.jsp`** includes a script that can be overlaid : **`headlibs.jsp`**.
+The include statement belongs in the `head` section of the `html` script. The default **`foundation head.jsp`** includes a script that can be overlaid : **`headlibs.jsp`**.
 
 **Copy headlibs.jsp and include clientlibs:**
 
-1. using **CRXDE Lite**, select **`/libs/foundation/components/page/headlibs.jsp`**
+1. Using **CRXDE Lite**, select **`/libs/foundation/components/page/headlibs.jsp`**
 
-1. right click and select **Copy **(or select Copy from the toolbar)
-1. select**`/apps/an-scf-sandbox/components/playpage`**
-1. right click and select **Paste **(or select Paste from the toolbar)
-1. double click **`headlibs.jsp`** to open it
-1. append the following line to the end of the file
+1. Right-click and select **Copy** (or select Copy from the toolbar)
+1. Select **`/apps/an-scf-sandbox/components/playpage`**
+1. Right-click and select **Paste** (or select Paste from the toolbar)
+1. Double-click **`headlibs.jsp`** to open it
+1. Append the following line to the end of the file
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
-1. click **Save All**
+1. Click **Save All**
 
 ```xml
 <%@ page session="false" %><%
@@ -153,30 +156,30 @@ This package exists on the [Create a Sample Page](/help/communities/create-sampl
 
 To create a package:
 
-* from CRXDE Lite click the [Package icon](https://localhost:4502/crx/packmgr/)
-* click **Create Package**
+* From CRXDE Lite click the [Package icon](https://localhost:4502/crx/packmgr/)
+* Click **Create Package**
 
     * Package Name: an-scf-sandbox-minimal-pkg
     * Version: 0.1
-    * Group: &lt;leave as default&gt;
-    * click **OK**
+    * Group: `leave as default`
+    * Click **OK**
 
-* click **Edit**
+* Click **Edit**
 
-    * select **Filters **tab
+    * Select **Filters** tab
 
-        * click **Add filter**
-        * Root Path: &lt;browse to** /apps/an-scf-sandbox**&gt;
-        * click **Done**
-        * click **Add filter**
-        * Root Path: &lt;browse to **/etc/designs/an-scf-sandbox**&gt;
-        * click **Done**
-        * click **Add filter**
-        * Root Path: &lt;browse to **/content/an-scf-sandbox**&gt;
-        * click **Done**
+        * Click **Add filter**
+        * Root Path: browse to `/apps/an-scf-sandbox`
+        * Click **Done**
+        * Click **Add filter**
+        * Root Path: browse to `/etc/designs/an-scf-sandbox`
+        * Click **Done**
+        * Click **Add filter**
+        * Root Path: browse to `/content/an-scf-sandbox**`
+        * Click **Done**
 
-    * click **Save**
+    * Click **Save**
 
 * click **Build**
 
-Now you can select **Download** to save it to disk and **Upload Package** elsewhere, as well as select **More &gt; Replicate** in order to push the sandbox to a localhost publish instance to expand the realm of your sandbox.
+Now you can select **Download** to save it to disk and **Upload Package** elsewhere, as well as select **More > Replicate** in order to push the sandbox to a localhost publish instance to expand the realm of your sandbox.

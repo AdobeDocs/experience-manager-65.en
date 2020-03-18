@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Assignments Feature{#assignments-feature}
+# Assignments Feature {#assignments-feature}
 
 The Enablement Assignments and [Enablement Catalog](/help/communities/catalog.md) components found in the Communities group in the components browser are components of an [enablement community](/help/communities/overview.md#enablement-community).
 
