@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Scoring and Badges Essentials{#scoring-and-badges-essentials}
+# Scoring and Badges Essentials {#scoring-and-badges-essentials}
 
 The AEM Communities scoring and badges feature provides the ability to identify and reward community members.
 
@@ -23,9 +23,9 @@ The details of setting up the feature are described at
 
 This page contains additional technical details :
 
-* how to [display a badge](#displaying-badges) as either image or text
-* how to turn on extensive [debug logging](#debug-log-for-scoring-and-badging)
-* how to [access UGC](#ugc-for-scoring-and-badging) related to scoring and badging
+* How to [display a badge](#displaying-badges) as either image or text
+* How to turn on extensive [debug logging](#debug-log-for-scoring-and-badging)
+* How to [access UGC](#ugc-for-scoring-and-badging) related to scoring and badging
 
 >[!CAUTION]
 >
@@ -35,7 +35,7 @@ This page contains additional technical details :
 
 Whether a badge is displayed as text or image is controlled on the client side in the HBS template.
 
-For example, search for `this.isAssigned` in `/libs/social/forum/components/hbs/topic/list-item.hbs`, :
+For example, search for `this.isAssigned` in `/libs/social/forum/components/hbs/topic/list-item.hbs`:
 
 ```
 {{#each author.badges}}

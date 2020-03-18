@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 ---
 
-# Community Components Guide {#community-components-guide}
+# Community Components Guide  {#community-components-guide}
 
 The Community Components guide is an interactive development tool for the [social component framework (SCF)](scf.md). It provides a list of available AEM Communities components or the more complex features built of multiple components.
 
