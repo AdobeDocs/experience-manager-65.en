@@ -184,11 +184,10 @@ The supported archive formats and the applicability of the common DAM workflows,
 
 ## Other supported formats {#other-supported-formats}
 
-The applicability of common DAM workflows for a few other file formats is described in the table below.
+The applicability of common DAM workflows for a few other file formats is described in the table below. Usual DAM functionality, except Dynamic Media Delivery, is supported for all files.
 
 | Formats | Storage | Versioning | Workflow | Publishing | Access Control | Dynamic Media Delivery |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| * | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | |
 | SVG | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | |
 | CSS | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
 | VTT | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
