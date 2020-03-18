@@ -38,6 +38,12 @@ Some key features and enhancements introduced in AEM 6.5.4.0 include:
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.10.8.
 
+* You can now sync selective content subtrees to *Dynamic Media - Scene7 mode* instead of all available at `content/dam`.
+
+* Form data model integration with SOAP web service now supports choice groups or attributes on elements.
+
+* SOAP input or output and complex data structures now support Dynamic Group Substitution.
+
 For complete list of features, key highlights, key features introduced in previous AEM 6.5 service packs, see [What's new in Adobe Experience Manager 6.5 Service Pack 4](new-features-latest-service-pack.md).
 
 ### Sites {#sites-fixes}
