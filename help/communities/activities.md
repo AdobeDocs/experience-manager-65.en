@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Activity Streams Feature{#activity-streams-feature}
+# Activity Streams Feature {#activity-streams-feature}
 
 ## Introduction {#introduction}
 
@@ -23,8 +23,8 @@ The ability to follow adds another view of activities when community members fol
 
 The document describes:
 
-* adding the Activity Streams component to an AEM site
-* configuration settings for Activity Streams component
+* Adding the Activity Streams component to an AEM site
+* Configuration settings for Activity Streams component
 
 ### Adding Activity Streams to a Page {#adding-activity-streams-to-a-page}
 
@@ -51,19 +51,24 @@ Under the **User Activities** tab, specify which activities to display :
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
 * **Max number of activities**
-  the number of activities to display
+
+  The number of activities to display
 
 * **Stream Resource Path**
+
   Leave blank to default to the community site or community group. The stream resource path identifies the source of activities. Default is blank.
 
 * **Display User Activities View**
-  if checked, the activities page will include a tab which filters activities based on those generated within the community by the current member. Default is checked.
+  
+  If checked, the activities page will include a tab which filters activities based on those generated within the community by the current member. Default is checked.
 
 * **Display All Activities View**
-  if checked, the activities page will include a tab which includes all activities generated within the community to which the current member has access. Default is checked.
+  
+  If checked, the activities page will include a tab which includes all activities generated within the community to which the current member has access. Default is checked.
 
 * **Display Following View**
-  if checked, the activities page will include a tab which filters activities based on those the current member is following. Default is checked.
+  
+  If checked, the activities page will include a tab which filters activities based on those the current member is following. Default is checked.
 
 ### Following View {#following-view}
 
@@ -71,11 +76,11 @@ Components must be configured to enable following. Features that allow following
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
-The **Follow **button provides a means to follow entries as activities, [notifications](/help/communities/notifications.md), or [subscriptions](/help/communities/subscriptions.md). Each time the **Follow **button is selected, it is possible to toggle on or off a selection. The `Email Subscriptions` selection is only present when configured.
+The **Follow** button provides a means to follow entries as activities, [notifications](/help/communities/notifications.md), or [subscriptions](/help/communities/subscriptions.md). Each time the **Follow** button is selected, it is possible to toggle on or off a selection. The `Email Subscriptions` selection is only present when configured.
 
 If any method of following is selected, the text of the button changes to **Following**. For convenience, it is possible to select `Unfollow All` to toggle off all methods.
 
-The **Follow **button will appear
+The **Follow** button will appear
 
 * when viewing another member's profile
 * on a main feature page, such as forums, QnA, and blogs
