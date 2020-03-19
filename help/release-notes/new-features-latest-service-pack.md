@@ -78,6 +78,16 @@ The Admin Control option is visible only to the members of the administrators or
 
 You can now convert a text field in an XFA form to a rich text field when rendered in an HTML5 form. As a result, the text field displays a list of other formatting options in an HTML5 form. For more information, see [Designing form templates for HTML5 forms](../forms/using/designing-form-template.md).
 
+### Accessibility enhancements {#forms-accessibility-enhancements-6540}
+
+Experience Manager Forms includes the following accessibility enhancements:
+
+* Users can shift tab focus without any issues for the Ultramarine-Accessible reference theme of an adaptive form.
+
+* Screen readers announce checkboxes, links, Date Picker, and Date Input fields correctly in an adaptive form.
+
+* Each page of an adaptive form now includes one title and one main landmark label.
+
 ## Key features in previous AEM 6.5 Service Packs
 
 ### Smart Imaging for Dynamic Media (6.5.3.0) {#smart-imaging}
