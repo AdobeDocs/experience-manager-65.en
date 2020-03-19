@@ -121,8 +121,8 @@ The SQL script is obtained from the AEM repository:
 
 One method for downloading the schema is to
 
-* Select the `jcr:content`node for the sql file
-* Notice the value for the `jcr:data`property is a view link
+* Select the `jcr:content` node for the sql file
+* Notice the value for the `jcr:data` property is a view link
 
 * Select the view link to save the data to a local file
 
@@ -151,7 +151,7 @@ In the following image, the `init_schema.sql` file is ready to be executed:
 
 #### Refresh {#refresh}
 
-Once the script is executed, it is necessary to refresh the `SCHEMAS`section of the `Navigator` in order to see the new database. Use the refresh icon to the right of 'SCHEMAS':
+Once the script is executed, it is necessary to refresh the `SCHEMAS` section of the `Navigator` in order to see the new database. Use the refresh icon to the right of 'SCHEMAS':
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 

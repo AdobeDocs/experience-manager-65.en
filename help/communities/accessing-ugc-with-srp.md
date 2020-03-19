@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Accessing UGC with SRP{#accessing-ugc-with-srp}
+# Accessing UGC with SRP {#accessing-ugc-with-srp}
 
 ## About SRP {#about-srp}
 
