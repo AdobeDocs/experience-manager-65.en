@@ -30,25 +30,25 @@ MSM maintains a live relationship between the source asset and its live copies s
 
 ### Glossary of MSM for Assets terms {#glossary}
 
-**Source** The original assets or folders. Master copy from which live copies are derived.
+**Source:** The original assets or folders. Master copy from which live copies are derived.
 
-**Live copy** The copy of the source assets/folders that is in synchronization with its source. Live copies can be a source of further live copies. See how to create LCs.
+**Live copy:** The copy of the source assets/folders that is in synchronization with its source. Live copies can be a source of further live copies. See how to create LCs.
 
-**Inheritance** A link/reference between a live copy asset/folder and its source that the system uses to remember where to send the updates. Inheritance exists at a granular level for metadata fields. Inheritance can be removed for selective metadata fields while preserving the live relationship between source and its live copy.
+**Inheritance:** A link/reference between a live copy asset/folder and its source that the system uses to remember where to send the updates. Inheritance exists at a granular level for metadata fields. Inheritance can be removed for selective metadata fields while preserving the live relationship between source and its live copy.
 
-**Rollout** An action that pushes the modifications made to the source downstream to its live copies. It is possible to update one or more live copies in one go using rollout action. See rollout.
+**Rollout:** An action that pushes the modifications made to the source downstream to its live copies. It is possible to update one or more live copies in one go using rollout action. See rollout.
 
-**Rollout config** Rules that determine which properties are synchronized, how and when. These configurations are applied when creating live copies; can be edited later; and a child can inherit rollout configuration from its parent asset. For MSM for Assets, use only the Standard rollout config. The other rollout configurations are not available for MSM for Assets.
+**Rollout config:** Rules that determine which properties are synchronized, how and when. These configurations are applied when creating live copies; can be edited later; and a child can inherit rollout configuration from its parent asset. For MSM for Assets, use only the Standard rollout config. The other rollout configurations are not available for MSM for Assets.
 
-**Synchronize** Another action, in addition to rollout, that brings parity between source and its live copy by sending the updates from source to live copies. A sync is initiated for a particular live copy and the action pulls the changes from the source. Using this action, is possible to only update one of the live copies. See synchronize action.
+**Synchronize:** Another action, in addition to rollout, that brings parity between source and its live copy by sending the updates from source to live copies. A sync is initiated for a particular live copy and the action pulls the changes from the source. Using this action, is possible to only update one of the live copies. See synchronize action.
 
-**Suspend** Temporarily remove the live relationship between a live copy and its source asset/folder. You can resume the relationship. See suspend action.
+**Suspend:** Temporarily remove the live relationship between a live copy and its source asset/folder. You can resume the relationship. See suspend action.
 
-**Resume** Resume the live relationship so that a live copy again starts receiving the updates from source. See resume action.
+**Resume:** Resume the live relationship so that a live copy again starts receiving the updates from source. See resume action.
 
-**Reset** Reset action makes the live copy again a replica of the source by overwriting any local changes. It also removes inheritance cancellations and resets inheritance on all metadata fields. To make local modifications in the future, you must again cancel the inheritance of specific fields. See local modifications to LC.
+**Reset:** Reset action makes the live copy again a replica of the source by overwriting any local changes. It also removes inheritance cancellations and resets inheritance on all metadata fields. To make local modifications in the future, you must again cancel the inheritance of specific fields. See local modifications to LC.
 
-**Detach** Irrevocably remove the live relationship of a live copy asset/folder. After detach action, the live copies can never receive updates from source and it stops being a live copy anymore. See remove relationship.
+**Detach:** Irrevocably remove the live relationship of a live copy asset/folder. After detach action, the live copies can never receive updates from source and it stops being a live copy anymore. See remove relationship.
 
 ## Create live copy of an asset {#createlc}
 
