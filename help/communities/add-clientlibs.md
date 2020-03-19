@@ -180,6 +180,6 @@ To create a package:
 
     * Click **Save**
 
-* click **Build**
+* Click **Build**
 
 Now you can select **Download** to save it to disk and **Upload Package** elsewhere, as well as select **More > Replicate** in order to push the sandbox to a localhost publish instance to expand the realm of your sandbox.

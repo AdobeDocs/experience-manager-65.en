@@ -13,7 +13,7 @@ discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 
 # Communities Consoles {#communities-consoles}
 
-The AEM Communities consoles, available in the author environment from the global navigation panel, provides access to administrative tasks such as
+The AEM Communities consoles, available in the author environment from the global navigation panel, provides access to administrative tasks such as:
 
 * [Creating a community site](sites-console.md)
 * Adding [groups](groups.md) nested within the site

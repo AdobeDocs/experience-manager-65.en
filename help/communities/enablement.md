@@ -35,7 +35,7 @@ Installation of:
 Setup of:
 
 * **Community Managers**
-  For enablement communities, only members of the `Community Enablement Managers` user group may be assigned the role of `*Community Site* Enablement Manager`, whose permissions may include content creation, assignments, and member management in the publish environment.
+  For enablement communities, only members of the `Community Enablement Managers` user group may be assigned the role of `Community Site Enablement Manager`, whose permissions may include content creation, assignments, and member management in the publish environment.
 
 Optional configuration of:
 
@@ -52,48 +52,48 @@ Each step links to documentation which provides the necessary details.
 
 **On all author/publish instances:**
 
-1. **[install JDBC driver for MySQL](deploy-communities.md#jdbc-driver-for-mysql)**
+1. **[Install JDBC driver for MySQL](deploy-communities.md#jdbc-driver-for-mysql)**
 Use Web Console (bundles): *http://localhost:4502/system/console/bundles*
 Install *before* installing SCORM package
 
-1. **[install SCORM package](deploy-communities.md#scorm-package)**
+1. **[Install SCORM package](deploy-communities.md#scorm-package)**
 Use Package Manager: *http://localhost:4502/crx/packmgr/*
 
 **On any server:**
 
-1. **[install MySQL, MySQL Workbench](mysql.md)**
+1. **[Install MySQL, MySQL Workbench](mysql.md)**
 
-1. **[install MySQL databases](mysql.md#database-setup)**
+1. **[Install MySQL databases](mysql.md#database-setup)**
 Execute SQL scripts downloaded from author instance
 Use MySQL Workbench
 
 **On same server hosting author instance:**
 
-1. **[install FFmpeg](ffmpeg.md)**
+1. **[Install FFmpeg](ffmpeg.md)**
 
 **On all author/publish instances:**
 
-1. **[configure JDBC Connections pool](mysql.md#configure-jdbc-connections)**
+1. **[Configure JDBC Connections pool](mysql.md#configure-jdbc-connections)**
 Use Web Console (configMgr): *http://localhost:4502/system/console/configMgr*
 
-1. **[configure SCORM engine service](mysql.md#aem-communities-scormengine-service)**
+1. **[Configure SCORM engine service](mysql.md#aem-communities-scormengine-service)**
 Use Web Console (configMgr): *http://localhost:4502/system/console/configMgr*
 
-1. **[configure CSRF filters](mysql.md#adobe-granite-csrf-filter)**
+1. **[Configure CSRF filters](mysql.md#adobe-granite-csrf-filter)**
 Use Web Console (configMgr): *http://localhost:4502/system/console/configMgr*
 
 **On author instance:**
 
-1. (*optional*) **[configure Analytics service](analytics.md)**
+1. (*Optional*) **[Configure Analytics service](analytics.md)**
 Use Tools, Deployment, Cloud Services console: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
-1. **[configure FFmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**
+1. **[Configure FFmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**
 Use Workflow/Models console
 
-1. **[enable Tunnel Service](deploy-communities.md#tunnel-service-on-author)**
+1. **[Enable Tunnel Service](deploy-communities.md#tunnel-service-on-author)**
 Use Web Console (configMgr): *http://localhost:4502/system/console/configMgr*
 
-1. **[create Community administrators](users.md#creating-community-members)** For author environment use classic-UI Security console: *http://localhost:4502/useradmin*
+1. **[Create Community administrators](users.md#creating-community-members)** For author environment use classic-UI Security console: *http://localhost:4502/useradmin*
  create user(s) with path = /home/users/community
 
     * Add members(s) to the following groups:
@@ -103,4 +103,4 @@ Use Web Console (configMgr): *http://localhost:4502/system/console/configMgr*
 
 ## Dispatcher {#dispatcher}
 
-When the deployment includes [AEM's Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), in order for the enablement features to work properly, the `clientheader`and `filter`sections need modification. See [Configuring Dispatcher for Communities](dispatcher.md#enablement).
+When the deployment includes [AEM's Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), in order for the enablement features to work properly, the `clientheader` and `filter` sections need modification. See [Configuring Dispatcher for Communities](dispatcher.md#enablement).
