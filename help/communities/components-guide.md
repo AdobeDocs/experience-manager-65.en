@@ -116,7 +116,7 @@ When using the guide on a publish instance, it is possible to experience the com
 
 >[!NOTE]
 >
->Be aware, if the SRP is left defaulted to [JSRP](jsrp.md), then UGC entered on the publish instance will only be visible on publish, and will *not *be visible from the [moderation](moderate-ugc.md) console on the author instance.
+>Be aware, if the SRP is left defaulted to [JSRP](jsrp.md), then UGC entered on the publish instance will only be visible on publish, and will *not* be visible from the [moderation](moderate-ugc.md) console on the author instance.
 
 ## Client-Side Libraries {#client-side-libraries}
 

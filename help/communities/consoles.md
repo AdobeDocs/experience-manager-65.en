@@ -29,7 +29,7 @@ In the author environment, after signing in with administrator privileges, the `
 
 >[!NOTE]
 >
->In the publish environment, a [community site](sites-console.md) will display an `Administration`menu item when the signed in member has appropriate privileges.
+>In the publish environment, a [community site](sites-console.md) will display an `Administration` menu item when the signed in member has appropriate privileges.
 
 ## Global navigation panel {#global-navigation-panel}
 

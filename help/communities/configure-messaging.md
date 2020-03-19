@@ -15,7 +15,7 @@ docset: aem65
 
 # Messaging Feature {#messaging-feature}
 
-In addition to the publicly visible interactions which occur in forums and comments, the messaging feature of** **AEM Communities enables community members to interact with one another more privately.
+In addition to the publicly visible interactions which occur in forums and comments, the messaging feature of AEM Communities enables community members to interact with one another more privately.
 
 This feature can be included when a [community site](/help/communities/overview.md#communitiessites) is created.
 
@@ -46,9 +46,9 @@ When messaging is enabled for a community site, it is set up with no further con
 
 ### Configure Message List (message box) {#configure-message-list-message-box}
 
-To modify the configuration of the list of messages for **Inbox**, **Sent Items**, and **Trash **pages of the messaging feature, open the site in [author edit mode](/help/communities/sites-console.md#authoring-site-content).
+To modify the configuration of the list of messages for **Inbox**, **Sent Items**, and **Trash** pages of the messaging feature, open the site in [author edit mode](/help/communities/sites-console.md#authoring-site-content).
 
-1. In `Preview`mode, select the **Messages **link to open the main messaging page. Then select either **Inbox**, **Sent Items **or **Trash **to configure the component for that message list.
+1. In `Preview`mode, select the **Messages** link to open the main messaging page. Then select either **Inbox**, **Sent Items** or **Trash** to configure the component for that message list.
 
 1. In `Edit` mode, select the component on the page.
 1. To access the configuration dialog, cancel inheritance by selecting the `link`icon.
@@ -64,11 +64,11 @@ To modify the configuration of the list of messages for **Inbox**, **Sent Items*
 
 * **Service selector**
   
-  (*Required*) Set this to the value of the property**`serviceSelector.name`** from the [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service).
+  (*Required*) Set this to the value of the property **`serviceSelector.name`** from the [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service).
 
 * **Compose Page**
   
-  (*Required*) The page to open when a member clicks the **`Reply`**button. The target page should contain the **Compose Message** form.
+  (*Required*) The page to open when a member clicks the **`Reply`** button. The target page should contain the **Compose Message** form.
 
 * **Reply/View as Resource**
   
@@ -104,7 +104,7 @@ To modify the configuration of the list of messages for **Inbox**, **Sent Items*
 
 * **Message Options**
   
-  If checked, displays **`Reply`**, **`Reply All`**, **`Forward`**and **`Delete`**buttons allowing a message to be resent or deleted. Will duplicate the delete functionality if **`Delete Button`** is also checked.
+  If checked, displays **`Reply`**, **`Reply All`**, **`Forward`** and **`Delete`** buttons allowing a message to be resent or deleted. Will duplicate the delete functionality if **`Delete Button`** is also checked.
 
 * **Messages Per Page**
   
@@ -116,19 +116,19 @@ To modify the configuration of the list of messages for **Inbox**, **Sent Items*
 
 * **Display User**
   
-  Choose either **`Sender`**or **`Recipients`**to determine whether to display the Sender or Recipients.
+  Choose either **`Sender`** or **`Recipients`** to determine whether to display the Sender or Recipients.
 
 ### Configure Compose Message {#configure-compose-message}
 
 To modify the configuration of the compose message page, open the site in [author edit mode](/help/communities/sites-console.md#authoring-site-content).
 
-* In `Preview`mode, select the **Messages** link to open the main messaging page. Then select the New Message button to open the `Compose Message` page.
+* In `Preview` mode, select the **Messages** link to open the main messaging page. Then select the New Message button to open the `Compose Message` page.
 
 * In `Edit` mode, select the main component on the page containing the Message body.
-* To access the configuraiton dialog, cancel inheritance by selecting the `link`icon.
+* To access the configuraiton dialog, cancel inheritance by selecting the `link` icon.
   Once inheritance is canceled, it is possible to select the configure icon to open the configuration dialog.
 
-* Once the configuration is complete, it is necessary to restore inheritance by selecting the `broken link`icon.
+* Once the configuration is complete, it is necessary to restore inheritance by selecting the `broken link` icon.
 
 ![config-compose-message](assets/config-compose-message.png)
 
@@ -154,7 +154,7 @@ To modify the configuration of the compose message page, open the site in [autho
 
 * **Service selector**
   
-  (*Required*) Set this to the value of the property**`serviceSelector.name`** from the [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service).
+  (*Required*) Set this to the value of the property **`serviceSelector.name`** from the [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service).
 
 #### Display tab {#display-tab-1}
 
