@@ -200,8 +200,7 @@ Ensure that you have performed the following steps:
    >Create only one valid IMS configuration. Do not create multiple IMS configurations.
    >
    > Make sure the configuration is healthy. In case, the configuration is unhealthy, delete it and create a new, healthy configuration.
-   
-   <br/> <br/>
+
 
 ### Configure cloud service {#configure-the-cloud-service}
 
