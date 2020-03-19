@@ -89,7 +89,9 @@ See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-i
 
     * **[!UICONTROL Company Root Folder Path]**
 
-    * **[!UICONTROL Publishing Assets]** - the option **[!UICONTROL Immediately]** means that when assets are uploaded, the system ingests the assets and provides the URL/Embed instantly. There is no user intervention necessary to publish assets. The option **[!UICONTROL Upon Activation]** means that you need to explicitly publish the asset first before a URL/Embed link is provided.
+    * **[!UICONTROL Publishing Assets]** - You can choose from the following three options:
+      * **[!UICONTROL Immediately]** means that when assets are uploaded, the system ingests the assets and provides the URL/Embed instantly. There is no user intervention necessary to publish assets. 
+      * **[!UICONTROL Upon Activation]** means that you need to explicitly publish the asset first before a URL/Embed link is provided.
 
     * **[!UICONTROL Secure Preview Server]** - lets you specify the URL path to your secure renditions preview server. That is, after renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
       Unless you have a special arrangment to use your own company's server or a special server, Adobe Systems recommends that you leave this setting as specified.
@@ -97,7 +99,7 @@ See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-i
     * **[!UICONTROL Sync all content]** - <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->Selected by default. Deselect this option if you want to selectively include or exclude assets from the sync to Dynamic Media. Deselecting this option lets you can choose from the following two Dynamic Media sync modes:
 
     * **[!UICONTROL Dynamic Media sync mode]**
-        * **[!UICONTROL Enabled by default]** - The configuration is applied to all folders by default unless you mark a folder specifically for exclusing. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+        * **[!UICONTROL Enabled by default]** - The configuration is applied to all folders by default unless you mark a folder specifically for exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
         * **[!UICONTROL Disabled by default]** - The configuration is not applied to any folder until you explicitly mark a selected folder for sync to Dynamic Media.
         To mark a selected folder for sync to Dynamic Media, select an asset folder, then on the toolbar, click **[!UICONTROL Properties]**. On the **[!UICONTROL Details]** tab, in the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options. When you are done tap **[!UICONTROL Save]**. *Remember: these three options are not available if you selected **Sync all content** earlier.*
             * **[!UICONTROL Inherited]** - No explicit sync value on the folder; insteatd, the folder inherits the sync value from one of its ancestor folders or the default mode in the cloud configuration. The detailed status for inherited shows by way of a tool tip.

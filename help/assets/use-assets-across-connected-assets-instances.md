@@ -26,14 +26,14 @@ Before you use or configure this capability, ensure the following:
   ||AEM Sites as a Cloud Service |AEM 6.5 Sites on AMS| AEM 6.5 Sites on-premise|
   |---|---|---|---|
   |**AEM Assets as a Cloud Service**| Supported | Supported | Supported |
-  |**AEM 6.5 Assets on AMS** | Not Supported | Supported | Supported |
+  |**AEM 6.5 Assets on AMS** | Supported | Supported | Supported |
   |**AEM 6.5 Assets on-premise** | Not Supported |Not Supported | Not Supported |
 
 ### Supported file formats {#mimetypes}
 
 Authors can search for images and the following types of documents in Content Finder and use the searched assets in Page Editor. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. The list of supported formats are:
 
-* **Image formats**: The image formats supported by the [Image component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) are supported by Connected Assets. Dynamic Media Components are not supported.
+* **Image formats**: The image formats supported by the [Image component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) are supported by Connected Assets. Dynamic Media images are not supported.
 * **Document formats**: See [Connected Assets supported document formats](assets-formats.md#supported-document-formats).
 
 ### Users and groups involved {#users-and-groups-involved}
@@ -137,7 +137,7 @@ Use the above setup to try the authoring experience to understand how the functi
 
    ![Notification about asynchronous fetching of assets that happens in the background.](assets/assets_async_transfer_fails.png)
 
-   *Figure: Notification about asynchronous fetching of assets that happens in the background.*
+   *Figure: Notification about asynchronous fetching of assets that happens in the background*
 
 1. When publishing a page, AEM displays a complete list of assets that are used in the page. Ensure that the remote assets are fetched successfully at the time of publishing. To check the status of each fetched asset, see [async jobs](/help/assets/asynchronous-jobs.md) user interface.
 

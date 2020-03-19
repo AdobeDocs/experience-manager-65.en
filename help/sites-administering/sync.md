@@ -335,7 +335,7 @@ If the Sling ID is the same for multiple publish instances in a publish farm, th
 
 To validate that all Sling ID values differ, on each publish instance:
 
-1. browse to [https://*host:port*/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings)
+1. browse to `http://<host>:<port>/system/console/status-slingsettings`
 1. check the value of **Sling ID**
 
 ![](assets/chlimage_1-27.png)

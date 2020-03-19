@@ -52,6 +52,7 @@ user-guide-title: AEM 6.5 Deploying Guide
     + [Performance Optimization](configuring-performance.md)
     + [Assets Performance Guide](assets-performance-sizing.md)
     + [Configuration How-To Articles](ht-deploy.md)
+    + [Configuring Web Console](configuring-web-console.md)
 + Upgrading to AEM 6.5 {#upgrading}
     + [Upgrading to AEM 6.5](upgrade.md)
     + [Planning Your Upgrade](upgrade-planning.md)

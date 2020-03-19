@@ -10,6 +10,10 @@ Adobe Experience Manager (AEM) Assets lets you manually relate assets based on t
 
 Using this feature, you have the flexibility to share a low resolution PDF file or JPG file with vendors or agencies and make the high resolution INDD file available only on request.
 
+>
+>[!NOTE] Only the users with edit permissions can relate and unrelate assets.
+>
+
 ## Relate assets {#relating-assets}
 
 1. From the AEM interface, open the [!UICONTROL Properties] page for an asset that you want to relate.

@@ -17,6 +17,7 @@ RTE can be configured to enable, disable, and extend the features available in t
 The following workflow illustrates a recommended order of completing the RTE configuration tasks.
 
 ![Sequence of steps to learn how to configure rte](assets/rte_workflow_v1.png)
+
 *Figure: Sequence of steps to learn how to configure RTE*
 
 ## Understand Touch-enabled UI and Classic UI {#understand-touch-enabled-ui-and-classic-ui}
@@ -24,9 +25,11 @@ The following workflow illustrates a recommended order of completing the RTE con
 The Touch-enabled UI is the standard user interface for AEM. Adobe introduced Touch UI with [responsive design](/help/sites-authoring/responsive-layout.md) for authoring environment. The Touch UI is designed for touch and desktop devices. The UI differs considerably from the original classic UI.
 
 ![Rich Text Editor toolbar in Touch-enabled UI](assets/chlimage_1-35.png)
+
 *Figure: Rich Text Editor toolbar in Touch-enabled UI*
 
 ![Rich Text Editor toolbar in Classic UI](assets/rtedefault.png)
+
 *Figure: Rich Text Editor toolbar in Classic UI*
 
 >[!MORELIKETHIS]
@@ -56,6 +59,7 @@ Authors can create and edit textual content in AEM using the different modes of 
 When opened (with a slow double-tap/click) the content can be edited within the page. A compact toolbar with very basic options is presented.
 
 ![Inline editing with basic toolbar in Touch-enabled UI](assets/chlimage_1-36.png)
+
 *Figure: Inline editing with basic toolbar in Touch-enabled UI*
 
 In Classic UI, a slow double-click on the component allows inline editing and an orange outline highlights the content. If the Content Finder is open, a toolbar with the available RTE formatting options is displayed at the top of the window. If the Content Finder is not open, the formatting options are not displayed and you can do basic text edits only.
@@ -67,6 +71,7 @@ AEM components can be opened in full screen view that hides the page content and
 In the dialog full screen mode, along with a detailed RTE toolbar, the options and components available in a dialog are also available. It is applicable only for a dialog that contains RTE alongside other components.
 
 ![The detailed RTE toolbar when editing in full screen mode in Touch-enabled UI](assets/chlimage_1-37.png)
+
 *Figure: The detailed RTE toolbar when editing in full screen mode in Touch-enabled UI*
 
 ### Dialog editing {#dialog-editing}
@@ -74,9 +79,11 @@ In the dialog full screen mode, along with a detailed RTE toolbar, the options a
 When a component is double-clicked a dialog box opens for editing the contents. The dialog box opens on top of the existing page. In some specific scenarios, the dialog opens as a pop-up window. For example, when a Text component is part of a column in a multi-column page layout and the area available for the dialog is less.
 
 ![Dialog editing mode in Touch-enabled UI](assets/dialog_editing_modetouchui.png)
+
 *Figure: Dialog editing mode in Touch-enabled UI*
 
 ![Dialog box in Classic UI that contains detailed toolbar for editing](assets/chlimage_1-38.png)
+
 *Figure: Dialog box in Classic UI that contains detailed toolbar for editing*
 
 ## About RTE plug-ins and the associated features {#aboutplugins}

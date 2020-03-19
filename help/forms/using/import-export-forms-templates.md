@@ -18,7 +18,7 @@ You can move forms and related assets, themes, data dictionaries, document fragm
 
 >[!NOTE]
 >
->* In AEM 6.4 Forms, the structure and paths of crx-repository has changed. If you import assets from a previous version to AEM 6.4 Forms and the form has some dependencies on the older structure, you have to manually export the dependencies. For details of changes in the structure and paths of the repository, see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring-in-aem65.md).
+>* In AEM 6.4 Forms, the structure and paths of crx-repository has changed. If you import assets from a previous version to AEM 6.4 Forms and the form has some dependencies on the older structure, you have to manually export the dependencies. For details of changes in the structure and paths of the repository, see [Repository Restructuring in AEM](/help/sites-deploying/repository-restructuring.md).
 >
 
 ## Download or upload Forms &amp; Documents assets {#download-or-upload-forms-amp-documents-assets}

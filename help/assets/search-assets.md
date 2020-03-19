@@ -28,6 +28,8 @@ Search for assets using the Omnisearch field at the top of the AEM web interface
 
 Use the **[!UICONTROL Filters]** panel to narrow your search by filtering search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. Your administrators can customize the Filters panel and add or remove search predicates using search facets.
 
+Note that [!UICONTROL File Type] filter in the [!UICONTROL Filters] panel has mixed-state checkboxes, which means unless you select all the nested predicates (or formats) the first level checkboxes are not selected and are striken through instead.
+
 AEM search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/managing-collections-touch-ui.md).
 
 ## Understand search interface {#searchui}
@@ -46,7 +48,7 @@ You can discover the desired assets faster from the search results page using th
 
 ![See the approximate number of assets without filtering search results in search facets.](assets/asset_search_results_in_facets_filters.png)
 
-*Figure: See the approximate number of assets without filtering search results in search facets.*
+*Figure: See the approximate number of assets without filtering search results in search facets*
 
 ## Understand search results and behavior {#searchbehavior}
 
@@ -250,7 +252,7 @@ The search capability in AEM Assets has the following limitations:
 * AEM may continue to show the search term after you select properties of an asset from searched results and then cancel the search. <!-- (CQ-4273540) -->
 * When searching for folders or files and folders, the search results cannot be sorted on any parameter.
 * If you press return without typing anything in Omnisearch bar, AEM returns a list of only files and not folders. If you search specifically for folders without using a keyword, AEM does not return any results.
-* Using the [!UICONTROL Select All] check box, you can only select the first 100 searched assets in card view and first 200 searched assets in list view. IF you scroll and load more assets in the user interface, you can select more using the [!UICONTROL Select All] option.
+* Using the [!UICONTROL Select All] check box, you can only select the first 100 searched assets in card view and first 200 searched assets in list view. If you scroll and load more assets in the user interface, you can select more using the [!UICONTROL Select All] option.
 
 Visual search or similarity search has the following limitations:
 
