@@ -11,14 +11,16 @@ Adobe Experience Manager (AEM) Assets lets you manually relate assets based on t
 Using this feature, you have the flexibility to share a low resolution PDF file or JPG file with vendors or agencies and make the high resolution INDD file available only on request.
 
 >
->[!NOTE] Only the users with edit permissions can relate and unrelate assets.
+>[!NOTE] Only the users with edit permissions on assets can relate and unrelate the assets.
 >
 
 ## Relate assets {#relating-assets}
 
-1. From the AEM interface, open the [!UICONTROL Properties] page for an asset that you want to relate.
+1. From the AEM interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
 
-   ![chlimage_1-272](assets/chlimage_1-272.png)
+   ![open an asset's Properties page to relate the asset](assets/asset-properties-relate-assets.png)
+
+   *Figure: Asset properties page to relate assets*
 
    Alternatively, select the asset from the list view.
 
@@ -61,15 +63,18 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
 ## Translating Related Assets {#translating-related-assets}
 
-Creating source/derived relationships between assets using the Related Assets feature is also helpful in translation workflows. When you run a translation workflow on a derived asset, AEM Assets automatically fetches any asset that the source file references and includes it for translation. This way, the asset referenced by the source asset is translated along with the source and derived assets. For example, consider a scenario where your English language copy includes a derived asset and its source file as shown.
+Creating source/ derived relationships between assets using the Related Assets feature is also helpful in translation workflows. When you run a translation workflow on a derived asset, AEM Assets automatically fetches any asset that the source file references and includes it for translation. This way, the asset referenced by the source asset is translated along with the source and derived assets. For example, consider a scenario where your English language copy includes a derived asset and its source file as shown.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-If the source file is related to another asset, AEM Assets fetches the referenced asset and includes it for translation.
+If the source file is related to another asset, Experience Manager Assets fetches the referenced asset and includes it for translation.
 
-![chlimage_1-282](assets/chlimage_1-282.png)
+![asset Properties page shows source file of the related asset to include for translation](assets/asset-properties-source-asset.png)
+
+*Figure: Source asset of the related assets to include for translation*
 
 1. Translate the assets in the source folder to a target language by following the steps in [Create a new translation project](translation-projects.md#create-a-new-translation-project). For example, in this case, translate your assets to French.
+
 1. From the [!UICONTROL Projects] page, open the translation folder.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
