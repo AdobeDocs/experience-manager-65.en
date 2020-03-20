@@ -27,11 +27,12 @@ AEM 6.5.4.0 includes Style System enhancements. You can now select styles within
 
 ## AEM Assets {#aem-assets}
 
-### Integration with Brand Portal through Adobe I/O Console {#assets-integration-bp}
+### Configure AEM Assets with Brand Portal {#configure-assets-bp}
 
-You can now configure AEM Assets with Brand Portal through Adobe I/O Console. The Adobe I/O Console procures an IMS token for authorization of the Brand Portal tenant. Earlier, AEM Assets was configured with Brand Portal in Classic UI via Legacy OAuth Gateway. The configurations using Legacy OAuth Gateway will be supported till April 6, 2020. If you do not modify the integration, the existing configurations will continue to work.
+The authorization channel between AEM Assets and Brand Portal is changed. Earlier, Brand Portal was configured in Classic UI via Legacy OAuth Gateway, which uses the JWT token exchange to obtain an IMS Access token for authorization. AEM Assets is now configured with Brand Portal through Adobe I/O, which procures an IMS token for authorization of your Brand Portal tenant.
 
-You can either create a new integration or upgrade your integration settings to Adobe I/O Console.
+The steps to configure AEM Assets with Brand Portal are different depending on your AEM version, and whether you are configuring for the first-time, or upgrading the existing configurations. See [Configure AEM Assets with Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) for details.
+
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
