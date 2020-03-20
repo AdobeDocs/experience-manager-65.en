@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 ---
 
-# Initial Setup for Enablement {#initial-setup-for-enablement}
+# Initial Setup for Enablement  {#initial-setup-for-enablement}
 
 ## Start Author and Publish Instances {#start-author-and-publish-instances}
 
@@ -19,8 +19,8 @@ For development and demonstration purposes, it will be necessry to run one autho
 
 Follow the basic AEM [Getting Started](../../help/sites-deploying/deploy.md#getting-started) instructions which will result in
 
-* author environment on [localhost:4502](http://localhost:4502/)
-* publish environment on [localhost:4503](http://localhost:4503/)
+* Author environment on [localhost:4502](http://localhost:4502/)
+* Publish environment on [localhost:4503](http://localhost:4503/)
 
 For AEM Communities,
 
