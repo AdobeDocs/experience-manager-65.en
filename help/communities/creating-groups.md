@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Community Groups{#community-groups}
+# Community Groups {#community-groups}
 
 The community groups feature is the ability for a sub-community to be dynamically created within a community site by authorized users (community members and authors) from the publish and author environments.
 
@@ -29,39 +29,46 @@ The ability to create a new community group relies on the existence of a communi
 
 The examples that follow use the community site created from the `Reference Site Template` as described in the [Getting Started with AEM Communities](/help/communities/getting-started.md) tutorial.
 
-This is the page that loads on publish when the **Groups **menu item is selected:
+This is the page that loads on publish when the **Groups** menu item is selected:
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
 When you select the **New Group** icon, an edit dialog opens up.
 
-Under the **Settings **tab, you provide the basic features of the group:
+Under the **Settings** tab, you provide the basic features of the group:
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
 * **Group Name**
+  
   The title of the group to display on the community site.
 
 * **Description**
+  
   A description of the group to display on the community site.
 
 * **Invite**
+  
   A list of members to invite to join the group. Type-ahead search will provide suggestions of community members to invite.
 
 * **Group URL Name**
+  
   The name for the group page that becomes part of the URL.
 
 * **Open Group**
+  
   Selecting `Open Group` indicates any anonymous site visitor may view the content, and will deselect `Member Only Group`.
 
 * **Member Only Group**
+  
   Selecting `Member Only Group` indicates only members of the group may view the content, and will deselect `Open Group`.
 
-Under the **Template **tab is the ability to select from the list of community group templates that were specified when the groups function was included in the community site's structure or in a community site template.
+Under the **Template** tab is the ability to 
+select from the list of community group templates that were specified when the groups function was included in the community site's structure or in a community site template.
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
-Under the **Image **tab is the ability to upload an image to display for the group on the community site's Groups page. The default style sheet will size the image to 170 x 90 pixels.
+Under the **Image** tab is the ability to upload an image to display for the group on the community site's Groups page. The default style sheet will size the image to 170 x 90 pixels.
 
 ![chlimage_1-88](assets/chlimage_1-88.png)
 

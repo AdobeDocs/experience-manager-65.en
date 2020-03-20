@@ -22,11 +22,11 @@ Use the author instance to create a community site. On AEM Author instance:
 1. Sign in with administrator privileges.
 1. From global navigation, go to **Navigation, Communities, Sites.**
 
-The Communities Sites console provides a wizard to guide one through the steps of creating a community site. It is possible to move forward to the `Next`step or `Back`to the previous step before committing the site in the final step.
+The Communities Sites console provides a wizard to guide one through the steps of creating a community site. It is possible to move forward to the `Next` step or `Back` to the previous step before committing the site in the final step.
 
 To begin creating a new community site:
 
-* select the `Create`button.
+* Select the `Create`button.
 
 ![createcommunitysite](assets/createcommunitysite.png)
 
@@ -44,10 +44,10 @@ On the [Site Template step](/help/communities/sites-console.md#step2013asitetemp
 
 * **Community Site Name**: engage
 
-    * double-check the name as it is not easily changed after the site is created
-    * the initial URL will be displayed underneath the Community Site Name
-    * for a valid URL, append a base language code + ".html"
-    * *for example*, https://localhost:4502/content/sites/ `engage/en.html`
+    * Double-check the name as it is not easily changed after the site is created
+    * The initial URL will be displayed underneath the Community Site Name
+    * For a valid URL, append a base language code + ".html"
+    * *For example*, https://localhost:4502/content/sites/ `engage/en.html`
 
 * **Template**: pull down to choose `Reference Site`
 
@@ -63,7 +63,7 @@ Select the desired style to apply to the template. When selected, the theme will
 
 #### COMMUNITY SITE BRANDING {#community-site-branding}
 
-(optional) Upload a banner image to display across the site pages. The banner is pinned to the left edge of the browser, between the community site header and navigation links. The banner height is cropped to 120 pixels. There is no resizing of the banner to fit the width of the browser and 120 pixel height.
+(Optional) Upload a banner image to display across the site pages. The banner is pinned to the left edge of the browser, between the community site header and navigation links. The banner height is cropped to 120 pixels. There is no resizing of the banner to fit the width of the browser and 120 pixel height.
 
 ![chlimage_1-58](assets/chlimage_1-58.png) ![chlimage_1-59](assets/chlimage_1-59.png)
 
@@ -79,11 +79,11 @@ Visit the [Getting Started with AEM Communities for Enablement](/help/communitie
 
 Check all checkboxes for [User Management](/help/communities/sites-console.md#user-management)
 
-* to allow site visitors to self-register
-* to allow site visitors to view the site without signing in
-* to allow members to send and receive messages from other community members
-* to allow signing-in with Facebook instead of registering and creating a profile
-* to allow signing-in with Twitter instead of registering and creating a profile
+* To allow site visitors to self-register
+* To allow site visitors to view the site without signing in
+* To allow members to send and receive messages from other community members
+* To allow signing-in with Facebook instead of registering and creating a profile
+* To allow signing-in with Twitter instead of registering and creating a profile
 
 >[!NOTE]
 >
@@ -97,8 +97,8 @@ The tags which may be applied to community content are controlled by selecting A
 
 Finding namespaces is easy using type-ahead search. For example,
 
-* type 'tut'
-* select `Tutorial`
+* Type `tut`
+* Select `Tutorial`
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
@@ -110,8 +110,8 @@ To let a community member (or group of members) experience the site as the commu
 
 For example,
 
-* type "q"
-* select [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
+* Type `q`
+* Select [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
 >
@@ -137,12 +137,12 @@ See [Analytics Configuration for Communities Features](/help/communities/analyti
 
 The [Translation settings](/help/communities/sites-console.md#translation) specify the base language for the site as well as whether or not UGC may be translated and into which language, if so.
 
-* check **Allow Machine Translation**
-* leave default languages selected for translation by the default Machine Translation service
-* leave default translation provider and config
-* there's no need for a global store because there are no language copies
-* select **Translate entire page**
-* leave default persistence option
+* Check **Allow Machine Translation**
+* Leave default languages selected for translation by the default Machine Translation service
+* Leave default translation provider and config
+* There's no need for a global store because there are no language copies
+* Select **Translate entire page**
+* Leave default persistence option
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -179,20 +179,25 @@ On selecting the fourth ellipses icon (More Actions), Export Site and Delete Sit
 From left to right they are:
 
 * **Open Site**
-  select the pencil icon to open the community site in author edit mode, to add and/or configure page components
+  
+  Select the pencil icon to open the community site in author edit mode, to add and/or configure page components
 
 * **Edit Site**
-  select the properties icon to open the community site for modification of properties, such as the title or to change the theme
+  
+  Select the properties icon to open the community site for modification of properties, such as the title or to change the theme
 
 * **Publish Site**
-  select the world icon to publish the community site (for example if your publish server is running on your local machine, then to localhost:4503 by default)
+  
+  Select the world icon to publish the community site (for example if your publish server is running on your local machine, then to localhost:4503 by default)
 
 * **Export Site**
-  select the export icon to create a package of the community site that is both stored in [package manager](/help/sites-administering/package-manager.md) and downloaded.
+  
+  Select the export icon to create a package of the community site that is both stored in [package manager](/help/sites-administering/package-manager.md) and downloaded.
   Note that UGC is not included in the site package.
 
-* **Delete Site
-  **select the delete icon to delete the community site from within Communities &gt; Sites console. This action removes all the items associated with the site, such as UGC, user groups, assets and database records.
+* **Delete Site** 
+  
+  Select the delete icon to delete the community site from within **[UIControl Communities > Sites console]**. This action removes all the items associated with the site, such as UGC, user groups, assets and database records.
 
 ![siteactions](assets/siteactions.png)
 
@@ -202,17 +207,17 @@ From left to right they are:
 >
 >On the author instance, from the main menu:
 >
->1. Navigate to Tools &gt; Operations &gt; Replication menu.
->1. Select "Agents on author".
->1. Select "Default Agent (publish)".
->1. Next to "Settings" select "Edit".
->1. In pop-up dialog for Agent Settings, select Transport tab.
+>1. Navigate to **[UIControl Tools > Operations > Replication]** menu.
+>1. Select **[UIControl Agents on author]**.
+>1. Select **[UIControl Default Agent (publish)]**.
+>1. Next to **[UIControl Settings]**, select **[UIControl Edit]**.
+>1. In pop-up dialog for Agent Settings, select **[UIControl Transport]** tab.
 >1. In URI, change the port number, 4503, to the desired port number >
->    * for example, to use port 6103:
+>    * For example, to use port 6103:
 >      https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >
->1. Select "OK".
->1. (optional) Select "Clear" or "Force Retry" to reset the replication queue.
+>1. Select **[UIControl OK]**.
+>1. (Optional) Select **[UIControl Clear]** or **[UIControl Force Retry]** to reset the replication queue.
 >
 
 ### Select Publish {#select-publish}
@@ -221,7 +226,7 @@ After ensuring the publish server is running, select the world icon to publish t
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
-When the community site has been successfully published, a message briefly appears :
+When the community site has been successfully published, a message briefly appears:
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
@@ -256,7 +261,7 @@ Once a site has been configured and pushed to publish, [configure login mapping]
 
 Add a `Login Page Mapping` as
 
-* /content/sites/engage/en/signin:/content/sites/engage/en
+* `/content/sites/engage/en/signin:/content/sites/engage/en`
 
 ## Optional Steps {#optional-steps}
 
@@ -296,10 +301,10 @@ To get started:
         * **Value** /content/sites/engage/en.html
 
 1. Select **Save All.**
-1. (optional) Delete the browsing history.
+1. (Optional) Delete the browsing history.
 1. Browse to https://localhost:4503/.
 
-    * arrive at https://localhost:4503/content/sites/engage/en.html
+    * Arrive at https://localhost:4503/content/sites/engage/en.html
 
 >[!NOTE]
 >

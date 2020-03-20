@@ -23,8 +23,8 @@ Now that the newly created community site and its enablement resources and learn
 
 Begin by browsing to the URL displayed when creating the site, but on the publish server, e.g.
 
-* author URL = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
-* publish URL = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
+* Author URL = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
+* Publish URL = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
 
 If the [default home page was set](enablement-create-site.md#changethedefaulthomepage), then simply browsing to [http://localhost:4503/](http://localhost:4503/) should launch the site.
 
@@ -157,7 +157,7 @@ The home page is identified by the first menu item, Assignments. Quinn is the mo
 
 ### Administration {#administration}
 
-What there is, is activity by the two learners, `Riley Taylor` and `Sidney Croft. By s`electing the `Administration`link to access the Moderation Console, Quinn is able to use the [bulk moderation console](moderation.md) to moderate their posts.
+What there is, is activity by the two learners, `Riley Taylor` and `Sidney Croft`. By selecting the `Administration` link to access the Moderation Console, Quinn is able to use the [bulk moderation console](moderation.md) to moderate their posts.
 
 Selecting the side-panel icon toggles open the filters used to search community content.
 
@@ -199,8 +199,8 @@ With a little activity and interaction with the Resources on publish, viewing th
 * Sign in with administrative privileges
 * Navigate from the main menu to **[!UICONTROL Communities > Resources]**
 * Select the `Enablement Tutorial` site
-* Select the `Report`icon for a summary of all Resources
-* Select a Resource and then the `Report`icon for a report on that Resource
+* Select the `Report` icon for a summary of all Resources
+* Select a Resource and then the `Report` icon for a report on that Resource
 
 Notice that it is likely too soon to show data from Adobe Analytics, which can take from 1 to 12 hours to appear. However, basic SCORM reporting is already available.
 
@@ -214,7 +214,7 @@ Notice that it is likely too soon to show data from Adobe Analytics, which can t
 
 * Open card `Enablement Tutorial`
 * Open card `Ski Lessons`
-* `select Report, User Report`
+* Select `Report > User Report`
 
 ![chlimage_1-444](assets/chlimage_1-444.png)
 
