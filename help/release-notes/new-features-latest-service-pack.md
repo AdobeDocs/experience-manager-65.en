@@ -13,6 +13,8 @@ The latest AEM Service Pack 4 (6.5.4.0) is released on **March 5, 2020**. This a
 
 ## AEM Sites {#aem-sites}
 
+AEM 6.5.4.0 includes Style System enhancements. You can now select styles within the component dialog.
+
 ### Performance improvements in various areas {#performance-improvements}
 
 * Reduced the time for loading and initializing ContextHub within a site (`contexthub.kernel.js`). It results in faster page loads during a site visit.
@@ -22,8 +24,6 @@ The latest AEM Service Pack 4 (6.5.4.0) is released on **March 5, 2020**. This a
 * Shortened the load time for entries on a Sites page with more than 200 live copies in **[!UICONTROL Live Copy Overview]**.
 
 * Improved handling of incomplete or invalid URLs. Such URLs can slow down the Template Editor.
-
-In addition, AEM 6.5.4.0 includes Style System enhancements. You can now select styles within the component dialog.
 
 ## AEM Assets {#aem-assets}
 
@@ -112,17 +112,19 @@ You have the option of specifying a start date and time and an end date and time
 
 You can use the Batch API to produce multiple interactive communications from a template. The template is an interactive communication without any data. The Batch API combines data with a template to produce an interactive communication. The API is useful in the mass production of interactive communications. For example, telephone bills, credit card statements for multiple customers. See [Generate multiple interactive communications using Batch API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-
-
 ## Key releases since AEM 6.5 SP3
 
 Between December 12, 2019 and March 5, 2020, Adobe released following capabilities that are outside of the core AEM deliverable:
 
 * AEM Cloud Manager 2020.1.0 and 2020.2.0
-The release updates improve the pipeline status and the ability to download logs for various steps. For more information, see:
+
+  The release updates improve the pipeline status and the ability to download logs for various steps. For more information, see:
+
   * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
+
   * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
+
 
 * AEM Cloud Manager CLI updates
 
