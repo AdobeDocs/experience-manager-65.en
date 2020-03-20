@@ -38,6 +38,6 @@ The key target for HTML5 forms is touch devices. Therefore, a new scribble signa
 
 #### Rich text format {#rich-text-format}
 
-You can convert a text field to a rich text field. It adds a list of formatting options to the text field. To convert, open the Forms Designer, tap the text field in **[!UICONTROL Design View]**. In the **[!UICONTROL Field]** tab, select **[!UICONTROL Rich Text]** from the **[!UICONTROL Field Format]** drop-down list. Now, when the XFA form is rendered as an HTML5 Form, the field is rendered as a rich text field.
+You can convert a text field to a rich text field. It adds a list of formatting options to the text field. To convert, open the Forms Designer, tap the text field in **[!UICONTROL Design View]**. In the **[!UICONTROL Field]** tab, select **[!UICONTROL Rich Text]** from the **[!UICONTROL Field Format]** drop-down list. Now, when the XFA form is rendered as an HTML5 Form, the field is rendered as a rich text field. Tap ![Maximize](assets/maximize_icon.svg) to view additional formatting options.
 
 [Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

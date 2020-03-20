@@ -57,7 +57,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
    [ ![Toolbar](assets/advancedediting.png)
 
-    * **Link**: Insert hypertext link in the text. Tap **[!UICONTROL Link]**, specify the link in the **[!UICONTROL URL]** field, remove the default object name from the **[!UICONTROL Alt Text]** field, and tap ![Save](assets/save_icon.svg).
+    * **Link**: Insert [hypertext](#insert-hyperlink) link in the text.
     * **Repeat**: Repeat prints collection element in Data Dictionary using a delimiter.
     * **Condition**: Tap to insert a condition. Insert text based on condition. If condition is true, then text is visible in letter, otherwise not.
     * **Add Description**: Add annotation to a piece of text. This is metadata visible to the Author but not a part of the letter that is created.
@@ -131,6 +131,18 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
 1. You can use inline conditions and repeat to make your letter highly contextual and well structured. For more information on inline condition and repeat, see [Inline conditions and repeat in letters](/help/forms/using/cm-inline-condition.md).
 1. Tap **Save**.
+
+#### Insert hyperlink in a text {#insert-hyperlink}
+
+Execute the following steps to create a hyperlink in a text asset:
+
+1. Select the text or the data model object in the text editor.
+
+2. Tap **[!UICONTROL Link]**. Tap **[!UICONTROL Alt Text]** field to remove the existing data model object name or text.
+
+3. Specify the URL and tap ![Save](assets/save_icon.svg).
+
+![Create hyperlink in text asset](assets/text-create-hyperlink.png)
 
 #### Searching and replacing text {#searching-and-replacing-text}
 

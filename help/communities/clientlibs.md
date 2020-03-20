@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Clientlibs for Communities Components{#clientlibs-for-communities-components}
+# Clientlibs for Communities Components {#clientlibs-for-communities-components}
 
 ## Introduction {#introduction}
 
@@ -62,24 +62,24 @@ Use [CRXDE|Lite](#using-crxde-lite) to modify an existing clientlibslist for a c
 
 To add a clientlib for a community site using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
-* browse to [https://&lt;server&gt;:&lt;port&gt;/crx/de](https://localhost:4502/crx/de)
-* locate the `clientlibslist` node for the page on which you wish to add the component
+* Browse to [https://&lt;server&gt;:&lt;port&gt;/crx/de](https://localhost:4502/crx/de)
+* Locate the `clientlibslist` node for the page on which you wish to add the component
 
     * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* with `clientlibslist` node selected
+* With `clientlibslist` node selected
 
-    * locate the String[] property `scg:requiredClientLibs`
-    * select its `Value` to access the String array dialog
+    * Locate the String[] property `scg:requiredClientLibs`
+    * Select its `Value` to access the String array dialog
 
-        * scroll down if necessary
-        * select + to enter a new client library
+        * Scroll down if necessary
+        * Select + to enter a new client library
 
-            * repeat to add more client libraries
+            * Repeat to add more client libraries
 
-        * select** OK**
+        * Select **OK**
 
-    * select **Save All**
+    * Select **Save All**
 
 >[!NOTE]
 >

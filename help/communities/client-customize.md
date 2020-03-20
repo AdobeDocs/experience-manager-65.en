@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 ---
 
-# Client-side Customization {#client-side-customization}
+# Client-side Customization  {#client-side-customization}
 
 | **[⇐ Feature Essentials](essentials.md)** |**[Server-side Customization ⇒](server-customize.md)** |
 |---|---|
@@ -98,9 +98,9 @@ The custom styles will now override the default framework styles and the compone
 
 >[!CAUTION]
 >
->Any CSS class name that is prefixed with** scf-js-&ast;**has a specific use in javascript code. These classes affect the state of a component (for example, toggle from hidden to visible) and should neither be overriden nor removed.
+>Any CSS class name that is prefixed with `scf-js` has a specific use in javascript code. These classes affect the state of a component (for example, toggle from hidden to visible) and should neither be overriden nor removed.
 >
->While the scf-js-&ast; classes do not affect styles, the class names may be used in stylesheets with the caveat that, as they control the states of elements, there may be side effects.
+>While the `scf-js` classes do not affect styles, the class names may be used in stylesheets with the caveat that, as they control the states of elements, there may be side effects.
 
 ## Extending Javascript {#extending-javascript}
 
@@ -141,7 +141,7 @@ To extend a components Javascript implementation, you need only
 
 Script tags are an inherent part of the client side framework. They are the glue that helps bind the markup generated on the server side with the models and views on the client side.
 
-Script tags in SCF scripts should not be removed when overlaying or overriding components. SCF script tags auto created for injecting JSON in the HTML are identified with the attribute `data-scf-json=`true.
+Script tags in SCF scripts should not be removed when overlaying or overriding components. SCF script tags auto created for injecting JSON in the HTML are identified with the attribute `data-scf-json=true`.
 
 ## Clientlibs for SCF {#clientlibs-for-scf}
 
@@ -160,12 +160,12 @@ The complete (non-author) clientlibs include dependencies and are convenient for
 
 These versions are found in:
 
-* /etc/clientlibs/social/hbs/&lt;component name&gt;
+* `/etc/clientlibs/social/hbs/&lt;component name&gt;`
 
 For example:
 
-* Client folder node: /etc/clientlibs/social/hbs/forum
-* Categories property: cq.social.hbs.forum
+* Client folder node: `/etc/clientlibs/social/hbs/forum`
+* Categories property: `cq.social.hbs.forum`
 
 The [Community Components guide](components-guide.md) lists the complete clientlibs required for each SCF component.
 
@@ -179,12 +179,12 @@ These clientlibs should never be directly included, but instead are available to
 
 These versions are found in the SCF libs folder:
 
-* /libs/social/&lt;feature&gt;/components/hbs/&lt;component name&gt;/clientlibs
+* `/libs/social/&lt;feature&gt;/components/hbs/&lt;component name&gt;/clientlibs`
 
 For example:
 
-* Client folder node: /libs/social/forum/hbs/forum/clientlibs
-* Categories property: cq.social.author.hbs.forum
+* Client folder node: `/libs/social/forum/hbs/forum/clientlibs`
+* Categories property: `cq.social.author.hbs.forum`
 
 Note: while author clientlibs never embed other libraries, they do list their dependencies. When embedded in other libraries, the dependencies are not automatically pulled in and must be embedded as well.
 
