@@ -13,6 +13,8 @@ The latest AEM Service Pack 4 (6.5.4.0) is released on **March 5, 2020**. This a
 
 ## AEM Sites {#aem-sites}
 
+### Style System enhancements
+
 AEM 6.5.4.0 includes Style System enhancements. You can now select styles within the component dialog.
 
 ### Performance improvements in various areas {#performance-improvements}
@@ -118,7 +120,7 @@ Between December 12, 2019 and March 5, 2020, Adobe released following capabiliti
 
 * AEM Cloud Manager 2020.1.0 and 2020.2.0
 
-  The release updates improve the pipeline status and the ability to download logs for various steps. For more information, see:
+  Improve the pipeline status and the ability to download logs for various steps. See:
 
   * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
@@ -128,7 +130,7 @@ Between December 12, 2019 and March 5, 2020, Adobe released following capabiliti
 
 * AEM Cloud Manager CLI updates
 
-  The release updates include automating Cloud Manager tasks using the command-line tool. See [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
+  Automate Cloud Manager tasks using the command-line tool. See [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
 
 * AEM Sites: Project Archetype 23
 
@@ -144,7 +146,7 @@ Between December 12, 2019 and March 5, 2020, Adobe released following capabiliti
 
 * AEM Assets: Desktop App 2.0.1.1
 
-  For more information, see [Get desktop access to the assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+  See [Get desktop access to the assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
 
 * AEM Screens: Feature Pack 202001
 
