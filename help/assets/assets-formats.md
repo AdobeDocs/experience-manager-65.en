@@ -186,18 +186,15 @@ The supported archive formats and the applicability of the common DAM workflows,
 
 ## Other supported formats {#other-supported-formats}
 
-The applicability of common DAM workflows for a few other file formats is described in the table below. Usual DAM functionality, except Dynamic Media Delivery, is supported for all files.
+The applicability of common DAM workflows for a few other file formats is described in the table below. The usual DAM functionality like storage, versioning, ACL, workflow, publishing, and metadata management, except Dynamic Media Delivery, is supported for all files.
 
 | Formats | Storage | Versioning | Workflow | Publishing | Access Control | Dynamic Media Delivery |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **&sup2;** | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | |
 | SVG | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | |
 | CSS | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
 | VTT | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
 | XML | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
 | JavaScript (when configured with own delivery domain) | | | | | | &#10003; |
-
-**&sup2;** The other formats are supported in DAM for storage, versioning, ACL, workflow, publishing, and metadata management.
 
 ## Supported MIME types {#supported-mime-types}
 
