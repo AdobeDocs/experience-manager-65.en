@@ -15,8 +15,6 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 
 Smart Imaging technology leverages Adobe Sensei AI capabilities and works with existing "image presets" to enhance image delivery performance by automatically optimizing image format, size, and quality based on client browser capabilities.
 
-help/assets/assets-dm/picture1.png
-
 Smart Imaging also benefits from the added performance boost of being fully integrated with Adobe’s best-in-class premium CDN service. This service finds the optimal internet route between servers, networks, and peering points that has lowest latency, and/or packet loss rate than the default route on the Internet.
 
 The following image asset examples depict the added Smart Imaging optimization:
