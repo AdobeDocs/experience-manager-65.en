@@ -19,7 +19,7 @@ help/assets/assets-dm/picture1.png
 
 Smart Imaging also benefits from the added performance boost of being fully integrated with Adobe’s best-in-class premium CDN service. This service finds the optimal internet route between servers, networks, and peering points that has lowest latency, and/or packet loss rate than the default route on the Internet.
 
-The following image asset examples depict the added Smart Imaging optimisation:
+The following image asset examples depict the added Smart Imaging optimization:
 
 | Image<br>(URL) | Thumbnail | Size<br> (JPEG) | Size (WebP)<br> (with ***Smart Imaging***) | % reduction |
 |---|:---:|:---:|:---:|:---:|:---:|
