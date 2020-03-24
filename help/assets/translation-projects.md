@@ -110,7 +110,10 @@ If you use this option, assets to be translated are copied to the language root 
 
 1. Navigate to the Assets UI, and open the Properties page for each of the translated assets to view the translated metadata.
 
-   ![chlimage_1-74](assets/chlimage_1-74.png)
+   ![view the translated metadata in asset Properties page](assets/translated-metadata-asset-properties.png)
+
+   *Figure: Translated metadata in the asset properties page*
+
 
    >[!NOTE]
    >

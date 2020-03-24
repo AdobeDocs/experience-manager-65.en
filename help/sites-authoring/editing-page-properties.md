@@ -209,6 +209,9 @@ Shows the page thumbnail image. You can:
 
   Select a [Brand to specify a scope for Targeting](/help/sites-authoring/target-adobe-campaign.md).
 
+  >[!NOTE]
+  >This option requires the user account to be in the `Target Adminstrators`group.
+
 ### Permissions {#permissions}
 
 * **Permissions**
