@@ -115,8 +115,6 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
 
 ### Databases and CRX Persistence {#databases-and-crx-persistence}
 
-#### AEM persistence support {#aem-persistence-support}
-
 <table>
  <tbody>
   <tr>
@@ -147,7 +145,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
   
    <tr>
    <td>Oracle Database 19c </td>
-   <td>Repository Microkernel</td>
+   <td>Repository</td>
    <td>Supported</td>
   </tr>
   <tr>
@@ -165,7 +163,6 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
 
 * IBM DB2 is not supported for fresh installations. It is supported only for exisiting customers upgrading to AEM 6.5 Forms.
 * MongoDB is third-party software and is not included in the AEM licensing package. For more information see the [MongoDB licensing policy](https://www.mongodb.org/about/licensing/) page.
-
 * In order to get the most of your AEM deployment, Adobe recommends licensing the MongoDB Enterprise version in order to benefit from professional support.
 * Adobe Customer Care will assist qualifying issues related to the usage of MongoDB with AEM. For more information, see the [MongoDB for Adobe Experience Manager page](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 * 'File System' includes block storage that is POSIX compliant. This includes network storage technology. Mind that file system performance might vary and influences the overall performance. It is recommended to load test AEM in combination with the network/remote file system.
@@ -173,50 +170,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
 * MongoDB Sharding is not supported in AEM.
 * AEM Forms on JEE does not support MySQL for RDBMK persistence.
 * The Document Security module does not use Content Repository. It implies, if you are using only Document Security and do not plan to use HTML Workspace, HTML5 forms, or adaptive forms, then do not install Content Repository.
-
-#### DATABASE support {#database-support}
-
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>Platform</strong></p> </td>
-   <td><p><strong> Description</strong></p> </td>
-   <td><p><strong>Support Level</strong></p> </td>
-  </tr>
-  <tr>
-   <td>IBM DB2 11.1</td>
-   <td>Repository Microkernel</td>
-   <td>R: Restricted Support</td>
-  </tr>
-  <tr>
-   <td><p>Oracle Database 12c Release 1</p> </td>
-   <td><p>Repository Microkernel</p> </td>
-   <td><p>Supported</p> </td>
-  </tr>
-  <tr>
-   <td>Oracle Database 18c</td>
-   <td>Repository Microkernel</td>
-   <td>Supported</td>
-  </tr>
-    <tr>
-   <td>Oracle Database 19c</td>
-   <td>Repository Microkernel</td>
-   <td>Supported</td>
-  </tr>
-  <tr>
-   <td><p>MySQL 5.7.19<br /> </p> </td>
-   <td><p>Repository Microkernel</p> </td>
-   <td><p>Supported</p> </td>
-  </tr>
-  <tr>
-   <td><p>Microsoft SQL Server 2016</p> </td>
-   <td><p>Repository Microkernel</p> </td>
-   <td><p>Supported</p> </td>
-  </tr>
- </tbody>
-</table>
-
-* IBM DB2 is not supported for fresh installations. It is supported only for exisiting customers upgrading to AEM 6.5 Forms.
+* AEM Forms on JEE does not support using MySQL for persisting AEM Repository (CRX-Repository).
 
 ### Database drivers {#database-drivers}
 
