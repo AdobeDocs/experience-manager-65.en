@@ -15,16 +15,18 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 
 Smart Imaging technology leverages Adobe Sensei AI capabilities and works with existing "image presets" to enhance image delivery performance by automatically optimizing image format, size, and quality based on client browser capabilities.
 
+help/assets/assets-dm/picture1.png
+
 Smart Imaging also benefits from the added performance boost of being fully integrated with Adobe’s best-in-class premium CDN service. This service finds the optimal internet route between servers, networks, and peering points that has lowest latency, and/or packet loss rate than the default route on the Internet.
 
 The following image asset examples depict the added Smart Imaging optimisation:
 
 | Image<br>(URL) | Thumbnail | Size<br> (JPEG) | Size (WebP)<br> (with ***Smart Imaging***) | % reduction |
 |---|:---:|:---:|:---:|:---:|:---:|
-| [Image 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture1](assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
-| [Image 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture2](assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
-| [Image 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture3](assets-dm/picture3.png) | 96.64 KB | 39.44 KB | 59% |
-| [Image 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture4](assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
+| [Image 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
+| [Image 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
+| [Image 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96.64 KB | 39.44 KB | 59% |
+| [Image 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
 | | | | |  Average = 51% |
 
 Similar to the above, Adobe also ran a test with 7009 URLs from live customer sites, and were able to achieve an average of 38% further file size optimisation for JPEG and 31% further file size optimisation for PNG with WebP format, owing to the capability of Smart Imaging.
