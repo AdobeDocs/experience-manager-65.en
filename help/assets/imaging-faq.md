@@ -84,7 +84,7 @@ In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG
 
 ## Will I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically.
+No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically.
 
 As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier.
 
@@ -111,11 +111,11 @@ Your first custom domain is no additional cost with a Dynamic Media license.
 
 You must initiate the request to use smart imaging; it is not automatically enabled.
 
-1. Initiate a Technical Support request (email: s7support@adobe.com).
+1. Initiate a Technical Support request (email: `s7support@adobe.com`).
 1. Provide the following information in your support request:
 
     1. Primary contact name, email, phone.
-    1. All domains to be enabled for smart imaging (that is, images.company.com or mycompany.scene7.com).
+    1. All domains to be enabled for smart imaging (that is, `images.company.com` or `mycompany.scene7.com`).
 
        To find your domains, log into your company account or accounts. 
 
