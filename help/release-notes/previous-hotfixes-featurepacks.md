@@ -19,7 +19,7 @@ Some key highlights of this service pack release are:
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.10.6.
 
-* Experience Manager Assets now supports ZIP archives created using Deflate 64 algorithm.
+* Adobe Experience Manager Assets now supports ZIP archives created using Deflate64 algorithm.
 
 * New column for created date, which is sortable, has been added in DAM list view and on asset search results in list view.
 
