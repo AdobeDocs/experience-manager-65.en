@@ -40,7 +40,7 @@ Enhancements in latest version of Smart Imaging:
 * Smart Imaging can be turned off using the “bfc” URL parameter.
 * TTL (Time To Live) independent. Previously, a minimum TTL of 12 hours was mandatory for Smart Imaging to work.
 * Previously, both the original and derivative images were cached, and it was a 2 step process to invalidate cache. In latest Smart Imaging, only the derivatives get cached, allowing a single step cache invalidation process.
-* Customers making use of custom headers in their ruleset (for example, “Timing Allow Origin”, “X-Robot” as suggested in [Adding a custom header value to image responses|Dynamic Media Classic](https://helpx.adobe.com/in/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) will benefit from the latest Smart Imaging, as these headers are not blocked, unlike the previous version of Smart Imaging.
+* Customers making use of custom headers in their ruleset (for example, “Timing Allow Origin”, “X-Robot” as suggested in [Adding a custom header value to image responses|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) will benefit from the latest Smart Imaging, as these headers are not blocked, unlike the previous version of Smart Imaging.
 
 ## Are there any licensing costs associated with smart imaging? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -84,7 +84,7 @@ In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG
 
 ## Will I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically.
+No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically.
 
 As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier.
 
@@ -111,11 +111,11 @@ Your first custom domain is no additional cost with a Dynamic Media license.
 
 You must initiate the request to use smart imaging; it is not automatically enabled.
 
-1. Initiate a Technical Support request (email: s7support@adobe.com).
+1. Initiate a Technical Support request (email: `s7support@adobe.com`).
 1. Provide the following information in your support request:
 
     1. Primary contact name, email, phone.
-    1. All domains to be enabled for smart imaging (that is, images.company.com or mycompany.scene7.com).
+    1. All domains to be enabled for smart imaging (that is, `images.company.com` or `mycompany.scene7.com`).
 
        To find your domains, log into your company account or accounts. 
 
