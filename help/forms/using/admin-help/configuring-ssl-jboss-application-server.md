@@ -26,7 +26,7 @@ In this procedure:
 
 1. In a command prompt, navigate to *[JAVA HOME]*/bin and type the following command to create the credential and keystore:
 
-   `keytool -genkey -dname "CN=`*Host Name* `, OU=`*Group Name* `, O=`*Company Name* `,L=`*City Name* `, S=`*State* `, C=`*Country Code* `" -alias` `"` `AEMForms Cert`*"* `-keyalg RSA -keypass`*key_password* `-keystore`*keystorename* `.keystore`
+   `keytool -genkey -dname "CN=`*Host Name* `, OU=`*Group Name* `, O=`*Company Name* `,L=`*City Name* `, S=`*State* `, C=`Country Code" `-alias "AEMForms Cert"` `-keyalg RSA -keypass`*key_password* `-keystore`*keystorename* `.keystore`
 
    >[!NOTE]
    >
@@ -161,7 +161,7 @@ In this procedure:
 
 1. In a command prompt, navigate to *[JAVA HOME]*/bin and type the following command to create the keystore and the key:
 
-   `keytool -genkey -dname "CN=`*Host Name* `, OU=`*Group Name* `, O=`*Company Name* `, L=`*City Name* `, S=`*State* `, C=`*Country Code* `" -alias` `"` `AEMForms Cert`*"* `-keyalg RSA -keypass`-*key_password* `-keystore`*keystorename* `.keystore`
+   `keytool -genkey -dname "CN=`*Host Name* `, OU=`*Group Name* `, O=`*Company Name* `, L=`*City Name* `, S=`*State* `, C=`*Country Code*" `-alias "AEMForms Cert"` `-keyalg RSA -keypass`-*key_password* `-keystore`*keystorename* `.keystore`
 
    >[!NOTE]
    >
