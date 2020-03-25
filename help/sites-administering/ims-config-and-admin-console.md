@@ -213,9 +213,8 @@ When the user logs in, their Group Memberships are synced, as shown below:
 
 In AEM, the user groups synced from IMS can be added as members to existing local groups, e.g. DAM Users.
 
-![screen_shot_2018-09-17at95804pm](assets/screen_shot_2018-09-17at95804pm.png)
+![screen_shot_2018-09-17at95804pm](assets/screen_shot_2018-09-17at95804pm.png) 
 
 As shown below, the group *AEM-GRP_008* inherits the Permissions and Privileges of DAM Users. This is an effective way of managing permissions for synced groups and is commonly used in LDAP based Authentication methods as well.
 
 ![screen_shot_2018-09-17at110505pm](assets/screen_shot_2018-09-17at110505pm.png)
-
