@@ -59,6 +59,9 @@ To programmatically invoke a AEM Forms service by using the Java API, include re
 
 * The AEM Forms service to invoke. A client application can invoke one or more services.
 * The mode in which you want to invoke a AEM Forms service. You can use the EJB or SOAP mode. (See [Setting connection properties](invoking-aem-forms-using-java.md#setting-connection-properties).)
+
+>[!NOTE] (Turnkey Only) Start the AEM Forms server with command `standalone.bat -b <Server IP> -c lc_turnkey.xml` to specify a server IP for EJB 
+
 * The J2EE application server on which AEM Forms is deployed.
 
 ### Service-specific JAR files {#service-specific-jar-files}
