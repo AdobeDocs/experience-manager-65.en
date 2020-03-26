@@ -56,7 +56,7 @@ Experience Manager Assets includes the following accessibility enhancements:
 
 The Generate Printable Output workflow step enables you to integrate a source template file with a data file. This integration enables you to print or save different copies of the template file. The step generates a PCL, PostScript, ZPL, IPL, TPCL, or DPL output. For more information on this feature, see [Forms-centric workflow on OSGi - Step Reference](../forms/using/aem-forms-workflow-step-reference.md).
 
-![Generate Printable Output](assets/generate-print-output-demo.gif)
+![Generate Printable Output](assets/generate-print-output-step.gif)
 
 ### Multicolumn support for adaptive forms and interactive communications in Layout mode {#multi-column-adaptive-forms}
 
