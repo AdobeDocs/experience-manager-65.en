@@ -82,8 +82,6 @@ Convert a text field in an XFA form to a rich text field in an HTML5 form. For m
 
 Experience Manager Forms includes the following accessibility enhancements:
 
-* Users can shift tab focus without any issues for the Ultramarine-Accessible reference theme of an adaptive form.
-
 * Screen readers announce checkboxes, links, Date Picker, and Date Input fields correctly in an adaptive form.
 
 * Each page of an adaptive form now includes one title and one main landmark label.
