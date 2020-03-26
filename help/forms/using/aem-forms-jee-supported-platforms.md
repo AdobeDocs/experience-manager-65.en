@@ -158,6 +158,11 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td>Repository Microkernel</td>
    <td>R: Restricted Support</td>
   </tr>
+    <tr>
+   <td>MySQL 5.7.19 </td>
+   <td>Repository</td>
+   <td>R: Restricted Support</td>
+  </tr>
  </tbody>
 </table>
 
@@ -171,6 +176,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
 * AEM Forms on JEE does not support MySQL for RDBMK persistence.
 * The Document Security module does not use Content Repository. It implies, if you are using only Document Security and do not plan to use HTML Workspace, HTML5 forms, or adaptive forms, then do not install Content Repository.
 * AEM Forms on JEE does not support using MySQL for persisting AEM Repository (CRX-Repository).
+
 
 ### Database drivers {#database-drivers}
 
