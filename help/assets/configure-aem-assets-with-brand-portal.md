@@ -188,17 +188,19 @@ Ensure that you have performed the following steps:
 
    ![IMS Account configuration](assets/create-new-integration6.png)
 
-   >[!CAUTION]
-   >
-   >Create only one IMS configuration. Do not create multiple IMS configurations.
-
+   
 1. Select the IMS configuration and click **[!UICONTROL Check Health]**. A dialog box appears. 
 
    Click **[!UICONTROL Check]**. On successful connection, the *Token retrieved successfully* message appears.
 
    ![](assets/create-new-integration5.png)
 
-   <br/> <br/>
+>[!CAUTION]
+   >
+   >Create only one valid IMS configuration. Do not create multiple IMS configurations.
+   >
+   > Make sure the configuration is healthy. In case, the configuration is unhealthy, delete it and create a new, healthy configuration.
+
 
 ### Configure cloud service {#configure-the-cloud-service}
 
