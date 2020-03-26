@@ -45,7 +45,7 @@ Anonymous posting of a vote is not supported. Site visitors must register and si
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td><p>See <a href="voting.md">Using Voting</a></p> </td>
+   <td><p>See, <a href="voting.md">Using Voting</a></p> </td>
   </tr>
  </tbody>
 </table>

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 ---
 
-# Community Group Essentials {#community-group-essentials}
+# Community Group Essentials  {#community-group-essentials}
 
 The community groups feature is the ability for a sub-community to be dynamically created within a community site by authorized users from the publish and author environments.
 
