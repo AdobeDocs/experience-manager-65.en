@@ -128,7 +128,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td><p>Supported</p> </td>
   </tr>
   <tr>
-   <td><p>MongoDB Enterprise 4.0</p> </td>
+   <td><p>MongoDB Enterprise 4.0 </p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Supported</p> </td>
   </tr>
@@ -160,7 +160,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
   </tr>
     <tr>
    <td>MySQL 5.7.19 </td>
-   <td>Repository</td>
+   <td>-</td>
    <td>R: Restricted Support</td>
   </tr>
  </tbody>
