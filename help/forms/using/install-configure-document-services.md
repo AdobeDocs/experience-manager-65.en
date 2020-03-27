@@ -248,7 +248,7 @@ Set environment variables for 32-bit and 64-bit Java Development Kit, third-part
 
 * Perform the following steps to configure IBM SSL socket provider:
 
-1. Create a copy of the java.security file. The default location of the file is [WebSphere_installation_directory]\Appserver\java_[version]\jre\lib\security.
+1. Create a copy of the java.security file. The default location of the file is `[WebSphere_installation_directory]\Appserver\java_[version]\jre\lib\security`.
 1. Open the copied java.security file for editing.
 1. Change the default SSL socket factories to use the JSSE2 factories instead of default IBM WebSphere factories:
 
@@ -307,21 +307,20 @@ The user account used to start the application server requires the **Replace a p
 
 You can enable a non-administrator user to use the PDF Generator service. Normally, only users with administrative privileges can use the service:
 
-1. Create an environment variable, PDFG_NON_ADMIN_ENABLED.   
-
+1. Create an environment variable, PDFG_NON_ADMIN_ENABLED.
 1. Set value of the environment variable to TRUE.
 1. Restart the AEM Forms instance.
 
 ### Disable User Account Control (UAC) {#disable-user-account-control-uac}
 
-1. To access the System Configuration Utility, go to **[!UICONTROL Start &gt; Run]** and then enter **[!UICONTROL MSCONFIG]**. 
+1. To access the System Configuration Utility, go to **[!UICONTROL Start &gt; Run]** and then enter **[!UICONTROL MSCONFIG]**.
 1. Click the **[!UICONTROL Tools]** tab and scroll down and select **[!UICONTROL Change UAC Settings]**. Click **[!UICONTROL Launch]** to run the command in a new window.
 1. Adjust the slider to the Never notify level. When finished, close the command window and close the System Configuration window.
 1. Verify that registry setting for UAC is set to 0 (zero). Perform the following steps to verify:
 
     1. Microsoft recommends backing up the registry before you modify it. For detailed steps, see [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/help/322756).
     1. Open Microsoft Windows Registry editor. To open registry editor, go to Start &gt; Run, type regedit, and click OK.
-    1. Navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\. Ensure value of EnableLUA is set to 0 (zero).
+    1. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Ensure value of EnableLUA is set to 0 (zero).
     1. Ensure value of **EnableLUA** is set to 0 (zero). If the value is not 0, change the value to 0. Close the registry editor.
 
 1. Restart your computer.
@@ -381,7 +380,7 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
 
    If you manually download the package via the direct link listed in the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article, log in to the package manager, click **[!UICONTROL Upload Package]**, select the downloaded package, and click upload. After the package is uploaded, click package name, and click **[!UICONTROL Install]**.
 
-1. After the package is installed, you are prompted to restart the AEM instance. **Do not immediately stop the server.** Before stopping the AEM Forms server, wait until the ServiceEvent REGISTERED and ServiceEvent UNREGISTERED messages stop appearing in the [AEM-Installation-Directory]/crx-quickstart/logs/error.log file and the log is stable.
+1. After the package is installed, you are prompted to restart the AEM instance. **Do not immediately stop the server.** Before stopping the AEM Forms server, wait until the ServiceEvent REGISTERED and ServiceEvent UNREGISTERED messages stop appearing in the `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log file and the log is stable.
 
 ## Post-installation configurations {#post-installation-configurations}
 
@@ -389,7 +388,7 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
 
 1. Stop the AEM instance. Navigate to the [AEM installation directory]\crx-quickstart\conf\ folder. Open the sling.properties file for editing.
 
-   If you use [AEM installation directory]\crx-quickstart\bin\start.bat to start an AEM instance, edit the sling.properties located at [AEM_root]\crx-quickstart\. 
+   If you use `[AEM installation directory]\crx-quickstart\bin\start.bat` to start an AEM instance, edit the sling.properties located at `[AEM_root]\crx-quickstart\`. 
 
 1. Add the following properties to the sling.properties file:
 
@@ -468,9 +467,9 @@ On Microsoft Windows, the PDF Generator service uses Adobe Acrobat to convert su
 1. Double-click a PDF document on your system. When Acrobat starts for the first time, the dialog boxes for Sign-in, Welcome screen, and EULA appear. Dismiss these dialog boxes for all the users configured to use PDF Generator. 
 1. Run the PDF Generator utility batch file to configure Acrobat for the PDF Generator service:
 
-    1. Open [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) and download the adobe-aemfd-pdfg-common-pkg-[version].zip file from the package manager. 
+    1. Open [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) and download the `adobe-aemfd-pdfg-common-pkg-[version].zip` file from the package manager.
     1. Unzip the downloaded .zip file. Open the command prompt with administrative privileges.
-    1. Navigate to the [extracted-zip-file]\jcr_root\etc\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\scripts directory. Run the following batch file:
+    1. Navigate to the `[extracted-zip-file]\jcr_root\etc\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\scripts` directory. Run the following batch file:
 
        `Acrobat_for_PDFG_Configuration.bat`
 
@@ -478,15 +477,15 @@ On Microsoft Windows, the PDF Generator service uses Adobe Acrobat to convert su
 
 1. Run System Readiness Tool (SRT) to validate Acrobat installation. The tool checks if the machine is configured properly to run PDF Generator conversions and generates a report at the specified path:
 
-    1. Open command prompt. Navigate to the [extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\etc\fd\ pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\srt folder. Run the following command from the command prompt:
+    1. Open command prompt. Navigate to the `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\etc\fd\ pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\srt` folder. Run the following command from the command prompt:
 
        `cscript SystemReadinessTool.vbs [Path_of_reports_folder] en`
 
        >[!NOTE]
        >
-       >If the System Readiness Tool reports that the pdfgen.api file is not available in the acrobat plug-ins folder then copy the pdfgen.api file from the [extracted-adobe-aemfd-pdfg-common-pkg]\plugins\x86_win32 directory to the [Acrobat_root]\Acrobat\plug_ins directory.
+       >If the System Readiness Tool reports that the pdfgen.api file is not available in the acrobat plug-ins folder then copy the pdfgen.api file from the `[extracted-adobe-aemfd-pdfg-common-pkg]\plugins\x86_win32` directory to the `[Acrobat_root]\Acrobat\plug_ins` directory.
 
-    1. Navigate to [Path_of_reports_folder]. Open the SystemReadinessTool.html file. Verify the report and fix the mentioned issues.
+    1. Navigate to `[Path_of_reports_folder]`. Open the SystemReadinessTool.html file. Verify the report and fix the mentioned issues.
 
 ### Configure primary route for HTML to PDF conversion (Windows only) {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
@@ -517,7 +516,7 @@ Before setting up the certificates, ensure that you have a:
 * Private Key password provided with the certificate.
 
 * Private Key Alias. You can execute the Java keytool command to view the Private Key Alias:
-keytool -list -v -keystore [keystore-file] -storetype pkcs12
+`keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * Keystore file password. If you are using Adobe's Reader Extensions certificate, the Keystore file password is always the same as Private Key password.
 
@@ -538,7 +537,7 @@ Perform the following steps to configure the certificates:
 
 ### Enable AES-256 {#enable-aes}
 
-To use AES 256 encryption for PDF files, obtain and install the Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy files. Replace the local_policy.jar and US_export_policy.jar files in the jre/lib/security folder. For example, if you are using Sun JDK, copy the downloaded files to the [JAVA_HOME]/jre/lib/security folder.
+To use AES 256 encryption for PDF files, obtain and install the Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy files. Replace the local_policy.jar and US_export_policy.jar files in the jre/lib/security folder. For example, if you are using Sun JDK, copy the downloaded files to the `[JAVA_HOME]/jre/lib/security` folder.
 
 The Assembler service depends on the Reader Extensions service, Signature service, Forms service, and Output service. Perform the following steps to verify that the required services are up and running:
 
@@ -576,7 +575,7 @@ The Assembler service depends on the Reader Extensions service, Signature servic
 
 * On UNIX-based operating systems, do the following to find any missing libraries:
 
-1. Navigate to [crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/.  
+1. Navigate to `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`.  
 
 1. Run the following command to list all libraries that PhantomJS requires for HTML to PDF conversion.
 
