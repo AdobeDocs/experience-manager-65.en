@@ -19,7 +19,7 @@ Smart Imaging also benefits from the added performance boost of being fully inte
 
 The following image asset examples depict the added Smart Imaging optimization:
 
-| Image<br>(URL) | Thumbnail | Size<br> (JPEG) | Size (WebP)<br> (with ***Smart Imaging***) | % reduction |
+| Image<br>(URL) | Thumbnail | Size<br> (JPEG) | Size (WebP)<br> (with Smart Imaging) | % reduction |
 |---|---|---|---|---|
 | [Image 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
 | [Image 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
