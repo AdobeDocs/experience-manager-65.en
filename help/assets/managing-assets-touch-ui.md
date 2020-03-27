@@ -333,11 +333,10 @@ To preview an asset, follow these steps.
 
 To preview an asset using keyboard, follow these steps:
 
-1. From the Assets user interface, navigate to the location of the asset you want to preview, using `Tab` and arrow keys.
+1. From the Assets user interface, navigate to the desired asset using `Tab` and arrow keys.
 
-1. Open the desired asset.
+1. Press `Enter` key on the desired asset to open it. You can zoom into assets in preview mode.
 
-   In the preview mode, zoom and reset options are available for [supported Image types](/help/assets/assets-formats.md#supported-raster-image-formats) (with interactive editing).
 1. To zoom into the asset:
    1. Use `Tab` key to move focus to zoom-in icon.
    1. Use `Enter` key to zoom into the image.
@@ -366,11 +365,15 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 1. To schedule a particular date/time for the activation of the asset, use the date picker beside the **[!UICONTROL On Time]** field.
 
-   ![chlimage_1-217](assets/chlimage_1-12.png)
+   ![use date time picker or keyboard keys in On Time field to add date and time for asset activation](assets/schedule-activation.png)
+
+   *Figure: Schedule asset activation*
 
 1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API.
 
-   ![chlimage_1-218](assets/chlimage_1-13.png)
+   ![use date time picker or keyboard keys in Off Time field to add date and time for asset de-activation](assets/schedule-deactivation.png)
+
+   *Figure: Schedule asset deactivation*
 
 1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in AEM. YouTube requires tags to publish. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
 

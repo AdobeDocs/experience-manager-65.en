@@ -105,7 +105,7 @@ When document content is inlined (that is, less than the maximum inline size) th
 
 1. Restart the application server with the following system property:
 
-   com.adobe.idp.defaultDocumentMaxInlineSize=[*value specified in Step 2*]
+   com.adobe.idp.defaultDocumentMaxInlineSize=`[value specified in Step 2]`
 
    >[!NOTE]
    >

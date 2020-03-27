@@ -21,9 +21,15 @@ To edit metadata:
     * From the asset page, click/tap the **[!UICONTROL View Properties]** icon from the toolbar.
     ![chlimage_1-168](assets/chlimage_1-168.png)
 
+
+    *Figure: Properties icon*
+
    The asset page displays all of the asset's metadata. This metadata was automatically extracted when it was uploaded (ingested) into AEM Assets.
 
-   ![chlimage_1-169](assets/chlimage_1-169.png)
+   ![select asset Properties to view metadata](assets/asset-metadata.png)
+
+
+   *Figure: Edit or add metadata on asset Properties page*
 
 1. Make edits to the metadata under the various tabs, as required, and when completed, click/tap **[!UICONTROL Save]** from the toolbar to save your changes. Click/tap **[!UICONTROL Close]** to return to the Assets web interface.
 

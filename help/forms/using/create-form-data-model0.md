@@ -51,9 +51,61 @@ The following image illustrates sample data for the customer table:
 
 ![sample_data_cust](assets/sample_data_cust.png)
 
-The calls table includes the call details such as call date, call time, call number, call duration, and call charges. The customer table is linked to the calls table using the Mobile Number (mobilenum) field. For each mobile number listed in the customer table, there are multiple records in the calls table. For example, you can retrieve the call details for the **1457892541** mobile number by referring to the calls table.
+Use the following DDL statement to create the **customer** table in database.
 
-The bills table includes the bill details such as bill date, bill period, monthly charges, and call charges. The customer table is linked to the bills table using the Bill Plan field. There is a plan associated to each customer in the customer table. The bills table includes the pricing details for all the existing plans. For example, you can retrieve the plan details for **Sarah** from the customer table and use those details to retrieve pricing details from the bills table.
+```sql
+CREATE TABLE `customer` (
+   `mobilenum` int(11) NOT NULL,
+   `name` varchar(45) NOT NULL,
+   `address` varchar(45) NOT NULL,
+   `alternatemobilenumber` int(11) DEFAULT NULL,
+   `relationshipnumber` int(11) DEFAULT NULL,
+   `customerplan` varchar(45) DEFAULT NULL,
+   PRIMARY KEY (`mobilenum`),
+   UNIQUE KEY `mobilenum_UNIQUE` (`mobilenum`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+Use the following DDL statement to create the **bills** table in database.
+
+```sql
+CREATE TABLE `bills` (
+   `billplan` varchar(45) NOT NULL,
+   `latepayment` decimal(4,2) NOT NULL,
+   `monthlycharges` decimal(4,2) NOT NULL,
+   `billdate` date NOT NULL,
+   `billperiod` varchar(45) NOT NULL,
+   `prevbal` decimal(4,2) NOT NULL,
+   `callcharges` decimal(4,2) NOT NULL,
+   `confcallcharges` decimal(4,2) NOT NULL,
+   `smscharges` decimal(4,2) NOT NULL,
+   `internetcharges` decimal(4,2) NOT NULL,
+   `roamingnational` decimal(4,2) NOT NULL,
+   `roamingintnl` decimal(4,2) NOT NULL,
+   `vas` decimal(4,2) NOT NULL,
+   `discounts` decimal(4,2) NOT NULL,
+   `tax` decimal(4,2) NOT NULL,
+   PRIMARY KEY (`billplan`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+Use the following DDL statement to create the **calls** table in database.
+
+```sql
+CREATE TABLE `calls` (
+   `mobilenum` int(11) DEFAULT NULL,
+   `calldate` date DEFAULT NULL,
+   `calltime` varchar(45) DEFAULT NULL,
+   `callnumber` int(11) DEFAULT NULL,
+   `callduration` varchar(45) DEFAULT NULL,
+   `callcharges` decimal(4,2) DEFAULT NULL,
+   `calltype` varchar(45) DEFAULT NULL
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+The **calls** table includes the call details such as call date, call time, call number, call duration, and call charges. The **customer** table is linked to the calls table using the Mobile Number (mobilenum) field. For each mobile number listed in the **customer** table, there are multiple records in the **calls** table. For example, you can retrieve the call details for the **1457892541** mobile number by referring to the **calls** table.
+
+The **bills** table includes the bill details such as bill date, bill period, monthly charges, and call charges. The **customer** table is linked to the **bills** table using the Bill Plan field. There is a plan associated to each customer in the **customer** table. The **bills** table includes the pricing details for all the existing plans. For example, you can retrieve the plan details for **Sarah** from the **customer** table and use those details to retrieve pricing details from the **bills** table.
 
 ## Step 2: Configure MySQL database as data source {#step-configure-mysql-database-as-data-source}
 

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 ---
 
-# Create the Components {#create-the-components}
+# Create the Components  {#create-the-components}
 
 The example of extending components uses the comment system, which is actually composed of two components
 

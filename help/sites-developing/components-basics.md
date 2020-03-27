@@ -621,6 +621,10 @@ The `cq:actions` property ( `String array`) defines one or several actions that 
    <td><code>edit</code></td>
    <td>Adds a button to edit the component.</td>
   </tr>
+      <tr>
+    <td><code>editannotate</code></td>
+    <td>Adds a button to edit the component as well as allowing <a href="/help/sites-authoring/annotations.md">annotations</a>.</td>
+   </tr>
   <tr>
    <td><code>delete</code></td>
    <td>Adds a button to delete the component</td>

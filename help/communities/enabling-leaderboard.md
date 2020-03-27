@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Leaderboard Feature{#leaderboard-feature}
+# Leaderboard Feature {#leaderboard-feature}
 
 ## Introduction {#introduction}
 
@@ -23,8 +23,8 @@ Prior to including the leaderboard component on a page, it is necessary to confi
 
 This section of the documentation describes
 
-* adding the `Leaderboard` component to a [community site](/help/communities/overview.md#community-sites)
-* configuration settings for the `Leaderboard` component
+* Adding the `Leaderboard` component to a [community site](/help/communities/overview.md#community-sites)
+* Configuration settings for the `Leaderboard` component
 
 ### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
 
@@ -48,7 +48,7 @@ Select the placed `Leaderboard` component to access and select the `Configure` i
 
 #### Settings tab {#settings-tab}
 
-Under the **Settings **tab, specify what information related to the member is displayed :
+Under the **Settings** tab, specify what information related to the member is displayed :
 
 * **Display Name**
 
@@ -76,21 +76,19 @@ Under the **Rules** tab, the community site, and its scoring and badging rules
 
 * **Rule Location**
 
-  (required) Location where the Scoring / Badging rule is configured.
+  (Required) Location where the Scoring / Badging rule is configured.
 
 * **Scoring Rule**
 
-  (required) Specific rule generating the scores to display.
+  (Required) Specific rule generating the scores to display.
 
 * **Badging Rule**
 
-  (required) Specific rule generating the badge to display.
+  (Required) Specific rule generating the badge to display.
 
 * **Display Limit**
 
-  Number of members to display per page.
-
-  Default is 10.
+  Number of members to display per page.Default is 10.
 
 ### Example: Participants Leaderboard {#example-participants-leaderboard}
 

@@ -20,7 +20,9 @@ You can reference existing AEM assets from within an Adobe Illustrator file.
 
 1. Using [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html), mount AEM Assets repository as a drive on your local machine. Within the mounted drive, navigate to the location of the asset that you want to reference.
 1. Drag the asset from the mounted drive to the Illustrator file.
+
 1. Save the Illustrator file to the mounted drive, or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the AEM repository.
+
 1. After the workflow completes, go to the asset details page for the asset. The references to existing AEM assets are listed under **[!UICONTROL Dependencies]** in the **[!UICONTROL References]** column.
 
    ![chlimage_1-84](assets/chlimage_1-258.png)
@@ -31,7 +33,9 @@ You can reference existing AEM assets from within an Adobe Illustrator file.
 
 1. Click **[!UICONTROL View Properties]** from the toolbar. In the [!UICONTROL Properties] page, the list of files that reference the current asset appear under the **[!UICONTROL References]** column in the **[!UICONTROL Basic]** tab.
 
-   ![chlimage_1-86](assets/chlimage_1-260.png)
+   ![view the references of Experience Manager Assets in References column in asset details](assets/asset-references.png)
+
+   *Figure: Asset references in asset details*
 
 ## Add AEM assets as references in Adobe InDesign {#add-aem-assets-as-references-in-adobe-indesign}
 
