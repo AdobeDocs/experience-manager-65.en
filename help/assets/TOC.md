@@ -8,7 +8,7 @@ user-guide-title: AEM 6.5 Assets User Guide
 # AEM 6.5 Assets User Guide {#assets}
 
 + [Assets user guide](home.md)
-+ [AEM 6.5 Assets release notes](../release-notes/assets.md)
++ [AEM 6.5 Assets release notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [About DAM](assets.md)
 + [Best practices for assets](best-practices-for-assets.md)
 + Use AEM Assets {#using}
