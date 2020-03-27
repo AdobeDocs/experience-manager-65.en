@@ -71,8 +71,8 @@ As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC 
 
 See:
 
-* [Storage Resource Provider Overview](srp.md) - introduction and repository usage overview
+* [Storage Resource Provider Overview](srp.md) - Introduction and repository usage overview
 * [SRP and UGC Essentials](srp-and-ugc.md) - SRP utility methods and examples
-* [Accessing UGC with SRP](accessing-ugc-with-srp.md) - coding guidelines
-* [SocialUtils Refactoring](socialutils.md) - mapping deprecated utility methods to current SRP utility methods
+* [Accessing UGC with SRP](accessing-ugc-with-srp.md) - Coding guidelines
+* [SocialUtils Refactoring](socialutils.md) - Mapping deprecated utility methods to current SRP utility methods
 
