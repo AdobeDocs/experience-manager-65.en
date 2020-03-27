@@ -36,6 +36,10 @@ The authorization channel between AEM Assets and Brand Portal is changed. Earlie
 The steps to configure AEM Assets with Brand Portal are different depending on your AEM version, and whether you are configuring for the first-time, or upgrading the existing configurations. See [Configure AEM Assets with Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) for details.
 
 
+### Known issues {#known-issues-bp}
+
+* Brand Portal users are not able to publish contribution folder assets to AEM Assets on upgrading to Adobe I/O on AEM 6.5.4.
+
 ### Accessibility enhancements {#accessibility-enhancements}
 
 Experience Manager Assets includes the following accessibility enhancements:
