@@ -31,7 +31,7 @@ Complete this procedure using the Applications and Services web page in Administ
 1. Log in to Administration Console by typing the following URL in a web browser:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Click **Services &gt; Applications and Services &gt; Preferences**.
@@ -66,7 +66,7 @@ Some forms server services permit unauthenticated (anonymous) invocation for som
 1. Log in to administration console by typing the following URL in a web browser:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Click **Services &gt; Applications and Services &gt; Service Management**.
@@ -109,7 +109,7 @@ End users can authenticate to AEM Forms through Workbench, AEM Forms web applica
 1. Log in to administration console by typing the following URL in a web browser:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Click **Settings &gt; User Management &gt; Configuration &gt; Import And Export Configuration Files**.

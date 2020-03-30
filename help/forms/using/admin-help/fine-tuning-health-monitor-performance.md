@@ -65,7 +65,7 @@ Collecting the system statistics that populate Health Monitor has some impact on
 
 ## Add Java options to WebLogic {#add-java-options-to-weblogic}
 
-1. Start the WebLogic administration console by typing https://[host name]:[port]/console in the URL line of a web browser.
+1. Start the WebLogic administration console by typing https://[host name]:'port'/console in the URL line of a web browser.
 1. Type the user name and password that you created for the WebLogic Server domain and click Log Under Change Center, click Lock & Edit.
 1. Under Domain Structure, click Environment &gt; Servers and, in the right pane, click the managed server name.
 1. On the next screen, click the Configuration tab &gt; Server Start tab.

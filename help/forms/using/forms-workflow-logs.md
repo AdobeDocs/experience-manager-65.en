@@ -77,7 +77,7 @@ Perform the following steps to enable debug logging for AEM Forms workflows:
 
 1. Go to AEM web console configuration manager at:
 
-   https://[server]:[port]/system/console/configMgr
+   https://'[server]:[port]'/system/console/configMgr
 
 1. Select **[!UICONTROL Sling]** > **[!UICONTROL Log Support]**.
 1. Tap **[!UICONTROL Add new Logger.]**

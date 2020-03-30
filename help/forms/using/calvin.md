@@ -92,7 +92,7 @@ Before using this article to create your test cases, you need to know the follow
 
 The following example walks you through creation of a test suite for testing multiple adaptive forms. You need to create a separate test case for each form that you need to test. By following steps similar to the following ones and modifying the JavaScript code in step 11, you can create your own test suite to test your adaptive forms.
 
-1. Go to CRXDE Lite in your web browser: `https://[server]:[port]/crx/de`.
+1. Go to CRXDE Lite in your web browser: `https://'[server]:[port]'/crx/de`.
 1. Right-click the /etc/clientlibs subfolder and click **Create** &gt; **Create Node**. Enter a name (here afTestRegistration), specify the type of node as cq:ClientLibraryFolder, and click **OK.**
 
    The clientlibs folder contains the registration aspect of your application (JS and Init). It is recommended that you register all Hobbes test suites objects specific to a form in the clientlibs folder.

@@ -39,7 +39,7 @@ The below steps add a command "Download Flat PDF" to the Asset Listing view for 
 
 To customize Correspondence Management to allow your users to download a flat PDF of letters, complete the following steps:
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 
 1. In the apps folder, create a folder named items with path/structure similar to the items folder located in selection folder using the following steps:
 
@@ -346,7 +346,7 @@ To customize Correspondence Management to allow your users to download a flat PD
 
 After you have added custom functionality to download flat PDF of your letters, you can use the following steps to download flat PDF version of the letter you select:
 
-1. Go to `https://[server]:[port]/[ContextPath]/projects.html` and log in.
+1. Go to `https://'[server]:[port]'/[ContextPath]/projects.html` and log in.
 
 1. Select **Forms &gt; Letters**. Correspondence Management lists the letters available in the system.
 1. Click **Select** and then click a letter to select it.

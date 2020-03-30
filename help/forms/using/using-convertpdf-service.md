@@ -23,7 +23,7 @@ You can accomplish the following with the Convert PDF service:
 
 ## Configure properties of the service &nbsp; {#properties}
 
-You can use the **AEMFD ConvertPDF Service** in AEM Console to configure properties for this service. The default URL of AEM console is `https://[host]:[port]/system/console/configMgr`.
+You can use the **AEMFD ConvertPDF Service** in AEM Console to configure properties for this service. The default URL of AEM console is `https://[host]:'port'/system/console/configMgr`.
 
 ## Using the service {#using-the-service}
 
