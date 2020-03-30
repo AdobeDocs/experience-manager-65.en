@@ -190,6 +190,13 @@ For complete list of features, key highlights, key features introduced in previo
 
 ### Brand Portal {#assets-brand-portal}
 
+* Brand Portal users are not able to publish contribution folder assets to AEM Assets on upgrading to Adobe I/O on AEM 6.5.4 (CQDOC-15655). 
+
+  This issue will be fixed in the next service pack AEM 6.5.5. 
+  
+  For immediate fix on AEM 6.5.4, it is recommended to [download the hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) and install on your author instance.
+
+
 * Metadata schema drop-down values are not visible in asset properties(CQ-4283287).
 
 * Metadata subschema do not display tabs based on mimetype in asset properties (CQ-4283288).
