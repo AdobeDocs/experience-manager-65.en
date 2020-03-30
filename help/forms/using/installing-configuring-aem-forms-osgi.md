@@ -125,9 +125,9 @@ AEM Forms has a few mandatory and optional configurations. The mandatory configu
 Perform the following steps on all the Author and Publish instances to boot delegate the libraries:
 
 1. Stop the underlying AEM instance.
-1. Open the [AEM installation directory]\crx-quickstart\conf\sling.properties file for editing.
+1. Open the `[AEM installation directory]\crx-quickstart\conf\sling.properties` file for editing.
 
-   If you used [AEM installation directory]\crx-quickstart\bin\start.bat to start AEM, then edit the sling.properties located at [AEM_root]\crx-quickstart\.
+   If you used `[AEM installation directory]\crx-quickstart\bin\start.bat` to start AEM, then edit the sling.properties located at `[AEM_root]\crx-quickstart\`.
 
 1. Add the following properties to the sling.properties file:
 
