@@ -30,7 +30,7 @@ You can upload the supported asset types individually or as a ZIP archive. You c
 
 ## Uploading forms {#uploading-forms}
 
-1. Log in to the AEM Forms user interface by accessing `https://[server]:[port]/aem/forms.html`.
+1. Log in to the AEM Forms user interface by accessing `https://'[server]:[port]'/aem/forms.html`.
 1. Navigate to the folder where you want to upload the form or the folder containing forms.
 1. In the actions toolbar, tap **Create &gt; File Upload**.
 
@@ -62,7 +62,7 @@ AEM Forms server allows you to run JavaScript code. A malicious JavaScript code 
 
 The protected mode is on, by default. If necessary, you can disable the protected mode:
 
-1. Log in to AEM Web Console as an administrator. The URL is https://[server]:[port]/system/console/configMgr
+1. Log in to AEM Web Console as an administrator. The URL is https://'[server]:[port]'/system/console/configMgr
 1. Open Mobile Forms Configurations for editing.
 1. Deselect the Protected Mode option and click **Save**. The protected mode is disabled.
 

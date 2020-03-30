@@ -163,7 +163,7 @@ You can change the fragment asset and its bindings from the Edit component dialo
 
 You can perform several operations on adaptive form fragments using the AEM Forms UI.
 
-1. Go to `https://[hostname]:[port]/aem/forms.html`.
+1. Go to `https://[hostname]:'port'/aem/forms.html`.
 
 1. Click **Select** in the AEM Forms UI toolbar and select an adaptive form fragment. The toolbar displays the following operations you can perform on the selected adaptive form fragment.
 

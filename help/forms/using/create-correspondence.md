@@ -136,9 +136,9 @@ In the content tab, manage the content such as document fragments and content va
 
    ![letterbackgroundcolor](assets/letterbackgroundcolor.png)
 
-   You can either directly tap a basic color **[A]** present in the Basic Colors palette or tap **Select** after using the slider **[B]** to choose the appropriate shade of the color.
+   You can either directly tap a basic color `**[A]**` present in the Basic Colors palette or tap **Select** after using the slider `**[B]**` to choose the appropriate shade of the color.
 
-   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation **[C]** to create the precise color and then tap Select **[D]** to apply the color to highlight the text.
+   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation `**[C]**` to create the precise color and then tap Select `**[D]**` to apply the color to highlight the text.
 
    ![textbackgroundcolor](assets/textbackgroundcolor.png)
 
@@ -352,7 +352,7 @@ For more information on browser compatibility with letter preview, see [Disconti
 
 To change the preview mode of the letter, complete the following steps:
 
-1. Go to `https://[system]:[port]/system/console/configMgr` and, if necessary, log in as Admin.
+1. Go to `https://[system]:'port'/system/console/configMgr` and, if necessary, log in as Admin.
 1. Go to **[!UICONTROL Correspondence Management Configurations]** > **[!UICONTROL Rendition Type]** and select **HTML Rendition** (Default) or **PDF Rendition**.
 1. Click **[!UICONTROL Save]**.
 

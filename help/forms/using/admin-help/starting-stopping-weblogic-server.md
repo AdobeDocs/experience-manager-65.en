@@ -74,7 +74,7 @@ The WebLogic Server administration console is no longer available, and the comma
     * (Windows) `startWebLogic.cmd`
     * (Linux, UNIX) ./ `startWebLogic.sh`
 
-1. Access WebLogic Server administration console by typing `https://*[host name]:`[Port] `/console` in the URL line of a web browser, where *[Port]* is the non-secure listening port. By default, this port value is 7001.
+1. Access WebLogic Server administration console by typing `https://[host name]:[port]/console` in the URL line of a web browser, where *[port]* is the non-secure listening port. By default, this port value is 7001.
 1. On the login screen, type your administrator user name and password, and click Log In.
 
 ## Start Node Manager {#start-node-manager}
@@ -97,7 +97,7 @@ After you shut down WebLogic Server, you can close the command prompt from which
 >This task can be performed only after you create a WebLogic domain and a managed server.
 
 1. Ensure that the WebLogic Server and Node Manager are running.
-1. Start WebLogic Server administration console by typing `https://`*[host name]:[port]* `/console` in the URL line of a web browser.
+1. Start WebLogic Server administration console by typing `https://host name]:[port]`/console` in the URL line of a web browser.
 1. Under Domain Structure, click Environment &gt; Servers.
 1. In the right pane, click the Control tab.
 1. Select the managed server that you want to start.

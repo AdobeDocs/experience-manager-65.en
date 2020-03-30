@@ -21,7 +21,7 @@ You can configure the logger utility to start creating logs for HTML5 forms. The
 
 Perform the following steps to configure server-side logs:
 
-1. Go to `https://[server]:[port]/system/console/configMgr`. Locate and open the *Apace Sling logging logger configuration* option. A dialog box appears:
+1. Go to `https://'[server]:[port]'/system/console/configMgr`. Locate and open the *Apace Sling logging logger configuration* option. A dialog box appears:
 
    ![ Apace Sling logging logger configuration option dialog box](assets/logconfig.png)
 
@@ -173,7 +173,7 @@ For example:
 
 If you use Configuration Manager for enabling logging, logs are generated for every render request until the logging is disabled again.
 
-1. Log in to CQ Configuration Manager at `https://[server]:[port]/system/console/configMgr` and log in with admin credentials.
+1. Log in to CQ Configuration Manager at `https://'[server]:[port]'/system/console/configMgr` and log in with admin credentials.
 1. Search for and click **Mobile Forms Configurations**.
 1. In the Debug Options text box, enter the log configurations as described in the previous section for example, **2-a4-b5-c6**
 
@@ -189,7 +189,7 @@ By default, all the information is added to the error.log file at the /crx-repos
 
 To change the location and name of the log file:
 
-1. Log in to Configuration Manager as an administrator. The default URL of Configuration Manager is `https://[Server]:[Port]/system/console/configMgr`.
+1. Log in to Configuration Manager as an administrator. The default URL of Configuration Manager is `https://'[server]:[port]'/system/console/configMgr`.
 1. Click **Apache Sling Logging Logger Configuration**. A dialog box appears.
 
    ![logconfig-1](assets/logconfig-1.png)

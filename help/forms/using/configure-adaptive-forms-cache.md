@@ -28,7 +28,7 @@ A cache is a mechanism to shorten data access times, reduce latency, and improve
 
 Perform the following steps to configure the adaptive forms cache:
 
-1. Go to AEM web console configuration manager at https://[server]:[port]/system/console/configMgr.
+1. Go to AEM web console configuration manager at https://'[server]:[port]'/system/console/configMgr.
 1. Click **Adaptive Form and Interactive Communication Web Channel Configuration** to edit its configuration values.
 1. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. The default value is 100.
 
