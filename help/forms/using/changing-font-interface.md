@@ -25,7 +25,7 @@ Follow the [Generic steps for AEM Forms workspace customization](../../forms/usi
 
 As an example, to change the font of the top navigation bar anchor text to Courier New, follow these steps:
 
-1. Log in to CRXDE Lite by accessing `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Log in to CRXDE Lite by accessing `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Do one of the following:
 
     1. To change the font-family in an existing style, add the following in the newStyle.css file at /apps/ws/css.

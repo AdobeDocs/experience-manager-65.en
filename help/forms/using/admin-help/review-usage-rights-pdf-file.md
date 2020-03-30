@@ -15,7 +15,7 @@ discoiquuid: 2777706c-d42b-4921-a8f4-720b7c0fa45e
 
 When you upload a PDF file to the Acrobat Reader DC extensions web application, you can view this information:to view whether it has been Reader extended, any usage rights applied, and their expiry dates.
 
-1. Log in to the Acrobat Reader DC extensions web application at http://localhost:*[port]*/ReaderExtensions (where *[port]* is your application server’s port number).
+1. Log in to the Acrobat Reader DC extensions web application at `http://[localhost]:[port]/ReaderExtensions` (where *[port]* is your application server’s port number).
 1. Click Browse to upload the PDF file and then click Info. The information appears below the filename.
 
    See Acrobat Reader DC extensions Help for details on modifying the file’s usage rights.

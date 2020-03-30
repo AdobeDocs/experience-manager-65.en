@@ -56,7 +56,7 @@ Users who have either the PDFG Administrator or PDFG User role can install a PDF
 
 1. (PDFG Administrators) In administration console, click Services &gt; PDF Generator &gt; PDFG Network Printer.
 
-   (PDFG Users) Go to `http(s)://[host]:[port]/pdfgui` and click the link under PDFG Network Printer Installation.
+   (PDFG Users) Go to `http(s)://[host]:'port'/pdfgui` and click the link under PDFG Network Printer Installation.
 
 1. Under PDFG Network Printer Installation, click the link. When prompted for user account information, specify the user name and password that you used in step 1 to log in. A message appears, stating that the printer has been successfully installed.
 

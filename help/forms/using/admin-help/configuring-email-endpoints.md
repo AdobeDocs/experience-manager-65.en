@@ -80,7 +80,7 @@ For forms workflow to receive and handle incoming email messages from users, you
 
 **Domain Pattern:** The domain name pattern that is used to filter incoming emails. For example, if adobe.com is used, only email from adobe.com will be processed; email from other domains is ignored.
 
-**File Pattern:** The incoming file attachment patterns that the provider accepts. This includes files that have specific extensions (&ast;.dat, &ast;.xml), specific names (data), and composite expressions in the name and extension (.[dD][aA][Tt]). The default value is &ast;.&ast;.
+**File Pattern:** The incoming file attachment patterns that the provider accepts. This includes files that have specific extensions (&ast;.dat, &ast;.xml), specific names (data), and composite expressions in the name and extension (.[dD][aA]'port'). The default value is &ast;.&ast;.
 
 **Successful Job’s Recipients:** One or more email addresses that are used to send emails to indicate successful jobs. By default, a successful job message is always sent to the sender of the initial job. Up to 100 recipients are supported. To turn off this setting, leave this field blank.
 
@@ -158,7 +158,7 @@ Use the following settings to configure an email endpoint.
 
 **Domain Pattern:** Specifies the domain patterns of incoming email that the provider accepts. For example, if adobe.com is used, only email from adobe.com is processed; email from other domains is ignored.
 
-**File Pattern:** Specifies the incoming file attachment patterns that the provider accepts. This includes files that have specific extensions (&ast;.dat, &ast;.xml), specific names (data), or composite expressions in the name and extension (&ast;.[dD][aA][Tt]).
+**File Pattern:** Specifies the incoming file attachment patterns that the provider accepts. This includes files that have specific extensions (&ast;.dat, &ast;.xml), specific names (data), or composite expressions in the name and extension (&ast;.[dD][aA]'port').
 
 **Successful Job’s Recipients:** An email address to which messages are sent to indicate successful jobs. By default, a successful job message is always sent to the sender. If you type sender, email results are sent to the sender. Up to 100 recipients are supported. Specify additional recipients with email addresses, separated by commas (,).
 

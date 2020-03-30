@@ -19,7 +19,7 @@ AEM Forms workspace is SSO enabled. If a user has logged in to an AEM Forms appl
 
 Session timeout for a user can be configured in the Administration Console.
 
-To set the timeout, login to `https://[server]:[port]/adminui`, navigate to **Settings &gt; User Management &gt; Configuration &gt; Configure Advanced System Attributes**, and make the desired settings.
+To set the timeout, login to `https://'[server]:[port]'/adminui`, navigate to **Settings &gt; User Management &gt; Configuration &gt; Configure Advanced System Attributes**, and make the desired settings.
 
 In AEM Forms workspace timeout is handled as:
 
