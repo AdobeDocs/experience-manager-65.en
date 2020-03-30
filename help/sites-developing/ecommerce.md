@@ -23,7 +23,7 @@ The integration framework includes an integration layer with an API. This allows
 For more information, see:
 
 * [Developing (generic)](/help/sites-developing/generic.md)
-* [Developing with SAP Commerce Cloud](/help/sites-developing/hybris.md)
+* [Developing with SAP Commerce Cloud](/help/sites-developing/sap-commerce-cloud.md)
 
 >[!NOTE]
 >

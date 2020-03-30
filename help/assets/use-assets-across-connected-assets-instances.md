@@ -137,7 +137,7 @@ Use the above setup to try the authoring experience to understand how the functi
 
    ![Notification about asynchronous fetching of assets that happens in the background.](assets/assets_async_transfer_fails.png)
 
-   *Figure: Notification about asynchronous fetching of assets that happens in the background.*
+   *Figure: Notification about asynchronous fetching of assets that happens in the background*
 
 1. When publishing a page, AEM displays a complete list of assets that are used in the page. Ensure that the remote assets are fetched successfully at the time of publishing. To check the status of each fetched asset, see [async jobs](/help/assets/asynchronous-jobs.md) user interface.
 

@@ -7,7 +7,6 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
-
 ---
 
 # Adobe Experience Manager 6.5 Service Pack Release Notes {#aem-service-pack-release-notes}
@@ -35,9 +34,15 @@ Some key features and enhancements introduced in AEM 6.5.4.0 include:
 
 * Support for [Rich Text](../forms/using/designing-form-template.md) in HTML5 forms.
 
-* Accessibility enhancements in Assets.
+* [Accessibility enhancements](new-features-latest-service-pack.md#accessibility-enhancements) in Experience Manager Assets.
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.10.8.
+
+* You can now sync selective content subtrees to *Dynamic Media - Scene7 mode* instead of all available at `content/dam`.
+
+* Form data model integration with SOAP web service now supports choice groups or attributes on elements.
+
+* SOAP input or output and complex data structures now support Dynamic Group Substitution.
 
 For complete list of features, key highlights, key features introduced in previous AEM 6.5 service packs, see [What's new in Adobe Experience Manager 6.5 Service Pack 4](new-features-latest-service-pack.md).
 
@@ -241,6 +246,8 @@ For complete list of features, key highlights, key features introduced in previo
 
 * Designer: If there are merged cells in a table, the accessibility test fails for the output PDF file converted from an XDP form using the output service (CQ-4285372).
 
+* Foundation JEE: If an AEM Forms server is disconnected from a cluster, caching issues prevent it from reconnecting to the server (NPR-32412).
+
 ## Install 6.5.4.0 {#install}
 
 **Setup requirements**
@@ -326,7 +333,7 @@ To use UberJar in a Maven project, refer to the article, [How to use UberJar](/h
 <dependency>
       <groupId>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.5.4.0</version>
+      <version>6.5.4</version>
       <classifier>apis</classifier>
       <scope>provided</scope>
 </dependency>

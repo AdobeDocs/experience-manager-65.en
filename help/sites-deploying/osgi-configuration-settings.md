@@ -33,7 +33,7 @@ The following OSGi configuration settings (listed according to bundle) are relev
 
 >[!NOTE]
 >
->The [AEM OSGi Config Details](https://www.aemstuff.com/osgi.html) tool can be used to list the default OSGi configurations.
+>The OSGi Configuration Diff tool, part of the [AEM Tools](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html), can be used to list the default OSGi configurations.
 
 >[!NOTE]
 >

@@ -30,7 +30,7 @@ The comments component establishes a comment system such that each individual po
    <td>Yes - properties are editable in <i>design </i>mode</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>Clientlibs</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.voting</td>
   </tr>
   <tr>
@@ -67,7 +67,7 @@ Other features already include the comment system. These are:
 
 The flagging reason list can be customized by adding flagreasonlist.hbs to your app to overwrite what is in
 
-* /libs/social/commons/components/hbs/comments/comment/flagreasonlist.hbs
+* `/libs/social/commons/components/hbs/comments/comment/flagreasonlist.hbs`
 
 This applies to any component which extends a comment system.
 
