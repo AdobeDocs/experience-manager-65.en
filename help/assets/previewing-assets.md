@@ -118,7 +118,7 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
     </tbody>
     </table>
 
-# Previewing assets using a keyboard {#keyboard-navigation-asset-preview}
+## Previewing assets using a keyboard {#keyboard-navigation-asset-preview}
 
 1. From the Assets user interface, navigate to a folder that contains an asset you want to preview.
 
