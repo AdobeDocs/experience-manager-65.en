@@ -53,7 +53,7 @@ You can use Document Security SDK, Adobe Acrobat, Document Security Extension fo
 
 * **Document Security Extension for Microsoft Office**: You can use the Document Security Extension for Microsoft Office to apply predefined policies to your Microsoft Office files from within the Microsoft Office programs. The extension ensures that only authorized people can use policy protected Microsoft Word, Excel, and PowerPoint files. Only authorized users who have the plugin installed can use the policy-protected files.﻿  
   
-  The Document Security extension is available as a Microsoft Office plug-in. You can contact [AEM support team](https://helpx.adobe.com/ca/marketing-cloud/contact-support.html) to procure the extension. Later on, you can visit [Document Security Extension for Microsoft Office](https://helpx.adobe.com/aem-forms/aem-document-security/aem-document-security-extension-help.html) help to learn about installing, configuring, and using the extension.
+  The Document Security extension is available as a Microsoft Office plug-in. You can contact [AEM support team](https://helpx.adobe.com/ca/marketing-cloud/contact-support.html) to procure the extension. Later on, you can visit [Document Security Extension for Microsoft Office](https://helpx.adobe.com/aem-forms/aem-document-security/download-installer.html) help to learn about installing, configuring, and using the extension.
 
 * **Portable Protection Library:** Portable Protection Library (PPL) protects a document locally, without sending the document to AEM Forms server. Only security credentials and policy details travel over the network. PPL also allows you to limit policy retrieval access to only logged-in users. You can fetch policies with the context of the user logged in AEM user.  
   
