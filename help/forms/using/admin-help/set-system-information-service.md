@@ -15,7 +15,7 @@ discoiquuid: 14de0652-717d-4c84-b7b4-b7b78f325baa
 
 The system information service provides REST APIs to retrieve information. To use the system information service, enable the REST endpoint from administration console. Perform the following steps to enable the REST endpoint:
 
-1. Log in to administration console. The default URL of administration console is `https://[hostname]:[port]/adminui.`
+1. Log in to administration console. The default URL of administration console is `https://[hostname]:'port'/adminui.`
 1. Navigate to Services &gt; Applications and Services &gt; Service Management.
 1. On the Service Management page, click the **SystemInfo** service.
 1. In the list on the Endpoints tab, select REST, and click **Add**.

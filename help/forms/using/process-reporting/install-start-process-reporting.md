@@ -105,7 +105,7 @@ You can use the Administration console to configure the root (**default**: `/con
 
 #### To configure the Process Reporting repository locations {#to-configure-the-process-reporting-repository-locations}
 
-1. Log in to **Administration Console** with administrator credentials. The default URL of Administration Console is `https://[server]:[port]/adminui`
+1. Log in to **Administration Console** with administrator credentials. The default URL of Administration Console is `https://'[server]:[port]'/adminui`
 1. Navigate to **Home** &gt; **Services** &gt; **Applications and Services** &gt;**Service Management** and open the **ProcessDataStorageProvider** service.
 
    ![process-data-storage-service](assets/process-data-storage-service.png)
@@ -130,7 +130,7 @@ The ReportConfiguration service is used by Process Reporting for configuring the
 
 #### To configure the ReportingConfiguration service {#to-configure-the-reportingconfiguration-service}
 
-1. Log in to **Configuration Manager** with CRX administrator credentials. The default URL of Configuration Manager is `https://[server]:[port]/lc/system/console/configMgr`
+1. Log in to **Configuration Manager** with CRX administrator credentials. The default URL of Configuration Manager is `https://'[server]:[port]'/lc/system/console/configMgr`
 1. Open the **ReportingConfiguration** service.
 1. **Number of Records**
 
@@ -163,7 +163,7 @@ The ProcessDataPublisher service imports process data from the AEM Forms databas
 
 1. Log in to **Administration Console** with administrator credentials.
 
-   The default URL is `https://[server]:port]/adminui/`.
+   The default URL is `https://'server':port]/adminui/`.
 
 1. Navigate to **Home** &gt; **Services** &gt; **Applications and Services** &gt;**Service Management** and open the **ProcessDataPublisher** service.
 

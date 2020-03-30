@@ -177,7 +177,7 @@ Perform the following steps to show and hide templates:
 
    >[!NOTE]
    >
-   >The URL of AEM web console is https://[server]:[port]/system/console/configMgr
+   >The URL of AEM web console is https://'[server]:[port]'/system/console/configMgr
 
 1. Locate and open the **FormsManager Configuration** settings:
 

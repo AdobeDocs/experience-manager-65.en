@@ -152,7 +152,7 @@ You can also use custom metadata in an email notification. Custom metadata conta
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) is a scripting language. It is used for client-side scripting and server applications. Perform the following steps to use ECMAScript to add custom metadata for an email template:
 
-1. Log in to CRX DE with an administrative account. The URL is https://[server]:[port]/crx/de/index.jsp  
+1. Log in to CRX DE with an administrative account. The URL is https://'[server]:[port]'/crx/de/index.jsp  
 
 1. Navigate to /apps/fd/dashboard/scripts/metadataScripts. Create a file with extension .ecma. For example, usermetadata.ecma
 

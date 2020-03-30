@@ -541,7 +541,7 @@ To use AES 256 encryption for PDF files, obtain and install the Java Cryptograph
 
 The Assembler service depends on the Reader Extensions service, Signature service, Forms service, and Output service. Perform the following steps to verify that the required services are up and running:
 
-1. Log in to URL `https://[server]:[port]/system/console/bundles` as an administrator.
+1. Log in to URL `https://'[server]:[port]'/system/console/bundles` as an administrator.
 1. Search the following service and ensure that the services are up and running:
 
 <table> 

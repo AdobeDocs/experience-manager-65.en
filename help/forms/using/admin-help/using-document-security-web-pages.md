@@ -29,9 +29,9 @@ To log in as an administrator, you need to have the administrator role assigned 
 
 To log in to the web pages using a browser, you need the document security URL and an account. The URL for users is different from the URL for administrators. Administrators can also log in to the user pages to create policies.
 
-If you have access to more than one installation of document security, you need the URL for the instance of document security you want to access. See your administrator if you do not have this information. The default URL for the user pages is https://*[host]*:*[port]*/edc. The port number may not be required in some cases. Ask your administrator for details.
+If you have access to more than one installation of document security, you need the URL for the instance of document security you want to access. See your administrator if you do not have this information. The default URL for the user pages is `https://[host]:[port]/edc`. The port number may not be required in some cases. Ask your administrator for details.
 
-The default URL for administrators is https://*[host]*:*[port]*/adminui.
+The default URL for administrators is `https://[host]:[port]/adminui`.
 
 For administrators, a default super administrator account is created during installation. You can use this account to log in when document security is first installed.
 
@@ -41,9 +41,9 @@ For administrators, a default super administrator account is created during inst
 
 1. Type the URL in your browser:
 
-   Document security URL: `https://`*[host]* `:`*[port]* `/edc`
+   Document security URL: `https://[host]:[port]/edc`
 
-   or Administration Console URL: `https://`*[host]* `:`*[port]* `/adminui`
+   or Administration Console URL: `https://[host]:[port]/adminui`
 
 1. In the login window, type your user name and password, and click OK.
 1. In Administration Console, click Services &gt; document security.

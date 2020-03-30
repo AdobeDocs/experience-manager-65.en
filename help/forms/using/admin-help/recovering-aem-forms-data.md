@@ -63,17 +63,17 @@ If a single node of a multinode cluster failed and the remaining nodes of the cl
    >
    >If the /restore directory already exists, back it up and then delete it before you rename the /backup directory that contains the latest data.
 
-    * (JBoss) Rename `[appserver root]/server/[server]/svcnative/DocumentStorage/backup` to:
+    * (JBoss) Rename `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` to:
 
-      `[appserver root]/server/[server]/svcnative/DocumentStorage/restore`.
+      `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
 
-    * (WebLogic) Rename `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/backup` to:
+    * (WebLogic) Rename `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/backup` to:
 
-      `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/restore`.
+      `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
 
-    * (WebSphere) Rename `[appserver root]/installedApps/adobe/[server]/DocumentStorage/backup` to:
+    * (WebSphere) Rename `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` to:
 
-      `[appserver root]/installedApps/adobe/[server]/DocumentStorage/restore`.
+      `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
 
 1. Recover the Content Storage Root directory by first deleting the contents of the Content Storage Root directory on the existing installation of AEM forms and then recovering the contents by following the tasks for either stand-alone or clustered environments:
 

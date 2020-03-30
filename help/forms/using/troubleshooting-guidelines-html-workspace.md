@@ -21,12 +21,12 @@ Ater installing the patch, open the AEM Forms workspace. If you encounter the No
 
 While installling the package, if you encounter an error `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, perform the following steps:
 
-1. Log in to CRX DE lite. The default url is `https://[localhost]:[port]/lc/crx/de/index.jsp`
+1. Log in to CRX DE lite. The default url is `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Delete the following node:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. Go to the Package Manager. The default URL is `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
+1. Go to the Package Manager. The default URL is `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Search and install the `adobe-lc-workspace-pkg-[version].zip` package.
 1. Restart the application server.
 

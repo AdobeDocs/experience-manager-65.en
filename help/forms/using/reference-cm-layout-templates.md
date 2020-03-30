@@ -26,7 +26,7 @@ Correspondence Management provides letter templates in the AEM Forms package [AE
 
 After you install the package, the layout templates (XDPs) are listed in templates-folder at the following location:
 
-`https://[server]:[port]/[context-root]/aem/forms.html/content/dam/formsanddocuments/templates-folder`
+`https://'[server]:[port]'/[context-root]/aem/forms.html/content/dam/formsanddocuments/templates-folder`
 
 Following are the common fields in all the templates in this package:
 

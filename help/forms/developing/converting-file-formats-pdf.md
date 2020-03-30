@@ -613,12 +613,12 @@ This table lists the type of information used in printing native file formats.
   </tr>
   <tr>
    <td><p>Application-specific dialog box instructions</p></td>
-   <td><p>Specifies how to respond to application-specific dialog boxes. </p><p>The file that contains this information is appmon.<i>[appname]</i>.dialog.<i>[locale]</i>.xml (for example, appmon.word.en_US.xml).</p></td>
+   <td><p>Specifies how to respond to application-specific dialog boxes. </p><p>The file that contains this information is appmon.<i>`[appname]`</i>.dialog.<i>`[locale]`</i>.xml (for example, appmon.word.en_US.xml).</p></td>
    <td><p>Do not modify this file. </p><p>To add dialog box instructions for a new native application, see <a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application">Creating or modifying an additional dialog XML file for a native application</a>.</p></td>
   </tr>
   <tr>
    <td><p>Additional application-specific dialog box instructions </p></td>
-   <td><p>Specifies overrides and additions to application-specific dialog box instructions. The section presents an example of such information. </p><p>The file that contains this information is appmon.<i>[appname]</i>.addition.<i>[locale]</i>.xml. An example is appmon.addition.en_US.xml.</p></td>
+   <td><p>Specifies overrides and additions to application-specific dialog box instructions. The section presents an example of such information. </p><p>The file that contains this information is appmon.<i>`[appname]`</i>.addition.<i>`[locale]`</i>.xml. An example is appmon.addition.en_US.xml.</p></td>
    <td><p>Files of this type can be created and modified using an XML editing application. (See <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Creating or modifying an additional dialog XML file for a native application</a>.) </p><p><strong>Important</strong>: You must create additional application-specific dialog box instructions for each native application your server will support. </p></td>
   </tr>
  </tbody>
@@ -670,9 +670,9 @@ A *dialog XML file* specifies how the Generate PDF service responds to system or
 
 When the system or native application displays a dialog box that is not handled by the currently executing script XML file, the Generate PDF service searches the dialog XML files in this order, stopping when it finds a match:
 
-* appmon.*[appname]*.additional.*[locale]*.xml
-* appmon.*[appname].[locale]*.xml (Do not modify this file.)
-* appmon.global.*[locale]*.xml (Do not modify this file.)
+* appmon.`[appname]`.additional.`[locale]`.xml
+* appmon.`[appname]`.`[locale]`.xml (Do not modify this file.)
+* appmon.global.`[locale]`.xml (Do not modify this file.)
 
 If the Generate PDF service finds a match for the dialog box, it dismisses it by sending it the keystroke or other action specified for the dialog box. If the instructions for the dialog box specify an abort message, the Generate PDF service terminates the currently executing job and generates an error message. Such an abort message would be specified in the `abortMessage` element in the script XML grammar.
 
@@ -739,7 +739,7 @@ After you add these XML files to the adobe-appmondata.jar file, you must redeplo
 
 If you want to direct files to a new native application, you must create a script XML file for that application. If you want to modify how the Generate PDF service interacts with a native application that is already supported, you must modify the script for that application.
 
-The script contains instructions that navigate through the native application’s window elements and that supply specific responses to those elements. The file that contains this information is `appmon.[appname]` `.script.[locale].xml`. An example is appmon.notepad.script.en_US.xml.
+The script contains instructions that navigate through the native application’s window elements and that supply specific responses to those elements. The file that contains this information is `appmon.`[appname]`` `.script.`[locale]`.xml`. An example is appmon.notepad.script.en_US.xml.
 
 #### Identifying steps the script must execute {#identifying-steps-the-script-must-execute}
 
@@ -834,7 +834,7 @@ If you create a script for a native application that was not previously supporte
 
 >[!NOTE]
 >
->In this context, the term additional means the contents of the `appmon.[applicationname].addition.[locale].xml` file. Such a file specifies overrides and additions to the dialog XML file.
+>In this context, the term additional means the contents of the `appmon.[applicationname].addition.[locale]`.xml` file. Such a file specifies overrides and additions to the dialog XML file.
 
 You can also modify the additional dialog XML file for a native application for these purposes:
 

@@ -158,7 +158,7 @@ The Value Commit script is triggered when:
 
 >[!NOTE]
 >
->You can disable the execution of the Value Commit Script when the value of a field is changed programmatically. To do so, go to https://[server]:[port]/system/console/configMgr and change **Adaptive Forms Version for Compatibility** to **AEM Forms 6.1**. Thereafter, Value Commit Script is executed only when the user changes the value of the field from the UI.
+>You can disable the execution of the Value Commit Script when the value of a field is changed programmatically. To do so, go to https://'[server]:[port]'/system/console/configMgr and change **Adaptive Forms Version for Compatibility** to **AEM Forms 6.1**. Thereafter, Value Commit Script is executed only when the user changes the value of the field from the UI.
 
 ### Visibility Expression {#visibility-expression}
 
