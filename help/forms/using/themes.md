@@ -509,7 +509,7 @@ Perform the following steps to configure a theme to use the TypeKit configuratio
 
 You can use the theme configuration service to add more fonts to the theme editor. Perform the following steps to add fonts:
 
-1. Log in to AEM Web Console with administrative privileges. URL for the AEM Web Console is `https://[server]:[port]/system/console/configMgr`.
+1. Log in to AEM Web Console with administrative privileges. URL for the AEM Web Console is `https://'[server]:[port]'/system/console/configMgr`.
 1. Open **Adaptive Form Theme Configuration Service**.
 
    ![theme-config](assets/theme-config.png)

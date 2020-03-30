@@ -95,8 +95,8 @@ You can configure the following properties for a Watched Folder.
     * Files with specific names; for example, data&#42; would exclude files and folders named data1, data2, and so on.
     * Files with composite expressions in the name and extension, as in these examples:
 
-        * Data[0-9][0-9][0-9].[dD][aA][tT]
-        * &#42;.[dD][Aa][Tt]
+        * Data[0-9][0-9][0-9].[dD][aA]'port'
+        * &#42;.[dD][Aa]'port'
         * &#42;.[Xx][Mm][Ll]
 
 For more information about file patterns, see [About file patterns](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
@@ -108,9 +108,9 @@ For more information about file patterns, see [About file patterns](../../forms/
 
 * Files with composite expressions in the name and extension, as in these examples:
 
-    * Data[0-9][0-9][0-9].[dD][aA][tT]
+    * Data[0-9][0-9][0-9].[dD][aA]'port'
 
-        * &#42;.[dD][Aa][Tt]
+        * &#42;.[dD][Aa]'port'
         * &#42;.[Xx][Mm][Ll]
 
 For more information about file patterns, see [About file patterns](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
@@ -288,7 +288,7 @@ By default, a container folder (/etc/fd/watchfolder/scripts) is provided where c
 
 If you plan to place your scripts at a custom location, it is likely that the default service-user might not have read permissions over the custom location. For such scenario, perform the following steps to provide necessary permissions to the custom location:
 
-1. Create a system user programmatically or via the console https://[server]:[port]/crx/explorer. You can also use an existing system user. It is important to work with system users here instead of normal users. 
+1. Create a system user programmatically or via the console https://'[server]:[port]'/crx/explorer. You can also use an existing system user. It is important to work with system users here instead of normal users. 
 1. Provide read permissions to the newly created or existing system user on the custom location where the scripts are stored. You can have multiple custom locations. Provide atleast read permissions to all the custom locations.  
 1. In the Felix configuration console (/system/console/configMgr), locate the service user mapping for the watch-folders. This mapping looks like 'Mapping: adobe-aemds-core-watch-folder=...'. 
 1. Click the mapping. For the entry 'adobe-aemds-core-watch-folder:scripts=fd-service', change fd-service to the ID of the custom system user. Click Save.
@@ -563,8 +563,8 @@ Administrators can specify the type of file that can invoke a service. Multiple 
 * Files with specific names; for example, data.&#42;
 * Files with composite expressions in the name and extension, as in these examples:
 
-    * Data[0-9][0-9][0-9].[dD][aA][tT]
-    * &#42;.[dD][Aa][Tt]
+    * Data[0-9][0-9][0-9].[dD][aA]'port'
+    * &#42;.[dD][Aa]'port'
     * &#42;.[Xx][Mm][Ll]
 
 * The administrator can define the file pattern of the output folder in which to store the results. For the output folders (result, preserve, and failure), the administrator can specify any of these file patterns:
@@ -602,7 +602,7 @@ Perform the following steps to configure a Watched Folder with PDF Generator:
 
 The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Word (.docx) documents to PDF documents. Perform the following steps to create the script:
 
-1. Open CRXDE lite in a browser window. The URL is https://[server]:[port]/crx/de.  
+1. Open CRXDE lite in a browser window. The URL is https://'[server]:[port]'/crx/de.  
 
 1. Navigate to /etc/workflow/scripts and create a folder named PDFG.  
 
@@ -637,7 +637,7 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
 ### Create a Workflow {#create-a-workflow}
 
 1. Open AEM Workflow UI in a browser window.   
-   https://[servername]:[port]/worklow  
+   https://[servername]:'port'/worklow  
 
 1. In the Models view, click **New**. In the New Workflow dialog, specify **Title**, and click **OK**.
 
@@ -657,7 +657,7 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
 
 ### Configure the Watched Folder {#configure-the-watched-folder}
 
-1. Open CRXDE lite in a browser window. https://[server]:[port]/crx/de/
+1. Open CRXDE lite in a browser window. https://'[server]:[port]'/crx/de/
 
 1. Navigate to the /etc/fd/watchfolder/config/ folder and create a node of type nt:unstructured.
 

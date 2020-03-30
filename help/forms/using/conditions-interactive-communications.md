@@ -75,7 +75,7 @@ The assets in the conditions that are rendered based on the applied rules and th
    **[B] Accept Change.** Tap this icon to accept the changes you have made in the asset and rule in the condition.
    **[C] Duplicate Asset.** Tap this icon to create a copy of the asset along with the applied rule, if any, in the condition. Then you can proceed to editing the rule and asset for duplicated asset. Duplicating an asset is useful for creating similar rules to display alternate assets based on a particular context.
    **[D] Show Preview.** Tap this icon to display a preview of the asset within the Create\Edit Condition page.
-   **[E] Reorder.** Tap and hold this icon to drag-and-drop assets to reorder them within a condition.
+   **'server' Reorder.** Tap and hold this icon to drag-and-drop assets to reorder them within a condition.
 
    You can select the following options to specify how the condition behaves at runtime:
 

@@ -52,7 +52,7 @@ Do the following to set the Reply URL for registered Microsoft Dynamics applicat
 
 1. Go to Microsoft Azure Active Directory account and add the following cloud service configuration URL in **Reply URLs** settings for your registered application:
 
-   `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+   `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
    ![Azure directory](assets/azure_directory_new.png)
 
@@ -94,7 +94,7 @@ Do the following to register an OAuth client on Active Directory Federation Serv
 
     * `Client-ID` is a client ID you can generate using any GUID generator.
     * `redirect-uri` is the URL to the Microsoft Dynamics OData cloud service on AEM Forms. The default cloud service installed with the AEM Forms package is deployed at the following URL:
-      `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Run the following command to grant access on AD FS machine:
 
@@ -138,7 +138,7 @@ On opening the form data model for the first time, it connects to the configured
 
 To review the form data model, go to **[!UICONTROL Forms > Data Integrations]**. Select **Microsoft Dynamics FDM** and click **Edit** to open the form data model in edit mode. Alternatively, you can open the form data model directly from the following URL:
 
-`https://[server]:[port]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
+`https://'[server]:[port]'/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
 ![default-fdm-1](assets/default-fdm-1.png)
 

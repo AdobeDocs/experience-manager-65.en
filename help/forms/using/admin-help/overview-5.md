@@ -22,6 +22,6 @@ PDF Generator converts various file formats to PDF. It also converts PDF to othe
 There are three ways to send files to PDF Generator for processing:
 
 * Administrators can access the PDFG pages in Administration Console. (See [Converting files using PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md).)
-* Users can access the PDFG end-user pages by logging in to `http(s)://[server]:[port]/pdfgui.` From there, they can access the PDFG Network Printer, Create PDF, HTML to PDF, Export PDF, and Optimize PDF pages.
+* Users can access the PDFG end-user pages by logging in to `http(s)://'[server]:[port]'/pdfgui.` From there, they can access the PDFG Network Printer, Create PDF, HTML to PDF, Export PDF, and Optimize PDF pages.
 * You can configure endpoints for the services. (See <!--Fix broken link to Managing Endpoints --> and [Generate PDF service recommendations](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).) [](/help/forms/using/admin-help/overview-5.md#main-pars-header)
 

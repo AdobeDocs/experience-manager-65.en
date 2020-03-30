@@ -153,7 +153,7 @@ In this procedure:
             * (Windows) `run.bat -c <profile>`
             * (Linux) `./run.sh -c <profile>`
 
-1. To access administration console using SSL, type `https://[host name]:[port]/adminui` in a web browser:
+1. To access administration console using SSL, type `https://[host name]:'port'/adminui` in a web browser:
 
    The default SSL port for JBoss is 8443. From here on, specify this port when accessing AEM forms.
 
