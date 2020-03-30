@@ -20,8 +20,11 @@ You can use the Metadata Schema Forms editor to modify existing schemas or add c
 
 1. Edit various metadata properties under the various tabs. However, you cannot modify the asset type in the properties page.
 
-   ![chlimage_1-36](assets/chlimage_1-172.png)
+   ![you cannot change asset Type in basic tab of asset Properties](assets/asset-properties-basic-tab.png)
+   
+   *Figure: Basic tab on asset Properties*
 
+   
    To modify the MIME type for an asset, use a custom metadata schema form or modify an existing form. See [Edit Metadata Schema Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) for more information. If you modify the metadata schema for a certain MIME type, the properties page layout for assets with the current MIME type and all asset subtypes are modified. For example, modifying a jpeg schema under `default/image` only modifies the metadata layout (asset properties) for assets with MIME type `image/jpeg`. However, if you edit the default schema, your changes modify the metadata layout for all types of assets.
 
 1. To view a list of forms/templates, click the AEM logo and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**.
@@ -78,7 +81,10 @@ You can add new tabs or form items to the metadata schema form. The tabs and for
 
 1. In the **[!UICONTROL Metadata Schema Editor]** page, customize the properties page of the asset by dragging one or more components from the list of component types in the **[!UICONTROL Build Form]** tab to the **[!UICONTROL Basic]** tab.
 
-   ![chlimage_1-40](assets/chlimage_1-176.png)
+   ![add components from Build Form to metadata schema editor to customize asset Properties](assets/metadata-schema-editor.png)
+   
+
+   *Figure: Basic tab of metadata schema editor*
 
 1. To configure a component, select it and modify its properties in the **Settings** tab.
 
@@ -145,9 +151,11 @@ If you add the Contextual Metadata component to any tab of any schema form, the 
 
 ![chlimage_1-43](assets/chlimage_1-179.png)
 
-To include any tab in the properties page in addition to the tab where the Contextual Metadata component is applied, select the tab from the list. The tab is added to the properties page.
+To display any tab in the properties page in addition to the tab where the Contextual Metadata component is applied, select the tab from the list. The tab is added to the properties page.
 
-![chlimage_1-44](assets/chlimage_1-180.png)
+![select a tab from contextual metadata list to display on properties page](assets/contextual-metadata-asset-properties.png)
+
+*Figure: Contextual metadata in asset properties page*
 
 ### Specify properties in JSON file {#specify-properties-in-json-file}
 
@@ -244,7 +252,9 @@ If the folder has a subfolder, the assets within the subfolder inherit the metad
 
 1. In the **[!UICONTROL Metadata Schema Editor]** page, add a text field to the schema form. For example add a field with the label **[!UICONTROL Category]**.
 
-   ![chlimage_1-50](assets/chlimage_1-186.png)
+   ![add a text field to metadata schema form editor](assets/text-field-metadata-schema-editor.png)
+
+   *Figure: Text field added to metadata schema form editor*
 
 1. Click **[!UICONTROL Save]**. The modified form is listed in the **[!UICONTROL Metadata Schema Forms]** page.
 1. Click/tap **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
@@ -274,7 +284,9 @@ You can define mandatory fields at a folder level, which is enforced on assets t
 
 1. Edit the custom form. Add a mandatory field. For example, add a **[!UICONTROL Category]** field and make the field mandatory.
 
-   ![chlimage_1-54](assets/chlimage_1-190.png)
+   ![add field to metadata form and select Required in Rules tab to make it mandatory](assets/mandatory-field-metadata-schema-editor.png)
+
+   *Figure: Mandatory field in metadata schema form editor*
 
 1. Click **[!UICONTROL Save]**. The modified form is listed in the **[!UICONTROL Metadata Schema Forms]** page. Select the form and then click or tap **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
 

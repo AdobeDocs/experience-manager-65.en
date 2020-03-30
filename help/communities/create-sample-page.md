@@ -38,7 +38,7 @@ From global navigation on an author instance select **[!UICONTROL Tools > Commun
 
     * `Name`: Single Page Template
     * `Description`: A template consisting of a single Page function.
-    * select `Enabled`
+    * Select `Enabled`
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 

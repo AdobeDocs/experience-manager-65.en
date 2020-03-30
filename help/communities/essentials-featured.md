@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
 ---
 
-# Featured Content Essentials {#featured-content-essentials}
+# Featured Content Essentials  {#featured-content-essentials}
 
 This page provides the essential information for working with featured content.
 

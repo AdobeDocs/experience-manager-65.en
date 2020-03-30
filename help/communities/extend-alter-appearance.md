@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Alter the Appearance (HBS){#alter-the-appearance-hbs}
+# Alter the Appearance (HBS) {#alter-the-appearance-hbs}
 
 Now that the components for the custom comment system in the application directory (/apps) are in place, with a resourceSuperType referencing the default comment system and the custom Model/View registered, it is possible to modify the implementation.
 
@@ -27,7 +27,7 @@ For a simple demonstration, a visual feature, the avatar shown of the signed-in 
 
 Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* open [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Open [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
     * comment out the tag which includes the avatar for a comment post (~ line 21):
 
@@ -37,7 +37,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
        -->
       ```
 
-* open [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Open [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
     * comment out the tag which includes the avatar for the next comment entry (~ line 44):
 
@@ -47,7 +47,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
        -->
       ```
 
-* select **Save All**
+* Select **Save All**
 
 ### Replicate Custom App {#replicate-custom-app}
 
@@ -55,7 +55,7 @@ After the application has been modified, it is necessary to re-replicate the cus
 
 One way to do so is
 
-* from the main menu
+* From the main menu
 
     * select **Tools &gt; Operations &gt; Replication**
     * select `Activate Tree`

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 ---
 
-# Developing Communities {#developing-communities}
+# Developing Communities  {#developing-communities}
 
 ## Overview {#overview}
 

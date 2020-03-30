@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 ---
 
-# Community Components Guide {#community-components-guide}
+# Community Components Guide  {#community-components-guide}
 
 The Community Components guide is an interactive development tool for the [social component framework (SCF)](scf.md). It provides a list of available AEM Communities components or the more complex features built of multiple components.
 
@@ -116,7 +116,7 @@ When using the guide on a publish instance, it is possible to experience the com
 
 >[!NOTE]
 >
->Be aware, if the SRP is left defaulted to [JSRP](jsrp.md), then UGC entered on the publish instance will only be visible on publish, and will *not *be visible from the [moderation](moderate-ugc.md) console on the author instance.
+>Be aware, if the SRP is left defaulted to [JSRP](jsrp.md), then UGC entered on the publish instance will only be visible on publish, and will *not* be visible from the [moderation](moderate-ugc.md) console on the author instance.
 
 ## Client-Side Libraries {#client-side-libraries}
 

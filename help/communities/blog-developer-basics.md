@@ -13,9 +13,9 @@ docset: aem65
 
 ---
 
-# Blog Essentials{#blog-essentials}
+# Blog Essentials {#blog-essentials}
 
-As of AEM 6.1 Communities, a blog is a community activity. Blog articles are now posted from the publish environment, where previously, blog articles could only be created in the author environment and published .
+As of AEM 6.1 Communities, a blog is a community activity. Blog articles are now posted from the publish environment, where previously, blog articles could only be created in the author environment and published.
 
 Blog articles may now be created by any community member, unless restricted to privileged members.
 
