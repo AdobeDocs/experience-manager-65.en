@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Use Connected Assets to share DAM assets in AEM Sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. A few reasons can be geographically distributed deployments required to work in tandem; acquisitions leading to heterogenous infrastructure that parent company wants to consolidate; growth leading to such scale that dedicated instance is required for asset management.
+In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. A few reasons can be geographically distributed existing deployments that are required to work in tandem or acquisitions leading to heterogenous infrastructure that the parent company wants to use together.
 
 AEM Sites offers capabilities to create web pages and AEM Assets is the Digital Asset Management (DAM) system that supplies the required assets for websites. AEM now supports the above use case by integrating AEM Sites and AEM Assets.
 
