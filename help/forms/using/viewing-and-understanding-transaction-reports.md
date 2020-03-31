@@ -67,7 +67,7 @@ Reverse replication copies transaction data to the default outbox of the author 
 
 You can view transaction reports on author or publish instances. The transaction report on the author instance provides an aggregated sum of all the transactions that take place on the configured author and publish instances. The transaction report on the publish instance provides a count of transactions that take place only on the underlying publish instance. Perform the following steps to view the report:
 
-1. Log in to the AEM Forms server at `https://[hostname]:[port]`.
+1. Log in to the AEM Forms server at `https://[hostname]:'port'`.
 1. Navigate to **Tools** &gt; **Forms **&gt;** View Transaction Report**.
 
 ## Understanding the report {#understanding-the-report}

@@ -108,7 +108,7 @@ HTML5 forms perform in-memory caching using LRU strategy. If cache strategy is s
 
 Configuration Service enables tuning the configuration parameters and cache settings for HTML5 forms.
 
-To update these settings, go to the CQ Felix Admin Console (available at https://&lt;[server]:[port]/system/console/configMgr), search for and select Mobile Forms Configuration.
+To update these settings, go to the CQ Felix Admin Console (available at https://&lt;'[server]:[port]'/system/console/configMgr), search for and select Mobile Forms Configuration.
 
 You can configure the cache size or disable the cache using configuration service. You can also enable debugging using Debug Options parameter. More information about debugging forms can be found at [Debugging HTML5 forms](/help/forms/using/debug.md).
 

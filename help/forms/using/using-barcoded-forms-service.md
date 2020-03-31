@@ -128,7 +128,7 @@ In addition, the service can decode any barcode that uses supported symbology if
 
 ## Configure properties of the service &nbsp; {#configureproperties}
 
-You can use the **AEMFD Barcoded Forms Service** in AEM Console to configure properties for this service. The default URL of AEM console is `https://[host]:[port]/system/console/configMgr`.
+You can use the **AEMFD Barcoded Forms Service** in AEM Console to configure properties for this service. The default URL of AEM console is `https://[host]:'port'/system/console/configMgr`.
 
 ## Using the service {#using}
 

@@ -177,7 +177,7 @@ However, sets created using batch set presets, do *not* appear in the user inter
 
 * Open the properties of an individual asset. Properties indicate what sets the selected asset is referenced or a member of. Click the name of the set to see the entire set.
 
-  ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
+  ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
 
 * From a member image of any set. Select the **[!UICONTROL Sets** menu to display the sets that the asset is a member of.
 

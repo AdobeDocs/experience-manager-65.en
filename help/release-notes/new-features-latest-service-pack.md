@@ -36,6 +36,10 @@ The authorization channel between AEM Assets and Brand Portal is changed. Earlie
 The steps to configure AEM Assets with Brand Portal are different depending on your AEM version, and whether you are configuring for the first-time, or upgrading the existing configurations. See [Configure AEM Assets with Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) for details.
 
 
+### Known issues {#known-issues-bp}
+
+* Brand Portal users are not able to publish contribution folder assets to AEM Assets on upgrading to Adobe I/O on AEM 6.5.4.
+
 ### Accessibility enhancements {#accessibility-enhancements}
 
 Experience Manager Assets includes the following accessibility enhancements:
@@ -56,7 +60,7 @@ Experience Manager Assets includes the following accessibility enhancements:
 
 The Generate Printable Output workflow step enables you to integrate a source template file with a data file. This integration enables you to print or save different copies of the template file. The step generates a PCL, PostScript, ZPL, IPL, TPCL, or DPL output. For more information on this feature, see [Forms-centric workflow on OSGi - Step Reference](../forms/using/aem-forms-workflow-step-reference.md).
 
-![Generate Printable Output](assets/generate-print-output-demo.gif)
+![Generate Printable Output](assets/generate-print-output-step.gif)
 
 ### Multicolumn support for adaptive forms and interactive communications in Layout mode {#multi-column-adaptive-forms}
 
@@ -120,7 +124,7 @@ Between December 12, 2019 and March 5, 2020, Adobe released following capabiliti
   * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
 
-  * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
+  * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-2-0.html)
 
 
 * AEM Cloud Manager CLI updates

@@ -106,9 +106,9 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
    ![textbackgroundcolorapplied](assets/textbackgroundcolorapplied.png)
 
-   You can either directly tap a basic color **[A]** present in the Basic Colors palette or tap **Select** after using the slider **[B]** to choose the appropriate shade of the color.
+   You can either directly tap a basic color `**[A]**` present in the Basic Colors palette or tap **Select** after using the slider `**[B]**` to choose the appropriate shade of the color.
 
-   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation **[C]** to create the precise color and then tap Select **[D]** to apply the color to highlight the text.
+   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation `**[C]**` to create the precise color and then tap Select `**[D]**` to apply the color to highlight the text.
 
    ![textbackgroundcolor-1](assets/textbackgroundcolor-1.png)
 

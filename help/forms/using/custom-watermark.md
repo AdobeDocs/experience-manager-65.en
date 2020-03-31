@@ -20,7 +20,7 @@ In the Create Correspondence UI, agent users preview the correspondence in final
 
 To prevent unauthorized use of this data, organizations can impose a watermark on the preview PDF. The default watermark is "PREVIEW", which appears across the PDF.
 
-To enable the watermark in preview PDF, select the **[!UICONTROL Apply Watermark]** During Preview option in **[!UICONTROL Correspondence Management Configurations]** at https://[server]:[port]/system/console/configMgr.
+To enable the watermark in preview PDF, select the **[!UICONTROL Apply Watermark]** During Preview option in **[!UICONTROL Correspondence Management Configurations]** at https://'[server]:[port]'/system/console/configMgr.
 
 ![default-watermark](assets/default-watermark.png)
 
@@ -28,7 +28,7 @@ You can use the following steps to customize the text and appearance of the wate
 
 ## Customize the watermark in PDF preview in Create Correspondence UI {#customizewatermark-}
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. In the apps folder, create a folder named **[!UICONTROL previewwatermark]** with path/structure similar to the previewwatermark folder in the libs folder:
 
     1. Right-click the **previewwatermark** folder at the following path and select **Overlay Node**:

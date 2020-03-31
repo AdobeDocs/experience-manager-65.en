@@ -152,14 +152,14 @@ For more information about using the keytool command, see the keytool.html file 
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
-The Custom Trust keystore file named ‘‘ads-ca.jks’’ is created in the [appserverdomain]/adobe/[server] directory.
+The Custom Trust keystore file named ‘‘ads-ca.jks’’ is created in the [appserverdomain]/adobe/'server' directory.
 
 Configure WebLogic so that it uses the Custom Identity keystore and Custom Trust keystore that you created. Also, disable the WebLogic Hostname Verification feature because the distinguished name used to create the keystore files did not include the name of the computer that hosts WebLogic Server.
 
 ## Configure WebLogic to use SSL {#configure-weblogic-to-use-ssl}
 
 1. Start the WebLogic Server administration console by typing `https://`*[host name]* `:7001/console` in the URL line of a web browser.
-1. Under Environment, in Domain Configurations, select **Servers &gt; [server] &gt; Configuration &gt; General**.
+1. Under Environment, in Domain Configurations, select **Servers &gt; 'server' &gt; Configuration &gt; General**.
 1. Under General, in Configuration, ensure that **Listen Port Enabled** and **SSL Listen Port Enabled** are selected. If not enabled, do the following:
 
     1. Under the Change Center, click **Lock & Edit** to modify selections and values.
@@ -181,7 +181,7 @@ Configure WebLogic so that it uses the Custom Identity keystore and Custom Trust
 
 1. Under Trust, specify the following values:
 
-   **Custom Trust Keystore File Name**: `*[appserverdomain]*/adobe/*[server]*/ads-ca.jks`, where `*[appserverdomain]*` is the actual path
+   **Custom Trust Keystore File Name**: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, where `*[appserverdomain]*` is the actual path
 
    **Custom Trust Keystore Type**: JKS
 
