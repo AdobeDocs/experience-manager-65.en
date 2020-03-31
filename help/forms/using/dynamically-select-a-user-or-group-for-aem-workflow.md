@@ -152,8 +152,8 @@ You require [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-form
        <dependencies>
            <dependency>
                <groupId>com.adobe.aemfd</groupId>
-               <artifactId>aemfd-client-sdk-test</artifactId>
-               <version>4.0.70</version>
+               <artifactId>aemfd-client-sdk</artifactId>
+               <version>6.0.138</version>
            </dependency>
            <dependency>
                <groupId>com.adobe.granite</groupId>
