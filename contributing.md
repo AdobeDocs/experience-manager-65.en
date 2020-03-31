@@ -1,6 +1,6 @@
-# Contributing to Adobe Experience Manager Cloud Service Documentation
+# Contributing to Adobe Experience Manager Documentation
 
-Thank you for choosing to contribute to Adobe Experience Manager Cloud Service documentation! We welcome content contributions from our entire reader community as well as from fellow Adobe employees.
+Thank you for choosing to contribute to Adobe Experience Manager documentation! We welcome content contributions from our entire reader community as well as from fellow Adobe employees.
 
 This file describes how you can contribute as well as points out the guidelines to follow when making your contributions.
 
