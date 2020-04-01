@@ -1312,6 +1312,7 @@ To illustrate these steps, the following example defines a report that lists all
    >N:data [nt:unstructured]
    >  P:clientFilter [String] = "function(v) { return v; }"
    >```
+   >
    >Where the function simply returns the value it receives.
 
 1. Define your report design. For example `osgireport[cq:Page]` under `/etc/designs/reports`.
@@ -1384,6 +1385,7 @@ An instance of your new report can now be created:
    > N:definitions [nt:unstructured]
    > P:groupable [Boolean] = true
    >```
+   >
 
 ## Configuring the Report Framework Services {#configuring-the-report-framework-services}
 
