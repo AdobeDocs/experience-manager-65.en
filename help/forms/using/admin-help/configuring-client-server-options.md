@@ -958,8 +958,8 @@ By default, you can specify a maximum of five elements in a watermark. Also, the
 
 Many document security users do not have access to external links such as **www.adobe.com** while they are using the Right Management user interfaces:
 
-* `https://[host]:[port]/adminui`
-* `https://[host]:[port]/edc`.
+* `https://[host]:'port'/adminui`
+* `https://[host]:'port'/edc`.
 
 The following changes to the config.xml disables all external links from the Right Management user interfaces.
 

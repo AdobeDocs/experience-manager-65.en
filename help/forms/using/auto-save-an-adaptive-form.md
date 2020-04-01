@@ -51,7 +51,7 @@ For an adaptive form, the auto save option is not enabled out of the box. You ca
    >
    >For auto save option to work for anonymous users, ensure that you configure the Forms Common Configuration Service to allow all users to preview, verify, and sign forms.
    >
-   >To configure the service, go to AEM Web Console configuration at `https://[server]:[host]/system/console/configMgr` and edit the **[!UICONTROL Forms Common Configuration Service]** to choose the **[!UICONTROL All Users]** option in the **[!UICONTROL Allow]** field, and save the configuration.
+   >To configure the service, go to AEM Web Console configuration at `https://server:port/system/console/configMgr` and edit the **[!UICONTROL Forms Common Configuration Service]** to choose the **[!UICONTROL All Users]** option in the **[!UICONTROL Allow]** field, and save the configuration.
 
 ## Implement a custom strategy to enable autosave for adaptive forms {#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms}
 

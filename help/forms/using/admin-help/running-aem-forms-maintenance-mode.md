@@ -24,7 +24,7 @@ Avoid invoking any processes while the server is in maintenance mode. This is wh
 
 1. In a web browser, enter:
 
-   `https://`*[hostname]* `:`*[port]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[administrator username]* `&password=`*[password]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=[administrator username]&password=[password]`
 
    A "now paused" message is displayed in the browser window.
 
@@ -36,7 +36,7 @@ Avoid invoking any processes while the server is in maintenance mode. This is wh
 
 1. In a web browser, enter:
 
-   `https://`*[hostname]:[port]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[administrator username]* `&password=`*[password]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=[administrator username]&password=[password]`
 
    The status is displayed in the browser window. A status of "true" indicates that the server is running in maintenance mode, and "false" indicates that the server is not in maintenance mode.
 
@@ -44,7 +44,7 @@ Avoid invoking any processes while the server is in maintenance mode. This is wh
 
 1. In a web browser, enter:
 
-   `https://`*[hostname]:[port]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[administrator username]* `&password=`*[password]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=[administrator username]&password=[password]`
 
    A "now running" message is displayed in the browser window.
 

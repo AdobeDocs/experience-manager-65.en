@@ -15,7 +15,8 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 >[!NOTE]
 >
->Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Marketing Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
+>* Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Marketing Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
+>* Experience Manager does not allow using `subassets` word as the name of a folder. It is a keyword reserved for node that contain subassets for compound assets.
 
 1. Navigate to the place in your digital assets folder where you want to create a new folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
 1. In the **[!UICONTROL Title]** field, provide a folder name. By default, DAM uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
@@ -328,6 +329,24 @@ To preview an asset, follow these steps.
 
    ![chlimage_1-216](assets/chlimage_1-11.png)
 
+**Preview assets using keyboard keys only**
+
+To preview an asset using keyboard, follow these steps:
+
+1. From the Assets user interface, navigate to the desired asset using `Tab` and arrow keys.
+
+1. Press `Enter` key on the desired asset to open it. You can zoom into assets in preview mode.
+
+1. To zoom into the asset:
+   1. Use `Tab` key to move focus to zoom-in icon.
+   1. Use `Enter` key to zoom into the image.
+
+   To zoom out use `Tab` key to move focus to the the zoom-out icon and press `Enter`.
+
+1. Use `Shift` + `Tab` keys to move the focus back on the image.
+
+1. Use arrow keys to move around the zoomed image.
+
 See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 ## Edit properties and metadata {#editing-properties}
@@ -346,19 +365,21 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 1. To schedule a particular date/time for the activation of the asset, use the date picker beside the **[!UICONTROL On Time]** field.
 
-   ![chlimage_1-217](assets/chlimage_1-12.png)
+   ![use date time picker or keyboard keys in On Time field to add date and time for asset activation](assets/schedule-activation.png)
+
+   *Figure: Schedule asset activation*
 
 1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API.
 
-   ![chlimage_1-218](assets/chlimage_1-13.png)
+   ![use date time picker or keyboard keys in Off Time field to add date and time for asset de-activation](assets/schedule-deactivation.png)
 
-1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in AEM.
+   *Figure: Schedule asset deactivation*
 
-   YouTube requires Tags to publish and have a link to YouTube (if a suitable link can be found).
+1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in AEM. YouTube requires tags to publish. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >
-   >To create tags, you need write permission for `/content/cq:tags/default` in the CRX repository.
+   >To create tags, you need write permission at `/content/cq:tags/default` in the CRX repository.
 
 1. To provide a rating to the asset, tap/click the **[!UICONTROL Advanced]** tab and then tap/click the star at the appropriate position to assign the desired rating.
 
@@ -385,7 +406,7 @@ When you copy an asset or a folder, the entire asset or the folder is copied, al
 
 A few attributes that are unique to a particular copy of an asset are not carried forward. Some examples are:
 
-* Relative path, asset ID, creation date and time, and versions and version history. Some of these properties are indicated by the properties `dam:relativePath`, `jcr:uuid`, `jcr:created`, and `cq:name`.
+* Asset ID, creation date and time, and versions and version history. Some of these properties are indicated by the properties `jcr:uuid`, `jcr:created`, and `cq:name`.
 
 * Creation time and referenced paths are unique for each asset and each of its rendition.
 
@@ -547,8 +568,6 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap/click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. If the asset references other assets, its references are listed in the wizard. Only references that are either unpublished or modified since they were last published/unpublished are displayed. Choose the references you want to publish.
 
-   ![chlimage_1-225](assets/chlimage_1-21.png)
-
    >[!NOTE]
    >
    >Empty folders, that are part of a folder that you've published, are not published.
@@ -632,7 +651,7 @@ In card view, the **[!UICONTROL Select]** option displays as a quick action.
 
 ![select_quick_action](assets/select_quick_action.png)
 
-When browsing a folder or a collection in the Assets user interface in a browser, you can select all the assets by using the [!UICONTROL Select All] option from the upper-right corner.
+When browsing a folder or a collection in the Assets user interface in a browser, you can select all the displayed or loaded assets by using the [!UICONTROL Select All] option from the upper-right corner. If you don't scroll below, only 100 assets are loaded in card view and 200 are loaded in list view. Select All option selects only these many assets.
 
 For more information, see [view and selecting your resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
@@ -696,6 +715,7 @@ You can also add image maps using the image editor. For details, see [Adding Ima
 The timeline lets you view various events for a selected item, such as active workflows for an asset, comments/annotations, activity logs, and versions.
 
 ![Sort timeline entries for an asset](assets/sort_timeline.gif)
+
 *Figure: Sort timeline entries for an asset*
 
 >[!NOTE]

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 ---
 
-# Develop Sandbox Application {#develop-sandbox-application}
+# Develop Sandbox Application  {#develop-sandbox-application}
 
 In this section, now that the template has been setup in the [initial application](initial-app.md) section, and the initial pages established in the [initial content](initial-content.md) section, the application can be developed using foundation scripts including the ability to enable authoring with Communities components. At the end of this section, the website will be functional.
 
@@ -26,9 +26,9 @@ The first step is to add a resource super type property to the `/apps/an-scf-san
 Using CRXDE Lite:
 
 <!--Resolve steps below-->
-    * Name: `sling:resourceSuperType`
-    * Type: `String`
-    * Value: `foundation/components/page`
+    Name: `sling:resourceSuperType`
+    Type: `String`
+    Value: `foundation/components/page`
 
 1. Click the green **[!UICONTROL [+] Add]**
 1. Click **[!UICONTROL Save All]**
@@ -82,9 +82,9 @@ Using CRXDE Lite:
 
    To setup for authoring, overlay `body.jsp` with a local script and include a paragraph system (parsys) in the body:
 
-    1. navigate to `/apps/an-scf-sandbox/components`
-    1. select the `playpage`node
-    1. right click and select `Create > Create File...`
+    1. Navigate to `/apps/an-scf-sandbox/components`
+    1. Select the `playpage`node
+    1. Right-click and select `Create > Create File...`
 
         * Name: **body.jsp**
 
@@ -172,4 +172,4 @@ Change the browser URL to the root page: [http://localhost:4502/editor.html/cont
 
 Once the site is published, browsing to the root page on a publish instance will redirect to the english page.
 
-The last step before playing with the communities SCF components is to add a Client Library Folder (clientlibs) .... **[⇒](add-clientlibs.md)**
+The last step before playing with the communities SCF components is to add a Client Library Folder (clientlibs) .... [Add Clienlibs](add-clientlibs.md)

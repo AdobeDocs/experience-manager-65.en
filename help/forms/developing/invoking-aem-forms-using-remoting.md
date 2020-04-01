@@ -966,7 +966,7 @@ The ActionScript class's fields match the fields that belong to the AEM Forms co
 
 >[!NOTE]
 >
->A good way to determine the field names that belong to a Forms complex type is to view a service's WSDL in a web browser. A WSDL specifies a service's complex types and the corresponding data members. The following WSDL is used for the Customer service: *https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.*
+>A good way to determine the field names that belong to a Forms complex type is to view a service's WSDL in a web browser. A WSDL specifies a service's complex types and the corresponding data members. The following WSDL is used for the Customer service: `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
 
 The Customer ActionScript class belongs to a package named customer. It is recommended that you place all ActionScript classes that map to complex AEM Forms data types in their own package. Create a folder in the Flex project's src folder and place the ActionScript file in the folder, as shown in the following illustration.
 

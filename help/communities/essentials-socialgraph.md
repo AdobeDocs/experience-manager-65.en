@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 ---
 
-# Social Graph Essentials {#social-graph-essentials}
+# Social Graph Essentials  {#social-graph-essentials}
 
 The ability for a Community member to follow [activities](essentials-activities.md) as well as be followed is established through two components:
 
-The `follow`component must be associated with another resource, and this association is already established for existing Communities members and features in a [community site](overview.md#communitiessites).
+The `following` component must be associated with another resource, and this association is already established for existing Communities members and features in a [community site](overview.md#communitiessites).
 
-The `following`component lists the members that are either following the current member or are being followed by the current member. This social graph of the relationships between members is included in the user profile established for a community site.
+The `following` component lists the members that are either following the current member or are being followed by the current member. This social graph of the relationships between members is included in the user profile established for a community site.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -57,8 +57,8 @@ The `following`component lists the members that are either following the current
      <li>Type: Boolean</li>
      <li>Value:<br />
       <ul>
-       <li><i>true </i>- the <code>following</code> component will list the members who the currently signed-in member <code>follows</code></li>
-       <li><i>false </i>- the <code>following</code> component will list the members who <code>follow </code>the currently signed-in member</li>
+       <li><i>True </i>- The <code>following</code> component will list the members who the currently signed-in member <code>follows</code></li>
+       <li><i>False </i>- The <code>following</code> component will list the members who <code>follow </code>the currently signed-in member</li>
       </ul> </li>
     </ul> <p>Defaults to <i>true</i> if the property is missing. Currently, it is not possible to set this property using the edit dialog in author mode. The property must be added to an instance of the <code>following </code>node using <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
@@ -67,11 +67,11 @@ The `following`component lists the members that are either following the current
 
 ### Follow {#follow}
 
-|  **resourceType** |social/socialgraph/components/hbs/following |
+|  **resourceType** | `social/socialgraph/components/hbs/following` |
 |---|---|
 |  [**includable**](scf.md#add-or-include-a-communities-component) |No |
-|  **templates** | /libs/social/socialgraph/components/hbs/following/following.hbs |
-|  **css** | /libs/social/socialgraph/components/hbs/following/clientlibs/following.css |
+|  **templates** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
+|  **css** | `/libs/social/socialgraph/components/hbs/following/clientlibs/following.css` |
 
 * [Client-side Customizations](client-customize.md)
 

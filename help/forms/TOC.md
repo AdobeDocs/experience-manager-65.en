@@ -58,7 +58,7 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Install and configure Automated Forms Conversion service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
   + Install AEM Forms on JEE {#jee-installation}
     + [Supported platforms for AEM forms on JEE](using/aem-forms-jee-supported-platforms.md)
-    + [Install and deploy AEM Forms on JEE using JBoss turnkey](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
+    + [Install and deploy AEM Forms on JEE using JBoss turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
     + [Installing and configuring AEM Forms Document Security server](using/installing-and-configuring-the-document-security-server.md)
     + [Prepare to install AEM Forms single server](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
     + [Install and deploying AEM Forms on JEE for JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
@@ -298,6 +298,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [Correspondence Management Overview](using/cm-overview.md)
   + [Layout Design](using/layout-design-details.md)
   + [Data Dictionary](using/data-dictionary.md)
+  + [Document Fragments](using/document-fragments.md)
   + [Create Letter](using/create-letter.md)
   + [Create Correspondence](using/create-correspondence.md)
   + [Remote functions in Expression Builder](using/expression-builder.md)

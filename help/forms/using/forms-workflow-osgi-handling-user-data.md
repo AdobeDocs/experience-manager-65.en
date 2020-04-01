@@ -76,7 +76,7 @@ However, you cannot identify or the results may be ambiguous when identifying wo
 
 To identify and access user data stored for a workflow instance, perform the following steps:
 
-1. On AEM author instance, go to `https://[server]:[port]/crx/de` and navigate to **[!UICONTROL Tools > Query]**.
+1. On AEM author instance, go to `https://'[server]:[port]'/crx/de` and navigate to **[!UICONTROL Tools > Query]**.
 
    Select **[!UICONTROL SQL2]** from the **[!UICONTROL Type]** drop-down.
 
@@ -131,7 +131,7 @@ You must be an AEM administrator to delete user data from workflow instances by 
 
 1. Perform this step for workflow instances in **RUNNING**, **SUSPENDED**, or **STALE** status:
 
-    1. Go to `https://[server]:[port]/aem/start.html` and log in with administrator credentials.
+    1. Go to `https://'[server]:[port]'/aem/start.html` and log in with administrator credentials.
     1. Navigate to **[!UICONTROL Tools > Workflow> Instances]**.
     1. Select relevant workflow instances for the user and tap **[!UICONTROL Terminate]** to terminate running instances.
 

@@ -364,7 +364,7 @@ You can use JAX-WS to convert a Forms service WSDL to Java proxy classes. These 
 1. Install JDK 1.6 or later.
 
     * Add the JDK bin directory to your class path.
-    * Add the JRE bin directory to your class path. This bin is located in the [*JDK_INSTALL_LOCATION*]/jre directory.
+    * Add the JRE bin directory to your class path. This bin is located in the `[JDK_INSTALL_LOCATION]/jre` directory.
     * Set the `JAVA_HOME` environment variable to the directory where you installed the JDK.
 
    JDK 1.6 includes the wsimport program used in the build.xml file. JDK 1.5 does not include that program.
@@ -557,7 +557,7 @@ You can generate Axis Java library files by performing the following steps:
     * xbean.jar
     * xercesImpl.jar
 
-   These JAR files are in the *[install directory]*/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty directory.
+   These JAR files are in the `[install directory]/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty` directory.
 
 **See also**
 

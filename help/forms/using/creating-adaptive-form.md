@@ -16,7 +16,7 @@ discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 
 Follow these steps to create an adaptive form.
 
-1. Access AEM Forms Author instance at `https://[server]:[port]/<custom-context-if-any>.`
+1. Access AEM Forms Author instance at `https://'[server]:[port]'/<custom-context-if-any>.`
 
 1. Enter your credentials on the AEM login page.
 
@@ -199,4 +199,4 @@ By default, the auto save option is not enabled. You can enable the auto save op
    >
    >For auto save option to work for anonymous users, ensure that you configure the Forms Common Configuration Service to allow all users to preview, verify, and sign forms.
    >
-   >To configure the service, go to AEM Web Console configuration at `https://[server]:[host]/system/console/configMgr` and edit the **[!UICONTROL Forms Common Configuration Service]** to choose the **[!UICONTROL All Users]** option in the **[!UICONTROL Allow]** field, and save the configuration.
+   >To configure the service, go to AEM Web Console configuration at `https://'[server]:[port]'system/console/configMgr` and edit the **[!UICONTROL Forms Common Configuration Service]** to choose the **[!UICONTROL All Users]** option in the **[!UICONTROL Allow]** field, and save the configuration.

@@ -76,6 +76,20 @@ Execute the following steps if you want to resize the entire panel instead of in
 1. Drag-and drop the blue dots to define the position of the panel in the responsive grid.
    You can repeat steps 1 and 2 and select ![Select Parent](assets/float_to_new_line_icon.svg) to shift the resized panel to the next line.
 
+## Define multi-column layout for a panel
+
+Execute the following steps to define the number of columns for a panel:
+
+1. In **[!UICONTROL Edit]** mode, tap the panel, select ![Configure](assets/configure_icon.png), and select **[!UICONTROL Responsive - everything on the page without navigation]** option from the **[!UICONTROL Panel Layout]** drop-down list.
+
+1. Tap ![Save](assets/save_icon.svg) to save the properties.
+
+1. In the **[!UICONTROL Layout]** mode, tap any of the components in the panel, select ![Select Parent](assets/select_parent_icon.svg), and select the panel.
+
+1. Tap ![multi-column](assets/multi-column.svg) and select the number of columns from the drop-down list. The number of columns can range from 1 to 12. The panel gets divided into a multi-column layout.
+
+![multi column in layout mode](assets/multi-column-layout.png)
+
 ## Enable the new responsive grid for old responsive layouts {#enableresponsivegrid}
 
 Enable the new responsive grid for forms that you create using AEM Forms 6.4 or lower version to resize components.

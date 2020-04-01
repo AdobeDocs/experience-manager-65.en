@@ -222,7 +222,7 @@ This configuration extend the default to include grouping children under a child
 
 See the resources below to learn about additional topics in Content Services:
 
-* [Developing Models](/help/mobile/models-in-repository.md)
+* [Developing Models](/help/mobile/administer-mobile-apps.md)
 * [Authoring Content Services](/help/mobile/develop-content-as-a-service.md)
 * [Administering Content Services](/help/mobile/developing-content-services.md)
 

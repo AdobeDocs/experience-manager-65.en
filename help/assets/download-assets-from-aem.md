@@ -17,6 +17,7 @@ To download assets, navigate to an asset, select the asset, and tap **[!UICONTRO
 The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets cannot be downloaded.
 
 ![Available options when downloading assets from AEM Assets](assets/asset_download_dialog.png)
+
 *Figure: Available options when downloading assets from AEM Assets*
 
 The following are the Export/Download options. Dynamic renditions are unique to Dynamic Media and let you generate renditions on-the-fly in addition to the asset you selected - that option is only available if you have Dynamic Media enabled.

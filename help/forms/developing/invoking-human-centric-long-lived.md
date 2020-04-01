@@ -428,7 +428,7 @@ The following illustration shows the Eclipse project’s content, which is packa
 
 ### Deploy the WAR file to the J2EE application server hosting AEM Forms {#deploy-the-war-file-to-the-j2ee-application-server-hosting-aem-forms}
 
-Deploy the WAR file to the J2EE application server on which AEM Forms is deployed. To deploy the WAR file to the J2EE application server, copy the WAR file from the export path to *[AEM Forms Install]*\Adobe\Adobe Experience Manager Forms\jboss\server\lc_turnkey\deploy.
+Deploy the WAR file to the J2EE application server on which AEM Forms is deployed. To deploy the WAR file to the J2EE application server, copy the WAR file from the export path to `[AEM Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\lc_turnkey\deploy`.
 
 >[!NOTE]
 >

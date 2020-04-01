@@ -27,7 +27,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    ![Dialog with the Link Share](assets/Link-sharing-dialog-box.png)
 
-   *Figure:Dialog with the Link Share*
+   *Figure: Dialog with the Link Share*
 
    Alternatively, proceed to perform steps 3-7 of this procedure to add email recipients, configure the expiration time for the link, and send it from the dialog.
 

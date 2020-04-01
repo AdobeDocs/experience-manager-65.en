@@ -28,7 +28,7 @@ When an adaptive form is rendered, it identifies the requested locale by looking
 
 * Request parameter `afAcceptLang`
   To override the browser locale of users, you can pass the `afAcceptLang` request parameter to force the locale. For example, the following URL will force to render the form in Japanese locale:
-  `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+  `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * The browser locale set for the user, which is specified in the request using the `Accept-Language` header.
 
@@ -40,7 +40,7 @@ If a client library for the requested locale doesn't exist, it checks for a clie
 
 ## Add localization support for non-supported locales {#add-localization-support-for-non-supported-locales}
 
-AEM Forms currently supports localization of adaptive forms content in English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-br), Chinese- (zh-tn), Chinese-Taiwan (zh-tw), and Korean (ko-kr) locales.
+AEM Forms currently supports localization of adaptive forms content in English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales.
 
 To add support for a new locale at adaptive forms runtime:
 
@@ -54,7 +54,7 @@ To add support for a new locale at adaptive forms runtime:
 
 ### Add a locale to the Guide Localization service {#add-a-locale-to-the-guide-localization-service-br}
 
-1. Go to `https://[server]:[port]/system/console/configMgr`.
+1. Go to `https://'[server]:[port]'/system/console/configMgr`.
 1. Click to edit the **Guide Localization Service** component.
 1. Add the locale you want to add to the list of supported locales.
 
@@ -91,16 +91,16 @@ LogMessages.js
 
 ### Add locale support for the dictionary {#add-locale-support-for-the-dictionary-br}
 
-Perform this step only if the `<locale>` you are adding is not among `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw`, `ja`, `ko-kr`.
+Perform this step only if the `<locale>` you are adding is not among `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
 1. Create an `nt:unstructured` node `languages` under `etc`, if not present already.
 
 1. Add a multi-valued string property `languages` to the node, if not present already.
-1. Add the `<locale>` default locale values `de`, `es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw`, `ja`, `ko-kr`, if not present already.
+1. Add the `<locale>` default locale values `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, if not present already.
 
 1. Add the `<locale>` to the values of the `languages` property of `/etc/languages`.
 
-The `<locale>` will appear at `https://[server]:[port]/libs/cq/i18n/translator.html`.
+The `<locale>` will appear at `https://'[server]:[port]'/libs/cq/i18n/translator.html`.
 
 ### Restart the server {#restart-the-server}
 

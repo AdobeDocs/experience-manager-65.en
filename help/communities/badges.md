@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Badges Console{#badges-console}
+# Badges Console {#badges-console}
 
 ## About Badges {#about-badges}
 
@@ -23,15 +23,15 @@ The Communities Badges console provides the ability to add custom badges which c
 
 Currently, badges a community member earns or is assigned will appear along with their name and avatar in the following locations :
 
-* profiles
-* [forums](/help/communities/forum.md)
+* Profiles
+* [Forums](/help/communities/forum.md)
 * [QnA](/help/communities/working-with-qna.md)
-* [leaderboards](/help/communities/enabling-leaderboard.md)
-* [ideation](/help/communities/ideation-feature.md)
+* [Leaderboards](/help/communities/enabling-leaderboard.md)
+* [Ideation](/help/communities/ideation-feature.md)
 
 In the author environment, to reach the Badges console
 
-* from global navigation : **Tools, Communities, Badges**
+* From global navigation, navigate to **[UIControl Tools > Communities > Badges]**
 
 This console displays the badges currently available and from which new badges can be added.
 
@@ -46,16 +46,20 @@ If the publish environment is a farm of publishers, it is necessary to configure
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
 * **Upload Image**
-  (*required*) A badge image with a recommended size of 32 x 32 pixels at 72dpi in either the JPEG or PNG format.
+  
+  (*Required*) A badge image with a recommended size of 32 x 32 pixels at 72dpi in either the JPEG or PNG format.
 
 * **Name**
-  (*required*) The badge name. It is the default `Display Name` as well as the repository node name. If the `Name` is not a valid repository node name, it will be modified.
+  
+  (*Required*) The badge name. It is the default `Display Name` as well as the repository node name. If the `Name` is not a valid repository node name, it will be modified.
 
 * **Display Name**
-  (*optional*) The name to display for the badge in the UI. Default is the unaltered text entered for the `Name`.
+  
+  (*Optional*) The name to display for the badge in the UI. Default is the unaltered text entered for the `Name`.
 
 * **Description**
-  (*optional*) A description for the badge.
+  
+  (*Optional*) A description for the badge.
 
 ## Additional Information {#additional-information}
 

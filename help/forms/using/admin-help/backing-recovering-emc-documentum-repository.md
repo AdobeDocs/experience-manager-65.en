@@ -185,22 +185,22 @@ This section describes installing and configuring the EMC NetWorker software on 
 
 1. Set the configuration file password as follows:
 
-    * Open a command prompt, and change to *[NetWorker_root]*\Legato\nsr\bin.
+    * Open a command prompt, and change to `[NetWorker_root]\Legato\nsr\bin`.
     * Run the following command: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file&gt; -P &lt;password&gt;*
 
 1. Create the executable batch (.bat) files that are used to back up the database. (See the NetWorker documentation.) Set the details in the batch files according to your installation.
 
     * Full database backup (nsrnmddbf.bat):
 
-      *[NetWorker_database_module_root]* `-s`*<NetWorker_Server_Name>* `-U`*[username]* `-P`*[password]* `-l full`*&lt;database_name&gt;*
+      `NetWorker_database_module_root` `-s`*<NetWorker_Server_Name>* `-U``[username]` `-P`*[password]* `-l full`*&lt;database_name&gt;*
 
     * Incremental database backup (nsrnmddbi.bat):
 
-      *[NetWorker_database_module_root]* `-s`*<NetWorker_Server_Name>* `-U`*[username]* `-P`*[password]* `-l 1 -R`*&lt;database_name&gt;*
+      `[NetWorker_database_module_root]` `-s`*<NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name&gt;*
 
     * Database log backup (nsrnmddbl.bat):
 
-      *[NetWorker_database_module_root]* `-s`*<NetWorker_Server_Name>* `-U`*[username]* `-P`*[password]* `-l incr -R`*&lt;database_name&gt;*
+      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name&gt;*
 
       Where:
 
@@ -236,7 +236,7 @@ Perform the following tasks after you complete a full backup of your AEM forms d
 >
 >The command scripts require the full path to the nsrnmd_win.cfg file that you created in [Preparing the EMC Document Content Server for backup and recovery](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
-1. Open a command prompt, and change to *[NetWorker_root]*\Legato\nsr\bin.
+1. Open a command prompt, and change to `[NetWorker_root]\Legato\nsr\bin`.
 1. Run the following command:
 
    ```as3
@@ -262,4 +262,3 @@ Perform the following tasks before you restore your AEM forms data. (See [Recove
    ```as3
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA
    ```
-

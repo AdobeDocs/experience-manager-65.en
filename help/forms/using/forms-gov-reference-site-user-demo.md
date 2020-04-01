@@ -77,7 +77,7 @@ The following groups are also included:
    *https://&lt;aemserver&gt;:&lt;port&gt;/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
 1. **Adobe We.Gov Site**: *https://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html*
-1. **Adobe Inbox**: Located top menu bar [Bell icon] in AEM backend.
+1. **Adobe Inbox**: Located top menu bar [Bell icon](assets/bell.svg) in AEM backend.
 
    *https://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
 

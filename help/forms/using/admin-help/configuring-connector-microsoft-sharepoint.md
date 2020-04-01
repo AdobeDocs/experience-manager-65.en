@@ -18,7 +18,7 @@ Connector for Microsoft SharePoint enables communication between AEM forms and M
 1. In administration console, click Services &gt; Connector for Microsoft SharePoint.
 1. Specify the following settings for your SharePoint Server:
 
-   **SharePoint Server Host Name:** The host name port number of the web application on the SharePoint server, in the format `[hostname]:[port]`.
+   **SharePoint Server Host Name:** The host name port number of the web application on the SharePoint server, in the format `[hostname]:'port'`.
 
    **User Name:** The user account used to connect to the SharePoint server.
 

@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# ASRP - Adobe Storage Resource Provider{#asrp-adobe-storage-resource-provider}
+# ASRP - Adobe Storage Resource Provider {#asrp-adobe-storage-resource-provider}
 
 ## About ASRP {#about-asrp}
 
@@ -42,26 +42,28 @@ The [Storage Configuration console](/help/communities/srp-config.md) allows for 
 
 **On AEM Author instance:**
 
-* From global navigation (Tools, Communities, Storage Configuration), select** Adobe Storage Resource Provider (ASRP).**
+* From global navigation, navigate to **[UIControl Tools > Communities > Storage Configuration]** and select **[UIControl Adobe Storage Resource Provider (ASRP)]**.
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
 The following information comes from the provisioning process:
 
-* **Data Center URL. **Pull-down to select the production data center identified by your account representative.
-* **Default Report Suite. **Enter the name of the default report suite.
-* **Consumer Key**. Enter the consumer key.
-* **Secret. **Enter the secret.
-* Select **Submit.**
+* **Data Center URL**: Pull-down to select the production data center identified by your account representative.
+* **Default Report Suite**: Enter the name of the default report suite.
+* **Consumer Key**: Enter the consumer key.
+* **Secret**: Enter the secret.
+* Select **Submit**.
 
 Prepare the publish instances:
 
-* [replicate the crypto key](#replicate-the-crypto-key)
-* [replicate the configuration](#publishing-the-configuration)
+* [Replicate the crypto key](#replicate-the-crypto-key)
+* [Replicate the configuration](#publishing-the-configuration)
 
 After submitting the configuration, test the connection:
 
-* Select **Test Config**. For each author and publish instance, test the connection to the data center from the Storage Configuration console.
+* Select **Test Config**. 
+  
+  For each author and publish instance, test the connection to the data center from the Storage Configuration console.
 
 * Ensure that the site URLs for profile data are routable from the Data Center by [externalizing links](#externalize-links).
 
@@ -89,20 +91,19 @@ To make the identical configuration available in the publish environment:
 
 On AEM Author instance:
 
-* Navigate from main menu to `Tools > Operations > Replication.`
-* Select **Activate Tree.**
-* **Start Path:
-  **browse to /etc/socialconfig/srpc/
-* Deselect **Only Modified.**
-* Select **Activate.**
+* Navigate from main menu to **[UIControl Tools > Operations > Replication]**.
+* Select **Activate Tree**
+* **Start Path**: browse to `/etc/socialconfig/srpc/`
+* Deselect **Only Modified**
+* Select **Activate**
 
 ## Upgrading from AEM 6.0 {#upgrading-from-aem}
 
 >[!CAUTION]
 >
->If you enable ASRP on a published community site, any UGC already stored in [JCR](/help/communities/jsrp.md)is no longer visible, as there is no synchronization of data between on-premise storage and cloud storage.
+>If you enable ASRP on a published community site, any UGC already stored in [JCR](/help/communities/jsrp.md) is no longer visible, as there is no synchronization of data between on-premise storage and cloud storage.
 
-**`AEM Communities Extension`**was previously introduced in AEM 6.0 social communities as a cloud service. As of AEM 6.1 Communities, no cloud configuration is necessary, simply select ASRP from the [storage configuration console](/help/communities/srp-config.md).
+**`AEM Communities Extension`** was previously introduced in AEM 6.0 social communities as a cloud service. As of AEM 6.1 Communities, no cloud configuration is necessary, simply select ASRP from the [storage configuration console](/help/communities/srp-config.md).
 
 Due to the new storage structure, it is necessary to follow the [upgrade](/help/communities/upgrade.md#adobe-cloud-storage) instructions when upgrading from social communities to Communities.
 
@@ -139,6 +140,6 @@ On all author and publish AEM instances, revisit the Storage Configuration conso
 
 In JCR, if [/etc/socialconfig](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
-* does not contain an [srpc](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) node, it means that the storage provider is JSRP.
+* Does not contain an [srpc](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) node, it means that the storage provider is JSRP.
 * If the srpc node exists and contains node [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), the defaultconfiguration's properties define ASRP to be the default provider.
 

@@ -70,6 +70,7 @@ user-guide-title: AEM 6.5 Classic UI Authoring User Guide
     + [Working with Adobe Campaign](classic-personalization-ac.md)
     + [Adobe Campaign Components](classic-personalization-ac-components.md)
     + [Targeting your Adobe Campaign](classic-personalization-ac-target.md)
+    + [Creating Adobe Campaign Forms in AEM](classic-personalization-ac-forms.md)
 + Assets Authoring in Classic UI {#assets}
     + [Working with Assets](classicui-assets.md)
     + [Delivering Dynamic Media Assets](dynamic-media-assets-delivering.md)
