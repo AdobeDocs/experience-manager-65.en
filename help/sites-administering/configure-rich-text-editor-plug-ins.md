@@ -280,16 +280,17 @@ Then, specify the location(s) of the style sheet(s) you want to reference:
 >
 >The Rich Text Editor uses a container DOM element with an ID of `CQrte` which may be used to provide different styles for viewing and editing:
 >
->```>
+>```
 >#CQ td {
 > // defines the style for viewing
 > }
->```>
->```>
+>```
+>
+>```
 >#CQrte td {
 > // defines the style for editing
 > }
->```>
+>```
 
 ### Specify the available Styles in the pop-up list {#stylesindropdown}
 
