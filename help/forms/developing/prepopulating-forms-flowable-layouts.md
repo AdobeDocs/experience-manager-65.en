@@ -205,7 +205,7 @@ Include necessary files into your development project. If you are creating a cli
 
 **Create an in-memory XML data source**
 
-You can use `org.w3c.dom` classes to create an in-memory XML data source to prepopulate a form with a flowable layout. You must place data into an XML data source that conforms to the form. For information about the relationship between a form with a flowable layout and the XML data source, see [Understanding data subgroups](/help/forms/developing/rendering-forms-rendering-forms prepopulating-forms-flowable-layouts-prepopulating prepopulating-forms-flowable-layouts-prepopulating.md#understanding-data-subgroups).
+You can use `org.w3c.dom` classes to create an in-memory XML data source to prepopulate a form with a flowable layout. You must place data into an XML data source that conforms to the form. For information about the relationship between a form with a flowable layout and the XML data source, see [Understanding data subgroups](#understanding-data-subgroups).
 
 **Convert the XML data source**
 
