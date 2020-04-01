@@ -84,7 +84,7 @@ The following tables describe the content properties and nodes.
 ### Common Nodes {#common-nodes}
 
 |Node Name|Type|Defaults or Expected Values|Description|
---- |--- |--- |--- |
+|--- |--- |--- |--- |
 |image|jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image|||
 
 ### Entities {#entities}
