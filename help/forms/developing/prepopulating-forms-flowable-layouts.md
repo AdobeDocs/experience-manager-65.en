@@ -32,7 +32,7 @@ An XML element must exist for every form field that you want to prepopulate. The
 
 When you prepopulate a form that already contains data, you must specify the data that is already displayed within the XML data source. Assume that a form containing 10 fields has data in four fields. Next, assume that you want to prepopulate the remaining six fields. In this situation, you must specify 10 XML elements in the XML data source that is used to prepopulate the form. If you specify only six elements, the original four fields are empty.
 
-For example, you can prepopulate a form such as the sample confirmation form. (See “Confirmation form” in [Rendering Interactive PDF Forms](/help/forms/developing/rendering-forms-rendering-forms rendering-interactive-pdf-forms-rendering.md#rendering-interactive-pdf-forms).)
+For example, you can prepopulate a form such as the sample confirmation form. (See “Confirmation form” in [Rendering Interactive PDF Forms](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
 To prepopulate the sample confirmation form, you have to create an XML data source that contains three XML elements that match the three fields in the form. This form contains the following three fields: `FirstName`, `LastName`, and `Amount`. The first step is to create an XML data source that contains XML elements that match the fields located in the form design. The next step is to assign data values to the XML elements, as shown in the following XML code.
 
@@ -205,7 +205,7 @@ Include necessary files into your development project. If you are creating a cli
 
 **Create an in-memory XML data source**
 
-You can use `org.w3c.dom` classes to create an in-memory XML data source to prepopulate a form with a flowable layout. You must place data into an XML data source that conforms to the form. For information about the relationship between a form with a flowable layout and the XML data source, see [Understanding data subgroups](/help/forms/developing/rendering-forms-rendering-forms prepopulating-forms-flowable-layouts-prepopulating prepopulating-forms-flowable-layouts-prepopulating.md#understanding-data-subgroups).
+You can use `org.w3c.dom` classes to create an in-memory XML data source to prepopulate a form with a flowable layout. You must place data into an XML data source that conforms to the form. For information about the relationship between a form with a flowable layout and the XML data source, see [Understanding data subgroups](#understanding-data-subgroups).
 
 **Convert the XML data source**
 
