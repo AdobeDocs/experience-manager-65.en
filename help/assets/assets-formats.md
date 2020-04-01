@@ -64,7 +64,6 @@ In addition to the information above, consider the following:
 * For EPS files, metadata writeback is supported in PostScript Document Structuring Convention (PS-Adobe) version 3.0 or later.
 
 <!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
-
 ## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
 
 The following table describes the sub-types of raster image formats that are *not* supported in Dynamic Media. The table also describes suggested methods you can use to detect such files.
@@ -80,7 +79,6 @@ The following table describes the sub-types of raster image formats that are *no
 |  | File that have Lab color space. | Use exiftool if the color mode is Lab.<br>Example in an ExifTool log:<br>1. Color mode: `Lab` |
 | TIFF | Files that have floating point data. That is, a TIFF file with 32-bit depth is not supported. | Use ExifTool if the MIME type is `image/tiff` and the SampleFormat has `Float` in its value. Example in an ExifTool log:<br>1. MIME type: `image/tiff`<br>Sample format: `Float #`<br>2. MIME type: `image/tiff`<br>Sample format: `Float; Float; Float; Float` |
 |  | Files that have Lab color space. | Use ExifTool if the color mode is Lab.<br>Example in an ExifTool log:<br>1. Color mode: `Lab` |
-
 -->
 
 ## Supported PDF Rasterizer library {#supported-pdf-rasterizer-library}
