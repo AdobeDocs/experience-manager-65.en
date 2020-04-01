@@ -76,7 +76,7 @@ When a user clicks on the *Open the Loan Details* bookmark, the LoanDetails.pdf 
 
 >[!NOTE]
 >
->Before reading this section, it is recommended that you be familiar with assembling PDF documents using the Assembler service. This section does not discuss concepts, such as creating a collection object that contains input documents or learning how to extract the results from the returned collection object. (See [Programmatically Assembling PDF Documents](/help/forms/developing/programmatically-assembling-pdf-documents-programmatically programmatically-assembling-pdf-documents-programmatically.md#programmatically-assembling-pdf-documents).)
+>Before reading this section, it is recommended that you be familiar with assembling PDF documents using the Assembler service. This section does not discuss concepts, such as creating a collection object that contains input documents or learning how to extract the results from the returned collection object. (See [Programmatically Assembling PDF Documents](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
 
 >[!NOTE]
 >
