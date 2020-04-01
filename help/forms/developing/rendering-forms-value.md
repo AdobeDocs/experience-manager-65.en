@@ -135,7 +135,7 @@ Render a form by value using the Forms API (Java):
 
 **See also**
 
-[Rendering Forms By Value](/help/forms/developing/rendering-forms-rendering-forms rendering-forms-value-rendering-forms.md#rendering-forms-by-value)
+[Rendering Forms By Value](/help/forms/developing/rendering-forms.md)
 
 [Quick Start (SOAP mode): Rendering by value using the Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
