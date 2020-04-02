@@ -14,7 +14,7 @@ While we welcome any contributions to improve AEM documentation, we do ask that 
 
 ## How to Contribute
 
-We want to make it as easy as possible submit your contributions. You can contribute in two ways:
+We want to make it as easy as possible to submit your contributions. You can contribute in two ways:
 
 * [Create an issue](#create-an-issue)
 * [Create a pull request](#create-a-pull-request)
@@ -45,9 +45,9 @@ Have a look at the following video for a quick overview of how to create issues 
 
 ### Contributions from Adobe Employees
 
-If you are an Adobe employee and would like to make a pull request, please use the private repository at `https://git.corp.adobe.com/AdobeDocs`.
+If you are an Adobe employee and have a contribution, please use the `AdobeDocs` org in the corporate git.
 
-For issues, please feel free to use the public repositories.
+We of course are happy for any contribution and will review your contribution if it is made on the public repository, however pull requests from Adobe employees are easier to process and can be approved faster on the corporate repo. Please make sure that any proprietary information is only discussed on the corporate repo.
 
 ## Further Information
 
