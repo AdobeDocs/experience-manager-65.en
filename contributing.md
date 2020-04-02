@@ -14,7 +14,7 @@ While we welcome any contributions to improve AEM documentation, we do ask that 
 
 ## How to Contribute
 
-We want to make it as easy as possible submit your contributions. You can contribute in two ways:
+We want to make it as easy as possible to submit your contributions. You can contribute in two ways:
 
 * [Create an issue](#create-an-issue)
 * [Create a pull request](#create-a-pull-request)
