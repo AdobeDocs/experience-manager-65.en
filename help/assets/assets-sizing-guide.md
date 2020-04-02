@@ -89,7 +89,7 @@ It is difficult to arrive at precise sizing figures for a NodeStore or DocumentS
 
 Because the binaries are be stored in the datastore, each binary occupies some space. Most repositories are below 100GB in size. However, there may be larger repositories up to 1 TB in size. Additionally, to perform offline compaction, you require enough free space on the volume to rewrite the compacted repository alongside the pre-compacted version. A good rule-of-thumb is to size the disk to 1.5 times the size expected for the repository.
 
-For the repository, use SSDs or disks with an IOPS level greater than 3Kilobyte. To eliminate chances of IOPS introducing performance bottlenecks, monitor CPU IO Wait levels for early signs of issues.
+For the repository, use SSDs or disks with an IOPS level greater than 3000. To eliminate chances of IOPS introducing performance bottlenecks, monitor CPU IO Wait levels for early signs of issues.
 
 [Get File](assets/aem_environment_sizingtool.xlsx)
 
