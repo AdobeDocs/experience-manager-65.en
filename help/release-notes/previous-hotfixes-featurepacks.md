@@ -25,7 +25,7 @@ Some key highlights of this service pack release are:
 
 * Asset sorting based on Name column has been enabled in List view.
 
-* [!DNL Dynamic Media] now supports Smart Crop video assets. Smart Crop is  a machine learning driven feature that re-crops a video while moving the frame to follow the focal point of the scene.
+* [!DNL Dynamic Media] now supports Smart Crop video assets. Smart Crop is a machine learning driven feature that re-crops a video while moving the frame to follow the focal point of the scene.
 
 * [!DNL Dynamic Media] supports Smart Imaging.
 
@@ -89,13 +89,13 @@ Some key highlights of this service pack release are:
 
 * Bulk movement of assets is failing and displaying warning message (NPR-30610).
 
-* Asset names are changed to lower case when moving assets from one folder to another in [!DNL Experience Manager] running on [!DNL Dynamic Media] Scene 7 runmode (NPR-31630).
+* Asset names are changed to lower case when moving assets from one folder to another in [!DNL Experience Manager] running in [!DNL Dynamic Media]&ndash;Scene7 mode (NPR-31630).
 
 * Error is observed while editing a remote imageset, for the image residing in the folder named same as Scene 7 company name (NPR-31340).
 
 * [!DNL Dynamic Media] assets containing references are not getting published (NPR-31180).
 
-* Uploads from [!DNL Experience Manager Dynamic Media] - Scene 7 runmode to Scene 7 are taking too long to complete (NPR-31048).
+* Uploads from [!DNL Dynamic Media]7&ndash;Scene7 mode to [!DNL Dynamic Media Classic] are taking too long to complete (NPR-31048).
 
 * Hotspot added to an image asset is not visible through Interactive Image Viewer in asset details page (NPR-30979).
 
@@ -103,11 +103,11 @@ Some key highlights of this service pack release are:
 
 * Conflict occurs on creating Language Copy of assets and assets are not uploaded to Scene 7 (NPR-30932).
 
-* Dynamic renditions downloaded from [!DNL Experience Manager] running on [!DNL Dynamic Media] Hybrid mode are broken (they are of text type with content 'unable to find image' instead of image content type) (NPR-30876).
+* Dynamic renditions downloaded from [!DNL Experience Manager] running in [!DNL Dynamic Media]&ndash;Hybrid mode are broken (they are of text type with content 'unable to find image' instead of image content type) (NPR-30876).
 
-* [!DNL Dynamic Media] Encode Video workflow is failing to generate thumbnail for the video that is migrated from Scene 7 to [!DNL Dynamic Media] - Scene 7 run mode (CQ-4282011).
+* [!DNL Dynamic Media] Encode Video workflow is failing to generate thumbnail for the video that is migrated from [!DNL Dynamic Media Classic] to [!DNL Dynamic Media]&ndash;Scene7 mode on Adobe Experience Manager (CQ-4282011).
 
-* IpsApiException observed while migrating assets from one instance to another using different Scene 7 company IDs (CQ-4280548).
+* IpsApiException observed while migrating assets from one instance to another using different Scene7 company IDs (CQ-4280548).
 
 * 3D Asset thumbnail is not informative, when a supported 3D model is ingested into [!DNL Experience Manager] (CQ-4283701).
 
@@ -117,7 +117,7 @@ Some key highlights of this service pack release are:
 
 * Videos cannot be played with SmartCropVideoViewer on Internet Explorer 11 and Safari (CQ-4281422).
 
-* Use of move button to move multiple assets, from one folder to another, fails in [!DNL Experience Manager] running on [!DNL Dynamic Media] - scene7 runmode (CQ-4280384).
+* Use of move button to move multiple assets, from one folder to another, fails in [!DNL Experience Manager] running on [!DNL Dynamic Media]&ndash;Scene7 runmode (CQ-4280384).
 
 * Distorted video is seen on asset details when MIME type is other than MP4 (CQ-4279704).
 
@@ -297,7 +297,7 @@ Some key highlights of this service pack release are:
 
 * EnhanceDocument type filters with more MIME types to support multi-valued options.
 * Introduced an external Reprocess workflow for multi-resource support.
-* Optimized  [!DNL Dynamic Media] performance by using default asset filters for replication.
+* Optimized [!DNL Dynamic Media] performance by using default asset filters for replication.
 * Restored crop/rotate Asset editing options for DMS7.
 * Implemented an option to mute a video on load in VideoPlayer.
 * Fix to ensure that Asset UI column view shows tenant-specific content only.
@@ -333,7 +333,7 @@ Some key highlights of this service pack release are:
 * Folder metadata schema form is not automatically detecting datatype and hence, not creating the related TypeHint in form submission. NPR-30599: Hotfix for CQ-4275227
 * Crop and rotate Asset editing options are disabled from the DMS7 authoring UI. NPR-30118: Hotfix for CQ-4273221
 * Share Link feature is not working on [!DNL Experience Manager] instance with DMS7 configuration. NPR-30080, NPR-30492: Hotfix for CQ-4273651
-* Adding the [!DNL Dynamic Media] Scene7 component to the page, and then publishing the page does not trigger the dmscene7 configuration every time. NPR-30641: Hotfix for CQ-4275962
+* Adding the [!DNL Dynamic Media]&ndash;Scene7 component to the page, and then publishing the page does not trigger the dmscene7 configuration every time. NPR-30641: Hotfix for CQ-4275962
 * Added an IPSJobJournal in [!DNL Experience Manager] to create only one Intrusion Prevention Systems (IPS) job per processing profile. NPR-30490: Hotfix for CQ-4273614
 * [!DNL Dynamic Media]: Added default filters to exclude assets from being replicated to the [!DNL Experience Manager] publish node. NPR-30538: Hotfix for CQ-4274678
 * Introduced an external Reprocess workflow for multi-resource support to allow folder as a payload. The workflow has two steps - reprocesses assets with no handles via metadata map to next step and reuploads all assets without asset handle to S7 in a single IPS job. For more details, see Configuring [!DNL Dynamic Media] Cloud Services. NPR-30489: Hotfix for CQ-4272903
@@ -348,7 +348,7 @@ Some key highlights of this service pack release are:
 * Sorting search query by relevance returns [!DNL InDesign] documents along with [!DNL InDesign] templates. Hotfix for CQ-4273864
 * If the user has an uppercase email id, users are not able to check-in for those assets which have been previously checked out. Hotfix for CQ-4276575
 * The Delete operation only applies to the presets that are selected, and if the screen automatically refreshes the list after the operation, it shows other presets that have already refreshed. Hotfix for CQ-4261461
-* Configuring [!DNL Dynamic Media] Cloud Services in DMHybrid mode results in multiple empty report suites created in [!DNL Analytics], and with no report suite id stored in [!DNL Experience Manager], resulting in report suite duplication. Hotfix for CQ-4249780
+* Configuring [!DNL Dynamic Media] Cloud Services in [!DNL Dynamic Media]&ndash;Hybrid mode results in multiple empty report suites created in [!DNL Analytics], and with no report suite id stored in [!DNL Experience Manager], resulting in report suite duplication. Hotfix for CQ-4249780
 * Rename operation in [!DNL Experience Manager] asset to duplicated name fails to synchronize to Scene7. Hotfix for CQ-4276763
 * User-Generated Content is displayed incorrectly in the search filter panel. Hotfix for CQ-4273875
 * Find similar' option is not available for TIFF images. Hotfix for CQ-4278238
@@ -491,7 +491,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 Some key highlights of this service pack release are:
 
 * Enabled the inclusion of dynamic-UI-state in tracking events as custom attributes.
-* Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media] Scene 7.
+* Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media]&ndash;Scene7 mode.
 * Enabled *Japanese Word Wrap* feature via the styles plugin of Rich Text Editor. For more information, see [Configure Japanese word wrap](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)
 
 ### Assets
