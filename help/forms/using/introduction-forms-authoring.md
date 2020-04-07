@@ -313,7 +313,7 @@ The page toolbar on the top provides options that let you preview the form, chan
 
 * **Emulator** ![ruler](assets/ruler.png): Lets you emulate the look of your form for different display sizes such as tablets and phones.
 
-* **Edit**: Lets you select other modes such as: **Edit, Style, Developer, **and** Design**.
+* **Edit**: Lets you select other modes such as: **Edit, Style, Developer, and Design**.
 
     * **Edit**: Lets you edit the properties of the form and its components. For example, adding a component, dropping an image, and specifying mandatory fields.
     * **Style**: Lets you style the appearance of components of your form. For example, in style mode, you can select a panel and specify its background color.

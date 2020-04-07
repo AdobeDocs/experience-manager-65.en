@@ -19,7 +19,7 @@ The functionality of the [Asset Share Query Builder](/help/assets/assets-finder-
 
 The server-side query builder ( [`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) will accept a query description, create and run an XPath query, optionally filter the result set, and also extract facets, if desired.
 
-The query description is simply a set of predicates ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Examples include a full-text predicate, which corresponds to the `jcr:contains()` function in XPath, and an image size predicate that looks for width and height properties in the DAM asset subtree.
+The query description is simply a set of predicates ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Examples include a full-text predicate, which corresponds to the `jcr:contains()` function in XPath.
 
 For each predicate type, there is an evaluator component ([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) that knows how to handle that specific predicate for XPath, filtering, and facet extraction. It is very easy to create custom evaluators, which are plugged-in through the OSGi component runtime.
 

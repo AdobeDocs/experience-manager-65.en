@@ -119,8 +119,6 @@ To edit the properties of a metadata component on the form, click the component 
 
 The following are the valid values for this property:
 
-The following are the valid values for this property:
-
 * `./jcr:content/metadata/dc:title`: Stores the value at the asset's metadata node as the property `dc:title`.
 
 * `./jcr:created`: Displays the JCR property at the asset's node. If you configure these properties on view properties, we recommend that you mark them as Disable Edit, because they are protected. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset's properties.
@@ -128,13 +126,21 @@ The following are the valid values for this property:
 To ensure that the component is displayed properly in the metadata schema form, the property path should not include any spaces.
 
 **Placeholder**: Use this property to specify relevant placeholder text regarding the metadata property.
+
 **Required**: Use this property to mark a metadata property as mandatory on the properties page.
+
 **Disable Edit**: Use this property to make a metadata property uneditable on the properties page.
+
 **Show Empty Field In Read Only**: Mark this property to display a metadata property on the properties page even if it has no value. By default, when a metadata property has no value, it is not be listed on the properties page.
+
 **Show list ordered**: Use this property to display an ordered list of choices
+
 **Choices**: Use this property to specify choices in a list
+
 **Description** : Use this property to add a short description for the metadata component.
+
 **Class**: Object class the property is associated with.
+
 **Delete**: Click this icon to delete a component from the schema form.
 
 ![chlimage_1-41](assets/chlimage_1-177.png)
