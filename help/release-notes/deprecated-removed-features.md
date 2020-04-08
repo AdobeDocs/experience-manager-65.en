@@ -148,6 +148,11 @@ Customers are advised to review if they make use of the feature/capability in th
    <td><p>Classic UI Dialog Editor in CRXDE lite</p> <p>Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)</p> </td>
    <td> </td>
   </tr>
+  <tr>
+   <td>Forms</td>
+   <td><p>AEM Forms integration with AEM Mobile< is deprecated </p> </td>
+   <td>No Replacement </td>
+  </tr>
  </tbody>
 </table>
 
