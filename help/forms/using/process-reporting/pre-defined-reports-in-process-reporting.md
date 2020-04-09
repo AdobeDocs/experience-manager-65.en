@@ -28,7 +28,7 @@ The Long Running Processes report displays the AEM Forms processes that have tak
 
 ### To execute a Long Running Process report {#to-execute-a-long-running-process-report}
 
-1. To view the list of pre-defined reports in Process Reporting, on the **Process Reporting** tree view, click the **Reports **node.
+1. To view the list of pre-defined reports in Process Reporting, on the **Process Reporting** tree view, click the **Reports** node.
 1. Click the **Long Running Processes** report node.
 
    ![long_running_node](assets/long_running_node.png)
@@ -39,17 +39,17 @@ The Long Running Processes report displays the AEM Forms processes that have tak
 
    Parameters:
 
-    * **Duration**(*mandatory*): Specify a duration and unit of time. Display all AEM Forms processes that have run for more than the specified duration.
+    * **Duration** (*mandatory*): Specify a duration and unit of time. Display all AEM Forms processes that have run for more than the specified duration.
     * **Started After** (*optional*): Select a date. Filter the report to display process instances that started after the specified date.
     * **Started Before** (*optional*): Select a date. Filter the report to display process instances that started before the specified date.
 
 1. Click **Go** to execute the report.
 
-   The report displays in the **Report **panel on the right of the **Process Reporting** window.
+   The report displays in the **Report** panel on the right of the **Process Reporting** window.
 
    ![long_running_processes](assets/long_running_processes.png)
 
-   Use the options in the upper right corner of the **Report **panel to perform the following operations on the report.
+   Use the options in the upper right corner of the **Report** panel to perform the following operations on the report.
 
     * **Refresh**: Refreshes the report with latest data lying in the storage
     * **Change legend color**: Select and change the color of the report legend
@@ -61,7 +61,7 @@ The Process Duration report displays the number of instances of a Forms process 
 
 ### To execute a Process Duration report {#to-execute-a-process-duration-report}
 
-1. To view the pre-defined reports in Process Reporting, on the **Process Reporting** tree view, click the **Reports **node.
+1. To view the pre-defined reports in Process Reporting, on the **Process Reporting** tree view, click the **Reports** node.
 1. Click the **Processes Duration** report node.
 
    ![process_duration_node](assets/process_duration_node.png)
@@ -72,15 +72,15 @@ The Process Duration report displays the number of instances of a Forms process 
 
    Parameters:
 
-    * **Select Process **(*mandatory*): Select an AEM Forms process.
+    * **Select Process** (*mandatory*): Select an AEM Forms process.
 
-1. Click **Go **to execute the report.
+1. Click **Go** to execute the report.
 
-   The report displays in the **Report **panel on the right of the Process Reporting window.
+   The report displays in the **Report** panel on the right of the Process Reporting window.
 
    ![process_duration_report](assets/process_duration_report.png)
 
-   Use the options in the upper right corner of the **Report **panel to perform the following operations on the report.
+   Use the options in the upper right corner of the **Report** panel to perform the following operations on the report.
 
     * **Refresh**: Refreshes the report with latest data lying in the storage
     * **Change legend color**: Select and change the color of the report legend
@@ -92,7 +92,7 @@ The Workflow Volume report displays the number of currently running and complete
 
 ### To execute a Workflow Volume report {#to-execute-a-workflow-volume-report}
 
-1. To view the pre-defined reports in Process Reporting, on the **Process Reporting **tree view, click the **Reports **node.
+1. To view the pre-defined reports in Process Reporting, on the **Process Reporting** tree view, click the **Reports** node.
 1. Click the **Workflow Volume** report node.
 
    ![workflow_volume_node](assets/workflow_volume_node.png)
@@ -103,19 +103,19 @@ The Workflow Volume report displays the number of currently running and complete
 
    Parameters:
 
-    * **Select Process **(*mandatory*): Select an AEM Forms process.
+    * **Select Process** (*mandatory*): Select an AEM Forms process.
 
     * **Started After** (*optional*): Select a date. Filters the report to display process instances that started after the specified date.
 
     * **Started Before** (*optional*): Select a date. Filters the report to display process instances that started before the specified date.
 
-1. Click **Go **to execute the report.
+1. Click **Go** to execute the report.
 
-   The report displays in the **Report **panel on the right of the **Process Reporting** window.
+   The report displays in the **Report** panel on the right of the **Process Reporting** window.
 
    ![workflow_volume_report](assets/workflow_volume_report.png)
 
-   Use the options in the upper right corner of the **Report **panel to perform the following operations on the report.
+   Use the options in the upper right corner of the **Report** panel to perform the following operations on the report.
 
     * **Refresh**: Refreshes the report with latest data lying in the storage
     * **Change legend color**: Select and change the color of the report legend
