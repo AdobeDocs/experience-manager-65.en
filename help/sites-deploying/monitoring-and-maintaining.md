@@ -154,8 +154,8 @@ Moreover the console provides useful information about the versions:
 
 In the next example:
 
-* The **Shirts** versions are purged because their version age is greater than 2 days.
-* The **Tonga Fashions!** versions are purged because their number of versions is greater than 5.
+* The **[!DNL Shirts]** versions are purged because their version age is greater than 2 days.
+* The **[!DNL Tonga Fashions!]** versions are purged because their number of versions is greater than 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
@@ -1097,7 +1097,7 @@ If your system is running out of memory this can be seen in various ways, includ
 
 In these cases check:
 
-* the JVM settings used to [start AEM](/help/sites-deploying/deploy.md#getting-started)
+* The JVM settings used to [start AEM](/help/sites-deploying/deploy.md#getting-started)
 * The Knowledge Base:
 
     * [Analyze Memory Problems](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
