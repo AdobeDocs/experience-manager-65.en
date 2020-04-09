@@ -32,11 +32,11 @@ The Email action enables an author to send email automatically to one or more re
 
 >[!NOTE]
 >
->To use the Email action, you need to configure the AEM mail service as described in [Configuring the mail service](/help/sites-administering/notification.md#configuring the mail service).
+>To use the Email action, you need to configure the AEM mail service as described in [Configuring the mail service](/help/sites-administering/notification.md#configuring-the-mail-service).
 
 ### Enabling Email action on an adaptive form {#enabling-email-action-on-an-adaptive-form}
 
-1. Open an adaptive form in edit mode.  
+1. Open an adaptive form in edit mode.
 
 1. Click **Edit** next to the **Start of an Adaptive Form** toolbar.
 

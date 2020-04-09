@@ -276,7 +276,7 @@ To access the portlet's authentication configuration:
 
 In default mode, all requests issued by the portlet for the AEM WCM author instance are authenticated using the same technical user, regardless of the current portal user. Technical User mode is enabled by default. You enable/disable this mode in the respective configuration screen in the OSGi management console:
 
-The technical user specified must exist on the AEM WCM author instance and on the publish instance if **Authenticate on Publish **is enabled. Be sure to give the user access privileges sufficient for authoring work.
+The technical user specified must exist on the AEM WCM author instance and on the publish instance if **Authenticate on Publish** is enabled. Be sure to give the user access privileges sufficient for authoring work.
 
 #### SSO {#sso}
 
@@ -476,7 +476,7 @@ The publish view only has one button that switches the toolbar to the Manage vie
 
 | Placeholder String |Description  |
 |---|---|
-| {buttonManage} |Placeholder is replaced by the **Manage **button, which switches the portlet state into the management state. |
+| {buttonManage} |Placeholder is replaced by the **Manage** button, which switches the portlet state into the management state. |
 
 #### Manage View {#manage-view}
 
@@ -486,7 +486,7 @@ The manage view has four buttons: Edit, Websites tab, Refresh and Back. The mana
 
 | Placeholder String  |Description  |
 |---|---|
-| {buttonEdit} |Placeholder is replaced by the** Edit** button, which opens a new window with the current page in AEM's edit mode. |
+| {buttonEdit} |Placeholder is replaced by the **Edit** button, which opens a new window with the current page in AEM's edit mode. |
 | {buttonWebsites tab} |Placeholder, replaced by a button which opens the Websites tab of AEM WCM. |
 | {buttonRefresh} |Refreshes the current view. |
 | {buttonBack} |Switches the portlet back into the publish view. |
@@ -640,7 +640,7 @@ To use AEM as a portal, perform the following tasks:
 
 >[!NOTE]
 >
->You can use the portlet component only when AEM is deployed as a web application. ([See Installing AEM With an Application Server](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server).)
+>You can use the portlet component only when AEM is deployed as a web application. ([See Installing AEM With an Application Server](/help/sites-deploying/application-server-install.md).)
 
 ### Installing the portlet component {#installing-the-portlet-component}
 

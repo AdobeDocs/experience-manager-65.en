@@ -157,7 +157,7 @@ The Forms service returns the following values to indicate whether it has finish
 
 >[!NOTE]
 >
->Calculations and validations must be rendered back to the user. (See [Calculating Form Data](/help/forms/developing/rendering-forms-rendering-forms calculating-form-data-calculating-form calculating-form-data-calculating-form.md#calculating-form-data)*.)*
+>Calculations and validations must be rendered back to the user. (See [Calculating Form Data](/help/forms/developing/calculating-form-data.md#calculating-form-data).
 
 **Determine if the form submission contains file attachments**
 
