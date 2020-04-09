@@ -128,8 +128,6 @@ For complete list of features, key highlights, key features introduced in previo
 
 * Assets detail page of PDF assets do not show action buttons except To Collection and Add Rendition buttons in Experience Manager running on Dynamic Media Scene7 run mode (CQ-4286705).
 
-* Assets greater than 2GB can now be uploaded in Dynamic Media-Scene7 (CQ-4286561).
-
 * Assets take too long to process through the batch upload process of Scene7 (CQ-4286445).
 
 * Save button does not import Remote Set when user has not made any changes in Set Editor in Dynamic Media Client (CQ-4285690).
@@ -341,6 +339,20 @@ To use UberJar in a Maven project, refer to the article, [How to use UberJar](/h
       <groupId>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
       <version>6.5.4</version>
+      <classifier>apis</classifier>
+      <scope>provided</scope>
+</dependency>
+```
+
+The updated UberJar version for 6.5.4.0 that includes the **com.fasterxml.jackson.core.async** package is available at [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4-1.0/).
+
+If you use the updated version of UberJar, include the following dependency in your project POM:
+
+```shell
+<dependency>
+      <groupId>com.adobe.aem</groupId>
+      <artifactId>uber-jar</artifactId>
+      <version> 6.5.4-1.0</version>
       <classifier>apis</classifier>
       <scope>provided</scope>
 </dependency>

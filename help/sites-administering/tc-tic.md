@@ -71,7 +71,7 @@ After you configure a translation integration framework, you can [associate it w
 **Note:** For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md).
 
 A single configuration of the framework controls how to translate page content, community content, and assets.
-![chlimage_1-386](assets/chlimage_1-386.png)
+![chlimage_1-386](assets/translation-config-65.jpg)
 
 ### Sites Configuration Properties {#sites-configuration-properties}
 
