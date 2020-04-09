@@ -249,7 +249,7 @@ Here is the correlation between transmission types and the field from which you 
 
 >[!NOTE]
 >
->JAX WS-based applications that use the MTOM transmission protocol are limited to 25MB of sent and received data. This limitation is due to a bug in JAX-WS. If the combined size of your sent and received files exceeds 25MB, usetheSwaRef transmission protocol instead of the MTOM one. Otherwise, there is a possibility of an `OutOfMemory`* exception.*
+>JAX WS-based applications that use the MTOM transmission protocol are limited to 25MB of sent and received data. This limitation is due to a bug in JAX-WS. If the combined size of your sent and received files exceeds 25MB, usetheSwaRef transmission protocol instead of the MTOM one. Otherwise, there is a possibility of an `OutOfMemory` exception.
 
 **MTOM transmission of base64-encoded byte arrays**
 
@@ -673,7 +673,7 @@ You can invoke an AEM Forms service using Java proxy classes and Base64. To invo
 
    >[!NOTE]
    >
-   >Replace `hiro-xp`with the IP address of the J2EE application servier hosting AEM Forms.
+   >Replace `hiro-xp` *with the IP address of the J2EE application servier hosting AEM Forms.*
 
 1. Package the Java proxy classes created using using JAX-WS into a JAR file.
 1. Include the Java proxy JAR file and the JAR files located in the following path:
@@ -768,7 +768,7 @@ After you create a Service Reference, data types associated with the AEM Forms s
     http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
    ```
 
-1. Click **Go **and then click** OK**.
+1. Click **Go** and then click **OK**.
 
 ### Invoking a service using MTOM in a .NET project {#invoking-a-service-using-mtom-in-a-net-project}
 
@@ -786,7 +786,7 @@ Consider the `MyApplication/EncryptDocument` process that accepts an unsecured P
 
    >[!NOTE]
    >
-   >Replace `hiro-xp`with the IP address of the J2EE application servier hosting AEM Forms.
+   >Replace `hiro-xp` *with the IP address of the J2EE application servier hosting AEM Forms.*
 
 1. Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `EncryptDocumentClient.Endpoint.Binding` data member. Cast the return value to `BasicHttpBinding`.
 1. Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` data member to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
@@ -868,7 +868,7 @@ To invoke the `MyApplication/EncryptDocument` process by using Java proxy files 
 
    >[!NOTE]
    >
-   >Replace `hiro-xp`* with the IP address of the J2EE application server hosting AEM Forms. *
+   >Replace `hiro-xp` *with the IP address of the J2EE application server hosting AEM Forms.*
 
 1. Package the Java proxy classes created using using JAX-WS into a JAR file.
 1. Include the Java proxy JAR file and the JAR files located in the following path:
@@ -991,7 +991,7 @@ You can invoke an AEM Forms service using Java proxy classes and BLOB data over 
 
    >[!NOTE]
    >
-   >Replace `hiro-xp`* with the IP address of the J2EE application server hosting AEM Forms. *
+   >Replace `hiro-xp` *with the IP address of the J2EE application server hosting AEM Forms.*
 
 1. Package the Java proxy classes created using using JAX-WS into a JAR file.
 1. Include the Java proxy JAR file and the JAR files located in the following path:
@@ -1040,7 +1040,7 @@ When this process is invoked, it performs the following actions:
 1. Obtains the unsecured PDF document that is passed to the process. This action is based on the `SetValue` operation. The input parameter for this process is a `document` process variable named `inDoc`.
 1. Encrypts the PDF document with a password. This action is based on the `PasswordEncryptPDF` operation. The password encrypted PDF document is returned in a process variable named `outDoc`.
 
-This process is not based on an existing AEM Forms process. To follow along with the code examples, create a process named `MyApplication/EncryptDocument`**using Workbench. (See [Using Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+This process is not based on an existing AEM Forms process. To follow along with the code examples, create a process named `MyApplication/EncryptDocument` using Workbench. (See [Using Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 >[!NOTE]
 >
