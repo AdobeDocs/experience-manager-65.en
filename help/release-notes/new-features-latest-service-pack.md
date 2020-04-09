@@ -94,9 +94,13 @@ Experience Manager Forms includes the following accessibility enhancements:
 
 ## Key features in previous AEM 6.5 Service Packs {#key-features-previous-service-packs}
 
-### Smart Imaging for Dynamic Media (6.5.3.0) {#smart-imaging}
+### Smart Imaging for Dynamic Media {#smart-imaging}
 
 Smart imaging uses each user's unique viewing characteristics to automatically serve the right images optimized for their experience, resulting in better performance and engagement. Smart imaging works with your existing image presets and uses intelligence at the last millisecond of delivery to further reduce image file size based on browser or network connection speed. See [Smart Imaging](../assets/imaging-faq.md).
+
+### Smart crop in video profiles for Dynamic Media (6.5.3.0) {#smart-crop-video}
+
+Smart crop for video–an optional feature available in Video Profiles– is a tool that uses the power of artificial intelligence in Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video that you have uploaded, regardless of size. See [About using smart crop in video profiles](../assets/video-profiles.md).
 
 ### Visual search for AEM Assets (6.5.2.0) {#visual-search}
 

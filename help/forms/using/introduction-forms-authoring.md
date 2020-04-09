@@ -84,7 +84,7 @@ The sidebar comprises the following browsers:
 
   Lets you edit the properties of a component. Properties change according to a component. To see properties of the adaptive form container:
 
-  Select a component, then tap ![field-level](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![cmppr](assets/cmppr.png).
+  Select a component, then tap ![field-level](assets/field-level.png) &gt; **[!UICONTROL Adaptive Form Container]**, and then tap ![cmppr](assets/cmppr.png).
 
 * **Assets browser**
 
@@ -291,9 +291,9 @@ Some best practices and key points to remember when working with adaptive form c
 * Specify values for Radio Button and Check Box items in `{value}={text}` format in component properties.
 * The File attachment component, by default, allows a user to attach only one file. However, you can configure the component properties to support multiple attachments. In addition, if a user attaches multiple files with the same filename, the attachments can cause some issues. Therefore, it is recommended to associate a unique identifier for each submitted attachment at form submission. To do so:
 
-    1. On your AEM Forms server, navigate to **Adobe Experience Manager &gt; Tools &gt; Operations &gt; Web Console**.
-    1. Find and tap **Adaptive Forms Configuration Service**.
-    1. In the Adaptive Forms Configuration Service dialog, enable **Make File Names Unique**. By default, it is disabled.
+    1. On your AEM Forms server, navigate to **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+    1. Find and tap **[!UICONTROL Adaptive Forms Configuration Service]**.
+    1. In the Adaptive Forms Configuration Service dialog, enable **[!UICONTROL Make File Names Unique]**. By default, it is disabled.
 
 * To enable users to attach a PDF using Safari browser, ensure that **application/pdf** is added to the Supported File Types property of the File attachment component. Adaptive forms created with previous AEM Forms version may contain **.pdf** instead of **application/pdf** in the Supported File Types property.
 
@@ -313,7 +313,7 @@ The page toolbar on the top provides options that let you preview the form, chan
 
 * **Emulator** ![ruler](assets/ruler.png): Lets you emulate the look of your form for different display sizes such as tablets and phones.
 
-* **Edit**: Lets you select other modes such as: **Edit, Style, Developer, and Design**.
+* **Edit**: Lets you select other modes such as: **[!UICONTROL Edit]**, **[!UICONTROL Style]**, **[!UICONTROL Developer]**, and **[!UICONTROL Design]**.
 
     * **Edit**: Lets you edit the properties of the form and its components. For example, adding a component, dropping an image, and specifying mandatory fields.
     * **Style**: Lets you style the appearance of components of your form. For example, in style mode, you can select a panel and specify its background color.
@@ -333,7 +333,7 @@ The page toolbar on the top provides options that let you preview the form, chan
 
 When you select a component, you see a toolbar that lets you work it. You get options to cut, paste, move, and specify properties of the components. Your options are:
 
-A.**Configure**: When you tap **Configure**, component properties are visible in the sidebar. Configuring these properties let you customize the data capturing experience. You can change the element name of the component, specify the label text in the Title field of the component. Element name lets you capture values users enter using the component. In the component properties, you specify the behavior of the component, and manage user input. Configure properties in the sidebar to capture user data and use it for further processing. Properties for adaptive form container let you specify Client libraries, Layouts, Themes, Document of Record settings, save settings, submission settings, and metadata settings.
+A.**Configure**: When you tap **[!UICONTROL Configure]**, component properties are visible in the sidebar. Configuring these properties let you customize the data capturing experience. You can change the element name of the component, specify the label text in the Title field of the component. Element name lets you capture values users enter using the component. In the component properties, you specify the behavior of the component, and manage user input. Configure properties in the sidebar to capture user data and use it for further processing. Properties for adaptive form container let you specify Client libraries, Layouts, Themes, Document of Record settings, save settings, submission settings, and metadata settings.
 
 B.**Copy**: You can use the copy option to copy a component and paste it in other places in the form. When you paste a component, the pasted component gets a new element name but retains the properties of the copied component.
 
@@ -351,7 +351,7 @@ H. **Group**: Lets you select multiple components if you want to cut, copy, or p
 
 I. **Parent**: Lets you select the parent of a component. For example, a text field lies within a sub-section, which resides in a section. The section resides in the guide root panel, and the adaptive form container is the parent of a guide root panel. For a component, you can see all the options with the hierarchy sorted bottoms-up.
 
-For example, if you tap **Parent** for a text box, you can see:
+For example, if you tap **[!UICONTROL Parent]** for a text box, you can see:
 
 * Sub-section
 * Section
@@ -374,7 +374,7 @@ The adaptive form page is the actual form. It is like any other WCM page modeled
 
 The content structure typically contains the following primary components:
 
-* **guideContainer**: The root of an adaptive form, which is marked as **Start of adaptive form** in the adaptive form UI. In this component, you can specify:
+* **guideContainer**: The root of an adaptive form, which is marked as **[!UICONTROL Start of adaptive form]** in the adaptive form UI. In this component, you can specify:
 
     * *Mobile Layout of the adaptive form*: Defines the appearance of the form on mobile devices.
     * *Thank You page*: Defines the page where the user is redirected after submitting the form.
@@ -383,7 +383,7 @@ The content structure typically contains the following primary components:
 
 * **rootPanel:** The root panel of an adaptive form. It can contain subpanels under the items node. Each panel including the root panel can have a layout associated with it. The layout of the panel dictates how the form is laid out. For example, in the Accordion layout, its items are laid out as Accordion steps.
 
-* **toolbar:** An adaptive form container has an associated global toolbar, which is global to the form. This toolbar can be added using the **Add Toolbar** action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
+* **toolbar:** An adaptive form container has an associated global toolbar, which is global to the form. This toolbar can be added using the **[!UICONTROL Add Toolbar]** action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
 
 * **assets:** This node contains additional information used for form authoring. For example, form model details, localization details, and so on).
 

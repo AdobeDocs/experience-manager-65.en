@@ -563,7 +563,7 @@ To apply a theme to an interactive communication:
 
    You can edit properties of your form in the sidebar.
 
-1. In the sidebar, under** Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
+1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
 
 ### Change theme of a form at runtime {#change-theme-of-a-form-at-runtime}
 
