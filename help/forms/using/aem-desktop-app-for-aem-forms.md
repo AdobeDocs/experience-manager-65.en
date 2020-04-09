@@ -30,7 +30,7 @@ You can use the app to sync AEM Forms binary files of following type Form Templa
 AEM desktop App uses WebDAV protocol on Microsoft Windows and SMB1 on Mac OS X to connect to an AEM Forms server. Out of the box, AEM Forms server is not enabled to sync binary files and other assets with a WebDAV or SMB client. Perform the following steps to enable AEM Forms for AEM desktop App:
 
 1. Log in to AEM Forms as an administrator.
-1. In the author instance, click ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Tools** ![hammer](assets/hammer.png) **> Deployment > Operations > Web Console]**. The Web Console opens in a new window.
+1. In the author instance, click ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Tools]** ![hammer](assets/hammer.png) **[!UICONTROL > Deployment > Operations > Web Console]**. The Web Console opens in a new window.
 1. In Web Console Window, locate and open the **[!UICONTROL FormsManager AddOn Configuration]** option.
 1. In the FormsManager AddOn Configuration dialog, deselect the **[!UICONTROL Asynchronously Sync Resources]** check box, and click **[!UICONTROL Save]**.
 1. Restart the AEM Forms server. After the restart, AEM Forms server is enabled to accept and share content with AEM desktop app.

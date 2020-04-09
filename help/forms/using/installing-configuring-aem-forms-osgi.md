@@ -125,9 +125,9 @@ AEM Forms has a few mandatory and optional configurations. The mandatory configu
 Perform the following steps on all the Author and Publish instances to boot delegate the libraries:
 
 1. Stop the underlying AEM instance.
-1. Open the [AEM installation directory]\crx-quickstart\conf\sling.properties file for editing.
+1. Open the `[AEM installation directory]\crx-quickstart\conf\sling.properties` file for editing.
 
-   If you used [AEM installation directory]\crx-quickstart\bin\start.bat to start AEM, then edit the sling.properties located at [AEM_root]\crx-quickstart\.
+   If you used `[AEM installation directory]\crx-quickstart\bin\start.bat` to start AEM, then edit the sling.properties located at `[AEM_root]\crx-quickstart\`.
 
 1. Add the following properties to the sling.properties file:
 
@@ -143,7 +143,7 @@ Perform the following steps on all the Author and Publish instances to boot dele
 
 Perform the following steps on all the Author and Publish instances to whitelist the package:
 
-1. Open AEM Configuration Manager in a browser window. The default URL is `https://[server]:[port]/system/console/configMgr`.
+1. Open AEM Configuration Manager in a browser window. The default URL is `https://'[server]:[port]'/system/console/configMgr`.
 1. Search for **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** and open the configuration.
 1. Add the **sun.util.calendar** package to the **whitelist** field. Click **Save**.
 1. Repeat step 1-3 on all the Author and Publish instances.
@@ -164,7 +164,7 @@ Dispatcher is caching and load balancing tool for AEM. AEM Dispatcher also helps
 
 1. Configure the referrer filter service:
 
-   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is https://[server]:[port_number]/system/console/configMgr. In the **Configurations **menu, select the **Apache Sling Referrer Filter** option. In the Allow Hosts field, enter host name of the dispatcher to allow it as a referrer and click **Save**. The format of the entry is https://[server]:[port].
+   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is `https://[server]:[port_number]/system/console/configMgr`. In the **Configurations** menu, select the **Apache Sling Referrer Filter** option. In the Allow Hosts field, enter host name of the dispatcher to allow it as a referrer and click **Save**. The format of the entry is `https://[server]:[port]'.
 
 #### Configure Cache {#configure-cache}
 
@@ -175,7 +175,7 @@ Caching is a mechanism to shorten data access times, reduce latency, and improve
 
 Perform the following steps to configure the adaptive forms cache:
 
-1. Go to AEM web console configuration manager at https://[server]:[port]/system/console/configMgr.
+1. Go to AEM web console configuration manager at https://'[server]:[port]'/system/console/configMgr.
 1. Click **Adaptive Form and Interactive Communication Web Channel Configuration** to edit its configuration values. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. The default value is 100. Click **Save**.
 
    >[!NOTE]

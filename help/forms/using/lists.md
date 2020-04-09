@@ -57,11 +57,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
    [ ![Toolbar](assets/advancedediting.png)
 
-   (Click to open full-sized image)
-
-   ](assets/advancedediting-1.png)
-
-    * **Link**: Insert hypertext link in the text.
+    * **Link**: Insert [hypertext](#insert-hyperlink) link in the text.
     * **Repeat**: Repeat prints collection element in Data Dictionary using a delimiter.
     * **Condition**: Tap to insert a condition. Insert text based on condition. If condition is true, then text is visible in letter, otherwise not.
     * **Add Description**: Add annotation to a piece of text. This is metadata visible to the Author but not a part of the letter that is created.
@@ -110,9 +106,9 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
    ![textbackgroundcolorapplied](assets/textbackgroundcolorapplied.png)
 
-   You can either directly tap a basic color **[A]** present in the Basic Colors palette or tap **Select** after using the slider **[B]** to choose the appropriate shade of the color.
+   You can either directly tap a basic color `**[A]**` present in the Basic Colors palette or tap **Select** after using the slider `**[B]**` to choose the appropriate shade of the color.
 
-   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation **[C]** to create the precise color and then tap Select **[D]** to apply the color to highlight the text.
+   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation `**[C]**` to create the precise color and then tap Select `**[D]**` to apply the color to highlight the text.
 
    ![textbackgroundcolor-1](assets/textbackgroundcolor-1.png)
 
@@ -135,6 +131,18 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
 1. You can use inline conditions and repeat to make your letter highly contextual and well structured. For more information on inline condition and repeat, see [Inline conditions and repeat in letters](/help/forms/using/cm-inline-condition.md).
 1. Tap **Save**.
+
+#### Insert hyperlink in a text {#insert-hyperlink}
+
+Execute the following steps to create a hyperlink in a text asset:
+
+1. Select the text or the data model object in the text editor.
+
+2. Tap **[!UICONTROL Link]**. Tap **[!UICONTROL Alt Text]** field to remove the existing data model object name or text.
+
+3. Specify the URL and tap ![Save](assets/save_icon.svg).
+
+![Create hyperlink in text asset](assets/text-create-hyperlink.png)
 
 #### Searching and replacing text {#searching-and-replacing-text}
 

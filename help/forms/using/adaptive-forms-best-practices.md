@@ -239,9 +239,9 @@ Some best practices when localizing adaptive forms are as follows:
 * Any modifications like adding a new component or applying a script in a localized form are not localized automatically. Therefore, you must finalize a form before localizing it to avoid multiple localization cycles.
 * Use `afAcceptLang` request parameter to override the browser locale and render the form in the specified locale. For example, the following URL will force to render the form in Japanese locale, irrespective of the locale specified in the browser setting:
 
-  `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+  `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* AEM Forms currently supports localization of adaptive forms content in English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-br), Chinese- (zh-tn), Chinese-Taiwan (zh-tw), and Korean (ko-kr) locales. However, you can add support for new locales for adaptive forms at runtime. For more information, see [Supporting new locales for adaptive forms localization](/help/forms/using/supporting-new-language-localization.md).
+* AEM Forms currently supports localization of adaptive forms content in English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. However, you can add support for new locales for adaptive forms at runtime. For more information, see [Supporting new locales for adaptive forms localization](/help/forms/using/supporting-new-language-localization.md).
 
 ## Prepare forms project for production {#prepare-forms-project-for-production}
 

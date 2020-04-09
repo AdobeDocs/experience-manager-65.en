@@ -80,7 +80,7 @@ After prerequisites are in place, perform the following steps to configure Adobe
 
    Tap **[!UICONTROL Create]** to create the Adobe Sign configuration.
 
-1. Open AEM Web Console. The URL is `https://[server]:[port]/system/console/configMgr`
+1. Open AEM Web Console. The URL is `https://'[server]:[port]'/system/console/configMgr`
 1. Open **Forms Common Configuration Service.**
 1. In the **Allow** field, **select** All users - All the users, anonymous or logged in, can preview attachments, verify and sign forms, and click **Save.** Author instance is configured to use Adobe Sign.
 1. On the [Publish](/help/sites-deploying/deploy.md) instance, log in and open the following URL:
@@ -98,7 +98,7 @@ An Adobe Sign enabled adaptive form is submitted only after all the signers comp
 1. Log in to AEM Forms server with admin credentials and navigate to **Tools** &gt; **Operations** &gt; **Web Console**.
 
    You can also open the following URL in a browser window:
-   `https://[localhost]:[port]/system/console/configMgr`
+   `https://[localhost]:'port'/system/console/configMgr`
 
 1. Locate and open the **Adobe Sign Configuration Service** option. Specify a [cron expression](https://en.wikipedia.org/wiki/Cron#CRON_expression) in the **Status Update Scheduler Expression** field and click **Save**. For example, to run the configuration service daily at 00:00 am, specify `0 0 0 1/1 * ? *` in the **Status Update Scheduler Expression** field.
 

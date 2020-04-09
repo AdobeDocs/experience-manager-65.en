@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Communities Components{#communities-components}
+# Communities Components {#communities-components}
 
 ## Introduction {#introduction}
 

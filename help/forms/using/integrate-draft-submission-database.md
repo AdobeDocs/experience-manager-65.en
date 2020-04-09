@@ -299,12 +299,12 @@ The sample implementation is now configured, which you can use to list your draf
 
 Perform the following steps,on all the author and publish instances, to install the mysql-connector-java-5.1.39-bin.jar file:
 
-1. Navigate to `https://[server]:[port]/system/console/depfinder` and search for com.mysql.jdbc package.
+1. Navigate to `https://'[server]:[port]'/system/console/depfinder` and search for com.mysql.jdbc package.
 1. In the Exported by column, check if the package is exported by any bundle.
 
    Proceed if the package is not exported by any bundle.
 
-1. Navigate to `https://[server]:[port]/system/console/bundles` and click **[!UICONTROL Install/Update]**.
+1. Navigate to `https://'[server]:[port]'/system/console/bundles` and click **[!UICONTROL Install/Update]**.
 1. Click **[!UICONTROL Choose File]** and browse to select the mysql-connector-java-5.1.39-bin.jar file. Also, select **[!UICONTROL Start Bundle]** and **[!UICONTROL Refresh Packages]** checkboxes.
 1. Click **[!UICONTROL Install or Update]**. Once complete, restart the server.
 1. (*Windows only*) Turn off the system firewall for your operating system.

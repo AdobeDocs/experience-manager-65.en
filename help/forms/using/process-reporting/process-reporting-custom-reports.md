@@ -29,14 +29,14 @@ Before adding any custom report, perform the following template procedure:
 
 CRX QueryBuilder REST interface exposes the functionality of the Asset Share Query Builder through a Java API and a REST API. Learn how to use [CRX QueryBuilder REST interface](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html), before performing the following steps:
 
-1. Browse to the URL https://[server]:[port]/lc/bin/querybuilder.json
+1. Browse to the URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Create a query based on the Process Reporting storage node structure and node properties.
 
    You can specify optional parameters to specify offset, limit, hits, and properties. You can hardcode the arguments for static reports and fetch the parameters from UI for dynamic reports.
 
    To fetch all the process names, the query is:
 
-   `https://[Server]:[Port]/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
+   `https://'[server]:[port]'/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
 
    >[!NOTE]
    >

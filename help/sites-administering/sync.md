@@ -166,7 +166,7 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
     * select the existing configuration to open for edit (pencil icon)
       Verify `property name`: **`socialpubsync-publishUser`**
 
-    * set the username and password to the [authorized user](#createauthorizeduser) created on publish in step 2
+    * set the username and password to the [authorized user](#createauthuser) created on publish in step 2
 
         * for example, `usersync-admin`
 
@@ -335,7 +335,7 @@ If the Sling ID is the same for multiple publish instances in a publish farm, th
 
 To validate that all Sling ID values differ, on each publish instance:
 
-1. browse to [https://*host:port*/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings)
+1. browse to `http://<host>:<port>/system/console/status-slingsettings`
 1. check the value of **Sling ID**
 
 ![](assets/chlimage_1-27.png)
@@ -457,7 +457,7 @@ This is what is displayed when User Synchronization has not been enabled:
 
 When the diagnostic is run from the author environment, the pass/fail results will include an [INFO] section displaying the list of configured publish instances for confirmation.
 
-Included in the list is an URL for each publish instance that will run the diagnostics for that instance. The url param `syncUser` is appended to the diagnostics URL with its value set to the *authorized sync user* created in [Step 2](/help/sites-administering/sync.md#2createauthorizeduser).
+Included in the list is an URL for each publish instance that will run the diagnostics for that instance. The url param `syncUser` is appended to the diagnostics URL with its value set to the *authorized sync user* created in [Step 2](#createauthuser).
 
 **Note**: before launching the URL, the *authorized sync user* must already be signed into that publish instance.
 
@@ -497,7 +497,7 @@ If the following is visible in the log:
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-Then verify that the section [2. Create Authorized User](/content/docs/en/aem/6-1/administer/security/security/sync.md#2. create authorized user) was properly followed.
+Then verify that the section [2. Create Authorized User](#createauthuser) was properly followed.
 
 This section describes creating an authorized user, who exists on all publish instances, and identifying them in the 'Secret Provider' OSGi config on author. By default, the user is `admin`.
 

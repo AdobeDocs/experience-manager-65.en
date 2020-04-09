@@ -65,7 +65,7 @@ This will start a MongoDB server using default port 27017.
 
 >[!NOTE]
 >
->If MongoDB is started *after *AEM, **restart **all **AEM **instances so they properly connect to MongoDB.
+>If MongoDB is started *after* AEM, **restart** all **AEM** instances so they properly connect to MongoDB.
 
 ### Demo Production Option: Setup MongoDB Replica Set {#demo-production-option-setup-mongodb-replica-set}
 

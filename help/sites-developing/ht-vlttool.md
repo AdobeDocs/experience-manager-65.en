@@ -35,7 +35,7 @@ To start using VLT, you need to do the following:
 
 To use the VLT tool, you first need to install it. It is not installed by default as it is an additional tool. In addition, you need to set your system's environment variable.
 
-1. Download the FileVault archive file from the [Apache Jackrabbit web site.](https://jackrabbit.apache.org/jcr/downloads.html#vlt)
+1. Download the FileVault archive file from the [Maven artifact repository.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
     >[!NOTE]
     >
     >The source of the VLT tool is [available on GitHub.](https://github.com/apache/jackrabbit-filevault)
@@ -212,7 +212,7 @@ Options:
 
 The following are some common tasks performed in VLT. For detailed information on each command see the individual [commands](#vlt-commands).
 
-### Checking Out a Aubtree {#checking-out-a-subtree}
+### Checking Out a Subtree {#checking-out-a-subtree}
 
 If you only want to check out a subtree of the repository for example, `/apps/geometrixx`, you can do so by typing the following:
 

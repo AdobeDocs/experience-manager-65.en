@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Use Connected Assets to share DAM assets in AEM Sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. A few reasons can be geographically distributed deployments required to work in tandem; acquisitions leading to heterogenous infrastructure that parent company wants to consolidate; growth leading to such scale that dedicated instance is required for asset management.
+In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. A few reasons can be geographically distributed existing deployments that are required to work in tandem or acquisitions leading to heterogenous infrastructure that the parent company wants to use together.
 
 AEM Sites offers capabilities to create web pages and AEM Assets is the Digital Asset Management (DAM) system that supplies the required assets for websites. AEM now supports the above use case by integrating AEM Sites and AEM Assets.
 
@@ -26,21 +26,15 @@ Before you use or configure this capability, ensure the following:
   ||AEM Sites as a Cloud Service |AEM 6.5 Sites on AMS| AEM 6.5 Sites on-premise|
   |---|---|---|---|
   |**AEM Assets as a Cloud Service**| Supported | Supported | Supported |
-  |**AEM 6.5 Assets on AMS** | Not Supported | Supported | Supported |
+  |**AEM 6.5 Assets on AMS** | Supported | Supported | Supported |
   |**AEM 6.5 Assets on-premise** | Not Supported |Not Supported | Not Supported |
 
 ### Supported file formats {#mimetypes}
 
-Authors can search for images and the following types of documents in Content Finder and use the searched assets in Page Editor. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components.
+Authors can search for images and the following types of documents in Content Finder and use the searched assets in Page Editor. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. The list of supported formats are:
 
-* Microsoft Word (DOC and DOCX)
-* Microsoft Excel (XLS and XLSX)
-* Microsoft PowerPoint (PPT and PPTX)
-* Adobe PDF (PDF)
-* OpenDocument Text (ODT)
-* Rich Text Format (RTF)
-* Plain text (TXT)
-* Web pages (HTML)
+* **Image formats**: The image formats supported by the [Image component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) are supported by Connected Assets. Dynamic Media images are not supported.
+* **Document formats**: See [Connected Assets supported document formats](assets-formats.md#supported-document-formats).
 
 ### Users and groups involved {#users-and-groups-involved}
 
@@ -143,7 +137,7 @@ Use the above setup to try the authoring experience to understand how the functi
 
    ![Notification about asynchronous fetching of assets that happens in the background.](assets/assets_async_transfer_fails.png)
 
-   *Figure: Notification about asynchronous fetching of assets that happens in the background.*
+   *Figure: Notification about asynchronous fetching of assets that happens in the background*
 
 1. When publishing a page, AEM displays a complete list of assets that are used in the page. Ensure that the remote assets are fetched successfully at the time of publishing. To check the status of each fetched asset, see [async jobs](/help/assets/asynchronous-jobs.md) user interface.
 
@@ -169,7 +163,7 @@ The fetched assets can be used as any other local asset, except that the associa
 * All Sites Authors have read permissions on the fetched copies, even if they do not have access to the remote DAM deployment.
 * No API support to customize the integration.
 * The functionality supports seamless search and use of remote assets. To make many remote assets available on local deployment in one-go, consider migrating the assets. See [Assets migration guide](assets-migration-guide.md).
-* It is not possible to use a remote asset as a thumbnail for a web page in the [!UICONTROL Thumbnail] tab in [!UICONTROL Page Properties] by clicking [!UICONTROL Select Image].
+* It is not possible to use a remote asset as a page thumbnail on [!UICONTROL Page Properties] user interface. You can set a thumbnail of a web page in [!UICONTROL Page Properties] user interface from the [!UICONTROL Thumbnail] by clicking [!UICONTROL Select Image].
 
 **Set up and licensing**
 

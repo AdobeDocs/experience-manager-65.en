@@ -172,6 +172,23 @@ You combine data (records) saved in an external data source with an interactive 
 
  1. Log in to your AEM instance and create an Interactive Communication. To use the interactive communication mentioned in the sample code given below, [click here](assets/SimpleMediumIC.zip).
  1. [Build and deploy an AEM Project using Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) on your AEM instance.
+ 1. Add [AEM Forms Client SDK version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) or later and latest [AEM Uber Jar](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) in dependencies list of POm file of your AEM project. For example, 
+
+    ```XML
+        <dependency>
+            <groupId>com.adobe.aemfd</groupId>
+            <artifactId>aemfd-client-sdk</artifactId>
+            <version>6.0.122</version>
+        </dependency>
+        <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>uber-jar</artifactId>
+           <version>6.5.0</version>
+           <classifier>apis</classifier>
+           <scope>provided</scope>
+        </dependency>
+    ```    
+    
  1. Open the Java project, create a .java file, for example CCMBatchServlet.java. Add the following code to the file:
 
     ```java
@@ -270,7 +287,7 @@ You combine data (records) saved in an external data source with an interactive 
                             throw new Exception("Invalid JSON Data. File name : " + filePath, ex);
                         }
                     }
-                    BatchInput batchInput = batchBuilderFactory.getBatchInputBuilder().setData(inputJSONArray).setTemplatePath("/content/dam/formsanddocuments/testsample/mediumic").build();
+                    BatchInput batchInput = batchBuilderFactory.getBatchInputBuilder().setData(inputJSONArray).setTemplatePath("/content/dam/formsanddocuments/[path of the interactive communcation]").build();
                     BatchConfig batchConfig = batchBuilderFactory.getBatchConfigBuilder().setBatchType(BatchType.WEB_AND_PRINT).build();
                     BatchResult batchResult = batchGeneratorService.generateBatch(batchInput, batchConfig);
                     List<RecordResult> recordList = batchResult.getRecordResults();
@@ -337,9 +354,7 @@ You combine data (records) saved in an external data source with an interactive 
     * When you specify both PRINT and WEB options, both PDF documents and a JSON file per record are generated.
 
  1. [Use maven to deploy the updated code to your AEM instance](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven).
- 1. Invoke the batch API to generate the interactive communication. The batch API prints returns a stream of PDF and .json files depending on the number of records. You can use the JSON file to [pre-fill a web template](#web-template).
-
-    If you use the above code, the API is deployed at `http://localhost:4502/bin/batchServlet`. If you use the example interactive communication provided in step 1, you can use the [records.json](assets/records.json) to generate an interactive communication. For example, `http://localhost:4502/bin/batchServlet?filePath=C:/aem/records.json>.` It prints and returns a stream of a PDF and a JSON file.
+ 1. Invoke the batch API to generate the interactive communication. The batch API prints returns a stream of PDF and .json files depending on the number of records. You can use the JSON file to [pre-fill a web template](#web-template). If you use the above code, the API is deployed at `http://localhost:4502/bin/batchServlet`. The code prints and returns a stream of a PDF and a JSON files.
 
 ### Pre-fill a web template {#web-template}
 

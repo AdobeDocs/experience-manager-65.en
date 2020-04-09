@@ -613,12 +613,12 @@ This table lists the type of information used in printing native file formats.
   </tr>
   <tr>
    <td><p>Application-specific dialog box instructions</p></td>
-   <td><p>Specifies how to respond to application-specific dialog boxes. </p><p>The file that contains this information is appmon.<i>[appname]</i>.dialog.<i>[locale]</i>.xml (for example, appmon.word.en_US.xml).</p></td>
+   <td><p>Specifies how to respond to application-specific dialog boxes. </p><p>The file that contains this information is appmon.<i>`[appname]`</i>.dialog.<i>`[locale]`</i>.xml (for example, appmon.word.en_US.xml).</p></td>
    <td><p>Do not modify this file. </p><p>To add dialog box instructions for a new native application, see <a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application">Creating or modifying an additional dialog XML file for a native application</a>.</p></td>
   </tr>
   <tr>
    <td><p>Additional application-specific dialog box instructions </p></td>
-   <td><p>Specifies overrides and additions to application-specific dialog box instructions. The section presents an example of such information. </p><p>The file that contains this information is appmon.<i>[appname]</i>.addition.<i>[locale]</i>.xml. An example is appmon.addition.en_US.xml.</p></td>
+   <td><p>Specifies overrides and additions to application-specific dialog box instructions. The section presents an example of such information. </p><p>The file that contains this information is appmon.<i>`[appname]`</i>.addition.<i>`[locale]`</i>.xml. An example is appmon.addition.en_US.xml.</p></td>
    <td><p>Files of this type can be created and modified using an XML editing application. (See <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Creating or modifying an additional dialog XML file for a native application</a>.) </p><p><strong>Important</strong>: You must create additional application-specific dialog box instructions for each native application your server will support. </p></td>
   </tr>
  </tbody>
@@ -670,9 +670,9 @@ A *dialog XML file* specifies how the Generate PDF service responds to system or
 
 When the system or native application displays a dialog box that is not handled by the currently executing script XML file, the Generate PDF service searches the dialog XML files in this order, stopping when it finds a match:
 
-* appmon.*[appname]*.additional.*[locale]*.xml
-* appmon.*[appname].[locale]*.xml (Do not modify this file.)
-* appmon.global.*[locale]*.xml (Do not modify this file.)
+* appmon.`[appname]`.additional.`[locale]`.xml
+* appmon.`[appname]`.`[locale]`.xml (Do not modify this file.)
+* appmon.global.`[locale]`.xml (Do not modify this file.)
 
 If the Generate PDF service finds a match for the dialog box, it dismisses it by sending it the keystroke or other action specified for the dialog box. If the instructions for the dialog box specify an abort message, the Generate PDF service terminates the currently executing job and generates an error message. Such an abort message would be specified in the `abortMessage` element in the script XML grammar.
 
@@ -711,7 +711,7 @@ If you plan to work on dialog or script XML files, you should install the applic
 The dialog and script files reside in the appmondata.jar file. Before you can modify any of these files or add new script or dialog files, you must unpackage this JAR file. For example, assume that you want to add support for the EditPlus application. You create two XML files, named appmon.editplus.script.en_US.xml and appmon.editplus.script.addition.en_US.xml. These XML scripts must be added to the adobe-appmondata.jar file in two locations, as specified below:
 
 * adobe-livecycle-native-jboss-x86_win32.ear &gt; adobe-Native2PDFSvc.war\WEB-INF\lib &gt; adobe-native.jar &gt; Native2PDFSvc-native.jar\bin &gt; adobe-appmondata.jar\com\adobe\appmon. The adobe-livecycle-native-jboss-x86_win32.ear file is in the export folder at `[AEM forms install directory]\configurationManager`. (if AEM Forms is deployed on another J2EE application server, replace the adobe-livecycle-native-jboss-x86_win32.ear file with the EAR file that corresponds to your J2EE application server.)
-* adobe-generatepdf-dsc.jar &gt; adobe-appmondata.jar\com\adobe\appmon (the adobe-appmondata.jar file is within the adobe-generatepdf-dsc.jar file). The adobe-generatepdf-dsc.jar file is in the *[AEM forms install directory]*\deploy folder.
+* adobe-generatepdf-dsc.jar &gt; adobe-appmondata.jar\com\adobe\appmon (the adobe-appmondata.jar file is within the adobe-generatepdf-dsc.jar file). The adobe-generatepdf-dsc.jar file is in the `[AEM forms install directory]\deploy` folder.
 
 After you add these XML files to the adobe-appmondata.jar file, you must redeploy the GeneratePDF component. To add dialog and script XML files to the adobe-appmondata.jar file, perform these tasks:
 
@@ -739,7 +739,7 @@ After you add these XML files to the adobe-appmondata.jar file, you must redeplo
 
 If you want to direct files to a new native application, you must create a script XML file for that application. If you want to modify how the Generate PDF service interacts with a native application that is already supported, you must modify the script for that application.
 
-The script contains instructions that navigate through the native application’s window elements and that supply specific responses to those elements. The file that contains this information is appmon.*[appname]*.script.*[locale]*.xml. An example is appmon.notepad.script.en_US.xml.
+The script contains instructions that navigate through the native application’s window elements and that supply specific responses to those elements. The file that contains this information is `appmon.`[appname]`` `.script.`[locale]`.xml`. An example is appmon.notepad.script.en_US.xml.
 
 #### Identifying steps the script must execute {#identifying-steps-the-script-must-execute}
 
@@ -834,16 +834,16 @@ If you create a script for a native application that was not previously supporte
 
 >[!NOTE]
 >
->In this context, the term additional means the contents of the appmon.[applicationname].addition.[locale].xml file. Such a file specifies overrides and additions to the dialog XML file.
+>In this context, the term additional means the contents of the `appmon.[applicationname].addition.[locale]`.xml` file. Such a file specifies overrides and additions to the dialog XML file.
 
 You can also modify the additional dialog XML file for a native application for these purposes:
 
 * To override the dialog XML file for an application with a different response
 * To add a response to a dialog box that is not addressed in the dialog XML file for that application
 
-The file name that identifies an additional dialogXML file is appmon.*[appname]*.addition.*[locale]*.xml. An example is appmon.excel.addition.en_US.xml.
+The file name that identifies an additional dialogXML file is `appmon.[appname].addition.[locale].xml`. An example is appmon.excel.addition.en_US.xml.
 
-The name of the additional dialog XML file must use the format appmon.*[applicationname]*.addition.*[locale]*.xml, where *applicationname* must exactly match the application name used in the XML configuration file and in the script.
+The name of the additional dialog XML file must use the format `appmon.[applicationname].addition.[locale].xml`, where *applicationname* must exactly match the application name used in the XML configuration file and in the script.
 
 >[!NOTE]
 >
@@ -896,7 +896,7 @@ In this example, the default configuration data supplied with the Generate PDF s
 
 #### Creating an environment variable to locate the native application {#creating-an-environment-variable-to-locate-the-native-application}
 
-Create an environment variable that specifies the location of the native application executable. The variable must use the format *[applicationname]*_PATH, where *applicationname* must exactly match the application name used in the XML configuration file and in the script, and where the path contains the path to the executable in double quotation marks. An example of such an environment variable is `Photoshop_PATH`.
+Create an environment variable that specifies the location of the native application executable. The variable must use the format `[applicationname]_PATH`, where *applicationname* must exactly match the application name used in the XML configuration file and in the script, and where the path contains the path to the executable in double quotation marks. An example of such an environment variable is `Photoshop_PATH`.
 
 After creating the new environment variable, you must restart the server on which the Generate PDF service is deployed.
 
@@ -905,7 +905,7 @@ After creating the new environment variable, you must restart the server on whic
 1. Select **Control Panel &gt; System**.
 1. In the System Properties dialog box, click the **Advanced** tab and then click **Environment Variables**.
 1. Under System Variables in the Environment Variables dialog box, click **New**.
-1. In the New System Variable dialog box, in the **Variable name** box, type a name that uses the format *[applicationname]*_PATH.
+1. In the New System Variable dialog box, in the **Variable name** box, type a name that uses the format `[applicationname]_PATH`.
 1. In the **Variable value** box, type the full path and file name of the application's executable file and then click **OK**. For example, type: `c:\windows\Notepad.exe`
 1. In the Environment Variables dialog box, click **OK**.
 

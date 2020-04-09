@@ -96,7 +96,7 @@ Both the map.pdf file and the directions.pdf file must be placed in a collection
 
 >[!NOTE]
 >
->An `AssemblerResult` object, which contains a collection object, is returned if you invoke the `invokeDDX` operation. This operation is used when you pass two or more input PDF documents to the Assembler service. However, if you pass only one input PDF to the Assembler service and expect only one return document, invoke the `invokeOneDocument` operation. When invoking this operation, a single document is returned. For information about using this operation, see [Assembling Encrypted PDF Documents](/help/forms/developing/assembling-encrypted-pdf-documents-assembling assembling-encrypted-pdf-documents-assembling.md#assembling-encrypted-pdf-documents).
+>An `AssemblerResult` object, which contains a collection object, is returned if you invoke the `invokeDDX` operation. This operation is used when you pass two or more input PDF documents to the Assembler service. However, if you pass only one input PDF to the Assembler service and expect only one return document, invoke the `invokeOneDocument` operation. When invoking this operation, a single document is returned. For information about using this operation, see [Assembling Encrypted PDF Documents](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents).
 
 **Set run-time options**
 

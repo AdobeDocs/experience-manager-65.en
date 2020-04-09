@@ -10,6 +10,7 @@ user-guide-title: AEM 6.5 Authoring User Guide
 + [Authoring User Guide overview](home.md)
 + Essential tasks, tools and concepts for AEM Authoring {#essentials}
     + [First Steps for Authors](first-steps.md)
+    + [Page Authoring](page-authoring.md)
     + [Quick Guide to Authoring Pages](qg-page-authoring.md)
     + [Concept of Authoring](author.md)
     + [Basic Handling](basic-handling.md)

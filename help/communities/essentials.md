@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 ---
 
-# Component, Function and Feature Essentials {#component-function-and-feature-essentials}
+# Component, Function and Feature Essentials  {#component-function-and-feature-essentials}
 
 AEM Communities features require site visitors to become members and login to the [community site](overview.md#communitiessites) before being able to post content. Thus, [community site templates](sites.md), from which a community site is [created](sites-console.md), are designed to include a login feature as well as user profiles, messaging, search, moderation, and translation.
 

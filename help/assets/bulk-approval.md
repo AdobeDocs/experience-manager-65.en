@@ -98,7 +98,9 @@ After the reviewer completes the review (approves or rejects assets), you receiv
 1. Navigate to the Collections console and open the collection. The approval status icons for the assets appear in both the Card and List views.
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
+
    *Figure: Card view*
   
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
+
    *Figure: List view*

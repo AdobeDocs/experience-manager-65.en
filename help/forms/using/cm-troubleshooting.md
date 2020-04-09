@@ -42,7 +42,7 @@ While previewing a letter, the error "Error in loading letter: Could not import 
 
 Reset the letter cache on the publish instance using the following steps and then retry viewing the letter:
 
-1. Go to **`https://[server]:[port]/[contextPath]/system/console/configMgr`** and log in as Admin.
+1. Go to **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** and log in as Admin.
 1. Select **Correspondence Management Configurations**.
 1. In **Correspondence Management Configurations**, disable **Enable Letter Cache **and then click** Save.**
 1. Enable **Enable Letter Cache** and then click **Save**.

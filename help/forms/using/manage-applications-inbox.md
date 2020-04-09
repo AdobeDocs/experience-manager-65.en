@@ -29,7 +29,7 @@ In summary, Inbox allows you to create a new application and manage assigned tas
 
 ## Create application {#create-application}
 
-1. Go to AEM Inbox at https://[server]:[port]/aem/inbox.
+1. Go to AEM Inbox at https://'[server]:[port]'/aem/inbox.
 1. In the Inbox UI, tap **[!UICONTROL Create > Application]**. The Select Application page appears.
 1. Select an application and click **[!UICONTROL Create]**. The adaptive form associated with the application opens. Fill up the information in the adaptive form and tap **[!UICONTROL Submit]**. It launches the associated workflow and creates a task in the assignee's Inbox.
 

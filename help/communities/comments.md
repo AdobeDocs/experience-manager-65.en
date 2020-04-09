@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Using Comments{#using-comments}
+# Using Comments {#using-comments}
 
 ## Introduction {#introduction}
 
@@ -21,8 +21,8 @@ The comments feature is used to allow signed-in site visitors (members) to share
 
 The document describes:
 
-* adding `Comments`to a page.
-* configuration settings for the `Comments`component.
+* Adding `Comments`to a page.
+* Configuration settings for the `Comments`component.
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Under the **Comments** tab, specify how comments are entered by visitors.
 
 * **Allowed File Types**
 
-  Relevant only if Allow File Uploads is checked. A comma-separated list of file name extensions with the "dot" separator. For example: .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specified, then those not specified are not allowed. Default is none specified such that** **all file types are allowed.
+  Relevant only if Allow File Uploads is checked. A comma-separated list of file name extensions with the "dot" separator. For example: .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specified, then those not specified are not allowed. Default is none specified such that all file types are allowed.
 
 * **Rich Text Editor**
 
@@ -98,9 +98,10 @@ Under the **Comments** tab, specify how comments are entered by visitors.
 
 #### User Moderation tab {#user-moderation-tab}
 
-Under the **User Moderation **tab, specify how the posted comments are managed. For more information, see [Moderating User Generated Content](/help/communities/moderate-ugc.md).
+Under the **User Moderation** tab, specify how the posted comments are managed. For more information, see [Moderating User Generated Content](/help/communities/moderate-ugc.md).
 
 * **Pre-Moderation**
+  
   If checked, comments must be approved before they appear on a publish site. Default is deselected.
 
 * **Delete Comments**
@@ -137,7 +138,7 @@ Under the **User Moderation **tab, specify how the posted comments are managed. 
 
 #### Sort Settings tab {#sort-settings-tab}
 
-Under the **Sort Settings **tab, specify how the posted comments are sorted when displayed.
+Under the **Sort Settings** tab, specify how the posted comments are sorted when displayed.
 
 * **Sort Field**
 
@@ -153,7 +154,7 @@ By changing the Comment Resource Type, the comment system no longer generates an
 
 Once the custom resource types are known, enter [Design Mode](/help/sites-authoring/default-components-designmode.md) and double click the placed `Comments` component to open a dialog with an extra tab.
 
-Under the **Resource Types **tab, specify the custom resourceType for new instances of the `Comments or Voting`components:
+Under the **Resource Types** tab, specify the custom resourceType for new instances of the `Comments or Voting`components:
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -183,10 +184,10 @@ When the signed in user has moderator or administrator privileges, they are able
 
 When the site visitor is signed in, depending on the configuration, they may
 
-* post a new comment
-* edit their own comment
-* delete their own comment
-* flag others' comments
+* Post a new comment
+* Edit their own comment
+* Delete their own comment
+* Flag others' comments
 
 #### Anonymous {#anonymous}
 

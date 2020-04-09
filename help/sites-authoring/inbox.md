@@ -74,7 +74,7 @@ To open the AEM notification inbox:
 
    For both views you can also define [View Settings](#inbox-view-settings); the options available are dependent on the current view.
 
-   ![wf-79](assets/wf-79.png)
+   ![wf-79](assets/inbox-list-view.png)
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ You can:
 
 ![wf-91](assets/wf-91.png)
 
-### Inbox - View Settings {#inbox-view-settings}
+### Inbox - Settings {#inbox-view-settings}
 
 For both views (List and Calendar) you can define settings:
 
@@ -121,10 +121,32 @@ For both views (List and Calendar) you can define settings:
 
   For **List View** you can configure the sort mechanism:
 
-    * **Sort on**
+    * **Sort Field**
     * **Sort Order**
 
-  ![wf-83](assets/wf-83.png)
+  ![wf-83](assets/inbox-settings.png)
+
+### Inbox - Admin Control {#inbox-admin-control}
+
+The Admin Control option enables the administrators to:
+
+* Customize header text and logo
+
+* Control the display of navigation links available in header
+
+The Admin Control option is visible only to the members of the administrators or workflow-administrators group.
+
+![admin-control](assets/admin-control.png)
+
+* **Branding Customization**
+
+  * **Customize header text:** Specify the text to display in the header to replace the default **Adobe Experience Manager** text.
+
+  * **Customize Logo:** Specify the image to display in the header as logo. Upload an image in  Digital Asset Management (DAM) and refer to that image in the field.
+
+* **User Navigation**
+  * **Hide navigation options:** Select this option to hide navigation options available in the header. The navigation options include links to other solutions, Help link, and the authoring options available on tapping Adobe Experience Manager logo or text. 
+* **Save:** Tap/click this option to save the settings.
 
 ## Taking Action on an Item {#taking-action-on-an-item}
 

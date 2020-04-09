@@ -35,7 +35,9 @@ To get you up and running quickly:
 
 1. [Upload your master images for multiple views.](#uploading-assets-in-image-sets)
 
-   Start by uploading the images for your Image Sets. Because users can zoom on images in the Image Set Viewer, take zooming into account when you choose images. Make sure that the images are least 2000 pixels in the largest dimension. AEM Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
+   Start by uploading the images for your Image Sets. Because users can zoom on images in the Image Set Viewer, take zooming into account when you choose images. Make sure that the images are least 2000 pixels in the largest dimension for optimal zoom detail. Dynamic Media can render images up to 25 megapixels each. For example, you could use a 5000 x 5000 megapixel image or any other size combination up to 25 megapixels.
+
+   AEM Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
 
 1. [Create Image Sets.](#creating-image-sets)
 
@@ -175,7 +177,7 @@ However, sets created using batch set presets, do *not* appear in the user inter
 
 * Open the properties of an individual asset. Properties indicate what sets the selected asset is referenced or a member of. Click the name of the set to see the entire set.
 
-  ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
+  ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
 
 * From a member image of any set. Select the **[!UICONTROL Sets** menu to display the sets that the asset is a member of.
 

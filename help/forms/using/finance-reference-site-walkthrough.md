@@ -88,17 +88,17 @@ If Sarah is accessing the credit card application from her mobile device, the re
 
 **How it works**
 
-The **Apply Now** button directs Sarah to the credit card application. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:[Port]/editor.html/content/forms/af/we-finance/cc-app.html`.
+The **Apply Now** button directs Sarah to the credit card application. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:'port'/editor.html/content/forms/af/we-finance/cc-app.html`.
 
 Some of the key features you can review in the adaptive form are:
 
 * It is based on an XSD schema.
-* It is built using We Finance Theme A for styling and We.Finance template for layout. Also, it uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template at `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` and the theme at `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content`.
-* It includes adaptive form rules to invoke Form Data Model services to prefill user details of logged in user. It also invokes services to prefill information by social security number or email address provided in the form. You can review the Form Data Models and their services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* It is built using We Finance Theme A for styling and We.Finance template for layout. Also, it uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template at `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance` and the theme at `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content`.
+* It includes adaptive form rules to invoke Form Data Model services to prefill user details of logged in user. It also invokes services to prefill information by social security number or email address provided in the form. You can review the Form Data Models and their services at `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * It uses various adaptive form components to capture inputs and adapts to user responses. It also uses components like Email that support HTML5 input types.
 * It uses the Signature Step component to display the completed form and allows electronic signature on the form.
 * The Save my progress button generates a unique ID for the user and saves the partially-filled application as a draft in a node in AEM repository. Also, it displays a dialog seeking permission to send an email with a link to the node containing the draft application. The Send mail button on the confirmation dialog triggers an email with a link to the node containing the draft.
-* It uses the Invoke AEM Workflow submit action to trigger the credit card approval workflow. You can review the workflow used in this form at `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
+* It uses the Invoke AEM Workflow submit action to trigger the credit card approval workflow. You can review the workflow used in this form at `https://[host]:'port'/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
 
 It is recommended to review the form to understand the schema, components, rules, Form Data Models, forms workflow, and submit action used to build the form.
 
@@ -371,20 +371,20 @@ The submitted application goes to We.Finance for approval.
 
 #### How it works {#how-it-works-7}
 
-The **Apply now** button directs Sarah to the home mortgage application. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:[Port]/editor.html/content/forms/af/we-finance/hm-app.html`.
+The **Apply now** button directs Sarah to the home mortgage application. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:'port'/editor.html/content/forms/af/we-finance/hm-app.html`.
 
 Some of the key features you can review in the adaptive form are:
 
 * It is based on an XSD schema, `homeMortgageApplication.xsd`.
 * It is built using We Finance Theme B for styling and We.Finance template for layout. Also, it uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template and the theme used in the adaptive form at the following locations on your AEM author instance:
 
-    * `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance`
-    * `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
+    * `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance`
+    * `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
 
-* The first tab, Getting Started, in the application is a dynamic mortgage calculator that displays options based on user selection. For example, the fields and values are different for Purchase and Refinance options. This functionality is achieved using show-hide rules. In addition, when you click Continue and the Plans tab is initialized, it invokes a web service configured in a Form Data Model to fetch and display mortgage plans. You can review the Form Data Models and configured services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* The first tab, Getting Started, in the application is a dynamic mortgage calculator that displays options based on user selection. For example, the fields and values are different for Purchase and Refinance options. This functionality is achieved using show-hide rules. In addition, when you click Continue and the Plans tab is initialized, it invokes a web service configured in a Form Data Model to fetch and display mortgage plans. You can review the Form Data Models and configured services at `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * It uses various adaptive form components to capture inputs and adapts to user responses. It also uses components like Email that support HTML5 input types.
 * It uses the Signature Step component to display the completed form and allows electronic signature on the form.
-* It uses the Invoke AEM Workflow submit action to trigger the We Finance Home Mortgage AEM workflow. You can review the workflow used in this form at `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
+* It uses the Invoke AEM Workflow submit action to trigger the We Finance Home Mortgage AEM workflow. You can review the workflow used in this form at `https://[host]:'port'/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
 
 It is recommended to review the form to understand the schema, components, rules, Form Data Models, forms workflow, and submit action used to build the form.
 
@@ -400,7 +400,7 @@ Also, see the following documentation for more information about features used i
 
 #### See it yourself {#see-it-yourself-6}
 
-Go to `https://[server]:[port]/content/we-finance/global/en/all-forms.html` and click the **Apply now** button on Home Mortgage Application. Fill in the details in the Getting Started tab, try different options, and submit the application.
+Go to `https://'[server]:[port]'/content/we-finance/global/en/all-forms.html` and click the **Apply now** button on Home Mortgage Application. Fill in the details in the Getting Started tab, try different options, and submit the application.
 
 Ensure that you specify a valid email ID in the application to receive an acknowledgement mail in your inbox.
 
@@ -456,7 +456,7 @@ If you provided your email ID when filling the mortgage application, you should 
 
 You can view it in AEM publish instance at the following URL:
 
-`https://[host]:[port]/content/forms/af/we-finance/mortgage-loan-welcome-kit.html`
+`https://[host]:'port'/content/forms/af/we-finance/mortgage-loan-welcome-kit.html`
 
 ### Sarah receives an account statement {#sarah-receives-an-account-statement}
 
@@ -615,17 +615,17 @@ The submitted application goes to We.Finance for approval.
 
 #### How it works {#how-it-works-13}
 
-The **Apply now** button directs Sarah to the home mortgage application. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:[Port]/editor.html/content/forms/af/we-finance/ms-dynamics/application-for-home-mortgage.html`.
+The **Apply now** button directs Sarah to the home mortgage application. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:'port'/editor.html/content/forms/af/we-finance/ms-dynamics/application-for-home-mortgage.html`.
 
 Some of the key features you can review in the adaptive form are:
 
 * It is based on an XSD schema, `homeMortgageApplication.xsd`.
 * It is built using We Finance Theme B for styling and We.Finance template for layout. Also, it uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template and the theme used in the adaptive form at the following locations on your AEM author instance:
 
-    * `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance`
-    * `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
+    * `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance`
+    * `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
 
-* The first tab, Getting Started, in the application is a dynamic mortgage calculator that displays options based on user selection. For example, the fields and values are different for Purchase and Refinance options. This functionality is achieved using show-hide rules. In addition, when you click Continue and the Plans tab is initialized, it invokes a web service configured in a Form Data Model to fetch and display mortgage plans. You can review the Form Data Models and configured services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* The first tab, Getting Started, in the application is a dynamic mortgage calculator that displays options based on user selection. For example, the fields and values are different for Purchase and Refinance options. This functionality is achieved using show-hide rules. In addition, when you click Continue and the Plans tab is initialized, it invokes a web service configured in a Form Data Model to fetch and display mortgage plans. You can review the Form Data Models and configured services at `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * It uses various adaptive form components to capture inputs and adapts to user responses. It also uses components like Email that support HTML5 input types.
 * It uses the Signature Step component to display the completed form and allows electronic signature on the form.
 
@@ -683,17 +683,17 @@ If Sarah submitted the application on a mobile device, she would go through the 
 
 #### How it works {#how-it-works-15}
 
-The **Apply Now** button on the newsletter directs Sarah to the home insurance application on We.Finance portal. The application is an adaptive form, which you can review in the authoring instance at `https://[host]:[Port]/editor.html/content/forms/af/we-finance/insurance/application-for-insurance.html`.
+The **Apply Now** button on the newsletter directs Sarah to the home insurance application on We.Finance portal. The application is an adaptive form, which you can review in the authoring instance at `https://[host]:'port'/editor.html/content/forms/af/we-finance/insurance/application-for-insurance.html`.
 
 Some of the key features you can review in the adaptive form are:
 
 * It is based on an XSD schema, `insurance.xsd`.
-* It is built using Insurance theme for styling and uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template at `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` and the theme at `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/insurance/jcr:content`.
+* It is built using Insurance theme for styling and uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template at `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance` and the theme at `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/insurance/jcr:content`.
 
-* It includes adaptive form rules to invoke Form Data Model services to prefill user details of logged in user. It also invokes services to prefill information by social security number or email address provided in the form. You can review the Form Data Models and their services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* It includes adaptive form rules to invoke Form Data Model services to prefill user details of logged in user. It also invokes services to prefill information by social security number or email address provided in the form. You can review the Form Data Models and their services at `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * It uses various adaptive form components to capture inputs and adapts to user responses. It also uses components like Email that support HTML5 input types.
 * The Save my progress button generates a unique ID for the user and saves the partially-filled application as a draft in a node in AEM repository. Also, it displays a dialog seeking permission to send an email with a link to the node containing the draft application. The Send mail button on the confirmation dialog triggers an email with a link to the node containing the draft.
-* It uses the Invoke AEM Workflow submit action to trigger the home insurance approval workflow. You can review the workflow used in this form at `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html`
+* It uses the Invoke AEM Workflow submit action to trigger the home insurance approval workflow. You can review the workflow used in this form at `https://[host]:'port'/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html`
 
 It is recommended to review the form to understand the schema, components, rules, Form Data Models, forms workflow, and submit action used to build the form.
 
@@ -785,13 +785,13 @@ Sarah Rose is planning to invest in a mutual fund. She is an existing We.Finance
 
 #### How it works {#how-it-works-17}
 
-The Blue Chip Growth Fund prospectus is an interactive communication. It uses texts, images, charts, and table components (document fragments) to display product summary, stock style, fund performance, fund details and other related information. You can review the interactive communication in the edit mode at https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html
+The Blue Chip Growth Fund prospectus is an interactive communication. It uses texts, images, charts, and table components (document fragments) to display product summary, stock style, fund performance, fund details and other related information. You can review the interactive communication in the edit mode at `https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`
 
-The charts and tables retrieve data from a form data model. The form data model connects to configured datasources, a database in this walkthrough, to retrieve information specific to the fund. You can review the form data model at https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/wealth-management
+The charts and tables retrieve data from a form data model. The form data model connects to configured datasources, a database in this walkthrough, to retrieve information specific to the fund. You can review the form data model at `https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/wealth-management`
 
 #### See it yourself  {#see-it-yourself-15}
 
-Go to We.Finance portal at https://[publishHost]:[publishPort]/wefinance, tap Wealth Management, expand Funds by Asset Class, and tap We.Finance Blue Chip Growth Fund. The We.Finance Blue Chip Growth Fund prospectus opens.
+Go to We.Finance portal at `https://[publishHost]:[publishPort]/wefinance`, tap Wealth Management, expand Funds by Asset Class, and tap We.Finance Blue Chip Growth Fund. The We.Finance Blue Chip Growth Fund prospectus opens.
 
 ### Sarah explores the Blue Chip Growth Fund prospectus to learn about the fund {#sarah-explores-the-blue-chip-growth-fund-prospectus-to-learn-about-the-fund}
 
@@ -803,11 +803,11 @@ Sarah explores the Overview, Price & Performance, Portfolio Management, Fees & M
 
 The Blue Chip Growth Fund interactive communication uses parent and child panels to segregate related information into different sections. The parent panel organizes all the child panels into tabs.
 
-The layout of the parent tab is set to Tabs on Top to convert all the child panels to tabs. You can review the panels of the interactive communication in the edit mode at https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
+The layout of the parent tab is set to Tabs on Top to convert all the child panels to tabs. You can review the panels of the interactive communication in the edit mode at `https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`.
 
 #### See it yourself  {#see-it-yourself-16}
 
-Go to the Blue Chip Growth Fund interactive communication at https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled. Explore all the tabs.
+Go to the Blue Chip Growth Fund interactive communication at `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled`. Explore all the tabs.
 
 ### Sarah views and emails the PDF version of the Blue Chip Growth Fund page {#sarah-views-and-emails-the-pdf-version-of-the-blue-chip-growth-fund-page}
 
@@ -817,15 +817,15 @@ Sarah is traveling to the countryside on the weekend. She plans to discuss the B
 
 #### How it works {#how-it-works-19}
 
-The Blue Chip Growth Fund prospectus is an interactive communication. It has a web and PDF channel. The interactive communication integrates with AEM Workflows to send the PDF version over an email. You can review the workflow model at https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
+The Blue Chip Growth Fund prospectus is an interactive communication. It has a web and PDF channel. The interactive communication integrates with AEM Workflows to send the PDF version over an email. You can review the workflow model at `https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html`.
 
 ![wealth-management](assets/wealth-management.png)
 
 #### See it yourself  {#see-it-yourself-17}
 
-To download the PDF version, go to the Blue Chip Growth Fund interactive communication https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, tap Download PDF.
+To download the PDF version, go to the Blue Chip Growth Fund interactive communication `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`, tap Download PDF.
 
-To send PDF on email, go to the Blue Chip Growth Fund interactive communication https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, tap EMAIL PDF. Specify **Full Name** and **Email Address**. Click **Send Email**.
+To send PDF on email, go to the Blue Chip Growth Fund interactive communication `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`, tap EMAIL PDF. Specify **Full Name** and **Email Address**. Click **Send Email**.
 
 ## Auto insurance application walkthrough {#auto-insurance-application-walkthrough}
 
@@ -846,13 +846,13 @@ Conrad logs into AEM instance, opens the Auto Insurance dashboard specifies Sara
 
 #### How it works {#how-it-works-20}
 
-Insurance policy renewal communication is an interactive communication. Conrad Simms uses Agent UI to send the insurance policy renewal communication to Sarah. The communication includes Print (PDF) and link to the Web channel of the interactive communication. The interactive communication uses AEM Workflow to send the email. You can see the workflow at https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
+Insurance policy renewal communication is an interactive communication. Conrad Simms uses Agent UI to send the insurance policy renewal communication to Sarah. The communication includes Print (PDF) and link to the Web channel of the interactive communication. The interactive communication uses AEM Workflow to send the email. You can see the workflow at `https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html`
 
 ![auto-insurance-workflow](assets/auto-insurance-workflow.png)
 
 #### See it yourself  {#see-it-yourself-18}
 
-Log in to **We.Finance Auto Insurance Dashboard** as Conrad Simms (csimms/password). The URL is https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Specify the **Customer ID**. Customer ID of Sarah Rose is 900001. Click **Renew Policy**. The interactive communication opens up in the Agent UI. In the Agent UI, enter a valid email address to send the email with policy document attached and click **Submit**. A message, Submission Initiated, is displayed on the screen and then in few seconds another message, Submitted Successfully, is displayed. An email with the subject **Your Auto Insurance Renewal** and is sent at the specified email address. The policy offered to Sarah Rose is a premium policy.
+Log in to **We.Finance Auto Insurance Dashboard** as Conrad Simms (csimms/password). The URL is `https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html`. Specify the **Customer ID**. Customer ID of Sarah Rose is 900001. Click **Renew Policy**. The interactive communication opens up in the Agent UI. In the Agent UI, enter a valid email address to send the email with policy document attached and click **Submit**. A message, Submission Initiated, is displayed on the screen and then in few seconds another message, Submitted Successfully, is displayed. An email with the subject **Your Auto Insurance Renewal** and is sent at the specified email address. The policy offered to Sarah Rose is a premium policy.
 
 The auto insurance walkthrough also contains another customer, Alison Jones. Customer ID of Alison Jones is 900002. When you send the interactive communication to Alison Jones, a standard policy is sent. The difference between standard and premium policy are:
 
@@ -860,18 +860,18 @@ The auto insurance walkthrough also contains another customer, Alison Jones. Cus
 * The standard policy costs less than the premium policy.
 * The premium policy has anti-theft reward and standard policy has smart ride reward
 
-Both the policies use same interactive communication. The sections in the policy are changed or hidden based on the policy-type condition. You can access and review the auto insurance renewal interactive communication directly from https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal
+Both the policies use same interactive communication. The sections in the policy are changed or hidden based on the policy-type condition. You can access and review the auto insurance renewal interactive communication directly from `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal`
 
 **Using Microsoft Dynamics as a data source**
 
 The reference site also provides an interactive communication which uses Microsoft Dynamics as a data source for the form data model. Perform the following steps to configure the interactive communication for the auto insurance walkthrough:
 
-1. Log in to https://[author]:[port]/crx/de as an administrator.
+1. Log in to `https://[author]:'port'/crx/de as an administrator`.
 1. Open the `/apps/we-finance/components/ccrui/ccrui.jsp`file.
 1. Set the value of `FormFieldRequestParameter`to `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
 1. Tap **Save All**. The reference site is configured to use interactive communication which uses MS Dynamics as a data source.
 
-Now, Log in to **We.Finance Auto Insurance Dashboard** as Conrad Simms (csimms/password). The URL is https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Specify the **Customer ID**. Customer ID of Sarah Rose is 900001. Click **Renew Policy**. The interactive communication opens up in the Agent UI. In the Agent UI, enter a valid email address to send the email with policy document attached and click **Submit**. A message, Submission Initiated, is displayed on the screen and then in few seconds another message, Submitted Successfully, is displayed. An email with the subject **Your Auto Insurance Renewal** is sent at the specified email address.
+Now, Log in to **We.Finance Auto Insurance Dashboard** as Conrad Simms (csimms/password). The URL is `https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html`. Specify the **Customer ID**. Customer ID of Sarah Rose is 900001. Click **Renew Policy**. The interactive communication opens up in the Agent UI. In the Agent UI, enter a valid email address to send the email with policy document attached and click **Submit**. A message, Submission Initiated, is displayed on the screen and then in few seconds another message, Submitted Successfully, is displayed. An email with the subject **Your Auto Insurance Renewal** is sent at the specified email address.
 
 >[!NOTE]
 >
@@ -899,7 +899,7 @@ You must have received an email with an attached PDF. The PDF is a print version
 
 The **Renew Now** button in the email directs Sarah to the web version of the policy. You can visit the following URL:
 
-https://[publishServer]:[publishPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=900001
+`https://[publishServer]:[publishPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=900001`
 
 You can check the detailed summary of your auto insurance renewal and click **Renew Now** at the bottom of the page.
 
@@ -917,6 +917,6 @@ The Renew Now button directs Sarah to the payment page. The payment page is an a
 
 Click **Renew Now** to reach to the Payment page. Fill in your Credit Card information, and click **Make Payment**. You can reach the payment page in the authoring instance at:
 
-https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&schema=fdm&customerId=900001
+`https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&schema=fdm&customerId=900001`
 
 The thank you message appears after the Make Payment button is clicked.

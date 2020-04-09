@@ -37,7 +37,7 @@ Adding a button with an action (here send letter for review) to the Create Corre
 
 ### Add the button to the Create Correspondence user interface {#add-the-button-to-the-create-correspondence-user-interface}
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. In the apps folder, create a folder named `defaultApp` with path/structure similar to the defaultApp folder (located in config folder). Use the following steps to create the folder:
 
     1. Right-click the **defaultApp** folder at the following path and select **Overlay Node**:
@@ -164,7 +164,7 @@ After making every server-side change, restart the Adobe Asset Composer Building
 >
 >You may need to clear the browser cache.
 
-1. Go to `https://[host]:[port]/system/console/bundles`. If necessary, log in as Administrator.
+1. Go to `https://[host]:'port'/system/console/bundles`. If necessary, log in as Administrator.
 
 1. Locate the Adobe Asset Composer Building Block bundle. Restart the bundle: click Stop and then click Start.
 
@@ -186,7 +186,7 @@ Handling the action/button on clicking action/button includes logic for:
 * Enabling/disabling newly added action: done by overriding the actionEnabled() function.
 * Actual handling of action when user clicks the button: done by overriding the implementation of the handleAction() function.
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de`. If necessary, log in as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de`. If necessary, log in as Administrator.
 
 1. In the apps folder, create a folder named `js` in the /apps branch of CRX with structure similar to the following folder:
 
@@ -335,7 +335,7 @@ components.zip
 
 The LCA process runs on the LiveCycle server and requires the server address and the login credentials.
 
-1. Go to `https://[server]:[port]/system/console/configMgr` and login as Administrator.
+1. Go to `https://'[server]:[port]'/system/console/configMgr` and login as Administrator.
 1. Locate Adobe LiveCycle Client SDK Configuration and click **Edit** (edit icon). The Configurations panel opens.
 
 1. Enter the following details and click **Save**:
@@ -378,7 +378,7 @@ The required LiveCycle process that enables email service process.
 
 Mention in the AEM server the LiveCycle services you want to access the AEM server.
 
-1. Log in as Administrator to `https:/[host]/:[port]/system/console/configMgr`.
+1. Log in as Administrator to `https:/[host]:'port'/system/console/configMgr`.
 
 1. Locate and click **Adobe LiveCycle Client SDK Configuration**. The Adobe LiveCycle Client SDK Configuration panel appears.
 1. In the Service Name list, click + icon and add a serviceName **SendLetterForReview/SendLetterForReviewProcess**.
@@ -411,7 +411,7 @@ For more information, see [Connecting AEM Forms with Adobe LiveCycle](/help/form
 
 1. Provide the following parameters in configuration file:
 
-    * **crx.serverUrl**=https:/[host]/:[port]/[context path]/[AEM URL]
+    * **crx.serverUrl**=https:/host:port/[context path]/[AEM URL]
     * **crx.username**= AEM user name
     * **crx.password**= AEM password
     * **crx.appRoot**=/content/apps/cm
