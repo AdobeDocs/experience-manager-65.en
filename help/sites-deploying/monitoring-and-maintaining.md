@@ -420,18 +420,18 @@ In certain circumstances you may want to create a custom log file with a differe
    >
    >So for example, at midnight of January 20th 2010 (or when the first log message after this occurs to be precise), ../logs/error.log will be renamed to ../logs/error.log.2010-01-20. Logging for the 21st of January will be output to (a new and empty) ../logs/error.log until it is rolled over at the next change of day.
    >
-   >      | `'.'yyyy-MM` |Rotation at the beginning of each month |
-   >      |---|---|
-   >      | `'.'yyyy-ww` |Rotation at the first day of each week (depends on the locale). |
-   >      | `'.'yyyy-MM-dd` |Rotation at midnight each day. |
-   >      | `'.'yyyy-MM-dd-a` |Rotation at midnight and midday of each day. |
-   >      | `'.'yyyy-MM-dd-HH` |Rotation at the top of every hour. |
-   >      | `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
+   >| `'.'yyyy-MM` |Rotation at the beginning of each month |
+   >|---|---|
+   >| `'.'yyyy-ww` |Rotation at the first day of each week (depends on the locale). |
+   >| `'.'yyyy-MM-dd` |Rotation at midnight each day. |
+   >| `'.'yyyy-MM-dd-a` |Rotation at midnight and midday of each day. |
+   >| `'.'yyyy-MM-dd-HH` |Rotation at the top of every hour. |
+   >| `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
    >
-   >      Note: When specifying a time/date:
-   >      1. You should "escape" literal text within a pair of single quotes (' ');
-   >      this is to avoid certain characters being interpreted as pattern letters.
-   >      1. Only use characters allowed for a valid file name anywhere in the option.
+   >Note: When specifying a time/date:
+   > 1. You should "escape" literal text within a pair of single quotes (' ');
+   >this is to avoid certain characters being interpreted as pattern letters.
+   > 1. Only use characters allowed for a valid file name anywhere in the option.
 
 1. Read your new log file with your chosen tool.
 
