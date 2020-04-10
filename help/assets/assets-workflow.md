@@ -22,7 +22,7 @@ To see the various workflow models available by default, see [!UICONTROL Tools >
 
 *Figure: Some of the default workflow available in [!DNL Experience Manager]*
 
-# Apply workflows to process assets {#applying-workflows-to-assets}
+## Apply workflows to process assets {#applying-workflows-to-assets}
 
 Applying workflows to digital assets is the same as for website pages. For a complete guide on how to create and use workflows, see [start workflows](/help/sites-authoring/workflows-participating.md).
 
