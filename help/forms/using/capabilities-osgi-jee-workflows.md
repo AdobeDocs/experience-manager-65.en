@@ -76,12 +76,17 @@ AEM Inbox is used to run and monitor Forms-centric AEM Workflows on OSGi. HTML W
   </tr>
   <tr>
    <td>Queues (shared personal queue, Claim tasks from queue)</td>
-   <td>Not Supported</td>
+   <td>Supported</td>
    <td>Supported</td>
   </tr>
   <tr>
    <td>Out-of-office notification</td>
-   <td>Not Supported</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>Customizing UI elements</td>
+   <td>Supported</td>
    <td>Supported</td>
   </tr>
   <tr>
@@ -89,6 +94,7 @@ AEM Inbox is used to run and monitor Forms-centric AEM Workflows on OSGi. HTML W
    <td>Not Supported</td>
    <td>Supported</td>
   </tr>
+
  </tbody>
 </table>
 
@@ -304,6 +310,12 @@ Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE
    <td>Supported</td>
   </tr>
   <tr>
+   <td>Variables to store data </td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  
+  <tr>
    <td>OR, AND Split</td>
    <td>Not Supported</td>
    <td>Supported</td>
@@ -313,6 +325,7 @@ Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE
    <td>Not Supported</td>
    <td>Not Supported</td>
   </tr>
+
  </tbody>
 </table>
 
