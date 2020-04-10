@@ -947,30 +947,7 @@ The versioning functionality lets you do the following:
 
 ### Start a workflow on an asset {#starting-a-workflow-on-an-asset}
 
-1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
-1. Tap the GlobalNav icon, then select **[!UICONTROL Timeline]** from the menu to display the timeline.
-
-   ![timeline-1](assets/timeline.png)
-
-1. Tap the **[!UICONTROL Actions]** (arrow) icon at the bottom to open the list of actions available for the asset.
-
-   ![chlimage_1-252](assets/chlimage_1-45.png)
-
-1. Tap **[!UICONTROL Start Workflow]** from the list.
-
-   ![chlimage_1-253](assets/chlimage_1-49.png)
-
-1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
-
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
-1. (Optional) Specify a title for the workflow, which can be used to reference the workflow instance.
-
-   ![chlimage_1-255](assets/chlimage_1-51.png)
-
-1. Tap **[!UICONTROL Start]**, then tap **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
-
-   ![chlimage_1-256](assets/chlimage_1-52.png)
+To apply a workflow to process an asset, see [start workflow on an asset](/help/assets/assets-workflow.md#apply-a-workflow-to-an-asset).
 
 ## Collections {#collections}
 
