@@ -154,8 +154,8 @@ Moreover the console provides useful information about the versions:
 
 In the next example:
 
-* The **Shirts** versions are purged because their version age is greater than 2 days.
-* The **Tonga Fashions!** versions are purged because their number of versions is greater than 5.
+* The **[!DNL Shirts]** versions are purged because their version age is greater than 2 days.
+* The **[!DNL Tonga Fashions!]** versions are purged because their number of versions is greater than 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
@@ -420,18 +420,18 @@ In certain circumstances you may want to create a custom log file with a differe
    >
    >So for example, at midnight of January 20th 2010 (or when the first log message after this occurs to be precise), ../logs/error.log will be renamed to ../logs/error.log.2010-01-20. Logging for the 21st of January will be output to (a new and empty) ../logs/error.log until it is rolled over at the next change of day.
    >
-   >      | `'.'yyyy-MM` |Rotation at the beginning of each month |
-   >      |---|---|
-   >      | `'.'yyyy-ww` |Rotation at the first day of each week (depends on the locale). |
-   >      | `'.'yyyy-MM-dd` |Rotation at midnight each day. |
-   >      | `'.'yyyy-MM-dd-a` |Rotation at midnight and midday of each day. |
-   >      | `'.'yyyy-MM-dd-HH` |Rotation at the top of every hour. |
-   >      | `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
+   >| `'.'yyyy-MM` |Rotation at the beginning of each month |
+   >|---|---|
+   >| `'.'yyyy-ww` |Rotation at the first day of each week (depends on the locale). |
+   >| `'.'yyyy-MM-dd` |Rotation at midnight each day. |
+   >| `'.'yyyy-MM-dd-a` |Rotation at midnight and midday of each day. |
+   >| `'.'yyyy-MM-dd-HH` |Rotation at the top of every hour. |
+   >| `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
    >
-   >      Note: When specifying a time/date:
-   >      1. You should "escape" literal text within a pair of single quotes (' ');
-   >      this is to avoid certain characters being interpreted as pattern letters.
-   >      1. Only use characters allowed for a valid file name anywhere in the option.
+   >Note: When specifying a time/date:
+   > 1. You should "escape" literal text within a pair of single quotes (' ');
+   >this is to avoid certain characters being interpreted as pattern letters.
+   > 1. Only use characters allowed for a valid file name anywhere in the option.
 
 1. Read your new log file with your chosen tool.
 
@@ -1097,7 +1097,7 @@ If your system is running out of memory this can be seen in various ways, includ
 
 In these cases check:
 
-* the JVM settings used to [start AEM](/help/sites-deploying/deploy.md#getting-started)
+* The JVM settings used to [start AEM](/help/sites-deploying/deploy.md#getting-started)
 * The Knowledge Base:
 
     * [Analyze Memory Problems](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
