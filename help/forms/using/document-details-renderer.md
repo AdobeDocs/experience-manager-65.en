@@ -90,6 +90,3 @@ If AEM Forms workspace's direct action buttons are visible, it calls `window.[Ex
 For example, a Flex application can define `ExternalInterface.addCallback('getMessage', listener)` to support this communication. If the third-party application wants to handle form submission via its own buttons, then you should specify `hideDirectActions = true() in the runtimeMap` and you may skip this listener. Hence, this construct is optional.
 
 You can read more on third-party application integration with respect to Correspondence Management at [Integrating Correspondence Management in AEM Forms workspace](/help/forms/using/integrating-correspondence-management-html-workspace.md).
-
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -93,5 +93,3 @@ Once the .apk file has been generated, execute the following command to install 
 **Windows users:** `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
 
 **MAC users:** `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

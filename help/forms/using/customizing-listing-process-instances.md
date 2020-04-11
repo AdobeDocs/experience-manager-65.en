@@ -90,5 +90,3 @@ To display the `description` property of the process instance in the process ins
        padding : 2px;
    }
    ```
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

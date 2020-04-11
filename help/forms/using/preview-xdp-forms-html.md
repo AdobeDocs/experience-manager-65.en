@@ -118,5 +118,3 @@ Testing your form by using a sample data source ensures that the data and fields
 ## Preview forms located in a repository {#html-preview-of-forms-in-forms-manager}
 
 In AEM Forms, you can preview forms and documents in a repository. Preview helps to know exactly how the forms look and behave as they will be used end users.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

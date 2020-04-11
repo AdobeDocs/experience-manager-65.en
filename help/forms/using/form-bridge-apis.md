@@ -258,5 +258,3 @@ if(a.errors) {
     formBridge.submitForm({success:suc,error:err}); // not passing a context means that this will be formBridge itself. Validation errors will be checked.
   }
 ```
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

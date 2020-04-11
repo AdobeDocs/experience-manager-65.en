@@ -81,5 +81,3 @@ To customize the task details page:
 >To customize the task details page with tasks created in the **Start Process** tab of AEM Forms workspace, add the new information to `/apps/ws/js/runtime/templates/startprocess.html`.
 >
 >To add new styles for the information added in the details page, modify the CSS file by using the *User interface changes* section in [Workspace Customization](/help/forms/using/changing-locale-user-interface.md#main-pars-header-3).
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

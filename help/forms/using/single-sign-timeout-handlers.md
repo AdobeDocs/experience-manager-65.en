@@ -34,5 +34,3 @@ On this pop-up dialog:
 >[!NOTE]
 >
 >If no action is taken, the user is automatically logged out of AEM Forms workspace three seconds before the session expiry.
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

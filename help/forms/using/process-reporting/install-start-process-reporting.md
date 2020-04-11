@@ -276,5 +276,3 @@ For details on the data publishing service and how to schedule this service, see
 * **[!UICONTROL Sync]**: Synchronize the embedded Process Reporting repository with the AEM Forms database.
 * **[!UICONTROL Help]**: View the Help documentation on Process Reporting.
 * **[!UICONTROL Logout]**: Log out of Process Reporting
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

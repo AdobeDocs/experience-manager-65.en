@@ -45,5 +45,3 @@ To update the URL of the online documentation, follow the [Generic Steps of cust
 
     1. Open /apps/ws/js/registry.js for editing.
     1. Search and replace `text!/lc/libs/ws/js/runtime/templates/userinfo.html` with `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

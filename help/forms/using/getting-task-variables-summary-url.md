@@ -80,5 +80,3 @@ In this sample orchestration, an employee submits a leave application form. The 
 In AEM Forms workspace, when you open a task, the summary Url accesses the CRX node, and the HTML renderer displays the summary.
 
 The summary layout can be changed without modifying the process. The HTML renderer displays the summary appropriately.
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

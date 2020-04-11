@@ -74,5 +74,3 @@ Set the user interface preferences in the Preferences &gt; UI Settings tab. The 
 * **Notify Task Events via Email:** Specifies whether you receive email notifications for task events, including task assignments, reminders, and deadlines for tasks in your To-do list and in group To-do lists that you belong to.
 * **Attach Forms in Email:** Specifies whether a copy of the form is attached to email notification messages. Attachments are supported only for PDF and XDP forms.
 * **Save draft periodically:** Specifies whether your form drafts are auto-saved periodically or not. To save your drafts periodically, enable this option and set the auto-save duration from 1 to 30 minutes. When auto-save is enabled and a user is working on a draft, the draft is saved periodically after the specified number of minutes. The draft is auto-saved only when there is a change in the draft since the last save or auto-save. When the draft is saved, an alert message appears on the screen.
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**
