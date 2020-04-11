@@ -44,5 +44,3 @@ If the app is offline, the form and its data is saved in the Outbox folder.
 If the app is online, the task is synchronized with the AEM Forms server and assigned to the user specified in the process.
 
 To work with the task in your task list, see [Opening a task](/help/forms/using/open-task.md).
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

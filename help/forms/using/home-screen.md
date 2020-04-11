@@ -42,5 +42,3 @@ You can change the default Home screen of the app either from the **[General Set
 The change made to Home screen setting on the app effects the Home screen for the current logged or the user on the current mobile device.
 
 However, the change made in HTML Workspace effects all AEM Forms app users logged on to the AEM Forms server.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -88,5 +88,3 @@ Follow these steps to configure AEM Forms workspace.
 1. In properties of `ws2`, change value of `sling:redirect` to `content/ws2`.
 
 1. Change value of `sling:match` to `^[^/\||]/[^/\||]/ws2$`.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

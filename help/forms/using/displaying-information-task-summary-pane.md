@@ -46,5 +46,3 @@ AEM Forms workspace allows you to display a web page of your choice in the Task 
 
     * Set the value of task summary url as `/lc/content/SampleSummary.html` in Assign Task step.
     * When the task associated with this Assign Task step is opened in AEM Forms workspace, the `html.esp` at `/apps/SampleSummary` is rendered in task summary pane.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

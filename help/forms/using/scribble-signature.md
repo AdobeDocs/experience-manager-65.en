@@ -99,5 +99,3 @@ To delete the signatures from the form:
 
 * (Mobile devices) Long press the signature field, and on the confirmation dialog, tap **Yes**.
 * (Desktop) Hover over the signature field, click the **Cancel** icon, and on the confirmation dialog, click **Yes**.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

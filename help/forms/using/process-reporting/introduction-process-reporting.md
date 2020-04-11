@@ -65,5 +65,3 @@ AEM Forms servers run numerous processes in parallel. These processes keep on tr
 Process Reporing provides permission-based access to the user interface.
 
 This means only users with reporting permissions have access to the Process Reporting user interface.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

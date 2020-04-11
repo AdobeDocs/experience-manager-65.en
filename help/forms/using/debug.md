@@ -178,5 +178,3 @@ Check the following parameters:
 1. In the desktop browser, go to Developer Tools -&gt; Resources.
 
    Check on the left side in Frames if that image displays.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

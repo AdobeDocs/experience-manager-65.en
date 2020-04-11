@@ -139,7 +139,7 @@ For more information on the Interactive Communication authoring interface, see [
 
    ![Unbound variable](assets/df_unbound_variable_new.png)
 
-   Tap the document fragment, tap ![configure_icon](assets/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to each data model object or variable to edit the properties.
+   Tap the document fragment, tap ![configure_icon](assets/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](assets/edit.svg) (Edit) icon next to each data model object or variable to edit the properties.
 
 1. To set up binding of variables, tap a variable and select ![configure_icon](assets/configure_icon.png) (Configure) and then set up the binding properties in the Properties panel in the sidebar.
 
@@ -181,7 +181,7 @@ For more information on the Interactive Communication authoring interface, see [
 
    ![webchannelassets](assets/webchannelassets.png)
 
-   Tap the document fragment, tap ![configure_icon](assets/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to each data model object or variable to edit the properties. In addition, for document fragments that have been [auto-generated](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) in Web channel using Print channel, use the ![](assets/cancelinheritance.png) (Cancel Inheritance) icon next to each data model object and variable to [cancel inheritance](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) and to be able to edit them.
+   Tap the document fragment, tap ![configure_icon](assets/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](assets/edit.svg) (Edit) icon next to each data model object or variable to edit the properties. In addition, for document fragments that have been [auto-generated](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) in Web channel using Print channel, use the ![](assets/cancelinheritance.png) (Cancel Inheritance) icon next to each data model object and variable to [cancel inheritance](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) and to be able to edit them.
 
 1. To add additional components in the Web channel, with the Web channel selected, tap **[!UICONTROL Components]**. Drag-and-drop components in the web channel of your Interactive Communication as required and proceed to configure them.
 
@@ -393,7 +393,7 @@ Tap the root panel in the Web template and tap **+** to add a **Table** componen
 
 #### Create a hyperlink for text in the table cell {#createhyperlinktable}
 
-1. Select the default text box in the table cell and tap ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit).
+1. Select the default text box in the table cell and tap ![](assets/edit.svg) (Edit).
 1. Select the text in the table cell and tap the Hyperlink icon.
 1. Specify the URL in the **Path** field.
 1. Tap ![](assets/done_icon.png) to save the hyperlink properties.

@@ -389,5 +389,3 @@ You can set a default person to which all of your tasks are sent. You can also s
    >The process designer may specify that tasks from some processes are always kept private and not forwarded to other users. This setting overrides any settings that you make.
 
 1. When you finish setting preferences, click **Save**. If your settings indicate that you are currently out of the office, your changes take effect immediately. Otherwise, they take effect at the specified start date and time. If you log in while you are out of the office, you are not considered in the office until you change your settings.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

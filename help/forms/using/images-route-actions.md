@@ -170,5 +170,3 @@ To
 
 1. Replace the text with the following:
 `"text!/lc/apps/ws/js/runtime/templates/taskdetails.html"`
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**
