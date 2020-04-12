@@ -6,17 +6,17 @@ contentOwner: AG
 
 # Process digital assets {#process-assets}
 
-[!DNL Adobe Experience Manager Assets] allows you to work on your digital assets in many ways to allow for robust asset processing. You can use the available processing methods or extend the methods to ensure end-to-end business process completion using, audits and compliance of, discovery and distribution of, and basic sanity of your digital assets. You can do all this while achieving the required scale and customization.
+[!DNL Adobe Experience Manager Assets] allows you to work on your digital assets in many ways to allow for robust asset processing. You can use the default or customized processing methods to ensure end-to-end business process completion, audits and compliance, discovery and distribution, and basic sanity of your digital assets. You can do the asset management tasks while achieving the required scale and customization.
 
 ## Understand workflows {#understand-workflows}
 
-For asset processing, [!DNL Experience Manager] uses workflows. Workflows help automate the business logic or activities. Granular steps to accomplish specific tasks are provided by default and developers can create their own custom steps. These steps can be combined in a logical order to create workflows. For example, a workflow can automatically apply watermark on uploaded images based on a specific criteria such as metadata embedded in image, folder it is uploaded to, resolution of the image, and so on. Another example is a workflow configured to watermark images in such a manner and simultaneously addressing multiple asset management needs such as adding metadata, creating renditions, adding intelligent tags for asset discovery, publishing to a datastore, setting permissions for user access, and so on.
+For asset processing, [!DNL Experience Manager] uses workflows. Workflows help automate the business logic or activities. Granular steps to accomplish specific tasks are provided by default and developers can create their own custom steps. These steps can be combined in a logical order to create workflows. For example, a workflow can apply watermark on uploaded images based on a specific criteria, such as folder it is uploaded to, resolution of the image, and so on. Another example is a workflow configured to watermark and simultaneously add metadata, create renditions, add intelligent tags, and publish to a datastore.
 
-## Default workflows available in Experience Manager {#default-workflows}
+## Default workflows available in [!DNL Experience Manager] {#default-workflows}
 
 By default, all uploaded assets are processed using [!UICONTROL DAM Update Asset] workflow. The workflow executes for each uploaded asset and accomplishes basic asset management tasks such as rendition generation, metadata writeback, page extraction, media extraction, and transcoding.
 
-To see the various workflow models available by default, see [!UICONTROL Tools > Workflow > Models] in [!DNL Experience Manager].
+To see the various workflow models available by default, see **[!UICONTROL Tools > Workflow > Models]** in [!DNL Experience Manager].
 
 ![Some of the default workflow](assets/aem-default-workflows.png)
 
@@ -34,6 +34,9 @@ Use workflows in digital assets to activate the asset or create watermarks. Many
 
 ## Apply a workflow to an asset {#apply-a-workflow-to-an-asset}
 
+<!-- 
+TBD: Add animated GIF for these steps instead of all these screenshots.
+-->
 To apply a workflow to an asset, follow these steps:
 
 1. Navigate to the location of the asset for which you want to start a workflow, and click the asset to open the asset page. Select **[!UICONTROL Timeline]** from the menu to display the timeline.
@@ -42,11 +45,7 @@ To apply a workflow to an asset, follow these steps:
 
 1. Click **[!UICONTROL Actions]** at the bottom to open the list of actions available for the asset.
 
-   ![chlimage_1-252](assets/chlimage_1-45.png)
-
 1. Click **[!UICONTROL Start Workflow]** from the list.
-
-   ![chlimage_1-253](assets/chlimage_1-49.png)
 
 1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
@@ -79,7 +78,7 @@ To apply a workflow to an asset, follow these steps:
 
 ## Apply a workflow to multiple folders {#applying-a-workflow-to-multiple-folders}
 
-The procedure to apply a workflow to multiple folders is similar to the procedure to apply a workflow to multiple assets. Select the folders in the Assets console, and perform steps 2-7 of the procedure [apply a workflow to multiple assets](/help/assets/assets-workflow.md#applying-a-workflow-to-multiple-assets).
+The procedure to apply a workflow to multiple folders is similar to the procedure to apply a workflow to multiple assets. Select the folders in the [!DNL Assets] interface, and perform steps 2-7 of the procedure [apply a workflow to multiple assets](/help/assets/assets-workflow.md#applying-a-workflow-to-multiple-assets).
 
 ## Apply a workflow to a collection {#applying-a-workflow-to-a-collection}
 
@@ -87,9 +86,9 @@ See [apply a workflow on a collection](/help/assets/managing-collections-touch-u
 
 ## Auto-start a workflow to process assets conditionally {#auto-execute-workflow-on-some-assets}
 
-Administrators can configure workflow to automatically execute and process assets based on pre-defined conditions. The functionality is useful for line of business users and marketers, for example, to create custom workflow on specific folders. Say all assets from an agency's photoshoot can be watermarked or all assets uploaded by a freelancer can be processed to create specific renditions.
+Administrators can configure workflow to automatically execute and process assets based on pre-defined conditions. The functionality is useful for line-of-business users and marketers, for example, to create custom workflow on specific folders. Say all assets from an agency's photoshoot can be watermarked or all assets uploaded by a freelancer can be processed to create specific renditions.
 
-For a workflow model, users can create a workflow launcher that launches it. Administrators can provide access to marketers to create the workflows and configure launcher. Users can modify the default [!UICONTROL DAM Update Asset] workflow to add the extra steps required to process specific assets. The workflow executes on all newly uploaded assets, so use one of the following approaches to limit the execution of the extra steps on specific assets:
+For a workflow model, users can create a workflow launcher that executes it. A workflow launcher monitors changes in the content repository and executes the workflow when the pre-defined conditions are fulfilled. Administrators can provide access to marketers to create the workflows and configure launcher. Users can modify the default [!UICONTROL DAM Update Asset] workflow to add the extra steps required to process specific assets. The workflow executes on all newly uploaded assets. Use one of the following approaches to limit the execution of the extra steps on specific assets:
 
 * Make a copy of the [!UICONTROL DAM Update Asset] workflow and modify it to execute on a specific folder hierarchy. This approach is useful for a few folders.
 * The extra processing steps can be added using an [OR split](/help/sites-developing/workflows-step-ref.md#or-split) as conditionally applicable to as many folders as required.
@@ -98,5 +97,6 @@ For a workflow model, users can create a workflow launcher that launches it. Adm
 >
 >* [Apply and participate in workflows](/help/sites-authoring/workflows.md)
 >* [Create workflow models and extend workflow functionality](/help/sites-developing/workflows.md)
+>* [Methods to execute workflows](/help/sites-administering/workflows-starting.md)
 >* [Workflow best practices](/help/sites-developing/workflows-best-practices.md)
 >* [Community article on modifying asset using workflow](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
