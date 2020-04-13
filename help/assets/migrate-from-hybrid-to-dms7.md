@@ -28,7 +28,7 @@ This topic explains the two options available for moving to Dynamic Media&ndash;
 
 Two options are available when moving from Dynamic Media&ndash;Hybrid to Dynamic Media&ndash;Scene7. The first option is to simply provision a new instance of Dynamic Media&ndash;Scene7 on Adobe Experience Manager. The second option is to migrate your existing instance of Dynamic Media&ndash;Hybrid to Dynamic Media&ndash;Scene7.
 
-## Option 1 - Provisioning a new instance of Dynamic Media&ndash;Scene7 {#provision-new-dms7}
+## Option 1 - Provisioning a new instance of Dynamic Media&ndash;Scene7 on Adobe Experience Manager {#provision-new-dms7}
 
 Consider simply starting fresh with a new, provisioned instance of Dynamic Media&ndash;Scene7 on Adobe Experience Manager. In addition to the ingestion and processing of assets by way of Dynamic Media Cloud Service, an Adobe audit of asset usage, workflows, and components is highly recommended. In many cases, custom components and workflows can be replaced by newer, out-of-the-box features.
 
