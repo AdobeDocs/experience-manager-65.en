@@ -23,7 +23,7 @@ Before you use or configure this capability, ensure the following:
 * The users are part of appropriate user groups on each deployment.
 * For Adobe Experience Manager deployment types, one of the supported criterion is met. AEM 6.5 Assets works with AEM as a Cloud Service. For more information, see [Connected Assets functionality in AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
-  ||AEM Sites as a Cloud Service |AEM 6.5 Sites on AMS| AEM 6.5 Sites on-premise|
+  | |AEM Sites as a Cloud Service |AEM 6.5 Sites on AMS| AEM 6.5 Sites on-premise|
   |---|---|---|---|
   |**AEM Assets as a Cloud Service**| Supported | Supported | Supported |
   |**AEM 6.5 Assets on AMS** | Supported | Supported | Supported |
@@ -41,7 +41,7 @@ Authors can search for images and the following types of documents in Content Fi
 The various roles that are involved to configure and use the capability and their corresponding user groups are described below. Local scope is used for the use case where a web page is created by an author. Remote scope is used for the DAM deployment hosting the required assets. The Sites author fetches these remote assets.
 
 | Role | Scope | User group | User name in walk-through | Requirement |
-|----------------------------------|--------|------------------------------------------------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---|---|---|---|---|
 | AEM Sites Administrator | Local | AEM administrator | `admin` | Set up AEM, configure integration with the remote Assets deployment. |
 | DAM user | Local | Author | `ksaner` | Used to view and duplicate the fetched assets at `/content/DAM/connectedassets/`. |
 | AEM Sites author | Local | Author (with read access on the remote DAM and author access on local Sites) | `ksaner` | End user are Sites authors who use this integration to improve their content velocity. The authors search and browse assets in remote DAM using Content Finder and using the required images in local web pages. The credentials of `ksaner` DAM user are used. |
@@ -69,13 +69,11 @@ To configure Connected Assets and local Sites connectivity, follow these steps.
     1. AEM Assets location is `https://[assets_servername_ams]:[port]`.
     1. Credentials of a DAM distributor (technical user).
     1. In **[!UICONTROL Mount Point]** field, enter the local AEM path where AEM fetches the assets. For example, `remoteassets` folder.
-
     1. Adjust the values of **[!UICONTROL Original Binary transfer optimization Threshold]** depending on your network. An asset rendition with a size that is greater than this threshold, is transferred asynchronously.
     1. Select **[!UICONTROL Datastore Shared with Connected Assets]**, if you use a datastore to store your assets and the Datastore is the common storage between both AEM deployments. In this case, the threshold limit does not matter as actual asset binaries reside on the datastore and are not transferred.
-
-   ![A typical configuration for Connected Assets](assets/connected-assets-typical-config.png)
-
-   *Figure: A typical configuration for Connected Assets*
+    ![A typical configuration for Connected Assets](assets/connected-assets-typical-config.png)
+    
+    *Figure: A typical configuration for Connected Assets*
 
 1. As the assets are already processed and the renditions are fetched, disable the workflow launchers. Adjust the launcher configurations on the local (AEM Sites) deployment to exclude the `connectedassets` folder, in which the remote assets are fetched.
 
