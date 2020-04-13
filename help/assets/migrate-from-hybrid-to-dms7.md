@@ -39,7 +39,7 @@ Consider simply starting fresh with a new, provisioned instance of Dynamic Media
 | 1 | Clone Dynamic Media&ndash;Hybrid Author instance. | You should maintain your existing instance of Dynamic Media&ndash;Hybrid Author for fallback purposes until the remaining steps in this migration process are successfully completed. |
 | 2 | Start cloned Author instance in Dynamic Media&ndash;Scene7 mode. |  |
 | 3 | In Adobe Experience Manager Cloud Services, configure Dynamic Media with Dynamic Media&ndash;Scene7 credentials. | Adobe needs to approve the Dynamic Media&ndash;Scene7 provisioning. You will have concurrent Dynamic MediaM&ndash;Hybrid and Dynamic Media&ndash;Scene7 environments which will be supported for a limited time. |
-| 4 | Create Migration bundle to ingest assets as needed.<br>Delete the local PTIFFs that were created during initial ingestion into Dynamic MediaHybrid ingestion) | If all assets are currently available in your Dynamic Media&ndash;Hybrid instance, a clone of that already includes them all. Therefore, no bundle is needed. |
+| 4 | Create Migration bundle to ingest assets as needed.<br>Delete the local PTIFFs that were created during initial ingestion into Dynamic Media&ndash;Hybrid. | If all assets are currently available in your Dynamic Media&ndash;Hybrid instance, a clone of that already includes them all. Therefore, no bundle is needed. |
 | 5 | Run asset update workflow to synchronize assets to Dynamic Media Cloud Service. | Adobe recommends that the update workflow be done in batches to allow for compaction. |
 | 6 | Migrate viewer, image, and video presets. |  |
 | 7 | Go through each Web Content Management-referenced assets and update their associated URLs. |  |
