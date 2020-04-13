@@ -885,7 +885,7 @@ Here is an example of how you can configure AEM to print annotations in CJK (Chi
 
 ## Create, manage, preview, and revert asset versions {#asset-versioning}
 
-Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset.
+Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset. In Experience Manager, you can create a version, view the current revision, view side-by-side differences between two versions of images, and restore an asset to its previous version.
 
 You can create versions in Experience Manager in the following scenarios:
 
@@ -896,17 +896,11 @@ You can create versions in Experience Manager in the following scenarios:
 
 You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
 
-In Experience Manager, you can:
-
-* Create a version of an asset.
-* View the current revision for an asset.
-* Restore the asset to a previous version.
-
 1. Navigate to the location of the asset for which you want to create a version and click it to open its preview. From the upper-left corner of the page, open the menu, and select **[!UICONTROL Timeline]**.
 
    ![From the left navigation menu, select timeline option](assets/timeline.png)
 
-  *Figure: Open menu from upper-left area of page and select [!UICONTROL Timeline] option.*
+   *Figure: Open menu from upper-left area of page and select [!UICONTROL Timeline] option.*
 
 1. To create a version of the asset:
   
@@ -915,6 +909,8 @@ In Experience Manager, you can:
    * Click **[!UICONTROL Create]** to create a version.
 
      ![chlimage_1-251](assets/create-new-version-from-timeline.png)
+
+     *Figure: Create a version of an asset from the [!UICONTROL Timeline] left sidebar.*
 
 1. To view a version of an asset:
 
@@ -931,6 +927,8 @@ In Experience Manager, you can:
    * Click **[!UICONTROL Revert to this Version]**.
 
      ![select_version](assets/select_version.png)
+
+     *Figure: Select a version and revert to it. It becomes the current version which is then available to the DAM users.*
 
 1. To compare between two versions of an image, follow these steps:
    * Click the version to be compared with the current version.
