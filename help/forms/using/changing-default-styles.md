@@ -53,5 +53,3 @@ The following two images show the difference between the default and customized 
        &lt;link href="/path/to/stylesheet" rel="stylesheet" type="text/css"/&gt;
 
     1. Save the file.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

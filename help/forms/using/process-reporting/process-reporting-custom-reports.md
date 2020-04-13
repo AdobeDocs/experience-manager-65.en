@@ -658,4 +658,3 @@ The prerequisites to creating a separate UI for displaying results are [Sling Ba
 Import the `sample-report-pkg-1.zip` package to integrate custom reports and UI discussed in the article to the Process management UI.
 
 [Get File](assets/sample-report-pkg-1.zip)
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

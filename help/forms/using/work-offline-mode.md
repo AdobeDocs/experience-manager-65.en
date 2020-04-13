@@ -44,5 +44,3 @@ To configure the server-side offline component of AEM Forms app:
     * **Resource Observation Paths**: Specifies paths where the offline service monitors for resource changes. If any changes occur in the specified paths, the offline cache of all dependent forms is updated. For example, `/etc/clientlibs/fd,/content/dam/images`.
 
 1. In the **Manual Resource Cache** tab, specify the form dependencies offline service cannot identify. You can specify resources such as images loaded from within JavaScript. AEM Forms app will download these resources as well for the offline mode.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

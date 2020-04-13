@@ -1087,5 +1087,3 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
   </tr>
  </tbody>
 </table>
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

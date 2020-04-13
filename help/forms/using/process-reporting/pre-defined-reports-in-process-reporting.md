@@ -120,5 +120,3 @@ The Workflow Volume report displays the number of currently running and complete
     * **Refresh**: Refreshes the report with latest data lying in the storage
     * **Change legend color**: Select and change the color of the report legend
     * **Export to CSV**: Export and download the data from the report to a comma-separated file
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -134,5 +134,3 @@ By default, for a new process, an XDP form is rendered in PDF format on a deskto
 ## AEM Forms workspace app {#aem-forms-workspace-app}
 
 To work on your business processes on a mobile device, you can use the AEM Forms workspace app offering of AEM Forms. For more information, see the [AEM Forms workspace app overview](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html).
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

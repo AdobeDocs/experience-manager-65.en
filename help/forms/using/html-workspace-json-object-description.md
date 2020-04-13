@@ -847,5 +847,3 @@ JSON objects used in AEM Forms workspace are described below.
   </tr>
  </tbody>
 </table>
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

@@ -43,5 +43,3 @@ Tap the Synchronize button ![sync-app](assets/sync-app.png) at the lower-right c
 * In the .js, the call to the processOfflineSubmittedSavedTasks(...) function, sends the saved / submitted tasks to the server. It also handles any errors or conflicts in the sync process. If the submission of a task fails, the task on the app is marked as failed. In addition, the task remains in your Outbox.
 * The syncSubmittedTask() and syncSavedTask() function perform operations on individual tasks.
 * The call to the processOfflineSubmittedSavedTasks() function is initiated by the task list component after a user selects to synchronize offline state to the server or an automatic sync by the background thread.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

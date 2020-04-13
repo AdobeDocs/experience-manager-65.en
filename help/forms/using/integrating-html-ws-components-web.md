@@ -86,5 +86,3 @@ You can use AEM Forms workspace [components](/help/forms/using/description-reusa
        margin: 0 auto;
    }
    ```
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**
