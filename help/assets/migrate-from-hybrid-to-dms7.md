@@ -18,15 +18,13 @@ Additional key differences between Dynamic Media&ndash;Hybrid and Dynamic Media&
 * Structure of URLs.
 * Ingestion of videos.
 * Creation and storage of image renditions.
-* Cloud configuration and credentials (provisioning).
+* Cloud configuration and credentials (provisioning). 
 
-This topic explains the two options available for moving to Dynamic Media&ndash;Scene7. It also outlines the steps and considerations to review for one of those options when moving to a Dynamic Media&ndash;Scene7 implementation from Hybrid. 
+Two options are available when moving from Dynamic Media&ndash;Hybrid to Dynamic Media&ndash;Scene7. The first option is to simply provision a new instance of Dynamic Media&ndash;Scene7 on AEM. The second option is to migrate your existing instance of Dynamic Media&ndash;Hybrid to Dynamic Media&ndash;Scene7. This option outlines-in table form-the steps and considerations for you to make when moving to Dynamic Media&ndash;Scene7.
 
 >[!IMPORTANT]
 >
 >Adobe recommends that you do not migrate a Dynamic Media&ndash;Hybrid implemention to Dynamic Media&ndash;Scene7 on live production instances.
-
-Two options are available when moving from Dynamic Media&ndash;Hybrid to Dynamic Media&ndash;Scene7. The first option is to simply provision a new instance of Dynamic Media&ndash;Scene7 on AEM. The second option is to migrate your existing instance of Dynamic Media&ndash;Hybrid to Dynamic Media&ndash;Scene7.
 
 ## Option 1 - Provisioning a new instance of Dynamic Media&ndash;Scene7 on AEM {#provision-new-dms7}
 
