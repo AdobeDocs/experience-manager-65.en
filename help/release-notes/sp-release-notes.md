@@ -26,7 +26,7 @@ Adobe Experience Manager 6.5.4.0 is an important update that includes new featur
 
 Some key features and enhancements introduced in AEM 6.5.4.0 include:
 
-* AEM Assets is now configured with Brand Portal through Adobe I/O Console.
+* AEM Assets is now [configured with Brand Portal through Adobe I/O Console]((https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)).
 
 * A new [Generate printable Output](../forms/using/aem-forms-workflow-step-reference.md) step is now available for AEM Forms workflows.
 
@@ -173,6 +173,8 @@ For complete list of features, key highlights, key features introduced in previo
 * Launch library URL generation is based only on `path` and `library_name` values from the Launch API, and is not based on `library_path` value (NPR-31550).
 
 * An error message displays while processing LiveFyre related items (FYR-12420).
+
+* ReportSuitesServlet is vulnerable to SSRF (NPR-32156).
 
 ### WCM Template Editor {#wcm-template-editor-6540}
 
