@@ -32,7 +32,7 @@ Consider simply starting fresh with a new, provisioned instance of Dynamic Media
 
 ## Option 2 - Migrating from your existing instance of Dynamic Media&ndash;Hybrid to Dynamic Media&ndash;Scene7 {#process-for-migrating}
 
-| Step | Task | Additional information |
+| Step | Task | Considerations |
 |---|---|---|
 | 1 | Clone Dynamic Media&ndash;Hybrid Author instance. | You should maintain your existing instance of Dynamic Media&ndash;Hybrid Author for fallback purposes until the remaining steps in this migration process are successfully completed. |
 | 2 | Start cloned Author instance in Dynamic Media&ndash;Scene7 mode. |  |
