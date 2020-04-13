@@ -907,9 +907,7 @@ The versioning functionality lets you do the following:
 
    ![timeline](assets/timeline.png)
 
-1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to view the available actions you can perform on the asset.
-
-   ![chlimage_1-249](assets/chlimage_1-45.png)
+1. Click the **[!UICONTROL Actions]** at the bottom to view the available actions you can perform on the asset.
 
 1. Tap/click **[!UICONTROL Save as Version]** to create a version for the asset.
 
