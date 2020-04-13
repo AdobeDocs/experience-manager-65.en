@@ -26,7 +26,7 @@ Adobe Experience Manager 6.5.4.0 is an important update that includes new featur
 
 Some key features and enhancements introduced in AEM 6.5.4.0 include:
 
-* AEM Assets is now [configured with Brand Portal through Adobe I/O Console]((https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)).
+* AEM Assets is now configured with Brand Portal through Adobe I/O Console.
 
 * A new [Generate printable Output](../forms/using/aem-forms-workflow-step-reference.md) step is now available for AEM Forms workflows.
 
