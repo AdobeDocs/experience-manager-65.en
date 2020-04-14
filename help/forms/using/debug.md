@@ -48,9 +48,9 @@ Check the following parameters:
  </tbody>
 </table>
 
-## Problem: Unable to render a form (an error message is displayed) {#problem-unable-to-render-a-form-an-error-message-is-displayed}
+## Problem: Unable to render a form (an error message is displayed) {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
-1. Ensure that the specified parameters are correct. For detailed information on parameters, see [Render Parameters](/help/forms/using/debug.md#main-pars-table).
+1. Ensure that the specified parameters are correct. For detailed information on parameters, see [Render Parameters](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
 1. Log in to CRX Package Manager(at https://&lt;server&gt;:&lt;port&gt;/crx/packmgr/index.jsp) and check whether the following packages are correctly installed:
 
     * adobe-lc-forms-content-pkg-&lt;version&gt;.zip

@@ -117,11 +117,11 @@ AEM Forms workspace supports a wide variety of customizations to update the layo
 * Functionality using semantic customizations
 * Reusing HTML components in other web applications
 
-The [customization](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-0) article explains the types of such customizations.
+The [customization](introduction-customizing-html-workspace.md#types-of-customizations) article explains the types of such customizations.
 
 ### Set up the developer environment {#set-up-the-developer-environment}
 
-AEM Forms workspace deliverables include a CRX package deployed on CRX, an SDK archive that contains the complete source code, third-party JavaScript libraries, and build scripts of AEM Forms workspace. Use these to set up the developer environment to perform the customizations mentioned above. For more details, see [Building AEM Forms workspace code](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3).
+AEM Forms workspace deliverables include a CRX package deployed on CRX, an SDK archive that contains the complete source code, third-party JavaScript libraries, and build scripts of AEM Forms workspace. Use these to set up the developer environment to perform the customizations mentioned above. For more details, see [Building AEM Forms workspace code](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
 You can customize a major part of the interface and core functionality such as, fonts, color scheme, logo, login screen, error dialogs, integration with third-party applications, and reuse of components in third-party application. You can also enhance the contents displayed on the Task Summary page, show images for task route actions, and even modify the low-level Backbone Models and Views that create the AEM Forms workspace application.
 

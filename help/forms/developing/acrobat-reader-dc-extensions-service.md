@@ -16,7 +16,7 @@ The following Quick Starts are available for the Acrobat Reader DC Extensions se
 
 [Quick Start (SOAP mode):Applying usage rights using the Java API](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
-[Removing Usage Rights from PDF Documents](/help/forms/developing/acrobat-reader-dc-extensions-service.md#main-pars-heading-1)
+[Removing Usage Rights from PDF Documents](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
 [Quick Start (SOAP mode): Retrieving credential information using the Java API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 

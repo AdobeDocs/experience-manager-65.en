@@ -39,7 +39,7 @@ The Adobe Developer website contains the following articles that discuss invokin
 
 [Including AEM Forms Java library files](#including-aem-forms-java-library-files)
 
-[Invoking Human-Centric Long-Lived Processes](/help/forms/developing/invoking-human-centric-long-lived.md#main-pars-text-0)
+[Invoking Human-Centric Long-Lived Processes](invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)
 
 [Invoking AEM Forms using Web Services](/help/forms/developing/invoking-aem-forms-using-web.md)
 
