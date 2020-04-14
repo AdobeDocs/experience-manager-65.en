@@ -299,7 +299,7 @@ You can define mandatory fields at a folder level, which is enforced on assets t
 
 1. Navigate to the folder and upload some assets with missing metadata for the mandatory field you added to the custom form. A message for the missing metadata for the mandatory field is displayed on the Card view of the asset.
 
-   ![Message for missing mandatory metadata is seen on asset card view on uploading assets in folder](assets/chlimage_1-192.png)
+   ![Message for missing mandatory metadata on asset card view on uploading assets in folder](assets/chlimage_1-192.png)
 
 1. (Optional) Access `https://[server]:[port]/system/console/components/`. Configure and enable `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component that is disabled by default. Set a frequency at which AEM checks for the validity of metadata on the assets.
 
