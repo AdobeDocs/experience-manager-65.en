@@ -295,7 +295,7 @@ The plus button against the asset library lets you permanently save the style wi
 
 When you provide a custom name for a style, the style is tied to a theme and is no longer available to other themes. To delete a saved style:
 
-1. On the CANVAS toolbar, click **Theme Options** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/theme-options.png) &gt; **Manage Styles**.
+1. On the CANVAS toolbar, click **Theme Options** ![](assets/theme-options.png) &gt; **Manage Styles**.
 1. In the Manage Styles dialog, select a saved style, click **Delete**.
 
    ![Delete the saved style](assets/manage-styles.png)
@@ -563,7 +563,7 @@ To apply a theme to an interactive communication:
 
    You can edit properties of your form in the sidebar.
 
-1. In the sidebar, under** Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
+1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
 
 ### Change theme of a form at runtime {#change-theme-of-a-form-at-runtime}
 

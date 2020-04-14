@@ -26,6 +26,7 @@ For an overview of the content translation features in AEM, see [Translating Con
 Create a cloud configuration that connects AEM to your translation service provider. AEM includes the capability to connect to Microsoft Translator by default. For other translation providers, download the connector package from [Package Share](/help/sites-administering/package-manager.md#package-share).
 The following translation vendors provide an implementation of the new API for the Translation Projects. Links to learn more about the integration and how to download from Package Share:
 
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
 * [Clay Tablet Technologies](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/clay-tablet-translation-connector-for-aem.html) (not on PackageShare, contact vendor directly)
 * [Lionbridge](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lionbridge-for-adobe-experience-manager.html)
 * [Cloudwords](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/cloudwords-for-adobe-translations-connector.html)
@@ -33,7 +34,6 @@ The following translation vendors provide an implementation of the new API for t
 * [Lingotek](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lingotek-for-adobe-experience-manager.html)
 * Microsoft (Microsoft Translator is pre-installed in AEM)
 * [Smartling](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/smartling-connector-for-adobe-experience-manager.html)
-* [Translations.com](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/globallink-connect-for-adobe-experience-manager.html)
 * [SDL WorldServer](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdlworldserver-connector.html)
 * [SDL TMS](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdl-tms-translation-connector-for-adobe-experience-manager.html)
 * [Systran](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/systran-for-adobe-experience-manager.html)
@@ -71,7 +71,7 @@ After you configure a translation integration framework, you can [associate it w
 **Note:** For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md).
 
 A single configuration of the framework controls how to translate page content, community content, and assets.
-![chlimage_1-386](assets/chlimage_1-386.png)
+![chlimage_1-386](assets/translation-config-65.jpg)
 
 ### Sites Configuration Properties {#sites-configuration-properties}
 

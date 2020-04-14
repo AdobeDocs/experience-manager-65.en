@@ -147,7 +147,7 @@ Configure the following properties while creating charts for print and web chann
   </tr>
   <tr>
    <td>Tooltip</td>
-   <td><p>Format in which the tooltip appears on mouseover on a data point in the chart in the web channel. The default value is ${x}(${y}). Depending on the chart type, when you point the mouse on a point, bar, or slice in the chart, the variables ${x}and ${y} are dynamically replaced with the corresponding values on X-axis and Y-axis and displayed in the tooltip.</p> <p>To disable tool tip, leave the <span class="uicontrol">Tooltip</code> field blank. This option is not applicable for Line and Area charts. For example, see <a href="../../forms/using/chart-component-interactive-communications.md#main-pars-header-e1f6">Example 1: Chart output in print and web</a>.</p> </td>
+   <td><p>Format in which the tooltip appears on mouseover on a data point in the chart in the web channel. The default value is ${x}(${y}). Depending on the chart type, when you point the mouse on a point, bar, or slice in the chart, the variables ${x}and ${y} are dynamically replaced with the corresponding values on X-axis and Y-axis and displayed in the tooltip.</p> <p>To disable tool tip, leave the <span class="uicontrol">Tooltip</code> field blank. This option is not applicable for Line and Area charts. For example, see <a href="#chartoutputprintweb">Example 1: Chart output in print and web</a>.</p> </td>
    <td>Web</td>
   </tr>
   <tr>
@@ -182,7 +182,7 @@ You can configure a chart to use statistical functions to compute values from th
 
 ![Functions in charts](assets/functions_charts_new.png)
 
-While the Chart component come with some in-built functions, you can write [custom functions](../../forms/using/chart-component-interactive-communications.md#main-pars-header-473010287) and make them available for use in the chart configuration in the web channel.
+While the Chart component come with some in-built functions, you can write [custom functions](#customfunctionsweb) and make them available for use in the chart configuration in the web channel.
 
 The following functions are available by default with the Chart component:
 
@@ -202,7 +202,7 @@ The following functions are available by default with the Chart component:
 
 **Mode** Returns the value with most occurrences on X or Y axis for a given value on the other axis.
 
-For more information, see [Example 2: Application of Sum and Frequency functions in a line chart](../../forms/using/chart-component-interactive-communications.md#main-pars-header-ae38).
+For more information, see [Example 2: Application of Sum and Frequency functions in a line chart](#applicationsumfrequency).
 
 ### Custom functions in web channel {#customfunctionsweb}
 

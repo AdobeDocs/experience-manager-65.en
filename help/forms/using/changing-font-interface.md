@@ -79,5 +79,3 @@ Top navigation bar before font customization
 ![change_font_after](assets/change_font_after.png)
 
 Top navigation bar after font customization of first tab
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

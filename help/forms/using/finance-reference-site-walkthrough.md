@@ -295,9 +295,9 @@ Perform the following steps to experience the creation of A/B test for We.Financ
 1. Go to the Forms and Documents UI, select the form, click **More**, and select **Start A/B Testing**.
 1. Now open the form in chrome browser several times using the following URL:
 
-   `https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
 
-   >[!NOTE] Note: Remove the cookie with the name **mbox** from browser’s cookie persistence before opening the form next time. You will see experience A and B of the form at random.
+   >[!NOTE] Remove the cookie with the name **mbox** from browser’s cookie persistence before opening the form next time. You will see experience A and B of the form at random.
 
 1. Select the form, click **More**, and click **A/B Testing Report**. You won’t find much data in the report as you have just started the testing. Let’s now provide some seed data to see how A/B Testing report looks like.
 1. Open CRXDE Lite and take a back-up of the following file: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
@@ -543,7 +543,7 @@ Perform the following steps in the author instance to experience the creation of
 1. Modify the form as desired to create a different experience than the default experience A.
 1. Go to the Forms and Documents UI, select the form, click **More**, and select **Start A/B Testing**.
 1. Now open the form in chrome browser several times using the following URL:
-   `https://&lt;hostname&gt;:&lt;port&gt;/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
 
    >[!NOTE]
    > Remove the cookie with the name **mbox** from browser’s cookie persistence before opening the form next time. You will see experience A and B of the form at random.

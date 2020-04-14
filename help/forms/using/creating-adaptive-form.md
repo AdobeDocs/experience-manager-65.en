@@ -143,7 +143,7 @@ In addition, you can use the template editor to create your own templates. For m
 
 >[!NOTE]
 >
->When you open an adaptive form created using the advanced template for editing, an error message appears. The advanced template has a Signature Step component and Adobe Sign is enabled for it by default. Create and select an [Adobe Sign cloud configuration](/help/forms/using/adobe-sign-integration-adaptive-forms.md) and [configure a signer](/help/forms/using/working-with-adobe-sign.md#main-pars-header-1374317451) to resolve the error.
+>When you open an adaptive form created using the advanced template for editing, an error message appears. The advanced template has a Signature Step component and Adobe Sign is enabled for it by default. Create and select an [Adobe Sign cloud configuration](/help/forms/using/adobe-sign-integration-adaptive-forms.md) and [configure a signer](working-with-adobe-sign.md#addsignerstoanadaptiveform) to resolve the error.
 
 ## Edit Form Model properties of an adaptive form {#edit-form-model}
 

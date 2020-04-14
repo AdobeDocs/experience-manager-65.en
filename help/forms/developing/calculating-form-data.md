@@ -106,7 +106,7 @@ Before you can programmatically perform a Forms service Client API operation, yo
 
 **Retrieve a form containing a calculation script**
 
-You use the Forms service Client API to create application logic that handles a form that contains a script configured to run on the server. The process is similar to handling a submitted form. (See [Handling Submitted Forms](/help/forms/developing/rendering-forms-rendering-forms handling-submitted-forms-handling-submitted.md#handling-submitted-forms).)
+You use the Forms service Client API to create application logic that handles a form that contains a script configured to run on the server. The process is similar to handling a submitted form. (See [Handling Submitted Forms](/help/forms/developing/handling-submitted-forms.md).)
 
 Verify that the processing state associated with the submitted form is `1` `(Calculate)`, which means that the Forms service is performing a calculation operation on the form data and the results must be written back to the user. In this situation, a script configured to run on the server is automatically executed.
 

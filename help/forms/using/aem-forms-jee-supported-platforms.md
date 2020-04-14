@@ -142,7 +142,6 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td>Repository Microkernel</td>
    <td>Supported</td>
   </tr> 
-  
    <tr>
    <td>Oracle Database 19c </td>
    <td>Repository</td>
@@ -701,5 +700,3 @@ Under circumstances beyond Adobe’s control, third-party patches that claim bac
 Adobe reserves the right to change the third-party reference platforms supported by a AEM Forms on JEE release and their supported patch definitions at any given point.
 
 Additional information for third-party patches can also be found by searching the Adobe Enterprise Support site for knowledgebase articles related to your product.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

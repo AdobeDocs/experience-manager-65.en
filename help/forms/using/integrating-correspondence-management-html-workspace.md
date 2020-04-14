@@ -113,5 +113,3 @@ Use the following steps to create a task to render and submit a letter in AEM Wo
    >[!NOTE]
    >
    >The Submit button is not enabled until all the required variables in the letter are filled in.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

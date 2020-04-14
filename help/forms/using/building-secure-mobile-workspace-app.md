@@ -35,5 +35,3 @@ You need to archive the Xcode project for AEM Forms app to build the installer (
 1. For **[!UICONTROL Code Signing Identity]**, select the appropriate signature. Ensure that the same signature is selected for **[!UICONTROL Debug]**, **[!UICONTROL Release]**, and **[!UICONTROL Any iOS SDK]**.
 1. Under **[!UICONTROL PROJECT]**, select **[!UICONTROL AEM Forms]** and ensure that the appropriate signature is selected for **[!UICONTROL Code Signing Identity]**, **[!UICONTROL Debug]**, **[!UICONTROL Release]** and **[!UICONTROL Any iOS SDK]**.
 1. Build and Distribute AEM Forms app. For detailed instructions to build and distribute AEM Forms app, see [Build the installer for AEM Forms app](/help/forms/using/setup-xcode-project-build-installer.md#main-pars-text-12).
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

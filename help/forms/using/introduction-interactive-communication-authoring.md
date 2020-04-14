@@ -116,7 +116,7 @@ I. **Parent**: Lets you select the parent of a component.
 
 J. **View SOM Expression:** Lets you view the [SOM expression](../../forms/using/using-som-expressions-adaptive-forms.md) for the component.
 
-K: **Group objects in Panel:** Lets you group the components in a panel to be able to perform operations on those components simultaneously. For details, see [Group objects in Panel](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576).
+K: **Group objects in Panel:** Lets you group the components in a panel to be able to perform operations on those components simultaneously. For details, see [Group objects in Panel](create-interactive-communication.md#groupobjectspanel).
 
 L. **Add Child Panel** (for panels only): Lets you add a child panel to the panel.
 
