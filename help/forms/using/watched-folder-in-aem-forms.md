@@ -14,7 +14,7 @@ docset: aem65
 
 # Watched folder in AEM Forms{#watched-folder-in-aem-forms}
 
-An administrator can configure a network folder, known as a Watched Folder, so that when a user places a file (such as a PDF file) in the Watched Folder a pre-configured workflow, service, or script operation is started to process the added file. After the service performs the specified operation, it saves the result file in a specified output folder. For more information about workflow, service, and script, see [Various methods for processing files](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-4).
+An administrator can configure a network folder, known as a Watched Folder, so that when a user places a file (such as a PDF file) in the Watched Folder a pre-configured workflow, service, or script operation is started to process the added file. After the service performs the specified operation, it saves the result file in a specified output folder. For more information about workflow, service, and script, see [Various methods for processing files](#variousmethodsforprocessingfiles).
 
 ## Create a Watched Folder {#create-a-watched-folder}
 
@@ -23,7 +23,7 @@ You can use one of the following methods to create a Watched Folder on the file 
 * While configuring the properties of a Watched Folder configuration node, type the full path of the parent directory in the folderPath property and append the name of the Watched Folder to be created, as shown in the following example: `C:/MyPDFs/MyWatchedFolder`
   The `MyWatchedFolder`folder does not exist, AEM Forms attempts to create the folder at the specified path.
 
-* Create a folder on the file system prior to configuring a Watched Folder endpoint, and then provide the full path in the folderPath property. For detailed information about the folderPath property, see [Watched Folder properties](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+* Create a folder on the file system prior to configuring a Watched Folder endpoint, and then provide the full path in the folderPath property. For detailed information about the folderPath property, see [Watched Folder properties](#watchedfolderproperties).
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ To configure a Watched Folder, create a Watched Folder configuration node. Perfo
     * `inputProcessorId`
     * `outputFilePattern`
 
-   For complete list of supported properties, see [Watched Folder properties](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+   For complete list of supported properties, see [Watched Folder properties](#watchedfolderproperties).
 
 1. Click **Save All**. After the node is created and the properties are saved. The `input`, `result`, `failure`, `preserve`, and `stage`folders are created at the path specified in the `folderPath` property.
 
@@ -672,5 +672,5 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
 
     * outputFilePattern (String): Pattern of the output file. You can specify a folder or file pattern. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern.
 
-   Apart from the mandatory properties mentioned above, Watched Folders also support a few optional properties. For complete list and description of optional properties, see [Watched Folder properties](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+   Apart from the mandatory properties mentioned above, Watched Folders also support a few optional properties. For complete list and description of optional properties, see [Watched Folder properties](#watchedfolderproperties).
 

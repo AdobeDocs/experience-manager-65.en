@@ -64,7 +64,7 @@ Create or edit a file type setting to specify how the application handles the co
 
    [Microsoft Word settings (Windows only)](/help/forms/using/admin-help/configuring-file-type-settings2.md#microsoft-word-settings-windows-only)
 
-   [Microsoft Visio settings (Windows only)](/help/forms/using/admin-help/configuring-file-type-settings2.md#main-pars-header-1354428557)
+   [Microsoft Visio settings (Windows only)](#visio)
 
    [Microsoft Publisher settings (Windows only)](/help/forms/using/admin-help/configuring-file-type-settings2.md#microsoft-publisher-settings-windows-only)
 
