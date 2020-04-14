@@ -208,7 +208,7 @@ To configure Dynamic Media Classic to integrate with AEM, you need to complete t
 
 1. [Define a cloud configuration](#creating-a-cloud-configuration-for-scene) - Defines the mapping between a Dynamic Media Classic folder and an Assets folder. You need to complete this step even if you only want one-way (AEM Assets to Dynamic Media Classic) synchronization.
 1. [Enable the **Adobe CQ s7dam Dam Listener**](#enabling-the-adobe-cq-scene-dam-listener) - Done in the [!UICONTROL OSGi] console.
-1. If you want AEM assets to automatically upload to Dynamic Media Classic, you need to turn that option on and add Dynamic Media Classic to the DAM update asset workflow. You can also manually upload assets.
+1. If you want AEM assets to automatically upload to Dynamic Media Classic, you need to turn that option on and add Dynamic Media Classic to the [!UICONTROL DAM Update Asset] workflow. You can also manually upload assets.
 1. Adding Dynamic Media Classic components to the sidekick. This allows the users to use Dynamic Media Classic components on their AEM pages.
 1. [Map the configuration to the page in AEM](#enabling-scene-for-wcm) - This step is required to view any video presets that you have created in Dynamic Media Classic. It is also required if you need to perform a publish an asset from outside the CQ target folder to Dynamic Media Classic.
 

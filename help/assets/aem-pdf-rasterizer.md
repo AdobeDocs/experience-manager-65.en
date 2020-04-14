@@ -22,9 +22,7 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
    >
    >The PDF Rasterizer library is available for Windows and Linux only.
 
-1. Access the AEM Assets workflow console at `https://[server]:[port]/workflow`.
-
-   Open the DAM Update Asset workflow page.
+1. Access the AEM Assets workflow console at `https://[server]:[port]/workflow`. Open the [!UICONTROL DAM Update Asset] workflow page.
 
 1. To prevent the thumbnail and web rendition generation for PDF and AI files using the default methods, follow these steps:
 
