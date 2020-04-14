@@ -174,6 +174,8 @@ For complete list of features, key highlights, key features introduced in previo
 
 * An error message displays while processing LiveFyre related items (FYR-12420).
 
+* ReportSuitesServlet is vulnerable to SSRF (NPR-32156).
+
 ### WCM Template Editor {#wcm-template-editor-6540}
 
 * In editable templates structure mode, allowed components list in layout container is not displaying link button component (CQ-4282099).

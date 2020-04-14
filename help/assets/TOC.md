@@ -19,7 +19,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Previewing 3D assets](previewing-3d-assets.md)
     + [Review folder assets and collections](bulk-approval.md)
     + [Activity stream in timeline](activity-stream.md)
-    + [Apply workflows to assets](assets-workflow.md)
+    + [Process assets](assets-workflow.md)
     + [Add image maps](image-maps.md)
     + [Reuse assets using MSM](reuse-assets-using-msm.md)
     + [Connected Assets with AEM Sites](use-assets-across-connected-assets-instances.md)

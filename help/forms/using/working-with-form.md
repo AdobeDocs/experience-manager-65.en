@@ -37,5 +37,3 @@ To sync multiple forms, in the author instance, select multiple forms in forms m
 
 1. To open a form, tap the form in the home screen.
 1. You can update the fields of the form, add attachments, save as draft, and submit it.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -32,5 +32,3 @@ The assets for all the components are placed in the folder structure described b
 **services** Contains service interface to call Adobe Experience Manager server APIs on REST endpoint.
 
 **util** Contains generic utilities usable by multiple components.
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**
