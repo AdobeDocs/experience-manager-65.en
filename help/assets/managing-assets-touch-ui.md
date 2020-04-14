@@ -883,65 +883,60 @@ Here is an example of how you can configure AEM to print annotations in CJK (Chi
 1. Configure the annotation PDF file by setting the font-family parameter to `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. This configuration is available by default and works for all European and CJK languages.
 1. If the language of your choice is different from the languages mentioned in step 2, append an appropriate (comma separated) entry to the default font-family.
 
-## Asset versions {#asset-versioning}
+## Create, manage, preview, and revert asset versions {#asset-versioning}
 
-Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset.
+Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset. In Experience Manager, you can create a version, view the current revision, view side-by-side differences between two versions of images, and restore an asset to its previous version.
 
-The following are scenarios where you create versions:
+You can create versions in Experience Manager in the following scenarios:
 
-* You modify an image in a different application and upload to AEM Assets. A version of the image is created so your original image is not overwritten.
-* You edit the metadata of an asset.
-* You use AEM desktop app to checkout an existing asset and save your changes. A new version is created everytime the asset is saved.
+* Upload an asset with the same filename that exists at the same location. It can be a new asset or a modified version of the same asset.
+* Edit an image in Experience Manager and save the changes.
+* Edit the metadata of an asset.
+* Use AEM desktop app to check-out an existing asset, edit it, and [upload your changes](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
 
-The versioning functionality lets you do the following:
+1. Navigate to the location of the asset for which you want to create a version and click it to open its preview. From the upper-left corner of the page, open the menu, and select **[!UICONTROL Timeline]**.
 
-* Create a version of an asset.
-* View the current revision for an asset.
-* Restore the asset to a previous version.
+   ![From the left navigation menu, select timeline option](assets/timeline.png)
 
-1. Navigate to the location of the asset for which you want to create a version, and tap/click it to open its asset page.
+   *Figure: Open menu from upper-left area of page and select [!UICONTROL Timeline] option.*
 
-1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu.
+1. To create a version of the asset:
+  
+   * Click the **[!UICONTROL Actions]** at the bottom.
+   * Click **[!UICONTROL Save as Version]** to create a version for the asset. Optionally, add a label and comment.
+   * Click **[!UICONTROL Create]** to create a version.
 
-   ![timeline](assets/timeline.png)
+     ![chlimage_1-251](assets/create-new-version-from-timeline.png)
 
-1. Click the **[!UICONTROL Actions]** at the bottom to view the available actions you can perform on the asset.
+     *Figure: Create a version of an asset from the [!UICONTROL Timeline] left sidebar.*
 
-1. Tap/click **[!UICONTROL Save as Version]** to create a version for the asset.
+1. To view a version of an asset:
 
-   ![chlimage_1-250](assets/chlimage_1-46.png)
+   * Click **[!UICONTROL Show All]** in [!UICONTROL Timeline].
+   * Click **[!UICONTROL Versions]**. All versions created for an asset are listed the left sidebar.
 
-1. Add a label and comment, and then click **[!UICONTROL Create]** to create a version. Alternatively, tap/click **Cancel** to exit the operation.
+     ![versions_option](assets/versions_option.png)
 
-   ![chlimage_1-251](assets/chlimage_1-47.png)
+   * Select a specific version of the asset and click **[!UICONTROL Preview Version]**.
 
-1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
+1. To revert to an older version of the asset, do the following. After reverting, this version is displayed in the [!DNL Assets] interface and is available for usage.
 
-   ![versions_option](assets/versions_option.png)
+   * Click a version of the asset. Optionally, add a label and a comment.
+   * Click **[!UICONTROL Revert to this Version]**.
 
-1. Select a specific version for the asset to preview it or enable it to appear in the Assets UI.
+     ![select_version](assets/select_version.png)
 
-   ![select_version](assets/select_version.png)
+     *Figure: Select a version and revert to it. It becomes the current version which is then available to the DAM users.*
 
-   >[!NOTE]
-   >
-   >You can also select the asset from the [List view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) or the [Column view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. To compare between two versions of an image, follow these steps:
+   * Click the version to be compared with the current version.
+   * Drag the slider to the left to superimpose this version over the current version and compare.
 
-1. Add a label and comment for the version to revert to the particular version in the Assets UI.
+   ![Use slider to compare the selected versions of an asset with the current version](assets/version-slider.gif)
 
-   ![save_version](assets/save_version.png)
-
-1. To generate a preview for the version, tap/click **[!UICONTROL Preview Version]**.
-1. To display this version in the Assets UI, select **[!UICONTROL Revert to this Version]**.
-1. To compare between two versions, go to asset page of the asset and tap/click the version to be compared with the current version.
-
-   ![select_version_tocompare](assets/select_version_tocompare.png)
-
-1. From the timeline, select the version you want to compare and drag the slider to the left to superimpose this version over the current version and compare.
-
-   ![compare_versions](assets/compare_versions.png)
+   *Figure: Use slider to effortlessly compare the selected versions of an asset with the current version.*
 
 ### Start a workflow on an asset {#starting-a-workflow-on-an-asset}
 
