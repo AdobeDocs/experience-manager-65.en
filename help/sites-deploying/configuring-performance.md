@@ -247,15 +247,15 @@ When workflow models execute, they create Sling jobs for a specific topic. By de
 * com/adobe/granite/workflow/job&ast;
 * com/adobe/granite/workflow/external/job&ast;
 
-Actual job topics that worflow models generate include model-specific suffix. For example, the DAM Update Asset workflow model generates jobs with the following topic:
+Actual job topics that worflow models generate include model-specific suffix. For example, the [!UICONTROL DAM Update Asset] workflow model generates jobs with the following topic:
 
 com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model
 
 Therefore, you can create a job queue for the topic that matches the job topics of your workflow model. Configuring the performance-related properties of the queue affects only the worklfow model that generates the jobs that match the queue topic.
 
-The following procedure creates a job queue for a workflow, using the DAM Update Asset workflow as an example.
+The following procedure creates a job queue for a workflow, using the [!UICONTROL DAM Update Asset] workflow as an example.
 
-1. Execute the workflow model for which you want to create the job queue, so that topic statistics are generated. For example, add an image to Assets to execute the DAM Update Asset workflow.
+1. Execute the workflow model for which you want to create the job queue, so that topic statistics are generated. For example, add an image to Assets to execute the [!UICONTROL DAM Update Asset] workflow.
 1. Open the Sling Jobs console. ([http://localhost:4502/system/console/slingevent](http://localhost:4502/system/console/slingevent))
 1. Discover the workflow-related topics in the console. For DAM Update Asset, the following topics are found:
 

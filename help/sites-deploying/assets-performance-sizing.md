@@ -56,7 +56,7 @@ The DAM processes are well suited well to be performedin paralell for large amou
 
 Extensive processing of digital assets requires optimized hardware resources, the most relevant factors are image size and the peak throughput of processed images.
 
-Allocate at least 16GB of heap and configure the DAM Update Asset workflow to use the [Camera Raw package](/help/assets/camera-raw.md) for the ingestion of raw images.
+Allocate at least 16GB of heap and configure the [!UICONTROL DAM Update Asset] workflow to use the [Camera Raw package](/help/assets/camera-raw.md) for the ingestion of raw images.
 
 ## Understanding the System {#understanding-the-system}
 
