@@ -29,7 +29,7 @@ For information about configuring and using transaction reports, see [Transactio
 
 **Define data display patterns**
 
-Interactive Communication authors can now define [data display patterns](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146) for fields, variables, and form data model elements. For example, date, currency, or phone formats.
+Interactive Communication authors can now define [data display patterns](create-interactive-communication.md#datadisplaypatterns) for fields, variables, and form data model elements. For example, date, currency, or phone formats.
 
 **Use new types of charts**
 
