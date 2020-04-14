@@ -94,7 +94,7 @@ To configure the library, create a .conf file to indicate the libraries using th
 
 1. To ensure that the value of the path is set to `.`, use `echo $LD_LIBRARY_PATH` command. The output should just be `.`. If the value is not set to `.`, restart the session.
 
-### Configure DAM Update Asset workflow {#configure-dam-asset-update-workflow}
+### Configure [!UICONTROL DAM Update Asset] workflow {#configure-dam-asset-update-workflow}
 
 Update the [!UICONTROL DAM Update Asset] workflow to use the library for processing images.
 

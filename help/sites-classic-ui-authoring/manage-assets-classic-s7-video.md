@@ -22,14 +22,14 @@ Dynamic Media Classic video integration extends the reach of optimized video to 
 
 ## About FFMPEG and Dynamic Media Classic {#about-ffmpeg-and-scene}
 
-The default video encoding process is based on using the FFMPEG-based integration with video profiles. Therefore, the out-of-the-box DAM Update Asset workflow contains the following two ffmpeg-based workflow steps:
+The default video encoding process is based on using the FFMPEG-based integration with video profiles. Therefore, the out-of-the-box [!UICONTROL DAM Update Asset] workflow contains the following two ffmpeg-based workflow steps:
 
 * FFMPEG thumbnails
 * FFMPEG encoding
 
-Be aware that enabling and configuring the Dynamic Media Classic integration does not automatically remove or deactivate these two workflow steps from the out-of-the-box DAM Update Asset ingestion workflow. If you already make use of the FFMPEG-based video encoding in AEM, it is likely that you have FFMPEG installed on your authoring environments. In this case, a new video ingested using Assets would be encoded twice: once from the FFMPEG encoder and once from Dynamic Media Classic integration.
+Be aware that enabling and configuring the Dynamic Media Classic integration does not automatically remove or deactivate these two workflow steps from the out-of-the-box [!UICONTROL DAM Update Asset] ingestion workflow. If you already make use of the FFMPEG-based video encoding in AEM, it is likely that you have FFMPEG installed on your authoring environments. In this case, a new video ingested using Assets would be encoded twice: once from the FFMPEG encoder and once from Dynamic Media Classic integration.
 
-If you have the FFMPEG-based video encoding in AEM configured and FFMPEG installed, Adobe recommends that you remove the two FFMPEG workflows from your DAM Update Asset workflows.
+If you have the FFMPEG-based video encoding in AEM configured and FFMPEG installed, Adobe recommends that you remove the two FFMPEG workflows from your [!UICONTROL DAM Update Asset] workflows.
 
 ### Supported Formats {#supported-formats}
 

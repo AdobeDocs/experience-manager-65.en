@@ -202,7 +202,7 @@ Ensure that you have performed the following steps:
 
 >[!CAUTION]
    >
-   >Create only one valid IMS configuration. Do not create multiple IMS configurations.
+   >Create only one, valid IMS configuration.
    >
    > Make sure the configuration is healthy. In case, the configuration is unhealthy, delete it and create a new, healthy configuration.
 
