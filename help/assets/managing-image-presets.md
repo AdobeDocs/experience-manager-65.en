@@ -79,7 +79,7 @@ To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or P
 
 >[!NOTE]
 >
->In the DAM Update Asset workflow, the **[!UICONTROL EPS thumbnails]** step generates thumbnails for EPS files.
+>In the [!UICONTROL DAM Update Asset] workflow, the **[!UICONTROL EPS thumbnails]** step generates thumbnails for EPS files.
 
 #### PDF/AI/EPS asset metadata properties {#pdf-ai-eps-asset-metadata-properties}
 
@@ -90,7 +90,7 @@ To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or P
 
 You access `Rasterize PDF/AI Image Preview Rendition` process component options by way of the `DAM Update Asset` workflow.
 
-Tap on Adobe Experience Manager in the upper left, navigate to **[!UICONTROL Tools > Workflow > Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar tap **[!UICONTROL Edit]**. On the DAM Update Asset workflow page, double-tap the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
+Tap on Adobe Experience Manager in the upper left, navigate to **[!UICONTROL Tools > Workflow > Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar tap **[!UICONTROL Edit]**. On the [!UICONTROL DAM Update Asset] workflow page, double-tap the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
 
 #### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -146,7 +146,7 @@ The Media Extraction process component in the `DAM Update Asset` workflow runs s
 
 ![The ExtendScript paths in the arguments of Media Extraction process](assets/6_5_mediaextractionprocess.png)
 
-The ExtendScript paths in the arguments of Media Extraction process component in the DAM Update Asset workflow.
+The ExtendScript paths in the arguments of Media Extraction process component in the [!UICONTROL DAM Update Asset] workflow.
 
 The following scripts, are used by Dynamic Media integration:
 

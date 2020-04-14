@@ -84,5 +84,5 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
 >[!NOTE]
 >
->OOTB workflow models are not preserved when you upgrade your AEM instance. Adobe recommends that you copy OOTB workflow models before editing them. For example, copy the OOTB DAM Update Asset model before editing the FFmpeg Transcoding step in the DAM Update Asset model to pick video-profile names that existed before the upgrade. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
+>OOTB workflow models are not preserved when you upgrade your AEM instance. Adobe recommends that you copy OOTB workflow models before editing them. For example, copy the OOTB [!UICONTROL DAM Update Asset] model before editing the FFmpeg Transcoding step in the [!UICONTROL DAM Update Asset] model to pick video-profile names that existed before the upgrade. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
 

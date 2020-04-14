@@ -50,7 +50,7 @@ Use Configuration Manager to add the URL for the leader instance and the host na
 
 ## Configure workflow launchers on the leader instance {#configure-workflow-launchers-on-the-leader-instance}
 
-Configure workflow launchers to use the **DAM Update Asset Offloading** workflow on the leader instance instead of the **Dam Update Asset** workflow.
+Configure workflow launchers to use the [!UICONTROL DAM Update Asset Offloading] workflow on the leader instance instead of the **Dam Update Asset** workflow.
 
 1. Tap/click the AEM logo, and choose, **Tools** &gt; **Workflow** &gt; **Launchers** to open the **Workflow Launchers** console.
 
@@ -61,12 +61,12 @@ Configure workflow launchers to use the **DAM Update Asset Offloading** workflow
 
    ![chlimage_1-51](assets/chlimage_1-51a.png)
 
-1. From the **Workflow** list, choose **DAM Update Asset Offloading** and tap/click **Save**.
+1. From the **Workflow** list, choose [!UICONTROL DAM Update Asset Offloading] and tap/click **Save**.
 
    ![chlimage_1-52](assets/chlimage_1-52a.png)
 
 1. Tap/click the AEM logo, and choose, **Tools** &gt; **Workflow** &gt; **Models** to open the **Workflow Models** page.
-1. Select the **DAM Update Asset Offloading** workflow, and tap/click **Edit** from the toolbar to display its details.
+1. Select the [!UICONTROL DAM Update Asset Offloading] workflow, and tap/click **Edit** from the toolbar to display its details.
 
    ![chlimage_1-53](assets/chlimage_1-53a.png)
 
