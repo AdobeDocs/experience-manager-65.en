@@ -46,7 +46,7 @@ You can approve multiple tasks of the same type. Once you select one task for ap
 
 Flex Workspace is not supported for AEM Forms customers. All the customers using the Flex Workspace should move to AEM Forms Workspace.
 
-In AEM Forms workspace, the default render and submit services, in the default action profile, associated with XDP forms have changed and new services have been introduced. For details, see [New render and submit service](/help/forms/using/new-render-submit-service.md). To migrate your existing processes, that work with XDP forms, to make use of these services, you can follow [these steps](/help/forms/using/new-render-submit-service.md#main-pars-faq).
+In AEM Forms workspace, the default render and submit services, in the default action profile, associated with XDP forms have changed and new services have been introduced. For details, see [New render and submit service](/help/forms/using/new-render-submit-service.md). To migrate your existing processes, that work with XDP forms, to make use of these services, you can follow [these steps](new-render-submit-service.md).
 
 **Mapping Flex Workspace customizations with AEM Forms workspace**
 
