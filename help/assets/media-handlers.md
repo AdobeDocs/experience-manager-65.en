@@ -528,4 +528,4 @@ Use the following [!UICONTROL Process Arguments] to create the web-enabled rendi
 
 >[!MORELIKETHIS]
 >
->* [Process assets](process-assets.md)
+>* [Process assets](assets-workflow.md)
