@@ -15,7 +15,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 >[!NOTE]
 >
->* Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Marketing Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
+>* Sharing an Assets folder of the type `sling:OrderedFolder` is not supported when sharing to Marketing Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
 >* Experience Manager does not allow using `subassets` word as the name of a folder. It is a keyword reserved for node that contain subassets for compound assets.
 
 1. Navigate to the place in your digital assets folder where you want to create a new folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
@@ -52,13 +52,13 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
     * On the toolbar, tap the **[!UICONTROL Create]** icon. Then on the menu, tap **[!UICONTROL Files]**. You can rename the file in the presented dialog if needed.
     * In a browser that supports HTML5, drag the assets directly on the Assets user interface. The dialog to rename file is not displayed.
 
-   ![create option in aem](assets/create-options.png)
+   ![Create option to upload assets](assets/create-options.png)
 
    To select multiple files, press the Ctrl or Command key and select the assets in the file picker dialog. When using an iPad, you can select only one file at a time.
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
-   ![chlimage_1-211](assets/chlimage_1-5.png)
+   ![Upload assets progress bar](assets/chlimage_1-5.png)
 
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
@@ -68,7 +68,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
 
-   ![chlimage_1-212](assets/chlimage_1-6.png)
+   ![Resume the paused asset upload using Play icon](assets/chlimage_1-6.png)
 
    To cancel an ongoing upload, click close (`X`) next to the progress bar. When you cancel the upload operation, AEM Assets deletes the partially uploaded portion of the asset.
 
@@ -82,7 +82,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotate or crop) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with number `1` appended to its name.
 
-   ![chlimage_1-213](assets/chlimage_1-7.png)
+   ![Name Conflict dialog to resolve assets name conflict](assets/chlimage_1-7.png)
 
    >[!NOTE]
    >
@@ -96,7 +96,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
    >
    >The [!UICONTROL Duplicates Detected] dialog appears only when the duplicate detection feature is enabled. To enable the duplicate detection feature, see [Enable Duplicate Detection](/help/assets/duplicate-detection.md).
 
-   ![chlimage_1-214](assets/chlimage_1-8.png)
+   ![Duplicate Asset Detected dialog](assets/chlimage_1-8.png)
 
    To retain the duplicate asset in AEM Assets, tap/click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, tap/click **[!UICONTROL Delete]**.
 
@@ -109,7 +109,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
     * asset file name must not contain `* / : [ \\ ] | # % { } ? &`
     * asset folder name must not contain `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-   ![chlimage_1-215](assets/chlimage_1-10.png)
+   ![Upload progress dialog shows status of successfully uploaded files and files that fail to upload](assets/chlimage_1-10.png)
 
    In addition, the Assets user interface displays the most recent asset that you upload or the folder that you created first.
 
