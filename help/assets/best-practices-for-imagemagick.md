@@ -30,7 +30,7 @@ Multiple versions of ImageMagic installation files are available for various ope
 
 You can set up the command line process step for your particular use case. Perform these steps to generate a flipped image and thumbnails (140x100, 48x48, 319x319, and 1280x1280) each time you add a JPEG image file to `/content/dam` on the AEM server:
 
-1. On the AEM server, go to the Workflow console ( `https://[*AEM server*]:[*Port*]/workflow`) and open the **[!UICONTROL DAM Update Asset]** workflow model.
+1. On the AEM server, go to the Workflow console (`https://[aem_server]:[port]/workflow`) and open the **[!UICONTROL DAM Update Asset]** workflow model.
 1. From the **[!UICONTROL DAM Update Asset]** workflow model, open the **[!UICONTROL EPS thumbnails (powered by ImageMagick)]** step.
 1. In the **[!UICONTROL Arguments tab]**, add `image/jpeg` to the **[!UICONTROL Mime Types]** list.
 
@@ -44,11 +44,11 @@ You can set up the command line process step for your particular use case. Perfo
 
    ![select_flags](assets/select_flags.png)
 
-1. In the **[!UICONTROL Web Enabled Image]** tab, specify the details for the rendition with dimensions 1280x1280 pixels. In addition, specify i*mage/jpeg* in the **[!UICONTROL Mimetype]** box.
+1. In the **[!UICONTROL Web Enabled Image]** tab, specify the details for the rendition with dimensions 1280x1280 pixels. In addition, specify `image/jpeg` in the **[!UICONTROL Mimetype]** box.
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
-1. Tap/click **[!UICONTROL OK]** to save the changes.
+1. Click **[!UICONTROL OK]** to save the changes.
 
    >[!NOTE]
    >
@@ -61,7 +61,7 @@ You can set up the command line process step for your particular use case. Perfo
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. In the **[!UICONTROL Web Enabled Image]** tab, add the MIME type `image/jpeg` under the **[!UICONTROL Skip List]**. Tap/click **[!UICONTROL OK]** to save the changes.
+1. In the **[!UICONTROL Web Enabled Image]** tab, add the MIME type `image/jpeg` under the **[!UICONTROL Skip List]**. Click **[!UICONTROL OK]** to save the changes.
 
    ![web_enabled](assets/web_enabled.png)
 

@@ -26,21 +26,21 @@ Before you can use the Smart Content Service, ensure the following to create an 
 
 A public certificate allows you to authenticate your profile on Adobe I/O.
 
-1. From the AEM user interface, tap the AEM logo, and go to **[!UICONTROL Tools > Cloud Services]**> **[!UICONTROL Legacy Cloud Services]**.  
+1. From the AEM user interface, click the AEM logo, and go to **[!UICONTROL Tools > Cloud Services]**> **[!UICONTROL Legacy Cloud Services]**.  
 
-1. In the Cloud Services page, tap/click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
-1. In the **[!UICONTROL Create Configuration]** dialog, specify a title and name for the Smart Tags configuration. Tap/click **[!UICONTROL Create]**.
+1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
+1. In the **[!UICONTROL Create Configuration]** dialog, specify a title and name for the Smart Tags configuration. Click **[!UICONTROL Create]**.
 1. In the **[!UICONTROL AEM Smart Content Service]** dialog, use the following values:
 
    **[!UICONTROL Service URL]**: `https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Authorization Server]**: `https://ims-na1.adobelogin.com`
 
-   Leave the other fields blank for now (to be provided later). Tap/click **[!UICONTROL OK]**.
+   Leave the other fields blank for now (to be provided later). Click **[!UICONTROL OK]**.
 
    ![AEM Smart Content Service dialog to provide content service URL](assets/aem_scs.png)
 
-1. Tap/click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
+1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
 
    ![A representation of the settings created for the smart tagging service](assets/download_link.png)
 
@@ -68,17 +68,17 @@ To use Smart Content Service APIs, create an integration in Adobe I/O to generat
 
 1. Access [https://console.adobe.io](https://console.adobe.io/).
 1. On the **[!UICONTROL Integrations]** page, select the appropriate account and verify that the associated organization role is system administrator.
-1. Tap **[!UICONTROL New integration]**.
-1. On the **[!UICONTROL Create a new integration]** page, select **[!UICONTROL Access an API]**. Tap **[!UICONTROL Continue]**.
-1. Under **[!UICONTROL Experience Cloud]**, select **[!UICONTROL Smart Content]**. Tap **[!UICONTROL Continue]**.
+1. Click **[!UICONTROL New integration]**.
+1. On the **[!UICONTROL Create a new integration]** page, select **[!UICONTROL Access an API]**. Click **[!UICONTROL Continue]**.
+1. Under **[!UICONTROL Experience Cloud]**, select **[!UICONTROL Smart Content]**. Click **[!UICONTROL Continue]**.
 
    ![When creating a new integration select Smart Content under Experience Cloud from the available options](assets/smart_content.png)
 
-1. On the next page, select **[!UICONTROL New integration]**. Tap/click **[!UICONTROL Continue]**.
+1. On the next page, select **[!UICONTROL New integration]**. Click **[!UICONTROL Continue]**.
 1. On the **[!UICONTROL Integration Details]** page, specify a name for the integration gateway and add a description.
 1. In the **[!UICONTROL Public keys certificates]**, upload `AEM-SmartTags.crt` file that you downloaded above.
-1. Tap/click **[!UICONTROL Create Integration]**.
-1. To view the integration information, tap/click **[!UICONTROL Continue to integration details]**.
+1. Click **[!UICONTROL Create Integration]**.
+1. To view the integration information, click **[!UICONTROL Continue to integration details]**.
 
    ![In the Overview tab, you can review the information provided for integration.](assets/integration_details.png)
 
@@ -86,7 +86,7 @@ To use Smart Content Service APIs, create an integration in Adobe I/O to generat
 
 To configure the integration, use the values of Technical Account ID, Organization Id, Client Secret, Authorization Server, and API key fields from the Adobe I/O integration. Creating a Smart Tags cloud configuration allows authentication of API requests from the AEM instance.
 
-1. From the AEM user interface, tap/click the AEM logo. Navigate to **[!UICONTROL Tools > Cloud Service > Legacy Cloud Services]** to open the Cloud Services console.
+1. In Experience Manager, navigate to **[!UICONTROL Tools > Cloud Service > Legacy Cloud Services]** to open the [!UICONTROL Cloud Services] console.
 1. Under the **[!UICONTROL Assets Smart Tags]**, open the configuration created above. On the service settings page, click **[!UICONTROL Edit]**.
 1. In the **[!UICONTROL AEM Smart Content Service]** dialog, use the pre-populated values for the **[!UICONTROL Service URL]** and **[!UICONTROL Authorization Server]** fields.
 1. For the fields **[!UICONTROL API Key]**, **[!UICONTROL Technical Account Id]**, **[!UICONTROL Organization Id]**, and **[!UICONTROL Client Secret]**, use the values generated above.
@@ -105,12 +105,14 @@ After you've completed the configuration, you can use a JMX MBean to validate th
 
 ## Enable smart tagging in the Update Asset workflow (Optional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
-1. From the AEM user interface, tap/click the AEM logo, and go to **[!UICONTROL Tools > Workflow > Models]**.
+1. In Experience Manager, go to **[!UICONTROL Tools > Workflow > Models]**.
 1. On **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Update Asset]** workflow model.
-1. Tap/click **[!UICONTROL Edit]** from the toolbar.
+1. Click **[!UICONTROL Edit]** from the toolbar.
 1. Expand the Side Panel to display the steps. Drag **[!UICONTROL Smart Tag Asset]** step that is available in the DAM Workflow section and place it after the **[!UICONTROL Process Thumbnails]** step.
 
-   ![Add smart tag asset step after the process thumbnail  step in the DAM Update Asset workflow](assets/chlimage_1-105.png)
+   ![Add smart tag asset step after the process thumbnail step in the [!UICONTROL DAM Update Asset] workflow](assets/chlimage_1-105.png)
+
+   *Figure: Add smart tag asset step after the process thumbnail step in the [!UICONTROL DAM Update Asset] workflow*
 
 1. Open the step in edit mode. Under **[!UICONTROL Advanced Settings]**, ensure that the **[!UICONTROL Handler Advance]** option is selected.
 
@@ -124,7 +126,7 @@ After you've completed the configuration, you can use a JMX MBean to validate th
 
    ![chlimage_1-5](assets/chlimage_1-108.png)
 
-1. Tap **[!UICONTROL OK]** to close the process step, and then save the workflow.
+1. Click **[!UICONTROL OK]** to close the process step, and then save the workflow.
 
 >[!MORELIKETHIS]
 >
