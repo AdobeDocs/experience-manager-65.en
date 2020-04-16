@@ -15,7 +15,9 @@ To be able to apply watermark on assets, add the watermarking step in the [!UICO
 
 1. From the side panel, drag the **[!UICONTROL Add Watermark]** step to the [!UICONTROL DAM Update Asset] workflow.
 
-   ![Drag the Add Watermark step and add to the DAM update asset workflow](assets/add_watermark_step_aem_assets.png)
+   ![Drag the [!UICONTROL Add Watermark] step and add to the [!UICONTROL DAM update asset] workflow](assets/add_watermark_step_aem_assets.png)
+2
+   *Figure: Drag the [!UICONTROL Add Watermark] step and add to the [!UICONTROL DAM update asset] workflow*
 
    >[!NOTE]
    >
@@ -25,6 +27,8 @@ To be able to apply watermark on assets, add the watermarking step in the [!UICO
 1. In the **[!UICONTROL Arguments]** tab, specify valid values in the various fields, including text, font type, size, color, position, orientation, and so on. To confirm the changes, tap/click the Done icon.
 
    ![Provide the arguments in the add watermark step in Assets](assets/arguments_add_watermark_aem_assets.png)
+
+   *Figure: Provide the arguments in the add watermark step in Assets*
 
 1. Save the **[!UICONTROL DAM Update Asset]** workflow with the watermark step.
 1. From the Assets user interface, upload a sample asset. The watermark appears with the font size, color and so on, at the position you configured in the above steps.

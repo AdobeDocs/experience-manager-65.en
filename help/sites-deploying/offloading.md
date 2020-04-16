@@ -204,7 +204,7 @@ Several JobConsumer implementations are installed with Experience Manager. The t
 |---|---|---|
 | / |org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge |Installed with Apache Sling. Processes jobs that the OSGi event admin generates, for backward compatibility. |
 | com/day/cq/replication/job/&ast; |com.day.cq.replication.impl.AgentManagerImpl |A replication agent that replicates job payloads. |
-| com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
+| com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the [!UICONTROL DAM Update Asset Offloader] workflow generates. |
 
 ### Disabling and Enabling Topics For an Instance {#disabling-and-enabling-topics-for-an-instance}
 
@@ -314,11 +314,11 @@ Obtain the Sling ID of an Experience Manager instance using either of the follow
 
 Configure the instances of a topology so that specific instances perform the background processing of assets that are added or updated in DAM.
 
-By default, Experience Manager executes the DAM Update Asset workflow when a DAM asset changes or one is added to DAM. Change the default behavior so that Experience Manager instead executes the DAM Update Asset Offloader workflow. This workflow generates a JobManager job that has a topic of `com/adobe/granite/workflow/offloading`. Then, configure the topology so that the job is offloaded to a dedicated worker.
+By default, Experience Manager executes the [!UICONTROL DAM Update Asset] workflow when a DAM asset changes or one is added to DAM. Change the default behavior so that Experience Manager instead executes the [!UICONTROL DAM Update Asset Offloader] workflow. This workflow generates a JobManager job that has a topic of `com/adobe/granite/workflow/offloading`. Then, configure the topology so that the job is offloaded to a dedicated worker.
 
 >[!CAUTION]
 >
->No workflow should be transient when used with workflow offloading. For example, the DAM Update Asset workflow must not be transient when used for asset offloading. To set/unset the transient flag on a workflow, see [Transient Workflows](/help/assets/performance-tuning-guidelines.md#workflows).
+>No workflow should be transient when used with workflow offloading. For example, the [!UICONTROL DAM Update Asset] workflow must not be transient when used for asset offloading. To set/unset the transient flag on a workflow, see [Transient Workflows](/help/assets/performance-tuning-guidelines.md#workflows).
 
 The following procedure assumes the following characteristics for the offloading topology:
 
@@ -331,14 +331,14 @@ The following procedure assumes the following characteristics for the offloading
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
-1. On each instance that users interact with to upload or change DAM assets, configure workflow launchers to use the DAM Update Asset Offloading workflow:
+1. On each instance that users interact with to upload or change DAM assets, configure workflow launchers to use the [!UICONTROL DAM Update Asset Offloading] workflow:
 
     1. Open the Workflow console.
     1. Click the Launcher tab.
-    1. Locate the two Launcher configurations that execute the DAM Update Asset workflow. One launcher configuration event type is Node Created, and the other type is Node Modified.
-    1. Change both event types so that they execute the DAM Update Asset Offloading workflow. (For information about launcher configurations, see [Starting Workflows When Nodes Change](/help/sites-administering/workflows-starting.md).)
+    1. Locate the two Launcher configurations that execute the [!UICONTROL DAM Update Asset] workflow. One launcher configuration event type is Node Created, and the other type is Node Modified.
+    1. Change both event types so that they execute the [!UICONTROL DAM Update Asset Offloading] workflow. (For information about launcher configurations, see [Starting Workflows When Nodes Change](/help/sites-administering/workflows-starting.md).)
 
-1. On the instances that perform the background processing of DAM assets, disable the workflow launchers that execute the DAM Update Asset workflow.
+1. On the instances that perform the background processing of DAM assets, disable the workflow launchers that execute the [!UICONTROL DAM Update Asset] workflow.
 
 ## Further Reading {#further-reading}
 
