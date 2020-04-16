@@ -442,7 +442,9 @@ After you deploy the web application, you can test it by using a web browser. As
 
   Enter values into the HTML form fields and click the Submit Application button. If problems occur, see the J2EE application server’s log file.
 
-  ***Note**: To confirm that the Java application invoked the process, start Workspace and accept the loan.*
+>[!NOTE]
+>
+>To confirm that the Java application invoked the process, start Workspace and accept the loan.
 
 ## Creating an ASP.NET web application that invokes a human-centric long-lived process {#creating-an-asp-net-web-application-that-invokes-a-human-centric-long-lived-process}
 

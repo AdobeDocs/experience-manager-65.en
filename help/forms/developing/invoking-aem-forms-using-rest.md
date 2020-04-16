@@ -45,7 +45,11 @@ The following data types are supported when invoking AEM Forms services using RE
   If a Froms service is invoked with the HTTP POST method, the arguments are passed inside the HTTP request body. If the AEM Forms service’s signature has a string input parameter, the request body can contain the text value of the input parameter. If the service’s signature defines multiple string parameters, the request can follow the HTTP’s `application/x-www-form-urlencoded` notation with the parameter’s names used as the form’s field names.
 
   If a Forms service returns a string parameter, the result is a textual representation of the output parameter. If a service returns multiple string parameters, the result is an XML document encoding the output parameters in the following format:
-  ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`**Note**: The `output-paramater1` value represents the output parameter name.
+  ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
+  
+  >[!NOTE]
+  >
+  >The `output-paramater1` value represents the output parameter name.  
 
   If a Forms service requires a `com.adobe.idp.Document` parameter, the service can only be invoked using the HTTP POST method. If the service requires one `com.adobe.idp.Document` parameter, the HTTP request body becomes the content of the input Document object.
 

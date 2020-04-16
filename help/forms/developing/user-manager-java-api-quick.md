@@ -31,7 +31,9 @@ Java API Quick Start(SOAP) is available for the User Manager API.
 
 AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
 
-***Note**: Quick start located in Programming with AEM forms are based on the Document if you are using another operating system, such as Unix, replace Windows-specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. (See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+> Quick start located in Programming with AEM forms are based on the Document if you are using another operating system, such as Unix, replace Windows-specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Start (SOAP mode): Adding users using the Java API {#quick-start-soap-mode-adding-users-using-the-java-api}
 
