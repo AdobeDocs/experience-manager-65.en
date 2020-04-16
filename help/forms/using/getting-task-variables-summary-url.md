@@ -25,7 +25,9 @@ In this sample orchestration, an employee submits a leave application form. The 
     * reason
     * duration
 
-   **Note**: This renderer is the summary page template.
+   >[!NOTE]
+   >
+   >This renderer is the summary page template.  
 
    The following sample code for this renderer is contained in:
 

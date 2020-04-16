@@ -1354,7 +1354,9 @@ A public key certificate contains a user's public key and identifying informatio
 
 In addition, certificate revocation lists (CRLs) provide information about certificates that were revoked prior to their expiration date. CRLs are published periodically by certificate authorities. The revocation status of a certificate can also be retrieved through Online Certificate Status Protocol (OCSP) over the network.
 
-***Note**:* *Before you can encrypt a PDF document with a certificate, you must ensure that you add the certificate to AEM Trust Store*.
+>[!NOTE]
+>
+>Before you can encrypt a PDF document with a certificate, you must ensure that you add the certificate to AEM Trust Store.
 
 **Applying usage rights to PDF documents**
 
@@ -1372,9 +1374,13 @@ PDF documents are signed by means of public-key technology. A signer has two key
 
 The public key is stored in the user's certificate that must be available to recipients to validate the signature. Information about revoked certificates is found in certificate revocation lists (CRLs) and Online Certificate Status Protocol (OCSP) responses distributed by Certificate Authorities (CAs). The time of signing can be obtained from a trusted source known as a Timestamping Authority.
 
-***Note**:* *Before you can digitally sign a PDF document, you must ensure that you add the credential in AEM Keystore. The credential is the private key used for signing*.
+>[!NOTE]
+>
+>Before you can digitally sign a PDF document, you must ensure that you add the credential in AEM Keystore. The credential is the private key used for signing.
 
-***Note:*** AEM Forms also supports *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)* specification for digitally signing PDF documents.
+>[!NOTE]
+>
+>AEM Forms also supports *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)* specification for digitally signing PDF documents.
 
 **Certifying PDF Documents**
 
@@ -1396,7 +1402,9 @@ At the time of signing, the document is scanned for specific types of content th
 
 For example, an annotation could obscure some text on a page that is important for understanding what is being certified. An explanation (legal attestation) can be provided about such content.
 
-***Note**: Before you can digitally sign a PDF document, you must ensure that you add the credential in AEM Keystore. The credential is the private key used for signing*.
+>[!NOTE]
+>
+>Before you can digitally sign a PDF document, you must ensure that you add the credential in AEM Keystore. The credential is the private key used for signing.
 
 **Syntax**:
 
