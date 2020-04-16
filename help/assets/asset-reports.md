@@ -32,12 +32,12 @@ AEM Assets generates the following standard reports for you:
 
 AEM administrators can easily generate and customize these reports for your implementation. An administrator can follow these steps to generate a report:
 
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Reports]**.
+1. In Experience Manager interface, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Reports]**.
 
 ![Tools page to navigate assets report](assets/AssetsReportNavigation.png)
 
-1. In the Asset Reports page, tap/click **[!UICONTROL Create]** from the toolbar.
-1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and tap/click **[!UICONTROL Next]**.
+1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
+1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
 
    ![Select report type](assets/choose_report.png)
 
@@ -49,7 +49,7 @@ AEM administrators can easily generate and customize these reports for your impl
    >
    >By default, the Content Fragments and link shares are included in the Asset Downloaded report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.
 
-1. Configure report details such as title, description, thumbnail, and folder path in the CRX repository where the report is stored. By default, the folder path is */content/dam*. You can specify a different path.
+1. Configure report details such as title, description, thumbnail, and folder path in the CRX repository where the report is stored. By default, the folder path is `/content/dam`. You can specify a different path.
 
    ![Page to add report details](assets/report_configuration.png)
 
@@ -79,7 +79,7 @@ AEM administrators can easily generate and customize these reports for your impl
 
    ![Details page of Link Share report](assets/link_share.png)
 
-1. Tap/click **[!UICONTROL Next]** from the toolbar.
+1. Click **[!UICONTROL Next]** from the toolbar.
 
 1. In the **[!UICONTROL Configure Columns]** page, some columns are selected to appear in the report by default. You can select more columns. Deselect a selected column to exclude it in the report.
 
@@ -87,14 +87,14 @@ AEM administrators can easily generate and customize these reports for your impl
 
    To display a custom column name or property path, configure the properties for the asset binary under the jcr:content node in CRX. Alternatively, add it through property path picker.
 
-   ![Create custom columns for report](assets/custom_columns.png)
+   ![Select or deselect report columns](assets/custom_columns.png)
 
-1. Tap/click **[!UICONTROL Create]** from the toolbar. A message notifies that report generation has been initiated.
-1. In the Asset Reports page, the report generation status is based on the current state of the report job, for example Success, Failed, Queued, or Scheduled. The same status appears in the notifications inbox.To view the report page, tap/click the report link. Alternatively, select the report, and tap **[!UICONTROL View]** from the toolbar.
+1. Click **[!UICONTROL Create]** from the toolbar. A message notifies that report generation has been initiated.
+1. In the Asset Reports page, the report generation status is based on the current state of the report job, for example Success, Failed, Queued, or Scheduled. The same status appears in the notifications inbox.To view the report page, click the report link. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
 
    ![A generated report](assets/report_page.png)
 
-   Tap **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
+   Click **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
 
 ## Add custom columns {#add-custom-columns}
 
@@ -108,10 +108,10 @@ You can add custom columns to the following reports to display more data for you
 * Brand Portal publish
 * Files
 
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Reports]**.
-1. In the Asset Reports page, tap/click **[!UICONTROL Create]** from the toolbar.
+1. In the Experience Manager interface, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Reports]**.
+1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 
-1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and tap/click **[!UICONTROL Next]**.
+1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
 1. Configure report details such as title, description, thumbnail, folder path, and date range as applicable.
 
 1. To display a custom column, specify the name of the column in under **[!UICONTROL Custom Columns]**.
@@ -122,9 +122,9 @@ You can add custom columns to the following reports to display more data for you
 
    ![Map the property path from paths in jcr:content](assets/property_picker.png)
 
-   To add more custom columns, tap/click **[!UICONTROL Add]** and repeat steps 5 and 6.
+   To add more custom columns, click **[!UICONTROL Add]** and repeat steps 5 and 6.
 
-1. Tap/click **[!UICONTROL Create]** from the toolbar. A message notifies that report generation has been initiated.
+1. Click **[!UICONTROL Create]** from the toolbar. A message notifies that report generation has been initiated.
 
 ## Configure purging service {#configure-purging-service}
 

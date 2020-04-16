@@ -6,7 +6,7 @@ mini-toc-levels: 1
 
 ---
 
-<!-- TBD: Formatting using backticks. Add UICONTROL tag. Redundant info as reviewed by engineering. -->
+<!-- TBD: Get reviewed by engineering. -->
 
 # Assets performance tuning guide {#assets-performance-tuning-guide}
 
@@ -26,11 +26,11 @@ While AEM is supported on a number of platforms, Adobe has found the greatest su
 
 ### Temporary folder {#temp-folder}
 
-To improve asset upload times, use high performance storage for the Java temporary directory. On Linux and Windows, a RAM drive or SSD could be used. In cloud-based environments, an equivalent high speed storage type could be used. For example in Amazon EC2, an ['ephemeral drive'](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temporary folder.
+To improve asset upload times, use high performance storage for the Java temporary directory. On Linux and Windows, a RAM drive or SSD could be used. In cloud-based environments, an equivalent high speed storage type could be used. For example in Amazon EC2, an [ephemeral drive](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temporary folder.
 
 Assuming the server has ample memory, configure a RAM drive. On Linux, run these commands to create an 8 GB RAM drive:
 
-```
+```shell
 mkfs -q /dev/ram1 800000
  mkdir -p /mnt/aem-tmp
  mount /dev/ram1 /mnt/aem-tmp
@@ -49,13 +49,13 @@ Once the high performance temporary volume is ready, set the JVM parameter `-Dja
 
 Adobe recommends deploying AEM Assets on Java 8 for optimum performance. 
 
->[!NOTE] 
+>[!NOTE]
 >
 >Oracle stopped releasing updates for Java 7 as of April 2015.
 
 ### JVM parameters {#jvm-parameters}
 
-You should set the following JVM parameters:
+Set the following JVM parameters:
 
 * `-XX:+UseConcMarkSweepGC`
 * `-Doak.queryLimitInMemory`=500000
@@ -85,7 +85,7 @@ Implementing an S3 or Shared File Datastore can help to save disk space and incr
 
 The following S3 Data Store configuration ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) helped Adobe extract 12.8 TB of binary large objects (BLOBs) from an existing file data store into an S3 data store at a customer site:
 
-```
+```conf
 accessKey=<snip>
  secretKey=<snip>
  s3Bucket=<snip>
@@ -123,18 +123,17 @@ Primarily, your network optimization strategy depends upon the amount of bandwid
 
 Wherever possible, set the [!UICONTROL DAM Update Asset] workflow to Transient. The setting significantly reduces the overheads required to process workflows because, in this case, workflows need not pass through the normal tracking and archival processes.
 
->[!NOTE]
->
->By default, the [!UICONTROL DAM Update Asset] workflow is set to Transient in AEM 6.3. In this case, you can skip the following procedure.
-
 1. Navigate to `/miscadmin` in the AEM instance at `https://[aem_server]:[port]/miscadmin`.
+
 1. Expand **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]** &gt; **[!UICONTROL dam]**.
+
 1. Open **[!UICONTROL DAM Update Asset]**. From the floating tool panel, switch to the **[!UICONTROL Page]** tab, and then click **[!UICONTROL Page Properties]**.
+
 1. Select **[!UICONTROL Transient Workflow]** and click **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
-   >Some features do not support transient workflows. If your AEM Assets deployment requires these features, do not configure transient workflows.
+   >Some features do not support transient workflows. If your [!DNL Assets] deployment requires these features, do not configure transient workflows.
 
 In cases where transient workflows cannot be used, run workflow purging regularly to delete archived [!UICONTROL DAM Update Asset] workflows to ensure system performance does not degrade.
 
@@ -144,14 +143,16 @@ To configure workflow purging, add a new Adobe Granite Workflow Purge configurat
 
 If purging runs for too long, it times out. Therefore, you should ensure that your purging jobs complete to avoid situations where purging workflows fail to complete owing to the high number of workflows.
 
-For example, after executing numerous non-transient workflows (that creates workflow instance nodes), you can run [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) on an ad-hoc basis. It removes redundant, completed workflow instances immediately rather than waiting for the Adobe Granite Workflow Purge scheduler to run.
+For example, after executing numerous non-transient workflows (that creates workflow instance nodes), you can execute [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) on an ad-hoc basis. It removes redundant, completed workflow instances immediately rather than waiting for the Adobe Granite Workflow Purge scheduler to run.
 
 ### Maximum parallel jobs {#maximum-parallel-jobs}
 
 By default, AEM runs a maximum number of parallel jobs equal to the number of processors on the server. The problem with this setting is that during periods of heavy load, all of the processors are occupied by [!UICONTROL DAM Update Asset] workflows, slowing down UI responsiveness and preventing AEM from running other processes that safeguard server performance and stability. As a good practice, set this value to half the processors that are available on the server by performing the following steps:
 
-1. On AEM Author, go to `https://[aem_server]:[port]/system/console/slingevent`.
+1. On Experience Manager Author, go to `https://[aem_server]:[port]/system/console/slingevent`.
+
 1. Click **[!UICONTROL Edit]** on each workflow queue that is relevant to your implementation, for example **[!UICONTROL Granite Transient Workflow Queue]**.
+
 1. Update the value of **[!UICONTROL Maximum Parallel Jobs]** and click **[!UICONTROL Save]**.
 
 Setting a queue to half of the available processors is a workable solution to start with. However, you may have to increase or decrease this number to achieve maximum throughput and tune it by environment. There are separate queues for transient and non-transient workflows as well as other processes, such as external workflows. If several queues set to 50% of the processors are active simultaneously, the system can get overloaded quickly. The queues that are heavily used vary greatly across user implementations. Therefore, you may have to configure them thoughtfully for maximum efficiency without sacrificing server stability.
@@ -253,10 +254,14 @@ Some optimizations can be done on the Oak index configurations that can help imp
 1. Browse to `/oak:index/damAssetLucene`. Add a `String[]` property `includedPaths` with value `/content/dam`.
 1. Save.
 
-(AEM6.1 and 6.2 only) Update the ntBaseLucene index to improve asset delete and move performance:
+<!-- TBD: Review by engineering if required in 6.5 docs or not.
+
+(AEM6.1 and 6.2 only) Update the `ntBaseLucene` index to improve asset delete and move performance:
 
 1. Browse to `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
+
 1. Add two nt:unstructured nodes `slingResource` and `damResolvedPath` under `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
+
 1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
 
    ```
@@ -282,15 +287,14 @@ Some optimizations can be done on the Oak index configurations that can help imp
     * */oak:index/damResolvedPath*
 
 1. Click "Save All"
+-->
 
 Disable Lucene Text Extraction:
 
-If your users don't need to be able to search the contents of assets, for example, searching the text contained in PDF documents, then you can improve index performance by disabling this feature.
+If your users do not need to do full-text search of assets, say for example, searching through text in PDF documents, then disable it. You improve index performance by disabling full-text indexing.
 
-1. Go to the AEM package manager /crx/packmgr/index.jsp
-1. Upload and install the package below
-
-[Get File](assets/disable_indexingbinarytextextraction-10.zip)
+1. Go to the AEM package manager `/crx/packmgr/index.jsp`.
+1. Upload and install the package available at [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Guess Total {#guess-total}
 

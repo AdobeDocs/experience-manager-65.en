@@ -1,8 +1,8 @@
 ---
 title: Configuring Layout Container and Layout Mode
 seo-title: Configuring Layout Container and Layout Mode
-description: Lear how to configure Layout Container and Layout Mode.
-seo-description: Lear how to configure Layout Container and Layout Mode.
+description: Learn how to configure Layout Container and Layout Mode.
+seo-description: Learn how to configure Layout Container and Layout Mode.
 uuid: 952b7c86-76ab-4699-8530-8638e46bb50f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
