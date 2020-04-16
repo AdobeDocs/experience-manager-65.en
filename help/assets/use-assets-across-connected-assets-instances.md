@@ -87,9 +87,9 @@ To configure Connected Assets and local Sites connectivity, follow these steps.
 
    | Before | After |
    |---|---|
-   | /content/dam(/((?!/subassets).)&#42;/)renditions/original |/content/dam(/((?!/subassets)(?!connectedassets).)&#42;/)renditions/original |
-   | /content/dam(/.&#42;/)renditions/original |/content/dam(/((?!connectedassets).)&#42;/)renditions/original |
-   | /content/dam(/.&#42;)/jcr:content/metadata |/content/dam(/((?!connectedassets).)&#42;/)jcr:content/metadata |
+   | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
 
    >[!NOTE]
    >
