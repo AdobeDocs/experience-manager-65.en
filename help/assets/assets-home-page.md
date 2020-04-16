@@ -37,7 +37,7 @@ After enabling the Assets Home page, navigate to the Assets user interface eithe
 
 ![configure experience link on Assets user interface](assets/config-experience-link.png)
 
-Tap/click the **[!UICONTROL Click here to configure your experience link]** to add your username, background image, and profile image.
+Click the **[!UICONTROL Click here to configure your experience link]** to add your username, background image, and profile image.
 
 The Assets Home page includes the following sections:
 

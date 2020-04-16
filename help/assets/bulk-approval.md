@@ -19,7 +19,7 @@ After the reviewer completes the review (approves or rejects assets), you receiv
 ## Create a review task for folders {#creating-a-review-task-for-folders}
 
 1. From the Assets user interface, select the folder for which you want to create a review task.
-1. From the toolbar, tap **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, tap/click **[!UICONTROL More]** and then select the option.
+1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
@@ -43,17 +43,17 @@ After the reviewer completes the review (approves or rejects assets), you receiv
 
    ![review_name](assets/review_name.png)
 
-1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. A notification for the new task is sent to the approver.
-1. Log in to AEM Assets as an Approver and navigate to the Assets UI. To approve assets, tap **[!UICONTROL Notifications]** and then select the review task from the list.
+1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. A notification for the new task is sent to the approver.
+1. Log in to AEM Assets as an Approver and navigate to the Assets UI. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
 
    ![Assets notification](assets/aemAssetsNotification.png)
 
-1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then tap/click **[!UICONTROL Review]**.
-1. In the **[!UICONTROL Review Task]** page, select assets, and tap **[!UICONTROL Approve/Reject]** to approve or reject, as appropriate.
+1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then click **[!UICONTROL Review]**.
+1. In the **[!UICONTROL Review Task]** page, select assets, and click **[!UICONTROL Approve/Reject]** to approve or reject, as appropriate.
 
    ![review_task](assets/review_task.png)
 
-1. Tap **[!UICONTROL Complete]** from the toolbar. In the dialog, enter a comment and tap/click  **[!UICONTROL Complete]** to confirm.
+1. Click **[!UICONTROL Complete]** from the toolbar. In the dialog, enter a comment and click  **[!UICONTROL Complete]** to confirm.
 1. Navigate to the Assets user interface and open the folder. The approval status icons for the assets appear in card view and list view.
 
    **Card view**
@@ -67,7 +67,7 @@ After the reviewer completes the review (approves or rejects assets), you receiv
 ## Create a review task for collections {#creating-a-review-task-for-collections}
 
 1. From the Collections page, select the collection for which you want to create a review task.
-1. From the toolbar, tap **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, tap **[!UICONTROL More]** and then select the option.
+1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
@@ -87,14 +87,14 @@ After the reviewer completes the review (approves or rejects assets), you receiv
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. A notification for the new task is sent to the approver.
-1. Log in to AEM Assets as an Approver and navigate to the Assets console. To approve assets, tap **[!UICONTROL Notifications]** and then select the review task from the list.
-1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then tap/click **[!UICONTROL Review]**.
-1. All the assets in the collection are visible on the review page. Select the assets and tap **[!UICONTROL Approve/Reject]** to approve or reject assets, as appropriate.
+1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. A notification for the new task is sent to the approver.
+1. Log in to AEM Assets as an Approver and navigate to the Assets console. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
+1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then click **[!UICONTROL Review]**.
+1. All the assets in the collection are visible on the review page. Select the assets and click **[!UICONTROL Approve/Reject]** to approve or reject assets, as appropriate.
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. Tap **[!UICONTROL Complete]** from the toolbar. In the dialog, enter a comment and tap/click **[!UICONTROL Complete]** to confirm.
+1. Click **[!UICONTROL Complete]** from the toolbar. In the dialog, enter a comment and click **[!UICONTROL Complete]** to confirm.
 1. Navigate to the Collections console and open the collection. The approval status icons for the assets appear in both the Card and List views.
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
