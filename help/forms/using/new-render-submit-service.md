@@ -157,4 +157,4 @@ Yes, since the previous render and submit services associated with the default a
 If you had modified the existing Render or Submit PDF Form services or created custom services (say custom1), and now want to use the same functionality for HTML rendition. You need to replicate the new render or submit service (as say custom2) and apply similar customizations to those. Now, modify the action profile for your XDP to start using custom2 services, instead of the custom1 for render or submit.
 
 What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?
-What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?  [Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)
+What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?  

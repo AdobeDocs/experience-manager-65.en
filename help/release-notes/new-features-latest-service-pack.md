@@ -7,9 +7,11 @@ mini-toc-levels: 1
 
 # What's new in Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Adobe Experience Manager (AEM) 6.5 delivers features and continuous improvements through quarterly Service Packs. The approach benefits you as the innovations get easier to adopt.
+Adobe Experience Manager (6.5) enables you to get access to new features and continuous improvements through quarterly Service Pack releases. Using this approach, you get to adopt the innovations easily.
 
-AEM Service Pack 4 (6.5.4.0) is released on **March 5, 2020**. This article highlights key features that the 6.5 Service Packs offer to make your AEM journey more enriching.
+Experience Manager Service Pack 4 (6.5.4.0) is an important update. It includes all the new features, key customer requested enhancements, performance, stability, and security improvements released since AEM 6.5 release in April 2019. You can install the service pack on AEM 6.5 and later releases.
+
+This article highlights the features included in the latest 6.5 Service Pack, [key features included in the previous 6.5 Service Packs](#key-features-previous-service-packs), and some of the [key releases since Experience Manager 6.5.3.0](#key-features-sice-sp3).
 
 ## AEM Sites {#aem-sites}
 
@@ -90,11 +92,15 @@ Experience Manager Forms includes the following accessibility enhancements:
 
 * Each page of an adaptive form now includes one title and one main landmark label.
 
-## Key features in previous AEM 6.5 Service Packs
+## Key features in previous AEM 6.5 Service Packs {#key-features-previous-service-packs}
 
-### Smart Imaging for Dynamic Media (6.5.3.0) {#smart-imaging}
+### Smart Imaging for Dynamic Media {#smart-imaging}
 
 Smart imaging uses each user's unique viewing characteristics to automatically serve the right images optimized for their experience, resulting in better performance and engagement. Smart imaging works with your existing image presets and uses intelligence at the last millisecond of delivery to further reduce image file size based on browser or network connection speed. See [Smart Imaging](../assets/imaging-faq.md).
+
+### Smart crop in video profiles for Dynamic Media (6.5.3.0) {#smart-crop-video}
+
+Smart crop for video–an optional feature available in Video Profiles– is a tool that uses the power of artificial intelligence in Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video that you have uploaded, regardless of size. See [About using smart crop in video profiles](../assets/video-profiles.md).
 
 ### Visual search for AEM Assets (6.5.2.0) {#visual-search}
 
@@ -113,7 +119,7 @@ You have the option of specifying a start date and time and an end date and time
 
 You can use the Batch API to produce multiple interactive communications from a template. The template is an interactive communication without any data. The Batch API combines data with a template to produce an interactive communication. The API is useful in the mass production of interactive communications. For example, telephone bills, credit card statements for multiple customers. See [Generate multiple interactive communications using Batch API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-## Key releases since AEM 6.5 SP3
+## Key releases since AEM 6.5 SP3 {#key-features-sice-sp3}
 
 Between December 12, 2019 and March 5, 2020, Adobe released following capabilities that are outside of the core AEM deliverable:
 

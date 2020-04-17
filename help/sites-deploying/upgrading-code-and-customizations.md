@@ -63,7 +63,7 @@ The AEM Uber jar includes all AEM APIs as a single dependency in your Maven proj
 
 ### Phase out use of Administrative Resource Resolver {#phase-out-use-of-administrative-resource-resolver}
 
-The use of an administrative session through `SlingRepository.loginAdministrative()` and `ResourceResolverFactory.getAdministrativeResourceResolver()` was quite prevalent in code bases prior to AEM 6.0. These methods have been deprecated for security reasons as they give too broad of a level of access. [In future versions of Sling these methods will be removed](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). It is highly recommended to refactor any code to use Service Users instead. More information about Service Users and [how to phase out administrative sessions can be found here](/help/sites-administering/security-service-users.md#how to phase out admin sessions).
+The use of an administrative session through `SlingRepository.loginAdministrative()` and `ResourceResolverFactory.getAdministrativeResourceResolver()` was quite prevalent in code bases prior to AEM 6.0. These methods have been deprecated for security reasons as they give too broad of a level of access. [In future versions of Sling these methods will be removed](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). It is highly recommended to refactor any code to use Service Users instead. More information about Service Users and [how to phase out administrative sessions can be found here](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
 
 ### Queries and Oak Indexes {#queries-and-oak-indexes}
 
@@ -143,11 +143,11 @@ Adobe recommends putting custom scripts at `/apps/settings/dam/indesign/scripts`
 
 ### Recovering ContextHub Configurations {#recovering-contexthub-configurations}
 
-ContextHub configurations are effected by an upgrade. Instructions on how to recover existing ContextHub configurations can be found [here](/help/sites-administering/contexthub-config.md#recovering contexthub configurations after upgrading).
+ContextHub configurations are affected by an upgrade. Instructions on how to recover existing ContextHub configurations can be found [here](/help/sites-administering/contexthub-config.md#recovering-contexthub-configurations-after-upgrading).
 
 ### Workflow Customizations {#workflow-customizations}
 
-It is a common practice to update modify out of the box workflows to add or remove un-needed functionality. A common workflow that is customized is the DAM Update Asset workflow. All workflows required for a custom implementation should be backed up and stored in version control as they may be overwritten during an upgrade.
+It is a common practice to update modify out of the box workflows to add or remove un-needed functionality. A common workflow that is customized is the [!UICONTROL DAM Update Asset] workflow. All workflows required for a custom implementation should be backed up and stored in version control as they may be overwritten during an upgrade.
 
 ### Editable Templates {#editable-templates}
 

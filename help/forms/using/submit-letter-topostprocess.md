@@ -22,7 +22,7 @@ Agents can associate and execute post processing workflows on letters and intrea
 
 To associate post processes with letters or interactive communications, you first need to set up the post processes. Two types of workflows can be executed on submitted letters:
 
-1. **Forms Workflow:** These are the AEM Forms on JEE process management workflows. Instructions for setting up [Forms Workflow](../../forms/using/submit-letter-topostprocess.md#main-pars-header-3).
+1. **Forms Workflow:** These are the AEM Forms on JEE process management workflows. Instructions for setting up [Forms Workflow](#formsworkflow).
 
 1. **AEM Workflow:** AEM workflows can also be used as post processes for submitted letters. Instructions for setting up [AEM Workflow](../../forms/using/aem-forms-workflow.md).
 

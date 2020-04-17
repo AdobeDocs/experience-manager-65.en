@@ -278,5 +278,3 @@ To
     padding-top: 15px;
 }
 ```
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

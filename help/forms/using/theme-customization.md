@@ -79,5 +79,3 @@ You can customize the HTML code and CSS file to provide a distinct organization-
 1. Open the AEM Forms app.
 
    The AEM Forms app now displays instructions instead of description.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

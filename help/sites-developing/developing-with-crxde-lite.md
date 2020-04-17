@@ -422,6 +422,7 @@ To create the `HelloWorld` Java class within the Test Bundle:
 
 1. The `HelloWorld.java` file opens in the Edit pane.
 1. Add the following lines into `HelloWorld.java`:
+
     ```
       package com.mycompany.test;
 
@@ -431,6 +432,7 @@ To create the `HelloWorld` Java class within the Test Bundle:
       }
       }
     ```
+
 1. Click **Save All** to save the changes on the server.
 
 ### Building a Bundle {#building-a-bundle}

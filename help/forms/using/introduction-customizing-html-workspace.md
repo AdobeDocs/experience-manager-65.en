@@ -377,5 +377,3 @@ mvn clean -P Dev install on client-pkg
 * html.jsp
 * content.xml
 * _rep_policy.xml
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

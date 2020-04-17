@@ -206,5 +206,3 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 1. Are there any reserved keywords in HTML5 forms?
 
    Answer: All HTML5 forms APIs are reserved keywords. For custom APIs/functions, use a name that is not identical to [HTML5 forms APIs](/help/forms/using/scripting-support.md). Apart from reserved keywords, if you use object names that begin with an underscore (_), it is recommended to add a unique prefix after the underscore. Adding a prefix helps avoid any possible conflict with HTML5 forms internal APIs. For example, `_fpField1`
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

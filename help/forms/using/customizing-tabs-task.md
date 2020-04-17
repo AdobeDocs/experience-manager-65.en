@@ -46,5 +46,3 @@ You can customize tab names for the `Start Process` component in the `Start Proc
    >[!NOTE]
    >
    >Add corresponding key-value pair for all supported languages.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

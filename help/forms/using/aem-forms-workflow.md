@@ -119,7 +119,7 @@ The example creates a workflow model a mortgage application to be filled by a fr
 
    For the complete set of values of all the fields of the assign task steps, document of record step, and sign document step configured for example mortgage application, import the example package, available for download in the starting of this section.
 
-   The workflow model is ready. You can launch the workflow through various methods. For details, see [Launch a Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow.md#main-pars-header).
+   The workflow model is ready. You can launch the workflow through various methods. For details, see [Launch a Forms-centric workflow on OSGi](#launch).
 
    ![workflow-editor-mortgage](assets/workflow-editor-mortgage.png)
 
@@ -269,4 +269,4 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 
 ### Purge workflow instances {#purge-workflow-instances}
 
-Minimizing the number of workflow instances increases the performance of the workflow engine, so you can regularly purge completed or running workflow instances from the repository. For detailed information see, [Regular Purging of Workflow Instances](/help/sites-administering/workflows-administering.md#regular purging of workflow instances).
+Minimizing the number of workflow instances increases the performance of the workflow engine, so you can regularly purge completed or running workflow instances from the repository. For detailed information see, [Regular Purging of Workflow Instances](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).

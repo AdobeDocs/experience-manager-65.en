@@ -77,5 +77,3 @@ After creating a custom profile, add render information to this profile. On rece
 1. To verify that th profile is created, open URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
 To verify your forms, [Import your forms](/help/forms/using/get-xdp-pdf-documents-aem.md) from your local file system to AEM Forms and [preview the form](/help/forms/using/previewing-forms.md) on AEM server author instance.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

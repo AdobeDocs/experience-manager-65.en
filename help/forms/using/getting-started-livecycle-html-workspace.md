@@ -57,11 +57,11 @@ When you are navigating AEM Forms workspace by using a keyboard, the navigation 
 
 You can set the various AEM Forms workspace preferences in the following categories:
 
-**Out of Office:** Set preferences to control how tasks are assigned to other people while you are out of the office. See [Setting out-of-office preferences](/help/forms/using/todo-lists.md#main-pars-heading-22).
+**Out of Office:** Set preferences to control how tasks are assigned to other people while you are out of the office. See [Setting out-of-office preferences](todo-lists.md#setting-out-of-office-preferences).
 
-**Queues:** Set preferences for sharing your To-do list with other users or for requesting access to another user’s list. See [Working with tasks from group and shared queues](/help/forms/using/todo-lists.md#main-pars-heading-19).
+**Queues:** Set preferences for sharing your To-do list with other users or for requesting access to another user’s list. See [Working with tasks from group and shared queues](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
-**UI Settings:** Set preferences for how you interact with AEM Forms workspace. See [Set user interface preferences](/help/forms/using/getting-started-livecycle-html-workspace.md#main-pars-heading-5).
+**UI Settings:** Set preferences for how you interact with AEM Forms workspace. See [Set user interface preferences](#set-user-interface-preferences).
 
 ### Set user interface preferences {#set-user-interface-preferences}
 
@@ -74,5 +74,3 @@ Set the user interface preferences in the Preferences &gt; UI Settings tab. The 
 * **Notify Task Events via Email:** Specifies whether you receive email notifications for task events, including task assignments, reminders, and deadlines for tasks in your To-do list and in group To-do lists that you belong to.
 * **Attach Forms in Email:** Specifies whether a copy of the form is attached to email notification messages. Attachments are supported only for PDF and XDP forms.
 * **Save draft periodically:** Specifies whether your form drafts are auto-saved periodically or not. To save your drafts periodically, enable this option and set the auto-save duration from 1 to 30 minutes. When auto-save is enabled and a user is working on a draft, the draft is saved periodically after the specified number of minutes. The draft is auto-saved only when there is a change in the draft since the last save or auto-save. When the draft is saved, an alert message appears on the screen.
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

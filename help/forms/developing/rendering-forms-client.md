@@ -153,7 +153,7 @@ Render a form at the client by using the Forms API (web service):
    Invoke the `FormsService` object’s `renderPDFForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-    * A `BLOB` object that contains data to merge with the form. If you do not want to merge data, pass `null`. (See [Prepopulating Forms with Flowable Layouts](/help/forms/developing/rendering-forms-rendering-forms prepopulating-forms-flowable-layouts-prepopulating.md#prepopulating-forms-with-flowable-layouts).)
+    * A `BLOB` object that contains data to merge with the form. If you do not want to merge data, pass `null`. (See [Prepopulating Forms with Flowable Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
     * A `PDFFormRenderSpec` object that stores run-time options required to render a form at the client.
     * A `URLSpec` object that contains URI values that are required by the Forms service.
     * A `java.util.HashMap` object that stores file attachments. This is an optional parameter and you can specify `null` if you do not want to attach files to the form.

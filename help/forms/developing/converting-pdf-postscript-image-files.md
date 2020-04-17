@@ -22,7 +22,9 @@ You can accomplish these tasks using the Convert PDF service:
 * Convert PDF documents to PostScript.
 * Convert PDF documents to image formats.
 
-  ***Note**: For more information about the Convert PDF service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).*
+>[!NOTE]
+>
+>For more information about the Convert PDF service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Converting PDF Documents to PostScript {#converting-pdf-documents-to-postscript}
 

@@ -19,7 +19,23 @@ In this one-stop shop newsletter, discover valuable knowledge-building resources
 
 ## Missed an issue of the Dynamic Media Newsletter?
 
+* **[April 2020, Issue 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
+    
+    In this issue:
+
+    * Discover three ways your rich media investment can help during these challenging times.
+    * Sign up for the webinar to learn how to lighten your page load with Smart Imaging.
+    * Watch the on-demand Skill Builder webinars for Dynamic Media Classic.
+    * View the Dynamic Media sessions from Online Adobe Summit 2020.
+    * Learn more about our free Dynamic Media Classic audits.
+    * Meet John Monroe, Senior Program Manager for Customer Success Services.
+
+    >[!IMPORTANT]
+    >
+    >We want to make sure we are only sending the Dynamic Media newsletter to those who want to receive it. To continue receiving the newsletter after this issue, please sign up for it [here](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&reserved=0).
+
 * **[February 2020, Issue 2](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@5lYjerUalNCDQd6ABlMufSyP3GqbFDn747uBiom3-3_efxsaEjuw8LNhJxrs89ft1vcsQzjvxTGMo55w-4k0YyBVGiL6m5AWSe9I7H7wIXKT0Efz.html)**
+
     In this issue:
 
     * Attend new Skill Builder Webinars and transform into a Dynamic Media Classic expert.
@@ -30,6 +46,7 @@ In this one-stop shop newsletter, discover valuable knowledge-building resources
     * Meet Georgia Myers, Manager of Customer Success for Adobe Experience Cloud.
 
 * **[January 2020, Issue 1](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@NpvOA7LHuVbd-W1B5pENdSLNFZ4L4ZeEkA_bVd4reX31KUOs3uaPFEuEx2mWz-3oNkVBcY5fdimoW3RM-SzTt6QXI4l1Rd2mEwrYsWp7C1LnUMVp.html)**
+
     In this issue:
 
     * Five new Skill Builder Webinars to hone your Dynamic Media Classic skills.
@@ -39,6 +56,7 @@ In this one-stop shop newsletter, discover valuable knowledge-building resources
     * Meet Mark Dean, Digital Media Specialist.
 
 * **[November 2019, Issue 11](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
+
     In this issue:
 
     * A refresh of the Dynamic Media Classic user interface.
@@ -48,6 +66,7 @@ In this one-stop shop newsletter, discover valuable knowledge-building resources
     * Meet Apoorva Gupta, Senior Product Manager, Dynamic Media.
 
 * **[October 2019, Issue 10](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_10_2019_Oct.html)**
+
     In this issue:
 
     * How you can get advanced analytics on the actions visitors take in your Dynamic Media viewers.
@@ -58,6 +77,7 @@ In this one-stop shop newsletter, discover valuable knowledge-building resources
     * Get up to speed on Dynamic Media and Dynamic Media Classic in Experience League.
 
 * **[September 2019, Issue 09](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
+
     In this issue:
 
     * Supercharge your customer experiences by eliminating these 9 "gotchas."
@@ -69,6 +89,7 @@ In this one-stop shop newsletter, discover valuable knowledge-building resources
 
 
 * **[August 2019, Issue 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
+ 
     In this issue:
 
     * Explore valuable features available only when you upgrade to Dynamic Media.
@@ -79,6 +100,7 @@ In this one-stop shop newsletter, discover valuable knowledge-building resources
 
 
 * **[July 2019, Issue 07](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
+
     In this issue:
 
     * Resources and information that let you properly manage your high-value assets to confidently deliver experiences that keep your visitors coming back.
@@ -89,6 +111,7 @@ In this one-stop shop newsletter, discover valuable knowledge-building resources
     * Meet Andrew Hathaway, Principal Solutions Consultant for Dynamic Media within AEM Assets.
 
 * **[June 2019, Issue 06](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
+
     In this issue:
 
     * Enjoy videos that highlight the awesomeness of upgrading to Dynamic Media within AEM Assets.
@@ -99,16 +122,20 @@ In this one-stop shop newsletter, discover valuable knowledge-building resources
     * Meet Alex Thiers, one of the driving forces behind many of the great features and innovations within Dynamic Media and Dynamic Media Classic.
 
 * **[May 2019, Issue 05](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_05_2019_May.html)**
-In this issue:
 
-    * Discover top 10 hidden features of Dynamic Media Classic in a blog post
+    In this issue:
+
+    * Discover top 10 hidden features of Dynamic Media Classic in a blog post.
     * Watch key how-to videos in Experience League.
     * Learn about the upcoming Adobe Insider Tour.
     * Read a three-part blog series to update your rich media strategy.
     * Learn about AI-driven video smart cropping.
 
 * **[April 2019, Issue 04](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
-    Welcome to the inauguration issue of the Dynamic Media Newsletter, our new monthly newsletter filled with news, events, and resources for users of Dynamic Media within Adobe Experience Manager Assets and Adobe Dynamic Media Classic. In this issue:
+
+    Welcome to the inauguration issue of the Dynamic Media Newsletter, our new monthly newsletter filled with news, events, and resources for users of Dynamic Media within Adobe Experience Manager Assets and Adobe Dynamic Media Classic.
+    
+    In this issue:
     * Register for our Dynamic Media Classic Hidden Features webinar.
     * Learn about our on-demand webinar series to help you develop your rich media strategy.
     * Read about key rich media use cases and our solutions for them. 

@@ -15,15 +15,15 @@ The default metadata schema for assets now incorporates the IPTC Core and IPTC E
 The Properties page for assets now includes separate tabs to display the IPTC Core and IPTC Extension metadata in editable fields.
 
 1. From the Assets user interface, select an image.
-1. Tap **[!UICONTROL Properties]** from the toolbar.
-1. Tap the **[!UICONTROL IPTC]** tab to view the IPTC metadata for the asset.
+1. Click **[!UICONTROL Properties]** from the toolbar.
+1. Click the **[!UICONTROL IPTC]** tab to view the IPTC metadata for the asset.
 1. Edit the IPTC metadata properties, as required.
 
    ![iptc_tab](assets/keywords-in-iptc-tab.png)
 
-1. Click/tap the **[!UICONTROL IPTC Extension]** tab to view IPTC Extension metadata for the asset.
+1. Click the **[!UICONTROL IPTC Extension]** tab to view IPTC Extension metadata for the asset.
 1. Edit the IPTC Extension metadata properties, as required.
-1. Tap/click **[!UICONTROL Save & Close]** to save the changes.
+1. Click **[!UICONTROL Save & Close]** to save the changes.
 
 ## Creative rating support {#creative-rating-support}
 

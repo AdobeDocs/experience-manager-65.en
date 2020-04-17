@@ -31,9 +31,13 @@ The following Quick Starts are available for the Task Manager service.
 
 AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
 
-***Note**: You cannot search for tasks assigned to users by using the web service API. The reason is because you cannot invoke the `taskList` method, which is a necessary method call to perform this task.*
+>[!NOTE]
+>
+>You cannot search for tasks assigned to users by using the web service API. The reason is because you cannot invoke the `taskList` method, which is a necessary method call to perform this task.
 
-***Note**: Quick Start located in Programming with AEM Forms are based on the Forms server operating system. However, if you are using another operating system, such as UNIX, replace Windows-specific paths with paths that are supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. (See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>Quick Start located in Programming with AEM Forms are based on the Forms server operating system. However, if you are using another operating system, such as UNIX, replace Windows-specific paths with paths that are supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Start (SOAP mode): Assigning tasks using the Java API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
