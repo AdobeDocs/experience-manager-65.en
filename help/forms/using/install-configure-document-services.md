@@ -44,7 +44,7 @@ AEM Forms is a powerful enterprise-class platform and the document services is o
 
 AEM Forms add-on package is an application deployed onto AEM. Generally, you require only one AEM instance (author or publish) to run AEM Forms document services. The following topology is recommended to run AEM Forms document services. For detailed information about topologies, see [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![](do-not-localize/document-services.png)
+![deployment-topology](do-not-localize/document-services.png)
 
 >[!NOTE]
 >
@@ -74,88 +74,89 @@ Before you begin to install and configure AEM Forms document services, ensure th
 
 >[!NOTE]
 >
->* On Microsoft Windows, PDF Generator supports WebKit, Acrobat WebCapture, and PhantomJS conversion routes to convert HTML files to PDF documents.   
+>* On Microsoft Windows, PDF Generator supports WebKit, Acrobat WebCapture, and PhantomJS conversion routes to convert HTML files to PDF documents.
 >* On UNIX-based operating systems, PDF Generator supports WebKit and PhantomJS conversion routes to convert HTML files to PDF documents.
 >
 
 ### Extra requirements for UNIX-based operating system {#extrarequirements}
+
 If you are using the UNIX-based operating system, install the following packages from the installation media of the respective operating system:
 
-<table> 
- <tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>
+    <ul>
+     <li>expat</li>
+    </ul> </td>
+   <td> 
+    <ul> 
+     <li>libxcb</li>
+    </ul> </td>
+   <td> 
+    <ul> 
+     <li>freetype</li>
+    </ul> </td>
+   <td>
+    <ul> 
+     <li>libXau</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>
+    <ul>
+     <li>libSM</li>
+    </ul> </td>
+   <td> 
+    <ul> 
+     <li>zlib</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>libICE</li>
+    </ul> </td>
+   <td>
+    <ul> 
+     <li>libuuid</li>
+    </ul> </td>
+  </tr>
   <tr> 
    <td> 
     <ul> 
-     <li>expat</li> 
-    </ul> </td> 
+     <li>glibc</li>
+    </ul> </td>
    <td> 
     <ul> 
-     <li>libxcb</li> 
-    </ul> </td> 
-   <td> 
+     <li>libXext</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>nss-softokn-freebl</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>fontconfig</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td>
+    <ul>
+     <li>libX11</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>libXrender</li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li>libXrandr</li>
+    </ul> </td>
+   <td>
     <ul> 
-     <li>freetype</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>libXau</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li>libSM</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>zlib</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>libICE</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>libuuid</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li>glibc</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>libXext</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>nss-softokn-freebl</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>fontconfig</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li>libX11</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>libXrender</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>libXrandr</li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li>libXinerama</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+     <li>libXinerama</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 * **(PDF Generator only**) Install the 32-bit version of libcurl, libcrypto, and libssl libraries and create the below symlinks. The symlinks point to the latest version of the respective libraries:
@@ -596,7 +597,7 @@ The Assembler service depends on the Reader Extensions service, Signature servic
 
 You have a working AEM Forms document services environment. You can use document services through:
 
-* [Form centric workflows on OSGi](/help/forms/using/aem-forms-workflow.md)
-* [Watched Folders](/help/forms/using/watched-folder-in-aem-forms.md)
-* [Document services APIs](/help/forms/using/aem-document-services-programmatically.md)
+* [Form centric workflows on OSGi](aem-forms-workflow.md)
+* [Watched Folders](watched-folder-in-aem-forms.md)
+* [Document services APIs](aem-document-services-programmatically.md)
 
