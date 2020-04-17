@@ -24,7 +24,9 @@ The Endpoint Registry service provides the ability to programmatically manage en
 * (Deprecated for AEM forms) Remoting
 * Task Manager
 
-  ***Note**: SOAP, EJB, and (Deprecated for AEM forms on JEE) Remoting endpoints are automatically created for each activated service. The SOAP and EJB endpoints enable SOAP and EJB for all service operations.*
+>[!NOTE]
+>
+>SOAP, EJB, and (Deprecated for AEM forms on JEE) Remoting endpoints are automatically created for each activated service. The SOAP and EJB endpoints enable SOAP and EJB for all service operations.
 
   A Remoting endpoint enables Flex clients to invoke operations on the AEM Forms service that the endpoint is added to. A Flex destination with the same name as the endpoint is created and Flex clients can create RemoteObjects that point to this destination to invoke operations on the relevant service.
 

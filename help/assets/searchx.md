@@ -1,20 +1,20 @@
 ---
-title: Extend search functionality of AEM Assets
-description: Extend the search capabilities of AEM Assets beyond the defaults.
+title: Extend search functionality of Adobe Experience Manager Assets
+description: Extend the search capabilities of Adobe Experience Manager Assets beyond the defaults.
 contentOwner: AG
 ---
 
 # Extend assets search {#extending-assets-search}
 
-You can extend Adobe Experience Manager (AEM) Assets search capabilities. Out of the box, AEM Assets searches for assets by strings.
+You can extend [!DNL Adobe Experience Manager Assets] search capabilities. Out of the box, [!DNL Experience Manager Assets] searches for assets by strings.
 
 Searching is done via the QueryBuilder interface so the search can be customized with several predicates. You can overlay the default set of predicates in the following directory: `/apps/dam/content/search/searchpanel/facets`.
 
-You can also add additional tabs to the AEM Assets admin panel.
+You can also add additional tabs to the [!DNL Assets] admin panel.
 
 >[!CAUTION]
 >
->As of AEM 6.4, Classic UI is deprecated. For announcement, see [Deprecated and removed features](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). You are encouraged to use Touch-enabled UI. For customization, see [Search Facets](/help/assets/search-facets.md).
+>As of [!DNL Experience Manager] 6.4, Classic UI is deprecated. For announcement, see [Deprecated and removed features](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe recommends using  Touch-enabled UI. For customization, see [Search Facets](/help/assets/search-facets.md).
 
 ## Overlay {#overlaying}
 
@@ -25,7 +25,6 @@ To overlay the pre-configured predicates, copy the `facets` node from `/libs/dam
 >[!NOTE]
 >
 >By default, the directory structure under / `apps` does not exist and needs to be created. Ensure that the node types match those under / `libs`.
->
 
 ## Add tabs {#adding-tabs}
 
@@ -40,7 +39,7 @@ You can add additional search tabs by configuring them in the AEM Assets Admin. 
 
 ## Create custom predicates {#creating-custom-predicates}
 
-AEM Assets comes with a set of predefined predicates that can be used to customize an Asset Share page. Customizing an Asset Share in this way is covered in [Creating and Configuring an Asset Share Page](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+[!DNL Assets] comes with a set of predefined predicates that can be used to customize an Asset Share page. Customizing an Asset Share in this way is covered in [create and configure an Asset Share page](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
 In addition to using pre-existing predicates, AEM developers can also create their own predicates using the [Query Builder API](/help/sites-developing/querybuilder-api.md).
 

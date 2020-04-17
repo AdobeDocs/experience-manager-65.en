@@ -323,7 +323,7 @@ Some key highlights of this service pack release are:
 * Possible cross-site scripting (XSS) attack through restricted file alert window as the injected image can be seen. NPR-30617: Hotfix for CQ-4270133
 * MultiTenant: Tenants saving folder properties observe both success prompt and error message describing action was not successful, "Unable to edit properties. Insufficient permissions." hence, confusing them. NPR-30545: Hotfix for CQ-4275333
 * Asset selector dialog does not allow selection of asset, hence unable to update source using the relate source replacement functionality. NPR-30502: Hotfix for CQ-4275029
-* DAM Update Asset Workflow - In the stale state on uploading large size mp4 files. NPR-30480: Hotfix for CQ-4271352
+* [!UICONTROL DAM Update Asset] workflow - In the stale state on uploading large size mp4 files. NPR-30480: Hotfix for CQ-4271352
 * Create Review Task functionality does not work due to null payload making all subsequent review task-related actions to fail. NPR-30468: Hotfix for CQ-4274263
 * Adobe Smart Tag connectivity issue through Datapower. NPR-30026: Hotfix for CQ-4269457
 * Assets UI Column View throws an error when attempting to open the filters left the rail. NPR-30501: Hotfix for CQ-4273862

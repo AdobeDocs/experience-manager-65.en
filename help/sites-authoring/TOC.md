@@ -81,7 +81,7 @@ user-guide-title: AEM 6.5 Authoring User Guide
     + [Managing Audiences](managing-audiences.md)
     + [Creating and Managing Offers](offerlib.md)
     + [Understanding Segmentation](segmentation-overview.md)
-+ AEM and Adobe Campaign {aem-adobe-campaign}
++ AEM and Adobe Campaign {#aem-adobe-campaign}
     + [Working with Adobe Campaign](adobe-campaign.md)
     + [Working with Adobe Campaign Classic and Adobe Campaign Standard](campaign.md)
     + [Targeting your Adobe Campaign](target-adobe-campaign.md)

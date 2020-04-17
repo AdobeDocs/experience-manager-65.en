@@ -21,17 +21,23 @@ The Generate PDF service uses native applications to convert the following file 
 
 * Microsoft Office 2003 and 2007 to convert DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX, XPS, and PUB (Windows only)
 
-  **Note**: Acrobat® 9.2 or later is required to convert Microsoft XPS format to PDF.*
+>[!NOTE]
+>
+>Acrobat® 9.2 or later is required to convert Microsoft XPS format to PDF.
 
 * Autodesk AutoCAD 2005, 2006, 2007, 2008, and 2009 to convert DWF, DWG, and DXW (English only)
 * Corel WordPerfect 12 and X4 to convert WPD, QPW, SHW (English only)
 * OpenOffice 2.0, 2.4, 3.0.1, and 3.1 to convert ODT, ODS, ODP, ODG, ODF, SXW, SXI, SXC, SXD, DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX, and PUB
 
-  ***Note**: The Generate PDF service does not support the 64-bit versions of OpenOffice.*
+>[!NOTE]
+>
+>The Generate PDF service does not support the 64-bit versions of OpenOffice.
 
 * Adobe Photoshop® CS2 to convert PSD (Windows only)
 
-  ***Note**: Photoshop CS3 and CS4 are not supported because they do not support Windows Server 2003 or Windows Server 2008. *
+>[!NOTE]
+>
+>Photoshop CS3 and CS4 are not supported because they do not support Windows Server 2003 or Windows Server 2008.
 
 * Adobe FrameMaker® 7.2 and 8 to convert FM (Windows only)
 * Adobe PageMaker® 7.0 to convert PMD, PM6, P65, and PM (Windows only)

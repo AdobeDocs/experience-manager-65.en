@@ -87,13 +87,13 @@ To configure Connected Assets and local Sites connectivity, follow these steps.
 
    | Before | After |
    |---|---|
-   | /content/dam(/((?!/subassets).)&#42;/)renditions/original |/content/dam(/((?!/subassets)(?!connectedassets).)&#42;/)renditions/original |
-   | /content/dam(/.&#42;/)renditions/original |/content/dam(/((?!connectedassets).)&#42;/)renditions/original |
-   | /content/dam(/.&#42;)/jcr:content/metadata |/content/dam(/((?!connectedassets).)&#42;/)jcr:content/metadata |
+   | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
 
    >[!NOTE]
    >
-   >All renditions that are available on the remote AEM deployment are fetched, when authors fetch an asset. If you want to create more renditions of a fetched asset, skip this configuration step. The DAM Update Asset workflow gets triggered and creates more renditions. These renditions are available only on the local Sites deployment and not on the remote DAM deployment.
+   >All renditions that are available on the remote AEM deployment are fetched, when authors fetch an asset. If you want to create more renditions of a fetched asset, skip this configuration step. The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
 
 1. Add the AEM Sites instance as one of the **[!UICONTROL Allowed Origins]** on the remote AEM Assets' CORS configuration.
 
@@ -109,7 +109,7 @@ The website authors use Content Finder to connect to the DAM instance. The autho
 
 Authors can use the assets available on both, the local DAM and the remote DAM instances, in a single web page. Use the Content Finder to switch between searching the local DAM or searching the remote DAM.
 
-Only those tags of remote assets are fetched that have an exact corresponding tag&mdash;with the same taxonomy hierarchy&mdash;available on the local Sites instance. Any other tags are discarded. Authors can search for remote assets using all the tags present on the remote AEM deployment, as AEM offers a full-text search.
+Only those tags of remote assets are fetched that have an exact corresponding tag along with the same taxonomy hierarchy, available on the local Sites instance. Any other tags are discarded. Authors can search for remote assets using all the tags present on the remote AEM deployment, as AEM offers a full-text search.
 
 ### Walk-through of usage {#walk-through-of-usage}
 
