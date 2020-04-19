@@ -61,7 +61,9 @@ You can configure which repository service provider to use with Documentum. Repo
 
 **repository provider:** Makes the native repository provider the provider for the repository
 
-***Note**: To select a repository service provider other than those listed, configure RepositoryService in Applications and Services > Service Management. <!-- Fix broken link (See Managing Services) -->*
+>[!NOTE]
+>
+>To select a repository service provider other than those listed, configure RepositoryService in Applications and Services > Service Management. <!-- Fix broken link (See Managing Services) -->.
 
 1. In administration console, click Services > Connector for EMC Documentum > Configuration Settings.
 1. In the Repository Service Provider Information area, select the alternative repository service provider.

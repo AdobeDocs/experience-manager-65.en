@@ -75,7 +75,9 @@ Perform the following steps, on all the author and publish instances, to install
 
     * In the Web Console Configuration, find and click Forms Portal Data Service Sample Implementation. You can change the values of data source and data table name.
 
-   **Note**: If you change the table names, provide them in the Form Portal configuration.
+    >[!NOTE]
+    >
+    >If you change the table names, provide them in the Form Portal configuration.   
 
 1. Leave other configurations as is and click **[!UICONTROL Save]**.
 

@@ -53,7 +53,9 @@ The following settings are available for the barcoded forms service.
 
 **Read Down:** When selected, barcode images are scanned vertically from top to bottom.
 
-***Note**: By default, all of the options are selected. Deselect an option only if you are certain that no barcodes appear that way on your forms.*
+>[!NOTE]
+>
+>By default, all of the options are selected. Deselect an option only if you are certain that no barcodes appear that way on your forms.
 
 **Base File Path:** The file path relative to which the batch input and output file parameters for the Run XML File Job and Run Flat File Job operations are resolved. In clustered configurations, the base file path must be a shared file system location to which all cluster nodes have read/write access.
 
@@ -215,7 +217,9 @@ The following settings are available for the Encryption service.
 
 **Default LDAP Password:** If the LDAP server requires authentication, specify the password that corresponds with the user name to be used to connect to the LDAP server.
 
-***Note**: Use simple authentication (user name and password) only when the connection is protected via SSL (using LDAPS).*
+>[!NOTE]
+>
+>Use simple authentication (user name and password) only when the connection is protected via SSL (using LDAPS).
 
 **Compatibility Mode:**
 
@@ -421,7 +425,9 @@ The following settings are available for the Microsoft SharePoint configuration 
 
 **Offline Support:** Enables users to continue using the mobile client applications even when they do not have a connection to the server (for example, when they are out of cell range or in airplane mode). Users must also enable the Offline Support setting on their mobile devices. This feature is available for Android and iOS devices. By default, this feature is off.
 
-**Note**: *If Offline support has been enabled and then you disable it, the users’ provisioning profiles are updated immediately, or as soon as they are online. If a user has been working offline, all pending tasks are returned to their Tasks list and all items in their Queue, including pending forms, tasks, and forms containing validation errors, are deleted from the Queue.*
+>[!NOTE]
+>
+>If Offline support has been enabled and then you disable it, the users’ provisioning profiles are updated immediately, or as soon as they are online. If a user has been working offline, all pending tasks are returned to their Tasks list and all items in their Queue, including pending forms, tasks, and forms containing validation errors, are deleted from the Queue.
 
 **Android:** Allows Android devices to connect to the server.
 
@@ -721,7 +727,9 @@ For example, if it is 8 PM on July 17, 2009 and you specify `C:/Test/WF0/failure
 
 If the path is not absolute but relative, the folder is created inside the watched folder. For more information about file patterns, see [About file patterns](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
-***Note**: The smaller the size of the result folders, the better Watched Folder performance will be. For example, if the estimated load for the watched folder is 1000 files every hour, try a pattern like `result/%Y%M%D%H` so that a new subfolder is created every hour. If the load is smaller (for example, 1000 files per day), you could use a pattern like `result/%Y%M%D`.*
+>[!NOTE]
+>
+>The smaller the size of the result folders, the better Watched Folder performance will be. For example, if the estimated load for the watched folder is 1000 files every hour, try a pattern like `result/%Y%M%D%H` so that a new subfolder is created every hour. If the load is smaller (for example, 1000 files per day), you could use a pattern like `result/%Y%M%D`.
 
 **Stage Folder:** The default name for the stage folder inside the watched folder.
 

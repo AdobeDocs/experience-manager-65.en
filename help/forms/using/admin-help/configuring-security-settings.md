@@ -58,7 +58,9 @@ Ensure that the compatibility level is consistent with the PDF compatibility lev
 
 These settings configure the password security:
 
-***Note**: If you forget a password, it cannot be recovered from the document. It is recommended that you store passwords in another secure location in case you forget them. Also, keep a backup copy of the document that is not password-protected.*
+>[!NOTE]
+>
+>If you forget a password, it cannot be recovered from the document. It is recommended that you store passwords in another secure location in case you forget them. Also, keep a backup copy of the document that is not password-protected.
 
 **Require A Password To Open The Document:** Enables the password options.
 
