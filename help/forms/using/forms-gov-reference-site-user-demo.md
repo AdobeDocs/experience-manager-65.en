@@ -113,7 +113,9 @@ Aya answers a few questions to confirm her eligibility by filling out a short ad
 
 1. Make a selection in each dropdown field.
 
-    1. Note: If the user earns more than $200,000/yr, they aren’t eligible.
+   >[!NOTE]
+   >
+   >If the user earns more than $200,000/yr, they aren’t eligible.  
 
 1. Click the “**Am I Eligible?**” button.
 1. Click the “**Apply Now**” button to proceed.

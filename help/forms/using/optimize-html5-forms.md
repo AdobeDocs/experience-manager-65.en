@@ -16,7 +16,9 @@ HTML5 forms renders forms in the HTML5 format. The resultant output could be lar
 
 This article describes the steps required to enable compression for the Apache Web Server 2.0 32 bit, with JBoss.
 
-*Note: The following instructions do not apply to server other than the Apache Web Server 2.0 32 bit.*
+>[!NOTE]
+>
+>The following instructions do not apply to server other than the Apache Web Server 2.0 32 bit.
 
 Obtain the Apache web server software applicable to your operating system:
 

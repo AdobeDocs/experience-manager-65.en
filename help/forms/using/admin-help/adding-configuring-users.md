@@ -126,8 +126,10 @@ Avoid creating user names that begin with a number sign (#). Performing task sea
     * Click **[!UICONTROL Find Group]** and complete the search information. 
     * To add the user to a new group, select the check box for the group, click **[!UICONTROL OK]**, and then click **[!UICONTROL Save]**.
 
-      ***Note**: Local users cannot be added to directory groups. However, directory users can be added to local groups.*
-    
+    >[!NOTE]
+    >
+    >Local users cannot be added to directory groups. However, directory users can be added to local groups.
+
     * To remove the user from a group, select the check box for the group, click **[!UICONTROL Delete]**, and then click **[!UICONTROL Save]**.
 
 1. To edit the user’s roles, click the **[!UICONTROL Role Assignments]** tab and do these tasks:
