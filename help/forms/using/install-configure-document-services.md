@@ -44,7 +44,7 @@ AEM Forms is a powerful enterprise-class platform and the document services is o
 
 AEM Forms add-on package is an application deployed onto AEM. Generally, you require only one AEM instance (author or publish) to run AEM Forms document services. The following topology is recommended to run AEM Forms document services. For detailed information about topologies, see [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![deployment-topology](do-not-localize/document-services.png)
+![Architecture and deployment topologies for AEM Forms](do-not-localize/document-services.png)
 
 >[!NOTE]
 >
@@ -82,81 +82,81 @@ Before you begin to install and configure AEM Forms document services, ensure th
 
 If you are using the UNIX-based operating system, install the following packages from the installation media of the respective operating system:
 
-<table>
- <tbody>
-  <tr>
-   <td>
-    <ul>
-     <li>expat</li>
-    </ul> </td>
-   <td> 
-    <ul> 
-     <li>libxcb</li>
-    </ul> </td>
-   <td> 
-    <ul> 
-     <li>freetype</li>
-    </ul> </td>
-   <td>
-    <ul> 
-     <li>libXau</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>
-    <ul>
-     <li>libSM</li>
-    </ul> </td>
-   <td> 
-    <ul> 
-     <li>zlib</li>
-    </ul> </td>
-   <td>
-    <ul>
-     <li>libICE</li>
-    </ul> </td>
-   <td>
-    <ul> 
-     <li>libuuid</li>
-    </ul> </td>
-  </tr>
+<table> 
+ <tbody> 
   <tr> 
    <td> 
     <ul> 
-     <li>glibc</li>
-    </ul> </td>
+     <li>expat</li> 
+    </ul> </td> 
    <td> 
     <ul> 
-     <li>libXext</li>
-    </ul> </td>
-   <td>
-    <ul>
-     <li>nss-softokn-freebl</li>
-    </ul> </td>
-   <td>
-    <ul>
-     <li>fontconfig</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>
-    <ul>
-     <li>libX11</li>
-    </ul> </td>
-   <td>
-    <ul>
-     <li>libXrender</li>
-    </ul> </td>
-   <td>
-    <ul>
-     <li>libXrandr</li>
-    </ul> </td>
-   <td>
+     <li>libxcb</li> 
+    </ul> </td> 
+   <td> 
     <ul> 
-     <li>libXinerama</li>
-    </ul> </td>
-  </tr>
- </tbody>
+     <li>freetype</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>libXau</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td> 
+    <ul> 
+     <li>libSM</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>zlib</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>libICE</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>libuuid</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td> 
+    <ul> 
+     <li>glibc</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>libXext</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>nss-softokn-freebl</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>fontconfig</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td> 
+    <ul> 
+     <li>libX11</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>libXrender</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>libXrandr</li> 
+    </ul> </td> 
+   <td> 
+    <ul> 
+     <li>libXinerama</li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
 </table>
 
 * **(PDF Generator only**) Install the 32-bit version of libcurl, libcrypto, and libssl libraries and create the below symlinks. The symlinks point to the latest version of the respective libraries:
@@ -465,7 +465,7 @@ A local user account is required to run the PDF Generator service. For steps to 
  </tbody> 
 </table>
 
-### Configure Acrobat for the PDF Generator service {#configure-acrobat-for-the-pdf-generator-service}
+### (Windows only) Configure Acrobat for the PDF Generator service {#configure-acrobat-for-the-pdf-generator-service}
 
 On Microsoft Windows, the PDF Generator service uses Adobe Acrobat to convert supported file formats to a PDF document. Perform the following steps to configure Adobe Acrobat for the PDF Generator service:
 
@@ -493,7 +493,7 @@ On Microsoft Windows, the PDF Generator service uses Adobe Acrobat to convert su
 
     1. Navigate to `[Path_of_reports_folder]`. Open the SystemReadinessTool.html file. Verify the report and fix the mentioned issues.
 
-### Configure primary route for HTML to PDF conversion (Windows only) {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
+### (Windows only) Configure primary route for HTML to PDF conversion {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
 The PDF Generator service provides multiple routes to convert HTML files to PDF documents: Webkit, Acrobat WebCapture (Windows only), and PhantomJS. Adobe recommends using PhantomJS route because it has the capability to handle dynamic content and has no dependencies on 32-bit libraries, 32-bit JDK, or requires no extra fonts. Also, PhantomJS route does not require sudo or root access to run the conversion.
 
@@ -597,7 +597,7 @@ The Assembler service depends on the Reader Extensions service, Signature servic
 
 You have a working AEM Forms document services environment. You can use document services through:
 
-* [Form centric workflows on OSGi](aem-forms-workflow.md)
-* [Watched Folders](watched-folder-in-aem-forms.md)
-* [Document services APIs](aem-document-services-programmatically.md)
+* [Form centric workflows on OSGi](/help/forms/using/aem-forms-workflow.md)
+* [Watched Folders](/help/forms/using/watched-folder-in-aem-forms.md)
+* [Document services APIs](/help/forms/using/aem-document-services-programmatically.md)
 
