@@ -303,7 +303,7 @@ Select one ZIP archive at a time, click **[!UICONTROL Extract Archive]**, and se
 
 After the extraction is complete, AEM notifies you in the notification area. While AEM extracts the ZIP, you can go back to your work without interrupting the extraction.
 
-![Notification of ZIP extraction](assets/Zip-extraction-notification.png)
+![Notification of ZIP file extraction](assets/Zip-extraction-notification.png)
 
 Some limitations of the feature are:
 
@@ -323,11 +323,9 @@ To preview an asset, follow these steps.
 
    To zoom into an asset, tap/click `+` (or tap/click the magnifying glass on the asset). To zoom out, tap/click `-`. When you zoom in, you can look closely at any area of the image by panning. The reset zoom arrow brings you back to the original view.
 
-   ![uploadicon](assets/uploadicon.png)
-
    Tap **[!UICONTROL Reset]** to reset the view to the original size.
 
-   ![chlimage_1-216](assets/chlimage_1-11.png)
+   ![Reset icon to bring user back to original view](assets/chlimage_1-11.png)
 
 **Preview assets using keyboard keys only**
 
@@ -351,11 +349,11 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 ## Edit properties and metadata {#editing-properties}
 
-1. Navigate to the location of the asset whose metadata you want to edit.
+1. Navigate to the location of the asset to edit its metadata.
 
 1. Select the asset, and tap/click **[!UICONTROL Properties]** from the toolbar to view asset properties. Alternatively, choose the **[!UICONTROL Properties]** quick action on the asset card.
 
-   ![properties_quickaction](assets/properties_quickaction.png)
+   ![Properties quick action on asset card view](assets/properties_quickaction.png)
 
 1. In the [!UICONTROL Properties] page, edit the metadata properties under various tabs. For example, under the **[!UICONTROL Basic]** tab, edit the title, description, and so on.
 
@@ -365,13 +363,13 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 1. To schedule a particular date/time for the activation of the asset, use the date picker beside the **[!UICONTROL On Time]** field.
 
-   ![use date time picker or keyboard keys in On Time field to add date and time for asset activation](assets/schedule-activation.png)
+   ![Date time picker or use keyboard keys in On Time field to add date and time for asset activation](assets/schedule-activation.png)
 
    *Figure: Schedule asset activation*
 
 1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API.
 
-   ![use date time picker or keyboard keys in Off Time field to add date and time for asset de-activation](assets/schedule-deactivation.png)
+   ![Date time picker or use keyboard keys in Off Time field to add date and time for asset de-activation](assets/schedule-deactivation.png)
 
    *Figure: Schedule asset deactivation*
 
@@ -383,7 +381,7 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 1. To provide a rating to the asset, tap/click the **[!UICONTROL Advanced]** tab and then tap/click the star at the appropriate position to assign the desired rating.
 
-   ![ratings](assets/ratings.png)
+   ![Advanced tab in asset Properties to assign rating](assets/ratings.png)
 
    The rating score that you assign to the asset is displayed under **[!UICONTROL Your Ratings]**. The average rating score that the asset received from users who rated the asset is displayed under **[!UICONTROL Rating]**. In addition, the breakup of the rating scores that contribute to the average rating score is displayed under **[!UICONTROL Rating Breakdown]**. You can search assets based on average rating scores.
 
@@ -413,7 +411,7 @@ A few attributes that are unique to a particular copy of an asset are not carrie
 The other properties and metadata information is retained. A partial copy is not created when copying an asset.
 
 1. From the Assets UI, select one or more assets, and then tap/click the **[!UICONTROL Copy]** icon from the toolbar. Alternatively, select the **[!UICONTROL Copy]** quick action from the asset card.
- ![copy_icon](assets/copy_icon.png)
+ ![Copy icon in assets UI toolbar](assets/copy_icon.png)
 
    >[!NOTE]
    >
@@ -427,7 +425,7 @@ The other properties and metadata information is retained. A partial copy is not
 
 1. Click/ tap the **[!UICONTROL Paste]** asset icon from the toolbar.
 
-   ![chlimage_1-219](assets/chlimage_1-14.png)
+   ![Paste icon in assets UI toolbar](assets/chlimage_1-14.png)
    Assets are then copied to this location.
 
    >[!NOTE]
@@ -439,7 +437,7 @@ The other properties and metadata information is retained. A partial copy is not
 1. Navigate to the location of the asset you want to move.
 
 1. Select the asset, and tap/click the **[!UICONTROL Move]** icon from the toolbar.
-![move_icon](assets/move_icon.png)
+![Move icon in asset UI toolbar](assets/move_icon.png)
 
 1. In the Move Assets wizard, do one of the following:
 
