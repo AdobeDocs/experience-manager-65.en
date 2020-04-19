@@ -23,7 +23,9 @@ You can specify the URL, URI, and file locations of attributes such as the web r
 
 **Base URL:** The base URL where form resources such as images and scripts are located. This value is required for HTML transformations that include HREF references to external dependencies, such as images or scripts. One such script is xfasubset.js, which is required for HTML forms to perform XFA intelligence. This value must be the HTTP equivalent of the content root URI.
 
-***Note**: Base URL supports only HTTP or repository protocols. It does not support protocols such as file:///. If you need to access a resource such as a custom CSS or digital signature URI, use the appropriate API parameter value to specify the absolute location.*
+>[!NOTE]
+>
+>Base URL supports only HTTP or repository protocols. It does not support protocols such as file:///. If you need to access a resource such as a custom CSS or digital signature URI, use the appropriate API parameter value to specify the absolute location.
 
 When a dependency path is absolute, the Base URL value is ignored. Otherwise, the dependency path is combined with the base URL.
 

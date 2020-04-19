@@ -111,7 +111,9 @@ The following options determine how image files are converted to PDF. For instru
 
 **Try Fallback Converter:** PDF Generator can use either Java™ or Acrobat to convert image files to PDF. When this option is selected and a conversion fails or reaches the specified time-out limit, PDF Generator attempts the conversion by using the alternate method. If alternate method fails or reaches the specified time-out limit, an exception is written to the log file.
 
-***Note**: JPEG 2000 files can only be converted using Acrobat.*
+>[!NOTE]
+>
+>JPEG 2000 files can only be converted using Acrobat.
 
 **Use OCR:** Specifies whether to apply OCR (optical character recognition) to the PDF. OCR software enables you to search, correct, and copy the text in the PDF.
 

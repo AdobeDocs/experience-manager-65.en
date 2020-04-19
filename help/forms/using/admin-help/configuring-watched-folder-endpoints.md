@@ -197,7 +197,9 @@ For example, if it is 8 PM on July 17, 2009 and you specify `C:/Test/WF0/failure
 
 If the path is not absolute but relative, the folder will be created inside the watched folder. The default value is result/%Y/%M/%D/, which is the Result folder inside the watched folder. For more information about file patterns, see [About file patterns](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-***Note**: The smaller the size of the result folders, the better Watched Folder performance will be. For example, if the estimated load for the watched folder is 1000 files every hour, try a pattern like `result/%Y%M%D%H` so that a new subfolder is created every hour. If the load is smaller (for example, 1000 files per day), you could use a pattern like `result/%Y%M%D`.*
+>[!NOTE]
+>
+>The smaller the size of the result folders, the better Watched Folder performance will be. For example, if the estimated load for the watched folder is 1000 files every hour, try a pattern like `result/%Y%M%D%H` so that a new subfolder is created every hour. If the load is smaller (for example, 1000 files per day), you could use a pattern like `result/%Y%M%D`.
 
 **Preserve Folder:** The location where files are stored after successful scanning and pick-up. The path can be an absolute, a relative, or a null directory path. You can use file patterns, as described for Result Folder. The default value is preserve/%Y/%M/%D/.
 
@@ -227,7 +229,9 @@ A value of -1 days indicates to never delete the results folder. The default val
 
 Watched Folder output can be a single document, a list of documents, or a map of documents. These output documents are then saved in the result folder, using the pattern specified in the Output Parameter Mapping.
 
-**Note**: *Specifying names that result in unique output filenames improves performance. For example, consider the case where the service returns one output document and the Output Parameter Mapping maps it to `%F.%E` (the file name and extension of the input file). In this case, if users drop files with the same name every minute, and the result folder is configured to `result/%Y/%M/%D`, and the Overwrite Duplicate Filename setting is off, Watched Folder will try to resolve the duplicate file names. The process of resolving duplicate file names can affect performance. In this situation, changing the Output Parameter Mapping to `%F_%h_%m_%s_%l` to add hours, minutes, seconds, and milliseconds to the name, or ensuring that dropped files have unique names may improve performance.*
+>[!NOTE]
+>
+>Specifying names that result in unique output filenames improves performance. For example, consider the case where the service returns one output document and the Output Parameter Mapping maps it to `%F.%E` (the file name and extension of the input file). In this case, if users drop files with the same name every minute, and the result folder is configured to `result/%Y/%M/%D`, and the Overwrite Duplicate Filename setting is off, Watched Folder will try to resolve the duplicate file names. The process of resolving duplicate file names can affect performance. In this situation, changing the Output Parameter Mapping to `%F_%h_%m_%s_%l` to add hours, minutes, seconds, and milliseconds to the name, or ensuring that dropped files have unique names may improve performance.
 
 ## About file patterns {#about-file-patterns}
 

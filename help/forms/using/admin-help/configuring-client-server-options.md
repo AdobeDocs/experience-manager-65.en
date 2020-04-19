@@ -22,7 +22,9 @@ discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 
 If you are using IPv6, enter the Base URL as the computer name or the DNS name. If you use a numerical IP address, Acrobat will fail to open policy protected files. Also, use HTTP secure (HTTPS) URL for your server.
 
-***Note**: The base URL is embedded in policy-protected files. Client applications use the base URL to connect back to the server. Secured files will continue to contain the base URL, even if it is changed later. If you change the base URL, configuration information will need to be updated for all connecting clients.*
+>[!NOTE]
+>
+>The base URL is embedded in policy-protected files. Client applications use the base URL to connect back to the server. Secured files will continue to contain the base URL, even if it is changed later. If you change the base URL, configuration information will need to be updated for all connecting clients.
 
 **Default Offline Lease Period:** The default length of time that a user can use a protected document offline. This setting determines the initial value of the Auto-Offline lease period setting when you create a policy. (See Creating and editing policies.) When the lease period expires, the recipient must synchronize the document again to continue using it.
 

@@ -148,6 +148,11 @@ Customers are advised to review if they make use of the feature/capability in th
    <td><p>Classic UI Dialog Editor in CRXDE lite</p> <p>Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)</p> </td>
    <td> </td>
   </tr>
+  <tr>
+   <td>Forms</td>
+   <td><p>AEM Forms integration with AEM Mobile< is deprecated </p> </td>
+   <td>No Replacement </td>
+  </tr>
  </tbody>
 </table>
 
@@ -163,6 +168,7 @@ This section lists features and capabilities that have been removed from AEM 6.5
 |Forms|Support for Adobe Central Migration Bridge service has been removed as Adobe Central product is no longer supported.|No replacement|
 |Forms|`com.adobe.fd.df.fdinternal.model.ConfigurationInstance`|No replacement|
 |Forms|`com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer`|No replacement|
+|Forms|Single-hop upgrade from LiveCycle ES4 SP1 to AEM 6.5 Forms on JEE is not available|See [available upgrade paths](../forms/using/upgrade.md) in AEM Forms upgrade documentation.|
 |Developers|Firebug Lite has been removed from the default distribution (Quickstart)|Use the browser built-in developer consoles|
 |Developers|Remove `customJavaScriptPath` support in HTML Client Library Manager.|No replacement|
 |Assets|The Assets offloading feature has been removed in AEM 6.5|No replacement|
