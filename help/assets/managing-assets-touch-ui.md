@@ -345,7 +345,10 @@ To preview an asset using keyboard, follow these steps:
 
 1. Use arrow keys to move around the zoomed image.
 
-See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
+>[!MORELIKETHIS]
+>
+>* [Preview Dynamic Media Assets](/help/assets/previewing-assets.md).
+>* [View subassets](managing-linked-subassets.md#viewing-subassets).
 
 ## Edit properties and metadata {#editing-properties}
 
