@@ -211,7 +211,11 @@ You can complete a task in various ways:
 * Using the actions available in any of the tabs
 * Using the actions built in the form itself
 * From your To-do list, without opening the task
-  Note: This option is available if `isMustOpenToComplete` field is not selected in the `Assign Task` step in Workbench, while designing a process.
+
+>[!NOTE]
+>
+>This option is available if `isMustOpenToComplete` field is not selected in the `Assign Task` step in Workbench, while designing a process.
+  
 * By email, if you receive email notifications
 
 When you complete a task, depending on the task, a confirmation dialog box may appear reaffirming your action. For example, you may see a dialog that prompts you to attest to the validity of the information that you provided.
@@ -270,7 +274,9 @@ First, set your AEM Forms workspace preferences to receive email notifications. 
 
 The email messages may contain a link that opens the task in AEM Forms workspace, an attachment of the form that is used for the task, or actions for completing the task through email. If a form is included in the email message, you can open the form and complete the task if the buttons for completing the task are built in the form. If actions for completing the task are included in the email message, you can complete the task by clicking the actions in the email or by replying to the email with the action typed as the first line in the body of the email.
 
-**Note**: To configure the workspace to use the appropriate email templates, see the [AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+>[!NOTE]
+>
+>To configure the workspace to use the appropriate email templates, see the [AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
 
 When you complete a task through email, the task is removed from your To-do list in AEM Forms workspace.
 

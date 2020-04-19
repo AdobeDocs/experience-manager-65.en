@@ -199,7 +199,9 @@ If your solution is deployed in a clustered environment, replace `@@notification
 
 To make these URLs function correctly, replace `<`*PORT* `>` with the port number that is appropriate for your environment.
 
-***Note**: If you are using a custom web application other than Forms to provide users with access to the tasks, you must instead use a URL format that is appropriate for your custom application.*
+>[!NOTE]
+>
+>If you are using a custom web application other than Forms to provide users with access to the tasks, you must instead use a URL format that is appropriate for your custom application.
 
 ### Variable picker {#variable-picker}
 
@@ -225,7 +227,9 @@ In addition, for group reminders, group task assignments and group deadlines, yo
 
 **group-name** The name of the group that is assigned the work item.
 
-**Note**: *If a variable has no value, nothing is returned.*
+>[!NOTE]
+>
+>If a variable has no value, nothing is returned.
 
 For stalled branches, you can use the following variables in the Subject and Notification Template boxes:
 
