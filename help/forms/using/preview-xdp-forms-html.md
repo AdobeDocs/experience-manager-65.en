@@ -79,7 +79,9 @@ The [protected mode](../../forms/using/get-xdp-pdf-documents-aem.md) is on, by d
         * `/aem/forms` (AEM Forms on OSGi)
         * `/lc/forms` (AEM Forms on JEE)
 
-   **Note:** Ensure that AEM Forms server is up and running. The HTML preview connects to the CRX server to *generate* a preview.
+    >[!NOTE]
+    >
+    >Ensure that AEM Forms server is up and running. The HTML preview connects to the CRX server to *generate* a preview.   
 
    ![AEM Forms Designer options ](assets/server_options.png)
 

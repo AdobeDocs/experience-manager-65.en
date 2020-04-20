@@ -68,7 +68,9 @@ These PDF files can be opened in Adobe Acrobat 5 and Adobe Acrobat Reader® 5 or
 
 Print jobs fail if they have fonts that cannot be embedded. These PDF files can be opened in Acrobat 5 and Acrobat Reader 5 and later.
 
-**Note**: Before you create a PDF file to send to a commercial printer or prepress service provider, determine the output resolution and other settings, or request a .joboptions file with the recommended settings. You may need to customize the Adobe PDF settings for a particular provider and then provide a .joboptions file of your own.
+>[!NOTE]
+>
+>Before you create a PDF file to send to a commercial printer or prepress service provider, determine the output resolution and other settings, or request a .joboptions file with the recommended settings. You may need to customize the Adobe PDF settings for a particular provider and then provide a .joboptions file of your own.
 
 **Smallest File Size:** Creates PDF files for displaying on the web or an intranet, or for distribution through an email system for onscreen viewing. This set of options uses compression, downsampling, and a relatively low image resolution. It converts all colors to sRGB and does not embed fonts unless necessary. It also optimizes files for byte serving. These PDF files can be opened in Acrobat 5 and Acrobat Reader 5.0 and later.
 
@@ -179,13 +181,17 @@ Use the general options to specify the version of Acrobat to use for file compat
 
 **Auto-Rotate Pages:** Sets the automatic rotation of pages based on the orientation of the text or DSC comments. For example, some pages (such as pages that contain tables) may require the user to turn them sideways to read them. Select Individually to rotate each page based on the direction of the text on that page. Select Collectively By File to rotate all pages in the document based on the orientation of most text.
 
-***Note**: If Process DSC Comments is selected in the Advanced settings and if %%Viewing Orientation comments are included, these comments take precedence in determining page orientation.*
+>[!NOTE]
+>
+>If Process DSC Comments is selected in the Advanced settings and if %%Viewing Orientation comments are included, these comments take precedence in determining page orientation.
 
 **Binding:** Specifies whether to display a PDF file with left-side or right-side binding. This setting affects the display of pages in the Facing Page - Continuous layout and the display of thumbnails side by side.
 
 **Resolution:** Sets the emulation for the resolution of a printer for input files that adjust their behavior according to the resolution of the printer they are printing to. For most input files, a higher resolution setting results in larger but higher-quality PDF files, and a lower setting results in smaller but lower-quality PDF files. Most commonly, resolution determines the number of steps in a gradient or blend. You can enter a value from 72 to 4000. Keep this setting as the default unless you plan to print the PDF file to a specific printer and you want to emulate the resolution defined in the original input file.
 
-***Note**: Increasing the resolution setting increases file size and may slightly increase the time required to process some files.*
+>[!NOTE]
+>
+>Increasing the resolution setting increases file size and may slightly increase the time required to process some files.
 
 **All Pages or Pages From:** Specifies which pages to convert. Leave the To box empty to create a range from the page number you enter in the From box to the end of the file.
 
@@ -219,7 +225,9 @@ The resolution setting for color and grayscale should be 1.5 to 2 times the line
 
 Also consider whether users need to magnify a page. For example, if you are creating a PDF document of a map, consider using a higher image resolution so that users can zoom in on the map.
 
-***Note**: Resampling monochrome images can have unexpected viewing results, such as no image display. If this problem occurs, turn off resampling and convert the file again. This problem is most likely to occur with subsampling and least likely to occur with bicubic downsampling.*
+>[!NOTE]
+>
+>Resampling monochrome images can have unexpected viewing results, such as no image display. If this problem occurs, turn off resampling and convert the file again. This problem is most likely to occur with subsampling and least likely to occur with bicubic downsampling.
 
 This table shows contains types of printers and their resolution measured in dpi, their default screen ruling measured in lines per inch (lpi), and a resampling resolution for images that are measured in pixels per inch (ppi). For example, to print to a 600-dpi laser printer, enter 170 for the resolution to resample images at.
 
@@ -264,7 +272,9 @@ Make sure that monochrome images are scanned as monochrome and not as grayscale.
 
 **Anti-alias To Gray:** Smooths jagged edges in monochrome images. Select 2 bit, 4 bit, or 8 bit to specify 4, 16, or 256 levels of gray. (Anti-aliasing may blur small type or thin lines.)
 
-***Note**: Compression of text and line art is always on.*
+>[!NOTE]
+>
+>Compression of text and line art is always on.
 
 **Image Policy:** Set a policy for color, grayscale, and monochrome images. If the image resolution falls below the specified resolution, you can still select to proceed (Ignore), provide a warning message, or cancel the job.
 
@@ -326,7 +336,9 @@ Regardless of the compatibility option you select, grayscale images are left unc
 
 **Document Rendering Intent:** The method to map colors between color spaces. The result of any particular method depends on the profiles of the color spaces. For example, some profiles produce identical results with different methods. These options are available:
 
-***Note**: In all cases, intents may be ignored or overridden by color management operations that occur after the creation of the PDF file.*
+>[!NOTE]
+>
+>In all cases, intents may be ignored or overridden by color management operations that occur after the creation of the PDF file.
 
 **Preserve:** Means that the intent is specified in the output device rather than in the PDF file. In many output devices, Relative Colorimetric is the default intent.
 
@@ -348,7 +360,9 @@ For all values in the list under Color Management Policies, other than Leave Col
 
 **CMYK:** Defines the color space of all CMYK images in files. The default is U.S. Web Coated (SWOP) v2. You can also select None to prevent CMYK images from being converted.
 
-***Note**: Selecting None for all three of the working spaces has the same effect as selecting Leave Color Unchanged.*
+>[!NOTE]
+>
+>Selecting None for all three of the working spaces has the same effect as selecting Leave Color Unchanged.
 
 **Preserve CMYK Values For Calibrated CMYK Color Spaces:** When selected, device-independent CMYK values are treated as device-dependent (DeviceCMYK) values, device-independent color spaces are discarded, and PDF/X-1a files use the Convert All Colors To CMYK value. When deselected, device-independent color spaces convert to CMYK if the color management policy is set to Convert All Colors To CMYK.
 
@@ -502,7 +516,9 @@ The document options control the appearance of the document within the document 
 
 **Open To Page Number:** Sets the page that the document opens at, which is usually page 1.
 
-***Note**: Setting Default for the magnification and page layout options uses the individual user settings in the Page Display preferences within Acrobat or Adobe Reader.*
+>[!NOTE]
+>
+>Setting Default for the magnification and page layout options uses the individual user settings in the Page Display preferences within Acrobat or Adobe Reader.
 
 ### Window options {#window-options}
 
@@ -526,7 +542,9 @@ The user interface options determine which controls are displayed or hidden when
 
 **Hide Window Controls:** If selected, hides the window controls
 
-***Note**: If you hide the menu bar and toolbar, users cannot apply commands and select tools unless they know the keyboard shortcuts when they open the file in Acrobat.*
+>[!NOTE]
+>
+>If you hide the menu bar and toolbar, users cannot apply commands and select tools unless they know the keyboard shortcuts when they open the file in Acrobat.
 
 ## Uploading and downloading prologue and epilogue files {#uploading-and-downloading-prologue-and-epilogue-files}
 

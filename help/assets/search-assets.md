@@ -34,11 +34,11 @@ AEM search capability supports searching for collections and searching for asset
 
 Familiarize yourself with the search interface and the available actions.
 
-![Understanding parts of Assets search results interface](assets/aem_search_results.png)
+![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
 
-*Figure: Understanding parts of Assets search results interface*
+*Figure: Understand Experience Manager Assets search results interface*
 
-**A.** Save the search as a Smart Collection. **B.** Filters (predicates) to narrow the search results. **C.** Display Files, Folders, or both in the search results. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F.** Omnisearch field with user-provided search keyword. **G.** Check box to select all the search results. **H.** Number of displayed search results out of the total search results. **I.** Close the search **J.** Switch between card view and list view.
+**A.** Save search as a smart collection. **B.** Filters or predicates to narrow the search results. **C.** Display files, folders, or both. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F.** Omnisearch field with user-provided search keyword. **G.** Select the loaded search results. **H.** Number of displayed search results out of the total search results. **I.** Close search **J.** Switch between card view and list view.
 
 ### Dynamic search facets {#dynamicfacets}
 
@@ -250,7 +250,7 @@ The search capability in AEM Assets has the following limitations:
 * AEM may continue to show the search term after you select properties of an asset from searched results and then cancel the search. <!-- (CQ-4273540) -->
 * When searching for folders or files and folders, the search results cannot be sorted on any parameter.
 * If you press return without typing anything in Omnisearch bar, AEM returns a list of only files and not folders. If you search specifically for folders without using a keyword, AEM does not return any results.
-* Using the [!UICONTROL Select All] check box, you can only select the first 100 searched assets in card view and first 200 searched assets in list view. If you scroll and load more assets in the user interface, you can select more using the [!UICONTROL Select All] option.
+* Use the **[!UICONTROL Select All]** option in the upper-right corner of the search page to select the searched assets. Experience Manager initially displays 100 assets in card view and 200 assets in list view. More assets are loaded as you scroll the search results. You can select more assets than the loaded assets. The count of the selected assets is displayed in the upper-right corner of the search results page. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection. When more assets are selected than displayed, an action is either applied on all selected assets or a dialog displays the number of assets it is applied on. To apply an action to the assets that did not load, ensure all assets are explicitly selected.
 
 Visual search or similarity search has the following limitations:
 
@@ -265,7 +265,7 @@ Search functionality may have performance limitations in the following scenarios
 
 * When monitoring the review status of assets, use the appropriate option to find which assets are approved or assets that are pending approval.
 * Use the Insights predicate to search for supported assets based on their usage statistics obtained from various Creative apps. Usage data is grouped under Usage score, Impressions, Clicks, and Media channels where the assets appear categories.
-* Use the **[!UICONTROL Select All]** check box to select the searched assets. It selects first 100 assets in card view and first 200 assets in list view. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection.
+* Use the **[!UICONTROL Select All]** check box to select the searched assets. Experience Manager initially displays 100 assets in card view and 200 assets in list view. More assets are loaded as you scroll the search results. You can select more assets than the loaded assets. The count of the selected assets is displayed in the upper-right corner of the search results page. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection. When more assets are selected than displayed, an action is either applied on all selected assets or a dialog displays the number of assets it is applied on. To apply an action to the assets that did not load, ensure all assets are explicitly selected.
 * To search for assets that do not contain the mandatory metadata, see [mandatory metadata](#mandatorymetadata).
 * Search uses all metadata fields. A generic search, such as searching for 12, usually returns many results. For better results, use double (not single) quotes or ensure that the number is contiguous to a word without a special character (for example *shoe12*).
 * Full text search supports operators such as -, ^, and so on. To search these letters as string literals, enclose the search expression in double quotes. For example, use "Notebook - Beauty" instead of Notebook - Beauty.

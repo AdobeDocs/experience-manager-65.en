@@ -345,7 +345,10 @@ To preview an asset using keyboard, follow these steps:
 
 1. Use arrow keys to move around the zoomed image.
 
-See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
+>[!MORELIKETHIS]
+>
+>* [Preview Dynamic Media Assets](/help/assets/previewing-assets.md).
+>* [View subassets](managing-linked-subassets.md#viewing-subassets).
 
 ## Edit properties and metadata {#editing-properties}
 
@@ -649,7 +652,7 @@ In card view, the **[!UICONTROL Select]** option displays as a quick action.
 
 ![Select quick action on card view](assets/select_quick_action.png)
 
-When browsing a folder or a collection in the Assets user interface in a browser, you can select all the displayed or loaded assets by using the [!UICONTROL Select All] option from the upper-right corner. If you don't scroll below, only 100 assets are loaded in card view and 200 are loaded in list view. Select All option selects only these many assets.
+When browsing a folder or a collection in the Assets user interface in a browser, you can select all the displayed or loaded assets by using the [!UICONTROL Select All] option from the upper-right corner. Initially, only 100 assets are loaded in card view and 200 are loaded in list view. More assets are loaded in view as you scroll the search results page. The [!UICONTROL Select All] option selects only the loaded assets.
 
 For more information, see [view and selecting your resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
