@@ -17,15 +17,15 @@ The most basic way to organize assets is to save these in folders. It is analogo
 * In most cases, your digital assets repository is always growing. Therefore, it is important to formalize metadata use, folder structure, and file naming early in the content creation cycle.
 * Use folders only to impose a consistent storage structure for your digital assets. This consistency helps your process and manage your assets better. For example, assets placed in the following types of folders can help you use appropriate [profiles to use for asset processing](processing-profiles.md):
 
-    * **Development folders** &ndash; contains digital assets that you are currently working on.
-    * **Client folders** &ndash; contains digital assets based on clients or project names.
-    * **Master folders** &ndash; contains original, source digital assets.
-    * **Rendition folders** &ndash; contains renditions and copies of the original, source digital assets.
-    * **File Size folders** &ndash; contains digital assets based on small, medium, or large file sizes.
-    * **Staging folders** &ndash; contains digital assets that are ready to publish live on your website.
-    * **MIME type folders** &ndash; contains digital assets that are specific to MIME types such as images, documents, and multimedia.
-    * **Archive folders** &ndash; contains retired digital assets.
-    * **Date-based folders** &ndash; contains digital assets based on a creation date or a last modified date.
+  * **Development folders**: contains digital assets that you are currently working on.
+  * **Client folders**: contains digital assets based on clients or project names.
+  * **Master folders**: contains original, source digital assets.
+  * **Rendition folders**: contains renditions and copies of the original, source digital assets.
+  * **File Size folders**: contains digital assets based on small, medium, or large file sizes.
+  * **Staging folders**: contains digital assets that are ready to publish live on your website.
+  * **MIME type folders**: contains digital assets that are specific to MIME types such as images, documents, and multimedia.
+  * **Archive folders**: contains retired digital assets.
+  * **Date-based folders**: contains digital assets based on a creation date or a last modified date.
 
 * Create a directory of folders that are not likely to change so that any customization or automation continues to work. For example, the assigned processing profiles continue to work.
 * If an asset is already published, then you use AEM to move the asset to another folder, and re-publish from its new location, the original published asset location is still available, along with the newly re-published asset. The original published asset, however, is *lost* to AEM and cannot be unpublished. Therefore, as a best practice, first unpublish an asset and then move it to a different folder.

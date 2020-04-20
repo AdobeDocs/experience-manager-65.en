@@ -17,5 +17,3 @@ HTML5 forms support right-to-left languages such as Hebrew. You can display and 
 **Limitation**
 
 Mobile Forms support right-to-left languages in all the browsers except Internet Explorer.
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

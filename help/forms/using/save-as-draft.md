@@ -39,5 +39,3 @@ Perform the following steps to delete a draft:
 1. Select **Drafts** from the drop-down next to Search.
 1. A form with the edit icon ![edit-draft-app](assets/edit-draft-app.png) denotes a draft. Tap the horizontal ellipsis next to the draft.
 1. In the options that appear when you tap the horizontal ellipsis, tap **Delete Draft**.
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

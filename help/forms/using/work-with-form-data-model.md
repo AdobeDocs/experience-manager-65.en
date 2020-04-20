@@ -152,7 +152,7 @@ To read and write data for a data model object, do the following to configure re
 
    Read and write services configured for employee data source
 
-1. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) for the read service argument to [bind the argument to a User Profile Attribute, Request Attribute, or Literal value](../../forms/using/work-with-form-data-model.md#main-pars-header-2140694395) and specify the binding value.
+1. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) for the read service argument to [bind the argument to a User Profile Attribute, Request Attribute, or Literal value](#bindargument) and specify the binding value.
 1. Tap **[!UICONTROL Done]** to save the argument, **[!UICONTROL Done]** to save the properties, and then **[!UICONTROL Save]** to save the form data model.
 
 ### Bind Read service arguments {#bindargument}

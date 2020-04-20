@@ -79,7 +79,9 @@ The [protected mode](../../forms/using/get-xdp-pdf-documents-aem.md) is on, by d
         * `/aem/forms` (AEM Forms on OSGi)
         * `/lc/forms` (AEM Forms on JEE)
 
-   **Note:** Ensure that AEM Forms server is up and running. The HTML preview connects to the CRX server to *generate* a preview.
+    >[!NOTE]
+    >
+    >Ensure that AEM Forms server is up and running. The HTML preview connects to the CRX server to *generate* a preview.   
 
    ![AEM Forms Designer options ](assets/server_options.png)
 
@@ -118,5 +120,3 @@ Testing your form by using a sample data source ensures that the data and fields
 ## Preview forms located in a repository {#html-preview-of-forms-in-forms-manager}
 
 In AEM Forms, you can preview forms and documents in a repository. Preview helps to know exactly how the forms look and behave as they will be used end users.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

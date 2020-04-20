@@ -29,7 +29,9 @@ To use the new format in HTML5 Forms, mark the table as complex. To mark the tab
 
 The tables which are marked as *complexTable* follow the native HTML rendition, and provide better accessibility support for certain screen readers.  To create a row span, select consecutive cells of a table in the same column, right-click on the selection, and then click **[!UICONTROL Merge Cells]**.
 
-***Note:** Creating a row-span works for leftmost cells only.*
+>[!NOTE]
+>
+>Creating a row-span works for leftmost cells only.
 
 To mark a row as row header, select all cells in the row, right-click on the selection, and then click **[!UICONTROL Mark Header]**.
 

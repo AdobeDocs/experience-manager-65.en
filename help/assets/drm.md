@@ -59,7 +59,7 @@ You can search for expired assets, including expired subassets in the Search pan
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-1. Click/tap the **[!UICONTROL Expiry Status]** option to expand it.
+1. Click the **[!UICONTROL Expiry Status]** option to expand it.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -101,7 +101,7 @@ The Assets console of Adobe Experience Manager (AEM) Assets can display various 
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. Tap **[!UICONTROL Publish]** from the toolbar. If you don't see **Publish** on the toolbar, tap **[!UICONTROL More]** on the toolbar and locate **[!UICONTROL Publish]** option.
+1. Click **[!UICONTROL Publish]** from the toolbar. If you don't see **Publish** on the toolbar, click **[!UICONTROL More]** on the toolbar and locate **[!UICONTROL Publish]** option.
 
    ![chlimage_1-156](assets/chlimage_1-156.png)
 
@@ -110,14 +110,14 @@ The Assets console of Adobe Experience Manager (AEM) Assets can display various 
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. In the Assets UI, select an asset and tap **[!UICONTROL Properties]** to display its asset details page.
+1. In the Assets interface, select an asset and click **[!UICONTROL Properties]** to display its asset details page.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
 1. In the Advanced tab, set an expiration date for the asset from the **[!UICONTROL Expires]** field.
 
    ![set asset expiration date and time in Expires field](assets/asset-properties-advanced-tab.png)
-   
+
 
    *Figure: Advanced tab in asset properties to set asset expiration*
 
@@ -132,16 +132,16 @@ The Assets console of Adobe Experience Manager (AEM) Assets can display various 
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. To search for assets based on their status, tap **[!UICONTROL Search]** to display the Omnisearch bar.
+1. To search for assets based on their status, click **[!UICONTROL Search]** to display the Omnisearch bar.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Press return and then tap **[!UICONTROL GlobalNav]** to display the Search panel.
-1. In the Search panel, tap/click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
+1. Press return and then click **[!UICONTROL GlobalNav]** to display the Search panel.
+1. In the Search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. Tap/click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.
+1. Click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -155,15 +155,15 @@ The Assets console of Adobe Experience Manager (AEM) Assets can display various 
 
 ## Digital Rights Management in Assets {#digital-rights-management-in-assets-1}
 
-This feature enforces the acceptance of the license agreement before you can download a licensed asset from Adobe Experience Manager (AEM) Assets.
+This feature enforces the acceptance of the license agreement before you can download a licensed asset from Adobe Experience Manager Assets.
 
-If you select a protected asset and tap **[!UICONTROL Download]**, you are redirected to a license page where you accept the license agreement. If you do not accept the license agreement, the **[!UICONTROL Download]** button is disabled.
+If you select a protected asset and click **[!UICONTROL Download]**, you are redirected to a license page where you accept the license agreement. If you do not accept the license agreement, the **[!UICONTROL Download]** button is disabled.
 
 If the selection contains multiple protected assets, select one asset at a time, accept the license agreement, and proceed to download the asset.
 
 An asset is considered protected if either of these conditions are fulfilled:
 
-* The asset metadata property `xmpRights:WebStatement` points to the path of the CQ page that contains the license agreement for the asset.
+* The asset metadata property `xmpRights:WebStatement` points to the path of the page that contains the license agreement for the asset.
 * The value of the asset metadata property `adobe_dam:restrictions` is a raw HTML that specifies the license agreement.
 
 >[!NOTE]
@@ -176,7 +176,7 @@ An asset is considered protected if either of these conditions are fulfilled:
 
 1. In the Card view, select the assets you want to download and click **[!UICONTROL Download]**.
 1. In the **[!UICONTROL Copyright Management]** page, select the asset you want to download from the list.
-1. In the License pane, choose **[!UICONTROL Agree]**. A tick mark appears beside the asset for which you accept the license agreement. Tap/click the **[!UICONTROL Download]** button.
+1. In the License pane, choose **[!UICONTROL Agree]**. A tick mark appears beside the asset for which you accept the license agreement. Click the **[!UICONTROL Download]** button.
 
    >[!NOTE]
    >
@@ -184,4 +184,4 @@ An asset is considered protected if either of these conditions are fulfilled:
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. In the dialog, tap/click **[!UICONTROL Download]** to download the asset or its renditions.
+1. In the dialog, click **[!UICONTROL Download]** to download the asset or its renditions.

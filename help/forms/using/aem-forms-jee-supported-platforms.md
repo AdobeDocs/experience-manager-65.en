@@ -518,7 +518,9 @@ For additional reuirements see:
 
 ### Designer {#designer}
 
-**Note:** To install Designer on Windows, run the installer with Administrative privileges.
+>[!NOTE]
+>
+>To install Designer on Windows, run the installer with Administrative privileges.
 
 * Microsoft® Windows® 2016 Server, Microsoft Windows 10
 
@@ -700,5 +702,3 @@ Under circumstances beyond Adobe’s control, third-party patches that claim bac
 Adobe reserves the right to change the third-party reference platforms supported by a AEM Forms on JEE release and their supported patch definitions at any given point.
 
 Additional information for third-party patches can also be found by searching the Adobe Enterprise Support site for knowledgebase articles related to your product.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

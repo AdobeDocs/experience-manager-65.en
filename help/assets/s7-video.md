@@ -93,7 +93,7 @@ If you need to update the viewer and encoding presets for video in AEM because t
 ## Uploading your master video to Scene7 from Adobe DAM {#uploading-your-master-video}
 
 1. Navigate to the CQ DAM target folder where you have set up your cloud configuration with Scene7 encoding profiles.
-1. Click **[!UICONTROL Upload]** to upload master video. Video uploading and encoding is complete after the DAM Update Asset workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
+1. Click **[!UICONTROL Upload]** to upload master video. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
 
    >[!NOTE]
    >

@@ -83,7 +83,9 @@ You can configure AEM user profile using User Profile Connector configuration in
 
 ## Configure folder for cloud service configurations {#cloud-folder}
 
-**Note**: Configuration for cloud services folder is required for configuring cloud services for RESTful, SOAP, and OData services.
+>[!NOTE]
+>
+>Configuration for cloud services folder is required for configuring cloud services for RESTful, SOAP, and OData services.
 
 All cloud service configurations in AEM are consolidated in the `/conf` folder in AEM repository. By default, the `conf` folder contains the `global` folder where you can create cloud service configurations. However, you need to manually enable it for cloud configurations. You can also create additional folders in `conf` to create and organize cloud service configurations.
 

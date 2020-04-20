@@ -15,7 +15,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 >[!NOTE]
 >
->* Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Marketing Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
+>* Sharing an Assets folder of the type `sling:OrderedFolder` is not supported when sharing to Marketing Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
 >* Experience Manager does not allow using `subassets` word as the name of a folder. It is a keyword reserved for node that contain subassets for compound assets.
 
 1. Navigate to the place in your digital assets folder where you want to create a new folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
@@ -52,13 +52,13 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
     * On the toolbar, tap the **[!UICONTROL Create]** icon. Then on the menu, tap **[!UICONTROL Files]**. You can rename the file in the presented dialog if needed.
     * In a browser that supports HTML5, drag the assets directly on the Assets user interface. The dialog to rename file is not displayed.
 
-   ![create option in aem](assets/create-options.png)
+   ![Create option to upload assets](assets/create-options.png)
 
    To select multiple files, press the Ctrl or Command key and select the assets in the file picker dialog. When using an iPad, you can select only one file at a time.
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
-   ![chlimage_1-211](assets/chlimage_1-5.png)
+   ![Upload assets progress bar](assets/chlimage_1-5.png)
 
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
@@ -68,7 +68,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
 
-   ![chlimage_1-212](assets/chlimage_1-6.png)
+   ![Resume the paused asset upload using Play icon](assets/chlimage_1-6.png)
 
    To cancel an ongoing upload, click close (`X`) next to the progress bar. When you cancel the upload operation, AEM Assets deletes the partially uploaded portion of the asset.
 
@@ -82,7 +82,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotate or crop) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with number `1` appended to its name.
 
-   ![chlimage_1-213](assets/chlimage_1-7.png)
+   ![Name Conflict dialog to resolve assets name conflict](assets/chlimage_1-7.png)
 
    >[!NOTE]
    >
@@ -96,7 +96,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
    >
    >The [!UICONTROL Duplicates Detected] dialog appears only when the duplicate detection feature is enabled. To enable the duplicate detection feature, see [Enable Duplicate Detection](/help/assets/duplicate-detection.md).
 
-   ![chlimage_1-214](assets/chlimage_1-8.png)
+   ![Duplicate Asset Detected dialog](assets/chlimage_1-8.png)
 
    To retain the duplicate asset in AEM Assets, tap/click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, tap/click **[!UICONTROL Delete]**.
 
@@ -109,7 +109,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
     * asset file name must not contain `* / : [ \\ ] | # % { } ? &`
     * asset folder name must not contain `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-   ![chlimage_1-215](assets/chlimage_1-10.png)
+   ![Upload progress dialog shows status of successfully uploaded files and files that fail to upload](assets/chlimage_1-10.png)
 
    In addition, the Assets user interface displays the most recent asset that you upload or the folder that you created first.
 
@@ -303,7 +303,7 @@ Select one ZIP archive at a time, click **[!UICONTROL Extract Archive]**, and se
 
 After the extraction is complete, AEM notifies you in the notification area. While AEM extracts the ZIP, you can go back to your work without interrupting the extraction.
 
-![Notification of ZIP extraction](assets/Zip-extraction-notification.png)
+![Notification of ZIP file extraction](assets/Zip-extraction-notification.png)
 
 Some limitations of the feature are:
 
@@ -323,11 +323,9 @@ To preview an asset, follow these steps.
 
    To zoom into an asset, tap/click `+` (or tap/click the magnifying glass on the asset). To zoom out, tap/click `-`. When you zoom in, you can look closely at any area of the image by panning. The reset zoom arrow brings you back to the original view.
 
-   ![uploadicon](assets/uploadicon.png)
-
    Tap **[!UICONTROL Reset]** to reset the view to the original size.
 
-   ![chlimage_1-216](assets/chlimage_1-11.png)
+   ![Reset icon to bring user back to original view](assets/chlimage_1-11.png)
 
 **Preview assets using keyboard keys only**
 
@@ -347,15 +345,18 @@ To preview an asset using keyboard, follow these steps:
 
 1. Use arrow keys to move around the zoomed image.
 
-See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
+>[!MORELIKETHIS]
+>
+>* [Preview Dynamic Media Assets](/help/assets/previewing-assets.md).
+>* [View subassets](managing-linked-subassets.md#viewing-subassets).
 
 ## Edit properties and metadata {#editing-properties}
 
-1. Navigate to the location of the asset whose metadata you want to edit.
+1. Navigate to the location of the asset to edit its metadata.
 
 1. Select the asset, and tap/click **[!UICONTROL Properties]** from the toolbar to view asset properties. Alternatively, choose the **[!UICONTROL Properties]** quick action on the asset card.
 
-   ![properties_quickaction](assets/properties_quickaction.png)
+   ![Properties quick action on asset card view](assets/properties_quickaction.png)
 
 1. In the [!UICONTROL Properties] page, edit the metadata properties under various tabs. For example, under the **[!UICONTROL Basic]** tab, edit the title, description, and so on.
 
@@ -365,13 +366,13 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 1. To schedule a particular date/time for the activation of the asset, use the date picker beside the **[!UICONTROL On Time]** field.
 
-   ![use date time picker or keyboard keys in On Time field to add date and time for asset activation](assets/schedule-activation.png)
+   ![Date time picker or use keyboard keys in On Time field to add date and time for asset activation](assets/schedule-activation.png)
 
    *Figure: Schedule asset activation*
 
 1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API.
 
-   ![use date time picker or keyboard keys in Off Time field to add date and time for asset de-activation](assets/schedule-deactivation.png)
+   ![Date time picker or use keyboard keys in Off Time field to add date and time for asset de-activation](assets/schedule-deactivation.png)
 
    *Figure: Schedule asset deactivation*
 
@@ -383,7 +384,7 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 1. To provide a rating to the asset, tap/click the **[!UICONTROL Advanced]** tab and then tap/click the star at the appropriate position to assign the desired rating.
 
-   ![ratings](assets/ratings.png)
+   ![Advanced tab in asset Properties to assign rating](assets/ratings.png)
 
    The rating score that you assign to the asset is displayed under **[!UICONTROL Your Ratings]**. The average rating score that the asset received from users who rated the asset is displayed under **[!UICONTROL Rating]**. In addition, the breakup of the rating scores that contribute to the average rating score is displayed under **[!UICONTROL Rating Breakdown]**. You can search assets based on average rating scores.
 
@@ -413,7 +414,7 @@ A few attributes that are unique to a particular copy of an asset are not carrie
 The other properties and metadata information is retained. A partial copy is not created when copying an asset.
 
 1. From the Assets UI, select one or more assets, and then tap/click the **[!UICONTROL Copy]** icon from the toolbar. Alternatively, select the **[!UICONTROL Copy]** quick action from the asset card.
- ![copy_icon](assets/copy_icon.png)
+ ![Copy icon in assets UI toolbar](assets/copy_icon.png)
 
    >[!NOTE]
    >
@@ -427,7 +428,7 @@ The other properties and metadata information is retained. A partial copy is not
 
 1. Click/ tap the **[!UICONTROL Paste]** asset icon from the toolbar.
 
-   ![chlimage_1-219](assets/chlimage_1-14.png)
+   ![Paste icon in assets UI toolbar](assets/chlimage_1-14.png)
    Assets are then copied to this location.
 
    >[!NOTE]
@@ -439,7 +440,7 @@ The other properties and metadata information is retained. A partial copy is not
 1. Navigate to the location of the asset you want to move.
 
 1. Select the asset, and tap/click the **[!UICONTROL Move]** icon from the toolbar.
-![move_icon](assets/move_icon.png)
+![Move icon in asset UI toolbar](assets/move_icon.png)
 
 1. In the Move Assets wizard, do one of the following:
 
@@ -651,7 +652,7 @@ In card view, the **[!UICONTROL Select]** option displays as a quick action.
 
 ![select_quick_action](assets/select_quick_action.png)
 
-When browsing a folder or a collection in the Assets user interface in a browser, you can select all the displayed or loaded assets by using the [!UICONTROL Select All] option from the upper-right corner. If you don't scroll below, only 100 assets are loaded in card view and 200 are loaded in list view. Select All option selects only these many assets.
+When browsing a folder or a collection in the Assets user interface in a browser, you can select all the displayed or loaded assets by using the [!UICONTROL Select All] option from the upper-right corner. Initially, only 100 assets are loaded in card view and 200 are loaded in list view. More assets are loaded in view as you scroll the search results page. The [!UICONTROL Select All] option selects only the loaded assets.
 
 For more information, see [view and selecting your resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
@@ -883,94 +884,64 @@ Here is an example of how you can configure AEM to print annotations in CJK (Chi
 1. Configure the annotation PDF file by setting the font-family parameter to `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. This configuration is available by default and works for all European and CJK languages.
 1. If the language of your choice is different from the languages mentioned in step 2, append an appropriate (comma separated) entry to the default font-family.
 
-## Asset versions {#asset-versioning}
+## Create, manage, preview, and revert asset versions {#asset-versioning}
 
-Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset.
+Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset. In Experience Manager, you can create a version, view the current revision, view side-by-side differences between two versions of images, and restore an asset to its previous version.
 
-The following are scenarios where you create versions:
+You can create versions in Experience Manager in the following scenarios:
 
-* You modify an image in a different application and upload to AEM Assets. A version of the image is created so your original image is not overwritten.
-* You edit the metadata of an asset.
-* You use AEM desktop app to checkout an existing asset and save your changes. A new version is created everytime the asset is saved.
+* Upload an asset with the same filename that exists at the same location. It can be a new asset or a modified version of the same asset.
+* Edit an image in Experience Manager and save the changes.
+* Edit the metadata of an asset.
+* Use AEM desktop app to check-out an existing asset, edit it, and [upload your changes](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
 
-The versioning functionality lets you do the following:
+1. Navigate to the location of the asset for which you want to create a version and click it to open its preview. From the upper-left corner of the page, open the menu, and select **[!UICONTROL Timeline]**.
 
-* Create a version of an asset.
-* View the current revision for an asset.
-* Restore the asset to a previous version.
+   ![From the left navigation menu, select timeline option](assets/timeline.png)
 
-1. Navigate to the location of the asset for which you want to create a version, and tap/click it to open its asset page.
+   *Figure: Open menu from upper-left area of page and select [!UICONTROL Timeline] option.*
 
-1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu.
+1. To create a version of the asset:
+  
+   * Click the **[!UICONTROL Actions]** at the bottom.
+   * Click **[!UICONTROL Save as Version]** to create a version for the asset. Optionally, add a label and comment.
+   * Click **[!UICONTROL Create]** to create a version.
 
-   ![timeline](assets/timeline.png)
+     ![chlimage_1-251](assets/create-new-version-from-timeline.png)
 
-1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to view the available actions you can perform on the asset.
+     *Figure: Create a version of an asset from the [!UICONTROL Timeline] left sidebar.*
 
-   ![chlimage_1-249](assets/chlimage_1-45.png)
+1. To view a version of an asset:
 
-1. Tap/click **[!UICONTROL Save as Version]** to create a version for the asset.
+   * Click **[!UICONTROL Show All]** in [!UICONTROL Timeline].
+   * Click **[!UICONTROL Versions]**. All versions created for an asset are listed the left sidebar.
 
-   ![chlimage_1-250](assets/chlimage_1-46.png)
+     ![versions_option](assets/versions_option.png)
 
-1. Add a label and comment, and then click **[!UICONTROL Create]** to create a version. Alternatively, tap/click **Cancel** to exit the operation.
+   * Select a specific version of the asset and click **[!UICONTROL Preview Version]**.
 
-   ![chlimage_1-251](assets/chlimage_1-47.png)
+1. To revert to an older version of the asset, do the following. After reverting, this version is displayed in the [!DNL Assets] interface and is available for usage.
 
-1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
+   * Click a version of the asset. Optionally, add a label and a comment.
+   * Click **[!UICONTROL Revert to this Version]**.
 
-   ![versions_option](assets/versions_option.png)
+     ![select_version](assets/select_version.png)
 
-1. Select a specific version for the asset to preview it or enable it to appear in the Assets UI.
+     *Figure: Select a version and revert to it. It becomes the current version which is then available to the DAM users.*
 
-   ![select_version](assets/select_version.png)
+1. To compare between two versions of an image, follow these steps:
+   * Click the version to be compared with the current version.
+   * Drag the slider to the left to superimpose this version over the current version and compare.
 
-   >[!NOTE]
-   >
-   >You can also select the asset from the [List view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) or the [Column view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+   ![Use slider to compare the selected versions of an asset with the current version](assets/version-slider.gif)
 
-1. Add a label and comment for the version to revert to the particular version in the Assets UI.
-
-   ![save_version](assets/save_version.png)
-
-1. To generate a preview for the version, tap/click **[!UICONTROL Preview Version]**.
-1. To display this version in the Assets UI, select **[!UICONTROL Revert to this Version]**.
-1. To compare between two versions, go to asset page of the asset and tap/click the version to be compared with the current version.
-
-   ![select_version_tocompare](assets/select_version_tocompare.png)
-
-1. From the timeline, select the version you want to compare and drag the slider to the left to superimpose this version over the current version and compare.
-
-   ![compare_versions](assets/compare_versions.png)
+   *Figure: Use slider to effortlessly compare the selected versions of an asset with the current version.*
 
 ### Start a workflow on an asset {#starting-a-workflow-on-an-asset}
 
-1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
-1. Tap the GlobalNav icon, then select **[!UICONTROL Timeline]** from the menu to display the timeline.
-
-   ![timeline-1](assets/timeline.png)
-
-1. Tap the **[!UICONTROL Actions]** (arrow) icon at the bottom to open the list of actions available for the asset.
-
-   ![chlimage_1-252](assets/chlimage_1-45.png)
-
-1. Tap **[!UICONTROL Start Workflow]** from the list.
-
-   ![chlimage_1-253](assets/chlimage_1-49.png)
-
-1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
-
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
-1. (Optional) Specify a title for the workflow, which can be used to reference the workflow instance.
-
-   ![chlimage_1-255](assets/chlimage_1-51.png)
-
-1. Tap **[!UICONTROL Start]**, then tap **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
-
-   ![chlimage_1-256](assets/chlimage_1-52.png)
+To apply a workflow to process an asset, see [start workflow on an asset](/help/assets/assets-workflow.md#apply-a-workflow-to-an-asset).
 
 ## Collections {#collections}
 

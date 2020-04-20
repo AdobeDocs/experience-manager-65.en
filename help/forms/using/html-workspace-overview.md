@@ -46,7 +46,7 @@ You can approve multiple tasks of the same type. Once you select one task for ap
 
 Flex Workspace is not supported for AEM Forms customers. All the customers using the Flex Workspace should move to AEM Forms Workspace.
 
-In AEM Forms workspace, the default render and submit services, in the default action profile, associated with XDP forms have changed and new services have been introduced. For details, see [New render and submit service](/help/forms/using/new-render-submit-service.md). To migrate your existing processes, that work with XDP forms, to make use of these services, you can follow [these steps](/help/forms/using/new-render-submit-service.md#main-pars-faq).
+In AEM Forms workspace, the default render and submit services, in the default action profile, associated with XDP forms have changed and new services have been introduced. For details, see [New render and submit service](/help/forms/using/new-render-submit-service.md). To migrate your existing processes, that work with XDP forms, to make use of these services, you can follow [these steps](new-render-submit-service.md).
 
 **Mapping Flex Workspace customizations with AEM Forms workspace**
 
@@ -117,11 +117,11 @@ AEM Forms workspace supports a wide variety of customizations to update the layo
 * Functionality using semantic customizations
 * Reusing HTML components in other web applications
 
-The [customization](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-0) article explains the types of such customizations.
+The [customization](introduction-customizing-html-workspace.md#types-of-customizations) article explains the types of such customizations.
 
 ### Set up the developer environment {#set-up-the-developer-environment}
 
-AEM Forms workspace deliverables include a CRX package deployed on CRX, an SDK archive that contains the complete source code, third-party JavaScript libraries, and build scripts of AEM Forms workspace. Use these to set up the developer environment to perform the customizations mentioned above. For more details, see [Building AEM Forms workspace code](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3).
+AEM Forms workspace deliverables include a CRX package deployed on CRX, an SDK archive that contains the complete source code, third-party JavaScript libraries, and build scripts of AEM Forms workspace. Use these to set up the developer environment to perform the customizations mentioned above. For more details, see [Building AEM Forms workspace code](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
 You can customize a major part of the interface and core functionality such as, fonts, color scheme, logo, login screen, error dialogs, integration with third-party applications, and reuse of components in third-party application. You can also enhance the contents displayed on the Task Summary page, show images for task route actions, and even modify the low-level Backbone Models and Views that create the AEM Forms workspace application.
 
@@ -134,5 +134,3 @@ By default, for a new process, an XDP form is rendered in PDF format on a deskto
 ## AEM Forms workspace app {#aem-forms-workspace-app}
 
 To work on your business processes on a mobile device, you can use the AEM Forms workspace app offering of AEM Forms. For more information, see the [AEM Forms workspace app overview](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html).
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)
