@@ -151,5 +151,3 @@ Finally, you need to include an entry in the dev package for each property that 
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
 
    ```
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

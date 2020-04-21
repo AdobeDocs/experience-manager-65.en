@@ -83,7 +83,7 @@ Do the following to configure your MySQL database:
 
 ## Step 2: Create form data model {#create-fdm}
 
-AEM Forms provides an intuitive user interface to [create a form data mode](../../forms/using/data-integration.md#main-pars-header-1524967585)l from configured data sources. You can use multiple data sources in a form data model. For our use case, we will use the configured MySQL data source.
+AEM Forms provides an intuitive user interface to [create a form data model](data-integration.md) from configured data sources. You can use multiple data sources in a form data model. For our use case, we will use the configured MySQL data source.
 
 Do the following to create form data model:
 

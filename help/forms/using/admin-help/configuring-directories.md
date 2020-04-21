@@ -94,19 +94,25 @@ When you add a directory to a domain, specify the following directory settings.
 
 **Enable referral:** This setting is applicable when your organization uses multiple Active Directory domains organized in a hierarchical structure and you have specified directory settings for only the parent domain. In this situation, when you select this option, User Management can access user and group details from the child domains.
 
-***Note**: Click Test to verify that a connection can be made to the LDAP server. To determine the root cause of any failures, review the exception in the Application Server log file.*
+>[!NOTE]
+>
+>Click Test to verify that a connection can be made to the LDAP server. To determine the root cause of any failures, review the exception in the Application Server log file.
 
 ### User settings {#user-settings}
 
 **Unique Identifier:** (Mandatory) A unique and constant attribute used to identify users. Use a non-DN attribute as the unique identifier because a user’s DN may change if they move to another part of the organization. This setting depends on the directory server. The value is objectGUID for Active Directory 2003, nsuniqueID for Sun™ One, and guid for eDirectory.
 
-**Note**: Ensure that you enter an attribute that is guaranteed to be unique in your organization. Entering an incorrect value can cause serious system problems. *
+>[!NOTE]
+>
+>Ensure that you enter an attribute that is guaranteed to be unique in your organization. Entering an incorrect value can cause serious system problems.
 
 **Base DN:** Set as the starting point for synchronizing users and groups from the LDAP hierarchy. It is best to specify a base DN at the lowest level of the hierarchy that encompasses all users and groups that need to be synchronized for services.
 
 If you selected the Enable referral option in the Directory settings, set the Base DN option to the *dc* part of the DN. For the referral to work, the search span must include both parent and child domains.
 
-***Note**: Do not include the user’s DN in this setting. To synchronize a particular user, use the Search Filter setting.*
+>[!NOTE]
+>
+>Do not include the user’s DN in this setting. To synchronize a particular user, use the Search Filter setting.
 
 Although Base DN is a mandatory setting in administration console, some directory servers such as IBM Domino Enterprise Server may require an empty BaseDN. To specify an empty Base DN, export the config.xml file, edit the setting in the config.xml file, and then reimport it. (See [Importing and exporting the configuration file](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
@@ -148,7 +154,9 @@ The amount of space used to display the name of the business calendar key in the
 
 **Enable Virtual List View (VLV) Control:** An LDAP control that enables AEM forms to retrieve data in batches from the directory server. If you are using Sun One as your LDAP directory and the directory contains many users, enabling VLV creates an index that User Management can use when searching users. This feature is useful when using a normal user account that can synchronize only a limited amount of data. You can also enable VLV for groups. If you select Enable Virtual List View (VLV) Control, specify a name in the Sort Field box.
 
-***Note**: To enable VLV, configure Sun One. (See [Configure User Management to use Virtual List View (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).)*
+>[!NOTE]
+>
+>To enable VLV, configure Sun One. See [Configure User Management to use Virtual List View (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
 
 **Sort Field:** If you selected Enable Virtual List View (VLV) Control, specify the attribute name used to sort the index. This attribute name (such as uid) is the one you specified when you created an index for VLV on the directory server.
 
@@ -156,7 +164,9 @@ The amount of space used to display the name of the business calendar key in the
 
 **Unique Identifier:** (Mandatory) A unique and constant attribute used to identify groups. Use a non-DN attribute as the unique identifier. This setting depends on the directory server. The value is objectGUID for Active Directory 2003, nsuniqueID for Sun One, and guid for eDirectory.
 
-***Note**: Ensure that you enter an attribute that is guaranteed to be unique in your organization. Entering an incorrect value can cause serious system problems. *
+>[!NOTE]
+>
+>Ensure that you enter an attribute that is guaranteed to be unique in your organization. Entering an incorrect value can cause serious system problems.
 
 **Base DN:** (Mandatory) Base distinguished name of the directory.
 
@@ -186,13 +196,21 @@ If DN is specified as a unique identifier, you do not need to configure Member U
 
 **Enable Virtual List View (VLV) Control:** An LDAP control that enables AEM forms to retrieve data in batches from the directory server. If you are using Sun One as your LDAP directory and the directory contains many groups, enabling VLV creates an index that User Management can use when searching groups. This feature is useful when using a normal user account that can synchronize only a limited amount of data. You can also enable VLV for users. If you select Enable Virtual List View (VLV) Control, specify a Sort Field Name.
 
-***Note**: To enable VLV, configure Sun One. (See [Configure User Management to use Virtual List View (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).)*
+>[!NOTE]
+>
+>To enable VLV, configure Sun One. See [Configure User Management to use Virtual List View (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
 
 **Sort Field Name:** If you selected Enable Virtual List View (VLV) Control, specify the attribute name used to sort the index. This attribute name is the one you specified when you created an index for VLV on the directory server.
 
-***Note**: Click Test to verify that the user and group settings are collected based on the base DN and search criteria. If users and groups are returned, the results show the values that are assigned to each field as per the attribute set.*
+>[!NOTE]
+>
+>Click Test to verify that the user and group settings are collected based on the base DN and search criteria.
 
-***Note**: User Management does not support duplicate user IDs within a domain; only one user with the user ID is synchronized.*
+If users and groups are returned, the results show the values that are assigned to each field as per the attribute set.
+
+>[!NOTE]
+>
+>User Management does not support duplicate user IDs within a domain; only one user with the user ID is synchronized.
 
 ## Configure User Management to use Virtual List View (VLV) {#configure-user-management-to-use-virtual-list-view-vlv}
 

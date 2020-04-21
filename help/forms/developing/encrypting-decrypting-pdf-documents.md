@@ -26,7 +26,9 @@ You can accomplish these tasks using the Encryption service:
 * Unlock the PDF document so that other service operations can be performed. For example, after a password-encrypted PDF document is unlocked, you can apply a digital signature to it. (See [Unlocking Encrypted PDF Documents](encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
 * Determine the encryption type of a secured PDF document. (See [Determining Encryption Type](encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
 
-  ***Note**: For more information about the Encryption service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).*
+>[!NOTE]
+>
+>For more information about the Encryption service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Encrypting PDF Documents with a Password {#encrypting-pdf-documents-with-a-password}
 

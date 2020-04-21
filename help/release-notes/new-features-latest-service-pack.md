@@ -9,7 +9,7 @@ mini-toc-levels: 1
 
 Adobe Experience Manager (6.5) enables you to get access to new features and continuous improvements through quarterly Service Pack releases. Using this approach, you get to adopt the innovations easily.
 
-Experience Manager Service Pack 4 (6.5.4.0) is released on March 5, 2020. It is an important update that includes new features, key customer-requested enhancements, and performance, stability, security improvements, released since the general availability of 6.5 release in April 2019. Experience Manager 6.5.4.0 can be installed on top of Adobe Experience Manager 6.5.
+Experience Manager Service Pack 4 (6.5.4.0) is an important update. It includes all the new features, key customer requested enhancements, performance, stability, and security improvements released since AEM 6.5 release in April 2019. You can install the service pack on AEM 6.5 and later releases.
 
 This article highlights the features included in the latest 6.5 Service Pack, [key features included in the previous 6.5 Service Packs](#key-features-previous-service-packs), and some of the [key releases since Experience Manager 6.5.3.0](#key-features-sice-sp3).
 
@@ -119,7 +119,7 @@ You have the option of specifying a start date and time and an end date and time
 
 You can use the Batch API to produce multiple interactive communications from a template. The template is an interactive communication without any data. The Batch API combines data with a template to produce an interactive communication. The API is useful in the mass production of interactive communications. For example, telephone bills, credit card statements for multiple customers. See [Generate multiple interactive communications using Batch API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-## Key releases since AEM 6.5 SP3 {#key-features-sice-sp3}
+## Key releases since AEM 6.5 SP3 {#key-features-since-sp3}
 
 Between December 12, 2019 and March 5, 2020, Adobe released following capabilities that are outside of the core AEM deliverable:
 

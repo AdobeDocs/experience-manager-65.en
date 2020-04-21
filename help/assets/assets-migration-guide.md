@@ -39,11 +39,11 @@ Migrating assets to AEM requires several steps and should be viewed as a phased 
 
 ### Disable workflows {#disabling-workflows}
 
-Before starting your migration, disable your launchers for the DAM Update Asset workflow. It is best to ingest all of the assets into the system and then run the workflows in batches. If you are already live while the migration is taking place, you can schedule these activities to run on off-hours.
+Before starting your migration, disable your launchers for the [!UICONTROL DAM Update Asset] workflow. It is best to ingest all of the assets into the system and then run the workflows in batches. If you are already live while the migration is taking place, you can schedule these activities to run on off-hours.
 
 ### Load tags {#loading-tags}
 
-You may already have a tag taxonomy in place that you are applying to your images. While tools like the CSV Asset Importer and AEM’s support for metadata profiles can automate the process of applying tags to assets, the tags need to be loaded into the system. The [ACS AEM Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) feature lets you populate tags by using a Microsoft Excel spreadsheet that is loaded into the system.
+You may already have a tag taxonomy in place that you are applying to your images. While tools like the CSV Asset Importer and Experience Manager’s support for metadata profiles can automate the process of applying tags to assets, the tags need to be loaded into the system. The [ACS AEM Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) feature lets you populate tags by using a Microsoft Excel spreadsheet that is loaded into the system.
 
 ### Ingest assets {#ingesting-assets}
 
@@ -70,7 +70,7 @@ Because assets do not need to be transmitted over a network, overall performance
 
 ### Process renditions {#processing-renditions}
 
-After you load the assets into the system, you need to process them through the DAM Update Asset workflow to extract metadata and generate renditions. Before performing this step, you need to duplicate and modify the DAM Update Asset workflow to fit your needs. The out-of-the-box workflow contains many steps that may not necessary for you, such as Scene7 PTIFF generation or InDesign server integration.
+After you load the assets into the system, you need to process them through the [!UICONTROL DAM Update Asset] workflow to extract metadata and generate renditions. Before performing this step, you need to duplicate and modify the [!UICONTROL DAM Update Asset] workflow to fit your needs. The out-of-the-box workflow contains many steps that may not necessary for you, such as Scene7 PTIFF generation or InDesign server integration.
 
 After you have configured the workflow according to your needs, you have two options for executing it:
 
@@ -105,7 +105,7 @@ After the assets have been activated, you can clone your publish instance to cre
 
 ### Enable workflows {#enabling-workflows}
 
-Once we have completed migration, the launchers for the DAM Update Asset workflows should be re-enabled to support rendition generation and metadata extraction for ongoing day-to-day system usage.
+Once we have completed migration, the launchers for the [!UICONTROL DAM Update Asset] workflows should be re-enabled to support rendition generation and metadata extraction for ongoing day-to-day system usage.
 
 ## Migrate across AEM deployments {#migrating-between-aem-instances}
 
@@ -113,7 +113,7 @@ While not nearly as common, sometimes you need to migrate large amounts of data 
 
 In this case, your assets are already populated with metadata and renditions are already generated. You can simply focus on moving assets from one instance to another. When migrating between AEM instances, you perform the following steps:
 
-1. Disable workflows: Because you are migrating renditions along with our assets, you want to disable the workflow launchers for DAM Update Asset.
+1. Disable workflows: Because you are migrating renditions along with our assets, you want to disable the workflow launchers for [!UICONTROL DAM Update Asset] workflow.
 
 1. Migrate tags: Because you already have tags loaded in the source AEM instance, you can build them in a content package and install the package on the target instance.
 
@@ -126,4 +126,4 @@ In this case, your assets are already populated with metadata and renditions are
 
 1. Clone publish: As with a new migration, loading a single publish instance and cloning it is more efficient than activating the content on both nodes. See [Cloning Publish.](#cloning-publish)
 
-1. Enable workflows: After you have completed migration, re-enable the launchers for the DAM Update Asset workflows to support rendition generation and metadata extraction for ongoing day-to-day system usage.
+1. Enable workflows: After you have completed migration, re-enable the launchers for the [!UICONTROL DAM Update Asset] workflow to support rendition generation and metadata extraction for ongoing day-to-day system usage.

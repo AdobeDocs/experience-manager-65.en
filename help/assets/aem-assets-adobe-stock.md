@@ -114,10 +114,8 @@ It is possible that an incorrect license type is displayed in AEM for an asset. 
 
 When a user updates a license reference field, the license reference information is updated in AEM but not on the Adobe Stock website. Similarly, if the user updates the reference fields on the Adobe Stock website, the updates are not synchronized in AEM.
 
-## Related resources {#related-resources}
-
-[Video tutorial on using Adobe Stock assets with AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
-
-[Adobe Stock enterprise plan help](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
-
-[Adobe Stock FAQ](https://helpx.adobe.com/stock/faq.html)
+>[!MORELIKETHIS]
+>
+>* [Video tutorial on using Adobe Stock assets with AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
+>* [Adobe Stock enterprise plan help](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [Adobe Stock FAQ](https://helpx.adobe.com/stock/faq.html)

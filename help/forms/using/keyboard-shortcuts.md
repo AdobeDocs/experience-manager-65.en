@@ -80,7 +80,7 @@ This article lists the keyboard shortcuts that can be used with Adaptive Form Ed
 
 This section lists various keyboards and accessibility shortcuts that you can use in Correspondence Management text editor. You can use these shortcuts while you are:
 
-* Creating or editing a [Text](/help/forms/using/document-fragments.md#main-pars-header-0) asset
+* Creating or editing a [Text](texts-interactive-communications.md) asset
 * Editing a text module after tapping the relevant Edit icon ( ![edittextmodule](assets/edittextmodule.png)) when [creating a correspondence](/help/forms/using/create-correspondence.md).
 
 ### Text selection and moving the cursor around {#text-selection-and-moving-the-cursor-around}

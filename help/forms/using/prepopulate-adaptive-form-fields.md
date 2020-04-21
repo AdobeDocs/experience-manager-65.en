@@ -24,10 +24,10 @@ An adaptive form can have mix of bound and unbound fields. Bound fields are fiel
 You can prefill both bound and unbound fields of an adaptive form. The prefill data contains the afBoundData and afUnBoundData sections to prefill both bound and unbound fields of an adaptive form. The `afBoundData` section contains the prefill data for bound fields and panels. This data must be compliant with the associated form model schema:
 
 * For adaptive forms using the [XFA form template](../../forms/using/prepopulate-adaptive-form-fields.md), use the prefill XML compliant with the data schema of the XFA template.
-* For adaptive forms using [XML schema](../../forms/using/prepopulate-adaptive-form-fields.md#main-pars-header-3), use the prefill XML compliant with the XML schema structure.
-* For adaptive forms using [JSON schema](../../forms/using/prepopulate-adaptive-form-fields.md#json-schema-based-adaptive-forms), use the prefill JSON compliant with the JSON schema.
+* For adaptive forms using [XML schema](#xml-schema-af), use the prefill XML compliant with the XML schema structure.
+* For adaptive forms using [JSON schema](#json-schema-based-adaptive-forms), use the prefill JSON compliant with the JSON schema.
 * For adaptive forms using FDM schema, use the prefill JSON compliant with FDM schema.
-* For adaptive forms with [no form model](../../forms/using/prepopulate-adaptive-form-fields.md#p-adaptive-form-with-no-form-model-p), there is no bound data. Every field is an unbound field and is prefilled using the unbound XML.
+* For adaptive forms with [no form model](#adaptive-form-with-no-form-model), there is no bound data. Every field is an unbound field and is prefilled using the unbound XML.
 
 ### Sample Prefill XML structure {#sample-prefill-xml-structure}
 
@@ -343,7 +343,7 @@ You can use custom prefill service for the scenarios, where you constantly read 
 The prefill service is an OSGi service and is packaged through OSGi bundle. You create the OSGi bundle, upload, and install it to AEM Forms bundles. Before you get started with creating the bundle:
 
 * [Download the AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
-* [Download the boilerplate package](../../forms/using/prepopulate-adaptive-form-fields.md#main-pars-download-section-711716493)  
+* Download the boilerplate package
 
 * Place the data (prefill data) file in the crx-repository. You can place the file at any location in the \contents folder of crx-repository.
 

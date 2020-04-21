@@ -162,7 +162,9 @@ The following strategies can minimize output and input folder data loss when res
 
   If files are in Stage 1, they will be manipulated. If files are in Stage 2 or 3, place them in the input folder for manipulation to take place again.
 
-  **Note**: If manipulation of a file occurs more than once, data loss will be prevented but results may be duplicated. *
+  >[!NOTE]
+  >
+  >If manipulation of a file occurs more than once, data loss will be prevented but results may be duplicated.  
 
 ## Conclusion {#conclusion}
 

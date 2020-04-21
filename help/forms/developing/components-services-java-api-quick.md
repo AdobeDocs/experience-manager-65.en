@@ -31,8 +31,13 @@ Java API Quick Start(SOAP) is available for components and services.
 
 AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
 
-* ***Note**: You cannot programmatically manipulate components and services by using web services.*
-* ***Note**: Quick starts located in Programming with AEM forms are based on the Forms server being deployed on JBoss and the Windows operating system. However, if you are using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. (See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>You cannot programmatically manipulate components and services by using web services.
+
+>[!NOTE]
+>
+>Quick starts located in Programming with AEM forms are based on the Forms server being deployed on JBoss and the Windows operating system. However, if you are using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >

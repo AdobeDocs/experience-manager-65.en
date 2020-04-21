@@ -263,5 +263,3 @@ All custom widgets should conform to the above specifications. To use the featur
 | months  |Localized month names for that field.  |
 | zero  |The localized text for the number 0.  |
 | clearText  |The localized text for clear button.  |
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

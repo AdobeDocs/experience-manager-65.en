@@ -124,5 +124,3 @@ You can add any process to your Favorites category. By setting favorites, you ca
 >If you usually start processes when you use AEM Forms workspace, you can set the Start Location preference to automatically display the Favorites category when you start AEM Forms workspace. For more details, see Managing Preferences in [Getting started with AEM Forms workspace](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 To mark a process as favorite, select the task in its category, and click the hollow star. The star turns golden. To unmark a process as a favorite, click the golden star again.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

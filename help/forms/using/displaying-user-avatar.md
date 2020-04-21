@@ -79,5 +79,3 @@ Avatar of the logged-in user is displayed in the upper-right corner of AEM Forms
 
 1. Deploy DSC through Workbench. Restart `ProcessManagementClientSessionService` service.
 1. You may have to refresh your browser or logout/login with the user again.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

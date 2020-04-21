@@ -203,5 +203,3 @@ To change the location and name of the log file:
    >To create logs in the same directory where other log files are kept, specify ../logs/&lt;filename&gt; in the Log Files property.
 
 1. Change the **Logger** to **HTMLFormsPerfLogger** and click **Save**.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

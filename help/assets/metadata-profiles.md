@@ -21,15 +21,15 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 
    Edit the following properties for the **[!UICONTROL Description]** component:
 
-    * **[!UICONTROL Field Label]** &ndash; The display name of the metadata property. It is only for the user reference.
+    * **[!UICONTROL Field Label]**: The display name of the metadata property. It is only for the user reference.
 
-    * **[!UICONTROL Map to Property]** &ndash; The value of this property provides the relative path/name to the asset node where it is saved in the repository. The value should always start with `./` because it indicates that the path is under the asset's node.
+    * **[!UICONTROL Map to Property]**: The value of this property provides the relative path/name to the asset node where it is saved in the repository. The value should always start with `./` because it indicates that the path is under the asset's node.
 
    ![chlimage_1-199](assets/chlimage_1-482.png)
 
    The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset's metadata node. For example, if you specify . `/jcr:content/metadata/dc:desc` as the name of **[!UICONTROL Map to property]**, AEM Assets stores the value `dc:desc` at the asset's metadata node.
 
-    * **[!UICONTROL Default Value]** &ndash; Use this property to add a default value for the metadata component. For example, if you specify "My description" then this value is assigned to the property `dc:desc` at the asset's metadata node.
+    * **[!UICONTROL Default Value]**: Use this property to add a default value for the metadata component. For example, if you specify "My description" then this value is assigned to the property `dc:desc` at the asset's metadata node.
 
    ![chlimage_1-200](assets/chlimage_1-483.png)
 

@@ -125,7 +125,7 @@ For more information on the Interactive Communication authoring interface, see [
  </tbody>
 </table>
 
-   You can also replace the binding between a target area and a document fragment by dropping the new fragment on the target area using the **Assets** tab. The blue color shading of the target area while dragging the fragment indicates that the document fragment can be dropped to the target area.
+   You can also replace the binding between a target area and a document fragment by dropping the new fragment on the target area using the **[!UICONTROL Assets]** tab. The blue color shading of the target area while dragging the fragment indicates that the document fragment can be dropped to the target area.
 
    For more information on document fragments, see [Document Fragments](/help/forms/using/document-fragments.md).
 
@@ -139,7 +139,7 @@ For more information on the Interactive Communication authoring interface, see [
 
    ![Unbound variable](assets/df_unbound_variable_new.png)
 
-   Tap the document fragment, tap ![configure_icon](assets/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to each data model object or variable to edit the properties.
+   Tap the document fragment, tap ![configure_icon](assets/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](assets/edit.svg) (Edit) icon next to each data model object or variable to edit the properties.
 
 1. To set up binding of variables, tap a variable and select ![configure_icon](assets/configure_icon.png) (Configure) and then set up the binding properties in the Properties panel in the sidebar.
 
@@ -177,11 +177,11 @@ For more information on the Interactive Communication authoring interface, see [
 
 1. Switch to **[!UICONTROL Web Channel]**. The web channel appears in the Interactive Communication editor. When you switch from the Print channel to the Web channel for the first time, the automatic synchornization takes place. For more information, see [Synchronizing web channel from the print channel](../../forms/using/create-interactive-communication.md#synchronize).
 
-   Since we are using Print as master for the web in this example, the Print channel placeholders, content, and data binding get synced to the web channel. However, you can change and customize the specific content in the web channel. [Cancel inheritance](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) for the target areas and variables that have been generated using the print channel to be able to customize content.
+   Since we are using Print as master for the web in this example, the Print channel placeholders, content, and data binding get synced to the web channel. However, you can change and customize the specific content in the web channel. [Cancel inheritance](#cancelinheritance) for the target areas and variables that have been generated using the print channel to be able to customize content.
 
    ![webchannelassets](assets/webchannelassets.png)
 
-   Tap the document fragment, tap ![configure_icon](assets/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to each data model object or variable to edit the properties. In addition, for document fragments that have been [auto-generated](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) in Web channel using Print channel, use the ![](assets/cancelinheritance.png) (Cancel Inheritance) icon next to each data model object and variable to [cancel inheritance](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) and to be able to edit them.
+   Tap the document fragment, tap ![configure_icon](assets/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](assets/edit.svg) (Edit) icon next to each data model object or variable to edit the properties. In addition, for document fragments that have been [auto-generated](#synchronize) in Web channel using Print channel, use the ![](assets/cancelinheritance.png) (Cancel Inheritance) icon next to each data model object and variable to [cancel inheritance](#cancelinheritance) and to be able to edit them.
 
 1. To add additional components in the Web channel, with the Web channel selected, tap **[!UICONTROL Components]**. Drag-and-drop components in the web channel of your Interactive Communication as required and proceed to configure them.
 
@@ -393,7 +393,7 @@ Tap the root panel in the Web template and tap **+** to add a **Table** componen
 
 #### Create a hyperlink for text in the table cell {#createhyperlinktable}
 
-1. Select the default text box in the table cell and tap ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit).
+1. Select the default text box in the table cell and tap ![](assets/edit.svg) (Edit).
 1. Select the text in the table cell and tap the Hyperlink icon.
 1. Specify the URL in the **Path** field.
 1. Tap ![](assets/done_icon.png) to save the hyperlink properties.
@@ -583,9 +583,9 @@ Tap the component to view the following options:
 * **Parent:** Select the parent of a component.
 * **View SOM Expression:** View the [SOM expression](../../forms/using/using-som-expressions-adaptive-forms.md) for the component.
 
-* **Group Objects in Panel:** Group the components in a panel to be able to perform operations on those components simultaneously. For details, see **[Group objects in Panel](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**.
+* **Group Objects in Panel:** Group the components in a panel to be able to perform operations on those components simultaneously. For details, see [Group objects in Panel](#groupobjectspanel).
 
-* **Cancel Inheritance:** [Cancel the inheritance](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) of the components within the target area to edit them.
+* **Cancel Inheritance:** [Cancel the inheritance](#cancelinheritance) of the components within the target area to edit them.
 
 ### Group objects in Panel {#groupobjectspanel}
 

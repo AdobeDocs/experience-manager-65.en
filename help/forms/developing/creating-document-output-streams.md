@@ -60,7 +60,9 @@ You can accomplish these tasks by using the Output service:
 * [Creating Search Rules](creating-document-output-streams.md#creating-search-rules)
 * [Flattening PDF Documents](creating-document-output-streams.md#flattening-pdf-documents)
 
-  ***Note**: For more information about the Output service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).*
+>[!NOTE]
+>
+>For more information about the Output service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Creating PDF Documents {#creating-pdf-documents}
 

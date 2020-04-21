@@ -67,5 +67,3 @@ In the AEM Forms app, the left swipe opens up a new task or Startpoint while rig
 1. Build and run the AEM Forms app. Now you can open a using with left-swipe and right-swipe.
 
 Similarly, you can make changes in other views for various combinations of gestures, HTML elements, and functions.
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

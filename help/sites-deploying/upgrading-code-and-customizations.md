@@ -147,7 +147,7 @@ ContextHub configurations are affected by an upgrade. Instructions on how to rec
 
 ### Workflow Customizations {#workflow-customizations}
 
-It is a common practice to update modify out of the box workflows to add or remove un-needed functionality. A common workflow that is customized is the DAM Update Asset workflow. All workflows required for a custom implementation should be backed up and stored in version control as they may be overwritten during an upgrade.
+It is a common practice to update modify out of the box workflows to add or remove un-needed functionality. A common workflow that is customized is the [!UICONTROL DAM Update Asset] workflow. All workflows required for a custom implementation should be backed up and stored in version control as they may be overwritten during an upgrade.
 
 ### Editable Templates {#editable-templates}
 

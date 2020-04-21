@@ -30,5 +30,3 @@ Packages delivered for AEM Forms workspace:
 
 * `adobe-lc-workspace-pkg-<version>.zip`: It is CRX package, that is, it can be deployed in CRX using the Package Manager.
 * `adobe-lc-workspace-<version>-src.zip`: It is an archive that contains complete code of AEM Forms workspace and scripts to create the deploy packages--Ship, Debug, and Dev packages.
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

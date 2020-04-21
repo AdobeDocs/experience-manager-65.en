@@ -39,5 +39,3 @@ HTML5 forms support all the default keystrokes and gestures of Voice over. For m
 * **(Internal Explorer 9 only)** The Date Picker control in HTML5 forms is not fully accessible with keyboard. In the Date Picker control, if you press Up/Down keys multiple times, the Date Picker control closes and focus moves to next/last field.
 
 * VoiceOver is unable to detect arrow keys on the date widget on iPad safari.
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

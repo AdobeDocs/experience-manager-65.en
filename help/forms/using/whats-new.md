@@ -29,7 +29,7 @@ For information about configuring and using transaction reports, see [Transactio
 
 **Define data display patterns**
 
-Interactive Communication authors can now define [data display patterns](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146) for fields, variables, and form data model elements. For example, date, currency, or phone formats.
+Interactive Communication authors can now define [data display patterns](create-interactive-communication.md#datadisplaypatterns) for fields, variables, and form data model elements. For example, date, currency, or phone formats.
 
 **Use new types of charts**
 
@@ -81,7 +81,7 @@ You can [sort any column of an Adaptive Form table](../../forms/using/adaptive-f
 
 #### Restrict the availability of Adaptive Forms templates to specific paths {#restrict-the-availability-of-adaptive-forms-templates-to-specific-paths}
 
-Adaptive forms has added support for the cq:allowedPaths property. The property [restricts availability of Adaptive Forms templates to specific paths](../../forms/using/creating-adaptive-form.md#main-pars-text).
+Adaptive forms has added support for the cq:allowedPaths property. The property [restricts availability of Adaptive Forms templates to specific paths](creating-adaptive-form.md#adaptive-form-templates).
 
 #### Add check boxes to the Adaptive Form dynamically {#add-check-boxes-to-the-adaptive-form-dynamically}
 

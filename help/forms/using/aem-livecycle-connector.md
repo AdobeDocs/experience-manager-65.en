@@ -485,5 +485,3 @@ The following services are available:
   <version>11.0.0</version>
 </dependency>
 ```
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)
