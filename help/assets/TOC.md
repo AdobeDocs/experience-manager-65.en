@@ -30,7 +30,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Configuring Dynamic Media - Scene7 mode](config-dms7.md)
     + [Configuring Dynamic Media - Hybrid mode](config-dynamic.md)
     + [Troubleshooting Dynamic Media - Scene7 mode](troubleshoot-dms7.md)
-    + [Migrating from Dynamic Media - Hybrid mode to Dynamic Media - S7 mode](migrate-from-hybrid-to-dms7)
+    + [Migrating from Dynamic Media - Hybrid mode to Dynamic Media - S7 mode](migrate-from-hybrid-to-dms7.md)
     + [Managing Dynamic Media assets](managing-assets.md)
     + [Best practices for optimizing the quality of your images](best-practices-for-optimizing-the-quality-of-your-images.md)
     + [Managing Dynamic Media Viewer Presets](managing-viewer-presets.md)
