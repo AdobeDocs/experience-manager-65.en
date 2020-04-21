@@ -20,7 +20,7 @@ Additional key differences between Dynamic Media&ndash;Hybrid and Dynamic Media&
 * Creation and storage of image renditions.
 * Cloud configuration and credentials (provisioning). 
 
-Two options are available when moving from Dynamic Media&ndash;Hybrid to Dynamic Media&ndash;Scene7. The first option is to simply provision a new instance of Dynamic Media&ndash;Scene7 on AEM. The second option is to migrate your existing instance of Dynamic Media&ndash;Hybrid to Dynamic Media&ndash;Scene7. This option outlines-in table form below-the steps and considerations for you to make during the move.
+Two options are available when you move from Dynamic Media&ndash;Hybrid to Dynamic Media&ndash;Scene7. The first option is to simply provision a new instance of Dynamic Media&ndash;Scene7 on AEM. The second option is to migrate your existing instance of Dynamic Media&ndash;Hybrid to Dynamic Media&ndash;Scene7. This option outlines-in table form below-the steps and considerations for you to make during the move.
 
 >[!IMPORTANT]
 >
