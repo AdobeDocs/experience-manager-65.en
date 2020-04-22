@@ -1,6 +1,6 @@
 ---
-title: Manage Adobe Stock assets in AEM Assets
-description: Search, fetch, license, and manage Adobe Stock assets from within AEM. Use the licensed assets as any other digital asset.
+title: Manage [!DNL Adobe Stock] assets in [!DNL Adobe Experience Manager Assets].
+description: Search, fetch, license, and manage [!DNL Adobe Stock] assets from within Adobe Experience Manager. Use the licensed assets as any other digital asset.
 contentOwner: AG
 ---
 

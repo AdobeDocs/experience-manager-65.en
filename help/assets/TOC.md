@@ -80,7 +80,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Supported file formats](assets-formats.md)
     + [Search facets](search-facets.md)
     + [Manage metadata for assets](metadata.md)
-    + [[XMP writeback to renditions](xmp-writeback.md)
+    + [XMP writeback to renditions](xmp-writeback.md)
     + [Asset link sharing](link-sharing.md)
     + [Asset reports](asset-reports.md)
     + [Enhanced Smart Tags](enhanced-smart-tags.md)
