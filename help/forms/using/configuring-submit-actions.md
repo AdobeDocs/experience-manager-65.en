@@ -101,7 +101,9 @@ The **Send Email** submit action sends an email to one or more recipients on suc
 
 The **Send PDF via Email** submit action sends an email with a PDF containing form data, to one or more recipients on successful submission of the form.
 
-**Note:** This submit action is available for XFA-based adaptive forms and XSD-based adaption forms that have the Document of Record template.
+>[!NOTE]
+>
+>This submit action is available for XFA-based adaptive forms and XSD-based adaption forms that have the Document of Record template.
 
 ## Invoke a forms workflow {#invoke-a-forms-workflow}
 

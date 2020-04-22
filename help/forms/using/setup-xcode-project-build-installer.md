@@ -70,7 +70,7 @@ For detailed information about Code Signing and adding devices to the iOS Provis
 1. Extract the archive in the `[User_Home]/Projects/[your-project]`directory.
 1. Navigate to the ` [User_Home]/Projects/ `[your-project]`/adobe-lc-mobileworkspace-src-[version]/ios` directory.
 1. Open the `AEM Forms.xcodeproj` project in Xcode.
-1. Click **AEM Forms**, under **TARGETS**, select **AEM Forms**. Select the **Build Settings **tab, locate the **Code Signing Entitlement** section, and in Debug and Release fields do one of the following:
+1. Click **AEM Forms**, under **TARGETS**, select **AEM Forms**. Select the **Build Settings** tab, locate the **Code Signing Entitlement** section, and in Debug and Release fields do one of the following:
 
     * Leave the fields unspecified to build a standard Mobile Workspace app
     * Specify the fields to as explained in [Building a Secure AEM Forms app for iOS](/help/forms/using/building-secure-mobile-workspace-app.md) to build a secure AEM Forms app.
@@ -148,7 +148,7 @@ You need to archive the Xcode project to build the installer (an .ipa file) and 
 1. Select **Save for Enterprise or Ad-Hoc Deployment** as the method of distribution and click **Next**.
 1. Select the appropriate **Code Signing Identity** and click **Next**. Click **Allow** to apply the signature.
 1. Provide name of the app and select **Save for Enterprise Distribution**.
-1. Provide the **Application URL** for the app. For example, to host the app on a CRX server, provide URL `https://[LC_host]:[port]/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
+1. Provide the **Application URL** for the app. For example, to host the app on a CRX server, provide URL `https://[LC_host]:'port'/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
 1. In the **Title** field, specify AEM Forms.
 1. Click **Save** and close Xcode.
 

@@ -25,7 +25,9 @@ In this sample orchestration, an employee submits a leave application form. The 
     * reason
     * duration
 
-   **Note**: This renderer is the summary page template.
+   >[!NOTE]
+   >
+   >This renderer is the summary page template.  
 
    The following sample code for this renderer is contained in:
 
@@ -55,9 +57,9 @@ In this sample orchestration, an employee submits a leave application form. The 
     1. Create a process **create PTO summary** and use this as a subprocess before the **Assign Task** operation in your orchestration.
     1. Define **employeeName**, **employeeID**, **ptoReason**, **totalDays**, and **nodeName** as input variables in your new process. These variables will be passed as submitted form data.
 
-       Also define an output variable **ptoNodePath **which will be used while setting the summary Url.
+       Also define an output variable **ptoNodePath** which will be used while setting the summary Url.
 
-    1. In the **create PTO summary** process, use the **set value** component to set the input details in a **nodeProperty **(**nodeProps**) map.
+    1. In the **create PTO summary** process, use the **set value** component to set the input details in a **nodeProperty**(**nodeProps**) map.
 
        The keys in this map should be the same as the keys defined in your HTML renderer in the previous step.
 
@@ -80,5 +82,3 @@ In this sample orchestration, an employee submits a leave application form. The 
 In AEM Forms workspace, when you open a task, the summary Url accesses the CRX node, and the HTML renderer displays the summary.
 
 The summary layout can be changed without modifying the process. The HTML renderer displays the summary appropriately.
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

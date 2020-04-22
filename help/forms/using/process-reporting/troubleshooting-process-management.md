@@ -27,5 +27,3 @@ While you are still logged in to Process Reporting:
 
 1. Clear the browser cache.
 1. Refresh the browser screen.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

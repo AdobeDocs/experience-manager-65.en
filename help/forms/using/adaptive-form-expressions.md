@@ -42,16 +42,16 @@ Repeating panels are instances of a panel that are added or removed dynamically,
 
 In adaptive forms, you can write expressions to add behaviors such as dynamic show/hide fields and panels. You can also write expressions to add calculated fields, make fields read-only, validation logic, and many more. Adaptive forms support following expressions:
 
-* **[Access expressions](../../forms/using/adaptive-form-expressions.md#main-pars-header-4)**: to enable/disable a field.
-* **[Calculate expressions](../../forms/using/adaptive-form-expressions.md#p-calculate-expression-p)**: to auto-compute value of a field.
-* **[Click expression](../../forms/using/adaptive-form-expressions.md#p-click-expression-p)**: to handle actions on click event of a button.
-* **[Initialization Script](../../forms/using/adaptive-form-expressions.md#p-initialization-script-p):** perform an action on initialization of a field.
-* **[Options expression](../../forms/using/adaptive-form-expressions.md#p-options-expression-p)**: to dynamically fill a drop-down list.
+* **[Access expressions](#access-expression-enablement-expression)**: to enable/disable a field.
+* **[Calculate expressions](#calculate-expression)**: to auto-compute value of a field.
+* **[Click expression](#click-expression)**: to handle actions on click event of a button.
+* **[Initialization Script](#initialization-script):** perform an action on initialization of a field.
+* **[Options expression](#options-expression)**: to dynamically fill a drop-down list.
 * **[Summary expression](#summary)**: to dynamically compute the title of an accordion.
-* **[Validate expressions](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)**: to validate a field.
-* **[Value Commit Script](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p):** to change the components of a form after the value of a field is changed.
-* **[Visibility expression](../../forms/using/adaptive-form-expressions.md#p-visibility-expression-p)**: to control visibility of a field and panel.
-* **[Step completion expression](../../forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**: to prevent a user from going to next step of a wizard.
+* **[Validate expressions](#validate-expression)**: to validate a field.
+* **[Value Commit Script](#value-commit-script):** to change the components of a form after the value of a field is changed.
+* **[Visibility expression](#visibility-expression)**: to control visibility of a field and panel.
+* **[Step completion expression](#step-completion-expression)**: to prevent a user from going to next step of a wizard.
 
 ### Access Expression (Enablement Expression) {#access-expression-enablement-expression}
 
@@ -158,7 +158,7 @@ The Value Commit script is triggered when:
 
 >[!NOTE]
 >
->You can disable the execution of the Value Commit Script when the value of a field is changed programmatically. To do so, go to https://[server]:[port]/system/console/configMgr and change **Adaptive Forms Version for Compatibility** to **AEM Forms 6.1**. Thereafter, Value Commit Script is executed only when the user changes the value of the field from the UI.
+>You can disable the execution of the Value Commit Script when the value of a field is changed programmatically. To do so, go to https://'[server]:[port]'/system/console/configMgr and change **Adaptive Forms Version for Compatibility** to **AEM Forms 6.1**. Thereafter, Value Commit Script is executed only when the user changes the value of the field from the UI.
 
 ### Visibility Expression {#visibility-expression}
 

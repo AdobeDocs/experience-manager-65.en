@@ -14,7 +14,7 @@ discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 
 AEM Forms provides a REST-based search API that web developers can use to query and retrieve a set of forms that meets the search criteria. You can use APIs to search forms based on various filters. The response object contains form attributes, properties, and render end points of forms.
 
-To search forms using the REST API, send a GET request to the server at `https://[server]:[port]/libs/fd/fm/content/manage.json` with query parameters described below.
+To search forms using the REST API, send a GET request to the server at `https://'[server]:[port]'/libs/fd/fm/content/manage.json` with query parameters described below.
 
 ## Query parameters {#query-parameters}
 

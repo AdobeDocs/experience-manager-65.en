@@ -154,8 +154,8 @@ Moreover the console provides useful information about the versions:
 
 In the next example:
 
-* The **Shirts** versions are purged because their version age is greater than 2 days.
-* The **Tonga Fashions!** versions are purged because their number of versions is greater than 5.
+* The **[!DNL Shirts]** versions are purged because their version age is greater than 2 days.
+* The **[!DNL Tonga Fashions!]** versions are purged because their number of versions is greater than 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
@@ -199,13 +199,13 @@ Various log files are held on the file server where you installed AEM:
       Error messages (of varying levels of severity) are registered here.
 
     * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)
-      This log is only used if Dynamic Media is enabled. It provides statistics and analytical information used for analyzing behavior of the internal ImageServer process.
+      This log is only used if [!DNL Dynamic Media] is enabled. It provides statistics and analytical information used for analyzing behavior of the internal ImageServer process.
 
     * `request.log`
       Each access request is registered here together with the response.
 
     * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)
-      This log is only used if Dynamic Media is enabled. The s7access log records each request made to Dynamic Media through `/is/image` and `/is/content`.
+      This log is only used if [!DNL Dynamic Media] is enabled. The s7access log records each request made to [!DNL Dynamic Media] through `/is/image` and `/is/content`.
 
     * `stderr.log`
       Holds error messages, again of varying levels of severity, generated during startup. By default the log level is set to `Warning` ( `WARN`)
@@ -223,7 +223,7 @@ Various log files are held on the file server where you installed AEM:
 
 >[!NOTE]
 >
->The ImageServer and s7access logs are not included in the **Download Full **package that is generated from the **system/console/status-Bundlelist **page. For support purposes, if you have Dynamic Media issues, please also append the ImageServer and s7access logs when you contact Customer Support.
+>The ImageServer and s7access logs are not included in the **Download Full **package that is generated from the **system/console/status-Bundlelist **page. For support purposes, if you have [!DNL Dynamic Media] issues, please also append the ImageServer and s7access logs when you contact Customer Support.
 
 ### Activating the DEBUG Log Level {#activating-the-debug-log-level}
 
@@ -420,18 +420,18 @@ In certain circumstances you may want to create a custom log file with a differe
    >
    >So for example, at midnight of January 20th 2010 (or when the first log message after this occurs to be precise), ../logs/error.log will be renamed to ../logs/error.log.2010-01-20. Logging for the 21st of January will be output to (a new and empty) ../logs/error.log until it is rolled over at the next change of day.
    >
-   >      | `'.'yyyy-MM` |Rotation at the beginning of each month |
-   >      |---|---|
-   >      | `'.'yyyy-ww` |Rotation at the first day of each week (depends on the locale). |
-   >      | `'.'yyyy-MM-dd` |Rotation at midnight each day. |
-   >      | `'.'yyyy-MM-dd-a` |Rotation at midnight and midday of each day. |
-   >      | `'.'yyyy-MM-dd-HH` |Rotation at the top of every hour. |
-   >      | `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
+   >| `'.'yyyy-MM` |Rotation at the beginning of each month |
+   >|---|---|
+   >| `'.'yyyy-ww` |Rotation at the first day of each week (depends on the locale). |
+   >| `'.'yyyy-MM-dd` |Rotation at midnight each day. |
+   >| `'.'yyyy-MM-dd-a` |Rotation at midnight and midday of each day. |
+   >| `'.'yyyy-MM-dd-HH` |Rotation at the top of every hour. |
+   >| `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
    >
-   >      Note: When specifying a time/date:
-   >      1. You should "escape" literal text within a pair of single quotes (' ');
-   >      this is to avoid certain characters being interpreted as pattern letters.
-   >      1. Only use characters allowed for a valid file name anywhere in the option.
+   >Note: When specifying a time/date:
+   > 1. You should "escape" literal text within a pair of single quotes (' ');
+   >this is to avoid certain characters being interpreted as pattern letters.
+   > 1. Only use characters allowed for a valid file name anywhere in the option.
 
 1. Read your new log file with your chosen tool.
 
@@ -1097,7 +1097,7 @@ If your system is running out of memory this can be seen in various ways, includ
 
 In these cases check:
 
-* the JVM settings used to [start AEM](/help/sites-deploying/deploy.md#getting-started)
+* The JVM settings used to [start AEM](/help/sites-deploying/deploy.md#getting-started)
 * The Knowledge Base:
 
     * [Analyze Memory Problems](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)

@@ -40,7 +40,9 @@ You can accomplish these tasks using the Signature service:
 * Validate all digital signatures located in a PDF document. (See [Verifying Multiple Digital Signatures](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
 * Remove a digital signature from a signature field. (See [Removing Digital Signatures](digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
-  ***Note**: For more information about the Signature service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).*
+>[!NOTE]
+>
+> For more information about the Signature service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)..
 
 ## Adding Signature Fields {#adding-signature-fields}
 

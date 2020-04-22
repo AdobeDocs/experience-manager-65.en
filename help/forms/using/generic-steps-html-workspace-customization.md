@@ -17,7 +17,7 @@ docset: aem65
 
 The generic steps to perform any customizations are:
 
-1. Log in to CRXDE Lite by accessing `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Log in to CRXDE Lite by accessing `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Create a folder named `ws`at `/apps`, if it does not exist. Click **[!UICONTROL Save All]**.
 1. Browse to `/apps/ws`, and navigate to the **[!UICONTROL Access Control]** tab.
 1. In the **[!UICONTROL Access Control]** list, click **[!UICONTROL +]** to add a new entry. Click **[!UICONTROL +]** again.
@@ -94,6 +94,4 @@ The generic steps to perform any customizations are:
 
 1. Click **[!UICONTROL Save All]**, clear cache, and refresh AEM Forms workspace.
 
-   Access the URL `https://[server]:[port]/lc/ws` and log in with administrator/password credentials. The browser redirects to `https://[server]:[port]/lc/apps/ws/index.html`.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)
+   Access the URL `https://'[server]:[port]'/lc/ws` and log in with administrator/password credentials. The browser redirects to `https://'[server]:[port]'/lc/apps/ws/index.html`.

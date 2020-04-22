@@ -128,8 +128,6 @@ For complete list of features, key highlights, key features introduced in previo
 
 * Assets detail page of PDF assets do not show action buttons except To Collection and Add Rendition buttons in Experience Manager running on Dynamic Media Scene7 run mode (CQ-4286705).
 
-* Assets greater than 2GB can now be uploaded in Dynamic Media-Scene7 (CQ-4286561).
-
 * Assets take too long to process through the batch upload process of Scene7 (CQ-4286445).
 
 * Save button does not import Remote Set when user has not made any changes in Set Editor in Dynamic Media Client (CQ-4285690).
@@ -176,6 +174,8 @@ For complete list of features, key highlights, key features introduced in previo
 
 * An error message displays while processing LiveFyre related items (FYR-12420).
 
+* ReportSuitesServlet is vulnerable to SSRF (NPR-32156).
+
 ### WCM Template Editor {#wcm-template-editor-6540}
 
 * In editable templates structure mode, allowed components list in layout container is not displaying link button component (CQ-4282099).
@@ -189,6 +189,13 @@ For complete list of features, key highlights, key features introduced in previo
 * Target cloud configuration fails with the error get mboxes request failed (CQ-4279880).
 
 ### Brand Portal {#assets-brand-portal}
+
+* Brand Portal users are not able to publish contribution folder assets to AEM Assets on upgrading to Adobe I/O on AEM 6.5.4 (CQDOC-15655). 
+
+  This issue will be fixed in the next service pack AEM 6.5.5. 
+  
+  For immediate fix on AEM 6.5.4, it is recommended to [download the hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) and install on your author instance.
+
 
 * Metadata schema drop-down values are not visible in asset properties(CQ-4283287).
 
@@ -334,6 +341,20 @@ To use UberJar in a Maven project, refer to the article, [How to use UberJar](/h
       <groupId>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
       <version>6.5.4</version>
+      <classifier>apis</classifier>
+      <scope>provided</scope>
+</dependency>
+```
+
+The updated UberJar version for 6.5.4.0 that includes the **com.fasterxml.jackson.core.async** package is available at [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4-1.0/).
+
+If you use the updated version of UberJar, include the following dependency in your project POM:
+
+```shell
+<dependency>
+      <groupId>com.adobe.aem</groupId>
+      <artifactId>uber-jar</artifactId>
+      <version> 6.5.4-1.0</version>
       <classifier>apis</classifier>
       <scope>provided</scope>
 </dependency>

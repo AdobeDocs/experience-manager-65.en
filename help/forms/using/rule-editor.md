@@ -308,7 +308,7 @@ To define a rule based on a custom function, select **Function Output** from the
 
 ![Custom Functions](assets/custom_functions_set_options_new.png)
 
-To create a custom function, see [custom functions in rule editor](../../forms/using/rule-editor.md#main-pars-header-296220653).
+To create a custom function, see [custom functions in rule editor](#custom-functions).
 
 To define a rule based on a form data model:
 
@@ -351,7 +351,7 @@ The Form Objects tab shows a hierarchical view of all objects contained in the a
 
 The form objects that have one or more valid rules applied are marked with a Green dot. If any of the rules applied to a form object is invalid, the form object is marked with a Yellow dot.
 
-The Functions tab includes a set of built-in functions, such as Sum Of, Min Of, Max Of, Average Of, Number Of, and Validate Form. You can use these functions to compute values in repeatable panels and table rows and use them in action and condition statements when writing rules. You can, however, create [custom functions](../../forms/using/rule-editor.md#custom-functions) too.
+The Functions tab includes a set of built-in functions, such as Sum Of, Min Of, Max Of, Average Of, Number Of, and Validate Form. You can use these functions to compute values in repeatable panels and table rows and use them in action and condition statements when writing rules. You can, however, create [custom functions](#custom-functions) too.
 
 ![The Functions tab](assets/functions.png)
 
@@ -377,7 +377,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 AEM Forms tracks the rule editor mode you used last to write a rule. When you launch the rule editor next time, it opens in that mode. However, you can also configure a default mode to open the rule editor in the specified mode. To do so:
 
-1. Go to AEM web console at https://[host]:[port]/system/console/configMgr.
+1. Go to AEM web console at `https://[host]:[port]/system/console/configMgr`.
 1. Click to edit **[!UICONTROL Adaptive Form Configuration Service]**.
 1. choose **[!UICONTROL Visual Editor]** or **[!UICONTROL Code Editor]** from the **[!UICONTROL Default Mode for Rule Editor]** drop-down
 

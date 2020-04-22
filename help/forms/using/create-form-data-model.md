@@ -67,7 +67,7 @@ Do the following to configure your MySQL database:
         * **Datasource name:** You can specify any name. For example, specify **WeRetailMySQL**.
         * **DataSource service property name**: Specify name of the service property containing the DataSource name. It is specified while registering the data source instance as OSGi service. For example, **datasource.name**.
         * **JDBC driver class**: Specify Java class name of the JDBC driver. For MySQL database, specify **com.mysql.jdbc.Driver**.
-        * **JDBC connection URI**: Specify connection URL of the database. For MySQL database running on port 3306 and schema weretail, the URL is: `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+        * **JDBC connection URI**: Specify connection URL of the database. For MySQL database running on port 3306 and schema weretail, the URL is: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
         * **Username:** Username of the database. It is required to enable JDBC driver to establish a connection with the database.
         * **Password:** Password of the database. It is required to enable JDBC driver to establish a connection with the database.
         * **Test on Borrow:** Enable the **Test on Borrow** option.
@@ -83,7 +83,7 @@ Do the following to configure your MySQL database:
 
 ## Step 2: Create form data model {#create-fdm}
 
-AEM Forms provides an intuitive user interface to [create a form data mode](../../forms/using/data-integration.md#main-pars-header-1524967585)l from configured data sources. You can use multiple data sources in a form data model. For our use case, we will use the configured MySQL data source.
+AEM Forms provides an intuitive user interface to [create a form data model](data-integration.md) from configured data sources. You can use multiple data sources in a form data model. For our use case, we will use the configured MySQL data source.
 
 Do the following to create form data model:
 

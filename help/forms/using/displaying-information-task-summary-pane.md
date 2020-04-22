@@ -26,7 +26,7 @@ AEM Forms workspace allows you to display a web page of your choice in the Task 
 1. Configure the Task Summary URL field. You can specify a literal value, a template, a variable, or an XPath expression.
 1. An example of displaying the information on Task Summary page is below.
 
-    * Log in to CRXDE Lite environment at `https://[server]:[port]/lc/crx/de`.
+    * Log in to CRXDE Lite environment at `https://'[server]:[port]'/lc/crx/de`.
     * `Create a node`**SampleSummary** ` under `/content` with type `nt:unstructured`. In the properties of this node, add `sling:resourceType` of type String and value `SampleSummary`. In the Access Control List of this node, add an entry for `PERM_WORKSPACE_USER` allowing `jcr:read` privileges.`
     * `Create a folder`**SampleSummary** under `/apps`. In the Access Control List of `/apps/SampleSummary`, add an entry for `PERM_WORKSPACE_USER` allowing `jcr:readprivileges`.
     * `Create a file `html.esp` at `/apps/SampleSummary`. For example, add the following lines in `html.esp`.`
@@ -46,5 +46,3 @@ AEM Forms workspace allows you to display a web page of your choice in the Task 
 
     * Set the value of task summary url as `/lc/content/SampleSummary.html` in Assign Task step.
     * When the task associated with this Assign Task step is opened in AEM Forms workspace, the `html.esp` at `/apps/SampleSummary` is rendered in task summary pane.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

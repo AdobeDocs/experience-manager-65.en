@@ -14,12 +14,12 @@ discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 
 The default installation and settings of AEM Forms allow for only one AEM Forms workspace to be available on the server. However, you may need to host two different instances of AEM Forms workspace on a single AEM Forms server. The two instances are accessbile by different URLs.
 
-AEM Forms administrators customize the workspace to create two different URLs and make two workspaces available on the same server. In this customization article, we assume the two workspaces are accessible at `https://[server]:[port]/lc/ws` and `https://[server]:[port]:/lc/ws2`.
+AEM Forms administrators customize the workspace to create two different URLs and make two workspaces available on the same server. In this customization article, we assume the two workspaces are accessible at `https://'[server]:[port]'/lc/ws` and `https://'[server]:[port]':/lc/ws2`.
 
 Follow these steps to configure AEM Forms workspace.
 
 1. Install the dev package of AEM Forms workspace on your server. See [dev package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), for instructions to create it.
-1. Login to CRXDE Lite as an administrator, by accessing `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Login to CRXDE Lite as an administrator, by accessing `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Copy node ws at /content and paste at /content. Rename node to ws2. Click **[!UICONTROL Save all]**. In properties of this node, change value of `sling:resourceType` to ws2. Click **[!UICONTROL Save all]**.
 
 1. Copy folder ws from /libs and paste at /apps. Rename the folder to ws2. Click **[!UICONTROL Save all]**.
@@ -88,5 +88,3 @@ Follow these steps to configure AEM Forms workspace.
 1. In properties of `ws2`, change value of `sling:redirect` to `content/ws2`.
 
 1. Change value of `sling:match` to `^[^/\||]/[^/\||]/ws2$`.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

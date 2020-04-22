@@ -51,7 +51,7 @@ Once you analyze the layout required to create your Interactive Communication, y
 
 >[!NOTE]
 >
->Add content to the Print channel of the Interactive Communication instead of adding content to the subform component in the XDP template. Add content to the target areas in the Print channel using [document fragments, charts, images](../../forms/using/create-interactive-communication.md#main-pars-header-741471925), and layout fragments.
+>Add content to the Print channel of the Interactive Communication instead of adding content to the subform component in the XDP template. Add content to the target areas in the Print channel using [document fragments, charts, images](create-interactive-communication.md#step2), and layout fragments.
 
 Perform the following steps to use subform in an XDP template:
 
@@ -82,7 +82,7 @@ Perform the following steps to use subform in an XDP template:
     1. Specify a name for the subform in the **Name** field.
     1. Select **No data binding** from the **Data Binding** drop-down list.
 
-   Repeat steps 2 to 5 to add more subforms to the XDP template. Add [text, document fragments, images, and charts](../../forms/using/create-interactive-communication.md#main-pars-header-741471925) to the target areas only while authoring the Interactive Communication.
+   Repeat steps 2 to 5 to add more subforms to the XDP template. Add [text, document fragments, images, and charts](create-interactive-communication.md#step2) to the target areas only while authoring the Interactive Communication.
 
 1. Select **File** &gt; **Save As** to save the file on the local file system:
 
@@ -114,7 +114,7 @@ Use the Table component in Forms Designer to create layout fragments and then us
 
 >[!NOTE]
 >
->Enter text in the table cells or [create binding with the form data model objects](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) only while authoring the Interactive Communication.
+>Enter text in the table cells or [create binding with the form data model objects](create-interactive-communication.md#step2) only while authoring the Interactive Communication.
 
 Perform the following steps to use the Table component in the XDP template using Forms Designer:
 
@@ -133,7 +133,7 @@ Perform the following steps to use the Table component in the XDP template using
 
 1. Select the name of the row from the left pane and select **Object** &gt; **Binding** &gt; **Repeat Row for Each Data Item**. Perform this step to ensure that if a binding is created between the table cells of this row with form data model objects of collection type, the table row is automatically repeated for each data item available in the database.
 
-   Enter text in the table cells or [create binding with the form data model objects](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) only while authoring the Interactive Communication.
+   Enter text in the table cells or [create binding with the form data model objects](create-interactive-communication.md#step2) only while authoring the Interactive Communication.
 
 1. Select **File** &gt; **Save As** to save the file on the local file system:
 

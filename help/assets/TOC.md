@@ -8,7 +8,7 @@ user-guide-title: AEM 6.5 Assets User Guide
 # AEM 6.5 Assets User Guide {#assets}
 
 + [Assets user guide](home.md)
-+ [AEM 6.5 Assets release notes](../release-notes/assets.md)
++ [AEM 6.5 Assets release notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [About DAM](assets.md)
 + [Best practices for assets](best-practices-for-assets.md)
 + Use AEM Assets {#using}
@@ -19,7 +19,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Previewing 3D assets](previewing-3d-assets.md)
     + [Review folder assets and collections](bulk-approval.md)
     + [Activity stream in timeline](activity-stream.md)
-    + [Apply workflows to assets](assets-workflow.md)
+    + [Process assets](assets-workflow.md)
     + [Add image maps](image-maps.md)
     + [Reuse assets using MSM](reuse-assets-using-msm.md)
     + [Connected Assets with AEM Sites](use-assets-across-connected-assets-instances.md)
@@ -30,6 +30,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Configuring Dynamic Media - Scene7 mode](config-dms7.md)
     + [Configuring Dynamic Media - Hybrid mode](config-dynamic.md)
     + [Troubleshooting Dynamic Media - Scene7 mode](troubleshoot-dms7.md)
+    + [Migrating from Dynamic Media - Hybrid mode to Dynamic Media - S7 mode](migrate-from-hybrid-to-dms7.md)
     + [Managing Dynamic Media assets](managing-assets.md)
     + [Best practices for optimizing the quality of your images](best-practices-for-optimizing-the-quality-of-your-images.md)
     + [Managing Dynamic Media Viewer Presets](managing-viewer-presets.md)

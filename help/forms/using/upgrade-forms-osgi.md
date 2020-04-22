@@ -34,11 +34,11 @@ Do the following to upgrade from AEM 6.3 Forms or AEM 6.4 Forms to AEM 6.5 Forms
 
        >[!NOTE]
        >
-       >After the server is up and running, a few AEM Forms bundles remain in install state. The number of bundles can vary for every installation. You can safely ignore the state these bundles. The bundles are listed at https://[server]:[port]/system/console/.
+       >After the server is up and running, a few AEM Forms bundles remain in install state. The number of bundles can vary for every installation. You can safely ignore the state these bundles. The bundles are listed at https://'[server]:[port]'/system/console/.
 
 1. Install AEM Forms add-on package. The steps are listed below:
 
-    1. Log in to the AEM server as an administrator and open the package share. The default URL of the package share is `https://[server]:[port]/crx/packageshare`.
+    1. Log in to the AEM server as an administrator and open the package share. The default URL of the package share is `https://'[server]:[port]'/crx/packageshare`.
     1. In package share, search **AEM 6.5 Forms add-on packages**, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded** appears next to the package.
 
        Alternately, you can also use the hyperlinks listed in [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) to manually download a package.
@@ -96,9 +96,9 @@ Do the following to upgrade from AEM 6.3 Forms or AEM 6.4 Forms to AEM 6.5 Forms
     * **Verify replication and reverse replication:** Publish, fill, and submit a few migrated forms. Verify the submitted data also.
     * **Verify access to admin and developer user interfaces:** Log in to AEM instance from an admin account and verify that you have access to the following URLs:
 
-      * `https://[server]:[port]/crx/packmgr`
-      * `https://[server]:[port]/crx/de`
-      * `https://[server]:[port]/aem/forms.html/content/dam/formsanddocuments`
+      * `https://'[server]:[port]'/crx/packmgr`
+      * `https://'[server]:[port]'/crx/de`
+      * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
 
    >[!NOTE]
    >

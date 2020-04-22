@@ -101,7 +101,9 @@ The alias contains all the parameters that an HSM or etoken requires. Perform th
     * **HSM Pin**: Specify the password required to access the device key.
     * **HSM Slot Id**: Specify a slot identifier of type integer. The slot ID is set on a client-by-client basis. If you register a second machine to a different partition (for example, HSMPART2 on the same HSM device), then slot 1 is associated with the HSMPART2 partition for the client.
 
-    **Note:** *While configuring Etoken, specify a numeric value for the HSM Slot Id field. A numeric value is required to get the Signatures operations working.*
+    >[!NOTE]
+    >
+    >While configuring Etoken, specify a numeric value for the HSM Slot Id field. A numeric value is required to get the Signatures operations working.
 
     * **Certificate SHA1**: Specify SHA1 value (thumbprint) of the public key (.cer) file for the credential you are using. Ensure that there are no spaces used in the SHA1 value. If you are using a physical certificate, then it is not required.
     * **HSM Device Type**: Select the manufacturer of the HSM (Luna or other) or eToken device.

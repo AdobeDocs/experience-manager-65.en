@@ -29,7 +29,7 @@ Data integration supports OAuth2.0, Basic Authentication, and API Key authentica
 
 You can configure relational databases using AEM Web Console Configuration. Do the following:
 
-1. Go to AEM web console at https://[server]:[host]/system/console/configMgr.
+1. Go to AEM web console at https://server:host/system/console/configMgr.
 1. Look for **[!UICONTROL Apache Sling Connection Pooled DataSource]** configuration. Tap to open the configuration in edit mode.
 1. In the configuration dialog, specify the details for the database you want to configure, such as:
 
@@ -45,7 +45,7 @@ You can configure relational databases using AEM Web Console Configuration. Do t
    >
    >    
    >    
-   >    1. Go to https://[server]:[port]/system/console/crypto.
+   >    1. Go to https://'[server]:[port]'/system/console/crypto.
    >    1. In the **[!UICONTROL Plain Text]** field, specify the password or any string to encrypt and click **[!UICONTROL Protect]**.
    >    
    >    
@@ -64,7 +64,7 @@ You can configure relational databases using AEM Web Console Configuration. Do t
 
 You can configure AEM user profile using User Profile Connector configuration in AEM Web Console. Do the following:
 
-1. Go to AEM web console at https://[server]:[host]/system/console/configMgr.
+1. Go to AEM web console at https://'[server]:[port]'system/console/configMgr.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
 1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties will be available for use in form data model. Use the following format to specify user profile properties:
 
@@ -83,7 +83,9 @@ You can configure AEM user profile using User Profile Connector configuration in
 
 ## Configure folder for cloud service configurations {#cloud-folder}
 
-**Note**: Configuration for cloud services folder is required for configuring cloud services for RESTful, SOAP, and OData services.
+>[!NOTE]
+>
+>Configuration for cloud services folder is required for configuring cloud services for RESTful, SOAP, and OData services.
 
 All cloud service configurations in AEM are consolidated in the `/conf` folder in AEM repository. By default, the `conf` folder contains the `global` folder where you can create cloud service configurations. However, you need to manually enable it for cloud configurations. You can also create additional folders in `conf` to create and organize cloud service configurations.
 

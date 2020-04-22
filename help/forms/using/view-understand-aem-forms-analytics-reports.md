@@ -46,7 +46,7 @@ When a user interacts with the form, the interactions are recorded and sent to A
 
 Perform the following steps to view analytics reports:
 
-1. Log in to the AEM portal at `https://[hostname]:[port]`
+1. Log in to the AEM portal at `https://[hostname]:'port'`
 1. Click **Forms &gt; Forms & Documents**.
 1. Select the form for which you want to view the analytics reports.
 1. Select **More &gt; Analytics Reports**.

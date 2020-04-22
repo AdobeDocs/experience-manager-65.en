@@ -22,7 +22,7 @@ The sample, discussed in this document, is a reference implementation of customi
 >
 >* The examples and configurations explained in this document are according to MySQL 5.6.24 and you must substitute them appropriately for your database system.
 >* Ensure that you have installed latest version of AEM Forms add-on package. For the list of available packages, see the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article.
->
+> * The sample package works only with Adaptive Forms submit actions.
 
 ## Set up and configure the sample {#set-up-and-configure-the-sample}
 
@@ -75,7 +75,9 @@ Perform the following steps, on all the author and publish instances, to install
 
     * In the Web Console Configuration, find and click Forms Portal Data Service Sample Implementation. You can change the values of data source and data table name.
 
-   **Note**: If you change the table names, provide them in the Form Portal configuration.
+    >[!NOTE]
+    >
+    >If you change the table names, provide them in the Form Portal configuration.   
 
 1. Leave other configurations as is and click **[!UICONTROL Save]**.
 
@@ -299,12 +301,12 @@ The sample implementation is now configured, which you can use to list your draf
 
 Perform the following steps,on all the author and publish instances, to install the mysql-connector-java-5.1.39-bin.jar file:
 
-1. Navigate to `https://[server]:[port]/system/console/depfinder` and search for com.mysql.jdbc package.
+1. Navigate to `https://'[server]:[port]'/system/console/depfinder` and search for com.mysql.jdbc package.
 1. In the Exported by column, check if the package is exported by any bundle.
 
    Proceed if the package is not exported by any bundle.
 
-1. Navigate to `https://[server]:[port]/system/console/bundles` and click **[!UICONTROL Install/Update]**.
+1. Navigate to `https://'[server]:[port]'/system/console/bundles` and click **[!UICONTROL Install/Update]**.
 1. Click **[!UICONTROL Choose File]** and browse to select the mysql-connector-java-5.1.39-bin.jar file. Also, select **[!UICONTROL Start Bundle]** and **[!UICONTROL Refresh Packages]** checkboxes.
 1. Click **[!UICONTROL Install or Update]**. Once complete, restart the server.
 1. (*Windows only*) Turn off the system firewall for your operating system.

@@ -173,7 +173,7 @@ Now, you can enable analytics for forms and generate an analytics report.
 
 ## Enabling analytics for a form or document {#enabling-analytics-for-a-form-or-document}
 
-1. Log in to AEM portal at `https://[hostname]:[port]`.
+1. Log in to AEM portal at `https://[hostname]:'port'`.
 1. Click **Forms &gt; Forms & Documents**, select a form or document, and click **Enable Analytics**. The analytics is enabled.
 
    ![Enabling analytics for a form or document](assets/enable-analytics-1.png)

@@ -47,7 +47,9 @@ The following Quick Starts are available for the Forms service:
 
 Application logic that uses the Forms service API is implemented as Java servlets. AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
 
-* **Note**: Quick starts located in Programming with v are based on the forms server being you are using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. (See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>[!NOTE]
+>
+>Quick starts located in Programming with v are based on the forms server being you are using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
   **Tip**: The Adobe Developer web site contains the following article that discusses how to create a ASP.NET application that invokes the Forms service and renders forms. See [Creating form rendering ASP.NET applications](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).
 
@@ -118,7 +120,7 @@ The following code example renders an interactive PDF form named *Loan.xdp* to a
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -143,9 +145,9 @@ The following code example renders an interactive PDF form named *Loan.xdp* to a
  
              //Specify URI values that are required to render a form
              URLSpec uriValues = new URLSpec();
-             uriValues.setApplicationWebRoot("https://[server]:[port]/FormsQS");
+             uriValues.setApplicationWebRoot("https://'[server]:[port]'/FormsQS");
              uriValues.setContentRootURI("repository:///");
-             uriValues.setTargetURL("https://[server]:[port]/FormsQS/HandleData");
+             uriValues.setTargetURL("https://'[server]:[port]'/FormsQS/HandleData");
  
              //Specify file attachments to attach to the form
              FileInputStream fileAttachment = new FileInputStream("C:\\rideau1.jpg");
@@ -259,7 +261,7 @@ The following code example renders a form named *Loan.xdp* at the client using t
      try{
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -282,9 +284,9 @@ The following code example renders a form named *Loan.xdp* at the client using t
  
          //Specify URI values required to render a form
          URLSpec uriValues = new URLSpec();
-         uriValues.setApplicationWebRoot("https://[server]:[port]/FormsServiceClientApp");
+         uriValues.setApplicationWebRoot("https://'[server]:[port]'/FormsServiceClientApp");
          uriValues.setContentRootURI("repository:///");
-         uriValues.setTargetURL("https://[server]:[port]/FormsServiceClientApp/HandleData");
+         uriValues.setTargetURL("https://'[server]:[port]'/FormsServiceClientApp/HandleData");
  
          //Invoke the renderPDFForm method to render
          //an interactive PDF form on the client
@@ -393,7 +395,7 @@ The following code example renders a Guide (deprecated) named *TLALifeClaim.xdp*
  
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -419,9 +421,9 @@ The following code example renders a Guide (deprecated) named *TLALifeClaim.xdp*
          //Specify URI values that are required to render a form
          //design located in the AEM Forms repository
          URLSpec uriValues = new URLSpec();
-         uriValues.setApplicationWebRoot("https://[server]:[port]/FormsQS");
+         uriValues.setApplicationWebRoot("https://'[server]:[port]'/FormsQS");
          uriValues.setContentRootURI("repository:///");
-         uriValues.setTargetURL("https://[server]:[port]/FormsQS/HandleData");
+         uriValues.setTargetURL("https://'[server]:[port]'/FormsQS/HandleData");
  
  
          //Invoke the renderFormGuide method
@@ -528,7 +530,7 @@ The following code example renders a form that is based on fragments. The name o
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -553,9 +555,9 @@ The following code example renders a form that is based on fragments. The name o
              //Specify URI values that are required to render a form
              //design based on fragments
              URLSpec uriValues = new URLSpec();
-             uriValues.setApplicationWebRoot("https://[server]:[port]/FormsServiceClientApp");
+             uriValues.setApplicationWebRoot("https://'[server]:[port]'/FormsServiceClientApp");
              uriValues.setContentRootURI("repository:///");
-             uriValues.setTargetURL("https://[server]:[port]/FormsServiceClientApp/HandleData");
+             uriValues.setTargetURL("https://'[server]:[port]'/FormsServiceClientApp/HandleData");
  
              //Invoke the renderPDFForm method and write the
              //results to a client web browser
@@ -661,7 +663,7 @@ The following code example renders a rights-enabled form to a client web browser
      try{
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -688,9 +690,9 @@ The following code example renders a rights-enabled form to a client web browser
  
          //Specify URI values required to render the form
          URLSpec uriValues = new URLSpec();
-         uriValues.setApplicationWebRoot("https://[server]:[port]/FormsQS");
+         uriValues.setApplicationWebRoot("https://'[server]:[port]'/FormsQS");
          uriValues.setContentRootURI("repository:///");
-         uriValues.setTargetURL("https://[server]:[port]/FormsQS/HandleData");
+         uriValues.setTargetURL("https://'[server]:[port]'/FormsQS/HandleData");
  
          //Render a rights-enabled PDF form
          FormsResult formOut = formsClient.renderPDFFormWithUsageRights(
@@ -800,7 +802,7 @@ The following code example renders an HTML form using the Forms service Java API
  
                  //Set connection properties required to invoke AEM Forms
                  Properties connectionProps = new Properties();
-                 connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://[server]:[port]");
+                 connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://'[server]:[port]'");
                  connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL","SOAP");
                  connectionProps.setProperty("DSC_SERVER_TYPE", "JBoss");
                  connectionProps.setProperty("DSC_CREDENTIAL_USERNAME", "administrator");
@@ -833,9 +835,9 @@ The following code example renders an HTML form using the Forms service Java API
  
                  //Specify URI values that are required to render a form
                  URLSpec uriValues = new URLSpec();
-                 uriValues.setApplicationWebRoot("https://[server]:[port]/FormsQS");
+                 uriValues.setApplicationWebRoot("https://'[server]:[port]'/FormsQS");
                  uriValues.setContentRootURI("repository:///");
-                 uriValues.setTargetURL("https://[server]:[port]/FormsQS/HandleSubmittedHTMLForm");
+                 uriValues.setTargetURL("https://'[server]:[port]'/FormsQS/HandleSubmittedHTMLForm");
  
                  //Specify file attachments
                  FileInputStream myForm = new FileInputStream("C:\\Attach1.txt");
@@ -962,7 +964,7 @@ The following code example renders an HTML form using the Forms service Client A
              try{
                  //Set connection properties required to invoke AEM Forms
                  Properties connectionProps = new Properties();
-                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
                  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
                  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
                  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -992,9 +994,9 @@ The following code example renders an HTML form using the Forms service Client A
  
                  //Specify URI values that are required to render a form
                  URLSpec uriValues = new URLSpec();
-                 uriValues.setApplicationWebRoot("https://[server]:[port]/FormsQS");
+                 uriValues.setApplicationWebRoot("https://'[server]:[port]'/FormsQS");
                  uriValues.setContentRootURI("repository:///");
-                 uriValues.setTargetURL("https://[server]:[port]/FormsQS/HandleData");
+                 uriValues.setTargetURL("https://'[server]:[port]'/FormsQS/HandleData");
  
                  //Specify file attachments
                  FileInputStream myForm = new FileInputStream("C:\\Attach1.txt");
@@ -1115,7 +1117,7 @@ The following code example renders an HTML form with a toolbar that is displayed
              try{
                  //Set connection properties required to invoke AEM Forms
                  Properties connectionProps = new Properties();
-                 connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://[server]:[port]");
+                 connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://'[server]:[port]'");
                  connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL","SOAP");
                  connectionProps.setProperty("DSC_SERVER_TYPE", "JBoss");
                  connectionProps.setProperty("DSC_CREDENTIAL_USERNAME", "administrator");
@@ -1147,9 +1149,9 @@ The following code example renders an HTML form with a toolbar that is displayed
  
                  //Specify URI values that are required to render a form
                  URLSpec uriValues = new URLSpec();
-                 uriValues.setApplicationWebRoot("https://[server]:[port]/FormsQS");
+                 uriValues.setApplicationWebRoot("https://'[server]:[port]'/FormsQS");
                  uriValues.setContentRootURI("repository:///");
-                 uriValues.setTargetURL("https://[server]:[port]/FormsQS/HandleData");
+                 uriValues.setTargetURL("https://'[server]:[port]'/FormsQS/HandleData");
  
                  //Specify file attachments
                  FileInputStream myForm = new FileInputStream("C:\\Attach1.txt");
@@ -1279,7 +1281,7 @@ The following code example handles a form that is submitted as XML. The content 
  
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1448,7 +1450,7 @@ The following code example handles a form that is submitted as PDF data. The con
  
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1601,7 +1603,7 @@ The following code example handles an HTML form that is submitted as XML data. T
  
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1772,7 +1774,7 @@ The following Java code example handles form data that is submitted as XML. Form
  
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -2193,7 +2195,7 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
   try {
    //Set connection properties required to invoke AEM Forms
    Properties connectionProps = new Properties();
-   connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+   connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
    connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL, ServiceC
    lientFactoryProperties.DSC_SOAP_PROTOCOL);
    connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
@@ -2210,9 +2212,9 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
    pdfFormRenderSpec.setCacheEnabled(new Boolean(true));
    //Specify URI values that are required to render a form
    URLSpec uriValues = new URLSpec();
-   uriValues.setApplicationWebRoot("https://[server]:[port]/FormsQS");
+   uriValues.setApplicationWebRoot("https://'[server]:[port]'/FormsQS");
    uriValues.setContentRootURI("repository:///");
-   uriValues.setTargetURL("https://[server]:[port]/FormsQS/HandleData");
+   uriValues.setTargetURL("https://'[server]:[port]'/FormsQS/HandleData");
    //Invoke the renderForm method
    FormsResult formOut = formsClient.renderPDFForm(
    formName, //formQuery
@@ -2306,7 +2308,7 @@ The following code example processes a form that contains a calculation script a
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -2423,7 +2425,7 @@ The following code example optimizes performance by setting the caching, standal
  
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -2448,9 +2450,9 @@ The following code example optimizes performance by setting the caching, standal
          //Specify URI values that are required to render a form
          //design located in the AEM Forms Repository
          URLSpec uriValues = new URLSpec();
-         uriValues.setApplicationWebRoot("https://[server]:[port]/FormsServiceClientApp");
+         uriValues.setApplicationWebRoot("https://'[server]:[port]'/FormsServiceClientApp");
          uriValues.setContentRootURI("repository:///");
-         uriValues.setTargetURL("https://[server]:[port]/FormsServiceClientApp/HandleData");
+         uriValues.setTargetURL("https://'[server]:[port]'/FormsServiceClientApp/HandleData");
  
          //Invoke the renderPDFForm method and write the
          //results to a client web browser
@@ -2553,7 +2555,7 @@ The following Java quick start renders an interactive PDF form that is based on 
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -2571,8 +2573,8 @@ The following Java quick start renders an interactive PDF form that is based on 
  
              //Specify URI values that are required to render a form
              URLSpec uriValues = new URLSpec();
-             uriValues.setApplicationWebRoot("https://[server]:[port]/FormsQS");
-             uriValues.setTargetURL("https://[server]:[port]/FormsQS/HandleData");
+             uriValues.setApplicationWebRoot("https://'[server]:[port]'/FormsQS");
+             uriValues.setTargetURL("https://'[server]:[port]'/FormsQS/HandleData");
  
              //Invoke the renderPDFForm method and pass the
              //form design by value
@@ -2667,7 +2669,7 @@ The following Java quick start retrieves the file Loan.xdp from Content Services
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");

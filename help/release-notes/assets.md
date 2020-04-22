@@ -27,7 +27,7 @@ Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Ex
 
 [!DNL Adobe Stock] service provides designers and businesses with access to millions of high-quality, curated, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets for all their creative projects.
 
-For more info, see [Use DNL Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
+For more info, see [Use [!DNL Adobe Stock] assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
 ![Preview Adobe Stock image and license from within Experience Manager Assets](assets/stock_image_preview_license_options.png)
 
@@ -61,7 +61,7 @@ In large enterprises the infrastructure required to create websites can be distr
 
 [!DNL Dynamic Media] provides enhanced rich-media authoring and delivery in [!DNL Experience Manager Assets] to drive cutting-edge experiences that are immersive and personalized. By uploading a single high-quality master asset and using our advanced cloud rendering and viewers, you can deliver any combination of renditions on-the-fly to support your organization’s media strategy.
 
-For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://marketing.adobe.com/resources/help/en_US/s7/release_notes/).
+For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ### 360 Video Support {#video-support}
 
@@ -73,7 +73,7 @@ You can now customize the thumbnails for your video assets using frames from the
 
 ### Accessibility Enhancements {#accessibility-enhancements}
 
-[!DNL Dynamic Media] viewers now support enhanced accessibility features like Aria-support, screen-readers, and Alt-text. For additional details see [Dynamic Media viewers Release Notes](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html).
+[!DNL Dynamic Media] viewers now support enhanced accessibility features like Aria-support, screen-readers, and Alt-text. For additional details see [Dynamic Media viewers Release Notes](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
 ## Search experience enhancement {#search-experience-enhancement}
 

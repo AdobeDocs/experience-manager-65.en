@@ -54,5 +54,3 @@ Category component displays the various categories of your tasks in the left pan
 ## Task component {#task-component}
 
 Tasks are displayed in the middle panel called the TaskList Component. To change its color, modify the style associated with .task selector in the style sheet.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

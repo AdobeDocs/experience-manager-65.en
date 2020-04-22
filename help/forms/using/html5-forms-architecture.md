@@ -108,7 +108,7 @@ HTML5 forms perform in-memory caching using LRU strategy. If cache strategy is s
 
 Configuration Service enables tuning the configuration parameters and cache settings for HTML5 forms.
 
-To update these settings, go to the CQ Felix Admin Console (available at https://&lt;[server]:[port]/system/console/configMgr), search for and select Mobile Forms Configuration.
+To update these settings, go to the CQ Felix Admin Console (available at https://&lt;'[server]:[port]'/system/console/configMgr), search for and select Mobile Forms Configuration.
 
 You can configure the cache size or disable the cache using configuration service. You can also enable debugging using Debug Options parameter. More information about debugging forms can be found at [Debugging HTML5 forms](/help/forms/using/debug.md).
 
@@ -183,4 +183,3 @@ As described above, the profile renderer JSP calls Forms Service via a sling inc
 
 HTML5 forms allow developers to create Profile and Profile Renderer to customize the appearance of the forms. For example, HTML forms allow developers to integrate forms in a panel or &lt;div&gt; section of an existing HTML portal.
 For more details on creating custom profiles, see [Creating a Custom Profile](/help/forms/using/custom-profile.md).
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

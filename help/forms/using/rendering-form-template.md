@@ -78,5 +78,3 @@ HTML5 forms support three methods for passing the render parameters. You can pas
 ### Submit Parameters {#submit-parameters}
 
 HTML5 forms submit data; execute server-sided scripts and web-services on AEM servers. For detailed information on parameters used to execute server-sided scripts and web-services on AEM servers, see [HTML5 forms Service Proxy](/help/forms/using/service-proxy.md).
-
-**[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)**

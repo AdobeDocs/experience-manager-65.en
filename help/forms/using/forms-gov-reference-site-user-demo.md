@@ -77,7 +77,7 @@ The following groups are also included:
    *https://&lt;aemserver&gt;:&lt;port&gt;/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
 1. **Adobe We.Gov Site**: *https://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html*
-1. **Adobe Inbox**: Located top menu bar [Bell icon] in AEM backend.
+1. **Adobe Inbox**: Located top menu bar [Bell icon](assets/bell.svg) in AEM backend.
 
    *https://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
 
@@ -113,7 +113,9 @@ Aya answers a few questions to confirm her eligibility by filling out a short ad
 
 1. Make a selection in each dropdown field.
 
-    1. Note: If the user earns more than $200,000/yr, they aren’t eligible.
+   >[!NOTE]
+   >
+   >If the user earns more than $200,000/yr, they aren’t eligible.  
 
 1. Click the “**Am I Eligible?**” button.
 1. Click the “**Apply Now**” button to proceed.

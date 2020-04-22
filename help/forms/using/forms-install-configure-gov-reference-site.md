@@ -37,19 +37,19 @@ This package contains cloud configuration which support the following platform v
 
 ### What does this package include {#what-does-this-package-include}
 
-The AEM Forms We.Gov demo package ( **we-gov-forms.pkg.all-&lt;version&gt;.zip **) comes as a package which includes several other subpackages and services. The package includes the following modules:
+The AEM Forms We.Gov demo package (**we-gov-forms.pkg.all-&lt;version&gt;.zip**) comes as a package which includes several other subpackages and services. The package includes the following modules:
 
-* **we-gov-forms.pkg.all-&lt;version&gt;.zip** -* Complete demo package*
+* **we-gov-forms.pkg.all-&lt;version&gt;.zip** - *Complete demo package*
 
     * **we-gov-forms.ui.apps-&lt;version&gt;.zip** *- Contains all components, client libraries, samples users, workflow models, etc.*
 
-        * **we-gov-forms.core-&lt;version&gt;.jar*** - Contains all OSGI services, custom workflow step implementation, etc.*
+        * **we-gov-forms.core-&lt;version&gt;.jar** - *Contains all OSGI services, custom workflow step implementation, etc.*
         
         * **core.wcm.components.all-2.0.4.zip** - *Collection of sample WCM components*
         
         * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *AEM Sites Grid layout package for Sites page column control*
 
-    * **we-gov-forms.ui.content-&lt;version&gt;.zip*** - Contains all of the content, pages, images, *forms, interactive communication assets, etc.
+    * **we-gov-forms.ui.content-&lt;version&gt;.zip** - *Contains all of the content, pages, images, forms, interactive communication assets, etc.*
     
     * **we-gov-forms.config.public-&lt;version&gt;.zip** - *Contains all of the default configuration nodes including placeholder cloud configurations to help avoid forms data model, and service binding issues.*
 
@@ -139,14 +139,14 @@ This section contains details and instructions on the post-deployment configurat
 1. Click “Save & Close” in the menu bar.
 1. Repeat steps 2-7 by searching for “**analytics**”, selecting the “**Analytics Administrators**” group, and adding the “**We.Gov Form Users**” group as a member.
 1. Repeat steps 2-7 by searching for “**forms users**”, selecting the “**forms-power-users**” group, and adding the “**We.Gov Form Users**” group as a member.
-1. Repeat steps 2-7 by searching for “**forms users**”, selecting the “**forms-users**” group, and this time adding the “** We.Gov Users** ” group as a member.
+1. Repeat steps 2-7 by searching for “**forms users**”, selecting the “**forms-users**” group, and this time adding the “**We.Gov Users**” group as a member.
 
 ### Email server configuration {#email-server-configuration}
 
 1. Review setup documentation [Configuring Email Notification](/help/sites-administering/notification.md)
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/system/console/configMgr*
-1. Locate and click on the **Day CQ Mail Service **service to configure.
+1. Locate and click on the **Day CQ Mail Service** service to configure.
 
    ![Configure Day CQ Mail Service](assets/day_cq_mail_service.jpg)
 
@@ -271,11 +271,11 @@ The steps detailed in this section are included to help you locate the Client Id
 1. Click on “Customizations” and “Developer Resources” near the bottom right.
 1. There you’ll find the Service Root URL: e.g
 
-* [https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/](https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/)*
+   *[https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/](https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/)*
 
 1. Details on the Refresh and Access Token URL are available here:
 
-* [https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app](https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app)*
+   *[https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app](https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app)*
 
 #### Testing the form data model {#testing-the-form-data-model}
 
@@ -407,7 +407,7 @@ This section includes instructions on customization of the demo.
 This demo package includes an OSGI service configuration file which controls the behavior of the WCM Filter service on the target Author server. This configuration makes the server operate in a disabled author mode (equivalent to ?wcmmode=disabled) in order to allow demonstration. To update this configuration and to enable authoring, perform the following steps:
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/system/console/configMgr*
-1. Locate and click on the **Day CQ WCM Filter **Service service to configure.
+1. Locate and click on the **Day CQ WCM Filter** Service service to configure.
 
    ![Day CQ WCM Filter](assets/day_cq_wcm_filter.jpg)
 
@@ -489,7 +489,7 @@ Adaptive forms can also be styled using the Style Editor or Theme editor:
 
 ### Workflow customization {#workflow-customization}
 
-The Enrollment Adaptive Form submit to an OSGI workflow for processing. This workflow can be found at* https://&lt;aemserver&gt;:&lt;port&gt;/conf/we-gov/settings/models/we-gov-process.html*.
+The Enrollment Adaptive Form submit to an OSGI workflow for processing. This workflow can be found at *https://&lt;aemserver&gt;:&lt;port&gt;/conf/we-gov/settings/models/we-gov-process.html*.
 
 Due to certain limitations, this workflow contains several scripts and custom OSGI workflow process steps. These workflow steps were created as generic steps and have not been created with configuration dialogues. At this time, configuration of the workflow steps relies on process arguments.
 

@@ -21,7 +21,7 @@ Assign task and Adobe Sign steps of [Forms-centric workflows on OSGi](/help/form
 
 ECMAScript is a scripting language. It is used for client-side scripting and server applications. Perform the following steps to dynamically select a user or a group using ECMAScript:
 
-1. Open CRXDE Lite. The URL is `https://[server]:[port]/crx/de/index.jsp`
+1. Open CRXDE Lite. The URL is `https://'[server]:[port]'/crx/de/index.jsp`
 1. Create a file with extension .ecma at the following path. If the path (node structure) does not exist, create it:
 
     * (Path for Assign Task step) `/apps/fd/dashboard/scripts/participantChooser`
@@ -152,8 +152,8 @@ You require [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-form
        <dependencies>
            <dependency>
                <groupId>com.adobe.aemfd</groupId>
-               <artifactId>aemfd-client-sdk-test</artifactId>
-               <version>4.0.70</version>
+               <artifactId>aemfd-client-sdk</artifactId>
+               <version>6.0.138</version>
            </dependency>
            <dependency>
                <groupId>com.adobe.granite</groupId>

@@ -80,7 +80,7 @@ You can configure throttling for Work Manager, so that work items are scheduled 
 
 **Add Java options to WebLogic**
 
-1. Start the WebLogic Administration Console by typing `https://`*[host name]* `:`*[port]* `/console` in a web browser.
+1. Start the WebLogic Administration Console by typing `https://[host name]:[port]/console` in a web browser.
 1. Type the user name and password that you created for the WebLogic Server domain and click Log Under Change Center, click Lock & Edit.
 1. Under Domain Structure, click Environment &gt; Servers and, in the right pane, click the managed server name.
 1. On the next screen, click the Configuration tab &gt; Server Start tab.

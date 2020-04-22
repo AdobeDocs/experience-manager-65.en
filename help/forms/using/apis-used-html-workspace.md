@@ -396,6 +396,3 @@ The following APIs are used in AEM Forms workspace.
   </tr>
  </tbody>
 </table>
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)
-

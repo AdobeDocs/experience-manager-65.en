@@ -11,7 +11,7 @@ docset: aem65
 
 ---
 
-# Previewing assets{#previewing-assets}
+# Previewing assets using the software interface {#previewing-assets}
 
 You can use Preview to see how a digital asset that you have uploaded looks when it is viewed by a customer in their own web browser. The default embedded, cross-device viewer that is assigned to the asset is used for the Preview.
 
@@ -28,7 +28,7 @@ Besides using the dedicated Preview feature for video, spin sets, and image sets
 
 To enable or disable viewer presets in the user interface, see [Managing Viewer Presets](/help/assets/managing-viewer-presets.md).
 
-**To preview assets**
+**To preview assets using the user interface**
 
 1. From **[!UICONTROL Adobe Experience Manager**, on the **[!UICONTROL Navigation** page, tap **[!UICONTROL Assets]**, then **[!UICONTROL Files]** to access assets.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View]**.
@@ -53,7 +53,7 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
         </ul> <p><strong>To preview asset in a particular viewer</strong></p>
         <ul>
         <li>Near the upper-left corner of the page, click the icon so the drop-down list appears. Click <strong>Viewers</strong> from the list, then select a viewer that you want to apply to the asset.</li>
-        </ul> <p>Use the <strong>+</strong> and <strong>- </strong>icons to increase or decrease the zoom of the selected image, respectively. Click <strong>Reset</strong> to return the image to the original zoom.<br /> If you are on a mobile device, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
+        </ul> <p>Use the <strong>+</strong> and <strong>&ndash;</strong> icons to increase or decrease the zoom of the selected image, respectively. Click <strong>Reset</strong> to return the image to the original zoom.<br /> If you are on a mobile device, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
       </tr>
       <tr>
       <td>Multimedia</td>
@@ -74,7 +74,7 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       <td><p><strong>To preview an asset in a particular viewer</strong></p>
         <ul>
         <li>Near the upper-left corner of the page, click the icon so the drop-down list appears. Click <strong>Viewers</strong> from the list, then select a viewer that you want to apply to the asset.</li>
-        </ul> <p>Use the <strong>+</strong> and <strong>- </strong>icons to increase or decrease the zoom of the selected image, respectively. Click <strong>Reset</strong> to return the image to the original zoom.<br /> If you are on a mobile device, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
+        </ul> <p>Use the <strong>+</strong> and <strong>&ndash;</strong> icons to increase or decrease the zoom of the selected image, respectively. Click <strong>Reset</strong> to return the image to the original zoom.<br /> If you are on a mobile device, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
       </tr>
       <tr>
       <td>Spin set</td>
@@ -83,7 +83,7 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       <td><p><strong>To preview an asset in a particular viewer</strong></p>
         <ul>
         <li>Near the upper-left corner of the page, click the icon so the drop-down list appears. Click <strong>Viewers</strong> from the list, then select a viewer that you want to apply to the asset.</li>
-        </ul> <p>Use the <strong>+</strong> and <strong>- </strong>icons to increase or decrease the zoom of the selected image, respectively. Click <strong>Reset</strong> to return the image to the original zoom.<br /> If you are on a mobile device, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
+        </ul> <p>Use the <strong>+</strong> and <strong>&ndash;</strong> icons to increase or decrease the zoom of the selected image, respectively. Click <strong>Reset</strong> to return the image to the original zoom.<br /> If you are on a mobile device, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
       </tr>
       <tr>
       <td>Mixed Media set</td>
@@ -92,7 +92,7 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       <td><p><strong>To preview an asset in a particular viewer</strong></p>
         <ul>
         <li>Near the upper-left corner of the page, click the icon so the drop-down list appears. Click <strong>Viewers</strong> from the list, then select a viewer that you want to apply to the asset.</li>
-        </ul> <p>Use the <strong>+</strong> and <strong>- </strong>icons to increase or decrease the zoom of the selected image, respectively. Click <strong>Reset</strong> to return the image to the original zoom.<br /> If you are on a mobile device, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
+        </ul> <p>Use the <strong>+</strong> and <strong>&ndash;</strong> icons to increase or decrease the zoom of the selected image, respectively. Click <strong>Reset</strong> to return the image to the original zoom.<br /> If you are on a mobile device, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
       </tr>
       <tr>
       <td>Carousel set</td>
@@ -113,7 +113,21 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
         </ul> <p><strong>To preview asset in a particular viewer</strong></p>
         <ul>
         <li>Near the upper-left corner of the page, tap the icon so the drop-down list appears. Select <strong>Viewers</strong>, then select a viewer that you want to apply to the asset.</li>
-        </ul> <p>Use the <strong>+</strong> and <strong>- </strong>icons to increase or decrease the zoom of the selected image, respectively. Click <strong>Reset</strong> to return the image to the original zoom.<br /> If you are on a mobile device, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
+        </ul> <p>Use the <strong>+</strong> and <strong>&ndash;</strong> icons to increase or decrease the zoom of the selected image, respectively. Click <strong>Reset</strong> to return the image to the original zoom.<br /> If you are on a mobile device, double-tap the image to zoom in by steps. When you reach maximum zoom, double-tap the image again to reset the zoom state. Drag across the image to pan.</p> </td>
       </tr>
     </tbody>
     </table>
+
+## Previewing assets using a keyboard {#keyboard-navigation-asset-preview}
+
+1. From the Assets user interface, navigate to a folder that contains an asset you want to preview.
+
+1. In the folder, press the `<Tab>` key or arrow keys on your keyboard to select the asset.
+
+1. Press `<Enter>` to open the selected asset in preview mode.
+
+1. Do any of the following: 
+   * To zoom in, press `<Tab>` to move focus to the zoom in (+) icon, then press `<Enter>` one or more times to zoom in incrementally. 
+   * To zoom out, press `<Tab>` to move focus to the zoom out (&ndash;) icon, then press `<Enter>` one or more times to zoom out incrementally.
+   * To move the view of a *zoomed* asset horizontally or vertically, press the respective arrow keys.
+   * Press `<Shift>` + `<Tab>` to reset the view and place focus back on the asset.

@@ -68,8 +68,8 @@ AEM forms application data resides in the GDS directory and the AEM forms databa
 The location of the GDS directory can be configured manually during the AEM forms installation process. If the location setting remains empty during installation, the location defaults to a directory under the application server installation as follows:
 
 * (JBoss) `[appserver root]/server/[type]/svcnative/DocumentStorage`
-* (WebLogic) `[appserverdomain]/[server]/adobe/DocumentServer/DocumentStorage`
-* (WebSphere) `[appserver root]/installedApps/adobe/[server]/DocumentStorage`
+* (WebLogic) `[appserverdomain]/'server'/adobe/DocumentServer/DocumentStorage`
+* (WebSphere) `[appserver root]/installedApps/adobe/'server'/DocumentStorage`
 
 ## Change the default GDS location {#change-the-default-gds-location}
 

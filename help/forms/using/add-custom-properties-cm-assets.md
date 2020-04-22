@@ -40,7 +40,7 @@ This scenario shows how you can add a custom property to all the asset types (te
 
 Complete the following steps to add a custom property to all the asset types and letters:
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. In the apps folder, create a folder named css with path/structure similar to the css folder (located in ccrui folder) using the following steps:
 
     1. Right-click the items folder at the following path and select **Overlay Node**:
@@ -183,7 +183,7 @@ This scenario shows how you can add a custom tab, Recipients, to all the asset t
 
 Using the following procedure, you can add a tab with a field to all your assets:
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. In the apps folder, create a folder named cmmetadataproperties with path/structure similar to the cmmetadataproperties folder (located in content folder) using the following steps:
 
     1. Right-click the cmmetadataproperties folder at the following path and select **Overlay Node**:
@@ -388,7 +388,7 @@ For example, only to the text assets, you want to add a property, Location of re
 
 To add a property to an asset type, complete the following steps:
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. To create a tab in an asset type (such as Text), create the following folder structure in the apps folder:
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items`
@@ -582,7 +582,7 @@ After you have added a custom property to Correspondence Management assets, you 
 
 Complete the following steps to display the custom property in the Correspondence Management's asset list UI:
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. Create the following folder structure in the apps folder:
 
    `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns`
@@ -761,7 +761,7 @@ To include the custom properties in search, you need to allow indexing of custom
 
 To allow indexing of custom properties, complete the following steps:
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. Go to `/oak:index/cmLucene`and add a node named **aggregates** under it.
 
     1. Right click the cmLucene folder and select **Create** &gt; **Create Node**.
@@ -840,7 +840,7 @@ To allow indexing of custom properties, complete the following steps:
 
 ## Change default view of the search page {#change-default-view-of-the-search-page}
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. In the apps folder, create a folder named list with path/structure similar to the list folder located in /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views:
 
     1. Right-click the items folder at the following path and select **Overlay Node**:
@@ -884,7 +884,7 @@ To allow indexing of custom properties, complete the following steps:
 >
 >These steps change the default view of all consoles such as Forms and Documents, Assets, and Sites.
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. In the apps folder, create a folder named list with path/structure similar to the list folder located in:
 
    /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/

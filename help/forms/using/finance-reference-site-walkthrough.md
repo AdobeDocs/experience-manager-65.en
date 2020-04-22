@@ -88,17 +88,17 @@ If Sarah is accessing the credit card application from her mobile device, the re
 
 **How it works**
 
-The **Apply Now** button directs Sarah to the credit card application. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:[Port]/editor.html/content/forms/af/we-finance/cc-app.html`.
+The **Apply Now** button directs Sarah to the credit card application. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:'port'/editor.html/content/forms/af/we-finance/cc-app.html`.
 
 Some of the key features you can review in the adaptive form are:
 
 * It is based on an XSD schema.
-* It is built using We Finance Theme A for styling and We.Finance template for layout. Also, it uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template at `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` and the theme at `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content`.
-* It includes adaptive form rules to invoke Form Data Model services to prefill user details of logged in user. It also invokes services to prefill information by social security number or email address provided in the form. You can review the Form Data Models and their services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* It is built using We Finance Theme A for styling and We.Finance template for layout. Also, it uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template at `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance` and the theme at `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content`.
+* It includes adaptive form rules to invoke Form Data Model services to prefill user details of logged in user. It also invokes services to prefill information by social security number or email address provided in the form. You can review the Form Data Models and their services at `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * It uses various adaptive form components to capture inputs and adapts to user responses. It also uses components like Email that support HTML5 input types.
 * It uses the Signature Step component to display the completed form and allows electronic signature on the form.
 * The Save my progress button generates a unique ID for the user and saves the partially-filled application as a draft in a node in AEM repository. Also, it displays a dialog seeking permission to send an email with a link to the node containing the draft application. The Send mail button on the confirmation dialog triggers an email with a link to the node containing the draft.
-* It uses the Invoke AEM Workflow submit action to trigger the credit card approval workflow. You can review the workflow used in this form at `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
+* It uses the Invoke AEM Workflow submit action to trigger the credit card approval workflow. You can review the workflow used in this form at `https://[host]:'port'/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
 
 It is recommended to review the form to understand the schema, components, rules, Form Data Models, forms workflow, and submit action used to build the form.
 
@@ -295,15 +295,17 @@ Perform the following steps to experience the creation of A/B test for We.Financ
 1. Go to the Forms and Documents UI, select the form, click **More**, and select **Start A/B Testing**.
 1. Now open the form in chrome browser several times using the following URL:
 
-   `https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
 
-   >[!NOTE] Note: Remove the cookie with the name **mbox** from browser’s cookie persistence before opening the form next time. You will see experience A and B of the form at random.
+   >[!NOTE] Remove the cookie with the name **mbox** from browser’s cookie persistence before opening the form next time. You will see experience A and B of the form at random.
 
 1. Select the form, click **More**, and click **A/B Testing Report**. You won’t find much data in the report as you have just started the testing. Let’s now provide some seed data to see how A/B Testing report looks like.
 1. Open CRXDE Lite and take a back-up of the following file: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Replace the definition of function `onReportLoadSuccess` in the above mentioned file with the function definition in the following file: /apps/we-finance/demo-artifacts/targetreport.js
 
-   Note: These changes are only for the demo purpose. Ensure that you restore the file contents after completing this procedure.
+   >[!NOTE]
+   >
+   >These changes are only for the demo purpose. Ensure that you restore the file contents after completing this procedure.  
 
 1. Refresh the report that you generated, and you will see something like the following. Review the reporting dashboard.
 
@@ -371,20 +373,20 @@ The submitted application goes to We.Finance for approval.
 
 #### How it works {#how-it-works-7}
 
-The **Apply now** button directs Sarah to the home mortgage application. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:[Port]/editor.html/content/forms/af/we-finance/hm-app.html`.
+The **Apply now** button directs Sarah to the home mortgage application. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:'port'/editor.html/content/forms/af/we-finance/hm-app.html`.
 
 Some of the key features you can review in the adaptive form are:
 
 * It is based on an XSD schema, `homeMortgageApplication.xsd`.
 * It is built using We Finance Theme B for styling and We.Finance template for layout. Also, it uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template and the theme used in the adaptive form at the following locations on your AEM author instance:
 
-    * `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance`
-    * `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
+    * `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance`
+    * `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
 
-* The first tab, Getting Started, in the application is a dynamic mortgage calculator that displays options based on user selection. For example, the fields and values are different for Purchase and Refinance options. This functionality is achieved using show-hide rules. In addition, when you click Continue and the Plans tab is initialized, it invokes a web service configured in a Form Data Model to fetch and display mortgage plans. You can review the Form Data Models and configured services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* The first tab, Getting Started, in the application is a dynamic mortgage calculator that displays options based on user selection. For example, the fields and values are different for Purchase and Refinance options. This functionality is achieved using show-hide rules. In addition, when you click Continue and the Plans tab is initialized, it invokes a web service configured in a Form Data Model to fetch and display mortgage plans. You can review the Form Data Models and configured services at `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * It uses various adaptive form components to capture inputs and adapts to user responses. It also uses components like Email that support HTML5 input types.
 * It uses the Signature Step component to display the completed form and allows electronic signature on the form.
-* It uses the Invoke AEM Workflow submit action to trigger the We Finance Home Mortgage AEM workflow. You can review the workflow used in this form at `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
+* It uses the Invoke AEM Workflow submit action to trigger the We Finance Home Mortgage AEM workflow. You can review the workflow used in this form at `https://[host]:'port'/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
 
 It is recommended to review the form to understand the schema, components, rules, Form Data Models, forms workflow, and submit action used to build the form.
 
@@ -400,7 +402,7 @@ Also, see the following documentation for more information about features used i
 
 #### See it yourself {#see-it-yourself-6}
 
-Go to `https://[server]:[port]/content/we-finance/global/en/all-forms.html` and click the **Apply now** button on Home Mortgage Application. Fill in the details in the Getting Started tab, try different options, and submit the application.
+Go to `https://'[server]:[port]'/content/we-finance/global/en/all-forms.html` and click the **Apply now** button on Home Mortgage Application. Fill in the details in the Getting Started tab, try different options, and submit the application.
 
 Ensure that you specify a valid email ID in the application to receive an acknowledgement mail in your inbox.
 
@@ -456,7 +458,7 @@ If you provided your email ID when filling the mortgage application, you should 
 
 You can view it in AEM publish instance at the following URL:
 
-`https://[host]:[port]/content/forms/af/we-finance/mortgage-loan-welcome-kit.html`
+`https://[host]:'port'/content/forms/af/we-finance/mortgage-loan-welcome-kit.html`
 
 ### Sarah receives an account statement {#sarah-receives-an-account-statement}
 
@@ -543,7 +545,7 @@ Perform the following steps in the author instance to experience the creation of
 1. Modify the form as desired to create a different experience than the default experience A.
 1. Go to the Forms and Documents UI, select the form, click **More**, and select **Start A/B Testing**.
 1. Now open the form in chrome browser several times using the following URL:
-   `https://&lt;hostname&gt;:&lt;port&gt;/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
 
    >[!NOTE]
    > Remove the cookie with the name **mbox** from browser’s cookie persistence before opening the form next time. You will see experience A and B of the form at random.
@@ -552,7 +554,9 @@ Perform the following steps in the author instance to experience the creation of
 1. Open CRXDE Lite and take a back-up of the following file: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Replace the definition of the `onReportLoadSuccess` function in the above mentioned file with the function definition in the following file: /apps/we-finance/demo-artifacts/targetreport.js
 
-   Note: These changes are only for the demo purpose. Ensure that you restore the file contents after completing this procedure.
+   >[!NOTE]
+   >
+   >These changes are only for the demo purpose. Ensure that you restore the file contents after completing this procedure.  
 
 1. Refresh the report that you generated, and you will see something like the following. Review the reporting dashboard.
 
@@ -615,17 +619,17 @@ The submitted application goes to We.Finance for approval.
 
 #### How it works {#how-it-works-13}
 
-The **Apply now** button directs Sarah to the home mortgage application. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:[Port]/editor.html/content/forms/af/we-finance/ms-dynamics/application-for-home-mortgage.html`.
+The **Apply now** button directs Sarah to the home mortgage application. The application is an adaptive form, which you can review in the authoring instances at `https://[host]:'port'/editor.html/content/forms/af/we-finance/ms-dynamics/application-for-home-mortgage.html`.
 
 Some of the key features you can review in the adaptive form are:
 
 * It is based on an XSD schema, `homeMortgageApplication.xsd`.
 * It is built using We Finance Theme B for styling and We.Finance template for layout. Also, it uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template and the theme used in the adaptive form at the following locations on your AEM author instance:
 
-    * `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance`
-    * `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
+    * `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance`
+    * `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
 
-* The first tab, Getting Started, in the application is a dynamic mortgage calculator that displays options based on user selection. For example, the fields and values are different for Purchase and Refinance options. This functionality is achieved using show-hide rules. In addition, when you click Continue and the Plans tab is initialized, it invokes a web service configured in a Form Data Model to fetch and display mortgage plans. You can review the Form Data Models and configured services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* The first tab, Getting Started, in the application is a dynamic mortgage calculator that displays options based on user selection. For example, the fields and values are different for Purchase and Refinance options. This functionality is achieved using show-hide rules. In addition, when you click Continue and the Plans tab is initialized, it invokes a web service configured in a Form Data Model to fetch and display mortgage plans. You can review the Form Data Models and configured services at `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * It uses various adaptive form components to capture inputs and adapts to user responses. It also uses components like Email that support HTML5 input types.
 * It uses the Signature Step component to display the completed form and allows electronic signature on the form.
 
@@ -683,17 +687,17 @@ If Sarah submitted the application on a mobile device, she would go through the 
 
 #### How it works {#how-it-works-15}
 
-The **Apply Now** button on the newsletter directs Sarah to the home insurance application on We.Finance portal. The application is an adaptive form, which you can review in the authoring instance at `https://[host]:[Port]/editor.html/content/forms/af/we-finance/insurance/application-for-insurance.html`.
+The **Apply Now** button on the newsletter directs Sarah to the home insurance application on We.Finance portal. The application is an adaptive form, which you can review in the authoring instance at `https://[host]:'port'/editor.html/content/forms/af/we-finance/insurance/application-for-insurance.html`.
 
 Some of the key features you can review in the adaptive form are:
 
 * It is based on an XSD schema, `insurance.xsd`.
-* It is built using Insurance theme for styling and uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template at `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` and the theme at `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/insurance/jcr:content`.
+* It is built using Insurance theme for styling and uses Layout without panel titles in the form header layout for mobile navigation. It displays a progressive mobile layout when opened from a mobile device. You can review the template at `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance` and the theme at `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/insurance/jcr:content`.
 
-* It includes adaptive form rules to invoke Form Data Model services to prefill user details of logged in user. It also invokes services to prefill information by social security number or email address provided in the form. You can review the Form Data Models and their services at `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* It includes adaptive form rules to invoke Form Data Model services to prefill user details of logged in user. It also invokes services to prefill information by social security number or email address provided in the form. You can review the Form Data Models and their services at `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * It uses various adaptive form components to capture inputs and adapts to user responses. It also uses components like Email that support HTML5 input types.
 * The Save my progress button generates a unique ID for the user and saves the partially-filled application as a draft in a node in AEM repository. Also, it displays a dialog seeking permission to send an email with a link to the node containing the draft application. The Send mail button on the confirmation dialog triggers an email with a link to the node containing the draft.
-* It uses the Invoke AEM Workflow submit action to trigger the home insurance approval workflow. You can review the workflow used in this form at `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html`
+* It uses the Invoke AEM Workflow submit action to trigger the home insurance approval workflow. You can review the workflow used in this form at `https://[host]:'port'/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html`
 
 It is recommended to review the form to understand the schema, components, rules, Form Data Models, forms workflow, and submit action used to build the form.
 
@@ -866,7 +870,7 @@ Both the policies use same interactive communication. The sections in the policy
 
 The reference site also provides an interactive communication which uses Microsoft Dynamics as a data source for the form data model. Perform the following steps to configure the interactive communication for the auto insurance walkthrough:
 
-1. Log in to `https://[author]:[port]/crx/de as an administrator`.
+1. Log in to `https://[author]:'port'/crx/de as an administrator`.
 1. Open the `/apps/we-finance/components/ccrui/ccrui.jsp`file.
 1. Set the value of `FormFieldRequestParameter`to `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
 1. Tap **Save All**. The reference site is configured to use interactive communication which uses MS Dynamics as a data source.

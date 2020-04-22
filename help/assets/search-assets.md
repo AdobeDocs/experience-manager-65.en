@@ -20,11 +20,11 @@ AEM supports the following use cases and this article describes the usage, conce
 | [Search rank and boosting](#searchrank) | [Text extraction](#extracttextupload) | [Smart collections](#collections) |
 | [Advanced search: filtering and scope of search](#scope) | [Custom predicates](#custompredicates) | [Understand unexpected results and Troubleshoot](#troubleshoot-unexpected-search-results-and-issues) |
 | [Search from other solutions and apps](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[AEM desktop app](#desktopapp)</li><li>[Adobe Stock images](#adobestock)</li><li>[Dynamic Media assets](#dynamicmedia)</li></ul> | | |
-| [Asset selector/picker](#assetselector) | | |
+| [Asset Picker](#assetselector) | | |
 | [Limitations](#limitations) and [Tips](#tips) | | |
 | [Illustrated examples](#samples)| | |
 
-Search for assets using the Omnisearch field at the top of the AEM web interface. Go to **[!UICONTROL Assets]** &gt; **[!UICONTROL Files]** in AEM, click search icon in top bar, enter search keyword, and press return. Alternatively, use the keyword shortcut / (forward slash) to open the Omnisearch field. Location:Assets is pre-selected to limit the searches to DAM assets. AEM provides suggestions as your start typing a search keyword.
+Search for assets using the Omnisearch field at the top of the AEM web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in AEM, click search icon in top bar, enter search keyword, and press return. Alternatively, use the keyword shortcut / (forward slash) to open the Omnisearch field. Location:Assets is pre-selected to limit the searches to DAM assets. AEM provides suggestions as your start typing a search keyword.
 
 Use the **[!UICONTROL Filters]** panel to narrow your search by filtering search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. Your administrators can customize the Filters panel and add or remove search predicates using search facets. The [!UICONTROL File Type] filter in the [!UICONTROL Filters] panel has mixed-state checkboxes. Therefore, unless you select all the nested predicates (or formats) the first-level checkboxes are partially checked.
 
@@ -34,11 +34,11 @@ AEM search capability supports searching for collections and searching for asset
 
 Familiarize yourself with the search interface and the available actions.
 
-![Understanding parts of Assets search results interface](assets/aem_search_results.png)
+![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
 
-*Figure: Understanding parts of Assets search results interface*
+*Figure: Understand Experience Manager Assets search results interface*
 
-**A.** Save the search as a Smart Collection. **B.** Filters (predicates) to narrow the search results. **C.** Display Files, Folders, or both in the search results. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F.** Omnisearch field with user-provided search keyword. **G.** Check box to select all the search results. **H.** Number of displayed search results out of the total search results. **I.** Close the search **J.** Switch between card view and list view.
+**A.** Save search as a smart collection. **B.** Filters or predicates to narrow the search results. **C.** Display files, folders, or both. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F.** Omnisearch field with user-provided search keyword. **G.** Select the loaded search results. **H.** Number of displayed search results out of the total search results. **I.** Close search **J.** Switch between card view and list view.
 
 ### Dynamic search facets {#dynamicfacets}
 
@@ -143,7 +143,7 @@ From within the AEM user interface, users can search [Adobe Stock assets](/help/
 
 ### Dynamic Media assets {#dmassets}
 
-You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media > Sets]** from the **[!UICONTROL Filters]** panel. It filters and displays assets such as image sets, carousels, mixed media sets, and spin sets.
+You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** from the **[!UICONTROL Filters]** panel. It filters and displays assets such as image sets, carousels, mixed media sets, and spin sets.
 
 ### Search using specific values in metadata fields {#gqlsearch}
 
@@ -219,24 +219,24 @@ Authors can use Content Finder to search the DAM repository for the relevant ass
 
 AEM search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/managing-collections-touch-ui.md).
 
-## Asset selector {#assetselector}
+## Asset Picker {#assetselector}
 
-Asset selector lets you search, filter, and browse the DAM assets in a special way. Asset selector is available at `https://[aem-server]:[port]/aem/assetpicker.html`. You can fetch the metadata of assets that you select using the asset selector. You can launch it with supported request parameters, such as asset type (image, video, text) and selection mode (single or multiple selections). These parameters set the context of the asset selector for a particular search instance and remains intact throughout the selection.
+Asset Picker lets you search, filter, and browse the DAM assets in a special way. Asset Picker is available at `https://[aem-server]:[port]/aem/assetpicker.html`. You can fetch the metadata of assets that you select using this functionality. You can launch it with supported request parameters, such as asset type (image, video, text) and selection mode (single or multiple selections). These parameters set the context of the asset Picker for a particular search instance and remains intact throughout the selection.
 
-The asset selector uses the HTML5 Window.postMessage message to send data for the selected asset to the recipient. The asset selector is based on Granite's foundation picker vocabulary. By default, the asset selector operates in Browse mode.
+The asset Picker uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. Asset Picker works only in the browse mode and works only with the Omnisearch result page.
 
-You can pass the following request parameters in a URL to launch the asset selector in a particular context:
+You can pass the following request parameters in a URL to launch the asset Picker in a particular context:
 
 | Name | Values | Example | Purpose |
 |---|---|---|---|
-| resource suffix (B) | Folder path as the resource suffix in the URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path&gt;](https://localhost:4502/aem/assetpicker.html) | To launch the asset selector with a particular folder selected, for example with the folder `/content/dam/we-retail/en/activities` selected, the URL should be of the form: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix. |
+| resource suffix (B) | Folder path as the resource suffix in the URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path&gt;](https://localhost:4502/aem/assetpicker.html) | To launch the asset Picker with a particular folder selected, for example with the folder `/content/dam/we-retail/en/activities` selected, the URL should be of the form: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix. |
 | mode | single, multiple | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | In multiple mode, you can select several assets simultaneously using the asset selector. |
 | mimetype | mimetype(s) (`/jcr:content/metadata/dc:format`) of an asset (wildcard also supported) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png)</li></ul> | Use it to filter assets based on MIME type(s) |
 | dialog | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use these parameters to open the asset selector as Granite Dialog. This option is only applicable when you launch the asset selector through Granite Path Field, and configure it as pickerSrc URL. |
 | assettype (S) | images, documents, multimedia, archives | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Use this option to filter asset types based on the value passed. |
 | root | &lt;folder_path&gt; | [https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Use this option to specify the root folder for the asset selector. In this case, the asset selector lets you select only child assets (direct/indirect) under the root folder. |
 
-To access the asset selector interface, go to `https://[aem_server]:[port]/aem/assetpicker`. Navigate to the desired folder, and select one or more assets. Alternatively, search for the desired asset from the Omnisearch box, apply filter as required, and then select it.
+To access the asset Picker interface, go to `https://[aem_server]:[port]/aem/assetpicker`. Navigate to the desired folder, and select one or more assets. Alternatively, search for the desired asset from the Omnisearch box, apply filter as required, and then select it.
 
 ![Browse and select asset in the asset picker](assets/assetpicker.png)
 
@@ -250,7 +250,7 @@ The search capability in AEM Assets has the following limitations:
 * AEM may continue to show the search term after you select properties of an asset from searched results and then cancel the search. <!-- (CQ-4273540) -->
 * When searching for folders or files and folders, the search results cannot be sorted on any parameter.
 * If you press return without typing anything in Omnisearch bar, AEM returns a list of only files and not folders. If you search specifically for folders without using a keyword, AEM does not return any results.
-* Using the [!UICONTROL Select All] check box, you can only select the first 100 searched assets in card view and first 200 searched assets in list view. If you scroll and load more assets in the user interface, you can select more using the [!UICONTROL Select All] option.
+* Use the **[!UICONTROL Select All]** option in the upper-right corner of the search page to select the searched assets. Experience Manager initially displays 100 assets in card view and 200 assets in list view. More assets are loaded as you scroll the search results. You can select more assets than the loaded assets. The count of the selected assets is displayed in the upper-right corner of the search results page. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection. When more assets are selected than displayed, an action is either applied on all selected assets or a dialog displays the number of assets it is applied on. To apply an action to the assets that did not load, ensure all assets are explicitly selected.
 
 Visual search or similarity search has the following limitations:
 
@@ -265,7 +265,7 @@ Search functionality may have performance limitations in the following scenarios
 
 * When monitoring the review status of assets, use the appropriate option to find which assets are approved or assets that are pending approval.
 * Use the Insights predicate to search for supported assets based on their usage statistics obtained from various Creative apps. Usage data is grouped under Usage score, Impressions, Clicks, and Media channels where the assets appear categories.
-* Use the **[!UICONTROL Select All]** check box to select the searched assets. It selects first 100 assets in card view and first 200 assets in list view. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection.
+* Use the **[!UICONTROL Select All]** check box to select the searched assets. Experience Manager initially displays 100 assets in card view and 200 assets in list view. More assets are loaded as you scroll the search results. You can select more assets than the loaded assets. The count of the selected assets is displayed in the upper-right corner of the search results page. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection. When more assets are selected than displayed, an action is either applied on all selected assets or a dialog displays the number of assets it is applied on. To apply an action to the assets that did not load, ensure all assets are explicitly selected.
 * To search for assets that do not contain the mandatory metadata, see [mandatory metadata](#mandatorymetadata).
 * Search uses all metadata fields. A generic search, such as searching for 12, usually returns many results. For better results, use double (not single) quotes or ensure that the number is contiguous to a word without a special character (for example *shoe12*).
 * Full text search supports operators such as -, ^, and so on. To search these letters as string literals, enclose the search expression in double quotes. For example, use "Notebook - Beauty" instead of Notebook - Beauty.

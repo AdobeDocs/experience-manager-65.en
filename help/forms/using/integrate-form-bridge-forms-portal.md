@@ -24,7 +24,7 @@ An existing HTML application can leverage the FormBridge API to interact with a 
 
 1. **Choose a Profile or create a Profile**
 
-    1. In the CRX DE interface, navigate to: `https://[server]:[port]/crx/de`.
+    1. In the CRX DE interface, navigate to: `https://'[server]:[port]'/crx/de`.
     1. Log in with administrator credentials.
     1. Create a profile or choose an existing profile.
 
@@ -104,5 +104,3 @@ An existing HTML application can leverage the FormBridge API to interact with a 
                    });
            });
    ```
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

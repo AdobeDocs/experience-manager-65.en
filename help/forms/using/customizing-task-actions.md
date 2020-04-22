@@ -131,7 +131,7 @@ To show only images for actions, customize the images used in route actions. For
 
 ### Task List task action&nbsp;pop-up menu {#task-list-task-action-nbsp-pop-up-menu}
 
-1. You require development package to customize items of the AEM Forms workspace Task list task action pop-up menu. For detailed information about creating development package, see [Building AEM Forms workspace code.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+1. You require development package to customize items of the AEM Forms workspace Task list task action pop-up menu. For detailed information about creating development package, see [Building AEM Forms workspace code.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Copy /libs/ws/js/runtime/templates/task.html to `/apps/ws/js/runtime/templates/task.html`replace the following code snippet:
 
@@ -357,5 +357,3 @@ Perform the following steps to customize Details task actions pop-up menu:
 * Open the /apps/ws/js/registry.js file for editing.
 * Locate the following text: `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
 * Replace the located text with the following text: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

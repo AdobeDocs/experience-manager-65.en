@@ -52,7 +52,7 @@ To create a custom profile, perform the following steps:
 
 ### Create Profile Node {#create-profile-node}
 
-1. Navigate to the CRX DE interface at the URL: `https://[server]:[port]/crx/de` and log in to the interface with administrator credentials.
+1. Navigate to the CRX DE interface at the URL: `https://'[server]:[port]'/crx/de` and log in to the interface with administrator credentials.
 
 1. In the left pane, navigate to the location */content/xfaforms/profiles*.
 
@@ -74,8 +74,6 @@ After creating a custom profile, add render information to this profile. On rece
 1. Paste **html.jsp** node into the `/apps/hrform/demo` folder created above with same name **html.jsp** and click **Save**.
 1. If you have any other components of profile script, follow step 1-6 to copy the components in /apps/hrform/demo folder.
 
-1. To verify that th profile is created, open URL `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
+1. To verify that th profile is created, open URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
 To verify your forms, [Import your forms](/help/forms/using/get-xdp-pdf-documents-aem.md) from your local file system to AEM Forms and [preview the form](/help/forms/using/previewing-forms.md) on AEM server author instance.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

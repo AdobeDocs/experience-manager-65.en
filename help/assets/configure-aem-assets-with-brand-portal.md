@@ -24,9 +24,14 @@ Adobe Experience Manager (AEM) Assets is configured with Brand Portal through Ad
    >
    >Configuration via Legacy OAuth is no longer supported from April 6, 2020, and is changed to configuring via Adobe I/O.
    >
-   >If you are an existing Brand Portal user with configuration on legacy OAuth Gateway, it is recommended to delete the existing configurations and create new configuration on Adobe I/O.
+
+>[!TIP]
    >
-   >However, the existing configuration will continue to work if you do not modify the configurations.
+   >***For existing customers only*** 
+   >
+   >It is recommended to continue using existing legacy OAuth Gateway configuration. In case, you encounter problems with legacy OAuth Gateway configuration,  delete the existing configuration and create new configuration via Adobe I/O.
+   >
+
 
 This help describes the following two use-cases: 
 * [New configuration](#configure-new-integration-65): If you are a new Brand Portal user and want to configure your AEM Assets author instance with Brand Portal, you can create new configuration on Adobe I/O. 
@@ -197,9 +202,9 @@ Ensure that you have performed the following steps:
 
 >[!CAUTION]
    >
-   >Create only one valid IMS configuration. Do not create multiple IMS configurations.
+   >You must have only one IMS configuration. Do not create multiple IMS configurations.
    >
-   > Make sure the configuration is healthy. In case, the configuration is unhealthy, delete it and create a new, healthy configuration.
+   >Ensure that the IMS configuration passes the health check. If the configuration does not pass the health check, it is invalid. You must delete it and create a new, valid configuration.
 
 
 ### Configure cloud service {#configure-the-cloud-service}

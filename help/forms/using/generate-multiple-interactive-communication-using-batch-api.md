@@ -188,6 +188,7 @@ You combine data (records) saved in an external data source with an interactive 
            <scope>provided</scope>
         </dependency>
     ```    
+    
  1. Open the Java project, create a .java file, for example CCMBatchServlet.java. Add the following code to the file:
 
     ```java

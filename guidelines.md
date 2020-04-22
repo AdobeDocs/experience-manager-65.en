@@ -1,18 +1,18 @@
-# Guidelines for Contributing to AEM Documentation
+# Guidelines for Contributing to Adobe Experience Manager Documentation
 
-## AEM Documentation Philosophy
+## Documentation Philosophy
 
 We know that Adobe Experience Manager users are working in highly competitive environments, striving to create digital experiences that will set them apart from their competitors. Therefore it is vital that when Adobe delivers advanced new tools in AEM, that these tools are complemented with accurate and clear documentation to allow the customer to immediately leverage their AEM investment and maximize ROI.
 
 The goal of the AEM documentation is to put documentation into the hands of AEM users as soon as possible. Therefore we prioritize accurate, usable documentation and strive to continually update and improve it.
 
-## AEM Documentation Contributions
+## Documentation Contributions
 
-In the interest of continually improving AEM documentation, the entire community of AEM users are welcome to contribute to the documentation. Be it through pull requests or issues, improvements to the documentation can be corrections, clarifications, expansions, and additional examples.
+In the interest of continually improving AEM documentation, the entire community of AEM users is welcome to contribute to the documentation. Be it through pull requests or issues, improvements to the documentation can be corrections, clarifications, expansions, and additional examples.
 
 ## Documentation Standards
 
-While we welcome contributions to our documentation, any contribution to the AEM documentation, either in the form of a pull request or an issue, must conform to our contribution and documentation standards.
+While we welcome contributions to our documentation, any contribution to the AEM documentation, either in the form of a pull request or an issue, should conform to our contribution and documentation standards.
 
 Contributions that do not meet these standards may be rejected.
 
@@ -28,23 +28,23 @@ Exceptions to this rule apply to the release notes where known issues can be lis
 
 ### Documentation contributions are not for answering technical questions.
 
-Any ideas you may have to improve AEM documentation are welcome as contributions. However comments, issues, and pull requests are intended for *contributions* only. They are not intended to be used to answer your questions about how to use AEM or solve technical problems.
+Any ideas you may have to improve AEM documentation are welcome as contributions. However comments, issues, and pull requests are intended for *contributions* only. They are not intended to be used to answer your questions about how to use AEM, implement your AEM project, or solve technical problems.
 
-Any questions about the usage of AEM or technical errors you may have should be reported through the normal support process via the [Experience Manager Support Portal](https://daycare.day.com/home.html) or discussed in the [Experience Manager community](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html).
+Any questions about the usage of AEM or technical errors you may have should be reported through the normal support process via the [Experience Cloud Enterprise Support portal](https://helpx.adobe.com/contact/enterprise-support.ec.html) or discussed in the [Experience Manager community](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
 
-***AEM documentation contributions are not a replacement for Adobe support*** and any such contributions seeking answers to support-related questions will be rejected.
+***AEM documentation contributions are not a replacement for Adobe Customer Care*** and any such contributions seeking answers to support-related questions will be rejected.
 
 ### Contributions must clearly reference affected documentation pages.
 
-If you create an issue to suggest improvements to the documentation, you must include include links to the pages affected. If you create an issue by using the **Edit this page** link on a documentation page, the issue will be created with a link to the page automatically.
+If you create an issue to suggest improvements to the documentation, you must include links to the pages affected. If you create an issue by using the **Edit this page** link on a documentation page, the issue will be created with a link to the page automatically.
 
-This does not apply to pull requests since pull requests include the affected pages by definition.
+This does not apply to pull requests since pull requests by their nature reference the affected page(s).
 
 ## Documentation Guidelines
 
 We ask that any contributions to our documentation follow certain style guidelines.
 
-Following these guidelines makes the review of your contribution easier and therefore integration into our documentation is faster. However noncompliance or incomplete compliance to these guidelines does not mean that the contribution will be rejected.
+Following these guidelines makes the review of your contribution easier and therefore integration into our documentation is faster.
 
 ### Language and Style
 

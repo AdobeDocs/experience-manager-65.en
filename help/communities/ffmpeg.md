@@ -38,11 +38,11 @@ FFmpeg should be installed on the server(s) hosting the AEM *author* instance(s)
 
 ## Configure FFmpeg Transcoding Service {#configure-ffmpeg-transcoding-service}
 
-By default, when FFmpeg is installed, multiple renditions are configured (transcodings) as per the DAM Update Asset workflow definition.
+By default, when FFmpeg is installed, multiple renditions are configured (transcodings) as per the [!UICONTROL DAM Update Asset] workflow definition.
 
 As the transcodings are CPU intensive, it is recommended to modify the list of target renditions. In most cases, transcoding is not necessary.
 
-To modify the DAM Update Asset workflow, and in this example, to turn off transcoding:
+To modify the [!UICONTROL DAM Update Asset] workflow, and in this example, to turn off transcoding:
 
 * Sign into the author instance with administrative privileges.
 * From global navigation, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.

@@ -23,7 +23,7 @@ As an example, let us consider Correspondence Management as the sample candidate
 
 Start by creating a sample Correspondence Management template that is rendered in AEM Forms workspace. For more details, see [Create a letter template](../../forms/using/create-letter.md).
 
-Access the Correspondence Management template at its URL to verify if the Correspondence Management template can be rendered successfully. The URL has a pattern similar to `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Access the Correspondence Management template at its URL to verify if the Correspondence Management template can be rendered successfully. The URL has a pattern similar to `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 where `encodedLetterId` is the URL-encoded letter Id. Specify the same letter Id, when defining the render process for workspace task in Workbench.
 
@@ -103,7 +103,7 @@ Use the following steps to create a task to render and submit a letter in AEM Wo
    In the Define Activity dialog, select the appropriate activity such as getLetterInstanceInfo and click **OK**.
 
 1. Deploy the application. If prompted check-in and save the assets.
-1. Log in to the AEM forms workspace at https://[server]:[port]/lc/content/ws.
+1. Log in to the AEM forms workspace at https://'[server]:[port]'/lc/content/ws.
 1. Open the task you had added, CMRenderer. The Correspondence Management letter appears.
 
    ![cminworkspace](assets/cminworkspace.png)
@@ -113,5 +113,3 @@ Use the following steps to create a task to render and submit a letter in AEM Wo
    >[!NOTE]
    >
    >The Submit button is not enabled until all the required variables in the letter are filled in.
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

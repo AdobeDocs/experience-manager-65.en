@@ -1,12 +1,7 @@
 ---
 title: Configure the Rich Text Editor plug-ins
-description: Learn to configure the AEM Rich Text Editor plug-ins to enable individual functionalities.
-uuid: 012552b7-5e32-4d74-be07-b441c3d4b47b
+description: Learn to configure the Adobe Experience Manager Rich Text Editor plug-ins to enable individual functionalities.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 87dc79ad-0a71-43f6-af04-4d26c7472dc5
-mini-toc-levels: 1
-docset: aem65
 ---
 
 # Configure the Rich Text Editor plug-ins {#configure-the-rich-text-editor-plug-ins}
@@ -17,7 +12,7 @@ For details about the other RTE configurations, see [Configure Rich Text Editor]
 
 >[!NOTE]
 >
->When working with CRXDE Lite, it is recommended to save the changes regularly using Save All.
+>When working with CRXDE Lite, it is recommended to save the changes regularly using [!UICONTROL Save All] option.
 
 ## Activate a plug-in and configure the features property {#activateplugin}
 
@@ -65,7 +60,9 @@ After activating a plug-in, follow these guidelines to configure the `features` 
 
 ## Understand the findreplace plug-in {#findreplace}
 
-The `findreplace` plug-in does not need any configuration. It works as expected, out of the box.
+The `findreplace` plug-in does not need any configuration. It works out of the box.
+
+When using the replace functionality, the replace string to be replaced should be entered at the same time as find string. However you can still click find to search for the string before replacing it. If the replace string is entered after clicking find, the search is reset to the beginning of the text.
 
 The find and replace dialog becomes transparent when find is clicked and becomes opaque when replace is clicked. This allows the author to review the text that the author will replace. If users click replace all, the dialog closes and displays the number of replacements made.
 
@@ -280,16 +277,17 @@ Then, specify the location(s) of the style sheet(s) you want to reference:
 >
 >The Rich Text Editor uses a container DOM element with an ID of `CQrte` which may be used to provide different styles for viewing and editing:
 >
->```>
+>```
 >#CQ td {
 > // defines the style for viewing
 > }
->```>
->```>
+>```
+>
+>```
 >#CQrte td {
 > // defines the style for editing
 > }
->```>
+>```
 
 ### Specify the available Styles in the pop-up list {#stylesindropdown}
 
@@ -603,21 +601,18 @@ When the spellcheck plug-in is activated, the RTE uses dictionaries for each app
 
 >[!NOTE]
 >
->The message "Spell checking failed." is seen if a check is tried for a language that is not installed.
+>The message `Spell checking failed` is seen if a check is attempted for a language that is not installed. The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate readme files. Do not modify the files.
 
-A standard AEM installation includes the dictionaries for:
-
-* American English (en_us)
-* British English (en_gb)
-
->[!NOTE]
->
->The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate readme files. Do not modify the files.
-
-To add more dictionaries, if required, follow these steps.
+A standard AEM installation includes the dictionaries for American English (`en_us`) and British English (`en_gb`). To add more dictionaries, follow these steps.
 
 1. Navigate to the page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
-1. Select the required language and download the ZIP file with the spelling definitions. Extract the contents of the archive on your file system.
+
+1. Do one of the following to find a dictionary of your choice of language:
+
+   * Search for dictionary of your choice of language. On the dictionary page, locate the link to the original source or author's webpage. Locate the dictionary files for v2.x on such a page.
+   * Search for v2.x dictionary files at [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
+
+1. Download the archive with the spelling definitions. Extract the contents of the archive on your file system.
 
    >[!CAUTION]
    >
@@ -628,11 +623,9 @@ To add more dictionaries, if required, follow these steps.
 
 >[!NOTE]
 >
->The RTE spell checker is available on-demand. It does not run automatically as you start typing text.
+>The RTE spell checker is available on-demand. It does not run automatically as you start typing text. To run the spell checker, click [!UICONTROL Spellchecker] from the toolbar. RTE checks the spelling of words and highlights the misspelled words.
 >
->To run the spell checker, tap/click the Spellchecker button from the toolbar. RTE checks the spelling of words and highlights mis-spelled words.
->
->If you incorporate any change that the spell checker suggests, the state of the text changes and mis-spelled words are no longer highlighted. To run the spell checker, tap/click Spellchecker button again.
+>If you incorporate any change that the spell checker suggests, the state of the text changes and misspelled words are no longer highlighted. To run the spell checker, tap/click Spellchecker button again.
 
 ## Configure the history size for undo and redo actions {#undohistory}
 

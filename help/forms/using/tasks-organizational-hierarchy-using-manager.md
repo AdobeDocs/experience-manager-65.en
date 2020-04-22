@@ -115,5 +115,3 @@ The following screen illustrates accessing the tasks of direct reports and the a
 ![cu_manager_view](assets/cu_manager_view.png)
 
 Access tasks of direct reports and act on the tasks
-
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)

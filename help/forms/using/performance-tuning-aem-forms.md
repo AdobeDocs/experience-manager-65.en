@@ -20,8 +20,8 @@ This article discusses strategies and best practices you can implement to reduce
 
 You can configure and control the caching strategy for AEM Forms using the **Mobile Forms Configurations** component in AEM Web Configuration Console at:
 
-* (AEM Forms on OSGi) `https://[server]:[port]/system/console/configMgr`
-* (AEM Forms on JEE) `https://[server]:[port]/lc/system/console/configMgr`
+* (AEM Forms on OSGi) `https://'[server]:[port]'/system/console/configMgr`
+* (AEM Forms on JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
 
 The available options for caching are as follows:
 
@@ -52,7 +52,9 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:PermSize=256m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 ```
 
-**Note**: The recommended settings are for Windows 2008 R2 8 Core and Oracle HotSpot 1.7 (64-bit) JDK and should be scaled up or down as per your system configuration.
+>[!NOTE]
+>
+>The recommended settings are for Windows 2008 R2 8 Core and Oracle HotSpot 1.7 (64-bit) JDK and should be scaled up or down as per your system configuration.
 
 ## Using a web server {#using-a-web-server}
 
@@ -60,7 +62,9 @@ Adaptive forms and HTML5 forms render in HTML5 format. The resultant output coul
 
 For example, perform the following steps to enable compression on Apache Web Server 2.0 32-bit with JBoss:
 
-***Note**: The following instructions do not apply to any server other than the Apache Web Server 2.0 32-bit. For steps specific to any other server, see the corresponding product documentation.*
+>[!NOTE]
+>
+>The following instructions do not apply to any server other than the Apache Web Server 2.0 32-bit. For steps specific to any other server, see the corresponding product documentation.
 
 Following steps demonstrates changes required to enable compression with Apache Web Server
 
@@ -128,7 +132,7 @@ Apache can communicate to CRX using the HTTP protocol. The configurations are fo
    </Location>
    ```
 
-   To access the crx server, use `https://[server]:80`, where `server` is the name of the server on which the Apache server is running.
+   To access the crx server, use `https://'server':80`, where `server` is the name of the server on which the Apache server is running.
 
 ## Using an antivirus on server running AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
 
@@ -150,9 +154,9 @@ To improve the performance, you can direct the antivirus software to exclude the
 
 * **(AEM Forms on JEE only)** Global Document Storage (GDS) directory. The default location is:
 
-    * (JBoss) [appserver root]/server/[server]/svcnative/DocumentStorage
-    * (WebLogic) [appserverdomain]/[server]/adobe/LiveCycleServer/DocumentStorage
-    * (WebSphere) [appserver root]/installedApps/adobe/[server]/DocumentStorage
+    * (JBoss) [appserver root]/server/'server'/svcnative/DocumentStorage
+    * (WebLogic) [appserverdomain]/'server'/adobe/LiveCycleServer/DocumentStorage
+    * (WebSphere) [appserver root]/installedApps/adobe/'server'/DocumentStorage
 
 * **(AEM Forms on JEE only)** AEM Forms server logs and temporary directory. The default location is:
 
@@ -161,7 +165,7 @@ To improve the performance, you can direct the antivirus software to exclude the
 
 >[!NOTE]
 >
->* If you are using a different location for GDS and temporary directory, open AdminUI at `https://[server]:[port]/adminui`, navigate to **Home &gt; Settings &gt; Core System Settings &gt; Core Configurations** to confirm the location in use.
+>* If you are using a different location for GDS and temporary directory, open AdminUI at `https://'[server]:[port]'/adminui`, navigate to **Home &gt; Settings &gt; Core System Settings &gt; Core Configurations** to confirm the location in use.
 >
 >* If the AEM Forms server performs slow even after excluding the suggested directories, then exclude the Java executable file (java.exe) also.
 >

@@ -175,7 +175,7 @@ To create a Web channel template, define a folder where you can save the created
 
 Execute the following steps to create a folder for the editable templates:
 
-1. Tap **Tools** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) &gt; **Configuration Browser**.
+1. Tap **Tools** ![](assets/hammer-icon.svg) &gt; **Configuration Browser**.
 1. In the Configuration Browser page, tap **Create**.
 1. In the **Create Configuration** dialog, specify **Create_First_IC_templates** as the title for the folder, check **Editable Templates**, and tap **Create**.
 
@@ -251,7 +251,7 @@ Once you have created the Web template, you must enable it to use the template w
 
 Execute the following steps to enable the Web template:
 
-1. Tap **Tools** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) &gt; **Templates**.
+1. Tap **Tools** ![](assets/hammer-icon.svg) &gt; **Templates**.
 1. Navigate to the **Create_First_IC_Web_Template** template, select it, and tap **Enable**.
 1. Tab **Enable** again to confirm.
 
