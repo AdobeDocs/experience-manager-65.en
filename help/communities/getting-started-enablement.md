@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 31cc7819-cc4d-4804-9fab-005d8bef0714
 ---
 
-# Getting Started with AEM Communities for Enablement   {#getting-started-with-aem-communities-for-enablement}
+# Getting Started with AEM Communities for Enablement {#getting-started-with-aem-communities-for-enablement}
 
 AEM Communities helps brands create consistent experiences across digital and in-person channels by facilitating enablement across employees and customers with a catalog of enablement resources, assigned content, and dynamic recommendations—all delivered within a social community to foster engagement.
 
