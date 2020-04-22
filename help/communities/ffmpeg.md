@@ -23,10 +23,10 @@ FFmpeg is used in the author environment to obtain metadata for uploaded enablem
 
 FFmpeg should be installed on the server(s) hosting the AEM *author* instance(s).
 
-1. Go to [https://www.ffmpeg.org](https://www.ffmpeg.org/)
-1. Download the latest version of FFmpeg for your specific environment (Macintosh, Windows, or Linux)
+1. Go to [https://www.ffmpeg.org](https://www.ffmpeg.org/).
+1. Download the latest version of FFmpeg for your specific environment (Macintosh, Windows, or Linux).
 
-    * it is important to keep FFmpeg up-to-date due to security vulnerabilities in older versions
+    * It is important to keep FFmpeg up-to-date due to security vulnerabilities in older versions.
 
 1. Install FFmpeg following instructions for the OS.
 
@@ -34,7 +34,7 @@ FFmpeg should be installed on the server(s) hosting the AEM *author* instance(s)
 
    You should be able to run FFmpeg from any directory in your system.
 
-    * for example, `ffmpeg -version`
+    * For example, `ffmpeg -version`.
 
 ## Configure FFmpeg Transcoding Service {#configure-ffmpeg-transcoding-service}
 
@@ -44,23 +44,23 @@ As the transcodings are CPU intensive, it is recommended to modify the list of t
 
 To modify the DAM Update Asset workflow, and in this example, to turn off transcoding:
 
-* Sign into the author instance with administrative privileges
-* From global navigation: **[!UICONTROL Tools > Workflow > Models]**
-* Locate **[!UICONTROL DAM Update Asset]**
-* Double-click to open the workflow for edit in the Classic UI
+* Sign into the author instance with administrative privileges.
+* From global navigation, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+* Locate **[!UICONTROL DAM Update Asset]**.
+* Double-click to open the workflow for edit in the Classic UI.
 
   Resulting location: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* Double-click the **[!UICONTROL FFmpeg transcoding]** step to access the Step Properties dialog
+* Double-click the **[!UICONTROL FFmpeg transcoding]** step to access the Step Properties dialog.
 * Under the **[!UICONTROL Process]** tab:
 
     * **[!UICONTROL Arugments]**: Clear all entries to disable transcoding Default values: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
 
 ![chlimage_1-372](assets/chlimage_1-372.png)
 
-* Select **[!UICONTROL OK]** to close the `Step Properties` dialog
+* Select **[!UICONTROL OK]** to close the `Step Properties` dialog.
 
-* Select **[!UICONTROL Save]** to save the `DAM Update Asset` workflow
+* Select **[!UICONTROL Save]** to save the `DAM Update Asset` workflow.
 
-  (upper left corner)
+  
 

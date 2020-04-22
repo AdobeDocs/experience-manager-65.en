@@ -27,10 +27,10 @@ Once content is flagged as featured, it will be listed within this component, wh
 
 The ability to feature content may be allowed or disallowed per component.
 
-This section of the documentation describes
+This section of the documentation describes:
 
 * Adding featured content to a community site
-* Configuration settings for the `Featured Content`component
+* Configuration settings for the `Featured Content` component
 
 ## Adding Featured Content to a Page {#adding-featured-content-to-a-page}
 
@@ -42,7 +42,7 @@ and drag it into place on a page where the featured contentshould appear.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
-When the [required client-side libraries](essentials-featured.md#essentials-for-client-side) are included, this is how the `Featured Content`component will appear:
+When the [required client-side libraries](essentials-featured.md#essentials-for-client-side) are included, this is how the `Featured Content` component will appear:
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
