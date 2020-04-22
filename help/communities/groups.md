@@ -101,7 +101,7 @@ To access the Groups console:
 
 ### Step 2: Design {#step-design}
 
-#### COMMUNITY GROUP THEME {#community-group-theme}
+### COMMUNITY GROUP THEME {#community-group-theme}
 
 The framework uses [Twitter Bootstrap](https://twitterbootstrap.org/) to bring a responsive, flexible design to the site. One of the many preloaded Bootstrap themes can be selected to style the selected community group template, or a Bootstrap theme can be uploaded.
 
@@ -111,7 +111,7 @@ It is possible to select a theme which differs from the parent site's theme.
 
 After the community site is published, it is possible to [edit the properties](#modifyinggroupproperties) and select a different theme.
 
-#### COMMUNITY GROUP BRANDING {#community-group-branding}
+### COMMUNITY GROUP BRANDING {#community-group-branding}
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
@@ -130,7 +130,7 @@ When creating or selecting an image, keep in mind:
 
 ### Step 3: Settings {#step-settings}
 
-#### MODERATION {#moderation}
+**MODERATION**
 
 ![select community group member roles](assets/group-admin.png)
 
@@ -148,7 +148,7 @@ However, it is possible to assign independent group administrators. Group admini
 
 A user U1, therefore, can be an administrator in a group G1 and a regular user in its nested group G2.
 
-#### MEMBERSHIP {#membership}
+**MEMBERSHIP**
 
 The membership setting allows for selection of one of the three ways to secure a community group.
 
@@ -166,7 +166,7 @@ The membership setting allows for selection of one of the three ways to secure a
   
   If selected, the community group is a secret group. Community members must be explicitly invited. Invited members are entered in the search box. Members can be added later using the [Members and Groups consoles](/help/communities/members.md) the author environment. Default is not selected.
 
-#### THUMBNAIL {#thumbnail}
+**THUMBNAIL**
 
 ![chlimage_1-203](assets/chlimage_1-203.png)
 
@@ -255,7 +255,7 @@ The STRUCTURE panel allows the modification of the structure initially created f
  >Any other function, such as the [page function](/help/communities/functions.md#page-function), must be included and listed first.
  >
 
-#### Example: Adding a Calendar Function to a Sub-Community (Group) Structure {#example-adding-a-calendar-function-to-a-sub-community-group-structure}
+**Example: Adding a Calendar Function to a Sub-Community (Group) Structure**
 
 ![chlimage_1-209](assets/chlimage_1-209.png)
 
