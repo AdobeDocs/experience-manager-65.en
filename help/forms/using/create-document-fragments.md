@@ -57,7 +57,7 @@ The Bill Details document fragment includes the following fields:
 
 Execute the following steps to create variables for fields with Agent UI as the data source, create static text, and use form data model elements in the document fragment:
 
-1. Select **Forms** &gt; **Document Fragments**.
+1. Select **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 
 1. Select **Create** &gt; **Text**.
 1. Specify the following information:
@@ -122,7 +122,7 @@ The Customer Details document fragment includes the following fields:
 
 Execute the following steps to create variables for fields with Agent UI as the data source, create static text, and use form data model elements in the document fragment:
 
-1. Select **Forms** &gt; **Document Fragments**.
+1. Select **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Select **Create** &gt; **Text**.
 1. Specify the following information:
 
@@ -185,7 +185,7 @@ The Bill Summary document fragment includes the following fields:
 
 Execute the following steps to create variables for fields with Agent UI as the data source, create static text, and use form data model elements in the document fragment:
 
-1. Select **Forms** &gt; **Document Fragments**.
+1. Select **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Select **Create** &gt; **Text**.
 1. Specify the following information:
 
@@ -252,7 +252,7 @@ The Summary of charges document fragment includes the following fields:
 
 Execute the following steps to create static text and use form data model elements in the document fragment:
 
-1. Select **Forms** &gt; **Document Fragments**.
+1. Select **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Select **Create** &gt; **Text**.
 1. Specify the following information:
 
