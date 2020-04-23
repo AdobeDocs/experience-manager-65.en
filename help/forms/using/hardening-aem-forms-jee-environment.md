@@ -181,7 +181,7 @@ To run the application server on which AEM Forms on JEE is deployed, using a spe
     * Deny log on locally
     * Log on as Service (should be already set)
 
-1. Give the new user account the Read & Execute, List Folder Contents, and Read permissions for the AEM Forms on JEE web content directories item.
+1. Give the new user account Read & Execute, Write, Modify, List Folder Contents, and Read permissions to complete AEM Forms on JEE installation directory and Global Document Storage (GDS) directory. The location of the GDS directory is configured manually during the AEM Forms installation process. If the location setting remains empty during installation, the location defaults to a directory under the application server installation at [JBoss root]/server/[type]/svcnative/DocumentStorage.
 1. Start the application server.
 
 **Disabling the Configuration Manager bootstrap servlet**
