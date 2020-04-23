@@ -48,7 +48,7 @@ The **Create CSV Export** wizard allows you to select:
 
 The resulting `export.csv` file can be opened in Excel or any other compatible application.
 
-![]() ![etc-01](assets/etc-01.png)
+![etc-01](assets/etc-01.png)
 
 The create **CSV Report** option is available when browsing the **Sites** console (in List view): it is an option of the **Create** drop down menu:
 
