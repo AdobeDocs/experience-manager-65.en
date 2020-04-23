@@ -76,12 +76,17 @@ You can use AEM Inbox to run and monitor Forms-centric AEM Workflows on OSGi. Wh
   </tr>
   <tr>
    <td>Queues (shared personal queue, Claim tasks from queue)</td>
-   <td>Not Supported</td>
+   <td>Supported</td>
    <td>Supported</td>
   </tr>
   <tr>
    <td>Out-of-office notification</td>
-   <td>Not Supported</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+    <tr>
+   <td>Customizing UI elements</td>
+   <td>Supported</td>
    <td>Supported</td>
   </tr>
   <tr>
@@ -300,6 +305,11 @@ Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE
   </tr>
   <tr>
    <td>Gateways , NO WAIT </td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+   <tr>
+   <td>Variables to store data </td>
    <td>Supported</td>
    <td>Supported</td>
   </tr>
