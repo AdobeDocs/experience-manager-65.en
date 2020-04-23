@@ -197,7 +197,7 @@ From left to right they are:
 
 * **Delete Site** 
   
-  Select the delete icon to delete the community site from within **[UIControl Communities > Sites console]**. This action removes all the items associated with the site, such as UGC, user groups, assets and database records.
+  Select the delete icon to delete the community site from within **[!UICONTROL Communities > Sites console]**. This action removes all the items associated with the site, such as UGC, user groups, assets and database records.
 
 ![siteactions](assets/siteactions.png)
 
@@ -207,17 +207,17 @@ From left to right they are:
 >
 >On the author instance, from the main menu:
 >
->1. Navigate to **[UIControl Tools > Operations > Replication]** menu.
->1. Select **[UIControl Agents on author]**.
->1. Select **[UIControl Default Agent (publish)]**.
->1. Next to **[UIControl Settings]**, select **[UIControl Edit]**.
->1. In pop-up dialog for Agent Settings, select **[UIControl Transport]** tab.
+>1. Navigate to **[!UICONTROL Tools > Operations > Replication]** menu.
+>1. Select **[!UICONTROL Agents on author]**.
+>1. Select **[!UICONTROL Default Agent (publish)]**.
+>1. Next to **[!UICONTROL Settings]**, select **[!UICONTROL Edit]**.
+>1. In pop-up dialog for Agent Settings, select **[!UICONTROL Transport]** tab.
 >1. In URI, change the port number, 4503, to the desired port number >
 >    * For example, to use port 6103:
 >      https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >
->1. Select **[UIControl OK]**.
->1. (Optional) Select **[UIControl Clear]** or **[UIControl Force Retry]** to reset the replication queue.
+>1. Select **[!UICONTROL OK]**.
+>1. (Optional) Select **[!UICONTROL Clear]** or **[!UICONTROL Force Retry]** to reset the replication queue.
 >
 
 ### Select Publish {#select-publish}

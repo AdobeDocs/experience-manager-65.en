@@ -156,15 +156,15 @@ If not enabled, the video heartbeat code is never instantiated and only the vide
 
 To create a new Analytics Integration, which integrates Adobe Analytics with the AEM community site, using the standard UI on the author instance:
 
-* From global navigation: **[UIControl Tools > Deployment > Cloud Services]**
-* Scroll-down to **[UIControl Adobe Analytics]**
-* Select **[UIControl Configure Now]** or **[UIControl Show Configurations]**
+* From global navigation: **[!UICONTROL Tools > Deployment > Cloud Services]**
+* Scroll-down to **[!UICONTROL Adobe Analytics]**
+* Select **[!UICONTROL Configure Now]** or **[!UICONTROL Show Configurations]**
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
 ### Create Configuration Dialog {#create-configuration-dialog}
 
-* Select `[+]` icon next to **[UIControl  Available Configurations]** to create a new configuration
+* Select `[+]` icon next to **[!UICONTROL  Available Configurations]** to create a new configuration
 
 On the Create Configuration dialog, the values to be entered identify the configuration.
 
@@ -243,7 +243,7 @@ To save the settings:
 
 After successful configuration of the basic connection to Adobe Analytics, it is necessary to create or edit a framework for the community site. The purpose of the framework is to map Communities feature (AEM) variables to Analytics (report suite) variables.
 
-* Select `[+]` icon next to **[UIControl  Available Frameworks]** to create a new framework
+* Select `[+]` icon next to **[!UICONTROL  Available Frameworks]** to create a new framework
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 

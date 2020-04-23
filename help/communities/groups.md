@@ -47,7 +47,7 @@ The different facets of community groups are:
 To access the Groups console:
 
 * On author, sign-in with administrator privileges.
-* From global navigation: **[UICONTROL Communities]** > **[UICONTROL Sites]**.
+* From global navigation: **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 * Select an existing community site folder to open it.
 * Select an instance of a community site within the folder.
 
