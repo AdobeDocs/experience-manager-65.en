@@ -13,11 +13,11 @@ discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 
 # Using Liking {#using-liking}
 
-The `Liking`component is a useful tool that allows users to express an opinion about a particular piece of content, such as an comment within a forum. With the `Liking`component, members select the heart icon to indicate a positive opinion.
+The `Liking` component is a useful tool that allows users to express an opinion about a particular piece of content, such as an comment within a forum. With the `Liking` component, members select the heart icon to indicate a positive opinion.
 
 ## Adding Liking to a Page {#adding-liking-to-a-page}
 
-To add a `Liking` component to a page in author mode, use the component browser to locate
+To add a `Liking` component to a page in author mode, use the component browser to locate:
 
 * `Communities / Liking`
 
@@ -40,12 +40,15 @@ Under the **[!UICONTROL Texts & Labels]** tab, specify the properties used to re
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
 * **[!UICONTROL Positive Response Label]**
+  
   (*Required*) The property name for a positive response.
 
 * **[!UICONTROL Negative Response Label]**
+  
   (*Required*) The property name for a negative response.
 
 * **[!UICONTROL Tally Name]**
+  
   (*Required*) The internal, identifiable property name for this instance of a voting component.
 
 ## Site Visitor Experience {#site-visitor-experience}
