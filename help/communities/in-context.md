@@ -25,11 +25,11 @@ Visit the moderation overview for a description of [moderation actions](moderate
 
 The UI presented to the moderator on the publish instance is contained within the dialog for posting and managing user generated content (UGC). The elements of the UI are determined by the status of the site visitor - whether they are...
 
-1. The member who posted the content
-1. A trusted member moderator
-1. An administrator
-1. Signed in, but neither an administrator, moderator, nor author of the content
-1. Not signed in
+1. The member who posted the content.
+1. A trusted member moderator.
+1. An administrator.
+1. Signed in, but neither an administrator, moderator, nor author of the content.
+1. Not signed in.
 
 ## Example {#example}
 
@@ -93,11 +93,11 @@ On author, log in as admin and add Boyd Larsen (boyd.larsen@dodgit.com) as a new
 
 On publish, log in as Boyd Larsen and access the thread by selecting `Forum`, and then `Read more` for the hummingbird post.
 
-Notice
+Notice:
 
-* Boyd has not participated in the forum
-* Boyd can not Delete anything
-* Boyd is signed in and can Reply or Flag content
+* Boyd has not participated in the forum.
+* Boyd can not Delete anything.
+* Boyd is signed in and can Reply or Flag content.
 
 Have Boyd select Flag to flag the content posted by Andrew.
 
@@ -109,10 +109,10 @@ Log Out
 
 Log In as an Administrator (admin) and access the thread by selecting Forum, and then Read more for a post.
 
-Notice
+Notice:
 
-* Admin can Flag, Delete, Edit, Deny, Cut, Close, Pin, Feature
-* Admin may select Administration to access the moderation console
+* Admin can Flag, Delete, Edit, Deny, Cut, Close, Pin, Feature.
+* Admin may select Administration to access the moderation console.
 
 ![communityadmin-forum](assets/communityadmin-forum.png)
 
@@ -130,12 +130,12 @@ Log Out.
 
 Log In as Aaron McDonald (aaron.mcdonal@mailinator.com), a community moderator, and access the thread by selecting Forum, and then Read more for the hummingbird post.
 
-Notice
+Notice:
 
-* Aaron can Reply, Delete, Edit, or Deny his own post
-* Aaron can also Flag/Allow, Reply, Delete, Edit, Deny other content
-* Aaron can Cut the forum topic to move it to another forum for which he moderates
-* Aaron may select Administration to access the moderation console
+* Aaron can Reply, Delete, Edit, or Deny his own post.
+* Aaron can also Flag/Allow, Reply, Delete, Edit, Deny other content.
+* Aaron can Cut the forum topic to move it to another forum for which he moderates.
+* Aaron may select Administration to access the moderation console.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -153,11 +153,11 @@ Log Out.
 
 Log In as Rebekah Larsen (rebekah.larsen@mailinator.com), a community member who started the thread, and access the thread by selecting Forum, and then Read more for the hummingbird post.
 
-Notice
+Notice:
 
-* Rebekah can Delete or Edit her own post
-* Rebekah can also Reply to or Flag other content
-* Rebekah can not access the moderation console
+* Rebekah can Delete or Edit her own post.
+* Rebekah can also Reply to or Flag other content.
+* Rebekah can not access the moderation console.
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
