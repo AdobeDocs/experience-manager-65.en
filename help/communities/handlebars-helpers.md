@@ -23,11 +23,12 @@ The implementation includes a client-side and a server-side definition. It is al
 
 The custom SCF helpers delivered with AEM Communities are defined in the [client libarry](../../help/sites-developing/clientlibs.md):
 
-* /etc/clientlibs/social/commons/scf/helpers.js
+* `/etc/clientlibs/social/commons/scf/helpers.js`
 
 >[!NOTE]
->
->Be sure to install the [latest Communities feature pack](deploy-communities.md#latestfeaturepack).
+ >
+ >Be sure to install the [latest Communities feature pack](deploy-communities.md#latestfeaturepack).
+ >
 
 ## Abbreviate {#abbreviate}
 
@@ -43,19 +44,19 @@ If safeString is set to true, then the returned string is a SafeString.
 
 * **context**: String
 
-  (optional) Default is the empty string
+  (Optional) Default is the empty string
 
 * **maxLength**: Number
 
-  (optional) Default is the length of the context.
+  (Optional) Default is the length of the context.
 
 * **maxWords**: Number
 
-  (optional) Default is the number of words in the trimmed string.
+  (Optional) Default is the number of words in the trimmed string.
 
 * **safeString**: Boolean
 
-  (optional) Returns a Handlebars.SafeString() if true. Default is false.
+  (Optional) Returns a Handlebars.SafeString() if true. Default is false.
 
 ### Examples {#examples}
 
@@ -91,23 +92,23 @@ A helper to add two spans under a div, one for the full text and the other for t
 
 * **context**: String
 
-  (optional) Default is the empty string.
+  (Optional) Default is the empty string.
 
 * **numChars**: Number
 
-  (optional) The number of characters to display when not displaying full text. Default is 100.
+  (Optional) The number of characters to display when not displaying full text. Default is 100.
 
 * **moreText**: String
 
-  (optional) The text to display indicating there is more text to display. Default is "more".
+  (Optional) The text to display indicating there is more text to display. Default is "more".
 
 * **ellipsesText**: String
 
-  (optional) The text to display indicating there is hidden text. Default is "...".
+  (Optional) The text to display indicating there is hidden text. Default is "...".
 
 * **safeString**: Boolean
 
-  (optional) Boolean value indicating whether or not to apply Handlebars.SafeString() before returning the result. Default is false.
+  (Optional) Boolean value indicating whether or not to apply Handlebars.SafeString() before returning the result. Default is false.
 
 ### Example {#example}
 
@@ -131,11 +132,11 @@ A helper to return a formatted date string.
 
 * **context**: Number
 
-  (optional) a millisecond value offset from January 1, 1970 (epoch). Default is the current date.
+  (Optional) a millisecond value offset from January 1, 1970 (epoch). Default is the current date.
 
 * **format**: String
 
-  (optional) The date format to apply. Default is "YYYY-MM-DDTHH:mm:ss.sssZ" and the result appears as "2015-03-18T18:17:13-07:00"
+  (Optional) The date format to apply. Default is "YYYY-MM-DDTHH:mm:ss.sssZ" and the result appears as "2015-03-18T18:17:13-07:00"
 
 ### Examples {#examples-1}
 
@@ -159,11 +160,11 @@ A helper to return content depending on an equality conditional.
 
 * **lvalue**: String
 
-  The left-hand value to compare
+  The left-hand value to compare.
 
 * **rvalue**: String
 
-  The right-hand value to compare
+  The right-hand value to compare.
 
 ### Example {#example-1}
 
@@ -184,11 +185,11 @@ A block helper that tests the current value of [WCM mode](https://helpx.adobe.co
 
 * **context**: String
 
-  (optional) The string to translate. Required if no default provided.
+  (Optional) The string to translate. Required if no default provided.
 
 * **mode**: String
 
-  (optional) A comma separated list of [WCM modes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) to test if set.
+  (Optional) A comma separated list of [WCM modes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) to test if set.
 
 ### Example {#example-2}
 
@@ -210,15 +211,15 @@ See also [Internationalizing Strings in JavaScript Code](../../help/sites-develo
 
 * **context**: String
 
-  (optional) The string to translate. Required if no default provided.
+  (Optional) The string to translate. Required if no default provided.
 
 * **default**: String
 
-  (optional) The default string to translate. Required if no context provided.
+  (Optional) The default string to translate. Required if no context provided.
 
 * **comment**: String
 
-  (optional) A translation hint
+  (Optional) A translation hint
 
 ### Example {#example-3}
 
@@ -242,27 +243,27 @@ This helper, appropriate only on the server-side, provides functionality similar
 
 * **context**: String or object
 
-  (optional, unless providing a relative path)
+  (Optional, unless providing a relative path)
 
-  use `this`to pass the current context
+  Use `this` to pass the current context.
 
-  use `this.id` to obtain the resource at `id` for rendering the resourceType requested
+  Use `this.id` to obtain the resource at `id` for rendering the resourceType requested.
 
 * **resourceType**: String
 
-  (optional) resource type will default to resource type from context
+  (Optional) resource type will default to resource type from context.
 
 * **template**: String
 
-  path to component script
+  Path to component script.
 
 * **path**: String
 
-  (required) The path to the resource. If path is relative, a context must be provided, else the empty string is returned.
+  (Required) The path to the resource. If path is relative, a context must be provided, else the empty string is returned.
 
 * **authoringDisabled**: Boolean
 
-  (optional) Default is false. For internal use only.
+  (Optional) Default is false. For internal use only.
 
 ### Example {#example-4}
 
@@ -270,7 +271,7 @@ This helper, appropriate only on the server-side, provides functionality similar
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-This will include a new comments component at `this.id` + /comments
+This will include a new comments component at `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
@@ -282,19 +283,19 @@ This helper, appropriate only on the server-side, provides functionality similar
 
 * **categories**: String
 
-  (optional) A list of comma-separated client lib categories. This will include all Javascript and CSS libraries for the given categories. The theme name is extracted from the request.
+  (Optional) A list of comma-separated client lib categories. This will include all Javascript and CSS libraries for the given categories. The theme name is extracted from the request.
 
 * **theme**: String
 
-  (optional) A list of comma-separated client lib categories. This will include all theme related libraries (both CSS and JS) for the given categories. The theme name is extracted from the request.
+  (Optional) A list of comma-separated client lib categories. This will include all theme related libraries (both CSS and JS) for the given categories. The theme name is extracted from the request.
 
 * **js**: String
 
-  (optional) A list of comma-separated client lib categories. This will include all Javascript libraries for the given categories.
+  (Optional) A list of comma-separated client lib categories. This will include all Javascript libraries for the given categories.
 
 * **css**: String
 
-  (optional) A list of comma-separated client lib categories. This will include all CSS libraries for the given categories.
+  (Optional) A list of comma-separated client lib categories. This will include all CSS libraries for the given categories.
 
 ### Examples {#examples-2}
 
@@ -381,7 +382,7 @@ NOTE: this is not a validator and is not to be used for writing attribute values
 
 * **context**: object
 
-  the HTML to encode
+  The HTML to encode.
 
 ### Example {#example-6}
 
@@ -399,7 +400,7 @@ NOTE: this is not a validator and is not to be used for writing actionalable att
 
 * **context**: Object
 
-  The HTML to encode
+  The HTML to encode.
 
 ### Example {#example-7}
 
@@ -417,7 +418,7 @@ NOTE: this is not a validator and is not to be used for writing to arbitrary Jav
 
 * **context**: Object
 
-  The HTML to encode
+  The HTML to encode.
 
 ### Example {#example-8}
 
@@ -435,7 +436,7 @@ NOTE: this may return an empty string
 
 * **context**: Object
 
-  The URL to sanitize
+  The URL to sanitize.
 
 ### Example {#example-9}
 
@@ -447,7 +448,7 @@ NOTE: this may return an empty string
 
 A quick overview of helper functions from [Handlebars.js documentation](https://handlebarsjs.com/expressions.html):
 
-* A Handlebars helper call is a simple identifier (the *name *of the helper), followed by zero or more space-separated parameters.
+* A Handlebars helper call is a simple identifier (the *name* of the helper), followed by zero or more space-separated parameters.
 * Parameters may be a simple String, number, boolean, or JSON object, as well as an optional sequence of key-value pairs (hash arguments) as the last parameter(s).
 * The keys in hash arguments must be simple identifiers.
 * The values in hash arguments are Handlebars expressions: simple identifiers, paths, or Strings.
@@ -566,10 +567,11 @@ public class FooTextHelper implements TemplateHelper<String>{
 ```
 
 >[!NOTE]
->
->A helper created for the server-side must also be created for the client-side.
->
->The component gets re-rendered on the client-side for the logged in user, and if the client-side helper is not found, the component disappears.
+ >
+ >A helper created for the server-side must also be created for the client-side.
+ >
+ >The component gets re-rendered on the client-side for the logged in user, and if the client-side helper is not found, the component disappears.
+ >
 
 ### Client-side Custom Helpers {#client-side-custom-helpers}
 
@@ -595,9 +597,9 @@ function(Handlebars, SCF, $CQ) {
 The custom client-side helpers must be added to a custom client library.
 The clientlib must:
 
-* Include a dependency on `cq.social.scf`
-* Load after Handlebars has been loaded
-* Be [included](clientlibs.md)
+* Include a dependency on `cq.social.scf`.
+* Load after Handlebars has been loaded.
+* Be [included](clientlibs.md).
 
 Note: the SCF helpers are defined in `/etc/clientlibs/social/commons/scf/helpers.js`.
 

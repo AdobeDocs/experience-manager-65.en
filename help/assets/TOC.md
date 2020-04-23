@@ -7,7 +7,7 @@ user-guide-title: AEM 6.5 Assets User Guide
 
 # AEM 6.5 Assets User Guide {#assets}
 
-+ [Assets user guide](home.md)
++ [[!DNL Assets] user guide](home.md)
 + [AEM 6.5 Assets release notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [About DAM](assets.md)
 + [Best practices for assets](best-practices-for-assets.md)
@@ -15,7 +15,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [AEM Assets home page experience](assets-home-page.md)
     + [Search assets in AEM](search-assets.md)
     + [Multilingual assets](multilingual-assets.md)
-    + [Use Adobe Stock assets in AEM Assets](aem-assets-adobe-stock.md)
+    + [Use [!DNL Adobe Stock] assets in AEM Assets](aem-assets-adobe-stock.md)
     + [Previewing 3D assets](previewing-3d-assets.md)
     + [Review folder assets and collections](bulk-approval.md)
     + [Activity stream in timeline](activity-stream.md)
@@ -30,6 +30,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Configuring Dynamic Media - Scene7 mode](config-dms7.md)
     + [Configuring Dynamic Media - Hybrid mode](config-dynamic.md)
     + [Troubleshooting Dynamic Media - Scene7 mode](troubleshoot-dms7.md)
+    + [Migrating from Dynamic Media - Hybrid mode to Dynamic Media - S7 mode](migrate-from-hybrid-to-dms7.md)
     + [Managing Dynamic Media assets](managing-assets.md)
     + [Best practices for optimizing the quality of your images](best-practices-for-optimizing-the-quality-of-your-images.md)
     + [Managing Dynamic Media Viewer Presets](managing-viewer-presets.md)
@@ -69,7 +70,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Customize and extend AEM Assets](extending-assets.md)
     + [Process assets using media handlers and workflows](media-handlers.md)
     + [Extend search functionality](searchx.md)
-    + [Install and configure ImageMagick to work with AEM Assets](best-practices-for-imagemagick.md)
+    + [Install and configure [!DNL ImageMagick] to work with AEM Assets](best-practices-for-imagemagick.md)
     + [Integrate assets with activity stream](extending-activity-stream.md)
     + [Extend Asset Editor](asseteditorx.md)
     + [Assets HTTP API](mac-api-assets.md)

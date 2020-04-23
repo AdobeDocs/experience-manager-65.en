@@ -80,8 +80,9 @@ The following options are available:
 
 **repository provider:** Makes the native repository provider the provider for the repository
 
-***Note**: To select a repository service provider other than those listed, configure RepositoryService in Applications and Services. <!-- Fix broken link(See Managing Services) -->*
+>[!NOTE]
+>
+>To select a repository service provider other than those listed, configure RepositoryService in Applications and Services. <!-- Fix broken link(See Managing Services) -->
 
 1. In administration console, click Services > Connector for IBM FileNet.
 1. In the Repository Service Provider Information area, select the alternative repository service provider, and then click Save.
-

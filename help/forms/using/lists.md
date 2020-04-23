@@ -170,7 +170,9 @@ The Find and Replace feature allows you to search for (and replace) any string o
 
 **Whole word:** Search returns only whole words.
 
-**Note:** If you enter any special characters in the Find text box, the Whole Word option is disabled.
+>[!NOTE]
+>
+>If you enter any special characters in the Find text box, the Whole Word option is disabled.
 
 **Reg ex:** Search using regular expressions. For example, the following regular expression searches for email addresses in a text module:
 

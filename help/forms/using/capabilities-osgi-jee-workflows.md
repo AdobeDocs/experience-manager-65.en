@@ -15,7 +15,7 @@ docset: aem65
 
 ## AEM Inbox and HTML Workspace {#aem-inbox-and-html-workspace}
 
-AEM Inbox is used to run and monitor Forms-centric AEM Workflows on OSGi. HTML Workspace allows you to run and monitor AEM Forms JEE Workflows. The following table lists important actions available in AEM Inbox for Forms-centric AEM Workflows on OSGi and in HTML Workspace for AEM Forms JEE Workflows.
+You can use AEM Inbox to run and monitor Forms-centric AEM Workflows on OSGi. Whereas, HTML Workspace allows you to run and monitor AEM Forms JEE Workflows. The following table helps you understand various important actions available in AEM Inbox for Forms-centric AEM Workflows on OSGi and in HTML Workspace for AEM Forms JEE Workflows.
 
 <table>
  <tbody>
@@ -76,12 +76,17 @@ AEM Inbox is used to run and monitor Forms-centric AEM Workflows on OSGi. HTML W
   </tr>
   <tr>
    <td>Queues (shared personal queue, Claim tasks from queue)</td>
-   <td>Not Supported</td>
+   <td>Supported</td>
    <td>Supported</td>
   </tr>
   <tr>
    <td>Out-of-office notification</td>
-   <td>Not Supported</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+    <tr>
+   <td>Customizing UI elements</td>
+   <td>Supported</td>
    <td>Supported</td>
   </tr>
   <tr>
@@ -94,7 +99,7 @@ AEM Inbox is used to run and monitor Forms-centric AEM Workflows on OSGi. HTML W
 
 ## Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE Process Management) have a different set of capabilities. The following table lists important capabilities and support available for the capabilities in Form-centric AEM Workflows on OSGi and AEM Forms on JEE Workflows:
+Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE Process Management) have a different set of capabilities. The following table helps you understand important capabilities available in Form-centric AEM Workflows on OSGi and AEM Forms on JEE Workflows:
 
 <table>
  <tbody>
@@ -303,6 +308,11 @@ Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE
    <td>Supported</td>
    <td>Supported</td>
   </tr>
+   <tr>
+   <td>Variables to store data </td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
   <tr>
    <td>OR, AND Split</td>
    <td>Not Supported</td>
@@ -316,9 +326,9 @@ Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE
  </tbody>
 </table>
 
-1. You can use Form-centric AEM Workflows on OSGi to sign an already filled adaptive form. Form-centric AEM Workflows on OSGi supports out of the form signing. The [in-form signing](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) experience is not supported.
+1. You can use Form-centric AEM Workflows on OSGi to sign a  filled adaptive form. Form-centric AEM Workflows on OSGi supports out of the form signing. The [in-form signing](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) experience is not supported.
 
-1. You require access to AEM Inbox to run and monitor AEM Forms OSGi AEM Workflows and HTML Workspace to run and monitor AEM Forms JEE Workflows.
+1. You require access to AEM Inbox to run and monitor Form-Centric worklows on AEM Forms OSGi and HTML Workspace to run and monitor AEM Forms JEE Workflows.
 1. Native AEM Forms Document Services are available for both Form-centric AEM Workflows on OSGi and AEM Forms on JEE Workflows. AEM Workflow uses native document services for Form-centric AEM Workflows on OSGi and AEM Forms JEE (Process Management) Workflows.
 1. AEM Forms JEE Workflows can only render an adaptive form. It does not support rendering an adaptive form as a PDF document.
 1. AEM forms JEE Workflows do not have a separate step for Adobe Sign. You require an Adobe Sign enabled adaptive form for AEM forms JEE Workflows. For more details, see [Adobe Sign documentation](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).

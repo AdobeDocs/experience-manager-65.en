@@ -44,8 +44,12 @@ Perform the following steps to create a custom template for various Forms Portal
 
    Add a title that you want displayed while selecting layout templates.
 
-   *Note: The title can be different from the node name of sling:Folder you created.*
-   *The following image depicts the configuration for the Search & Lister component.* ![Creating a sling:Folder](assets/1.png)
+   >[!NOTE]
+   >
+   >The title can be different from the node name of sling:Folder you created.
+
+   The following image depicts the configuration for the Search & Lister component.
+   ![Creating a sling:Folder](assets/1.png)
 
 1. Create a file template.html in this folder to serve as the custom template.
 1. Write the custom template and use custom metadata as described below.
@@ -101,8 +105,10 @@ Various Forms Portal components provide exclusive sets of OOTB metadata that you
 
 * **htmlStyle **& **pdfStyle**: Display style for HTML and PDF icons respectively used for rendering. Valid values are “**__FP_display_none**” or blank.
 
-  **Note:** Remember to use the __FP_display_none class in your custom style sheet
-
+>[!NOTE]
+>
+>Remember to use the __FP_display_none class in your custom style sheet.
+  
 * **downloadUrl**: URL to download an asset.
 
 Support for localization, sorting, and using configuration properties on the user interface (Search & Lister Only):

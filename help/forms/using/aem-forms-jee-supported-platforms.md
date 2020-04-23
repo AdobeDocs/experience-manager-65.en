@@ -518,7 +518,9 @@ For additional reuirements see:
 
 ### Designer {#designer}
 
-**Note:** To install Designer on Windows, run the installer with Administrative privileges.
+>[!NOTE]
+>
+>To install Designer on Windows, run the installer with Administrative privileges.
 
 * Microsoft® Windows® 2016 Server, Microsoft Windows 10
 
