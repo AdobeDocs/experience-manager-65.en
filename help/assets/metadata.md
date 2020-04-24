@@ -1,12 +1,12 @@
 ---
-title: Manage metadata for digital assets
-description: Learn about the types of metadata an how AEM Assets helps manage metadata for assets to allow easier categorization and organization of assets.
+title: Manage metadata for digital assets in [!DNL Adobe Experience Manager].
+description: Learn about the types of metadata an how [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets.
 contentOwner: AG
 ---
 
 # Manage metadata for digital assets {#managing-metadata-for-digital-assets}
 
-Adobe Experience Manager (AEM) Assets keeps metadata for every asset. This allows for a easier categorization and organization of assets and it helps people who are looking for a specific asset. With the ability to extract metadata from files uploaded to AEM Assets, metadata management integrates with the creative workflow. With the ability to keep and manage arbitrary metadata with your assets, AEM Assets makes it possible to automatically organize and process assets based on their metadata.
+[!DNL Adobe Experience Manager Assets] keeps metadata for every asset. This allows for a easier categorization and organization of assets and it helps people who are looking for a specific asset. With the ability to extract metadata from files uploaded to [!DNL Experience Manager Assets], metadata management integrates with the creative workflow. With the ability to keep and manage arbitrary metadata with your assets, [!DNL Experience Manager Assets] makes it possible to automatically organize and process assets based on their metadata.
 
 * [XMP Metadata](xmp.md)
 * [How to edit or add metadata](meta-edit.md)
@@ -23,7 +23,7 @@ Metadata is the collection of all the data available for this image, but that is
 * the size of the image as it was stored in the repository
 * the name of the folder it is contained in
 
-These are the basic metadata properties that AEM can manage for assets, which allows users to see all assets, for example, ordered by their last modification date - useful when trying to discover what assets have recently been added to the repository.
+These are the basic metadata properties that [!DNL Experience Manager] can manage for assets, which allows users to see all assets, for example, ordered by their last modification date - useful when trying to discover what assets have recently been added to the repository.
 
 You can add more high-level data to digital assets, for example:
 
@@ -41,7 +41,7 @@ As metadata is added to assets, the value of the asset grows, because the asset 
 * easier to manage - you can find assets with the same set of properties easier and apply changes to them
 * more complex - the more metadata you have added to an asset, the more important managing metadata becomes
 
-For these reasons, AEM Assets provides you with the right means of creating, managing, and exchanging metadata for your digital assets.
+For these reasons, [!DNL Assets] provides you with the right means of creating, managing, and exchanging metadata for your digital assets.
 
 ## Metadata Basics {#metadata-basics}
 
@@ -58,7 +58,7 @@ There are two basic types of metadata:
 
 #### Technical metadata {#technical-metadata}
 
-Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. Technical metadata can be determined automatically by AEM Assets and other software and may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Examples of technical metadata are as follows:
+Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. Technical metadata can be determined automatically by [!DNL Experience Manager Assets] and other software and may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Examples of technical metadata are as follows:
 
 * the size of a file
 * the dimensions (height and width) of an image
@@ -71,7 +71,7 @@ Descriptive metadata is metadata concerned with the application domain, for exam
 
 Because of the high cost of the manual effort required to create descriptive metadata information, standards have been established to ease the exchange of metadata across software systems and organizations.
 
-AEM Assets supports all relevant standards for metadata management.
+[!DNL Experience Manager Assets] supports all relevant standards for metadata management.
 
 Because of the importance of metadata and the high manual involvement required to create metadata, standards have been established that make it easier to exchange.
 
@@ -79,14 +79,14 @@ Because of the importance of metadata and the high manual involvement required t
 
 There are a variety of ways that metadata can be embedded into files. A selection of encoding standards are supported:
 
-* XMP: used by AEM Assets to store the extracted metadata within the repository.
+* XMP: used by [!DNL Assets] to store the extracted metadata within the repository.
 * ID3: for audio and video files.
 * EXIF: for image files.
 * Other/Legacy: from Microsoft Word, PowerPoint, Excel and so on.
 
 #### XMP {#xmp}
 
-XMP means Extensible Metadata Platform and is the metadata standard that is used by AEM Assets for all metadata management. Besides offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich content model and is supported by Adobe and other companies, so that users of XMP in combination with AEM Assets have a powerful platform to build upon.
+XMP means Extensible Metadata Platform and is the metadata standard that is used by [!DNL Experience Manager Assets] for all metadata management. Besides offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich content model and is supported by Adobe and other companies, so that users of XMP in combination with [!DNL Experience Manager Assets] have a powerful platform to build upon.
 
 #### ID3 {#id}
 
@@ -106,11 +106,11 @@ EXIF means Exchangeable image file format and is the most popular metadata forma
 
 A major limitation of EXIF is that it is not supported by other popular image file formats such as BMP, GIF, or PNG.
 
-EXIF stores metadata as pairs of a metadata name and a metadata value. These metadata name-value-pairs are also called tags, not to be confused with the tagging in AEM.
+EXIF stores metadata as pairs of a metadata name and a metadata value. These metadata name-value-pairs are also called tags, not to be confused with the tagging in [!DNL Experience Manager].
 
 As EXIF is automatically created by modern digital cameras and supported through modern graphics software, it can be seen as the lowest common denominator for metadata management.
 
-Most of the metadata fields defined by EXIF are of a highly technical nature and of limited use for descriptive metadata management. For this reason, AEM Assets offers mapping of EXIF properties into [common metadata schemata](metadata-schemas.md) and into [XMP](xmp-writeback.md), the powerful metadata format AEM Assets uses for metadata management.
+Most of the metadata fields defined by EXIF are of a highly technical nature and of limited use for descriptive metadata management. For this reason, [!DNL Assets] offers mapping of EXIF properties into [common metadata schemata](metadata-schemas.md) and into [XMP](xmp-writeback.md), the powerful metadata format [!DNL Assets] uses for metadata management.
 
 #### Other Metadata {#other-metadata}
 
@@ -122,7 +122,7 @@ Metadata schemas are predefined sets of metadata property definitions that can b
 
 You can also design your own metadata schemata if none exist that meet your needs (be careful, however, not to duplicate something that already exists). Within an organization, separating schemata makes it easier to share metadata among organizations.
 
-AEM provides you with an out-of-the-box list of the most popular metadata schemata, allowing you to jump-start your metadata strategy and pick the metadata properties that you need from an already-defined schemata.
+[!DNL Experience Manager] provides you with an out-of-the-box list of the most popular metadata schemata, allowing you to jump-start your metadata strategy and pick the metadata properties that you need from an already-defined schemata.
 
 The metadata schemata supported are listed in the following section.
 
@@ -145,8 +145,8 @@ The metadata schemata supported are listed in the following section.
 
 * acdsee - metadata managed by the ACDSee program [www.acdsee.com/](https://www.acdsee.com/)
 * album - Adobe Photoshop Album
-* cq - used by AEM Assets
-* dam - used by AEM Assets
+* cq - used by [!DNL Experience Manager Assets]
+* dam - used by [!DNL Experience Manager Assets]
 * dex - Optima SC Description Explorer
 * crs - Adobe Photoshop Camera Raw
 * lr - Adobe Lightroom

@@ -40,7 +40,7 @@ Before you can use the Smart Content Service, ensure the following to create an 
 
 ## Onboarding {#onboarding}
 
-The Smart Content Service is available for purchase as an add-on to Experience Manager. After you purchase, an email is sent to the administrator of your organization with a link to Adobe IO.
+The Smart Content Service is available for purchase as an add-on to Experience Manager. After you purchase, an email is sent to the administrator of your organization with a link to Adobe I/O.
 
 The administrator can follow the link to integrate the Smart Content Service with Experience Manager. To integrate the service with Experience Manager Assets, see [Configure Smart Tags](config-smart-tagging.md).
 

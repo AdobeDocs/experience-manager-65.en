@@ -4,19 +4,19 @@ description: This article describes how to generate high-quality thumbnails and 
 contentOwner: AG
 ---
 
-# Use PDF rasterizer {#using-pdf-rasterizer}
+# Use PDF Rasterizer {#using-pdf-rasterizer}
 
 Sometimes, when you upload large, content-intensive PDF or AI files to Adobe Experience Manager (AEM) Assets, the default library may not generate an accurate output. In such cases, Adobe's PDF Rasterizer library can generate more reliable and accurate output compared to the output from a default library.
 
 Adobe recommends using the PDF Rasterizer library for the following:
 
-* Heavy, content intensive AI/PDF files
-* AI/PDF files with thumbnails not generated out of the box
-* AI files with Pantone Matching System (PMS) colors
+* Heavy, content intensive AI/PDF files.
+* AI and PDF files with thumbnails not generated out of the box.
+* AI files with Pantone Matching System (PMS) colors.
 
 Thumbnails and previews generated using PDF Rasterizer are better in quality compared to out-of-the-box output and, therefore, provide consistent viewing experience across devices. The Adobe PDF Rasterizer library does not support any color space conversion. It always outputs to RGB irrespective of the color space of the source file.
 
-1. Install the PDF Rasterizer package on your AEM instance from [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Install the PDF Rasterizer package on your AEM deployment from [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
@@ -103,4 +103,4 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Save the workflow.
-1. Upload a PDF or AI file to AEM Assets. PDF Rasterizer generates the thumbnails and web renditions for the file.
+1. Upload a PDF or an AI file to AEM Assets. PDF Rasterizer generates the thumbnails and web renditions for the file.

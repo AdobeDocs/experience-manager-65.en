@@ -8,7 +8,7 @@ contentOwner: AG
 
 You can integrate Adobe Experience Manager (AEM) with the Smart Content Service using Adobe I/O. Use this configuration to access the Smart Content Service from within AEM.
 
-The article details out the following key tasks that are required to configure the Smart Content Service. At the back end, the AEM server authenticates your service credentials with the Adobe IO gateway before forwarding your request to the Smart Content Service.
+The article details out the following key tasks that are required to configure the Smart Content Service. At the back end, the AEM server authenticates your service credentials with the Adobe I/O gateway before forwarding your request to the Smart Content Service.
 
 * Create a Smart Content Service configuration in AEM to generate a public key. Obtain public certificate for OAuth integration.
 * Create an integration in Adobe I/O and upload the generated public key.

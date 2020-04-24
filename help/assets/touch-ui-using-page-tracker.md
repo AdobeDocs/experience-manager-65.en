@@ -12,7 +12,7 @@ To capture events, such as clicks and so on that are specific to assets, you als
 
 The following sample code displays how a web page that contains both the Page Tracker code and Embed code looks like:
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>

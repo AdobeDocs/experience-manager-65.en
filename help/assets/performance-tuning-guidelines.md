@@ -264,7 +264,7 @@ Some optimizations can be done on the Oak index configurations that can help imp
 
 1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
 
-   ```
+   ```conf
    slingResource
    name="sling:resource"
    ordered=false

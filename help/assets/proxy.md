@@ -94,7 +94,6 @@ The following is an example of API usage:
 
  // to remove job and cleanup
  proxyJobService.removeJob(jobId);
-
 ```
 
 ### Cloud Service Configurations {#cloud-service-configurations}
