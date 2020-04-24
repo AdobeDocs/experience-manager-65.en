@@ -13,27 +13,31 @@ docset: aem65
 
 ---
 
-# Moderating Community Content{#moderating-community-content}
+# Moderating Community Content {#moderating-community-content}
 
 ## Overview {#overview}
 
 Community content, also known as user generated content (UGC), is created when a member (signed in site visitor) posts content from a published community site through interaction with one of the following community components :
 
-* [blog](/help/communities/blog-feature.md) : members post a blog article or comment
-* [calendar](/help/communities/calendar.md) : members post a calendar event or comment
-* [comments](/help/communities/comments.md) : members post a comment or reply to a comment
+* [Blog](/help/communities/blog-feature.md): members post a blog article or comment.
+* [Calendar](/help/communities/calendar.md): members post a calendar event or comment.
+* [Comments](/help/communities/comments.md): members post a comment or reply to a comment.
 
-* [forum](/help/communities/forum.md) : members post a new topic or reply to a topic
-* [ideation](/help/communities/ideation-feature.md) : members post an idea or comment
-* [QnA](/help/communities/working-with-qna.md) : members create a question or answer a question
-* [reviews](/help/communities/reviews.md) : members post a comment when rating an item
+* [Forum](/help/communities/forum.md): members post a new topic or reply to a topic.
+* [Ideation](/help/communities/ideation-feature.md): members post an idea or comment.
+* [QnA](/help/communities/working-with-qna.md): members create a question or answer a question.
+* [Reviews](/help/communities/reviews.md): members post a comment when rating an item.
 
-Moderation of UGC is useful for recognizing positive contributions as well as limiting negative ones (such as spam and abusive language). UGC can be moderated from several environments : [](/help/communities/working-with-srp.md)
+Moderation of UGC is useful for recognizing positive contributions as well as limiting negative ones (such as spam and abusive language). UGC can be moderated from several environments: 
 
-* [bulk moderation console](/help/communities/moderation.md)
+* [Community content storate](working-with-srp.md)
+
+* [bulk moderation console](moderation.md)
+
   The Moderation console is accessible by administrators and [community moderators](/help/communities/users.md) in the public environment as well as by administrators in the author environment. This is possible when community content is stored in a [common store](/help/communities/working-with-srp.md).
 
-* [in-context moderation](/help/communities/in-context.md)
+* [In-context moderation](in-context.md)
+
   Moderation in the publish environment may be performed by administrators and community moderators directly on the page where the content was posted.
 
 ## Moderation Actions {#moderation-actions}
@@ -41,19 +45,24 @@ Moderation of UGC is useful for recognizing positive contributions as well as li
 The actions which can be performed on posted content (UGC) varies depending on the user identity and the environment. The table below uses the following terminology to describe the various roles according to user identity :
 
 * `Admin`
-  a user who is a member of [community-administrators](/help/communities/users.md) group
+  
+  A user who is a member of [community-administrators](users.md) group.
 
 * `Moderator`
-  a member of a [community moderators](/help/communities/users.md#publishenvironmentusersandgroups) group (has [moderator permissions](/help/communities/in-context.md#moderatorpermissions))
+  
+  A member of a [community moderators](users.md#publishenvironmentusersandgroups) group (has [moderator permissions](in-context.md#moderatorpermissions)).
 
 * `Creator`
-  the user who posted the content
+  
+  The user who posted the content.
 
 * `Member`
-  a signed-in user without special permissions
+  
+  A signed-in user without special permissions.
 
 * `Visitor`
-  an anonymous user
+  
+  An anonymous user.
 
 <table>
  <tbody>
@@ -178,12 +187,13 @@ The Allow action is an option for UGC that has been Flagged, Denied or has not b
 
 ### Premoderation {#premoderation}
 
-When UGC is premoderated, the post will not appear on the published site until approved by a moderation action. During creation of a [community site](/help/communities/sites-console.md), checking the box `[Content is Premoderated](/help/communities/sites-console.md#moderation)` will enable premoderation for the entire site. Once components are placed on a page, components which support moderation can be configured for premoderation using a setting in their edit dialog :
+When UGC is premoderated, the post will not appear on the published site until approved by a moderation action. During creation of a [community site](/help/communities/sites-console.md), checking the box [Content is Premoderated](sites-console.md#moderation) will enable premoderation for the entire site. Once components are placed on a page, components which support moderation can be configured for premoderation using a setting in their edit dialog:
 
-* [comments](/help/communities/comments.md) and [reviews](/help/communities/reviews.md)
-  on **User Moderation** tab, check **Pre-Moderation**
-* [forum](/help/communities/forum.md), [ideation](/help/communities/ideation-feature.md), [QnA](/help/communities/working-with-qna.md), and [calendar](/help/communities/calendar.md)
-  on **Settings** tab, check **Moderated**
+* [Comments](comments.md) and [reviews](reviews.md)
+  in **[!UICONTROL User Moderation]** > **[!UICONTROL Pre-Moderation]**.
+
+* [Forum](/help/communities/forum.md), [ideation](/help/communities/ideation-feature.md), [QnA](/help/communities/working-with-qna.md), and [calendar](/help/communities/calendar.md)
+  in **[!UICONTROL Settings]** > **[!UICONTROL Moderated]**.
 
 ### Spam Detection {#spam-detection}
 
@@ -201,31 +211,32 @@ Moderator can see such a post and mark the same to allow or deny from appearing 
 
 To enable spam detection engine, follow these steps:
 
-1. Open [Web Console](https://localhost:4502/system/console/configMgr), by going to /system/console/configMgr.
+1. Open [Web Console](https://localhost:4502/system/console/configMgr), by going to `/system/console/configMgr`.
 
 1. Locate **AEM Communities Auto Moderation** configuration, and edit it.
-1. Add the "SpamProcess" entry.
+1. Add the **[!UICONTROL SpamProcess]** entry.
 
 ![spamprocess](assets/spamprocess.png)
 
 >[!NOTE]
->
->Spam detection is only implemented for English locale.
+ >
+ >Spam detection is only implemented for English locale.
+ >
 
 ### Sentiment {#sentiment}
 
 Sentiment is calculated based on the number of positive and negative keywords ([watchwords](#configuringwatchwords)) present in a post (UGC).
 
-The sentiment analysis uses a set of pre-configured rules and calculates the sentiment of the UGC. The default rules are located at `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
+The sentiment analysis uses a set of pre-configured rules and calculates the sentiment of the UGC. The default rules are located at: `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
 
 The value the rules generate are from 1 (all negative, no positive words) to 10 (all positive, no negative words). A sentiment value of 5 is a neutral sentiment and is the default.
 
 The rules defined in the /libs component are:
 
-* Rule 1 : set value to 1 if there are no positive words and at least one negative word
-* Rule 2 : set value to 10 if there are no negative words and at least one positive word
-* Rule 3 : set value to 3 if there are more negative words than positive words
-* Rule 4 : set value to 8 if there are more positive words than negative words
+* Rule 1: set value to 1 if there are no positive words and at least one negative word.
+* Rule 2: set value to 10 if there are no negative words and at least one positive word.
+* Rule 3: set value to 3 if there are more negative words than positive words.
+* Rule 4: set value to 8 if there are more positive words than negative words.
 
 To overwrite or add rules, create a set of rules in the /apps directory following the structure of the default rules. Edit the sentiment configuration to identify the location of the rules.
 
@@ -235,36 +246,39 @@ From the [bulk moderation console](/help/communities/moderation.md), it is possi
 
 #### Watchwords {#watchwords}
 
-AEM communities provides a *watchword analyzer *as a step in the process to evalute [sentiment](#sentiment). The contribution to the sentiment value provided by watchwords is due to a comparison of negative and positive watchwords used in the posted content, as well as forbidden words.
+AEM communities provides a *watchword analyzer* as a step in the process to evalute [sentiment](#sentiment). The contribution to the sentiment value provided by watchwords is due to a comparison of negative and positive watchwords used in the posted content, as well as forbidden words.
 
 #### Configure Sentiment and Watchwords {#configure-sentiment-and-watchwords}
 
 The list of positive and negative watchwords can be customized as can be the sentiment rules.
 
-The default list of watchwords may be entered as properties of a node in the respository, similar to the default or by overriding the default by configuring the OSGi service `sentimentprocess.name`with the list of words.
+The default list of watchwords may be entered as properties of a node in the respository, similar to the default or by overriding the default by configuring the OSGi service `sentimentprocess.name` with the list of words.
 
 The **sentimentprocess.name** may also be modified to reference the location of a custom set of sentiment rules.
 
-To configure sentiment and watchwords :
+To configure sentiment and watchwords:
 
-* on an author instance
-* sign in as administrator
-* open [Web Console](https://localhost:4502/system/console/configMgr)
-* locate `sentimentprocess.name`
-* select the configuration to open in edit mode
+* Login to your author instance as administrator.
+* Open [Web Console](https://localhost:4502/system/console/configMgr).
+* Locate `sentimentprocess.name`.
+* Select the configuration to open in edit mode.
 
 ![sentimentprocess](assets/sentimentprocess.png)
 
 * **Positive Watchwords**
+  
   A comma separated list of words contributing to a positive sentiment that override the defaults. Default is an empty list.
 
 * **Negative Watchwords**
+  
   A comma separated list of words contributing to a negative sentiment that override the defaults. Default is an empty list.
 
 * **Explicit Path to Watchwords Node**
+  
   The repository location of a node containing default `positive` and `negative` properties specifying default watchwords. Default is `/libs/settings/community/watchwords/default`.
 
 * **Sentiment Rules**
+  
   The repository location of the rules for calculating sentiment based on positive and negative watchwords. Default is `/libs/cq/workflow/components/workflow/social/sentiments/rules` (however, there is no longer any workflow involved).
 
 Following is an example of a custom entry for the default watchwords, when `Explicit Path to Watchwords Node` is set to `/libs/settings/community/watchwords/default`.
@@ -273,10 +287,10 @@ Following is an example of a custom entry for the default watchwords, when `Expl
 
 ### Moderator Permissions {#moderator-permissions}
 
-The following permissions, when assigned to the same resource, are collectively referred to as **`moderator permissions`** :
+The following permissions, when assigned to the same resource, are collectively referred to as `moderator permissions`:
 
 * `Read`
-* **`Modify`**
+* `Modify`
 * `Create`
 * `Delete`
 * `Replicate`
