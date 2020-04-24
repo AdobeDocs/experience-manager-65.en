@@ -19,8 +19,8 @@ docset: aem65
 
 Now that the newly created communities site has been published, browse to the URL displayed when creating the site, but on the publish server, e.g.
 
-* author URL = https://localhost:4502/content/sites/engage/en.html
-* publish URL = https://localhost:4503/content/sites/engage/en.html
+* A\uthor URL = https://localhost:4502/content/sites/engage/en.html
+* Publish URL = https://localhost:4503/content/sites/engage/en.html
 
 To minimize confusion as to which member is signed in on author and publish, it is suggested to use different browsers for each instance.
 
