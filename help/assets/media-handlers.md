@@ -458,7 +458,7 @@ The `CommandLineProcess` process performs the following operations in the order 
 
 ### An example using ImageMagick {#an-example-using-imagemagick}
 
-The following example shows you how to set up the command line process step so that every time an asset with the mime-type gif or tiff is added to /content/dam on the AEM server, a flipped image of the original is created together with three additional thumbnails (140x100, 48x48 and 10x250).
+The following example shows you how to set up the command line process step so that every time an asset with the mime-type gif or tiff is added to /content/dam on the AEM server, a flipped image of the original is created together with three additional thumbnails (140x100, 48x48, and 10x250).
 
 To do this, you will use ImageMagick. ImageMagick is a free software suite to create, edit, and compose bitmap images and is typically used from the command line.
 
@@ -492,7 +492,7 @@ Then, add the command line process step to the **[!UICONTROL DAM Update Asset]**
 
 To test the modified workflow, add an asset to `/content/dam`.
 
-1. In the file system, get a .tiff image of your choice. Rename it to `myImage.tiff` and copy it to `/content/dam`, for example by using WebDAV.
+1. In the file system, get a TIFF image of your choice. Rename it to `myImage.tiff` and copy it to `/content/dam`, for example by using WebDAV.
 1. Go to the **[!UICONTROL CQ5 DAM]** console, for example `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Open the asset **[!UICONTROL myImage.tiff]** and verify that the flipped image and the three thumbnails have been created.
 
@@ -512,7 +512,7 @@ For example, if ImageMagick is installed on the disk hosting the AEM server and 
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-then, when the workflow runs, the step only applies to assets that have image/gif or mime:image/tiff as mime-types, it creates a flipped image of the original, converts it into .jpg and creates three thumbnails that have the dimensions: 140x100, 48x48 and 10x250.
+then, when the workflow runs, the step only applies to assets that have `image/gif` or `mime:image/tiff` as `mime-types`, it creates a flipped image of the original, converts it into JPG and creates three thumbnails that have the dimensions: 140x100, 48x48, and 10x250.
 
 Use the following [!UICONTROL Process Arguments] to create the three standard thumbnails using ImageMagick:
 
