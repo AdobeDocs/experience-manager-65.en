@@ -25,22 +25,24 @@ Using the Communities Members and Groups consoles, members and member groups reg
 
 For managing users and groups registered in the *author* environment, is is necessary to use the platform's security console:
 
-* From global navigation select `Tools, Security, Users`
-* From global navigation select `Tools, Security, Groups`
+* From global navigation, select **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
+* From global navigation, select **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Groups]**.
 
 >[!NOTE]
->
->With sample content deployed and enabled, many sample users exist in both the author and publish environments. These users will not be present when running with [nosamplecontent runmode](../../help/sites-administering/production-ready.md).
+ >
+ >With sample content deployed and enabled, many sample users exist in both the author and publish environments. These users will not be present when running with [nosamplecontent runmode](../../help/sites-administering/production-ready.md).
+ >
 
 ## Members Console {#members-console}
 
 In the author environment, to reach the Members console for managing members registered in the publish environment:
 
-* From global navigation: **[!UICONTROL Navigation > Communities > Members]**
+* From global navigation, select **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Members]**
 
 >[!CAUTION]
->
->It will not be possible to use the Members console if the [tunnel service](deploy-communities.md#tunnel-service-on-author) is not enabled.
+ >
+ >It will not be possible to use the Members console if the [tunnel service](deploy-communities.md#tunnel-service-on-author) is not enabled.
+ >
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -54,7 +56,7 @@ Select the search icon on the left side of the `Members` header to toggle the se
 
 ### Member Statistics {#member-statistics}
 
-The columns displaying `Views`, `Posts`, `Follows`and `Likes` are updated when the user is a member of one or more community sites with Adobe Analytics [enabled](sites-console.md#analytics).
+The columns displaying `Views`, `Posts`, `Follows` and `Likes` are updated when the user is a member of one or more community sites with Adobe Analytics [enabled](sites-console.md#analytics).
 
 ### Export CSV {#export-csv}
 
@@ -75,32 +77,38 @@ Select `Create Member` in order to create a user in the publish environment.
 Most fields are optional fields the member can later fill-in on their profile.
 
 * **[!UICONTROL ID]**
-(*required*) The authorizable ID is the member's sign-in ID.
+
+(*Required*) The authorizable ID is the member's sign-in ID.
 By default, the ID is set to the value of the required email address.
-*Once created, the ID may not be modified.*
+*Once created, the ID may not be modified*.
 
 * **[!UICONTROL Email Address]**
-(*required*) The member's email address.
+
+(*Required*) The member's email address.
 The member may change their email address when updating their profile.I
 If the ID defaulted to the email address, the ID will *not* change when the email address is changed.
 
 * **[!UICONTROL Password]**
-(*required*) The sign-in password.
+
+  (*Required*) The sign-in password.
 
 * **[!UICONTROL Retype Password]**
-(*required*) Re-enter the password for verification.
+
+  (*Required*) Re-enter the password for verification.
 
 * **[!UICONTROL Add Member to Sites]**
-(*optional*) Select from existing community sites in order to add the member to the community site's members group.
+
+  (*Optional*) Select from existing community sites in order to add the member to the community site's members group.
 
 * **[!UICONTROL Add Member to Groups]**
- (*optional*) Select from existing member groups in order to add the member to that group.
+ 
+  (*Optional*) Select from existing member groups in order to add the member to that group.
 
 * Select **[!UICONTROL Save]**
 
 ### GENERAL - Account settings {#general-account-settings}
 
-Under Account settings it is possible for a community administrator to
+Under Account settings it is possible for a community administrator to:
 
 * **[!UICONTROL Status]**
   * Banned
@@ -112,12 +120,14 @@ Under Account settings it is possible for a community administrator to
   Default is `Not Banned`.
 
 * **[!UICONTROL Contribution Limits]**
+  
   If checked, the member's ability to post content is limited.
   Default depends on the configuration of contribution limits.
   See [Member Contribution Limits](limits.md).
 
 * **[!UICONTROL Change Password]**
-A link that is present when modifying an existing member. Provides the ability for a community administrator to reset a password for a member.
+  
+  A link that is present when modifying an existing member. Provides the ability for a community administrator to reset a password for a member.
 
 ### GENERAL - Photo {#general-photo}
 
@@ -140,10 +150,10 @@ See also [Scoring and Badges](implementing-scoring.md).
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
 * **[!UICONTROL Add badges]**
-    * Begin typing to select from [available badges](badges.md). Once a badge is selected, choose each site, or all sites, on which the badge should be displayed along with the member's avatar.
-    * Multiple badges and sites may be chosen.
+  * Begin typing to select from [available badges](badges.md). Once a badge is selected, choose each site, or all sites, on which the badge should be displayed along with the member's avatar.
+  * Multiple badges and sites may be chosen.
 * **[!UICONTROL Remove badges]**
-    * Select the trash can icon next to a badge to remove it
+  * Select the trash can icon next to a badge to remove it.
 
 ## Groups Console {#groups-console}
 
@@ -152,11 +162,12 @@ The Groups console, available from the author environment, allows for the creati
 * Group-based assignment of [enablement resources](resources.md)
 
 To access the Groups console:
-* From global navigation: **[!UICONTROL Navigation > Communities > Groups]**
+* From global navigation, select **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Groups]**.
 
 >[!CAUTION]
->
->It will not be possible to use the Groups console if the [tunnel service](deploy-communities.md#tunnel-service-on-author) is not enabled.
+ >
+ >It will not be possible to use the Groups console if the [tunnel service](deploy-communities.md#tunnel-service-on-author) is not enabled.
+ >
 
 ### Create New Group {#create-new-group}
 
@@ -167,19 +178,24 @@ Select `Add Group` in order to create a group in the publish environment.
 The required fields for creating a new publish-side member group are:
 
 * **[!UICONTROL ID]**
-(*required*) The group unique ID.
-*Once created, the ID may not be modified.*
+  
+  (*Required*) The group unique ID. 
+  
+  *Once created, the ID may not be modified.*
 
 * **[!UICONTROL Name]**
-  (*optional*) The display name for the group.
+  
+  (*Optional*) The display name for the group.
 
   The default value is the ID.
 
 * **[!UICONTROL Description]**
-  (*optional*) A description of the group's purpose and permissions.
+  
+  (*Optional*) A description of the group's purpose and permissions.
 
 * **[!UICONTROL Add Members To Group]**
-  (*optional*) Select publish-side members to be included as initial members of the group.
+  
+  (*Optional*) Select publish-side members to be included as initial members of the group.
 
 * Select **[!UICONTROL Save]**
 
