@@ -27,6 +27,8 @@ The following (space-separated list of) characters are not supported:
 * An asset file name cannot contain any of these characters: `* / : [ \\ ] | # % { } ? &`
 * An asset folder name cannot contain any of these characters: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
+Do not include special characters in the extensions of asset filenames.
+
 ## Upload assets {#uploading-assets}
 
 <!-- TBD the following:
@@ -108,6 +110,8 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
     * asset file name must not contain `* / : [ \\ ] | # % { } ? &`
     * asset folder name must not contain `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
+   Do not include special characters in the extensions of asset filenames.
 
    ![Upload progress dialog shows status of successfully uploaded files and files that fail to upload](assets/chlimage_1-10.png)
 
