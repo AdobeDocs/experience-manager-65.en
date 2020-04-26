@@ -20,7 +20,7 @@ Use the legend to understand the support level.
 
 ## Supported raster image formats in AEM Assets {#supported-raster-image-formats}
 
-| Format | Storage | Metadata management | Metadata extraction | Thumbnail generation | Interactive editing | Metadata writeback | Insights |
+| Format | Storage | Metadata management | Metadata extraction | Thumbnail generation | Editing | Metadata writeback | Insights |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | PNG | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
 | GIF | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
