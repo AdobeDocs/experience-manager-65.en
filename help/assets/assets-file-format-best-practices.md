@@ -12,7 +12,7 @@ For the supported file formats, see [Assets supported formats](/help/assets/asse
 
 >[!TIP]
 >
->If you are using Experience Manager on Adobe Managed Services (AMS), reach out to Adobe Support if you plan to process lots of large PSD or PSB files. Work with Adobe Customer Care representative to implement these best practices for your AMS deployment and to choose the best possible tools and models for Adobe's proprietary formats.
+>If you are using Experience Manager on Adobe Managed Services (AMS), reach out to Adobe Support if you plan to process lots of large PSD or PSB files. Work with Adobe Customer Care representative to implement these best practices for your AMS deployment and to choose the best possible tools and models for Adobe's proprietary formats. Experience Manager may not process very high-resolution PSB files that are more than 30000 x 23000 pixels.
 
 ## Adobe Camera Raw library {#adobe-camera-raw-library}
 
