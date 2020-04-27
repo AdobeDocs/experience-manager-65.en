@@ -14,7 +14,7 @@ To process large files using ImageMagick, consider higher than usual memory requ
 
 >[!NOTE]
 >
->If you are using AEM on Adobe Managed Services (AMS), reach out to Adobe Support if you plan to process lots of large PSD or PSB files.
+>If you are using AEM on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process many high-resolution PSD or PSB files. Experience Manager may not process very high-resolution PSB files that are more than 30000 x 23000 pixels.
 
 ## Installing ImageMagick {#installing-imagemagick}
 
