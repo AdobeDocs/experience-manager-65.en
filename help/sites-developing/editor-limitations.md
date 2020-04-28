@@ -25,6 +25,10 @@ When [editing a page](/help/sites-authoring/editing-content.md), links are not a
 
 * [Switch to **Preview** mode](/help/sites-authoring/editing-content.md#preview-mode) to navigate using the links in your content.
 
+### Structure Pages {#structure-pages}
+
+Pages can not be named `structure`. Pages that are named `structure` will not be editable in the page editor.
+
 ## CSS Limitations {#css-limitations}
 
 A developer may encounter the following limitations with the editor's interactions with CSS.
