@@ -17,12 +17,12 @@ The social component framework (SCF) simplifies the process of configuring, cust
 
 The benefits of the framework:
 
-* **Functional**: Out-of-the-box ease of integration with little or no customization for 80% of use cases
-* **Skinnable**: Consistent use of HTML attributes for CSS styling
-* **Extensible**: Component implementation is object-oriented and light on business logic - easy to add incremental business login on server
-* **Flexible**: Simple logic-less javascript templates that are easily overlayed and customized
-* **Accessible**: The HTTP API supports posting from any client, including mobile apps
-* **Portable**: Integrate/embed into any webpage built on any technology
+* **Functional**: Out-of-the-box ease of integration with little or no customization for 80% of use cases.
+* **Skinnable**: Consistent use of HTML attributes for CSS styling.
+* **Extensible**: Component implementation is object-oriented and light on business logic - easy to add incremental business login on server.
+* **Flexible**: Simple logic-less javascript templates that are easily overlayed and customized.
+* **Accessible**: The HTTP API supports posting from any client, including mobile apps.
+* **Portable**: Integrate/embed into any webpage built on any technology.
 
 Explore on an author or publish instance using the interactive [Community Components guide](components-guide.md).
 
@@ -44,20 +44,20 @@ The SocialComponent API may be extended to provide data required by a client for
 
 To customize or extend the components, you write only the overlays and extensions to your /apps directory which simplifies the process of upgrading to future releases.
 
-* For Skinning
-    * Only the [CSS needs editing](client-customize.md#skinning-css)
-* For Look and Feel
-    * Change the JS Template and CSS
-* For Look, Feel and UX
-    * Change the JS Template, CSS and [extend/override Javascript](client-customize.md#extending-javascript)
-* To modify the information availble to the JS Template or to the GET endpoint
-    * Extend the [SocialComponent](server-customize.md#socialcomponent-interface)
-* To add custom processing during operations
-    * Write an [OperationExtension](server-customize.md#operationextension-class)
-* To add a new custom operation
-    * Create a new [Sling Post Operation](server-customize.md#postoperation-class)
-    * Use existing [OperationServices](server-customize.md#operationservice-class) as needed
-    * Add Javascript code to invoke your operation from the client side as needed
+* For Skinning:
+  * Only the [CSS needs editing](client-customize.md#skinning-css).
+* For Look and Feel:
+  * Change the JS Template and CSS.
+* For Look, Feel and UX:
+  * Change the JS Template, CSS and [extend/override Javascript](client-customize.md#extending-javascript).
+* To modify the information availble to the JS Template or to the GET endpoint:
+  * Extend the [SocialComponent](server-customize.md#socialcomponent-interface).
+* To add custom processing during operations:
+  * Write an [OperationExtension](server-customize.md#operationextension-class).
+* To add a new custom operation:
+  * Create a new [Sling Post Operation](server-customize.md#postoperation-class).
+  * Use existing [OperationServices](server-customize.md#operationservice-class) as needed.
+  * Add Javascript code to invoke your operation from the client side as needed.
 
 ## Server-Side Framework {#server-side-framework}
 
@@ -79,11 +79,11 @@ The HTTP API supports ease of customization and choice of client platforms for P
 
 For every SocialComponent, the framework provides an HTTP-based API endpoint. The endpoint is accessed by sending a GET request to the resource with a '.social.json' selector + extension. Using Sling, the request is handed to the `DefaultSocialGetServlet`.
 
-The `DefaultSocialGetServlet`
+**`DefaultSocialGetServlet`** 
 
-1. Passes the resource (resourceType) to the `SocialComponentFactoryManager`and receives a SocialComponentFactory capable of selecting a `SocialComponent`representing the resousrce.
+1. Passes the resource (resourceType) to the `SocialComponentFactoryManager` and receives a SocialComponentFactory capable of selecting a `SocialComponent` representing the resousrce.
 
-1. Invokes the factory and receives a `SocialComponent`capable of handling the resource and request.
+1. Invokes the factory and receives a `SocialComponent` capable of handling the resource and request.
 1. Invokes the `SocialComponent`, which process the request and returns a JSON representation of the results.
 1. Returns the JSON response to the client.
 
@@ -107,11 +107,11 @@ There is a Sling POST:operation for every SocialComponent operation. The busines
 
 ### Storage Resource Provider (SRP) {#storage-resource-provider-srp}
 
-To learn about handling UGC stored in the [community content store](working-with-srp.md), see
+To learn about handling UGC stored in the [community content store](working-with-srp.md), see:
 
-* [Storage Resource Provider Overview](srp.md) - Introduction and repository usage overview
-* [SRP and UGC Essentials](srp-and-ugc.md) - SRP API utility methods and examples
-* [Accessing UGC with SRP](accessing-ugc-with-srp.md) - Coding guidelines
+* [Storage Resource Provider Overview](srp.md) - Introduction and repository usage overview.
+* [SRP and UGC Essentials](srp-and-ugc.md) - SRP API utility methods and examples.
+* [Accessing UGC with SRP](accessing-ugc-with-srp.md) - Coding guidelines.
 
 ### Server-side Customizations {#server-side-customizations}
 
@@ -175,8 +175,9 @@ The [Community Components Guide](components-guide.md) allows includable componen
 ```
 
 >[!NOTE]
->
->To add a component to a page dynamically, instead of adding or including it in a template, see [Component Sideloading](sideloading.md).
+ >
+ >To add a component to a page dynamically, instead of adding or including it in a template, see [Component Sideloading](sideloading.md).
+ >
 
 ### Handlebars Helpers {#handlebars-helpers}
 
@@ -196,7 +197,7 @@ The following are recommended conventions for defining and using CSS classes:
 
 * Use clearly namespaced CSS class selector names and avoid generic names such as 'heading', 'image', etc.
 * Define specific class selector styles so the CSS stylesheets work well with other elements and styles on the page. For example: `.social-forum .topic-list .li { color: blue; }`
-* Keep CSS classes for styling separate from CSS classes for UX driven by JavaScript
+* Keep CSS classes for styling separate from CSS classes for UX driven by JavaScript.
 
 ### Client-Side Customizations {#client-side-customizations}
 

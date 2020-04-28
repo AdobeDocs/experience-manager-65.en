@@ -21,11 +21,11 @@ For Communities, the two things generally searched are:
 
 * Content posted by community members
 
-    * Uses AEM Communities' UGC search API
+  * Uses AEM Communities' UGC search API.
 
 * Users and user groups (user data)
 
-    * Uses the AEM platform search capabilities
+  * Uses the AEM platform search capabilities.
 
 This section of the documentation is of interest to developers who are creating custom components that create or manage UGC.
 
@@ -55,10 +55,10 @@ For [MSRP](msrp.md), UGC is stored in MongoDB configured to use Solr for searchi
 
 Regarding MSRP and Solr:
 
-* The embedded Solr for the AEM platform is not used for MSRP
-* If using a remote Solr for the AEM platform, it may be shared with MSRP, but they should use different collections
-* Solr may be configured for standard search or for multilingual search (MLS)
-* For configuration details, see [Solr Configuration](msrp.md#solr-configuration) for MSRP
+* The embedded Solr for the AEM platform is not used for MSRP.
+* If using a remote Solr for the AEM platform, it may be shared with MSRP, but they should use different collections.
+* Solr may be configured for standard search or for multilingual search (MLS).
+* For configuration details, see [Solr Configuration](msrp.md#solr-configuration) for MSRP.
 
 Custom search features should use the [UGC search API](#ugc-search-api).
 
@@ -84,8 +84,8 @@ To modify existing indices or create custom indices, refer to [Oak Queries and I
 
 The [Oak Index Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) is available from ACS AEM Commons. It provides:
 
-* A view of existing indices
-* The ability to initiate re-indexing
+* A view of existing indices.
+* The ability to initiate re-indexing.
 
 To view the existing Oak indices in [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), the location is:
 
@@ -131,12 +131,12 @@ Following are some of the searchable properties used for various Communities fea
 
 ### Naming of Custom Properties {#naming-of-custom-properties}
 
-When adding custom properties, in order for those properties to be visible to sorts and searches created with the [UGC search API](#ugc-search-api), it is *required *to add a suffix to the property name.
+When adding custom properties, in order for those properties to be visible to sorts and searches created with the [UGC search API](#ugc-search-api), it is *required* to add a suffix to the property name.
 
 The suffix is for query languages which use a schema:
 
-* It identifies the property as searchable
-* It identifies the data type
+* It identifies the property as searchable.
+* It identifies the data type.
 
 Solr is an example of a query language which uses a schema.
 
@@ -155,8 +155,8 @@ Solr is an example of a query language which uses a schema.
 
 * For multi-valued types, add ‘s’ to the suffix, for example:
 
-    * `viewDate_dt`: single date property
-    * `viewDates_dts`: list of dates property
+  * `viewDate_dt`: single date property
+  * `viewDates_dts`: list of dates property
 
 ## Filters {#filters}
 
@@ -166,11 +166,11 @@ The filter syntax for AND and OR logic is expressed as follows (shown before bei
 
 * To specify OR use one filter param with comma separated values:
 
-    * `filter=name eq 'Jennifer',name eq 'Jen'`
+  * `filter=name eq 'Jennifer',name eq 'Jen'`
 
 * To specify AND use multiple filter params:
 
-    * `filter = name eq 'Jackson'&filter=message eq 'testing'`
+  * `filter = name eq 'Jackson'&filter=message eq 'testing'`
 
 The default implementation of the [Search component](search.md) uses this syntax as can be seen in the URL that opens the Search Results page in the [Community Components guide](components-guide.md). To experiment, browse to [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html).
 
@@ -188,9 +188,9 @@ Filter operators are:
 It is important that the URL references the Communities component (resource) and not the page on which the component is placed:
 
 * Correct: forum component
-    * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
+  * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
 * Incorrect: forum page
-    * `/content/community-components/en/forum.social.json`
+  * `/content/community-components/en/forum.social.json`
 
 ## SRP Tools {#srp-tools}
 
@@ -224,9 +224,9 @@ The value of the `q` parameter is the query. Once the URL encoding is decoded, t
 
 ## Related Resources {#related-resources}
 
-* [Community Content Storage](working-with-srp.md) - Discusses the available SRP choices for a UGC common store
-* [Storage Resource Provider Overview](srp.md) - Introduction and repository usage overview
-* [Accessing UGC with SRP](accessing-ugc-with-srp.md) - Coding guidelines
-* [SocialUtils Refactoring](socialutils.md) - Utility methods for SRP that replace SocialUtils
-* [Search and Search Results components](search.md) - Adding UGC search feature to a template
+* [Community Content Storage](working-with-srp.md) - Discusses the available SRP choices for a UGC common store.
+* [Storage Resource Provider Overview](srp.md) - Introduction and repository usage overview.
+* [Accessing UGC with SRP](accessing-ugc-with-srp.md) - Coding guidelines.
+* [SocialUtils Refactoring](socialutils.md) - Utility methods for SRP that replace SocialUtils.
+* [Search and Search Results components](search.md) - Adding UGC search feature to a template.
 
