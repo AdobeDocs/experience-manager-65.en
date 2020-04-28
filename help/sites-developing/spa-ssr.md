@@ -60,6 +60,33 @@ The following sections detail how Adobe I/O Runtime can be used to implement SSR
 >
 >Adobe recommends a separate Adobe I/O Runtime instance for every AEM environment (author, publish, stage, etc.).
 
+## Remote Renderer Configuration {#remote-renderer-configuration}
+
+AEM must know where the remotely-rendered content can be retrieved. Regardless of [which model you choose to implement for SSR,](#adobe-i-o-runtime) you will need to specify to AEM how to access this remote rendering service.
+
+This is done via the **RemoteContentRenderer - Configuration Factory OSGi service**. Search for the string "RemoteContentRenderer" in the Web Console Configuration console at `http://<host>:<port>/system/console/configMgr`.
+
+![Renderer Configuration](assets/rendererconfig.png)
+
+The following fields are available for the configuration:
+
+* **Content path pattern** - Regular expression in order to match a portion of the content, if necessary
+* **Remote endpoint URL** - URL of the endpoint that is responsible for the generating the content
+  * Use the secured HTTPS protocol if not in local network.
+* **Additional request headers** - Additional headers to be added to the request sent to the remote endpoint
+  * Pattern: `key=value`
+* **Request timeout** - Remote host request timeout in milliseconds
+
+>[!NOTE]
+>
+>Regardless of if you choose to implement the [AEM-driven communication flow](#aem-driven-communication-flow) or the [Adobe I/O Runtime-driven flow,](#adobe-i-o-runtime-driven-communication-flow) you must define a remote content renderer configuration.
+>
+>This configuration also must be defined if you choose to [use a custom Node.js server.](#using-node-js)
+
+>[!NOTE]
+>
+>This configuration leverages the [Remote Content Renderer,](#remote-content-renderer) which has additional extension and customization options available.
+
 ## AEM-Driven Communication Flow {#aem-driven-communication-flow}
 
 When using SSR, the [component interaction workflow](/help/sites-developing/spa-overview.md#workflow) of SPAs in AEM includes a phase in which the initial content of the app is generated on Adobe I/O Runtime.
@@ -161,3 +188,53 @@ For on-premesis AEM instances, it is also possible to implement SSR using a cust
 >[!NOTE]
 >
 >If SSR must be implemented via Node.js, Adobe recommends a separate Node.js instance for every AEM environment (author, publish, stage, etc.).
+
+## Remote Content Renderer {#remote-content-renderer}
+
+The [Remote Content Renderer Configuration](#remote-content-renderer-configuration) that is required to use SSR with your SPA in AEM taps into a more generalized rendering service that can be extended and customized to meet your needs.
+
+### RemoteContentRenderingService {#remotecontentrenderingservice}
+
+`RemoteContentRenderingService` is an OSGi service to retrieve content rendered on a remote server, such as from Adobe I/O. The content sent to the remote server is based on the request parameter passed.
+
+`RemoteContentRenderingService` can be injected by dependency inversion into either a custom Sling model or servlet when additional content manipulation is required.
+
+This service is internally used by the [RemoteContentRendererRequestHandlerServlet](#remotecontentrendererrequesthandlerservlet).
+
+### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
+
+The `RemoteContentRendererRequestHandlerServlet` can be used to programmatically set the request configuration. `DefaultRemoteContentRendererRequestHandlerImpl`, the provided default request handler implementation, allows you to create multiple OSGi configurations in order to map a location in the content structure to a remote endpoint.
+
+To add a custom request Handler, implement the `RemoteContentRendererRequestHandler` interface. Be sure to set the `Constants.SERVICE_RANKING` component property to an integer higher than 100, which is the ranking of the `DefaultRemoteContentRendererRequestHandlerImpl`.
+
+```
+@Component(immediate = true,
+        service = RemoteContentRendererRequestHandler.class,
+        property={
+            Constants.SERVICE_RANKING +":Integer=1000"
+        })
+public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteContentRendererRequestHandler {}
+```
+
+### Configure the OSGi Configuration of the Default Handler {#configure-default-handler}
+
+The configuration of the default handler must be configured as described in the section [Remote Content Renderer Configuration](#remote-content-renderer-configuration).
+
+### Remote Content Renderer Usage {#usage}
+
+To have a servlet fetch and return some content that can be injected into the page:
+
+1. Ensure your remote server is accessible.
+1. Add one of the following snippets to the HTL template of an AEM component.
+1. Optionally, create or modify the OSGi configurations.
+1. Browse the content of your site
+
+Usually, the HTL template of a page component is the main recipient of such a feature.
+
+```
+<sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
+```
+
+### Requirements {#requirements}
+
+The servlets leverage the Sling Model Exporter to serialize the component data. By default, both the `com.adobe.cq.export.json.ContainerExporter` and `com.adobe.cq.export.json.ComponentExporter` are supported as Sling Model adapters. If necessary, you can add classes that the request should be adapted to using the `RemoteContentRendererServlet` and implementing the `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. The additional classes must extend the `ComponentExporter`.
