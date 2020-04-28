@@ -97,7 +97,7 @@ Use these best practices when creating your own newsletter.
 |---|---|
 | Add *alt* attributes to images |The *alt* attribute has been defined as mandatory for the image component. |
 | Use *jpg* instead of *png* format for images |Images will always be served as JPG by the image component. |
-| Use <img> element instead of background images in a table. |No background image data is used in the templates. |
+| Use `<img>` element instead of background images in a table. |No background image data is used in the templates. |
 | Add attribute style="display block" on pictures. Allows to display well on Gmail. |All images contain per default the *style="display block"* attribute. |
 
 ### Text and Links {#text-and-links}

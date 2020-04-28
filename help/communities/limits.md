@@ -25,22 +25,22 @@ Using the Members console, contribution limits can be proactively removed for a 
 
 ## AEM Communities User Generated Content Contribution Limits Configuration {#aem-communities-user-generated-content-contribution-limits-configuration}
 
-This OSGi configuration
+This OSGi configuration:
 
-* Defines the characteristics of the contribution limits (number of posts within a time period)
-* Identifies who the member will be able to message when the limit has been reached
-* Identifies domains that need never be constrained
+* Defines the characteristics of the contribution limits (number of posts within a time period).
+* Identifies who the member will be able to message when the limit has been reached.
+* Identifies domains that need never be constrained.
 
 To reach this OSGi configuration:
 
-* On the primary publisher
-* Sign in with administrator privileges
-* Access the [Web Console](../../help/sites-deploying/configuring-osgi.md)
+* On the primary publisher:
+* Sign in with administrator privileges.
+* Access the [Web Console](../../help/sites-deploying/configuring-osgi.md).
 
     * For example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Locate `AEM Communities User Generated Content Contribution Limits Configuration`
-* Select the edit icon
+* Locate `AEM Communities User Generated Content Contribution Limits Configuration`.
+* Select the edit icon.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 

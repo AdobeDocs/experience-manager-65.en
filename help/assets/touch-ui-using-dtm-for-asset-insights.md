@@ -100,8 +100,8 @@ Perform these steps to enable Asset Insights through DTM.
    })();
    ```
 
-    * The page load rule in DTM only includes the pagetracker.js code. Any `assetAnalytics` fields are considered as overrides for default values. They are not required by default.
-    * The code calls `assetAnalytics.dispatcher.init`() after making sure that `_satellite.getToolsByType('sc')[0].getS`() is initialized and `assetAnalytics,dispatcher.init` is available. Therefore, you can skip adding it in step 11.
+    * The page load rule in DTM only includes the `pagetracker.js` code. Any `assetAnalytics` fields are considered as overrides for default values. They are not required by default.
+    * The code calls `assetAnalytics.dispatcher.init()` after making sure that `_satellite.getToolsByType('sc')[0].getS()` is initialized and `assetAnalytics,dispatcher.init` is available. Therefore, you can skip adding it in step 11.
     * As indicated in comments within the Insights Page Tracker code (**[!UICONTROL Tools > Assets > Insights Page Tracker]**), when Page Tracker does not create an `AppMeasurement` object, the first three arguments (RSID, Tracking Server, and Visitor Namespace) are irrelevant. Empty strings are passed instead to highlight this.  
       The remaining arguments correspond to what is configured in the Insights Configuration page (**[!UICONTROL Tools > Assets > Insights Configuration]**).
     * The AppMeasurement object is retrieved by querying `satelliteLib` for all available SiteCatalyst engines. If multiple tags are configured, change the index of the array selector appropriately. Entries in the array are ordered as per SiteCatalyst tools available in the DTM interface.

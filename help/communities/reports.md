@@ -13,19 +13,27 @@ docset: aem65
 
 ---
 
-# Reports Console{#reports-console}
+# Reports Console {#reports-console}
 
 ## Overview {#overview}
 
 For AEM Communities, there are various reports that may be accessed in several ways from the author environment.
 
-In general, the various reports are :
+In general, the various reports are:
 
-* [Assignments Report](#assignments-report) - for an [enablement community](/help/communities/overview.md#enablement-community), provides an overview of learners' progress on their assignments, including an associated score if implementing the SCORM standard
-* [Views Report](#views-report) - provides a chart of views of content by community members and site visitors for any community site
-* [Posts Report](#posts-report) - provides a chart of various types of posts by community members to any community site
+* [Assignments Report](#assignments-report) 
 
-When [Adobe Analytics is enabled](/help/communities/sites-console.md#analytics), reports will include the number of views, plays, comments and ratings for each enablement resource over time
+  For an [enablement community](/help/communities/overview.md#enablement-community), provides an overview of learners' progress on their assignments, including an associated score if implementing the SCORM standard.
+
+* [Views Report](#views-report) 
+
+  Provides a chart of views of content by community members and site visitors for any community site.
+
+* [Posts Report](#posts-report) 
+
+  Provides a chart of various types of posts by community members to any community site.
+
+When [Adobe Analytics is enabled](/help/communities/sites-console.md#analytics), reports will include the number of views, plays, comments and ratings for each enablement resource over time.
 
 Tabular reports can be exported in .csv format for subsequent processing.
 
@@ -33,46 +41,46 @@ Tabular reports can be exported in .csv format for subsequent processing.
 
 ### Reports for Community Sites {#reports-for-community-sites}
 
-* from global navigation : **Navigation**, **Communities, Reports**
+* From global navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** >  **[!UICONTROL Reports]**
 
-* choose from
+* Choose from:
 
-  * **Assignments Report**
+  * **[!UICONTROL Assignments Report]**
 
-    * generate a report for selected Community Site, User or Group, and Assignment
+    * Generate a report for selected Community Site, User or Group, and Assignment.
 
-    * **Posts Report**
+  * **[!UICONTROL Posts Report]**
 
-      * generate a report for selected Community Site, Content Type, and Time Period
+    * Generate a report for selected Community Site, Content Type, and Time Period.
 
-    * **Views Report**
+  * **[!UICONTROL Views Report]**
 
-        * generate a report for selected Community Site, Content Type, and Time Period
+    * generate a report for selected Community Site, Content Type, and Time Period.
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
 ### Reports for Enablement Resources and Learning Paths {#reports-for-enablement-resources-and-learning-paths}
 
-* from global navigation: **Navigation**, **Communities, Resources**
+* From global navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** >  **[!UICONTROL Resources]**
 
-* select an existing enablement community site
+* Select an existing enablement community site:
 
-  * select **Report **icon to generate reports which cover all enablement resources
-  * select an enablement learning path
-  * select **Report **icon to generate reports for
+  * Select **Report** icon to generate reports which cover all enablement resources.
+  * Select an enablement learning path.
+  * Select **Report** icon to generate reports for:
 
-    * the included enablement resources
-    * the learners assigned to the learning path
+    * The included enablement resources.
+    * The learners assigned to the learning path.
 
-* these reports provide:
+* These reports provide:
 
-  * table data, downloadable as CSV
+  * Table data, downloadable as CSV:
 
-      * identifying learner
-      * their status
-      * whether assigned or accessed through catalog
-      * number of comments made
-      * star rating given
+    * Identifying learner
+    * Their status
+    * Whether assigned or accessed through catalog
+    * Number of comments made
+    * Star rating given
 
 For more details, see [Reports section](/help/communities/resources.md#report) of the Resources console.
 
@@ -88,19 +96,19 @@ Select the criteria for the report :
 
 * **Site**
 
-  select an enablement community site
+  Select an enablement community site.
 
 * **User or Group**
-  * select User to generate a report for one learner
-  * select Group to generate a report for a group of learners
+  * Select User to generate a report for one learner.
+  * Select Group to generate a report for a group of learners.
 
-  The tunnel service will access members and member groups from the publish environment
+  The tunnel service will access members and member groups from the publish environment.
 
 * **Assignment**
 
-  Choose from among the enablement resources assigned to the selected learner(s)
+  Choose from among the enablement resources assigned to the selected learner(s).
 
-Select **Generate** to create the report :
+Select **Generate** to create the report:
 
 ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -110,26 +118,26 @@ The Views console allows reports to be generated on page views by community feat
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-Select the criteria for the report :
+Select the criteria for the report:
 
-* **Site**
+* **[!UICONTROL Site]**
 
-  select a community site
+  Select a community site.
 
-* **Content Type**
+* **[!UICONTROL Content Type]**
 
-  may choose All content or select one of the features present on the site
+  May choose All content or select one of the features present on the site.
 
-* time frame
+* **[!UICONTROL Time frame]**
 
-  select one of
+  Select one of:
 
-    * Last 7 days
-    * Last 30 days
-    * Last 90 days
-    * Last year
+  * Last 7 days
+  * Last 30 days
+  * Last 90 days
+  * Last year
 
-Select **Generate** to create the report :
+Select **[!UICONTROL Generate]** to create the report.
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
@@ -139,26 +147,26 @@ The Posts console allows reports to be generate on number of posts to community 
 
 ![chlimage_1-241](assets/chlimage_1-241.png)
 
-Select the criteria for the report :
+Select the criteria for the report:
 
-* **Site**
+* **[!UICONTROL Site]**
 
-  select a community site
+  Select a community site.
 
-* **Content Type**
+* **[!UICONTROL Content Type]**
 
-  may choose All content or select one of the features present on the site
+  May choose All content or select one of the features present on the site.
 
-* time frame
+* **[!UICONTROL Time frame]**
 
-  select one of
+  Select one of:
 
-    * Last 7 days
-    * Last 30 days
-    * Last 90 days
-    * Last year
+  * Last 7 days
+  * Last 30 days
+  * Last 90 days
+  * Last year
 
-Select **Generate** to create the report :
+Select **[!UICONTROL Generate]** to create the report.
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
 
@@ -170,6 +178,6 @@ If no community sites are listed, ensure Adobe Analytics has been enabled for a 
 
 ### Reports do not show in AEM Author instance {#reports-do-not-show-in-aem-author-instance}
 
-If reports do not show up in AEM Author instance check for the customizations, such as URL mapping on Publish instance. If URL mapping is done only on AEM Publish instance of the communities site, ensure that the same has been configured in AEM Author instance in **Site Trend Report Social Component Factory **configuration.
+If reports do not show up in AEM Author instance check for the customizations, such as URL mapping on Publish instance. If URL mapping is done only on AEM Publish instance of the communities site, ensure that the same has been configured in AEM Author instance in **Site Trend Report Social Component Factory** configuration.
 
 ![URL mapping on AEM Author](assets/sitetrend.png)

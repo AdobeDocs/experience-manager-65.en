@@ -15,11 +15,11 @@ discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 
 The search feature works with various other features, such as forums, to provide the ability to search for content.
 
-When adding the ability to search posts entered by community members, referred to as user generated content (UGC), there are two components: [ `Search`](#search) and [ `Search Results`](#search-results).
+When adding the ability to search posts entered by community members, referred to as user generated content (UGC), there are two components: [Search](#search) and [Search Results](#search-results).
 
 The page that includes the `Search Results` component supports both searching and the display of results.
 
-The page that includes the `Search`component provides a place to launch a search with results appearing on the `Search Results` page.
+The page that includes the `Search` component provides a place to launch a search with results appearing on the `Search Results` page.
 
 The search feature may be used with any other feature which allows site visitors and members to view content.
 
@@ -48,7 +48,7 @@ Under the **[!UICONTROL Search Settings]** tab, specify how what paths are are s
 * **[!UICONTROL Search Paths]**
   By adding search paths using the Add Item button, the content search is limited. As an example, to limit the search to a specific forum, select a forum component placed within a page:
 
-    * `/content/community-components/en/forum/jcr:content/content/forum`
+  * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL Result Page]**
   The results will appear on a separate page specified by using the browser to select a page containing the `Search Results` component.
@@ -82,9 +82,11 @@ Under the **[!UICONTROL Search Result Settings]** tab, it is possible to specify
 ![chlimage_1-378](assets/chlimage_1-378.png)
 
 * **[!UICONTROL Search Results Per Page]**
+  
   Define the number of topics/posts shown per page. Default is 10.
 
 * **[!UICONTROL Search Paths]**
+  
   By adding search paths using the Add Item button, the content search is limited.
 
 ## Additional Information {#additional-information}

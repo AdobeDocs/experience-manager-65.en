@@ -42,7 +42,7 @@ The [Storage Configuration console](/help/communities/srp-config.md) allows for 
 
 **On AEM Author instance:**
 
-* From global navigation, navigate to **[UIControl Tools > Communities > Storage Configuration]** and select **[UIControl Adobe Storage Resource Provider (ASRP)]**.
+* From global navigation, navigate to **[!UICONTROL Tools > Communities > Storage Configuration]** and select **[!UICONTROL Adobe Storage Resource Provider (ASRP)]**.
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
@@ -91,7 +91,7 @@ To make the identical configuration available in the publish environment:
 
 On AEM Author instance:
 
-* Navigate from main menu to **[UIControl Tools > Operations > Replication]**.
+* Navigate from main menu to **[!UICONTROL Tools > Operations > Replication]**.
 * Select **Activate Tree**
 * **Start Path**: browse to `/etc/socialconfig/srpc/`
 * Deselect **Only Modified**

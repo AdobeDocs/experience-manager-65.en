@@ -200,17 +200,13 @@ In addition, set the path of ImageMagick's temporary folder in the `configure.xm
 
 >[!CAUTION]
 >
->A mis-configuration can make your server unstable if ImageMagick uses all the available disk space.
->
->The policy changes required to process large files using ImageMagick may impact the AEM performance. For more information, see [install and configure ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+>A mis-configuration can make your server unstable if ImageMagick uses all the available disk space. The policy changes required to process large files using ImageMagick may impact the AEM performance. For more information, see [install and configure ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 >[!NOTE]
 >
 >The ImageMagick `policy.xml` and `configure.xml` files are available at `/usr/lib64/ImageMagick-&#42;/config/` instead of `/etc/ImageMagick/`.See [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for location of the configuration files.
 
->[!TIP]
->
->If you are using Experience Manager on Adobe Managed Services (AMS), reach out to Adobe Support if you plan to process lots of large PSD or PSB files. Work with Adobe Customer Care representative to implement these best practices for your AMS deployment and to choose the best possible tools and models for Adobe's proprietary formats.
+If you are using Experience Manager on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Work with Adobe Customer Care representative to implement these best practices for your AMS deployment and to choose the best possible tools and models for Adobe's proprietary formats. Experience Manager may not process very high-resolution PSB files that are more than 30000 x 23000 pixels.
 
 ### XMP writeback {#xmp-writeback}
 
@@ -264,7 +260,7 @@ Some optimizations can be done on the Oak index configurations that can help imp
 
 1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
 
-   ```
+   ```conf
    slingResource
    name="sling:resource"
    ordered=false

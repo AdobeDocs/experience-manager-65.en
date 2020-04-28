@@ -15,11 +15,11 @@ discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 
 In this section, you create the following pages which all use the [page template](initial-app.md#createthepagetemplate):
 
-* SCF Sandbox Site, which will redirect to the English version of the main page
+* SCF Sandbox Site, which will redirect to the English version of the main page.
 
-    * SCF Sandbox - The main page for the English version of the site
+    * SCF Sandbox - The main page for the English version of the site.
 
-        * SCF Play - Child of the main page on which to play
+        * SCF Play - Child of the main page on which to play.
 
 Although this tutorial does not delve into [language copies](../../help/sites-administering/tc-prep.md), it is designed so the root page may implement detection of the preferred language for the user through the HTML header, and redirect to the appropriate main page for the language. The convention is to use the two-letter country code for the node name of the page, e.g., "en" for English, "fr" for French, and so on.
 
@@ -41,7 +41,7 @@ Now that there is a [page template](initial-app.md#createthepagetemplate), we ca
 
    Alternatively, access the classic UI for Websites directly by browsing to [/siteadmin.](http://localhost:4502/siteadmin)
 
-1. In the explorer pane, select **[!UICONTROL Websites]** and then in the toolbar select **[!UICONTROL New > New Page]**.
+1. In the explorer pane, select **[!UICONTROL Websites]** and then in the toolbar select **[!UICONTROL New]** > **[!UICONTROL New Page]**.
 
    In the **[!UICONTROL Create Page]** dialog, enter the following:
 
@@ -52,14 +52,14 @@ Now that there is a [page template](initial-app.md#createthepagetemplate), we ca
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-1. In the explorer pane, select the page you just created, `/Websites/SCF Sandbox Site`, and click **[!UICONTROL New > New Page]**:
+1. In the explorer pane, select the page you just created, `/Websites/SCF Sandbox Site`, and click **[!UICONTROL New]** > **[!UICONTROL New Page]**:
 
     * Title: `SCF Sandbox`
     * Name: `en`
     * Select **[!UICONTROL ]An SCF Sandbox Play Template**
     * Click **[!UICONTROL ]Create**
 
-1. In the explorer pane, select the page you just created, `/Websites/SCF Sandbox Site/SCF Sandbox`, and click **[!UICONTROL New > New Page]**
+1. In the explorer pane, select the page you just created, `/Websites/SCF Sandbox Site/SCF Sandbox`, and click **[!UICONTROL New]** > **[!UICONTROL New Page]**
 
     * Title: `SCF Play`
     * Name: `play`
@@ -100,6 +100,7 @@ The respository should appear as follows:
 [ Trouble saving? Re-login! ]
 
 >[!NOTE]
->
->The use of cq:designPath is optional and is unrelated to the [use of clientlibs](develop-app.md#includeclientlibsintemplate), which are essentially required as the SCF components use [clientlibs](client-customize.md#clientlibs-for-scf) to manage their JS and CSS.
+ >
+ >The use of cq:designPath is optional and is unrelated to the [use of clientlibs](develop-app.md#includeclientlibsintemplate), which are essentially required as the SCF components use [clientlibs](client-customize.md#clientlibs-for-scf) to manage their JS and CSS.
+ >
 

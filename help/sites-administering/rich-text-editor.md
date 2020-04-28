@@ -1,30 +1,24 @@
 ---
-title: Configure the Rich Text Editor to author content in AEM 
-description: Learn to configure the AEM Rich Text Editor to author content in AEM.
-uuid: 4f87745e-586a-4cba-887b-391e37520ffc
+title: Configure the Rich Text Editor to author content in Adobe Experience Manager.
+description: Learn to configure the Adobe Experience Manager Rich Text Editor to author content in Adobe Experience Manager.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 2cde81d3-5fc1-4a32-a307-7dc592f37162
-docset: aem65
 ---
 
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
 The Rich Text Editor (RTE) provides authors with a wide range of functionality for editing their text content. Icons, selection boxes, toolbar, and menus are provided for a WYSIWYG text-editing experience.
 
-RTE can be configured to enable, disable, and extend the features available in the authoring components. To know how to use RTE features for authoring, see [Use Rich Text Editor for authoring](/help/sites-authoring/rich-text-editor.md).
+To know how to use RTE features for authoring, see [Use Rich Text Editor for authoring](/help/sites-authoring/rich-text-editor.md). RTE can be configured to enable, disable, and extend the features available in the authoring components. The following workflow illustrates a recommended order of completing the RTE configuration tasks in Experience Manager.
 
-The following workflow illustrates a recommended order of completing the RTE configuration tasks.
-
-![Sequence of steps to learn how to configure rte](assets/rte_workflow_v1.png)
+![Sequence of steps to learn how to configure RTE](assets/rte_workflow_v1.png)
 
 *Figure: Sequence of steps to learn how to configure RTE*
 
 ## Understand Touch-enabled UI and Classic UI {#understand-touch-enabled-ui-and-classic-ui}
 
-The Touch-enabled UI is the standard user interface for AEM. Adobe introduced Touch UI with [responsive design](/help/sites-authoring/responsive-layout.md) for authoring environment. The Touch UI is designed for touch and desktop devices. The UI differs considerably from the original classic UI.
+The Touch-enabled UI is the standard user interface for Experience Manager. Adobe introduced Touch-enabled UI with [responsive design](/help/sites-authoring/responsive-layout.md) for authoring environment. The Touch-enabled UI is designed for touch and desktop devices. The interface differs considerably from the original Classic UI.
 
-![Rich Text Editor toolbar in Touch-enabled UI](assets/chlimage_1-35.png)
+![Rich Text Editor toolbar in Touch-enabled user interface](assets/chlimage_1-35.png)
 
 *Figure: Rich Text Editor toolbar in Touch-enabled UI*
 
@@ -35,13 +29,13 @@ The Touch-enabled UI is the standard user interface for AEM. Adobe introduced To
 >[!MORELIKETHIS]
 >
 >* [UI recommendations](/help/sites-deploying/ui-recommendations.md)
->* About deprecating the Classic UI, see [AEM 6.5 Release Notes](/help/release-notes/deprecated-removed-features.md)
+>* About deprecating the Classic UI, see [Experience Manager 6.5 release notes](/help/release-notes/deprecated-removed-features.md)
 >* For difference between the UIs, see [Touch UI and Classic UI](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
->* To understand the Touch-enabled UI in detail, see [Concepts of AEM Touch UI](/help/sites-developing/touch-ui-concepts.md)
+>* To understand the Touch-enabled UI in detail, see [Concepts of Experience Manager Touch UI](/help/sites-developing/touch-ui-concepts.md)
 
 ## Various modes of editing {#editingmodes}
 
-Authors can create and edit textual content in AEM using the different modes of components. The toolbar options for authoring and formatting content and the user experience of RTE-enabled components in different editing mode varies based on RTE configurations.
+Authors can create and edit textual content in Experience Manager using the different modes of components. The toolbar options for authoring and formatting content and the user experience of RTE-enabled components in different editing mode varies based on RTE configurations.
 
 |Editing mode|Editing area|Recommended features to be enabled|Touch UI|Classic UI|
 |--- |--- |--- |--- |--- |
@@ -66,7 +60,7 @@ In Classic UI, a slow double-click on the component allows inline editing and an
 
 ### Full screen editing {#full-screen-editing}
 
-AEM components can be opened in full screen view that hides the page content and occupies the available screen. Consider full screen editing a detailed version of the inline editing as it offers the most editing options. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
+Experience Manager components can be opened in full screen view that hides the page content and occupies the available screen. Consider full screen editing a detailed version of the inline editing as it offers the most editing options. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
 
 In the dialog full screen mode, along with a detailed RTE toolbar, the options and components available in a dialog are also available. It is applicable only for a dialog that contains RTE alongside other components.
 
@@ -92,8 +86,8 @@ The functionality is made available via a series of plug-ins, each with:
 
 * A `features` property:
 
-    * Used to activate, or deactivate, basic functionality for that plug-in
-    * That can be configured using a standardized procedure
+  * Used to activate, or deactivate, basic functionality for that plug-in
+  * That can be configured using a standardized procedure
 
 * Where appropriate, additional properties and options requiring specialized configuration.
 
@@ -104,7 +98,6 @@ The following table lists the current plug-ins, showing:
 * Plug-in IDs with a link to API documentation. ID is used as the node name when [activating a plug-in](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
 * Permitted values for the `features` property.
 * A description of the functionality provided by the plug-in.
-
 
 |Plug-in ID|features|Description|
 |--- |--- |--- |
