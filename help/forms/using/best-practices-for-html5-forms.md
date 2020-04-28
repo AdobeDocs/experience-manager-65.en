@@ -72,6 +72,7 @@ Adobe Experience Manager (AEM) forms can help you transform complex transactions
 * [Best practices for Administering AEM](/help/sites-administering/administer-best-practices.md)
 * [Best practices for Developing solutions](/help/sites-developing/best-practices.md)
 * [Best practices for working with adaptive forms](/help/forms/using/adaptive-forms-best-practices.md)
+* [AEM Forms server does not embed fonts to a Dynamic PDF form](https://helpx.adobe.com/aem-forms/kb/aem-forms-server-does-not-embed-fonts-to-dynamic-pdf-form.html)
 
 ## Quick reference card {#quick-reference-card}
 
