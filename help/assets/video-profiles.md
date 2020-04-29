@@ -174,8 +174,8 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 1. (Optional) To add video smart crop to the videos that this profile will be applied to, do the following:
     * On the Edit Video Profile page, to the right of the Smart Crop Ratio heading, tap **[!UICONTROL Add New]**.
-    * In the Name field, type a name for the crop ratio that will help you identify it easily.
-    * From the **[!UICONTROL Crop Ration]** drop-down list, select the ratio you want to use.
+    * In the Name field, type a name for the crop ratio that will help you easily identify it.
+    * From the **[!UICONTROL Crop Ratio]** drop-down list, select the ratio you want to use.
 
 1. Do one of the following:
 
@@ -230,8 +230,8 @@ To define advanced processing parameters for other asset types, see [Configuring
 1. (Optional) To add video smart crop to the videos that this profile will be applied to, do the following:
 
     * On the Edit Video Profile page, to the right of the Smart Crop Ratio heading, tap **[!UICONTROL Add New]**.
-    * In the Name field, type a name for the crop ratio that will help you identify it easily.
-    * From the **[!UICONTROL Crop Ration]** drop-down list, select the ratio you want to use.
+    * In the Name field, type a name for the crop ratio that will help you easily identify it.
+    * From the **[!UICONTROL Crop Ratio]** drop-down list, select the ratio you want to use.
     
 1. Do one of the following:
 
