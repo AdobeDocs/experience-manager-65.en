@@ -155,6 +155,15 @@ Configure the following properties that apply in Dialog editing mode in Touch UI
 
 When RTE is used in the touch-enabled dialog, setting the property `useFixedInlineToolbar` to true is mandatory to avoid issues.
 
+## Customizing in place editing {#customizing-in-place-editing}
+
+You can define on which HTML selector the text editor starts by configuring the following properties:
+
+* **`editElementQuery`** - Defined on `cq:InplaceEditingConfig`, this property is used to specify a selector of the HTML element on which the inline-editing for the Text Component will be started. If not specified, the inline-editing is directly started on the Text Component HTML.
+* **`textPropertyName`** - Defined on `cq:InplaceEditingConfig`, this property is used to specify the name of the property that will be saved on the content node where the HTML value of the text component will be persisted after inline-editing.
+
+The corresponding property for dialog mode is `name`.
+
 ## Enable RTE functionalities by activating plug-ins {#enable-rte-functionalities-by-activating-plug-ins}
 
 RTE functionalities are made available via a series of plug-ins, each with features property. You can configure the features property to enable or disable the various features of each plug-in.
