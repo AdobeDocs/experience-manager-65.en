@@ -322,14 +322,11 @@ To ensure that updates are synced properly across publishers, on each AEM publis
 1. Add two Package Node Filters:
    * `/home/users|-.*/.tokens`
    * `/home/users|-.*/rep:cache`
-
-1.  Policy handling
-
+1. Policy handling
    * To overwrite existing rep :policy nodes with new ones, add a third Package Filter: `/home/users|+.*/rep:policy`
-
    * To prevent policies from being distributed, set: `Acl Handling: IGNORE`
 
-![Vault package builder factory](assets/vault-package-builder-factory.png)
+   ![Vault package builder factory](assets/vault-package-builder-factory.png)
 
 ## Troubleshoot Sling distribution in AEM Communities {#troubleshoot-sling-distribution-in-aem-communities}
 
