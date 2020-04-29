@@ -34,10 +34,11 @@ The means for using the SRP API are through provided utilities, such as those fo
 When upgrading from AEM 6.0 or earlier, it will be necessary to migrate UGC for all SRPs, for which an Open Source tool is available. See [Upgrading to AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
->
->Historically, utilities for accessing UGC were found in the SocialUtils package, which no longer exists.
->
->For replacement utilities, see [SocialUtils Refactoring](socialutils.md).
+ >
+ >Historically, utilities for accessing UGC were found in the SocialUtils package, which no longer exists.
+ >
+ >For replacement utilities, see [SocialUtils Refactoring](socialutils.md).
+ >
 
 ## Utility Method to Access UGC {#utility-method-to-access-ugc}
 
@@ -63,8 +64,9 @@ For other SocialUtils replacements, see [SocialUtils Refactoring](socialutils.md
 For coding guidelines, visit [Accessing UGC with SRP](accessing-ugc-with-srp.md).
 
 >[!CAUTION]
->
->The path resourceToUGCStoragePath() returns is *not *suitable for [ACL checking](srp.md#for-access-control-acls).
+ >
+ >The path resourceToUGCStoragePath() returns is *not* suitable for [ACL checking](srp.md#for-access-control-acls).
+ >
 
 ## Utility Method to Access ACLs {#utility-method-to-access-acls}
 
@@ -90,8 +92,9 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 ```
 
 >[!CAUTION]
->
->The path returned by resourceToACLPath() is *not *suitable for [accessing the UGC](#utility-method-to-access-acls) itself.
+ >
+ >The path returned by resourceToACLPath() is *not* suitable for [accessing the UGC](#utility-method-to-access-acls) itself.
+ >
 
 ## UGC-Related Storage Locations {#ugc-related-storage-locations}
 
@@ -103,27 +106,27 @@ When a member enters UGC in the publish environment, they are interacting with a
 
 An example of such a component is the [comments component](http://localhost:4502/content/community-components/en/comments.html) that exists in the [Community Components Guide](components-guide.md) site. The path to the comment node in the local repository is:
 
-* Component path = */content/community-components/en/comments/jcr:content/content/includable/comments*
+* Component path = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **shadow node location**
 
 The creation of UGC also creates a [shadow node](srp.md#about-shadow-nodes-in-jcr) to which the necessary ACLs are applied. The path to the corresponding shadow node in the local repository is the result of prepending the shadow node root path to the component path:
 
-* Root path = /content/usergenerated
-* Comment shadow node = /content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments
+* Root path = `/content/usergenerated`
+* Comment shadow node = `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **UGC location**
 
 The UGC is created in neither of those locations, and should only be accessed using an [utility method](#utility-method-to-access-ugc) which invokes the SRP API.
 
-* Root path = /content/usergenerated/asi/srp-choice
-* UGC node for JSRP = /content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_
+* Root path = `/content/usergenerated/asi/srp-choice`
+* UGC node for JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
 *Be aware*, for JSRP, the UGC node will *only* be present on the AEM instance (either author or publish) on which it was entered. If entered on a publish instance, moderation will not be possible from the moderation console on author.
 
 ## Related Information {#related-information}
 
-* [Storage Resource Provider Overview](srp.md) - Introduction and repository usage overview
-* [Accessing UGC with SRP](accessing-ugc-with-srp.md) - coding guidelines
-* [SocialUtils Refactoring](socialutils.md) - Mapping deprecated utility methods to current SRP utility methods
+* [Storage Resource Provider Overview](srp.md) - Introduction and repository usage overview.
+* [Accessing UGC with SRP](accessing-ugc-with-srp.md) - Coding guidelines.
+* [SocialUtils Refactoring](socialutils.md) - Mapping deprecated utility methods to current SRP utility methods.
 
