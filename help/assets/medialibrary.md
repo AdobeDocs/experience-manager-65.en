@@ -51,7 +51,7 @@ The image component is part of AEM WCM. The graphics library that is being used 
 
 ### How can I prevent my users from using AEM Assets if I did not license AEM Assets? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-You can remove all AEM Assets-specific workflows, components, taxonomies, options and the AEM Assets admin from AEM. Doing so prevents your users from accidentially using AEM Assets features that you did not license.
+You can remove all AEM Assets-specific workflows, components, taxonomies, options and the AEM Assets admin from AEM. Doing so prevents your users from accidentally using AEM Assets features that you did not license.
 
 ### I want to add images to a page and want to crop and resize these images. Do I need AEM Assets? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
