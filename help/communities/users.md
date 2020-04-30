@@ -18,8 +18,11 @@ discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 In AEM Communities, in the publish environment, users can self-register and edit their profiles. Given the appropriate permissions, they may also:
 
 * Create sub-communities within the community site (see [community groups](creating-groups.md)).
+
 * [Moderate](moderation.md) user generated content (UGC).
+
 * Be [enablement resource](resources.md) contacts.
+
 * Be [privileged](#privileged-members-group) to create entries for blogs, calendars, QnA, and forums.
 
 Users registered in the publish environment are generally referred to as *community members (members)* to distinguish them from *users* in the author environment.
