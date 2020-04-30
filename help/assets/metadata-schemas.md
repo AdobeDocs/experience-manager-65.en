@@ -21,9 +21,9 @@ You can use the Metadata Schema Forms editor to modify existing schemas or add c
 1. Edit various metadata properties under the various tabs. However, you cannot modify the asset type in the properties page.
 
    ![Basic tab of asset Properties, where asset type cannot be changed](assets/asset-properties-basic-tab.png)
-   
-   *Figure: Basic tab on asset Properties*
-   
+
+   *Figure: Basic tab on asset Properties.*
+ 
    To modify the MIME type for an asset, use a custom metadata schema form or modify an existing form. See [Edit Metadata Schema Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) for more information. If you modify the metadata schema for a certain MIME type, the properties page layout for assets with the current MIME type and all asset subtypes are modified. For example, modifying a jpeg schema under `default/image` only modifies the metadata layout (asset properties) for assets with MIME type `image/jpeg`. However, if you edit the default schema, your changes modify the metadata layout for all types of assets.
 
 1. To view a list of forms/templates, click the AEM logo and then navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
@@ -82,9 +82,9 @@ You can add new tabs or form items to the metadata schema form. The tabs and for
 
    ![Metadata Schema Editor to customize asset Properties page](assets/metadata-schema-editor.png)
 
-   *Figure: Basic tab of metadata schema editor*
+   *Figure: [!UICONTROL Basic] tab of [!UICONTROL Metadata Schema] editor.*
 
-1. To configure a component, select it and modify its properties in the **Settings** tab.
+1. To configure a component, select it and modify its properties in the **[!UICONTROL Settings]** tab.
 
 ### Components within the Build Form tab {#components-within-the-build-form-tab}
 
@@ -123,29 +123,21 @@ The following are the valid values for this property:
 
 To ensure that the component is displayed properly in the metadata schema form, the property path should not include any spaces.
 
-**Placeholder**: Use this property to specify relevant placeholder text regarding the metadata property.
-
-**Required**: Use this property to mark a metadata property as mandatory on the properties page.
-
-**Disable Edit**: Use this property to make a metadata property uneditable on the properties page.
-
-**Show Empty Field In Read Only**: Mark this property to display a metadata property on the properties page even if it has no value. By default, when a metadata property has no value, it is not be listed on the properties page.
-
-**Show list ordered**: Use this property to display an ordered list of choices
-
-**Choices**: Use this property to specify choices in a list
-
-**Description** : Use this property to add a short description for the metadata component.
-
-**Class**: Object class the property is associated with.
-
-**Delete**: Click this icon to delete a component from the schema form.
+* **Placeholder**: Use this property to specify relevant placeholder text regarding the metadata property.
+* **Required**: Use this property to mark a metadata property as mandatory on the properties page.
+* **Disable Edit**: Use this property to make a metadata property uneditable on the properties page.
+* **Show Empty Field In Read Only**: Mark this property to display a metadata property on the properties page even if it has no value. By default, when a metadata property has no value, it is not be listed on the properties page.
+* **Show list ordered**: Use this property to display an ordered list of choices
+* **Choices**: Use this property to specify choices in a list
+* **Description** : Use this property to add a short description for the metadata component.
+* **Class**: Object class the property is associated with.
+* **Delete**: Click this icon to delete a component from the schema form.
 
 ![Delete icon on Metadata Schema Form](assets/chlimage_1-177.png)
 
 >[!NOTE]
 >
->The Hidden Field component does not include these attributes. Instead, it includes properties, such as attributes Name, Value, Field Label, and Description. The values for the Hidden Field component are sent as a POST parameter whenever the asset is saved. It is not be saved as metadata for the asset.
+>The [!UICONTROL Hidden Field] component does not include these attributes. Instead, it includes properties, such as attributes Name, Value, Field Label, and Description. The values for the Hidden Field component are sent as a POST parameter whenever the asset is saved. It is not be saved as metadata for the asset.
 
 If you select the **[!UICONTROL Required]** option, you can search for assets missing mandatory metadata. From the **[!UICONTROL Filters]** panel, expand the **[!UICONTROL Metadata Validation]** predicate and select the **[!UICONTROL Invalid]** option. The search results display assets missing mandatory metadata that you configured through the schema form.
 
@@ -159,7 +151,7 @@ To display any tab in the properties page in addition to the tab where the Conte
 
 ![The tab selected on Contextual Metadata list is displayed on asset properties page](assets/contextual-metadata-asset-properties.png)
 
-*Figure: Contextual metadata in asset properties page*
+*Figure: Contextual metadata in asset properties page.*
 
 ### Specify properties in JSON file {#specify-properties-in-json-file}
 
@@ -259,7 +251,7 @@ If the folder has a subfolder, the assets within the subfolder inherit the metad
 
    ![Text field added to Metadata Schema Form Editor](assets/text-field-metadata-schema-editor.png)
 
-   *Figure: Text field added to metadata schema form editor*
+   *Figure: Text field added to metadata schema form editor.*
 
 1. Click **[!UICONTROL Save]**. The modified form is listed in the **[!UICONTROL Metadata Schema Forms]** page.
 1. Click/tap **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
@@ -291,7 +283,7 @@ You can define mandatory fields at a folder level, which is enforced on assets t
 
    ![Add mandatory field to metadata form by selecting Required in Rules tab in Metadata Schema Form Editor](assets/mandatory-field-metadata-schema-editor.png)
 
-   *Figure: Mandatory field in metadata schema form editor*
+   *Figure: Mandatory field in metadata schema form editor.*
 
 1. Click **[!UICONTROL Save]**. The modified form is listed in the **[!UICONTROL Metadata Schema Forms]** page. Select the form and then click or tap **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
 

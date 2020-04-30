@@ -27,7 +27,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    ![Dialog with the Link Share](assets/Link-sharing-dialog-box.png)
 
-   *Figure: Dialog with the Link Share*
+   *Figure: The dialog to share assets as a link.*
 
    Alternatively, proceed to perform steps 3-7 of this procedure to add email recipients, configure the expiration time for the link, and send it from the dialog.
 
@@ -43,13 +43,9 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >
    >If a shared asset is moved to a different location, its link stops working. Re-create the link and re-share with the users.
 
-1. From the web console, open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against each:
+1. In AEM interface, access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**. 
 
-    * local
-    * author
-    * publish
-
-   For the local and author properties, provide the URL for the local and author instance respectively. Both local and author properties have the same value if you run a single AEM author instance. For publish, provide the URL for the publish instance.
+1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against `local`, `author`, and `publish`. For the `local` and `author` properties, provide the URL for the local and the author instance respectively. Both `local` and `author` properties have the same value if you run a single Experience Manager Author instance. For `publish`, provide the URL for the Experience Manager publish instance.
 
 1. In the email address box of the **[!UICONTROL Link Sharing]** dialog, type the email ID of the user you want to share the link with. You can also share the link with multiple users.
 
@@ -59,14 +55,16 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    ![Share links to assets directly from the Link Sharing dialog](assets/Asset-Sharing-LinkShareDialog.png)
 
-   Share links to assets directly from the Link Sharing dialog
+   *Figure: Share links to assets directly from the [!UICONTROL Link Sharing] dialog.*
 
    >[!NOTE]
    >
-   >If you enter an email ID of a user that is not a member of your organization, the words "External User" are prefixed with the email ID of the user.
+   >If you enter an email ID of a user that is not a member of your organization, the words [!UICONTROL External User] are prefixed with the email ID of the user.
 
-1. In the **[!UICONTROL Subject]** box, enter a subject for the asset you want to share.
-1. In the **[!UICONTROL Message]** box, enter an optional message.
+1. In the **[!UICONTROL Subject]** field, enter a subject for the asset you want to share.
+
+1. In the **[!UICONTROL Message]** field, enter an optional message.
+
 1. In the **[!UICONTROL Expiration]** field, specify an expiration date and time for the link using the date picker. By default, the expiration date is set for a week from the date you share the link.
 
    ![Set expiration date of shared link](assets/Set-shared-link-expiration.png)

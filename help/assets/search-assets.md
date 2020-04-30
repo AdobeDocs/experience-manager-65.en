@@ -36,7 +36,7 @@ Familiarize yourself with the search interface and the available actions.
 
 ![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
 
-*Figure: Understand Experience Manager Assets search results interface*
+*Figure: Understand Experience Manager Assets search results interface.*
 
 **A.** Save search as a smart collection. **B.** Filters or predicates to narrow the search results. **C.** Display files, folders, or both. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F.** Omnisearch field with user-provided search keyword. **G.** Select the loaded search results. **H.** Number of displayed search results out of the total search results. **I.** Close search **J.** Switch between card view and list view.
 
@@ -46,7 +46,7 @@ You can discover the desired assets faster from the search results page using th
 
 ![See the approximate number of assets without filtering search results in search facets.](assets/asset_search_results_in_facets_filters.png)
 
-*Figure: See the approximate number of assets without filtering search results in search facets*
+*Figure: See the approximate number of assets without filtering search results in search facets.*
 
 ## Understand search results and behavior {#searchbehavior}
 
@@ -95,7 +95,7 @@ To receive suggestions for more than one search keywords, continue to type all k
 
 ![Type multiple keywords to view suggestions that fit them all](assets/search_suggestionsmanykeywords.gif)
 
-*Figure: Type multiple keywords to view suggestions that fit them all*
+*Figure: Type multiple keywords to view suggestions that fit them all.*
 
 ### Search ranking and boosting {#searchrank}
 
@@ -127,7 +127,7 @@ Experience Manager provides various methods like filters that apply to the searc
 
 ![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
 
-*Figure: Limit search results to a folder by adding a folder path in Filters panel*
+*Figure: Limit search results to a folder by adding a folder path in Filters panel.*
 
 ### Find similar images {#visualsearch}
 
@@ -135,7 +135,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 
 ![Find similar images using the option in the card view](assets/search_find_similar.png)
 
-*Figure: Find similar images using the option in the card view*
+*Figure: Find similar images using the option in the card view.*
 
 ### Adobe Stock images {#adobestock}
 
@@ -240,7 +240,7 @@ To access the asset Picker interface, go to `https://[aem_server]:[port]/aem/ass
 
 ![Browse and select asset in the asset picker](assets/assetpicker.png)
 
-*Figure: Browse and select asset in the asset picker*
+*Figure: Browse and select asset in the asset picker.*
 
 ## Limitations {#limitations}
 
@@ -281,7 +281,7 @@ Use double quotations around keywords to find assets that contain the exact phra
 
 ![Search behavior with and without quotation marks](assets/search_with_quotes.gif)
 
-*Figure: Search behavior with and without quotation marks*
+*Figure: Search behavior with and without quotation marks.*
 
 **Search with asterisk wildcard**: To broaden the search, use an asterisk before or after the search word to match any number of characters. For example, searching for run without an asterisk does not return assets containing any variation of the word (including in the metadata). An asterisk substitutes for any number of characters. For example,
 
@@ -292,7 +292,7 @@ Use double quotations around keywords to find assets that contain the exact phra
 
 ![Illustrating use of asterisk wildcard in Asset search using an example](assets/search_with_asterisk_run.gif)
 
-*Figure: Illustrating use of asterisk wildcard in Asset search using an example*
+*Figure: Illustrating use of asterisk wildcard in Asset search using an example.*
 
 **Search with question mark wildcard**: To broaden the search, use one or more '?' characters to match exact number of characters. For example, in the following illustration,
 
@@ -304,13 +304,13 @@ Use double quotations around keywords to find assets that contain the exact phra
 
 ![Illustrating use of question mark wildcard in Asset search using an example](assets/search_with_questionmark_run.gif)
 
-*Figure: Illustrating use of question mark wildcard in Asset search using an example*
+*Figure: Illustrating use of question mark wildcard in Asset search using an example.*
 
 **Exclude a keyword**: Use dash to search for assets that do not contain a keyword. For example, `running -shoe` query returns assets that contain `running`, but not `shoe`. Similarly, `camp -night` query returns assets that contain `camp` but not `night`. Note that `camp-night` query returns assets that contain both `camp` and `night`.
 
 ![Use of dash to search for assets not containing an excluded keyword](assets/search_dash_exclude_keyword.gif)
 
-*Figure: Use of dash to search for assets not containing an excluded keyword*
+*Figure: Use of dash to search for assets not containing an excluded keyword.*
 
 ## Configuration and administration tasks related to search functionality {#configadmin}
 
@@ -413,7 +413,7 @@ To check the comments on an asset or version history of an asset, click the asse
 
 ![Sort timeline entries for a search asset](assets/sort_timeline_search_results.gif)
 
-*Figure: Sort timeline entries for a search asset*
+*Figure: Sort timeline entries for a search asset.*
 
 ### Download searched assets {#download}
 

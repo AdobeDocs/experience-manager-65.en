@@ -70,11 +70,11 @@ There are various ways to embed metadata in files. A selection of encoding stand
 * XMP: used by [!DNL Assets] to store the extracted metadata within the repository.
 * ID3: for audio and video files.
 * Exif: for image files.
-* Other/Legacy: from Microsoft Word, PowerPoint, Excel, and so on.
+* Other/Legacy: from [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], and so on.
 
 ### XMP {#xmp}
 
-Extensible Metadata Platform (XMP) is an open standard that is used by [!DNL Experience Manager Assets] for all metadata management. The standard offers universal metadata encoding that can be embedded into all file formats. Adobe and other companies support XMP standard as it provides a rich content model. Users of XMP standard and of [!DNL Experience Manager Assets] have a powerful platform to build upon. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) is an open standard that is used by [!DNL Experience Manager Assets] for all metadata management. The standard offers universal metadata encoding that can be embedded into all file formats. Adobe and other companies support XMP standard as it provides a rich content model. Users of XMP standard and of [!DNL Experience Manager Assets] have a powerful platform to build upon. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -110,62 +110,62 @@ The supported metadata schemata supported are listed below.
 
 ### Standard metadata {#standard-metadata}
 
-* dc - Dublin Core - the most important and widely used set of metadata.
+* dc - [!DNL Dublin Core] is the most important and widely used set of metadata.
 * DICOM - Digital Imaging and Communications in Medicine.
-* Iptc4xmpCore & iptc4xmpExt - International Press Communications Standard - lots of subject-specific metadata.
+* Iptc4xmpCore & iptc4xmpExt - International Press Communications Standard contains many subject-specific metadata.
 * rdf - Resource Description Framework - for generic semantic web metadata.
-* xmp - Extensible Metadata Platform.
+* xmp - [!DNL Extensible Metadata Platform].
 * xmpBJ - Basic Job Ticketing.
 
 ### Application-specific metadata {#application-specific-metadata}
 
 The application-specific metadata includes technical and descriptive metadata. If you use these, other applications may not be able to use the metadata. For example, if you have an asset with [!DNL Adobe Photoshop] metadata and another image-rendering application tries to access the metadata, it may not be able to access the metadata. If you find that you have much application-specific metadata in your assets, you can create a workflow step that changes an application-specific property to a standard property.
 
-* acdsee - metadata managed by the ACDSee program [www.acdsee.com/](https://www.acdsee.com/).
-* album - Adobe Photoshop Album.
-* cq - used by [!DNL Experience Manager Assets].
-* dam - used by [!DNL Experience Manager Assets].
+* ACDSee - Metadata managed by the [!DNL ACDSee] program. See [www.acdsee.com/](https://www.acdsee.com/).
+* album - [!DNL Adobe Photoshop Album].
+* cq - Used by [!DNL Experience Manager Assets].
+* dam - Used by [!DNL Experience Manager Assets].
 * dex - Optima SC Description Explorer.
 * crs - Adobe Photoshop Camera Raw.
-* lr - Adobe Lightroom.
+* lr - [!DNL Adobe Lightroom].
 * mediapro - IView MediaPro.
 * MicrosoftPhoto & MP - Microsoft Photo.
 * pdf & pdfx.
-* photoshop & psAux - Adobe Photoshop.
+* photoshop & psAux - [!DNL Adobe Photoshop].
 
 ### Digital Rights Management metadata {#digital-rights-management-metadata}
 
-* cc - creative commons
-* xmpRights
-* plus - Picture Licensing Universal System - https://www.useplus.com/
-* prism - https://www.idealliance.org/prism-metadata Publishing Requirements for Industry Standard Metadata
-* prl - Prism Rights Language
-* pur - Prism Usage Rights
-* xmpPlus - integration of PLUS with XMP
+* CC - [!DNL Creative Commons].
+* [!DNL XMPRights].
+* plus - [Picture Licensing Universal System](https://www.useplus.com).
+* prism - https://www.idealliance.org/prism-metadata Publishing Requirements for Industry Standard Metadata.
+* PRL - PRISM Rights Language.
+* PUR - PRISM Usage Rights.
+* xmpPlus - Integration of PLUS with XMP.
 
 ### Photography-specific metadata {#photography-specific-metadata}
 
-* exif - lots of technical information from camera, including GPS position
-* crs - photoshop camera raw
-* Iptc4xmpCore and iptc4xmpExt
-* TIFF - image metadata (not only for TIFF images)
+* Exif - Technical information from camera, including GPS position.
+* CRS - [!DNL Camera Raw] schema.
+* Iptc4xmpCore and iptc4xmpExt.
+* TIFF - image metadata (not only for TIFF images).
 
 ### Print-specific metadata {#print-specific-metadata}
 
-* pdf and pdfx - Adobe PDF and third-party applications
-* prism - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata
-* xmp
-* xmpPG - xmp for paged text
+* pdf and pdfx - Adobe PDF and third-party applications.
+* prism - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
+* xmp.
+* xmpPG - XMP metadata for paged text.
 
 ### Multimedia-specific metadata {#multimedia-specific-metadata}
 
-* xmpDM - Dynamic Media
-* xmpMM - Media Management
+* xmpDM - [!DNL Dynamic Media].
+* xmpMM - Media Management.
 
 ## Metadata-driven workflows {#metadata-driven-workflows}
 
 Creating metadata-driven workflows helps you automate some processes, which improves efficiency. In a metadata-driven workflow, the workflow management system reads the workflow and as a result performs some pre-defined action. For example, some of the ways you could use metadata-driven workflows:
 
-* The workflow can check whether an image has a title. If it does not, the system notifies a particular user to add a title.
-* The workflow can check whether a copyright notice on an asset allows for distribution. If it does, the system sends the asset to one server. If it does not, the system sends the asset to another server.
-* A workflow can check for assets without pre-defined, mandatory metadata or with *invalid* metadata.
+* The workflow can check whether an image has a title or not. If it does not, the system notifies to add a title.
+* The workflow can check whether a copyright notice on an asset allows for distribution or not. Accordingly, the system sends the asset to one server or the other.
+* A workflow can check for assets without pre-defined, mandatory metadata or assets with *invalid* metadata.
