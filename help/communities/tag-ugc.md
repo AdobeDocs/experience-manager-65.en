@@ -23,7 +23,7 @@ The tag namespaces and taxonomies are the same for both applications.
 
 ## Communities Features {#communities-features}
 
-The AEM Communities features which can be configured to allow tagging are
+The AEM Communities features which can be configured to allow tagging are:
 
 * [Blog](blog-feature.md)
 * [Calendar](calendar.md)
@@ -47,7 +47,7 @@ Because tags are applied to UGC in the publish environment, read permission need
 
 See [Setting Tag Permissions](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-The following is how it appears in CRXDE when an administrator applies read permissions to `/etc/tag/discussions` for the group `*Community Engage Members*`.
+The following is how it appears in CRXDE when an administrator applies read permissions to `/etc/tag/discussions` for the group `Community Engage Members`.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 

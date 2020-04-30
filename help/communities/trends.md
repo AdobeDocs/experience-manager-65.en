@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Activity Trends{#activity-trends}
+# Activity Trends {#activity-trends}
 
 ## Introduction {#introduction}
 
@@ -21,9 +21,9 @@ The `Community Activity List` component provides the ability to add trending inf
 
 The document describes:
 
-* adding the `Community Activity List` component to a [community site](/help/communities/overview.md#community-sites)
+* Adding the `Community Activity List` component to a [community site](/help/communities/overview.md#community-sites).
 
-* configuration settings for the `Community Activity List` component
+* Configuration settings for the `Community Activity List` component.
 
 ### Requirement {#requirement}
 
@@ -41,7 +41,7 @@ and drag it into place on a page.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When first placed on a page of a community site, this is how the component appears :
+When first placed on a page of a community site, this is how the component appears:
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -51,7 +51,7 @@ Select the placed `Community Activity List` component to access and select the `
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-Under the **Comments **tab, specify if and how comments for uploaded files appear :
+Under the **Comments** tab, specify if and how comments for uploaded files appear:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -59,7 +59,7 @@ Under the **Comments **tab, specify if and how comments for uploaded files appea
 
   Specify whether to to display data regarding community members or user generated content (UGC).
 
-  Select from
+  Select from:
 
     * `Members`
     * `Content`
@@ -78,7 +78,7 @@ Under the **Comments **tab, specify if and how comments for uploaded files appea
 
 * **Activity type**
 
-  Select one of
+  Select one of:
 
     * `Views`(page visits)
     * `Posts`(creating UGC)
@@ -89,7 +89,7 @@ Under the **Comments **tab, specify if and how comments for uploaded files appea
 
 * **Time period**
 
-  Select one of
+  Select one of:
 
     * `Last 24 hours`
     * `Last 7 days`
@@ -107,7 +107,7 @@ Under the **Comments **tab, specify if and how comments for uploaded files appea
 
 * **Member count aggregation**
 
-  When deselected (turned off), only top-level posts are counted. For example, if the context is the root page (the default), then an `Activity Type`of `Posts`will never show any activity as there is no ability to post content to the root page. When checked, the counts on all descendant pages are included.
+  When deselected (turned off), only top-level posts are counted. For example, if the context is the root page (the default), then an `Activity Type` of `Posts` will never show any activity as there is no ability to post content to the root page. When checked, the counts on all descendant pages are included.
   Default is checked.
 
 ### Example Page with 4 Components {#example-page-with-components}
