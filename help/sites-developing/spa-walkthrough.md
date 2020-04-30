@@ -110,6 +110,9 @@ When an SPA is built to leverage the AEM SPA Editor, the content author notices 
 
    ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
 
+   >[!NOTE]
+   >See the [SPA Editor Overview](spa-overview.md#requirements-limitations) for further information about the in place text editor and SPAs.
+
 1. Use the Assets Browser to drag-and-drop a new image into an image component.
 
    ![screen_shot_2018-06-07at143530](assets/screen_shot_2018-06-07at143530.png)

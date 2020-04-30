@@ -20,7 +20,7 @@ To see the various workflow models available by default, see **[!UICONTROL Tools
 
 ![Some of the default workflow](assets/aem-default-workflows.png)
 
-*Figure: Some of the default workflow available in [!DNL Experience Manager]*
+*Figure: Some of the default workflows available in [!DNL Experience Manager].*
 
 ## Apply workflows to process assets {#applying-workflows-to-assets}
 
