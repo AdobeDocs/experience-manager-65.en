@@ -99,8 +99,8 @@ After the reviewer completes the review (approves or rejects assets), you receiv
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 
-   *Figure: Card view*
+   *Figure: Card view.*
   
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
 
-   *Figure: List view*
+   *Figure: List view.*

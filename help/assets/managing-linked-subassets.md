@@ -1,14 +1,14 @@
 ---
-title: Manage compound assets with references and multi-page assets in Adobe Experience Manager.
-description: Learn how to create references to digital assets from within Adobe InDesign, Adobe Illustrator, and Adobe Photoshop. Use the Page Viewer feature to view individual subasset pages of multi-page files such as PDF, INDD, PPT, PPTX, and AI files.
+title: Manage compound assets with references and multi-page assets in [!DNL Adobe Experience Manager].
+description: Learn how to create references to digital assets from within [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Use the Page Viewer feature to view individual subasset pages of multi-page files such as PDF, INDD, PPT, PPTX, and AI files.
 contentOwner: AG
 ---
 
 # Manage compound and multi-page assets {#managing-compound-assets}
 
-[!DNL Adobe Experience Manager Assets] can identify if an uploaded file contains references to assets that already exist in the repository. This feature is available for supported file formats only. If the uploaded asset contains any references to Experience Manager assets, a bidirectional link is created between the uploaded and referenced assets.
+[!DNL Adobe Experience Manager Assets] can identify if an uploaded file contains references to assets that already exist in the repository. This feature is available for supported file formats only. If the uploaded asset contains any references to [!DNL Experience Manager] assets, a bidirectional link is created between the uploaded and referenced assets.
 
-Besides eliminating redundancy, referencing the assets in Adobe Creative Cloud applications enhances collaboration and increases the efficiency and productivity of users.
+Besides eliminating redundancy, referencing the assets in [!DNL Adobe Creative Cloud] applications enhances collaboration and increases the efficiency and productivity of users.
 
 [!DNL Experience Manager Assets] supports bidirectional referencing. You can find referenced assets in the asset detail page of the uploaded file. In addition, you can view the referencing files in the asset details page of the referenced asset.
 
@@ -21,7 +21,7 @@ You can reference existing digital assets from within an [!DNL Adobe Illustrator
 1. Using [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html), fetch the digital assets on the local filesystem. Navigate to the filesystem location of the asset that you want to reference.
 1. Drag the asset from the local folder to the [!DNL Illustrator] file.
 
-1. Save the [!DNL Illustrator] file to the mounted drive, or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the Experience Manager repository.
+1. Save the [!DNL Illustrator] file to the mounted drive, or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the [!DNL Experience Manager] repository.
 
 1. After the workflow completes, go to the asset details page for the asset. The references to existing digital assets are listed under **[!UICONTROL Dependencies]** in the **[!UICONTROL References]** column.
 
@@ -35,7 +35,7 @@ You can reference existing digital assets from within an [!DNL Adobe Illustrator
 
    ![view the references of Experience Manager Assets in References column in asset details](assets/asset-references.png)
 
-   *Figure: Asset references in asset details*
+   *Figure: Asset references in asset details.*
 
 ## Add digital assets as references in [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}
 
@@ -82,7 +82,7 @@ For the supported assets with multi-page formats &mdash; PDF files, AI files, [!
 
 Subasset generation is disabled by default. To enable subasset generation, follow these steps:
 
-1. Log into Experience Manager as an administrator. Access **[!UICONTROL Tools > Workflow > Models]**.
+1. Log into [!DNL Experience Manager] as an administrator. Access **[!UICONTROL Tools > Workflow > Models]**.
 1. Select **[!UICONTROL DAM Update Asset]** workflow and click **[!UICONTROL Edit]**.
 1. Click **[!UICONTROL Toggle Side Panel]** and locate the **[!UICONTROL Create Sub Asset]** step. Add the step to the workflow. Click **[!UICONTROL Sync]**.
 

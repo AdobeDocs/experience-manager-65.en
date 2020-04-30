@@ -1,12 +1,12 @@
 ---
 title: Create translation projects
-description: Learn how to create translation projects in AEM.
+description: Learn how to create translation projects in [!DNL Adobe Experience Manager].
 contentOwner: AG
 ---
 
 # Create translation projects {#creating-translation-projects}
 
-To create a language copy, trigger one of the following language copy workflows available under the References rail in the AEM user interface.
+To create a language copy, trigger one of the following language copy workflows available under the References rail in the [!DNL Experience Manager] user interface.
 
 * **Create and translate**: In this workflow, assets to be translated are copied to the language root of the language to which you want to translate. In addition, depending upon the options you choose, a translation project is created for the assets in the Projects console. Depending on the settings, the translation project can be started manually or allowed to run automatically as soon as the translation project is created.
 
@@ -24,15 +24,15 @@ To create a language copy, trigger one of the following language copy workflows 
 
 You use the create and translate workflow to generate language copies for a particular language for the first time. The workflow provides the following options:
 
-* Create structure only
-* Create a new translation project
-* Add to existing translation project
+* Create structure only.
+* Create a new translation project.
+* Add to existing translation project.
 
 ### Create structure only {#create-structure-only}
 
 Use the **[!UICONTROL Create structure only]** option to create a target folder hierarchy within the target language root to match the hierarchy of the source folder within the source language root. In this case, source assets are copied to the destination folder. However, no translation project is generated.
 
-1. In the Assets UI, select the source folder for which you want to create a structure in the target language root.
+1. In the [!DNL Assets] interface, select the source folder for which you want to create a structure in the target language root.
 1. Open the **[!UICONTROL References]** pane and click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**.
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
@@ -112,7 +112,7 @@ If you use this option, assets to be translated are copied to the language root 
 
    ![view the translated metadata in asset Properties page](assets/translated-metadata-asset-properties.png)
 
-   *Figure: Translated metadata in the asset properties page*
+   *Figure: Translated metadata in the asset properties page.*
 
 
    >[!NOTE]
@@ -273,13 +273,13 @@ If you use this option, the set of assets are added to an existing translation p
 
 ## Create temporary language copies {#creating-temporary-language-copies}
 
-When you run a translation workflow to update a language copy with edited versions of original assets, the existing language copy is preserved until you approve the translated asset(s). AEM Assets stores the newly-translated asset(s) at a temporary location and updates the existing language copy after you explicitly approve the asset(s). If you reject the asset(s), the language copy remains unchanged.
+When you run a translation workflow to update a language copy with edited versions of original assets, the existing language copy is preserved until you approve the translated asset(s). [!DNL Adobe Experience Manager Assets] stores the newly-translated asset(s) at a temporary location and updates the existing language copy after you explicitly approve the asset(s). If you reject the asset(s), the language copy remains unchanged.
 
-1. Click/tap the source root folder under **[!UICONTROL Language Copies]** for which you already created a language copy, and then click/tap **[!UICONTROL Reveal in Assets]** to open the folder in AEM Assets.
+1. Click/tap the source root folder under **[!UICONTROL Language Copies]** for which you already created a language copy, and then click/tap **[!UICONTROL Reveal in Assets]** to open the folder in [!DNL Experience Manager Assets].
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. From the Assets UI, select an asset you already translated and click/tap the **[!UICONTROL Edit]** icon from the toolbar to open the asset in edit mode.
+1. From the [!DNL Assets] interface, select an asset you already translated and click/tap the **[!UICONTROL Edit]** icon from the toolbar to open the asset in edit mode.
 1. Edit the asset and then save the changes.
 1. Perform steps 2-14 of the [Add to existing translation project](#add-to-existing-translation-project) procedure to update the language copy.
 1. Click/tap the ellipsis at the bottom of the **[!UICONTROL Translation Job]** tile. From the list of assets in the **[!UICONTROL Translation Job]** page, you can clearly view the temporary location where the translated version of the asset is stored.
@@ -299,6 +299,8 @@ When you run a translation workflow to update a language copy with edited versio
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
-1. Navigate to the Assets console, and open the Properties page for each of the translated assets to view the translated metadata.
+1. To view the translated metadata, navigate to the [!DNL Assets] console and open the [!UICONTROL Properties] page for each of the translated assets.
 
-For tips on translating metadata for assets efficiently, see [5 Steps for Efficiently Translating Metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+>[!MORELIKETHIS]
+>
+>* [Tips to efficiently translate metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).

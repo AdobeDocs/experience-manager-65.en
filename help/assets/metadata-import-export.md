@@ -1,12 +1,12 @@
 ---
-title: Import and export asset metadata in bulk
-description: Import and export asset metadata in bulk
+title: Import and export asset metadata in bulk.
+description: Bulk import and export of metadata of digital assets.
 contentOwner: AG
 ---
 
 # Import and export asset metadata in bulk {#import-and-export-asset-metadata-in-bulk}
 
-AEM Assets lets you import asset metadata in bulk using a CSV file. You can do bulk updates for the recently uploaded assets or the existing assets by importing a CSV file. You can also ingest asset metadata in bulk from third-party system in CSV format.
+[!DNL Adobe Experience Manager Assets] lets you import asset metadata in bulk using a CSV file. You can do bulk updates for the recently uploaded assets or the existing assets by importing a CSV file. You can also ingest asset metadata in bulk from third-party system in CSV format.
 
 ## Import metadata {#import-metadata}
 
@@ -16,9 +16,9 @@ The metadata import is asynchronous and does not impede the system performance. 
 >
 >To import metadata on custom namespaces, first register the namespaces.
 
-1. Navigate to the Assets user interface, and tap/click **[!UICONTROL Create]** from the toolbar.
+1. Navigate to the [!DNL Assets] user interface, and click **[!UICONTROL Create]** from the toolbar.
 1. From the menu, select **[!UICONTROL Metadata]**.
-1. In the **[!UICONTROL Metadata Import]** page, tap/click **[!UICONTROL Select File]**. Select the CSV file with the metadata.
+1. In the **[!UICONTROL Metadata Import]** page, click **[!UICONTROL Select File]**. Select the CSV file with the metadata.
 1. Specify the following parameters:
 
     | Metadata import parameters | Description |
@@ -26,14 +26,14 @@ The metadata import is asynchronous and does not impede the system performance. 
     | [!UICONTROL Batch Size] | Number of assets in a batch for which metadata is to be imported. Default value is 50. Maximum value is 100. |
     | [!UICONTROL Field Separator] | Default value is `,` (a comma). You can specify any other character. |
     | [!UICONTROL Multi Value Delimiter] | Separator for metadata values. Default value is `|`. |
-    | [!UICONTROL Launch Workflows] | False by default. When set to `true` and default Launcher settings are in effect for the DAM Metadata WriteBack Workflow (that writes metadata to the binary XMP data). Enabling launch workflows slows the system down. |
+    | [!UICONTROL Launch Workflows] | False by default. When set to `true` and default Launcher settings are in effect for the [!UICONTROL DAM Metadata WriteBack] workflow (that writes metadata to the binary XMP data). Enabling launch workflows slows the system down. |
     | [!UICONTROL Asset Path Column Name] | Defines the column name for the CSV file with assets. |
 
-1. Tap/click **[!UICONTROL Import]** from the toolbar. After the metadata is imported, a notification is sent to your Notification inbox. Navigate to asset property page and verify whether the metadata values are correctly imported for assets.
+1. Tap/click **[!UICONTROL Import]** from the toolbar. After the metadata is imported, a notification is sent to your [!UICONTROL Notification] inbox. Navigate to asset property page and verify whether the metadata values are correctly imported for assets.
 
 ## Export Metadata {#export-metadata}
 
-You can export metadata for multiple assets in a CSV format. The metadata is exported asynchronously and does not impact the performance of the system. To export metadata, AEM traverses through the properties of the asset node `jcr:content/metadata` and its child nodes and exports the metadata properties in a CSV file.
+You can export metadata for multiple assets in a CSV format. The metadata is exported asynchronously and does not impact the performance of the system. To export metadata, [!DNL Experience Manager] traverses through the properties of the asset node `jcr:content/metadata` and its child nodes and exports the metadata properties in a CSV file.
 
 A few use cases for exporting metadata in bulk are:
 
@@ -43,7 +43,8 @@ A few use cases for exporting metadata in bulk are:
 * Externalize the metadata for separate localization.
 
 1. Select the asset folder that contains assets for which you want to export metadata. From the toolbar, select **[!UICONTROL Export metadata]**.
-1. In the Metadata Export dialog, specify a name for the CSV file. To export metadata for assets in subfolders, select **[!UICONTROL Include assets in subfolders]**.
+
+1. In the [!UICONTROL Metadata Export] dialog, specify a name for the CSV file. To export metadata for assets in subfolders, select **[!UICONTROL Include assets in subfolders]**.
 
    ![Interface and options to export metadata of all assets in a folder](assets/export_metadata_page.png "Interface and options to export metadata of all assets in a folder")
 
@@ -51,13 +52,14 @@ A few use cases for exporting metadata in bulk are:
 
 1. In the **[!UICONTROL Properties to be exported]** field, specify whether you want to export all or specific properties. If you choose Selective properties to be exported, add the desired properties.  
 
-1. From the toolbar, tap/click **[!UICONTROL Export]**. A message confirms that the metadata is exported. Close the message.
-1. Open the inbox notification for the export job. Select the job and click **[!UICONTROL Open]** from the toolbar. To download the CSV file with the metadata, tap/click **[!UICONTROL CSV Download]** from the toolbar. Click **[!UICONTROL Close]**.
+1. From the toolbar, click **[!UICONTROL Export]**. A message confirms that the metadata is exported. Close the message.
+
+1. Open the inbox notification for the export job. Select the job and click **[!UICONTROL Open]** from the toolbar. To download the CSV file with the metadata, click **[!UICONTROL CSV Download]** from the toolbar. Click **[!UICONTROL Close]**.
 
    ![Dialog  to download the CSV file containing metadata exported in bulk](assets/csv_download.png)
 
-   *Figure: Dialog to download the CSV file containing metadata exported in bulk*
+   *Figure: Dialog to download the CSV file containing metadata exported in bulk.*
 
 >[!MORELIKETHIS]
 >
->* [Metadata import and export in AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Metadata import and export in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)

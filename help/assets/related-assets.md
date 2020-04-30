@@ -1,12 +1,12 @@
 ---
 title: Related assets
-description: Learn how to relate assets that share certain common attributes. You can also use the feature to create source/derived relationships between assets.
+description: Learn how to relate digital assets that share some common attributes. Also create source-derived relationships between digital assets.
 contentOwner: AG
 ---
 
 # Related assets {#related-assets}
 
-Adobe Experience Manager (AEM) Assets lets you manually relate assets based on the needs of your organization using the related assets feature. For example, you can relate a license file with an asset or an image/video on a similar topic. You can relate assets that share certain common attributes. You can also use the feature to create source/derived relationships between assets. For example, if you have a PDF file that is generated from an INDD file, you can relate the PDF file to its source INDD file.
+[!DNL Adobe Experience Manager Assets] lets you manually relate assets based on the needs of your organization using the related assets feature. For example, you can relate a license file with an asset or an image/video on a similar topic. You can relate assets that share certain common attributes. You can also use the feature to create source/derived relationships between assets. For example, if you have a PDF file that is generated from an INDD file, you can relate the PDF file to its source INDD file.
 
 Using this feature, you have the flexibility to share a low resolution PDF file or JPG file with vendors or agencies and make the high resolution INDD file available only on request.
 
@@ -16,11 +16,11 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
 ## Relate assets {#relating-assets}
 
-1. From the AEM interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
+1. From the Experience Manager interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
 
    ![open an asset's Properties page to relate the asset](assets/asset-properties-relate-assets.png)
 
-   *Figure: Asset properties page to relate assets*
+   *Figure: [!DNL Assets] [!UICONTROL Properties] page to relate assets.*
 
    Alternatively, select the asset from the list view.
 
@@ -63,15 +63,15 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
 ## Translating Related Assets {#translating-related-assets}
 
-Creating source/ derived relationships between assets using the Related Assets feature is also helpful in translation workflows. When you run a translation workflow on a derived asset, AEM Assets automatically fetches any asset that the source file references and includes it for translation. This way, the asset referenced by the source asset is translated along with the source and derived assets. For example, consider a scenario where your English language copy includes a derived asset and its source file as shown.
+Creating source/ derived relationships between assets using the Related Assets feature is also helpful in translation workflows. When you run a translation workflow on a derived asset, [!DNL Experience Manager Assets] automatically fetches any asset that the source file references and includes it for translation. This way, the asset referenced by the source asset is translated along with the source and derived assets. For example, consider a scenario where your English language copy includes a derived asset and its source file as shown.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-If the source file is related to another asset, Experience Manager Assets fetches the referenced asset and includes it for translation.
+If the source file is related to another asset, [!DNL Experience Manager Assets] fetches the referenced asset and includes it for translation.
 
 ![asset Properties page shows source file of the related asset to include for translation](assets/asset-properties-source-asset.png)
 
-*Figure: Source asset of the related assets to include for translation*
+*Figure: Source asset of the related assets to include for translation.*
 
 1. Translate the assets in the source folder to a target language by following the steps in [Create a new translation project](translation-projects.md#create-a-new-translation-project). For example, in this case, translate your assets to French.
 

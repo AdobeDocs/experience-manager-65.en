@@ -1,20 +1,20 @@
 ---
-title: Support for IPTC metadata
-description: Learn how Adobe Experience Manager (AEM) Assets supports the IPTC metadata, Creative ratings, and keywords added to assets through Adobe Bridge and other Creative Apps.
+title: Work with IPTC metadata in [!DNL Adobe Experience Manager Assets].
+description: Learn how [!DNL Adobe Experience Manager Assets] supports the IPTC metadata, Creative ratings, and keywords added to assets through Adobe Bridge and other Creative Apps.
 contentOwner: AG
 ---
 
-# Support for IPTC metadata {#support-for-iptc-metadata}
+# Work with IPTC metadata {#support-for-iptc-metadata}
 
-Learn how Adobe Experience Manager (AEM) Assets supports the IPTC metadata, Creative ratings, and keywords added to assets through Adobe Bridge and other Creative Apps.
+Learn how [!DNL Adobe Experience Manager Assets] supports the IPTC metadata, Creative ratings, and keywords added to assets through [!DNL Adobe Bridge] and other [!DNL Adobe Creative Cloud] apps.
 
-Adobe Experience Manager (AEM) Assets supports the IPTC metadata standard that is widely used to describe assets. This way, AEM Assets enhances the acceptance of its images among various parties, including photographers, creative agencies, libraries, museums, and so on.
+[!DNL Adobe Experience Manager Assets] supports the IPTC metadata standard that is widely used to describe assets. This way, [!DNL Assets] enhances the acceptance of its images among various parties, including photographers, creative agencies, libraries, museums, and so on.
 
 The default metadata schema for assets now incorporates the IPTC Core and IPTC Extension metadata schemas to define comprehensive metadata properties that allow users to add precise and reliable data about people, locations, and products shown in an image. It also supports dates, names, and identifiers regarding the creation of the image, and a flexible way to express rights information.
 
 The Properties page for assets now includes separate tabs to display the IPTC Core and IPTC Extension metadata in editable fields.
 
-1. From the Assets user interface, select an image.
+1. From the [!DNL Assets] user interface, select an image.
 1. Click **[!UICONTROL Properties]** from the toolbar.
 1. Click the **[!UICONTROL IPTC]** tab to view the IPTC metadata for the asset.
 1. Edit the IPTC metadata properties, as required.

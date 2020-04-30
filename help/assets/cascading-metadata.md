@@ -1,5 +1,5 @@
 ---
-title: Cascading Metadata
+title: Cascading metadata in [!DNL Adobe Experience Manager Assets].
 description: This article describes how to define cascading metadata for assets.
 contentOwner: AG
 ---
@@ -19,7 +19,7 @@ Here are some use cases for which you can define cascading metadata:
 * Change options displayed for a particular field based on the value specified in another field.
 * Set the default metadata value in a particular field based on the value specified in another field.
 
-## Configure cascading metadata in AEM {#configure-cascading-metadata-in-aem}
+## Configure cascading metadata in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 Consider a scenario where you want to display cascading metadata based on the type of asset that is selected. Some examples
 
@@ -28,7 +28,7 @@ Consider a scenario where you want to display cascading metadata based on the ty
 
 Irrespective of the asset type chosen, display the copyright information as a required field.
 
-1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then click **[!UICONTROL Edit]** from the toolbar to edit the schema.
 
    ![select_form](assets/select_form.png)
@@ -47,7 +47,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
     * To specify the values manually, select **[!UICONTROL Add Manually]**, and click **[!UICONTROL Add Choice]** and specify the option text and value. For example, specify Video, PDF, Word, and Image asset types.
 
-    * To fetch the values from a JSON file dynamically, select **[!UICONTROL Add Through JSON Path]** and provide the path of the JSON file. AEM fetches the key-value pairs in the real time when the form is presented to the user.
+    * To fetch the values from a JSON file dynamically, select **[!UICONTROL Add Through JSON Path]** and provide the path of the JSON file. [!DNL Experience Manager] fetches the key-value pairs in the real time when the form is presented to the user.
 
    Both options are mutually exclusive. You cannot import the options from a JSON file and edit manually.
 
@@ -102,8 +102,8 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
    ![Cascading metadata for Video asset](assets/video_asset.png)
 
-   *Figure: Cascading metadata for a video*
+   *Figure: Cascading metadata for a video.*
 
    ![Cascading metadata for document asset](assets/doc_type_fields.png)
 
-   *Figure: Cascading metadata for a document*
+   *Figure: Cascading metadata for a document.*

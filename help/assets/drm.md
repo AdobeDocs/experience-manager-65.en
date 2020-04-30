@@ -16,7 +16,7 @@ You can view the expiration status for an asset in the Assets console in both th
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
-*Figure: In card view, a flag on the card indicates expired asset*
+*Figure: In card view, a flag on the card indicates expired asset.*
 
 **List view**
 
@@ -119,7 +119,7 @@ The Assets console of Adobe Experience Manager (AEM) Assets can display various 
    ![set asset expiration date and time in Expires field](assets/asset-properties-advanced-tab.png)
 
 
-   *Figure: Advanced tab in asset properties to set asset expiration*
+   *Figure: [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] page to set asset expiration.*
 
 1. Click **[!UICONTROL Save]** and then click **[!UICONTROL Close]** to display the Asset console.
 1. The publication status for the asset indicates an expired status at the bottom of the asset thumbnail in the card view. In the list view, the status of the asset is displayed as **[!UICONTROL Expired]**.

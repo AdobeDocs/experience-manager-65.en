@@ -372,13 +372,13 @@ To preview an asset using keyboard, follow these steps:
 
    ![Date time picker or use keyboard keys in On Time field to add date and time for asset activation](assets/schedule-activation.png)
 
-   *Figure: Schedule asset activation*
+   *Figure: Schedule asset activation.*
 
 1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API.
 
    ![Date time picker or use keyboard keys in Off Time field to add date and time for asset de-activation](assets/schedule-deactivation.png)
 
-   *Figure: Schedule asset deactivation*
+   *Figure: Schedule asset deactivation.*
 
 1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in AEM. YouTube requires tags to publish. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
 
@@ -721,7 +721,7 @@ The timeline lets you view various events for a selected item, such as active wo
 
 ![Sort timeline entries for an asset](assets/sort_timeline.gif)
 
-*Figure: Sort timeline entries for an asset*
+*Figure: Sort timeline entries for an asset.*
 
 >[!NOTE]
 >
