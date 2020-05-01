@@ -63,6 +63,17 @@ In addition to the information above, consider the following:
 
 * For EPS files, metadata writeback is supported in PostScript Document Structuring Convention (PS-Adobe) version 3.0 or later.
 
+## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
+
+The following list describes the sub-types of raster image file formats that are *not* supported in Dynamic Media.
+
+* PNG files that have an IDAT chunk size greater than 100 MB.
+* PSB files.
+* PSD files with a color space other than CMYK, RGB, Grayscale, or Bitmap are not supported. DuoTone, Lab, and Indexed color spaces are not supported.
+* PSD files that have a bit depth greater than 16.
+* TIFF files that have floating point data.
+* TIFF files that have Lab color space.
+
 <!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
 ## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
 
