@@ -40,7 +40,7 @@ The following step-by-step workflow description is designed to help you get up a
         * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/organize-assets.md).
         * Learn more about [Organizing digital assets](/help/assets/organize-assets.md).
 
-    * Upload your master videos to the folders. You can upload video files that are up to 20 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
+    * Upload your master videos to the folders. You can upload video files that are up to 15 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
 
         * [Upload your videos](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
         * Learn more about [Supported input file formats](/help/assets/assets-formats.md#supported-multimedia-formats).
