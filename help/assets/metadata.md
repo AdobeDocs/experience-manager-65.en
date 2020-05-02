@@ -110,7 +110,7 @@ The supported metadata schemata supported are listed below.
 
 ### Standard metadata {#standard-metadata}
 
-* dc - [!DNL Dublin Core] is the most important and widely used set of metadata.
+* DC - [!DNL Dublin Core] is an important and widely used set of metadata.
 * DICOM - Digital Imaging and Communications in Medicine.
 * Iptc4xmpCore & iptc4xmpExt - International Press Communications Standard contains many subject-specific metadata.
 * rdf - Resource Description Framework - for generic semantic web metadata.
@@ -122,45 +122,45 @@ The supported metadata schemata supported are listed below.
 The application-specific metadata includes technical and descriptive metadata. If you use these, other applications may not be able to use the metadata. For example, if you have an asset with [!DNL Adobe Photoshop] metadata and another image-rendering application tries to access the metadata, it may not be able to access the metadata. If you find that you have much application-specific metadata in your assets, you can create a workflow step that changes an application-specific property to a standard property.
 
 * ACDSee - Metadata managed by the [!DNL ACDSee] program. See [www.acdsee.com/](https://www.acdsee.com/).
-* album - [!DNL Adobe Photoshop Album].
-* cq - Used by [!DNL Experience Manager Assets].
-* dam - Used by [!DNL Experience Manager Assets].
-* dex - Optima SC Description Explorer.
-* crs - Adobe Photoshop Camera Raw.
-* lr - [!DNL Adobe Lightroom].
-* mediapro - IView MediaPro.
+* Album - [!DNL Adobe Photoshop Album].
+* CQ - Used by [!DNL Experience Manager Assets].
+* DAM - Used by [!DNL Experience Manager Assets].
+* DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) is a collection of tools for metadata and file management for Windows operating systems.
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* LR - [!DNL Adobe Lightroom].
+* MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto & MP - Microsoft Photo.
-* pdf & pdfx.
-* photoshop & psAux - [!DNL Adobe Photoshop].
+* PDF & PDF/X.
+* Photoshop and psAux - [!DNL Adobe Photoshop].
 
 ### Digital Rights Management metadata {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
-* plus - [Picture Licensing Universal System](https://www.useplus.com).
-* prism - https://www.idealliance.org/prism-metadata Publishing Requirements for Industry Standard Metadata.
+* PLUS - [Picture Licensing Universal System](https://www.useplus.com).
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
 * PRL - PRISM Rights Language.
 * PUR - PRISM Usage Rights.
-* xmpPlus - Integration of PLUS with XMP.
+* `xmpPlus` - Integration of PLUS with XMP.
 
 ### Photography-specific metadata {#photography-specific-metadata}
 
 * Exif - Technical information from camera, including GPS position.
 * CRS - [!DNL Camera Raw] schema.
-* Iptc4xmpCore and iptc4xmpExt.
+* `iptc4xmpCore` and `iptc4xmpExt`.
 * TIFF - image metadata (not only for TIFF images).
 
 ### Print-specific metadata {#print-specific-metadata}
 
-* pdf and pdfx - Adobe PDF and third-party applications.
-* prism - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
-* xmp.
-* xmpPG - XMP metadata for paged text.
+* PDF and PDF/X - Adobe PDF and third-party applications.
+* PRISM - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
+* XMP.
+* `xmpPG` - XMP metadata for paged text.
 
 ### Multimedia-specific metadata {#multimedia-specific-metadata}
 
-* xmpDM - [!DNL Dynamic Media].
-* xmpMM - Media Management.
+* `xmpDM` - [!DNL Dynamic Media].
+* `xmpMM` - Media Management.
 
 ## Metadata-driven workflows {#metadata-driven-workflows}
 
