@@ -77,7 +77,7 @@ The administrator applying the tags to enablement resources must be aware of the
 
 For example, if a `ski-catalog` namespace were created and set on a catalog named `Ski Catalog`, it might have two child tags: `lesson-1` and `lesson-2`.
 
-Thus, any enablement resource tagged with one of
+Thus, any enablement resource tagged with one of:
 
 * ski-catalog:lesson-1
 * ski-catalog:lesson-2

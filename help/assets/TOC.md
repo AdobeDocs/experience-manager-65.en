@@ -99,7 +99,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Use PDF rasterizer](aem-pdf-rasterizer.md)
     + [Configure upload restrictions](configuring-asset-upload-restrictions.md)
     + [AEM and Creative Cloud integration best practices](aem-cc-integration-best-practices.md)
-    + [Integrate with InDesign server](indesign.md)
+    + [Integrate with InDesign Server](indesign.md)
     + [Metadata profiles](metadata-profiles.md)
     + [Digital Rights Management in assets](drm.md)
     + [Use demo package for asset insights](touch-ui-using-demo-package-for-asset-insights.md)

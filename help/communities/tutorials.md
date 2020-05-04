@@ -17,7 +17,9 @@ These are examples to help in learning and working with AEM 6.1 Communities [soc
 
 ## Client-Side Customization {#client-side-customization}
 
-See also [SCF client-side customization](client-customize.md).
+See also:
+
+* [SCF client-side customization](client-customize.md)
 
 * [Community Components guide](components-guide.md)
 
@@ -41,7 +43,7 @@ Sample code is available in the [Adobe Marketing Cloud GitHub](https://github.co
 
 * [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
-  ToDo MVC Demostrates how to develop an SCF+SRP component from scratch
+  ToDo MVC Demostrates how to develop an SCF+SRP component from scratch.
 
 * [Getting Started with AEM Communities](getting-started.md)
 
@@ -55,11 +57,11 @@ Sample code is available in the [Adobe Marketing Cloud GitHub](https://github.co
 
 The Geometrixx samples package includes demo users. There is often a difference in experience between being a visitor (not logged in) or a member (logged in) and, as long as the Geometrixx samples packages remain installed, you may use these users to simulate a logged in state when exploring with the [Community Components guide](components-guide.md).
 
-For a full list of the demo users, navigate using the Rail to **[!UICONTROL Tools > Operations > Security > Users]**. Or use the Classic UI [security console](http://localhost:4502/useradmin) for managing users and groups.
+For a full list of the demo users, navigate using the Rail to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security > Users]**. Or use the Classic UI [security console](http://localhost:4502/useradmin) for managing users and groups.
 
 If a [community ste has been created](getting-started.md), it is possible to assign demo users to its [community user groups](users.md).
 
-***user id* / *password:***
+***user id* / *password***:
 
 * aaron.mcdonald@mailinator.com / password
 * emily.andrews@mailinator.com / password
