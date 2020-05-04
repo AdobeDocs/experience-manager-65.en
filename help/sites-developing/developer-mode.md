@@ -31,10 +31,10 @@ These help a developer to:
 >
 >Developer mode:
 >
->  * Is only available in the touch-enabled UI (when editing pages).
->  * Is not available on mobile devices or small windows on desktop (due to space restrictions).  
->    * This occurs when the width is less than 1024px.  
->  * Is only available to users who are members of the `administrators` group.
+>* Is only available in the touch-enabled UI (when editing pages).
+>* Is not available on mobile devices or small windows on desktop (due to space restrictions).  
+>   * This occurs when the width is less than 1024px.  
+>* Is only available to users who are members of the `administrators` group.
 
 >[!CAUTION]
 >
