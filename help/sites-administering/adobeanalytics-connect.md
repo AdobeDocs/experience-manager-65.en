@@ -107,7 +107,7 @@ For the Report Suite ID (RSID) that you are using, you can control which server 
 >For example, a framework is configured to use the *diiweretail* report suite and author is the selected server instance. When pages are published along with the framework, calls are still made to Adobe Analytics, however these calls do not contain the RSID. Only calls from the author instance include the RSID.
 
 1. Using **Navigation**, select **Tools**, **Cloud Services**, then **Legacy Cloud Services**.
-1. Scroll to **Adobe Analytics** and click **&#91;+&#93;** next to **Available Configurations**.
+1. Scroll to **Adobe Analytics** and select **Show Configurations**.
 1. Click the **&#91;+&#93;** link next to your Adobe Analytics configuration.
 
 1. In the **Create Framework** dialog:
