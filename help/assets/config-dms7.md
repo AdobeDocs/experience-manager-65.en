@@ -135,6 +135,7 @@ If you want to further customize the configuration and setup of Dynamic Media - 
 * [(Optional) Setup and configuration of Dynamic Media - Scene7 mode settings](#optionalsetupandconfigurationofdynamicmediascene7modesettings)
 
 * [(Optional) Tuning the performance of Dynamic Media - Scene7 mode](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
+
 * [(Optional) Filtering assets for replication](#optional-filtering-assets-for-replication)
 
 ### (Optional) Setup and configuration of Dynamic Media - Scene7 mode settings</p> {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p}
