@@ -52,7 +52,6 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 
 1. Tap/ click **[!UICONTROL Done]**. The Metadata Profile is added to the list of profiles in the **[!UICONTROL Metadata Profiles]** page.<br>
 
-
    ![Metadata profile added in Metadata Profiles page](assets/MetadataProfiles-page.png)
 
 ## Copy a metadata profile {#copying-a-metadata-profile}
@@ -126,13 +125,13 @@ In addition to applying a profile to a folder, you can also apply one globally s
 
 You can reprocess assets in a folder that already has an existing metadata profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
-**To apply a metadata profile globally, do one of the following**
+To apply a metadata profile globally, follow these steps:
 
 * Navigate to `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` and apply the appropriate profile and tap **[!UICONTROL Save]**.
 
   ![chlimage_1-209](assets/chlimage_1-492.png)
 
-* Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` and tap **Save All**.
+* In CRXDE Lite, navigate to the following node: `/content/dam/jcr:content`. Add the property `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` and click **[!UICONTROL Save All]**.
 
   ![chlimage_1-210](assets/chlimage_1-493.png)
 
@@ -155,6 +154,10 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 1. Tap the AEM logo and navigate **[!UICONTROL Assets]** and then to the folder that you want to remove an metadata profile from.
 1. On the folder, tap the check mark to select it and then tap **[!UICONTROL Properties]**.
 1. Select the **[!UICONTROL Metadata Profiles]** tab and select **[!UICONTROL None]** from the drop-down menu and click **[!UICONTROL Save]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+
+## Limitations and best practices {#limitations-best-practices-tips}
+
+* You may have pre-existing metadata profiles existing since before upgrading to [!DNL Experience Manager] 6.5. After upgrade, if you apply such a profile in folder [!UICONTROL Properties] in [!UICONTROL Metadata Profiles] tab, the metadata form fields do not display. However, if you apply a newly created metadata profile, the form fields are displayed but unavailable as expected. There is no loss of functionality but if you want to see the (unavailable) form fields then edit and save the existing metadata profiles.
 
 >[!MORELIKETHIS]
 >
