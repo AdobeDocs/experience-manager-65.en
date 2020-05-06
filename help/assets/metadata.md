@@ -24,7 +24,7 @@ Metadata is the collection of all the data available for an asset but that is no
 * Name of the folder it is contained in.
 * Related assets or applied tags.
 
-The above are the basic metadata properties that Experience Manager can manage for assets, which allows users to see all assets. For example, ordering assets by last modification date is useful when trying to discover recently added assets.
+The above are the basic metadata properties that [!DNL Experience Manager] can manage for assets, which allows users to see all assets. For example, ordering assets by last modification date is useful when trying to discover recently added assets.
 
 You can add more high-level data to digital assets, for example:
 
@@ -86,7 +86,7 @@ ID3 tags are designed for the MP3 file format. Additional information on formats
 
 ### Exif {#exif}
 
-Exchangeable image file format (Exif) is the most popular metadata format used in digital photography. It provides a way of embedding a fixed vocabulary of metadata properties in many file formats, such as JPEG, TIFF, RIFF, and WAV. Exif stores metadata as pairs of a metadata name and a metadata value. These metadata name-value-pairs are also called tags, not to be confused with the tagging in [!DNL Experience Manager].  Modern digital cameras create Exif metadata and modern graphics software support it. Exif format is the lowest common denominator for metadata management especially for images.
+Exchangeable image file format (Exif) is the most popular metadata format used in digital photography. It provides a way of embedding a fixed vocabulary of metadata properties in many file formats, such as JPEG, TIFF, RIFF, and WAV. Exif stores metadata as pairs of a metadata name and a metadata value. These metadata name-value-pairs are also called tags, not to be confused with the tagging in [!DNL Experience Manager]. Modern digital cameras create Exif metadata and modern graphics software support it. Exif format is the lowest common denominator for metadata management especially for images.
 
 A major limitation of Exif is that a few popular image file formats such as BMP, GIF, or PNG do not support it.
 
@@ -94,7 +94,7 @@ Metadata fields defined by Exif are typically technical in nature and are of lim
 
 ### Other metadata {#other-metadata}
 
-Other metadata that can be embedded from files include Microsoft Word, PowerPoint, Excel, and so on.
+Other metadata that can be embedded from files include [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], and so on.
 
 ## Metadata schemata {#metadata-schemata}
 

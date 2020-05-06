@@ -444,7 +444,7 @@ The following conversions can be automatically run and stored within AEM Assets:
 
 >[!NOTE]
 >
->On non-Windows systems, the FFMpeg tool returns an error while generating renditions for a video asset that has a single quote (') in its filename. If the name of your video file includes a single quote, remove it before uploading to AEM.
+>On non-Windows systems, the FFmpeg tool returns an error while generating renditions for a video asset that has a single quote (') in its filename. If the name of your video file includes a single quote, remove it before uploading to AEM.
 
 The `CommandLineProcess` process performs the following operations in the order they are listed:
 
