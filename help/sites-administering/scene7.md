@@ -525,22 +525,6 @@ To configure the adhoc folder:
 
 To configure Universal Presets for the video component, see [Video](/help/assets/s7-video.md).
 
-## About tuning job parameters for faster processing time {#tuning-job-parameters}
-
-You can tune job parameters to decrease the time it takes to process uploaded files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). The tuned job parameter would appear as `process=none&createTemplate=false`.
-
-Adobe recommends the following "tuned" job parameters for PSD, PDF, and Postscript files:
-
-| File type | Recommended job parameters |
-| ---| ---|
-| PDF | `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
-| Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false`
-| PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
-
-To edit any of these parameters, use the steps found in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
-
-See also [(Optional) Tuning the performance of Dynamic Media - Scene7 mode](help/assets/config-dms7.md#optional-tuning-the-performance-of-dynamic-media-scene-mode).
-
 ## Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support {#enabling-mime-type-based-assets-scene-upload-job-parameter-support}
 
 You can enable configurable Dynamic Media Classic upload jobs parameters that are triggered by the synchronization of Digital Asset Manager/Dynamic Media Classic assets.
