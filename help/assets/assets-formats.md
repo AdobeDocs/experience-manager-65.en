@@ -182,7 +182,7 @@ In addition to the above functionality, consider the following:
 
 ## Supported multimedia formats {#supported-multimedia-formats}
 
-| | Storage | Metadata management | Metadata extraction | Thumbnail generation | FFMPEG transcoding |
+| | Storage | Metadata management | Metadata extraction | Thumbnail generation | FFmpeg transcoding |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | AAC | &#10003; | &#10003; | | &minus; | &#42; |
 | MIDI | &#10003; | &#10003; | | &minus; | &#42; |

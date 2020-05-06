@@ -6,9 +6,6 @@ contentOwner: AG
 
 # [!DNL Adobe Experience Manager] and [!DNL Creative Cloud] integration best practices {#aem-and-creative-cloud-integration-best-practices}
 
-<!-- TBD: Reconcile with 6.4 article that's behind this article in terms of content streamlining and structuring.
--->
-
 [!DNL Adobe Experience Manager Assets] is a digital asset management (DAM) solution that can integrate with [!DNL Adobe Creative Cloud] to help DAM users work together with creative teams, streamlining collaboration in the content creation process.
 
 [!DNL Adobe Creative Cloud] provides creative teams with an ecosystem of solutions and services to help them to create digital assets. It includes desktop and mobile applications, cloud services like storage with desktop sync or web experience, as well as marketplaces such as [!DNL Adobe Stock].
@@ -43,19 +40,19 @@ This article focuses primarily on the first two aspects of the collaboration nee
 
 | Use Case | [!DNL Adobe Asset Link] | [!DNL Experience Manager] desktop app | Remarks / Other Solutions |
 |---|---|---|---|
-| Discover - browse DAM folders | Yes | [!DNL Experience Manager] Web UI + desktop actions | When browsing the network share, turn off the thumbnails to avoid downloading binary files of assets. |
-| Discover - access DAM collections| Yes | [!DNL Experience Manager] Web UI + desktop actions | |
-| Discover - search for assets from DAM  | Yes | [!DNL Experience Manager] Web UI + desktop actions| |
-| Use - open asset  | Yes | Yes - for any app  | [Open from Web interface](managing-assets-touch-ui.md#previewing-assets) or from Finder |
+| Discover - browse DAM folders | Yes | [!DNL Experience Manager] Web interface and desktop actions |  |
+| Discover - access DAM collections| Yes | [!DNL Experience Manager] Web interface and desktop actions | |
+| Discover - search for assets from DAM  | Yes | [!DNL Experience Manager] Web interface and desktop actions| |
+| Use - open asset  | Yes | Yes  | [Open from Web interface](managing-assets-touch-ui.md#previewing-assets) or from Finder |
 | Use - place asset from DAM into a document | Yes - embedding | Yes - linking or embedding | [!DNL Experience Manager] desktop app gives access to assets as files on the local file system. These links in the native apps are represented by local paths. |
 | Edit - open for editing | Yes - Check-out action | Yes - Open action (in the network share) | [Check-out in AAL](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) saves the asset to user's creative cloud storage account (synchronized by Creative Cloud app) by default. |
 | Edit - work in progress outside DAM | Yes - Asset available in user's Creative Cloud storage account synced to desktop. | Yes | |
 | Edit - upload changes | Yes - [Check-in action](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) with optional comment | Yes | |
 | Upload - single file | Yes - uploads current active document | Yes | [Upload via web interface](managing-assets-touch-ui.md#uploading-assets) |
-| Upload - multiple files / hierarchical folder structures | No | Yes | [Upload via web interface](managing-assets-touch-ui.md#uploading-assets);<br>Custom scripting or tool |
-| Misc - user and login | Creative Cloud user logged into Creative Cloud desktop app gets recognized (SSO) | [!DNL Experience Manager] user/ login | Users of both solutions count against the [!DNL Experience Manager] user quota. |
-| Misc - network and access | Requires access from user's desktop to [!DNL Experience Manager] deployment over network | Requires access from user's desktop to [!DNL Experience Manager] deployment over network | Adobe Asset Link does not share network proxy environment. |
-| Misc - Migrate large number of assets | No | No | [Migration Guide](assets-migration-guide.md) |
+| Upload - multiple files / hierarchical folder structures | No | Yes | [Upload via web interface](managing-assets-touch-ui.md#uploading-assets) or via custom scripting or tool. |
+| Misc - user and login | Creative Cloud user logged into Creative Cloud desktop app gets recognized (SSO) | [!DNL Experience Manager] user and credentials | Users of both solutions count towards the [!DNL Experience Manager] user quota. |
+| Misc - network and access | Requires access from user's desktop to [!DNL Experience Manager] deployment over network | Requires access from user's desktop to [!DNL Experience Manager] deployment over network | [!DNL Adobe Asset Link] does not share network proxy environment. |
+| Misc - Migrate large number of assets | No | No | [Assets migration guide](assets-migration-guide.md) |
 
 To support asset distribution use cases, other solutions should be considered:
 
