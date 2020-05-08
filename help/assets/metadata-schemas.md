@@ -44,9 +44,7 @@ The [!UICONTROL default] is the base metadata schema form for assets. The follow
 
 * **tiff**: Schema form for the assets with sub type `tiff`.
 
-**application**: Schema form for assets with MIME type `application`, for example `application/pdf`, `application/zip`, and so on.
-
-   **pdf**: Schema form for assets with sub type `pdf`.
+**application**: Schema form for assets with MIME type `application`, for example `application/pdf`, `application/zip`, and so on. **pdf** is the schema form for assets with sub type `pdf`.
 
 **video**: Schema form for assets with MIME type `video`, such as `video/avi`, `video/mp4`, and so on.
 
