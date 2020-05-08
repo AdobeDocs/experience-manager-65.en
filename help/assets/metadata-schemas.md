@@ -10,7 +10,9 @@ In Adobe Experience Manager (AEM) Assets, a metadata schema defines the layout o
 
 You can use the Metadata Schema Forms editor to modify existing schemas or add custom metadata schemas.
 
-1. To view the properties page for an asset, click or tap the **[!UICONTROL View Properties]** icon from Quick Actions on the asset tile in Card view.
+To view the properties page for an asset, follow these steps:
+
+1. Click or tap the **[!UICONTROL View Properties]** icon from Quick Actions on the asset tile in Card view.
 
    ![Quick actions on asset tile](assets/chlimage_1-170.png)
 
@@ -18,11 +20,12 @@ You can use the Metadata Schema Forms editor to modify existing schemas or add c
 
    ![Properties icon in top toolbar](assets/chlimage_1-171.png)
 
-1. Edit various metadata properties under the various tabs. However, you cannot modify the asset type in the properties page.
+1. You can edit various metadata properties under the available tabs. However, you cannot modify the asset [!UICONTROL Type] in the Basic tab of properties page.
 
    ![Basic tab of asset Properties, where asset type cannot be changed](assets/asset-properties-basic-tab.png)
    
    *Figure: Basic tab on asset Properties*
+
    
    To modify the MIME type for an asset, use a custom metadata schema form or modify an existing form. See [Edit Metadata Schema Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) for more information. If you modify the metadata schema for a certain MIME type, the properties page layout for assets with the current MIME type and all asset subtypes are modified. For example, modifying a jpeg schema under `default/image` only modifies the metadata layout (asset properties) for assets with MIME type `image/jpeg`. However, if you edit the default schema, your changes modify the metadata layout for all types of assets.
 
@@ -30,22 +33,34 @@ You can use the Metadata Schema Forms editor to modify existing schemas or add c
 
    ![Page showing list of Metadata Schema Forms](assets/chlimage_1-173.png)
 
-   AEM provides the following templates out of the box:
-    * **default**: The base metadata schema form for assets.
+Adobe Experience Manager provides the following templates:
 
-      The following child forms inherit the properties of the default form:
+### default {#default-template}
+    
+The [!UICONTROL default] is the base metadata schema form for assets. The following child forms inherit the properties of the default form:
 
-      1. **image**: Schema form for assets with the MIME type "image", for example, `image/jpeg`, `image/png`, and so on.
+**image**: Schema form for assets with the MIME type "image", for example, `image/jpeg`, `image/png`, and so on. The "image" form has the following child form templates:
+* **jpeg**: Schema form for assets with sub type `jpeg`.
 
-         The "image" form has the following child form templates:
-         * **jpeg**: Schema form for assets with sub type `jpeg`.
-         * **tiff**: Schema form for the assets with sub type `tiff`.
-      1. **application**: Schema form for assets with MIME type `application`, for example `application/pdf`, `application/zip`, and so on.
-         * **pdf**: Schema form for assets with sub type `pdf`.
-      1. **video**: Schema form for assets with MIME type `video`, such as `video/avi`, `video/mp4`, and so on.
-    * **collection**: Schema form for collections.
-    * **contentfragment:** Schema form for Content Fragments.
-    * **forms**: This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md).
+* **tiff**: Schema form for the assets with sub type `tiff`.
+
+**application**: Schema form for assets with MIME type `application`, for example `application/pdf`, `application/zip`, and so on.
+
+   **pdf**: Schema form for assets with sub type `pdf`.
+
+**video**: Schema form for assets with MIME type `video`, such as `video/avi`, `video/mp4`, and so on.
+
+### collection {#collection-template}
+
+The [!UICONTROL collection] is the schema form for collections.
+
+### contentfragment {#contentfragment-template}
+
+The [!UICONTROL contentfragment] is the schema form for Content Fragments.
+
+### forms {#forms-template} 
+
+The [!UICONTROL forms] schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md).
 
 >[!NOTE]
 >
