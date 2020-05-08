@@ -20,7 +20,7 @@ To view the properties page for an asset, follow these steps:
 
    ![Properties icon in top toolbar](assets/chlimage_1-171.png)
 
-1. You can edit various metadata properties under the available tabs. However, you cannot modify the asset [!UICONTROL Type] in the Basic tab of properties page.
+1. You can edit various metadata properties under the available tabs. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
 
    ![Basic tab of asset Properties, where asset type cannot be changed](assets/asset-properties-basic-tab.png)
    
