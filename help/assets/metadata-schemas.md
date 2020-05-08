@@ -39,14 +39,14 @@ Adobe Experience Manager provides the following templates:
     
 The [!UICONTROL default] is the base metadata schema form for assets. The following child forms inherit the properties of the default form:
 
-**image**: Schema form for assets with the MIME type "image", for example, `image/jpeg`, `image/png`, and so on. The "image" form has the following child form templates:
-* **jpeg**: Schema form for assets with sub type `jpeg`.
+**image** is the schema form for assets with the MIME type "image". For example, `image/jpeg`, `image/png`, and so on. The "image" form has the following child form templates:
+* **jpeg** is the schema form for assets with sub type `jpeg`.
 
-* **tiff**: Schema form for the assets with sub type `tiff`.
+* **tiff** is the schema form for the assets with sub type `tiff`.
 
-**application**: Schema form for assets with MIME type `application`, for example `application/pdf`, `application/zip`, and so on. **pdf** is the schema form for assets with sub type `pdf`.
+**application** is the schema form for assets with MIME type `application`. For example, `application/pdf`, `application/zip`, and so on. **pdf** is the schema form for assets with sub type `pdf`.
 
-**video**: Schema form for assets with MIME type `video`, such as `video/avi`, `video/mp4`, and so on.
+**video** is the schema form for assets with MIME type `video`, such as `video/avi`, `video/mp4`, and so on.
 
 ### collection {#collection-template}
 
