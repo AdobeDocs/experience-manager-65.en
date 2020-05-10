@@ -32,6 +32,8 @@ To view the properties page for an asset, follow these steps:
 
 ![Page showing list of Metadata Schema Forms](assets/chlimage_1-173.png)
 
+## Metadata Schema Forms available by default {#available-metadata-schema-templates}
+
 [!DNL Experience Manager] provides the following templates:
 
 ### default {#default-template}
