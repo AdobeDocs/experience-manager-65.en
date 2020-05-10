@@ -30,8 +30,6 @@ To view the properties page for an asset, follow these steps:
 
 1. To view a list of forms/templates, in [!DNL Experience Manager] interface navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 
-![Page showing list of Metadata Schema Forms](assets/chlimage_1-173.png)
-
 ## Metadata Schema Forms available by default {#available-metadata-schema-templates}
 
 [!DNL Experience Manager] provides the following templates:
