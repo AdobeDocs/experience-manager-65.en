@@ -198,8 +198,6 @@ You can edit collection settings, such as title and description, or to add membe
 
 1. From the Collections console, select one or more collections and click the delete icon in the toolbar.
 
-   ![chlimage_1-11](assets/chlimage_1-177.png)
-
 1. In the dialog, click **[!UICONTROL Delete]** to confirm the delete action.
 
    >[!NOTE]

@@ -243,7 +243,7 @@ There are two replication agents in the author environment that need the transpo
 
 * Access the Replication console on author
 
-    * From global navigation, navigate to **[UIControl Tools > Deployment > Replication > Agents on author]**
+    * From global navigation, navigate to **[!UICONTROL Tools > Deployment > Replication > Agents on author]**
 
 * Follow the same procecure for both agents :
 

@@ -30,13 +30,14 @@ The steps to dynamically add SCF components are:
 1. [Sideload the component](#sideload-by-invoking-scf) using one of two methods:
 
 * [Dynamic inclusion](#dynamic-inclusion)
-    * Boostrap all dynamically added components
+  * Boostrap all dynamically added components
 * [Dynamic loading](#dynamic-loading)
-    * Add one specific component on-demand
+  * Add one specific component on-demand
 
 >[!NOTE]
->
->Sideloading of [non-existing resources](scf.md#add-or-include-a-communities-component) is not supported.
+ >
+ >Sideloading of [non-existing resources](scf.md#add-or-include-a-communities-component) is not supported.
+ >
 
 ## Dynamically Add Component to DOM {#dynamically-add-component-to-dom}
 
@@ -47,10 +48,12 @@ When adding the SCF component, the most common tag to use is the DIV tag, but ot
 Whatever tag is used, at a minimum, the element must conform to the normal SCF root element pattern by containing these two attributes:
 
 * **data-component-id**
-  The effective path to the added component
+  
+  The effective path to the added component.
 
 * **data-scf-component**
-  The resourceType of the component
+  
+  The resourceType of the component.
 
 Following is one example of an added comments component:
 
@@ -71,7 +74,7 @@ Dynamic inclusion uses a boostrap request that results in SCF examining the DOM 
 
 To initialize SCF components anytime after page load, simply fire a JQuery event like this:
 
-$(document).trigger(SCF.events.BOOTSTRAP_REQUEST);
+`$(document).trigger(SCF.events.BOOTSTRAP_REQUEST);`
 
 ### Dynamic Loading {#dynamic-loading}
 
@@ -79,6 +82,6 @@ Dynamic loading provides control over loading SCF components.
 
 Instead of bootstrapping all SCF components found in the DOM, it is possible to specify a specific SCF component to load using this JavaScript method:
 
-SCF.addComponent(document.getElementById(*someId*));
+`SCF.addComponent(document.getElementById(*someId*));`
 
-Where *someId* is the value of the **data-component-id** attribute.
+Where `someId` is the value of the `data-component-id` attribute.

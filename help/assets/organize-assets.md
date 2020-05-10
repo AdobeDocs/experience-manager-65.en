@@ -32,7 +32,7 @@ The most basic way to organize assets is to save these in folders. It is analogo
 
 ## Organize assets using tags {#use-tags-to-organize-assets}
 
-Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and leverage Adobe Sensei's AI algorithms for asset discovery.
+Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and leverage AI algorithms of Adobe Sensei for asset discovery.
 
 Adobe Experience Manager Assets uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, our artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
 

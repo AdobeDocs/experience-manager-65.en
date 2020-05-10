@@ -713,7 +713,7 @@ The AEM configuration consists of the following two major steps:
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. An Integrations details page appears, **[!UICONTROL]**similar to the following:
+1. An Integrations details page appears, **[!UICONTROL]** similar to the following:
 
    >[!NOTE]
    >
@@ -830,8 +830,6 @@ The AEM configuration consists of the following two major steps:
 1. Near the upper-right corner, click **[!UICONTROL Create]**.
 
    Your new Adobe Launch Cloud Configuration is now created and listed next to your web site similar to the following example:
-
-   ![]()
 
 1. Select your new Adobe Launch Cloud Configuration (a check mark appears to the left of the configuration title when it is selected). On the toolbar, click **[!UICONTROL Publish]**.
 

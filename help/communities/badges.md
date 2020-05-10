@@ -31,7 +31,7 @@ Currently, badges a community member earns or is assigned will appear along with
 
 In the author environment, to reach the Badges console
 
-* From global navigation, navigate to **[UIControl Tools > Communities > Badges]**
+* From global navigation, navigate to **[!UICONTROL Tools > Communities > Badges]**
 
 This console displays the badges currently available and from which new badges can be added.
 

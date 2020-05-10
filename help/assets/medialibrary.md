@@ -51,7 +51,7 @@ The image component is part of AEM WCM. The graphics library that is being used 
 
 ### How can I prevent my users from using AEM Assets if I did not license AEM Assets? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-You can remove all AEM Assets-specific workflows, components, taxonomies, options and the AEM Assets admin from AEM. Doing so prevents your users from accidentially using AEM Assets features that you did not license.
+You can remove all AEM Assets-specific workflows, components, taxonomies, options and the AEM Assets admin from AEM. Doing so prevents your users from accidentally using AEM Assets features that you did not license.
 
 ### I want to add images to a page and want to crop and resize these images. Do I need AEM Assets? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
@@ -66,36 +66,35 @@ For this use case it is not required to buy AEM Assets, even the use of the Medi
 * Adobe Asset Link (connect to Creative Cloud for enterprise)
 * AEM desktop app
 * Processing profiles
-* InDesign server integration
-* Asset Templates and catalog producer framework
-* Adobe Photoshop, Illustrator, and InDesign linked-assets
+* InDesign Server integration
+* Asset templates and catalog producer framework
+* Adobe Photoshop, Adobe Illustrator, and Adobe InDesign integration
 * Multi-lingual asset management
 * PIM integration
-* Rights Management
-* Camera RAW Support
-* Search Facets Management and configuration
+* Rights management
+* Camera RAW support
+* Search Facets management and configuration
 * Pre-built DAM workflows (for example, photoshoot)
-* Asset Reporting and Analytics: Asset Insights
-* 3D Asset Management
+* Asset reporting and analytics called Insights
+* 3D asset management
 * Connected Assets
 * Brand Portal
 * Self-service access
-* Browse, Search and Download
-* Collections and Folder Sharing
-* Admin Tools
-* Smart Tags
-* Visual Search
-* Assets Admin UI
+* Browse, search, and download
+* Collections and folder sharing
+* Admin tools and interface
+* Smart tagging
+* Visual search
 
 **Media Library**
 
-* Basic Metadata Properties
-* Tag Management
-* Version Control
-* Static Renditions
-* Projects, Tasks, Workflow Authoring
-* Activity Stream (timeline)
+* Basic metadata properties
+* Tag management
+* Version control
+* Static renditions
+* Projects, tasks, workflow authoring
+* Activity stream (timeline)
 * Query Builder (API)
-* Marketing Cloud Integration
-* UI Customization & Extension
-* Comments & Annotation
+* Marketing Cloud integration
+* UI customization and extension
+* Comments and annotation

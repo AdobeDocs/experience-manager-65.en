@@ -29,8 +29,8 @@ The QnA (questions and answers) forum feature provides an area for community mem
 
 The documentation describes:
 
-* adding the QnA forum feature to an AEM site.
-* configuration settings for the `QnA`component.
+* Adding the QnA forum feature to an AEM site.
+* Configuration settings for the `QnA`component.
 
 ## Adding a Q&A Forum to a Page {#adding-a-q-a-forum-to-a-page}
 
@@ -114,18 +114,19 @@ Under the **Settings** tab, specify settings for topics (questions) and replies 
 
 * **Max Attach Image File Size**
 
-  Relevant only if Allow File Uploads is checked. The maximum number of bytes an uploaded image file can have. Default is 2097152** **(2 Mb).
+  Relevant only if Allow File Uploads is checked. The maximum number of bytes an uploaded image file can have. Default is 2097152 (2 Mb).
 
 * **Allow Replies**
 
   If checked, allow replies to comments posted to the question. Default is deselected.
+
 * **Allow Voting**
 
   If checked, include the Voting feature with a question. Default is deselected.
 
 * **Allow Users to Delete Comments and Topics**
 
-  If checked, allow members to delete the comments and questions they posted. Default is** **deselected.
+  If checked, allow members to delete the comments and questions they posted. Default is deselected.
 
 * **Allow Privileged Members**
 
@@ -135,8 +136,9 @@ Under the **Settings** tab, specify settings for topics (questions) and replies 
 
   If enabled, blocks User Generated Content while editing in Author Mode.
 
-* **Move Selected Answer To The Top
-  **If checked, first answer shown is a selected answer. Default is deselected.
+* **Move Selected Answer To The Top**
+
+  If checked, first answer shown is a selected answer. Default is deselected.
 * **Display Badges**
 
   If checked, display earned and assigned [badges](/help/communities/implementing-scoring.md) with a member's blog entry. Default is deselected.
@@ -155,7 +157,7 @@ Under the **Settings** tab, specify settings for topics (questions) and replies 
 
 * **UI Mention Pattern**
 
-  Specify the allowed pattern string to tag (@mention) the registered user in a post. For example, ~{{familyName}}{{givenName}}.
+  Specify the allowed pattern string to tag (@mention) the registered user in a post. For example, `~{{familyName}}{{givenName}}`.
 
 #### User Moderation tab {#user-moderation-tab}
 
@@ -186,7 +188,7 @@ Under the **User Moderation** tab, specify how the posted topics (questions) and
 
 * **Moderation Threshold**
 
-  Enter the number of times a question or answer has to be flagged by members before moderators are notified. Default is 1 ( one time).
+  Enter the number of times a question or answer has to be flagged by members before moderators are notified. Default is 1 (one time).
 
 * **Flagging Limit**
 
@@ -194,12 +196,14 @@ Under the **User Moderation** tab, specify how the posted topics (questions) and
 
 #### Tag field tab {#tag-field-tab}
 
-Under the **Tag field** tab, the tags that can be applied, if allowed under the **Settings **tab, are limited according to namespaces chosen.
+Under the **Tag field** tab, the tags that can be applied, if allowed under the **Settings** tab, are limited according to namespaces chosen.
 
 * **Allowed Namespaces**
-  Relevant if `Allow Tagging` is checked under the **Settings **tab. The tags that can be applied are limited to those within the namespace categories checked. The list of namespaces includes "Standard Tags" (the default namespace) and "Include All Tags". Default is none checked, which means all namespaces are allowed.
+  
+  Relevant if `Allow Tagging` is checked under the **Settings** tab. The tags that can be applied are limited to those within the namespace categories checked. The list of namespaces includes "Standard Tags" (the default namespace) and "Include All Tags". Default is none checked, which means all namespaces are allowed.
 
 * **Suggestion Limit**
+  
   Enter the number of tags to be displayed as a suggestion to the member posting to the forum. A value of **-**1 means no limits. Default is 0.
 
 #### Sort Settings tab {#sort-settings-tab}
@@ -222,11 +226,11 @@ Under the **Sort Settings** tab, specify how the posted comments are sorted when
 
 ### Identifying Answers {#identifying-answers}
 
-One answer can be marked as a correct or useful answer using the `Select Answer` button. Once a Question is marked as Answered, another answer cannot be selected until the first one has been deselected using the `Unmark Chosen Answer`button.
+One answer can be marked as a correct or useful answer using the `Select Answer` button. Once a Question is marked as Answered, another answer cannot be selected until the first one has been deselected using the `Unmark Chosen Answer` button.
 
 Once selected as a viable answer, it can be deselected using the `Unmark Chosen Answer` button.
 
-Once an answer is selected as the viable answer, an indication that the question has been `Answered`is displayed next to the question topic on the main QnA page.
+Once an answer is selected as the viable answer, an indication that the question has been `Answered` is displayed next to the question topic on the main QnA page.
 
 #### Moderators and Administrators {#moderators-and-administrators}
 
@@ -238,10 +242,10 @@ They can also identify answers.
 
 When the site visitors are signed in, depending on the configuration, they can:
 
-* post a new question.
-* edit or delete questions they authored.
-* flag questions or answers of other members.
-* identify answers for questions they authored.
+* Post a new question.
+* Edit or delete questions they authored.
+* Flag questions or answers of other members.
+* Identify answers for questions they authored.
 
 #### Anonymous {#anonymous}
 

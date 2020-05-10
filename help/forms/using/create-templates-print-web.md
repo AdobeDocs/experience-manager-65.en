@@ -112,7 +112,7 @@ Execute the following steps to create an XDP template for the Print channel:
 
 Once you have created an XDP template using the Forms Designer, you must upload it to AEM Forms server so that the template is available for use while creating the Interactive Communication.
 
-1. Select **Forms** &gt; **Forms & Documents**.
+1. Select **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
 1. Tap **Create** &gt; **File Upload**.
 
    Navigate and select the **create_first_ic_print_template** template (XDP) and tap **Open** to import the XDP template to the AEM Forms server.

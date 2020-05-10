@@ -19,7 +19,7 @@ When creating a location for a Java class, be aware that the package name must m
 
 While using hyphens in the names of repository items is a recommended practice in AEM development, hyphens are illegal within Java package names.
 
-The underlying CRX platform must be able to distinguish between an actual underscore '_' and a hyphen '-'. Thus, in JCR, the hyphen must be replaced with its unicode value (u002d) and escaped with an underscore '_'.
+The underlying CRX platform must be able to distinguish between an actual underscore `_ `and a hyphen `-`. Thus, in JCR, the hyphen must be replaced with its unicode value (u002d) and escaped with an underscore `_`.
 
 For example, if the repository path is **/apps/my-example/component/info/Info.java**, the package name should be `java package apps.my_002dexample.component.info;`
 
