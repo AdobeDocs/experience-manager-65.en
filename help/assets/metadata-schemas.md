@@ -10,7 +10,7 @@ Organizations come up with a metadata model that enhances the asset discovery, u
 
 In [!DNL Adobe Experience Manager Assets], schemas contain specific fields for specific information to be filled in. It also contains layout information to display metadata fields in a user-friendly way. Metadata properties include title, description, MIME types, tags, and more. You can use the [!UICONTROL Metadata Schema Forms] editor to modify the existing schemas or add custom metadata schemas.
 
-To view the properties page for an asset, follow these steps:
+To view and edit the properties page for an asset, follow these steps:
 
 1. Click or tap the **[!UICONTROL View Properties]** icon from Quick Actions on the asset tile in Card view.
 
