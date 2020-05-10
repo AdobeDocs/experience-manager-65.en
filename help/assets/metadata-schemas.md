@@ -61,10 +61,11 @@ The [!UICONTROL forms] schema form relates to [Adobe Experience Manager Forms](/
 | Templates | Child forms | Description |
 |---|---|---|
 | [!UICONTROL default] | | The base metadata schema form for assets. |
-| | The following child forms inherit the properties of the [!UICONTROL default] form: <br> * [!UICONTROL image] | <br> Schema form for assets with the MIME type "image", for example,  image/jpeg,  image/png, and so on. |
+| | The following child forms inherit the properties of the [!UICONTROL default] form:| |
+| |* [!UICONTROL image] | Schema form for assets with the MIME type "image", for example,  image/jpeg,  image/png, and so on. |
 | | The [!UICONTROL image] form has the following child form templates: <br> * [!UICONTROL jpeg]: Schema form for assets with sub type [!UICONTROL jpeg]. <br> * [!UICONTROL tiff]: Schema form for the assets with sub type [!UICONTROL tiff]. | |
 | | * [!UICONTROL application] | Schema form for assets with MIME type "application", for example  application/ pdf,  application/ zip, and so on. |
-| |  pdf: Schema form for assets with sub type pdf. | |
+| | [!UICONTROL pdf]: Schema form for assets with sub type pdf. | |
 | | * [!UICONTROL video] | Schema form for assets with MIME type "video", such as video/avi, video/mp4 and so on. |
 | [!UICONTROL collection] | | Schema form for collections. |
 | [!UICONTROL contentfragment] | | Schema form for content fragments. |
