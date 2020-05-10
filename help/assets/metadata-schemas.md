@@ -32,20 +32,20 @@ To view the properties page for an asset, follow these steps:
 
 ## Metadata Schema Forms available by default {#available-metadata-schema-templates}
 
-[!DNL Experience Manager] provides the following templates:
+[!DNL Experience Manager] provides the following Metadata Schema Form templates:
 
 ### default {#default-template}
     
 The [!UICONTROL default] is the base metadata schema form for assets. The following child forms inherit the properties of the default form:
 
-**image** is the schema form for assets with the MIME type "image". For example, `image/jpeg`, `image/png`, and so on. The "image" form has the following child form templates:
-* **jpeg** is the schema form for assets with sub type `jpeg`.
+* **image** is the schema form for assets with the MIME type "image". For example, `image/jpeg`, `image/png`, and so on. The "image" form has the following child form templates:
+   * **jpeg** is the schema form for assets with sub type `jpeg`.
 
-* **tiff** is the schema form for the assets with sub type `tiff`.
+   * **tiff** is the schema form for the assets with sub type `tiff`.
 
-**application** is the schema form for assets with MIME type `application`. For example, `application/pdf`, `application/zip`, and so on. **pdf** is the schema form for assets with sub type `pdf`.
+* **application** is the schema form for assets with MIME type `application`. For example, `application/pdf`, `application/zip`, and so on. **pdf** is the schema form for assets with sub type `pdf`.
 
-**video** is the schema form for assets with MIME type `video`, such as `video/avi`, `video/mp4`, and so on.
+* **video** is the schema form for assets with MIME type `video`, such as `video/avi`, `video/mp4`, and so on.
 
 ### collection {#collection-template}
 
