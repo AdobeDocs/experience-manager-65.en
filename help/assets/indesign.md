@@ -114,7 +114,7 @@ For information about Indesign scripts, see [InDesign developer documentation](h
 
 The `ThumbnailExport.jsx` script run by the Media Extraction workflow step generates a thumbnail rendition in JPG format. This rendition is used by the Process Thumbnails workflow step to generate the static renditions required by [!DNL Experience Manager].
 
-You can configure the Process Thumbnails workflow step to generate static renditions at different sizes. Ensure that you do not remove the defaults, because they are required by the [!DNL Experience Manager Assets] interface. Finally, the Delete Image Preview Rendition workflow step removes the .jpg thumbnail rendition, as it is no longer needed.
+You can configure the Process Thumbnails workflow step to generate static renditions at different sizes. Ensure that you do not remove the defaults, because they are required by the [!DNL Experience Manager Assets] interface. Finally, the Delete Image Preview Rendition workflow step removes the JPG thumbnail rendition, as it is no longer needed.
 
 #### Page extraction {#page-extraction}
 
