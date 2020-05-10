@@ -34,7 +34,7 @@ Before you use or configure this capability, ensure the following:
 Authors can search for images and the following types of documents in Content Finder and use the searched assets in Page Editor. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. The supported formats are:
 
 * **Image formats**: The formats that the [Image component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) supports. [!DNL Dynamic Media] images are not supported.
-* **Document formats**: See [Connected Assets supported document formats](assets-formats.md#supported-document-formats).
+* **Document formats**: See [the document formats supported by Connected Assets](assets-formats.md#supported-document-formats).
 
 ### Users and groups involved {#users-and-groups-involved}
 
@@ -180,5 +180,5 @@ The fetched assets can be used as any other local asset, except that the associa
 
 Follow these steps to troubleshoot for the common error scenarios:
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder], recheck and ensure that the required roles and permissions are in place.
-* An asset fetched from remote dam may not be published on a web page for the following reasons: it doesn't exist on remote; lack of appropriate permissions to fetch it; network failure. Ensure that the asset is not removed from the remote DAM or permissions aren't changed. Ensure that appropriate prerequisites are met. Retry adding the asset to the page and republish. Check the [list of asynchronous jobs](/help/assets/asynchronous-jobs.md) for errors in asset fetching.
+* If you cannot search for remote assets from the [!UICONTROL Content Finder] then ensure that the required roles and permissions are in place.
+* An asset fetched from the remote dam may not be published on a web page for one or more reasons. It doesn't exist on remote server, lack of appropriate permissions to fetch it, or network failure can be the reasons. Ensure that the asset is not removed from the remote DAM. Ensure that appropriate permissions are in place and prerequisites are met. Retry adding the asset to the page and republish. Check the [list of asynchronous jobs](/help/assets/asynchronous-jobs.md) for errors in asset fetching.
