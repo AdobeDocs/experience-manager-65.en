@@ -142,7 +142,7 @@ Here are some out-of-the-box health checks that are helpful to monitor:
 
 * Replication Queue
 
-  * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+  * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
   * Instances: One author, all publish servers
   * Alarm threshold: When the status is not OK

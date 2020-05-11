@@ -17,14 +17,23 @@ Adobe Classifications exports classifications data to [Adobe Analytics](/help/si
 
 To configure this:
 
-1. Navigate via **Tools, Cloudservices** to the **Adobe Analytics** section.
-1. Add a new configuration. You will see that the **Adobe Analytics Classifications** Configuration template displays below the **Adobe Analytics Framework** configuration. Supply a **Title** and **Name** as required:
+1. Using **Navigation**, select **Tools**, **Cloud Services**, then **Legacy Cloud Services**.
+1. Scroll to **Adobe Analytics** and select **Show Configurations**.
+1. Click the **&#91;+&#93;** link next to your Adobe Analytics configuration.
 
-   ![aa-25](assets/aa-25.png)
+1. In the **Create Framework** dialog:
 
-1. Click **Create** to configure the settings.
+    * Specify a **Title**.
+    * Optionally you can specify the **Name**, for the node that stores the framework details in the repository.
+    * Select **Adobe Analytics Classifications**
 
-   ![chlimage_1](assets/chlimage_1a.png)
+   And click **Create**.
+
+   ![Create Framework dialog](assets/aa-25.png)
+
+1. The **Classifications Settings** dialog opens for editing. 
+
+   ![Classifications Settings dialog](assets/aa-classifications-settings.png)
 
    Properties include the following:
 

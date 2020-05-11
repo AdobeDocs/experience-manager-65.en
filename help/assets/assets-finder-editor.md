@@ -12,7 +12,7 @@ This document describes the following:
 * How to create and customize Asset Editor pages, which are WCM pages that let you view and edit metadata as well as perform actions on the asset.
 * How to edit multiple assets simultaneously.
 
-<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 OOTB samples. -->
+<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 default samples. -->
 
 >[!NOTE]
 >
@@ -22,22 +22,23 @@ This document describes the following:
 
 Digital Asset Management is being used in more and more scenarios. When moving from a small-scale solution for a small user group of professionally trained users - for example photographers or taxonomists - to larger and more diverse user groups - for example business users, WCM authors, journalists, and so on - the powerful user interface of Adobe Experience Manager (AEM) Assets for professional users can provide too much information and stakeholders start to request specific user interfaces or applications to access the digital assets that are of relevance to them.
 
-These asset-centric applications can be simple photo galleries in an intranet where employees can upload photos from trade show visits or a press center in a public-facing website, such as the example provided with Geometrixx. Asset-centric applications can also extend to complete solutions including shopping carts, checkout, and verification processes.
+These asset-centric applications can be simple photo galleries in an intranet where employees can upload photos from trade show visits or a press center in a public-facing website. Asset-centric applications can also extend to complete solutions including shopping carts, checkout, and verification processes.
 
 Creating an asset-centric application becomes to a large extent a configuration process that does not require coding, only knowledge of user groups and their needs as well as knowledge of the metadata being used. Asset-centric applications created with AEM Assets are extensible: with moderate coding effort reusable components for searching, viewing, and modifying assets can be created.
 
 An asset-centric application in AEM consists of an Asset Editor page, which can be used to get a detailed view of a specific asset. An Asset Editor page also allows for the editing of metadata, provided the user accessing the asset has the necessary permissions.
 
+<!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
 
 You customize the DAM Finder functionality and create pages that have all the functionality you require, which are called Asset Share pages. To create a new Asset Share page, you add the page using the Geometrixx Asset Share template and then you customize the actions users can perform on that page, determine how viewers see the assets, and decide how users can build their queries.
 
 Here are some use cases for creating a customized Asset Share page:
 
-* Press Center for Journalists
-* Image Search Engine for internal business users
-* Image Database for website users
-* Media Tagging Interface for metadata editors
+* Press Center for Journalists.
+* Image Search Engine for internal business users.
+* Image Database for website users.
+* Media Tagging Interface for metadata editors.
 
 ### Create an Asset Share page {#creating-an-asset-share-page}
 
@@ -85,8 +86,6 @@ To add actions to the Asset Share page:
 1. In the Asset Share page that you want to customize, click **Actions** in the sidekick.
 
 The following actions are available:
-
-![assetshare2](assets/assetshare2.bmp)
 
  | Action | Description |
  |---|---|
@@ -181,6 +180,7 @@ For more information, see the [predicate Javadocs](https://helpx.adobe.com/exper
 1. To configure the predicate further, double-click it. For example, when you open the Path Predicate, you need to assign the root path.
 
 ![screen_shot_2012-04-23at15640pm](assets/screen_shot_2012-04-23at15640pm.png)
+-->
 
 ## Create and configure an Asset Editor page {#creating-and-configuring-an-asset-editor-page}
 
@@ -188,7 +188,7 @@ You customize the asset editor to determine how users can view and edit the digi
 
 >[!NOTE]
 >
->If you want to add custom fields to the DAM asset editor, add new cq:Widget nodes to `/apps/dam/content/asseteditors.`
+>If you want to add custom fields to the DAM asset editor, add new `cq:Widget` nodes to `/apps/dam/content/asseteditors.`
 
 ### Create an Asset Editor page {#creating-the-asset-editor-page}
 

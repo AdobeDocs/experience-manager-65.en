@@ -1,55 +1,53 @@
 ---
-title: Metadata schemas
+title: Metadata schemas to define layout of metadata properties page in [!DNL Adobe Experience Manager Assets]. 
 description: Metadata schema defines the layout of the properties page and the metadata properties displayed for assets. Learn how to create custom metadata schema, edit metadata schema, and how to apply metadata schema to assets.
 contentOwner: AG
 ---
 
 # Metadata schemas {#metadata-schemas}
 
-In Adobe Experience Manager (AEM) Assets, a metadata schema defines the layout of the properties page and the metadata properties displayed for assets that use the particular schema. Metadata properties include title, description, MIME types, tags, and so on.
+Organizations come up with a metadata model that enhances the asset discovery, usage, interoperability, and so on. Correct metadata application is sacrosanct to maintaining metadata-driven workflows and processes. To adhere to organization-wide metadata strategy and standards, you can use metadata schemas that helps DAM users to align. Adobe Experience Manager allows easy and flexible methods to create, maintain, and apply metadata schemas.
 
-You can use the Metadata Schema Forms editor to modify existing schemas or add custom metadata schemas.
+In [!DNL Adobe Experience Manager Assets], schemas contain specific fields for specific information to be filled in. It also contains layout information to display metadata fields in a user-friendly way. Metadata properties include title, description, MIME types, tags, and more. You can use the [!UICONTROL Metadata Schema Forms] editor to modify the existing schemas or add custom metadata schemas.
 
-1. To view the properties page for an asset, click or tap the **[!UICONTROL View Properties]** icon from Quick Actions on the asset tile in Card view.
+To view and edit the properties page for an asset, follow these steps:
+
+1. Click or tap the **[!UICONTROL View Properties]** icon from Quick Actions on the asset tile in Card view.
 
    ![Quick actions on asset tile](assets/chlimage_1-170.png)
 
-   Alternatively, select the asset in the UI and then click or tap the **[!UICONTROL Properties]** icon from the toolbar.
-
-   ![Properties icon in top toolbar](assets/chlimage_1-171.png)
-
-1. Edit various metadata properties under the various tabs. However, you cannot modify the asset type in the properties page.
+1. Edit various metadata properties under the various tabs. However, you cannot modify the asset type in the [!UICONTROL Properties] page.
 
    ![Basic tab of asset Properties, where asset type cannot be changed](assets/asset-properties-basic-tab.png)
 
-   *Figure: Basic tab on asset Properties.*
- 
+1. You can edit various metadata properties under the available tabs. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
+
+   ![Basic tab of asset Properties, where asset type cannot be changed](assets/asset-properties-basic-tab.png)
+   
+ *Figure: Basic tab on asset [!UICONTROL Properties].*
+
    To modify the MIME type for an asset, use a custom metadata schema form or modify an existing form. See [Edit Metadata Schema Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) for more information. If you modify the metadata schema for a certain MIME type, the properties page layout for assets with the current MIME type and all asset subtypes are modified. For example, modifying a jpeg schema under `default/image` only modifies the metadata layout (asset properties) for assets with MIME type `image/jpeg`. However, if you edit the default schema, your changes modify the metadata layout for all types of assets.
+   
+## Metadata Schema Forms {#default-metadata-schema-forms}
 
-1. To view a list of forms/templates, click the AEM logo and then navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
+To view a list of forms/templates, in [!DNL Experience Manager] interface navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**. 
 
-   ![Page showing list of Metadata Schema Forms](assets/chlimage_1-173.png)
+[!DNL Experience Manager] provides the following Metadata Schema Form templates:
 
-   AEM provides the following templates out of the box:
-    * **default**: The base metadata schema form for assets.
-
-      The following child forms inherit the properties of the default form:
-
-      1. **image**: Schema form for assets with the MIME type "image", for example, `image/jpeg`, `image/png`, and so on.
-
-         The "image" form has the following child form templates:
-         * **jpeg**: Schema form for assets with sub type `jpeg`.
-         * **tiff**: Schema form for the assets with sub type `tiff`.
-      1. **application**: Schema form for assets with MIME type `application`, for example `application/pdf`, `application/zip`, and so on.
-         * **pdf**: Schema form for assets with sub type `pdf`.
-      1. **video**: Schema form for assets with MIME type `video`, such as `video/avi`, `video/mp4`, and so on.
-    * **collection**: Schema form for collections.
-    * **contentfragment:** Schema form for Content Fragments.
-    * **forms**: This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md).
+| Templates | | Description |
+|---|---|---|
+| [!UICONTROL default] | | The base metadata schema form for assets. |
+| | The following child forms inherit the properties of the [!UICONTROL default] form: | |
+| |<ul><li> [!UICONTROL image]</li></ul> | Schema form for assets with the MIME type "image", for example,  image/jpeg,  image/png, and so on. <br> The [!UICONTROL image] form has the following child form templates: <ul><li> [!UICONTROL jpeg]: Schema form for assets with sub type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schema form for the assets with sub type [!UICONTROL tiff].</li></ul> |
+| | <ul><li> [!UICONTROL application]</li></ul> | Schema form for assets with MIME type "application", for example  application/ pdf,  application/ zip, and so on. <br>[!UICONTROL pdf]: Schema form for assets with sub type pdf. |
+| | <ul><li>[!UICONTROL video]</li></ul> | Schema form for assets with MIME type "video", such as video/avi, video/mp4 and so on. |
+| [!UICONTROL collection] | | Schema form for collections. |
+| [!UICONTROL contentfragment] | | Schema form for content fragments. |
+| [!UICONTROL forms] | | This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md). | 
 
 >[!NOTE]
 >
->To view the child forms of a schema form, click/tap the schema form name.
+>To view the child forms of a schema form, click the schema form name.
 
 ## Add a metadata schema form {#add-a-metadata-schema-form}
 
@@ -57,26 +55,15 @@ You can use the Metadata Schema Forms editor to modify existing schemas or add c
 
    >[!NOTE]
    >
-   >Unedited templates have a lock icon before them. If you customize any of the templates, the lock icon before the template disappears.
+   >Unedited templates have a lock icon. If you customize any of the templates, the lock icon disappears from before the template.
 
-1. In the dialog, enter the title of the Schema form, and then click **[!UICONTROL Create]** to complete the form creation process.
-
-   ![Specify title and create Metadata Schema Form](assets/chlimage_1-174.png)
+1. In the dialog, enter the title of the schema form and click **[!UICONTROL Create]** to complete the form creation process.
 
 ## Edit metadata schema forms {#edit-metadata-schema-forms}
 
-You can edit a newly-added or existing metadata schema form. The metadata schema form includes the following:
+You can edit a newly-added or existing metadata schema form. The metadata schema form includes tabs and form items within tabs. You can map/configure these form items to a field within a metadata node in the CRX repository. You can add new tabs or form items to the metadata schema form. The tabs and form items derived from the parent are in the locked state. You cannot alter them at the child level.
 
-* Tabs
-* Form items within tabs.
-
-You can map/configure these form items to a field within a metadata node in the CRX repository.
-
-You can add new tabs or form items to the metadata schema form. The tabs and form items derived from the parent are in the locked state. You cannot alter them at the child level.
-
-1. In the Schema Forms page, select the check box before a form and then click the Edit icon on the toolbar.
-
-   ![Edit icon on toolbar of Metadata Schema Forms](assets/chlimage_1-175.png)
+1. In the Schema Forms page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
 
 1. In the **[!UICONTROL Metadata Schema Editor]** page, customize the properties page of the asset by dragging one or more components from the list of component types in the **[!UICONTROL Build Form]** tab to the **[!UICONTROL Basic]** tab.
 
@@ -90,22 +77,25 @@ You can add new tabs or form items to the metadata schema form. The tabs and for
 
 The **[!UICONTROL Build Form]** tab lists form items that you use in your schema form. The **[!UICONTROL Settings]** tab provides the attributes of each item that you select in the **[!UICONTROL Build Form]** tab. The following table lists the form items available in the **[!UICONTROL Build Form]** tab:
 
-| Component Name | Description |
-|---|---|
-| [!UICONTROL Section Header] | Add a section heading for a list of common components. |
-| [!UICONTROL Single Line Text] | Add a single line text property. It is stored as a string. |
-| [!UICONTROL Multi Value Text] | Add a multi value text property. It is stored as a string array. |
-| [!UICONTROL Number] | Add a number component. |
-| [!UICONTROL Date] | Add a date component. |
-| [!UICONTROL Dropdown] | Add a dropdown list. |
-| [!UICONTROL Standard Tags] | Add a tag. |
-| [!UICONTROL Smart Tags] | Add to augment search capabilities by automatically adding metadata tags. |
-| [!UICONTROL Hidden Field] | Add a hidden field. It is sent as a POST parameter when the asset is saved. |
-| [!UICONTROL Asset Referenced By] | Add this component to view list of assets referenced by the asset. |
-| [!UICONTROL Asset Referencing] | Add to display a list of assets that reference the asset. |
-| [!UICONTROL Products References] | Add to show the list of products linked with the asset. |
-| [!UICONTROL Asset Rating] | Add to display options for rating the asset. |
+|          Component Name          |                                     Description                                     |
+| -------------------------------- | ----------------------------------------------------------------------------------- |
+| [!UICONTROL Section Header]      | Add a section heading for a list of common components.                              |
+| [!UICONTROL Single Line Text]    | Add a single line text property. It is stored as a string.                          |
+| [!UICONTROL Multi Value Text]    | Add a multi value text property. It is stored as a string array.                    |
+| [!UICONTROL Number]              | Add a number component.                                                             |
+| [!UICONTROL Date]                | Add a date component.                                                               |
+| [!UICONTROL Dropdown]            | Add a dropdown list.                                                                |
+| [!UICONTROL Standard Tags]       | Add a tag.                                                                          |
+| [!UICONTROL Smart Tags]          | Add to augment search capabilities by automatically adding metadata tags.           |
+| [!UICONTROL Hidden Field]        | Add a hidden field. It is sent as a POST parameter when the asset is saved.         |
+| [!UICONTROL Asset Referenced By] | Add this component to view list of assets referenced by the asset.                  |
+| [!UICONTROL Asset Referencing]   | Add to display a list of assets that reference the asset.                           |
+| [!UICONTROL Products References] | Add to show the list of products linked with the asset.                             |
+| [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                        |
 | [!UICONTROL Contextual Metadata] | Add to control the display of other metadata tabs in the properties page of assets. |
+
+<!-- TBD: Check against 6.5.4.0 if the list of components is complete.
+-->
 
 #### Edit the metadata component {#edit-the-metadata-component}
 
@@ -131,9 +121,7 @@ To ensure that the component is displayed properly in the metadata schema form, 
 * **Choices**: Use this property to specify choices in a list
 * **Description** : Use this property to add a short description for the metadata component.
 * **Class**: Object class the property is associated with.
-* **Delete**: Click this icon to delete a component from the schema form.
-
-![Delete icon on Metadata Schema Form](assets/chlimage_1-177.png)
+* **Delete**: Click [!UICONTROL Delete] to delete a component from the schema form.
 
 >[!NOTE]
 >
@@ -171,28 +159,22 @@ Click `X` to delete a tab.
 
 ## Delete metadata schema forms {#delete-metadata-schema-forms}
 
-AEM lets you delete custom schema forms only. It does not let you delete the default schema forms/templates. However, you can delete any custom changes in these forms.
+[!DNL Experience Manager] lets you delete custom schema forms only. It does not let you delete the default schema forms/templates. However, you can delete any custom changes in these forms.
 
-To delete a form, select a form and click the delete icon.
-
-![Delete icon to delete custom Metadata Schema Form](assets/chlimage_1-183.png)
-
-<!--![chlimage_1-47](assets/chlimage_1-177.png) -->
->[!NOTE]
->
->After you delete custom changes to a default form, the lock icon reappears before it on the Metadata Schema interface to indicate that the form reverted to its default state.
+To delete a form, select a form and click delete.
 
 >[!NOTE]
 >
->You cannot delete the out of the box metadata schema forms in AEM Assets.
+>* After you delete custom changes to a default form, the lock icon reappears before it on the Metadata Schema interface to indicate that the form reverted to its default state.
+>* You cannot delete the out of the box metadata schema forms in Assets.
 
 ## Schema forms for MIME types {#schema-forms-for-mime-types}
 
-AEM Assets provides default forms for various MIME types out of the box. However, you can add custom forms for assets of various MIME types.
+Assets provides default forms for various MIME types out of the box. However, you can add custom forms for assets of various MIME types.
 
 ### Add new forms for MIME types {#add-new-forms-for-mime-types}
 
-Create a new form under the appropriate form type. For example, to add a new template for the **image/png** subtype, create the form under the "image" forms. The title for the schema form is the subtype name. In this case, the title is "png.**"**
+Create a new form under the appropriate form type. For example, to add a new template for the `image/png` subtype, create the form under the "image" forms. The title for the schema form is the subtype name. In this case, the title is `png`.
 
 #### Use an existing schema template for various MIME types {#use-an-existing-schema-template-for-various-mime-types}
 
@@ -201,25 +183,25 @@ You can use an existing template for a different MIME type. For example, use the
 In this case, create a new node at `/etc/dam/metadataeditor/mimetypemappings` in the CRX repository. Specify a name for the node and define the following properties:
 
 | Name | Description | Type | Value |
-|---|---|---|---|
+|------|-------------|------|-------|
 | `exposedmimetype` | Name of the existing form to be mapped | `String` | `image/jpeg` |
 | `mimetypes` | List of MIME types that use the form defined in the `exposedmimetype` attribute | `String` | `image/png` |
 
-AEM Assets maps the following MIME types and schema forms:
+Assets maps the following MIME types and schema forms:
 
-| Schema Form | MIME types |
-|---|---|
-| image/jpeg | image/pjpeg |
-| image/tiff | image/x-tiff |
-| application/pdf | application/postscript |
-| application/x-ImageSet | Multipart/Related; type=application/x-ImageSet |
-| application/x-SpinSet | Multipart/Related; type=application/x-SpinSet |
+|         Schema Form         |                     MIME types                      |
+| --------------------------- | --------------------------------------------------- |
+| image/jpeg                  | image/pjpeg                                         |
+| image/tiff                  | image/x-tiff                                        |
+| application/pdf             | application/postscript                              |
+| application/x-ImageSet      | Multipart/Related; type=application/x-ImageSet      |
+| application/x-SpinSet       | Multipart/Related; type=application/x-SpinSet       |
 | application/x-MixedMediaSet | Multipart/Related; type=application/x-MixedMediaSet |
-| video/quicktime | video/x-quicktime |
-| video/mpeg4 | video/mp4 |
-| video/avi | video/avi, video/msvideo, video/x-msvideo |
-| video/wmv | video/x-ms-wmv |
-| video/flv | video/x-flv |
+| video/quicktime             | video/x-quicktime                                   |
+| video/mpeg4                 | video/mp4                                           |
+| video/avi                   | video/avi, video/msvideo, video/x-msvideo           |
+| video/wmv                   | video/x-ms-wmv                                      |
+| video/flv                   | video/x-flv                                         |
 
 ## Grant access to metadata schemas {#grant-access-to-metadata-schemas}
 
@@ -227,25 +209,20 @@ The Metadata Schema feature is available to administrators only. However, admini
 
 ## Apply folder-specific metadata {#apply-folder-specific-metadata}
 
-AEM Assets lets you define a variant of a metadata schema and apply it to a specific folder.
+Assets lets you define a variant of a metadata schema and apply it to a specific folder.
 
 For example, you can define a variant of the default metadata schema and apply it to a folder. When you apply the modified schema, it overrides the original default metadata schema that is applied to assets within the folder.
 
-Only assets uploaded to the folder to which this schema is applied will conform to the modified metadata defined in the variant metadata schema.
-
-Assets in other folders where the original schema is applied continue to conform to metadata defined in the original schema.
+Only assets uploaded to the folder to which this schema is applied conform to the modified metadata defined in the variant metadata schema. Assets in other folders where the original schema is applied continue to conform to metadata defined in the original schema.
 
 Metadata inheritance by assets is based on the schema that is applied to the first-level folder in the hierarchy. In other words, if a folder does not contain subfolders, the assets within the folder inherit the metadata from the schema applied to the folder.
 
 If the folder has a subfolder, the assets within the subfolder inherit the metadata from the schema applied at the subfolder level if a different schema is applied at the subfolder level. If, however, no schema or the same schema is applied at the subfolder level, the subfolder assets inherit the metadata from the schema applied at the parent folder level.
 
-1. Click the AEM logo and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
-1. Select the check box before a form, for example the default metadata form, and click or tap the copy icon and save it as a custom form. Specify a custom name for the form, for example `my_default`. Alternatively, you can create a custom form.
-![Copy icon to copy a default form and save it as custom form on Metadata Schema Forms page](assets/chlimage_1-184.png)
+1. In [!DNL Experience Manager] interface, navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
+1. Select the check box before a form, for example the default metadata form, and click the **[!UICONTROL Copy]** and save it as a custom form. Specify a custom name for the form, for example `my_default`. Alternatively, you can create a custom form.
 
-1. In the **[!UICONTROL Metadata Schema Forms]** page, select the `my_default` form, and then click the **[!UICONTROL Edit]** icon.
-
-   ![Edit icon to open Metadata Schema Editor and edit a Schema Form](assets/chlimage_1-185.png)
+1. In the **[!UICONTROL Metadata Schema Forms]** page, select the `my_default` form, and then click **[!UICONTROL Edit]**.
 
 1. In the **[!UICONTROL Metadata Schema Editor]** page, add a text field to the schema form. For example add a field with the label **[!UICONTROL Category]**.
 
@@ -254,11 +231,9 @@ If the folder has a subfolder, the assets within the subfolder inherit the metad
    *Figure: Text field added to metadata schema form editor.*
 
 1. Click **[!UICONTROL Save]**. The modified form is listed in the **[!UICONTROL Metadata Schema Forms]** page.
-1. Click/tap **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
+1. Click **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
 
-   ![Apply to Folders icon to to apply custom metadata to folders](assets/chlimage_1-187.png)
-
-1. Select the folder on which to apply the modified schema and then click/tap **[!UICONTROL Apply]**.
+1. Select the folder on which to apply the modified schema and then click **[!UICONTROL Apply]**.
 
    ![Select folder to apply Metadata Schema](assets/chlimage_1-188.png)
 
@@ -272,12 +247,10 @@ You can define mandatory fields at a folder level, which is enforced on assets t
 
 >[!NOTE]
 >
->A metadata field can be defined as mandatory based on the value of another field. In the Cards view, AEM does not display the warning message about missing metadata for such mandatory metadata fields.
+>A metadata field can be defined as mandatory based on the value of another field. In the card view, [!DNL Experience Manager] does not display the warning message about missing metadata for such mandatory metadata fields.
 
-1. Click the AEM logo and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
+1. In [!DNL Experience Manager] interface, navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
 1. Save the default metadata form as a custom form. For example, save it as `my_default`.
-
-   ![A default metadata form saved as custom form](assets/chlimage_1-189.png)
 
 1. Edit the custom form. Add a mandatory field. For example, add a **[!UICONTROL Category]** field and make the field mandatory.
 
@@ -285,22 +258,17 @@ You can define mandatory fields at a folder level, which is enforced on assets t
 
    *Figure: Mandatory field in metadata schema form editor.*
 
-1. Click **[!UICONTROL Save]**. The modified form is listed in the **[!UICONTROL Metadata Schema Forms]** page. Select the form and then click or tap **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
-
-   ![Apply to Folders icon to apply custom metadata form to folder](assets/chlimage_1-191.png)
+1. Click **[!UICONTROL Save]**. The modified form is listed in the **[!UICONTROL Metadata Schema Forms]** page. Select the form and then click **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
 
 1. Navigate to the folder and upload some assets with missing metadata for the mandatory field you added to the custom form. A message for the missing metadata for the mandatory field is displayed on the Card view of the asset.
 
    ![Message for missing mandatory metadata on asset card view on uploading assets in folder](assets/chlimage_1-192.png)
 
-1. (Optional) Access `https://[server]:[port]/system/console/components/`. Configure and enable `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component that is disabled by default. Set a frequency at which AEM checks for the validity of metadata on the assets.
-
-   This configuration adds a property `hasValidMetadata` to `jcr:content` of assets. Using this property, AEM can filter results in a search.
-
-   >[!NOTE]
-   >
-   >If an asset is added after the scheduled check, the asset is not flagged with `hasValidMetadata` until the next scheduled check. The assets does not appear in intermediate search results.
+1. (Optional) Access `https://[aem_server]:[port]/system/console/components/`. Configure and enable `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component that is disabled by default. Set a frequency at which [!DNL Experience Manager] checks for the validity of metadata on the assets. This configuration adds a property `hasValidMetadata` to `jcr:content` of assets. Using this property, [!DNL Experience Manager] can invalid filter results in a search. If you add an asset after a check, the asset is not flagged with `hasValidMetadata` until the next scheduled check. Hence the assets does not appear in search filters for invalid metadata till after the next scheduled check.
 
    >[!CAUTION]
    >
    >The metadata validation checks are resource intensive and may impact the performance of your system. Schedule the checks accordingly. If the server cannot cope up with the load, try disabling this job.
+
+<!-- TBD: Add this method to find invalid metadata in the metadata article later.
+-->
