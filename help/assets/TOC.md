@@ -49,7 +49,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Panoramic Images](panoramic-images.md)
     + [Mixed Media Sets](mixed-media-sets.md)
     + [Spin Sets](spin-sets.md)
-    + [Video](video.md)
+    + [Video in Dynamic Media](video.md)
     + [Carousel Banners](carousel-banners.md)
     + [Interactive Images](interactive-images.md)
     + [Interactive Videos](interactive-videos.md)
