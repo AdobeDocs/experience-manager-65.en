@@ -476,7 +476,7 @@ When the Spin Set is uploaded and published, you would activate the name of the 
 
 ### (Optional) Tuning the performance of Dynamic Media - Scene7 mode {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). The tuned job parameter would appear as `process=none&createTemplate=false`.
+You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=none&createTemplate=false`.
 
 Adobe recommends using the following "tuned" job parameters for PSD, PDF, and Postscript files:
 
