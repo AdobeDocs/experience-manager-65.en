@@ -60,9 +60,9 @@ As with rendering, all routing should also be dynamic. In AEM, [the SPA should a
 
 Any static routing works against the [principle of portability](/help/sites-developing/spa-architecture.md#portability) and limits the author by not being compatible with content authoring features of AEM. For example, with static routing, if the content author would want to change a route or change a page, he or she would have to ask the front end developer to do it.
 
-## Maven Archetype for SPA Starter Kit {#maven-archetype-for-spa-starter-kit}
+## AEM Project Archetype {#aem-project-archetype}
 
-Adobe recommends leveraging the [Maven Archetype for SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype) to help you start your own SPA project for AEM.
+Any AEM project should leverage the [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
 
 ## SPA Design Models {#spa-design-models}
 

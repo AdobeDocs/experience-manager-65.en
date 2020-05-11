@@ -193,4 +193,4 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
 ## Best practices and limitations {#best-practices-limitations-tips}
 
-* AEM InDesign editor works at a tag level and all the text under a single tag is considered a single entity. To preserve text formatting and styles when editing, separately tag each paragraph (or text with different styling).
+* The [!DNL InDesign] editor in [!DNL Experience Manager] works at a tag level and all the text under a single tag is considered a single entity. To preserve text formatting and styles when editing, separately tag each paragraph (or text with different styling).

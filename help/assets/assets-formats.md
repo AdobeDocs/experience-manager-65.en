@@ -1,44 +1,44 @@
 ---
-title: Assets supported formats
-description: List of file formats supported by AEM Assets and by Dynamic Media and features supported for each format.
+title: Supported file formats for processing in [!DNL Adobe Experience Manager Assets].
+description: File formats and MIME types supported by [!DNL Assets] and [!DNL Dynamic Media] and the features supported for each format.
 contentOwner: AG
 ---
 
-# Supported Assets formats {#assets-supported-formats}
+# Formats supported in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-AEM Assets supports a wide range of file formats and each functionality has varied support for different MIME types.
-
-To integrate AEM Assets with other standards-compliant digital asset management (DAM) solutions and desktop software, use Adobe's Extensible Metadata Platform (XMP).
+[!DNL Experience Manager Assets] supports a wide range of file formats and each functionality has varied support for different MIME types. To integrate [!DNL Assets] with other standards-compliant digital asset management (DAM) solutions and desktop software, use Adobe's [!DNL Extensible Metadata Platform] (XMP).
 
 Use the legend to understand the support level.
 
-| Support Level | Description |
-|:---:|---|
-| &#10003; | Supported |
-| &#42; | Supported with add-on features |
-| &minus; | Not applicable |
+| Support Level |          Description           |
+| :-----------: | ------------------------------ |
+|   &#10003;    | Supported                      |
+|     &#42;     | Supported with add-on features |
+|    &minus;    | Not applicable                 |
 
-## Supported raster image formats in AEM Assets {#supported-raster-image-formats}
+## Supported raster image formats in [!DNL Experience Manager] {#supported-raster-image-formats}
 
-| Format | Storage | Metadata management | Metadata extraction | Thumbnail generation | Editing | Metadata writeback | Insights |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| PNG | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
-| GIF | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
-| TIFF | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; | &#10003; |
-| JPEG | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
-| BMP | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
-| PNM | &#10003; | &#10003; | | | | | &#10003; |
-| PGM | &#10003; | &#10003; | | | | | &#10003; |
-| PBM | &#10003; | &#10003; | | | | | &#10003; |
-| PPM | &#10003; | &#10003; | | | | | &#10003; |
-| PSD &Dagger; | &#10003; | &#10003; | &#10003; | &#10003; | | | &#10003; |
+The supported raster image formats in [!DNL Assets] are:
+
+|    Format    | Storage  | Metadata management | Metadata extraction | Thumbnail generation | Editing  | Metadata writeback | Insights |
+| ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
+| PNG          | &#10003; |      &#10003;       |      &#10003;       |       &#10003;       | &#10003; |      &#10003;      | &#10003; |
+| GIF          | &#10003; |      &#10003;       |      &#10003;       |       &#10003;       | &#10003; |                    | &#10003; |
+| TIFF         | &#10003; |      &#10003;       |      &#10003;       |       &#10003;       |          |      &#10003;      | &#10003; |
+| JPEG         | &#10003; |      &#10003;       |      &#10003;       |       &#10003;       | &#10003; |      &#10003;      | &#10003; |
+| BMP          | &#10003; |      &#10003;       |      &#10003;       |       &#10003;       | &#10003; |                    | &#10003; |
+| PNM          | &#10003; |      &#10003;       |                     |                      |          |                    | &#10003; |
+| PGM          | &#10003; |      &#10003;       |                     |                      |          |                    | &#10003; |
+| PBM          | &#10003; |      &#10003;       |                     |                      |          |                    | &#10003; |
+| PPM          | &#10003; |      &#10003;       |                     |                      |          |                    | &#10003; |
+| PSD &Dagger; | &#10003; |      &#10003;       |      &#10003;       |       &#10003;       |          |                    | &#10003; |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)  | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; | |
-| PICT | | | | | | | &#10003; |
-| PSB | &#10003; | &#10003; | &#10003; | &#10003; | | | |
+| PICT         |          |                     |                     |                      |          |                    | &#10003; |
+| PSB          | &#10003; |      &#10003;       |      &#10003;       |       &#10003;       |          |                    |          |
 
 &Dagger; The merged image is extracted from the PSD file. It is an image that is generated by Adobe Photoshop and is included in the PSD file. Depending on the settings, the merged image may or may not be the actual image.
 
-## Supported raster image formats in Dynamic Media {#supported-raster-image-formats-dynamic-media}
+The supported raster image formats in [!DNL Dynamic Media] are:
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -47,11 +47,11 @@ Use the legend to understand the support level.
 | TIFF | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
 | JPEG | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
 | BMP | &#10003; | | | | |
-| PSD **‡** |&#10003;| | | | |
+| PSD &Dagger; |&#10003;| | | | |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) |&#10003;|&#10003;|&#10003;|&#10003;| &#10003; |
 | PICT | &#10003; | | | | |
 
-**‡** The merged image is extracted from the PSD file. It is an image that is generated by Adobe Photoshop and is included in the PSD file. Depending on the settings, the merged image may or may not be the actual image.
+&Dagger; The merged image is extracted from the PSD file. It is an image that is generated by Adobe Photoshop and is included in the PSD file. Depending on the settings, the merged image may or may not be the actual image.
 
 In addition to the information above, consider the following:
 
@@ -59,13 +59,15 @@ In addition to the information above, consider the following:
 
 * Metadata writeback works for PSB file format when it is added to the `NComm` handler.
 
-* To use Dynamic Media to preview and generate dynamic renditions for EPS files, see [Adobe Illustrator (AI), Postscript (EPS), and PDF file formats.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* To use [!DNL Dynamic Media] to preview and generate dynamic renditions for EPS files, see [Adobe Illustrator (AI), Postscript (EPS), and PDF file formats.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * For EPS files, metadata writeback is supported in PostScript Document Structuring Convention (PS-Adobe) version 3.0 or later.
 
 ## Unsupported raster image formats in Dynamic Media {#unsupported-image-formats-dynamic-media}
 
 The following list describes the sub-types of raster image file formats that are *not* supported in Dynamic Media.
+
+See also [Detect unsupported file formats for Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * PNG files that have an IDAT chunk size greater than 100 MB.
 * PSB files.
@@ -118,31 +120,6 @@ The Adobe Camera Raw library enables AEM Assets to ingest raw images. See [Camer
 
 Document formats supported for asset management features are as follows:
 
-<!--
-DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migration.
-
-| Format | Storage | Metadata management | Metadata extraction | Thumbnail generation | Interactive editing | Metadata writeback | [Insights](touch-ui-asset-insights.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
-| DOC | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
-| DOCX | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
-| ODT | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
-| HTML | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| RTF | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| TXT | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| XLS | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| XLSX | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
-| ODS | &#10003; | &#10003; | &#10003; | | | | | |
-| PPT | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
-| PPTX | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
-| ODP | &#10003; | &#10003; | &#10003; | | | | | |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
-| PS | &#10003; | &#10003; | | | | | | |
-| QXP | &#10003; | &#10003; | | | | | | |
-| EPUB | &#10003; | &#10003; | | &#10003; | &#10003; | | | |
--->
-
 | Format | Storage | [Metadata management](metadata.md) | Full-text<br> extraction | [Metadata extraction](metadata.md) | Thumbnail<br> generation | [Subasset extraction](managing-linked-subassets.md) | [Metadata writeback](xmp-writeback.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
 |[AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)  |&#10003; |&#10003; | |&#10003; |&#10003; |&#10003; |&#10003; | |
@@ -182,7 +159,7 @@ In addition to the above functionality, consider the following:
 
 ## Supported multimedia formats {#supported-multimedia-formats}
 
-| | Storage | Metadata management | Metadata extraction | Thumbnail generation | FFMPEG transcoding |
+| | Storage | Metadata management | Metadata extraction | Thumbnail generation | FFmpeg transcoding |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | AAC | &#10003; | &#10003; | | &minus; | &#42; |
 | MIDI | &#10003; | &#10003; | | &minus; | &#42; |
@@ -256,7 +233,7 @@ A list of supported MIME types are available in CRXDE Lite at `/conf/global/sett
 
 | File extension | MIME type/ Internet media type | Default jobParam value | Allowed jobParam value |
 |---|---|---|---|
-| Image | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | The default jobParam applies to all image mime type assets.<ul><li>[knockoutBackgroundOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html)</li><li>manualCropOptions</li><li>[autoColorCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_auto_color_crop_options)</li><li>[autoTransparentCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_auto_transparent_crop_options)</li><li>[colorManagementOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html)</li><li>[autoSetCreationOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html)</li><li>[emailSetting](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/index.html?f=r_email_settings)</li><li>[xmpKeywords](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_xmp_keywords)</li><li>[unsharpMaskOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html)</li></ul> |
+| Image | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | The default jobParam applies to all image MIME type assets.<ul><li>[knockoutBackgroundOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html)</li><li>manualCropOptions</li><li>[autoColorCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_auto_color_crop_options)</li><li>[autoTransparentCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_auto_transparent_crop_options)</li><li>[colorManagementOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html)</li><li>[autoSetCreationOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html)</li><li>[emailSetting](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/index.html?f=r_email_settings)</li><li>[xmpKeywords](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_xmp_keywords)</li><li>[unsharpMaskOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html)</li></ul> |
 | 3G2 | video/3gpp2 | | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
 | 3GP | video/3gpp | | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_exclude_master_video_from_avs) |
 | AAC | audio/x-aac | | |
