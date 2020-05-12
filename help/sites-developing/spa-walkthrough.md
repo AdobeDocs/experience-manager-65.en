@@ -37,6 +37,12 @@ The walkthrough is based on standard AEM functionality and the sample We.Retail 
   ](/help/release-notes/sp-release-notes.md)
 * [Install the sample We.Retail Journal app available on GitHub here.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 
+>[!CAUTION]
+>
+>This document uses the [We.Retail Journal app](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) for demonstration purposes only. It should not be used for any project work.
+>
+>Any AEM project should leverage the [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
+
 ### What is a SPA? {#what-is-a-spa}
 
 A single-page application (SPA) differs from a conventional page in that it is rendered client-side and is primarily Javascript-driven, relying on Ajax calls to load data and dynamically update the page. Most or all content is retrieved once in a single page load with additional resources loaded asynchronously as needed based on user interaction with the page.
@@ -109,6 +115,9 @@ When an SPA is built to leverage the AEM SPA Editor, the content author notices 
 1. Edit the content as normal within AEM and note that the changes are persisted.
 
    ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
+
+   >[!NOTE]
+   >See the [SPA Editor Overview](spa-overview.md#requirements-limitations) for further information about the in place text editor and SPAs.
 
 1. Use the Assets Browser to drag-and-drop a new image into an image component.
 

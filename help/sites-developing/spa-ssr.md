@@ -173,7 +173,7 @@ For a simplistic example, please refer to the [We.Retail Journal app](https://gi
 
 >[!NOTE]
 >
->All SPA projects on AEM should be based on the [Maven Archetype for SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype).
+>Any AEM project should leverage the [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
 
 ## Using Node.js {#using-node-js}
 

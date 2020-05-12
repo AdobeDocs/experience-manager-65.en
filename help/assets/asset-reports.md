@@ -34,12 +34,12 @@ AEM administrators can easily generate and customize these reports for your impl
 
 1. In Experience Manager interface, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Reports]**.
 
-![Tools page to navigate assets report](assets/AssetsReportNavigation.png)
+![](assets/AssetsReportNavigation.png)
 
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
 
-   ![Select report type](assets/choose_report.png)
+   ![](assets/choose_report.png)
 
    >[!NOTE]
    >
@@ -51,7 +51,7 @@ AEM administrators can easily generate and customize these reports for your impl
 
 1. Configure report details such as title, description, thumbnail, and folder path in the CRX repository where the report is stored. By default, the folder path is `/content/dam`. You can specify a different path.
 
-   ![Page to add report details](assets/report_configuration.png)
+   ![](assets/report_configuration.png)
 
    Choose the date range for your report.
 
@@ -67,32 +67,32 @@ AEM administrators can easily generate and customize these reports for your impl
    >
    >The **[!UICONTROL Disk Usage]** report does not include date range fields because it indicates current disk space usage only.
 
-   ![Details page of Disk Usage report](assets/disk_usage_configuration.png)
+   ![](assets/disk_usage_configuration.png)
 
    When you create the **[!UICONTROL Files]** report, you can include/exclude sub-folders. However, you cannot include asset renditions for this report.
 
-   ![Details page of Files report](assets/files_report.png)
+   ![](assets/files_report.png)
 
    The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within AEM Assets. It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. The columns are not customizable.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
-   ![Details page of Link Share report](assets/link_share.png)
+   ![](assets/link_share.png)
 
 1. Click **[!UICONTROL Next]** from the toolbar.
 
 1. In the **[!UICONTROL Configure Columns]** page, some columns are selected to appear in the report by default. You can select more columns. Deselect a selected column to exclude it in the report.
 
-   ![Select or deselect report columns](assets/configure_columns.png)
+   ![](assets/configure_columns.png)
 
    To display a custom column name or property path, configure the properties for the asset binary under the jcr:content node in CRX. Alternatively, add it through property path picker.
 
-   ![Select or deselect report columns](assets/custom_columns.png)
+   ![](assets/custom_columns.png)
 
 1. Click **[!UICONTROL Create]** from the toolbar. A message notifies that report generation has been initiated.
 1. In the Asset Reports page, the report generation status is based on the current state of the report job, for example Success, Failed, Queued, or Scheduled. The same status appears in the notifications inbox.To view the report page, click the report link. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
 
-   ![A generated report](assets/report_page.png)
+   ![](assets/report_page.png)
 
    Click **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
 
@@ -116,11 +116,11 @@ You can add custom columns to the following reports to display more data for you
 
 1. To display a custom column, specify the name of the column in under **[!UICONTROL Custom Columns]**.
 
-   ![Specify name for custom column of report](assets/custom_columns-1.png)
+   ![](assets/custom_columns-1.png)
 
 1. Add the property path under the `jcr:content` node in CRXDE using the property path picker. Alternatively, type the path in the property path field.
 
-   ![Map the property path from paths in jcr:content](assets/property_picker.png)
+   ![](assets/property_picker.png)
 
    To add more custom columns, click **[!UICONTROL Add]** and repeat steps 5 and 6.
 

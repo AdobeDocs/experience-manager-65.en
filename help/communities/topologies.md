@@ -30,14 +30,16 @@ One other SRP option, [JSRP - JCR Storage Resource Provider](jsrp.md), does not 
 Requiring a common store results in the following recommended topologies.
 
 >[!NOTE]
->
->For AEM Communities, [UGC is never replicated](working-with-srp.md#ugc-never-replicated).
->
->When the deployment does not include a [common store](working-with-srp.md), UGC will be visible only on the AEM publish or author instance on which it was entered.
+ >
+ >For AEM Communities, [UGC is never replicated](working-with-srp.md#ugc-never-replicated).
+ >
+ >When the deployment does not include a [common store](working-with-srp.md), UGC will be visible only on the AEM publish or author instance on which it was entered.
+ >
 
 >[!NOTE]
->
->For more information on the AEM platform, see [Recommended Deployments](../../help/sites-deploying/recommended-deploys.md) and [Introduction to the AEM Platform](../../help/sites-deploying/data-store-config.md).
+ >
+ >For more information on the AEM platform, see [Recommended Deployments](../../help/sites-deploying/recommended-deploys.md) and [Introduction to the AEM Platform](../../help/sites-deploying/data-store-config.md).
+ >
 
 ## For Production {#for-production}
 
@@ -45,9 +47,9 @@ Establishing a common store for UGC is essential, and thus the underlying deploy
 
 Two examples:
 
-1) If the expected volume of UGC is high and a local MongoDB instance is possible, then the choice would be [MSRP](msrp.md).
+1. If the expected volume of UGC is high and a local MongoDB instance is possible, then the choice would be [MSRP](msrp.md).
 
-2) For optimal performance for page content, the choice of a [publish farm](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) and [ASRP](asrp.md) would provide optimal scaling of UGC with relatively straightforward operations.
+1. For optimal performance for page content, the choice of a [publish farm](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) and [ASRP](asrp.md) would provide optimal scaling of UGC with relatively straightforward operations.
 
 For both, the deployment may be based on any OAK microkernel.
 
@@ -57,7 +59,7 @@ For more details on Oak microkernals, visit [Recommended Deployments](../../help
 
 ### TarMK Publish Farm {#tarmk-publish-farm}
 
-When the topology is a publish farm, relevant topics of importance are
+When the topology is a publish farm, relevant topics of importance are:
 
 * [User Synchronization](sync.md)
 * [Managing Users and User Groups](users.md)
@@ -96,7 +98,7 @@ If choosing [ASRP](asrp.md), [DSRP](dsrp.md) or [MSRP](msrp.md) for production, 
 
 * UGC [common store](working-with-srp.md)
 
-  Describes the storage of community content separate from site content
+  Describes the storage of community content separate from site content.
 
 * [Node Stores and Data Stores](../../help/sites-deploying/data-store-config.md)
 

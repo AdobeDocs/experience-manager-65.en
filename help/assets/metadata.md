@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Manage metadata of your digital assets {#managing-metadata-for-digital-assets}
 
-[!DNL Adobe Experience Manager Assets] keeps metadata for every asset. This allows easier categorization and organization of assets and it helps people who are looking for a specific asset. With the ability to extract metadata from files uploaded to [!DNL Experience Manager Assets], metadata management integrates with the creative workflow. With the ability to keep and manage metadata with your assets, [!DNL Experience Manager Assets] makes it possible to automatically organize and process assets based on their metadata.
+[!DNL Adobe Experience Manager Assets] keeps metadata for every asset. It allows easier categorization and organization of assets and it helps people who are looking for a specific asset. With the ability to extract metadata from files uploaded to [!DNL Experience Manager Assets], metadata management integrates with the creative workflow. With the ability to keep and manage metadata with your assets, you can automatically organize and process assets based on their metadata.
 
 * [XMP metadata](xmp.md).
 * [How to edit or add metadata](meta-edit.md).
@@ -24,23 +24,23 @@ Metadata is the collection of all the data available for an asset but that is no
 * Name of the folder it is contained in.
 * Related assets or applied tags.
 
-These are the basic metadata properties that [!DNL Experience Manager] can manage for assets, which allows users to see all assets, for example, ordered by their last modification date - useful when trying to discover what assets have recently been added to the repository.
+The above are the basic metadata properties that [!DNL Experience Manager] can manage for assets, which allows users to see all assets. For example, ordering assets by last modification date is useful when trying to discover recently added assets.
 
 You can add more high-level data to digital assets, for example:
 
-* Type of asset (is it an image, a video, an audio clip or a document?).
+* Type of asset (is it an image, a video, an audio clip, or a document?).
 * Owner of the asset.
 * Title of the asset.
 * Description of the asset.
 * Tags assigned to an asset.
 
-More metadata helps you further categorize assets and is helpful as the amount of digital information grows. It is possible to manage a few hundred files based on just the filenames. However, this approach is not scalable and quickly falls short when the number of people involved and the number of assets managed increases.
+More metadata helps you further categorize assets and is helpful as the amount of digital information grows. It is possible to manage a few hundred files based on just the filenames. However, this approach is not scalable. It falls short when the number of people involved and the number of assets managed increase.
 
 With the addition of metadata, the value of a digital asset grows, because the asset becomes,
 
 * More accessible - systems and users can find it easily.
 * Easier to manage - you can find assets with the same set of properties easier and apply changes to them.
-* More complete - the more metadata you have added to an asset, the more information and context it carries.
+* Complete - asset carries more information and context with more metadata.
 
 For these reasons, [!DNL Assets] provides you with the right means of creating, managing, and exchanging metadata for your digital assets.
 
@@ -48,7 +48,7 @@ For these reasons, [!DNL Assets] provides you with the right means of creating, 
 
 The two basic types of metadata are technical metadata and descriptive metadata.
 
-Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determines technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
+Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
 
 * Size of a file.
 * Dimensions (height and width) of an image.
@@ -57,11 +57,7 @@ Technical metadata is useful for software applications that are dealing with dig
 
 Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
 
-Because of the high cost of the manual effort required to create descriptive metadata information, standards have been established to ease the exchange of metadata across software systems and organizations.
-
-[!DNL Experience Manager Assets] supports all relevant standards for metadata management.
-
-Because of the importance of metadata and the high manual involvement required to create metadata, standards have been established that make it easier to exchange.
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management.
 
 ## Encoding standards {#encoding-standards}
 
@@ -70,11 +66,11 @@ There are various ways to embed metadata in files. A selection of encoding stand
 * XMP: used by [!DNL Assets] to store the extracted metadata within the repository.
 * ID3: for audio and video files.
 * Exif: for image files.
-* Other/Legacy: from Microsoft Word, PowerPoint, Excel, and so on.
+* Other/Legacy: from [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], and so on.
 
 ### XMP {#xmp}
 
-Extensible Metadata Platform (XMP) is an open standard that is used by [!DNL Experience Manager Assets] for all metadata management. The standard offers universal metadata encoding that can be embedded into all file formats. Adobe and other companies support XMP standard as it provides a rich content model. Users of XMP standard and of [!DNL Experience Manager Assets] have a powerful platform to build upon. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) is an open standard that is used by [!DNL Experience Manager Assets] for all metadata management. The standard offers universal metadata encoding that can be embedded into all file formats. Adobe and other companies support XMP standard as it provides a rich content model. Users of XMP standard and of [!DNL Experience Manager Assets] have a powerful platform to build upon. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -90,15 +86,15 @@ ID3 tags are designed for the MP3 file format. Additional information on formats
 
 ### Exif {#exif}
 
-Exchangeable image file format (Exif) is the most popular metadata format used in digital photography. It provides a way of embedding a fixed vocabulary of metadata properties in many file formats, such as JPEG, TIFF, RIFF, and WAV. Exif stores metadata as pairs of a metadata name and a metadata value. These metadata name-value-pairs are also called tags, not to be confused with the tagging in [!DNL Experience Manager]. As Exif is automatically created by modern digital cameras and supported through modern graphics software, it can be seen as the lowest common denominator for metadata management.
+Exchangeable image file format (Exif) is the most popular metadata format used in digital photography. It provides a way of embedding a fixed vocabulary of metadata properties in many file formats, such as JPEG, TIFF, RIFF, and WAV. Exif stores metadata as pairs of a metadata name and a metadata value. These metadata name-value-pairs are also called tags, not to be confused with the tagging in [!DNL Experience Manager]. Modern digital cameras create Exif metadata and modern graphics software support it. Exif format is the lowest common denominator for metadata management especially for images.
 
 A major limitation of Exif is that a few popular image file formats such as BMP, GIF, or PNG do not support it.
 
-Metadata fields usually defined by Exif are technical in nature and are of limited use for descriptive metadata management. For this reason, [!DNL Experience Manager Assets] offers mapping of Exif properties into [common metadata schemata](metadata-schemas.md) and into [XMP](xmp-writeback.md).
+Metadata fields defined by Exif are typically technical in nature and are of limited use for descriptive metadata management. For this reason, [!DNL Experience Manager Assets] offers mapping of Exif properties into [common metadata schemata](metadata-schemas.md) and into [XMP](xmp-writeback.md).
 
 ### Other metadata {#other-metadata}
 
-Other metadata that can be embedded from files include Microsoft Word, PowerPoint, Excel, and so on.
+Other metadata that can be embedded from files include [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], and so on.
 
 ## Metadata schemata {#metadata-schemata}
 
@@ -110,62 +106,62 @@ The supported metadata schemata supported are listed below.
 
 ### Standard metadata {#standard-metadata}
 
-* dc - Dublin Core - the most important and widely used set of metadata.
+* DC - [!DNL Dublin Core] is an important and widely used set of metadata.
 * DICOM - Digital Imaging and Communications in Medicine.
-* Iptc4xmpCore & iptc4xmpExt - International Press Communications Standard - lots of subject-specific metadata.
-* rdf - Resource Description Framework - for generic semantic web metadata.
-* xmp - Extensible Metadata Platform.
-* xmpBJ - Basic Job Ticketing.
+* `Iptc4xmpCore` and `iptc4xmpExt` - International Press Communications Standard contains many subject-specific metadata.
+* RDF - Resource Description Framework - for generic semantic web metadata.
+* XMP - [!DNL Extensible Metadata Platform].
+* `xmpBJ` - Basic Job Ticketing.
 
 ### Application-specific metadata {#application-specific-metadata}
 
-The application-specific metadata includes technical and descriptive metadata. If you use these, other applications may not be able to use the metadata. For example, if you have an asset with [!DNL Adobe Photoshop] metadata and another image-rendering application tries to access the metadata, it may not be able to access the metadata. If you find that you have much application-specific metadata in your assets, you can create a workflow step that changes an application-specific property to a standard property.
+The application-specific metadata includes technical and descriptive metadata. If you use such metadata, other applications may not be able to use the metadata. For example, a different image-rendering application may not be able to access [!DNL Adobe Photoshop] metadata. You can create a workflow step that changes an application-specific property to a standard property.
 
-* acdsee - metadata managed by the ACDSee program [www.acdsee.com/](https://www.acdsee.com/).
-* album - Adobe Photoshop Album.
-* cq - used by [!DNL Experience Manager Assets].
-* dam - used by [!DNL Experience Manager Assets].
-* dex - Optima SC Description Explorer.
-* crs - Adobe Photoshop Camera Raw.
-* lr - Adobe Lightroom.
-* mediapro - IView MediaPro.
-* MicrosoftPhoto & MP - Microsoft Photo.
-* pdf & pdfx.
-* photoshop & psAux - Adobe Photoshop.
+* ACDSee - Metadata managed by the [!DNL ACDSee] program. See [www.acdsee.com/](https://www.acdsee.com/).
+* Album - [!DNL Adobe Photoshop Album].
+* CQ - Used by [!DNL Experience Manager Assets].
+* DAM - Used by [!DNL Experience Manager Assets].
+* DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) is a collection of tools for metadata and file management for Windows operating systems.
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* LR - [!DNL Adobe Lightroom].
+* MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
+* MicrosoftPhoto and MP - Microsoft Photo.
+* PDF and PDF/X.
+* Photoshop and psAux - [!DNL Adobe Photoshop].
 
 ### Digital Rights Management metadata {#digital-rights-management-metadata}
 
-* cc - creative commons
-* xmpRights
-* plus - Picture Licensing Universal System - https://www.useplus.com/
-* prism - https://www.idealliance.org/prism-metadata Publishing Requirements for Industry Standard Metadata
-* prl - Prism Rights Language
-* pur - Prism Usage Rights
-* xmpPlus - integration of PLUS with XMP
+* CC - [!DNL Creative Commons].
+* [!DNL XMPRights].
+* PLUS - [Picture Licensing Universal System](https://www.useplus.com).
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
+* PRL - PRISM Rights Language.
+* PUR - PRISM Usage Rights.
+* `xmpPlus` - Integration of PLUS with XMP.
 
 ### Photography-specific metadata {#photography-specific-metadata}
 
-* exif - lots of technical information from camera, including GPS position
-* crs - photoshop camera raw
-* Iptc4xmpCore and iptc4xmpExt
-* TIFF - image metadata (not only for TIFF images)
+* Exif - Technical information from camera, including GPS position.
+* CRS - [!DNL Camera Raw] schema.
+* `iptc4xmpCore` and `iptc4xmpExt`.
+* TIFF - image metadata (not only for TIFF images).
 
 ### Print-specific metadata {#print-specific-metadata}
 
-* pdf and pdfx - Adobe PDF and third-party applications
-* prism - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata
-* xmp
-* xmpPG - xmp for paged text
+* PDF and PDF/X - Adobe PDF and third-party applications.
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.prismstandard.org).
+* XMP - [!DNL Extensible Metadata Platform].
+* `xmpPG` - XMP metadata for paged text.
 
 ### Multimedia-specific metadata {#multimedia-specific-metadata}
 
-* xmpDM - Dynamic Media
-* xmpMM - Media Management
+* `xmpDM` - [!DNL Dynamic Media].
+* `xmpMM` - Media Management.
 
 ## Metadata-driven workflows {#metadata-driven-workflows}
 
-Creating metadata-driven workflows helps you automate some processes, which improves efficiency. In a metadata-driven workflow, the workflow management system reads the workflow and as a result performs some pre-defined action. For example, some of the ways you could use metadata-driven workflows:
+Creating metadata-driven workflows help you automate some processes, which improves efficiency. In a metadata-driven workflow, the workflow management system reads the workflow and as a result performs some pre-defined action. For example, some of the ways you could use metadata-driven workflows:
 
-* The workflow can check whether an image has a title. If it does not, the system notifies a particular user to add a title.
-* The workflow can check whether a copyright notice on an asset allows for distribution. If it does, the system sends the asset to one server. If it does not, the system sends the asset to another server.
-* A workflow can check for assets without pre-defined, mandatory metadata or with *invalid* metadata.
+* The workflow can check whether an image has a title or not. If it does not, the system notifies to add a title.
+* The workflow can check whether a copyright notice on an asset allows for distribution or not. So, the system sends the asset to one server or the other.
+* A workflow can check for assets without pre-defined, mandatory metadata or assets with *invalid* metadata.

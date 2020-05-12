@@ -21,24 +21,23 @@ Essentially:
 
 * [Create a tag namespace](../../help/sites-administering/tags.md#creating-a-namespace) for each catalog
 
-    * [Set tag permissions](../../help/sites-administering/tags.md#setting-tag-permissions)
+  * [Set tag permissions](../../help/sites-administering/tags.md#setting-tag-permissions)
+  * For community members only (closed community)
 
-        * For community members only (closed community)
+    * Allow read access for the [community site's member group](users.md#publish-group-roles)
 
-            * Allow read access for the [community site's member group](users.md#publish-group-roles)
+  * For any site visitor, whether signed-in or anonymous (open community)
 
-        * For any site visitor, whether signed-in or anonymous (open community)
+    * Allow read access for the `Everyone` group
 
-            * Allow read access for the `Everyone`group
-
-    * [Publish the tags](../../help/sites-administering/tags.md#publishing-tags)
+  * [Publish the tags](../../help/sites-administering/tags.md#publishing-tags)
 
 * [Define the scope of tags for a community site](sites-console.md#tagging)
 
-    * [Configure catalogs that exist in the site's structure](functions.md#catalog-function)
+  * [Configure catalogs that exist in the site's structure](functions.md#catalog-function)
 
-        * Can add tags to the catalog instance to control the list of tags presented in the UI filters
-        * Can add [pre-filters](catalog-developer-essentials.md#pre-filters), to restrict a catalog's included resources
+    * Can add tags to the catalog instance to control the list of tags presented in the UI filters.
+    * Can add [pre-filters](catalog-developer-essentials.md#pre-filters), to restrict a catalog's included resources.
 
 * [Publish the community site](sites-console.md#publishing-the-site)
 * [Apply tags to enablement resources](resources.md#create-a-resource) so they may be categorically filtered
@@ -80,7 +79,6 @@ For example, if a `ski-catalog` namespace were created and set on a catalog name
 
 Thus, any enablement resource tagged with one of:
 
-* ski-catalog:
 * ski-catalog:lesson-1
 * ski-catalog:lesson-2
 

@@ -169,6 +169,21 @@ Previous versions of these frameworks may work with the AEM SPA Editor SDK, but 
 
 Additional SPA frameworks can be implemented to work with the AEM SPA Editor SDK. Please see the [SPA Blueprint](/help/sites-developing/spa-blueprint.md) document for the requirements that a framework must fulfill in order to create a framework-specific layer composed of modules, components, and services to work with the AEM SPA Editor.
 
+### Using Multiple Selectors {#multiple-selectors}
+
+Additional custom selectors can be defined and used as part of an SPA developed for the AEM SPA SDK. However this support requires that the `model` selector be the first selector and the extension be `.json` as [required by the JSON Exporter.](json-exporter-components.md#multiple-selectors)
+
+### Text Editor Requirements {#text-editor-requirements}
+
+If you want to use the in place editor of a text component created in SPA there is additional configuration required.
+
+1. Set an attribute (it can be any) on the container wrapper element containing the text HTML. In case of the WKND Journal sample content, it's a `<div>` element and the selector that has been used is `data-rte-editelement`.
+1. Set the configuration `editElementQuery` on the corresponding AEM text component's `cq:InplaceEditingConfig` that points to that selector e.g. `data-rte-editelement`. This lets the editor know which HTML element wraps the HTML text.
+
+For an example of how this is done, see the [WKND Journal sample content.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+
+For additional information about the `editElementQuery` property and the configuration of the rich text editor, see [Configure the Rich Text Editor.](/help/sites-administering/rich-text-editor.md)
+
 ### Limitations {#limitations}
 
 The AEM SPA Editor SDK was introduced with AEM 6.4 service pack 2. It is fully supported by Adobe, and as a new feature it continues to be enhanced and expanded. The following AEM features are not yet supported by the SPA Editor:
