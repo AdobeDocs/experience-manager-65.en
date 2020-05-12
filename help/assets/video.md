@@ -1,5 +1,5 @@
 ---
-title: Video
+title: Video in Dynamic Media
 description: Learn how to work with video in Dynamic Media
 uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
 contentOwner: Rick Brough
@@ -10,7 +10,7 @@ discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 ---
 
-# Video {#video}
+# Video in Dynamic Media {#video}
 
 This section describes working with video in Dynamic Media.
 
