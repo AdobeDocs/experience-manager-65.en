@@ -169,6 +169,10 @@ Previous versions of these frameworks may work with the AEM SPA Editor SDK, but 
 
 Additional SPA frameworks can be implemented to work with the AEM SPA Editor SDK. Please see the [SPA Blueprint](/help/sites-developing/spa-blueprint.md) document for the requirements that a framework must fulfill in order to create a framework-specific layer composed of modules, components, and services to work with the AEM SPA Editor.
 
+### Using Multiple Selectors {#multiple-selectors}
+
+Additional custom selectors can be defined and used as part of an SPA developed for the AEM SPA SDK. However this support requires that the `model` selector be the first selector and the extension be `.json` as [required by the JSON Exporter.](json-exporter-components.md#multiple-selectors)
+
 ### Text Editor Requirements {#text-editor-requirements}
 
 If you want to use the in place editor of a text component created in SPA there is additional configuration required.
