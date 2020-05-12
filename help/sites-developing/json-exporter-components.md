@@ -52,6 +52,16 @@ In addition, this specifies that the Sling Model class can be adapted into the `
 >
 >The `ExporterConstants` and `ComponentExporter` classes come from the `com.adobe.cq.export.json` bundle.
 
+### Using Multiple Selectors {#multiple-selectors}
+
+Although not a standard use case, it is possible to configure multiple selectors in addition to the `model` selector.
+
+```
+https://<server>:<port>/content/page.model.selector1.selector2.json
+```
+
+However in such a case the `model` selector must be the first selector and the extension must be `.json`.
+
 ## Annotate the Sling Model Interface {#annotate-the-sling-model-interface}
 
 To be taken into account by the JSON Exporter framework, the Model interface should implement the `ComponentExporter` interface (or `ContainerExporter`, in the case of a container component).
