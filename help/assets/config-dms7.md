@@ -476,7 +476,9 @@ When the Spin Set is uploaded and published, you would activate the name of the 
 
 ### (Optional) Tuning the performance of Dynamic Media - Scene7 mode {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=none&createTemplate=false`.
+**Optimizing Job Parameters**
+
+You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`.
 
 Adobe recommends using the following "tuned" job parameters for PSD, PDF, and Postscript files:
 
@@ -488,17 +490,19 @@ Adobe recommends using the following "tuned" job parameters for PSD, PDF, and Po
 
 To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
-In addition, to keep Dynamic Media - Scene7 mode running smoothly, Adobe recommends the following synchronization performance/scalability fine-tuning tips:
+**Synchronization Performance/Scalability Fine-tuning Tips**
+
+To keep Dynamic Media - Scene7 mode running smoothly, Adobe recommends the following synchronization performance/scalability fine-tuning tips:
 
 * Update the predefined Granite workflow (video assets) queue worker threads.
 * Update the predefined Granite transient workflow (images and non-video assets) queue worker threads.
 * Update the maximum upload connections to the Dynamic Media Classic server.
 
-#### Updating the Granite Transient Workflow queue {#updating-the-granite-transient-workflow-queue}
+#### Updating the Granite transient workflow queue {#updating-the-granite-transient-workflow-queue}
 
 The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asset]** workflow. In Dynamic Media, it is used for image ingestion and processing.
 
-**To update the Granite Transient Workflow queue**
+**To update the Granite transient workflow queue**
 
 1. Navigate to [https://&lt;server&gt;/system/console/configMgr](https://localhost:4502/system/console/configMgr) and search for **Queue: Granite Transient Workflow Queue**.
 
@@ -516,11 +520,11 @@ The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asse
 
 1. Tap **[!UICONTROL Save]**.
 
-#### Updating the Granite Workflow queue {#updating-the-granite-workflow-queue}
+#### Updating the Granite workflow queue {#updating-the-granite-workflow-queue}
 
 The Granite Workflow queue is used for non-transient workflows. In Dynamic Media, it used to to process video with the **[!UICONTROL Dynamic Media Encode Video]** workflow.
 
-**To update the Granite Workflow queue**
+**To update the Granite workflow queue**
 
 1. Navigate to `https://<server>/system/console/configMgr` and search for **Queue: Granite Workflow Queue**.
 
@@ -538,11 +542,11 @@ The Granite Workflow queue is used for non-transient workflows. In Dynamic Media
 
 1. Tap **[!UICONTROL Save]**.
 
-#### Updating the Scene7 upload connection {#updating-the-scene-upload-connection}
+#### Updating the Dynamic Media Classic upload connection {#updating-the-scene-upload-connection}
 
 The Scene7 Upload Connection setting synchronizes AEM assets to Dynamic Media Classic servers.
 
-**To update the Scene7 upload connection**
+**To update the Dynamic Media Classic upload connection**
 
 1. Navigate to `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. In the **[!UICONTROL Number of connections]** field and/or the **[!UICONTROL Active job timeout]** field, change the number as desired.
