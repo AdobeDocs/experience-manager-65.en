@@ -14,17 +14,21 @@ pagetitle: Communities Tools
 
 # Communities Tools {#communities-tools}
 
-On author, to access the Communities tools console:
+To access the Communities tools console, login your author instance:
 
-* From global navigation: **[!UICONTROL Tools > Communities]**
+* From global navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**.
 
-![chlimage_1-129](assets/chlimage_1-129.png)
+  ![chlimage_1-129](assets/chlimage_1-129.png)
 
-* [Site Templates](sites.md) - Console for site template creation and management
-* [Group Templates](tools-groups.md)- Console for group template creation and management
-* [Community Functions](functions.md)- Console for community function creation and management
-* [Storage Configuration](srp-config.md) - Console for configuration and selection of the [default SRP](working-with-srp.md)
+* [Site Templates](sites.md) - Console for site template creation and management.
+
+* [Group Templates](tools-groups.md) - Console for group template creation and management.
+
+* [Community Functions](functions.md) - Console for community function creation and management.
+
+* [Storage Configuration](srp-config.md) - Console for configuration and selection of the [default SRP](working-with-srp.md).
 
 * [Component Guide](components-guide.md) - Opens an interactive site that allows for experimentation with how the SCF components work and how they can be configured or customized.
+
 * [Badges](badges.md) - Console from where custom badges can be added for use in [scoring and badging rules](implementing-scoring.md)
 

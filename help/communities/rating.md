@@ -13,11 +13,11 @@ discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 
 # Using Ratings {#using-ratings}
 
-The `Rating`component is used standalone or in conjunction with other Communities features. This component allows signed-in community members to express their opinions by rating content.
+The `Rating` component is used standalone or in conjunction with other Communities features. This component allows signed-in community members to express their opinions by rating content.
 
 ## Adding a Rating to a Page {#adding-a-rating-to-a-page}
 
-To add a `Rating`component to a page in author mode, locate the component `Communities / Rating` and drag it into place on a page, such as a position relative to the feature for members to rate.
+To add a `Rating` component to a page in author mode, locate the component `Communities / Rating` and drag it into place on a page, such as a position relative to the feature for members to rate.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 

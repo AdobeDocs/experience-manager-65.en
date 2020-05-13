@@ -17,13 +17,13 @@ The translation feature for AEM Communities extends the concept of [translating 
 
 The translation of UGC enables site visitors and members to experience a global community by removing language barriers.
 
-As an example, suppose,
+As an example, suppose:
 
-* A member from France posts a recipe in French to the community forum of a multinational cooking website
-* Another member from Japan uses the translation feature to trigger the translation of the recipe from French into Japanese
-* After reading the recipe in Japanese, the member from Japan then posts a comment in Japanese
-* The member from France uses the translation feature to translate the Japanese comment into French
-* Global communication!
+* A member from France posts a recipe in French to the community forum of a multinational cooking website.
+* Another member from Japan uses the translation feature to trigger the translation of the recipe from French into Japanese.
+* After reading the recipe in Japanese, the member from Japan then posts a comment in Japanese.
+* The member from France uses the translation feature to translate the Japanese comment into French.
+* Global communication.
 
 ## Overview {#overview}
 
@@ -40,10 +40,11 @@ AEM Communities ships with a [trial license](../../help/sites-administering/tc-m
 When [creating a community site](sites-console.md), the default translation service is enabled when `Allow Machine Translation` is checked from the [TRANSLATION](sites-console.md#translation) sub-panel.
 
 >[!CAUTION]
->
->The default translation service is for demonstration only.
->
->For a production system, a licensed translation service is required. If not licensed, the default translation service should be [turned off](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
+ >
+ >The default translation service is for demonstration only.
+ >
+ >For a production system, a licensed translation service is required. If not licensed, the default translation service should be [turned off](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
+ >
 
 ## Global Translation of UGC {#global-translation-of-ugc}
 
@@ -56,12 +57,13 @@ If "one group conversation" is desired, it is possible to enable global translat
 For example, if a forum was established on the base site, language copies created, and global translation was enabled, then a topic posted to the forum made in one language copy would appear in all language copies. The same would be true for any replies, regardless of from which language copy the reply was entered. The result would be that the topic and its entire thread of replies would be visible regardless of from which language copy the topic is being viewed.
 
 >[!CAUTION]
->
->Any UGC which existed prior to global translation is no longer visible.
->
->While the UGC is still in the [common store](working-with-srp.md), it is located under the language-specific UGC location, while new content, added after global translation was configured, is being retrieved from the global shared store location.
->
->There is no migration tool for moving or merging language-specific content into the global shared store.
+ >
+ >Any UGC which existed prior to global translation is no longer visible.
+ >
+ >While the UGC is still in the [common store](working-with-srp.md), it is located under the language-specific UGC location, while new content, added after global translation was configured, is being retrieved from the global shared store location.
+ >
+ >There is no migration tool for moving or merging language-specific content into the global shared store.
+ >
 
 ### Translation Integration Configuration {#translation-integration-configuration}
 
@@ -75,11 +77,11 @@ To create a new Translation Integration, which integrates a Translation Service 
 * Select **[!UICONTROL Cloud Services]**
 * Scroll down to **[!UICONTROL Translation Integration]**
 
-![chlimage_1-65](assets/chlimage_1-65.png)
+  ![chlimage_1-65](assets/chlimage_1-65.png)
 
 * Select **[!UICONTROL Show Configurations]**
 
-![chlimage_1-66](assets/chlimage_1-66.png)
+  ![chlimage_1-66](assets/chlimage_1-66.png)
 
 * Select `[+]` icon next to **[!UICONTROL Available Configurations]** to create a new configuration
 
@@ -88,12 +90,15 @@ To create a new Translation Integration, which integrates a Translation Service 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
 * **[!UICONTROL Parent Configuration]**
+  
   (Required) Typically leave as default. Default is `/etc/cloudservices/translation`.
 
 * **[!UICONTROL Title]**
+  
   (Required) Enter a display title of your choosing. No default value.
 
 * **[!UICONTROL Name]**
+  
   (Optional) Enter a name for the configuration. Default is a node name based on the Title.
 
 * Select **[!UICONTROL Create]**
@@ -104,7 +109,8 @@ To create a new Translation Integration, which integrates a Translation Service 
 
 For detailed instructions visit [Creating a Translation Integration Configuration](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)
 
-* **[!UICONTROL Sites]** tab: can leave as defaults
+* **[!UICONTROL Sites]** tab: can leave as defaults.
+
 * **[!UICONTROL Communities]** tab:
   * **[!UICONTROL Translation Provider]**
     Select the translation provider from the drop down list. Default is `microsoft`, the trial service.
@@ -115,7 +121,7 @@ For detailed instructions visit [Creating a Translation Integration Configuratio
   * **[!UICONTROL Choose A Locale...]**
     (Optional) By selecting a locale for storing UGC, posts from all language copies will appear in one global conversation. By convention, choose the locale for the [base language](sites-console.md#translation) for the website. Choosing `No Common Store` will disable global translation. By default, global translation is disabled.
 
-* **[!UICONTROL Assets]** tab: can leave as defaults
+* **[!UICONTROL Assets]** tab: can leave as defaults.
 * Select **[!UICONTROL OK]**
 
 #### Activation {#activation}
@@ -125,14 +131,15 @@ The new translation integration cloud service will need to be activated to the p
 ## Managing Translation Settings {#managing-translation-settings}
 
 >[!NOTE]
->
->**Preferred Language**
->
->For the purpose of detecting whether the post is in a language different from the preferred language, the preferred language of the site visitor must be established.
->
->The preferred language is the language preference set in a user's profile, when the site visitor is signed in and has specified a language preference.
->
->When the site visitor is anonymous or has not specified a language preference in their profile, the preferred language is the base language of the page template.
+ >
+ >**Preferred Language**
+ >
+ >For the purpose of detecting whether the post is in a language different from the preferred language, the preferred language of the site visitor must be established.
+ >
+ >The preferred language is the language preference set in a user's profile, when the site visitor is signed in and has specified a language preference.
+ >
+ >When the site visitor is anonymous or has not specified a language preference in their profile, the preferred language is the base language of the page template.
+ >
 
 ### User Preference {#user-preference}
 
