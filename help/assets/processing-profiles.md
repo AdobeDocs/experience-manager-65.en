@@ -85,7 +85,7 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 
 ### Adjusting the batch size of the reprocess workflow {#adjusting-load}
 
-(Optional) The default batch size in the reprocessing workflow is 50 assets per job. This optimal batch size is governed by the average asset size and the mime types of assets on which the reprocess is run. A higher value means you will have many files in a single reprocessing job. Accordingly, the processing banner stays on AEM assets for a longer time. However, if the average file size is small&ndash;1 MB or less&ndash;Adobe recommends that you increase the value to several hundred, but never more than a 1000. If the average file size is large&ndash;hundreds of megabytes&ndash;Adobe recommends that you lower the batch size up to 10.
+(Optional) The default batch size in the reprocessing workflow is 50 assets per job. This optimal batch size is governed by the average asset size and the MIME types of assets on which the reprocess is run. A higher value means you will have many files in a single reprocessing job. Accordingly, the processing banner stays on AEM assets for a longer time. However, if the average file size is small&ndash;1 MB or less&ndash;Adobe recommends that you increase the value to several hundred, but never more than a 1000. If the average file size is large&ndash;hundreds of megabytes&ndash;Adobe recommends that you lower the batch size up to 10.
 
 **To optionally adjust the batch size of the reprocess workflow**
 
