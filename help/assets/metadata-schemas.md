@@ -15,6 +15,8 @@ To view and edit the properties page for an asset, follow these steps:
 1. Click or tap the **[!UICONTROL View Properties]** icon from Quick Actions on the asset tile in Card view.
 
    ![Quick actions on asset tile](assets/chlimage_1-170.png)
+   
+   Alternatively, select an asset and then click or tap the [!UICONTROL Properties] icon from the toolbar.
 
 1. You can edit various metadata properties under the available tabs. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
 
