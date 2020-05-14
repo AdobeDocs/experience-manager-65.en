@@ -184,7 +184,7 @@ For example:
 
 #### Component Mapping {#component-mapping}
 
-The underlying [Component Mapping](/help/sites-developing/spa-blueprint.md#componentmapping) library and its `MapTo` function can be encapsulated and extended to provide the functionalities relative to the edit configuration provided alongside the current component class.
+The underlying [`Component Mapping`](/help/sites-developing/spa-blueprint.md#componentmapping) library and its `MapTo` function can be encapsulated and extended to provide the functionalities relative to the edit configuration provided alongside the current component class.
 
 ```
 const EditConfig = {
@@ -206,7 +206,7 @@ class MyComponent extends Component {
 MapTo('component/resource/path')(MyComponent, EditConfig);
 ```
 
-In the above implementation, the project component is extended with the emptiness functionality before the being actually registered in the [Component Mapping](/help/sites-developing/spa-blueprint.md#componentmapping) store. This is done by encapsulating and extending the ` [ComponentMapping](/content.md#main-pars_header_906602219)` library to introduce the support of the `EditConfig` configuration object:
+In the above implementation, the project component is extended with the emptiness functionality before the being actually registered in the [Component Mapping](/help/sites-developing/spa-blueprint.md#componentmapping) store. This is done by encapsulating and extending the [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) library to introduce the support of the `EditConfig` configuration object:
 
 ```
 /**
@@ -229,7 +229,7 @@ In the above implementation, the project component is extended with the emptines
 ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 ```
 
-## Contract wtih the Page Editor {#contract-wtih-the-page-editor}
+## Contract with the Page Editor {#contract-with-the-page-editor}
 
 The project components must generate at a minimum the following data attributes to allow the editor to interact with them.
 

@@ -12,7 +12,7 @@ discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 
 # Style System{#style-system}
 
-The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
+The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making the component more flexible.
 
 This eliminates the need to develop a custom component for each style or to customize the component dialog to enable such style functionality. It leads to more reusable components that can be quickly and easily adapted to the needs of content authors without any AEM back-end development.
 
@@ -22,7 +22,7 @@ Template authors not only need the ability to configure how components function 
 
 Likewise, content authors not only need the ability to structure and arrange their content, but also to select how it is presented visually.
 
-The style system provides a unified solution to both the template author's and content author's requirements:
+The Style System provides a unified solution to both the template author's and content author's requirements:
 
 * Template authors can define style classes in the content policy of components.
 * Content authors can then select these classes from a drop-down when editing the component on a page in order to apply the corresponding styles.
@@ -31,17 +31,17 @@ The style class is then inserted on the decoration wrapper element of the compon
 
 ## Overview {#overview}
 
-Using the style system generally takes the following form.
+Using the Style System generally takes the following form.
 
 1. The web designer creates different visual variations of a component.
 
-1. The HTML developer is provided with the HTML output of the components and the desired visual variations to implement.
+1. The HTML developer is provided with the HTML output of the components and the desired visual variations to implement.  
 
-1. The HTML developer defines the CSS classes that correspond to each visual variation and are to be inserted on the element wrapping the components.
+1. The HTML developer defines the CSS classes that correspond to each visual variation and are to be inserted on the element wrapping the components.  
 
 1. The HTML developer implements the corresponding CSS code (and optionally JS code) for each of the visual variations so that they look as defined.
 
-1. The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.
+1. The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.  
 
 1. The AEM developer or template author configures the page templates and edits the policy of each styled component, adding the defined CSS classes, giving user-friendly names to each style, and indicating which styles can be combined.
 
@@ -51,58 +51,50 @@ Note that only the last three steps are actually carried out in AEM. This means 
 
 Actually implementing the styles only requires deployment on AEM and selection within the components of the desired templates.
 
-The following diagram illustrates the architecture of the style system.
+The following diagram illustrates the architecture of the Style System.
 
 ![aem-style-system](assets/aem-style-system.png)
 
 ## Use {#use}
 
-To demonstrate the feature, styles need to be created for a component. Using [We.Retail](/help/sites-developing/we-retail.md)'s implementation of the core component's [list component](https://helpx.adobe.com/experience-manager/core-components/using/list.html) as a basis, you can install the attached package containing styles in order to explore the feature's functionality.
+To demonstrate the feature, we will use [WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)'s implementation of the core component's [title component](https://www.adobe.com/go/aem_cmp_title_v2) as an example.
 
-Download the [style system demo package](assets/package_-_style_systemdemo.zip)
+The following sections [As a Content Author](#as-a-content-author) and [As a Template Author](#as-a-template-author) describe how to test the functionality of the Style System using the Style System of WKND.
 
->[!NOTE]
->
->The demo package is intended to show how the style system can be used by authors, rather than as a reference of how to best implement it.
->
->This package will be needed only until We.Retail provides a built-in example and best practice implementation.
+If you wish to use the Style System for your own components do the following:
 
-The following sections [As a Content Author](/help/sites-authoring/style-system.md#as-a-content-author) and [As a Template Author](/help/sites-authoring/style-system.md#as-a-template-author) describe how to test the functionality of the style system using the style system demo package on top of We.Retail.
-
-If you wish to use the style system for your own components do the following:
-
-1. Install the CSS as client libraries as discussed in the section [Overview](/help/sites-authoring/style-system.md#overview).
-1. Configure the CSS classes that you wish to make available to your content authors as described in the section [As a Template Author](/help/sites-authoring/style-system.md#as-a-template-author).
-1. Content authors can then use the styles as described in the section [As a Content Author](/help/sites-authoring/style-system.md#as-a-content-author).
+1. Install the CSS as client libraries as discussed in the section [Overview](#overview).
+1. Configure the CSS classes that you wish to make available to your content authors as described in the section [As a Template Author](#as-a-template-author).
+1. Content authors can then use the styles as described in the section [As a Content Author](#as-a-content-author).
 
 ### As a Content Author {#as-a-content-author}
 
-1. After installing the style system demo package, navigate to We.Retail's English language master home page at `http://localhost:4502/sites.html/content/we-retail/language-masters/en` and edit the page.
-1. Select the **List** component at the bottom or the top of the parsys. Do not confuse it with the **Articles List** component.
+1. After installing the WKND project, navigate to WKND's English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en` and edit the page.
+1. Select a **Title** component further down the page
 
-   ![screen_shot_2017-11-15at162032](assets/screen_shot_2017-11-15at162032.png)
+   ![Style System for the author](assets/style-system-author.png)
 
 1. Tap or click the **Styles** button on the toolbar of the **List** component to open the style menu and change the appearance of the component.
 
-   ![screen_shot_2017-11-15at162358](assets/screen_shot_2017-11-15at162358.png)
+   ![Selecting styles](assets/style-system-author2.png)
 
    >[!NOTE]
    >
-   >In this example, the **Layout** styles (**Block** and **Grid**) are mutually exclusive, while the **Display** options (**Image** or **Date**) can be combined. This can be [configured in the template as the template author](/help/sites-authoring/style-system.md#as-a-template-author).
+   >In this example, the **Colors** styles (**Black**, **White**, and **Gray**) are mutually exclusive, while the **Style** options (**Underline**, **Align Right**, and **Mini Spacing**) can be combined. This can be [configured in the template as the template author](#as-a-template-author).
 
 ### As a Template Author {#as-a-template-author}
 
-1. While editing We.Retail's English language master home page at `http://localhost:4502/sites.html/content/we-retail/language-masters/en`, edit the template of the page via **Page Information -&gt; Edit Template**.
+1. While editing WKND's English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information -&gt; Edit Template**.
 
-   ![screen_shot_2017-11-15at162922](assets/screen_shot_2017-11-15at162922.png)
+   ![Edit Template](assets/style-system-edit-template.png)
 
-1. Edit the policy of the **List** component by tapping or clicking the **Policy** button of the component. Do not confuse this with the **Article List** component.
+1. Edit the policy of the **Title** component by tapping or clicking the **Policy** button of the component.
 
-   ![screen_shot_2017-11-15at163133](assets/screen_shot_2017-11-15at163133.png)
+   ![Edit policy](assets/style-system-edit-policy.png)
 
 1. On the Styles tab of the properties, you can see how the styles have been configured.
 
-   ![screen_shot_2017-12-15at101404](assets/screen_shot_2017-12-15at101404.png)
+   ![Edit properties](assets/style-system-properties.png)
 
     * **Group Name:** Styles can be grouped together within the style menu that the content author will see when configuring the style of the component.
     * **Styles can be combined:** Allows for multiple styles within that group to be selected at one time.
@@ -117,18 +109,31 @@ If you wish to use the style system for your own components do the following:
 
 ## Setup {#setup}
 
->[!NOTE]
->
->Version 2 of the core components are fully enabled to take advantage of the style system and requires no additional configuration.
->
->Follow the next steps to enable the style system for your own custom components or to extend the version 1 core components to utilize the feature.
+Core Components version 2 and later are fully enabled to take advantage of the Style System and require no additional configuration.
 
-In order for a component to work with AEM's style system and show the style tab in its design dialog, the component developer must include that tab from the product with the following settings on the component:
+The following steps are only necessary to enable the Style System for your own custom components or to [enable the optional Styles tab in the Edit dialog.](#enable-styles-tab-edit)
+
+### Enable Style Tab in Design Dialog {#enable-styles-tab-design}
+
+In order for a component to work with AEM's Style System and show the style tab in its design dialog, the component developer must include the style tab with the following settings on the component:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 With the component configured, the styles configured by the page authors will be automatically inserted by AEM on the decoration element that AEM automatically wraps around every editable component. The component itself need not do anything else to make this happen.
+
+### Enable Styles Tab in Edit Dialog {#enable-styles-tab-edit}
+
+As of AEM version 6.5.3.0 an optional Styles tab in the Edit Dialog is now available. Unlike the Design Dialog tab, the tab in the Edit Dialog isn't essential for the Style System to function, but is an optional alternative interface for a content author to set styles.
+
+The edit dialog tab can be included in a similar way to the design dialog tab:
+
+* `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
+* `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>
+>The Styles tab on the Edit Dialog is not enabled by default.
 
 ### Styles with Element Names {#styles-with-element-names}
 
@@ -136,7 +141,7 @@ A developer can also configure a list of allowed element names for styles on the
 
 This property is set on the `cq:Component` node. For example:
 
-* `/apps/weretail/components/content/list@cq:styleElements=[div,section,span]`
+* `/apps/<yoursite>/components/content/list@cq:styleElements=[div,section,span]`
 
 >[!CAUTION]
 >
