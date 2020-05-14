@@ -21,6 +21,10 @@ When uploading images, you can automatically crop the image upon upload by apply
 
 You have two image cropping options to choose from and an option for automating the creation of color and image swatches.
 
+>[!IMPORTANT]
+>
+>Be aware the each Smart Crop generation that you create requires additional processing. For example, adding more than five Smart Crop aspect ratios can result in a slow asset ingestion rate. It may also cause an increased load on systems. Because you can apply Smart Crop at the folder level, Adobe recommends that you use it on folders *only* where it is needed.
+
 <table>
  <tbody>
   <tr>
