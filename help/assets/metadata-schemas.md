@@ -36,9 +36,9 @@ To view a list of forms/templates, in [!DNL Experience Manager] interface naviga
 |---|---|---|
 | [!UICONTROL default] | | The base metadata schema form for assets. |
 | | The following child forms inherit the properties of the [!UICONTROL default] form: | |
-| |<ul><li> [!UICONTROL image]</li></ul> | Schema form for assets with the MIME type "image", for example,  image/jpeg,  image/png, and so on. <br> The [!UICONTROL image] form has the following child form templates: <ul><li> [!UICONTROL jpeg]: Schema form for assets with sub type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schema form for the assets with sub type [!UICONTROL tiff].</li></ul> |
-| | <ul><li> [!UICONTROL application]</li></ul> | Schema form for assets with MIME type "application", for example  application/ pdf,  application/ zip, and so on. <br>[!UICONTROL pdf]: Schema form for assets with sub type pdf. |
-| | <ul><li>[!UICONTROL video]</li></ul> | Schema form for assets with MIME type "video", such as video/avi, video/mp4 and so on. |
+| |<ul><li> [!UICONTROL image]</li></ul> | Schema form for assets with the MIME type "image", for example, `image/jpeg`, `image/png`, and so on. <br> The [!UICONTROL image] form has the following child form templates: <ul><li> [!UICONTROL jpeg]: Schema form for assets with sub type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schema form for the assets with sub type [!UICONTROL tiff].</li></ul> |
+| | <ul><li> [!UICONTROL application]</li></ul> | Schema form for assets with MIME type "application", for example  `application/pdf`,  `application/zip`, and so on. <br>[!UICONTROL pdf]: Schema form for assets with sub type pdf. |
+| | <ul><li>[!UICONTROL video]</li></ul> | Schema form for assets with MIME type "video", such as `video/avi`, `video/mp4` and so on. |
 | [!UICONTROL collection] | | Schema form for collections. |
 | [!UICONTROL contentfragment] | | Schema form for content fragments. |
 | [!UICONTROL forms] | | This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md). | 
