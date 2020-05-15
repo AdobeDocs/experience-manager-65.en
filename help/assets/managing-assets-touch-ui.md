@@ -502,7 +502,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    **Delete a rendition**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap/click the **[!UICONTROL Delete Rendition]** icon from the toolbar.
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap/click the **[!UICONTROL Delete Rendition]** icon from the toolbar. Renditions cannot be deleted in bulk after asset processing is complete. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can customize Experience Manager to delete either specific renditions or delete the assets and re-upload the deleted assets.
 
    ![Option to delete a rendition](assets/delete_renditionicon.png)
 
