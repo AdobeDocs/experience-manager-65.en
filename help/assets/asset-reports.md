@@ -32,8 +32,7 @@ AEM Assets generates the following standard reports for you:
 
 AEM administrators can easily generate and customize these reports for your implementation. An administrator can follow these steps to generate a report:
 
-1. In Experience Manager interface, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Reports]**.
-
+1. In Experience Manager interface, click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**. 
 ![](assets/AssetsReportNavigation.png)
 
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
