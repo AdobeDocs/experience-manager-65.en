@@ -122,6 +122,10 @@ The following options are available in the toolbar, in the left rail, and in the
 
 * **[!UICONTROL Timeline]** option from the left rail after clicking ![left rail icon](assets/do-not-localize/aem_leftrail_contentonly.png) displays the activity stream for the file.
 
+## Best practices and limitation {#best-practice-limitation-tips}
+
+* Subasset generation can be very resource intensive on any Experience Manager deployment. If you are generating subassets when complex assets are uploaded, then add the step in the DAM Update Asset workflow. If you are generating subassets on-demand then create a separate workflow to generate subassets. A dedicated workflow allows you to skip the other steps in DAM Update Asset workflow and save computational resources.
+
 >[!MORELIKETHIS]
 >
 >* [Use Adobe Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
