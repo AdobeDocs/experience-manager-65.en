@@ -6,7 +6,12 @@ contentOwner: AG
 
 # Private folder sharing {#private-folder-sharing}
 
-You can create a private folder in the Adobe Experience Manager (AEM) Assets user interface that is available exclusively to you. You can share this private folder to other users and the assign various privileges to them. Based on the privilege level you assign, users can perform various tasks on the folder, for example view assets within the folder or edit the assets.
+You can create a private folder in the Adobe Experience Manager (AEM) Assets user interface that is available exclusively to you. You can share this private folder to other users and assign various privileges to them. Based on the privilege level you assign, users can perform various tasks on the folder, for example view assets within the folder or edit the assets.
+
+>[!NOTE]
+>
+> Private folder always has atleast one member with Owner role.
+>
 
 1. In the Assets console, tap/click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
 
@@ -35,6 +40,11 @@ You can create a private folder in the Adobe Experience Manager (AEM) Assets use
    >[!NOTE]
    >
    >You can assign various roles, such as Editor, Owner, or Viewer to the user with whom you share the folder. If you assign an Owner role to the user, the user has Editors privileges on the folder. In addition, the user can share the folder with others. If you assign an Editor role, the user can edit the assets in your private folder. If you assign a Viewer role, the user can only view the assets in your private folder.
+   
+   >[!NOTE]
+   >
+   > Private folder always has atleast one member with Owner role. Therefore, administrator cannot remove all the owner members from a private folder. However, to remove existing owners from the private folder administrator must add other user as owner.
+   >
 
 1. Click **[!UICONTROL Save]**. Depending on the role you assign, the user is assigned a set of privileges on your private folder when the user logs in to AEM Assets.
 1. Click **[!UICONTROL Ok]** to close the confirmation message.
