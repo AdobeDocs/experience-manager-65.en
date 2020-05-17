@@ -36,7 +36,7 @@ In most cases, copying the existing sample `init.jsp` (`/apps/geometrixx/compone
 
 Some of the AEM Assets components require JS functions defined in `component.js`. Copy this file to your component directory and link it.
 
-```xml
+```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
@@ -46,7 +46,7 @@ The sample loads this javascript source in `head.jsp`(`/apps/geometrixx/componen
 
 Some of the AEM Assets components use the AEM widgets library. To be rendered properly in the content context, an additional style sheet has to be loaded. The tag action component requires one more.
 
-```xml
+```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
@@ -69,7 +69,7 @@ The sample handles in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.
 * If an asset is loaded, they disable WCM mode as parsys can only be edited on a plain form page.
 * If an asset is loaded, they use its title instead of the one on the form page.
 
-```java
+```javascript
  List<Resource> resources = FormsHelper.getFormEditResources(slingRequest);
     if (resources != null) {
         if (resources.size() == 1) {
@@ -109,7 +109,7 @@ The sample handles in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.
 
 In the HTML part, use the preceding title set (either asset or page title):
 
-```xml
+```html
 <title><%= title %></title>
 ```
 
@@ -132,7 +132,7 @@ This example describes how to build a component that shows and displays the meta
 
 1. Add `samplemeta.jsp` with the following snippet:
 
-   ```xml
+   ```javascript
    <%--
 
      Sample metadata field component
