@@ -58,6 +58,7 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
    * `-h`: Help
 
 1. To delete intermediate renditions, select **[!UICONTROL Delete Generated Rendition]**.
+
 1. To let PDF Rasterizer generate web renditions, select **[!UICONTROL Generate Web Rendition]**.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
@@ -67,8 +68,11 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
    ![web_enabled_image1](assets/web_enabled_image1.png)
 
 1. Save the workflow.
-1. To enable PDF Rasterizer to process PDF pages with PDF libraries, open the **[!UICONTROL DAM Process Subasset]** model from the Workflow console.
+
+1. To enable PDF Rasterizer to process PDF pages with PDF libraries, open the **[!UICONTROL DAM Process Subasset]** model from the [!UICONTROL Workflow] console.
+
 1. From the side panel, drag the PDF Rasterizer Handler step under the **[!UICONTROL Create Web-Enabled Image Rendition]** step.
+
 1. Configure the following arguments for the **[!UICONTROL PDF Rasterizer Handler]** step:
 
     * MIME types: `application/pdf` or `application/postscript`
