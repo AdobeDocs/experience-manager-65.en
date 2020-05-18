@@ -39,8 +39,8 @@ Folders are like directories in traditional file systems. They are containers fo
 
 **Properties**:
 
-* `name`  -- Name of the folder. This is the same as the last segment in the URL path without the extension
-* `title` -- Optional title of the folder which can be displayed instead of its name
+* `name` is the name of the folder. This is the same as the last segment in the URL path without the extension.
+* `title` is an optional title of the folder which can be displayed instead of its name.
 
 >[!NOTE]
 >
@@ -48,39 +48,39 @@ Folders are like directories in traditional file systems. They are containers fo
 
 **Links** Folders expose three links:
 
-* `self`: Link to itself
-* `parent`: Link to the parent folder
-* `thumbnail`: (Optional) link to a folder thumbnail image
+* `self`: Link to itself.
+* `parent`: Link to the parent folder.
+* `thumbnail`: (Optional) link to a folder thumbnail image.
 
 ### Assets {#assets}
 
 In Experience Manager an asset contains the following elements:
 
-* The properties and metadata of the asset
-* Multiple renditions such as the original rendition (which is the originally uploaded asset), a thumbnail and various other renditions. Additional renditions may be images of different sizes, different video encodings, or extracted pages from PDF or InDesign.
-* Optional comments
+* The properties and metadata of the asset.
+* Multiple renditions such as the original rendition (which is the originally uploaded asset), a thumbnail and various other renditions. Additional renditions may be images of different sizes, different video encodings, or extracted pages from PDF or Adobe InDesign files.
+* Optional comments.
 
 For information about elements in Content Fragments see [Content Fragments Support in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
 
-In Experience Manager a folder has the following components:
+In [!DNL Experience Manager] a folder has the following components:
 
 * Entities: The children of assets are its renditions.
-* Properties
-* Links
+* Properties.
+* Links.
 
 The Assets HTTP API includes the following features:
 
-* Retrieve a folder listing
-* Create a folder
-* Create an asset
-* Update asset binary
-* Update asset metadata
-* Create an asset rendition
-* Update an asset rendition
-* Create an asset comment
-* Copy a folder or asset
-* Move a folder or asset
-* Delete a folder, asset, or rendition
+* Retrieve a folder listing.
+* Create a folder.
+* Create an asset.
+* Update asset binary.
+* Update asset metadata.
+* Create an asset rendition.
+* Update an asset rendition.
+* Create an asset comment.
+* Copy a folder or asset.
+* Move a folder or asset.
+* Delete a folder, asset, or rendition.
 
 >[!NOTE]
 >
@@ -88,9 +88,9 @@ The Assets HTTP API includes the following features:
 
 **Prerequisites**
 
-1. Go to `https://[aem_server]:[port]/system/console/configMgr`.
-1. Navigate to **Adobe Granite CSRF Filter**.
-1. Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
+* Access `https://[aem_server]:[port]/system/console/configMgr`.
+* Navigate to **[!UICONTROL Adobe Granite CSRF Filter]**.
+* Make sure the property **[!UICONTROL Filter Methods]** includes: `POST`, `PUT`, `DELETE`.
 
 ## Retrieve a folder listing {#retrieve-a-folder-listing}
 
@@ -112,7 +112,7 @@ Creates a new `sling`: `OrderedFolder` at the given path. If a `*` is provided i
 
 An API call fails with a `500` response code if the parent node of the provided path does not exist. A call returns a response code `409` if the folder already exists.
 
-**Parameters**: `name` - Folder name
+**Parameters**: `name` is the folder name.
 
 **Request**
 
@@ -174,14 +174,14 @@ Updates the Asset metadata properties. If you update any property in the `dc:` n
 
 Create a new asset rendition for an asset. If request parameter name is not provided, the file name is used as rendition name.
 
-**Parameters** The parameters are `name` for name of the rendition and `file` as a file reference.
+**Parameters**: The parameters are `name` for name of the rendition and `file` as a file reference.
 
 **Request**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
 
-**Response codes**
+**Response codes**: The response codes are:
 
 * 201 - CREATED - if Rendition has been created successfully.
 * 404 - NOT FOUND - if Asset could not be found or accessed at the provided URI.
@@ -194,7 +194,7 @@ Updates respectively replaces an asset rendition with the new binary data.
 
 **Request**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**Response codes** The response codes are:
+**Response codes**: The response codes are:
 
 * 200 - OK - if Rendition has been updated successfully.
 * 404 - NOT FOUND - if Asset could not be found or accessed at the provided URI.

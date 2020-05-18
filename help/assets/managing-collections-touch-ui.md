@@ -142,25 +142,25 @@ Smart collections are built by saving a search so you can alter their content by
 
 Collection metadata comprises data about the collection, including any tags that are added.
 
-1. From the Collections console, select a collection and Click the **[!UICONTROL Properties]** icon from the toolbar.
+1. From the [!UICONTROL Collections] console, select a collection and click **[!UICONTROL Properties]** from the toolbar.
 1. In the **[!UICONTROL Collection Metadata]** page, view the collection metadata from the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs.
-1. Modify the metadata, as necessary, and then Click **[!UICONTROL Save & Close]** from the toolbar to save the changes.
+1. Modify the metadata, as necessary. To save the changes, click **[!UICONTROL Save & Close]** from the toolbar.
 
 ## Edit metadata of multiple collections in bulk {#editing-collection-metadata-in-bulk}
 
 You can edit the metadata of multiple collections simultaneously. This functionality helps you quickly replicate common metadata in multiple collections.
 
-1. In the Collections console, select two or more collections for which you want to edit metadata.
+1. In the Collections console, select two or more collections.
 1. From the toolbar, click the **[!UICONTROL Properties]** icon.
 1. In the **[!UICONTROL Collection Metadata]** page, edit the metadata under the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs, as necessary.
 1. To view the metadata properties for a specific collection, deselect the remaining collections in the collections list. The metadata editor fields are populated with the metadata for the particular collection.
 
    >[!NOTE]
    >
-   >* In the collection properties page, you can remove collections from the list of collections by deselecting them. The collections list has all the collections selected by default. The metadata for collections that you remove is not updated.
+   >* In the [!UICONTROL Properties] page, you can remove collections from the list of collections by deselecting them. The collections list has all the collections selected by default. Experience Manager does not update the metadata of the collections that you remove.
    >* At the top of the list, select the check box near **[!UICONTROL Title]** to toggle between selecting the collections and clearing the list.
 
-1. Click **[!UICONTROL Save & Close]** from the toolbar, and then close the confirmation dialog to complete the process.
+1. Click **[!UICONTROL Save & Close]** from the toolbar, and then close the confirmation dialog.
 1. To append the new metadata with the existing metadata, select **[!UICONTROL Append mode]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. Click **[!UICONTROL Submit]**.
 
    >[!NOTE]
