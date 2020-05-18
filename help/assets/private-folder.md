@@ -10,7 +10,7 @@ You can create a private folder in the Adobe Experience Manager (AEM) Assets use
 
 >[!NOTE]
 >
-> Private folder always has atleast one member with Owner role.
+> Private folder has atleast one member with Owner role.
 >
 
 1. In the Assets console, tap/click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
@@ -43,7 +43,7 @@ You can create a private folder in the Adobe Experience Manager (AEM) Assets use
    
    >[!NOTE]
    >
-   > Private folder always has atleast one member with Owner role. Therefore, administrator cannot remove all the owner members from a private folder. However, to remove existing owners from the private folder administrator must add other user as owner.
+   > Private folder has atleast one member with Owner role. Therefore, administrator cannot remove all the owner members from a private folder. However, to remove existing owners (and administrator itself) from the private folder the administrator must add another user as owner.
    >
 
 1. Click **[!UICONTROL Save]**. Depending on the role you assign, the user is assigned a set of privileges on your private folder when the user logs in to AEM Assets.
