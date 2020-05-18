@@ -8,11 +8,11 @@ contentOwner: AG
 
 Metadata is additional information about the asset that can be searched. It is automatically extracted when you upload an image. You can edit the existing metadata or add new metadata properties to existing fields (for example, when a metadata field is blank).
 
-Because organizations need controlled and reliable metadata vocabularies, [!DNL Experience Manager Assets] does not allow for ad-hoc adding of new metadata properties. Although authors cannot add new metadata fields for assets, developers can. See [create new metadata property for assets](meta-edit.md#editing-metadata-schema).
+Because organizations need controlled and reliable metadata vocabularies, [!DNL Experience Manager Assets] does not allow for on demand adding of new metadata properties. Although authors cannot add new metadata fields for assets, developers can. See [create metadata property for assets](meta-edit.md#editing-metadata-schema).
 
 ## Edit metadata for an asset {#editing-metadata-for-an-asset}
 
-To edit metadata:
+To edit metadata, follow these steps:
 
 1. Do one of the following:
 
@@ -20,19 +20,19 @@ To edit metadata:
     * From the asset thumbnail, select the **[!UICONTROL View Properties]** quick action.
     * From the asset page, click **[!UICONTROL View Properties]** ![chlimage_1-168](assets/chlimage_1-168.png) from the toolbar.
 
-   The asset page displays all of the asset's metadata. The metadata is extracted when the asset is uploaded (ingested) into [!DNL Experience Manager].
+   The asset page displays all the asset's metadata. The metadata is extracted when the asset is uploaded (ingested) into [!DNL Experience Manager].
 
    ![select asset Properties to view metadata](assets/asset-metadata.png)
 
    *Figure: Edit or add metadata on asset [!UICONTROL Properties] page.*
 
-1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the Assets web interface.
+1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the [!DNL Assets] web interface.
 
    >[!NOTE]
    >
    >If a text field is empty, there is no existing metadata set. You can enter a value into the field and save it to add that metadata property.
 
-Any changes to the metadata of an asset are written back to the original binary as part of its XMP data. This is done via [!DNL Experience Manager] metadata write-back workflow. Changes made to the existing properties (such as `dc:title`) are overwritten and newly created properties (including custom properties like `cq:tags`) are added together with the schema.
+Any changes to the metadata of an asset are written back to the original binary as part of its XMP data. The metadata write-back workflow adds the metadata to the original binary. Changes made to the existing properties (such as `dc:title`) are overwritten and new properties (including custom properties like `cq:tags`) are added with the schema.
 
 XMP write-back is supported and enabled for the platforms and file formats described in [technical requirements.](/help/sites-deploying/technical-requirements.md)
 

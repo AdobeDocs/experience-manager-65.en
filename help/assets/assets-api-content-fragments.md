@@ -283,7 +283,7 @@ There are a few limitations:
 
 The following status codes can be seen in the relevant circumstances:
 
-1. 202 (OK)
+* **202 (OK)**
 
    Returned when:
 
@@ -291,19 +291,19 @@ The following status codes can be seen in the relevant circumstances:
 
     * successfully updating a content fragment via `PUT`
 
-1. 201 (Created)
+* **201 (Created)**
 
    Returned when:
 
     * successfully creating a content fragment via `POST`
 
-1. 404 (Not found)
+* **404 (Not found)**
 
    Returned when:
 
     * the requested content fragment does not exist
 
-1. 500 (Internal server error)
+* **500 (Internal server error)**
 
    >[!NOTE]
    >
