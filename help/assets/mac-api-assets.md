@@ -62,7 +62,7 @@ In Experience Manager an asset contains the following elements:
 
 For information about elements in Content Fragments see [Content Fragments Support in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
 
-In Experience Manager a folder has the following components:
+In [!DNL Experience Manager] a folder has the following components:
 
 * Entities: The children of assets are its renditions.
 * Properties.
@@ -88,9 +88,9 @@ The Assets HTTP API includes the following features:
 
 **Prerequisites**
 
-1. Go to `https://[aem_server]:[port]/system/console/configMgr`.
-1. Navigate to **Adobe Granite CSRF Filter**.
-1. Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
+* Access `https://[aem_server]:[port]/system/console/configMgr`.
+* Navigate to **[!UICONTROL Adobe Granite CSRF Filter]**.
+* Make sure the property **[!UICONTROL Filter Methods]** includes: `POST`, `PUT`, `DELETE`.
 
 ## Retrieve a folder listing {#retrieve-a-folder-listing}
 
@@ -174,14 +174,14 @@ Updates the Asset metadata properties. If you update any property in the `dc:` n
 
 Create a new asset rendition for an asset. If request parameter name is not provided, the file name is used as rendition name.
 
-**Parameters** The parameters are `name` for name of the rendition and `file` as a file reference.
+**Parameters**: The parameters are `name` for name of the rendition and `file` as a file reference.
 
 **Request**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
 
-**Response codes**
+**Response codes**: The response codes are:
 
 * 201 - CREATED - if Rendition has been created successfully.
 * 404 - NOT FOUND - if Asset could not be found or accessed at the provided URI.
@@ -194,7 +194,7 @@ Updates respectively replaces an asset rendition with the new binary data.
 
 **Request**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**Response codes** The response codes are:
+**Response codes**: The response codes are:
 
 * 200 - OK - if Rendition has been updated successfully.
 * 404 - NOT FOUND - if Asset could not be found or accessed at the provided URI.
