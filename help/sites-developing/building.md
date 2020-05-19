@@ -183,7 +183,7 @@ For tagging, localization depends on the context as tag `titles`can be displayed
 
 The following procedure describes how to add a new language (Finnish) to the **Tag Edit** dialog:
 
-1. In **CRXDE**, edit the multi-value property `languages` of the node `/etc/tags`.
+1. In **CRXDE**, edit the multi-value property `languages` of the node `/content/cq:tags`.
 
 1. Add `fi_fi` - which represents the Finnish locale - and save the changes.
 
