@@ -30,7 +30,7 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. To relate another asset with the asset you selected, click/tap the **[!UICONTROL Relate]** icon from the toolbar.
+1. To relate another asset with the asset you selected, click the **[!UICONTROL Relate]** icon from the toolbar.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -46,20 +46,20 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Click/tap the **[!UICONTROL Confirm]** icon.
-1. Click/tap **[!UICONTROL OK]** to close the dialog. Depending on your choice of relationship in step 3, the related asset is listed under under an appropriate category in the **[!UICONTROL Related]** section. For example, if the asset you related is the source file for the current asset, it is listed under **[!UICONTROL Source]**.
+1. Click the **[!UICONTROL Confirm]** icon.
+1. Click **[!UICONTROL OK]** to close the dialog. Depending on your choice of relationship in step 3, the related asset is listed under under an appropriate category in the **[!UICONTROL Related]** section. For example, if the asset you related is the source file for the current asset, it is listed under **[!UICONTROL Source]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. To un-relate an asset, click/tap **[!UICONTROL Unrelate]** from the toolbar.
+1. To un-relate an asset, click **[!UICONTROL Unrelate]** from the toolbar.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
-1. Select the asset(s) you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click/tap **[!UICONTROL Unrelate]**.
+1. Select the asset(s) you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click **[!UICONTROL Unrelate]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Click/Tap **[!UICONTROL OK]** to close the dialog. The assets for which you removed relations are deleted from the list of related assets under the **[!UICONTROL Related]** section.
+1. Click **[!UICONTROL OK]** to close the dialog. The assets for which you removed relations are deleted from the list of related assets under the **[!UICONTROL Related]** section.
 
 ## Translating Related Assets {#translating-related-assets}
 
@@ -79,22 +79,22 @@ If the source file is related to another asset, [!DNL Experience Manager Assets]
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
-1. Click/Tap the project tile to open the details page.
+1. Click the project tile to open the details page.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
-1. Click/tap the ellipses below the Translation Job card to view the translation status.
+1. Click the ellipses below the Translation Job card to view the translation status.
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Select the asset and then click/tap **[!UICONTROL Reveal in Assets]** from the toolbar to view the translation status for the asset.
+1. Select the asset and then click **[!UICONTROL Reveal in Assets]** from the toolbar to view the translation status for the asset.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
-1. To verify whether the assets related to the source have been translated, click/tap the source asset.
+1. To verify whether the assets related to the source have been translated, click the source asset.
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
-1. Select the asset that is related to the source, and then click/tap **[!UICONTROL Reveal in Assets]**. The translated related asset is displayed.
+1. Select the asset that is related to the source, and then click **[!UICONTROL Reveal in Assets]**. The translated related asset is displayed.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
