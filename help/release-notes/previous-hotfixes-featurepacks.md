@@ -5,7 +5,7 @@ description: Release notes specific to Adobe Experience Manager 6.5 Service Pack
 
 # Hotfixes and Feature Packs included in previous Service Packs {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.3.0 {#aem-6530}
+## Adobe Experience Manager 6.5.3.0 {#aem-6530-rn}
 
 [!DNL Adobe Experience Manager] 6.5.3.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of 6.5 release in **April 2019**. It can be installed on top of [!DNL Adobe Experience Manager] 6.5.
 
