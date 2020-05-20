@@ -161,7 +161,7 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
 If the [!DNL InDesign Server] and [!DNL Experience Manager] run on different hosts or either or both these applications do not run on default ports, configure [!UICONTROL Day CQ Link Externalizer] to set the host name, port, and content path for the [!DNL InDesign Server].
 
 1. Access the Web Console at `https://[aem_server]:[port]/system/console/configMgr`.
-1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and tap **[!UICONTROL Edit]** to open it.
+1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and click **[!UICONTROL Edit]** to open it.
 1. Specify the host name and context path for the [!DNL Indesign Server] and click **Save**.
 
    ![chlimage_1-97](assets/chlimage_1-290.png)

@@ -29,7 +29,7 @@ The metadata import is asynchronous and does not impede system performance. Simu
     | [!UICONTROL Launch Workflows] | False by default. When set to `true` and default Launcher settings are in effect for the [!UICONTROL DAM Metadata WriteBack] workflow (that writes metadata to the binary XMP data). Enabling launch workflows slows the system down. |
     | [!UICONTROL Asset Path Column Name] | Defines the column name for the CSV file with assets. |
 
-1. Tap/click **[!UICONTROL Import]** from the toolbar. After the metadata is imported, a notification is displayed in [!UICONTROL Notification] inbox.
+1. Click **[!UICONTROL Import]** from the toolbar. After the metadata is imported, a notification is displayed in [!UICONTROL Notification] inbox.
 
 1. To verify correct import, navigate to an asset's [!UICONTROL Properties] page and verify the values in the fields.
 

@@ -53,14 +53,14 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 1. In the [!DNL Assets] user interface, navigate to the location where you want to add digital assets.
 1. To upload the assets, do one of the following:
 
-    * On the toolbar, tap the **[!UICONTROL Create]** icon. Then on the menu, tap **[!UICONTROL Files]**. You can rename the file in the presented dialog if needed.
+    * On the toolbar, click the **[!UICONTROL Create]** icon. Then on the menu, click **[!UICONTROL Files]**. You can rename the file in the presented dialog if needed.
     * In a browser that supports HTML5, drag the assets directly on the [!DNL Assets] user interface. The dialog to rename file is not displayed.
 
    ![Create option to upload assets](assets/create-options.png)
 
    To select multiple files, press the Ctrl or Command key and select the assets in the file picker dialog. When using an iPad, you can select only one file at a time.
 
-   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
+   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Click the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
    ![Upload assets progress bar](assets/chlimage_1-5.png)
 
@@ -102,7 +102,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    ![Duplicate Asset Detected dialog](assets/chlimage_1-8.png)
 
-   To retain the duplicate asset in [!DNL Assets], tap/click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, tap/click **[!UICONTROL Delete]**.
+   To retain the duplicate asset in [!DNL Assets], click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, click **[!UICONTROL Delete]**.
 
    [!DNL Experience Manager Assets] prevents you from uploading assets with the forbidden characters in their filenames. If you try to upload an asset with file name containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
 
@@ -148,9 +148,9 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 **To upload assets using FTP**
 
 1. Using your choice of FTP client, log in to the FTP server using the FTP user name and password that you received from the provisioning email. In the FTP client, upload files or folders to the FTP server.
-1. [Log in to Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) using credentials received from the provisioning email. On the Global Navigation Bar, tap **[!UICONTROL Upload]**.
+1. [Log in to Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) using credentials received from the provisioning email. On the Global Navigation Bar, click **[!UICONTROL Upload]**.
 
-1. On the Upload page, near the upper-left corner, tap the **[!UICONTROL Via FTP]** tab.
+1. On the Upload page, near the upper-left corner, click the **[!UICONTROL Via FTP]** tab.
 1. On the left side of the page, choose an FTP folder to upload files from; on the right side of the page, choose a destination folder.
 1. Near the lower-right corner of the page, click **[!UICONTROL Job Options]** and then set the options you want based on the assets in the folder you selected.
 
@@ -160,11 +160,11 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
    >
    >When you upload assets via FTP, the upload job options you set in Dynamic Media Classic (S7) take precedent over asset processing parameters set in [!DNL Experience Manager].
 
-1. In the lower-right corner of the Upload Job Options dialog box, tap **[!UICONTROL Save]**.
-1. In the lower-right corner of the Upload page, tap **[!UICONTROL Submit Upload]**.
+1. In the lower-right corner of the Upload Job Options dialog box, click **[!UICONTROL Save]**.
+1. In the lower-right corner of the Upload page, click **[!UICONTROL Submit Upload]**.
 
-   To view the progress of the upload, on the Global Navigation Bar, tap **[!UICONTROL Jobs]**. The Jobs page displays the progress of the upload. You can continue working in [!DNL Experience Manager] and return to the Jobs page in Dynamic Media Classic at any time to review an in-progress job.
-   To cancel an upload job in progress, tap **[!UICONTROL Cancel]** next to the Duration time.
+   To view the progress of the upload, on the Global Navigation Bar, click **[!UICONTROL Jobs]**. The Jobs page displays the progress of the upload. You can continue working in [!DNL Experience Manager] and return to the Jobs page in Dynamic Media Classic at any time to review an in-progress job.
+   To cancel an upload job in progress, click **[!UICONTROL Cancel]** next to the Duration time.
 
 #### Upload Job Options {#upload-job-options}
 
@@ -174,7 +174,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 | Publish After Uploading | | Automatically publishes the assets that you upload. |
 | Overwrite in any folder, same base asset name regardless of extension | | Select this option if you want the files you upload to replace existing files with the same names. The name of this option could be different, depending on the settings in **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** > **[!UICONTROL Upload to Application]** > **[!UICONTROL Overwrite Images]**. |
 | Uncompress Zip or Tar Files on Upload | | |
-| Job Options | | Tap/ click **[!UICONTROL Job Options]** to open the [!UICONTROL Upload Job Options] dialog box and choose options that affect the entire upload job. These options are the same for all file types.<br>You can choose default options for uploading files starting on the Application General Settings page. To open this page, choose **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**. Tap the **[!UICONTROL Default Upload Options]** button to open the [!UICONTROL Upload Job Options] dialog box. |
+| Job Options | | Click **[!UICONTROL Job Options]** to open the [!UICONTROL Upload Job Options] dialog box and choose options that affect the entire upload job. These options are the same for all file types.<br>You can choose default options for uploading files starting on the Application General Settings page. To open this page, choose **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**. Click the **[!UICONTROL Default Upload Options]** button to open the [!UICONTROL Upload Job Options] dialog box. |
 | | When | Select One-Time or Recurring. To set a recurring job, choose a Repeat option—Daily, Weekly, Monthly, or Custom—to specify when you want the FTP upload job to recur. Then specify the scheduling options as necessary. |
 | | Include subfolders | Upload all subfolders within the folder you intend to upload. The names of the folder and its subfolders you upload are entered automatically in [!DNL Experience Manager Assets]. |
 | | Crop Options | To manually crop from the sides of an image, select the Crop menu and choose Manual. Then enter the number of pixels to crop from any side or each side of the image. How much of the image is cropped depends on the ppi (pixels per inch) setting in the image file. For example, if the image displays 150 ppi and you enter 75 in the Top, Right, Bottom, and Left text boxes, a half-inch is cropped from each side.<br> To automatically crop white-space pixels from an image, open the Crop menu, choose Manual, and enter pixel measurements in the Top, Right, Bottom, and Left fields to crop from the sides. You can also choose Trim on the Crop menu and choose these options:<br> **Trim Away Based On** <ul><li>**Color** - Choose the Color option. Then select the Corner menu and choose the corner of the image with the color that best represents the white-space color you want to crop.</li><li>**Transparency** - Choose the Transparency option.<br> **Tolerance** - Drag the slider to specify a tolerance from 0 through 1.For trimming based on color, specify 0 to crop pixels only if they exactly match the color you selected in the corner of the image. Numbers closer to 1 allow for more color difference.<br>For trimming based on transparency, specify 0 to crop pixels only if they are transparent. Numbers closer to 1 allow for more transparency.</li></ul><br>Note that these crop options are non-destructive. |
@@ -323,13 +323,13 @@ Some limitations of the feature are:
 To preview an asset, follow these steps.
 
 1. From the [!DNL Assets] user interface, navigate to the location of the asset you want to preview.
-1. Tap the desired asset to open it.
+1. Click the desired asset to open it.
 
 1. In the preview mode, zoom options are available for [supported Image types](/help/assets/assets-formats.md#supported-raster-image-formats) (with interactive editing).
 
-   To zoom into an asset, tap/click `+` (or tap/click the magnifying glass on the asset). To zoom out, tap/click `-`. When you zoom in, you can look closely at any area of the image by panning. The reset zoom arrow brings you back to the original view.
+   To zoom into an asset, click `+` (or click the magnifying glass on the asset). To zoom out, click `-`. When you zoom in, you can look closely at any area of the image by panning. The reset zoom arrow brings you back to the original view.
 
-   Tap **[!UICONTROL Reset]** to reset the view to the original size.
+   Click **[!UICONTROL Reset]** to reset the view to the original size.
 
    ![Reset icon to bring user back to original view](assets/chlimage_1-11.png)
 
@@ -360,7 +360,7 @@ To preview an asset using keyboard, follow these steps:
 
 1. Navigate to the location of the asset to edit its metadata.
 
-1. Select the asset, and tap/click **[!UICONTROL Properties]** from the toolbar to view asset properties. Alternatively, choose the **[!UICONTROL Properties]** quick action on the asset card.
+1. Select the asset, and click **[!UICONTROL Properties]** from the toolbar to view asset properties. Alternatively, choose the **[!UICONTROL Properties]** quick action on the asset card.
 
    ![Properties quick action on asset card view](assets/properties_quickaction.png)
 
@@ -388,13 +388,13 @@ To preview an asset using keyboard, follow these steps:
    >
    >To create tags, you need write permission at `/content/cq:tags/default` in the CRX repository.
 
-1. To provide a rating to the asset, tap/click the **[!UICONTROL Advanced]** tab and then tap/click the star at the appropriate position to assign the desired rating.
+1. To provide a rating to the asset, click the **[!UICONTROL Advanced]** tab and then click the star at the appropriate position to assign the desired rating.
 
    ![Advanced tab in asset Properties to assign rating](assets/ratings.png)
 
    The rating score that you assign to the asset is displayed under **[!UICONTROL Your Ratings]**. The average rating score that the asset received from users who rated the asset is displayed under **[!UICONTROL Rating]**. In addition, the breakup of the rating scores that contribute to the average rating score is displayed under **[!UICONTROL Rating Breakdown]**. You can search assets based on average rating scores.
 
-1. To view usage usage statistics for the asset, click/tap the **[!UICONTROL Insights]** tab.
+1. To view usage usage statistics for the asset, click the **[!UICONTROL Insights]** tab.
 
    Usage statistics include the following:
 
@@ -419,7 +419,7 @@ A few attributes that are unique to a particular copy of an asset are not carrie
 
 The other properties and metadata information is retained. A partial copy is not created when copying an asset.
 
-1. In [!DNL Assets] interface, select one or more assets and tap/click the **[!UICONTROL Copy]** icon from the toolbar. Alternatively, select the **[!UICONTROL Copy]** quick action from the asset card.
+1. In [!DNL Assets] interface, select one or more assets and click the **[!UICONTROL Copy]** icon from the toolbar. Alternatively, select the **[!UICONTROL Copy]** quick action from the asset card.
  ![Copy icon in assets UI toolbar](assets/copy_icon.png)
 
    >[!NOTE]
@@ -432,7 +432,7 @@ The other properties and metadata information is retained. A partial copy is not
    >
    >If you copy an asset at the same location, [!DNL Experience Manager] automatically generates a variation of the name. For example, if you copy an asset titled `Square`, [!DNL Experience Manager] automatically generates the title for its copy as `Square1`.
 
-1. Click/ tap the **[!UICONTROL Paste]** asset icon from the toolbar.
+1. Click the **[!UICONTROL Paste]** asset icon from the toolbar.
 
    ![Paste icon in assets UI toolbar](assets/chlimage_1-14.png)
    [!DNL Assets] are then copied to this location.
@@ -445,14 +445,14 @@ The other properties and metadata information is retained. A partial copy is not
 
 1. Navigate to the location of the asset you want to move.
 
-1. Select the asset, and tap/click the **[!UICONTROL Move]** icon from the toolbar.
+1. Select the asset, and click the **[!UICONTROL Move]** icon from the toolbar.
 ![Move icon in asset UI toolbar](assets/move_icon.png)
 
 1. In the [!UICONTROL Move Assets] wizard, do one of the following:
 
-    * Specify the name for the asset after it is moved. Then tap/click **[!UICONTROL Next]** to proceed.
+    * Specify the name for the asset after it is moved. Then click **[!UICONTROL Next]** to proceed.
 
-    * Tap/click **[!UICONTROL Cancel]** to stop the process.
+    * Click **[!UICONTROL Cancel]** to stop the process.
 
    >[!NOTE]
    >
@@ -461,20 +461,20 @@ The other properties and metadata information is retained. A partial copy is not
 
 1. On the **[!UICONTROL Select Destination]** dialog, do one of the following:
 
-    * Navigate to the new location for the assets, and then tap/click **[!UICONTROL Next]** to proceed.
+    * Navigate to the new location for the assets, and then click **[!UICONTROL Next]** to proceed.
 
-    * Tap/click **[!UICONTROL Back]** to return to the **[!UICONTROL Rename]** screen.
+    * Click **[!UICONTROL Back]** to return to the **[!UICONTROL Rename]** screen.
 
 1. If the assets being moved have any referencing pages, assets, or collections, the **[!UICONTROL Adjust References]** tab appears beside the **[!UICONTROL Select Destination]** tab.
 
    Do one of the following in the **[!UICONTROL Adjust References]** screen:
 
-    * Specify the references to be adjusted based on the new details, and then tap/click **[!UICONTROL Move]** to proceed.
+    * Specify the references to be adjusted based on the new details, and then click **[!UICONTROL Move]** to proceed.
 
     * From the **[!UICONTROL Adjust]** column, select/unselect references to the assets.
-    * Tap/click **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** screen.
+    * Click **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** screen.
 
-    * Tap/click **[!UICONTROL Cancel]** to stop the move operation.
+    * Click **[!UICONTROL Cancel]** to stop the move operation.
 
    If you do not update references, they continue to point to the previous path of the asset. If you adjust the references, they are updated to the new asset path.
 
@@ -482,11 +482,11 @@ The other properties and metadata information is retained. A partial copy is not
 
 1. You can add or remove renditions for an asset, except the original. Navigate to the location of the asset for which you want to add or remove renditions.
 
-1. Tap/click the asset to open its asset page.
+1. Click the asset to open its asset page.
 
    ![Assets Detail page to manage renditions](assets/chlimage_1-15.png)
 
-1. Tap/click the GlobalNav icon, and select **[!UICONTROL Renditions]** from the list.
+1. Click the GlobalNav icon, and select **[!UICONTROL Renditions]** from the list.
 
    ![Left rail to open menu and select Renditions option](assets/renditions_menu.png)
 
@@ -502,13 +502,13 @@ The other properties and metadata information is retained. A partial copy is not
 
    **Delete a rendition**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap/click the **[!UICONTROL Delete Rendition]** icon from the toolbar. Renditions cannot be deleted in bulk after asset processing is complete. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can customize Experience Manager to delete either specific renditions or delete the assets and re-upload the deleted assets.
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** icon from the toolbar. Renditions cannot be deleted in bulk after asset processing is complete. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can customize Experience Manager to delete either specific renditions or delete the assets and re-upload the deleted assets.
 
    ![Option to delete a rendition](assets/delete_renditionicon.png)
 
    **Upload a new rendition**
 
-   Navigate to the asset details page for the asset, and tap/click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
+   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
    ![Add Rendition icon to upload new rendition](assets/chlimage_1-16.png)
 
@@ -540,7 +540,7 @@ Also, disable the force delete button using an overlay, to disallow users from d
 
 1. Navigate to the location of the asset(s) you want to delete.
 
-1. Select the asset, and tap/click the **[!UICONTROL Delete]** icon from the toolbar.
+1. Select the asset, and click the **[!UICONTROL Delete]** icon from the toolbar.
 
    ![Delete icon](assets/delete_icon.png)
 
@@ -572,14 +572,14 @@ See [Download assets from Experience Manager](/help/assets/download-assets-from-
 
 1. Navigate to the location of the asset(s)/folder you want to publish
 
-1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap/click the **[!UICONTROL Quick Publish]** icon from the toolbar.
+1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. If the asset references other assets, its references are listed in the wizard. Only references that are either unpublished or modified since they were last published/unpublished are displayed. Choose the references you want to publish.
 
    >[!NOTE]
    >
    >Empty folders, that are part of a folder that you've published, are not published.
 
-1. Tap/click **[!UICONTROL Publish]** to confirm the activation for the assets.
+1. Click **[!UICONTROL Publish]** to confirm the activation for the assets.
 
 >[!CAUTION]
 >
@@ -589,7 +589,7 @@ See [Download assets from Experience Manager](/help/assets/download-assets-from-
 
 1. Navigate to the location of the asset/asset folder you want to remove from the publish environment (unpublish).
 
-1. Select the asset/folder to unpublish, and tap/click the **[!UICONTROL Manage Publication]** icon from the toolbar.
+1. Select the asset/folder to unpublish, and click the **[!UICONTROL Manage Publication]** icon from the toolbar.
 
    ![Manage Publication icon](assets/manage_publication.png)
 
@@ -599,8 +599,8 @@ See [Download assets from Experience Manager](/help/assets/download-assets-from-
 
 1. To unpublish the asset later, select **[!UICONTROL Unpublish Later]**, and then select a date for unpublishing the asset.
 1. Schedule a date for the asset to be unavailable from the publish environment.
-1. If the asset references other assets, choose the references you want to unpublish. Tap/click **[!UICONTROL Unpublish]**.
-1. In the confirmation dialog, tap/click:
+1. If the asset references other assets, choose the references you want to unpublish. Click **[!UICONTROL Unpublish]**.
+1. In the confirmation dialog, click:
 
     * **[!UICONTROL Cancel]** to stop the action
     * **[!UICONTROL Unpublish]** to confirm that the assets are unpublished (no longer available on the publish environment) at the specified date.
@@ -615,7 +615,7 @@ A closed user group (CUG) is used to limit access to specific asset folders publ
 
 CUGs are an extra way to restrict access to your assets. You can also configure a login page for the folder.
 
-1. Select a folder from the [!DNL Assets] interface, and tap/click the [!UICONTROL Properties] icon from the toolbar to display the properties page.
+1. Select a folder from the [!DNL Assets] interface, and click the [!UICONTROL Properties] icon from the toolbar to display the properties page.
 1. From the **[!UICONTROL Permissions]** tab, add members or groups under **[!UICONTROL Closed User Group]**.
 
    ![Add user in closed user group](assets/add_user.png)
@@ -672,13 +672,13 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
 1. Do one of the following to open an asset in edit mode:
 
-    * Select the asset and then click/tap the **[!UICONTROL Edit]** icon in the toolbar.
-    * Tap/click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
-    * In the asset page, tap/click the **[!UICONTROL Edit]** icon in the toolbar.
+    * Select the asset and then click the **[!UICONTROL Edit]** icon in the toolbar.
+    * Click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
+    * In the asset page, click the **[!UICONTROL Edit]** icon in the toolbar.
 
    ![Edit icon in toolbar](assets/edit_icon.png)
 
-1. To crop the image, tap/click the **Crop** icon.
+1. To crop the image, click the **Crop** icon.
 
    ![Crop icon](assets/chlimage_1-22.png)
 
@@ -695,15 +695,15 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
    ![Undo and redo icons](assets/chlimage_1-25.png)
 
-1. Tap/click the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
+1. Click the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
 
    ![Clockwise and anti-clockwise rotate icons](assets/chlimage_1-26.png)
 
-1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
+1. Click the appropriate Flip icon to flip the image horizontally or vertically.
 
    ![Icons to flip image horizontally or vertically](assets/chlimage_1-27.png)
 
-1. Tap/click the **Finish** icon to save the changes.
+1. Click the **Finish** icon to save the changes.
 
    ![Finish icon](assets/chlimage_1-28.png)
 
@@ -744,7 +744,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 >For Content Fragments, [annotations are created in the fragment editor](/help/assets/content-fragments-variations.md#annotating-a-content-fragment).
 
 1. Navigate to the location of the asset to which you want to add annotations.
-1. Tap/click the **[!UICONTROL Annotate]** icon from one of the following:
+1. Click the **[!UICONTROL Annotate]** icon from one of the following:
 
     * [Quick actions](/help/assets/managing-assets-touch-ui.md#quick-actions)
     * From the toolbar after selecting the asset or navigating to the asset page
@@ -771,18 +771,18 @@ Video annotations are only supported on browsers with HTML5-compatible video for
    >
    >You can add multiple annotations, before you save them.
 
-1. Tap/click **[!UICONTROL Close]** to exit from the Annotation mode.
+1. Click **[!UICONTROL Close]** to exit from the Annotation mode.
 1. To view the notification, log in to [!DNL Assets] with Aaron MacDonald's credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
 
    >[!NOTE]
    >
    >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](/help/assets/managing-video-assets.md).
 
-1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **[!UICONTROL My Preferences]**.
+1. To choose a different color so you can differentiate between users, click the Profile icon and click **[!UICONTROL My Preferences]**.
 
    ![Select user profile icon and then My Preferences to open User Preferences](assets/User-profile-preferences.png)
 
-   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click/tap **[!UICONTROL Accept]**.
+   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click **[!UICONTROL Accept]**.
 
    ![Select annotation color in User Preferences to set User Persona color](assets/Annotation-color.png)
 
@@ -794,7 +794,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
 
-1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
+1. Click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
 
    ![Options available on GlobalNav icon](assets/chlimage_1-35.png)
 
@@ -802,11 +802,11 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
    ![Show All list in Timeline](assets/chlimage_1-36.png)
 
-   Tap/click a comment in the **[!UICONTROL Timeline]** panel to view the corresponding annotation on the image.
+   Click a comment in the **[!UICONTROL Timeline]** panel to view the corresponding annotation on the image.
 
    ![Timeline panel to view annotation on image](assets/chlimage_1-37.png)
 
-   Tap/click **[!UICONTROL Delete]**, to delete a particular comment.
+   Click **[!UICONTROL Delete]**, to delete a particular comment.
 
 ### Print annotations {#printing-annotations}
 
@@ -814,7 +814,7 @@ If an asset has annotations or it has been subjected to a review workflow, you c
 
 You can also choose to print only the annotations or review status.
 
-To print the annotations and review status, tap/click the **[!UICONTROL Print]** icon and follow the instructions in the wizard. The **[!UICONTROL Print]** icon appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
+To print the annotations and review status, click the **[!UICONTROL Print]** icon and follow the instructions in the wizard. The **[!UICONTROL Print]** icon appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
 
 1. From the [!DNL Assets] interface, open the preview page for an asset.
 1. Do one of the following:
@@ -830,7 +830,7 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
 
    ![To print only the review status of Annotation select it from the Timeline](assets/chlimage_1-39.png)
 
-1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
+1. Click the **[!UICONTROL Print]** icon from the toolbar.
 
    ![Print icon in toolbar](assets/chlimage_1-40.png)
 
@@ -844,7 +844,7 @@ To print the annotations and review status, tap/click the **[!UICONTROL Print]**
    >
    >Lengthy annotations may not render properly in the PDF file. For optimal rendering, Adobe recommends that you limit annotations to 50 words.
 
-1. Tap/click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
+1. Click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
 
    ![Annotation and review status on generated PDF](assets/chlimage_1-42.png)
 
