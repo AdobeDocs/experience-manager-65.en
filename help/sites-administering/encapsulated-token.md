@@ -48,6 +48,13 @@ You can see how this works in a geographically distributed deployment with Mongo
 
 ## Configuring the Encapsulated Token {#configuring-the-encapsulated-token}
 
+>[!NOTE]
+>All authentication handlers that synchronize users and rely on token authentication (like SAML & OAuth) will only work with encapsulated tokens if:
+>
+>* Sticky sessions are enabled, or
+>
+>* Users are already created in AEM when the synchronization starts. This means that encapsulated tokens will not be supported in situations where the handlers **create** users during the sync process.
+
 There are a few things you need to take into consideration when configuring the Encapsulated Token:
 
 1. Because of the cryptography involved, all of the instances need to have the same HMAC key. Since AEM 6.3, the key material is no longer stored in the repository, but on the actual filesystem. With this in mind, the best way to replicate the keys is to copy them from the filesystem of the source instance to that of the target instance(s) you want to replicate the keys to. See more info under "Replicating the HMAC key" below.
