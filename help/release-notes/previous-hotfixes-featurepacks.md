@@ -1,17 +1,11 @@
 ---
 title: AEM 6.5 Previous Service Pack Release Notes
 description: Release notes specific to Adobe Experience Manager 6.5 Service Pack 3 and earlier.
-uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
-docset: aem65
-
 ---
 
 # Hotfixes and Feature Packs included in previous Service Packs {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.3.0
+## Adobe Experience Manager 6.5.3.0 {#aem-6530}
 
 [!DNL Adobe Experience Manager] 6.5.3.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of 6.5 release in **April 2019**. It can be installed on top of [!DNL Adobe Experience Manager] 6.5.
 
@@ -21,9 +15,9 @@ Some key highlights of this service pack release are:
 
 * [!DNL Experience Manager Assets] now supports ZIP archives created using Deflate64 algorithm.
 
-* New column for created date, which is sortable, has been added in DAM list view and on asset search results in list view.
+* A new column that displays asset creation date is available when viewing assets in DAM and in the search results in list view. Sort the column to arrange assets in chronological or reverse chronological order of creation.
 
-* Asset sorting based on Name column has been enabled in List view.
+* You can now sort assets based on the `Name` column in list view.
 
 * [!DNL Dynamic Media] now supports Smart Crop video assets. Smart Crop is a machine learning driven feature that re-crops a video while moving the frame to follow the focal point of the scene.
 
@@ -43,9 +37,9 @@ Some key highlights of this service pack release are:
 
 * [!DNL Experience Manager Assets] now supports ZIP archives created using Deflate64 algorithm (NPR-27573).
 
-* New column for created date, which is sortable, has been added in DAM list view and on asset search results in list view (NPR-31312).
+* A new column that displays asset creation date is available when viewing assets in DAM and in the search results in list view. Sort the column to arrange assets in chronological or reverse chronological order of creation (NPR-31312).
 
-* Asset sorting based on Name column has been allowed in List view (NPR-31299).
+* You can now sort assets based on the `Name` column in list view (NPR-31299).
 
 * The GLB, GLTF, OBJ, and STL asset files support asset preview in Asset Details page in DAM (CQ-4282277).
 
@@ -58,6 +52,8 @@ Some key highlights of this service pack release are:
 * Search/ browse view has been set as default view in Foundation picker if query parameters are passed in request (NPR-31601).
 
 **Fixes**
+
+* OAuth IMS provider cannot connect via a proxy server when using Adobe Asset Link (NPR-30949).
 
 * Metadata for some PDF documents is not updated and saved to the PDF on modifying its title (NPR-31629).
 
@@ -79,19 +75,19 @@ Some key highlights of this service pack release are:
 
 * Assets with plus '+' symbol in the file name cannot be deleted (NPR-31162).
 
-* Create drop down menu, which is visible in top menu on selecting a folder, does not show 'Folder' as a create option (NPR-30877).
+* An option to create new assets or folders is available as a popup menu in the Assets user interface. When a folder is selected, Experience Manager does not display [!UICONTROL Folder] as one of the options in the popup menu (NPR-30877).
 
-* Folder selection Create > FileUpload action item is missing when ACL for Deny jcr:removeChildNodes and jcr:removeNode on path are applied for a user (NPR-30840).
+* Folder selection Create > FileUpload action item is missing when ACL for Deny `jcr:removeChildNodes` and `jcr:removeNode` on path are applied for a user (NPR-30840).
 
-* DAM workflows go into stale state when certain mp4 assets are uploaded, causing all the remaining workflows to go into stale state (NPR-30662).
+* DAM workflows go into stale state when certain MP4 assets are uploaded, causing all the remaining workflows to go into stale state (NPR-30662).
 
-* Out of Memory Error is observed when a large PDF files (of several Gigabytes) is uploaded to DAM and its sub-assets are processed (NPR-30614).
+* Out of memory error is observed when a large PDF file of several Gigabytes is uploaded to DAM and its sub-assets are processed (NPR-30614).
 
-* Bulk movement of assets is failing and displaying warning message (NPR-30610).
+* Bulk movement of assets fails and displays a warning message (NPR-30610).
 
-* Asset names are changed to lower case when moving assets from one folder to another in [!DNL Experience Manager] running in [!DNL Dynamic Media]&ndash;Scene7 mode (NPR-31630).
+* Asset names are changed to lower case when moving assets from one folder to another when working [!DNL Dynamic Media]&ndash;Scene7 mode (NPR-31630).
 
-* Error is observed while editing a remote imageset, for the image residing in the folder named same as Scene 7 company name (NPR-31340).
+* Error is observed while editing a remote imageset, for the image residing in the folder named same as Scene7 company name (NPR-31340).
 
 * [!DNL Dynamic Media] assets containing references are not getting published (NPR-31180).
 

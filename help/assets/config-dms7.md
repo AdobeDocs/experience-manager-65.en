@@ -476,8 +476,6 @@ When the Spin Set is uploaded and published, you would activate the name of the 
 
 ### (Optional) Tuning the performance of Dynamic Media - Scene7 mode {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-**Synchronization Performance/Scalability Fine-tuning Tips**
-
 To keep Dynamic Media - Scene7 mode running smoothly, Adobe recommends the following synchronization performance/scalability fine-tuning tips:
 
 * Updating the predefined Job parameters for processing of different file formats.
