@@ -293,25 +293,25 @@ tags.each { node ->
   def tagPath = node.path;
   println "tag = ${tagPath}";
 
-  if(node.hasProperty("cq:movedTo") && node.getProperty("cq:movedTo").getValue().toString().startsWith("/etc/tags")){
+  if(node.hasProperty("cq:movedTo") && node.getProperty("cq:movedTo").getValue().toString().startsWith("/etc/tags"))
+    {
+     def movedTo = node.getProperty("cq:movedTo").getValue().toString();
 
-  def movedTo = node.getProperty("cq:movedTo").getValue().toString();
+     println "cq:movedTo = ${movedTo} \n";
 
-  println "cq:movedTo = ${movedTo} \n";
+     movedTo = movedTo.replace("/etc/tags","/content/cq:tags");
+     node.setProperty("cq:movedTo",movedTo);
+     } else if(node.hasProperty("cq:backlinks")){
 
-  movedTo = movedTo.replace("/etc/tags","/content/cq:tags");
-    node.setProperty("cq:movedTo",movedTo);
-  } else if(node.hasProperty("cq:backlinks")){
+     String[] backLinks = node.getProperty("cq:backlinks").getValues();
+     int count = 0;
 
-  String[] backLinks = node.getProperty("cq:backlinks").getValues();
-  int count = 0;
-
-  backLinks.each { value ->
-    if(value.startsWith("/etc/tags")){
-    println "cq:backlinks = ${value}\n";
-    backLinks[count] = value.replace("/etc/tags","/content/cq:tags");
+     backLinks.each { value ->
+             if(value.startsWith("/etc/tags")){
+                     println "cq:backlinks = ${value}\n";
+                     backLinks[count] = value.replace("/etc/tags","/content/cq:tags");
     }
-     count++;
+             count++;
      }
 
     node.setProperty("cq:backlinks",backLinks);
@@ -324,7 +324,7 @@ println "---------------------------------Success-------------------------------
 
 The script fetches all those tags that have `/etc/tags` in the value of `cq:movedTo/cq:backLinks` property. It then iterates through the fetched result set and resolves the `cq:movedTo` and `cq:backlinks` property values to `/content/cq:tags` paths (in the case where `/etc/tags` is detected in the value).
 
-### If upgraded AEM instance runs on Claasic UI {#upgraded-instance-runs-classic-ui}
+### If upgraded AEM instance runs on Classic UI {#upgraded-instance-runs-classic-ui}
 
 > [!NOTE]
 > Classic UI is not zero downtime compliant and does not support new tag base path. If you want to use classic UI than `/etc/tags` needs to be created followed by `cq-tagging` component restart.
