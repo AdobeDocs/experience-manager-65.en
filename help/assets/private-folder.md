@@ -13,7 +13,7 @@ You can create a private folder in the Adobe Experience Manager (AEM) Assets use
 > Private folder has atleast one member with Owner role.
 >
 
-1. In the Assets console, tap/click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
+1. In the Assets console, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
 
    ![Create assets folder](assets/Create-folder.png)
 
@@ -21,11 +21,11 @@ You can create a private folder in the Adobe Experience Manager (AEM) Assets use
 
    ![Select Private check box to make the folder private](assets/private-folder.png)
 
-1. Tap/click **[!UICONTROL Create]**. A private folder is created in the UI.
+1. Click **[!UICONTROL Create]**. A private folder is created in the UI.
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. To share the folder with other users and the assign privileges to them, select the folder, and click/tap the **[!UICONTROL Properties]** icon from the toolbar.
+1. To share the folder with other users and the assign privileges to them, select the folder, and click the **[!UICONTROL Properties]** icon from the toolbar.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -52,11 +52,11 @@ You can create a private folder in the Adobe Experience Manager (AEM) Assets use
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Tap/click the Notification icon to open the list of notifications.
+1. Click the Notification icon to open the list of notifications.
 
    ![List of notifications](assets/Assets-Notification.png)
 
-1. Click/tap the entry for the private folder shared by the administrator to open the folder.
+1. Click the entry for the private folder shared by the administrator to open the folder.
 
 >[!NOTE]
 >
