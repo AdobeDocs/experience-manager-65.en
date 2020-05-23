@@ -250,6 +250,10 @@ The following is a description of the effects in the repository when moving or m
 
 * Later updates to the page's `cq:tags` property automatically clean up the "old" references. This is triggered because resolving a moved tag through the API returns the destination tag, thus providing the destination tag ID.
 
+> [!NOTE]
+>
+> Movement of tags is different from migration of tags.
+
 ## Tags migration {#tags-migration}
 
 Experience Manager 6.4 onwards tags are stored under `/content/cq:tags`, which were earlier stored under `/etc/tags`. However, in scenarios where Adobe Experience Manager has been upgraded from previous version the tags are still present under the old location `/etc/tags`. In upgraded systems tags need to be migrated under `/content/cq:tags`.
