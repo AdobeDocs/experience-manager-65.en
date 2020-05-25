@@ -14,6 +14,16 @@ discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
 
 # Creating Accessible Content (WCAG 2.0 Conformance){#creating-accessible-content-wcag-conformance}
 
+>[!CAUTION]
+>
+>As the Classic UI was deprecated in AEM 6.4 the content on this page has not been updated for WCAG 2.1.
+>
+>See the following pages for details related to AEM and WCAG 2.1:
+>
+>* [AEM and the Web Accessibility Guidelines](/help/managing/web-accessibility.md)
+>* [A Quick Guide to WCAG 2.1](/help/managing/qg-wcag.md)
+>* [Creating Accessible Content (WCAG 2.1 Conformance)](/help/sites-authoring/creating-accessible-content.md)
+
 WCAG 2.0 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
 
 >[!NOTE]
