@@ -219,7 +219,9 @@ The header is always present at the top of the screen. While most options in the
 
 * Keyboard navigation
 
-  You can navigate a website using only the keyboard with the standard browser functionality of the **TAB** key (or **OPT+TAB**). These keys move you between elements on the page that are focusable. In the **Sites** console there is the added option to  **Skip to main content** , thus speeding navigation by skipping the standard elements in the (product) toolbar.
+  You can navigate a website using only the keyboard. This uses the standard browser functionality of the **TAB** key (or **OPT+TAB**) to move you between elements on the page that are *focusable*. 
+
+  In the **Sites** console there is the added option to  **Skip to main content**. This becomes visible as you *tab* through the header options, and speeds your navigation by allowing you to skip the standard elements in the (product) toolbar and taking you directly to the main content.
 
   ![bh-30](assets/bh-30.png)
 
