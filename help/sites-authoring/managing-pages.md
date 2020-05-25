@@ -286,11 +286,17 @@ You can copy a page and all of its subpages to a new location:
    >If you are in selection mode this is exited automatically as soon as the page is copied.
 
 1. Navigate to the location for the new copy of the page.
-1. Use the **Paste** page icon:
+1. The **Paste** icon is available with a drop down arrow directly to the right:
 
-   ![screen_shot_2018-03-22at105510](assets/screen_shot_2018-03-22at105510.png)
+   ![Paste](assets/paste-without-children.png)
 
-   A copy of the original page and any subpages will be created at this location.
+   You can either:
+   * Select the **Paste** page icon itself: A copy of the original page and any child-pages will be created at this location.
+   * Select the drop down arrow to reveal the **Paste without children** option. A copy of the original page will be created at this location; child-pages will not be copied.
+
+   >[!NOTE]
+   >
+   >The **Paste without children** option is available in [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html).
 
    >[!NOTE]
    >
