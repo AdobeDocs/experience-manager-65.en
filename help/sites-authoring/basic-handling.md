@@ -74,9 +74,15 @@ The options available on these panels are described below.
 
 ### Navigation Panel {#navigation-panel}
 
-The Navigation panel:
+The Navigation panel provides access to the AEM consoles:
 
 ![bh-01](assets/bh-01.png)
+
+The title of the browser tab will update to reflect your location as you navigate through the consoles and content.
+
+>[!NOTE]
+>
+>The tab title reflects the location from [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) onwards.
 
 From Navigation the consoles available are:
 
@@ -210,6 +216,16 @@ The header is always present at the top of the screen. While most options in the
   You can switch between column view, card view, and list view; in the list view it also shows the view settings.
 
   ![bh-09](assets/bh-09.png)
+
+* Keyboard navigation
+
+  You can navigate a website using only the keyboard with the standard browser functionality of the **TAB** key (or **OPT+TAB**). These keys move you between elements on the page that are focusable. In the **Sites** console there is the added option to  **Skip to main content** , thus speeding navigation by skipping the standard elements in the (product) toolbar.
+
+  ![bh-30](assets/bh-30.png)
+
+  >[!NOTE]
+  >
+  >The **Skip to main content** is available from [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) onwards.
 
 ## Accessing Help {#accessing-help}
 

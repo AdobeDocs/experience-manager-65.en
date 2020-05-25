@@ -296,7 +296,7 @@ You can copy a page and all of its subpages to a new location:
 
    >[!NOTE]
    >
-   >The **Paste without children** option is available in [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html).
+   >The **Paste without children** option is available from [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) onwards.
 
    >[!NOTE]
    >
