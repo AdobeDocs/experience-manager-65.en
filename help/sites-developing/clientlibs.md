@@ -443,7 +443,7 @@ The `dumplibs` component includes a test selector that displays the source code 
 
     * Open the following URL in your web browser (use a different host and port as required):
 
-      [https://localhost:4502/libs/cq/ui/content/dumplibs.html](https://localhost:4502/libs/cq/ui/content/dumplibs.html)
+      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
 
    The default page shows output for tags with no value for the categories attribute.
 
