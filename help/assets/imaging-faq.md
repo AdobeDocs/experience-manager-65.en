@@ -89,7 +89,7 @@ No. Smart Imaging works seamlessly with your existing image URLs and image prese
 
 Also, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) to understand pre-requisites for Smart Imaging.
 
-## Does Smart Mmaging working with HTTPS? How about HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
+## Does Smart Imaging working with HTTPS? How about HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 
 Smart Imaging works with images delivered over HTTP or HTTPS. In addition, it also works over HTTP/2.
 

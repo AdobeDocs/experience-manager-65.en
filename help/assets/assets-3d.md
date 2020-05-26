@@ -11,22 +11,116 @@ content-type: reference
 
 # Working with 3D assets {#working-with-d-assets}
 
-AEM 3D (Adobe Experience Manager 3D) lets you upload, manage, view, and render 3D content. Support for viewing and rendering is optimized for individual objects.
+Dynamic Media lets you upload, manage, view, and deliver 3D assets as immersive experiences. 
 
-See also [AEM 3D Release Notes](/help/release-notes/aem3d-release-notes.md).
+* One-click publishing of 3D images to generate its URL.
+* Optimized support for viewing 3D assets with the high-quality, interactive Dimensional viewer preset powered by Adobe Dimension. The viewer preset includes, among other things, a collection of interactive camera controls that let you orbit, zoom, and pan.
+* The 3D Media WCM component lets you easily add 3D assets to your AEM Sites pages.
 
-See also [Installing and configuring AEM 3D](install-config-3d.md).
+There is no installation or configuration of any kind to use 3D assets in Dynamic Media.
 
-## About models and stages in AEM 3D {#about-models-and-stages-in-aem-d}
+<!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
-AEM 3D lets you view and render high-quality static, stand-alone 3D models in pre-defined environments called Stages. Basically, a stage provides "lighting" for the 3D scene and the settings for rendering in a native application such as Autodesk® Maya® or Autodesk 3ds Max®. In addition, the stage can optionally include pre-defined cameras, backgrounds, and ground plane geometry.
+## Supported 3D file formats in Dynamic Media {#supported-3d-file-formats-in-dm} 
+
+Dynamic Media supports the following 3D file formats: 
+
+|3D file extension |File format | MIME type |Notes |
+|---|---|---|---|
+| GLB |Binary GL Transmission|model/gltf-binary | Includes the textures with the asset instead of referencing them as external images.|
+| OBJ |WaveFront 3D Object File|application/x-tgif ||
+| STL |Stereolithography|application/vnd.ms-pki.stl ||
+| USDZ |Universal Scene Description Zip archive|model/vnd.usdz+zip |Support for ingestion only; preview not available. USDZ is Apple's proprietary 3D format that can only be view by Safari or iOS.|
+
+## Quick Start: 3D assets in Dynamic Media {#quick-start-3d}
+
+The following step-by-step workflow description is designed to help you get up and running quickly with 3D assets in Dynamic Media - Scene7 mode. 
+
+>[!NOTE]
+>
+>3D assets are not supported in Dynamic Media - Hybrid mode.
+
+Before you work with 3D assets in Dynamic Media, make sure that your AEM administrator has already enabled and configured Dynamic Media Cloud Services in Dynamic Media - Scene7 mode.
+
+See [Configuring Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configuring Dynamic Media - Scene7 mode and [Troubleshooting Dynamic Media - Scene7 mode.](/help/assets/troubleshoot-dms7.md)
+
+1. **Upload your 3D assets into Dynamic Media** by doing the following:
+
+    * Upload your 3D assets to folders.
+
+        * [Upload your 3D assets for use with the Dimensional viewer](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+        * Learn more about [Supported 3D file formats in Dynamic Media](supported-3d-file-formats-in-dm).
+
+1. **Manage your 3D assets in Dynamic Media** by doing any of the following:
+
+    * Organize, browse, and search 3D assets
+
+        * [Organizing digital assets](/help/assets/organize-assets.md#organize-digital-assets).
+
+        * [Searching 3D assets](search-assets.md#custompredicates) or [Searching assets](managing-assets-touch-ui.md#search-assets).
+
+    * Preview and publish 3D assets
+
+        * [Previewing 3D assets](managing-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](previewing-assets.md).
+        * [Manage viewer presets](managing-viewer-presets.md).
+        * [Publishing assets](publishing-dynamicmedia-assets.md).
+
+    * Work with 3D asset metadata
+
+        * Edit the properties of a 3D asset such as the title, description, and tags, custom metadata fields:
+          [Editing 3D properties](managing-assets-touch-ui.md#editing-properties).
+
+        * [Managing metadata for digital assets](metadata.md).
+        * [Metadata schemas](metadata-schemas.md).
+
+1. **Publish your 3D assets in Dynamic Media** by doing one of the following:
+
+    * If you are using Adobe Experience Manager as your web content management system you can add 3D assets directly to your web pages.
+
+        * [Adding 3D assets to your web pages](adding-dynamic-media-assets-to-pages.md).
+
+    * If you are using a third-party web content management system, you can link or embed 3D assets to your web pages.
+
+        * Integrate a 3D asset using URL:
+          [Linking URLs to your web application](linking-urls-to-yourwebapplication.md).
+
+        * Integrate a 3D asset using embed code on web page:
+          [Embedding the video viewer on a web page](embed-code.md).
+
+
+## Uploading 3D assets for use with the Dimensional viewer {#uploading-3d-assets-for-use-with-the-dimensional-viewer}
+
+For an uploaded asset to qualify as a spherical panorama image that you intend to use with the Panoramic Image viewer, the asset must have either one or both of the following:
+
+* An aspect ratio of 2.
+  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
+  `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
+
+* Tagged with the keywords `equirectangular`, or `spherical`and `panorama`, or `spherical` and `panoramic`. See [Using Tags](/help/sites-authoring/tags.md).
+
+Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
+
+To upload assets for use with the Panoramic Image viewer, see [Uploading Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+
+
+
+
+
+
+
+
+
+
+<!-- ## About 3D models in Dynamic Media {#about-models-and-stages-in-aem-d}
+
+3D in Dynamic Media lets you view and render high-quality static, stand-alone 3D assets.
 
 Uploaded 3D files that contain lights are assumed to be a stage. You can revert such assets to be simple 3D objects by opening the asset in the asset details page. Tap **[!UICONTROL View Properties]**, then tap the **[!UICONTROL Basic]** tab. Under the Metadata heading, from the Asset Class drop-down list, select **[!UICONTROL 3D object]**.
 
-When you create 3D models for use in AEM 3D, be aware of the following:
+When you create 3D assets for use in Dynamic Media, be aware of the following:
 
-* Your 3D model files should contain only one object, with no backgrounds, ground planes, scene lighting, or cameras.
-* Place the model above the ground plane. This positioning is especially important when you view or render with stages that provide a ground plane. A configuration setting is available (and enabled by default) that causes the object to be moved above the ground plane when previewing or rendering with Rapid Refine. This setting does not affect rendering with third-party renderers (for example, by way of Maya), and thus objects that are not located above the ground plane may be partially hidden.  
+* Your 3D asset files should contain only one object, with no backgrounds, ground planes, scene lighting, or cameras.
+* Place the model above the ground plane. This positioning is especially important when you view or render the assetith stages that provide a ground plane. A configuration setting is available (and enabled by default) that causes the object to be moved above the ground plane when previewing or rendering with Rapid Refine. This setting does not affect rendering with third-party renderers (for example, by way of Maya), and thus objects that are not located above the ground plane may be partially hidden.  
 * Position the model so that it is reasonably centered laterally around the coordinate system origin (0,0,0). Doing so ensures a good interactive viewing experience for you.
 * Other than texture maps, external file references are supported. Therefore, you must embed any referenced content in the primary model file before you upload it into AEM.  
 
@@ -34,7 +128,7 @@ When you create 3D models for use in AEM 3D, be aware of the following:
 
 * The general scene lighting is provided by the stage. As such, Adobe does not recommend that you include lights with 3D model files. You can include lights in the model. However, they must be specific to the model only. For example, it may be necessary to include additional lighting to brighten a part of the object that is obscured by other parts. Therefore, it would not be sufficiently visible with just the stage lights.  
 
-## Supported files in AEM 3D {#supported-files-in-aem-d}
+## Supported 3D files in Dynamic Media {#supported-files-in-aem-d}
 
 A typical 3D asset has a primary model file and none or more referenced files. Referenced files include such things as texture maps or **IBL (Image-Based Lighting)** images.
 
@@ -104,8 +198,9 @@ The primary 3D model file contains the actual 3D model geometry and definitions 
   </tr> 
  </tbody> 
 </table>
+ -->
 
-The following additional file formats are supported if Autodesk Maya is installed and configured on AEM authoring servers:
+<!-- The following additional file formats are supported if Autodesk Maya is installed and configured on AEM authoring servers:
 
 * Autodesk Maya  
 
@@ -113,9 +208,9 @@ The following additional file formats are supported if Autodesk Maya is installe
 
 * `Jupiter Tesselation (ISO 14306-1).jt`.  
 
-  An industry-standard CAD data exchange, collaboration, and product visualization format.
+  An industry-standard CAD data exchange, collaboration, and product visualization format. -->
 
-### Support for texture map files {#support-for-texture-map-files}
+<!-- ### Support for texture map files {#support-for-texture-map-files}
 
 Material definitions in 3D model files can include references to external image files that provide texture maps. AEM 3D supports the following types of texture map files:
 
@@ -127,33 +222,33 @@ Material definitions in 3D model files can include references to external image 
 * Opacity maps
 * Roughness maps (also called Gloss, Reflectivity, or Cosine Power maps)
 
-Materials in the primary 3D model file can reference other types of maps which are ignored by AEM 3D.
+Materials in the primary 3D model file can reference other types of maps which are ignored in Dynamic Media. -->
 
-### IBL (Image-Based Lighting) images {#ibl-image-based-lighting-images}
+<!-- ### IBL (Image-Based Lighting) images {#ibl-image-based-lighting-images}
 
 A 3D model file that defines a stage can reference a single IBL environment image. Currently, AEM 3D supports only 32-bit TIFF images in latitude/longitude format for diffuse IBL and for reflections. For the spherical scene background, 8-bit RGB images are also supported.
 
-See [About working with IBL stages](working-with-ibl-stages.md).
+See [About working with IBL stages](working-with-ibl-stages.md). -->
 
 >[!NOTE]
 >
->File references&ndash;other than those described above&ndash;that are present in the primary 3D model file are currently ignored. AEM 3D does not support references to secondary 3D model files.
+>File references that are present in the primary 3D model file are currently ignored. Dynamic Media does not support references to secondary 3D model files.
 >
->Y-up is the preferred coordinate system for FBX files this release.
+><!-- Y-up is the preferred coordinate system for FBX files this release. -->
 
-## Material shading in a primary 3D model file {#material-shading-in-a-primary-d-model-file}
+<!-- ## Material shading in a primary 3D model file {#material-shading-in-a-primary-d-model-file}
 
 The original native model file can contain material definitions that are used with shaders such as Blinn, Lambert, or with procedural shaders. These potentially complex materials are supported only when you render using the corresponding native application (such as Autodesk Maya).
 
-For viewing purposes or when you render using the default Rapid Refine™ renderer, all materials are either simplified, substituted, or both so they can be used with a Phong-like shader. This shader supports a limited set of attributes. Other attributes in the material definition are ignored.
+For viewing purposes or when you render using the default Rapid Refine™ renderer, all materials are either simplified, substituted, or both so they can be used with a Phong-like shader. This shader supports a limited set of attributes. Other attributes in the material definition are ignored. -->
 
-See [Viewing 3D assets](viewing-3d-assets.md).
+<!-- See [Viewing 3D assets](viewing-3d-assets.md). -->
 
-See [Rendering 3D assets](rendering-3d-assets.md).
+<!-- See [Rendering 3D assets](rendering-3d-assets.md). -->
 
-## Naming materials in a primary 3D model file {#naming-materials-in-a-primary-d-model-file}
+<!-- ## Naming materials in a primary 3D model file {#naming-materials-in-a-primary-d-model-file}
 
-A *surface* is defined as the surface area of a 3D model covered by the same material. This material also provides the name for the surface. As such, Adobe recommends that you name the materials included in primary 3D model files accordingly. For example, the use of specific names such as "Body", "Windows", "Tires", or "Rims" is preferred to the use of vague names such as "Red", "Glass", "Rubber", "Aluminum".
+A *surface* is defined as the surface area of a 3D model covered by the same material. This material also provides the name for the surface. As such, Adobe recommends that you name the materials included in primary 3D model files accordingly. For example, the use of specific names such as "Body", "Windows", "Tires", or "Rims" is preferred to the use of vague names such as "Red", "Glass", "Rubber", "Aluminum". -->
 
 # Viewing 3D assets {#viewing-d-assets}
 
