@@ -107,9 +107,9 @@ The search results that match all search terms in metadata fields are displayed 
 
 You can improve the relevance of keywords for particular assets to help boost searches based on the keywords. In other words, the images for which you promote specific keywords appear at the top of the search results when you search based on these keywords.
 
-1. From the [!DNL Assets] user interface, open the properties page for the asset. Click **[!UICONTROL Advanced]** and click/tap **[!UICONTROL Add]** under **[!UICONTROL Elevate for search keywords]**.
-1. In the **[!UICONTROL Search Promote]** box, specify a keyword for which you want to boost the search for the image and then click/tap **[!UICONTROL Add]**. You can specify multiple keywords in the same way.
-1. Click/tap **[!UICONTROL Save & Close]**. The asset which you promoted for this keyword appears among the top search results.
+1. From the [!DNL Assets] user interface, open the properties page for the asset. Click **[!UICONTROL Advanced]** and click **[!UICONTROL Add]** under **[!UICONTROL Elevate for search keywords]**.
+1. In the **[!UICONTROL Search Promote]** box, specify a keyword for which you want to boost the search for the image and then click **[!UICONTROL Add]**. You can specify multiple keywords in the same way.
+1. Click **[!UICONTROL Save & Close]**. The asset which you promoted for this keyword appears among the top search results.
 
 You can use this to your advantage by boosting the rank of some assets in the search results for the targeted keyword. See the example video below. For detailed info, see [search in Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
 

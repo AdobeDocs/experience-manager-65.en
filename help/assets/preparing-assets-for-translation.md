@@ -39,7 +39,7 @@ To create the language root, you create a folder and use an ISO language code as
 
 For example, the root page of the Italian language copy of the sample hierarchy has `it` as the Name property. The Name property is used as the name of the asset node in the repository, and therefore determines the path of the assets. (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
-1. From the Assets console, click/tap **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
+1. From the Assets console, click **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
 
    ![Create folder](assets/Create-folder.png)
 
@@ -47,17 +47,17 @@ For example, the root page of the Italian language copy of the sample hierarchy 
 
    ![Add language code in folder](assets/Add-language-code-in-folder.png)
 
-1. Click or tap **[!UICONTROL Create]**. The language root is created in the Assets console.
+1. Click **[!UICONTROL Create]**. The language root is created in the Assets console.
 
 ## View language roots {#viewing-language-roots}
 
 AEM interface provides a **[!UICONTROL References]** panel that displays a list of language roots that have been created within AEM Assets.
 
 1. In the Assets console, select the language master for which you want to create language copies.
-1. Click or tap the GlobalNav icon, and choose **[!UICONTROL References]** to open the [!UICONTROL Reference] pane.
+1. Click the GlobalNav icon, and choose **[!UICONTROL References]** to open the [!UICONTROL Reference] pane.
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
 
-1. In the References pane, click or tap **[!UICONTROL Language Copies]**. The [!UICONTROL Language Copies] panel shows the language copies of the assets.
+1. In the References pane, click **[!UICONTROL Language Copies]**. The [!UICONTROL Language Copies] panel shows the language copies of the assets.
 
    ![chlimage_1-123](assets/chlimage_1-123.png)

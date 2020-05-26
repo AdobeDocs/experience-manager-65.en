@@ -21,7 +21,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 >Before you share a link with users, ensure that Day CQ Mail Service is configured. An error occurs if you attempt to share a link without first [configuring Day CQ Mail Service](/help/assets/link-sharing.md#configmailservice).
 
 1. In the Assets user interface, select the asset to share as a link.
-1. From the toolbar, click/tap the **[!UICONTROL Share Link]** ![assets_share](assets/assets_share.png).
+1. From the toolbar, click the **[!UICONTROL Share Link]** ![assets_share](assets/assets_share.png).
 
    An asset link is auto-created in the **[!UICONTROL Share Link]** field. Copy this link and share it with the users. The default expiration time for the link is one day.
 
@@ -76,13 +76,13 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >By default, users can only download the renditions of the asset that you share as a link.
 
 1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users through an email.
-1. To view the shared asset, click/tap the link in the email that is sent to the user. The shared asset is displayed in the **[!UICONTROL Adobe Marketing Cloud]** page.
+1. To view the shared asset, click the link in the email that is sent to the user. The shared asset is displayed in the **[!UICONTROL Adobe Marketing Cloud]** page.
 
    ![chlimage_1-260](assets/chlimage_1-545.png)
 
-   To toggle to the list view, click/tap the layout option in the toolbar.
+   To toggle to the list view, click the layout option in the toolbar.
 
-1. To generate a preview of the asset, click/tap the shared asset. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click/tap **[!UICONTROL Back]** in the toolbar. If you have shared a folder, click/tap **[!UICONTROL Parent Folder]** to return to the parent folder.
+1. To generate a preview of the asset, click the shared asset. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click **[!UICONTROL Back]** in the toolbar. If you have shared a folder, click **[!UICONTROL Parent Folder]** to return to the parent folder.
 
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
@@ -90,19 +90,19 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >
    >AEM supports generating the preview of assets of these MIME types: JPG, PNG, GIF, BMP, INDD, PDF, and PPT. You can only download the assets of the other MIME types.
 
-1. To download the shared asset, tap **[!UICONTROL Select]** from the toolbar, click/tap the asset, and then click/tap **[!UICONTROL Download]** from the toolbar.
+1. To download the shared asset, click **[!UICONTROL Select]** from the toolbar, click the asset, and then click **[!UICONTROL Download]** from the toolbar.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. To view the assets you shared as links, go to the Assets UI and tap the Experience Manager logo. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
+1. To view the assets you shared as links, go to the Assets UI and click the Experience Manager logo. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
 1. From the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
-1. To un-share an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar. A confirmation message follows. The entry for the asset is removed from the list.
+1. To un-share an asset, select it and click **[!UICONTROL Unshare]** from the toolbar. A confirmation message follows. The entry for the asset is removed from the list.
 
 ## Configure Day CQ Mail Service {#configmailservice}
 
 1. On the Experience Manager home page, navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
-1. Tap **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
+1. Click **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
     * SMTP server host name: email server host name
     * SMTP server port: email server port
@@ -111,13 +111,13 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    ![chlimage_1-263](assets/chlimage_1-548.png)
 
-1. Click/tap **[!UICONTROL Save]**.
+1. Click **[!UICONTROL Save]**.
 
 ## Configure maximum data size {#maxdatasize}
 
 When you download assets from the link shared using the Link Sharing feature, AEM compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, configure the maximum size using the **[!UICONTROL Max Content Size (uncompressed)]** parameter for [!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet] in Configuration Manager. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
 
-1. Click/Tap the AEM logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Click the AEM logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the Web Console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
 1. Open the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
 
