@@ -55,7 +55,7 @@ When an adaptive form is created using an XDP file, you can drag-drop an XFA fie
   </tr>
   <tr>
    <td><p>Signature Scribble</p> </td>
-   <td><p>(Deprecated) Scribble Signature</p> </td>
+   <td><p>Scribble Signature</p> </td>
   </tr>
   <tr>
    <td><p>Numeric Field </p> </td>
