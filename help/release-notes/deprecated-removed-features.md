@@ -87,23 +87,6 @@ Customers are advised to review if they make use of the feature/capability in th
    <td>Adobe is planning to provide an alternative implementation of the use case in future releases.</td>
   </tr>
   <tr>
-   <td>Components (AEM Forms)</td>
-   <td><p>Signature step allows users to verify and sign an adaptive form. In previous releases, the signature step could use both Adobe Sign and Scribble Signature components as signature fields. In AEM 6.5 Forms, Scribble Signature-based signing experience of Signature Step is deprecated.</p> </td>
-   <td>
-    <ul>
-     <li>If you have performed a fresh installation:
-      <ul>
-       <li>Use Adobe Sign based signing experience within a Signature step in an adaptive form.</li>
-       <li>Use stand-alone Scribble Signature component in an adaptive form, interactive communication, and HTML5 Forms.</li>
-      </ul> </li>
-     <li>If you have upgraded from a previous release to AEM 6.5 Forms:<br />
-      <ul>
-       <li>Continue using Scribble Signature-based signing experience of Signature Step with forms that already use the feature.<br /> </li>
-       <li>Use stand-alone Scribble Signature component or Adobe Sign based signing experience within a Signature step, when you create a form. </li>
-      </ul> </li>
-    </ul> <p> </p> <p> </p> </td>
-  </tr>
-  <tr>
    <td>Foundation</td>
    <td><p>Granite Offloading Framework</p> <p>Adobe does not plan to make further enhancements to the offloading framework that was introduced in 5.6.1 to externalize asset processing. </p> </td>
    <td>Adobe is working on a next-generation cloud-native offloading framework.</td>
