@@ -41,7 +41,7 @@ In the author environment, authors may apply tags by accessing the page properti
 
 To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. The **Standard Tags** tab is the default namespace, which means there is no `namespace-string:` prefixed to the taxonomy.
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![Select Tags window; use X button to deselect the currently selected tags](assets/chlimage_1-41.png)
 
 ### Publishing Tags {#publishing-tags}
 

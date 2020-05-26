@@ -32,8 +32,7 @@ AEM Assets generates the following standard reports for you:
 
 AEM administrators can easily generate and customize these reports for your implementation. An administrator can follow these steps to generate a report:
 
-1. In Experience Manager interface, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Reports]**.
-
+1. In Experience Manager interface, click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**. 
 ![](assets/AssetsReportNavigation.png)
 
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
@@ -108,7 +107,9 @@ You can add custom columns to the following reports to display more data for you
 * Brand Portal publish
 * Files
 
-1. In the Experience Manager interface, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Reports]**.
+To add custom columns to these reports, follow these steps: 
+
+1. In the Experience Manager interface, click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
