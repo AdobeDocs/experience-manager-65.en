@@ -78,6 +78,10 @@ Administrators can add and customize the following rich media types when creatin
    <td><p>Hotspots, or image maps, or both are added to a series of two or more images. A customer can pan the images left or right and then click a hotspot on an image for additional details or for purchasing directly from a website's category, home, or landing pages.</p> </td>
   </tr>
   <tr>
+   <td><strong>Dimensional</strong><br /> </td>
+   <td><p>Displays 3D scenes that let you turn, pan, zoom, or recenter your camera.</p> </td>
+  </tr>
+  <tr>
    <td><strong>Flyout Zoom</strong></td>
    <td><p>Displays a second image of the zoomed area next to the original image. There are no controls to use - users move the selection over the area they want to view.</p> <p>When determining the complete bandwidth usage for this viewer, consider that both the main image and the flyout image are served in the viewer. The main image size (Stage Width and Height) and the Zoom Factor determine the flyout image size. To keep the flyout file size from becoming too large, balance these two values: if you have a large main image size, lower the Zoom Factor value. (The Flyout Width and Flyout Height determine the size of the flyout window, but not the size of the flyout image that is served into the viewer.)</p> <p>For example, if your main image size is 350 by 350 pixels, with a Zoom Factor of 3, the resulting flyout image is 1050 by 1050 pixels. If your main image size is 300 by 300 pixels, with a Zoom Factor of 4, the flyout image is 1200 by 1200 pixels. Depending on the JPEG quality setting (recommended settings are between 80-90), you can decrease the file size significantly. Recommended zoom factors are 2.5 to 4, depending on the size of your main image.</p> </td>
   </tr>
@@ -108,6 +112,10 @@ Administrators can add and customize the following rich media types when creatin
      <li>An aspect ratio of 2:1.</li>
      <li>Tagged with the keywords <code>equirectangular</code>, or <code>spherical</code> and <code>panorama</code>, or <code>spherical </code>and <code>panoramic</code>. See <a href="/help/sites-authoring/tags.md">Using Tags</a>.</li>
     </ul> <p>Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the "Panoramic Media" WCM component.</p> <p><strong>Important</strong>: This viewer is only available in Dynamic Media - Scene7 mode.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>Smart Crop Video</strong><br /> </td>
+   <td><p>Use this viewer to automatically detect and crop to the focal point in any video.</p> </td>
   </tr>
   <tr>
    <td><strong>Spin Set</strong></td>
