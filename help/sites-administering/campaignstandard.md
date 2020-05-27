@@ -143,7 +143,7 @@ This step is also necessary to replicate certain authoring instance configuratio
 
 To configure replication between AEM instances:
 
-1. From the authoring instance, select **AEM logo**&gt; **Tools **icon &gt; **Deployment** &gt; **Replication** &gt; **Agents on author**, then click **Default Agent**.
+1. From the authoring instance, select **AEM logo**&gt; **Tools** &gt; **Deployment** &gt; **Replication** &gt; **Agents on author**, then click **Default Agent**.
 
    ![chlimage_1-126](assets/chlimage_1-126a.png)
 
