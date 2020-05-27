@@ -57,7 +57,7 @@ Folders are like directories in traditional file systems. They are containers fo
 In Experience Manager an asset contains the following elements:
 
 * The properties and metadata of the asset.
-* Multiple renditions such as the original rendition (which is the originally uploaded asset), a thumbnail and various other renditions. Additional renditions may be images of different sizes, different video encodings, or extracted pages from PDF or Adobe InDesign files.
+* Multiple renditions such as the original rendition (which is the originally uploaded asset), a thumbnail and various other renditions. Additional renditions may be images of different sizes, different video encodings, or extracted pages from PDF or [!DNL Adobe InDesign] files.
 * Optional comments.
 
 For information about elements in Content Fragments see [Content Fragments Support in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).

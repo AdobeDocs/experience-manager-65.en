@@ -16,7 +16,7 @@ contentOwner: AG
 
 ## Understand metadata handling in Experience Manager {#metadata-possibilities-with-aem}
 
-Describe the journey of an assets' metadata. What all happens to metadata when an asset is added to AEM.
+Describe the journey of an assets' metadata. What all happens to metadata when an asset is added to Experience Manager.
 
 ## Add metadata to your digital assets {#add-metadata}
 
