@@ -182,6 +182,11 @@ See "Viewers release notes" in the table of contents of the [Viewers Reference G
    <td><code>html5_carouselviewer_numeric_light.css</code></td>
   </tr>
   <tr>
+   <td>Dimensional</td>
+   <td>Dimensional</td>
+   <td><code>html5_dimensionalviewer.css</code></td>
+  </tr>
+  <tr>
    <td>Flyout</td>
    <td>Flyout_Zoom</td>
    <td><code>html5_flyoutviewer.css</code></td>
@@ -245,6 +250,16 @@ See "Viewers release notes" in the table of contents of the [Viewers Reference G
    <td>Shoppable_Video_light</td>
    <td>Interactive_Video</td>
    <td><code>html5_interactivevideovewer_light.css</code></td>
+  </tr>
+  <tr>
+   <td>SmartCropVideo</td>
+   <td>Smart_Crop_Video</td>
+   <td><code>html5_smartcropvideoviewer.css</code></td>
+  </tr>
+  <tr>
+   <td>SmartCropVideo_social</td>
+   <td>Smart_Crop_Video</td>
+   <td><code>html5_smartcropvideoviewersocial.css</code></td>
   </tr>
   <tr>
    <td>SpinSet_dark</td>

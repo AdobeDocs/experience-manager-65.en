@@ -49,7 +49,7 @@ See [Configuring Dynamic Media Cloud Services](/help/assets/config-dms7.md#confi
     * Upload your 3D assets to folders.
 
         * [Upload your 3D assets for use with the Dimensional viewer](/help/assets/managing-assets-touch-ui.md#uploading-assets).
-        * Learn more about [Supported 3D file formats in Dynamic Media](supported-3d-file-formats-in-dm).
+        * Learn more about [Supported 3D file formats for upload in Dynamic Media](supported-3d-file-formats-in-dm).
 
 1. **Manage your 3D assets in Dynamic Media** by doing any of the following:
 
@@ -57,19 +57,17 @@ See [Configuring Dynamic Media Cloud Services](/help/assets/config-dms7.md#confi
 
         * [Organizing digital assets](/help/assets/organize-assets.md#organize-digital-assets).
 
-        * [Searching 3D assets](search-assets.md#custompredicates) or [Searching assets](managing-assets-touch-ui.md#search-assets).
+        * [Searching 3D assets](managing-assets-touch-ui.md#search-assets) and [Using custom predicates to filter search results](search-assets.md#custompredicates).
 
-    * Preview and publish 3D assets
+    * Preview 3D assets
 
-        * [Previewing 3D assets](managing-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](previewing-assets.md).
-        * [Manage viewer presets](managing-viewer-presets.md).
+        * [Previewing 3D assets](previewing-assets.md).
+        * [Managing Viewer Presets](managing-viewer-presets.md).
         * [Publishing assets](publishing-dynamicmedia-assets.md).
 
     * Work with 3D asset metadata
 
-        * Edit the properties of a 3D asset such as the title, description, and tags, custom metadata fields:
-          [Editing 3D properties](managing-assets-touch-ui.md#editing-properties).
-
+        * [Editing the properties of a 3D asset such as the title, description, and tags, custom metadata fields](managing-assets-touch-ui.md#editing-properties).
         * [Managing metadata for digital assets](metadata.md).
         * [Metadata schemas](metadata-schemas.md).
 
