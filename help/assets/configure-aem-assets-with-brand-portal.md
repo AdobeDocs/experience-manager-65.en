@@ -72,7 +72,7 @@ For detailed instructions see,
 
 * [AEM 6.5 Service Pack Release Notes](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html) 
 
-**Contact Support** if you are unable to find the latest AEM package or Service Pack.
+**Contact Customer Care** if you are unable to find the latest AEM package or Service Pack.
 
 ## Create configuration {#configure-new-integration-65}
 
