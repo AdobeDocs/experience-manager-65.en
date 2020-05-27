@@ -28,7 +28,7 @@ Read on to know what integrations to pick between desktop and the enterprise-gra
 
 | Value proposition for the involved personas | Adobe offering | Involved surfaces |
 |---|---|---|
-| Creative users discover assets from [!DNL Experience Manager], open and use them, edit and upload changes to [!DNL Experience Manager], as well as upload new files into [!DNL Experience Manager], without leaving [!DNL Creative Cloud] apps. | [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator, and InDesign |
+| Creative users discover assets from [!DNL Experience Manager], open and use them, edit and upload changes to [!DNL Experience Manager], as well as upload new files into [!DNL Experience Manager], without leaving [!DNL Creative Cloud] apps. | [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. |
 | Business users simplify opening and using assets, editing and uploading changes to [!DNL Experience Manager], and uploading new files into [!DNL Experience Manager] from the desktop environment. They use a generic integration to open any asset type in the native desktop application, including non-Adobe ones. | [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] desktop app on Win and Mac desktop |
 | Marketers and business users discover, preview, license and save, and manage the [!DNL Adobe Stock] assets from within [!DNL Experience Manager]. Licensed and saved assets provide select [!DNL Adobe Stock] metadata for better governance. | [Experience Manager and Adobe Stock integration](aem-assets-adobe-stock.md) | [!DNL Experience Manager] web interface |
 
@@ -175,7 +175,7 @@ As discussed in this document, it is recommended to carry out major updates on a
 
 Adobe Asset Link offers a good support for this use case:
 
-* When users in Photoshop, InDesign, or Illustrator intent to edit a file, they execute a Check-out operation on the given asset
+* When users in [!DNL Photoshop], [!DNL InDesign], or [!DNL Illustrator] intent to edit a file, they execute a Check-out operation on the given asset
 * The asset is downloaded in background, put into users Creative Cloud account synchronized to disk by Creative Cloud desktop app, and the check-out flag is toggled in [!DNL Experience Manager] on the asset to minimize editing conflicts
 * From there on, the user works in a file that's stored locally in the synced location, and can continue working and saving necessary changes at any frequency required
 * Additionally, because the asset is in the Creative Cloud account, it is also available on other devices that the user might have (for example, can be opened or edited in a dedicated Creative Cloud mobile app), and can be shared with other Creative Cloud users for collaboration purposes.

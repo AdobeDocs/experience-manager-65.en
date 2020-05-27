@@ -2,10 +2,10 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Assets User Guide
+user-guide-title: Experience Manager 6.5 Assets User Guide
 ---
 
-# AEM 6.5 Assets User Guide {#assets}
+# Experience Manager 6.5 Assets User Guide {#assets}
 
 + [[!DNL Assets] user guide](home.md)
 + [AEM 6.5 Assets release notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
@@ -146,7 +146,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Asynchronous operations](asynchronous-jobs.md)
     + [Lightbox](touch-ui-light-box.md)
     + [Asset insights](touch-ui-asset-insights.md)
-    + [Enable asset insights through DTM](touch-ui-using-dtm-for-asset-insights.md)
+    + [Enable asset insights through Adobe Launch](touch-ui-using-dtm-for-asset-insights.md)
     + [Configure asset insights](touch-ui-configuring-asset-insights.md)
     + [Check in and check out assets](check-out-and-submit-assets.md)
     + [Apply translation cloud services to folders](transition-cloud-services.md)

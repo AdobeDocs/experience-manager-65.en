@@ -1,19 +1,19 @@
 ---
 title: Asynchronous operations
-description: AEM Assets optimizes performance by asynchronously completing some resource-intensive tasks.
+description: Experience Manager Assets optimizes performance by asynchronously completing some resource-intensive tasks.
 contentOwner: AG
 ---
 
 # Asynchronous operations {#asynchronous-operations}
 
-To reduce adverse impact on performance, Adobe Experience Manger (AEM) Assets processes certain long-running and resource-intensive asset operations asynchronously.
+To reduce adverse impact on performance, Adobe Experience Manger Assets processes certain long-running and resource-intensive asset operations asynchronously.
 
 These operations include:
 
 * Deleting many assets
 * Moving many assets or assets with many references
 * Exporting/importing asset metadata in bulk.
-* Fetching assets, that are above the threshold limit set, from a remote AEM deployment.
+* Fetching assets, that are above the threshold limit set, from a remote Experience Manager deployment.
 
 Asynchronous processing involves enqueuing multiple jobs and eventually running them in a serial manner subject to the availability of system resources.
 
@@ -21,11 +21,11 @@ You can view the status of asynchronous jobs from the **[!UICONTROL Async Job St
 
 >[!NOTE]
 >
->By default, jobs in AEM Assets run in parallel. If N is the number of CPU cores, N/2 jobs can run in parallel, by default. To use custom settings for the job queue, modify the **[!UICONTROL Async Operation Default Queue]** configuration from the web console. For more information, see [queue configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
+>By default, jobs in Assets run in parallel. If N is the number of CPU cores, N/2 jobs can run in parallel, by default. To use custom settings for the job queue, modify the **[!UICONTROL Async Operation Default Queue]** configuration from the web console. For more information, see [queue configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
 ## Monitor the status of asynchronous operations {#monitoring-the-status-of-asynchronous-operations}
 
-Whenever AEM Assets processes an operation asynchronously, you receive a notification at your inbox and through email.
+Whenever Assets processes an operation asynchronously, you receive a notification at your inbox and through email.
 
 To view the status of the asynchronous operations in detail, navigate to the **[!UICONTROL Async Job Status]** page.
 
@@ -65,7 +65,7 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 
 ## Purge completed jobs {#purging-completed-jobs}
 
-AEM Assets runs a purge job everyday at 1:00 AM to delete completed asynchronous jobs that are more than a day old.
+Experience Manager Assets runs a purge job everyday at 1:00 AM to delete completed asynchronous jobs that are more than a day old.
 
 You can modify the schedule for the purge job and the duration for which details of completed jobs are retained before they are deleted. You can also configure the maximum number of completed jobs for which details are retained at any point of time.
 
@@ -79,7 +79,7 @@ You can modify the schedule for the purge job and the duration for which details
 
 ## Configure thresholds for asynchronous processing {#configuring-thresholds-for-asynchronous-processing}
 
-You can configure the threshold number of assets or references for AEM Assets to process a particular operation asynchronously.
+You can configure the threshold number of assets or references for Assets to process a particular operation asynchronously.
 
 ### Configure thresholds for asynchronous delete operations {#configuring-thresholds-for-asynchronous-delete-operations}
 

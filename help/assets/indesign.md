@@ -53,7 +53,7 @@ The [!DNL Adobe InDesign Server] can be integrated with [!DNL Experience Manager
     * The extracted text and files are stored in [!DNL Experience Manager Assets].
     * All renditions are stored in [!DNL Experience Manager Assets], in the asset itself.
 
-## Integrate the [!DNL InDesign Server] with AEM {#integrating-the-indesign-server-with-aem}
+## Integrate the [!DNL InDesign Server] with Experience Manager {#integrating-the-indesign-server-with-aem}
 
 To integrate the [!DNL InDesign Server] for use with [!DNL Experience Manager Assets] and after configuring your proxy, you need to:
 
@@ -106,7 +106,7 @@ Media extraction arguments and script paths
 
 * **Extend Scripts**: You can specify different script combinations here. If you want your own scripts to be executed on the [!DNL InDesign Server], save the scripts at `/apps/settings/dam/indesign/scripts`.
 
-For information about Indesign scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
 >[!CAUTION]
 >
@@ -162,7 +162,7 @@ If the [!DNL InDesign Server] and [!DNL Experience Manager] run on different hos
 
 1. Access the Web Console at `https://[aem_server]:[port]/system/console/configMgr`.
 1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and click **[!UICONTROL Edit]** to open it.
-1. Specify the host name and context path for the [!DNL Indesign Server] and click **Save**.
+1. Specify the host name and context path for the [!DNL Adobe InDesign Server] and click **Save**.
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
 
@@ -213,7 +213,7 @@ For [!DNL InDesign Server] 10.0 or higher, perform the following steps to enable
 
 >[!NOTE]
 >
->For [!DNL InDesign Server] integration with [!DNL Experience Manager Assets], use a multi-core processor because the Session Support feature necessary for the integration is not supported on single core systems.
+>For [!DNL InDesign Server] integration with [!DNL Experience Manager Assets], use a multi-core processor because the session support feature necessary for the integration is not supported on single core systems.
 
 ## Configure [!DNL Experience Manager] credentials {#configure-aem-credentials}
 
