@@ -35,7 +35,7 @@ Let's take a use case where you need to create a sequence for fill, verify, sign
     * **E-sign**: It contains the **Sign** component that can be used in an XFA-based adaptive form. it provides the following signing services:
 
         * Adobe Document Cloud eSign services
-        * (Deprecated) Scribble signature
+        * Scribble signature
 
     * **Confirmation**: It contains the **Summary** component that displays a message confirming the form submission after a user signs the form and reaches the Confirmation (Summary) step in the sequence. Authors can configure the text of the Summary component, show a thank you message, show a link to the generated PDF, and so on.
 

@@ -119,7 +119,7 @@ Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE
    <td>Supported</td>
   </tr>
   <tr>
-   <td>(Deprecated) Scribble Signature</td>
+   <td>Scribble Signature</td>
    <td>Supported</td>
    <td>Supported<br /> </td>
   </tr>
