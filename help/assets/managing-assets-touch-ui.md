@@ -570,7 +570,7 @@ See [Download assets from Experience Manager](/help/assets/download-assets-from-
 >
 >For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets.](/help/assets/publishing-dynamicmedia-assets.md)
 
-1. Navigate to the location of the asset(s)/folder you want to publish
+1. Navigate to the location of the asset(s)/folder you want to publish.
 
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. If the asset references other assets, its references are listed in the wizard. Only references that are either unpublished or modified since they were last published/unpublished are displayed. Choose the references you want to publish.
