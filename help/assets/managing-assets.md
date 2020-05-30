@@ -21,6 +21,6 @@ The following topics describe what you need to do to manage Dynamic Media assets
 
 * [Best practices for optimizing the quality of your images](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Previewing Dynamic Media assets](/help/assets/previewing-assets.md)
-* [Publishing Dynamic Media Assets](help/assets/publishing-dynamicmedia-assets.md)
+* [Publishing Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md)
 * [Working with Selectors](/help/assets/working-with-selectors.md)
 

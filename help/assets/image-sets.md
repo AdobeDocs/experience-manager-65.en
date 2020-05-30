@@ -45,7 +45,7 @@ To get you up and running quickly:
 
    To create an Image Set in Assets, tap or click **[!UICONTROL Create > Image Sets]**. Then, add images and click **[!UICONTROL Save]**.
 
-   You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). 
+   You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md). 
    >[!IMPORTANT]
    >
    >Batch sets are created by the IPS (Image Production System) as part of asset ingestion and are available only in Dynamic Media - Scene7 mode.

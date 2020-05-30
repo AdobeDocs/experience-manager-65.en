@@ -61,12 +61,11 @@ See [Configuring Dynamic Media Cloud Services](/help/assets/config-dms7.md#confi
 
     * View 3D assets
 
-        * [Viewing and interacting with 3D assets](#viewing-three-d-assets.md).
+        * [Viewing and interacting with 3D assets](#viewing-three-d-assets).
         * [Managing the Dimensional viewer preset](/help/assets/managing-viewer-presets.md).
 
     * Work with 3D asset metadata
 
-        * [Editing the properties of a 3D asset such as the title, description, and tags, custom metadata fields](/help/assets/managing-collections-touch-ui.md#editing-properties).
         * [Managing metadata for digital assets](/help/assets/metadata.md).
         * [Metadata schemas](/help/assets/metadata-schemas.md).
 
