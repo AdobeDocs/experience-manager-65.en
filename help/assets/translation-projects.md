@@ -18,7 +18,7 @@ To create a language copy, trigger one of the following language copy workflows 
 
 >[!NOTE]
 >
->If you launch a translation workflow for complex assets, such as PDF and InDesign files, their subassets or renditions (if any) are not submitted for translation.
+>If you launch a translation workflow for complex assets, such as PDF and [!DNL Adobe InDesign] files, their subassets or renditions (if any) are not submitted for translation.
 
 ## Create and translate workflow {#create-and-translate-workflow}
 

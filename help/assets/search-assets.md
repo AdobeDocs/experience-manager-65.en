@@ -155,7 +155,7 @@ You can search for assets based on exact values of specific metadata fields, suc
 | Creator                                   | creator:John                          |
 | Location                                  | location:NA                           |
 | Description                               | description:"Sample Image"            |
-| Creator tool                              | creatortool:"Adobe Photoshop CC 2015" |
+| Creator tool                              | creatortool:"Adobe Photoshop CC 2020" |
 | Copyright Owner                           | copyrightowner:"Adobe Systems"        |
 | Contributor                               | contributor:John                      |
 | Usage Terms                               | usageterms:"CopyRights Reserved"      |
@@ -193,7 +193,7 @@ Here are some examples of search formats for complex queries:
 
 ### Search assets from Adobe Asset Link panel {#aal}
 
-Using Adobe Asset Link, the creative professionals can now access content stored in [!DNL Experience Manager Assets], without leaving the supported Adobe Creative Cloud apps. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the Creative Cloud apps: Photoshop, Illustrator, and InDesign. Asset Link also allows users to search visually similar results. The visual search display results are powered by Adobe Sensei's machine learning algorithms and help users find aesthetically similar images. See [search and browse assets](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) using Adobe Asset Link.
+Using Adobe Asset Link, the creative professionals can now access content stored in [!DNL Experience Manager Assets], without leaving the supported Adobe Creative Cloud apps. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud apps]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. Asset Link also allows users to search visually similar results. The visual search display results are powered by Adobe Sensei's machine learning algorithms and help users find aesthetically similar images. See [search and browse assets](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) using Adobe Asset Link.
 
 ### Search assets in [!DNL Experience Manager] desktop app {#desktopapp}
 

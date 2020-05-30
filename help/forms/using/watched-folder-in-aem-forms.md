@@ -642,7 +642,7 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
 ### Create a Workflow {#create-a-workflow}
 
 1. Open AEM Workflow UI in a browser window.
-   https://[servername]:'port'/worklow
+   https://[servername]:'port'/workflow
 
 1. In the Models view, click **New**. In the New Workflow dialog, specify **Title**, and click **OK**.
 

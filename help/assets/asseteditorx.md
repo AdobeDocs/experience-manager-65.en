@@ -10,7 +10,7 @@ The Asset Editor is the page that opens when an asset found through the Asset Sh
 
 Configuration of the editor using the predefined editing components is covered in [Creating and Configuring an Asset Editor Page](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
-In addition to using pre-existing editor components, Adobe Experience Manager (AEM) developers can also create their own components.
+In addition to using pre-existing editor components, Adobe Experience Manager developers can also create their own components.
 
 ## Create an Asset Editor template {#creating-an-asset-editor-template}
 
@@ -22,9 +22,9 @@ The following sample pages are included in Geometrixx:
 
 ### Configure Clientlib {#configuring-clientlib}
 
-AEM Assets components use an extension of the WCM edit clientlib. The clientlibs are usually loaded in `init.jsp`.
+Assets components use an extension of the WCM edit clientlib. The clientlibs are usually loaded in `init.jsp`.
 
-Compared to the default clientlib loading (in core's `init.jsp`), an AEM Assets template must have the following:
+Compared to the default clientlib loading (in core's `init.jsp`), an Assets template must have the following:
 
 * The template must include the `cq.dam.edit` clientlib (instead of `cq.wcm.edit`).
 
@@ -34,7 +34,7 @@ In most cases, copying the existing sample `init.jsp` (`/apps/geometrixx/compone
 
 ### Configure JS actions {#configuring-js-actions}
 
-Some of the AEM Assets components require JS functions defined in `component.js`. Copy this file to your component directory and link it.
+Some of the Assets components require JS functions defined in `component.js`. Copy this file to your component directory and link it.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -44,7 +44,7 @@ The sample loads this javascript source in `head.jsp`(`/apps/geometrixx/componen
 
 ### Additional style sheets {#additional-style-sheets}
 
-Some of the AEM Assets components use the AEM widgets library. To be rendered properly in the content context, an additional style sheet has to be loaded. The tag action component requires one more.
+Some of the Assets components use the widgets library. To be rendered properly in the content context, an additional style sheet has to be loaded. The tag action component requires one more.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
