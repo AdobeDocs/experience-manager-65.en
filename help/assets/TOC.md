@@ -45,7 +45,6 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [HTTP2 delivery of content](http2.md)
     + [Delivering Dynamic Media assets](delivering-dynamic-media-assets.md)
     + [Activating hotlink protection in Dynamic Media](hotlink-protection.md)
-    + [3D](assets-3d.md)
     + [Image Sets](image-sets.md)
     + [Panoramic Images](panoramic-images.md)
     + [Mixed Media Sets](mixed-media-sets.md)

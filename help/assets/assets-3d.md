@@ -32,9 +32,9 @@ Dynamic Media supports the following 3D file formats:
 | GLB |Binary GL Transmission|model/gltf-binary | Includes the textures with the asset instead of referencing them as external images.|
 | OBJ |WaveFront 3D Object File|application/x-tgif ||
 | STL |Stereolithography|application/vnd.ms-pki.stl ||
-| USDZ |Universal Scene Description Zip archive|model/vnd.usdz+zip |Support for ingestion only; preview not available. USDZ is Apple's proprietary 3D format that can only be view by Safari or iOS.|
+| USDZ |Universal Scene Description Zip archive|model/vnd.usdz+zip |*Support for ingestion only; no viewing or interaction is available.* USDZ is Apple's proprietary 3D format that can only be view by Safari or iOS.|
 
-## Quick Start: 3D assets in Dynamic Media {#quick-start-three-d}
+# Quick Start: 3D assets in Dynamic Media {#quick-start-three-d}
 
 The following step-by-step workflow description is designed to help you get up and running quickly with 3D assets in Dynamic Media - Scene7 mode. 
 
@@ -46,58 +46,39 @@ Before you work with 3D assets in Dynamic Media, make sure that your AEM adminis
 
 See [Configuring Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configuring Dynamic Media - Scene7 mode and [Troubleshooting Dynamic Media - Scene7 mode.](/help/assets/troubleshoot-dms7.md)
 
-1. **Upload your 3D assets into Dynamic Media** by doing the following:
+1. **Upload 3D assets**
 
-    * Upload your 3D assets to folders.
+    * [Uploading your 3D assets for use in Dynamic Media](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+    * [Supported 3D file formats for upload in Dynamic Media](#supported-three-d-file-formats-in-dm).
 
-        * [Upload your 3D assets for use with the Dimensional viewer](/help/assets/managing-assets-touch-ui.md#uploading-assets).
-        * Learn more about [Supported 3D file formats for upload in Dynamic Media](supported-three-d-file-formats-in-dm).
+1. **Manage 3D assets**
 
-1. **Manage your 3D assets in Dynamic Media** by doing any of the following:
-
-    * Organize, browse, and search 3D assets
+    * Organize and search 3D assets
 
         * [Organizing digital assets](/help/assets/organize-assets.md#organize-digital-assets).
+        * [Searching 3D assets](/help/assets/assets-dm/managing-assets-touch-ui.md#search-assets).
+        * [Using custom predicates to filter search results](/help/assets/search-assets.md#custompredicates).
 
-        * [Searching 3D assets](managing-assets-touch-ui.md#search-assets) and [Using custom predicates to filter search results](search-assets.md#custompredicates).
+    * View 3D assets
 
-    * Preview 3D assets
-
-        * [Viewing 3D assets](#viewing-three-d-assets.md).
-        * [Managing Viewer Presets](managing-viewer-presets.md).
-        * [Publishing assets](publishing-dynamicmedia-assets.md).
+        * [Viewing and interacting with 3D assets](#viewing-three-d-assets.md).
+        * [Managing the Dimensional viewer preset](/help/assets/managing-viewer-presets.md).
 
     * Work with 3D asset metadata
 
-        * [Editing the properties of a 3D asset such as the title, description, and tags, custom metadata fields](managing-assets-touch-ui.md#editing-properties).
+        * [Editing the properties of a 3D asset such as the title, description, and tags, custom metadata fields](/help/assets/managing-collections-touch-ui.md#editing-properties).
         * [Managing metadata for digital assets](metadata.md).
         * [Metadata schemas](metadata-schemas.md).
 
-1. **Publish your 3D assets in Dynamic Media** by doing one of the following:
+1. **Publish 3D assets**
 
-    * If you are using Adobe Experience Manager as your web content management system you can add 3D assets directly to your web pages.
+    * [Publishing Dynamic Media 3D assets](publishing-three-d-assets.md)
 
-        * [Adding 3D assets to your web pages](adding-dynamic-media-assets-to-pages.md).
+# Viewing and interacting with 3D assets {#viewing-three-d-assets}
 
-    * If you are using a third-party web content management system, you can link or embed 3D assets to your web pages.
+This section describes how to view and interact with 3D assets two different ways: from within the asset details page and from within the 3D Media component in Sites.
 
-        * Integrate a 3D asset using URL:
-          [Linking URLs to your web application](linking-urls-to-yourwebapplication.md).
-
-        * Integrate a 3D asset using embed code on web page:
-          [Embedding the video viewer on a web page](embed-code.md).
-
->[!NOTE]
->
->File references that are present in the primary 3D model file are currently ignored. Dynamic Media does not support references to secondary 3D model files.
-
-# Viewing 3D assets {#viewing-three-d-assets}
-
-This section describes both how to view 3D assets in asset details and how to view assets that are in the 3D Media component in Sites.
-
-## Viewing 3D assets in the Asset Details page {#viewing-three-d-assets-in-the-asset-details-page}
-
-The interactive 3D viewer is available from the asset details page in AEM. The viewer includes, among other things, a collection of interactive camera controls that let you orbit, zoom, and pan the 3D asset.
+The interactive 3D viewer includes, among other things, a collection of interactive camera controls that let you orbit, zoom, and pan the 3D asset.
 
 Be aware that the time it takes to open a 3D asset in the Asset Details page view depends on several factors. These factors include such things as the following:
 
@@ -107,12 +88,19 @@ Be aware that the time it takes to open a 3D asset in the Asset Details page vie
 
 In addition, the capabilities of the client computer-such as a workstation, notebook, or mobile touch device-are also important to consider when you manipulate the camera interactively. A reasonably powerful system with good graphics capabilities can make the interactive 3D viewing experience smoother and more favorable.
 
-**To view 3D assets in the Asset Details page**
+>[!TIP]
+>
+>You can open the Dimensional viewer preset in the Viewer Preset Editor to practice navigating a 3D asset without the need to first upload any 3D files. The Dimensional viewer preset has a built-in 3D asset for you to interact with.
+>
+>See [Managing viewer presets](/help/assets/managing-viewer-presets.md).
+
+## Viewing and interacting with a 3D asset from the asset details page {#viewing-three-d-assets-from-asset-details-page}
+
+See also [Previewing assets using the software interface](/help/assets/previewing-assets.md).
+
+**To view and interact with a 3D asset from the asset details page**
 
 1. Make sure you have uploaded 3D assets into AEM. 
-   
-   See [About the uploading and processing of 3D assets in AEM](upload-processing-3d-assets.md).
-
 1. From AEM, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets > Files]**.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
 1. Navigate to a 3D asset that you want to view.
@@ -136,155 +124,150 @@ In addition, the capabilities of the client computer-such as a workstation, note
 
 1. In the upper-right corner of the page, tap **[!UICONTROL Close]** to return to the Assets page.
 
-## Viewing 3D assets in the Sites 3D Media component {#viewing-assets-in-the-sites-three-d-media-component}
+## Viewing and interacting with a 3D asset inside a 3D Media component {#interacting-with-asset-inside-three-d-media-component}
 
->[!NOTE]
+When a web page is in **[!UICONTROL Edit]** mode, no interaction is possible with a 3D asset. To make the asset interactive, you can use the **[!UICONTROL Preview]** feature to view the web page in the page editor with full access to the functionality of the 3D Media component.
+
+>[!IMPORTANT]
 >
->This section applies only to the classic webGL viewer used for 3D asset types other than Adobe Dimension.
+>You can accomplish this task only after you have added a 3D Media component to a web page and assigned a 3D asset to the component. See [Adding the 3D Media component to a web page](#adding-the-three-d-media-component-to-a-web-page) and [Assigning a 3D asset to a 3D Media component](#assigning-a-three-d-asset-to-the-component).
 
-Depending on the type of device, you access the 3D component features in a variety of ways.
+See also [Previewing assets using the software interface](/help/assets/previewing-assets.md).
 
-For more information, see the following:
+**To view and interact with a 3D asset inside a 3D Media component**
 
-* [Touchscreen devices](#touchscreen-devices)
-* [Touchpad devices](#touchpad-devices)
-* [Mouse and trackball devices](#mouse-and-trackball-devices)
+1. While a web page is in **[!UICONTROL Edit]** mode, do either one of the following:
 
-See also [Previewing a web page that has a 3D component](using-the-3d-sites-component.md#previewing-a-web-page-that-has-a-d-component).
+    * Near the upper-right of the page, click **[!UICONTROL Preview]** to enter **[!UICONTROL Preview]** mode.
+    * Delete `/editor.html` from the page URL in the browser.
 
-![screen_shot_2017-12-11at145654](assets/screen_shot_2017-12-11at145654.png) 
+    ![3D asset showing inside the 3D Media component](/help/assets/assets-dm/3d-asset-in-3d-media.png)
+    A fully interactive 3D asset as displayed in **[!UICONTROL Preview]** mode.
 
-### Touchscreen devices {#touchscreen-devices}
+1.  While in **[!UICONTROL Preview]** mode, do any of the following:
 
-To work with 3D components with touchscreen devices:
+    * **Turn your camera** &ndash; Orbit your view around the 3D scene and objects.
+      * _Mouse_: Left click + drag.
+      * _Touch screen_: Single-finger press + drag.
+    * **Pan your camera** &ndash; Pan your view left, right, up, or down.
+      * _Mouse_: Right click + drag.
+      * _Touch screen_: Two-finger press + drag.
+    * **Zoom your camera** &ndash; Zoom your camera to move in and out of areas of the 3D scene.
+      * _Mouse_: Scroll wheel.
+      * _Touch screen_: Two-finger pinch.
+    * **Recenter your camera** &ndash; Recenter your camera to a point on a object in the 3D scene.
+      * _Mouse_: Double-click.
+      * _Touch screen_: Double-tap.
+    * **Reset** &ndash; Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.
+    * **Full screen mode** &ndash; To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.
 
-1. Use a one-finger drag or swipe to move ("orbit") the viewpoint ("camera") around the object. You can view the object from any direction.  
+# Working with the 3D Media component {#working-with-three-d-media-component}
 
-1. Use a two-finger pinch to move the camera closer to or farther away from the object. This action is similar to zooming in or out and lets you inspect details on the object. Alternatively, press and hold the + or - buttons to move the camera closer or farther away from the object.  
+Dynamic Media includes a Dynamic Media 3D Media component that you can use in AEM Sites to implement interactive viewing of 3D models on web pages.
 
-1. Use a two-finger drag to pan the camera. This action moves the camera laterally to let you look at different parts of the object while zoomed in. Alternatively, tap the **[!UICONTROL Orbit/Pan Toggle]** button to toggle to Pan mode, then use a one-finger drag to pan the camera. Tap the **[!UICONTROL Orbit/Pan Toggle]** button to revert to **[!UICONTROL Orbit]** mode.  
-
-1. Tap **[!UICONTROL Reset Viewer]** to reset the camera. This action brings the object back into full view and, if enabled, resumes auto-spin.  
-
-1. Tap **[!UICONTROL Full Screen]** to enter full-screen mode (if supported by the device). Tap **[!UICONTROL Full Screen]** again to restore the 3D viewer to page-embedded mode.
-
-### Touchpad devices {#touchpad-devices}
-
-To work with 3D components with touchpad devices:
-
-1. Use a one-finger drag while holding the (left) touchpad button down to move ("orbit") the viewpoint ("camera") around the object. You can view the object from any direction.  
-
-1. Use a two-finger drag down or up with touchpad buttons up to move the camera closer to or farther away from the object. This action is similar to zooming in or out and allows inspecting details on the object. Alternatively, click and hold the **[!UICONTROL Zoom In]** or **[!UICONTROL Zoom Out]** buttons to move the camera closer or farther away from the object.  
-
-1. Use a one-finger drag while holding the **ALT/option** key and the (left) touchpad button to pan the camera. This action moves the camera laterally to let you look at different parts of the object while zoomed in. Alternatively, click the **[!UICONTROL Orbit/Pan Toggle]** button to toggle to **[!UICONTROL Pan]** mode, then use a one-finger drag while holding the (left) button to pan the camera. Click the **[!UICONTROL Orbit/Pan Toggle]** button again to revert to **[!UICONTROL Orbit]** mode.  
-
-1. Click **[!UICONTROL Reset Viewer]** to reset the camera. This action brings the object back into full view and, if enabled, resumes auto-spin.  
-
-1. Click **[!UICONTROL Full Screen]** to enter full-screen mode. Use the **Escape** key on your keyboard or click **[!UICONTROL Full Screen]** again to restore the 3D viewer to page-embedded mode.
-
-### Mouse and trackball devices {#mouse-and-trackball-devices}
-
-To work with 3D components with mouse and trackball devices:
-
-1. Drag while holding the left mouse button down to move ("orbit") the viewpoint ("camera") around the object. You can view the object from any direction.  
-
-1. Use the scroll wheel to move the camera closer to or farther away from the object. This is similar to zooming in or out and lets you inspect details on the object. Alternatively, click and hold the **[!UICONTROL Zoom In]** or **[!UICONTROL Zoom Out]** buttons to move the camera closer or farther away from the object.  
-
-1. Drag while holding the **ALT/option** key and the left mouse button to pan the camera. This moves the camera laterally to allow looking at different parts of the object while zoomed in. Alternatively, click the **[!UICONTROL Orbit/Pan Toggle]** button to toggle to **[!UICONTROL Pan]** mode, then drag while holding the left mouse button to pan the camera. Click the **[!UICONTROL Orbit/Pan Toggle]** again to revert to **[!UICONTROL Orbit]** mode.
-1. Click **[!UICONTROL Reset Viewer]** to reset the camera. This action brings the object back into full view and, if enabled, resumes auto-spin.
-1. Click **[!UICONTROL Full Screen]** to enter full-screen mode. Use the **[!UICONTROL Escape]** key on your keyboard or click **[!UICONTROL Full Screen]** again to restore the 3D viewer to page-embedded mode.
-
-# Working with the 3D Media Sites component {#working-with-three-d-sites-component}
-
-Dynamic Media includes an AEM Sites 3D Media component that you can use to implement interactive viewing of 3D models on web pages.
-
-After you have added your 3D component, you can [view the 3D asset in that component.](#viewing-d-assets-in-the-sites-d-component)
-
-## Adding the 3D component to the page template {#adding-the-three-d-media-component-to-the-page-template}
-
-You must enable the 3D component in the page before you can place it on a page. See [Editing templates](/help/sites-authoring/templates.md#editing-a-template-layout-template-author) for detailed information on enabling components in templates.
-
-**Adding the 3D component to the page template**
+## Adding the 3D Media component to the page template {#adding-three-d-media-component-to-page-template}
 
 1. Navigate to **[!UICONTROL Tools > General > Templates]**.  
-
 1. Navigate to the page template that you want to enable the 3D component in and select the template.  
-
 1. Tap **[!UICONTROL Edit]** to open the template.
 1. Near the upper-right of the page, in the drop-down menu, select **[!UICONTROL Structure]** mode, if it is not already active.
 
-   ![image2017-11-14_15-33-57](assets/image2017-11-14_15-33-57.png)
+   ![3d-media-component-structure](/help/assets/assets-dm/3d-media-component-structure.png)
 
-1. Tap in the **[!UICONTROL Layout Container]** region to select it.  
-
-1. Tap the **[!UICONTROL Policy]** button to open the **[!UICONTROL Policy Editor]**.
-1. In the **[!UICONTROL Properties]** section, under the Allowed Components tab, scroll to **[!UICONTROL Dynamic Media]**, then expand the list and check **[!UICONTROL 3D Media]**.
+1. Tap an empty area in the **[!UICONTROL Layout Container]** region to select it and open its associated toolbar.  
+1. On the toolbar, tap the **[!UICONTROL Policy]** icon to open the **[!UICONTROL Policy Editor]**.
+1. In the **[!UICONTROL Properties]** section, under the **[!UICONTROL Allowed Components]** tab, scroll to **[!UICONTROL Dynamic Media]**, then expand the list and check **[!UICONTROL 3D Media]**.
 1. Tap **[!UICONTROL Done]** to save the changes and close the **[!UICONTROL Policy Editor]**.
 
-   You can now place the 3D Sites component on all pages that use this template.
+   You can now place the Dynamic Media 3D Media component on all pages that use this template.
 
-## Adding the Dynamic Media 3D Media viewer component to a web page {#adding-the-d-viewer-component-to-a-web-page}
+## Adding the 3D Media component to a web page {#adding-the-three-d-media-component-to-a-web-page}
 
->[!CAUTION]
->
->This version of AEM 3D supports only one instance of the 3D component on each web page. Multiple 3D components on the same page do not function properly.
+If you are using Adobe Experience Manager as your web content management system you can add 3D assets to your web pages by way of the 3D Media component.
 
-**To add the Dynamic Media 3D Media viewer component to a web page**:
+See also [Adding Dynamic Media assets to pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
-1. Open AEM Sites and select the web page to which you want to add the 3D component.  
+1. Open AEM Sites and select the web page to which you want to add the Dynamic Media 3D Media component.  
+1. Tap the **[!UICONTROL Edit]** (pencil) icon to open the page into the page editor. Make sure **[!UICONTROL Edit]** mode is selected near the upper-right of page.
 
-1. Tap the **[!UICONTROL Edit]** (pencil) icon to open the page into the page editor. Make sure **[!UICONTROL Edit]** mode near the top right of page is selected.
+   ![3d-media-component-add](/help/assets/assets-dm/3d-media-component-edit.png)
 
-   ![image2017-11-14_15-44-40](assets/image2017-11-14_15-44-40.png)
+1. On the toolbar, tap the Side Panel icon to toggle or "turn on" the display of the panel.  
 
-1. Tap the rail selector to open the side panel.  
+1. In the side panel, tap the plus sign icon to open the **[!UICONTROL Components]** list.
 
-1. Tap the plus sign icon to open the **[!UICONTROL Components]** list.  
+    ![3d-media-component-drag-drop](/help/assets/assets-dm/3d-assets-filter.png)
 
-1. Drag the **[!UICONTROL 3D Viewer]** component from the **[!UICONTROL Components]** list to the location on the page where you want the 3D viewer to appear.
+1. Drag the **[!UICONTROL 3D Media]** component from the **[!UICONTROL Components]** list to the location on the page where you want the 3D viewer to appear. 
 
-### Optional &ndash; Configuring the Dynamic Media 3D Media component {#configuring-the-d-component}
+You are now ready to assign a 3D asset to the component.
+
+See [Assigning a 3D asset to the a 3D Media component](#assigning-a-three-d-asset-to-the-component).
+
+### Optional &ndash; Configuring the 3D Media component {#configuring-the-three-d-component}
 
 1. In the AEM Sites page editor, select the **[!UICONTROL 3D Media Viewer]** component that you previously added to the page.  
 1. Tap the **[!UICONTROL Configuration]** icon (wrench) to open the component configuration dialog box.
-1. In the 3D Media dialog box, from the Viewer Preset drop-down list, select Dimensional to assign the Dimensional viewer preset to the component.
-1. Tap the check mark to save your changes.
 
-## Assigning a 3D model to the component {#assigning-a-d-model-to-the-component}
+    ![3d-media-component-config](/help/assets/assets-dm/3d-media-component-config.png)
 
-1. In the AEM Sites page editor, click the **[!UICONTROL Assets]** icon to open the Assets list in the side panel.  
+1. In the 3D Media dialog box, from the Viewer Preset drop-down list, select **[!UICONTROL Dimensional]** to assign the Dimensional viewer preset to the component.
 
-1. Select the **[!UICONTROL 3D Models]** filter to hide unwanted asset types.
+    ![3d-media-component-edit-config](/help/assets/assets-dm/3d-media-component-edit-config.png)
 
-   ![screen_shot_2017-12-11at124258](assets/screen_shot_2017-12-11at124258.png)
+1. In the upper-right corner, tap the check mark to save your changes.
 
-1. Search for or scroll to the 3D asset that you want to view on the page being edited.  
+## Assigning a 3D asset to the 3D Media component {#assigning-a-three-d-asset-to-the-component}
 
-1. Drag the 3D asset from the **[!UICONTROL Assets]** list to the **[!UICONTROL 3D Viewer]** component previously placed on the page.
+After you have added a 3D Media component to a web page, you can assign a 3D asset to it. 
 
-   Adobe Dimension assets are rendered using new viewer technology based on the glTF open standard, while all other 3D asset types rely on the classic AEM 3D webGL viewer. The component automatically selects the appropriate viewer based on the type of the 3D model.
+See [Adding the 3D Media component to a web page](#adding-the-three-d-media-component-to-a-web-page).
 
-## Previewing a web page that has a 3D component {#previewing-a-web-page-that-has-a-three-d-media-component}
+1. In the AEM Sites page editor, click the **[!UICONTROL Assets]** icon to open **[!UICONTROL Assets]** in the side panel.  
+1. In the drop-down list, select **[!UICONTROL 3D]** to show only 3D asset file types.
+1. In the side panel, search for or scroll to the 3D asset that you want to view on the page being edited.
+1. Drag the 3D asset from the Assets side panel and drop it onto the **[!UICONTROL 3D Media]** component that you previously added to the page.
 
-While the web page is in **[!UICONTROL Edit]** mode, the 3D Media component displays the 3D asset but no interaction with the asset is possible.
-
-You can use the **[!UICONTROL Preview]** feature to view the web page in the page editor with full access to the functionality of the 3D Media component.
-
-See also [Viewing 3D assets in the Sites 3D Media component](assets-3d.md#viewing-assets-in-the-sites-three-d-media-component).
-
-**To preview a web page that has a 3D Media component**
-
-1. Do either one of the following:
-
-    * Near the upper-right of the page, click **[!UICONTROL Preview]** to enter preview mode.
-    * Delete `/editor.html` from the page URL in the browser.
-
-## Publishing the page and assets {#publishing-the-page-and-assets}
-
-See [Publishing Assets](managing-assets-touch-ui.md) for information on how to publish assets. See [Publishing Pages](/help/sites-authoring/publishing-pages.md) for information on how to publish pages.
+    ![Assign 3d asset to 3d Media component](/help/assets/assets-dm/3d-asset-add.png)
 
 >[!NOTE]
 >
->Using the **[!UICONTROL Publish Page]** menu item on the **[!UICONTROL Page Information]** menu will publish the page and all primary page dependencies. Secondary dependencies that may be referenced by the 3D model and/or the 3D stage, such as texture maps and IBL images, are not published when you publish the page in this way.
+>While a web page is in the AEM Sites **[!UICONTROL Edit]** mode, the 3D Media component displays the 3D asset but no interaction with the asset is possible. To make the asset interactive, you can use the **[!UICONTROL Preview]** feature to view the web page in the page editor with full access to the functionality of the 3D Media component.
+
+## Publishing Dynamic Media 3D assets {#publishing-three-d-assets}
+
+Dynamic Media accepts a variety of 3D file formats that are supported as *static content* in Dynamic Media. Static content means that you can upload and published 3D assets, but there is no support for *dynamic* imaging or image refitting that is associated with the 3D asset. The reason is because Dynamic Media Imaging Server does not recognize 3D formats. As such, after you publish a 3D asset in Dynamic Media, you have an instant URL that you can copy. The URL for the 3D asset follows the usual Dynamic Media URL structure. However, you cannot edit any parameters in the asset's URL, unlike traditional image assets in Dynamic Media.
+
+In the **[!UICONTROL Card View]**, a small globe icon appears directly below an asset's name and to the left of its date and time to indicate that it is published. In the **[!UICONTROL List View]**, a **[!UICONTROL Published]** column indicates which assets are published or which are not.
+
+See also [Publishing Dynamic Media assets](publishing-dynamicmedia-assets.md).
+
+See also [Publishing Pages](/help/sites-authoring/publishing-pages.md).
+
+>[!MORELIKETHIS]
 >
->Adobe recommends that you publish all 3D assets and their dependencies directly from AEM Assets, before publishing the web page that references these assets.
+>If you are using a third-party web content management system, you can link or embed 3D assets to your web pages.
+>
+>See [Linking URLs to your web application](linking-urls-to-yourwebapplication.md).
+>
+
+**To publish Dynamic Media 3D assets**
+
+1. Open a 3D asset (GLB, OBJ, or STL file format) to view it in the asset details page.
+1. On the toolbar, tap **[!UICONTROL Quick Publish]**.
+
+    ![3d-asset-quick-publish](/help/assets/assets-dm/3d-asset-quick-publish.png)
+
+1. Tap **[!UICONTROL Close]** to exit the dialog box and return to the asset details page.
+1. From the drop-down list to the left of the 3D asset's file name, tap **[!UICONTROL Renditions]**.
+
+    ![3d-asset-renditions](/help/assets/assets-dm/3d-asset-renditions.png)
+
+1. Tap **[!UICONTROL original]**. When a 3D asset is published (or "activated") the URL button appears near the bottom-left corner of the page if all of the following 3D asset conditions are met:
+    * The 3D asset is a supported format (GLB, OBJ, STL, and USDZ).
+    * The 3D asset was ingested into the Dynamic Media Image Production System (IPS).
+    * The 3D asset is published.
+
+    ![3d-asset-url](/help/assets/assets-dm/3d-asset-url.png)
+
+1. Tap **[!UICONTROL URL]** to display the 3D asset's production URL. 

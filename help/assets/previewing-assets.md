@@ -24,7 +24,7 @@ Besides using the dedicated Preview feature for video, spin sets, and image sets
 
 >[!NOTE]
 >
->When you are on a webpage (Sites) in AEM, you cannot preview assets in **Edit** mode. You need to go to **Preview** mode by clicking **Preview** in the upper right-hand corner.
+>When you are on a webpage (Sites) in AEM, you cannot preview assets in **Edit** mode. You need to go to **Preview** mode by clicking **Preview** in the upper right-hand corner of the page.
 
 To enable or disable viewer presets in the user interface, see [Managing Viewer Presets](/help/assets/managing-viewer-presets.md).
 
