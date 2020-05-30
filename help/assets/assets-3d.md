@@ -34,7 +34,7 @@ Dynamic Media supports the following 3D file formats:
 | STL |Stereolithography|application/vnd.ms-pki.stl ||
 | USDZ |Universal Scene Description Zip archive|model/vnd.usdz+zip |*Support for ingestion only; no viewing or interaction is available.* USDZ is Apple's proprietary 3D format that can only be view by Safari or iOS.|
 
-# Quick Start: 3D assets in Dynamic Media {#quick-start-three-d}
+## Quick Start: 3D assets in Dynamic Media {#quick-start-three-d}
 
 The following step-by-step workflow description is designed to help you get up and running quickly with 3D assets in Dynamic Media - Scene7 mode. 
 
@@ -74,7 +74,7 @@ See [Configuring Dynamic Media Cloud Services](/help/assets/config-dms7.md#confi
 
     * [Publishing Dynamic Media 3D assets](publishing-three-d-assets.md)
 
-# Viewing and interacting with 3D assets {#viewing-three-d-assets}
+## About viewing and interacting with 3D assets {#viewing-three-d-assets}
 
 This section describes how to view and interact with 3D assets two different ways: from within the asset details page and from within the 3D Media component in Sites.
 
@@ -164,9 +164,17 @@ See also [Previewing assets using the software interface](/help/assets/previewin
     * **Reset** &ndash; Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.
     * **Full screen mode** &ndash; To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.
 
-# Working with the 3D Media component {#working-with-three-d-media-component}
+## About working with the 3D Media component {#working-with-three-d-media-component}
 
-Dynamic Media includes a Dynamic Media 3D Media component that you can use in AEM Sites to implement interactive viewing of 3D models on web pages.
+Dynamic Media includes a Dynamic Media 3D Media component that you can use in AEM Sites to enable interactive viewing of 3D models on web pages.
+
+This section includes the following topics:
+
+* [Adding the 3D Media component to the page template](#adding-three-d-media-component-to-page-template)
+* [Adding the 3D Media component to a web page](#adding-the-three-d-media-component-to-a-web-page)
+  * [Optional &ndash; Configuring the 3D Media component](#configuring-the-three-d-component)
+* [Assigning a 3D asset to the 3D Media component](#assigning-a-three-d-asset-to-the-component)
+
 
 ## Adding the 3D Media component to the page template {#adding-three-d-media-component-to-page-template}
 
