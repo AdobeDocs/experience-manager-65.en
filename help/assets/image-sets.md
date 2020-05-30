@@ -67,7 +67,7 @@ To get you up and running quickly:
 
 1. [Publish Image Sets.](/help/assets/publishing-dynamicmedia-assets.md)
 
-   Publishing an Image Set activates the URL and Embed string. In addition, you must [publish any custom viewer preset](/help/assets/managing-viewer-presets.md) that you have created. Out-of-the box viewer presets are already published.
+   Publishing an Image Set activates the URL and embed code. In addition, you must [publish any custom viewer preset](/help/assets/managing-viewer-presets.md) that you have created. Out-of-the box viewer presets are already published.
 
 1. [Link URLs to your Web Application](/help/assets/linking-urls-to-yourwebapplication.md) or [Embed the Video or Image Viewer](/help/assets/embed-code.md).
 

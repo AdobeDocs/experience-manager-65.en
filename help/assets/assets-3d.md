@@ -100,7 +100,10 @@ See also [Previewing assets using the software interface](/help/assets/previewin
 
 **To view and interact with a 3D asset from the asset details page**
 
-1. Make sure you have uploaded 3D assets into AEM. 
+1. Make sure you have uploaded 3D assets into AEM.
+
+    See [Uploading your 3D assets for use in Dynamic Media](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+
 1. From AEM, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets > Files]**.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
 1. Navigate to a 3D asset that you want to view.
@@ -219,7 +222,7 @@ See [Assigning a 3D asset to the a 3D Media component](#assigning-a-three-d-asse
 
 ## Assigning a 3D asset to the 3D Media component {#assigning-a-three-d-asset-to-the-component}
 
-After you have added a 3D Media component to a web page, you can assign a 3D asset to it. 
+After you have added a 3D Media component to a web page, you can assign a 3D asset to it.
 
 See [Adding the 3D Media component to a web page](#adding-the-three-d-media-component-to-a-web-page).
 
