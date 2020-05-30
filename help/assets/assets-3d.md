@@ -56,7 +56,7 @@ See [Configuring Dynamic Media Cloud Services](/help/assets/config-dms7.md#confi
     * Organize and search 3D assets
 
         * [Organizing digital assets](/help/assets/organize-assets.md#organize-digital-assets).
-        * [Searching 3D assets](help/assets/search-assets.md).
+        * [Searching 3D assets](/help/assets/search-assets.md).
         * [Using custom predicates to filter search results](/help/assets/search-assets.md#custompredicates).
 
     * View 3D assets
