@@ -56,7 +56,7 @@ See [Configuring Dynamic Media Cloud Services](/help/assets/config-dms7.md#confi
     * Organize and search 3D assets
 
         * [Organizing digital assets](/help/assets/organize-assets.md#organize-digital-assets).
-        * [Searching 3D assets](/help/assets/assets-dm/managing-assets-touch-ui.md#search-assets).
+        * [Searching 3D assets](help/assets/search-assets.md).
         * [Using custom predicates to filter search results](/help/assets/search-assets.md#custompredicates).
 
     * View 3D assets
@@ -67,12 +67,12 @@ See [Configuring Dynamic Media Cloud Services](/help/assets/config-dms7.md#confi
     * Work with 3D asset metadata
 
         * [Editing the properties of a 3D asset such as the title, description, and tags, custom metadata fields](/help/assets/managing-collections-touch-ui.md#editing-properties).
-        * [Managing metadata for digital assets](metadata.md).
-        * [Metadata schemas](metadata-schemas.md).
+        * [Managing metadata for digital assets](/help/assets/metadata.md).
+        * [Metadata schemas](/help/assets/metadata-schemas.md).
 
 1. **Publish 3D assets**
 
-    * [Publishing Dynamic Media 3D assets](publishing-three-d-assets.md)
+    * [Publishing Dynamic Media 3D assets](#publishing-three-d-assets)
 
 ## About viewing and interacting with 3D assets {#viewing-three-d-assets}
 
