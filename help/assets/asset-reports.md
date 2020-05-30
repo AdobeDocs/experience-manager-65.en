@@ -1,16 +1,16 @@
 ---
 title: Reports about your digital assets
-description: Understand reports about your assets in AEM Assets that help your understand usage, activity, and sharing of your digital assets.
+description: Understand reports about your assets in Adobe Experience Manager Assets that help your understand usage, activity, and sharing of your digital assets.
 contentOwner: AG
 ---
 
 # Asset Reports {#asset-reports}
 
-Asset reporting is a key tool to assess the utility of your Adobe Experience Manager (AEM) Assets deployment. With AEM Assets, you can generate various reports for your digital assets. The reports provide useful information about your system’s usage, how users interact with assets, and which assets are downloaded and shared.
+Asset reporting is a key tool to assess the utility of your Adobe Experience Manager Assets deployment. With Assets, you can generate various reports for your digital assets. The reports provide useful information about your system’s usage, how users interact with assets, and which assets are downloaded and shared.
 
-Use the information in the reports to derive key success metrics to measure the adoption of AEM Assets within your enterprise and by customers.
+Use the information in the reports to derive key success metrics to measure the adoption of Assets within your enterprise and by customers.
 
-The AEM Assets reporting framework uses Sling jobs to asynchronously process report requests in an ordered manner. It is scalable for large repositories. Asynchronous report processing increases the efficiency and speed with which reports are generated.
+The Assets reporting framework uses Sling jobs to asynchronously process report requests in an ordered manner. It is scalable for large repositories. Asynchronous report processing increases the efficiency and speed with which reports are generated.
 
 The report management interface is intuitive and includes fine-grained options and controls to access archived reports and view report run statuses (success, failed, and queued).
 
@@ -18,7 +18,7 @@ When a report is generated, you are notified through an email (optional) and an 
 
 ## Generate reports {#generate-reports}
 
-AEM Assets generates the following standard reports for you:
+Experience Manager Assets generates the following standard reports for you:
 
 * Upload
 * Download
@@ -30,7 +30,7 @@ AEM Assets generates the following standard reports for you:
 * Files
 * Link Share
 
-AEM administrators can easily generate and customize these reports for your implementation. An administrator can follow these steps to generate a report:
+Experience Manager administrators can easily generate and customize these reports for your implementation. An administrator can follow these steps to generate a report:
 
 1. In Experience Manager interface, click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**. 
 ![](assets/AssetsReportNavigation.png)
@@ -72,7 +72,7 @@ AEM administrators can easily generate and customize these reports for your impl
 
    ![](assets/files_report.png)
 
-   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within AEM Assets. It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. The columns are not customizable.
+   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within Assets. It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. The columns are not customizable.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 

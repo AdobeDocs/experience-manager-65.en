@@ -64,7 +64,7 @@ The other approach to ingesting assets is to pull assets from the local file sys
 
 #### Fetch from the local filesystem {#pulling-from-the-local-filesystem}
 
-The [ACS AEM Tools CSV Asset Importer](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) pulls assets from the filesystem and asset metadata from a CSV file for the asset import. The AEM Asset Manager API is used to import the assets into the system and apply the configured metadata properties. Ideally, assets are mounted on the server via a network file mount or through an external drive.
+The [ACS AEM Tools CSV Asset Importer](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) pulls assets from the filesystem and asset metadata from a CSV file for the asset import. The Experience Manager Asset Manager API is used to import the assets into the system and apply the configured metadata properties. Ideally, assets are mounted on the server via a network file mount or through an external drive.
 
 Because assets do not need to be transmitted over a network, overall performance improves dramatically and this method is generally considered to be the most efficient way to load assets into the repository. Additionally, because the tool supports metadata ingestion, you can import all assets and metadata in a single step rather than also create a second step to apply the metadata through a separate tool.
 
