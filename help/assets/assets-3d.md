@@ -165,9 +165,7 @@ See also [Previewing assets using the software interface](/help/assets/previewin
 
 ## About working with the 3D Media component {#working-with-three-d-media-component}
 
-Dynamic Media includes a Dynamic Media 3D Media component that you can use in AEM Sites to enable interactive viewing of 3D models on web pages.
-
-This section includes the following topics:
+Dynamic Media includes a Dynamic Media 3D Media component that you can use in AEM Sites to enable interactive viewing of 3D models on your web pages.
 
 * [Adding the 3D Media component to the page template](#adding-three-d-media-component-to-page-template)
 * [Adding the 3D Media component to a web page](#adding-the-three-d-media-component-to-a-web-page)
