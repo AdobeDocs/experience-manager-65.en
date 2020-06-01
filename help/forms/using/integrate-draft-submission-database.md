@@ -22,7 +22,7 @@ The sample, discussed in this document, is a reference implementation of customi
 >
 >* The examples and configurations explained in this document are according to MySQL 5.6.24 and you must substitute them appropriately for your database system.
 >* Ensure that you have installed latest version of AEM Forms add-on package. For the list of available packages, see the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article.
->
+> * The sample package works only with Adaptive Forms submit actions.
 
 ## Set up and configure the sample {#set-up-and-configure-the-sample}
 
@@ -75,7 +75,9 @@ Perform the following steps, on all the author and publish instances, to install
 
     * In the Web Console Configuration, find and click Forms Portal Data Service Sample Implementation. You can change the values of data source and data table name.
 
-   **Note**: If you change the table names, provide them in the Form Portal configuration.
+    >[!NOTE]
+    >
+    >If you change the table names, provide them in the Form Portal configuration.   
 
 1. Leave other configurations as is and click **[!UICONTROL Save]**.
 

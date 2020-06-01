@@ -1,14 +1,14 @@
 ---
-title: Customize and extend AEM Assets
+title: Customize and extend Adobe Experience Manager Assets
 description: Learn ways by which you can customize and extend Asset Share and Asset Editor, which presents users with a specifically tailored interface and set of functionality.
 contentOwner: AG
 ---
 
 # Customize and extend Assets {#customizing-and-extending-assets}
 
-The Asset Editor is the primary point of access that users of a Adobe Enterprise Manager (AEM) website will use to find, view, and manipulate the digital assets in your repository.
+The Asset Editor is the primary point of access that users of a Adobe Enterprise Manager website will use to find, view, and manipulate the digital assets in your repository.
 
-As an AEM developer, you can customize and extend the Asset Editor in a number of ways, presenting users with a specifically tailored interface and set of functionality.
+As an Experience Manager developer, you can customize and extend the Asset Editor in a number of ways, presenting users with a specifically tailored interface and set of functionality.
 
 The following aspects of the functionality can be customized or enhanced:
 
@@ -29,6 +29,6 @@ The following aspects of the look and feel of the Asset Editor are customizable:
 
 ## Customize renditions {#customizing-renditions}
 
-In AEM Assets terminology a rendition is the form in which an asset is presented. In general, a particular asset may have multiple renditions. For example, full-color image may have one rendition in its original size, another at a scaled-down size and another that is both scaled down and converted to grayscale.
+In Experience Manager Assets terminology a rendition is the form in which an asset is presented. In general, a particular asset may have multiple renditions. For example, full-color image may have one rendition in its original size, another at a scaled-down size and another that is both scaled down and converted to grayscale.
 
 The renditions that a particular asset is available in can be customized and new renditions created.

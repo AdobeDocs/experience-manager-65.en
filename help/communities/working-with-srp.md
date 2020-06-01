@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# SRP - Community Content Storage{#srp-community-content-storage}
+# SRP - Community Content Storage {#srp-community-content-storage}
 
 ## Introduction {#introduction}
 
@@ -26,18 +26,21 @@ Following are the [characteristics of each SRP option](#characteristics-of-srp-o
 For details regarding the use of SRP for UGC, see [Storage Resource Provider Overview](/help/communities/srp.md).
 
 >[!NOTE]
->
->SRP applies only to community content. It does not affect where site content is stored ([node store](/help/sites-deploying/data-store-config.md)), and does not affect the secure handling of user registration, user profiles and user groups between AEM instances (see also [Managing User Data](#managing-user-data)).
+ >
+ >SRP applies only to community content. It does not affect where site content is stored ([node store](/help/sites-deploying/data-store-config.md)), and does not affect the secure handling of user registration, user profiles and user groups between AEM instances (see also [Managing User Data](#managing-user-data)).
+ >
 
 >[!CAUTION]
->
->As of AEM 6.1, [UGC is never replicated](#ugc-never-replicated).
->
->When the deployment does not include a common store, such as the default [JSRP](/help/communities/topologies.md#jsrp) topology, UGC will be visible only on the AEM publish or author instance on which it was entered. Only if the topology includes a publish cluster will the UGC be visible on any publish instance.
+ >
+ >As of AEM 6.1, [UGC is never replicated](#ugc-never-replicated).
+ >
+ >When the deployment does not include a common store, such as the default [JSRP](/help/communities/topologies.md#jsrp) topology, UGC will be visible only on the AEM publish or author instance on which it was entered. Only if the topology includes a publish cluster will the UGC be visible on any publish instance.
+ >
 
 ## Characteristics of SRP Options {#characteristics-of-srp-options}
 
 [ASRP - Adobe Storage Resource Provider](/help/communities/asrp.md)
+
 With this option, the UGC is persisted remotely in a cloud service hosted and managed by Adobe. It requires an additional license and working with an account representative to provision the account for that specific license. ASRP requires:
 
 * An associated cloud service provided and supported by Adobe to store community content.
@@ -47,14 +50,16 @@ With this option, the UGC is persisted remotely in a cloud service hosted and ma
 
 ASRP is suitable:
 
-* for TarMK publish farm.
-* when there is no intent to invest in local storage.
+* For TarMK publish farm.
+* When there is no intent to invest in local storage.
 
 >[!NOTE]
->
->There is a limit to uploading attachments to posts (or comments) in ASRP, which is 50 MB.
+ >
+ >There is a limit to uploading attachments to posts (or comments) in ASRP, which is 50 MB.
+ >
 
 [MSRP - MongoDB Storage Resource Provider](/help/communities/msrp.md)
+
 With this option, the UGC is persisted directly in a local MongoDB instance.
 
 MSRP requires:
@@ -70,6 +75,7 @@ ASRP is suitable:
 * When expecting large volumes of community content.
 
 [DSRP - Relational Database Storage Resource Provider](/help/communities/dsrp.md)
+
 With this option, the UGC is persisted directly in a local MySQL database instance.
 
 DSRP requires:
@@ -85,6 +91,7 @@ DSRP is suitable:
 * When expecting large volumes of community content.
 
 [JSRP - JCR Storage Resource Provider](/help/communities/jsrp.md)
+
 With the default option, there is no common store. The UGC is persisted only in the same JCR repository as the AEM instance in which it was entered.
 
 JSRP:
@@ -99,7 +106,7 @@ JSRP:
 
 Specifying the default storage option, based on the underlying deployment, is made through the [Storage Configuration console](/help/communities/srp-config.md).
 
-For configuration details of each option, see :
+For configuration details of each option, see:
 
 * [ASRP - Adobe Storage Resource Provider](/help/communities/asrp.md)
 * [MSRP - MongoDB Storage Resource Provider](/help/communities/msrp.md)

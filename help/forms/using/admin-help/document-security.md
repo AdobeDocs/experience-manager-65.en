@@ -85,7 +85,9 @@ Various types of users work with document security to accomplish different tasks
 
   Users with this role can configure the document security server, using the Configuration page in document security section of administration console. This permission is associated with the role, Manage Configuration.
 
-  ***Note**: Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.*
+  >[!NOTE]
+  >
+  >Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.  
 
   **Document security policy set administrator**
 
@@ -98,7 +100,9 @@ Various types of users work with document security to accomplish different tasks
     * View events
     * Delegate
 
-  ***Note**: Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.*
+    >[!NOTE]
+    >
+    >Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.  
 
   **Document security manage invited and local users**
 
@@ -108,7 +112,9 @@ Various types of users work with document security to accomplish different tasks
     * Invite external users
     * Access end-user web pages
 
-  ***Note**: Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.*
+    >[!NOTE]
+    >
+    >Users with this role must also have the administration console User role to be able to log in to administration console and edit any configuration-related settings.  
 
   **Document security invite user**
 

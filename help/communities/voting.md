@@ -36,12 +36,15 @@ Under the **[!UICONTROL Texts & Labels]** tab, specify the properties used to re
 ![chlimage_1-309](assets/chlimage_1-309.png)
 
 * **[!UICONTROL Positive Response Label]**
+  
   (*Required*) The internal property name for a positive response.
 
 * **[!UICONTROL Negative Response Label]**
+  
   (*Required*) The internal property name for a negative response.
 
 * **[!UICONTROL Tally Name]**
+  
   (*Required*) The internal, identifiable property name for this instance of a voting component.
 
 ## Site Visitor Experience {#site-visitor-experience}

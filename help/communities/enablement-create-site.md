@@ -24,7 +24,7 @@ To get started creating a new community site :
 Using the [author instance](https://localhost:4502/)
 
 * Sign-in with administrator privileges
-* Navigate to **[UIControl Communities > Sites]**
+* Navigate to **[!UICONTROL Communities > Sites]**
 
 * Select **Create**
 

@@ -109,9 +109,8 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
 
 >[!NOTE]
 >
->* AEM Forms on JEE supports only 64-bit JVMs on production environments.
 >* It is recommend to track the Security Bulletins from the Java vendor to ensure the safety and security of production environments and install the latest Java Updates.
->
+>* AEM Forms on JEE supports only 64-bit JVMs on production environments.
 
 ### Databases and CRX Persistence {#databases-and-crx-persistence}
 
@@ -144,7 +143,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
   </tr> 
    <tr>
    <td>Oracle Database 19c </td>
-   <td>Repository</td>
+   <td>Repository Microkernal </td>
    <td>Supported</td>
   </tr>
   <tr>
@@ -518,7 +517,9 @@ For additional reuirements see:
 
 ### Designer {#designer}
 
-**Note:** To install Designer on Windows, run the installer with Administrative privileges.
+>[!NOTE]
+>
+>To install Designer on Windows, run the installer with Administrative privileges.
 
 * Microsoft® Windows® 2016 Server, Microsoft Windows 10
 

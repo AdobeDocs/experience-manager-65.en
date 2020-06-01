@@ -1,5 +1,5 @@
 ---
-title: Video
+title: Video in Dynamic Media
 description: Learn how to work with video in Dynamic Media
 uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
 contentOwner: Rick Brough
@@ -10,7 +10,7 @@ discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 ---
 
-# Video {#video}
+# Video in Dynamic Media {#video}
 
 This section describes working with video in Dynamic Media.
 
@@ -40,7 +40,7 @@ The following step-by-step workflow description is designed to help you get up a
         * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/organize-assets.md).
         * Learn more about [Organizing digital assets](/help/assets/organize-assets.md).
 
-    * Upload your master videos to the folders. You can upload video files that are up to 20 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
+    * Upload your master videos to the folders. You can upload video files that are up to 15 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
 
         * [Upload your videos](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
         * Learn more about [Supported input file formats](/help/assets/assets-formats.md#supported-multimedia-formats).

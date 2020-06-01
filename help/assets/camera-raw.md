@@ -1,18 +1,18 @@
 ---
-title: Camera Raw support
-description: Learn how to enable Camera Raw support in Adobe Experience Manager Assets.
+title: [!DNL Adobe Camera Raw] support.
+description: Learn how to enable [!DNL Adobe Camera Raw] support in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 ---
 
-# Support to process images using Camera Raw {#camera-raw-support}
+# Process images using Camera Raw {#camera-raw-support}
 
-You can enable the Camera Raw support to process raw file formats, such as CR2, NEF, and RAF, and render the images in JPEG format. The functionality is supported in Adobe Experience Manager Assets using the [Camera Raw package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) available via Package Share.
+You can enable the [!DNL Adobe Camera Raw] support to process raw file formats, such as CR2, NEF, and RAF, and render the images in JPEG format. The functionality is supported in [!DNL Adobe Experience Manager Assets] using the [Camera Raw package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) available via Package Share.
 
 >[!NOTE]
 >
 >The functionality supports only JPEG renditions. It is supported on Windows 64 bit, Mac OS, and RHEL 7.x.
 
-To enable Camera Raw support in Adobe Experience Manager Assets, follow these steps:
+To enable [!DNL Camera Raw] support in [!DNL Experience Manager Assets], follow these steps:
 
 1. Download the [Camera Raw package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from the Package Share.
 1. Access `https://[aem_server]:[port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
@@ -47,17 +47,17 @@ To enable Camera Raw support in Adobe Experience Manager Assets, follow these st
 >
 >Ensure that the above configuration is the same as the **[!UICONTROL Sample DAM Update Asset With Camera RAW and DNG Handling Step]** configuration.
 
-You can now import camera raw files into AEM Assets. After you install the Camera RAW package and configure the required workflow, **[!UICONTROL Image Adjust]** option appears in the list of side panes.
+You can now import camera raw files into Assets. After you install the Camera RAW package and configure the required workflow, **[!UICONTROL Image Adjust]** option appears in the list of side panes.
 
    ![chlimage_1-131](assets/chlimage_1-337.png)
 
-   *Figure: Options in the side pane*
+   *Figure: Options in the side pane.*
 
    ![chlimage_1-132](assets/chlimage_1-338.png)
 
-   *Figure: Use option to make lightweight edits to your images*
+   *Figure: Use option to make lightweight edits to your images.*
 
-After saving the edits to a Camera Raw image, a new rendition `AdjustedPreview.jpg` is generated for the image. For other image types except Camera Raw, the changes are reflected in all the renditions.
+After saving the edits to a [!DNL Camera Raw] image, a new rendition `AdjustedPreview.jpg` is generated for the image. For other image types except [!DNL Camera Raw], the changes are reflected in all the renditions.
 
 ## Best practices, known issues, and limitations {#best-practices}
 
@@ -65,4 +65,4 @@ The functionality has the following limitations:
 
 * The functionality supports only JPEG renditions. It is supported on Windows 64 Bit, Mac OS, and RHEL 7.x.
 * Metadata writeback is not supported for RAW and DNG formats.
-* The Camera Raw library has limitations around the total pixels it can process at a time. Currently, it can process a maximum of 65000 pixels on the long side of a file or 512 MP whatever criteria is encountered first.
+* The [!DNL Camera Raw] library has limitations around the total pixels it can process at a time. Currently, it can process a maximum of 65000 pixels on the long side of a file or 512 MP whatever criteria is encountered first.

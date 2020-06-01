@@ -20,14 +20,15 @@ The type of features expected from a community experience are well known. Commun
 Once a community site is created, content may be added to the resulting pages using the standard [AEM authoring mode](/help/sites-authoring/editing-content.md). Various community functions are available as seen in the community functions console.
 
 >[!NOTE]
->
->The consoles for the creation of [community sites](/help/communities/sites-console.md), [community site templates](/help/communities/sites.md), [community group templates](/help/communities/tools-groups.md), and [community functions](/help/communities/functions.md) are for use only in the author environment.
+ >
+ >The consoles for the creation of [community sites](/help/communities/sites-console.md), [community site templates](/help/communities/sites.md), [community group templates](/help/communities/tools-groups.md), and [community functions](/help/communities/functions.md) are for use only in the author environment.
+ >
 
 ## Community Functions Console {#community-functions-console}
 
-In the author environment, to reach the community functions console
+In the author environment, to reach the community functions console:
 
-* from global navigation: **Tools, Communities, Community Functions**
+* From global navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Community Functions]**.
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
@@ -48,17 +49,19 @@ When a community function is added to a community site template or added when [m
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
 * **Title**
-  (*required*) The text which appears in the menu of features for the site
+  
+  (*Required*) The text which appears in the menu of features for the site
 
 * **URL**
-  (*required*) The name used to generate the URI. The name must conform to the [naming conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
+  
+  (*Required*) The name used to generate the URI. The name must conform to the [naming conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
 
 For example, using the site created from following the [Getting Started](/help/communities/getting-started.md) tutorial, if
 
 * Title = Web Page
 * URL = page
 
-then the URL to the page is https://localhost:4503/content/sites/engage/en/**page**.html
+Then, the URL to the page is https://localhost:4503/content/sites/engage/en/page.html
 
 and the menu link for the page appears as:
 
@@ -75,13 +78,17 @@ When added to a template, the following dialog opens:
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
 * [Title and URL Settings](#title-and-url-settings)
+
 * **Show "My Activities" view**
+  
   If selected, the Activities page includes a tab which filters activities based on those generated within the community by the current member. Default is selected.
 
 * **Show "All Activities" view**
+  
   If selected, the Activities page includes a tab which includes all activities generated within the community to which the current member has access. Default is selected.
 
 * **Show "News Feed" view**
+  
   If selected, the Activities pages include a tab which filters activities based on those the current member is following. Default is selected.
 
 ### Assignments Function {#assignments-function}
@@ -101,16 +108,21 @@ When added to a template, the following dialog opens:
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
 * [Title and URL Settings](#title-and-url-settings)
+
 * **Allow Privileged Members**
+  
   If selected, the blog only allows privileged members to create articles by allowing selection of a [privileged members group](/help/communities/users.md#privileged-members-group). If not selected, all community members are allowed to create. Default is deselected.
 
 * **Allow File Uploads**
+  
   If selected, the blog includes the ability for members to upload files. Default is selected.
 
 * **Allow Threaded Replies**
+  
   If not selected, the blog allows replies (comments) to an article, but replies to comments are not allowed. Default is selected.
 
 * **Allow Featured Content**
+  
   If selected, the blog is identified as [featured content](/help/communities/featured.md). Default is selected.
 
 ### Calendar Function {#calendar-function}
@@ -121,20 +133,26 @@ When added to a template, the following dialog opens:
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
-* see [Title and URL Settings](#title-and-url-settings)
+* [Title and URL Settings](#title-and-url-settings)
+
 * **Allow Pinning**
+  
   If selected, the forum allows topic replies to be pinned to the beginning of the list of comments. Default is selected.
 
 * **Allow Privileged Members**
+  
   If selected, the blog only allows privileged members to create articles by allowing selection of a [privileged members group](/help/communities/users.md#privileged-members-group). If not selected, all community members are allowed to create. Default is deselected.
 
 * **Allow File Uploads**
+  
   If selected, the blog includes the ability for members to upload files. Default is selected.
 
 * **Allow Threaded Replies**
+  
   If not selected, the blog allows replies (comments) to an article, but replies to comments are not allowed. Default is selected.
 
 * **Allow Featured Content**
+  
   If selected, its content is identified as [featured content](/help/communities/featured.md). Default is selected.
 
 ### Catalog Function {#catalog-function}
@@ -148,7 +166,9 @@ When added to a template, the configuration allows specifying tag namespace(s) u
 ![Catalog function](assets/catalog-function.png)
 
 * [Title and URL Settings](#title-and-url-settings)
+
 * **Select All Namespaces**
+  
   The selected tag namespaces define which tags are selectable by visitors for filtering the list of enablement resources listed in the catalog.
   If selected, all tag namespaces allowed for the community site are available.
   If deselected, it is possible to select one or more namespaces allowed for the community site.
@@ -179,28 +199,35 @@ When added to a template, the following dialog opens:
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
 * [Title and URL Settings](#title-and-url-settings)
+
 * **Allow Pinning**
+  
   If selected, the forum allows topic replies to be pinned to the beginning of the list of comments. Default is selected.
 
 * **Allow Privileged Members**
+  
   If selected, the forum only allows privileged members to post topics by allowing selection of a [privileged members group](/help/communities/users.md#privileged-members-group). If not selected, all community members are allowed to post. Default is deselected.
 
 * **Allow File Uploads**
+  
   If selected, the forum includes the ability for members to upload files. Default is selected.
 
 * **Allow Threaded Replies**
+  
   If not selected, the forum allows comments on a topic, but replies to those comments are not allowed. Default is selected.
 
 * **Allow Featured Content**
+  
   If selected, the component's content is identified as [featured content](/help/communities/featured.md). Default is selected.
 
 ### Groups Function {#groups-function}
 
 >[!CAUTION]
->
->The groups function must *not *be the *first nor the only* function in a site's structure or in a community site template.
->
->Any other function, such as the [page function](#page-function), must be included and listed first.
+ >
+ >The groups function must *not *be the *first nor the only* function in a site's structure or in a community site template.
+ >
+ >Any other function, such as the [page function](#page-function), must be included and listed first.
+ >
 
 The groups function provides the ability for community members to create sub-communities within the community site in the publish environment.
 
@@ -215,13 +242,17 @@ When added to a template, the following dialog opens:
 ![chlimage_1-113](assets/chlimage_1-113.png)
 
 * [Title and URL Settings](#title-and-url-settings)
+
 * **Select Group Templates**
+  
   A drop-down that allows selection of one or more enabled group templates from which the future creator of a new community group (in the publish environment) may choose.
 
 * **Allow Privileged Members**
+  
   If selected, the forum only allows privileged members to post topics by allowing selection of a [privileged members security group](/help/communities/users.md#privileged-members-group). If not selected, all community members are allowed to post. Default is deselected.
 
 * **Allow Publish Creation**
+  
   If selected, authorized community members can create a group in the publish environment. If deselected, new groups (sub-communities) may only be created in the author environment from the Communities Sites' Groups console.
   Default is selected.
 
@@ -234,16 +265,21 @@ When added to a template, the following dialog opens, which specifies the defaul
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
 * [Title and URL Settings](#title-and-url-settings)
+
 * **Allow Privileged Members**
+  
   If selected, the forum only allows privileged members to post topics by allowing selection of a [privileged members security group](/help/communities/users.md#privileged-members-group). If not selected, all community members are allowed to post. Default is deselected.
 
 * **Allow File Uploads**
+  
   If selected, the idea includes the ability for members to upload files. Default is selected.
 
 * **Allow Threaded Replies**
+  
   If not selected, the idea allows replies (comments) to a topic, but replies to comments are not allowed. Default is selected.
 
 * **Allow Featured Content**
+  
   If selected, its content is identified as [featured content](/help/communities/featured.md). Default is selected.
 
 ### Leaderboard Function {#leaderboard-function}
@@ -257,15 +293,19 @@ When added to a template, the following dialog opens, which specifies the defaul
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
 * [Title and URL Settings](#title-and-url-settings)
+
 * **Display Badge**
+  
   If selected, a column for badge icons is included in the leaderboard.
   Default is deselected.
 
 * **Display Badge Name**
+  
   If selected, a column for the badge name is included in the leaderboard.
   Default is deselected.
 
 * **Display Avatar**
+  
   If selected, the member's avatar image is included in the leaderboard, next to their name link to their member profile.
   Default is deselected.
 
@@ -284,19 +324,25 @@ When added to a template, the configuration allows restriction to privileged mem
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
 * [Title and URL Settings](#title-and-url-settings)
+
 * **Allow Pinning**
+  
   If selected, the forum allows topic replies to be pinned to the beginning of the list of comments. Default is selected.
 
 * **Allow Privileged Members**
+  
   If selected, the QnA forum only allows privileged members to post questions by allowing selection of a [privileged members group](/help/communities/users.md#privileged-members-group). If not selected, all community members are allowed to post. Default is deselected.
 
 * **Allow File Uploads**
+  
   If selected, the QnA forum includes the ability for members to upload files. Default is selected.
 
 * **Allow Threaded Replies**
+  
   If not selected, the QnA forum allows for comments (answers) to a posted question, but replies to answers are not allowed. Default is selected.
 
 * **Allow Featured Content**
+  
   If selected, its content is identified as [featured content](/help/communities/featured.md). Default is selected.
 
 ## Create Community Function {#create-community-function}
@@ -312,13 +358,16 @@ The ability to create a community function is reached by selecting the `Create C
 On the Community Function Name panel, a name, description and whether the function is enabled or disabled are configured:
 
 * **Community Function Name**
-  the function name used for display and storage
+  
+  The function name used for display and storage.
 
 * **Community Function Description**
-  the function description for display
+  
+  The function description for display.
 
 * **Disabled/Enabled**
-  a toggle switch controlling whether the function is referenceable
+  
+  A toggle switch controlling whether the function is referenceable.
 
 ### AEM Blueprint {#aem-blueprint}
 

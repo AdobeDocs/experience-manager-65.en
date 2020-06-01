@@ -62,7 +62,9 @@ You can create as many search templates as required.
     * In the Columns To Report list, select the process or task element and click the Up Arrow or Down Arrow to move it to its place in the column order. The column headings in the search results will appear in the order that they are listed here.
     * (Optional) To change the name of the element for the column heading, select the element from the Columns To Report list and provide the new name.
 
-      **Note**: *The layout specified in the search template overrides the user’s preferences specified for column headings in Workspace.*
+    >[!NOTE]
+    >
+    >The layout specified in the search template overrides the user’s preferences specified for column headings in Workspace.  
 
 1. (Optional) For each column to sort in the search results, click the Sort tab and perform the following steps:
 

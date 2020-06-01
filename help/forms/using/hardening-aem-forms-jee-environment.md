@@ -34,7 +34,7 @@ You should not install or configure AEM Forms on JEE using a root shell. By defa
 
 **Installation and configuration on Windows**
 
-You should perform the installation on Windows as an administrator if you are installing AEM Forms on JEE on JBoss by using the turnkey method or if you are installing PDF Generator. Also, when installing PDF Generator on Windows with native application support, you must run the installation as the same Windows user who installed Microsoft Office. For more information about installation privileges, see the **Installing and Deploying AEM Forms on JEE** document for your application server.
+You should perform the installation on Windows as an administrator if you are installing AEM Forms on JEE on JBoss by using the turnkey method or if you are installing PDF Generator. Also, when installing PDF Generator on Windows with native application support, you must run the installation as the same Windows user who installed Microsoft Office. For more information about installation privileges, see the* Installing and Deploying AEM Forms on JEE* document for your application server.
 
 ### Network layer security {#network-layer-security}
 
@@ -181,7 +181,7 @@ To run the application server on which AEM Forms on JEE is deployed, using a spe
     * Deny log on locally
     * Log on as Service (should be already set)
 
-1. Give the new user account the Read & Execute, List Folder Contents, and Read permissions for the AEM Forms on JEE web content directories item.
+1. Give the new user account Read & Execute, Write, Modify, List Folder Contents, and Read permissions to complete AEM Forms on JEE installation directory and Global Document Storage (GDS) directory. The location of the GDS directory is configured manually during the AEM Forms installation process. If the location setting remains empty during installation, the location defaults to a directory under the application server installation at [JBoss root]/server/[type]/svcnative/DocumentStorage.
 1. Start the application server.
 
 **Disabling the Configuration Manager bootstrap servlet**
@@ -255,7 +255,7 @@ When AEM Forms on JEE is installed, a single default user account is configured 
 1. Type the following URL in a web browser:
 
    ```as3
-   https://[host name]:'port'/adminui
+   https://[host name]:[port]/adminui
    ```
 
    The default port number is one of these:
@@ -275,7 +275,7 @@ When AEM Forms on JEE is installed, a single default user account is configured 
 
 In addition, it is recommended to change the default password for CRX Administrator by performing the following steps:
 
-1. Log into `https://'[server]:[port]'/lc/libs/granite/security/content/useradmin.html` using the default username/password.
+1. Log into `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` using the default username/password.
 1. Type Administrator in the search field and click **Go**.
 1. Select **Administrator** from the search result and click the **Edit** icon at the lower right of the user interface.
 1. Specify the new password in the **New Password** field and the old password in the **Your Password** field.
@@ -288,7 +288,7 @@ Web Service Definition Language (WSDL) generation should be enabled only for dev
 1. Type the following URL in a web browser:
 
    ```as3
-   https://[host name]:'port'/adminui
+   https://[host name]:[port]/adminui
    ```
 
 1. Click **Settings &gt; Core System Settings &gt; Configurations**.
@@ -673,7 +673,7 @@ When you first install Document Services, the Allowed Referrer list is updated w
 
 **Managing Allowed Referrer list**
 
-You can manage the Allowed Referrer list from the User Management Interface of Administration Console. The User Management Interface provides you with the functionality to create, edit, or delete the list. Refer to the *[Preventing CSRF attacks](/help/forms/using/admin-help/preventing-csrf-attacks.md)* section of the *administration help* for more information on working with the Allowed Referrer list.
+You can manage the Allowed Referrer list from the User Management Interface of Administration Console. The User Management Interface provides you with the functionality to create, edit, or delete the list. Refer to the * [Preventing CSRF attacks](/help/forms/using/admin-help/preventing-csrf-attacks.md)* section of the *administration help* for more information on working with the Allowed Referrer list.
 
 **Managing Allowed Referrer Exception and Allowed URI lists**
 
@@ -688,7 +688,7 @@ AEM Forms on JEE provides APIs to manage the Allowed Referrer Exception list and
 * updateAllowedRefererExceptions
 * deleteAllowedRefererExceptions
 
-Refer to the *AEM Forms on JEE API Reference* for more information on the APIs.
+Refer to the* AEM Forms on JEE API Reference* for more information on the APIs.
 
 Use the ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** list for Allowed Referrer Exceptions at the global level i.e. to define exceptions that are applicable to all applications. This list contains only URIs with either an absolute path (e.g. `/index.html`) or a relative path (e.g. `/sample/`). You can also append a regular expression to the end of a relative URI, e.g. `/sample/(.)*`.
 
@@ -708,7 +708,7 @@ Include the `-Dlc.um.csrffilter.disabled=true` JAVA argument in the startup scri
 
 **Referrer Filtering for Custom WAR files**
 
-You may have created custom WAR files to work with AEM Forms on JEE in order to meet your business requirements. To enable Referrer Filtering for your custom WAR files, include ***adobe-usermanager-client.jar*** in the class path for the WAR and include a filter entry in the *web.xml* file with the following parameters:
+You may have created custom WAR files to work with AEM Forms on JEE in order to meet your business requirements. To enable Referrer Filtering for your custom WAR files, include ***adobe-usermanager-client.jar*** in the class path for the WAR and include a filter entry in the* web.xml* file with the following parameters:
 
 **CSRF_CHECK_GETS** controls the Referrer check on GET requests. If this parameter is not defined, the default value is set to false. Include this parameter only if you want to filter your GET requests.
 
@@ -967,10 +967,11 @@ The AEM Forms on JEE turnkey installation sets up a service account, by default,
 1. In the Local Security Settings window, under User Rights Assignment, give the following rights to the user account that the forms server is running under:
 
     * Deny log on through Terminal Services
-    * Deny log on locally
+    * Deny log on locallyxx
     * Log on as Service (should be already set)
 
-1. Give the new user account Read & Execute, List Folder Contents, and Read permissions to AEM Forms on JEE web content directories.
+1. Give the new user account Read & Execute, Write, Modify, List Folder Contents, and Read permissions to complete AEM Forms on JEE installation directory and Global Document Storage (GDS) directory. The location of the GDS directory is configured manually during the AEM Forms installation process. If the location setting remains empty during installation, the location defaults to a directory under the application server installation at [JBoss root]/server/[type]/svcnative/DocumentStorage.
+ 
 1. Start the application server service.
 
 ### File system security {#file-system-security}
@@ -1035,4 +1036,3 @@ Set the `directoryBrowsingEnabled` property in the ibm-web-ext.xml file to `fals
 1. Deselect both **Enable application security** and **Use Java 2 security**.
 1. Click **OK** or **Apply**.
 1. In the **Messages** box, click **Save directly to the master configuration**.
-

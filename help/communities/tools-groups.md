@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Group Templates{#group-templates}
+# Group Templates {#group-templates}
 
 The Group Templates console is similar to the [Site Templates](/help/communities/sites.md) console. Both are blueprints for a set of pre-wired pages and features which form a community site. The difference is that a site template is for the main community and a group template is for a community group, a sub-community nested within the main community.
 
@@ -24,8 +24,9 @@ As of Communities [feature pack 1](/help/communities/deploy-communities.md#lates
 The moment an action is taken to create a new community group, the group's template (structure) is selected. The selection depends on how the Groups function was configured when added to the site or group template.
 
 >[!NOTE]
->
->The consoles for the creation of [community sites](/help/communities/sites-console.md), [community site templates](/help/communities/sites.md), [community group templates](/help/communities/tools-groups.md) and [community functions](/help/communities/functions.md) are for use only in the author environment.
+ >
+ >The consoles for the creation of [community sites](/help/communities/sites-console.md), [community site templates](/help/communities/sites.md), [community group templates](/help/communities/tools-groups.md) and [community functions](/help/communities/functions.md) are for use only in the author environment.
+ >
 
 ## Group Templates Console {#group-templates-console}
 
@@ -39,7 +40,7 @@ This console displays the templates from which a [community site](/help/communit
 
 ## Create Group Template {#create-group-template}
 
-To get started creating a new group template, select `Create`
+To get started creating a new group template, select `Create`.
 
 This will bring up the Site Editor panel which contains 3 sub-panels:
 
@@ -50,15 +51,16 @@ This will bring up the Site Editor panel which contains 3 sub-panels:
 On the Basic Info panel, a name, description and whether the template is enabled or disabled are configured:
 
 * **New Group Template Name**
-  the template name id
+  
+  The template name id.
 
 * **Description**
 
-  the template description
+  The template description.
 
 * **Disabled/Enabled**
 
-  a toggle switch controlling whether the template is referenceable
+  A toggle switch controlling whether the template is referenceable.
 
 #### Thumbnail {#thumbnail}
 
@@ -69,12 +71,13 @@ On the Basic Info panel, a name, description and whether the template is enabled
 #### Structure {#structure}
 
 >[!CAUTION]
->
->If working with AEM 6.1 Communities FP4 or earlier, do not add a groups function to a group template.
->
->The nested groups feature is available as of Communities [FP1](/help/communities/communities.md#latestfeaturepack).
->
->It is still not allowed to add a Groups function as the first or only function in a template.
+ >
+ >If working with AEM 6.1 Communities FP4 or earlier, do not add a groups function to a group template.
+ >
+ >The nested groups feature is available as of Communities [FP1](/help/communities/communities.md#latestfeaturepack).
+ >
+ >It is still not allowed to add a Groups function as the first or only function in a template.
+ >
 
 ![Group template editor](assets/template-editor.png)
 
@@ -86,7 +89,7 @@ Continue drag-and-drop of any other community functions desired for a sub-commun
 
 ![drag functions](assets/dragfunctions.png)
 
-Once all desired functions have been dropped into the template builder area and configured, select **Save **in the upper right corner.
+Once all desired functions have been dropped into the template builder area and configured, select **Save** in the upper right corner.
 
 ## Edit Group Template {#edit-group-template}
 

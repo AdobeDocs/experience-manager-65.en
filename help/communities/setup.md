@@ -17,26 +17,27 @@ discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 
 For development and demonstration purposes, it will be necessary to run one author and one publish instance.
 
-To do so, follow the basic AEM [Getting Started](../../help/sites-deploying/deploy.md#getting-started) instructions, which will result in
+To do so, follow the basic AEM [Getting Started](../../help/sites-deploying/deploy.md#getting-started) instructions, which will result in:
 
 * Author environment on [localhost:4502](http://localhost:4502/)
 * Publish environment on [localhost:4503](http://localhost:4503/)
 
 For AEM Communities,
 
-* The author environment is for
+* The author environment is for:
 
-    * Development of sites, templates and components
-    * Administrative and configuration tasks
+  * Development of sites, templates and components.
+  * Administrative and configuration tasks.
 
-* The publish environment is for
+* The publish environment is for:
 
-    * The community experience of posting and moderating content
-    * Creating community groups, members and member groups
+  * The community experience of posting and moderating content.
+  * Creating community groups, members and member groups.
 
 >[!NOTE]
->
->If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
+ >
+ >If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
+ >
 
 ## Install Latest Communities Release {#install-latest-communities-release}
 
@@ -86,17 +87,17 @@ Create a user on *author*, who is assigned the role of Community Administrator:
 
     * For example, username 'admin' / password 'admin'
 
-* From the main console, navigate to **[!UICONTROL Tools > Operations > Security > Users]**
+* From the main console, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 * From the **[!UICONTROL ]Edit** menu, select **[!UICONTROL Add User]**
 
-* In the `Create New User` dialog enter
+* In the `Create New User` dialog enter:
 
-    * **[!UICONTROL ID&ast;]**: sirius
-    * **[!UICONTROL Emai Address]**: sirius.nilson@mailinator.com
-    * **[!UICONTROL Password&ast;]**: password
-    * **[!UICONTROL Confirm Password&ast;]**: password
-    * **[!UICONTROL First Name]**: Sirius
-    * **[!UICONTROL Last Name&ast;]**: Nilson
+  * **[!UICONTROL ID]**: sirius
+  * **[!UICONTROL Emai Address]**: sirius.nilson@mailinator.com
+  * **[!UICONTROL Password]**: password
+  * **[!UICONTROL Confirm Password&ast;]**: password
+  * **[!UICONTROL First Name]**: Sirius
+  * **[!UICONTROL Last Name]**: Nilson
 
 ### Assign Sirius to Community Administrators Group {#assign-sirius-to-community-administrators-group}
 
@@ -104,10 +105,10 @@ Scroll down to `Add User to Groups`:
 
 * Enter 'C' to search
 
-    * Select `Community Administrators`
-    * Select `Community Enablement Managers`
+  * Select `Community Administrators`
+  * Select `Community Enablement Managers`
 
-* Select **[!UICONTROL Save]**
+* Select **[!UICONTROL Save]**.
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 
@@ -115,8 +116,8 @@ Scroll down to `Add User to Groups`:
 
 Before the demonstration versions of social login with Facebook and Twitter may be used, it is necessary to
 
-1. Install a fix pack or [latest feature pack](deploy-communities.md#latestfeaturepack) (for March 2017 Facebook API changes)
-1. [Enable the OAuth provider](social-login.md#adobe-granite-oauth-authentication-handler) in the publish environment
+1. Install a fix pack or [latest feature pack](deploy-communities.md#latestfeaturepack) (for March 2017 Facebook API changes).
+1. [Enable the OAuth provider](social-login.md#adobe-granite-oauth-authentication-handler) in the publish environment.
 
 For production servers, it is necessary to create the cloud services necessary to provide social login.
 
@@ -137,10 +138,10 @@ Use the [Tagging console](../../help/sites-administering/tags.md#tagging-console
 
 ![chlimage_1-302](assets/chlimage_1-302.png)
 
-Then follow the instructions to
+Then follow the instructions to:
 
-1. [Set the tag permissions](../../help/sites-administering/tags.md#setting-tag-permissions)
-1. [Publish the tags](../../help/sites-administering/tags.md#publishing-tags)
+1. [Set the tag permissions](../../help/sites-administering/tags.md#setting-tag-permissions).
+1. [Publish the tags](../../help/sites-administering/tags.md#publishing-tags).
 
 Sample package of tags created for the AEM Communities Getting Started Tutorials
 

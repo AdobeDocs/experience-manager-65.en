@@ -129,7 +129,7 @@ In previous versions, client library folders were located below `/etc/clientlibs
 
 >[!NOTE]
 >
->Static resources below the client library folder must be in a folder called *resources*. If you do not have the static resources, such as images, under the folder *resources*, it cannot be referenced on a publish instance. Here is an example: https://localhost:4503/etc.clientlibs/geometrixx/components/clinetlibs/resources/example.gif
+>Static resources below the client library folder must be in a folder called *resources*. If you do not have the static resources, such as images, under the folder *resources*, it cannot be referenced on a publish instance. Here is an example: https://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
 
 >[!NOTE]
 >
@@ -427,9 +427,9 @@ Opening the `publicmain.css` file reveals the following code:
 
 ### Discover Client Libraries {#discover-client-libraries}
 
-The `/libs/cq/ui/components/dumplibs/dumplibs` component generates a page of information about all client library folders on the system. The `/libs/cq/ui/content/dumplibs` node has the component as a resource type. To open the page, use the following URL (use a different host and port as required):
+The `/libs/cq/granite/components/dumplibs/dumplibs` component generates a page of information about all client library folders on the system. The `/libs/granite/ui/content/dumplibs` node has the component as a resource type. To open the page, use the following URL (changing the host and port as required):
 
-[https://localhost:4502/libs/cq/ui/content/dumplibs.test.html](https://localhost:4502/libs/cq/ui/content/dumplibs.test.html)
+`https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
 
 The information includes the library path and type (CSS or JS), and the values of the library attributes, such as categories and dependencies. Subsequent tables on the page show the libraries in each category and channel.
 
@@ -443,7 +443,7 @@ The `dumplibs` component includes a test selector that displays the source code 
 
     * Open the following URL in your web browser (use a different host and port as required):
 
-      [https://localhost:4502/libs/cq/ui/content/dumplibs.html](https://localhost:4502/libs/cq/ui/content/dumplibs.html)
+      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
 
    The default page shows output for tags with no value for the categories attribute.
 

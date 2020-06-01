@@ -41,8 +41,11 @@ You can also use the component to control the behavior of the task. For example,
 * **Use Adaptive Form:** Specify the method to locate the input adaptive form. This option is available if you select Adaptive form or Read-only adaptive form from the Type drop-down list. You can use the adaptive form submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path.  
   You can associate multiple adaptive forms with a workflow. As a result, you can specify an adaptive form on the runtime using the available input methods.
 
-* **Use Interactive Communication:** Specify the method to locate the input interactive communication. You can use the interactive communication submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.  
-  **Note:** You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.
+* **Use Interactive Communication:** Specify the method to locate the input interactive communication. You can use the interactive communication submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+
+>[!NOTE]
+>
+>You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  
 
 * **Adaptive Form or Interactive Communication Path**: Specify the path of the adaptive form or Interactive Communication. You can use the adaptive form or interactive communication that is submitted to the workflow, available at an absolute path, or retrieve the adaptive form from a path stored in a variable of string data type.
 * **Select input PDF using:** Specify the path of a non-interactive PDF document. The field is available when you choose a non-interactive PDF document in the Type field. You can select the input PDF using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/PDF/credit-card.pdf. The path does not exist in crx-repository. An administrator creates the path before using it. You require a Document of Record option enabled or form template based adaptive forms for using the PDF Path option.

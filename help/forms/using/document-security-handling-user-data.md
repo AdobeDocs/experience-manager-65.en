@@ -200,7 +200,9 @@ Do the following to delete document security data for a principal ID from databa
     1. Navigate to **[!UICONTROL Services > Document Security > My Policies]**.
     1. Open a policy and delete the user from the policy.
 
-   **Note**: Administrators can search, access, and delete user data from personal policies of other users in **[!UICONTROL Services > Document Security > My Policies]** using administration console.
+    >[!NOTE]
+    >
+    >Administrators can search, access, and delete user data from personal policies of other users in **[!UICONTROL Services > Document Security > My Policies]** using administration console.  
 
 1. Delete the data for the principal ID from user management database. For detailed steps, see [Forms User Management | Handling user data](/help/forms/using/user-management-handling-user-data.md).
 1. Start the AEM Forms server.

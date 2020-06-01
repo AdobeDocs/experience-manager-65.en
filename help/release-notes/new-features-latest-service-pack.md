@@ -119,7 +119,7 @@ You have the option of specifying a start date and time and an end date and time
 
 You can use the Batch API to produce multiple interactive communications from a template. The template is an interactive communication without any data. The Batch API combines data with a template to produce an interactive communication. The API is useful in the mass production of interactive communications. For example, telephone bills, credit card statements for multiple customers. See [Generate multiple interactive communications using Batch API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-## Key releases since AEM 6.5 SP3 {#key-features-sice-sp3}
+## Key releases since AEM 6.5 SP3 {#key-features-since-sp3}
 
 Between December 12, 2019 and March 5, 2020, Adobe released following capabilities that are outside of the core AEM deliverable:
 
