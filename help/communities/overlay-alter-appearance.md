@@ -21,18 +21,18 @@ The comment.hbs script is responsible for creating the overall HTML for each com
 
 To not display the avatar next to each posted comment:
 
-1. copy `comment.hbs`from `libs`to `apps`
+1. Copy `comment.hbs`from `libs`to `apps`
 
-    1. select `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-    1. select **Copy**
-    1. select `/apps/social/commons/components/hbs/comments/comment`
-    1. select **Paste**
+   1. Select `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
+   1. Select **Copy**
+   1. Select `/apps/social/commons/components/hbs/comments/comment`
+   1. Select **Paste**
 
-1. open the overlaid `comment.hbs`
+1. Open the overlaid `comment.hbs`
 
-    * double-click on node `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`
+   * Double-click on node `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
 
-1. find the following lines and either delete or comment them out:
+1. Find the following lines and either delete or comment them out:
 
 ```xml
   <aside class="scf-comment-author">
@@ -40,7 +40,7 @@ To not display the avatar next to each posted comment:
 
 ```
 
-Either delete the lines, or surround them with '&lt;!--' and '--&gt;' to comment them out. Also, the characters 'xxx' are being added as a visual indicator of where the avatar would have been.
+Either delete the lines, or surround them with `<!--` and `-->` to comment them out. Also, the characters 'xxx' are being added as a visual indicator of where the avatar would have been.
 
 ```xml
    xxx
@@ -55,12 +55,13 @@ Either delete the lines, or surround them with '&lt;!--' and '--&gt;' to comment
 Push the overlaid comments component to the publish instance using the Replication Tool.
 
 >[!NOTE]
->
->A more robust form of replication would be to create a package in Package Manager and [activate](/help/sites-administering/package-manager.md#replicating-packages) it. A package can be exported and archived.
+ >
+ >A more robust form of replication would be to create a package in Package Manager and [activate](/help/sites-administering/package-manager.md#replicating-packages) it. A package can be exported and archived.
+ >
 
-From the global navigation, select **Tools, Deployment, Replication** and then **Activate Tree**.
+From the global navigation, select **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** and click **[!UICONTROL Activate Tree]**.
 
-For the Start Path enter `/apps/social/commons`** **and select **Activate**.
+For the Start Path enter `/apps/social/commons` and select **[!UICONTROL Activate]**.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 

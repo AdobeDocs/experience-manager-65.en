@@ -14,7 +14,7 @@ You can also add additional tabs to the [!DNL Assets] admin panel.
 
 >[!CAUTION]
 >
->As of [!DNL Experience Manager] 6.4, Classic UI is deprecated. For announcement, see [Deprecated and removed features](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe recommends using  Touch-enabled UI. For customization, see [Search Facets](/help/assets/search-facets.md).
+>As of [!DNL Experience Manager] 6.4, Classic UI is deprecated. For announcement, see [deprecated and removed features](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe recommends using Touch-enabled UI. For customization, see [search facets](/help/assets/search-facets.md).
 
 ## Overlay {#overlaying}
 
@@ -28,7 +28,7 @@ To overlay the pre-configured predicates, copy the `facets` node from `/libs/dam
 
 ## Add tabs {#adding-tabs}
 
-You can add additional search tabs by configuring them in the AEM Assets Admin. To create additional tabs:
+You can add additional search tabs by configuring them in the Assets admin interface. To create additional tabs:
 
 1. Create the folder structure `/apps/wcm/core/content/damadmin/tabs,`if it does not already exist, and copy the `tabs` node from `/libs/wcm/core/content/damadmin` and paste it.
 1. Create and configure the second tab, as desired.
@@ -41,7 +41,7 @@ You can add additional search tabs by configuring them in the AEM Assets Admin. 
 
 [!DNL Assets] comes with a set of predefined predicates that can be used to customize an Asset Share page. Customizing an Asset Share in this way is covered in [create and configure an Asset Share page](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-In addition to using pre-existing predicates, AEM developers can also create their own predicates using the [Query Builder API](/help/sites-developing/querybuilder-api.md).
+In addition to using pre-existing predicates, Experience Manager developers can also create their own predicates using the [Query Builder API](/help/sites-developing/querybuilder-api.md).
 
 Creating custom predicates requires basic knowledge about the [Widgets framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -66,7 +66,7 @@ To build a property predicate:
 
 1. Add `titlepredicate.jsp`.
 
-   ```xml
+   ```java
    <%--
 
      Sample title predicate component
@@ -159,7 +159,7 @@ To build a group predicate:
 
 1. Add **titlepredicate.jsp**:
 
-   ```xml
+   ```java
    <%--
 
      Sample group predicate component
@@ -289,6 +289,6 @@ The following predicates are available as pre-configured ExtJS widgets.
 
 ## Customize search results {#customizing-search-results}
 
-The presentation of search results on an Asset Share page is governed by the selected lens. AEM Assets comes with a set of predefined lenses that can be used to customize an Asset Share page. Customizing an Asset Share in this way is covered in [Creating and Configuring an Asset Share Page](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+The presentation of search results on an Asset Share page is governed by the selected lens. Experience Manager Assets comes with a set of predefined lenses that can be used to customize an Asset Share page. Customizing an Asset Share in this way is covered in [Creating and Configuring an Asset Share Page](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-In addition to using pre-existing lenses, AEM developers can also create their own lenses.
+In addition to using pre-existing lenses, Experience Manager developers can also create their own lenses.

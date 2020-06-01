@@ -205,7 +205,7 @@ The sidebar comprises the following browsers:
    <td>Adds a button to save form data.</td>
   </tr>
   <tr>
-   <td>(Deprecated) Scribble signature</td>
+   <td>Scribble signature</td>
    <td>Adds a field for capturing scribble signatures.</td>
   </tr>
   <tr>

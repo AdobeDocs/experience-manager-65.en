@@ -57,11 +57,19 @@ If the ZIP file contains more than one HTML file at the lowest level of its fold
 
 >[!NOTE]
 >
->The HTML to PDF feature requires certain fonts in the system font directory. On Linux, Solaris, and AIX systems, the system font directory must contain the Courier font. On Windows systems, the system font directory must contain Times New Roman.
-
->[!NOTE]
+>* The HTML to PDF feature requires certain fonts in the system font directory. On Linux, Solaris, and AIX systems, the system font directory must contain the Courier font. On Windows systems, the system font directory must contain Times New Roman.
 >
->To upload a file from the local file system, use the Upload File option on the HTML to PDF page.
+> * (UNIX-based system only) One of the following Japanese fonts should be available on AEM Forms server to convert a web page with Japanese font to a PDF document.
+>
+>   * "Sazanami Gothic"
+>   * "Kozuka Gothic Pro-VI"
+>   * "Kozuka Mincho Pro-VI"
+>   * "Sazanami Gothic"
+>   * "Kozuka Mincho Pr6N"
+>   * "Sazanami Mincho"
+>   * "Adobe Heiti Std"
+>   * "Adobe Song Std"
+>* To upload a file from the local file system, use the Upload File option on the HTML to PDF page.
 
 1. In administration console, click Services &gt; PDF Generator &gt; HTML to PDF.
 1. Specify the file to convert by doing one of the following tasks:
@@ -69,13 +77,17 @@ If the ZIP file contains more than one HTML file at the lowest level of its fold
     * In Upload File, type the path and filename of the HTML file or ZIP file, or click Browse to locate and select it.
     * In the Specify URL box, type the URL of the page or website to convert.
 
-      ***Note**: The file that you are converting must have a filename extension of .html, .htm, or .zip.*
+    >[!NOTE]
+    >
+    >The file that you are converting must have a filename extension of .html, .htm, or .zip.  
 
 1. Specify the configuration settings:
 
     * To use custom settings, select Use Custom Settings, specify the security and file type settings, and specify a time-out value. The default value is 270 seconds.
 
-      **Note**: If you configured the Generate PDF service to use Acrobat WebCapture, the File Type Settings that you select on this page do not affect the PDF produced. Instead, make the appropriate changes to the version of Acrobat that is installed on the server.
+    >[!NOTE]
+    >
+    >If you configured the Generate PDF service to use Acrobat WebCapture, the File Type Settings that you select on this page do not affect the PDF produced. Instead, make the appropriate changes to the version of Acrobat that is installed on the server.  
 
     * To use an existing settings file, select Upload Settings File and click Browse to go to the file location.
 

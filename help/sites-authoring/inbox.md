@@ -150,6 +150,11 @@ The Admin Control option is visible only to the members of the administrators or
 
 ## Taking Action on an Item {#taking-action-on-an-item}
 
+>[!NOTE]
+>
+>Although it is possible to select more than one item, actions can only be taken on one item at a time.
+
+
 1. To take an action on an item, select the thumbnail for the appropriate item. Icons for the actions that are applicable to that item will be shown in the toolbar:
 
    ![wf-84](assets/wf-84.png)

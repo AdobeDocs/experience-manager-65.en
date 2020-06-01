@@ -8,7 +8,7 @@ contentOwner: AG
 
 Set up review workflows for assets within a folder or a collection and share it with reviewers or creative partners to seek feedback.
 
-Adobe Experience Manager (AEM) Assets lets you set up an ad-hoc review workflow for assets within a folder or collection, and share it with reviewers or creative partners to seek feedback.
+Adobe Experience Manager Assets lets you set up an ad-hoc review workflow for assets within a folder or collection, and share it with reviewers or creative partners to seek feedback.
 
 You can either associate the review workflow with a project or create an independent review task.
 
@@ -44,7 +44,7 @@ After the reviewer completes the review (approves or rejects assets), you receiv
    ![review_name](assets/review_name.png)
 
 1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. A notification for the new task is sent to the approver.
-1. Log in to AEM Assets as an Approver and navigate to the Assets UI. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
+1. Log in to Assets as an Approver and navigate to the Assets UI. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
 
    ![Assets notification](assets/aemAssetsNotification.png)
 
@@ -88,7 +88,7 @@ After the reviewer completes the review (approves or rejects assets), you receiv
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. A notification for the new task is sent to the approver.
-1. Log in to AEM Assets as an Approver and navigate to the Assets console. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
+1. Log in to Assets as an Approver and navigate to the Assets console. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
 1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then click **[!UICONTROL Review]**.
 1. All the assets in the collection are visible on the review page. Select the assets and click **[!UICONTROL Approve/Reject]** to approve or reject assets, as appropriate.
 
@@ -99,8 +99,8 @@ After the reviewer completes the review (approves or rejects assets), you receiv
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 
-   *Figure: Card view*
+   *Figure: Card view.*
   
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
 
-   *Figure: List view*
+   *Figure: List view.*

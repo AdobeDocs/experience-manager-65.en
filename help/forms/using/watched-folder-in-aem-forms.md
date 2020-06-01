@@ -76,15 +76,18 @@ You can configure the following properties for a Watched Folder.
 
     * publish, author
 
-**Note**: *If the server hosting the Watched Folder does not have any of the specified run-mode, then, the Watched Folder always activates regardless of the run-modes on the server.*
+>[!NOTE]
+>
+>If the server hosting the Watched Folder does not have any of the specified run-mode, then, the Watched Folder always activates regardless of the run-modes on the server.
 
 * **outputFilePattern (String)**: Pattern of the output file. You can specify a folder or file pattern. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern. [File and folder pattern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) can also specify a directory structure for the output files. It is a mandatory property.
 
 * **stageFileExpirationDuration (Long, default -1)**: The number of seconds to wait before an input file/folder which has already been picked up for processing should be treated as having timed out and marked as a failure. This expiration mechanism only activates when the value for this property is a positive number.
 
-  **Note:** *Even when an input is marked as having timed out using this mechanism, it may still be processing in the background but just taking more time than expected. If the input contents were consumed before the timeout mechanism kicked in, the processing may even proceed to completion later and the output be dumped into the results folder. If the contents were not consumed before the timeout, it is very likely that the processing will error out later on trying to consume the contents, and this error will also be logged in the failure folder for the same input. On the other hand, if the processing for the input never activated due to an intermittent job/workflow misfire (which is the scenario the expiration mechanism aims to address), then of course neither of these two eventualities will occur. Hence, for any entries in the failure folder which were marked as failures due to a timeout (look for messages of the form "File not processed after a significant amount of time, marking as failure!" in the failure log), it is advisable to scan the result folder (and also the failure folder itself for another entry for the same input) to check whether any of the eventualities described previously actually occurred.*
+>[!NOTE]
+>
+>Even when an input is marked as having timed out using this mechanism, it may still be processing in the background but just taking more time than expected. If the input contents were consumed before the timeout mechanism kicked in, the processing may even proceed to completion later and the output be dumped into the results folder. If the contents were not consumed before the timeout, it is very likely that the processing will error out later on trying to consume the contents, and this error will also be logged in the failure folder for the same input. On the other hand, if the processing for the input never activated due to an intermittent job/workflow misfire (which is the scenario the expiration mechanism aims to address), then of course neither of these two eventualities will occur. Hence, for any entries in the failure folder which were marked as failures due to a timeout (look for messages of the form "File not processed after a significant amount of time, marking as failure!" in the failure log), it is advisable to scan the result folder (and also the failure folder itself for another entry for the same input) to check whether any of the eventualities described previously actually occurred.
 
-*
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, default true):** Whether the expiration mechanism should activate only when the watch-folder is throttled. The mechanism is more relevant for throttled watch-folders since a small number of files which are lingering around in an unprocessed state (owing to intermittent job/workflow misfires) have the potential to choke processing for the entire batch when throttling is enabled. If this property is kept as true (the default), the expiration mechanism will not activate for watch-folders which are not throttled. If the property is kept as false, the mechanism will always activate as long as the stageFileExpirationDuration property is a positive number.
 
 * **pollInterval (Long)**: The interval in seconds for scanning the Watched Folder for input. Unless the Throttle setting is enabled, poll Interval should be longer than the time to process an average job; otherwise, the system may become overloaded. The default value is 5. See the description for Batch Size for additional information. The value of the pollinterval must be greater than or equal to one.
@@ -177,7 +180,9 @@ Along with the above listed Watched Folder configuration properties, you can als
 1. Log in to CRXDE-Lite and navigate to the Watched Folder configuration node.
 1. Add a property param.&lt;property_name&gt; to the Watched Folder configuration node. The type of the property can only be Boolean, Date, Decimal, Double, Long and String. You can specify single and multi-value properties.
 
-**Note:** If the data type of the property is Double, then specify a decimal point in the value of such properties. For all the properties, where data type is Double and no decimal point is specified in the value, the type is converted to Long.
+>[!NOTE]
+>
+>If the data type of the property is Double, then specify a decimal point in the value of such properties. For all the properties, where data type is Double and no decimal point is specified in the value, the type is converted to Long.
 
 These properties are passed as an immutable map of type Map&lt;String, Object&gt; to the processing code. The processing code can be an ECMAScript, Workflow, or a Service. The values provided for the properties are available as key-value pairs in the map. Key is the name of the property and value is the value of the property. For more information about custom configuration parameters, see the following image:
 
@@ -637,7 +642,7 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
 ### Create a Workflow {#create-a-workflow}
 
 1. Open AEM Workflow UI in a browser window.
-   https://[servername]:'port'/worklow
+   https://[servername]:'port'/workflow
 
 1. In the Models view, click **New**. In the New Workflow dialog, specify **Title**, and click **OK**.
 

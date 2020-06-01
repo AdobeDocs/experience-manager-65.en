@@ -133,7 +133,9 @@ In the Users and Groups area, you specify the users who have access to documents
 * Select the domain you want to search from the In list, and click Find.
 * When the results are returned, select the user or group to add, and click Add.
 
-**Note**: *If you enter a correct invited user name or email address and no result is returned, the user may not have registered yet, or the account may be deleted. You can try adding the user as an invited user type or contact your administrator.*
+>[!NOTE]
+>
+>If you enter a correct invited user name or email address and no result is returned, the user may not have registered yet, or the account may be deleted. You can try adding the user as an invited user type or contact your administrator.
 
 **Invite New User:** To add an invited user, click Invite New User, type the user’s email address in the box that appears, and click Invite. This option is available only if the administrator enabled it. When you add new invited users to a policy, document security sends a registration invitation email if the users are not already invited to register. The users must use the link in the email to create an account, and then they must activate the account.
 
@@ -141,7 +143,9 @@ After registering, invited users can use policy-protected documents that they ha
 
 **Add Anonymous User:** To allow anonymous user access, click Add Anonymous User. This option is available only if the administrator enabled anonymous user access for document security. (See Configure the document security server.) This option grants everyone access to documents protected by this policy, regardless of whether they have a document security account. If you select this option, you cannot add other types of users to the policy.
 
-***Note**: To permit anonymous access to a policy-protected document that currently does not have it, remove the existing policy and then apply a policy that permits anonymous access. If you switch or change the existing policy, the users must still log in to access the document.*
+>[!NOTE]
+>
+>To permit anonymous access to a policy-protected document that currently does not have it, remove the existing policy and then apply a policy that permits anonymous access. If you switch or change the existing policy, the users must still log in to access the document.
 
 #### Specify the document permissions for users and groups {#specify-the-document-permissions-for-users-and-groups}
 
@@ -203,11 +207,15 @@ The General Settings area contains the following settings:
 
 **Document is always valid:** The document validity period does not expire.
 
-***Note**: The validity dates are based on the time zone of the document security system, not on the time zone of your local computer.*
+>[!NOTE]
+>
+>The validity dates are based on the time zone of the document security system, not on the time zone of your local computer.
 
 **Auditing:** Enable or disable auditing of the events that are associated with a policy-protected document. For example, document security can record events such as attempts to open a document. Audited events appear in the list on the Events page. If you do not select this option, document security does not record events for documents that are associated with the policy.
 
-***Note**: The administrator must also enable server auditing on the Auditing and Privacy Settings configuration page for the auditing feature to work.*
+>[!NOTE]
+>
+>The administrator must also enable server auditing on the Auditing and Privacy Settings configuration page for the auditing feature to work.
 
 **Extended Usage Tracking:** Enable or disable Extended Usage Tracking. document security supports tracking of user events associated with various operations performed on a PDF file. The document security object can be accessed using a Java Script. A button click, a multimedia file being played, or the saving of a file are some examples of events that can fired from a policy protected PDF. Using the document security object, you can also retrieve user information. The tracking of events may be enabled from the document security server at the global level or at a policy level.
 
@@ -245,7 +253,9 @@ The Advanced Settings area contains the following settings:
 
 If you are editing a policy and the administrator deleted a configured watermark that you previously selected for this policy, a note appears on the Edit Policy page. In this case, if you are saving the edited document, select a new watermark if you want one to appear on the document.
 
-***Note**: For policies that provide anonymous user access, the user name and identifier of an anonymous user is not displayed as a watermark even if you select this type of watermark.*
+>[!NOTE]
+>
+>For policies that provide anonymous user access, the user name and identifier of an anonymous user is not displayed as a watermark even if you select this type of watermark.
 
 **Use Only Certified Acrobat Plug-ins for PDF:** When selected for a policy, this option specifies that Acrobat 8.0 and later must run in certified mode when opening documents that are secured with the policy. When Acrobat runs in certified mode, it will not load any third-party plug-ins.
 

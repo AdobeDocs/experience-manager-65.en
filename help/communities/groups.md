@@ -14,7 +14,7 @@ pagetitle: Community Groups Console
 
 ---
 
-# Community Groups Console{#community-groups-console}
+# Community Groups Console {#community-groups-console}
 
 The Groups console provides access to creating community groups when a community site's [template structure](/help/communities/sites-console.md#step1) includes the [groups function](/help/communities/functions.md#groups-function).
 
@@ -26,9 +26,9 @@ Of the three group templates included, only the `Reference Group` template inclu
 
 The different facets of community groups are:
 
-* **Creation**: new group can be created on author and optionally on publish
-* **Control**: group can be open or secret
-* **Nesting**: a group can contain zero or more groups
+* **Creation**: new group can be created on author and optionally on publish instance.
+* **Control**: group can be open or secret.
+* **Nesting**: group can contain zero or more groups.
 
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
@@ -36,30 +36,31 @@ The different facets of community groups are:
 >Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.-->
 
 >[!NOTE]
->
->This Groups console, only accessible from the Communities Sites console, is not to be confused with the member [Groups console](/help/communities/members.md) for managing member groups.
->
->Member groups are user groups registered in the publish environment and accessed from the author environment using the [tunnel service](/help/communities/deploy-communities.md#tunnel-service-on-author).
+ >
+ >This Groups console, only accessible from the Communities Sites console, is not to be confused with the member [Groups console](/help/communities/members.md) for managing member groups.
+ >
+ >Member groups are user groups registered in the publish environment and accessed from the author environment using the [tunnel service](/help/communities/deploy-communities.md#tunnel-service-on-author).
+ >
 
 ## Group Creation {#group-creation}
 
 To access the Groups console:
 
-* On author, sign in with administrator privileges
-* From global navigation: **Communities, Sites**
-* Select an existing community site folder to open it
-* Select an instance of a community site within the folder
+* On author, sign-in with administrator privileges.
+* From global navigation: **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
+* Select an existing community site folder to open it.
+* Select an instance of a community site within the folder.
 
-    * the structure of the community site must include a groups function
-    * these screen shots are from the Getting Started tutorial after [creating groups on publish](/help/communities/published-site.md)
+    * The structure of the community site must include a groups function.
+    * These screen shots are from the Getting Started tutorial after [creating groups on publish](/help/communities/published-site.md).
 
-Select the **Groups folder** to open it.
+* Select the **Groups folder** to open it.
 
-When opened, all existing groups, whether created on author or publish, are displayed.
+  When opened, all existing groups, whether created on author or publish, are displayed.
 
-From this Groups console, it is possible to author new groups.
+  From this Groups console, it is possible to author new groups.
 
-![chlimage_1-200](assets/chlimage_1-200.png)
+  ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * Select the **Create Group** button.
 
@@ -67,27 +68,40 @@ From this Groups console, it is possible to author new groups.
 
 ![Multi lingual community groups](assets/multi-lingual-group.png)
 
-* **Community Group Title**: a display title for the group.
+* **Community Group Title** 
+
+  A display title for the group.
   The title appears on the published site for the group.
 
-* **Community Group Description**: a description of the group.
-* **Community Group Root**: the root path to the group.
+* **Community Group Description** 
+
+  A description of the group.
+
+* **Community Group Root** 
+
+  The root path to the group.
   The default root is the parent site, but the root can be moved to any location within the website. It is not recommended to change it.
 
-* **Additional Available Community Group Languages(s) **menu:** **use the drop-down to select the available community group language(s). The menu displays all the language(s) in which the parent community site is created. Users can select among these languages to create groups in multiple locales in this single step. Same group gets created in multiple specified languages in the Groups console of the respective community sites.
+* **Additional Available Community Group Languages(s)** menu
 
-* **Community Group Name**: the name of the group's root page which appears in the URL
+  Use the drop-down to select the available community group language(s). The menu displays all the language(s) in which the parent community site is created. Users can select among these languages to create groups in multiple locales in this single step. Same group gets created in multiple specified languages in the Groups console of the respective community sites.
 
-    * double-check the name as it is not easily changed after the group is created
-    * the base URL will be displayed underneath the `Community Group Name`
-    * for a valid URL, append ".html"
-      *for example*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`
+* **Community Group Name** 
 
-* **Community Group Template** menu: use the drop-down to choose an available [community group template](/help/communities/tools.md).
+  The name of the group's root page which appears in the URL.
+
+    * Double-check the name as it is not easily changed after the group is created.
+    * The base URL will be displayed underneath the `Community Group Name`.
+    * For a valid URL, append ".html"
+      *for example*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+
+* **Community Group Template** menu
+
+  Use the drop-down to choose an available [community group template](/help/communities/tools.md).
 
 ### Step 2: Design {#step-design}
 
-#### COMMUNITY GROUP THEME {#community-group-theme}
+### COMMUNITY GROUP THEME {#community-group-theme}
 
 The framework uses [Twitter Bootstrap](https://twitterbootstrap.org/) to bring a responsive, flexible design to the site. One of the many preloaded Bootstrap themes can be selected to style the selected community group template, or a Bootstrap theme can be uploaded.
 
@@ -97,7 +111,7 @@ It is possible to select a theme which differs from the parent site's theme.
 
 After the community site is published, it is possible to [edit the properties](#modifyinggroupproperties) and select a different theme.
 
-#### COMMUNITY GROUP BRANDING {#community-group-branding}
+### COMMUNITY GROUP BRANDING {#community-group-branding}
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
@@ -111,12 +125,12 @@ When creating or selecting an image, keep in mind:
 * The image is pinned to the left edge of the browser window
 * There is no resizing of the image, such that when the image width is:
 
-    * less than the browser's width, the image will repeat horizontally
-    * greater than the browser's width, the image will appear to be cropped
+    * Less than the browser's width, the image will repeat horizontally.
+    * Greater than the browser's width, the image will appear to be cropped.
 
 ### Step 3: Settings {#step-settings}
 
-#### MODERATION {#moderation}
+**MODERATION**
 
 ![select community group member roles](assets/group-admin.png)
 
@@ -134,22 +148,25 @@ However, it is possible to assign independent group administrators. Group admini
 
 A user U1, therefore, can be an administrator in a group G1 and a regular user in its nested group G2.
 
-#### MEMBERSHIP {#membership}
+**MEMBERSHIP**
 
 The membership setting allows for selection of one of the three ways to secure a community group.
 
 ![chlimage_1-202](assets/chlimage_1-202.png)
 
 * **Optional Membership**
+  
   If selected, the community group is a public group. Site members can participate in the group and post without explicitly joining the group. Default is selected.
 
 * **Required Membership**
+  
   If selected, the community group is an open group. Community site members can view the contents of the group, but need to join the group to post content. Members join by selecting the `Join` button in the publish environment. Default is not selected.
 
 * **Restricted Membership**
+  
   If selected, the community group is a secret group. Community members must be explicitly invited. Invited members are entered in the search box. Members can be added later using the [Members and Groups consoles](/help/communities/members.md) the author environment. Default is not selected.
 
-#### THUMBNAIL {#thumbnail}
+**THUMBNAIL**
 
 ![chlimage_1-203](assets/chlimage_1-203.png)
 
@@ -174,8 +191,9 @@ When the process completes, the card for the new sub-community site (group) is d
 ![create community group](assets/create-community-groups.png)
 
 >[!NOTE]
->
->The group gets created in all the languages, as specified in [Step 1: Community Group Template](/help/communities/groups.md#step-community-group-template) in Additional Available Community Group Languages, in the Community Groups console of the respective community sites.
+ >
+ >The group gets created in all the languages, as specified in [Step 1: Community Group Template](/help/communities/groups.md#step-community-group-template) in Additional Available Community Group Languages, in the Community Groups console of the respective community sites.
+ >
 
 ## Author Group Content {#author-group-content}
 
@@ -208,9 +226,9 @@ Instead, the [STRUCTURE](#modify-structure) of the sub-community may be modified
 
 ### Modify Structure {#modify-structure}
 
-The STRUCTURE panel allows the modification of the structure initially created from the community group template selected when creating the sub-community site from either the author or publish environment. From the panel, it is possible to
+The STRUCTURE panel allows the modification of the structure initially created from the community group template selected when creating the sub-community site from either the author or publish environment. From the panel, it is possible to:
 
-* Drag-and-drop additional [community functions](/help/communities/functions.md) into the site structure
+* Drag-and-drop additional [community functions](/help/communities/functions.md) into the site structure.
 * On an instance of a community function in the site structure:
 
     * **`Gear icon`**
@@ -224,18 +242,20 @@ The STRUCTURE panel allows the modification of the structure initially created f
       Modify the order of functions as displayed in the site's top level navigation bar.
 
 >[!CAUTION]
->
->&#42; While the display title can be changed without side-effects, it is not recommended to edit the URL name of a community function belonging to a community site.
->
->For example, renaming the URL will not move existing UGC, thus having the effect of 'losing' UGC.
+ >
+ >While the display title can be changed without side-effects, it is not recommended to edit the URL name of a community function belonging to a community site.
+ >
+ >For example, renaming the URL will not move existing UGC, thus having the effect of 'losing' UGC.
+ >
 
 >[!CAUTION]
->
->The groups function must *not *be the *first nor the only* function in the site structure.
->
->Any other function, such as the [page function](/help/communities/functions.md#page-function), must be included and listed first.
+ >
+ >The groups function must *not *be the *first nor the only* function in the site structure.
+ >
+ >Any other function, such as the [page function](/help/communities/functions.md#page-function), must be included and listed first.
+ >
 
-#### Example: Adding a Calendar Function to a Sub-Community (Group) Structure {#example-adding-a-calendar-function-to-a-sub-community-group-structure}
+**Example: Adding a Calendar Function to a Sub-Community (Group) Structure**
 
 ![chlimage_1-209](assets/chlimage_1-209.png)
 
@@ -246,7 +266,7 @@ The DESIGN panel allows the modification of the theme:
 * [Community Group Theme](#community-group-theme)
 * [Community Group Branding](#community-group-branding)
 
-    * scroll to the bottom of the panel to change the brand image
+    * Scroll to the bottom of the panel to change the brand image.
 
 ### Modify Settings {#modify-settings}
 
@@ -271,10 +291,11 @@ Once the group is successfully published, a message will appear:
 ![chlimage_1-211](assets/chlimage_1-211.png)
 
 >[!CAUTION]
->
->The parent community site and parent groups should already have been published.
->
->The community site and nested groups should be published in a top down fashion.
+ >
+ >The parent community site and parent groups should already have been published.
+ >
+ >The community site and nested groups should be published in a top down fashion.
+ >
 
 ## Delete the Group {#delete-the-group}
 

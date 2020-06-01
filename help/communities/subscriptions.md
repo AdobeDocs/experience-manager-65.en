@@ -21,9 +21,9 @@ Subscriptions are similar to [notifications](notifications.md) as members may su
 
 What distinguishes subscriptions from notifications is:
 
-* Members may not subscribe when following other members
-* The only action for members to take is to select `Email Subscriptions` when following
-* When email reply is configured, members may effectively post content by simply replying to the received email
+* Members may not subscribe when following other members.
+* The only action for members to take is to select `Email Subscriptions` when following.
+* When email reply is configured, members may effectively post content by simply replying to the received email.
 
 ### Requirements {#requirements}
 
@@ -45,15 +45,11 @@ The **Follow** button provides a means to follow entries as activities, subscrip
 
 If any method of following is selected, the text of the button changes to **Following**. For convenience, it is possible to select `Unfollow All` to toggle off all methods.
 
-The **Follow** button will include the `Email Subscriptions` option only when a forum, QnA, or blog is configured to enable email subscriptions. This button will appear
+The **Follow** button will include the `Email Subscriptions` option only when a forum, QnA, or blog is configured to enable email subscriptions. This button will appear:
 
-* On the main feature page for the enabled forum, QnA, or blog
+* On the main feature page for the enabled forum, QnA, or blog Will send an email for all activity under that feature.
 
-    * Will send an email for all activity under that feature
-
-* For a specific entry, such as a forum topic, QnA question, or blog article
-
-    * Will send an email when there is activity for that specific entry
+* For a specific entry, such as a forum topic, QnA question, or blog article Will send an email when there is activity for that specific entry.
 
 ## Reply by Email {#reply-by-email}
 

@@ -19,12 +19,12 @@ docset: aem65
 
 On AEM Author instance, from global navigation:
 
-* Select** Communities, Sites.**
-* Select **engage folder** to open it.
-* Select the card for the **Getting Started Tutorial** English site.
+* Select **[!UICONTROL Communities] > **[!UICONTROL Sites]**.
+* Select **[!UICONTROL engage folder]** to open it.
+* Select the card for the **[!UICONTROL Getting Started Tutorial]** English site.
 
-    * Select the card image.
-    * Do *not* select an icon.
+  * Select the card image.
+  * Do *not* select an icon.
 
 The result is to reach the [Groups console](/help/communities/groups.md):
 
@@ -40,43 +40,43 @@ This group can be created because the site structure for engage includes a group
 
 These consoles are similar to the Communities Sites console.
 
-* Select **Create Group.**
+* Select **[!UICONTROL Create Group]**.
+
 * **Community Group Template**:
 
-    * Community Group Title: Arts.
-    * Community Group Description: A parent group for various arts groups.
-    * Community Group Root: *leave as default.*
-    * Additional Available Community Group Language(s): use the drop-down menu to select the available community group language(s). The menu displays all the language(s) in which the parent community site is created. Users can select among these languages to create groups in multiple locales in this single step. Same group gets created in multiple specified languages in the Groups console of the respective community sites.
-    * Community Group Name: arts.
-    * Template: drop down to select `Reference Group.`
-    * `Select Next.`
+  * **[!UICONTROL Community Group Title]**: Arts.
+  * **[!UICONTROL Community Group Description]**: A parent group for various arts groups.
+  * **[!UICONTROL Community Group Root]**: *leave as default*.
+  * **[!UICONTROL Additional Available Community Group Language(s)]**: use the drop-down menu to select the available community group language(s). The menu displays all the language(s) in which the parent community site is created. Users can select among these languages to create groups in multiple locales in this single step. Same group gets created in multiple specified languages in the Groups console of the respective community sites.
+  * **[!UICONTROL Community Group Name]**: arts.
+  * **[!UICONTROL Template]**: drop down to select `Reference Group.`
+  * Select **[!UICONTROL Next]**.
 
 ![Nested community groups](assets/parent-to-nestedgroup.png)
 
 Continue through the other panels with these settings:
 
-* **Design**
+* **[!UICONTROL Design]**
 
-    * Change the design or allow default parent site's design.
-    * Select **Next.**
+  * Change the design or allow default parent site's design.
+  * Select **[!UICONTROL Next]**.
 
-* **Settings**
+* **[!UICONTROL Settings]**
 
-    * **Moderation**
+  * **[!UICONTROL Moderation]**
 
-        * leave empty (inherit from parent site).
+    * Leave empty (inherit from parent site).
 
-    * **Membership**
+  * **[!UICONTROL Membership]**
 
-        * use default `Optional Membership.`
+    * Use default `Optional Membership.`
 
-    * **Thumbnail**
+    * **[!UICONTROL Thumbnail]**
+      * `optional.*`
 
-        * `*optional.*`
+    * **[!UICONTROL Select Next]**.
 
-    * `Select Next.`
-
-* Select **Create.**
+* Select **[!UICONTROL Create]**.
 
 ### Nesting Groups within Arts Group {#nesting-groups-within-arts-group}
 
@@ -86,7 +86,7 @@ The `groups` folder now contains two groups (refresh the page).
 
 #### Publish Group {#publish-group}
 
-Before creating groups nested within the `arts`group, hover over the `arts` card and select the publish icon to publish it.
+Before creating groups nested within the `arts` group, hover over the `arts` card and select the publish icon to publish it.
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
@@ -96,40 +96,36 @@ Wait for confirmation that the group was published.
 
 The `arts` group should also contain a `groups` folder, but one that is empty and in which new groups can be created. Navigate to the arts group folder and create 3 nested groups, each with a different membership setting:
 
-1. Visual
+1. **[!UICONTROL Visual]**
 
-    * Title: `Visual Arts`
-    * Name: `visual`
-    * Template: `Reference Group`
-    * Membership: select `Optional Membership`
-      a public group, open to all members
+   * Title: `Visual Arts`
+   * Name: `visual`
+   * Template: `Reference Group`
+   * Membership: select `Optional Membership`, a public group, open to all members.
 
-1. Auditory
+1. **[!UICONTROL Auditory]**
 
-    * Title: `Auditory Arts`
-    * Name: `auditory`
-    * Template: `Reference Group`
-    * Membership: select `Required Membership`
-      an open group, available for members to join
+   * Title: `Auditory Arts`
+   * Name: `auditory`
+   * Template: `Reference Group`
+   * Membership: select `Required Membership`, an open group, available for members to join.
 
-1. History
+1. **[!UICONTROL History]**
 
-    * Title: `Art History`
-    * Name: `history`
-    * Template: `Reference Group`
-    * Membership: select `Restricted Membership`
-      a secret group, visible only to invited members
-      as an example, invite [demo user](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`
+   * Title: `Art History`
+   * Name: `history`
+   * Template: `Reference Group`
+   * Membership: select `Restricted Membership`, a secret group, visible only to invited members. As an example, invite [demo user](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.
 
 Refresh the page to see all three nested groups (sub-communities).
 
 To navigate to the nested groups from the Communities Sites console:
 
-* select engage folder
-* select Getting Started Tutorial card
-* select Groups folder
-* select arts card
-* select Groups folder
+* Select **[!UICONTROL engage folder]**
+* Select **[!UICONTROL Getting Started Tutorial card]**
+* Select **[!UICONTROL Groups]** folder
+* Select **[!UICONTROL arts card]**
+* Select **[!UICONTROL Groups]** folder
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -139,31 +135,30 @@ To navigate to the nested groups from the Communities Sites console:
 
 After publishing the main community site:
 
-* publish each group individually
+* Publish each group individually:
 
-    * waiting for confirmation that the group was published
+  * Waiting for confirmation that the group was published.
 
-* publish parent group before publishing any groups nested within
+* Publish parent group before publishing any groups nested within:
 
-    * all groups must be published in a top-down fashion.
+  * All groups must be published in a top-down fashion.
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
 
 ## Experience on Publish {#experience-on-publish}
 
-It is possible to experience the different groups when signed in, for example with the [demo users](/help/communities/tutorials.md#demo-users) used for
+It is possible to experience the different groups when signed in, for example with the [demo users](/help/communities/tutorials.md#demo-users) used for:
 
 * Art/History group member: emily.andrews@mailinator.com/password
-
-    * the restricted (secret) group, arts/history, is visible
-    * can see optional (public) groups
-    * can join restricted (open) groups
+  * The restricted (secret) group, arts/history, is visible:
+  * Can see optional (public) groups.
+  * Can join restricted (open) groups.
 
 * Group manager: aaron.mcdonald@mailinator.com/password
 
-    * can see optional (public) groups
-    * can join restricted (open) groups
-    * can not see restricted (secret) groups
+  * Can see optional (public) groups.
+  * Can join restricted (open) groups.
+  * Can not see restricted (secret) groups.
 
 Access the Communities [Members and Groups consoles](/help/communities/members.md) on author to add other users to various member groups that correspond to the community groups.
 

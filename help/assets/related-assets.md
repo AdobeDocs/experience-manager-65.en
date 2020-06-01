@@ -1,12 +1,12 @@
 ---
 title: Related assets
-description: Learn how to relate assets that share certain common attributes. You can also use the feature to create source/derived relationships between assets.
+description: Learn how to relate digital assets that share some common attributes. Also create source-derived relationships between digital assets.
 contentOwner: AG
 ---
 
 # Related assets {#related-assets}
 
-Adobe Experience Manager (AEM) Assets lets you manually relate assets based on the needs of your organization using the related assets feature. For example, you can relate a license file with an asset or an image/video on a similar topic. You can relate assets that share certain common attributes. You can also use the feature to create source/derived relationships between assets. For example, if you have a PDF file that is generated from an INDD file, you can relate the PDF file to its source INDD file.
+[!DNL Adobe Experience Manager Assets] lets you manually relate assets based on the needs of your organization using the related assets feature. For example, you can relate a license file with an asset or an image/video on a similar topic. You can relate assets that share certain common attributes. You can also use the feature to create source/derived relationships between assets. For example, if you have a PDF file that is generated from an INDD file, you can relate the PDF file to its source INDD file.
 
 Using this feature, you have the flexibility to share a low resolution PDF file or JPG file with vendors or agencies and make the high resolution INDD file available only on request.
 
@@ -16,11 +16,11 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
 ## Relate assets {#relating-assets}
 
-1. From the AEM interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
+1. From the Experience Manager interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
 
    ![open an asset's Properties page to relate the asset](assets/asset-properties-relate-assets.png)
 
-   *Figure: Asset properties page to relate assets*
+   *Figure: [!DNL Assets] [!UICONTROL Properties] page to relate assets.*
 
    Alternatively, select the asset from the list view.
 
@@ -30,7 +30,7 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. To relate another asset with the asset you selected, click/tap the **[!UICONTROL Relate]** icon from the toolbar.
+1. To relate another asset with the asset you selected, click the **[!UICONTROL Relate]** icon from the toolbar.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -46,32 +46,32 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Click/tap the **[!UICONTROL Confirm]** icon.
-1. Click/tap **[!UICONTROL OK]** to close the dialog. Depending on your choice of relationship in step 3, the related asset is listed under under an appropriate category in the **[!UICONTROL Related]** section. For example, if the asset you related is the source file for the current asset, it is listed under **[!UICONTROL Source]**.
+1. Click the **[!UICONTROL Confirm]** icon.
+1. Click **[!UICONTROL OK]** to close the dialog. Depending on your choice of relationship in step 3, the related asset is listed under under an appropriate category in the **[!UICONTROL Related]** section. For example, if the asset you related is the source file for the current asset, it is listed under **[!UICONTROL Source]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. To un-relate an asset, click/tap **[!UICONTROL Unrelate]** from the toolbar.
+1. To un-relate an asset, click **[!UICONTROL Unrelate]** from the toolbar.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
-1. Select the asset(s) you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click/tap **[!UICONTROL Unrelate]**.
+1. Select the asset(s) you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click **[!UICONTROL Unrelate]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Click/Tap **[!UICONTROL OK]** to close the dialog. The assets for which you removed relations are deleted from the list of related assets under the **[!UICONTROL Related]** section.
+1. Click **[!UICONTROL OK]** to close the dialog. The assets for which you removed relations are deleted from the list of related assets under the **[!UICONTROL Related]** section.
 
 ## Translating Related Assets {#translating-related-assets}
 
-Creating source/ derived relationships between assets using the Related Assets feature is also helpful in translation workflows. When you run a translation workflow on a derived asset, AEM Assets automatically fetches any asset that the source file references and includes it for translation. This way, the asset referenced by the source asset is translated along with the source and derived assets. For example, consider a scenario where your English language copy includes a derived asset and its source file as shown.
+Creating source/ derived relationships between assets using the Related Assets feature is also helpful in translation workflows. When you run a translation workflow on a derived asset, [!DNL Experience Manager Assets] automatically fetches any asset that the source file references and includes it for translation. This way, the asset referenced by the source asset is translated along with the source and derived assets. For example, consider a scenario where your English language copy includes a derived asset and its source file as shown.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-If the source file is related to another asset, Experience Manager Assets fetches the referenced asset and includes it for translation.
+If the source file is related to another asset, [!DNL Experience Manager Assets] fetches the referenced asset and includes it for translation.
 
 ![asset Properties page shows source file of the related asset to include for translation](assets/asset-properties-source-asset.png)
 
-*Figure: Source asset of the related assets to include for translation*
+*Figure: Source asset of the related assets to include for translation.*
 
 1. Translate the assets in the source folder to a target language by following the steps in [Create a new translation project](translation-projects.md#create-a-new-translation-project). For example, in this case, translate your assets to French.
 
@@ -79,22 +79,22 @@ If the source file is related to another asset, Experience Manager Assets fetche
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
-1. Click/Tap the project tile to open the details page.
+1. Click the project tile to open the details page.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
-1. Click/tap the ellipses below the Translation Job card to view the translation status.
+1. Click the ellipses below the Translation Job card to view the translation status.
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Select the asset and then click/tap **[!UICONTROL Reveal in Assets]** from the toolbar to view the translation status for the asset.
+1. Select the asset and then click **[!UICONTROL Reveal in Assets]** from the toolbar to view the translation status for the asset.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
-1. To verify whether the assets related to the source have been translated, click/tap the source asset.
+1. To verify whether the assets related to the source have been translated, click the source asset.
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
-1. Select the asset that is related to the source, and then click/tap **[!UICONTROL Reveal in Assets]**. The translated related asset is displayed.
+1. Select the asset that is related to the source, and then click **[!UICONTROL Reveal in Assets]**. The translated related asset is displayed.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)

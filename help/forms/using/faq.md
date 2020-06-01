@@ -162,6 +162,10 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
    Screen readers do not support date/time fields. However, you can manually enter date/time to the field to make the screen reader read it. Use tool-tip or screen-reader text to instruct the user to manually select date/time for the field.
 
+1. Do HTML5 forms support display patterns for floating fields?
+
+   Answer: HTML5 forms do not support display patterns for floating fields.
+
 ### Scripting {#scripting}
 
 1. Are there any limitations in JavaScript implementation for HTML Forms?

@@ -36,7 +36,7 @@ Customers are advised to review if they make use of the feature/capability in th
   <tr>
    <td>Creative Cloud integration</td>
    <td><p><a href="/help/assets/aem-cc-folder-sharing-best-practices.md">AEM to Creative Cloud Folder Sharing</a> was introduced in AEM 6.2 as a way to give creative users access to assets from AEM, so that they could open them in CC applications and upload new files or save changes to AEM. A new capability released in Creative Cloud application, Adobe Asset Link, provides a much better user experience and more powerful access to assets from AEM directly from inside Photoshop, InDesign, and Illustrator.</p> <p>Adobe does not plan to make further enhancements to the AEM to Creative Cloud Folder Sharing integration. While the feature is included in AEM, customers are strongly advised to use replacement solutions.</p> </td>
-   <td>Customers are advised to switch to new Creative Cloud integration capabilities, including Adobe Asset Link or AEM desktop app. Please review <a href="/help/assets/aem-cc-integration-best-practices.md">AEM and Creative Cloud Integration Best Practices</a> for more details.</td>
+   <td>Customers are advised to switch to new Creative Cloud integration capabilities, including Adobe Asset Link or AEM desktop app. Review <a href="/help/assets/aem-cc-integration-best-practices.md">AEM and Creative Cloud Integration Best Practices</a> for more details.</td>
   </tr>
   <tr>
    <td>Assets</td>
@@ -87,23 +87,6 @@ Customers are advised to review if they make use of the feature/capability in th
    <td>Adobe is planning to provide an alternative implementation of the use case in future releases.</td>
   </tr>
   <tr>
-   <td>Components (AEM Forms)</td>
-   <td><p>Signature step allows users to verify and sign an adaptive form. In previous releases, the signature step could use both Adobe Sign and Scribble Signature components as signature fields. In AEM 6.5 Forms, Scribble Signature-based signing experience of Signature Step is deprecated.</p> </td>
-   <td>
-    <ul>
-     <li>If you have performed a fresh installation:
-      <ul>
-       <li>Use Adobe Sign based signing experience within a Signature step in an adaptive form.</li>
-       <li>Use standalone Scribble Signature component in an adaptive form, interactive communication, and HTML5 Forms.</li>
-      </ul> </li>
-     <li>If you have upgraded from a previous release to AEM 6.5 Forms:<br />
-      <ul>
-       <li>Continue using Scribble Signature-based signing experience of Signature Step with forms that already use the feature.<br /> </li>
-       <li>Use standalone Scribble Signature component or Adobe Sign based signing experience within a Signature step, when you create a new form. </li>
-      </ul> </li>
-    </ul> <p> </p> <p> </p> </td>
-  </tr>
-  <tr>
    <td>Foundation</td>
    <td><p>Granite Offloading Framework</p> <p>Adobe does not plan to make further enhancements to the offloading framework that was introduced in 5.6.1 to externalize asset processing. </p> </td>
    <td>Adobe is working on a next-generation cloud-native offloading framework.</td>
@@ -148,6 +131,11 @@ Customers are advised to review if they make use of the feature/capability in th
    <td><p>Classic UI Dialog Editor in CRXDE lite</p> <p>Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)</p> </td>
    <td> </td>
   </tr>
+  <tr>
+   <td>Forms</td>
+   <td><p>AEM Forms integration with AEM Mobile< is deprecated </p> </td>
+   <td>No Replacement </td>
+  </tr>
  </tbody>
 </table>
 
@@ -157,12 +145,14 @@ This section lists features and capabilities that have been removed from AEM 6.5
 
 |Area|Feature|Replacement|
 |--- |--- |--- |
-|Analytics Activity Map|The version of the Activity Map that is included within AEM.|Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM. Use the [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html).|
+|Analytics Activity Map|The version of the Activity Map that is included within AEM.|Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM. Use the [ActivityMap plug-in provided by Adobe Analytics](https://docs.adobe.complugin /content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html).|
 |Integrations|ExactTarget integration has been removed from the default distribution (Quickstart) and it is no longer available.|No replacement|
 |Integrations|Salesforce Force API integration has been removed from the default distribution (Quickstart) and is now an extra package to install from PackageShare.|Feature is still available.|
 |Forms|Support for Adobe Central Migration Bridge service has been removed as Adobe Central product is no longer supported.|No replacement|
 |Forms|`com.adobe.fd.df.fdinternal.model.ConfigurationInstance`|No replacement|
 |Forms|`com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer`|No replacement|
+|Forms|Single-hop upgrade from LiveCycle ES4 SP1 to AEM 6.5 Forms on JEE is not available|See [available upgrade paths](../forms/using/upgrade.md) in AEM Forms upgrade documentation.|
+|Forms|Removed UPD based clustering support from AEM Forms on JEE| You can use only TCP-based clustering in AEM Forms on JEE. If you upgrade a UDP multicast server from a previous version to AEM 5.5 Forms on JEE perform manual configurations to switch to TCP based gemfire clustering. For detailed instructions, see [Upgrade to AEM 6.5 forms on JEE](../forms/using/upgrade-forms-jee.md)|
 |Developers|Firebug Lite has been removed from the default distribution (Quickstart)|Use the browser built-in developer consoles|
 |Developers|Remove `customJavaScriptPath` support in HTML Client Library Manager.|No replacement|
 |Assets|The Assets offloading feature has been removed in AEM 6.5|No replacement|
