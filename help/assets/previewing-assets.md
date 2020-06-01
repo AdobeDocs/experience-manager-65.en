@@ -126,8 +126,12 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
 
 1. Press `<Enter>` to open the selected asset in preview mode.
 
-1. Do any of the following: 
-   * To zoom in, press `<Tab>` to move focus to the zoom in (+) icon, then press `<Enter>` one or more times to zoom in incrementally. 
-   * To zoom out, press `<Tab>` to move focus to the zoom out (&ndash;) icon, then press `<Enter>` one or more times to zoom out incrementally.
-   * To move the view of a *zoomed* asset horizontally or vertically, press the respective arrow keys.
-   * Press `<Shift>` + `<Tab>` to reset the view and place focus back on the asset.
+1. Do any of the following:
+
+   To zoom in, press `<Tab>` to move focus to the zoom in (+) icon, then press `<Enter>` one or more times to zoom in incrementally. 
+   
+   To zoom out, press `<Tab>` to move focus to the zoom out (&ndash;) icon, then press `<Enter>` one or more times to zoom out incrementally.
+   
+   To move the view of a *zoomed* asset horizontally or vertically, press the respective arrow keys.
+   
+   Press `<Shift>` + `<Tab>` to reset the view and place focus back on the asset.
