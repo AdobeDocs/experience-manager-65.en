@@ -43,6 +43,7 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
       <td><strong>Asset type you clicked</strong><br /> </td>
       <td><strong>Able to preview asset in a particular rendition?</strong></td>
       <td><strong>Able to preview asset in a viewer?</strong></td>
+      <td> </td>
       </tr>
       <tr>
       <td><p>3D</p> </td>
