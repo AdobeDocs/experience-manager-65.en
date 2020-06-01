@@ -17,6 +17,10 @@ When uploading images, you can automatically crop the image upon upload by apply
 >
 >Smart Crop is available only in Dynamic Media - Scene7 mode.
 
+>[!IMPORTANT]
+>
+>Image profiles are not applicable to PDF files.
+
 ## Crop options {#crop-options}
 
 <!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
