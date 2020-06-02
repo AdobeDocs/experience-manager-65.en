@@ -172,20 +172,13 @@ You combine data (records) saved in an external data source with an interactive 
 
  1. Log in to your AEM instance and create an Interactive Communication. To use the interactive communication mentioned in the sample code given below, [click here](assets/SimpleMediumIC.zip).
  1. [Build and deploy an AEM Project using Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) on your AEM instance.
- 1. Add [AEM Forms Client SDK version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) or later and latest [AEM Uber Jar](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) in dependencies list of POM file of your AEM project. For example, 
+ 1. Add [AEM Forms Client SDK version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) or later in dependencies list of POM file of your AEM project. For example,
 
     ```XML
         <dependency>
             <groupId>com.adobe.aemfd</groupId>
             <artifactId>aemfd-client-sdk</artifactId>
             <version>6.0.122</version>
-        </dependency>
-        <dependency>
-           <groupId>com.adobe.aem</groupId>
-           <artifactId>uber-jar</artifactId>
-           <version>6.5.0</version>
-           <classifier>apis</classifier>
-           <scope>provided</scope>
         </dependency>
     ```    
     
