@@ -12,7 +12,7 @@ Adobe Experience Manager supports the upload, delivery, and interactive preview 
 
 The interactive 3D viewer is available from the asset details page in AEM. The viewer includes, among other things, a collection of interactive camera controls that let you orbit, zoom, and pan the 3D asset.
 
-See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md).
+<!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
 ## Supported formats for 3D preview in AEM {#supported-3d-previewing-assets} 
 
