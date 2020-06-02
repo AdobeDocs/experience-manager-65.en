@@ -255,7 +255,14 @@ For example:
         * sling:resourceType = c
         * sling:resourceSuperType = a
 
-The type hierarchy of /x is [ c, b, a, &lt;default&gt;] while for /y the hierarchy is [ c, a,
+The type hierarchy of:
+
+* `/x` 
+  * is `[ c, b, a, <default>]` 
+* while for `/y` 
+  * the hierarchy is `[ c, a, <default>]` 
+
+This is because `/y` has the `sling:resourceSuperType` property whereas `/x` does not and therefore its supertype is taken from its resource type.
 
 #### Sling Scripts cannot be called directly {#sling-scripts-cannot-be-called-directly}
 

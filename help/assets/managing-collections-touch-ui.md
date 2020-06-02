@@ -175,7 +175,7 @@ To customize the metadata [!UICONTROL Properties] page, including adding, modify
 
 ## Search collections {#searching-collections}
 
-You can search collections from the Collections console. When you search with keywords in the Omnisearch box, AEM Assets searches for collection names, metadata, and the tags added to the collections.
+You can search collections from the Collections console. When you search with keywords in the Omnisearch box, Assets searches for collection names, metadata, and the tags added to the collections.
 
 If you search for collections from the top level, only individual collections are returned in search results. Assets or folders within the collections are excluded. In all other cases (for example, within an individual collection or in a folder hierarchy), all relevant assets, folders, and collections are returned.
 
@@ -183,7 +183,7 @@ If you search for collections from the top level, only individual collections ar
 
 In the Collections console, click a collection to open it.
 
-Within a collection, AEM Asset search is restricted to assets (and their tags and metadata) within the collection that you are viewing. When you search within a folder, all matching assets and child folders within the current folder are returned. When you search within a collection, only matching assets, folders, and other collections that are direct members of the collection are returned.
+Within a collection, Experience Manager search is restricted to assets (and their tags and metadata) within the collection that you are viewing. When you search within a folder, all matching assets and child folders within the current folder are returned. When you search within a collection, only matching assets, folders, and other collections that are direct members of the collection are returned.
 
 ## Edit collection settings {#editing-collection-settings}
 

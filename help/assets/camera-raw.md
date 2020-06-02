@@ -47,7 +47,7 @@ To enable [!DNL Camera Raw] support in [!DNL Experience Manager Assets], follow 
 >
 >Ensure that the above configuration is the same as the **[!UICONTROL Sample DAM Update Asset With Camera RAW and DNG Handling Step]** configuration.
 
-You can now import camera raw files into AEM Assets. After you install the Camera RAW package and configure the required workflow, **[!UICONTROL Image Adjust]** option appears in the list of side panes.
+You can now import camera raw files into Assets. After you install the Camera RAW package and configure the required workflow, **[!UICONTROL Image Adjust]** option appears in the list of side panes.
 
    ![chlimage_1-131](assets/chlimage_1-337.png)
 

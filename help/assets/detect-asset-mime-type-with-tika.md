@@ -1,14 +1,14 @@
 ---
 title: Detect MIME type of assets using Apache Tika
-description: Enable Apache Tika to help AEM Assets detect the MIME type of assets from the content stream during the upload operation instead of the file extension.
+description: Enable Apache Tika to help Experience Manager Assets detect the MIME type of assets from the content stream during the upload operation instead of the file extension.
 contentOwner: AG
 ---
 
 # Detect MIME type of assets using Apache Tika {#detecting-mime-type-of-assets-using-apache-tika}
 
-Normally, Adobe Experience Manager (AEM) Assets detects the MIME type of assets that you upload from their file extension.
+Normally, Adobe Experience Manager Assets detects the MIME type of assets that you upload from their file extension.
 
-If you use Apache Tika to upload assets, AEM Assets detects their MIME type from the content stream during the upload operation instead of the file extension.
+If you use Apache Tika to upload assets, Assets detects their MIME type from the content stream during the upload operation instead of the file extension.
 
 This feature is disabled by default. To enable the feature, configure the **[!UICONTROL Day CQ DAM Mime Type]** service from [!UICONTROL Configuration Manager].
 

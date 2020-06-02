@@ -295,11 +295,11 @@ See [Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets](/h
 
 ### Streamed uploads {#streamed-uploads}
 
-If you upload many assets to [!DNL Experience Manager], the I/O requests to server increase drastically, which reduces the upload efficiency and can even cause some upload task to time out. [!DNL Experience Manager Assets] supports streamed uploading of assets. Streamed uploading reduces the disk I/O during the upload operation by avoiding asset storage in a temporary folder on the server before copying it to the repository. Instead, the data is transferred directly to the repository. This way, the time to upload large assets and the possibility of timeouts is reduced. Streamed upload is enabled by default in [!DNL Assets].
+If you upload many assets to Adobe Experience Manager, the I/O requests to server increase drastically, which reduces the upload efficiency and can even cause some upload task to time out. [!DNL Experience Manager Assets] supports streamed uploading of assets. Streamed uploading reduces the disk I/O during the upload operation by avoiding asset storage in a temporary folder on the server before copying it to the repository. Instead, the data is transferred directly to the repository. This way, the time to upload large assets and the possibility of timeouts is reduced. Streamed upload is enabled by default in [!DNL Assets].
 
 >[!NOTE]
 >
->Streaming upload is disabled for [!DNL Experience Manager] running on JEE server with servlet-api version lower than 3.1.
+>Streaming upload is disabled for Adobe Experience Manager running on JEE server with servlet-api version lower than 3.1.
 
 ### Extract ZIP archive containing assets {#extractzip}
 
@@ -570,7 +570,7 @@ See [Download assets from Experience Manager](/help/assets/download-assets-from-
 >
 >For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets.](/help/assets/publishing-dynamicmedia-assets.md)
 
-1. Navigate to the location of the asset(s)/folder you want to publish
+1. Navigate to the location of the asset(s)/folder you want to publish.
 
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. If the asset references other assets, its references are listed in the wizard. Only references that are either unpublished or modified since they were last published/unpublished are displayed. Choose the references you want to publish.
