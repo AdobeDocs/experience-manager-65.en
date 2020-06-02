@@ -92,7 +92,7 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
  <tbody>
   <tr>
    <td>Platform</td>
-   <td>Support Level<br /> </td>
+   <td>Support Level</td>
   </tr>
   <tr>
    <td>Oracle Java SE 12 JDK [1]</td>
@@ -136,15 +136,15 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 
 | **Platform** |**Description** |**Support Level** |
 |---|---|---|
-| **File system with TAR files [1]** |Repository |A: Supported |
-| **File system with Datastore [1]** |Binaries |A: Supported |
-| Store binaries in TAR files on file system [1] |Binaries |Z: Not supported for production |
+| **File system with TAR files** `[1]` |Repository |A: Supported |
+| **File system with Datastore** `[1]` |Binaries |A: Supported |
+| Store binaries in TAR files on file system `[1]` |Binaries |Z: Not supported for production |
 | Amazon S3 |Binaries |A: Supported |
 | Microsoft Azure Blob Storage |Binaries |A: Supported |
-| MongoDB Enterprise 4.0 |Repository |A: Supported [2, 3] |
+| MongoDB Enterprise 4.0 |Repository |A: Supported `[2, 3]` |
 | MongoDB Enterprise 3.6 |Repository |Z: Not supported |
 | MongoDB Enterprise 3.4 |Repository |Z: Not supported |
-| IBM DB2 10.5 |Repository & Forms Database |R: Restricted Support [4] |
+| IBM DB2 10.5 |Repository & Forms Database |R: Restricted Support `[4]` |
 | Oracle Database 12c (12.1.x) |Repository & Forms Database |R: Restricted Support |
 | Microsoft SQL Server 2016 |Forms Database |A: Supported |
 | **Apache Lucene (Quickstart built-in)** |Search Service |A: Supported |
@@ -191,11 +191,11 @@ Minimum Servlet API Version required is Servlet 3.1
 |---|---|
 | **Quickstart built-in Servlet Engine (Jetty 9.4)** |A: Supported |
 | Oracle WebLogic Server 12.2 (12cR2) |Z: Not supported  |
-| IBM WebSphere Application Server Continuous Delivery (LibertyProfile) with Web Profile 7.0 and IBM JRE 1.8 |R: Restricted Support for new contracts [2] |
-| IBM WebSphere Application Server 9.0 and IBM JRE 1.8 |R: Restricted Support for new contracts [1] [2] |
-| Apache Tomcat 8.5.x |R: Restricted Support for new contracts [2] |
+| IBM WebSphere Application Server Continuous Delivery (LibertyProfile) with Web Profile 7.0 and IBM JRE 1.8 |R: Restricted Support for new contracts `[2]` |
+| IBM WebSphere Application Server 9.0 and IBM JRE 1.8 |R: Restricted Support for new contracts `[1]` `[2]` |
+| Apache Tomcat 8.5.x |R: Restricted Support for new contracts `[2]` |
 | JBoss EAP 7.2.x with JBoss Application Server |Z: Not supported  |
-| JBoss EAP 7.1.4 with JBoss Application Server |R: Restricted Support for new contracts [1] [2] |
+| JBoss EAP 7.1.4 with JBoss Application Server |R: Restricted Support for new contracts `[1]` `[2]` |
 | JBoss EAP 7.0.x with JBoss Application Server |Z: Not supported  |
 
 1. Recommended for deployments with AEM Forms.
@@ -207,11 +207,11 @@ Adobe Experience Manager works with the following server platforms for productio
 
 | **Platform** |**Support Level** |
 |---|---|
-| **Linux, based on Red Hat distribution** |A: Supported [1] [3] |
-| Linux, based on Debian distribution incl. Ubuntu |A: Supported [2] |
+| **Linux, based on Red Hat distribution** |A: Supported `[1]` `[3]` |
+| Linux, based on Debian distribution incl. Ubuntu |A: Supported `[2]` |
 | Linux, based on SUSE distribution |A: Supported |
-| Microsoft Windows Server 2019 [4] |R: Restricted Support for new contracts |
-| Microsoft Windows Server 2016 [4] |R: Restricted Support for new contracts [5] |
+| Microsoft Windows Server 2019 `[4]` |R: Restricted Support for new contracts |
+| Microsoft Windows Server 2016 `[4]` |R: Restricted Support for new contracts `[5]` |
 | Microsoft Windows Server 2012 R2 |Z: Not supported  |
 | Oracle Solaris 11 |Z: Not supported  |
 | IBM AIX 7.2 |Z: Not supported  |
@@ -240,7 +240,7 @@ The following web servers are supported for use with Dispatcher version 4.3.2:
 
 | Platform |Support Level |
 |---|---|
-| **Apache httpd 2.4.x** [1,2] |A: Supported |
+| **Apache httpd 2.4.x** `[1,2]` |A: Supported |
 | Microsoft IIS 10 (Internet Information Server) |A: Supported |
 | Microsoft IIS 8.5 (Internet Information Server) |Z: Not supported  |
 
