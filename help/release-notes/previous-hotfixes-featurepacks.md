@@ -178,7 +178,7 @@ For complete list of features, key highlights, key features introduced in previo
 
 * Target cloud configuration fails with the error get mboxes request failed (CQ-4279880).
 
-### Brand Portal {#assets-brand-portal}
+### Brand Portal {#assets-brand-portal-6540}
 
 * Brand Portal users are not able to publish contribution folder assets to AEM Assets on upgrading to Adobe I/O on AEM 6.5.4 (CQDOC-15655). 
 
@@ -433,7 +433,7 @@ Some key highlights of this service pack release are:
 
 * Switching calendar views does not work (NPR-31271).
 
-### Brand Portal {#assets-brand-portal}
+### Brand Portal {#assets-brand-portal-6530}
 
 **Product Enhancements**
 
