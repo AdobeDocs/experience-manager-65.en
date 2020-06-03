@@ -200,7 +200,7 @@ For complete list of features, key highlights, key features introduced in previo
 
 * Minor security vulnerabilities addressed.
 
-### Communities {#communities}
+### Communities {#communities-6540}
 
 * Create Member form is displayed as a blank page (NPR-31997).
 
@@ -210,7 +210,7 @@ For complete list of features, key highlights, key features introduced in previo
 
 * MS Word and MS Excel documents, containing JPEG image, when parsed with Tika parser fail to parse and class not found error is observed (NPR-31952).
 
-### Forms {#forms-6530}
+### Forms {#forms-6540}
 
 >[!NOTE]
 >
@@ -447,7 +447,7 @@ Some key highlights of this service pack release are:
 * Creation of Contribution folder within a Contribution folder (nested folder) is prohibited to avoid complexity (CQ-4278391).
 * System throws an exception on uploading the [!DNL Brand Portal] user list (.csv file) imported from [!DNL Experience Manager] Admin Console. Only Email, FirstName, and LastName fields in the .csv file are mandatory (CQ-4278390).
 
-### Communities {#communities}
+### Communities {#communities-6530}
 
 **Fixes**
 
