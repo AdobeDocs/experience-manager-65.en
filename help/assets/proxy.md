@@ -1,16 +1,16 @@
 ---
 title: Assets proxy development
-description: A proxy is an AEM instance that uses proxy workers to process jobs. Learn how to configure an AEM proxy, supported operations, proxy components, and how to develop a custom proxy worker.
+description: A proxy is an Experience Manager instance that uses proxy workers to process jobs. Learn how to configure an Experience Manager proxy, supported operations, proxy components, and how to develop a custom proxy worker.
 contentOwner: AG
 ---
 
 # Assets proxy development {#assets-proxy-development}
 
-Adobe Experience Manager (AEM) Assets uses a proxy to distribute processing for certain tasks.
+Adobe Experience Manager Assets uses a proxy to distribute processing for certain tasks.
 
-A proxy is a specific (and sometimes separate) AEM instance that uses proxy workers as processors responsible for handling a job and creating a result. A proxy worker can be used for a wide variety of tasks. In the case of an AEM Assets proxy this can be used for loading assets for rendering within AEM Assets. For example, the [IDS proxy worker](indesign.md) uses an InDesign Server to process files for use in AEM Assets.
+A proxy is a specific (and sometimes separate) Experience Manager instance that uses proxy workers as processors responsible for handling a job and creating a result. A proxy worker can be used for a wide variety of tasks. In the case of an Assets proxy this can be used for loading assets for rendering within Assets. For example, the [IDS proxy worker](indesign.md) uses an [!DNL Adobe InDesign] Server to process files for use in Assets.
 
-When the proxy is a separate AEM instance this helps reduce the load on the AEM authoring instance(s). By default, AEM Assets executes the asset processing tasks in the same JVM (externalized via Proxy) to reduce the load on the AEM authoring instance.
+When the proxy is a separate Experience Manager instance this helps reduce the load on the Experience Manager authoring instance(s). By default, Assets executes the asset processing tasks in the same JVM (externalized via Proxy) to reduce the load on the Experience Manager authoring instance.
 
 ## Proxy (HTTP Access) {#proxy-http-access}
 
@@ -102,11 +102,11 @@ The following is an example of API usage:
 >
 >Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 
-Both proxy and proxy worker configurations are available via cloud services configurations as accessible from the AEM Assets **Tools** console or under `/etc/cloudservices/proxy`. Each proxy worker is expected to add a node under `/etc/cloudservices/proxy` for worker specific configuration details (for example, `/etc/cloudservices/proxy/workername`).
+Both proxy and proxy worker configurations are available via cloud services configurations as accessible from the Assets **Tools** console or under `/etc/cloudservices/proxy`. Each proxy worker is expected to add a node under `/etc/cloudservices/proxy` for worker specific configuration details (for example, `/etc/cloudservices/proxy/workername`).
 
 >[!NOTE]
 >
->See [Indesign Server Proxy Worker configuration](indesign.md#configuring-the-proxy-worker-for-indesign-server) and [Cloud Services configuration](../sites-developing/extending-cloud-config.md) for more information.
+>See [InDesign Server Proxy Worker configuration](indesign.md#configuring-the-proxy-worker-for-indesign-server) and [Cloud Services configuration](../sites-developing/extending-cloud-config.md) for more information.
 
 The following is an example of API usage:
 
@@ -125,9 +125,9 @@ The following is an example of API usage:
 
 ### Developing a Customized Proxy Worker {#developing-a-customized-proxy-worker}
 
-The [IDS proxy worker](indesign.md) is an example of a AEM Assets proxy worker that is already provided out-of-the-box to outsource the processing of Indesign assets.
+The [IDS proxy worker](indesign.md) is an example of a Assets proxy worker that is already provided out-of-the-box to outsource the processing of InDesign assets.
 
-You can also develop and configure your own AEM Assets proxy worker to create a specialized worker to dispatch and outsource your AEM Assets processing tasks.
+You can also develop and configure your own Assets proxy worker to create a specialized worker to dispatch and outsource your Assets processing tasks.
 
 Setting up your own custom proxy worker requires you to:
 
@@ -149,7 +149,7 @@ The following diagram and steps detail how to proceed:
 
 >[!NOTE]
 >
->In the following steps, Indesign equivalents are indicated as reference examples.
+>In the following steps, InDesign equivalents are indicated as reference examples.
 
 1. A [Sling job](https://sling.apache.org/site/eventing-and-jobs.html) is used, so you need to define a job topic for your use case.
 
@@ -169,12 +169,12 @@ The following diagram and steps detail how to proceed:
 
 >[!NOTE]
 >
->What the AEM Assets proxy framework does not provide out-of-the-box is the pool mechanism.
+>What the Assets proxy framework does not provide out-of-the-box is the pool mechanism.
 >
->The InDesign integration allows the access of a pool of indesign servers (IDSPool). This pooling is specific to Indesign integration and not part of the AEM Assets proxy framework.
+>The [!DNL InDesign] integration allows the access of a pool of [!DNL InDesign] servers (IDSPool). This pooling is specific to [!DNL InDesign] integration and not part of the [!DNL Assets] proxy framework.
 
 >[!NOTE]
 >
 >Synchronization of Results:
 >
->With n instances using the same proxy, the processing result stays with the proxy. It is the job of the client (AEM Author) to request the result using the same unique job id as given to the client on job creation. The proxy simply gets the job done and keeps the result ready to be requested.
+>With n instances using the same proxy, the processing result stays with the proxy. It is the job of the client (Experience Manager Author) to request the result using the same unique job id as given to the client on job creation. The proxy simply gets the job done and keeps the result ready to be requested.

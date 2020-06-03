@@ -312,7 +312,7 @@ The workflow `MetaDataMap` is available to Java and ECMA script process implemen
 
 ### Example: Retrieving the Arguments of the Process Step Component {#example-retrieving-the-arguments-of-the-process-step-component}
 
-The edit dialog of the **Process Step** component includes the **Arguments** property. The value of the **Arguments** property is stored in the worklow metadata, and is associated with the `PROCESS_ARGS` key.
+The edit dialog of the **Process Step** component includes the **Arguments** property. The value of the **Arguments** property is stored in the workflow metadata, and is associated with the `PROCESS_ARGS` key.
 
 In the following diagram, the value of the **Arguments** property is `argument1, argument2`:
 

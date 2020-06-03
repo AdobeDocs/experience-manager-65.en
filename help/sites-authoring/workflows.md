@@ -15,7 +15,7 @@ discoiquuid: 7cb99618-d903-4cfb-b0d9-b23d189f6e78
 
 AEM Workflows allows you to automate a series of steps that are performed on (one or more) pages and/or assets.
 
-For example, when publishing, an editor has to review the content - before a site administrator activates the page. A worklow that automates this example notifies each participant when it is time to perform their required work:
+For example, when publishing, an editor has to review the content - before a site administrator activates the page. A workflow that automates this example notifies each participant when it is time to perform their required work:
 
 1. The author applies the workflow to the page.
 1. The editor receives a work item that indicates that they are required to review the page content. When finished, they indicate that their work item is complete.
