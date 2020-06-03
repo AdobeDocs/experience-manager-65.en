@@ -59,7 +59,7 @@ Assets user interface flow has better exception handling. Earlier if an asset di
 
 ## [!DNL Dynamic Media] {#dynamic-media}
 
-### 3D support in [!DNL Dynamic Media] {#3d-support}
+### 3D support in [!DNL Dynamic Media] {#support-for-3d}
 
 3D Support in [!DNL Dynamic Media] now enables customers to publish and add 3D content to web pages and applications. It includes:
 
