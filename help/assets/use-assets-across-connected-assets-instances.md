@@ -71,6 +71,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
     1. In **[!UICONTROL Mount Point]** field, enter the local [!DNL Experience Manager] path where [!DNL Experience Manager] fetches the assets. For example, `remoteassets` folder.
     1. Adjust the values of **[!UICONTROL Original Binary transfer optimization Threshold]** depending on your network. An asset rendition with a size that is greater than this threshold, is transferred asynchronously.
     1. Select **[!UICONTROL Datastore Shared with Connected Assets]**, if you use a datastore to store your assets and the Datastore is the common storage between both deployments. In this case, the threshold limit does not matter as actual asset binaries reside on the datastore and are not transferred.
+
     ![A typical configuration for Connected Assets](assets/connected-assets-typical-config.png)
 
     *Figure: A typical configuration for Connected Assets.*

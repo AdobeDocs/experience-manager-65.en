@@ -30,9 +30,10 @@ AEM Assets generates the following standard reports for you:
 * Files
 * Link Share
 
-AEM administrators can easily generate and customize these reports for your implementation. An administrator can follow these steps to generate a report:
+[!DNL Adobe Experience Manager] administrators can easily generate and customize these reports for your implementation. An administrator can follow these steps to generate a report:
 
-1. In Experience Manager interface, click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**. 
+1. In Experience Manager interface, click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
+
 ![](assets/AssetsReportNavigation.png)
 
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
