@@ -4,7 +4,7 @@ seo-title: Working with 3D assets in Dynamic Media
 description: Learn how to work with 3D assets in Dynamic Media
 seo-description: Learn how to work with 3D assets in Dynamic Media
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 ---
