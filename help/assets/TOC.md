@@ -45,6 +45,7 @@ user-guide-title: Experience Manager 6.5 Assets User Guide
     + [HTTP2 delivery of content](http2.md)
     + [Delivering Dynamic Media assets](delivering-dynamic-media-assets.md)
     + [Activating hotlink protection in Dynamic Media](hotlink-protection.md)
+    + [Dimensional 3D Images](assets-3d.md)
     + [Image Sets](image-sets.md)
     * [Dimensional (3D) images](assets-3d.md)
     + [Panoramic Images](panoramic-images.md)
