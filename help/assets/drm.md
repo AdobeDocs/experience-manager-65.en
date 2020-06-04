@@ -89,9 +89,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
    >
    >Only the asset creator (the person who uploads a particular asset to [!DNL Assets]) receives an email when the asset expires. See [how to configure email notification](/help/sites-administering/notification.md) for additional details around configuring email notifications at the overall [!DNL Experience Manager] level.
 
-1. In the **[!UICONTROL Prior notification in seconds]** field, specify the time in seconds prior to the time an asset expires when you want to receive a notification regarding the expiration. If you are an administrator or the asset creator, you receive a message before the expiration of the asset notifying you that the asset is about to expire after the specified time.
-
-   After the asset expires, you receive another notification that confirms the expiration. In addition, the expired assets are deactivated.
+1. In the **[!UICONTROL Prior notification in seconds]** field, specify the time in seconds prior to the time an asset expires when you want to receive a notification regarding the expiration. Asset creators receive a message before the expiration of the asset notifying you that the asset is about to expire after the specified time. After the asset expires, you receive another notification that confirms the expiration. In addition, the expired assets are deactivated.
 
 1. Click **[!UICONTROL Save]**.
 
