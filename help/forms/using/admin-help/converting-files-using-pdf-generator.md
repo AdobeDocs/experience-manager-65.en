@@ -59,7 +59,7 @@ If the ZIP file contains more than one HTML file at the lowest level of its fold
 >
 >* The HTML to PDF feature requires certain fonts in the system font directory. On Linux, Solaris, and AIX systems, the system font directory must contain the Courier font. On Windows systems, the system font directory must contain Times New Roman.
 >
-> * The followings are default Japanese fonts in AEM Forms on Linux. At least >one of these fonts should be available to convert Japanese fonts in the >system.
+> * (UNIX-based system only) One of the following Japanese fonts should be available on AEM Forms server to convert a web page with Japanese font to a PDF document.
 >
 >   * "Sazanami Gothic"
 >   * "Kozuka Gothic Pro-VI"
