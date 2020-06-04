@@ -21,7 +21,7 @@ There is no installation or configuration of any kind to use 3D assets in Dynami
 
 ![shoe in 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
 
-<!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
+See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md).
 
 ## Supported 3D file formats in Dynamic Media {#supported-three-d-file-formats-in-dm} 
 
