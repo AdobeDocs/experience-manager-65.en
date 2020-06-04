@@ -17,6 +17,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 
 **With 6.5 Upgrade**
 
+* [ContextHub Configurations](#contexthub-6.5)
 * [Workflow Instances](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-instances)
 * [Workflow Models](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-models)
 * [Workflow Launchers](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-launchers)
