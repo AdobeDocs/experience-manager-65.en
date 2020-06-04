@@ -21,9 +21,7 @@ Content creation is an iterative process. Authoring with efficiency requires bei
 
 The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 
->[!CAUTION]
->
->The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
+>[!TIP]
 >
 >See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.
 
