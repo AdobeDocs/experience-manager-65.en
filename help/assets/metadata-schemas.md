@@ -112,7 +112,7 @@ The following are the valid values for this property:
 
 * `./jcr:content/metadata/dc:title`: Stores the value at the asset's metadata node as the property `dc:title`.
 
-* `./jcr:created`: Displays the JCR property at the asset's node. If you configure these properties, Adobe recommends that you mark them as Disable Edit. The properties are protected. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset's properties.
+* `./jcr:created`: Stores the creation date and time of an asset. It is a protected property. If you configure these properties, Adobe recommends that you mark them as Disable Edit.
 
 To ensure that the component is displayed properly in the metadata schema form, the property path should not include any spaces.
 

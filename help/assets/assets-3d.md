@@ -4,7 +4,7 @@ seo-title: Working with 3D assets in Dynamic Media
 description: Learn how to work with 3D assets in Dynamic Media
 seo-description: Learn how to work with 3D assets in Dynamic Media
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 ---
@@ -13,11 +13,11 @@ content-type: reference
 
 Dynamic Media lets you upload, manage, view, and deliver 3D assets as immersive experiences. 
 
-* One-click publishing (using **[!UICONTROL Quick Publish]** on the toolbar) of 3D images to generate its URL.
-* Optimized support for viewing 3D assets with the high-quality, interactive Dimensional viewer preset powered by Adobe Dimension. The viewer preset includes, among other things, a collection of interactive camera controls that let you orbit, zoom, and pan.
+* One-click publishing (using **[!UICONTROL Quick Publish]** on the toolbar) of 3D assets to generate a URL.
+* Optimized support for viewing 3D assets with the high-quality, interactive Dimensional viewer preset powered by Adobe Dimension.
 * The 3D Media WCM component lets you easily add 3D assets to your AEM Sites pages.
 
-There is no installation or configuration of any kind to use 3D assets in Dynamic Media.
+There is no additional configuration required to use 3D assets in Dynamic Media.
 
 ![shoe in 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
 
@@ -29,10 +29,10 @@ Dynamic Media supports the following 3D file formats:
 
 |3D file extension |File format | MIME type |Notes |
 |---|---|---|---|
-| GLB |Binary GL Transmission|model/gltf-binary | Includes the textures with the asset instead of referencing them as external images.|
+| GLB |Binary GL Transmission|model/gltf-binary | Includes the materials and textures as a single asset.|
 | OBJ |WaveFront 3D Object File|application/x-tgif ||
 | STL |Stereolithography|application/vnd.ms-pki.stl ||
-| USDZ |Universal Scene Description Zip archive|model/vnd.usdz+zip |*Support for ingestion only; no viewing or interaction is available.* USDZ is Apple's proprietary 3D format that can only be view by Safari or iOS.|
+| USDZ |Universal Scene Description Zip archive|model/vnd.usdz+zip |*Support for ingestion only; no viewing or interaction is available.* USDZ is a proprietary 3D format that can be viewed natively by Safari and iOS devices.|
 
 ## Quick Start: 3D assets in Dynamic Media {#quick-start-three-d}
 
