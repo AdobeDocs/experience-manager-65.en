@@ -283,7 +283,7 @@ There are a few limitations:
 
 The following status codes can be seen in the relevant circumstances:
 
-* **202 (OK)**
+* **200 (OK)**
 
    Returned when:
 
