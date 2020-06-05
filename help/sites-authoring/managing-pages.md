@@ -296,10 +296,6 @@ You can copy a page and all of its subpages to a new location:
 
    >[!NOTE]
    >
-   >The **Paste without children** option is available from [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) onwards.
-
-   >[!NOTE]
-   >
    >If you copy the page to a location where a page with the same name as the original already exists, the system will automatically generate a variation of the name by appending a number. For example if `winter` already exists `winter` will become `winter1`.
 
 ### Moving or Renaming a Page {#moving-or-renaming-a-page}
