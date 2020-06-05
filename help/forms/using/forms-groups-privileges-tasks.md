@@ -63,14 +63,6 @@ Once you install [AEM Forms add-on package](../../forms/using/installing-configu
     </ul> </td> 
   </tr>
   <tr>
-   <td>template-power-user</td> 
-   <td>
-    <ul> 
-     <li>Create and preview adaptive forms or interactive communications templates</li> 
-     <li>Create scripts for adaptive forms or interactive communications templates using code editor</li> 
-    </ul> </td> 
-  </tr>
-  <tr>
    <td><p>fdm-authors</p> </td> 
    <td>
     <ul> 
