@@ -517,14 +517,14 @@ Following is an example of default mappings after following the [getting started
 * *[community site title](/help/communities/sites-console.md#step13asitetemplate)*: Geometrixx Communities
 * *[community function name](/help/communities/functions.md)*: Forum
 * *[community group name](/help/communities/creating-groups.md#creating-a-new-group)*: Hiking
-* *path to community group content*: `/content/sites/communities/en/groups/hiking`
+* *path to community group content*: `/content/sites/<site name>/en/groups/hiking`
 * *[UGC component resourceType](/help/communities/essentials.md)*: `social/forum/components/hbs/topic`
 * *UGC component title*: Hiking Topics
 * *login (authorizableId)*: `aaron.mcdonald@mailinator.com`
 * *SRP path to UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
-  or *path of component to follow*: `/content/sites/communities/en/jcr:content/content/primary/forum`
+  or *path of component to follow*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
 
-* *path to community site content*: `/content/sites/community/en`
+* *path to community site content*: `/content/sites/<site name>/en`
 
 ### Modifying Analytics Variable Mapping {#modifying-analytics-variable-mapping}
 
