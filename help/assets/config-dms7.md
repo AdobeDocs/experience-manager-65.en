@@ -114,7 +114,7 @@ See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-i
    >After an asset is activated, any updates are immediately published live to S7 Delivery.
 
 1. Tap **[!UICONTROL Save]**.
-1. To securely preview Dynamic Media content before it gets published, you will need to "whitelist" the AEM author instance to connect to Dynamic Media:
+1. To securely preview Dynamic Media content before it gets published, you will need to "allowlist" the AEM author instance to connect to Dynamic Media:
 
     * Log on to your Dynamic Media Classic account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
     * On the navigation bar near the top right of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
