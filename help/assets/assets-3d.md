@@ -242,11 +242,15 @@ See [Adding the 3D Media component to a web page](#adding-the-three-d-media-comp
 >
 >While a web page is in the AEM Sites **[!UICONTROL Edit]** mode, the 3D Media component displays the 3D asset but no interaction with the asset is possible. To make the asset interactive, you can use the **[!UICONTROL Preview]** feature to view the web page in the page editor with full access to the functionality of the 3D Media component.
 
-## Publishing Dynamic Media 3D assets {#publishing-three-d-assets}
+## Publishing static Dynamic Media 3D assets {#publishing-three-d-assets}
 
 Dynamic Media accepts a variety of 3D file formats that are supported as *static content* in Dynamic Media. Static content means that you can upload and published 3D assets, but there is no support for *dynamic* imaging or image refitting that is associated with the 3D asset. The reason is because Dynamic Media Imaging Server does not recognize 3D formats. As such, after you publish a 3D asset in Dynamic Media, you have an instant URL that you can copy. The URL for the 3D asset follows the usual Dynamic Media URL structure. However, you cannot edit any parameters in the asset's URL, unlike traditional image assets in Dynamic Media.
 
+See also [Obtaining a URL for a static asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset).
+
 In the **[!UICONTROL Card View]**, a small globe icon appears directly below an asset's name and to the left of its date and time to indicate that it is published. In the **[!UICONTROL List View]**, a **[!UICONTROL Published]** column indicates which assets are published or which are not.
+
+If you are using AEM as your WCM, use this publishing method to add the Dynamic Media 3D assets directly on your web page.
 
 See also [Publishing Dynamic Media assets](publishing-dynamicmedia-assets.md).
 
@@ -264,7 +268,7 @@ See also [Publishing Pages](/help/sites-authoring/publishing-pages.md).
 
     ![3d-asset-renditions](/help/assets/assets-dm/3d-asset-renditions.png)
 
-1. Tap **[!UICONTROL original]**. When a 3D asset is published (or "activated") the URL button appears near the bottom-left corner of the page if all of the following 3D asset conditions are met:
+1. Tap **[!UICONTROL original]**. When a 3D asset is published (or "activated") the **[!UICONTROL URL]** button appears near the bottom-left corner of the page if all of the following 3D asset conditions are met:
     * The 3D asset is a supported format (GLB, OBJ, STL, and USDZ).
     * The 3D asset was ingested into the Dynamic Media Image Production System (IPS).
     * The 3D asset is published.
@@ -273,14 +277,14 @@ See also [Publishing Pages](/help/sites-authoring/publishing-pages.md).
 
 1. Tap **[!UICONTROL URL]** to display the 3D asset's direct production URL which you can copy and use on web pages. 
 
-### Alternate methods for publishing Dynamic Media 3D assets {#alternate-publish-methods}
+### Alternate methods for publishing Dynamic Media 3D assets using the Dimensional viewer {#alternate-publish-methods}
 
-Besides using the direct **[!UICONTROL URL]** of a published Dynamic Media 3D asset, as described above, you can use **[!UICONTROL URL]** or **[!UICONTROL Embed]** to publish 3D assets by way of the Dimensional viewer.
+Use the following two methods for publishing Dynamic Media 3D assets if you are *not* using AEM as your WCM.
 
-* **[!UICONTROL URL]** &ndash; Use **[!UICONTROL URL]** if you are using a third-party web content management system and you want to link or embed 3D assets to your web pages using the Dimensional viewer.
+* **[!UICONTROL URL]** &ndash; Use **[!UICONTROL URL]** if you are using a third-party web content management system and you want to link Dynamic Media 3D assets to your web pages using the Dimensional viewer.
 
-  See [Linking URLs to your web application](linking-urls-to-yourwebapplication.md).
+  See [Linking URLs to your web application](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
-* **[!UICONTROL Embed]** &ndash; Use **[!UICONTROL Embed]** when you want to play the video or view an asset embedded on a web page. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the code is not permitted in the **[!UICONTROL Embed]** dialog box.
+* **[!UICONTROL Embed]** &ndash; Use **[!UICONTROL Embed]** when you want to view a Dynamic Media 3D asset embedded on a web page using the Dimensional viewer. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the code is not permitted in the **[!UICONTROL Embed]** dialog box.
 
-  See [Embedding the Dynamic Media Video, Image viewer, or Dimensional viewer on a web page](help/assets/embed-code.md).
+  See [Embedding the Dynamic Media Video, Image viewer, or Dimensional viewer on a web page](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

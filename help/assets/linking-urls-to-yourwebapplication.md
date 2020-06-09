@@ -99,7 +99,7 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
    Remember that URLs are only available to copy *after* you have first *published* the static asset.
 
-   See [Publishing Assets.](publishing-dynamicmedia-assets.md)
+   See [Publishing Assets](publishing-dynamicmedia-assets.md).
 
 1. Use any of the following methods to obtain the URL of the published static asset:
 
@@ -109,7 +109,7 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
           For example, `https://aem.com/is/content/adobe/image.gif`.
 
-    * click **[!UICONTROL Asset > Dynamic Renditions]**, then tap a dynamic rendition of the static asset and copy the URL.
+    * Tap **[!UICONTROL Asset > Dynamic Renditions]**, then tap a dynamic rendition of the static asset and copy the URL.
 
       Change the copied URL to use `is/content` in the path instead of `is/image/`.
 
