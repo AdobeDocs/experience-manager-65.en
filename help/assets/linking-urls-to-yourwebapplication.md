@@ -83,6 +83,7 @@ There are several different ways you can obtain a URL string. However, the steps
 
 Dynamic Media supports the delivery of static assets, which are additional assets beyond just images and video. Supported static assets formats for delivery include the following:
 
+* 3D files
 * Animated GIF
 * Audio files
 * CSS
@@ -94,7 +95,7 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
 **To obtain a URL for a static asset**
 
-1. Navigate to the *published *static asset whose URL you want to copy, and tap the asset to open it.
+1. Navigate to the *published* static asset whose URL you want to copy, and tap the asset to open it.
 
    Remember that URLs are only available to copy *after* you have first *published* the static asset.
 

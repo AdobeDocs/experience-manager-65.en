@@ -252,13 +252,6 @@ See also [Publishing Dynamic Media assets](publishing-dynamicmedia-assets.md).
 
 See also [Publishing Pages](/help/sites-authoring/publishing-pages.md).
 
->[!MORELIKETHIS]
->
->If you are using a third-party web content management system, you can link or embed 3D assets to your web pages.
->
->See [Linking URLs to your web application](linking-urls-to-yourwebapplication.md).
->
-
 **To publish Dynamic Media 3D assets**
 
 1. Open a 3D asset (GLB, OBJ, or STL file format) to view it in the asset details page.
@@ -278,4 +271,16 @@ See also [Publishing Pages](/help/sites-authoring/publishing-pages.md).
 
     ![3d-asset-url](/help/assets/assets-dm/3d-asset-url.png)
 
-1. Tap **[!UICONTROL URL]** to display the 3D asset's production URL. 
+1. Tap **[!UICONTROL URL]** to display the 3D asset's direct production URL which you can copy and use on web pages. 
+
+### Alternate methods for publishing Dynamic Media 3D assets {#alternate-publish-methods}
+
+Besides using the direct **[!UICONTROL URL]** of a published Dynamic Media 3D asset, as described above, you can use **[!UICONTROL URL]** or **[!UICONTROL Embed]** to publish 3D assets by way of the Dimensional viewer.
+
+* **[!UICONTROL URL]** &ndash; Use **[!UICONTROL URL]** if you are using a third-party web content management system and you want to link or embed 3D assets to your web pages using the Dimensional viewer.
+
+  See [Linking URLs to your web application](linking-urls-to-yourwebapplication.md).
+
+* **[!UICONTROL Embed]** &ndash; Use **[!UICONTROL Embed]** when you want to play the video or view an asset embedded on a web page. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the code is not permitted in the **[!UICONTROL Embed]** dialog box.
+
+  See [Embedding the Dynamic Media Video, Image viewer, or Dimensional viewer on a web page](help/assets/embed-code.md).
