@@ -34,7 +34,7 @@ Some key features and enhancements introduced in Adobe Experience Manager 6.5.5.
 
 * To get publish URL for Dynamic Media Scene7, a new method `getRemoteAssetPublishURL` is added to `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` interface.
 
-* [Accessibility enhancements](#assets-6550-changes) in [!DNL Adobe Experience Manager Assets] in compliance with Web Content Accessibility Guidelines (WCAG).
+* [Accessibility enhancements](#assets-6550) in [!DNL Adobe Experience Manager Assets] in compliance with Web Content Accessibility Guidelines (WCAG).
 
 * Removed Package Share integration from within Adobe Experience Manager.
 
@@ -335,7 +335,7 @@ Perform the following steps to install the Service Pack on an existing Adobe Exp
 
 1. Download the service pack from [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.5.0) or [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip).
 
-1. Open [Package Manager](https://[aem_server]:[port]/crx/packmgr/index.jsp) and click **[!UICONTROL Upload Package]** to upload the package.
+1. Open Package Manager and click **[!UICONTROL Upload Package]** to upload the package. To know how to use it, see [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Select the package and click **[!UICONTROL Install]**.
 
