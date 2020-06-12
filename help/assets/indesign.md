@@ -190,18 +190,19 @@ To configure the number of parallel IDS jobs:
 
    If there are multiple machines running [!DNL InDesign Server], add SOAP endpoints (number of processors per machine -1) for each machine.
 
+<!-- 
+TBD: Make updates to configurations for allow and block list after product updates are done.
+-->
+
    >[!NOTE]
    >
-   >You may choose to enable Blacklisting of IDS workers when working with pool of workers.
-   >
+   >When working with pool of workers, you can enable blocked list of IDS workers.
    >
    >To do so, enable the **[!UICONTROL enable.retry.name]** checkbox, under the `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuration, which enables IDS job retrials.
    >
-   >
    >Also, under the `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuration, set a positive value for `max.errors.to.blacklist` parameter which determines number of job retrials before barring an IDS from the job handlers list.
    >
-   >
-   >By default, after the configurable (retry.interval.to.whitelist.name) time in minutes the IDS worker is revalidated. If the worker is found online, it is removed from the blacklist.
+   >By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. If the worker is found online, it is removed from the blocked list.
 
 ## Enable support for [!DNL InDesign Server] 10.0 or later {#enabling-support-for-indesign-server-or-later}
 

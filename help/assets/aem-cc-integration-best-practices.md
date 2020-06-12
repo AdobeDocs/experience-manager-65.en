@@ -154,7 +154,7 @@ The following are examples of updates that are typically not relevant:
 
 #### Creative users with direct access to DAM {#creative-users-with-direct-access-to-dam}
 
-Typically, in-house creative teams or agencies/creative professionals  onboarded  to the internal network have access to the DAM instance, including [!DNL Experience Manager] login. [!DNL Experience Manager] and network infrastructure can be set up to allow direct access to external parties - usually trusted organizations like agencies working for a client - to have access to [!DNL Experience Manager] over network, for example via VPN or IP whitelisting.
+Typically, in-house creative teams or agencies/creative professionals  onboarded  to the internal network have access to the DAM instance, including [!DNL Experience Manager] login. [!DNL Experience Manager] and network infrastructure can be set up to allow direct access to external parties - usually trusted organizations like agencies working for a client - to have access to [!DNL Experience Manager] over network, for example via VPN or IP allowed list.
 
 In such cases, Adobe Asset Link or [!DNL Experience Manager] desktop app helps provide easy access to final/approved assets and lets you save creative-ready assets to DAM.
 
@@ -167,7 +167,7 @@ Use the following strategies to provide access to final/approved assets:
 * Use desktop app if Asset Link does not work.
 * Use [Experience Manager Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) for distributing assets securely to external partners
 * Use a custom implementation of a distribution and sourcing portal based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Use Access Control set up in [!DNL Experience Manager] and necessary network infrastructure (for example, VPN and IP whitelisting) to give external parties access to a dedicated area of content in your DAM. They can use [!DNL Experience Manager] Web UI to get assets and upload new content into your DAM.
+* Use Access Control set up in [!DNL Experience Manager] and necessary network infrastructure (for example, VPN and IP allowed list) to give external parties access to a dedicated area of content in your DAM. They can use [!DNL Experience Manager] Web UI to get assets and upload new content into your DAM.
 
 #### Work in progress on assets from [!DNL Experience Manager] {#work-in-progress-on-assets-from-aem}
 

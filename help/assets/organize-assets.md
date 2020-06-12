@@ -19,7 +19,7 @@ The most basic way to organize assets is to save these in folders. It is analogo
 
   * **Development folders**: contains digital assets that you are currently working on.
   * **Client folders**: contains digital assets based on clients or project names.
-  * **Master folders**: contains original, source digital assets.
+  * **Primary folders**: contains original, source digital assets.
   * **Rendition folders**: contains renditions and copies of the original, source digital assets.
   * **File Size folders**: contains digital assets based on small, medium, or large file sizes.
   * **Staging folders**: contains digital assets that are ready to publish live on your website.

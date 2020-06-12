@@ -51,7 +51,7 @@ Enterprise firewalls and proxies can also shape bandwidth in many different ways
 
 In this example, the enterprise has a 10 Gbps uplink. It should be large enough for several clients. Moreover, the firewall imposes a host rate limit of 10 Mbps. This limitation can potentially throttle traffic to a single host to 10 Mbps, even though the uplink to the internet is at 10 Gbps.
 
-This is the smallest client-oriented choke-point. However, you can evaluate for a change or whitelisting with the network operations group in charge of this firewall.
+This is the smallest client-oriented choke-point. However, you can evaluate for a change or configuring an allowed list with the network operations group in charge of this firewall.
 
 From the sample diagrams, you can conclude that six devices share a conceptual 10Mbps channel. Depending on the size of the assets leveraged, this may be inadequate to meet user expectations.
 
