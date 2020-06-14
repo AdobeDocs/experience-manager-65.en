@@ -166,7 +166,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 
 * [!UICONTROL Metadata Schema Editor] page and its elements are now accessible using keyboard and are screen reader friendly (CQ-4290962, CQ-4272953).
 
-* The `X` symbol to remove the selected tags is now announced by screen readers along with the number of selected tag (CQ-4273017).
+* The purpose of `X` symbol to remove the selected tags is now announced by screen readers along with the number of selected tag (CQ-4273017).
 
 * To avoid confusion for non-sighted users using screen reader, decorative icons and images are now ignored by screen readers (CQ-4272944).
 
