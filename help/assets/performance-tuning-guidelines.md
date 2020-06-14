@@ -293,6 +293,7 @@ To minimize latency and achieve high throughput through efficient CPU utilizatio
 * Deploy on Java 8.
 * Set optimal JVM parameters.
 * Configure a Filesystem DataStore or an S3 data store.
+* Disable subasset generation. If it is enabled, AEM's workflow creates a separate asset for each page in a multi-page asset. Each of these pages is an individual asset that consumes additional disk space, requires versioning, and additional workflow processing. If you do not require separate pages, disable subasset generation and page extraction activities.
 * Enable transient workflows.
 * Tune the Granite workflow queues to limit concurrent jobs.
 * Configure [!DNL ImageMagick] to limit resource consumption.
