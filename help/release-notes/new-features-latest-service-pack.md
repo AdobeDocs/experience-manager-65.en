@@ -49,9 +49,9 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 
 * Many user interface elements, controls, and input form fields are accessible using keyboard.
 
-* Color and contrast ratio of some user interface elements are updated so that users with limited vision or users without perception of color can distinguish these user interface elements. For example, the color of star rating icons (such as in [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view) is changed for appropriate contrast.
+* Color and contrast of some user interface elements are updated so that users with limited vision or users without perception of color can distinguish these user interface elements. For example, the color of star rating icons (such as in [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view) is changed for appropriate contrast.
 
-  ![Rating icons with improved contrast ratio](assets/star-rating-icons.png)
+  ![Rating icons with improved contrast](assets/star-rating-icons.png)
 
 ### Enhanced exception handling {#exception-handling}
 
@@ -139,9 +139,10 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 
 * The mixed state checkboxes (in which unless you select all the nested predicates the first-level checkboxes are not selected and are stricken through) in Filters panel are readable by screen readers.
 
-* Date and time format constraints are provided in field labels of date fields, to enable the users to enter the date in correct format using keyboard. For example, `On Time (MM-DD-YYYY HH:mm)`. Here MM is month in two-digit format, YYYY is year, DD is day in two-digit format, HH is hour in 24-hour military format, and mm is minute.
+* Date and time format constraints are provided in field labels of date fields, to enable the users to enter the date in correct format using keyboard. 
+For example, `On Time (MM-DD-YYYY HH:mm)`. Here MM is month in two-digit format, YYYY is year, DD is day in two-digit format, HH is hour in 24-hour military format, and mm is minute.
 
-* Screen readers announce the `X` symbol to remove the selected tags and the number of the selected tags.
+* Screen readers now announce the `X` symbol to remove the selected tags along with the number of the selected tags.
 
 #### Visual search for [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 

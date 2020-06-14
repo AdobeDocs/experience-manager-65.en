@@ -288,10 +288,7 @@ Some key highlights of this service pack release are:
 
 * Asset sharing does not work for an asset that has plus character (`+`) in the file name (NPR-31547).
 
-* Edits in the default search form Assets Admin * Search Rail do not work as expected (NPR-31502).
-
-<!-- Review: Check if this seemingly stray asterisk is needed there or not.
--->
+* Edits in the default search form Assets Admin Search Rail do not work as expected (NPR-31502).
 
 * Suggestions are not displayed when using Omnisearch on assets view for searching assets (NPR-31496).
 
@@ -305,7 +302,7 @@ Some key highlights of this service pack release are:
 
 * All the members (users/ groups) cannot be removed from the Members section of a folder; on attempting to remove all the users, logged in user gets added to the list (NPR-31171).
 
-* Assets with a plus symbol (`+`) in the file name cannot be deleted (NPR-31162).
+* Assets with plus symbol (`+`) in the file name cannot be deleted (NPR-31162).
 
 * Create drop down menu, which is visible in top menu on selecting a folder, does not show 'Folder' as a create option (NPR-30877).
 
