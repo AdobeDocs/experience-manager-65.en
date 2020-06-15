@@ -90,18 +90,18 @@ If you need to update the viewer and encoding presets for video in AEM because t
 
 ![chlimage_1-131](assets/chlimage_1-131.png)
 
-### Uploading your master video {#uploading-your-master-video}
+### Uploading your primary source video {#uploading-your-master-video}
 
-To upload your master video to Dynamic Media Classic from Adobe DAM:
+To upload your primary source video to Dynamic Media Classic from Adobe DAM:
 
 1. Navigate to the CQ DAM target folder where you have set up your cloud configuration with Dynamic Media Classic encoding profiles.
-1. Click **[!UICONTROL Upload]** to upload master video. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Dynamic Media Classic]** has a checkmark.
+1. Click **[!UICONTROL Upload]** to upload primary source video. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Dynamic Media Classic]** has a checkmark.
 
    >[!NOTE]
    >
    >It may take some time for the video thumbnails to be generated.
 
-   Dragging the DAM master video on to the video component accesses *all* of the Dynamic Media Classic encoded proxy renditions for delivery.
+   Dragging the DAM primary source video on to the video component accesses *all* of the Dynamic Media Classic encoded proxy renditions for delivery.
 
 ### Foundation Video Component versus Dynamic Media Classic Video Component {#foundation-video-component-versus-scene-video-component}
 
