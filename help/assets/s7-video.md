@@ -90,16 +90,16 @@ If you need to update the viewer and encoding presets for video in AEM because t
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Uploading your master video to Scene7 from Adobe DAM {#uploading-your-master-video}
+## Uploading your primary source video to Scene7 from Adobe DAM {#uploading-your-master-video}
 
 1. Navigate to the CQ DAM target folder where you have set up your cloud configuration with Scene7 encoding profiles.
-1. Click **[!UICONTROL Upload]** to upload master video. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
+1. Click **[!UICONTROL Upload]** to upload primary source video. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
 
    >[!NOTE]
    >
    >It may take some time for the video thumbnails to be generated.
 
-   Dragging the DAM master video on to the video component accesses *all* of the Scene7 encoded proxy renditions for delivery.
+   Dragging the DAM primary source video on to the video component accesses *all* of the Scene7 encoded proxy renditions for delivery.
 
 ## Foundation Video Component versus Scene7 Video Component {#foundation-video-component-versus-scene-video-component}
 
