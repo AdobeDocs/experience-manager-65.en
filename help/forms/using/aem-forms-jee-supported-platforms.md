@@ -207,11 +207,18 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
 
 <table>
  <tbody>
+ 
   <tr>
    <td><p><strong> Platform</strong></p> </td>
    <td><p><strong>Support Level</strong></p> </td>
    <td><p><strong>Supported Patch Definitions</strong></p> </td>
   </tr>
+  <tr>
+   <td>Oracle WebLogic Server 12.2.1 (12c R2)</td>
+   <td>A: Supported</td>
+   <td>Service pack and critical updates</td>
+  </tr>
+  <tr>
   <tr>
    <td>IBM® WebSphere® Application Server 9.0 <sup>[1] [4]</sup><br /> </td>
    <td>A: Supported</td>
