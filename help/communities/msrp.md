@@ -100,7 +100,7 @@ On author, to access the Storage Configuration console:
 
 ### MongoDB Replica Set {#mongodb-replica-set}
 
-For the production environment, it is strongly recommended to setup a replica set, a cluster of MongoDB servers that implements master-slave replication and automated failover.
+For the production environment, it is strongly recommended to setup a replica set, a cluster of MongoDB servers that implements primary-secondary replication and automated failover.
 
 To learn more about replica sets, visit MongoDB's [Replication](https://docs.mongodb.org/manual/replication/) documentation.
 
