@@ -83,14 +83,14 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open the **[!UICONTROL Adobe CQ DAM XmpFilter]** configuration.
-1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
+1. To apply filtering via an allowed list, select **[!UICONTROL Apply Allowlist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Allowed XML Names for XMP filtering]** box.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. To filter out blocked XMP properties after applying filtering via allowed list, specify those in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box.
+1. To filter out blocked XMP properties after applying filtering via allowed list, specify those in the **[!UICONTROL Blocked XML Names for XMP filtering]** box.
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Apply Blacklist to XMP Properties]** option is selected by default. In other words, filtering using a blocked list is enabled by default. To disable such filtering, deselect the **[!UICONTROL Apply Blacklist to XMP Properties]** option.
+   >The **[!UICONTROL Apply Blocklist to XMP Properties]** option is selected by default. In other words, filtering using a blocked list is enabled by default. To disable such filtering, deselect the **[!UICONTROL Apply Blocklist to XMP Properties]** option.
 
 1. Save the changes.
