@@ -351,7 +351,7 @@ The `scoringRules` property on a badging rule simply restricts which scoring rul
      <li>number = score</li>
      <li>| = the vertical line char (U+007C)</li>
      <li>path = full path to badge image resource</li>
-    </ul> The strings must be ordered so that the numbers are increasing in value and no whitespace should appear between the number and path.<br /> Example entry :<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> The strings must be ordered so that the numbers are increasing in value and no blank space should appear between the number and path.<br /> Example entry :<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
