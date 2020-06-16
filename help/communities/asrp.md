@@ -69,7 +69,7 @@ After submitting the configuration, test the connection:
 
 ### Replicate the Crypto Key {#replicate-the-crypto-key}
 
-The Consumer Key and Secret Key are encrypted. In order for the keys to be encrypted/decrypted properly, the master Granite Crypto key must be the same on all AEM instances.
+The Consumer Key and Secret Key are encrypted. In order for the keys to be encrypted/decrypted properly, the primary Granite Crypto key must be the same on all AEM instances.
 
 Follow the instructions at [Replicate the Crypto Key](/help/communities/deploy-communities.md#replicate-the-crypto-key).
 

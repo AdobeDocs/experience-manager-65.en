@@ -591,7 +591,7 @@ For specific instructions, see the primary publisher section of [Deploying Commu
 
 ### Replicate the Crypto Key {#replicate-the-crypto-key}
 
-The Adobe Analytics credentials are encrypted. To facilitate the replication or transmission of encrypted analytics credentials between author and publishers, all AEM instances must share the same master encryption key.
+The Adobe Analytics credentials are encrypted. To facilitate the replication or transmission of encrypted analytics credentials between author and publishers, all AEM instances must share the same primary encryption key.
 
 To do so, follow the instructions at [Replicate the Crypto Key](/help/communities/deploy-communities.md#replicate-the-crypto-key).
 
