@@ -207,7 +207,6 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
 
 <table>
  <tbody>
- 
   <tr>
    <td><p><strong> Platform</strong></p> </td>
    <td><p><strong>Support Level</strong></p> </td>
