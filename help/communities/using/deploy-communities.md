@@ -311,7 +311,7 @@ In order to copy the key material from author to all other instances, it is nece
 
         * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-    * copy the hmac and master files
+    * copy the hmac and primary node files
 
 * for each target AEM instance
 
