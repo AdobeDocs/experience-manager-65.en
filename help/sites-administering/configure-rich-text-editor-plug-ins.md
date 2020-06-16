@@ -486,7 +486,7 @@ In CRXDE, once the property is saved, the represented character is displayed. Se
 
 ### Define a range of characters {#definerangechar}
 
-1. Use steps 1 to 3 from [Defining a Single Character](#definingasinglecharacter).
+1. Use steps 1 to 3 from [Defining a Single Character](#definesinglechar).
 1. Under `chars` add a new node to hold the definition of the character range:
 
     * **Name** you can specify the name, but it should reflect the character range; for example, pencils.
