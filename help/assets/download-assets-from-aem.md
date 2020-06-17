@@ -22,7 +22,7 @@ The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets canno
 1. Select the folder or select one or more assets within the folder.
 1. On the toolbar, tap **[!UICONTROL Download]**.
 
-   ![Available options when downloading assets from Experience Manager Assets](/help/assets/assets/asset-download.png)
+   ![Available options when downloading assets from Experience Manager Assets](/help/assets/assets/asset-download1.png)
    
    *Download dialog box options.*
 
