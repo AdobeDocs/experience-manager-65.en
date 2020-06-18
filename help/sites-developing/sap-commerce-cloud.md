@@ -545,9 +545,9 @@ Integration is provided between AEM and various eCommerce systems. This requires
 
   AEM is presumed to be the *only* web front-end and therefore performs *all* authentication.
 
-* Slave Accounts
+* Accounts in Hybris
 
-  AEM creates a slave account in hybris for each shopper. The username of the slave account is the same as the AEM username. A cryptographically-random password is auto-generated and stored (encrypted) in AEM.
+  AEM creates a corresponding (subordinate) account in hybris for each shopper. The username of this account is the same as the AEM username. A cryptographically-random password is auto-generated and stored (encrypted) in AEM.
 
 #### Pre-existing Users {#pre-existing-users}
 
