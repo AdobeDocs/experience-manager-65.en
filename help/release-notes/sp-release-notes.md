@@ -118,7 +118,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 
 * The purpose of various combo box elements (such as Path field and option to open Selection dialog in Basic tab of asset Properties) are now correctly announced by screen readers (NPR-33235).
 
-* Information that the rows in list view table are selectable is now communicated to screen reader users when keyboard focus is on them. This information is announced when mouse is hovered on the rows (NPR-33234).
+* Information that the rows in list view table are selectable is now communicated to screen reader users when keyboard focus is on them. When a pointer hovers on the rows, the screen readers announce the information (NPR-33234).
 
 * Options (having [!UICONTROL x]) to remove each of the selected tags below the [!UICONTROL Tags] field in [!UICONTROL Basic] tab of [!UICONTROL Properties] are now accessible to screen readers (NPR-33206).
 
