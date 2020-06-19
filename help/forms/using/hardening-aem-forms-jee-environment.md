@@ -650,10 +650,10 @@ The Referrer Filtering process can be described as follows:
     1. If it is POST, the forms server performs the Referrer header check.
     1. If it is GET, the forms server bypasses the Referrer check, unless *CSRF_CHECK_GETS* is set to true, in which case it performs the Referrer header check. *CSRF_CHECK_GETS* is specified in the *web.xml* file for your application.
 
-1. The forms server checks whether the requested URI is whitelisted:
+1. The forms server checks whether the requested URI exists in allowlist:
 
-    1. If the URI is whitelisted, the server accepts the request.
-    1. If the requested URI is not whitelisted, the server retrieves the Referrer of the request.
+    1. If the URI is allowlisted, the server accepts the request.
+    1. If the requested URI is not allowlisted, the server retrieves the Referrer of the request.
 
 1. If there is a Referrer in the request, the server checks whether it is an Allowed Referrer. If it is allowed, the server checks for a Referrer Exception:
 
@@ -669,7 +669,7 @@ The Referrer Filtering process can be described as follows:
 
 AEM Forms on JEE provides a Referrer Filter to specify Referrer that are allowed access to your server resources. By default, the Referrer filter does not filter requests that use a safe HTTP method, e.g. GET, unless *CSRF_CHECK_GETS* is set to true. If the port number for an Allowed Referrer entry is set to 0, AEM Forms on JEE will allow all requests with Referrer from that host regardless of the port number. If no port number is specified, only requests from the default port 80 (HTTP) or port 443 (HTTPS) are allowed. Referrer Filtering is disabled if all the entries in the Allowed Referrer list are deleted.
 
-When you first install Document Services, the Allowed Referrer list is updated with the address of the server on which Document Services is installed. The entries for the server include the server name, the IPv4 address, the IPv6 address if IPv6 is enabled, the loopback address, and a localhost entry. The names added to the Allowed Referrer list are returned by Host operating system. For example a server with an IP address of 10.40.54.187 will include the following entries: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. For any unqualified name retuned by Host operating system (names that do not have IPv4 address, IPv6 address or qualified domain name) white list is not updated. Modify the Allowed Referrer list to suit your business environment. Do not deploy the forms server in the production environment with the default Allowed Referrer list. After modifying any of the Allowed Referrer, Referrer Exceptions, or URIs, ensure that you restart the server for the changes to take effect.
+When you first install Document Services, the Allowed Referrer list is updated with the address of the server on which Document Services is installed. The entries for the server include the server name, the IPv4 address, the IPv6 address if IPv6 is enabled, the loopback address, and a localhost entry. The names added to the Allowed Referrer list are returned by Host operating system. For example a server with an IP address of 10.40.54.187 will include the following entries: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. For any unqualified name retuned by Host operating system (names that do not have IPv4 address, IPv6 address or qualified domain name) allowlist is not updated. Modify the Allowed Referrer list to suit your business environment. Do not deploy the forms server in the production environment with the default Allowed Referrer list. After modifying any of the Allowed Referrer, Referrer Exceptions, or URIs, ensure that you restart the server for the changes to take effect.
 
 **Managing Allowed Referrer list**
 

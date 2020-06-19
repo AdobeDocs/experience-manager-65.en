@@ -18,7 +18,7 @@ The application and data files that must be backed up are described in more deta
 Consider the following points regarding backup and recovery:
 
 * The database should be backed up before GDS and AEM repository.
-* If you need to bring down the nodes in a clustered clustered environment for backup, ensure that the slave nodes are shut down before the master node. Otherwise, it can lead to inconsistency in the cluster or server. Also, the master node should be made live before any slave node.
+* If you need to bring down the nodes in a clustered clustered environment for backup, ensure that the secondary nodes are shut down before the primary node. Otherwise, it can lead to inconsistency in the cluster or server. Also, the primary node should be made live before any secondary node.
 * For the restore operation of a cluster, application server should be stopped for each node in the cluster.
 
 ## Global Document Storage directory {#global-document-storage-directory}

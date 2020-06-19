@@ -145,7 +145,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->If you set up any other topology, ensure that you whitelist the submit, prefill, and other URLs at the dispatcher layer.
+>If you set up any other topology, ensure that you add the submit, prefill, and other URLs to the allowlist at the dispatcher layer.
 
 ## Best practices {#best-practices}
 

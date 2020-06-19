@@ -374,7 +374,7 @@ The required LiveCycle process that enables email service process.
 
 1. Click **Import**.
 
-#### Adding ServiceName to the WhiteListed Service list {#adding-servicename-to-the-whitelisted-service-list}
+#### Adding ServiceName to the Allowlist Service list {#adding-servicename-to-the-allowlist-service-list}
 
 Mention in the AEM server the LiveCycle services you want to access the AEM server.
 
