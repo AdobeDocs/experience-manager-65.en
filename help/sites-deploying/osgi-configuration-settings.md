@@ -184,7 +184,7 @@ The referrer filter service is an OSGi service that allows you to configure:
 
 * which http methods should be filtered
 * whether an empty referrer header is allowed
-* and a white list of servers to be allowed in addition to the server host.
+* and a list of servers to be allowed in addition to the server host.
 
 See the [Security Checklist - Issues with Cross-Site Request Forgery](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) for further details.
 

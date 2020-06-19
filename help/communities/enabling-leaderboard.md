@@ -107,9 +107,9 @@ Leaderboard component configuration :
 
 * Rules tab:
 
-    * Rule Location = `/content/sites/communities/jcr:content`
-    * Scoring Rule = `/etc/community/scoring/rules/forums-scoring`
-    * Badging Rule = `/etc/community/badging/rules/reference-badging`
+    * Rule Location = `/content/sites/<site name>/jcr:content`
+    * Scoring Rule = `/libs/settings/community/scoring/rules/forums-scoring`
+    * Badging Rule = `/libs/settings/community/badging/rules//reference-badging`
     * Display Limit = `10`
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
@@ -130,9 +130,9 @@ Leaderboard component configuration :
 
 * Rules tab:
 
-    * Rule Location = `/content/sites/communities/jcr:content`
-    * Scoring Rule = `/etc/community/scoring/rules/adv-forums-scoring`
-    * Badging Rule = `/etc/community/badging/rules/adv-forums-badging`
+    * Rule Location = `/content/sites/<site name>/jcr:content`
+    * Scoring Rule = `/libs/settings/community/scoring/rules/adv-forums-scoring`
+    * Badging Rule = `/libs/settings/community/badging/rules/adv-forums-badging`
     * Display Limit = `10`
 
 ![chlimage_1-23](assets/chlimage_1-23.png)

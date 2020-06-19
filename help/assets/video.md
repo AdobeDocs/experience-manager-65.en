@@ -34,13 +34,13 @@ The following step-by-step workflow description is designed to help you get up a
         * [Creating a video encoding profile](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
         * Learn more about [Best practices for video encoding](#best-practices-for-encoding-videos).
 
-    * Associate the video processing profile to one or more folders where you are going to upload your master videos.
+    * Associate the video processing profile to one or more folders where you are going to upload your primary source videos.
 
         * [Applying a video profile to folders](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
         * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/organize-assets.md).
         * Learn more about [Organizing digital assets](/help/assets/organize-assets.md).
 
-    * Upload your master videos to the folders. You can upload video files that are up to 15 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
+    * Upload your primary source videos to the folders. You can upload video files that are up to 15 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
 
         * [Upload your videos](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
         * Learn more about [Supported input file formats](/help/assets/assets-formats.md#supported-multimedia-formats).
@@ -295,7 +295,7 @@ You can obtain a file’s metadata by viewing its metadata using a video editing
 
 ### Aspect ratio {#aspect-ratio}
 
-When you choose or create a video encoding preset for your master video file, make sure that the preset has the same aspect ratio as the master video file. The aspect ratio is the ratio of the width to the height of the video.
+When you choose or create a video encoding preset for your primary source video file, make sure that the preset has the same aspect ratio as the primary source video file. The aspect ratio is the ratio of the width to the height of the video.
 
 To determine the aspect ratio of a video file, obtain the file’s metadata and note the file’s width and height (see Obtaining a file's metadata above). Then use this formula to determine the aspect ratio:
 
@@ -362,7 +362,7 @@ Because resolution and data rate are linked, you have two options when encoding 
 * Choose a data rate and then encode at the highest resolution that looks good at the data rate you chose.
 * Choose a resolution and then encode at the data rate necessary to achieve high-quality video at the resolution you chose.
 
-When you choose (or create) a video encoding preset for your master video file, use this table to target the correct resolution:
+When you choose (or create) a video encoding preset for your primary source video file, use this table to target the correct resolution:
 
 |Resolution|Height (pixels)|Screen size|
 |--- |--- |--- |
@@ -377,7 +377,7 @@ When you choose (or create) a video encoding preset for your master video file, 
 
 In the United States and Japan, most video is shot at 29.97 frames per second (fps); in Europe, most video is shot at 25 fps. Film is shot at 24 fps.
 
-Choose a video encoding preset that matches the fps rate of your master video file. For example, if your master video is 25 fps, choose an encoding preset with 25 fps. By default, all custom encoding uses the master video file’s fps. For this reason, you do not need to explicitly specify the fps setting when you create a video encoding preset.
+Choose a video encoding preset that matches the fps rate of your primary source video file. For example, if your primary source video is 25 fps, choose an encoding preset with 25 fps. By default, all custom encoding uses the primary source video file’s fps. For this reason, you do not need to explicitly specify the fps setting when you create a video encoding preset.
 
 ### Video encoding dimensions {#video-encoding-dimensions}
 
@@ -773,7 +773,7 @@ You can optionally monitor progress of your YouTube publishing (or unpublishing)
 
 See [Monitoring video encoding and YouTube publishing progress](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-Publishing times can vary greatly depending on numerous factors that include the format of your master video, file size, and upload traffic. The publishing process can take anywhere from a few minutes to several hours. Also, be aware that higher resolution formats are rendered much more slowly. For example, 720p and 1080p take significantly longer to appear than 480p.
+Publishing times can vary greatly depending on numerous factors that include the format of your primary source video, file size, and upload traffic. The publishing process can take anywhere from a few minutes to several hours. Also, be aware that higher resolution formats are rendered much more slowly. For example, 720p and 1080p take significantly longer to appear than 480p.
 
 After eight hours if you you still see a status message that says **[!UICONTROL Uploaded (processing, please wait)]**, try removing the video from our site and uploading it again.
 

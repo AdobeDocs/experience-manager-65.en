@@ -39,7 +39,7 @@ This console displays the badges currently available and from which new badges c
 
 ## Create Badge {#create-badge}
 
-A badge is created by uploading a suitably small image (72dpi with a height ranging from 26-32 pixels) and providing a name. The badge image is stored in the repository at `/etc/community/badging/images` and is automatically replicated to the publish environment.
+A badge is created by uploading a suitably small image (72dpi with a height ranging from 26-32 pixels) and providing a name. The badge image is stored in the repository at `/libs/settings/community/badging/images` and is automatically replicated to the publish environment.
 
 If the publish environment is a farm of publishers, it is necessary to configure [user sync](/help/communities/sync.md).
 

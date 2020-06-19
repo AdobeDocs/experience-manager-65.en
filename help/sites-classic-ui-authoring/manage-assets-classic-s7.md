@@ -312,7 +312,7 @@ See [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) 
 
 ### Known limitations for the video component {#known-limitations-for-the-video-component}
 
-Adobe DAM and WCM shows if a master video is uploaded. They do not show these proxy assets:
+Adobe DAM and WCM shows if a primary source video is uploaded. They do not show these proxy assets:
 
 * Scene7 encoded renditions
 * Scene7 adaptive video sets

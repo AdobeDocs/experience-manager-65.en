@@ -126,7 +126,7 @@ The Lucene Index has the following configuration options:
 * The **type** property which will specify the type of index must be set to **lucene**
 * The **async** property which must be set to **async**. This will send the index update process to a background thread.
 * The **includePropertyTypes** property, which will define what subset of property types will be included in the index.
-* The **excludePropertyNames** property which will define a blacklist of property names - properties that should be excluded from the index.
+* The **excludePropertyNames** property which will define a list of property names - properties that should be excluded from the index.
 * The **reindex** flag which when set to **true**, triggers a full content re-index.
 
 ### The Lucene Property Index {#the-lucene-property-index}

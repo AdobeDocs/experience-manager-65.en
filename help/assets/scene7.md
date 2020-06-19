@@ -242,7 +242,7 @@ See [Video](s7-video.md) for more information on how videos work with Dynamic Me
 
 ### Known limitations for the video component {#known-limitations-for-the-video-component}
 
-Adobe DAM and WCM shows if a master video is uploaded. They do not show these proxy assets:
+Adobe DAM and WCM shows if a primary source video is uploaded. They do not show these proxy assets:
 
 * Dynamic Media Classic encoded renditions
 * Dynamic Media Classic adaptive video sets

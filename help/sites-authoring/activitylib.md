@@ -142,7 +142,7 @@ You need to publish activities to make them available. Conversely, you may want 
 
 >[!NOTE]
 >
->When unpublishing an activity,
+>When unpublishing an activity, the status of the activity does not change unless you refresh the page.
 
 To publish or unpublish activities:
 

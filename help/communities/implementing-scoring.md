@@ -40,7 +40,7 @@ Badges are placed under a member's name to indicate either their role or their s
 
 By default, badges are located in the repository at
 
-* `/etc/community/badging/images`
+* `/libs/settings/community/badging/images`
 
 If stored in a different location, they should be read accessible by everyone.
 
@@ -59,13 +59,13 @@ Assigned (and awared) badges are stored in the selected [SRP](/help/communities/
 Included in the release are three role-based badges :
 
 * **moderator**
-  `/etc/community/badging/images/moderator/jcr:content/moderator.png`
+  `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
 * **group manager**
-  `/etc/community/badging/images/group-manager/jcr:content/group-manager.png`
+  `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
 * **privileged member**
-  `/etc/community/badging/images/privileged-member/jcr:content/privileged-member.png`
+  `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -81,13 +81,13 @@ In order for badges to appear as a reward for activity, there are two things tha
 Included in the release are three reward-based badges:
 
 * **gold**
-  `/etc/community/badging/images/gold-badge/jcr:content/gold.png`
+  `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
 * **silver**
-  `/etc/community/badging/images/silver-badge/jcr:content/silver.png`
+  `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
 * **bronze**
-  `/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
+  `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -179,8 +179,8 @@ Scores are stored in SRP.
  >Scoring rule names should be globally unique; they should not end with the same name.
  >
  >An example of what *not* to do:
- >/etc/community/scoring/rules/site1/forums-scoring
- >/etc/community/scoring/rules/site2/forums-scoring
+ >/libs/settings/community/scoring/rules/site1/forums-scoring
+ >/libs/settings/community/scoring/rules/site2/forums-scoring
  >
 
 ### Scoring Sub-Rules {#scoring-sub-rules}
@@ -271,21 +271,21 @@ Sub-rules are nodes of type `cq:Page` with properties on its `jcr:content`node t
 
 Included in the release are two scoring rules for the [Forum Function](/help/communities/functions.md#forum-function) (one each for the Forum and Comments components of the Forum feature) :
 
-1. /etc/community/scoring/rules/comments-scoring
+1. /libs/settings/community/scoring/rules/comments-scoring
 
     * subRules[] =
-      /etc/community/scoring/rules/sub-rules/member-comment-create
-      /etc/community/scoring/rules/sub-rules/member-receive-vote
-      /etc/community/scoring/rules/sub-rules/member-give-vote
-      /etc/community/scoring/rules/sub-rules/member-is-moderated
+      /libs/settings/community/scoring/rules/sub-rules/member-comment-create
+      /libs/settings/community/scoring/rules/sub-rules/member-receive-vote
+      /libs/settings/community/scoring/rules/sub-rules/member-give-vote
+      /libs/settings/community/scoring/rules/sub-rules/member-is-moderated
 
-1. /etc/community/scoring/rules/forums-scoring
+1. /libs/settings/community/scoring/rules/forums-scoring
 
     * subRules[] =
-      /etc/community/scoring/rules/sub-rules/member-forum-create
-      /etc/community/scoring/rules/sub-rules/member-receive-vote
-      /etc/community/scoring/rules/sub-rules/member-give-vote
-      /etc/community/scoring/rules/sub-rules/member-is-moderated
+      /libs/settings/community/scoring/rules/sub-rules/member-forum-create
+      /libs/settings/community/scoring/rules/sub-rules/member-receive-vote
+      /libs/settings/community/scoring/rules/sub-rules/member-give-vote
+      /libs/settings/community/scoring/rules/sub-rules/member-is-moderated
 
 **Notes:**
 
@@ -313,15 +313,15 @@ Badging rules are nodes of type `cq:Page` with properties on its `jcr:content` n
 
 The rules for badging consist of a mandatory `thresholds` property that is an ordered list of scores mapped to badges. The scores must be ordered in increasing value. For example:
 
-* `1|/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
+* `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
     * A bronze badge is awared for earning 1 point.
 
-* `60|/etc/community/badging/images/silver-badge/jcr:content/silver.png`
+* `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
     * A silver badge is awarded when 60 points have been accumulated.
 
-* `80|/etc/community/badging/images/gold-badge/jcr:content/gold.png`
+* `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
     * A gold badge is awared when 80 points have been accumulated.
 
@@ -351,7 +351,7 @@ The `scoringRules` property on a badging rule simply restricts which scoring rul
      <li>number = score</li>
      <li>| = the vertical line char (U+007C)</li>
      <li>path = full path to badge image resource</li>
-    </ul> The strings must be ordered so that the numbers are increasing in value and no whitespace should appear between the number and path.<br /> Example entry :<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> The strings must be ordered so that the numbers are increasing in value and no blank space should appear between the number and path.<br /> Example entry :<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
@@ -370,8 +370,9 @@ The `scoringRules` property on a badging rule simply restricts which scoring rul
 
 Included in the release are two Badging Rules that correspond to the [Forums and Comments Scoring Rules](#includedscoringrules).
 
-* /etc/community/badging/rules/comments-badging
-* /etc/community/badging/rules/forums-badging
+* /libs/settings/community/badging/rules/comments-badging
+
+* /libs/settings/community/badging/rules/forums-badging
 
 **Notes:**
 
@@ -403,7 +404,7 @@ for example : admin:admin
 *badge* = "badgeContentPath=*badge-image-file*"
 
 *badge-image-file* = the location of the badge image file in the repository
-for example : /etc/community/badging/images/moderator/jcr:content/moderator.png
+for example : /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
 *member-profile-url* = the endpoint for the member's profile on publish
 for example : https://&lt;server&gt;:&lt;port&gt;/home/users/community/riley/profile.social.json
@@ -421,13 +422,13 @@ for example : https://&lt;server&gt;:&lt;port&gt;/home/users/community/riley/pro
 #### Assign a moderator badge {#assign-a-moderator-badge}
 
 ```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
+curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
 #### Revoke an assigned silver badge {#revoke-an-assigned-silver-badge}
 
 ```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/etc/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
+curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/libs/settings/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
 >[!NOTE]
@@ -591,9 +592,9 @@ It is possible to quickly try scoring and badging using the [Getting Started Tut
     * **Type**: `String`
     * Select **Multi**
     * Select **Add**
-    * Enter `/etc/community/badging/rules/forums-badging`
+    * Enter `/libs/settings/community/badging/rules/forums-badging`
     * Select **+**
-    * Enter `/etc/community/badging/rules/comments-badging`
+    * Enter `/libs/settings/community/badging/rules/comments-badging`
     * Select **OK**
 
 * Add the scoringRules property:
@@ -602,9 +603,9 @@ It is possible to quickly try scoring and badging using the [Getting Started Tut
     * **Type**: `String`
     * Select **Multi**
     * Select **Add**
-    * Enter `/etc/community/scoring/rules/forums-scoring`
+    * Enter `/libs/settings/community/scoring/rules/forums-scoring`
     * Select **+**
-    * Enter `/etc/community/scoring/rules/comments-scoring`
+    * Enter `/libs/settings/community/scoring/rules/comments-scoring`
     * Select **OK**
 
 * Select **Save All**.

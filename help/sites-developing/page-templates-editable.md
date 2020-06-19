@@ -238,7 +238,7 @@ The `template-authors` group is the group used to manage access to templates and
 >
 >The `template-authors` group is *only* for users that must be able to create new templates.
 >
->Editing templates is very powerful and if not done properly exiting templates can be broken. Therefore this role should be focused and only include qualified users.
+>Editing templates is very powerful and if not done properly existing templates can be broken. Therefore this role should be focused and only include qualified users.
 
 The following table details the necessary permissions for template editing.
 
