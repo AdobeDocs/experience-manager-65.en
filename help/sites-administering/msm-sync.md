@@ -319,12 +319,6 @@ For example, if you want the page **Title** to be included in the changes consid
 
 `jcr:(?!(title)$).*`
 
->[!CAUTION]
->
->Prior to 5.5 SP2 the excluded page properties were configured in the system console under the **Day CQ WCM Rollout Manager**. With 5.5 SP2 and later versions the excluded page properties settings within that panel are ignored. Property exclusion on rollout is configured as described above, in **CQ MSM Content Update Action**.
->
->Therefore, if you have manually adjusted this setting in a pre-5.5 SP2 installation and are upgrading to 5.5 SP2 or later version, *you must manually transfer these settings from the old configuration panel to the new one*.
-
 ### Configuring Synchronization for Updating References {#configuring-synchronization-for-updating-references}
 
 You can configure several OSGi services that support corresponding synchronization actions related to updating references.
