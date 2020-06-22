@@ -32,7 +32,7 @@ You need to back up the following parts of the AEM forms system to recover from 
 This topic discusses the following strategies to back up any AEM forms clustered environment:
 
 * Offline backup with downtime
-* Offline backup with no downtime (backup of a slave node which is shutdown)
+* Offline backup with no downtime (backup of a secondary node which is shutdown)
 * Online Backup with no downtime but delay in response
 * Back up the Bootstrap properties file
 
@@ -43,7 +43,7 @@ This topic discusses the following strategies to back up any AEM forms clustered
 1. Perform the following steps to back up AEM repository offline:
 
     1. For each cluster node, back up the file that contains the cluster node id.
-    1. Back up all files of any slave cluster node, including subdirectories.
+    1. Back up all files of any secondary cluster node, including subdirectories.
     1. Back up repository/system id of each cluster node separately.
 
    For detailed steps, see [Backup and Restore](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
@@ -57,12 +57,12 @@ This topic discusses the following strategies to back up any AEM forms clustered
 
    Note that we need to leave the rolling backup mode after a recovery.
 
-1. Shut down any of the slave nodes of the cluster with respect to AEM. (see [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Shut down any of the secondary nodes of the cluster with respect to AEM. (see [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. On any node, back up the database, GDS, and Connectors. (see [Files to back up and recover](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Perform the following steps to back up AEM repository offline:
 
     1. For each cluster node, back up the file that contains the cluster node id.
-    1. Back up all files of any slave cluster node, including subdirectories.
+    1. Back up all files of any secondary cluster node, including subdirectories.
     1. Back up repository/system.id of each cluster node separately.
 
    For detailed steps, see [Backup and Restore](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
@@ -76,26 +76,26 @@ This topic discusses the following strategies to back up any AEM forms clustered
 
    Note that you need to leave the rolling backup mode after a recovery.
 
-1. Shut down any of the slave nodes of the cluster with respect to AEM. (see [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Shut down any of the secondary nodes of the cluster with respect to AEM. (see [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. On any node, back up the database, GDS, and Connectors. (see [Files to back up and recover](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Perform the following steps to back up AEM repository online:
 
     1. For each cluster node, back up the file that contains the cluster_node.id.
     1. Back up repository/system.id of each cluster node separately.
-    1. On any slave node, take an online backup of the repository for detailed steps see Online backup.
+    1. On any secondary node, take an online backup of the repository for detailed steps see Online backup.
 
 1. Back up any other data, such as customer fonts.
 1. Start the cluster again.
 
 ### Back up the Bootstrap properties file {#back-up-the-bootstrap-properties-file}
 
-When we create an AEM cluster, a properties file is created in the application server for all slave nodes. It is recommended to back up the Bootstrap properties file. You can find the file at the following location on your application server:
+When we create an AEM cluster, a properties file is created in the application server for all secondary nodes. It is recommended to back up the Bootstrap properties file. You can find the file at the following location on your application server:
 
 * JBoss: in the BIN directory
 * WebLogic: in the domain directory
 * WebSphere: in the profile directory
 
-You need to back up the file for disaster recovery scenario of AEM slave node and replace it at the specified location on the application server, if restored.
+You need to back up the file for disaster recovery scenario of AEM secondary node and replace it at the specified location on the application server, if restored.
 
 ## Recovery in a clustered environment {#recovery-in-a-clustered-environment}
 
@@ -111,7 +111,7 @@ In case the entire cluster fails due to failures like database crash, you need t
 
    >[!NOTE]
    >
-   >If the corrupted node is an AEM master node, shut down the entire cluster node.
+   >If the corrupted node is an AEM primary node, shut down the entire cluster node.
 
 1. Re-create the physical system from a system image.
 1. Apply patches or updates to AEM forms that were applied since the image was made. This information was recorded during the backup procedure. AEM forms must be recovered to the same patch level as it was when the system was backed up.
@@ -135,9 +135,9 @@ In case the entire cluster fails due to failures like database crash, you need t
 >
 >Consider the following points:
 
-* If the failed node was an AEM master node, copy all the content from the slave repository folder (crx-repository\crx.0000 where 0000 can be any digits) to the crx-repository\ repository folder and delete the slave repository folder.
-* Before restarting any cluster node, ensure that you delete the repository /clustered.txt from the master node.
-* Ensure that the master node is started first and once it is completely up, start other nodes.
+* If the failed node was an AEM primary node, copy all the content from the secondary repository folder (crx-repository\crx.0000 where 0000 can be any digits) to the crx-repository\ repository folder and delete the secondary repository folder.
+* Before restarting any cluster node, ensure that you delete the repository /clustered.txt from the primary node.
+* Ensure that the primary node is started first and once it is completely up, start other nodes.
 
 ### Restoring the entire cluster {#restoring-the-entire-cluster}
 
@@ -165,13 +165,13 @@ In case the entire cluster fails due to failures like database crash, you need t
 >
 >Consider the following points:
 
-* If the failed node was an AEM master node, copy all the content from the slave repository folder (it looks like crx-repository\crx.0000 where 0000 can be any digits) to the crx-repository\ repository folder.
-* Before restarting any cluster node, ensure that you delete the repository /clustered.txt from the master node.
-* Ensure that the master node is started first and once it is completely up, start other nodes.
+* If the failed node was an AEM primary node, copy all the content from the secondary repository folder (it looks like crx-repository\crx.0000 where 0000 can be any digits) to the crx-repository\ repository folder.
+* Before restarting any cluster node, ensure that you delete the repository /clustered.txt from the primary node.
+* Ensure that the primary node is started first and once it is completely up, start other nodes.
 
 ## Back up and restore Correspondence Management Solution publish node {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-The publisher node does not have any master-slave relationship in a clustered environment. You can take backup of any Publisher node by following [Backup and Restore](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
+The publisher node does not have any primary-secondary relationship in a clustered environment. You can take backup of any Publisher node by following [Backup and Restore](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
 ### Recover a single publisher node {#recover-a-single-publisher-node}
 
@@ -182,5 +182,5 @@ The publisher node does not have any master-slave relationship in a clustered en
 
 1. Shutdown the cluster.
 1. Restore the Publish node using [Restoring the Backup](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring the Backup).
-1. Start the master node followed by the slave node of the author cluster.
+1. Start the primary node followed by the secondary node of the author cluster.
 

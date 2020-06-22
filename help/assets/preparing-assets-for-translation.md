@@ -12,7 +12,7 @@ In Adobe Experience Manager Assets, multilingual assets are included in folders,
 
 Each language folder is called a language copy. The root folder of a language copy, known as the language root, identifies the language of the content in the language copy. For example, */content/dam/it* is the Italian language root for the Italian language copy. Language copies must use a [correctly-configured language root](preparing-assets-for-translation.md#creating-a-language-root) so that the correct language is targeted when translations of source assets are performed.
 
-The language copy for which you originally add assets is the language master. The language master is the source that is translated into other languages. A sample folder hierarchy includes several language roots:
+The language copy for which you originally add assets is the language primary. The language primary is the source that is translated into other languages. A sample folder hierarchy includes several language roots:
 
 ```
  /content
@@ -28,9 +28,9 @@ The language copy for which you originally add assets is the language master. Th
 
 Perform the following steps to prepare your assets for translation:
 
-1. Create the language root of your language master. For example, the language root of the English language copy in the sample folder hierarchy is `/content/dam/en`. Ensure that the language root is correctly configured according to the information in [Create a Language Root](preparing-assets-for-translation.md#creating-a-language-root).
+1. Create the language root of your language primary. For example, the language root of the English language copy in the sample folder hierarchy is `/content/dam/en`. Ensure that the language root is correctly configured according to the information in [Create a Language Root](preparing-assets-for-translation.md#creating-a-language-root).
 
-1. Add assets to your language master.
+1. Add assets to your language primary.
 1. Create the language root of each target language for which you require a language copy.
 
 ## Create a language root {#creating-a-language-root}
@@ -53,7 +53,7 @@ For example, the root page of the Italian language copy of the sample hierarchy 
 
 Experience Manager interface provides a **[!UICONTROL References]** panel that displays a list of language roots that have been created within Assets.
 
-1. In the Assets console, select the language master for which you want to create language copies.
+1. In the Assets console, select the language primary for which you want to create language copies.
 1. Click the GlobalNav icon, and choose **[!UICONTROL References]** to open the [!UICONTROL Reference] pane.
 
    ![chlimage_1-122](assets/chlimage_1-122.png)

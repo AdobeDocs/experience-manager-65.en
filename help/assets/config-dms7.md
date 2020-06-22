@@ -19,9 +19,9 @@ If you use Adobe Experience Manager set up for different environments, such as o
 
 The following architecture diagram describes how Dynamic Media - Scene7 mode works.
 
-With the new architecture, AEM is responsible for master assets and synchs with Dynamic Media for asset processing and publishing:
+With the new architecture, AEM is responsible for primary source assets and synchs with Dynamic Media for asset processing and publishing:
 
-1. When the master asset is uploaded to AEM, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
+1. When the primary source asset is uploaded to AEM, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
 1. After the renditions are generated, AEM can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the AEM instance).
 1. After content is ready to be published and approved, it triggers the Dynamic Media service to push content out to delivery servers and cache content at the CDN.
 
@@ -114,7 +114,7 @@ See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-i
    >After an asset is activated, any updates are immediately published live to S7 Delivery.
 
 1. Tap **[!UICONTROL Save]**.
-1. To securely preview Dynamic Media content before it gets published, you will need to "whitelist" the AEM author instance to connect to Dynamic Media:
+1. To securely preview Dynamic Media content before it gets published, you will need to "allowlist" the AEM author instance to connect to Dynamic Media:
 
     * Log on to your Dynamic Media Classic account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
     * On the navigation bar near the top right of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.

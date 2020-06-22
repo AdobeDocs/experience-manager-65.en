@@ -65,7 +65,6 @@ Adobe recommends these configurations and provides full or restricted support as
 >To help AEM Forms customers reduce the cost of ownership, simplify the deployment architecture, and modernize the development stack, Adobe Experience Manager enterprise platform is moving away from application server-based deployments in favor of standalone OSGi-based deployments. Adobe continues to support the AEM Forms JEE stack with a reduced matrix of infrastructure components.
 >
 >With the release of 6.5, infrastructure components that have the lowest usage among our customers are no longer supported, as follows:
->• Oracle WebLogic application server
 >• IBM DB2 database
 >• IBM AIX and Sun Solaris operating systems
 >
@@ -211,6 +210,11 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td><p><strong> Platform</strong></p> </td>
    <td><p><strong>Support Level</strong></p> </td>
    <td><p><strong>Supported Patch Definitions</strong></p> </td>
+  </tr>
+  <tr>
+   <td>Oracle WebLogic Server 12.2.1 (12c R2)</td>
+   <td>A: Supported</td>
+   <td>Service pack and critical updates</td>
   </tr>
   <tr>
    <td>IBM® WebSphere® Application Server 9.0 <sup>[1] [4]</sup><br /> </td>

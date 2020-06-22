@@ -100,7 +100,7 @@ A boolean value of `true` if a cookie is found that indicates no consent, and a 
 
 ### maySetCookie(cookieName) function {#maysetcookie-cookiename-function}
 
-Determines whether a specific cookie can be used on the user's browser. This function is equivalent to using the `isOptedOut` function in conjunction with determining whether the given cookie is included in the list that the `getWhitelsitCookieNames` function returns.
+Determines whether a specific cookie can be used on the user's browser. This function is equivalent to using the `isOptedOut` function in conjunction with determining whether the given cookie is included in the list that the `getWhitelistCookieNames` function returns.
 
 **Parameters**
 

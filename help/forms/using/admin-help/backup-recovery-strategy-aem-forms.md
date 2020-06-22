@@ -81,7 +81,7 @@ Before you restart the forms server after a recovery, do the following:
     1. Click **Admin Options**.
     1. Click **Start** to synchronize assets from the repository.
 
-1. In a clustered environment, the master node (with respect to AEM) should be up before the slave nodes.
+1. In a clustered environment, the primary node (with respect to AEM) should be up before the secondary nodes.
 1. Ensure that no processes are initiated from either internal or external sources such as the Web, SOAP, or EJB process initiators until the normal operation of the system is validated.
 
 If the main AEM forms database is moved or changed, review the install Guides relevant to your application server for information on updating the database connection information for the AEM forms data sources IDP_DS and EDC_DS.

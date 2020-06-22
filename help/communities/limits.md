@@ -46,7 +46,7 @@ To reach this OSGi configuration:
 
 * **[!UICONTROL Automatically Apply UGC Contribution Limits]**
 
-  If checked, automatically set contribution limits on users when they register as community members. This is reflected in the community member's profile and may be enabled/disabled from the [members console](members.md). New members with an email address from a white listed domain are never constrained.
+  If checked, automatically set contribution limits on users when they register as community members. This is reflected in the community member's profile and may be enabled/disabled from the [members console](members.md). New members with an email address from a allowlist of domains are never constrained.
 
   Default is unchecked.
 
@@ -64,11 +64,11 @@ To reach this OSGi configuration:
 
 * **[!UICONTROL Domains]**
 
-  A white list of one or more email domains. Select the + icon to make addtional entries.
+  An allowlist list of one or more email domains. Select the + icon to make addtional entries.
 
-  Users with email addresses in the white listed domains are not affected when UGC contribution limits are automatically applied. For example, if domain `mycompany.com` is added to the list of domains, then a member with email address `me@mycompany.com` is never restricted from posting.
+  Users with email addresses in the allowlist of domains are not affected when UGC contribution limits are automatically applied. For example, if domain `mycompany.com` is added to the list of domains, then a member with email address `me@mycompany.com` is never restricted from posting.
 
-  Default is an empty white list.
+  Default is an empty allowlist.
 
 * **[!UICONTROL Messaging Recipients]**
 
