@@ -142,7 +142,7 @@ The Admin Control option is visible only to the members of the `administrators` 
   * **Add Column**: Select a column to add in AEM Inbox.
   * **Edit Column**: Hover the mouse over the column title and tap ![edit](assets/edit.svg) icon to enter a column display name.
   * **Delete Column**: Tap the ![delete](assets/delete.svg) icon to delete the column from AEM Inbox.
-  * **Move Column**: Drag the ![mobe](assets/move.svg) icon to move a column to a new position in AEM Inbox.
+  * **Move Column**: Drag the ![move](assets/move.svg) icon to move a column to a new position in AEM Inbox.
 
   ![admin-control](assets/admin-control-column-customize.png)
 
