@@ -31,7 +31,7 @@ To enable or disable viewer presets in the user interface, see [Managing Viewer 
 **To preview assets using the software interface**
 
 1. From **[!UICONTROL Adobe Experience Manager**, on the **[!UICONTROL Navigation** page, tap **[!UICONTROL Assets]**, then **[!UICONTROL Files]** to access assets.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View]**.
+1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View.]**
 1. (Optional) Use the **[!UICONTROL Type]** column to sort the assets by the type you want to preview.
 1. Under the **[!UICONTROL Title]** column, click the title name (not the thumbnail image) of the asset you want to preview.
 1. Depending on the asset type you clicked, do any one of the following:

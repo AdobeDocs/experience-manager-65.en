@@ -15,7 +15,7 @@ docset: aem65
 
 Mixed Media Sets let you provide a mix of images, Image Sets, Spin Sets, and videos in one presentation.
 
-Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMediaSet]**. In addition, if the Mixed Media Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
+Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMediaSet.]** In addition, if the Mixed Media Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
 
 ![chlimage_1-137](assets/chlimage_1-348.png)
 
@@ -39,7 +39,7 @@ To get you up and running quickly with Mixed Media Sets, follow these steps:
 
 1. Set up [Mixed Media Viewer presets](/help/assets/managing-viewer-presets.md), as needed.
 
-   Administrators can create or modify Mixed Media Set Viewer Presets. To see your mixed media with a viewer preset, select the mixed media set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers]**.
+   Administrators can create or modify Mixed Media Set Viewer Presets. To see your mixed media with a viewer preset, select the mixed media set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers.]**
 
    See **[!UICONTROL Tools > Assets > Viewer Presets]** to create or edit viewer presets.
 
@@ -57,7 +57,7 @@ To get you up and running quickly with Mixed Media Sets, follow these steps:
 
    AEM Assets creates URL calls for Mixed Media Sets and activates them after you publish the mixed media sets. You can copy these URLs when you preview assets. Alternatively you can embed them on your web site.
 
-   Select the Mixed Media Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers]**.
+   Select the Mixed Media Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers.]**
 
    See [Linking a Mixed Media Set to a web page](/help/assets/linking-urls-to-yourwebapplication.md) and [Embedding the Video or Image Viewer](/help/assets/embed-code.md).
 
@@ -81,7 +81,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 **To create a Mixed Media Set**
 
-1. In Assets, navigate to where you want to create a mixed media set, and click **[!UICONTROL Create]**, and select **[!UICONTROL Mixed Media Set]**. You can also create the set from inside a folder that contains your assets. The Mixed Media Set Editor displays.
+1. In Assets, navigate to where you want to create a mixed media set, and click **[!UICONTROL Create]**, and select **[!UICONTROL Mixed Media Set.]** You can also create the set from inside a folder that contains your assets. The Mixed Media Set Editor displays.
 
    ![chlimage_1-138](assets/chlimage_1-349.png)
 
@@ -91,11 +91,11 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
    >[!NOTE]
    >
-   >When creating the mixed media set, you can change the mixed media set thumbnail or allow AEM to select the thumbnail automatically based on the assets in the mixed media set. To select a thumbnail, click **[!UICONTROL Change thumbnail]** and select any image (you can navigate to other folders to find images as well). If you have selected a thumbnail and then decide that you want AEM to generate one from the mixed media set, select **[!UICONTROL Switch to Automatic thumbnail]**.
+   >When creating the mixed media set, you can change the mixed media set thumbnail or allow AEM to select the thumbnail automatically based on the assets in the mixed media set. To select a thumbnail, click **[!UICONTROL Change thumbnail]** and select any image (you can navigate to other folders to find images as well). If you have selected a thumbnail and then decide that you want AEM to generate one from the mixed media set, select **[!UICONTROL Switch to Automatic thumbnail.]**
 
-1. Tap the Asset Selector to select assets that you want to include in your Mixed Media Set. Select them and click **[!UICONTROL Select]**.
+1. Tap the Asset Selector to select assets that you want to include in your Mixed Media Set. Select them and click **[!UICONTROL Select.]**
 
-   With the Asset Selector, you can search for assets by typing in a keyword and tapping **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then tap the **[!UICONTROL Filter]** icon from the toolbar. Change the view by selecting the **[!UICONTROL View]** icon and selecting **[!UICONTROL List View]**, **[!UICONTROL Column View]**, or **[!UICONTROL Card View]**.
+   With the Asset Selector, you can search for assets by typing in a keyword and tapping **[!UICONTROL Return.]** You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then tap the **[!UICONTROL Filter]** icon from the toolbar. Change the view by selecting the **[!UICONTROL View]** icon and selecting **[!UICONTROL List View]**, **[!UICONTROL Column View]**, or **[!UICONTROL Card View.]**
 
    See [Working with Selectors](/help/assets/working-with-selectors.md).
 
@@ -105,15 +105,15 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
    ![chlimage_1-141](assets/chlimage_1-352.png)
 
-   If you want to add thumbnails, click the **+** **[!UICONTROL thumbnail]** icon next to the image and navigate to the thumbnail you want. When done selecting all the thumbnail images click **[!UICONTROL Save]**.
+   If you want to add thumbnails, click the **+** **[!UICONTROL thumbnail]** icon next to the image and navigate to the thumbnail you want. When done selecting all the thumbnail images click **[!UICONTROL Save.]**
 
    >[!NOTE]
    >
-   >If you want to add assets, tap **[!UICONTROL Add Asset]**.
+   >If you want to add assets, tap **[!UICONTROL Add Asset.]**
 
-1. To delete an asset, select the corresponding check box and tap **[!UICONTROL Delete Asset]**.
+1. To delete an asset, select the corresponding check box and tap **[!UICONTROL Delete Asset.]**
 1. To apply a preset, tap **[!UICONTROL Preset]** in the upper right corner and select a preset to apply to the assets.
-1. Click **[!UICONTROL Save]**. Your newly created Mixed Media Set appears in the folder you created it in.
+1. Click **[!UICONTROL Save.]** Your newly created Mixed Media Set appears in the folder you created it in.
 
 ## Editing Mixed Media Sets {#editing-mixed-media-sets}
 
@@ -137,15 +137,15 @@ You can perform a variety of editing tasks to assets in Mixed Media Sets directl
 1. In the Mixed Media Set Editor, do any of the following:
 
     * To reorder assets - In the left panel, tap **[!UICONTROL Assets]** (picture icon), drag an asset to a new location.
-    * To add assets - On the toolbar, tap **[!UICONTROL Add Asset]**. Navigate to the assets. For each asset that you want to add, hover over the asset's image (not the asset's name), then tap the checkmark icon. In the upper-right corner, tap **[!UICONTROL Select]**.
+    * To add assets - On the toolbar, tap **[!UICONTROL Add Asset.]** Navigate to the assets. For each asset that you want to add, hover over the asset's image (not the asset's name), then tap the checkmark icon. In the upper-right corner, tap **[!UICONTROL Select.]**
 
-    * To delete an asset - In the left panel, tap **[!UICONTROL Assets]** (picture icon), then select the asset. On the toolbar bar tap **[!UICONTROL Delete Asset]**.
+    * To delete an asset - In the left panel, tap **[!UICONTROL Assets]** (picture icon), then select the asset. On the toolbar bar tap **[!UICONTROL Delete Asset.]**
 
     * To sort assets by their name in ascending or descending order, in the left panel, tap **[!UICONTROL Assets]** (picture icon). To the right of the **[!UICONTROL Assets]** heading, tap the up or down caret icons.
 
         >[!NOTE]
         >
-        >    * To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. Hover over the asset and tap the checkmark icon to select it. Press **[!UICONTROL Backspace]** on the keyboard, or click **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete]**.
+        >    * To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. Hover over the asset and tap the checkmark icon to select it. Press **[!UICONTROL Backspace]** on the keyboard, or click **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete.]**
         >
         >    * You can edit the assets in a Mixed Media Set by navigating to the set, clicking **Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
@@ -153,9 +153,9 @@ You can perform a variety of editing tasks to assets in Mixed Media Sets directl
 
     >[!NOTE]
     >
-    >* To edit the assets in a Mixed Media Set - Navigate to the Mixed Media Set. Tap (do not select) the set to open it in the AEM Set Preview page. In the left rail, click the down caret to open the drop-down list, then tap **[!UICONTROL Set Members]**. In the Set Members page, hover on an asset, then tap **[!UICONTROL Edit]** (pencil icon) to open the editing page.
+    >* To edit the assets in a Mixed Media Set - Navigate to the Mixed Media Set. Tap (do not select) the set to open it in the AEM Set Preview page. In the left rail, click the down caret to open the drop-down list, then tap **[!UICONTROL Set Members.]** In the Set Members page, hover on an asset, then tap **[!UICONTROL Edit]** (pencil icon) to open the editing page.
     >
-    >* To delete an entire Mixed Media Set - From any viewing mode (such as Card view or Column view), navigate to the Mixed Media Set. Hover on the set, then tap **Select]** (checkmark icon). Press **[!UICONTROL Backspace]** on your keyboard, or tap **[!UICONTROL More]** (row of three dots), then tap **[!UICONTROL Delete]**.
+    >* To delete an entire Mixed Media Set - From any viewing mode (such as Card view or Column view), navigate to the Mixed Media Set. Hover on the set, then tap **Select]** (checkmark icon). Press **[!UICONTROL Backspace]** on your keyboard, or tap **[!UICONTROL More]** (row of three dots), then tap **[!UICONTROL Delete.]**
 
 ## Previewing Mixed Media Sets {#previewing-mixed-media-sets}
 

@@ -11,7 +11,7 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
-You publish your Dynamic Media assets by selecting the assets you have already uploaded and tapping **[!UICONTROL Publish]** or **[!UICONTROL Quick Publish]**. After your Dynamic Media assets are published, they are available to you for including in a web page by way of a URL or by embedding the code on the page.
+You publish your Dynamic Media assets by selecting the assets you have already uploaded and tapping **[!UICONTROL Publish]** or **[!UICONTROL Quick Publish.]** After your Dynamic Media assets are published, they are available to you for including in a web page by way of a URL or by embedding the code on the page.
 
 You can also instantly publish assets that you upload&mdash;without any user intervention. See [Configuring Dynamic Media - Scene7 mode](config-dms7.md).
 
