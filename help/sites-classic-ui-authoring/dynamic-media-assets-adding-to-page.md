@@ -41,7 +41,7 @@ To add a Dynamic Media component/viewer to a page:
 
 ## Dynamic Media Components {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] and [!UICONTROL Interactive Media] are available in the [!UICONTROL Sidekick] under **[!UICONTROL Dynamic Media]**. You use the **[!UICONTROL Interactive Media]** component for any interactive assets such as interactive video, interactive images, or carousel sets. For all other dynamic media components, use the **[!UICONTROL Dynamic Media]** component.
+[!UICONTROL Dynamic Media] and [!UICONTROL Interactive Media] are available in the [!UICONTROL Sidekick] under **[!UICONTROL Dynamic Media.]** You use the **[!UICONTROL Interactive Media]** component for any interactive assets such as interactive video, interactive images, or carousel sets. For all other dynamic media components, use the **[!UICONTROL Dynamic Media]** component.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 

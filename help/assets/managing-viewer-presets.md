@@ -37,7 +37,7 @@ See also [Keyboard accessiblity and navigation](https://marketing.adobe.com/reso
 
 ## Managing Viewer Presets {#managing-viewer-presets-1}
 
-You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
+You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -381,7 +381,7 @@ The following table identifies the mobile viewer gestures that are supported on 
 
 ## Increasing the number of Viewer Presets that display {#increasing-the-number-of-viewer-presets-that-display}
 
-AEM shows a wide variety viewer presets when viewing an assets from **[!UICONTROL Detail View > Viewers]**. You can increase or decrease the number of viewers that display.
+AEM shows a wide variety viewer presets when viewing an assets from **[!UICONTROL Detail View > Viewers.]** You can increase or decrease the number of viewers that display.
 
 **To increase the number of viewer presets displayed**
 
@@ -396,7 +396,7 @@ AEM shows a wide variety viewer presets when viewing an assets from **[!UICONTRO
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
 1. In the limit property, change the number to the desired number, for example `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Tap **[!UICONTROL Save All]**.
+1. Tap **[!UICONTROL Save All.]**
 
 ## Creating a Viewer Preset {#creating-a-new-viewer-preset}
 
@@ -416,12 +416,12 @@ See [Special considerations for creating a Carousel Banner Viewer preset](#speci
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
-1. On the Viewer Presets page, on the toolbar, tap **[!UICONTROL Create]**.
-1. In the **[!UICONTROL New Viewer Preset** dialog box, in the **[!UICONTROL Preset Name]** field, enter the name of the new preset. Choose a name carefully&mdash;they are not editable after you tap **[!UICONTROL Create]**.
+1. On the Viewer Presets page, on the toolbar, tap **[!UICONTROL Create.]**
+1. In the **[!UICONTROL New Viewer Preset** dialog box, in the **[!UICONTROL Preset Name]** field, enter the name of the new preset. Choose a name carefully&mdash;they are not editable after you tap **[!UICONTROL Create.]**
 
    When you save the preset later in these steps, the name appears on the Viewer Presets page under the Preset Title column header.
 
-1. On the Rich Media Type drop-down menu, select the type of viewer preset you want to create, then in the upper-right corner of the page, tap **[!UICONTROL Create]**.
+1. On the Rich Media Type drop-down menu, select the type of viewer preset you want to create, then in the upper-right corner of the page, tap **[!UICONTROL Create.]**
 
    See [Rich Media Types for Viewer Presets](#rich-media-types-for-viewer-presets).
 
@@ -464,7 +464,7 @@ See [Special considerations for creating a Carousel Banner Viewer preset](#speci
    >
    >After you type a value in the text field, tap elsewhere in the user interface to submit the change and close the virtual keyboard. If you tap Enter, no action occurs.
 
-1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**.
+1. Near the upper-right corner of the page, tap **[!UICONTROL Save.]**
 1. Publish your new viewer preset. You must publish the preset before you can use it on your website.
 
    See [Publishing Viewer Presets](#publishing-viewer-presets).
@@ -496,7 +496,7 @@ When you create or edit an Interactive Video viewer preset, you have the choice 
 
 The auto scroll behavior of thumbnails in the Interactive Video viewer functions independently of the display mode that you chose.
 
-When you create or edit an interactive video viewer preset, you access Auto Scroll from the Behavior tab. In the Behavior tab, from the **[!UICONTROL Selected Components]** drop-down menu, tap **[!UICONTROL InteractiveSwatches]**. The Auto Scroll check box is listed below the IS Command text field.
+When you create or edit an interactive video viewer preset, you access Auto Scroll from the Behavior tab. In the Behavior tab, from the **[!UICONTROL Selected Components]** drop-down menu, tap **[!UICONTROL InteractiveSwatches.]** The Auto Scroll check box is listed below the IS Command text field.
 
 If you disable **[!UICONTROL Auto Scroll]** (clear the check box) in the viewer preset, during video playback by the user, the panel only displays the first thumbnail image for the entire length of the video. However, a user can manually scroll through the thumbnails using the up and down arrow icons, if desired.
 
@@ -529,7 +529,7 @@ When creating Carousel Banner viewer presets, changing the style of hotspots can
 
 | |**Description** |**Actions** |
 |---|---|---|
-| **[!UICONTROL Hotspot Icon]** |Change the icon used for hotspot |To change the hotspot icon image, in the **[!UICONTROL Appearance]** tab, in **[!UICONTROL Selected Component]**, tap **[!UICONTROL ImageMapEffect]**. Under **[!UICONTROL Icon]**, select **[!UICONTROL Background]** and in the **[!UICONTROL Image]** field navigate to the background image you want. |
+| **[!UICONTROL Hotspot Icon]** |Change the icon used for hotspot |To change the hotspot icon image, in the **[!UICONTROL Appearance]** tab, in **[!UICONTROL Selected Component]**, tap **[!UICONTROL ImageMapEffect.]** Under **[!UICONTROL Icon]**, select **[!UICONTROL Background]** and in the **[!UICONTROL Image]** field navigate to the background image you want. |
 
 ## Activating or deactivating Viewer Presets {#activating-or-deactivating-viewer-presets}
 
@@ -537,7 +537,7 @@ The Viewer Presets that are available in the user interface depends on which one
 
 **To activate or deactivate viewer presets**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
 1. On the Viewer Preset page, under the **[!UICONTROL State]** column header, tap the toggle to activate or deactivate a viewer preset.
 
    Viewer presets that are activated have the toggle appear on the right, inside a blue box; deactivated viewer presets have the toggle appear on the left, inside a light grey box.
@@ -554,13 +554,13 @@ See also [Previewing Assets](/help/assets/previewing-assets.md).
 
 **To publish viewer presets**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
 1. Select one or more viewer presets that you want to publish.
 1. On the toolbar, tap the **[!UICONTROL Publish]** icon.
 
 ## Sorting Viewer Presets {#sorting-viewer-presets}
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
 1. Click **[!UICONTROL Preset Title]**, **[!UICONTROL Type]**, **[!UICONTROL Published]**, or **[!UICONTROL State]** to sort by that column heading. For example, click **[!UICONTROL Type]**  to sort the viewer preset types in alphabetical or reverse-alphabetical order.
 
 ## Editing Viewer Presets {#editing-viewer-presets}
@@ -569,9 +569,9 @@ Be aware that editing any *predefined, out-of-the-box viewer presets* is not a s
 
 **To edit viewer presets**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Asset > Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Asset > Viewer Presets.]**
 1. Select a preset by checking the box to the left of the viewer preset title.
-1. On the toolbar, tap **[!UICONTROL Edit]**.
+1. On the toolbar, tap **[!UICONTROL Edit.]**
 1. On the **[!UICONTROL Viewer Preset Editor]** page make the changes you want to the viewer preset, using the options found on the **[!UICONTROL Appearance]** and **[!UICONTROL Behavior]** tabs.
 
    From the **[!UICONTROL Appearance]** tab, near the upper-left corner of the Viewer Preset Editor page, tap **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]**, or **[!UICONTROL Phone]** to change the asset's presentation mode.
@@ -587,9 +587,9 @@ You can delete Viewer Presets that you have created and added to Dynamic Media.
 
 **To delete custom viewer presets**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
 1. On the Viewer Presets page, check a Preset Title, and then tap the **[!UICONTROL Trash]** icon.
-1. Tap **[!UICONTROL Delete]**.
+1. Tap **[!UICONTROL Delete.]**
 
 ## Applying a Viewer Presets to an asset {#applying-a-viewer-preset-to-an-asset}
 
@@ -597,7 +597,7 @@ If you have already published both the asset and the selected viewer, the **[!UI
 
 **To apply a viewer preset to an asset**
 
-1. Open the asset and near the upper-left corner of the page, tap the drop-down menu, then select **[!UICONTROL Viewers]**.
+1. Open the asset and near the upper-left corner of the page, tap the drop-down menu, then select **[!UICONTROL Viewers.]**
 
    >[!NOTE]
    >
