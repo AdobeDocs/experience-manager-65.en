@@ -165,3 +165,41 @@ The Agent UI has built in support for 210 special characters. The admin can [add
 * Skip Bullets/Numberings: Enable to skip bullets/numbering in the list document fragment.
 * Unfilled Values (info): Indicates the number of unfilled variables in the document fragment.
 
+## Save Interactive Communications as a draft {#save-as-draft}
+
+You can use the Agent UI to save one or more drafts for each Interactive Communication and retrieve the draft later to continue working on it. You can specify a different name for each draft to identify it.
+
+Adobe recommends executing these instructions in sequence to successfully save an Interactive Communication as a draft.
+
+### Before saving an Interactive Communication as draft {#before-save-as-draft}
+
+Perform the following tasks before saving an Interactive Communication as a draft:
+
+1. Implement the [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) Service Provider Interface (SPI). The SPI enables you to save the draft version of the Interactive Communication to the database with a draft ID as the unique identifier.
+1. Go to `https://'[server]:[port]'/system/console/configMgr`.
+1. Tap **[!UICONTROL Create Correspondence Configuration]**.
+1. Select **[!UICONTROL Enable Save Using CCRDocumentInstanceService]** and tap **[!UICONTROL Save]**.
+
+### Open Agent UI and save an Interactive Communication as draft {save-as-draft-agent-ui}
+
+Perform the following steps to save an Interactive Communication as a draft:
+
+1. Select an Interactive Communication in Forms Manager and tap **[!UICONTROL Open Agent UI]**.
+
+1. Make appropriate changes in the Agent UI and tap **[!UICONTROL Save as Draft]**.
+
+1. Specify the name of the Draft in the **[!UICONTROL Name]** field and tap **[!UICONTROL Done]**.
+
+Once you save the Interactive Communication as a draft, tap **[!UICONTROL Save Changes]** to save any further changes to the draft.
+
+### Retrieve the saved draft version {#retrieve-draft}
+
+After saving an Interactive Communication as a draft, you can retrieve it again to continue working on it. Retrieve the Interactive Communication using:
+
+`https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
+
+[draftid] refers to the unique identifier for the draft version that gets generated after saving an Interactive Communication as a draft.
+
+>[!NOTE]
+>
+>If you make any changes to the Interactive Communication after saving it as a draft, the draft version fails to open.
