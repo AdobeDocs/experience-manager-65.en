@@ -191,7 +191,7 @@ When selected, the Data Element editor renders a form with two fields:
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-See the [Dynamic Media Viewers reference guide](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html) for the list of supported events by each viewer type; go to specific viewer section, then click Support for Adobe Analytics tracking sub-section. Currently, the Dynamic Media Viewers reference guide does not document event arguments.
+See the [Dynamic Media Viewers reference guide](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) for the list of supported events by each viewer type; go to specific viewer section, then click Support for Adobe Analytics tracking sub-section. Currently, the Dynamic Media Viewers reference guide does not document event arguments.
 
 Let's now consider the life cycle of the Dynamic Media Viewers *Data Element*. The value of such Data Element is populated after the corresponding Dynamic Media viewer event happens on the page. For example, if the Data Element points to the **[!UICONTROL LOAD]** event and its "asset" argument, then the value of such Data Element will receive valid data after the viewer runs the LOAD event for the first time. If the Data Element points to the **[!UICONTROL ZOOM]** event and its "scale" argument, the value of such Data Element will remain empty until the viewer sends a **[!UICONTROL ZOOM]** event for the first time.
 
