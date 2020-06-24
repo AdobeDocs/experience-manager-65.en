@@ -17,7 +17,7 @@ docset: aem65
 
 When you are [authoring](content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write content:
 
-![markdown editor](/help/assets/assets/cfm-6420-08.png)
+![markdown editor](/help/assets/content-fragments/assets/cfm-6420-08.png)
 
 You can define:
 

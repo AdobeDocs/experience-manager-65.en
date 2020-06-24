@@ -14,7 +14,7 @@ docset: aem65
 
 # Content Fragment Models{#content-fragment-models}
 
-Content Fragment Models define the structure of content for your [content fragments](/help/assets/content-fragments.md).
+Content Fragment Models define the structure of content for your [content fragments](/help/assets/content-fragments/content-fragments.md).
 
 ## Enable Content Fragment Models {#enable-content-fragment-models}
 

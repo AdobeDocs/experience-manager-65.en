@@ -15,7 +15,7 @@ discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 
 Content Fragments allow you to create channel-neutral content, together with (possibly channel-specific) variations. **We.Retail** (as available in an out-of-the-box instance of AEM) provides the fragment **Arctic Surfing in Lofoten** as a basic sample. This illustrates that:
 
-* Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments.md). They allow you to create channel-neutral content, together with (possibly channel-specific) variations.
+* Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md). They allow you to create channel-neutral content, together with (possibly channel-specific) variations.
 
     * See [Where to Find Content Fragment assets in We.Retail](#where-to-find-content-fragments-in-we-retail)
 
