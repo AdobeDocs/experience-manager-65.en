@@ -105,7 +105,7 @@ See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-m
 
    Tap the 360 video asset to preview the video.
 
-1. On the preview page, near the upper-left corner of the page, tap the drop-down list, then select **[!UICONTROL Viewers]**.
+1. On the preview page, near the upper-left corner of the page, tap the drop-down list, then select **[!UICONTROL Viewers.]**
 
    ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
 
@@ -116,14 +116,14 @@ See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-m
 
    ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)*A 360 video screenshot.*
 
-    * From the Viewers list, tap **[!UICONTROL Video360VR]**.
+    * From the Viewers list, tap **[!UICONTROL Video360VR.]**
 
         Virtual Reality (VR) video is immersive video content that is accessed through the use of virtual reality headsets. As with ordinary videos, you create VR videos at the beginning when a video is being recorded or captured using 360 degree video cameras.
 
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *A 360 VR video screenshot.*
 
-1. Near the upper-right of the preview page, tap **[!UICONTROL Close]**.
+1. Near the upper-right of the preview page, tap **[!UICONTROL Close.]**
 
 ## Publishing 360 Video {#publishing-video}
 
