@@ -557,7 +557,7 @@ Specifically, you configure the accepted file format by MIME type in the OSGi (O
 
    For example, `psprocess="rasterize"&psresolution=120` .
 
-   See the [Adobe Dynamic Media Classic Image Production System API](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/) for additional upload job parameters you can use.
+   See the [Adobe Dynamic Media Classic Image Production System API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/c-overview.html) for additional upload job parameters you can use.
 
    >[!NOTE]
    >

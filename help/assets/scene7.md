@@ -173,13 +173,13 @@ The Dynamic Media Classic **[!UICONTROL Image]** component lets you add Dynamic 
 
 **[!UICONTROL Sharpening]** &ndash; Select how you want to sharpen the image. Sharpening is explained in detail in [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options) and [Sharpening best practices](/help/assets/assets/s7_sharpening_images.pdf).
 
-**[!UICONTROL URL Modifiers]** &ndash; You can change image effects by supplying additional Dynamic Media Classic image commands. These are described in [Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html).
+**[!UICONTROL URL Modifiers]** &ndash; You can change image effects by supplying additional Dynamic Media Classic image commands. These are described in [Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 **[!UICONTROL Breakpoints]** &ndash; If your website is responsive, you want to adjust the breakpoints. Breakpoints must be separated by commas ( , ).
 
 ### Image Template {#image-template}
 
-[Dynamic Media Classic Image Templates](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) are layered Photoshop content that was imported to Dynamic Media Classic, where content and properties were parameterized for variability. The **[!UICONTROL Image template]** component lets you import images and change the text dynamically in AEM. In addition, you can configure the **[!UICONTROL Image template]** component to use values from client context, so that each user experiences the image in a personalized way.
+[Dynamic Media Classic Image Templates](https://docs.adobe.com/help/en/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) are layered Photoshop content that was imported to Dynamic Media Classic, where content and properties were parameterized for variability. The **[!UICONTROL Image template]** component lets you import images and change the text dynamically in AEM. In addition, you can configure the **[!UICONTROL Image template]** component to use values from client context, so that each user experiences the image in a personalized way.
 
 Tap **[!UICONTROL Edit]** to configure the component. You can configure [settings common to all Dynamic Media Classic components](#settings-common-to-all-scene-components) as well as other settings described in this section.
 
