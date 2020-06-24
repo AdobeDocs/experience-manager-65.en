@@ -731,7 +731,7 @@ The timeline lets you view various events for a selected item, such as active wo
 
 >[!NOTE]
 >
->Timeline contains several [options specific to content fragments](/help/assets/content-fragments-managing.md#timeline-for-content-fragments).
+>Timeline contains several [options specific to content fragments](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
 ## Annotate assets {#annotating}
 
@@ -741,7 +741,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 >[!NOTE]
 >
->For Content Fragments, [annotations are created in the fragment editor](/help/assets/content-fragments-variations.md#annotating-a-content-fragment).
+>For Content Fragments, [annotations are created in the fragment editor](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment).
 
 1. Navigate to the location of the asset to which you want to add annotations.
 1. Click the **[!UICONTROL Annotate]** icon from one of the following:

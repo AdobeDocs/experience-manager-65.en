@@ -102,7 +102,7 @@ To use the out-of-the-box content fragment component as a blueprint for extensio
 
     * The `afterinsert`/ `afteredit`/ `afterdelete` listeners are used to trigger JS events. These events will be handled in the `cq.authoring.editor.plugin.cfm` client library to display the associated content in the side panel.
     * The `cq:dropTargets` are configured to support dragging content fragment assets.
-    * `cq:inplaceEditing` is configured to support authoring of a content fragment in the page editor. The fragment in-place editor is defined in the `cq.authoring.editor.plugin.cfm` client library and allows a quick link to open the current [element/variation](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) in the [fragment editor](/help/assets/content-fragments-variations.md).
+    * `cq:inplaceEditing` is configured to support authoring of a content fragment in the page editor. The fragment in-place editor is defined in the `cq.authoring.editor.plugin.cfm` client library and allows a quick link to open the current [element/variation](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) in the [fragment editor](/help/assets/content-fragments/content-fragments-variations.md).
 
 ### Asset Rewriting Before Rendering {#asset-rewriting-before-rendering}
 

@@ -158,7 +158,7 @@ For in-between content you can:
 
 >[!NOTE]
 >
->You can also [insert visual assets (images) to the fragment itself](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>You can also [insert visual assets (images) to the fragment itself](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
 >Visual assets inserted into the fragment itself are attached to the preceding paragraph in the fragment. This means that you cannot position in-between content between a visual asset and the preceding paragraph.
 
@@ -175,7 +175,7 @@ For in-between content you can:
 
 ### Using Associated Content {#using-associated-content}
 
-If you have [associated content](/help/assets/content-fragments-assoc-content.md) with the [content fragment](/help/assets/content-fragments.md) these assets will be available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for of [in-between content](#adding-in-between-content).
+If you have [associated content](/help/assets/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/assets/content-fragments.md) these assets will be available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for of [in-between content](#adding-in-between-content).
 
 >[!NOTE]
 >

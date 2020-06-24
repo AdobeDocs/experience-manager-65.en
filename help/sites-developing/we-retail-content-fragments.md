@@ -56,9 +56,9 @@ Here you can [edit and manage](/help/assets/content-fragments.md) your fragment 
 
 <!--![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
-* **[Variations](/help/assets/content-fragments-variations.md)** including [Markdown](/help/assets/content-fragments-markdown.md)
-* **[Associated Content](/help/assets/content-fragments-assoc-content.md)**
-* **[Metadata](/help/assets/content-fragments-metadata.md)**
+* **[Variations](/help/assets/content-fragments/content-fragments-variations.md)** including [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
+* **[Associated Content](/help/assets/content-fragments/content-fragments-assoc-content.md)**
+* **[Metadata](/help/assets/content-fragments/content-fragments-metadata.md)**
 
 ![cf-46](assets/cf-46.png)
 

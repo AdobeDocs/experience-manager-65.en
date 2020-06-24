@@ -33,7 +33,7 @@ Depending on the type of fragment, either models or templates are also used:
 
 >[!CAUTION]
 >
->[Content fragment models](/help/assets/content-fragments-models.md) are now recommended for creating all your fragments.
+>[Content fragment models](/help/assets/content-fragments/content-fragments-models.md) are now recommended for creating all your fragments.
 >
 >Content fragment models are used for all examples in We.Retail.
 
@@ -110,7 +110,7 @@ As with standard assets, a content fragment is held under:
 
 #### Asset Permissions {#asset-permissions}
 
-For further details see [Content Fragment - Delete Considerations](/help/assets/content-fragments-delete.md).
+For further details see [Content Fragment - Delete Considerations](/help/assets/content-fragments/content-fragments-delete.md).
 
 #### Feature Integration {#feature-integration}
 
