@@ -32,7 +32,7 @@ The following diagram provides an overview of the integration.
 The integration includes the following elements:
 
 * **Experience Manager Assets server** deployed in the enterprise network (managed services or on-premise): Folder sharing is initiated here.
-* **Adobe Marketing Cloud Assets core service**: Acts as an intermediary between Experience Manager and Creative Cloud storage services. Admin of the company using the integration needs to established trust relationship between the Marketing Cloud organization and the Assets instance. They also [define a list of approved Creative Cloud collaborators](https://marketing.adobe.com/resources/help/en_US/mcloud/t_admin_add_cc_user.html), that Assets users can share folders too for additional security.
+* **Adobe Marketing Cloud Assets core service**: Acts as an intermediary between Experience Manager and Creative Cloud storage services. Admin of the company using the integration needs to established trust relationship between the Marketing Cloud organization and the Assets instance. They also [define a list of approved Creative Cloud collaborators](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html), that Assets users can share folders too for additional security.
 
 * **Creative Cloud Assets web services** (storage and Creative Cloud Files web UI): This is where specific Creative Cloud app users, with whom an Assets folder was shared, would be able to accept the invitation and see the folder in their Creative Cloud account storage.
 * **Creative Cloud desktop app**: (Optional) Allows for direct access to shared folder/files from creative user’s desktop via sync with Creative Cloud Assets storage.

@@ -152,7 +152,7 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 Almost every Document Service in LiveCycle requires authentication. You can use any of the following options to start these services without providing explicit credentials in the code:
 
-### Whitelist configuration {#whitelist-configuration}
+### Allowlist configuration {#allowlist-configuration}
 
 LiveCycle Client SDK configuration contains a setting about service names. This configuration is a list of services for which the invocation logic uses administrator credential out of the box. For example, if you add DirectoryManager services (part of User Management API) to this list, any client code can directly use the service and the invocation layer automatically passes on the configured credentials as part of the request sent to the LiveCycle server
 
