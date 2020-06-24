@@ -34,7 +34,7 @@ There are three ways to implement Livefyre into a custom AEM component or other 
 **Method 1: Designer App Implementation**
 
 * **What:** Simplest and fastest way of integrating a Livefyre App. You can design, configure, and generate a customized JavaScript embed code to integrate a Media Wall App on a page in minutes.
-* **How:**  [Create, Preview, Publish, and Embed a Media Wall App]()
+* **How:**  [Create, Preview, Publish, and Embed a Media Wall App](https://docs.adobe.com/content/help/en/livefyre/using/apps/c-create-an-app.html)
 
 * **Example:** [https://codepen.io/dharafyre/pen/bvGrLo](https://codepen.io/dharafyre/pen/bvGrLo)
 
