@@ -31,7 +31,7 @@ This guide covers all Experience Manager Assets tasks, such as how to create, ma
 | [Developing User Guide](/help/sites-developing/home.md)| Learn how to build out your Experience Manager instance. |
 | [Managing User Guide](/help/managing/home.md)| This guide describes how to manage an Experience Manager project successfully. |
 | [Mobile User Guide](/help/mobile/home.md)|This guide describes how to create and manage content for mobile applications.|
-| [Experience Manager Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | This guide shows you how to share user-generated content with [!DNL Livefyre]. |
+| [Experience Manager Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | This guide shows you how to share user-generated content with [!DNL Livefyre]. |
 
 ## Key Experience Manager resources
 
