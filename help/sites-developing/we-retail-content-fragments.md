@@ -52,7 +52,7 @@ You can select and edit the **Arctic Surfing in Lofoten** fragment:
 
 * [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
-Here you can [edit and manage](/help/assets/content-fragments.md) your fragment using the tabs (left side panel):
+Here you can [edit and manage](/help/assets/content-fragments/content-fragments.md) your fragment using the tabs (left side panel):
 
 <!--![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
@@ -80,7 +80,7 @@ For example, the **Arctic Surfing in Lofoten** content fragment is referenced in
 
 For more details see:
 
-* [Working with Content Fragments](/help/assets/content-fragments.md)
+* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
 
     * Learn how to create, edit and manage your Content Fragment assets.
 
