@@ -65,7 +65,7 @@ If you do not need a workflow or versioning for your assets, you should upload y
 
 To configure universal presets:
 
-1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Scene7]** configuration and click **[!UICONTROL Edit]**.
+1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Scene7]** configuration and click **[!UICONTROL Edit.]**
 1. Select the **[!UICONTROL Video]** tab.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -86,7 +86,7 @@ To configure universal presets:
 
 ## Updating viewer and encoding presets {#updating-viewer-and-encoding-presets}
 
-If you need to update the viewer and encoding presets for video in AEM because the presets have been updated in Scene7, navigate to the Scene7 configuration in the cloud configuration and click **[!UICONTROL Update the viewer and encoding presets]**.
+If you need to update the viewer and encoding presets for video in AEM because the presets have been updated in Scene7, navigate to the Scene7 configuration in the cloud configuration and click **[!UICONTROL Update the viewer and encoding presets.]**
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -143,7 +143,7 @@ The various video encodings are created according to the S7 encoding presets sel
 
 1. In AEM, tap **[!UICONTROL Tools > Configuration Console**.
 1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
-1. Create a new S7 Video Profile. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Give the new video profile page a name and click **[!UICONTROL Create]**.
+1. Create a new S7 Video Profile. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Give the new video profile page a name and click **[!UICONTROL Create.]**
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 

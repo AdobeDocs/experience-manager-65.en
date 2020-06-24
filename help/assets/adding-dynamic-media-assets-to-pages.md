@@ -27,7 +27,7 @@ Adding a 3D Media, Dynamic Media, Interactive Media, Panoramic Media, Smart Crop
 
 1. In AEM, open the page where you want to add the Dynamic Media component.
 1. In the panel on the left side of the page (you may need to toggle the display of the side panel), click the **[!UICONTROL Components]** icon. 
-1. Under the **[!UICONTROL Components]** heading, in the drop-down list, select **[!UICONTROL Dynamic Media]**. 
+1. Under the **[!UICONTROL Components]** heading, in the drop-down list, select **[!UICONTROL Dynamic Media.]** 
 
     If no list of Dynamic Media components is available, you likely need to enable the Dynamic Media components that you want to use. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
@@ -58,7 +58,7 @@ If no Dynamic Media components are available to add to a page, it likely means t
 
     ![edit-template](/help/assets/assets-dm/edit-template.png)
 
-1. On the right side of the toolbar near the top of the page, from the drop-down list, tap **[!UICONTROL Structure]**.
+1. On the right side of the toolbar near the top of the page, from the drop-down list, tap **[!UICONTROL Structure.]**
 
     ![Policy](/help/assets/assets-dm/structure-mode.png)
 
@@ -67,7 +67,7 @@ If no Dynamic Media components are available to add to a page, it likely means t
 
     ![Allowed components](/help/assets/assets-dm/allowed-components.png)
 
-1. Scroll until you see **[!UICONTROL Dynamic Media]**.
+1. Scroll until you see **[!UICONTROL Dynamic Media.]**
 1. Tap the > icon to the left of **[!UICONTROL Dynamic Media]** to expand the list, select the Dynamic Media components you want to enable.
 
     ![Dynamic Media components list](/help/assets/assets-dm/dm-components-select.png)
@@ -92,7 +92,7 @@ You can localize Dynamic Media components in one of two ways:
 
 ## Dynamic Media Components {#dynamic-media-components}
 
-Dynamic Media components are available when you tap the **[!UICONTROL Components]** icon, then filter on **[!UICONTROL Dynamic Media]**.
+Dynamic Media components are available when you tap the **[!UICONTROL Components]** icon, then filter on **[!UICONTROL Dynamic Media.]**
 
 The Dynamic Media components that are available include the following:
 
@@ -133,13 +133,13 @@ The Dynamic Media component lets you add dynamic images, including image sets, s
 
 You can also configure the viewer preset, image preset, or image format directly in the component. To make an image responsive you can either set the breakpoints or apply a responsive image preset.
 
-You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
+You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings.]**
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]**.
+>By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height.]**
 
 * **[!UICONTROL Viewer preset]**&mdash;Select an existing viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you may need to make it visible. See Managing Viewer Presets. You cannot select a viewer preset if you are using an image preset and vice versa.
 
@@ -217,7 +217,7 @@ You must edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit
 
 >[!NOTE]
 >
->By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]**.
+>By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height.]**
 
 * **[!UICONTROL Image Modifiers]**&mdash;You can apply image effects by supplying additional image commands. These are described in Image Presets and the Image Serving Command reference.
 

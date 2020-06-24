@@ -299,11 +299,11 @@ To configure AEM to be able to publish assets to Dynamic Media Classic:
 
 1. Tap the AEM icon and navigate to **[!UICONTROL Deployment > Cloud Services]** to access Adobe Dynamic Media Classic.
 
-1. Tap **[!UICONTROL Configure now]**.
+1. Tap **[!UICONTROL Configure now.]**
 
    ![chlimage_1-297](assets/chlimage_1-297.png)
 
-1. In the **[!UICONTROL Title]** field, and optionally in the **[!UICONTROL Name]** field, enter the appropriate information. Tap **[!UICONTROL Create]**.
+1. In the **[!UICONTROL Title]** field, and optionally in the **[!UICONTROL Name]** field, enter the appropriate information. Tap **[!UICONTROL Create.]**
 
    >[!NOTE]
    >
@@ -311,9 +311,9 @@ To configure AEM to be able to publish assets to Dynamic Media Classic:
    >
    >Do **not** change the parent configuration. Changing the parent configuration can break the integration.
 
-1. Enter the email address, password, and region of your Dynamic Media Classic account and tap **[!UICONTROL Connect to Dynamic Media Classic]**. You are connected to the Dynamic Media Classic server and the dialog expands with more options.
+1. Enter the email address, password, and region of your Dynamic Media Classic account and tap **[!UICONTROL Connect to Dynamic Media Classic.]** You are connected to the Dynamic Media Classic server and the dialog expands with more options.
 
-1. Enter the **[!UICONTROL Company]** name and **[!UICONTROL Root Path]** (this is the published server name together with any path you want to specify; if you do not know the published server name, in Dynamic Media Classic, go to **[!UICONTROL Setup > Application Setup]**.)
+1. Enter the **[!UICONTROL Company]** name and **[!UICONTROL Root Path]** (this is the published server name together with any path you want to specify; if you do not know the published server name, in Dynamic Media Classic, go to **[!UICONTROL Setup > Application Setup.]**)
 
    >[!NOTE]
    >
@@ -325,7 +325,7 @@ To configure AEM to be able to publish assets to Dynamic Media Classic:
 
    ![chlimage_1-298](assets/chlimage_1-298.png)
 
-1. Click **[!UICONTROL OK]**. AEM saves your configuration.
+1. Click **[!UICONTROL OK.]** AEM saves your configuration.
 
 >[!NOTE]
 >
@@ -341,12 +341,12 @@ You must enable the Adobe CQ Dynamic Media Classic Dam Listener, which is disabl
 
 To enable it:
 
-1. Tap the [!UICONTROL Tools] icon, then navigate to **[!UICONTROL Operations > Web Console]**. The Web console opens.
+1. Tap the [!UICONTROL Tools] icon, then navigate to **[!UICONTROL Operations > Web Console.]** The Web console opens.
 1. Navigate to **[!UICONTROL Adobe CQ Dynamic Media Classic Dam Listener]** and select the **[!UICONTROL Enabled]** check box.
 
    ![chlimage_1-299](assets/chlimage_1-299.png)
 
-1. Tap  **[!UICONTROL Save]**.
+1. Tap  **[!UICONTROL Save.]**
 
 ### Adding configurable timeout to Dynamic Media Classic Upload workflow {#adding-configurable-timeout-to-scene-upload-workflow}
 
@@ -362,7 +362,7 @@ When an AEM instance is configured to handle video encoding through Dynamic Medi
    >
    >Best practice: Most assets are ingested within minutes at most (for example, images). But in certain instances - larger videos for example - the timeout value should be increased to 7200 seconds (2 hours) to accommodate long processing time. Otherwise, this Dynamic Media Classic upload job is marked as **[!UICONTROL UploadFailed]** in the JCR metadata.
 
-1. Tap **[!UICONTROL Save]**.
+1. Tap **[!UICONTROL Save.]**
 
 ### Autouploading from AEM Assets {#autouploading-from-aem-assets}
 
@@ -377,7 +377,7 @@ When an asset is added into AEM Assets, it is automatically uploaded and publish
 To configure autouploading from AEM Assets:
 
 1. Tap the AEM icon and navigate to **[!UICONTROL Deployment > Cloud Services]** then, under the Dynamic Media heading, under Available Configurations, tap **[!UICONTROL dms7 (Dynamic Media]**)
-1. Tap the **[!UICONTROL Advanced]** tab, select the **[!UICONTROL Enable Automatic Upload]** check box, then tap **[!UICONTROL OK]**. You now need to configure the DAM Asset workflow to include uploading to Dynamic Media Classic.
+1. Tap the **[!UICONTROL Advanced]** tab, select the **[!UICONTROL Enable Automatic Upload]** check box, then tap **[!UICONTROL OK.]** You now need to configure the DAM Asset workflow to include uploading to Dynamic Media Classic.
 
    >[!NOTE]
    >
@@ -385,8 +385,8 @@ To configure autouploading from AEM Assets:
 
    ![screen_shot_2018-03-15at52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
-1. Navigate back to the AEM welcome page and tap **[!UICONTROL Workflows]**. Double-click the **DAM Update Asset** workflow to open it.
-1. In the sidekick, navigate to the **[!UICONTROL Workflow]** components, and select **[!UICONTROL Dynamic Media Classic]**. Drag **[!UICONTROL Dynamic Media Classic]** to the workflow and tap **[!UICONTROL Save]**. Assets added to AEM Assets in the target folder will automatically be uploaded to Dynamic Media Classic.
+1. Navigate back to the AEM welcome page and tap **[!UICONTROL Workflows.]** Double-click the **DAM Update Asset** workflow to open it.
+1. In the sidekick, navigate to the **[!UICONTROL Workflow]** components, and select **[!UICONTROL Dynamic Media Classic.]** Drag **[!UICONTROL Dynamic Media Classic]** to the workflow and tap **[!UICONTROL Save.]** Assets added to AEM Assets in the target folder will automatically be uploaded to Dynamic Media Classic.
 
    ![chlimage_1-301](assets/chlimage_1-301.png)
 
@@ -446,11 +446,11 @@ To set the state of assets pushed to Dynamic Media Classic as unpublished:
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
-1. Tap **[!UICONTROL OK]**.
+1. Tap **[!UICONTROL OK.]**
 
 Enabling Secure View means that your assets are pushed to the secure preview server unpublished.
 
-You can check this by navigating to a Dynamic Media Classic component on a page in AEM and tapping **[!UICONTROL Edit]**. The asset will have the secure preview server listed in the URL. After publishing in AEM, the server domain in the file reference gets updated from the preview URL to the production URL.
+You can check this by navigating to a Dynamic Media Classic component on a page in AEM and tapping **[!UICONTROL Edit.]** The asset will have the secure preview server listed in the URL. After publishing in AEM, the server domain in the file reference gets updated from the preview URL to the production URL.
 
 ### Enabling Dynamic Media Classic for WCM {#enabling-scene-for-wcm}
 
@@ -467,10 +467,10 @@ To enable Dynamic Media Classic for WCM in the touch-optimized UI:
 
 1. Tap the AEM icon and navigate to **[!UICONTROL Sites]** and then the root page of your web site (not language specific).
 
-1. In the toolbar, select the [!UICONTROL settings] icon and tap **[!UICONTROL Open Properties]**.
+1. In the toolbar, select the [!UICONTROL settings] icon and tap **[!UICONTROL Open Properties.]**
 
-1. Tap **[!UICONTROL Cloud Services]** and tap **[!UICONTROL Add Configuration]** and select **[!UICONTROL Dynamic Media Classic]**.
-1. In the **[!UICONTROL Adobe Dynamic Media Classic]** drop-down list, select the desired configuration and tap **[!UICONTROL OK]**.
+1. Tap **[!UICONTROL Cloud Services]** and tap **[!UICONTROL Add Configuration]** and select **[!UICONTROL Dynamic Media Classic.]**
+1. In the **[!UICONTROL Adobe Dynamic Media Classic]** drop-down list, select the desired configuration and tap **[!UICONTROL OK.]**
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
@@ -482,10 +482,10 @@ To enable Dynamic Media Classic for WCM in the classic UI:
 
 1. In AEM, tap **[!UICONTROL Websites]** and navigate to the root page of your web site (not language specific).
 
-1. In the sidekick, tap the **[!UICONTROL Page]** icon and tap **[!UICONTROL Page Properties]**.
+1. In the sidekick, tap the **[!UICONTROL Page]** icon and tap **[!UICONTROL Page Properties.]**
 
-1. Tap **[!UICONTROL Cloud Services > Add services > Dynamic Media Classic]**.
-1. In the **[!UICONTROL Adobe Dynamic Media Classic]** drop-down list, select the desired configuration and tap **[!UICONTROL OK]**.
+1. Tap **[!UICONTROL Cloud Services > Add services > Dynamic Media Classic.]**
+1. In the **[!UICONTROL Adobe Dynamic Media Classic]** drop-down list, select the desired configuration and tap **[!UICONTROL OK.]**
 
    Video presets from that configuration of Dynamic Media Classic are available for use in AEM with the Dynamic Media Classic video component on that page and child pages.
 
@@ -533,8 +533,8 @@ Specifically, you configure the accepted file format by MIME type in the OSGi (O
 
 **To enable MIME type-based assets:**
 
-1. Tap the AEM icon and navigate to **[!UICONTROL Tools > Operations > Web Console]**.
-1. In the Adobe Experience Manager Web Console Configuration panel, on the **[!UICONTROL OSGi]** menu, tap **[!UICONTROL Configuration]**.
+1. Tap the AEM icon and navigate to **[!UICONTROL Tools > Operations > Web Console.]**
+1. In the Adobe Experience Manager Web Console Configuration panel, on the **[!UICONTROL OSGi]** menu, tap **[!UICONTROL Configuration.]**
 1. Under the Name column, find and tap **[!UICONTROL Adobe CQ Dynamic Media Classic Asset MIME type Service]** to edit the configuration.
 1. In the Mime Type Mapping area, tap any plus sign (+) to add a MIME type.
 
@@ -544,7 +544,7 @@ Specifically, you configure the accepted file format by MIME type in the OSGi (O
 
    For example, you would type a `<file_extension>=<mime_type>` as in `EPS=application/postscript` OR `PSD=image/vnd.adobe.photoshop`.
 
-1. In the lower-right corner of the configuration window, tap **[!UICONTROL Save]**.
+1. In the lower-right corner of the configuration window, tap **[!UICONTROL Save.]**
 1. Return to AEM and in the left rail, tap CRXDE Lite.
 1. On the CRXDE Lite page, in the left rail, navigate to `/etc/cloudservices/scene7/<environment>` (substitute `<environment>` for the actual name).
 1. Expand `<environment>` (substitute `<environment>` for the actual name) to reveal the `mimeTypes` node.
@@ -567,7 +567,7 @@ Specifically, you configure the accepted file format by MIME type in the OSGi (O
    >
    >Be sure that your PSD file has “layers.” If it is strictly one image or an image with mask, it is processed as an image because there are no layers to process.
 
-1. In the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
+1. In the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All.]**
 
 ## Troubleshooting Dynamic Media Classic and AEM integration {#troubleshooting-scene-and-aem-integration}
 
@@ -582,7 +582,7 @@ If you are having trouble integrating AEM with Dynamic Media Classic, see the fo
 
 **If your video presets do not appear:**
 
-* Ensure that you have configured the cloud configuration of that page through **[!UICONTROL Page Properties]**. Video presets are avaialble in the Dynamic Media Classic video component.
+* Ensure that you have configured the cloud configuration of that page through **[!UICONTROL Page Properties.]** Video presets are avaialble in the Dynamic Media Classic video component.
 
 **If your video assets do not play in AEM:**
 
