@@ -8,7 +8,6 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
-
 ---
 
 # Interactive images{#interactive-images}
@@ -50,9 +49,10 @@ See [(Optional) Creating an Interactive Image viewer preset](/help/assets/managi
    See [Uploading an image banner](#uploading-an-image-banner).
 
 1. **Adding hotspots to an image banner** &ndash; Add one or more hotspots to an image banner and associate each one with an action such as a hyperlink, a Quickview, or an Experience Fragment. After you add hotspots, you will finish this task by publishing the interactive image.
-   See [Adding hotspots to an image banner](#adding-hotspots-to-an-image-banner).
-   See [Previewing interactive images](#optional-previewing-interactive-images) - Optional. If desired, you can view a representation of your shoppable banner and test its interactivity.
-   See [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md) for details on how to publish interactive image assets.
+
+   * See [Adding hotspots to an image banner](#adding-hotspots-to-an-image-banner).
+   * See [Previewing interactive images](#optional-previewing-interactive-images) - Optional. If desired, you can view a representation of your shoppable banner and test its interactivity.
+   * See [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md) for details on how to publish interactive image assets.
 
 1. **Adding an interactive image to your website or to your website in AEM**
    If you use AEM Sites, or AEM eCommerce, or both, you can add the interactive image directly to a web page in AEM by dragging the Interactive Media component onto the page. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
