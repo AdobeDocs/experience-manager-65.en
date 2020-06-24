@@ -17,19 +17,19 @@ docset: aem65
 
 When you are [authoring](content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write content:
 
-![markdown editor](/help/assets/assets/cfm-6420-08.png)
+![markdown editor](/help/assets/content-fragments/assets/cfm-6420-08.png)
 
 You can define:
 
-* [Heading Notation](/help/assets/content-fragments-markdown.md#heading-notation)
-* [Paragraphs and Line Breaks](/help/assets/content-fragments-markdown.md#paragraphs-and-line-breaks)
-* [Links](/help/assets/content-fragments-markdown.md#links)
-* [Images](/help/assets/content-fragments-markdown.md#images)
-* [Block Quotes](/help/assets/content-fragments-markdown.md#block-quotes)
-* [Lists](/help/assets/content-fragments-markdown.md#lists)
-* [Emphasis](/help/assets/content-fragments-markdown.md#emphasis)
-* [Code Blocks](/help/assets/content-fragments-markdown.md#code-blocks)
-* [Backslash escapes](/help/assets/content-fragments-markdown.md#backslash-escapes)
+* [Heading Notation](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation)
+* [Paragraphs and Line Breaks](/help/assets/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks)
+* [Links](/help/assets/content-fragments/content-fragments-markdown.md#links)
+* [Images](/help/assets/content-fragments/content-fragments-markdown.md#images)
+* [Block Quotes](/help/assets/content-fragments/content-fragments-markdown.md#block-quotes)
+* [Lists](/help/assets/content-fragments/content-fragments-markdown.md#lists)
+* [Emphasis](/help/assets/content-fragments/content-fragments-markdown.md#emphasis)
+* [Code Blocks](/help/assets/content-fragments/content-fragments-markdown.md#code-blocks)
+* [Backslash escapes](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
 
 ## Heading Notation {#heading-notation}
 

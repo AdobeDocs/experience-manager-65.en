@@ -15,7 +15,7 @@ docset: aem65
 
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 
-[Variations](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of content fragments, as they allow you to create and edit copies of the master content for use on specific channels, and/or scenarios.
+[Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of content fragments, as they allow you to create and edit copies of the master content for use on specific channels, and/or scenarios.
 
 From the **Variations** tab you can:
 
@@ -86,7 +86,7 @@ The following actions are also available (for all the [formats](#formats)) when 
 * [Upload content](#uploading-content)
 * [Synchronize with Master](#synchronizing-with-master) (when editing a variation)
 * [Summarize Text](#summarizing-text)
-* [Annotate](/help/assets/content-fragments-variations.md#annotating-a-content-fragment) your text
+* [Annotate](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) your text
 
 * [Insert visual assets into your fragment](#inserting-assets-into-your-fragment) (images)
 
@@ -121,7 +121,7 @@ Rich text editing allows you to format:
     * Search
     * Find/Replace
     * Spellchecker
-    * [Annotations](/help/assets/content-fragments-variations.md#annotating-a-content-fragment)
+    * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 
 The [actions](#actions) are also accessible from the full-screen editor.
 
@@ -137,7 +137,7 @@ Plain Text allows for rapid entry of content without formatting or markdown info
 
 >[!NOTE]
 >
->For full information see the [Markdown](/help/assets/content-fragments-markdown.md) documentation.
+>For full information see the [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) documentation.
 
 This allows you to format your text using markdown. You can define:
 
@@ -243,7 +243,7 @@ Annotations:
 
   ![cfm-6420-25](assets/cfm-6420-25.png)
 
-* Can be viewed, and deleted, in [Timeline](/help/assets/content-fragments-managing.md#timeline-for-content-fragments) for the selected fragment.
+* Can be viewed, and deleted, in [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) for the selected fragment.
 
 ### Inserting Assets into your Fragment {#inserting-assets-into-your-fragment}
 
@@ -259,7 +259,7 @@ They will be added to the paragraph sequence of the fragment without any formatt
 
 >[!NOTE]
 >
->There are various methods of adding [images](/help/assets/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
+>There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
 1. Position the cursor at the position you want to add the image.
 1. Use the **Insert Asset** icon to open the search dialog.

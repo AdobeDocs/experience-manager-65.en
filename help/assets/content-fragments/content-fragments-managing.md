@@ -25,7 +25,7 @@ Content Fragments are stored as **Assets**, so are primarily managed from the **
 
 ### Creating a Content Model {#creating-a-content-model}
 
-[Content fragment models](/help/assets/content-fragments-models.md) can be enabled and created, prior to creating content fragments with structured content.
+[Content fragment models](/help/assets/content-fragments/content-fragments-models.md) can be enabled and created, prior to creating content fragments with structured content.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ The method of creating a content fragment is (basically) the same for both simpl
 
         * [Template](/help/sites-developing/content-fragment-templates.md) - for example **Simple Fragment**
 
-        * [Model](/help/assets/content-fragments-models.md) - used to create a fragment that requires structured content; for example the **Airport** model
+        * [Model](/help/assets/content-fragments/content-fragments-models.md) - used to create a fragment that requires structured content; for example the **Airport** model
 
     * All available templates and models are displayed.
 
@@ -98,13 +98,13 @@ Select the fragment to reveal the toolbar with applicable actions:
 
 * **Edit**
 
-    * Allows you to [open the fragment for editing content](/help/assets/content-fragments-variations.md) together with its elements, variations, associated content and metadata.
+    * Allows you to [open the fragment for editing content](/help/assets/content-fragments/content-fragments-variations.md) together with its elements, variations, associated content and metadata.
 
 * **Manage Tags**
 * **To Collection**
 
     * Add the fragment to a collection.
-    * This can also be done when [associating a collection with the fragment](/help/assets/content-fragments-assoc-content.md#adding-associated-content).
+    * This can also be done when [associating a collection with the fragment](/help/assets/content-fragments/content-fragments-assoc-content.md#adding-associated-content).
 
 * **Copy**/**Paste**
 
@@ -146,7 +146,7 @@ To open your fragment for editing:
 
     * Variations: [Editing the content](#editing-the-content-of-your-fragment) and [Managing your Variations](#creating-and-managing-variations-within-your-fragment)
 
-    * [Annotations](/help/assets/content-fragments-variations.md#annotating-a-content-fragment)
+    * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
     * [Associated Content](#associating-content-with-your-fragment)
     * [Metadata](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 
@@ -162,7 +162,7 @@ To open your fragment for editing:
 
 >[!NOTE]
 >
->Versions can also be [created, compared and reverted from the Timeline](/help/assets/content-fragments-managing.md#timeline-for-content-fragments).
+>Versions can also be [created, compared and reverted from the Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
 The editor has two options:
 
@@ -213,19 +213,19 @@ While editing your content fragment AEM automatically creates versions to ensure
 
 ## Editing the Content of your Fragment {#editing-the-content-of-your-fragment}
 
-Once you have opened your fragment, you can use the [Variations](/help/assets/content-fragments-variations.md) tab to author your content.
+Once you have opened your fragment, you can use the [Variations](/help/assets/content-fragments/content-fragments-variations.md) tab to author your content.
 
 ## Creating and Managing Variations within your Fragment {#creating-and-managing-variations-within-your-fragment}
 
-Once you have created the Master content, you can create, and manage, [Variations](/help/assets/content-fragments-variations.md) of that content.
+Once you have created the Master content, you can create, and manage, [Variations](/help/assets/content-fragments/content-fragments-variations.md) of that content.
 
 ## Associating Content with your Fragment {#associating-content-with-your-fragment}
 
-You can also [associate content](/help/assets/content-fragments-assoc-content.md) with a fragment. This provides a connection so that assets (i.e. images) can be (optionally) used with the fragment when it is added to a content page.
+You can also [associate content](/help/assets/content-fragments/content-fragments-assoc-content.md) with a fragment. This provides a connection so that assets (i.e. images) can be (optionally) used with the fragment when it is added to a content page.
 
 ## Viewing and Editing the Metadata (Properties) of your Fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
-You can view, and edit, the properties of a fragment using the [Metadata](/help/assets/content-fragments-metadata.md) tab.
+You can view, and edit, the properties of a fragment using the [Metadata](/help/assets/content-fragments/content-fragments-metadata.md) tab.
 
 ## Timeline for Content Fragments {#timeline-for-content-fragments}
 
@@ -266,7 +266,7 @@ For example:
 
 ## Comparing Fragment Versions {#comparing-fragment-versions}
 
-The **Compare to Current** action is available from the [Timeline](/help/assets/content-fragments-managing.md#timeline-for-content-fragments) after you have selected a specific version.
+The **Compare to Current** action is available from the [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) after you have selected a specific version.
 
 This will open:
 
@@ -296,17 +296,17 @@ They will be shown side-by-side, where:
 
 You can revert to a specific version of your fragment:
 
-* Directly from the [Timeline](/help/assets/content-fragments-managing.md#timeline-for-content-fragments).
+* Directly from the [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
   Select the required version, then the **Revert to this Version** action.
 
-* While [comparing a version to the current version](/help/assets/content-fragments-managing.md#comparing-fragment-versions) you can **Revert** to the selected version.
+* While [comparing a version to the current version](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) you can **Revert** to the selected version.
 
 ## Publishing and Referencing a Fragment {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
 >
->If your fragment is based on a model, then you should ensure that the [model has been published](/help/assets/content-fragments-models.md#publishing-a-content-fragment-model).
+>If your fragment is based on a model, then you should ensure that the [model has been published](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
 >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
 

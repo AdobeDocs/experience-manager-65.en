@@ -93,7 +93,7 @@ For further details see:
 
 * The [Content Fragments topic in the Assets user guide](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
-* [Content Fragment Models](/help/assets/content-fragments-models.md)
+* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
 * [Authoring with Content Fragments](/help/sites-authoring/content-fragments.md)
 * [Enabling JSON Export for a Component](/help/sites-developing/json-exporter-components.md)
 

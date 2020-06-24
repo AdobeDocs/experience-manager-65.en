@@ -15,7 +15,7 @@ discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 
 Content Fragments allow you to create channel-neutral content, together with (possibly channel-specific) variations. **We.Retail** (as available in an out-of-the-box instance of AEM) provides the fragment **Arctic Surfing in Lofoten** as a basic sample. This illustrates that:
 
-* Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments.md). They allow you to create channel-neutral content, together with (possibly channel-specific) variations.
+* Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md). They allow you to create channel-neutral content, together with (possibly channel-specific) variations.
 
     * See [Where to Find Content Fragment assets in We.Retail](#where-to-find-content-fragments-in-we-retail)
 
@@ -52,13 +52,13 @@ You can select and edit the **Arctic Surfing in Lofoten** fragment:
 
 * [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
-Here you can [edit and manage](/help/assets/content-fragments.md) your fragment using the tabs (left side panel):
+Here you can [edit and manage](/help/assets/content-fragments/content-fragments.md) your fragment using the tabs (left side panel):
 
 <!--![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
-* **[Variations](/help/assets/content-fragments-variations.md)** including [Markdown](/help/assets/content-fragments-markdown.md)
-* **[Associated Content](/help/assets/content-fragments-assoc-content.md)**
-* **[Metadata](/help/assets/content-fragments-metadata.md)**
+* **[Variations](/help/assets/content-fragments/content-fragments-variations.md)** including [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
+* **[Associated Content](/help/assets/content-fragments/content-fragments-assoc-content.md)**
+* **[Metadata](/help/assets/content-fragments/content-fragments-metadata.md)**
 
 ![cf-46](assets/cf-46.png)
 
@@ -80,7 +80,7 @@ For example, the **Arctic Surfing in Lofoten** content fragment is referenced in
 
 For more details see:
 
-* [Working with Content Fragments](/help/assets/content-fragments.md)
+* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
 
     * Learn how to create, edit and manage your Content Fragment assets.
 
