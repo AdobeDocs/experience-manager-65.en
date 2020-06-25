@@ -26,11 +26,11 @@ Once a community site is created, content may be added to the resulting pages us
 
 ## Community Functions Console {#community-functions-console}
 
-In the author environment, to reach the community functions console:
+To reach the community functions console in the author environment:
 
-* From global navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Community Functions]**.
+* Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Community Functions]**.
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-379](assets/chlimage_1-379.png)
 
 ## Pre-built Functions {#pre-built-functions}
 
@@ -40,13 +40,13 @@ A community site template provides the structure for a community site including 
 
 ### Title and URL Settings {#title-and-url-settings}
 
-**Title **and **URL **are properties common to all community functions.
+**Title** and **URL** are properties common to all community functions.
 
 When a community function is added to a community site template or added when [modifying](/help/communities/sites-console.md#modifying-site-properties) the structure of a community site, the function's dialog opens so that the Title and URL may be configured.
 
 #### Configuration Function Details {#configuration-function-details}
 
-![chlimage_1-107](assets/chlimage_1-107.png)
+![chlimage_1-380](assets/chlimage_1-380.png)
 
 * **Title**
   
@@ -65,7 +65,7 @@ Then, the URL to the page is https://localhost:4503/content/sites/engage/en/page
 
 and the menu link for the page appears as:
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![chlimage_1-381](assets/chlimage_1-381.png)
 
 ### Activity Stream Function {#activity-stream-function}
 
@@ -75,7 +75,7 @@ When added to a template, the following dialog opens:
 
 #### Configuration Function Details {#configuration-function-details-1}
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![chlimage_1-382](assets/chlimage_1-382.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
@@ -105,7 +105,7 @@ The blog function is a page with a [Blog component](/help/communities/blog-featu
 
 When added to a template, the following dialog opens:
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![chlimage_1-383](assets/chlimage_1-383.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
@@ -131,7 +131,7 @@ The calendar function is a page with a [Calendar component](/help/communities/ca
 
 When added to a template, the following dialog opens:
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
@@ -196,7 +196,7 @@ When added to a template, the following dialog opens:
 
 #### Configuration Function Details {#configuration-function-details-2}
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
@@ -224,7 +224,7 @@ When added to a template, the following dialog opens:
 
 >[!CAUTION]
  >
- >The groups function must *not *be the *first nor the only* function in a site's structure or in a community site template.
+ >The groups function must *not* be the *first nor the only* function in a site's structure or in a community site template.
  >
  >Any other function, such as the [page function](#page-function), must be included and listed first.
  >
@@ -239,7 +239,7 @@ As of Communities [feature pack 1](/help/communities/deploy-communities.md#lates
 
 When added to a template, the following dialog opens:
 
-![chlimage_1-113](assets/chlimage_1-113.png)
+![chlimage_1-386](assets/chlimage_1-386.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
@@ -262,7 +262,7 @@ The ideation function is a page with one [Ideation component](/help/communities/
 
 When added to a template, the following dialog opens, which specifies the default Title and URL names, as well as default display settings for the template:
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-387](assets/chlimage_1-387.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
@@ -290,7 +290,7 @@ The leaderboard function is a page with one [Leaderboard component](/help/commun
 
 When added to a template, the following dialog opens, which specifies the default Title and URL names, as well as default display settings for the template:
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-388](assets/chlimage_1-388.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
@@ -321,7 +321,7 @@ The QnA function is a page with a [QnA component](/help/communities/working-with
 
 When added to a template, the configuration allows restriction to privileged members:
 
-![chlimage_1-116](assets/chlimage_1-116.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
@@ -349,11 +349,11 @@ When added to a template, the configuration allows restriction to privileged mem
 
 The ability to create a community function is reached by selecting the `Create Community Function` icon located at the top of the Community Functions console. Multiple functions based on the same AEM Blueprint may be created and then uniquely customized by opening in author edit mode.
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![chlimage_1-390](assets/chlimage_1-390.png)
 
 ### Community Function Name {#community-function-name}
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![chlimage_1-391](assets/chlimage_1-391.png)
 
 On the Community Function Name panel, a name, description and whether the function is enabled or disabled are configured:
 
@@ -371,7 +371,7 @@ On the Community Function Name panel, a name, description and whether the functi
 
 ### AEM Blueprint {#aem-blueprint}
 
-![chlimage_1-119](assets/chlimage_1-119.png)
+![chlimage_1-392](assets/chlimage_1-392.png)
 
 On the `AEM Blueprint` panel, it is possible to select the blueprint which is the underlying implementation of the community function.
 
@@ -383,13 +383,13 @@ See also [Multi Site Manager](/help/sites-administering/msm.md).
 
 ### Thumbnail {#thumbnail}
 
-![chlimage_1-120](assets/chlimage_1-120.png)
+![chlimage_1-393](assets/chlimage_1-393.png)
 
 On the Thumbnail panel, an image may be uploaded to display in the [Community Functions console](#community-functions-console).
 
 ## Open Community Function {#open-community-function}
 
-![chlimage_1-121](assets/chlimage_1-121.png)
+![chlimage_1-394](assets/chlimage_1-394.png)
 
 Select the `Open Community Function` icon to enter author edit mode for authoring the page content and modifying the configuration of the feature component(s).
 
@@ -405,6 +405,6 @@ For configuration details, visit [Communities Components](/help/communities/auth
 
 ## Edit Community Function {#edit-community-function}
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![chlimage_1-395](assets/chlimage_1-395.png)
 
 Select the `Edit Community Function` icon to edit the function's properties using the same panels as [creating a community function](#create-community-function), including enabling or disabling the function.
