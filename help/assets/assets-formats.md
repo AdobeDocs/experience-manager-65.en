@@ -67,7 +67,7 @@ In addition to the information above, consider the following:
 
 The following list of 3D formats are supported.
 
-See [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
+See also [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
 
 | Format | Storage | Versioning | Workflow | Publishing | Access control | Thumbnail preview | 3D preview | Dynamic Media delivery |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
