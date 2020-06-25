@@ -546,7 +546,7 @@ MailerService nodetypes. The mailer uses nodes having this mixin as root nodes o
 
 **Description**
 
-Defines a LiveRelationship mixin. A master node and a slave node can be virtually linked through a LiveRelationship.
+Defines a LiveRelationship mixin. A primary source (controlling) node and a live copy (controlled) node can be virtually linked through a LiveRelationship.
 
 **Definition**
 
@@ -559,9 +559,9 @@ Defines a LiveRelationship mixin. A master node and a slave node can be virtuall
 
 **Description**
 
-Defines a LiveSync mixin. If a node is involved in a LiveRelationship with a master node as a slave, it is marked a LiveSync.
+Defines a LiveSync mixin. If a node is involved in a LiveRelationship with a primary source (controlling) node and a live copy (controlled) node, it is marked as a LiveSync.
 
-* `@prop cq:master` - Path of the master node of the LiveRelationship.
+* `@prop cq:master` - Path of the primary source (controlling)  of the LiveRelationship.
 * `@prop cq:isDeep` - Defines if the relationship is available for children.
 * `@prop cq:syncTrigger` - Defines when is triggered the sync.
 * `@node * LiveSyncAction` - Actions to perform on sync
@@ -576,7 +576,7 @@ Defines a LiveSync mixin. If a node is involved in a LiveRelationship with a mas
 
 **Description**
 
-Defines a LiveSyncCancelled mixin. Cancel the LiveSync behavior of a slave node which may be involded in a LiveRelationship owing to one of its parents.
+Defines a LiveSyncCancelled mixin. Cancel the LiveSync behavior of a live copy (controlled) node which may be involded in a LiveRelationship owing to one of its parents.
 
 * `@prop cq:isCancelledForChildren` - Defines whether a LiveSync is cancelled; also for children.
 

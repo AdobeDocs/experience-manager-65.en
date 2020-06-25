@@ -40,7 +40,7 @@ Adobe recommends that you use [!DNL Adobe InDesign Server] to extract [!DNL Adob
 
 [!DNL Dynamic Media] generates and delivers multiple variations of rich content in real time through its global, scalable, and performance-optimized network. It serves interactive viewing experiences and streamlines the digital campaign management process. For details around enabling [!DNL Dynamic Media], see [Configuring Dynamic Media](/help/assets/config-dynamic.md).
 
-Currently, [!DNL Dynamic Media] can support videos up to 20 GB of content per file.
+Currently, [!DNL Dynamic Media] can support videos up to 15 GB of content per file.
 
 ## ImageMagick library {#imagemagick-library}
 

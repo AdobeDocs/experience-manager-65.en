@@ -118,7 +118,7 @@ In this procedure:
    </security-realm>
    ```
 
-   On the master node of the Server Cluster, in the [appserver root]\domain\configuration\domain_&lt;dbname&gt;.xml, locate the &lt;server&gt; section present after the following code:
+   On the primary node of the Server Cluster, in the [appserver root]\domain\configuration\domain_&lt;dbname&gt;.xml, locate the &lt;server&gt; section present after the following code:
 
    `<http-listener name="default" socket-binding="http" redirect-socket="https" max-post-size="104857600"/>`
 

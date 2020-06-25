@@ -22,8 +22,8 @@ To let Asset Insights display usage statistics for assets, first configure the f
 
 You can view the Asset Insights scores from the metadata page.
 
-1. From the Assets user interface (UI), select the image and then tap/click **[!UICONTROL Properties]** from the toolbar.
-1. From the Properties page, tap/click the **[!UICONTROL Insights]** tab.
+1. From the Assets user interface (UI), select the image and then click **[!UICONTROL Properties]** from the toolbar.
+1. From the Properties page, click the **[!UICONTROL Insights]** tab.
 1. Review the usage details for the asset in the **[!UICONTROL Insights]** tab. The **[!UICONTROL Score]** section describes the total asset usage and performance sores of an asset .
 
    Usage score describes the numbers of times asset is used in various solutions.
@@ -51,7 +51,7 @@ You can view the Asset Insights scores from the metadata page.
    >
    >Unlike the data in the Solutions section, the Performance Statistics section displays the most recent data.
 
-1. To obtain the embed code for the asset that you include in websites to gets performance data, tap/click **[!UICONTROL Get Embed Code]** below the asset thumbnail. For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and embed code in web pages](/help/assets/touch-ui-using-page-tracker.md).
+1. To obtain the embed code for the asset that you include in websites to gets performance data, click **[!UICONTROL Get Embed Code]** below the asset thumbnail. For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and embed code in web pages](/help/assets/touch-ui-using-page-tracker.md).
 
    ![chlimage_1-98](assets/chlimage_1-303.png)
 
@@ -60,14 +60,14 @@ You can view the Asset Insights scores from the metadata page.
 You can view scores of all assets within a folder simultaneously using **[!UICONTROL Insights View]**.
 
 1. In the Assets user interface, navigate to the folder containing the assets for which you want to view insights.
-1. Tap/click the Layout icon from the toolbar, and then choose **[!UICONTROL Insights View]**.
+1. Click the Layout icon from the toolbar, and then choose **[!UICONTROL Insights View]**.
 1. The page displays usage scores for the assets. Compare the ratings of the various assets and draw insights.
 
 ## Schedule background job {#scheduling-background-job}
 
 Asset Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Asset Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
 
-1. Tap the AEM logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Click the Experience Manager logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
 
    ![chlimage_1-99](assets/chlimage_1-304.png)

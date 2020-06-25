@@ -1,15 +1,15 @@
 ---
-title: Search digital assets and images in Adobe Experience Manager
-description: Learn how to find the required assets in Adobe Experience Manager by using Filters panel, and how to use the assets that show up in search.
+title: Search digital assets and images in [!DNL Adobe Experience Manager].
+description: Learn how to find the required assets in [!DNL Adobe Experience Manager] by using Filters panel, and how to use the assets that show up in search.
 contentOwner: AG
 mini-toc-levels: 1
 ---
 
-# Search assets in Adobe Experience Manager {#search-assets-in-aem}
+# Search assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
-Adobe Experience Manager Assets provides robust asset discovery methods that help you achieve higher content velocity. Your teams reduce time to market with seamless, intelligent search experience using out-of-the-box functionality and custom methods. Searching assets is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators. Simple, advanced, and custom searches that you can perform via Experience Manager Assets user interface or other apps and surfaces help fulfill these use cases.
+[!DNL Adobe Experience Manager Assets] provides robust asset discovery methods that help you achieve higher content velocity. Your teams reduce time to market with seamless, intelligent search experience using out-of-the-box functionality and custom methods. Searching assets is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators. Simple, advanced, and custom searches that you can perform via [!DNL Assets] user interface or other apps and surfaces help fulfill these use cases.
 
-Experience Manager Assets supports the following use cases and this article describes the usage, concepts, configurations, limitations, and troubleshooting for these use cases.
+[!DNL Experience Manager Assets] supports the following use cases and this article describes the usage, concepts, configurations, limitations, and troubleshooting for these use cases.
 
 | Search assets | Configuration and administration | Work with search results |
 |---|---|---|
@@ -24,11 +24,11 @@ Experience Manager Assets supports the following use cases and this article desc
 | [Limitations](#limitations) and [Tips](#tips) | | |
 | [Illustrated examples](#samples)| | |
 
-Search for assets using the Omnisearch field at the top of the Experience Manager  web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in Experience Manager , click search icon in top bar, enter search keyword, and press return. Alternatively, use the keyword shortcut / (forward slash) to open the Omnisearch field. Location:Assets is pre-selected to limit the searches to DAM assets. Experience Manager provides suggestions as your start typing a search keyword.
+Search for assets using the Omnisearch field at the top of the [!DNL Experience Manager] web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], click search icon in top bar, enter search keyword, and press return. Alternatively, use the keyword shortcut / (forward slash) to open the Omnisearch field. `Location:Assets` is pre-selected to limit the searches to DAM assets. [!DNL Experience Manager] provides suggestions as your start typing a search keyword.
 
 Use the **[!UICONTROL Filters]** panel to narrow your search by filtering search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. Your administrators can customize the Filters panel and add or remove search predicates using search facets. The [!UICONTROL File Type] filter in the [!UICONTROL Filters] panel has mixed-state checkboxes. Therefore, unless you select all the nested predicates (or formats) the first-level checkboxes are partially checked.
 
-Experience Manager search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager] search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/managing-collections-touch-ui.md).
 
 ## Understand search interface {#searchui}
 
@@ -36,7 +36,7 @@ Familiarize yourself with the search interface and the available actions.
 
 ![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
 
-*Figure: Understand Experience Manager Assets search results interface.*
+*Figure: Understand [!DNL Experience Manager Assets] search results interface.*
 
 **A.** Save search as a smart collection. **B.** Filters or predicates to narrow the search results. **C.** Display files, folders, or both. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F.** Omnisearch field with user-provided search keyword. **G.** Select the loaded search results. **H.** Number of displayed search results out of the total search results. **I.** Close search **J.** Switch between card view and list view.
 
@@ -54,36 +54,36 @@ You can discover the desired assets faster from the search results page using th
 
 You can run keyword searches from the OmniSearch field. The keyword search is not case sensitive and is a full-text search (across the popular metadata fields. If more than one keyword is searched for, default operator between the keywords is `AND` for default search and it is `OR` when assets are smart tagged.
 
-The results are sorted by relevance, starting with closest matches. For multiple keywords, more relevant results are the assets that contain both terms in their metadata. Within metadata, keywords appearing as smart tags are higher ranked than keywords appearing in other metadata fields. Experience Manager allows giving a particular search term higher weight. Also, it is possible to [boost the rank](#searchrank) of a few targeted assets for specific search terms.
+The results are sorted by relevance, starting with closest matches. For multiple keywords, more relevant results are the assets that contain both terms in their metadata. Within metadata, keywords appearing as smart tags are higher ranked than keywords appearing in other metadata fields. [!DNL Experience Manager] allows giving a particular search term higher weight. Also, it is possible to [boost the rank](#searchrank) of a few targeted assets for specific search terms.
 
 To quickly find the relevant assets, the rich interface provides filtering, sorting, and selection mechanisms. You can filter results based on multiple criteria and see number of searched assets for various filters. Alternatively, you can rerun search by changing the query in the Omnisearch field. When you change your search terms or filters, the other filters remain applied to preserve your search's context.
 
-When the results are many assets, Experience Manager displays the first 100 in the card view and 200 in the list view. As users scroll, more assets are loaded. This is to improve the performance.
+When the results are many assets, [!DNL Experience Manager] displays the first 100 in the card view and 200 in the list view. As users scroll, more assets are loaded. This is to improve the performance.
 
 >[!VIDEO](https://www.youtube.com/watch?v=LcrGPDLDf4o)
 
 At times, you may see some unexpected assets in the search results. For more info, see [unexpected results](#troubleshoot-unexpected-search-results-and-issues).
 
-Experience Manager can search many file formats and the search filters can be customized to suit your business requirements. Contact your administrator to understand what search options are made available for your DAM repository and what restrictions your account has.
+[!DNL Experience Manager] can search many file formats and the search filters can be customized to suit your business requirements. Contact your administrator to understand what search options are made available for your DAM repository and what restrictions your account has.
 
-### Results with and without Enhanced Smart Tags {#withsmarttags}
+### Results with and without enhanced smart tags {#withsmarttags}
 
-By default, Experience Manager search combines the search terms with an AND clause. For example, consider searching for keywords woman running. Only the assets with both woman and running keywords in the metadata appear in the search results by default. The same behavior is retained when special characters (periods, underscores, or dashes) are used with the keywords. The following search queries return the same results:
+By default, [!DNL Experience Manager] search combines the search terms with an AND clause. For example, consider searching for keywords woman running. Only the assets with both woman and running keywords in the metadata appear in the search results by default. The same behavior is retained when special characters (periods, underscores, or dashes) are used with the keywords. The following search queries return the same results:
 
 * `woman running`
 * `woman.running`
 * `woman-running`
 
 However, the query `woman -running` returns assets without `running` in their metadata.
-Using smart tags adds an extra `OR` clause to find any of the search terms as the applied smart tags. An asset tagged with either `woman` or `running` using Smart Tags also appear in such a search query. So the search results are a combination of,
+Using smart tags adds an extra `OR` clause to find any of the search terms as the applied smart tags. An asset tagged with either `woman` or `running` using smart tags also appear in such a search query. So the search results are a combination of,
 
 * Assets with `woman` and `running` keywords in the metadata (default behavior).
 
-* Assets smart tagged with either of the keywords (Smart Tags behavior).
+* Assets smart tagged with either of the keywords (smart tags behavior).
 
 ### Search suggestions as you type {#searchsuggestions}
 
-When you start typing keywords, Experience Manager suggests the possible search keywords or phrases. The suggestions are based on the metadata of the existing assets. Experience Manager indexes all the metadata fields to help with search. To provide search suggestions, the system uses the values of the following few metadata fields. To provide search suggestions, consider populating the following fields with appropriate keywords:
+When you start typing keywords, [!DNL Experience Manager] suggests the possible search keywords or phrases. The suggestions are based on the metadata of the existing assets. [!DNL Experience Manager] indexes all the metadata fields to help with search. To provide search suggestions, the system uses the values of the following few metadata fields. To provide search suggestions, consider populating the following fields with appropriate keywords:
 
 * Asset tags. (maps to `jcr:content/metadata/cq:tags`)
 * Asset title. (maps to `jcr:content/metadata/dc:title`)
@@ -107,9 +107,9 @@ The search results that match all search terms in metadata fields are displayed 
 
 You can improve the relevance of keywords for particular assets to help boost searches based on the keywords. In other words, the images for which you promote specific keywords appear at the top of the search results when you search based on these keywords.
 
-1. From the Assets user interface, open the properties page for the asset. Click **[!UICONTROL Advanced]** and click/tap **[!UICONTROL Add]** under **[!UICONTROL Elevate for search keywords]**.
-1. In the **[!UICONTROL Search Promote]** box, specify a keyword for which you want to boost the search for the image and then click/tap **[!UICONTROL Add]**. You can specify multiple keywords in the same way.
-1. Click/tap **[!UICONTROL Save & Close]**. The asset which you promoted for this keyword appears among the top search results.
+1. From the [!DNL Assets] user interface, open the properties page for the asset. Click **[!UICONTROL Advanced]** and click **[!UICONTROL Add]** under **[!UICONTROL Elevate for search keywords]**.
+1. In the **[!UICONTROL Search Promote]** box, specify a keyword for which you want to boost the search for the image and then click **[!UICONTROL Add]**. You can specify multiple keywords in the same way.
+1. Click **[!UICONTROL Save & Close]**. The asset which you promoted for this keyword appears among the top search results.
 
 You can use this to your advantage by boosting the rank of some assets in the search results for the targeted keyword. See the example video below. For detailed info, see [search in Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
 
@@ -119,7 +119,7 @@ You can use this to your advantage by boosting the rank of some assets in the se
 
 ## Advanced search {#scope}
 
-Experience Manager provides various methods like filters that apply to the searched assets, to help you locate the desired assets faster. A few commonly used methods are described below. Some [illustrated examples](#samples) are shared below.
+[!DNL Experience Manager] provides various methods like filters that apply to the searched assets, to help you locate the desired assets faster. A few commonly used methods are described below. Some [illustrated examples](#samples) are shared below.
 
 **Search for files or folders**: In the search results, see either files, folders, or both. From **[!UICONTROL Filters]** panel, you can select the appropriate option. See [search interface](#searchui).
 
@@ -131,7 +131,7 @@ Experience Manager provides various methods like filters that apply to the searc
 
 ### Find similar images {#visualsearch}
 
-To find images that are visually similar to a user-selected image, click **[!UICONTROL Find Similar]** option from the card view of an image or from the toolbar. Experience Manager displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [how to configure similarity search](#configvisualsearch).
+To find images that are visually similar to a user-selected image, click **[!UICONTROL Find Similar]** option from the card view of an image or from the toolbar. [!DNL Experience Manager] displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [how to configure similarity search](#configvisualsearch).
 
 ![Find similar images using the option in the card view](assets/search_find_similar.png)
 
@@ -139,7 +139,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 
 ### Adobe Stock images {#adobestock}
 
-From within the Experience Manager user interface, users can search [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) and license the required assets. Add `Location: Adobe Stock` in the Omnisearch bar. You can also use Filters panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number.
+From within the [!DNL Experience Manager] user interface, users can search [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) and license the required assets. Add `Location: Adobe Stock` in the Omnisearch bar. You can also use Filters panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number.
 
 ### Dynamic Media assets {#dmassets}
 
@@ -149,29 +149,29 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 
 You can search for assets based on exact values of specific metadata fields, such as, title, description, and author. The GQL full-text search feature fetches only those assets whose metadata value exactly matches your search query. The names of the properties (for example author, title, and so on) and the values are case-sensitive.
 
-| Metadata field | Facet value and usage |
-|---|---|
-| Title | title:John |
-| Creator | creator:John |
-| Location | location:NA |
-| Description | description:"Sample Image" |
-| Creator tool | creatortool:"Adobe Photoshop CC 2015" |
-| Copyright Owner | copyrightowner:"Adobe Systems" |
-| Contributor | contributor:John |
-| Usage Terms | usageterms:"CopyRights Reserved" |
-| Created | created:YYYY-MM-DDTHH |
-| Expires Date | expires:YYYY-MM-DDTHH |
-| On time | ontime:YYYY-MM-DDTHH |
-| Off time | offtime:YYYY-MM-DDTHH |
-| Range of time(expires dateontime,offtime) | facet field : lowerbound..upperbound |
-| Path | /content/dam/&lt;folder name&gt; |
-| PDF Title | pdftitle:"Adobe Document" |
-| Subject | subject:"Training" |
-| Tags | tags:"Location And Travel" |
-| Type | type:"image\png" |
-| Width of image | width:lowerbound..upperbound |
-| Height of image | height:lowerbound..upperbound |
-| Person | person:John |
+|              Metadata field               |         Facet value and usage         |
+| ----------------------------------------- | ------------------------------------- |
+| Title                                     | title:John                            |
+| Creator                                   | creator:John                          |
+| Location                                  | location:NA                           |
+| Description                               | description:"Sample Image"            |
+| Creator tool                              | creatortool:"Adobe Photoshop CC 2020" |
+| Copyright Owner                           | copyrightowner:"Adobe Systems"        |
+| Contributor                               | contributor:John                      |
+| Usage Terms                               | usageterms:"CopyRights Reserved"      |
+| Created                                   | created:YYYY-MM-DDTHH                 |
+| Expires Date                              | expires:YYYY-MM-DDTHH                 |
+| On time                                   | ontime:YYYY-MM-DDTHH                  |
+| Off time                                  | offtime:YYYY-MM-DDTHH                 |
+| Range of time(expires dateontime,offtime) | facet field : lowerbound..upperbound  |
+| Path                                      | /content/dam/&lt;folder name&gt;      |
+| PDF Title                                 | pdftitle:"Adobe Document"             |
+| Subject                                   | subject:"Training"                    |
+| Tags                                      | tags:"Location And Travel"            |
+| Type                                      | type:"image\png"                      |
+| Width of image                            | width:lowerbound..upperbound          |
+| Height of image                           | height:lowerbound..upperbound         |
+| Person                                    | person:John                           |
 
 The properties path, limit, size, and orderby cannot be ORed with any other property.
 
@@ -187,25 +187,25 @@ Here are some examples of search formats for complex queries:
 * To display assets with a property value that contains a specific string (for example: title = Basel Meeting Room): `title:*Meeting*`
 * To display assets that contain a particular string and have a specific property value (for example: search for string Adobe in assets having title=John Doe): `*Adobe* title:"John Doe"`
 
-## Search assets from other Experience Manager offerings or interfaces {#beyondomnisearch}
+## Search assets from other [!DNL Experience Manager] offerings or interfaces {#beyondomnisearch}
 
-Adobe Experience Manager connects DAM repository to various other Experience Manager solutions to provide faster access to digital assets and streamline the creative workflows. Any asset discovery starts with browse or search. The search behavior largely remains the same across the various surfaces and solutions. Some search methods change as the target audience, the use cases, and the user interface vary across the Experience Manager solutions. The specific methods are documented for the individual solutions at the links below. The universally applicable tips and behaviors are documented in this article.
+[!DNL Adobe Experience Manager] connects DAM repository to various other [!DNL Experience Manager] solutions to provide faster access to digital assets and streamline the creative workflows. Any asset discovery starts with browse or search. The search behavior largely remains the same across the various surfaces and solutions. Some search methods change as the target audience, the use cases, and the user interface vary across the [!DNL Experience Manager] solutions. The specific methods are documented for the individual solutions at the links below. The universally applicable tips and behaviors are documented in this article.
 
 ### Search assets from Adobe Asset Link panel {#aal}
 
-Using Adobe Asset Link, the creative professionals can now access content stored in Experience Manager Assets, without leaving the supported Adobe Creative Cloud apps. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the Creative Cloud apps: Photoshop, Illustrator, and InDesign. Asset Link also allows users to search visually similar results. The visual search display results are powered by Adobe Sensei's machine learning algorithms and help users find aesthetically similar images. See [search and browse assets](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) using Adobe Asset Link.
+Using Adobe Asset Link, the creative professionals can now access content stored in [!DNL Experience Manager Assets], without leaving the supported Adobe Creative Cloud apps. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud apps]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. Asset Link also allows users to search visually similar results. The visual search display results are powered by Adobe Sensei's machine learning algorithms and help users find aesthetically similar images. See [search and browse assets](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) using Adobe Asset Link.
 
-### Search assets in Experience Manager desktop app {#desktopapp}
+### Search assets in [!DNL Experience Manager] desktop app {#desktopapp}
 
-Creative professionals use the desktop app to make the Experience Manager Assets easily searchable and available on their local desktop (Win or Mac). Creatives can easily reveal the desired assets in Mac Finder or Windows Explorer, opened in desktop applications, and changed locally - the changes are saved back to Experience Manager with a new version created in the repository. The application supports basic searches using one or more keywords, &#42; and ? wildcards, and AND operator. See [browse, search, and preview assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) in desktop app.
+Creative professionals use the desktop app to make the [!DNL Experience Manager Assets] easily searchable and available on their local desktop (Win or Mac). Creatives can easily reveal the desired assets in Mac Finder or Windows Explorer, opened in desktop applications, and changed locally - the changes are saved back to [!DNL Experience Manager] with a new version created in the repository. The application supports basic searches using one or more keywords, `*` and `?` wildcards, and `AND` operator. See [browse, search, and preview assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) in desktop app.
 
-### Search assets in Brand Portal {#brandportal}
+### Search assets in [!DNL Brand Portal] {#brandportal}
 
 Line-of-business users and marketers use Brand Portal to efficiently and securely share the approved digital assets with their extended internal teams, partners, and resellers. See [search assets on Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
-### Search Adobe Stock images {#adobestock-1}
+### Search [!DNL Adobe Stock] images {#adobestock-1}
 
-From within the Experience Manager user interface, users can search Adobe Stock assets and license the required assets. Add `Location: Adobe Stock` in the Omnisearch field. You can also use **[!UICONTROL Filters]** panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number. See [manage Adobe Stock images in Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
+From within the [!DNL Experience Manager] user interface, users can search Adobe Stock assets and license the required assets. Add `Location: Adobe Stock` in the Omnisearch field. You can also use **[!UICONTROL Filters]** panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number. See [manage Adobe Stock images in Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
 ### Search Dynamic Media assets {#dynamicmedia}
 
@@ -213,11 +213,11 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 
 ### Search assets in Content Finder when authoring web pages {#contentfinder}
 
-Authors can use Content Finder to search the DAM repository for the relevant assets and use the assets in the web pages they create. Authors can also use the Connected Assets functionality to search for assets that are available on a remote Experience Manager deployment. Authors can then use these assets in web pages on a local Experience Manager deployment. See [use remote assets](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
+Authors can use Content Finder to search the DAM repository for the relevant assets and use the assets in the web pages they create. Authors can also use the Connected Assets functionality to search for assets that are available on a remote [!DNL Experience Manager] deployment. Authors can then use these assets in web pages on a local [!DNL Experience Manager] deployment. See [use remote assets](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
 ### Search collections {#collections}
 
-Experience Manager search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager] search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/managing-collections-touch-ui.md).
 
 ## Asset Picker {#assetselector}
 
@@ -244,18 +244,18 @@ To access the asset Picker interface, go to `https://[aem_server]:[port]/aem/ass
 
 ## Limitations {#limitations}
 
-The search capability in Experience Manager Assets has the following limitations:
+The search capability in [!DNL Experience Manager Assets] has the following limitations:
 
 * Do not enter a leading space in the search query otherwise the search does not work.
-* Experience Manager may continue to show the search term after you select properties of an asset from searched results and then cancel the search. <!-- (CQ-4273540) -->
+* [!DNL Experience Manager] may continue to show the search term after you select properties of an asset from searched results and then cancel the search. <!-- (CQ-4273540) -->
 * When searching for folders or files and folders, the search results cannot be sorted on any parameter.
-* If you press return without typing anything in Omnisearch bar, Experience Manager returns a list of only files and not folders. If you search specifically for folders without using a keyword, Experience Manager does not return any results.
-* Use the **[!UICONTROL Select All]** option in the upper-right corner of the search page to select the searched assets. Experience Manager initially displays 100 assets in card view and 200 assets in list view. More assets are loaded as you scroll the search results. You can select more assets than the loaded assets. The count of the selected assets is displayed in the upper-right corner of the search results page. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection. When more assets are selected than displayed, an action is either applied on all selected assets or a dialog displays the number of assets it is applied on. To apply an action to the assets that did not load, ensure all assets are explicitly selected.
+* If you press return without typing anything in Omnisearch bar, [!DNL Experience Manager] returns a list of only files and not folders. If you search specifically for folders without using a keyword, [!DNL Experience Manager] does not return any results.
+* Use the **[!UICONTROL Select All]** option in the upper-right corner of the search page to select the searched assets. [!DNL Experience Manager] initially displays 100 assets in card view and 200 assets in list view. More assets are loaded as you scroll the search results. You can select more assets than the loaded assets. The count of the selected assets is displayed in the upper-right corner of the search results page. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection. When more assets are selected than displayed, an action is either applied on all selected assets or a dialog displays the number of assets it is applied on. To apply an action to the assets that did not load, ensure all assets are explicitly selected.
 
 Visual search or similarity search has the following limitations:
 
 * Visual search works best with larger repositories. While there is no minimum number of images required for good results, the quality of matches with a few images may not be as good as the matches from a large repository.
-* You cannot change the model or train Experience Manager to find similar images. For example, adding or removing smart tags to a few assets does not change the model. The assets do get excluded from the visually similar search results.
+* You cannot change the model or train [!DNL Experience Manager] to find similar images. For example, adding or removing smart tags to a few assets does not change the model. The assets do get excluded from the visually similar search results.
 
 Search functionality may have performance limitations in the following scenarios:
 
@@ -265,13 +265,13 @@ Search functionality may have performance limitations in the following scenarios
 
 * When monitoring the review status of assets, use the appropriate option to find which assets are approved or assets that are pending approval.
 * Use the Insights predicate to search for supported assets based on their usage statistics obtained from various Creative apps. Usage data is grouped under Usage score, Impressions, Clicks, and Media channels where the assets appear categories.
-* Use the **[!UICONTROL Select All]** check box to select the searched assets. Experience Manager initially displays 100 assets in card view and 200 assets in list view. More assets are loaded as you scroll the search results. You can select more assets than the loaded assets. The count of the selected assets is displayed in the upper-right corner of the search results page. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection. When more assets are selected than displayed, an action is either applied on all selected assets or a dialog displays the number of assets it is applied on. To apply an action to the assets that did not load, ensure all assets are explicitly selected.
+* Use the **[!UICONTROL Select All]** check box to select the searched assets. [!DNL Experience Manager] initially displays 100 assets in card view and 200 assets in list view. More assets are loaded as you scroll the search results. You can select more assets than the loaded assets. The count of the selected assets is displayed in the upper-right corner of the search results page. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection. When more assets are selected than displayed, an action is either applied on all selected assets or a dialog displays the number of assets it is applied on. To apply an action to the assets that did not load, ensure all assets are explicitly selected.
 * To search for assets that do not contain the mandatory metadata, see [mandatory metadata](#mandatorymetadata).
 * Search uses all metadata fields. A generic search, such as searching for 12, usually returns many results. For better results, use double (not single) quotes or ensure that the number is contiguous to a word without a special character (for example *shoe12*).
 * Full text search supports operators such as -, ^, and so on. To search these letters as string literals, enclose the search expression in double quotes. For example, use "Notebook - Beauty" instead of Notebook - Beauty.
 * If the search results are too many, limit the [scope of search](#scope) to zero-in on the desired assets. It works best when you have some idea of how to better look for the desired assets, for example, specific file type, specific location, specific metadata, and so on.
 
-* **Tagging**: Tags helps you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. Experience Manager offers methods to automatically tag assets using Adobe Sensei's artificially intelligent services that keep getting better at tagging your assets with usage and training. When you search for assets, the smart tags are factored in if the feature is enabled on your account. It works alongside the in-built search functionality. See [search behavior](#searchbehavior). To optimize the order in which the search results are displayed, you can [boost the search ranking](#searchrank) of a few select assets.
+* **Tagging**: Tags helps you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. [!DNL Experience Manager] offers methods to automatically tag assets using Adobe Sensei's artificially intelligent services that keep getting better at tagging your assets with usage and training. When you search for assets, the smart tags are factored in if the feature is enabled on your account. It works alongside the in-built search functionality. See [search behavior](#searchbehavior). To optimize the order in which the search results are displayed, you can [boost the search ranking](#searchrank) of a few select assets.
 
 * **Indexing**: Only indexed metadata and assets are returned in the search results. For better coverage and performance, ensure proper indexing and follow the best practices. See [indexing](#searchindex).
 
@@ -320,9 +320,9 @@ Asset discovery relies on indexing of DAM contents, including the metadata. Fast
 
 ### Visual or similarity search {#configvisualsearch}
 
-Visual search uses smart tagging and requires Experience Manager 6.5.2.0 or later. After configuring smart tagging functionality, follow these steps.
+Visual search uses smart tagging and requires [!DNL Experience Manager] 6.5.2.0 or later. After configuring smart tagging functionality, follow these steps.
 
-1. In Experience Manager CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
+1. In [!DNL Experience Manager] CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
 
     * `costPerEntry` property of type `Double` with the value `10`.
 
@@ -345,7 +345,7 @@ Visual search uses smart tagging and requires Experience Manager 6.5.2.0 or late
    Save the changes.
 
 1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your Experience Manager repository. See [how to configure smart tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html).
+1. Apply smart tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html).
 1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
 
@@ -357,11 +357,11 @@ Business users, administrators, or DAM librarians can define some metadata as ma
 
 ### Modify search facets {#searchfacets}
 
-To improve the speed of discovery, Experience Manager Assets offers search facets using which you can filter the search results. The Filters panel includes a few standard facets by default. Administrators can customize the Filters panel to modify the default facets using the in-built predicates. Experience Manager provides a good collection of in-built predicates and an editor to customize the facets. See [search facets](/help/assets/search-facets.md).
+To improve the speed of discovery, [!DNL Experience Manager Assets] offers search facets using which you can filter the search results. The Filters panel includes a few standard facets by default. Administrators can customize the Filters panel to modify the default facets using the in-built predicates. [!DNL Experience Manager] provides a good collection of in-built predicates and an editor to customize the facets. See [search facets](/help/assets/search-facets.md).
 
 ### Extract text when uploading assets {#extracttextupload}
 
-You can configure Experience Manager to extract the text from the assets when users upload assets, such as PSD or PDF files. Experience Manager indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+You can configure [!DNL Experience Manager] to extract the text from the assets when users upload assets, such as PSD or PDF files. [!DNL Experience Manager] indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
 ### Custom predicates to filter search results {#custompredicates}
 
@@ -397,7 +397,7 @@ Once you see some searched assets that match your criteria, you can do the follo
 
 ### Sort searched results {#sort}
 
-Sorting search results helps you to discover required asset faster. Sorting search results works in list view and only when you select **[!UICONTROL [Files](#searchui)]** from the **[!UICONTROL Filters]** panel. Experience Manager Assets uses server-side sorting to quickly sort all the assets (howsoever numerous) within a folder or results of a search query. Server-side sorting provides faster and more accurate results than client-side sorting.
+Sorting search results helps you to discover required asset faster. Sorting search results works in list view and only when you select **[!UICONTROL [Files](#searchui)]** from the **[!UICONTROL Filters]** panel. [!DNL Experience Manager Assets] uses server-side sorting to quickly sort all the assets (howsoever numerous) within a folder or results of a search query. Server-side sorting provides faster and more accurate results than client-side sorting.
 
 In list view, you can sort the search results just as you can sort assets in any folder. Sorting works on these columns -- Name, Title, Status, Dimensions, Size, Rating, Usage, (Date) Created, (Date) Modified, (Date) Published, Workflow, and Checked out.
 
@@ -438,14 +438,14 @@ You can create smart collections based on the search criteria. From the **[!UICO
 
 | Error, issues, symptoms | Possible reason | Possible fix or understanding of the issue |
 |---|---|---|
-| Incorrect results when searching for assets with missing metadata| When searching for assets that are missing the mandatory metadata, Experience Manager may display some assets that have valid metadata. The results are based on indexed metadata property. | After the metadata is updated, reindexing is required to reflect correct state of assets metadata. See [mandatory metadata](metadata-schemas.md#define-mandatory-metadata).|
+| Incorrect results when searching for assets with missing metadata| When searching for assets that are missing the mandatory metadata, [!DNL Experience Manager] may display some assets that have valid metadata. The results are based on indexed metadata property. | After the metadata is updated, reindexing is required to reflect correct state of assets metadata. See [mandatory metadata](metadata-schemas.md#define-mandatory-metadata).|
 | Too many search results| Broad search parameter.| Consider limiting the [scope of search](#scope). Use of smart tags may give you more search results than you expected. See [search behavior with smart tags](#withsmarttags). |
 | Unrelated or partly-related search results | Search behavior changes with smart tagging.| Understand [how search changes after smart tagging](#withsmarttags).|
-| No auto-complete suggestions for assets| Newly uploaded assets are not indexed yet. The metadata is not immediately available as suggestions when you start typing a search keyword in Omnisearch bar.| Experience Manager Assets waits until the expiry of a timeout period (one hour by default) before running a background job to index the metadata for all newly uploaded or updated assets and then adds the metadata to the list of suggestions. |
+| No auto-complete suggestions for assets| Newly uploaded assets are not indexed yet. The metadata is not immediately available as suggestions when you start typing a search keyword in Omnisearch bar.| [!DNL Assets] waits until the expiry of a timeout period (one hour by default) before running a background job to index the metadata for all newly uploaded or updated assets and then adds the metadata to the list of suggestions. |
 | No search results| <ul><li>No assets exist that match your query.</li><li>You added a whitespace before the search query.</li><li>An unsupported metadata field contains the keyword that you search for.</li><li>On time and off time is configured for asset and the search was made during an asset's off time.</li></ul> | <ul><li>Search using a different keyword. Alternatively, use (smart) tagging to improve search results.</li><li>It is a [known limitation](#limitations).</li><li>Not all metadata fields are considered for searches. See [scope](#scope).</li><li>Search later or modify on and off timings for the required assets.</li></ul> |
-| Search filter/ predicate is not available | <ul><li>The search filter is either not configured.</li><li>It is not available for your login.</li><li>(Less likely) The search options are not customized on the deployment you are using.</li></ul> | <ul><li>Contact administrator to check if the search customizations are available or not.</li><li>Contact administrator to check if your account has the privilege/permissions to use the customization.</li><li>Contact administrator and check the available customizations for the Experience Manager Assets deployment you are using.</li></ul> |
-| When searching for visually similar images, an expected image is missing | <ul><li>Image is not available in Experience Manager.</li><li>Image is not indexed. Typically, when it is recently uploaded.</li><li>Image is not smart tagged.</li></ul> | <ul><li>Add the image to Experience Manager Assets.</li><li>Contact your administrator to re-index the repository. Also, ensure that you are using the appropriate index.</li><li>Contact your administrator to smart tag the relevant assets.</li></ul> |
-| When searching for visually similar images, an irrelevant image is displayed | Visual search behavior.| Experience Manager displays as many potentially relevant assets as possible. Less relevant images, if any, are added to the results but with a lower search ranking. The quality of the matches and relevance of searched assets decrease as you scroll down the search results. |
+| Search filter/ predicate is not available | <ul><li>The search filter is either not configured.</li><li>It is not available for your login.</li><li>(Less likely) The search options are not customized on the deployment you are using.</li></ul> | <ul><li>Contact administrator to check if the search customizations are available or not.</li><li>Contact administrator to check if your account has the privilege/permissions to use the customization.</li><li>Contact administrator and check the available customizations for the [!DNL Assets] deployment you are using.</li></ul> |
+| When searching for visually similar images, an expected image is missing | <ul><li>Image is not available in [!DNL Experience Manager].</li><li>Image is not indexed. Typically, when it is recently uploaded.</li><li>Image is not smart tagged.</li></ul> | <ul><li>Add the image to [!DNL Assets].</li><li>Contact your administrator to re-index the repository. Also, ensure that you are using the appropriate index.</li><li>Contact your administrator to smart tag the relevant assets.</li></ul> |
+| When searching for visually similar images, an irrelevant image is displayed | Visual search behavior.| [!DNL Experience Manager] displays as many potentially relevant assets as possible. Less relevant images, if any, are added to the results but with a lower search ranking. The quality of the matches and relevance of searched assets decrease as you scroll down the search results. |
 | When selecting and operating on search results, all searched assets are not operated upon | The [!UICONTROL Select All] option only selects first 100 search results in card view and first 200 search results in list view. ||
 
 >[!MORELIKETHIS]

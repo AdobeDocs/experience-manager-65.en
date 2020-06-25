@@ -41,7 +41,7 @@ All access to data objects is mediated by the repository and therefore restricte
 
 Cross-Site Request Forgery (CSRF) is mitigated by automatically injecting a cryptographic token into all forms and AJAX requests and verifying this token on the server for every POST.
 
-In addition, AEM ships with a referrer-header based filter, which can be configured to only allow POST requests from specifically white-listed hosts.
+In addition, AEM ships with a referrer-header based filter, which can be configured to *only* allow POST requests from specific hosts (defined in a list).
 
 ## 6. Security Misconfiguration {#security-misconfiguration}
 

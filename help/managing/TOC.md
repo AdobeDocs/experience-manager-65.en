@@ -19,6 +19,6 @@ user-guide-title: AEM 6.5 Managing User Guide
   + [SEO and URL Management Best Practices](seo-and-url-management.md)
 + Accessibility {#accessibility}
   + [AEM and the Web Accessibility Guidelines](web-accessibility.md)
-  + [Quick Guide to WCAG 2.0](qg-wcag.md)
+  + [Quick Guide to WCAG 2.1](qg-wcag.md)
 + Data Protection {#data-protection}
   + [AEM Readiness for Data Protection and Data Privacy Regulations](data-protection-and-privacy.md)

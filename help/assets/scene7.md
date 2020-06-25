@@ -80,7 +80,7 @@ Adding a Dynamic Media Classic (Scene7) component to a page is the same as addin
 
 1. In AEM, open the page where you want to add the Dynamic Media Classic (Scene7) component.
 
-1. If no Dynamic Media Classic components are available, click **[!UICONTROL Design]** mode, tap any component with a blue border, tap the **[!UICONTROL Parent]** icon, and then the **[!UICONTROL Configuration]** icon. In **[!UICONTROL Parsys (Design)]**, select all the Dynamic Media Classic components to make them available and click **[!UICONTROL OK]**.
+1. If no Dynamic Media Classic components are available, click **[!UICONTROL Design]** mode, tap any component with a blue border, tap the **[!UICONTROL Parent]** icon, and then the **[!UICONTROL Configuration]** icon. In **[!UICONTROL Parsys (Design)]**, select all the Dynamic Media Classic components to make them available and click **[!UICONTROL OK.]**
 
    ![chlimage_1-224](assets/chlimage_1-224.png)
 
@@ -173,13 +173,13 @@ The Dynamic Media Classic **[!UICONTROL Image]** component lets you add Dynamic 
 
 **[!UICONTROL Sharpening]** &ndash; Select how you want to sharpen the image. Sharpening is explained in detail in [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options) and [Sharpening best practices](/help/assets/assets/s7_sharpening_images.pdf).
 
-**[!UICONTROL URL Modifiers]** &ndash; You can change image effects by supplying additional Dynamic Media Classic image commands. These are described in [Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html).
+**[!UICONTROL URL Modifiers]** &ndash; You can change image effects by supplying additional Dynamic Media Classic image commands. These are described in [Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 **[!UICONTROL Breakpoints]** &ndash; If your website is responsive, you want to adjust the breakpoints. Breakpoints must be separated by commas ( , ).
 
 ### Image Template {#image-template}
 
-[Dynamic Media Classic Image Templates](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) are layered Photoshop content that was imported to Dynamic Media Classic, where content and properties were parameterized for variability. The **[!UICONTROL Image template]** component lets you import images and change the text dynamically in AEM. In addition, you can configure the **[!UICONTROL Image template]** component to use values from client context, so that each user experiences the image in a personalized way.
+[Dynamic Media Classic Image Templates](https://docs.adobe.com/help/en/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) are layered Photoshop content that was imported to Dynamic Media Classic, where content and properties were parameterized for variability. The **[!UICONTROL Image template]** component lets you import images and change the text dynamically in AEM. In addition, you can configure the **[!UICONTROL Image template]** component to use values from client context, so that each user experiences the image in a personalized way.
 
 Tap **[!UICONTROL Edit]** to configure the component. You can configure [settings common to all Dynamic Media Classic components](#settings-common-to-all-scene-components) as well as other settings described in this section.
 
@@ -203,7 +203,7 @@ Tap **[!UICONTROL Edit]** to configure the component. You can configure [setting
 
 #### Changing text dynamically {#changing-text-dynamically}
 
-To change the text dynamically, enter new text in the fields and click **[!UICONTROL OK]**. In this example, the **[!UICONTROL Price]** is now $50 and shipping is 99 cents.
+To change the text dynamically, enter new text in the fields and click **[!UICONTROL OK.]** In this example, the **[!UICONTROL Price]** is now $50 and shipping is 99 cents.
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -213,7 +213,7 @@ The text in the image changes. You can reset the text back to the original value
 
 #### Changing text to reflect the value of a client context value {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-To link a field to a client context value, tap **[!UICONTROL Select]** to open the client-context menu, select the client context, and tap **[!UICONTROL OK]**. In this example, the name changes based on linking the Name with the formatted name in the profile.
+To link a field to a client context value, tap **[!UICONTROL Select]** to open the client-context menu, select the client context, and tap **[!UICONTROL OK.]** In this example, the name changes based on linking the Name with the formatted name in the profile.
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -223,12 +223,12 @@ The text reflects the name of the currently logged in user. You can reset the te
 
 #### Making the Dynamic Media Classic Image Template a link {#making-the-scene-image-template-a-link}
 
-1. On the page with the Dynamic Media Classic **[!UICONTROL Image Template]** component, tap **[!UICONTROL Edit]**.
+1. On the page with the Dynamic Media Classic **[!UICONTROL Image Template]** component, tap **[!UICONTROL Edit.]**
 1. In the **[!UICONTROL URL]** field, enter the URL that users go to when the image is tapped. In the **[!UICONTROL Open in]** field, select whether you want the target to open (a new window or same window).
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
-1. Tap **[!UICONTROL OK]**.
+1. Tap **[!UICONTROL OK.]**
 
 ### Video component {#video-component}
 
@@ -242,7 +242,7 @@ See [Video](s7-video.md) for more information on how videos work with Dynamic Me
 
 ### Known limitations for the video component {#known-limitations-for-the-video-component}
 
-Adobe DAM and WCM shows if a master video is uploaded. They do not show these proxy assets:
+Adobe DAM and WCM shows if a primary source video is uploaded. They do not show these proxy assets:
 
 * Dynamic Media Classic encoded renditions
 * Dynamic Media Classic adaptive video sets
@@ -328,7 +328,7 @@ By default, AEM searches the folder selected and all sub-folders.
 >* When searching an adaptive video set, you are searchingthefolder and all sub-folders but only if you have added a keyword to the search. If you have not added a keyword, AEM does not search the sub-folders.
 >
 
-**[!UICONTROL Publish Status]** &ndash; You can filter for assets based on publication status: **[!UICONTROL Unpublished]** or **[!UICONTROL Published]**. If you do not select any **[!UICONTROL Publish Status]**, AEM by default searches all publish statuses.
+**[!UICONTROL Publish Status]** &ndash; You can filter for assets based on publication status: **[!UICONTROL Unpublished]** or **[!UICONTROL Published.]** If you do not select any **[!UICONTROL Publish Status]**, AEM by default searches all publish statuses.
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 

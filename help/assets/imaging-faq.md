@@ -89,7 +89,7 @@ No. Smart Imaging works seamlessly with your existing image URLs and image prese
 
 Also, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) to understand pre-requisites for Smart Imaging.
 
-## Does Smart Mmaging working with HTTPS? How about HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
+## Does Smart Imaging working with HTTPS? How about HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 
 Smart Imaging works with images delivered over HTTP or HTTPS. In addition, it also works over HTTP/2.
 
@@ -102,7 +102,7 @@ To use Smart Imaging, your company's Dynamic Media Classic or Dynamic Media on A
 
 To find your domains, log in to your company account or accounts.  
   
-Tap **[!UICONTROL Setup > Application Setup > General Settings]**. Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic domain, you can request moving over to your own custom domain as part of this transition when you submit a technical support ticket.
+Tap **[!UICONTROL Setup > Application Setup > General Settings.]** Look for the field labeled **[!UICONTROL Published Server Name.]** If you are currently using a generic domain, you can request moving over to your own custom domain as part of this transition when you submit a technical support ticket.
 
 Your first custom domain is no additional cost with a Dynamic Media license.
 
@@ -118,17 +118,17 @@ You must initiate the request to use smart imaging; it is not automatically enab
 
        To find your domains, log into your company account or accounts. 
 
-       Click **[!UICONTROL Setup > Application Setup > General Settings]**.  
+       Click **[!UICONTROL Setup > Application Setup > General Settings.]**  
 
-       Look for the field labeled **[!UICONTROL Published Server Name]**.
+       Look for the field labeled **[!UICONTROL Published Server Name.]**
     1. Verify that you are using the CDN through Adobe and not managed with a direct relationship.
     1. Verify you are using a dedicated domain such as `images.company.com` or `mycompany.scene7.com`, and not a generic domain, such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.  
 
        To find your domains, log into your company account or accounts.
 
-       Click **[!UICONTROL Setup > Application Setup > General Settings]**.  
+       Click **[!UICONTROL Setup > Application Setup > General Settings.]**  
 
-       Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media Classic domain, you can request moving over to your own custom domain as part of this transition.
+       Look for the field labeled **[!UICONTROL Published Server Name.]** If you are currently using a generic Dynamic Media Classic domain, you can request moving over to your own custom domain as part of this transition.
     1. Indicate if you also need this to work over HTTP/2.
 
 1. Technical Support will add you to the Smart Imaging customer Wait List based on the order in which requests were submitted.
@@ -137,7 +137,7 @@ You must initiate the request to use smart imaging; it is not automatically enab
 1. You are notified after completion by support.
 1. To maximize the performance improvements of Smart Imaging, Adobe recommends setting the Time To Live (TTL) to 24 hours or longer. The TTL defines how long assets are cached by the CDN. To change this setting:
 
-    1. If you use Dynamic Media Classic, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
+    1. If you use Dynamic Media Classic, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server.]** Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
     1. If you use Dynamic Media, follow [these instructions](config-dynamic.md). Set the **[!UICONTROL Expiration]** value 24 hours or longer.
 
 ## When can I expect my account to be enabled with Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}

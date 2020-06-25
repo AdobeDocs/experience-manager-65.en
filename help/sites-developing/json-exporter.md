@@ -17,7 +17,7 @@ AEM Content Services are designed to generalize the description and delivery of 
 
 They provide the delivery of content to channels that are not traditional AEM web pages, using standardized methods that can be consumed by any client. These channels can include:
 
-* Single Page Applications
+* [Single Page Applications](spa-walkthrough.md)
 * Native Mobile Applications
 * other channels and touch-points external to AEM
 
@@ -31,7 +31,7 @@ With content fragments that use structured content, you can provide content serv
 
 Using the AEM JSON exporter you can deliver the contents of an(y) AEM page in JSON data model format. This can then be consumed by your own applications.
 
-Within AEM the delivery is achieved using the suffix
+Within AEM the delivery is achieved using the selector `model` and `.json` extension.
 
 `.model.json`
 
@@ -67,6 +67,10 @@ Your page can contain either a single content fragment or multiple components of
   >
   >You can [adapt your own components](/help/sites-developing/json-exporter-components.md) to access and use this data.
 
+  >[!NOTE]
+  >
+  >Although not a standard implementation, [multiple selectors are supported,](json-exporter-components.md#multiple-selectors) but `model` must be the first.
+
 ### Further Information {#further-information}
 
 See also:
@@ -89,7 +93,7 @@ For further details see:
 
 * The [Content Fragments topic in the Assets user guide](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
-* [Content Fragment Models](/help/assets/content-fragments-models.md)
+* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
 * [Authoring with Content Fragments](/help/sites-authoring/content-fragments.md)
 * [Enabling JSON Export for a Component](/help/sites-developing/json-exporter-components.md)
 

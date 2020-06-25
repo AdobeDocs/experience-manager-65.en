@@ -34,12 +34,12 @@ AEM search is capable of searching and locating AEM assets and performing text s
     * For AEM Forms on OSGi, the bundles are listed at https://'[server]:[port]'/system/console/bundles.
     * For AEM Forms on JEE, the bundles are listed at https://'[server]:[port]'/[context-path]/system/console/bundles. For example https://localhost:8080/lc/system/console/bundles.
 
-* Whitelist the *sun.util.calendar* package. To whitelist the package, perform the following steps:
+* Add the *sun.util.calendar* package to the allowlist. To add the package to the allowlist, perform the following steps:
 
     1. Open AEM Web Console. The URL is https://'[server]:[port]'/system/console/configMgr.
     1. Locate and open **Deserialization Firewall Configuration**.  
     
-    1. Add the sun.util.calendar package to the Whitelisted classes or package prefixes field and click **Save**.
+    1. Add the sun.util.calendar package to the Allowlisted classes or package prefixes field and click **Save**.
 
 ### Establish a secure connection between AEM Forms JEE and OSGi stacks {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 

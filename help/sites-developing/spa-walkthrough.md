@@ -37,6 +37,12 @@ The walkthrough is based on standard AEM functionality and the sample We.Retail 
   ](/help/release-notes/sp-release-notes.md)
 * [Install the sample We.Retail Journal app available on GitHub here.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 
+>[!CAUTION]
+>
+>This document uses the [We.Retail Journal app](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) for demonstration purposes only. It should not be used for any project work.
+>
+>Any AEM project should leverage the [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
+
 ### What is a SPA? {#what-is-a-spa}
 
 A single-page application (SPA) differs from a conventional page in that it is rendered client-side and is primarily Javascript-driven, relying on Ajax calls to load data and dynamically update the page. Most or all content is retrieved once in a single page load with additional resources loaded asynchronously as needed based on user interaction with the page.
@@ -214,7 +220,7 @@ The next section, [Loading an SPA Application](/help/sites-developing/spa-walkth
 
    ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
 
-   The AEM SPA Editor leverages [AEM Content Services](/help/assets/content-fragments.md) to deliver the entire content of the page as a JSON model.
+   The AEM SPA Editor leverages [AEM Content Services](/help/assets/content-fragments/content-fragments.md) to deliver the entire content of the page as a JSON model.
 
    By implementing specific interfaces, Sling Models provide the information necessary to the SPA. The delivery of the JSON data is delegated downward to each component (from page, to paragraph, to component, etc.).
 

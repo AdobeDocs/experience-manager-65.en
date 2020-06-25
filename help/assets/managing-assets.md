@@ -13,14 +13,14 @@ discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 
 Managing Dynamic Media assets&ndash;images, video, and interactive assets&ndash;after they are uploaded&ndash;involves many tasks including previewing, downloading, or publishing them.
 
-When previewing, you can also apply image presets (for images only) or viewer presets (for video and images). You cannot apply both to an asset. See [Applying viewer presets](viewer-presets.md) and [Applying image presets](image-presets.md).
+When previewing, you can also apply image presets (for images only) or viewer presets (for video and images). You cannot apply both to an asset. See [Applying viewer presets](/help/assets/viewer-presets.md) and [Applying image presets](/help/assets/image-sets.md).
 
-General information on managing assets is found in [Managing Assets with the Touch UI](managing-assets-touch-ui.md).
+General information on managing assets is found in [Managing Assets with the Touch UI](/help/assets/managing-assets-touch-ui.md).
 
 The following topics describe what you need to do to manage Dynamic Media assets:
 
-* [Best practices for optimizing the quality of your images](best-practices-for-optimizing-the-quality-of-your-images.md)
-* [Previewing Dynamic Media assets](previewing-assets.md)
-* [Publishing Dynamic Media Assets](publishing-dynamicmedia-assets.md)
-* [Working with Selectors](working-with-selectors.md)
+* [Best practices for optimizing the quality of your images](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
+* [Previewing Dynamic Media assets](/help/assets/previewing-assets.md)
+* [Publishing Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md)
+* [Working with Selectors](/help/assets/working-with-selectors.md)
 

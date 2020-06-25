@@ -103,7 +103,7 @@ See [Scoring Sub-Rules](/help/communities/implementing-scoring.md#scoring-sub-ru
 
 The advanced scoring package installs a configuration folder that contains a stopwords file:
 
-* `/etc/community/scoring/configuration/stopwords`
+* `/libs/settings/community/scoring/configuration/stopwords`
 
 The advanced scoring algorithm uses the list of words contained in the stopwords file to identify common English words that are ignored during content processing.
 
@@ -129,7 +129,7 @@ Instead of associating points with a badge image, it is only necessary to identi
   <tr>
    <td>badgingPath</td>
    <td>String[]</td>
-   <td><em>(Required)</em> A multi-value string of badge images up to the number of badgingLevels. The badge image paths must be ordered so the first is awarded to the highest expert. If there are less badges than indicated by badgingLevels, the last badge in the array fills out the rest of the array. Example entry:<br /> <code>/etc/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
+   <td><em>(Required)</em> A multi-value string of badge images up to the number of badgingLevels. The badge image paths must be ordered so the first is awarded to the highest expert. If there are less badges than indicated by badgingLevels, the last badge in the array fills out the rest of the array. Example entry:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
    <td>badgingLevels</td>
@@ -144,7 +144,7 @@ Instead of associating points with a badge image, it is only necessary to identi
   <tr>
    <td>scoringRules</td>
    <td>String[]</td>
-   <td><em>(Optional)</em> A multi-value string to restrict the badging rule to scoring events identified by the scoring rule(s) listed.<br /> Example entry:<br /> <code>/etc/community/scoring/rules/adv-comments-scoring</code><br /> Default is no restriction.</td>
+   <td><em>(Optional)</em> A multi-value string to restrict the badging rule to scoring events identified by the scoring rule(s) listed.<br /> Example entry:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> Default is no restriction.</td>
   </tr>
  </tbody>
 </table>
@@ -157,7 +157,7 @@ Included in this beta release is one reward-based expert badge:
 
 * `expert`
   
-  `/etc/community/badging/images/expert-badge/jcr:content/expert.png`
+  `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -176,19 +176,19 @@ See the basic information for:
 
 Included in the beta release are two advanced scoring rules for the [forum function](/help/communities/functions.md#forum-function) (one each for the forum and comments components of the forum feature):
 
-1. `/etc/community/scoring/rules/adv-comments-scoring`
+1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
     * `subRules[] =
-      /etc/community/scoring/rules/sub-rules/adv-comments-rule
-      /etc/community/scoring/rules/sub-rules/adv-voting-rule-owner
-      /etc/community/scoring/rules/sub-rules/adv-voting-rule`
+      /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+      /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+      /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule`
 
-1. `/etc/community/scoring/rules/adv-forums-scoring`
+1. `/libs/settings/community/scoring/rules/adv-forums-scoring`
 
     * `subRules[] =
-      /etc/community/scoring/rules/sub-rules/adv-forums-rule
-      /etc/community/scoring/rules/sub-rules/adv-comments-rule
-      /etc/community/scoring/rules/sub-rules/adv-voting-rule-owner`
+      /libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
+      /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+      /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner`
 
 **Notes:**
 
@@ -206,8 +206,8 @@ Included in the beta release are two advanced scoring rules for the [forum funct
 
 Included in the release are two advanced badging rules that correspond to the [advanced forums and comments scoring rules](#included-scoring-rules-and-sub-rules).
 
-* `/etc/community/badging/rules/adv-comments-badging`
-* `/etc/community/badging/rules/adv-forums-badging`
+* `/libs/settings/community/badging/rules/adv-comments-badging`
+* `/libs/settings/community/badging/rules/adv-forums-badging`
 
 **Notes:**
 

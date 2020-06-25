@@ -158,7 +158,7 @@ Setting a queue to half of the available processors is a workable solution to st
 
 ### DAM Update Asset configuration {#dam-update-asset-configuration}
 
-The [!UICONTROL DAM Update Asset] workflow contains a full suite of steps that are configured for tasks, such as Scene7 PTIFF generation and InDesign Server integration. However, most users may not require several of these steps. Adobe recommends you create a custom copy of the [!UICONTROL DAM Update Asset] workflow model, and remove any unnecessary steps. In this case, update the launchers for [!UICONTROL DAM Update Asset] to point to the new model.
+The [!UICONTROL DAM Update Asset] workflow contains a full suite of steps that are configured for tasks, such as Scene7 PTIFF generation and [!DNL Adobe InDesign Server] integration. However, most users may not require several of these steps. Adobe recommends you create a custom copy of the [!UICONTROL DAM Update Asset] workflow model, and remove any unnecessary steps. In this case, update the launchers for [!UICONTROL DAM Update Asset] to point to the new model.
 
 Running the [!UICONTROL DAM Update Asset] workflow intensively can sharply increase the size of your file datatastore. Results of an experiment performed by Adobe have shown that the datastore size can increase by approximately 400 GB if around 5500 workflows are performed within 8 hours.
 
@@ -293,6 +293,7 @@ To minimize latency and achieve high throughput through efficient CPU utilizatio
 * Deploy on Java 8.
 * Set optimal JVM parameters.
 * Configure a Filesystem DataStore or an S3 data store.
+* Disable subasset generation. If it is enabled, AEM's workflow creates a separate asset for each page in a multi-page asset. Each of these pages is an individual asset that consumes additional disk space, requires versioning, and additional workflow processing. If you do not require separate pages, disable subasset generation and page extraction activities.
 * Enable transient workflows.
 * Tune the Granite workflow queues to limit concurrent jobs.
 * Configure [!DNL ImageMagick] to limit resource consumption.

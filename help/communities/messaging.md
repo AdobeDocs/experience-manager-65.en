@@ -41,7 +41,7 @@ As shown below, a configuration of the service exists for sites created with the
 
 To add a new configuration, select the plus '**+**' icon next to the service's name :
 
-* **Message Fields Whitelist**
+* **Message Fields Allowlist**
   
   Specifies the properties of the Compose Message component users can edit and persist. If new form elements are added, then the element id would need to be added if desired to be stored in SRP. Default is two entries: *subject* and *content*.
 
@@ -105,13 +105,13 @@ To add a new configuration, select the plus '**+**' icon next to the service's n
   
   If supportAttachments is checked, this value specifies the maximum allowed total size (in bytes) of all attachments. Default is *104857600* (100 MB).
 
-* **Attachment type black list**
+* **Attachment type blocklist**
   
-  A blacklist of filename extensions, prefixed with '**.**', that will be rejected by the system. If not blacklisted, then the extension is allowed. Extensions may be added or removed using the '**+**' and '**-**' icons.
+  A blocklist of filename extensions, prefixed with '**.**', that will be rejected by the system. If not blocklisted, then the extension is allowed. Extensions may be added or removed using the '**+**' and '**-**' icons.
 
 * **Allowed attachment types**
   
-  **(*Action Required*)** A whitelist of filename extensions, the opposite of the blacklist. To allow all filename extensions, except for those blacklisted, use the '**-**' icon to remove the single empty entry.
+  **(*Action Required*)** An allowlist of filename extensions, the opposite of the blocklist. To allow all filename extensions, except for those blocklisted, use the '**-**' icon to remove the single empty entry.
 
 * **Service selector**
   
@@ -119,15 +119,15 @@ To add a new configuration, select the plus '**+**' icon next to the service's n
   
   The default is */bin/messaging* .
 
-* **Field whitelist**
+* **Field Allowlist**
   
-  Use **Message Fields Whitelist**.
+  Use **Message Fields Allowlist**.
 
 >[!CAUTION]
  >
  >Each time a `Messaging Operations Service` configuration is opened for edit, if `allowedAttachmentTypes.name` had been removed, an empty entry is re-added to make the property configurable. A single empty entry effectively disables file attachments.
  >
- >To allow all filename extensions, except for those blacklisted, use the '**-**' icon to (again) remove the single empty entry before clicking **Save**.
+ >To allow all filename extensions, except for those blocklisted, use the '**-**' icon to (again) remove the single empty entry before clicking **Save**.
  >
 
 ## Group Messaging {#group-messaging}

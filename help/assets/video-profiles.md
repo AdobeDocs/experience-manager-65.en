@@ -12,11 +12,11 @@ docset: aem65
 
 # Video profiles {#video-profiles}
 
-Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. When you encode your master videos using the Adaptive Video Encoding profile, during playback the video player automatically adjusts the quality of the video stream based on the Internet connection speed of your customers. This is known as adaptive streaming.
+Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. When you encode your primary source videos using the Adaptive Video Encoding profile, during playback the video player automatically adjusts the quality of the video stream based on the Internet connection speed of your customers. This is known as adaptive streaming.
 
 The following are other factors that determine the quality of your videos:
 
-* **Resolution of the uploaded master video**
+* **Resolution of the uploaded primary source video**
 
   If the MP4 video was recorded at a lower resolution, such as 240p or 360p, it cannot be streamed in high definition.
 
@@ -150,11 +150,11 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 **To create a video profile for adaptive streaming**,
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]**.
+1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles.]**
 1. Click or tap **[!UICONTROL Create]** to add a new video profile.
 
 1. Enter a name and description for the profile.
-1. On the Create/Edit Video Encoding Presets page, tap **[!UICONTROL Add Video Encoding Preset]**.
+1. On the Create/Edit Video Encoding Presets page, tap **[!UICONTROL Add Video Encoding Preset.]**
 1. On the **[!UICONTROL Basic]** tab, set the video and audio options.
    Tap the information icon next to each option for additional descriptions or recommended settings based on the selected video format codec.
 1. Under the Video Size heading, ensure that **[!UICONTROL Keep aspect ratio]** is checked.
@@ -162,7 +162,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 1.  Do one of the following:
 
-    * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto]**. In the **[!UICONTROL Height]** field, enter a value in pixels.
+    * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto.]** In the **[!UICONTROL Height]** field, enter a value in pixels.
 
     * To help you visualize the size of the video, tap the Information icon (i) to the right of **[!UICONTROL Height]** to open the Size Calculator page. Use **[!UICONTROL Size Calculator]** to set the video dimensions (represented by the blue box) you want. Tap **[!UICONTROL X]** in the upper-right corner when you are done.
 
@@ -173,7 +173,7 @@ To define advanced processing parameters for other asset types, see [Configuring
     * Continue to the next step.
 
 1. (Optional) To add video smart crop to the videos that this profile will be applied to, do the following:
-    * On the Edit Video Profile page, to the right of the Smart Crop Ratio heading, tap **[!UICONTROL Add New]**.
+    * On the Edit Video Profile page, to the right of the Smart Crop Ratio heading, tap **[!UICONTROL Add New.]**
     * In the Name field, type a name for the crop ratio that will help you easily identify it.
     * From the **[!UICONTROL Crop Ratio]** drop-down list, select the ratio you want to use.
 
@@ -203,17 +203,17 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 **To create a video profile for progressive streaming:**
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]**.
+1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles.]**
 1. Tap **[!UICONTROL Create]** to add a new video profile.
 1. Enter a name and description for the profile.
-1. On the Create/Edit Video Encoding Presets page, tap **[!UICONTROL Add Video Encoding Preset]**.
+1. On the Create/Edit Video Encoding Presets page, tap **[!UICONTROL Add Video Encoding Preset.]**
 1. On the **[!UICONTROL Basic]** tab, set the video and audio options.
    Tap the information icon next to each option for additional descriptions or recommended settings based on the selected video format codec.
-1. (Optional) Under the Video Size heading, uncheck **[!UICONTROL Keep aspect ratio]**.
+1. (Optional) Under the Video Size heading, uncheck **[!UICONTROL Keep aspect ratio.]**
 1. Do the following:
-    * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto]**.
+    * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto.]**
     * In the **[!UICONTROL Height]** field, enter a value in pixels.
-        To help you visualize the size of the video, tap the Height's information icon to open the **[!UICONTROL Size Calculator]** page. Use the **[!UICONTROL Size Calculator]** page to further set the video dimension (blue box) how you want. When you are done, in the upper-right corner of the dialog box, tap **[!UICONTROL X]**.
+        To help you visualize the size of the video, tap the Height's information icon to open the **[!UICONTROL Size Calculator]** page. Use the **[!UICONTROL Size Calculator]** page to further set the video dimension (blue box) how you want. When you are done, in the upper-right corner of the dialog box, tap **[!UICONTROL X.]**
 1. (Optional) Do one of the following:
 
     * Tap the **[!UICONTROL Advanced]** tab, and make sure the **[!UICONTROL Use Default Values]** check box is selected (recommended).
@@ -229,7 +229,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 1. (Optional) To add video smart crop to the videos that this profile will be applied to, do the following:
 
-    * On the Edit Video Profile page, to the right of the Smart Crop Ratio heading, tap **[!UICONTROL Add New]**.
+    * On the Edit Video Profile page, to the right of the Smart Crop Ratio heading, tap **[!UICONTROL Add New.]**
     * In the Name field, type a name for the crop ratio that will help you easily identify it.
     * From the **[!UICONTROL Crop Ratio]** drop-down list, select the ratio you want to use.
     
@@ -248,7 +248,7 @@ You can edit an existing video encoding profile to take advantage of advanced vi
 
 **To use custom-added video encoding parameters**:
 
-1. Tap the AEM logo, then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL General]** &gt; **[!UICONTROL CRXDE Lite]**.
+1. Tap the AEM logo, then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL General]** &gt; **[!UICONTROL CRXDE Lite.]**
 1. From the CRXDE Lite page, in the Explorer panel on the left, navigate to the following:
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
@@ -300,11 +300,11 @@ You can edit an existing video encoding profile to take advantage of advanced vi
 
    ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. Near the lower-right corner of the page, tap **[!UICONTROL Add]**.
+1. Near the lower-right corner of the page, tap **[!UICONTROL Add.]**
 1. Do one of the following:
 
     * Repeat steps 3 and 4 to add another parameter to your video encoding profile.
-    * Near the upper-left corner of the page, tap **[!UICONTROL Save All]**.
+    * Near the upper-left corner of the page, tap **[!UICONTROL Save All.]**
 
 1. In the upper-left corner of the CRXDE Lite page, tap the **[!UICONTROL Back Home]** icon to return to AEM.
 
@@ -320,9 +320,9 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 **To edit a video profile**:
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]**.
+1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles.]**
 1. On the Video Profiles page, check one video profile name.
-1. On the toolbar, tap **[!UICONTROL Edit]**.
+1. On the toolbar, tap **[!UICONTROL Edit.]**
 1. On the Video Encoding Profile page, edit the name and description, as desired.
 1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected.
    Tap the information icon for a description of adaptive streaming. (If you are editing a progressive video profile, do not select this check box.)
@@ -330,13 +330,13 @@ To define advanced processing parameters for other asset types, see [Configuring
 
    Tap the information icon next to each option on the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs for additional descriptions or recommended settings based on the selected video format codec.
 
-1. In the upper-right corner ofthepage, tap **[!UICONTROL Save]**.
+1. In the upper-right corner ofthepage, tap **[!UICONTROL Save.]**
 
 ### Copying a video profile {#copying-a-video-encoding-profile}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]**.
+1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles.]**
 1. On the Video Profiles page, check one video profile name.
-1. On the toolbar, tap **[!UICONTROL Copy]**.
+1. On the toolbar, tap **[!UICONTROL Copy.]**
 1. On the Video Encoding Profile page, enter a new name for the profile.
 1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected. Tap the information icon for a description of adaptive streaming. (If you are copying a progressive video profile, do not select the check box.)
 
@@ -345,14 +345,14 @@ To define advanced processing parameters for other asset types, see [Configuring
 
    Tap the information icon next to each option on the Basic and Advanced tabs for recommended settings and descriptions.
 
-1. In the upper-right corner ofthepage, tap **[!UICONTROL Save]**.
+1. In the upper-right corner ofthepage, tap **[!UICONTROL Save.]**
 
 ### Deleting a video profile {#deleting-a-video-encoding-profile}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]**.
+1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles.]**
 1. On the Video Profiles page, check one or more video profile names.
-1. On the toolbar, tap **[!UICONTROL Delete]**.
-1. Tap **[!UICONTROL OK]**.
+1. On the toolbar, tap **[!UICONTROL Delete.]**
+1. Tap **[!UICONTROL OK.]**
 
 ## Applying a video profile to folders {#applying-a-video-profile-to-folders}
 
@@ -370,7 +370,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 ### Applying a video profile to specific folders {#applying-video-profiles-to-specific-folders}
 
-You can apply a video profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Properties]**. This section describes how to apply video profiles to folders both ways.
+You can apply a video profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Properties.]** This section describes how to apply video profiles to folders both ways.
 
 Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
@@ -378,16 +378,16 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 #### Applying a video profile to folders by way of the Profiles user interface {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]**.
+1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles.]**
 1. Select the video profile that you want to apply to a folder or multiple folders.
-1. Tap **[!UICONTROL Apply Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap **[!UICONTROL Apply]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name while in **[!UICONTROL Card View]**.
+1. Tap **[!UICONTROL Apply Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap **[!UICONTROL Apply.]** Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name while in **[!UICONTROL Card View.]**
     You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
 
 #### Applying a video profile to folders from Properties {#applying-video-profiles-to-folders-from-properties}
 
 1. Tap or click the AEM logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to apply a video profile to.
-1. On the folder, tap the check mark to select it and then tap **[!UICONTROL Properties]**.
-1. Select the **[!UICONTROL Video Profiles]** tab and select the profile from the drop-down menu and click **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+1. On the folder, tap the check mark to select it and then tap **[!UICONTROL Properties.]**
+1. Select the **[!UICONTROL Video Profiles]** tab and select the profile from the drop-down menu and click **[!UICONTROL Save & Close.]** Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
@@ -400,7 +400,7 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 **To apply a video profile globally**,
 
-* Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` and tap **[!UICONTROL Save All]**.
+* Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` and tap **[!UICONTROL Save All.]**
 
   ![chlimage_1-519](assets/chlimage_1-519.png)
 * You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
@@ -415,19 +415,19 @@ You can also view the `error.log` file to monitor the progress of an encoding jo
 
 When you remove a video profile from a folder, any subfolders automatically inherit the removal of the profile from its parent folder. However, any processing of files that has occurred within the folders remains intact.
 
-You can remove a video profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Folder Settings]**. This section describes how to remove video profiles from folders both ways.
+You can remove a video profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Folder Settings.]** This section describes how to remove video profiles from folders both ways.
 
 ### Removing a video profile from folders by way of the Profiles user interface {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]**.
+1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles.]**
 1. Select the video profile that you want to remove from a folder or multiple folders.
-1. Tap **[!UICONTROL Remove Profile from Folders]** and select the folder or multiple folders you want use to remove the profile from and tap **[!UICONTROL Remove]**.
+1. Tap **[!UICONTROL Remove Profile from Folders]** and select the folder or multiple folders you want use to remove the profile from and tap **[!UICONTROL Remove.]**
 
    You can confirm that the video profile is no longer applied to a folder because the name no longer appears below the folder name.
 
 ### Removing a video profile from folders by way of Properties {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Tap or click the AEM logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to remove a video profile from.
-1. On the folder, tap or click the check mark to select it and then tap or click **Properties]**.
-1. Select the **[!UICONTROL Video Profiles]** tab and select **[!UICONTROL None]** from the drop-down menu and click **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+1. On the folder, tap or click the check mark to select it and then tap or click **Properties.]**
+1. Select the **[!UICONTROL Video Profiles]** tab and select **[!UICONTROL None]** from the drop-down menu and click **[!UICONTROL Save & Close.]** Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 

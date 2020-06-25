@@ -53,7 +53,7 @@ The [!DNL Adobe InDesign Server] can be integrated with [!DNL Experience Manager
     * The extracted text and files are stored in [!DNL Experience Manager Assets].
     * All renditions are stored in [!DNL Experience Manager Assets], in the asset itself.
 
-## Integrate the [!DNL InDesign Server] with AEM {#integrating-the-indesign-server-with-aem}
+## Integrate the [!DNL InDesign Server] with Experience Manager {#integrating-the-indesign-server-with-aem}
 
 To integrate the [!DNL InDesign Server] for use with [!DNL Experience Manager Assets] and after configuring your proxy, you need to:
 
@@ -106,7 +106,7 @@ Media extraction arguments and script paths
 
 * **Extend Scripts**: You can specify different script combinations here. If you want your own scripts to be executed on the [!DNL InDesign Server], save the scripts at `/apps/settings/dam/indesign/scripts`.
 
-For information about Indesign scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
 >[!CAUTION]
 >
@@ -114,7 +114,7 @@ For information about Indesign scripts, see [InDesign developer documentation](h
 
 The `ThumbnailExport.jsx` script run by the Media Extraction workflow step generates a thumbnail rendition in JPG format. This rendition is used by the Process Thumbnails workflow step to generate the static renditions required by [!DNL Experience Manager].
 
-You can configure the Process Thumbnails workflow step to generate static renditions at different sizes. Ensure that you do not remove the defaults, because they are required by the [!DNL Experience Manager Assets] interface. Finally, the Delete Image Preview Rendition workflow step removes the .jpg thumbnail rendition, as it is no longer needed.
+You can configure the Process Thumbnails workflow step to generate static renditions at different sizes. Ensure that you do not remove the defaults, because they are required by the [!DNL Experience Manager Assets] interface. Finally, the Delete Image Preview Rendition workflow step removes the JPG thumbnail rendition, as it is no longer needed.
 
 #### Page extraction {#page-extraction}
 
@@ -161,8 +161,8 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
 If the [!DNL InDesign Server] and [!DNL Experience Manager] run on different hosts or either or both these applications do not run on default ports, configure [!UICONTROL Day CQ Link Externalizer] to set the host name, port, and content path for the [!DNL InDesign Server].
 
 1. Access the Web Console at `https://[aem_server]:[port]/system/console/configMgr`.
-1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and tap **[!UICONTROL Edit]** to open it.
-1. Specify the host name and context path for the [!DNL Indesign Server] and click **Save**.
+1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and click **[!UICONTROL Edit]** to open it.
+1. Specify the host name and context path for the [!DNL Adobe InDesign Server] and click **Save**.
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
 
@@ -190,18 +190,19 @@ To configure the number of parallel IDS jobs:
 
    If there are multiple machines running [!DNL InDesign Server], add SOAP endpoints (number of processors per machine -1) for each machine.
 
+<!-- 
+TBD: Make updates to configurations for allow and block list after product updates are done.
+-->
+
    >[!NOTE]
    >
-   >You may choose to enable Blacklisting of IDS workers when working with pool of workers.
-   >
+   >When working with pool of workers, you can enable blocked list of IDS workers.
    >
    >To do so, enable the **[!UICONTROL enable.retry.name]** checkbox, under the `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuration, which enables IDS job retrials.
    >
-   >
    >Also, under the `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuration, set a positive value for `max.errors.to.blacklist` parameter which determines number of job retrials before barring an IDS from the job handlers list.
    >
-   >
-   >By default, after the configurable (retry.interval.to.whitelist.name) time in minutes the IDS worker is revalidated. If the worker is found online, it is removed from the blacklist.
+   >By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. If the worker is found online, it is removed from the blocked list.
 
 ## Enable support for [!DNL InDesign Server] 10.0 or later {#enabling-support-for-indesign-server-or-later}
 
@@ -213,7 +214,7 @@ For [!DNL InDesign Server] 10.0 or higher, perform the following steps to enable
 
 >[!NOTE]
 >
->For [!DNL InDesign Server] integration with [!DNL Experience Manager Assets], use a multi-core processor because the Session Support feature necessary for the integration is not supported on single core systems.
+>For [!DNL InDesign Server] integration with [!DNL Experience Manager Assets], use a multi-core processor because the session support feature necessary for the integration is not supported on single core systems.
 
 ## Configure [!DNL Experience Manager] credentials {#configure-aem-credentials}
 

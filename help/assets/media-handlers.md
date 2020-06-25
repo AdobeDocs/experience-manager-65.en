@@ -1,30 +1,32 @@
 ---
-title: Process assets using media handlers and workflows
+title: Process assets using media handlers and workflows in [!DNL Adobe Experience Manager].
 description: Learn about the media handlers and how to use workflows to perform tasks on your digital assets.
 contentOwner: AG
 ---
 
 # Process assets using media handlers and workflows {#processing-assets-using-media-handlers-and-workflows}
 
-Adobe Experience Manager (AEM) Assets comes with a set of default workflows and media handlers to process assets. A workflow defines the tasks to be executed on the assets, then delegates the specific tasks to the media handlers, for example thumbnail generation or metadata extraction.
+[!DNL Adobe Experience Manager Assets] comes with a set of default workflows and media handlers to process assets. A workflow defines the tasks to be executed on the assets, then delegates the specific tasks to the media handlers, for example thumbnail generation or metadata extraction.
 
-A workflow can be configured to automatically execute when an asset of a particular MIME type is uploaded. The processing steps are defined in terms of a series of AEM Assets media handlers. AEM provides some [built in handlers,](#default-media-handlers) and additional ones can be either [custom developed](#creating-a-new-media-handler) or defined by delegating the process to a [command line tool](#command-line-based-media-handler).
+A workflow can be configured to automatically execute when an asset of a particular MIME type is uploaded. The processing steps are defined in terms of a series of [!DNL Assets] media handlers. [!DNL Experience Manager] provides some [built in handlers,](#default-media-handlers) and additional ones can be either [custom developed](#creating-a-new-media-handler) or defined by delegating the process to a [command line tool](#command-line-based-media-handler).
 
-Media handlers are services inside AEM Assets that perform specific actions on assets. For example, when an MP3 audio file is uploaded into AEM, a workflow triggers an MP3 handler that extracts the metadata and generates a thumbnail. Media handlers are usually used in combination with workflows. Most common MIME types are supported within AEM. Specific tasks can be performed on assets by either extending/creating workflows, extending/creating media handlers or disabling/enabling media handlers.
+Media handlers are services in [!DNL Assets] that perform specific actions on assets. For example, when an MP3 audio file is uploaded into [!DNL Experience Manager], a workflow triggers an MP3 handler that extracts the metadata and generates a thumbnail. Media handlers are usually used in combination with workflows. Most common MIME types are supported within [!DNL Experience Manager]. Specific tasks can be performed on assets by either extending/creating workflows, extending/creating media handlers or disabling/enabling media handlers.
 
 >[!NOTE]
 >
->Please refer to the [Assets supported formats](assets-formats.md) page for a description of all the formats supported by AEM Assets as well as features supported for each format.
+>Please refer to the [Assets supported formats](assets-formats.md) page for a description of all the formats supported by [!DNL Assets] as well as features supported for each format.
 
 ## Default media handlers {#default-media-handlers}
 
-The following media handlers are available within AEM Assets and handle the most common MIME types:
+The following media handlers are available within [!DNL Assets] and handle the most common MIME types:
 
-<!-- TBD: Apply correct formatting once table is moved to MD.
+<!-- TBD: 
+* Apply correct formatting once table is moved to MD.
+* Java versions shouldn't be set to 1.5. Must be updated.
 -->
 
-| Handler name | Service Name (in the System Console) | Supported MIME types |
-|---|---|---|
+| Handler name | Service Name (in the system console) | Supported MIME types |
+|--------------|--------------------------------------|----------------------|
 | [!UICONTROL TextHandler] | `com.day.cq.dam.core.impl.handler.TextHandler` | text/plain |
 | [!UICONTROL PdfHandler] | `com.day.cq.dam.handler.standard.pdf.PdfHandler` | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | `com.day.cq.dam.core.impl.handler.JpegHandler` | image/jpeg |
@@ -55,7 +57,7 @@ To view the active media handlers:
 
 Media handlers are services that are usually used in combination with workflows.
 
-AEM has some default workflows to process assets. To view them, open the Workflow console and click the **[!UICONTROL Models]** tab: the workflow titles that start with AEM Assets are the assets specific ones.
+[!DNL Experience Manager] has some default workflows to process assets. To view them, open the Workflow console and click the **[!UICONTROL Models]** tab: the workflow titles that start with [!DNL Assets] are the assets specific ones.
 
 Existing workflows can be extended and new ones can be created to process assets according to specific requirements.
 
@@ -96,7 +98,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 The interface and classes include:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: This interface describes the service which adds support for specific mime types. Adding a new mime type requires to implement this interface. The interface contains methods for importing and exporting the specific documents, for creating thumbnails and extracting metadata.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: This interface describes the service which adds support for specific MIME types. Adding a new MIME type requires to implement this interface. The interface contains methods for importing and exporting the specific documents, for creating thumbnails and extracting metadata.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: This class serves as basis for all other asset handler implementations and provides common used functionality.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class:
   * This class serves as basis for all other asset handler implementations and provides common used functionality plus common used functionality for sub-asset extraction.
@@ -107,7 +109,7 @@ The following methods need to be implemented:
 
 * `extractMetadata()`: this method extracts all available metadata.
 * `getThumbnailImage()`: this method creates a thumbnail image out of the passed asset.
-* `getMimeTypes()`: this method returns the asset mime type(s).
+* `getMimeTypes()`: this method returns the asset MIME type(s).
 
 Here is an example template:
 
@@ -115,7 +117,7 @@ package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit="true" &ast; @scr
 
 The interface and classes include:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: This interface describes the service which adds support for specific mime types. Adding a new mime type requires to implement this interface. The interface contains methods for importing and exporting the specific documents, for creating thumbnails and extracting metadata.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: This interface describes the service which adds support for specific MIME types. Adding a new MIME type requires to implement this interface. The interface contains methods for importing and exporting the specific documents, for creating thumbnails and extracting metadata.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: This class serves as basis for all other asset handler implementations and provides common used functionality.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class: This class serves as basis for all other asset handler implementations and provides common used functionality plus common used functionality for subasset extraction.
 
@@ -125,28 +127,28 @@ In this section, you will create a specific Text Handler that generates thumbnai
 
 Proceed as follows:
 
-Refer to [Development Tools](../sites-developing/dev-tools.md) to install and set up Eclipse with a Maven plugin and for setting up the dependencies that are needed for the Maven project.
+Refer to [Development Tools](../sites-developing/dev-tools.md) to install and set up Eclipse with a [!DNL Maven] plugin and for setting up the dependencies that are needed for the [!DNL Maven] project.
 
-After you perform the following procedure, when you upload a txt file into AEM, the file's metadata are extracted and two thumbnails with a watermark are generated.
+After you perform the following procedure, when you upload a TXT file into [!DNL Experience Manager], the file's metadata are extracted and two thumbnails with a watermark are generated.
 
-1. In Eclipse, create `myBundle` Maven project:
+1. In Eclipse, create `myBundle` [!DNL Maven] project:
 
     1. In the Menu bar, click **[!UICONTROL File > New > Other]**.
-    1. In the dialog, expand the Maven folder, select Maven Project and click **[!UICONTROL Next]**.
+    1. In the dialog, expand the [!DNL Maven] folder, select [!DNL Maven] project and click **[!UICONTROL Next]**.
     1. Check the Create a simple project box and the Use default Workspace locations box, then click **[!UICONTROL Next]**.
-    1. Define the Maven project:
+    1. Define a [!DNL Maven] project:
 
-        * Group Id: com.day.cq5.myhandler
-        * Artifact Id: myBundle
-        * Name: My AEM bundle
-        * Description: This is my AEM bundle
+        * Group Id: `com.day.cq5.myhandler`.
+        * Artifact Id: myBundle.
+        * Name: My [!DNL Experience Manager] bundle.
+        * Description: This is my [!DNL Experience Manager] bundle.
 
     1. Click **[!UICONTROL Finish]**.
 
-1. Set the Java compiler to version 1.5:
+1. Set the [!DNL Java] compiler to version 1.5:
 
-    1. Right-click the `myBundle` project, select Properties.
-    1. Select Java Compiler and set following properties to 1.5:
+    1. Right-click the `myBundle` project, select [!UICONTROL Properties].
+    1. Select [!UICONTROL Java Compiler] and set following properties to 1.5:
 
         * Compiler compliance level
         * Generated .class files compatibility
@@ -271,15 +273,15 @@ After you perform the following procedure, when you upload a txt file into AEM, 
     </dependencies>
    ```
 
-1. Create the package `com.day.cq5.myhandler` that contains the Java classes under `myBundle/src/main/java`:
+1. Create the package `com.day.cq5.myhandler` that contains the [!DNL Java] classes under `myBundle/src/main/java`:
 
     1. Under myBundle, right-click `src/main/java`, select New, then Package.
     1. Name it `com.day.cq5.myhandler` and click Finish.
 
-1. Create the Java class `MyHandler`:
+1. Create the [!DNL Java] class `MyHandler`:
 
-    1. In Eclipse, under `myBundle/src/main/java`, right-click the `com.day.cq5.myhandler` package, select New, then Class.
-    1. In the dialog window, name the Java Class MyHandler and click Finish. Eclipse creates and opens the file MyHandler.java.
+    1. In [!DNL Eclipse], under `myBundle/src/main/java`, right-click the `com.day.cq5.myhandler` package. Select [!UICONTROL New], then [!UICONTROL Class].
+    1. In the dialog window, name the [!DNL Java] class `MyHandler` and click [!UICONTROL Finish]. [!DNL Eclipse] creates and opens the file `MyHandler.java`.
     1. In `MyHandler.java` replace the existing code with the following and then save the changes:
 
    ```java
@@ -401,8 +403,8 @@ After you perform the following procedure, when you upload a txt file into AEM, 
      * * @return the number of words in the string
      * */
     private long wordCount(String text) {
-     // We need to keep track of the last character, if we have two white spaces in a row we dont want to double count
-     // The starting of the document is always a whitespace
+     // We need to keep track of the last character, if we have two whitespaces in a row we don't want to double count.
+     // The starting of the document is always a whitespace.
      boolean prevWhiteSpace = true;
      boolean currentWhiteSpace = true;
      char c; long numwords = 0;
@@ -415,27 +417,27 @@ After you perform the following procedure, when you upload a txt file into AEM, 
       if (currentWhiteSpace && !prevWhiteSpace) { numwords++; }
       prevWhiteSpace = currentWhiteSpace;
      }
-     // If we do not end with a white space then we need to add one extra word
+     // If we do not end with a whitespace then we need to add one extra word.
      if (!currentWhiteSpace) { numwords++; }
      return numwords;
     }
    }
    ```
 
-1. Compile the Java class and create the bundle:
+1. Compile the [!DNL Java] class and create the bundle:
 
     1. Right-click the `myBundle` project, select **[!UICONTROL Run As]**, then **[!UICONTROL Maven Install]**.
     1. The bundle `myBundle-0.0.1-SNAPSHOT.jar` (containing the compiled class) is created under `myBundle/target`.
 
-1. In CRX Explorer, create a new node under `/apps/myApp`. Name = `install`, Type = `nt:folder`.
-1. Copy the bundle `myBundle-0.0.1-SNAPSHOT.jar` and store it under `/apps/myApp/install` (for example with WebDAV). The new text handler is now active in AEM.
+1. In CRX explorer, create a new node under `/apps/myApp`. Name = `install`, Type = `nt:folder`.
+1. Copy the bundle `myBundle-0.0.1-SNAPSHOT.jar` and store it under `/apps/myApp/install` (for example with WebDAV). The new text handler is now active in [!DNL Experience Manager].
 1. In your browser, open the [!UICONTROL Apache Felix Web Management Console]. Select the [!UICONTROL Components] tab and disable the default text handler `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## Command Line based media handler {#command-line-based-media-handler}
 
-AEM enables you to run any command-line tool within a workflow to convert assets (such as ImageMagick) and to add the new rendition to the asset. You only need to install the command-line tool on the disk hosting the AEM server and to add and configure a process step to the workflow. The invoked process, called `CommandLineProcess`, also enables to filter according to specific MIME types and to create multiple thumbnails based on the new rendition.
+[!DNL Experience Manager] enables you to run any command-line tool within a workflow to convert assets (such as [!DNL ImageMagick]) and to add the new rendition to the asset. You only need to install the command-line tool on the disk hosting the [!DNL Experience Manager] server and to add and configure a process step to the workflow. The invoked process, called `CommandLineProcess`, also enables to filter according to specific MIME types and to create multiple thumbnails based on the new rendition.
 
-The following conversions can be automatically run and stored within AEM Assets:
+The following conversions can be automatically run and stored within [!DNL Assets]:
 
 * EPS and AI transformation using [ImageMagick](https://www.imagemagick.org/script/index.php) and [Ghostscript](https://www.ghostscript.com/).
 * FLV video transcoding using [FFmpeg](https://ffmpeg.org/).
@@ -444,27 +446,27 @@ The following conversions can be automatically run and stored within AEM Assets:
 
 >[!NOTE]
 >
->On non-Windows systems, the FFMpeg tool returns an error while generating renditions for a video asset that has a single quote (') in its filename. If the name of your video file includes a single quote, remove it before uploading to AEM.
+>On non-Windows systems, the FFmpeg tool returns an error while generating renditions for a video asset that has a single quote (') in its filename. If the name of your video file includes a single quote, remove it before uploading to [!DNL Experience Manager].
 
 The `CommandLineProcess` process performs the following operations in the order they are listed:
 
-* Filters the file according to specific mime-types, if specified.
-* Creates a temporary directory on the disk hosting the AEM server.
+* Filters the file according to specific MIME types, if specified.
+* Creates a temporary directory on the disk hosting the [!DNL Experience Manager] server.
 * Streams the original file to the temporary directory.
-* Executes the command defined by the arguments of the step. The command is being executed within the temporary directory with the permissions of the user running AEM.
-* Streams the result back into the rendition folder of the AEM server.
+* Executes the command defined by the arguments of the step. The command is being executed within the temporary directory with the permissions of the user running [!DNL Experience Manager].
+* Streams the result back into the rendition folder of the [!DNL Experience Manager] server.
 * Deletes the temporary directory.
 * Creates thumbnails based on those renditions, if specified. The number and the dimensions of the thumbnails are defined by the arguments of the step.
 
-### An example using ImageMagick {#an-example-using-imagemagick}
+### An example using [!DNL ImageMagick] {#an-example-using-imagemagick}
 
-The following example shows you how to set up the command line process step so that every time an asset with the mime-type gif or tiff is added to /content/dam on the AEM server, a flipped image of the original is created together with three additional thumbnails (140x100, 48x48, and 10x250).
+The following example shows you how to set up the command line process step so that every time an asset with the miMIME e-type GIF or TIFF is added to `/content/dam` on the [!DNL Experience Manager] server, a flipped image of the original is created together with three additional thumbnails (140x100, 48x48, and 10x250).
 
-To do this, you will use ImageMagick. ImageMagick is a free software suite to create, edit, and compose bitmap images and is typically used from the command line.
+To do this, use [!DNL ImageMagick]. [!DNL ImageMagick] is a free, command-line software used to create, edit, and compose bitmap images.
 
-First install ImageMagick on the disk hosting the AEM server:
+Install [!DNL ImageMagick] on the disk hosting the [!DNL Experience Manager] server:
 
-1. Install ImageMagick: please refer to the [ImageMagick documentation](https://www.imagemagick.org/script/download.php).
+1. Install [!DNL ImageMagick]: See [ImageMagick documentation](https://www.imagemagick.org/script/download.php).
 1. Set up the tool so you can run convert on the command line.
 1. To see if the tool is installed properly, run the following command `convert -h` on the command line.
 
@@ -472,22 +474,12 @@ First install ImageMagick on the disk hosting the AEM server:
 
    >[!NOTE]
    >
-   >In some versions of Windows (for example Windows SE), the convert command may fail to run because it conflicts with the native convert utility that is part of Windows installation. In this case, mention the complete path for the ImageMagick utility used to convert image files to thumbnails. For example, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
+   >In some versions of Windows, the convert command may fail to run because it conflicts with the native convert utility that is part of [!DNL Windows] installation. In this case, mention the complete path for the [!DNL ImageMagick] software used to convert image files to thumbnails. For example, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
-1. To see if the tool runs properly, add a .jpg image to the working directory and run the command convert `<image-name>.jpg -flip <image-name>-flipped.jpg` on the command line.
-
-   A flipped image is added to the directory.
-
-Then, add the command line process step to the **[!UICONTROL DAM Update Asset]** workflow:
-
+1. To see if the tool runs properly, add a JPG image to the working directory and run the command convert `<image-name>.jpg -flip <image-name>-flipped.jpg` on the command line. A flipped image is added to the directory. Then, add the command line process step to the **[!UICONTROL DAM Update Asset]** workflow.
 1. Go to the **[!UICONTROL Workflow]** console.
 1. In the **[!UICONTROL Models]** tab, edit the **[!UICONTROL DAM Update Asset]** model.
-1. Change the settings of the **[!UICONTROL Web enabled rendition]** step as follows:
-
-   **Arguments**:
-
-   `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
-
+1. Change the [!UICONTROL Arguments] of the **[!UICONTROL Web enabled rendition]** step to: `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`.
 1. Save the workflow.
 
 To test the modified workflow, add an asset to `/content/dam`.
@@ -504,27 +496,27 @@ Separate the values of the [!UICONTROL Process Arguments] using comma and do not
 
 | Argument-Format | Description |
 |---|---|
-| mime:&lt;mime-type&gt; | Optional argument. The process is applied if the asset has the same mime-type as the one of the argument. <br>Several mime-types can be defined. |
+| mime:&lt;mime-type&gt; | Optional argument. The process is applied if the asset has the same MIME type as the one of the argument. <br>Several MIME types can be defined. |
 | tn:&lt;width&gt;:&lt;height&gt; | Optional argument. The process creates a thumbnail with the dimensions defined in the argument. <br>Several thumbnails can be defined. |
-| cmd: &lt;command&gt; | Defines the command that will be executed. The syntax depends on the command line tool. Only one command can be defined. <br>The following variables can be used to create the command:<br>`${filename}`: name of the input file, for example original.jpg <br> `${file}`: full path name of the input file, for example /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: directory of the input file, for example /tmp/cqdam0816.tmp <br>`${basename}`: name of the input file without its extension, for example original <br>`${extension}`: extension of the input file, for example jpg |
+| cmd: &lt;command&gt; | Defines the command that will be executed. The syntax depends on the command line tool. Only one command can be defined. <br>The following variables can be used to create the command:<br>`${filename}`: name of the input file, for example original.jpg <br> `${file}`: full path name of the input file, for example /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: directory of the input file, for example /tmp/cqdam0816.tmp <br>`${basename}`: name of the input file without its extension, for example original <br>`${extension}`: extension of the input file, for example JPG. |
 
-For example, if ImageMagick is installed on the disk hosting the AEM server and if you create a process step using [!UICONTROL CommandLineProcess] as Implementation and the following values as [!UICONTROL Process Arguments]:
+For example, if [!DNL ImageMagick] is installed on the disk hosting the [!DNL Experience Manager] server and if you create a process step using [!UICONTROL CommandLineProcess] as Implementation and the following values as [!UICONTROL Process Arguments]:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
 then, when the workflow runs, the step only applies to assets that have `image/gif` or `mime:image/tiff` as `mime-types`, it creates a flipped image of the original, converts it into JPG and creates three thumbnails that have the dimensions: 140x100, 48x48, and 10x250.
 
-Use the following [!UICONTROL Process Arguments] to create the three standard thumbnails using ImageMagick:
+Use the following [!UICONTROL Process Arguments] to create the three standard thumbnails using [!DNL ImageMagick]:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=319x319 -thumbnail "319x319>" -background transparent -gravity center -extent 319x319 -write png:cq5dam.thumbnail.319.319.png -thumbnail "140x100>" -background transparent -gravity center -extent 140x100 -write cq5dam.thumbnail.140.100.png -thumbnail "48x48>" -background transparent -gravity center -extent 48x48 cq5dam.thumbnail.48.48.png`
 
-Use the following [!UICONTROL Process Arguments] to create the web-enabled rendition using ImageMagick:
+Use the following [!UICONTROL Process Arguments] to create the web-enabled rendition using [!DNL ImageMagick]:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=1280x1280 -thumbnail "1280x1280>" cq5dam.web.1280.1280.jpeg`
 
 >[!NOTE]
 >
->The [!UICONTROL CommandLineProcess] step only applies to Assets (nodes of type `dam:Asset`) or descendants of an Asset.
+>The [!UICONTROL CommandLineProcess] step only applies to assets (nodes of type `dam:Asset`) or descendants of an asset.
 
 >[!MORELIKETHIS]
 >

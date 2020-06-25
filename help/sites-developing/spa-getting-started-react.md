@@ -115,9 +115,9 @@ Actually building the app leverages [Webpack](https://webpack.js.org/) for trans
 
 Once built, the package can be uploaded to an AEM instance.
 
-### Maven Archetype for SPA Starter Kit {#maven-archetype-for-spa-starter-kit}
+### AEM Project Archetype {#aem-project-archetype}
 
-Adobe recommends leveraging the [Maven Archetype for SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype) to help you start your own SPA project for AEM.
+Any AEM project should leverage the [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
 
 ## Application Structure {#application-structure}
 
