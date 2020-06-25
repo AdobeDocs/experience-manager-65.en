@@ -144,7 +144,10 @@ SOAP-based web services are described using [Web Services Description Language (
 
     * WSDL URL for the web service.
     * Service Endpoint. Specify a value in this field to override the service endpoint mentioned in WSDL.
-    * Select the authentication type — None, OAuth2.0, Basic Authentication, or Custom Authentication — to access the SOAP service, and accordingly provide the details for authentication.
+    * Select the authentication type — None, OAuth2.0, Basic Authentication, Custom Authentication, or X509 Token — to access the SOAP service, and accordingly provide the details for authentication.
+
+      If you select X509 as the Authentication type, specify the KeyStore alias for the X509 certificate and private keys in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication message remains valid, in the **[!UICONTROL Time To Live]** field.  
+      Optionally, if you select to sign the message body or timestamp header or both, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md##set-up-certificates-for-reader-extension-and-encryption-service).
 
 1. Tap **[!UICONTROL Create]** to create the cloud configuration for the SOAP web service.
 
