@@ -63,6 +63,21 @@ In addition to the information above, consider the following:
 
 * For EPS files, metadata writeback is supported in PostScript Document Structuring Convention (PS-Adobe) version 3.0 or later.
 
+## Supported 3D formats {#support-3d-formats}
+
+The following list of 3D formats are supported.
+
+See also [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
+
+| Format | Storage | Versioning | Workflow | Publishing | Access control | Thumbnail preview | 3D preview | Dynamic Media delivery |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| DN | &#10003; | &#10003; | &#10003; | | &#10003; | &#10003; | | |
+| gLB | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; | &#10003; |
+| gLTF | &#10003; | &#10003; | &#10003; | | &#10003; | | &#10003; | |
+| OBJ | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; | &#10003; |
+| STL | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; | &#10003; |
+| USDz |&#10003;| &#10003; | &#10003; | &#10003; | &#10003; | | | &#10003; |
+
 ## Unsupported raster image formats in Dynamic Media {#unsupported-image-formats-dynamic-media}
 
 The following list describes the sub-types of raster image file formats that are *not* supported in Dynamic Media.
