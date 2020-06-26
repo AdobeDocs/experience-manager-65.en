@@ -70,17 +70,17 @@ In [!DNL Experience Manager] a folder has the following components:
 
 The Assets HTTP API includes the following features:
 
-* Retrieve a folder listing.
-* Create a folder.
-* Create an asset.
-* Update asset binary.
-* Update asset metadata.
-* Create an asset rendition.
-* Update an asset rendition.
-* Create an asset comment.
-* Copy a folder or asset.
-* Move a folder or asset.
-* Delete a folder, asset, or rendition.
+* [Retrieve a folder listing](#retrieve-a-folder-listing).
+* [Create a folder](#create-a-folder).
+* [Create an asset](#create-an-asset).
+* [Update asset binary](#update-asset-binary).
+* [Update asset metadata](#update-asset-metadata).
+* [Create an asset rendition](#create-an-asset-rendition).
+* [Update an asset rendition](#update-an-asset-rendition).
+* [Create an asset comment](#create-an-asset-comment).
+* [Copy a folder or asset](#copy-a-folder-or-asset).
+* [Move a folder or asset](#move-a-folder-or-asset).
+* [Delete a folder, asset, or rendition](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
