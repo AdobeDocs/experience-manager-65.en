@@ -171,16 +171,16 @@ You can use the Agent UI to save one or more drafts for each Interactive Communi
 
 Adobe recommends executing these instructions in sequence to successfully save an Interactive Communication as a draft.
 
-### Before saving an Interactive Communication as draft {#before-save-as-draft}
+### Enable the Save as a Draft feature {#before-save-as-draft}
 
-Perform the following tasks before saving an Interactive Communication as a draft:
+The Save as a Draft feature is not enabled, by default. Perform the following steps to enable the feature:
 
 1. Implement the [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) Service Provider Interface (SPI). The SPI enables you to save the draft version of the Interactive Communication to the database with a draft ID as the unique identifier.
 1. Go to `https://'[server]:[port]'/system/console/configMgr`.
 1. Tap **[!UICONTROL Create Correspondence Configuration]**.
 1. Select **[!UICONTROL Enable Save Using CCRDocumentInstanceService]** and tap **[!UICONTROL Save]**.
 
-### Open Agent UI and save an Interactive Communication as draft {save-as-draft-agent-ui}
+### Save an Interactive Communication as draft {save-as-draft-agent-ui}
 
 Perform the following steps to save an Interactive Communication as a draft:
 
@@ -192,9 +192,9 @@ Perform the following steps to save an Interactive Communication as a draft:
 
 Once you save the Interactive Communication as a draft, tap **[!UICONTROL Save Changes]** to save any further changes to the draft.
 
-### Retrieve the saved draft version {#retrieve-draft}
+### Retrieve the draft of an Interactive Communication {#retrieve-draft}
 
-After saving an Interactive Communication as a draft, you can retrieve it again to continue working on it. Retrieve the Interactive Communication using:
+After saving an Interactive Communication as a draft, you can retrieve it to continue working on it. Retrieve the Interactive Communication using:
 
 `https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
 
