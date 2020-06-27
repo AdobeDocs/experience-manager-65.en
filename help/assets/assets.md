@@ -23,7 +23,7 @@ Well integrated into Experience Manager, the Assets capability lets you do the f
 
 ### Experience Manager Assets is integrated with Experience Manager Sites {#aem-assets-fully-integrated-in-cq-wcm}
 
-Assets is fully integrated with Sites and the functionality is available using the DAM icon. The digital assets managed within Assets repository can then be accessed via the content finder when authoring webpages.
+Assets is fully integrated with Sites and all features are seamlessly available. The digital assets managed within Assets repository can then be accessed via the content finder when authoring webpages.
 
 The basic user interface is the same as that of Sites. See [Overview of the Sites](/help/sites-authoring/page-authoring.md) for full details.
 

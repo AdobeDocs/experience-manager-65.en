@@ -12,11 +12,11 @@ In [!DNL Adobe Experience Manager Assets], schemas contain specific fields for s
 
 To view and edit the properties page for an asset, follow these steps:
 
-1. Click the **[!UICONTROL View Properties]** icon from Quick Actions on the asset tile in card view.
+1. Click the **[!UICONTROL View Properties]** option from the quick actions on the asset tile in card view.
 
    ![Quick actions on asset tile](assets/chlimage_1-170.png)
 
-   Alternatively, select an asset and then click the [!UICONTROL Properties] icon from the toolbar.
+   Alternatively, select an asset and then click **[!UICONTROL Properties]** from the toolbar.
 
 1. You can edit the various editable metadata properties under the available tabs. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
 
@@ -61,7 +61,7 @@ To add a metadata schema form, follow these steps:
 
    >[!NOTE]
    >
-   >A lock icon is displayed with the unedited templates. If you customize a template, the lock icon is not displayed.
+   >A lock symbol is displayed with the unedited templates. If you customize a template, it is not locked ![lock closed](assets/do-not-localize/lock_closed_icon.svg).
 
 1. In the dialog, provide the title of the schema form and click **[!UICONTROL Create]** to complete the form creation process.
 
@@ -168,7 +168,7 @@ To delete a form, select a form and click delete.
 
 >[!NOTE]
 >
->* After you delete custom changes to a default form, the lock icon reappears before it on the Metadata Schema interface. It indicates that the form is reverted to its default state.
+>* After you delete custom changes to a default form, the lock ![lock closed](assets/do-not-localize/lock_closed_icon.svg) reappears before the form. It indicates that the form is reverted to its default state.
 >* You cannot delete the default metadata schema forms in [!DNL Assets].
 
 ## Schema forms for MIME types {#schema-forms-for-mime-types}

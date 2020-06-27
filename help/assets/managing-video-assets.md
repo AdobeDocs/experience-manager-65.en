@@ -22,7 +22,7 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 
    You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] buttons are not available in the list view.
 
-1. To preview the video in the asset details page, click the **[!UICONTROL Edit]** icon on the card.
+1. To preview the video in the asset details page, click **[!UICONTROL Edit]** on the card.
 
    The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen.
 

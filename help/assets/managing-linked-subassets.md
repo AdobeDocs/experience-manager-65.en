@@ -98,7 +98,7 @@ Specifically for Microsoft Word documents, execute the **[!UICONTROL DAM Parse W
 
 ## View subassets {#viewing-subassets}
 
-The subassets are displayed only if the subassets are generated and are available for the selected multi-page asset. To view the generated subassets, open the multi-page asset. In the upper-left area of the page, click ![Left rail icon](assets/do-not-localize/aem_leftrail_contentonly.png) and click **[!UICONTROL Subassets]** from the list. When you select **[!UICONTROL Subassets]** from the list. Alternately, use the keyboard shortcut `alt + 5`.
+The subassets are displayed only if the subassets are generated and are available for the selected multi-page asset. To view the generated subassets, open the multi-page asset. In the upper-left area of the page, click ![Option to open left rail](assets/do-not-localize/aem_leftrail_contentonly.png) and click **[!UICONTROL Subassets]** from the list. When you select **[!UICONTROL Subassets]** from the list. Alternately, use the keyboard shortcut `alt + 5`.
 
 ![View subassets for a multi-page asset](assets/view_subassets_simulation.gif)
 
@@ -120,7 +120,7 @@ The following options are available in the toolbar, in the left rail, and in the
 
 * **[!UICONTROL Page Overview]** option displays all the subassets simultaneously.
 
-* **[!UICONTROL Timeline]** option from the left rail after clicking ![left rail icon](assets/do-not-localize/aem_leftrail_contentonly.png) displays the activity stream for the file.
+* **[!UICONTROL Timeline]** option from the left rail after clicking ![Option to open left rail](assets/do-not-localize/aem_leftrail_contentonly.png) displays the activity stream for the file.
 
 ## Best practices and limitation {#best-practice-limitation-tips}
 

@@ -16,7 +16,7 @@ The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets canno
 
 **To download assets,**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]**.
 1. On the Navigation page, tap **[!UICONTROL Assets > Files.]**
 1. Navigate to a folder that contains assets you want to download.
 1. Select the folder or select one or more assets within the folder.
