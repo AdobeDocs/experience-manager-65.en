@@ -54,7 +54,7 @@ For example, the root page of the Italian language copy of the sample hierarchy 
 Experience Manager interface provides a **[!UICONTROL References]** panel that displays a list of language roots that have been created within Assets.
 
 1. In the Assets console, select the language primary for which you want to create language copies.
-1. Click the GlobalNav icon, and choose **[!UICONTROL References]** to open the [!UICONTROL Reference] pane.
+1. From the left rail, select **[!UICONTROL References]** option to open the [!UICONTROL Reference] pane.
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
 

@@ -60,7 +60,7 @@ You can view the Asset Insights scores from the metadata page.
 You can view scores of all assets within a folder simultaneously using **[!UICONTROL Insights View]**.
 
 1. In the Assets user interface, navigate to the folder containing the assets for which you want to view insights.
-1. Click the Layout icon from the toolbar, and then choose **[!UICONTROL Insights View]**.
+1. Click Layout from the toolbar, and then choose **[!UICONTROL Insights View]**.
 1. The page displays usage scores for the assets. Compare the ratings of the various assets and draw insights.
 
 ## Schedule background job {#scheduling-background-job}
