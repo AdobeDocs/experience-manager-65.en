@@ -27,11 +27,11 @@ Therefore, the advanced scoring engine requires enough data to make analysis mea
 
 Setting up advanced scoring is virtually the same as basic scoring:
 
-* Basic and advanced scoring and badging rules are [applied to content](/help/communities/implementing-scoring.md#apply-rules-to-content) in the same manner
+* Basic and advanced scoring and badging rules are [applied to content](/help/communities/implementing-scoring.md#apply-rules-to-content) in the same manner.
 
-    * Basic and advanced scoring and badging rules may be applied to the same content
+    * Basic and advanced scoring and badging rules may be applied to the same content.
 
-* [Enabling badges for components](/help/communities/implementing-scoring.md#enable-badges-for-component) is generic
+* [Enabling badges for components](/help/communities/implementing-scoring.md#enable-badges-for-component) is generic.
 
 The differences in setting up the scoring and badging rules are:
 
@@ -39,23 +39,24 @@ The differences in setting up the scoring and badging rules are:
 * Advanced scoring rules:
 
     * `scoringType` set to `advanced`
-    * requires `stopwords`
+    * Requires `stopwords`
 
 * Advanced badging rules:
 
     * `badgingType` set to `advanced`
     * `badgingLevels` set to **number of expert levels to award**
-    * requires `badgingPaths` array of badges instead of thresholds array mapping points to badges
+    * Requires `badgingPaths` array of badges instead of thresholds array mapping points to badges.
 
 >[!NOTE]
->
->To use advanced scoring and badging capabilities, install the [Expert Identification package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg).
+ >
+ >To use advanced scoring and badging capabilities, install the [Expert Identification package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg).
+ >
 
 ## Configurable Scoring Engine {#configurable-scoring-engine}
 
 The advanced scoring engine provides an OSGi configuration with parameters that affect the advanced scoring algorithm.
 
-![chlimage_1-139](assets/chlimage_1-139.png)
+![chlimage_1-260](assets/chlimage_1-260.png)
 
 * **Scoring weights**
   
@@ -97,7 +98,7 @@ To invoke the advanced scoring engine, the `scoringType`should be set to `advanc
 
 See [Scoring Sub-Rules](/help/communities/implementing-scoring.md#scoring-sub-rules).
 
-![chlimage_1-140](assets/chlimage_1-140.png)
+![chlimage_1-261](assets/chlimage_1-261.png)
 
 ### Stopwords {#stopwords}
 
@@ -117,7 +118,7 @@ The advanced badging rule properties differ from the [basic badging rule propert
 
 Instead of associating points with a badge image, it is only necessary to identify the number of experts allowed and the badge image to award.
 
-![chlimage_1-141](assets/chlimage_1-141.png)
+![chlimage_1-262](assets/chlimage_1-262.png)
 
 <table>
  <tbody>
@@ -159,7 +160,7 @@ Included in this beta release is one reward-based expert badge:
   
   `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-142](assets/chlimage_1-142.png)
+![chlimage_1-263](assets/chlimage_1-263.png)
 
 For the expert badge to appear as a reward for activity, make sure:
 
@@ -192,15 +193,15 @@ Included in the beta release are two advanced scoring rules for the [forum funct
 
 **Notes:**
 
-* Both `rules`and `sub-rules` nodes are of type `cq:Page`
+* Both `rules` and `sub-rules` nodes are of type `cq:Page`.
 
-* `subRules`is an attribute of type String[] on the rule's `jcr:content` node
+* `subRules` is an attribute of type String[] on the rule's `jcr:content` node.
 
-* `sub-rules` may be shared among various scoring rules
+* `sub-rules` may be shared among various scoring rules.
 
-* `rules`should be located in a repository location with read permission for everyone
+* `rules` should be located in a repository location with read permission for everyone.
 
-    * Rule names must be unique regardless of location
+* Rule names must be unique regardless of location.
 
 ### Included Badging Rules {#included-badging-rules}
 
@@ -211,8 +212,7 @@ Included in the release are two advanced badging rules that correspond to the [a
 
 **Notes:**
 
-* `rules` nodes are of type cq:Page
-* `rules` should be located in a repository location with read permission for everyone
-
-    * Rule names must be unique regardless of location
+* `rules` nodes are of type cq:Page.
+* `rules` should be located in a repository location with read permission for everyone.
+* Rule names must be unique regardless of location.
 
