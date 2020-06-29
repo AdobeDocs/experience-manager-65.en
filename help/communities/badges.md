@@ -21,7 +21,7 @@ The Communities Badges console provides the ability to add custom badges which c
 
 ### Badge Visibility {#badge-visibility}
 
-Currently, badges a community member earns or is assigned will appear along with their name and avatar in the following locations :
+Currently, badges a community member earns or is assigned will appear along with their name and avatar in the following locations:
 
 * Profiles
 * [Forums](/help/communities/forum.md)
@@ -29,9 +29,9 @@ Currently, badges a community member earns or is assigned will appear along with
 * [Leaderboards](/help/communities/enabling-leaderboard.md)
 * [Ideation](/help/communities/ideation-feature.md)
 
-In the author environment, to reach the Badges console
+In the author environment, navigate to the Badges console:
 
-* From global navigation, navigate to **[!UICONTROL Tools > Communities > Badges]**
+* From global navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Badges]**
 
 This console displays the badges currently available and from which new badges can be added.
 

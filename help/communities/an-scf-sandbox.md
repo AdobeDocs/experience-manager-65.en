@@ -46,10 +46,10 @@ This tutorial assumes you have one AEM author and one AEM publish instance insta
 
 Following are some helpful links for developers new to the AEM platform:
 
-* [Getting Started](../../help/sites-deploying/deploy.md#getting-started): for deploying AEM instances
+* [Getting Started](../../help/sites-deploying/deploy.md#getting-started): for deploying AEM instances.
 
-    * [The Basics](../../help/sites-developing/the-basics.md): for developers of websites and features
-    * [First Steps for Authors](../../help/sites-authoring/first-steps.md): for authoring page content
+  * [The Basics](../../help/sites-developing/the-basics.md): for developers of websites and features.
+  * [First Steps for Authors](../../help/sites-authoring/first-steps.md): for authoring page content.
 
 ## Using CRXDE Lite Development Environment {#using-crxde-lite-development-environment}
 
