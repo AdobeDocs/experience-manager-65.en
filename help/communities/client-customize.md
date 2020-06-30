@@ -97,19 +97,20 @@ To skin a component:
 The custom styles will now override the default framework styles and the component will be rendered with the new skin.
 
 >[!CAUTION]
->
->Any CSS class name that is prefixed with `scf-js` has a specific use in javascript code. These classes affect the state of a component (for example, toggle from hidden to visible) and should neither be overriden nor removed.
->
->While the `scf-js` classes do not affect styles, the class names may be used in stylesheets with the caveat that, as they control the states of elements, there may be side effects.
+ >
+ >Any CSS class name that is prefixed with `scf-js` has a specific use in javascript code. These classes affect the state of a component (for example, toggle from hidden to visible) and should neither be overriden nor removed.
+ >
+ >While the `scf-js` classes do not affect styles, the class names may be used in stylesheets with the caveat that, as they control the states of elements, there may be side effects.
+ >
 
 ## Extending Javascript {#extending-javascript}
 
-To extend a components Javascript implementation, you need only
+To extend a components Javascript implementation, you need to:
 
-1. Create a component for you app with a jcr:resourceSuperType set to the value of the extended component's jcr:resourceType, e.g. social/forum/components/hbs/forum
-1. Examine the default SCF component's Javascript to determine what methods need to be registered using SCF.registerComponent()
-1. Either copy the extended component's Javascript or start from scratch
-1. Extend the method
+1. Create a component for you app with a jcr:resourceSuperType set to the value of the extended component's jcr:resourceType, e.g. social/forum/components/hbs/forum.
+1. Examine the default SCF component's Javascript to determine what methods need to be registered using SCF.registerComponent().
+1. Either copy the extended component's Javascript or start from scratch.
+1. Extend the method.
 1. Use SCF.registerComponent() to register all methods with either the defaults or the customized objects and views.
 
 ### forum.js: Sample Extension of Forum - HBS  {#forum-js-sample-extension-of-forum-hbs}
