@@ -38,10 +38,11 @@ This section of the documentation describes:
 * Configuration settings for blog components
 
 >[!NOTE]
->
->The components `Journal`and `Journal Sidebar` are titled `Blog` and `Blog Sidebar`.
->
->The blog feature found in AEM 6.0 and earlier releases is now removed. It was based on a template and only allowed authors to create content in the author environment.
+ >
+ >The components `Journal` and `Journal Sidebar` are titled `Blog` and `Blog Sidebar`.
+ >
+ >The blog feature found in AEM 6.0 and earlier releases is now removed. It was based on a template and only allowed authors to create content in the author environment.
+ >
 
 ## Adding Blog Components to a Page {#adding-blog-components-to-a-page}
 
@@ -54,19 +55,21 @@ and drag them into place on a page where the blog should appear.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/blog-developer-basics.md#essentials-for-client-side) are included, this is how the `Blog`component will appear :
+When the [required client-side libraries](/help/communities/blog-developer-basics.md#essentials-for-client-side) are included, this is how the `Blog` component will appear :
 
-![chlimage_1-229](assets/chlimage_1-229.png)
+![chlimage_1-147](assets/chlimage_1-147.png)
 
 And how the `Blog Sidebar` will appear :
 
-![chlimage_1-230](assets/chlimage_1-230.png)
+![chlimage_1-148](assets/chlimage_1-148.png)
 
 ### Configuring Blog {#configuring-blog}
 
 Select the placed `Blog` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-231](assets/chlimage_1-231.png) ![Blog settings](assets/blog-configure.png)
+![chlimage_1-149](assets/chlimage_1-149.png) 
+
+![Blog settings](assets/blog-configure.png)
 
 #### Settings tab {#settings-tab}
 
@@ -105,9 +108,10 @@ Under the **Settings** tab, specify the basic features of the blog :
   The blog title to display on the page.
 
 >[!NOTE]
->
->The Journal Title is used to automatically create URL for the blog.
->Maximum 50 characters (with 5 characters additional for uniqueness) are used from the journal title you specify here to create URL for the blog.
+ >
+ >The Journal Title is used to automatically create URL for the blog.
+ >Maximum 50 characters (with 5 characters additional for uniqueness) are used from the journal title you specify here to create URL for the blog.
+ >
 
 * **Journal Description** 
   
@@ -159,7 +163,7 @@ Under the **Settings** tab, specify the basic features of the blog :
 
 * **Allow Users to Delete Comments and Topics**
   
-  If checked, allow members to delete the comments and blog entries they posted. Default is** **unchecked.
+  If checked, allow members to delete the comments and blog entries they posted. Default is unchecked.
 
 * **Allow Following**
   
@@ -205,7 +209,7 @@ Under the **User Moderation** tab, specify the moderation settings :
 
 * **Flag Posts**
   
-  If checked, allow members to flag others' topics or comments as inappropriate. Default is unchecked**.**
+  If checked, allow members to flag others' topics or comments as inappropriate. Default is unchecked.
 
 * **Flag Reason List**
   
@@ -213,7 +217,7 @@ Under the **User Moderation** tab, specify the moderation settings :
 
 * **Custom Flag Reason**
   
-  If checked, allow members to enter their own reason for flagging a topic or comment as inappropriate. Default is unchecked**.**
+  If checked, allow members to enter their own reason for flagging a topic or comment as inappropriate. Default is unchecked.
 
 * **Moderation Threshold**
   
@@ -229,7 +233,7 @@ Under the **Tag field** tab, specify the which tags may be applied if **Allow Ta
 
 * **Allowed Namespaces**
   
-  Relevant if `Allow Tagging` is checked under the **Settings **tab. The tags which may be applied are limited to those within the namespace categories checked. The list of namespaces includes "Standard Tags" (the default namespace) as well as "Include All Tags". Default is none checked, which means all namespaces are allowed.
+  Relevant if `Allow Tagging` is checked under the **Settings** tab. The tags which may be applied are limited to those within the namespace categories checked. The list of namespaces includes "Standard Tags" (the default namespace) as well as "Include All Tags". Default is none checked, which means all namespaces are allowed.
 
 * **Suggestion Limit**
   
@@ -297,7 +301,7 @@ The blog articles will appear under the appropriate tab (Published, Drafts or Sc
 
 When the signed in user has moderator or administrator privileges, they are able to perform [moderation tasks](/help/communities/moderate-ugc.md) (as permitted by the configuration of the component) on all blog articles and comments posted to a blog.
 
-![chlimage_1-232](assets/chlimage_1-232.png)
+![chlimage_1-152](assets/chlimage_1-152.png)
 
 #### Members {#members}
 
@@ -312,13 +316,15 @@ Specifically, they may:
 * Delete their own blog article or comment
 * Flag others' blog articles or comments
 
-![chlimage_1-233](assets/chlimage_1-233.png) ![chlimage_1-234](assets/chlimage_1-234.png)
+![chlimage_1-153](assets/chlimage_1-153.png) 
+
+![chlimage_1-154](assets/chlimage_1-154.png)
 
 #### Anonymous {#anonymous}
 
 Site visitors who are not signed in may only read posted blog articles and comments, translate them if supported, but may not add a blog article or comment nor flag others' articles or comments.
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+![chlimage_1-155](assets/chlimage_1-155.png)
 
 ## Additional Information {#additional-information}
 
