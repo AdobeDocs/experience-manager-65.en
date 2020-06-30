@@ -26,10 +26,11 @@ When authoring page content, if the underlying template permits changes to the d
 The available Communities components are listed [here](author-communities.md#available-communities-components).
 
 >[!NOTE]
->
->For general authoring information, view the [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
->
->If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md).
+ >
+ >For general authoring information, view the [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
+ >
+ >If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md).
+ >
 
 ### Entering Design Mode {#entering-design-mode}
 
