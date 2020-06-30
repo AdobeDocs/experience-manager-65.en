@@ -22,7 +22,7 @@ The calendar feature supports providing community event information in a calenda
 This section of the documentation describes
 
 * Adding the calendar feature to an AEM site
-* Configuration settings for `Calendar`components
+* Configuration settings for `Calendar` components
 
 ## Adding a Calendar to a Page {#adding-a-calendar-to-a-page}
 
@@ -36,13 +36,14 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) are included, this is how the `Calendar` component will appear.
 
-![chlimage_1-147](assets/chlimage_1-147.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Configuring Calendar {#configuring-calendar}
 
-Select the placed `Calendar`component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `Calendar` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-148](assets/chlimage_1-148.png) ![chlimage_1-149](assets/chlimage_1-149.png)
+![chlimage_1-113](assets/chlimage_1-113.png) 
+![chlimage_1-114](assets/chlimage_1-114.png)
 
 #### Settings tab {#settings-tab}
 
@@ -130,7 +131,7 @@ Under the **User Moderation** tab, specify how the posted topics and replies (us
 
 * **Flag Posts**
   
-  If checked, allow members to flag others' events or comments as inappropriate. Default is checked**.**
+  If checked, allow members to flag others' events or comments as inappropriate. Default is checked.
 
 * **Flag Reason List**
   
@@ -138,7 +139,7 @@ Under the **User Moderation** tab, specify how the posted topics and replies (us
 
 * **Custom Flag Reason**
   
-  If checked, allow members to enter their own reason for flagging an event or comment as inappropriate. Default is unchecked**.**
+  If checked, allow members to enter their own reason for flagging an event or comment as inappropriate. Default is unchecked.
 
 * **Moderation Threshold**
   
@@ -161,8 +162,9 @@ Under the **Tag field** tab, the tags which may be applied, if allowed under the
   Enter the number of tags to be displayed as a suggestion to the member posting to the forum. Default is **-**1 (no limits).
 
 >[!NOTE]
->
->Visit [Administering Tags](/help/sites-administering/tags.md) to learn how to add a new tag namespace (taxonomy).
+ >
+ >Visit [Administering Tags](/help/sites-administering/tags.md) to learn how to add a new tag namespace (taxonomy).
+ >
 
 #### Translation tab {#translation-tab}
 
@@ -184,7 +186,7 @@ Other abilities depend on whether the site visitor is a moderator, administrator
 
 When the signed in user has moderator or administrator privileges, they are able to perform [moderation tasks](/help/communities/moderate-ugc.md) (as permitted by the configuration of the component) on all calendar events and comments posted to an event.
 
-![chlimage_1-150](assets/chlimage_1-150.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 #### Members {#members}
 
@@ -198,13 +200,15 @@ Specifically, they may:
 * Delete their own calendar event or comment
 * Flag others' calendar events or comments
 
-![chlimage_1-151](assets/chlimage_1-151.png) ![chlimage_1-152](assets/chlimage_1-152.png)
+![chlimage_1-116](assets/chlimage_1-116.png) 
+
+![chlimage_1-117](assets/chlimage_1-117.png)
 
 #### Anonymous {#anonymous}
 
 Site visitors who are not signed in may only read posted calendar events, translate them if supported, but may not add an event or comment nor flag others' events or comments.
 
-![chlimage_1-153](assets/chlimage_1-153.png)
+![chlimage_1-118](assets/chlimage_1-118.png)
 
 ## Additional Information {#additional-information}
 
