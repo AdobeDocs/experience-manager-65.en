@@ -8,7 +8,7 @@ contentOwner: AG
 
 You can configure Rich Text Editor in Adobe Experience Manager so that it has multiple in-place editors. When configured you can select the appropriate content and open the appropriate editor.
 
-![chlimage_1-8](assets/rte-inplace-editor.png)
+![A specific in-place editor](assets/rte-inplace-editor.png)
 
 ## Configure multiple editors {#configure-multiple-editors}
 
