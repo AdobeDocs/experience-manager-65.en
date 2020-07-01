@@ -26,8 +26,9 @@ For an overview and getting started tutorials, visit:
 * [Getting Started with AEM Communities for Enablement](getting-started-enablement.md)
 
 >[!NOTE]
->
->It is highly recommended to keep up-to-date with the [latest releases](deploy-communities.md#latest-releases).
+ > 
+ >It is highly recommended to keep up-to-date with the [latest releases](deploy-communities.md#latest-releases).
+ >
 
 ## Recommended Deployments {#recommended-deployments}
 
@@ -36,13 +37,13 @@ For an overview and getting started tutorials, visit:
 
 ## Social Component Framework {#social-component-framework}
 
-* [Social Component Framework](scf.md): overview of framework and APIs
-* [SCF Handlebars Helpers](handlebars-helpers.md): default helpers and how to write custom helpers
-* [Client-side Customization](client-customize.md): customizing code that runs in browser
-* [Server-side Customization](server-customize.md): customizing code that runs on server
-* [Storage Resource Provider (SRP)](srp.md): overview of community content storage
-* [Coding Guidelines](code-guide.md): guidelines, tips & tricks
-* [Community Components guide](components-guide.md): interactive development tool
+* [Social Component Framework](scf.md): overview of framework and APIs.
+* [SCF Handlebars Helpers](handlebars-helpers.md): default helpers and how to write custom helpers.
+* [Client-side Customization](client-customize.md): customizing code that runs in browser.
+* [Server-side Customization](server-customize.md): customizing code that runs on server.
+* [Storage Resource Provider (SRP)](srp.md): overview of community content storage.
+* [Coding Guidelines](code-guide.md): guidelines, tips & tricks.
+* [Community Components guide](components-guide.md): interactive development tool.
 
 ## Component, Function and Feature Essentials {#component-function-and-feature-essentials}
 

@@ -28,8 +28,9 @@ When [UGC storage](working-with-srp.md) is configured to be a common store share
 In the author environment, after signing in with administrator privileges, the `Communities` consoles are available from the navigation and tools consoles.
 
 >[!NOTE]
->
->In the publish environment, a [community site](sites-console.md) will display an `Administration` menu item when the signed in member has appropriate privileges.
+ >
+ >In the publish environment, a [community site](sites-console.md) will display an `Administration` menu item when the signed in member has appropriate privileges.
+ >
 
 ## Global navigation panel {#global-navigation-panel}
 
@@ -68,4 +69,4 @@ To access the various Communities consoles, from global navigation select **navi
 
 ## Tools Console {#tools-console}
 
-To access [Communities Tools](tools.md) (formerly the administration console), from global navigation: **[!UICONTROL Tools > Communities]**
+To access [Communities Tools](tools.md) (formerly the administration console), from global navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**
