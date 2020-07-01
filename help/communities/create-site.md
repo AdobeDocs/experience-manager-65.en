@@ -218,10 +218,7 @@ From left to right they are:
  >1. Select **[!UICONTROL Default Agent (publish)]**.
  >1. Next to **[!UICONTROL Settings]**, select **[!UICONTROL Edit]**.
  >1. In pop-up dialog for Agent Settings, select **[!UICONTROL Transport]** tab.
- >1. In URI, change the port number, 4503, to the desired port number >
- >   * For example, to use port 6103:
- >     https://localhost:6103/bin/receive?sling:authRequestLogin=1
- >
+ >1. In URI, change the port number, 4503, to the desired port number. For example, to use port 6103: https://localhost:6103/bin/receive?sling:authRequestLogin=1
  >1. Select **[!UICONTROL OK]**.
  >1. (Optional) Select **[!UICONTROL Clear]** or **[!UICONTROL Force Retry]** to reset the replication queue.
  >
