@@ -255,7 +255,7 @@ For investigative purposes, using JSRP for the example, the base folder containi
 
 * `/content/usergenerated/asi/jcr`
 
-Followed by the path to the user's profile, ending in a badges folder, such as
+Followed by the path to the user's profile, ending in a badges folder, such as:
 
 * `/home/users/community/w271OOup2Z4DjnOQrviv/profile/badges`
 
@@ -269,7 +269,7 @@ Followed by the path to the user's profile, ending in a badges folder, such as
 
 ## Additional Information {#additional-information}
 
-To display a sorted list of members based on points :
+To display a sorted list of members based on points:
 
 * [Leaderboard function](/help/communities/functions.md#leaderboard-function) for inclusion in a community site or group template.
 * [Leaderboard component](/help/communities/enabling-leaderboard.md), the featured component of the Leaderboard function, for page authoring.

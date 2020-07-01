@@ -29,10 +29,10 @@ The Community Components site is accessed by browsing to
 
 Interactions with the Communities components will vary depending on:
 
-* The server (author or publish)
-* Whether or not the site visitor is signed in
-* If signed in, the privileges assigned to the member
-* Whether or not the default SRP, [JSRP](jsrp.md), is in use
+* The server (author or publish).
+* Whether or not the site visitor is signed in.
+* If signed in, the privileges assigned to the member.
+* Whether or not the default SRP, [JSRP](jsrp.md), is in use.
 
 On author, to enter edit mode, insert either `editor.html` or `cf#` as the first path segment after the server name:
 
@@ -45,16 +45,17 @@ On author, to enter edit mode, insert either `editor.html` or `cf#` as the first
   [https://&lt;server&gt;:&lt;port&gt;/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 
 >[!NOTE]
->
->On author in Edit mode, the links on a page are not active.
->
->To navigate to a component page, first select Preview mode to activate the links.
->
->With the component page displayed in the browser, return to Edit mode in order to open the component's edit dialog.
->
->For general authoring information, view the [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
->
->If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md).
+ >
+ >On author in Edit mode, the links on a page are not active.
+ >
+ >To navigate to a component page, first select Preview mode to activate the links.
+ >
+ >With the component page displayed in the browser, return to Edit mode in order to open the component's edit dialog.
+ >
+ >For general authoring information, view the [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
+ >
+ >If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md).
+ >
 
 ### Home Page {#home-page}
 
