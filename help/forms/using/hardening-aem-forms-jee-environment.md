@@ -451,6 +451,16 @@ This table describes auditing and logging techniques you can use to reduce your 
  </tbody> 
 </table>
 
+### Enable a non-administrator user to run PDF Generator
+
+You can enable a non-administrator user to use PDF Generator. Normally, only users with administrative privileges can use PDF Generator. Perform the following steps to enable a non-administrator user to run PDF Generator:
+
+1. Create an environment variable name PDFG_NON_ADMIN_ENABLED.
+
+1. Set value of the variable to TRUE.
+
+1. Restart the AEM forms instance.
+
 ## Configuring AEM Forms on JEE for access beyond the enterprise {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
 After you successfully install AEM Forms on JEE, it is important to periodically maintain the security of your environment. This section describes the tasks that are recommended to maintain the security of your AEM Forms on JEE production server.
