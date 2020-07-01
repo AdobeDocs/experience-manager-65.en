@@ -19,7 +19,7 @@ In this one-stop shop newsletter, discover valuable knowledge-building resources
 
 ## Missed an issue of the Dynamic Media Newsletter?
 
-* **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+<!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
     In this issue:
 
@@ -32,7 +32,7 @@ In this one-stop shop newsletter, discover valuable knowledge-building resources
     * Look what’s new in Experience Manager Innovation.
     * Build your Experience Manager skills *live* with the Adobe pros.
     * Connect with the Adobe Experience Manager Community.
-    * Fast-track your Adobe expertise with Adobe Experience League.
+    * Fast-track your Adobe expertise with Adobe Experience League. -->
 
 * **[April 2020, Issue 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
     

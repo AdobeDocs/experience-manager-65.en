@@ -44,7 +44,7 @@ The [Storage Configuration console](/help/communities/srp-config.md) allows for 
 
 * From global navigation, navigate to **[!UICONTROL Tools > Communities > Storage Configuration]** and select **[!UICONTROL Adobe Storage Resource Provider (ASRP)]**.
 
-![chlimage_1-30](assets/chlimage_1-30.png)
+![asrp-default](assets/asrp-default.png)
 
 The following information comes from the provisioning process:
 
