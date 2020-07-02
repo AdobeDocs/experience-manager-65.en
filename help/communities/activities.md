@@ -38,17 +38,17 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/essentials-activities.md#essentials-for-client-side) are included, this is how the `Activity Streams` component will appear :
 
-![chlimage_1-24](assets/chlimage_1-24.png)
+![chlimage_1-195](assets/chlimage_1-195.png)
 
 ### Configuring Activity Streams {#configuring-activity-streams}
 
 Select the placed `Activity Streams` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-25](assets/chlimage_1-25.png)
+![chlimage_1-494](assets/chlimage_1-494.png)
 
 Under the **User Activities** tab, specify which activities to display :
 
-![chlimage_1-26](assets/chlimage_1-26.png)
+![user-activities](assets/user-activities.png)
 
 * **Max number of activities**
 
@@ -74,22 +74,22 @@ Under the **User Activities** tab, specify which activities to display :
 
 Components must be configured to enable following. Features that allow following are [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md), and [comments](/help/communities/comments.md).
 
-![chlimage_1-27](assets/chlimage_1-27.png)
+![chlimage_1-5](assets/chlimage_1-5.png)
 
 The **Follow** button provides a means to follow entries as activities, [notifications](/help/communities/notifications.md), or [subscriptions](/help/communities/subscriptions.md). Each time the **Follow** button is selected, it is possible to toggle on or off a selection. The `Email Subscriptions` selection is only present when configured.
 
 If any method of following is selected, the text of the button changes to **Following**. For convenience, it is possible to select `Unfollow All` to toggle off all methods.
 
-The **Follow** button will appear
+The **Follow** button will appear:
 
-* when viewing another member's profile
-* on a main feature page, such as forums, QnA, and blogs
+* On viewing another member's profile.
+* On a main feature page, such as forums, QnA, and blogs.
 
-    * follows all activity for that general feature
+    * Follows all activity for that general feature.
 
-* for a specific entry, such as a forum topic, QnA question, or blog article
+* For a specific entry, such as a forum topic, QnA question, or blog article.
 
-    * follows all activity for that specific entry
+    * Follows all activity for that specific entry.
 
 ### Additional Information {#additional-information}
 

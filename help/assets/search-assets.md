@@ -24,7 +24,7 @@ mini-toc-levels: 1
 | [Limitations](#limitations) and [Tips](#tips) | | |
 | [Illustrated examples](#samples)| | |
 
-Search for assets using the Omnisearch field at the top of the [!DNL Experience Manager] web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], click search icon in top bar, enter search keyword, and press return. Alternatively, use the keyword shortcut / (forward slash) to open the Omnisearch field. `Location:Assets` is pre-selected to limit the searches to DAM assets. [!DNL Experience Manager] provides suggestions as your start typing a search keyword.
+Search for assets using the Omnisearch field at the top of the [!DNL Experience Manager] web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], click search in top bar, enter search keyword, and press return. Alternatively, use the keyword shortcut / (forward slash) to open the Omnisearch field. `Location:Assets` is pre-selected to limit the searches to DAM assets. [!DNL Experience Manager] provides suggestions as your start typing a search keyword.
 
 Use the **[!UICONTROL Filters]** panel to narrow your search by filtering search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. Your administrators can customize the Filters panel and add or remove search predicates using search facets. The [!UICONTROL File Type] filter in the [!UICONTROL Filters] panel has mixed-state checkboxes. Therefore, unless you select all the nested predicates (or formats) the first-level checkboxes are partially checked.
 

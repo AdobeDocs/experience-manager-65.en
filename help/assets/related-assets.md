@@ -30,7 +30,7 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. To relate another asset with the asset you selected, click the **[!UICONTROL Relate]** icon from the toolbar.
+1. To relate another asset with the asset you selected, click **[!UICONTROL Relate]** from the toolbar.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -46,7 +46,7 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Click the **[!UICONTROL Confirm]** icon.
+1. Click **[!UICONTROL Confirm]**.
 1. Click **[!UICONTROL OK]** to close the dialog. Depending on your choice of relationship in step 3, the related asset is listed under under an appropriate category in the **[!UICONTROL Related]** section. For example, if the asset you related is the source file for the current asset, it is listed under **[!UICONTROL Source]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)

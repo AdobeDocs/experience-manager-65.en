@@ -181,7 +181,26 @@ To run the application server on which AEM Forms on JEE is deployed, using a spe
     * Deny log on locally
     * Log on as Service (should be already set)
 
-1. Give the new user account Read & Execute, Write, Modify, List Folder Contents, and Read permissions to complete AEM Forms on JEE installation directory and Global Document Storage (GDS) directory. The location of the GDS directory is configured manually during the AEM Forms installation process. If the location setting remains empty during installation, the location defaults to a directory under the application server installation at [JBoss root]/server/[type]/svcnative/DocumentStorage.
+1. Give the new user account modify permissions on the following directories: 
+    * **Global Document Storage (GDS) directory**: The location of the GDS directory is configured manually during the AEM Forms installation process. If the location setting remains empty during installation, the location defaults to a directory under the application server installation at `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+    * **CRX-Repository directory**: The default location is `[AEM-Forms-installation-location]\crx-repository`  
+    * **AEM Forms temporary directories**:  
+        * (Windows) TMP or TEMP path as set in the environment variables
+        * (AIX, Linux, or Solaris) Logged-in user’s home directory
+        On UNIX-based systems, a non-root user can use the following directory as the temporary directory:
+        * (Linux) /var/tmp or /usr/tmp
+        * (AIX) /tmp or /usr/tmp
+        * (Solaris) /var/tmp or /usr/tmp
+1. Give the new user account write permissions on the following directories:
+    * [JBoss-directory]\standalone\deployment
+    * [JBoss-directory]\standalone\
+    * [JBoss-directory]\bin\
+    
+    >[!NOTE]
+    >
+    > The default installation location of JBoss Application Server: 
+    > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+    > * Linux: /opt/jboss/
 1. Start the application server.
 
 **Disabling the Configuration Manager bootstrap servlet**
@@ -431,6 +450,16 @@ This table describes auditing and logging techniques you can use to reduce your 
   </tr> 
  </tbody> 
 </table>
+
+### Enable a non-administrator user to run PDF Generator
+
+You can enable a non-administrator user to use PDF Generator. Normally, only users with administrative privileges can use PDF Generator. Perform the following steps to enable a non-administrator user to run PDF Generator:
+
+1. Create an environment variable name PDFG_NON_ADMIN_ENABLED.
+
+1. Set value of the variable to TRUE.
+
+1. Restart the AEM forms instance.
 
 ## Configuring AEM Forms on JEE for access beyond the enterprise {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
@@ -970,7 +999,26 @@ The AEM Forms on JEE turnkey installation sets up a service account, by default,
     * Deny log on locallyxx
     * Log on as Service (should be already set)
 
-1. Give the new user account Read & Execute, Write, Modify, List Folder Contents, and Read permissions to complete AEM Forms on JEE installation directory and Global Document Storage (GDS) directory. The location of the GDS directory is configured manually during the AEM Forms installation process. If the location setting remains empty during installation, the location defaults to a directory under the application server installation at [JBoss root]/server/[type]/svcnative/DocumentStorage.
+1. Give the new user account modify permissions on the following directories: 
+    * **Global Document Storage (GDS) directory**: The location of the GDS directory is configured manually during the AEM Forms installation process. If the location setting remains empty during installation, the location defaults to a directory under the application server installation at `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+    * **CRX-Repository directory**: The default location is `[AEM-Forms-installation-location]\crx-repository`  
+    * **AEM Forms temporary directories**:  
+        * (Windows) TMP or TEMP path as set in the environment variables
+        * (AIX, Linux, or Solaris) Logged-in user’s home directory
+        On UNIX-based systems, a non-root user can use the following directory as the temporary directory:
+        * (Linux) /var/tmp or /usr/tmp
+        * (AIX) /tmp or /usr/tmp
+        * (Solaris) /var/tmp or /usr/tmp
+1. Give the new user account write permissions on the following directories:
+    * [JBoss-directory]\standalone\deployment
+    * [JBoss-directory]\standalone\
+    * [JBoss-directory]\bin\
+    
+    >[!NOTE]
+    >
+    > The default installation location of JBoss Application Server: 
+    > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+    > * Linux: /opt/jboss/.
  
 1. Start the application server service.
 

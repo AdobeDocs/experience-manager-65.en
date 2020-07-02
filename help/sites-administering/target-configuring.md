@@ -42,7 +42,7 @@ The following property values are used in the Provisioned Target Configuration c
 
 >[!NOTE]
 >
->In AEM 6.3, you can select the Target Library file, [AT.JS](https://marketing.adobe.com/resources/help/en_US/target/ov2/c_target-atjs-implementation.html), which is a new implementation library for Adobe Target that is designed for both typical web implementations and single-page applications.
+>In AEM 6.3, you can select the Target Library file, [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html), which is a new implementation library for Adobe Target that is designed for both typical web implementations and single-page applications.
 >
 >AT.js offers several improvements over the mbox.js library:
 >
@@ -50,8 +50,6 @@ The following property values are used in the Provisioned Target Configuration c
 >* Improved security
 >* Better implementation options for single-page applications
 >* AT.js contains the components that were included in target.js, so there is no longer a call to target.js
->
->See [Target release notes](https://marketing.adobe.com/resources/help/en_US/target/rn/201604.html) for more information.
 
 ### Provisioned Target Framework Properties {#provisioned-target-framework-properties}
 
@@ -94,7 +92,7 @@ Manually integrate with Adobe Target instead of using the opt-in wizard.
 
 >[!NOTE]
 >
->The Target Library file, [AT.JS](https://marketing.adobe.com/resources/help/en_US/target/ov2/c_target-atjs-implementation.html), is a new implementation library for Adobe Target that is designed for both typical web implementations and single-page applications. Adobe recommends that you use AT.js instead of mbox.js as the client library.
+>The Target Library file, [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html), is a new implementation library for Adobe Target that is designed for both typical web implementations and single-page applications. Adobe recommends that you use AT.js instead of mbox.js as the client library.
 >
 >AT.js offers several improvements over the mbox.js library:
 >
@@ -102,8 +100,6 @@ Manually integrate with Adobe Target instead of using the opt-in wizard.
 >* Improved security
 >* Better implementation options for single-page applications
 >* AT.js contains the components that were included in target.js, so there is no longer a call to target.js
->
->See [Target release notes](https://marketing.adobe.com/resources/help/en_US/target/rn/201604.html) for more information.
 >
 >You can select AT.js or mbox.js in the **Client library** drop-down menu.
 
@@ -207,7 +203,7 @@ Your framework is created. To replicate the framework to the publish instance, u
 
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-authoring/activitylib.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/target/c_manage_content.html).
+Associate your [AEM activities](/help/sites-authoring/activitylib.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://docs.adobe.com/content/help/en/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >

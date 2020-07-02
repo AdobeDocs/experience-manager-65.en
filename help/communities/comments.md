@@ -21,16 +21,17 @@ The comments feature is used to allow signed-in site visitors (members) to share
 
 The document describes:
 
-* Adding `Comments`to a page.
-* Configuration settings for the `Comments`component.
+* Adding `Comments` to a page.
+* Configuration settings for the `Comments` component.
 
 >[!NOTE]
->
->Anonymous posting of a comment is not supported. Site visitors must register (become a member) and sign in to participate.
+ >
+ >Anonymous posting of a comment is not supported. Site visitors must register (become a member) and sign in to participate.
+ >
 
 ### Adding Comments to a Page {#adding-comments-to-a-page}
 
-To add a `Comments`component to a page in author mode, use the component browser to locate
+To add a `Comments` component to a page in author mode, use the component browser to locate
 
 * `Communities / Comments`
 
@@ -38,19 +39,22 @@ and drag it into place on a page, such as a position relative to the feature for
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/essentials-comments.md#essentials-for-client-side) are included, this is how the `Comments`component appears.
+When the [required client-side libraries](/help/communities/essentials-comments.md#essentials-for-client-side) are included, this is how the `Comments` component appears.
 
-![chlimage_1-143](assets/chlimage_1-143.png)
+![chlimage_1-428](assets/chlimage_1-428.png)
 
 >[!NOTE]
->
->Only one `Comments`component may exist on a page. Be aware that several Communities features already include comments, such as a blog, calendar, forum, QnA, and reviews.
+ >
+ >Only one `Comments` component may exist on a page. Be aware that several Communities features already include comments, such as a blog, calendar, forum, QnA, and reviews.
+ >
 
 ### Configuring Comments {#configuring-comments}
 
 Select the placed `Comments` component to access and select the `Configure` icon which opens the edit dialog.
 
-![configure icon](assets/configure.png) ![commentssettings](assets/commentssettings.png)
+![configure icon](assets/configure.png) 
+
+![commentssettings](assets/commentssettings.png)
 
 #### Comments tab {#comments-tab}
 
@@ -154,19 +158,19 @@ By changing the Comment Resource Type, the comment system no longer generates an
 
 Once the custom resource types are known, enter [Design Mode](/help/sites-authoring/default-components-designmode.md) and double click the placed `Comments` component to open a dialog with an extra tab.
 
-Under the **Resource Types** tab, specify the custom resourceType for new instances of the `Comments or Voting`components:
+Under the **Resource Types** tab, specify the custom resourceType for new instances of the `Comments or Voting` components:
 
-![chlimage_1-144](assets/chlimage_1-144.png)
+![chlimage_1-429](assets/chlimage_1-429.png)
 
 * **Comment Resource Type**
 
-  Navigate to the resourceType of an extended `comment`component (single comment) in /apps. For example, `/apps/social/commons/components/hbs/comments/comment`
+  Navigate to the resourceType of an extended `comment` component (single comment) in /apps. For example, `/apps/social/commons/components/hbs/comments/comment`
 
   This resource identifies the resourceType of the UGC created when a visitor posts a comment.
 
 * **Voting Resource Type**
 
-  Navigate to the resourceType of an extended `voting`component in /apps. For example, `/apps/social/components/hbs/voting`
+  Navigate to the resourceType of an extended `voting` component in /apps. For example, `/apps/social/components/hbs/voting`
 
   This resource identifies the resource type of the UGC created when a visitor posts a vote.
 

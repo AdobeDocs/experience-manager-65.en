@@ -67,7 +67,7 @@ If you do not need a workflow or versioning for your assets, you should upload y
 
 **To configure universal presets**:
 
-1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Dynamic Media Classic]** configuration and click **[!UICONTROL Edit]**.
+1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Dynamic Media Classic]** configuration and click **[!UICONTROL Edit.]**
 1. Select the **[!UICONTROL Video]** tab.
 
    >[!NOTE]
@@ -144,8 +144,8 @@ The various video encodings are created according to the Dynamic Media Classic e
 >
 >New video profiles and changes to them must be activated to publish.
 
-1. In AEM, go to **[!UICONTROL Tools]**, then select **[!UICONTROL Configuration Console]**. In the Configuration Console navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]** in the navigation tree.
-1. Create a new Dynamic Media Classic Video Profile. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Give the new video profile page a name and click **[!UICONTROL Create]**.
+1. In AEM, go to **[!UICONTROL Tools]**, then select **[!UICONTROL Configuration Console.]** In the Configuration Console navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Profiles]** in the navigation tree.
+1. Create a new Dynamic Media Classic Video Profile. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Give the new video profile page a name and click **[!UICONTROL Create.]**
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 

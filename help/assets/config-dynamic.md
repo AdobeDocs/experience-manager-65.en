@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 
 ---
 
-# Configuring Dynamic Media - Hybrid mode{#configuring-dynamic-media-hybrid-mode}
+# Configuring Dynamic Media - Hybrid mode {#configuring-dynamic-media-hybrid-mode}
 
 Dynamic Media-Hybrid needs to be enabled and configured for use. Depending on your use case, Dynamic Media has several [supported configurations](#supported-dynamic-media-configurations).
 
@@ -136,7 +136,7 @@ You may choose to implement Dynamic Media only for imaging, only for video, or f
 
 >[!NOTE]
 >
->Enabling dynamic media via the run mode replaces the functionality in AEM 6.1 and AEM 6.0 where you enabled dynamic media by setting the `dynamicMediaEnabled` flag to **[!UICONTROL true]**. This flag has no functionality in AEM 6.2 and later. In addition, you do not need to restart the quickstart to enable dynamic media.
+>Enabling dynamic media via the run mode replaces the functionality in AEM 6.1 and AEM 6.0 where you enabled dynamic media by setting the `dynamicMediaEnabled` flag to **[!UICONTROL true.]** This flag has no functionality in AEM 6.2 and later. In addition, you do not need to restart the quickstart to enable dynamic media.
 
 By enabling Dynamic Media, the dynamic media features will be available in the UI and every uploaded image asset receives a *cqdam.pyramid.tiff* rendition that is used for fast delivery of dynamic image renditions. Those PTIFFs have significant advantages including (1) the ability to manage only a single primary source image and generate infinite renditions on-the-fly without any additional storage and (2) the ability to use interactive visualization such as zoom, pan, spin, and so on.
 
@@ -265,12 +265,12 @@ You need to set up replication authentication on author in order to replicate im
 **To set up authentication**
 
 1. Contact Customer Care for your KeyStore file and password if you do not already have this. This is part of provisioning and it will associate the keys to your account.
-1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Security > Users]**.
+1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Security > Users.]**
 1. On the User Management page, navigate to the **[!UICONTROL dynamic-media-replication]** user, then tap to open.
 
    ![dm-replication](assets/dm-replication.png)
 
-1. In the Edit User Settings For dynamic-media-replication page, tap the **[!UICONTROL Keystore]** tab, then click **[!UICONTROL Create KeyStore]**.
+1. In the Edit User Settings For dynamic-media-replication page, tap the **[!UICONTROL Keystore]** tab, then click **[!UICONTROL Create KeyStore.]**
 
    ![dm-replication-keystore](assets/dm-replication-keystore.png)
 
@@ -285,7 +285,7 @@ You need to set up replication authentication on author in order to replicate im
 1. On the **[!UICONTROL Edit User Settings For dynamic-media-replication]** page, expand the **Add Private Key from KeyStore file** area and add the following (see the images that follow):
 
     * In the **[!UICONTROL New Alias]** field, enter the name of an alias that you will later use in the replication configuration; for example, `replication`.
-    * Tap **[!UICONTROL KeyStore File]**. Navigate to the KeyStore file provided to you by Adobe, select it, then tap **[!UICONTROL Open]**.
+    * Tap **[!UICONTROL KeyStore File.]** Navigate to the KeyStore file provided to you by Adobe, select it, then tap **[!UICONTROL Open.]**
     * In the **[!UICONTROL KeyStore File Password]** field, enter the KeyStore File password. This is **not** the KeyStore password that you created in Step 5 but is the KeyStore File password Adobe provides in the Welcome email sent to you during provisioning. Contact Adobe Customer Care if you did not receive a KeyStore File password.
     * In the **[!UICONTROL Private Key Password]** field, enter the private key password (may be the same private key password provided in the previous step). Adobe provides the private key password in the Welcome email sent to you during provisioning. Contact Adobe Customer Care if you did not receive a private key password.
     * In the **[!UICONTROL Private Key Alias]** field, enter the private key alias. For example, `*companyname*-alias`. Adobe provides the private key alias in the Welcome email sent to you during provisioning. Contact Adobe Customer Care if you did not receive a private key alias.
@@ -298,28 +298,28 @@ You need to set up replication authentication on author in order to replicate im
 
 ### Configuring the Replication Agent {#configuring-the-replication-agent}
 
-1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Deployment > Replication > Agents on author]**.
-1. On the Agents on author page, tap **[!UICONTROL Dynamic Media Hybrid Image Replication (s7delivery)]**.
-1. Tap **[!UICONTROL Edit]**.
+1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Deployment > Replication > Agents on author.]**
+1. On the Agents on author page, tap **[!UICONTROL Dynamic Media Hybrid Image Replication (s7delivery).]**
+1. Tap **[!UICONTROL Edit.]**
 1. Tap the **[!UICONTROL Settings]** tab, then enter the following:
 
     * **[!UICONTROL Enabled]** - Select this check box to enable the replication agent.
     * **[!UICONTROL Region]** - Set to the appropriate region: North America, Europe, or Asia
     * **[!UICONTROL Tenant ID]** - This value is the name of your company/tenant that is publishing to the Replication Service. This value is the Tenant ID that Adobe provides in the Welcome email sent to you during provisioning. Contact Adobe Customer Care if you did not receive this.
     * **[!UICONTROL Key Store Alias]** - This value is the same as the** New Alias** value set when generating the key in [Setting Up Authentication](#setting-up-authentication); for example, `replication`. (See step 7 in [Setting Up Authentication](#setting-up-authentication).)
-    * **[!UICONTROL Key Store Password]** - This is the KeyStore password that was created when you tapped **[!UICONTROL Create KeyStore]**. Adobe does not provide this password. See step 5 of [Setting up Authentication](#setting-up-authentication).
+    * **[!UICONTROL Key Store Password]** - This is the KeyStore password that was created when you tapped **[!UICONTROL Create KeyStore.]** Adobe does not provide this password. See step 5 of [Setting up Authentication](#setting-up-authentication).
 
    The following image shows the replication agent with sample data:
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
 
-1. Tap **[!UICONTROL OK]**.
+1. Tap **[!UICONTROL OK.]**
 
 ### Validating the Replication Agent for Dynamic Media {#validating-the-replication-agent-for-dynamic-media}
 
 To validate the replication agent for dynamic media, do the following:
 
-Tap **[!UICONTROL Test Connection]**. Example output is as follows:
+Tap **[!UICONTROL Test Connection.]** Example output is as follows:
 
 ```shell
 11.03.2016 10:57:55 - Transferring content for ReplicationAction{type=TEST, path[0]='/content/dam', time=1457722675402, userId='admin', revision='null'}
@@ -457,7 +457,7 @@ Replicate log example:
 
 **Solution:**
 
-1. In AEM, click **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. In AEM, click **[!UICONTROL Tools > General > CRXDE Lite.]**
 
    `localhost:4502/crx/de/index.jsp`
 
@@ -468,7 +468,7 @@ Replicate log example:
 
    `enableOauth=true`
 
-1. Near the upper-left corner of the page, tap **[!UICONTROL Save All]**.
+1. Near the upper-left corner of the page, tap **[!UICONTROL Save All.]**
 
 ### Testing your Configuration {#testing-your-configuration}
 
@@ -483,8 +483,8 @@ Be sure you have already done the following prior to beginning this test:
 
 1. Upload an image asset. (In Assets, tap **[!UICONTROL Create > Files]** and select the file.)
 1. Wait for the workflow to finish.
-1. Publish the image asset. (Select the asset and tap **[!UICONTROL Quick Publish]**.)
-1. Navigate to the renditions for that image by opening the image, and tapping **[!UICONTROL Renditions]**.
+1. Publish the image asset. (Select the asset and tap **[!UICONTROL Quick Publish.]**)
+1. Navigate to the renditions for that image by opening the image, and tapping **[!UICONTROL Renditions.]**
 
    ![chlimage_1-510](assets/chlimage_1-510.png)
 
@@ -506,8 +506,8 @@ As part of the configuration, you need to enter a registration ID, video service
 
 To configure dynamic media cloud services:
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Cloud Services > Dynamic Media Configuration (Pre-6.3)]**.
-1. On the Dynamic Media Configuration Browser page, in the left pane, select **[!UICONTROL global]**, then tap **[!UICONTROL Create]**.
+1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Cloud Services > Dynamic Media Configuration (Pre-6.3).]**
+1. On the Dynamic Media Configuration Browser page, in the left pane, select **[!UICONTROL global]**, then tap **[!UICONTROL Create.]**
 1. In the **[!UICONTROL Create Dynamic Media Configuration]** dialog box, in the Title field, type a title.
 1. If you are configuring Dynamic Media for video,
 
@@ -635,7 +635,7 @@ You must publish your own default catalog settings as part of the setup process 
    `https://<*server*>:<*port*>/crx/de/index.jsp#/conf/global/settings/dam/dm/imageserver/`
 
 1. Tap the **[!UICONTROL Replication]** tab.
-1. Tap **[!UICONTROL Replicate]**.
+1. Tap **[!UICONTROL Replicate.]**
 
 ## Replicating Viewer Presets {#replicating-viewer-presets}
 
@@ -713,16 +713,16 @@ If you are using Dynamic Media for (1) imaging in production **or** (2) imaging 
 
 If you are using Dynamic Media for video-only, follow these steps to set up asset filters for replication:
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Deployment > Replication > Agents on author]**.
-1. On the Agents on author page, tap **[!UICONTROL Default Agent (publish)]**.
-1. Tap **[!UICONTROL Edit]**.
+1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Deployment > Replication > Agents on author.]**
+1. On the Agents on author page, tap **[!UICONTROL Default Agent (publish).]**
+1. Tap **[!UICONTROL Edit.]**
 1. In the **[!UICONTROL Agent Settings]** dialog box, in the **[!UICONTROL Settings]** tab, check **[!UICONTROL Enabled]** to turn on the agent.
-1. Tap **[!UICONTROL OK]**.
-1. In AEM, tap **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. Tap **[!UICONTROL OK.]**
+1. In AEM, tap **[!UICONTROL Tools > General > CRXDE Lite.]**
 1. In the left folder tree, navigate to `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
-1. Locate **[!UICONTROL filter-video]**, right-click it and select **[!UICONTROL Copy]**.
+1. Locate **[!UICONTROL filter-video]**, right-click it and select **[!UICONTROL Copy.]**
 1. In the left folder tree, navigate to `/etc/replication/agents.author/publish`
-1. Locate **[!UICONTROL jcr:content]**, right-click it and select **[!UICONTROL Paste]**.
+1. Locate **[!UICONTROL jcr:content]**, right-click it and select **[!UICONTROL Paste.]**
 
 This sets up the AEM publish instance to deliver the video poster image as well as the video metadata required for playback, while the video itself is delivered by the Dynamic Media cloud service. The filter will also exclude from replication the original video and static thumbnail renditions, which are not needed on the publish instance.
 
@@ -730,20 +730,20 @@ This sets up the AEM publish instance to deliver the video poster image as well 
 
 If you are using Dynamic Media for imaging in non-production deployments, follow these steps to set up asset filters for replication:
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Deployment > Replication > Agents on author]**.
-1. On the Agents on author page, tap **[!UICONTROL Default Agent (publish)]**.
-1. Tap **[!UICONTROL Edit]**.
+1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Deployment > Replication > Agents on author.]**
+1. On the Agents on author page, tap **[!UICONTROL Default Agent (publish).]**
+1. Tap **[!UICONTROL Edit.]**
 1. In the **[!UICONTROL Agent Settings]** dialog box, in the **[!UICONTROL Settings]** tab, check **[!UICONTROL Enabled]** to turn on the agent.
-1. Tap **[!UICONTROL OK]**.
-1. In AEM, tap **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. Tap **[!UICONTROL OK.]**
+1. In AEM, tap **[!UICONTROL Tools > General > CRXDE Lite.]**
 1. In the left folder tree, navigate to `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
 
    ![image-2018-01-16-10-22-40-410](assets/image-2018-01-16-10-22-40-410.png)
 
-1. Locate **[!UICONTROL filter-images]**, right-click it and select **[!UICONTROL Copy]**.
+1. Locate **[!UICONTROL filter-images]**, right-click it and select **[!UICONTROL Copy.]**
 1. In the left folder tree, navigate to `/etc/replication/agents.author/publish`
-1. Locate **[!UICONTROL jcr:content]**, right-click it and select **[!UICONTROL Create > Create Node]**. Enter the name `damRenditionFilters` of type `nt:unstructured`.
-1. Locate `damRenditionFilters`, right-click it and select **[!UICONTROL Paste]**.
+1. Locate **[!UICONTROL jcr:content]**, right-click it and select **[!UICONTROL Create > Create Node.]** Enter the name `damRenditionFilters` of type `nt:unstructured`.
+1. Locate `damRenditionFilters`, right-click it and select **[!UICONTROL Paste.]**
 
 This sets up the AEM publish instance to deliver the images to your non-production environment. The filter will also exclude from replication the original image and static renditions, which are not needed on the publish instance.
 
@@ -759,14 +759,14 @@ This sets up the AEM publish instance to deliver the images to your non-producti
 
 To optionally customize asset filters for replication:
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > General > CRXDE Lite.]**
 1. In the left folder tree, navigate to `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` to review the filters.
 
    ![chlimage_1-511](assets/chlimage_1-511.png)
 
 1. To define the Mime Type for the filter, you can locate the Mime Type as follows:
 
-   In the left rail, expand `content > dam > <locate_your_asset> >  jcr:content > metadata` and then in the table, locate **[!UICONTROL dc:format]**.
+   In the left rail, expand `content > dam > <locate_your_asset> >  jcr:content > metadata` and then in the table, locate **[!UICONTROL dc:format.]**
 
    The following graphic is an example of an asset's path to dc:format.
 
@@ -825,7 +825,7 @@ Configuring the Dynamic Media Image Server involves editing the Adobe CQ Scene7 
 
 To configure Dynamic Media Image Server settings:
 
-1. In the upper-left corner of AEM, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap **[!UICONTROL Tools > Operations > Web Console]**.
+1. In the upper-left corner of AEM, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap **[!UICONTROL Tools > Operations > Web Console.]**
 1. On the Adobe Experience Manager Web Console Configuration page, tap **[!UICONTROL OSGi > Configuration]** to list all the bundles that are currently running within AEM.
 
    The Dynamic Media Delivery Servers are found under the following names in the list:
@@ -880,7 +880,7 @@ To configure Dynamic Media Image Server settings:
  </tbody>
 </table>
 
-1. Tap **[!UICONTROL Save]**.
+1. Tap **[!UICONTROL Save.]**
 1. In the list of bundles, to the right of Adobe CQ Scene7 PlatformServer, tap the **[!UICONTROL Edit]** icon.
 1. In the Adobe CQ Scene7 PlatformServer dialog box, set the following default value options:
 
@@ -907,7 +907,7 @@ The location of the default manifest configuration is taken from the **[!UICONTR
 
 You can change the values of the properties, as described in the table below, by entering new values.
 
-When you are finished making changes to the default manifest, in the upper-left corner of the page, tap **[!UICONTROL Save All]**.
+When you are finished making changes to the default manifest, in the upper-left corner of the page, tap **[!UICONTROL Save All.]**
 
 Be sure you tap the **[!UICONTROL Access Control]** tab (to the right of the Properties tab), then set the access control privileges to `jcr:read` for the everyone and dynamic-media-replication users.
 
@@ -940,7 +940,7 @@ Table of Manifest settings and their default values:
   <tr>
    <td>expiration</td>
    <td>36000000</td>
-   <td><p>Default client cache time to live. Provides a default expiration interval in case a particular catalog record does not contain a valid catalog::Expiration value.</p> <p>Real number, 0 or greater. Number of milliseconds until expiration since the reply data was generated. Set to 0 to always expire the reply image immediately, which effectively disables client caching. By default, this value is set to 10 hours, which means that if a new image is published, it takes 10 hours for the old image to leave the user's cache. Contact Customer Care if you need the cache cleared sooner.</p> <p>See also <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_expiration.html">Expiration</a> in the Image Serving API.</p> </td>
+   <td><p>Default client cache time to live. Provides a default expiration interval in case a particular catalog record does not contain a valid catalog::Expiration value.</p> <p>Real number, 0 or greater. Number of milliseconds until expiration since the reply data was generated. Set to 0 to always expire the reply image immediately, which effectively disables client caching. By default, this value is set to 10 hours, which means that if a new image is published, it takes 10 hours for the old image to leave the user's cache. Contact Customer Care if you need the cache cleared sooner.</p> <p>See also <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">Expiration</a> in the Image Serving API.</p> </td>
   </tr>
   <tr>
    <td>jpegquality</td>
@@ -982,13 +982,13 @@ You can configure dynamic media color management and configure image presets usi
 
 Advanced use cases could use a manual configure `icc=` modifier to explicitly select an output color profile:
 
-* `icc` &ndash; [https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_icc.html](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_icc.html)
+* `icc` &ndash; [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html)
 
-* `iccEmbed` &ndash; [https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html)
+* `iccEmbed` &ndash; [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
 >
->The standard set of Adobe color profiles are only available if you have [Feature Pack 12445 from Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) or [Feature Pack 12445 from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installed. All feature packs and service packs are available via [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) and [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445 provides the Adobe color profiles.
+>The standard set of Adobe color profiles are only available if you have [Feature Pack 12445 from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installed. All feature packs and service packs are available at [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445 provides the Adobe color profiles.
 
 ### Installing Feature Pack 12445 {#installing-feature-pack}
 
@@ -996,9 +996,9 @@ You must install feature pack 12445 to use the dynamic media color management ca
 
 **To install feature pack 12445**
 
-1. Navigate to [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) or [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) and download either `cq-6.3.0-featurepack-12445`.
+1. Navigate to [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) and download either `cq-6.3.0-featurepack-12445`.
 
-   See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Package Share and Packages in AEM.
+   See [How to work with packages](/help/sites-administering/package-manager.md) for more information on using packages in [!DNL Adobe Experience Manager].
 
 1. Install the feature pack.
 
@@ -1016,7 +1016,7 @@ After you install the feature pack, you need to configure the appropriate defaul
 
    Color correction properties are described in the **Color Corrections Properties** table. Values that you can assign to color correction properties are in the **Color Profile** table.
 
-   For example, in **[!UICONTROL Name]**, add `iccprofilecmyk`, select **[!UICONTROL Type]** `String`, and add `WebCoated` as a **[!UICONTROL Value]**. Then tap **[!UICONTROL Add]** and then **[!UICONTROL Save All]** to save your values.
+   For example, in **[!UICONTROL Name]**, add `iccprofilecmyk`, select **[!UICONTROL Type]** `String`, and add `WebCoated` as a **[!UICONTROL Value.]** Then tap **[!UICONTROL Add]** and then **[!UICONTROL Save All]** to save your values.
 
    ![chlimage_1-515](assets/chlimage_1-515.png)
 
@@ -1031,55 +1031,55 @@ After you install the feature pack, you need to configure the appropriate defaul
    <td><strong>Description</strong></td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilergb.html">iccprofilergb</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Name of the default RGB color profile.</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilecmyk.html">iccprofilecmyk</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">iccprofilecmyk</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Name of the default CMYK color profile.</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilegray.html">iccprofilegray</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">iccprofilegray</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Name of the default Gray color profile.</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Name of the default RGB color profile used for RGB images that do not have an embedded color profile</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilesrccmyk.html">iccprofilesrccmyk</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrccmyk</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Name of the default CMYK color profile used for CMYK images that do not have an embedded color profile.</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilesrcgray.html">iccprofilesrcgray</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilesrcgray</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Name of the default Gray color profile used for CMYK images that do not have an embedded color profile.</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccblackpointcompensation.html">iccblackpointcompensation</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">iccblackpointcompensation</a></td>
    <td>Boolean</td>
    <td>True</td>
    <td>Specifies whether black point compensation should be done during color correction. Adobe recommends this to be on.</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccdither.html">iccdither</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">iccdither</a></td>
    <td>Boolean</td>
    <td>False</td>
    <td>Specifies whether dithering should be done during color correction.</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccrenderintent.html">iccrenderintent</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td>
    <td>String</td>
    <td>relative</td>
    <td><p>Specifies the render intent. Acceptable values are: <strong>perceptual, relative, saturation, absolute. </strong><i></i>Adobe recommends <strong>relative </strong><i></i>as the default.</p> </td>
@@ -1265,9 +1265,9 @@ After you install the feature pack, you need to configure the appropriate defaul
  </tbody>
 </table>
 
-1. Tap **[!UICONTROL Save All]**.
+1. Tap **[!UICONTROL Save All.]**
 
-For example, you could set the **[!UICONTROL iccprofilergb]** to `sRGB`, and **[!UICONTROL iccprofilecmyk]** to **[!UICONTROL WebCoated]**.
+For example, you could set the **[!UICONTROL iccprofilergb]** to `sRGB`, and **[!UICONTROL iccprofilecmyk]** to **[!UICONTROL WebCoated.]**
 
 Doing so would do the following:
 

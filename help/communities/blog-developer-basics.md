@@ -22,8 +22,9 @@ Blog articles may now be created by any community member, unless restricted to p
 This page provides the essential information for working with the blog feature.
 
 >[!NOTE]
->
->The underlying infrastructure of the blog feature is the journal feature.
+ >
+ >The underlying infrastructure of the blog feature is the journal feature.
+ >
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -95,10 +96,10 @@ As of AEM 6.1 Communities, use of a [common store](/help/communities/working-wit
 
 See :
 
-* [Storage Resource Provider Overview](/help/communities/srp.md) - introduction and repository usage overview
-* [SRP and UGC Essentials](/help/communities/srp-and-ugc.md) - SRP utility methods and examples
-* [Accessing UGC with SRP](/help/communities/accessing-ugc-with-srp.md) - coding guidelines
-* [SocialUtils Refactoring](/help/communities/socialutils.md) - mapping deprecated utility methods to current SRP utility methods
+* [Storage Resource Provider Overview](/help/communities/srp.md) - introduction and repository usage overview.
+* [SRP and UGC Essentials](/help/communities/srp-and-ugc.md) - SRP utility methods and examples.
+* [Accessing UGC with SRP](/help/communities/accessing-ugc-with-srp.md) - coding guidelines.
+* [SocialUtils Refactoring](/help/communities/socialutils.md) - mapping deprecated utility methods to current SRP utility methods.
 
 ## Primary Publisher {#primary-publisher}
 
@@ -116,5 +117,5 @@ As of AEM 6.2, the modifications previously required to be made manually are inc
 
 Rich media is embeded in a blog article by selecting the `Embed Media from External Sites` icon :
 
-![chlimage_1-199](assets/chlimage_1-199.png)
+![chlimage_1-471](assets/chlimage_1-471.png)
 

@@ -96,7 +96,7 @@ To quickly setup a slinglog file :
 
     1. Select **Save**
 
-![chlimage_1-193](assets/chlimage_1-193.png)
+![chlimage_1-248](assets/chlimage_1-248.png)
 
 To see log entries:
 
@@ -112,7 +112,7 @@ To see log entries:
 
     * For example, `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-194](assets/chlimage_1-194.png)
+![chlimage_1-249](assets/chlimage_1-249.png)
 
 ## UGC for Scoring and Badging {#ugc-for-scoring-and-badging}
 
@@ -211,7 +211,7 @@ The screen shots of repository data come from setting up scoring and badging for
 
    As a user has earned two bronze badges and has been awarded a moderator badge, this is how the user appears with their forum entry.
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![chlimage_1-250](assets/chlimage_1-250.png)
 
 >[!NOTE]
 >
@@ -245,7 +245,7 @@ For the Community Components guide site, the user and their score is in a path c
 
 The score is stored in the property `scoreValue_tl` which may directonly contain a value or indirectly refer to an atomicCounter.
 
-![chlimage_1-196](assets/chlimage_1-196.png)
+![chlimage_1-251](assets/chlimage_1-251.png)
 
 ### Access Badging UGC {#access-badging-ugc}
 
@@ -255,21 +255,21 @@ For investigative purposes, using JSRP for the example, the base folder containi
 
 * `/content/usergenerated/asi/jcr`
 
-Followed by the path to the user's profile, ending in a badges folder, such as
+Followed by the path to the user's profile, ending in a badges folder, such as:
 
 * `/home/users/community/w271OOup2Z4DjnOQrviv/profile/badges`
 
 #### Awarded badge {#awarded-badge}
 
-![chlimage_1-197](assets/chlimage_1-197.png)
+![chlimage_1-252](assets/chlimage_1-252.png)
 
 #### Assigned badge {#assigned-badge}
 
-![chlimage_1-198](assets/chlimage_1-198.png)
+![chlimage_1-253](assets/chlimage_1-253.png)
 
 ## Additional Information {#additional-information}
 
-To display a sorted list of members based on points :
+To display a sorted list of members based on points:
 
 * [Leaderboard function](/help/communities/functions.md#leaderboard-function) for inclusion in a community site or group template.
 * [Leaderboard component](/help/communities/enabling-leaderboard.md), the featured component of the Leaderboard function, for page authoring.

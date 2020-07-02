@@ -15,7 +15,7 @@ discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 
 [Bulk editing of page properties](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) allows you to edit the properties of multiple pages at once.
 
-Due to the possibility of different values, page properties are not enabled for bulk editing as default. They must be explicitily whitelisted (enabled). When defining the page properties to be available for bulk editing you need to consider certain implications, such as:
+Due to the possibility of different values, page properties are not enabled for bulk editing as default. They must be explicitily allowed (enabled). When defining the page properties to be available for bulk editing you need to consider certain implications, such as:
 
 * Certain fields are usually unique; for example a page title. You must decide whether it is meaningful to enable such fields for bulk editing, when one value will be applied.
 * Certain fields might have multiple values - this needs meaningful representation when rendering.

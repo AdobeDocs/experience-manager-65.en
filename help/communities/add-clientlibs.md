@@ -30,7 +30,7 @@ The `categories`property value given to this client library is the identifier us
 
 1. Click **OK**
 
-![chlimage_1-47](assets/chlimage_1-47.png)
+![chlimage_1-220](assets/chlimage_1-220.png)
 
 In the **Properties** tab for the new `clientlibs` node, enter the **categories** property:
 
@@ -49,7 +49,7 @@ Note : prefacing the categories value with 'apps.' is a convention to identify t
 1. Enter **Name:** `js.txt`
 1. Click **Save All**
 
-![chlimage_1-48](assets/chlimage_1-48.png)
+![chlimage_1-221](assets/chlimage_1-221.png)
 
 The first line of the css.txt and js.txt identifies the base location from which the following lists of files are to be found.
 
@@ -94,15 +94,15 @@ In this case, including them all and so the more basic SCF clientlibs which are 
     * **`cq.social.author.hbs.rating`**
     * **`cq.social.author.hbs.reviews`**
     * **`cq.social.author.hbs.voting`**
-    * click **OK**
+    * Click **OK**
 
 * Click **Save All**
 
-![chlimage_1-49](assets/chlimage_1-49.png)
+![chlimage_1-222](assets/chlimage_1-222.png)
 
 This is how `/etc/designs/an-scf-sandbox/clientlibs` should now appear in the repository :
 
-![chlimage_1-50](assets/chlimage_1-50.png)
+![chlimage_1-223](assets/chlimage_1-223.png)
 
 ### Include Clientlibs in PlayPage Template {#include-clientlibs-in-playpage-template}
 
@@ -110,11 +110,11 @@ Without including the `apps.an-scf-sandbox` ClientLibraryFolder category on the 
 
 For example, without including the clientlibs, the SCF comments component appears unstyled :
 
-![chlimage_1-51](assets/chlimage_1-51.png)
+![chlimage_1-224](assets/chlimage_1-224.png)
 
 Once apps.an-scf-sandbox clientlibs is included, the SCF comments component appears styled :
 
-![chlimage_1-52](assets/chlimage_1-52.png)
+![chlimage_1-225](assets/chlimage_1-225.png)
 
 The include statement belongs in the `head` section of the `html` script. The default **`foundation head.jsp`** includes a script that can be overlaid : **`headlibs.jsp`**.
 
@@ -146,7 +146,7 @@ Load your website in the browser and see if the background is not a shade of blu
 
 [https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
-![chlimage_1-53](assets/chlimage_1-53.png)
+![chlimage_1-226](assets/chlimage_1-226.png)
 
 ### Saving Your Work So Far {#saving-your-work-so-far}
 

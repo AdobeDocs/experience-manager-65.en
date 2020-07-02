@@ -67,7 +67,7 @@ To **configure AEM**, follow these steps:
    >
    >Overlay and edit the entire profile-node and not just the property that needs modification. Such resources are not resolved via SlingResourceMerger.
 
-4. If you changed either of the properties, click **[!UICONTROL Save All]**.
+4. If you changed either of the properties, click **[!UICONTROL Save All.]**
 
 >[!NOTE]
 >
