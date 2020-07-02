@@ -196,7 +196,7 @@ When creating the Asset Editor page, a good practice is to create the page direc
 
 To create an Asset Editor page:
 
-1. In the **Websites** tab, navigate to the place where you want to create an asset editor page and click **New**.
+1. In the **[!UICONTROL Websites]** tab, navigate to the place where you want to create an asset editor page and click **New**.
 1. Select **Geometrixx Asset Editor** and click **Create**. The new page is created and the page is listed in the **Websites** tab.
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
@@ -349,7 +349,7 @@ By default, it is in read-only mode so users cannot edit it. To make it editable
 
 If the Title can be edited, you can add a title and description by clicking the Pencil to open the **Asset Properties** window. In addition, you can turn the asset on and off by selecting the date and time.
 
-When users edit the Title by clicking the Pencil icon, they can change the **Title**, **Description**, and enter **On** and **Off Times** to turn the asset on and off.
+When editing the [!UICONTROL Title], users can change the **Title**, **Description**, and enter **On** and **Off Times** to turn the asset on and off.
 
 ![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
@@ -408,16 +408,16 @@ To multi-edit assets with the Asset Editor page:
     * A tag that applies to all the assets is displayed with a normal font.
     * Metadata other than tags: the value of the field is only displayed if it is the same for all the selected assets.
 
-1. Click **Download** to download a zip file containing the assets original renditions.
-1. Click the pencil icon beside the **Tags** field to edit the tags:
+1. Click **Download** to download a ZIP file containing the assets original renditions.
+1. Click edit the tags option that is next to the **Tags** field.
 
     * A tag that does not apply to all the assets, but only to a few ones has a grey background.
     * A tag that applies to all the assets has a white background.
 
    You can:
 
-    * Click the **x** icon to remove the tag for all the assets.
-    * Click the **+** icon to add the tag to all the assets.
+    * Click `x` to remove the tag for all the assets.
+    * Click `+` to add the tag to all the assets.
     * Click the **arrow** and select a tag to add a new tag to all the assets.
 
    Click **OK** to write the changes to the form. The box beside the **Tags** field is automatically checked.

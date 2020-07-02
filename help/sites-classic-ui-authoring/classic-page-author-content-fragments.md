@@ -14,7 +14,7 @@ discoiquuid: 5b488f41-2cc1-41f9-8c7f-da851d325949
 
 # Page Authoring with Content Fragments{#page-authoring-with-content-fragments}
 
-Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments.md).
+Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md).
 
 They allow you to create channel-neutral content, together with (possibly channel-specific) variations. You can then use these fragments, and their variations, when authoring your content pages.
 

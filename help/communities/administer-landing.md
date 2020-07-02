@@ -60,22 +60,22 @@ A major feature of AEM Communities is the generation of user generated content (
 
 ### Community Members {#community-members}
 
-* [Managing Users and User Groups](users.md): details of community members and member groups, including privileged members
-* [Contribution Limits](limits.md): ability to constrain posting by new members
-* [Tunnel Service](deploy-communities.md#tunnel-service-on-author): allows publish-side members and member groups to be accessed from the author environment
-* [Members and Groups consoles](members.md): allows publish-side members and member groups to be created and managed from the author environment
-* [User Synchronization](sync.md): for synchronizing members and member groups across multiple publish instances
-* [Social Login with Facebook and Twitter](social-login.md): ability for site visitors to become a community member using their Facebook or Twitter credentials
-* [Scoring and Badges](implementing-scoring.md): ability for badges to be assigned to identify role(s) of a member and for members to earn badges through their participation in the community
-* [Notifications](notifications.md): ability for members to be notified of activity they follow
-* [Subscriptions](subscriptions.md): ability for members to interact with the community using external email
-* [Messaging](messaging.md): ability for members to interact with the community using internal messages
+* [Managing Users and User Groups](users.md): details of community members and member groups, including privileged members.
+* [Contribution Limits](limits.md): ability to constrain posting by new members.
+* [Tunnel Service](deploy-communities.md#tunnel-service-on-author): allows publish-side members and member groups to be accessed from the author environment.
+* [Members and Groups consoles](members.md): allows publish-side members and member groups to be created and managed from the author environment.
+* [User Synchronization](sync.md): for synchronizing members and member groups across multiple publish instances.
+* [Social Login with Facebook and Twitter](social-login.md): ability for site visitors to become a community member using their Facebook or Twitter credentials.
+* [Scoring and Badges](implementing-scoring.md): ability for badges to be assigned to identify role(s) of a member and for members to earn badges through their participation in the community.
+* [Notifications](notifications.md): ability for members to be notified of activity they follow.
+* [Subscriptions](subscriptions.md): ability for members to interact with the community using external email.
+* [Messaging](messaging.md): ability for members to interact with the community using internal messages.
 
 ### Enablement Features {#enablement-features}
 
-* [Configuring Enablement](enablement.md): necessary information to correctly setup the enablement features
-* [Analytics Configuration](analytics.md): necessary information for enabling Adobe Analytics for Communities features
-* [Tagging Enablement Resources](tag-resources.md): necessary for creating enablement catalogs
+* [Configuring Enablement](enablement.md): necessary information to correctly setup the enablement features.
+* [Analytics Configuration](analytics.md): necessary information for enabling Adobe Analytics for Communities features.
+* [Tagging Enablement Resources](tag-resources.md): necessary for creating enablement catalogs.
 
 ### Deployment {#deployment}
 

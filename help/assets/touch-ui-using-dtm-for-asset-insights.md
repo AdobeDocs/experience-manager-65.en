@@ -19,10 +19,10 @@ Perform these steps to enable Asset Insights through DTM.
 1. Click the Experience Manager logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Insights Configuration]**.
 1. [Configure Experience Manager instance with DTM Cloud Service](/help/sites-administering/dtm.md)
 
-   The API token should be available once you log on to [https://dtm.adobe.com](https://dtm.adobe.com/) and visit **[!UICONTROL Account Settings]** from the Profile icon. This step is not required from the Asset Insights standpoint, because the integration of Experience Manager Sites with Asset Insights is still in the works.
+   The API token should be available once you log on to [https://dtm.adobe.com](https://dtm.adobe.com/) and visit **[!UICONTROL Account Settings]** in the user Profile. This step is not required from the Asset Insights standpoint, because the integration of Experience Manager Sites with Asset Insights is still in the works.
 
-1. Log on to [https://dtm.adobe.com](https://dtm.adobe.com/), and select a Company, as appropriate.
-1. Create/Open an the existing Web Property
+1. Log on to [https://dtm.adobe.com](https://dtm.adobe.com/), and select a company, as appropriate.
+1. Create or open an existing Web Property
 
     * Select the **[!UICONTROL Web Properties]** tab, and then click **[!UICONTROL Add Property]**.
 
@@ -34,7 +34,7 @@ Perform these steps to enable Asset Insights through DTM.
 
    ![chlimage_1-58](assets/chlimage_1-194.png)
 
-1. Expand **[!UICONTROL Javascript /Third Party Tags]**. Then click **[!UICONTROL Add New Script]** in the **[!UICONTROL Sequential HTML]** tab to open the Script dialog.
+1. Expand **[!UICONTROL JavaScript /Third Party Tags]**. Then click **[!UICONTROL Add New Script]** in the **[!UICONTROL Sequential HTML]** tab to open the Script dialog.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 

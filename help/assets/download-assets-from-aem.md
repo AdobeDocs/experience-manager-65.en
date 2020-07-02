@@ -16,11 +16,11 @@ The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets canno
 
 **To download assets,**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
-1. On the Navigation page, tap **[!UICONTROL Assets > Files]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]**.
+1. On the Navigation page, tap **[!UICONTROL Assets > Files.]**
 1. Navigate to a folder that contains assets you want to download.
 1. Select the folder or select one or more assets within the folder.
-1. On the toolbar, tap **[!UICONTROL Download]**.
+1. On the toolbar, tap **[!UICONTROL Download.]**
 
    ![Available options when downloading assets from Experience Manager Assets](/help/assets/assets/asset-download1.png)
    
@@ -37,7 +37,7 @@ The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets canno
    | **[!UICONTROL Smart Crops]** | Select this option to download all the smart crop renditions of the selected asset from within AEM. A zip file with the Smart Crop renditions is created and downloaded to your local computer. |
    | **[!UICONTROL Dynamic Rendition(s)]** | Select this option to generate a series of alternate renditions in real time. When you select this option, you also select the renditions that you want to create dynamically by selecting from the [Image Preset](image-presets.md) list. <br>In addition, you can select the size and unit of measurement, format, color space, resolution, and any optional image modifiers such as inverting the image. The option is only available if you have [!DNL Dynamic Media] enabled.|
 
-1. In the dialog box, tap **[!UICONTROL Download]**.
+1. In the dialog box, tap **[!UICONTROL Download.]**.
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 

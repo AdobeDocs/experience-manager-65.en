@@ -41,7 +41,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 ||
 |---|
 |[HTTP API](/help/assets/mac-api-assets.md)|
-|[Structured content models](/help/assets/content-fragments.md)|
+|[Structured content models](/help/assets/content-fragments/content-fragments.md)|
 |[Content services](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)|
 |[Experience fragments](/help/sites-authoring/experience-fragments.md)|
 |HTTP API for structured content (read)|

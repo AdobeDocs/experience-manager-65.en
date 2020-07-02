@@ -54,11 +54,11 @@ You can create a collection with static references, for example a collection wit
 You can drag assets from the Assets UI to a collection. You can also create a copy of a collection and drag the assets there.
 
 1. From the Assets user interface, select the assets you want to add to a collection.
-1. Drag the assets to the **[!UICONTROL Drop in Collection]** zone. Alternatively, click the **[!UICONTROL To Collection]** icon from the toolbar.
+1. Drag the assets to the **[!UICONTROL Drop in Collection]** zone. Alternatively, click **[!UICONTROL To Collection]** from the toolbar.
 
    ![drop_in_collection](assets/drop_in_collection.png)
 
-1. In the **[!UICONTROL Add To Collection]** page, click the **[!UICONTROL Create Collection]** icon from the toolbar.
+1. In the **[!UICONTROL Add To Collection]** page, click **[!UICONTROL Create Collection]** from the toolbar.
 
    If you want to add the assets to an existing collection, select it from the page, and click **[!UICONTROL Add]**. By default, the most recently updated collection is selected.
 
@@ -103,7 +103,7 @@ To create a smart collection, follow the steps:
 
 You can add assets to a collection that contains a list of referenced assets or folders. Smart collections use a search query to populate assets. Therefore, static references to assets and folders are not applicable to them.
 
-1. In the Assets user interface, select the asset and click the **[!UICONTROL To Collection]** icon from the toolbar.
+1. In the Assets user interface, select the asset and click **[!UICONTROL To Collection]** from the toolbar.
 
    ![chlimage_1-8](assets/chlimage_1-113.png)
 
@@ -117,12 +117,12 @@ You can add assets to a collection that contains a list of referenced assets or 
 
 Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#saved-searches).
 
-1. In the Assets user interface, click the search icon from the toolbar.
+1. In the Assets user interface, click the search option from the toolbar.
 
    ![chlimage_1-9](assets/chlimage_1-110.png)
 
 1. With the cursor in the Omnisearch box, press the Return key.
-1. Click the GlobalNav icon to display the Filters panel.
+1. In the Experience Manager interface, open the Filters panel.
 1. From the **[!UICONTROL Saved Searches]** list, select the smart collection you want to modify. The Search panel displays the filters configured for the saved search.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -151,7 +151,7 @@ Collection metadata comprises data about the collection, including any tags that
 You can edit the metadata of multiple collections simultaneously. This functionality helps you quickly replicate common metadata in multiple collections.
 
 1. In the Collections console, select two or more collections.
-1. From the toolbar, click the **[!UICONTROL Properties]** icon.
+1. From the toolbar, click **[!UICONTROL Properties]**.
 1. In the **[!UICONTROL Collection Metadata]** page, edit the metadata under the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs, as necessary.
 1. To view the metadata properties for a specific collection, deselect the remaining collections in the collections list. The metadata editor fields are populated with the metadata for the particular collection.
 
@@ -189,14 +189,14 @@ Within a collection, Experience Manager search is restricted to assets (and thei
 
 You can edit collection settings, such as title and description, or to add members to a collection.
 
-1. Select a collection, and click the **[!UICONTROL Settings]** icon in the toolbar. Alternatively, use the **[!UICONTROL Settings]** quick action from the collection thumbnail.
+1. Select a collection, and click **[!UICONTROL Settings]** in the toolbar. Alternatively, use the **[!UICONTROL Settings]** quick action from the collection thumbnail.
 1. Modify the collection settings in the **[!UICONTROL Collection Settings]** page. For example, modify the collection title, descriptions, members, and permissions as discussed in [Adding Collections](#creating-a-collection).
 
 1. To save the changes, click **[!UICONTROL Save]**.
 
 ## Delete a collection {#deleting-a-collection}
 
-1. From the Collections console, select one or more collections and click the delete icon in the toolbar.
+1. From the Collections console, select one or more collections and click delete from the toolbar.
 
 1. In the dialog, click **[!UICONTROL Delete]** to confirm the delete action.
 
@@ -209,7 +209,7 @@ You can edit collection settings, such as title and description, or to add membe
 When you download a collection, the entire hierarchy of assets within the collection is downloaded, including folders and child collections.
 
 1. From the Collections console, select one or more collections to download.
-1. From the toolbar, click the download icon.
+1. From the toolbar, click **[!UICONTROL Download]**.
 1. In the **[!UICONTROL Download]** dialog, click **[!UICONTROL Download]**. If you want to download the renditions of the assets within the collection, select **[!UICONTROL Renditions]**. Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection.
 
    When you select a collection to download, the complete folder hierarchy under the collection is downloaded. To include each collection you download (including assets in child collections nested under the parent collection) in an individual folder, select **[!UICONTROL Create separate folder for each asset]**.
@@ -248,13 +248,11 @@ Editing saved searches is the same as editing smart collections. For details, se
 
 To delete saved searches, follow these steps:
 
-1. In the Assets user interface, click the search icon from the toolbar.
-
-   ![chlimage_1-13](assets/chlimage_1-114.png)
+1. In the Assets user interface, click search ![chlimage_1-13](assets/chlimage_1-114.png).
 
 1. With the cursor in the Omnisearch field, press the Enter key.
 
-1. Click the GlobalNav icon to display the Filters panel.
+1. In the Experience Manager interface, open the Filters panel.
 
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
@@ -266,15 +264,11 @@ To delete saved searches, follow these steps:
 
 You can run a workflow for the assets within a collection. If the collection contains nested collections, the workflow also runs on the assets within the nested collections. However, if the collection and the nested collection contain duplicate assets, the workflow only runs once for such assets.
 
-1. From the Collections console, select a collection on which you want to run a workflow.
-1. Click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
-1. From the timeline, click the Caret icon at the bottom, and then click **[!UICONTROL Start Workflow]**.
-
-   ![chlimage_1-14](assets/chlimage_1-137.png)
-
+1. Open **[!UICONTROL Assets]** > **[!UICONTROL Collections]**. To execute a workflow on a specific collection, select it.
+1. Open **[!UICONTROL Timeline]** rail. Click ![chlimage_1-14](assets/chlimage_1-137.png) and click **[!UICONTROL Start Workflow]**.
 1. In the **[!UICONTROL Start Workflow]** section, select a workflow model from the list. For example, select the **[!UICONTROL DAM Update Asset]** model.
-1. Enter a title for the workflow, and click **[!UICONTROL Start]**.
-1. In the dialog, click **[!UICONTROL Proceed]**. The workflow runs on all the assets in the collection.
+1. Enter a title for the workflow and click **[!UICONTROL Start]**.
+1. In the dialog, click **[!UICONTROL Proceed]**. The workflow processes all the assets in the selected collection.
 
 >[!MORELIKETHIS]
 >

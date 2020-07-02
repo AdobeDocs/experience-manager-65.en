@@ -15,7 +15,7 @@ You can apply the translation cloud service directly to your asset folder so the
 Applying translation cloud services directly to your asset folder eliminates the need to configure translation services when you create or update translation workflows.
 
 1. From the Assets user interface, select the folder to which you want to apply translation services.
-1. From the toolbar, click the **[!UICONTROL Properties]** icon to display the **[!UICONTROL Folder Properties]** page.
+1. From the toolbar, click **[!UICONTROL Properties]** to display the **[!UICONTROL Folder Properties]** page.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 

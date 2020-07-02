@@ -35,11 +35,11 @@ When the required clientlibs are missing, [adding a Communities component to a p
 
 ### Example : Placed Reviews without Clientlibs {#example-placed-reviews-without-clientlibs}
 
-![chlimage_1-132](assets/chlimage_1-132.png)
+![chlimage_1-426](assets/chlimage_1-426.png)
 
 ### Example : Placed Reviews with Clientlibs {#example-placed-reviews-with-clientlibs}
 
-![chlimage_1-133](assets/chlimage_1-133.png)
+![chlimage_1-427](assets/chlimage_1-427.png)
 
 ## Identifying Required Clientlibs {#identifying-required-clientlibs}
 
@@ -52,7 +52,7 @@ For example, at the very top of the [Reviews page](https://localhost:4502/conten
 * cq.ckeditor
 * cq.social.hbs.reviews
 
-![chlimage_1-134](assets/chlimage_1-134.png)
+![chlimage_1-246](assets/chlimage_1-246.png)
 
 ## Adding Required Clientlibs {#adding-required-clientlibs}
 
@@ -60,32 +60,33 @@ When it is desired to add a Communities component to a page, it will be necessar
 
 Use [CRXDE|Lite](#using-crxde-lite) to modify an existing clientlibslist for a community site page.
 
-To add a clientlib for a community site using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
+To add a clientlib for a community site using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Browse to [https://&lt;server&gt;:&lt;port&gt;/crx/de](https://localhost:4502/crx/de)
-* Locate the `clientlibslist` node for the page on which you wish to add the component
+* Browse to [https://&lt;server&gt;:&lt;port&gt;/crx/de](https://localhost:4502/crx/de).
+* Locate the `clientlibslist` node for the page on which you wish to add the component:
 
-    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
+  * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* With `clientlibslist` node selected
+* With `clientlibslist` node selected:
 
-    * Locate the String[] property `scg:requiredClientLibs`
-    * Select its `Value` to access the String array dialog
+  * Locate the String[] property `scg:requiredClientLibs`.
+  * Select its `Value` to access the String array dialog.
 
-        * Scroll down if necessary
-        * Select + to enter a new client library
+    * Scroll down if necessary.
+    * Select + to enter a new client library.
 
-            * Repeat to add more client libraries
+      * Repeat to add more client libraries.
 
-        * Select **OK**
+      * Select **OK**.
 
-    * Select **Save All**
+  * Select **Save All**.
 
 >[!NOTE]
->
->If the site is not a community site, the existance or location of the client libraries in use for the site would need to be discovered.
+ >
+ >If the site is not a community site, the existance or location of the client libraries in use for the site would need to be discovered.
+ >
 
-Using the [Getting Started with AEM Communities](/help/communities/getting-started.md) example, where `site-name` is *engage*, this is how the clientliblist would appear if adding the reviews component :
+Using the [Getting Started with AEM Communities](/help/communities/getting-started.md) example, where `site-name` is *engage*, this is how the clientliblist would appear if adding the reviews component:
 
-![chlimage_1-135](assets/chlimage_1-135.png)
+![chlimage_1-247](assets/chlimage_1-247.png)
 

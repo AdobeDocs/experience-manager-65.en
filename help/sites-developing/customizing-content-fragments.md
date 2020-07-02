@@ -17,13 +17,13 @@ docset: aem65
 
 A content fragment extends a standard asset; see:
 
-* [Creating and Managing Content Fragments](/help/assets/content-fragments.md) and [Page Authoring with Content Fragments](/help/sites-authoring/content-fragments.md) for further information about content fragments.
+* [Creating and Managing Content Fragments](/help/assets/content-fragments/content-fragments.md) and [Page Authoring with Content Fragments](/help/sites-authoring/content-fragments.md) for further information about content fragments.
 
 * [Managing Assets](/help/assets/managing-assets-touch-ui.md) and [Customizing and Extending Assets](/help/assets/extending-assets.md) for further information about standard assets.
 
 ## Architecture {#architecture}
 
-The basic [constituent parts](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) of a content fragment are:
+The basic [constituent parts](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) of a content fragment are:
 
 * A *Content Fragment,*
 * consisting of one or more *Content Element*s,
@@ -33,7 +33,7 @@ Depending on the type of fragment, either models or templates are also used:
 
 >[!CAUTION]
 >
->[Content fragment models](/help/assets/content-fragments-models.md) are now recommended for creating all your fragments.
+>[Content fragment models](/help/assets/content-fragments/content-fragments-models.md) are now recommended for creating all your fragments.
 >
 >Content fragment models are used for all examples in We.Retail.
 
@@ -110,7 +110,7 @@ As with standard assets, a content fragment is held under:
 
 #### Asset Permissions {#asset-permissions}
 
-For further details see [Content Fragment - Delete Considerations](/help/assets/content-fragments-delete.md).
+For further details see [Content Fragment - Delete Considerations](/help/assets/content-fragments/content-fragments-delete.md).
 
 #### Feature Integration {#feature-integration}
 
