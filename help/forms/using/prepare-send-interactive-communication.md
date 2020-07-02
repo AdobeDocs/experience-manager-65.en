@@ -180,7 +180,7 @@ The Save as a Draft feature is not enabled, by default. Perform the following st
 1. Tap **[!UICONTROL Create Correspondence Configuration]**.
 1. Select **[!UICONTROL Enable Save Using CCRDocumentInstanceService]** and tap **[!UICONTROL Save]**.
 
-### Save an Interactive Communication as draft {save-as-draft-agent-ui}
+### Save an Interactive Communication as draft {#save-as-draft-agent-ui}
 
 Perform the following steps to save an Interactive Communication as a draft:
 
