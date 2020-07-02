@@ -63,7 +63,7 @@ You can modify the schedule for the purge task and the duration for which detail
 
    ![Configuration to schedule the purging of asynchronous tasks](assets/configmgr_purge_asyncjobs.png)
 
-## Configure thresholds for asynchronous delete operations {#configure-thresholds-for-asynchronous-delete-operations}
+## Configure threshold for asynchronous delete operations {#configure-thresholds-for-asynchronous-delete-operations}
 
 If the number of assets or folders to be deleted exceeds the set threshold number, the delete operation is performed asynchronously.
 
@@ -73,7 +73,7 @@ If the number of assets or folders to be deleted exceeds the set threshold numbe
 
    ![Set the threshold limit for the task to delete assets](assets/delete_threshold.png)
 
-## Configure thresholds for asynchronous move operations {#configure-thresholds-for-asynchronous-move-operations}
+## Configure threshold for asynchronous move operations {#configure-thresholds-for-asynchronous-move-operations}
 
 If the number of assets, folders, or references to be moved exceeds the set threshold number, the move operation is performed asynchronously.
 
