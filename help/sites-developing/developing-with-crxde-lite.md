@@ -19,14 +19,13 @@ This section describes how to develop your AEM application using CRXDE Lite.
 
 Please refer to the overview documentation for more information on the different development environments that are available.
 
-CRXDE Lite is embedded into AEM and enables you to perform standard development tasks in the browser. With CRXDE Lite, you can create a project, create and edit files (like .jsp and .java), folders, templates, components, dialogs, nodes, properties and bundles while logging and integrating with SVN.
+CRXDE Lite is embedded into AEM and enables you to perform standard development tasks in the browser. With CRXDE Lite, you can create a project, create and edit files (like .jsp and .java), folders, templates, components, dialogs, nodes, properties and bundles while logging.
 CRXDE Lite is recommended when you do not have direct access to the AEM server, when you develop an application by extending or modifying the out-of-the-box components and Java bundles or when you do not need a dedicated debugger, code completion and syntax highlighting.
 
 >[!NOTE]
 >
->By default, all AEM users can access CRXDE Lite. If desired, [configure ACLs](/help/sites-administering/security.md#permissions-and-acls) for the following node so that only developers can access CRX DE Lite:
->
->`/libs/granite/crxde`
+>From AEM 6.5.5.0 onwards, anonymous access of CRXDE Lite is not possible anymore.
+
 
 >[!NOTE]
 >
@@ -44,7 +43,7 @@ To get started with CRXDE Lite, proceed as follows:
 
 The CRXDE Lite User Interface looks as follows in your browser:
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![chlimage_1-18](assets/crx-interface.jpg)
 
 You can now use CRXDE Lite to develop your application.
 
@@ -125,10 +124,6 @@ CRXDE Lite offers the following functionality:
   <tr>
    <td>Mixins ...<br /> </td>
    <td>Allows you to add mixin types to the node type. The mixin types are mostly used to add advanced features such as versioning, access control, referencing, and locking to the node.</td>
-  </tr>
-  <tr>
-   <td>Team<br /> </td>
-   <td><p>Drop-down menu to perform standard version control tasks:</p> <p>- <strong>Update</strong> repository from SVN server</p> <p>- <strong>Commit</strong> local changes to SVN server</p> <p>- View <strong>Status</strong> of the current node</p> <p>- View <strong>Recursive Status</strong> of the subtree of the current node</p> <p>- <strong>Checkout</strong> a working copy from SVN server</p> <p>- <strong>Export</strong> a project from SVN server (without creating a working copy)</p> <p>- <strong>Import</strong> a project from repository to SVN server<br /> </p> <p>Note you need to be logged in as user with sufficient permissions to be able to execute some of the tasks (especially the ones that write to the local repository).<br /> </p> </td>
   </tr>
   <tr>
    <td>Tools<br /> </td>
