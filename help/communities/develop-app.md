@@ -30,11 +30,13 @@ Using CRXDE Lite:
    <!--Resolve steps below-->
    
    ```xml 
+
    Name: `sling:resourceSuperType`
    
    Type: `String`
    
    Value: `foundation/components/page`
+   
    ```
 
 1. Click the green **[!UICONTROL +Add]** button.
