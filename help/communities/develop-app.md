@@ -28,6 +28,7 @@ Using CRXDE Lite:
 1. Select node `/apps/an-scf-sandbox/components/playpage`.
 1. In properties tab, enter a new property with the following values:
    <!--Resolve steps below-->
+   
    ```xml 
    Name: `sling:resourceSuperType`
    
