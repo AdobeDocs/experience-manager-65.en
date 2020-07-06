@@ -459,7 +459,7 @@ You can enable a non-administrator user to use PDF Generator. Normally, only use
 
 1. Set value of the variable to TRUE.
 
-1. Restart the AEM forms instance.
+1. Restart the AEM Forms instance.
 
 ## Configuring AEM Forms on JEE for access beyond the enterprise {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
