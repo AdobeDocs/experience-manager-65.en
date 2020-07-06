@@ -40,8 +40,8 @@ When configured to support dispatcher caching, a TTL-based "max age" expiration 
 * Dispatcher version 4.1.2 or later (see [Installing Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) for the latest version)
 * [ACS AEM Commons package](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
-    * Version 3.3.2 or later
-    * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` OSGi config
+  * Version 3.3.2 or later
+  * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` OSGi config
 
 ### Configuration {#configuration}
 
@@ -49,12 +49,12 @@ The OSGi configuration **ACS AEM Commons - Dispatcher Cache Control Header - Max
 
 * From the [Web Console](../../help/sites-deploying/configuring-osgi.md)
 
-    * For example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * For example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Locate `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Select the '+' icon to create a new connection configuration
 
-![chlimage_1-339](assets/chlimage_1-339.png)
+  ![chlimage_1-339](assets/chlimage_1-339.png)
 
 * **Filter Patterns**
   *(required)* One or more paths to community pages. For example, `/content/sites/engage/(.*)`.
@@ -76,14 +76,15 @@ The filter property names follow the convention of using a four-digit number to 
 
 The following samples use property names that will likely need to be modified to fit into any particluar dispatcher.any file.
 
-See also
+See also:
 
 * [Dispatcher Security Checklist](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
 
 >[!NOTE]
->
->**Property Name Examples**
->All property names shown, such as **/0050** and **/0170**, should be adjusted to fit within an existing dispatcher.any configuration file.
+ >
+ >**Property Name Examples**
+ >All property names shown, such as **/0050** and **/0170**, should be adjusted to fit within an existing dispatcher.any configuration file.
+ >
 
 The following entries should be added to the end of the /filter section, especially after all deny entries.
 

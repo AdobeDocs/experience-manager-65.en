@@ -19,15 +19,15 @@ These instructions describe how to connect to the MySQL server and establish the
 
 ## Requirements {#requirements}
 
-* [latest Communities feature pack](deploy-communities.md#latestfeaturepack)
+* [Latest Communities feature pack](deploy-communities.md#latestfeaturepack)
 * [JDBC driver for MySQL](deploy-communities.md#jdbc-driver-for-mysql)
 * A relational database:
 
-    * [MySQL server](https://dev.mysql.com/downloads/mysql/) Community Server version 5.6 or later
+  * [MySQL server](https://dev.mysql.com/downloads/mysql/) Community Server version 5.6 or later
 
-        * May run on same host as AEM or run remotely
+    * May run on same host as AEM or run remotely
 
-    * [MySQL workbench](https://dev.mysql.com/downloads/tools/workbench/)
+  * [MySQL workbench](https://dev.mysql.com/downloads/tools/workbench/)
 
 ## Installing MySQL {#installing-mysql}
 
@@ -50,7 +50,7 @@ To provide better multilingual support, it is necessary to use the UTF8 characte
 
 Change MySQL to have UTF8 as its character set:
 
-* mysql&gt; SET NAMES 'utf8';
+* mysql > SET NAMES 'utf8';
 
 Change the MySQL database to default to UTF8:
 
@@ -112,12 +112,12 @@ The SQL script is obtained from the AEM repository:
 
 1. Browse to CRXDE Lite
 
-    * For example, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+   * For example, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. Select the /libs/social/config/datastore/dsrp/schema folder
 1. Download `init-schema.sql`
 
-![chlimage_1-107](assets/chlimage_1-107.png)
+   ![chlimage_1-107](assets/chlimage_1-107.png)
 
 One method for downloading the schema is to
 
@@ -163,36 +163,35 @@ All publish and author AEM instances should point to the same MySQL server.
 
 When MySQL runs on a server different from AEM, the server hostname must be specified in place of 'localhost' in the JDBC connector.
 
-* On each author and publish AEM instance
-* Signed in with administrator privileges
-* Access the [web console](../../help/sites-deploying/configuring-osgi.md)
+* On each author and publish AEM instance.
+* Signed in with administrator privileges.
+* Access the [web console](../../help/sites-deploying/configuring-osgi.md).
 
-    * For example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+  * For example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
 * Locate the `Day Commons JDBC Connections Pool`
-* Select the `+` icon to create a new connection configuration
+* Select the `+` icon to create a new connection configuration.
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+  ![chlimage_1-111](assets/chlimage_1-111.png)
 
 * Enter the following values:
 
-    * **[!UICONTROL JDBC driver class]**: `com.mysql.jdbc.Driver`
-    * **[!UICONTROL JDBC connection URI]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
+  * **[!UICONTROL JDBC driver class]**: `com.mysql.jdbc.Driver`
+  * **[!UICONTROL JDBC connection URI]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      Specify server in place of localhost if MySQL server is not the same as 'this' AEM server
+    Specify server in place of localhost if MySQL server is not the same as 'this' AEM server *communities* is the default database (schema) name.
 
-      *communities* is the default database (schema) name
+  * **[!UICONTROL Username]**: `root`
 
-    * **[!UICONTROL Username]**: `root`
+    Or enter the configured Username for the MySQL server, if not 'root'.
 
-      Or enter the configured Username for the MySQL server, if not 'root'
+  * **[!UICONTROL Password]**:
 
-    * **[!UICONTROL Password]**:
+    Clear this field if no password set for MySQL,
 
-      Clear this field if no password set for MySQL,
-
-      else enter the configured password for the MySQL Username
-    * **[!UICONTROL Datasource name]**: name entered for the [MySQL connection](#new-connection-settings), for example, 'communities'
+    else enter the configured password for the MySQL Username.
+  
+  * **[!UICONTROL Datasource name]**: name entered for the [MySQL connection](#new-connection-settings), for example, 'communities'.
 
 * Select **[!UICONTROL Save]**
 
