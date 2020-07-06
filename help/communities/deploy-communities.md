@@ -21,11 +21,11 @@ docset: aem65
 
 * AEM Communities license
 
-* Optional licenses for :
+* Optional licenses for:
 
-    * [Adobe Analytics for Communities features](/help/communities/analytics.md)
-    * [MongoDB for MSRP](/help/communities/msrp.md)
-    * [Adobe Cloud for ASRP](/help/communities/asrp.md)
+  * [Adobe Analytics for Communities features](/help/communities/analytics.md)
+  * [MongoDB for MSRP](/help/communities/msrp.md)
+  * [Adobe Cloud for ASRP](/help/communities/asrp.md)
 
 ## Installation Checklist {#installation-checklist}
 
@@ -48,32 +48,32 @@ docset: aem65
 * Setup a [default email service](/help/communities/email.md)
 * Identify the choice for [shared UGC storage](/help/communities/working-with-srp.md) (**SRP**)
 
-    * If MongoDB SRP [(MSRP)](/help/communities/msrp.md)
+  * If MongoDB SRP [(MSRP)](/help/communities/msrp.md)
 
-        * [Install and configure MongoDB](/help/communities/msrp.md#mongodb-configuration)
-        * [Configure Solr](/help/communities/solr.md)
-        * [Select MSRP](/help/communities/srp-config.md)
+    * [Install and configure MongoDB](/help/communities/msrp.md#mongodb-configuration)
+    * [Configure Solr](/help/communities/solr.md)
+    * [Select MSRP](/help/communities/srp-config.md)
 
-    * If relational database SRP [(DSRP)](/help/communities/dsrp.md)
+  * If relational database SRP [(DSRP)](/help/communities/dsrp.md)
 
-        * [Install the JDBC driver for MySQL](#jdbc-driver-for-mysql)
-        * [Install and configure MySQL for DSRP](/help/communities/dsrp-mysql.md)
-        * [Configure Solr](/help/communities/solr.md)
-        * [Select DSRP](/help/communities/srp-config.md)
+    * [Install the JDBC driver for MySQL](#jdbc-driver-for-mysql)
+    * [Install and configure MySQL for DSRP](/help/communities/dsrp-mysql.md)
+    * [Configure Solr](/help/communities/solr.md)
+    * [Select DSRP](/help/communities/srp-config.md)
 
-    * If Adobe SRP [(ASRP)](/help/communities/asrp.md)
+  * If Adobe SRP [(ASRP)](/help/communities/asrp.md)
 
-        * Work with your account representative for provisioning
-        * [Select ASRP](/help/communities/srp-config.md)
+    * Work with your account representative for provisioning
+    * [Select ASRP](/help/communities/srp-config.md)
 
-    * If JCR SRP [(JSRP)](/help/communities/jsrp.md)
+  * If JCR SRP [(JSRP)](/help/communities/jsrp.md)
 
-        * Not a shared UGC store :
+    * Not a shared UGC store :
 
-            * UGC is never replicated
-            * UGC only visible on AEM instance or cluster in which it was entered
+      * UGC is never replicated
+      * UGC only visible on AEM instance or cluster in which it was entered
 
-        * Default is JSRP
+      * Default is JSRP
 
   For the **[enablement feature](/help/communities/overview.md#enablement-community)**
 
@@ -98,33 +98,32 @@ As on AEM 6.4 and beyond, AEM Communities features and hotfixes are part of AEM 
 
 ### JDBC driver for MySQL {#jdbc-driver-for-mysql}
 
-Two Communities features use a MySQL database :
+Two Communities features use a MySQL database:
 
-* For [enablement](/help/communities/enablement.md) : recording SCORM activities and learners
-* For [DSRP](/help/communities/dsrp.md) : storing user generated content (UGC)
+* For [enablement](/help/communities/enablement.md): recording SCORM activities and learners
+* For [DSRP](/help/communities/dsrp.md): storing user generated content (UGC)
 
 The MySQL connector must be obtained and installed separately.
 
-The necessary steps are :
+The necessary steps are:
 
 1. Download the ZIP archive from [https://dev.mysql.com/downloads/connector/j/](https://dev.mysql.com/downloads/connector/j/)
 
-    * Version must be &gt;= 5.1.38
+   * Version must be &gt;= 5.1.38
 
 1. Extract mysql-connector-java-&lt;version&gt;-bin.jar (bundle) from the archive
 1. Use the web console to install and start the bundle :
 
-    * For example, https://localhost:4502/system/console/bundles
-    * Select **`Install/Update`**
-    * Browse... to select the bundle extracted from the downloaded ZIP archive
-    * Check that *Oracle Corporation's JDBC Driver for MySQLcom.mysql.jdbc* is active, and start it if not (or check the logs)
+   * For example, https://localhost:4502/system/console/bundles
+   * Select **`Install/Update`**
+   * Browse... to select the bundle extracted from the downloaded ZIP archive
+   * Check that *Oracle Corporation's JDBC Driver for MySQLcom.mysql.jdbc* is active, and start it if not (or check the logs)
 
 1. If installing on an existing deployment after JDBC has been configured, then rebind JDBC to the new connector by resaving the JDBC configuration from the web console :
-
-    * For example, https://localhost:4502/system/console/configMgr
-    * Locate `Day Commons JDBC Connections Pool` configuration
-    * Select to open
-    * Select `Save`
+   * For example, https://localhost:4502/system/console/configMgr
+   * Locate `Day Commons JDBC Connections Pool` configuration
+   * Select to open
+   * Select `Save`
 
 1. Repeat steps 3 and 4 on all author and publish instances
 
@@ -132,7 +131,7 @@ Further information on installing bundles is found on the [Web Console](/help/si
 
 #### Example : Installed MySQL Connector Bundle {#example-installed-mysql-connector-bundle}
 
-![](/help/communities/assets/chlimage_1-125.png)
+![chlimage-bundles](/assets/chlimage-bundles.png)
 
 ### SCORM Package {#scorm-package}
 
@@ -165,8 +164,8 @@ The advanced MLS download (also known as 'phasetwo') is available from the Adobe
 
 * [AEM-SOLR-MLS-phasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
 
-    * Version 1.2.40, April 6, 2016
-    * Download AEM-SOLR-MLS-phasetwo-1.2.40.zip
+  * Version 1.2.40, April 6, 2016
+  * Download AEM-SOLR-MLS-phasetwo-1.2.40.zip
 
 For details and installation information, visit [Solr Configuration](/help/communities/solr.md) for SRP.
 
@@ -217,14 +216,14 @@ By default, the `AEM Communities Publisher Configuration` OSGi configuration is 
 
 Therefore, it is necessary to **edit the configuration on all secondary publish instances** to uncheck the **`Primary Publisher`** checkbox.
 
-![](/help/communities/assets/chlimage_1-126.png)
+![chlimage_1-411](/assets/chlimage_1-411.png)
 
-For all other (secondary) publish instances in a publish farm :
+For all other (secondary) publish instances in a publish farm:
 
 * Sign-in with administrator privileges
 * Access the [web console](/help/sites-deploying/configuring-osgi.md)
 
-    * For example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+  * For example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
 * Locate the `AEM Communities Publisher Configuration`
 * Select the edit icon
@@ -243,29 +242,29 @@ There are two replication agents in the author environment that need the transpo
 
 * Access the Replication console on author
 
-    * From global navigation, navigate to **[!UICONTROL Tools > Deployment > Replication > Agents on author]**
+  * From global navigation, navigate to **[!UICONTROL Tools > Deployment > Replication > Agents on author]**
 
 * Follow the same procecure for both agents :
 
-    * **Default Agent (publish)**
-    * **Reverse Replication Agent (publish reverse)**
+  * **Default Agent (publish)**
+  * **Reverse Replication Agent (publish reverse)**
 
-        1. Select the agent
-        1. Select **edit**
-        1. Select the **Transport** tab
-        1. If not port `4503`, edit the **URI** to specify the correct port
+    1. Select the agent
+    1. Select **edit**
+    1. Select the **Transport** tab
+    1. If not port `4503`, edit the **URI** to specify the correct port
 
-        1. If not user `admin`, edit the **User** and **Password** to specify a member of the `administrators` user group
+    1. If not user `admin`, edit the **User** and **Password** to specify a member of the `administrators` user group
 
-The following images show the results of changing the port from 4503 to 6103 by :
+The following images show the results of changing the port from 4503 to 6103 by:
 
 #### Default Agent (publish) {#default-agent-publish}
 
-![](/help/communities/assets/chlimage_1-127.png)
+![chlimage_1-412](/assets/chlimage_1-412.png)
 
 #### Reverse Replication Agent (publish reverse) {#reverse-replication-agent-publish-reverse}
 
-![](/help/communities/assets/chlimage_1-128.png)
+![chlimage_1-413](/assets/chlimage_1-413.png)
 
 ### Tunnel Service on Author {#tunnel-service-on-author}
 
@@ -273,23 +272,22 @@ When using the author environment to [create sites](/help/communities/sites-cons
 
 The tunnel service provides this access using the replication agent on author.
 
-To enable the tunnel service :
+To enable the tunnel service:
 
-* On **author**
-* Sign in with administrative privileges
+* Sign in with administrative privileges on your author instance.
 * If publisher is not localhost:4503 or transport user is not `admin`,
   then [configure the replication agent](#replication-agents-on-author)
 
 * Access the [Web Console](/help/sites-deploying/configuring-osgi.md)
 
-    * For example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+  * For example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
 * Locate the `AEM Communities Publish Tunnel Service`
 * Select the edit icon
 * Check the **enable** box
 * Select **Save**
 
-![](/help/communities/assets/chlimage_1-129.png)
+  ![chlimage_1-414](/assets/chlimage_1-414.png)
 
 ### Replicate the Crypto Key {#replicate-the-crypto-key}
 
@@ -301,32 +299,33 @@ In order to copy the key material from author to all other instances, it is nece
 
 * Access the AEM instance, typically an author instance, that contains the key material to copy
 
-    * Locate the `com.adobe.granite.crypto.file` bundle in the local file system
+  * Locate the `com.adobe.granite.crypto.file` bundle in the local file system,
       for example,
 
-        * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
-        * The `bundle.info` file will identify the bundle
+    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
+    * The `bundle.info` file will identify the bundle
 
-    * Navigate into the data folder
+  * Navigate into the data folder,
       for example,
 
-        * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
     * Copy the hmac and primary node files
 
 * For each target AEM instance
 
-    * Navigate into the data folder
+  * Navigate into the data folder,
       for example,
 
-        * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-    * Paste the 2 files previously copied
-    * It is necessary to [refresh the Granite Crypto bundle](#refresh-the-granite-crypto-bundle) if the target AEM instance is currently running
+  * Paste the 2 files previously copied
+  * It is necessary to [refresh the Granite Crypto bundle](#refresh-the-granite-crypto-bundle) if the target AEM instance is currently running
 
 >[!CAUTION]
->
->If another security feature has already been configured that is based on the crypto keys, then replicating the crypto keys could damage the configuration. For assistance, [contact customer care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+ >
+ >If another security feature has already been configured that is based on the crypto keys, then replicating the crypto keys could damage the configuration. For assistance, [contact customer care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+ >
 
 #### Repository Replication {#repository-replication}
 
@@ -335,12 +334,13 @@ Having the key material stored in the repository, as was the case for AEM 6.2 an
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
 >[!NOTE]
->
->It is important to verify that the [replication agent on author](#replication-agents-on-author) is correctly configured.
+ >
+ >It is important to verify that the [replication agent on author](#replication-agents-on-author) is correctly configured.
+ >
 
-With the key material stored in the repository, the manner for replicating the crypto key from author to other instances is as follows :
+With the key material stored in the repository, the manner for replicating the crypto key from author to other instances is as follows:
 
-Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
+Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Browse to [https://&lt;server&gt;:&lt;port&gt;/crx/de](https://localhost:4502/crx/de)
 * Select `/etc/key`
@@ -349,18 +349,18 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [Refresh the Granite Crypto bundle](#refresh-the-granite-crypto-bundle)
 
-![](/help/communities/assets/chlimage_1-130.png)
+  ![chlimage_1-415](/assets/chlimage_1-415.png)
 
 #### Refresh the Granite Crypto Bundle {#refresh-the-granite-crypto-bundle}
 
 * On each publish instance, access the [Web Console](/help/sites-deploying/configuring-osgi.md)
 
-    * For example, [https://&lt;server&gt;:&lt;port&gt;/system/console/bundles](https://localhost:4503/system/console/bundles)
+  * For example, [https://&lt;server&gt;:&lt;port&gt;/system/console/bundles](https://localhost:4503/system/console/bundles)
 
 * Locate `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
 * Select **Refresh**
 
-![](/help/communities/assets/chlimage_1-131.png)
+  ![chlimage_1-416](/assets/chlimage_1-416.png)
 
 * After a moment, a **Success** dialog should appear :
   `Operation completed successfully.`
@@ -390,7 +390,7 @@ In particular, be careful to use the correct server name, not `localhost`, in th
 
 ### Dispatcher {#dispatcher}
 
-If using a Dispatcher, see :
+If using a Dispatcher, see:
 
 * AEM's [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) documentation
 * [Installing Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
