@@ -216,7 +216,7 @@ By default, the `AEM Communities Publisher Configuration` OSGi configuration is 
 
 Therefore, it is necessary to **edit the configuration on all secondary publish instances** to uncheck the **`Primary Publisher`** checkbox.
 
-![chlimage_1-411](/assets/chlimage_1-411.png)
+![chlimage_1-411](assets/chlimage_1-411.png)
 
 For all other (secondary) publish instances in a publish farm:
 
@@ -242,7 +242,7 @@ There are two replication agents in the author environment that need the transpo
 
 * Access the Replication console on author
 
-  * From global navigation, navigate to **[!UICONTROL Tools > Deployment > Replication > Agents on author]**
+  * From global navigation, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on author]**
 
 * Follow the same procecure for both agents :
 
@@ -260,11 +260,11 @@ The following images show the results of changing the port from 4503 to 6103 by:
 
 #### Default Agent (publish) {#default-agent-publish}
 
-![chlimage_1-412](/assets/chlimage_1-412.png)
+![chlimage_1-412](assets/chlimage_1-412.png)
 
 #### Reverse Replication Agent (publish reverse) {#reverse-replication-agent-publish-reverse}
 
-![chlimage_1-413](/assets/chlimage_1-413.png)
+![chlimage_1-413](assets/chlimage_1-413.png)
 
 ### Tunnel Service on Author {#tunnel-service-on-author}
 
@@ -287,7 +287,7 @@ To enable the tunnel service:
 * Check the **enable** box
 * Select **Save**
 
-  ![chlimage_1-414](/assets/chlimage_1-414.png)
+  ![chlimage_1-414](assets/chlimage_1-414.png)
 
 ### Replicate the Crypto Key {#replicate-the-crypto-key}
 
@@ -349,7 +349,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * [Refresh the Granite Crypto bundle](#refresh-the-granite-crypto-bundle)
 
-  ![chlimage_1-415](/assets/chlimage_1-415.png)
+  ![chlimage_1-415](assets/chlimage_1-415.png)
 
 #### Refresh the Granite Crypto Bundle {#refresh-the-granite-crypto-bundle}
 
@@ -360,7 +360,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 * Locate `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
 * Select **Refresh**
 
-  ![chlimage_1-416](/assets/chlimage_1-416.png)
+  ![chlimage_1-416](assets/chlimage_1-416.png)
 
 * After a moment, a **Success** dialog should appear :
   `Operation completed successfully.`
