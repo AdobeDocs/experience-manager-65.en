@@ -67,7 +67,7 @@ See [AEM Forms app (previously known as Mobile Workspace)](/help/forms/using/aem
 
 You can synchronize your app with the AEM Forms server and can work with forms on your mobile device.
 
-With AEM Forms Workflow server, a form can be associated with a startpoint in a workbench process and AEM Inbox application. An AEM Inbox application can have an adaptive form associated with it. A startpoint can have an adaptive form, HTML5 form, or a formset associated with it. A startpoint can be submitted as a task or the task can be saved as a draft. For more information on differences between an AEM Inbox application and a startpoint see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](/help/forms/using/capabilities-osgi-jee-workflows.md).
+With AEM Forms Workflow server, a form can be associated with a startpoint in a workbench process and AEM Inbox application. An AEM Inbox application can have an adaptive form associated with it. A startpoint can have an adaptive form, HTML5 form, or a formset associated with it. A startpoint can be submitted as a task or the task can be saved as a draft. For more information on differences between an AEM Inbox application and a startpoint see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).
 
 With AEM Forms server without AEM Forms workflow, a form enabled for syncing in the app is rendered in the AEM Forms app. Forms are available in the Forms tab of the app, can be submitted or saved as a draft. Adaptive forms and mobile forms are supported in the app.
 
@@ -118,7 +118,7 @@ See [Using autosave in AEM Forms app](/help/forms/using/autosave-data-app.md).
 
 ## Differences between AEM Inbox and AEM Forms app features {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Two of the prominent ways to launch a Forms-centric workflow are using [AEM Inbox](/help/forms/using/manage-applications-inbox.md) and AEM Forms app. The capabilities of AEM Inbox and AEM Forms app, however, differ. AEM Inbox works only with [Forms-centric workflows](/help/forms/using/aem-forms-workflow.md) while the AEM Forms app works with both Forms-centric workflows as well as process management. For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](/help/forms/using/capabilities-osgi-jee-workflows.md).
+Two of the prominent ways to launch a Forms-centric workflow are using [AEM Inbox](/help/forms/using/manage-applications-inbox.md) and AEM Forms app. The capabilities of AEM Inbox and AEM Forms app, however, differ. AEM Inbox works only with [Forms-centric workflows](/help/forms/using/aem-forms-workflow.md) while the AEM Forms app works with both Forms-centric workflows as well as process management. For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).
 
 ## Supported forms {#supported-forms}
 
