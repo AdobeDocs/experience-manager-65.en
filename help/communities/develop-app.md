@@ -25,13 +25,17 @@ The first step is to add a resource super type property to the `/apps/an-scf-san
 
 Using CRXDE Lite:
 
-<!--Resolve steps below-->
-    Name: `sling:resourceSuperType`
-    Type: `String`
-    Value: `foundation/components/page`
+1. Select node `/apps/an-scf-sandbox/components/playpage`.
+1. In properties tab, enter a new property with the following values:
+   
+   Name: `sling:resourceSuperType`
+   
+   Type: `String`
+   
+   Value: `foundation/components/page`
 
-1. Click the green **[!UICONTROL [+] Add]**
-1. Click **[!UICONTROL Save All]**
+1. Click the green **[!UICONTROL +Add]** button.
+1. Click **[!UICONTROL Save All]**.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
@@ -82,13 +86,13 @@ Using CRXDE Lite:
 
    To setup for authoring, overlay `body.jsp` with a local script and include a paragraph system (parsys) in the body:
 
-   1. Navigate to `/apps/an-scf-sandbox/components`
-   1. Select the `playpage`node
+   1. Navigate to `/apps/an-scf-sandbox/components`.
+   1. Select the `playpage` node.
    1. Right-click and select `Create > Create File...`
 
       * Name: **body.jsp**
 
-   1. Click **[!UICONTROL Save All]**
+   1. Click **[!UICONTROL Save All]**.
 
    Open `/apps/an-scf-sandbox/components/playpage/body.jsp` and paste in the following text:
 
@@ -108,7 +112,7 @@ Using CRXDE Lite:
    </body>
    ```
 
-1. Click **[!UICONTROL Save All]**
+1. Click **[!UICONTROL Save All]**.
 
 **View the page in a browser in edit mode:**
 
