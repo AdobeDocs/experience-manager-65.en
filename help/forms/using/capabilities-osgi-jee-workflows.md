@@ -204,6 +204,52 @@ Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE
    <td>Not Supported</td>
   </tr>
   <tr>
+   <td>Polling / Scheduling service <br /> </td>
+   <td>Available out of the box <br /> </td>
+   <td>Custom implementation required</td>
+  </tr>
+  <tr>
+   <td>Adaptive Forms app <br /> </td>
+   <td>Supported <br /> </td>
+   <td>Supported </td>
+  </tr>
+  <tr>
+   <td>Assembler Service<br /> </td>
+   <td>Supported <br /> </td>
+   <td>Supported </td>
+  </tr>
+  <tr>
+   <td>PDF Generator Service<br /> </td>
+   <td>Supported <br /> </td>
+   <td>Supported </td>
+  </tr>
+  <tr>
+   <td>Forms Service <br /> </td>
+   <td>Supported <br /> </td>
+   <td>Supported </td>
+  </tr>
+  <tr>
+   <td>Output Service <br /> </td>
+   <td>Supported <br /> </td>
+   <td>Supported </td>
+  </tr>
+  <tr>
+   <td>Document Assurance <br /> </td>
+   <td>Supported <br /> </td>
+   <td>Supported </td>
+  </tr>
+  <tr>
+   <td>Execute script <br /> </td>
+   <td>Supports ECMAScript <br /> </td>
+   <td>Supports Java code snippets</td>
+  </tr>
+  <tr>
+   <td>Assembler <br /> </td>
+   <td>Supported <br /> </td>
+   <td>Supported </td>
+  </tr>
+  
+  <tr>
    <td>HTML5 Forms, Interactive PDF Forms, Form Set<br /> </td>
    <td>Not Supported<br /> </td>
    <td>Supported</td>
