@@ -131,7 +131,7 @@ Further information on installing bundles is found on the [Web Console](/help/si
 
 #### Example : Installed MySQL Connector Bundle {#example-installed-mysql-connector-bundle}
 
-![chlimage-bundles](/assets/chlimage-bundles.png)
+![chlimage-bundles](assets/chlimage-bundles.png)
 
 ### SCORM Package {#scorm-package}
 
