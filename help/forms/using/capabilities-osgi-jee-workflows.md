@@ -204,65 +204,65 @@ Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE
    <td>Not Supported</td>
   </tr>
   <tr>
-   <td>Polling / Scheduling service <br /> </td>
-   <td>Available out of the box <br /> </td>
+   <td>Polling / Scheduling service</td>
+   <td>Available out of the box</td>
    <td>Custom implementation required</td>
   </tr>
   <tr>
-   <td>Adaptive Forms app <br /> </td>
-   <td>Supported <br /> </td>
+   <td>Adaptive Forms app</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>Assembler Service</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>PDF Generator Service</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>Forms Service</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>Output Service</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>Document Assurance</td>
+   <td>Supported</td>
    <td>Supported </td>
   </tr>
   <tr>
-   <td>Assembler Service<br /> </td>
-   <td>Supported <br /> </td>
-   <td>Supported </td>
-  </tr>
-  <tr>
-   <td>PDF Generator Service<br /> </td>
-   <td>Supported <br /> </td>
-   <td>Supported </td>
-  </tr>
-  <tr>
-   <td>Forms Service <br /> </td>
-   <td>Supported <br /> </td>
-   <td>Supported </td>
-  </tr>
-  <tr>
-   <td>Output Service <br /> </td>
-   <td>Supported <br /> </td>
-   <td>Supported </td>
-  </tr>
-  <tr>
-   <td>Document Assurance <br /> </td>
-   <td>Supported <br /> </td>
-   <td>Supported </td>
-  </tr>
-  <tr>
-   <td>Execute script <br /> </td>
-   <td>Supports ECMAScript <br /> </td>
+   <td>Execute script</td>
+   <td>Supports ECMAScript</td>
    <td>Supports Java code snippets</td>
   </tr>
   <tr>
-   <td>Assembler <br /> </td>
-   <td>Supported <br /> </td>
-   <td>Supported </td>
+   <td>Assembler</td>
+   <td>Supported</td>
+   <td>Supported</td>
   </tr>
   
   <tr>
-   <td>HTML5 Forms, Interactive PDF Forms, Form Set<br /> </td>
-   <td>Not Supported<br /> </td>
+   <td>HTML5 Forms, Interactive PDF Forms, Form Set</td>
+   <td>Not Supported</td>
    <td>Supported</td>
   </tr>
   <tr>
    <td>Process Reporting</td>
-   <td>Not Supported<br /> </td>
-   <td>Supported<br /> </td>
+   <td>Not Supported</td>
+   <td>Supported</td>
   </tr>
   <tr>
    <td>Digital Signature</td>
-   <td>Supported<br /> </td>
-   <td>Supported<br /> </td>
+   <td>Supported</td>
+   <td>Supported</td>
   </tr>
   <tr>
    <td>Startpoint categories</td>
