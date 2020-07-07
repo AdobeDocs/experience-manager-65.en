@@ -153,8 +153,8 @@ Include the client library folder in the JSP script of your page component to ge
 ```
 
 >[!NOTE]
-> The `apps.weretail.all` client library folder embeds the clientlibs library.
 >
+>The `apps.weretail.all` client library folder embeds the clientlibs library.
 
 The JSP script generates the following HTML code that references the style sheets:
 

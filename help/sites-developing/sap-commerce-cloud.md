@@ -217,8 +217,8 @@ Any product resource can be represented by a `Product API`. Most calls in the pr
 >1. `size`
 >
 >1. plus one more
->   This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
 >
+>   This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
 
 #### Product References and Product Data {#product-references-and-product-data}
 

@@ -10,7 +10,7 @@ You can create a private folder in the Adobe Experience Manager Assets user inte
 
 >[!NOTE]
 >
-> Private folder has at least one member with Owner role.
+>Private folder has at least one member with Owner role.
 
 1. In the Assets console, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
 
