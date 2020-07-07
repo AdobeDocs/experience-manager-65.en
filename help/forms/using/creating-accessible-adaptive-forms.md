@@ -118,7 +118,7 @@ To use the Accessibility option, follow these steps:
 
 >[!NOTE]
 >
-> * Radio Button and Check-box can have only two options for accessibility namely, Custom Text and Title.
+>* Radio Button and Check-box can have only two options for accessibility namely, Custom Text and Title.
 >* For XFA-based adaptive forms, the accessibility option is inherited from the accessibility options set in the XDP. Tool tips from XDP are mapped to the Short Description and Caption are mapped to Title. The other options work as is.
 
 ### 3. Provide text equivalents for images {#provide-text-equivalents-for-images}

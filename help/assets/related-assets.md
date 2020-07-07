@@ -10,9 +10,9 @@ contentOwner: AG
 
 Using this feature, you have the flexibility to share a low resolution PDF file or JPG file with vendors or agencies and make the high resolution INDD file available only on request.
 
+>[!NOTE]
 >
->[!NOTE] Only the users with edit permissions on assets can relate and unrelate the assets.
->
+>Only the users with edit permissions on assets can relate and unrelate the assets.
 
 ## Relate assets {#relating-assets}
 

@@ -123,10 +123,9 @@ Any product resource can be represented by a `Product API`. Most calls in the pr
 >While products (in general) can have many variant axes, the out-of-the-box product component only handles two:
 >
 >1. `size`
->
 >1. plus one more
->   This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
 >
+>   This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
 
 #### Product References and PIM Data {#product-references-and-pim-data}
 

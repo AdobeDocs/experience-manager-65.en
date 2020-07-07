@@ -25,6 +25,7 @@ docset: aem65
 >6.5.2.0:
 >
 >* Experience Fragments can be exported to either:
+>
 >   * the default workspace.
 >   * a named workspace, specified in the Cloud Configuration.
 >* AEM must be [integrated with Adobe Target using Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
