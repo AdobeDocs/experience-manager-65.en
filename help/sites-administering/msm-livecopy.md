@@ -226,9 +226,19 @@ Roll out a blueprint page to push content changes to live copies. A **Rollout** 
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. Specify the pages and any sub-pages, then confirm with the checkmark:
+1. Specify the pages and any sub-pages, then confirm with the check mark:
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
+
+1. Specify if the rollout job should be executed immediately (**Now**) or at another date/time (**Later**).
+
+   ![Rollout blueprint](assets/rollout-blueprint.png)
+
+Rollouts are processed as asynchronous jobs and can be checked in the **Async Jobs Status** dashboard at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
+
+>[!NOTE]
+>
+>Asynchronous rollout processing requires AEM 6.5.3.0 or higher. In previous versions, pages were processed immediately and synchronously.
 
 #### Roll Out a Blueprint from the Reference Rail {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -242,13 +252,19 @@ Roll out a blueprint page to push content changes to live copies. A **Rollout** 
 
       Specify whether the scope is for the selected page alone, or should include subpages.
 
-    * **Background rollout**:
+    * **Schedule**:
 
-      If many pages/subpages are involved you can run the rollout as a background task.
+      Specify if the rollout job should be executed immediately (**Now**) or at a later date/time (**Later**).
 
-   ![chlimage_1-222](assets/chlimage_1-222.png)
+      ![chlimage_1-222](assets/rollout-live-copy.png)
 
 1. After confirming these details, select **Rollout** to perform the action.
+
+Rollouts are processed as asynchronous jobs and can be checked in the **Async Jobs Status** dashboard at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
+
+>[!NOTE]
+>
+>Asynchronous rollout processing requires AEM 6.5.3.0 or higher. In previous versions, pages were processed immediately and synchronously unless the **Background rollout** option was checked.
 
 #### Roll Out a Blueprint from the Live Copy Overview {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -256,9 +272,19 @@ The [Rollout action is also available from the Live Copy Overview](/help/sites-a
 
 1. Open the [Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) and select a Blueprint Page.
 1. Select **Rollout** from the toolbar.
-1. Specify the pages and any sub-pages, then confirm with the checkmark:
+1. Specify the pages and any sub-pages, then confirm with the check mark:
 
    ![chlimage_1-223](assets/chlimage_1-223.png)
+
+1. Specify if the rollout job should be executed immediately (**Now**) or at another date/time (**Later**).
+
+   ![Rollout blueprint](assets/rollout-blueprint.png)
+
+Rollouts are processed as asynchronous jobs and can be checked in the **Async Jobs Status** dashboard at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
+
+>[!NOTE]
+>
+>Asynchronous rollout processing requires AEM 6.5.3.0 or higher. In previous versions, pages were processed immediately and synchronously.
 
 ### Synchronizing a Live Copy {#synchronizing-a-live-copy}
 

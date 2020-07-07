@@ -402,6 +402,10 @@ The status of asynchronous jobs can be checked in the **Async Jobs Status** dash
 >
 >For further information about asynchronous job processing and how to configure the limit for page move/rename actions, please see the [Asynchronous Jobs](/help/sites-administering/asyncrhonous-jobs.md) document in the Administration user guide.
 
+>[!NOTE]
+>
+>Asynchronous page move processing requires AEM 6.5.3.0 or higher.
+
 ### Deleting a Page {#deleting-a-page}
 
 1. Navigate until you can see the page you want to delete.
