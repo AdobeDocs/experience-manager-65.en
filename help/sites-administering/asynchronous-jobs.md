@@ -5,14 +5,14 @@ description: Experience Manager Assets optimizes performance by asynchronously c
 
 # Asynchronous Operations {#asynchronous-operations}
 
-To reduce adverse impact on performance, Adobe Experience Manger processes certain long-running and resource-intensive asset operations asynchronously.
+To reduce negative impact on performance, Adobe Experience Manger processes certain long-running and resource-intensive operations asynchronously.
 
 These operations include:
 
 * Deleting many assets
 * Moving many assets or assets with many references
-* Exporting/importing asset metadata in bulk.
-* Fetching assets, that are above the threshold limit set, from a remote Experience Manager deployment.
+* Exporting/importing asset metadata in bulk
+* Fetching assets, which are above the threshold limit set, from a remote Experience Manager deployment
 * Moving pages
 * Rolling out Live Copies
 
@@ -22,7 +22,7 @@ You can view the status of asynchronous jobs from the **[!UICONTROL Async Job St
 
 >[!NOTE]
 >
->By default, jobs in Assets run in parallel. If N is the number of CPU cores, N/2 jobs can run in parallel, by default. To use custom settings for the job queue, modify the **[!UICONTROL Async Operation Default Queue Config]** and the A**sync Operation Page Move and Rollout Config** from the web console.
+>By default, asynchronous jobs run in parallel. If *`n`* is the number of CPU cores, *`n/2`* jobs can run in parallel, by default. To use custom settings for the job queue, modify the **[!UICONTROL Async Operation Default Queue Config]** and the A**sync Operation Page Move and Rollout Config** from the web console.
 >
 >For more information, see [queue configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
@@ -72,7 +72,7 @@ AEM runs a purge job everyday at 01:00 to delete completed asynchronous jobs tha
 
 You can modify the schedule for the purge job and the duration for which details of completed jobs are retained before they are deleted. You can also configure the maximum number of completed jobs for which details are retained at any point of time.
 
-1. In the Experience Manager interface click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. From the Global Navigation click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. Open the **[!UICONTROL Adobe Granite Async Jobs Purge Scheduled Job]** job.
 1. Specify:
    * The threshold number of days after which completed jobs are deleted.
@@ -91,11 +91,11 @@ You can configure the threshold number of assets, pages, or references for AEM t
 
 If the number of assets or folders to be deleted exceeds the threshold number, the delete operation is performed asynchronously.
 
-1. In the Experience Manager interface click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. From the Global Navigation click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the web console, open the **[!UICONTROL Async Process Default Queue Configuration.]**
 1. In the **[!UICONTROL Threshold number of assets]** box, specify the threshold number of assets/folders for asynchronous processing of delete operations.
 
-   ![delete_threshold](assets/async-delete-threshold.png)
+   ![Asset delete threshold](assets/async-delete-threshold.png)
 
 1. Check the option **Enable email notification** to receive email notifications for this job status. e.g. success, failed.
 1. Save the changes.
@@ -104,11 +104,11 @@ If the number of assets or folders to be deleted exceeds the threshold number, t
 
 If the number of assets/folders or references to be moved exceeds the threshold number, the move operation is performed asynchronously.
 
-1. In the Experience Manager interface click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. From the Global Navigation click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the web console, open the **[!UICONTROL Async Move Operation Job Processing Configuration.]**
 1. In the **[!UICONTROL Threshold number of assets/references]** box, specify the threshold number of assets/folders or references for asynchronous processing of move operations.
 
-   ![move_threshold](assets/async-move-threshold.png)
+   ![Asset move threshold](assets/async-move-threshold.png)
 
 1. Check the option **Enable email notification** to receive email notifications for this job status. e.g. success, failed.
 1. Save the changes.
@@ -117,21 +117,21 @@ If the number of assets/folders or references to be moved exceeds the threshold 
 
 If the number of references to the page(s) to be moved exceeds the threshold number, the move operation is performed asynchronously.
 
-1. In the Experience Manager interface click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. From the Global Navigation click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the web console, open the **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
 1. In the **[!UICONTROL Threshold number of references]** field, specify the threshold number of references for asynchronous processing of page move operations.
 
-   ![move_threshold](assets/async-page-move.png)
+   ![Page move threshold](assets/async-page-move.png)
 
 1. Check the option **Enable email notification** to receive email notifications for this job status. e.g. success, failed.
 1. Save the changes.
 
 ### Configure Asynchronous MSM Operations {#configuring-asynchronous-msm-operations}
 
-1. In the Experience Manager interface click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. From the Global Navigation click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the web console, open the **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
 1. Check the option **Enable email notification** to receive email notifications for this job status. e.g. success, failed.
 
-   ![move_threshold](assets/async-msm.png)
+   ![MSM config](assets/async-msm.png)
 
 1. Save the changes.

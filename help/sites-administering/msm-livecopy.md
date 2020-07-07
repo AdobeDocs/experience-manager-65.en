@@ -1,14 +1,6 @@
 ---
 title: Creating and Synchronizing Live Copies
-seo-title: Creating and Synchronizing Live Copies
 description: Learn how to create and synchronize Live Copies.
-seo-description: Learn how to create and synchronize Live Copies.
-uuid: f6f410d4-8c72-48b7-a217-afd6076b512d
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 ---
 
 # Creating and Synchronizing Live Copies{#creating-and-synchronizing-live-copies}
@@ -124,7 +116,7 @@ To create a live copy:
 1. Use the **Exclude sub pages** checkbox:
 
     * Selected: create a live copy of the selected page only (shallow live copy)
-    * Not Selected: create a live copy that includes all descendents of the selected page (deep live copy)
+    * Not Selected: create a live copy that includes all descendants of the selected page (deep live copy)
 
 1. (Optional) To specify one or more rollout configurations to use for the livecopy, use the **Rollout Configs** drop-down list to select them; selected configurations will be shown underneath the drop-down selector.
 1. Click or tap **Create**. A confirmation message will be shown, from here you can select either **Open** or **Done**.
@@ -145,7 +137,7 @@ When you create the site, provide values for the following properties:
 * **Initial Chapters**: The child pages of the blueprint language branches to include in the live copy.
 * **Destination Path**: The location of the root page of the live copy site.
 * **Title**: The title of the root page of the live copy site.
-* **Name**: (Optional) The name of the JCR node that stores the root page of the live copy. The defaut value is based on the title.
+* **Name**: (Optional) The name of the JCR node that stores the root page of the live copy. The default value is based on the title.
 * **Site Owner**: (Optional)
 * **Live Copy**: Select this option to establish a live relationship with the source site. If you do not select this option, a copy of the blueprint is created but is not subsequently synchronized with the source.
 * **Rollout Configs**: (Optional) Select one or more rollout configurations to use for synchronizing the live copy. By default, the rollout configurations are inherited from the blueprint; see [Specifying the Rollout Configurations to Use](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) for more details.
@@ -182,9 +174,9 @@ The properties of a live copy page show the following information about the live
 * **Status**: The synchronization status of the live copy. The status includes whether the live copy is up to date with the source, and when the last synchronization occurred and who performed the synchronization.
 * **Configuration**:
 
-    * Whether the page is still subject to live copy inheritance.
-    * Whether the configuration is inherited from the parent page.
-    * Any rollout configurations that the live copy uses.
+  * Whether the page is still subject to live copy inheritance.
+  * Whether the configuration is inherited from the parent page.
+  * Any rollout configurations that the live copy uses.
 
 To view the properties:
 
@@ -323,7 +315,7 @@ The [Synchronize action is also available from the Live Copy Overview](/help/sit
 
 To change live copy content, you can:
 
-* Add parapraphs to the page.
+* Add paragraphs to the page.
 * Update existing content by breaking the live copy inheritance for any page or component.
 
 >[!NOTE]
@@ -363,7 +355,7 @@ You can suspend the live copy inheritance for a live copy page so that you can c
 
 To suspend inheritance on a page:
 
-1. Open the properies of the live copy page either using the **View Properties** command of the **Sites** console or using **Page Information** on the page toolbar.
+1. Open the properties of the live copy page either using the **View Properties** command of the **Sites** console or using **Page Information** on the page toolbar.
 1. Click or tap the **Live Copy** tab.
 1. Select **Suspend** from the toolbar. You can then select either:
 
@@ -385,7 +377,7 @@ The [Suspend action is also available from the Live Copy Overview](/help/sites-a
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
-1. Confirm the **Suspend** action in the **Suspend Live Copy **dialog:
+1. Confirm the **Suspend** action in the **Suspend Live Copy** dialog:
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
@@ -411,7 +403,7 @@ Once [suspended](#suspending-inheritance-from-page-properties) the **Resume** ac
 
 ![chlimage_1-229](assets/chlimage_1-229.png)
 
-When selected, the dialog will be shown. You can select a synchronization, if required, theb confirm the action.
+When selected, the dialog will be shown. You can select a synchronization, if required, then confirm the action.
 
 #### Resume a Live Copy Page from the Live Copy Overview {#resume-a-live-copy-page-from-the-live-copy-overview}
 
@@ -419,7 +411,7 @@ The [Resume action is also available from the Live Copy Overview](/help/sites-ad
 
 1. Open the [Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) and select a Live Copy Page that has been suspended; will be shown as **INHERITANCE CANCELLED**.
 1. Select **Resume** from the toolbar.
-1. Indicate whether you want to synchronize the page after reverting inheritance, then confirm the **Resume** action in the **Resume Live Copy **dialog.
+1. Indicate whether you want to synchronize the page after reverting inheritance, then confirm the **Resume** action in the **Resume Live Copy** dialog.
 
 ### Changing Inheritance Depth (Shallow/Deep) {#changing-inheritance-depth-shallow-deep}
 
@@ -427,20 +419,20 @@ On an existing live copy you can change the depth for a page; i.e. whether child
 
 * Switching to a shallow live copy:
 
-    * Will have immediate effect and is non-reversible.
+  * Will have immediate effect and is non-reversible.
 
-        * Child pages are explicitly detached from the live copy. Further modifications on children cannot be preserved if undone.
+    * Child pages are explicitly detached from the live copy. Further modifications on children cannot be preserved if undone.
 
     * Will remove any descendant `LiveRelationships` even if there are nested `LiveCopies`.
 
 * Switching to a deep live copy:
 
-    * Child-pages remain untouched.
-    * To see the effect of the switch, you can make a roll-out, any content modifications are applied according the roll-out configuration.
+  * Child-pages remain untouched.
+  * To see the effect of the switch, you can make a roll-out, any content modifications are applied according the roll-out configuration.
 
 * Switching to a shallow live copy, then back to deep:
 
-    * All children of the (formerly) shallow live copy are treated as if they had been created manually and are therefore moved away using `[oldname]_msm_moved name`.
+  * All children of the (formerly) shallow live copy are treated as if they had been created manually and are therefore moved away using `[oldname]_msm_moved name`.
 
 To specify or change the depth:
 
@@ -475,7 +467,7 @@ Cancel inheritance to change the component content or delete the component:
 
 1. On the component toolbar, click or tap the **Cancel Inheritance** icon.
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![Image](do-not-localize/chlimage_1-8.png)
 
 1. In the Cancel Inheritance dialog box, confirm the action with **Yes**.
 
@@ -483,9 +475,9 @@ Cancel inheritance to change the component content or delete the component:
 
 ### Re-enabling Inheritance for a Component {#re-enabling-inheritance-for-a-component}
 
-To enable inhertance for a component, click or tap the **Re-enable Inheritance** icon on the component toolbar.
+To enable inheritance for a component, click or tap the **Re-enable Inheritance** icon on the component toolbar.
 
-![](do-not-localize/chlimage_1-9.png)
+![image](do-not-localize/chlimage_1-9.png)
 
 ### Changing the Order of Components on a Live Copy Page {#changing-the-order-of-components-on-a-live-copy-page}
 
@@ -499,7 +491,7 @@ If a live copy contains components that are part of a paragraph system, inherita
 >
 >When reverting a cancelled inheritance on a paragraph system, the order of components **will not be automatically restored** from the blueprint. You can manually request a synchronization if this is required.
 
-Use the following procedure to cancel inheritance of the paragaraph system.
+Use the following procedure to cancel inheritance of the paragraph system.
 
 1. Open the live copy page.
 1. Drag an existing component to a new location on the page.
@@ -523,18 +515,18 @@ You can later re-enable inheritance for a property if required.
 >
 >When you re-enable inheritance, the live copy page property is not automatically synchronized with the source property. You can manually request a synchronization if this is required.
 
-1. Open the properies of the live copy page using either the **View Properites** option of the **Sites** console or **Page Information** icon on the page toolbar.
+1. Open the properties of the live copy page using either the **View Properties** option of the **Sites** console or **Page Information** icon on the page toolbar.
 1. To cancel inheritance of a property, click or tap the link icon that appears to the right of the property.
 
-   ![](do-not-localize/chlimage_1-10.png)
+   ![image](do-not-localize/chlimage_1-10.png)
 
 1. In the **Cancel Inheritance** confirmation dialog, click or tap **Yes**.
 
 ### Revert Properties of a Live Copy Page {#revert-properties-of-a-live-copy-page}
 
-To enable inhertance for a property, click or tap the **Revert Inheritance** icon that appears next to the property.
+To enable inheritance for a property, click or tap the **Revert Inheritance** icon that appears next to the property.
 
-![](do-not-localize/chlimage_1-11.png)
+![image](do-not-localize/chlimage_1-11.png)
 
 ### Resetting a Live Copy Page {#resetting-a-live-copy-page}
 
@@ -610,8 +602,8 @@ There are implications on where within the tree that you use **Detach**:
 
   When this operation is performed on a sub-page (or branch) within a live copy:
 
-    * the live relationship is removed for that sub-page (or branch)
-    * and the (sub-)pages in the live copy branch are treated as if they had been manually created.
+  * the live relationship is removed for that sub-page (or branch)
+  * and the (sub-)pages in the live copy branch are treated as if they had been manually created.
 
   *However*, the sub-pages are still subject to the live relationship of the parent branch so a further rollout of the blueprint page(s) will both:
 
@@ -646,4 +638,3 @@ The [Detach action is also available from the Live Copy Overview](/help/sites-ad
 1. Confirm the **Detach** action in the **Detach Live Copy** dialog:
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
-
