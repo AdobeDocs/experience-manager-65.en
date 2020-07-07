@@ -39,9 +39,9 @@ This help describes the following two use-cases:
 
 The information provided is based on the assumption that anyone reading this Help is familiar with the following technologies:
 
-* Installing, configuring, and administering Adobe Experience Manager and AEM packages
+* Installing, configuring, and administering Adobe Experience Manager and AEM packages.
 
-* Using Linux and Microsoft Windows operating systems
+* Using Linux and Microsoft Windows operating systems.
 
 ## Prerequisites {#prerequisites}
 
@@ -336,8 +336,9 @@ Perform the following steps to validate the configuration:
 
 
    >[!NOTE]
-   >
-   >The replication agents work in parallel and share the job distribution equally, thereby increasing the publishing speed by four times the original speed. After the cloud service is configured, additional configuration is not required to enable the replication agents that are activated by default to enable parallel publishing of multiple assets.
+    >
+    >The replication agents work in parallel and share the job distribution equally, thereby increasing the publishing speed by four times the original speed. After the cloud service is configured, additional configuration is not required to enable the replication agents that are activated by default to enable parallel publishing of multiple assets.
+    >
 
 
 1. To verify the connection between AEM Assets and Brand Portal, click **[!UICONTROL Test Connection]**.
@@ -352,8 +353,9 @@ Perform the following steps to validate the configuration:
 
 
    >[!NOTE]
-   >
-   >Avoid disabling any of the replication agents, as it can cause the replication of some of the assets to fail.
+    >
+    >Avoid disabling any of the replication agents. It may cause the replication of some of the assets to fail.
+    >
 
 Your AEM Assets author instance is successfully configured with Brand Portal, you can now:
 
@@ -371,7 +373,7 @@ Perform the following steps in the listed sequence to upgrade existing configura
 
 ### Verify running jobs {#verify-jobs}
 
-Ensure that no publishing job is running on your AEM Assets author instance before you make any modifications. For that, you can verify all four replication agents and ensure that the queue is ideal/empty.  
+Ensure that no publishing job is running on your AEM Assets author instance before you make any modifications. For that, you can verify all four replication agents and ensure that the queues are empty.  
 
 1. Log in to your AEM Assets author instance.
 
@@ -411,7 +413,7 @@ You must run the following check-list while deleting the existing configurations
    ![](assets/delete-mac-user.png)
 
 
-You can now [create configuration](#configure-new-integration-65) on your AEM 6.5 author instance. 
+You can now [create configuration](#configure-new-integration-65) via Adobe Developer Console on your AEM 6.5 author instance. 
 
 
 
@@ -427,8 +429,4 @@ You can now [create configuration](#configure-new-integration-65) on your AEM 6.
    <li>Step text</li>
    -->
 
-After replication succeeds, you can publish assets, folders, and collections to Brand Portal. For details, see:
 
-* [Publish assets to Brand Portal](/help/assets/brand-portal-publish-assets.md)
-* [Publish folders to Brand Portal](/help/assets/brand-portal-publish-folder.md)
-* [Publish Collections to Brand Portal](/help/assets/brand-portal-publish-collection.md)
