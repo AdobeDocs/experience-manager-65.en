@@ -10,6 +10,7 @@ user-guide-title: AEM 6.5 Administering User Guide
 + [Administering User Guide overview](home.md)
 + Sites Features {#introduction}
     + [Website Administration](msm-and-translation.md)
+    + [Asynchronous Jobs](asynchronous-jobs.md)
     + [Reusing Content: Multi Site Manager and Live Copy](msm.md)
     + [Live Copy Overview Console](msm-livecopy-overview.md)
     + [Configuring Live Copy Synchronization](msm-sync.md)

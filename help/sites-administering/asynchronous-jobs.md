@@ -26,7 +26,7 @@ You can view the status of asynchronous jobs from the **[!UICONTROL Async Job St
 >
 >For more information, see [queue configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
-## Monitor the Status of Asynchronous Operations {#monitoring-the-status-of-asynchronous-operations}
+## Monitor the Status of Asynchronous Operations {#monitor-the-status-of-asynchronous-operations}
 
 Whenever AEM processes an operation asynchronously, you receive a notification in your inbox and through email (if enabled).
 

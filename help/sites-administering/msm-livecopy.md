@@ -234,7 +234,7 @@ Roll out a blueprint page to push content changes to live copies. A **Rollout** 
 
    ![Rollout blueprint](assets/rollout-blueprint.png)
 
-Rollouts are processed as asynchronous jobs and can be checked in the **Async Jobs Status** dashboard at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status** dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
 
 >[!NOTE]
 >
@@ -260,7 +260,7 @@ Rollouts are processed as asynchronous jobs and can be checked in the **Async Jo
 
 1. After confirming these details, select **Rollout** to perform the action.
 
-Rollouts are processed as asynchronous jobs and can be checked in the **Async Jobs Status** dashboard at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status** dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
 
 >[!NOTE]
 >
@@ -280,7 +280,7 @@ The [Rollout action is also available from the Live Copy Overview](/help/sites-a
 
    ![Rollout blueprint](assets/rollout-blueprint.png)
 
-Rollouts are processed as asynchronous jobs and can be checked in the **Async Jobs Status** dashboard at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status** dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
 
 >[!NOTE]
 >

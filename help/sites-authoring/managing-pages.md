@@ -396,11 +396,11 @@ However, if the number of pages impacted is above a defined limit, the action wi
 
       ![Asynchronous page move](assets/asynchronous-page-move.png)
 
-The status of asynchronous jobs can be checked in the **Async Jobs Status** dashboard at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
+The status of asynchronous jobs can be checked in the [**Async Jobs Status** dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
 
 >[!NOTE]
 >
->For further information about asynchronous job processing and how to configure the limit for page move/rename actions, please see the [Asynchronous Jobs](/help/sites-administering/asyncrhonous-jobs.md) document in the Administration user guide.
+>For further information about asynchronous job processing and how to configure the limit for page move/rename actions, please see the [Asynchronous Jobs](/help/sites-administering/asynchronous-jobs.md) document in the Administration user guide.
 
 >[!NOTE]
 >
