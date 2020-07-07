@@ -46,11 +46,10 @@ Once the high performance temporary volume is ready, set the JVM parameter `-Dja
 
 ### Java version {#java-version}
 
-Adobe recommends deploying [!DNL Experience Manager Assets] on Java 8 for optimum performance. 
+Adobe recommends deploying [!DNL Experience Manager Assets] on Java 8 for optimum performance.
 
->[!NOTE]
->
->Oracle stopped releasing updates for Java 7 as of April 2015.
+<!-- TBD: Link to the latest official word around Java.
+-->
 
 ### JVM parameters {#jvm-parameters}
 
@@ -124,7 +123,7 @@ Wherever possible, set the [!UICONTROL DAM Update Asset] workflow to Transient. 
 
 1. Navigate to `/miscadmin` in the [!DNLExperience Manager] instance at `https://[aem_server]:[port]/miscadmin`.
 
-1. Expand **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]** &gt; **[!UICONTROL dam]**.
+1. Expand **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL dam]**.
 
 1. Open **[!UICONTROL DAM Update Asset]**. From the floating tool panel, switch to the **[!UICONTROL Page]** tab, and then click **[!UICONTROL Page Properties]**.
 

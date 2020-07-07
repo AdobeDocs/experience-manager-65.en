@@ -133,7 +133,7 @@ Serial uploading of assets is enabled by default. To disable the feature and all
 
 ### Upload assets using FTP {#uploading-assets-using-ftp}
 
-Dynamic Media enables batch uploading of assets via FTP server. If you intend to upload large assets (&gt; 1 GB) or upload entire folders and sub-folders, you should use FTP. You can even set up FTP upload to occur on a recurring scheduled basis.
+Dynamic Media enables batch uploading of assets via FTP server. If you intend to upload large assets (>1 GB) or upload entire folders and sub-folders, you should use FTP. You can even set up FTP upload to occur on a recurring scheduled basis.
 
 >[!NOTE]
 >

@@ -10,7 +10,7 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 
 ## Add a metadata profile {#adding-a-metadata-profile}
 
-1. Navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]** and click **[!UICONTROL Create]**.
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]** and click **[!UICONTROL Create]**.
 1. Enter a title for the Metadata Profile, for example Sample Metadata, and click **[!UICONTROL Create]**. The [!UICONTROL Edit Form] for the metadata profile is displayed.
 
    ![chlimage_1-197](assets/chlimage_1-480.png)
@@ -101,7 +101,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 Follow the steps to apply metadata profile:
 
-1. Click the Experience Manager logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Click the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
 1. Select the metadata profile that you want to apply to a folder or multiple folders.
 
    ![chlimage_1-207](assets/chlimage_1-490.png)
@@ -143,7 +143,7 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 
 ### Remove metadata profiles from folders via Profiles user interface {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Click the Experience Manager logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Click the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
 1. Select the metadata profile that you want to remove from a folder or multiple folders.
 1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
 

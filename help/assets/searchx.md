@@ -24,7 +24,7 @@ To overlay the pre-configured predicates, copy the `facets` node from `/libs/dam
 
 >[!NOTE]
 >
->By default, the directory structure under / `apps` does not exist and needs to be created. Ensure that the node types match those under / `libs`.
+>By default, the directory structure under `/apps` does not exist so create it. Ensure that the node types match those under `/libs`.
 
 ## Add tabs {#adding-tabs}
 

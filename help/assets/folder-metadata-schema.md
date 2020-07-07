@@ -101,7 +101,7 @@ If you configure a metadata schema for a folder, the path to the schema form is 
 
 ### Assign to a schema from the Folder Metadata Schema page {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]**> **[!UICONTROL Folder Metadata Schemas]**.
+1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
 1. From the Folder Metadata Schema Forms page, select the schema form you want to apply to a folder.
 1. From the toolbar, click **[!UICONTROL Apply to Folder(s)]**.
 

@@ -82,7 +82,7 @@ For the supported assets with multi-page formats &mdash; PDF files, AI files, [!
 
 Subasset generation is disabled by default. To enable subasset generation, follow these steps:
 
-1. Log into [!DNL Experience Manager] as an administrator. Access **[!UICONTROL Tools > Workflow > Models]**.
+1. Log into [!DNL Experience Manager] as an administrator. Access **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Select **[!UICONTROL DAM Update Asset]** workflow and click **[!UICONTROL Edit]**.
 1. Click **[!UICONTROL Toggle Side Panel]** and locate the **[!UICONTROL Create Sub Asset]** step. Add the step to the workflow. Click **[!UICONTROL Sync]**.
 
@@ -92,7 +92,7 @@ To generate the subassets do one of the following:
 * Existing multi-page assets: Manually execute the [!UICONTROL DAM Update Assets] workflow following either of the steps:
 
   * Select an asset and click [!UICONTROL Timeline] to open the left panel. Alternately, use the keyboard shortcut `alt + 3`. Click [!UICONTROL Start Workflow], select [!UICONTROL DAM Update Asset], click [!UICONTROL Start], and click [!UICONTROL Proceed].
-  * Select an asset and click [!UICONTROL Create > Workflow] from the toolbar. From the popup dialog, select [!UICONTROL DAM Update Asset] workflow, click [!UICONTROL Start], and click [!UICONTROL Proceed].
+  * Select an asset and click [!UICONTROL Create] > [!UICONTROL Workflow] from the toolbar. From the popup dialog, select [!UICONTROL DAM Update Asset] workflow, click [!UICONTROL Start], and click [!UICONTROL Proceed].
 
 Specifically for Microsoft Word documents, execute the **[!UICONTROL DAM Parse Word Documents]** workflow. It generates a `cq:Page` component from the contents of the Microsoft Word document. The images extracted from the document are referenced from the `cq:Page` component. These images are extracted even if subasset generation is disabled.
 
