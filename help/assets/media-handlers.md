@@ -14,15 +14,13 @@ Media handlers are services in [!DNL Assets] that perform specific actions on as
 
 >[!NOTE]
 >
->Please refer to the [Assets supported formats](assets-formats.md) page for a description of all the formats supported by [!DNL Assets] as well as features supported for each format.
+>See the [Assets supported formats](assets-formats.md) page for a description of all the formats supported by [!DNL Assets] as well as features supported for each format.
 
 ## Default media handlers {#default-media-handlers}
 
 The following media handlers are available within [!DNL Assets] and handle the most common MIME types:
 
-<!-- TBD: 
-* Apply correct formatting once table is moved to MD.
-* Java versions shouldn't be set to 1.5. Must be updated.
+<!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
 -->
 
 | Handler name | Service Name (in the system console) | Supported MIME types |
@@ -133,7 +131,7 @@ After you perform the following procedure, when you upload a TXT file into [!DNL
 
 1. In Eclipse, create `myBundle` [!DNL Maven] project:
 
-    1. In the Menu bar, click **[!UICONTROL File > New > Other]**.
+    1. In the Menu bar, click **[!UICONTROL File]** > **[!UICONTROL New]** > **[!UICONTROL Other]**.
     1. In the dialog, expand the [!DNL Maven] folder, select [!DNL Maven] project and click **[!UICONTROL Next]**.
     1. Check the Create a simple project box and the Use default Workspace locations box, then click **[!UICONTROL Next]**.
     1. Define a [!DNL Maven] project:
@@ -496,9 +494,9 @@ Separate the values of the [!UICONTROL Process Arguments] using comma and do not
 
 | Argument-Format | Description |
 |---|---|
-| mime:&lt;mime-type&gt; | Optional argument. The process is applied if the asset has the same MIME type as the one of the argument. <br>Several MIME types can be defined. |
-| tn:&lt;width&gt;:&lt;height&gt; | Optional argument. The process creates a thumbnail with the dimensions defined in the argument. <br>Several thumbnails can be defined. |
-| cmd: &lt;command&gt; | Defines the command that will be executed. The syntax depends on the command line tool. Only one command can be defined. <br>The following variables can be used to create the command:<br>`${filename}`: name of the input file, for example original.jpg <br> `${file}`: full path name of the input file, for example /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: directory of the input file, for example /tmp/cqdam0816.tmp <br>`${basename}`: name of the input file without its extension, for example original <br>`${extension}`: extension of the input file, for example JPG. |
+| mime:<mime-type> | Optional argument. The process is applied if the asset has the same MIME type as the one of the argument. <br>Several MIME types can be defined. |
+| tn:<width>:<height> | Optional argument. The process creates a thumbnail with the dimensions defined in the argument. <br>Several thumbnails can be defined. |
+| cmd: <command> | Defines the command that will be executed. The syntax depends on the command line tool. Only one command can be defined. <br>The following variables can be used to create the command:<br>`${filename}`: name of the input file, for example original.jpg <br> `${file}`: full path name of the input file, for example /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: directory of the input file, for example /tmp/cqdam0816.tmp <br>`${basename}`: name of the input file without its extension, for example original <br>`${extension}`: extension of the input file, for example JPG. |
 
 For example, if [!DNL ImageMagick] is installed on the disk hosting the [!DNL Experience Manager] server and if you create a process step using [!UICONTROL CommandLineProcess] as Implementation and the following values as [!UICONTROL Process Arguments]:
 

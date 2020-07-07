@@ -23,7 +23,7 @@ You can view the status of asynchronous tasks from the **[!UICONTROL Async Job S
 
 Whenever [!DNL Assets] processes an operation asynchronously, you receive a notification in your [!DNL Experience Manager] [Inbox](/help/sites-authoring/inbox.md) and via an email. To view the status of the asynchronous operations in detail, navigate to the **[!UICONTROL Async Job Status]** page.
 
-1. In the [!DNL Experience Manager] interface click **[!UICONTROL Operations]** &gt; **[!UICONTROL Jobs]**.
+1. In the [!DNL Experience Manager] interface click **[!UICONTROL Operations]** > **[!UICONTROL Jobs]**.
 
 1. In the **[!UICONTROL Async Job Status]** page, review the details of the operations.
 
@@ -57,7 +57,7 @@ Whenever [!DNL Assets] processes an operation asynchronously, you receive a noti
 
 You can modify the schedule for the purge task and the duration for which details of completed tasks are retained before they are deleted. You can also configure the maximum number of completed tasks for which details are retained at any point of time.
 
-1. In the [!DNL Experience Manager] interface click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. In the [!DNL Experience Manager] interface click **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open the **[!UICONTROL Adobe CQ DAM Async Jobs Purge Scheduled]** task.
 1. Specify the threshold number of days after which completed tasks are deleted and the maximum number of tasks for which details are retained in history. Save the changes.
 
@@ -67,7 +67,7 @@ You can modify the schedule for the purge task and the duration for which detail
 
 If the number of assets or folders to be deleted exceeds the set threshold number, the delete operation is performed asynchronously.
 
-1. In the [!DNL Experience Manager] interface click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. In the [!DNL Experience Manager] interface click **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. From the [!UICONTROL Web Console], open the **[!UICONTROL Async Delete Operation Job Processing]** configuration.
 1. In the **[!UICONTROL Threshold number of assets]** box, specify the threshold numbers to asynchronously delete assets, folders, or references. Save the changes.
 
@@ -77,7 +77,7 @@ If the number of assets or folders to be deleted exceeds the set threshold numbe
 
 If the number of assets, folders, or references to be moved exceeds the set threshold number, the move operation is performed asynchronously.
 
-1. In the [!DNL Experience Manager] interface, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. In the [!DNL Experience Manager] interface, click **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. From the [!UICONTROL Web Console], open the **[!UICONTROL Async Move Operation Job Processing]** configuration.
 1. In the **[!UICONTROL Threshold number of assets/references]** box, specify the threshold numbers to asynchronously move assets, folders, or references. Save the changes.
 
