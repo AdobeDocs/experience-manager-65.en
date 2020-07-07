@@ -60,10 +60,13 @@ Each step links to documentation which provides the necessary details.
 1. **[Install JDBC driver for MySQL](deploy-communities.md#jdbc-driver-for-mysql)**
 
    Use Web Console (bundles): *http://localhost:4502/system/console/bundles*
-Install *before* installing SCORM package
+
+   Install *before* installing SCORM package
 
 1. **[Install SCORM package](deploy-communities.md#scorm-package)**
-Use Package Manager: *http://localhost:4502/crx/packmgr/*
+
+
+   Use Package Manager: *http://localhost:4502/crx/packmgr/*
 
 **On any server:**
 
@@ -72,7 +75,8 @@ Use Package Manager: *http://localhost:4502/crx/packmgr/*
 1. **[Install MySQL databases](mysql.md#database-setup)**
 
    Execute SQL scripts downloaded from author instance
-Use MySQL Workbench
+
+   Use MySQL Workbench
 
 **On same server hosting author instance:**
 
@@ -86,7 +90,7 @@ Use MySQL Workbench
 
 1. **[Configure SCORM engine service](mysql.md#aem-communities-scormengine-service)**
 
-    Use Web Console (configMgr): *http://localhost:4502/system/console/configMgr*
+   Use Web Console (configMgr): *http://localhost:4502/system/console/configMgr*
 
 1. **[Configure CSRF filters](mysql.md#adobe-granite-csrf-filter)**
 
@@ -109,12 +113,13 @@ Use MySQL Workbench
 1. **[Create Community administrators](users.md#creating-community-members)** 
 
    For author environment use classic-UI Security console: *http://localhost:4502/useradmin*
- create user(s) with path = /home/users/community
+ 
+   Create user(s) with path = /home/users/community
 
-    * Add members(s) to the following groups:
+   * Add members(s) to the following groups:
 
-      * Community Enablement Managers
-      * Communities Administrators
+     * Community Enablement Managers
+     * Communities Administrators
 
 ## Dispatcher {#dispatcher}
 
