@@ -494,9 +494,9 @@ Separate the values of the [!UICONTROL Process Arguments] using comma and do not
 
 | Argument-Format | Description |
 |---|---|
-| mime:<mime-type> | Optional argument. The process is applied if the asset has the same MIME type as the one of the argument. <br>Several MIME types can be defined. |
-| tn:<width>:<height> | Optional argument. The process creates a thumbnail with the dimensions defined in the argument. <br>Several thumbnails can be defined. |
-| cmd: <command> | Defines the command that will be executed. The syntax depends on the command line tool. Only one command can be defined. <br>The following variables can be used to create the command:<br>`${filename}`: name of the input file, for example original.jpg <br> `${file}`: full path name of the input file, for example /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: directory of the input file, for example /tmp/cqdam0816.tmp <br>`${basename}`: name of the input file without its extension, for example original <br>`${extension}`: extension of the input file, for example JPG. |
+| mime:&lt;mime-type&gt; | Optional argument. The process is applied if the asset has the same MIME type as the one of the argument. <br>Several MIME types can be defined. |
+| tn:&lt;width&gt;:&lt;height&gt; | Optional argument. The process creates a thumbnail with the dimensions defined in the argument. <br>Several thumbnails can be defined. |
+| cmd: &lt;command&gt; | Defines the command that is executed. The syntax depends on the command line tool. Only one command can be defined. <br>The following variables can be used to create the command:<br>`${filename}`: name of the input file, for example original.jpg <br> `${file}`: full path name of the input file, for example `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: directory of the input file, for example `/tmp/cqdam0816.tmp` <br>`${basename}`: name of the input file without its extension, for example original <br>`${extension}`: extension of the input file, for example JPG. |
 
 For example, if [!DNL ImageMagick] is installed on the disk hosting the [!DNL Experience Manager] server and if you create a process step using [!UICONTROL CommandLineProcess] as Implementation and the following values as [!UICONTROL Process Arguments]:
 
