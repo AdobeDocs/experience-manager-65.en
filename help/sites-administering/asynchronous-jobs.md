@@ -1,6 +1,6 @@
 ---
 title: Asynchronous Operations
-description: Experience Manager Assets optimizes performance by asynchronously completing some resource-intensive tasks.
+description: Adobe Experience Manager optimizes performance by asynchronously completing some resource-intensive tasks.
 ---
 
 # Asynchronous Operations {#asynchronous-operations}
