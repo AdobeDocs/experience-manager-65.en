@@ -36,7 +36,7 @@ Perform the following steps to share all the items in an inbox with another user
 
 >[!NOTE]
 >
-> (For Forms-centric workflow items only) Enable the **[Allow assignee to share via Inbox sharing](aem-forms-workflow-step-reference.md)** option of the **Assign task** step in the workflow. Only items which have the aforementioned option enabled are displayed to other users.
+>(For Forms-centric workflow items only) Enable the **[Allow assignee to share via Inbox sharing](aem-forms-workflow-step-reference.md)** option of the **Assign task** step in the workflow. Only items which have the aforementioned option enabled are displayed to other users.
 
 ### Share individual items
 
@@ -50,7 +50,7 @@ Perform the following steps to share an Inbox item with another user:
 
 >[!NOTE]
 >
-> (For Forms-centric workflow items only) Enable the **[Allow assignee to share explicitly in Inbox](aem-forms-workflow-step-reference.md)** option of the **Assign task** step in the workflow. Only items which have the aforementioned option enabled are displayed to other users.
+>(For Forms-centric workflow items only) Enable the **[Allow assignee to share explicitly in Inbox](aem-forms-workflow-step-reference.md)** option of the **Assign task** step in the workflow. Only items which have the aforementioned option enabled are displayed to other users.
 
 ## Request access to Inbox items {#request-access}
 

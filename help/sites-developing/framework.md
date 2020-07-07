@@ -250,20 +250,23 @@ The following is a description of the effects in the repository when moving or m
 
 * Later updates to the page's `cq:tags` property automatically clean up the "old" references. This is triggered because resolving a moved tag through the API returns the destination tag, thus providing the destination tag ID.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Movement of tags is different from migration of tags.
+>Movement of tags is different from migration of tags.
 
 ## Tags migration {#tags-migration}
 
 Experience Manager 6.4 onwards tags are stored under `/content/cq:tags`, which were earlier stored under `/etc/tags`. However, in scenarios where Adobe Experience Manager has been upgraded from previous version the tags are still present under the old location `/etc/tags`. In upgraded systems tags need to be migrated under `/content/cq:tags`.
 
-> [!NOTE]
-> In Page Properties of tags page, it is advised to use tag ID (`geometrixx-outdoors:activity/biking`) instead of hard coding the tag base path (for example, `/etc/tags/geometrixx-outdoors/activity/biking`).
-> To list tags, `com.day.cq.tagging.servlets.TagListServlet` can be used.
+>[!NOTE]
+>
+>In Page Properties of tags page, it is advised to use tag ID (`geometrixx-outdoors:activity/biking`) instead of hard coding the tag base path (for example, `/etc/tags/geometrixx-outdoors/activity/biking`).
+>
+>To list tags, `com.day.cq.tagging.servlets.TagListServlet` can be used.
 
-> [!NOTE]
-> It is advised to use tag manager API as resource.
+>[!NOTE]
+>
+>It is advised to use tag manager API as resource.
 
 ### If Upgraded AEM instance supports TagManager API {#upgraded-instance-support-tagmanager-api}
 
@@ -330,9 +333,9 @@ The script fetches all those tags that have `/etc/tags` in the value of `cq:move
 
 ### If upgraded AEM instance runs on Classic UI {#upgraded-instance-runs-classic-ui}
 
-> [!NOTE]
-> Classic UI is not zero downtime compliant and does not support new tag base path. If you want to use classic UI than `/etc/tags` needs to be created followed by `cq-tagging` component restart.
+>[!NOTE]
 >
+>Classic UI is not zero downtime compliant and does not support new tag base path. If you want to use classic UI than `/etc/tags` needs to be created followed by `cq-tagging` component restart.
 
 In case of upgraded AEM instances supported by TagManager API and running in Classic UI:
 
