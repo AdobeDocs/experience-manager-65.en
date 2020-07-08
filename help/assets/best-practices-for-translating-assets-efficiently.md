@@ -25,6 +25,7 @@ You can also make a few configuration changes to a couple of workflows and the t
     * [Set up File Data Store](/help/sites-deploying/data-store-config.md)
     * [Set up Amazon S3 Data Store](/help/sites-deploying/data-store-config.md)
 
+<!--
 1. Disable the [DAM MetaData Write-back](/help/sites-administering/workflow-offloader.md#disable-offloading) workflow.
 
    As the name suggests, the [!UICONTROL DAM Metadata Writeback] workflow rewrites the metadata to the binary file. Because the metadata changes after translation, writing it back to the binary file generates a different binary for a language copy.
@@ -32,6 +33,7 @@ You can also make a few configuration changes to a couple of workflows and the t
    >[!NOTE]
    >
    >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
+-->
 
 1. Enable the [!UICONTROL Set last modified date] workflow.
 

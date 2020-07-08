@@ -35,9 +35,9 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >
    >If you want to share links from your Experience Manager Author instance to external entities, ensure that you only expose the following URLs (which are used for link sharing) for `GET` requests only. Block other URLs to ensure security of Experience Manager Author.
    >
-   >* http://&lt;aem_server&gt;:&lt;port&gt;/linkshare.html
-   >* http://&lt;aem_server&gt;:&lt;port&gt;/linksharepreview.html
-   >* http://&lt;aem_server&gt;:&lt;port&gt;/linkexpired.html
+   >* http://[aem_server]:[port]/linkshare.html
+   >* http://[aem_server]:[port]/linksharepreview.html
+   >* http://[aem_server]:[port]/linkexpired.html
 
    >[!NOTE]
    >
@@ -100,7 +100,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
 ## Configure Day CQ Mail Service {#configmailservice}
 
-1. On the Experience Manager home page, navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. On the Experience Manager home page, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
 1. Click **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
@@ -117,7 +117,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
 When you download assets from the link shared using the Link Sharing feature, Experience Manager compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, configure the maximum size using the **[!UICONTROL Max Content Size (uncompressed)]** parameter for [!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet] in Configuration Manager. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
 
-1. Click the Experience Manager logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Click the Experience Manager logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. From the Web Console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
 1. Open the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
 

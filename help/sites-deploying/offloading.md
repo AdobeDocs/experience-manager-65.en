@@ -204,7 +204,10 @@ Several JobConsumer implementations are installed with Experience Manager. The t
 |---|---|---|
 | / |org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge |Installed with Apache Sling. Processes jobs that the OSGi event admin generates, for backward compatibility. |
 | com/day/cq/replication/job/&ast; |com.day.cq.replication.impl.AgentManagerImpl |A replication agent that replicates job payloads. |
+
+<!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
+-->
 
 ### Disabling and Enabling Topics For an Instance {#disabling-and-enabling-topics-for-an-instance}
 
@@ -310,6 +313,7 @@ Obtain the Sling ID of an Experience Manager instance using either of the follow
 * Open the Web Console and, in the Sling Settings, find the value of the Sling ID property ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). This method is useful if the instance is not yet part of the topology.
 * Use the Topology browser if the instance is already part of the topology.
 
+<!--
 ## Offloading the Processing of DAM Assets {#offloading-the-processing-of-dam-assets}
 
 Configure the instances of a topology so that specific instances perform the background processing of assets that are added or updated in DAM.
@@ -339,6 +343,7 @@ The following procedure assumes the following characteristics for the offloading
     1. Change both event types so that they execute the [!UICONTROL DAM Update Asset Offloading] workflow. (For information about launcher configurations, see [Starting Workflows When Nodes Change](/help/sites-administering/workflows-starting.md).)
 
 1. On the instances that perform the background processing of DAM assets, disable the workflow launchers that execute the [!UICONTROL DAM Update Asset] workflow.
+-->
 
 ## Further Reading {#further-reading}
 

@@ -155,7 +155,6 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [AEM Commerce - GDPR Readiness](gdpr-compliance-commerce.md)
 + Content Management {#contentmanagement}
     + [How to Work With Packages](package-manager.md)
-    + [Assets Workflow Offloader](workflow-offloader.md)
     + [Administering Tags](tags.md)
     + [The Page Exporter](page-exporter.md)
     + [Classic UI Tagging Console](classic-console.md)

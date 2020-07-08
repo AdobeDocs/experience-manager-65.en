@@ -19,10 +19,10 @@ You can segregate item delegation based on the workflow models. For example, you
 
 >[!NOTE]
 >
-> * When you enable the Out of Office setting, all the items available in your Inbox, prior to enabling the setting remain in your inbox. Only items received after enabling the setting are delegated.
-> * When you turn the Out of Office setting off, the delegated items are not automatically assigned back to you. You can use the claim functionality to assign items to you.
-> * When User A delegates items to User B and User B delegates further to User C, then items are assigned only to User C and not User B.
-> * When there is a loop in assignment, the tasks remain with original user. For example,  When User A delegates items to User B User B delegates to User C, User C delegates to User D, and User D delegates to User B, a loop in created. In such situation, the item remains with original User. User A is original user in above example.
+>* When you enable the Out of Office setting, all the items available in your Inbox, prior to enabling the setting remain in your inbox. Only items received after enabling the setting are delegated.
+>* When you turn the Out of Office setting off, the delegated items are not automatically assigned back to you. You can use the claim functionality to assign items to you.
+>* When User A delegates items to User B and User B delegates further to User C, then items are assigned only to User C and not User B.
+>* When there is a loop in assignment, the tasks remain with original user. For example,  When User A delegates items to User B User B delegates to User C, User C delegates to User D, and User D delegates to User B, a loop in created. In such situation, the item remains with original User. User A is original user in above example.
 
 ## Enable the Out of Office setting for your account {#enable-out-of-office}
 

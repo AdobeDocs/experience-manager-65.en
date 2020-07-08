@@ -21,13 +21,13 @@ See also [Characteristics of SRP Options](working-with-srp.md#characteristics-of
 
 ## Requirements {#requirements}
 
-* [MySQL](#mysql-configuration), a relational database
-* [Apache Solr](#solr-configuration), a search platform
+* [MySQL](#mysql-configuration), a relational database.
+* [Apache Solr](#solr-configuration), a search platform.
 
 >[!NOTE]
->
->The default storage configuration is now stored in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) instead of etc path (`/etc/socialconfig/srpc/defaultconfiguration`). You are advised to follow the [migration steps](#zerodt-migration-steps) to make defaultsrp work as expected.
->
+ >
+ >The default storage configuration is now stored in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) instead of etc path (`/etc/socialconfig/srpc/defaultconfiguration`). You are advised to follow the [migration steps](#zerodt-migration-steps) to make defaultsrp work as expected.
+ >
 
 ## Relational Database Configuration {#relational-database-configuration}
 
@@ -56,48 +56,49 @@ On author, to access the Storage Configuration console
 * Sign in with administrator privileges
 * From the **main menu**
 
-    * Select **[!UICONTROL Tools]** (from the left hand pane)
-    * Select **[!UICONTROL Communities]**
-    * Select **[!UICONTROL Storage Configuration]**
+  * Select **[!UICONTROL Tools]** (from the left hand pane)
+  * Select **[!UICONTROL Communities]**
+  * Select **[!UICONTROL Storage Configuration]**
 
-        * As an example, the resulting location is: [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
-        >[!NOTE]
-        >
-        >The default storage configuration is now stored in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`)      instead of etc path (`/etc/socialconfig/srpc/defaultconfiguration`). You are advised to follow the [migration steps](#zerodt-migration-steps) to make defaultsrp work as expected.
-        >
+    * As an example, the resulting location is: [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
+    
+    >[!NOTE]
+     >
+     >The default storage configuration is now stored in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`)      instead of etc path (`/etc/socialconfig/srpc/defaultconfiguration`). You are advised to follow the [migration steps](#zerodt-migration-steps) to make defaultsrp work as expected.
+     >
 
-![chlimage_1-128](assets/chlimage_1-128.png)
+   ![chlimage_1-128](assets/chlimage_1-128.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**
 * **Database Configuration**
 
-    * **[!UICONTROL JDBC datasource name]**
+  * **[!UICONTROL JDBC datasource name]**
 
-      Name given to MySQL connection must be the same as entered in [JDBC OSGi configuration](dsrp-mysql.md#configurejdbcconnections)
+    Name given to MySQL connection must be the same as entered in [JDBC OSGi configuration](dsrp-mysql.md#configurejdbcconnections)
 
-      *default*: communities
+    *default*: communities
 
-    * **[!UICONTROL Database name]**
+   * **[!UICONTROL Database name]**
 
-      Name given to schema in [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script
+     Name given to schema in [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script
 
       *default*: communities
 
 * **SolrConfiguration**
 
-    * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
+  * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
 
-      Leave this value blank if running Solr using the internal ZooKeeper. Else, when running in [SolrCloud mode](solr.md#solrcloud-mode) with an external ZooKeeper, set this value to the URI for the ZooKeeper, such as *my.server.com:80*
+    Leave this value blank if running Solr using the internal ZooKeeper. Else, when running in [SolrCloud mode](solr.md#solrcloud-mode) with an external ZooKeeper, set this value to the URI for the ZooKeeper, such as *my.server.com:80*
 
-      *default*: *&lt;blank&gt;*
+    *default*: *&lt;blank&gt;*
 
-    * **[!UICONTROL Solr URL]**
+  * **[!UICONTROL Solr URL]**
 
-      *default*: https://127.0.0.1:8983/solr/
+    *default*: https://127.0.0.1:8983/solr/
 
-    * **[!UICONTROL Solr Collection]**
+  * **[!UICONTROL Solr Collection]**
 
-      *default*: collection1
+    *default*: collection1
 
 * Select **[!UICONTROL Submit]**.
 
@@ -119,18 +120,18 @@ To make the identical configuration available in the publish environment:
 
 * On author:
 
-    * Navigate from main menu to **[!UICONTROL Tools > Operations > Replication]**
-    * Double-click **[!UICONTROL ]Activate Tree**
-    * **Start Path:**
+  * Navigate from main menu to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]**
+  * Double-click **[!UICONTROL Activate Tree]**
+  * **Start Path**:
 
-        * Browse to `/etc/socialconfig/srpc/`
+    * Browse to `/etc/socialconfig/srpc/`
 
-    * Ensure `Only Modified` is not selected.
-    * Select **[!UICONTROL Activate]**
+  * Ensure `Only Modified` is not selected.
+  * Select **[!UICONTROL Activate]**.
 
 ## Managing User Data {#managing-user-data}
 
-For information regarding *users*, *user profiles* and *user groups*, often entered in the publish environment, visit
+For information regarding *users*, *user profiles* and *user groups*, often entered in the publish environment, visit:
 
 * [User Synchronization](sync.md)
 * [Managing Users and User Groups](users.md)
