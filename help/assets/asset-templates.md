@@ -89,7 +89,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    >[!NOTE]
    >
-   >Ensure that your [!DNL Experience Manager] instance is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. For details, see [integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md).
+   >Ensure that your [!DNL Experience Manager] deployment is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. For details, see [integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md).
 
 1. To modify the text in an editable field, click the text field from the list of editable fields and edit the text in the field.
 

@@ -38,12 +38,15 @@ This article focuses primarily on the first two aspects of the collaboration nee
 
 ### Mapping of use cases and Adobe solutions {#mapping-of-use-cases-and-adobe-solutions}
 
+<!-- TBD: Add some info about XD integration and possibly info about DA v2.0.
+-->
+
 | Use Case | [!DNL Adobe Asset Link] | [!DNL Experience Manager] desktop app | Remarks / Other Solutions |
 |---|---|---|---|
-| Discover - browse DAM folders | Yes | [!DNL Experience Manager] Web interface and desktop actions |  |
+| Discover - browse DAM folders | Yes | [!DNL Experience Manager] Web interface and desktop actions | |
 | Discover - access DAM collections| Yes | [!DNL Experience Manager] Web interface and desktop actions | |
-| Discover - search for assets from DAM  | Yes | [!DNL Experience Manager] Web interface and desktop actions| |
-| Use - open asset  | Yes | Yes  | [Open from Web interface](managing-assets-touch-ui.md#previewing-assets) or from Finder |
+| Discover - search for assets from DAM | Yes | [!DNL Experience Manager] Web interface and desktop actions| |
+| Use - open asset | Yes | Yes | [Open from Web interface](managing-assets-touch-ui.md#previewing-assets) or from Finder |
 | Use - place asset from DAM into a document | Yes - embedding | Yes - linking or embedding | [!DNL Experience Manager] desktop app gives access to assets as files on the local file system. These links in the native apps are represented by local paths. |
 | Edit - open for editing | Yes - Check-out action | Yes - Open action (in the network share) | [Check-out in AAL](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) saves the asset to user's creative cloud storage account (synchronized by Creative Cloud app) by default. |
 | Edit - work in progress outside DAM | Yes - Asset available in user's Creative Cloud storage account synced to desktop. | Yes | |
@@ -66,9 +69,9 @@ To support asset distribution use cases, other solutions should be considered:
 ### Glossary of common terms {#glossary-of-common-terms}
 
 * **Work-in-progress or creative work-in-progress (WIP):** A phase in asset lifecycle where an asset undergoes multiple changes and is typically not yet ready to be shared with broader teams.
-* **Creative-ready assets:** [!DNL Assets] that are ready to be shared with a broader team, or have been  selected / approved  by the creative team for sharing with marketing or LOB teams.
+* **Creative-ready assets:** [!DNL Assets] that are ready to be shared with a broader team, or have been selected or approved by the creative team for sharing with marketing or LOB teams.
 * **Asset approvals:** The approval process that runs for assets already uploaded to DAM, which typically includes brand approvals, legal approvals, and so on.
-* **Final asset:** An asset that has gone through all  approvals/metadata  tagging and is ready to be used by the broader team. Such an asset is stored in DAM and made available to all (or all interested) users. It can be used in marketing channels or by creative teams to create designs.
+* **Final asset:** An asset that has gone through all approvals/metadata tagging and is ready to be used by the broader team. Such an asset is stored in DAM and made available to all (or all interested) users. It can be used in marketing channels or by creative teams to create designs.
 * **Minor asset update/change :** A quick and small change to a digital asset. It is often made in response to a retouching or minor editing request, asset review, or approval (for example, reposition, change text size, adjust saturation/brightness, color, and so on).
 * **Major asset update/change :** A change to a digital asset that requires considerable work, and sometimes must be done over a longer period of time. It typically includes multiple changes. The asset must be saved multiple times while being updated. Major asset updates typically cause the asset to enter a WIP stage.
 * **DAM:** Digital asset management. In this document, it is synonymous with [!DNL Experience Manager Assets], unless specifically mentioned otherwise.
@@ -154,13 +157,13 @@ The following are examples of updates that are typically not relevant:
 
 #### Creative users with direct access to DAM {#creative-users-with-direct-access-to-dam}
 
-Typically, in-house creative teams or agencies/creative professionals  onboarded  to the internal network have access to the DAM instance, including [!DNL Experience Manager] login. [!DNL Experience Manager] and network infrastructure can be set up to allow direct access to external parties - usually trusted organizations like agencies working for a client - to have access to [!DNL Experience Manager] over network, for example via VPN or IP allowed list.
+Typically, in-house creative teams or agencies/creative professionals onboarded to the internal network have access to the DAM deployment, including [!DNL Experience Manager] login. [!DNL Experience Manager] and network infrastructure can be set up to allow direct access to external parties - usually trusted organizations like agencies working for a client - to have access to [!DNL Experience Manager] over network, for example via VPN or IP allowed list.
 
 In such cases, Adobe Asset Link or [!DNL Experience Manager] desktop app helps provide easy access to final/approved assets and lets you save creative-ready assets to DAM.
 
 #### Creative users without access to DAM {#creative-users-without-access-to-dam}
 
-External agencies and freelancers without direct access to the DAM instance may require access to approved assets or want to add their new designs to the DAM.
+External agencies and freelancers without direct access to the DAM deployment may require access to approved assets or want to add their new designs to the DAM.
 
 Use the following strategies to provide access to final/approved assets:
 
