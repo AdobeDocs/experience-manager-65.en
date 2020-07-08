@@ -1,11 +1,11 @@
 ---
-title: Asynchronous Operations
+title: Asynchronous Jobs
 description: Adobe Experience Manager optimizes performance by asynchronously completing some resource-intensive tasks.
 ---
 
 # Asynchronous Operations {#asynchronous-operations}
 
-To reduce negative impact on performance, Adobe Experience Manger processes certain long-running and resource-intensive operations asynchronously.
+To reduce negative impact on performance, Adobe Experience Manger processes certain long-running and resource-intensive operations asynchronously. Asynchronous processing involves enqueuing multiple jobs and running them in a serial manner subject to the availability of system resources.
 
 These operations include:
 
@@ -16,19 +16,17 @@ These operations include:
 * Moving pages
 * Rolling out Live Copies
 
-Asynchronous processing involves enqueuing multiple jobs and running them in a serial manner subject to the availability of system resources.
-
 You can view the status of asynchronous jobs from the **[!UICONTROL Async Job Status]** dashboard at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**.
 
 >[!NOTE]
 >
->By default, asynchronous jobs run in parallel. If *`n`* is the number of CPU cores, *`n/2`* jobs can run in parallel, by default. To use custom settings for the job queue, modify the **[!UICONTROL Async Operation Default Queue Config]** and the A**sync Operation Page Move and Rollout Config** from the web console.
+>By default, asynchronous jobs run in parallel. If *`n`* is the number of CPU cores, *`n/2`* jobs can run in parallel, by default. To use custom settings for the job queue, modify the **[!UICONTROL Async Operation Default Queue Config]** and the **Async Operation Page Move and Rollout Config** from the web console.
 >
 >For more information, see [queue configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
 ## Monitor the Status of Asynchronous Operations {#monitor-the-status-of-asynchronous-operations}
 
-Whenever AEM processes an operation asynchronously, you receive a notification in your inbox and through email (if enabled).
+Whenever AEM processes an operation asynchronously, you receive a notification in your [inbox](/help/sites-authoring/inbox.md) and via email (if enabled).
 
 To view the status of the asynchronous operations in detail, navigate to the **[!UICONTROL Async Job Status]** page.
 
@@ -135,3 +133,11 @@ If the number of references to the page(s) to be moved exceeds the threshold num
    ![MSM config](assets/async-msm.png)
 
 1. Save the changes.
+
+>[!MORELIKETHIS]
+>
+>* [Creating and Organizing Pages](/help/sites-authoring/managing-pages.md)
+>* [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md)
+>* [Configure email in Experience Manager](/help/sites-administering/notification.md).
+>* [Import and export asset metadata in bulk](/help/assets/metadata-import-export.md).
+>* [Use Connected Assets to share DAM assets from remote deployments](/help/assets/use-assets-across-connected-assets-instances.md).
