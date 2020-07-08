@@ -587,7 +587,7 @@ Workflows can also be purged from the Maintenance Dashboard. In order to run the
 
 >[!NOTE]
 >
-> For more detailed information about Workflow Maintenance, see [this page](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>For more detailed information about Workflow Maintenance, see [this page](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Audit Log Maintenance {#audit-log-maintenance}
 

@@ -22,7 +22,7 @@ The sample, discussed in this document, is a reference implementation of customi
 >
 >* The examples and configurations explained in this document are according to MySQL 5.6.24 and you must substitute them appropriately for your database system.
 >* Ensure that you have installed latest version of AEM Forms add-on package. For the list of available packages, see the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article.
-> * The sample package works only with Adaptive Forms submit actions.
+>* The sample package works only with Adaptive Forms submit actions.
 
 ## Set up and configure the sample {#set-up-and-configure-the-sample}
 

@@ -222,7 +222,7 @@ Metadata inheritance by assets is based on the schema that is applied to the fir
 
 You can apply a different schema at the subfolder. The assets within a subfolder inherit the metadata schema of the immediate subfolder. If no schema or the same schema is applied at the subfolder level, its assets inherit schema from the parent folder.
 
-1. In [!DNL Experience Manager] interface, navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
+1. In [!DNL Experience Manager] interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
 1. Select the check box before a form, for example the default metadata form, and click the **[!UICONTROL Copy]** and save it as a custom form. Specify a custom name for the form, for example `my_default`. Alternatively, you can create a custom form.
 
 1. In the **[!UICONTROL Metadata Schema Forms]** page, select the `my_default` form, and then click **[!UICONTROL Edit]**.
@@ -252,7 +252,7 @@ You can define mandatory fields at a folder level, which is enforced on assets t
 >
 >A metadata field can be defined as mandatory based on the value of another field. In the card view, [!DNL Experience Manager] does not display the warning message about missing metadata for such mandatory metadata fields.
 
-1. In [!DNL Experience Manager] interface, navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
+1. In [!DNL Experience Manager] interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
 1. Save the default metadata form as a custom form. For example, save it as `my_default`.
 
 1. Edit the custom form. Add a mandatory field. For example, add a **[!UICONTROL Category]** field and make the field mandatory.

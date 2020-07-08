@@ -132,13 +132,13 @@ Use the above setup to try the authoring experience to understand how the functi
 
    *Figure: Options to filter document types and images when searching assets on remote DAM.*
 
-1. A site author is notified if an asset is fetched asynchronously and if any fetch task fails. While authoring or even after authoring, the authors can see detailed information about fetch tasks and errors in the [async jobs](/help/assets/asynchronous-jobs.md) user interface.
+1. A site author is notified if an asset is fetched asynchronously and if any fetch task fails. While authoring or even after authoring, the authors can see detailed information about fetch tasks and errors in the [async jobs](/help/sites-administering/asynchronous-jobs.md) user interface.
 
    ![Notification about asynchronous fetching of assets that happens in the background.](assets/assets_async_transfer_fails.png)
 
    *Figure: Notification about asynchronous fetching of assets that happens in the background.*
 
-1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. Ensure that the remote assets are fetched successfully at the time of publishing. To check the status of each fetched asset, see [async jobs](/help/assets/asynchronous-jobs.md) user interface.
+1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. Ensure that the remote assets are fetched successfully at the time of publishing. To check the status of each fetched asset, see [async jobs](/help/sites-administering/asynchronous-jobs.md) user interface.
 
    >[!NOTE]
    >
@@ -182,4 +182,4 @@ The fetched assets can be used as any other local asset, except that the associa
 Follow these steps to troubleshoot for the common error scenarios:
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder] then ensure that the required roles and permissions are in place.
-* An asset fetched from the remote dam may not be published on a web page for one or more reasons. It doesn't exist on remote server, lack of appropriate permissions to fetch it, or network failure can be the reasons. Ensure that the asset is not removed from the remote DAM. Ensure that appropriate permissions are in place and prerequisites are met. Retry adding the asset to the page and republish. Check the [list of asynchronous jobs](/help/assets/asynchronous-jobs.md) for errors in asset fetching.
+* An asset fetched from the remote dam may not be published on a web page for one or more reasons. It doesn't exist on remote server, lack of appropriate permissions to fetch it, or network failure can be the reasons. Ensure that the asset is not removed from the remote DAM. Ensure that appropriate permissions are in place and prerequisites are met. Retry adding the asset to the page and republish. Check the [list of asynchronous jobs](/help/sites-administering/asynchronous-jobs.md) for errors in asset fetching.
