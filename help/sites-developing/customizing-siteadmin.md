@@ -104,8 +104,8 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >
 >* Your implementation should decide, based on the provided request and/or resource, whether it should add the information to the JSON object or not.
 >* If your `ListInfoProvider` implementation defines a property that already exists in the response object, its value will be overwritten by the one you provide.
->  You can use [service ranking](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) to manage the execution order of multiple `ListInfoProvider` implementations.
 >
+>  You can use [service ranking](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) to manage the execution order of multiple `ListInfoProvider` implementations.
 
 ### Testing the New Service {#testing-the-new-service}
 

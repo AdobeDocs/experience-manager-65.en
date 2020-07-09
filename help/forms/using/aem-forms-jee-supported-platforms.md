@@ -146,7 +146,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td>Supported</td>
   </tr> 
    <tr>
-   <td>Oracle Database 19c </td>
+   <td>Oracle Database 19c (Standard, Real Application Clusters (RAC) and Enterprise editions) </td>
    <td>Repository Microkernal </td>
    <td>Supported</td>
   </tr>

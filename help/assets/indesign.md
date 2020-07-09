@@ -12,7 +12,7 @@ contentOwner: AG
 * A proxy worker to define and manage a specific task.
   These can cover a wide variety of tasks; for example, using an [!DNL InDesign Server] to process files.
 
-To fully upload files to [!DNL Experience Manager Assets] that you have created with [!DNL Adobe InDesign] a proxy is used. This uses a proxy worker to communicate with the [!DNL Adobe InDesign Server], where [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) are run to extract metadata and generate various renditions for [!DNL Experience Manager Assets]. The proxy worker enables the two-way communication between the [!DNL InDesign Server] and the [!DNL Experience Manager] instance(s) in a cloud configuration.
+To fully upload files to [!DNL Experience Manager Assets] that you have created with [!DNL Adobe InDesign] a proxy is used. This uses a proxy worker to communicate with the [!DNL Adobe InDesign Server], where [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) are run to extract metadata and generate various renditions for [!DNL Experience Manager Assets]. The proxy worker enables the two-way communication between the [!DNL InDesign Server] and the [!DNL Experience Manager] instances in a cloud configuration.
 
 >[!NOTE]
 >
@@ -218,7 +218,7 @@ For [!DNL InDesign Server] 10.0 or higher, perform the following steps to enable
 
 ## Configure [!DNL Experience Manager] credentials {#configure-aem-credentials}
 
-You can change the default administrator credentials (user name and password) for accessing the [!DNL InDesign Server] from your [!DNL Experience Manager] instance without breaking the integration with the [!DNL InDesign Server].
+You can change the default administrator credentials (user name and password) for accessing the [!DNL InDesign Server] from your [!DNL Experience Manager] deployment without breaking the integration with the [!DNL InDesign Server].
 
 1. Go to `/etc/cloudservices/proxy.html`.
 1. In the dialog, specify the new user name and password.

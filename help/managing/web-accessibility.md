@@ -21,7 +21,7 @@ Adobe Experience Manager works with the [guidelines](#wcag-accessibility-guideli
 
 >[!NOTE]
 >
-> See the [Accessibility Conformance reports for Adobe solutions](https://www.adobe.com/accessibility/compliance.html) for further details.
+>See the [Accessibility Conformance reports for Adobe solutions](https://www.adobe.com/accessibility/compliance.html) for further details.
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
  
@@ -48,10 +48,10 @@ Using Adobe Experience Manager, content authors and/or website owners can create
   Adobe Experience Manager (AEM) includes a number of features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
 
 >[!NOTE]
-> 
+>
 >When creating your site, you should determine the overall level to which you would like your site to conform.
- 
+
 ## Accessibility at Adobe {#accessibility-at-adobe}
- 
+
 For additional information, please visit the [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
  
