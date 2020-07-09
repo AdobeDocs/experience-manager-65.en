@@ -29,7 +29,7 @@ The major difference is this tutorial will create a new community site template 
 
 To get started, create a simple [community site template](sites.md).
 
-From global navigation on an author instance select **[!UICONTROL Tools > Communities > Site Templates]**.
+From global navigation on an author instance select **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Site Templates]**.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -67,22 +67,22 @@ After creating the site template, from global navigation select **[!UICONTROL Co
 
 * Step `1 - Site Template`
 
-    * `Title`: Simple Community Site
-    * `Description`: A Community Site consisiting of a single page for experimentation.
-    * `Community Site Root: (leave blank)`
-    * `Community Site Base Language: English`
-    * `Name`: sample
+  * `Title`: Simple Community Site
+  * `Description`: A Community Site consisiting of a single page for experimentation.
+  * `Community Site Root: (leave blank)`
+  * `Community Site Base Language: English`
+  * `Name`: sample
 
-        * url = http://localhost:4502/content/sites/sample
+    * url = http://localhost:4502/content/sites/sample
 
     * `Template`: choose `Single Page Template`
 
-![chlimage_1-86](assets/chlimage_1-86.png)
+    ![chlimage_1-86](assets/chlimage_1-86.png)
 
 * Select `Next`
 * Step `2 - Design`
 
-    * Select any design
+  * Select any design
 
 * Select `Next`
 * Select `Next`
@@ -91,7 +91,7 @@ After creating the site template, from global navigation select **[!UICONTROL Co
 
 * Select `Create`
 
-![chlimage_1-87](assets/chlimage_1-87.png)
+  ![chlimage_1-87](assets/chlimage_1-87.png)
 
 ## Publish the Site {#publish-the-site}
 

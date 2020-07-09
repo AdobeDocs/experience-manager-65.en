@@ -13,7 +13,7 @@ discoiquuid: 7cd7921e-6438-450a-a676-9da3c4a5ced3
 
 # Catalog Feature {#catalog-feature}
 
-The [ `Enablement Assignments`](assignments.md) and `Enablement Catalog` components found in the Communities group in the components browser are components of an [enablement community](overview.md#enablement-community).
+The [`Enablement Assignments`](assignments.md) and `Enablement Catalog` components found in the Communities group in the components browser are components of an [enablement community](overview.md#enablement-community).
 
 The `Enablement Catalog` component allows community members to access a catalog of [enablement resources](resources.md). The use of AEM tags is an important part of managing the listing of enablement resources in a catalog (see [Tagging Enablement Resources](tag-resources.md)).
 

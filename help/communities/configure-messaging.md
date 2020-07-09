@@ -22,11 +22,17 @@ This feature can be included when a [community site](/help/communities/overview.
 The messaging feature provides the ability to:
 
 **A** - send a message to one or more community members
+
 **B** - send direct messages in [bulk to community member groups](/help/communities/messaging.md#group-messaging)
+
 **C** - send a message with attachments
+
 **D** - forward a message
+
 **E** - reply to a message
+
 **F** - delete a message
+
 **G** - restore a deleted message
 
 ![messaging-section](assets/messaging-section.png) ![restore-message](assets/restore-message.png)
@@ -37,8 +43,9 @@ To enable and modify the messaging feature, see:
 * [Messaging Essentials](/help/communities/essentials-messaging.md) for developers
 
 >[!NOTE]
->
->It is not supported to add `Compose Message, Message, or Message List` components (found in `Communities`component group) to a page in author edit mode.
+ >
+ >It is not supported to add `Compose Message, Message, or Message List` components (found in `Communities`component group) to a page in author edit mode.
+ >
 
 ## Configure messaging components {#configure-messaging-components}
 
@@ -48,10 +55,10 @@ When messaging is enabled for a community site, it is set up with no further con
 
 To modify the configuration of the list of messages for **Inbox**, **Sent Items**, and **Trash** pages of the messaging feature, open the site in [author edit mode](/help/communities/sites-console.md#authoring-site-content).
 
-1. In `Preview`mode, select the **Messages** link to open the main messaging page. Then select either **Inbox**, **Sent Items** or **Trash** to configure the component for that message list.
+1. In `Preview` mode, select the **Messages** link to open the main messaging page. Then select either **Inbox**, **Sent Items** or **Trash** to configure the component for that message list.
 
 1. In `Edit` mode, select the component on the page.
-1. To access the configuration dialog, cancel inheritance by selecting the `link`icon.
+1. To access the configuration dialog, cancel inheritance by selecting the `link` icon.
    Once inheritance is canceled, it is possible to select the configure icon to open the configuration dialog.
 
 1. Once the configuration is complete, it is necessary to restore inheritance by selecting the `broken link` icon.
@@ -100,7 +107,7 @@ To modify the configuration of the list of messages for **Inbox**, **Sent Items*
 
 * **Delete Button**
   
-  If checked, displays a `Delete`button allowing a message to be marked as read. Will duplicate the delete functionality if **`Message Options`** is also checked.
+  If checked, displays a `Delete` button allowing a message to be marked as read. Will duplicate the delete functionality if **`Message Options`** is also checked.
 
 * **Message Options**
   

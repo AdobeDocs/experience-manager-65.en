@@ -128,7 +128,7 @@ In environments with specific authentication requirements, OAuth is recommended.
 
 ## Available Features {#available-features}
 
-Content Fragments are a specific type of Asset, see [Working with Content Fragments](/help/assets/content-fragments.md).
+Content Fragments are a specific type of Asset, see [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md).
 
 For further information about features available through the API see:
 
@@ -188,7 +188,7 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 ### Content Fragments {#content-fragments}
 
-A [content fragment](/help/assets/content-fragments.md) is a special type of asset. They can be used to access structured data, such as texts, numbers, dates, amongst others.
+A [content fragment](/help/assets/content-fragments/content-fragments.md) is a special type of asset. They can be used to access structured data, such as texts, numbers, dates, amongst others.
 
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
 
@@ -283,7 +283,7 @@ There are a few limitations:
 
 The following status codes can be seen in the relevant circumstances:
 
-1. 202 (OK)
+* **200 (OK)**
 
    Returned when:
 
@@ -291,19 +291,19 @@ The following status codes can be seen in the relevant circumstances:
 
     * successfully updating a content fragment via `PUT`
 
-1. 201 (Created)
+* **201 (Created)**
 
    Returned when:
 
     * successfully creating a content fragment via `POST`
 
-1. 404 (Not found)
+* **404 (Not found)**
 
    Returned when:
 
     * the requested content fragment does not exist
 
-1. 500 (Internal server error)
+* **500 (Internal server error)**
 
    >[!NOTE]
    >

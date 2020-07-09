@@ -56,7 +56,7 @@ Follow these steps to create an adaptive form.
 
    For information about adaptive form authoring interface and available components, see [Introduction to authoring adaptive forms](/help/forms/using/introduction-forms-authoring.md).
 
-   >[!NOTE] {grayBox="true"}
+   >[!NOTE]
    >
    >Allow pop up windows in your browser to open the newly created form in a new tab.
 
@@ -119,7 +119,7 @@ Do the following to use XML or JSON schema as form model for an adaptive form:
     * **[!UICONTROL Upload from disk]** - Select this option and tap Upload Schema Definition to browse and upload an XML schema or JSON schema from your file system. The uploaded schema file resides with the form and is not accessible to other adaptive forms.
     * **[!UICONTROL Search in repository]** - Select this option to select from the list of schema definition files available in the repository. Select the XML or JSON schema file as form model. The selected schema will be associated with the form by reference and will be accessible for use in other adaptive forms.
 
-   >[!CAUTION] {grayBox="true"}
+   >[!CAUTION]
    >
    >Ensure that the JSON schema filename ends with **.schema.json**. For example: mySchema.schema.json
 

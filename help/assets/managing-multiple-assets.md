@@ -1,12 +1,12 @@
 ---
-title: Manage multiple assets and collections
-description: Learn how to edit the metadata of multiple assets and collections simultaneously to quickly propagate common metadata changes.
+title: Manage metadata of many assets and collections in Adobe Enterprise Manager.
+description: Edit the metadata of many assets and collections simultaneously to quickly propagate common metadata changes.
 contentOwner: AG
 ---
 
 # Manage assets and collections {#managing-multiple-assets-and-collections}
 
-Adobe Enterprise Manager (AEM) Assets lets you edit the metadata of multiple assets simultaneously so you can quickly propagate common metadata changes to assets in bulk. You can also edit the metadata for multiple collections in bulk.
+Adobe Enterprise Manager Assets lets you edit the metadata of multiple assets simultaneously so you can quickly propagate common metadata changes to assets in bulk. You can also edit the metadata for multiple collections in bulk.
 
 Use the properties page to perform metadata changes on multiple assets or collections:
 
@@ -23,7 +23,7 @@ To customize the metadata properties page, including adding, modifying, deleting
 
 1. In the Assets user interface, navigate to the location of the assets you want to edit.
 1. Select the assets for which you want to edit common properties.
-1. From the toolbar, tap/click the **[!UICONTROL Properties]** icon to open the properties page for the selected assets.
+1. From the toolbar, click **[!UICONTROL Properties]** to open the properties page for the selected assets.
 
    >[!NOTE]
    >
@@ -37,9 +37,9 @@ To customize the metadata properties page, including adding, modifying, deleting
    >* In the properties page, you can remove assets from the asset list by deselecting them. The asset list has all the assets selected by default. The metadata for assets that you remove from the list is not updated.
    >* At the top of assets list, select the check box near **[!UICONTROL Title]** to toggle between selecting the assets and clearing the list.
 
-1. To select a different metadata schema for the assets, tap/click the **[!UICONTROL Settings]** icon from the toolbar, and select the desired schema.
+1. To select a different metadata schema for the assets, click **[!UICONTROL Settings]** from the toolbar, and select the desired schema.
 1. Save the changes.
-1. To append the new metadata with the existing metadata in fields that contain multiple values, select **[!UICONTROL Append mode]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. Tap/click **[!UICONTROL Submit]**.
+1. To append the new metadata with the existing metadata in fields that contain multiple values, select **[!UICONTROL Append mode]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. Click **[!UICONTROL Submit]**.
 
    >[!CAUTION]
    >
@@ -47,11 +47,11 @@ To customize the metadata properties page, including adding, modifying, deleting
 
 ## Configure limit for bulk metadata update {#configlimit}
 
-To prevent DOS like situation, AEM limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. AEM generates the following warning in the logs:
+To prevent DOS like situation, Enterprise Manager limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. Enterprise Manager generates the following warning in the logs:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**) and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
+To change the limit, access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
 
 >[!MORELIKETHIS]
 >

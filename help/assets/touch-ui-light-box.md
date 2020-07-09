@@ -1,6 +1,6 @@
 ---
-title: Lightbox as your personal image gallery in AEM Assets
-description: Learn about Lightbox as your personal image gallery in AEM Assets.
+title: Lightbox as your personal image gallery in Adobe Experience Manager Assets.
+description: Learn about Lightbox as your personal image gallery in Adobe Experience Manager Assets.
 contentOwner: AG
 ---
 
@@ -8,7 +8,7 @@ contentOwner: AG
 
 Lightbox is a special type of collection that provides easy access to assets. You can quickly access Lightbox to add or delete assets. It serves as your personal image gallery.
 
-If you are an Adobe Experience Manager (AEM) Assets user, Lightbox is automatically created when you first log in to the application. It is exclusive to your login. Other users cannot access your Lightbox.
+If you are an Adobe Experience Manager Assets user, Lightbox is automatically created when you first log in to the application. It is exclusive to your login. Other users cannot access your Lightbox.
 
 ## Add assets to lightbox {#adding-assets-to-lightbox}
 
@@ -17,9 +17,9 @@ If you are an Adobe Experience Manager (AEM) Assets user, Lightbox is automatica
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 
-1. In the dialog, tap/click **[!UICONTROL Add]**, and then close it to complete the process. The selected assets are added to Lightbox.
+1. In the dialog, click **[!UICONTROL Add]**, and then close it to complete the process. The selected assets are added to Lightbox.
 1. To view Lightbox, go to the Collections console.
-1. Tap/click **[!UICONTROL Lightbox]** to view the assets in it.
+1. Click **[!UICONTROL Lightbox]** to view the assets in it.
 
    >[!NOTE]
    >
@@ -27,7 +27,7 @@ If you are an Adobe Experience Manager (AEM) Assets user, Lightbox is automatica
 
 ## Remove assets from Lightbox {#removing-assets-from-lightbox}
 
-1. Navigate to the Collections console, tap/click Lightbox to view its assets.
+1. Navigate to the Collections console, click Lightbox to view its assets.
 1. Select the assets you want to remove.
-1. From the toolbar, tap/click **[!UICONTROL Remove]**.
-1. In the dialog, tap/click **[!UICONTROL Remove]** to confirm the delete action. The assets are deleted from Lightbox.
+1. From the toolbar, click **[!UICONTROL Remove]**.
+1. In the dialog, click **[!UICONTROL Remove]** to confirm the delete action. The assets are deleted from Lightbox.

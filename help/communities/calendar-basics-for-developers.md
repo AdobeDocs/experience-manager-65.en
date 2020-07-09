@@ -59,7 +59,7 @@ This page provides essential information on working with the calendar feature.
 
 ### Calendar Function {#calendar-function}
 
-A community site structure that includes the [Calendar function](functions.md#calendar-function) will have a configured c `alendar`component. The Calendar function supports identifying a [privileged member user group](users.md#privileged-members-group).
+A community site structure that includes the [Calendar function](functions.md#calendar-function) will have a configured `calendar` component. The Calendar function supports identifying a [privileged member user group](users.md#privileged-members-group).
 
 ### Accessing Calendar Posts (UGC) {#accessing-calendar-posts-ugc}
 

@@ -57,11 +57,20 @@ If the ZIP file contains more than one HTML file at the lowest level of its fold
 
 >[!NOTE]
 >
->The HTML to PDF feature requires certain fonts in the system font directory. On Linux, Solaris, and AIX systems, the system font directory must contain the Courier font. On Windows systems, the system font directory must contain Times New Roman.
-
->[!NOTE]
+>* The HTML to PDF feature requires certain fonts in the system font directory. On Linux, Solaris, and AIX systems, the system font directory must contain the Courier font. On Windows systems, the system font directory must contain Times New Roman.
 >
->To upload a file from the local file system, use the Upload File option on the HTML to PDF page.
+>* (UNIX-based system only) One of the following Japanese fonts should be available on AEM Forms server to convert a web page with Japanese font to a PDF document.
+>
+>  * "Sazanami Gothic"
+>  * "Kozuka Gothic Pro-VI"
+>  * "Kozuka Mincho Pro-VI"
+>  * "Sazanami Gothic"
+>  * "Kozuka Mincho Pr6N"
+>  * "Sazanami Mincho"
+>  * "Adobe Heiti Std"
+>  * "Adobe Song Std"
+>
+>* To upload a file from the local file system, use the Upload File option on the HTML to PDF page.
 
 1. In administration console, click Services &gt; PDF Generator &gt; HTML to PDF.
 1. Specify the file to convert by doing one of the following tasks:

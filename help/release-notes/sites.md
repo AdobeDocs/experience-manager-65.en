@@ -70,10 +70,10 @@ See the following for AEM Sites 6.5 enhancements in detail:
 
 ## Content Fragments &amp; Editor {#content-fragments-amp-editor}
 
-* New [Annotations](/help/assets/content-fragments-variations.md#viewing-editing-deleting-annotations) rail in Content Fragment Editor to make general comments and see comments make within the text (also show up in Timeline rail)
-* Ability to set the default content type of a multi-line text element in a [Content Fragment model](/help/assets/content-fragments-models.md) to simple text, rich text or markdown
-* Add [comment/annotations](/help/assets/content-fragments-variations.md#annotating-a-content-fragment) by selecting text in the RTE (full-screen view)
-* [Compare versions](/help/assets/content-fragments-managing.md#comparing-fragment-versions) of a Content Fragment side-by-side via Reference rail
+* New [Annotations](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) rail in Content Fragment Editor to make general comments and see comments make within the text (also show up in Timeline rail)
+* Ability to set the default content type of a multi-line text element in a [Content Fragment model](/help/assets/content-fragments/content-fragments-models.md) to simple text, rich text or markdown
+* Add [comment/annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) by selecting text in the RTE (full-screen view)
+* [Compare versions](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) of a Content Fragment side-by-side via Reference rail
 * The assets Download Report now shows Content Fragments accordingly
 * Add [Content Fragment support to Assets HTTP API](/help/assets/assets-api-content-fragments.md) via /api.json. There are APIs for create, update, read and delete of Content Fragments.
 

@@ -23,24 +23,21 @@ You add Dynamic Media assets directly to the page if you are using AEM as your W
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
-Adding a Dynamic Media, Interactive Media, Panoramic Media, or Video 360 Media component to a page is the same as adding a component to any page. The Dynamic Media components are described in the following sections.
+Adding a 3D Media, Dynamic Media, Interactive Media, Panoramic Media, Smart Crop Video, or Video 360 Media component to a page is the same as adding a component to any page. The Dynamic Media components are described in the following sections.
 
 1. In AEM, open the page where you want to add the Dynamic Media component.
-1. In the left pane, tap the **[!UICONTROL Components]** icon, then filter for Dynamic Media.
+1. In the panel on the left side of the page (you may need to toggle the display of the side panel), click the **[!UICONTROL Components]** icon. 
+1. Under the **[!UICONTROL Components]** heading, in the drop-down list, select **[!UICONTROL Dynamic Media.]** 
 
-   If no Dynamic Media components are available, you need to enable&ndash;or turn on&ndash; the Dynamic Media components. See [Editing Page Templates](/help/sites-authoring/templates.md#editing-templates-template-authors) for more information.
+    If no list of Dynamic Media components is available, you likely need to enable the Dynamic Media components that you want to use. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
-   ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
+   ![6_5_360video_wcmcomponent](/help/assets/assets/6_5_360video_wcmcomponent.png)
 
-1. Drag a **[!UICONTROL Dynamic Media]** component and drop it in the desired location on the page.
-
-   In the example below, the **[!UICONTROL Video 360 Media]** component is being used.
-
-   ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
+1. Drag a **[!UICONTROL Dynamic Media]** component that you want to use and drop it in the desired location on the page.
 
 1. Hover the mouse pointer directly on the component. When the component is surrounded by a blue box, tap once to display the component's toolbar. Tap the **[!UICONTROL Configuration (wrench)]** icon.
 
-   ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
+   ![6_5_360video_wcmcomponentconfigure](/help/assets/assets/6_5_360video_wcmcomponentconfigure.png)
 
 1. Depending on the Dynamic Media component you dropped onto the page, a configuration dialog box opens. [Set the component's options](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components) as necessary.
 
@@ -50,7 +47,34 @@ Adding a Dynamic Media, Interactive Media, Panoramic Media, or Video 360 Media c
 
    The Dynamic Media Video 360 Media component.
 
-1. When you are finished, near the upper-right corner of the dialog box, tap the checkmark to save your changes.
+1. When you are finished, in the upper-right corner of the dialog box, tap the checkmark to save your changes.
+
+### Enabling Dynamic Media components {#enabling-dynamic-media-components}
+
+If no Dynamic Media components are available to add to a page, it likely means that you need to first enable the components that you want to use.
+
+1. In AEM, open the page where you want to add the Dynamic Media component.
+1. On the left side of the toolbar near the top of the page, tap the Page Information icon, then tap **[!UICONTROL Edit Template]** from the drop-down list.
+
+    ![edit-template](/help/assets/assets-dm/edit-template.png)
+
+1. On the right side of the toolbar near the top of the page, from the drop-down list, tap **[!UICONTROL Structure.]**
+
+    ![Policy](/help/assets/assets-dm/structure-mode.png)
+
+1. Near the bottom of the page, tap **[!UICONTROL Layout Container]** to open its toolbar, then tap the Policy icon.
+1. On the **[!UICONTROL Layout Container]** page, under the **[!UICONTROL Properties]** heading, make sure the **[!UICONTROL Allowed Components]** tab is selected.
+
+    ![Allowed components](/help/assets/assets-dm/allowed-components.png)
+
+1. Scroll until you see **[!UICONTROL Dynamic Media.]**
+1. Tap the > icon to the left of **[!UICONTROL Dynamic Media]** to expand the list, select the Dynamic Media components you want to enable.
+
+    ![Dynamic Media components list](/help/assets/assets-dm/dm-components-select.png)
+
+1. Near the upper-right corner of the **[!UICONTROL Layout Container]** page, tap the Done (checkmark) icon.
+
+1. On the right side of the toolbar near the top of the page, from the drop-down list, tap **[!UICONTROL Initial Content]**, then [add a Dynamic Media component to a page](#adding-a-dynamic-media-component-to-a-page) as usual.
 
 ## Localizing Dynamic Media Components {#localizing-dynamic-media-components}
 
@@ -68,7 +92,7 @@ You can localize Dynamic Media components in one of two ways:
 
 ## Dynamic Media Components {#dynamic-media-components}
 
-Dynamic Media components are available when you tap the **[!UICONTROL Components]** icon, then filter on **[!UICONTROL Dynamic Media]**.
+Dynamic Media components are available when you tap the **[!UICONTROL Components]** icon, then filter on **[!UICONTROL Dynamic Media.]**
 
 The Dynamic Media components that are available include the following:
 
@@ -109,13 +133,13 @@ The Dynamic Media component lets you add dynamic images, including image sets, s
 
 You can also configure the viewer preset, image preset, or image format directly in the component. To make an image responsive you can either set the breakpoints or apply a responsive image preset.
 
-You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
+You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings.]**
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]**.
+>By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height.]**
 
 * **[!UICONTROL Viewer preset]**&mdash;Select an existing viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you may need to make it visible. See Managing Viewer Presets. You cannot select a viewer preset if you are using an image preset and vice versa.
 
@@ -158,7 +182,7 @@ Use the Dynamic Media component to add dynamic video to your web pages. When you
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
+You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
@@ -170,8 +194,8 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
     With viewer modifiers, you for example, can do the following:
 
-    * Associate a caption file with a video: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html)
-    * Associate a navigation file with a video: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html)
+    * Associate a caption file with a video: [caption][https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+    * Associate a navigation file with a video: [navigation][https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
     You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
@@ -189,11 +213,11 @@ See also [Image Profiles](/help/assets/image-profiles.md).
 
 ![dm-settings-smart-crop](assets/dm-settings-smart-crop.png)
 
-You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in the component.
+You must edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
->By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]**.
+>By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height.]**
 
 * **[!UICONTROL Image Modifiers]**&mdash;You can apply image effects by supplying additional image commands. These are described in Image Presets and the Image Serving Command reference.
 

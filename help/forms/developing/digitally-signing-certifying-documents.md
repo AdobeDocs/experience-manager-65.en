@@ -42,7 +42,7 @@ You can accomplish these tasks using the Signature service:
 
 >[!NOTE]
 >
-> For more information about the Signature service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)..
+>For more information about the Signature service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)..
 
 ## Adding Signature Fields {#adding-signature-fields}
 

@@ -17,7 +17,7 @@ docset: aem65
 
 >[!CAUTION]
 >
->[Content fragment models](/help/assets/content-fragments-models.md) are now recommended for creating all your fragments.
+>[Content fragment models](/help/assets/content-fragments/content-fragments-models.md) are now recommended for creating all your fragments.
 >
 >Content fragment models are used for all examples in We.Retail.
 

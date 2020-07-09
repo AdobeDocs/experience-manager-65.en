@@ -25,28 +25,28 @@ Using the Members console, contribution limits can be proactively removed for a 
 
 ## AEM Communities User Generated Content Contribution Limits Configuration {#aem-communities-user-generated-content-contribution-limits-configuration}
 
-This OSGi configuration
+This OSGi configuration:
 
-* Defines the characteristics of the contribution limits (number of posts within a time period)
-* Identifies who the member will be able to message when the limit has been reached
-* Identifies domains that need never be constrained
+* Defines the characteristics of the contribution limits (number of posts within a time period).
+* Identifies who the member will be able to message when the limit has been reached.
+* Identifies domains that need never be constrained.
 
 To reach this OSGi configuration:
 
-* On the primary publisher
-* Sign in with administrator privileges
-* Access the [Web Console](../../help/sites-deploying/configuring-osgi.md)
+* On the primary publisher:
+* Sign in with administrator privileges.
+* Access the [Web Console](../../help/sites-deploying/configuring-osgi.md).
 
     * For example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Locate `AEM Communities User Generated Content Contribution Limits Configuration`
-* Select the edit icon
+* Locate `AEM Communities User Generated Content Contribution Limits Configuration`.
+* Select the edit icon.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
 * **[!UICONTROL Automatically Apply UGC Contribution Limits]**
 
-  If checked, automatically set contribution limits on users when they register as community members. This is reflected in the community member's profile and may be enabled/disabled from the [members console](members.md). New members with an email address from a white listed domain are never constrained.
+  If checked, automatically set contribution limits on users when they register as community members. This is reflected in the community member's profile and may be enabled/disabled from the [members console](members.md). New members with an email address from a allowlist of domains are never constrained.
 
   Default is unchecked.
 
@@ -64,11 +64,11 @@ To reach this OSGi configuration:
 
 * **[!UICONTROL Domains]**
 
-  A white list of one or more email domains. Select the + icon to make addtional entries.
+  An allowlist list of one or more email domains. Select the + icon to make addtional entries.
 
-  Users with email addresses in the white listed domains are not affected when UGC contribution limits are automatically applied. For example, if domain `mycompany.com` is added to the list of domains, then a member with email address `me@mycompany.com` is never restricted from posting.
+  Users with email addresses in the allowlist of domains are not affected when UGC contribution limits are automatically applied. For example, if domain `mycompany.com` is added to the list of domains, then a member with email address `me@mycompany.com` is never restricted from posting.
 
-  Default is an empty white list.
+  Default is an empty allowlist.
 
 * **[!UICONTROL Messaging Recipients]**
 

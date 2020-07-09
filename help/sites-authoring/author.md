@@ -35,9 +35,7 @@ On the author environment the functionality of AEM is made available through two
 
 >[!NOTE]
 >
->AEM itself is used to author the AEM documentation.
->
->Together with the Dispatcher it is also used for publishing.
+>AEM and the Dispatcher are used to publish this AEM documentation.
 
 ### Author Environment {#author-environment}
 

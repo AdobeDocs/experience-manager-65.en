@@ -21,7 +21,7 @@ The Communities Badges console provides the ability to add custom badges which c
 
 ### Badge Visibility {#badge-visibility}
 
-Currently, badges a community member earns or is assigned will appear along with their name and avatar in the following locations :
+Currently, badges a community member earns or is assigned will appear along with their name and avatar in the following locations:
 
 * Profiles
 * [Forums](/help/communities/forum.md)
@@ -29,21 +29,21 @@ Currently, badges a community member earns or is assigned will appear along with
 * [Leaderboards](/help/communities/enabling-leaderboard.md)
 * [Ideation](/help/communities/ideation-feature.md)
 
-In the author environment, to reach the Badges console
+In the author environment, navigate to the Badges console:
 
-* From global navigation, navigate to **[UIControl Tools > Communities > Badges]**
+* From global navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Badges]**
 
 This console displays the badges currently available and from which new badges can be added.
 
-![chlimage_1-123](assets/chlimage_1-123.png)
+![chlimage_1-242](assets/chlimage_1-242.png)
 
 ## Create Badge {#create-badge}
 
-A badge is created by uploading a suitably small image (72dpi with a height ranging from 26-32 pixels) and providing a name. The badge image is stored in the repository at `/etc/community/badging/images` and is automatically replicated to the publish environment.
+A badge is created by uploading a suitably small image (72dpi with a height ranging from 26-32 pixels) and providing a name. The badge image is stored in the repository at `/libs/settings/community/badging/images` and is automatically replicated to the publish environment.
 
 If the publish environment is a farm of publishers, it is necessary to configure [user sync](/help/communities/sync.md).
 
-![chlimage_1-124](assets/chlimage_1-124.png)
+![chlimage_1-243](assets/chlimage_1-243.png)
 
 * **Upload Image**
   

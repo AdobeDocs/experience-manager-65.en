@@ -1,16 +1,12 @@
 ---
 title: Search Facets
-description: This article describes how to create, modify, and use search facets in AEM.
-uuid: 213bec95-2f9a-49d2-a45b-0c7d1bb4fbf8
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 4c03f218-6c0c-4482-b10e-a6ccddb30d57
+description: This article describes how to create, modify, and use search facets in Adobe Experience Manager.
+contentOwner: AG
 ---
 
 # Search Facets {#search-facets}
 
-Learn how to create, modify, and use search facets in AEM.
-
-An enterprise-wide deployment of Adobe Experience Manager (AEM) Assets has the capacity to store many assets. Sometimes, finding the right asset can be arduous and time-consuming if you only use the generic search capabilities of AEM.
+An enterprise-wide deployment of Adobe Experience Manager Assets has the capacity to store many assets. Sometimes, finding the right asset can be arduous and time-consuming if you only use the generic search capabilities of Experience Manager.
 
 Use search facets in the Filters panel to add more granularity to your search experience and make the search functionality more efficient and versatile. Search facets add multiple dimensions (predicates) that enable you to perform more intricate searches. The Filters panel includes a few standard facets. You can also add custom search facets.
 
@@ -24,8 +20,8 @@ The search facets that appear in the Filters panel are defined in the underlying
 
 For full-text searches, add the Fulltext predicate to the form. Use the Property predicate to search for assets that match a single property you specify. Use the Options predicate to search assets that match one or more values for a particular property. Add the Date Range predicate to search assets created within a specified date range.
 
-1. Tap/click the AEM logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then tap  **Edit** ![aemassets_edit](assets/aemassets_edit.png).
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **Edit** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Locate and select the Assets Admin Search Rail](assets/assets_admin_searchrail.png)
 
@@ -33,7 +29,7 @@ For full-text searches, add the Fulltext predicate to the form. Use the Property
 
    >[!NOTE]
    >
-   >To use the folder search functionality from the pre-configured **Assets Admin Search Rail** from an earlier AEM version, perform these steps:
+   >To use the folder search functionality from the pre-configured **Assets Admin Search Rail** from an earlier version, perform these steps:
    >
    >1. Navigate to */conf/global/settings/dam/search/facets/assets/jcr:content/items* in CRXDE.
    >1. Delete the **type** node.
@@ -62,15 +58,15 @@ For full-text searches, add the Fulltext predicate to the form. Use the Property
 
    Associate a metadata property with a predicate in the Property Name field
 
-1. Tap/click the **[!UICONTROL Preview]** ![preview](assets/preview.png) to generate a preview of the Filters panel as it appears after you add the predicate.
+1. Click the **[!UICONTROL Preview]** ![preview](assets/preview.png) to generate a preview of the Filters panel as it appears after you add the predicate.
 1. Review the layout of the predicate in the Preview mode.
 
    ![Preview the search form before submitting the changes](assets/preview-1.png)
 
    Preview the search form before submitting the changes
 
-1. To close the preview, tap/click the **[!UICONTROL Close]** ![close](assets/close.png) on the upper-right corner of the preview.
-1. Tap **[!UICONTROL Done]** to save the settings.
+1. To close the preview, click the **[!UICONTROL Close]** ![close](assets/close.png) on the upper-right corner of the preview.
+1. Click **[!UICONTROL Done]** to save the settings.
 1. Navigate to the Search panel in the Assets user interface. The Property predicate is added to the panel.
 1. Enter a description for the asset to be searched in the text box. For example, enter "Adobe." When you perform a search, assets with description matching "Adobe" are listed in the search results.
 
@@ -110,14 +106,14 @@ If you want to use an existing node, specify it using the selection dialog.
 >
 >The Options predicate is a custom wrapper that includes property predicates to demonstrate the described behavior. Currently, there is no REST endpoint available to support the functionality natively.
 
-1. Tap the AEM logo, and then go to **[!UICONTROL Tools > General > Search Forms]**.
-1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then tap the Edit icon.
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]**.
 1. In the **[!UICONTROL Edit Search Form]** page, drag **[!UICONTROL Options Predicate]** from the **[!UICONTROL Select Predicate]** tab to the main pane.
 1. In the **[!UICONTROL Settings]** tab, enter a label and a name for the property. For example, to search assets based on their format, specify a user-friendly name for the label, for example **[!UICONTROL File Type]**. Specify the property based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:format.`
 1. Do one of the following:
 
     * In the **[!UICONTROL Property Name]** field, mention the path of the JSON file where you define the nodes for the options and specify corresponding key-value pairs.
-    * Tap or click the `+` symbol next to the Options field to specify the display text and value for the options you want to supply in the Filters panel. To add another option, tap/click `+` symbol and repeat the step.
+    * Click the `+` symbol next to the Options field to specify the display text and value for the options you want to supply in the Filters panel. To add another option, click `+` symbol and repeat the step.
 
 1. Ensure that **[!UICONTROL Single Select]** is cleared to let the user select multiple options for file types at a time (for example, Images, Documents, Multimedia, and Archives). If you select **[!UICONTROL Single Select]**, the user can select only one option for file types at a time.
 
@@ -130,23 +126,23 @@ If you want to use an existing node, specify it using the selection dialog.
 
 ## Add a multi-value property predicate {#adding-a-multi-value-property-predicate}
 
-The Multi Value Property predicate lets you search assets for multiple values. Consider a scenario where you have images of multiple products in AEM Assets and the metadata for each image includes an SKU number associated with the product. You can use this predicate to search for product images based on multiple SKU numbers.
+The Multi Value Property predicate lets you search assets for multiple values. Consider a scenario where you have images of multiple products in Assets and the metadata for each image includes an SKU number associated with the product. You can use this predicate to search for product images based on multiple SKU numbers.
 
-1. Click the AEM logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. On the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, the tap **[!UICONTROL Edit]** ![aemassets_edit](assets/aemassets_edit.png).
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. On the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, the click **[!UICONTROL Edit]** ![aemassets_edit](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag a **[!UICONTROL Multi Value Property Predicate]** from the **[!UICONTROL Select Predicate]** tab to the main pane.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. You can also use the selection dialog to select a node.
 1. Ensure that **[!UICONTROL Delimiter Support]** is selected. In the **[!UICONTROL Input Delimiters]** field, specify delimiters to separate individual values. By default, comma is specified as the delimiter. You can specify a different delimiter.
-1. In the **Description** field, enter an optional description and then tap **[!UICONTROL Done]**.
+1. In the **Description** field, enter an optional description and then click **[!UICONTROL Done]**.
 1. Navigate to the Filters panel in the Assets user interface. The **[!UICONTROL Multi Value Property]** predicate is added to the panel.
 1. Specify multiple value in the Multi Value field separated by the delimiters and perform the search. The predicate fetches an exact text match for the values you specify.
 
 ## Add a Tags predicate {#adding-a-tags-predicate}
 
-The Tag predicate allows you to perform tag-based searches for assets. By default, AEM Assets searches assets for one or more tags matches based on the tags you specify. In other words, the search query performs an OR operation using the specified tags. However, you can use the match all tags option to search for assets that include all tags that you specify.
+The Tag predicate allows you to perform tag-based searches for assets. By default, Assets searches assets for one or more tags matches based on the tags you specify. In other words, the search query performs an OR operation using the specified tags. However, you can use the match all tags option to search for assets that include all tags that you specify.
 
-1. Click the AEM logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]** and then tap **[!UICONTROL Edit]** ![aemassets_edit](assets/aemassets_edit.png).
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]** and then click **[!UICONTROL Edit]** ![aemassets_edit](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
 1. In the Settings tab, enter a placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. Alternatively, you can select a node in CRXDE from the selection dialog.
 1. Configure the Root tags path property of this predicate to populate various tags in the Tags list.
@@ -156,13 +152,13 @@ The Tag predicate allows you to perform tag-based searches for assets. By defaul
 
    Typical settings of Tags predicate
 
-1. In the **[!UICONTROL Description]** field, enter an optional description and then click/tap **[!UICONTROL Done]**.
+1. In the **[!UICONTROL Description]** field, enter an optional description and then click **[!UICONTROL Done]**.
 1. Navigate to the Search panel. The **[!UICONTROL Tags]** predicate is added to the Search panel.
 1. Specify tags based on which you want to search assets or select from the list of suggestions.
 
-   ![AEM-provided suggestion when typing name of tag](assets/chlimage_1-419.png)
+   ![Experience Manager-provided suggestion when typing name of tag](assets/chlimage_1-419.png)
 
-   AEM-provided suggestion when typing name of tag
+   *Figure: Experience Manager-provided suggestion when typing name of tag.*
 
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
 
@@ -189,28 +185,25 @@ Similar to the way you add a Property predicate or an Options predicate, you can
 
 ## Restore default search facets {#restoring-default-search-facets}
 
-By default, a Lock icon appears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page. The Lock icon disappears if you add search facets to the form indicating that the default form has been modified.
+By default, a lock icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) appears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page. Lock icon against an option on the Search Forms page indicate that the default settings are intact and are not customized. The icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) disappears if you add search facets to the form indicating that the default form has been modified.
 
 ![Lock icon against an option on the Search Forms page indicate that the default settings are intact and are not customized.](assets/locked_admin_rail.png)
-
-Lock icon against an option on the Search Forms page indicate that the default settings are intact and are not customized.
 
 To restore the default search facet, perform these steps:
 
 1. Select **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.
-1. Tap **[!UICONTROL Delete]** in the toolbar.
- ![deleteoutline](assets/deleteoutline.png)
-1. In the confirmation dialog, tap **[!UICONTROL Delete]** to remove the custom changes.
+1. Click **[!UICONTROL Delete]** ![deleteoutline](assets/deleteoutline.png) in the toolbar.
+1. In the confirmation dialog, click **[!UICONTROL Delete]** to remove the custom changes.
 
-   After you delete the custom changes to search facets, the Lock icon reappears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.
+   After you delete the custom changes to search facets, the lock icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) reappears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.
 
 ## User permissions {#user-permissions}
 
 If you are not assigned an administrator role, here is a list of permissions you require to perform edit, delete, and preview actions involving search facets.
 
-| Action | Permissions |
-|---|---|
-| [!UICONTROL Edit] | Read and Write permissions on the `/apps` node in CRXDE |
+|       Action        |                           Permissions                            |
+| ------------------- | ---------------------------------------------------------------- |
+| [!UICONTROL Edit]   | Read and Write permissions on the `/apps` node in CRXDE          |
 | [!UICONTROL Delete] | Read, Write, and Delete permissions on the `/apps` node in CRXDE |
 | [!UICONTROL Preview] | Read, Write, and Delete permissions on the `/var/dam/content` node in CRXDE. Also, Read and Write permissions on `/apps` node. |
 

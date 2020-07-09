@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Assets User Guide
+user-guide-title: Experience Manager 6.5 Assets User Guide
 ---
 
-# AEM 6.5 Assets User Guide {#assets}
+# Experience Manager 6.5 Assets User Guide {#assets}
 
-+ [Assets user guide](home.md)
++ [[!DNL Assets] user guide](home.md)
 + [AEM 6.5 Assets release notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [About DAM](assets.md)
 + [Best practices for assets](best-practices-for-assets.md)
@@ -15,7 +15,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [AEM Assets home page experience](assets-home-page.md)
     + [Search assets in AEM](search-assets.md)
     + [Multilingual assets](multilingual-assets.md)
-    + [Use Adobe Stock assets in AEM Assets](aem-assets-adobe-stock.md)
+    + [Use [!DNL Adobe Stock] assets in AEM Assets](aem-assets-adobe-stock.md)
     + [Previewing 3D assets](previewing-3d-assets.md)
     + [Review folder assets and collections](bulk-approval.md)
     + [Activity stream in timeline](activity-stream.md)
@@ -30,6 +30,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Configuring Dynamic Media - Scene7 mode](config-dms7.md)
     + [Configuring Dynamic Media - Hybrid mode](config-dynamic.md)
     + [Troubleshooting Dynamic Media - Scene7 mode](troubleshoot-dms7.md)
+    + [Migrating from Dynamic Media - Hybrid mode to Dynamic Media - S7 mode](migrate-from-hybrid-to-dms7.md)
     + [Managing Dynamic Media assets](managing-assets.md)
     + [Best practices for optimizing the quality of your images](best-practices-for-optimizing-the-quality-of-your-images.md)
     + [Managing Dynamic Media Viewer Presets](managing-viewer-presets.md)
@@ -44,11 +45,12 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [HTTP2 delivery of content](http2.md)
     + [Delivering Dynamic Media assets](delivering-dynamic-media-assets.md)
     + [Activating hotlink protection in Dynamic Media](hotlink-protection.md)
+    + [3D Support](/help/assets/assets-3d.md)
     + [Image Sets](image-sets.md)
     + [Panoramic Images](panoramic-images.md)
     + [Mixed Media Sets](mixed-media-sets.md)
     + [Spin Sets](spin-sets.md)
-    + [Video](video.md)
+    + [Video in Dynamic Media](video.md)
     + [Carousel Banners](carousel-banners.md)
     + [Interactive Images](interactive-images.md)
     + [Interactive Videos](interactive-videos.md)
@@ -69,7 +71,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Customize and extend AEM Assets](extending-assets.md)
     + [Process assets using media handlers and workflows](media-handlers.md)
     + [Extend search functionality](searchx.md)
-    + [Install and configure ImageMagick to work with AEM Assets](best-practices-for-imagemagick.md)
+    + [Install and configure [!DNL ImageMagick] to work with AEM Assets](best-practices-for-imagemagick.md)
     + [Integrate assets with activity stream](extending-activity-stream.md)
     + [Extend Asset Editor](asseteditorx.md)
     + [Assets HTTP API](mac-api-assets.md)
@@ -98,7 +100,7 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Use PDF rasterizer](aem-pdf-rasterizer.md)
     + [Configure upload restrictions](configuring-asset-upload-restrictions.md)
     + [AEM and Creative Cloud integration best practices](aem-cc-integration-best-practices.md)
-    + [Integrate with InDesign server](indesign.md)
+    + [Integrate with InDesign Server](indesign.md)
     + [Metadata profiles](metadata-profiles.md)
     + [Digital Rights Management in assets](drm.md)
     + [Use demo package for asset insights](touch-ui-using-demo-package-for-asset-insights.md)
@@ -122,14 +124,14 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Publish folders to Brand Portal](brand-portal-publish-folder.md)
     + [Publish collections to Brand Portal](brand-portal-publish-collection.md)
 + Content Fragments {#fragments}
-    + [Working with Content Fragments](content-fragments.md)
-    + [Managing Content Fragments](content-fragments-managing.md)
-    + [Content Fragment Models](content-fragments-models.md)
-    + [Variations - Authoring Fragment Content](content-fragments-variations.md)
-    + [Content Fragment Associated Content](content-fragments-assoc-content.md)
-    + [Metadata - Fragment Properties](content-fragments-metadata.md)
-    + [Content Fragments - Delete Considerations](content-fragments-delete.md)
-    + [Content Fragments - Markdown](content-fragments-markdown.md)
+    + [Working with Content Fragments](content-fragments/content-fragments.md)
+    + [Managing Content Fragments](content-fragments/content-fragments-managing.md)
+    + [Content Fragment Models](content-fragments/content-fragments-models.md)
+    + [Variations - Authoring Fragment Content](content-fragments/content-fragments-variations.md)
+    + [Content Fragment Associated Content](content-fragments/content-fragments-assoc-content.md)
+    + [Metadata - Fragment Properties](content-fragments/content-fragments-metadata.md)
+    + [Content Fragments - Delete Considerations](content-fragments/content-fragments-delete.md)
+    + [Content Fragments - Markdown](content-fragments/content-fragments-markdown.md)
     + [Creating translation projects for Content Fragments](creating-translation-projects-for-content-fragments.md)
 + Manage Assets {#managing}
     + [Manage digital assets](managing-assets-touch-ui.md)
@@ -142,10 +144,10 @@ user-guide-title: AEM 6.5 Assets User Guide
     + [Create translation projects](translation-projects.md)
     + [Prepare assets for translation](preparing-assets-for-translation.md)
     + [Download assets from AEM](download-assets-from-aem.md)
-    + [Asynchronous operations](asynchronous-jobs.md)
+    + [Asynchronous jobs](asynchronous-jobs.md)
     + [Lightbox](touch-ui-light-box.md)
     + [Asset insights](touch-ui-asset-insights.md)
-    + [Enable asset insights through DTM](touch-ui-using-dtm-for-asset-insights.md)
+    + [Enable asset insights through Adobe Launch](touch-ui-using-dtm-for-asset-insights.md)
     + [Configure asset insights](touch-ui-configuring-asset-insights.md)
     + [Check in and check out assets](check-out-and-submit-assets.md)
     + [Apply translation cloud services to folders](transition-cloud-services.md)

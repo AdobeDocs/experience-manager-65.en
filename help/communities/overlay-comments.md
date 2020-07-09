@@ -33,7 +33,7 @@ To overlay comments you will need to:
 
 Suppose you want to customize the message of email notifications, you can do so by [overlaying](/help/communities/client-customize.md#overlays) the templates at **/libs/settings/community/templates/email/html**.
 
-For example, to modify the mentions emails notifications (for a specific communities component where ugc is created) add an** if **condition for verb **mention **in the templates of the components for which you enabled the** @mentions** support.
+For example, to modify the mentions emails notifications (for a specific communities component where ugc is created) add an **if** condition for verb **mention** in the templates of the components for which you enabled the **@mentions** support.
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -41,4 +41,4 @@ For example, to modify the mentions emails notifications (for a specific communi
 {{/equals}}\
 ```
 
-To modify the email notifications template for @mention in blog comments, place out of the box template at: **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en**
+To modify the email notifications template for @mention in blog comments, place out of the box template at: `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`

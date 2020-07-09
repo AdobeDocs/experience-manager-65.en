@@ -13,21 +13,21 @@ docset: aem65
 
 ---
 
-# Ideation Feature{#ideation-feature}
+# Ideation Feature {#ideation-feature}
 
 ## Introduction {#introduction}
 
-The ideation feature provides an area for signed-in site visitors (community members) in the publish environment to :
+The ideation feature provides an area for signed-in site visitors (community members) in the publish environment to:
 
-* create ideas to share with the community
-* view and comment on ideas
-* follow an idea
-* vote on an idea
+* Create ideas to share with the community.
+* View and comment on ideas.
+* Follow an idea.
+* Vote on an idea.
 
-This section of the documentation describes
+This section of the documentation describes:
 
-* adding the ideation feature to an AEM site
-* configuration settings for the Ideation component
+* Adding the ideation feature to an AEM site.
+* Configuration settings for the Ideation component.
 
 ### Adding a Ideation to a Page {#adding-a-ideation-to-a-page}
 
@@ -39,7 +39,7 @@ and drag it into place on a page where the idea should appear.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/ideation.md#essentials-for-client-side) are included, this is how the `Ideation`component will appear :
+When the [required client-side libraries](/help/communities/ideation.md#essentials-for-client-side) are included, this is how the `Ideation` component will appear:
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -51,7 +51,7 @@ Select the placed `Ideation` component to access and select the `Configure` icon
 
 #### Settings tab {#settings-tab}
 
-Under the **Settings **tab, specify settings for ideas and comments :
+Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments:
 
 * **Allow Attachment Thumbnail**
 * **Max Attach Thumbnail Size**
@@ -85,7 +85,7 @@ Under the **Settings **tab, specify settings for ideas and comments :
 
 * **Allow Tagging**
 
-  If checked, allow members to add tag labels to their post (see **Tag field** tab). Default is unchecked.
+  If checked, allow members to add tag labels to their post (see **[!UICONTROL Tag field]** tab). Default is unchecked.
 
 * **Allow File Uploads**
 
@@ -97,11 +97,11 @@ Under the **Settings **tab, specify settings for ideas and comments :
 
 * **Allowed File Types**
 
-  Relevant only if `Allow File Uploads` is checked. A comma separated list of file extensions with the "dot" separater. For example : .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specifed, then those not specified will not be allowed to be uploaded. Default is none specified such that** **all file types are allowed.
+  Relevant only if `Allow File Uploads` is checked. A comma separated list of file extensions with the "dot" separater. For example : .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specifed, then those not specified will not be allowed to be uploaded. Default is none specified such that all file types are allowed.
 
 * **Max Attach Image File Size**
 
-  Relevant only if Allow File Uploads is checked. Maximum number of bytes an uploaded image file may have. Default is 2097152** **(2 Mb).
+  Relevant only if Allow File Uploads is checked. Maximum number of bytes an uploaded image file may have. Default is 2097152 (2 Mb).
 
 * **Allow Replies**
 
@@ -143,7 +143,7 @@ Under the **Settings **tab, specify settings for ideas and comments :
 
 #### User Moderation tab {#user-moderation-tab}
 
-Under the **User Moderation **tab, specify how the posted ideas and comments (user generated content) are managed. For more information, see [Moderating User Generated Content](/help/communities/moderate-ugc.md).
+Under the **[!UICONTROL User Moderation]** tab, specify how the posted ideas and comments (user generated content) are managed. For more information, see [Moderating User Generated Content](/help/communities/moderate-ugc.md).
 
 * **Deny Posts**
 
@@ -175,19 +175,19 @@ Under the **User Moderation **tab, specify how the posted ideas and comments (us
 
 #### Tag field tab {#tag-field-tab}
 
-Under the **Tag field** tab, the tags which may be applied, if allowed under the **Settings **tab, are limited according to namespaces chosen.
+Under the **[!UICONTROL Tag field]** tab, the tags which may be applied, if allowed under the **[!UICONTROL Settings]** tab, are limited according to namespaces chosen.
 
 * **Allowed Namespaces**
 
-  Relevant if `Allow Tagging` is checked under the **Settings** tab. The tags which may be applied are limited to those within the namespace categories checked. The list of namespaces includes "Standard Tags" (the default namespace) as well as "Include All Tags". Default is none checked, which means all namespaces are allowed.
+  Relevant if `Allow Tagging` is checked under the **[!UICONTROL Settings]** tab. The tags which may be applied are limited to those within the namespace categories checked. The list of namespaces includes "Standard Tags" (the default namespace) as well as "Include All Tags". Default is none checked, which means all namespaces are allowed.
 
 * **Suggestion Limit**
 
-  Enter the number of tags to be displayed as a suggestion to the member posting to the forum. A value of **-**1 means no limit. Default is 0.
+  Enter the number of tags to be displayed as a suggestion to the member posting to the forum. A value of **-1** means no limit. Default is 0.
 
 #### Sort Settings tab {#sort-settings-tab}
 
-Under the **Sort Settings **tab, specify how the posted comments are sorted when displayed.
+Under the **[!UICONTROL Sort Settings]** tab, specify how the posted comments are sorted when displayed.
 
 * **Sort By**
 

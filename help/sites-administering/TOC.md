@@ -10,6 +10,7 @@ user-guide-title: AEM 6.5 Administering User Guide
 + [Administering User Guide overview](home.md)
 + Sites Features {#introduction}
     + [Website Administration](msm-and-translation.md)
+    + [Asynchronous Jobs](asynchronous-jobs.md)
     + [Reusing Content: Multi Site Manager and Live Copy](msm.md)
     + [Live Copy Overview Console](msm-livecopy-overview.md)
     + [Configuring Live Copy Synchronization](msm-sync.md)
@@ -154,7 +155,6 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [AEM Commerce - GDPR Readiness](gdpr-compliance-commerce.md)
 + Content Management {#contentmanagement}
     + [How to Work With Packages](package-manager.md)
-    + [Assets Workflow Offloader](workflow-offloader.md)
     + [Administering Tags](tags.md)
     + [The Page Exporter](page-exporter.md)
     + [Classic UI Tagging Console](classic-console.md)

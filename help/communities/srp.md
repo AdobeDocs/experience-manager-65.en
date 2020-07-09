@@ -29,9 +29,9 @@ All SCF components are implemented using the SRP API, allowing code to be develo
 
 See also:
 
-* [SRP and UGC Essentials](srp-and-ugc.md) - SRP utility methods and examples
-* [Accessing UGC with SRP](accessing-ugc-with-srp.md) - Coding guidelines
-* [SocialUtils Refactoring](socialutils.md) - Mapping deprecated utility methods to current SRP utility methods
+* [SRP and UGC Essentials](srp-and-ugc.md) - SRP utility methods and examples.
+* [Accessing UGC with SRP](accessing-ugc-with-srp.md) - Coding guidelines.
+* [SocialUtils Refactoring](socialutils.md) - Mapping deprecated utility methods to current SRP utility methods.
 
 ## About the Repository {#about-the-repository}
 
@@ -58,10 +58,11 @@ For purposes of management and reporting, it is useful to have access to UGC fro
 When UGC is saved to shared storage, there is a single instance of member content that may, in most deployments, be accessed from both the author and publish environments. Regardless of SRP choice (MSRP, ASRP, JSRP), all must be accessed programmatically with the SRP API.
 
 >[!NOTE]
->
->See [SRP and UGC Essentials](srp-and-ugc.md) for sample code and additional details.
->
->See [Accessing UGC with SRP](accessing-ugc-with-srp.md) for best practices when coding.
+ >
+ >See [SRP and UGC Essentials](srp-and-ugc.md) for sample code and additional details.
+ >
+ >See [Accessing UGC with SRP](accessing-ugc-with-srp.md) for best practices when coding.
+ >
 
 ### ASRP {#asrp}
 
@@ -99,7 +100,7 @@ JSRP uses the Oak indices for queries.
 
 Shadow nodes, which mimic the path to UGC, exist in the local repository to serve two purposes:
 
-1. [Access Control (ACLs](#for-access-control-acls))
+1. [Access Control (ACLs](#for-access-control-acls)
 1. [Non-Existing Resources (NERs)](#for-non-existing-resources-ners)
 
 Regardless of SRP implementation, the actual UGC will *not *be visible at the same location as the shadow node.
@@ -121,8 +122,9 @@ Some Communities components are includable within a script and thus require a Sl
 Shadow nodes provide a Sling addressable location in the repository.
 
 >[!CAUTION]
->
->As the shadow node has multiple uses, the presence of a shadow node does *not* imply that the component is a NER.
+ >
+ >As the shadow node has multiple uses, the presence of a shadow node does *not* imply that the component is a NER.
+ >
 
 ### Storage Location {#storage-location}
 
@@ -130,11 +132,11 @@ Following is an example of a shadow node, using the [Comments component](http://
 
 * The component exists in the local repository at:
 
-  /content/community-components/en/comments/jcr:content/content/includable/comments
+  `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 * The corresponding shadow node exists in the local repository at:
 
-  /content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments
+  `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 No UGC will be found under the shadow node.
 

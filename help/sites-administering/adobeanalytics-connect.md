@@ -107,7 +107,7 @@ For the Report Suite ID (RSID) that you are using, you can control which server 
 >For example, a framework is configured to use the *diiweretail* report suite and author is the selected server instance. When pages are published along with the framework, calls are still made to Adobe Analytics, however these calls do not contain the RSID. Only calls from the author instance include the RSID.
 
 1. Using **Navigation**, select **Tools**, **Cloud Services**, then **Legacy Cloud Services**.
-1. Scroll to **Adobe Analytics** and click **&#91;+&#93;** next to **Available Configurations**.
+1. Scroll to **Adobe Analytics** and select **Show Configurations**.
 1. Click the **&#91;+&#93;** link next to your Adobe Analytics configuration.
 
 1. In the **Create Framework** dialog:
@@ -179,7 +179,7 @@ Descendents of the page inherit the association with the framework. For example,
 1. Select **Save & Close**.
 1. **[Publish](/help/sites-authoring/publishing-pages.md)** the page to activate the page and any connected configurations/files.
 1. The final step is to visit the page on the publish instance and search for a keyword (e.g. aubergine) using the **Search** component.
-1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Marketing Cloud Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger_install.html).
+1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
 1. Using the example provided, the call should contain the value entered (i.e. aubergine) in eVar7 and the events list should contain event3.
 
 ### Page Views {#page-views}

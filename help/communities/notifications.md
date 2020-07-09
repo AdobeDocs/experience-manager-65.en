@@ -13,35 +13,35 @@ docset: aem65
 
 ---
 
-# Communities Notifications{#communities-notifications}
+# Communities Notifications {#communities-notifications}
 
 ## Overview {#overview}
 
 AEM Communities provides a notifications section which displays events of interest to the signed in community member.
 
-Notifications are similar to [activities](/help/communities/essentials-activities.md) and [subscriptions](/help/communities/subscriptions.md) as they may result from
+Notifications are similar to [activities](/help/communities/essentials-activities.md) and [subscriptions](/help/communities/subscriptions.md) as they may result from:
 
-* the member posting content
-* the member choosing to follow another member
-* the member choosing to follow specific topics, articles and other threads of content
-* the member tagging (@mention) another community member in a user generated content
+* The member posting content.
+* The member choosing to follow another member.
+* The member choosing to follow specific topics, articles and other threads of content.
+* The member tagging (@mention) another community member in a user generated content.
 
-What distinguishes notifications from activities and subscriptions is
+What distinguishes notifications from activities and subscriptions is:
 
-* a link to the notifications section is always present in a community site's header
+* A link to the notifications section is always present in a community site's header:
 
-    * activities require the [activity stream function](/help/communities/functions.md#activity-stream-function) to be included in the community site's structure
-    * subscriptions require [configuration of email](/help/communities/email.md)
+  * Activities require the [activity stream function](/help/communities/functions.md#activity-stream-function) to be included in the community site's structure.
+  * Subscriptions require [configuration of email](/help/communities/email.md).
 
-* the implementation of notifications is through scalable and pluggable channels
+* The implementation of notifications is through scalable and pluggable channels:
 
-    * activities are only available on the web
-    * subscriptions are only available using email
+  * Activities are only available on the web.
+  * Subscriptions are only available using email.
 
-As of Communities [FP1](/help/communities/deploy-communities.md#latestfeaturepack), the notification channels available are
+As of Communities [FP1](/help/communities/deploy-communities.md#latestfeaturepack), the notification channels available are:
 
-* the web channel, accessed using the `Notifications` link
-* the email channel, available when email is properly configured
+* The web channel, accessed using the `Notifications` link.
+* The email channel, available when email is properly configured.
 
 Future channels are mobile and desktop.
 
@@ -57,30 +57,30 @@ For instructions on setting up email, see [Configuring Email](/help/communities/
 
 Components must be configured to enable following. Features that allow following are [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md), and [comments](/help/communities/comments.md).
 
-Note that
+**Note**:
 
-* components used within community [site templates](/help/communities/sites.md) and [group templates](/help/communities/tools-groups.md) may already be configured to allow following
+* Components used within community [site templates](/help/communities/sites.md) and [group templates](/help/communities/tools-groups.md) may already be configured to follow.
 
-* member profiles are already configured to allow other memebers to follow
+* Member profiles are already configured to allow other memebers to follow.
 
 ## Notifications from Following {#notifications-from-following}
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
-The **Follow **button provides a means to follow entries as activities, subscriptions and/or notifications. Each time the **Follow **button is selected, it is possible to toggle on or off a selection. The `Email Subscriptions` selection is only present when configured.
+The **[!UICONTROL Follow]** button provides a means to follow entries as activities, subscriptions and/or notifications. Each time the **[!UICONTROL Follow]** button is selected, it is possible to toggle on or off a selection. The `Email Subscriptions` selection is only present when configured.
 
-If any method of following is selected, the text of the button changes to **Following**. For convenience, it is possible to select `Unfollow All` to toggle off all methods.
+If any method of following is selected, the text of the button changes to **[!UICONTROL Following]**. For convenience, it is possible to select `Unfollow All` to toggle off all methods.
 
-The **Follow **button will appear
+The **[!UICONTROL Follow]** button will appear:
 
-* when viewing another member's profile
-* on a main feature page, such as forums, QnA, and blogs
+* When viewing another member's profile.
+* On a main feature page, such as forums, QnA, and blogs:
 
-    * follows all activity for that general feature
+  * Follows all activity for that general feature.
 
-* for a specific entry, such as a forum topic, QnA question, or blog article
+* For a specific entry, such as a forum topic, QnA question, or blog article:
 
-    * follows all activity for that specific entry
+  * Follows all activity for that specific entry.
 
 ## Managing Notification Settings {#managing-notification-settings}
 
@@ -120,7 +120,7 @@ When the email channel is enabled, the member receives an email which contains a
 
 Organizations can customize the email notifications by [overlaying](/help/communities/client-customize.md#overlays) the templates at **/libs/settings/community/templates/email/html**.
 
-For example, to modify the mentions emails notifications (for a communities component) add an** if **condition for verb **mention **in the templates of the components for which you enabled the** @mentions** support.
+For example, to modify the mentions emails notifications (for a communities component) add an **if** condition for verb **mention** in the templates of the components for which you enabled the **@mentions** support.
 
 To modify the email notifications template for @mention in blog comments, place out of the box template at: **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en**
 

@@ -25,12 +25,15 @@ Before adding enablement resources for a community site, the AEM instances must 
 For details, see [Configuring Enablement](enablement.md).
 
 >[!CAUTION]
->
->If SCORM is installed after community site creation, any enablement resources present before SCORM is installed must be recreated.
+ >
+ >If SCORM is installed after community site creation, any enablement resources present before SCORM is installed must be recreated.
+ >
+
 
 >[!NOTE]
->
->With the release of [AEM 6.3](deploy-communities.md#latestfeaturepack) and the equivalent Communities feature packs [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) and [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), the enablement feature no longer requires a [MySQL database](mysql.md).
+ >
+ >With the release of [AEM 6.3](deploy-communities.md#latestfeaturepack) and the equivalent Communities feature packs [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) and [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), the enablement feature no longer requires a [MySQL database](mysql.md).
+ >
 
 ## Terminology {#terminology}
 
@@ -40,13 +43,13 @@ Resources are essential to an [enablement community](overview.md#enablement-comm
 
 Characteristics of a Resource:
 
-* May be of type
-    * Image (JPG, PNG, GIF, BMP)
-    * Video (MP4)
-    * Flash (SWF)
-    * Document (PDF)
-    * Quiz (SCORM)
-* May be referenced from one or more learning paths
+* May be of type:
+  * Image (JPG, PNG, GIF, BMP)
+  * Video (MP4)
+  * Flash (SWF)
+  * Document (PDF)
+  * Quiz (SCORM)
+* May be referenced from one or more learning paths.
 
 ### Learning Path {#learning-path}
 
@@ -54,9 +57,9 @@ A learning path is a logical set of enablement resources grouped together for ea
 
 ### Members Group {#members-group}
 
-When a community site is created, the name given to the site for the URL is used in the creation of the [site specific user groups](users.md) configured with various permissions for various roles. All of these automatically created groups are prefixed with `Community *<site-name>*`.
+When a community site is created, the name given to the site for the URL is used in the creation of the [site specific user groups](users.md) configured with various permissions for various roles. All of these automatically created groups are prefixed with `Community <site-name>`.
 
-One such user group is `Community *<site-name>* Members` group, which identifies registered users in the publish environment as community members. See the tutorial [Getting Started with AEM Communities for Enablement](getting-started-enablement.md) for an example.
+One such user group is `Community <site-name> Members` group, which identifies registered users in the publish environment as community members. See the tutorial [Getting Started with AEM Communities for Enablement](getting-started-enablement.md) for an example.
 
 For [engagement communities](overview.md#egagementcommunity), it is reasonable to allow site visitors to self-register or use social login, at which point they are automatically added to the members group.
 
@@ -68,9 +71,9 @@ For [enablement communities](overview.md#enablement-community), it is recommende
 
 In the author environment, to reach the Resources console
 
-* From global navigation: **[!UICONTROL Navigation > Communities > Resources]**
+* From global navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Resources]**
 
-![chlimage_1-163](assets/chlimage_1-163.png)
+  ![chlimage_1-163](assets/chlimage_1-163.png)
 
 ### Select a Community Site {#select-a-community-site}
 
@@ -102,16 +105,16 @@ To select multiple enablement resources, select the first by hovering over the c
 
 To add a new enablement resource to the community site
 
-* Select the `Create` icon
-* From the sub-menu which displays, select `Resource`
+* Select the `Create` icon.
+* From the sub-menu which displays, select **[!UICONTROL Resource]**.
 
-This launches a step-by-step process of
+This launches a step-by-step process of:
 
-* Describing the resource (name, card image and text)
-* Selecting the resource content
-* Selecting a cover image for the resource
-* Identifying resource contacts
-* Assigning resources to members
+* Describing the resource (name, card image and text).
+* Selecting the resource content.
+* Selecting a cover image for the resource.
+* Identifying resource contacts.
+* Assigning resources to members.
 
 When the resource is part of a course, a learning path, members should only be assigned to the learning path. Assignments may be added after the enablement resource has been created.
 
@@ -121,21 +124,21 @@ When the resource is part of a course, a learning path, members should only be a
 
 * **[!UICONTROL Add Image]**
 
-  (*optional*) An image to display on the card for the enablement resource in the member's assignments page as well as the Resources console. The image is selected from the server's local file system. If an image is not provided, a thumbnail will be generated for the uploaded resource.
+  (*Optional*) An image to display on the card for the enablement resource in the member's assignments page as well as the Resources console. The image is selected from the server's local file system. If an image is not provided, a thumbnail will be generated for the uploaded resource.
 
-  ***Note***: the recommended image size is not simply 480 x 480 pixels. Due to the responsive design of the cards to various browser dimensions, the display size will vary from 220 X 165 pixels to 400 x 165 pixels.
+  ***Note***: The recommended image size is not simply 480 x 480 pixels. Due to the responsive design of the cards to various browser dimensions, the display size will vary from 220 X 165 pixels to 400 x 165 pixels.
 
 * **[!UICONTROL Site Name]**
 
   (*readonly*) The community site to which the resource is being added.
 
-* **[!UICONTROL Resource Name&ast;]**
+* **[!UICONTROL Resource Name]**
 
-  (*required*) The display name for the resource. A valid node name is created from the display name.
+  (*Required*) The display name for the resource. A valid node name is created from the display name.
 
 * **[!UICONTROL Tags]**
 
-  (*optional*) One or more tags may be chosen which associate the enablement resource with one or more catalogs. See [Tagging Enablement Resources](tag-resources.md).
+  (*Optional*) One or more tags may be chosen which associate the enablement resource with one or more catalogs. See [Tagging Enablement Resources](tag-resources.md).
 
 * **[!UICONTROL Show in Catalog]**
 
@@ -143,19 +146,19 @@ When the resource is part of a course, a learning path, members should only be a
 
 * **[!UICONTROL Description]**
 
-  (*optional*) The description to display for the enablement resource.
+  (*Optional*) The description to display for the enablement resource.
 
 * **[!UICONTROL Small Asset]**
 
-  (*optional*) Selected from AEM Assets. A thumbnail image to represent the resource in the publish environment, such as in a catalog.
+  (*Optional*) Selected from AEM Assets. A thumbnail image to represent the resource in the publish environment, such as in a catalog.
 
 * **[!UICONTROL Large Asset]**
 
-  (*optional*) Selected from AEM Assets. A large image to represent the resource in the publish environment, such as on the main page for a resource.
+  (*Optional*) Selected from AEM Assets. A large image to represent the resource in the publish environment, such as on the main page for a resource.
 
 * **[!UICONTROL Content Fragment Asset]**
 
-  (*optional*) Selected from AEM Assets. A content fragment that may be referenced in the publish environment, but is not in use by default.
+  (*Optional*) Selected from AEM Assets. A content fragment that may be referenced in the publish environment, but is not in use by default.
 
 * Select **[!UICONTROL Next]**
 
@@ -170,9 +173,11 @@ Select the `'+' icon`, in the upper right corner, to begin the process of choosi
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
 * **[!UICONTROL Upload from my local files]**
+  
   Uploading from the local file system will use the native file browser to select and upload a file. Supported file types are SCORM.zip (HTML5 or SWF), MP4 video, SWF, PDF, and image types (JPG, PNG, GIF, BMP). The filename becomes the name of the asset, which is added to the asset library.
 
 * **[!UICONTROL Browse Asset Library]**
+  
   Select from Assets Library. Selection is limited to those that are visible within the community site.
 
 * **[!UICONTROL Add an external URL]**
@@ -181,13 +186,13 @@ Select the `'+' icon`, in the upper right corner, to begin the process of choosi
 
   In the dialog which opens, enter:
 
-    * **[!UICONTROL Title]**
+  * **[!UICONTROL Title]**
 
-      The name of the asset for the enablement resource.
+    The name of the asset for the enablement resource.
 
-    * **[!UICONTROL URL]**
+  * **[!UICONTROL URL]**
 
-      The URL to an asset.
+    The URL to an asset.
 
 * **[!UICONTROL Add an Adobe Connect URL]**
 
@@ -195,13 +200,13 @@ Select the `'+' icon`, in the upper right corner, to begin the process of choosi
 
   In the dialog which opens, enter:
 
-    * **[!UICONTROL Title]**
+  * **[!UICONTROL Title]**
 
-      The name of the asset for the enablement resource.
+    The name of the asset for the enablement resource.
 
-    * **[!UICONTROL URL]**
+  * **[!UICONTROL URL]**
 
-      The URL to an Adobe Connect session.
+    The URL to an Adobe Connect session.
 
 * **[!UICONTROL Define an External Resource]**
 
@@ -209,13 +214,13 @@ Select the `'+' icon`, in the upper right corner, to begin the process of choosi
 
   In the dialog which opens, enter:
 
-    * **[!UICONTROL Title]**
+  * **[!UICONTROL Title]**
 
-      The name of the asset for the enablement resource.
+    The name of the asset for the enablement resource.
 
-    * **[!UICONTROL Location]**
+  * **[!UICONTROL Location]**
 
-      The location of a physical site, such as a classroom..
+    The location of a physical site, such as a classroom..
 
 #### Example of an added video resource {#example-of-an-added-video-resource}
 
@@ -227,44 +232,49 @@ Select the `'+' icon`, in the upper right corner, to begin the process of choosi
 
   The recommended size for the cover image is 640 x 360 px.
 
-* Select **[!UICONTROL Next]**
+* Select **[!UICONTROL Next]**.
 
 ### 3 Settings {#settings}
 
 ![chlimage_1-173](assets/chlimage_1-173.png)
 
 >[!NOTE]
->
->Learners should not be enrolled direclty in enablement resources that are to be referenced from a learning path. Learners need only be enrolled in the learning path.
->
->If a member is enrolled in both a resource and a learning path which references that resource, their assignments will show both the single resource and the resource within the learning path.
+ >
+ >Learners should not be enrolled direclty in enablement resources that are to be referenced from a learning path. Learners need only be enrolled in the learning path.
+ >
+ >If a member is enrolled in both a resource and a learning path which references that resource, their assignments will show both the single resource and the resource within the learning path.
+ >
 
 * **[!UICONTROL Social Settings]**
 
   These settings control whether or not learners are able to provide input regarding the enablement resource. The [moderation settings](sites-console.md#moderation) are those of the parent community site.
 
-    * **[!UICONTROL Allow Commenting]**
+  * **[!UICONTROL Allow Commenting]**
 
-      If checked, members are allowed to comment on the resource. Default is checked.
+    If checked, members are allowed to comment on the resource. Default is checked.
 
-    * **[!UICONTROL Allow Ratings]**
+  * **[!UICONTROL Allow Ratings]**
 
-      If checked, members are allowed to rate the resource. Default is checked.
+    If checked, members are allowed to rate the resource. Default is checked.
 
-    * **[!UICONTROL Allow Anonymous Access]**
+  * **[!UICONTROL Allow Anonymous Access]**
 
-      If checked, anonymous site visitors are allowed to view the resource in a catalog when the community site also allows anonymous access. Default is unchecked.
+    If checked, anonymous site visitors are allowed to view the resource in a catalog when the community site also allows anonymous access. Default is unchecked.
 
 * **[!UICONTROL Due Date]**
+  
   *(Optional)* A date by which the assignment should be completed may be selected.
 
 * **[!UICONTROL Resource Author]**
+  
   *(Optional)* The author of the enablement resource. Use the pulldown menu to select from the users who are members of the [members group](#members-group).
 
 * **[!UICONTROL Resource Contact&ast;]**
+  
   *(Required)* A person the member can contact regarding the enablement resource. Use the pulldown menu to select from the users who are members of the [members group](#members-group).
 
 * **[!UICONTROL Resource Expert]**
+  
   *(Optional)* A person the member can contact who has expertise regarding the enablement resource. Use the pulldown menu to select from users who are members of the [members group](#members-group).
 
 ### 4 Assignments {#assignments}
@@ -272,11 +282,12 @@ Select the `'+' icon`, in the upper right corner, to begin the process of choosi
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
 * **[!UICONTROL Add Assignees]**
-  Use the pulldown menu to select from [members](#members-group) - the users and user groups (listed in bold face) - who are to be enrolled as Learners. When members sign into the community site, the enablement resources (and learning paths) in which they are enrolled will appear on their [Assignments](functions.md#assignments-function) page.
+  
+  Use the pulldown menu to select from [members](#members-group) - The users and user groups (listed in bold face) - who are to be enrolled as Learners. When members sign into the community site, the enablement resources (and learning paths) in which they are enrolled will appear on their [Assignments](functions.md#assignments-function) page.
 
-* select **[!UICONTROL Create]**
+* Select **[!UICONTROL Create]**.
 
-![chlimage_1-175](assets/chlimage_1-175.png)
+  ![chlimage_1-175](assets/chlimage_1-175.png)
 
 Successful creation of the enablement resource returns to the Resources console with the newly created resource selected. From this console, it is possible to [manage the resource](#managing-a-resource).
 
@@ -287,17 +298,17 @@ Successful creation of the enablement resource returns to the Resources console 
 To add a new learning path to the community site
 
 * Select the `Create` icon
-* From the sub-menu which displays, select `Learning Path`
+* From the sub-menu which displays, select **[!UICONTROL Learning Path]**.
 
-This launches a step-by-step process of
+This launches a step-by-step process of:
 
-* Identifying the learning path
-* Providing a card image to represent the learning path to the learners
-* Referencing the enablement resources to include in the learning path
-* Optionally ordering the resources
-* Optionally identifying prerequisite learning paths
-* Identifying a learning path contact
-* Enrolling members
+* Identifying the learning path.
+* Providing a card image to represent the learning path to the learners.
+* Referencing the enablement resources to include in the learning path.
+* Optionally ordering the resources.
+* Optionally identifying prerequisite learning paths.
+* Identifying a learning path contact.
+* Enrolling members.
 
 For enablement resources included in a learning path, the assignments should only be made for the learning path and not for the individual resources.
 
@@ -307,21 +318,21 @@ For enablement resources included in a learning path, the assignments should onl
 
 * **[!UICONTROL Add Image]**
 
-  (*optional*) An image to display on the card for the learning path in the member's assignments page as well as the Resources console. The image is selected from the server's local file system. If an image is not provided, a thumbnail will be generated for the uploaded resource.
+  (*Optional*) An image to display on the card for the learning path in the member's assignments page as well as the Resources console. The image is selected from the server's local file system. If an image is not provided, a thumbnail will be generated for the uploaded resource.
 
-  ***Note***: the recommended image size is no longer simply 480 x 480 pixels. Due to the responsive design of the cards to various browser dimensions, the display size will vary from 220 X 165 pixels to 400 x 165 pixels.
+  ***Note***: The recommended image size is no longer simply 480 x 480 pixels. Due to the responsive design of the cards to various browser dimensions, the display size will vary from 220 X 165 pixels to 400 x 165 pixels.
 
 * **[!UICONTROL Site Name]**
 
-  (*readonly*) The community site to which the resource is being added.
+  (*Readonly*) The community site to which the resource is being added.
 
 * **[!UICONTROL Learning Path Name]**
 
-  (*required*) The display name for the learning path. A valid node name is created from the display name.
+  (*Required*) The display name for the learning path. A valid node name is created from the display name.
 
 * **[!UICONTROL Tags]**
 
-  (*optional*) One or more tags may be chosen which associate the learning path with one or more catalogs. See [Tagging Enablement Resources](tag-resources.md).
+  (*Optional*) One or more tags may be chosen which associate the learning path with one or more catalogs. See [Tagging Enablement Resources](tag-resources.md).
 
 * **[!UICONTROL Show in Catalog]**
 
@@ -329,30 +340,31 @@ For enablement resources included in a learning path, the assignments should onl
 
 * **[!UICONTROL Description]**
 
-  (*optional*) The description to display for the enablement resource.
+  (*Optional*) The description to display for the enablement resource.
 
 * **[!UICONTROL Small Asset]**
 
-  (*optional*) Selected from AEM Assets. A thumbnail image to represent the resource in the publish environment, such as in a catalog.
+  (*Optional*) Selected from AEM Assets. A thumbnail image to represent the resource in the publish environment, such as in a catalog.
 
 * **[!UICONTROL Large Asset]**
 
-  (*optional*) Selected from AEM Assets. A large image to represent the resource in the publish environment, such as on the main page for a resource.
+  (*Optional*) Selected from AEM Assets. A large image to represent the resource in the publish environment, such as on the main page for a resource.
 
 * **[!UICONTROL Content Fragment Asset]**
 
-  (*optional*) Selected from AEM Assets. A content fragment that may be referenced in the publish environment, but is not in use by default.
+  (*Optional*) Selected from AEM Assets. A content fragment that may be referenced in the publish environment, but is not in use by default.
 
-* Select **[!UICONTROL Next]**
+* Select **[!UICONTROL Next]**.
 
 ### Add Prerequisites {#add-prerequisites}
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
 * **[!UICONTROL Prerequisite Learning Paths]**
-  (*optional*) When other published learning paths are selected, they must be completed before a learner can select this learning path.
+  
+  (*Optional*) When other published learning paths are selected, they must be completed before a learner can select this learning path.
 
-* Select **[!UICONTROL Next]**
+* Select **[!UICONTROL Next]**.
 
 ### Add Resources {#add-resources}
 
@@ -360,15 +372,16 @@ For enablement resources included in a learning path, the assignments should onl
 
 * **[!UICONTROL Enforce Order in Learning Path]**
 
-  (*optional*) if set to On, then the order in which the enablement resources are added is the order in which learners are required to proceed through the learning path. Default is Off.
+  (*Optional*) If set to On, then the order in which the enablement resources are added is the order in which learners are required to proceed through the learning path. Default is Off.
 
 * **[!UICONTROL Resources]**
 
-  One or more Resources chosen from among the *published *enablement resources created for the current community site.
+  One or more Resources chosen from among the *published* enablement resources created for the current community site.
 
 >[!NOTE]
->
->You can only select the resources available at the same level as the learning path. For example, for a learning path created in a group only the group level resources are available; for a learning path created in a community site the resources in that site are available for adding to the learning path.
+ >
+ >You can only select the resources available at the same level as the learning path. For example, for a learning path created in a group only the group level resources are available; for a learning path created in a community site the resources in that site are available for adding to the learning path.
+ >
 
 * Select **[!UICONTROL Next]**.
 
@@ -387,18 +400,18 @@ For enablement resources included in a learning path, the assignments should onl
 * Select **[!UICONTROL Create]**
 
 >[!NOTE]
->
->Enablement resources referenced from the learning path should not list the same Assignees (learners), if any.
->
->If a member is enrolled in both an enablement resource and a learning path which references that rresource, their assignments will show both the single resource and the resource within the learning path.
+ >
+ >Enablement resources referenced from the learning path should not list the same Assignees (learners), if any.
+ >
+ >If a member is enrolled in both an enablement resource and a learning path which references that rresource, their assignments will show both the single resource and the resource within the learning path.
+ >
 
 ## Managing a Resource {#managing-a-resource}
 
-To manage a single enablement resource
+To manage a single enablement resource:
 
-* From the Resources console
-* Select the community site which contains the resource
-* Select the resource
+* From the **[!UICONTROL Resources]** console, select the community site which contains the resource.
+* Select the resource.
 
 For the selected enablement resource, it is possible to:
 
@@ -422,7 +435,7 @@ If the only change is to modify assignments on the Settings step, then saving th
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-By selecting the trashcan icon, the enablement resource will be `Delete`d after confirmation.
+By selecting the trashcan icon, the enablement resource will be `Deleted` after confirmation.
 
 ### Publish {#publish}
 
@@ -430,9 +443,9 @@ By selecting the trashcan icon, the enablement resource will be `Delete`d after 
 
 Before learners are able to see an assigned enablement resourse, it must be published:
 
-* Select the world icon to `Publish`
-* In the dialog which pops up, select **[!UICONTROL Publish]** again
-* Select **[!UICONTROL Close]**
+* Select the world icon to `Publish`.
+* In the dialog which pops up, select **[!UICONTROL Publish]** again.
+* Select **[!UICONTROL Close]**.
 
 Even though the dialog states the action is queued, it often is published immediately.
 
@@ -440,7 +453,7 @@ Even though the dialog states the action is queued, it often is published immedi
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-To temporarily make the enablement resources unaccessible to members in the publish environment without deleting it, use the world icon to `Unpublish`the resource.
+To temporarily make the enablement resources unaccessible to members in the publish environment without deleting it, use the world icon to `Unpublish` the resource.
 
 ### Report {#report}
 
@@ -448,7 +461,7 @@ To temporarily make the enablement resources unaccessible to members in the publ
 
 The Report icon provides access to the reports generated when learners interact with their assigned enablement resources in the publish environment. The report varies depending on the type of resource.
 
-For all learning paths, it is possible to view a report based either on resources or learners ( `User Report`).
+For all learning paths, it is possible to view a report based either on resources or learners ( `User Report`.)
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
 
@@ -464,19 +477,19 @@ The Analytics Timeline report shows when events occur over time for this enablem
 
 * **Views**
 
-  A view is when a learner visits the resource details page
+  A view is when a learner visits the resource details page.
 
 * **Plays**
 
-  A play is when alLearner interacts with the resource, such as playing a video or opening a PDF
+  A play is when alLearner interacts with the resource, such as playing a video or opening a PDF.
 
 * **Ratings**
 
-  A rating is when a learner assigns a star rating to a resource
+  A rating is when a learner assigns a star rating to a resource.
 
 * **Comments**
 
-  A comment is when alLearner adds a comment
+  A comment is when alLearner adds a comment.
 
 The vertical axis is the number of events.
 
@@ -514,31 +527,31 @@ The Ratings report is based on the number of learners who have rated the enablem
 
 #### Report Summary {#report-summary}
 
-For an enablement resource, the Report Summary is a table listing
+For an enablement resource, the Report Summary is a table listing.
 
 * Each learner who has interacted with the resource
-    * Their status
-    * Whether they were assigned the resource
-        * As opposed to their finding the resource in a catalog
+  * Their status
+  * Whether they were assigned the resource
+    * As opposed to their finding the resource in a catalog
     * Number of comments posted
     * The rating given, if any
 
 For a learning path Resource Report, the Report Summary is a table listing
 
 * Each resource included in the learning path
-    * Publish status
-    * Number of views
-    * Number of plays
-    * Average rating
-    * Format
-    * Size
-    * Community site name
+  * Publish status
+  * Number of views
+  * Number of plays
+  * Average rating
+  * Format
+  * Size
+  * Community site name
 
-For a learning path User Report, the Report Summary is a table listing
+For a learning path User Report, the Report Summary is a table listing.
 
-* Each learner who is assigned to the learning path
-    * Number of Resources completed
-    * Their status
+* Each learner who is assigned to the learning path:
+  * Number of Resources completed.
+  * Their status.
 
 It is possible to adjust the display of the table by selecting columns using the `Show / hide columns` selector.
 
@@ -546,7 +559,7 @@ It is possible to adjust the display of the table by selecting columns using the
 
 The Reports Summary table may be downloaded in CSV format using a button at the top of the console.
 
-* for an enablement resource: `Download Resource Report as CSV` button
-* for a learning path: `Download Learning Path Report as CSV` button
+* For an enablement resource: `Download Resource Report as CSV` button.
+* For a learning path: `Download Learning Path Report as CSV` button.
 
 The complete Reports Summary is downloaded regardless of columns chosen for display.

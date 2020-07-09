@@ -1,19 +1,9 @@
 ---
 title: Creating and Organizing Pages
-seo-title: Creating and Organizing Pages
 description: How to create and manage pages with AEM
-seo-description: How to create and manage pages with AEM
-uuid: d2989c42-b500-4256-b779-9667a380b885
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
-docset: aem65
-
 ---
 
-# Creating and Organizing Pages{#creating-and-organizing-pages}
+# Creating and Organizing Pages {#creating-and-organizing-pages}
 
 This section describes how to create and manage pages with Adobe Experience Manager (AEM) so that you can then [create content](/help/sites-authoring/editing-content.md) on those pages.
 
@@ -86,13 +76,13 @@ When creating a new page there are two keys fields:
 
 * **[Title](#title)**:
 
-    * This is displayed to the user in the console and shown at the top of the page content when editing.
-    * This field is mandatory.
+  * This is displayed to the user in the console and shown at the top of the page content when editing.
+  * This field is mandatory.
 
 * **[Name](#name)**:
 
-    * This is used to generate the URI.
-    * User input for this field is optional. If not specified, the name is derived from the title. See the following section [Page Name Restrictions and Best Practices](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) for details.
+  * This is used to generate the URI.
+  * User input for this field is optional. If not specified, the name is derived from the title. See the following section [Page Name Restrictions and Best Practices](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) for details.
 
 #### Page Name Restrictions and Best Practices {#page-name-restrictions-and-best-practices}
 
@@ -105,11 +95,10 @@ The page **Title** and **Name** can be created separately but are related:
 >[!NOTE]
 >
 >When defining a page name, a good rule-of-thumb is to keep the page name as brief but as expressive and memorable as possible to make it easy to understand for the reader. See the [W3C style guide](https://www.w3.org/Provider/Style/TITLE.html) for the `title` element for more information.
-
 >
 >Also keep in mind that some browsers (e.g. older versions of IE) can only accept URLs up to a certain length, so there is also technical reason to keep page names short.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposesd by AEM and the JCR.
+When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.
 
 The minimum allowed characters are:
 
@@ -127,7 +116,7 @@ Full details of all characters allowed can be found in [the naming conventions](
 
 #### Title {#title}
 
-If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. For example:
+If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters substituted. For example:
 
 | Title |Derived Name |
 |---|---|
@@ -218,7 +207,7 @@ Unless all pages have been created for you in advance, before you can start crea
     * **Name**:
 
         * This is used to generate the URI. If not specified, the name is derived from the title.
-        * If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposesd by AEM and JCR.
+        * If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
 
         * You **cannot submit invalid characters** in the **Name** field. When AEM detects invalid characters the field will be highlighted and an explanatory message shown to indicate the characters that need removing/replacing.
 
@@ -286,11 +275,13 @@ You can copy a page and all of its subpages to a new location:
    >If you are in selection mode this is exited automatically as soon as the page is copied.
 
 1. Navigate to the location for the new copy of the page.
-1. Use the **Paste** page icon:
+1. The **Paste** icon is available with a drop down arrow directly to the right:
 
-   ![screen_shot_2018-03-22at105510](assets/screen_shot_2018-03-22at105510.png)
+   ![Paste](assets/paste-without-children.png)
 
-   A copy of the original page and any subpages will be created at this location.
+   You can either:
+   * Select the **Paste** page icon itself: A copy of the original page and any child-pages will be created at this location.
+   * Select the drop down arrow to reveal the **Paste without children** option. A copy of the original page will be created at this location; child-pages will not be copied.
 
    >[!NOTE]
    >
@@ -378,6 +369,31 @@ AEM offers you the functionality to update any internal links that refer to the 
 >[!NOTE]
 >
 >If the page is not referenced in any way, then the **Adjust/Republish** step will be skipped.
+
+#### Asynchronous Actions {#asynchronous-actions}
+
+Normally a page move or rename action is carried out immediately. This is considered synchronous processing and further action in the UI is blocked until the action is complete.
+
+However, if the number of pages impacted is above a defined limit, the action will be processed asynchronously, allowing the user to continue authoring in the UI unimpeded by the page move or rename action.
+
+* When clicking **Move** in the last step above, AEM checks the configured limit.
+* If the number of pages impacted is below the limit, it performs a synchronous operation.
+* If the number of pages impacted is above the limit, it performs an asynchronous operation.
+  * The user must define when the asynchronous operation should be performed
+    * **Now** begins the execution of the asynchronous job immediately.
+    * **Later** allows the user to define when the asynchronous job will start.
+
+      ![Asynchronous page move](assets/asynchronous-page-move.png)
+
+The status of asynchronous jobs can be checked in the [**Async Jobs Status** dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
+
+>[!NOTE]
+>
+>For further information about asynchronous job processing and how to configure the limit for page move/rename actions, please see the [Asynchronous Jobs](/help/sites-administering/asynchronous-jobs.md) document in the Administration user guide.
+
+>[!NOTE]
+>
+>Asynchronous page move processing requires AEM 6.5.3.0 or higher.
 
 ### Deleting a Page {#deleting-a-page}
 

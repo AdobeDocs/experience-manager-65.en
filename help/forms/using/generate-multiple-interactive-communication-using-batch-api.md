@@ -172,20 +172,13 @@ You combine data (records) saved in an external data source with an interactive 
 
  1. Log in to your AEM instance and create an Interactive Communication. To use the interactive communication mentioned in the sample code given below, [click here](assets/SimpleMediumIC.zip).
  1. [Build and deploy an AEM Project using Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) on your AEM instance.
- 1. Add [AEM Forms Client SDK version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) or later and latest [AEM Uber Jar](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) in dependencies list of POm file of your AEM project. For example, 
+ 1. Add [AEM Forms Client SDK version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) or later in dependencies list of POM file of your AEM project. For example,
 
     ```XML
         <dependency>
             <groupId>com.adobe.aemfd</groupId>
             <artifactId>aemfd-client-sdk</artifactId>
             <version>6.0.122</version>
-        </dependency>
-        <dependency>
-           <groupId>com.adobe.aem</groupId>
-           <artifactId>uber-jar</artifactId>
-           <version>6.5.0</version>
-           <classifier>apis</classifier>
-           <scope>provided</scope>
         </dependency>
     ```    
     
@@ -200,18 +193,9 @@ You combine data (records) saved in an external data source with an interactive 
             import java.io.FileOutputStream;
             import java.io.IOException;
             import java.io.InputStream;
-            import java.io.OutputStream;
             import java.io.PrintWriter;
             import java.util.List;
-            import java.util.logging.FileHandler;
-            import java.util.logging.Logger;
-            import java.util.logging.SimpleFormatter;
-
             import javax.servlet.Servlet;
-            import javax.servlet.ServletContext;
-
-            import com.adobe.aemfd.watchfolder.service.api.ContentProcessor;
-
             import org.apache.commons.io.IOUtils;
             import org.apache.sling.api.SlingHttpServletRequest;
             import org.apache.sling.api.SlingHttpServletResponse;
@@ -221,8 +205,7 @@ You combine data (records) saved in an external data source with an interactive 
             import org.osgi.service.component.annotations.Component;
             import org.osgi.service.component.annotations.Reference;
 
-            import com.adobe.aemfd.docmanager.Document;
-            import com.adobe.aemfd.docmanager.passivation.DocumentPassivationHandler;
+            import com.adobe.fd.ccm.multichannel.batch.api.builder.BatchConfigBuilder;
             import com.adobe.fd.ccm.multichannel.batch.api.factory.BatchComponentBuilderFactory;
             import com.adobe.fd.ccm.multichannel.batch.api.model.BatchConfig;
             import com.adobe.fd.ccm.multichannel.batch.api.model.BatchInput;
@@ -232,21 +215,8 @@ You combine data (records) saved in an external data source with an interactive 
             import com.adobe.fd.ccm.multichannel.batch.api.model.RenditionResult;
             import com.adobe.fd.ccm.multichannel.batch.api.service.BatchGeneratorService;
             import com.adobe.fd.ccm.multichannel.batch.util.BatchConstants;
-            import com.adobe.icc.render.obj.Content;
-
-            import javax.annotation.PostConstruct;
-            import javax.inject.Inject;
-            import javax.inject.Named;
-
-            import org.apache.sling.api.resource.Resource;
-            import org.apache.sling.models.annotations.Default;
-            import org.apache.sling.models.annotations.Model;
-            import org.apache.sling.settings.SlingSettingsService;
-            import org.apache.sling.api.resource.ResourceUtil;
-
-
-            import org.slf4j.*;
             import java.util.Date;
+
 
             @Component(service=Servlet.class,
             property={
@@ -388,4 +358,5 @@ Apart from saving the data on file system, you store JSON files in CRX-repositor
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
-> Only CRX protocol is enabled by default. To enable other supported protocols, see [Configuring prefill service using Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
+>
+>Only CRX protocol is enabled by default. To enable other supported protocols, see [Configuring prefill service using Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).

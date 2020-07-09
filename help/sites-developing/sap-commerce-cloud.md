@@ -217,8 +217,8 @@ Any product resource can be represented by a `Product API`. Most calls in the pr
 >1. `size`
 >
 >1. plus one more
->   This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
 >
+>   This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
 
 #### Product References and Product Data {#product-references-and-product-data}
 
@@ -545,9 +545,9 @@ Integration is provided between AEM and various eCommerce systems. This requires
 
   AEM is presumed to be the *only* web front-end and therefore performs *all* authentication.
 
-* Slave Accounts
+* Accounts in Hybris
 
-  AEM creates a slave account in hybris for each shopper. The username of the slave account is the same as the AEM username. A cryptographically-random password is auto-generated and stored (encrypted) in AEM.
+  AEM creates a corresponding (subordinate) account in hybris for each shopper. The username of this account is the same as the AEM username. A cryptographically-random password is auto-generated and stored (encrypted) in AEM.
 
 #### Pre-existing Users {#pre-existing-users}
 

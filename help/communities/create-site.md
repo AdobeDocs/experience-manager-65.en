@@ -26,7 +26,7 @@ The Communities Sites console provides a wizard to guide one through the steps o
 
 To begin creating a new community site:
 
-* Select the `Create`button.
+* Select the `Create` button.
 
 ![createcommunitysite](assets/createcommunitysite.png)
 
@@ -51,7 +51,7 @@ On the [Site Template step](/help/communities/sites-console.md#step2013asitetemp
 
 * **Template**: pull down to choose `Reference Site`
 
-Select **Next**
+* Select **Next**.
 
 ### Step 2: Design {#step-design}
 
@@ -65,7 +65,9 @@ Select the desired style to apply to the template. When selected, the theme will
 
 (Optional) Upload a banner image to display across the site pages. The banner is pinned to the left edge of the browser, between the community site header and navigation links. The banner height is cropped to 120 pixels. There is no resizing of the banner to fit the width of the browser and 120 pixel height.
 
-![chlimage_1-58](assets/chlimage_1-58.png) ![chlimage_1-59](assets/chlimage_1-59.png)
+![chlimage_1-284](assets/chlimage_1-284.png) 
+
+![upload-image-site](assets/upload-image-site.png)
 
 Select **Next**.
 
@@ -86,8 +88,9 @@ Check all checkboxes for [User Management](/help/communities/sites-console.md#us
 * To allow signing-in with Twitter instead of registering and creating a profile
 
 >[!NOTE]
->
->For a production environment, it is necessary to create custom Facebook and Twitter applications. See [Social Login with Facebook and Twitter](/help/communities/social-login.md).
+ >
+ >For a production environment, it is necessary to create custom Facebook and Twitter applications. See [Social Login with Facebook and Twitter](/help/communities/social-login.md).
+ >
 
 ![community site settings](assets/site-settings.png)
 
@@ -100,7 +103,7 @@ Finding namespaces is easy using type-ahead search. For example,
 * Type `tut`
 * Select `Tutorial`
 
-![chlimage_1-60](assets/chlimage_1-60.png)
+![chlimage_1-286](assets/chlimage_1-286.png)
 
 #### ROLES {#roles}
 
@@ -114,8 +117,9 @@ For example,
 * Select [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
->
->[Tunnel service](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) allows selection of members and groups existing only in the  publish  environment.
+ >
+ >[Tunnel service](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) allows selection of members and groups existing only in the  publish  environment.
+ >
 
 ![user roles in new site](assets/site-admin-1.png)
 
@@ -123,7 +127,7 @@ For example,
 
 Accept the default global settings for [moderating](/help/communities/sites-console.md#moderation) user-generated content (UGC).
 
-![chlimage_1-61](assets/chlimage_1-61.png)
+![chlimage_1-287](assets/chlimage_1-287.png)
 
 #### ANALYTICS {#analytics}
 
@@ -131,7 +135,7 @@ If Adobe Analytics is licensed and an Analytics cloud service and framework have
 
 See [Analytics Configuration for Communities Features](/help/communities/analytics.md).
 
-![chlimage_1-62](assets/chlimage_1-62.png)
+![chlimage_1-288](assets/chlimage_1-288.png)
 
 #### TRANSLATION {#translation}
 
@@ -144,7 +148,7 @@ The [Translation settings](/help/communities/sites-console.md#translation) speci
 * Select **Translate entire page**
 * Leave default persistence option
 
-![chlimage_1-63](assets/chlimage_1-63.png)
+![chlimage_1-289](assets/chlimage_1-289.png)
 
 #### ENABLEMENT {#enablement}
 
@@ -154,11 +158,13 @@ For a similar tutorial to quickly create an [enablement community](/help/communi
 
 Select **Next**.
 
+![chlimage_1-290](assets/chlimage_1-290.png)
+
 ### Step 4: Create Communities Site {#step-create-communities-site}
 
 Select **Create.**
 
-![chlimage_1-64](assets/chlimage_1-64.png)
+![chlimage_1-291](assets/chlimage_1-291.png)
 
 When the process completes, the folder for the new site is displayed in the Communities - Sites console.
 
@@ -197,38 +203,35 @@ From left to right they are:
 
 * **Delete Site** 
   
-  Select the delete icon to delete the community site from within **[UIControl Communities > Sites console]**. This action removes all the items associated with the site, such as UGC, user groups, assets and database records.
+  Select the delete icon to delete the community site from within **[!UICONTROL Communities > Sites console]**. This action removes all the items associated with the site, such as UGC, user groups, assets and database records.
 
 ![siteactions](assets/siteactions.png)
 
 >[!NOTE]
->
->If not using the default port 4503 for the publish instance, then edit the default replication agent to set the port number to the correct value.
->
->On the author instance, from the main menu:
->
->1. Navigate to **[UIControl Tools > Operations > Replication]** menu.
->1. Select **[UIControl Agents on author]**.
->1. Select **[UIControl Default Agent (publish)]**.
->1. Next to **[UIControl Settings]**, select **[UIControl Edit]**.
->1. In pop-up dialog for Agent Settings, select **[UIControl Transport]** tab.
->1. In URI, change the port number, 4503, to the desired port number >
->    * For example, to use port 6103:
->      https://localhost:6103/bin/receive?sling:authRequestLogin=1
->
->1. Select **[UIControl OK]**.
->1. (Optional) Select **[UIControl Clear]** or **[UIControl Force Retry]** to reset the replication queue.
->
+ >
+ >If not using the default port 4503 for the publish instance, then edit the default replication agent to set the port number to the correct value.
+ >
+ >On the author instance, from the main menu:
+ >
+ >1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]** menu.
+ >1. Select **[!UICONTROL Agents on author]**.
+ >1. Select **[!UICONTROL Default Agent (publish)]**.
+ >1. Next to **[!UICONTROL Settings]**, select **[!UICONTROL Edit]**.
+ >1. In pop-up dialog for Agent Settings, select **[!UICONTROL Transport]** tab.
+ >1. In URI, change the port number, 4503, to the desired port number. For example, to use port 6103: https://localhost:6103/bin/receive?sling:authRequestLogin=1
+ >1. Select **[!UICONTROL OK]**.
+ >1. (Optional) Select **[!UICONTROL Clear]** or **[!UICONTROL Force Retry]** to reset the replication queue.
+ >
 
 ### Select Publish {#select-publish}
 
 After ensuring the publish server is running, select the world icon to publish the community site.
 
-![chlimage_1-65](assets/chlimage_1-65.png)
+![chlimage_1-292](assets/chlimage_1-292.png)
 
 When the community site has been successfully published, a message briefly appears:
 
-![chlimage_1-66](assets/chlimage_1-66.png)
+![chlimage_1-293](assets/chlimage_1-293.png)
 
 ### New Community User Groups {#new-community-user-groups}
 
@@ -249,11 +252,11 @@ Note that [Aaron McDonald](/help/communities/tutorials.md#demo-users) is a membe
 * Community Engage Moderators
 * Community Engage Members (indirectly as a member of Moderators group)
 
-![chlimage_1-67](assets/chlimage_1-67.png)
+![chlimage_1-294](assets/chlimage_1-294.png)
 
 #### https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![chlimage_1-68](assets/chlimage_1-68.png)
+![chlimage_1-311](assets/chlimage_1-311.png)
 
 ## Configure for Authentication Error {#configure-for-authentication-error}
 
@@ -278,45 +281,46 @@ To get started:
 1. In the project browser, expand `/etc/map.`
 1. Select the `http` node:
 
-    * Select **Create Node:**
+   * Select **Create Node:**
 
-        * **Name** localhost.4503
+     * **Name** localhost.4503
           (do *not* use ':')
 
-        * **Type** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+     * **Type** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. With newly created `localhost.4503` node selected:
 
-    * Add property:
+   * Add property:
 
-        * **Name** sling:match
-        * **Type** String
-        * **Value** localhost.4503/$
+    * **Name** sling:match
+      * **Type** String
+      * **Value** localhost.4503/$
           (must end with '$' char)
 
-    * Add property:
+   * Add property:
 
-        * **Name** sling:internalRedirect
-        * **Type** String
-        * **Value** /content/sites/engage/en.html
+     * **Name** sling:internalRedirect
+     * **Type** String
+     * **Value** /content/sites/engage/en.html
 
 1. Select **Save All.**
 1. (Optional) Delete the browsing history.
 1. Browse to https://localhost:4503/.
 
-    * Arrive at https://localhost:4503/content/sites/engage/en.html
+   * Arrive at https://localhost:4503/content/sites/engage/en.html
 
 >[!NOTE]
->
->To disable, simply prefix the `sling:match` property value with an 'x' - `xlocalhost.4503/$` - and **Save All**.
+ >
+ >To disable, simply prefix the `sling:match` property value with an 'x' - `xlocalhost.4503/$` - and **Save All**.
+ >
 
-![chlimage_1-69](assets/chlimage_1-69.png)
+![chlimage_1-297](assets/chlimage_1-297.png)
 
 #### Troubleshooting: Error Saving Map {#troubleshooting-error-saving-map}
 
 If unable to save changes, be sure that the node name is `localhost.4503`, with a 'dot' separator, and not `localhost:4503` with a 'colon' separator, as `localhost`is not a valid namespace prefix.
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![chlimage_1-298](assets/chlimage_1-298.png)
 
 #### Troubleshooting: Fail to Redirect {#troubleshooting-fail-to-redirect}
 
@@ -331,6 +335,7 @@ In addition, administrators may use the [Edit Site icon](/help/communities/sites
 After any modification, remember to **Save** and re-**Publish** the site.
 
 >[!NOTE]
->
->If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
+ >
+ >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
+ >
 

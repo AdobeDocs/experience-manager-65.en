@@ -1,12 +1,7 @@
 ---
 title: Configure the Rich Text Editor plug-ins
-description: Learn to configure the AEM Rich Text Editor plug-ins to enable individual functionalities.
-uuid: 012552b7-5e32-4d74-be07-b441c3d4b47b
+description: Learn to configure the Adobe Experience Manager Rich Text Editor plug-ins to enable individual functionalities.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 87dc79ad-0a71-43f6-af04-4d26c7472dc5
-mini-toc-levels: 1
-docset: aem65
 ---
 
 # Configure the Rich Text Editor plug-ins {#configure-the-rich-text-editor-plug-ins}
@@ -17,7 +12,7 @@ For details about the other RTE configurations, see [Configure Rich Text Editor]
 
 >[!NOTE]
 >
->When working with CRXDE Lite, it is recommended to save the changes regularly using Save All.
+>When working with CRXDE Lite, it is recommended to save the changes regularly using [!UICONTROL Save All] option.
 
 ## Activate a plug-in and configure the features property {#activateplugin}
 
@@ -491,7 +486,7 @@ In CRXDE, once the property is saved, the represented character is displayed. Se
 
 ### Define a range of characters {#definerangechar}
 
-1. Use steps 1 to 3 from [Defining a Single Character](#definingasinglecharacter).
+1. Use steps 1 to 3 from [Defining a Single Character](#definesinglechar).
 1. Under `chars` add a new node to hold the definition of the character range:
 
     * **Name** you can specify the name, but it should reflect the character range; for example, pencils.
@@ -606,21 +601,18 @@ When the spellcheck plug-in is activated, the RTE uses dictionaries for each app
 
 >[!NOTE]
 >
->The message "Spell checking failed." is seen if a check is tried for a language that is not installed.
+>The message `Spell checking failed` is seen if a check is attempted for a language that is not installed. The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate readme files. Do not modify the files.
 
-A standard AEM installation includes the dictionaries for:
-
-* American English (en_us)
-* British English (en_gb)
-
->[!NOTE]
->
->The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate readme files. Do not modify the files.
-
-To add more dictionaries, if required, follow these steps.
+A standard AEM installation includes the dictionaries for American English (`en_us`) and British English (`en_gb`). To add more dictionaries, follow these steps.
 
 1. Navigate to the page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
-1. Select the required language and download the ZIP file with the spelling definitions. Extract the contents of the archive on your file system.
+
+1. Do one of the following to find a dictionary of your choice of language:
+
+   * Search for dictionary of your choice of language. On the dictionary page, locate the link to the original source or author's webpage. Locate the dictionary files for v2.x on such a page.
+   * Search for v2.x dictionary files at [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
+
+1. Download the archive with the spelling definitions. Extract the contents of the archive on your file system.
 
    >[!CAUTION]
    >
@@ -631,11 +623,9 @@ To add more dictionaries, if required, follow these steps.
 
 >[!NOTE]
 >
->The RTE spell checker is available on-demand. It does not run automatically as you start typing text.
+>The RTE spell checker is available on-demand. It does not run automatically as you start typing text. To run the spell checker, click [!UICONTROL Spellchecker] from the toolbar. RTE checks the spelling of words and highlights the misspelled words.
 >
->To run the spell checker, tap/click the Spellchecker button from the toolbar. RTE checks the spelling of words and highlights mis-spelled words.
->
->If you incorporate any change that the spell checker suggests, the state of the text changes and mis-spelled words are no longer highlighted. To run the spell checker, tap/click Spellchecker button again.
+>If you incorporate any change that the spell checker suggests, the state of the text changes and misspelled words are no longer highlighted. To run the spell checker, tap/click Spellchecker button again.
 
 ## Configure the history size for undo and redo actions {#undohistory}
 

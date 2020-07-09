@@ -25,21 +25,25 @@ The first step is to add a resource super type property to the `/apps/an-scf-san
 
 Using CRXDE Lite:
 
-<!--Resolve steps below-->
-    Name: `sling:resourceSuperType`
-    Type: `String`
-    Value: `foundation/components/page`
+1. Select node `/apps/an-scf-sandbox/components/playpage`.
+1. In properties tab, enter a new property with the following values:
+   
+   Name: `sling:resourceSuperType`
+   
+   Type: `String`
+   
+   Value: `foundation/components/page`
 
-1. Click the green **[!UICONTROL [+] Add]**
-1. Click **[!UICONTROL Save All]**
+1. Click the green **[!UICONTROL +Add]** button.
+1. Click **[!UICONTROL Save All]**.
 
-![chlimage_1-231](assets/chlimage_1-231.png)
+   ![chlimage_1-231](assets/chlimage_1-231.png)
 
 ### Head and body scripts {#head-and-body-scripts}
 
 1. In **CRXDE Lite** explorer pane, navigate to `/apps/an-scf-sandbox/components/playpage` and double-click the file `playpage.jsp` to open it in the edit pane.
 
-#### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp}
+   `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
    ```xml
    <%--
@@ -60,7 +64,7 @@ Using CRXDE Lite:
 
    With a super type of `foundation/components/page`, any script not defined in this same folder will resolve to a script in `/apps/foundation/components/page` folder (if it exists), else to a script in `/libs/foundation/components/page` folder.
 
-#### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp-1}
+   `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
    ```xml
    <%--
@@ -82,13 +86,13 @@ Using CRXDE Lite:
 
    To setup for authoring, overlay `body.jsp` with a local script and include a paragraph system (parsys) in the body:
 
-    1. Navigate to `/apps/an-scf-sandbox/components`
-    1. Select the `playpage`node
-    1. Right-click and select `Create > Create File...`
+   1. Navigate to `/apps/an-scf-sandbox/components`.
+   1. Select the `playpage` node.
+   1. Right-click and select `Create > Create File...`
 
-        * Name: **body.jsp**
+      * Name: **body.jsp**
 
-    1. Click **[!UICONTROL Save All]**
+   1. Click **[!UICONTROL Save All]**.
 
    Open `/apps/an-scf-sandbox/components/playpage/body.jsp` and paste in the following text:
 
@@ -108,7 +112,7 @@ Using CRXDE Lite:
    </body>
    ```
 
-1. Click **[!UICONTROL Save All]**
+1. Click **[!UICONTROL Save All]**.
 
 **View the page in a browser in edit mode:**
 
@@ -149,9 +153,10 @@ In addition, choose **[!UICONTROL General]** components, such as
 * Title (Foundation)
 
 >[!NOTE]
->
->The components enabled for the page par are stored in the repository as the value of the `components` property of the
->`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
+ >
+ >The components enabled for the page par are stored in the repository as the value of the `components` property of the
+ >`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
+ >
 
 ## Landing Page {#landing-page}
 
@@ -165,8 +170,8 @@ Change the browser URL to the root page: [http://localhost:4502/editor.html/cont
 * Select **[!UICONTROL Open Properties]**
 * On the ADVANCED tab
 
-    * For the Redirect entry, browse to **[!UICONTROL Websites > SCF Sandbox Site > SCF Sandbox]**
-    * Click **[!UICONTROL OK]**
+  * For the Redirect entry, browse to **[!UICONTROL Websites]** > **[!UICONTROL SCF Sandbox Site]** > **[!UICONTROL SCF Sandbox]**
+  * Click **[!UICONTROL OK]**
 
 * Click **[!UICONTROL OK]**
 

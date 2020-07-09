@@ -8,7 +8,7 @@ contentOwner: AG
 
 All digital assets, metadata and content of Microsoft Office and PDF documents are extracted and made searchable. Search allows sophisticated filtering on assets and fully respects the proper permissions. Metadata is covered in detail in metadata in Digital Asset Management.
 
-AEM Assets supports multiple ways of organizing content. You can organize them in a hierarchical manner using folders or you can organize them in an unordered, ad-hoc manner, using for example tags. Users can edit tags in the DAM Asset Editor where sub-assets, renditions, and metadata are displayed.
+Experience Manager Assets supports multiple ways of organizing content. You can organize them in a hierarchical manner using folders or you can organize them in an unordered, ad-hoc manner, using for example tags. Users can edit tags in the DAM Asset Editor where sub-assets, renditions, and metadata are displayed.
 
 ## Organize assets in folders {#organize-using-folders}
 
@@ -19,7 +19,7 @@ The most basic way to organize assets is to save these in folders. It is analogo
 
   * **Development folders**: contains digital assets that you are currently working on.
   * **Client folders**: contains digital assets based on clients or project names.
-  * **Master folders**: contains original, source digital assets.
+  * **Primary folders**: contains original, source digital assets.
   * **Rendition folders**: contains renditions and copies of the original, source digital assets.
   * **File Size folders**: contains digital assets based on small, medium, or large file sizes.
   * **Staging folders**: contains digital assets that are ready to publish live on your website.
@@ -28,17 +28,17 @@ The most basic way to organize assets is to save these in folders. It is analogo
   * **Date-based folders**: contains digital assets based on a creation date or a last modified date.
 
 * Create a directory of folders that are not likely to change so that any customization or automation continues to work. For example, the assigned processing profiles continue to work.
-* If an asset is already published, then you use AEM to move the asset to another folder, and re-publish from its new location, the original published asset location is still available, along with the newly re-published asset. The original published asset, however, is *lost* to AEM and cannot be unpublished. Therefore, as a best practice, first unpublish an asset and then move it to a different folder.
+* If an asset is already published, then you use Experience Manager to move the asset to another folder, and re-publish from its new location, the original published asset location is still available, along with the newly re-published asset. The original published asset, however, is *lost* to Experience Manager and cannot be unpublished. Therefore, as a best practice, first unpublish an asset and then move it to a different folder.
 
 ## Organize assets using tags {#use-tags-to-organize-assets}
 
-Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and leverage Adobe Sensei's AI algorithms for asset discovery.
+Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and leverage AI algorithms of Adobe Sensei for asset discovery.
 
 Adobe Experience Manager Assets uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, our artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
 
 For more information, see the following articles:
 
-* [About tags in AEM](/help/sites-authoring/tags.md)
+* [About tags in Experience Manager](/help/sites-authoring/tags.md)
 * [Edit asset metadata](meta-edit.md)
 * [Enhanced Smart Tags in Assets](enhanced-smart-tags.md)
 

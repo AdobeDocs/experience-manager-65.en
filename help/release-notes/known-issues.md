@@ -78,5 +78,6 @@ To resolve this error:
     * Multiple: False
     * Auto Created: Flase
 
-The property enables the client libraries under the runtime folder to access proxies. (CQ-4268679)
+  The property enables the client libraries under the runtime folder to access proxies. (CQ-4268679)
 
+* * When AEM Forms is started, the `SAX Security Manager could not be setup` warning appears.

@@ -145,7 +145,8 @@ AEM Forms can be set up using any combination of supported operating systems, ap
    <td>Application servers<br /> </td>
    <td>
     <ul>
-     <li>Oracle Weblogic</li>
+    <li>WebSphere Liberty profile</li>
+    <li>Oracle WebLogic</li>
     </ul> </td>
   </tr>
   <tr>

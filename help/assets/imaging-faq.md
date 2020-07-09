@@ -68,29 +68,28 @@ The following image formats are supported for Smart Imaging:
 * JPEG
 * PNG
 
-For any other format mentioned in a URL, you should explicity turn off Smart Imaging.  Append modifier `bfc=off` to the URL for file formats other than JPEG and PNG. You can accomplish this by using either one of the following methods:
+<!-- For any other format mentioned in a URL, you should explicity turn off Smart Imaging.  Append modifier `bfc=off` to the URL for file formats other than JPEG and PNG. You can accomplish this by using either one of the following methods:
 
 * Use a ruleset if the `fmt` modifier is mentioned in the URL. 
 * Append in URL modifiers field of the presets concerned.
 
-Adobe is working on a permanent fix that does not require you to append `bfc=off` for `fmt !=JPEG` or `fmt !=PNG`. This topic will be updated after the fix is delivered.
-
+Adobe is working on a permanent fix that does not require you to append `bfc=off` for `fmt !=JPEG` or `fmt !=PNG`. This topic will be updated after the fix is delivered. -->
 
 ## How does Smart Imaging work with our existing image presets that are already in use? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
 Smart Imaging works with your existing “image presets” and observes all of your image settings with the exception of quality (qlt) and format (fmt) if the requested file format is JPEG or PNG. For format conversion, we maintain full visual fidelity as defined by your image preset settings, but at a smaller file size. If original image size is smaller than what Smart Imaging produces, then the original image is served.
 
-In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format.
+<!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
 ## Will I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
 No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically.
 
-As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier.
+<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
 Also, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) to understand pre-requisites for Smart Imaging.
 
-## Does Smart Mmaging working with HTTPS? How about HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
+## Does Smart Imaging working with HTTPS? How about HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 
 Smart Imaging works with images delivered over HTTP or HTTPS. In addition, it also works over HTTP/2.
 
@@ -103,7 +102,7 @@ To use Smart Imaging, your company's Dynamic Media Classic or Dynamic Media on A
 
 To find your domains, log in to your company account or accounts.  
   
-Tap **[!UICONTROL Setup > Application Setup > General Settings]**. Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic domain, you can request moving over to your own custom domain as part of this transition when you submit a technical support ticket.
+Tap **[!UICONTROL Setup > Application Setup > General Settings.]** Look for the field labeled **[!UICONTROL Published Server Name.]** If you are currently using a generic domain, you can request moving over to your own custom domain as part of this transition when you submit a technical support ticket.
 
 Your first custom domain is no additional cost with a Dynamic Media license.
 
@@ -119,17 +118,17 @@ You must initiate the request to use smart imaging; it is not automatically enab
 
        To find your domains, log into your company account or accounts. 
 
-       Click **[!UICONTROL Setup > Application Setup > General Settings]**.  
+       Click **[!UICONTROL Setup > Application Setup > General Settings.]**  
 
-       Look for the field labeled **[!UICONTROL Published Server Name]**.
+       Look for the field labeled **[!UICONTROL Published Server Name.]**
     1. Verify that you are using the CDN through Adobe and not managed with a direct relationship.
     1. Verify you are using a dedicated domain such as `images.company.com` or `mycompany.scene7.com`, and not a generic domain, such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.  
 
        To find your domains, log into your company account or accounts.
 
-       Click **[!UICONTROL Setup > Application Setup > General Settings]**.  
+       Click **[!UICONTROL Setup > Application Setup > General Settings.]**  
 
-       Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media Classic domain, you can request moving over to your own custom domain as part of this transition.
+       Look for the field labeled **[!UICONTROL Published Server Name.]** If you are currently using a generic Dynamic Media Classic domain, you can request moving over to your own custom domain as part of this transition.
     1. Indicate if you also need this to work over HTTP/2.
 
 1. Technical Support will add you to the Smart Imaging customer Wait List based on the order in which requests were submitted.
@@ -138,7 +137,7 @@ You must initiate the request to use smart imaging; it is not automatically enab
 1. You are notified after completion by support.
 1. To maximize the performance improvements of Smart Imaging, Adobe recommends setting the Time To Live (TTL) to 24 hours or longer. The TTL defines how long assets are cached by the CDN. To change this setting:
 
-    1. If you use Dynamic Media Classic, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
+    1. If you use Dynamic Media Classic, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server.]** Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
     1. If you use Dynamic Media, follow [these instructions](config-dynamic.md). Set the **[!UICONTROL Expiration]** value 24 hours or longer.
 
 ## When can I expect my account to be enabled with Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}

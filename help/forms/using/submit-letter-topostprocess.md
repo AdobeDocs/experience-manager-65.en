@@ -40,7 +40,7 @@ To associate post processes with letters or interactive communications, you firs
 1. Specify the username and password.
 1. Ensure that sun.util.calendar is added to Deserialization Firewall Configuration.
 
-   Go to Deserialization Firewall Configuration and under Whitelisted classes of package prefixes, add sun.util.calendar.
+   Go to Deserialization Firewall Configuration and under Allowlisted classes of package prefixes, add sun.util.calendar.
 
 1. Now your servers are mapped and the post processes in AEM Forms on JEE are available in the AEM user interface while creating letters.
 
