@@ -240,8 +240,7 @@ Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE
    <td>Assembler</td>
    <td>Supported</td>
    <td>Supported</td>
-  </tr>
-  
+  </tr>  
   <tr>
    <td>HTML5 Forms, Interactive PDF Forms, Form Set</td>
    <td>Not Supported</td>
