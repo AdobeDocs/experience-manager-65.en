@@ -62,7 +62,7 @@ This section appears below the Welcome section and displays out-of-the-box widge
 
 **Recent**: The **[!UICONTROL Recently Viewed]** widget under this section displays recently accessed entities by the logged-in user, including folders, collections, and projects.
 
-**Discover**: The **[!UICONTROL New]** widget under this section displays the assets and renditions recently uploaded to the Assets instance.
+**Discover**: The **[!UICONTROL New]** widget under this section displays the assets and renditions recently uploaded to the Assets deployment.
 
 To enable purging of user activity data, enable the **[!UICONTROL DAM Event Purge Service]** from Configuration Manager. After you enable this service, activities of the logged-in user that exceed a specified number are deleted by the system.
 

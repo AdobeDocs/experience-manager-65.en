@@ -144,7 +144,7 @@ user-guide-title: Experience Manager 6.5 Assets User Guide
     + [Create translation projects](translation-projects.md)
     + [Prepare assets for translation](preparing-assets-for-translation.md)
     + [Download assets from AEM](download-assets-from-aem.md)
-    + [Asynchronous operations](/help/sites-administering/asynchronous-jobs.md)
+    + [Asynchronous jobs](asynchronous-jobs.md)
     + [Lightbox](touch-ui-light-box.md)
     + [Asset insights](touch-ui-asset-insights.md)
     + [Enable asset insights through Adobe Launch](touch-ui-using-dtm-for-asset-insights.md)
