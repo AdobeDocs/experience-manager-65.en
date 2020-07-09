@@ -66,6 +66,8 @@ To resolve this error:
 * In an adaptive from, when a form data model service is invoked from the rule editor to dynamically update values of the image choice component, values of the image choice component are not updated. (CQ-4254754)  
 * AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime packages 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Ensure that the aforementioned redistributable runtime packages are installed before starting the installation. (CQ-4265668)
 
+* PDF Generator does not support smart card-based authentication.  When an administrator enables the Group Policy `Interactive Logon: Require Smart card` on a Windows server, all the existing PDF Generator users are invalidated.
+
 * When an adaptive form is configured to dynamically update values of a component and the publish instance that hosts the form is accessed through the dispatcher, the functionality to dynamically update values of a fields stop working. To resolve the issue, on the publish instance, open CRXDE, navigate to /libs/fd/af/runtime/clientlibs/guideChartReducer, and create the property listed in below.
 
     * Name: allowProxy
