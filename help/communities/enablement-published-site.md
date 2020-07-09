@@ -41,9 +41,10 @@ An anonymous site visitor is immediately presented with the login page for this 
 Notice this  home page  shows four menu items: `Assignments, Ski Catalog, What's New` and `Discussions`, but none may be reached without signing in.
 
 >[!NOTE]
->
->It is possible to grant anonymous access to an enablement site without allowing site visitors to self-register.
->If an enablement resource is set to `show in catalog` and `allow anonymous access`, it will be possible for anonymous site visitors to view resources in the catalog.
+ >
+ >It is possible to grant anonymous access to an enablement site without allowing site visitors to self-register.
+ >If an enablement resource is set to `show in catalog` and `allow anonymous access`, it will be possible for anonymous site visitors to view resources in the catalog.
+ >
 
 ### Prevent anonymous access on JCR {#prevent-anonymous-access-on-jcr}
 
@@ -54,12 +55,13 @@ To protect your community site's content from access by anonymous users through 
 1. On AEM Author instance, go to https://&lt;host&gt;:&lt;port&gt;/editor.html/content/site/&lt;sitename&gt;.html.
 
    >[!NOTE]
-   >
-   >Do not go to the localized site.
+    >
+    >Do not go to the localized site.
+    >
 
 1. Go to **[!UICONTROL Page Properties]**.
 
-   ![page-properties-1](assets/page-properties-1.png)
+   ![page-properties](assets/page-properties.png)
 
 1. Go to **[!UICONTROL Advanced]** tab.
 1. Enable **[!UICONTROL Authentication Requirement]**.
@@ -88,7 +90,7 @@ The next time the member signs in, the home page, identified by the first menu i
 
 The Assignments page is where the member is shown all of the learning paths and enablement resources assigned specifically to them.
 
-Each assignment provides basic information as to
+Each assignment provides basic information as to:
 
 * The type of Assignment
 * Whether it is a new Assignment
@@ -182,14 +184,14 @@ Navigate to the **Communities, [Reports console](reports.md)**, and generate rep
 
 * Posts and views may be to all content, or to specific content:
 
-    * Forum
-    * Forum Topic
-    * QnA
-    * QnA Question
-    * Blog
-    * Blog Article
-    * Calendar
-    * Calendar Event
+  * Forum
+  * Forum Topic
+  * QnA
+  * QnA Question
+  * Blog
+  * Blog Article
+  * Calendar
+  * Calendar Event
 
 ### Resources Console {#resources-console}
 
@@ -230,7 +232,7 @@ For reports on assignments:
 
 * On author
 * Sign in with administrative privileges
-* Navigate to **[!UICONTROL Communities > Reports > Assignments Report]**
+* Navigate to **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Assignments Report]**
 * Select a **[!UICONTROL Site]** from the pull-down menu (select `Enablement Tutorial`)
 
 * Select **[!UICONTROL Group]** (select `Community Ski Class`)
@@ -243,9 +245,8 @@ For reports on assignments:
 
 For reports on views:
 
-* On author
-* Sign in with administrative privileges
-* Navigate to **[!UICONTROL Communities > Reports > Views Report]**
+* On author, sign in with administrative privileges
+* Navigate to **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Views Report]**
 * Select a **[!UICONTROL ]Site** from the pull-down menu (select `Enablement Tutorial`)
 
 * Select **[!UICONTROL Content Type]** (select `all`)
