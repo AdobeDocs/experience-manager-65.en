@@ -121,7 +121,7 @@ Primarily, your network optimization strategy depends upon the amount of bandwid
 
 Wherever possible, set the [!UICONTROL DAM Update Asset] workflow to Transient. The setting significantly reduces the overheads required to process workflows because, in this case, workflows need not pass through the normal tracking and archival processes.
 
-1. Navigate to `/miscadmin` in the [!DNLExperience Manager] instance at `https://[aem_server]:[port]/miscadmin`.
+1. Navigate to `/miscadmin` in the [!DNLExperience Manager] deployment at `https://[aem_server]:[port]/miscadmin`.
 
 1. Expand **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL dam]**.
 
@@ -278,11 +278,11 @@ For all network performance concerns from the customer, perform the following ta
 * By using a network benchmark tool
 * Test against the dispatcher
 
-### [!DNL Experience Manager] instance testing {#aem-instance-testing}
+### [!DNL Experience Manager] deployment testing {#aem-deployment-testing}
 
-To minimize latency and achieve high throughput through efficient CPU utilization and load-sharing, monitor the performance of your [!DNL Experience Manager] instance regularly. In particular:
+To minimize latency and achieve high throughput through efficient CPU utilization and load-sharing, monitor the performance of your [!DNL Experience Manager] deployment regularly. In particular:
 
-* Run load tests against the [!DNL Experience Manager] instance.
+* Run load tests against the [!DNL Experience Manager] deployment.
 * Monitor upload performance and UI responsiveness.
 
 ## [!DNL Experience Manager Assets] performance checklist and impact of asset management tasks {#checklist}

@@ -17,7 +17,7 @@ Although you can customize your tracking code to enable third-party CMS solution
 Perform these steps to enable Asset Insights through DTM.
 
 1. Click the Experience Manager logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
-1. [Configure Experience Manager instance with DTM Cloud Service](/help/sites-administering/dtm.md)
+1. [Configure Experience Manager deployment with DTM Cloud Service](/help/sites-administering/dtm.md)
 
    The API token should be available once you log on to [https://dtm.adobe.com](https://dtm.adobe.com/) and visit **[!UICONTROL Account Settings]** in the user Profile. This step is not required from the Asset Insights standpoint, because the integration of Experience Manager Sites with Asset Insights is still in the works.
 

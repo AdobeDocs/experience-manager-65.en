@@ -28,7 +28,7 @@ This guide covers all Experience Manager Assets tasks, such as how to create, ma
 | [Classic UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | This guide explains the concepts of authoring in Experience Manager in the classic user interface. |
 | [Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Learn about the digital signage solution to publish dynamic and interactive digital experiences. |
 | [Deploying User Guide](/help/sites-deploying/home.md) | This guide shows you the basics of Experience Manager.  |
-| [Developing User Guide](/help/sites-developing/home.md)| Learn how to build out your Experience Manager instance. |
+| [Developing User Guide](/help/sites-developing/home.md)| Learn how to build out your Experience Manager deployment. |
 | [Managing User Guide](/help/managing/home.md)| This guide describes how to manage an Experience Manager project successfully. |
 | [Mobile User Guide](/help/mobile/home.md)|This guide describes how to create and manage content for mobile applications.|
 | [Experience Manager Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | This guide shows you how to share user-generated content with [!DNL Livefyre]. |
