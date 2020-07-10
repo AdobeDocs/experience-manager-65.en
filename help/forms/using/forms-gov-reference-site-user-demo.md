@@ -274,7 +274,7 @@ Aya needs to review some documents at home before she can complete the service r
 
    After submitting Aya receives a Thank You page. Optionally she will also receive an email that she can open to sign the document of record electronically with Adobe Sign.
 
-### [Optional] Adobe Sign (Aya) {#adobe-sign}
+### Optional: Adobe Sign (Aya) {#adobe-sign}
 
 **User Instructions:**
 
@@ -322,7 +322,7 @@ Aya needs to review some documents at home before she can complete the service r
 
    ![Health Benefits Application Review](/help/forms/using/assets/health_benefits.png)
 
-### (Optional) AEM Inbox & MS Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
+### Optional: AEM Inbox & MS Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
 
 Thanks to data integrations and automated workflows, Aya’s application appears, along with a CRM record that has automatically been generated when the data was submitted.
 
