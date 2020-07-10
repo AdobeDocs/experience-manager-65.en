@@ -43,7 +43,7 @@ AEM Forms on JEE also includes provides following supporting services to the AEM
 
 AEM Forms authoring user interface does not support creating Document of Record (DOR), PDF Forms, and HTML5 Forms. Such assets are designed using the stand-alone Forms Designer application and uploaded individually to AEM Forms Manager. Alternatively, for AEM Forms on JEE, forms can be designed as application (in AEM Forms Workbench) assets and deployed into AEM Forms on JEE server.
 
-AEM Forms on OSGi and AEM Forms on JEE both have workflow capabilities. You can rapidly build and deploy basic workflows for various tasks on the AEM forms on OSGi, without having to install the full-fledged Process Management capability of AEM Forms on JEE. There is some difference in the [features of Form-centric workflow on AEM Forms on OSGi and Process Management capability of AEM Forms on JEE](/help/forms/using/capabilities-osgi-jee-workflows.md). The development and management of Form-centric workflows on AEM Forms on OSGi uses the familiar AEM Workflow and AEM Inbox capabilities.
+AEM Forms on OSGi and AEM Forms on JEE both have workflow capabilities. You can rapidly build and deploy basic workflows for various tasks on the AEM forms on OSGi, without having to install the full-fledged Process Management capability of AEM Forms on JEE. There is some difference in the [features of Form-centric workflow on AEM Forms on OSGi and Process Management capability of AEM Forms on JEE](capabilities-osgi-jee-workflows.md). The development and management of Form-centric workflows on AEM Forms on OSGi uses the familiar AEM Workflow and AEM Inbox capabilities.
 
 ## Terminologies {#terminologies}
 

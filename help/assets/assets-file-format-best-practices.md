@@ -36,7 +36,7 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
 
 Adobe recommends that you use [!DNL Adobe InDesign Server] to extract [!DNL Adobe InDesign]-specific renditions, such as IDML and HTML. For more information, see [Adding Experience Manager assets as references in Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
 
-## [!DNL Dynamic Media]  {#dynamic-media}
+## [!DNL Dynamic Media] {#dynamic-media}
 
 [!DNL Dynamic Media] generates and delivers multiple variations of rich content in real time through its global, scalable, and performance-optimized network. It serves interactive viewing experiences and streamlines the digital campaign management process. For details around enabling [!DNL Dynamic Media], see [Configuring Dynamic Media](/help/assets/config-dynamic.md).
 

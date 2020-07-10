@@ -89,7 +89,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    >[!NOTE]
    >
-   >Ensure that your [!DNL Experience Manager] instance is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. For details, see [integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md).
+   >Ensure that your [!DNL Experience Manager] deployment is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. For details, see [integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md).
 
 1. To modify the text in an editable field, click the text field from the list of editable fields and edit the text in the field.
 
@@ -121,21 +121,21 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    ![chlimage_1-117](assets/chlimage_1-322.png)
 
-1. Click **[!UICONTROL Preview]**  on the toolbar to preview all the changes. Click **[!UICONTROL Done]** to save the editing changes to the collateral.
+1. Click **[!UICONTROL Preview]** on the toolbar to preview all the changes. Click **[!UICONTROL Done]** to save the editing changes to the collateral.
 
    >[!NOTE]
    >
-   >The Preview and Done icons are enabled only when the editable image fields within the collateral do not have any missing icons. If there are missing icons in your collateral, it is because [!DNL Experience Manager] is unable to resolve the images in the [!DNL InDesign] template. Usually, [!DNL Experience Manager] is unable to resolve images in the following cases:
+   >The Preview and Done options are enabled only when the editable image fields within the collateral do not have any missing icons. If there are missing icons in your collateral, it is because [!DNL Experience Manager] is unable to resolve the images in the [!DNL InDesign] template. Usually, [!DNL Experience Manager] is unable to resolve images in the following cases:
    >
-   >    * Images are not embedded in the underlying [!DNL InDesign] template.
-   >    * Images are linked from the local file system.
+   >* Images are not embedded in the underlying [!DNL InDesign] template.
+   >* Images are linked from the local file system.
    >
    >To enable [!DNL Experience Manager] to resolve images, do the following:
    >
-   >    * Embed images while creating [!DNL InDesign] templates (See [About links and embedded graphics](https://helpx.adobe.com/indesign/using/graphics-links.html)).
-   >    * Mount [!DNL Experience Manager] to your local file system, and then map missing icons with existing assets in [!DNL Experience Manager].
+   >* Embed images while creating [!DNL InDesign] templates (See [About links and embedded graphics](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* Mount [!DNL Experience Manager] to your local file system, and then map missing icons with existing assets in [!DNL Experience Manager].
    >
-   >For more information around working with [!DNL InDesign] documents, see [Best Practices for Working with InDesign Documents in Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >For more information around working with [!DNL InDesign] documents, see [best practices to work with InDesign documents in Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. To generate a PDF rendition for the brochure, select the Acrobat option in the dialog and then click **[!UICONTROL Continue]**.
 1. The collateral is created in the folder you started with. To view the renditions, open the collateral and choose **[!UICONTROL Renditions]** from the GlobalNav list.

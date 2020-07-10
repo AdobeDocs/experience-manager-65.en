@@ -69,7 +69,7 @@ To configure the library, create a .conf file to indicate the libraries using th
 
 1. Download the [Imaging Transcoding Library package from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. The package is compatible with Experience Manager 6.5.
 
-1. To know a bundle id for `com.day.cq.dam.cq-dam-switchengine`, log in to the Web Console and click **[!UICONTROL OSGi > Bundles]**. Alternatively, to open the bundles console, access `https://[aem_server:[port]/system/console/bundles/` URL. Locate `com.day.cq.dam.cq-dam-switchengine` bundle and its ID.
+1. To know a bundle id for `com.day.cq.dam.cq-dam-switchengine`, log in to the Web Console and click **[!UICONTROL OSGi]** > **[!UICONTROL Bundles]**. Alternatively, to open the bundles console, access `https://[aem_server:[port]/system/console/bundles/` URL. Locate `com.day.cq.dam.cq-dam-switchengine` bundle and its ID.
 
 1. Ensure that all the required libraries are extracted, by checking the folder using the command `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, where the folder name is constructed using the bundle ID. For example, the command is `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` if bundle id is `588`.
 
@@ -98,7 +98,7 @@ To configure the library, create a .conf file to indicate the libraries using th
 
 Update the [!UICONTROL DAM Update Asset] workflow to use the library for processing images.
 
-1. In Experience Manager user interface, select **[!UICONTROL Tools > Workflow > Models]**.
+1. In Experience Manager user interface, select **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 
 1. From the **[!UICONTROL Workflow Models]** page, open the **[!UICONTROL DAM Update Asset]** workflow model in edit mode.
 

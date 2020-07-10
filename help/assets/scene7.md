@@ -261,6 +261,7 @@ If you have multiple configurations, AEM by default displays the [default config
 >* When [Secure Preview is enabled](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), both published and unpublished assets on Dynamic Media Classic do appear in the Dynamic Media Classic content browser.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
 >* For video, the Dynamic Media Classic content browser supports:
+>
 >   * Adaptive Video Sets: container of all video renditions needed for seamless playback across multiple screens
 >   * Single MP4 video
 >   * Single F4V video

@@ -42,7 +42,7 @@ An asset is essentially a binary plus metadata plus renditions plus sub-assets. 
 
 >[!CAUTION]
 >
->Uploading and/or editing a large volume of assets (particularly images) can impact the performance of your [!DNL Experience Manager] instance.
+>Uploading and/or editing a large volume of assets (particularly images) can impact the performance of your [!DNL Experience Manager] deployment.
 
 ### [!DNL Experience Manager Assets] terminology {#aem-assets-terminology}
 

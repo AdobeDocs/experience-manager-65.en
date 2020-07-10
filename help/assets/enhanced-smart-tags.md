@@ -20,7 +20,7 @@ Once a tag is trained and ready, the service can now apply these tags on assets 
 
 In the background, the Smart Content Service uses Adobe Sensei AI framework to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets.
 
-Smart Content Service is a cloud service that is hosted on Adobe I/O. To use it in Adobe Experience Manager, the system administrator must integrate your Experience Manager instance with Adobe I/O.
+Smart Content Service is a cloud service that is hosted on Adobe I/O. To use it in Adobe Experience Manager, the system administrator must integrate your Experience Manager deployment with Adobe I/O.
 
 In summary, here are the main steps to use the Smart Content Service:
 
@@ -88,7 +88,7 @@ Once this option is selected for a folder, Experience Manager runs a training wo
 
 You can train the Smart Content Service whenever required from the Workflow console.
 
-1. In Experience Manager interface, go to **[!UICONTROL Tools > Workflow > Models]**.
+1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder that includes the tagged assets for training the service.
 1. Specify a title for the workflow and a add a comment. Then, click **[!UICONTROL Run]**. The assets and tags are submitted for training.
@@ -103,7 +103,7 @@ You can train the Smart Content Service whenever required from the Workflow cons
 
 To check whether the Smart Content Service is trained on your tags in the training set of assets, review the training workflow report from the Reports console.
 
-1. In Experience Manager interface, go to **[!UICONTROL Tools > Assets > Reports]**.
+1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
 1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
 1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
 1. Specify a title and description for the report. Under **[!UICONTROL Schedule Report]**, leave the **[!UICONTROL Now]** option selected. If you want to schedule the report for later, select **[!UICONTROL Later]** and specify a date and time. Then, click **[!UICONTROL Create]** from the toolbar.
@@ -145,7 +145,7 @@ You can trigger the tagging workflow from the following to instantly tag your as
 
 #### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
 
-1. In Experience Manager interface, go to **[!UICONTROL Tools > Workflow > Models]**.
+1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)

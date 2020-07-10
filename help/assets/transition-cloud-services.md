@@ -35,7 +35,7 @@ Applying translation cloud services directly to your asset folder eliminates the
 If you want to apply a custom connector for the translation services you want to use in translation workflows. To apply a custom connector, first install the connector from Package Manager. Then, configure the connector from the Cloud Services console. After you configure the connector, it is available in the list of connectors in the Cloud Services tab described in [Applying the translation services](transition-cloud-services.md#applying-the-translation-services). After you apply the custom connector and run translation workflows, the **[!UICONTROL Translation Summary]** tile of the translation project displays the connector details under the heads **[!UICONTROL Provider]** and **[!UICONTROL Method]**.
 
 1. Install the connector from Package Manager.
-1. Click the Experience Manager logo, and navigate to **[!UICONTROL Tools > Deployment > Cloud Services]**.
+1. Click the Experience Manager logo, and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**.
 1. Locate the connector you installed under **[!UICONTROL Third Party Services]** in the **[!UICONTROL Cloud Services]** page.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)

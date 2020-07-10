@@ -245,8 +245,8 @@ Set environment variables for 32-bit and 64-bit Java Development Kit, third-part
 >* Do not set up environment variables for Microsoft Office applications such as Word, PowerPoint, Excel, and Project, or for AutoCAD. If these applications are installed on the server, the Generate PDF service automatically starts these applications.
 >* On UNIX-based platforms, install OpenOffice as /root. If OpenOffice is not installed as root, the PDF Generator service fails to convert OpenOffice documents to PDF documents. If you are required to install and run OpenOffice as a non-root user, then provide sudo rights to the non-root user.  
 >* If you are using OpenOffice on a UNIX-based platform, run the following command to set the path variable:  
->  `export OpenOffice_PATH=/opt/openoffice.org4`
 >
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 ### (Only for IBM WebSphere) Configure IBM SSL socket provider {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
@@ -341,8 +341,7 @@ The PDF Generator service provides WebKit, WebCapture, and PhantomJS routes or m
 
 >[!NOTE]
 >
-> Whenever you install new fonts to the fonts folder, restart the AEM Forms instance.
->
+>Whenever you install new fonts to the fonts folder, restart the AEM Forms instance.
 
 ### (UNIX-based platforms only) Extra configurations for HTML to PDF conversion  {#extra-configurations-for-html-to-pdf-conversion}
 
