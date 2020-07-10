@@ -104,10 +104,6 @@ By signing in to [Adobe Experience Cloud](https://docs.adobe.com/content/help/en
 
     * Can repurpose (rename) existing events or create new ones to use for Communities features
 
-    <!--
-    NOTE TO WRITER: The following link was broken, so I replaced it. Check for accuracy https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html 
-    -->
-
 * [Video Management](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 
     * Video Reporting console

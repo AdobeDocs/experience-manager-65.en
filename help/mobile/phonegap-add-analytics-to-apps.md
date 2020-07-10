@@ -109,34 +109,6 @@ For reference you can take a look at the code in the Geometrixx Outdoors app. In
 
 By instrumenting your source code with these method calls you are able to collect full metrics against your application.
 
-### Testing Analytics tracking with Bloodhound  {#testing-analytics-tracking-with-bloodhound}
-
-![](do-not-localize/chlimage_1.jpeg)
-
-<!--NOTE TO WRITER: Bloodhound is no longer available.-->
-
-Optionally before deploying to production you can use the Adobe tool [Bloodhound](https://marketing.adobe.com/developer/gallery/bloodhound-app-measurement-qa-tool-1) to test your analytics configuration. In order to test you analytics configuration you will need to edit your ADBMobileConfig.json file to point to the server where Bloodhound is running instead of the actual Analytics server. To make this change, from your ADBMobileConfig.json change the following entry.
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "YOUR_TRACKING_SERVER:YOUR_TRACKING_PORT",
-...
-```
-
-Change to match this entry:
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "localhost:50000",
-...
-```
-
-This will redirect all the data collected by the AMS plugin to Bloodhound so that you can view the results.
-
 #### Properties for Connecting to AMS {#properties-for-connecting-to-ams}
 
 *com.adobe.cq.mobile.mobileservices.impl.service.MobileServicesHttpClientImp*l exposes the following properties for connecting to AMS:
