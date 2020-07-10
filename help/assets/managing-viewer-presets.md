@@ -148,7 +148,7 @@ Administrators can add and customize the following rich media types when creatin
 
 The following table identifies all pre-defined, out-of-box Viewer Presets that come with Dynamic Media.
 
-See also <!-- KEEP THIS REFERENCE FOR NOW [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) --> [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
+See also [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
 For information about supported web browser and operating system versions for Viewers, you can review the Viewers Release Notes.
 
