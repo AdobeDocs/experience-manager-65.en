@@ -201,7 +201,7 @@ This section contains details on configuring SSL on the AEM instance in order to
 **Notes:**
 
 1. Navigate to https://&lt;aemserver&gt;:&lt;port&gt;/aem/inbox where you will be able to complete the process explained in the reference documentation link above.
-1. The **we-gov-forms.pkg.all-&lt;version&gt;.zip** package includes a sample SSL key and certificate that can be accessed by extracting the **we-gov-forms.pkg.all-&lt;version&gt;.zip/ssl** folder that is part of the package.
+1. The `we-gov-forms.pkg.all-[version].zip` package includes a sample SSL key and certificate that can be accessed by extracting the `we-gov-forms.pkg.all-[version].zip/ssl` folder that is part of the package.
 
 1. SSL certificate and key details:
 
