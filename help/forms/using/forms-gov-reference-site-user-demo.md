@@ -172,7 +172,7 @@ Camila also validates that the created content is built correctly and fully acce
 
 1. Re-size the browser window or use the browser’s emulator to replicate a mobile device size.
 
-### We.Gov Website (Aya)  {#aya-user-story-we-gov-website}
+### We.Gov Website (Aya) {#aya-user-story-we-gov-website}
 
 ![Fictitious user](/help/forms/using/assets/aya_tan_new-1.png)
 
@@ -428,7 +428,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 **This section:** Camila also schedules a communication reminder so one year later. (Workflow Step that automates/executes and email).
 
-### Email Client Notification (Aya) {#aya-user-story-email-client-1}
+### Email Client Notification (Aya) {#aya-user-story-email-client-updated}
 
 **User Instructions:**
 

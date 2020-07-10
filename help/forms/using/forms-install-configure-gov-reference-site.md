@@ -519,7 +519,7 @@ Please review the following prior to reading further instructions:
 
 * [Configure the Automated Forms Conversion service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html)
 
-#### Creating an IMS Configuration Part 1 {#creating-ims-config-part1}
+#### Creating an IMS Configuration Part 1 {#creating-ims-config}
 
 In order to configure the service to correctly communicate with the forms conversion tool users must configure the Identity Management System (IMS) service to be able to register with Adobe I/O.
 
@@ -564,7 +564,7 @@ Make sure you have the ability to create an integration within your Adobe domain
 
    ![Create new integration](assets/aftia-create-new-integration.jpg)
 
-#### Creating IMS Configuration Part 2 {#create-ims-config-part2}
+#### Creating IMS Configuration Part 2 {#create-ims-config-part-next}
 
 Now that you have created an integration let us complete the installation of the IMS configuration.
 
@@ -618,7 +618,7 @@ Once the IMS configuration is complete then we can proceed to create the cloud c
 
    * To understand more about these options, see [Configure the cloud service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
 
-#### Configure Cloud Configuration (We.Finance AFC Production) {#configure-cloud-configuration-we.finance}
+#### Configure Cloud Configuration (We.Finance AFC Production) {#configure-cloud-configuration-wefinance}
 
 Once the IMS configuration is complete then we can proceed to create the cloud configuration in AEM.
 
@@ -691,7 +691,7 @@ theme Accessible-Ultramarine Theme.
 
    ![Converted adaptive form](assets/aftia-converted-adaptive-form-2.jpg)
 
-#### Testing the forms Conversion [We.Finance Credit Card Application] {#testing-forms-conversion-we.finance}
+#### Testing the forms Conversion [We.Finance Credit Card Application] {#testing-forms-conversion-wefinance}
 
 Once the configuration is set up users can test it by uploading a PDF document.
 
