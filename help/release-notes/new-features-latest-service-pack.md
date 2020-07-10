@@ -71,7 +71,7 @@ Support for 3D images in [!DNL Dynamic Media] enables customers to publish and a
 
 ### Customize the Adobe Experience Manager Inbox columns {#customize-aem-inbox-columns}
 
-You can customize an [!DNL Experience Manager] Inbox to change the default title of a column, reorder the position of a column, and display additional columns based on the data of a workflow. Members of `administrators` or `workflow-administrators` group can customize the columns. For more information, see [Admin Control](../sites-authoring/inbox.md##inbox-admin-control).
+You can customize an [!DNL Experience Manager] Inbox to change the default title of a column, reorder the position of a column, and display additional columns based on the data of a workflow. Members of `administrators` or `workflow-administrators` group can customize the columns. For more information, see [Admin Control](../sites-authoring/inbox.md#inbox-admin-control).
 
 ![Customize Experience Manager Inbox columns](assets/customize-columns.gif)
 
