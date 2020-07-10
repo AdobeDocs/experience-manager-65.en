@@ -46,7 +46,7 @@ The AEM Forms We.Gov demo package (**we-gov-forms.pkg.all-&lt;version&gt;.zip**)
 
         * **we-gov-forms.core-&lt;version&gt;.jar** - *Contains all OSGI services, custom workflow step implementation, etc.*
 
-        * **we-gov-forms.derby<version>.jar** - *Contains all OSGI services, database schema, etc.*
+        * **we-gov-forms.derby&lt;version&gt;.jar** - *Contains all OSGI services, database schema, etc.*
         
         * **core.wcm.components.all-2.0.4.zip** - *Collection of sample WCM components*
         
