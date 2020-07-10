@@ -10,12 +10,12 @@ Understanding your network is as important as understanding Adobe Experience Man
 
 Ensure that you include the following in your network diagram:
 
-* Connectivity from the client device (for example, computer, mobile, and tablet) to the network
-* Topology of the corporate network
-* Uplink to the internet from the corporate network and the Experience Manager environment
-* Topology of the Experience Manager environment
-* Define simultaneous consumers of the Experience Manager network interface
-* Defined workflows of the Experience Manager instance
+* Connectivity from the client device (for example, computer, mobile, and tablet) to the network.
+* Topology of the corporate network.
+* Uplink to the internet from the corporate network and the Experience Manager environment.
+* Topology of the Experience Manager environment.
+* Define simultaneous consumers of the Experience Manager network interface.
+* Defined workflows of the Experience Manager deployment.
 
 ## Connectivity from the client device to the corporate network {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -63,13 +63,13 @@ Designing the topology of the Experience Manager environment requires detailed k
 
 The sample scenario includes a publish farm with five servers, an S3 binary store, and Dynamic Media configured.
 
-The dispatcher shares it's 100Mbps connection with two entities, the outside world and the Experience Manager instance. For simultaneous upload and download operations, you should divide this number by two. The attached external storage uses a separate connection.
+The dispatcher shares it's 100Mbps connection with two entities, the outside world and the Experience Manager deployment. For simultaneous upload and download operations, you should divide this number by two. The attached external storage uses a separate connection.
 
-The Experience Manager instance shares it's 1Gbps connection with multiple services. From a network topology perspective, it is equivalent to sharing a single channel with different services.
+The Experience Manager deployment shares it's 1Gbps connection with multiple services. From a network topology perspective, it is equivalent to sharing a single channel with different services.
 
-Reviewing the network from the client device to the Experience Manager instance, the smallest choke-point appears to be the 10 Mbit enterprise firewall throttle. You can use these values in the sizing calculator in the [Assets Sizing Guide](assets-sizing-guide.md) to determine the user experience.
+Reviewing the network from the client device to the Experience Manager deployment, the smallest choke-point appears to be the 10 Mbit enterprise firewall throttle. You can use these values in the sizing calculator in the [Assets Sizing Guide](assets-sizing-guide.md) to determine the user experience.
 
-## Defined workflows of the Experience Manager instance {#defined-workflows-of-the-aem-instance}
+## Defined workflows of the Experience Manager deployment {#defined-workflows-of-the-aem-deployment}
 
 When considering network performance, it may be important to consider the workflows and publishing that will occur in the system. Moreover, S3 or other network attached storage that you use and I/O requests consume network bandwidth. Therefore, even in a fully optimized network, performance may be limited by disk I/O.
 

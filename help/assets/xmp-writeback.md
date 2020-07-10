@@ -36,7 +36,7 @@ To let the XMP Writeback feature propagate metadata changes to select renditions
 
 For the XMP Writeback feature to propagate metadata to the rendition thumbnails 140.100.png and 319.319.png, perform these steps.
 
-1. In the Experience Manager interface, navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
+1. In the Experience Manager interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. From the Models page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
 1. In the **[!UICONTROL DAM Metadata Writeback]** properties page, open the **[!UICONTROL XMP Writeback Process]** step.
 1. In the [!UICONTROL Step Properties] dialog box, click the **[!UICONTROL Process]** tab.
@@ -57,13 +57,13 @@ The metadata changes are propagated to the renditions renditions thumbnail.140.1
 >
 >For XMP writeback issues in 64 bit Linux, see [How to enable XMP write-back on 64-bit RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
->For more information about supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
+>For the supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
 ## Filtering XMP metadata {#filtering-xmp-metadata}
 
 [!DNL Experience Manager Assets] supports both blocked list and allowed list filtering of properties/nodes for XMP metadata that is read from asset binaries and stored in JCR when assets are ingested.
 
-Filtering using a blocked list lets you import all XMP metadata properties except the properties that are specified for exclusion. However, for asset types such as INDD files that have huge amounts of XMP metadata (for example 1000 nodes with 10,000 properties), the names of nodes to be filtered are not always known in advance. If filtering using a blocked list allows a large number of assets with numerous XMP metadata to be imported, the AEM instance/cluster can encounter stability issues, for example clogged observation queues.
+Filtering using a blocked list lets you import all XMP metadata properties except the properties that are specified for exclusion. However, for asset types such as INDD files that have huge amounts of XMP metadata (for example 1000 nodes with 10,000 properties), the names of nodes to be filtered are not always known in advance. If filtering using a blocked list allows a large number of assets with numerous XMP metadata to be imported, the AEM deployment can encounter stability issues, for example clogged observation queues.
 
 Filtering of XMP metadata via allowed list resolves this issue by letting you define the XMP properties to be imported. This way, any other or unknown XMP properties are ignored. For backward compatibility, you can add some of these properties to the filter that uses a blocked list.
 

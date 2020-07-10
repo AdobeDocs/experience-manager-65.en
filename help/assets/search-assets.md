@@ -52,7 +52,7 @@ You can discover the desired assets faster from the search results page using th
 
 ### Basic search terms and results {#searchbasics}
 
-You can run keyword searches from the OmniSearch field. The keyword search is not case sensitive and is a full-text search (across the popular metadata fields. If more than one keyword is searched for, default operator between the keywords is `AND` for default search and it is `OR` when assets are smart tagged.
+You can run keyword searches from the OmniSearch field. The keyword search is not case-sensitive and is a full-text search (across the popular metadata fields. If more than one keyword is searched for, default operator between the keywords is `AND` for default search and it is `OR` when assets are smart tagged.
 
 The results are sorted by relevance, starting with closest matches. For multiple keywords, more relevant results are the assets that contain both terms in their metadata. Within metadata, keywords appearing as smart tags are higher ranked than keywords appearing in other metadata fields. [!DNL Experience Manager] allows giving a particular search term higher weight. Also, it is possible to [boost the rank](#searchrank) of a few targeted assets for specific search terms.
 
@@ -163,7 +163,7 @@ You can search for assets based on exact values of specific metadata fields, suc
 | Expires Date                              | expires:YYYY-MM-DDTHH                 |
 | On time                                   | ontime:YYYY-MM-DDTHH                  |
 | Off time                                  | offtime:YYYY-MM-DDTHH                 |
-| Range of time(expires dateontime,offtime) | facet field : lowerbound..upperbound  |
+| Range of time(expires dateontime,offtime) | facet field: lowerbound..upperbound  |
 | Path                                      | /content/dam/&lt;folder name&gt;      |
 | PDF Title                                 | pdftitle:"Adobe Document"             |
 | Subject                                   | subject:"Training"                    |
@@ -173,13 +173,13 @@ You can search for assets based on exact values of specific metadata fields, suc
 | Height of image                           | height:lowerbound..upperbound         |
 | Person                                    | person:John                           |
 
-The properties path, limit, size, and orderby cannot be ORed with any other property.
+The properties `path`, `limit`, `size`, and `orderby` cannot be *ORed* with any other property.
 
 The keyword for a user-generated property is its field label in the property editor in lowercase, with spaces removed.
 
 Here are some examples of search formats for complex queries:
 
-* To display all assets with multiple facets fields (for example: title=John Doe and creator tool = Adobe Photoshop): `tiltle:"John Doe" creatortool : Adobe*`
+* To display all assets with multiple facets fields (for example: title=John Doe and creator tool = Adobe Photoshop): `tiltle:"John Doe" creatortool:Adobe*`
 * To display all assets when the facets value is not a single word but a sentence (for example: title=Scott Reynolds): `title:"Scott Reynolds"`
 * To display assets with multiple values of a single property (for example: title=Scott Reynolds or John Doe): `title:"Scott Reynolds" OR "John Doe"`
 * To display assets with property values starting with a specific string (for example: title is Scott Reynolds): `title:Scott*`
@@ -250,7 +250,7 @@ The search capability in [!DNL Experience Manager Assets] has the following limi
 * [!DNL Experience Manager] may continue to show the search term after you select properties of an asset from searched results and then cancel the search. <!-- (CQ-4273540) -->
 * When searching for folders or files and folders, the search results cannot be sorted on any parameter.
 * If you press return without typing anything in Omnisearch bar, [!DNL Experience Manager] returns a list of only files and not folders. If you search specifically for folders without using a keyword, [!DNL Experience Manager] does not return any results.
-* Use the **[!UICONTROL Select All]** option in the upper-right corner of the search page to select the searched assets. [!DNL Experience Manager] initially displays 100 assets in card view and 200 assets in list view. More assets are loaded as you scroll the search results. You can select more assets than the loaded assets. The count of the selected assets is displayed in the upper-right corner of the search results page. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection. When more assets are selected than displayed, an action is either applied on all selected assets or a dialog displays the number of assets it is applied on. To apply an action to the assets that did not load, ensure all assets are explicitly selected.
+* Use the **[!UICONTROL Select All]** option in the upper-right corner of the search page to select the searched assets. [!DNL Experience Manager] initially displays 100 assets in card view and 200 assets in list view. More assets are loaded as you scroll the search results. You can select more assets than the loaded assets. The count of the selected assets is displayed in the upper-right corner of the search results page. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection. When more assets are selected than displayed, an action is either applied on all selected assets or a dialog displays the number of assets it is applied on. To apply an action to the assets that did not load, ensure that all assets are explicitly selected.
 
 Visual search or similarity search has the following limitations:
 
@@ -265,13 +265,13 @@ Search functionality may have performance limitations in the following scenarios
 
 * When monitoring the review status of assets, use the appropriate option to find which assets are approved or assets that are pending approval.
 * Use the Insights predicate to search for supported assets based on their usage statistics obtained from various Creative apps. Usage data is grouped under Usage score, Impressions, Clicks, and Media channels where the assets appear categories.
-* Use the **[!UICONTROL Select All]** check box to select the searched assets. [!DNL Experience Manager] initially displays 100 assets in card view and 200 assets in list view. More assets are loaded as you scroll the search results. You can select more assets than the loaded assets. The count of the selected assets is displayed in the upper-right corner of the search results page. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection. When more assets are selected than displayed, an action is either applied on all selected assets or a dialog displays the number of assets it is applied on. To apply an action to the assets that did not load, ensure all assets are explicitly selected.
+* Use the **[!UICONTROL Select All]** check box to select the searched assets. [!DNL Experience Manager] initially displays 100 assets in card view and 200 assets in list view. More assets are loaded as you scroll the search results. You can select more assets than the loaded assets. The count of the selected assets is displayed in the upper-right corner of the search results page. You can operate on the selection, for example, download the selected assets, update metadata properties in bulk for the selected assets, or add the selected assets to a Collection. When more assets are selected than displayed, an action is either applied on all selected assets or a dialog displays the number of assets it is applied on. To apply an action to the assets that did not load, ensure that all assets are explicitly selected.
 * To search for assets that do not contain the mandatory metadata, see [mandatory metadata](#mandatorymetadata).
 * Search uses all metadata fields. A generic search, such as searching for 12, usually returns many results. For better results, use double (not single) quotes or ensure that the number is contiguous to a word without a special character (for example *shoe12*).
-* Full text search supports operators such as -, ^, and so on. To search these letters as string literals, enclose the search expression in double quotes. For example, use "Notebook - Beauty" instead of Notebook - Beauty.
+* Full text search supports operators such as - and ^. To search these letters as string literals, enclose the search expression in double quotes. For example, use "Notebook - Beauty" instead of Notebook - Beauty.
 * If the search results are too many, limit the [scope of search](#scope) to zero-in on the desired assets. It works best when you have some idea of how to better look for the desired assets, for example, specific file type, specific location, specific metadata, and so on.
 
-* **Tagging**: Tags helps you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. [!DNL Experience Manager] offers methods to automatically tag assets using Adobe Sensei's artificially intelligent services that keep getting better at tagging your assets with usage and training. When you search for assets, the smart tags are factored in if the feature is enabled on your account. It works alongside the in-built search functionality. See [search behavior](#searchbehavior). To optimize the order in which the search results are displayed, you can [boost the search ranking](#searchrank) of a few select assets.
+* **Tagging**: Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. [!DNL Experience Manager] offers methods to automatically tag assets using Adobe Sensei's artificially intelligent services that keep getting better at tagging your assets with usage and training. When you search for assets, the smart tags are factored in if the feature is enabled on your account. It works alongside the in-built search functionality. See [search behavior](#searchbehavior). To optimize the order in which the search results are displayed, you can [boost the search ranking](#searchrank) of a few select assets.
 
 * **Indexing**: Only indexed metadata and assets are returned in the search results. For better coverage and performance, ensure proper indexing and follow the best practices. See [indexing](#searchindex).
 
@@ -306,7 +306,7 @@ Use double quotations around keywords to find assets that contain the exact phra
 
 *Figure: Illustrating use of question mark wildcard in Asset search using an example.*
 
-**Exclude a keyword**: Use dash to search for assets that do not contain a keyword. For example, `running -shoe` query returns assets that contain `running`, but not `shoe`. Similarly, `camp -night` query returns assets that contain `camp` but not `night`. Note that `camp-night` query returns assets that contain both `camp` and `night`.
+**Exclude a keyword**: Use dash to search for assets that do not contain a keyword. For example, `running -shoe` query returns assets that contain `running`, but not `shoe`. Similarly, `camp -night` query returns assets that contain `camp` but not `night`. The query `camp-night` returns assets that contain both `camp` and `night`.
 
 ![Use of dash to search for assets not containing an excluded keyword](assets/search_dash_exclude_keyword.gif)
 
@@ -320,14 +320,12 @@ Asset discovery relies on indexing of DAM contents, including the metadata. Fast
 
 ### Visual or similarity search {#configvisualsearch}
 
-Visual search uses smart tagging and requires [!DNL Experience Manager] 6.5.2.0 or later. After configuring smart tagging functionality, follow these steps.
+Visual search uses smart tagging and requires [!DNL Experience Manager] 6.5.2.0 or later. After configuring smart tagging functionality, follow these steps:
 
 1. In [!DNL Experience Manager] CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
 
     * `costPerEntry` property of type `Double` with the value `10`.
-
     * `costPerExecution` property of type `Double` with the value `2`.
-
     * `refresh` property of type `Boolean` with the value `true`.
 
    This configuration allows searches from the appropriate index.
@@ -335,11 +333,8 @@ Visual search uses smart tagging and requires [!DNL Experience Manager] 6.5.2.0 
 1. To create Lucene index, in CRXDE, at `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, create node named `imageFeatures` of type `nt-unstructured`. In `imageFeatures` node,
 
     * Add `name` property of type `String` with the value `jcr:content/metadata/imageFeatures/haystack0`.
-
     * Add `nodeScopeIndex` property of type `Boolean` with the value of `true`.
-
     * Add `propertyIndex` property of type `Boolean` with the value of `true`.
-
     * Add `useInSimilarity` property of type `Boolean` with the value `true`.
 
    Save the changes.
@@ -347,7 +342,7 @@ Visual search uses smart tagging and requires [!DNL Experience Manager] 6.5.2.0 
 1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
 1. Apply smart tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html).
 1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
-1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
+1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save the changes.
 
 For related information, see [understand smart tags in Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/managing-smart-tags.md).
 
@@ -369,26 +364,26 @@ Predicates are used to create facets. Administrators can customize the search fa
 
 You can search for digital assets based on one or more of the following properties. Filters that apply on some of these properties are available by default and some other filters can be custom-created to apply on the other properties.
 
-| Search field | Search property values |
-|---|---|
-| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
-| Last Modified | Hour, Day, Week, Month, or Year. |
-| File Size | Small, Medium, or Large. |
-| Publish Status | Published or Unpublished. |
-| Approved Status | Approved or Rejected. |
-| Orientation | Horizontal, Vertical, or Square. |
-| Style | Color, or Black & White. |
-| Video Height | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Video Width | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
-| Video Codec | x264. Value is stored in the metadata of video renditions only. |
-| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
-| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Search field    | Search property values                                                                                                                 |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| MIME Types      | Images, Documents, Multimedia, Archives, or Other.                                                                                     |
+| Last Modified   | Hour, Day, Week, Month, or Year.                                                                                                       |
+| File Size       | Small, Medium, or Large.                                                                                                               |
+| Publish Status  | Published or Unpublished.                                                                                                              |
+| Approved Status | Approved or Rejected.                                                                                                                  |
+| Orientation     | Horizontal, Vertical, or Square.                                                                                                       |
+| Style           | Color, or Black & White.                                                                                                               |
+| Video Height    | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.                                    |
+| Video Width     | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.                                    |
+| Video Format    | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
+| Video Codec     | x264. Value is stored in the metadata of video renditions only.                                                                        |
+| Video Bitrate   | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.                                    |
+| Audio Codec     | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only.                                           |
+| Audio Bitrate   | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only.                                    |
 
 ## Work with asset search results {#aftersearch}
 
-Once you see some searched assets that match your criteria, you can do the following typical tasks with or take the following actions on these search results:
+You can do the following with the assets you've searched in Experience Manager:
 
 * View metadata properties and other information.
 * Download one or more assets.
@@ -397,7 +392,7 @@ Once you see some searched assets that match your criteria, you can do the follo
 
 ### Sort searched results {#sort}
 
-Sorting search results helps you to discover required asset faster. Sorting search results works in list view and only when you select **[!UICONTROL [Files](#searchui)]** from the **[!UICONTROL Filters]** panel. [!DNL Experience Manager Assets] uses server-side sorting to quickly sort all the assets (howsoever numerous) within a folder or results of a search query. Server-side sorting provides faster and more accurate results than client-side sorting.
+Sort search results to discover required assets faster. You can sort the search results in list view and only when you select **[!UICONTROL [Files](#searchui)]** from the **[!UICONTROL Filters]** panel. [!DNL Experience Manager Assets] uses server-side sorting to quickly sort all the assets (howsoever numerous) within a folder or results of a search query. Server-side sorting provides faster and more accurate results than client-side sorting.
 
 In list view, you can sort the search results just as you can sort assets in any folder. Sorting works on these columns -- Name, Title, Status, Dimensions, Size, Rating, Usage, (Date) Created, (Date) Modified, (Date) Published, Workflow, and Checked out.
 
@@ -438,15 +433,15 @@ You can create smart collections based on the search criteria. From the **[!UICO
 
 | Error, issues, symptoms | Possible reason | Possible fix or understanding of the issue |
 |---|---|---|
-| Incorrect results when searching for assets with missing metadata| When searching for assets that are missing the mandatory metadata, [!DNL Experience Manager] may display some assets that have valid metadata. The results are based on indexed metadata property. | After the metadata is updated, reindexing is required to reflect correct state of assets metadata. See [mandatory metadata](metadata-schemas.md#define-mandatory-metadata).|
-| Too many search results| Broad search parameter.| Consider limiting the [scope of search](#scope). Use of smart tags may give you more search results than you expected. See [search behavior with smart tags](#withsmarttags). |
-| Unrelated or partly-related search results | Search behavior changes with smart tagging.| Understand [how search changes after smart tagging](#withsmarttags).|
-| No auto-complete suggestions for assets| Newly uploaded assets are not indexed yet. The metadata is not immediately available as suggestions when you start typing a search keyword in Omnisearch bar.| [!DNL Assets] waits until the expiry of a timeout period (one hour by default) before running a background job to index the metadata for all newly uploaded or updated assets and then adds the metadata to the list of suggestions. |
-| No search results| <ul><li>No assets exist that match your query.</li><li>You added a whitespace before the search query.</li><li>An unsupported metadata field contains the keyword that you search for.</li><li>On time and off time is configured for asset and the search was made during an asset's off time.</li></ul> | <ul><li>Search using a different keyword. Alternatively, use (smart) tagging to improve search results.</li><li>It is a [known limitation](#limitations).</li><li>Not all metadata fields are considered for searches. See [scope](#scope).</li><li>Search later or modify on and off timings for the required assets.</li></ul> |
-| Search filter/ predicate is not available | <ul><li>The search filter is either not configured.</li><li>It is not available for your login.</li><li>(Less likely) The search options are not customized on the deployment you are using.</li></ul> | <ul><li>Contact administrator to check if the search customizations are available or not.</li><li>Contact administrator to check if your account has the privilege/permissions to use the customization.</li><li>Contact administrator and check the available customizations for the [!DNL Assets] deployment you are using.</li></ul> |
-| When searching for visually similar images, an expected image is missing | <ul><li>Image is not available in [!DNL Experience Manager].</li><li>Image is not indexed. Typically, when it is recently uploaded.</li><li>Image is not smart tagged.</li></ul> | <ul><li>Add the image to [!DNL Assets].</li><li>Contact your administrator to re-index the repository. Also, ensure that you are using the appropriate index.</li><li>Contact your administrator to smart tag the relevant assets.</li></ul> |
-| When searching for visually similar images, an irrelevant image is displayed | Visual search behavior.| [!DNL Experience Manager] displays as many potentially relevant assets as possible. Less relevant images, if any, are added to the results but with a lower search ranking. The quality of the matches and relevance of searched assets decrease as you scroll down the search results. |
-| When selecting and operating on search results, all searched assets are not operated upon | The [!UICONTROL Select All] option only selects first 100 search results in card view and first 200 search results in list view. ||
+| Incorrect results when searching for assets with missing metadata. | When searching for assets that are missing the mandatory metadata, [!DNL Experience Manager] may display some assets that have valid metadata. The results are based on indexed metadata property. | After the metadata is updated, reindexing is required to reflect correct state of assets metadata. See [mandatory metadata](metadata-schemas.md#define-mandatory-metadata).|
+| Too many search results. | Broad search parameter. | Consider limiting the [scope of search](#scope). Use of smart tags may give you more search results than you expected. See [search behavior with smart tags](#withsmarttags). |
+| Unrelated or partly related search results. | Search behavior changes with smart tagging. | Understand [how search changes after smart tagging](#withsmarttags). |
+| No auto-complete suggestions for assets. | Newly uploaded assets are not indexed yet. The metadata is not immediately available as suggestions when you start typing a search keyword in Omnisearch bar.| [!DNL Assets] waits until the expiry of a timeout period (one hour by default) before running a background job to index the metadata for all newly uploaded or updated assets and then adds the metadata to the list of suggestions. |
+| No search results. | <ul><li>Assets matching your query don't exist. </li><li> Whitespace added before the search query. </li><li> Unsupported metadata field contains the keyword that you searched for.</li><li> Search made during an asset's off-time. </li></ul> | <ul><li>Search using a different keyword. Alternatively, use smart tagging or similarity search to improve search results. </li><li>[Known limitation](#limitations).</li><li>All metadata fields are not considered for searches. See [scope](#scope).</li><li>Search later or modify on-time and off-time for the required assets.</li></ul> |
+| Search filter or a predicate is not available. | <ul><li>The search filter is either not configured.</li><li>It is not available for your login.</li><li>(Less likely) The search options are not customized on the deployment you are using.</li></ul> | <ul><li>Contact administrator to check if the search customizations are available or not.</li><li>Contact administrator to check if your account has the privilege/permissions to use the customization.</li><li>Contact administrator and check the available customizations for the [!DNL Assets] deployment you are using.</li></ul> |
+| When searching for visually similar images, an expected image is missing. | <ul><li>Image is not available in [!DNL Experience Manager].</li><li>Image is not indexed. Typically, when it is recently uploaded.</li><li>Image is not smart tagged.</li></ul> | <ul><li>Add the image to [!DNL Assets].</li><li>Contact your administrator to reindex the repository. Also, ensure that you are using the appropriate index.</li><li>Contact your administrator to smart tag the relevant assets.</li></ul> |
+| When searching for visually similar images, an irrelevant image is displayed. | Visual search behavior.| [!DNL Experience Manager] displays as many potentially relevant assets as possible. Less relevant images, if any, are added to the results but with a lower search ranking. The quality of the matches and relevance of searched assets decrease as you scroll down the search results. |
+| When selecting and operating on search results, all searched assets are not operated upon. | The [!UICONTROL Select All] option only selects first 100 search results in card view and first 200 search results in list view. ||
 
 >[!MORELIKETHIS]
 >

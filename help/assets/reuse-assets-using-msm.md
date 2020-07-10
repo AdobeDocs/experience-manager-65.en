@@ -54,14 +54,14 @@ MSM maintains a live relationship between the source asset and its live copies s
 
 To create live copy from one or more source assets or folders, follow either of the following:
 
-* Method 1: Select the source assets and click **[!UICONTROL Create > Live Copy]** from toolbar at the top.
-* Method 2: In [!DNL Experience Manager] user interface, click **[!UICONTROL Create > Live Copy]** from upper-right corner of the interface.
+* Method 1: Select the source assets and click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]** from toolbar at the top.
+* Method 2: In [!DNL Experience Manager] user interface, click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]** from upper-right corner of the interface.
 
 You can create live copies of an asset or a folder one at a time. You can create live copies that are derived from an asset or a folder that is a live copy itself. Content Fragments (CFs) are not supported for the use case. When attempting to create their live copies, CFs are copied over as is without any relationship. The copied CFs are a snapshot in time and does not update when original CFs are updated.
 
 To create live copies using the first method, follow these steps:
 
-1. Select source assets or folders. From the toolbar, click **[!UICONTROL Create > Live Copy]**.
+1. Select source assets or folders. From the toolbar, click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]**.
 
    ![Create live copy from Experience Manager interface](assets/create_lc1.png)
 
@@ -73,7 +73,7 @@ To create live copies using the first method, follow these steps:
 
 To create live copies using the second method, follow these steps:
 
-1. In [!DNL Experience Manager] interface, from upper-right corner, click **[!UICONTROL Create > Live Copy]**.
+1. In [!DNL Experience Manager] interface, from upper-right corner, click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]**.
 
    ![Create live copy from Experience Manager interface](assets/create_lc2.png)
 

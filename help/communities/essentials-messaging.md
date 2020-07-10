@@ -106,7 +106,6 @@ See also [Client-side Customizations](/help/communities/client-customize.md)
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
 >```
->
 
 ### Community Site {#community-site}
 
