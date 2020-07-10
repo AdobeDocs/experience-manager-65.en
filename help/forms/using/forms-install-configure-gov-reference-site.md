@@ -224,7 +224,7 @@ This section contains details and instructions on the Adobe Sign Cloud Configura
 
 #### Cloud configuration {#cloud-configuration}
 
-1. **Review the prerequisites. See [AEM SSL Configuration](../../forms/using/forms-install-configure-gov-reference-site.md#aemsslconfig) for required SSL configuration.**
+1. Review the prerequisites. See [AEM SSL Configuration](../../forms/using/forms-install-configure-gov-reference-site.md#aemsslconfig) for required SSL configuration.
 1. Navigate to:
 
    *https://&lt;aemserver&gt;:&lt;port&gt;/libs/adobesign/cloudservices/adobesign.html/conf/we-gov*
