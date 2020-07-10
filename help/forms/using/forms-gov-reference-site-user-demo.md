@@ -322,7 +322,7 @@ Aya needs to review some documents at home before she can complete the service r
 
    ![Health Benefits Application Review](/help/forms/using/assets/health_benefits.png)
 
-### [Optional] AEM Inbox & MS Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
+### (Optional) AEM Inbox & MS Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
 
 Thanks to data integrations and automated workflows, Aya’s application appears, along with a CRM record that has automatically been generated when the data was submitted.
 
@@ -357,7 +357,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 **This section:** Camila the CX Lead sets up a welcome phone call with Aya to explain how to make use of the government services she has been approved for.
 
-### [Optional] AEM Inbox & MS Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
+### (Optional) AEM Inbox & MS Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
 
 **User Instructions:**
 
@@ -399,7 +399,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
    ![Activities tab](/help/forms/using/assets/activities_tab.png) ![Confirm New Contact](/help/forms/using/assets/confirm_new_contact.png)
 
-## [Optional] Welcome Kit Citizen (Aya) {#welcome-kit-citizen-aya}
+## (Optional) Welcome Kit Citizen (Aya) {#welcome-kit-citizen-aya}
 
 **This section:** Aya receives an email contains a link to an interactive communication which summarizes her benefits and also includes form fields to fill. With PDF benefits statement attached and link to interactive communication letter in the mail (with the same theme/branding as the interactive communication).
 
@@ -440,7 +440,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
    ![Renewal Reminder Email](/help/forms/using/assets/renewal_reminder_email.png)
 
-## [Optional] Form Data Model (Camila) {#form-data-model}
+## (Optional) Form Data Model (Camila) {#form-data-model}
 
 **This section**: Camila navigates to AEM Forms Data Integrations where she can run a quick test to see that the information sent to the external data source via Form Data Model integration is indeed present.
 
@@ -484,7 +484,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
    ]
    ```
 
-## [Optional] Analytics (Camila) {#analytics-cx-lead-camila}
+## (Optional) Analytics (Camila) {#analytics-cx-lead-camila}
 
 **This section:** Camila navigates to a dashboard where she can see across the agency KPI’s such as % of citizens who start filling a service request form and abandon, the average length of time from request submission to approval/denial response, and engagement statistics for the benefits handbooks she has sent to citizens.
 

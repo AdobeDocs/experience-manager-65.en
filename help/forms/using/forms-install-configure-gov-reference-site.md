@@ -10,7 +10,7 @@ docset: aem65
 
 ---
 
-# Set up and configure We.Gov reference site{#set-up-and-configure-we-gov-reference-site}
+# Set up and configure We.Gov reference site {#set-up-and-configure-we-gov-reference-site}
 
 ## Demo package details {#demo-package-details}
 
@@ -190,7 +190,7 @@ This section contains details and instructions on the post-deployment configurat
 
 1. Click “Save” to save the configuration.
 
-### AEM SSL Configuration (Optional) {#aemsslconfig}
+### (Optional) AEM SSL Configuration {#aemsslconfig}
 
 This section contains details on configuring SSL on the AEM instance in order to be able to configure the Adobe Sign Cloud configuration.
 
@@ -214,7 +214,7 @@ This section contains details on configuring SSL on the AEM instance in order to
 1. HTTPS Hostname should be set to *localhost*.
 1. Port should be set to a port that the system has exposed.
 
-### Adobe Sign cloud configuration (Optional) {#adobe-sign-cloud-configuration}
+### (Optional) Adobe Sign cloud configuration {#adobe-sign-cloud-configuration}
 
 This section contains details and instructions on the Adobe Sign Cloud Configuration.
 
@@ -241,7 +241,7 @@ This section contains details and instructions on the Adobe Sign Cloud Configura
 1. Click “Connect to Adobe Sign”.
 1. After successful connection, click “Save & Close” to complete the integration.
 
-### MS Dynamics cloud configuration (Optional) {#ms-dynamics-cloud-configuration}
+### (Optional) MS Dynamics cloud configuration {#ms-dynamics-cloud-configuration}
 
 This section contains details and instructions on the MS Dynamics Cloud Configuration.
 
@@ -691,7 +691,7 @@ theme Accessible-Ultramarine Theme.
 
    ![Converted adaptive form](assets/aftia-converted-adaptive-form-2.jpg)
 
-#### Testing the forms Conversion [We.Finance Credit Card Application] {#testing-forms-conversion-wefinance}
+#### Testing the forms Conversion (We.Finance Credit Card Application) {#testing-forms-conversion-wefinance}
 
 Once the configuration is set up users can test it by uploading a PDF document.
 
