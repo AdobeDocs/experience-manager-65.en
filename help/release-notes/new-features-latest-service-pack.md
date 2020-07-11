@@ -97,7 +97,7 @@ Adobe Experience Manager Forms includes the following accessibility enhancements
 
 ### X-509 certificate-based authentication for SOAP-based web services in form data model {#x509-based-authentication-soap}
 
-Form data model now supports X-509 certificate-based authentication while using SOAP web services as the data source. For more information, see [Configure SOAP web services](../forms/using/configure-data-sources.md##configure-soap-web-services).
+Form data model now supports X-509 certificate-based authentication while using SOAP web services as the data source. For more information, see [Configure SOAP web services](../forms/using/configure-data-sources.md#configure-soap-web-services).
 
 ### Other key improvements {#other-improvements}
 
