@@ -499,6 +499,8 @@ Remove one mention of this fix.
 
 * SOAP web service using MTOM in a .NET project displays exceptions for AssemblerServiceClient invoke and HtmlToPDF2 methods (NPR-4281771).
 
+* Axis jar versions 1.4 and 1.4.1 include a security vulnerability (NPR-31015).
+
 **Foundation JEE**
 
 * Action configuration does not load the process names for Invoke a Forms Workflow submit action (NPR-31478).
