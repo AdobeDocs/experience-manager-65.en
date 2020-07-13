@@ -41,9 +41,9 @@ The Adobe Analytics account needs to:
 
 Before proceeding, ensure your credentials allow you to log in to Adobe Analytics. Via either:
 
-* [https://marketing.adobe.com](https://marketing.adobe.com)
+* [Adobe Experience Cloud Sign In](https://login.experiencecloud.adobe.com/exc-content/login.html)
 
-* [https://sc.omniture.com/login/](https://sc.omniture.com/login/)
+* [Adobe Analytics Sign In](https://sc.omniture.com/login/)
 
 ### Configuring AEM to Use Your Adobe Analytics Data Centers {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 

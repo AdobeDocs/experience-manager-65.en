@@ -14,20 +14,18 @@ discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 
 This article is for building the AEM Forms App 6.3.1.1 and later versions. For building an app from source code of source code of the AEM Forms App 6.3, see [Set up the Eclipse project and build the Android™ app](/help/forms/using/setup-eclipse-project-build-installer.md). 
 
-AEM Forms provides the complete source code of the AEM Forms app. The source contains all components to build a custom AEM Forms app. The source code archive, `adobe-lc-mobileworkspace-src-<version>.zip` is a part of the `adobe-aemfd-forms-app-src-pkg-<version>.zip` package on package share.
+AEM Forms provides the complete source code of the AEM Forms app. The source contains all components to build a custom AEM Forms app. The source code archive, `adobe-lc-mobileworkspace-src-<version>.zip` is a part of the `adobe-aemfd-forms-app-src-pkg-<version>.zip` package on Software Distribution.
 
 To get the AEM Forms app source, perform the following steps:
 
-1. Navigate to package share
-
-   URL: `https://<server>:<port>/crx/packageshare`.
-
-1. Download the source package. When you download the package, it is added in your AEM Forms package manager.
-1. After it is downloaded, navigate to: `https://<server>:<port>/crx/packmgr/index.jsp`, and install `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
-
-1. To download the source-code archive, open `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in your browser.  
-
-   The source package is downloaded on your device.
+1. Open [Software Distribution](https://experience.adobe.com/downloads). You require an Adobe ID to log in to the Software Distribution.
+1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
+1. In the **[!UICONTROL Filters]** section:
+   1. Select **[!UICONTROL Forms]** from the **[!UICONTROL Solution]** drop-down list.
+   2. Select the version and type for the package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
+1. Tap the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
+1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
+1. Select the package and click **[!UICONTROL Install]**.
 
 The following image displays the extracted contents of the `adobe-lc-mobileworkspace-src-<version>.zip`.
 

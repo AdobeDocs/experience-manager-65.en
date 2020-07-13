@@ -209,12 +209,12 @@ For AEM Forms reference sites, in the AEM DS Settings Service, specify URL of th
 
 ## Deploy reference sites packages {#refsite}
 
-Install the reference sites packages using package share.
+Install the reference sites packages using [Software Distribution](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
 
 * [AEM Forms FSI Reference Site Package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/fd/AEM-FORMS-6.5-FSI-REF-SITE)
 * [AEM Forms Gov Reference Site Package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/fd/AEM-FORMS-6.5-GOV-REF-SITE)
 
-To learn more about how to use packages and package share, see [How to Work With Packages](/help/sites-administering/package-manager.md).
+To learn more about how to use packages , see [How to Work With Packages](/help/sites-administering/package-manager.md).
 
 After you have installed the packages and started the author and publish instances, visit the following URLs in your browser:
 

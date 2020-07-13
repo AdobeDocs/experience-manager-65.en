@@ -20,15 +20,20 @@ Perform the following steps in the recommended sequence to build the Android app
 
 ## Download the AEM Forms App Source Code Package {#download-android-zip}
 
-AEM Forms App Source Code Package refers to the `adobe-lc-mobileworkspace-src-<version>.zip` archive. This archive includes the source code required to build a custom AEM Forms app. The archive is included in the `adobe-aemfd-forms-app-src-pkg-<version>.zip`package available on the package share.
+AEM Forms App Source Code Package refers to the `adobe-lc-mobileworkspace-src-<version>.zip` archive. This archive includes the source code required to build a custom AEM Forms app. The archive is included in the `adobe-aemfd-forms-app-src-pkg-<version>.zip`package available on the Software Distribution.
 
 Perform the following steps to download the `adobe-aemfd-forms-app-src-pkg-<version>.zip` file:
 
-1. Log in to the author instance of the [AEM server](http://localhost:4502/) as an administrator and open [package share](http://localhost:4502/crx/packageshare). You require an Adobe ID to log in to the package share.
-1. In [AEM package share](http://localhost:4502/crx/packageshare/login.html), search `adobe-aemfd-forms-app-src-pkg-<version>.zip`, click the package applicable to your operating system, and click **Download**. Read and accept the license agreement and click **OK**. The download starts. Once downloaded, the word **Downloaded** appears next to the package.
-1. After the download completes, click **Downloaded**. You are redirected to package manager. In the package manager, search the downloaded package, and click **Install**.
+1. Open [Software Distribution](https://experience.adobe.com/downloads). You require an Adobe ID to log in to the Software Distribution.
+1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
+1. In the **[!UICONTROL Filters]** section:
+   1. Select **[!UICONTROL Forms]** from the **[!UICONTROL Solution]** drop-down list.
+   2. Select the version and type for the package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
+1. Tap the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
+1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
+1. Select the package and click **[!UICONTROL Install]**.
 1. To download the source-code archive, open **https://&lt;server&gt;:&lt;port&gt;/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-&lt;version&gt;.zip** in your browser. The Android app .zip file is downloaded on your device.
-1. Extract the contents of the .zip file to a folder on your local file system. For example, *C:\&lt;Folder Structure&gt;\adobe-lc-mobileworkspace-src-2.4.20*
+1. Extract the contents of the .zip file to a folder on your local file system. For example, *C:\<Folder Structure&gt;\adobe-lc-mobileworkspace-src-2.4.20*
 
 The following image displays the structure of the `adobe-lc-mobileworkspace-src-<version>.zip\android`folder.
 

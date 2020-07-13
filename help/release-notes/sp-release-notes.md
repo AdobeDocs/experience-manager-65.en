@@ -408,6 +408,7 @@ Customers are advised to review if they make use of the feature or capability in
 | Area | Feature | Replacement |
 |---|---|---|
 | Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated. With the AEM and Target integration updated in AEM 6.5 to support the Target Standard API, which uses authentication via Adobe IMS and I/O, and the growing role of Adobe Launch for instrumenting AEM pages for analytics and personalization, the Opt-In wizard has become functionally irrelevant. | Configure system connections, Adobe IMS authentication, and Adobe I/O integrations via the respective AEM cloud services. |
+| Connectors | The Adobe JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013 is deprecated for AEM 6.5. | N/A |
 
 ## Known issues {#known-issues}
 

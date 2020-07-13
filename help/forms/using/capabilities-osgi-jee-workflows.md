@@ -1,14 +1,7 @@
 ---
 title: Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows
-seo-title: Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows
-description: null
-seo-description: null
-uuid: 8af9527d-fa5e-4fcb-88e1-49571528fca6
+description: Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows
 contentOwner: khsingh
-topic-tags: publish
-discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
-docset: aem65
-
 ---
 
 # Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
@@ -204,19 +197,64 @@ Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE
    <td>Not Supported</td>
   </tr>
   <tr>
-   <td>HTML5 Forms, Interactive PDF Forms, Form Set<br /> </td>
-   <td>Not Supported<br /> </td>
+   <td>Polling / Scheduling service</td>
+   <td>Available out of the box</td>
+   <td>Custom implementation required</td>
+  </tr>
+  <tr>
+   <td>Adaptive Forms app</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>Assembler Service</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>PDF Generator Service</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>Forms Service</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>Output Service</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>Document Assurance</td>
+   <td>Supported</td>
+   <td>Supported </td>
+  </tr>
+  <tr>
+   <td>Execute script</td>
+   <td>Supports ECMAScript</td>
+   <td>Supports Java code snippets</td>
+  </tr>
+  <tr>
+   <td>Assembler</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>  
+  <tr>
+   <td>HTML5 Forms, Interactive PDF Forms, Form Set</td>
+   <td>Not Supported</td>
    <td>Supported</td>
   </tr>
   <tr>
    <td>Process Reporting</td>
-   <td>Not Supported<br /> </td>
-   <td>Supported<br /> </td>
+   <td>Not Supported</td>
+   <td>Supported</td>
   </tr>
   <tr>
    <td>Digital Signature</td>
-   <td>Supported<br /> </td>
-   <td>Supported<br /> </td>
+   <td>Supported</td>
+   <td>Supported</td>
   </tr>
   <tr>
    <td>Startpoint categories</td>
