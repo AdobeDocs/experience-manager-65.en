@@ -28,99 +28,99 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **Verb** |**Description** |
 |---|---|
-| POST |member creates a calendar event |
-| ADD |member comments on a calendar event |
-| UPDATE |member's calendar event or comment is edited |
-| DELETE |member's calendar event or comment is deleted |
+| POST |Member creates a calendar event |
+| ADD |Member comments on a calendar event |
+| UPDATE |Member's calendar event or comment is edited |
+| DELETE |Member's calendar event or comment is deleted |
 
 [Comments Component](essentials-comments.md)
 SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verb** |**Description** |
 |---|---|
-| POST |member creates a comment |
-| ADD |member replies to comment |
-| UPDATE |member's comment is edited |
-| DELETE |member's comment is deleted |
+| POST |Member creates a comment |
+| ADD |Member replies to comment |
+| UPDATE |Member's comment is edited |
+| DELETE |Member's comment is deleted |
 
 [File Library Component](essentials-file-library.md)
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verb** |**Description** |
 |---|---|
-| POST |member creates a folder |
-| ATTACH |member uploads a file |
-| UPDATE |member updates a folder or file |
-| DELETE |member deletes a folder or file |
+| POST |Member creates a folder |
+| ATTACH |Member uploads a file |
+| UPDATE |Member updates a folder or file |
+| DELETE |Member deletes a folder or file |
 
 [Forum Component](essentials-forum.md)
 SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verb** |**Description** |
 |---|---|
-| POST |member creates forum topic |
-| ADD |member replies to forum topic |
-| UPDATE |member's forum topic or reply is edited |
-| DELETE |member's forum topic or reply is deleted |
+| POST |Member creates forum topic |
+| ADD |Member replies to forum topic |
+| UPDATE |Member's forum topic or reply is edited |
+| DELETE |Member's forum topic or reply is deleted |
 
 [Journal Component](blog-developer-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verb** |**Description** |
 |---|---|
-| POST |member creates a blog article |
-| ADD |member comments on a blog article |
-| UPDATE |member's blog article or comment is edited |
-| DELETE |member's blog article or comment is deleted |
+| POST |Member creates a blog article |
+| ADD |Member comments on a blog article |
+| UPDATE |Member's blog article or comment is edited |
+| DELETE |Member's blog article or comment is deleted |
 
 [QnA Component](qna-essentials.md)
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verb** |**Description** |
 |---|---|
-| POST |member creates a QnA question |
-| ADD |member creates a QnA answer |
-| UPDATE |member's QnA question or answer is edited |
-| SELECT |member's answer is selected |
-| UNSELECT |member's answer is de-selected |
-| DELETE |member's QnA question or answer is deleted |
+| POST |Member creates a QnA question |
+| ADD |Member creates a QnA answer |
+| UPDATE |Member's QnA question or answer is edited |
+| SELECT |Member's answer is selected |
+| UNSELECT |Member's answer is de-selected |
+| DELETE |Member's QnA question or answer is deleted |
 
 [Reviews Component](reviews-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verb** |**Description** |
 |---|---|
-| POST |member creates review |
-| UPDATE |member's review is edited |
-| DELETE |member's review is deleted |
+| POST |Member creates review |
+| UPDATE |Member's review is edited |
+| DELETE |Member's review is deleted |
 
 [Rating Component](rating-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verb** |**Description** |
 |---|---|
-| ADD RATING |member's content has been up rated |
-| REMOVE RATING |member's content has been down rated |
+| ADD RATING |Member's content has been up rated |
+| REMOVE RATING |Member's content has been down rated |
 
 [Voting Component](essentials-voting.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verb** |**Description** |
 |---|---|
-| ADD VOTING |member's content has been up voted |
-| REMOVE VOTING |member's content has been down voted |
+| ADD VOTING |Member's content has been up voted |
+| REMOVE VOTING |Member's content has been down voted |
 
 **Moderation-enabled Components**
 SocialEvent `topic`= com/adobe/cq/social/moderation
 
 | **Verb** |**Description** |
 |---|---|
-| DENY |member's content is denied |
-| FLAG-AS-INAPPROPRIATE |member's content is flagged |
-| UNFLAG-AS-INAPPROPRIATE |member's content is unflagged |
-| ACCEPT |member's content is approved by moderator |
-| CLOSE |member closes comment to edits and replies |
-| OPEN |member re-opens comment |
+| DENY |Member's content is denied |
+| FLAG-AS-INAPPROPRIATE |Member's content is flagged |
+| UNFLAG-AS-INAPPROPRIATE |Member's content is unflagged |
+| ACCEPT |Member's content is approved by moderator |
+| CLOSE |Member closes comment to edits and replies |
+| OPEN |Member re-opens comment |
 
 ## Events for Custom Components {#events-for-custom-components}
 
@@ -129,8 +129,9 @@ For a custom component, the [SocialEvent abstract class](https://helpx.adobe.com
 The custom event would override the method `getVerb()` so that an appropriate `verb`is returned for each `action`. The `verb` returned for an action may be one commonly used (such as `POST`) or one specialized for the component (such as `ADD RATING`). There is an *n-1* relationship between `actions`and `verbs`.
 
 >[!NOTE]
->
->Ensure a custom extension is registered with a ranking lower than any existing implementation in the product.
+ >
+ >Ensure a custom extension is registered with a ranking lower than any existing implementation in the product.
+ >
 
 ### Pseudo-Code for Custom Component Event {#pseudo-code-for-custom-component-event}
 

@@ -45,7 +45,7 @@ The assignments feature is the ability to assign enablement resources and learni
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>See, <a href="/help/communities/assignments.md">Assignments Feature</a></td>
+   <td>See <a href="/help/communities/assignments.md">Assignments Feature</a></td>
   </tr>
  </tbody>
 </table>

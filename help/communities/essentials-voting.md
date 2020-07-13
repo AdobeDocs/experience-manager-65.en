@@ -45,7 +45,7 @@ Anonymous posting of a vote is not supported. Site visitors must register and si
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td><p>See, <a href="voting.md">Using Voting</a></p> </td>
+   <td><p>See <a href="voting.md">Using Voting</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -71,8 +71,8 @@ As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC 
 
 See:
 
-* [Storage Resource Provider Overview](srp.md) - introduction and repository usage overview
-* [SRP and UGC Essentials](srp-and-ugc.md) - SRP utility methods and examples
-* [Accessing UGC with SRP](accessing-ugc-with-srp.md) - coding guidelines
-* [SocialUtils Refactoring](socialutils.md) - mapping deprecated utility methods to current SRP utility methods
+* [Storage Resource Provider Overview](srp.md) - introduction and repository usage overview.
+* [SRP and UGC Essentials](srp-and-ugc.md) - SRP utility methods and examples.
+* [Accessing UGC with SRP](accessing-ugc-with-srp.md) - coding guidelines.
+* [SocialUtils Refactoring](socialutils.md) - mapping deprecated utility methods to current SRP utility methods.
 

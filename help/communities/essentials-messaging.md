@@ -41,7 +41,7 @@ This page documents the details of working with using the Messaging component to
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td>see <a href="/help/communities/configure-messaging.md" target="_blank">Configure Messaging</a></td>
+   <td>See <a href="/help/communities/configure-messaging.md" target="_blank">Configure Messaging</a></td>
   </tr>
   <tr>
    <td><strong>admin configuration</strong></td>
@@ -74,7 +74,7 @@ This page documents the details of working with using the Messaging component to
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td>see <a href="/help/communities/configure-messaging.md" target="_blank">Configure Messaging</a></td>
+   <td>See <a href="/help/communities/configure-messaging.md" target="_blank">Configure Messaging</a></td>
   </tr>
   <tr>
    <td><strong>admin configuration</strong></td>
@@ -94,18 +94,18 @@ See also [Client-side Customizations](/help/communities/client-customize.md)
 * [Server-side Customizations](/help/communities/server-customize.md)
 
 >[!CAUTION]
->
->The String parameter must *not* contain a trailing slash "/" for the following MessageBuilder methods:
->
->* `setInboxPath`()
->* `setSentItemsPath`()
->
->For example:
->
->```
->valid: mb.setInboxPath( "/mail/inbox" );
-> not valid: mb.setInboxPath( "/mail/inbox/" );
->```
+ >
+ >The String parameter must *not* contain a trailing slash "/" for the following MessageBuilder methods:
+ >
+ >* `setInboxPath`()
+ >* `setSentItemsPath`()
+ >
+ >For example:
+ >
+ >```
+ >valid: mb.setInboxPath( "/mail/inbox" );
+ > not valid: mb.setInboxPath( "/mail/inbox/" );
+ >```
 
 ### Community Site {#community-site}
 
@@ -122,16 +122,16 @@ To try the server-side sample script, you need a development environment and the
 1. Log in as an administrator to ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
 1. Create a `bundle node`in `/apps/engage/install` with arbitrary names, such as:
 
-    * Symbolic Name: `com.engage.media.social.messaging.MessagingNotification`
-    * Name: Getting Started Tutorial Message Notification
-    * Description: A sample service for sending an email notification to users when they receive a message
-    * Package: `com.engage.media.social.messaging.notification`
+   * Symbolic Name: `com.engage.media.social.messaging.MessagingNotification`
+   * Name: Getting Started Tutorial Message Notification
+   * Description: A sample service for sending an email notification to users when they receive a message
+   * Package: `com.engage.media.social.messaging.notification`
 
 1. Navigate to `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`, and then:
 
-    1. Delete the `Activator.java` class automatically created.
-    1. Create class `MessageEventHandler.java`.
-    1. Copy and paste the code below into `MessageEventHandler.java`.
+   1. Delete the `Activator.java` class automatically created.
+   1. Create class `MessageEventHandler.java`.
+   1. Copy and paste the code below into `MessageEventHandler.java`.
 
 1. Click **Save All**.
 1. Navigate to `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`, and add all the import statements as written in the `MessageEventHandler.java` code.

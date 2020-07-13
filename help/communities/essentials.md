@@ -25,10 +25,10 @@ Following are links to essential information for Communities components, functio
 * [Reviews](reviews-basics.md)
 * [Tally](tally.md)
 
-    * [Liking](essentials-liking.md)
-    * [Rating](rating-basics.md)
-    * [Voting](essentials-voting.md)
-    * *Poll (no longer available)*
+  * [Liking](essentials-liking.md)
+  * [Rating](rating-basics.md)
+  * [Voting](essentials-voting.md)
+  * *Poll (no longer available)*
 
 ## Components with Functions {#components-with-functions}
 
@@ -72,9 +72,9 @@ For each [feature pack](deploy-communities.md#latestfeaturepack), a javadoc jar 
 
 * [Social Component Framework (SCF)](scf.md)
 
-    * [Client-side Customizations](client-customize.md)
-    * [Server-side Customizations](server-customize.md)
-    * [Storage Resource Provider Overview](srp.md)
+  * [Client-side Customizations](client-customize.md)
+  * [Server-side Customizations](server-customize.md)
+  * [Storage Resource Provider Overview](srp.md)
 
 * [Coding Guidelines](code-guide.md)
 * [Tutorials](tutorials.md)
