@@ -13,5 +13,6 @@ discoiquuid: c5ce62ad-ce9f-4681-bf85-78f7e72e1506
 
 # Sling Cheatsheet{#sling-cheatsheet}
 
- ![chlimage_1-97](assets/chlimage_1-97.png) ![chlimage_1-98](assets/chlimage_1-98.png)
+![Understanding Apache Sling script resolution](assets/sling-cheatsheet-01.png)  
 
+![Using the SlingPostServlet](assets/sling-cheatsheet-02.png)

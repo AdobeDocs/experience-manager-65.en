@@ -32,22 +32,13 @@ AEM 6.5 comes with Livefyre feature package 1.2.6 pre-installed. This package on
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. Return to the AEM homepage, click Tools, then navigate to **Deployment &gt; Package Share**.
+1. Download Livefyre package from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-   A list of feature packs and hotfixes available for download displays.
-
-1. In the keyword search, search for "Livefyre", then select the Livefyre feature pack corresponding to your AEM version.
-
-   ![livefyre-aem3-6-4](assets/livefyre-aem3-6-4.png)
-
-1. On the feature pack information page, click **Download**, then read the Package License Agreement and click **Accept**.
-1. Return to the Package Manager, locate the newly downloaded package, and click **Install**.
+1. From the Package Manager, install the downloaded package. See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Software Distribution and packages in AEM
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
    Your Livefyre-AEM package is now installed. Before you can begin using the integration features, you must Configure AEM to use Livefyre.
-
-   For more information on packages, see [How to Work With Packages](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/package-manager.html).
 
    For more information and release notes on feature packs, see [Feature Packs](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html).
 
