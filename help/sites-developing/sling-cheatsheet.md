@@ -13,6 +13,6 @@ discoiquuid: c5ce62ad-ce9f-4681-bf85-78f7e72e1506
 
 # Sling Cheatsheet{#sling-cheatsheet}
 
-![Understanding Apache Sling script resolution](assets/sling-cheatsheet-01.png)  
+![Understanding Apache Sling script resolution.](assets/sling-cheatsheet-01.png)  
 
-![Using the SlingPostServlet](assets/sling-cheatsheet-02.png)
+![Using the SlingPostServlet - this is the default handler for your POST requests; it can do nearly anything.](assets/sling-cheatsheet-02.png)
