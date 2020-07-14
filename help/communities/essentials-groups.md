@@ -91,10 +91,11 @@ The inclusion of multiple community group templates results in a choice of desig
 
 As of Communities [FP1](deploy-communities.md#latestfeaturepack), it is possible for a Groups function to be included within a group template, thus allowing for nested groups (sub-communities).
 
-When a community site or group template includes the Groups function, it is possible to
+When a community site or group template includes the Groups function, it is possible to:
 
-* Create a sub-community in the author environment
-* Create a group in the publish environment, when configured to allow it
+* Create a sub-community in the author environment.
+
+* Create a group in the publish environment, when configured to allow it.
 
 When creating a group in the author environment, it is necessary to first publish the community site, and then to publish the group. Publishing the community site will publish the pages of the group, without creating the sub-community's member groups to which ACLs are set. Thus, a restricted (secret) group may be visible until the group is explicitly published.
 

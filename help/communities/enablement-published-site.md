@@ -52,7 +52,7 @@ A known limitation exposes the community site content to anonymous visitors thro
 
 To protect your community site's content from access by anonymous users through  jcr  content and  json , follow these steps:
 
-1. On AEM Author instance, go to https://&lt;host&gt;:&lt;port&gt;/editor.html/content/site/&lt;sitename&gt;.html.
+1. On AEM author instance, go to https://&lt;host&gt;:&lt;port&gt;/editor.html/content/site/&lt;sitename&gt;.html.
 
    >[!NOTE]
     >
@@ -176,7 +176,7 @@ On author, navigate to the **Communities, [Resources console](resources.md)**, w
 * All enablement resources and learning paths
 * One specific enablement resource or learning path
 
-Navigate to the **Communities, [Reports console](reports.md)**, and generate reports according to
+Navigate to the **Communities, [Reports console](reports.md)**, and generate reports according to:
 
 * Assignments to enablement resources and learning paths
 * Posts to a community site over a specific period
@@ -197,12 +197,11 @@ Navigate to the **Communities, [Reports console](reports.md)**, and generate rep
 
 With a little activity and interaction with the Resources on publish, viewing the reports on author is worth a look.
 
-* On author
-* Sign in with administrative privileges
-* Navigate from the main menu to **[!UICONTROL Communities > Resources]**
-* Select the `Enablement Tutorial` site
-* Select the `Report` icon for a summary of all Resources
-* Select a Resource and then the `Report` icon for a report on that Resource
+* On author, sign in with administrative privileges.
+* Navigate from the main menu to **[!UICONTROL Communities]** > **[!UICONTROL Resources]**.
+* Select the `Enablement Tutorial` site.
+* Select the `Report` icon for a summary of all Resources.
+* Select a Resource and then the `Report` icon for a report on that Resource.
 
 Notice that it is likely too soon to show data from Adobe Analytics, which can take from 1 to 12 hours to appear. However, basic SCORM reporting is already available.
 
@@ -230,10 +229,9 @@ The Reports console allows for generation of reports on
 
 For reports on assignments:
 
-* On author
-* Sign in with administrative privileges
-* Navigate to **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Assignments Report]**
-* Select a **[!UICONTROL Site]** from the pull-down menu (select `Enablement Tutorial`)
+* On author, sign in with administrative privileges.
+* Navigate to **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Assignments Report]**.
+* Select a **[!UICONTROL Site]** from the pull-down menu (select `Enablement Tutorial`).
 
 * Select **[!UICONTROL Group]** (select `Community Ski Class`)
 
@@ -245,15 +243,15 @@ For reports on assignments:
 
 For reports on views:
 
-* On author, sign in with administrative privileges
-* Navigate to **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Views Report]**
-* Select a **[!UICONTROL ]Site** from the pull-down menu (select `Enablement Tutorial`)
+* On author, sign in with administrative privileges.
+* Navigate to **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Views Report]**.
+* Select a **[!UICONTROL ]Site** from the pull-down menu (select `Enablement Tutorial`).
 
-* Select **[!UICONTROL Content Type]** (select `all`)
+* Select **[!UICONTROL Content Type]** (select `all`).
 
-* Select a **[!UICONTROL date range]** (select `Last 7 days`)
+* Select a **[!UICONTROL date range]** (select `Last 7 days`).
 
-* Select **[!UICONTROL Generate]**
+* Select **[!UICONTROL Generate]**.
 
 ![chlimage_1-446](assets/chlimage_1-446.png)
 

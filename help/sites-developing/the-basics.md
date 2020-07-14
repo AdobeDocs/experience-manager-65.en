@@ -61,11 +61,11 @@ See [Discover Sling in 15 minutes](https://sling.apache.org/documentation/gettin
 
 The following diagram explains Sling script resolution: it shows how to get from HTTP request to content node, from content node to resource type, from resource type to script and what scripting variables are available.
 
-![chlimage_1-84](assets/chlimage_1-97.png)
-
+![Understanding Apache Sling script resolution](assets/sling-cheatsheet-01.png) 
+ 
 The following diagram explains all the hidden, but powerful, request parameters you can use when dealing with the SlingPostServlet, the default handler for all POST requests that gives you endless options for creating, modifying, deleting, copying and moving nodes in the repository.
 
-![chlimage_1-85](assets/chlimage_1-98.png)
+![Using the SlingPostServlet](assets/sling-cheatsheet-02.png)
 
 ### Sling is Content Centric {#sling-is-content-centric}
 

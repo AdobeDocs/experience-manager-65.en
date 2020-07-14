@@ -106,12 +106,12 @@ For the first case, the javadocs can state what `adaptTo-targets` are possible. 
    <td>Extension of <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> which allows the hierarchy of resources to be taken into account when looking for properties.</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/PersistableValueMap.html">PersistableValueMap</a></td>
-   <td>If this is a JCR-node-based resource and the user has permissions to modify properties on that node.<br /> Note: multiple persistable maps do not share their values.</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModifiableValueMap</a></td>
+   <td>An extension of the <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, which allows you to modify properties on that node.</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
-   <td>Returns the binary content of a "file"<code></span> resource (if this is a JCR-node-based resource and the node type is <span class="code">nt:file</code> or <code>nt:resource</code>; if this is a bundle resource; file content if this is a file system resource) or the data of a binary JCR property<br /> resource.</td>
+   <td>Returns the binary content of a file resource (if this is a JCR-node-based resource and the node type is <code>nt:file</code> or <code>nt:resource</code>; if this is a bundle resource; file content if this is a file system resource) or the data of a binary JCR property resource.</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/net/URL.html">URL</a></td>
@@ -130,36 +130,12 @@ For the first case, the javadocs can state what `adaptTo-targets` are possible. 
    <td>If this resource is a script (e.g. jsp file) for which a script engine is registered with sling or if this is a servlet resource.</td>
   </tr>
   <tr>
-   <td><a href="https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/user/Authorizable.html">Authorizable</a><br /> (Jackrabbit)<br /> </td>
-   <td>If this is a an authorizable resource (from the<br /> <code>AuthorizableResourceProvider</code> in <code>org.apache.sling.jackrabbit.usermanager</code>, under <code>/system/userManager</code>).</td>
-  </tr>
-  <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html">String</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html">Boolean</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html">Long</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Double.html">Double</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html">Calendar</a><br /> <a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Value</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html">String[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html">Boolean[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html">Long[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html">Calendar[]</a><br /> <a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Value[]</a></td>
    <td>Returns the value(s) if this is a JCR-property-based resource (and the value fits).</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
    <td>If this is a JCR-node-based resource.</td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html">Page</a></td>
-   <td>If this is a JCR-node-based resource and the node is a <code>cq:Page</code> (or <code>cq:PseudoPage</code>).</td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html">Component</a></td>
-   <td>If this is a <code>cq:Component</code> node resource.</td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/designer/Design.html">Design</a></td>
-   <td>If this is a design node (<code>cq:Page</code>, typically under<br /> /etc/designs).</td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html">Template</a></td>
-   <td>If this is a <code>cq:Template</code> node resource.</td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/msm/Blueprint.html">Blueprint</a></td>
-   <td>If this is a <code>cq:Page</code> node resource (more specific checks possible in the future).</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html">Asset</a></td>
@@ -170,32 +146,16 @@ For the first case, the javadocs can state what `adaptTo-targets` are possible. 
    <td>If this is a dam:Asset rendition (nt:file under the rendition folder of a dam:Assert)</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html">Tag</a></td>
-   <td>If this is a <code>cq:Tag</code> node resource.</td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/preferences/Preferences.html">Preferences</a></td>
-   <td>If this is a <code>cq:Preferences</code> node resource for a valid user/group.</td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/profile/Profile.html">Profile</a></td>
-   <td>If this is the profile below a user/group node (eg.<br /> cq/security/components/profile).</td>
-  </tr>
-  <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
    <td>Based on the JCR session if this is a JCR-based resource and the user has permissions to access the UserManager.</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html">Authorizable</a><br /> (cq-security)</td>
-   <td>This is a authorizable home node.</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">Authorizable</a></td>
+   <td>The Authorizable is the common base interface for User and Group.</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html">User</a><br /> (cq-security)</td>
-   <td>If this is a user home node.</td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/privileges/PrivilegeManager.html">PrivilegeManager</a></td>
-   <td> </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/api/security/user/User.html">User</a></td>
+   <td>User is a special Authorizable that can be authenticated and impersonated.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
@@ -233,28 +193,13 @@ For the first case, the javadocs can state what `adaptTo-targets` are possible. 
    <td>The request's JCR session, if this is a JCR-based resource resolver (default).</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/ComponentManager.html">ComponentManager</a></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
-   <td> </td>
-  </tr>
-  <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
    <td>Based on the JCR session, if this is a JCR-based resource resolver.</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
-   <td>Based on the JCR session, if this is a JCR-based resource resolver.</td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
-   <td>Based on the JCR session, if this is a JCR-based resource resolver, and if the user has permissions to access the UserManager.</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
+   <td>The UserManager provides access to and means to maintain authorizable objects i.e. users and groups. The UserManager is bound to a particular Session.
+   </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">Authorizable</a> </td>
@@ -263,22 +208,6 @@ For the first case, the javadocs can state what `adaptTo-targets` are possible. 
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/api/security/user/User.html">User</a><br /> </td>
    <td>The current user.</td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/privileges/PrivilegeManager.html">PrivilegeManager</a></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/preferences/Preferences.html">Preferences</a></td>
-   <td>Preferences of the current user (based on JCR session if this is a JCR-based resource resolver).</td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/preferences/PreferencesService.html">PreferencesService</a></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/auth/pin/PinManager.html">PinManager</a></td>
-   <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td>
@@ -308,7 +237,7 @@ No targets yet, but implements Adaptable and could be used as source in a custom
 
 #### WCM {#wcm}
 
-[**Page**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) adapts to:
+**Page** adapts to:
 
 <table>
  <tbody>
@@ -331,7 +260,7 @@ No targets yet, but implements Adaptable and could be used as source in a custom
  </tbody>
 </table>
 
-[**Component**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html) adapts to:
+**Component** adapts to:
 
 | [Resource](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) |Resource of the component. |
 |---|---|
@@ -339,7 +268,7 @@ No targets yet, but implements Adaptable and could be used as source in a custom
 | [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) |Node of the component. |
 | ... |Everything that the component's resource can be adapted to. |
 
-[**Template**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html) adapts to:
+**Template** adapts to:
 
 <table>
  <tbody>
@@ -364,7 +293,7 @@ No targets yet, but implements Adaptable and could be used as source in a custom
 
 #### Security {#security}
 
-[**Authorizable**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html), [**User**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) and [**Group**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html) adapt to:
+**Authorizable**, **User** and **Group** adapt to:
 
 | [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) |Returns the user/group home node. |
 |---|---|
@@ -372,7 +301,7 @@ No targets yet, but implements Adaptable and could be used as source in a custom
 
 #### DAM {#dam}
 
-[**Asset**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html) adapts to:
+**Asset** adapts to:
 
 | [Resource](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) |Resource of the asset. |
 |---|---|
@@ -381,7 +310,7 @@ No targets yet, but implements Adaptable and could be used as source in a custom
 
 #### Tagging {#tagging}
 
-[**Tag**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html) adapts to:
+**Tag** adapts to:
 
 | [Resource](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) |Resource of the tag. |
 |---|---|
