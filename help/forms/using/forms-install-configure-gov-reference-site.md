@@ -71,31 +71,6 @@ The assets included in this package include:
 * Sample (In-Memory) Apache Derby Database
 * Apache Derby Data Source (for use with Form Data Model)
 
-## Configuration options {#configuration-options}
-
-Users have the ability to configure various workflow service options which include the following:
-
-1. Microsoft Dynamics Entry
-1. Adobe Sign
-1. AEM Custom Communication Management
-1. Adobe Analytics
-
-In order to configure them to be enabled within the Workflow users need to perform the following tasks.
-
-1. Navigate to https://'[server]:[port]'/system/console/configMgr.
-
-1. Locate the *WeGov Configurations*.
-
-1. Open the service definition and enable the selected services to be invoked within the workflow.
-
->[!NOTE]
-   >
-   >Just because a user enables the service within the Configuration Manager page, users are still required to setup a service configuration in order to communicate with the external services requested.
-
-   ![we gov forms package](assets/aftia-configuration-options.jpg)  
-
-1. Once completed click on the Save button in order to save the settings.
-
 ## Demo package installation {#demo-package-installation}
 
 This section contains information on installing the demo package.
@@ -157,18 +132,19 @@ This section contains details and instructions on the post-deployment configurat
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/libs/granite/security/content/groupadmin.html*
 1. Login as an administrator in order to perform the tasks below.
+1. Scroll down to the end of the page to load all user groups.
 1. Search for “**workflow**”.
 1. Select the “**workflow-users**” group and click on “Properties”.
 1. Navigate to the “Members” tab.
 1. Type in **wegov** in “Select User or Group” field.
-1. Select from the dropdown “**We.Gov Form Users**”.
+1. Select from the dropdown “**We.Gov Forms Users**”.
 
    ![Editing group settings for workflow users](assets/edit_group_settings.jpg)
 
 1. Click “Save & Close” in the menu bar.
-1. Repeat steps 2-7 by searching for “**analytics**”, selecting the “**Analytics Administrators**” group, and adding the “**We.Gov Form Users**” group as a member.
-1. Repeat steps 2-7 by searching for “**forms users**”, selecting the “**forms-power-users**” group, and adding the “**We.Gov Form Users**” group as a member.
-1. Repeat steps 2-7 by searching for “**forms users**”, selecting the “**forms-users**” group, and this time adding the “**We.Gov Users**” group as a member.
+1. Repeat steps 2-7 by searching for “**analytics**”, selecting the “**Analytics Administrators**” group, and adding the “**We.Gov Forms Users**” group as a member.
+1. Repeat steps 2-7 by searching for “**forms users**”, selecting the “**forms-power-users**” group, and adding the “**We.Gov Forms Users**” group as a member.
+1. Repeat steps 2-7 by searching for “**forms-users**”, selecting the “**forms-users**” group, and this time adding the “**We.Gov Users**” group as a member.
 
 ### Email server configuration {#email-server-configuration}
 
@@ -358,7 +334,7 @@ Once the cloud configuration is complete, you may want to test the forms data mo
 
 1. Click on **Save and Close**.
 
-1. Test the services to ensure they successfully connect to the configured Data Source
+1. [Test the services](work-with-form-data-model.md#test-data-model-objects-and-services) to ensure they successfully connect to the configured Data Source
 
    * To test the connection select the **HOMEMORTGAGEACCOUNT** and give it a get service. Test the service and system administrators can see data being retrieved.
 
@@ -486,25 +462,6 @@ Administrators can provide users with AEM analytics permissions by performing th
 
    ![View Analytics report data](assets/analytics_report_data.jpg)
 
-#### View Adobe Analytics reporting {#view-adobe-analytics-reporting}
-
-Optionally, you can navigate to Adobe Analytics directly to see the analytics data.
-
-1. Navigate to [https://my.omniture.com/login/](https://my.omniture.com/login/)
-1. Login using your credentials:
-
-    1. **Company:** AEM Forms Demo
-    1. **User:** &lt;available upon request&gt;
-    1. **Password:** &lt;available upon request&gt;
-
-1. Select the “We.Gov Reference Site” from the Report Suites.
-
-   ![Report Suites](assets/report_suites.jpg)
-
-1. Select one of the available report to display the analytics data of that report.
-
-   ![Analytics data of a report](assets/analytics_data.jpg)
-
 ### Adobe Automated Forms Configuration Enablement {#automated-forms-enablement}
 
 In order to install and configure AEM Forms with the Adobe Forms, Conversion tool users must have the following.
@@ -534,7 +491,7 @@ Manager on the top left > Tools > Security >Adobe IMS Configuration.
 
 1. Make sure to download the certificate.
 
-1. Do not proceed with the remainder of the configuration - review section (TBD)
+1. Do not proceed with the remainder of the configuration - review section [Creating Integration in Adobe I/O](#create-integration-adobeio)
 
 >[!NOTE]
 >
@@ -590,7 +547,7 @@ Now that you have created an integration let us complete the installation of the
 
 #### Configure Cloud Configuration (We.Gov AFC Production) {#configure-cloud-configuration}
 
-Once the IMS configuration is complete then we can proceed to create the cloud configuration in AEM.
+Once the IMS configuration is complete then we can proceed to review the cloud configuration in AEM. If the configuration do not exist, use the following steps to create the cloud configuration in AEM:
 
 1. Open your browser and navigate to the system URL  https://&lt;domain_name&gt;:&lt;system_port&gt;
 
@@ -672,16 +629,7 @@ Once the configuration is set up users can test it by uploading a PDF document.
 
    ![Advanced conversion settings](assets/aftia-conversion-settings-2.jpg)
 
-1. Select start conversion once you have configured all of the options that you would like to use
-
-   >[!NOTE]
-   >
-   >*Specify an Adaptive Form Theme* section this is where users can specify the
-theme Accessible-Ultramarine Theme.
-
-   >[!NOTE]
-   >
-   >If you wish to bind the generated form with a FDM, or anything else then you must select the checkbox that says *Generate adaptive form(s) without data bindings*.
+1. Select start conversion once you have configured all of the options that you would like to use.  
 
 1. As the conversion process begins then users should see the following screen:
 
@@ -691,63 +639,11 @@ theme Accessible-Ultramarine Theme.
 
    ![Converted adaptive form](assets/aftia-converted-adaptive-form-2.jpg)
 
-#### Testing the forms Conversion (We.Finance Credit Card Application) {#testing-forms-conversion-wefinance}
-
-Once the configuration is set up users can test it by uploading a PDF document.
-
-1.  Navigate to the AEM system https://&lt;domain_name&gt;:&lt;system_port&gt;
-
-1. Click on Forms > Forms & Documents > AEM Forms We.finance Forms > PDF Forms.
-
-1. Select the We.Finance Credit Card Application.
-
-1. Click on the **Start Automated Conversion** button in the top right corner.
-
-1. Users should be able to see the option as shown below.
-
-   ![PDF forms](assets/aftia-pdf-forms.jpg)
-
-1. Once the button has been selected then users will be presented with the following options.
-
-   * Make sure users select the *We.Finance AFC Production* configuration
-
-   ![Select We.Finance AFC Production](assets/aftia-select-production-configuration.jpg)
-
-   ![Advanced conversion settinggs](assets/aftia-advanced-conversion-settings-wefinance.jpg)
-
-1. Select start conversion once you have configured all of the options that you would like to use
-
-   >[!NOTE]
-   >
-   >*Specify an Adaptive Form Theme* section this is where users can specify the
-theme Accessible-Ultramarine Theme.
-
-   >[!NOTE]
-   >
-   >If you wish to bind the generated form with a FDM, or anything else then you must select the checkbox that says *Generate adaptive form(s) without data bindings*.
-
-   >[!NOTE]
-   >
-   >Users should set the output folder location to */content/dam/formsanddocuments/adobe-finance-forms/afc-converted-forms* in order
-for the rendered form to appear in the forms portal within the We.Gov site.
-
-1. As the conversion process begins then users should see the following screen:
-
-   ![Conversion in progress](assets/aftia-conversion-progress.jpg)
-
-   >[!NOTE]
-   >
-   >Three is a bug reported where even though you select a separate folder from the one provided from the cloud config it will still create an output folder locally and then place the generated form in the correct location.
-
-1. When the conversion is complete then users will see the following screen:
-
-   ![Conversion in progress](assets/aftia-conversion-complete.jpg)
-
-1. Users can also review the conversion process and edit the result in order to provide the system with better conversion abilities.
+   Click the **Output** folder to view the generated adaptive form.
 
 #### Known Issues & Notes {#known-issues-notes}
 
-The forms conversion process does have some limitations and is viewable on the Adobe website. See [Known Issues](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html) to see if your forms are compatible with this process.
+The Automated Forms Conversion service includes certain [best practices, known complex patterns](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html), and [known issues](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html). Review these before you begin using AEM Forms Automated Forms Conversion service.
 
 1. Generate the Form with Generate adaptive form(s) without data bindings enabled if you would like to bind the form to an FDM after conversion.
 
@@ -879,6 +775,31 @@ The publicly available Ultramarine theme maintained by Adobe is built into the
 Package Manager, users can access the Ultramarine theme in AEM Forms by navigating to **Forms** > **Themes** > **Reference Themes** > **Ultramarine-Accessible**.
 
 ![Ultramarine theme](assets/aftia-ultramarine-theme.jpg)
+
+## Configuration options {#configuration-options}
+
+Users have the ability to configure various workflow service options which include the following:
+
+1. Microsoft Dynamics Entry
+1. Adobe Sign
+1. AEM Custom Communication Management
+1. Adobe Analytics
+
+In order to configure them to be enabled within the Workflow users need to perform the following tasks.
+
+1. Navigate to https://'[server]:[port]'/system/console/configMgr.
+
+1. Locate the *WeGov Configurations*.
+
+1. Open the service definition and enable the selected services to be invoked within the workflow.
+
+>[!NOTE]
+   >
+   >Just because a user enables the service within the Configuration Manager page, users are still required to setup a service configuration in order to communicate with the external services requested.
+
+   ![we gov forms package](assets/aftia-configuration-options.jpg)  
+
+1. Once completed click on the Save button in order to save the settings.
 
 ## Next Steps {#next-steps}
 

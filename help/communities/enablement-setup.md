@@ -24,22 +24,23 @@ Follow the basic AEM [Getting Started](../../help/sites-deploying/deploy.md#gett
 
 For AEM Communities,
 
-* The author environment is for
+* The author environment is for:
 
-    * Development of sites, templates, components, enablement resources and learning paths
-    * Assignment of members and groups of members to enablement resources and learning paths
-    * Generating reports on assignments, views, and posts
-    * Administrative and configuration tasks
+    * Development of sites, templates, components, enablement resources and learning paths.
+    * Assignment of members and groups of members to enablement resources and learning paths.
+    * Generating reports on assignments, views, and posts.
+    * Administrative and configuration tasks.
 
-* The publish environment is for
+* The publish environment is for:
 
-    * Learning/training based on topics managed by the Enablement Manager
-    * Commenting and rating enablement resources and learning paths
-    * Getting in touch with the resource contacts
+    * Learning/training based on topics managed by the Enablement Manager.
+    * Commenting and rating enablement resources and learning paths.
+    * Getting in touch with the resource contacts.
 
 >[!NOTE]
->
->If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
+ >
+ >If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
+ >
 
 ## Install Latest Communities Release {#install-latest-communities-release}
 
@@ -88,7 +89,7 @@ Use the [Tagging console](../../help/sites-administering/tags.md#tagging-console
 
 ![chlimage_1-417](assets/chlimage_1-417.png)
 
-Then follow the instructions to
+Then follow the instructions to:
 
 1. [Set the tag permissions](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [Publish the tags](../../help/sites-administering/tags.md#publishing-tags)
@@ -108,12 +109,13 @@ In this tutorial, three members are created in the publish environment. Two memb
 A fourth user is created in the author environment and assigned the roles of Communities Administrator and Community Enablement Manager.
 
 >[!NOTE]
->
->These members are being created prior to creation of the *Enablement Tutorial* community site.
->
->If they were created afterwards, they could be added as members of the *Enablement Tutorial members group* during member creation.
->
->Instead, later, they'll be [assigned to the members group](enablement-create-site.md#assignuserstocommunityenablemembersgroup).
+ >
+ >These members are being created prior to creation of the *Enablement Tutorial* community site.
+ >
+ >If they were created afterwards, they could be added as members of the *Enablement Tutorial members group* during member creation.
+ >
+ >Instead, later, they'll be [assigned to the members group](enablement-create-site.md#assignuserstocommunityenablemembersgroup).
+ >
 
 ### Riley Taylor - Enrollee {#riley-taylor-enrollee}
 
@@ -157,8 +159,8 @@ A fourth user is created in the author environment and assigned the roles of Com
 * **Description**: a sample group for assigning enablement resources
 * **Add Members To Group** 'add':
 
-    * riley
-    * sidney
+  * riley
+  * sidney
 
 * Select **[!UICONTROL Save]**
 
@@ -167,8 +169,9 @@ A fourth user is created in the author environment and assigned the roles of Com
 ![chlimage_1-418](assets/chlimage_1-418.png)
 
 >[!NOTE]
->
->During creation of the community site, existing members and groups may be added to the community site's members group.
+ >
+ >During creation of the community site, existing members and groups may be added to the community site's members group.
+ >
 
 ## Community Administrator Role {#community-administrator-role}
 
@@ -180,23 +183,23 @@ Create a user on *author*, who is assigned the role of Community Administrator:
 
 * On the author instance
 
-    * For example, [http://localhost:4502/](http://localhost:4503/)
+  * For example, [http://localhost:4502/](http://localhost:4503/)
 
 * Sign in with administrator privileges
 
-    * For example, username 'admin' / password 'admin'
+  * For example, username 'admin' / password 'admin'
 
-* From the main console, navigate to **[!UICONTROL Tools, Operations > Security > Users]**
-* From the **[!UICONTROL Edit]** menu, select **[!UICONTROL Add User]**
+* From the main console, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
+* From the **[!UICONTROL Edit]** menu, select **[!UICONTROL Add User]**.
 
-* In the `Create New User` dialog enter
+* In the `Create New User` dialog enter:
 
-    * **ID&ast;**: sirius
-    * **Emai Address**: sirius.nilson@mailinator.com
-    * **Password&ast;**: password
-    * **Confirm Password&ast;**: password
-    * **First Name**: Sirius
-    * **Last Name&ast;**: Nilson
+  * **ID&ast;**: sirius
+  * **Emai Address**: sirius.nilson@mailinator.com
+  * **Password&ast;**: password
+  * **Confirm Password&ast;**: password
+  * **First Name**: Sirius
+  * **Last Name&ast;**: Nilson
 
 ### Assign Sirius to Community Administrators Group {#assign-sirius-to-community-administrators-group}
 
@@ -204,8 +207,8 @@ Scroll down to `Add User to Groups`:
 
 * Enter 'C' to search
 
-    * Select `Community Administrators`
-    * Select `Community Enablement Managers`
+  * Select `Community Administrators`
+  * Select `Community Enablement Managers`
 
 * Select **[!UICONTROL Save]**
 
