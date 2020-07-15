@@ -96,7 +96,7 @@ The following groups are also included:
 
 ## Automated Forms Conversion (Camila) {#automated-forms-conversion}
 
-**This section**: Camila the CX Lead has an older PDF based form that was used as part of a paper-based process. As part of a modernization effort she wants to use this PDF form to automatically create a new modern Adaptive Forms.
+**This section**: Camila the CX Lead has an existing PDF based form that was used as part of a paper-based process. As part of a modernization effort she wants to use this PDF form to automatically create a new modern Adaptive Forms.
 
 ### Automated Forms Conversion - We.Gov (Camila) {#automated-forms-conversion-wegov}
 
@@ -110,7 +110,7 @@ The following groups are also included:
 
     ![Upload form](assets/aftia-upload-form.jpg)
 
-1. Camilla then selects an Automated Forms Conversion task
+1. Camilla then selects the PDF form and clicks **Start Automated Conversion** to start the conversion process. You may need to click **Overwrite conversion** if you have converted the form.
 
    >[!NOTE]
    >
@@ -118,9 +118,11 @@ The following groups are also included:
 
    * **Optional**: If you wish to use the Accessible Ultramarine theme, simply click on the Specify an adaptive form theme and select the Accessible-Ultramarine theme that appears in the list of options.
 
-   ![Ultramarine theme](assets/aftia-upload-conversion-settings.jpg)
-
    ![Start conversion](assets/aftia-start-conversion.jpg)
+
+   ![Ultramarine theme](assets/aftia-upload-conversion-settings.jpg) 
+
+   The percentage complete status displays during conversion. Once the status displays **Converted**, click the **output** folder, select the adaptive form and click **Edit** to open the converted form.
 
 1. Camilla then reviews the form and makes certain that all fields are present
 
@@ -150,7 +152,7 @@ The following groups are also included:
 
 Camila also validates that the created content is built correctly and fully accessible according to corporate standards.
 
-1. Camila opens the completed We.Gov form.
+1. Camila clicks the **output** folder, selects the adaptive form and clicks **Preview** to open the completed We.Gov form.
 
 1. Opens the Audit tab within the Chrome Developer Tool.
 
@@ -208,24 +210,9 @@ Aya needs to review some documents at home before she can complete the service r
     1. Basic Information
 
         1. First Name
-        1. Middle Name
         1. Last Name
-        1. Preferred Name
         1. DOB
-        1. Gender
-
-    1. Contact Information
-
-        1. Street Address
-        1. City
-        1. Telephone Number
-        1. Zip Code
         1. Email
-        1. State
-
-    1. Martial Status
-
-        1. Family Status
 
 1. Use the following **dynamic logic** to demonstrate dynamic feature using the **Family Status** dropdown:
 
