@@ -15,7 +15,7 @@ discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 
 ## Introduction {#introduction}
 
-The featured content feature provides an area for signed-in site visitors (community members) in the publish environment to highlight content for
+The featured content feature provides an area for signed-in site visitors (community members) in the publish environment to highlight content for:
 
 * [Blogs](blog-feature.md)
 * [Calendars](calendar.md)
@@ -29,8 +29,8 @@ The ability to feature content may be allowed or disallowed per component.
 
 This section of the documentation describes:
 
-* Adding featured content to a community site
-* Configuration settings for the `Featured Content` component
+* Adding featured content to a community site.
+* Configuration settings for the `Featured Content` component.
 
 ## Adding Featured Content to a Page {#adding-featured-content-to-a-page}
 
@@ -50,19 +50,24 @@ When the [required client-side libraries](essentials-featured.md#essentials-for-
 
 Select the placed `Featured Content` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-14](assets/chlimage_1-14.png) ![chlimage_1-15](assets/chlimage_1-15.png)
+![chlimage_1-14](assets/chlimage_1-14.png) 
+
+![chlimage_1-15](assets/chlimage_1-15.png)
 
 ### Settings tab {#settings-tab}
 
 Under the **[!UICONTROL Settings]** tab, identify the content to feature:
 
 * **[!UICONTROL Display Name]**
+  
   The title for the list of featured content. For example `Featured Questions` or `Featured Ideas`. Default is `Featured Content` if left empty.
 
 * **[!UICONTROL Location of the Featured Content]**
-  *(Required)* Browse to the page containing the content that may be feature (components of that page must be configured to Allow Featured Content). For example, `/content/sites/engage/en/forum`
+  
+  *(Required)* Browse to the page containing the content that may be feature (components of that page must be configured to Allow Featured Content). For example, `/content/sites/engage/en/forum`.
 
 * **[!UICONTROL Display Limit]**
+  
   The maximum number of featured content to display. Default is 5.
 
 ## Site Visitor Experience {#site-visitor-experience}
