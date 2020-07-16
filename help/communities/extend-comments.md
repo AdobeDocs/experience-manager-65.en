@@ -18,8 +18,9 @@ The intention of [extending](client-customize.md#extensions) a default component
 The path to the component is unique and references the default component as a super resource type. There is less risk as the scope is limited compared to the global scope of a component overlay.
 
 >[!NOTE]
->
->Extending an [overlaid](client-customize.md#overlays) component is not supported.
+ >
+ >Extending an [overlaid](client-customize.md#overlays) component is not supported.
+ >
 
 ## Example {#example}
 
