@@ -137,10 +137,10 @@ var inputs = {
 };
 var outputs = {};
 var success = function (wsdlOutput, textStatus, jqXHR) {
-  				   order_quantity.value = JSON.parse(wsdlOutput).quantity;
-			 };
+order_quantity.value = JSON.parse(wsdlOutput).quantity;
+ };
 var failure = function(){
-			alert('Error occured');
+alert('Error occured');
 };
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, success, failure);
 ```
