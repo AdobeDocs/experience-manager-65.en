@@ -115,7 +115,7 @@ The call back function can have `success` and `failure` callback functions.
 
 The following sample script uses the `guidelib.dataIntegrationUtils.executeOperation` API to invoke the `GETOrder` service operation configured in the `employeeOrder` form data model.
 
-The `GETOrder` operation takes the value in the `Order ID` form field as input for the `orderId` argument and returns order quantity value in the `success` callback function. The output values do not populate in the specified form fields if you use the `success` callback function.
+The `GETOrder` operation takes the value in the `Order ID` form field as input for the `orderId` argument and returns order quantity value in the `success` callback function. If you use the `success` callback function, the mapping in `outputs` section does not display appropriate results.
 
 ```
 var operationInfo = {
@@ -137,7 +137,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, s
 
 The following sample script uses the `guidelib.dataIntegrationUtils.executeOperation` API to invoke the `GETOrder` service operation configured in the `employeeOrder` form data model.
 
-The `GETOrder` operation takes the value in the `Order ID` form field as input for the `orderId` argument and returns order quantity value in the `success` callback function. The output values do not populate in the specified form fields if you use the `success` callback function. If the `success` callback function does not return the order quantity, the `failure` callback function displays the `Error occured` message.
+The `GETOrder` operation takes the value in the `Order ID` form field as input for the `orderId` argument and returns order quantity value in the `success` callback function.  If the `success` callback function does not return the order quantity, the `failure` callback function displays the `Error occured` message.
 
 ```
 var operationInfo = {
