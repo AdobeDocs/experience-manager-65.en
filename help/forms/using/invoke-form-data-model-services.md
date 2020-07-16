@@ -101,4 +101,59 @@ var outputs = {
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 ```
+## Using the API with callback function {#using-the-api-callback}
 
+You can also invoke the form data model service using the `guidelib.dataIntegrationUtils.executeOperation` API with a callback function. The API syntax is as follows:
+
+```
+guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
+```
+
+The call back function can have `success` and `failure` callback functions.
+
+### Sample script with a success callback function {#callback-function-success}
+
+The following sample script uses the `guidelib.dataIntegrationUtils.executeOperation` API to invoke the `GETOrder` service operation configured in the `employeeOrder` form data model.
+
+The `GETOrder` operation takes the value in the `Order ID` form field as input for the `orderId` argument and returns order quantity value in the `success` callback function. The output values do not populate in the specified form fields if you use the `success` callback function.
+
+```
+var operationInfo = {
+    "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeOrder",
+    "operationTitle": "GETOrder",
+    "operationName": "GETOrder"
+};
+var inputs = {
+    "orderId" : Order ID
+};
+var outputs = {};
+var success = function (wsdlOutput, textStatus, jqXHR) {
+  				   order_quantity.value = JSON.parse(wsdlOutput).quantity;
+			 };
+guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, success);
+```
+
+### Sample script with success and failure callback functions {#callback-function-success-failure}
+
+The following sample script uses the `guidelib.dataIntegrationUtils.executeOperation` API to invoke the `GETOrder` service operation configured in the `employeeOrder` form data model.
+
+The `GETOrder` operation takes the value in the `Order ID` form field as input for the `orderId` argument and returns order quantity value in the `success` callback function. The output values do not populate in the specified form fields if you use the `success` callback function. If the `success` callback function does not return the order quantity, the `failure` callback function displays the `Error occured` message.
+
+```
+var operationInfo = {
+    "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeOrder",
+    "operationTitle": "GETOrder",
+    "operationName": "GETOrder"
+};
+var inputs = {
+    "orderId" : Order ID
+};
+var outputs = {};
+var success = function (wsdlOutput, textStatus, jqXHR) {
+  				   order_quantity.value = JSON.parse(wsdlOutput).quantity;
+			 };
+var failure = function(){
+			alert('Error occured');
+};
+guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, success, failure);
+```
