@@ -105,6 +105,7 @@ var outputs = {
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 ```
+
 ## Using the API with callback function {#using-the-api-callback}
 
 You can also invoke the form data model service using the `guidelib.dataIntegrationUtils.executeOperation` API with a callback function. The API syntax is as follows:
