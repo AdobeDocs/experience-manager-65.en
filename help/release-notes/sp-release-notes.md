@@ -14,7 +14,7 @@ mini-toc-levels: 1
 | Version  | 6.5.5.0                      |
 | Type     | Service Pack Release         |
 | Date     | June 04, 2020                |
-| Download URL | [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.5.0), [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) |
+| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) |
 
 ## What's included in Adobe Experience Manager 6.5.5.0 {#what-s-included-in-aem}
 
@@ -333,7 +333,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 
 Perform the following steps to install the Service Pack on an existing Adobe Experience Manager 6.5 instance:
 
-1. Download the service pack from [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.5.0) or [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip).
+1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip).
 
 1. Open Package Manager and click **[!UICONTROL Upload Package]** to upload the package. To know how to use it, see [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html).
 
@@ -361,7 +361,7 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1. The OSGI bundle `org.apache.jackrabbit.oak-core` is version 1.10.6 or higher (Use Web Console: `/system/console/bundles`).
+1. The OSGI bundle `org.apache.jackrabbit.oak-core` is version 1.22.3 or higher (Use Web Console: `/system/console/bundles`).
 
 To know the platforms certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
 
