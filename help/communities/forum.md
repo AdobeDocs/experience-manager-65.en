@@ -29,7 +29,7 @@ The forum feature provides an area for signed-in site visitors (community member
 This section of the documentation describes:
 
 * Adding the forum feature to an AEM site.
-* Configuration settings for the `Forum`component.
+* Configuration settings for the `Forum` component.
 
 ### Adding a Forum to a Page {#adding-a-forum-to-a-page}
 
@@ -41,15 +41,17 @@ and drag it into place on a page where the forum should appear.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/essentials-forum.md#essentials-for-client-side) are included, this is how the `Forum`component will appear :
+When the [required client-side libraries](/help/communities/essentials-forum.md#essentials-for-client-side) are included, this is how the `Forum` component will appear:
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![chlimage_1-60](assets/chlimage_1-60.png)
 
 ### Configuring a Forum {#configuring-a-forum}
 
 Select the placed `Forum` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-105](assets/chlimage_1-105.png) ![forum-config](assets/forum-config.png)
+![chlimage_1-61](assets/chlimage_1-61.png) 
+
+![forum-config](assets/forum-config.png)
 
 #### Settings tab {#settings-tab}
 
@@ -238,7 +240,9 @@ Under the **Sort Settings** tab, specify how the posted comments are sorted when
 
 * **Select Time Options for Analytics Sorting**
   
-  Pull down to select one of `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Default is `All`.
+  Pull down to select one of the following options: `All, Last 24 Hours, Last 7 Days, Last 30 Days`. 
+  
+  Default is `All`.
 
 ### Additional Information {#additional-information}
 

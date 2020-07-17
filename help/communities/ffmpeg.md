@@ -54,9 +54,9 @@ To modify the [!UICONTROL DAM Update Asset] workflow, and in this example, to tu
 * Double-click the **[!UICONTROL FFmpeg transcoding]** step to access the Step Properties dialog.
 * Under the **[!UICONTROL Process]** tab:
 
-    * **[!UICONTROL Arugments]**: Clear all entries to disable transcoding Default values: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
+  * **[!UICONTROL Arugments]**: Clear all entries to disable transcoding Default values: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
 
-![chlimage_1-372](assets/chlimage_1-372.png)
+  ![chlimage_1-372](assets/chlimage_1-372.png)
 
 * Select **[!UICONTROL OK]** to close the `Step Properties` dialog.
 
