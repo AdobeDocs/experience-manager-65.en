@@ -41,6 +41,16 @@ For more information, see [How to Build AEM Projects using Apache Maven](/help/s
 
 * If you use Eclipse-integrated development environment, you can use AEM Developer tools for seamless integration of Eclipse IDE with AEM instances to create AEM applications. For details, see [AEM developer tools for Eclipse](/help/sites-developing/aem-eclipse.md).
 
+* Do not store any content or make any modifications in /libs folder. Create overlays in /app folders to extend or overwrite default functionalities.  
+
+* When you create packages to move content, ensure package filter paths are correct and only required paths are mentioned. 
+
+* Do not store any content or make any modifications in /libs folder. Create overlays in /app folders to extend or overwrite default functionalities.  
+
+* Define correct dependencies for the packages to force a pre-determined installation order/sequence. 
+
+* Do not create any referenceable node in /libs or /apps.  
+
 ### Planning for authoring environment {#planning-for-authoring-environment}
 
 Once you have your AEM project set up, define strategy for authoring and customizing adaptive forms templates and components.
@@ -261,6 +271,7 @@ You often need to move your AEM projects from one environment to another. Some o
 * Deploy project-specific code packages and bundles manually and as a separate package or bundle on the new AEM server.
 * (*AEM Forms on JEE only*) Deploy LCAs and DSCs manually on Forms Workflow server.
 * Use [Export-Import](/help/forms/using/import-export-forms-templates.md) functionality to move assets to the new environment. You can also configure the replication agent and publish the assets.
+* When you upgrade, replace all the deprecated APIs and features with new APIs and features.  
 
 ### Configuring AEM {#configuring-aem}
 
