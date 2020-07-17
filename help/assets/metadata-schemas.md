@@ -43,12 +43,10 @@ To view a list of forms or templates, in [!DNL Experience Manager] interface nav
 | [!UICONTROL collection] | | Schema form for collections. |
 | [!UICONTROL contentfragment] | | [Schema form for content fragments](/help/sites-developing/customizing-content-fragments.md). |
 | [!UICONTROL forms] | | This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md). |
-
-<!-- | [!UICONTROL ugc_contentfragment] | | |  -->
+ | [!UICONTROL ugc_contentfragment] | | Schema form for user generated content pieces and assets integrated into Experience Manager from social media. |
 
 <!-- 
-TBD: Add dm_video child for the default form OOTB.
-video doesn't contain any sub types as listed above OOTB.
+TBD: video doesn't contain any sub types as listed above OOTB.
 application doesn't contain the sub type zip OOTB.
 -->
 
