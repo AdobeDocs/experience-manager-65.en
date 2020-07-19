@@ -36,16 +36,17 @@ To view a list of forms or templates, in [!DNL Experience Manager] interface nav
 |---|---|---|
 | [!UICONTROL default] | | The base metadata schema form for assets. |
 | | The following child forms inherit the properties of the [!UICONTROL default] form: | |
+| | [!UICONTROL dm_video] | Schema form for Dynamic Media videos. |
 | |[!UICONTROL image] | Schema form for images with the MIME type such as `image/jpeg` and `image/png`. <br> The [!UICONTROL image] form has the following child form templates: <ul><li> [!UICONTROL jpeg]: Schema form for assets with sub type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schema form for the assets with sub type TIFF.</li></ul> |
 | | [!UICONTROL application] | Schema form for assets with MIME type such as `application/pdf` and `application/zip`. <br>[!UICONTROL pdf]: Schema form for assets with sub type PDF. |
 | |[!UICONTROL video]| Schema form for video assets with MIME type such as `video/avi` and `video/mp4`. |
 | [!UICONTROL collection] | | Schema form for collections. |
 | [!UICONTROL contentfragment] | | [Schema form for content fragments](/help/sites-developing/customizing-content-fragments.md). |
 | [!UICONTROL forms] | | This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md). |
+ | [!UICONTROL ugc_contentfragment] | | Schema form for user generated content pieces and assets integrated into Experience Manager from social media. |
 
 <!-- 
-TBD: Add dm_video child for the default form OOTB.
-video doesn't contain any sub types as listed above OOTB.
+TBD: video doesn't contain any sub types as listed above OOTB.
 application doesn't contain the sub type zip OOTB.
 -->
 
