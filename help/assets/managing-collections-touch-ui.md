@@ -238,7 +238,7 @@ In the Assets user interface, you can search or filter assets based on certain r
 
 ![saved_searches_list](assets/saved_searches_list.png)
 
-Saved searches are created when you create a smart collection. Smart collections are automatically added to the **[!UICONTROL Saved Searches]** list. The Saved Searches query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`.
+Saved searches are created when you create a smart collection. Smart collections are automatically added to the **[!UICONTROL Saved Searches]** list. The [!UICONTROL Saved Searches] query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`. There are no limits to the searches that you can save and on the saved searches displayed in the list.
 
 >[!NOTE]
 >
@@ -256,7 +256,7 @@ To delete saved searches, follow these steps:
 
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
-   ![select_smart_collection-1](assets/select_smart_collection-1.png)
+   ![select_smart_collection](assets/select_smart_collection.png)
 
 1. In the dialog, click **[!UICONTROL Delete]** to delete the saved search.
 
