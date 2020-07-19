@@ -20,8 +20,8 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 
 Before you use or configure this capability, ensure the following:
 
-* The users are part of appropriate user groups on each deployment.
-* For Adobe Experience Manager deployment types, one of the supported criteria is met. [!DNL Experience Manager] 6.5 [!DNL Assets] works with [!DNL Experience Manager] as a Cloud Service. For more information, see [Connected Assets functionality in Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* The users are part of the appropriate user groups on each deployment.
+* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. [!DNL Experience Manager] 6.5 [!DNL Assets] works with [!DNL Experience Manager] as a Cloud Service. For more information, see [Connected Assets functionality in Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
   | |[!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] on AMS| [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise|
   |---|---|---|---|
@@ -34,7 +34,7 @@ Before you use or configure this capability, ensure the following:
 Authors search for images and the following types of documents in Content Finder and use the searched assets in Page Editor. Documents are added to the `Download` component and images to the `Image` component. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. The supported formats are:
 
 * **Image formats**: The formats that the [Image component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) supports. [!DNL Dynamic Media] images are not supported.
-* **Document formats**: See [the document formats supported by Connected Assets](assets-formats.md#supported-document-formats).
+* **Document formats**: See the [supported document formats](assets-formats.md#supported-document-formats).
 
 ### Users and groups involved {#users-and-groups-involved}
 
@@ -51,7 +51,7 @@ The various roles that are involved to configure and use the capability and thei
 
 ## Configure a connection between [!DNL Sites] and [!DNL Assets] deployments {#configure-a-connection-between-sites-and-assets-deployments}
 
-An [!DNL Experience Manager] administrator can create this integration. Once created, the permissions that are required to use it are established via user groups. The users groups are defined on the [!DNL Sites] deployment and on the DAM deployment.
+An [!DNL Experience Manager] administrator can create this integration. Once created, the permissions that are required to use it are established via user groups. The user groups are defined on the [!DNL Sites] deployment and on the DAM deployment.
 
 To configure Connected Assets and local [!DNL Sites] connectivity, follow these steps:
 
@@ -89,8 +89,8 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    | Before | After |
    |---|---|
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
-   | `/content/dam(/*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
-   | `/content/dam(/*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
+   | `/content/dam(/.*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/.*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
 
    >[!NOTE]
    >
@@ -175,11 +175,12 @@ The fetched assets can be used as any other local asset, except that the associa
 
 * Users can search for remote assets and drag those on local page when authoring. No other functionality is supported.
 * Fetch operation times out after 5 seconds. Authors can have issues fetching assets, say if there are network issues. Authors can reattempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
-* Simple edits that are non-destructive and the edit supported via the `Image` component can be done on fetched assets. Assets are read-only.
+* Simple edits that are non-destructive and the edit supported via the `Image` component, can be done on fetched assets. Assets are read-only.
+* The only method to re-fetch the asset is to drag it on a page. There is no API support or other methods to re-fetch an asset to update it.
 
 ## Troubleshoot issues {#troubleshoot}
 
 To troubleshoot for the common error scenario, follow these steps:
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
-* An asset fetched from the remote dam may not be published on a web page for one or more reasons. It doesn't exist on remote server, lack of appropriate permissions to fetch it, or network failure can be the reasons. Ensure that the asset is not removed from the remote DAM. Ensure that appropriate permissions are in place and prerequisites are met. Retry adding the asset to the page and republish. Check the [list of asynchronous jobs](/help/sites-administering/asynchronous-jobs.md) for errors in asset fetching.
+* An asset fetched from the remote dam may not be published on a web page for one or more reasons. It doesn't exist on remote server, lack of appropriate permissions to fetch it, or network failure can be the reasons. Ensure that the asset is not removed from the remote DAM. Ensure that appropriate permissions are in place and the prerequisites are met. Retry adding the asset to the page and republish. Check the [list of asynchronous jobs](/help/sites-administering/asynchronous-jobs.md) for errors in asset fetching.
