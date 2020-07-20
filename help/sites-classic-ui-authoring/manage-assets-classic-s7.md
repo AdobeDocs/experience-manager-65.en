@@ -285,7 +285,7 @@ To link a field to a client context value, click **Select** to open the client-c
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-The text reflects the name of the currently logged in user. You can reset the text back to the original value by clicking **Reset **next to the field.
+The text reflects the name of the currently logged in user. You can reset the text back to the original value by clicking **Reset** next to the field.
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -333,9 +333,9 @@ If you have multiple configurations, AEM by default displays the [default config
 >
 >* For video, the Scene7 content browser supports:
 >
->  * Adaptive Video Sets: container of all video renditions needed for seamless playback across multiple screens
->  * Single MP4 video
->  * Single F4V video
+>   * Adaptive Video Sets: container of all video renditions needed for seamless playback across multiple screens
+>   * Single MP4 video
+>   * Single F4V video
 
 ### Browsing Content {#browsing-content-in-the-classic-ui}
 
