@@ -42,9 +42,11 @@ To export a page:
 
 1. In your file system, unzip the file if necessary. Once expanded there will be a folder with the same name as the selected page. This folder contains:
 
-    * the sub-folder `content`, which is the root of a series of sub-folders that reflect the path to the page in the repository
-    * within this structure there is the html file for the selected page (`<page-name>.html`)
-    * other resources (`.js` files, `.css` files, images, etc.) are located according to the settings in the export template
+   * the sub-folder `content`, which is the root of a series of sub-folders that reflect the path to the page in the repository
+
+   * within this structure there is the html file for the selected page (`<page-name>.html`)
+
+   * other resources (`.js` files, `.css` files, images, etc.) are located according to the settings in the export template
 
 1. Open the page html file (`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`) in your browser to check the rendering.
 
@@ -56,31 +58,37 @@ When a page export is triggered, the export template is referenced and both the 
 
 AEM embeds a default template under `/etc/contentsync/templates/default`. 
 
-  * This template is the fallback template when no configuration template is found in the repository.
-  * The `default` template shows you how a page export can be configured, so can serve as a base for a new configuration template.
-  * To view the node structure of the template in your browser as JSON format, request the following URL:
+* This template is the fallback template when no configuration template is found in the repository.
+
+* The `default` template shows you how a page export can be configured, so can serve as a base for a new configuration template.
+
+* To view the node structure of the template in your browser as JSON format, request the following URL:
   `http://localhost:4502/etc/contentsync/templates/default.json`
 
 The easiest method to create a new page exporter template is to:
 
 * copy the `default` template, 
+
 * assign a new name, appropriate to your site, 
+
 * then make the required updates. 
   
 To create a completely new template:
 
 1. In **CRXDE Lite**, create a node below `/etc/contentsync/templates`:
 
-    * `Name`: a name appropriate to your site; for example, `<mysite>`. The name appears in the page properties dialog when choosing the page exporter template.
-    * `Type`: `nt:unstructured`
+   * `Name`: a name appropriate to your site; for example, `<mysite>`. The name appears in the page properties dialog when choosing the page exporter template.
 
-2. Below the template node, called here `mysite`, create a node structure using the configuration nodes described below.
+   * `Type`: `nt:unstructured`
+
+1. Below the template node, called here `mysite`, create a node structure using the configuration nodes described below.
 
 ## Activating a Page Exporter Template for your Pages {#activating-a-page-exporter-configuration-for-your-pages}
 
 Once your template has been configured you need to make it available:
 
 1. In CRXDE navigate to the required page.
+
 1. On the `jcr:content` node create the property:
    * `Name`: `cq:exportTemplate`
    * `Type`: `String`
@@ -131,9 +139,13 @@ The following nodes can be used to build an export configuration template:
   A generic node is used to copy resources like clientlibs .js or .css files to the zip file. It has the following characteristics:
 
   * Is optional.
+
   * Is located below `/etc/contentsync/templates/<sitename>`.
+
   * Does not have a specific name.
+
   * Its node type is `nt:unstructured`.
+
   * Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.
 
   For example the following configuration node copies the `mysite.clientlibs.js` files to the zip file:
