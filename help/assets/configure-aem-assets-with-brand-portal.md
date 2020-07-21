@@ -123,7 +123,7 @@ Public certificate allows you to authenticate your profile on Adobe Developer Co
 
 1. Log in to your AEM Assets author instance. The default URL is 
    `http:// localhost:4502/aem/start.html`
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. From the **Tools** ![Tools](assets/do-not-localize/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Adobe IMS Account Configuration UI](assets/ims-config1.png)
 
@@ -298,7 +298,7 @@ Perform the following steps to create Brand Portal cloud service:
 
 1. Log in to your AEM Assets author instance.
 
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. From the **Tools** ![Tools](assets/do-not-localize/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. In the Brand Portal Configurations page, click **[!UICONTROL Create]**.
 
@@ -318,7 +318,7 @@ Perform the following steps to validate the configuration:
 
 1. Log in to your AEM Assets cloud instance.
 
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**.
+1. From the **Tools** ![Tools](assets/do-not-localize/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**.
 
     ![](assets/test-integration1.png)
 
@@ -377,7 +377,7 @@ Ensure that no publishing job is running on your AEM Assets author instance befo
 
 1. Log in to your AEM Assets author instance.
 
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Deployment Replication]**.
+1. From the **Tools** ![Tools](assets/do-not-localize/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Deployment Replication]**.
 
 1. In the Replication page, click **[!UICONTROL Agents on author]**.
 

@@ -327,11 +327,7 @@ To preview an asset, follow these steps.
 
 1. In the preview mode, zoom options are available for [supported Image types](/help/assets/assets-formats.md#supported-raster-image-formats) (with interactive editing).
 
-   To zoom into an asset, click `+` (or click the magnifying glass on the asset). To zoom out, click `-`. When you zoom in, you can look closely at any area of the image by panning. The reset zoom arrow brings you back to the original view.
-
-   Click **[!UICONTROL Reset]** to reset the view to the original size.
-
-   ![Reset to bring user back to original view](assets/chlimage_1-11.png)
+   To zoom into an asset, click `+` (or click the magnifying glass on the asset). To zoom out, click `-`. When you zoom in, you can look closely at any area of the image by panning. The reset zoom arrow brings you back to the original view. To reset the view to the original size, click **[!UICONTROL Reset]** ![Reset view](assets/do-not-localize/revert.png).
 
 **Preview assets using keyboard keys only**
 
@@ -419,8 +415,7 @@ A few attributes that are unique to a particular copy of an asset are not carrie
 
 The other properties and metadata information is retained. A partial copy is not created when copying an asset.
 
-1. In [!DNL Assets] interface, select one or more assets and click **[!UICONTROL Copy]** from the toolbar. Alternatively, select the **[!UICONTROL Copy]** quick action from the asset card.
- ![Copy option in toolbar in Assets interface](assets/copy_icon.png)
+1. In [!DNL Assets] interface, select one or more assets and click **[!UICONTROL Copy]** from the toolbar. Alternatively, select the **[!UICONTROL Copy]** ![Copy option in toolbar in Assets interface](assets/do-not-localize/copy_icon.png) quick action from the asset card.
 
    >[!NOTE]
    >
@@ -432,10 +427,7 @@ The other properties and metadata information is retained. A partial copy is not
    >
    >If you copy an asset at the same location, [!DNL Experience Manager] automatically generates a variation of the name. For example, if you copy an asset titled `Square`, [!DNL Experience Manager] automatically generates the title for its copy as `Square1`.
 
-1. Click the **[!UICONTROL Paste]** asset option from the toolbar.
-
-   ![Paste option in Assets toolbar](assets/chlimage_1-14.png)
-   [!DNL Assets] are then copied to this location.
+1. Click the **[!UICONTROL Paste]** ![Paste option in Assets toolbar](assets/do-not-localize/paste.png) asset option from the toolbar. Assets are then copied to this location.
 
    >[!NOTE]
    >
@@ -446,7 +438,7 @@ The other properties and metadata information is retained. A partial copy is not
 1. Navigate to the location of the asset you want to move.
 
 1. Select the asset, and click **[!UICONTROL Move]** option from the toolbar.
-![Move option in Assets toolbar](assets/move_icon.png)
+![Move option in Assets toolbar](assets/do-not-localize/move.png)
 
 1. In the [!UICONTROL Move Assets] wizard, do one of the following:
 
@@ -676,9 +668,9 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
     * Click **[!UICONTROL Edit]** option that displays on an asset in the card view.
     * Click **[!UICONTROL Edit]** from the toolbar.
 
-   ![Edit option in toolbar](assets/edit_icon.png)
+   ![Edit option in toolbar](assets/do-not-localize/edit_icon.png)
 
-1. To crop the image, click **[!UICONTROL Crop]** ![Option to crop an image](assets/chlimage_1-22.png).
+1. To crop the image, click **[!UICONTROL Crop]** ![Option to crop an image](assets/do-not-localize/crop.png).
 
 1. Select the desired option from the list. The crop area appears on the image based on the option you choose. The **Free Hand** option lets you crop the image without any aspect ratio restrictions.
 
@@ -686,19 +678,19 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
 1. Select the area to be cropped, and resize or reposition it on the image.
 
-1. Use the **Undo** and **Redo** options to revert to the uncropped image or retain the cropped image, respectively.
+1. Use the **[!UICONTROL Undo]** and **[!UICONTROL Redo]** options to revert to the uncropped image or retain the cropped image, respectively.
 
    ![Undo and redo options](assets/chlimage_1-25.png)
 
-1. Click the appropriate **Rotate** option to rotate the image clockwise or anti-clockwise.
+1. Click the appropriate **[!UICONTROL Rotate]** option to rotate the image clockwise or anti-clockwise.
 
    ![Clockwise and anti-clockwise rotate options](assets/chlimage_1-26.png)
 
-1. Click the appropriate **Flip** option to flip the image horizontally or vertically.
+1. Click the appropriate **[!UICONTROL Flip]** option to flip the image horizontally or vertically.
 
    ![options to flip an image horizontally or vertically](assets/chlimage_1-27.png)
 
-1. Click **Finish** ![Finish option](assets/chlimage_1-24.png) to complete the image editing. Clicking **Finish** also starts the regeneration of renditions.
+1. To complete the image editing, click **[!UICONTROL Finish]** ![Finish option](assets/do-not-localize/check-ok-done-icon.png). Clicking **Finish** also starts the regeneration of renditions.
 
 >[!NOTE]
 >
@@ -825,7 +817,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
 1. Click **[!UICONTROL Print]** from the toolbar.
 
-   ![Print option in toolbar](assets/chlimage_1-40.png)
+   ![Print option in toolbar](assets/do-not-localize/print.png)
 
 1. From the Print dialog, choose the position you want the annotations/review status to be displayed on the PDF. For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. It is selected by default.
 

@@ -65,10 +65,7 @@ To apply a workflow to an asset, follow these steps:
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
-1. Click **[!UICONTROL Actions]** at the bottom.
-
-   ![chlimage_1-30](assets/chlimage_1-137.png)
-
+1. Click **[!UICONTROL Actions]** ![chevron up](assets/do-not-localize/chevron-up-icon.png) at the bottom.
 1. Click **[!UICONTROL Start Workflow]**. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-31](assets/chlimage_1-138.png)

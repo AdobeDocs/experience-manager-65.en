@@ -26,7 +26,7 @@ You can create a private folder in the Adobe Experience Manager Assets user inte
 
 1. To share the folder with other users and the assign privileges to them, select the folder, and click **[!UICONTROL Properties]** from the toolbar.
 
-   ![chlimage_1-414](assets/chlimage_1-414.png)
+   ![info option](assets/do-not-localize/info-circle-icon.png)
 
    >[!NOTE]
    >
