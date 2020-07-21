@@ -12,7 +12,7 @@ Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL 
 
 ## Prerequisites {#prerequisites}
 
-The integration requires an [enterprise Adobe Stock plan](https://stockenterprise.adobe.com/) and [!DNL Experience Manager] 6.5 or later. For [!DNL Experience Manager] 6.5 service pack details, see these [release notes](/help/release-notes/sp-release-notes.md).
+The integration requires an [enterprise Adobe Stock plan](https://stockenterprise.adobe.com/).
 
 ## Integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
