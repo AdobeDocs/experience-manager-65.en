@@ -75,19 +75,16 @@ The assets included in this package include:
 
 This section contains information on installing the demo package.
 
-### From package share {#from-package-share}
+### From Software Distribution {#from-software-distribution}
 
-1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/crx/packageshare/*
-
-   Or in AEM, click on Deployment and navigate to Package Share Icon.
-
-   ![Package share icon](assets/package_share_icon.jpg)
-
-1. Log in using your Adobe ID.
-1. Search and locate the **we-gov-forms.pkg.all-&lt;version&gt;** package.
-1. Select the “Download” option and accept the Terms and Conditions.
-1. Once downloaded, select the “Downloaded” option to locate the package in the Package Manager.
-1. Select the “Install” option to install the package.
+1. Open [Software Distribution](https://experience.adobe.com/downloads). You require an Adobe ID to log in to the Software Distribution.
+1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
+1. In the **[!UICONTROL Filters]** section:
+   1. Select **[!UICONTROL Forms]** from the **[!UICONTROL Solution]** drop-down list.
+   2. Select the version and type for the package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
+1. Tap the **we-gov-forms.pkg.all-&lt;version&gt;.zip** package name, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
+1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
+1. Select the package and click **[!UICONTROL Install]**.
 
    ![we gov forms package](assets/wegov_forms_package.jpg)
 
@@ -219,7 +216,7 @@ This section contains details and instructions on the Adobe Sign Cloud Configura
 
 ### Fill and sign multiple forms {#fill-sign-multiple-forms}
 
-This document explains the steps needed to setup the ability to fill and sign multiple forms. You can also try the [same capability here](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). This sample stores the necessary data needed for this sample in the AME repository. This is done to ensure frictionless experience to deploy demo assets on your local server. In real life we will store the same information in RDMS of your choice.
+This document explains the steps needed to setup the ability to fill and sign multiple forms. You can also try the [same capability here](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). This sample stores the necessary data needed for this sample in the AEM repository. This is done to ensure frictionless experience to deploy demo assets on your local server. In real life we will store the same information in RDMS of your choice.
 
 #### Prerequisites {#pre-requisites-fill-sign-multiple-forms}
 

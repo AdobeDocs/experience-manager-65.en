@@ -117,10 +117,7 @@ You can add assets to a collection that contains a list of referenced assets or 
 
 Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#saved-searches).
 
-1. In the Assets user interface, click the search option from the toolbar.
-
-   ![chlimage_1-9](assets/chlimage_1-110.png)
-
+1. In the Assets user interface, click the search option ![search option](assets/do-not-localize/search_icon.png) from the toolbar.
 1. With the cursor in the Omnisearch box, press the Return key.
 1. In the Experience Manager interface, open the Filters panel.
 1. From the **[!UICONTROL Saved Searches]** list, select the smart collection you want to modify. The Search panel displays the filters configured for the saved search.
@@ -238,7 +235,7 @@ In the Assets user interface, you can search or filter assets based on certain r
 
 ![saved_searches_list](assets/saved_searches_list.png)
 
-Saved searches are created when you create a smart collection. Smart collections are automatically added to the **[!UICONTROL Saved Searches]** list. The Saved Searches query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`.
+Saved searches are created when you create a smart collection. Smart collections are automatically added to the **[!UICONTROL Saved Searches]** list. The [!UICONTROL Saved Searches] query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`. There are no limits to the searches that you can save and on the saved searches displayed in the list.
 
 >[!NOTE]
 >
@@ -248,15 +245,12 @@ Editing saved searches is the same as editing smart collections. For details, se
 
 To delete saved searches, follow these steps:
 
-1. In the Assets user interface, click search ![chlimage_1-13](assets/chlimage_1-114.png).
-
-1. With the cursor in the Omnisearch field, press the Enter key.
-
+1. In the Assets user interface, click search ![search option](assets/do-not-localize/search_icon.png).
+1. With the cursor in the Omnisearch field, press the Return key.
 1. In the Experience Manager interface, open the Filters panel.
-
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
-   ![select_smart_collection-1](assets/select_smart_collection-1.png)
+   ![select_smart_collection](assets/select_smart_collection.png)
 
 1. In the dialog, click **[!UICONTROL Delete]** to delete the saved search.
 
@@ -265,7 +259,7 @@ To delete saved searches, follow these steps:
 You can run a workflow for the assets within a collection. If the collection contains nested collections, the workflow also runs on the assets within the nested collections. However, if the collection and the nested collection contain duplicate assets, the workflow only runs once for such assets.
 
 1. Open **[!UICONTROL Assets]** > **[!UICONTROL Collections]**. To execute a workflow on a specific collection, select it.
-1. Open **[!UICONTROL Timeline]** rail. Click ![chlimage_1-14](assets/chlimage_1-137.png) and click **[!UICONTROL Start Workflow]**.
+1. Open **[!UICONTROL Timeline]** rail. Click ![chevron up](assets/do-not-localize/chevron-up-icon.png) and click **[!UICONTROL Start Workflow]**.
 1. In the **[!UICONTROL Start Workflow]** section, select a workflow model from the list. For example, select the **[!UICONTROL DAM Update Asset]** model.
 1. Enter a title for the workflow and click **[!UICONTROL Start]**.
 1. In the dialog, click **[!UICONTROL Proceed]**. The workflow processes all the assets in the selected collection.

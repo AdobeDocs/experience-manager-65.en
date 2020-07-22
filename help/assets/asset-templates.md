@@ -156,9 +156,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. From the [!UICONTROL Template Merge] page, click **[!UICONTROL Merge]**.
-
-   ![chlimage_1-121](assets/chlimage_1-326.png)
+1. From the [!UICONTROL Template Merge] page, click **[!UICONTROL Merge]** ![add assets](assets/do-not-localize/assets_add_icon.png).
 
 1. Navigate to the location of the collateral you want to merge, click the thumbnails of the collateral you want to merge to select them.
 

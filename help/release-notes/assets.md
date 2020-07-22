@@ -27,7 +27,7 @@ Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Ex
 
 [!DNL Adobe Stock] service provides designers and businesses with access to millions of high-quality, curated, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets for all their creative projects.
 
-For more info, see [Use [!DNL Adobe Stock] assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
+For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
 ![Preview Adobe Stock image and license from within Experience Manager Assets](assets/stock_image_preview_license_options.png)
 

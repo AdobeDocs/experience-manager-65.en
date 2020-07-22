@@ -65,10 +65,7 @@ To apply a workflow to an asset, follow these steps:
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
-1. Click **[!UICONTROL Actions]** at the bottom.
-
-   ![chlimage_1-30](assets/chlimage_1-137.png)
-
+1. Click **[!UICONTROL Actions]** ![chevron up](assets/do-not-localize/chevron-up-icon.png) at the bottom.
 1. Click **[!UICONTROL Start Workflow]**. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-31](assets/chlimage_1-138.png)
@@ -96,6 +93,7 @@ For a workflow model, users can create a workflow launcher that executes it. A w
 ## Best practices and limitations {#best-practices-limitations-tips}
 
 * Consider your needs for all types of renditions when designing workflows. If you do not foresee the need of a rendition in the future, remove its creation step from the workflow. Renditions cannot be deleted in bulk afterwards. Undesired renditions may take up a lot of storage space after prolonged use of [!DNL Experience Manager]. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can either customize [!DNL Experience Manager] to delete specific renditions or delete the assets and upload those again.
+* By default, [!UICONTROL DAM Update Asset] workflow includes some steps to create thumbnails and web renditions. If any default renditions are removed from the workflow, the user interface of [!DNL Assets] does not render properly.
 
 >[!MORELIKETHIS]
 >

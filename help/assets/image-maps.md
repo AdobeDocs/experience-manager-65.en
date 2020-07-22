@@ -19,12 +19,9 @@ Image Maps let you add one or more hyperlinked areas that function like other hy
    * In the **[!UICONTROL Card]** or **[!UICONTROL List]** view, select the asset and click **[!UICONTROL Edit]** on the toolbar.
    * Click **[!UICONTROL Edit]** from the asset page.
 
-       ![chlimage_1-420](assets/chlimage_1-420.png)
+       ![edit option](assets/do-not-localize/edit_icon.png)
 
-1. To insert an image map, click **[!UICONTROL Launch Map]** from the toolbar.
-
-   ![chlimage_1-421](assets/chlimage_1-421.png)
-
+1. To insert an image map, click **[!UICONTROL Launch Map]** ![image map](assets/do-not-localize/image-map-icon.png) from the toolbar.
 1. Select the shape of the image map. The hot-spot of the selected shape is placed on the image.
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
@@ -33,13 +30,9 @@ Image Maps let you add one or more hyperlinked areas that function like other hy
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. Click **[!UICONTROL Confirm]** and then click **[!UICONTROL Finish]** from the toolbar to save the changes.
+1. Click **[!UICONTROL Confirm]** and then click **[!UICONTROL Finish]** ![select check done](assets/do-not-localize/check-ok-done-icon.png) from the toolbar to save the changes.
 
-   ![chlimage_1-424](assets/chlimage_1-424.png)
-
-   To delete the image map, click the hot-spot and click **[!UICONTROL Delete]**.
-
-   ![chlimage_1-425](assets/chlimage_1-425.png)
+   To delete the image map, click the hot-spot and click **[!UICONTROL Delete]** ![delete](assets/do-not-localize/delete-solid-line.png).
 
 1. To view the image map, navigate to the asset details page, and hover the cursor over the image.
 
