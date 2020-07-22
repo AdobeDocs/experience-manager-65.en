@@ -583,6 +583,8 @@ user-guide-title: AEM 6.5 Forms User Guide
       + [Invoking AEM Forms using APIs](developing/invoking-aem-forms-using-apis.md)
       + [Understanding AEM Forms Processes](developing/aem-forms-processes.md)
       + [Service container](developing/service-container.md)
+    + Developing SPIs for AEM Forms {#developing-spis-aem-forms}
+      + [Creating an Invite External Users Handler](developing/creating-invite-external-users-handler.md)
     + Java API Quick Start - Code Examples {#java-api-quick-start-code-examples}
       + [Application Manager Client JavaAPI Quick Start(SOAP)](developing/application-manager-client-java-api.md)
       + [Application Manager Service JavaAPI Quick Start(SOAP)](developing/application-manager-service-java-api.md)
