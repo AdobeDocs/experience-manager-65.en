@@ -216,7 +216,7 @@ This section contains details and instructions on the Adobe Sign Cloud Configura
 
 ### Fill and sign multiple forms {#fill-sign-multiple-forms}
 
-This document explains the steps needed to setup the ability to fill and sign multiple forms. You can also try the [same capability here](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). This sample stores the necessary data needed for this sample in the AME repository. This is done to ensure frictionless experience to deploy demo assets on your local server. In real life we will store the same information in RDMS of your choice.
+This document explains the steps needed to setup the ability to fill and sign multiple forms. You can also try the [same capability here](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). This sample stores the necessary data needed for this sample in the AEM repository. This is done to ensure frictionless experience to deploy demo assets on your local server. In real life we will store the same information in RDMS of your choice.
 
 #### Prerequisites {#pre-requisites-fill-sign-multiple-forms}
 
