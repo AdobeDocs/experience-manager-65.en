@@ -283,7 +283,7 @@ See [Customizing and Extending Assets](/help/assets/extending-assets.md) for inf
 
 The following is an example of a Metadata form with various fields:
 
-![chlimage_1-162](assets/chlimage_1-390.png)
+![metadata](assets/chlimage_1-390.png)
 
 On the Asset Editor page, users can then enter values into the metadata fields (if they are editable) and perform the end action (for example, submitting the changes).
 

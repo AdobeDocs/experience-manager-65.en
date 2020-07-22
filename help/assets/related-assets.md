@@ -30,10 +30,7 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. To relate another asset with the asset you selected, click **[!UICONTROL Relate]** from the toolbar.
-
-   ![chlimage_1-275](assets/chlimage_1-275.png)
-
+1. To relate another asset with the asset you selected, click **[!UICONTROL Relate]** ![relate assets](assets/do-not-localize/link-relate.png) from the toolbar.
 1. Do one of the following:
 
     * To relate the source file for the asset, select **[!UICONTROL Source]** from the list.
@@ -53,7 +50,7 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
 1. To un-relate an asset, click **[!UICONTROL Unrelate]** from the toolbar.
 
-   ![chlimage_1-279](assets/chlimage_1-279.png)
+   ![unrelate assets](assets/do-not-localize/link-unrelate-icon.png)
 
 1. Select the asset(s) you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click **[!UICONTROL Unrelate]**.
 

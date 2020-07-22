@@ -101,10 +101,7 @@ The [!DNL Assets] console can display various states for assets. Depending on th
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. Click **[!UICONTROL Publish]** from the toolbar. If you don't see **Publish** on the toolbar, click **[!UICONTROL More]** on the toolbar and locate **[!UICONTROL Publish]** option.
-
-   ![chlimage_1-156](assets/chlimage_1-156.png)
-
+1. Click **[!UICONTROL Publish]** from the toolbar. If you don't see **Publish** on the toolbar, click **[!UICONTROL More]** on the toolbar and locate **[!UICONTROL Publish]** ![publish option](assets/do-not-localize/publish-globe.png) option.
 1. Choose **[!UICONTROL Publish]** from the menu, and then close the confirmation dialog.
 1. Exit the selection mode. The publication status for the asset appears at the bottom of the asset thumbnail in the card view. In the list view, the Published column displays the time when the asset was published.
 
@@ -131,10 +128,7 @@ The [!DNL Assets] console can display various states for assets. Depending on th
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. To search for assets based on their status, click **[!UICONTROL Search]** to display the Omnisearch bar.
-
-   ![chlimage_1-162](assets/chlimage_1-162.png)
-
+1. To search for assets based on their status, click **[!UICONTROL Search]** ![search option](assets/do-not-localize/search_icon.png) to display the Omnisearch bar.
 1. Press return and click [!DNL Experience Manager] to display the search panel.
 1. In the search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in [!DNL Assets].
 
