@@ -330,7 +330,6 @@ If you have multiple configurations, AEM by default displays the [default config
 >* Assets located in the ad-hoc folder will not appear in the Scene7 content browser.
 >* When [Secure Preview is enabled](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), both published and unpublished assets on Scene7 do appear in the Scene7 content browser.
 >* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
->
 >* For video, the Scene7 content browser supports:
 >   * Adaptive Video Sets: container of all video renditions needed for seamless playback across multiple screens
 >   * Single MP4 video
