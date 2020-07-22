@@ -9,7 +9,7 @@ AEM allows you to export a page as a complete web page including images, `.js` a
 
 Once configured, you request a page export from your browser by replacing `html` with `export.zip` in the URL. This generates an archive (zip) file, containing the rendered page in html format, together with the referenced assets. All the paths in the page (for example, paths to images) are rewritten to point to either the files included in the archive, or to the resources on the server. The archive (zip) file can then be downloaded from your browser.
 
->![NOTE]
+>[!NOTE]
 >
 >Depending on your browser, and the settings, the download will be either:
 >* an archive file (`<page-name>.export.zip`) 
