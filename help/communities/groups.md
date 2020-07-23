@@ -253,7 +253,7 @@ The STRUCTURE panel allows the modification of the structure initially created f
 
 >[!CAUTION]
  >
- >The groups function must *not *be the *first nor the only* function in the site structure.
+ >The groups function must *not* be the *first nor the only* function in the site structure.
  >
  >Any other function, such as the [page function](/help/communities/functions.md#page-function), must be included and listed first.
  >
