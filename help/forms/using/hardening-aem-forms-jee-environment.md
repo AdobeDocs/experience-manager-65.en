@@ -949,6 +949,8 @@ Referring to the physical architecture that is described in the section [AEM For
 
 For instructions on how to configure SSL on JBoss, WebLogic, and WebSphere, see “Configuring SSL” in the [administration help](https://www.adobe.com/go/learn_aemforms_admin_64).
 
+For instructions on how to import certificates to JVM (Java Virtual Machine) configured for an AEM Forms server, see Mutual Authentication section in [AEM Forms Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_65).
+
 ### Configuring SSL redirect {#configuring-ssl-redirect}
 
 After you configure your application server to support SSL, you must ensure that all HTTP traffic to applications and services are enforced to use the SSL port.
