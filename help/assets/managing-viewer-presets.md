@@ -417,7 +417,7 @@ See [Special considerations for creating a Carousel Banner Viewer preset](#speci
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
 1. On the Viewer Presets page, on the toolbar, tap **[!UICONTROL Create.]**
-1. In the **[!UICONTROL New Viewer Preset** dialog box, in the **[!UICONTROL Preset Name]** field, enter the name of the new preset. Choose a name carefully&mdash;they are not editable after you tap **[!UICONTROL Create.]**
+1. In the **[!UICONTROL New Viewer Preset]** dialog box, in the **[!UICONTROL Preset Name]** field, enter the name of the new preset. Choose a name carefully&mdash;they are not editable after you tap **[!UICONTROL Create.]**
 
    When you save the preset later in these steps, the name appears on the Viewer Presets page under the Preset Title column header.
 
