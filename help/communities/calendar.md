@@ -43,6 +43,7 @@ When the [required client-side libraries](/help/communities/calendar-basics-for-
 Select the placed `Calendar` component to access and select the `Configure` icon which opens the edit dialog.
 
 ![chlimage_1-113](assets/chlimage_1-113.png) 
+
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
 #### Settings tab {#settings-tab}
