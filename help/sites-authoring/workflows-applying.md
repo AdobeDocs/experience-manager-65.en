@@ -26,8 +26,8 @@ When you apply the workflow, you specify the following information:
 
 Workflows can be started from:
 
-* [the **Sites** console](#starting-a-workflow-from-the-sites-console).
-* [when editing a page, from **Page Information**](#starting-a-workflow-from-the-page-editor).
+* [the Sites console](#starting-a-workflow-from-the-sites-console).
+* [when editing a page, from Page Information](#starting-a-workflow-from-the-page-editor).
 
 >[!NOTE]
 >
@@ -45,8 +45,8 @@ Workflows can be started from:
 
 You can start a workflow from either:
 
-* [the **Create** option of the Sites toolbar](#starting-a-workflow-from-the-sites-toolbar).
-* [the **Timeline** rail of the Sites console](#starting-a-workflow-from-the-timeline).
+* [the Create option of the Sites toolbar](#starting-a-workflow-from-the-sites-toolbar).
+* [the Timeline rail of the Sites console](#starting-a-workflow-from-the-timeline).
 
 In both cases you will need to:
 
@@ -81,8 +81,8 @@ The **Create Workflow** wizard will help you select the workflow and specify the
 
 After opening the **Create Workflow** wizard from either:
 
-* [the **Create** option of the Sites toolbar](#starting-a-workflow-from-the-sites-toolbar).
-* [the **Timeline** rail of the Sites console](#starting-a-workflow-from-the-timeline).
+* [the Create option of the Sites toolbar](#starting-a-workflow-from-the-sites-toolbar).
+* [the Timeline rail of the Sites console](#starting-a-workflow-from-the-timeline).
 
 You can specify details:
 
