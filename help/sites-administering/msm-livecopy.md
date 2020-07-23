@@ -79,7 +79,7 @@ You can create a live copy of any page or branch. When you create the live copy,
 
 You can create a live copy of any page:
 
-* Pages are that are referenced by a [blueprint configuration](#creating-a-blueprint-configuration),
+* Pages that are referenced by a [blueprint configuration](#creating-a-blueprint-configuration).
 * And pages that have no connection to a configuration.
 * AEM also supports creating a live copy within the pages of another live copy.
 
