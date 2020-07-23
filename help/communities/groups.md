@@ -51,8 +51,10 @@ To access the Groups console:
 * Select an existing community site folder to open it.
 * Select an instance of a community site within the folder.
 
-    * The structure of the community site must include a groups function.
-    * These screen shots are from the Getting Started tutorial after [creating groups on publish](/help/communities/published-site.md).
+  * The structure of the community site must include a groups function.
+  * These screen shots are from the Getting Started tutorial after [creating groups on publish](/help/communities/published-site.md).
+
+  ![create-group](assets/create-group.png)
 
 * Select the **Groups folder** to open it.
 
@@ -60,7 +62,7 @@ To access the Groups console:
 
   From this Groups console, it is possible to author new groups.
 
-  ![chlimage_1-200](assets/chlimage_1-200.png)
+  ![create-new-group](assets/create-new-group.png)
 
 * Select the **Create Group** button.
 
@@ -103,6 +105,8 @@ To access the Groups console:
 
 ### COMMUNITY GROUP THEME {#community-group-theme}
 
+![communitygrouptheme](assets/communitygrouptheme.png)
+
 The framework uses [Twitter Bootstrap](https://twitterbootstrap.org/) to bring a responsive, flexible design to the site. One of the many preloaded Bootstrap themes can be selected to style the selected community group template, or a Bootstrap theme can be uploaded.
 
 When selected, the theme will be overlayed with an opaque blue check mark.
@@ -113,7 +117,7 @@ After the community site is published, it is possible to [edit the properties](#
 
 ### COMMUNITY GROUP BRANDING {#community-group-branding}
 
-![chlimage_1-201](assets/chlimage_1-201.png)
+![community-group-branding](assets/community-group-branding.png)
 
 Community site branding is an image displayed as a header across the top of each page. It is possible to display a banner for the group which differs from other site pages.
 
@@ -125,8 +129,8 @@ When creating or selecting an image, keep in mind:
 * The image is pinned to the left edge of the browser window
 * There is no resizing of the image, such that when the image width is:
 
-    * Less than the browser's width, the image will repeat horizontally.
-    * Greater than the browser's width, the image will appear to be cropped.
+  * Less than the browser's width, the image will repeat horizontally.
+  * Greater than the browser's width, the image will appear to be cropped.
 
 ### Step 3: Settings {#step-settings}
 
@@ -152,7 +156,7 @@ A user U1, therefore, can be an administrator in a group G1 and a regular user i
 
 The membership setting allows for selection of one of the three ways to secure a community group.
 
-![chlimage_1-202](assets/chlimage_1-202.png)
+![community-group-membership](assets/community-group-membership.png)
 
 * **Optional Membership**
   
@@ -168,7 +172,7 @@ The membership setting allows for selection of one of the three ways to secure a
 
 **THUMBNAIL**
 
-![chlimage_1-203](assets/chlimage_1-203.png)
+![community-group-thumbnail](assets/community-group-thumbnail.png)
 
 The thumbnail is an image to display for the group on author and publish.
 
@@ -176,13 +180,13 @@ The optimal size for a group image is 170 x 90 pixels in a supported image forma
 
 If no image is added, a default image is displayed.
 
-![chlimage_1-204](assets/chlimage_1-204.png)
+![thumbnail-image](assets/thumbnail-image.png)
 
 ### Step 4: Create Group {#step-create-group}
 
-![chlimage_1-205](assets/chlimage_1-205.png)
+![community-create-group](assets/community-create-group.png)
 
-If any adjustments are needed, use the **Back **button to make them.
+If any adjustments are needed, use the **Back** button to make them.
 
 Once **Create** is selected and started, the process of creating the group cannot be interrupted.
 
@@ -197,7 +201,7 @@ When the process completes, the card for the new sub-community site (group) is d
 
 ## Author Group Content {#author-group-content}
 
-![chlimage_1-206](assets/chlimage_1-206.png)
+![open-site](assets/open-site.png)
 
 The page content of a group can be authored with the same tools as any other AEM page. To open the group for authoring, select the Open Site icon which appears when hovering over the group card.
 
@@ -205,11 +209,11 @@ The page content of a group can be authored with the same tools as any other AEM
 
 The properties of an existing sub-community site, specified during the community group creation process, can be modified by selecting the Edit Site icon which appears when hovering over the group card:
 
-![chlimage_1-207](assets/chlimage_1-207.png)
+![edit-site](assets/edit-site.png)
 
 Details of the following properties match the descriptions provided in the [Group Creation](#group-creation) section. Any nested group can be modified, whether created in the publish environment or author environment.
 
-![chlimage_1-208](assets/chlimage_1-208.png)
+![community-group-basic](assets/community-group-basic.png)
 
 ### Modify Basic {#modify-basic}
 
@@ -231,15 +235,14 @@ The STRUCTURE panel allows the modification of the structure initially created f
 * Drag-and-drop additional [community functions](/help/communities/functions.md) into the site structure.
 * On an instance of a community function in the site structure:
 
-    * **`Gear icon`**
-      Edit settings, including the display title and URL name&#42;
-      and [privileged members groups](/help/communities/users.md#privilegedmembersgroups).
+  * **`Gear icon`**
+    Edit settings, including the display title, URL, and [privileged members groups](/help/communities/users.md#privilegedmembersgroups).
 
-    * **`Trashcan icon`**
-      Remove (delete) functions from the site structure.
+  * **`Trashcan icon`**
+    Remove (delete) functions from the site structure.
 
-    * **`Grid icon`**
-      Modify the order of functions as displayed in the site's top level navigation bar.
+  * **`Grid icon`**
+    Modify the order of functions as displayed in the site's top level navigation bar.
 
 >[!CAUTION]
  >
@@ -257,7 +260,7 @@ The STRUCTURE panel allows the modification of the structure initially created f
 
 **Example: Adding a Calendar Function to a Sub-Community (Group) Structure**
 
-![chlimage_1-209](assets/chlimage_1-209.png)
+![community-group-add-calendar](assets/community-group-add-calendar.png)
 
 ### Modify Design {#modify-design}
 
@@ -266,7 +269,7 @@ The DESIGN panel allows the modification of the theme:
 * [Community Group Theme](#community-group-theme)
 * [Community Group Branding](#community-group-branding)
 
-    * Scroll to the bottom of the panel to change the brand image.
+  * Scroll to the bottom of the panel to change the brand image.
 
 ### Modify Settings {#modify-settings}
 
@@ -282,13 +285,13 @@ The [THUMBNAIL](#thumbnail) panel allows for an image to be uploaded to represen
 
 ## Publish the Group {#publish-the-group}
 
-![chlimage_1-210](assets/chlimage_1-210.png)
+![publish-site](assets/publish-site.png)
 
 After a community group has been newly created or modified, it is possible to publish (activate) the group by selecting the `Publish Site` icon.
 
 Once the group is successfully published, a message will appear:
 
-![chlimage_1-211](assets/chlimage_1-211.png)
+![group-published](assets/group-published.png)
 
 >[!CAUTION]
  >
@@ -299,7 +302,7 @@ Once the group is successfully published, a message will appear:
 
 ## Delete the Group {#delete-the-group}
 
-![delete icon]()
+![delete icon](assets/deleteicon.png)
 
 Delete a group from within the community Groups console by selecting the Delete Group icon, which appears on hovering mouse over the group.
 

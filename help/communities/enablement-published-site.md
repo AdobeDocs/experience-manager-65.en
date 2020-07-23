@@ -32,7 +32,7 @@ When first arriving at the published site, the site visitor would typically not 
 
 **http://localhost:4503/content/sites/enable/en.html**
 
-![chlimage_1-433](assets/chlimage_1-433.png)
+![enablement-login](assets/enablement-login.png)
 
 ## Anonymous Site Visitor {#anonymous-site-visitor}
 
@@ -66,7 +66,7 @@ To protect your community site's content from access by anonymous users through 
 1. Go to **[!UICONTROL Advanced]** tab.
 1. Enable **[!UICONTROL Authentication Requirement]**.
 
-   ![site-authentication-1](assets/site-authentication-1.png)
+   ![site-authentication](assets/site-authentication.png)
 
 1. Add the path of the login page. For example, `/content/......./GetStarted`.
 1. Publish the page.

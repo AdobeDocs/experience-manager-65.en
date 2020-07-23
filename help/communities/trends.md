@@ -43,7 +43,7 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When first placed on a page of a community site, this is how the component appears:
 
-![chlimage_1-54](assets/chlimage_1-54.png)
+![community-activity](assets/community-activity.png)
 
 ### Configuring Community Activity List  {#configuring-community-activity-list}
 
