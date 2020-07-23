@@ -277,7 +277,7 @@ When you run a translation workflow to update a language copy with edited versio
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
 1. Select the checkbox next to **[!UICONTROL Title]**.
-1. From the toolbar, click **[!UICONTROL Accept Translation]** ![accept translation](assets/do-not-localize/thumbs-up.png) and then click **[!UICONTROL Accept]** in the dialog to overwrite the translated asset in the target folder with the translated version of the edited asset.
+1. From the toolbar, click **[!UICONTROL Accept Translation]** ![accept translation](assets/do-not-localize/thumb-up.png) and then click **[!UICONTROL Accept]** in the dialog to overwrite the translated asset in the target folder with the translated version of the edited asset.
 
    >[!NOTE]
    >
