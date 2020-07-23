@@ -56,7 +56,7 @@ Role-based badges are assigned by an administrator to community members based on
 
 Assigned (and awared) badges are stored in the selected [SRP](/help/communities/srp.md) and are not directly accessible. Until a GUI is available, the only means for assigning role-based badges is to do so with code or cURL. For cURL instructions, see the section titled [Assign and Revoke Badges](#assign-and-revoke-badges).
 
-Included in the release are three role-based badges :
+Included in the release are three role-based badges:
 
 * **moderator**
   `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
@@ -163,8 +163,8 @@ Scoring rules are inherited but not additive. For example:
 * An action on a page2 component will invoke both rule1 and rule2.
 * If both rules contain applicable sub-rules for the same `topic/verb`:
 
-    * Only the sub-rule from rule2 will affect the score.
-    * The scores from both sub-rules are not added together.
+  * Only the sub-rule from rule2 will affect the score.
+  * The scores from both sub-rules are not added together.
 
 When there is more than one scoring rule, the scores are maintained separately for each rule.
 
@@ -273,7 +273,7 @@ Included in the release are two scoring rules for the [Forum Function](/help/com
 
 1. /libs/settings/community/scoring/rules/comments-scoring
 
-    * subRules[] =
+   * subRules[] =
       /libs/settings/community/scoring/rules/sub-rules/member-comment-create
       /libs/settings/community/scoring/rules/sub-rules/member-receive-vote
       /libs/settings/community/scoring/rules/sub-rules/member-give-vote
@@ -281,7 +281,7 @@ Included in the release are two scoring rules for the [Forum Function](/help/com
 
 1. /libs/settings/community/scoring/rules/forums-scoring
 
-    * subRules[] =
+   * subRules[] =
       /libs/settings/community/scoring/rules/sub-rules/member-forum-create
       /libs/settings/community/scoring/rules/sub-rules/member-receive-vote
       /libs/settings/community/scoring/rules/sub-rules/member-give-vote
@@ -296,7 +296,7 @@ Included in the release are two scoring rules for the [Forum Function](/help/com
 * `sub-rules` may be shared among various scoring rules.
 * `rules` should be located in a repository location with read permission for everyone.
 
-    * Rule names must be unique regardless of the location.
+   * Rule names must be unique regardless of the location.
 
 ### Activating Custom Scoring Rules {#activating-custom-scoring-rules}
 
@@ -304,7 +304,7 @@ Any changes or additions made to scoring rules or sub-rules made in the author e
 
 ## Badging Rules {#badging-rules}
 
-Badging rules link scoring rules to badges by specifying :
+Badging rules link scoring rules to badges by specifying:
 
 * Scoring rule.
 * The score necessary to be awared a specific badge.
@@ -379,7 +379,7 @@ Included in the release are two Badging Rules that correspond to the [Forums and
 * `rules` nodes are of type cq:Page.
 * `rules` should be located in a repository location with read permission for everyone.
 
-    * Rule names must be unique regardless of location.
+   * Rule names must be unique regardless of location.
 
 ### Activating Custom Badging Rules {#activating-custom-badging-rules}
 
@@ -584,29 +584,29 @@ It is possible to quickly try scoring and badging using the [Getting Started Tut
 * Access CRXDE Lite on author.
 * Browse to the base page:
 
-    * /content/sites/engage/en/jcr:content
+  * /content/sites/engage/en/jcr:content
 
 * Add the badgingRules property:
 
-    * **Name**: `badgingRules`
-    * **Type**: `String`
-    * Select **Multi**
-    * Select **Add**
-    * Enter `/libs/settings/community/badging/rules/forums-badging`
-    * Select **+**
-    * Enter `/libs/settings/community/badging/rules/comments-badging`
-    * Select **OK**
+  * **Name**: `badgingRules`
+  * **Type**: `String`
+  * Select **Multi**
+  * Select **Add**
+  * Enter `/libs/settings/community/badging/rules/forums-badging`
+  * Select **+**
+  * Enter `/libs/settings/community/badging/rules/comments-badging`
+  * Select **OK**
 
 * Add the scoringRules property:
 
-    * **Name**: `scoringRules`
-    * **Type**: `String`
-    * Select **Multi**
-    * Select **Add**
-    * Enter `/libs/settings/community/scoring/rules/forums-scoring`
-    * Select **+**
-    * Enter `/libs/settings/community/scoring/rules/comments-scoring`
-    * Select **OK**
+  * **Name**: `scoringRules`
+  * **Type**: `String`
+  * Select **Multi**
+  * Select **Add**
+  * Enter `/libs/settings/community/scoring/rules/forums-scoring`
+  * Select **+**
+  * Enter `/libs/settings/community/scoring/rules/comments-scoring`
+  * Select **OK**
 
 * Select **Save All**.
 
