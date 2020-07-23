@@ -99,7 +99,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
 1. Click **[!UICONTROL Preview]** to preview the text changes.
 
-   ![chlimage_1-112](assets/chlimage_1-317.png)
+   ![view changes](assets/view-changes.png)
 
 1. To swap an image, click the **[!UICONTROL Asset Finder]**.
 
@@ -115,11 +115,11 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
 1. Click **[!UICONTROL Preview]** to preview the image.
 
-   ![chlimage_1-116](assets/chlimage_1-321.png)
+   ![view changes](assets/view-changes.png)
 
 1. To edit a specific page in a multi-page collateral, use the page navigator at the bottom.
 
-   ![chlimage_1-117](assets/chlimage_1-322.png)
+   ![page navigator](assets/page-navigator.png)
 
 1. Click **[!UICONTROL Preview]** on the toolbar to preview all the changes. Click **[!UICONTROL Done]** to save the editing changes to the collateral.
 
@@ -163,8 +163,6 @@ You can edit a collateral immediately after you create it. Alternatively, you op
    ![chlimage_1-122](assets/chlimage_1-327.png)
 
    You can also search for templates from the Omnisearch box.
-
-   ![chlimage_1-123](assets/chlimage_1-328.png)
 
    You can browse through the [!DNL Experience Manager Assets] repository or collections, and navigate to the location of the desired templates and then select them to merge.
 

@@ -95,18 +95,13 @@ To create a smart collection, follow the steps:
 
    ![collection_listing](assets/collection_listing.png)
 
-   The label of the **[!UICONTROL Create Smart Selection]** button changes to **[!UICONTROL Edit Smart Selection]**. To edit the settings of the smart collection, select **[!UICONTROL Files]** from the **[!UICONTROL Files & Folders]** list. Then, Click the **[!UICONTROL Edit Smart Selection]** button.
-
-   ![chlimage_1-7](assets/chlimage_1-112.png)
+   The label of the **[!UICONTROL Create Smart Selection]** option changes to **[!UICONTROL Edit Smart Selection]**. To edit the settings of the smart collection, select **[!UICONTROL Files]** from the **[!UICONTROL Files & Folders]** list. Click the **[!UICONTROL Edit Smart Selection]** ![edit smart collection](assets/do-not-localize/edit-smart-collection.png) option.
 
 ## Add assets to a collection {#adding-assets-to-a-collection}
 
 You can add assets to a collection that contains a list of referenced assets or folders. Smart collections use a search query to populate assets. Therefore, static references to assets and folders are not applicable to them.
 
-1. In the Assets user interface, select the asset and click **[!UICONTROL To Collection]** from the toolbar.
-
-   ![chlimage_1-8](assets/chlimage_1-113.png)
-
+1. In the Assets user interface, select the asset and click **[!UICONTROL To Collection]** ![add to collection](assets/do-not-localize/add-to-collection.png) from the toolbar.
    Alternatively, you can drag the asset to the **[!UICONTROL Drop in Collection]** area on the interface. Add the assets when the label of the region changes to **[!UICONTROL Drop to Add]**.
 
 1. In the **[!UICONTROL Add To Collection]** page, select the collection to which you want to add the asset.

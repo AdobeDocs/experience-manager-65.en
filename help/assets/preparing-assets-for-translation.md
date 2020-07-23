@@ -60,4 +60,4 @@ Experience Manager interface provides a **[!UICONTROL References]** panel that d
 
 1. In the References pane, click **[!UICONTROL Language Copies]**. The [!UICONTROL Language Copies] panel shows the language copies of the assets.
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+   ![language copies](assets/lang-copy2.png)
