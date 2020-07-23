@@ -89,7 +89,7 @@ To create a completely new template:
 
 Once your template has been configured you need to make it available:
 
-1. In CRXDE navigate to the required page in the `/content` branch.
+1. In CRXDE navigate to the required page in the `/content` branch. This can be an individual page, or the root page of a sub-tree.
 
 1. On the `jcr:content` node of the page create the property:
    * `Name`: `cq:exportTemplate`
