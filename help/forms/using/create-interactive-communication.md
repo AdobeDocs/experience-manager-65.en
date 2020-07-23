@@ -62,7 +62,7 @@ The following are the prerequisites for creating an Interactive Communication:
       If you select the **[!UICONTROL Use Print As Master for Web Channel]** option, you can select any of the following modes to generate Web channel:
 
         * **[!UICONTROL Auto layout]**: Select this mode to automatically generate placeholders, content, and data binding for Web channel from Print channel.
-        * **[!UICONTROL Manually organize**: Select this mode to manually select and add Print channel elements to the Web channel using the master content available in the **[!UICONTROL Data Sources]** tab. For more information, see [Select Print channel elements to create Web channel content](#selectprintchannelelements).
+        * **[!UICONTROL Manually organize]**: Select this mode to manually select and add Print channel elements to the Web channel using the master content available in the **[!UICONTROL Data Sources]** tab. For more information, see [Select Print channel elements to create Web channel content](#selectprintchannelelements).
 
    For more information on print channel and web channel, see [Print channel and web channel](/help/forms/using/web-channel-print-channel.md).
 
