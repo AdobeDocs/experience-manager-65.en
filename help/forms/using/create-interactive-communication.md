@@ -181,7 +181,7 @@ For more information on the Interactive Communication authoring interface, see [
 
    ![webchannelassets](assets/webchannelassets.png)
 
-   Tap the document fragment, tap ![configure_icon](assets/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](assets/edit.svg) (Edit) icon next to each data model object or variable to edit the properties. In addition, for document fragments that have been [auto-generated](#synchronize) in Web channel using Print channel, use the ![](assets/cancelinheritance.png) (Cancel Inheritance) icon next to each data model object and variable to [cancel inheritance](#cancelinheritance) and to be able to edit them.
+   Tap the document fragment, tap ![configure_icon](assets/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](assets/edit.svg) (Edit) icon next to each data model object or variable to edit the properties. In addition, for document fragments that have been [auto-generated](#synchronize) in Web channel using Print channel, use the ![cancelinheritance](assets/cancelinheritance.png) (Cancel Inheritance) icon next to each data model object and variable to [cancel inheritance](#cancelinheritance) and to be able to edit them.
 
 1. To add additional components in the Web channel, with the Web channel selected, tap **[!UICONTROL Components]**. Drag-and-drop components in the web channel of your Interactive Communication as required and proceed to configure them.
 
@@ -380,12 +380,12 @@ Tap the root panel in the Web template and tap **+** to add a **Table** componen
 
 #### Add or edit text in table cells {#addedittexttable}
 
-1. Select the default text box in the table cell and tap ![](assets/edit.png) (Edit).
-1. Type the text in the table cell and tap ![](assets/done_icon.png) to save it.
+1. Select the default text box in the table cell and tap ![edit](assets/edit.png) (Edit).
+1. Type the text in the table cell and tap ![done_icon](assets/done_icon.png) to save it.
 
 #### Create binding between table cells and data model object elements {#createbindingtablecells}
 
-1. Select the default text box in the table row and tap ![](assets/edit.png) (Edit).
+1. Select the default text box in the table row and tap ![edit](assets/edit.png) (Edit).
 1. Tap the Data Model objects drop-down list and select the property.
 1. Tap to save and create a binding between the table cell and the data model object property.
 
@@ -393,10 +393,10 @@ Tap the root panel in the Web template and tap **+** to add a **Table** componen
 
 #### Create a hyperlink for text in the table cell {#createhyperlinktable}
 
-1. Select the default text box in the table cell and tap ![](assets/edit.svg) (Edit).
+1. Select the default text box in the table cell and tap ![edit](assets/edit.svg) (Edit).
 1. Select the text in the table cell and tap the Hyperlink icon.
 1. Specify the URL in the **Path** field.
-1. Tap ![](assets/done_icon.png) to save the hyperlink properties.
+1. Tap ![done_icon](assets/done_icon.png) to save the hyperlink properties.
 
 ![Create hyperlink](assets/create_hyperlink_table_new.png)
 
@@ -420,9 +420,9 @@ Sorting can be applied to tables columns containing:
 
 To enable sorting:
 
-1. Select the table and tap ![](assets/configure_icon.png) (Configure). You can also select the table using the **Content** browser in the sidekick of the Interactive Communication.
+1. Select the table and tap ![configure_icon](assets/configure_icon.png) (Configure). You can also select the table using the **Content** browser in the sidekick of the Interactive Communication.
 1. Select **Enable Sorting.**
-1. Tap ![](assets/done_icon.png) to save the table properties. The sorting icons, up and down arrows, in columns headers represent that the sorting has been enabled.
+1. Tap ![done_icon](assets/done_icon.png) to save the table properties. The sorting icons, up and down arrows, in columns headers represent that the sorting has been enabled.
 
    ![Enable sorting](assets/enable_sorting_new-1.png)
 
@@ -473,7 +473,7 @@ You can add button as a component to the web channel of the Interactive Communic
 To add button and define rules on it:
 
 1. Tap the root panel in the Web template and tap **+** to add the **Button** component to the Interactive Communication.
-1. Tap the button component and tap ![](assets/edit-rules.png) to define rules on the tap of the button.
+1. Tap the button component and tap ![edit-rules](assets/edit-rules.png) to define rules on the tap of the button.
 1. In the **When** section, select **clicked** from the state of the button drop-down list.
 1. In the **Then** section:
 
