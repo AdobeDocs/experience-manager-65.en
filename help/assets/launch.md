@@ -135,7 +135,9 @@ To track Dynamic Media viewers in AEM Sites, all steps listed under the [Configu
 
 Following proper configuration, any Dynamic Media viewer that you add to a Sites page, using a WCM component supported by Dynamic Media, automatically tracks data to Adobe Analytics, or Adobe Analytics for Video, or both.
 
+<!-- To be reviewed and updated:
 See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
+-->
 
 ### Tracking Dynamic Media viewers using embed code {#tracking-dynamic-media-viewers-using-embed-code}
 
@@ -147,7 +149,9 @@ Following proper configuration, you can add Adobe Launch support to a web page w
 
 See [Add the Launch Embed Code](https://docs.adobe.com/content/help/en/launch/using/implement/configure/implement-the-launch-install-code.html) to learn more about how to use Adobe Launch library embed code.
 
+<!-- To be reviewed and updated:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of AEM Dynamic Media.
+-->
 
 **To track Dynamic Media viewers using embed code**:
 
