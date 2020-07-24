@@ -45,39 +45,40 @@ For more on community user groups, visit [Managing Users and User Groups](users.
 
 * Log In as Rebekah Larsen (rebekah.larsen@trashymail.com)
 
-    * Select Forum
-    * Select New Post
-    * Enter the Subject
+  * Select Forum
+  * Select New Post
+  * Enter the Subject
 
-      When to change the nectar in Humming Bird Feeder
+    When to change the nectar in Humming Bird Feeder
 
-    * Enter the body text
+  * Enter the body text
 
-      I haven't had much success when I hang a hummingbird feeder up every year. Seems they come a day or two then that is it. I change it once a week is that too long? Do I need to change it sooner?
-    * Select Post
-    * Select Log Out
+    I haven't had much success when I hang a hummingbird feeder up every year. Seems they come a day or two then that is it. I change it once a week is that too long? Do I need to change it sooner?
+
+  * Select Post
+  * Select Log Out
 
 * Log In as Aaron McDonald (aaron.mcdonald@mailinator.com)
 
-    * Select Forum
-    * For the Hummingbird Topic, select Read More
-    * Enter the comment for Post Reply
+  * Select Forum
+  * For the Hummingbird Topic, select Read More
+  * Enter the comment for Post Reply
 
-      I change mine once a week and I get them from May til October.
+    I change mine once a week and I get them from May til October.
 
-    * Select Reply
-    * Select Log Out
+  * Select Reply
+  * Select Log Out
 
 * Log In as Andrew Schaeffer (andrew.schaeffer@trashymail.com)
 
-    * Select Forum
-    * For the Hummingbird Topic, select Read More
-    * Enter the comment for Post Reply
+  * Select Forum
+  * For the Hummingbird Topic, select Read More
+  * Enter the comment for Post Reply
 
-      I sell nectar and feeders - visit https://my.viral.url/
+    I sell nectar and feeders - visit https://my.viral.url/
 
-    * Select Reply
-    * Select Log Out
+  * Select Reply
+  * Select Log Out
 
 ### Anonymous Site Visitor (#5) {#anonymous-site-visitor}
 
@@ -85,7 +86,7 @@ Following is a view of the forum seen by a site visitor who is not signed in (5)
 
 An anonymous site visitor may only view the forum, but my not post any content nor perform any moderation actions.
 
-![chlimage_1](assets/chlimage_1.png)
+![community-forum-visitor](assets/community-forum-visitor.png)
 
 ### New Member (#4) {#new-member}
 
@@ -103,7 +104,7 @@ Have Boyd select Flag to flag the content posted by Andrew.
 
 Log Out
 
-![chlimage_1-1](assets/chlimage_1-1.png)
+![community-forum-member](assets/community-forum-member.png)
 
 ### Administrator (#3) {#administrator}
 
@@ -114,7 +115,7 @@ Notice:
 * Admin can Flag, Delete, Edit, Deny, Cut, Close, Pin, Feature.
 * Admin may select Administration to access the moderation console.
 
-![communityadmin-forum](assets/communityadmin-forum.png)
+![community-admin-forum](assets/community-admin-forum.png)
 
 Select Administration menu item to access the [moderation console](moderation.md) from the publish environment.
 
@@ -124,7 +125,7 @@ The search filter is a sidepanel that toggles open or closed.
 
 Log Out.
 
-![moderationconsole-publish](assets/moderationconsole-publish.png)
+![moderation-console-publish](assets/moderation-console-publish.png)
 
 ### Community Moderator (#2) {#community-moderator}
 
@@ -137,7 +138,7 @@ Notice:
 * Aaron can Cut the forum topic to move it to another forum for which he moderates.
 * Aaron may select Administration to access the moderation console.
 
-![chlimage_1-2](assets/chlimage_1-2.png)
+![community-forum-moderator](assets/community-forum-moderator.png)
 
 Select Administration menu item to access the [moderation console](moderation.md) from the publish environment.
 
@@ -147,7 +148,7 @@ Notice the community moderator has the same options as the administrator (image 
 
 Log Out.
 
-![moderatoraccess](assets/moderatoraccess.png)
+![moderator-access](assets/moderator-access.png)
 
 ### Content Author (#1) {#content-author}
 
@@ -159,5 +160,5 @@ Notice:
 * Rebekah can also Reply to or Flag other content.
 * Rebekah can not access the moderation console.
 
-![chlimage_1-3](assets/chlimage_1-3.png)
+![community-forum-author](assets/community-forum-author.png)
 
