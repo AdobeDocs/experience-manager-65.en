@@ -23,6 +23,9 @@ Before you can use the Smart Content Service, ensure the following to create an 
 * An Adobe ID account that has administrator privileges for the organization.
 * The Smart Content Service service is enabled for your organization.
 
+<!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
+-->
+
 To enable Enhanced Smart Tags, in addition to the above, also install the latest [AEM service pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
 
 ## Obtain public certificate {#obtain-public-certificate}
