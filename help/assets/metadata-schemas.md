@@ -12,11 +12,7 @@ In [!DNL Adobe Experience Manager Assets], schemas contain specific fields for s
 
 To view and edit the properties page for an asset, follow these steps:
 
-1. Click the **[!UICONTROL View Properties]** option from the quick actions on the asset tile in card view.
-
-   ![Quick actions on asset tile](assets/chlimage_1-170.png)
-
-   Alternatively, select an asset and then click **[!UICONTROL Properties]** from the toolbar.
+1. Click the **[!UICONTROL View Properties]** option from the quick actions on the asset tile in card view. Alternatively, select an asset and then click **[!UICONTROL Properties]** ![view properties](assets/do-not-localize/info-circle-icon.png) from the toolbar.
 
 1. You can edit the various editable metadata properties under the available tabs. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
 
