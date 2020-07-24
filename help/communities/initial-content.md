@@ -31,13 +31,13 @@ Now that there is a [page template](initial-app.md#createthepagetemplate), we ca
 
    To switch to the classic UI, select global navigation and hover over the right side of the Projects icon. Select the *Switch to Classic UI* icon which appears:
 
-   ![chlimage_1-36](assets/chlimage_1-36.png)
+   ![classic-ui](assets/classic-ui.png)
 
    The ability to switch to the classic UI must be [enabled by an administrator](../../help/sites-administering/enable-classic-ui.md).
 
 1. From the [classic UI Welcome page](http://localhost:4502/welcome.html), select **[!UICONTROL Websites]**.
 
-   ![chlimage_1-37](assets/chlimage_1-37.png)
+   ![classic-ui-website](assets/classic-ui-website.png)
 
    Alternatively, access the classic UI for Websites directly by browsing to [/siteadmin.](http://localhost:4502/siteadmin)
 
@@ -50,7 +50,7 @@ Now that there is a [page template](initial-app.md#createthepagetemplate), we ca
    * Select **[!UICONTROL An SCF Sandbox Play Template]**
    * Click **[!UICONTROL Create]**
 
-   ![chlimage_1-38](assets/chlimage_1-38.png)
+   ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
 1. In the explorer pane, select the page you just created, `/Websites/SCF Sandbox Site`, and click **[!UICONTROL New]** > **[!UICONTROL New Page]**:
 
@@ -68,11 +68,11 @@ Now that there is a [page template](initial-app.md#createthepagetemplate), we ca
 
 1. This is how the website now appears in the Websites console. Notice that child pages of the item selected in the explorer pane are displayed in the right pane where they can be managed.
 
-   ![chlimage_1-39](assets/chlimage_1-39.png)
+   ![classic-ui-website-page](assets/classic-ui-website-page.png)
 
    This is the repository view of what was created using the Website tool and the template:
 
-   ![chlimage_1-40](assets/chlimage_1-40.png)
+   ![classic-ui-repository-view](assets/classic-ui-repository-view.png)
 
 ## Add the Design Path {#add-the-design-path}
 
@@ -93,7 +93,7 @@ was defined, which provides the optional ability to reference design assets in a
 
 The respository should appear as follows:
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 * Click **[!UICONTROL Save All]**
 
