@@ -213,7 +213,6 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                        <% if (loginFailed) {%>
    ```
 
-
 ### Adding new style, or modifying existing style {#adding-new-style-or-modifying-existing-style}
 
 1. Copy `login` node:
