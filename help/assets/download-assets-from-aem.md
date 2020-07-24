@@ -67,5 +67,5 @@ The `Asset Download Servlet` can be disabled on an [!DNL Experience Manager] Pub
 >[!MORELIKETHIS]
 >
 >* [Download DRM protected assets](drm.md).
->* [Download assets using Experience Manager desktop app on Win or Mac desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>* [Download assets using Experience Manager desktop app on Win or Mac desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets).
 >* [Download assets using Adobe Assets Link from within the supported Adobe Creative Cloud apps](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html).

@@ -32,7 +32,7 @@ For more information, see the following topics:
 
 * [Adding Dynamic Media Assets to Web Pages](/help/assets/adding-dynamic-media-assets-to-pages.md)
 * [Embedding the Video or Image Viewer on a Web Page](/help/assets/embed-code.md)
-* [Activating hotlink protection in Dynamic Media](https://helpx.adobe.com/experience-manager/6-4/help/assets/hotlink-protection.html)
+* [Activating hotlink protection in Dynamic Media](hotlink-protection.md)
 * [Linking URLs to your Web Application](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Delivering Optimized Images for a Responsive Site](/help/assets/responsive-site.md)
 * [HTTP2 Delivery of Content](/help/assets/http2.md)
