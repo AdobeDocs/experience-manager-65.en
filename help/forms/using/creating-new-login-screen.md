@@ -83,9 +83,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                break;
            }
        }
-
    To
-
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -137,9 +135,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                break;
            }
        }
-
    To
-
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -172,9 +168,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
    ```jsp
    String browserLocale = "en";
    for(int i=0; i<locales.length; i++)
-
    To
-
    String browserLocale = "ar";
    for(int i=0; i<locales.length; i++)
    ```
@@ -289,8 +283,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
     background-repeat: no-repeat;
     background-position: left top;
     width: 727px;
-   }
-  
+   }  
    ```
 
     * Modify following in /apps/livecycle/core/components/login.jsp.
