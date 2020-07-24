@@ -40,7 +40,7 @@ When just-in-time provisioning is implemented, a new user is created dynamically
 
 AEM forms provides the following APIs for just-in-time provisioning:
 
-```as3
+```java
 package com.adobe.idp.um.spi.authentication  ;
 publ ic interface IdentityCreator {
 /**

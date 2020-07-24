@@ -61,7 +61,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
    ***Locale is language code***
 
-   ```
+   ```jsp
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -115,7 +115,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
    ***Locale is language-country code***
 
-   ```
+   ```jsp
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -169,7 +169,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
    ***To change Default locale***
 
-   ```
+   ```jsp
    String browserLocale = "en";
    for(int i=0; i<locales.length; i++)
 
@@ -200,14 +200,17 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
    ![Add new key-value pair](assets/capture_new.png)
 
-   ```
+   ```jsp
    div class="loginContent">
                        <span class="loginFlow"></code>
                        <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></code>
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
-
+    ```
+  
    To
+
+   ```jsp
 
    div class="loginContent">
                        <span class="loginFlow"></code>
@@ -252,10 +255,14 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
     * Modify following in /apps/livecycle/core/components/login.jsp.
 
-   ```
+   ```jsp
    <div class="loginContentArea">
 
+   ```
+  
    To
+
+   ```jsp
 
    <div class="newLoginContentArea">
    ```
@@ -291,10 +298,14 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
     * Modify following in /apps/livecycle/core/components/login.jsp.
 
-   ```
+   ```jsp
    <div class="loginContainerBkg">
 
+   ```
+  
    To
+
+   ```jsp
 
    <div class="newLginContainerBkg">
    ```

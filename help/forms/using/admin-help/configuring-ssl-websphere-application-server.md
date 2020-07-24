@@ -171,7 +171,7 @@ Perform the following steps to set the port to be dynamic and resolve the issue:
 1. Open `[aem-forms_root]`\crx-repository\launchpad\sling.properties file for editing.
 1. Locate the `sling.bootdelegation.ibm` property and add `com.ibm.websphere.ssl.*`to its value field. The updated field look like the following:
 
-   ```as3
+   ```java
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
    ```
 

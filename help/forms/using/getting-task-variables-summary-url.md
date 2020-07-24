@@ -33,7 +33,7 @@ In this sample orchestration, an employee submits a leave application form. The 
 
    `apps/Employees/PtoApplication/html.esp`
 
-   ```
+   ```html
    <html>
      <body>
        <table>

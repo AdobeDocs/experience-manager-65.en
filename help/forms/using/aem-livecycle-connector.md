@@ -26,7 +26,7 @@ Although the properties are self explanatory, the important ones are as follows:
 
 * **Server URL** - Specifies URL to the LiveCycle server. If you want LiveCycle and AEM to communicate over https, start AEM with the following JVM
 
-  ```
+  ```java
   argument
    -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
   ```
@@ -112,7 +112,7 @@ To start an exposed service from within AEM, perform the following steps:
 
    The above code snippet starts the createPDF API of GeneratePdfServiceClient to convert a document to PDF. You can perform similar invocation in a JSP using the following code. The major difference is the following code uses Sling ScriptHelper to access the GeneratePdfServiceClient.
 
-   ```java
+   ```jsp
 
    <%@ page import="com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient" %>
    <%@ page import="com.adobe.livecycle.generatepdf.client.CreatePDFResult" %>

@@ -33,7 +33,7 @@ For more information about the JSON Object description, see [this](/help/forms/u
 
    For example change `/apps/ws/locales/en-US/translation.json` for English:
 
-   ```
+   ```json
 
    "task" : {
            "reminder" : {
@@ -110,7 +110,7 @@ For more information about the JSON Object description, see [this](/help/forms/u
 
 1. For example, add information inside the task block:
 
-   ```
+   ```json
 
    "stepname" : {
                "value" : "Step Name",
@@ -146,7 +146,7 @@ Finally, you need to include an entry in the dev package for each property that 
 
    For example, add under `div class="taskProperties"`:
 
-   ```
+   ```jsp
 
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
 

@@ -39,7 +39,7 @@ When a long-lived process is invoked, AEM Forms creates an invocation identifier
 
 The `FirstAppSolution/PreLoanProcess` process is invoked when an applicant submits an application, which is represented as XML data. The name of the input process variable is `formData` and its data type is XML. For the purposes of this discussion, assume that the following XML data is used as input to the `FirstAppSolution/PreLoanProcess` process.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <LoanApp>
  <Name>Sam White</Name>
@@ -137,7 +137,7 @@ For the location of these JAR files, see [Including AEM Forms Java library files
 
 Create Java application logic that invokes the `FirstAppSolution/PreLoanProcess` process from within the Java servlet. The following code shows the syntax of the `SubmitXML` Java Servlet:
 
-```as3
+```java
      public class SubmitXML extends HttpServlet implements Servlet {
          public void doGet(HttpServletRequest req, HttpServletResponse resp
          throws ServletException, IOException {
@@ -161,7 +161,7 @@ To invoke the `FirstAppSolution/PreLoanProcess` process using the Invocation API
 1. Create a `java.util.HashMap` object by using its constructor.
 1. Invoke the `java.util.HashMap` object’s `put` method for each input parameter to pass to the long-lived process. Ensure that you specify the name of the process’s input parameters. Because the `FirstAppSolution/PreLoanProcess` process requires one input parameter of type `XML` (named `formData`), you only have to invoke the `put` method once.
 
-   ```as3
+   ```java
     //Get the XML to pass to the FirstAppSolution/PreLoanProcess process
     org.w3c.dom.Document inXML = GetDataSource(name,phone,amount);
     
@@ -184,7 +184,7 @@ To invoke the `FirstAppSolution/PreLoanProcess` process using the Invocation API
 1. Send the invocation request to AEM Forms by invoking the `ServiceClient` object’s `invoke` method and passing the `InvocationRequest` object. The `invoke` method returns an `InvocationReponse` object.
 1. A long-lived process returns a string value that represents an invocation identification value. Retrieve this value by invoking the `InvocationReponse` object’s `getInvocationId` method.
 
-   ```as3
+   ```java
     //Send the invocation request to the long-lived process and
     //get back an invocation response object
     InvocationResponse lcResponse = myServiceClient.invoke(lcRequest);
@@ -197,7 +197,7 @@ To invoke the `FirstAppSolution/PreLoanProcess` process using the Invocation API
 
 The following Java code example represents the Java servlet that invokes the `FirstAppSolution/PreLoanProcess` process.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -356,7 +356,7 @@ The *index.html* web page provides an entry point to the Java servlet that invok
 
 The Java servlet captures the data that is posted from the HTML page by using the following Java code:
 
-```as3
+```java
  //Get the values that are passed from the Loan HTML page
  String name = request.getParameter("name");
  String phone = request.getParameter("phone");
@@ -365,7 +365,7 @@ The Java servlet captures the data that is posted from the HTML page by using th
 
 The following HTML code represents the index.html file that was created during setup of the development environment. (See [Create a web project](invoking-human-centric-long-lived.md#create-a-web-project).)
 
-```as3
+```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
  <html>
  <head>
@@ -489,7 +489,7 @@ Notice under Service References, there are two items. The first item is named* J
 1. In the Project menu, select **Add Service Reference**.
 1. In the **Address** dialog box, specify the WSDL to the Job Manager service.
 
-   ```as3
+   ```java
     https://hiro-xp:8080/soap/services/JobManager?WSDL&lc_version=9.0.1
    ```
 
@@ -498,7 +498,7 @@ Notice under Service References, there are two items. The first item is named* J
 1. In the **Project** menu, select **Add Service Reference**.
 1. In the **Address** dialog box, specify the WSDL to the FirstAppSolution/PreLoanProcess process.
 
-   ```as3
+   ```java
     https://hiro-xp:8080/soap/services/FirstAppSolution/PreLoanProcess?WSDL&lc_version=9.0.1
    ```
 
@@ -556,7 +556,7 @@ The application logic that is part of the ASP.NET application must dynamically c
 
 When invoking a process that requires XML data from an ASP.NET application, an XML data type is available for you to use. That is, you cannot pass a `System.Xml.XmlDocument` instance to the process. The fully qualified name of this XML instance to pass to the process is `InvokePreLoanProcess.PreLoanProcess.XML`. Convert the `System.Xml.XmlDocument` instance to `InvokePreLoanProcess.PreLoanProcess.XML`. You can perform this task by using the following code.
 
-```as3
+```java
  //Create the XML to pass to the FirstAppSolution/PreLoanProcess process
  XmlDocument myXML = CreateXML(userName, phone, amount);
  
@@ -574,7 +574,7 @@ To create an ASP page that invokes the `FirstAppSolution/PreLoanProcess` process
 1. Create a `FirstAppSolution_PreLoanProcessClient` object by using its default constructor.
 1. Create a `FirstAppSolution_PreLoanProcessClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service and the encoding type:
 
-   ```as3
+   ```java
     https://hiro-xp:8080/soap/services/FirstAppSolution/PreLoanProcess?blob=mtom
    ```
 
@@ -625,7 +625,7 @@ To create an ASP page that invokes the `FirstAppSolution/PreLoanProcess` process
 
 The following C# code example invokes the `FirstAppSolution/PreLoanProcess`process.
 
-```as3
+```csharp
  ???/**
      * Ensure that you create a .NET project that uses
      * MS Visual Studio 2008 and version 3.5 of the .NET
@@ -849,7 +849,7 @@ To create a client application built with Flex that is able to invoke the FirstA
 1. Create the XML data source to pass to the `FirstAppSolution/PreLoanProcess` process by creating an XML instance. (This application logic is shown in the following code example.)
 1. Create an object of type Object by using its constructor. Assign the XML to the object by specifying the name of the process’s input parameter, as shown in the following code:
 
-   ```as3
+   ```csharp
     //Get the XML data to pass to the AEM Forms process
     var xml:XML = createXML();
     var params:Object = new Object();
@@ -859,7 +859,7 @@ To create a client application built with Flex that is able to invoke the FirstA
 1. Invoke the `FirstAppSolution/PreLoanProcess` process by calling the `mx:RemoteObject` instance’s `invoke_Async` method. Pass the `Object` that contains the input parameter. (See [Passing input values](/help/forms/developing/invoking-aem-forms-using-remoting.md).)
 1. Retrieve the invocation identification value that is returned from a long-lived process, as shown in the following code:
 
-   ```as3
+   ```csharp
     // Handles async call that invokes the long-lived process
     private function resultHandler(event:ResultEvent):void
     {
@@ -872,7 +872,7 @@ To create a client application built with Flex that is able to invoke the FirstA
 
 The following Flex code example invokes the `FirstAppSolution/PreLoanProcess` process.
 
-```as3
+```java
  <?xml version="1.0" encoding="utf-8"?>
  
  <mx:Application  xmlns="*" backgroundColor="#FFFFFF"

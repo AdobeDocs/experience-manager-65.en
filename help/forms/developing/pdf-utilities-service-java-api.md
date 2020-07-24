@@ -35,7 +35,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following code example converts a PDF document to an XDP document. (See [Converting PDF Documents into XDP Documents](/help/forms/developing/pdf-utilities.md#converting-pdf-documents-into-xdp-documents).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -136,7 +136,7 @@ The following code example converts a PDF document to an XDP document. (See [Con
 
 The following code example converts an XDP document to a PDF document. (See [Converting XDP Documents into PDF Documents](/help/forms/developing/pdf-utilities.md#converting-xdp-documents-into-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -236,7 +236,7 @@ The following code example converts an XDP document to a PDF document. (See [Con
 
 The following code example determines whether the document is a PDF document and, if so, the earliest Acrobat version able to read it. (See [Retrieving PDF Document Properties](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -353,7 +353,7 @@ The following code example determines whether the document is a PDF document and
 
 The following code example sets the save mode for fast web viewing and then passes the PDF document to the Encryption service where it is encrypted. The encrypted PDF document that is saved for fast web viewing is saved as a PDF file named* FastWebViewLoan.pdf*. (See [Setting PDF Document Save Modes](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -493,7 +493,7 @@ The following code example sets the save mode for fast web viewing and then pass
 
 The following Java code example converts a PDF document named *Loan.pdf* to a PDF/A-2b document that is saved as a PDF file named *LoanArchive.pdf*. (See [Converting Documents to PDF/A Documents](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -581,7 +581,7 @@ public class CreatePDFADocument {
 
 The following Java code example sanitizes a PDF document named *Loan.pdf*.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:

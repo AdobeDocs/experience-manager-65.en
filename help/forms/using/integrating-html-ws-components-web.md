@@ -25,7 +25,7 @@ You can use AEM Forms workspace [components](/help/forms/using/description-reusa
 1. Create a demomain.js file inside /apps/sampleApplication/wscomponents/js folder. Copy code from /libs/ws/js/main.js into demomain.js.
 1. In demomain.js, remove the code to initialize Router and add the following code:
 
-   ```
+   ```javascript
    require(['initializer','runtime/util/usersession'],
        function(initializer, UserSession) {
            UserSession.initialize(
@@ -40,7 +40,7 @@ You can use AEM Forms workspace [components](/help/forms/using/description-reusa
 1. In `/apps/sampleApplication/wscomponents/js/registry.js` update paths from `/lc/libs/ws/` to `/lc/apps/sampleApplication/wscomponents/` for template values.
 1. In your portal home page JSP file at `/apps/sampleApplication/GET.jsp`, add the following code to include the required components inside the portal.
 
-   ```as3
+   ```jsp
    <script data-main="/lc/apps/sampleApplication/wscomponents/js/demomain" src="/lc/apps/sampleApplication/wscomponents/js/libs/require/require.js"></script>
    <div class="UserInfoView gcomponent" data-name="userinfo"></div>
    <div class="filterListView gcomponent" data-name="filterlist"></div>
@@ -56,7 +56,7 @@ You can use AEM Forms workspace [components](/help/forms/using/description-reusa
 
 1. To customize the components, you may extend the existing views for the required component as follows:
 
-   ```as3
+   ```javascript
    define([
        ‘jquery’,
        ‘underscore’,
@@ -78,7 +78,7 @@ You can use AEM Forms workspace [components](/help/forms/using/description-reusa
 
 1. Modify the portal CSS to configure the layout, positioning, and style of the required components on your portal. For instance you would like to keep background color as black for this portal to view userInfo component well. You can do this by changing background color in `/apps/sampleApplication/wscomponents/css/style.css` as follows:
 
-   ```as3
+   ```css
    body {
        font-family: "Myriad pro", Arial;
        background: #000;    //This was origianlly #CCC

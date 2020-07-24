@@ -26,7 +26,7 @@ For a custom profile, the endpoint changes accordingly. For example, the end poi
 
 If your template resides in the AEM repository in an application called FormSubmission, the URI is:
 
-```
+```http
 http://localhost:4502/content/xfaforms/profiles/default.html?
  contentRoot=crx:///content/dam/formsanddocuments/FormSubmission/1.0
  &template=sampleForm.xdp

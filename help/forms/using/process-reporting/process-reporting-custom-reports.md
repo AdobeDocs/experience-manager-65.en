@@ -48,14 +48,14 @@ The prerequisite to creating a service using Query builder API are [creating and
 
 1. Create an OSGi service with appropriate annotations. To access the QueryBuilder use:
 
-   ```
+   ```java
    @Reference(referenceInterface = QueryBuilder.class)
     private QueryBuilder queryBuilder;
    ```
 
 1. Create a predicate group. Code to create a predicate group is:
 
-   ```
+   ```java
    PredicateGroup predicateGroup = new PredicateGroup();
     predicateGroup.setAllRequired(true);
    ```
@@ -338,7 +338,7 @@ public class PeriodicProcessVolume {
 
 The sample `pom.xml`file to build above the service is:
 
-```java
+```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -438,7 +438,7 @@ The prerequisites to creating a separate UI for displaying results are [Sling Ba
 
 A sample JSP code which uses both OSGi Service and QueryBuilder API is:
 
-```
+```html
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling/1.0"%>
 <%request.setAttribute("silentAuthor", new Boolean(true));%>
 <%@include file="/libs/foundation/global.jsp"%>

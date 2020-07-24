@@ -44,7 +44,7 @@ To import data into a form created in Designer, you must reference a valid XDP X
 
 In order to import data values into this form, you must have a valid XDP XML data source that corresponds to the form. You cannot use an arbitrary XML data source to import data into a form using the Form Data Integration service. The difference between an arbitrary XML data source and an XDP XML data source is that an XDP data source conforms to the XML Forms Architecture (XFA). The following XML represents an XDP XML data source that corresponds to the example mortgage application form.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8" ?>
  - <xfa:datasets xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/">
  - <xfa:data>

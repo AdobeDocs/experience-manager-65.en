@@ -37,7 +37,7 @@ The debug logs for forms workflows include:
 
 * Variables written in JCR repository. For example:
 
-  ```
+  ```verilog
      [DEBUG] Successfully written variable <variable name> into meta data node at <JCR path where meta data is being written>
   ```
 
@@ -46,14 +46,14 @@ The debug logs for forms workflows include:
 
 * Dynamic step metadata parameters. For example:
 
-  ```
+  ```verilog
   [DEBUG] Document of Record to be generated for adaptive form <path of adaptive form>
    [DEBUG] Locale to be used for Document of Record is <locale>
   ```
 
 The following example illustrates the logs for the Sign Document step:
 
-```xml
+```verilog
 [DEBUG] Executing sign document step.
 [DEBUG] Using adobe sign configuration: <path of adobe sign configuration>
 [DEBUG] Invoking Adobe Sign Service for creating agreement

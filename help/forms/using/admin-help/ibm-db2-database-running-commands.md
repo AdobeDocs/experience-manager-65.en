@@ -39,7 +39,7 @@ Run the `runstats` command on the following AEM forms database tables and indexe
 
 For correct syntax and usage, see the database manufacturer’s documentation. Below, `<schema>` is used to denote the schema that is associated with your DB2 user name. If you have a simple default DB2 installation, this is the database schema name.
 
-```as3
+```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY
  
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY
@@ -65,7 +65,7 @@ For correct syntax and usage, see the database manufacturer’s documentation. B
 
 Run the `reorg` command on the following AEM forms database tables and indexes. For correct syntax and usage, see the database manufacturer’s documentation.
 
-```as3
+```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY
  
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY

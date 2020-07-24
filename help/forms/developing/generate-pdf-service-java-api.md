@@ -31,7 +31,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following code example converts a Word file named *Loan.doc* to a PDF document named *Loan.pdf*. (See [Converting Word Documents to PDF Documents](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -145,7 +145,7 @@ The following code example converts a Word file named *Loan.doc* to a PDF docume
 
 The following Java code example converts HTML content located at https://www.adobe.com to a PDF document named *AdobeHTML.pdf*. (See [Converting HTML Documents to PDF Documents](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -251,7 +251,7 @@ The following Java code example converts HTML content located at https://www.ado
 
 The following code example converts a PDF document named *Loan.pdf* to an RTF document named *Loan.rtf*. (See [Converting PDF Documents to Non-image Formats](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

@@ -33,7 +33,7 @@ AEM Forms operations can be performed using the AEM Forms strongly typed API and
 
 The following Java code example imports an application based on an existing LCA file named *EncryptDocument.lca*.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -135,7 +135,7 @@ The following Java code example imports an application based on an existing LCA 
 
 The following Java code example removes an application named *EncryptDocument*.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

@@ -30,7 +30,7 @@ Complete this procedure using the Applications and Services web page in Administ
 
 1. Log in to Administration Console by typing the following URL in a web browser:
 
-   ```as3
+   ```java
             https://[host name]:'port'/adminui
    ```
 
@@ -65,7 +65,7 @@ Some forms server services permit unauthenticated (anonymous) invocation for som
 
 1. Log in to administration console by typing the following URL in a web browser:
 
-   ```as3
+   ```java
             https://[host name]:'port'/adminui
    ```
 
@@ -108,7 +108,7 @@ End users can authenticate to AEM Forms through Workbench, AEM Forms web applica
 
 1. Log in to administration console by typing the following URL in a web browser:
 
-   ```as3
+   ```java
             https://[host name]:'port'/adminui
    ```
 

@@ -211,7 +211,7 @@ Configuration Manager made use of a servlet deployed on your application server 
 1. Open the META-INF/application.xml file.
 1. Search for the adobe-bootstrapper.war section:
 
-   ```as3
+   ```java
    <!-- bootstrapper start --> 
    <module id="WebApp_adobe_bootstrapper"> 
        <web> 
@@ -231,7 +231,7 @@ Configuration Manager made use of a servlet deployed on your application server 
 1. Stop the AEM Forms server.
 1. Comment out the adobe-bootstrapper.war and the adobe-lcm-bootstrapper-redirectory. war modules as follows:
 
-   ```as3
+   ```java
    <!-- bootstrapper start --> 
    <!-- 
    <module id="WebApp_adobe_bootstrapper"> 
@@ -273,7 +273,7 @@ When AEM Forms on JEE is installed, a single default user account is configured 
 
 1. Type the following URL in a web browser:
 
-   ```as3
+   ```java
    https://[host name]:[port]/adminui
    ```
 
@@ -306,7 +306,7 @@ Web Service Definition Language (WSDL) generation should be enabled only for dev
 
 1. Type the following URL in a web browser:
 
-   ```as3
+   ```java
    https://[host name]:[port]/adminui
    ```
 
@@ -350,7 +350,7 @@ On Oracle, the database account that you use needs only the CONNECT, RESOURCE, a
 
 1. Modify [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} to add `integratedSecurity=true` to the connection URL, as shown in this example:
 
-   ```as3
+   ```java
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
    ```
 
@@ -362,7 +362,7 @@ On Oracle, the database account that you use needs only the CONNECT, RESOURCE, a
 
 1. Start the WebLogic Server Administration Console by typing the following URL in the URL line of a web browser:
 
-   ```as3
+   ```java
    https://[host name]:7001/console
    ```
 
@@ -723,7 +723,7 @@ Use the ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** list for Allowed Referrer Exce
 
 The ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** list ID is defined as a constant in the `UMConstants` class of the `com.adobe.idp.um.api` namespace, found in `adobe-usermanager-client.jar`. You can use the AEM Forms APIs to create, modify, or edit this list. For example, to create the Global Allowed Referrer Exceptions list use:
 
-```as3
+```java
 addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arrays.asList("/index.html", "/sample/(.)*"))
 ```
 
@@ -751,7 +751,7 @@ You may have created custom WAR files to work with AEM Forms on JEE in order to 
 
 Following is an example of the filter entry in the *web.xml* file for a ***SAMPLE*** WAR file:
 
-```as3
+```java
 <filter> 
        <filter-name> filter-name </filter-name> 
        <filter-class> com.adobe.idp.um.auth.filter.RemoteCSRFFilter </filter-class> 
@@ -969,7 +969,7 @@ To configure SSL redirect for WebSphere or WebLogic, see your application server
 
 1. Add the following code in the https connector element:
 
-   ```
+   ```xml
    <connector name="https" protocol="HTTP/1.1" scheme="https" socket-binding="https" secure="true" enabled="true"> 
     <ssl name="jboss7_ssl" key-alias="jboss71" password="Tibco321" certificate-key-file="../standalone/configuration/server.keystore" protocol="TLSv1"/> 
     </connector>
@@ -1046,7 +1046,7 @@ Access to the JBoss Management Console and JMX Console is already configured (JM
 
 After logging into Administration Console, it is possible to browse the console’s directory listing by modifying the URL. For example, if you change the URL to one of the following URLs, a directory listing may appear:
 
-```as3
+```java
 https://<servername>:8080/adminui/secured/ 
 https://<servername>:8080/um/
 ```
@@ -1059,7 +1059,7 @@ This section contains application server configuration recommendations for secur
 
 Set the index-directories properties in the weblogic.xml file to `false`, as shown by this example:
 
-```as3
+```xml
 <container-descriptor> 
     <index-directory-enabled>false 
     </index-directory-enabled> 

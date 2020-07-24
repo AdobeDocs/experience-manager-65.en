@@ -22,7 +22,7 @@ Avatar of the logged-in user is displayed in the upper-right corner of AEM Forms
 1. Create a DSC, using the details mentioned in the next step. For more information, see 'Developing Components for AEM Forms' topic in [Programming with AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guide.
 1. In the DSC, define a new SPI which exposes getCurrentUserImageUrl and getUserImageUrl methods to get an image URL for an AEM Forms user. Following is a sample Java™ code snippet:
 
-   ```as3
+   ```java
    public class DemoUserImageURLProviderService {
      public String getCurrentUserImageUrl()
      {
@@ -39,7 +39,7 @@ Avatar of the logged-in user is displayed in the upper-right corner of AEM Forms
 
    The following code snippet is a sample. Customize it to suit your specific requirements.
 
-   ```as3
+   ```java
    <component xmlns="https://adobe.com/idp/dsc/component/document">
        <component-id>com.adobe.sample.DemoUsersComponent</component-id>
        <version>1.1</version>

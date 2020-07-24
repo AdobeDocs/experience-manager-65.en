@@ -51,7 +51,7 @@ You can obtain the JS and CSS files by opening the adobe-forms-&lt;appserver&gt;
 
 The following XML syntax shows an example fscmenu.xml file.
 
-```as3
+```html
  <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
          <ul class="fscmenuItem" id="Home">
              <li>
@@ -105,7 +105,7 @@ As part of customizing a toolbar, you can change the locale value of the toolbar
 
 To change the locale value of a toolbar, ensure that the fscmenu.xml file contains the language you want to display. The following XML syntax shows the fscmenu.xml file that is used to display a French toolbar.
 
-```as3
+```html
  <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
          <ul class="fscmenuItem" id="Home">
              <li>

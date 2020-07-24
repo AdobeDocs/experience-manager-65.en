@@ -110,7 +110,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following Java code example invokes a short-lived process named `MyApplication/EncryptDocument`. Notice that this process is invoked synchronously. The input parameter for this process is named `inDoc`. The output parameter for this process is named `outDoc`. The password encrypted PDF document is saved as a PDF file named `EncryptLoan.pdf`. (See [Invoking a short-lived process using the Invocation API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -226,7 +226,7 @@ The following C# code example invokes a process named `MyApplication/EncryptDocu
 
 An unsecured PDF document based on a PDF file named *Loan.pdf* is passed to the AEM Forms process. The process returns a password-encrypted PDF document that is saved as a PDF file named *EncryptedPDF.pdf*.
 
-```as3
+```java
  /*
      * Ensure that you create a .NET client assembly that uses
      * base64 encoding. This is required to populate a BLOB
@@ -307,7 +307,7 @@ The following Java code example invokes a process named `MyApplication/EncryptDo
 
 An unsecured PDF document based on a PDF file named *Loan.pdf* is passed to the AEM Forms process. The process returns a password-encrypted PDF document that is saved as a PDF file named *EncryptedDocument.pdf*.
 
-```as3
+```java
  /**
      * Ensure that you create Java proxy files that consume
      *theAEM Forms service WSDL. You can use JAX-WS to create
@@ -395,7 +395,7 @@ The following Flex code example invokes a short-lived process named `MyApplicati
 >
 >This quick start invokes a AEM Forms process and uploads an unsecure document. To execute this quick start, AEM Forms has to be configured to upload unsecure documents. For information about how to configure AEM Forms to accept unsecure documents, see [Configuring AEM Forms to accept secure and unsecure documents](/help/forms/developing/invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
 
-```as3
+```java
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Application  xmlns="*"
       creationComplete="initializeChannelSet();">
@@ -550,7 +550,7 @@ The following C# code example invokes a process named `MyApplication/EncryptDocu
 
 An unsecured PDF document based on a PDF file named *map.pdf* is passed to the AEM Forms process using DIME. The process returns a password-encrypted PDF document that is saved as a PDF file named *mapEncrypt.pdf*.
 
-```as3
+```java
  /**
      *
      * Ensure that you create a .NET project that uses
@@ -655,7 +655,7 @@ The following Java code example invokes a process named `MyApplication/EncryptDo
 
 An unsecured PDF document based on a PDF file named *Loan.pdf* is passed to the AEM Forms process using DIME. The process returns a password-encrypted PDF document that is saved as a PDF file named *EncryptLoan.pdf*.
 
-```as3
+```java
  /**
      * Ensure that you create Java Axis files that
      * are required to send a AEM Forms process
@@ -756,7 +756,7 @@ The following Java code example invokes a process named `MyApplication/EncryptDo
 
 An unsecured PDF document based on a PDF file named *Loan.pdf* is passed to the AEM Forms process using SOAP over HTTP. The PDF file is located at the following URL: `https://'[server]:[port]'/FormsQS`. The process returns a password-encrypted PDF document that is saved as a PDF file named *EncryptedDocument.pdf*.
 
-```as3
+```java
  /**
      * Ensure that you create Java proxy files that consume
      *theAEM Forms service WSDL. You can use JAX-WS to create
@@ -831,7 +831,7 @@ The following C# code example invokes a process named `MyApplication/EncryptDocu
 
 An unsecured PDF document based on a PDF file named *Loan.pdf* is passed to the AEM Forms process using BLOB over HTTP. The process returns a password-encrypted PDF document that is saved as a PDF file named *EncryptedPDF.pdf*.
 
-```as3
+```java
  /*
      * Ensure that you create a .NET client assembly that uses
      * SOAP over HTTP. This is required to populate a BLOB
@@ -931,7 +931,7 @@ The following C# code example invokes a process named `MyApplication/EncryptDocu
 
 An unsecured PDF document based on a PDF file named *loan.pdf* is passed to the AEM Forms process using MTOM. The process returns a password-encrypted PDF document that is saved as a PDF file named *EncryptedDocument.pdf*.
 
-```as3
+```java
  ???/**
      * Ensure that you create a .NET project that uses
      * MS Visual Studio 2008 and version 3.5 of the .NET
@@ -1021,7 +1021,7 @@ The following Java code example invokes a process named `MyApplication/EncryptDo
 
 An unsecured PDF document based on a PDF file named *Loan.pdf* is passed to the AEM Forms process using SwaRef. The encrypted PDF document is saved as a PDF file named *EncryptedDocument.pdf*.
 
-```as3
+```java
  /**
      * Ensure that you create Java proxy files that consume
      *theAEM Forms service WSDL. You can use JAX-WS to create
