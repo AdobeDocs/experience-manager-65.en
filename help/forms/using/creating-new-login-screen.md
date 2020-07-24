@@ -21,9 +21,15 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 1. Log in at `/lc/crx/de` with Administrator permissions.
 1. Perform the following actions:
 
-   1. Replicate the hierarchical structure: of `/libs/livecycle/core/content` at `/apps/livecycle/core/content`. Maintain the same (node/folder) properties and access control.
+   1. Replicate the hierarchical structure: of `/libs/livecycle/core/content` at `/apps/livecycle/core/content`. 
+   
+      Maintain the same (node/folder) properties and access control.
 
-   1. Copy the content folder: from `/libs/livecycle/core` to `/apps/livecycle/core`.
+   1. Copy the content folder: 
+   
+      from: `/libs/livecycle/core` 
+      
+      to: `/apps/livecycle/core`.
 
    1. Delete the contents of `/apps/livecycle/core` folder.
 
@@ -242,6 +248,7 @@ String browserLocale = "en";
       * to `/apps/livecycle/core/components/login`
 
    1. Modify `/apps/livecycle/core/components/login/login.jsp` to incorporate the newly added styles.
+
 
 For example:
 
