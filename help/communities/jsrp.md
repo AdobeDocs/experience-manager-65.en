@@ -33,10 +33,11 @@ In the author environment, to reach the Storage Configuration console
 
 * From global navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Storage Configuration]**
 
-![chlimage_1-234](assets/chlimage_1-234.png)
-
 * Select **[!UICONTROL JCR Storage Resource Provider (JSRP)]**
+
 * Select **[!UICONTROL Submit]**
+
+![chlimage_1-234](assets/chlimage_1-234.png)
 
 ### Publishing the Configuration {#publishing-the-configuration}
 

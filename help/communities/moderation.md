@@ -42,7 +42,7 @@ Access to the Moderation console from a published community site is through an A
 
 By selecting the Administration link, the Moderation console appears:
 
-![moderationconsole-publish](assets/moderationconsole-publish.png)
+![moderation-console-publish](assets/moderation-console-publish.png)
 
 ## Author Environment Access {#author-environment-access}
 
