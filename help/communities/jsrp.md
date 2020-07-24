@@ -37,20 +37,18 @@ In the author environment, to reach the Storage Configuration console
 
 * Select **[!UICONTROL Submit]**
 
-![chlimage_1-234](assets/chlimage_1-234.png)
+![jsrp-configuration](assets/jsrp-configuration.png)
 
 ### Publishing the Configuration {#publishing-the-configuration}
 
 While JSRP is the default configuration, to ensure the identical configuration is set in the publish environment:
 
-* On author:
+* From global navigation: **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
+* Select **[!UICONTROL Activate Tree]** > **[!UICONTROL Start Path]**:
 
-    * From global navigation: **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
-    * Select **[!UICONTROL Activate Tree]** > **[!UICONTROL Start Path]**:
+  * Browse to `/conf/global/settings/community/srpc/`
 
-        * Browse to `/conf/global/settings/community/srpc/`
-
-    * Select **[!UICONTROL Activate]**
+* Select **[!UICONTROL Activate]**
 
 ## Managing User Data {#managing-user-data}
 
@@ -69,8 +67,8 @@ On all author and publish AEM instances, revisit the Storage Configuration conso
 
 * In JCR, if [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
-    * Does not contain an [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) node, it means the storage provider is JSRP.
-    * If the srpc node exists and contains node [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), the defaultconfiguration's properties should define JSRP to be the default provider.
+  * Does not contain an [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) node, it means the storage provider is JSRP.
+  * If the srpc node exists and contains node [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), the defaultconfiguration's properties should define JSRP to be the default provider.
 
 ### UGC Not Visible on Author Instance {#ugc-not-visible-on-author-instance}
 
