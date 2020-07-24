@@ -211,7 +211,6 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
    To
 
    ```jsp
-
    div class="loginContent">
                        <span class="loginFlow"></code>
                        <span class="loginVersion"><%= i18n.get("My Welcome Message") %></code>
@@ -245,25 +244,21 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
     * Add the following to `/apps/livecycle/core/content/login/login.css`.
 
    ```css
-
    .newLoginContentArea {
     width: 700px;
     padding: 100px 0px 0px 100px;
    }
-
    ```
 
     * Modify following in /apps/livecycle/core/components/login.jsp.
 
    ```jsp
    <div class="loginContentArea">
-
    ```
   
    To
 
    ```jsp
-
    <div class="newLoginContentArea">
    ```
 
@@ -300,12 +295,10 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
    ```jsp
    <div class="loginContainerBkg">
-
    ```
   
    To
 
    ```jsp
-
    <div class="newLginContainerBkg">
    ```
