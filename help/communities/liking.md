@@ -17,7 +17,7 @@ The `Liking` component is a useful tool that allows users to express an opinion 
 
 ## Adding Liking to a Page {#adding-liking-to-a-page}
 
-To add a `Liking` component to a page in author mode, use the component browser to locate:
+To add a `Liking` component to a page in author mode, use the component browser to locate
 
 * `Communities / Liking`
 
