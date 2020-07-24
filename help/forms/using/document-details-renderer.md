@@ -41,7 +41,7 @@ This method is the standard way of communication between a parent frame and an i
 
 Communicates using `pdfObject.postMessage` / `pdfObject.messageHandler`
 
-This method is the standard way of communication with a PDF javascript from an HTML. PdfTaskForm view also takes care of flat PDF and renders it plainly.
+This method is the standard way of communication with a PDFJavaScript from an HTML. PdfTaskForm view also takes care of flat PDF and renders it plainly.
 
 >[!NOTE]
 >
@@ -51,9 +51,9 @@ This method is the standard way of communication with a PDF javascript from an H
 
 New HTML forms are rendered by NewHTMLTaskForm View.
 
-When an XDP Form is rendered as HTML using the mobile forms package deployed on CRX, it also adds additional `FormBridge` javascript to the form, which exposes different methods for saving and submitting form data.
+When an XDP Form is rendered as HTML using the mobile forms package deployed on CRX, it also adds additional `FormBridge`JavaScript to the form, which exposes different methods for saving and submitting form data.
 
-This javascript is different from the one referred in PDF Forms above, but serves a similar purpose.
+ThisJavaScript is different from the one referred in PDF Forms above, but serves a similar purpose.
 
 >[!NOTE]
 >

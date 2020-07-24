@@ -112,7 +112,7 @@ var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
 
 ## XFA subsets {#xfa-subsets}
 
-When creating form designs to render as HTML, you must restrict your scripting to the XFA subset for scripts in javascript language.
+When creating form designs to render as HTML, you must restrict your scripting to the XFA subset for scripts inJavaScript language.
 
 Scripts that run on the client or run on both the client and the server must be written within the XFA subset. Scripts that run on the server can use the full XFA scripting model and also use FormCalc. For information about using JavaScript, see [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 

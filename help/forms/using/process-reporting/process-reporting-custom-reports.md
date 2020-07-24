@@ -430,7 +430,7 @@ The prerequisites to creating a separate UI for displaying results are [Sling Ba
 
    A sample node with JSP and CSS files
 
-1. Add javascript code to start an Ajax call to querybuilder REST API or to your service. Also, add appropriate arguments.
+1. AddJavaScript code to start an Ajax call to querybuilder REST API or to your service. Also, add appropriate arguments.
 
 1. Add an appropriate success handler to Ajax call to parse and display the result. You can parse the result in multiple formats (json/csv/user defined), and display it in a tabular or in other forms.
 

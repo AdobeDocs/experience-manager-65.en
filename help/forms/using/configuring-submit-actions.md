@@ -133,7 +133,7 @@ Before using the **Invoke an AEM Workflow** submit action, [configure the AEM DS
 
 ## Server-Side Revalidation in Adaptive Form {#server-side-revalidation-in-adaptive-form}
 
-Typically, in any online data capture system, developers place some javascript validations on client side to enforce a few business rules. But in modern browsers, end users have way to bypass those validations and manually do submissions using various techniques, Such as Web Browser DevTools Console. Such techniques are also valida for adaptive forms. A forms developer can create various validation logics, but technically, end users can bypass those validation logics and submit invalid data to the server. Invalid data would break the business rules that a forms author has enforced.
+Typically, in any online data capture system, developers place someJavaScript validations on client side to enforce a few business rules. But in modern browsers, end users have way to bypass those validations and manually do submissions using various techniques, Such as Web Browser DevTools Console. Such techniques are also valida for adaptive forms. A forms developer can create various validation logics, but technically, end users can bypass those validation logics and submit invalid data to the server. Invalid data would break the business rules that a forms author has enforced.
 
 The server-side revalidation feature provides the ability to also run the validations that an adaptive forms author has provided while designing an adaptive form on the server. It prevents any possible compromise of data submissions and business rules violations represented in terms of form validations.
 
@@ -163,7 +163,7 @@ At times, in case of **complex validation rules**, the exact validation script r
 
 Supporting Custom functions in Validation Expressions
 
-Author can configure custom javascript library per adaptive form. In the library, only keep the reusable functions, which has dependency on jquery and underscore.js third-party libraries.
+Author can configure customJavaScript library per adaptive form. In the library, only keep the reusable functions, which has dependency on jquery and underscore.js third-party libraries.
 
 ## Error handling on submit action {#error-handling-on-submit-action}
 
