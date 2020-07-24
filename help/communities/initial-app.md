@@ -94,14 +94,14 @@ Create the *component* that defines the content and renders any pages created ba
    * Title: **An SCF Sandbox Play Component**
    * Description: **This is the component which renders content for An SCF Sandbox page.**
    * Super Type: *&lt;leave blank&gt;*
-   * Group:
+   * Group: *&lt;leave blank&gt;*
 
    ![create-template-component](assets/create-template-component.png)
 
 1. Click **[!UICONTROL Next]** until the **[!UICONTROL Allowed Children]** panel of the dialog appears:
 
-   * Click **[!UICONTROL OK]**
-   * Click **[!UICONTROL Save All]**
+   * Click **[!UICONTROL OK]**.
+   * Click **[!UICONTROL Save All]**.
 
 1. Verify that the path to the component and the resourceType for the template match.
 
