@@ -121,7 +121,7 @@ This is an example where a group is created in the publish environment.
 
 Groups may also be created in the author environment and managed within the community site in the author environment ([Community Groups console](/help/communities/groups.md)). The experience of [creating groups on author](/help/communities/nested-groups.md) is next in this tutorial.
 
-![chlimage_1-36](assets/chlimage_1-36.png)
+![classic-ui](assets/classic-ui.png)
 
 Create a Reference Group:
 
@@ -139,11 +139,11 @@ Create a Reference Group:
 
 1. Select **Create Group**
 
-![chlimage_1-37](assets/chlimage_1-37.png)
+![classic-ui-website](assets/classic-ui-website.png)
 
 After new group is created, **select the new Sports group** in order to create two groups (nested) within it. As a site structure can not begin with the groups function, after opening the Sports group, it is necessary to select the Groups link:
 
-![chlimage_1-38](assets/chlimage_1-38.png)
+![classic-ui-create-page](assets/classic-ui-create-page.png)
 
 The second set of links, beginning with `Blog`, belong to the currently selected group, the `Sports` group. By selecting the Sports' `Groups` link, it is possible to nest two groups within the Sports group.
 
@@ -171,7 +171,7 @@ Once both groups are created, select the Baseball group, an open group, and noti
 
 The group's links are displayed below the main site's links and results in the following display:
 
-![chlimage_1-39](assets/chlimage_1-39.png)
+![classic-ui-website-page](assets/classic-ui-website-page.png)
 
 On author - with administrative privileges, navigate to the [Communities Groups console](/help/communities/members.md) and add Weston McCall to the `Community Engage Gymnastics <uid> Members` group.
 
@@ -186,7 +186,7 @@ Only the Baseball group will be visible.
 
 Log in as Weston McCall (weston.mccall@dodgit.com / password), and navigate to the same location. Notice that Weston is able to `Join` the open `Baseball` group and either `enter or Leave` the private `Gymnastics` group.
 
-![chlimage_1-40](assets/chlimage_1-40.png)
+![classic-ui-repository-view](assets/classic-ui-repository-view.png)
 
 ### Web Page link {#web-page-link}
 
@@ -194,7 +194,7 @@ View the basic web page included in the site by selecting the Web Page link. The
 
 For example, go to **author** instance, open the `engage` folder in the [Communities Sites console](/help/communities/sites-console.md), select the **Open Site** icon to enter author edit mode. Then select preview mode to select the `Web Page` link, then select edit mode to add Title and Text components. Last, re-publish either just the page or the entire site.
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 ### Moderation Link {#moderationlink}
 
