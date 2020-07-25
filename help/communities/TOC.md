@@ -3,6 +3,7 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Communities User Guide
+user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 ---
 
 # AEM 6.5 Communities User Guide {#communities}
