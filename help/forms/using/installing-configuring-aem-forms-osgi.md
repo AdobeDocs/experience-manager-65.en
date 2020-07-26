@@ -38,7 +38,7 @@ Before you begin to install and configure data capture capability of AEM Forms, 
 * Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/sites-deploying/technical-requirements.md).
 
 * Installation path of the AEM instance does not contain white-spaces.
-* An AEM instance is up and running. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least two [AEM instances (one Author and one Publish)](/help/sites-deploying/deploy.md) to run AEM Forms data capture capabilities:
+* An AEM instance is installed with administrator privileges and is up and running. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least two [AEM instances (one Author and one Publish)](/help/sites-deploying/deploy.md) to run AEM Forms data capture capabilities:
 
     * **Author**: An AEM instance used to create, upload, and edit content and to administer the website. Once content is ready to go live, it is replicated to the publish instance.
     * **Publish**: An AEM instance that serves the published content to the public over the internet or an internal network.
@@ -114,6 +114,24 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
    You can also download the package via the direct link listed in the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article.
 1. After the package is installed, you are prompted to restart the AEM instance. **Do not immediately restart the server.** Before stopping the AEM Forms server, wait until the ServiceEvent REGISTERED and ServiceEvent UNREGISTERED messages stop appearing in the `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` file and the log is stable.
 1. Repeat steps 1-7 on all the Author and Publish instances.
+
+### Automatic installation of Visual Studio redistributables {#automatic-installation-visual-studio-redistributables}
+
+If you install an AEM instance with administrator privileges, the Visual Studio redistributables are installed automatically during the installation of AEM Forms add-on package.
+
+To evaluate if the Visual Studio redistributables installed automatically, open the `error.log` file available at the `/crx-repository/logs/` directory. The logs include the following message:
+
+```Redist <service name> already installed on system, will not attempt re-installation```
+
+If the redistributables fail to install, the logs include the following message:
+
+```Current user does not have elevated privileges, aborting installation of redist <service name>```
+
+To resolve the issue, restart the AEM server, install AEM with administrator privileges, and then install the AEM Forms add-on package.
+
+If the privilege check fails, the logs include the following message:
+
+```Privilege escalation check failed with error: <error message>```
 
 ## Post-installation configurations {#post-installation-configurations}
 
