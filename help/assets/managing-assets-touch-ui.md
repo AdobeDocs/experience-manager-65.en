@@ -368,15 +368,11 @@ To preview an asset using keyboard, follow these steps:
 
 1. To schedule a particular date/time for the activation of the asset, use the date picker beside the **[!UICONTROL On Time]** field.
 
-   ![Date time picker or use keyboard keys in On Time field to add date and time for asset activation](assets/schedule-activation.png)
+   ![Date time picker or use keyboard keys in On Time field to add date and time for asset activation](assets/datepicker.png)
 
-   *Figure: Schedule asset activation.*
+   *Figure: Use the date picker to schedule asset activation.*
 
 1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the [!DNL Assets] web interface or through the HTTP API.
-
-   ![Date time picker or use keyboard keys in Off Time field to add date and time for asset de-activation](assets/schedule-deactivation.png)
-
-   *Figure: Schedule asset deactivation.*
 
 1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in [!DNL Experience Manager]. [!DNL YouTube] requires tags to publish. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
 
@@ -494,15 +490,11 @@ The other properties and metadata information is retained. A partial copy is not
 
    **Delete a rendition**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** option from the toolbar. Renditions cannot be deleted in bulk after asset processing is complete. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can customize Experience Manager to delete either specific renditions or delete the assets and re-upload the deleted assets.
-
-   ![Option to delete a rendition](assets/delete_renditionicon.png)
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** ![Option to delete a rendition](assets/do-not-localize/deleteoutline.png) option from the toolbar. Renditions cannot be deleted in bulk after asset processing is complete. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can customize Experience Manager to delete either specific renditions or delete the assets and re-upload the deleted assets.
 
    **Upload a new rendition**
 
-   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** option in the toolbar to upload a new rendition for the asset.
-
-   ![Add Rendition option to upload new rendition](assets/chlimage_1-16.png)
+   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** ![Add rendition option to upload new rendition](assets/do-not-localize/add.png) option in the toolbar to upload a new rendition for the asset.
 
    >[!NOTE]
    >
@@ -532,11 +524,9 @@ Also, disable the force delete button using an overlay, to disallow users from d
 
 1. Navigate to the location of the asset(s) you want to delete.
 
-1. Select the asset, and click **[!UICONTROL Delete]** from the toolbar.
+1. Select the asset, and click **[!UICONTROL Delete]** ![Delete option](assets/do-not-localize/deleteoutline.png) from the toolbar.
 
-   ![Delete option](assets/delete_icon.png)
-
-1. In the confirmation dialog, click:
+1. In the confirmation dialog, select one of the following options:
 
     * **[!UICONTROL Cancel]** to stop the action
     * **[!UICONTROL Delete]** to confirm the action:
@@ -581,9 +571,7 @@ See [Download assets from Experience Manager](/help/assets/download-assets-from-
 
 1. Navigate to the location of the asset/asset folder you want to remove from the publish environment (unpublish).
 
-1. Select the asset/folder to unpublish, and click **[!UICONTROL Manage Publication]** option from the toolbar.
-
-   ![Manage Publication option](assets/manage_publication.png)
+1. Select the asset/folder to unpublish, and click **[!UICONTROL Manage Publication]** ![manage Publication option](assets/do-not-localize/globe-publication.png) option from the toolbar.
 
 1. Select the **[!UICONTROL Unpublish]** action from the list.
 
@@ -833,9 +821,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
    ![Annotation and review status on generated PDF](assets/chlimage_1-42.png)
 
-1. Download or print the PDF using the options at the top-right.
-
-   ![Download and Print options on PDF](assets/chlimage_1-43.png)
+1. Download ![Download option for PDF](assets/do-not-localize/download.png) or print ![print options on PDF](assets/do-not-localize/print.png) the PDF using the options at the top-right.
 
    >[!NOTE]
    >

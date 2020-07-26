@@ -58,9 +58,6 @@ You can search for expired assets, including expired subassets in the Search pan
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
 1. Click [!DNL Experience Manager] logo to display the search panel.
-
-   ![chlimage_1-151](assets/chlimage_1-151.png)
-
 1. Click the **[!UICONTROL Expiry Status]** option to expand it.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
@@ -107,11 +104,9 @@ The [!DNL Assets] console can display various states for assets. Depending on th
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. To display its asset details page, in the [!DNL Assets] interface, select an asset and click **[!UICONTROL Properties]**.
+1. To display its asset details page, in the [!DNL Assets] interface, select an asset and click **[!UICONTROL Properties]** ![view properties](assets/do-not-localize/info-circle-icon.png).
 
-   ![chlimage_1-158](assets/chlimage_1-158.png)
-
-1. In the Advanced tab, set an expiration date for the asset from the **[!UICONTROL Expires]** field.
+1. In the [!UICONTROL Advanced] tab, set an expiration date for the asset from the **[!UICONTROL Expires]** field.
 
    ![set asset expiration date and time in Expires field](assets/asset-properties-advanced-tab.png)
 

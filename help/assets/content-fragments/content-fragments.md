@@ -76,7 +76,7 @@ Together with the JSON export capabilities of AEM core components, this structur
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
 >
->For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
+>For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html).
 
 >[!CAUTION]
 >
