@@ -121,17 +121,17 @@ If you install an AEM instance with administrator privileges, the Visual Studio 
 
 To evaluate if the Visual Studio redistributables installed automatically, open the `error.log` file available at the `/crx-repository/logs/` directory. The logs include the following message:
 
-```Redist <service name> already installed on system, will not attempt re-installation```
+`Redist <service name> already installed on system, will not attempt re-installation`
 
 If the redistributables fail to install, the logs include the following message:
 
-```Current user does not have elevated privileges, aborting installation of redist <service name>```
+`Current user does not have elevated privileges, aborting installation of redist <service name>`
 
 To resolve the issue, restart the AEM server, install AEM with administrator privileges, and then install the AEM Forms add-on package.
 
 If the privilege check fails, the logs include the following message:
 
-```Privilege escalation check failed with error: <error message>```
+`Privilege escalation check failed with error: <error message>`
 
 ## Post-installation configurations {#post-installation-configurations}
 
