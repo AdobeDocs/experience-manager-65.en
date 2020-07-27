@@ -295,7 +295,7 @@ The plus button against the asset library lets you permanently save the style wi
 
 When you provide a custom name for a style, the style is tied to a theme and is no longer available to other themes. To delete a saved style:
 
-1. On the CANVAS toolbar, click **Theme Options** ![](assets/theme-options.png) &gt; **Manage Styles**.
+1. On the CANVAS toolbar, click **Theme Options** ![theme-options](assets/theme-options.png) &gt; **Manage Styles**.
 1. In the Manage Styles dialog, select a saved style, click **Delete**.
 
    ![Delete the saved style](assets/manage-styles.png)
