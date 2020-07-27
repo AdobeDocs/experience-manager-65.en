@@ -90,7 +90,7 @@ The main MSM API objects interact as follows (see also [Terms Used](/help/sites-
 
     * Setting up a live copy for the very first time also uses a RolloutConfig (which triggers the LiveActions).
 
-### Creating a New Synchronization Action {#creating-a-new-synchronization-action}
+## Creating a New Synchronization Action {#creating-a-new-synchronization-action}
 
 Create custom synchronization actions to use with your rollout configurations. Create a synchronization action when the [installed actions](/help/sites-administering/msm-sync.md#installed-synchronization-actions) do not meet your specific application requirements. To do so, create two classes:
 
@@ -157,7 +157,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 >
 >The `Resource` arguments may be `null` or `Resources` objects that do not adapt to `Node` objects, such as [ `NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) objects.
 
-### Creating a New Rollout Configuration {#creating-a-new-rollout-configuration}
+## Creating a New Rollout Configuration {#creating-a-new-rollout-configuration}
 
 Create a rollout configuration when the installed rollout configurations do not meet your application requirements:
 
@@ -170,7 +170,7 @@ The new rollout configuration is then available to you when setting rollout conf
 >
 >See also the [best practices for customizing rollouts](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
 
-#### Create the Rollout Configuration {#create-the-rollout-configuration}
+### Create the Rollout Configuration {#create-the-rollout-configuration}
 
 To create a new rollout configuration:
 
@@ -215,7 +215,7 @@ To create a new rollout configuration:
 
 1. Click **Save All**.
 
-#### Add Synchronization Actions to the Rollout Configuration {#add-synchronization-actions-to-the-rollout-configuration}
+### Add Synchronization Actions to the Rollout Configuration {#add-synchronization-actions-to-the-rollout-configuration}
 
 Rollout configurations are stored below the [rollout configuration node](#create-the-rollout-configuration) that you have created under `/apps/msm/<your-project>/rolloutconfigs` node. 
 
@@ -234,7 +234,7 @@ Add child nodes of type `cq:LiveSyncAction` to add synchronization actions to th
 
 1. Add and configure as many synchronization action nodes as you require. Rearrange the action nodes so that their order matches the order in which you want them to occur. The topmost action node occurs first.
 
-### Creating and Using a Simple LiveActionFactory Class {#creating-and-using-a-simple-liveactionfactory-class}
+## Creating and Using a Simple LiveActionFactory Class {#creating-and-using-a-simple-liveactionfactory-class}
 
 Follow the procedures in this section to develop a `LiveActionFactory` and use it in a rollout configuration. The procedures use Maven and Eclipse to develop and deploy the `LiveActionFactory`:
 
@@ -253,7 +253,7 @@ You can find the code of this page on GitHub
 * [Open experiencemanager-java-msmrollout project on GitHub](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
 * Download the project as [a ZIP file](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout/archive/master.zip)
 
-#### Create the Maven Project {#create-the-maven-project}
+### Create the Maven Project {#create-the-maven-project}
 
 The following procedure requires that you have added the adobe-public profile to your Maven settings file.
 
@@ -279,7 +279,7 @@ The following procedure requires that you have added the adobe-public profile to
 
 1. Start Eclipse and [import the Maven project](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
 
-#### Add Dependencies to the POM File {#add-dependencies-to-the-pom-file}
+### Add Dependencies to the POM File {#add-dependencies-to-the-pom-file}
 
 Add dependencies so that the Eclipse compiler can reference the classes that are used in the `LiveActionFactory` code.
 
@@ -369,7 +369,7 @@ Add dependencies so that the Eclipse compiler can reference the classes that are
     </dependency>
    ```
 
-#### Implement LiveActionFactory {#implement-liveactionfactory}
+### Implement LiveActionFactory {#implement-liveactionfactory}
 
 The following `LiveActionFactory` class implements a `LiveAction` that logs messages about the source and target pages, and copies the `cq:lastModifiedBy` property from the source node to the target node. The name of the live action is `exampleLiveAction`.
 
@@ -537,7 +537,7 @@ The following `LiveActionFactory` class implements a `LiveAction` that logs mess
 
    ```
 
-#### Create the Example Rollout Configuration {#create-the-example-rollout-configuration}
+### Create the Example Rollout Configuration {#create-the-example-rollout-configuration}
 
 Create the MSM rollout configuration that uses the `LiveActionFactory` that you created:
 
@@ -547,7 +547,7 @@ Create the MSM rollout configuration that uses the `LiveActionFactory` that you 
    * **Name**: examplerolloutconfig
    * **cq:trigger**: `publish`
 
-#### Add the Live Action to the Example Rollout Configuration {#add-the-live-action-to-the-example-rollout-configuration}
+### Add the Live Action to the Example Rollout Configuration {#add-the-live-action-to-the-example-rollout-configuration}
 
 Configure the rollout configuration that you created in the previous procedure so that it uses the `ExampleLiveActionFactory` class.
 
@@ -568,7 +568,7 @@ Configure the rollout configuration that you created in the previous procedure s
 
 1. Click **Save All**.
 
-#### Create the Live Copy {#create-the-live-copy}
+### Create the Live Copy {#create-the-live-copy}
 
 [Create a live copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) of the English/Products branch of the We.Retail Reference Site using your rollout configuration:
 
@@ -584,7 +584,7 @@ Activate the **Products** (english) page of the source branch and observe the lo
 ```
 
 <!--
-### Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
+## Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
 
 In some cases, the **Chapters** selection is not required in the create site wizard (only the **Languages** selection is required). To remove this step in the default We.Retail English blueprint:
 
@@ -604,7 +604,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
     1. **Name** = `xtype`; **Type** = `String`; **Value** = `hidden`
 -->
 
-### Changing language names and default countries {#changing-language-names-and-default-countries}
+## Changing language names and default countries {#changing-language-names-and-default-countries}
 
 AEM uses a default set of language and country codes.
 
@@ -646,7 +646,7 @@ To modify the languages:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-### Configuring MSM Locks on Page Properties (Touch-Enabled UI) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
+## Configuring MSM Locks on Page Properties (Touch-Enabled UI) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
 When creating a custom page property you may need to consider whether the new property should be eligible for roll out to any live copies.
 
