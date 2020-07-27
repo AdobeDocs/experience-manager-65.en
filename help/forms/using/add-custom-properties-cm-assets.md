@@ -675,13 +675,13 @@ Complete the following steps to display the custom property in the Correspondenc
 
     1. Add the following to line 19 of the file (following the copyright statement).
 
-       ```
+       ```jsp
        <%@page import="java.util.Map"%>
        ```
 
     1. Add the following code of a function that gets value for each custom property to the end of the file:
 
-       ```
+       ```jsp
        <%!
            private String getCustomPropertyValue(Map<String, Object> extendedProperties, String propertyName) {
 
@@ -697,7 +697,7 @@ Complete the following steps to display the custom property in the Correspondenc
 
     1. Add the following before the starting of the &lt;tr&gt; tag (&lt;tr &lt;%= attrs.build() %&gt;&gt;):
 
-       ```
+       ```jsp
        <%
            String GeoLocation = "";
            if (asset != null) {
@@ -713,7 +713,7 @@ Complete the following steps to display the custom property in the Correspondenc
 
     1. For displaying the new property in the UI, add a TD tag as following before the closing tr (&lt;/tr&gt;) tag:
 
-       ```
+       ```jsp
        <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(geographicalLocation) %>"><%= xssAPI.encodeForHTML(geographicalLocation) %></td>
        ```
 

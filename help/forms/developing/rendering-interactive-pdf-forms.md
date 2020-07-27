@@ -79,7 +79,7 @@ The sample loan application is an example of a Forms service application that ex
 
 The following code shows the syntax of a Java Servlet named GetLoanForm:
 
-```as3
+```java
      public class GetLoanForm extends HttpServlet implements Servlet {
          public void doGet(HttpServletRequest req, HttpServletResponse resp
          throws ServletException, IOException {

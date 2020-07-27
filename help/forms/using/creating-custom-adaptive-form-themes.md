@@ -80,7 +80,7 @@ You create an **adaptive template** and apply the theme to the template. You the
 
    Sample overriding variables:
 
-   ```
+   ```css
    @button-background-color: rgb(19, 102, 44);
    @button-border-color: rgb(19, 102, 44);
    @button-border-size: 0px;
@@ -98,7 +98,7 @@ You create an **adaptive template** and apply the theme to the template. You the
 
    Sample new variable definitions:
 
-   ```
+   ```css
    @button-focus-bg-color: rgb(40, 208, 90);
    @button-hover-bg-color: rgb(30, 156, 67);
    ```
@@ -115,7 +115,7 @@ You create an **adaptive template** and apply the theme to the template. You the
 
    Sample mixin definition:
 
-   ```
+   ```css
    .rounded-corners (@radius) {
      -webkit-border-radius: @radius;
      -moz-border-radius: @radius;
@@ -140,7 +140,7 @@ You create an **adaptive template** and apply the theme to the template. You the
     * `components.less`
     * `layouts.less`
 
-   ```
+   ```css
    @import "../../../clientlibs/fd/af/guidetheme/common/less/globalvariables.less";
    @import "../../../clientlibs/fd/af/guidetheme/common/less/layoutvariables.less";
    @import "forestTheme-variables";
@@ -172,7 +172,7 @@ You create an **adaptive template** and apply the theme to the template. You the
 
    For example:
 
-   ```
+   ```javascript
    #base=/apps/clientlibs/fd/af/third-party/css
    bootstrap.css
 
@@ -216,7 +216,7 @@ After you have created an adaptive form theme, perform the following steps to us
 
        The following sample code snippet imports the `af.theme.forest` theme.
 
-       ```
+       ```jsp
        <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
        <cq:includeClientLib categories="af.theme.forest"/>
        ```

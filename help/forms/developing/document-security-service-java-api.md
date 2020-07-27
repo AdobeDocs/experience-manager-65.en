@@ -49,7 +49,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following Java code example creates a new policy named *Allow Copy*. The policy set to which the policy is added is named *Global Policy Set*. This policy set exists by default. (See [Creating Policies](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -178,7 +178,7 @@ The following Java code example creates a new policy named *Allow Copy*. The pol
 
 The following Java code example modifies a policy named *Allow Copy* by setting the offline lease period to 40 days. (See [Modifying Policies](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -279,7 +279,7 @@ The following Java code example modifies a policy named *Allow Copy* by setting 
 
 The following Java code example deletes a policy named *Allow Copy*. (See [Deleting Policies](/help/forms/developing/protecting-documents-policies.md#deleting-policies).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -371,7 +371,7 @@ The following Java code example deletes a policy named *Allow Copy*. (See [Delet
 
 The following Java code example applies a policy named *Allow Copy* to a PDF document named *Loan.pdf*. The policy set to which the policy is added is named *Global Policy Set*. The policy-protected document is saved as a PDF file named *PolicyProtectedLoanDoc.pdf. *(See [Applying Policies to PDF Documents](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -477,7 +477,7 @@ The following Java code example applies a policy named *Allow Copy* to a PDF doc
 
 The following code example removes a policy from a PDF document named *PolicyProtectedLoanDoc.pdf*. The unsecured PDF document is saved as *unProtectedLoan.pdf*. (See [Removing Policies from PDF Documents](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -584,7 +584,7 @@ The following code example removes a policy from a PDF document named *PolicyPro
 
 The following Java code example revokes a policy-protected document named *PolicyProtectedLoanDoc.pdf*. A revised PDF document is located at the following URL location `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (See [Revoking Access to Documents](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -698,7 +698,7 @@ The following Java code example revokes a policy-protected document named *Polic
 
 The following Java code example inspects a policy-protected PDF document named *PolicyProtectedLoanDoc.pd*f. (See [Inspecting Policy Protected PDF Documents](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -816,7 +816,7 @@ The following Java code example inspects a policy-protected PDF document named *
 
 The following Java code example reinstates access to a revoked PDF document named *PolicyProtectedLoanDoc.pdf*. (See [Reinstating Access to Revoked Documents](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -922,7 +922,7 @@ The following Java code example reinstates access to a revoked PDF document name
 
 The following Java code example creates a new PDF watermark named 'Sample PDF Watermark'. This watermark contains a single element (See [Creating Watermarks](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1055,7 +1055,7 @@ public class PDFWatermarksSOAPMode {
 
 The following Java code example creates a new Text watermark named *Sample Text Watermark*. This watermark contains a single element.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1204,7 +1204,7 @@ public class TextWatermarks {
 
 The following Java code example modifies a watermark named 'Sample Text Watermark' and sets the opacity of the first element to 100.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1316,7 +1316,7 @@ public class ModifyWatermarks {
 
 The following Java code example modifies a watermark named *Confidential* by modifying the value of the `opacity` attribute to 80.
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1414,7 +1414,7 @@ The following Java code example modifies a watermark named *Confidential* by mod
 
 The following Java code example searches for the create policy event.
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1527,7 +1527,7 @@ The following Java code example searches for the create policy event.
 
 The following Java code example applies a policy named *Allow Copy* to a Word document named *Loan.doc*. The policy set to which the policy is added is named *Global Policy Set*. The policy-protected document is saved as a DOC file named *PolicyProtectedLoanDoc.doc. *(See [Applying Policies to PDF Documents](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1642,7 +1642,7 @@ The following Java code example applies a policy named *Allow Copy* to a Word do
 
 The following code example removes a policy from a Word document named *PolicyProtectedLoanDoc.doc*. The unsecured Word document is saved as *unProtectedLoan.doc*. (See [Removing Policies from Word Documents](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1750,7 +1750,7 @@ The following code example removes a policy from a Word document named *PolicyPr
 
 The following Java code example creates a new abstract policy named AllowCopy. The policy set to which the policy is added is named Global Policy Set. This policy set exists by default. (See Creating Policies.)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1867,7 +1867,7 @@ public class CreateAbstractPolicySoap {
 
 The following Java code example modifies an abstract policy named AllowCopy. The policy set in which the policy is modfied is named Global Policy Set. This policy set exists by default. (See Creating Policies.)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1966,7 +1966,7 @@ public class ModifyingAbstractPolicySoap {
 
 The following Java code example deletes an abstract policy named AllowCopy. The policy set from which the policy is deleted is named Global Policy Set. This policy set exists by default. (See Creating Policies.)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -2053,7 +2053,7 @@ public class DeleteAbstractPolicySoap {
 
 The following Java code example demonstrates the method to protect a Document in Statement Workflow, for an existing User.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -2164,7 +2164,7 @@ The following Java code example demonstrates how you can protect a document in S
 * A new User, License and Policy are created.
 * The User is associated with the License and Policy, and the document is Protected.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:

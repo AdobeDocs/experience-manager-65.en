@@ -47,7 +47,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following Java code example merges two PDF source documents named *map.pdf* and *directions.pdf* into a single PDF document. The name of the single PDF document is *AssemblerResultPDF.pdf*. The name of the DDX document is *shell.xml*. (See [Programmatically Assembling PDF Documents](/help/forms/developing/assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -191,7 +191,7 @@ The following Java code example merges two PDF source documents named *map.pdf* 
 
 The following Java code example disassembles a PDF document named *AssemblerResultPDF.pdf*. Notice that the name of the DDX document is *shell_disassemble.xml*. Each disassembled PDF document is named `ResultPDF[Number].pdf`. That is, the first disassembled PDF document is named *ResultPDF1.pdf.* For information about the *shell_disassemble.xml* DDX document used in this code example, see [Programmatically Disassembling PDF Documents](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -330,7 +330,7 @@ The following Java code example disassembles a PDF document named *AssemblerResu
 
 The following Java code example assembles a password-encrypted PDF document. The unsecured PDF document is named *Loan.pdf*. Notice that the name of the DDX document is *shell_Encrypt.xml*. The encrypted PDF document is named *AssemblerEncryptedPDF.pdf*. (See [Assembling Encrypted PDF Documents](/help/forms/developing/assembling-pdf-documents.md#assembling-encrypted-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -453,7 +453,7 @@ The following Java code example assembles a password-encrypted PDF document. The
 
 The following Java code example assembles a PDF document with unique page identifiers (bates numbering). Notice that the name of the DDX document is *shell_Bates.xml*. The PDF document that is returned from the Assembler service is saved as a PDF file named *AssemblerResultBatesPDF.pdf*. (See [Assembling Documents Using Bates Numbering](/help/forms/developing/assembling-pdf-documents.md#assembling-documents-using-bates-numbering).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -611,7 +611,7 @@ The following Java code example assembles a PDF document with unique page identi
 
 The following Java code example assembles a non-interactive PDF document. The interactive PDF document that is passed to the Assembler service is named *Loan.pdf*. Notice that the name of the DDX document is *shell_XFA.xml*. The non-interactive PDF document is saved as a PDF file named *AssembleNonInteractivePDF.pdf*. (See [Assembling Non-Interactive PDF Documents](/help/forms/developing/assembling-pdf-documents.md#assembling-non-interactive-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -735,7 +735,7 @@ The following Java code example assembles a non-interactive PDF document. The in
 
 The following Java code example determines whether the input PDF document is PDF/A compliant. The input PDF document that is passed to the Assembler service is named *Loan.pdf*. The name of the DDX document is shell_PDFA.xml. The XML document that is returned from the Assembler service and specifies whether the input PDF document is PDF/A compliant is saved as an XML file named result.xml. For information about the *shell_PDFA.xml* DDX document used in this code example, see [Determining Whether Documents Are PDF/A- Compliant](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -881,7 +881,7 @@ The following Java code example determines whether the input PDF document is PDF
 
 The following Java code example validates a DDX document based on a file named *bookmarkDDX.xml*. (See [Validating DDX Documents](/help/forms/developing/assembling-pdf-documents.md#validating-ddx-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1012,7 +1012,7 @@ The following Java code example validates a DDX document based on a file named *
 
 The following Java code example assembles a PDF document that contains bookmarks. The name of the DDX document is *bookmarkDDX.xml*. The name of the bookmark XML document that describes the bookmarks to add to the PDF document is bookmarks.xml. The result PDF document is saved as a PDF file named AssemblerResultBookmarks.pdf. (See [Assembling PDF Documents with Bookmarks](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-documents-with-bookmarks).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1379,7 +1379,7 @@ public class AssemblePDFWithDynamicDDXSOAP {
 
 The following Java code example creates a PDF portfolio. The PDF portfolio is saved as a PDF file named *AssemblerResultPortfolio.pdf*. (See [Assembling PDF Portfolios](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1530,7 +1530,7 @@ The following Java code example creates a PDF portfolio. The PDF portfolio is sa
 
 The following Java code example assembles XDP fragments that are based on the following XDP files: *tuc018_template_flowed.xdp*, *tuc018_contact.xdp*, and* tuc018_patient.xdp*. The assembled XDP document that contains all fragments is saved as a XDP file named *AssemblerResultXDP.xdp*. (See [Assembling Multiple XDP Fragments](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1687,7 +1687,7 @@ The following code example redacts a PDF document using `PDFUtility`.
 >
 >`PDFUtility` can redact only those PDFs which are marked for redaction using Acrobat.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:

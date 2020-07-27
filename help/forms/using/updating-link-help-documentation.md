@@ -25,7 +25,7 @@ To update the URL of the online documentation, follow the [Generic Steps of cust
 1. Copy the `userinfo.html` file from `/libs/ws/js/runtime/templates` to `/apps/ws/js/runtime/templates`.
 1. Change:
 
-   ```
+   ```html
    <ul class="helpmenu">
      <li>
        <a href="https://www.adobe.com/go/learn_aemforms_documentation_63" title="<%= $.t('index.header.dropdown.WorkspaceHelp')%>" target="_blank"><%= $.t('index.header.dropdown.WorkspaceHelp')%></a>
@@ -34,7 +34,7 @@ To update the URL of the online documentation, follow the [Generic Steps of cust
 
    to
 
-   ```
+   ```html
    <ul class="helpmenu">
      <li>
        <a href="<!--place new help url here-->" title="<%= $.t('index.header.dropdown.WorkspaceHelp')%>" target="_blank"><%= $.t('index.header.dropdown.WorkspaceHelp')%></a>

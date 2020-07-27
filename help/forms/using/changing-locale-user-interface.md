@@ -60,7 +60,7 @@ Perform the following steps to localize the images:
 1. Using a WebDAV client, place the image files in the */apps/ws/images* folder.
 1. Navigate to */apps/ws/css*. Open *newStyle.css* for editing and add the following entries:
 
-   ```
+   ```css
    #categoryListBar .content.nw {
         background: #3e3e3e url(../images/Categories_nw.png) no-repeat 10px 10px;
     }
@@ -78,7 +78,7 @@ Perform the following steps to localize the images:
 1. Navigate to the *js/runtime/utility* folder and open the *usersession.js* file for editing.
 1. Locate the code listed in orignal code block and add condition *lang !== 'nw'* to the if statement:
 
-   ```
+   ```javascript
    // Orignal code
    setLocale = function () {
            var lang = $.trim(i18n.lng());
@@ -91,7 +91,7 @@ Perform the following steps to localize the images:
 
    ```
 
-   ```
+   ```javascript
    //new code
     setLocale = function () {
            var lang = $.trim(i18n.lng());
@@ -112,7 +112,7 @@ You require development package to localize the *datepicker* API. For detailed i
 1. Navigate to `apps/ws/js` and open the `jquery.ui.datepicker-nw.js` file for editing.
 1. In the main.js file create an alias for `jquery.ui.datepicker-nw.js.` The code to create an alias for the `jquery.ui.datepicker-nw.js` file is:
 
-   ```
+   ```javascript
    jqueryuidatepickernw : pathprefix + 'libs/jqueryui/jquery.ui.datepicker-nw'
    ```
 
@@ -123,7 +123,7 @@ You require development package to localize the *datepicker* API. For detailed i
 
    The sample code below shows how to add the entry of jquery.ui.datepicker-nw.js:
 
-   ```
+   ```json
    //Original Code
    define([
        'jquery',
@@ -141,7 +141,7 @@ You require development package to localize the *datepicker* API. For detailed i
 
    ```
 
-   ```
+   ```json
    // Code with Date Picker alias for new language
    define([
        'jquery',
@@ -166,7 +166,7 @@ You require development package to localize the *datepicker* API. For detailed i
 
    Change the following code to add the new locale:
 
-   ```
+   ```javascript
    if (locale === 'ja-JP') {
       $.datepicker.setDefaults($.datepicker.regional.ja);
    } else if (locale === 'de-DE') {
@@ -179,7 +179,7 @@ You require development package to localize the *datepicker* API. For detailed i
 
    ```
 
-   ```
+   ```javascript
    if (locale === 'ja-JP') {
        $.datepicker.setDefaults($.datepicker.regional.ja);
    } else if (locale === 'de-DE') {

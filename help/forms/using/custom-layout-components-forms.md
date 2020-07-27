@@ -85,7 +85,7 @@ qtip
    }
    ```
 
-   ```
+   ```javascript
    /** function for toggling the navigators **/
    var toggleNav = function () {
 
@@ -113,7 +113,7 @@ qtip
 
    In addition, update the paths of included scripts in .jsp files. For example, update the `customPanelLayout.jsp` file as follows:
 
-   ```
+   ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
 
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -142,7 +142,7 @@ qtip
 
    The `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` file:
 
-   ```
+   ```html
    <%-- jsp governing the navigation part --%>
 
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -171,7 +171,7 @@ qtip
 
    The updated `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
 
-   ```
+   ```html
    <%-- jsp governing the panel content --%>
 
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>

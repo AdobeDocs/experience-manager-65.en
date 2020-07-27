@@ -21,7 +21,7 @@ You can customize tab names for the `Start Process` component in the `Start Proc
 
     * For tasks initiated in the start process, use the following snippet from the `"startprocess" : {}` block.
 
-   ```
+   ```json
    "tabname" : {
                "form" : "Application",
                "details" : "Overview",
@@ -32,7 +32,7 @@ You can customize tab names for the `Start Process` component in the `Start Proc
 
     * For tasks in To-do, use the following snippet from the `"todo" : {}` block.
 
-   ```
+   ```json
    "tabname" : {
                "summary" : "Bird's-eye view",
                "history" : "Past",

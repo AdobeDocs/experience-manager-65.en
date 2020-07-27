@@ -116,7 +116,7 @@ Consider the following example loan application form.
 
 To merge data into this form design, you must create an XML data source that corresponds to the form. The following XML represents an XDP XML data source that corresponds to the example mortgage application form.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8" ?>
  - <xfa:datasets xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/">
  - <xfa:data>
@@ -1060,13 +1060,13 @@ Create a PDF document based on fragments by using the Output Service API and Ass
 
    Create a Microsoft .NET project that uses MTOM. Use the following WSDL definition for the service reference associated with the Output service:
 
-   ```as3
+   ```java
     http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1.
    ```
 
    Use the following WSDL definition for the service reference associated with the Assembler service:
 
-   ```as3
+   ```java
     http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1.
    ```
 
@@ -1641,7 +1641,7 @@ The following illustration shows the Output service processing an XML data file 
 
 The following XML data shows an example of a data file that contains three data records.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <batch>
  <LoanRecord>
@@ -1758,7 +1758,7 @@ After you reference a valid XML data source that contains multiple data records 
 
 After the Output service performs an operation, it returns XML data that specifies whether the operation was successful. The following XML is returned by the Output service. In this situation, the Output service generated 42 documents.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <printResult>
  <status>0</status>

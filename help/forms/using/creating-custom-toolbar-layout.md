@@ -89,7 +89,7 @@ Demo custom toolbar layout
 
    Sample `customToolbarLayout.jsp`:
 
-   ```php
+   ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
    <cq:includeClientLib categories="customtoolbarlayout" />
    <c:if test="${isEditMode}">
@@ -108,7 +108,7 @@ Demo custom toolbar layout
 
    Sample `toolBarCommon.jsp`:
 
-   ```php
+   ```jsp
    <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions"%>
    <%--------------------
    This code iterates over all the tool bar items using the guideToolbar bean.

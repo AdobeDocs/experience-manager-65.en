@@ -73,7 +73,7 @@ Use this panel layout to provide guided navigation inside a form. For example, u
 
 Use the `Panel adaptive form` component to provide step-by-step navigation inside a panel. When you use this layout, a user moves to the next step only after the current step is complete
 
-```
+```javascript
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
 ```
 

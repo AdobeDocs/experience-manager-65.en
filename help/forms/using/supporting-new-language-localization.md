@@ -68,7 +68,7 @@ Create a node of type `cq:ClientLibraryFolder` under `etc/<folderHierarchy>`, wi
 
 * **js.txt** containing the following:
 
-```
+```text
 /libs/fd/xfaforms/clientlibs/I18N/Namespace.js
 I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
@@ -84,7 +84,7 @@ Add the following files to the client library:
 * **LogMessages.js** defining `guidelib.i18n.strings` and `guidelib.i18n.LogMessages` for the `<locale>` as defined in `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
 * **js.txt** containing the following:
 
-```
+```text
 i18n.js
 LogMessages.js
 ```

@@ -73,7 +73,7 @@ To illustrate the usage of a form design script, this section examines a simple 
 
 The syntax of the script located in this form design is as follows:
 
-```as3
+```javascript
      NumericField3 = NumericField2 + NumericField1
 ```
 

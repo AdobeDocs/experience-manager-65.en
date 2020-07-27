@@ -152,7 +152,7 @@ Consider a scenario where you want to populate the **State** drop-down list base
 
    ![Adding country names](assets/country-dropdown.png) ![Adding script to populate state names](assets/state-dropdown.png) ![Country and State drop-down lists togather](assets/2dropdowns.png)
 
-   ```
+   ```javascript
    JSON.parse(
        $.ajax({
            url: "/apps/myfolder/demo/dropdown",

@@ -70,7 +70,7 @@ To customize fonts by editing the tbxeditor-config.xml file, do the following:
 
     1. Double-click the tbxeditor-config.xml file at apps/fd/cm/config. The file opens.
 
-       ```xml    
+       ```xml  
        <editorConfig>
           <bulletIndent>0.25in</bulletIndent>
            

@@ -139,7 +139,7 @@ You can use the mysqldump utility to obtain the full database backup. Full backu
 
 See [Backup Strategy Summary](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
-```as3
+```text
 binlog_format=mixed
 log-bin=logname
 ```
