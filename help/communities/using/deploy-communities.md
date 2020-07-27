@@ -260,7 +260,7 @@ The following images show the results of changing the port from 4503 to 6103 by 
 
 #### Default Agent (publish) {#default-agent-publish}
 
-![](/help/communities/assets/chlimage_1-127.png)
+![configure-limits](/assets/configure-limits.png)
 
 #### Reverse Replication Agent (publish reverse) {#reverse-replication-agent-publish-reverse}
 
