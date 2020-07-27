@@ -1,4 +1,4 @@
----
+~~~~---
 title: Extending the Multi Site Manager
 seo-title: Extending the Multi Site Manager
 description: This page helps you extend the functionalities of the Multi Site Manager
@@ -431,7 +431,7 @@ The following `LiveActionFactory` class implements a `LiveAction` that logs mess
        /* get the source's cq:lastModifiedBy property */
        if (source != null && source.adaptTo(Node.class) !=  null){
         ValueMap sourcevm = source.adaptTo(ValueMap.class);
-        lastMod = sourcevm.get(com.day.cq.wcm.api.NameConstants.PN_PAGE_LAST_MOD_BY, String.class);
+        lastMod = sourcevm.get(com.day.cq.wcm.msm.api.MSMNameConstants.PN_PAGE_LAST_MOD_BY, String.class);
        }
 
        /* set the target node's la-lastModifiedBy property */
