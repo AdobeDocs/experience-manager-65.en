@@ -42,7 +42,7 @@ To reach this OSGi configuration:
 * Locate `AEM Communities User Generated Content Contribution Limits Configuration`.
 * Select the edit icon.
 
-![configure-limits](assets/configure-limits.png)
+![configure-limits](/assets/configure-limits.png)
 
 * **[!UICONTROL Automatically Apply UGC Contribution Limits]**
 
