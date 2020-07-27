@@ -1,4 +1,4 @@
-~~~~---
+---
 title: Extending the Multi Site Manager
 seo-title: Extending the Multi Site Manager
 description: This page helps you extend the functionalities of the Multi Site Manager
@@ -10,7 +10,6 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
-
 ---
 
 # Extending the Multi Site Manager{#extending-the-multi-site-manager}
