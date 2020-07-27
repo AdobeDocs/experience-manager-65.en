@@ -291,8 +291,6 @@ On the Asset Editor page, users can then enter values into the metadata fields (
 
 The Sub Assets component is where you can view and select sub-assets. You can determine what names appear under the [main asset](/help/assets/assets.md#what-are-digital-assets) and sub-assets.
 
-![screen_shot_2012-04-23at24025pm](assets/screen_shot_2012-04-23at24025pm.png)
-
 Double-click the Sub Assets component to open the sub assets dialog where you can change the titles for the main asset and any sub assets. The default values appear below the corresponding field.
 
 ![screen_shot_2012-04-23at23907pm](assets/screen_shot_2012-04-23at23907pm.png)
@@ -340,8 +338,6 @@ The following is an example of a populated Thumbnail component:
 #### Title {#title}
 
 The Title component displays the title of the asset and a description.
-
-![chlimage_1-163](assets/chlimage_1-391.png)
 
 By default, it is in read-only mode so users cannot edit it. To make it editable, double-click the component and clear the **Hide edit button** checkbox. In addition, enter a title for multiple assets.
 

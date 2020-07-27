@@ -8,7 +8,7 @@ contentOwner: AG
 
 >[!CAUTION]
 >
->The Experience Manager to Creative Cloud Folder Sharing feature is deprecated. Adobe strongly recommends using newer capabilities such as [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) or [Experience Manager desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Learn more in [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
+>The Experience Manager to Creative Cloud Folder Sharing feature is deprecated. Adobe strongly recommends using newer capabilities such as [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) or [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html). Learn more in [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
 
 Adobe Experience Manager can be configured to allow users in Assets to share folders with the users of Adobe Creative Cloud apps, so they are available as shared folders in the Adobe Creative Cloud Assets service. The feature can be used to exchange files between creative teams and Assets users, especially when the creative users do not have access to the Assets deployment (they are not on the enterprise network).
 

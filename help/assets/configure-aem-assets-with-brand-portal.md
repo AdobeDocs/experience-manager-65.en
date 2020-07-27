@@ -64,13 +64,13 @@ It is recommended to have AEM 6.5 to set up an AEM author instance. If you do no
 
 * If you are an Adobe partner, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) to request AEM 6.5.
 
-After you download AEM, for instructions to set up an AEM author instance, see [deploying and maintaining](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
+After you download AEM, for instructions to set up an AEM author instance, see [deploying and maintaining](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/deploy.html#default-local-install).
 
 ### Download and install AEM latest Service Pack {#servicepack}
 
 For detailed instructions see, 
 
-* [AEM 6.5 Service Pack Release Notes](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html) 
+* [AEM 6.5 Service Pack Release Notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html) 
 
 **Contact Customer Care** if you are unable to find the latest AEM package or Service Pack.
 

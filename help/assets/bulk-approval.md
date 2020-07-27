@@ -19,9 +19,7 @@ After the reviewer completes the review (approves or rejects assets), you receiv
 ## Create a review task for folders {#creating-a-review-task-for-folders}
 
 1. From the Assets user interface, select the folder for which you want to create a review task.
-1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-403](assets/chlimage_1-403.png)
+1. From the toolbar, click **[!UICONTROL Create Review Task]** ![create review task](assets/do-not-localize/create-review-task.png) to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Optional) From the **[!UICONTROL Project]** list, select the project to which you want to associate the review task. By default, the **[!UICONTROL None]** option is selected. If you do not want to associate any project with the review task, retain this selection.
 
@@ -67,9 +65,7 @@ After the reviewer completes the review (approves or rejects assets), you receiv
 ## Create a review task for collections {#creating-a-review-task-for-collections}
 
 1. From the Collections page, select the collection for which you want to create a review task.
-1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-405](assets/chlimage_1-405.png)
+1. From the toolbar, click **[!UICONTROL Create Review Task]** ![create review task](assets/do-not-localize/create-review-task.png) to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Optional) From the **[!UICONTROL Project]** list, select the project to which you want to associate the review task. By default, the **[!UICONTROL None]** option is selected. If you do not want to associate any project with the review task, retain this selection.
 

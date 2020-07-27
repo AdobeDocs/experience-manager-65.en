@@ -15,7 +15,9 @@ discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
 
 This page provides the essential information for working with the leaderboard feature.
 
-Prior to including the leaderboard component on a page, it is necessary to configure [Communities Scoring and Badges](implementing-scoring.md). See also [Scoring and Badges Essentials](configure-scoring.md).
+Prior to including the leaderboard component on a page, it is necessary to configure [Communities Scoring and Badges](implementing-scoring.md). 
+
+See [Scoring and Badges Essentials](configure-scoring.md).
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
