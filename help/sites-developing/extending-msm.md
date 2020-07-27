@@ -10,7 +10,6 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
-
 ---
 
 # Extending the Multi Site Manager{#extending-the-multi-site-manager}
@@ -25,6 +24,10 @@ This page helps you extend the functionalities of the Multi Site Manager:
 >[!NOTE]
 >
 >This page should be read in conjunction with [Reusing Content: Multi Site Manager](/help/sites-administering/msm.md).
+>
+>The following sections of Sites Repository Restructuring in AEM 6.4 might also be of interest:
+>* [Multi-site Manager Blueprint Configurations](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html#multi-site-manager-blueprint-configurations)
+>* [Multi-site Manager Rollout Configurations](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >
@@ -169,52 +172,67 @@ The new rollout configuration is then available to you when setting rollout conf
 
 #### Create the Rollout Configuration {#create-the-rollout-configuration}
 
-1. Open the **Tools** console in the classic UI; for example, [https://localhost:4502/miscadmin#/etc](https://localhost:4502/miscadmin#/etc)
+To create a new rollout configuration:
+
+1. Open CRXDE Lite; for example:
+   [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+
+1. Navigate to :
+   `/apps/msm/<your-project>/rolloutconfigs`
+   
+   >[!NOTE]
+   >This is your project's customized version of:
+   >`/libs/msm/wcm/rolloutconfigs`
+   >Must be created if this is your first configuration.
 
    >[!NOTE]
    >
-   >In the standard, touch-enabled UI you can navigate to the classic UI Tools console using the rail entries **Tools**, **Operations** and then **Configuration**.
+   >You must not change anything in the /libs path.
+   >This is because the content of /libs is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+   >The recommended method for configuration and other changes is:
+   >* Recreate the required item (i.e. as it exists in /libs) under /apps
+   >* Make any changes within /apps
 
-1. In the folder tree, select the **Tools**, **MSM**, **Rollout Configurations** folder.
-1. Click **New**, then **New Page** to define the Rollout Configuration properties:
+1. Under this **Create** a node with the following properties:
 
-    * **Title**: The title of the Rollout Configuration, such as My Rollout Configuration
-    * **Name**: The name of the node that stores the property values, such as myrolloutconfig
-    * Select **RolloutConfig Template**.
+    * **Name**: The node name of the rollout configuration. md#installed-synchronization-actions), for example `contentCopy` or `workflow`.
+    * **Type**: `cq:RolloutConfig`
 
-1. Click **Create**.
-1. Double-click on the rollout configuration that you created to open it for further configuration.
-1. Click **Edit**.
-1. In the **Rollout Config** dialog, select the **[Sync Trigger](/help/sites-administering/msm-sync.md#rollout-triggers)** to define the action that causes the rollout to occur.
-1. Click **OK** to save the changes.
+1. Add the following properties to this node:
+   * **Name**: `jcr:title`
+     **Type**: `String`
+     **Value**: An identiying title that will appear in the UI.
+   * **Name**: `jcr:description`
+     **Type**: `String`
+     **Value**: An optional description.
+   * **Name**: `cq:trigger` 
+     **Type**: `String`
+     **Value**: The [Rollout Trigger](/help/sites-administering/msm-sync.md#rollout-triggers) to be used. Select from:
+     * `rollout`
+     * `modification`
+     * `publish`
+     * `deactivate`
+
+1. Click **Save All**.
 
 #### Add Synchronization Actions to the Rollout Configuration {#add-synchronization-actions-to-the-rollout-configuration}
 
-Rollout configurations are stored below the `/etc/msm/rolloutconfigs` node. Add child nodes of type `cq:LiveSyncAction` to add synchronization actions to the rollout configuration. The order of the synchronization action nodes determines the order in which the actions occur.
+Rollout configurations are stored below the [rollout configuration node](#create-the-rollout-configuration) that you have created under `/apps/msm/<your-project>/rolloutconfigs` node. 
 
-1. Open CRXDE Lite; for example [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
-1. Select the `jcr:content` node below your rollout configuration node.
+Add child nodes of type `cq:LiveSyncAction` to add synchronization actions to the rollout configuration. The order of the synchronization action nodes determines the order in which the actions occur.
 
-   For example, for the rollout configuration with the **Name** property of `myrolloutconfig`, select the node:
+1. Still in CRXDE Lite, select your [Rollout Configuration](#create-the-rollout-configuration) node.
 
-   `/etc/msm/rolloutconfigs/myrolloutconfig/jcr:content`
+   For example:
+   `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
 
-1. Click **Create** then **Create Node**. Then configure the following node properties and click **OK**:
+1. **Create** a node with the following node properties:
 
-    * **Name**: The node name of the synchronization action. The name must be the same as the **Action Name** in the table under [Synchronization Actions](/help/sites-administering/msm-sync.md#installed-synchronization-actions), for example `contentCopy` or `workflow`.
-
+    * **Name**: The node name of the synchronization action. 
+      The name must be the same as the **Action Name** in the table under [Synchronization Actions](/help/sites-administering/msm-sync.md#installed-synchronization-actions), for example `contentCopy` or `workflow`.
     * **Type**: `cq:LiveSyncAction`
 
-1. Select the action node just created and add the following property to the node:
-
-    * **Name**: The property name of the action. The name must be the same as the **Property Name** in the table under [Synchronization Actions](/help/sites-administering/msm-sync.md#installed-synchronization-actions), for example `enabled`.
-
-    * **Type**: String
-
-    * **Value**: the property value of the action. For valid values, see the **Properties** column in [Synchronization Actions](/help/sites-administering/msm-sync.md#installed-synchronization-actions), for example `true`.
-
 1. Add and configure as many synchronization action nodes as you require. Rearrange the action nodes so that their order matches the order in which you want them to occur. The topmost action node occurs first.
-1. Click **Save All**.
 
 ### Creating and Using a Simple LiveActionFactory Class {#creating-and-using-a-simple-liveactionfactory-class}
 
@@ -431,7 +449,7 @@ The following `LiveActionFactory` class implements a `LiveAction` that logs mess
        /* get the source's cq:lastModifiedBy property */
        if (source != null && source.adaptTo(Node.class) !=  null){
         ValueMap sourcevm = source.adaptTo(ValueMap.class);
-        lastMod = sourcevm.get(com.day.cq.wcm.api.NameConstants.PN_PAGE_LAST_MOD_BY, String.class);
+        lastMod = sourcevm.get(com.day.cq.wcm.msm.api.MSMNameConstants.PN_PAGE_LAST_MOD_BY, String.class);
        }
 
        /* set the target node's la-lastModifiedBy property */
@@ -525,27 +543,19 @@ Create the MSM rollout configuration that uses the `LiveActionFactory` that you 
 
 1. Create and configuration a [Rollout Configuration with the standard procedure](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) - and using the properties:
 
-    1. Create:
-
-        1. **Title**: Example Rollout Configuration
-        1. **Name**: examplerolloutconfig
-        1. Using the **RolloutConfig Template**.
-
-    1. Edit:
-
-        1. **Sync Trigger**: On Activation
+   * **Title**: Example Rollout Configuration
+   * **Name**: examplerolloutconfig
+   * **cq:trigger**: `publish`
 
 #### Add the Live Action to the Example Rollout Configuration {#add-the-live-action-to-the-example-rollout-configuration}
 
 Configure the rollout configuration that you created in the previous procedure so that it uses the `ExampleLiveActionFactory` class.
 
 1. Open CRXDE Lite; for example, [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
-1. Create the following node under `/etc/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
+1. Create the following node under `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
     * **Name**: `exampleLiveAction`
     * **Type**: `cq:LiveSyncAction`
-
-   ![chlimage_1-75](assets/chlimage_1-75.png)
 
 1. Click **Save All**.
 1. Select the `exampleLiveAction` node and add the following property:
@@ -573,6 +583,7 @@ Activate the **Products** (english) page of the source branch and observe the lo
 16.08.2013 10:53:33.055 *INFO* [Thread-444535] com.adobe.example.msm.ExampleLiveActionFactory$ExampleLiveAction  ***Target node lastModifiedBy property updated: admin ***
 ```
 
+<!--
 ### Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
 
 In some cases, the **Chapters** selection is not required in the create site wizard (only the **Languages** selection is required). To remove this step in the default We.Retail English blueprint:
@@ -591,6 +602,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
     1. **Name** = `value`; **Type** = `String`; **Value** = `all`
 
     1. **Name** = `xtype`; **Type** = `String`; **Value** = `hidden`
+-->
 
 ### Changing language names and default countries {#changing-language-names-and-default-countries}
 
