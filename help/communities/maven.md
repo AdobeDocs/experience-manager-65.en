@@ -40,13 +40,13 @@ Following is an example of a GAV for the AEM Communities API jar:
 
 Ensure thet the version specified corresponds with the Communities package version installed for AEM Communities. To verify the installed version number:
 
-1. Login with adminstrative privileges.
+1. Log in with adminstrative privileges.
 1. Browse to [Package Manager](../../help/sites-administering/package-manager.md). For example, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
-1. Locate the package *cq-socialcommunities-pkg-1.x.xxx*
+1. Locate the package: `cq-socialcommunities-pkg-1.x.xxx`
 1. Extract the version from the package name:
-    * First version for AEM 6.3 is version 1.11.170.
-    * Feature packs will be versions 1.12.xxx.
+   * First version for AEM 6.3 is version 1.11.170.
+   * Feature packs will be versions 1.12.xxx.
 
 >[!NOTE]
  >
