@@ -21,7 +21,7 @@ To avoid accessibility issues with screen-readers which do not fully support the
 
 To use the new format in HTML5 Forms, mark the table as complex. To mark the table as complex, add `extras` tag in the XML source of table subform as follows:
 
-```
+```xml
 </extras>
  <text name="complexTable">1</text>
  </extras>

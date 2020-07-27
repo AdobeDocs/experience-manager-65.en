@@ -72,14 +72,14 @@ Test suites have a collection of test cases. You can have multiple test suites. 
 1. Right-click the **[!UICONTROL WeRetailFormTestCases]** node click **Create** > **Create File**. In the Name field, type `js.txt` and click **OK**.
 1. Open the js.txt file for editing, add the following code, and save the file:
 
-   ```
+   ```text
    #base=.
     init.js
    ```
 
 1. Create a file, init.js,in the `WeRetailFormTestCases`node. Add the below code to the file and tap **[!UICONTROL Save All]**.
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
        window.testsuites = window.testsuites || {};

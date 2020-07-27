@@ -359,7 +359,7 @@ The name of the output folder is a combination of current step number, original 
 
 The ECMAScript gets a reference of the workflow context service and creates an implementation of the WorkflowContextProcessor interface. The WorkflowContextProcessor implementation accepts input files, copies the file to a temporary location, and returns a document representing the copied file. Based on the value of the Boolean variable purgePrevious, the current step deletes the output generated last time by the same step when the step was started in the current workflow instance. In the end, the wfSvc.execute method is invoked to execute the WorkflowContextProcessor implementation. The contents of the output document are saved to the result folder at the physical path mentioned in the Watched Folder configuration node.
 
-```java
+```javascript
 log.error("Watch-folder workflow script called for step: " + graniteWorkItem.getNode().getTitle());
 var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
 // Custom WorkflowContextProcessor implementation which defines the processWorkflowContext() method purely in JS
@@ -613,7 +613,7 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
 
 1. In the PDFG folder, create a file named pdfg-openOffice-sample.ecma, and add the following code to the file:
 
-   ```java
+   ```javascript
    var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
    // Custom ContentProcessor implementation which defines the processInputs() method purely in JS
    var impl = { processWorkflowContext: function (wrkfContext) {

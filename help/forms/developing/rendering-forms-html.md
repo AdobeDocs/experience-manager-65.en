@@ -30,7 +30,7 @@ To render a form as HTML, the form design must be saved as an XDP file. A form d
 
 When a form design is rendered as an HTML form, each second-level subform is rendered as an HTML page (panel). You can view a subform’s hierarchy in Designer. Child subforms that belong to the root subform (the default name of a root subform is form1) are the panel subforms. The following example shows a form design’s subforms.
 
-```as3
+```java
      form1
          Master Pages
          PanelSubform1
@@ -96,11 +96,11 @@ When formserver renders an XDP that contains a drop-down list, in addition to cr
 
 You can disable these input elements in the following way if you don't want to post the data. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 
-```as3
+```java
 header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]
 ```
 
-```as3
+```java
 var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
     function _user_onsubmit() {
     var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]");
@@ -112,7 +112,7 @@ var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
 
 ## XFA subsets {#xfa-subsets}
 
-When creating form designs to render as HTML, you must restrict your scripting to the XFA subset for scripts in javascript language.
+When creating form designs to render as HTML, you must restrict your scripting to the XFA subset for scripts inJavaScript language.
 
 Scripts that run on the client or run on both the client and the server must be written within the XFA subset. Scripts that run on the server can use the full XFA scripting model and also use FormCalc. For information about using JavaScript, see [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
@@ -151,7 +151,7 @@ As you move between HTML pages (panels), only the state of the data is maintaine
 
 The following script maintains the `fillColor` of a field based on the value of `hiddenField`. Assume this script is located in a field’s `Calculate` event.
 
-```as3
+```java
      If (hiddenField.rawValue == 1)
          this.fillColor = "255,0,0"
      else

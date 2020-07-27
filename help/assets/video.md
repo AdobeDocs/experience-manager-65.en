@@ -763,7 +763,7 @@ To publish videos to your YouTube channel:
 1. In the upper-right corner of the video's properties page, click **[!UICONTROL Save and Close.]**
 1. On the toolbar, click **[!UICONTROL Quick Publish.]**
 
-   See also [Using Publication Management with AEM Sites](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
+   See also [Using Publication Management with AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
 
    You can optionally verify the published video on your YouTube channel.
 

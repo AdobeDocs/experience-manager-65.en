@@ -203,7 +203,7 @@ You require [AEM Forms add-on package](https://helpx.adobe.com/aem-forms/kb/aem-
 
 Retrieve the value of string data type using the following API:
 
-```
+```javascript
 workItem.getWorkflowData().getMetaDataMap().get(accname, Packages.java.lang.String)
 ```
 
@@ -211,13 +211,13 @@ workItem.getWorkflowData().getMetaDataMap().get(accname, Packages.java.lang.Stri
 
 Use the following API in the ECMA Script to update the value of a variable:
 
-```
+```javascript
 workItem.getWorkflowData().getMetaDataMap().put(variableName, value)
 ```
 
 **Example**
 
-```
+```javascript
 workItem.getWorkflowData().getMetaDataMap().put(salary, 50000)
 ```
 
@@ -231,7 +231,7 @@ You can use an API to set variables and pass them to invoke workflow instances.
 
 In this API, the **variableName** variable is set to **value** using metaData.put(variableName, value);
 
-```java
+```javascript
 import com.adobe.granite.workflow.model.WorkflowModel;
 import com.adobe.granite.workflow.metadata.MetaDataMap;
 import com.adobe.aemfd.docmanager.Document;
@@ -248,7 +248,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 Initialize the **doc** document object to a path ("a/b/c") and set the value of the **docVar** variable to the path stored in the document object.
 
-```java
+```javascript
 import com.adobe.granite.workflow.WorkflowSession;
 import com.adobe.granite.workflow.exec.WorkflowData;
 import com.adobe.granite.workflow.model.WorkflowModel;

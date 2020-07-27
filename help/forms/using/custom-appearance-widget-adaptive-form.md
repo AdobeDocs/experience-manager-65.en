@@ -243,7 +243,7 @@ Let's now look at an example to create a custom appearance for a numeric field t
 1. Replace the contents of the `bootstrap-number-input.js` (jQuery plugin) with the content of the `numericStepper-plugin.js` file.
 1. In the `numericStepper-widget.js` file, add the following code to override the render method to invoke the plugin and return the `$userControl` object:
 
-   ```java
+   ```javascript
    render : function() {
         var control = $.xfaWidget.numericInput.prototype.render.apply(this, arguments);
         var $control = $(control);
@@ -263,7 +263,7 @@ Let's now look at an example to create a custom appearance for a numeric field t
 
 1. In the `numericStepper-widget.js` file, override the `getOptionsMap` property to override the access option, and hide the + and - buttons in disabled mode.
 
-   ```java
+   ```javascript
    getOptionsMap: function(){
        var parentOptionsMap = $.xfaWidget.numericInput.prototype.getOptionsMap.apply(this,arguments),
 

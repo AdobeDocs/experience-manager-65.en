@@ -23,7 +23,7 @@ The `PDFsFromBookmarks` element causes a single document to be generated for eac
 
 For the purpose of this discussion, assume the following DDX document is used.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
       <PDFsFromBookmarks prefix="stmt">

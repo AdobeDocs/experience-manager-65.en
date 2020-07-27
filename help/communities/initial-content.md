@@ -17,9 +17,9 @@ In this section, you create the following pages which all use the [page template
 
 * SCF Sandbox Site, which will redirect to the English version of the main page.
 
-    * SCF Sandbox - The main page for the English version of the site.
+  * SCF Sandbox - The main page for the English version of the site.
 
-        * SCF Play - Child of the main page on which to play.
+  * SCF Play - Child of the main page on which to play.
 
 Although this tutorial does not delve into [language copies](../../help/sites-administering/tc-prep.md), it is designed so the root page may implement detection of the preferred language for the user through the HTML header, and redirect to the appropriate main page for the language. The convention is to use the two-letter country code for the node name of the page, e.g., "en" for English, "fr" for French, and so on.
 
@@ -31,13 +31,13 @@ Now that there is a [page template](initial-app.md#createthepagetemplate), we ca
 
    To switch to the classic UI, select global navigation and hover over the right side of the Projects icon. Select the *Switch to Classic UI* icon which appears:
 
-   ![chlimage_1-36](assets/chlimage_1-36.png)
+   ![classic-ui](assets/classic-ui.png)
 
    The ability to switch to the classic UI must be [enabled by an administrator](../../help/sites-administering/enable-classic-ui.md).
 
 1. From the [classic UI Welcome page](http://localhost:4502/welcome.html), select **[!UICONTROL Websites]**.
 
-   ![chlimage_1-37](assets/chlimage_1-37.png)
+   ![classic-ui-website](assets/classic-ui-website.png)
 
    Alternatively, access the classic UI for Websites directly by browsing to [/siteadmin.](http://localhost:4502/siteadmin)
 
@@ -45,34 +45,34 @@ Now that there is a [page template](initial-app.md#createthepagetemplate), we ca
 
    In the **[!UICONTROL Create Page]** dialog, enter the following:
 
-    * Title: `SCF Sandbox Site`
-    * Name: `an-scf-sandbox`
-    * Select **[!UICONTROL An SCF Sandbox Play Template]**
-    * Click **[!UICONTROL Create]**
+   * Title: `SCF Sandbox Site`
+   * Name: `an-scf-sandbox`
+   * Select **[!UICONTROL An SCF Sandbox Play Template]**
+   * Click **[!UICONTROL Create]**
 
-   ![chlimage_1-38](assets/chlimage_1-38.png)
+   ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
 1. In the explorer pane, select the page you just created, `/Websites/SCF Sandbox Site`, and click **[!UICONTROL New]** > **[!UICONTROL New Page]**:
 
-    * Title: `SCF Sandbox`
-    * Name: `en`
-    * Select **[!UICONTROL ]An SCF Sandbox Play Template**
-    * Click **[!UICONTROL ]Create**
+   * Title: `SCF Sandbox`
+   * Name: `en`
+   * Select **[!UICONTROL An SCF Sandbox Play Template]**
+   * Click **[!UICONTROL Create]**
 
 1. In the explorer pane, select the page you just created, `/Websites/SCF Sandbox Site/SCF Sandbox`, and click **[!UICONTROL New]** > **[!UICONTROL New Page]**
 
-    * Title: `SCF Play`
-    * Name: `play`
-    * Select **[!UICONTROL An SCF Sandbox Play Template]**
-    * Click **[!UICONTROL Create]**
+   * Title: `SCF Play`
+   * Name: `play`
+   * Select **[!UICONTROL An SCF Sandbox Play Template]**
+   * Click **[!UICONTROL Create]**
 
 1. This is how the website now appears in the Websites console. Notice that child pages of the item selected in the explorer pane are displayed in the right pane where they can be managed.
 
-   ![chlimage_1-39](assets/chlimage_1-39.png)
+   ![classic-ui-website-page](assets/classic-ui-website-page.png)
 
    This is the repository view of what was created using the Website tool and the template:
 
-   ![chlimage_1-40](assets/chlimage_1-40.png)
+   ![classic-ui-repository-view](assets/classic-ui-repository-view.png)
 
 ## Add the Design Path {#add-the-design-path}
 
@@ -82,25 +82,25 @@ When ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesig
 
 was defined, which provides the optional ability to reference design assets in a script using `currentDesign.getPath()`. For example
 
-* &lt;% String favIcon = currentDesign.getPath() + "/favicon.ico"; %&gt;
+* `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
 
-    * Name: `cq:designPath`
-    * Type: `String`
-    * Value: `/etc/designs/an-scf-sandbox`
+  * Name: `cq:designPath`
+  * Type: `String`
+  * Value: `/etc/designs/an-scf-sandbox`
 
 * Click the green `[+] Add`
 
 The respository should appear as follows:
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 * Click **[!UICONTROL Save All]**
 
-[ Trouble saving? Re-login! ]
+In case of any trouble saving the configuration, re-login and configure again.
 
 >[!NOTE]
  >
- >The use of cq:designPath is optional and is unrelated to the [use of clientlibs](develop-app.md#includeclientlibsintemplate), which are essentially required as the SCF components use [clientlibs](client-customize.md#clientlibs-for-scf) to manage their JS and CSS.
+ >The use of `cq:designPath` is optional and is unrelated to the [use of clientlibs](develop-app.md#includeclientlibsintemplate), which are essentially required as the SCF components use [clientlibs](client-customize.md#clientlibs-for-scf) to manage their JS and CSS.
  >
 

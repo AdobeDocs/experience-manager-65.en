@@ -622,7 +622,7 @@ After you have added your client library in the CRX repository, use it in your a
 
 **Function Statement**
 
-```
+```javascript
 function area(len) {
     return len*len;
 }
@@ -632,7 +632,7 @@ This function is included without `jsdoc` comments.
 
 **Function Expression**
 
-```
+```javascript
 var area;
 //Some codes later
 /** */

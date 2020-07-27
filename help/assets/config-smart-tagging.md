@@ -23,6 +23,9 @@ Before you can use the Smart Content Service, ensure the following to create an 
 * An Adobe ID account that has administrator privileges for the organization.
 * The Smart Content Service service is enabled for your organization.
 
+<!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
+-->
+
 To enable Enhanced Smart Tags, in addition to the above, also install the latest [AEM service pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
 
 ## Obtain public certificate {#obtain-public-certificate}
@@ -117,11 +120,9 @@ After you've completed the configuration, you can use a JMX MBean to validate th
 
 1. In the **[!UICONTROL Arguments]** tab, select **[!UICONTROL Ignore Errors]** if you want the workflow to complete even if the automatic tagging step fails.
 
-   ![Configure DAM Update Asset workflow to add smart tag step and select handler advance](assets/smart-tag-step-properties-workflow2.png)
-
    To tag assets when they are uploaded irrespective of whether smart tagging is enabled on folders, select **[!UICONTROL Ignore Smart Tag Flag]**.
 
-   ![Configure DAM Update Asset workflow to add smart tag step and select ignore Smart Tag flag](assets/smart-tag-step-properties-workflow3.png)
+   ![Configure DAM Update Asset workflow to add smart tag step and select ignore Smart Tag flag](assets/smart-tag-step-properties-workflow2.png)
 
 1. Click **[!UICONTROL OK]** to close the process step, and then save the workflow.
 

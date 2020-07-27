@@ -16,11 +16,9 @@ You can create a private folder in the Adobe Experience Manager Assets user inte
 
    ![Create assets folder](assets/Create-folder.png)
 
-1. In the **[!UICONTROL Create Folder]** dialog, enter a title and name (optional) for the folder, and select **[!UICONTROL Private]**.
+1. In the **[!UICONTROL Create Folder]** dialog, enter a title and name (optional) for the folder, and select **[!UICONTROL Private]** option.
 
-   ![Select Private check box to make the folder private](assets/private-folder.png)
-
-1. Click **[!UICONTROL Create]**. A private folder is created in the UI.
+1. Click **[!UICONTROL Create]**. A private folder is created.
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 

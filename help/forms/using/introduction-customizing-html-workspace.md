@@ -199,14 +199,14 @@ It is primarily meant for customizations, as it provides the capability to gener
 
             * libs - Contains all third-party libraries used in AEM Forms workspace.
             * licenses - Contains licenses for HTML and JS files as well as code to prefix these licenses to respective source files.
-            * minifier - Used for combination, minification, and uglification of customized javascript code.
-            * resourcejs_optimizer - Used for combination, minification, and uglification of javascript source.
+            * minifier - Used for combination, minification, and uglification of customizedJavaScript code.
+            * resourcejs_optimizer - Used for combination, minification, and uglification ofJavaScript source.
             * resource_generator - Used for generating register.js and modelcontrollerpath.js.
             * runtime:
 
                 * initializer - Contains initializer.js used to initialize backbone views and models used in AEM Forms workspace.
                 * models - Contains backbone models of all components present in AEM Forms workspace.
-                * routes - Contains javascript files and HTML files which loads start process, todo, tracking, and preferences in AEM Forms workspace.
+                * routes - ContainsJavaScript files and HTML files which loads start process, todo, tracking, and preferences in AEM Forms workspace.
                 * services - Contains service.js used in AEM Forms workspace. All the server calls are made through service.js.
                 * templates - Contains all templates, that is, HTML files of all views in AEM Forms workspace.
                 * util - Contains all utility files (javascript) which are used in AEM Forms workspace.
@@ -348,7 +348,7 @@ mvn clean -P Dev install on client-pkg
 
         * initializer - Contains initializer.js and modelcontrollerpath.js.
         * models - Contains models of all components in AEM Forms workspace.
-        * routes - Contains javascript files and HTML files which loads start process, todo, tracking, and preferences in AEM Forms workspace.
+        * routes - ContainsJavaScript files and HTML files which loads start process, todo, tracking, and preferences in AEM Forms workspace.
         * services - Contains service.js used in AEM Forms workspace.
         * templates - Contains all templates, that is, HTML files of all components in AEM Forms workspace.
         * util - Contains all utility files (JavaScript) which are used in AEM Forms workspace.

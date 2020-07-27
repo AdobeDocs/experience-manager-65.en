@@ -61,7 +61,7 @@ Apache can communicate with JBoss using HTTP or the AJP protocol.
 
    Add the following configuration to the *APACHE_HOME/conf/httpd.conf* configuration file.
 
-   ```java
+   ```xml
    <Location /content/xfaforms>
      <IfModule mod_deflate.c>
         SetOutputFilter DEFLATE

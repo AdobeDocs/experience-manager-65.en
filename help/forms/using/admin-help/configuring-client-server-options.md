@@ -113,7 +113,7 @@ With extended authentication enabled, users opening a policy protected document 
 1. Open the file in an editor, and locate the AllowedUrls node.
 1. In the `AllowedUrls` node, add the following lines: `<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
 
-   ```as3
+   ```xml
    <entry key="sso-l" value="/ssoexample/login.jsp"/>
    <entry key="sso-s" value="/ssoexample"/>
    <entry key="sso-o" value="/ssoexample/logout.jsp"/>
@@ -816,7 +816,7 @@ Acrobat Reader DC extensions for Microsoft Office is a plug-in used with the Mic
 1. Export the document security configuration file. (See [Manually editing the document security configuration file](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Open the configuration file in an editor and locate the `PolicyServer` node. Add a `ClientVersionRules` node as an immediate child of the `PolicyServer` node, if one does not exist:
 
-   ```as3
+   ```java
     <node name="ClientVersionRules">
         <map>
             <entry key="infoURL" value="URL"/>
@@ -873,7 +873,7 @@ Acrobat Reader DC extensions for Microsoft Office is a plug-in used with the Mic
 
 In this example, all Windows clients are denied access.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value="https://www.dont.use/windows.html"/>
@@ -891,7 +891,7 @@ In this example, all Windows clients are denied access.
 
 In this example, My Application version 3.0 and My Other Application version 2.0 are denied access. The same denials information URL is used regardless of the reason for denial.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -916,7 +916,7 @@ In this example, My Application version 3.0 and My Other Application version 2.0
 
 In this example, all requests from a Microsoft PowerPoint 2007 or Microsoft PowerPoint 2010 installation of Acrobat Reader DC extensions for Microsoft Office are denied.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -949,7 +949,7 @@ By default, you can specify a maximum of five elements in a watermark. Also, the
 
    The second entry, *max elements* is the maximum number of elements that is allowed in a watermark. Default is 5.
 
-   ```as3
+   ```java
    <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/>
    <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>
    ```
@@ -969,7 +969,7 @@ The following changes to the config.xml disables all external links from the Rig
 1. Open the configuration file in an editor and locate the `DisplaySettings` node.
 1. To disable all external links, in the `DisplaySettings` node, add the following entry and then save the file: `<entry key="ExternalLinksAllowed" value="false"/>`
 
-   ```as3
+   ```java
    <entry key="ExternalLinksAllowed" value="false"/>
    ```
 
@@ -983,7 +983,7 @@ The following changes to the config.xml enable TLS support for the Invited User 
 1. Open the configuration file in an editor and locate the `DisplaySettings` node.
 1. Locate the following node: `<node name="ExternalUser">`
 
-   ```as3
+   ```java
    <node name="ExternalUser">
    ```
 
@@ -999,7 +999,7 @@ The following changes to the config.xml todisable SOAP endpoints for document se
 1. Export the document security configuration file. (See [Manually editing the document security configuration file](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Open the configuration file in an editor and locate the following node: `<node name="DRM">`
 
-   ```as3
+   ```java
    <node name="DRM">
    ```
 
@@ -1009,7 +1009,7 @@ The following changes to the config.xml todisable SOAP endpoints for document se
 
 1. To disable SOAP endpoints for document security documents, set the value attribute to **false**.
 
-   ```as3
+   ```java
    <node name="DRM">
        <map>
            <entry key="AllowUnencryptedVoucher" value="false"/>

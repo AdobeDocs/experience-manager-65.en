@@ -18,7 +18,7 @@ You can encrypt a PDF document with a password by using the Assembler service. A
 
 For the purpose of this discussion, assume that the following DDX document is used.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
         <PDF result="EncryptLoan.pdf" encryption="userProtect">

@@ -36,7 +36,7 @@ For example, you can prepopulate a form such as the sample confirmation form. (S
 
 To prepopulate the sample confirmation form, you have to create an XML data source that contains three XML elements that match the three fields in the form. This form contains the following three fields: `FirstName`, `LastName`, and `Amount`. The first step is to create an XML data source that contains XML elements that match the fields located in the form design. The next step is to assign data values to the XML elements, as shown in the following XML code.
 
-```as3
+```xml
      <Untitled>
          <FirstName>Jerry</FirstName>
          <LastName>Johnson</LastName>
@@ -107,7 +107,7 @@ An XML data source that is used to prepopulate the purchase order form shown in 
 
 The following XML data source is used to prepopulate the purchase order form.
 
-```as3
+```xml
      <header>
          <!-- XML elements used to prepopulate non-repeating fields such as address
          <!and city

@@ -39,11 +39,9 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
 1. Click **[!UICONTROL Create & Translate]** at the bottom.
 
-   ![chlimage_1-58](assets/chlimage_1-58.png)
-
 1. From the **[!UICONTROL Target Languages]** list, select the language for which you want to create a folder structure.
 
-   ![chlimage_1-59](assets/chlimage_1-59.png)
+   ![select target language](assets/target-language.png)
 
 1. From the **[!UICONTROL Project]** list, choose **[!UICONTROL Create structure only]**.
 
@@ -51,11 +49,11 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
 1. Click **[!UICONTROL Create]**. The new structure for the target language is listed under **[!UICONTROL Language Copies]**.
 
-   ![chlimage_1-61](assets/chlimage_1-61.png)
+   ![language copies](assets/lang-copy2.png)
 
 1. Click the structure from the list, and then click **[!UICONTROL Reveal in Assets]** to navigate to the folder structure within the target language.
 
-   ![chlimage_1-62](assets/chlimage_1-62.png)
+   ![reveal-in-assets](assets/reveal-in-assets.png)
 
 ### Create a new translation project {#create-a-new-translation-project}
 
@@ -67,8 +65,6 @@ If you use this option, assets to be translated are copied to the language root 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
 1. Click **[!UICONTROL Create & Translate]** at the bottom.
-
-   ![chlimage_1-64](assets/chlimage_1-64.png)
 
 1. From the **[!UICONTROL Target Languages]** list, select the language(s) for which you want to create a folder structure.
 
@@ -84,11 +80,11 @@ If you use this option, assets to be translated are copied to the language root 
 
 1. Click **[!UICONTROL Create]**. Assets from the source folder are copied to the target folders for the locales you selected in step 4.
 
-   ![chlimage_1-68](assets/chlimage_1-68.png)
+   ![language copies](assets/lang-copy2.png)
 
 1. To navigate to the folder, select the language copy, and click **[!UICONTROL Reveal in Assets]**.
 
-   ![chlimage_1-69](assets/chlimage_1-69.png)
+   ![reveal-in-assets](assets/reveal-in-assets.png)
 
 1. Navigate to the Projects console. The translation folder is copied to the Projects console.
 
@@ -128,11 +124,9 @@ If you use this option, the translation workflow runs for assets that you add to
 1. Click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**. A list of available translation copies is displayed.
 1. Click **[!UICONTROL Create & Translate]** at the bottom.
 
-   ![chlimage_1-75](assets/chlimage_1-75.png)
-
 1. From the **[!UICONTROL Target Languages]** list, select the language(s) for which you want to create a folder structure.
 
-   ![chlimage_1-76](assets/chlimage_1-76.png)
+   ![select target language](assets/target-language.png)
 
 1. From the **[!UICONTROL Project]** list, select **[!UICONTROL Add to existing translation project]** to run the translation workflow on the folder.
 
@@ -200,11 +194,9 @@ If you use this option, a translation project is created for the set of assets f
 1. Open the **[!UICONTROL References]** pane, and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
 1. Select the check box before **[!UICONTROL Language Copies]**, and then select the target folder corresponding to the appropriate locale.
 
-   ![chlimage_1-84](assets/chlimage_1-84.png)
+   ![select language copy](assets/lang-copy1.png)
 
 1. Click **[!UICONTROL Update language copies]** at the bottom.
-
-   ![chlimage_1-85](assets/chlimage_1-85.png)
 
 1. From the **[!UICONTROL Project]** list, choose **[!UICONTROL Create a new translation project]**.
 
@@ -254,11 +246,9 @@ If you use this option, the set of assets are added to an existing translation p
 
 1. Select the check box before **[!UICONTROL Language Copies]**, which selects all language copies. Unselect other copies except the language copy (copies) corresponding to the locale(s) to which you want to translate.
 
-   ![chlimage_1-95](assets/chlimage_1-95.png)
+   ![select language copy](assets/lang-copy1.png)
 
 1. Click **[!UICONTROL Update language copies]** at the bottom.
-
-   ![chlimage_1-96](assets/chlimage_1-96.png)
 
 1. From the **[!UICONTROL Project]** list, choose **[!UICONTROL Add to existing translation project]**.
 
@@ -266,7 +256,7 @@ If you use this option, the set of assets are added to an existing translation p
 
 1. From the **[!UICONTROL Existing translation project]** list, select a project to add the asset for translation.
 
-   ![chlimage_1-98](assets/chlimage_1-98.png)
+   ![select a project](assets/select-a-project.png)
 
 1. Click **[!UICONTROL Start]**.
 1. See steps 9-14 of [Add to existing translation project](translation-projects.md#add-to-existing-translation-project) to complete the rest of the procedure.
@@ -287,17 +277,13 @@ When you run a translation workflow to update a language copy with edited versio
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
 1. Select the checkbox next to **[!UICONTROL Title]**.
-1. From the toolbar, click **[!UICONTROL Accept Translation]** and then click **[!UICONTROL Accept]** in the dialog to overwrite the translated asset in the target folder with the translated version of the edited asset.
-
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+1. From the toolbar, click **[!UICONTROL Accept Translation]** ![accept translation](assets/do-not-localize/thumb-up.png) and then click **[!UICONTROL Accept]** in the dialog to overwrite the translated asset in the target folder with the translated version of the edited asset.
 
    >[!NOTE]
    >
    >To enable the translation workflow to update the destination asset(s), accept both the asset and metadata.
 
-   Click **[!UICONTROL Reject Translation]** to retain the originally translated version of the asset in the target locale root and reject the edited version.
-
-   ![chlimage_1-103](assets/chlimage_1-103.png)
+   Click **[!UICONTROL Reject Translation]** ![reject translation](assets/do-not-localize/thumb-down.png) to retain the originally translated version of the asset in the target locale root and reject the edited version.
 
 1. To view the translated metadata, navigate to the [!DNL Assets] console and open the [!UICONTROL Properties] page for each of the translated assets.
 

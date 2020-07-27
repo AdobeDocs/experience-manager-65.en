@@ -59,7 +59,7 @@ You can insert inline condition in a letter by inserting the inline condition in
 
    Double-tap a DD element to insert it in the condition. Insert the appropriate operator and construct the following condition in dialog.
 
-   ```java
+   ```javascript
    ${DD_creditcard_Gender=="Male"}
 
    ```
@@ -72,7 +72,7 @@ You can insert inline condition in a letter by inserting the inline condition in
 
 1. Insert similar condition by selecting the text `Ma'am`.
 
-   ```java
+   ```javascript
    ${DD_creditcard_Gender == "Female"}
    ```
 
@@ -141,7 +141,7 @@ The following example gives you the steps for using repeat to structure and rend
 
 1. Open (while editing or creating) a text module that has DD elements that render repeated/dynamic data and embed the required text around the DD elements. For example, a text module has the following DD elements to create a statement of transactions on a credit card:
 
-   ```
+   ```javascript
    {^DD_creditcard_TransactionDate^} {^DD_creditcard_TransactionAmount^}
    {^DD_creditcard_TransactionType^}
    ```
@@ -154,7 +154,7 @@ The following example gives you the steps for using repeat to structure and rend
 
    ![1_repeat](assets/1_repeat.png)
 
-   ```
+   ```javascript
 
    Date: {^DD_creditcard_TransactionDate^} Amount (USD): {^DD_creditcard_TransactionAmount^} Transaction Type: {^DD_creditcard_TransactionType^}
 
@@ -176,7 +176,7 @@ The following example gives you the steps for using repeat to structure and rend
 
 1. If required, insert a condition to selectively render the transactions, such as to render transaction amounts bigger than 50 cents:
 
-   ```
+   ```javascript
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
