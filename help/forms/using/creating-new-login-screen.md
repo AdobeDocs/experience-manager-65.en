@@ -62,6 +62,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
    ***Locale is language code***
 
    ```jsp
+
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -83,7 +84,9 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                break;
            }
        }
+
    To
+
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -109,11 +112,14 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                break;
            }
        }
+
    ```
+
 
    ***Locale is language-country code***
 
    ```jsp
+
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -135,7 +141,9 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                break;
            }
        }
+
    To
+
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -161,17 +169,24 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                break;
            }
        }
+
    ```
 
+
    ***To change Default locale***
-  
+
    ```jsp
+
    String browserLocale = "en";
    for(int i=0; i<locales.length; i++)
+
    To
+
    String browserLocale = "ar";
    for(int i=0; i<locales.length; i++)
+
    ```
+
 
 ### Adding new text, or modifying existing text {#adding-new-text-or-modifying-existing-text}
 
@@ -195,23 +210,28 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
    ![Add new key-value pair](assets/capture_new.png)
 
    ```jsp
+
    div class="loginContent">
                        <span class="loginFlow"></code>
                        <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></code>
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
+
     ```
 
    To
-  
+
    ```jsp
+
    div class="loginContent">
                        <span class="loginFlow"></code>
                        <span class="loginVersion"><%= i18n.get("My Welcome Message") %></code>
                        <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></code>
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
+
    ```
+
 
 ### Adding new style, or modifying existing style {#adding-new-style-or-modifying-existing-style}
 
@@ -236,24 +256,30 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 1. For example:
 
     * Add the following to `/apps/livecycle/core/content/login/login.css`.
-  
+
    ```css
+
    .newLoginContentArea {
     width: 700px;
     padding: 100px 0px 0px 100px;
    }
+
    ```
 
     * Modify following in /apps/livecycle/core/components/login.jsp.
 
    ```jsp
+
    <div class="loginContentArea">
+
    ```
 
    To
 
    ```jsp
+
    <div class="newLoginContentArea">
+
    ```
 
 >[!NOTE]
@@ -277,22 +303,29 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
     * Add the following to `/apps/livecycle/core/content/login/login.css`
 
    ```css
+
    .newLoginContainerBkg {
     background-image: url(my_Bg.gif);
     background-repeat: no-repeat;
     background-position: left top;
     width: 727px;
-   }  
+   }
+  
    ```
+
 
     * Modify following in /apps/livecycle/core/components/login.jsp.
 
    ```jsp
+
    <div class="loginContainerBkg">
+
    ```
 
    To
 
    ```jsp
+
    <div class="newLginContainerBkg">
-   ```  
+
+   ```
