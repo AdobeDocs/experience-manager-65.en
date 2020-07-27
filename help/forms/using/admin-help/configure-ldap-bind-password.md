@@ -19,7 +19,7 @@ To avoid security risks, the bind password field in the exported configuration f
 1. To export the current configuration setting to a file, click Export and save the configuration file in another location.
 1. In the file, locate the `Domains` > *[Your domain name]* > `DirectoryConfigs` > `LDAPGroupConfig` node. Here is an example:
 
-   ```as3
+   ```xml
     <node name="LDAPGroupConfig">
         <map>
             <entry key="bindanonymously" value="false" />
@@ -34,7 +34,7 @@ To avoid security risks, the bind password field in the exported configuration f
 
 1. In the file, locate the `Domains` > *[Your domain name]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` node. Here is an example:
 
-   ```as3
+   ```xml
     <node name="LDAPUserConfig">
         <map>
             <entry key="bindanonymously" value="false" />

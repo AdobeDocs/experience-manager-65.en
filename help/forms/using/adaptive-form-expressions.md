@@ -227,7 +227,7 @@ You can also use the GuideBridge APIs outside the expressions. For example, you 
 
 To use GuideBridge API for above mentioned example, capture an instance of GuideBridge. To capture the instance, listen to `bridgeInitializeStart`event of a `window`object:
 
-```
+```javascript
 window.addEventListener("bridgeInitializeStart", function(evnt) {
 
      // get hold of the guideBridge object
@@ -257,7 +257,7 @@ GuideBridge also provides certain events for external scripts on the hosting pag
 
 Use the following code to register handlers:
 
-```
+```javascript
 guideBridge.on("elementValueChanged", function (event, data)  {
 
       // execute some logic when value of a field is changed

@@ -20,7 +20,7 @@ Before you can pass the DDX document to the Assembler service, convert the XML f
 
 For this discussion, assume that the following DDX document is dynamically created.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
       <PDFsFromBookmarks prefix="stmt">

@@ -34,7 +34,7 @@ This fragment contains two subforms named *subPatientPhysical* and *subPatientHe
 
 The following DDX document assembles multiple XDP fragments into an XDP document.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
          <XDP result="tuc018result.xdp">
@@ -49,7 +49,7 @@ The following DDX document assembles multiple XDP fragments into an XDP document
 
 The DDX document contains an XDP `result` tag that specifies the name of the result. In this situation, the value is `tuc018result.xdp`. This value is referenced in the application logic that is used to retrieve the XDP document after the Assembler service returns the result. For example, consider the following Java application logic that is used to retrieve the assembled XDP document (notice the value is bolded):
 
-```as3
+```java
  //Iterate through the map object to retrieve the result XDP document
  for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
      // Retrieve the Map object’s value
@@ -116,7 +116,7 @@ A DDX document must be referenced to assemble multiple XDP documents. This DDX d
 
 To assemble multiple XDP documents, reference all XDP files that are used to assemble the result XDP document. Ensure that the name of the sub form contained in the XDP document that is referenced by the `source` attribute is specified in the `fragment` attribute. A sub form is defined in Designer. For example, consider the following XML.
 
-```as3
+```xml
  <XDPContent insertionPoint="ddx_fragment" source="tuc018_contact.xdp" fragment="subPatientContact" required="false"/>
 ```
 
@@ -213,7 +213,7 @@ Assemble multiple XDP fragments by using the Assembler Service API (web service)
 
    Create a Microsoft .NET project that uses MTOM. Ensure that you use the following WSDL definition when setting a service reference:
 
-   ```as3
+   ```java
     https://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1.
    ```
 

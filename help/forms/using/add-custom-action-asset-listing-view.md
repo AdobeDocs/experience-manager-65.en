@@ -165,7 +165,7 @@ To customize Correspondence Management to allow your users to download a flat PD
 
        Then append the following code at the end in the formaction.js file (under the /apps branch) and click **Save All**:
 
-       ```
+       ```javascript
        /* Action url for xml file to be added.*/
        var ACTION_URL = "/apps/fd/cm/ma/gui/content/commons/actionhandlers/items/letterpdfdownloader.html";
 

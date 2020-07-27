@@ -114,14 +114,14 @@ Let's look at an example how you can set up an Apache 2.4 reverse proxy server w
 
 1. Open the `httpd.conf` configuration file and uncomment the following lines of code. Alternatively, you can add these lines of code in the file.
 
-   ```
+   ```text
    LoadModule proxy_html_module modules/mod_proxy_html.so
    LoadModule proxy_http_module modules/mod_proxy_http.so
    ```
 
 1. Set up proxy rules by adding the following lines of code in the `httpd-proxy.conf` configuration file.
 
-   ```
+   ```text
    ProxyPass /forms https://[AEM_Instance]/forms
    ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
@@ -130,7 +130,7 @@ Let's look at an example how you can set up an Apache 2.4 reverse proxy server w
 
 If you do not mount the AEM server on a context path, the proxy rules at Apache layer will be as follows:
 
-```java
+```text
 ProxyPass /content https://<AEM_Instance>/content
 ProxyPass /etc https://<AEM_Instance>/etc
 ProxyPass /etc.clientlibs https://<AEM_Instance>/etc.clientlibs

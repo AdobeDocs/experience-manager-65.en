@@ -25,7 +25,7 @@ To invoke a Forms service (a process becomes a service when the process is activ
 
 After a REST endpoint is configured, you can invoke a Forms service by using an HTTP GET method or a POST method.
 
-```as3
+```java
  action="https://hiro-xp:8080/rest/services/[ServiceName]/[OperationName]:[ServiceVersion]" method="post" enctype="multipart/form-data"
 ```
 
@@ -86,7 +86,7 @@ Some AEM Forms services, such as human-centric long-lived processes, require a l
 
 An AEM Forms service can be invoked asynchronously by substituting `services` with `async_invoke` in the invocation URL, as shown in the following example.
 
-```as3
+```java
  http://localhost:8080/rest/async_invoke/SomeService. SomeOperation?integer_input_variable=123&string_input_variable=abc
 ```
 
@@ -94,7 +94,7 @@ This URL returns the identifier value (in “text/plain” format) of the job re
 
 The status of the asynchronous invocation can be retrieved by using an invocation URL with `services` substituted with `async_status`. The URL must contain a `job_id` parameter specifying the identifier value of the job associated with this invocation. For example:
 
-```as3
+```java
  http://localhost:8080/rest/async_status/SomeService.SomeOperation?job_id=2345353443366564
 ```
 
@@ -104,7 +104,7 @@ If the job is completed, the URL returns the same result as if the service was i
 
 Once the job is completed and the result is retrieved, the job can disposed of by using an invocation URL with `services` is substituted with `async_dispose`. The URL should also contain a `job_id` parameter specifying the identifier value of the job. For example:
 
-```as3
+```java
  http://localhost:8080/rest/async_dispose/SomeService.SomeOperation?job_id=2345353443366564
 ```
 
@@ -116,7 +116,7 @@ If a synchronous or asynchronous invocation request cannot be completed due to a
 
 If the invocation URL (or the `async_result` URL in the case of an asynchronous invocation) does have an .xml suffix, the REST Provider returns the HTTP code `200 OK`followed by an XML document describing the exception in the following format.
 
-```as3
+```xml
  <exception>
        <exception_class_name>[
        <DSCError>
@@ -180,7 +180,7 @@ The following REST invocation examples are provided:
 
 The following HTML example passes two `Boolean` values to an AEM Forms process named `RestTest2`. The name of the invocation method is `invoke` and the version is 1.0. Notice that the HTML Post method is used.
 
-```as3
+```html
  <html>
  <body>
  
@@ -200,7 +200,7 @@ The following HTML example passes two `Boolean` values to an AEM Forms process n
 
 The following HTML example passes a date value to an AEM Forms process named `SOAPEchoService`. The name of the invocation method is `echoCalendar`. Notice that the HTML `Post` method is used.
 
-```as3
+```html
  <html>
  <body>
  
@@ -219,7 +219,7 @@ The following HTML example passes a date value to an AEM Forms process named `SO
 
 The following HTML example invokes an AEM Forms process named `MyApplication/EncryptDocument` that requires a PDF document. For information about this process, see [Invoking AEM Forms using MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
 
-```as3
+```html
  <html>
  <body>
  
@@ -239,7 +239,7 @@ The following HTML example invokes an AEM Forms process named `MyApplication/Enc
 
 The following HTML example invokes an AEM Forms process named `RestTest3` that requires a document and two text values. Notice that the HTML Post method is used.
 
-```as3
+```html
  <html>
  <body>
  
@@ -261,7 +261,7 @@ The following HTML example invokes an AEM Forms process named `RestTest3` that r
 
 The following HTML example invokes an AEM Forms process named `SOAPEchoService` that requires an enumeration value. Notice that the HTML Post method is used.
 
-```as3
+```html
  <html>
  <body>
  
@@ -291,7 +291,7 @@ When this process is invoked, it performs the following actions:
 
    When this process is invoked using a REST request, the encrypted PDF document is displayed in the web browser. Before you view the PDF document, you specify the password (unless security is disabled). The following HTML code represents a REST invocation request to the `MyApplication/EncryptDocument` process.
 
-   ```as3
+   ```html
     <html>
     <body>
     <form action="https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument" method="post" enctype="multipart/form-data">

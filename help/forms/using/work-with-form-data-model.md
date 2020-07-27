@@ -194,7 +194,7 @@ Use the request attribute to retrieve the associated properties from the data so
 
 1. Include the following text in the head.jsp file:
 
-   ```
+   ```jsp
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
     request.setAttribute("paramMap",paraMap);%>
@@ -504,24 +504,24 @@ The following table lists the constraints for input data based on the data sourc
 
 In this example, the input data is validated based on maximum, minimum, and required constraints defined in the Swagger file. The input data meets the validation criteria only if Order Id is present and its value is between 1 and 10.
 
-```xml
-parameters: [
-{
-name: "orderId",
-in: "path",
-description: "ID of pet that needs to be fetched",
-required: true,
-type: "integer",
-maximum: 10,
-minimum: 1,
-format: "int64"
-}
-]
+```json
+   parameters: [
+   {
+   name: "orderId",
+   in: "path",
+   description: "ID of pet that needs to be fetched",
+   required: true,
+   type: "integer",
+   maximum: 10,
+   minimum: 1,
+   format: "int64"
+   }
+   ]
 ```
 
 An exception is displayed if the input data does not meet the validation criteria. If the log level is set to **Debug**, an error is logged to the **error.log** file. For example,
 
-```java
+```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}
 ```
 

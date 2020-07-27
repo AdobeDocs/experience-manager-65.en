@@ -20,7 +20,7 @@ You can use metadata in an email template to dynamically populate information in
 
 Metadata is stored in key-value pairs. You can specify the key in the email template and the key is replaced with a value at the runtime (when an email notification is generated). For example, in the below code sample, "$ {workitem_title} " is a key. It is replaced with value “Loan-Request” at the runtime.
 
-```xml
+```html
 subject=Task Assigned - ${workitem_title}
 
 message=<html><body>\n\
@@ -160,7 +160,7 @@ You can also use custom metadata in an email notification. Custom metadata conta
 
 1. Add code to the .ecma file that has the logic to generate custom metadata in key-value pairs. For example, the following ECMAScript code generates custom metadata for an insurance policy:
 
-   ```
+   ```javascript
    function getUserMetaData()  {
        //Commented lines below provide an overview on how to set user metadata in map and return it.
        var HashMap = Packages.java.util.HashMap;
@@ -203,10 +203,6 @@ To create an OSGi bundle with Java interface, add [AEM Forms Client SDK](https:/
 1. On the New Maven project, keep defaults, and click Next. Select an archetype and click Next. For example, maven-archetype-quickstart. Specify Group Id, Artifact Id, version, and package for the project, and click Finish. The project is created.  
 
 1. Open the pom.xml file for editing and replace all the contents of the file with the following:
-
-   ```
-   
-   ```
 
 1. Add source code that uses WorkitemUserMetadataService Java interface to add custom metadata for email templates. A sample code is listed below:
 

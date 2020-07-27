@@ -23,7 +23,7 @@ Bookmarks contain the following properties:
 
 For the purpose of this discussion, assume that the following DDX document is used.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
        <PDF result="FinalDoc.pdf">
@@ -40,7 +40,7 @@ In this example DDX document, the `Bookmarks` element specifies `doc2` as the va
 
 This topic uses the following XML bookmarks language to assemble a PDF document containing bookmarks.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <Bookmarks xmlns="https://ns.adobe.com/pdf/bookmarks" version="1.0">
        <Bookmark>
@@ -126,7 +126,7 @@ A DDX document must be referenced to assemble a PDF document. This DDX document 
 
 Reference a PDF document to which bookmarks are added. It does not matter whether the referenced PDF document already contains bookmarks. If the `Bookmarks` element is a child of the PDF source element, then the Bookmarks will replace those that already exist in the PDF source. However, if you want to keep the existing bookmarks, then ensure that `Bookmarks` is a sibling of the PDF source element. For example, consider the following example:
 
-```as3
+```xml
  <PDF result="foo">
       <PDF source="inDoc"/>
       <Bookmarks source="doc2"/>

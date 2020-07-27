@@ -37,7 +37,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
     1. Use initialize event of the form to hide primary instance of the Subform. For example, the code below hides the primary instance of the Subform on form initialization. It also verifies the app type to ensure that the script is executed only on the client side:
 
-       ```
+       ```javascript
        if ((xfa.host.appType == "HTML 5" || xfa.host.appType == "Exchange-Pro" || xfa.host.appType == "Reader")&&(_RepeatSubform.count == 1)&&(form1.Page1.Subform1.RepeatSubform.Key.rawValue == null)) {
        RepeatSubform.presence = "hidden";
        }
@@ -47,7 +47,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
        The code below checks the hidden instance of the Subform. If the hidden instance of the Subform is found, delete the hidden instance of the subform and insert a fresh instance of the Subform. If the hidden instance of the Subform is not found, then simply insert a fresh instance of the Subform.
 
-       ```
+       ```javascript
        if (RepeatSubform.presence == "hidden")
        {
        RepeatSubform.instanceManager.insertInstance(0);
@@ -63,7 +63,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
        The code checks count of the Subforms. If the count of the Subform reached 1, the code hides the subform instead of deleting the Subform.
 
-       ```
+       ```javascript
        if (RepeatSubform.instanceManager.count == 1) {
        RepeatSubform.presence = "hidden";
        } else {
@@ -73,7 +73,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
     1. Open the presubmit event of form for editing. Add the following script to the event to remove the hidden instance of the script before editing. It prevents sending data of the hidden Subform on submission.
 
-       ```
+       ```javascript
        if(RepeatSubform.instanceManager.count == 1 && RepeatSubform.presence == "hidden") {
        RepeatSubform.instanceManager.removeInstance(0);
        }
@@ -113,7 +113,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
    For PDF Forms, Adobe Acrobat has a built-in XTG engine to create intermediate data structures, and objects. Acrobat also takes care of layout and scripts.
 
-   For HTML5 forms, browsers do not have a built-in XTG engine to create intermediate data structures, and objects from raw XDP bytes. So, for HTML5 forms, intermediate structures are generated on the server and sent to the client. At client, javascript based script and layout engine use these intermediate structures.
+   For HTML5 forms, browsers do not have a built-in XTG engine to create intermediate data structures, and objects from raw XDP bytes. So, for HTML5 forms, intermediate structures are generated on the server and sent to the client. At client,JavaScript based script and layout engine use these intermediate structures.
 
    The size of the intermediate structure depends on the size of the original XDP and the data merged with the XDP.
 

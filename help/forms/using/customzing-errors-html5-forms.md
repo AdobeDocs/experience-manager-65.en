@@ -42,7 +42,7 @@ To customize the position of error message, add &lt;div&gt; tag for each error a
 
 1. On the out of the box implementation, error messages appears on the right of the field. To make the error messages appear on the top use the following code.
 
-   ```
+   ```javascript
    markError: function (jqWidget, msg, type) {
                var element = jqWidget.element,                                //Gives the div containing widget
                    pos = $(element).offset(),                          //Calculates the position of the div in the view port
@@ -86,7 +86,7 @@ Ue the attached package to simultaneously display error messages for all the fie
 
    Use the following code to change font size and color of error/warning messages.
 
-   ```
+   ```css
    #customError {
    color: #0000FF; // it changes the color of Error Message
    display:none;

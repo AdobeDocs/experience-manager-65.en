@@ -97,7 +97,7 @@ Digital signatures appear in signature fields, which are form fields that contai
 
 Here is a sample Java code that adds an invisible signature field to a PDF document.
 
-```
+```java
 /*************************************************************************
  *
  * ADOBE CONFIDENTIAL
@@ -236,7 +236,7 @@ You can programmatically add a signature field by using the Signature service Ja
 
 **Syntax**:
 
-```
+```java
 public Document addSignatureField(Document inDoc,
  String signatureFieldName,
  Integer pageNo,
@@ -648,7 +648,7 @@ You can retrieve the names of all signature fields that are located in a PDF doc
 
 The following Java code example retrieves the signature information for the given signature field located in a PDF document.
 
-```
+```java
 /*************************************************************************
  *
  * ADOBE CONFIDENTIAL
@@ -1034,7 +1034,7 @@ You can secure a PDF document by certifying it with a particular type of signatu
 
 **Syntax**:
 
-```
+```java
 secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
  SignatureOptions signatureOptions, ReaderExtensionOptions readerExtensionOptions, UnlockOptions unlockOptions)
 ```
@@ -1408,7 +1408,7 @@ For example, an annotation could obscure some text on a page that is important f
 
 **Syntax**:
 
-```
+```java
 secureDocument(Document inDoc,
  EncryptionOptions encryptionOptions,
  SignatureOptions signatureOptions,
@@ -1449,7 +1449,7 @@ secureDocument(Document inDoc,
 
 **Sample 1**: This sample is used to carry out password encryption, certifying a signature field and Reader Extending the PDF document.
 
-```
+```java
 /*************************************************************************
  *
  * ADOBE CONFIDENTIAL
@@ -2074,7 +2074,7 @@ public class PassEncryptSignExtend {
 
 If the following error message displays while reader extending a PDF document:
 
-```xml
+```javascript
 org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.ThreadDeath: null at com.adobe.internal.pdftoolkit.services.javascript.GibsonContextFactory.observeInstructionCount(GibsonContextFactory.java:138)
 ```
 
@@ -2082,7 +2082,7 @@ It signifies that the Reader Extension service is not able to execute the JavaSc
 
 Manage the timeout interval defined for the JavaScripts in the PDF document using:
 
-```xml
+```javascript
 ReaderExtensionsOptionSpec optionSpec = new ReaderExtensionsOptionSpec(usageRights, message);
 optionSpec.setJsScriptExecutionTimeoutInterval(100);
 ```
@@ -3189,7 +3189,7 @@ You can retrieve the names of all signature fields that are located in a PDF doc
 
 The following Java code example retrieves the signature field that was used to certify the document.
 
-```
+```java
 /*************************************************************************
  *
  * ADOBE CONFIDENTIAL
@@ -3427,75 +3427,75 @@ Remove password-based encryption from a PDF document to let users open the PDF d
 The following code sample removes password-based encryption from a PDF document.
 
 ```java
-package com.adobe.docassurance.samples;
+    package com.adobe.docassurance.samples;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import org.apache.felix.scr.annotations.Component;
-import org.apache.felix.scr.annotations.Reference;
-import org.apache.felix.scr.annotations.Service;
-import org.apache.sling.jcr.api.SlingRepository;
+    import java.io.File;
+    import java.io.FileNotFoundException;
+    import org.apache.felix.scr.annotations.Component;
+    import org.apache.felix.scr.annotations.Reference;
+    import org.apache.felix.scr.annotations.Service;
+    import org.apache.sling.jcr.api.SlingRepository;
 
-import com.adobe.aemfd.docmanager.Document;
-import com.adobe.fd.docassurance.client.api.DocAssuranceService;
+    import com.adobe.aemfd.docmanager.Document;
+    import com.adobe.fd.docassurance.client.api.DocAssuranceService;
 
-/**
- * The following Java code example removes password-based encryption from a PDF document.
- * The master password value used to remove password-based encryption is PermissionPassword
- *
- */
-@Component(enabled=true,immediate=true)
-@Service(value=RemovePasswordEncryption.class)
-public class RemovePasswordEncryption {
+    /**
+    * The following Java code example removes password-based encryption from a PDF document.
+    * The master password value used to remove password-based encryption is PermissionPassword
+    *
+    */
+    @Component(enabled=true,immediate=true)
+    @Service(value=RemovePasswordEncryption.class)
+    public class RemovePasswordEncryption {
 
- // Create reference for DocAssuranceService
- @Reference
- private DocAssuranceService docAssuranceService;
+    // Create reference for DocAssuranceService
+    @Reference
+    private DocAssuranceService docAssuranceService;
 
- @Reference
-    private SlingRepository slingRepository;
+    @Reference
+        private SlingRepository slingRepository;
 
- /**
-  * The below sample code demonstrates removing password encryption from a PDF using AEM EncryptionService.
-  *
-  * @param inFilePath  path of the input PDF File
-  * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"
-  *
-  * @param outFilePath path where the output PDF File needs to be saved
-  * Path Example for Files stored at hardDisk = "C:/temp/test_out.pdf"
-  * @throws Exception
-  */
- public void removePasswordEncryption(String inputFile, String outputFile) throws Exception {
+    /**
+    * The below sample code demonstrates removing password encryption from a PDF using AEM EncryptionService.
+    *
+    * @param inFilePath  path of the input PDF File
+    * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"
+    *
+    * @param outFilePath path where the output PDF File needs to be saved
+    * Path Example for Files stored at hardDisk = "C:/temp/test_out.pdf"
+    * @throws Exception
+    */
+    public void removePasswordEncryption(String inputFile, String outputFile) throws Exception {
 
-  File inFile = new File(inputFile);
-  Document inDoc = new Document(inFile);
+    File inFile = new File(inputFile);
+    Document inDoc = new Document(inFile);
 
-  File outFile = new File(outputFile);
-  Document outDoc = null;
+    File outFile = new File(outputFile);
+    Document outDoc = null;
 
-     try{
+        try{
 
-      String password = "PermissionPassword"; //master password with which the pdf was encrypted
-                //in case if the pdf is encrypted only with user password, specify the
-                //user password
-      //Remove password-based encryption from the PDF document
-      outDoc = docAssuranceService.removePDFPasswordSecurity(inDoc,password);
+        String password = "PermissionPassword"; //master password with which the pdf was encrypted
+                    //in case if the pdf is encrypted only with user password, specify the
+                    //user password
+        //Remove password-based encryption from the PDF document
+        outDoc = docAssuranceService.removePDFPasswordSecurity(inDoc,password);
 
-     }finally{
-                /**
-                 * always close the PDFDocument object after your processing is done.
-                 */
-                if(inDoc != null){
-                    inDoc.close();
-                }
+        }finally{
+                    /**
+                    * always close the PDFDocument object after your processing is done.
+                    */
+                    if(inDoc != null){
+                        inDoc.close();
+                    }
 
-        }
+            }
 
-        outDoc.copyToFile(outFile);
+            outDoc.copyToFile(outFile);
 
- }
+    }
 
-}
+    }
 ```
 
 ### Removing certificate encryption {#removing-certificate-encryption}
@@ -3530,94 +3530,94 @@ You can remove certificate-based encryption from a PDF document so that users ca
 The following Java code sample removes certificate-based encryption from a PDF document.
 
 ```java
-package com.adobe.docassurance.samples;
+    package com.adobe.docassurance.samples;
 
-import java.io.File;
+    import java.io.File;
 
-import javax.jcr.Session;
+    import javax.jcr.Session;
 
-import org.apache.felix.scr.annotations.Component;
-import org.apache.felix.scr.annotations.Reference;
-import org.apache.felix.scr.annotations.Service;
-import org.apache.sling.api.resource.ResourceResolver;
-import org.apache.sling.jcr.api.SlingRepository;
-import org.apache.sling.jcr.resource.JcrResourceResolverFactory;
+    import org.apache.felix.scr.annotations.Component;
+    import org.apache.felix.scr.annotations.Reference;
+    import org.apache.felix.scr.annotations.Service;
+    import org.apache.sling.api.resource.ResourceResolver;
+    import org.apache.sling.jcr.api.SlingRepository;
+    import org.apache.sling.jcr.resource.JcrResourceResolverFactory;
 
-import com.adobe.aemfd.docmanager.Document;
-import com.adobe.fd.docassurance.client.api.DocAssuranceService;
+    import com.adobe.aemfd.docmanager.Document;
+    import com.adobe.fd.docassurance.client.api.DocAssuranceService;
 
-/**
- * The following Java code example removes certificate-based encryption from a PDF document
- *
- */
-@Component(enabled=true,immediate=true)
-@Service(value=RemovePKIEncryption.class)
-public class RemovePKIEncryption {
-
- // Create reference for docAssuranceServiceInterface
- @Reference
- private DocAssuranceService docAssuranceService;
-
- @Reference
-    private SlingRepository slingRepository;
-
- @Reference
-    private JcrResourceResolverFactory jcrResourceResolverFactory ;
-
- /**
-  * The below sample code demonstrates encrypting PDF with Password using AEM docAssuranceService.
-  *
-  * @param inFilePath  path of the input PDF File
-  * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"
-  *
-  * @param outFilePath path where the output PDF File needs to be saved
-  * Path Example for Files stored at hardDisk = "C:/temp/test_Encrypted.pdf"
-  *
-  * @throws Exception
-  */
- public void removePKIEncryption(String inputFile, String outputFile) throws Exception {
-
-  File inFile = new File(inputFile);
-  Document inDoc = new Document(inFile);
-
-  File outFile = new File(outputFile);
-  Document outDoc = null;
-
-        Session adminSession = null;
-        ResourceResolver resourceResolver = null;
-        try{
-    adminSession = slingRepository.loginAdministrative(null);
-    resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
-
-    //Remove certificate-based encryption from the PDF document
     /**
-     * Here the alias("encryption") of the private credential stored in the keystore of the
-     * user has been provided with the user's resource resolver
-     */
-    outDoc = docAssuranceService.removePDFCertificateSecurity(inDoc, "encryption",resourceResolver);
+    * The following Java code example removes certificate-based encryption from a PDF document
+    *
+    */
+    @Component(enabled=true,immediate=true)
+    @Service(value=RemovePKIEncryption.class)
+    public class RemovePKIEncryption {
 
-        }catch(Exception e){
+    // Create reference for docAssuranceServiceInterface
+    @Reference
+    private DocAssuranceService docAssuranceService;
 
-         // TODO Auto-generated catch block
-        }finally{
-            /**
-             * always close the PDFDocument object after your processing is done.
-             */
-            if(inDoc != null){
-                inDoc.close();
-            }
-            if(adminSession != null && adminSession.isLive()){
-                if(resourceResolver != null){
-                    resourceResolver.close();
+    @Reference
+        private SlingRepository slingRepository;
+
+    @Reference
+        private JcrResourceResolverFactory jcrResourceResolverFactory ;
+
+    /**
+    * The below sample code demonstrates encrypting PDF with Password using AEM docAssuranceService.
+    *
+    * @param inFilePath  path of the input PDF File
+    * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"
+    *
+    * @param outFilePath path where the output PDF File needs to be saved
+    * Path Example for Files stored at hardDisk = "C:/temp/test_Encrypted.pdf"
+    *
+    * @throws Exception
+    */
+    public void removePKIEncryption(String inputFile, String outputFile) throws Exception {
+
+    File inFile = new File(inputFile);
+    Document inDoc = new Document(inFile);
+
+    File outFile = new File(outputFile);
+    Document outDoc = null;
+
+            Session adminSession = null;
+            ResourceResolver resourceResolver = null;
+            try{
+        adminSession = slingRepository.loginAdministrative(null);
+        resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
+
+        //Remove certificate-based encryption from the PDF document
+        /**
+        * Here the alias("encryption") of the private credential stored in the keystore of the
+        * user has been provided with the user's resource resolver
+        */
+        outDoc = docAssuranceService.removePDFCertificateSecurity(inDoc, "encryption",resourceResolver);
+
+            }catch(Exception e){
+
+            // TODO Auto-generated catch block
+            }finally{
+                /**
+                * always close the PDFDocument object after your processing is done.
+                */
+                if(inDoc != null){
+                    inDoc.close();
                 }
-                adminSession.logout();
+                if(adminSession != null && adminSession.isLive()){
+                    if(resourceResolver != null){
+                        resourceResolver.close();
+                    }
+                    adminSession.logout();
+                }
             }
-        }
 
-        outDoc.copyToFile(outFile);
- }
+            outDoc.copyToFile(outFile);
+    }
 
- }
+    }
 ```
 
 ## Output Service {#output-service}
@@ -3664,79 +3664,79 @@ The generatePDFOutput API generates a PDF document by merging a form design with
 The following Java code sample generates a PDF document by merging a form design with data stored in an XML file.
 
 ```java
-@Reference private OutputService outputService;
+    @Reference private OutputService outputService;
 
-private File generatePDFOutput(String contentRoot,File inputXML,String templateStr,String acrobatVersion,String tagged,String linearized, String locale) {
+    private File generatePDFOutput(String contentRoot,File inputXML,String templateStr,String acrobatVersion,String tagged,String linearized, String locale) {
 
-String outputFolder="C:/Output";
+    String outputFolder="C:/Output";
 
-Document doc=null;
+    Document doc=null;
 
-try {
+    try {
 
-        PDFOutputOptions option = new PDFOutputOptions();         option.setContentRoot(contentRoot);         if(acrobatVersion.equalsIgnoreCase("Acrobat_10"))
+            PDFOutputOptions option = new PDFOutputOptions();         option.setContentRoot(contentRoot);         if(acrobatVersion.equalsIgnoreCase("Acrobat_10"))
 
-        {
+            {
 
-            option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10);
+                option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10);
 
-        } else if(acrobatVersion.equalsIgnoreCase("Acrobat_10_1")) {
+            } else if(acrobatVersion.equalsIgnoreCase("Acrobat_10_1")) {
 
-            option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10_1);
+                option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10_1);
 
-        } else if(acrobatVersion.equalsIgnoreCase("Acrobat_11")) {             option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_11);
+            } else if(acrobatVersion.equalsIgnoreCase("Acrobat_11")) {             option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_11);
+
+            }
+
+            if (tagged.equalsIgnoreCase("true") ) {
+
+                option.setTaggedPDF(true );
+
+            }
+
+            if (linearized.equalsIgnoreCase("true") ) {
+
+                option.setTaggedPDF(true );
+
+            }
+
+            if(locale!=null)
+
+            {
+
+                option.setLocale(locale);
+
+            }
+
+            InputStream in = new FileInputStream(inputXML);
+
+            doc = outputService.generatePDFOutput(templateStr,new Document(in),option);         File toSave = new File(outputFolder+"Output.pdf");
+
+            doc.copyToFile(toSave);
+
+            return toSave;
+
+        } catch (OutputServiceException e) {
+
+            e.printStackTrace();
+
+        }catch (FileNotFoundException e) {
+
+            e.printStackTrace();
+
+        } catch (IOException e) {
+
+            e.printStackTrace();
+
+        }finally{
+
+                    doc.dispose();
 
         }
 
-        if (tagged.equalsIgnoreCase("true") ) {
-
-            option.setTaggedPDF(true );
-
-        }
-
-        if (linearized.equalsIgnoreCase("true") ) {
-
-            option.setTaggedPDF(true );
-
-        }
-
-        if(locale!=null)
-
-        {
-
-            option.setLocale(locale);
-
-        }
-
-        InputStream in = new FileInputStream(inputXML);
-
-        doc = outputService.generatePDFOutput(templateStr,new Document(in),option);         File toSave = new File(outputFolder+"Output.pdf");
-
-        doc.copyToFile(toSave);
-
-        return toSave;
-
-    } catch (OutputServiceException e) {
-
-         e.printStackTrace();
-
-    }catch (FileNotFoundException e) {
-
-         e.printStackTrace();
-
-    } catch (IOException e) {
-
-         e.printStackTrace();
-
-    }finally{
-
-                doc.dispose();
+        return null;
 
     }
-
-    return null;
-
-}
 ```
 
 ### generatePDFOutput {#generatepdfoutput-1}
@@ -3771,82 +3771,82 @@ The generatePDFOutput API generates a PDF document by merging a form design with
 The following Java code sample generates a PDF document by merging a form design with data stored in an XML file.
 
 ```java
-@Reference private OutputService outputService;
+    @Reference private OutputService outputService;
 
-private File generatePDFOutput2(String contentRoot, File inputXML, File templateStr, String acrobatVersion, String tagged, String linearized, String locale) {
+    private File generatePDFOutput2(String contentRoot, File inputXML, File templateStr, String acrobatVersion, String tagged, String linearized, String locale) {
 
-String outputFolder="C:/Output";
+    String outputFolder="C:/Output";
 
-Document doc=null;
+    Document doc=null;
 
-     try {
+        try {
 
-            PDFOutputOptions option = new PDFOutputOptions();             option.setContentRoot(contentRoot);
-            if(locale!=null)
+                PDFOutputOptions option = new PDFOutputOptions();             option.setContentRoot(contentRoot);
+                if(locale!=null)
 
-            {
+                {
 
-                option.setLocale(locale);
+                    option.setLocale(locale);
 
-            }
+                }
 
-            if(acrobatVersion.equalsIgnoreCase("Acrobat_10"))
+                if(acrobatVersion.equalsIgnoreCase("Acrobat_10"))
 
-            {
+                {
 
-                option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10);
+                    option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10);
 
-            } else if(acrobatVersion.equalsIgnoreCase("Acrobat_10_1")) {                 option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10_1);
+                } else if(acrobatVersion.equalsIgnoreCase("Acrobat_10_1")) {                 option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10_1);
 
-            } else if(acrobatVersion.equalsIgnoreCase("Acrobat_11")) {                 option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_11);
+                } else if(acrobatVersion.equalsIgnoreCase("Acrobat_11")) {                 option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_11);
 
-            }
+                }
 
-            if (tagged.equalsIgnoreCase("true") ) {
+                if (tagged.equalsIgnoreCase("true") ) {
 
-                option.setTaggedPDF(true );
+                    option.setTaggedPDF(true );
 
-            }
+                }
 
-            if (linearized.equalsIgnoreCase("true") ) {
+                if (linearized.equalsIgnoreCase("true") ) {
 
-                option.setTaggedPDF(true );
+                    option.setTaggedPDF(true );
 
-            }
+                }
 
-            InputStream inputXMLStream = new FileInputStream(inputXML);
+                InputStream inputXMLStream = new FileInputStream(inputXML);
 
-            InputStream templateStream = new FileInputStream(templateStr);;
+                InputStream templateStream = new FileInputStream(templateStr);;
 
-            doc = outputService.generatePDFOutput(new Document(templateStream),new             Document(inputXMLStream),option);
+                doc = outputService.generatePDFOutput(new Document(templateStream),new             Document(inputXMLStream),option);
 
-                     File toSave = new File(outputFolder,"Output.pdf");
+                        File toSave = new File(outputFolder,"Output.pdf");
 
-                     doc.copyToFile(toSave);
+                        doc.copyToFile(toSave);
 
-                    return toSave;
+                        return toSave;
 
-                } catch (OutputServiceException e) {
+                    } catch (OutputServiceException e) {
 
-                         e.printStackTrace();
+                            e.printStackTrace();
 
-               }catch (FileNotFoundException e) {
+                }catch (FileNotFoundException e) {
 
-                          e.printStackTrace();
+                            e.printStackTrace();
 
-               } catch (IOException e) {
+                } catch (IOException e) {
 
-                          e.printStackTrace();
+                            e.printStackTrace();
 
-               }finally{
+                }finally{
 
-                            doc.dispose();
+                                doc.dispose();
 
-              }
+                }
 
-                return null;
+                    return null;
 
-}
+    }
 ```
 
 ### generatePDFOutputBatch {#generatepdfoutputbatch}
@@ -4651,7 +4651,7 @@ The createPDF service throws the following exceptions:
 
 **Syntax:**
 
-```
+```java
 Map exportPDF(Document inputDoc, String inputFileName, String formatType, Document settingsDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 
 ```
@@ -4745,7 +4745,7 @@ The createPDF service throws the following exceptions:
 
 **Syntax:**
 
-```
+```java
 OptimizePDFResult optimizePDF(Document inputDoc, String fileTypeSettings, Document settingsDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 
 ```
@@ -4836,7 +4836,7 @@ The htmlToPdf2 service throws the following exceptions:
 
 **Syntax:**
 
-```
+```java
 HtmlToPdfResult htmlToPdf2(String inputUrl, String fileTypeSettingsName, String securitySettingsName, Document settingsDoc, Document xmpDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 
 ```
@@ -4935,7 +4935,7 @@ Converts the supported formats to PDF documents. The method accepts files format
 
 **Syntax:**
 
-```
+```java
 Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, String securitySettings, Document settingsDoc, Document xmpDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 
 ```

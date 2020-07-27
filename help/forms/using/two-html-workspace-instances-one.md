@@ -25,7 +25,7 @@ Follow these steps to configure AEM Forms workspace.
 1. Copy folder ws from /libs and paste at /apps. Rename the folder to ws2. Click **[!UICONTROL Save all]**.
 1. In `GET.jsp` at `/apps/ws2`, make the following code changes. Replace the following
 
-   ```
+   ```html
    <html lang="en">
    <head>
        <meta charset="utf-8">
@@ -39,7 +39,7 @@ Follow these steps to configure AEM Forms workspace.
 
    with the following code
 
-   ```
+   ```html
    <html lang="en">
    <head>
        <meta charset="utf-8">
