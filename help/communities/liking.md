@@ -27,17 +27,17 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the [required client-side libraries](essentials-liking.md#essentials-for-client-side) are included, this is how the `Liking` component will appear.
 
-![chlimage_1-93](assets/chlimage_1-93.png)
+![liking-component](assets/liking-component.png)
 
 ## Configuring Liking {#configuring-liking}
 
 Select the placed `Liking` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-94](assets/chlimage_1-94.png)
+![configure-new](assets/configure-new.png)
 
 Under the **[!UICONTROL Texts & Labels]** tab, specify the properties used to record likes.
 
-![chlimage_1-95](assets/chlimage_1-95.png)
+![configure-liking](assets/configure-liking.png)
 
 * **[!UICONTROL Positive Response Label]**
   
