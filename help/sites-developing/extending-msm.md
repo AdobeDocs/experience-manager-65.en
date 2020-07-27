@@ -203,7 +203,7 @@ To create a new rollout configuration:
      **Value**: An optional description.
    * **Name**: `cq:trigger` 
      **Type**: `String`
-     **Value**: The [Rollout Trigger](/help/sites-administering/introduction/msm-sync.html#rollout-triggers) to be used. Select from:
+     **Value**: The [Rollout Trigger](/help/sites-administering/msm-sync.md#rollout-triggers) to be used. Select from:
      * `rollout`
      * `modification`
      * `publish`
@@ -225,7 +225,7 @@ Add child nodes of type `cq:LiveSyncAction` to add synchronization actions to th
 1. **Create** a node with the following node properties:
 
     * **Name**: The node name of the synchronization action. 
-      The name must be the same as the **Action Name** in the table under [Synchronization Actions](/help/sites-administering/introduction/msm-sync.html#installed-synchronization-actions), for example `contentCopy` or `workflow`.
+      The name must be the same as the **Action Name** in the table under [Synchronization Actions](/help/sites-administering/msm-sync.md#installed-synchronization-actions), for example `contentCopy` or `workflow`.
     * **Type**: `cq:LiveSyncAction`
 
 1. Add and configure as many synchronization action nodes as you require. Rearrange the action nodes so that their order matches the order in which you want them to occur. The topmost action node occurs first.
