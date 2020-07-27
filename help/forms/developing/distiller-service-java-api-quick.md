@@ -27,7 +27,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following code example converts a PostScript file called *Loan.ps* to a PDF file called *Loan.pdf*. (See [Converting PostScript to PDF documents](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

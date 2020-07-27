@@ -55,7 +55,7 @@ If you are running OpenOffice, Microsoft Word, or Microsoft PowerPoint on Window
 1. Next, you will make changes to the /etc/sudoers file. The default permission for this file is 440. Change the permission for this file to writable.
 1. Add entries for additional users (other than the administrator who runs the forms server) in the /etc/sudoers file. For example, if you are running AEM forms as a user named lcadm and a server named myhost, and you want to impersonate user1 and user2, add the following entries to /etc/sudoers:
 
-   ```as3
+   ```shell
     lcadm myhost=(user1) NOPASSWD: ALL
     lcadm myhost=(user2) NOPASSWD: ALL
    ```
@@ -68,7 +68,7 @@ If you are running OpenOffice, Microsoft Word, or Microsoft PowerPoint on Window
 
 1. Also in the /etc/sudoers file, locate and comment out this line by adding a number sign (#) at the beginning of the line:
 
-   ```as3
+   ```shell
    Defaults requiretty
    ```
 

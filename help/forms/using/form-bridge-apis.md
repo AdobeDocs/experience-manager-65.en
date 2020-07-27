@@ -18,7 +18,7 @@ The **connect** API accepts a handler as an argument. After the a successful con
 
 You can use the following sample code to create the connection.
 
-```
+```javascript
 // Example showing how to connect to FormBridge
 window.addEventListener("FormBridgeInitialized",
                                 function(event) {
@@ -92,7 +92,7 @@ Returns the version number of the Scripting library
 
         * **LoggingConfig:** Allows the user to override the level of logging, disable logging for a category, or whether to display the logs console or send to server. The configuration can be overridden as follows:
 
-        ``` JavaScript
+        ```javascript
         formBridge.registerConfig{
           "LoggerConfig" : {
         {
@@ -106,7 +106,7 @@ Returns the version number of the Scripting library
 
         * **SubmitServiceProxyConfig:** Allow the users to register submission and logger proxy services.
 
-          ``` JavaScript
+          ```javascript
           window.formBridge.registerConfig("submitServiceProxyConfig",
           {
           "submitServiceProxy" : "`<submitServiceProxy>`",

@@ -60,7 +60,7 @@ You can use the following steps to customize the text and appearance of the wate
 1. Copy and paste the ddx file from "/libs/fd/cm/configFiles/previewwatermark" folder to "/apps/fd/cm/configFiles/previewwatermark" folder and click **[!UICONTROL Save All]**.
 1. Make the desired changes in the ddx file under /apps/fd/cm/configFiles/previewwatermark/.
 
-   ```
+   ```xml
    <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
     <PDF result="output.pdf">
      <PDF source="input.pdf"/>

@@ -54,7 +54,7 @@ This section describes installing and configuring the EMC NetWorker software on 
 
    The following text contains formatting characters for line breaks. If you copy this text to a location outside this document, copy a portion at a time and remove the formatting characters when you paste it to the new location.
 
-   ```as3
+   ```shell
     ################################################
     # NetWorker Module for Documentum v1.2 nsrnmd_win.cfg D5.3+ example with
     # typical set of working parameters.  THIS FILE MUST BE SITE-CUSTOMISED.
@@ -239,7 +239,7 @@ Perform the following tasks after you complete a full backup of your AEM forms d
 1. Open a command prompt, and change to `[NetWorker_root]\Legato\nsr\bin`.
 1. Run the following command:
 
-   ```as3
+   ```shell
     - nsrnmdsv.exe -f <path_to_cfg_file>
    ```
 
@@ -259,6 +259,6 @@ Perform the following tasks before you restore your AEM forms data. (See [Recove
 1. Open a command prompt and change to *[NetWorker_root]*\Legato\nsr\bin
 1. Run the following command:
 
-   ```as3
+   ```shell
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA
    ```

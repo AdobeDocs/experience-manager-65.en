@@ -30,7 +30,7 @@ AEM Forms restricts a users' access to only those tasks for which the user has a
 1. Create a DSC. For more information, see 'Developing Components for AEM Forms' topic in [Programming with AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guide.
 1. In the DSC, define a new SPI for hierarchy management to define direct reports and hierarchy within the AEM Forms users. Following is a sample Java™ code snippet.
 
-   ```as3
+   ```java
    public class MyHierarchyMgmtService
    {
         /*
@@ -65,7 +65,7 @@ AEM Forms restricts a users' access to only those tasks for which the user has a
 
 1. Create a component.xml file. Please ensure that spec-id must be same as shown in code snippet below. Following is a sample code snippet that you can repurpose.
 
-   ```as3
+   ```xml
    <component xmlns="https://adobe.com/idp/dsc/component/document">
        <component-id>com.adobe.sample.SampleDSC</component-id>
        <version>1.1</version>

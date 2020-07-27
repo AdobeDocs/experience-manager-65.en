@@ -35,7 +35,7 @@ The ConvertPDF service provides the following two APIs:
 
 ### Using toPS API with a JSP or Servlets {#using-tops-api-with-a-jsp-or-servlets}
 
-```java
+```jsp
 <%@ page import="java.util.List, java.io.File,
 
                 com.adobe.fd.cpdf.api.ConvertPdfService,
@@ -79,7 +79,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
 ### Using toImage API with a JSP or Servlets {#using-toimage-api-with-a-jsp-or-servlets}
 
-```java
+```jsp
 <%@ page import="java.util.List, java.io.File,
 
                 com.adobe.fd.cpdf.api.ConvertPdfService,
@@ -134,7 +134,7 @@ provided ResourceResolver object to read content from the repository.
 
 The following sample workflow process converts the input document to a PostScript document. The code is written in ECMAScript and the document is passed as workflow payload:
 
-```
+```javascript
 /*
  * Imports
  */

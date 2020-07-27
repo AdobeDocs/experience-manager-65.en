@@ -71,7 +71,7 @@ To display the `description` property of the process instance in the process ins
     1. Copy /libs/ws/js/runtime/templates/processinstance.html to/apps/ws/js/runtime/templates/, if it does not exist. Click **Save All**.
     1. Add process description div with class = 'processDescription' inprocessinstance.html.
 
-   ```
+   ```jsp
    <div class="processDescription" title="<%= description%>"><%= description%></div>
    ```
 

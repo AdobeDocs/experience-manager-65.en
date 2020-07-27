@@ -70,8 +70,10 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
 ***Locale is language code***
 
-```
-String browserLocale = "en";
+   ```jsp
+
+   String browserLocale = "en";
+
        for(int i=0; i<locales.length; i++)
        {
            String prioperty = locales[i];
@@ -120,13 +122,10 @@ String browserLocale = "en";
                break;
            }
        }
-```
+   ```jsp
 
+   String browserLocale = "en";
 
-***Locale is language-country code***
-
-```
-String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
            String prioperty = locales[i];
@@ -175,19 +174,21 @@ String browserLocale = "en";
                break;
            }
        }
-```
+   ***To change Default locale***
 
-***To change Default locale***
+   ```jsp
 
-```
-String browserLocale = "en";
+   String browserLocale = "en";
    for(int i=0; i<locales.length; i++)
 
    To
 
    String browserLocale = "ar";
    for(int i=0; i<locales.length; i++)
+
 ```
+
+
 
 ### Adding new text, or modifying existing text {#adding-new-text-or-modifying-existing-text}
 
@@ -211,23 +212,32 @@ String browserLocale = "en";
 
    ![Add new key-value pair](assets/capture_new.png)
 
+   ```jsp
 
-```
-<div class="loginContent">
+   div class="loginContent">
+
                        <span class="loginFlow"></code>
                        <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></code>
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
 
+    ```
+
    To
 
-   <div class="loginContent">
+   ```jsp
+
+   div class="loginContent">
+
                        <span class="loginFlow"></code>
                        <span class="loginVersion"><%= i18n.get("My Welcome Message") %></code>
                        <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></code>
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
-```
+
+    ```
+
+
 
 ### Adding new style, or modifying existing style {#adding-new-style-or-modifying-existing-style}
 
@@ -263,13 +273,21 @@ css.newLoginContentArea {
 
 * Modify following in `/apps/livecycle/core/components/login.jsp`.
 
-```
-<div class="loginContentArea">
+
+   ```jsp
+
+   <div class="loginContentArea">
+
+
+   ```
 
    To
 
+   ```jsp
+
    <div class="newLoginContentArea">
-```
+
+   ```
 
 >[!NOTE]
  >
@@ -291,24 +309,42 @@ css.newLoginContentArea {
 
 For Example:
 
-* Add the following to `/apps/livecycle/core/content/login/login.css`
 
-```
-css.newLoginContainerBkg {
+   ```css
+
+   .newLoginContainerBkg {
+
     background-image: url(my_Bg.gif);
     background-repeat: no-repeat;
     background-position: left top;
     width: 727px;
    }
-```
+  
+   ```
 
-* Modify following in `/apps/livecycle/core/components/login.jsp`.
 
-```
-<div class="loginContainerBkg">
+    * Modify following in /apps/livecycle/core/components/login.jsp.
+
+   ```jsp
+
+   <div class="loginContainerBkg">
+
+
+   ```
 
    To
 
+   ```jsp
+
    <div class="newLginContainerBkg">
-```
+
+
+
+
+
+
+
+
+
+   ```
 
