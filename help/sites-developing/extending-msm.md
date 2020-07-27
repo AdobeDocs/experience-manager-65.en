@@ -539,27 +539,19 @@ Create the MSM rollout configuration that uses the `LiveActionFactory` that you 
 
 1. Create and configuration a [Rollout Configuration with the standard procedure](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) - and using the properties:
 
-    1. Create:
-
-        1. **Title**: Example Rollout Configuration
-        1. **Name**: examplerolloutconfig
-        1. Using the **RolloutConfig Template**.
-
-    1. Edit:
-
-        1. **Sync Trigger**: On Activation
+   * **Title**: Example Rollout Configuration
+   * **Name**: examplerolloutconfig
+   * **cq:trigger**: `publish`
 
 #### Add the Live Action to the Example Rollout Configuration {#add-the-live-action-to-the-example-rollout-configuration}
 
 Configure the rollout configuration that you created in the previous procedure so that it uses the `ExampleLiveActionFactory` class.
 
 1. Open CRXDE Lite; for example, [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
-1. Create the following node under `/etc/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
+1. Create the following node under `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
     * **Name**: `exampleLiveAction`
     * **Type**: `cq:LiveSyncAction`
-
-   ![chlimage_1-75](assets/chlimage_1-75.png)
 
 1. Click **Save All**.
 1. Select the `exampleLiveAction` node and add the following property:
@@ -587,6 +579,7 @@ Activate the **Products** (english) page of the source branch and observe the lo
 16.08.2013 10:53:33.055 *INFO* [Thread-444535] com.adobe.example.msm.ExampleLiveActionFactory$ExampleLiveAction  ***Target node lastModifiedBy property updated: admin ***
 ```
 
+<!--
 ### Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
 
 In some cases, the **Chapters** selection is not required in the create site wizard (only the **Languages** selection is required). To remove this step in the default We.Retail English blueprint:
@@ -605,6 +598,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
     1. **Name** = `value`; **Type** = `String`; **Value** = `all`
 
     1. **Name** = `xtype`; **Type** = `String`; **Value** = `hidden`
+-->
 
 ### Changing language names and default countries {#changing-language-names-and-default-countries}
 
