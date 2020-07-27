@@ -132,7 +132,7 @@ Further information on installing bundles is found on the [Web Console](/help/si
 
 #### Example : Installed MySQL Connector Bundle {#example-installed-mysql-connector-bundle}
 
-![](/assets/chlimage_1-125.png)
+![](../assets/chlimage_1-125.png)
 
 ### SCORM Package {#scorm-package}
 
@@ -216,7 +216,7 @@ By default, the `AEM Communities Publisher Configuration` OSGi configuration is 
 
 Therefore, it is necessary to **edit the configuration on all secondary publish instances** to uncheck the **`Primary Publisher`** checkbox.
 
-![](/assets/chlimage_1-126.png)
+![](../assets/chlimage_1-126.png)
 
 For all other (secondary) publish instances in a publish farm :
 
@@ -260,11 +260,11 @@ The following images show the results of changing the port from 4503 to 6103 by 
 
 #### Default Agent (publish) {#default-agent-publish}
 
-![configure-limits](/assets/configure-limits.png)
+![configure-limits](../assets/configure-limits.png)
 
 #### Reverse Replication Agent (publish reverse) {#reverse-replication-agent-publish-reverse}
 
-![](/assets/chlimage_1-128.png)
+![](../assets/chlimage_1-128.png)
 
 ### Tunnel Service on Author {#tunnel-service-on-author}
 
@@ -288,7 +288,7 @@ To enable the tunnel service :
 * check the **enable **box
 * select **Save**
 
-![](/assets/chlimage_1-129.png)
+![](../assets/chlimage_1-129.png)
 
 ### Replicate the Crypto Key {#replicate-the-crypto-key}
 
@@ -348,7 +348,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [refresh the Granite Crypto bundle](#refresh-the-granite-crypto-bundle)
 
-![](/assets/chlimage_1-130.png)
+![](../assets/chlimage_1-130.png)
 
 #### Refresh the Granite Crypto Bundle {#refresh-the-granite-crypto-bundle}
 
@@ -359,7 +359,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * locate `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
 * select **Refresh**
 
-![](/assets/chlimage_1-131.png)
+![](../assets/chlimage_1-131.png)
 
 * after a moment, a **Success **dialog should appear :
   `Operation completed successfully.`
