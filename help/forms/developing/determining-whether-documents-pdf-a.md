@@ -20,7 +20,7 @@ The PDF/A-1 specification consists of two levels of conformance, namely A and B.
 
 For the purpose of this discussion, assume that the following DDX document is used.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
          <DocumentInformation source="Loan.pdf" result="Loan_result.xml">
@@ -95,7 +95,7 @@ After you create the Assembler service client, reference the DDX document, refer
 
 The XML document that the Assembler service returns specifies whether the input PDF document is PDF/A-compliant. For example, if the input PDF document is not PDF/A-compliant, the Assembler service returns an XML document that contains the following element:
 
-```as3
+```xml
  <PDFAConformance isCompliant="false" compliance="PDF/A-1b" resultLevel="Detailed" ignoreUnusedResources="true" allowCertificationSignatures="true">
 ```
 

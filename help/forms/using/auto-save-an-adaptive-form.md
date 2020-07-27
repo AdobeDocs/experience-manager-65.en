@@ -61,7 +61,7 @@ You can implement a custom event to trigger the autosave functionality. Perform 
 
    For example, the following script uses the custom `emailFocusChange`event to trigger the autosave functionality:
 
-   ```
+   ```javascript
    window.addEventListener("bridgeInitializeStart", function (){
        guideBridge.connect(function () { guideBridge.on("elementFocusChanged", function (event,data) {
            if(data.target.name === 'Email') {

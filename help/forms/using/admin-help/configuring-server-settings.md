@@ -59,7 +59,7 @@ By default, the emails sent out by AEM forms contain links to (Deprecated for AE
 1. Open task assignment template.
 1. Set the template in the task notifications to the following: `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
 
-   ```as3
+   ```java
    https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@
    ```
 

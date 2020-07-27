@@ -119,7 +119,7 @@ The following procedure shows how to create a rule to displays an error message 
 
 1. Replace the input variable section with the following code:
 
-   ```
+   ```javascript
    var inputs = {
        "id" : this
    };
@@ -127,7 +127,7 @@ The following procedure shows how to create a rule to displays an error message 
 
 1. Replace the guidelib.dataIntegrationUtils.executeOperation (operationInfo, inputs, outputs) section with the following code:
 
-   ```
+   ```javascript
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, function (result) {
      if (result) {
          result = JSON.parse(result);

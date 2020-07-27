@@ -34,7 +34,7 @@ To invoke AEM Forms services using a web service, typically you create a proxy l
 
 You can retrieve a service WDSL by specifying the following URL definition (items in brackets are optional):
 
-```as3
+```java
  https://<your_serverhost>:<your_port>/soap/services/<service_name>?wsdl[&version=<version>][&async=true|false][lc_version=<lc_version>]
 ```
 
@@ -140,7 +140,7 @@ The following table lists service WSDL definitions (assuming that AEM Forms is d
 
 You must specify the Application name and the Process name within the WSDL definition to access a WSDL that belongs to a process created in Workbench. Assume that the name of the application is `MyApplication` and the name of the process is `EncryptDocument`. In this situation, specify the following WSDL definition:
 
-```as3
+```java
  http://localhost:8080/soap/services/MyApplication/EncryptDocument?wsdl
 ```
 
@@ -152,7 +152,7 @@ You must specify the Application name and the Process name within the WSDL defin
 >
 >An Application can contain folder(s). In this case, specify the folder name(s) in the WSDL definition:
 
-```as3
+```java
  http://localhost:8080/soap/services/MyApplication/[<folderA>/.../<folderZ>/]EncryptDocument?wsdl
 ```
 
@@ -162,7 +162,7 @@ New AEM Forms service functionality can be accessed using web services. For exam
 
 To access new functionality introduced in AEM Forms, specify the `lc_version` attribute in the WSDL definition. For example, to access new service functionality (including MTOM support), specify the following WSDL definition:
 
-```as3
+```java
  http://localhost:8080/soap/services/MyApplication/EncryptDocument?wsdl&lc_version=9.0.1
 ```
 
@@ -176,7 +176,7 @@ AEM Forms service WSDLs define many data types. One of the most important data t
 
 A `BLOB` object sends and retrieves binary data (for example, PDF files, XML data, and so on) to and from AEM Forms services. The `BLOB` type is defined in a service WSDL as follows:
 
-```as3
+```xml
  <complexType name="BLOB">
      <sequence>
          <element maxOccurs="1" minOccurs="0" name="contentType"
@@ -231,7 +231,7 @@ The transmission protocol for returned `BLOB` objects depends on several factors
 
 As described in the first condition, you can ensure the transmission type for any returned documents by extending the SOAP endpoint URL with a suffix as follows:
 
-```as3
+```java
      https://<your_serverhost>:<your_port>/soap/services/<service
      name>?blob=base64|dime|mime|http|mtom|swaref
 ```
@@ -372,7 +372,7 @@ You can use JAX-WS to convert a Forms service WSDL to Java proxy classes. These 
 1. Install JAX-WS on the client computer. (See [Java API for XML Web Services](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html).)
 1. Use JAX-WS and Apache Ant to generate Java proxy classes. Create an Ant build script to accomplish this task. The following script is a sample Ant build script named build.xml:
 
-   ```as3
+   ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     
     <project basedir="." default="compile">
@@ -424,13 +424,13 @@ You can use JAX-WS to convert a Forms service WSDL to Java proxy classes. These 
    >
    >Replace `EncryptionService`with the AEM Forms service name that you want to invoke using Java proxy classes. For example, to create Java proxy classes for the Rights Management service, specify:
 
-   ```as3
+   ```java
     http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1
    ```
 
 1. Create a BAT file to execute the Ant build script. The following command can be located within a BAT file that is responsible for executing the Ant build script:
 
-   ```as3
+   ```java
     ant -buildfile "build.xml" wsdl
    ```
 
@@ -482,7 +482,7 @@ You can generate Axis Java library files by performing the following steps:
 1. Set up the class path to use the Axis JAR files in your web service client, as described in the Axis installation instructions at [https://ws.apache.org/axis/java/install.html](https://ws.apache.org/axis/java/install.html).
 1. Use the Apache WSDL2Java tool in Axis to generate Java proxy classes. Create an Ant build script to accomplish this task. The following script is a sample Ant build script named build.xml:
 
-   ```as3
+   ```java
     <?xml version="1.0"?>
     <project name="axis-wsdl2java">
     
@@ -513,7 +513,7 @@ You can generate Axis Java library files by performing the following steps:
 
 1. Create a BAT file to execute the Ant build script. The following command can be located within a BAT file that is responsible for executing the Ant build script:
 
-   ```as3
+   ```java
     ant -buildfile "build.xml" encryption-wsdl2java-client
    ```
 
@@ -527,13 +527,13 @@ You can generate Axis Java library files by performing the following steps:
 
 1. Amend the URL in the `EncryptionServiceLocator` class to specify the encoding type. For example, to use base64, specify `?blob=base64` to ensure that the `BLOB` object returns binary data. That is, in the `EncryptionServiceLocator` class, locate the following line of code:
 
-   ```as3
+   ```java
     http://localhost:8080/soap/services/EncryptionService;
    ```
 
    and change it to:
 
-   ```as3
+   ```java
     http://localhost:8080/soap/services/EncryptionService?blob=base64;
    ```
 
@@ -595,7 +595,7 @@ You can create a proxy class that is used to create the .NET client assembly by 
 
 Enter the following command at the command prompt:
 
-```as3
+```java
  wsdl https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
 ```
 
@@ -603,13 +603,13 @@ By default, this tool creates a CS file in the same folder that is based on the 
 
 Amend the URL in the proxy class to include `?blob=base64` to ensure that the `BLOB` object returns binary data. In the proxy class, locate the following line of code:
 
-```as3
+```java
  "https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument";
 ```
 
 and change it to:
 
-```as3
+```java
  "https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64";
 ```
 
@@ -695,7 +695,7 @@ You can invoke an AEM Forms service using Java proxy classes and Base64. To invo
 
    The following code example shows this application logic:
 
-   ```as3
+   ```java
     //Set connection values required to invoke AEM Forms
     String url = "https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64";
     String username = "administrator";
@@ -748,7 +748,7 @@ The discussion here is about using MTOM withthin a Microsoft .NET project to inv
 
 You can create a Microsoft .NET project that can invoke a AEM Forms service using web services. First, create a Microsoft .NET project by using Visual Studio 2008. To invoke a AEM Forms service, create a Service Reference to the AEM Forms service that you want to invoke within your project. When you create a Service Reference, specify a URL to the AEM Forms service:
 
-```as3
+```java
  http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
 ```
 
@@ -764,7 +764,7 @@ After you create a Service Reference, data types associated with the AEM Forms s
 1. In the **Project** menu, select **Add Service Reference**.
 1. In the **Address** dialog box, specify the WSDL to the AEM Forms service. For example,
 
-   ```as3
+   ```java
     http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
    ```
 
@@ -778,7 +778,7 @@ Consider the `MyApplication/EncryptDocument` process that accepts an unsecured P
 1. Create a `MyApplication_EncryptDocumentClient` object by using its default constructor.
 1. Create a `MyApplication_EncryptDocumentClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service and the encoding type:
 
-   ```as3
+   ```java
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=mtom
    ```
 
@@ -799,7 +799,7 @@ Consider the `MyApplication/EncryptDocument` process that accepts an unsecured P
 
    The following code example shows these tasks.
 
-   ```as3
+   ```java
     //Enable BASIC HTTP authentication
     encryptProcess.ClientCredentials.UserName.UserName = "administrator";
     encryptProcess.ClientCredentials.UserName.Password = "password";
@@ -860,7 +860,7 @@ To invoke the `MyApplication/EncryptDocument` process by using Java proxy files 
 
 1. Create Java proxy classes using JAX-WS that consumes the `MyApplication/EncryptDocument` service WSDL. Use the following WSDL endpoint:
 
-   ```as3
+   ```java
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
    ```
 
@@ -890,7 +890,7 @@ To invoke the `MyApplication/EncryptDocument` process by using Java proxy files 
 
    The following code example shows this application logic:
 
-   ```as3
+   ```java
     //Set connection values required to invoke AEM Forms
     String url = "https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref";
     String username = "administrator";
@@ -941,13 +941,13 @@ When this process is invoked, it performs the following actions:
 
 To create a client assembly that uses data over HTTP, follow the process specified in [Invoking AEM Forms using Base64 encoding](#invoking-aem-forms-using-base64-encoding). However, amend the URL in the proxy class to include `?blob=http` instead of `?blob=base64`. This action ensures that data is passed over HTTP. In the proxy class, locate the following line of code:
 
-```as3
+```java
  "http://localhost:8080/soap/services/MyApplication/EncryptDocument";
 ```
 
 and change it to:
 
-```as3
+```java
  "http://localhost:8080/soap/services/MyApplication/EncryptDocument?blob=http";
 ```
 
@@ -983,7 +983,7 @@ You can invoke an AEM Forms service using Java proxy classes and BLOB data over 
 
 1. Create Java proxy classes using JAX-WS that consumes the `MyApplication/EncryptDocument` service WSDL. Use the following WSDL endpoint:
 
-   ```as3
+   ```java
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
    ```
 
@@ -1013,7 +1013,7 @@ You can invoke an AEM Forms service using Java proxy classes and BLOB data over 
 
    The following code example shows this application logic:
 
-   ```as3
+   ```java
     //Set connection values required to invoke AEM Forms
     String url = "https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http";
     String username = "administrator";
@@ -1067,7 +1067,7 @@ From this web page, search for Web Services Enhancements 2.0 and download it ont
 
 After you install Web Services Enhancements 2.0 on your development computer and create a Microsoft .NET project, create a web reference to the Forms service. For example, to create a web reference to the `MyApplication/EncryptDocument` process and assuming that Forms is installed on the local computer, specify the following URL:
 
-```as3
+```java
      http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL
 ```
 
@@ -1133,14 +1133,14 @@ To invoke the `MyApplication/EncryptDocument` service (which was built in Workbe
 1. Create a `MyApplicationEncryptDocumentServiceLocator` object by using its constructor.
 1. Create a `URL` object by using its constructor and passing a string value that specifies the AEM Forms service WSDL definition. Ensure that you specify `?blob=dime` at the end of the SOAP endpoint URL. For example, use
 
-   ```as3
+   ```java
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=dime.
    ```
 
 1. Create an `EncryptDocumentSoapBindingStub` object by invoking its constructor and passing the `MyApplicationEncryptDocumentServiceLocator`object and the `URL` object.
 1. Set the AEM forms user name and password value by invoking the `EncryptDocumentSoapBindingStub` object’s `setUsername` and `setPassword` methods.
 
-   ```as3
+   ```java
     encryptionClientStub.setUsername("administrator");
     encryptionClientStub.setPassword("password");
    ```
@@ -1182,7 +1182,7 @@ AEM Forms does not support standard certificate-based authentication but it does
 
 The identity of AEM forms users can be represented through a SAML assertion signed using a secret key. The following XML code shows an example of a SAML assertion.
 
-```as3
+```xml
  <Assertion xmlns="urn:oasis:names:tc:SAML:1.0:assertion"
      xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion"
      xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol"
@@ -1250,7 +1250,7 @@ When using AXIS that uses SAML-based authentication, register the request and re
 
 The following Java class, named `AssertionHandler.java`, shows an example of a Java class that extends `org.apache.axis.handlers.BasicHandler`.
 
-```as3
+```java
  public class AssertionHandler extends BasicHandler {
         public void invoke(MessageContext ctx) throws AxisFault {
             String assertion = (String) ctx.getProperty(LC_ASSERTION);
@@ -1278,7 +1278,7 @@ The following Java class, named `AssertionHandler.java`, shows an example of a J
 
 To register a handler with Axis, create a client-config.wsdd file. By default, Axis looks for a file with this name. The following XML code is an example of a client-config.wsdd file. See Axis documentation for more information.
 
-```as3
+```xml
  <deployment xmlns="https://xml.apache.org/axis/wsdd/" xmlns:java="https://xml.apache.org/axis/wsdd/providers/java">
      <transport name="http" pivot="java:org.apache.axis.transport.http.HTTPSender"/>
       <globalConfiguration >
@@ -1294,7 +1294,7 @@ To register a handler with Axis, create a client-config.wsdd file. By default, A
 
 The following code example invokes an AEM Forms service using SAML-based authentication.
 
-```as3
+```java
  public class ImpersonationExample {
         . . .
         public void  authenticateOnBehalf(String superUsername,String password,
@@ -1346,7 +1346,7 @@ The WSE architecture uses Policies, Assertions, and SecurityToken data types. Br
 
 The following C# code example creates filter and assertion classes. This code example creates a SamlAssertionOutputFilter. This filter is invoked by the WSE framework before the SOAP request is sent to AEM Forms.
 
-```as3
+```java
  class LCSamlPolicyAssertion : Microsoft.Web.ServicES4.Design.PolicyAssertion
  {
         public override Microsoft.Web.ServicES4.SoapFilter CreateClientOutputFilter(FilterCreationContext context)
@@ -1372,7 +1372,7 @@ The following C# code example creates filter and assertion classes. This code ex
 
 Create a class to represent the SAML assertion. The main task that this class performs is convert data values from string to xml and preserve white space. This assertion xml is later imported into the SOAP request.
 
-```as3
+```java
  class SamlToken : SecurityToken
  {
         public const string SAMLAssertion = "https://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1";
@@ -1400,7 +1400,7 @@ Create a class to represent the SAML assertion. The main task that this class pe
 
 The following C# code example invokes a Forms service by using SAML-based authentication.
 
-```as3
+```java
  public class ImpersonationExample
  {
         . . .
@@ -1456,7 +1456,7 @@ Sometimes issues occur when invoking certain AEM Forms services operations by us
 
 If you attempt to asynchronously invoke an AEM Forms service operation, such as the Generate PDF’s `htmlToPDF` operation, a `SoapFaultException` occurs. To resolve this issue, create a custom-binding XML file that maps the `ExportPDF_Result` element and other elements into different classes. The following XML represents a custom binding file.
 
-```as3
+```xml
  <bindings
         xmlns:xsd="https://www.w3.org/2001/XMLSchema"
         xmlns:jxb="https://java.sun.com/xml/ns/jaxb" jxb:version="1.0"
@@ -1529,7 +1529,7 @@ To avoid this problem, it is recommended that you fully-qualify the data types. 
 
 The following C# code example signs an interactive form that is rendered by the Forms service. The client application has two service references. The `BLOB` instance that is associated with the Forms service belongs to the `SignInteractiveForm.ServiceReference2` namespace. Likewise, the `BLOB` instance that is associated with the Signature service belongs to the `SignInteractiveForm.ServiceReference1` namespace. The signed interactive form is saved as a PDF file named *LoanXFASigned.pdf*.
 
-```as3
+```csharp
  ???/**
      * Ensure that you create a .NET project that uses
      * MS Visual Studio 2008 and version 3.5 of the .NET

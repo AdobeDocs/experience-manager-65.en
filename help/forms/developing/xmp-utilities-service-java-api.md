@@ -29,7 +29,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following code example retrieves, inspects, and saves XMP metadata. (See [Exporting Metadata from PDF Documents](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-pdfutility-client.jar
@@ -134,7 +134,7 @@ The following code example retrieves, inspects, and saves XMP metadata. (See [Ex
 
 The following code example imports XMP metadata and saves the new PDF file to disk. The PDF document is based on a PDF file named Loan.pdf. The XML document that contains the metadata to import into the PDF document is based on an XML file named *LoanMetaData.xml*. For information about this XML file, see [Importing Metadata into PDF Documents](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-pdfutility-client.jar

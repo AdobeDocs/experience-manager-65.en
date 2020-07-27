@@ -28,7 +28,7 @@ AEM forms provides two registered MBeans that provide navigation and statistic i
 
 These public interfaces of ServiceStatistic MBean can be accessed for testing purposes:
 
-```as3
+```java
  public String getServiceId();
  public int getMajorVersion();
  public int getMinorVersion();
@@ -38,7 +38,7 @@ These public interfaces of ServiceStatistic MBean can be accessed for testing pu
 
 These public interfaces of OperationStatistic MBean can be accessed for testing purposes:
 
-```as3
+```java
  // InvocationCount: The number of times the method is invoked.
  public long getInvocationCount();
  // InvocationStartTime: The time at which the method started to execute.
@@ -107,7 +107,7 @@ To view MBeans from JConsole, configure the JBoss application server’s JVM sta
 1. Edit the run.bat file that is located under InstallJBoss/bin.
 1. Find the JAVA_OPTS line and add the following:
 
-   ```as3
+   ```shell
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
    ```
 
@@ -116,7 +116,7 @@ To view MBeans from JConsole, configure the JBoss application server’s JVM sta
 1. Edit the startWebLogic.bat file that is located under `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
 1. Find the JAVA_OPTS line and add the following:
 
-   ```as3
+   ```shell
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
    ```
 
@@ -135,13 +135,13 @@ To view MBeans from JConsole, configure the JBoss application server’s JVM sta
 
 1. On the admin console (Application server &gt; server1 &gt; Process Definition &gt; JVM), add the following line into the field for Generic JVM Argument:
 
-   ```as3
+   ```shell
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
    ```
 
 1. Add or uncomment the following three lines in the /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties file (or &lt;Your Websphere JRE&gt;/ lib/management/management.properties):
 
-   ```as3
+   ```shell
     com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect
     com.sun.management.jmxremote.authenticate=false
     com.sun.management.jmxremote.ssl=false

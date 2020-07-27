@@ -330,7 +330,7 @@ Perform the following steps to create [a client library](/help/sites-developing/
 
 1. Right-click the node, click **[!UICONTROL create new file]**, and create a file with extension .txt. For example, `js.txt`Add the following code to the newly created .txt file and click **[!UICONTROL Save All]**.
 
-   ```
+   ```javascript
    #base=util
     util.js
    ```
@@ -341,7 +341,7 @@ Perform the following steps to create [a client library](/help/sites-developing/
 
 1. Add the following code to util.js file and click **[!UICONTROL Save All]**. The code validate length of the file name.
 
-   ```
+   ```javascript
    /*
     * ADOBE CONFIDENTIAL
     * ___________________

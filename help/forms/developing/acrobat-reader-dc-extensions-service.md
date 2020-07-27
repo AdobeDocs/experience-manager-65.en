@@ -31,7 +31,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 The following Java code example applies usage rights to a PDF document named *Loan.pdf*. The rights-enabled PDF document is saved as a PDF file named *LoanUsageRights.pdf*. The following usage rights are applied to this PDF document: `enabledComments`, `enabledFormFillIn`, and `enabledDigitalSignatures`. (See [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md).)
 
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 
      * in the class path: 
@@ -143,7 +143,7 @@ The following Java code example applies usage rights to a PDF document named *Lo
 
 The following Java code example removes usage rights from a rights-enabled PDF document named *LoanUsageRights.pdf*. (See [Removing Usage Rights from PDF Documents](/help/forms/developing/assigning-usage-rights.md).)
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 
      * in the class path: 
@@ -243,7 +243,7 @@ The following Java code example removes usage rights from a rights-enabled PDF d
 
 The following Java code example retrieves information about the credential that is used to apply usage-rights to a rights-enabled PDF document named *LoanUsageRights.pdf*. (See [Retrieving Credential Information](/help/forms/developing/assigning-usage-rights.md).)
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 
      * in the class path: 

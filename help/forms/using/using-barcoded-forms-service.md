@@ -142,7 +142,7 @@ Barcoded Forms Service provides the following two APIs:
 
 The following sample code decodes a barcode in a document and saves the output XML to the disk.
 
-```java
+```jsp
 <%@ page import="java.util.List,
                 com.adobe.fd.bcf.api.BarcodedFormsService,
                 com.adobe.fd.bcf.api.CharSet,

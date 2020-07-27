@@ -75,7 +75,7 @@ You can evaluate value of *eventName* and *variableValueMap* arguments to change
 
 In the following example, state for the *error* event of each *fieldName* attribute is maintained. The event is sent to the analytics server only if an error occurs again.
 
-```
+```javascript
 case 'error':
         if(errorOccurred[variableValueMap.fieldName] == true) {
             pushEvent(eventName, variableValueMap)

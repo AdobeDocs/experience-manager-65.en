@@ -3,6 +3,7 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
 user-guide-title: AEM 6.5 Administering User Guide
+user-guide-description: Learn about administering AEM.
 ---
 
 # AEM 6.5 Administering User Guide {#administering}

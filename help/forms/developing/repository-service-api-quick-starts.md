@@ -59,7 +59,7 @@ The path to a resource located in the AEM Forms repository is:
 
 The following Java code example creates a folder called *FormsFolder* in the following location `/Applications/FormsApplication/1.0/`. (See [Creating Folders](/help/forms/developing/aem-forms-repository.md#creating-folders).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -165,7 +165,7 @@ The following Java code example creates a folder called *FormsFolder* in the fol
 
 The following Java code example writes a resource called *loan.xdp* in the repository. The resource is added to the `/Applications/FormsApplication/1.0/FormsFolder` location. (See [Writing Resources](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -293,7 +293,7 @@ The following Java code example writes a resource called *loan.xdp* in the repos
 
 The following Java code example lists resources that are located in `Applications/FormsApplication/1.0/FormsFolder`. (See [Listing Resources](/help/forms/developing/aem-forms-repository.md#listing-resources).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -392,7 +392,7 @@ The following Java code example lists resources that are located in `Application
 
 The following Java code example reads a resource called *Loan.xdp* from the repository. The XDP file is located in `/Applications/FormsApplication/1.0/FormsFolder/`. (See [Reading Resources](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -493,7 +493,7 @@ The following Java code example reads a resource called *Loan.xdp* from the repo
 
 The following Java code example updates `/Applications/FormsApplication/1.0/FormsFolder` by modifying its description. (See [Updating Resources](/help/forms/developing/aem-forms-repository.md#updating-resources).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -605,7 +605,7 @@ The following Java code example updates `/Applications/FormsApplication/1.0/Form
 
 The following Java code example searches for Loan.xdp in `Applications/FormsApplication/1.0/FormsFolder`. (See [Searching for Resources](/help/forms/developing/aem-forms-repository.md#searching-for-resources).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -729,7 +729,7 @@ The following Java code example searches for Loan.xdp in `Applications/FormsAppl
 
 The following Java code example creates a relationship between two resources in the AEM Forms repository. (See [Creating Resource Relationships](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -870,7 +870,7 @@ The following Java code example creates a relationship between two resources in 
 
 The following Java code example locks /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp. (See [Locking Resources](/help/forms/developing/aem-forms-repository.md#locking-resources).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -981,7 +981,7 @@ The following Java code example locks /Applications/FormsApplication/1.0/FormsFo
 
 The following Java code example reads and creates access control lists (ACLs) in the repository.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -1096,7 +1096,7 @@ The following Java code example reads and creates access control lists (ACLs) in
 
 The following Java code example deletes Loan.xdp from `Applications/FormsApplication/1.0/FormsFolder`. If this XDP file is not located in this folder, an exception is thrown. (See [Deleting Resources](/help/forms/developing/aem-forms-repository.md#deleting-resources).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar

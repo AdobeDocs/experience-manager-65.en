@@ -116,7 +116,7 @@ You can create a custom bundle to export your own remote functions for use insid
 
 1. Define the implementation of the interface, configure it as an OSGI service and define the following service properties:
 
-```
+```jsp
 @org.apache.felix.scr.annotations.Properties({
   @org.apache.felix.scr.annotations.Property(name = "connectors.jsoninvoker", boolValue = true),
   @org.apache.felix.scr.annotations.Property(name = "connectors.jsoninvoker.alias", value = "<service_id>"),
@@ -126,7 +126,7 @@ You can create a custom bundle to export your own remote functions for use insid
 
 The exm.service=true entry instructs Expression manager, that the service contains remote functions suitable for use in expressions. The &lt;service_id&gt; value must be a valid Java identifier (alphanumeric,$, _ with no other special characters). This value, prefixed with the REMOTE_ keyword, forms the prefix which is used inside expressions. For example, an interface with an annotated method bar() and the service ID foo in the service properties, can be referenced inside expressions using REMOTE_foo:bar().
 
-```
+```java
 package mergeandfuse.com;
 
 import org.apache.felix.scr.annotations.Component;
