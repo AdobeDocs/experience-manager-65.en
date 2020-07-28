@@ -16,17 +16,11 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 
 1. In the Digital Assets folder or subfolders, navigate to the location where you want to add digital assets.
 1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Files]**. Alternatively, drop it directly in the assets area. See [upload assets](managing-assets-touch-ui.md#uploading-assets) for details around the upload operation.
-1. To preview a video in the Card view, click the **[!UICONTROL Play]** button on the video asset.
+1. To preview a video in the Card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 
-   ![chlimage_1-65](assets/chlimage_1-201.png)
+1. To preview the video in the asset details page, click **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen.
 
-   You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] buttons are not available in the list view.
-
-1. To preview the video in the asset details page, click **[!UICONTROL Edit]** on the card.
-
-   The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen.
-
-   ![chlimage_1-66](assets/chlimage_1-202.png)
+   ![Video playback controls](assets/video-playback-controls.png)
 
 ## Configuration to upload assets that are larger than 2 GB {#configuration-to-upload-assets-that-are-larger-than-gb}
 
