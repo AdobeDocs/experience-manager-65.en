@@ -118,7 +118,7 @@ In this tutorial, you will style header and footer, text and numeric components,
 
 Header and footer provide a consistent and distinctive look to an adaptive form. Generally, the header contains logo and name of the organization, the footer contains copyright information, and these remain identical across multiple forms of an organization. To style header and footer of the shipping-address-add-update-form adaptive form:
 
-1. Navigate the **Header** &gt; **Text** option in the Selectors panel. The Selectors panel is on the left of the theme editor. If the panel is not visible, tap ![](assets/toggle-side-panel.png) Toggle Side Panel.  
+1. Navigate the **Header** &gt; **Text** option in the Selectors panel. The Selectors panel is on the left of the theme editor. If the panel is not visible, tap ![toggle-side-panel](assets/toggle-side-panel.png) Toggle Side Panel.  
 
 1. Set the following properties in the **Text** accordion and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). 
 
