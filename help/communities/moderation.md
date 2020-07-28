@@ -108,7 +108,7 @@ The content area contains information for posted UGC:
 
 ### Filter Rail {#ootbfilters}
 
-![chlimage_1-212](assets/chlimage_1-212.png)
+![open-filterrail](assets/open-filterrail.png)
 
 The side-panel icon opens the filter rail. The filter rail, which appears to the left of the content area, provides different filters, each having an immediate effect on the referenced UGC that appears in the content area.
 
@@ -137,13 +137,13 @@ Content Path limits the reference UGC displayed to the posts placed in specified
 
 Text search limits the referenced UGC displayed to posts to which contain the text entered.
 
-![chlimage_1-213](assets/chlimage_1-213.png)
+![text-search](assets/text-search.png)
 
 #### Site {#site}
 
 Site limits the referenced UGC displayed to posts to selected community sites. If no sites are checked, then all references to UGC are displayed.
 
-![chlimage_1-214](assets/chlimage_1-214.png)
+![site-panel](assets/site-panel.png)
 
 >[!NOTE]
  >
@@ -186,7 +186,7 @@ To add additional resources on which to filter:
   
     `Voting=social/tally/components/hbs/voting`
 
-![chlimage_1-215](assets/chlimage_1-215.png)
+  ![additional-contenttype](assets/additional-contenttype.png)
 
 * Select Save.
 * Refresh the Communities - Moderation console.
@@ -212,25 +212,25 @@ Flagging limits the referenced UGC displayed to posts which are flagged or hidde
 
 Once a piece of content is flagged, it remains flagged until you unflag that single piece of content by selecting the **Flag** button once again. Note that there are no flagging levels, such as important or followup.
 
-![chlimage_1-216](assets/chlimage_1-216.png)
+![flagging](assets/flagging.png)
 
 #### Members {#members}
 
 Members limits the referenced UGC displayed to UGC posted by the member name entered.
 
-![chlimage_1-217](assets/chlimage_1-217.png)
+![members](assets/members.png)
 
 #### Posted in the last {#posted-in-the-last}
 
 Posted In The Last limits the referenced UGC displayed to posts made in the last hour, day, week, month, or year.
 
-![chlimage_1-218](assets/chlimage_1-218.png)
+![posted-last](assets/posted-last.png)
 
 #### Sentiment {#sentiment}
 
 [Sentiment](/help/communities/moderate-ugc.md#sentiment) limits the referenced UGC displayed to posts with a sentiment value that is either positive, negative or neutral.
 
-![chlimage_1-219](assets/chlimage_1-219.png)
+![sentiment](assets/sentiment.png)
 
 ## Custom Filters {#custom-filters}
 
@@ -267,7 +267,7 @@ To expose the custom filters on existing Community sites:
 
 [Moderation actions](/help/communities/moderate-ugc.md#moderation-actions) can be performed on one or more selections made in the content area or when viewing content detail.
 
-To bulk-moderate the posts, in the content area click the Select ( ![selecticon](assets/selecticon.png)) icon on a post, which appears on hovering over it with the mouse (desktop) or pressing and holding a finger on the post (mobile). By doing this, you enter the multi-select mode and can now select the subsequent posts to be bulk moderated by simply clicking them. Use the buttons displayed on the toolbar to perform moderation actions on the selected posts. All the actions will prompt for confirmation.
+To bulk-moderate the posts, in the content area click the Select (![selecticon](assets/selecticon.png)) icon on a post, which appears on hovering over it with the mouse (desktop) or pressing and holding a finger on the post (mobile). By doing this, you enter the multi-select mode and can now select the subsequent posts to be bulk moderated by simply clicking them. Use the buttons displayed on the toolbar to perform moderation actions on the selected posts. All the actions will prompt for confirmation.
 
 To moderate a single post in the content area, hover over it with the mouse (desktop) or press and hold a finger on the post (mobile) such that buttons appear on the post. When operating on a single content detail, only a delete action will prompt for confirmation.
 
@@ -314,19 +314,19 @@ Present on the card view above the moderation action icons is the text of the po
 
 #### Reply {#reply}
 
-![chlimage_1-220](assets/chlimage_1-220.png)
+![reply](assets/reply.png)
 
 When working with a single post, a Reply icon will appear if the UGC type supports replies and is configured to allow replies.
 
 #### Allow {#allow}
 
-![chlimage_1-221](assets/chlimage_1-221.png)
+![allow](assets/allow.png)
 
 When working with a single post, the Allow icon will appear when the post has been either flagged or denied. If flagged, selecting Allow will clear all flags.
 
 #### Deny {#deny}
 
-![chlimage_1-222](assets/chlimage_1-222.png)
+![deny](assets/deny.png)
 
 The **Deny** moderation action is only available for content that is moderated, and does not appear on unmoderated content except in multi-selection mode.
 
@@ -338,31 +338,31 @@ Content that leaves the pending state can never return to a pending state. Conte
 
 #### Delete {#delete}
 
-![chlimage_1-223](assets/chlimage_1-223.png)
+![delete](assets/delete.png)
 
 In single selection or bulk mode, you can select items and delete them. The delete action results in a confirmation dialog. Once deleted, those items immediately disappear from the content area. **Once UGC is deleted, it is permanently removed from the repository and cannot later be retrieved**.
 
 #### Close {#close}
 
-![chlimage_1-224](assets/chlimage_1-224.png)
+![close](assets/close.png)
 
 When working with a single post, a Close icon will appear if the UGC type supports the ability to prevent further posts for that resource.
 
 #### Moderation History {#moderation-history}
 
-![chlimage_1-225](assets/chlimage_1-225.png)
+![moderation](assets/moderation.png)
 
 When working with a single post, a Moderation History icon will appear when hovering over it. Selecting the icon will display a pane containing a history of actions taken regarding the UGC post.
 
 To return to the content area display of multiple UGC posts, select the X in the top right corner of the view detail pane.
 
-For example :
+For example:
 
-![chlimage_1-226](assets/chlimage_1-226.png)
+![moderation-history](assets/moderation-history.png)
 
 #### View Detail {#view-detail}
 
-![chlimage_1-227](assets/chlimage_1-227.png)
+![view](assets/view.png)
 
 When working wtih a single post, more details can be viewed by opening up the UGC in detail mode.
 
@@ -370,7 +370,7 @@ To do so, hover over the post to display the `View Detail` icon and select it to
 
 To return to the content area display of multiple UGC posts, select the X in the top right corner of the view detail pane.
 
-For example :
+For example:
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![view1](assets/view1.png)
 
