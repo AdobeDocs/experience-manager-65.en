@@ -18,8 +18,9 @@ This page helps you extend the functionalities of the Multi Site Manager:
 
 * Learn about the main members of the MSM Java API.
 * Create a new synchronization action that can be used in a rollout configuration.
-* Remove the "Chapters" step in the Create Site wizard.
 * Modify the default language and country codes.
+
+<!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
 >[!NOTE]
 >
