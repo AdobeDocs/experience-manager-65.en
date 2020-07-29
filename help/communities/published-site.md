@@ -60,13 +60,14 @@ To protect your community site's content from access by anonymous users through 
 
 1. Go to **Page Properties**.
 
-   ![site-authentication](assets/site-authentication.png)
+   ![page-properties](assets/page-properties.png)
 
 1. Go to **Advanced** tab.
 
-   ![page-properties](assets/page-properties.png)
-
 1. Enable **Authentication Requirement**.
+
+   ![site-authentication](assets/site-authentication.png)
+
 1. Add the path of the login page. For example, **/content/......./GetStarted**.
 1. Publish the page.
 
