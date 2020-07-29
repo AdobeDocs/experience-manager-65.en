@@ -123,7 +123,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
            }
        }
    ```
-   
+
    ```jsp
    String browserLocale = "en";
 
