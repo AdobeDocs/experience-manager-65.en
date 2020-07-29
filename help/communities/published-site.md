@@ -17,7 +17,7 @@ docset: aem65
 
 ## Browse to New Site on Publish {#browse-to-new-site-on-publish}
 
-Now that the newly created communities site has been published, browse to the URL displayed when creating the site, but on the publish server, e.g.
+Now that the newly created communities site has been published, browse to the URL displayed when creating the site, but on the publish server, e.g:
 
 * Author URL = https://localhost:4502/content/sites/engage/en.html
 * Publish URL = https://localhost:4503/content/sites/engage/en.html
