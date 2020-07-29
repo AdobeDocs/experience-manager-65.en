@@ -27,11 +27,11 @@ AEM Forms workspace allows you to customize error dialogs. Perform the [Generic 
     "ErrorCode" : "Error Code:"
     }
 
-    ```
+   ```
 
    To
 
-    ```json
+   ```json
     "wserror" : {
     "message" : "Error Message:",
     "ComponentUI" : "UI Component:",
@@ -195,11 +195,11 @@ AEM Forms workspace allows you to customize error dialogs. Perform the [Generic 
        overflow: hidden;
    }
 
-    ```
+   ```
 
    To
 
-    ```css
+   ```css
 
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
    #userSearchPopUp #actionbar span, #taskarea .action button span, .oooAction button span, .wsMessageContainerDiv .action button span

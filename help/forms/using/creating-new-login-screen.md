@@ -57,9 +57,8 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
    1. Change the property `jcr:language` value to `ar`(for the `ar` folder).
 
    >[!NOTE]
-    >
-    >If locale is a language-country code combination, say, `ar-DZ`, then change the folder name and property value to `ar-DZ`.
-    >
+   >
+   >If locale is a language-country code combination, say, `ar-DZ`, then change the folder name and property value to `ar-DZ`.
 
 1. Copy `login.jsp`:
 
@@ -71,7 +70,6 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 ***Locale is language code***
 
    ```jsp
-
    String browserLocale = "en";
 
        for(int i=0; i<locales.length; i++)
@@ -94,9 +92,11 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                break;
            }
        }
+   ```
 
    To
 
+   ```jsp
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -122,8 +122,9 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                break;
            }
        }
+   ```
+   
    ```jsp
-
    String browserLocale = "en";
 
        for(int i=0; i<locales.length; i++)
@@ -146,9 +147,11 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                break;
            }
        }
+   ```
 
    To
 
+   ```jsp
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -174,9 +177,11 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                break;
            }
        }
-   ***To change Default locale***
+   ```
 
-   ```jsp
+***To change Default locale***
+
+```jsp
 
    String browserLocale = "en";
    for(int i=0; i<locales.length; i++)
@@ -187,8 +192,6 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
    for(int i=0; i<locales.length; i++)
 
 ```
-
-
 
 ### Adding new text, or modifying existing text {#adding-new-text-or-modifying-existing-text}
 
@@ -221,7 +224,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
 
-    ```
+   ```
 
    To
 
@@ -235,9 +238,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
 
-    ```
-
-
+   ```
 
 ### Adding new style, or modifying existing style {#adding-new-style-or-modifying-existing-style}
 
@@ -290,9 +291,8 @@ css.newLoginContentArea {
    ```
 
 >[!NOTE]
- >
- >If the existing images in `/apps/livecycle/core/content/login` (copied from `/libs/livecycle/core/content/login`) are removed, then remove the corresponding references in CSS.
- >
+>
+>If the existing images in `/apps/livecycle/core/content/login` (copied from `/libs/livecycle/core/content/login`) are removed, then remove the corresponding references in CSS.
 
 ### Add new images {#add-new-images}
 
@@ -338,13 +338,4 @@ For Example:
 
    <div class="newLginContainerBkg">
 
-
-
-
-
-
-
-
-
    ```
-
