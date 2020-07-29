@@ -21,13 +21,13 @@ This document focuses on writing a JavaScript using the `guidelib.dataIntegratio
 
 The `guidelib.dataIntegrationUtils.executeOperation` API invokes a service from within an adaptive form field. The API syntax is as follows:
 
-```
+```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
 The structure of the `guidelib.dataIntegrationUtils.executeOperation` API specifies details about the service operation. The syntax of the structure is as follows.
 
-```
+```javascript
 var operationInfo = {
 formDataModelId,
 operationTitle,
@@ -89,7 +89,7 @@ The following sample script uses the `guidelib.dataIntegrationUtils.executeOpera
 
 The `getAccountById` operation takes the value in the `employeeID` form field as input for the `empId` argument and returns employee name, account number, and account balance for the corresponding employee. The output values are populated in the specified form fields. For example, the value in `name` argument is populated in the `fullName` form element and value for `accountNumber` argument in `account` form element.
 
-```
+```javascript
 var operationInfo = {
 "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeAccount",
 "operationName": "getAccountDetails"
@@ -110,7 +110,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 You can also invoke the form data model service using the `guidelib.dataIntegrationUtils.executeOperation` API with a callback function. The API syntax is as follows:
 
-```
+```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
 ```
 
@@ -126,7 +126,7 @@ The `GETOrder` operation takes the value in the `Order ID` form field as input f
 >
 > If you use the `success` callback function, the output values do not populate in the specified form fields.
 
-```
+```javascript
 var operationInfo = {
     "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeOrder",
     "operationTitle": "GETOrder",

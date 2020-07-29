@@ -47,7 +47,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following Java code example adds an EJB endpoint to a service named *MyApplication/EncryptDocument*. (See [Adding EJB Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -146,7 +146,7 @@ The following Java code example adds an EJB endpoint to a service named *MyAppli
 
 The following Java code example adds a SOAP endpoint to a service named *MyApplication/EncryptDocument*. (See [Adding SOAP Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -250,7 +250,7 @@ The following Java code example adds a Watched Folder endpoint to a service name
 >
 >You must include the WatchedFolderEndpointConfigConstants.java file in your project to compile and run the following quick start. (See [Watched folder configuration values constant file](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -385,7 +385,7 @@ The following Java code example adds an Email endpoint to a service named *MyApp
 >
 >You must include the EmailEndpointConfigConstants.java file in your project to compile and run the following quick start. (See [Email configuration values constant file](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -524,7 +524,7 @@ The following Java code example adds an Email endpoint to a service named *MyApp
 
 The following Java code example adds a Remoting endpoint to a service named *MyApplication/EncryptDocument*. (See [Adding Remoting Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -629,7 +629,7 @@ The following Java code example adds a Remoting endpoint to a service named *MyA
 
 The following Java code example adds a TaskManager endpoint to a service named *MyApplication/EncryptDocument*. Notice that the name of the category is *EncryptProcess*. (See [Adding TaskManager Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -738,7 +738,7 @@ The following Java code example adds a TaskManager endpoint to a service named *
 
 The following Java code example modifies a Watched Folder endpoint.The endpoint is for the *MyApplication/EncryptDocument* process. The watched folder is changed to `C:\NewWatchedFolder`. (See [Modifying Endpoints](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -888,7 +888,7 @@ The following Java code example modifies a Watched Folder endpoint.The endpoint 
 
 The following Java code removes an EJB endpoint from a service named *MyApplication/EncryptDocument*. (See [Removing Endpoints](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -1007,7 +1007,7 @@ The following Java code removes an EJB endpoint from a service named *MyApplicat
 
 The following Java code retrieves information about a Watched Folder endpoint. Information about each configuration value is retrieved and displayed. This code list specifies whether each configuration value is required or optional. In addition, the name and value for each configuration value is displayed. (See [Retrieving Endpoint Connector Information](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar

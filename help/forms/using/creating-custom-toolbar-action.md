@@ -51,7 +51,7 @@ To illustrate the creation of a custom toolbar action, the following steps guide
 
    Add the following code in `init.jsp`.
 
-   ```
+   ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
    <guide:initializeBean name="guideField" className="com.adobe.aemds.guide.common.GuideButton"/>
 
@@ -109,7 +109,7 @@ To illustrate the creation of a custom toolbar action, the following steps guide
 
    Add the following code in the `ReviewBeforeSubmit.js` file.
 
-   ```
+   ```javascript
 
    /*anonymous function to handle show of review before submit view */
    $(function () {

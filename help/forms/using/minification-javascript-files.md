@@ -27,10 +27,14 @@ To generate minified code for semantic changes follow these steps.
 
    For example, addition of a new Sharequeue model, say mySharequeue, change:
 
-   ```
+   ```javascript
    sharequeuemodel : pathprefix + 'runtime/models/sharequeue',
 
+   ```
+
    To
+
+   ```javascript
 
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
@@ -45,7 +49,11 @@ To generate minified code for semantic changes follow these steps.
                path="runtime/models/sharequeue.js"
                service="service"/>
 
+   ```
+
    To
+
+   ```xml
 
    <sharequeue
                name="sharequeue"

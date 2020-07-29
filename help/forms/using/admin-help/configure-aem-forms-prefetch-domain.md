@@ -19,7 +19,7 @@ Users may experience a slower response time if they belong to many groups (for e
 1. To export the current configuration setting to a file, click **[!UICONTROL Export]** and save the configuration file in another location.
 1. Add the following node (marked in bold):
 
-   ```as3
+   ```xml
     <node name="UM">
     <map/>
     <node name="PrincipalCache">

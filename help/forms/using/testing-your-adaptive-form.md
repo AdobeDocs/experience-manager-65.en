@@ -72,14 +72,14 @@ Test suites have a collection of test cases. You can have multiple test suites. 
 1. Right-click the **[!UICONTROL WeRetailFormTestCases]** node click **Create** > **Create File**. In the Name field, type `js.txt` and click **OK**.
 1. Open the js.txt file for editing, add the following code, and save the file:
 
-   ```
+   ```text
    #base=.
     init.js
    ```
 
 1. Create a file, init.js,in the `WeRetailFormTestCases`node. Add the below code to the file and tap **[!UICONTROL Save All]**.
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
        window.testsuites = window.testsuites || {};
@@ -209,8 +209,8 @@ An action is a specific activity on an adaptive form such as clicking a button. 
 
 A test suite can have multiple test cases. You can run all the test cases in a test suite at once or individually. When you run a tests the icons indicate the results:
 
-* A checkmark icon indicates a passed test: ![](assets/save_icon.svg)
-* An "X" icon indicates a failed test: ![](assets/close-icon.svg)
+* A checkmark icon indicates a passed test: ![save_icon](assets/save_icon.svg)
+* An "X" icon indicates a failed test: ![close-icon](assets/close-icon.svg)
 
 1. Navigate to AEM icon > **[!UICONTROL Tools]**> **[!UICONTROL Operations]**> **[!UICONTROL Testing]**
 1. To run all the tests of the Test Suite:

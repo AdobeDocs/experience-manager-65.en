@@ -58,7 +58,7 @@ Perform the following steps to create a custom template for various Forms Portal
 
 The following is a sample implementation of a custom template where Forms Portal acquires a custom Geometrixx Gov Card Layout for the Search & Lister component.
 
-```mxml
+```xml
 <div class="__FP_boxes-container __FP_single-color">
     <div class="boxes __FP_boxes __FP_single-color" data-repeatable="true">
  <div class="__FP_boxes-thumbnail">

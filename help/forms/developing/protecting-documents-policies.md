@@ -62,7 +62,7 @@ Policies enable you to perform these tasks:
 
 When creating a policy using the web service API, reference an existing Portable Document Rights Language (PDRL) XML file that describes the policy. Policy permissions and the principal are defined in the PDRL document. The following XML document is an example of a PDRL document.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
  <Policy PolicyInstanceVersion="1" PolicyID="5DA3F847-DE76-F9CC-63EA-49A8D59154DE" PolicyCreationTime="2004-08-30T00:02:28.294+00:00" PolicyType="1" PolicySchemaVersion="1.0" PolicyName="SDK Test Policy -4344050357301573237" PolicyDescription="An SDK Test policy" xmlns="https://www.adobe.com/schema/1.0/pdrl">
        <PolicyEntry>

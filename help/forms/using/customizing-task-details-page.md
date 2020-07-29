@@ -28,7 +28,7 @@ To customize the task details page:
 
    For example, to add information about Route Selection Required in the task details page, you can add the following key-value pair in the task block:
 
-   ```
+   ```json
    "todo" : {
        .
        .

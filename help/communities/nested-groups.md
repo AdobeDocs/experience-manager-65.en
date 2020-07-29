@@ -88,7 +88,7 @@ The `groups` folder now contains two groups (refresh the page).
 
 Before creating groups nested within the `arts` group, hover over the `arts` card and select the publish icon to publish it.
 
-![chlimage_1-93](assets/chlimage_1-93.png)
+![liking-component](assets/liking-component.png)
 
 Wait for confirmation that the group was published.
 
@@ -127,7 +127,7 @@ To navigate to the nested groups from the Communities Sites console:
 * Select **[!UICONTROL arts card]**
 * Select **[!UICONTROL Groups]** folder
 
-![chlimage_1-95](assets/chlimage_1-95.png)
+![configure-liking](assets/configure-liking.png)
 
 ## Publishing Groups {#publishing-groups}
 

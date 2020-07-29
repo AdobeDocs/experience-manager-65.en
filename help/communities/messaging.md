@@ -79,11 +79,11 @@ To add a new configuration, select the plus '**+**' icon next to the service's n
 
 * **Inbox path**
   
-  (*Required*) The path, relative to the user's node (/home/users/*username*), to use for the **`inbox`** folder. The path must NOT end with a trailing forward slash '/'. Default is */mail/inbox*.
+  (*Required*) The path, relative to the user's node (/home/users/*username*), to use for the `inbox` folder. The path must NOT end with a trailing forward slash '/'. Default is */mail/inbox*.
 
 * **Sent items path**
   
-  (*Required*) The path, relative to the user's node (/home/users/*username*), to use for the **`send items`** folder. The path must NOT end with a trailing forward slash '/'. Default is */mail/sentitems* .
+  (*Required*) The path, relative to the user's node (/home/users/*username*), to use for the `sent items` folder. The path must NOT end with a trailing forward slash '/'. Default is */mail/sentitems* .
 
 * **Support attachments**
   

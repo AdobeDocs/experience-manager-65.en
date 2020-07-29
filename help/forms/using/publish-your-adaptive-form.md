@@ -53,10 +53,10 @@ AEM Forms provide a component, AEM Forms Container, to embed an adaptive form to
    The We.Retail site is shipped with AEM. If you do not have the We.Retail site installed, see to [We.Retail Reference Implementation](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) install the site.
 
 1. Tap ![properties](assets/properties.png) page information and select the **Edit Template** option in the newly created We.Retail site page. The template of the page opens in a new tab of the browser.
-1. Tap inside the **layout container** box and tap ![feedmanagement](assets/feedmanagement.png). In the **Allowed Components** tab, expand the **General** accordion, select the **AEM Form** option, and tap ![](assets/save_icon.svg). The AEM Forms Container component is enabled for the page.
+1. Tap inside the **layout container** box and tap ![feedmanagement](assets/feedmanagement.png). In the **Allowed Components** tab, expand the **General** accordion, select the **AEM Form** option, and tap ![save_icon](assets/save_icon.svg). The AEM Forms Container component is enabled for the page.
 
 1. Open the browser tab containing AEM Sites page opened in step 1. Tap the **Drag components here** box and tap **+.** In the **Insert New Component** box, tap **AEM Form.** The **AEM Forms Container** component is added to the page.
-1. Tap the **AEM Forms container** component and tap ![](assets/configure-icon.svg). A dialog box with properties of AEM Forms Container appears. In the **Asset Path** field, browse and select the shipping-address-add-update-form adaptive form. Tap ![](assets/save_icon.svg). The adaptive form is embedded in the page.
+1. Tap the **AEM Forms container** component and tap ![configure-icon](assets/configure-icon.svg). A dialog box with properties of AEM Forms Container appears. In the **Asset Path** field, browse and select the shipping-address-add-update-form adaptive form. Tap ![save_icon](assets/save_icon.svg). The adaptive form is embedded in the page.
 1. Publish both the adaptive form and sites page. Here are a few points to consider:
 
     * If you publish the AEM sites page for the first time and it includes an embedded form, publish the sites page and the embedded form.

@@ -62,7 +62,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Click **[!UICONTROL Pause]** beside progress bar that appears when an upload starts.
 
-   ![Upload assets progress bar](assets/chlimage_1-5.png)
+   ![Upload assets progress bar](assets/upload-progress-bar.png)
 
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
@@ -72,7 +72,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    When you click **[!UICONTROL Pause]**, it toggles to the **[!UICONTROL Play]** option. To resume uploading, click **[!UICONTROL Play]**.
 
-   ![Resume the paused asset upload](assets/chlimage_1-6.png)
+   ![Resume the paused asset upload](assets/resume-paused-upload.png)
 
    To cancel an ongoing upload, click close (`X`) next to the progress bar. When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset.
 
@@ -86,7 +86,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotate or crop) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with number `1` appended to its name.
 
-   ![Name Conflict dialog to resolve assets name conflict](assets/chlimage_1-7.png)
+   ![Name Conflict dialog to resolve assets name conflict](assets/resolve-naming-conflict.png)
 
    >[!NOTE]
    >
@@ -100,7 +100,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
    >
    >The [!UICONTROL Duplicates Detected] dialog appears only when the duplicate detection feature is enabled. To enable the duplicate detection feature, see [Enable Duplicate Detection](/help/assets/duplicate-detection.md).
 
-   ![Duplicate Asset Detected dialog](assets/chlimage_1-8.png)
+   ![Duplicate Asset Detected dialog](assets/duplicate-asset-detected.png)
 
    To retain the duplicate asset in [!DNL Assets], click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, click **[!UICONTROL Delete]**.
 
@@ -115,7 +115,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    Do not include special characters in the extensions of asset filenames.
 
-   ![Upload progress dialog shows status of successfully uploaded files and files that fail to upload](assets/chlimage_1-10.png)
+   ![Upload progress dialog shows status of successfully uploaded files and files that fail to upload](assets/bulk-upload-progress.png)
 
    In addition, the [!DNL Assets] user interface displays the most recent asset that you upload or the folder that you created first.
 
@@ -470,10 +470,7 @@ The other properties and metadata information is retained. A partial copy is not
 
 1. You can add or remove renditions for an asset, except the original. Navigate to the location of the asset for which you want to add or remove renditions.
 
-1. Click the asset to open its asset page.
-
-   ![Assets Detail page to manage renditions](assets/chlimage_1-15.png)
-
+1. Click the asset to open its page.
 1. In the Experience Manager interface, select **[!UICONTROL Renditions]** from the list.
 
    ![Left rail to open menu and select Renditions option](assets/renditions_menu.png)
@@ -506,7 +503,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    Similarly, you can customize the Annotation page image by overlaying `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![Overlay renditionpicker node in CRXDE to customize Annotation page image](assets/chlimage_1-17.png)
+   ![Overlay renditionpicker node in CRXDE to customize Annotation page image](assets/renditionpicker-node-crxde.png)
 
    To configure rendition dimensions for a video asset, navigate to the `videopicker` node in the CRX repository at the location `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, overlay the node, and then edit the appropriate property.
 
@@ -662,21 +659,16 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
 1. Select the desired option from the list. The crop area appears on the image based on the option you choose. The **Free Hand** option lets you crop the image without any aspect ratio restrictions.
 
-   ![Crop options](assets/chlimage_1-23.png)
+   ![Crop options](assets/crop-options.png)
 
 1. Select the area to be cropped, and resize or reposition it on the image.
 
-1. Use the **[!UICONTROL Undo]** and **[!UICONTROL Redo]** options to revert to the uncropped image or retain the cropped image, respectively.
-
-   ![Undo and redo options](assets/chlimage_1-25.png)
-
+1. Use the **[!UICONTROL Undo]** ![undo toolbar option](assets/do-not-localize/undo.png) and **[!UICONTROL Redo]** ![redo toolbar option](assets/do-not-localize/redo.png) options to revert to the uncropped image or retain the cropped image, respectively.
 1. Click the appropriate **[!UICONTROL Rotate]** option to rotate the image clockwise or anti-clockwise.
 
-   ![Clockwise and anti-clockwise rotate options](assets/chlimage_1-26.png)
+   ![Clockwise and anti-clockwise rotate options](assets/do-not-localize/rotate-options.png)
 
-1. Click the appropriate **[!UICONTROL Flip]** option to flip the image horizontally or vertically.
-
-   ![options to flip an image horizontally or vertically](assets/chlimage_1-27.png)
+1. Click the appropriate **[!UICONTROL Flip]** options to flip the image horizontally ![reflect horizontal option](assets/do-not-localize/flip-horizontal.png) or vertically ![reflect vertical option](assets/do-not-localize/flip-vertical.png).
 
 1. To complete the image editing, click **[!UICONTROL Finish]** ![Finish option](assets/do-not-localize/check-ok-done-icon.png). Clicking **Finish** also starts the regeneration of renditions.
 
@@ -722,23 +714,23 @@ Video annotations are only supported on browsers with HTML5-compatible video for
     * [Quick actions](/help/assets/managing-assets-touch-ui.md#quick-actions)
     * From the toolbar after selecting the asset or navigating to the asset page
 
-   ![Annotate option](assets/chlimage_1-29.png)
+   ![Annotate option](assets/annotate-option.png)
 
 1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
 
-   ![Comment box in Add Annotation dialog](assets/chlimage_1-30.png)
+   ![Comment box in Add Annotation dialog](assets/annotation-comment-box.png)
 
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
 
+   ![Specify user's email address and add comment to notify user](assets/annotation-add-user-email.png)
+
    >[!NOTE]
    >
-   >For a non-administrator user, suggestions appear only if the user has Read permissions at */home* in Crx-de.
-
-   ![Specify user's email address and add comment to notify user](assets/chlimage_1-31.png)
+   >For a non-administrator user, the suggestions appear only if the user has read permissions at `/home` path in CRXDE.
 
 1. After adding the annotation, click **[!UICONTROL Add]** to save it. A notification for the annotation is sent to Aaron.
 
-   ![Add button to save an annotation](assets/chlimage_1-32.png)
+   ![Add button to save an annotation](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -769,15 +761,15 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 1. In the Experience Manager interface, choose **[!UICONTROL Timeline]**.
 
-   ![Options available in Experience Manager](assets/chlimage_1-35.png)
+   ![Timeline option available in Experience Manager](assets/view-timeline.png)
 
 1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
 
-   ![Show All list in Timeline](assets/chlimage_1-36.png)
+   ![Show All list in Timeline](assets/timeline-show-all-option.png)
 
    Click a comment in the **[!UICONTROL Timeline]** panel to view the corresponding annotation on the image.
 
-   ![Timeline panel to view annotation on image](assets/chlimage_1-37.png)
+   ![Timeline panel to view annotation on image](assets/timeline-view-annotations.png)
 
    Click **[!UICONTROL Delete]**, to delete a particular comment.
 
@@ -797,11 +789,9 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
 1. To print specific annotations, select the annotations from the timeline.
 
-   ![Select an annotation from Timeline to print it](assets/chlimage_1-38.png)
+   ![Select an annotation from Timeline to print it](assets/timeline-select-annotations.png)
 
    To print the review status only, select it from the timeline.
-
-   ![To print only the review status of Annotation select it from the Timeline](assets/chlimage_1-39.png)
 
 1. Click **[!UICONTROL Print]** from the toolbar.
 
@@ -819,7 +809,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
 1. Click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
 
-   ![Annotation and review status on generated PDF](assets/chlimage_1-42.png)
+   ![Annotation and review status on generated PDF](assets/annotation-status-pdf.png)
 
 1. Download ![Download option for PDF](assets/do-not-localize/download.png) or print ![print options on PDF](assets/do-not-localize/print.png) the PDF using the options at the top-right.
 
@@ -829,7 +819,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
    To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![Configuration to print asset annotaion on PDF document](assets/chlimage_1-44.png)
+   ![Configuration to print asset annotation on PDF document](assets/annotation-print-pdf-config.png)
 
    Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
 

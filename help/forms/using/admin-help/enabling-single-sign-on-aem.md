@@ -114,14 +114,14 @@ You can also enable SSO by using HTTP headers. (See [Enable SSO using HTTP heade
 
 If you encounter this error:
 
-```as3
+```java
 DsCrackNames returned 0x2 in the name entry for spnegodemo.
 ktpass:failed getting target domain for specified user.
 ```
 
 try specifying the user as spnegodemo@um.lc.com:
 
-```as3
+```java
 ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 ```
 

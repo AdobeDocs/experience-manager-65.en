@@ -18,7 +18,7 @@ AEM Forms workspace allows you to customize error dialogs. Perform the [Generic 
 
 1. In the `/apps/ws/locales/en-US/translation.json` file, change the values of `wserror` to the customized values. For example:
 
-   ```
+   ```json
    "wserror" : {
     "message" : "Message:",
     "ComponentUI" : "Component UI:",
@@ -27,7 +27,11 @@ AEM Forms workspace allows you to customize error dialogs. Perform the [Generic 
     "ErrorCode" : "Error Code:"
     }
 
+    ```
+
    To
+
+    ```json
     "wserror" : {
     "message" : "Error Message:",
     "ComponentUI" : "UI Component:",
@@ -191,7 +195,11 @@ AEM Forms workspace allows you to customize error dialogs. Perform the [Generic 
        overflow: hidden;
    }
 
+    ```
+
    To
+
+    ```css
 
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
    #userSearchPopUp #actionbar span, #taskarea .action button span, .oooAction button span, .wsMessageContainerDiv .action button span
@@ -235,7 +243,11 @@ AEM Forms workspace allows you to customize error dialogs. Perform the [Generic 
     display:none;
 }
 
+```
+
 To
+
+```css
 
 .error-dialog{
     border: 9px solid #DEDEDE;
@@ -267,7 +279,11 @@ To
     white-space: nowrap;
 }
 
+```
+
 To
+
+```css
 
 .error-dialog .head-bar{
     height: 40px;
