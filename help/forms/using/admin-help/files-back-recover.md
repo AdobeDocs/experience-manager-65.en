@@ -124,7 +124,7 @@ SQL Server also provides two backup and recovery tools:
 * SQL Server Management Studio (GUI)
 * T-SQL (command line)
 
-See [Backup Strategies]( https://articles.techrepublic.com.com/5100-1035_61-1043671.md)and [Backup and Restore](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+For more information, see [Backup and Restore](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
