@@ -38,7 +38,7 @@ Before you begin to install and configure data capture capability of AEM Forms, 
 * Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/sites-deploying/technical-requirements.md).
 
 * Installation path of the AEM instance does not contain white-spaces.
-* An AEM instance is up and running. For Windows users, Adobe recommends to install the AEM instance in elevated mode. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least two [AEM instances (one Author and one Publish)](/help/sites-deploying/deploy.md) to run AEM Forms data capture capabilities:
+* An AEM instance is up and running. For Windows users, install the AEM instance in elevated mode. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least two [AEM instances (one Author and one Publish)](/help/sites-deploying/deploy.md) to run AEM Forms data capture capabilities:
 
     * **Author**: An AEM instance used to create, upload, and edit content and to administer the website. Once content is ready to go live, it is replicated to the publish instance.
     * **Publish**: An AEM instance that serves the published content to the public over the internet or an internal network.
@@ -119,7 +119,7 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
 
 If you install an AEM instance in elevated mode, the Visual Studio redistributables are installed automatically during the installation of AEM Forms add-on package.
 
-To evaluate if the Visual Studio redistributables installed automatically, open the `error.log` file available at the `/crx-repository/logs/` directory. The logs include the following message:
+To evaluate if the Visual Studio redistributables are installed automatically, open the `error.log` file available at the `/crx-repository/logs/` directory. The logs include the following message:
 
 `Redist <service name> already installed on system, will not attempt re-installation`
 
