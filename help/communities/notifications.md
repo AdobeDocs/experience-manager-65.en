@@ -65,7 +65,7 @@ Components must be configured to enable following. Features that allow following
 
 ## Notifications from Following {#notifications-from-following}
 
-![chlimage_1-243](assets/chlimage_1-243.png)
+![notifications](assets/notifications.png)
 
 The **[!UICONTROL Follow]** button provides a means to follow entries as activities, subscriptions and/or notifications. Each time the **[!UICONTROL Follow]** button is selected, it is possible to toggle on or off a selection. The `Email Subscriptions` selection is only present when configured.
 
@@ -88,17 +88,17 @@ By selecting the Notification Settings link from the Notifications page, it is p
 
 The web channel is always enabled.
 
-![chlimage_1-244](assets/chlimage_1-244.png)
+![notifications14](assets/notifications1.png)
 
 The email channel, which relies on proper [configuration of email](/help/communities/email.md), provides the same settings as for the web channel.
 
 The email channel is off by default.
 
-![chlimage_1-245](assets/chlimage_1-245.png)
+![notifications2](assets/notifications2.png)
 
 It may be turned on by a member, but still depends on email being configured.
 
-![chlimage_1-246](assets/chlimage_1-246.png)
+![notifications3](assets/notifications3.png)
 
 ## Viewing Notifications {#viewing-notifications}
 
@@ -108,13 +108,13 @@ A [wizard created community site](/help/communities/sites-console.md) now includ
 
 When visiting the published site, selecting the `Notifications` link will display all notifications for the member.
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![notifications4](assets/notifications4.png)
 
 ### Email Notifications {#email-notifications}
 
 When the email channel is enabled, the member receives an email which contains a link to the content on the web.
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![notifications5](assets/notifications5.png)
 
 ## Customize email notifications {#customize-email-notifications}
 
