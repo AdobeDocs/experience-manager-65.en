@@ -164,7 +164,7 @@ To add predicates:
 
 1. Drag the appropriate predicates to the Asset Share page underneath the query builder. Doing so creates the appropriate fields.
 
-![assetshare4](assets/assetshare4.bmp)
+![assetshare4](assets/assetshare4.png)
 
 The following predicates are available:
 
@@ -203,11 +203,11 @@ To create an Asset Editor page:
 
 The basic page created using the Geometrixx Asset Editor template looks as follows:
 
-![assetshare5](assets/assetshare5.bmp)
+![assetshare5](assets/assetshare5.png)
 
 To customize your Asset Editor page, use elements from the sidekick. The Asset Editor page that is accessed from the **Geometrixx Press Center** is a customized version of a page based on this template:
 
-![assetshare6](assets/assetshare6.bmp)
+![assetshare6](assets/assetshare6.png)
 
 #### Set an Asset Editor to open from an Asset Share page {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
