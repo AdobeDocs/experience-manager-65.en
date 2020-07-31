@@ -21,11 +21,9 @@ The search facets that appear in the Filters panel are defined in the underlying
 For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Use the Property predicate to search for assets that match a single property you specify. Use the Options predicate to search assets that match one or more values for a particular property. Add the Date Range predicate to search assets created within a specified date range.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **Edit** ![edit icon](assets/do-not-localize/aemassets_edit.png).
+1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 
    ![Locate and select the Assets Admin Search Rail](assets/assets_admin_searchrail.png)
-
-   Locate and select the Assets Admin Search Rail
 
    >[!NOTE]
    >
@@ -68,7 +66,7 @@ For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Use
 1. To close the preview, click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close.png) on the upper-right corner of the preview.
 1. Click **[!UICONTROL Done]** to save the settings.
 1. Navigate to the Search panel in the Assets user interface. The Property predicate is added to the panel.
-1. Enter a description for the asset to be searched in the text box. For example, enter "Adobe." When you perform a search, assets with description matching "Adobe" are listed in the search results.
+1. Enter a description for the asset to be searched in the text box. For example, enter `Adobe`. When you perform a search, assets with description matching `Adobe` are listed in the search results.
 
 ## Add an Options predicate {#adding-an-options-predicate}
 
@@ -82,13 +80,13 @@ When you select an option, the search is performed based on the `value` property
 
 For example, if you select "Images" for file types, the search query for the assets is built by combining the `value` property using an OR operation. For example, the search query for images is built by combining the results matched for *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg*, and *image/tiff* for the property `jcr:content/metadata/dc:format` using an OR operation.
 
-![Value property of a file type, as seen in CRXDE, is used for search queries to work](assets/chlimage_1-418.png)
+![Value property of a file type, as seen in CRXDE, is used for search queries to work](assets/filetype-value-property.png)
 
 Value property of a file type, as seen in CRXDE, is used for search queries to work
 
 Instead of manually creating a node structure for the options in the CRXDE repository, you can define the options in a JSON file by specifying corresponding key-value pairs. Specify the path of the JSON file in the **[!UICONTROL Property Name]** field. For example, you can define the key-value pairs, `image/bmp`, `image/gif`, `image/jpeg`, and `image/png` and specify their values as shown in the following sample JSON file. In the **[!UICONTROL Property Name]** field, you can specify the CRXDE path for this file.
 
-```JSON
+```json
 {
     "options" :
  [
@@ -156,7 +154,7 @@ The Tag predicate allows you to perform tag-based searches for assets. By defaul
 1. Navigate to the Search panel. The **[!UICONTROL Tags]** predicate is added to the Search panel.
 1. Specify tags based on which you want to search assets or select from the list of suggestions.
 
-   ![Experience Manager-provided suggestion when typing name of tag](assets/chlimage_1-419.png)
+   ![Experience Manager-provided suggestion when typing name of tag](assets/tag-suggestion.png)
 
    *Figure: Experience Manager-provided suggestion when typing name of tag.*
 

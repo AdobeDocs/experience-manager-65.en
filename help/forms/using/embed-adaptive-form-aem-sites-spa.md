@@ -71,7 +71,7 @@ To embed an adaptive form or Interactive Communication using AEM Forms for SPA C
     
     * **Theme**: Select a theme that defines styling for components of your adaptive form or Interactive Communication. Styling includes appearance properties such as font style, background color, dimensions, and alignment.
 
-1. Tap ![](assets/done_icon.png) to save the settings. The adaptive form or Interactive Communication is now embedded in the page.
+1. Tap ![done_icon](assets/done_icon.png) to save the settings. The adaptive form or Interactive Communication is now embedded in the page.
 
 ## Publish embedded adaptive form and Interactive Communication {#publish-embedded-adaptive-form-and-interactive-communication}
 

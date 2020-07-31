@@ -17,7 +17,7 @@ docset: aem65
 
 ## Browse to New Site on Publish {#browse-to-new-site-on-publish}
 
-Now that the newly created communities site has been published, browse to the URL displayed when creating the site, but on the publish server, e.g.
+Now that the newly created communities site has been published, browse to the URL displayed when creating the site, but on the publish server, e.g:
 
 * Author URL = https://localhost:4502/content/sites/engage/en.html
 * Publish URL = https://localhost:4503/content/sites/engage/en.html
@@ -60,13 +60,14 @@ To protect your community site's content from access by anonymous users through 
 
 1. Go to **Page Properties**.
 
-   ![site-authentication](assets/site-authentication.png)
+   ![page-properties](assets/page-properties.png)
 
 1. Go to **Advanced** tab.
 
-   ![page-properties](assets/page-properties.png)
-
 1. Enable **Authentication Requirement**.
+
+   ![site-authentication](assets/site-authentication.png)
+
 1. Add the path of the login page. For example, **/content/......./GetStarted**.
 1. Publish the page.
 

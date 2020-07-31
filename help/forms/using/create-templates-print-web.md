@@ -175,7 +175,7 @@ To create a Web channel template, define a folder where you can save the created
 
 Execute the following steps to create a folder for the editable templates:
 
-1. Tap **Tools** ![](assets/hammer-icon.svg) &gt; **Configuration Browser**.
+1. Tap **Tools** ![hammer-icon](assets/hammer-icon.svg) &gt; **Configuration Browser**.
 1. In the Configuration Browser page, tap **Create**.
 1. In the **Create Configuration** dialog, specify **Create_First_IC_templates** as the title for the folder, check **Editable Templates**, and tap **Create**.
 
@@ -219,7 +219,7 @@ Execute the following steps to create a template for the Web channel in the **Cr
 
    ![Content tree](assets/content_tree_root_panel_new.png)
 
-1. Select the panel and tap ![](assets/configure_icon.png) (Configure).
+1. Select the panel and tap ![configure_icon](assets/configure_icon.png) (Configure).
 1. In the Properties pane:
 
     1. Specify **billdetails** in the Name field.
@@ -251,7 +251,7 @@ Once you have created the Web template, you must enable it to use the template w
 
 Execute the following steps to enable the Web template:
 
-1. Tap **Tools** ![](assets/hammer-icon.svg) &gt; **Templates**.
+1. Tap **Tools** ![hammer-icon](assets/hammer-icon.svg) &gt; **Templates**.
 1. Navigate to the **Create_First_IC_Web_Template** template, select it, and tap **Enable**.
 1. Tab **Enable** again to confirm.
 
@@ -270,4 +270,4 @@ Based on the use case, you must include the **Pay Now** and **Subscribe** button
 
    ![Allowed components](assets/allowed_components_af_new.png)
 
-1. Tap ![](assets/done_icon.png) to save the properties.
+1. Tap ![done_icon](assets/done_icon.png) to save the properties.

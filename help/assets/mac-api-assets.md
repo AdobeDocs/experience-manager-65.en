@@ -247,6 +247,12 @@ Moves a folder or asset at the given path to a new destination.
 
 **Request**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
+Do not use `/content/dam` in the URL. A sample command to move assets and overwriting existing ones is:
+
+```shell
+curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
+```
+
 **Response codes**: The response codes are:
 
 * 201 - CREATED - if folder/asset has been copied to a non-existing destination.

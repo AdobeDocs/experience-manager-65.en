@@ -36,7 +36,7 @@ See also [Characteristics of SRP Options](working-with-srp.md#characteristics-of
   * Choice of run modes:
     * Standalone mode
     * [SolrCloud mode](solr.md#solrcloud-mode) (recommended for production environments)
-  * Choice of Multilingual Search (MLS)
+  * Choice of Multilingual Search (MLS):
     * [Installing Standard MLS](solr.md#installing-standard-mls)
     * [Installing Advanced MLS](solr.md#installing-advanced-mls)
 
