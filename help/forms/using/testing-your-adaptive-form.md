@@ -172,7 +172,7 @@ An action is a specific activity on an adaptive form such as clicking a button. 
 
 1. Create a file, `prefillTest.js`,in the **[!UICONTROL WeRetailFormTests]** node. Add the below code to the file. The code creates a test case. The test case prefills all the fields of a form and validates some fields to ensure correct values are entered.
 
-   ```
+   ```javascript
    (function (window, hobs) {
        'use strict';
 

@@ -643,7 +643,7 @@ area = function(len) {
 
 **Function Expression and Statement**
 
-```
+```javascript
 var b={};
 /** */
 b.area = function(len) {
@@ -653,7 +653,7 @@ b.area = function(len) {
 
 **Function Declaration as Variable**
 
-```
+```javascript
 /** */
 var x1,
     area = function(len) {
@@ -666,7 +666,7 @@ Limitation: custom function picks only the first function declaration from the v
 
 **Function Declaration as Object**
 
-```
+```javascript
 var c = {
     b : {
         /** */
