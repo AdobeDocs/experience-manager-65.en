@@ -235,7 +235,7 @@ For a workflow, explicitly pass an instance of the ResourceResolver object to th
 
 The following sample workflow process decodes a barcode in a document and saves the result to disk. The code is written in ECMAScript and the document is passed as workflow payload:
 
-```
+```javascript
 /*
  * Imports 
  */

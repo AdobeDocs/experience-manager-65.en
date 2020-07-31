@@ -136,7 +136,7 @@ The following Java code example applies usage rights to a PDF document named *Lo
  } 
   
   
- 
+
 ```
 
 ## Quick Start (SOAP mode): Removing usage rights from a PDF document using the Java API {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
