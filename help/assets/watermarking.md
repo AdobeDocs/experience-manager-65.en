@@ -33,4 +33,4 @@ To be able to apply watermark on assets, add the watermarking step in the [!UICO
 1. Save the **[!UICONTROL DAM Update Asset]** workflow with the watermark step.
 1. From the [!DNL Assets] user interface, upload a sample asset. The watermark appears with the font size, color and so on, at the position you configured in the above steps.
 
-To watermark PDF documents programmatically or with dynamic information, consider using [AEM Document Services](/help/forms/using/overview-aem-document-services.md) offering.
+To watermark PDF documents programmatically or with dynamic information, consider using [Experience Manager Document Services](/help/forms/using/overview-aem-document-services.md) offering.
