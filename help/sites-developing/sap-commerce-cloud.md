@@ -105,12 +105,7 @@ To develop for Hybris 4 the following is required:
 
   `-P hybris4`
 
-  It downloads the pre-configured Hybris 4 distribution and embeds it in the bundle:
-
-  ```
-  cq-commerce-hybris-server
-
-  ```
+  It downloads the pre-configured Hybris 4 distribution and embeds it in the bundle `cq-commerce-hybris-server`.
 
 * In the OSGi configuration manager:
 
@@ -165,7 +160,7 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
 
 * The hybris extension provides a polling importer ("hybris" scheme"), which can be configured to import changes into AEM at a specified interval (for example, every 24 hours where the interval is specified in seconds):
 
-    * ```
+    * ```js
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
        * "jcr:mixinTypes": ["cq:PollConfig"],
@@ -651,4 +646,3 @@ public class MyImportHandler extends DefaultImportHandler {
     ...
 }
 ```
-

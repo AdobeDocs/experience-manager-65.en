@@ -98,7 +98,7 @@ Before a deployment read the [General Description](#general-description) above.
 
 * Let Basic Auth Headers pass through:
 
-    * One way to let AEM to authenticate a user is to disable the global administrative security of the WebSphere server, to do so: go to Security -&gt; Global Security and uncheck the Enable administrative security checkbox, save and restart the server.
+  * One way to let AEM to authenticate a user is to disable the global administrative security of the WebSphere server, to do so: go to Security -&gt; Global Security and uncheck the Enable administrative security checkbox, save and restart the server.
 
 * set `"JAVA_OPTS= -Xmx2048m"`
 * If you want to install AEM using context root = / then you have first to change the context root of the existing Default web application
@@ -108,14 +108,14 @@ Before a deployment read the [General Description](#general-description) above.
 * Download AEM war file
 * Make your configurations In web.xml if needed (see above in the General Description)
 
-    * Unpack WEB-INF/web.xml file
-    * change sling.run.modes parameter to publish
-    * uncomment sling.home initial parameter and set this path as you need
-    * Repack web.xml file
+  * Unpack WEB-INF/web.xml file
+  * change sling.run.modes parameter to publish
+  * uncomment sling.home initial parameter and set this path as you need
+  * Repack web.xml file
 
 * Deploy AEM war file
 
-    * Choose a context root (if you want to set the sling run modes you need to select the detailed steps of the deploy wizard, then specify it in step 6 of the wizard)
+  * Choose a context root (if you want to set the sling run modes you need to select the detailed steps of the deploy wizard, then specify it in step 6 of the wizard)
 
 * Start AEM web application
 
@@ -153,12 +153,12 @@ This uses a simple Server Layout with only an Admin Server.
 
 * In `${myDomain}/config/config.xml`add to the security-configuration section:
 
-    * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` see on [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) for the correct position (per default to position it at the end of the section is ok)
+  * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` see on [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) for the correct position (per default to position it at the end of the section is ok)
 
 * Increase VM Memory settings:
 
-    * open `${myDomain}/bin/setDomainEnv.cmd` (resp .sh)search for WLS_MEM_ARGS, set e.g set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
-    * restart WebLogic Server
+  * open `${myDomain}/bin/setDomainEnv.cmd` (resp .sh)search for WLS_MEM_ARGS, set e.g set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+  * restart WebLogic Server
 
 * Create in `${myDomain}` a packages folder and inside a cq folder and in it a Plan folder
 
@@ -168,10 +168,10 @@ This uses a simple Server Layout with only an Admin Server.
 * Put the AEM war file into the ${myDomain}/packages/cq folder
 * Make your configurations In `WEB-INF/web.xml` if needed (see above in the General Description)
 
-    * Unpack `WEB-INF/web.xml`file
-    * change sling.run.modes parameter to publish
-    * uncomment sling.home initial parameter and set this path as you need (see General Description)
-    * Repack web.xml file
+  * Unpack `WEB-INF/web.xml`file
+  * change sling.run.modes parameter to publish
+  * uncomment sling.home initial parameter and set this path as you need (see General Description)
+  * Repack web.xml file
 
 * Deploy AEM war file as an Application, (for the other settings use the default settings)
 * The installation can take time...
@@ -192,7 +192,8 @@ Before a deployment read the [General Description](#general-description) above.
     * Tomcat enables neither admin nor manager access at installation. Therefore you have to manually edit `tomcat-users.xml` to allow access for these accounts:
 
         * Edit `tomcat-users.xml` to include access for admin and manager. The configuration should look similar to the following example:
-        * ```
+
+        * ```xml
           <?xml version='1.0' encoding='utf-8'?>
            <tomcat-users>
            <role rolename="manager"/>
@@ -219,7 +220,7 @@ Before a deployment read the [General Description](#general-description) above.
 
       and increase the max-file-size and max-request-size to at least 500MB, see the following `multipart-config` example of such a a `web.xml` file:
 
-        ```
+        ```xml
           <multipart-config>
            <!-- 500MB max -->
            <max-file-size>524288000</max-file-size>
@@ -247,4 +248,3 @@ Before a deployment read the [General Description](#general-description) above.
 For information on dealing with issues that may come up during installation, see:
 
 * [Troubleshooting](/help/sites-deploying/troubleshooting.md)
-

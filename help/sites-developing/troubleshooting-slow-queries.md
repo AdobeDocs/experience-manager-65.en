@@ -51,8 +51,8 @@ Explain **all** queries and ensure their query plans do not contain the **/&ast;
 
 * Monitor the `error.log` for index-less traversal queries:
 
-    * `*INFO* org.apache.jackrabbit.oak.query.QueryImpl Traversal query (query without index) ... ; consider creating and index`
-    * This message is only logged if no index is available, and if the query potentially traverses many nodes. Messages are not logged if an index is available, but amount to traversing is small, and thus fast.
+  * `*INFO* org.apache.jackrabbit.oak.query.QueryImpl Traversal query (query without index) ... ; consider creating and index`
+  * This message is only logged if no index is available, and if the query potentially traverses many nodes. Messages are not logged if an index is available, but amount to traversing is small, and thus fast.
 
 * Visit the AEM [Query Performance](/help/sites-administering/operations-dashboard.md#query-performance) operations console and [Explain](/help/sites-administering/operations-dashboard.md#explain-query) slow queries looking for traversal or no index query explanations.
 
@@ -71,11 +71,11 @@ Before adding the cq:tags index rule
 
 * **cq:tags Index Rule**
 
-    * Does not exist out of the box
+  * Does not exist out of the box
 
 * **Query Builder query**
 
-    * ```
+  * ```js
       type=cq:Page
        property=jcr:content/cq:tags
        property.value=my:tag
@@ -83,7 +83,7 @@ Before adding the cq:tags index rule
 
 * **Query plan**
 
-    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* where [a].[jcr:content/cq:tags] = 'my:tag' */`
+  * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
 This query resolves to the `cqPageLucene` index, but because no property index rule exists for `jcr:content` or `cq:tags`, when this restriction is evaluated, every record in the `cqPageLucene` index is checked to determine a match. This means that if the index contains 1 million `cq:Page` nodes, then 1 million records are checked to determine the result set.
 
@@ -91,7 +91,7 @@ After adding the cq:tags index rule
 
 * **cq:tags Index Rule**
 
-    * ```
+  * ```js
       /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
        @name=jcr:content/cq:tags
        @propertyIndex=true
@@ -99,7 +99,7 @@ After adding the cq:tags index rule
 
 * **Query Builder query**
 
-    * ```
+  * ```js
       type=cq:Page
        property=jcr:content/cq:tags
        property.value=myTagNamespace:myTag
@@ -107,7 +107,7 @@ After adding the cq:tags index rule
 
 * **Query plan**
 
-    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
+  * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
 The addition of the indexRule for `jcr:content/cq:tags` in the `cqPageLucene` index allows `cq:tags` data to be stored in an optimized way.
 
@@ -125,7 +125,7 @@ A useful way to identify if the Lucene index is returning a lot of results to re
 
 * Monitor the `error.log` for traversal queries:
 
-    * `*WARN* org.apache.jackrabbit.oak.spi.query.Cursors$TraversingCursor Traversed ### nodes ... consider creating an index or changing the query`
+  * `*WARN* org.apache.jackrabbit.oak.spi.query.Cursors$TraversingCursor Traversed ### nodes ... consider creating an index or changing the query`
 
 * Visit the AEM [Query Performance](/help/sites-administering/operations-dashboard.md#query-performance) operations console and [Explain](/help/sites-administering/operations-dashboard.md#explain-query) slow queries looking for query plans that do not resolve query property restrictions to index property rules.
 
@@ -141,13 +141,13 @@ This helps avoiding resource intensive queries (ie. not backed by any index or b
 
 * Monitor the logs for queries triggering large node traversal or large heap memory consumption : ``
 
-    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
-    * Optimize the query to reduce the number of traversed nodes
+  * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
+  * Optimize the query to reduce the number of traversed nodes
 
 * Monitor the logs for queries triggering large heap memory consumption :
 
-    * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
-    * Optimize the query to reduce the heap memory consumption
+  * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
+  * Optimize the query to reduce the heap memory consumption
 
 For AEM 6.0 - 6.2 versions, you can tune the threshold for node traversal via JVM parameters in the AEM start script to prevent large queries from overloading the environment. The recommended values are :
 
@@ -180,20 +180,18 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Unoptimized query**
 
-        *
-          ```
-           property=jcr:content/contentType
-           property.value=article-page
-          ```
+        ```js
+        property=jcr:content/contentType
+        property.value=article-page
+        ```
 
     * **Optimized query**
 
-        *
-          ```
-           type=cq:Page
-           property=jcr:content/contentType
-           property.value=article-page
-          ```
+      ```js
+      type=cq:Page
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
 
    Queries lacking a nodetype restriction force AEM to assume the `nt:base` nodetype, which every node in AEM is a subtype of, effectively resulting in no nodetype restriction.
 
@@ -203,7 +201,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Unoptimized query**
 
-        * ```
+        * ```js
           type=nt:hierarchyNode
           property=jcr:content/contentType
           property.value=article-page
@@ -211,7 +209,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Optimized query**
 
-        * ```
+        * ```js
           type=cq:Page
           property=jcr:content/contentType
           property.value=article-page
@@ -228,14 +226,14 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Unoptimized query**
 
-        * ```
+        * ```js
           property=jcr:content/contentType
           property.value=article-page
           ```
 
     * **Optimized query**
 
-        * ```
+        * ```js
           property=jcr:content/sling:resourceType
           property.value=my-site/components/structure/article-page
           ```
@@ -248,7 +246,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Unoptimized query**
 
-        * ```
+        * ```js
           type=cq:Page
           path=/content
           property=jcr:content/contentType
@@ -257,7 +255,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Optimized query**
 
-        * ```
+        * ```js
           type=cq:Page
           path=/content/my-site/us/en
           property=jcr:content/contentType
@@ -272,7 +270,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Unoptimized query**
 
-        * ```
+        * ```js
           type=cq:Page
           property=jcr:content/contentType
           property.operation=like
@@ -281,7 +279,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Optimized query**
 
-        * ```
+        * ```js
           type=cq:Page
           fulltext=article
           fulltext.relPath=jcr:content/contentType
@@ -293,18 +291,18 @@ The following example uses Query Builder as it's the most common query language 
 
 1. ***This adjustment is Query Builder specific, and does not apply to JCR-SQL2 or XPath.***
 
-   Use [Query Builder' guessTotal](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results) when the full set of results is **not **immediately needed.
+   Use [Query Builder' guessTotal](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results) when the full set of results is **not** immediately needed.
 
     * **Unoptimized query**
 
-        * ```
+        * ```js
           type=cq:Page
           path=/content
           ```
 
     * **Optimized query**
 
-        * ```
+        * ```js
           type=cq:Page
           path=/content
           p.guessTotal=100
@@ -317,12 +315,12 @@ The following example uses Query Builder as it's the most common query language 
 ## Existing Index Tuning {#existing-index-tuning}
 
 1. If the optimal query resolves to a Property Index, then there is nothing left to do as Property Indexes are minimally tune-able.
-1. Otherise,thequery should resolve to a Lucene Property Index. If no index can be resolved, jump to Creating a new Index.
+1. Otherise, the query should resolve to a Lucene Property Index. If no index can be resolved, jump to Creating a new Index.
 1. As needed, convert the query to XPath or JCR-SQL2.
 
     * **Query Builder query**
 
-        * ```
+        * ```js
           query type=cq:Page
           path=/content/my-site/us/en
           property=jcr:content/contentType
@@ -333,7 +331,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **XPath generated from Query Builder query**
 
-        * ```
+        * ```js
           /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
           ```
 
@@ -371,7 +369,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Query Builder query**
 
-        * ```
+        * ```js
           type=myApp:Author
           property=firstName
           property.value=ira
@@ -379,7 +377,7 @@ The following example uses Query Builder as it's the most common query language 
 
     * **XPath generated from Query Builder query**
 
-        * ```
+        * ```js
           //element(*, myApp:Page)[@firstName = 'ira']
           ```
 
@@ -420,54 +418,53 @@ Therefore, ensure an indexes satisfy queries, except if the combination of path 
 
 * **Query Builder Debugger**
 
-    * A WebUI for executing Query Builder queries and generate the supporting XPath (for use in Explain Query or Oak Index Definition Generator).
-    * Located on AEM at [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+  * A WebUI for executing Query Builder queries and generate the supporting XPath (for use in Explain Query or Oak Index Definition Generator).
+  * Located on AEM at [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
 
 * **CRXDE Lite - Query Tool**
 
-    * A WebUI for executing XPath and JCR-SQL2 queries.
-    * Located on AEM at [/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp) &gt; Tools &gt; Query...
+  * A WebUI for executing XPath and JCR-SQL2 queries.
+  * Located on AEM at [/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp) &gt; Tools &gt; Query...
 
 * **[Explain Query](/help/sites-administering/operations-dashboard.md#explain-query)**
 
-    * An AEM Operations dashboard that provides a detailed explanation (Query plan, query time, and # of results) for any given XPATH or JCR-SQL2 query.
+  * An AEM Operations dashboard that provides a detailed explanation (Query plan, query time, and # of results) for any given XPATH or JCR-SQL2 query.
 
 * **[Slow/Popular Queries](/help/sites-administering/operations-dashboard.md#query-performance)**
 
-    * An AEM Operations dashboard listing the recent slow and popular queries executed on AEM.
+  * An AEM Operations dashboard listing the recent slow and popular queries executed on AEM.
 
 * **[Index Manager](/help/sites-administering/operations-dashboard.md#the-index-manager)**
 
-    * An AEM Operations WebUI displaying the indexes on the AEM instance; facilitates understanding what indexes already exist, can be targeted or augmented.
+  * An AEM Operations WebUI displaying the indexes on the AEM instance; facilitates understanding what indexes already exist, can be targeted or augmented.
 
 * **[Logging](/help/sites-administering/operations-dashboard.md#log-messages)**
 
-    * Query Builder logging
+  * Query Builder logging
 
-        * `DEBUG @ com.day.cq.search.impl.builder.QueryImpl`
+    * `DEBUG @ com.day.cq.search.impl.builder.QueryImpl`
 
-    * Oak query execution logging
+  * Oak query execution logging
 
-        * `DEBUG @ org.apache.jackrabbit.oak.query`
+    * `DEBUG @ org.apache.jackrabbit.oak.query`
 
 * **Apache Jackrabbit Query Engine Settings OSGi Config**
 
-    * OSGi configuration that configures failure behavior for traversing queries.
-    * Located on AEM at [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
+  * OSGi configuration that configures failure behavior for traversing queries.
+  * Located on AEM at [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
 
 * **NodeCounter JMX Mbean**
 
-    * JMX MBean used to estimate the number of nodes in content trees in AEM.
-    * Located on AEM at [/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
+  * JMX MBean used to estimate the number of nodes in content trees in AEM.
+  * Located on AEM at [/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
 
 ### Community Supported {#community-supported}
 
 * **[Oak Index Definition Generator](https://oakutils.appspot.com/generate/index)**
 
-    * Generate optimal Lucence Property Index from XPath or JCR-SQL2 query statements.
+  * Generate optimal Lucence Property Index from XPath or JCR-SQL2 query statements.
 
 * **[AEM Chrome Plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)**
 
-    * Google Chrome web browser extension that exposes per-request log data, including executed queries and their query plans, in the browser's dev tools console.
-    * Requires [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) to be installed and enabled on AEM.
-
+  * Google Chrome web browser extension that exposes per-request log data, including executed queries and their query plans, in the browser's dev tools console.
+  * Requires [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) to be installed and enabled on AEM.
