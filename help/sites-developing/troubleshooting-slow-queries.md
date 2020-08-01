@@ -75,15 +75,15 @@ Before adding the cq:tags index rule
 
 * **Query Builder query**
 
-  * ```js
-      type=cq:Page
-       property=jcr:content/cq:tags
-       property.value=my:tag
-      ```
+  ```js
+  type=cq:Page
+  property=jcr:content/cq:tags
+  property.value=my:tag
+  ```
 
 * **Query plan**
 
-  * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* where [a].[jcr:content/cq:tags] = 'my:tag' */`
+  `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
 This query resolves to the `cqPageLucene` index, but because no property index rule exists for `jcr:content` or `cq:tags`, when this restriction is evaluated, every record in the `cqPageLucene` index is checked to determine a match. This means that if the index contains 1 million `cq:Page` nodes, then 1 million records are checked to determine the result set.
 
@@ -91,23 +91,23 @@ After adding the cq:tags index rule
 
 * **cq:tags Index Rule**
 
-  * ```js
-      /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
-       @name=jcr:content/cq:tags
-       @propertyIndex=true
-      ```
+  ```js
+  /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
+  @name=jcr:content/cq:tags
+  @propertyIndex=true
+  ```
 
 * **Query Builder query**
 
-  * ```js
-      type=cq:Page
-       property=jcr:content/cq:tags
-       property.value=myTagNamespace:myTag
-      ```
+  ```js
+  type=cq:Page
+  property=jcr:content/cq:tags
+  property.value=myTagNamespace:myTag
+  ```
 
 * **Query plan**
 
-  * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
+  `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
 The addition of the indexRule for `jcr:content/cq:tags` in the `cqPageLucene` index allows `cq:tags` data to be stored in an optimized way.
 
@@ -295,18 +295,18 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Unoptimized query**
 
-        * ```js
-          type=cq:Page
-          path=/content
-          ```
+      ```js
+      type=cq:Page
+      path=/content
+      ```
 
     * **Optimized query**
 
-        * ```js
-          type=cq:Page
-          path=/content
-          p.guessTotal=100
-          ```
+      ```js
+      type=cq:Page
+      path=/content
+      p.guessTotal=100
+      ```
 
    For cases where query execution is fast but the number of results are large, p. `guessTotal` is a critical optimization for Query Builder queries.
 
@@ -320,41 +320,41 @@ The following example uses Query Builder as it's the most common query language 
 
     * **Query Builder query**
 
-        * ```js
-          query type=cq:Page
-          path=/content/my-site/us/en
-          property=jcr:content/contentType
-          property.value=article-page
-          orderby=@jcr:content/publishDate
-          orderby.sort=desc
-          ```
+      ```js
+      query type=cq:Page
+      path=/content/my-site/us/en
+      property=jcr:content/contentType
+      property.value=article-page
+      orderby=@jcr:content/publishDate
+      orderby.sort=desc
+      ```
 
     * **XPath generated from Query Builder query**
 
-        * ```js
-          /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
-          ```
+      ```js
+      /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
+      ```
 
 1. Provide the XPath (or JCR-SQL2) to [Oak Index Definition Generator](https://oakutils.appspot.com/generate/index) to generate the optimized Lucene Property Index definition.
 
-    **Generated Lucene Property Index definition**
+   **Generated Lucene Property Index definition**
 
-    ```xml
-    - evaluatePathRestrictions = true
-    - compatVersion = 2
-    - type = "lucene"
-    - async = "async"
-    - jcr:primaryType = oak:QueryIndexDefinition
-        + indexRules
-        + cq:Page
-            + properties
-            + contentType
-                - name = "jcr:content/contentType"
-                - propertyIndex = true
-            + publishDate
-                - ordered = true
-                - name = "jcr:content/publishDate"
-    ```
+   ```xml
+   - evaluatePathRestrictions = true
+   - compatVersion = 2
+   - type = "lucene"
+   - async = "async"
+   - jcr:primaryType = oak:QueryIndexDefinition
+       + indexRules
+       + cq:Page
+           + properties
+           + contentType
+               - name = "jcr:content/contentType"
+               - propertyIndex = true
+           + publishDate
+               - ordered = true
+               - name = "jcr:content/publishDate"
+   ```
 
 1. Manually merge the generated definition into the existing Lucene Property Index in an additive fashion. Be careful not to remove existing configurations as they may be used to satisfy other queries.
 
@@ -367,19 +367,19 @@ The following example uses Query Builder as it's the most common query language 
 1. Verify the query does not resolve to an existing Lucene Property Index. If it does, see the above section on tuning and existing index.
 1. As needed, convert the query to XPath or JCR-SQL2.
 
-    * **Query Builder query**
+   * **Query Builder query**
 
-        * ```js
-          type=myApp:Author
-          property=firstName
-          property.value=ira
-          ```
+     ```js
+     type=myApp:Author
+     property=firstName
+     property.value=ira
+     ```
 
-    * **XPath generated from Query Builder query**
+   * **XPath generated from Query Builder query**
 
-        * ```js
-          //element(*, myApp:Page)[@firstName = 'ira']
-          ```
+     ```js
+     //element(*, myApp:Page)[@firstName = 'ira']
+     ```
 
 1. Provide the XPath (or JCR-SQL2) to [Oak Index Definition Generator](https://oakutils.appspot.com/generate/index) to generate the optimized Lucene Property Index definition.
 
