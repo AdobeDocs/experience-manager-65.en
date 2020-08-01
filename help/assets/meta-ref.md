@@ -10,7 +10,7 @@ The following reference includes information about a particular metadata schemat
 
 ## Dublin Core {#dublin-core}
 
-Dublin Core metadata provides a standardized set of conventions for describing assets to make them easier to find. In Assets, the Dublin Core describes digital assets including video, sound, images, and documents.
+Dublin Core metadata provides a standardized set of conventions for describing assets to make them easier to find. In [!DNL Assets], the Dublin Core describes digital assets including video, sound, images, and documents.
 
 The simple Dublin Core Metadata Element Set (DCMES) contains 15 metadata elements as listed in the following table. Each Dublin Core element is optional and can be repeated. You can add or delete Dublin Core metadata information as you would for media type-specific metadata.
 
@@ -23,7 +23,7 @@ In addition to the DCMES, there are other metadata elements created by the Dubli
 | creator     | The person or company responsible for creating the content.                                                              |
 | date        | Date or period of time associated with the asset.                                                                        |
 | description | More information about the asset.                                                                                        |
-| format      | The file format, physical medium, or dimensions of the asset. Experience Manager uses `dc:format` to denote the MIME type of the asset. |
+| format      | The file format, physical medium, or dimensions of the asset. [!DNL Experience Manager] uses `dc:format` to denote the MIME type of the asset. |
 | identifier  | A unique reference to the asset.                                                                                         |
 | language    | The language of the asset (for example, en for English).                                                                 |
 | publisher   | The person or company responsible for making the asset available.                                                        |

@@ -12,9 +12,9 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 
 ## Upload and preview video assets {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] generates previews for video assets with the extension MP4. If the format of the asset is not MP4, install the FFmpeg pack to generate a preview. FFmpeg creates video renditions of type OGG and MP4. You can preview the renditions in the Assets user interface.
+[!DNL Adobe Experience Manager Assets] generates previews for video assets with the extension MP4. If the format of the asset is not MP4, install the FFmpeg pack to generate a preview. FFmpeg creates video renditions of type OGG and MP4. You can preview the renditions in the [!DNL Assets] user interface.
 
-1. In the Digital Assets folder or subfolders, navigate to the location where you want to add digital assets.
+1. In the digital assets folder or subfolders, navigate to the location where you want to add digital assets.
 1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Files]**. Alternatively, drop it directly in the assets area. See [upload assets](managing-assets-touch-ui.md#uploading-assets) for details around the upload operation.
 1. To preview a video in the Card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 
@@ -64,7 +64,7 @@ After publishing, you can include the video assets in a web page as a URL or dir
 
 ## Annotate video assets {#annotate-video-assets}
 
-1. From the Assets console, click [!UICONTROL Edit] on the asset card to display the asset details page.
+1. From the [!DNL Assets] console, click [!UICONTROL Edit] on the asset card to display the asset details page.
 1. To play the video, click [!UICONTROL Preview].
 1. To annotate the video, click the **[!UICONTROL Annotate]** button. An annotation is added at the particular time (frame) in the video. When annotating, you can draw on the canvas and include a comment with the drawing. Comments are auto-saved.
 

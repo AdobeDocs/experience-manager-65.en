@@ -20,13 +20,13 @@ This document describes the following:
 
 ## Why create and configure Asset Editor pages? {#why-create-and-configure-asset-editor-pages}
 
-Digital Asset Management is being used in more and more scenarios. When moving from a small-scale solution for a small user group of professionally trained users - for example photographers or taxonomists - to larger and more diverse user groups - for example business users, WCM authors, journalists, and so on - the powerful user interface of Adobe Experience Manager Assets for professional users can provide too much information and stakeholders start to request specific user interfaces or applications to access the digital assets that are of relevance to them.
+Digital Asset Management is being used in more and more scenarios. When moving from a small-scale solution for a small user group of professionally trained users - for example photographers or taxonomists - to larger and more diverse user groups - for example business users, WCM authors, journalists, and so on - the powerful user interface of [!DNL Adobe Experience Manager Assets] for professional users can provide too much information and stakeholders start to request specific user interfaces or applications to access the digital assets that are of relevance to them.
 
 These asset-centric applications can be simple photo galleries in an intranet where employees can upload photos from trade show visits or a press center in a public-facing website. Asset-centric applications can also extend to complete solutions including shopping carts, checkout, and verification processes.
 
-Creating an asset-centric application becomes to a large extent a configuration process that does not require coding, only knowledge of user groups and their needs as well as knowledge of the metadata being used. Asset-centric applications created with Assets are extensible: with moderate coding effort reusable components for searching, viewing, and modifying assets can be created.
+Creating an asset-centric application becomes to a large extent a configuration process that does not require coding, only knowledge of user groups and their needs as well as knowledge of the metadata being used. Asset-centric applications created with [!DNL Assets] are extensible: with moderate coding effort reusable components for searching, viewing, and modifying assets can be created.
 
-An asset-centric application in Experience Manager consists of an Asset Editor page, which can be used to get a detailed view of a specific asset. An Asset Editor page also allows for the editing of metadata, provided the user accessing the asset has the necessary permissions.
+An asset-centric application in [!DNL Experience Manager] consists of an Asset Editor page, which can be used to get a detailed view of a specific asset. An Asset Editor page also allows for the editing of metadata, provided the user accessing the asset has the necessary permissions.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -380,7 +380,7 @@ The following actions are available:
 
 ## Multi-edit assets with the Asset Editor page {#multi-editing-assets-with-the-asset-editor-page}
 
-With Experience Manager Assets you can make changes to several assets at once. After having selected assets, you can simultaneously change their:
+With [!DNL Experience Manager Assets] you can make changes to several assets at once. After having selected assets, you can simultaneously change their:
 
 * Tags
 * Meta data

@@ -27,7 +27,7 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 
    ![chlimage_1-199](assets/chlimage_1-482.png)
 
-   The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset's metadata node. For example, if you specify . `/jcr:content/metadata/dc:desc` as the name of **[!UICONTROL Map to property]**, Assets stores the value `dc:desc` at the asset's metadata node.
+   The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset's metadata node. For example, if you specify . `/jcr:content/metadata/dc:desc` as the name of **[!UICONTROL Map to property]**, [!DNL Assets] stores the value `dc:desc` at the asset's metadata node.
 
     * **[!UICONTROL Default Value]**: Use this property to add a default value for the metadata component. For example, if you specify "My description" then this value is assigned to the property `dc:desc` at the asset's metadata node.
 
@@ -101,7 +101,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 Follow the steps to apply metadata profile:
 
-1. Click the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
+1. Click the [!DNL Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
 1. Select the metadata profile that you want to apply to a folder or multiple folders.
 
    ![chlimage_1-207](assets/chlimage_1-490.png)
@@ -121,7 +121,7 @@ Follow the steps to apply metadata profile:
 
 ### Apply a metadata profile globally {#applying-a-metadata-profile-globally}
 
-In addition to applying a profile to a folder, you can also apply one globally so that any content uploaded into Experience Manager assets in any folder has the selected profile applied.
+In addition to applying a profile to a folder, you can also apply one globally so that any content uploaded into [!DNL Experience Manager] assets in any folder has the selected profile applied.
 
 You can reprocess assets in a folder that already has an existing metadata profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
@@ -143,7 +143,7 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 
 ### Remove metadata profiles from folders via Profiles user interface {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Click the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
+1. Click the [!DNL Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
 1. Select the metadata profile that you want to remove from a folder or multiple folders.
 1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
 
@@ -151,7 +151,7 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 
 ### Remove metadata profiles from folders via Properties {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Click the Experience Manager logo and navigate **[!UICONTROL Assets]** and then to the folder that you want to remove an metadata profile from.
+1. Click the [!DNL Experience Manager] logo and navigate **[!UICONTROL Assets]** and then to the folder that you want to remove an metadata profile from.
 1. On the folder, click the check mark to select it and then click **[!UICONTROL Properties]**.
 1. Select the **[!UICONTROL Metadata Profiles]** tab and select **[!UICONTROL None]** from the drop-down menu and click **[!UICONTROL Save]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
