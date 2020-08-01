@@ -225,7 +225,7 @@ In general:
 
 There must be a 1:1 map between product variations and product data nodes.
 
-Product references must also have a node for each variation presented - but there is no requirement to present all variations. For instance, if a product has S, M, L variations, the product data might be:
+Product references must also have a node for each variation presented - but there is no requirement to present all variations. For instance, if a product has S, M, L variations, the product data might be.
 
 ```shell
 etc
@@ -237,7 +237,7 @@ etc
 |       |──shirt-l
 ```
 
-While a "Big and Tall" catalog might have only:
+While a "Big and Tall" catalog might have only.
 
 ```shell
 content
@@ -574,7 +574,7 @@ To build upon existing functionality your custom import handler:
 
 * has to implement the `ImportHandler` interface
 
-* can extend the `DefaultImportHandler`
+* can extend the `DefaultImportHandler`.
 
 ```java
 /**
@@ -636,7 +636,7 @@ public interface ImportHandler {
 }
 ```
 
-For your custom handler to be recognized by the importer, it must specify the `service.ranking`property with a value higher than 0; for example:
+For your custom handler to be recognized by the importer, it must specify the `service.ranking`property with a value higher than 0; for example.
 
 ```java
 @Component
