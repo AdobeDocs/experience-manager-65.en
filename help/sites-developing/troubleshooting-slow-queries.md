@@ -178,20 +178,20 @@ The following example uses Query Builder as it's the most common query language 
 
 1. Add a nodetype restriction so the query resolves to an existing Lucene Property Index.
 
-    * **Unoptimized query**
+* **Unoptimized query**
 
-        ```js
-        property=jcr:content/contentType
-        property.value=article-page
-        ```
+  ```js
+  property=jcr:content/contentType
+  property.value=article-page
+  ```
 
-    * **Optimized query**
+* **Optimized query**
 
-      ```js
-      type=cq:Page
-      property=jcr:content/contentType
-      property.value=article-page
-      ```
+  ```js
+  type=cq:Page
+  property=jcr:content/contentType
+  property.value=article-page
+  ```
 
    Queries lacking a nodetype restriction force AEM to assume the `nt:base` nodetype, which every node in AEM is a subtype of, effectively resulting in no nodetype restriction.
 
@@ -199,44 +199,44 @@ The following example uses Query Builder as it's the most common query language 
 
 1. Adjust the query's nodetype restriction so the query resolves to an existing Lucene Property Index.
 
-    * **Unoptimized query**
+* **Unoptimized query**
 
-        * ```js
-          type=nt:hierarchyNode
-          property=jcr:content/contentType
-          property.value=article-page
-          ```
+  ```js
+  type=nt:hierarchyNode
+  property=jcr:content/contentType
+  property.value=article-page
+  ```
 
-    * **Optimized query**
+* **Optimized query**
 
-        * ```js
-          type=cq:Page
-          property=jcr:content/contentType
-          property.value=article-page
-          ```
+  ```js
+  type=cq:Page
+  property=jcr:content/contentType
+  property.value=article-page
+  ```
 
    `nt:hierarchyNode` is the parent nodetype of `cq:Page`, and assuming `jcr:content/contentType=article-page` is only applied to `cq:Page` nodes via our custom application, this query will only return `cq:Page` nodes where `jcr:content/contentType=article-page`. This is a suboptimal restriction though, because:
 
-    * Other node inherit from `nt:hierarchyNode` (eg. `dam:Asset`) adding unnecessarily to the set of potential results.
-    * No AEM-provided index exists for `nt:hierarchyNode`, however as there a provided index for `cq:Page`.
+  * Other node inherit from `nt:hierarchyNode` (eg. `dam:Asset`) adding unnecessarily to the set of potential results.
+  * No AEM-provided index exists for `nt:hierarchyNode`, however as there a provided index for `cq:Page`.
 
    Setting `type=cq:Page` restricts this query to only `cq:Page` nodes, and resolves the query to AEM's cqPageLucene, limiting the results to a subset of nodes (only cq:Page nodes) in AEM.
 
 1. Or, adjust the property restriction(s) so the query resolves to an existing Property Index.
 
-    * **Unoptimized query**
+* **Unoptimized query**
 
-        * ```js
-          property=jcr:content/contentType
-          property.value=article-page
-          ```
+  ```js
+  property=jcr:content/contentType
+  property.value=article-page
+  ```
 
-    * **Optimized query**
+* **Optimized query**
 
-        * ```js
-          property=jcr:content/sling:resourceType
-          property.value=my-site/components/structure/article-page
-          ```
+  ```js
+  property=jcr:content/sling:resourceType
+  property.value=my-site/components/structure/article-page
+  ```
 
    Changing the property restriction from `jcr:content/contentType` (a custom value) to the well known property `sling:resourceType` lets the query to resolve to the property index `slingResourceType` which indexes all content by `sling:resourceType`.
 
@@ -244,46 +244,46 @@ The following example uses Query Builder as it's the most common query language 
 
 1. Add the tightest path restriction possible to the query. For example, prefer `/content/my-site/us/en` over `/content/my-site`, or `/content/dam` over `/`.
 
-    * **Unoptimized query**
+* **Unoptimized query**
 
-        * ```js
-          type=cq:Page
-          path=/content
-          property=jcr:content/contentType
-          property.value=article-page
-          ```
+  ```js
+  type=cq:Page
+  path=/content
+  property=jcr:content/contentType
+  property.value=article-page
+  ```
 
-    * **Optimized query**
+* **Optimized query**
 
-        * ```js
-          type=cq:Page
-          path=/content/my-site/us/en
-          property=jcr:content/contentType
-          property.value=article-page
-          ```
+  ```js
+  type=cq:Page
+  path=/content/my-site/us/en
+  property=jcr:content/contentType
+  property.value=article-page
+  ```
 
-   Scoping the path restriction from `path=/content`to `path=/content/my-site/us/en` allows the indexes to reduce the number of index entries that need to be inspected. When the query can restrict the path very well, beyond just `/content` or `/content/dam`, ensure the index has `evaluatePathRestrictions=true`.
+  Scoping the path restriction from `path=/content`to `path=/content/my-site/us/en` allows the indexes to reduce the number of index entries that need to be inspected. When the query can restrict the path very well, beyond just `/content` or `/content/dam`, ensure the index has `evaluatePathRestrictions=true`.
 
-   Note using `evaluatePathRestrictions` increases the index size.
+  Note using `evaluatePathRestrictions` increases the index size.
 
 1. When possible, avoid query functions/operations suchs as: `LIKE` and `fn:XXXX` as their costs scales with the number of restriction-based results.
 
-    * **Unoptimized query**
+* **Unoptimized query**
 
-        * ```js
-          type=cq:Page
-          property=jcr:content/contentType
-          property.operation=like
-          property.value=%article%
-          ```
+  ```js
+  type=cq:Page
+  property=jcr:content/contentType
+  property.operation=like
+  property.value=%article%
+  ```
 
-    * **Optimized query**
+* **Optimized query**
 
-        * ```js
-          type=cq:Page
-          fulltext=article
-          fulltext.relPath=jcr:content/contentType
-          ```
+  ```js
+  type=cq:Page
+  fulltext=article
+  fulltext.relPath=jcr:content/contentType
+  ```
 
    The LIKE condition is slow to evaluate because no index can be used if the text starts with a wildcard ("%...'). The jcr:contains condition allows using a fulltext index, and is therefore preferred. This requires the resolved Lucene Property Index to have indexRule for `jcr:content/contentType` with `analayzed=true`.
 
@@ -315,7 +315,7 @@ The following example uses Query Builder as it's the most common query language 
 ## Existing Index Tuning {#existing-index-tuning}
 
 1. If the optimal query resolves to a Property Index, then there is nothing left to do as Property Indexes are minimally tune-able.
-1. Otherise, the query should resolve to a Lucene Property Index. If no index can be resolved, jump to Creating a new Index.
+1. Otherwise, the query should resolve to a Lucene Property Index. If no index can be resolved, jump to Creating a new Index.
 1. As needed, convert the query to XPath or JCR-SQL2.
 
     * **Query Builder query**
