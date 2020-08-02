@@ -515,9 +515,9 @@ For more information about generating and viewing subassets, see [manage subasse
 
 ## Delete assets {#deleting-assets}
 
-To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset.
+To delete assets, a user requires delete permissions on `dam/asset`. If you only have modify permissions, you can only edit the asset metadata and add annotations to the asset. However, you cannot delete the asset or its metadata.
 
-Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
+To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. To disallow users from deleting referenced assets and leaving broken links, disable the force delete option using an overlay, .
 
 1. Navigate to the location of the asset(s) you want to delete.
 
@@ -533,11 +533,8 @@ Also, disable the force delete button using an overlay, to disallow users from d
 
    >[!NOTE]
    >
-   >To delete assets, a user requires delete permissions on `dam/asset`. If you only have modify permissions, you can only edit the asset metadata and add annotations to the asset. However, you cannot delete the asset or its metadata.
-
-   >[!NOTE]
-   >
-   >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
+   >* To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
+   >* It is possible to delete a *folder* that contains checked-out asset files. Before deleting a folder, ensure that no digital assets are checked-out by users.
 
 ## Download assets {#downloading-assets}
 
