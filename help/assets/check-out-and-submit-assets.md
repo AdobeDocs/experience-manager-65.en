@@ -50,6 +50,10 @@ Administrators can check in assets that are checked out by other users.
 
 1. From the toolbar, click **[!UICONTROL Release Lock]**. The asset is checked back in and available for edit to other users.
 
+## Best practices and limitations {#tips-limitations}
+
+* It is possible to delete a *folder* that contains checked-out asset files. Before deleting a folder, ensure that no digital assets are checked-out by users.
+
 >[!MORELIKETHIS]
 >
 >* [Understand check in and check out in Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
