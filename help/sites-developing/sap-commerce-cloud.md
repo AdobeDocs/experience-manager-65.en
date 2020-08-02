@@ -20,6 +20,7 @@ discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 The integration framework includes an integration layer with an API. This allows you to:
 
 * plug in an eCommerce system and pull product data into AEM
+
 * build AEM components for commerce capabilities independent of the specific eCommerce engine
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
@@ -42,28 +43,29 @@ The eCommerce framework can be used with any eCommerce solution, the engine bein
 
 * eCommerce Engines are OSGi services supporting the `CommerceService` interface
 
-    * Engines can be distinguished by a `commerceProvider` service property
+  * Engines can be distinguished by a `commerceProvider` service property
 
 * AEM supports `Resource.adaptTo()` for `CommerceService` and `Product`
 
-    * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource's hierarchy:
+  * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource's hierarchy:
 
-        * If found, the value is used to filter the commerce service lookup.
-        * If not found, the highest-ranked commerce service is used.
+    * If found, the value is used to filter the commerce service lookup.
 
-    * A `cq:Commerce` mixin is used so the `cq:commerceProvider` can be added to strongly-typed resources.
+    * If not found, the highest-ranked commerce service is used.
+
+  * A `cq:Commerce` mixin is used so the `cq:commerceProvider` can be added to strongly-typed resources.
 
 * The `cq:commerceProvider` property is also used to reference the appropriate commerce factory definition.
 
-    * For example, a `cq:commerceProvider` property with the value `hybris` will correlate to the OSGi configuration for **Day CQ Commerce Factory for Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory) - where the parameter `commerceProvider` also has the value `hybris`.
+  * For example, a `cq:commerceProvider` property with the value `hybris` will correlate to the OSGi configuration for **Day CQ Commerce Factory for Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory) - where the parameter `commerceProvider` also has the value `hybris`.
 
-    * Here further properties, such as **Catalog version** can be configured (when appropriate and available).
+  * Here further properties, such as **Catalog version** can be configured (when appropriate and available).
 
 See the following examples below:
 
-| `cq:commerceProvider = geometrixx` |in a standard AEM installation a specific implementation is required; for example, the geometrixx example, which includes minimal extensions to the generic API |
-|---|---|
-| `cq:commerceProvider = hybris` |hybris implementation |
+| `cq:commerceProvider = geometrixx` | in a standard AEM installation a specific implementation is required; for example, the geometrixx example, which includes minimal extensions to the generic API |
+|--- |--- |
+| `cq:commerceProvider = hybris` | hybris implementation |
 
 ### Example {#example}
 
@@ -109,15 +111,18 @@ To develop for Hybris 4 the following is required:
 
 * In the OSGi configuration manager:
 
-    * Disable Hybris 5 support for the Default Response Parser service.
-    * Ensure that Hybris Basic Authentication Handler service has a lower service ranking than Hybris OAuth Handler service.
+  * Disable Hybris 5 support for the Default Response Parser service.
+
+  * Ensure that Hybris Basic Authentication Handler service has a lower service ranking than Hybris OAuth Handler service.
 
 ### Session Handling {#session-handling}
 
 hybris uses a user session to store information such as the customer's shopping cart. The session id is returned from hybris in a `JSESSIONID` cookie that needs to be sent on subsequent requests to hybris. To avoid storing the session id in the repository it is encoded in another cookie that is stored in the shopper's browser. The following steps are performed:
 
 * On the first request no cookie is set on the shopper's request; so a request is sent to the hybris instance to create a session.
+
 * The session cookies are extracted from the response, encoded in a new cookie (for example, `hybris-session-rest`) and set on the response to the shopper. The encoding in a new cookie is required, because the original cookie is only valid for a certain path and would otherwise not be sent back from the browser in subsequent requests. The path information must also be added to the cookie's value.
+
 * On subsequent requests, the cookies are decoded from the `hybris-session-<*xxx*>` cookies and set on the HTTP client that is used to request data from hybris.
 
 >[!NOTE]
@@ -128,8 +133,9 @@ hybris uses a user session to store information such as the customer's shopping 
 
 * This session "owns" the **shopping cart**
 
-    * performs add/remove/etc
-    * performs the various calculations on the cart;
+  * performs add/remove/etc
+  
+  * performs the various calculations on the cart;
 
       `commerceSession.getProductPrice(Product product)`
 
@@ -138,6 +144,7 @@ hybris uses a user session to store information such as the customer's shopping 
   `CommerceSession.getUserContext()`
 
 * Also owns the **payment** processing connection
+
 * Also owns the **fulfillment** connection
 
 ### Product Synchronization and Publishing {#product-synchronization-and-publishing}
@@ -155,12 +162,13 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
 * The importer (b) is used for the initial setup of the page tree structure in AEM for catalogs.
 * Catalog changes in hybris are indicated to AEM via a feed, these then propagate to AEM (b)
 
-    * Product added/deleted/changed with respect to catalog version.
-    * Product approved.
+  * Product added/deleted/changed with respect to catalog version.
+
+  * Product approved.
 
 * The hybris extension provides a polling importer ("hybris" scheme"), which can be configured to import changes into AEM at a specified interval (for example, every 24 hours where the interval is specified in seconds):
 
-    * ```js
+  ```JavaScript
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
        * "jcr:mixinTypes": ["cq:PollConfig"],
@@ -169,19 +177,21 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
        * "jcr:primaryType": "cq:PageContent",
        * "interval": 86400
        }
-      ```
+  ```
 
 * The catalog configuration in AEM recognizes **Staged** and **Online** catalog versions.
 
 * Syncing products between catalog versions will require a (de-)activation of the corresponding AEM page (a, c)
 
-    * Adding a product to an **Online** catalog version requires activation of the product's page.
-    * Removing a product requires deactivation.
+  * Adding a product to an **Online** catalog version requires activation of the product's page.
+
+  * Removing a product requires deactivation.
 
 * Activating a page in AEM (c) requires a check (b) and is only possible if
 
-    * The product is in an **Online** catalog version for product pages.
-    * The referenced products are available in an **Online** catalog version for other pages (e.g. campaign pages).
+  * The product is in an **Online** catalog version for product pages.
+
+  * The referenced products are available in an **Online** catalog version for other pages (e.g. campaign pages).
 
 * Activated product pages need to access the product data's **Online** version (d).
 
@@ -204,7 +214,6 @@ Any product resource can be represented by a `Product API`. Most calls in the pr
 >[!NOTE]
 >
 >In effect a variant axes is determined by whatever `Product.getVariantAxes()` returns:
->
 >* hybris defines it for the hybris implementation
 >
 >While products (in general) can have many variant axes, the out-of-the-box product component only handles two:
@@ -213,7 +222,7 @@ Any product resource can be represented by a `Product API`. Most calls in the pr
 >
 >1. plus one more
 >
->   This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
+>This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
 
 #### Product References and Product Data {#product-references-and-product-data}
 
@@ -225,7 +234,7 @@ In general:
 
 There must be a 1:1 map between product variations and product data nodes.
 
-Product references must also have a node for each variation presented - but there is no requirement to present all variations. For instance, if a product has S, M, L variations, the product data might be.
+Product references must also have a node for each variation presented - but there is no requirement to present all variations. For instance, if a product has S, M, L variations, the product data might be:
 
 ```shell
 etc
@@ -237,7 +246,7 @@ etc
 |       |──shirt-l
 ```
 
-While a "Big and Tall" catalog might have only.
+While a "Big and Tall" catalog might have only:
 
 ```shell
 content
@@ -323,25 +332,31 @@ public class AxisFilter implements VariantFilter {
 
 * **General Storage Mechanism**
 
-    * Product nodes are nt:unstructured.
-    * A product node can be either:
+  * Product nodes are `nt:unstructured`.
+  
+  * A product node can be either:
 
-        * A reference, with the product data stored elsewhere:
+    * A reference, with the product data stored elsewhere:
 
-            * Product references contain a `productData` property, which points to the product data (typically under `/etc/commerce/products`).
-            * The product data is hierarchical; product attributes are inherited from a product data node's ancestors.
-            * Product references can also contain local properties, which override those specified in their product data.
+      * Product references contain a `productData` property, which points to the product data (typically under `/etc/commerce/products`).
 
-        * A product itself:
+      * The product data is hierarchical; product attributes are inherited from a product data node's ancestors.
 
-            * Without a `productData` property.
-            * A product node which holds all properties locally (and does not contain a productData property) inherits product attributes directly from its own ancestors.
+      * Product references can also contain local properties, which override those specified in their product data.
+
+    * A product itself:
+
+      * Without a `productData` property.
+
+      * A product node which holds all properties locally (and does not contain a productData property) inherits product attributes directly from its own ancestors.
 
 * **AEM-generic Product Structure**
 
-    * Each variant must have its own leaf node.
-    * The product interface represents both products and variants, but the related repository node is specific about which it is.
-    * The product node describes the product attributes and variant axes.
+  * Each variant must have its own leaf node.
+  
+  * The product interface represents both products and variants, but the related repository node is specific about which it is.
+  
+  * The product node describes the product attributes and variant axes.
 
 #### Example {#example-1}
 
@@ -493,6 +508,7 @@ The `CommerceSession` owns the three elements:
 **Payment Processing**
 
 * The `CommerceSession` also owns the payment processing connection.
+
 * Implementors need to add specific calls (to their chosen payment processing service) to the `CommerceSession` implementation.
 
 **Order Fulfillment**
