@@ -1,12 +1,12 @@
 ---
-title: Manage metadata of many assets and collections in Adobe Enterprise Manager.
+title: Manage metadata of many assets and collections in [!DNL Adobe Enterprise Manager].
 description: Edit the metadata of many assets and collections simultaneously to quickly propagate common metadata changes.
 contentOwner: AG
 ---
 
 # Manage assets and collections {#managing-multiple-assets-and-collections}
 
-Adobe Enterprise Manager Assets lets you edit the metadata of multiple assets simultaneously so you can quickly propagate common metadata changes to assets in bulk. You can also edit the metadata for multiple collections in bulk.
+[!DNL Adobe Enterprise Manager Assets] lets you edit the metadata of multiple assets simultaneously so you can quickly propagate common metadata changes to assets in bulk. You can also edit the metadata for multiple collections in bulk.
 
 Use the properties page to perform metadata changes on multiple assets or collections:
 
@@ -21,7 +21,7 @@ To customize the metadata properties page, including adding, modifying, deleting
 
 ## Edit metadata properties of multiple assets {#editing-metadata-properties-of-multiple-assets}
 
-1. In the Assets user interface, navigate to the location of the assets you want to edit.
+1. In the [!DNL Assets] user interface, navigate to the location of the assets you want to edit.
 1. Select the assets for which you want to edit common properties.
 1. From the toolbar, click **[!UICONTROL Properties]** to open the properties page for the selected assets.
 

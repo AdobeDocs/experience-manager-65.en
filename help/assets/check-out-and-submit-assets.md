@@ -1,12 +1,12 @@
 ---
-title: Check in and check out your digital assets for editing
+title: Check in and check out your digital assets for editing.
 description: Learn how to check out assets for editing and check them back in after the changes are complete.
 contentOwner: AG
 ---
 
-# Check-in and check-out files in Experience Manager DAM {#check-in-and-check-out-files-in-assets}
+# Check-in and check-out files in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
 
-Adobe Experience Manager Assets lets you check out assets for editing and check them back in after you complete making the changes. After you check out an asset, only you can edit, annotate, publish, move, or delete the asset. Checking out an asset locks the asset. Other users cannot perform any of these operations on the asset until you check the asset back in to Assets. However, they can still change the metadata for the locked asset.
+[!DNL Adobe Experience Manager Assets] lets you check out assets for editing and check them back in after you complete making the changes. After you check out an asset, only you can edit, annotate, publish, move, or delete the asset. Checking out an asset locks the asset. Other users cannot perform any of these operations on the asset until you check the asset back in to [!DNL Assets]. However, they can still change the metadata for the locked asset.
 
 To be able to check out/in assets, you require Write access on them.
 
@@ -14,7 +14,7 @@ This feature helps prevent other users from overriding the changes made by an au
 
 ## Check out assets {#checking-out-assets}
 
-1. From the Assets UI, select the asset you want to check out. You can also select multiple assets to check out.
+1. From the [!DNL Assets] user interface, select the asset you want to check out. You can also select multiple assets to check out.
 1. From the toolbar, click **[!UICONTROL Checkout]**.
     The **[!UICONTROL Checkout]** option toggles to **[!UICONTROL Checkin]**.
     To verify whether other users can edit the asset you checked out, log in as a different user. A lock symbol displays on the thumbnail of the asset that you checked out.
@@ -37,14 +37,14 @@ This feature helps prevent other users from overriding the changes made by an au
 
    You can also choose to annotate or publish the asset.
 
-1. Select the edited asset from the [!DNL Assets] interface, and click **[!UICONTROL Checkin]** from the toolbar. The modified asset is checked in to Assets and is available to other users for editing.
+1. Select the edited asset from the [!DNL Assets] interface, and click **[!UICONTROL Checkin]** from the toolbar. The modified asset is checked in to [!DNL Assets] and is available to other users for editing.
 
 ## Forced check in {#forced-check-in}
 
 Administrators can check in assets that are checked out by other users.
 
-1. Log in to Assets as an administrator.
-1. From the Assets UI select one or more assets that have been checked out by other users.
+1. Log in to [!DNL Assets] as an administrator.
+1. From the [!DNL Assets] user interface select one or more assets that have been checked out by other users.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
