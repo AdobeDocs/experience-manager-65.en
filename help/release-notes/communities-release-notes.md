@@ -1,15 +1,9 @@
 ---
 title: AEM Communities Release Notes
 description: Release notes specific to Adobe Experience Manager 6.5 Communities.
-uuid: 1b436959-581c-4b34-b2df-cccc5727da59
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: c3505807-1550-491a-8619-e87839afca4f
-docset: aem65
-
 ---
 
-# AEM Communities Release Notes{#aem-communities-release-notes}
+# AEM Communities release notes {#aem-communities-release-notes}
 
 Read on for the improvements to AEM Communities since the 6.4 release. To learn about the new features in greater detail, see [AEM 6.5 Communities User Guide](https://helpx.adobe.com/experience-manager/6-4/communities/user-guide.html).
 
@@ -26,7 +20,7 @@ AEM Communities now allows registered users to tag (mention) other registered me
 
 Community users need not search for their first name, last name, or user name to see if anyone has reached out to them or needs their attention. Moreover, it allows the UGC authors to seek response from specific registered users who can best address the issue and add inputs.
 
-The community administrators need to **Enable Mention **on community components to allow registered users use the functionality on those components.
+The community administrators need to **Enable Mention** on community components to allow registered users use the functionality on those components.
 
 **Group messaging**
 
@@ -66,10 +60,10 @@ Site Administrators can create a group at any level of hierarchy and become the 
 
 The enablement functionality of AEM 6.5 Communities support Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
 
-**Keyboard navigation support on enablement components
-**Enablement components (for example Catalog and Course Playing, Assignments, File Library) in AEM Communities support keyboard navigation for improved accessibility.
+* Keyboard navigation support on enablement components
+* Enablement components (for example Catalog and Course Playing, Assignments, File Library) in AEM Communities support keyboard navigation for improved accessibility.
 
 ### Other enhancements {#other-enhancements}
 
-* **Solr 7 support
-  **AEM 6.5 Communities supports Apache Solr 7.0 version of the search platform while setting up MSRP and DSRP.
+* Solr 7 support
+* AEM 6.5 Communities supports Apache Solr 7.0 version of the search platform while setting up MSRP and DSRP.

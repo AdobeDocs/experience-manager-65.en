@@ -392,7 +392,7 @@ Remove one mention of this fix.
 * When a page containing some Experience Fragments is opened in non-editor mode (either in Author without the `editor.html` prefix and `wcmmode=disabled`, or in Publisher)., the request ends in HTTP status error code `500` (NPR-30743).
 * Users cannot change their password and access their profile page (NPR-31161).
 
-### Search and user interface {#search-ui-interface}
+### Search and user interface {#ui-interface-and-search}
 
 * When switching from the card view to the list view on a search results page, there is a lag before the page can be scrolled (NPR-31286).
 
