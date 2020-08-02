@@ -144,7 +144,7 @@ This is a list of capabilities the classic UI Text, Table, and Image Editor have
 |Table Editor|Complete|Usable in-place, in dialog, and in full screen.|
 |Drag image into table cell|Complete|Usable in-line|
 |Image Editor|Complete|Usable in-place, in dialog, and in full screen.|
-|Enable/disable IPE Plug-ins|Complete|AEM 6.3 introduced a UI in the [Template Editor](/help/sites-authoring/templates.md/help/sites-authoring/templates.md).|
+|Enable/disable IPE Plug-ins|Complete|AEM 6.3 introduced a UI in the [Template Editor](/help/sites-authoring/templates.md).|
 |IPE Plug-in: Crop|Complete||
 |IPE Plug-in: Flip|Complete||
 |IPE Plug-in: Undo/Redo|Complete||
