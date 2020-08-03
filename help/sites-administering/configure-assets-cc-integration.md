@@ -71,7 +71,7 @@ Flow of data when AEM Assets and Creative Cloud are integrated
 
 1. Click the AEM logo on the user interface of your local AEM Assets instance and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**.
 
-1. Locate the **[!UICONTROL Adobe Marketing Cloud]** service. If no configurations exist, click **[!UICONTROL Configure Now]**. If configurations exist, click **[!UICONTROL Show Configurations]** and click **[!UICONTROL [+]]** to add a new configuration.
+1. Locate the **[!UICONTROL Adobe Marketing Cloud]** service. If no configurations exist, click **[!UICONTROL Configure Now]**. If configurations exist, click **[!UICONTROL Show Configurations]** and click `+` to add a new configuration.
 
    >[!NOTE]
    >

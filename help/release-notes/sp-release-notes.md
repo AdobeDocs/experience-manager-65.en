@@ -450,6 +450,6 @@ For more information on accessing the support portal, see [Accessing the support
 >[!MORELIKETHIS]
 >
 >* [AEM 6.5 release notes](/help/release-notes/release-notes.md)
->* [AEM product page](https://www.adobe.com/solutions/web-experience-management.html)
+>* [AEM product page](https://www.adobe.com/marketing/experience-manager.html)
 >* [AEM 6.5 documentation](https://helpx.adobe.com/support/experience-manager/6-5.html)
 >* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
