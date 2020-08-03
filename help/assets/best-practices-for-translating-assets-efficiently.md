@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Best practices to translate assets {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager Assets supports multilingual workflows to translate binaries, metadata, and tags for digital assets into multiple locales and to manage the translated assets. For details, see [Multilingual Assets](multilingual-assets.md).
+[!DNL Adobe Experience Manager Assets] supports multilingual workflows to translate binaries, metadata, and tags for digital assets into multiple locales and to manage the translated assets. For details, see [Multilingual Assets](multilingual-assets.md).
 
 For efficient management of assets to ensure that different translated versions stay synchronized, create [language copies](preparing-assets-for-translation.md) of assets before running translation workflows.
 
@@ -37,7 +37,7 @@ You can also make a few configuration changes to a couple of workflows and the t
 
 1. Enable the [!UICONTROL Set last modified date] workflow.
 
-   The [!UICONTROL DAM MetaData Writeback] workflow configures the last modified date for an asset. Because you disable this workflow in step 2, Assets is no longer able to keep the last modified date of assets up-to-date. Therefore, enable the *Set last modified date* workflow to ensure that last modified dates of assets are up-to-date. Assets with outdated last modified dates can cause errors.
+   The [!UICONTROL DAM MetaData Writeback] workflow configures the last modified date for an asset. Because you disable this workflow in step 2, [!DNL Assets] is no longer able to keep the last modified date of assets up-to-date. Therefore, enable the *Set last modified date* workflow to ensure that last modified dates of assets are up-to-date. Assets with outdated last modified dates can cause errors.
 
-1. [Configure the translation integration framework](/help/sites-administering/tc-tic.md) to stop translating asset binaries. Unselect the **[!UICONTROL Translate Assets]** option under the Assets tab to stop the translation of Asset binaries.
+1. [Configure the translation integration framework](/help/sites-administering/tc-tic.md) to stop translating asset binaries. Unselect the **[!UICONTROL Translate Assets]** option under the [!UICONTROL Assets] tab to stop the translation of Asset binaries.
 1. Translate asset metadata/tags using [Multilingual asset workflows](multilingual-assets.md).

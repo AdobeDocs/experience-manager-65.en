@@ -59,7 +59,7 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
 If you use this option, assets to be translated are copied to the language root of the language to which you want to translate. Depending upon the options you choose, a translation project is created for the assets in the Projects console. Depending on the settings, the translation project can be started manually or runs automatically as soon as the translation project is created.
 
-1. In the Assets UI, select the source folder for which you want to create a Language copy.
+1. In the [!DNL Assets] user interface, select the source folder for which you want to create a Language copy.
 1. Open the **[!UICONTROL References]** pane and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
@@ -78,7 +78,7 @@ If you use this option, assets to be translated are copied to the language root 
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-1. Click **[!UICONTROL Create]**. Assets from the source folder are copied to the target folders for the locales you selected in step 4.
+1. Click **[!UICONTROL Create]**. [!DNL Assets] from the source folder are copied to the target folders for the locales you selected in step 4.
 
    ![language copies](assets/lang-copy2.png)
 
@@ -104,12 +104,11 @@ If you use this option, assets to be translated are copied to the language root 
 
    For more details around job statuses, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. Navigate to the Assets UI, and open the Properties page for each of the translated assets to view the translated metadata.
+1. Navigate to the [!DNL Assets] UI, and open the Properties page for each of the translated assets to view the translated metadata.
 
    ![view the translated metadata in asset Properties page](assets/translated-metadata-asset-properties.png)
 
    *Figure: Translated metadata in the asset properties page.*
-
 
    >[!NOTE]
    >
@@ -119,7 +118,7 @@ If you use this option, assets to be translated are copied to the language root 
 
 If you use this option, the translation workflow runs for assets that you add to the source folder after running a previous translation workflow. Only the newly-added assets are copied to the target folder that contains previously-translated assets. No new translation project is created in this case.
 
-1. In the Assets UI, navigate to the source folder that contains untranslated assets.
+1. In the [!DNL Assets] UI, navigate to the source folder that contains untranslated assets.
 1. Select an asset you want to translate, and open the **[!UICONTROL Reference pane]**. The **[!UICONTROL Language Copies]** section displays the number of translation copies that are currently available.
 1. Click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**. A list of available translation copies is displayed.
 1. Click **[!UICONTROL Create & Translate]** at the bottom.
@@ -177,7 +176,7 @@ If you use this option, the translation workflow runs for assets that you add to
 
    For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. After the translation completes, the status changes to Ready to Review. Navigate to the Assets UI, and open the Properties page for each of the translated assets to view the translated metadata.
+1. After the translation completes, the status changes to Ready to Review. Navigate to the [!DNL Assets] UI, and open the Properties page for each of the translated assets to view the translated metadata.
 
 ## Update language copies {#update-language-copies}
 
@@ -190,7 +189,7 @@ Run this workflow to translate any additional set of assets and include it in a 
 
 If you use this option, a translation project is created for the set of assets for which you want to update a language copy.
 
-1. From the Assets UI, select the source folder where you added an asset.
+1. From the [!DNL Assets] UI, select the source folder where you added an asset.
 1. Open the **[!UICONTROL References]** pane, and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
 1. Select the check box before **[!UICONTROL Language Copies]**, and then select the target folder corresponding to the appropriate locale.
 
@@ -233,13 +232,13 @@ If you use this option, a translation project is created for the set of assets f
 
    For more details around job statuses, see [Monitoring the Status of a Translation Job](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. Navigate to the Assets UI, and open the Properties page for each of the translated assets to view the translated metadata.
+1. Navigate to the [!DNL Assets] user interdace, and open the Properties page for each of the translated assets to view the translated metadata.
 
 ### Add to existing translation project {#add-to-existing-translation-project-1}
 
 If you use this option, the set of assets are added to an existing translation project to update the language copy for the locale you choose.
 
-1. From the Assets UI, select the source folder where you added an asset folder.
+1. From the [!DNL Assets] UI, select the source folder where you added an asset folder.
 1. Open the **[!UICONTROL References pane]**, and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
