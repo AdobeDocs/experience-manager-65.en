@@ -23,6 +23,6 @@ View the page on the author instance:
 
 * [http://localhost:4502/editor.html/content/community-components/en/comments.html](http://localhost:4502/editor.html/content/community-components/en/comments.html)
 
-![chlimage_1-125](assets/chlimage_1-125.png)
+![comments](assets/comments.png)
 
 **[⇐ Overlay Comments Component](overlay-comments.md) [Create Nodes ⇒](overlay-create-nodes.md)**
