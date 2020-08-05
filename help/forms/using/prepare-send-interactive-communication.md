@@ -175,7 +175,12 @@ Adobe recommends executing these instructions in sequence to successfully save a
 
 The Save as a Draft feature is not enabled, by default. Perform the following steps to enable the feature:
 
-1. Implement the [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) Service Provider Interface (SPI). The SPI enables you to save the draft version of the Interactive Communication to the database with a draft ID as the unique identifier. For sample implementation, see [Sample ccrDocumentInstance SPI implementation](#sample-ccrDocumentInstance-spi)
+1. Implement the [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) Service Provider Interface (SPI).
+
+   The SPI enables you to save the draft version of the Interactive Communication to the database with a draft ID as the unique identifier. These instructions assume that you have prior knowledge on how to build an OSGi bundle using a Maven project.
+
+   For sample SPI implementation, see [Sample ccrDocumentInstance SPI implementation](#sample-ccrDocumentInstance-spi).
+1. Open `http://<hostname>:<port>/ system/console/bundles` and tap **[!UICONTROL Install/Update]** to upload the OSGi bundle. Verify that the status of the uploaded package displays as **Active**. Restart the server if the status of the package does not display as **Active**.
 1. Go to `https://'[server]:[port]'/system/console/configMgr`.
 1. Tap **[!UICONTROL Create Correspondence Configuration]**.
 1. Select **[!UICONTROL Enable Save Using CCRDocumentInstanceService]** and tap **[!UICONTROL Save]**.
@@ -206,7 +211,7 @@ After saving an Interactive Communication as a draft, you can retrieve it to con
 
 ### Sample ccrDocumentInstance SPI implementation {#sample-ccrDocumentInstance-spi}
 
-Implement the `ccrDocumentInstance` SPI in the database to save an Interactive Communication as a draft. The following is a sample implementation of the `ccrDocumentInstance` SPI.
+Implement the `ccrDocumentInstance` SPI to save an Interactive Communication as a draft. The following is a sample implementation of the `ccrDocumentInstance` SPI.
 
    ```javascript
 
@@ -335,3 +340,103 @@ The following table explains the sample `ccrDocumentInstance` SPI implementation
    </tr>
   </tbody>
 </table>
+
+The following is an example of the contents of the `pom.xml` file:
+
+```xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.adobe.livecycle</groupId>
+    <artifactId>draft-sample</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
+
+    <name>Interact</name>
+    <packaging>bundle</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.adobe.aemfd</groupId>
+            <artifactId>aemfd-client-sdk</artifactId>
+            <version>6.0.122</version>
+        </dependency>
+    </dependencies>
+
+
+    <!-- ====================================================================== -->
+    <!-- B U I L D D E F I N I T I O N -->
+    <!-- ====================================================================== -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>3.3.0</version>
+                <extensions>true</extensions>
+                <executions>
+                    <!--Configure extra execution of 'manifest' in process-classes phase to make sure SCR metadata is generated before unit test runs-->
+                    <execution>
+                        <id>scr-metadata</id>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <exportScr>true</exportScr>
+                    <instructions>
+                        <!-- Enable processing of OSGI DS component annotations -->
+                        <_dsannotations>*</_dsannotations>
+                        <!-- Enable processing of OSGI metatype annotations -->
+                        <_metatypeannotations>*</_metatypeannotations>
+                        <Bundle-SymbolicName>${project.groupId}-${project.artifactId}</Bundle-SymbolicName>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <id>autoInstall</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>install-bundle</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
+```
+
+>[!NOTE]
+>
+>Ensure that you update the `aemfd-client-sdk` dependency to 6.0.122 in the `pom.xml` file.
