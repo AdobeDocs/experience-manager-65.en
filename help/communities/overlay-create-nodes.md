@@ -52,7 +52,7 @@ Some nodes in the path are folders and some are components.
      * Click **[!UICONTROL Next]** until **[!UICONTROL OK]**
 1. Select `comments` node
 
-   * **[!UICONTROL Create > Create Component...]**
+   * **[!UICONTROL Create]** > **[!UICONTROL Create Component...]**
 
      * Enter Label: `comment`
      * Enter Title: `Comment`
@@ -89,5 +89,5 @@ The overlay's own `Type`(property `sling:resourceType`) must be a relative self-
 1. Select the green `[+] Add`
    * Select **[!UICONTROL Save All]**
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+![create-nodes](assets/create-nodes.png)
 

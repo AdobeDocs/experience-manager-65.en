@@ -72,7 +72,7 @@ The [site creation wizard](/help/communities/sites-console.md):
 * Eliminates many page-level authoring steps:
 
   * Branding: optional upload of a banner image for display on all pages of the community site
-    * Navigation menu: navigation links are provided for the features included in the community site template.
+  * Navigation menu: navigation links are provided for the features included in the community site template.
 
 To experience the ease of quickly creating a new community site, visit [Getting Started with AEM Communities](/help/communities/getting-started.md).
 

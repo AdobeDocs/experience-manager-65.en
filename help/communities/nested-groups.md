@@ -19,7 +19,7 @@ docset: aem65
 
 On AEM Author instance, from global navigation:
 
-* Select **[!UICONTROL Communities] > **[!UICONTROL Sites]**.
+* Select **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 * Select **[!UICONTROL engage folder]** to open it.
 * Select the card for the **[!UICONTROL Getting Started Tutorial]** English site.
 
@@ -28,11 +28,11 @@ On AEM Author instance, from global navigation:
 
 The result is to reach the [Groups console](/help/communities/groups.md):
 
-![chlimage_1-91](assets/chlimage_1-91.png)
+![create-group](assets/create-group.png)
 
 The groups function will display as a folder in which instances of groups are created. Select the Groups folder to open it. The group created on publish is visible.
 
-![chlimage_1-92](assets/chlimage_1-92.png)
+![create-new-group](assets/create-new-group.png)
 
 ## Create Main Arts Group {#create-main-arts-group}
 
@@ -88,11 +88,11 @@ The `groups` folder now contains two groups (refresh the page).
 
 Before creating groups nested within the `arts` group, hover over the `arts` card and select the publish icon to publish it.
 
-![liking-component](assets/liking-component.png)
+![publish-site](assets/publish-site.png)
 
 Wait for confirmation that the group was published.
 
-![chlimage_1-94](assets/chlimage_1-94.png)
+![group-published](assets/group-published.png)
 
 The `arts` group should also contain a `groups` folder, but one that is empty and in which new groups can be created. Navigate to the arts group folder and create 3 nested groups, each with a different membership setting:
 
@@ -127,11 +127,11 @@ To navigate to the nested groups from the Communities Sites console:
 * Select **[!UICONTROL arts card]**
 * Select **[!UICONTROL Groups]** folder
 
-![configure-liking](assets/configure-liking.png)
+![create-new-group2](assets/create-new-group2.png)
 
 ## Publishing Groups {#publishing-groups}
 
-![chlimage_1-96](assets/chlimage_1-96.png)
+![publish-site](assets/publish-site.png)
 
 After publishing the main community site:
 
@@ -143,7 +143,7 @@ After publishing the main community site:
 
   * All groups must be published in a top-down fashion.
 
-![chlimage_1-97](assets/chlimage_1-97.png)
+![group-published](assets/group-published.png)
 
 ## Experience on Publish {#experience-on-publish}
 
