@@ -23,6 +23,8 @@ docset: aem65
 
 Before executing your upgrade, there are several steps that must be completed. See [Upgrading Code and Customizations](/help/sites-deploying/upgrading-code-and-customizations.md) and [Pre-Upgrade Maintenance Tasks](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) for more information. Additionally, make sure that your system meets the requirements for the new version of AEM. See how Pattern Detector can help you estimate the complexity of your upgarde and also see the Upgrade Scope and Requirements section of [Planning Your Upgrade](/help/sites-deploying/upgrade-planning.md) for more information.
 
+Finally, note that the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
+
 ## Migration Prerequisites {#migration-prerequisites}
 
 * **Minimum Required Java version:** The migration tool only works with Java versions 7 and up. Note that for AEM 6.3 and up, Oracle's JRE 8 and IBM's JRE 7 & 8 are the only supported versions.
