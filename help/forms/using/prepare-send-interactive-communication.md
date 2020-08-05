@@ -341,7 +341,7 @@ The following table explains the sample `ccrDocumentInstance` SPI implementation
   </tbody>
 </table>
 
-The following is an example of the contents of the `pom.xml` file:
+The following is an example of the `pom.xml` file that is part of the implementation:
 
 ```xml
 
