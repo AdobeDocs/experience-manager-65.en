@@ -8,4 +8,4 @@ contentOwner: AG
 
 To reduce adverse impact on performance, [!DNL Adobe Experience Manger Assets] processes certain long-running and resource-intensive asset operations asynchronously. Asynchronous processing involves enqueuing multiple tasks and eventually executing them in a serial manner subject to the availability of system resources.
 
-For further details, please see the document [Asynchronous Jobs](/help/sites-administering/asynchronous-jobs.md) in the Administration user guide.
+For more details, see [Asynchronous Jobs](/help/sites-administering/asynchronous-jobs.md) in the Administration user guide.
