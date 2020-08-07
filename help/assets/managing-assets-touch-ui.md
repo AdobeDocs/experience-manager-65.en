@@ -826,7 +826,7 @@ If an asset includes annotations in foreign languages (especially non-latin lang
 1. To configure CQ-DAM-Handler-Gibson Font Manager Service, do one of the following:
 
     * In the System Fonts directory option, specify the complete path to the fonts directory on your system. For example, if you're a Mac user, you can specify the path as */Library/Fonts* in the System Fonts directory option. [!DNL Experience Manager] fetches the fonts from this directory.
-    * Create a directory named `fonts` inside the ``crx-quickstart`` folder. CQ-DAM-Handler-Gibson Font Manager Service automatically fetches the fonts at the location `crx-quickstart/fonts`. You can override this default path from within the Adobe Server Fonts directory option.
+    * Create a directory named `fonts` inside the `crx-quickstart` folder. CQ-DAM-Handler-Gibson Font Manager Service automatically fetches the fonts at the location `crx-quickstart/fonts`. You can override this default path from within the Adobe Server Fonts directory option.
 
     * Create a new folder for fonts in your system, and store the desired fonts in the folder. Then, specify the complete path to that folder in the Customer Fonts directory option.
 
