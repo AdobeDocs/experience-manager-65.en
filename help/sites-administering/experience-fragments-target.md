@@ -28,7 +28,8 @@ docset: aem65
 >
 >   * the default workspace.
 >   * a named workspace, specified in the Cloud Configuration.
->     **Note:** Exporting to specific workspaces requires Adobe Target Premium.
+>   * **Note:** Exporting to specific workspaces requires Adobe Target Premium.
+>
 >* AEM must be [integrated with Adobe Target using Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
 >
 >AEM 6.5.0.0 and 6.5.1.0:
