@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 ---
-
+ß
 # Exporting Experience Fragments to Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 >[!CAUTION]
@@ -29,6 +29,7 @@ docset: aem65
 >   * the default workspace.
 >   * a named workspace, specified in the Cloud Configuration.
 >   * **Note:** Exporting to specific workspaces requires Adobe Target Premium.
+>
 >* AEM must be [integrated with Adobe Target using Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
 >
 >AEM 6.5.0.0 and 6.5.1.0:
