@@ -72,6 +72,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 * When a user copies and pastes a Layout Container on the same page, components in a Layout Container do not display (NPR-33648).
 * Dispatcher health check displays `Invalid cookie header` warning message in the log files (NPR-33629).
 * Reflected XSS in PreferencesServlet (NPR-33438).
+* Anonymous users can access CRX DE Lite features (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
 
