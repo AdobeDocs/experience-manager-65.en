@@ -450,5 +450,5 @@ You can create smart collections based on the search criteria. From the **[!UICO
 >[!MORELIKETHIS]
 >
 >* [Experience Manager search implementation guide](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
->* [Advanced configuration of multi-value and tag search predicates](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
+>* [Advanced configuration to boost search results](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html)
 >* [Configure smart translation search](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
