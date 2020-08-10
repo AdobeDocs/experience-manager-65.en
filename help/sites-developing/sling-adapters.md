@@ -234,7 +234,7 @@ For the first case, the javadocs can state what `adaptTo-targets` are possible. 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
-   <td>	Based on the JCR session, if this is a JCR-based resource resolver.</td>
+   <td>Based on the JCR session, if this is a JCR-based resource resolver.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
