@@ -96,7 +96,7 @@ AEM tools panel contains tools for various components. To navigate to AEM Forms-
 
   ![AEM Forms tools](assets/aem_forms_tools_new.png)
 
-* **Configure PDF Generator:** An administrator can configure AEM [!DNL Forms] PDF Gsenerator settings, add user accounts, and import or export configuration to the PDF Generator.
+* **Configure PDF Generator:** An administrator can configure AEM [!DNL Forms] PDF Generator settings, add user accounts, and import or export configuration to the PDF Generator.
 * **Publish Correspondence Management Assets:** AEM [!DNL Forms] lets you publish all the Letters, Document Fragments, and Data Dictionaries and related dependencies from an author instance at once. The published assets include all the Correspondence Management assets and related dependencies. For detailed information, see [Publishing and unpublishing forms & documents](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
 * **Export Correspondence Management Assets:** You can download all the Correspondence Management assets and related dependencies as a package from an AEM [!DNL Forms] instance. For detailed steps, see [Importing and exporting assets to AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
