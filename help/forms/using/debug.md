@@ -133,7 +133,7 @@ Check the following parameters:
 
 1. Check the content of js.txt and make sure that it has the following entries.
 
-   ```
+   ```javascript
    ../Namespace.js
    I18N.js
    ../LogMessages.js
