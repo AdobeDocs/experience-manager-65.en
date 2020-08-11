@@ -392,7 +392,7 @@ Remove one mention of this fix.
 * When a page containing some Experience Fragments is opened in non-editor mode (either in Author without the `editor.html` prefix and `wcmmode=disabled`, or in Publisher)., the request ends in HTTP status error code `500` (NPR-30743).
 * Users cannot change their password and access their profile page (NPR-31161).
 
-### Search and user interface {#search-ui-interface}
+### Search and user interface {#ui-interface-and-search}
 
 * When switching from the card view to the list view on a search results page, there is a lag before the page can be scrolled (NPR-31286).
 
@@ -414,7 +414,7 @@ Remove one mention of this fix.
 
 * Updates in buffer size configuration for Jetty-based HTTP service are not saved (NPR-30925).
 
-* QueryBuilder now supports orderby ``fn:name()`` in xpath queries (NPR-31322).
+* QueryBuilder now supports orderby `fn:name()` in xpath queries (NPR-31322).
 
 * Duplicate activation tree is created on upgrading from [!DNL Experience Manager] 6.3 (NPR-31513).
 
@@ -424,7 +424,7 @@ Remove one mention of this fix.
 
 * An error is displayed when attaching a ZIP file to an [!DNL Experience Manager Communities] post due to different versions of Apache POI and Apache Tika bundle (NPR-31018).
 
-* The ``org.apache.sling.distribution.api`` bundle is hidden in the configuration manager and therefore not available to custom bundles (NPR-31720).
+* The `org.apache.sling.distribution.api` bundle is hidden in the configuration manager and therefore not available to custom bundles (NPR-31720).
 
 ### Projects {#projects}
 

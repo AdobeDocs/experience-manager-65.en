@@ -139,7 +139,7 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 
 * The mixed state checkboxes (in which unless you select all the nested predicates the first-level checkboxes are not selected and are stricken through) in Filters panel are readable by screen readers.
 
-* Date and time format constraints are provided in field labels of date fields, to enable the users to enter the date in correct format using keyboard. 
+* Date and time format constraints are provided in field labels of date fields, to enable the users to enter the date in correct format using keyboard.
 For example, `On Time (MM-DD-YYYY HH:mm)`. Here MM is month in two-digit format, YYYY is year, DD is day in two-digit format, HH is hour in 24-hour military format, and mm is minute.
 
 * Screen readers now announce the `X` symbol to remove the selected tags along with the number of the selected tags.

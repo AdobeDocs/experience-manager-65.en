@@ -50,7 +50,7 @@ On author, to access the Storage Configuration console:
 
 * From global navigation, select **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Storage Configuration]**.
 
-![chlimage_1-28](assets/chlimage_1-28.png)
+![msrp](assets/msrp.png)
 
 * Select **[!UICONTROL MongoDB Storage Resource Provider (MSRP)]**
 * **[!UICONTROL mongoDB Configuration]**
