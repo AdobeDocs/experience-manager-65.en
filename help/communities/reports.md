@@ -57,7 +57,7 @@ Tabular reports can be exported in .csv format for subsequent processing.
 
     * generate a report for selected Community Site, Content Type, and Time Period.
 
-![chlimage_1-236](assets/chlimage_1-236.png)
+![reports](assets/reports1.png)
 
 ### Reports for Enablement Resources and Learning Paths {#reports-for-enablement-resources-and-learning-paths}
 
@@ -90,7 +90,7 @@ The Assignments console allows reports to be filtered by enablement community si
 
 The report provides information on their progress as well as any comments or ratings provided.
 
-![chlimage_1-237](assets/chlimage_1-237.png)
+![assignment-report](assets/assignment-report.png)
 
 Select the criteria for the report :
 
@@ -110,13 +110,13 @@ Select the criteria for the report :
 
 Select **Generate** to create the report:
 
-![chlimage_1-238](assets/chlimage_1-238.png)
+![generate-report](assets/generate-assignment-report.png)
 
 ## Views Report {#views-report}
 
 The Views console allows reports to be generated on page views by community feature(s) for a given time period.
 
-![chlimage_1-239](assets/chlimage_1-239.png)
+![view-report](assets/view-report.png)
 
 Select the criteria for the report:
 
@@ -139,13 +139,13 @@ Select the criteria for the report:
 
 Select **[!UICONTROL Generate]** to create the report.
 
-![chlimage_1-240](assets/chlimage_1-240.png)
+![generate-views](assets/generate-views.png)
 
 ## Posts Report {#posts-report}
 
 The Posts console allows reports to be generate on number of posts to community feature(s) for a given time period.
 
-![chlimage_1-241](assets/chlimage_1-241.png)
+![posts-report](assets/posts-report.png)
 
 Select the criteria for the report:
 
@@ -168,7 +168,7 @@ Select the criteria for the report:
 
 Select **[!UICONTROL Generate]** to create the report.
 
-![chlimage_1-242](assets/chlimage_1-242.png)
+![generate-report](assets/generate-posts-report.png)
 
 ## Troubleshooting {#troubleshooting}
 

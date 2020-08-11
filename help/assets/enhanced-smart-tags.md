@@ -20,7 +20,7 @@ Once a tag is trained and ready, the service can now apply these tags on assets 
 
 In the background, the Smart Content Service uses Adobe Sensei AI framework to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets.
 
-Smart Content Service is a cloud service that is hosted on Adobe I/O. To use it in Adobe Experience Manager, the system administrator must integrate your Experience Manager deployment with Adobe I/O.
+Smart Content Service is a cloud service that is hosted on Adobe I/O. To use it in [!DNL Adobe Experience Manager], the system administrator must integrate your [!DNL Experience Manager] deployment with Adobe I/O.
 
 In summary, here are the main steps to use the Smart Content Service:
 
@@ -40,15 +40,15 @@ Before you can use the Smart Content Service, ensure the following to create an 
 
 ## Onboarding {#onboarding}
 
-The Smart Content Service is available for purchase as an add-on to Experience Manager. After you purchase, an email is sent to the administrator of your organization with a link to Adobe I/O.
+The Smart Content Service is available for purchase as an add-on to [!DNL Experience Manager]. After you purchase, an email is sent to the administrator of your organization with a link to Adobe I/O.
 
-The administrator can follow the link to integrate the Smart Content Service with Experience Manager. To integrate the service with Experience Manager Assets, see [Configure Smart Tags](config-smart-tagging.md).
+The administrator can follow the link to integrate the Smart Content Service with [!DNL Experience Manager]. To integrate the service with [!DNL Experience Manager Assets], see [Configure Smart Tags](config-smart-tagging.md).
 
-The onboarding process is complete when the administrator configures the service and adds users in Experience Manager.
+The onboarding process is complete when the administrator configures the service and adds users in [!DNL Experience Manager].
 
 >[!NOTE]
 >
->If you are using Experience Manager 6.3 or earlier version and require tagging service for your assets, see [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Smart Tags do not use the latest AI capabilities and are hence less accurate than the enhanced smart tagging service.
+>If you are using [!DNL Experience Manager] 6.3 or earlier version and require tagging service for your assets, see [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Smart Tags do not use the latest AI capabilities and are hence less accurate than the enhanced smart tagging service.
 
 ## Review assets and tags {#reviewing-assets-and-tags}
 
@@ -61,7 +61,7 @@ Add the assets to a folder and apply the tags to each asset from the properties 
 >[!NOTE]
 >
 >1. Training is an irrevocable process. Adobe recommends that you review the tags in the curated set of assets well before training the Smart Content Service on the tags.
->1. Please do read [Smart Content Service training guidelines](smart-tags-training-guidelines.md) before starting training for any tag.
+>1. Before training for a tag, see [Smart Content Service training guidelines](smart-tags-training-guidelines.md).
 >1. When you train the Smart Content Service for the first time, Adobe recommends that you train it on at least two distinct tags.
 
 ## Train the Smart Content Service {#training-the-smart-content-service}
@@ -82,13 +82,13 @@ You can enable the Smart Content Service to train periodically on the assets and
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Once this option is selected for a folder, Experience Manager runs a training workflow automatically to train the Smart Content Service on the folder assets and their tags. By default, the training workflow runs on a weekly basis at 12:30 AM on Saturdays.
+Once this option is selected for a folder, [!DNL Experience Manager] runs a training workflow automatically to train the Smart Content Service on the folder assets and their tags. By default, the training workflow runs on a weekly basis at 12:30 AM on Saturdays.
 
 ### On-demand training {#on-demand-training}
 
 You can train the Smart Content Service whenever required from the Workflow console.
 
-1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder that includes the tagged assets for training the service.
 1. Specify a title for the workflow and a add a comment. Then, click **[!UICONTROL Run]**. The assets and tags are submitted for training.
@@ -103,7 +103,7 @@ You can train the Smart Content Service whenever required from the Workflow cons
 
 To check whether the Smart Content Service is trained on your tags in the training set of assets, review the training workflow report from the Reports console.
 
-1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
 1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
 1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
 1. Specify a title and description for the report. Under **[!UICONTROL Schedule Report]**, leave the **[!UICONTROL Now]** option selected. If you want to schedule the report for later, select **[!UICONTROL Later]** and specify a date and time. Then, click **[!UICONTROL Create]** from the toolbar.
@@ -145,7 +145,7 @@ You can trigger the tagging workflow from the following to instantly tag your as
 
 #### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
 
-1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
@@ -159,7 +159,7 @@ You can trigger the tagging workflow from the following to instantly tag your as
 
 #### Tag assets from the timeline {#tagging-assets-from-the-timeline}
 
-1. From the Assets user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
+1. From the [!DNL Assets] user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
 1. From upper-left corner, open the **[!UICONTROL Timeline]**.
 1. Open actions from the bottom of the left sidebar and click **[!UICONTROL Start Workflow]**.
 

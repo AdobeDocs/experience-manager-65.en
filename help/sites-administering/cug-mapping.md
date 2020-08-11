@@ -81,7 +81,9 @@ Name: com.day.cq.auth.impl.CugSupportImpl
 * Configuration of the CUG authorization and enable/disable the evaluation.
 Service to configure exclusion list of principals which should not be affected by the CUG authorization.
 
-  >[!NOTE] If the CugExcludeImpl is not configured, the CugConfiguration will fall back to the default.
+  >[!NOTE]
+  > 
+  >If the `CugExcludeImpl` is not configured, the `CugConfiguration` will fall back to the default.
 
   It is possible to plug a custom CugExclude implementation in case of special needs.
 

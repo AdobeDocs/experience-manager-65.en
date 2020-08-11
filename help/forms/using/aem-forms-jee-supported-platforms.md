@@ -369,6 +369,10 @@ In addition, consider the following points while choosing software for Adobe AEM
    <td>5.2</td>
   </tr>
   <tr>
+   <td>IBM Filenet</td>
+   <td>5.5.2</td>
+  </tr>
+  <tr>
    <td>IBM Content Manager Server</td>
    <td>8.5 Fix pack 2</td>
   </tr>

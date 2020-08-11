@@ -59,7 +59,7 @@ To apply a workflow to an asset, follow these steps:
 
 ## Apply a workflow to multiple assets {#applying-a-workflow-to-multiple-assets}
 
-1. From the Assets console, navigate to the location of the assets for which you want to start a workflow, and select the assets. Select **[!UICONTROL Timeline]** from the menu to display the timeline.
+1. From the [!DNL Assets] console, navigate to the location of the assets for which you want to start a workflow, and select the assets. Select **[!UICONTROL Timeline]** from the menu to display the timeline.
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 

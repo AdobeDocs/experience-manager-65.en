@@ -24,9 +24,9 @@ To not display the avatar next to each posted comment:
 1. Copy `comment.hbs`from `libs`to `apps`
 
    1. Select `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Select **Copy**
+   1. Select **[!UICONTROL Copy]**
    1. Select `/apps/social/commons/components/hbs/comments/comment`
-   1. Select **Paste**
+   1. Select **[!UICONTROL Paste]**
 
 1. Open the overlaid `comment.hbs`
 
