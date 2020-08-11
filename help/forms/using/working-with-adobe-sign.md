@@ -203,9 +203,10 @@ After you, add Adobe Sign fields to an adaptive form, enable Adobe Sign from for
 
 Also, an Adobe Sign enabled adaptive form is submitted only after all the signers sign the form. You can find partially signed form in Pending Sign section of forms portal. Adobe Sign Configuration Service keeps polling Adobe Sign server at [regular intervals](../../forms/using/adobe-sign-integration-adaptive-forms.md) to verify the status of signatures. If all the signers complete signing the form, the submit action service is started and the form is submitted. If you are using a custom submit action and the form uses Adobe Sign, update your custom submit action to use the submit action service.
 
+<!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the adaptive form is stored temporarily on Forms Portal. It is recommeded to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers.
+>Data of the adaptive form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. -->
 
 Your form signing experience is ready. You can preview the form to verify the signing experience. On the published form, Adobe Sign Block fields are displayed when a signer receives the form for signing through an email. This experience is also known as out-of-form signing experience. You can also configure an in-form signing experience for the first signer, for detailed steps see [Create in-form signing experience](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
 
@@ -301,7 +302,7 @@ Now, the in form signing experience is ready. You can preview the form to verify
 
 **Ans:** Adaptive form created using the advanced template is configured to use Adobe Sign. To resolve the error, create and select an Adobe Sign cloud configuration and configure an Adobe Sign signer for the adaptive form.
 
-**Ans:** Yes, you can use text tags in a text component to add Adobe Sign fields to a [Document of Record](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (Auto generated document of record option only) enabled adaptive form. To learn about the procedure and rules to create a text tag, see [Adobe Sign Documentation](https://helpx.adobe.com/sign/help/text-tags.html). Also note, Adaptive forms has a limited support for text tags. You can use the text tags to create only those fields that [Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) supports.
+**Ans:** Yes, you can use text tags in a text component to add Adobe Sign fields to a [Document of Record](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (Auto generated document of record option only) enabled adaptive form. To learn about the procedure and rules to create a text tag, see [Adobe Sign Documentation](https://helpx.adobe.com/sign/using/text-tag.html). Also note, Adaptive forms has a limited support for text tags. You can use the text tags to create only those fields that [Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) supports.
 
 **Ans:** You can use both the components simultaneously in a form. Here are a few recommendations for using these components:
 
