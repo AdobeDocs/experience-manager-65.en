@@ -7,13 +7,13 @@ topic-tags: dynamic-media
 content-type: reference
 ---
 
-# Invalidating the CDN cache by way of Dynamic Media {#invalidating-the-cdn-cache-for-dm-assets}
+# Invalidating the CDN cache by way of Dynamic Media {#invalidating-cdn-cache-for-dm-assets}
 
 Dynamic Media assets are cached by the CDN (Content Delivery Network) for fast delivery to your customers. However, when you make updates to those assets, you may want those changes to take effect immediately on your website. Purging or invalidating the CDN cache lets you quickly update assets that are delivered by Dynamic Media. Instead of waiting for the cache to expire using a TTL (Time To Live) value (default is 10 hours), you can send a request from within Dynamic Media to have the cache expire immediately.
 
 >[!IMPORTANT]
 >
->These steps apply only to Dynamic Media - Scene7 mode in AEM 6.5, Service Pack 6 or later. If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier [use the steps found here](/help/assets/invalidate-cdn-cached-content.md).
+>These steps apply only to Dynamic Media - Scene7 mode in AEM 6.5, Service Pack 6 or later. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
 
 See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
