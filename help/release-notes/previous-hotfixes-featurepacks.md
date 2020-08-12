@@ -414,7 +414,7 @@ Remove one mention of this fix.
 
 * Updates in buffer size configuration for Jetty-based HTTP service are not saved (NPR-30925).
 
-* QueryBuilder now supports orderby ``fn:name()`` in xpath queries (NPR-31322).
+* QueryBuilder now supports orderby `fn:name()` in xpath queries (NPR-31322).
 
 * Duplicate activation tree is created on upgrading from [!DNL Experience Manager] 6.3 (NPR-31513).
 
@@ -424,7 +424,7 @@ Remove one mention of this fix.
 
 * An error is displayed when attaching a ZIP file to an [!DNL Experience Manager Communities] post due to different versions of Apache POI and Apache Tika bundle (NPR-31018).
 
-* The ``org.apache.sling.distribution.api`` bundle is hidden in the configuration manager and therefore not available to custom bundles (NPR-31720).
+* The `org.apache.sling.distribution.api` bundle is hidden in the configuration manager and therefore not available to custom bundles (NPR-31720).
 
 ### Projects {#projects}
 

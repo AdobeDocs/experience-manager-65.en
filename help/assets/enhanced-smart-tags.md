@@ -61,7 +61,7 @@ Add the assets to a folder and apply the tags to each asset from the properties 
 >[!NOTE]
 >
 >1. Training is an irrevocable process. Adobe recommends that you review the tags in the curated set of assets well before training the Smart Content Service on the tags.
->1. Please do read [Smart Content Service training guidelines](smart-tags-training-guidelines.md) before starting training for any tag.
+>1. Before training for a tag, see [Smart Content Service training guidelines](smart-tags-training-guidelines.md).
 >1. When you train the Smart Content Service for the first time, Adobe recommends that you train it on at least two distinct tags.
 
 ## Train the Smart Content Service {#training-the-smart-content-service}
