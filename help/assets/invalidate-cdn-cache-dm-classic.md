@@ -1,6 +1,6 @@
 ---
-title: Invalidating your CDN cached content
-description: Invalidating your CDN (Content Delivery Network) cached content lets you quickly update assets that are delivered by Dynamic Media, instead of waiting for the cache to expire.
+title: Invalidating the CDN cache by way of Dynamic Media Classic
+description: Invalidating your CDN (Content Delivery Network) cached content lets you quickly update assets that are delivered by Dynamic Media Classic, instead of waiting for the cache to expire.
 uuid: 0fd88e31-9745-4c98-a245-9f5d0766cad4
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
@@ -9,17 +9,17 @@ content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 ---
 
-# Invalidating your CDN cached content by way of Dynamic Media Classic {#invalidating-your-cdn-cached-content}
+# Invalidating the CDN cache by way of Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
 Dynamic Media assets are cached by the CDN for fast delivery. However, when you make updates to an asset, you may want those changes to take effect immediately. Invalidating your CDN (Content Delivery Network) cached content lets you quickly update assets that are delivered by Dynamic Media, instead of waiting for the cache to expire.
 
 >[!IMPORTANT]
 >
->The following steps apply only to Dynamic Media in AEM 6.5, Service Pack 5 or earlier. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 6 or later, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
+>The following steps apply only to Dynamic Media in AEM 6.5, Service Pack 5 or earlier.
 
 See also [Cache overview in Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**To invalidate your CDN cached content by way of Dynamic Media Classic:**
+**To invalidate the CDN cache by way of Dynamic Media Classic:**
 
 1. Do one of the following:
 
