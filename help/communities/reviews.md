@@ -28,19 +28,19 @@ To add a `Reviews` component to a page in author mode, use the component browser
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
-When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews`component will appear.
+When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews` component will appear.
 
-![chlimage_1-340](assets/chlimage_1-340.png)
+![create-review](assets/create-review.png)
 
 ## Configuring Reviews {#configuring-reviews}
 
 Select the placed `Reviews` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-341](assets/chlimage_1-341.png)
+![configure-new](assets/configure-new.png)
 
 Under the **[!UICONTROL Allowed Ratings]** tab, specify the complete list of ratings to be shown to members. The first rating should be an overall/general rating, as it is the rating which provides the average rating for the `Review Summary (Display)` component. The next two ratings in the default configuration should be given a different title, other than "Subrating 1" or "Subrating 2".
 
-![chlimage_1-342](assets/chlimage_1-342.png)
+![allowed-rating](assets/configure-review1.png)
 
 * **[!UICONTROL Allowed Ratings]**
 
@@ -54,7 +54,7 @@ Under the **[!UICONTROL Required Ratings]** tab, re-enter items from the list of
 
 On the website, required ratings are marked with an asterisk. If an item is required and left unmarked, a message is displayed to the member and the submission is denied until all required ratings are marked.
 
-![chlimage_1-343](assets/chlimage_1-343.png)
+![required-rating](assets/configure-review2.png)
 
 * **[!UICONTROL Required Ratings]**
 
@@ -71,7 +71,7 @@ On the website, required ratings are marked with an asterisk. If an item is requ
 
 Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
-![chlimage_1-344](assets/chlimage_1-344.png)
+![reviews](assets/configure-review3.png)
 
 * **[!UICONTROL Allow Replies]**
   
@@ -107,7 +107,7 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
 Under the **[!UICONTROL User Moderation]** tab, specify how the posted reviews are managed. For more information, see [Moderating User Generated Content](moderate-ugc.md).
 
-![chlimage_1-345](assets/chlimage_1-345.png)
+![user-moderation](assets/configure-review4.png)
 
 * **[!UICONTROL Pre-Moderation]**
   
@@ -157,7 +157,7 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews Summary (Display)`component will appear.
 
-![chlimage_1-346](assets/chlimage_1-346.png)
+![review-summary](assets/configure-review5.png)
 
 >[!NOTE]
  >
@@ -168,11 +168,11 @@ When the [required client-side libraries](reviews-basics.md#essentials-for-clien
 
 Select the placed `Reviews Summary (Display)` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-347](assets/chlimage_1-347.png)
+![configure](assets/configure-new.png)
 
 Under the **[!UICONTROL Review Summary]** tab
 
-![chlimage_1-348](assets/chlimage_1-348.png)
+![review-summary](assets/configure-review6.png)
 
 * `Review Path`
 
@@ -192,9 +192,9 @@ By changing the Comment Resource Type, the comment system will no longer generat
 
 Once the custom resource types is known, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double click on the placed `Comments` component to open a dialog with an additional tab.
 
-Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType for new instances of the `Comments or Voting`components:
+Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType for new instances of the `Comments or Voting` components:
 
-![chlimage_1-349](assets/chlimage_1-349.png)
+![comments-voting](assets/configure-review7.png)
 
 * **[!UICONTROL Comment Resource Type]**
 
@@ -220,12 +220,12 @@ When the signed in user has moderator or administrator privileges, they are able
 
 ### Members {#members}
 
-When the site visitor is signed in, depending on the configuration, they may
+When the site visitor is signed in, depending on the configuration, they may:
 
-* Post a new review.
-* Edit their own review.
-* Delete their own review.
-* Flag others' review comments.
+* Post a new review
+* Edit their own review
+* Delete their own review
+* Flag others' review comments
 
 Only one rating per member is allowed. The member may change their rating at any time.
 

@@ -10,7 +10,7 @@ docset: aem65
 
 ---
 
-# Tutorial: Create your first adaptive form{#tutorial-create-your-first-adaptive-form}
+# Tutorial: Create your first adaptive form {#tutorial-create-your-first-adaptive-form}
 
  ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
@@ -31,15 +31,15 @@ The journey starts with learning the use case:
 
 A website offers a range of products for diverse customers. Customers browse the portal, select, and order the products. Every customer creates an account and provides shipping and billing addresses. An existing customer, Sara Rose, is looking to add her shipping address to the website. The website provides an online form to add and update shipping addresses.
 
-The website runs on Adobe Experience Manager (AEM) and uses AEM Forms for data capture and processing. The address addition and update form is an adaptive form. The website stores customer details in a database. They use the address addition and update form to retrieve and display available addresses. They also use the adaptive form to accept updated and new addresses.
+The website runs on Adobe Experience Manager (AEM) and uses AEM [!DNL Forms] for data capture and processing. The address addition and update form is an adaptive form. The website stores customer details in a database. They use the address addition and update form to retrieve and display available addresses. They also use the adaptive form to accept updated and new addresses.
 
 ### Prerequisite {#prerequisite}
 
 * Setup an AEM author instance.
 * Install [AEM Forms add-on](../../forms/using/installing-configuring-aem-forms-osgi.md) on author instance.
-* Obtain JDBC database driver (JAR file) from database provider. Examples in the tutorial are based on MySQL database and use Oracle's [MySQL JDBC database driver](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Obtain JDBC database driver (JAR file) from database provider. Examples in the tutorial are based on [!DNL MySQL] database and use [!DNL Oracle's] [MySQL JDBC database driver](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
-* Setup a database containing customer data with the fields displayed below. A database is not essential to create an adaptive form. This tutorial uses a database to display form data model and persistence capabilities of AEM Forms.
+* Setup a database containing customer data with the fields displayed below. A database is not essential to create an adaptive form. This tutorial uses a database to display form data model and persistence capabilities of AEM [!DNL Forms].
 
 ![adaptiveformdata](assets/adaptiveformdata.png)
 
@@ -47,7 +47,7 @@ The website runs on Adobe Experience Manager (AEM) and uses AEM Forms for data c
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Adaptive forms are new generation, engaging, responsive, dynamic, and adaptive in nature. Using adaptive forms, you can deliver personalized and targeted experiences. AEM Forms provide a drag-and-drop WYSIWYG editor to create adaptive forms. For more information about adaptive forms, see [Introduction to authoring adaptive forms](../../forms/using/introduction-forms-authoring.md).
+Adaptive forms are new generation, engaging, responsive, dynamic, and adaptive in nature. Using adaptive forms, you can deliver personalized and targeted experiences. AEM [!DNL Forms] provide a drag-and-drop WYSIWYG editor to create adaptive forms. For more information about adaptive forms, see [Introduction to authoring adaptive forms](../../forms/using/introduction-forms-authoring.md).
 
 Goals:
 
@@ -66,8 +66,8 @@ A form data model allows to connect an adaptive form to disparate data sources. 
 
 Goals:
 
-* Configure the website's database instance (MySQL database) as a data sources
-* Create the form data model using MySQL database as a data source
+* Configure the website's database instance ([!DNL MySQL] database) as a data sources
+* Create the form data model using [!DNL MySQL] database as a data source
 * Add data model objects to form data model
 * Configure read and write services for the form data model
 * Test form data model and configured services with test data
@@ -105,7 +105,7 @@ Goals:
 
 ![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
-Adaptive forms are integral to your customer interactions. It is important to test your adaptive forms with every change you make in them. Testing every field of a form is tedious. AEM Forms provide an SDK (Calvin SDK) to automate testing of adaptive forms. Calvin allows you to automate testing of your adaptive forms in the web browser.
+Adaptive forms are integral to your customer interactions. It is important to test your adaptive forms with every change you make in them. Testing every field of a form is tedious. AEM [!DNL Forms] provide an SDK (Calvin SDK) to automate testing of adaptive forms. Calvin allows you to automate testing of your adaptive forms in the web browser.
 
 Goals:
 
@@ -119,12 +119,12 @@ Goals:
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-You can publish adaptive forms as a stand-alone form (single page application), include in AEM [sites page](/help/forms/using/embed-adaptive-form-aem-sites.md), or list on an AEM site using [Forms Portal](../../forms/using/introduction-publishing-forms.md).
+You can publish adaptive forms as a stand-alone form (single page application), include in AEM [Sites page](/help/forms/using/embed-adaptive-form-aem-sites.md), or list on an AEM [!DNL Site] using [Forms Portal](../../forms/using/introduction-publishing-forms.md).
 
 Goals:
 
 * Publish the adaptive form as an AEM Page
-* Embed the adaptive form in an AEM Sites Page
+* Embed the adaptive form in an AEM [!DNL Sites] Page
 * Embed the adaptive form in an external webpage (a non-AEM webpage hosted outside AEM)
 
 [![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)
