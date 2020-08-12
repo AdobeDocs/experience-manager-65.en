@@ -72,7 +72,7 @@ After publishing, you can include the video assets in a web page as a URL or dir
 
    To exit the annotation wizard, click **[!UICONTROL Close]**.
 
-1. Seek to a specific point in the video, specify the time in seconds in the **text** field and click **Jump**. For example, to skip the first 10 seconds of video, enter 20 in the text field.
+1. Seek to a specific point in the video, specify the time in seconds in the **text** field and click **Jump**. For example, to skip the first 20 seconds of video, enter 20 in the text field.
 
    ![Seek to a time in a video to skip by specified seconds](assets/seek-in-video.png)
 
