@@ -81,11 +81,11 @@ Create a user on *author*, who is assigned the role of Community Administrator:
 
 * On the author instance
 
-    * For example, [http://localhost:4502/](http://localhost:4503/)
+  * For example, [http://localhost:4502/](http://localhost:4503/)
 
 * Sign in with administrator privileges
 
-    * For example, username 'admin' / password 'admin'
+  * For example, username 'admin' / password 'admin'
 
 * From the main console, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 * From the **[!UICONTROL ]Edit** menu, select **[!UICONTROL Add User]**
@@ -110,7 +110,7 @@ Scroll down to `Add User to Groups`:
 
 * Select **[!UICONTROL Save]**.
 
-![chlimage_1-301](assets/chlimage_1-301.png)
+![create-user](assets/create-user.png)
 
 ## Enable Social Login {#enable-social-login}
 
@@ -136,7 +136,7 @@ Use the [Tagging console](../../help/sites-administering/tags.md#tagging-console
 * `Tutorial: Arts / Auditory`
 * `Tutorial: Arts / History`
 
-![chlimage_1-302](assets/chlimage_1-302.png)
+![tutorial-tags](assets/tutorial-tags.png)
 
 Then follow the instructions to:
 
