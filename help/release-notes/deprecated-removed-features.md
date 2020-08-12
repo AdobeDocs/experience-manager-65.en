@@ -3,7 +3,7 @@ title: Deprecated and Removed Features in Adobe Experience Manager 6.5 release.
 description: Release notes specific to deprecated and removed features in Adobe Experience Manager 6.5.
 ---
 
-# Deprecated and Removed Features {#deprecated-and-removed-features}
+# Deprecated and removed features {#deprecated-and-removed-features}
 
 Adobe constantly evaluates product capabilities, to over time reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility.
 
@@ -14,7 +14,7 @@ To communicate the impending removal or replacement of AEM capabilities, the fol
 
 This process gives customers at least one release cycle to adapt their implementation to a new version or successor of a deprecated capability, before actual removal.
 
-## Deprecated Features {#deprecated-features}
+## Deprecated features {#deprecated-features}
 
 This section lists features and capabilities that have been marked as deprecated with AEM 6.5. Generally, features that are planned to be removed in a future release are set to deprecated first, with an alternative provided.
 
@@ -43,7 +43,7 @@ Customers are advised to review if they make use of the feature/capability in th
 |Developers|Classic UI Dialog Editor in CRXDE lite. Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)| No replacement is available. |
 |Forms|AEM Forms integration with AEM Mobile is deprecated. | No Replacement is available. |
 
-## Removed Features {#removed-features}
+## Removed features {#removed-features}
 
 This section lists features and capabilities that have been removed from AEM 6.5. Prior releases had these capabilities marked as deprecated.
 
@@ -62,7 +62,7 @@ This section lists features and capabilities that have been removed from AEM 6.5
 | [!DNL Assets] | The assets offloading feature is removed in [!DNL Adobe Experience Manager] 6.5. | No replacement is available. |
 | Cache | `system/console/slingjsp` is removed is no longer available in AEM 6.5.|Classes and Slightly cache is stored under the Apache Sling Commons FileSystem ClassLoader bundle. You can check the bundle number in the AEM Web Console and remove the cache folder directly from the file system (`crx-quickstart/launchpad/felix/bundle<ID>`).|
 
-## Pre-announcement for Next Release {#pre-announcement-for-next-release}
+## Pre-announcement for next release {#pre-announcement-for-next-release}
 
 This section is used to pre-announce the upcoming changes in the future releases. The announced changes are not yet effective but will impact customers. For example the features are not yet deprecated but impacts the users after deprecation. These updates are provided for planning purpose.
 

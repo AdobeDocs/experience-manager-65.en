@@ -1,19 +1,19 @@
 ---
-title: Assets HTTP API in [!DNL Adobe Experience Manager].
+title: [!DNL Assets] HTTP API in [!DNL Adobe Experience Manager].
 description: Create, read, update, delete, manage digital assets using HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 ---
 
-# Assets HTTP API {#assets-http-api}
+# [!DNL Assets] HTTP API {#assets-http-api}
 
 ## Overview {#overview}
 
-The Assets HTTP API allows for create-read-update-delete (CRUD) operations on digital assets, including on metadata, on renditions, and on comments, together with structured content using [!DNL Experience Manager] Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](/help/assets/assets-api-content-fragments.md).
+The [!DNL Assets] HTTP API allows for create-read-update-delete (CRUD) operations on digital assets, including on metadata, on renditions, and on comments, together with structured content using [!DNL Experience Manager] Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](/help/assets/assets-api-content-fragments.md).
 
 To access the API:
 
 1. Open the API service document at `https://[hostname]:[port]/api.json`.
-1. Follow the Assets service link leading to `https://[hostname]:[server]/api/assets.json`.
+1. Follow the [!DNL Assets] service link leading to `https://[hostname]:[server]/api/assets.json`.
 
 The API response is a JSON file for some MIME types and a response code for all MIME types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
 
@@ -27,7 +27,7 @@ For further information see [Content Fragments Support in the Experience Manager
 
 ## Data model {#data-model}
 
-The Assets HTTP API exposes two major elements, folders and assets (for standard assets).
+The [!DNL Assets] HTTP API exposes two major elements, folders and assets (for standard assets).
 
 Additionally, it exposes more detailed elements for the custom data models that describe structured content in Content Fragments. See [Content Fragment Data Models](/help/assets/assets-api-content-fragments.md#content-fragments) for further information.
 
@@ -68,7 +68,7 @@ In [!DNL Experience Manager] a folder has the following components:
 * Properties.
 * Links.
 
-The Assets HTTP API includes the following features:
+The [!DNL Assets] HTTP API includes the following features:
 
 * [Retrieve a folder listing](#retrieve-a-folder-listing).
 * [Create a folder](#create-a-folder).

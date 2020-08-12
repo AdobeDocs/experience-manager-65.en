@@ -21,15 +21,15 @@ To add an enablement resource to the new community site:
     * For example, [http://localhost:4502/](http://localhost:4503/)
 * From global navigation, select **[!UICONTROL Communities]** > **[!UICONTROL Resources]**
 
-  ![chlimage_1-199](assets/chlimage_1-199.png)
+  ![resources](assets/resources.png)
 
-  ![chlimage_1-200](assets/chlimage_1-200.png)
+  ![enablement-resource](assets/enablement-resource.png)
 * Select the community site to which enablement resources are being added:
   * Select **[!UICONTROL Enablement Tutorial]**.
 * From the menu, select **[!UICONTROL Create]**.
 * Select **[!UICONTROL Resource]**.
 
-![chlimage_1-201](assets/chlimage_1-201.png)
+![create-resource](assets/create-enablement-resource.png)
 
 ### Basic Info {#basic-info}
 
@@ -59,7 +59,7 @@ Fill in the basic information for the Resource:
 
   Add an image to represent the Resource to the member in their Assignments view.
 
-  ![chlimage_1-202](assets/chlimage_1-202.png)
+  ![basic-info](assets/basic-info.png)
 
 * Select **[!UICONTROL Next]**
 
@@ -69,11 +69,13 @@ While it appears as if multiple Resources might be selected, only one is allowed
 
 Select the `'+' icon`, in the upper right corner, to begin the process of choosing the Resource by identifying the source.
 
-![chlimage_1-203](assets/chlimage_1-203.png) ![chlimage_1-204](assets/chlimage_1-204.png)
+![add-content](assets/add-content.png) 
+
+![upload-resource](assets/upload-resource.png)
 
 Upload a Resource. If a video resource, either upload a custom image to display before the video starts playing, or allow a thumbnail to be generated from the video (may take a few minutes - it's not necessary to wait).
 
-![chlimage_1-205](assets/chlimage_1-205.png)
+![upload-video](assets/upload-video.png)
 
 * Select **[!UICONTROL Next]**.
 
@@ -101,7 +103,7 @@ Upload a Resource. If a video resource, either upload a custom image to display 
 
   **Note**: If users or groups are not visible, check that they were added to the `Community Enable Members` group and *Saved* on the publish instance.
 
-  ![chlimage_1-206](assets/chlimage_1-206.png)
+  ![enablement-settings](assets/enablement-settings.png)
 
 * Select **[!UICONTROL Next]**
 
@@ -111,11 +113,11 @@ Upload a Resource. If a video resource, either upload a custom image to display 
   
   Leave unset as this enablement resource will be added to a learning path. If a learner is assigned to the individual enablement resource as well as a learningpPath containing the enablement resource, the learner will be assigned to the enablement resource twice.
 
-  ![chlimage_1-207](assets/chlimage_1-207.png)
+  ![add-assignments](assets/add-assignments.png)
 
 * Select **[!UICONTROL Create]**
 
-  ![chlimage_1-208](assets/chlimage_1-208.png)
+  ![create-resource](assets/create-resource.png)
 
 Successful creation of the Resource returns to the Resources console with the newly created Resource selected. From this console, it is possible to publish, add learners and change other settings.
 
@@ -129,13 +131,13 @@ Before Enrollees are able to see the assigned Resourse, it must be published:
 
 Activation is confirmed with a success message:
 
-![chlimage_1-209](assets/chlimage_1-209.png)
+![publish-resource](assets/publish-resource.png)
 
 ## Add a Second Enablement Resource {#add-a-second-enablement-resource}
 
 Repeat the steps above to create and publish a second related enablement resource from which a learning path will be created.
 
-![chlimage_1-210](assets/chlimage_1-210.png)
+![add-resource](assets/add-resource.png)
 
 **Publish** the second Resource.
 
@@ -143,7 +145,7 @@ Return to the Enablement Tutorial listing of it's Resources.
 
 *Hint: If both Resources are not visible, refresh the page.*
 
-![chlimage_1-211](assets/chlimage_1-211.png)
+![refresh-resource](assets/refresh-resource.png)
 
 ## Add a Learning Path {#add-a-learning-path}
 
@@ -152,7 +154,7 @@ A learning path is a logical grouping of enablement resources which form a cours
 * From the Resources console, select `+ Create`
 * Select **[!UICONTROL Learning Path]**
 
-![chlimage_1-212](assets/chlimage_1-212.png)
+![add-learning-path](assets/add-learning-path.png)
 
 Add the **[!UICONTROL Basic Info]**:
 
@@ -172,7 +174,7 @@ Add the **[!UICONTROL Basic Info]**:
 
   To represent the learning path in the Resources console.
 
-  ![chlimage_1-213](assets/chlimage_1-213.png)
+  ![learningpath-basic](assets/learningpath-basic.png)
 
 * Select **[!UICONTROL Next]**.
 
@@ -193,13 +195,13 @@ On the Add Resources panel:
 
 * Select **[!UICONTROL Submit]**.
 
-  ![chlimage_1-214](assets/chlimage_1-214.png) 
+  ![learningpath](assets/learningpath-add.png) 
   
-  ![chlimage_1-215](assets/chlimage_1-215.png)
+  ![create-learningpath](assets/create-learningpath.png)
 
 * Select **[!UICONTROL Next]**
 
-  ![chlimage_1-216](assets/chlimage_1-216.png)
+  ![learningpath-settings](assets/learningpath-settings.png)
 
 * **[!UICONTROL Add Assignees]**
  
@@ -211,7 +213,7 @@ On the Add Resources panel:
 
 * Select **[!UICONTROL Create]**.
 
-  ![chlimage_1-217](assets/chlimage_1-217.png)
+  ![learningpath-info](assets/learningpath-info.png)
 
 Successful creation of the learning path returns to the Resources console with the newly created learning path selected. From this console, it is possible to publish, add learners and change other settings.
 
