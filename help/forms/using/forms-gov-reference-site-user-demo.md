@@ -128,7 +128,7 @@ The following groups are also included:
 
     ![Review conversion](assets/aftia-review-conversion.jpg)
 
-1. Camilla then starts to edit the form she selects Root Panel > Edit (the wrench) > Selects Tabs on Top from the Panel Layout dropdown menu > Select the Check box.
+1. Camilla then starts to edit the form. She selects Root Panel > Edit (the wrench) > selects Tabs on Top from the Panel Layout dropdown menu > selects the Check box.
 
    ![Review properties](assets/aftia-review-properties.jpg)
 
@@ -147,6 +147,9 @@ The following groups are also included:
 1. Clicks on the Save & Close button.
 
     ![FDM selection](assets/aftia-select-fdm.jpg)
+
+1. Camila clicks the **output** folder, selects the adaptive form and clicks **Edit** to open the completed We.Gov form.
+1. Select an adaptive form field and click ![Configure icon](assets/configure-icon.svg). Create binding with the form data model entities using the **Bind Reference** field. Repeat this step for all fields in the adaptive form.
 
 ### Form Accessibility Testing (Camila) {#form-accessibility-testing}
 
@@ -443,7 +446,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
    ![Contact read service](assets/aftia-contact-read-service.jpg)
 
-1. Camila then provides the test service with a contact id and then clicks on Test button.
+1. Camila then provides the test service with a contact id and then clicks on Test button. For example, 1 or 2, if you submitted the form. If you have not submitted the form, no data is returned.
 
    ![Contact read service](assets/aftia-test-service.jpg)
 
