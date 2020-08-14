@@ -76,7 +76,7 @@ The /apps directory is protected and not publicly accessible as are the /content
 
 1. The structure in the explorer pane of CRXDE Lite should now look something like this:
 
-   ![chlimage_1-44](assets/chlimage_1-44.png)
+   ![crxde-template](assets/crxde-template.png)
 
 ## Set up the Design Directory (/etc/designs) {#setup-the-design-directory-etc-designs}
 
@@ -96,7 +96,7 @@ The /etc/designs directory contains the images, scripts, and stylesheets to be d
 
    Click **[!UICONTROL Create]**.
 
-   ![chlimage_1-45](assets/chlimage_1-45.png)
+   ![design-template](assets/design-template.png)
 
 1. Refresh the explorer pane if "An SCF Sandbox" folder does not appear.
 
@@ -104,7 +104,7 @@ The /etc/designs directory contains the images, scripts, and stylesheets to be d
 
    In the right, lower pane of CRXDE, you can view the Properties tab, Access Control tab and Replication tab to see what was defined using the Design Page Template.
 
-   ![chlimage_1-46](assets/chlimage_1-46.png)
+   ![crxde-configure-template](assets/crxde-configure-template.png)
 
 ## Set up the Content Directory (/content) {#setup-the-content-directory-content}
 
