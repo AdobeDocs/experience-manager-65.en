@@ -17,7 +17,7 @@ discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 
 The package `com.adobe.cq.social.ugcbase.SocialUtils` was deprecated in AEM 6.1.
 
-The following tables list the methods to use in place of SocialUtils methods.
+The following tables list the methods to use in place of `SocialUtils` methods.
 
 ## SocialResourceUtilities Package  {#socialresourceutilities-package}
 
