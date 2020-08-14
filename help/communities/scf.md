@@ -38,7 +38,7 @@ The SocialComponent API may be extended to provide data required by a client for
 
 ### How Pages are Rendered for Client {#how-pages-are-rendered-for-client}
 
-![chlimage_1-25](assets/chlimage_1-25.png)
+![scf-page-rendering](assets/scf-overview.png)
 
 ### Component Customization and Extension {#component-customization-and-extension}
 
@@ -91,7 +91,7 @@ For every SocialComponent, the framework provides an HTTP-based API endpoint. Th
 
 A default GET servlet listens to .social.json requests to which the SocialComponent responds with customizable JSON.
 
-![chlimage_1-26](assets/chlimage_1-26.png)
+![scf-framework](assets/scf-framework.png)
 
 ### HTTP API - POST Requests {#http-api-post-requests}
 
@@ -103,7 +103,7 @@ This framework endpoint pattern makes CUD operations extensible, reusable and te
 
 There is a Sling POST:operation for every SocialComponent operation. The business logic and maintenance code for each operation are wrapped in an OperationService which is accessible through the HTTP API or from elsewhere as an OSGi service. Hooks are provided supporting pluggable operation extensions for before/after actions.
 
-![chlimage_1-27](assets/chlimage_1-27.png)
+![scf-post-request](assets/scf-post-request.png)
 
 ### Storage Resource Provider (SRP) {#storage-resource-provider-srp}
 
