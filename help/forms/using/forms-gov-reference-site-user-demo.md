@@ -149,7 +149,7 @@ The following groups are also included:
     ![FDM selection](assets/aftia-select-fdm.jpg)
 
 1. Camila clicks the **output** folder, selects the adaptive form and clicks **Edit** to open the completed We.Gov form.
-1. Select an adaptive form field and click ![Configure icon](assets/configure-icon.svg). Create binding with the form data model entities using the **Bind Reference** field. Repeat this step for all fields in the adaptive form.
+1. Camila selects an adaptive form field and click ![Configure icon](assets/configure-icon.svg). She creates binding with the form data model entities using the **Bind Reference** field. She repeats this step for all fields in the adaptive form.
 
 ### Form Accessibility Testing (Camila) {#form-accessibility-testing}
 
