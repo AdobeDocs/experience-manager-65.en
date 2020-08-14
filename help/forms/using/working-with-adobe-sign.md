@@ -329,6 +329,7 @@ When Adobe Sign service is configured for an adaptive form, the service fails to
 
 * Use separate email addresses to configure Adobe Sign account and for the first signer and single signer. The email address of the first signer or the only signer (in case of the single signer) cannot be identical to Adobe Sign account used to configure AEM cloud services.
 
+### AEM Forms workflow configured for an Adobe Sign enabled adaptive form does not start {#adobe-sign-aem-form-workflow-failures}
 
 **Issue**
 When Adobe Sign is configured for an adaptive form, the workflow configured using the Invoke Forms Workflow option does not start.
