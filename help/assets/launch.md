@@ -443,7 +443,7 @@ See also [Analytics Implementation Guide](https://docs.adobe.com/content/help/en
 
    If no report suite is available, you or your Adobe Analytics administrator must create one before you can proceed any further with the configuration.
 
-   See [Reports and Report Suites](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-reports-report-suites.html) and [Create a report suite](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/create-report-suite.html).
+   See [Reports and Report Suites](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html) and [Create a report suite](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/create-report-suite.html).
 
    In Adobe Analytics, report suites are managed under **[!UICONTROL Admin > Report Suites]**.
 
@@ -457,7 +457,7 @@ See also [Analytics Implementation Guide](https://docs.adobe.com/content/help/en
 
    It is possible to use any type of variable supported by Adobe Analytics. The decision about the variable type (like Custom Traffic [props], Conversion [eVar]) should be driven by specific needs of you Analytics implementation.
 
-   See [Overview of props and eVars](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/traffic-props-evars/props-evars.html).
+   See [Overview of props and eVars](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/evar.html).
 
    For the purposes of this documentation, only a Custom Traffic (props) variable will be used because they become available in a Analytics Report within a few minutes after an action occurs on a web page.
 

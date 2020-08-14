@@ -22,6 +22,12 @@ targetaudience: target-audience upgrader
 
 When upgrading your AEM environments, you need to consider the differences in approach between upgrading author environments or publish environments in order to minimize downtime for both you authors and end users. This page outlines the high level procedure for upgrading an AEM topology currently running on a version of AEM 6.x. Since the process differs between author and publish tiers as well as Mongo and TarMK based deployments, each tier and microkernel has been listed in a separate section. When executing your deployment, we recommend first upgrading your author environment, determining success, and then proceeding to the publish environments.
 
+<!--
+>[!IMPORTANT]
+>
+>The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
+-->
+
 ## TarMK Author Tier {#tarmk-author-tier}
 
 ### Starting Topology {#starting-topology}

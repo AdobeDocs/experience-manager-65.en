@@ -19,7 +19,7 @@ A Rich Text Editor (RTE) provides the ability to enter text with markup.
 
 For Communities components, while similar to the [rich text editor in the author environment](../../help/sites-authoring/rich-text-editor.md), it affects text entered in the publish environment.
 
-![chlimage_1-410](assets/chlimage_1-410.png)
+![rich-text-editor](assets/rich-text-editor.png)
 
 ## Enabling Rich Text Editor {#enabling-rich-text-editor}
 
@@ -55,7 +55,7 @@ Due to security concerns, the hyperlink options are not included in the set of r
 To add the hyperlink options to the toolbar:
 
 * Add a toolbar named " `links`"
-    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
+  * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
 * Select **[!UICONTROL Save All]**
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}
