@@ -63,7 +63,7 @@ MySQL Workbench should be downloaded and installed following the instructions fo
 
 When the MySQL Workbench is first launched, unless already in use for other purposes, it will not yet show any connections:
 
-![chlimage_1-327](assets/chlimage_1-327.png)
+![mysqlconnection](assets/mysqlconnection.png)
 
 ### New Connection Settings {#new-connection-settings}
 
@@ -83,17 +83,17 @@ When the MySQL Workbench is first launched, unless already in use for other purp
 
 #### Successful Connection {#successful-connection}
 
-![chlimage_1-328](assets/chlimage_1-328.png)
+![mysqlconnection1](assets/mysqlconnection1.png)
 
 #### New Enablement Connection {#new-enablement-connection}
 
-![chlimage_1-329](assets/chlimage_1-329.png)
+![mysqlconnection2](assets/mysqlconnection2.png)
 
 ## Database Setup {#database-setup}
 
 Upon opening the new Enablement connection, notice there is a test schema and default user accounts.
 
-![chlimage_1-330](assets/chlimage_1-330.png)
+![database-setup](assets/database-setup.png)
 
 ### Obtain SQL Scripts {#obtain-sql-scripts}
 
@@ -105,12 +105,12 @@ The SQL scripts are obtained using CRXDE Lite on the author instance. The [SCORM
 1. Download `database_scormengine.sql`
 1. Download `database_scorm_integration.sql`
 
-![chlimage_1-331](assets/chlimage_1-331.png)
+![sqlscripts](assets/sqlscripts.png)
 
-One method for downloading the schema is to
+One method for downloading the schema is to:
 
-* Select the `jcr:content`node for the sql file.
-* Notice the value for the `jcr:data`property is a view link.
+* Select the `jcr:content` node for the sql file.
+* Notice the value for the `jcr:data` property is a view link.
 * Select the view link to save the data to a local file.
 
 ### Create SCORM Database {#create-scorm-database}
@@ -143,7 +143,7 @@ In the MySQL Workbench
   1. `database_scormengine.sql`
   1. `database_scorm_integration.sql`
 
-![chlimage_1-332](assets/chlimage_1-332.png)
+![scrom-database](assets/scrom-database.png)
 
 #### Step 2: execute SQL Script {#step-execute-sql-script}
 
@@ -151,19 +151,19 @@ In the Workbench window for the file opened in Step 1, select the `lightening (f
 
 Note that the execution of the `database_scormengine.sql` script to create the SCORM database may take a minute to complete.
 
-![chlimage_1-333](assets/chlimage_1-333.png)
+![scrom-database1](assets/scrom-database1.png)
 
 #### Refresh {#refresh}
 
 Once the scripts are executed, it is necessary to refresh the `SCHEMAS` section of the `Navigator` in order to see the new database. Use the refresh icon to the right of 'SCHEMAS':
 
-![chlimage_1-334](assets/chlimage_1-334.png)
+![scrom-database2](assets/scrom-database2.png)
 
 #### Result: scormenginedb {#result-scormenginedb}
 
 After installing and refreshing SCHEMAS, the `scormenginedb` will be visible.
 
-![chlimage_1-335](assets/chlimage_1-335.png)
+![scrom-database3](assets/scrom-database3.png)
 
 ## Configure JDBC Connections {#configure-jdbc-connections}
 
@@ -180,7 +180,7 @@ When MySQL runs on a server different from AEM, the server hostname must be spec
 * Locate the `Day Commons JDBC Connections Pool`
 * Select the `+` icon to create a new configuration
 
-![chlimage_1-336](assets/chlimage_1-336.png)
+  ![jdbcconnection1](assets/jdbcconnection1.png)
 
 * Enter the following values:
   * **[!UICONTROL JDBC driver class]**: `com.mysql.jdbc.Driver`
@@ -208,7 +208,9 @@ When MySQL runs on a server different from AEM, the server hostname must be spec
   * For example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 * Locate the `AEM Communities ScormEngine Service`
 * Select the edit icon
-![chlimage_1-337](assets/chlimage_1-337.png)
+
+  ![chlimage_1-337](assets/chlimage_1-337.png)
+
 * Verify the following parameter values are consistent with the [JDBC Connection](#configurejdbcconnectionspool) config:
   * **[!UICONTROL JDBC connection URI]**: `jdbc:mysql://localhost:3306/ScormEngineDB` *ScormEngineDB* is the default database name in the SQL scripts
   * **[!UICONTROL Username]**: Root or enter the configured Username for the MySQL server, if not 'root'
@@ -229,7 +231,7 @@ To ensure enablement courses work correctly in all browsers, it is necessary to 
 * Locate `Adobe Granite CSRF Filter`.
 * Select the edit icon.
  
-  ![chlimage_1-338](assets/chlimage_1-338.png)
+  ![jdbcconnection2](assets/jdbcconnection2.png)
   
 * Select the `[+]` icon to add a Safe User Agent.
 * Enter `Mozilla/*`.

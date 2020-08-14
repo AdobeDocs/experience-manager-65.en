@@ -71,6 +71,8 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 * When you upgrade from Experience Manager 6.2 to Experience Manager 6.5, the Parsys component of static templates do not display correctly. The height of the the Parsys component is set to 0 and the components inside it are not visible (NPR-33663).
 * When a user copies and pastes a Layout Container on the same page, components in a Layout Container do not display (NPR-33648).
 * Dispatcher health check displays `Invalid cookie header` warning message in the log files (NPR-33629).
+* Reflected XSS in PreferencesServlet (NPR-33438).
+* Anonymous users can access CRX DE Lite features (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
 
@@ -232,6 +234,8 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 
 * An error message displays while installing the Experience Manager SDL package (NPR-33175).
 
+* SSRF vulnerability in Experience Manager (NPR-33435).
+
 ### Platform {#platform-6550}
 
 * The [!DNL Sling] filter is not called if the `sling:match` map entry is created under `/etc/maps` (NPR-33362).
@@ -257,6 +261,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 * Authorized IMS users in local Experience Manager admin group cannot create or modify IMS configurations (NPR-33045).
 * Adobe Launch configurations page does not display all records (NPR-33011).
 * Users in content-authors group cannot edit properties of an Adobe Target component due to JavaScript error (NPR-32996).
+* Cross-site scripting for JSON (NPR-32744).
 
 ### Translation Projects {#translation-6550}
 
@@ -288,6 +293,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 * A user is not able to send an email to another user in a community (NPR-32598).
 * A submitted blog does not display until the user refreshes the page (NPR-32391).
 * While creating a version of notifications and subscriptions of User Generated Content (UGC), an incorrect ID of the source page is stored (CQ-4279355, CQ-4289703).
+* Cross-site scripting issue (NPR-33203).
 
 ### Workflow {#workflow-6550}
 
@@ -314,6 +320,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 * BackendIntegration: Form data model requests fail as the refresh token expires due to incorrect inactive state (NPR-33169).
 * Designer: Screen readers execute the tabbing order based on the default geographic order instead of the custom tabbing order defined in the XDP file (NPR-32160).
 * Designer: If the tagging option is enabled, the subform border disappears in the generated PDF output (NPR-32778).
+* Stored XSS with the GuideSOMProviderServlet (NPR-32700).
 
 ## Install 6.5.5.0 {#install}
 
@@ -450,6 +457,6 @@ For more information on accessing the support portal, see [Accessing the support
 >[!MORELIKETHIS]
 >
 >* [AEM 6.5 release notes](/help/release-notes/release-notes.md)
->* [AEM product page](https://www.adobe.com/solutions/web-experience-management.html)
+>* [AEM product page](https://www.adobe.com/marketing/experience-manager.html)
 >* [AEM 6.5 documentation](https://helpx.adobe.com/support/experience-manager/6-5.html)
 >* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)

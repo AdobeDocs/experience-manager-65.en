@@ -1,16 +1,16 @@
 ---
-title: Assets proxy development
-description: A proxy is an Experience Manager instance that uses proxy workers to process jobs. Learn how to configure an Experience Manager proxy, supported operations, proxy components, and how to develop a custom proxy worker.
+title: [!DNL Assets] proxy development
+description: A proxy is an [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] proxy, supported operations, proxy components, and how to develop a custom proxy worker.
 contentOwner: AG
 ---
 
-# Assets proxy development {#assets-proxy-development}
+# [!DNL Assets] proxy development {#assets-proxy-development}
 
-Adobe Experience Manager Assets uses a proxy to distribute processing for certain tasks.
+[!DNL Adobe Experience Manager Assets] uses a proxy to distribute processing for certain tasks.
 
-A proxy is a specific (and sometimes separate) Experience Manager instance that uses proxy workers as processors responsible for handling a job and creating a result. A proxy worker can be used for a wide variety of tasks. In the case of an Assets proxy this can be used for loading assets for rendering within Assets. For example, the [IDS proxy worker](indesign.md) uses an [!DNL Adobe InDesign] Server to process files for use in Assets.
+A proxy is a specific (and sometimes separate) Experience Manager instance that uses proxy workers as processors responsible for handling a job and creating a result. A proxy worker can be used for a wide variety of tasks. In the case of an [!DNL Assets] proxy this can be used for loading assets for rendering within Assets. For example, the [IDS proxy worker](indesign.md) uses an [!DNL Adobe InDesign] Server to process files for use in Assets.
 
-When the proxy is a separate Experience Manager instance this helps reduce the load on the Experience Manager authoring instance(s). By default, Assets executes the asset processing tasks in the same JVM (externalized via Proxy) to reduce the load on the Experience Manager authoring instance.
+When the proxy is a separate [!DNL Experience Manager] instance this helps reduce the load on the Experience Manager authoring instance(s). By default, [!DNL Assets] executes the asset processing tasks in the same JVM (externalized via Proxy) to reduce the load on the Experience Manager authoring instance.
 
 ## Proxy (HTTP Access) {#proxy-http-access}
 
@@ -102,7 +102,7 @@ The following is an example of API usage:
 >
 >Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 
-Both proxy and proxy worker configurations are available via cloud services configurations as accessible from the Assets **Tools** console or under `/etc/cloudservices/proxy`. Each proxy worker is expected to add a node under `/etc/cloudservices/proxy` for worker specific configuration details (for example, `/etc/cloudservices/proxy/workername`).
+Both proxy and proxy worker configurations are available via cloud services configurations as accessible from the [!DNL Assets] **Tools** console or under `/etc/cloudservices/proxy`. Each proxy worker is expected to add a node under `/etc/cloudservices/proxy` for worker specific configuration details (for example, `/etc/cloudservices/proxy/workername`).
 
 >[!NOTE]
 >
@@ -125,9 +125,9 @@ The following is an example of API usage:
 
 ### Developing a Customized Proxy Worker {#developing-a-customized-proxy-worker}
 
-The [IDS proxy worker](indesign.md) is an example of a Assets proxy worker that is already provided out-of-the-box to outsource the processing of InDesign assets.
+The [IDS proxy worker](indesign.md) is an example of a [!DNL Assets] proxy worker that is already provided out-of-the-box to outsource the processing of InDesign assets.
 
-You can also develop and configure your own Assets proxy worker to create a specialized worker to dispatch and outsource your Assets processing tasks.
+You can also develop and configure your own [!DNL Assets] proxy worker to create a specialized worker to dispatch and outsource your [!DNL Assets] processing tasks.
 
 Setting up your own custom proxy worker requires you to:
 
@@ -169,7 +169,7 @@ The following diagram and steps detail how to proceed:
 
 >[!NOTE]
 >
->What the Assets proxy framework does not provide out-of-the-box is the pool mechanism.
+>What the [!DNL Assets] proxy framework does not provide out-of-the-box is the pool mechanism.
 >
 >The [!DNL InDesign] integration allows the access of a pool of [!DNL InDesign] servers (IDSPool). This pooling is specific to [!DNL InDesign] integration and not part of the [!DNL Assets] proxy framework.
 

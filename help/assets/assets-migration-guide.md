@@ -10,7 +10,7 @@ When migrating assets into [!DNL Adobe Experience Manager], there are several st
 
 ## Prerequisites {#prerequisites}
 
-Before actually performing any of the steps in this methodology, please review and implement the guidance in [Assets performance tuning tips](performance-tuning-guidelines.md). Many of the steps, such as configuring maximum concurrent jobs, greatly enhance the server’s stability and performance under load. Other steps, such as configuring a File Data Store, are much more difficult to perform after the system has been loaded with assets.
+Before actually performing any of the steps in this methodology, review and implement the guidance in [Assets performance tuning tips](performance-tuning-guidelines.md). Many of the steps, such as configuring maximum concurrent jobs, greatly enhance the server’s stability and performance under load. Other steps, such as configuring a File Data Store, are much more difficult to perform after the system has been loaded with assets.
 
 >[!NOTE]
 >

@@ -736,7 +736,7 @@ To configure how links are added in AEM from another program, define the HTML ru
         * **Type** `String`
         * **Value** the name of the CSS class (without a preceding '.'; for example, `cssClass` instead of `.cssClass`)
 
-    * Array of valid **protocols** (including https://, https:// file://, mailto:, amongst others)
+    * Array of valid **protocols** (including `https://`, `https://`, `file://`, and `mailto:` amongst others)
 
         * **Name** `protocols`
         * **Type** `String[]`
@@ -772,7 +772,7 @@ To configure how links are added in AEM from another program, define the HTML ru
 
             * **Name** `targetInternal`
             * **Type** `String`
-            * **Value** the target for internal links (only use when the `` mode is `auto`)
+            * **Value** the target for internal links (only use when the mode is `auto`)
 
         * The target for external links:
 
