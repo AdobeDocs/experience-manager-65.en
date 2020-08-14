@@ -117,7 +117,7 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
 
 ### (Windows only) Automatic installation of Visual Studio redistributables {#automatic-installation-visual-studio-redistributables}
 
-If you install an AEM instance in elevated mode, the Visual Studio redistributables are installed automatically during the installation of AEM Forms add-on package.
+If you install an AEM instance in elevated mode, the missing Visual Studio redistributables are installed automatically during the installation of AEM Forms add-on package.
 
 To evaluate if the Visual Studio redistributables are installed automatically, open the `error.log` file available at the `/crx-repository/logs/` directory. The logs include the following message:
 
