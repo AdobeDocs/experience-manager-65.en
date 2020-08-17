@@ -24,9 +24,9 @@ To not display the avatar next to each posted comment:
 1. Copy `comment.hbs`from `libs`to `apps`
 
    1. Select `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Select **Copy**
+   1. Select **[!UICONTROL Copy]**
    1. Select `/apps/social/commons/components/hbs/comments/comment`
-   1. Select **Paste**
+   1. Select **[!UICONTROL Paste]**
 
 1. Open the overlaid `comment.hbs`
 
@@ -63,7 +63,7 @@ From the global navigation, select **[!UICONTROL Tools]** > **[!UICONTROL Deploy
 
 For the Start Path enter `/apps/social/commons` and select **[!UICONTROL Activate]**.
 
-![chlimage_1-77](assets/chlimage_1-77.png)
+ ![verify-content-template](assets/verify-content-template.png)
 
 ### View Results {#view-results}
 
@@ -71,5 +71,5 @@ If you login to the publish instance as an administrator, e.g., https://localhos
 
 If you logout and re-login as `aaron.mcdonald@mailinator.com/password` and refresh the page, you will observe that the posted comment no longer displays with an avatar, instead a simple 'xxx' is displayed.
 
-![chlimage_1-78](assets/chlimage_1-78.png)
+![create-template-component](assets/create-template-component.png)
 

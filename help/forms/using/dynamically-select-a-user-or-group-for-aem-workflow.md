@@ -49,7 +49,7 @@ ECMAScript is a scripting language. It is used for client-side scripting and ser
 
 The following sample ECMAScript dynamically selects an assignee for the Assign Task step. In this script, a user is selected based on the path of the payload. Before using this script, ensure that all the users mentioned in the script exist in AEM. If the users mentioned in the script do not exist in AEM, the related process can fail.
 
-```
+```javascript
 function getParticipant() {
 
 var workflowData = graniteWorkItem.getWorkflowData();
@@ -73,7 +73,7 @@ The following sample ECMAScript dynamically selects an assignee for the Adobe Si
 >
 >On using ECMAScript for Adobe Sign, the script must be located in crx-repository at /apps/fd/workflow/scripts/adobesign/, and should have a function named getAdobeSignRecipients to return a list of the users.
 
-```
+```javascript
 function getAdobeSignRecipients() {
 
     var recipientSetInfos = new Packages.java.util.ArrayList();

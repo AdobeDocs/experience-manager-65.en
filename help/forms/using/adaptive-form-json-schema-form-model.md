@@ -34,7 +34,7 @@ An JSON Schema consists of simple and complex element types. The elements have a
 
 This mapping of JSON elements with adaptive form components is as follows:
 
-```
+```json
 "birthDate": {
               "type": "string",
               "format": "date",
@@ -122,7 +122,7 @@ Adaptive Form uses information available in JSON Schema to map each generated fi
 
 Here's an example of an JSON Schema.
 
-```
+```json
 {
  "$schema": "https://json-schema.org/draft-04/schema#",
  "definitions": {
@@ -304,7 +304,7 @@ Here's an example of an JSON Schema.
 
 Definition keys are used to identify reusable schemas. The reusable schema definitions are used to create fragments. It is similar to identifying complex types in XSD. A sample JSON Schema with definitions is given below:
 
-```
+```json
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
 
@@ -336,7 +336,7 @@ The above example defines a customer record, where each customer has both a ship
 
 You can use the **aem:afProperties** property to preconfigure JSON Schema field to map to a custom adaptive form component. An example is listed below:
 
-```
+```json
 {
     "properties": {
         "sizeInMB": {
@@ -361,7 +361,7 @@ JavaScript is the expression language of adaptive forms. All the expressions are
 
 Use the aem:afproperties property to preconfigure adaptive form expressions or scripts for adaptive form components. For example, when the initialize event is triggered, the below code sets value of telephone field and prints a value to the log :
 
-```
+```json
 "telephone": {
   "type": "string",
   "pattern": "/\\d{10}/",
@@ -588,7 +588,7 @@ Here is the sample JSON code for aforementioned examples.
 
 ### Hiding a field on initialize event {#hiding-a-field-on-initialize-event}
 
-```
+```json
 
 "name": {
     "type": "string",
@@ -602,7 +602,7 @@ Here is the sample JSON code for aforementioned examples.
 
 #### Configure value of another field on value commit event {#configure-value-of-another-field-on-value-commit-event}
 
-```
+```json
 "Income": {
     "type": "object",
     "properties": {

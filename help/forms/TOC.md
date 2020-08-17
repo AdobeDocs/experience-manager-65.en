@@ -4,6 +4,7 @@ product: adobe experience manager
 sub-product: forms
 audience: end-user
 user-guide-title: AEM 6.5 Forms User Guide
+user-guide-description: Create, manage, publish, and update digital forms.
 ---
 # AEM 6.5 - Forms User Guide {#forms}
 
@@ -575,6 +576,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [AEM Forms Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
   + [AEM Forms on JEE Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
   + [Form Bridge APIs for HTML5 forms](using/form-bridge-apis.md)
+  + [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
   + [Assembler Service and DDX Reference](http://www.adobe.com/go/learn_aemforms_ddxRef_65)
   + [Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_65)
   + Programming with AEM Forms on JEE {#programming-aem-forms-jee}

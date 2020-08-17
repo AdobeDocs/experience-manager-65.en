@@ -55,7 +55,7 @@ You can prefill both bound and unbound fields of an adaptive form. The prefill d
 
 ### Sample Prefill JSON structure {#sample-prefill-json-structure}
 
-```
+```javascript
 {
    "afBoundData": {
       "employeeData": { }
@@ -146,7 +146,7 @@ For adaptive forms based on JSON schema, the structure of prefill JSON and submi
 * **Prefill JSON structure**: The prefill JSON must be compliant with the associated JSON Schema. Optionally, it can be wrapped into the /afData/afBoundData Object if you want to prefill unbound fields as well.
 * **Submitted JSON structure**: if no prefill JSON is used, the submitted JSON contains data for both bound and unbound fields in afData wrapper tag. If the prefill JSON is used, the submitted JSON has the same structure as the prefill JSON. If the prefill JSON starts with the afData root object, the output JSON has the same format. If the prefill JSON does not have afData/afBoundData wrapper and instead starts directly from the schema root object such as user, the submitted JSON also starts with the user object.
 
-```
+```json
 {
     "id": "https://some.site.somewhere/entry-schema#",
     "$schema": "https://json-schema.org/draft-04/schema#",
@@ -165,7 +165,7 @@ For adaptive forms based on JSON schema, the structure of prefill JSON and submi
 
 For fields which use JSON schema model, the data is prefilled in the afBoundData object as shown in the sample JSON below. It can be used for prefilling an adaptive form with one or more unbound text fields. Below is an example of data with `afData/afBoundData` wrapper:
 
-```
+```json
 {
   "afData": {
     "afUnboundData": {
@@ -182,7 +182,7 @@ For fields which use JSON schema model, the data is prefilled in the afBoundData
 
 Below is an example without `afData/afBoundData` wrapper:
 
-```
+```json
 {
  "user": {
   "address": {
@@ -269,7 +269,7 @@ Adaptive forms can be prefilled with user data in prefill data format via the fo
 
 ### The crx:// protocol {#the-crx-protocol}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
 ```
 
@@ -277,7 +277,7 @@ The specified node must have a property called `jcr:data` and hold the data.
 
 ### The file:// protocol&nbsp; {#the-file-protocol-nbsp}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:///C:/Users/form-user/Downloads/somesamplexml.xml
 
 ```
@@ -286,13 +286,13 @@ The referred file must be on the same server.
 
 ### The https:// protocol {#the-http-protocol}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://localhost:8000/somesamplexmlfile.xml
 ```
 
 ### The service:// protocol {#the-service-protocol}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
@@ -307,7 +307,7 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 
 You can also set the `data` attribute in `slingRequest`, where the `data` attribute is a string containing XML or JSON, as shown in the sample code below (Example is for XML):
 
-```java
+```javascript
 <%
            String dataXML="<afData>" +
                             "<afUnboundData>" +

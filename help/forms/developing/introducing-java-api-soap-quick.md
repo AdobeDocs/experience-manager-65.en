@@ -22,7 +22,7 @@ Java strongly-typed API Quick Start provides a listing of JAR files that are req
 
 The JAR file listing is located in a comment section located at the beginning of the Quick Start. For example, the following comment is located in an Output quick start and is a typical JAR file listing found in each Java Quick Start.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

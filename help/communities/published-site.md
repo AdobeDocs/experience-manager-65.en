@@ -17,7 +17,7 @@ docset: aem65
 
 ## Browse to New Site on Publish {#browse-to-new-site-on-publish}
 
-Now that the newly created communities site has been published, browse to the URL displayed when creating the site, but on the publish server, e.g.
+Now that the newly created communities site has been published, browse to the URL displayed when creating the site, but on the publish server, e.g:
 
 * Author URL = https://localhost:4502/content/sites/engage/en.html
 * Publish URL = https://localhost:4503/content/sites/engage/en.html
@@ -28,7 +28,7 @@ When first arriving at the published site, the site visitor would typically not 
 
 `https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}`
 
-![chlimage_1-31](assets/chlimage_1-31.png)
+![authorpublished](assets/authorpublished.png)
 
 ## Anonymous Site Visitor {#anonymous-site-visitor}
 
@@ -60,13 +60,14 @@ To protect your community site's content from access by anonymous users through 
 
 1. Go to **Page Properties**.
 
-   ![site-authentication](assets/site-authentication.png)
+   ![page-properties](assets/page-properties.png)
 
 1. Go to **Advanced** tab.
 
-   ![page-properties](assets/page-properties.png)
-
 1. Enable **Authentication Requirement**.
+
+   ![site-authentication](assets/site-authentication.png)
+
 1. Add the path of the login page. For example, **/content/......./GetStarted**.
 1. Publish the page.
 
@@ -76,7 +77,7 @@ This experience assumes [Aaron McDonald](/help/communities/tutorials.md#demo-use
 
 In the upper right corner, select `Log in`, and sign with username (aaron.mcdonald@mailinator.com) and password (password). Notice the ability to sign in with Twitter or Facebook credentials.
 
-![chlimage_1-32](assets/chlimage_1-32.png)
+![login](assets/login.png)
 
 Once signed in as the registered community member, notice the following menu items to click and explore your community site:
 
@@ -89,11 +90,11 @@ Once signed in as the registered community member, notice the following menu ite
 * [Notifications](/help/communities/notifications.md) option directs you to notifications section, where you can view your events of interest and edit notification settings.
 * [Administration](/help/communities/published-site.md#moderationlink) directs you to AEM Communities Moderation Page, if you have moderation privileges.
 
-![chlimage_1-33](assets/chlimage_1-33.png)
+![adminscreen](assets/adminscreen.png)
 
 Notice the Calendar page is the home page because the chosen Reference Site Template included the Calendar function first, followed by Activity Stream function, Forum function, and so on. This structure is visible from the [Site Template](/help/communities/sites.md#edit-site-template) console or when modifying site properties in the author environment:
 
-![chlimage_1-34](assets/chlimage_1-34.png)
+![sitetemplate](assets/sitetemplate.png)
 
 >[!NOTE]
  >
@@ -111,7 +112,7 @@ Members are able to post a new topic or follow a topic.
 
 Site visitors are able to view posts and sort them in various ways.
 
-![chlimage_1-35](assets/chlimage_1-35.png)
+![forumlink](assets/forumlink.png)
 
 ### Groups link {#groups-link}
 
@@ -121,29 +122,29 @@ This is an example where a group is created in the publish environment.
 
 Groups may also be created in the author environment and managed within the community site in the author environment ([Community Groups console](/help/communities/groups.md)). The experience of [creating groups on author](/help/communities/nested-groups.md) is next in this tutorial.
 
-![chlimage_1-36](assets/chlimage_1-36.png)
+![grouplink](assets/grouplink.png)
 
 Create a Reference Group:
 
 1. Select **New Group**
 1. **Settings tab**
 
-    * Group Name : `Sports`
-    * Description : `A parent group for various sporting groups`.
-    * Group URL Name : `sports`
-    * Select `Open Group` (allow any community member to participate by joining)
+   * Group Name : `Sports`
+   * Description : `A parent group for various sporting groups`.
+   * Group URL Name : `sports`
+   * Select `Open Group` (allow any community member to participate by joining)
 
 1. **Template tab**
 
-    * Select `Reference Group` (contains a groups function in its structure to allow nested groups)
+   * Select `Reference Group` (contains a groups function in its structure to allow nested groups)
 
 1. Select **Create Group**
 
-![chlimage_1-37](assets/chlimage_1-37.png)
+   ![creategroup](assets/creategroup.png)
 
 After new group is created, **select the new Sports group** in order to create two groups (nested) within it. As a site structure can not begin with the groups function, after opening the Sports group, it is necessary to select the Groups link:
 
-![chlimage_1-38](assets/chlimage_1-38.png)
+![grouplink1](assets/grouplink1.png)
 
 The second set of links, beginning with `Blog`, belong to the currently selected group, the `Sports` group. By selecting the Sports' `Groups` link, it is possible to nest two groups within the Sports group.
 
@@ -151,13 +152,13 @@ As an example, add two `new groups`.
 
 * One named `Baseball`
 
-    * Leave it set as an `Open Group` (required membership).
-    * On Templates tab, select `Conversational Group`.
+  * Leave it set as an `Open Group` (required membership).
+  * On Templates tab, select `Conversational Group`.
 
 * One named `Gymnastics`
 
-    * Change its setting to `Member Only Group` (restricted membership).
-    * On Templates tab, select `Conversational Group`.
+  * Change its setting to `Member Only Group` (restricted membership).
+  * On Templates tab, select `Conversational Group`.
 
 **Notice**:
 
@@ -171,7 +172,7 @@ Once both groups are created, select the Baseball group, an open group, and noti
 
 The group's links are displayed below the main site's links and results in the following display:
 
-![chlimage_1-39](assets/chlimage_1-39.png)
+![grouplink2](assets/grouplink2.png)
 
 On author - with administrative privileges, navigate to the [Communities Groups console](/help/communities/members.md) and add Weston McCall to the `Community Engage Gymnastics <uid> Members` group.
 
@@ -186,7 +187,7 @@ Only the Baseball group will be visible.
 
 Log in as Weston McCall (weston.mccall@dodgit.com / password), and navigate to the same location. Notice that Weston is able to `Join` the open `Baseball` group and either `enter or Leave` the private `Gymnastics` group.
 
-![chlimage_1-40](assets/chlimage_1-40.png)
+![grouplink3](assets/grouplink3.png)
 
 ### Web Page link {#web-page-link}
 
@@ -194,7 +195,7 @@ View the basic web page included in the site by selecting the Web Page link. The
 
 For example, go to **author** instance, open the `engage` folder in the [Communities Sites console](/help/communities/sites-console.md), select the **Open Site** icon to enter author edit mode. Then select preview mode to select the `Web Page` link, then select edit mode to add Title and Text components. Last, re-publish either just the page or the entire site.
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![webpagelink](assets/webpagelink.png)
 
 ### Moderation Link {#moderationlink}
 
@@ -202,7 +203,7 @@ When the community member has moderation privileges, then the Moderation link wi
 
 Use the browser's back button to return to the published site. Most consoles are not accessible from global navigation in the publish environment. [](/help/communities/moderate-ugc.md)
 
-![chlimage_1-42](assets/chlimage_1-42.png)
+![moderationlink](assets/moderationlink.png)
 
 ## Self-Registration {#self-registration}
 
@@ -211,7 +212,9 @@ After logging out, it is possible to create a new user registration.
 * Select `Log In`
 * Select `Sign up for a new account`
 
-![chlimage_1-43](assets/chlimage_1-43.png) ![chlimage_1-44](assets/chlimage_1-44.png)
+![registration](assets/registration.png) 
+
+![signup](assets/signup.png)
 
 By default, the email address is the login id. If unchecked, the visitor is able to enter their own login id (user name). The user name must be unique in the publish environment.
 
@@ -219,9 +222,9 @@ After specifying the user's name, email, and password, selecting `Sign Up` will 
 
 Once signed in, the first page presented is their `Profile` page, which they can personalize.
 
-![chlimage_1-45](assets/chlimage_1-45.png)
+![profile](assets/profile.png)
 
 If the member forgets their login id, it is possible to recover is using their email address.
 
-![chlimage_1-46](assets/chlimage_1-46.png)
+![forgotusername](assets/forgotusername.png)
 

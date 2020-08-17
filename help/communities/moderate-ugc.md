@@ -32,7 +32,7 @@ Moderation of UGC is useful for recognizing positive contributions as well as li
 
 * [Community content storate](working-with-srp.md)
 
-* [bulk moderation console](moderation.md)
+* [Bulk moderation console](moderation.md)
 
   The Moderation console is accessible by administrators and [community moderators](/help/communities/users.md) in the public environment as well as by administrators in the author environment. This is possible when community content is stored in a [common store](/help/communities/working-with-srp.md).
 
@@ -151,11 +151,15 @@ It is possible for an administrator or community moderator to move one or more f
 
 By selecting the Cut action, the content is copied to a clipboard. Multiple posts may be copied and moved as a group to the new location.
 
-![cutugc](assets/cutugc.png) ![putbackugc](assets/putbackugc.png)
+![cutugc](assets/cutugc.png) 
+
+![putbackugc](assets/putbackugc.png)
 
 At the other location, when content is present in the clipboard, a Paste button is visible next to New Post with a number identifying the number of posts that will be pasted. The Paste button includes an option to clear the clipboard instead of pasting.
 
-![chlimage_1-28](assets/chlimage_1-28.png) ![chlimage_1-29](assets/chlimage_1-29.png)
+![pasteugc](assets/pasteugc.png) 
+
+![pasteugc1](assets/pasteugc1.png)
 
 ### Deny {#deny}
 
@@ -258,7 +262,7 @@ The **sentimentprocess.name** may also be modified to reference the location of 
 
 To configure sentiment and watchwords:
 
-* Login to your author instance as administrator.
+* Log in to your author instance as an administrator.
 * Open [Web Console](https://localhost:4502/system/console/configMgr).
 * Locate `sentimentprocess.name`.
 * Select the configuration to open in edit mode.

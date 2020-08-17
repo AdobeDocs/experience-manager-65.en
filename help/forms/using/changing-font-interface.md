@@ -40,7 +40,7 @@ As an example, to change the font of the top navigation bar anchor text to Couri
 
        Update the /apps/ws/js/runtime/templates/appnavigation.html file as follows:
 
-       ```
+       ```jsp
        <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>
        <li class="todo"><a href="#/todo" title="<%= $.t('index.header.topnav.todo.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.todo.name')%></a></li>
        <li class="track"><a href="#/tracking" title="<%= $.t('index.header.topnav.tracking.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.tracking.name')%></a></li>
@@ -59,7 +59,7 @@ As an example, to change the font of the top navigation bar anchor text to Couri
 
        To add the font-family inline for the HTML element, add the following in the appnavigation.html file at /apps/ws/js/runtime/templates.
 
-       ```css
+       ```jsp
        <div id="topnav" class="myNewFontStyle">
            <ul>
                <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>

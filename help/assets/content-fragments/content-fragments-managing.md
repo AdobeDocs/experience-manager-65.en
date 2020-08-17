@@ -115,7 +115,7 @@ Select the fragment to reveal the toolbar with applicable actions:
 
 >[!NOTE]
 >
->Many of these are [standard actions for Assets](/help/assets/managing-assets-touch-ui.md) and/or the [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>Many of these are [standard actions for Assets](/help/assets/managing-assets-touch-ui.md) and/or the [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
 
 ## Opening the Fragment Editor {#opening-the-fragment-editor}
 
@@ -138,8 +138,6 @@ To open your fragment for editing:
    >[!NOTE]
    >
    >1. A message will be shown when the fragment is already referenced on a content page.
-   >
-   >
    >2. The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
 1. Navigate through the three modes using the icons in the side panel:

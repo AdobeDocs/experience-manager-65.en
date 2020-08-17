@@ -210,7 +210,7 @@ In addition to using the default functions in charts, you can write custom funct
 
 A function takes an array or values and a category name as inputs and returns a value. For example:
 
-```
+```javascript
 Multiply(valueArray, category) {
  var val = 1;
  _.each(valueArray, function(value) {

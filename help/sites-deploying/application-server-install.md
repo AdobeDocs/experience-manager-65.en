@@ -98,7 +98,7 @@ Before a deployment read the [General Description](#general-description) above.
 
 * Let Basic Auth Headers pass through:
 
-    * One way to let AEM to authenticate a user is to disable the global administrative security of the WebSphere server, to do so: go to Security -&gt; Global Security and uncheck the Enable administrative security checkbox, save and restart the server.
+  * One way to let AEM to authenticate a user is to disable the global administrative security of the WebSphere server, to do so: go to Security -&gt; Global Security and uncheck the Enable administrative security checkbox, save and restart the server.
 
 * set `"JAVA_OPTS= -Xmx2048m"`
 * If you want to install AEM using context root = / then you have first to change the context root of the existing Default web application
@@ -108,14 +108,14 @@ Before a deployment read the [General Description](#general-description) above.
 * Download AEM war file
 * Make your configurations In web.xml if needed (see above in the General Description)
 
-    * Unpack WEB-INF/web.xml file
-    * change sling.run.modes parameter to publish
-    * uncomment sling.home initial parameter and set this path as you need
-    * Repack web.xml file
+  * Unpack WEB-INF/web.xml file
+  * change sling.run.modes parameter to publish
+  * uncomment sling.home initial parameter and set this path as you need
+  * Repack web.xml file
 
 * Deploy AEM war file
 
-    * Choose a context root (if you want to set the sling run modes you need to select the detailed steps of the deploy wizard, then specify it in step 6 of the wizard)
+  * Choose a context root (if you want to set the sling run modes you need to select the detailed steps of the deploy wizard, then specify it in step 6 of the wizard)
 
 * Start AEM web application
 
@@ -153,12 +153,12 @@ This uses a simple Server Layout with only an Admin Server.
 
 * In `${myDomain}/config/config.xml`add to the security-configuration section:
 
-    * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` see on [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) for the correct position (per default to position it at the end of the section is ok)
+  * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` see on [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) for the correct position (per default to position it at the end of the section is ok)
 
 * Increase VM Memory settings:
 
-    * open `${myDomain}/bin/setDomainEnv.cmd` (resp .sh)search for WLS_MEM_ARGS, set e.g set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
-    * restart WebLogic Server
+  * open `${myDomain}/bin/setDomainEnv.cmd` (resp .sh)search for WLS_MEM_ARGS, set e.g set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+  * restart WebLogic Server
 
 * Create in `${myDomain}` a packages folder and inside a cq folder and in it a Plan folder
 
@@ -168,10 +168,10 @@ This uses a simple Server Layout with only an Admin Server.
 * Put the AEM war file into the ${myDomain}/packages/cq folder
 * Make your configurations In `WEB-INF/web.xml` if needed (see above in the General Description)
 
-    * Unpack `WEB-INF/web.xml`file
-    * change sling.run.modes parameter to publish
-    * uncomment sling.home initial parameter and set this path as you need (see General Description)
-    * Repack web.xml file
+  * Unpack `WEB-INF/web.xml`file
+  * change sling.run.modes parameter to publish
+  * uncomment sling.home initial parameter and set this path as you need (see General Description)
+  * Repack web.xml file
 
 * Deploy AEM war file as an Application, (for the other settings use the default settings)
 * The installation can take time...
@@ -184,67 +184,67 @@ Before a deployment read the [General Description](#general-description) above.
 
 * **Prepare Tomcat Server**
 
-    * Increase VM memory settings:
+  * Increase VM memory settings:
 
-        * In `bin/catalina.bat` (resp `catalina.sh` on unix) add the following setting:
-        * `set "JAVA_OPTS= -Xmx2048m`
+    * In `bin/catalina.bat` (resp `catalina.sh` on unix) add the following setting:
+    * `set "JAVA_OPTS= -Xmx2048m`
 
-    * Tomcat enables neither admin nor manager access at installation. Therefore you have to manually edit `tomcat-users.xml` to allow access for these accounts:
+  * Tomcat enables neither admin nor manager access at installation. Therefore you have to manually edit `tomcat-users.xml` to allow access for these accounts:
 
-        * Edit `tomcat-users.xml` to include access for admin and manager. The configuration should look similar to the following example:
-        * ```
-          <?xml version='1.0' encoding='utf-8'?>
-           <tomcat-users>
-           <role rolename="manager"/>
-           <role rolename="tomcat"/>
-           <role rolename="admin"/>
-           <role rolename="role1"/>
-           <role rolename="manager-gui"/>
-           <user username="both" password="tomcat" roles="tomcat,role1"/>
-           <user username="tomcat" password="tomcat" roles="tomcat"/>
-           <user username="admin" password="admin" roles="admin,manager-gui"/>
-           <user username="role1" password="tomcat" roles="role1"/>
-           </tomcat-users>
-          ```
+    * Edit `tomcat-users.xml` to include access for admin and manager. The configuration should look similar to the following example:
 
-    * If you like to deploy AEM with context root "/" then you have to change context root of the existing ROOT webapp:
+      ```xml
+      <?xml version='1.0' encoding='utf-8'?>
+      <tomcat-users>
+      role rolename="manager"/>
+      role rolename="tomcat"/>
+      <role rolename="admin"/>
+      <role rolename="role1"/>
+      <role rolename="manager-gui"/>
+      <user username="both" password="tomcat" roles="tomcat,role1"/>
+      <user username="tomcat" password="tomcat" roles="tomcat"/>
+      <user username="admin" password="admin" roles="admin,manager-gui"/>
+      <user username="role1" password="tomcat" roles="role1"/>
+      </tomcat-users>
+      ```
 
-        * Stop and undeploy ROOT webapp
-        * Rename ROOT.war folder in tomcat's webapps folder
-        * Start webapp again
+  * If you like to deploy AEM with context root "/" then you have to change context root of the existing ROOT webapp:
 
-    * If you install the AEM web application using the manager-gui then you need to increase the maximal size of an uploaded file, as the default only allows 50MB upload size. For that open the web.xml of the manager web application,
+    * Stop and undeploy ROOT webapp
+    * Rename ROOT.war folder in tomcat's webapps folder
+    * Start webapp again
+
+  * If you install the AEM web application using the manager-gui then you need to increase the maximal size of an uploaded file, as the default only allows 50MB upload size. For that open the web.xml of the manager web application,
 
       `webapps/manager/WEB-INF/web.xml`
 
-      and increase the max-file-size and max-request-size to at least 500MB, see the following `multipart-config` example of such a a `web.xml` file:
+      and increase the max-file-size and max-request-size to at least 500MB, see the following `multipart-config` example of such a a `web.xml` file.
 
-        ```
-          <multipart-config>
-           <!-- 500MB max -->
-           <max-file-size>524288000</max-file-size>
-           <max-request-size>524288000</max-request-size>
-           <file-size-threshold>0</file-size-threshold>
-           </multipart-config>
-        ```
+      ```xml
+      <multipart-config>
+      <!-- 500MB max -->
+      <max-file-size>524288000</max-file-size>
+      <max-request-size>524288000</max-request-size>
+      <file-size-threshold>0</file-size-threshold>
+      </multipart-config>
+      ```
 
 * **Deploy AEM web application**
 
-    * Download AEM war file
-    * Make your configurations In web.xml if needed (see above in the General Description)
+  * Download AEM war file
+  * Make your configurations In web.xml if needed (see above in the General Description)
 
-        * Unpack WEB-INF/web.xml file
-        * change sling.run.modes parameter to publish
-        * uncomment sling.home initial parameter and set this path as you need
-        * Repack web.xml file
+    * Unpack WEB-INF/web.xml file
+    * change sling.run.modes parameter to publish
+    * uncomment sling.home initial parameter and set this path as you need
+    * Repack web.xml file
 
-    * Rename AEM war file to ROOT.war if you like to deploy it as root webapp, rename it to e.g aemauthor.war if you like to have aemauthor as context root
-    * copy it into tomcat's webapps folder
-    * wait until AEM is installed
+  * Rename AEM war file to ROOT.war if you like to deploy it as root webapp, rename it to e.g aemauthor.war if you like to have aemauthor as context root
+  * copy it into tomcat's webapps folder
+  * wait until AEM is installed
 
 ## Troubleshooting {#troubleshooting}
 
 For information on dealing with issues that may come up during installation, see:
 
 * [Troubleshooting](/help/sites-deploying/troubleshooting.md)
-

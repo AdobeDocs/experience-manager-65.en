@@ -1250,12 +1250,12 @@ FormCalc is an XFA-specific language for creating e-form centric logic and calcu
   </tr>
   <tr>
    <td>console.println()</td>
-   <td>This acrobat API dumps the output to javascript console.</td>
+   <td>This acrobat API dumps the output toJavaScript console.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.alert()</td>
-   <td>This acrobat API sends out an alert message through javascript popup.</td>
+   <td>This acrobat API sends out an alert message throughJavaScript popup.</td>
    <td> </td>
   </tr>
   <tr>

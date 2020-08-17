@@ -49,11 +49,9 @@ To apply a workflow to an asset, follow these steps:
 
 1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
 1. (Optional) Specify a title for the workflow that can be used to refer the workflow's instance.
 
-   ![chlimage_1-255](assets/chlimage_1-51.png)
+   ![select workflow, provide a title and click start](assets/start-workflow.png)
 
 1. Click **[!UICONTROL Start]** and then click **[!UICONTROL Proceed]**. Each step of workflow is displayed in the timeline as an event.
 
@@ -61,17 +59,14 @@ To apply a workflow to an asset, follow these steps:
 
 ## Apply a workflow to multiple assets {#applying-a-workflow-to-multiple-assets}
 
-1. From the Assets console, navigate to the location of the assets for which you want to start a workflow, and select the assets. Select **[!UICONTROL Timeline]** from the menu to display the timeline.
+1. From the [!DNL Assets] console, navigate to the location of the assets for which you want to start a workflow, and select the assets. Select **[!UICONTROL Timeline]** from the menu to display the timeline.
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
-1. Click **[!UICONTROL Actions]** at the bottom.
-
-   ![chlimage_1-30](assets/chlimage_1-137.png)
-
+1. Click **[!UICONTROL Actions]** ![chevron up](assets/do-not-localize/chevron-up-icon.png) at the bottom.
 1. Click **[!UICONTROL Start Workflow]**. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
-   ![chlimage_1-31](assets/chlimage_1-138.png)
+   ![start workflow](assets/start-workflow.png)
 
 1. (Optional) Specify a title for the workflow, which can be used to reference the workflow instance.
 1. Click **[!UICONTROL Start]** and then click **[!UICONTROL Confirm]** in the dialog. The workflow runs on all the assets you selected.

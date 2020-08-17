@@ -38,7 +38,7 @@ Before you begin to install and configure data capture capability of AEM Forms, 
 * Hardware and software infrastructure is in place. For a detailed list of supported hardware and software, see [technical requirements](/help/sites-deploying/technical-requirements.md).
 
 * Installation path of the AEM instance does not contain white-spaces.
-* An AEM instance is up and running. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least two [AEM instances (one Author and one Publish)](/help/sites-deploying/deploy.md) to run AEM Forms data capture capabilities:
+* An AEM instance is up and running. For Windows users, install the AEM instance in elevated mode. In AEM terminology, an "instance" is a copy of AEM running on a server in the author or publish mode. You require at least two [AEM instances (one Author and one Publish)](/help/sites-deploying/deploy.md) to run AEM Forms data capture capabilities:
 
     * **Author**: An AEM instance used to create, upload, and edit content and to administer the website. Once content is ready to go live, it is replicated to the publish instance.
     * **Publish**: An AEM instance that serves the published content to the public over the internet or an internal network.
@@ -115,6 +115,24 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
 1. After the package is installed, you are prompted to restart the AEM instance. **Do not immediately restart the server.** Before stopping the AEM Forms server, wait until the ServiceEvent REGISTERED and ServiceEvent UNREGISTERED messages stop appearing in the `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` file and the log is stable.
 1. Repeat steps 1-7 on all the Author and Publish instances.
 
+### (Windows only) Automatic installation of Visual Studio redistributables {#automatic-installation-visual-studio-redistributables}
+
+If you install an AEM instance in elevated mode, the missing Visual Studio redistributables are installed automatically during the installation of AEM Forms add-on package.
+
+To evaluate if the Visual Studio redistributables are installed automatically, open the `error.log` file available at the `/crx-repository/logs/` directory. The logs include the following message:
+
+`Redist <service name> already installed on system, will not attempt re-installation`
+
+If the redistributables fail to install, the logs include the following message:
+
+`Current user does not have elevated privileges, aborting installation of redist <service name>`
+
+To resolve the issue, restart the AEM server, install AEM in elevated mode, and then install the AEM Forms add-on package.
+
+If the privilege check fails, the logs include the following message:
+
+`Privilege escalation check failed with error: <error message>`
+
 ## Post-installation configurations {#post-installation-configurations}
 
 AEM Forms has a few mandatory and optional configurations. The mandatory configurations include configuring BouncyCastle libraries and serialization agent. The optional configurations include configuring dispatcher, Forms portal, Adobe Sign, Adobe Analytics, and Adobe Target.
@@ -132,7 +150,7 @@ Perform the following steps on all the Author and Publish instances to boot dele
 
 1. Add the following properties to the sling.properties file:
 
-   ```
+   ```shell
    sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
    sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
    ```

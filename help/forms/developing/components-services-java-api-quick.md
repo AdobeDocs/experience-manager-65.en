@@ -47,7 +47,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following Java example deploys a component that is based on a JAR file named *adobe-emailSample-dsc.jar*.
 
-```as3
+```java
  /* 
         * This Java Quick Start uses the following JAR files 
         * 1. adobe-taskmanager-client.jar 
@@ -149,7 +149,7 @@ The following Java example deploys a component that is based on a JAR file named
 
 The following Java code example sets the Run-As Invoker execution context to an example service named *EncryptDocument*.
 
-```as3
+```java
  /* 
         * This Java Quick Start uses the following JAR files 
         * 1. adobe-taskmanager-client.jar 
@@ -241,7 +241,7 @@ The following Java code example sets the Run-As Invoker execution context to an 
 
 The following Java code example disables security from the example EncryptDocument service and the services that are invoked from within this service (the Set Value and Encryption services).
 
-```as3
+```java
  /* 
         * This Java Quick Start uses the following JAR files 
         * 1. adobe-taskmanager-client.jar 
@@ -354,7 +354,7 @@ The following Java code example disables security from the example EncryptDocume
 
 The following Java code example starts a service named *SendEmailService*.
 
-```as3
+```java
  package com.adobe.sample.servicemanager; 
   
  /** 
@@ -412,7 +412,7 @@ The following Java code example starts a service named *SendEmailService*.
 
 The following Java example modifies configuration values that belong to SendEmail Service.
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the following JAR files 
         * 1. adobe-taskmanager-client.jar 
@@ -524,7 +524,7 @@ The following Java example modifies configuration values that belong to SendEmai
 
 The following Java code example removes a component by using the Java API.
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the following JAR files 
      * 1. adobe-taskmanager-client.jar 

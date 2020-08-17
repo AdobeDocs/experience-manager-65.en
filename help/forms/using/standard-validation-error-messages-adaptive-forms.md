@@ -29,7 +29,7 @@ This article describes the standard format for the validation error messages and
 
 The adaptive forms display the errors at field-level if the server validation error messages are in the following standard format:
 
-``` javascript
+```javascript
    {
     errorCausedBy : "SERVER_SIDE_VALIDATION/SERVICE_INVOCATION_FAILURE"
     errors : [
@@ -84,7 +84,7 @@ Execute the following steps to add custom error handler on adaptive form submiss
 
 The following is a sample code to convert a custom error structure to the standard error structure:
 
-``` javascript
+```javascript
 var data = $event.data;
 var som_map = {
     "id": "guide[0].guide1[0].guideRootPanel[0].Pet[0].id_1[0]",
@@ -142,14 +142,14 @@ As a result of this rule, the values that you enter for **Name**, **ID**, and **
 1. Tap **[!UICONTROL Edit Code]**.
 1. Delete the following line from the existing code:
 
-    ``` javascript
+    ```javascript
     guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
     ```
 
 1. Write a rule to convert custom error structure to the standard error structure and tap **[!UICONTROL Done]** to save the rule.
     For example, add the following sample code at the end to convert a custom error structure to the standard error structure:
 
-    ``` javascript
+    ```javascript
     var errorHandler = function(jqXHR, data) {
     var som_map = {
         "id": "guide[0].guide1[0].guideRootPanel[0].Pet[0].id_1[0]",
@@ -195,7 +195,7 @@ As a result of this rule, the values that you enter for **Name**, **ID**, and **
 
     Ensure that you copy the following line of the sample code to the custom error handler:
 
-    ``` javascript
+    ```javascript
     guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, null, errorHandler);
     ```
 

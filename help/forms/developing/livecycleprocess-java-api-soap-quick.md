@@ -37,7 +37,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following Java code example searches for process instances that are based on the *MortgageLoan - Prebuilt* process.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -155,7 +155,7 @@ The following Java code example searches for process instances that are based on
 
 The following Java code example suspends a process instance. To successfully suspend a process instance, you require the process invocation identifier that can be obtained when invoking a long-lived process by using the Invocation API.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -247,7 +247,7 @@ The following Java code example suspends a process instance. To successfully sus
 
 The following Java code example starts a suspended process instance.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -335,7 +335,7 @@ The following Java code example starts a suspended process instance.
 
 The following Java code example terminates a process instance with the identifier value of 756c22860a242fb101ec7a5bc0977fd6.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -426,7 +426,7 @@ The following Java code example terminates a process instance with the identifie
 
 The following Java code purges data from a process named *SecureDocument*. A filter is used that specifies to purge data for those process instances where the process variable named *inValue* is greater than 200.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -533,7 +533,7 @@ The following Java code purges data from a process named *SecureDocument*. A fil
 
 The following code example retrieves the status of 10 AEM Forms jobs.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

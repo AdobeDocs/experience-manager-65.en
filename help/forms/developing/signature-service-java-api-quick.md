@@ -43,7 +43,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following Java code example adds a signature field named *SignatureField1* to a PDF document that is based on a PDF file named*Loan.pdf*. The PDF document that contains the new signature field is saved as a PDF file named *LoanSig.pdf*. (See [Adding Signature Fields](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -159,7 +159,7 @@ The following Java code example adds a signature field named *SignatureField1* t
 
 The following Java code example retrieves the names of signature fields located in a PDF document named *LoanSig.pdf*. (See [Retrieving Signature Field Names](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -265,7 +265,7 @@ The following Java code example retrieves the names of signature fields located 
 
 The following Java code example modifies a signature field named SignatureField1 by locking all fields in the form when a signature is applied to the signature field and ensuring that no changes are allowed. After the Signature service returns the PDF document that contains the modified signature field, the PDF document is saved as a PDF file named LoanSig.pdf. (This example overwrites the PDF file that is passed to the Signature service.) (See [Modifying Signature Fields](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -393,7 +393,7 @@ The following Java code example modifies a signature field named SignatureField1
 
 The following Java code example digitally signs a PDF document that is based on a PDF file named *LoanSig.pdf*. The alias that is specified for the security credential is secure, and revocation checking is performed. Because no CRL or OCSP server information is specified, the server information is obtained from the certificate used to digitally sign the PDF document. The signed document is saved as a PDF file named *LoanSigned.pdf*. (See [Digitally Signing PDF Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -542,7 +542,7 @@ The following Java code example digitally signs a PDF document that is based on 
 
 The following Java code example signs an interactive form that is rendered by the Forms service. The `com.adobe.idp.Document` instance that is returned by the Forms service is passed to the Signature service. The signed interactive form is saved as a PDF file named *LoanXFASigned.pdf*.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -754,7 +754,7 @@ The following Java code example signs an interactive form that is rendered by th
 
 The following Java code example certifies a PDF document that is based on a PDF file named *LoanSig.pdf*. The alias that is specified for the security credential is secure, and revocation checking is not performed. The certified document is saved as a PDF file named *LoanCertified.pdf*. (See [Certifying PDF Documents](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -903,7 +903,7 @@ The following Java code example certifies a PDF document that is based on a PDF 
 
 The following Java code example verifies a digital signature that is located in a signed PDF document that is based on a PDF file named LoanSigned.pdf. The verification time is set to current time and the revocation checking option is set to best effort. (See [Verifying Digital Signatures](#verifying-digital-signatures).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-signatures-client.jar
@@ -1067,7 +1067,7 @@ The following Java code example verifies a digital signature that is located in 
 
 The following Java code example verifies multiple digital signatures that are located in a signed PDF document that is based on a PDF file named LoanAllSigs.pdf. The verification time is set to current time and the revocation checking option is set to best effort. (See [Verifying Multiple Digital Signatures](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1229,7 +1229,7 @@ The following Java code example verifies multiple digital signatures that are lo
 
 The following Java code example removes a digital signature from a signature field named *SignatureField1*. The name of the PDF file that contain the signature field is *LoanSigned.pdf*. (See [Removing Digital Signatures](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

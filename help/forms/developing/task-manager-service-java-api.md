@@ -43,7 +43,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following Java code example assigns a task to a user named Tony Blue.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -176,7 +176,7 @@ The following Java code example assigns a task to a user named Tony Blue.
 
 The following Java code example locks a task that corresponds to the task identifier value of 2.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -265,7 +265,7 @@ The following Java code example locks a task that corresponds to the task identi
 
 The following Java code example retrieves all tasks that are assigned to a user named *tony blue*. Notice that this user is specified in the connection properties. Information about returned tasks, such as its identifier value and description, is displayed.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -391,7 +391,7 @@ The following Java code example retrieves all tasks that are assigned to a user 
 
 The following Java code example retrieves form data from a task with the identifier value of 304. Form data is written to an XML file named *FormData.xml* located at C:\Adobe.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -497,7 +497,7 @@ The following Java code example retrieves form data from a task with the identif
 
 The following Java code example updates a form with data that is located in the *FormData.xml* file.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -607,7 +607,7 @@ The following Java code example updates a form with data that is located in the 
 
 The following Java code example retrieves file attachments. Each file attachment is saved as a TXT file.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -711,7 +711,7 @@ The following Java code example retrieves file attachments. Each file attachment
 
 The following Java code example retrieves all tasks that are based on a process named *MortgageLoan - Prebuilt*. The status of each returned task is checked to ensure that it is a completed task. Information such as the name of the user who completed the task and the date that the task was completed is retrieved and displayed.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar

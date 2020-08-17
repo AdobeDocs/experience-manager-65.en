@@ -1,6 +1,6 @@
 ---
-title: Lightbox as your personal image gallery in Adobe Experience Manager Assets.
-description: Learn about Lightbox as your personal image gallery in Adobe Experience Manager Assets.
+title: Lightbox as your personal image gallery in [!DNL Adobe Experience Manager Assets].
+description: Learn about Lightbox as your personal image gallery in Adobe Experience Manager Assets].
 contentOwner: AG
 ---
 
@@ -8,11 +8,11 @@ contentOwner: AG
 
 Lightbox is a special type of collection that provides easy access to assets. You can quickly access Lightbox to add or delete assets. It serves as your personal image gallery.
 
-If you are an Adobe Experience Manager Assets user, Lightbox is automatically created when you first log in to the application. It is exclusive to your login. Other users cannot access your Lightbox.
+If you are an [!DNL Adobe Experience Manager Assets] user, Lightbox is automatically created when you first log in to the application. It is exclusive to your login. Other users cannot access your Lightbox.
 
 ## Add assets to lightbox {#adding-assets-to-lightbox}
 
-1. From the Assets user interface, select the assets that you want to add to Lightbox.
+1. From the [!DNL Assets] user interface, select the assets that you want to add to Lightbox.
 1. Drag the assets to the **[!UICONTROL Drop in Lightbox]** zone. Release when the drop-zone becomes active, and its label changes to **[!UICONTROL Drop to Add]**.
 
    ![add_to_lightbox](assets/add_to_lightbox.png)

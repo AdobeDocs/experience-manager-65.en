@@ -45,7 +45,7 @@ The default cache settings for AEM Forms may not be good enough to achieve optim
 
 For optimal performance, it is recomended to use the following JVM `init` arguments to configure the `Java heap` and `PermGen`.
 
-```java
+```shell
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xmx8192m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:PermSize=256m
@@ -78,7 +78,7 @@ Apache can communicate to CRX using the HTTP protocol. The configurations are fo
 
 1. Uncomment the following module configurations in `APACHE_HOME/conf/httpd.conf` file.
 
-   ```java
+   ```shell
    LoadModule proxy_balancer_module modules/mod_proxy.so
    LoadModule proxy_balancer_module modules/mod_proxy_http.so
    LoadModule deflate_module modules/mod_deflate.so
@@ -91,7 +91,7 @@ Apache can communicate to CRX using the HTTP protocol. The configurations are fo
 1. Configure the proxy on port 4502 of crx.
    Add following configuration in `APACHE_HOME/conf/httpd.conf` configuration file.
 
-   ```java
+   ```shell
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
@@ -100,7 +100,7 @@ Apache can communicate to CRX using the HTTP protocol. The configurations are fo
 
    **For HTML5 forms**
 
-   ```java
+   ```xml
    <Location /content/xfaforms>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
@@ -117,7 +117,7 @@ Apache can communicate to CRX using the HTTP protocol. The configurations are fo
 
    **For adaptive forms**
 
-   ```java
+   ```xml
    <Location /content/forms/af>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE

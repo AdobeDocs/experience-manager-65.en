@@ -62,7 +62,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Click **[!UICONTROL Pause]** beside progress bar that appears when an upload starts.
 
-   ![Upload assets progress bar](assets/chlimage_1-5.png)
+   ![Upload assets progress bar](assets/upload-progress-bar.png)
 
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
@@ -72,7 +72,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    When you click **[!UICONTROL Pause]**, it toggles to the **[!UICONTROL Play]** option. To resume uploading, click **[!UICONTROL Play]**.
 
-   ![Resume the paused asset upload](assets/chlimage_1-6.png)
+   ![Resume the paused asset upload](assets/resume-paused-upload.png)
 
    To cancel an ongoing upload, click close (`X`) next to the progress bar. When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset.
 
@@ -86,7 +86,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotate or crop) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with number `1` appended to its name.
 
-   ![Name Conflict dialog to resolve assets name conflict](assets/chlimage_1-7.png)
+   ![Name Conflict dialog to resolve assets name conflict](assets/resolve-naming-conflict.png)
 
    >[!NOTE]
    >
@@ -100,7 +100,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
    >
    >The [!UICONTROL Duplicates Detected] dialog appears only when the duplicate detection feature is enabled. To enable the duplicate detection feature, see [Enable Duplicate Detection](/help/assets/duplicate-detection.md).
 
-   ![Duplicate Asset Detected dialog](assets/chlimage_1-8.png)
+   ![Duplicate Asset Detected dialog](assets/duplicate-asset-detected.png)
 
    To retain the duplicate asset in [!DNL Assets], click **[!UICONTROL Keep]**. To delete the duplicate asset you uploaded, click **[!UICONTROL Delete]**.
 
@@ -115,7 +115,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    Do not include special characters in the extensions of asset filenames.
 
-   ![Upload progress dialog shows status of successfully uploaded files and files that fail to upload](assets/chlimage_1-10.png)
+   ![Upload progress dialog shows status of successfully uploaded files and files that fail to upload](assets/bulk-upload-progress.png)
 
    In addition, the [!DNL Assets] user interface displays the most recent asset that you upload or the folder that you created first.
 
@@ -327,11 +327,7 @@ To preview an asset, follow these steps.
 
 1. In the preview mode, zoom options are available for [supported Image types](/help/assets/assets-formats.md#supported-raster-image-formats) (with interactive editing).
 
-   To zoom into an asset, click `+` (or click the magnifying glass on the asset). To zoom out, click `-`. When you zoom in, you can look closely at any area of the image by panning. The reset zoom arrow brings you back to the original view.
-
-   Click **[!UICONTROL Reset]** to reset the view to the original size.
-
-   ![Reset to bring user back to original view](assets/chlimage_1-11.png)
+   To zoom into an asset, click `+` (or click the magnifying glass on the asset). To zoom out, click `-`. When you zoom in, you can look closely at any area of the image by panning. The reset zoom arrow brings you back to the original view. To reset the view to the original size, click **[!UICONTROL Reset]** ![Reset view](assets/do-not-localize/revert.png).
 
 **Preview assets using keyboard keys only**
 
@@ -372,15 +368,11 @@ To preview an asset using keyboard, follow these steps:
 
 1. To schedule a particular date/time for the activation of the asset, use the date picker beside the **[!UICONTROL On Time]** field.
 
-   ![Date time picker or use keyboard keys in On Time field to add date and time for asset activation](assets/schedule-activation.png)
+   ![Date time picker or use keyboard keys in On Time field to add date and time for asset activation](assets/datepicker.png)
 
-   *Figure: Schedule asset activation.*
+   *Figure: Use the date picker to schedule asset activation.*
 
 1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the [!DNL Assets] web interface or through the HTTP API.
-
-   ![Date time picker or use keyboard keys in Off Time field to add date and time for asset de-activation](assets/schedule-deactivation.png)
-
-   *Figure: Schedule asset deactivation.*
 
 1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in [!DNL Experience Manager]. [!DNL YouTube] requires tags to publish. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
 
@@ -419,8 +411,7 @@ A few attributes that are unique to a particular copy of an asset are not carrie
 
 The other properties and metadata information is retained. A partial copy is not created when copying an asset.
 
-1. In [!DNL Assets] interface, select one or more assets and click **[!UICONTROL Copy]** from the toolbar. Alternatively, select the **[!UICONTROL Copy]** quick action from the asset card.
- ![Copy option in toolbar in Assets interface](assets/copy_icon.png)
+1. In [!DNL Assets] interface, select one or more assets and click **[!UICONTROL Copy]** from the toolbar. Alternatively, select the **[!UICONTROL Copy]** ![Copy option in toolbar in Assets interface](assets/do-not-localize/copy_icon.png) quick action from the asset card.
 
    >[!NOTE]
    >
@@ -432,10 +423,7 @@ The other properties and metadata information is retained. A partial copy is not
    >
    >If you copy an asset at the same location, [!DNL Experience Manager] automatically generates a variation of the name. For example, if you copy an asset titled `Square`, [!DNL Experience Manager] automatically generates the title for its copy as `Square1`.
 
-1. Click the **[!UICONTROL Paste]** asset option from the toolbar.
-
-   ![Paste option in Assets toolbar](assets/chlimage_1-14.png)
-   [!DNL Assets] are then copied to this location.
+1. Click the **[!UICONTROL Paste]** ![Paste option in Assets toolbar](assets/do-not-localize/paste.png) asset option from the toolbar. Assets are then copied to this location.
 
    >[!NOTE]
    >
@@ -446,7 +434,7 @@ The other properties and metadata information is retained. A partial copy is not
 1. Navigate to the location of the asset you want to move.
 
 1. Select the asset, and click **[!UICONTROL Move]** option from the toolbar.
-![Move option in Assets toolbar](assets/move_icon.png)
+![Move option in Assets toolbar](assets/do-not-localize/move.png)
 
 1. In the [!UICONTROL Move Assets] wizard, do one of the following:
 
@@ -482,10 +470,7 @@ The other properties and metadata information is retained. A partial copy is not
 
 1. You can add or remove renditions for an asset, except the original. Navigate to the location of the asset for which you want to add or remove renditions.
 
-1. Click the asset to open its asset page.
-
-   ![Assets Detail page to manage renditions](assets/chlimage_1-15.png)
-
+1. Click the asset to open its page.
 1. In the Experience Manager interface, select **[!UICONTROL Renditions]** from the list.
 
    ![Left rail to open menu and select Renditions option](assets/renditions_menu.png)
@@ -502,15 +487,11 @@ The other properties and metadata information is retained. A partial copy is not
 
    **Delete a rendition**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** option from the toolbar. Renditions cannot be deleted in bulk after asset processing is complete. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can customize Experience Manager to delete either specific renditions or delete the assets and re-upload the deleted assets.
-
-   ![Option to delete a rendition](assets/delete_renditionicon.png)
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** ![Option to delete a rendition](assets/do-not-localize/deleteoutline.png) option from the toolbar. Renditions cannot be deleted in bulk after asset processing is complete. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can customize Experience Manager to delete either specific renditions or delete the assets and re-upload the deleted assets.
 
    **Upload a new rendition**
 
-   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** option in the toolbar to upload a new rendition for the asset.
-
-   ![Add Rendition option to upload new rendition](assets/chlimage_1-16.png)
+   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** ![Add rendition option to upload new rendition](assets/do-not-localize/add.png) option in the toolbar to upload a new rendition for the asset.
 
    >[!NOTE]
    >
@@ -522,7 +503,7 @@ The other properties and metadata information is retained. A partial copy is not
 
    Similarly, you can customize the Annotation page image by overlaying `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![Overlay renditionpicker node in CRXDE to customize Annotation page image](assets/chlimage_1-17.png)
+   ![Overlay renditionpicker node in CRXDE to customize Annotation page image](assets/renditionpicker-node-crxde.png)
 
    To configure rendition dimensions for a video asset, navigate to the `videopicker` node in the CRX repository at the location `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, overlay the node, and then edit the appropriate property.
 
@@ -534,17 +515,15 @@ For more information about generating and viewing subassets, see [manage subasse
 
 ## Delete assets {#deleting-assets}
 
-To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset.
+To delete assets, a user requires delete permissions on `dam/asset`. If you only have modify permissions, you can only edit the asset metadata and add annotations to the asset. However, you cannot delete the asset or its metadata.
 
-Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
+To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. To disallow users from deleting referenced assets and leaving broken links, disable the force delete option using an overlay, .
 
 1. Navigate to the location of the asset(s) you want to delete.
 
-1. Select the asset, and click **[!UICONTROL Delete]** from the toolbar.
+1. Select the asset, and click **[!UICONTROL Delete]** ![Delete option](assets/do-not-localize/deleteoutline.png) from the toolbar.
 
-   ![Delete option](assets/delete_icon.png)
-
-1. In the confirmation dialog, click:
+1. In the confirmation dialog, select one of the following options:
 
     * **[!UICONTROL Cancel]** to stop the action
     * **[!UICONTROL Delete]** to confirm the action:
@@ -554,11 +533,8 @@ Also, disable the force delete button using an overlay, to disallow users from d
 
    >[!NOTE]
    >
-   >To delete assets, a user requires delete permissions on `dam/asset`. If you only have modify permissions, you can only edit the asset metadata and add annotations to the asset. However, you cannot delete the asset or its metadata.
-
-   >[!NOTE]
-   >
-   >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
+   >* To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
+   >* It is possible to delete a *folder* that contains checked-out asset files. Before deleting a folder, ensure that no digital assets are checked-out by users.
 
 ## Download assets {#downloading-assets}
 
@@ -589,9 +565,7 @@ See [Download assets from Experience Manager](/help/assets/download-assets-from-
 
 1. Navigate to the location of the asset/asset folder you want to remove from the publish environment (unpublish).
 
-1. Select the asset/folder to unpublish, and click **[!UICONTROL Manage Publication]** option from the toolbar.
-
-   ![Manage Publication option](assets/manage_publication.png)
+1. Select the asset/folder to unpublish, and click **[!UICONTROL Manage Publication]** ![manage Publication option](assets/do-not-localize/globe-publication.png) option from the toolbar.
 
 1. Select the **[!UICONTROL Unpublish]** action from the list.
 
@@ -676,29 +650,24 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
     * Click **[!UICONTROL Edit]** option that displays on an asset in the card view.
     * Click **[!UICONTROL Edit]** from the toolbar.
 
-   ![Edit option in toolbar](assets/edit_icon.png)
+   ![Edit option in toolbar](assets/do-not-localize/edit_icon.png)
 
-1. To crop the image, click **[!UICONTROL Crop]** ![Option to crop an image](assets/chlimage_1-22.png).
+1. To crop the image, click **[!UICONTROL Crop]** ![Option to crop an image](assets/do-not-localize/crop.png).
 
 1. Select the desired option from the list. The crop area appears on the image based on the option you choose. The **Free Hand** option lets you crop the image without any aspect ratio restrictions.
 
-   ![Crop options](assets/chlimage_1-23.png)
+   ![Crop options](assets/crop-options.png)
 
 1. Select the area to be cropped, and resize or reposition it on the image.
 
-1. Use the **Undo** and **Redo** options to revert to the uncropped image or retain the cropped image, respectively.
+1. Use the **[!UICONTROL Undo]** ![undo toolbar option](assets/do-not-localize/undo.png) and **[!UICONTROL Redo]** ![redo toolbar option](assets/do-not-localize/redo.png) options to revert to the uncropped image or retain the cropped image, respectively.
+1. Click the appropriate **[!UICONTROL Rotate]** option to rotate the image clockwise or anti-clockwise.
 
-   ![Undo and redo options](assets/chlimage_1-25.png)
+   ![Clockwise and anti-clockwise rotate options](assets/do-not-localize/rotate-options.png)
 
-1. Click the appropriate **Rotate** option to rotate the image clockwise or anti-clockwise.
+1. Click the appropriate **[!UICONTROL Flip]** options to flip the image horizontally ![reflect horizontal option](assets/do-not-localize/flip-horizontal.png) or vertically ![reflect vertical option](assets/do-not-localize/flip-vertical.png).
 
-   ![Clockwise and anti-clockwise rotate options](assets/chlimage_1-26.png)
-
-1. Click the appropriate **Flip** option to flip the image horizontally or vertically.
-
-   ![options to flip an image horizontally or vertically](assets/chlimage_1-27.png)
-
-1. Click **Finish** ![Finish option](assets/chlimage_1-24.png) to complete the image editing. Clicking **Finish** also starts the regeneration of renditions.
+1. To complete the image editing, click **[!UICONTROL Finish]** ![Finish option](assets/do-not-localize/check-ok-done-icon.png). Clicking **Finish** also starts the regeneration of renditions.
 
 >[!NOTE]
 >
@@ -742,23 +711,23 @@ Video annotations are only supported on browsers with HTML5-compatible video for
     * [Quick actions](/help/assets/managing-assets-touch-ui.md#quick-actions)
     * From the toolbar after selecting the asset or navigating to the asset page
 
-   ![Annotate option](assets/chlimage_1-29.png)
+   ![Annotate option](assets/annotate-option.png)
 
 1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
 
-   ![Comment box in Add Annotation dialog](assets/chlimage_1-30.png)
+   ![Comment box in Add Annotation dialog](assets/annotation-comment-box.png)
 
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
 
+   ![Specify user's email address and add comment to notify user](assets/annotation-add-user-email.png)
+
    >[!NOTE]
    >
-   >For a non-administrator user, suggestions appear only if the user has Read permissions at */home* in Crx-de.
-
-   ![Specify user's email address and add comment to notify user](assets/chlimage_1-31.png)
+   >For a non-administrator user, the suggestions appear only if the user has read permissions at `/home` path in CRXDE.
 
 1. After adding the annotation, click **[!UICONTROL Add]** to save it. A notification for the annotation is sent to Aaron.
 
-   ![Add button to save an annotation](assets/chlimage_1-32.png)
+   ![Add button to save an annotation](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -789,15 +758,15 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 1. In the Experience Manager interface, choose **[!UICONTROL Timeline]**.
 
-   ![Options available in Experience Manager](assets/chlimage_1-35.png)
+   ![Timeline option available in Experience Manager](assets/view-timeline.png)
 
 1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
 
-   ![Show All list in Timeline](assets/chlimage_1-36.png)
+   ![Show All list in Timeline](assets/timeline-show-all-option.png)
 
    Click a comment in the **[!UICONTROL Timeline]** panel to view the corresponding annotation on the image.
 
-   ![Timeline panel to view annotation on image](assets/chlimage_1-37.png)
+   ![Timeline panel to view annotation on image](assets/timeline-view-annotations.png)
 
    Click **[!UICONTROL Delete]**, to delete a particular comment.
 
@@ -817,15 +786,13 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
 1. To print specific annotations, select the annotations from the timeline.
 
-   ![Select an annotation from Timeline to print it](assets/chlimage_1-38.png)
+   ![Select an annotation from Timeline to print it](assets/timeline-select-annotations.png)
 
    To print the review status only, select it from the timeline.
 
-   ![To print only the review status of Annotation select it from the Timeline](assets/chlimage_1-39.png)
-
 1. Click **[!UICONTROL Print]** from the toolbar.
 
-   ![Print option in toolbar](assets/chlimage_1-40.png)
+   ![Print option in toolbar](assets/do-not-localize/print.png)
 
 1. From the Print dialog, choose the position you want the annotations/review status to be displayed on the PDF. For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. It is selected by default.
 
@@ -839,11 +806,9 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
 1. Click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
 
-   ![Annotation and review status on generated PDF](assets/chlimage_1-42.png)
+   ![Annotation and review status on generated PDF](assets/annotation-status-pdf.png)
 
-1. Download or print the PDF using the options at the top-right.
-
-   ![Download and Print options on PDF](assets/chlimage_1-43.png)
+1. Download ![Download option for PDF](assets/do-not-localize/download.png) or print ![print options on PDF](assets/do-not-localize/print.png) the PDF using the options at the top-right.
 
    >[!NOTE]
    >
@@ -851,7 +816,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
    To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![Configuration to print asset annotaion on PDF document](assets/chlimage_1-44.png)
+   ![Configuration to print asset annotation on PDF document](assets/annotation-print-pdf-config.png)
 
    Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
 
@@ -861,7 +826,7 @@ If an asset includes annotations in foreign languages (especially non-latin lang
 1. To configure CQ-DAM-Handler-Gibson Font Manager Service, do one of the following:
 
     * In the System Fonts directory option, specify the complete path to the fonts directory on your system. For example, if you're a Mac user, you can specify the path as */Library/Fonts* in the System Fonts directory option. [!DNL Experience Manager] fetches the fonts from this directory.
-    * Create a directory named `fonts` inside the ``crx-quickstart`` folder. CQ-DAM-Handler-Gibson Font Manager Service automatically fetches the fonts at the location `crx-quickstart/fonts`. You can override this default path from within the Adobe Server Fonts directory option.
+    * Create a directory named `fonts` inside the `crx-quickstart` folder. CQ-DAM-Handler-Gibson Font Manager Service automatically fetches the fonts at the location `crx-quickstart/fonts`. You can override this default path from within the Adobe Server Fonts directory option.
 
     * Create a new folder for fonts in your system, and store the desired fonts in the folder. Then, specify the complete path to that folder in the Customer Fonts directory option.
 

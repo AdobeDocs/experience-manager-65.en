@@ -84,7 +84,7 @@ For detailed information about Code Signing and adding devices to the iOS Provis
 1. Ensure that the same signature is selected for **Debug**, **Release**, and **Any iOS SDK**.
 1. Replace the following code in the `AEM Forms-info.plist` file:
 
-   ```java
+   ```xml
    <key>NSAppTransportSecurity</key>
    <dict>
    <key>NSAllowsArbitraryLoads</key>
@@ -94,7 +94,7 @@ For detailed information about Code Signing and adding devices to the iOS Provis
 
    with the following while replacing `yourserver.com` with an appropriate host name for your server.
 
-   ```java
+   ```xml
    <key>NSAppTransportSecurity</key>
    <dict>
    <key>NSExceptionDomains</key>

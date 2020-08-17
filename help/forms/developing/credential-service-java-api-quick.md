@@ -33,7 +33,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following code example imports a credential based on a file named *cred.p12*. The alias value used to import the credential is `Secure`. (See [Importing Credentials by using the Trust Manager API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -134,7 +134,7 @@ The following code example imports a credential based on a file named *cred.p12*
 
 The following code example deletes a credential based on an alias value *secure*. (See [Deleting Credentials by using the Trust Manager API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

@@ -24,7 +24,7 @@ A profile contains various modules. The modules are formRuntime.jsp, config.jsp,
 
 ## formRuntime.jsp {#formruntime-jsp-br}
 
-The formRuntime.jsp modules contains references of the client libraries. It also depicts methods to extract locale information from the request and include the localized messages in the request. You can include own custom javascript libs or styles in the formRuntime.jsp.
+The formRuntime.jsp modules contains references of the client libraries. It also depicts methods to extract locale information from the request and include the localized messages in the request. You can include own customJavaScript libs or styles in the formRuntime.jsp.
 
 ## config.jsp {#config-jsp}
 

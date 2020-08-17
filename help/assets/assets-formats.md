@@ -129,9 +129,9 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 ## Supported camera raw {#supported-camera-raw}
 
-The Adobe Camera Raw library enables Assets to ingest raw images. See [Camera Raw support](camera-raw.md).
+The [!DNL Adobe Camera Raw] library enables [!DNL Assets] to ingest raw images. See [Camera Raw support](camera-raw.md).
 
-## Supported Assets document formats {#supported-document-formats}
+## Supported [!DNL Assets] document formats {#supported-document-formats}
 
 Document formats supported for asset management features are as follows:
 
@@ -242,7 +242,7 @@ The applicability of common DAM workflows for a few other file formats is descri
 
 ## Supported MIME types {#supported-mime-types}
 
-By default, Experience Manager detects the file type using the file extension. Experience Manager can detect it from the contents of the files. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the Experience Manager Web Console.
+By default, [!DNL Experience Manager] detects the file type using the file extension. [!DNL Experience Manager] can detect it from the contents of the files. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the [!DNL Experience Manager] Web Console.
 
 A list of supported MIME types are available in CRXDE Lite at `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 

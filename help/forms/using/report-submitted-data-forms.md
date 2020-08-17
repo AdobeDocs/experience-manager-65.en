@@ -31,7 +31,7 @@ This API doesn't require additional parameters.
 
 The response object contains a JSON array that includes forms names and their repository path. The structure of the response is as follows:
 
-```
+```json
 [
  {formName: "<form name>",
  formPath: "<path to the form>" },
@@ -43,13 +43,13 @@ The response object contains a JSON array that includes forms names and their re
 
 **Request URL**
 
-```
+```http
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview
 ```
 
 **Response**
 
-```java
+```json
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
@@ -102,7 +102,7 @@ Specify the following parameters in the request URL:
 
 The response object contains a JSON array that includes details of the specified forms. The structure of the response is as follows:
 
-```
+```json
 {
  total: "<total number of submissions>",
  items: [{ formName: "<name of the form>", formPath: "<path to the form>", owner: "<owner of the form>"},
@@ -113,13 +113,13 @@ The response object contains a JSON array that includes details of the specified
 
 **Request URL**
 
-```
+```http
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSubmissions&formPath=/content/dam/formsanddocuments/forms-review/form2
 ```
 
 **Response**
 
-```java
+```json
 {"total":1,"items":[{"formName":"form2","formPath":"/content/dam/formsanddocuments/forms-review/form2","submitID":"1403037413508500","formType":"af","jcr:lastModified":"2015-11-05T17:52:32.243+05:30","owner":"admin"}]}
 ```
 
@@ -144,7 +144,7 @@ Returns a comment ID on successful posting of a comment.
 
 **Request URL**
 
-```
+```http
 https://[host:'port'/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
 ```
 
@@ -170,7 +170,7 @@ Specify the following parameter in the request URL:
 
 The response object contains a JSON array that includes all comments associated with the specified submission ID. The structure of the response is as follows:
 
-```
+```json
 [{
  owner: "<name of the commenter>",
  comment: "<comment text>",
@@ -182,7 +182,7 @@ The response object contains a JSON array that includes all comments associated 
 
 **Request URL**
 
-```
+```http
 https://[host]:'port'/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
 ```
 
@@ -214,14 +214,14 @@ Returns a JSON object with information about the update posted.
 
 **Request URL**
 
-```
+```http
 https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop
 
 ```
 
 **Response**
 
-```java
+```json
 {"formName":"form2","owner":"admin","jcr:lastModified":1446727516593,"path":"/content/forms/fp/admin/submit/metadata/1403037413508500.html","submitID":"1403037413508500","status":"submitted"}
 ```
 

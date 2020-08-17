@@ -58,9 +58,6 @@ You can search for expired assets, including expired subassets in the Search pan
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
 1. Click [!DNL Experience Manager] logo to display the search panel.
-
-   ![chlimage_1-151](assets/chlimage_1-151.png)
-
 1. Click the **[!UICONTROL Expiry Status]** option to expand it.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
@@ -101,20 +98,15 @@ The [!DNL Assets] console can display various states for assets. Depending on th
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. Click **[!UICONTROL Publish]** from the toolbar. If you don't see **Publish** on the toolbar, click **[!UICONTROL More]** on the toolbar and locate **[!UICONTROL Publish]** option.
-
-   ![chlimage_1-156](assets/chlimage_1-156.png)
-
+1. Click **[!UICONTROL Publish]** from the toolbar. If you don't see **Publish** on the toolbar, click **[!UICONTROL More]** on the toolbar and locate **[!UICONTROL Publish]** ![publish option](assets/do-not-localize/publish-globe.png) option.
 1. Choose **[!UICONTROL Publish]** from the menu, and then close the confirmation dialog.
 1. Exit the selection mode. The publication status for the asset appears at the bottom of the asset thumbnail in the card view. In the list view, the Published column displays the time when the asset was published.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. To display its asset details page, in the [!DNL Assets] interface, select an asset and click **[!UICONTROL Properties]**.
+1. To display its asset details page, in the [!DNL Assets] interface, select an asset and click **[!UICONTROL Properties]** ![view properties](assets/do-not-localize/info-circle-icon.png).
 
-   ![chlimage_1-158](assets/chlimage_1-158.png)
-
-1. In the Advanced tab, set an expiration date for the asset from the **[!UICONTROL Expires]** field.
+1. In the [!UICONTROL Advanced] tab, set an expiration date for the asset from the **[!UICONTROL Expires]** field.
 
    ![set asset expiration date and time in Expires field](assets/asset-properties-advanced-tab.png)
 
@@ -131,10 +123,7 @@ The [!DNL Assets] console can display various states for assets. Depending on th
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. To search for assets based on their status, click **[!UICONTROL Search]** to display the Omnisearch bar.
-
-   ![chlimage_1-162](assets/chlimage_1-162.png)
-
+1. To search for assets based on their status, click **[!UICONTROL Search]** ![search option](assets/do-not-localize/search_icon.png) to display the Omnisearch bar.
 1. Press return and click [!DNL Experience Manager] to display the search panel.
 1. In the search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in [!DNL Assets].
 

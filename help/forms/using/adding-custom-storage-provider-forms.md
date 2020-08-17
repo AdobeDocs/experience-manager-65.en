@@ -198,8 +198,8 @@ You can use the below annotation to increase the service ranking for custom ID g
 
 To use the above annotation, imports the following to your project:
 
-```
+```java
 import org.apache.felix.scr.annotations.Properties;
- import org.apache.felix.scr.annotations.Property;
+import org.apache.felix.scr.annotations.Property;
 ```
 

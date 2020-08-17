@@ -3,6 +3,7 @@ cloud: experience-cloud
 product: experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Release Notes
+user-guide-description: Learn about the latest new features in AEM 6.5 in the release notes.
 ---
 
 # AEM 6.5 Release Notes {#release-notes}

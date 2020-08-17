@@ -41,7 +41,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following Java code example creates an application using the JAVA API.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -140,7 +140,7 @@ public class CreateApplicationVersion_SOAP {
 
 The following Java code example exports an application using the JAVA API.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -247,7 +247,7 @@ The following Java code example imports an application using the JAVA API.
 >
 >The Java API importApplication() replaces existing applications of the same name with newer application. To update an exsiting application, use API importApplication() in place of API updateApplication().
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -330,7 +330,7 @@ public class ImportLCA_SOAP {
 
 The following Java code example gets an application using the Java API.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -439,7 +439,7 @@ The following Java code example gets the applications using the Java API.
 
 **note**: Getting AEM Forms Application API, getApplications(), returns only deployed applications.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -534,7 +534,7 @@ public class GetApplications_SOAP {
 
 ## Quick Start (SOAP mode): Getting status of applications using Java API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -641,7 +641,7 @@ public class GetApplicationStatus_SOAP {
 
 The following Java code example is for prevewing AEM Forms and later application archive using the Java API.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -720,7 +720,7 @@ public class PreviewLCA_SOAP {
 
 The following Java code example is for deleting an application archive.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
