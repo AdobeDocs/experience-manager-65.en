@@ -175,7 +175,12 @@ Adobe recommends executing these instructions in sequence to successfully save a
 
 The Save as a Draft feature is not enabled, by default. Perform the following steps to enable the feature:
 
-1. Implement the [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) Service Provider Interface (SPI). The SPI enables you to save the draft version of the Interactive Communication to the database with a draft ID as the unique identifier.
+1. Implement the [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) Service Provider Interface (SPI).
+
+   The SPI enables you to save the draft version of the Interactive Communication to the database with a draft ID as the unique identifier. These instructions assume that you have prior knowledge on how to build an OSGi bundle using a Maven project.
+
+   For sample SPI implementation, see [Sample ccrDocumentInstance SPI implementation](#sample-ccrDocumentInstance-spi).
+1. Open `http://<hostname>:<port>/ system/console/bundles` and tap **[!UICONTROL Install/Update]** to upload the OSGi bundle. Verify that the status of the uploaded package displays as **Active**. Restart the server if the status of the package does not display as **Active**.
 1. Go to `https://'[server]:[port]'/system/console/configMgr`.
 1. Tap **[!UICONTROL Create Correspondence Configuration]**.
 1. Select **[!UICONTROL Enable Save Using CCRDocumentInstanceService]** and tap **[!UICONTROL Save]**.
@@ -203,3 +208,235 @@ After saving an Interactive Communication as a draft, you can retrieve it to con
 >[!NOTE]
 >
 >If you make any changes to the Interactive Communication after saving it as a draft, the draft version fails to open.
+
+### Sample ccrDocumentInstance SPI implementation {#sample-ccrDocumentInstance-spi}
+
+Implement the `ccrDocumentInstance` SPI to save an Interactive Communication as a draft. The following is a sample implementation of the `ccrDocumentInstance` SPI.
+
+   ```javascript
+
+   package Implementation;
+
+import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.exception.CCRDocumentException;
+import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.model.CCRDocumentInstance;
+import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.services.CCRDocumentInstanceService;
+import org.apache.commons.lang3.StringUtils;
+import org.osgi.service.component.annotations.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.*;
+
+
+@Component(service = CCRDocumentInstanceService.class, immediate = true)
+public class CCRDraftService implements CCRDocumentInstanceService {
+
+    private static final Logger logger = LoggerFactory.getLogger(CCRDraftService.class);
+
+    private HashMap<String, Object> draftDataMap = new HashMap<>();
+
+    @Override
+    public String save(CCRDocumentInstance ccrDocumentInstance) throws CCRDocumentException {
+        String documentInstanceName = ccrDocumentInstance.getName();
+        if (StringUtils.isNotEmpty(documentInstanceName)) {
+            logger.info("Saving ccrData with name : {}", ccrDocumentInstance.getName());
+            if (!CCRDocumentInstance.Status.SUBMIT.equals(ccrDocumentInstance.getStatus())) {
+                ccrDocumentInstance = mySQLDataBaseServiceCRUD(ccrDocumentInstance,null, "SAVE");
+            }
+        } else {
+            logger.error("Could not save data as draft name is empty");
+        }
+        return ccrDocumentInstance.getId();
+    }
+
+    @Override
+    public void update(CCRDocumentInstance ccrDocumentInstance) throws CCRDocumentException {
+        String documentInstanceName = ccrDocumentInstance.getName();
+        if (StringUtils.isNotEmpty(documentInstanceName)) {
+            logger.info("Saving ccrData with name : {}", documentInstanceName);
+            mySQLDataBaseServiceCRUD(ccrDocumentInstance, ccrDocumentInstance.getId(), "UPDATE");
+        } else {
+            logger.error("Could not save data as draft Name is empty");
+        }
+    }
+
+    @Override
+    public CCRDocumentInstance get(String id) throws CCRDocumentException {
+        CCRDocumentInstance cCRDocumentInstance;
+        if (StringUtils.isEmpty(id)) {
+            logger.error("Could not retrieve data as draftId is empty");
+            cCRDocumentInstance = null;
+        } else {
+            cCRDocumentInstance = mySQLDataBaseServiceCRUD(null, id,"GET");
+        }
+        return cCRDocumentInstance;
+    }
+
+    @Override
+    public List<CCRDocumentInstance> getAll(String userId, Date creationTime, Date updateTime,
+                                            Map<String, Object> optionsParams) throws CCRDocumentException {
+        List<CCRDocumentInstance> ccrDocumentInstancesList = new ArrayList<>();
+
+        HashMap<String, Object> allSavedDraft = mySQLGetALLData();
+        for (String key : allSavedDraft.keySet()) {
+            ccrDocumentInstancesList.add((CCRDocumentInstance) allSavedDraft.get(key));
+        }
+        return ccrDocumentInstancesList;
+    }
+
+    //The APIs call the service in the database using the following section.
+    private CCRDocumentInstance mySQLDataBaseServiceCRUD(CCRDocumentInstance ccrDocumentInstance,String draftId, String method){
+        if(method.equals("SAVE")){
+
+            String autoGenerateId = draftDataMap.size() + 1 +"";
+            ccrDocumentInstance.setId(autoGenerateId);
+            draftDataMap.put(autoGenerateId, ccrDocumentInstance);
+            return ccrDocumentInstance;
+
+        }else if (method.equals("UPDATE")){
+
+            draftDataMap.put(ccrDocumentInstance.getId(), ccrDocumentInstance);
+            return ccrDocumentInstance;
+
+        }else if(method.equals("GET")){
+
+            return (CCRDocumentInstance) draftDataMap.get(draftId);
+
+        }
+        return null;
+    }
+
+    private HashMap<String, Object> mySQLGetALLData(){
+        return draftDataMap;
+    }
+}
+   ```
+
+The `save`, `update`, `get`, and `getAll` operations call the database service to save an Interactive Communication as a draft, update an Interactive Communication, retrieve data from the database, and retrieve data for all Interactive Communications available in the database. This sample uses `mySQLDataBaseServiceCRUD` as the name of the database service.
+
+The following table explains the sample `ccrDocumentInstance` SPI implementation. It demonstrates how the `save`, `update`, `get`, and `getAll` operations call the database service in the sample implementation.
+
+<table> 
+ <tbody>
+ <tr>
+  <td><p><strong>Operation</strong></p></td>
+  <td><p><strong>Database service examples</strong></p></td> 
+   </tr>
+  <tr>
+   <td><p>You can either create a draft for an Interactive Communication or submit it directly. The API for the save operation checks if the Interactive Communication is submitted as a draft and it includes a draft name. The API then calls the mySQLDataBaseServiceCRUD service with Save as the input method.</p></br><img src="assets/save-as-draft-save-operation.png"/></td>
+   <td><p>The mySQLDataBaseServiceCRUD service verifies Save as the input method and generates an autogenerated draft ID and returns it to AEM. The logic to generate a draft ID can vary based on the database.</p></br><img src="assets/save-operation-service.png"/></td>
+   </tr>
+  <tr>
+   <td><p>The API for the update operation retrieves the status of Interactive Communication draft and checks if the Interactive Communication includes a draft name. The API calls the mySQLDataBaseServiceCRUD service to update that status in Database.</p></br><img src="assets/save-as-draft-update-operation.png"/></td>
+   <td><p>The mySQLDataBaseServiceCRUD service verifies Update as the input method and saves the status of Interactive Communication draft in the database.</br></p><img src="assets/update-operation-service.png"/></td>
+   </tr>
+   <tr>
+   <td><p>The API for the get operation checks if the Interactive Communication includes a draft ID. The API then calls the mySQLDataBaseServiceCRUD service with Get as the input method to retrieve the data for the Interactive Communication.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
+   <td><p>The mySQLDataBaseServiceCRUD service verifies Get as the input method and retrieves the data for the Interactive Communication based on the draft ID.</p></br><img src="assets/get-operation-service.png"/></td>
+   </tr>
+   <tr>
+   <td><p>The API for the getAll operation calls the mySQLGetALLData service to retrieve data for all Interactive Communications saved in the database.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
+   <td><p>The mySQLGetALLData service retrieves data for all Interactive Communications saved in the database.</p></br><img src="assets/getall-operation-service.png"/></td>
+   </tr>
+  </tbody>
+</table>
+
+The following is an example of the `pom.xml` file that is part of the implementation:
+
+```xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.adobe.livecycle</groupId>
+    <artifactId>draft-sample</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
+
+    <name>Interact</name>
+    <packaging>bundle</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.adobe.aemfd</groupId>
+            <artifactId>aemfd-client-sdk</artifactId>
+            <version>6.0.122</version>
+        </dependency>
+    </dependencies>
+
+
+    <!-- ====================================================================== -->
+    <!-- B U I L D D E F I N I T I O N -->
+    <!-- ====================================================================== -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>3.3.0</version>
+                <extensions>true</extensions>
+                <executions>
+                    <!--Configure extra execution of 'manifest' in process-classes phase to make sure SCR metadata is generated before unit test runs-->
+                    <execution>
+                        <id>scr-metadata</id>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <exportScr>true</exportScr>
+                    <instructions>
+                        <!-- Enable processing of OSGI DS component annotations -->
+                        <_dsannotations>*</_dsannotations>
+                        <!-- Enable processing of OSGI metatype annotations -->
+                        <_metatypeannotations>*</_metatypeannotations>
+                        <Bundle-SymbolicName>${project.groupId}-${project.artifactId}</Bundle-SymbolicName>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <id>autoInstall</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>install-bundle</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
+```
+
+>[!NOTE]
+>
+>Ensure that you update the `aemfd-client-sdk` dependency to 6.0.122 in the `pom.xml` file.

@@ -38,7 +38,7 @@ This package contains cloud configuration which support the following platform v
 
 ### What does this package include {#what-does-this-package-include}
 
-The AEM Forms We.Gov demo package (**we-gov-forms.pkg.all-&lt;version&gt;.zip**) comes as a package which includes several other subpackages and services. The package includes the following modules:
+The [AEM Forms We.Gov demo package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/we-gov-forms.pkg.all-2.0.2.zip) (**we-gov-forms.pkg.all-&lt;version&gt;.zip**) comes as a package which includes several other subpackages and services. The package includes the following modules:
 
 * **we-gov-forms.pkg.all-&lt;version&gt;.zip** - *Complete demo package*
 
@@ -213,48 +213,6 @@ This section contains details and instructions on the Adobe Sign Cloud Configura
 1. Provide the configured Client Id and Client Secret from the configured Adobe Sign instance.
 1. Click “Connect to Adobe Sign”.
 1. After successful connection, click “Save & Close” to complete the integration.
-
-### Fill and sign multiple forms {#fill-sign-multiple-forms}
-
-This document explains the steps needed to setup the ability to fill and sign multiple forms. You can also try the [same capability here](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). This sample stores the necessary data needed for this sample in the AEM repository. This is done to ensure frictionless experience to deploy demo assets on your local server. In real life we will store the same information in RDMS of your choice.
-
-#### Prerequisites {#pre-requisites-fill-sign-multiple-forms}
-
-* [Configure Day CQ Mail Service](https://docs.adobe.com/content/help/en/experience-manager-65/communities/administer/email.html)
-
-* [Configure AEM Forms With Adobe Sign](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html)
-
-#### Setup the sample on local server {#setup-sample-local-server}
-
-Perform the following steps to setup the sample on local server:
-
-1. Install the package. This package contains the following:
-   * Adaptive Forms. The forms are in the **formsandsigndemo** folder
-   * Custom OSGI bundles
-   * Workflows
-1. Configure [consent form](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/consentform.html) to use your Adobe Sign Configuration.
-1. Configure [multi state interest lock](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/multistateinterestratelock.html) form to use your Adobe Sign Configuration.
-1. Open [Formsandsigningdemo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/formsandsigningdemo.html) workflow model:
-   1. Open the Save Forms in CRX step.
-   1. Change the localhost to your AEM Server’s ip address.
-   1. Save your changes.
-   1. Sync the workflow to generate the runtime model.
-
-      ![Sign multiple forms](assets/sign-multiple-forms.jpg)
-
-   1. Open the [Refinance Form](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
-   1. Fill in the required fields. Make sure you provide a valid email address and select one or more forms to sign and submit the form.
-   You receive an e-mail with a link to fill and sign the forms.
-
-#### Troubleshooting {#troubleshoot-sign-multiple-forms}
-
-* The debug logs are written to `signingmultipleforms.log` file in your server’s log folder.
-
-* The forms to sign are stored under `/content/formsforsigning`.
-
-* Make sure you have all the bundles in active state.
-
-* Check your email server configuration.
 
 ### (Optional) MS Dynamics cloud configuration {#ms-dynamics-cloud-configuration}
 
