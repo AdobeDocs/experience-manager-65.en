@@ -178,6 +178,41 @@ Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE
    <td>Supported</td>
    <td>Supported</td>
   </tr>
+   <tr>
+   <td>Gateways , NO WAIT </td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+   <tr>
+   <td>Variables to store data </td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>OR, AND Split</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>User avatar</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>Send an email at the end of the workflow</td>
+   <td>Supported <sup>[7]</sup></td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>Call a Web service from a workflow</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
+   <td>Digital Signature</td>
+   <td>Supported<br /> </td>
+   <td>Supported<br /> </td>
+  </tr>
   <tr>
    <td>Reset button</td>
    <td>Supported</td>
@@ -214,11 +249,6 @@ Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE
    <td>Supported<br /> </td>
   </tr>
   <tr>
-   <td>Digital Signature</td>
-   <td>Supported<br /> </td>
-   <td>Supported<br /> </td>
-  </tr>
-  <tr>
    <td>Startpoint categories</td>
    <td>Not Supported </td>
    <td>Supported </td>
@@ -241,11 +271,6 @@ Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE
   <tr>
    <td>Saving a startpoint as a draft</td>
    <td>Not Supported</td>
-   <td>Supported</td>
-  </tr>
-  <tr>
-   <td>User avatar</td>
-   <td>Supported</td>
    <td>Supported</td>
   </tr>
   <tr>
@@ -284,17 +309,7 @@ Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE
    <td>Supported</td>
   </tr>
   <tr>
-   <td>Send an email at the end of the workflow</td>
-   <td>Supported <sup>[7]</sup></td>
-   <td>Supported</td>
-  </tr>
-  <tr>
    <td>Delegate between disjoint groups</td>
-   <td>Not Supported</td>
-   <td>Supported</td>
-  </tr>
-  <tr>
-   <td>Call a Web service from a workflow</td>
    <td>Not Supported</td>
    <td>Supported</td>
   </tr>
@@ -304,22 +319,17 @@ Form-centric AEM Workflows on OSGi and AEM Forms JEE Workflows (AEM Forms on JEE
    <td>Supported</td>
   </tr>
   <tr>
-   <td>Gateways , NO WAIT </td>
-   <td>Supported</td>
-   <td>Supported</td>
-  </tr>
-   <tr>
-   <td>Variables to store data </td>
-   <td>Supported</td>
-   <td>Supported</td>
-  </tr>
-  <tr>
-   <td>OR, AND Split</td>
-   <td>Not Supported</td>
-   <td>Supported</td>
-  </tr>
-  <tr>
    <td>Dynamic task priority</td>
+   <td>Not Supported</td>
+   <td>Not Supported</td>
+  </tr>
+  <tr>
+   <td>Dynamic title</td>
+   <td>Not Supported</td>
+   <td>Not Supported</td>
+  </tr>
+    <tr>
+   <td>Dynamic description</td>
    <td>Not Supported</td>
    <td>Not Supported</td>
   </tr>
