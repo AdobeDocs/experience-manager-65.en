@@ -150,7 +150,7 @@ Valid usage of the API:
 
 Invalid usage of the API:
 
-```
+```javascript
 var formUid = "form1";
  var fieldSOM = “xfa.form.form1.subform1.field1"; fs.valueOf(formUid, fieldSOM);
 ```

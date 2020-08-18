@@ -12,7 +12,7 @@ Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL 
 
 ## Prerequisites {#prerequisites}
 
-The integration requires an [enterprise Adobe Stock plan](https://stockenterprise.adobe.com/) and [!DNL Experience Manager] 6.5 or later. For [!DNL Experience Manager] 6.5 service pack details, see these [release notes](/help/release-notes/sp-release-notes.md).
+The integration requires an [enterprise Adobe Stock plan](https://stockenterprise.adobe.com/).
 
 ## Integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
@@ -65,7 +65,7 @@ Your [!DNL Experience Manager] users, can search for assets in both, [!DNL Exper
 
 * To search for [!DNL Adobe Stock] assets, click **[!UICONTROL Navigation]** > **[!UICONTROL Assets]** > **[!UICONTROL Search Adobe Stock]**.
 
-* To search for assets across [!DNL Adobe Stock] and [!DNL Experience Manager Assets], click search ![search_icon](assets/search_icon.png).
+* To search for assets across [!DNL Adobe Stock] and [!DNL Experience Manager Assets], click search ![search](assets/do-not-localize/search_icon.png).
 
 Alternatively, start typing `Location: Adobe Stock` in the search bar to select [!DNL Adobe Stock] assets. [!DNL Experience Manager] offers advanced filtering capabilities on the searched assets, allowing users to quickly zero-in on the required assets using filters, such as types of supported assets, image orientation, and licensed state.
 
@@ -115,6 +115,6 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 >[!MORELIKETHIS]
 >
->* [Video tutorial on using Adobe Stock assets with Experience Manager Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
+>* [Video tutorial on using Adobe Stock assets with Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [Adobe Stock enterprise plan help](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [Adobe Stock FAQ](https://helpx.adobe.com/stock/faq.html)

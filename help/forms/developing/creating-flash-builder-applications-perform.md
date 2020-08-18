@@ -127,7 +127,7 @@ The following illustration provides a visual representation of the client applic
 
 The following code represents the SSOStandalone.mxml file.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Application
                  layout="absolute"
@@ -244,7 +244,7 @@ The following code represents the SSOStandalone.mxml file.
 
 The following code represents the ISSOManager.as file.
 
-```as3
+```java
  package um
  {
      import flash.events.IEventDispatcher;
@@ -295,7 +295,7 @@ The following code represents the ISSOManager.as file.
 
 The following code represents the SSOEvent.as file.
 
-```as3
+```java
  package um
  {
      import flash.events.Event;
@@ -367,7 +367,7 @@ The following code represents the SSOEvent.as file.
 
 The following code represents the SSOManager.as file.
 
-```as3
+```java
  package um
  {
      import flash.events.Event;
@@ -531,7 +531,7 @@ The following code represents the SSOManager.as file.
 
 The following code represents the UserManager.as file.
 
-```as3
+```java
  package um
  {
      import flash.events.Event;
@@ -597,7 +597,7 @@ The following code represents the UserManager.as file.
 
 The following code represents the login.mxml file.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas  width="500" height="400">
      <mx:Script>
@@ -640,7 +640,7 @@ The following code represents the login.mxml file.
 
 The following code represents the logout.mxml file.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas  width="500" height="400">
      <mx:Label x="97" y="188" text="You have successfully logged out from the application"/>
@@ -653,7 +653,7 @@ The following code represents the logout.mxml file.
 
 The following code represents the progress.mxml file.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas >
      <mx:Label x="151" y="141" text="Wait...."/>
@@ -665,7 +665,7 @@ The following code represents the progress.mxml file.
 
 The following code represents the remoting.mxml file that invokes the `MyApplication/EncryptDocument` process. Because a document is passed to the process, application logic responsible for passing a secure document to AEM Forms is located in this file. (See [Passing secure documents to invoke processes using Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas  width="664" height="400" creationComplete="initializeChannelSet()" xmlns:views="views.*">
      <mx:Script>
@@ -881,7 +881,7 @@ As response to this value, a `SSOEvent.AUTHENTICATION_REQUIRED` value is dispatc
 
 The User Manager security servlet responds with the following value:
 
-```as3
+```verilog
  HTTP/1.1 200 OK
  Set-Cookie: lcAuthToken=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A; Path=/
  authenticated=true&authstate=COMPLETE&assertionid=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
@@ -893,14 +893,14 @@ As a result, `authstate=COMPLETE the SSOEvent.AUTHENTICATION_SUCCESS` is dispatc
 
 In this situation, the user has already logged in to AEM Forms and then navigates to the client application. The client application connects to the User Manager security servlet during startup.
 
-```as3
+```verilog
  GET /um/login?um%5Fno%5Fredirect=true HTTP/1.1
  Cookie: JSESSIONID=A4E0BCC2DD4BCCD3167C45FA350BD72A; lcAuthToken=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```
 
 Because the user is already authenticated, the User Manager cookie is present and is sent to the User Manager security servlet. The servlet then gets the `assertionId` value and verifies whether it is valid. If it is valid, then `authstate=COMPLETE` is returned. Otherwise `authstate=CREDENTIAL_CHALLENGE` is returned. The following is a typical response:
 
-```as3
+```verilog
  HTTP/1.1 200 OK
         authenticated=true&authstate=COMPLETE&assertionid=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```

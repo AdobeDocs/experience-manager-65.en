@@ -25,6 +25,7 @@ The main aspects of scoring and badges are:
 * [Assign badges](#assign-and-revoke-badges) to identify the role of a member  in  the community.
 
 * [Basic awarding of badges](#enable-scoring) to members to encourage their participation (quantity of content created).
+
 * [Advanced awarding of badges](/help/communities/advanced.md) to identify members as experts (quality of content created).
 
 **Note** that awarding of badges is [not enabled by default](/help/communities/implementing-scoring.md#main-pars-text-237875536).
@@ -56,7 +57,7 @@ Role-based badges are assigned by an administrator to community members based on
 
 Assigned (and awared) badges are stored in the selected [SRP](/help/communities/srp.md) and are not directly accessible. Until a GUI is available, the only means for assigning role-based badges is to do so with code or cURL. For cURL instructions, see the section titled [Assign and Revoke Badges](#assign-and-revoke-badges).
 
-Included in the release are three role-based badges :
+Included in the release are three role-based badges:
 
 * **moderator**
   `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
@@ -67,7 +68,7 @@ Included in the release are three role-based badges :
 * **privileged member**
   `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
-![chlimage_1-98](assets/chlimage_1-98.png)
+  ![assigned-badges](assets/assigned-badges.png)
 
 ### Awarded Badges {#awarded-badges}
 
@@ -89,7 +90,7 @@ Included in the release are three reward-based badges:
 * **bronze**
   `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-![chlimage_1-99](assets/chlimage_1-99.png)
+  ![awarded-badges](assets/awarded-badges.png)
 
 >[!NOTE]
  >
@@ -128,8 +129,8 @@ If the node is of type `cq:Page` (recommended), then, using CRXDE|Lite, add the 
 
 | **Property** |**Type** |**Description** |
 |---|---|---|
-| badgingRules |String[] |an array list of [badging rules](#badging-rules) |
-| scoringRules |String[] |an array list of [scoring rules](#scoring-rules) |
+| badgingRules |String |an array list of [badging rules](#badging-rules) |
+| scoringRules |String |an array list of [scoring rules](#scoring-rules) |
 
 >[!NOTE]
  >
@@ -144,7 +145,7 @@ A boolean property, `allowBadges`, enables/disables the display of badges for a 
 
 #### Example : allowBadges for Forum component instance {#example-allowbadges-for-forum-component-instance}
 
-![chlimage_1-100](assets/chlimage_1-100.png)
+![enable-badges-component](assets/enable-badges-component.png)
 
 >[!NOTE]
  >
@@ -163,8 +164,8 @@ Scoring rules are inherited but not additive. For example:
 * An action on a page2 component will invoke both rule1 and rule2.
 * If both rules contain applicable sub-rules for the same `topic/verb`:
 
-    * Only the sub-rule from rule2 will affect the score.
-    * The scores from both sub-rules are not added together.
+  * Only the sub-rule from rule2 will affect the score.
+  * The scores from both sub-rules are not added together.
 
 When there is more than one scoring rule, the scores are maintained separately for each rule.
 
@@ -227,7 +228,7 @@ Sub-rules are nodes of type `cq:Page` with properties on its `jcr:content`node t
   </tr>
   <tr>
    <td><code>topics</code></td>
-   <td>String[]</td>
+   <td>String</td>
    <td>
     <ul>
      <li>optional; restricts sub-rule to community components identified by event topics</li>
@@ -273,7 +274,7 @@ Included in the release are two scoring rules for the [Forum Function](/help/com
 
 1. /libs/settings/community/scoring/rules/comments-scoring
 
-    * subRules[] =
+   * subRules[] =
       /libs/settings/community/scoring/rules/sub-rules/member-comment-create
       /libs/settings/community/scoring/rules/sub-rules/member-receive-vote
       /libs/settings/community/scoring/rules/sub-rules/member-give-vote
@@ -281,7 +282,7 @@ Included in the release are two scoring rules for the [Forum Function](/help/com
 
 1. /libs/settings/community/scoring/rules/forums-scoring
 
-    * subRules[] =
+   * subRules[] =
       /libs/settings/community/scoring/rules/sub-rules/member-forum-create
       /libs/settings/community/scoring/rules/sub-rules/member-receive-vote
       /libs/settings/community/scoring/rules/sub-rules/member-give-vote
@@ -296,7 +297,7 @@ Included in the release are two scoring rules for the [Forum Function](/help/com
 * `sub-rules` may be shared among various scoring rules.
 * `rules` should be located in a repository location with read permission for everyone.
 
-    * Rule names must be unique regardless of the location.
+  * Rule names must be unique regardless of the location.
 
 ### Activating Custom Scoring Rules {#activating-custom-scoring-rules}
 
@@ -304,10 +305,10 @@ Any changes or additions made to scoring rules or sub-rules made in the author e
 
 ## Badging Rules {#badging-rules}
 
-Badging rules link scoring rules to badges by specifying :
+Badging rules link scoring rules to badges by specifying:
 
-* Scoring rule.
-* The score necessary to be awared a specific badge.
+* Scoring rule
+* Score necessary to be awared a specific badge
 
 Badging rules are nodes of type `cq:Page` with properties on its `jcr:content` node that correlate scoring rules to scores and badges.
 
@@ -315,15 +316,15 @@ The rules for badging consist of a mandatory `thresholds` property that is an or
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-    * A bronze badge is awared for earning 1 point.
+  * A bronze badge is awared for earning 1 point.
 
 * `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
-    * A silver badge is awarded when 60 points have been accumulated.
+  * A silver badge is awarded when 60 points have been accumulated.
 
 * `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
-    * A gold badge is awared when 80 points have been accumulated.
+  * A gold badge is awared when 80 points have been accumulated.
 
 Badging rules are paired with scoring rules, which determine how points accumulate. See the section titled [Apply Rules to Content](#apply-rules-to-content).
 
@@ -334,7 +335,7 @@ The `scoringRules` property on a badging rule simply restricts which scoring rul
  >Best practice : create badge images unique to each AEM site.
  >
 
-![chlimage_1-101](assets/chlimage_1-101.png)
+![badging-rule-configuration](assets/badging-rule-configuration.png)
 
 <table>
  <tbody>
@@ -345,7 +346,7 @@ The `scoringRules` property on a badging rule simply restricts which scoring rul
   </tr>
   <tr>
    <td>thresholds</td>
-   <td>String[]</td>
+   <td>String</td>
    <td><em>(required)</em> A multi-value string of the form 'number|path'
     <ul>
      <li>number = score</li>
@@ -360,7 +361,7 @@ The `scoringRules` property on a badging rule simply restricts which scoring rul
   </tr>
   <tr>
    <td>scoringRules</td>
-   <td>String[]</td>
+   <td>String</td>
    <td>(<em>optional</em>) A multi-value string to restrict the badging rule to scoring events identified by the scoring rules</td>
   </tr>
  </tbody>
@@ -370,16 +371,16 @@ The `scoringRules` property on a badging rule simply restricts which scoring rul
 
 Included in the release are two Badging Rules that correspond to the [Forums and Comments Scoring Rules](#includedscoringrules).
 
-* /libs/settings/community/badging/rules/comments-badging
+* `/libs/settings/community/badging/rules/comments-badging`
 
-* /libs/settings/community/badging/rules/forums-badging
+* `/libs/settings/community/badging/rules/forums-badging`
 
 **Notes:**
 
 * `rules` nodes are of type cq:Page.
 * `rules` should be located in a repository location with read permission for everyone.
 
-    * Rule names must be unique regardless of location.
+  * Rule names must be unique regardless of location.
 
 ### Activating Custom Badging Rules {#activating-custom-badging-rules}
 
@@ -432,8 +433,9 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 ```
 
 >[!NOTE]
->
->Using cURL to assign and revoke badges works for any badge image, but when assigned instead of earned, they are marked as assigned badges and handled accordingly.
+ >
+ >Using cURL to assign and revoke badges works for any badge image, but when assigned instead of earned, they are marked as assigned badges and handled accordingly.
+ >
 
 ## Scoring and Badges for Custom Components {#scoring-and-badges-for-custom-components}
 
@@ -584,33 +586,33 @@ It is possible to quickly try scoring and badging using the [Getting Started Tut
 * Access CRXDE Lite on author.
 * Browse to the base page:
 
-    * /content/sites/engage/en/jcr:content
+  * /content/sites/engage/en/jcr:content
 
 * Add the badgingRules property:
 
-    * **Name**: `badgingRules`
-    * **Type**: `String`
-    * Select **Multi**
-    * Select **Add**
-    * Enter `/libs/settings/community/badging/rules/forums-badging`
-    * Select **+**
-    * Enter `/libs/settings/community/badging/rules/comments-badging`
-    * Select **OK**
+  * **Name**: `badgingRules`
+  * **Type**: `String`
+  * Select **Multi**
+  * Select **Add**
+  * Enter `/libs/settings/community/badging/rules/forums-badging`
+  * Select **+**
+  * Enter `/libs/settings/community/badging/rules/comments-badging`
+  * Select **OK**
 
 * Add the scoringRules property:
 
-    * **Name**: `scoringRules`
-    * **Type**: `String`
-    * Select **Multi**
-    * Select **Add**
-    * Enter `/libs/settings/community/scoring/rules/forums-scoring`
-    * Select **+**
-    * Enter `/libs/settings/community/scoring/rules/comments-scoring`
-    * Select **OK**
+  * **Name**: `scoringRules`
+  * **Type**: `String`
+  * Select **Multi**
+  * Select **Add**
+  * Enter `/libs/settings/community/scoring/rules/forums-scoring`
+  * Select **+**
+  * Enter `/libs/settings/community/scoring/rules/comments-scoring`
+  * Select **OK**
 
 * Select **Save All**.
 
-![chlimage_1-102](assets/chlimage_1-102.png)
+![test-scoring-badging](assets/test-scoring-badging.png)
 
 Next ensure the forum and comments components allow badges to be displayed:
 
@@ -625,7 +627,7 @@ Next ensure the forum and comments components allow badges to be displayed:
   * **Type**: `Boolean`
   * **Value**: `true`
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![test-forum-component](assets/test-forum-component.png)
 
 Next, [republish](/help/communities/sites-console.md#publishing-the-site) the community site.
 

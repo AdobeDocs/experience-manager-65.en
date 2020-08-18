@@ -71,13 +71,13 @@ Support for 3D images in [!DNL Dynamic Media] enables customers to publish and a
 
 ### Customize the Adobe Experience Manager Inbox columns {#customize-aem-inbox-columns}
 
-You can customize an [!DNL Experience Manager] Inbox to change the default title of a column, reorder the position of a column, and display additional columns based on the data of a workflow. Members of `administrators` or `workflow-administrators` group can customize the columns.
+You can customize an [!DNL Experience Manager] Inbox to change the default title of a column, reorder the position of a column, and display additional columns based on the data of a workflow. Members of `administrators` or `workflow-administrators` group can customize the columns. For more information, see [Admin Control](../sites-authoring/inbox.md#inbox-admin-control).
 
 ![Customize Experience Manager Inbox columns](assets/customize-columns.gif)
 
 ### Save Interactive Communications as a draft {#save-as-draft}
 
-You can use the Agent UI to save one or more drafts for each Interactive Communication and retrieve the draft later to continue working on it. You can specify a different name for each draft to identify it.
+You can use the Agent UI to save one or more drafts for each Interactive Communication and retrieve the draft later to continue working on it. You can specify a different name for each draft to identify it. For more information, see [Save Interactive Communications as a draft](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
 
 ![Save as draft](assets/save-as-draft.gif)
 
@@ -97,7 +97,7 @@ Adobe Experience Manager Forms includes the following accessibility enhancements
 
 ### X-509 certificate-based authentication for SOAP-based web services in form data model {#x509-based-authentication-soap}
 
-Form data model now supports X-509 certificate-based authentication while using SOAP web services as the data source.
+Form data model now supports X-509 certificate-based authentication while using SOAP web services as the data source. For more information, see [Configure SOAP web services](../forms/using/configure-data-sources.md#configure-soap-web-services).
 
 ### Other key improvements {#other-improvements}
 
@@ -139,7 +139,7 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 
 * The mixed state checkboxes (in which unless you select all the nested predicates the first-level checkboxes are not selected and are stricken through) in Filters panel are readable by screen readers.
 
-* Date and time format constraints are provided in field labels of date fields, to enable the users to enter the date in correct format using keyboard. 
+* Date and time format constraints are provided in field labels of date fields, to enable the users to enter the date in correct format using keyboard.
 For example, `On Time (MM-DD-YYYY HH:mm)`. Here MM is month in two-digit format, YYYY is year, DD is day in two-digit format, HH is hour in 24-hour military format, and mm is minute.
 
 * Screen readers now announce the `X` symbol to remove the selected tags along with the number of the selected tags.

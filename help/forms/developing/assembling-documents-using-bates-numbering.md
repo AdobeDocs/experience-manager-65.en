@@ -22,7 +22,7 @@ The following illustration shows a PDF document that contains a unique identifie
 
 For the purpose of this discussion, the unique page identifier is placed in a document’s header. Assume that the following DDX document is used.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
         <PDF result="out.pdf">

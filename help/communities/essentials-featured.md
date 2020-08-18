@@ -17,6 +17,7 @@ This page provides the essential information for working with featured content.
 
 In contrast to pinning a post to the top of a forum, this feature allows for content to be highlighted anywhere within the community site.
 
+
 ## Essentials for Client-Side {#essentials-for-client-side}
 
 <table>

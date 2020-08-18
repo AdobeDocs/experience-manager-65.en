@@ -28,7 +28,7 @@ In the author environment, to reach the community sites console:
 
 This console displays the templates from which a [community site](sites-console.md) can be created and allows new site templates to be created.
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![site-template](assets/site-template.png)
 
 ## Create Site Template {#create-site-template}
 
@@ -38,7 +38,7 @@ This will bring up the Site Editor panel which contains 3 sub-panels:
 
 ### Basic info {#basic-info}
 
-![chlimage_1-19](assets/chlimage_1-19.png)
+![site-template-basicinfo](assets/site-template-basicinfo.png)
 
 On the Basic Info panel, a name, description and whether the template is enabled or disabled are configured:
 
@@ -56,13 +56,13 @@ On the Basic Info panel, a name, description and whether the template is enabled
 
 ### Thumbnail {#thumbnail}
 
-![chlimage_1-20](assets/chlimage_1-20.png)
+![site-thumbnail](assets/site-thumbnail.png)
 
 (Optional) Select the Upload Image icon in order to display a thumbnail along with the name and description to creators of community sites.
 
 ### Structure {#structure}
 
-![chlimage_1-21](assets/chlimage_1-21.png)
+![site-structure](assets/site-structure.png)
 
 To add community functions, drag from the right side to the left in the order the site menu links should appear. Styles will be applied to the template during creation of the site.
 
@@ -79,7 +79,7 @@ The page function provides an empty page. The groups function provides the abili
  >Any other function, such as the [page function](functions.md#page-function), must be included and listed first.
  >
 
-![chlimage_1-22](assets/chlimage_1-22.png)
+![site-editor](assets/site-editor.png)
 
 ### Group Templates for Groups Function {#group-templates-for-groups-function}
 
@@ -90,11 +90,11 @@ When including a groups function in the site template, the configuration require
  >The Groups function must *not* be the *first nor the only* function in the site structure.
  >
 
-![chlimage_1-23](assets/chlimage_1-23.png)
+![site-functions](assets/site-functions.png)
 
 By selecting two or more community group templates, a choice is provided to the group administrator when actually creating a new group in the community.
 
-![chlimage_1-24](assets/chlimage_1-24.png)
+![site-function](assets/site-functions1.png)
 
 ## Edit Site Template {#edit-site-template}
 

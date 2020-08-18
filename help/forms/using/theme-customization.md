@@ -36,7 +36,7 @@ You can customize the HTML code and CSS file to provide a distinct organization-
 1. Open the `template.html` file for editing.
 1. Locate the following string:
 
-   ```
+   ```jsp
    <%if ( (task.description !== "") && (task.description !== null) && (typeof task.description !== null) && (typeof task.description !== 'undefined') ) {%>
                   <div class="description_details">
                     <%= task.description %>
@@ -48,7 +48,7 @@ You can customize the HTML code and CSS file to provide a distinct organization-
 
 1. Locate the following code in the `template.html` file:
 
-   ```
+   ```jsp
    <ul id="task_menu_list">
                                    <li class="approve" title="<%= task.availableCommands.directCommands[0]%>" data-routename="<%= task.availableCommands.directCommands[0]%>">
                                        <%= task.availableCommands.directCommands[0]%>
@@ -60,7 +60,7 @@ You can customize the HTML code and CSS file to provide a distinct organization-
 
 1. Comment the following line and save the file.
 
-   ```
+   ```jsp
    task.availableCommands.directCommands[1]%>">
    <%= task.availableCommands.directCommands[1]%>
    </li>

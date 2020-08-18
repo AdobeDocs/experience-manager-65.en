@@ -42,7 +42,7 @@ To programmatically import metadata into a PDF document, you can use an existing
 
 The following XML code contains metadata values that correspond to the previous illustration. For example, notice the bold items, which specify keywords.
 
-```as3
+```xml
  <?xpacket begin="?" id="W5M0MpCehiHzreSzNTczkc9d"?>
  <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2-jc015 52.349034, 2008 Jun 20 00:30:39-PDT (debug)">
        <rdf:RDF xmlns:rdf="https://www.w3.org/1999/02/22-rdf-syntax-ns#">

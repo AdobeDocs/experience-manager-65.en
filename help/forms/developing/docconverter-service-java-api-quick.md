@@ -29,7 +29,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following Java code example converts a PDF document named *Loan.pdf* to a PDF/A document that is saved as a PDF file named *LoanArchive.pdf*. (See [Converting Documents to PDF/A Documents](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -132,7 +132,7 @@ The following Java code example converts a PDF document named *Loan.pdf* to a PD
 
 The following Java code example determines whether the input PDF document is PDF/A-compliant. The input PDF document that is passed to the DocConverter service is named *LoanArchive.pdf*. Validation results are written to an XML file named *ValidationResults.xml*. (See [Programmatically Determining PDF/A Compliancy](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

@@ -66,7 +66,7 @@ HTML5 forms provide an implementation of the widget framework that can be extend
 
 To create your own widget, in the profile created above, include references of the JavaScript file which contains overridden functions and newly added functions. For example, the *sliderNumericFieldWidget* is a widget for numeric Fields. To use the widget in your profile in the header section, include the following line:
 
-```
+```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 ```
 
@@ -74,7 +74,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 When the custom widget code is ready, register the widget with the scripting engine by using `registerConfig`API for [Form Bridge](/help/forms/using/form-bridge-apis.md). It takes widgetConfigObject as input.
 
-```
+```javascript
 
 window.formBridge.registerConfig("widgetConfig",
         {

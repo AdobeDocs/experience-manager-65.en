@@ -584,8 +584,8 @@ When using an nCipher nShield HSM credential to sign or certify a PDF document, 
 
 You can add the following configuration value in the cknfastrc file, which is located at /opt/nfast/cknfastrc (or c:\nfast\cknfastrc):
 
-```as3
- CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 After you add this configuration value to the cknfastrc file, the new credential can be used without restarting the J2EE application server.
@@ -1072,8 +1072,8 @@ You can programmatically certify PDF documents by using the Signature service Ja
 
 You can add the following configuration value in the cknfastrc file, which is located at /opt/nfast/cknfastrc (or c:\nfast\cknfastrc):
 
-```as3
-             CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 After you add this configuration value to the cknfastrc file, the new credential can be used without restarting the J2EE application server.

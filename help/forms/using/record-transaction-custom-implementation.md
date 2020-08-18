@@ -71,7 +71,7 @@ private TransactionRecord extractTxRecordFromRequest(SlingHttpServletRequest req
 
 You can use the below sample code to call the servlet that has the `TransactionRecorder`API.
 
-```
+```javascript
 $.ajax({
    type: 'POST',
    url: url, //servlet url

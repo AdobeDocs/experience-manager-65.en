@@ -135,7 +135,9 @@ To track Dynamic Media viewers in AEM Sites, all steps listed under the [Configu
 
 Following proper configuration, any Dynamic Media viewer that you add to a Sites page, using a WCM component supported by Dynamic Media, automatically tracks data to Adobe Analytics, or Adobe Analytics for Video, or both.
 
+<!-- To be reviewed and updated:
 See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
+-->
 
 ### Tracking Dynamic Media viewers using embed code {#tracking-dynamic-media-viewers-using-embed-code}
 
@@ -147,7 +149,9 @@ Following proper configuration, you can add Adobe Launch support to a web page w
 
 See [Add the Launch Embed Code](https://docs.adobe.com/content/help/en/launch/using/implement/configure/implement-the-launch-install-code.html) to learn more about how to use Adobe Launch library embed code.
 
+<!-- To be reviewed and updated:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of AEM Dynamic Media.
+-->
 
 **To track Dynamic Media viewers using embed code**:
 
@@ -439,7 +443,7 @@ See also [Analytics Implementation Guide](https://docs.adobe.com/content/help/en
 
    If no report suite is available, you or your Adobe Analytics administrator must create one before you can proceed any further with the configuration.
 
-   See [Reports and Report Suites](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-reports-report-suites.html) and [Create a report suite](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/create-report-suite.html).
+   See [Reports and Report Suites](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html) and [Create a report suite](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/create-report-suite.html).
 
    In Adobe Analytics, report suites are managed under **[!UICONTROL Admin > Report Suites]**.
 
@@ -453,7 +457,7 @@ See also [Analytics Implementation Guide](https://docs.adobe.com/content/help/en
 
    It is possible to use any type of variable supported by Adobe Analytics. The decision about the variable type (like Custom Traffic [props], Conversion [eVar]) should be driven by specific needs of you Analytics implementation.
 
-   See [Overview of props and eVars](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/traffic-props-evars/props-evars.html).
+   See [Overview of props and eVars](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/evar.html).
 
    For the purposes of this documentation, only a Custom Traffic (props) variable will be used because they become available in a Analytics Report within a few minutes after an action occurs on a web page.
 

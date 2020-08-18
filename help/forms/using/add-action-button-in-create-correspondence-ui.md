@@ -220,7 +220,7 @@ Handling the action/button on clicking action/button includes logic for:
     1. Double-click the ccrcustomization.js file to open it in CRX.
     1. In the file, paste the following code and click **Save All**:
 
-       ```
+       ```javascript
        /* for adding and handling custom actions in Extensible Toolbar.
          * One instance of handler will be created for each action.
          * CM.domain.CCRCustomActionHandler is actionHandler class.

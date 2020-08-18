@@ -251,7 +251,7 @@ In this example, the group `Community Ski Class` is added as a member of the gro
 
 `https://localhost:4503/content/sites/enable/en.html {#http-localhost-content-sites-enable-en-html}`
 
-![chlimage_1-433](assets/chlimage_1-433.png)
+![enablement-login](assets/enablement-login.png)
 
 ### Configure for Authentication Error {#configure-for-authentication-error}
 

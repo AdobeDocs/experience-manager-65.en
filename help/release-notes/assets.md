@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager Assets Release Notes
-description: The new capabilities and enhancements to Adobe Experience Manager 6.5 Assets.
+title: Release Notes of [!DNL Adobe Experience Manager Assets] 6.5.
+description: The new capabilities and enhancements to [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 ---
 
-# Adobe Experience Manager Assets Release Notes {#aem-assets-release-notes}
+# [!DNL Adobe Experience Manager Assets] release notes {#aem-assets-release-notes}
 
-Here are the key features and highlights of the Adobe Experience Manager 6.5 Assets release.
+Here are the key features and highlights of the [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] release.
 
 ## Integration with [!DNL Adobe Creative Cloud] and creative workflows {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
@@ -27,7 +27,7 @@ Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Ex
 
 [!DNL Adobe Stock] service provides designers and businesses with access to millions of high-quality, curated, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets for all their creative projects.
 
-For more info, see [Use [!DNL Adobe Stock] assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
+For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
 ![Preview Adobe Stock image and license from within Experience Manager Assets](assets/stock_image_preview_license_options.png)
 
@@ -63,19 +63,19 @@ In large enterprises the infrastructure required to create websites can be distr
 
 For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
-### 360 Video Support {#video-support}
+### 360 video support {#video-support}
 
 Manage your 360-video files directly in [!DNL Experience Manager] using the cutting edge viewers to deliver VR-experiences to desktops, mobile and VR-headsets. For more information see [Using 360 Video](/help/assets/360-video.md).
 
-### Custom Video Thumbnails {#custom-video-thumbnails}
+### Custom video thumbnails {#custom-video-thumbnails}
 
 You can now customize the thumbnails for your video assets using frames from the video itself or other content stored in the DAM. For additional instructions see [About Video Thumbnails](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
-### Accessibility Enhancements {#accessibility-enhancements}
+### Accessibility enhancements {#accessibility-enhancements}
 
 [!DNL Dynamic Media] viewers now support enhanced accessibility features like Aria-support, screen-readers, and Alt-text. For additional details see [Dynamic Media viewers Release Notes](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
-## Search experience enhancement {#search-experience-enhancement}
+## Search experience enhancement {#experience-enhancement-for-searching}
 
 [!DNL Experience Manager] 6.5 onwards, marketers can discover the desired assets faster from the search results page. The search facets are updated with the number of assets even before applying the search filter. Seeing the expected count against the filter helps users navigate through the search results efficiently. For more information, see [Search assets in Experience Manager](../assets/search-assets.md).
 

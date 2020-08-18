@@ -29,7 +29,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following code example converts a PDF document called *Loan.pdf* to a PostScript document called *Loan.ps*. (See [Converting PDF Documents to PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -144,7 +144,7 @@ The following code example converts a PDF document called *Loan.pdf* to a PostSc
 
 The following Java code example converts a PDF document called *Loan.pdf* to a set of JPEG files and stores them in the C:\Adobe directory. Each file is named `tempFile[index].jpg`, where the first image file is named *tempFile0.jpg*. (See [Converting PDF Documents to Image Formats](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

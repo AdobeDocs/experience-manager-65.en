@@ -142,7 +142,7 @@ Barcoded Forms Service provides the following two APIs:
 
 The following sample code decodes a barcode in a document and saves the output XML to the disk.
 
-```java
+```jsp
 <%@ page import="java.util.List,
                 com.adobe.fd.bcf.api.BarcodedFormsService,
                 com.adobe.fd.bcf.api.CharSet,
@@ -235,7 +235,7 @@ For a workflow, explicitly pass an instance of the ResourceResolver object to th
 
 The following sample workflow process decodes a barcode in a document and saves the result to disk. The code is written in ECMAScript and the document is passed as workflow payload:
 
-```
+```javascript
 /*
  * Imports 
  */

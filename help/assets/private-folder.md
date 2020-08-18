@@ -1,32 +1,30 @@
 ---
-title: Create and share a private folder in Adobe Experience Manager.
-description: Learn how to create a private folder in the Adobe Experience Manager Assets and share it with other users and the assign various privileges to them.
+title: Create and share a private folder in [!DNL Adobe Experience Manager].
+description: Learn how to create a private folder in the [!DNL Adobe Experience Manager Assets] and share it with other users and the assign various privileges to them.
 contentOwner: AG
 ---
 
 # Private folder sharing {#private-folder-sharing}
 
-You can create a private folder in the Adobe Experience Manager Assets user interface that is available exclusively to you. You can share this private folder to other users and assign various privileges to them. Based on the privilege level you assign, users can perform various tasks on the folder, for example view assets within the folder or edit the assets.
+You can create a private folder in the [!DNL Adobe Experience Manager Assets] user interface that is available exclusively to you. You can share this private folder to other users and assign various privileges to them. Based on the privilege level you assign, users can perform various tasks on the folder, for example view assets within the folder or edit the assets.
 
 >[!NOTE]
 >
 >Private folder has at least one member with Owner role.
 
-1. In the Assets console, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
+1. In the [!DNL Assets] console, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
 
    ![Create assets folder](assets/Create-folder.png)
 
-1. In the **[!UICONTROL Create Folder]** dialog, enter a title and name (optional) for the folder, and select **[!UICONTROL Private]**.
+1. In the **[!UICONTROL Create Folder]** dialog, enter a title and name (optional) for the folder, and select **[!UICONTROL Private]** option.
 
-   ![Select Private check box to make the folder private](assets/private-folder.png)
-
-1. Click **[!UICONTROL Create]**. A private folder is created in the UI.
+1. Click **[!UICONTROL Create]**. A private folder is created.
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
 1. To share the folder with other users and the assign privileges to them, select the folder, and click **[!UICONTROL Properties]** from the toolbar.
 
-   ![chlimage_1-414](assets/chlimage_1-414.png)
+   ![info option](assets/do-not-localize/info-circle-icon.png)
 
    >[!NOTE]
    >
@@ -44,9 +42,9 @@ You can create a private folder in the Adobe Experience Manager Assets user inte
    >
    >Private folder has at least one member with Owner role. Therefore, administrator cannot remove all the owner members from a private folder. However, to remove existing owners (and administrator itself) from the private folder the administrator must add another user as owner.
 
-1. Click **[!UICONTROL Save]**. Depending on the role you assign, the user is assigned a set of privileges on your private folder when the user logs in to Assets.
+1. Click **[!UICONTROL Save]**. Depending on the role you assign, the user is assigned a set of privileges on your private folder when the user logs in to [!DNL Assets].
 1. Click **[!UICONTROL Ok]** to close the confirmation message.
-1. The user with whom you share the folder receives a sharing notification. Log in to Assets with the credentials of the user to view the notification.
+1. The user with whom you share the folder receives a sharing notification. Log in to [!DNL Assets] with the credentials of the user to view the notification.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 

@@ -45,7 +45,7 @@ Let us first review the server response for success and error events.
 
 The structure for the server response for submission success event is as follows:
 
-```
+```json
 {
   contentType : "<xmlschema or jsonschema>",
   data : "<dataXML or dataJson>" ,
@@ -67,7 +67,7 @@ The success handler reads the server response and accordingly redirects to the c
 
 The structure for the server response for submission error event is as follows:
 
-```
+```json
 {
    errorCausedBy : "<CAPTCHA_VALIDATION or SERVER_SIDE_VALIDATION>",
 

@@ -426,7 +426,7 @@ When you want to send the same letter in different languages to your customers, 
 1. Tap **OK** in the alert. Correspondence Management downloads a zip file to your computer with the name DataDictionary-&lt;DDname&gt;.zip.
 1. The Zip file contains a .properties file. This file defines the downloaded data dictionary. The contents of the property file are similar to the following:
 
-   ```
+   ```ini
    #Wed May 20 16:06:23 BST 2015
    DataDictionary.EmployeeDD.description=
    DataDictionary.EmployeeDD.displayName=EmployeeDataDictionary

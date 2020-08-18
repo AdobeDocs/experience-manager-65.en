@@ -148,7 +148,7 @@ Administrators can add and customize the following rich media types when creatin
 
 The following table identifies all pre-defined, out-of-box Viewer Presets that come with Dynamic Media.
 
-See also <!-- KEEP THIS REFERENCE FOR NOW [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) --> [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
+See also [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
 For information about supported web browser and operating system versions for Viewers, you can review the Viewers Release Notes.
 
@@ -417,7 +417,7 @@ See [Special considerations for creating a Carousel Banner Viewer preset](#speci
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
 1. On the Viewer Presets page, on the toolbar, tap **[!UICONTROL Create.]**
-1. In the **[!UICONTROL New Viewer Preset** dialog box, in the **[!UICONTROL Preset Name]** field, enter the name of the new preset. Choose a name carefully&mdash;they are not editable after you tap **[!UICONTROL Create.]**
+1. In the **[!UICONTROL New Viewer Preset]** dialog box, in the **[!UICONTROL Preset Name]** field, enter the name of the new preset. Choose a name carefully&mdash;they are not editable after you tap **[!UICONTROL Create.]**
 
    When you save the preset later in these steps, the name appears on the Viewer Presets page under the Preset Title column header.
 

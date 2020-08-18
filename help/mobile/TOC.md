@@ -3,6 +3,7 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Mobile User Guide
+user-guide-description: Create and manage content for mobile apps.
 ---
 
 # AEM 6.5 Mobile User Guide {#mobile}

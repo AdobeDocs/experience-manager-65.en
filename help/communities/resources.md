@@ -73,7 +73,7 @@ In the author environment, to reach the Resources console
 
 * From global navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Resources]**
 
-  ![chlimage_1-163](assets/chlimage_1-163.png)
+  ![enablement-sites](assets/enablement-sites.png)
 
 ### Select a Community Site {#select-a-community-site}
 
@@ -83,25 +83,25 @@ Enablement resources are created for a specific community site after selecting t
 
 Once a specific community site is selected, any existing enablement resources and learning paths are accessible for managing and modifying, and new enablement resources and learning paths may be created.
 
-![chlimage_1-164](assets/chlimage_1-164.png)
+![community-resources](assets/community-resources.png)
 
 #### Search {#search-features}
 
-![chlimage_1-165](assets/chlimage_1-165.png)
+![searchsite](assets/searchsite.png)
 
 Select the side-panel toggle icon in order to search for an enablement resource or learning path. When selected, a search panel opens up on the left side of the console and provides a text box into which search terms may be entered.
 
-![chlimage_1-166](assets/chlimage_1-166.png)
+![search-result](assets/search-result.png)
 
 #### Selection Mode {#selection-mode}
 
 To select multiple enablement resources, select the first by hovering over the card and selecting the checkmark icon. Once selected, selecting any other card will add it to the selection group. Selecting a second time de-selects the card.
 
-![chlimage_1-167](assets/chlimage_1-167.png)
+![selection-mode](assets/selection-mode.png)
 
 ## Create a Resource {#create-a-resource}
 
-![chlimage_1-168](assets/chlimage_1-168.png)
+![create-resource](assets/create-resource1.png)
 
 To add a new enablement resource to the community site
 
@@ -120,7 +120,7 @@ When the resource is part of a course, a learning path, members should only be a
 
 ### 1 Basic Info {#basic-info}
 
-![chlimage_1-169](assets/chlimage_1-169.png)
+![resource-basicinfo](assets/resource-basicinfo.png)
 
 * **[!UICONTROL Add Image]**
 
@@ -164,13 +164,13 @@ When the resource is part of a course, a learning path, members should only be a
 
 ### 2 Add Content {#add-content}
 
-![chlimage_1-170](assets/chlimage_1-170.png)
+![resource-addcontent](assets/resource-addcontent.png)
 
 While it appears as if multiple enablement resources might be selected, only one is allowed.
 
 Select the `'+' icon`, in the upper right corner, to begin the process of choosing the resource by identifying the source.
 
-![chlimage_1-171](assets/chlimage_1-171.png)
+![upload-resource](assets/upload-resource1.png)
 
 * **[!UICONTROL Upload from my local files]**
   
@@ -224,7 +224,7 @@ Select the `'+' icon`, in the upper right corner, to begin the process of choosi
 
 #### Example of an added video resource {#example-of-an-added-video-resource}
 
-![chlimage_1-172](assets/chlimage_1-172.png)
+![add-video](assets/add-video.png)
 
 * **[!UICONTROL Resource Cover Image]**
 
@@ -236,7 +236,7 @@ Select the `'+' icon`, in the upper right corner, to begin the process of choosi
 
 ### 3 Settings {#settings}
 
-![chlimage_1-173](assets/chlimage_1-173.png)
+![resource-settings](assets/resource-settings.png)
 
 >[!NOTE]
  >
@@ -279,7 +279,7 @@ Select the `'+' icon`, in the upper right corner, to begin the process of choosi
 
 ### 4 Assignments {#assignments}
 
-![chlimage_1-174](assets/chlimage_1-174.png)
+![resource-assignments](assets/resource-assignments.png)
 
 * **[!UICONTROL Add Assignees]**
   
@@ -287,13 +287,13 @@ Select the `'+' icon`, in the upper right corner, to begin the process of choosi
 
 * Select **[!UICONTROL Create]**.
 
-  ![chlimage_1-175](assets/chlimage_1-175.png)
+  ![resourceinfo](assets/resourceinfo.png)
 
 Successful creation of the enablement resource returns to the Resources console with the newly created resource selected. From this console, it is possible to [manage the resource](#managing-a-resource).
 
 ## Create a Learning Path {#create-a-learning-path}
 
-![chlimage_1-176](assets/chlimage_1-176.png)
+![add-learning-path](assets/add-learning-path.png)
 
 To add a new learning path to the community site
 
@@ -314,7 +314,7 @@ For enablement resources included in a learning path, the assignments should onl
 
 ### Basic Info {#basic-info-1}
 
-![chlimage_1-177](assets/chlimage_1-177.png)
+![learningpath-basic](assets/learningpath-basic1.png)
 
 * **[!UICONTROL Add Image]**
 
@@ -358,7 +358,7 @@ For enablement resources included in a learning path, the assignments should onl
 
 ### Add Prerequisites {#add-prerequisites}
 
-![chlimage_1-178](assets/chlimage_1-178.png)
+![learningpath-prerequisites](assets/learningpath-prerequisites.png)
 
 * **[!UICONTROL Prerequisite Learning Paths]**
   
@@ -368,7 +368,7 @@ For enablement resources included in a learning path, the assignments should onl
 
 ### Add Resources {#add-resources}
 
-![chlimage_1-179](assets/chlimage_1-179.png)
+![learningpath-addresource](assets/learningpath-addresource.png)
 
 * **[!UICONTROL Enforce Order in Learning Path]**
 
@@ -387,7 +387,7 @@ For enablement resources included in a learning path, the assignments should onl
 
 ### Settings {#settings-1}
 
-![chlimage_1-180](assets/chlimage_1-180.png)
+![learningpath-settings1](assets/learningpath-settings1.png)
 
 * **[!UICONTROL Add Enrollments]**
 
@@ -425,7 +425,7 @@ To upload a new version of the enablement resource, it is recommended to create 
 
 ### Edit Resource {#edit-resource}
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![edit-resource](assets/edit-resource.png)
 
 By selecting the pencil icon, the steps shown for creating a an enablement resource are made available so that any of the information provided may be modified.
 
@@ -433,13 +433,13 @@ If the only change is to modify assignments on the Settings step, then saving th
 
 ### Delete Resource {#delete-resource}
 
-![chlimage_1-182](assets/chlimage_1-182.png)
+![delete-resource](assets/delete-resource.png)
 
 By selecting the trashcan icon, the enablement resource will be `Deleted` after confirmation.
 
 ### Publish {#publish}
 
-![chlimage_1-183](assets/chlimage_1-183.png)
+![publish-resource](assets/publish-resource1.png)
 
 Before learners are able to see an assigned enablement resourse, it must be published:
 
@@ -451,25 +451,25 @@ Even though the dialog states the action is queued, it often is published immedi
 
 ### Unpublish {#unpublish}
 
-![chlimage_1-184](assets/chlimage_1-184.png)
+![unpublish](assets/unpublish.png)
 
 To temporarily make the enablement resources unaccessible to members in the publish environment without deleting it, use the world icon to `Unpublish` the resource.
 
 ### Report {#report}
 
-![chlimage_1-185](assets/chlimage_1-185.png)
+![resource-reports](assets/resource-reports.png)
 
 The Report icon provides access to the reports generated when learners interact with their assigned enablement resources in the publish environment. The report varies depending on the type of resource.
 
 For all learning paths, it is possible to view a report based either on resources or learners ( `User Report`.)
 
-![chlimage_1-186](assets/chlimage_1-186.png)
+![learningpath-info](assets/learningpath-info1.png)
 
 This Report is specifically for the current enablement resource or learning path. The depth of reporting provided depends on whether or not [Adobe Analytics](analytics.md) is licensed and enabled for the community site. The [Timeline](#timeline), [Viewer Engagement](#viewer-engagement), and [Engagement by Device](#engagement-by-device) reports are imported from Adobe Analytics based on the [polling interval](analytics.md#report-importer).
 
 For all enablement resources, regardless of whether or not Adobe Analytics is enabled, there are reports on [Assignee Status](#assignee-status) and [Ratings](#ratings) as well as a [Report Summary](#report-summary) table.
 
-![chlimage_1-187](assets/chlimage_1-187.png)
+![resource-report](assets/resource-report1.png)
 
 #### Timeline {#timeline}
 

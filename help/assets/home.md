@@ -11,6 +11,9 @@ This guide covers all Experience Manager Assets tasks, such as how to create, ma
 
 ## Key Experience Manager articles
 
+<!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
+-->
+
 * [Getting Started with Experience Manager](https://helpx.adobe.com/experience-manager/get-started.html)
 * [Experience Manager 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)

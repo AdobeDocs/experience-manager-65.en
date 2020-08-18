@@ -57,7 +57,7 @@ A *[social graph](/help/communities/essentials-socialgraph.md)* captures the fol
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>see <a href="/help/communities/activities.md">Activity Streams Feature</a></td>
+   <td>See <a href="/help/communities/activities.md">Activity Streams Feature</a></td>
   </tr>
  </tbody>
 </table>

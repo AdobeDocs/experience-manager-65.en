@@ -29,7 +29,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following Java code example imports data into a PDF form. The data is located in an XML file named *Loan_data.xml* and the PDF form is saved as a PDF file named *ResultLoanForm.pdf*. (See [Importing Form Data](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -131,7 +131,7 @@ The following Java code example imports data into a PDF form. The data is locate
 
 The following Java code example exports data from a PDF form. The form data is saved as an XML file named *Loan_data.xml*. (See [Exporting Form Data](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

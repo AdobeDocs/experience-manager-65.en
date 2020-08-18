@@ -16,7 +16,7 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
 ## Relate assets {#relating-assets}
 
-1. From the Experience Manager interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
+1. From the [!DNL Experience Manager] interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
 
    ![open an asset's Properties page to relate the asset](assets/asset-properties-relate-assets.png)
 
@@ -30,10 +30,7 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. To relate another asset with the asset you selected, click **[!UICONTROL Relate]** from the toolbar.
-
-   ![chlimage_1-275](assets/chlimage_1-275.png)
-
+1. To relate another asset with the asset you selected, click **[!UICONTROL Relate]** ![relate assets](assets/do-not-localize/link-relate.png) from the toolbar.
 1. Do one of the following:
 
     * To relate the source file for the asset, select **[!UICONTROL Source]** from the list.
@@ -53,7 +50,7 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
 1. To un-relate an asset, click **[!UICONTROL Unrelate]** from the toolbar.
 
-   ![chlimage_1-279](assets/chlimage_1-279.png)
+   ![unrelate assets](assets/do-not-localize/link-unrelate-icon.png)
 
 1. Select the asset(s) you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click **[!UICONTROL Unrelate]**.
 
@@ -61,9 +58,9 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
 1. Click **[!UICONTROL OK]** to close the dialog. The assets for which you removed relations are deleted from the list of related assets under the **[!UICONTROL Related]** section.
 
-## Translating Related Assets {#translating-related-assets}
+## Translate related assets {#translating-related-assets}
 
-Creating source/ derived relationships between assets using the Related Assets feature is also helpful in translation workflows. When you run a translation workflow on a derived asset, [!DNL Experience Manager Assets] automatically fetches any asset that the source file references and includes it for translation. This way, the asset referenced by the source asset is translated along with the source and derived assets. For example, consider a scenario where your English language copy includes a derived asset and its source file as shown.
+Creating source/ derived relationships between assets using the related assets feature is also helpful in translation workflows. When you run a translation workflow on a derived asset, [!DNL Experience Manager Assets] automatically fetches any asset that the source file references and includes it for translation. This way, the asset referenced by the source asset is translated along with the source and derived assets. For example, consider a scenario where your English language copy includes a derived asset and its source file as shown.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 

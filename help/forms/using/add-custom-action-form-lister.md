@@ -22,7 +22,7 @@ This article showcases how to create a button to send the link of a form, direct
 
 The required code to add the action to the template is available below. The `onclick` attribute in the code snippet has a script to send a link of a form via email.
 
-```mxml
+```html
 <div class="__FP_boxes-container __FP_single-color">
     <div class="boxes __FP_boxes __FP_single-color" data-repeatable="true">
   <div class="__FP_boxes-thumbnail">

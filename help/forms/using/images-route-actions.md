@@ -47,7 +47,7 @@ To customize the images used in route actions, perform the steps described in [G
 
 1. If the name of the CSS style is same as the route action name coming from the server, modify the following code in `/apps/ws/js/runtime/templates/task.html`:
 
-    ```
+    ```jsp
     <%if(routeList == null){%>
                 <li>
                     <a href="javascript:void(0);" title="<%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%>" value="<%= availableCommands.directCommands[0]%>" data-action="route"><%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%></a>
@@ -77,7 +77,7 @@ To customize the images used in route actions, perform the steps described in [G
 
 1. If the name of the CSS style is different from the route action name coming from the server, modify the following code in `/apps/ws/js/runtime/templates/task.html`. It adds a stack of the `if-else` servlet conditions to map the style with the route action name.
 
-```
+```jsp
 <%if(routeList == null){%>
             <li>
                 <a href="javascript:void(0);" title="<%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%>" value="<%= availableCommands.directCommands[0]%>" data-action="route"><%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%></a>
@@ -117,7 +117,7 @@ To
 
 1. If the name of the CSS style is same as the route action name coming from the server, modify the following code in `/apps/ws/js/runtime/templates/taskdetails.html`:
 
-    ```
+    ```jsp
 
     <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
                             <li class="routeAction">
@@ -138,7 +138,7 @@ To
 
 1. If the name of the CSS style is different from the route action name coming from the server, modify the following code in `/apps/ws/js/runtime/templates/taskdetails.html`. It adds a stack of `if-else` servlet conditions to map the style with the route action name.
 
-    ```
+    ```jsp
 
     <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
                             <li class="routeAction">

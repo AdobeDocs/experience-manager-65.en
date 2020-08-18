@@ -7,7 +7,7 @@ mini-toc-levels: 1
 
 # Manage collections {#managing-collections}
 
-A collection is a set of assets within Adobe Experience Manager Assets. Use collections to share assets between users. The set can be static collection or a dynamic collection that is based on search results.
+A collection is a set of assets within [!DNL Adobe Experience Manager Assets]. Use collections to share assets between users. The set can be static collection or a dynamic collection that is based on search results.
 
 Unlike folders, a collection can include assets from different locations. You can share collections with various users that are assigned different levels of privileges, including viewing, editing, and so on.
 
@@ -21,7 +21,7 @@ Collections are of the following types, based on the way they collate assets:
 
 ## Access the collections console {#navigating-the-collections-console}
 
-To open the **[!UICONTROL Collections]**, in the Experience Manager interface, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+To open the **[!UICONTROL Collections]**, in the [!DNL Experience Manager] interface, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
 ## Create a collection {#creating-a-collection}
 
@@ -45,15 +45,15 @@ You can create a collection with static references, for example a collection wit
 
    >[!NOTE]
    >
-   >Experience Manager Assets lets you create review tasks for a collection similar to the way you create review tasks for an assets folder.
+   >[!DNL Experience Manager Assets] lets you create review tasks for a collection similar to the way you create review tasks for an assets folder.
 
-   To add assets to the collection, navigate to the Assets user interface. For details, see [Add assets to a collection](#adding-assets-to-a-collection).
+   To add assets to the collection, navigate to the [!DNL Assets] user interface. For details, see [Add assets to a collection](#adding-assets-to-a-collection).
 
 ### Create collections using dropzone {#create-collections-using-dropzone}
 
-You can drag assets from the Assets UI to a collection. You can also create a copy of a collection and drag the assets there.
+You can drag assets from the [!DNL Assets] user interface to a collection. You can also create a copy of a collection and drag the assets there.
 
-1. From the Assets user interface, select the assets you want to add to a collection.
+1. From the [!DNL Assets] user interface, select the assets you want to add to a collection.
 1. Drag the assets to the **[!UICONTROL Drop in Collection]** zone. Alternatively, click **[!UICONTROL To Collection]** from the toolbar.
 
    ![drop_in_collection](assets/drop_in_collection.png)
@@ -71,7 +71,7 @@ A Smart Collection uses a search criteria to dynamically populate assets. You ca
 
 To create a smart collection, follow the steps:
 
-1. Navigate to the Assets user interface and click search.
+1. Navigate to the [!DNL Assets] user interface and click search.
 
 1. Type the search keyword in the Omnisearch box and press `Enter`. Open the Filters panel and apply a search filter.
 
@@ -95,18 +95,13 @@ To create a smart collection, follow the steps:
 
    ![collection_listing](assets/collection_listing.png)
 
-   The label of the **[!UICONTROL Create Smart Selection]** button changes to **[!UICONTROL Edit Smart Selection]**. To edit the settings of the smart collection, select **[!UICONTROL Files]** from the **[!UICONTROL Files & Folders]** list. Then, Click the **[!UICONTROL Edit Smart Selection]** button.
-
-   ![chlimage_1-7](assets/chlimage_1-112.png)
+   The label of the **[!UICONTROL Create Smart Selection]** option changes to **[!UICONTROL Edit Smart Selection]**. To edit the settings of the smart collection, select **[!UICONTROL Files]** from the **[!UICONTROL Files & Folders]** list. Click the **[!UICONTROL Edit Smart Selection]** ![edit smart collection](assets/do-not-localize/edit-smart-collection.png) option.
 
 ## Add assets to a collection {#adding-assets-to-a-collection}
 
 You can add assets to a collection that contains a list of referenced assets or folders. Smart collections use a search query to populate assets. Therefore, static references to assets and folders are not applicable to them.
 
-1. In the Assets user interface, select the asset and click **[!UICONTROL To Collection]** from the toolbar.
-
-   ![chlimage_1-8](assets/chlimage_1-113.png)
-
+1. In the [!DNL A]ssets user interface, select the asset and click **[!UICONTROL To Collection]** ![add to collection](assets/do-not-localize/add-to-collection.png) from the toolbar.
    Alternatively, you can drag the asset to the **[!UICONTROL Drop in Collection]** area on the interface. Add the assets when the label of the region changes to **[!UICONTROL Drop to Add]**.
 
 1. In the **[!UICONTROL Add To Collection]** page, select the collection to which you want to add the asset.
@@ -117,12 +112,9 @@ You can add assets to a collection that contains a list of referenced assets or 
 
 Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#saved-searches).
 
-1. In the Assets user interface, click the search option from the toolbar.
-
-   ![chlimage_1-9](assets/chlimage_1-110.png)
-
+1. In the [!DNL Assets] user interface, click the search option ![search option](assets/do-not-localize/search_icon.png) from the toolbar.
 1. With the cursor in the Omnisearch box, press the Return key.
-1. In the Experience Manager interface, open the Filters panel.
+1. In the [!DNL Experience Manager] interface, open the Filters panel.
 1. From the **[!UICONTROL Saved Searches]** list, select the smart collection you want to modify. The Search panel displays the filters configured for the saved search.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -157,7 +149,7 @@ You can edit the metadata of multiple collections simultaneously. This functiona
 
    >[!NOTE]
    >
-   >* In the [!UICONTROL Properties] page, you can remove collections from the list of collections by deselecting them. The collections list has all the collections selected by default. Experience Manager does not update the metadata of the collections that you remove.
+   >* In the [!UICONTROL Properties] page, you can remove collections from the list of collections by deselecting them. The collections list has all the collections selected by default. [!DNL Experience Manager] does not update the metadata of the collections that you remove.
    >* At the top of the list, select the check box near **[!UICONTROL Title]** to toggle between selecting the collections and clearing the list.
 
 1. Click **[!UICONTROL Save & Close]** from the toolbar, and then close the confirmation dialog.
@@ -175,15 +167,15 @@ To customize the metadata [!UICONTROL Properties] page, including adding, modify
 
 ## Search collections {#searching-collections}
 
-You can search collections from the Collections console. When you search with keywords in the Omnisearch box, Assets searches for collection names, metadata, and the tags added to the collections.
+You can search collections from the Collections console. When you search with keywords in the Omnisearch box, [!DNL Assets] searches for collection names, metadata, and the tags added to the collections.
 
-If you search for collections from the top level, only individual collections are returned in search results. Assets or folders within the collections are excluded. In all other cases (for example, within an individual collection or in a folder hierarchy), all relevant assets, folders, and collections are returned.
+If you search for collections from the top level, only individual collections are returned in search results. [!DNL Assets] or folders within the collections are excluded. In all other cases (for example, within an individual collection or in a folder hierarchy), all relevant assets, folders, and collections are returned.
 
 ## Search within collections {#searching-within-collections}
 
 In the Collections console, click a collection to open it.
 
-Within a collection, Experience Manager search is restricted to assets (and their tags and metadata) within the collection that you are viewing. When you search within a folder, all matching assets and child folders within the current folder are returned. When you search within a collection, only matching assets, folders, and other collections that are direct members of the collection are returned.
+Within a collection, [!DNL Experience Manager] search is restricted to assets (and their tags and metadata) within the collection that you are viewing. When you search within a folder, all matching assets and child folders within the current folder are returned. When you search within a collection, only matching assets, folders, and other collections that are direct members of the collection are returned.
 
 ## Edit collection settings {#editing-collection-settings}
 
@@ -234,11 +226,11 @@ You can add a collection to another collection, thereby creating a nested collec
 
 ## Saved searches {#saved-searches}
 
-In the Assets user interface, you can search or filter assets based on certain rules, search criteria, or custom search facets. If you save these as **[!UICONTROL Saved Searches]**, you can access them later from the **[!UICONTROL Saved Searches]** list in the Filter panel. Creating a saved search also creates a smart collection.
+In the [!DNL Assets] user interface, you can search or filter assets based on certain rules, search criteria, or custom search facets. If you save these as **[!UICONTROL Saved Searches]**, you can access them later from the **[!UICONTROL Saved Searches]** list in the Filter panel. Creating a saved search also creates a smart collection.
 
 ![saved_searches_list](assets/saved_searches_list.png)
 
-Saved searches are created when you create a smart collection. Smart collections are automatically added to the **[!UICONTROL Saved Searches]** list. The Saved Searches query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`.
+Saved searches are created when you create a smart collection. Smart collections are automatically added to the **[!UICONTROL Saved Searches]** list. The [!UICONTROL Saved Searches] query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`. There are no limits to the searches that you can save and on the saved searches displayed in the list.
 
 >[!NOTE]
 >
@@ -248,15 +240,12 @@ Editing saved searches is the same as editing smart collections. For details, se
 
 To delete saved searches, follow these steps:
 
-1. In the Assets user interface, click search ![chlimage_1-13](assets/chlimage_1-114.png).
-
-1. With the cursor in the Omnisearch field, press the Enter key.
-
-1. In the Experience Manager interface, open the Filters panel.
-
+1. In the [!DNL Assets] user interface, click search ![search option](assets/do-not-localize/search_icon.png).
+1. With the cursor in the Omnisearch field, press the Return key.
+1. In the [!DNL Experience Manager] interface, open the Filters panel.
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
-   ![select_smart_collection-1](assets/select_smart_collection-1.png)
+   ![select_smart_collection](assets/select_smart_collection.png)
 
 1. In the dialog, click **[!UICONTROL Delete]** to delete the saved search.
 
@@ -265,7 +254,7 @@ To delete saved searches, follow these steps:
 You can run a workflow for the assets within a collection. If the collection contains nested collections, the workflow also runs on the assets within the nested collections. However, if the collection and the nested collection contain duplicate assets, the workflow only runs once for such assets.
 
 1. Open **[!UICONTROL Assets]** > **[!UICONTROL Collections]**. To execute a workflow on a specific collection, select it.
-1. Open **[!UICONTROL Timeline]** rail. Click ![chlimage_1-14](assets/chlimage_1-137.png) and click **[!UICONTROL Start Workflow]**.
+1. Open **[!UICONTROL Timeline]** rail. Click ![chevron up](assets/do-not-localize/chevron-up-icon.png) and click **[!UICONTROL Start Workflow]**.
 1. In the **[!UICONTROL Start Workflow]** section, select a workflow model from the list. For example, select the **[!UICONTROL DAM Update Asset]** model.
 1. Enter a title for the workflow and click **[!UICONTROL Start]**.
 1. In the dialog, click **[!UICONTROL Proceed]**. The workflow processes all the assets in the selected collection.

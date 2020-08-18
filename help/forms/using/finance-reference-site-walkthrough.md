@@ -297,7 +297,9 @@ Perform the following steps to experience the creation of A/B test for We.Financ
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
 
-   >[!NOTE] Remove the cookie with the name **mbox** from browser’s cookie persistence before opening the form next time. You will see experience A and B of the form at random.
+   >[!NOTE]
+   > 
+   >Remove the cookie with the name **mbox** from browser’s cookie persistence before opening the form next time. You will see experience A and B of the form at random.
 
 1. Select the form, click **More**, and click **A/B Testing Report**. You won’t find much data in the report as you have just started the testing. Let’s now provide some seed data to see how A/B Testing report looks like.
 1. Open CRXDE Lite and take a back-up of the following file: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js

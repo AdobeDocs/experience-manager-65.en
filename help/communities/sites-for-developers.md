@@ -67,7 +67,7 @@ Identify the custom template by adding a `page-template` property to the configu
 
 `/content/sites/sample/en/configuration`
 
-![chlimage_1-80](assets/chlimage_1-80.png)
+![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
 Be sure to **Save All** and replicate custom code to all AEM instances (custom code is not included when the community site content is published from the console).
 
