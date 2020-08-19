@@ -49,5 +49,5 @@ See [Setting Tag Permissions](../../help/sites-administering/tags.md#setting-tag
 
 The following is how it appears in CRXDE when an administrator applies read permissions to `/etc/tag/discussions` for the group `Community Engage Members`.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
+![tag-permissions](assets/tag-permissions.png)
 
