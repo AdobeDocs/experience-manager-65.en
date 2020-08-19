@@ -82,15 +82,15 @@ After the customer details are retrieved from the database, you can update the s
 
    ![update-shipping-address](assets/update-shipping-address.png)
 
-1. ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
+   ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-   Drag-and-drop the **[!UICONTROL Shipping Address, State, and Zip Code]** field from the Form Objects tab to the corresponding  tablename .property (for example,  customerdetails .shippingAddress) of the **[!UICONTROL Drop object or select here]** field in the **[!UICONTROL INPUT]** box. All the fields prefixed with  tablename  (For example,  customerdetails  in this use case) serve as input data for the update service. All the content provided in these fields is updated in the data source.
+1.   Drag-and-drop the **[!UICONTROL Shipping Address, State, and Zip Code]** field from the [!UICONTROL Form Objects] tab to the corresponding  tablename .property (for example,  customerdetails .shippingAddress) of the **[!UICONTROL Drop object or select here]** field in the **[!UICONTROL INPUT]** box. All the fields prefixed with  tablename  (For example,  customerdetails  in this use case) serve as input data for the update service. All the content provided in these fields is updated in the data source.
 
-   >[!NOTE]
-   >
-   >Do not drag-and-drop the **[!UICONTROL Name]** and **[!UICONTROL Customer ID]** fields to the corresponding tablename.property (for example, customerdetails.name). It helps avoid updating name and ID of the customer by mistake.
+     >[!NOTE]
+     >
+     >Do not drag-and-drop the **[!UICONTROL Name]** and **[!UICONTROL Customer ID]** fields to the corresponding tablename.property (for example, customerdetails.name). It helps avoid updating name and ID of the customer by mistake.
 
-1. Drag-and-drop the **[!UICONTROL Customer ID]** field from the Form Objects tab to the id field in the **[!UICONTROL INPUT]** box. Fields without a prefixed  tablename  (for example,  customerdetails  in this use case) serve as a search parameter for the update service. The **[!UICONTROL id]** field in this use case uniquely identifies a record in the  customerdetails  table.
+1. Drag-and-drop the **[!UICONTROL Customer ID]** field from the [!UICONTROL Form Objects] tab to the id field in the **[!UICONTROL INPUT]** box. Fields without a prefixed  tablename  (for example,  customerdetails  in this use case) serve as a search parameter for the update service. The **[!UICONTROL id]** field in this use case uniquely identifies a record in the  **customerdetails**  table.
 1. Tap **[!UICONTROL Done]** to save the rule. On the rule editor window, tap **[!UICONTROL Close]**.
 1. Preview the adaptive form. Retrieve details of a customer, update the shipping address, and submit the form. When you retrieve details of the same customer again, the updated shipping address is displayed.
 
@@ -100,9 +100,9 @@ You should run validation on the form to ensure that the data entered in the for
 
 Adaptive forms provide several components with built-in validations, for example, email, and numeric fields that you can use for common use cases. Use the rule editor for advanced use cases, for example, to display an error message when the database returns zero (0) records (no records).
 
-The following procedure shows how to create a rule to displays an error message if the Customer ID entered in the form does not exist in the database. The rule also brings the focus to and resets the Customer ID field. The rule uses [the dataIntegrationUtils API of the form data model service](/help/forms/using/invoke-form-data-model-services.md) to check if the Customer ID exists in the database.
+The following procedure shows how to create a rule to displays an error message if the Customer ID entered in the form does not exist in the database. The rule also brings the focus to and resets the **[!UICONTROL Customer ID]** field. The rule uses [the dataIntegrationUtils API of the form data model service](/help/forms/using/invoke-form-data-model-services.md) to check if the Customer ID exists in the database.
 
-1. Tap the **[!UICONTROL Customer ID]** field and tap the `Edit Rules` icon. The Rule Editor window opens.
+1. Tap the **[!UICONTROL Customer ID]** field and tap the `Edit Rules` icon. The [!UICONTROL Rule Editor] window opens.
 1. Tap the **[!UICONTROL + Create]** icon to add a rule. It opens the Visual Editor.
 
    In the Visual Editor, the **[!UICONTROL WHEN]** statement is selected by default. Also, the form object (in this case, **[!UICONTROL Customer ID]**) from where you launched the rule editor is specified in the **[!UICONTROL WHEN]** statement.
@@ -125,7 +125,7 @@ The following procedure shows how to create a rule to displays an error message 
    };
    ```
 
-1. Replace the guidelib.dataIntegrationUtils.executeOperation (operationInfo, inputs, outputs) section with the following code:
+1. Replace the `guidelib.dataIntegrationUtils.executeOperation (operationInfo, inputs, outputs)` section with the following code:
 
    ```javascript
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, function (result) {
