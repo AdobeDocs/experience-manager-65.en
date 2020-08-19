@@ -238,7 +238,7 @@ Apart from the out of the box filters in [Filter Rail](/help/communities/moderat
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-The [sample project](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) on Github implements Tag filter, to filter the UGC list based on whether the specific tags are applied on user-generated content. You can follow the sample code and build analogous filters for other similar UGC metadata fields.
+The [sample project](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) on Github implements Tag filter, to filter the UGC list based on whether the specific tags are applied on user-generated content. You can follow the sample code and build analogous filters for other similar UGC metadata fields.
 
 To install the sample for the Tags filter:
 
