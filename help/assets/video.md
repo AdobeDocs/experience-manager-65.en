@@ -1089,7 +1089,7 @@ To add captions or subtitles to video:
    Generally, you want to name the caption VTT file the same name as the video file, and append it with the language locale, such as -EN, or -FR, or -DE, and so on. By doing so, it can help you with automating the generation of the video URLs using your existing web content management system.
 
 1. In AEM, upload your WebVTT caption file into DAM.
-1. Navigate to the *published *video asset that you want to associate with the caption file that you uploaded.
+1. Navigate to the *published* video asset that you want to associate with the caption file that you uploaded.
 
    Remember that URLs are only available to copy *after* you have first *published* the assets.
 

@@ -55,7 +55,7 @@ For a community site, after the site is published and the tags are published, it
 
 The following is how it appears in CRXDE when an administrator applies read permissions to `/etc/tags/ski-catalog` for the group `Community Enable Members`.
 
-![chlimage_1-420](assets/chlimage_1-420.png)
+![site-tags](assets/site-tags.png)
 
 ## Catalog Tag Namespaces {#catalog-tag-namespaces}
 
@@ -63,7 +63,7 @@ The catalog feature uses tags to define itself. When configuring the catalog fun
 
 The Catalog function includes a tag setting which defines the tags listed in the filter UI for the catalog. The setting "All Namespaces" refers to the scope of tag namespaces selected for the community site.
 
-![chlimage_1-421](assets/chlimage_1-421.png)
+![catalog-namespace](assets/catalog-namespace.png)
 
 ## Applying Tags to Enablement Resources {#applying-tags-to-enablement-resources}
 
@@ -84,7 +84,7 @@ Thus, any enablement resource tagged with one of:
 
 will appear in `Ski Catalog` after the enablement resource has been published.
 
-![chlimage_1-422](assets/chlimage_1-422.png)
+![basic-info](assets/applytags-basicinfo.png)
 
 ## Viewing Catalog on Publish {#viewing-catalog-on-publish}
 
@@ -96,5 +96,5 @@ If tag namespaces were added and are missing, ensure the tags and the site were 
 
 If no enablement resources appear after selecting a tag when viewing the catalog, ensure there is a tag from the catalog's namespace(s) applied to the enablement resource.
 
-![chlimage_1-423](assets/chlimage_1-423.png)
+![view-catalog](assets/viewcatalog.png)
 
