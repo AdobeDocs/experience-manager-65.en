@@ -24,7 +24,7 @@ For a discussion of storage options and deployment topologies, visit:
 
 ## Storage Configuration Console {#storage-configuration-console}
 
-![chlimage_1-188](assets/chlimage_1-188.png)
+![jsrp-configuration](assets/jsrp-configuration.png)
 
 In the author environment, to reach the storage configuration console.
 

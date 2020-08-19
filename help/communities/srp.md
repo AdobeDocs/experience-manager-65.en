@@ -24,8 +24,9 @@ All SCF components are implemented using the SRP API, allowing code to be develo
 ***The SocialResourceProvider API is available only to licensed customers of AEM Communities.***
 
 >[!NOTE]
->
->**Custom Components**: For licensed customers of AEM Communities, the SRP API is available to developers of custom components for the purpose of accessing UGC without regard to the underlying topology. See [SRP and UGC Essentials](srp-and-ugc.md).
+ >
+ >**Custom Components**: For licensed customers of AEM Communities, the SRP API is available to developers of custom components for the purpose of accessing UGC without regard to the underlying topology. See [SRP and UGC Essentials](srp-and-ugc.md).
+ >
 
 See also:
 
