@@ -11,13 +11,13 @@ content-type: reference
 
 ## Introduction {#introduction}
 
-One of the key challenges in upgrading Adobe Experience Manager is the downtime associated with the author environment when an in-place upgrade is performed. Content authors will not be able to access the environment during an upgrade. Therefore it is desirable to minimize the amount of time it takes to perform the upgrade. For large repositories, especially AEM Assets projects, which typically have large data stores and a high level of asset uploads per hour, reindexing of Oak indices takes a significant percentage of the upgrade time.
+One of the key challenges in upgrading Adobe Experience Manager is the downtime associated with the author environment when an in-place upgrade is performed. Content authors will not be able to access the environment during an upgrade. Therefore it is desirable to minimize the amount of time it takes to perform the upgrade. For large repositories, especially AEM Assets projects, which typically have large data stores and a high level of asset uploads per hour, reindexing of Oak indexes takes a significant percentage of the upgrade time.
 
-This section describes how to use the Oak-run tool to reindex the repository **before** performing the upgrade, thus reducing the amount of downtime during the actual upgrade. The steps presented can be applied to [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) indices for versions AEM 6.4 and higher.
+This section describes how to use the Oak-run tool to reindex the repository **before** performing the upgrade, thus reducing the amount of downtime during the actual upgrade. The steps presented can be applied to [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) indexes for versions AEM 6.4 and higher.
 
 ## Overview {#overview}
 
-New versions of the AEM introduce changes to Oak index definitions as the feature set is expanded. Changes to the Oak indices force reindexing when upgrading the AEM instance. Reindexing is expensive for asset deployments as text in assets (for example, text in pdf file) is extracted and indexed. With MongoMK repositories, data is persisted over the network, further increasing the amount of time reindexing takes.
+New versions of the AEM introduce changes to Oak index definitions as the feature set is expanded. Changes to the Oak indexes force reindexing when upgrading the AEM instance. Reindexing is expensive for asset deployments as text in assets (for example, text in pdf file) is extracted and indexed. With MongoMK repositories, data is persisted over the network, further increasing the amount of time reindexing takes.
 
 The problem most customers are facing during an upgrade is reducing the downtime window. The solution is to **skip** the reindexing activity during the upgrade. This can be achieved by creating the new indeces **prior** to performing the upgrade, then simply importing them during the upgrade.
 
@@ -31,8 +31,8 @@ In addition, this is the order of the steps as described in the approach:
 
 1. Text from binaries is extracted first
 2. Target index definitions are created
-3. Offline indices are created
-4. The indices are then imported during the upgrade process
+3. Offline indexes are created
+4. The indexes are then imported during the upgrade process
 
 ### Text Extraction {#text-extraction}
 
