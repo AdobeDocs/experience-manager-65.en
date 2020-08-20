@@ -295,7 +295,7 @@ Perform the following steps to configure the Brand Portal cloud service:
 
 1. Log in to your AEM Assets author instance.
 
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. From the **Tools** ![Tools](assets/do-not-localize/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. In the Brand Portal Configurations page, click **[!UICONTROL Create]**.
 
