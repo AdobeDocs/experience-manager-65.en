@@ -14,28 +14,28 @@ docset: aem65
 
 # Configure AEM Assets with Brand Portal {#configure-integration-65}
 
-Adobe Experience Manager (AEM) Assets is configured with Brand Portal via Adobe Developer Console, which procures an IMS token for authorization of your Brand Portal tenant.
+Adobe Experience Manager (AEM) Assets is configured with Brand Portal through Adobe Developer Console, which procures an IMS token for authorization of your Brand Portal tenant.
 
 >[!NOTE]
  >
- >Configuring AEM Assets with Brand Portal via Adobe Developer Console is supported on AEM 6.5.4.0 and above.
+ >The configuration is supported on AEM 6.5.4.0 and above.
  >
- >Earlier, Brand Portal was configured in Classic UI via Legacy OAuth Gateway, which uses the JWT token exchange to obtain an IMS Access token for authorization. 
+ >Earlier, Brand Portal was configured through legacy OAuth Gateway, which uses the JWT token exchange to obtain an IMS Access token for authorization. 
  >
- >Configuration via Legacy OAuth is no longer supported from April 6, 2020, and is changed to configuring via Adobe Developer Console.
+ >Configuring legacy OAuth Gateway is no longer supported from April 6, 2020, and is changed to Adobe Developer Console.
  >
 
 >[!TIP]
  >
  >***For existing customers only*** 
  >
- >It is recommended to continue using existing legacy OAuth Gateway configuration. In case, you encounter problems with legacy OAuth Gateway configuration,  delete the existing configuration and create new configuration via Adobe Developer Console.
+ >It is recommended to continue using the existing legacy OAuth Gateway configuration. In case, you encounter problems, delete the existing legacy configuration and create configuration through Adobe Developer Console.
  >
 
 
 This help describes the following two use-cases: 
-* [New configuration](#configure-new-integration-65): If you are a new Brand Portal user and want to configure your AEM Assets author instance with Brand Portal, you can create new configuration on Adobe Developer Console. 
-* [Upgrade configuration](#upgrade-integration-65): If you are an existing Brand Portal user with your AEM Assets author instance configured with Brand Portal on legacy OAuth Gateway, it is recommended to delete the existing configurations and create new configuration on Adobe Developer Console.
+* [New configuration](#configure-new-integration-65): If you are a new Brand Portal user and want to configure your AEM Assets author instance with Brand Portal, you can create configuration through Adobe Developer Console. 
+* [Upgrade configuration](#upgrade-integration-65): If you are an existing Brand Portal user with your AEM Assets author instance configured with Brand Portal on legacy OAuth Gateway, delete the existing configurations and create configuration through Adobe Developer Console.
 
 The information provided is based on the assumption that anyone reading this Help is familiar with the following technologies:
 
@@ -47,8 +47,8 @@ The information provided is based on the assumption that anyone reading this Hel
 
 You require the following to configure AEM Assets with Brand Portal:
 
-* An up and running AEM Assets author instance with latest Service Pack.
-* Brand Portal tenant URL.
+* An up and running AEM Assets author instance with the latest Service Pack.
+* A Brand Portal tenant URL.
 * A user with system administrator privileges on the IMS organization of the Brand Portal tenant. 
 
 
