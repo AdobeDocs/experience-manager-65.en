@@ -18,6 +18,8 @@ AEM Forms provides reference site implementation to demonstrate how AEM Forms he
 
 We.Finance reference site draw real life use-cases to engage with existing and potential customers, right from the point of first touch to managing correspondences and transactions in a personalized and cost-effective manner.
 
+Install the We.Gov and We.Finance reference sites packages using [Software Distribution](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html). For more information, see [Deploy reference sites packages](#refsite).
+
 The reference sites allow you to explore and showcase the following key capabilities of AEM Forms.
 
 * Simplified authoring experience of engaging and responsive adaptive forms and interactive communications.
@@ -212,7 +214,7 @@ For AEM Forms reference sites, in the AEM DS Settings Service, specify URL of th
 Install the reference sites packages using [Software Distribution](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
 
 * [AEM Forms FSI Reference Site Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2FAEM-FORMS-6.5-FSI-REF-SITE)
-* [AEM Forms Gov Reference Site Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2FAEM-FORMS-6.5-GOV-REF-SITE)
+* [AEM Forms We.Gov demo package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=168&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fwe-gov-forms.pkg.all-2.0.2.zip)
 
 To learn more about how to use packages , see [How to Work With Packages](/help/sites-administering/package-manager.md).
 
