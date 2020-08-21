@@ -34,19 +34,21 @@ The documentation describes:
 
 ## Adding a Q&A Forum to a Page {#adding-a-q-a-forum-to-a-page}
 
-To add a `QnA` component to a page in author mode, use the component browser to locate `Communities / QnA`and drag it into place on a page where the QnA forum should appear.
+To add a `QnA` component to a page in author mode, use the component browser to locate `Communities / QnA` and drag it into place on a page where the QnA forum should appear.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/qna-essentials.md#essentials-for-client-side) are included, this is how the `QnA`component appears:
+When the [required client-side libraries](/help/communities/qna-essentials.md#essentials-for-client-side) are included, this is how the `QnA` component appears:
 
-![chlimage_1](assets/chlimage_1.png)
+![qna-component](assets/qna-component.png)
 
 ### Configuring QnA {#configuring-qna}
 
 Select the placed `QnA` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-1](assets/chlimage_1-1.png) ![qna-config](assets/qna-config.png)
+![configure](assets/configure-new.png) 
+
+![qna-config](assets/qna-config.png)
 
 #### Settings tab {#settings-tab}
 
