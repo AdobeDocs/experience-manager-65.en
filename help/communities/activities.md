@@ -38,13 +38,13 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/essentials-activities.md#essentials-for-client-side) are included, this is how the `Activity Streams` component will appear :
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![activity-streams](assets/activity-component.png)
 
 ### Configuring Activity Streams {#configuring-activity-streams}
 
 Select the placed `Activity Streams` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-494](assets/chlimage_1-494.png)
+![configure](assets/configure-new.png)
 
 Under the **User Activities** tab, specify which activities to display :
 
@@ -74,7 +74,7 @@ Under the **User Activities** tab, specify which activities to display :
 
 Components must be configured to enable following. Features that allow following are [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md), and [comments](/help/communities/comments.md).
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![following-view](assets/following-activities.png)
 
 The **Follow** button provides a means to follow entries as activities, [notifications](/help/communities/notifications.md), or [subscriptions](/help/communities/subscriptions.md). Each time the **Follow** button is selected, it is possible to toggle on or off a selection. The `Email Subscriptions` selection is only present when configured.
 
