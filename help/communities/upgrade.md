@@ -63,7 +63,7 @@ For all AEM 6.3 author and publish instances:
 
       * Select **Save**
 
-    ![chlimage_1-176](assets/chlimage_1-176.png)
+    ![utilities](assets/utilities.png)
 
 ### On-premise Storage {#on-premise-storage}
 
