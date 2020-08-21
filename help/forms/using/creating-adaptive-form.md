@@ -20,7 +20,7 @@ Follow these steps to create an adaptive form.
 
 1. Enter your credentials on the AEM login page.
 
-   After you are logged in, in the top-left corner, tap **[!UICONTROL Adobe Experience Manager &gt; Forms &gt; Forms & Documents]**.
+   After you are logged in, in the top-left corner, tap **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
 
    >[!NOTE]
    >
