@@ -213,9 +213,8 @@ After saving an Interactive Communication as a draft, you can retrieve it to con
 
 Implement the `ccrDocumentInstance` SPI to save an Interactive Communication as a draft. The following is a sample implementation of the `ccrDocumentInstance` SPI.
 
-   ```javascript
-
-   package Implementation;
+```javascript
+package Implementation;
 
 import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.exception.CCRDocumentException;
 import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.model.CCRDocumentInstance;
@@ -310,7 +309,7 @@ public class CCRDraftService implements CCRDocumentInstanceService {
         return draftDataMap;
     }
 }
-   ```
+```
 
 The `save`, `update`, `get`, and `getAll` operations call the database service to save an Interactive Communication as a draft, update an Interactive Communication, retrieve data from the database, and retrieve data for all Interactive Communications available in the database. This sample uses `mySQLDataBaseServiceCRUD` as the name of the database service.
 

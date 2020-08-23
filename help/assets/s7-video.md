@@ -141,7 +141,7 @@ The various video encodings are created according to the S7 encoding presets sel
 >
 >New video profiles and changes to them must be activated to publish.
 
-1. In AEM, tap **[!UICONTROL Tools > Configuration Console**.
+1. In AEM, tap **[!UICONTROL Tools] > [!UICONTROL Configuration Console]**.
 1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
 1. Create a new S7 Video Profile. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Give the new video profile page a name and click **[!UICONTROL Create.]**
 

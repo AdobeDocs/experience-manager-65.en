@@ -131,7 +131,7 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
    For example, if the registration ID was `87654321|MyCompany`, the customer name would be `MyCompany`.
 
-1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services**, then tap the Experience Manager logo and navigate to **[!UICONTROL General > CRXDE Lite.]**
+1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services]**, then tap the Experience Manager logo and navigate to **[!UICONTROL General > CRXDE Lite.]**
 1. Copy down the entire video rendition path from the JCR (Java Content Repository).
 
    For example, the video's rendition path may appear similar to the following:

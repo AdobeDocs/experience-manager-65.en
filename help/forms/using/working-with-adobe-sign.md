@@ -343,6 +343,4 @@ When Adobe Sign is configured for an adaptive form, the workflow configured usin
 
 * [Integrate Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
 * [Using Adobe Sign in an adaptive form](../../forms/using/working-with-adobe-sign.md)
-
-* [Using Adobe Sign with AEM Forms (Video)
-  ](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
+* [Using Adobe Sign with AEM Forms (Video)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)

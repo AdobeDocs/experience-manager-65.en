@@ -109,7 +109,7 @@ The store uses a data tree that is similar to the following example:
 
 Stores information about the current client environment such as the device, window, browser, date and time.
 
-### Source Location {#source-location-surferinfo
+### Source Location {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 

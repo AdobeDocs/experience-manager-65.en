@@ -55,7 +55,7 @@ For this reason we will cover the basics of both, and how to recognize them, on 
 
 >[!NOTE]
 >
->Adobe recommends leveraging the touch-enabled UI to benefit from the latest technology. [AEM Modernination Tools&(moderniatzion-tools.md) can make a migration easier.
+>Adobe recommends leveraging the touch-enabled UI to benefit from the latest technology. [AEM Modernization Tools](modernization-tools.md) can make a migration easier.
 
 ### Content Logic and Rendering Markup  {#content-logic-and-rendering-markup}
 

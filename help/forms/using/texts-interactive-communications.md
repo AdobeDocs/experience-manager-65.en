@@ -194,11 +194,12 @@ Using rule editor in a text, you can create rules to display or hide strings of 
 ## Formatting text {#formatting}
 
 While creating or editing text, the toolbar changes depending on the type of edits you choose to make: Paragraph, Alignment, or Listing:
-[ ![Select type of toolbar](do-not-localize/toolbarselection.png)
+
+![Select type of toolbar](do-not-localize/toolbarselection.png)
 
 Select type of toolbar: Paragraph, Alignment, or Listing
 
-](assets/toolbarselection.png) ![Font editing toolbar](do-not-localize/paragraphtoolbar.png)
+![Font editing toolbar](do-not-localize/paragraphtoolbar.png)
 
 Font editing toolbar
 

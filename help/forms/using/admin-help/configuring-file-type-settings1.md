@@ -295,7 +295,11 @@ Select **Transparency** to configure the transparency settings while optimizing 
 
 **Convert All Strokes to Outlines** Converts all strokes to simple filled paths on pages containing transparency. This option ensures that the width of strokes stays consistent during flattening. Note that enabling this option causes thin strokes to appear slightly thicker and may degrade flattening performance.
 
-**Clip Complex Regions** Ensures that the boundaries between vector artwork and rasterized artwork fall along object paths. This option reduces stitching artifacts that result when part of an og] ">
+**Clip Complex Regions** Ensures that the boundaries between vector artwork and rasterized artwork fall along object paths. This option reduces stitching artifacts that result when part of an og
+
+<!--
+NOTE to WRITER: Unfinished sentence above.
+-->
 
 >[!NOTE]
 >
