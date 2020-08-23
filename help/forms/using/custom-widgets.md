@@ -87,12 +87,14 @@ window.formBridge.registerConfig("widgetConfig",
 
 The widget configuration is provided as a JSON object (a collection of key value pairs) where the key identifies the fields and value represents the widget to use with those fields. A sample configuration looks like:
 
+```
 *{*
 
 *“identifier1” : “customwidgetname”,
 “identifier2” : “customwidgetname2”,
 ..
 }*
+```
 
 where “identifier” is a jQuery CSS selector that represents a particular field, a set of fields of a particular type, or all fields. The following lists the value of the identifier in different cases:
 
