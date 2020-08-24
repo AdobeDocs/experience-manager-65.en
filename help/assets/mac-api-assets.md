@@ -19,6 +19,10 @@ The API response is a JSON file for some MIME types and a response code for all 
 
 After the [!UICONTROL Off Time], an asset and its renditions are not available via the [!DNL Assets] web interface and through the HTTP API. The API returns 404 error message if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
 
+>[!CAUTION]
+>
+>[HTTP API updates the metadata properties](#update-asset-metadata) in the `jcr` namespace. However, the Experience Manager user interface updates the metadata properties in the `dc` namespace.
+
 ## Content Fragments {#content-fragments}
 
 A [content fragment](/help/assets/content-fragments/content-fragments.md) is a special type of asset. It can be used to access structured data, such as texts, numbers, dates, amongst others. As there are several differences to `standard` assets (such as images or documents), some additional rules apply to handling content fragments.
@@ -161,7 +165,7 @@ Updates an asset's binary (rendition with name original). An update triggers the
 
 Updates the Asset metadata properties. If you update any property in the `dc:` namespace, the API updates the same property in the `jcr` namespace. The API does not sync the properties under the two namespaces.
 
-**Request**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**Request**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **Response codes**: The response codes are:
 
@@ -169,6 +173,25 @@ Updates the Asset metadata properties. If you update any property in the `dc:` n
 * 404 - NOT FOUND - if Asset could not be found or accessed at the provided URI.
 * 412 - PRECONDITION FAILED - if root collection cannot be found or accessed.
 * 500 - INTERNAL SERVER ERROR - if something else goes wrong.
+
+### Sync metadata update between `dc` and `jcr` namespace {#sync-metadata-between-namespaces}
+
+The API method updates the metadata properties in the `jcr` namespace. The updates made using Touch-UI changes the metadata properties in the `dc` namespace. To sync the metadata values between `dc` and `jcr` namespace, you can create a workflow and configure Experience Manager to execute the workflow upon asset edit. Use an ECMA script to sync the required metadata properties. The following sample script synchronizes the title string between `dc:title` and `jcr:title`.
+
+```javascript
+var workflowData = workItem.getWorkflowData();
+if (workflowData.getPayloadType() == "JCR_PATH") {
+    var path = workflowData.getPayload().toString();
+    var node = workflowSession.getSession().getItem(path);
+    var metadataNode = node.getNode("jcr:content/metadata");
+    var jcrcontentNode = node.getNode("jcr:content");
+   	if (jcrcontentNode.hasProperty("jcr:title")) {
+    	var jcrTitle = jcrcontentNode.getProperty("jcr:title");
+        metadataNode.setProperty("dc:title", jcrTitle.toString());
+        metadataNode.save();
+    }
+}
+```
 
 ## Create an asset rendition {#create-an-asset-rendition}
 
