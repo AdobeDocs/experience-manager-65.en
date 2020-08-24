@@ -44,8 +44,8 @@ To configure a higher file size limit, perform the following steps in the `/apps
 
    ![Overlay node](assets/overlay-node-path.png)
 
-1. Refresh the browser. The overlay node `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` is selected.
-1. In the **[!UICONTROL Properties]** tab, enter the appropriate value in bytes to increase the size limit to the desired size. For example, to increase the size limit to 30 GB, enter `{sizeLimit : "32212254720"}` value.
+1. Refresh the browser. The overlay node `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` is selected.
+1. In the **[!UICONTROL Properties]** tab, enter the appropriate value in bytes to increase the size limit to the desired size. For example, to increase the size limit to 30 GB, enter `32212254720` value.
 
 1. From the toolbar, click **[!UICONTROL Save All]**.
 1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
