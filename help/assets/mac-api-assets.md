@@ -180,16 +180,18 @@ The API method updates the metadata properties in the `jcr` namespace. The updat
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
-if (workflowData.getPayloadType() == "JCR_PATH") {
-    var path = workflowData.getPayload().toString();
-    var node = workflowSession.getSession().getItem(path);
-    var metadataNode = node.getNode("jcr:content/metadata");
-    var jcrcontentNode = node.getNode("jcr:content");
-   	if (jcrcontentNode.hasProperty("jcr:title")) {
-    	var jcrTitle = jcrcontentNode.getProperty("jcr:title");
-        metadataNode.setProperty("dc:title", jcrTitle.toString());
-        metadataNode.save();
-    }
+if (workflowData.getPayloadType() == "JCR_PATH")
+{
+ var path = workflowData.getPayload().toString();
+ var node = workflowSession.getSession().getItem(path);
+ var metadataNode = node.getNode("jcr:content/metadata");
+ var jcrcontentNode = node.getNode("jcr:content");
+if (jcrcontentNode.hasProperty("jcr:title"))
+{
+ var jcrTitle = jcrcontentNode.getProperty("jcr:title");
+ metadataNode.setProperty("dc:title", jcrTitle.toString());
+ metadataNode.save();
+}
 }
 ```
 
