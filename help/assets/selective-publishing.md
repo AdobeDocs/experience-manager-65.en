@@ -44,26 +44,29 @@ Regardless of whether you rely on the **[!UICONTROL Publish Assets]** value set 
     ![Folder level selective publish](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
 1. In the **[!UICONTROL Dynamic Media Publish mode]** drop-down list, select an option. Be aware that the **[!UICONTROL Dynamic Media Publish mode]** option always defaults to the value that is set in your **[!UICONTROL Dynamic Media Configuration]**. You can, however, manually override this default **[!UICONTROL Dynamic Media Configuration]** value by using a setting below.
-    | Dynamic Media Publish mode | Description |
+    | Dynamic Media Publish mode option | Description |
     | --- | --- |
-    | **[!UICONTROL Immediately]** | When assets are uploaded, the system ingests the assets and provides the URL/Embed instantly. There is no user intervention necessary to publish assets.<br>This option is *not* available if you selected **[!UICONTROL Exclude everything in this folder sub-tree from dynamicmedia sync]** in **[!UICONTROL Sync mode]** in the previous step. |
-    | **[!UICONTROL Upon Activation]** | You need to explicitly publish the asset first before a URL/Embed link is provided. This option is *not* available if you selected **[!UICONTROL Exclude everything in this folder sub-tree from dynamicmedia sync]** in **[!UICONTROL Sync mode]** in the previous step. |
-    | **[!UICONTROL Selective Publish]** | Assets are published to your choice of either AEM or to Dynamic Media for delivery in the public domain. Both publishing methods are mutually exclusive of each other.  That is, you can publish assets to DMS7 so you can use features such as Smart Crop or dynamic renditions. Or, you can publish assets exclusively in AEM for secure previewing; those same assets are not published in DMS7 for delivery in the public domain. This option is *not* available if you selected **[!UICONTROL Exclude everything in this folder sub-tree from dynamicmedia sync]** in **[!UICONTROL Sync mode]** in the previous step. |
+    | **[!UICONTROL Immediately]** | When assets are uploaded to this folder, the system ingests the assets into AEM and provides the URL/Embed instantly. This option is tied to AEM publishing only and there is no user intervention necessary to publish assets.<br>This option is *not* available if you selected **[!UICONTROL Exclude everything in this folder sub-tree from dynamicmedia sync]** in **[!UICONTROL Sync mode]** in the previous step. |
+    | **[!UICONTROL Upon Activation]** | When assets are uploaded to this folder, you need to explicitly publish the asset first before a URL/Embed link is provided. This option is tied to AEM publishing only.<br>This option is *not* available if you selected **[!UICONTROL Exclude everything in this folder sub-tree from dynamicmedia sync]** in **[!UICONTROL Sync mode]** in the previous step. |
+    | **[!UICONTROL Selective Publish]** | Assets are published to your choice of either AEM or to Dynamic Media for delivery in the public domain. Both publishing methods are mutually exclusive of each other.  That is, you can publish assets to DMS7 so you can use features such as Smart Crop or dynamic renditions. Or, you can publish assets exclusively to AEM for secure previewing; those same assets are *not* published to DMS7 for delivery in the public domain. This option is not available if you selected **[!UICONTROL Exclude everything in this folder sub-tree from dynamicmedia sync]** in **[!UICONTROL Sync mode]** in the previous step. |
 1. In the upper-right corner of the page, tap **[!UICONTROL Save & Close]**, then tap **[!UICONTROL OK]** to return to AEM Assets.
 
-## Using Manage Publication to publish assets to either AEM or Dynamic Media
+## Using Manage Publication to publish assets to AEM or Dynamic Media
 
 1. In AEM, tap the AEM logo to access the global navigation console. On the left side, tap the Navigation icon (just above the Tools icon), then tap **[!UICONTROL Assets > Files.]**
 1. In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, do one of the following:
-    * Navigate to a folder whose assets you want to publish. Select the folder, then on the toolbar, tap **[!UICONTROL Manage Publication.]** You may find it helpful to use **[!UICONTROL List View]** so you can check the publish status of a particular folder. You can a
-    * Navigate to a folder 
+    * Navigate to a folder whose assets you want to publish. Select the folder, then on the toolbar, tap **[!UICONTROL Manage Publication.]**  You may find it helpful to use **[!UICONTROL List View]** so you can more easily check the publish status of a particular folder.
+    * Navigate to a folder whose assets you want to publish. Open the folder, then select one or more assets. On the toolbar, tap **[!UICONTROL Manage Publication]**. You may find it helpful to use **[!UICONTROL List View]** so you can more easily check the publish status of a particular asset.
+
+        >[!NOTE]
+        >
+        >If **[!UICONTROL Manage Publication]** is not seen on the toolbar, tap the ellipsis button instead, then select **[!UICONTROL Manage Publication]** from the list menu.
+
 1. In the **[!UICONTROL Manage Publication &ndash; Options]** page, under **[!UICONTROL Action]**, select the type of activation you want.
     | Action | Description |
     | --- | --- |
     | **[!UICONTROL Publish]** (to AEM) | Select this option to publish assets to AEM for secure preview. |
-    | **[!UICONTROL Unpublish]** (from AEM) | Select this option to unpublish assets from AEM. |
     | **[!UICONTROL Publish to Dynamic Media]** | Select this option to publish assets to Dynamic Media for delivery in the public domain or so you can use features such as Smart Crop or dynamic renditions.<br>This option is available only if **[!UICONTROL Dynamic Media Publish mode]** is set to **[!UICONTROL Selective Publish]** in the folder's properties. |
-    | **[!UICONTROL Unpublish from Dynamic Media]** | Select this option to unpublish assets from Dynamic Media.<br>This option is available only if **[!UICONTROL Dynamic Media Publish mode]** is set to **[!UICONTROL Selective Publish]** in the folder's properties.  |
 1. Under **[!UICONTROL Schedule]**, set the timing of the publishing.
     | Schedule | Description |
     | --- | --- |
@@ -75,12 +78,18 @@ Regardless of whether you rely on the **[!UICONTROL Publish Assets]** value set 
     * In the upper-right corner of the **[!UICONTROL Manage Publication]** page, tap **[!UICONTROL Publish]** or **[!UICONTROL Publish to Dynamic Media.]**
 1. Tap **[!UICONTROL OK]**. 
 
-## Using Manage Publication to unpublish assets from either AEM or Dynamic Media
+## Using Manage Publication to unpublish assets from AEM or Dynamic Media
 
 1. In AEM, tap the AEM logo to access the global navigation console. On the left side, tap the Navigation icon (just above the Tools icon), then tap **[!UICONTROL Assets > Files.]**
 1. In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, do one of the following:
-    * Navigate to a folder whose assets you want to unpublish. Select the folder, then on the toolbar, tap **[!UICONTROL Manage Publication.]** You may find it helpful to use **[!UICONTROL List View]** so you can easily check the publish status of a particular folder. You can a
-    * Navigate to a folder 
+    * Navigate to a folder whose assets you want to unpublish. Select the folder, then on the toolbar, tap **[!UICONTROL Manage Publication.]**  You may find it helpful to use **[!UICONTROL List View]** so you can more easily check the publish status of a particular folder.
+    * Navigate to a folder whose assets you want to unpublish. Open the folder, then select one or more assets. On the toolbar, tap **[!UICONTROL Manage Publication]**. You may find it helpful to use **[!UICONTROL List View]** so you can more easily check the publish status of a particular asset.
+
+        >[!NOTE]
+        >
+        >If **[!UICONTROL Manage Publication]** is not seen on the toolbar, tap the ellipsis button instead, then select **[!UICONTROL Manage Publication]** from the list menu.
+
+
 1. In the **[!UICONTROL Manage Publication &ndash; Options]** page, under **[!UICONTROL Action]**, select the type of de-activation you want.
     | Action | Description |
     | --- | --- |
@@ -98,12 +107,31 @@ Regardless of whether you rely on the **[!UICONTROL Publish Assets]** value set 
 1. Tap **[!UICONTROL OK]**. 
 
 
-## Using Publish to Dynamic Media from Quick Publish
+## Using Quick Publish to publish assets to AEM or Dynamic Media
+You can use Quick Publish for simple asset activation cases. Quick Publish publishes the selected assets immediately without any further user interaction. Because of this, any non-published references are also published automatically.
 
+>[!NOTE]
+>
+>To use Quick Publish to AEM or to Dynamic Media, be sure **[!UICONTROL Selective Publish]** is enabled either in your **[!UICONTROL Dynamic Media Configuration]** or in the folder properties of a selected folder.
 
+1. In AEM, tap the AEM logo to access the global navigation console. On the left side of the page, tap the Navigation icon (just above the Tools icon), then on the right side of the page tap **[!UICONTROL Assets > Files.]**
+1. In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, do one of the following:
+    * Navigate to a folder whose assets you want to publish. Select the folder, then on the toolbar, tap **[!UICONTROL Quick Publish.]**  You may find it helpful to use **[!UICONTROL List View]** so you can more easily check the publish status of a particular folder.
+    * Navigate to a folder whose assets you want to publish. Open the folder, then select one or more assets. On the toolbar, tap **[!UICONTROL Quick Publish]**. You may find it helpful to use **[!UICONTROL List View]** so you can more easily check the publish status of a particular asset.
 
+        >[!NOTE]
+        >
+        >If **[!UICONTROL Quick Publish]** is not seen on the toolbar, tap the ellipsis button instead, then select **[!UICONTROL Quick Publish]** from the list menu.
 
-## Using Search Results to publish
+        ![Folder-level Quick Publish to Dynamic Media](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
+1. Select one of the following from the Quick Publish menu list.
+    * **[!UICONTROL Publish to AEM]** &ndash; Publishes the selected assets immediately to AEM.
+    * **[!UICONTROL Publish to Brand Portal]** &ndash; Publishes the selected assets immediately to **[!UICONTROL Brand Portal]**.<br>This option is only available if your AEM Assets instance has **[!UICONTROL Brand Portal]** already configured.
+    * **[!UICONTROL Publish to Dynamic Media]** &ndash; Publishes the selected assets immediately to Dynamic Media.<br>An asset must already be synched up to Dynamic Media. If necessary, ensure that **[!UICONTROL Sync mode]** in a folder's properties is already set to **[!UICONTROL Sync everything in this folder sub-tree to dynamicmedia]**.
+1. Tap **[!UICONTROL OK]**, then tap **[!UICONTROL Close]**.
+
+## Using Search Results to publish or unpublish
+
 
 
 
