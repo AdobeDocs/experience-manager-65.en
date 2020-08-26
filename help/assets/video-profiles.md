@@ -428,6 +428,6 @@ You can remove a video profile from a folder from within the **[!UICONTROL Tools
 ### Removing a video profile from folders by way of Properties {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Tap or click the AEM logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to remove a video profile from.
-1. On the folder, tap or click the check mark to select it and then tap or click **Properties.]**
+1. On the folder, tap or click the check mark to select it and then tap or click **[!UICONTROL Properties.]**
 1. Select the **[!UICONTROL Video Profiles]** tab and select **[!UICONTROL None]** from the drop-down menu and click **[!UICONTROL Save & Close.]** Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 

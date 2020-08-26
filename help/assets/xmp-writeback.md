@@ -26,7 +26,7 @@ To enable the metadata changes to be propagated to the renditions of the asset w
 
 1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration.
-1. Select the **[!UICONTROL Propagate XMP[!UICONTROL ** option, and then save the changes.
+1. Select the **[!UICONTROL Propagate XMP]** option, and then save the changes.
 
    ![chlimage_1-135](assets/chlimage_1-346.png)
 

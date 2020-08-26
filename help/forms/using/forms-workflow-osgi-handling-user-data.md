@@ -16,7 +16,7 @@ Forms-centric AEM workflows enable you to automate real-world Forms-centric busi
 A forms-centric workflow can be triggered or launched through any of the following methods:
 
 * Submitting an application from AEM Inbox
-* Submitting an application from AEM Forms App
+* Submitting an application from AEM [!DNL Forms] App
 * Submitting an adaptive form
 * Using a watched folder
 * Submitting an interactive communication or a letter
@@ -37,8 +37,8 @@ The default repository locations where payload, drafts, and history of a workflo
  <tbody>
   <tr>
    <td> </td>
-   <td>AEM 6.4 Forms</td>
-   <td>AEM 6.3 Forms</td>
+   <td><b>AEM 6.4 [!DNL Forms]</b></td>
+   <td><b>AEM 6.3 [!DNL Forms]</b></td>
   </tr>
   <tr>
    <td><strong>Workflow <br /> instance</strong></td>
@@ -114,9 +114,9 @@ To identify and access user data stored for a workflow instance, perform the fol
 
 1. Repeat steps 3 - 5 for all workflow instances returned by the query in step 2.
 
->[!NOTE]
->
->AEM Forms app also stores data in offline mode. It is possible that data for a workflow instance is locally stored on individual devices and gets submitted to the Forms server when the app synchronizes with the server.
+   >[!NOTE]
+   >
+   >AEM [!DNL Forms] app also stores data in offline mode. It is possible that data for a workflow instance is locally stored on individual devices and gets submitted to the [!DNL Forms] server when the app synchronizes with the server.
 
 ### Delete user data {#delete-user-data}
 
@@ -135,9 +135,9 @@ You must be an AEM administrator to delete user data from workflow instances by 
     1. Navigate to **[!UICONTROL Tools > Workflow> Instances]**.
     1. Select relevant workflow instances for the user and tap **[!UICONTROL Terminate]** to terminate running instances.
 
-   For more information about working with workflow instances, see [Administering Workflow Instances](/help/sites-administering/workflows-administering.md).
+       For more information about working with workflow instances, see [Administering Workflow Instances](/help/sites-administering/workflows-administering.md).
 
-1. Go to CRXDE Lite console, navigate to the payload path for a workflow instance, and delete the `payload` node.
+1. Go to [!DNL CRXDE Lite] console, navigate to the payload path for a workflow instance, and delete the `payload` node.
 1. Navigate to the drafts path for a workflow instance, and delete the `draft` node.
 1. Navigate to the history path for a workflow instance, and delete the `history` node.
 1. Navigate to the workflow instance path for a workflow instance, and delete the `[workflow-instance-ID]` node for the workflow.
@@ -147,7 +147,7 @@ You must be an AEM administrator to delete user data from workflow instances by 
    >Deleting the workflow instance node will remove the workflow instance for all workflow participants.
 
 1. Repeat steps 2 - 6 for all workflow instances identified for a user.
-1. Identify and delete offline draft and submission data from AEM Forms app outbox of workflow participants to avoid any submission to the server.
+1. Identify and delete offline draft and submission data from AEM [!DNL Forms] app outbox of workflow participants to avoid any submission to the server.
 
 You can also use APIs to access and remove nodes and properties. See the following docs for more information.
 

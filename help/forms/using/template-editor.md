@@ -137,11 +137,9 @@ To create the General Information and Professional Information tabs, add two pan
 
 #### Adding content in tabs {#adding-content-in-tabs}
 
-[ ![Adding fields in the adaptive form template](assets/template-edit-initial-content.png)
+![Adding fields in the adaptive form template](assets/template-edit-initial-content.png)
 
-Adding fields in the template
-
-](assets/template-edit-initial-content-1.png) After you add panels and structure them as tabs, you can add fields inside the tabs. When you select a tab in the editor, you can see the **Drag components here** option. You can drag-drop components such as text-boxes, list items, and buttons. You can drag-drop components from the components browser in the sidebar.
+After you add panels and structure them as tabs, you can add fields inside the tabs. When you select a tab in the editor, you can see the **Drag components here** option. You can drag-drop components such as text-boxes, list items, and buttons. You can drag-drop components from the components browser in the sidebar.
 
 Each component has properties that enhance data capturing and manipulation. For example, you can enable the **Required field** property of a component. Your authors can specify a message that your customers see when they skip filling a required field. Specify the message in **Required Field Message** property.
 

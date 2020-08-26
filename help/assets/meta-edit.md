@@ -49,6 +49,10 @@ You can add your own namespaces within [!DNL Experience Manager]. Just as there 
 1. To add a namespace, click **[!UICONTROL New]** at the bottom of the page.
 1. Specify a custom namespace in the XML namespace convention. Specify the ID in the form of a URI and an associated prefix for the ID. Click **[!UICONTROL Save]**.
 
+## Tips and limitations {#best-practices-limitations}
+
+* The metadata updates via Touch-UI changes the metadata properties in the `dc` namespace. Any updates made via the HTTP API changes the metadata properties in the `jcr` namespace. See [how to update metadata using HTTP API](/help/assets/mac-api-assets.md#update-asset-metadata).
+
 >[!MORELIKETHIS]
 >
 >* [About metadata and its need in Assets](metadata.md)

@@ -210,18 +210,18 @@ On an author instance:
    * Path must be `/home/users/community`.
 4. Select **[!UICONTROL Create]**.
 
-   ![chlimage_1-130](assets/chlimage_1-130.png)
+   ![create-community-user](assets/create-community-user.png)
 
 * In the left pane, search for the newly created user and select to display in the right pane.
 
-  ![chlimage_1-131](assets/chlimage_1-131.png)
+  ![community-user](assets/view-community-user.png)
 
 In the left pane:
 
 1. Clear the search box and select **[!UICONTROL Hide Users]**.
 2. Locate and drag `community-enablementmanagers` to the **[!UICONTROL Groups]** tab of the new user displayed in the right pane.
 
-   ![chlimage_1-132](assets/chlimage_1-132.png)
+   ![assign-group](assets/assign-group.png)
 
 ### Community Administrators Role {#community-administrators-role}
 

@@ -15,7 +15,7 @@ discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 
 This document includes details about the various types of Adobe Experience Manager (AEM) releases, including full releases, feature packs, and services packs that Adobe delivers to its customers.
 
->[!Note]
+>[!NOTE]
 >
 >For release schedule of AEM update releases, refer to [AEM update releases roadmap](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html)
 
