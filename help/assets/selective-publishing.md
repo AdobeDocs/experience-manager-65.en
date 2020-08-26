@@ -19,7 +19,7 @@ For example, with selective publishing you can work on assets for products that 
 
 >[!NOTE]
 >
->Copying assets to and from folders clears the publish state of those assets.
+>*Copying* assets to and from folders clears the publish state of those assets. However, when you *move* assets to and from folders whose folder property is set to **[!UICONTROL Selective Publish]**, the publish state of those assets is maintained.
 
 If you decide later to change the **[!UICONTROL Selective Publish]** settings in a folder, those changes affect only new assets that you upload to that folder from that point forward. The publish state of existing assets in the folder remain as-is until you manually change them from either **[!UICONTROL Quick Publish]** or the **[!UICONTROL Manage Publication]** dialog box.
 
@@ -28,12 +28,11 @@ The folder level **[!UICONTROL Dynamic Media Publish mode]** option always defau
 Regardless of whether you rely on the **[!UICONTROL Publish Assets]** value set in **[!UICONTROL Dynamic Media Configuration]**, or the **[!UICONTROL Dynamic Media Publish mode]** value set in folder level properties, you are still able to choose **[!UICONTROL Immediately]**, **[!UICONTROL Upon Activation]**, or **[!UICONTROL Selective Publish]**. For example, you can set the **[!UICONTROL Publish Assets]** value in your **[!UICONTROL Dynamic Media Configuration]** to **[!UICONTROL Upon Activation]**, but set the **[!UICONTROL Dynamic Media Publish]** mode value at the folder level to **[!UICONTROL Selective Publish]**, vice versa, and so on.
 
 After you configure selective publishing in a folder, you can do any of the following:
-    
+
 * [Selectively publish assets to Dynamic Media or AEM using Manage Publication.](#selective-publish-manage-publication)
 * [Selectively unpublish assets from Dynamic Media or AEM using Manage Publication.](#selective-unpublish-manage-publication)
 * [Publishing assets to Dynamic Media or AEM using Quick Publish.](#quick-publish-aem-dm)
 * [Selectively publish or unpublish assets by way of search results.](#selective-publish-unpublish-search-results)
-
 
 **To configure selective publishing at the folder level in Dynamic Media**
 
@@ -42,16 +41,21 @@ After you configure selective publishing in a folder, you can do any of the foll
     * Edit the properties of an existing folder &ndash; In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, navigate to a folder whose properties you want to edit. Select the folder, then on the toolbar, tap **[!UICONTROL Properties.]**
     * Edit the properties of a new folder &ndash; In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, near the upper-right corner of the page, tap **[!UICONTROL Create > Folder.]** In the **[!UICONTROL Create Folder]** dialog box, enter a title (required) for the folder, then tap **[!UICONTROL Create.]** Select the folder, then on the toolbar, tap **[!UICONTROL Properties.]**
 
-1.  In the **[!UICONTROL Sync mode]** drop-down list, select one of the following:
+1. In the **[!UICONTROL Sync mode]** drop-down list, select one of the following:
     | Sync mode | Description |
     | --- | --- |
-    | **[!UICONTROL Inherited]** | No explicit sync value on the folder; instead, the folder inherits the sync value from one of its ancestor folders or the default mode set in your **[!UICONTROL Dynamic Media Configuration]**. The detailed status for inherited shows by way of a tool tip. |
-    | **[!UICONTROL Sync everything in this folder sub-tree to dynamicmedia]** | Include all assets in this sub-tree for synchronizing to Dynamic Media. The folder-specific settings override the default setting in the **[!UICONTROL Dynamic Media Configuration]**. |
+    | **[!UICONTROL Inherited]** | No explicit sync value on the folder; instead, the folder inherits the sync value from one of its ancestor folders or the default mode set in your **[!UICONTROL Dynamic Media Configuration]**. The detailed status for **[!UICONTROL Inherited]** shows by way of a tool tip. |
+    | **[!UICONTROL Sync everything in this folder sub-tree to dynamicmedia]** | For publishing to Dynamic Media to succeed, assets must be synced to Dynamic Media. Selecting this option will include all assets in this sub-tree for synchronizing to Dynamic Media. The folder-specific settings override the default setting in the **[!UICONTROL Dynamic Media Configuration]**. |
     | **[!UICONTROL Exclude everything in this folder sub-tree from dynamicmedia sync]** | Exclude all assets in this sub-tree from synchronizing to Dynamic Media. |
 
     ![Folder level selective publish](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
-1. In the **[!UICONTROL Dynamic Media Publish mode]** drop-down list, select an option. Be aware that the **[!UICONTROL Dynamic Media Publish mode]** option always defaults to the value that is set in the **[!UICONTROL Dynamic Media Configuration]**. You can, however, manually override this default **[!UICONTROL Dynamic Media Configuration]** value by using a setting as described in the following:
+1. In the **[!UICONTROL Dynamic Media Publish mode]** drop-down list, select an option. Be aware that the **[!UICONTROL Dynamic Media Publish mode]** option always defaults to the value that is set in the **[!UICONTROL Dynamic Media Configuration]**. You can, however, manually override this default **[!UICONTROL Dynamic Media Configuration]** value by using one of the following options.
+
+    >[!IMPORTANT]
+    >
+    >Be aware that, regardless of the Dynamic Media Publish mode option you select, any updates you later make to an asset that is *already* published, those updates are immediately published without any further user action.
+
     | Dynamic Media Publish mode option | Description |
     | --- | --- |
     | **[!UICONTROL Immediately]** | When assets are uploaded to this folder, the system ingests the assets into AEM and provides the URL/Embed instantly. This option is tied to AEM publishing only and there is no user intervention necessary to publish assets.<br>This option is *not* available if you selected **[!UICONTROL Exclude everything in this folder sub-tree from dynamicmedia sync]** in **[!UICONTROL Sync mode]** in the previous step. |
@@ -71,7 +75,7 @@ See [Creating a Dynamic Media Configuration](#configuring-dynamic-media-cloud-se
 
 >[!NOTE]
 >
->Copying assets to and from folders clears the publish state of those assets.
+>*Copying* assets to and from folders clears the publish state of those assets. However, when you *move* assets to and from folders whose folder property is set to **[!UICONTROL Selective Publish]**, the publish state of those assets is maintained.
 
 **To selectively publish assets to Dynamic Media or AEM using Manage Publication**
 
@@ -233,7 +237,4 @@ When you use **[!UICONTROL List View]**, an additional column for **[!UICONTROL 
 An asset that is not synced to Dynamic Media but has a Dynamic Media publish action triggered on it results in the following error message and solution:
 
 ![Selective Publish error](/help/assets/assets-dm/selective-publish-error.png)
-
-
-
 
