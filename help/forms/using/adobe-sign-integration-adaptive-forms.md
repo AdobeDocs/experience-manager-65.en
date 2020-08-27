@@ -29,6 +29,7 @@ You require the following to integrate Adobe Sign with AEM Forms:
 * An [Adobe Sign API application](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Credentials (Client ID and Client Secret) of Adobe Sign API application.
 * When reconfiguring, remove the existing Adobe Sign configuration from both author and publish instances.
+* Use [identical crypto key](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) for author and publish instances.
 
 ## Configure Adobe Sign with AEM Forms {#configure-adobe-sign-with-aem-forms}
 
@@ -84,16 +85,11 @@ After prerequisites are in place, perform the following steps to configure Adobe
 1. Open AEM Web Console. The URL is `https://'[server]:[port]'/system/console/configMgr`
 1. Open **Forms Common Configuration Service.**
 1. In the **Allow** field, **select** All users - All the users, anonymous or logged in, can preview attachments, verify and sign forms, and click **Save.** Author instance is configured to use Adobe Sign.
-1. On the [Publish](/help/sites-deploying/deploy.md) instance, log in and open the following URL:
+1. Use [replication](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) to create identical configuration on corresponding publish instances. 
 
-   `https://<server-name>:<port>/libs/granite/configurations/content/view.html/conf`
+Now, Adobe Sign is integrated with AEM Forms and ready for use in adaptive forms. To [use Adobe Sign service in an adaptive form](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), specify the configuration container created above in adaptive form properties.
 
-1. Repeat step 1 to 12 to configure Adobe Sign with AEM Forms. Use the same title for configuration (as specified in step 3) and same name (as specified in step 6) to replicate the settings configured on the Author instance.
 
-   Now, Adobe Sign is integrated with AEM Forms and ready for use in adaptive forms. To [use Adobe Sign service in an adaptive form](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), specify the configuration container created above in adaptive form properties.
-
-   >[!NOTE]
-   > If you have a hardened environment and don't have access to URL `https://<server-name>:<port>/libs/granite/configurations/content/view.html/conf`, then complete the configuration on Author and use [replication](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) to create identical configuration on corresponding publish instances.  
 
 ## Configure Adobe Sign scheduler to sync the signing status {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
