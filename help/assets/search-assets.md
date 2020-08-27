@@ -396,7 +396,7 @@ You can do the following with the assets you've searched in Experience Manager:
 
 ### Sort searched results {#sort}
 
-Sort search results to discover required assets faster. You can sort the search results in list view and only when you select **[!UICONTROL [Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Experience Manager Assets] uses server-side sorting to quickly sort all the assets (howsoever numerous) within a folder or results of a search query. Server-side sorting provides faster and more accurate results than client-side sorting.
+Sort search results to discover required assets faster. You can sort the search results in list view and only when you select **[[!UICONTROL Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Experience Manager Assets] uses server-side sorting to quickly sort all the assets (howsoever numerous) within a folder or results of a search query. Server-side sorting provides faster and more accurate results than client-side sorting.
 
 In list view, you can sort the search results just as you can sort assets in any folder. Sorting works on these columns -- Name, Title, Status, Dimensions, Size, Rating, Usage, (Date) Created, (Date) Modified, (Date) Published, Workflow, and Checked out.
 
