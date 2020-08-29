@@ -34,12 +34,9 @@ user-guide-description: Create, manage, publish, and update digital forms.
     + [Tutorial: Create document fragments](using/create-document-fragments.md)
     + [Tutorial: Create templates](using/create-templates-print-web.md)
     + [Tutorial: Create Interactive Communication](using/create-interactive-communication0.md)
-  + AEM Forms Reference Collaterals {#aem-forms-reference-collaterals}
-    + [Set up and configure We.Finance and Employee self-service reference sites](using/setup-reference-sites.md)
-    + [Set up and configure We.Gov reference site](/help/forms/using/forms-install-configure-gov-reference-site.md)
-    + [We.Finance reference site walkthrough](using/finance-reference-site-walkthrough.md)
-    + [We.Gov reference site walkthrough](/help/forms/using/forms-gov-reference-site-user-demo.md)
-    + [Employee self-service reference site walkthrough](/help/forms/using/employee-self-service-reference-site.md)
+  + AEM Forms Reference Collaterals {#aem-forms-reference-collaterals}  
+    + [Set up and configure We.Gov and We.Finance reference site](/help/forms/using/forms-install-configure-gov-reference-site.md)  
+    + [We.Gov and We.Finance reference site walkthrough](/help/forms/using/forms-gov-reference-site-user-demo.md)  
     + [Employee recruitment reference site walkthrough](/help/forms/using/employee-recruitment-reference-site.md)
     + [We.Finance Auto Insurance Renewal reference site](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
     + [We.Gov reference site FOIA walkthrough](/help/forms/using/gov-reference-site-foia-walkthrough.md)

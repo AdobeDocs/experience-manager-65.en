@@ -30,10 +30,6 @@ Following are the key capabilities of Interactive Communications:
 * Agent user interface displays print and web preview of the Interactive Communication
 * Drag-and-drop components to quickly construct print and web channels
 
-## Sample use case {#sample-use-case}
-
-The [Welcome kit for a credit card customer](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) sample use case showcases the capabilities of an Interactive Communication.
-
 ## Interactive Communication creation  {#interactive-communication-creation}
 
 ![interactive_communication-01](assets/interactive_communication-01.jpg)

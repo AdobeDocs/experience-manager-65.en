@@ -1,5 +1,5 @@
 ---
-title: Set up and configure We.Gov reference site
+title: Set up and configure We.Gov and We.Finance reference site
 seo-title: Set up and configure We.Gov reference site
 description: Install, configure, and customize an AEM Forms demo package.
 seo-description: Install, configure, and customize an AEM Forms demo package.
@@ -10,7 +10,7 @@ docset: aem65
 
 ---
 
-# Set up and configure We.Gov reference site {#set-up-and-configure-we-gov-reference-site}
+# Set up and configure We.Gov and We.Finance reference site {#set-up-and-configure-we-gov-reference-site}
 
 ## Demo package details {#demo-package-details}
 
