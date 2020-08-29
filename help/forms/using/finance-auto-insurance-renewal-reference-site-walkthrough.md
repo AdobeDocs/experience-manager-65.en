@@ -14,10 +14,6 @@ docset: aem65
 
 # We.Finance Auto Insurance Renewal reference site walkthrough{#we-finance-auto-insurance-renewal-reference-site-walkthrough}
 
-## Pre-requisites {#pre-requisites}
-
-Setup the reference site as described in [Setup and configure AEM Forms Reference Site](../../forms/using/setup-reference-sites.md).
-
 ## We.Finance Reference Site scenario  {#we-finance-reference-site-scenario}
 
 We.Finance site is a financial services site designed to help you learn interactive communications capabilities of AEM Forms.
