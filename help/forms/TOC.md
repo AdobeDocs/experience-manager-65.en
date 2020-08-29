@@ -494,7 +494,6 @@ user-guide-description: Create, manage, publish, and update digital forms.
     + [Configuring validation messages](/help/forms/using/admin-help/configuring-validation-messages.md)
   + Configuring Output {#configure-output}
     + [Overview of output service](/help/forms/using/admin-help/overview-8.md)
-    + [Change the character set](/help/forms/using/admin-help/change-character-set.md)
     + [Specify XCI configuration options](/help/forms/using/admin-help/specify-xci-configuration-options.md)
     + [Configuring caching for Output](/help/forms/using/admin-help/configuring-caching-output.md)
     + [Specify file locations for Output](/help/forms/using/admin-help/specify-file-locations-output.md)
