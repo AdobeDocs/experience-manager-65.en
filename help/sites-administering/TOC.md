@@ -130,7 +130,6 @@ user-guide-description: Learn about administering AEM.
     + [AEM Livefyre Recipes](aem-livefyre-recipes.md)
     + [Troubleshooting Integration Issues](troubleshooting-integration-issues.md)
     + [Integrating with BrightEdge Content Optimizer](brightedge.md)
-    + [Best Practices for Email Templates](best-practices-for-email-templates.md)
     + [Catalog Producer](catalog-producer.md)
     + [Configure AEM Assets integration with Experience Cloud and Creative Cloud](configure-assets-cc-integration.md)
     + [Integrating with Silverpop Engage](silverpop.md)
