@@ -232,7 +232,7 @@ When replicating assets to a large number of publish instances, for example in a
 >
 >Adobe does not recommend auto-activating assets. However, if necessary, Adobe recommends doing this as the final step in a workflow, usually DAM Update Asset.
 
-## Search indices {#search-indexes}
+## Search indexes {#search-indexes}
 
 Make sure you implement the latest service packs and performance-related hotfixes as they often include updates to system indexes. See [Performance tuning tips](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) for some index optimizations.
 

@@ -140,7 +140,7 @@ For more details, consult [checkpoint creation](https://jackrabbit.apache.org/oa
 
 **Perform offline indexing for the generated index definitions**
 
-Lucene reindexing can be done offline using oak-run. This process creates index data in the disk under `indexing-result/indices`. It does **not** write to the repository and thus does not require stopping the running AEM instance. The created text store is fed into this process:
+Lucene reindexing can be done offline using oak-run. This process creates index data in the disk under `indexing-result/indexes`. It does **not** write to the repository and thus does not require stopping the running AEM instance. The created text store is fed into this process:
 
 ```
 java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --reindex --doc-traversal-mode --checkpoint <checkpoint> --fds-path <datastore path> --index-definitions-file merge-index-definitions_target.json --pre-extracted-text-dir text-extraction/store
@@ -148,7 +148,7 @@ java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --re
 Sample <checkpoint> looks like r16c85700008-0-8
 —fds-path: path to data store.
 --pre-extracted-text-dir: Directory of pre-extracted text.
-merge-index-definitions_target: JSON file having merged definitions for the target AEM instance. indices in this file will be re-indexed.
+merge-index-definitions_target: JSON file having merged definitions for the target AEM instance. indexes in this file will be re-indexed.
 ```
 
 Usage of the `--doc-traversal-mode` parameter is handy with MongoMK installations as it improves the reindex time significantly by spooling repository content into a local flat file. However, it requires additional disk space of double the size of the repository.
@@ -157,9 +157,9 @@ In the case of MongoMK, this process can be accelerated if this step is executed
 
 Additional technical details can be found in the [oak-run documentation for indexing](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 
-### Importing Indices {#importing-indices}
+### Importing indexes {#importing-indexes}
 
-With AEM 6.4 and newer versions, AEM has the built in capability to import indices from disc on startup sequence. The folder `<repository>/indexing-result/indices` is watched for the presence of index data during startup. You can copy the pre-created index into the above location during the [upgrade process](in-place-upgrade.md#performing-the-upgrade) before starting with the new version of the **target** AEM jar. AEM imports it into the repository and removes the corresponding checkpoint from the system. Thus a reindex is completely avoided.
+With AEM 6.4 and newer versions, AEM has the built in capability to import indexes from disc on startup sequence. The folder `<repository>/indexing-result/indexes` is watched for the presence of index data during startup. You can copy the pre-created index into the above location during the [upgrade process](in-place-upgrade.md#performing-the-upgrade) before starting with the new version of the **target** AEM jar. AEM imports it into the repository and removes the corresponding checkpoint from the system. Thus a reindex is completely avoided.
 
 ## Additional Tips and Troubleshooting {#troubleshooting}
 
