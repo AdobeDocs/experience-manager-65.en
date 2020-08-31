@@ -162,7 +162,7 @@ A ContextHub.Utils.Persistence object. For information about the default value a
 Merges a data object or an array with the store data. Each key/value pair in the object or array is added to the store (via the `setItem` function):
 
 * **Object:** Keys are the property names.
-* **Array:** Keys are the array indices.
+* **Array:** Keys are the array indexes.
 
 Note that values can be objects.
 
@@ -233,7 +233,7 @@ Retrieves the references from the store.
 
 **Returns**
 
-An array that uses referencing keys as indices for the referenced keys:
+An array that uses referencing keys as indexes for the referenced keys:
 
 * Referencing keys correspond with the `key` parameter of the `addReference` function.
 
