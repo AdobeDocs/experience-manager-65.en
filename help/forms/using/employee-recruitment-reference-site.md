@@ -11,10 +11,6 @@ discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
 
 # Employee recruitment reference site walkthrough {#employee-recruitment-reference-site-walkthrough}
 
-## Prerequisite {#prerequisite}
-
-Set up the reference sites as described in [Set up and configure AEM Forms reference sites](/help/forms/using/setup-reference-sites.md).
-
 ## Overview {#overview}
 
 We.Finance is an organization that allows candidates to apply for employment through the reference site portal. The organization also uses the portal to manage candidates' interviewing scheduling, shortlisting, and internal communication. The site manages the following:

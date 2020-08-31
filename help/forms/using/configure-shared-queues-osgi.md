@@ -68,7 +68,7 @@ You can start working on a shared item only after you claim it. It prevents mult
 
 1. Log in to your AEM instance. Tap the Inbox ![Inbox](assets/bell.svg) icon and tap **[!UICONTROL View All]**.
 1. Tap the ![Content only](assets/railleft.svg) icon to open the filter selector.
-1. Tap the **[!UICONTROLSelect Assignee]** drop-down to view and select users who have shared their Inbox items with you.
+1. Tap the **[!UICONTROL Select Assignee]** drop-down to view and select users who have shared their Inbox items with you.
 1. Select an item and tap **[!UICONTROL Claim]**. The item is added to your Inbox.
 
 ## Release claimed items {#release-items}

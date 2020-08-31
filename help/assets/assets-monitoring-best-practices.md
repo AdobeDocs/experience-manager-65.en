@@ -88,7 +88,7 @@ Memory
 * Alarm threshold: When the heap or non-heap memory utilization exceeds 75% of the corresponding maximum memory.
 * Alarm definition: Either system memory is insufficient, or there is a memory leak in the code. Analyze a thread dump to arrive at a definition.
 
->[!Note]
+>[!NOTE]
 >
 >The information provided by this bean is expressed in bytes.
 
@@ -115,7 +115,7 @@ Replication agents
 
 * Alarm definition: Presence of a blocked queue in the system indicating that the replication target is down or unreachable. Often, network or infrastructure issues cause excessive entries to be queued, which can adversely impact system performance.
 
->[!Note]
+>[!NOTE]
 >
 >For the MBean and URL parameters, replace `<AGENT_NAME>` with the name of the replication agent you want to monitor.
 

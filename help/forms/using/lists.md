@@ -55,7 +55,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
 1. A text editor opens, enter the text. Use the toolbar at the top of the page to format the text, insert conditions, link, and page breaks.
 
-   [ ![Toolbar](assets/advancedediting.png)
+    ![Toolbar](assets/advancedediting.png)
 
     * **Link**: Insert [hypertext](#insert-hyperlink) link in the text.
     * **Repeat**: Repeat prints collection element in Data Dictionary using a delimiter.

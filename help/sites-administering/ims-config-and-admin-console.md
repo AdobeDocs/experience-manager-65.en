@@ -31,7 +31,7 @@ AEM onboarding to the [!DNL Admin Console] will allow AEM Managed Services custo
 * Product Profiles in [!DNL Admin Console] will determine which instances a user can access
 * Federated authentication using customers’ own SAML 2 compliant Identity Providers is supported
 * Only Enterprise or Federated IDs(for customer Single Sign-On) will be supported, not personal Adobe IDs.
-* [!DNL User Management]( in Adobe [!DNL Admin Console]) will continue to be owned by the customer admins.
+* [!DNL User Management] (in Adobe [!DNL Admin Console]) will continue to be owned by the customer admins.
 
 ## Architecture {#architecture}
 

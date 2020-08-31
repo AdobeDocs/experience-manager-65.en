@@ -41,7 +41,7 @@ The verbose option displays some of the Quickstart log output on the console, so
 
 The following section describes some installation issues and their solutions.
 
-### **Double-clicking the Quickstart jar does not have any effect or opens the jar file with another program (for example, archive manager) {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}**
+### Double-clicking the Quickstart jar does not have any effect or opens the jar file with another program (for example, archive manager) {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
 This usually indicates a problem with the way your operating system's desktop environment is configured to open files with extension .jar. It may also indicate that you do not have Java installed, or that you are using an unsupported version of Java.
 
@@ -58,7 +58,7 @@ To troubleshoot, do the following:
 * Sometimes reinstalling the supported Java version helps restore the correct association.
 * You can always run CRX using the command line or start/stop scripts as described earlier in this document.
 
-### **My application running on CRX throws out-of-memory errors {#my-application-running-on-crx-throws-out-of-memory-errors}**
+### My application running on CRX throws out-of-memory errors {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
 
 This generates a heap dump file (**java_...hprof**) whenever the process runs out of memory. The process may continue to run after the heap dump was generated. Usually, one heap dump file is enough to analyze the problem.
 
-### **The AEM Welcome screen does not display in the browser after double-clicking AEM Quickstart {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}**
+### The AEM Welcome screen does not display in the browser after double-clicking AEM Quickstart {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
 In certain situations, the AEM WCM Welcome screens does not automatically display even though the repository itself is successfully running. This may depend on operating system setup, browser configuration, or similar factors.
 
@@ -93,7 +93,7 @@ If everything else fails, check the logs to find out what has happened.
 
 ## Troubleshooting Installations with an Application Server {#troubleshooting-installations-with-an-application-server}
 
-### **Page Not Found returned when requesting a geometrixx-outdoor page {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}**
+### Page Not Found returned when requesting a geometrixx-outdoor page {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
 **Applies to WebLogic 10.3.5 and JBoss 5.1**
 
@@ -101,7 +101,7 @@ When a request to geometrixx-outdoors/en page returns a 404 (Page Not Foun) then
 
 See in the *Deploy AEM web application* steps for the details.
 
-### **Response header size can be greater than 4Kb {#response-header-size-can-be-greater-than-kb}**
+### Response header size can be greater than 4Kb {#response-header-size-can-be-greater-than-kb}
 
 502 errors can indicate that the web server cannot handle the size of the AEM HTTP response header. AEM can generate HTTP response headers that include include cookies of size greater than 4Kb. Ensure that your servlet container is configured so that the maximum response header size can exceed 4kb.
 
@@ -119,7 +119,7 @@ If persistent storage is embedded in the installation directory, for example, in
 
 If your installation of AEM uses external storage, for example, a database server, removing folder does not remove the data automatically, but it does remove the storage configuration, which makes restoring the JCR content difficult.
 
-### **JSP files are not compiled on JBoss {#jsp-files-are-not-compiled-on-jboss}**
+### JSP files are not compiled on JBoss {#jsp-files-are-not-compiled-on-jboss}
 
 If you install or update JSP files to Experience Manager on JBoss and the corresponding servlets are not compiled, ensure the JBoss JSP compiler is correclty configured. For information, see the
 [JSP Compilation Issues in JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) article.

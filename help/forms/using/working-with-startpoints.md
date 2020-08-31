@@ -14,7 +14,7 @@ docset: aem65
 
 # Working with Startpoints{#working-with-startpoints}
 
-A startpoint invokes a process created in Workbench. It is associated with a form which invokes the process when the form is submitted. See [Geometrixx Finance Reference Site walkthrough](../../forms/using/finance-reference-site-walkthrough.md) to understand processes.
+A startpoint invokes a process created in Workbench. It is associated with a form which invokes the process when the form is submitted.
 
 >[!NOTE]
 >

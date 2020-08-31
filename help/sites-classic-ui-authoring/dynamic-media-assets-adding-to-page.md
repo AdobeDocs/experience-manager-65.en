@@ -149,7 +149,7 @@ You can edit the following **[!UICONTROL General]** settings by clicking **[!UIC
 
 **[!UICONTROL Width and Height]** &ndash; Enter value in pixels if you want the video to be a fixed size. Leaving these values blank makes it adaptive.
 
-You can edit the following **[!UICONTROL Add To Cart** settings by clicking **[!UICONTROL Edit]** in the component.
+You can edit the following **[!UICONTROL Add To Cart]** settings by clicking **[!UICONTROL Edit]** in the component.
 
 **[!UICONTROL Show Product Asset]** &ndash; By default, this value is selected. The product asset shows an image of the product as defined in the Commerce module. Clear the check mark to not show the product asset.
 

@@ -30,8 +30,7 @@ As a user, you can do the following:
 
 See the following additional topics:
 
-* [Managing Projects
-  ](/help/sites-authoring/touch-ui-managing-projects.md)
+* [Managing Projects](/help/sites-authoring/touch-ui-managing-projects.md)
 * [Working with Tasks](/help/sites-authoring/task-content.md)
 * [Working with Project Workflows](/help/sites-authoring/projects-with-workflows.md)
 * [Creative Project and PIM Integration](/help/sites-authoring/managing-product-information.md)

@@ -56,7 +56,7 @@ The differences in setting up the scoring and badging rules are:
 
 The advanced scoring engine provides an OSGi configuration with parameters that affect the advanced scoring algorithm.
 
-![chlimage_1-260](assets/chlimage_1-260.png)
+![advanced-scoring-engine](assets/advanced-scoring-engine.png)
 
 * **Scoring weights**
   
@@ -98,7 +98,7 @@ To invoke the advanced scoring engine, the `scoringType`should be set to `advanc
 
 See [Scoring Sub-Rules](/help/communities/implementing-scoring.md#scoring-sub-rules).
 
-![chlimage_1-261](assets/chlimage_1-261.png)
+![advanced-scoring-type](assets/advanced-scoring-type.png)
 
 ### Stopwords {#stopwords}
 
@@ -118,7 +118,7 @@ The advanced badging rule properties differ from the [basic badging rule propert
 
 Instead of associating points with a badge image, it is only necessary to identify the number of experts allowed and the badge image to award.
 
-![chlimage_1-262](assets/chlimage_1-262.png)
+![advanced-badging-rules](assets/advanced-badging-rules.png)
 
 <table>
  <tbody>
@@ -160,7 +160,7 @@ Included in this beta release is one reward-based expert badge:
   
   `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-263](assets/chlimage_1-263.png)
+![expert-badge](assets/included-badge.png)
 
 For the expert badge to appear as a reward for activity, make sure:
 

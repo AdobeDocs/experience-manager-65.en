@@ -126,7 +126,7 @@ Let's look at an example how you can set up an Apache 2.4 reverse proxy server w
    ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
 
-   Replace `[AEM_Instance`] with the AEM server publish URL in the rules.
+   Replace `[AEM_Instance]` with the AEM server publish URL in the rules.
 
 If you do not mount the AEM server on a context path, the proxy rules at Apache layer will be as follows:
 
