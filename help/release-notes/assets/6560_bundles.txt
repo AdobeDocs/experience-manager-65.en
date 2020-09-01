@@ -1,0 +1,81 @@
+SYMBOLIC NAME                                           BUNDLE NAME                                                 VERSION
+org.apache.commons.codec                                Apache Commons Codec                                        1.11.0
+com.adobe.cq.cq-experience-fragments                    AEM - Experience Fragments                                  1.2.72
+com.adobe.cq.cq-target-integration                      AEM 6 - Adobe Target integration                            1.3.36
+com.adobe.cq.social.cq-social-commons                   AEM Communities Commons - Bundle                            1.10.80
+com.adobe.cq.social.cq-social-group                     AEM Communities CommunityGroup - Bundle                     1.7.16
+com.adobe.cq.dam.cq-dynamicmedia-core                   AEM Dynamic Media Integration                               1.0.124
+com.adobe.cq.ui.admin                                   AEM UI WCM Admin Bundle                                     1.0.0.CQ650-B004
+com.adobe.cq.wcm.com.adobe.cq.wcm.jobs.async            Adobe AEM - WCM Asynchronous Jobs support                   1.0.18
+com.adobe.cq.dtm-reactor.core                           Adobe CQ Activation DTM Core Bundle                         1.1.14
+com.adobe.cq.cq-dam-index-builder                       Adobe CQ DAM - Index Builder                                1.4.2
+com.adobe.cq.dam.cq-scene7-imaging                      Adobe CQ DAM Scene7 Dynamic Imaging                         1.6.52.CQ650-B0026
+com.adobe.cq.cq-experiencelog                           Adobe CQ Experience Log Client Bundle                       1.4.16
+com.day.cq.cq-search-ext                                Adobe CQ Search Extension                                   1.3.6
+com.day.cq.wcm.cq-wcm-foundation                        Adobe CQ WCM Foundation Components                          5.12.30
+com.adobe.cq.commerce.cq-commerce-core                  Adobe Communique 5 Commerce Core                            5.17.14
+com.day.cq.dam.adobe-dam-idsprint                       Adobe DAM InDesign Print                                    0.4.8
+com.day.cq.dam.dam-webdav-support                       Adobe DAM WebDAV Support                                    1.4.6
+com.adobe.granite.crxde-lite                            Adobe Granite CRXDE Lite                                    1.1.44.CQ651-B0008
+com.adobe.granite.repository.hc.impl                    Adobe Granite Health Checks for the Repository              1.0.65.CQ650-B0002
+com.adobe.granite.auth.ims                              Adobe Granite IMSAuthentication Handler                     1.3.12.CQ650-B0002
+com.adobe.granite.omnisearch.core                       Adobe Granite Omnisearch Core Module                        1.0.91.CQ650-B0002
+com.day.cq.cq-replication                               Adobe Granite Replication                                   6.2.86.CQ650-B0004
+com.adobe.granite.ui.commons                            Adobe Granite UI Commons                                    5.10.15.CQ650-B0004
+com.adobe.granite.workflow.core                         Adobe Granite Workflow Core                                 2.0.240.CQ650-B0017
+pdfcore                                                 Adobe PDF Core                                              3.0.622277
+pdfencryption                                           Adobe PDF Encryption                                        3.0.622277
+PDFServices.extraction                                  Adobe PDF Extraction services                               3.0.622277
+PDFServices.manipulations                               Adobe PDF Manipulation services                             3.0.622277
+PDFServices.security                                    Adobe PDF Security services                                 3.0.622277
+org.apache.sling.installer.core                         Apache Sling Installer                                      3.9.0.B002
+org.apache.sling.jcr.repoinit                           Apache Sling JCR RepoInit module                            1.1.28
+org.apache.sling.repoinit.parser                        Apache Sling RepoInit Parser                                1.6.2
+org.apache.sling.xss                                    Apache Sling XSS Protection API                             2.2.6
+com.adobe.cq.cq-product-info-provider                   CQ ProductInfo Provider                                     6.5.14
+com.adobe.cq.com.adobe.cq.projects.core                 CQ Projects - Core Bundle                                   0.5.28
+com.day.cq.dam.cq-dam-similaritysearch                  DAM Similarity Search Bundle                                5.12.18
+com.day.cq.mcm.cq-mcm-campaign                          Day Communique 5 Adobe Campaign Integration                 1.3.20
+com.day.cq.dam.cq-dam-rating                            Day Communique 5 Assets Rating                              1.2.2
+com.day.cq.dam.cq-dam-commons                           Day Communique 5 DAM Commons                                5.12.96
+com.day.cq.dam.cq-dam-core                              Day Communique 5 DAM Core Implementation                    5.12.264
+com.day.cq.dam.cq-scene7-core                           Day Communique 5 DAM Scene7 Integration                     5.12.140
+com.day.cq.dam.cq-scene7-api                            Day Communique 5 DAM Scene7 Integration                     5.12.36
+com.day.cq.dam.cq-dam-video                             Day Communique 5 DAM Video Extensions                       5.12.6
+com.day.cq.cq-rewriter                                  Day Communique 5 Rewriter                                   5.12.8
+com.day.cq.wcm.cq-wcm-api                               Day Communique 5 WCM API                                    5.14.4
+com.day.cq.wcm.cq-wcm-core                              Day Communique 5 WCM Core Implementation                    5.12.142
+com.day.cq.wcm.cq-msm-core                              Day Communique 5 WCM Multi Site Management Core             5.12.56
+com.day.cq.wcm.cq-msm-move-api                          Day Communique 5 WCM Multi Site Management Move Handle API  0.0.8
+com.day.cq.dam.cq-dam-asset-sourcing                    Day Communique 6 DAM Asset Sourcing Implementation          1.0.36
+com.adobe.aemfd.expeditor.aemfd-expeditor-utils-bundle  Expression Editor Utils Bundle                              5.0.66
+com.adobe.granite.infocollector                         Granite Info Collector                                      1.0.22
+com.adobe.granite.queries                               Granite Queries                                             1.0.77.CQ650-B0002
+org.apache.jackrabbit.oak-jackrabbit-api                Jackrabbit API                                              1.22.4
+org.apache.jackrabbit.jackrabbit-data                   Jackrabbit Data                                             2.20.1
+org.apache.jackrabbit.jackrabbit-jcr-commons            Jackrabbit JCR Commons                                      2.20.1
+org.apache.jackrabbit.jackrabbit-spi                    Jackrabbit SPI                                              2.20.1
+org.apache.jackrabbit.jackrabbit-spi-commons            Jackrabbit SPI Commons                                      2.20.1
+org.apache.jackrabbit.jackrabbit-webdav                 Jackrabbit WebDAV Library                                   2.20.1
+javax.mail                                              JavaMail API (compat)                                       1.6.2
+org.apache.jackrabbit.oak-api                           Oak API                                                     1.22.4
+org.apache.jackrabbit.oak-blob-cloud-azure              Oak Azure Cloud Blob Store                                  1.22.4
+org.apache.jackrabbit.oak-blob-plugins                  Oak Blob Plugins                                            1.22.4
+org.apache.jackrabbit.oak-blob                          Oak Blob Store                                              1.22.4
+org.apache.jackrabbit.oak-authorization-cug             Oak CUG Authorization                                       1.22.4
+org.apache.jackrabbit.oak-commons                       Oak Commons                                                 1.22.4
+org.apache.jackrabbit.oak-store-composite               Oak Composite Store                                         1.22.4
+org.apache.jackrabbit.oak-core                          Oak Core                                                    1.22.4
+org.apache.jackrabbit.oak-core-spi                      Oak Core SPI                                                1.22.4
+org.apache.jackrabbit.oak-store-document                Oak DocumentNodeStore                                       1.22.4
+org.apache.jackrabbit.oak-auth-external                 Oak External Authentication Support                         1.22.4
+org.apache.jackrabbit.oak-jcr                           Oak JCR Binding                                             1.22.4
+org.apache.jackrabbit.oak-auth-ldap                     Oak LDAP Authentication Support                             1.22.4
+org.apache.jackrabbit.oak-lucene                        Oak Lucene                                                  1.22.4
+org.apache.jackrabbit.oak-store-spi                     Oak NodeStore and Commit SPI                                1.22.4
+org.apache.jackrabbit.oak-query-spi                     Oak Query SPI                                               1.22.4
+org.apache.jackrabbit.oak-security-spi                  Oak Security SPI                                            1.22.4
+org.apache.jackrabbit.oak-segment-azure                 Oak Segment Azure                                           1.22.4
+org.apache.jackrabbit.oak-segment-tar                   Oak Segment Tar                                             1.22.4
+org.apache.jackrabbit.oak-solr-osgi                     Oak Solr OSGi                                               1.22.4
+com.adobe.granite.repository                            Oak content repository                                      1.6.28.CQ650-B0001
