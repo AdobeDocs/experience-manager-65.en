@@ -74,7 +74,7 @@ You can now choose to selectively publish or unpublish assets to either [!DNL Ex
 When you prefill an adaptive form, the [!DNL Experience Manager Forms] server merges data with an adaptive form and delivers the filled form to you. By default, the data merge action takes place at the server.
 You can now configure the [!DNL Experience Manager Forms] server to perform the data merge action at the client instead of the server. It significantly reduces the time required to prefill and render adaptive forms.
 
-### Form data model integration with RESTful APIs on a server with two-way SSL implementation {fdm-integration-rest-apis-two-way-ssl}
+### Form data model integration with RESTful APIs on a server with two-way SSL implementation {#fdm-integration-rest-apis-two-way-ssl}
 
 [!DNL Experience Manager Forms] form data model can now integrate with RESTful APIs on a server that has a two-way SSL implemented on it.
 
@@ -86,7 +86,7 @@ If an AcroForm includes [!DNL Adobe Sign] Text Tags, those fields are now recogn
 
 [!DNL Experience Manager Forms] now supports SMB 2 and SMB 3 protocols.
 
-### Enhanced caching for translated adaptive form pages {enhanced-caching-translated-adaptive-forms}
+### Enhanced caching for translated adaptive form pages {#enhanced-caching-translated-adaptive-forms}
 
 You can now specify locale as a selector instead of URL argument. It helps cache translated adaptive forms on [!DNL Experience Manager Dispatcher].
 

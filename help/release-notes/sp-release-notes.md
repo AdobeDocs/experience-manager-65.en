@@ -250,7 +250,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 * A translation project is not created if the user's `authorizableID` includes special characters (NPR-33828).
 
-### Sling {sling-6560}
+### Sling {#sling-6560}
 
 * Health Check and Pattern Detector have overlapping functionality. As a result, Heath check is removed from the product (NPR-33928).
 
