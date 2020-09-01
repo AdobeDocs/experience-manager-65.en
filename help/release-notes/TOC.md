@@ -16,6 +16,7 @@ user-guide-description: Learn about the latest new features in AEM 6.5 in the re
   + [Previous Service Pack Release Notes](previous-hotfixes-featurepacks.md)
 + [AEM Sites Release Notes](sites.md)
 + [AEM Assets Release Notes](assets.md)
++ [AEM Forms JEE Patch Installer](jee-patch-installer-65.md)
 + [AEM Communities Release Notes](communities-release-notes.md)
 + [Deprecated and Removed Features](deprecated-removed-features.md)
 + [Known Issues](known-issues.md)
