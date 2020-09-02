@@ -198,7 +198,12 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 * When creating rules for dropdown in [!UICONTROL Folder Metadata Schema Form], user cannot select values from [!UICONTROL Field Choices] column (CQ-4297530).
 
-* Runtime copy of custom workflow models gets deleted when user installs 6.5 Service Pack 5 causing memory leak issues (NPR-34532).
+* The run-time copy of assets custom workflow model (created in `/var/workflow/models/dam`) is deleted when you install 6.5 Service Pack 5 or previous versions on 6.5 GA (NPR-34532).
+
+   >[!NOTE]
+   >
+   >Upgrading to the [!DNL Experience Manager] 6.5 Service Pack 6 does not retrieve your run-time copy, if your run-time copy is deleted on installing [!DNL Experience Manager] 6.5 Service Pack 5 or previous versions on 6.5 GA. To retrieve the run-time copy, sync the design time copy of the workflow model with the run-time copy using HTTP API:
+`<designModelPath>/jcr:content.generate.json`.
 
 **Issues fixed in Dynamic Media**
 
@@ -445,6 +450,10 @@ Customers are advised to review if they make use of the feature or capability in
 | Connectors | The Adobe JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013 is deprecated for AEM 6.5. | N/A |
 
 ## Known issues {#known-issues}
+
+* If you install [!DNL Experience Manager] 6.5 Service Pack 5 or previous versions on 6.5 GA, the run-time copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
+To retrieve your run-time copy, Adobe suggests to sync the design time copy of the custom workflow model with its run-time copy using the HTTP API:
+`<designModelPath>/jcr:content.generate.json`.
 
 * Contact Adobe Support if you encounter issues when editing and creating cascading rules in [!UICONTROL Folder Metadata Schema Forms Editor] and [!UICONTROL Metadata Schema Forms Editor] using [!UICONTROL Define Rule] dialog. Note that the rules that are already created and saved are working as expected.
 
