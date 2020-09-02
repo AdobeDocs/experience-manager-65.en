@@ -24,13 +24,13 @@ The key features and enhancements introduced in Adobe Experience Manager 6.5.6.0
 
 * Publishing the asset contribution folders from Brand Portal to Experience Manager Assets is now supported through proxy server as well.
 
-* The auto-generated groups of private folder are now cleaned up on deletion of the private folder in [!DNL Experience Manager Assets] (NPR-33271).
+* The auto-generated groups of private folder are now cleaned up on deletion of the private folder in [!DNL Experience Manager Assets].
 
-* The descriptions of modifiers in video [!UICONTROL Viewer] preset editor has been updated in [!DNL Dynamic Media] (CQ-4299028).
+* The descriptions of modifiers in video [!UICONTROL Viewer] preset editor has been updated in [!DNL Dynamic Media].
 
-* A new company setting is provided to reflect the status of [!DNL Dynamic Media] connector (CQ-4297676).
+* A new company setting is provided to reflect the status of [!DNL Dynamic Media] connector.
 
-* The default options for `test` and `aiprocess` are updated to `Thumbnail`, from `Rasterize` previously in Dynamic Media, to ensure that users need to create only thumbnail and skip the page extraction and keyword extraction (CQ-4300322).
+* The default options for `test` and `aiprocess` are updated to `Thumbnail`, from `Rasterize` previously in Dynamic Media, to ensure that users need to create only thumbnail and skip the page extraction and keyword extraction.
 
 * Prefill an adaptive form at the client.
 
@@ -41,6 +41,8 @@ The key features and enhancements introduced in Adobe Experience Manager 6.5.6.0
 * Support for Adobe Sign Text Tags in Automated Forms Conversion Service.
 
 * Support for SMB 2 and SMB 3 protocols.
+
+* Support to convert colored forms to adaptive forms using Automated Forms Conversion service.
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.22.4.
 
@@ -414,11 +416,11 @@ To know the platforms certified to work with this release, see the [technical re
 >
 >Skip if you are not using AEM Forms on JEE. Fixes in Adobe Experience Manager Forms on JEE are delivered through a separate installer.
 
-For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes for patch 0014](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0014.html).
+For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes for patch 0018](jee-patch-installer-65.md).
 
 ### UberJar {#uber-jar}
 
-The UberJar for Experience Manager 6.5.6.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.5/).
+The UberJar for Experience Manager 6.5.6.0 is available in the [Adobe Public Maven repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6/).
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -426,8 +428,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 <dependency>
       <groupId>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.5.6</version>
-      <classifier>apis</classifier>
+      <version>6.5.6</version>  
       <scope>provided</scope>
 </dependency>
 ```
