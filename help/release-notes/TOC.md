@@ -12,7 +12,7 @@ user-guide-description: Learn about the latest new features in AEM 6.5 in the re
 + [General Release Notes](release-notes.md)
 + Service Pack Release Notes {#service-pack}
   + [What's New](new-features-latest-service-pack.md)
-  + [Service Pack 5 Release Notes](sp-release-notes.md)
+  + [Service Pack 6 Release Notes](sp-release-notes.md)
   + [Previous Service Pack Release Notes](previous-hotfixes-featurepacks.md)
 + [AEM Sites Release Notes](sites.md)
 + [AEM Assets Release Notes](assets.md)
