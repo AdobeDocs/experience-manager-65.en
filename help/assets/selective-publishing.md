@@ -138,7 +138,7 @@ You can use **[!UICONTROL Quick Publish]** for simple asset activation cases. **
 >
 >To use **[!UICONTROL Quick Publish]** to publish assets to Dynamic Media or AEM, be sure **[!UICONTROL Selective Publish]** is enabled either in your **[!UICONTROL Dynamic Media Configuration]** or in the folder properties of the selected folder.
 
-**To use Quick Publish to publish assets to Dynamic Media or AEM**
+**To publish assets to Dynamic Media or AEM using Quick Publish**
 
 1. In AEM, tap the AEM logo to access the global navigation console. On the left side of the page, tap the Navigation icon (just above the Tools icon), then on the right side of the page tap **[!UICONTROL Assets > Files.]**
 1. In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, do one of the following:

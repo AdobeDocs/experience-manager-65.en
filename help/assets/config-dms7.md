@@ -65,17 +65,17 @@ Feature pack 18912 lets you either bulk ingest assets by way of FTP, or migrate 
 
 See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md) for more information.
 
-## Creating a Dynamic Media Configuration {#configuring-dynamic-media-cloud-services}
+## Creating a Dynamic Media Configuration in Cloud Services {#configuring-dynamic-media-cloud-services}
 
 **Before you configure Dynamic Media**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**To create a Dynamic Media Configuration**
+**To create a Dynamic Media Configuration in Cloud Services**
 
 1. In AEM, tap the AEM logo to access the global navigation console and tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
 1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]** (do not tap or select the folder icon to the left of **[!UICONTROL global]**), then tap **[!UICONTROL Create.]**
-1. On the Create Dynamic Media Configuration page, enter a title, the Dynamic Media account email address, password, then select your region. These are provided to you by Adobe in the provisioning email. Please contact support if you did not receive this.
+1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter a title, the Dynamic Media account email address, password, then select your region. These are provided to you by Adobe in the provisioning email. Please contact support if you did not receive this.
 
    Click **[!UICONTROL Connect to Dynamic Media.]**
 
