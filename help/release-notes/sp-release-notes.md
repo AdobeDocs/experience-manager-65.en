@@ -147,7 +147,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
   
   *Figure: [!UICONTROL Search for Help] in [!UICONTROL Help] menu*
   
-  * the error message if incorrect value is entered in [!ICONTROL Impersonate as] field under [!UICONTROL User] option and focus correctly moves to the text field (NPR-33804).
+  * the error message if incorrect value is entered in [!UICONTROL Impersonate as] field under [!UICONTROL User] option and focus correctly moves to the text field (NPR-33804).
   
   ![User menu in header](assets/User_aem_header.png)
   
