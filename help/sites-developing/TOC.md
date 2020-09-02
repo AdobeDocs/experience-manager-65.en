@@ -3,6 +3,7 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Developing User Guide
+user-guide-description: This guide covers how to build out your AEM instance.
 ---
 
 # AEM 6.5 Developing User Guide {#developing}
@@ -109,7 +110,7 @@ user-guide-title: AEM 6.5 Developing User Guide
         + [SPA and Server-Side Rendering](spa-ssr.md)
         + [SPA Javascript API References](spa-reference-materials.md)
     + [HTTP API](/help/assets/mac-api-assets.md)
-    + [Content Fragments](/help/assets/content-fragments.md)
+    + [Content Fragments](/help/assets/content-fragments/content-fragments.md)
     + [Experience Fragments](/help/sites-authoring/experience-fragments.md)
     + [Understanding Content Fragments and Content Services in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Development Tools{#devtools}

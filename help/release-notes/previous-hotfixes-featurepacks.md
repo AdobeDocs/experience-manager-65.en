@@ -1,24 +1,326 @@
 ---
-title: AEM 6.5 Previous Service Pack Release Notes
+title: Adobe Experience Manager 6.5 Previous Service Pack Release Notes
 description: Release notes specific to Adobe Experience Manager 6.5 Service Pack 3 and earlier.
-uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
-docset: aem65
+contentOwner: AK
 ---
 
 # Hotfixes and Feature Packs included in previous Service Packs {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
+## Adobe Experience Manager 6.5.5.0 {#experience-manager-6550}
+
+Adobe Experience Manager 6.5.5.0 is an important update that includes new features, key customer requested enhancements, and performance, stability, and security improvements, that are released since the general availability of 6.5 release in **April 2019**. It can be installed on top of Adobe Experience Manager 6.5.
+
+Some key features and enhancements introduced in Adobe Experience Manager 6.5.5.0 includes:
+
+* Customize the column names that display in Adobe Experience Manager Inbox.
+
+* Improved accessibility in various areas in Experience Manager Web Content Management (WCM) such as Page Editor, Core Components, RTE, and Admin user interface.
+
+* Save an [!DNL Interactive Communication] as a draft.
+
+* Support for [!DNL Oracle WebLogic 12] for Experience Manager Forms on JEE.
+
+* Improved exception handling in [!DNL Adobe Experience Manager Assets] user interface flow.
+
+* To get publish URL for Dynamic Media Scene7, a new method `getRemoteAssetPublishURL` is added to `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` interface.
+
+* [Accessibility enhancements](#assets-6550) in [!DNL Adobe Experience Manager Assets] in compliance with Web Content Accessibility Guidelines (WCAG).
+
+* Removed Package Share integration from within Adobe Experience Manager.
+
+* The built-in repository (Apache Jackrabbit Oak) is updated to version 1.22.3.
+
+For complete list of features, key highlights, key features introduced in Experience Manager 6.5 service pack 5, see [What's new in Adobe Experience Manager 6.5 Service Pack 5](new-features-latest-service-pack.md) .
+
+The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0 release.
+
+### [!DNL Sites] {#sites-6550}
+
+* Experience Manager Sites provides an option to publish or unpublish a page from its alias. The option does not work (NPR-33415).
+* When a layout container is deleted from a template containing multiple templates, the template does not render correctly (NPR-33347).
+* When an Experience Manager Sites page is part of a large content set with multiple live-copies, the page version history preview fails to load (NPR-33311).
+* When you use the Move command to rename an Experience Manager Sites page, the page title is not updated (NPR-33264).
+* When you move pages through the column view, the columns disappear (NPR-33216).
+* When the name of a local component in a language copy is identical to the name of a component in the blueprint and the component is rolled out from blueprint, term `_msm_moved` is not added to the name of the local component (NPR-33208).
+* The Page Redirect servlet appends .html to an Experience Manager Sites URL where ResourceType is not `cq:Page` (NPR-33176).
+* When you paste a subtree, there is no option to decide if corresponding subpages are to be pasted or not (NPR-33149).
+* The number of results in live usages of a component is limited to number 49 (NPR-33058).
+* When you base a Content Fragment on a schema and it contains a mandatory text area or a path field, the Content Fragment fails to save (NPR-33007).
+* When you create a custom component using the default Experience Fragment component and use it in Experience Manager Sites pages, Experience Manager does not display references (usage) for the custom component (NPR-32852).
+* When you rename a folder with a large number of references, many references to the folder are not updated (NPR-32765).
+* When you enable the source edit option it becomes available for inline full-screen options but remains missing for edit dialog and full-screen options of the rich text editor (NPR-32763).
+* If you have a multi-field and it contains a required field (such as a dropdown or a pathfield) in the page properties of a blueprint, when a page containing such a multi-field is rolled out, the page properties of the live copy are not saved (NPR-32751).
+* Screen readers cannot use the heading structure to navigate a page. In addition, the Components tab has the wrong label (NPR-32648).
+* When pagination starts, Experience Fragments Picker does not load all the items (NPR-32605).
+* Author permissions to read, modify, create, and delete live copies are revoked. Each Author had to explicitly provide read and modify permissions to move pages within a Blueprint (NPR-32550).
+* Content authors fail to create Launch for a page that has an integration with Adobe Analytics (NPR-32548).
+* When a user resumes inheritance with synchronization, the live copy of the parent page does not synchronize with the blueprint and displays an incorrect status (NPR-32500).
+* Experience Manager Sites editor page takes more than 15 seconds to load (NPR-32413).
+* Certain fields do not display the Cancel inheritance option (NPR-32362).
+* When you select a path for an Experience Fragment component and select the Open Selection Dialog checkbox, you are not navigated to the selected path in the Path Browser (NPR-32308).
+* When you upgrade from Experience Manager 6.2 to Experience Manager 6.5, the Parsys component of static templates do not display correctly. The height of the the Parsys component is set to 0 and the components inside it are not visible (NPR-33663).
+* When a user copies and pastes a Layout Container on the same page, components in a Layout Container do not display (NPR-33648).
+* Dispatcher health check displays `Invalid cookie header` warning message in the log files (NPR-33629).
+* Reflected XSS in PreferencesServlet (NPR-33438).
+* Anonymous users can access CRX DE Lite features (GRANITE-27790).
+
+### [!DNL Assets] {#assets-6550}
+
+**Accessibility enhancements in Experience Manager Assets**
+
+* It is now possible to bring keyboard focus on [!UICONTROL Comments] list and clickable option to [!UICONTROL Create] version comments under [!UICONTROL Create new version] in [!UICONTROL Timeline] panel of assets (NPR-33424).
+
+* It is now possible to reach [!UICONTROL View Settings] option for assets and change settings in [!UICONTROL View Settings] dialog using keyboard keys (NPR-33420).
+
+* The list box popup of combo box (in various fields on different pages) now shows entries as a list of options that can be announced by screen readers (NPR-33516).
+
+* The sort functionality of sortable headers (in list view, [!UICONTROL Timeline] view, and [!UICONTROL Manage Publication] page) are now announced by screen readers and sorting controls on column headers are accessible using keyboard (NPR-32979).
+
+* The clickable elements such as comment cards, version updates, combo boxes, and chevron icons of menus can now be focused upon and interacted with using a keyboard (NPR-33514).
+
+* Functionality (or purpose of action) of insights icons (for usage, impressions, and clicks) on [!UICONTROL Insights View] are now correctly announced by screen readers (NPR-33513).
+
+* Read-only form fields (for example disabled fields on [!UICONTROL Basic tab] of asset [!UICONTROL Properties]) are now focusable using keyboard (NPR-33493, CQ-4273031).
+
+* Labels in various input fields are now permanent labels (thus accessible) and not just placeholder labels, which disappeared when text was entered (NPR-33475).
+
+* Different heading levels (such as page titles and section headings) are now perceived as headings with different levels to screen reader users (NPR-33471).
+
+* Interactive user interface elements, such as links and options (on header and zoom options of assets page, folder navigation), are now accessible using a keyboard (NPR-33468, CQ-4271412).
+
+* The [!UICONTROL Options], [!UICONTROL Scope], and [!UICONTROL Workflows] progress indicators on [!UICONTROL Manage Publication] page are now correctly read out by screen readers as progress indicators, instead of tabs (NPR-33416).
+
+* The color of star rating icons (such as in [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view) is changed for appropriate contrast to be visible to users with limited vision and without perception of color (NPR-33414).
+
+* Chevron up arrow next to [!UICONTROL Comment] field on assets details page can now be accessed using keyboard keys (NPR-33397).
+
+* The expanded and collapsed states of [!UICONTROL Tags] dialog on asset [!UICONTROL Properties] and left rail navigation (on assets user interface) are now correctly announced by screen readers (NPR-33396).
+
+* Titles of all the browsed pages on [!DNL Adobe Experience Manager] Assets are now unique (NPR-33343).
+
+* When navigating tree structure various elements of the tree view control are now correctly announced by screen readers (NPR-33304).
+
+* Different versions of assets in [!UICONTROL Timeline] view on assets details page are now accessible using keyboard keys (NPR-33283).
+
+* Names of search suggestions appearing in Omnisearch combo box are now announced by screen readers when using search functionality (NPR-33280).
+
+* Clickable elements and [!UICONTROL Go to link] in [!UICONTROL References rail] are now announced by screen readers as clickable elements (NPR-33278).
+
+* Table structure information (such as row 1, cell 1, table) of [!UICONTROL Share Link] dialog is no more announced by screen readers, when the dialog opens (NPR-33268).
+
+* The purpose of various combo box elements (such as Path field and option to open Selection dialog in Basic tab of asset Properties) are now correctly announced by screen readers (NPR-33235).
+
+* Information that the rows in list view table are selectable is now communicated to screen reader users when keyboard focus is on them. When a pointer hovers on the rows, the screen readers announce the information (NPR-33234).
+
+* Options (having [!UICONTROL x]) to remove each of the selected tags below the [!UICONTROL Tags] field in [!UICONTROL Basic] tab of [!UICONTROL Properties] are now accessible to screen readers (NPR-33206).
+
+* Calendar date picker is now focusable and actionable using keyboard by screen reader users and sighted keyboard users (NPR-33200).
+
+* The toggle to switch between list view and card view now correctly exposes its functionality (of adjusting views) to screen reader (NPR-33069).
+
+* Menu in the left rail is now accessible. Functionality and purpose of expanding the menu is appropriately announced by screen readers (NPR-33068).
+
+* List box and many other user interface elements are now accessible to non-sighted screen reader users, and following information about them is announced by screen readers (NPR-33040):
+
+  * whether user input is required on an element before form submission.
+  * whether an element is not editable.
+  * whether a widget is selected or not.
+
+* The option to open filter sidebar can now be accessed using keyboard (NPR-32842, CQ-4273018).
+
+* Check box control in column header of list view is now accessible and purpose of using the control is announced by screen readers (NPR-32722, NPR-33005).
+
+* Labels for hours (HH) and minutes (mm) fields in calendar date picker are now permanent labels instead of placeholder labels, and do not disappear when user enters text in these fields (NPR-32720).
+
+* The links text of notifications (that appear after clicking the bell icon) is now announced to screen reader users, who use tab to access each link (NPR-32645).
+
+* [!UICONTROL Select], [!UICONTROL Download], [!UICONTROL Properties], and [!UICONTROL More Actions] options on asset cards in [!UICONTROL Insights View] are now accessible using keyboard (NPR-32609).
+
+* Visually hidden content (such as content of header menu bar on search results) is no more announced by screen readers when accessed using keyboard (NPR-32606).
+
+* Purpose of the labels on controls to move to next and previous months in calendar date picker are now announced by screen readers (NPR-32604).
+
+* Star rating icons are now focusable and actionable using keyboard keys (NPR-32513).
+
+* Functionality to control video volume is now accessible through tab (to focus on volume slider) and arrow keys (to adjust volume) on keyboard (NPR-32065).
+
+* The purpose of lower bound ([!UICONTROL From]) and upper bound ([!UICONTROL To]) input fields of File Size filter is now announced to non-sighted screen reader users (NPR-32064).
+
+* The [!UICONTROL Languages] menu in [!UICONTROL Create and Translate] form is now accessible to screen readers in browse mode (CQ-4293906).
+
+* The [!UICONTROL References] panel is now accessible with following enhancements (NPR-33261, CQ-4293798):
+
+  * In browse mode, screen reader focus no longer moves to hidden multiline edit fields under [!UICONTROL Site References], [!UICONTROL Asset References], [!UICONTROL Copies], and [!UICONTROL Form References] sections.
+
+  * Screen readers now announce the role of [!UICONTROL Site References] and [!UICONTROL Language Copies] elements.
+
+  * The focus of screen readers in browse mode shifts in a meaningful sequence to various elements.
+
+* [!UICONTROL Metadata Schema Editor] page and its elements are now accessible using keyboard and are screen reader friendly (CQ-4290962, CQ-4272953).
+
+* The purpose of `X` symbol to remove the selected tags is now announced by screen readers along with the number of selected tag (CQ-4273017).
+
+* To avoid confusion for non-sighted users using screen reader, decorative icons and images are now ignored by screen readers (CQ-4272944).
+
+**Issues fixed in Experience Manager Assets**
+
+[!DNL Adobe Experience Manager] 6.5.5.0 Assets provides fixes to the following issues:
+
+* [!UICONTROL Start] option on [!UICONTROL Create Workflow] dialog for assets in a collection is disabled, thereby preventing workflow from getting triggered (NPR-32471).
+
+* When using cascading popup in metadata schemas, on selecting and saving a drop-down option containing an apostrophe (from the child drop-down) the selected apostrophe option disappears after reopening asset [!UICONTROL Properties] (NPR-32649).
+
+* [!UICONTROL Asset Insights Sync Job] stops and fails if it encounters invalid entries (on the Analytics side) instead of moving to the next entry (NPR-32674).
+
+* Gyroscope is not functional as motions sensors are disabled by default on mobile browsers in panoramic viewer (CQ-4272937).
+
+* [!UICONTROL Connected Assets Configuration] wizard fails to work with 404 error, on installing 6.5.3 on 6.5.1 (NPR-32730).
+
+* During the XMP writeback process, all custom namespace metadata properties change the custom namespace prefix to ns2 as opposed to the namespace prefix that is configured (NPR-32748).
+
+* Lazy loading is not triggered and only 100 assets are displayed on selecting to review the tasks from notifications inbox (NPR-32750).
+
+* `NullPointerException` is observed due to missing node preferences in newly created user profile (SAML/SSO). This error prevents newly logged in users to use [!DNL Adobe Experience Manager Stock] integration (NPR-32777).
+
+* Traversal warnings are observed in logs on opening a smart collection containing more than 10,000 assets (NPR-32980).
+
+* Asset names are changed to lowercase when moving assets from one folder to another in [!DNL Adobe Experience Manager] working on Dynamic Media Scene7 runmode (NPR-32995).
+
+* A searched asset cannot be deleted after navigating to its properties from the search results and then going back to search results to delete it (NPR-32998).
+
+* [!UICONTROL Next] option remains disabled on selecting destination folder in [!UICONTROL Move Assets] interface (NPR-33356).
+
+* [!UICONTROL Next] option is not enabled on selecting parent node (where single child folder is visible) and then selecting child folder (NPR-33275).
+
+* Check in and check out permissions are disabled on Adobe Asset Link (AAL) for users with delete permission, even if other permissions such as read, create, or modify are granted (NPR-33272).
+
+* Smart Crop renditions are not available in asset download dialog (NPR-33167).
+
+* Exception is observed in logs on opening renditions rail for a PDF under a folder with smart crop profile (CQ-4294201).
+
+* Image Presets do not publish, if [!UICONTROL Dynamic Media sync mode] is disabled by default on Experience Manager with Dynamic Media Scene7 runmode (CQ-4294200).
+
+* Asset processing while bulk upload gets stuck and workflow instance shows stuck instances of DAM update asset (CQ-4293916).
+
+* Creating a Dynamic Media configuration on Experience Manager works, but on the user interface nothing happens on selecting Save (CQ-4292442).
+
+* Preview of F4V video assets is not working in progressive playback on Safari/Mac (CQ-4289844).
+
+* Extra folder is created on smart-cropping an asset that is inside a parent folder with dot `.` character in its name (CQ-4289337).
+
+* Thumbnail is broken, and video processing banner is not shown when a video is copied (CQ-4284125).
+
+* Dimensional viewer incorrectly displays empty thumbnails in Firefox for some models with empty camera views (CQ-4283447).
+
+* Performance issues fixed in 6.5.5.0 are (CQ-4279206):
+
+  * It takes too long to upload large binaries to Dynamic Media Image Processing servers.
+
+  * Thumbnail generation time on Experience Manager increases because of Dynamic Media Scene7 architecture.
+
+* Dynamic Media Scene7 migration issues fail for customers with large number of assets (CQ-4279206).
+
+* Layout of video 360 viewer is broken if `setVideo` is used, and video shifts down on using `video= modifier` (CQ-4263201).
+
+* An error message displays while installing the Experience Manager SDL package (NPR-33175).
+
+* SSRF vulnerability in Experience Manager (NPR-33435).
+
+### Platform {#platform-6550}
+
+* The [!DNL Sling] filter is not called if the `sling:match` map entry is created under `/etc/maps` (NPR-33362).
+* Experience Manager crashes due to segmentation fault with [!DNL Apache Lucene] (NPR-32988).
+* [!DNL Jackson] core package missing from Experience Manager uberjar file (NPR-32848).
+* CRXDE Lite does not load content for users without read permission on the `jcr:primaryType` property for a node (NPR-32611).
+* [!DNL Granite] maintenance task scheduler re-initializes too often during Experience Manager deployments (CQ-4294627).
+* When an SQL query execute for a long time, for example 7 hours, Experience Manager stops responding (NPR-33044).
+
+### User Interface {#ui-6550}
+
+* Radio button selection does not persist in a multifield (NPR-33309).
+* Lazy loading limit does not work for the list view (NPR-33124).
+* Omnisearch results page does not display a message if there are no matches (NPR-32974).
+* Omnisearch filter returns all matches under `/content` node ignoring the selected location (NPR-32849).
+
+### Integrations {#integrations-6550}
+
+* Internal cache is cleared when a page with an Adobe Target component is published (NPR-33162).
+* Integration with Adobe Target does not work on [!DNL Windows Internet Explorer] 11 (NPR-33111).
+* When configuring Adobe Target, the [!UICONTROL Company] and [!UICONTROL Report Suite] fields do not appear on selecting a reporting source (NPR-32502).
+* When exporting [!DNL Experience Fragments] using Adobe I/O, metadata like Source Product is not exported into Adobe Target (NPR-32159).
+* Authorized IMS users in local Experience Manager admin group cannot create or modify IMS configurations (NPR-33045).
+* Adobe Launch configurations page does not display all records (NPR-33011).
+* Users in content-authors group cannot edit properties of an Adobe Target component due to JavaScript error (NPR-32996).
+* Cross-site scripting for JSON (NPR-32744).
+
+### Translation Projects {#translation-6550}
+
+* Translated tags are not imported into Experience Manager from third-party translation services (NPR-33154).
+* Translation configuration page displays incorrect translation provider than the one used for the translation (NPR-32971).
+* Adding an experience fragment folder to an existing translation project creates a new project (NPR-32843).
+* A `NullPointerException` error is seen in the logs on running a translation job (NPR-32628).
+
+### WCM {#wcm-6550}
+
+* Page Editor - The [!DNL Sites] Page Editor does not allow the keyboard-only users to skip to the main content instead of shifting tab focus through all options available in the header (CQ-4293883).
+* Page Editor - Panels that use Well component and include saved data do not display due to updates in [!DNL Chrome] and [!DNL Firefox] versions (CQ-4292995).
+* MSM - Deleting a component from the page does not delete the component from the published version of the page (CQ-4292360).
+
+### [!DNL Brand Portal] {#assets-brand-portal-6550}
+
+* Removing a published metadata schema from [!DNL Brand Portal] results in an error (CQ-4292063).
+* If an administrator configures [!DNL Experience Manager Assets] 6.5.4 with Brand Portal via Adobe Developer Console, the [!DNL Brand Portal] user is not able to publish a contribution folder's asset from [!DNL Brand Portal] to [!DNL Experience Manager] (NPR-33046).
+* Duplicate replication of the parent folders causing conflicts (NPR-33001).
+
+### [!DNL Communities] {#communities-6550}
+
+* Cannot delete a card in moderation console using the quick edit menu option (NPR-33117).
+* An error occurs on accessing the [!UICONTROL Activity Stream] page (NPR-33146).
+* Groups deleted on author instance are not removed from all publish instances (NPR-33199).
+* Authors, after creating a new group, are not redirected to the [!UICONTROL Community Group] section on [!DNL Internet Explorer] 11 (NPR-33205).
+* Accessing a message in Experience Manager Inbox does not change the status of the message to Read (NPR-32764).
+* Editing a [!DNL Communities] group and changing the thumbnail image does not update the group thumbnail image (NPR-32599).
+* A user is not able to send an email to another user in a community (NPR-32598).
+* A submitted blog does not display until the user refreshes the page (NPR-32391).
+* While creating a version of notifications and subscriptions of User Generated Content (UGC), an incorrect ID of the source page is stored (CQ-4279355, CQ-4289703).
+* Cross-site scripting issue (NPR-33203).
+
+### Workflow {#workflow-6550}
+
+* The [!UICONTROL Timeline] option in the left rail takes more time to load than expected (NPR-32851).
+* After restarting an Experience Manager instance, the email for the review task for a collection includes an incorrect payload link (NPR-32774).
+
+### [!DNL Forms] {#forms-6550}
+
+>[!NOTE]
+>
+>Experience Manager Service Pack does not include fixes for [!DNL Forms]. They are delivered using a separate Forms add-on package. In addition, a cumulative installer is released that includes fixes for AEM Forms on JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
+
+* Correspondence Management: The order of assets in a target area shuffles after submitting a letter (NPR-33359, NPR-33153).
+* Adaptive Forms: When a user edits an adaptive form, the [!UICONTROL Start Workflow] option available in the [!UICONTROL Page Information] menu does not work (NPR-33004).
+* Adaptive Forms: The user is not able to save an adaptive form with more than one attachment (NPR-32997).
+* Adaptive Forms: Changing the panel layout in an adaptive form results in an error (CQ-4293880).
+* Adaptive Forms: A new line to a string in an adaptive forms dictionary adds `&#xa;` characters to the dictionary (NPR-33266).
+* Adaptive Forms accessibility: When a user previews an adaptive form as an HTML form, the [!UICONTROL Scribble Signature] field is not able to retain tab focus (NPR-33159).
+* Adaptive Forms accessibility: The error messages that display on submitting an adaptive form do not link to an `aria-describedBy` attribute (NPR-33071).
+* Adaptive Forms accessibility: Fields marked mandatory in an adaptive form do not have the mandatory attribute set to True in the ARIA accessibility schema (NPR-33070).
+* PDFG Service: When a user converts a text file to a PDF, Japanese characters do not render correctly (NPR-33238).
+* PDFG Service: `CreatePDF` operation fails to convert a PDF file to PDF OCR format (NPR-32994).
+* PDFG Service: PDF conversion fails for the 200th instance of an [!DNL OpenOffice] document (NPR-32766).
+* BackendIntegration: Form data model requests fail as the refresh token expires due to incorrect inactive state (NPR-33169).
+* Designer: Screen readers execute the tabbing order based on the default geographic order instead of the custom tabbing order defined in the XDP file (NPR-32160).
+* Designer: If the tagging option is enabled, the subform border disappears in the generated PDF output (NPR-32778).
+* Stored XSS with the GuideSOMProviderServlet (NPR-32700).
+
 ## Adobe Experience Manager 6.5.4.0 {#experience-manager-6540}
 
-Adobe Experience Manager 6.5.4.0 is an important update that includes new features, key customer requested enhancements and performance, stability, security improvements, released since the general availability of 6.5 release in **April 2019**. It can be installed on top of Adobe Experience Manager (AEM) 6.5.
+Adobe Experience Manager 6.5.4.0 is an important update that includes new features, key customer requested enhancements and performance, stability, security improvements, released since the general availability of 6.5 release in **April 2019**. It can be installed on top of Adobe Experience Manager 6.5.
 
-Some key features and enhancements introduced in AEM 6.5.4.0 include:
+Some key features and enhancements introduced in Adobe Experience Manager 6.5.4.0 include:
 
-* AEM Assets is now configured with Brand Portal through Adobe I/O Console.
+* Adobe Experience Manager Assets is now configured with Brand Portal through Adobe I/O Console.
 
-* A new [Generate printable Output](../forms/using/aem-forms-workflow-step-reference.md) step is now available for AEM Forms workflows.
+* A new [Generate printable Output](../forms/using/aem-forms-workflow-step-reference.md) step is now available for Adobe Experience Manager Forms workflows.
 
 * [Multi-column support](../forms/using/resize-using-layout-mode.md) for layout mode for adaptive forms and Interactive Communications.
 
@@ -34,13 +336,13 @@ Some key features and enhancements introduced in AEM 6.5.4.0 include:
 
 * SOAP input or output and complex data structures now support Dynamic Group Substitution.
 
-For complete list of features, key highlights, key features introduced in previous AEM 6.5 service packs, see [What's new in Adobe Experience Manager 6.5 Service Pack 4](new-features-latest-service-pack.md).
+For a complete list of features and key highlights introduced in the latest service packs, see [What's new in Adobe Experience Manager 6.5 service packs](new-features-latest-service-pack.md).
 
 ### Sites {#sites-fixes}
 
-* When a URL of an AEM Sites pages contains a colon ( : ) or percentage symbol (%), the underlying browser stop responding and CPU cycles show a spike (NPR-32369, NPR-31918).
+* When a URL of an Adobe Experience Manager Sites pages contains a colon (`:`) or percentage symbol (`%`), the browser stops responding and CPU usage spikes (NPR-32369, NPR-31918).
 
-* When an AEM Sites page is opened for editing and a component is copied, the paste action remains unavailable for some placeholders (NPR-32317).
+* When an Experience Manager Sites page is opened for editing and a component is copied, the paste action remains unavailable for some placeholders (NPR-32317).
 
 * When the Manage Publication wizard is opened, an Experience Fragment linked to a Core Component is not displayed in the lists of published references (NPR-32233).
 
@@ -48,7 +350,7 @@ For complete list of features, key highlights, key features introduced in previo
 
 * When server-time and machine-time are in different time zones, scheduled publish time displays server time in Touch UI, whereas in Classic UI, machine time is displayed (NPR-32077).
 
-* AEM Sites fails to open a page with a suffix in the URL (NPR-32072).
+* Experience Manager Sites fails to open a page with a suffix in the URL (NPR-32072).
 
 * When a user edits a Content Fragment, a deleted variation of the Content Fragment is restored (NPR-32062).
 
@@ -122,7 +424,7 @@ For complete list of features, key highlights, key features introduced in previo
 
 * Save button does not import Remote Set when user has not made any changes in Set Editor in Dynamic Media Client (CQ-4285690).
 
-* 3D asset thumbnail is not informative, when a supported 3D model is ingested into AEM (CQ-4283701).
+* 3D asset thumbnail is not informative, when a supported 3D model is ingested into Experience Manager (CQ-4283701).
 
 * The unprocessed status of smart crop video viewer preset appears twice on the banner text alongside the preset name (CQ-4283517).
 
@@ -132,7 +434,7 @@ For complete list of features, key highlights, key features introduced in previo
 
 * Keyboard focus gets stuck in Email drop-down in Download dialog, in Chrome and Safari browsers (NPR-32067).
 
-* Sync all content checkbox is not enabled by default while trying to add DM cloud config on AEM (CQ-4288533).
+* Sync all content checkbox is not enabled by default while trying to add DM cloud config on Experience Manager (CQ-4288533).
 
 ### Foundation UI {#foundation-ui-6540}
 
@@ -180,13 +482,9 @@ For complete list of features, key highlights, key features introduced in previo
 
 ### Brand Portal {#assets-brand-portal-6540}
 
-* Brand Portal users are not able to publish contribution folder assets to AEM Assets on upgrading to Adobe I/O on AEM 6.5.4 (CQDOC-15655). 
+* Brand Portal users are not able to publish contribution folder assets to [!DNL Assets] on upgrading to Adobe I/O on Experience Manager 6.5.4 (CQDOC-15655). For an immediate fix on Experience Manager 6.5.4, it is recommended to [download the hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) and install on your author instance.
 
-  This issue will be fixed in the next service pack AEM 6.5.5.
-  
-  For immediate fix on AEM 6.5.4, it is recommended to [download the hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) and install on your author instance.
-
-* Metadata schema drop-down values are not visible in asset properties(CQ-4283287).
+* Metadata schema popup values are not visible in asset properties (CQ-4283287).
 
 * Metadata subschema do not display tabs based on mimetype in asset properties (CQ-4283288).
 
@@ -214,7 +512,7 @@ For complete list of features, key highlights, key features introduced in previo
 
 >[!NOTE]
 >
->AEM Service Pack does not include fixes for AEM Forms. They are delivered using a separate Forms add-on package. In addition, a cumulative installer is released that includes fixes for AEM Forms on JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
+>Experience Manager Service Pack does not include fixes for Experience Manager Forms. They are delivered using a separate Forms add-on package. In addition, a cumulative installer is released that includes fixes for Adobe Experience Manager Forms on JEE. For more information, see [Install Experience Manager Forms add-on](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) and [Install Experience Manager Forms on JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 * Correspondence Management: Letters display extra characters after submission to post process workflows (NPR-32626).
 
@@ -226,13 +524,13 @@ For complete list of features, key highlights, key features introduced in previo
 
 * Document Services: URL access issues for Letters and some other pages after applying Service Pack 2 (NPR-32508, NPR-32509).
 
-* Document Services: If the number of transactions on a server exceeds a specific limit, the HTML to PDF conversion fails and the file type settings are removed from AEM Forms server (NPR-32204).
+* Document Services: If the number of transactions on a server exceeds a specific limit, the HTML to PDF conversion fails and the file type settings are removed from [!DNL Forms] server (NPR-32204).
 
 * Adaptive Forms: Browser accessibility tool reports failures in adaptive forms according to the WCAG2 Level AA guidelines (NPR-32312, NPR-32309, CQ-4285439).
 
 * Adaptive Forms: Chrome browser accessibility tool reports a best practice failure (NPR-32310).
 
-* Adaptive Forms: Translation issues while configuring an adaptive form embedded in an AEM Sites page (NPR-32168).
+* Adaptive Forms: Translation issues while configuring an adaptive form embedded in an Experience Manager Sites page (NPR-32168).
 
 * Workbench: An error message displays while using Get PDF Properties operation for PDF Utilities service (NPR-32150).
 
@@ -242,7 +540,7 @@ For complete list of features, key highlights, key features introduced in previo
 
 * Designer: If there are merged cells in a table, the accessibility test fails for the output PDF file converted from an XDP form using the output service (CQ-4285372).
 
-* Foundation JEE: If an AEM Forms server is disconnected from a cluster, caching issues prevent it from reconnecting to the server (NPR-32412).
+* Foundation JEE: If an Experience Manager Forms server is disconnected from a cluster, caching issues prevent it from reconnecting to the server (NPR-32412).
 
 ## Adobe Experience Manager 6.5.3.0 {#experience-manager-6530}
 
@@ -276,45 +574,45 @@ Some key highlights of this service pack release are:
 
 * [!DNL Experience Manager Assets] now supports ZIP archives created using Deflate64 algorithm (NPR-27573).
 
-* New column for created date, which is sortable, has been added in DAM list view and on asset search results in list view (NPR-31312).
+* New column for created date, which is sortable, is added in DAM list view and on asset search results in list view (NPR-31312).
 
-* Asset sorting based on Name column has been allowed in List view (NPR-31299).
+* In the list view, users can sort the list of assets using [!UICONTROL Name] column (NPR-31299).
 
-* The GLB, GLTF, OBJ, and STL asset files support asset preview in Asset Details page in DAM (CQ-4282277).
+* The GLB, GLTF, OBJ, and STL files can be previewed in [!UICONTROL Asset Details] page in DAM (CQ-4282277).
 
-* ReplicationOnModifyListener event is triggered for chunk nodes during chunk upload in [!DNL Dynamic Media] (CQ-4281279).
+* `ReplicationOnModifyListener` event is triggered for chunk nodes during chunk upload in [!DNL Dynamic Media] (CQ-4281279).
 
-* [!DNL Dynamic Media] now supports Smart Crop video assets. Smart Crop is  a machine learning driven feature that re-crops a video while moving the frame to follow the focal point of the scene (CQ-4278995).
+* [!DNL Dynamic Media] now supports Smart Crop video assets. Smart Crop is a machine learning driven feature that re-crops a video while moving the frame to follow the focal point of the scene (CQ-4278995).
 
 * [!DNL Dynamic Media] supports Smart Imaging (CQ-4222249).
 
-* Search/ browse view has been set as default view in Foundation picker if query parameters are passed in request (NPR-31601).
+* Search or browse view is set as the default view in Foundation picker if query parameters are passed in request (NPR-31601).
 
 **Fixes**
 
-* Metadata for some PDF documents is not updated and saved to the PDF on modifying its title (NPR-31629).
+* Metadata for some PDF documents is not updated and saved to the PDF when its title is modified (NPR-31629).
 
-* Asset sharing does not work for assets having plus '+' character in their names (NPR-31547).
+* Asset sharing does not work for an asset that has plus character (`+`) in the file name (NPR-31547).
 
-* Edits in the default search form Assets Admin * Search Rail do not work as expected (NPR-31502).
+* Edits in the default search form Assets Admin Search Rail do not work as expected (NPR-31502).
 
-* Suggestions are not shown when using Omnisearch on assets view for searching assets (NPR-31496).
+* Suggestions are not displayed when using Omnisearch on assets view for searching assets (NPR-31496).
 
 * Asset references within collections are not updated when the referenced assets are moved to another location, in cases where the same assets are referenced by different collection by different users (NPR-31486).
 
 * Duplicate IPTC tags are added to asset metadata (NPR-31328).
 
-* The search result count on the top right corner does not update accurately when search is triggered from the filter rail (NPR-31316).
+* The search result count does not update accurately when a search is triggered from the filter rail (NPR-31316).
 
-* All the check boxes are cleared on unselecting the second level check boxes in File Type filter, and text in the search bar is not in sync with the selected/ unselected  properties (NPR-31287).
+* All the check boxes are cleared on deselecting the second-level check boxes in the File Type filter, and text in the search bar is not in sync with the selected or deselected properties (NPR-31287).
 
-* All the members (users/ groups) cannot be removed from the Members section of a folder; on attempting to remove all the users, logged in user gets added to the list  (NPR-31171).
+* All the members (users/ groups) cannot be removed from the Members section of a folder; on attempting to remove all the users, logged in user gets added to the list (NPR-31171).
 
-* Assets with plus '+' symbol in the file name cannot be deleted (NPR-31162).
+* Assets with plus symbol (`+`) in the file name cannot be deleted (NPR-31162).
 
 * Create drop down menu, which is visible in top menu on selecting a folder, does not show 'Folder' as a create option (NPR-30877).
 
-* Folder selection Create > FileUpload action item is missing when ACL for Deny jcr:removeChildNodes and jcr:removeNode on path are applied for a user (NPR-30840).
+* Folder selection Create > FileUpload action item is missing when ACL for Deny `jcr:removeChildNodes` and `jcr:removeNode` on path are applied for a user (NPR-30840).
 
 * DAM workflows go into stale state when certain mp4 assets are uploaded, causing all the remaining workflows to go into stale state (NPR-30662).
 
@@ -324,7 +622,7 @@ Some key highlights of this service pack release are:
 
 * Asset names are changed to lower case when moving assets from one folder to another in [!DNL Experience Manager] running in [!DNL Dynamic Media]&ndash;Scene7 mode (NPR-31630).
 
-* Error is observed while editing a remote imageset, for the image residing in the folder named same as Scene 7 company name (NPR-31340).
+* Error is observed while editing a remote imageset, for the image residing in the folder named same as Scene7 company name (NPR-31340).
 
 * [!DNL Dynamic Media] assets containing references are not getting published (NPR-31180).
 
@@ -332,9 +630,9 @@ Some key highlights of this service pack release are:
 
 * Hotspot added to an image asset is not visible through Interactive Image Viewer in asset details page (NPR-30979).
 
-* Huge sling jobs are created and Processing banner re-appears when actions done on assets in [!DNL Experience manager Assets] are passed to Scene 7 (NPR-30947).
+* Huge sling jobs are created and Processing banner re-appears when actions done on assets in [!DNL Experience manager Assets] are passed to Scene7 (NPR-30947).
 
-* Conflict occurs on creating Language Copy of assets and assets are not uploaded to Scene 7 (NPR-30932).
+* Conflict occurs on creating Language Copy of assets and assets are not uploaded to Scene7 (NPR-30932).
 
 * Dynamic renditions downloaded from [!DNL Experience Manager] running in [!DNL Dynamic Media]&ndash;Hybrid mode are broken (they are of text type with content 'unable to find image' instead of image content type) (NPR-30876).
 
@@ -356,11 +654,11 @@ Some key highlights of this service pack release are:
 
 * Videos newly ingested in folders with video profile remain in processing state even after encode percentage completes to 100% (CQ-4279389).
 
-* Moving assets from a folder creates large numbers of sling jobs (Scene 7 API calls) than ideally required (CQ-4278664).
+* Moving assets from a folder creates large numbers of sling jobs (Scene7 API calls) than ideally required (CQ-4278664).
 
-* Names of the imageset are changed to lower case in Scene 7, when imageset (or mediaset) is created and named with appropriate naming convention in DAM (CQ-4281112).
+* Names of the imageset are changed to lower case in Scene7, when imageset (or mediaset) is created and named with appropriate naming convention in DAM (CQ-4281112).
 
-* Scene 7 Migrator sets publish state incorrectly (CQ-4263492).
+* Scene7 Migrator sets publish state incorrectly (CQ-4263492).
 
 * Touch UI search (done through Omnisearch) results page automatically scrolls up and loses user's scroll position in Content Fragments (CQ-4282898).
 
@@ -374,7 +672,7 @@ Some key highlights of this service pack release are:
 
 * Rendition Workflows are failing (CQ-4271928).
 
-* DAM Event Purge deletes the latest (maxSavedActivities) event data and holds the data created earlier (NPR-31336).
+* DAM Event Purge deletes the latest (`maxSavedActivities`) event data and holds the data created earlier (NPR-31336).
 
 * Touch UI search (done through Omnisearch) results page automatically scrolls up and loses user's scroll position (NPR-31307).
 
@@ -386,22 +684,27 @@ Some key highlights of this service pack release are:
 
 * If the LiveCopy inheritance is broken, live copy pages display language copy links instead of LiveCopy links (NPR-30980).
 * For a new Blueprint, If the number of records is more than 40, only the first 40 records are displayed. Blueprint displays blank lines for the rest of the records (NPR-31182).
-* When a user adds Japanese or Korean characters in the description property of a menu, the menu displays distorted characters for Japanese and Korean language text. (NPR-31331).
+* When a user adds Japanese or Korean characters in the description property of a menu, the menu displays distorted characters for Japanese and Korean language text (NPR-31331).
 * Rich Text Editor (RTE) does not allow to insert an embedded Table as a list item (NPR-30879).
 * Out of the box, scaffolding Rich Text Editor (RTE). applies inline font-size to elements, unexpectedly (NPR-31284).
 * When a user focuses on left rail fields and uses a keyboard shortcut to paste content, it pastes the content of the page editor clipboard instead of the content copied from the left rail fields (NPR-31172).
 * When a user adds a File Upload field to a multi-field, the image path is stored in the component node instead of the multi-field node (NPR-30882).
-* The ResponsiveGridExporter API does not return com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter interface. The com.day.cq.wcm.foundation.model.impl package is declared as private package (NPR-31398).
-* When a page containing some ExperienceFragments is opened in non-editor mode (either in Author without the `editor.html` prefix and `wcmmode=disabled`, or in Publisher)., the request ends in HTTP status error code 500 (NPR-30743).
+* The `ResponsiveGridExporter` API does not return `com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter` interface. The `com.day.cq.wcm.foundation.model.impl` package is declared as a private package (NPR-31398).
+
+<!-- Review: NPR-31398 has fixVersion as 6530. However, it is mentioned twice in 6530 and 6520 as fixed. 
+Remove one mention of this fix.
+-->
+
+* When a page containing some Experience Fragments is opened in non-editor mode (either in Author without the `editor.html` prefix and `wcmmode=disabled`, or in Publisher)., the request ends in HTTP status error code `500` (NPR-30743).
 * Users cannot change their password and access their profile page (NPR-31161).
 
-### Search and user interface {#search-ui-interface}
+### Search and user interface {#ui-interface-and-search}
 
-* When switching from the Card view to the List view on a search results page, there is a lag before the page can be scrolled (NPR-31286).
+* When switching from the card view to the list view on a search results page, there is a lag before the page can be scrolled (NPR-31286).
 
-* The Select All checkbox is hidden in the List view on [!DNL Sites] UI (NPR-31614).
+* The [!UICONTROL Select All] checkbox is hidden in the list view on [!DNL Sites] user interface (NPR-31614).
 
-* The Select All count on a search result page is incorrect (NPR-31120).
+* The [!UICONTROL Select All] count on a search result page is incorrect (NPR-31120).
 
 * The metadata editor displays tags that do not exist (NPR-31119).
 
@@ -417,7 +720,7 @@ Some key highlights of this service pack release are:
 
 * Updates in buffer size configuration for Jetty-based HTTP service are not saved (NPR-30925).
 
-* QueryBuilder now supports orderby ``fn:name()`` in xpath queries (NPR-31322).
+* QueryBuilder now supports orderby `fn:name()` in xpath queries (NPR-31322).
 
 * Duplicate activation tree is created on upgrading from [!DNL Experience Manager] 6.3 (NPR-31513).
 
@@ -427,7 +730,7 @@ Some key highlights of this service pack release are:
 
 * An error is displayed when attaching a ZIP file to an [!DNL Experience Manager Communities] post due to different versions of Apache POI and Apache Tika bundle (NPR-31018).
 
-* The ``org.apache.sling.distribution.api`` bundle is hidden in the configuration manager and therefore not available to custom bundles (NPR-31720).
+* The `org.apache.sling.distribution.api` bundle is hidden in the configuration manager and therefore not available to custom bundles (NPR-31720).
 
 ### Projects {#projects}
 
@@ -468,7 +771,7 @@ Some key highlights of this service pack release are:
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack does not include fixes for [!DNL Experience Manager Forms]. They are delivered using a separate Forms add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install Experience Manager Forms add-on](#install-aem-forms-add-on-package) and [Install Experience Manager Forms on JEE](#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] Service Pack does not include fixes for [!DNL Experience Manager Forms]. They are delivered using a separate Forms add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install Experience Manager Forms add-on](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) and [Install Experience Manager Forms on JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 #### Forms add-on package {#forms-add-on-package-6530}
 
@@ -501,6 +804,8 @@ Some key highlights of this service pack release are:
 **Forms - Document Services**
 
 * SOAP web service using MTOM in a .NET project displays exceptions for AssemblerServiceClient invoke and HtmlToPDF2 methods (NPR-4281771).
+
+* Security vulnerability 2012-5784 and 2014-3596 found with AXIS 1.4 jar, and fix provided with [AXIS1.4.1 jar](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0014.html) (NPR-31015).
 
 **Foundation JEE**
 
@@ -596,15 +901,15 @@ Some key highlights of this service pack release are:
 
 ### Sites {#sites-6520}
 
-* If the LiveCopy inheritance is broken, live copy pages display language copy links instead of LiveCopy links. (NPR-30980)
-* For a new Blueprint, If the number of records is more than 40, only first 40 records are displayed. Blueprint displays blank lines for rest of the records. (NPR-31182)
-* Rich Text Editor (RTE) plug-in of the text component displays distorted characters for Japanese and Korean language text. (NPR-31331)
-* Rich Text Editor (RTE) does not allow to insert an embedded Table as a list item. (NPR-30879)
-* Out of the box scaffolding Rich Text Editor (RTE) is applies inline font-size to elements, unexpectedly. (NPR-31284)
-* When a user focuses on left rail fields and uses keyboard shortcut to paste content, it pastes content of page editor clipboard instead of the content copied from left rail fields. (NPR-31172)
-* When a user adds a File Upload field to a multi-field, the image path is stored in the component node instead of the multi-field node. (NPR-30882)
-* The ResponsiveGridExporter API does not return com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter interface. The com.day.cq.wcm.foundation.model.impl package is declared as private package. (NPR-31398)
-* When a page containing some ExperienceFragments is opened in non-editor mode (either in Author without the `editor.html` prefix and `wcmmode=disabled`, or in Publisher), the request ends in HTTP status error code 500. (NPR-30743)
+* If the LiveCopy inheritance is broken, live copy pages display language copy links instead of LiveCopy links (NPR-30980).
+* For a new Blueprint, If the number of records is more than 40, only first 40 records are displayed. Blueprint displays blank lines for rest of the records (NPR-31182).
+* Rich Text Editor (RTE) plug-in of the text component displays distorted characters for Japanese and Korean language text (NPR-31331).
+* Rich Text Editor (RTE) does not allow to insert an embedded Table as a list item (NPR-30879).
+* Out of the box scaffolding Rich Text Editor (RTE) is applies inline font-size to elements, unexpectedly (NPR-31284).
+* When a user focuses on left rail fields and uses keyboard shortcut to paste content, it pastes content of page editor clipboard instead of the content copied from left rail fields (NPR-31172).
+* When a user adds a File Upload field to a multi-field, the image path is stored in the component node instead of the multi-field node (NPR-30882).
+* The `ResponsiveGridExporter` API does not return `com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter` interface. The `com.day.cq.wcm.foundation.model.impl` package is declared as private package (NPR-31398).
+* When a page containing some Experience Fragments is opened in non-editor mode (either in Author without the `editor.html` prefix and `wcmmode=disabled`, or in Publisher), the request ends in HTTP status error code 500 (NPR-30743).
 
 ### WCM - Page Editor {#wcm-page-editor-6520}
 
@@ -652,7 +957,7 @@ Some key highlights of this service pack release are:
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack does not include fixes for [!DNL Experience Manager Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install Experience Manager Forms add-on](#install-aem-forms-add-on-package) and [Install Experience Manager Forms JEE installer](#forms-jee-installer).
+>[!DNL Experience Manager] Service Pack does not include fixes for [!DNL Experience Manager Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install Experience Manager Forms add-on](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) and [Install Experience Manager Forms JEE installer](#forms-jee-installer).
 
 The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
@@ -668,7 +973,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 **Correspondence Management**
 
 * ``Create Correspondence UI's (CCR UI) rendition fails intermittently with below error in console:
-  `- Uncaught Error: variable [object Object]is already known the letter`- NPR-30127
+ `- Uncaught Error: variable [object Object]is already known the letter`- NPR-30127
 
 **Interactive Communication**
 
@@ -739,7 +1044,7 @@ Some key highlights of this service pack release are:
 * Enabled Multi-Site Manager support for [!DNL Experience Manager Assets]. Hotfix for CQ-4271453, CQ-4268621, CQ-4257491
 * [!DNL Experience Manager] interface should display an additional entry for the current version of the asset in the timeline history, displaying the latest check-in comment from [!DNL Adobe Asset Link]. Hotfix for CQ-4262864
 * Content Fragment Timeline displays an error message when properties are missing. Hotfix for CQ-4272560
-* An issue with Scene 7 video player when expanded to full screen. Hotfix for CQ-4266700
+* An issue with Scene7 video player when expanded to full screen. Hotfix for CQ-4266700
 * ZoomVerticalViewer: Pan buttons should not be displayed if a single image asset is used. Hotfix for CQ-4264795
 * Deleting a child node in the live copy should detach the liveRelationship. Hotfix for CQ-4270395
 * The metadata schema only contains items from the global configuration and is missing the ones from the active tenant. The formPath URL value reverts to the default even when changed. NPR-29945: Hotfix for CQ-4262898
@@ -843,7 +1148,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 **Backend Integration**
 
 * Failure in fetching protected Web Service Definition Language (WSDL). NPR-29944: Hotfix for CQ-4270777
-* When [!DNL Experience Manager Forms]  is installed on IBM WebSphere, creating a form data model based on SOAP fails. Hotfix for CQ-4251134
+* When [!DNL Experience Manager Forms] is installed on IBM WebSphere, creating a form data model based on SOAP fails. Hotfix for CQ-4251134
 * Enabled support for Active Directory Federation Services (ADFS) v3.0 for Microsoft Dynamics on-premise integration. Hotfix for CQ-4270586
 * When title of a data source is changed, the form data model does not display the updated title. Hotfix for CQ-4265599
 * If name of an entity or attribute contains hyphen or space, expressions fail to evaluate such entities and attributes. Hotfix for CQ-4225129

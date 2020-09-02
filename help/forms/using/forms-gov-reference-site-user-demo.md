@@ -1,8 +1,8 @@
 ---
-title: We.Gov reference site walkthrough
-seo-title: We.Gov reference site walkthrough
-description: Use fictitious users and groups to perform AEM Forms tasks using We.Gov demo package.
-seo-description: Use fictitious users and groups to perform AEM Forms tasks using We.Gov demo package.
+title: We.Gov and We.Finance reference site walkthrough
+seo-title: We.Gov and We.Finance reference site walkthrough
+description: Use fictitious users and groups to perform AEM Forms tasks using We.Gov and We.Finance demo package.
+seo-description: Use fictitious users and groups to perform AEM Forms tasks using We.Gov and We.Finance demo package.
 uuid: 797e301a-36ed-4bae-9ea8-ee77285c786d
 contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
@@ -10,27 +10,35 @@ docset: aem65
 
 ---
 
-# We.Gov reference site walkthrough{#we-gov-reference-site-walkthrough}
+# We.Gov and We.Finance reference site walkthrough {#we-gov-reference-site-walkthrough}
 
 ## Pre-requisites {#pre-requisites}
 
-Set up the reference site as described in [Set up and configure We.Gov reference site](../../forms/using/forms-install-configure-gov-reference-site.md).
+Set up the reference site as described in [Set up and configure We.Gov and We.Finance reference site](../../forms/using/forms-install-configure-gov-reference-site.md).
 
 ## User Story {#user-story}
 
 * AEM Forms
 
-    * Data Capture
-    * Data Integration (MS Dynamics)
-    * Adobe Sign
+  * Automated Forms Conversion
+  * Authoring
+  * Form Data Models/Data Sources
+
+* AEM Forms
+
+  * Data Capture
+  * (Optional) Data Integration (MS Dynamics)
+  * (Optional) Adobe Sign
 
 * Workflow
-* Customer Communications
+* Email Notifications
+* (Optional) Customer Communications
 
-    * Print Channel
-    * Web Channel
+  * Print Channel
+  * Web Channel
 
 * Adobe Analytics
+* Data Source Integrations
 
 ### Fictitious users and groups {#fictitious-users-and-groups}
 
@@ -84,8 +92,78 @@ The following groups are also included:
 1. **Email Client**: Preferred way to view your emails (Gmail, Outlook)
 1. **CTA**: Call to action
 1. **Navigate**: To locate a specific reference point on the browser page.
+1. **AFC**: Automated Forms Conversion
 
-## Mobile view demo {#mobile-view-demo}
+## Automated Forms Conversion (Camila) {#automated-forms-conversion}
+
+**This section**: Camila the CX Lead has an existing PDF based form that was used as part of a paper-based process. As part of a modernization effort she wants to use this PDF form to automatically create a new modern Adaptive Forms.
+
+### Automated Forms Conversion - We.Gov (Camila) {#automated-forms-conversion-wegov}
+
+1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
+
+1. Login with:
+   * **User**: camila.santos
+   * **Password**: password
+1. From the main page select Forms > Forms & Documents > AEM Forms We.gov Forms > AFC.
+1. Camila uploads the PDF to AEM Forms.
+
+    ![Upload form](assets/aftia-upload-form.jpg)
+
+1. Camilla then selects the PDF form and clicks **Start Automated Conversion** to start the conversion process. You may need to click **Overwrite conversion** if you have converted the form.
+
+   >[!NOTE]
+   >
+   >Note that the settings in AFC are preconfigured for the end user which means that they should not be altered.
+
+   * **Optional**: If you wish to use the Accessible Ultramarine theme, simply click on the Specify an adaptive form theme and select the Accessible-Ultramarine theme that appears in the list of options.
+
+   ![Start conversion](assets/aftia-start-conversion.jpg)
+
+   ![Ultramarine theme](assets/aftia-upload-conversion-settings.jpg) 
+
+   The percentage complete status displays during conversion. Once the status displays **Converted**, click the **output** folder, select the adaptive form and click **Edit** to open the converted form.
+
+1. Camilla then reviews the form and makes certain that all fields are present
+
+    ![Review conversion](assets/aftia-review-conversion.jpg)
+
+1. Camilla then starts to edit the form. She selects Root Panel > Edit (the wrench) > selects Tabs on Top from the Panel Layout dropdown menu > selects the Check box.
+
+   ![Review properties](assets/aftia-review-properties.jpg)
+
+1. Camilla then adds all the necessary CSS and field alterations to produce the final product.
+
+   ![Add CSS](assets/aftia-add-css.jpg)
+
+### Form Data Model & Data Sources (Camila) {#data-sources}
+
+**This section**: Once the document has been converted and produced an Adaptive Form, Camila then needs to connect the Adaptive Form to a datasource.
+
+1. Camila opens the Properties on the form that was converted in [Automated Forms Conversion - We.Gov](#automated-forms-conversion-wegov).
+
+1. Camila then selects Form Model > Selects Form Data Model from Select From dropdown > Selects We.gov Enrollment FDM from the list of option.
+
+1. Clicks on the Save & Close button.
+
+    ![FDM selection](assets/aftia-select-fdm.jpg)
+
+1. Camila clicks the **output** folder, selects the adaptive form and clicks **Edit** to open the completed We.Gov form.
+1. Camila selects an adaptive form field and clicks ![Configure icon](assets/configure-icon.svg). She creates binding with the form data model entities using the **Bind Reference** field. She repeats this step for all fields in the adaptive form.
+
+### Form Accessibility Testing (Camila) {#form-accessibility-testing}
+
+Camila also validates that the created content is built correctly and fully accessible according to corporate standards.
+
+1. Camila clicks the **output** folder, selects the adaptive form and clicks **Preview** to open the completed We.Gov form.
+
+1. Opens the Audit tab within the Chrome Developer Tool.
+
+1. Performs an Accessibility check in order to validate the adaptive form.
+
+    ![Accessibility check](assets/aftia-accessibility.jpg)
+
+## Adaptive Form Mobile View Demo (Aya) {#mobile-view-demo}
 
 **This section must be performed ahead of the demonstration.**
 
@@ -99,13 +177,13 @@ The following groups are also included:
 
 1. Re-size the browser window or use the browser’s emulator to replicate a mobile device size.
 
-### Aya User Story (We.Gov website)  {#aya-user-story-we-gov-website}
+### We.Gov Website (Aya) {#aya-user-story-we-gov-website}
 
 ![Fictitious user](/help/forms/using/assets/aya_tan_new-1.png)
 
 **This section**: Aya is a citizen. She hears from a friend that she may be eligible to receive a Service from a government agency. Aya navigates to the We.Gov website from her mobile phone to learn more about services she is eligible for.
 
-### Aya User Story (We.Gov pre-screener) {#aya-user-story-we-gov-pre-screener}
+### We.Gov Pre-Screener (Aya) {#aya-user-story-we-gov-pre-screener}
 
 Aya answers a few questions to confirm her eligibility by filling out a short adaptive form on her mobile phone.
 
@@ -122,11 +200,11 @@ Aya answers a few questions to confirm her eligibility by filling out a short ad
 
    ![Apply Now link](/help/forms/using/assets/apply_now_link.png)
 
-### Aya User Story (We.Gov adaptive form) {#aya-user-story-we-gov-adaptive-form}
+### We.Gov Adaptive Form (Aya) {#aya-user-story-we-gov-adaptive-form}
 
 Aya finds out she is eligible and begins filling her application to request service on her mobile device.
 
-Aya needs to review some documents at home before she can complete the service request application. She saves and exits the application.
+Aya needs to review some documents at home before she can complete the service request application. She saves and exits the application from her mobile device.
 
 **User Instructions:**
 
@@ -135,24 +213,9 @@ Aya needs to review some documents at home before she can complete the service r
     1. Basic Information
 
         1. First Name
-        1. Middle Name
         1. Last Name
-        1. Preferred Name
         1. DOB
-        1. Gender
-
-    1. Contact Information
-
-        1. Street Address
-        1. City
-        1. Telephone Number
-        1. Zip Code
         1. Email
-        1. State
-
-    1. Martial Status
-
-        1. Family Status
 
 1. Use the following **dynamic logic** to demonstrate dynamic feature using the **Family Status** dropdown:
 
@@ -173,7 +236,7 @@ Aya needs to review some documents at home before she can complete the service r
 
 **This section:** Back at home, Aya has found the information she needed and resumes the application from her desktop. Aya navigates to the online forms portal to resume her application. With some simple customization, agencies can also automatically generate and email a link to resume the application.
 
-### Aya User Story (continued adaptive form) {#aya-user-story-continued-adaptive-form}
+### Continued Adaptive Form (Aya) {#aya-user-story-continued-adaptive-form}
 
 **User Instructions:**
 
@@ -195,11 +258,16 @@ Aya needs to review some documents at home before she can complete the service r
 
    ![Submit the adaptive form](/help/forms/using/assets/submit_adaptive_form.png)
 
-   After submitting Aya receives an email that she opens and is ready to sign electronically with Adobe Sign.
+   >[!NOTE]
+   >
+   >When Aya fills out the phone number field she must fill it as a continuous 11 digit number with no dashes, spaces or hyphens.
+
+   After submitting Aya receives a Thank You page. Optionally she will also receive an email that she can open to sign the document of record electronically with Adobe Sign.
+
+### Optional: Adobe Sign (Aya) {#adobe-sign}
 
 **User Instructions:**
 
-1. After Submission a Thank you page will be displayed.
 1. Navigate to your Email Client and find the Adobe Sign email.
 1. Click on the link to Adobe Sign.
 
@@ -220,7 +288,7 @@ Aya needs to review some documents at home before she can complete the service r
 
 **This section:** George is a business analyst at the government agency Aya is a requesting a service from. George has a single dashboard where he can see all service request applications that have been assigned to him for review.
 
-### George User Story (AEM inbox) {#george-user-story-aem-inbox}
+### AEM Inbox (George) {#george-user-story-aem-inbox}
 
 **User Instructions:**
 
@@ -244,7 +312,7 @@ Aya needs to review some documents at home before she can complete the service r
 
    ![Health Benefits Application Review](/help/forms/using/assets/health_benefits.png)
 
-### George User Story (AEM inbox and MS Dynamics) {#george-user-story-aem-inbox-and-ms-dynamics}
+### Optional: AEM Inbox & MS Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
 
 Thanks to data integrations and automated workflows, Aya’s application appears, along with a CRM record that has automatically been generated when the data was submitted.
 
@@ -260,7 +328,7 @@ Thanks to data integrations and automated workflows, Aya’s application appears
 
    ![MS Dynamics record](/help/forms/using/assets/ms_dynamics.png)
 
-### George User Story (back to AEM inbox) {#george-user-story-back-to-aem-inbox}
+### Back to AEM Inbox (George) {#george-user-story-back-to-aem-inbox}
 
 George approves Aya’s application, and thanks to an existing automated workflow a confirmation email is also sent to Aya.
 
@@ -279,7 +347,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 **This section:** Camila the CX Lead sets up a welcome phone call with Aya to explain how to make use of the government services she has been approved for.
 
-### Camila User Story (AEM inbox & MS Dynamics) {#camila-user-story-aem-inbox-ms-dynamics}
+### (Optional) AEM Inbox & MS Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
 
 **User Instructions:**
 
@@ -301,9 +369,9 @@ George approves Aya’s application, and thanks to an existing automated workflo
 1. Click “**View All**” to navigate to the Inbox.
 1. From the Inbox, open the latest “**New Contact Approval**” task.
 
-   ![New Contact Approval](/help/forms/using/assets/new_contact_approval.png)
+![New Contact Approval](/help/forms/using/assets/new_contact_approval.png)
 
-   **User Instructions:**
+   **(Optional) User Instructions:**
 
 1. Open and inspect the read-only adaptive form.
 1. Click on the “**Open MS Dynamics**” button to open the MS Dynamics record in a new window.
@@ -321,11 +389,11 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
    ![Activities tab](/help/forms/using/assets/activities_tab.png) ![Confirm New Contact](/help/forms/using/assets/confirm_new_contact.png)
 
-## Welcome Kit citizen (Aya) {#welcome-kit-citizen-aya}
+## (Optional) Welcome Kit Citizen (Aya) {#welcome-kit-citizen-aya}
 
 **This section:** Aya receives an email contains a link to an interactive communication which summarizes her benefits and also includes form fields to fill. With PDF benefits statement attached and link to interactive communication letter in the mail (with the same theme/branding as the interactive communication).
 
-### Aya User Story (Email client) {#aya-user-story-email-client}
+### Email Client Notification (Aya) {#aya-user-story-email-client}
 
 **User Instructions:**
 
@@ -350,7 +418,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 **This section:** Camila also schedules a communication reminder so one year later. (Workflow Step that automates/executes and email).
 
-### Aya User Story (Email client) {#aya-user-story-email-client-1}
+### Email Client Notification (Aya) {#aya-user-story-email-client-updated}
 
 **User Instructions:**
 
@@ -362,11 +430,55 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
    ![Renewal Reminder Email](/help/forms/using/assets/renewal_reminder_email.png)
 
-## Analytics CX Lead (Camila) {#analytics-cx-lead-camila}
+## (Optional) Form Data Model (Camila) {#form-data-model}
+
+**This section**: Camila navigates to AEM Forms Data Integrations where she can run a quick test to see that the information sent to the external data source via Form Data Model integration is indeed present.
+
+### Form Data Model (Camila) {#form-data-model-camila}
+
+**This section**: Camila navigates to the Data Sources page to validate the data that the server has replicated within the Derby database.
+
+1. Once the user experience is complete and the user submission has been completed Camila navigates to the Data Sources tab within AEM Forms (**Forms** > **Data Integrations**)
+
+1. Camila then selects AEM Forms **We.gov FDM** and then edit the **We.gov Enrollment FDM**.
+
+1. Camila then selects the **Contact** > **Read Service** to be tested.
+
+   ![Contact read service](assets/aftia-contact-read-service.jpg)
+
+1. Camila then provides the test service with a contact id and then clicks on Test button. For example, 1 or 2, if you submitted the form. If you have not submitted the form, no data is returned.
+
+   ![Contact read service](assets/aftia-test-service.jpg)
+
+1. Camila can then validate that the data has successfully been inserted into the datasource.
+
+   * The data within the Derby DS resembles the following format:
+
+   ```xml
+      [
+         {
+         "ADDRESS_COUNTRY": "USA",
+         "LAST_NAME": "Tan",
+         "ADDRESS_CITY": "New York",
+         "FIRST_NAME": "Aya",
+         "ADDRESS_STATE": "AL",
+         "ADDRESS_LINE1": "123 Street crescent",
+         "GENDER_CODE": "2",
+         "ADDRESS_LINE2": "123 Street crescent",
+         "ADDRESS_POSTAL_CODE": "90210",
+         "BIRTH_DATE": "1991-12-12",
+         "CONTACT_ID": 1,
+         "MIDDLE_NAME": "M",
+         "HAS_CHILDREN_CODE": "0"
+         }
+   ]
+   ```
+
+## (Optional) Analytics (Camila) {#analytics-cx-lead-camila}
 
 **This section:** Camila navigates to a dashboard where she can see across the agency KPI’s such as % of citizens who start filling a service request form and abandon, the average length of time from request submission to approval/denial response, and engagement statistics for the benefits handbooks she has sent to citizens.
 
-### Camila reviews Sites reporting (We.Gov Adobe Analytics) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
+### Adobe Analytics Sites Reporting (Camila) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/sites.html/content*
 1. Select the “**AEM Forms We.Gov Site**” to view the site pages.
@@ -391,7 +503,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
    ![Make new columns available](/help/forms/using/assets/new_columns_available.jpg)
 
-### Camila reviews Forms reporting (We.Gov Adobe Analytics) {#camila-reviews-forms-reporting-we-gov-adobe-analytics}
+### Adobe Analytics Forms Reporting (Camila) {#camila-reviews-forms-reporting-we-gov-adobe-analytics}
 
 1. Navigate to
 

@@ -24,8 +24,9 @@ All SCF components are implemented using the SRP API, allowing code to be develo
 ***The SocialResourceProvider API is available only to licensed customers of AEM Communities.***
 
 >[!NOTE]
->
->**Custom Components**: For licensed customers of AEM Communities, the SRP API is available to developers of custom components for the purpose of accessing UGC without regard to the underlying topology. See [SRP and UGC Essentials](srp-and-ugc.md).
+ >
+ >**Custom Components**: For licensed customers of AEM Communities, the SRP API is available to developers of custom components for the purpose of accessing UGC without regard to the underlying topology. See [SRP and UGC Essentials](srp-and-ugc.md).
+ >
 
 See also:
 
@@ -94,7 +95,7 @@ In the case of JSRP, while UGC is stored in JCR, and accessible via both CRXDE L
 
 Further, the repository for the author and publish environments is not shared. While a cluster of publish instances results in a shared publish repository, UGC entered on publish will not be visible on author, hence no ability to manage UGC from author. UGC is only persisted in the AEM repository (JCR) of the instance on which it was entered.
 
-JSRP uses the Oak indices for queries.
+JSRP uses the Oak indexes for queries.
 
 ## About Shadow Nodes in JCR {#about-shadow-nodes-in-jcr}
 

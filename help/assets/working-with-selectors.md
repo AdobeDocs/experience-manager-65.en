@@ -29,7 +29,7 @@ Use the Product selector to choose a product when you want a hotspot or image ma
 
 1. Navigate to the Carousel Set, Interactive Image, or Interactive Video, and tap the **[!UICONTROL Actions]** tab (only available if you have defined a hotspot or image map).
 
-   The Product selector is in the **[!UICONTROL Action Type** area.
+   The Product selector is in the **[!UICONTROL Action Type]** area.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
@@ -85,7 +85,7 @@ Use the site selector to choose a webpage when you want a hotspot or image map t
 
 Use this selector to choose images for use in a Carousel Banner, an Interactive Video, Image Sets, Mixed Media Sets, and Spin Sets. In interactive Video, the asset selector is available when you tap **[!UICONTROL Select Assets]** in the **[!UICONTROL Content]** tab. In Carousel Sets, the asset selector is available when you create a new slide. In Image Sets, Mixed Media Sets, and Spin Sets, the asset selector is available when you create a new Image Set, Mixed Media Set, or Spin Set, respectively.
 
-See also [Asset Picker](search-assets.md#assetselector) for more information.
+See also [Asset Picker](search-assets.md#assetpicker) for more information.
 
 1. Navigate to the Carousel Set and create a new slide. Or, navigate to the Interactive Video, go the **[!UICONTROL Content]** tab and select assets. Or, create a Mixed Media Set, Image Set, or Spin Set.
 1. Tap the **[!UICONTROL Asset Selector]** icon (folder with magnifying glass) and navigate to an asset.

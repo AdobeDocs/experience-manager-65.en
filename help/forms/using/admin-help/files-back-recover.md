@@ -18,7 +18,7 @@ The application and data files that must be backed up are described in more deta
 Consider the following points regarding backup and recovery:
 
 * The database should be backed up before GDS and AEM repository.
-* If you need to bring down the nodes in a clustered clustered environment for backup, ensure that the slave nodes are shut down before the master node. Otherwise, it can lead to inconsistency in the cluster or server. Also, the master node should be made live before any slave node.
+* If you need to bring down the nodes in a clustered clustered environment for backup, ensure that the secondary nodes are shut down before the primary node. Otherwise, it can lead to inconsistency in the cluster or server. Also, the primary node should be made live before any secondary node.
 * For the restore operation of a cluster, application server should be stopped for each node in the cluster.
 
 ## Global Document Storage directory {#global-document-storage-directory}
@@ -124,7 +124,7 @@ SQL Server also provides two backup and recovery tools:
 * SQL Server Management Studio (GUI)
 * T-SQL (command line)
 
-See [Backup Strategies]( https://articles.techrepublic.com.com/5100-1035_61-1043671.md)and [Backup and Restore](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+For more information, see [Backup and Restore](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
@@ -139,7 +139,7 @@ You can use the mysqldump utility to obtain the full database backup. Full backu
 
 See [Backup Strategy Summary](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
-```as3
+```text
 binlog_format=mixed
 log-bin=logname
 ```

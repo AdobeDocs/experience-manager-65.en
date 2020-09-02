@@ -1,15 +1,9 @@
 ---
 title: AEM Sites Release Notes
 description: Release notes specific to Adobe Experience Manager 6.5 Sites.
-uuid: 676ead61-3d97-4f23-b616-c647d590bc8f
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4
-discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
-docset: aem65
-
 ---
 
-# AEM Sites Release Notes{#aem-sites-release-notes}
+# AEM Sites Release Notes {#aem-sites-release-notes}
 
 See the following for AEM Sites 6.5 enhancements in detail:
 
@@ -19,36 +13,36 @@ See the following for AEM Sites 6.5 enhancements in detail:
 * Single-page App Maven Project Archetype 1.0.6+ for new projects, see [Github for release notes](https://github.com/adobe/aem-spa-project-archetype/releases).
 * HTL version 1.4, see [Github for release notes](https://github.com/adobe/htl-spec/releases/tag/1.4).
 
-    * “in” operator for strings, arrays and objects:
+  * “in” operator for strings, arrays and objects:
 
-      ```
-      ${'a' in 'abc’}
-       ${100 in myArray}
-       ${'a' in myObject}
-      ```
+    ```html
+    ${'a' in 'abc’}
+    ${100 in myArray}
+    ${'a' in myObject}
+    ```
 
-    * Variable declarations with data-sly-set :
-      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
+  * Variable declarations with data-sly-set :
+    `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
-    * List and repeat control parameters: begin, step, end:
-      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
+  * List and repeat control parameters: begin, step, end:
+    `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
-    * Identifiers for data-sly-unwrap:
+  * Identifiers for data-sly-unwrap:
 
-      ```
-      <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-       text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-       </div>
-      ```
+    ```html
+    <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
+    text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+    </div>
+    ```
 
-    * Support for negative numbers
+  * Support for negative numbers
 
 * Core Components 2.3.2+, see [Github for release notes](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
 * Grid System for Layout Container, see [Github](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid).
 * Clientlib Manager: made Google Closure Compiler default to minification of JavaScript clientlibs (old default was Yahoo YUI) and updated Google Closure Compiler to version v20190121
 * Template Editor and Policies
 
-    * Create and edit templates for single-page apps that are using the JS SDK (also called SPA Editor)
+  * Create and edit templates for single-page apps that are using the JS SDK (also called SPA Editor)
 
 * Reference Site We.Retail 4.0, see [Github for release notes](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
 * Toolkit to upgrade existing sites to leverage the latest editor capabilities, see [Github repository](https://github.com/adobe/aem-modernize-tools)
@@ -70,10 +64,10 @@ See the following for AEM Sites 6.5 enhancements in detail:
 
 ## Content Fragments &amp; Editor {#content-fragments-amp-editor}
 
-* New [Annotations](/help/assets/content-fragments-variations.md#viewing-editing-deleting-annotations) rail in Content Fragment Editor to make general comments and see comments make within the text (also show up in Timeline rail)
-* Ability to set the default content type of a multi-line text element in a [Content Fragment model](/help/assets/content-fragments-models.md) to simple text, rich text or markdown
-* Add [comment/annotations](/help/assets/content-fragments-variations.md#annotating-a-content-fragment) by selecting text in the RTE (full-screen view)
-* [Compare versions](/help/assets/content-fragments-managing.md#comparing-fragment-versions) of a Content Fragment side-by-side via Reference rail
+* New [Annotations](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) rail in Content Fragment Editor to make general comments and see comments make within the text (also show up in Timeline rail)
+* Ability to set the default content type of a multi-line text element in a [Content Fragment model](/help/assets/content-fragments/content-fragments-models.md) to simple text, rich text or markdown
+* Add [comment/annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) by selecting text in the RTE (full-screen view)
+* [Compare versions](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) of a Content Fragment side-by-side via Reference rail
 * The assets Download Report now shows Content Fragments accordingly
 * Add [Content Fragment support to Assets HTTP API](/help/assets/assets-api-content-fragments.md) via /api.json. There are APIs for create, update, read and delete of Content Fragments.
 

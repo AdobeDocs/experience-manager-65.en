@@ -110,8 +110,8 @@ They can be defined using CRXDE Lite or XML.
 >
 >* add breakpoints to the templates
 >* add the same breakpoints to the existing pages
->  As inheritance is in operation you can limit this to the root page of your content.
 >
+>  As inheritance is in operation you can limit this to the root page of your content.
 
 #### Configuring Breakpoints using CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 

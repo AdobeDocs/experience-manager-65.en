@@ -20,8 +20,9 @@ Now that the components for the custom comment system in the application directo
 For a simple demonstration, a visual feature, the avatar shown of the signed-in user who posts a comment, is removed.
 
 >[!NOTE]
->
->To use the extension, the instance of the comment system in a website to be affected (/content) must set its resourceType to be the custom comment system.
+ >
+ >To use the extension, the instance of the comment system in a website to be affected (/content) must set its resourceType to be the custom comment system.
+ >
 
 ## Modify the HBS Scripts {#modify-the-hbs-scripts}
 
@@ -29,23 +30,23 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Open [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
-    * comment out the tag which includes the avatar for a comment post (~ line 21):
+  * Comment out the tag which includes the avatar for a comment post (~ line 21):
 
-      ```
+    ```
       <!--
        <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
        -->
-      ```
+    ```
 
 * Open [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
-    * comment out the tag which includes the avatar for the next comment entry (~ line 44):
+  * Comment out the tag which includes the avatar for the next comment entry (~ line 44):
 
-      ```
+    ```
       <!--
        <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
        -->
-      ```
+    ```
 
 * Select **Save All**
 
@@ -53,21 +54,21 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 After the application has been modified, it is necessary to re-replicate the custom component.
 
-One way to do so is
+One way to do so is:
 
 * From the main menu
 
-    * select **Tools &gt; Operations &gt; Replication**
-    * select `Activate Tree`
-    * set `Start Path`: to `/apps/custom`
-    * deselect `Only Modified`
-    * select `Activate`button
+  * Select **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]**.
+  * Select **[!UICONTROL Activate Tree]**.
+  * Set `Start Path` to `/apps/custom`.
+  * Deselect **[!UICONTROL Only Modified]**.
+  * Select **[!UICONTROL Activate]** button.
 
 ### View Modified Comment on Published Sample Page {#view-modified-comment-on-published-sample-page}
 
 [Continuing the experience](/help/communities/extend-sample-page.md#publish-sample-page) on the publish instance, still signed in as the same user, it is now possible to refresh the page in the publish environment to view the modification to remove the avatar:
 
-![chlimage_1-136](assets/chlimage_1-136.png)
+![chlimage_1-81](assets/chlimage_1-81.png)
 
 ### Sample Comment Extension Package {#sample-comment-extension-package}
 

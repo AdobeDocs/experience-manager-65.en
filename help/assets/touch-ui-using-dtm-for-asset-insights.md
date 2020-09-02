@@ -16,17 +16,17 @@ Although you can customize your tracking code to enable third-party CMS solution
 
 Perform these steps to enable Asset Insights through DTM.
 
-1. Click the Experience Manager logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Insights Configuration]**.
-1. [Configure Experience Manager instance with DTM Cloud Service](/help/sites-administering/dtm.md)
+1. Click the Experience Manager logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
+1. [Configure Experience Manager deployment with DTM Cloud Service](/help/sites-administering/dtm.md)
 
-   The API token should be available once you log on to [https://dtm.adobe.com](https://dtm.adobe.com/) and visit **[!UICONTROL Account Settings]** from the Profile icon. This step is not required from the Asset Insights standpoint, because the integration of Experience Manager Sites with Asset Insights is still in the works.
+   The API token should be available once you log on to [https://dtm.adobe.com](https://dtm.adobe.com/) and visit **[!UICONTROL Account Settings]** in the user Profile. This step is not required from the Asset Insights standpoint, because the integration of Experience Manager Sites with Asset Insights is still in the works.
 
-1. Log on to [https://dtm.adobe.com](https://dtm.adobe.com/), and select a Company, as appropriate.
-1. Create/Open an the existing Web Property
+1. Log on to [https://dtm.adobe.com](https://dtm.adobe.com/), and select a company, as appropriate.
+1. Create or open an existing Web Property
 
     * Select the **[!UICONTROL Web Properties]** tab, and then click **[!UICONTROL Add Property]**.
 
-    * Update the fields as appropriate, and click **[!UICONTROL Create Property]**. See [documentation](https://helpx.adobe.com/experience-manager/using/dtm.html).
+    * Update the fields as appropriate, and click **[!UICONTROL Create Property]**. See [documentation](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
    ![Create edit web property](assets/Create-edit-web-property.png)
 
@@ -34,19 +34,19 @@ Perform these steps to enable Asset Insights through DTM.
 
    ![chlimage_1-58](assets/chlimage_1-194.png)
 
-1. Expand **[!UICONTROL Javascript /Third Party Tags]**. Then click **[!UICONTROL Add New Script]** in the **[!UICONTROL Sequential HTML]** tab to open the Script dialog.
+1. Expand **[!UICONTROL JavaScript /Third Party Tags]**. Then click **[!UICONTROL Add New Script]** in the **[!UICONTROL Sequential HTML]** tab to open the Script dialog.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Click the Experience Manager logo, and go to **[!UICONTROL Tools > Assets]**.
+1. Click the Experience Manager logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 1. Click **[!UICONTROL Insights Page Tracker]**, copy the tracker code, and then paste it in the Script dialog you opened in step 6. Save the changes.
 
    >[!NOTE]
    >
-   > * `AppMeasurement.js` is removed. It is expected to be available through DTM's Adobe Analytics tool.
-   > * The call to `assetAnalytics.dispatcher.init`() is removed. The function is expected to be called once DTM's Adobe Analytics tool finishes loading.
-   > * Depending on where Asset Insights Page Tracker is hosted (for example Experience Manager, CDN and so on), the origin of the script source may require changes.
-   > * For Experience Manager-hosted Page Tracker, the source should point to a publish instance using the host name of the dispatcher instance.
+   >* `AppMeasurement.js` is removed. It is expected to be available through DTM's Adobe Analytics tool.
+   >* The call to `assetAnalytics.dispatcher.init()` is removed. The function is expected to be called once DTM's Adobe Analytics tool finishes loading.
+   >* Depending on where Asset Insights Page Tracker is hosted (for example Experience Manager, CDN and so on), the origin of the script source may require changes.
+   >* For Experience Manager-hosted Page Tracker, the source should point to a publish instance using the host name of the dispatcher instance.
 
 1. Access `https://dtm.adobe.com`. Click **[!UICONTROL Overview]** in the web property and click **[!UICONTROL Add Tool]** or open an existing Adobe Analytics Tool. While creating the tool, you can set **[!UICONTROL Configuration Method]** to **[!UICONTROL Automatic]**.
 
@@ -88,7 +88,7 @@ Perform these steps to enable Asset Insights through DTM.
              "",  /** eVar to put Asset ID for Asset Click Events in, e.g. 'eVar3' */
              "",  /** event to include in tracking-calls for Asset Impression Events, e.g. 'event8' */
              "",  /** event to include in tracking-calls for Asset Click Events, e.g. 'event7' */
-             sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, please include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
+             sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
              );
        sObj.usePlugins = true;
        sObj.doPlugins = assetAnalytics.core.updateContextData;

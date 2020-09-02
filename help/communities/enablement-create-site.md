@@ -19,14 +19,13 @@ docset: aem65
 
 [Community Site creation](/help/communities/sites-console.md) employs a wizard which guides you through the steps of creating a community site. It is possible to move forward to the `Next` step or `Back` to the previous step before committing the site in the final step.
 
-To get started creating a new community site :
+To get started creating a new community site:
 
 Using the [author instance](https://localhost:4502/)
 
-* Sign-in with administrator privileges
-* Navigate to **[!UICONTROL Communities > Sites]**
+* Log in with administrator privileges and navigate to **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 
-* Select **Create**
+* Select **Create**.
 
 ### Step 1 : Site Template {#step-site-template}
 
@@ -34,7 +33,7 @@ Using the [author instance](https://localhost:4502/)
 
 On the **Site Template** step, enter a title, description, the name for the URL, and select a community site template, for example :
 
-* **Community Site Title**: `Enablement Tutorial`
+* **Community Site Title**: `Enablement Tutorial`.
 
 * **Community Site Description**: `A site for enabling the community to learn.`
 
@@ -51,11 +50,11 @@ On the **Site Template** step, enter a title, description, the name for the URL,
 
 * **Reference Site Template**: pull down to choose `Reference Structured Learning Site Template`
 
-Select **Next**
+Select **Next**.
 
 ### Step 2 : Design {#step-design}
 
-The Design step is presented in two sections for selecting the theme and branding banner :
+The Design step is presented in two sections for selecting the theme and branding banner:
 
 #### COMMUNITY SITE THEME {#community-site-theme}
 
@@ -63,9 +62,11 @@ Select the desired style to apply to the template. When selected, the theme will
 
 #### COMMUNITY SITE BRANDING {#community-site-branding}
 
-(optional) Upload a banner image to display across the site pages. The banner is pinned to the left edge of the browser, between the community site header and menu (navigation links). The banner height is cropped to 120 pixels. There is no resizing of the banner to fit the width of the browser and 120 pixel height.
+(Optional) Upload a banner image to display across the site pages. The banner is pinned to the left edge of the browser, between the community site header and menu (navigation links). The banner height is cropped to 120 pixels. There is no resizing of the banner to fit the width of the browser and 120 pixel height.
 
-![chlimage_1-2](assets/chlimage_1-2.png) ![chlimage_1](assets/chlimage_1.jpeg)
+![chlimage_1-449](assets/chlimage_1-449.png) 
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 Select **Next**.
 
@@ -81,13 +82,13 @@ A community site is private when anonymous site visitors are denied access, may 
 
 Ensure most checkboxes are deselected for [User Management](/help/communities/sites-console.md#user-management) :
 
-* Do NOT allow site visitors to self-register
-* Do NOT allow anonymous site visitors to view the site
-* Optional whether or not to allow messaging among community members
-* Do NOT allow login with Facebook
-* Do NOT allow login with Twitter
+* Do NOT allow site visitors to self-register.
+* Do NOT allow anonymous site visitors to view the site.
+* Optional whether or not to allow messaging among community members.
+* Do NOT allow login with Facebook.
+* Do NOT allow login with Twitter.
 
-![chlimage_1-3](assets/chlimage_1-3.png)
+![user-mgmt](assets/user-mgmt.png)
 
 #### TAGGING {#tagging}
 
@@ -100,7 +101,7 @@ Finding namespaces is easy using type-ahead search. For example,
 * Type `tut`
 * Select `Tutorial`
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+![enablement-tagging](assets/enablement-tagging.png)
 
 ### ROLES {#roles}
 
@@ -114,8 +115,9 @@ For example,
 * Select [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
->
->[Tunnel service](/help/communities/deploy-communities.md#tunnel-service-on-author) allows selection of members and groups existing only in the publish environment.
+ >
+ >[Tunnel service](/help/communities/deploy-communities.md#tunnel-service-on-author) allows selection of members and groups existing only in the publish environment.
+ >
 
 ![enablement roles](assets/site-admin.png)
 
@@ -123,7 +125,7 @@ For example,
 
 Accept the default global settings for [moderating](/help/communities/sites-console.md#moderation) user generated content (UGC).
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![chlimage_1-452](assets/chlimage_1-452.png)
 
 #### ANALYTICS {#analytics}
 
@@ -131,7 +133,7 @@ From the drop-down, select the Analytics cloud service framework configured for 
 
 The selection seen in the screenshot, `Communities`, is the framework example from the [configuration documentation.](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
-![chlimage_1-6](assets/chlimage_1-6.png)
+![chlimage_1-454](assets/chlimage_1-454.png)
 
 #### TRANSLATION {#translation}
 
@@ -140,7 +142,7 @@ The [Translation settings](/help/communities/sites-console.md#translation) speci
 * Check **Allow Machine Translation**
 * Use the default settings
 
-![chlimage_1-7](assets/chlimage_1-7.png)
+![chlimage_1-456](assets/chlimage_1-456.png)
 
 #### ENABLEMENT {#enablement}
 
@@ -155,7 +157,7 @@ For an enablement community, it is necessary to identify one or more Community E
 * **Marketing Cloud Org Id**
   (optional) The ID for an Adobe Analytics account which is necessary when including [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) in the enablement reporting.
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![chlimage_1-457](assets/chlimage_1-457.png)
 
 Select **Next**.
 
@@ -163,7 +165,7 @@ Select **Next**.
 
 Select **Create.**
 
-![chlimage_1-9](assets/chlimage_1-9.png)
+![chlimage_1-458](assets/chlimage_1-458.png)
 
 When the process completes, the folder for the new site is displayed in the Communities > Sites console.
 
@@ -173,7 +175,7 @@ When the process completes, the folder for the new site is displayed in the Comm
 
 The created site should be managed from the Communities - Sites console, the same console from where new sites may be created.
 
-After selecting the community site's folder, hover over the site icon such that four action icons appear :
+After selecting the community site's folder, hover over the site icon such that four action icons appear:
 
 ![siteactionicons](assets/siteactionicons.png)
 
@@ -181,19 +183,19 @@ On selecting the ellipses icon (More Actions icon), Export Site and Delete Site 
 
 ![siteactionsnew](assets/siteactionsnew.png)
 
-From left to right they are :
+From left to right they are:
 
 * **Open Site**
   
-  Select the pencil icon to open the community site in author edit mode, to add and/or configure page components
+  Select the pencil icon to open the community site in author edit mode, to add and/or configure page components.
 
 * **Edit Site**
   
-  Select the properties icon to open the community site for modification of properties, such as the title or to change the theme
+  Select the properties icon to open the community site for modification of properties, such as the title or to change the theme.
 
 * **Publish Site**
   
-  Select the world icon to publish the community site (to localhost:4503 by default)
+  Select the world icon to publish the community site (to localhost:4503 by default).
 
 * **Export Site**
   
@@ -204,17 +206,17 @@ From left to right they are :
   
   To delete the community site, select the Delete Site icon that appears on hovering the mouse over the site in Communities Site Console. This action removes all the items associated with the site, such as UGC, user groups, assets and database records.
 
-![enablesiteactions](assets/enablesiteactions.png)
+  ![enablesiteactions](assets/enablesiteactions.png)
 
 #### Select Publish {#select-publish}
 
 Select the world icon to publish the community site.
 
-![chlimage_1-10](assets/chlimage_1-10.png)
+![chlimage_1-465](assets/chlimage_1-465.png)
 
 There will be an indication the site was published.
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![chlimage_1-466](assets/chlimage_1-466.png)
 
 ## Community Users & User Groups {#community-users-user-groups}
 
@@ -222,9 +224,9 @@ There will be an indication the site was published.
 
 Along with the new community site, new user groups are created which have the appropriate permissions set for various administrative functions. For details, visit [User Groups for Community Sites](/help/communities/users.md#usergroupsforcommunitysites).
 
-For this new community site, given the site name "enable" in Step 1, the new user groups that exist in the publish environment may be seen from the [Communities Members & Groups console](/help/communities/members.md#groups-console) :
+For this new community site, given the site name "enable" in Step 1, the new user groups that exist in the publish environment may be seen from the [Communities Members & Groups console](/help/communities/members.md#groups-console):
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![community_usergroup](assets/community_usergroup.png)
 
 ### Assign Members to Community Enable Members Group {#assign-members-to-community-enable-members-group}
 
@@ -243,19 +245,19 @@ In this example, the group `Community Ski Class` is added as a member of the gro
 
 * Select **Save**
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![chlimage_1-418](assets/chlimage_1-418.png)
 
 ## Configurations on Publish {#configurations-on-publish}
 
 `https://localhost:4503/content/sites/enable/en.html {#http-localhost-content-sites-enable-en-html}`
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![enablement-login](assets/enablement-login.png)
 
 ### Configure for Authentication Error {#configure-for-authentication-error}
 
 Once a site has been configured and pushed to publish, [configure login mapping](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) on the publish instance. The benefit is that when login credentials are not entered correctly, the authentication error will redisplay the community site's login page with an error message.
 
-Add a `Login Page Mapping` as
+Add a `Login Page Mapping` as:
 
 * `/content/sites/enable/en/signin:/content/sites/enable/en`
 
@@ -265,7 +267,7 @@ When working with the publish site for demonstration purposes, it might be usefu
 
 To do so requires using [CRX|DE](https://localhost:4503/crx/de) Lite to edit the [resource mapping](/help/sites-deploying/resource-mapping.md) table on publish.
 
-To get started
+To get started:
 
 1. On publish, access CRXDE and sign in with administrator privileges
 
@@ -305,20 +307,21 @@ To get started
    * Arrive at https://localhost:4503/content/sites/enable/en.html
 
 >[!NOTE]
->
->To disable, simply pre-pend the `sling:match` property value with an 'x' - `xlocalhost.4503/$` - and **Save All**.
+ >
+ >To disable, simply pre-pend the `sling:match` property value with an 'x' - `xlocalhost.4503/$` - and **Save All**.
+ >
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+![chlimage_1-364](assets/chlimage_1-364.png)
 
 #### Troubleshooting: Error Saving Map {#troubleshooting-error-saving-map}
 
 If unable to save changes, be sure the node name is `localhost.4503`, with a 'dot' separator, and not `localhost:4503` with a 'colon' separator, as `localhost` is not a valid namespace prefix.
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![chlimage_1-365](assets/chlimage_1-365.png)
 
 #### Troubleshooting: Fail to Redirect {#troubleshooting-fail-to-redirect}
 
-The '**$**' at the end of the regular expression `sling:match`string is crucial, so that only exactly `https://localhost:4503/` is mapped, else the redirect value is prepended to any path that might exist after the server:port in the URL. Thus, when AEM tries to redirect to the login page, it fails.
+The '**$**' at the end of the regular expression `sling:match` string is crucial, so that only exactly `https://localhost:4503/` is mapped, else the redirect value is prepended to any path that might exist after the server:port in the URL. Thus, when AEM tries to redirect to the login page, it fails.
 
 ## Modifying the Community Site {#modifying-the-community-site}
 
@@ -329,8 +332,9 @@ In addition, administrators may use the [Edit Site icon](/help/communities/sites
 After any modification, remember to **Save** and re-**Publish** the site.
 
 >[!NOTE]
->
->If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
+ >
+ >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
+ >
 
 ### Add a Catalog {#add-a-catalog}
 
@@ -349,13 +353,14 @@ Select the STRUCTURE panel to add a Catalog or modify an existing Catalog :
 * **URL**: `catalog`
 
 * **Select All Namespaces**: leave as default.
-* select **Save**
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+* Select **Save**.
+
+![chlimage_1-299](assets/chlimage_1-299.png)
 
 Use the Position Icon to move the Catalog function to the second position, after Assignments.
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![chlimage_1-300](assets/chlimage_1-300.png)
 
 Select **Save** in the upper right corner to save the changes to the community site.
 

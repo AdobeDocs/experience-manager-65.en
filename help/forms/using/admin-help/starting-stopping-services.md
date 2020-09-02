@@ -41,7 +41,7 @@ Start or stop these services by selecting them from the list on the Services pan
 
 On UNIX® or Linux, enter the following text from a command line, where *`[service name]`* is the name of the service you are verifying:
 
-```as3
+```java
      ps -A | grep [service name]
 ```
 

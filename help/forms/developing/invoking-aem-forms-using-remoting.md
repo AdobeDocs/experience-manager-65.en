@@ -204,7 +204,7 @@ Within the `mx:RemoteObject` tag, specify a `<mx:method>` tag that specifies the
 
 The following code example creates a `mx:RemoteObject` instance that invokes the `MyApplication/EncryptDocument` process.
 
-```as3
+```java
  <mx:RemoteObject id="EncryptDocument" destination="MyApplication/EncryptDocument" result="resultHandler(event);">
           <mx:method name="invoke" result="handleExecuteInvoke(event)"/>
       </mx:RemoteObject>
@@ -214,7 +214,7 @@ The following code example creates a `mx:RemoteObject` instance that invokes the
 
 A client application can invoke AEM Forms by specifying a Channel in MXML or ActionScript, as the following ActionScript example shows. The Channel must be an `AMFChannel`, `SecureAMFChannel`, `HTTPChannel`, or `SecureHTTPChannel`.
 
-```as3
+```java
      ...
      private function refresh():void{
          var cs:ChannelSet= new ChannelSet();
@@ -234,7 +234,7 @@ A process created in Workbench can take zero or more input parameters and return
 
 The following code example passes a PDF document to the `MyApplication/EncryptDocument` process:
 
-```as3
+```java
      ...
      var params:Object = new Object();
  
@@ -253,7 +253,7 @@ In this code example, `pdfDocument` is a `DocumentReference` instance that conta
 
 You can invoke a specific version of a Forms service by using a `_version` parameter in the invocation's parameter map. For example, to invoke version 1.2 of the `MyApplication/EncryptDocument` service:
 
-```as3
+```java
  var params:Object = new Object();
  params["inDoc"] = pdfDocument;
  params["_version"] = "1.2"
@@ -266,7 +266,7 @@ The `version` parameter must be a string containing a single period. The values 
 
 AEM Forms process output parameters are deserialized into ActionScript objects from which the client application extracts specific parameters by name, as the following example shows. (The output value of the `MyApplication/EncryptDocument` process is named `outDoc`.)
 
-```as3
+```java
      ...
      var res:Object = event.result;
      var docRef:DocumentReference = res["outDoc"] as DocumentReference;
@@ -316,7 +316,7 @@ The following example uses the `ChannelSet.login` and `ChannelSet.logout` method
 * Uses the result event of the RemoteObject component to display the String in a TextArea control
 * Logs out of the server by calling the `ROLogout` function in response to a Button click event
 
-```as3
+```java
  <?xml version=”1.0”?>
  <!-- security/SecurityConstraintCustom.mxml -->
  <mx:Application xmlns:mx=”https://www.adobe.com/2006/mxml” width=”100%”
@@ -468,7 +468,7 @@ If you are using the AEM Forms single sign-on mechanism, configure the Remoting 
 
 A client application accesses AEM Forms through a remoting endpoint by using the `RemoteObject` component, as the following example shows.
 
-```as3
+```java
  <?xml version="1.0"?>
  <mx:Application
         backgroundColor="#FFFFFF">
@@ -549,7 +549,7 @@ When passing a secure document, use single sign-on and specify a AEM forms user 
 
 AEM Forms supports an operation named `getFileUploadToken` that returns a token that is passed to the upload servlet. The `DocumentReference.constructRequestForUpload` method requires a URL to AEM Forms along with the token returned by the `LC.FileUploadAuthenticator.getFileUploadToken` method. This method returns a `URLRequest` object that is used in the invocation to the upload servlet. The following code demonstrates this application logic.
 
-```as3
+```java
      ...
          private function startUpload():void
          {
@@ -624,7 +624,7 @@ The following code example invokes the `MyApplication/EncryptDocument.`A user mu
 
 if AEM Forms is configured to only allow secure documents to be uploaded and the user not have the *Document Upload Application User* role, then an exception is thrown. If the user does have this role, then the file is uploaded and the process is invoked.
 
-```as3
+```java
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Application  xmlns="*"
       creationComplete="initializeChannelSet();">
@@ -945,7 +945,7 @@ In the ActionScript class, use the `RemoteClass` metadata tag to map to the AEM 
 
 The following ActionScript class named Customer shows how to map to the AEM Forms data type `com.adobe.livecycle.sample.customer.Customer`.
 
-```as3
+```java
  package customer
  
  {
@@ -982,7 +982,7 @@ The following code example invokes the Customer service and creates a new custom
 >
 >Before you can execute this quick start, you have to create and deploy the Bank custom component.
 
-```as3
+```java
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Application  layout="absolute" backgroundColor="#B1ABAB">
  
@@ -1175,7 +1175,7 @@ The following code example invokes the Customer service and creates a new custom
 
 This quick start contains a style sheet named *bank.css*. The following code represents the style sheet that is used.
 
-```as3
+```css
  /* CSS file */
  global
  {

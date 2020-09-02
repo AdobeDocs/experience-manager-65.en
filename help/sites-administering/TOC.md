@@ -3,6 +3,7 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
 user-guide-title: AEM 6.5 Administering User Guide
+user-guide-description: Learn about administering AEM.
 ---
 
 # AEM 6.5 Administering User Guide {#administering}
@@ -10,6 +11,7 @@ user-guide-title: AEM 6.5 Administering User Guide
 + [Administering User Guide overview](home.md)
 + Sites Features {#introduction}
     + [Website Administration](msm-and-translation.md)
+    + [Asynchronous Jobs](asynchronous-jobs.md)
     + [Reusing Content: Multi Site Manager and Live Copy](msm.md)
     + [Live Copy Overview Console](msm-livecopy-overview.md)
     + [Configuring Live Copy Synchronization](msm-sync.md)
@@ -128,7 +130,6 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [AEM Livefyre Recipes](aem-livefyre-recipes.md)
     + [Troubleshooting Integration Issues](troubleshooting-integration-issues.md)
     + [Integrating with BrightEdge Content Optimizer](brightedge.md)
-    + [Best Practices for Email Templates](best-practices-for-email-templates.md)
     + [Catalog Producer](catalog-producer.md)
     + [Configure AEM Assets integration with Experience Cloud and Creative Cloud](configure-assets-cc-integration.md)
     + [Integrating with Silverpop Engage](silverpop.md)
@@ -154,7 +155,6 @@ user-guide-title: AEM 6.5 Administering User Guide
     + [AEM Commerce - GDPR Readiness](gdpr-compliance-commerce.md)
 + Content Management {#contentmanagement}
     + [How to Work With Packages](package-manager.md)
-    + [Assets Workflow Offloader](workflow-offloader.md)
     + [Administering Tags](tags.md)
     + [The Page Exporter](page-exporter.md)
     + [Classic UI Tagging Console](classic-console.md)

@@ -130,13 +130,21 @@ For both views (List and Calendar) you can define settings:
 
 The Admin Control option enables the administrators to:
 
+* Customize the AEM Inbox columns
+
 * Customize header text and logo
 
 * Control the display of navigation links available in header
 
-The Admin Control option is visible only to the members of the administrators or workflow-administrators group.
+The Admin Control option is visible only to the members of the `administrators` or `workflow-administrators` group.
 
-![admin-control](assets/admin-control.png)
+* **Column Customization**: Customize an AEM Inbox to change the default title of a column, reorder the position of a column, and display additional columns based on the data of a workflow.
+  * **Add Column**: Select a column to add in AEM Inbox.
+  * **Edit Column**: Hover the mouse over the column title and tap ![edit](assets/edit.svg) icon to enter a column display name.
+  * **Delete Column**: Tap the ![delete](assets/delete_updated.svg) icon to delete the column from AEM Inbox.
+  * **Move Column**: Drag the ![move](assets/move_updated.svg) icon to move a column to a new position in AEM Inbox.
+
+  ![admin-control](assets/admin-control-column-customize.png)
 
 * **Branding Customization**
 

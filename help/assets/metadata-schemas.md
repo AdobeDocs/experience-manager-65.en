@@ -12,11 +12,7 @@ In [!DNL Adobe Experience Manager Assets], schemas contain specific fields for s
 
 To view and edit the properties page for an asset, follow these steps:
 
-1. Click the **[!UICONTROL View Properties]** icon from Quick Actions on the asset tile in card view.
-
-   ![Quick actions on asset tile](assets/chlimage_1-170.png)
-
-   Alternatively, select an asset and then click the [!UICONTROL Properties] icon from the toolbar.
+1. Click the **[!UICONTROL View Properties]** option from the quick actions on the asset tile in card view. Alternatively, select an asset and then click **[!UICONTROL Properties]** ![view properties](assets/do-not-localize/info-circle-icon.png) from the toolbar.
 
 1. You can edit the various editable metadata properties under the available tabs. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
 
@@ -36,18 +32,14 @@ To view a list of forms or templates, in [!DNL Experience Manager] interface nav
 |---|---|---|
 | [!UICONTROL default] | | The base metadata schema form for assets. |
 | | The following child forms inherit the properties of the [!UICONTROL default] form: | |
-| |[!UICONTROL image] | Schema form for images with the MIME type such as `image/jpeg` and `image/png`. <br> The [!UICONTROL image] form has the following child form templates: <ul><li> [!UICONTROL jpeg]: Schema form for assets with sub type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schema form for the assets with sub type TIFF.</li></ul> |
-| | [!UICONTROL application] | Schema form for assets with MIME type such as `application/pdf` and `application/zip`. <br>[!UICONTROL pdf]: Schema form for assets with sub type PDF. |
-| |[!UICONTROL video]| Schema form for video assets with MIME type such as `video/avi` and `video/mp4`. |
+| | <ul><li>[!UICONTROL dm_video]</li></ul> | Schema form for Dynamic Media videos. |
+| |<ul><li>[!UICONTROL image]</li></ul> | Schema form for images with the MIME type such as `image/jpeg` and `image/png`. <br> The [!UICONTROL image] form has the following child form templates: <ul><li> [!UICONTROL jpeg]: Schema form for assets with sub type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schema form for the assets with sub type TIFF.</li></ul> |
+| | <ul><li>[!UICONTROL application]</li></ul> | Schema form for assets with MIME type such as `application/pdf` and `application/zip`. <br>[!UICONTROL pdf]: Schema form for assets with sub type PDF. |
+| |<ul><li>[!UICONTROL video]</li></ul>| Schema form for video assets with MIME type such as `video/avi` and `video/mp4`. |
 | [!UICONTROL collection] | | Schema form for collections. |
 | [!UICONTROL contentfragment] | | [Schema form for content fragments](/help/sites-developing/customizing-content-fragments.md). |
 | [!UICONTROL forms] | | This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md). |
-
-<!-- 
-TBD: Add dm_video child for the default form OOTB.
-video doesn't contain any sub types as listed above OOTB.
-application doesn't contain the sub type zip OOTB.
--->
+ | [!UICONTROL ugc_contentfragment] | | Schema form for user generated content pieces and assets integrated into Experience Manager from social media. |
 
 >[!NOTE]
 >
@@ -61,7 +53,7 @@ To add a metadata schema form, follow these steps:
 
    >[!NOTE]
    >
-   >A lock icon is displayed with the unedited templates. If you customize a template, the lock icon is not displayed.
+   >A lock symbol is displayed with the unedited templates. If you customize a template, it is not locked ![lock closed](assets/do-not-localize/lock_closed_icon.svg).
 
 1. In the dialog, provide the title of the schema form and click **[!UICONTROL Create]** to complete the form creation process.
 
@@ -112,7 +104,7 @@ The following are the valid values for this property:
 
 * `./jcr:content/metadata/dc:title`: Stores the value at the asset's metadata node as the property `dc:title`.
 
-* `./jcr:created`: Displays the JCR property at the asset's node. If you configure these properties, Adobe recommends that you mark them as Disable Edit and do not bind any date field to `./jcr:created`. It is a protected property. When DAM users try to update assets, it results in the error [!UICONTROL Asset(s) failed to modify]. In case you decide to map a date field to this JCR property, use the default schema. Copy the Adobe-provided, default metadata schema and modify it, as the date field in the default schema is mapped to `./jcr:created`.
+* `./jcr:created`: Stores the creation date and time of an asset. It is a protected property. If you configure these properties, Adobe recommends that you mark them as Disable Edit.
 
 To ensure that the component is displayed properly in the metadata schema form, the property path should not include any spaces.
 
@@ -132,15 +124,15 @@ To ensure that the component is displayed properly in the metadata schema form, 
 
 If you select the **[!UICONTROL Required]** option, you can search for assets missing mandatory metadata. From the **[!UICONTROL Filters]** panel, expand the **[!UICONTROL Metadata Validation]** predicate and select the **[!UICONTROL Invalid]** option. The search results display assets missing mandatory metadata that you configured through the schema form.
 
-![Invalid option selected in Metadata Validation predicate of Filters panel ](assets/chlimage_1-178.png)
+![Option selected in Metadata Validation predicate of Filters panel](assets/invalid-metadata-predicate.png)
 
 If you add the Contextual Metadata component to any tab of any schema form, the component appears as a list in the properties page of assets to which the particular  schema  is applied. The list includes all other tabs except the tab to which you applied the Contextual Metadata component. Currently, this feature provides basic functionality to control the display of metadata based on the context.
 
-![Contextual Metadata component listing tabs of asset Properties](assets/chlimage_1-179.png)
+![Contextual metadata component listing tabs of asset properties](assets/metadata-contextual-component-list.png)
 
 To display any tab in the properties page in addition to the tab where the Contextual Metadata component is applied, select the tab from the list. The tab is added to the properties page.
 
-![The tab selected on Contextual Metadata list is displayed on asset properties page](assets/contextual-metadata-asset-properties.png)
+![The tab selected on contextual metadata list is displayed on asset properties page](assets/contextual-metadata-asset-properties.png)
 
 *Figure: Contextual metadata in asset properties page.*
 
@@ -152,13 +144,11 @@ Instead of specifying properties for the options in the **[!UICONTROL Settings]*
 
 The schema editor lets you add or delete a tab. The default schema form includes the **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]**, and **[!UICONTROL IPTC Extension]** tabs.
 
-![Default tabs in Metadata Schema Form](assets/chlimage_1-181.png)
+![Default tabs in Metadata Schema form](assets/metadata-schema-form-tabs.png)
 
-Click `+` to add a tab on a schema form. By default, the new tab has the name `Unnamed-1`. You can modify the name from the **[!UICONTROL Settings]** tab.
+Click `+` to add a tab on a schema form. By default, the new tab has the name `Unnamed-1`. You can modify the name from the **[!UICONTROL Settings]** tab. Click `X` to delete a tab.
 
-Click `X` to delete a tab.
-
-![Add or delete a tab using Metadata Schema Editor](assets/chlimage_1-182.png)
+![Add or delete a tab using Metadata Schema Editor](assets/metadata-schema-form-new-tab.png)
 
 ## Delete metadata schema forms {#delete-metadata-schema-forms}
 
@@ -168,7 +158,7 @@ To delete a form, select a form and click delete.
 
 >[!NOTE]
 >
->* After you delete custom changes to a default form, the lock icon reappears before it on the Metadata Schema interface. It indicates that the form is reverted to its default state.
+>* After you delete custom changes to a default form, the lock ![lock closed](assets/do-not-localize/lock_closed_icon.svg) reappears before the form. It indicates that the form is reverted to its default state.
 >* You cannot delete the default metadata schema forms in [!DNL Assets].
 
 ## Schema forms for MIME types {#schema-forms-for-mime-types}
@@ -222,7 +212,7 @@ Metadata inheritance by assets is based on the schema that is applied to the fir
 
 You can apply a different schema at the subfolder. The assets within a subfolder inherit the metadata schema of the immediate subfolder. If no schema or the same schema is applied at the subfolder level, its assets inherit schema from the parent folder.
 
-1. In [!DNL Experience Manager] interface, navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
+1. In [!DNL Experience Manager] interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
 1. Select the check box before a form, for example the default metadata form, and click the **[!UICONTROL Copy]** and save it as a custom form. Specify a custom name for the form, for example `my_default`. Alternatively, you can create a custom form.
 
 1. In the **[!UICONTROL Metadata Schema Forms]** page, select the `my_default` form, and then click **[!UICONTROL Edit]**.
@@ -238,7 +228,7 @@ You can apply a different schema at the subfolder. The assets within a subfolder
 
 1. Select the folder on which to apply the modified schema and then click **[!UICONTROL Apply]**.
 
-   ![Select folder to apply Metadata Schema](assets/chlimage_1-188.png)
+   ![Select folder to apply Metadata Schema](assets/metadata-schema-select-folder.png)
 
 1. If the folder has the other metadata schema applied, a message appears warning that you are about to overwrite the existing metadata schema. Click **Overwrite**.
 1. Click **OK** to close the success message.
@@ -252,7 +242,7 @@ You can define mandatory fields at a folder level, which is enforced on assets t
 >
 >A metadata field can be defined as mandatory based on the value of another field. In the card view, [!DNL Experience Manager] does not display the warning message about missing metadata for such mandatory metadata fields.
 
-1. In [!DNL Experience Manager] interface, navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
+1. In [!DNL Experience Manager] interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
 1. Save the default metadata form as a custom form. For example, save it as `my_default`.
 
 1. Edit the custom form. Add a mandatory field. For example, add a **[!UICONTROL Category]** field and make the field mandatory.
@@ -265,7 +255,7 @@ You can define mandatory fields at a folder level, which is enforced on assets t
 
 1. Navigate to the folder and upload some assets with missing metadata for the mandatory field you added to the custom form. A message for the missing metadata for the mandatory field is displayed on the card view of the asset.
 
-   ![Message for missing mandatory metadata on asset card view on uploading assets in folder](assets/chlimage_1-192.png)
+   ![Message for missing mandatory metadata on asset card view on uploading assets in folder](assets/metadata-missing-info-card-view.png)
 
 1. (Optional) Access `https://[aem_server]:[port]/system/console/components/`. Configure and enable `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component that is disabled by default. Set a frequency at which [!DNL Experience Manager] checks for the validity of metadata on the assets. This configuration adds a property `hasValidMetadata` to `jcr:content` of assets. [!DNL Experience Manager] uses this property to filter the invalid assets in a search result. If you add an asset after a check, the asset is not flagged with `hasValidMetadata` until the next scheduled check. Hence the assets do not appear in search filters for invalid metadata untill after the next scheduled check.
 

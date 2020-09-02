@@ -1,33 +1,37 @@
 ---
-title: Assets HTTP API in [!DNL Adobe Experience Manager].
+title: [!DNL Assets] HTTP API in [!DNL Adobe Experience Manager].
 description: Create, read, update, delete, manage digital assets using HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 ---
 
-# Assets HTTP API {#assets-http-api}
+# [!DNL Assets] HTTP API {#assets-http-api}
 
 ## Overview {#overview}
 
-The Assets HTTP API allows for create-read-update-delete (CRUD) operations on digital assets, including on metadata, on renditions, and on comments, together with structured content using [!DNL Experience Manager] Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](/help/assets/assets-api-content-fragments.md).
+The [!DNL Assets] HTTP API allows for create-read-update-delete (CRUD) operations on digital assets, including on metadata, on renditions, and on comments, together with structured content using [!DNL Experience Manager] Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](/help/assets/assets-api-content-fragments.md).
 
 To access the API:
 
 1. Open the API service document at `https://[hostname]:[port]/api.json`.
-1. Follow the Assets service link leading to `https://[hostname]:[server]/api/assets.json`.
+1. Follow the [!DNL Assets] service link leading to `https://[hostname]:[server]/api/assets.json`.
 
 The API response is a JSON file for some MIME types and a response code for all MIME types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
 
 After the [!UICONTROL Off Time], an asset and its renditions are not available via the [!DNL Assets] web interface and through the HTTP API. The API returns 404 error message if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
 
+>[!CAUTION]
+>
+>[HTTP API updates the metadata properties](#update-asset-metadata) in the `jcr` namespace. However, the Experience Manager user interface updates the metadata properties in the `dc` namespace.
+
 ## Content Fragments {#content-fragments}
 
-A [content fragment](/help/assets/content-fragments.md) is a special type of asset. It can be used to access structured data, such as texts, numbers, dates, amongst others. As there are several differences to `standard` assets (such as images or documents), some additional rules apply to handling content fragments.
+A [content fragment](/help/assets/content-fragments/content-fragments.md) is a special type of asset. It can be used to access structured data, such as texts, numbers, dates, amongst others. As there are several differences to `standard` assets (such as images or documents), some additional rules apply to handling content fragments.
 
 For further information see [Content Fragments Support in the Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md).
 
 ## Data model {#data-model}
 
-The Assets HTTP API exposes two major elements, folders and assets (for standard assets).
+The [!DNL Assets] HTTP API exposes two major elements, folders and assets (for standard assets).
 
 Additionally, it exposes more detailed elements for the custom data models that describe structured content in Content Fragments. See [Content Fragment Data Models](/help/assets/assets-api-content-fragments.md#content-fragments) for further information.
 
@@ -68,19 +72,19 @@ In [!DNL Experience Manager] a folder has the following components:
 * Properties.
 * Links.
 
-The Assets HTTP API includes the following features:
+The [!DNL Assets] HTTP API includes the following features:
 
-* Retrieve a folder listing.
-* Create a folder.
-* Create an asset.
-* Update asset binary.
-* Update asset metadata.
-* Create an asset rendition.
-* Update an asset rendition.
-* Create an asset comment.
-* Copy a folder or asset.
-* Move a folder or asset.
-* Delete a folder, asset, or rendition.
+* [Retrieve a folder listing](#retrieve-a-folder-listing).
+* [Create a folder](#create-a-folder).
+* [Create an asset](#create-an-asset).
+* [Update asset binary](#update-asset-binary).
+* [Update asset metadata](#update-asset-metadata).
+* [Create an asset rendition](#create-an-asset-rendition).
+* [Update an asset rendition](#update-an-asset-rendition).
+* [Create an asset comment](#create-an-asset-comment).
+* [Copy a folder or asset](#copy-a-folder-or-asset).
+* [Move a folder or asset](#move-a-folder-or-asset).
+* [Delete a folder, asset, or rendition](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
@@ -161,7 +165,7 @@ Updates an asset's binary (rendition with name original). An update triggers the
 
 Updates the Asset metadata properties. If you update any property in the `dc:` namespace, the API updates the same property in the `jcr` namespace. The API does not sync the properties under the two namespaces.
 
-**Request**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**Request**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **Response codes**: The response codes are:
 
@@ -169,6 +173,27 @@ Updates the Asset metadata properties. If you update any property in the `dc:` n
 * 404 - NOT FOUND - if Asset could not be found or accessed at the provided URI.
 * 412 - PRECONDITION FAILED - if root collection cannot be found or accessed.
 * 500 - INTERNAL SERVER ERROR - if something else goes wrong.
+
+### Sync metadata update between `dc` and `jcr` namespace {#sync-metadata-between-namespaces}
+
+The API method updates the metadata properties in the `jcr` namespace. The updates made using Touch-UI changes the metadata properties in the `dc` namespace. To sync the metadata values between `dc` and `jcr` namespace, you can create a workflow and configure Experience Manager to execute the workflow upon asset edit. Use an ECMA script to sync the required metadata properties. The following sample script synchronizes the title string between `dc:title` and `jcr:title`.
+
+```javascript
+var workflowData = workItem.getWorkflowData();
+if (workflowData.getPayloadType() == "JCR_PATH")
+{
+ var path = workflowData.getPayload().toString();
+ var node = workflowSession.getSession().getItem(path);
+ var metadataNode = node.getNode("jcr:content/metadata");
+ var jcrcontentNode = node.getNode("jcr:content");
+if (jcrcontentNode.hasProperty("jcr:title"))
+{
+ var jcrTitle = jcrcontentNode.getProperty("jcr:title");
+ metadataNode.setProperty("dc:title", jcrTitle.toString());
+ metadataNode.save();
+}
+}
+```
 
 ## Create an asset rendition {#create-an-asset-rendition}
 
@@ -246,6 +271,12 @@ Moves a folder or asset at the given path to a new destination.
 * `X-Overwrite` - Use either `T` to force delete an existing resources or `F` to prevent overwriting an existing resource.
 
 **Request**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
+
+Do not use `/content/dam` in the URL. A sample command to move assets and overwriting existing ones is:
+
+```shell
+curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
+```
 
 **Response codes**: The response codes are:
 

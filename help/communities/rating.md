@@ -23,20 +23,20 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the [required client-side libraries](rating-basics.md#essentials-for-client-side) are included, this is how the `Rating` component will appear.
 
-![chlimage_1-493](assets/chlimage_1-493.png)
+![rating](assets/rating.png)
 
 ## Configuring Rating {#configuring-rating}
 
 Select the placed `Rating` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-494](assets/chlimage_1-494.png)
+![configure-new](assets/configure-new.png)
 
 Under the **[!UICONTROL Texts & Labels]** tab you specify the internal identifier for the Rating.
 
-![chlimage_1-495](assets/chlimage_1-495.png)
+![tallyname](assets/tallyname.png)
 
 **[!UICONTROL Tally Name]**
-  (*Required*) A simple name for the `Rating`which uniquely identifies this instance. Must be a valid node name for the repository.
+  (*Required*) A simple name for the `Rating` which uniquely identifies this instance. Must be a valid node name for the repository.
 
 ## Site Visitor Experience {#site-visitor-experience}
 

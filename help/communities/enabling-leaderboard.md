@@ -21,10 +21,10 @@ The `Leaderboard` component provides the ability to obtain a sense of how member
 
 Prior to including the leaderboard component on a page, it is necessary to configure [Communities Scoring and Badges](/help/communities/implementing-scoring.md).
 
-This section of the documentation describes
+This section of the documentation describes:
 
-* Adding the `Leaderboard` component to a [community site](/help/communities/overview.md#community-sites)
-* Configuration settings for the `Leaderboard` component
+* Adding the `Leaderboard` component to a [community site](/help/communities/overview.md#community-sites).
+* Configuration settings for the `Leaderboard` component.
 
 ### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
 
@@ -36,19 +36,21 @@ and drag it into place on a page.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When first placed on a page of a community site, this is how the component appears :
+When first placed on a page of a community site, this is how the component appears:
 
-![chlimage_1-19](assets/chlimage_1-19.png)
+![chlimage_1-8](assets/chlimage_1-8.png)
 
 ### Configuring Leaderboard {#configuring-leaderboard}
 
 Select the placed `Leaderboard` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-20](assets/chlimage_1-20.png) ![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-9](assets/chlimage_1-9.png) 
+
+![chlimage_1-10](assets/chlimage_1-10.png)
 
 #### Settings tab {#settings-tab}
 
-Under the **Settings** tab, specify what information related to the member is displayed :
+Under the **[!UICONTROL Settings]** tab, specify what information related to the member is displayed :
 
 * **Display Name**
 
@@ -94,48 +96,48 @@ Under the **Rules** tab, the community site, and its scoring and badging rules
 
 This leaderboard reports results from applying basic scoring rules.
 
-Leaderboard component configuration :
+Leaderboard component configuration:
 
 * Settings tab:
 
-    * Display Name = `Participation Board`
-    * `checked`:
+  * Display Name = `Participation Board`
+  * `checked`:
 
-        * Badge
-        * Badge Name
-        * Use Avatar
+    * Badge
+    * Badge Name
+    * Use Avatar
 
 * Rules tab:
 
-    * Rule Location = `/content/sites/communities/jcr:content`
-    * Scoring Rule = `/etc/community/scoring/rules/forums-scoring`
-    * Badging Rule = `/etc/community/badging/rules/reference-badging`
-    * Display Limit = `10`
+  * Rule Location = `/content/sites/<site name>/jcr:content`
+  * Scoring Rule = `/libs/settings/community/scoring/rules/forums-scoring`
+  * Badging Rule = `/libs/settings/community/badging/rules//reference-badging`
+  * Display Limit = `10`
 
-![chlimage_1-22](assets/chlimage_1-22.png)
+![chlimage_1-11](assets/chlimage_1-11.png)
 
 ### Example: Experts Leaderboard {#example-experts-leaderboard}
 
 This leaderboard reports results from applying advanced scoring rules.
 
-Leaderboard component configuration :
+Leaderboard component configuration:
 
 * Settings tab:
 
-    * Display Name = `Expertise Board`
-    * `checked`:
+  * Display Name = `Expertise Board`
+  * `checked`:
 
-        * Badge
-        * Use Avatar
+    * Badge
+    * Use Avatar
 
 * Rules tab:
 
-    * Rule Location = `/content/sites/communities/jcr:content`
-    * Scoring Rule = `/etc/community/scoring/rules/adv-forums-scoring`
-    * Badging Rule = `/etc/community/badging/rules/adv-forums-badging`
-    * Display Limit = `10`
+  * Rule Location = `/content/sites/<site name>/jcr:content`
+  * Scoring Rule = `/libs/settings/community/scoring/rules/adv-forums-scoring`
+  * Badging Rule = `/libs/settings/community/badging/rules/adv-forums-badging`
+  * Display Limit = `10`
 
-![chlimage_1-23](assets/chlimage_1-23.png)
+![chlimage_1-12](assets/chlimage_1-12.png)
 
 ### Additional Information {#additional-information}
 

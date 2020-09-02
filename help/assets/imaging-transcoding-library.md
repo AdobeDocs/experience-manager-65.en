@@ -48,7 +48,7 @@ The command line arguments for Imaging Transcoding Library can include the follo
 
 You can configure the following options for the `-resize` parameter:
 
-* `X`: Works similar to Experience Manager. For example -resize 319.
+* `X`: Works similar to [!DNL Experience Manager]. For example -resize 319.
 * `WxH`: Aspect ratio is not maintained, For example `-resize 319x319`.
 * `Wx`: Fixes the width and calculates the height maintaining the aspect ratio. For example `-resize 319x`.
 * `xH`: Fixes the height and calculates the width maintaining the aspect ratio. For example `-resize x319`.
@@ -65,11 +65,11 @@ To configure ITL processing, create a configuration file and update the workflow
 
 ### Create configuration file for extracted bundle {#create-conf-file}
 
-To configure the library, create a .conf file to indicate the libraries using the following steps. You need administrator or root permissions.
+To configure the library, create a CONF file to indicate the libraries using the following steps. You need administrator or root permissions.
 
-1. Download the [Imaging Transcoding Library package from Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) or from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. The package is compatible with Experience Manager 6.5.
+1. Download the [Imaging Transcoding Library package from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. The package is compatible with [!DNL Experience Manager] 6.5.
 
-1. To know a bundle id for `com.day.cq.dam.cq-dam-switchengine`, log in to the Web Console and click **[!UICONTROL OSGi > Bundles]**. Alternatively, to open the bundles console, access `https://[aem_server:[port]/system/console/bundles/` URL. Locate `com.day.cq.dam.cq-dam-switchengine` bundle and its ID.
+1. To know a bundle id for `com.day.cq.dam.cq-dam-switchengine`, log in to the Web Console and click **[!UICONTROL OSGi]** > **[!UICONTROL Bundles]**. Alternatively, to open the bundles console, access `https://[aem_server:[port]/system/console/bundles/` URL. Locate `com.day.cq.dam.cq-dam-switchengine` bundle and its ID.
 
 1. Ensure that all the required libraries are extracted, by checking the folder using the command `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, where the folder name is constructed using the bundle ID. For example, the command is `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` if bundle id is `588`.
 
@@ -85,7 +85,7 @@ To configure the library, create a .conf file to indicate the libraries using th
 
 1. Execute `ldconfig` command to create the necessary links and cache.
 
-1. In the account that is used to start Experience Manager, edit `.bash_profile` file. Add `LD_LIBRARY_PATH` by adding the following.
+1. In the account that is used to start [!DNL Experience Manager], edit `.bash_profile` file. Add `LD_LIBRARY_PATH` by adding the following.
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -98,7 +98,7 @@ To configure the library, create a .conf file to indicate the libraries using th
 
 Update the [!UICONTROL DAM Update Asset] workflow to use the library for processing images.
 
-1. In Experience Manager user interface, select **[!UICONTROL Tools > Workflow > Models]**.
+1. In [!DNL Experience Manager] user interface, select **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 
 1. From the **[!UICONTROL Workflow Models]** page, open the **[!UICONTROL DAM Update Asset]** workflow model in edit mode.
 
@@ -130,7 +130,7 @@ For example, if you want to create thumbnails for a TIFF image using Imaging Tra
 
 1. Sync the updated [!UICONTROL DAM Update Asset] workflow model. Save the workflow.
 
-The verify the configuration, upload a TIFF image and monitor the error.log file. You will notice `INFO` messages with mentions of `SwitchEngineHandlingProcess execute: executing command line`. The logs mention the renditions generated. Once the workflow completes, you can view the new renditions in Experience Manager.
+The verify the configuration, upload a TIFF image and monitor the error.log file. You will notice `INFO` messages with mentions of `SwitchEngineHandlingProcess execute: executing command line`. The logs mention the renditions generated. Once the workflow completes, you can view the new renditions in [!DNL Experience Manager].
 
 >[!MORELIKETHIS]
 >

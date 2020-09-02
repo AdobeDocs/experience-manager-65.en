@@ -59,30 +59,31 @@ There are several different ways you can obtain a URL string. However, the steps
 
 1. Based on the asset that you selected, do one of the following:
 
-    * If you selected an image, in the drop-down menu, tap **[!UICONTROL Renditions]**.
+    * If you selected an image, in the drop-down menu, tap **[!UICONTROL Renditions.]**
 
       Under the **[!UICONTROL Dynamic]** heading, tap a preset name to view its rendition in the right frame. You may need to scroll the Renditions list to see the Dynamic heading.
 
-      At the bottom of the left rail, tap **[!UICONTROL URL]**.
+      At the bottom of the left rail, tap **[!UICONTROL URL.]**
 
       ![chlimage_1-270](assets/chlimage_1-270.png)
 
-    * If you selected a spin set, an image set, a carousel set, or a video, in the drop-down menu, tap **[!UICONTROL Viewers]**.
+    * If you selected a spin set, an image set, a carousel set, or a video, in the drop-down menu, tap **[!UICONTROL Viewers.]**
 
       In the left rail, tap a viewer preset name. A preview of the set or video is opened in a separate page.
 
-      In the left rail, at the bottom, tap **[!UICONTROL URL]**.
+      In the left rail, at the bottom, tap **[!UICONTROL URL.]**
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Select and copy the text to your web browser to preview the asset or to add to your web content page.
 
-   To exit the URL window, tap the **[!UICONTROL X]** or tap **[!UICONTROL Close]**.
+   To exit the URL window, tap the **[!UICONTROL X]** or tap **[!UICONTROL Close.]**
 
 ## Obtaining a URL for a static asset {#obtaining-a-url-for-a-static-asset}
 
 Dynamic Media supports the delivery of static assets, which are additional assets beyond just images and video. Supported static assets formats for delivery include the following:
 
+* 3D files
 * Animated GIF
 * Audio files
 * CSS
@@ -94,11 +95,11 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
 **To obtain a URL for a static asset**
 
-1. Navigate to the *published *static asset whose URL you want to copy, and tap the asset to open it.
+1. Navigate to the *published* static asset whose URL you want to copy, and tap the asset to open it.
 
    Remember that URLs are only available to copy *after* you have first *published* the static asset.
 
-   See [Publishing Assets.](publishing-dynamicmedia-assets.md)
+   See [Publishing Assets](publishing-dynamicmedia-assets.md).
 
 1. Use any of the following methods to obtain the URL of the published static asset:
 
@@ -108,14 +109,14 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
           For example, `https://aem.com/is/content/adobe/image.gif`.
 
-    * click **[!UICONTROL Asset > Dynamic Renditions]**, then tap a dynamic rendition of the static asset and copy the URL.
+    * Tap **[!UICONTROL Asset > Dynamic Renditions]**, then tap a dynamic rendition of the static asset and copy the URL.
 
       Change the copied URL to use `is/content` in the path instead of `is/image/`.
 
 ## Obtaining a video URL for a published video rendition {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. In AEM, navigate to **[!UICONTROL Tools > Deployment > Cloud > Cloud Services]**.
-1. On the **[!UICONTROL Cloud Services]** page, scroll down to the **[!UICONTROL Dynamic Media Cloud Services]** heading, then tap **[!UICONTROL Show Configurations]**.
+1. In AEM, navigate to **[!UICONTROL Tools > Deployment > Cloud > Cloud Services.]**
+1. On the **[!UICONTROL Cloud Services]** page, scroll down to the **[!UICONTROL Dynamic Media Cloud Services]** heading, then tap **[!UICONTROL Show Configurations.]**
 1. Under **[!UICONTROL Available Configurations]**, tap the name of the configuration you want.
 
 1. On the **[!UICONTROL Dynamic Media Cloud Settings]** page, under **[!UICONTROL Video Service URL]**, copy down the entire URL path. You will need the copied URL path later in the steps.
@@ -130,7 +131,7 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
    For example, if the registration ID was `87654321|MyCompany`, the customer name would be `MyCompany`.
 
-1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services**, then tap the Experience Manager logo and navigate to **[!UICONTROL General > CRXDE Lite]**.
+1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services]**, then tap the Experience Manager logo and navigate to **[!UICONTROL General > CRXDE Lite.]**
 1. Copy down the entire video rendition path from the JCR (Java Content Repository).
 
    For example, the video's rendition path may appear similar to the following:
@@ -151,8 +152,8 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
 ## Obtaining a video URL for adaptive streaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. In AEM, navigate to **[!UICONTROL Tools > Deployment > Cloud > Cloud Services]**.
-1. On the **[!UICONTROL Cloud Services]** page, scroll down to the **[!UICONTROL Dynamic Media Cloud Services]** heading, then tap **[!UICONTROL Show Configurations]**.
+1. In AEM, navigate to **[!UICONTROL Tools > Deployment > Cloud > Cloud Services.]**
+1. On the **[!UICONTROL Cloud Services]** page, scroll down to the **[!UICONTROL Dynamic Media Cloud Services]** heading, then tap **[!UICONTROL Show Configurations.]**
 1. Under **[!UICONTROL Available Configurations]**, tap the name of the configuration you want.
 1. On the **[!UICONTROL Dynamic Media Cloud Services Settings]** page, do the following:
 

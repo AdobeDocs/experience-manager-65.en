@@ -1,12 +1,12 @@
 ---
-title: Activity stream in timeline
+title: Activity stream of digital assets in timeline view of [!DNL Experience Manager].
 description: This article describes how to display activity logs for assets on the timeline.
 contentOwner: AG
 ---
 
 # Activity stream in timeline {#activity-stream-in-timeline}
 
-This feature displays activity logs for assets on the timeline. If you perform any of the following asset-related operations in Adobe Experience Manager Assets, the activity stream feature updates the timeline to reflect the activity.
+This feature displays activity logs for assets on the timeline. If you perform any of the following asset-related operations in [!DNL Adobe Experience Manager Assets], the activity stream feature updates the timeline to reflect the activity.
 
 The following operations are logged in the activity stream:
 
@@ -19,7 +19,7 @@ The following operations are logged in the activity stream:
 * Reject
 * Move
 
-The activity logs to be displayed in the timeline are fetched from the location `/var/audit/com.day.cq.dam/content/dam` in CRX, where log files are stored.  In addition, timeline activity is logged when new assets are uploaded or existing asses are modified and checked into Experience Manager via [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) or [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+The activity logs to be displayed in the timeline are fetched from the location `/var/audit/com.day.cq.dam/content/dam` in CRX, where log files are stored. In addition, timeline activity is logged when new assets are uploaded or existing asses are modified and checked into [!DNL Experience Manager] via [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) or [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >

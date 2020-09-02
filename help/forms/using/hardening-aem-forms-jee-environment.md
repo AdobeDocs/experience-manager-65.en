@@ -181,7 +181,26 @@ To run the application server on which AEM Forms on JEE is deployed, using a spe
     * Deny log on locally
     * Log on as Service (should be already set)
 
-1. Give the new user account Read & Execute, Write, Modify, List Folder Contents, and Read permissions to complete AEM Forms on JEE installation directory and Global Document Storage (GDS) directory. The location of the GDS directory is configured manually during the AEM Forms installation process. If the location setting remains empty during installation, the location defaults to a directory under the application server installation at [JBoss root]/server/[type]/svcnative/DocumentStorage.
+1. Give the new user account modify permissions on the following directories: 
+    * **Global Document Storage (GDS) directory**: The location of the GDS directory is configured manually during the AEM Forms installation process. If the location setting remains empty during installation, the location defaults to a directory under the application server installation at `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+    * **CRX-Repository directory**: The default location is `[AEM-Forms-installation-location]\crx-repository`  
+    * **AEM Forms temporary directories**:  
+        * (Windows) TMP or TEMP path as set in the environment variables
+        * (AIX, Linux, or Solaris) Logged-in user’s home directory
+        On UNIX-based systems, a non-root user can use the following directory as the temporary directory:
+        * (Linux) /var/tmp or /usr/tmp
+        * (AIX) /tmp or /usr/tmp
+        * (Solaris) /var/tmp or /usr/tmp
+1. Give the new user account write permissions on the following directories:
+    * [JBoss-directory]\standalone\deployment
+    * [JBoss-directory]\standalone\
+    * [JBoss-directory]\bin\
+    
+    >[!NOTE]
+    >
+    > The default installation location of JBoss Application Server: 
+    > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+    > * Linux: /opt/jboss/
 1. Start the application server.
 
 **Disabling the Configuration Manager bootstrap servlet**
@@ -192,7 +211,7 @@ Configuration Manager made use of a servlet deployed on your application server 
 1. Open the META-INF/application.xml file.
 1. Search for the adobe-bootstrapper.war section:
 
-   ```as3
+   ```java
    <!-- bootstrapper start --> 
    <module id="WebApp_adobe_bootstrapper"> 
        <web> 
@@ -212,7 +231,7 @@ Configuration Manager made use of a servlet deployed on your application server 
 1. Stop the AEM Forms server.
 1. Comment out the adobe-bootstrapper.war and the adobe-lcm-bootstrapper-redirectory. war modules as follows:
 
-   ```as3
+   ```java
    <!-- bootstrapper start --> 
    <!-- 
    <module id="WebApp_adobe_bootstrapper"> 
@@ -254,7 +273,7 @@ When AEM Forms on JEE is installed, a single default user account is configured 
 
 1. Type the following URL in a web browser:
 
-   ```as3
+   ```java
    https://[host name]:[port]/adminui
    ```
 
@@ -287,7 +306,7 @@ Web Service Definition Language (WSDL) generation should be enabled only for dev
 
 1. Type the following URL in a web browser:
 
-   ```as3
+   ```java
    https://[host name]:[port]/adminui
    ```
 
@@ -331,7 +350,7 @@ On Oracle, the database account that you use needs only the CONNECT, RESOURCE, a
 
 1. Modify [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} to add `integratedSecurity=true` to the connection URL, as shown in this example:
 
-   ```as3
+   ```java
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
    ```
 
@@ -343,7 +362,7 @@ On Oracle, the database account that you use needs only the CONNECT, RESOURCE, a
 
 1. Start the WebLogic Server Administration Console by typing the following URL in the URL line of a web browser:
 
-   ```as3
+   ```java
    https://[host name]:7001/console
    ```
 
@@ -431,6 +450,16 @@ This table describes auditing and logging techniques you can use to reduce your 
   </tr> 
  </tbody> 
 </table>
+
+### Enable a non-administrator user to run PDF Generator
+
+You can enable a non-administrator user to use PDF Generator. Normally, only users with administrative privileges can use PDF Generator. Perform the following steps to enable a non-administrator user to run PDF Generator:
+
+1. Create an environment variable name PDFG_NON_ADMIN_ENABLED.
+
+1. Set value of the variable to TRUE.
+
+1. Restart the AEM Forms instance.
 
 ## Configuring AEM Forms on JEE for access beyond the enterprise {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
@@ -650,10 +679,10 @@ The Referrer Filtering process can be described as follows:
     1. If it is POST, the forms server performs the Referrer header check.
     1. If it is GET, the forms server bypasses the Referrer check, unless *CSRF_CHECK_GETS* is set to true, in which case it performs the Referrer header check. *CSRF_CHECK_GETS* is specified in the *web.xml* file for your application.
 
-1. The forms server checks whether the requested URI is whitelisted:
+1. The forms server checks whether the requested URI exists in allowlist:
 
-    1. If the URI is whitelisted, the server accepts the request.
-    1. If the requested URI is not whitelisted, the server retrieves the Referrer of the request.
+    1. If the URI is allowlisted, the server accepts the request.
+    1. If the requested URI is not allowlisted, the server retrieves the Referrer of the request.
 
 1. If there is a Referrer in the request, the server checks whether it is an Allowed Referrer. If it is allowed, the server checks for a Referrer Exception:
 
@@ -669,7 +698,7 @@ The Referrer Filtering process can be described as follows:
 
 AEM Forms on JEE provides a Referrer Filter to specify Referrer that are allowed access to your server resources. By default, the Referrer filter does not filter requests that use a safe HTTP method, e.g. GET, unless *CSRF_CHECK_GETS* is set to true. If the port number for an Allowed Referrer entry is set to 0, AEM Forms on JEE will allow all requests with Referrer from that host regardless of the port number. If no port number is specified, only requests from the default port 80 (HTTP) or port 443 (HTTPS) are allowed. Referrer Filtering is disabled if all the entries in the Allowed Referrer list are deleted.
 
-When you first install Document Services, the Allowed Referrer list is updated with the address of the server on which Document Services is installed. The entries for the server include the server name, the IPv4 address, the IPv6 address if IPv6 is enabled, the loopback address, and a localhost entry. The names added to the Allowed Referrer list are returned by Host operating system. For example a server with an IP address of 10.40.54.187 will include the following entries: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. For any unqualified name retuned by Host operating system (names that do not have IPv4 address, IPv6 address or qualified domain name) white list is not updated. Modify the Allowed Referrer list to suit your business environment. Do not deploy the forms server in the production environment with the default Allowed Referrer list. After modifying any of the Allowed Referrer, Referrer Exceptions, or URIs, ensure that you restart the server for the changes to take effect.
+When you first install Document Services, the Allowed Referrer list is updated with the address of the server on which Document Services is installed. The entries for the server include the server name, the IPv4 address, the IPv6 address if IPv6 is enabled, the loopback address, and a localhost entry. The names added to the Allowed Referrer list are returned by Host operating system. For example a server with an IP address of 10.40.54.187 will include the following entries: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. For any unqualified name retuned by Host operating system (names that do not have IPv4 address, IPv6 address or qualified domain name) allowlist is not updated. Modify the Allowed Referrer list to suit your business environment. Do not deploy the forms server in the production environment with the default Allowed Referrer list. After modifying any of the Allowed Referrer, Referrer Exceptions, or URIs, ensure that you restart the server for the changes to take effect.
 
 **Managing Allowed Referrer list**
 
@@ -694,7 +723,7 @@ Use the ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** list for Allowed Referrer Exce
 
 The ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** list ID is defined as a constant in the `UMConstants` class of the `com.adobe.idp.um.api` namespace, found in `adobe-usermanager-client.jar`. You can use the AEM Forms APIs to create, modify, or edit this list. For example, to create the Global Allowed Referrer Exceptions list use:
 
-```as3
+```java
 addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arrays.asList("/index.html", "/sample/(.)*"))
 ```
 
@@ -722,7 +751,7 @@ You may have created custom WAR files to work with AEM Forms on JEE in order to 
 
 Following is an example of the filter entry in the *web.xml* file for a ***SAMPLE*** WAR file:
 
-```as3
+```java
 <filter> 
        <filter-name> filter-name </filter-name> 
        <filter-class> com.adobe.idp.um.auth.filter.RemoteCSRFFilter </filter-class> 
@@ -920,6 +949,8 @@ Referring to the physical architecture that is described in the section [AEM For
 
 For instructions on how to configure SSL on JBoss, WebLogic, and WebSphere, see “Configuring SSL” in the [administration help](https://www.adobe.com/go/learn_aemforms_admin_64).
 
+For instructions on how to import certificates to JVM (Java Virtual Machine) configured for an AEM Forms server, see Mutual Authentication section in [AEM Forms Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_65).
+
 ### Configuring SSL redirect {#configuring-ssl-redirect}
 
 After you configure your application server to support SSL, you must ensure that all HTTP traffic to applications and services are enforced to use the SSL port.
@@ -938,7 +969,7 @@ To configure SSL redirect for WebSphere or WebLogic, see your application server
 
 1. Add the following code in the https connector element:
 
-   ```
+   ```xml
    <connector name="https" protocol="HTTP/1.1" scheme="https" socket-binding="https" secure="true" enabled="true"> 
     <ssl name="jboss7_ssl" key-alias="jboss71" password="Tibco321" certificate-key-file="../standalone/configuration/server.keystore" protocol="TLSv1"/> 
     </connector>
@@ -970,7 +1001,26 @@ The AEM Forms on JEE turnkey installation sets up a service account, by default,
     * Deny log on locallyxx
     * Log on as Service (should be already set)
 
-1. Give the new user account Read & Execute, Write, Modify, List Folder Contents, and Read permissions to complete AEM Forms on JEE installation directory and Global Document Storage (GDS) directory. The location of the GDS directory is configured manually during the AEM Forms installation process. If the location setting remains empty during installation, the location defaults to a directory under the application server installation at [JBoss root]/server/[type]/svcnative/DocumentStorage.
+1. Give the new user account modify permissions on the following directories: 
+    * **Global Document Storage (GDS) directory**: The location of the GDS directory is configured manually during the AEM Forms installation process. If the location setting remains empty during installation, the location defaults to a directory under the application server installation at `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+    * **CRX-Repository directory**: The default location is `[AEM-Forms-installation-location]\crx-repository`  
+    * **AEM Forms temporary directories**:  
+        * (Windows) TMP or TEMP path as set in the environment variables
+        * (AIX, Linux, or Solaris) Logged-in user’s home directory
+        On UNIX-based systems, a non-root user can use the following directory as the temporary directory:
+        * (Linux) /var/tmp or /usr/tmp
+        * (AIX) /tmp or /usr/tmp
+        * (Solaris) /var/tmp or /usr/tmp
+1. Give the new user account write permissions on the following directories:
+    * [JBoss-directory]\standalone\deployment
+    * [JBoss-directory]\standalone\
+    * [JBoss-directory]\bin\
+    
+    >[!NOTE]
+    >
+    > The default installation location of JBoss Application Server: 
+    > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+    > * Linux: /opt/jboss/.
  
 1. Start the application server service.
 
@@ -996,7 +1046,7 @@ Access to the JBoss Management Console and JMX Console is already configured (JM
 
 After logging into Administration Console, it is possible to browse the console’s directory listing by modifying the URL. For example, if you change the URL to one of the following URLs, a directory listing may appear:
 
-```as3
+```java
 https://<servername>:8080/adminui/secured/ 
 https://<servername>:8080/um/
 ```
@@ -1009,7 +1059,7 @@ This section contains application server configuration recommendations for secur
 
 Set the index-directories properties in the weblogic.xml file to `false`, as shown by this example:
 
-```as3
+```xml
 <container-descriptor> 
     <index-directory-enabled>false 
     </index-directory-enabled> 

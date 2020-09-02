@@ -159,7 +159,7 @@ For more information about file patterns, see [About file patterns](../../forms/
 
 * **overwriteDuplicateFilename (Boolean)**: When set to True, files in the results folder and preserve folder are overwritten. When set to False, files and folders with a numeric index suffix are used for the name. The default value is False.
 * **preserveOnFailure (Boolean)**: Preserve input files in case of failure to execute the operation on a service. The default value is true.
-* **inputFilePattern (String)**: Specifies the pattern of the input files for a Watched Folder. Creates a whitelist of the files.
+* **inputFilePattern (String)**: Specifies the pattern of the input files for a Watched Folder. Creates a allowlist of the files.
 * **asynch (Boolean)**: Identifies the invocation type as asynchronous or synchronous. The default value is true (asynchronous). The file processing is a resource consuming task, keep the value of the asynch flag to true to prevent choking the main thread of the scan job. In a clustered environment, it is critical to keep the flag true to enable load-balancing for the files being processed across the available servers. If the flag is false, the scan job attempts to perform processing for each top-level file/folder sequentially within its own thread. Do not set the flag to false without a specific reason, such as, workflow-based processing on a single-server setup.
 
 >[!NOTE]
@@ -359,7 +359,7 @@ The name of the output folder is a combination of current step number, original 
 
 The ECMAScript gets a reference of the workflow context service and creates an implementation of the WorkflowContextProcessor interface. The WorkflowContextProcessor implementation accepts input files, copies the file to a temporary location, and returns a document representing the copied file. Based on the value of the Boolean variable purgePrevious, the current step deletes the output generated last time by the same step when the step was started in the current workflow instance. In the end, the wfSvc.execute method is invoked to execute the WorkflowContextProcessor implementation. The contents of the output document are saved to the result folder at the physical path mentioned in the Watched Folder configuration node.
 
-```java
+```javascript
 log.error("Watch-folder workflow script called for step: " + graniteWorkItem.getNode().getTitle());
 var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
 // Custom WorkflowContextProcessor implementation which defines the processWorkflowContext() method purely in JS
@@ -613,7 +613,7 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
 
 1. In the PDFG folder, create a file named pdfg-openOffice-sample.ecma, and add the following code to the file:
 
-   ```java
+   ```javascript
    var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
    // Custom ContentProcessor implementation which defines the processInputs() method purely in JS
    var impl = { processWorkflowContext: function (wrkfContext) {

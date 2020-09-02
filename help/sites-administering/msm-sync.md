@@ -181,7 +181,7 @@ The following table lists the synchronization actions that are installed with AE
   </tr>
   <tr>
    <td>workflow</td>
-   <td><p>Starts the workflow that is defined by the target property (for pages only) and takes the live copy as payload.</p> <p>The target path is the path of the model node, for example /etc/workflow/models/request_for_activation/jcr:content/model</p> </td>
+   <td><p>Starts the workflow that is defined by the target property (for pages only) and takes the live copy as payload.</p> <p>The target path is the path of the model node.</p> </td>
    <td>target: (String) The path to the workflow model.<br /> </td>
   </tr>
   <tr>
@@ -319,12 +319,6 @@ For example, if you want the page **Title** to be included in the changes consid
 
 `jcr:(?!(title)$).*`
 
->[!CAUTION]
->
->Prior to 5.5 SP2 the excluded page properties were configured in the system console under the **Day CQ WCM Rollout Manager**. With 5.5 SP2 and later versions the excluded page properties settings within that panel are ignored. Property exclusion on rollout is configured as described above, in **CQ MSM Content Update Action**.
->
->Therefore, if you have manually adjusted this setting in a pre-5.5 SP2 installation and are upgrading to 5.5 SP2 or later version, *you must manually transfer these settings from the old configuration panel to the new one*.
-
 ### Configuring Synchronization for Updating References {#configuring-synchronization-for-updating-references}
 
 You can configure several OSGi services that support corresponding synchronization actions related to updating references.
@@ -415,4 +409,4 @@ Configure the service using either the [Web Console](/help/sites-deploying/confi
 * In the web console, the name of the property to configure is Default rollout config.
 * Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.
 
-Set this property value to the path of the rollout configuration to use as the system default. The default value is `/etc/msm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
+Set this property value to the path of the rollout configuration to use as the system default. The default value is `/libs/msm/wcm/rolloutconfigs/default`, which is the **Standard Rollout Config**.

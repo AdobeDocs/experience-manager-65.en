@@ -18,7 +18,7 @@ To access the Communities tools console, login your author instance:
 
 * From global navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**.
 
-  ![chlimage_1-129](assets/chlimage_1-129.png)
+  ![communities](assets/communities-home.png)
 
 * [Site Templates](sites.md) - Console for site template creation and management.
 

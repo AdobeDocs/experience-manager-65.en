@@ -57,7 +57,7 @@ AEM 6.5 comes in two flavors of Uber Jar:
 1. Uber Jar - Includes only the public interfaces that are not marked for deprecation. This is the **recommended** UberJar to use as it helps future-proof the codebase from relying on Deprecated APIs.
 1. Uber Jar with Deprecated APIs - Includes all public interfaces, including those marked for deprecation in a future version of AEM.
 
-### How to I use the UberJars? {#how-to-i-use-the-uberjars}
+### How do I use the UberJars? {#how-do-i-use-the-uberjars}
 
 If you are using Apache Maven as a build system (which is the case for most AEM Java projects), you will need to add one or two elements to your *pom.xml* file. The first is a *dependency* element adding the actual dependency to your project:
 
@@ -381,10 +381,6 @@ To add to the paths, add more `<filter>` elements:
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/myproject"/>
-    <filter root="/etc/msm/rolloutconfigs/myrolloutconfig"/>
-    <filter root="/etc/blueprints/mysite/globalsite"/>
-    <filter root="/etc/workflow/models/myproject"/>
-    <filter root="/etc/designs/myproject"/>
     <filter root="/content/myproject/sample-content"/>
 </workspaceFilter>
 ```

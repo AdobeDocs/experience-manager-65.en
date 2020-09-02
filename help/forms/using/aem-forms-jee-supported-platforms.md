@@ -65,7 +65,6 @@ Adobe recommends these configurations and provides full or restricted support as
 >To help AEM Forms customers reduce the cost of ownership, simplify the deployment architecture, and modernize the development stack, Adobe Experience Manager enterprise platform is moving away from application server-based deployments in favor of standalone OSGi-based deployments. Adobe continues to support the AEM Forms JEE stack with a reduced matrix of infrastructure components.
 >
 >With the release of 6.5, infrastructure components that have the lowest usage among our customers are no longer supported, as follows:
->• Oracle WebLogic application server
 >• IBM DB2 database
 >• IBM AIX and Sun Solaris operating systems
 >
@@ -136,13 +135,18 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td><p>Repository Microkernel</p> </td>
    <td><p>Supported</p> </td>
   </tr>
+   <tr>
+   <td><p>Oracle Database 12c Release 2 (12.2.0.1.0)</p> </td>
+   <td><p>Repository Microkernel</p> </td>
+   <td><p>Supported</p> </td>
+  </tr>
   <tr>
    <td>Oracle Database 18c </td>
    <td>Repository Microkernel</td>
    <td>Supported</td>
   </tr> 
    <tr>
-   <td>Oracle Database 19c </td>
+   <td>Oracle Database 19c (Standard, Real Application Clusters (RAC) and Enterprise editions) </td>
    <td>Repository Microkernal </td>
    <td>Supported</td>
   </tr>
@@ -211,6 +215,11 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td><p><strong> Platform</strong></p> </td>
    <td><p><strong>Support Level</strong></p> </td>
    <td><p><strong>Supported Patch Definitions</strong></p> </td>
+  </tr>
+  <tr>
+   <td>Oracle WebLogic Server 12.2.1 (12c R2)</td>
+   <td>A: Supported</td>
+   <td>Service pack and critical updates</td>
   </tr>
   <tr>
    <td>IBM® WebSphere® Application Server 9.0 <sup>[1] [4]</sup><br /> </td>
@@ -360,6 +369,10 @@ In addition, consider the following points while choosing software for Adobe AEM
    <td>5.2</td>
   </tr>
   <tr>
+   <td>IBM Filenet</td>
+   <td>5.5.2</td>
+  </tr>
+  <tr>
    <td>IBM Content Manager Server</td>
    <td>8.5 Fix pack 2</td>
   </tr>
@@ -483,8 +496,7 @@ The following subsystems of AEM Forms are not [508](https://www.section508.gov/)
 For additional reuirements see:
 
 * [System requirements for a single-server AEM Forms on JEE deployment](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
-* [System requirements for a clustered AEM Forms on JEE deployment
-  ](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
+* [System requirements for a clustered AEM Forms on JEE deployment](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
 
 ## Supported Clients for AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
 

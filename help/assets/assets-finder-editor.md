@@ -20,13 +20,13 @@ This document describes the following:
 
 ## Why create and configure Asset Editor pages? {#why-create-and-configure-asset-editor-pages}
 
-Digital Asset Management is being used in more and more scenarios. When moving from a small-scale solution for a small user group of professionally trained users - for example photographers or taxonomists - to larger and more diverse user groups - for example business users, WCM authors, journalists, and so on - the powerful user interface of Adobe Experience Manager Assets for professional users can provide too much information and stakeholders start to request specific user interfaces or applications to access the digital assets that are of relevance to them.
+Digital Asset Management is being used in more and more scenarios. When moving from a small-scale solution for a small user group of professionally trained users - for example photographers or taxonomists - to larger and more diverse user groups - for example business users, WCM authors, journalists, and so on - the powerful user interface of [!DNL Adobe Experience Manager Assets] for professional users can provide too much information and stakeholders start to request specific user interfaces or applications to access the digital assets that are of relevance to them.
 
 These asset-centric applications can be simple photo galleries in an intranet where employees can upload photos from trade show visits or a press center in a public-facing website. Asset-centric applications can also extend to complete solutions including shopping carts, checkout, and verification processes.
 
-Creating an asset-centric application becomes to a large extent a configuration process that does not require coding, only knowledge of user groups and their needs as well as knowledge of the metadata being used. Asset-centric applications created with Assets are extensible: with moderate coding effort reusable components for searching, viewing, and modifying assets can be created.
+Creating an asset-centric application becomes to a large extent a configuration process that does not require coding, only knowledge of user groups and their needs as well as knowledge of the metadata being used. Asset-centric applications created with [!DNL Assets] are extensible: with moderate coding effort reusable components for searching, viewing, and modifying assets can be created.
 
-An asset-centric application in Experience Manager consists of an Asset Editor page, which can be used to get a detailed view of a specific asset. An Asset Editor page also allows for the editing of metadata, provided the user accessing the asset has the necessary permissions.
+An asset-centric application in [!DNL Experience Manager] consists of an Asset Editor page, which can be used to get a detailed view of a specific asset. An Asset Editor page also allows for the editing of metadata, provided the user accessing the asset has the necessary permissions.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -164,7 +164,7 @@ To add predicates:
 
 1. Drag the appropriate predicates to the Asset Share page underneath the query builder. Doing so creates the appropriate fields.
 
-![assetshare4](assets/assetshare4.bmp)
+![assetshare4](assets/assetshare4.png)
 
 The following predicates are available:
 
@@ -196,18 +196,18 @@ When creating the Asset Editor page, a good practice is to create the page direc
 
 To create an Asset Editor page:
 
-1. In the **Websites** tab, navigate to the place where you want to create an asset editor page and click **New**.
+1. In the **[!UICONTROL Websites]** tab, navigate to the place where you want to create an asset editor page and click **New**.
 1. Select **Geometrixx Asset Editor** and click **Create**. The new page is created and the page is listed in the **Websites** tab.
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
 The basic page created using the Geometrixx Asset Editor template looks as follows:
 
-![assetshare5](assets/assetshare5.bmp)
+![assetshare5](assets/assetshare5.png)
 
 To customize your Asset Editor page, use elements from the sidekick. The Asset Editor page that is accessed from the **Geometrixx Press Center** is a customized version of a page based on this template:
 
-![assetshare6](assets/assetshare6.bmp)
+![assetshare6](assets/assetshare6.png)
 
 #### Set an Asset Editor to open from an Asset Share page {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
@@ -283,15 +283,13 @@ See [Customizing and Extending Assets](/help/assets/extending-assets.md) for inf
 
 The following is an example of a Metadata form with various fields:
 
-![chlimage_1-162](assets/chlimage_1-390.png)
+![metadata](assets/chlimage_1-390.png)
 
 On the Asset Editor page, users can then enter values into the metadata fields (if they are editable) and perform the end action (for example, submitting the changes).
 
 #### Sub-assets {#sub-assets}
 
 The Sub Assets component is where you can view and select sub-assets. You can determine what names appear under the [main asset](/help/assets/assets.md#what-are-digital-assets) and sub-assets.
-
-![screen_shot_2012-04-23at24025pm](assets/screen_shot_2012-04-23at24025pm.png)
 
 Double-click the Sub Assets component to open the sub assets dialog where you can change the titles for the main asset and any sub assets. The default values appear below the corresponding field.
 
@@ -341,15 +339,13 @@ The following is an example of a populated Thumbnail component:
 
 The Title component displays the title of the asset and a description.
 
-![chlimage_1-163](assets/chlimage_1-391.png)
-
 By default, it is in read-only mode so users cannot edit it. To make it editable, double-click the component and clear the **Hide edit button** checkbox. In addition, enter a title for multiple assets.
 
 ![screen_shot_2012-04-23at35100pm](assets/screen_shot_2012-04-23at35100pm.png)
 
 If the Title can be edited, you can add a title and description by clicking the Pencil to open the **Asset Properties** window. In addition, you can turn the asset on and off by selecting the date and time.
 
-When users edit the Title by clicking the Pencil icon, they can change the **Title**, **Description**, and enter **On** and **Off Times** to turn the asset on and off.
+When editing the [!UICONTROL Title], users can change the **Title**, **Description**, and enter **On** and **Off Times** to turn the asset on and off.
 
 ![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
@@ -384,7 +380,7 @@ The following actions are available:
 
 ## Multi-edit assets with the Asset Editor page {#multi-editing-assets-with-the-asset-editor-page}
 
-With Experience Manager Assets you can make changes to several assets at once. After having selected assets, you can simultaneously change their:
+With [!DNL Experience Manager Assets] you can make changes to several assets at once. After having selected assets, you can simultaneously change their:
 
 * Tags
 * Meta data
@@ -408,16 +404,16 @@ To multi-edit assets with the Asset Editor page:
     * A tag that applies to all the assets is displayed with a normal font.
     * Metadata other than tags: the value of the field is only displayed if it is the same for all the selected assets.
 
-1. Click **Download** to download a zip file containing the assets original renditions.
-1. Click the pencil icon beside the **Tags** field to edit the tags:
+1. Click **Download** to download a ZIP file containing the assets original renditions.
+1. Click edit the tags option that is next to the **Tags** field.
 
     * A tag that does not apply to all the assets, but only to a few ones has a grey background.
     * A tag that applies to all the assets has a white background.
 
    You can:
 
-    * Click the **x** icon to remove the tag for all the assets.
-    * Click the **+** icon to add the tag to all the assets.
+    * Click `x` to remove the tag for all the assets.
+    * Click `+` to add the tag to all the assets.
     * Click the **arrow** and select a tag to add a new tag to all the assets.
 
    Click **OK** to write the changes to the form. The box beside the **Tags** field is automatically checked.

@@ -19,7 +19,7 @@ If you configured multiple authentication providers, you can change the order in
 1. To export the current configuration setting to a file, click Export and save the configuration file in another location.
 1. Find the following node in the file:
 
-   ```as3
+   ```xml
     <node name="AuthSchemes">
         <map />
             <node name="CertificateAuth">

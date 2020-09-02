@@ -8,7 +8,7 @@ contentOwner: AG
 
 Set up review workflows for assets within a folder or a collection and share it with reviewers or creative partners to seek feedback.
 
-Adobe Experience Manager Assets lets you set up an ad-hoc review workflow for assets within a folder or collection, and share it with reviewers or creative partners to seek feedback.
+[!DNL Adobe Experience Manager Assets] lets you set up an ad-hoc review workflow for assets within a folder or collection, and share it with reviewers or creative partners to seek feedback.
 
 You can either associate the review workflow with a project or create an independent review task.
 
@@ -18,10 +18,8 @@ After the reviewer completes the review (approves or rejects assets), you receiv
 
 ## Create a review task for folders {#creating-a-review-task-for-folders}
 
-1. From the Assets user interface, select the folder for which you want to create a review task.
-1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-403](assets/chlimage_1-403.png)
+1. From the [!DNL Assets] user interface, select the folder for which you want to create a review task.
+1. From the toolbar, click **[!UICONTROL Create Review Task]** ![create review task](assets/do-not-localize/create-review-task.png) to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Optional) From the **[!UICONTROL Project]** list, select the project to which you want to associate the review task. By default, the **[!UICONTROL None]** option is selected. If you do not want to associate any project with the review task, retain this selection.
 
@@ -44,7 +42,7 @@ After the reviewer completes the review (approves or rejects assets), you receiv
    ![review_name](assets/review_name.png)
 
 1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. A notification for the new task is sent to the approver.
-1. Log in to Assets as an Approver and navigate to the Assets UI. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
+1. Log in to [!DNL Assets] as an Approver and navigate to the [!DNL Assets] UI. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
 
    ![Assets notification](assets/aemAssetsNotification.png)
 
@@ -54,7 +52,7 @@ After the reviewer completes the review (approves or rejects assets), you receiv
    ![review_task](assets/review_task.png)
 
 1. Click **[!UICONTROL Complete]** from the toolbar. In the dialog, enter a comment and click  **[!UICONTROL Complete]** to confirm.
-1. Navigate to the Assets user interface and open the folder. The approval status icons for the assets appear in card view and list view.
+1. Navigate to the [!DNL Assets] user interface and open the folder. The approval status icons for the assets appear in card view and list view.
 
    **Card view**
 
@@ -67,9 +65,7 @@ After the reviewer completes the review (approves or rejects assets), you receiv
 ## Create a review task for collections {#creating-a-review-task-for-collections}
 
 1. From the Collections page, select the collection for which you want to create a review task.
-1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-405](assets/chlimage_1-405.png)
+1. From the toolbar, click **[!UICONTROL Create Review Task]** ![create review task](assets/do-not-localize/create-review-task.png) to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Optional) From the **[!UICONTROL Project]** list, select the project to which you want to associate the review task. By default, the **[!UICONTROL None]** option is selected. If you do not want to associate any project with the review task, retain this selection.
 
@@ -88,7 +84,7 @@ After the reviewer completes the review (approves or rejects assets), you receiv
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. A notification for the new task is sent to the approver.
-1. Log in to Assets as an Approver and navigate to the Assets console. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
+1. Log in to [!DNL Assets] as an Approver and navigate to the [!DNL Assets] console. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
 1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then click **[!UICONTROL Review]**.
 1. All the assets in the collection are visible on the review page. Select the assets and click **[!UICONTROL Approve/Reject]** to approve or reject assets, as appropriate.
 

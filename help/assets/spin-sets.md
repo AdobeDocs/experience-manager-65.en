@@ -17,7 +17,7 @@ A Spin Set simulates the real-world act of turning an object to examine it. Spin
 
 A Spin Set simulates a 360-degree viewing experience. Dynamic Media offers single-axis Spin Sets in which viewers can rotate an item. Moreover, users can “free-form” zoom and pan any of the views with a few simple mouse-clicks. In this way, users can examine an item more closely from a particular viewpoint.
 
-Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In addition, if the Spin Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
+Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET.]** In addition, if the Spin Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
 
 ![chlimage_1-](assets/chlimage_1-380.png)
 
@@ -67,7 +67,7 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
    AEM Assets creates URL calls for Spin Sets and activates them after you publish the spin sets. You can copy these URLs when you preview assets. Alternatively you can embed them on your web site.
 
-   Select the Spin Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers]**.
+   Select the Spin Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers.]**
 
    See [Linking a Spin Set to a web page](/help/assets/linking-urls-to-yourwebapplication.md) and [Embedding the Video or Image Viewer](/help/assets/embed-code.md).
 
@@ -106,7 +106,7 @@ This section describes how to create Spin Sets in AEM.
 
 **To create Spin Sets**
 
-1. In Assets, navigate to where you want to create a spin set, click **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set]**. You can also create the set from inside a folder that contains your assets. The Spin Set Editor displays.
+1. In Assets, navigate to where you want to create a spin set, click **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set.]** You can also create the set from inside a folder that contains your assets. The Spin Set Editor displays.
 
    ![6_5_spinset-createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
@@ -116,17 +116,17 @@ This section describes how to create Spin Sets in AEM.
 
    >[!NOTE]
    >
-   >When creating the spin set, you can change the spin set thumbnail or allow AEM to select the thumbnail automatically based on the assets in the spin set. To select a thumbnail, click **[!UICONTROL Change thumbnail]** and select any image (you can navigate to other folders to find images as well). If you have selected a thumbnail and then decide that you want AEM to generate one from the spin set, select **[!UICONTROL Switch to Automatic thumbnail]**.
+   >When creating the spin set, you can change the spin set thumbnail or allow AEM to select the thumbnail automatically based on the assets in the spin set. To select a thumbnail, click **[!UICONTROL Change thumbnail]** and select any image (you can navigate to other folders to find images as well). If you have selected a thumbnail and then decide that you want AEM to generate one from the spin set, select **[!UICONTROL Switch to Automatic thumbnail.]**
 
 1. Do either one of the following:
 
-    * Near the upper-left corner of the Spin Set Editor page, tap **[!UICONTROL Add Asset]**.
+    * Near the upper-left corner of the Spin Set Editor page, tap **[!UICONTROL Add Asset.]**
 
-    * Near the middle of the Spin Set Editor page, tap **[!UICONTROL Tap to open Asset Selector]**.
+    * Near the middle of the Spin Set Editor page, tap **[!UICONTROL Tap to open Asset Selector.]**
 
-   Tap to select assets that you want to include in your Spin Set. Selected assets have a checkmark icon over them. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
+   Tap to select assets that you want to include in your Spin Set. Selected assets have a checkmark icon over them. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select.]**
 
-   With the Asset Selector, you can search for assets by typing in a keyword and tapping **[!UICONTROL Return**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then tap the **[!UICONTROL Filter]** icon on the toolbar. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
+   With the Asset Selector, you can search for assets by typing in a keyword and tapping **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then tap the **[!UICONTROL Filter]** icon on the toolbar. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View.]**
 
    See [Working with Selectors](/help/assets/working-with-selectors.md).
 
@@ -142,11 +142,11 @@ This section describes how to create Spin Sets in AEM.
 
 1. (Optional) Do any of the following:
 
-    * To delete an image, select the image and tap **[!UICONTROL Delete Asset]**.
+    * To delete an image, select the image and tap **[!UICONTROL Delete Asset.]**
 
     * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a preset to apply to all the assets at once.
 
-1. Click **[!UICONTROL Save]**. Your newly created Spin Set appears in the folder you created it in.
+1. Click **[!UICONTROL Save.]** Your newly created Spin Set appears in the folder you created it in.
 
 ## Viewing Spin Sets {#viewing-spin-sets}
 
@@ -166,7 +166,7 @@ You can create spin sets either in the user interface or automatically using [ba
 
    ![chlimage_1-157](assets/chlimage_1-385.png)
 
-1. From search, you can Select **[!UICONTROL Filters]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets]**.
+1. From search, you can Select **[!UICONTROL Filters]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets.]**
 
    The search returns matching sets that were manually created in the UI or automatically created through batch set presets. For automated sets, the search query is conducted using `Starts with` search criteria which is different from AEM search which is based on using `Contains` search criteria. Setting the filter to **[!UICONTROL Sets]** is the only way to search automated sets.
 
@@ -195,9 +195,9 @@ You can perform a variety of editing tasks on Spin Sets such as the following:
 
     * To reorder images, drag an image to a new location (select the reorder icon to move items).
     * To sort items in ascending or descending order, click the column heading.
-    * To add an asset or update an existing asset, click **[!UICONTROL Add Asset]**. Navigate to an asset, select it, then tap **[!UICONTROL Select]** near the upper-right corner.
+    * To add an asset or update an existing asset, click **[!UICONTROL Add Asset.]** Navigate to an asset, select it, then tap **[!UICONTROL Select]** near the upper-right corner.
     If you delete the image that AEM uses for the thumbnail by replacing it with another image, the original asset still displays.
-    * To delete an asset, select it and click or tap **[!UICONTROL Delete Asset]**.
+    * To delete an asset, select it and click or tap **[!UICONTROL Delete Asset.]**
     * To apply a preset, tap or click the Preset icon and select a preset.
     * To delete an entire Spin Set, navigate to the Spin Set, select it, and select **[!UICONTROL Delete]**
     >[!NOTE]

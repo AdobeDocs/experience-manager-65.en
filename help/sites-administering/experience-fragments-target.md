@@ -25,8 +25,11 @@ docset: aem65
 >6.5.2.0:
 >
 >* Experience Fragments can be exported to either:
+>
 >   * the default workspace.
 >   * a named workspace, specified in the Cloud Configuration.
+>   * **Note:** Exporting to specific workspaces requires Adobe Target Premium.
+>
 >* AEM must be [integrated with Adobe Target using Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
 >
 >AEM 6.5.0.0 and 6.5.1.0:
@@ -100,7 +103,7 @@ The required options can be selected in **Page Properties** of the required fold
 
 1. Under **Cloud Service Configuration**, select **Adobe Target** from the drop-down list.
 
-1. >[!NOTE]
+   >[!NOTE]
    >
    >The JSON format of an Experience Fragment offer can be customized. To do this define a customer Experience Fragment component and then annotate how to export its properties in the component Sling Model.
    >

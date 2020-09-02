@@ -10,7 +10,7 @@ When migrating assets into [!DNL Adobe Experience Manager], there are several st
 
 ## Prerequisites {#prerequisites}
 
-Before actually performing any of the steps in this methodology, please review and implement the guidance in [Assets performance tuning tips](performance-tuning-guidelines.md). Many of the steps, such as configuring maximum concurrent jobs, greatly enhance the server’s stability and performance under load. Other steps, such as configuring a File Data Store, are much more difficult to perform after the system has been loaded with assets.
+Before actually performing any of the steps in this methodology, review and implement the guidance in [Assets performance tuning tips](performance-tuning-guidelines.md). Many of the steps, such as configuring maximum concurrent jobs, greatly enhance the server’s stability and performance under load. Other steps, such as configuring a File Data Store, are much more difficult to perform after the system has been loaded with assets.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ There are two approaches to loading the assets into the system: a push-based app
 
 #### Send through HTTP {#pushing-through-http}
 
-Adobe’s Managed Services team uses a tool called Glutton to load data into customer environments. Glutton is a small Java application that loads all assets from one directory into another directory on an [!DNL Experience Manager] instance. Instead of Glutton, you could also use tools such as Perl scripts to post the assets into the repository.
+Adobe’s Managed Services team uses a tool called Glutton to load data into customer environments. Glutton is a small Java application that loads all assets from one directory into another directory on an [!DNL Experience Manager] deployment. Instead of Glutton, you could also use tools such as Perl scripts to post the assets into the repository.
 
 There are two main downsides to using the approach of pushing through https:
 
@@ -109,15 +109,15 @@ Once we have completed migration, the launchers for the [!UICONTROL DAM Update A
 
 ## Migrate across [!DNL Experience Manager] deployments {#migrating-between-aem-instances}
 
-While not nearly as common, sometimes you need to migrate large amounts of data from one [!DNL Experience Manager] instance to another; for example, when you perform an [!DNL Experience Manager] upgrade, upgrade your hardware, or migrate to a new datacenter, such as with an AMS migration.
+While not nearly as common, sometimes you need to migrate large amounts of data from one [!DNL Experience Manager] deployment to another; for example, when you perform an [!DNL Experience Manager] upgrade, upgrade your hardware, or migrate to a new datacenter, such as with an AMS migration.
 
-In this case, your assets are already populated with metadata and renditions are already generated. You can simply focus on moving assets from one instance to another. When migrating between [!DNL Experience Manager] instances, you perform the following steps:
+In this case, your assets are already populated with metadata and renditions are already generated. You can simply focus on moving assets from one instance to another. When migrating between [!DNL Experience Manager] deployment, you perform the following steps:
 
 1. Disable workflows: Because you are migrating renditions along with our assets, you want to disable the workflow launchers for [!UICONTROL DAM Update Asset] workflow.
 
-1. Migrate tags: Because you already have tags loaded in the source [!DNL Experience Manager] instance, you can build them in a content package and install the package on the target instance.
+1. Migrate tags: Because you already have tags loaded in the source [!DNL Experience Manager] deployment, you can build them in a content package and install the package on the target instance.
 
-1. Migrate assets: There are two tools that are recommended for moving assets from one [!DNL Experience Manager] instance to another:
+1. Migrate assets: There are two tools that are recommended for moving assets from one [!DNL Experience Manager] deployment to another:
 
     * **Vault Remote Copy** or vlt rcp, allows you to use vlt across a network. You can specify a source and destination directory and vlt downloads all repository data from one instance and loads it into the other. Vlt rcp is documented at [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
     * **Grabbit** is an open-source content synchronization tool that was developed by Time Warner Cable for their [!DNL Experience Manager] implementation. Because it uses continuous data streams, in comparison to vlt rcp, it has a lower latency and claims a speed improvement of two to ten times faster than vlt rcp. Grabbit also supports synchronization of delta content only, which allows it to sync changes after an initial migration pass has been completed.

@@ -4,6 +4,7 @@ product: adobe experience manager
 sub-product: forms
 audience: end-user
 user-guide-title: AEM 6.5 Forms User Guide
+user-guide-description: Create, manage, publish, and update digital forms.
 ---
 # AEM 6.5 - Forms User Guide {#forms}
 
@@ -33,12 +34,9 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Tutorial: Create document fragments](using/create-document-fragments.md)
     + [Tutorial: Create templates](using/create-templates-print-web.md)
     + [Tutorial: Create Interactive Communication](using/create-interactive-communication0.md)
-  + AEM Forms Reference Collaterals {#aem-forms-reference-collaterals}
-    + [Set up and configure We.Finance and Employee self-service reference sites](using/setup-reference-sites.md)
-    + [Set up and configure We.Gov reference site](/help/forms/using/forms-install-configure-gov-reference-site.md)
-    + [We.Finance reference site walkthrough](using/finance-reference-site-walkthrough.md)
-    + [We.Gov reference site walkthrough](/help/forms/using/forms-gov-reference-site-user-demo.md)
-    + [Employee self-service reference site walkthrough](/help/forms/using/employee-self-service-reference-site.md)
+  + AEM Forms Reference Collaterals {#aem-forms-reference-collaterals}  
+    + [Set up and configure We.Gov and We.Finance reference site](/help/forms/using/forms-install-configure-gov-reference-site.md)  
+    + [We.Gov and We.Finance reference site walkthrough](/help/forms/using/forms-gov-reference-site-user-demo.md)  
     + [Employee recruitment reference site walkthrough](/help/forms/using/employee-recruitment-reference-site.md)
     + [We.Finance Auto Insurance Renewal reference site](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
     + [We.Gov reference site FOIA walkthrough](/help/forms/using/gov-reference-site-foia-walkthrough.md)
@@ -58,16 +56,18 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Install and configure Automated Forms Conversion service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
   + Install AEM Forms on JEE {#jee-installation}
     + [Supported platforms for AEM forms on JEE](using/aem-forms-jee-supported-platforms.md)
-    + [Install and deploy AEM Forms on JEE using JBoss turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
+    + [Install and deploy AEM Forms on JEE using JBoss turnkey](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
     + [Installing and configuring AEM Forms Document Security server](using/installing-and-configuring-the-document-security-server.md)
     + [Prepare to install AEM Forms single server](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
     + [Install and deploying AEM Forms on JEE for JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
     + [Install and deploying AEM Forms on JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+    + [Install and deploying AEM Forms on JEE for WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_65)
     + [Install AEM Forms Workbench](using/install-workbench.md)
     + [Install and configure Designer](using/installing-configuring-designer.md)
     + [Prepare to install AEM Forms server cluster](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
     + [Configure AEM Forms on JEE on JBoss cluster](http://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
     + [Configure AEM Forms on JEE on WebSphere cluster](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
+    + [Configure AEM Forms on JEE on WebLogic cluster](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
   + Configure AEM Forms {#configure-aem-forms}
     + [Performance tuning of AEM Forms server](using/performance-tuning-aem-forms.md)
     + [Configure adaptive forms cache](using/configure-adaptive-forms-cache.md)
@@ -90,6 +90,7 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Upgrading from an AEM Forms release to AEM 6.5 Forms on JEE for JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
     + [Upgrading from an AEM Forms release to AEM 6.5 Forms on JEE for JBoss turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
     + [Upgrading from an AEM Forms release to AEM 6.5 Forms on JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
+    + [Upgrading from an AEM Forms release to AEM 6.5 Forms on JEE for WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
 + Manage AEM Forms {#manage-administer-aem-forms}
   + [AEM Forms on OSGi Groups and Privileges](using/forms-groups-privileges-tasks.md)
   + [Create new folders to categorize forms](using/creating-new-folders-categorize-forms.md)
@@ -493,7 +494,6 @@ user-guide-title: AEM 6.5 Forms User Guide
     + [Configuring validation messages](/help/forms/using/admin-help/configuring-validation-messages.md)
   + Configuring Output {#configure-output}
     + [Overview of output service](/help/forms/using/admin-help/overview-8.md)
-    + [Change the character set](/help/forms/using/admin-help/change-character-set.md)
     + [Specify XCI configuration options](/help/forms/using/admin-help/specify-xci-configuration-options.md)
     + [Configuring caching for Output](/help/forms/using/admin-help/configuring-caching-output.md)
     + [Specify file locations for Output](/help/forms/using/admin-help/specify-file-locations-output.md)
@@ -572,6 +572,7 @@ user-guide-title: AEM 6.5 Forms User Guide
   + [AEM Forms Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
   + [AEM Forms on JEE Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
   + [Form Bridge APIs for HTML5 forms](using/form-bridge-apis.md)
+  + [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
   + [Assembler Service and DDX Reference](http://www.adobe.com/go/learn_aemforms_ddxRef_65)
   + [Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_65)
   + Programming with AEM Forms on JEE {#programming-aem-forms-jee}
@@ -580,6 +581,8 @@ user-guide-title: AEM 6.5 Forms User Guide
       + [Invoking AEM Forms using APIs](developing/invoking-aem-forms-using-apis.md)
       + [Understanding AEM Forms Processes](developing/aem-forms-processes.md)
       + [Service container](developing/service-container.md)
+    + Developing SPIs for AEM Forms {#developing-spis-aem-forms}
+      + [Creating an Invite External Users Handler](developing/creating-invite-external-users-handler.md)
     + Java API Quick Start - Code Examples {#java-api-quick-start-code-examples}
       + [Application Manager Client JavaAPI Quick Start(SOAP)](developing/application-manager-client-java-api.md)
       + [Application Manager Service JavaAPI Quick Start(SOAP)](developing/application-manager-service-java-api.md)

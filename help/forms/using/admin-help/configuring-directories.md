@@ -236,7 +236,7 @@ Creating a VLV requires a pair of entries that include the `vlvSearch` and `vlvI
 
 Here is a sample script LDIF for VLV entry for users:
 
-```as3
+```text
  dn: cn=lcuser,cn=userRoot,cn=ldbm database,cn=plugins,cn=config
  objectclass: top
  objectclass: vlvSearch
@@ -290,7 +290,7 @@ After configuring the directory settings and creating the LDAP VLV entries for u
 
    The following output is generated:
 
-   ```as3
+   ```shell
     D:\tools\ldap\sun\shared\bin>..\..\slapd-chetanmeh-xp3\vlvindex.bat -n userRoot -T livecycle
     [21/Nov/2007:16:47:26 +051800] - userRoot: Indexing VLV: livecycle
     [21/Nov/2007:16:47:27 +051800] - userRoot: Indexed 1000 entries (5%).
@@ -309,7 +309,7 @@ After configuring the directory settings and creating the LDAP VLV entries for u
 
    Output such as the following sample data is generated:
 
-   ```as3
+   ```shell
     D:\tools\ldap\sun\shared\bin>ldapsearch.exe -h localhost -p 55850 -s base -b "" objectclass=*
     ldapsearch.exe: started Tue Nov 27 16:34:20 2007
     version: 1

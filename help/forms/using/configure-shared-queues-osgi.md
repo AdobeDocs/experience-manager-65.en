@@ -36,7 +36,7 @@ Perform the following steps to share all the items in an inbox with another user
 
 >[!NOTE]
 >
-> (For Forms-centric workflow items only) Enable the **[Allow assignee to share via Inbox sharing](aem-forms-workflow-step-reference.md)** option of the **Assign task** step in the workflow. Only items which have the aforementioned option enabled are displayed to other users.
+>(For Forms-centric workflow items only) Enable the **[Allow assignee to share via Inbox sharing](aem-forms-workflow-step-reference.md)** option of the **Assign task** step in the workflow. Only items which have the aforementioned option enabled are displayed to other users.
 
 ### Share individual items
 
@@ -50,7 +50,7 @@ Perform the following steps to share an Inbox item with another user:
 
 >[!NOTE]
 >
-> (For Forms-centric workflow items only) Enable the **[Allow assignee to share explicitly in Inbox](aem-forms-workflow-step-reference.md)** option of the **Assign task** step in the workflow. Only items which have the aforementioned option enabled are displayed to other users.
+>(For Forms-centric workflow items only) Enable the **[Allow assignee to share explicitly in Inbox](aem-forms-workflow-step-reference.md)** option of the **Assign task** step in the workflow. Only items which have the aforementioned option enabled are displayed to other users.
 
 ## Request access to Inbox items {#request-access}
 
@@ -68,7 +68,7 @@ You can start working on a shared item only after you claim it. It prevents mult
 
 1. Log in to your AEM instance. Tap the Inbox ![Inbox](assets/bell.svg) icon and tap **[!UICONTROL View All]**.
 1. Tap the ![Content only](assets/railleft.svg) icon to open the filter selector.
-1. Tap the **[!UICONTROLSelect Assignee]** drop-down to view and select users who have shared their Inbox items with you.
+1. Tap the **[!UICONTROL Select Assignee]** drop-down to view and select users who have shared their Inbox items with you.
 1. Select an item and tap **[!UICONTROL Claim]**. The item is added to your Inbox.
 
 ## Release claimed items {#release-items}

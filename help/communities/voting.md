@@ -23,17 +23,17 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the [required client-side libraries](essentials-voting.md#essentials-for-client-side) are included, this is how the `Voting` component will appear.
 
-![chlimage_1-307](assets/chlimage_1-307.png)
+![voting-component](assets/voting-component.png)
 
 ## Configuring Voting {#configuring-voting}
 
 Select the placed `Voting` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-308](assets/chlimage_1-308.png)
+![configure](assets/configure-new.png)
 
 Under the **[!UICONTROL Texts & Labels]** tab, specify the properties used to record votes.
 
-![chlimage_1-309](assets/chlimage_1-309.png)
+![voting-label](assets/voting-label.png)
 
 * **[!UICONTROL Positive Response Label]**
   

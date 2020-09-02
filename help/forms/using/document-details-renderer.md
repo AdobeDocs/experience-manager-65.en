@@ -41,7 +41,7 @@ This method is the standard way of communication between a parent frame and an i
 
 Communicates using `pdfObject.postMessage` / `pdfObject.messageHandler`
 
-This method is the standard way of communication with a PDF javascript from an HTML. PdfTaskForm view also takes care of flat PDF and renders it plainly.
+This method is the standard way of communication with a PDFJavaScript from an HTML. PdfTaskForm view also takes care of flat PDF and renders it plainly.
 
 >[!NOTE]
 >
@@ -51,9 +51,9 @@ This method is the standard way of communication with a PDF javascript from an H
 
 New HTML forms are rendered by NewHTMLTaskForm View.
 
-When an XDP Form is rendered as HTML using the mobile forms package deployed on CRX, it also adds additional `FormBridge` javascript to the form, which exposes different methods for saving and submitting form data.
+When an XDP Form is rendered as HTML using the mobile forms package deployed on CRX, it also adds additional `FormBridge`JavaScript to the form, which exposes different methods for saving and submitting form data.
 
-This javascript is different from the one referred in PDF Forms above, but serves a similar purpose.
+ThisJavaScript is different from the one referred in PDF Forms above, but serves a similar purpose.
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ AEM Forms workspace listens on `window.global.postMessage([Message],[Payload])`
 
 **AEM Forms workspace to third-party application communication**
 
-If AEM Forms workspace's direct action buttons are visible, it calls `window.[External-App-Name].getMessage([Action])`, where [ `Action]` is read from the `routeActionMap`. The third-party application must listen on this interface, and then notify AEM Forms workspace via the `postMessage ()` API.
+If AEM Forms workspace's direct action buttons are visible, it calls `window.[External-App-Name].getMessage([Action])`, where `[Action]` is read from the `routeActionMap`. The third-party application must listen on this interface, and then notify AEM Forms workspace via the `postMessage ()` API.
 
 For example, a Flex application can define `ExternalInterface.addCallback('getMessage', listener)` to support this communication. If the third-party application wants to handle form submission via its own buttons, then you should specify `hideDirectActions = true() in the runtimeMap` and you may skip this listener. Hence, this construct is optional.
 

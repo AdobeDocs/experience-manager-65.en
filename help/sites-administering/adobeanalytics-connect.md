@@ -41,9 +41,9 @@ The Adobe Analytics account needs to:
 
 Before proceeding, ensure your credentials allow you to log in to Adobe Analytics. Via either:
 
-* [https://marketing.adobe.com](https://marketing.adobe.com)
+* [Adobe Experience Cloud Sign In](https://login.experiencecloud.adobe.com/exc-content/login.html)
 
-* [https://sc.omniture.com/login/](https://sc.omniture.com/login/)
+* [Adobe Analytics Sign In](https://sc.omniture.com/login/)
 
 ### Configuring AEM to Use Your Adobe Analytics Data Centers {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
@@ -179,7 +179,7 @@ Descendents of the page inherit the association with the framework. For example,
 1. Select **Save & Close**.
 1. **[Publish](/help/sites-authoring/publishing-pages.md)** the page to activate the page and any connected configurations/files.
 1. The final step is to visit the page on the publish instance and search for a keyword (e.g. aubergine) using the **Search** component.
-1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Marketing Cloud Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger_install.html).
+1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
 1. Using the example provided, the call should contain the value entered (i.e. aubergine) in eVar7 and the events list should contain event3.
 
 ### Page Views {#page-views}

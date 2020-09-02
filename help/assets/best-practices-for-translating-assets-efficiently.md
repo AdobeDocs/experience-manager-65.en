@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Best practices to translate assets {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager Assets supports multilingual workflows to translate binaries, metadata, and tags for digital assets into multiple locales and to manage the translated assets. For details, see [Multilingual Assets](multilingual-assets.md).
+[!DNL Adobe Experience Manager Assets] supports multilingual workflows to translate binaries, metadata, and tags for digital assets into multiple locales and to manage the translated assets. For details, see [Multilingual Assets](multilingual-assets.md).
 
 For efficient management of assets to ensure that different translated versions stay synchronized, create [language copies](preparing-assets-for-translation.md) of assets before running translation workflows.
 
@@ -25,6 +25,7 @@ You can also make a few configuration changes to a couple of workflows and the t
     * [Set up File Data Store](/help/sites-deploying/data-store-config.md)
     * [Set up Amazon S3 Data Store](/help/sites-deploying/data-store-config.md)
 
+<!--
 1. Disable the [DAM MetaData Write-back](/help/sites-administering/workflow-offloader.md#disable-offloading) workflow.
 
    As the name suggests, the [!UICONTROL DAM Metadata Writeback] workflow rewrites the metadata to the binary file. Because the metadata changes after translation, writing it back to the binary file generates a different binary for a language copy.
@@ -32,10 +33,11 @@ You can also make a few configuration changes to a couple of workflows and the t
    >[!NOTE]
    >
    >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
+-->
 
 1. Enable the [!UICONTROL Set last modified date] workflow.
 
-   The [!UICONTROL DAM MetaData Writeback] workflow configures the last modified date for an asset. Because you disable this workflow in step 2, Assets is no longer able to keep the last modified date of assets up-to-date. Therefore, enable the *Set last modified date* workflow to ensure that last modified dates of assets are up-to-date. Assets with outdated last modified dates can cause errors.
+   The [!UICONTROL DAM MetaData Writeback] workflow configures the last modified date for an asset. Because you disable this workflow in step 2, [!DNL Assets] is no longer able to keep the last modified date of assets up-to-date. Therefore, enable the *Set last modified date* workflow to ensure that last modified dates of assets are up-to-date. Assets with outdated last modified dates can cause errors.
 
-1. [Configure the translation integration framework](/help/sites-administering/tc-tic.md) to stop translating asset binaries. Unselect the **[!UICONTROL Translate Assets]** option under the Assets tab to stop the translation of Asset binaries.
+1. [Configure the translation integration framework](/help/sites-administering/tc-tic.md) to stop translating asset binaries. Unselect the **[!UICONTROL Translate Assets]** option under the [!UICONTROL Assets] tab to stop the translation of Asset binaries.
 1. Translate asset metadata/tags using [Multilingual asset workflows](multilingual-assets.md).

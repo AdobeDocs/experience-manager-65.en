@@ -33,8 +33,7 @@ The goal of this introduction and walkthrough is to demonstrate to an AEM develo
 
 The walkthrough is based on standard AEM functionality and the sample We.Retail Journal app. The following requirements must be met:
 
-* [AEM version 6.4 with service pack 2 or newer
-  ](/help/release-notes/sp-release-notes.md)
+* [AEM version 6.4 with service pack 2 or newer](/help/release-notes/sp-release-notes.md)
 * [Install the sample We.Retail Journal app available on GitHub here.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 
 >[!CAUTION]
@@ -220,7 +219,7 @@ The next section, [Loading an SPA Application](/help/sites-developing/spa-walkth
 
    ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
 
-   The AEM SPA Editor leverages [AEM Content Services](/help/assets/content-fragments.md) to deliver the entire content of the page as a JSON model.
+   The AEM SPA Editor leverages [AEM Content Services](/help/assets/content-fragments/content-fragments.md) to deliver the entire content of the page as a JSON model.
 
    By implementing specific interfaces, Sling Models provide the information necessary to the SPA. The delivery of the JSON data is delegated downward to each component (from page, to paragraph, to component, etc.).
 

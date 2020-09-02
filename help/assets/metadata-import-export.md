@@ -73,6 +73,7 @@ A few use cases for exporting metadata in bulk are:
 * The CSV file for importing assets metadata is in a very specific format. To save effort and time and to avoid unintended errors, you can start creating the CSV using the format of an exported CSV file.
 * When importing metadata using a CSV file, the required date date format is `YYYY-MM-DDThh:mm:ss.fff-00:00`. If any other format is used, then the date values are not set. The date formats of exported metadata CSV file is in the format `YYYY-MM-DDThh:mm:ss-00:00`. If you want to import it, convert it to the acceptable format by adding the nanoseconds value denoted by `fff`.
 * To import metadata on custom namespaces, first register the namespaces.
+* Property Picker displays properties that are used in schema editors and search forms. Property Picker does not pick metadata properties from an asset.
 
 >[!MORELIKETHIS]
 >

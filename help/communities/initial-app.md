@@ -26,16 +26,16 @@ In this exercise, all pages are based on one simple template.
 
 1. In the explorer pane of CRXDE Lite:
 
-    * Select `/apps/an-scf-sandbox/templates`
-    * **[!UICONTROL Create]** > **[!UICONTROL Create Template]**
+   * Select `/apps/an-scf-sandbox/templates`
+   * **[!UICONTROL Create]** > **[!UICONTROL Create Template]**
 
 1. In the Create Template dialog, type the following values and then click **[!UICONTROL Next]**:
 
-    * Label: `playpage`
-    * Title: `An SCF Sandbox Play Template`
-    * Description: `An SCF Sandbox template for play pages`
-    * Resource Type: `an-scf-sandbox/components/playpage`
-    * Ranking: &lt;leave as default>
+   * Label: `playpage`
+   * Title: `An SCF Sandbox Play Template`
+   * Description: `An SCF Sandbox template for play pages`
+   * Resource Type: `an-scf-sandbox/components/playpage`
+   * Ranking: &lt;leave as default>
 
    The Label is used for the node name.
 
@@ -43,7 +43,7 @@ In this exercise, all pages are based on one simple template.
 
    In this case, all pages created using the `playpage` template are rendered by the `an-scf-sandbox/components/playpage` component. By convention, the path to the component is relative, allowing Sling to search for the resource first in the `/apps` folder and, if not found, in the `/libs` folder.
 
-   ![chlimage_1-75](assets/chlimage_1-75.png)
+   ![create-content-template](assets/create-content-template-1.png)
 
 1. If using copy/paste, ensure the Resource Type value has no leading or trailing spaces.
 
@@ -53,7 +53,7 @@ In this exercise, all pages are based on one simple template.
 
    To add a path, click the plus button `+` and type `/content(/.&ast;)?` in the text box that appears. If using copy/paste, ensure there are no leading or trailing spaces.
 
-   Note: The value of the allowed path property is a *regular expression.* Content pages that have a path that matches the expression can use the template. In this case, the regular expression matches the path of the **/content** folder and all its subpages.
+   Note: The value of the allowed path property is a *regular expression*. Content pages that have a path that matches the expression can use the template. In this case, the regular expression matches the path of the **/content** folder and all its subpages.
 
    When an author creates a page below `/content`, the `playpage` template titled "An SCF Sandbox Page Template" appears in a list of available templates to use.
 
@@ -61,7 +61,7 @@ In this exercise, all pages are based on one simple template.
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
-   ![chlimage_1-76](assets/chlimage_1-76.png)
+   ![configure-template-path](assets/configure-template-path.png)
 
 1. Click **[!UICONTROL Next]**.
 
@@ -75,7 +75,7 @@ In this exercise, all pages are based on one simple template.
 
    Click **[!UICONTROL Save All]** to save the new template to the repository.
 
-   ![chlimage_1-77](assets/chlimage_1-77.png)
+   ![verify-content-template](assets/verify-content-template.png)
 
 ### Create the Template's Rendering Component {#create-the-template-s-rendering-component}
 
@@ -90,18 +90,18 @@ Create the *component* that defines the content and renders any pages created ba
 
    In the **[!UICONTROL Create Component]** dialog, type the following property values:
 
-    * Label: **playpage**
-    * Title: **An SCF Sandbox Play Component**
-    * Description: **This is the component which renders content for An SCF Sandbox page.**
-    * Super Type: *&lt;leave blank&gt;*
-    * Group:
+   * Label: **playpage**
+   * Title: **An SCF Sandbox Play Component**
+   * Description: **This is the component which renders content for An SCF Sandbox page.**
+   * Super Type: *&lt;leave blank&gt;*
+   * Group: *&lt;leave blank&gt;*
 
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   ![create-template-component](assets/create-template-component.png)
 
 1. Click **[!UICONTROL Next]** until the **[!UICONTROL Allowed Children]** panel of the dialog appears:
 
-    * Click **[!UICONTROL OK]**
-    * Click **[!UICONTROL Save All]**
+   * Click **[!UICONTROL OK]**.
+   * Click **[!UICONTROL Save All]**.
 
 1. Verify that the path to the component and the resourceType for the template match.
 
@@ -110,4 +110,4 @@ Create the *component* that defines the content and renders any pages created ba
     >The correspondence between the path to the playpage component and the sling:resourceType property of the playpage template is crucial to the correct functioning of the website.
     >
 
-   ![chlimage_1-79](assets/chlimage_1-79.png)
+   ![verify-template-component](assets/verify-template-component.png)

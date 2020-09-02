@@ -23,7 +23,7 @@ The Inbox user interface provides list and calendar views to view tasks. You can
 
 In summary, Inbox allows you to create a new application and manage assigned tasks.
 
->[!NOTE] {graybox="true"}
+>[!NOTE]
 >
 >You must be a member of the workflow-users group to be able to use AEM Inbox.
 

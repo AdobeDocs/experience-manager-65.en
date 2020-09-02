@@ -12,7 +12,7 @@ discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 
 # Forms Portal | Handling user data {#forms-portal-handling-user-data}
 
-AEM Forms portal provides components that you can use to list adaptive forms, HTML5 forms, and other Forms assets on AEM Sites page. In addition, you can configure it to display drafts and submitted adaptive forms and HTML5 forms for a logged-in user. For more information about forms portal, see [Introduction to publishing forms on a portal](/help/forms/using/introduction-publishing-forms.md).
+[!DNL AEM Forms] portal provides components that you can use to list adaptive forms, HTML5 forms, and other Forms assets on [!DNL AEM Sites] page. In addition, you can configure it to display drafts and submitted adaptive forms and HTML5 forms for a logged-in user. For more information about forms portal, see [Introduction to publishing forms on a portal](/help/forms/using/introduction-publishing-forms.md).
 
 When a logged-in user saves an adaptive form as draft or submits it, they are displayed in the Drafts and Submissions tabs on forms portal. The data for drafts or submitted forms is stored in the data store configured for AEM deployment. The drafts and submissions of anonymous users are not displayed on forms portal page; however, the data is stored in the configured data store. For more information, see [Configuring storage services for drafts and submissions](/help/forms/using/configuring-draft-submission-storage.md).
 
@@ -21,7 +21,7 @@ When a logged-in user saves an adaptive form as draft or submits it, they are di
 Forms portal stores data for draft and submitted forms in following scenarios:
 
 * The submit action configured in the adaptive form is **Forms Portal Submit Action**.
-* For submit actions other than **Forms Portal Submit Action**, the **[!UICONTROL Store data in forms portal]** option is enabled in the **Submission** properties of the adaptive form container.
+* For submit actions other than **Forms Portal Submit Action**, the **[!UICONTROL Store data in forms portal]** option is enabled in the **[!UICONTROL Submission]** properties of the adaptive form container.
 
 For every draft and submitted form for logged-in and anonymous users, forms portal stores the following data:
 
@@ -90,7 +90,7 @@ The following table explains how the data for all drafts by `srose` is stored in
 
 To delete user data from drafts and submissions for a logged-in user from AEM systems completely, you must delete the `user ID` node for a specific user from the author node. You must manually delete data from all applicable AEM instances.
 
-Drafts and submission data for all anonymous users is stored within the common `drafts` and `submit` nodes under `/content/forms/fp/anonymous`. There is no method to find data for a particular anonymous user unless some identifiable information is known.In this case, you can search for the information that identifies the anonymous user in AEM repository and manually delete the node containing it from all applicable AEM instances to remove data from the AEM system. However, to delete data for all anonymous users, you can delete the `anonymous` node to remove drafts and submissions data for all anonymous users.
+Drafts and submission data for all anonymous users is stored within the common `drafts` and `submit` nodes under `/content/forms/fp/anonymous`. There is no method to find data for a particular anonymous user unless some identifiable information is known. In this case, you can search for the information that identifies the anonymous user in AEM repository and manually delete the node containing it from all applicable AEM instances to remove data from the AEM system. However, to delete data for all anonymous users, you can delete the `anonymous` node to remove drafts and submissions data for all anonymous users.
 
 ### Database {#database}
 

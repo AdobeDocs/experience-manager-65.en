@@ -33,17 +33,17 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the required client-side library, `cq.social.hbs.search`, is included, this is how the `Search` component will appear.
 
-![chlimage_1-373](assets/chlimage_1-373.png)
+![add-search](assets/add-search.png)
 
 ### Configure the Added Search {#configure-the-added-search}
 
 Select the placed `Search` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-374](assets/chlimage_1-374.png)
+![confgirue](assets/configure-new.png)
 
 Under the **[!UICONTROL Search Settings]** tab, specify how what paths are are search when a query is entered by a visitor.
 
-![chlimage_1-375](assets/chlimage_1-375.png)
+![search-settings](assets/search-settings.png)
 
 * **[!UICONTROL Search Paths]**
   By adding search paths using the Add Item button, the content search is limited. As an example, to limit the search to a specific forum, select a forum component placed within a page:
@@ -69,17 +69,17 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the required client-side library, `cq.social.hbs.search`, is included, this is how the `Search Result` component will appear:
 
-![chlimage_1-376](assets/chlimage_1-376.png)
+![search-result](assets/search-result1.png)
 
 ### Configure the Added Search Result {#configure-the-added-search-result}
 
 Select the placed `Search Results` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-377](assets/chlimage_1-377.png)
+![configure](assets/configure-new.png)
 
 Under the **[!UICONTROL Search Result Settings]** tab, it is possible to specify what paths are included in the search when a query is entered by a visitor.
 
-![chlimage_1-378](assets/chlimage_1-378.png)
+![search-result-settings](assets/search-result-settings.png)
 
 * **[!UICONTROL Search Results Per Page]**
   

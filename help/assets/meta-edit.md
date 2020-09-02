@@ -6,9 +6,9 @@ contentOwner: AG
 
 # How to edit or add metadata {#how-to-edit-or-add-metadata}
 
-Metadata is additional information about the asset that can be searched. It is automatically extracted when you upload an image. You can edit the existing metadata or add new metadata properties to existing fields (for example, when a metadata field is blank).
+Metadata is additional information about the asset that can be searched. It is automatically extracted when you upload an image. You can edit the existing metadata or add new metadata properties to existing field, for example, when a metadata field is blank.
 
-Because organizations need controlled and reliable metadata vocabularies, [!DNL Experience Manager Assets] does not allow for on demand adding of new metadata properties. Although authors cannot add new metadata fields for assets, developers can. See [create metadata property for assets](meta-edit.md#editing-metadata-schema).
+Organizations need controlled and reliable metadata vocabularies. Hence [!DNL Experience Manager Assets] does not allow for on-demand adding of new metadata properties. Developers and not authors can add new metadata fields for assets. See [create metadata property for assets](meta-edit.md#editing-metadata-schema).
 
 ## Edit metadata for an asset {#editing-metadata-for-an-asset}
 
@@ -18,11 +18,11 @@ To edit metadata, follow these steps:
 
     * From the [!DNL Assets] interface, select the asset and click **[!UICONTROL View Properties]** from the toolbar.
     * From the asset thumbnail, select the **[!UICONTROL View Properties]** quick action.
-    * From the asset page, click **[!UICONTROL View Properties]** ![chlimage_1-168](assets/chlimage_1-168.png) from the toolbar.
+    * From the asset page, click **[!UICONTROL View Properties]** ![Assets info icon](assets/do-not-localize/info-circle-icon.png) from the toolbar.
 
    The asset page displays all the asset's metadata. The metadata is extracted when the asset is uploaded (ingested) into [!DNL Experience Manager].
 
-   ![select asset Properties to view metadata](assets/asset-metadata.png)
+   ![Select Properties of an asset to view its metadata](assets/asset-metadata.png)
 
    *Figure: Edit or add metadata on asset [!UICONTROL Properties] page.*
 
@@ -44,8 +44,17 @@ For details, see [edit metadata schema forms](metadata-schemas.md#edit-metadata-
 
 You can add your own namespaces within [!DNL Experience Manager]. Just as there are predefined namespaces such as `cq`, `jcr`, and `sling`, you can have a namespace for your repository metadata and XML processing.
 
-1. Go to the node type administration page `https:[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
-1. Click **[!UICONTROL Namespaces]** at the top of the page. The namespace administration page is displayed in a window.
+1. Access the node type administration page `https://[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
+1. To access the namespace administration page, click **[!UICONTROL Namespaces]** at the top of the page.
+1. To add a namespace, click **[!UICONTROL New]** at the bottom of the page.
+1. Specify a custom namespace in the XML namespace convention. Specify the ID in the form of a URI and an associated prefix for the ID. Click **[!UICONTROL Save]**.
 
-1. To add a namespace, click **[!UICONTROL New]** at the bottom.
-1. Specify a custom namespace in the XML namespace convention. Specify the ID in the form of a URI and an associated prefix for the id. Click **[!UICONTROL Save]**.
+## Tips and limitations {#best-practices-limitations}
+
+* The metadata updates via Touch-UI changes the metadata properties in the `dc` namespace. Any updates made via the HTTP API changes the metadata properties in the `jcr` namespace. See [how to update metadata using HTTP API](/help/assets/mac-api-assets.md#update-asset-metadata).
+
+>[!MORELIKETHIS]
+>
+>* [About metadata and its need in Assets](metadata.md)
+>* [XMP metadata](xmp.md)
+>* [Metadata schemata reference](meta-ref.md)

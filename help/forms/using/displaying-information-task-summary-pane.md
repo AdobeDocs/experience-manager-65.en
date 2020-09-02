@@ -31,7 +31,7 @@ AEM Forms workspace allows you to display a web page of your choice in the Task 
     * `Create a folder`**SampleSummary** under `/apps`. In the Access Control List of `/apps/SampleSummary`, add an entry for `PERM_WORKSPACE_USER` allowing `jcr:readprivileges`.
     * `Create a file `html.esp` at `/apps/SampleSummary`. For example, add the following lines in `html.esp`.`
 
-   ```
+   ```html
    <html>
        <body>
            <h1>Sample Summary</h1>

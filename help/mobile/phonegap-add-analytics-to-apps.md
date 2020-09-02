@@ -98,7 +98,7 @@ After performing these steps your app will be enabled to report all the lifecycl
 
 ### Instrument your code for full App tracking {#instrument-your-code-for-full-app-tracking}
 
-There are several tracking APIs provided in the [AMS Phonegap Plugin API.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/phonegap_methods.html)
+There are several tracking APIs provided in the [AMS Phonegap Plugin API.](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)
 
 These will allow you to track states and actions such as where pages your users are navigating to in your app, which controls are being used the most. The easiest way to instrument you app for tracking is to make use of the Analytics APIs provided by the AMS plugin.
 
@@ -108,32 +108,6 @@ These will allow you to track states and actions such as where pages your users 
 For reference you can take a look at the code in the Geometrixx Outdoors app. In the Geometrixx Outdoors app all of the page navigations are tracked using the ADB.trackState() method. For further details take a look at the source code for /libs/mobileapps/components/angular/ng-page/clientlibs/app-navigation.js
 
 By instrumenting your source code with these method calls you are able to collect full metrics against your application.
-
-### Testing Analytics tracking with Bloodhound  {#testing-analytics-tracking-with-bloodhound}
-
-![](do-not-localize/chlimage_1.jpeg)
-
-Optionally before deploying to production you can use the Adobe tool [Bloodhound](https://marketing.adobe.com/developer/gallery/bloodhound-app-measurement-qa-tool-1) to test your analytics configuration. In order to test you analytics configuration you will need to edit your ADBMobileConfig.json file to point to the server where Bloodhound is running instead of the actual Analytics server. To make this change, from your ADBMobileConfig.json change the following entry.
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "YOUR_TRACKING_SERVER:YOUR_TRACKING_PORT",
-...
-```
-
-Change to match this entry:
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "localhost:50000",
-...
-```
-
-This will redirect all the data collected by the AMS plugin to Bloodhound so that you can view the results.
 
 #### Properties for Connecting to AMS {#properties-for-connecting-to-ams}
 

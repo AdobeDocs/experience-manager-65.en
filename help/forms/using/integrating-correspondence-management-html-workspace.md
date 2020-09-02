@@ -61,7 +61,7 @@ Use the following steps to create a task to render and submit a letter in AEM Wo
 
    A sample custom wrapper is as listed below:
 
-   ```java
+   ```javascript
    public LetterInstanceInfo getLetterInstanceInfo(Document dataXML) throws Exception {
    try {
    if(dataXML == null)

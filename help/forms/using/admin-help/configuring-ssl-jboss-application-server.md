@@ -86,7 +86,7 @@ In this procedure:
 
 1. * **For single server,** in the lc_&lt;dbaname/tunkey&gt;.xml file, add the following after &lt;security-realms&gt; section:
 
-   ```as3
+   ```xml
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
@@ -102,13 +102,13 @@ In this procedure:
 
    Add the following to the &lt;server&gt; section present after above code:
 
-   ```
+   ```xml
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 
     * **For server cluster,** in the [appserver root]\domain\configuration\host.xml on all nodes, add the following after &lt;security-realms&gt; section:
 
-   ```as3
+   ```xml
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
@@ -118,13 +118,13 @@ In this procedure:
    </security-realm>
    ```
 
-   On the master node of the Server Cluster, in the [appserver root]\domain\configuration\domain_&lt;dbname&gt;.xml, locate the &lt;server&gt; section present after the following code:
+   On the primary node of the Server Cluster, in the [appserver root]\domain\configuration\domain_&lt;dbname&gt;.xml, locate the &lt;server&gt; section present after the following code:
 
    `<http-listener name="default" socket-binding="http" redirect-socket="https" max-post-size="104857600"/>`
 
    Add the following to the &lt;server&gt; section present after above code:
 
-   ```
+   ```xml
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 

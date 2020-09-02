@@ -333,11 +333,10 @@ To launch the rule editor user interface:
    Any existing rules on the selected form objects are listed in this view. For information about managing existing rules, see [Manage rules](../../forms/using/rule-editor.md#p-manage-rules-p).
 
 1. Tap **[!UICONTROL Create]** to write a new rule. The visual editor of the rule editor user interface opens by default when you launch the rule editor the first time.
-   [ ![Rule Editor UI](assets/rule-editor-ui.png)
 
-   Click to view enlarged image
+   ![Rule Editor UI](assets/rule-editor-ui.png)
 
-   ](assets/rule-editor-ui-1.png)Let's look at each component of the rule editor UI in detail.
+Let's look at each component of the rule editor UI in detail.
 
 ### A. Component-rule display {#a-component-rule-display}
 
@@ -622,7 +621,7 @@ After you have added your client library in the CRX repository, use it in your a
 
 **Function Statement**
 
-```
+```javascript
 function area(len) {
     return len*len;
 }
@@ -632,7 +631,7 @@ This function is included without `jsdoc` comments.
 
 **Function Expression**
 
-```
+```javascript
 var area;
 //Some codes later
 /** */
@@ -643,7 +642,7 @@ area = function(len) {
 
 **Function Expression and Statement**
 
-```
+```javascript
 var b={};
 /** */
 b.area = function(len) {
@@ -653,7 +652,7 @@ b.area = function(len) {
 
 **Function Declaration as Variable**
 
-```
+```javascript
 /** */
 var x1,
     area = function(len) {
@@ -666,7 +665,7 @@ Limitation: custom function picks only the first function declaration from the v
 
 **Function Declaration as Object**
 
-```
+```javascript
 var c = {
     b : {
         /** */

@@ -38,7 +38,7 @@ mkfs -q /dev/ram1 800000
 
 On Windows OS, use a third-party driver to create a RAM drive or just use high performance storage such as SSD.
 
-Once the high performance temporary volume is ready, set the JVM parameter `-Djava.io.tmpdir`. For example, you could add the JVM parameter below to the `CQ_JVM_OPTS` variable in the `bin/start` script of [!DNLExperience Manager]:
+Once the high performance temporary volume is ready, set the JVM parameter `-Djava.io.tmpdir`. For example, you could add the JVM parameter below to the `CQ_JVM_OPTS` variable in the `bin/start` script of [!DNL Experience Manager]:
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
@@ -46,11 +46,10 @@ Once the high performance temporary volume is ready, set the JVM parameter `-Dja
 
 ### Java version {#java-version}
 
-Adobe recommends deploying [!DNL Experience Manager Assets] on Java 8 for optimum performance. 
+Adobe recommends deploying [!DNL Experience Manager Assets] on Java 8 for optimum performance.
 
->[!NOTE]
->
->Oracle stopped releasing updates for Java 7 as of April 2015.
+<!-- TBD: Link to the latest official word around Java.
+-->
 
 ### JVM parameters {#jvm-parameters}
 
@@ -70,7 +69,7 @@ Separating the data store from the segment store is recommended for all [!DNL Ex
 
 ### Configure the maximum size of the buffered image cache {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-When uploading large amounts of assets to [!DNLAdobe Experience Manager], to allow for unexpected spikes in memory consumption and to prevent JVM fails with OutOfMemoryErrors, reduce the configured maximum size of the buffered image cache. Consider an example that you have a system with a maximum heap (- `Xmx`param) of 5 GB, an Oak BlobCache set at 1 GB, and document cache set at 2 GB. In this case, the buffered cache would take maximum 1.25 GB and memory, that would leave only 0.75 GB memory for unexpected spikes.
+When uploading large amounts of assets to [!DNL Adobe Experience Manager], to allow for unexpected spikes in memory consumption and to prevent JVM fails with OutOfMemoryErrors, reduce the configured maximum size of the buffered image cache. Consider an example that you have a system with a maximum heap (- `Xmx`param) of 5 GB, an Oak BlobCache set at 1 GB, and document cache set at 2 GB. In this case, the buffered cache would take maximum 1.25 GB and memory, that would leave only 0.75 GB memory for unexpected spikes.
 
 Configure the buffered cache size in the OSGi Web Console. At `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`, set the property `cq.dam.image.cache.max.memory` in bytes. For example, 1073741824 is 1 GB (1024 x 1024 x 1024 = 1 GB).
 
@@ -109,10 +108,10 @@ accessKey=<snip>
 
 Adobe recommends enabling HTTPS because many companies have firewalls that sniff HTTP traffic, which adversely impacts uploads and corrupts files. For large file uploads, ensure that users have wired connections to the network because a WiFi network becomes quickly saturated. For guidelines on identifying network bottlenecks, see [Assets sizing guide](/help/assets/assets-sizing-guide.md). To assess network performance by analyzing network topology, see [Assets network considerations](/help/assets/assets-network-considerations.md).
 
-Primarily, your network optimization strategy depends upon the amount of bandwidth available and the load on your [!DNLExperience Manager] instance. Common configuration options, including firewalls or proxies can help improve network performance. Here are some key points to bear in mind:
+Primarily, your network optimization strategy depends upon the amount of bandwidth available and the load on your [!DNL Experience Manager] instance. Common configuration options, including firewalls or proxies can help improve network performance. Here are some key points to bear in mind:
 
-* Depending upon your instance type (small, moderate, large), ensure that you have sufficient network bandwidth for your Experience Manager instance. Adequate bandwidth allocation is especially important if [!DNLExperience Manager] is hosted on AWS.
-* If your [!DNLExperience Manager] instance is hosted on AWS, you can benefit by having a versatile scaling policy. Upsize the instance if users expect high load. Downsize it for moderate/low load.
+* Depending upon your instance type (small, moderate, large), ensure that you have sufficient network bandwidth for your Experience Manager instance. Adequate bandwidth allocation is especially important if [!DNL Experience Manager] is hosted on AWS.
+* If your [!DNL Experience Manager] instance is hosted on AWS, you can benefit by having a versatile scaling policy. Upsize the instance if users expect high load. Downsize it for moderate/low load.
 * HTTPS: Most users have firewalls that sniff HTTP traffic, which can adversely impact uploading of files or even corrupt files during the upload operation.
 * Large file uploads: Ensure that users have wired connections to the network (WiFi connections saturate quickly).
 
@@ -122,9 +121,9 @@ Primarily, your network optimization strategy depends upon the amount of bandwid
 
 Wherever possible, set the [!UICONTROL DAM Update Asset] workflow to Transient. The setting significantly reduces the overheads required to process workflows because, in this case, workflows need not pass through the normal tracking and archival processes.
 
-1. Navigate to `/miscadmin` in the [!DNLExperience Manager] instance at `https://[aem_server]:[port]/miscadmin`.
+1. Navigate to `/miscadmin` in the [!DNL Experience Manager] deployment at `https://[aem_server]:[port]/miscadmin`.
 
-1. Expand **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]** &gt; **[!UICONTROL dam]**.
+1. Expand **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL dam]**.
 
 1. Open **[!UICONTROL DAM Update Asset]**. From the floating tool panel, switch to the **[!UICONTROL Page]** tab, and then click **[!UICONTROL Page Properties]**.
 
@@ -146,9 +145,9 @@ For example, after executing numerous non-transient workflows (that creates work
 
 ### Maximum parallel jobs {#maximum-parallel-jobs}
 
-By default, [!DNLExperience Manager] runs a maximum number of parallel jobs equal to the number of processors on the server. The problem with this setting is that during periods of heavy load, all of the processors are occupied by [!UICONTROL DAM Update Asset] workflows, slowing down UI responsiveness and preventing [!DNLExperience Manager] from running other processes that safeguard server performance and stability. As a good practice, set this value to half the processors that are available on the server by performing the following steps:
+By default, [!DNL Experience Manager] runs a maximum number of parallel jobs equal to the number of processors on the server. The problem with this setting is that during periods of heavy load, all of the processors are occupied by [!UICONTROL DAM Update Asset] workflows, slowing down UI responsiveness and preventing [!DNL Experience Manager] from running other processes that safeguard server performance and stability. As a good practice, set this value to half the processors that are available on the server by performing the following steps:
 
-1. On [!DNLExperience Manager] Author, access `https://[aem_server]:[port]/system/console/slingevent`.
+1. On [!DNL Experience Manager] Author, access `https://[aem_server]:[port]/system/console/slingevent`.
 
 1. Click **[!UICONTROL Edit]** on each workflow queue that is relevant to your implementation, for example **[!UICONTROL Granite Transient Workflow Queue]**.
 
@@ -174,7 +173,7 @@ Customers use images of various sizes and formats across their website or for di
 
 Many Sites customers implement an image servlet that resizes and crops images at the time they are requested, which imposes additional load on the publish instance. However, as long as these images can be cached, the challenge can be mitigated.
 
-An alternative approach is to use Scene7 technology to hand off image manipulation entirely. Additionally, you can deploy Brand Portal that not only takes over rendition generation responsibilities from the [!DNLExperience Manager] infrastructure, but also the entire publish tier.
+An alternative approach is to use Scene7 technology to hand off image manipulation entirely. Additionally, you can deploy Brand Portal that not only takes over rendition generation responsibilities from the [!DNL Experience Manager] infrastructure, but also the entire publish tier.
 
 #### ImageMagick {#imagemagick}
 
@@ -233,7 +232,7 @@ When replicating assets to a large number of publish instances, for example in a
 >
 >Adobe does not recommend auto-activating assets. However, if necessary, Adobe recommends doing this as the final step in a workflow, usually DAM Update Asset.
 
-## Search indices {#search-indexes}
+## Search indexes {#search-indexes}
 
 Make sure you implement the latest service packs and performance-related hotfixes as they often include updates to system indexes. See [Performance tuning tips](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) for some index optimizations.
 
@@ -279,11 +278,11 @@ For all network performance concerns from the customer, perform the following ta
 * By using a network benchmark tool
 * Test against the dispatcher
 
-### [!DNL Experience Manager] instance testing {#aem-instance-testing}
+### [!DNL Experience Manager] deployment testing {#aem-deployment-testing}
 
-To minimize latency and achieve high throughput through efficient CPU utilization and load-sharing, monitor the performance of your [!DNL Experience Manager] instance regularly. In particular:
+To minimize latency and achieve high throughput through efficient CPU utilization and load-sharing, monitor the performance of your [!DNL Experience Manager] deployment regularly. In particular:
 
-* Run load tests against the [!DNL Experience Manager] instance.
+* Run load tests against the [!DNL Experience Manager] deployment.
 * Monitor upload performance and UI responsiveness.
 
 ## [!DNL Experience Manager Assets] performance checklist and impact of asset management tasks {#checklist}
@@ -293,6 +292,7 @@ To minimize latency and achieve high throughput through efficient CPU utilizatio
 * Deploy on Java 8.
 * Set optimal JVM parameters.
 * Configure a Filesystem DataStore or an S3 data store.
+* Disable subasset generation. If it is enabled, AEM's workflow creates a separate asset for each page in a multi-page asset. Each of these pages is an individual asset that consumes additional disk space, requires versioning, and additional workflow processing. If you do not require separate pages, disable subasset generation and page extraction activities.
 * Enable transient workflows.
 * Tune the Granite workflow queues to limit concurrent jobs.
 * Configure [!DNL ImageMagick] to limit resource consumption.

@@ -707,7 +707,7 @@ If the attributes fail to identify a caption, you can instead identify a window 
 Be aware of these issues:
 
 * Microsoft Spy++ displays captions by using an ampersand (&) to identify the caption’s hot key. For example, Spy++ shows the caption for one Print dialog box as `Pri&nt`, which indicates that the hotkey is *n*. Caption titles in script and dialog XML files must omit ampersands.
-* Some captions include line breaks. the Generate PDF service cannot identify line breaks. If a caption includes a line break, include enough of the caption to differentiate it from the other menu items and then use regular expressions for the omitted part. An example is ( `^Long caption title$`).]. (See [Using regular expressions in caption attributes](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
+* Some captions include line breaks. the Generate PDF service cannot identify line breaks. If a caption includes a line break, include enough of the caption to differentiate it from the other menu items and then use regular expressions for the omitted part. An example is ( `^Long caption title$`). (See [Using regular expressions in caption attributes](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
 * Use character entities (also called escape sequences) for reserved XML characters. For example, use `&` for ampersands, `<` and `>` for less than and greater than symbols, `&apos;` for apostrophes, and `&quot;` for quotation marks.
 
 If you plan to work on dialog or script XML files, you should install the application Microsoft Spy++.
@@ -767,7 +767,7 @@ You can use regular expressions in caption specifications. The Generate PDF serv
 
 **Regular expression accommodating the file name prepended to Notepad in the Notepad banner**
 
-```as3
+```xml
  <!-- The regular expression ".*Notepad" means any number of non-terminating characters followed by Notepad. -->
  <step>
      <expectedWindow>
@@ -778,7 +778,7 @@ You can use regular expressions in caption specifications. The Generate PDF serv
 
 **Regular expression differentiating Print from Print Setup**
 
-```as3
+```xml
  <!-- This regular expression differentiates the Print dialog box from the Print Setup dialog box. The "^" specifies the beginning of the line, and the "$" specifies the end of the line. -->
  <windowList>
      <window controlID="0x01" caption="^Print$" action="press"/>
@@ -794,7 +794,7 @@ You must order `window` and `windowList` elements as follows:
 
 **Ordering window elements in a dialog file**
 
-```as3
+```xml
  <!-- The caption attribute in the following window element is 40 characters long. It is the longest caption in this example, so its parent window element appears before the others. -->
  <window caption="Unexpected Failure in DebugActiveProcess">
      <…>
@@ -818,7 +818,7 @@ You must order `window` and `windowList` elements as follows:
 
 **Ordering window elements within a windowList element**
 
-```as3
+```xml
  <!-- The caption attribute in the following indexes element is 56 characters long. It is the longest caption in this example, so its parent window element appears before the others. -->
  <windowList>
      <window caption="Can&apos;t exit design mode because.* cannot be created"/>
@@ -879,7 +879,7 @@ In this example, the default configuration data supplied with the Generate PDF s
 
 **Modifications for directing text files to Notepad (native2pdfconfig.xml)**
 
-```as3
+```xml
  <filetype-settings>
 
  <!-- Some native app file types were omitted for brevity. -->
@@ -919,7 +919,7 @@ After creating the new environment variable, you must restart the server on whic
 
 1. In a command line window, type the variable definition, using this format:
 
-   ```as3
+   ```shell
             [applicationname]_PATH=[Full path name]
    ```
 
@@ -937,7 +937,7 @@ This example contains the additional dialog boxes for the Notepad application. T
 
 **Notepad dialog boxes(appmon.notepad.addition.en_US.xml)**
 
-```as3
+```xml
  <dialogs app="Notepad" locale="en_US" version="7.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dialogs.xsd">
      <window caption="Caption Title">
          <windowList>
@@ -953,7 +953,7 @@ This example specifies how the Generate PDF service should interact with Notepad
 
 **Notepad script XML file (appmon.notepad.script.en_US.xml)**
 
-```as3
+```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--
 *

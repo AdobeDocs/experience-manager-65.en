@@ -100,7 +100,7 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 The following descriptions of storage location may be of help when developing with JSRP or perhaps MSRP. There is currently no UI to access UGC stored in ASRP, as there is for JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) and MSRP (MongoDB tools).
 
-**component location**
+**Component location**
 
 When a member enters UGC in the publish environment, they are interacting with a component as part of an AEM site.
 
@@ -108,7 +108,7 @@ An example of such a component is the [comments component](http://localhost:4502
 
 * Component path = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
-**shadow node location**
+**Shadow node location**
 
 The creation of UGC also creates a [shadow node](srp.md#about-shadow-nodes-in-jcr) to which the necessary ACLs are applied. The path to the corresponding shadow node in the local repository is the result of prepending the shadow node root path to the component path:
 

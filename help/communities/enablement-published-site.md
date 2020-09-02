@@ -32,7 +32,7 @@ When first arriving at the published site, the site visitor would typically not 
 
 **http://localhost:4503/content/sites/enable/en.html**
 
-![chlimage_1-433](assets/chlimage_1-433.png)
+![enablement-login](assets/enablement-login.png)
 
 ## Anonymous Site Visitor {#anonymous-site-visitor}
 
@@ -41,9 +41,10 @@ An anonymous site visitor is immediately presented with the login page for this 
 Notice this  home page  shows four menu items: `Assignments, Ski Catalog, What's New` and `Discussions`, but none may be reached without signing in.
 
 >[!NOTE]
->
->It is possible to grant anonymous access to an enablement site without allowing site visitors to self-register.
->If an enablement resource is set to `show in catalog` and `allow anonymous access`, it will be possible for anonymous site visitors to view resources in the catalog.
+ >
+ >It is possible to grant anonymous access to an enablement site without allowing site visitors to self-register.
+ >If an enablement resource is set to `show in catalog` and `allow anonymous access`, it will be possible for anonymous site visitors to view resources in the catalog.
+ >
 
 ### Prevent anonymous access on JCR {#prevent-anonymous-access-on-jcr}
 
@@ -51,20 +52,21 @@ A known limitation exposes the community site content to anonymous visitors thro
 
 To protect your community site's content from access by anonymous users through  jcr  content and  json , follow these steps:
 
-1. On AEM Author instance, go to https://&lt;host&gt;:&lt;port&gt;/editor.html/content/site/&lt;sitename&gt;.html.
+1. On AEM author instance, go to https://&lt;host&gt;:&lt;port&gt;/editor.html/content/site/&lt;sitename&gt;.html.
 
    >[!NOTE]
-   >
-   >Do not go to the localized site.
+    >
+    >Do not go to the localized site.
+    >
 
 1. Go to **[!UICONTROL Page Properties]**.
 
-   ![page-properties-1](assets/page-properties-1.png)
+   ![page-properties](assets/page-properties.png)
 
 1. Go to **[!UICONTROL Advanced]** tab.
 1. Enable **[!UICONTROL Authentication Requirement]**.
 
-   ![site-authentication-1](assets/site-authentication-1.png)
+   ![site-authentication](assets/site-authentication.png)
 
 1. Add the path of the login page. For example, `/content/......./GetStarted`.
 1. Publish the page.
@@ -88,7 +90,7 @@ The next time the member signs in, the home page, identified by the first menu i
 
 The Assignments page is where the member is shown all of the learning paths and enablement resources assigned specifically to them.
 
-Each assignment provides basic information as to
+Each assignment provides basic information as to:
 
 * The type of Assignment
 * Whether it is a new Assignment
@@ -174,7 +176,7 @@ On author, navigate to the **Communities, [Resources console](resources.md)**, w
 * All enablement resources and learning paths
 * One specific enablement resource or learning path
 
-Navigate to the **Communities, [Reports console](reports.md)**, and generate reports according to
+Navigate to the **Communities, [Reports console](reports.md)**, and generate reports according to:
 
 * Assignments to enablement resources and learning paths
 * Posts to a community site over a specific period
@@ -182,25 +184,24 @@ Navigate to the **Communities, [Reports console](reports.md)**, and generate rep
 
 * Posts and views may be to all content, or to specific content:
 
-    * Forum
-    * Forum Topic
-    * QnA
-    * QnA Question
-    * Blog
-    * Blog Article
-    * Calendar
-    * Calendar Event
+  * Forum
+  * Forum Topic
+  * QnA
+  * QnA Question
+  * Blog
+  * Blog Article
+  * Calendar
+  * Calendar Event
 
 ### Resources Console {#resources-console}
 
 With a little activity and interaction with the Resources on publish, viewing the reports on author is worth a look.
 
-* On author
-* Sign in with administrative privileges
-* Navigate from the main menu to **[!UICONTROL Communities > Resources]**
-* Select the `Enablement Tutorial` site
-* Select the `Report` icon for a summary of all Resources
-* Select a Resource and then the `Report` icon for a report on that Resource
+* On author, sign in with administrative privileges.
+* Navigate from the main menu to **[!UICONTROL Communities]** > **[!UICONTROL Resources]**.
+* Select the `Enablement Tutorial` site.
+* Select the `Report` icon for a summary of all Resources.
+* Select a Resource and then the `Report` icon for a report on that Resource.
 
 Notice that it is likely too soon to show data from Adobe Analytics, which can take from 1 to 12 hours to appear. However, basic SCORM reporting is already available.
 
@@ -228,10 +229,9 @@ The Reports console allows for generation of reports on
 
 For reports on assignments:
 
-* On author
-* Sign in with administrative privileges
-* Navigate to **[!UICONTROL Communities > Reports > Assignments Report]**
-* Select a **[!UICONTROL Site]** from the pull-down menu (select `Enablement Tutorial`)
+* On author, sign in with administrative privileges.
+* Navigate to **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Assignments Report]**.
+* Select a **[!UICONTROL Site]** from the pull-down menu (select `Enablement Tutorial`).
 
 * Select **[!UICONTROL Group]** (select `Community Ski Class`)
 
@@ -243,16 +243,15 @@ For reports on assignments:
 
 For reports on views:
 
-* On author
-* Sign in with administrative privileges
-* Navigate to **[!UICONTROL Communities > Reports > Views Report]**
-* Select a **[!UICONTROL ]Site** from the pull-down menu (select `Enablement Tutorial`)
+* On author, sign in with administrative privileges.
+* Navigate to **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Views Report]**.
+* Select a **[!UICONTROL ]Site** from the pull-down menu (select `Enablement Tutorial`).
 
-* Select **[!UICONTROL Content Type]** (select `all`)
+* Select **[!UICONTROL Content Type]** (select `all`).
 
-* Select a **[!UICONTROL date range]** (select `Last 7 days`)
+* Select a **[!UICONTROL date range]** (select `Last 7 days`).
 
-* Select **[!UICONTROL Generate]**
+* Select **[!UICONTROL Generate]**.
 
 ![chlimage_1-446](assets/chlimage_1-446.png)
 

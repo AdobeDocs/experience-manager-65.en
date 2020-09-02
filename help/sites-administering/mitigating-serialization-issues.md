@@ -19,11 +19,11 @@ The AEM team at Adobe has been working closely with the open source project [Not
 
 The agent jar included with this package is Adobe's modified distribution of NotSoSerial.
 
-NotSoSerial is a Java level solution to a Java level problem and is not AEM specific. It adds a preflight check to an attempt to deserialize an object. This check will test a class name against a firewall-style whitelist and/or blacklist. Due to the limited number of classes in the default blacklist, this is unlikely to have an impact on your systems or code.
+NotSoSerial is a Java level solution to a Java level problem and is not AEM specific. It adds a preflight check to an attempt to deserialize an object. This check will test a class name against a firewall-style allow list and/or block list. Due to the limited number of classes in the default block list, this is unlikely to have an impact on your systems or code.
 
-By default, the agent will perform a blacklist check against current known vulnerable classes. This blacklist is intended to protect you from the current list of exploits that use this type of vulnerability.
+By default, the agent will perform a block list check against current known vulnerable classes. This block list is intended to protect you from the current list of exploits that use this type of vulnerability.
 
-The blacklist and whitelist can be configured by following the instructions in the [Configuring the Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) section of this article.
+The block list and allow list can be configured by following the instructions in the [Configuring the Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) section of this article.
 
 The agent is intended to help mitigate the latest known vulnerable classes. If your project is deserializing untrusted data, it may still be vulnerable to denial of service attacks, out of memory attacks, and unknown future deserialization exploits.
 
@@ -42,7 +42,7 @@ Adobe officially supports Java 6, 7, and 8, however our understanding is that No
 
 ## Installing the Agent on Application Servers {#installing-the-agent-on-application-servers}
 
-The NotSoSerial agent is not included in the stardard distribution of AEM for application servers. However, you can extract it from the AEM jar distribution and use it with your application server setup:
+The NotSoSerial agent is not included in the standard distribution of AEM for application servers. However, you can extract it from the AEM jar distribution and use it with your application server setup:
 
 1. First, download the AEM quickstart file and extract it:
 
@@ -62,7 +62,7 @@ The NotSoSerial agent is not included in the stardard distribution of AEM for ap
 
 ## Configuring the agent {#configuring-the-agent}
 
-The default configuration is adequate for most installs. This includes a blacklist of known remote execution vulnerable classes and a whitelist of packages where deserialization of trusted data should be relatively safe.
+The default configuration is adequate for most installs. This includes a block list of known remote execution vulnerable classes and a allow list of packages where deserialization of trusted data should be relatively safe.
 
 The firewall configuration is dynamic, and can be changed at any time by:
 
@@ -75,15 +75,15 @@ The firewall configuration is dynamic, and can be changed at any time by:
    >
    >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
-This configuration contains the whitelist, blacklist, and deserialization logging.
+This configuration contains the allow list, block list, and deserialization logging.
 
-**Whitelisting**
+**Allow Listing**
 
-In the whitelisting section, these are classes or package prefixes that will be allowed for deserialization. It is important to be aware that if you are deserializing classes of your own, you will need to add either the classes or packages to this whitelist.
+In the allow listing section, these are classes or package prefixes that will be allowed for deserialization. It is important to be aware that if you are deserializing classes of your own, you will need to add either the classes or packages to this allow list.
 
-**Blacklisting**
+**Block Listing**
 
-In the blacklisting section are classes that are never allowed for deserializaiton. The initial set of these classes is limited to classes that have been found vulnerable to remote execution attacks. The blacklist is applied before any whitelisted entries.
+In the block listing section are classes that are never allowed for deserializaiton. The initial set of these classes is limited to classes that have been found vulnerable to remote execution attacks. The block list is applied before any allow listed entries.
 
 **Diagnostinc Logging**
 
@@ -105,7 +105,7 @@ For more information on troubleshooting issues with the agent, see [Handling Err
 
 >[!NOTE]
 >
->If you add `org.apache.commons.collections.functors` to the whitelist, the health check will always fail.
+>If you add `org.apache.commons.collections.functors` to the allow list, the health check will always fail.
 
 ## Handling errors with dynamic agent loading {#handling-errors-with-dynamic-agent-loading}
 
@@ -134,4 +134,3 @@ In order to load the agent manually, follow the below instructions:
 ## Other Considerations {#other-considerations}
 
 If you are running on an IBM JVM, please review the documentation on support for the Java Attach API at [this location](https://www.ibm.com/support/knowledgecenter/SSSTCZ_2.0.0/com.ibm.rt.doc.20/user/attachapi.html).
-

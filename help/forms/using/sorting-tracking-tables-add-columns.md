@@ -115,7 +115,7 @@ For the following customizations in the task table, you need to do semantic chan
 
 1. To modify the task attributes displayed in the table and their order, configure the file /ws/js/runtime/templates/processinstancehistory.html :
 
-   ```as3
+   ```html
    <table>
        <thead>
            <tr>
@@ -130,7 +130,7 @@ For the following customizations in the task table, you need to do semantic chan
    </table>
    ```
 
-   ```as3
+   ```html
    <table>
        <tbody>
            <%_.each(obj, function(task){%>
@@ -153,7 +153,7 @@ To sort the task list table when you click the column heading:
 
 1. Register a click handler for `.fixedTaskTableHeader th` in the file `js/runtime/views/processinstancehistory.js`.
 
-   ```as3
+   ```javascript
    events: {
        //other handlers
        "click .fixedTaskTableHeader th": "onTaskTableHeaderClick",
@@ -163,7 +163,7 @@ To sort the task list table when you click the column heading:
 
    In the handler, invoke the `onTaskTableHeaderClick` function of `js/runtime/util/history.js`.
 
-   ```as3
+   ```javascript
    onTaskTableHeaderClick: function (event) {
            history.onTaskTableHeaderClick(event);
    }
@@ -175,7 +175,7 @@ To sort the task list table when you click the column heading:
 
    Sorting is done using the Backbone sort function on the tasklist collection by providing a comparator function.
 
-   ```as3
+   ```javascript
        return {
            //other methods
            onTaskTableHeaderClick  : onTaskTableHeaderClick,
@@ -183,7 +183,7 @@ To sort the task list table when you click the column heading:
        };
    ```
 
-   ```as3
+   ```javascript
    onTaskTableHeaderClick = function (event) {
            var target = $(event.target),
             comparator,

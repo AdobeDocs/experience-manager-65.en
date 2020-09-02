@@ -82,7 +82,7 @@ AEM Forms displays transaction reports since the configured date, as shown in a 
 
 ## View transaction reporting logs {#view-transaction-reporting-logs}
 
-Transaction reporting places all the information displayed in the report and some additional information in the logs. The information provided in the logs is helpful for the advanced users. For example, logs divide transactions into multiple granular categories in comparison to three consolidated categories displayed in the report. The logs are at /crx-quickstart/logs/aem-forms-transaction.log.
+Transaction reporting places all the information displayed in the report and some additional information in the logs. The information provided in the logs is helpful for the advanced users. For example, logs divide transactions into multiple granular categories in comparison to three consolidated categories displayed in the report. The logs are available in the `error.log` file at the `/crx-repository/logs/` directory. The logs are available even if you do not enable the transaction reports from AEM Web Console.
 
 ## Related Articles {#related-articles}
 

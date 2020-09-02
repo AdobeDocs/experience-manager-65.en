@@ -60,7 +60,7 @@ To access an existing community site, for the purpose of authoring, modifying, p
 
 For example, the following image shows the main Communities Sites console displaying the folders for two community sites : [enable](/help/communities/getting-started-enablement.md) and [engage](/help/communities/getting-started.md):
 
-![chlimage_1-154](assets/chlimage_1-154.png)
+![site-console](assets/site-console.png)
 
 ## Site Creation {#site-creation}
 
@@ -133,7 +133,7 @@ After the community site is published, it is possible to [edit the properties](#
 
 #### COMMUNITY SITE BRANDING {#community-site-branding}
 
-![chlimage_1-155](assets/chlimage_1-155.png)
+![site-branding](assets/site-branding.png)
 
 Community site branding is an image displayed as a header across the top of each page.
 
@@ -225,7 +225,7 @@ The Settings panel contains several sub-panels presenting features to configure 
 
 #### TAGGING {#tagging}
 
-![chlimage_1-156](assets/chlimage_1-156.png)
+![site-tagging](assets/site-tagging.png)
 
 The tags which may be applied to community content are controlled by selecting Tag Namespaces previously defined through the [Tagging Console](/help/sites-administering/tags.md#tagging-console).
 
@@ -259,7 +259,7 @@ Finding community members is easy using type-ahead search.
 
 #### MODERATION {#moderation}
 
-![chlimage_1-157](assets/chlimage_1-157.png)
+![site-moderation](assets/site-moderation.png)
 
 The global setting for moderating user generated content (UGC) is controlled by these settings. Individual components have additional settings to control moderation.
 
@@ -273,14 +273,14 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
 #### ANALYTICS {#analytics}
 
-![chlimage_1-158](assets/chlimage_1-158.png)
+![site-analytics](assets/site-analytics.png)
 
 * **Enable Analytics**
   
   Only available when Adobe Analytics has been [configured](/help/communities/analytics.md) for Communities features.
   Default is unchecked. When checked, an additional selection menu appears:
 
-![chlimage_1-159](assets/chlimage_1-159.png)
+![site-analytics-enable](assets/site-analytics-enable.png)
 
 * **Cloud Config Framework Reference**
   
@@ -289,13 +289,13 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
 #### TRANSLATION {#translation}
 
-![chlimage_1-160](assets/chlimage_1-160.png)
+![site-translation](assets/site-translation.png)
 
 * **Allow Machine Translation**
   
   When checked (default is unchecked), machine translation is enabled for UGC within the site. This does not affect any other content, such as page content, even if the site is setup as a multilingual site. See [Translating User Generated Content](/help/communities/translate-ugc.md) for information on configuring a licensed translation service for AEM Communities. See [Translating Content for Multilingual Sites](/help/sites-administering/translation.md) for a complete overview.
 
-![chlimage_1-161](assets/chlimage_1-161.png)
+![allow-machine-translation](assets/allow-machine-translation.png)
 
 * **Enable Machine Translation for selected languages**
   
@@ -351,7 +351,7 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
 #### ENABLEMENT {#enablement}
 
-![chlimage_1-162](assets/chlimage_1-162.png)
+![site-enablement](assets/site-enablement.png)
 
 The `ENABLEMENT`settings are applicable when the chosen community site template includes the [assignments function](/help/communities/functions.md#assignments-function), which is available when the enablement features are licensed and [configured](/help/communities/enablement.md). The reference site template that includes the assignments function is `Reference Structured Learning Site Template.`
 
@@ -377,25 +377,23 @@ Once the site is created:
 * Disabling the community site template will not affect the created community site.
 * It is possible to edit the [STRUCTURE](#modify-structure) of a community site by modifying its properties.
 
-![chlimage_1-163](assets/chlimage_1-163.png)
+![create-site](assets/create-site1.png)
 
 When the process completes, the folder for the new site is displayed in the Communities Sites console, from where authors may add page content or administrators may modify the properties of the site.
 
-![chlimage_1-164](assets/chlimage_1-164.png)
+![modify-site-property](assets/modify-site-property.png)
 
 In order to modify a community site, select its project folder to open it:
 
-![siteactions-1](assets/siteactions-1.png)
+![site-project](assets/site-project.png)
 
 When hovering over a site with a mouse, or touching a site card, icons appear which allow for [editing the site in author mode](#authoring-site-content), [opening the site properties for modification](#modifying-site-properties), [publishing the site](#publishing-the-site), [exporting the site](#exporting-the-site), and [deleting the site](#deleting-the-site).
 
 ## Authoring Site Content {#authoring-site-content}
 
-![chlimage_1-165](assets/chlimage_1-165.png)
-
 The content of a site may be authored with the same tools as any other AEM website. To open the site for authoring, select the `Open Site` icon that appears on hovering the site with mouse. The site will open in a new tab such that the Communities Sites console remains accessible.
 
-![chlimage_1-166](assets/chlimage_1-166.png)
+![site-content](assets/site-content.png)
 
 >[!NOTE]
  >
@@ -404,13 +402,13 @@ The content of a site may be authored with the same tools as any other AEM websi
 
 ## Modifying Site Properties {#modifying-site-properties}
 
-![chlimage_1-167](assets/chlimage_1-167.png)
+![edit-site](assets/edit-site.png)
 
 The properties of an exisitng site, specified during the site creation process, can be modified by selecting the `Edit Site`icon that appears on hovering the site with mouse.
 
 `Details of the following properties match the descriptions provided in the` [Site Creation](#site-creation) section.
 
-![chlimage_1-168](assets/chlimage_1-168.png)
+![modify-site-basicinfo](assets/modify-site-basicinfo.png)
 
 ### Modify Basic {#modify-basic}
 
@@ -465,7 +463,7 @@ The STRUCTURE panel allows the modification of the structure initially created f
 
 #### Example : Adding a Catalog Function to a Community Site Structure {#example-adding-a-catalog-function-to-a-community-site-structure}
 
-![chlimage_1-169](assets/chlimage_1-169.png)
+![add-catalog-site](assets/add-catalog-site.png)
 
 ### Modify Design {#modify-design}
 
@@ -501,11 +499,11 @@ See the [ENABLEMENT](#enablement) description.
 
 After a community site has been newly created or modified, it is possible to publish (activate) the site by selecting the `Publish Site` icon, that appears on mouse hover over the site.
 
-![chlimage_1-170](assets/chlimage_1-170.png)
+![publish-site](assets/publish-site.png)
 
 There will be an indication after site is successfully published.
 
-![chlimage_1-171](assets/chlimage_1-171.png)
+![site-published](assets/site-published.png)
 
 ### Publishing with Nested Groups {#publishing-with-nested-groups}
 
@@ -513,7 +511,7 @@ After publishing a community site, it is necessary to individually publish each 
 
 ## Exporting the Site {#exporting-the-site}
 
-![chlimage_1-172](assets/chlimage_1-172.png)
+![export-site](assets/export-site.png)
 
 Select the export icon, on mouse hover over the site, to create a package of the community site that is both stored in [package manager](/help/sites-administering/package-manager.md) and downloaded.
 
@@ -572,7 +570,7 @@ To correctly redirect, once a site has been configured and pushed to publish, co
 
 * Select **Save**.
 
-![chlimage_1-173](assets/chlimage_1-173.png)
+![auth-error](assets/auth-error.png)
 
 ### Test Authentication Redirection {#test-authentication-redirection}
 
@@ -587,7 +585,7 @@ On the same AEM publish instance configured with a login page mapping for the co
 * Enter obviously incorrect credentials, such as username "x" and password "x".
 * The login page should be displayed with an "invalid login" error.
 
-![chlimage_1-174](assets/chlimage_1-174.png)
+![test-authentication](assets/test-authentication.png)
 
 ## Accessing Community Sites from Main Sites Console {#accessing-community-sites-from-main-sites-console}
 
@@ -595,5 +593,7 @@ From the global navigation Sites console, community sites are located in the `Co
 
 While it is possible to access a community site in this manner, for administrative tasks, the community site should be accessed from the Communities Sites console.
 
-![chlimage_1-175](assets/chlimage_1-175.png)
+![access-site](assets/access-site.png)
+
+
 

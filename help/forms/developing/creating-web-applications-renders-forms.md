@@ -119,7 +119,7 @@ For the location of these JAR files, see [Including AEM Forms Java library files
 
 You create Java application logic that invokes the Forms service from within the Java servlet. The following code shows the syntax of the `RenderFormFragment` Java Servlet:
 
-```as3
+```java
      public class RenderFormFragment extends HttpServlet implements Servlet {
          public void doGet(HttpServletRequest req, HttpServletResponse resp
          throws ServletException, IOException {
@@ -164,7 +164,7 @@ To render a form based on fragments using the Forms service API, perform the fol
 
 The following code example represents the Java servlet that invokes the Forms service and renders a form based on fragments.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -305,7 +305,7 @@ The index.html web page provides an entry point to the Java servlet and invokes 
 
 The Java servlet captures the data that is posted from the HTML page by using the following Java code:
 
-```as3
+```java
              Document oInputData = null;
  
              //Get the value of selected radio button
@@ -325,7 +325,7 @@ The Java servlet captures the data that is posted from the HTML page by using th
 
 The following HTML code is located in the index.html file that was created during setup of the development environment. (See [Creating a web project](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
 
-```as3
+```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
  <html xmlns="https://www.w3.org/1999/xhtml">
  <head>

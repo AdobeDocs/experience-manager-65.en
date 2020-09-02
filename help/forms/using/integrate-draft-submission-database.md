@@ -22,7 +22,7 @@ The sample, discussed in this document, is a reference implementation of customi
 >
 >* The examples and configurations explained in this document are according to MySQL 5.6.24 and you must substitute them appropriately for your database system.
 >* Ensure that you have installed latest version of AEM Forms add-on package. For the list of available packages, see the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article.
-> * The sample package works only with Adaptive Forms submit actions.
+>* The sample package works only with Adaptive Forms submit actions.
 
 ## Set up and configure the sample {#set-up-and-configure-the-sample}
 
@@ -330,7 +330,7 @@ Perform the following steps to create [a client library](/help/sites-developing/
 
 1. Right-click the node, click **[!UICONTROL create new file]**, and create a file with extension .txt. For example, `js.txt`Add the following code to the newly created .txt file and click **[!UICONTROL Save All]**.
 
-   ```
+   ```javascript
    #base=util
     util.js
    ```
@@ -341,7 +341,7 @@ Perform the following steps to create [a client library](/help/sites-developing/
 
 1. Add the following code to util.js file and click **[!UICONTROL Save All]**. The code validate length of the file name.
 
-   ```
+   ```javascript
    /*
     * ADOBE CONFIDENTIAL
     * ___________________

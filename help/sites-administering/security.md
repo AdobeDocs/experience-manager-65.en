@@ -488,11 +488,11 @@ Use the following procedure to modify a user's password.
 >[!NOTE]
 >
 >You cannot use the Security console to change the admin password. To change the password for the admin account, use the [Users console](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) that Granite Operations provides.
-> If you are using AEM Forms on JEE, do not use below instructions to change password rather use AEM Forms on JEE admin console (/adminui) to change the password.
+>
+>If you are using AEM Forms on JEE, do not use below instructions to change password rather use AEM Forms on JEE admin console (/adminui) to change the password.
 
 1. In the **Security** console, double-click the user name you want to change the password for.
 1. Click the **Properties** tab (if not already active).
-
 1. Click **Set Password**. The Set Password window opens where you can change your password.
 
    ![cqsecurityuserpassword](assets/cqsecurityuserpassword.png)

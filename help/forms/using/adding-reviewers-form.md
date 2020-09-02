@@ -30,9 +30,9 @@ To edit metadata schema:
 1. In the author mode, under Experience Manager, click **Tools** &gt; **Assets** &gt; **Metadata Schemas**.
 1. In the Schema Forms page, navigate to **Forms** &gt; **Forms Authored in AEM.**
 
-   The url of the page is:
+   The URL of the page is:
 
-   ```
+   ```html
    https://<hostname>:<port>/mnt/overlay/dam/gui/content/metadataschemaeditor/
     schemalist.html/forms/aem-authored
    ```

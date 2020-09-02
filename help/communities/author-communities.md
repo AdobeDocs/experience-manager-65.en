@@ -19,15 +19,16 @@ docset: aem65
 
 When AEM Communities is licensed, in addition to creating community sites, it is possible to add Communities features to any AEM site using standard AEM authoring tools.
 
-To learn more about creating a community site visit :
+To learn more about creating a community site visit:
 
 * [AEM Communities Overview](/help/communities/overview.md)
 * [Getting Started with AEM Communities](/help/communities/getting-started.md)
 * [Getting Started with AEM Communities for Enablement](/help/communities/getting-started-enablement.md)
 
 >[!NOTE]
->
->If not familiar with the authoring environment, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
+ >
+ >If not familiar with the authoring environment, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
+ >
 
 ## Available Communities Components {#available-communities-components}
 
@@ -73,8 +74,9 @@ See also the interactive [Community Components guide](/help/communities/componen
 | Voting | [Voting](/help/communities/voting.md) |
 
 >[!NOTE]
->
->The poll component is no longer available and supported in Experience Manager Communities.
+ >
+ >The poll component is no longer available and supported in Experience Manager Communities.
+ >
 
 ## Related Communities Documentation {#related-communities-documentation}
 

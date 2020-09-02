@@ -21,7 +21,7 @@ You combine a record with an interactive communication template to produce an in
 
 **A single record in a JSON file**
 
-```JSON
+```json
 {
    "employee": {
        "name": "Sara",
@@ -35,7 +35,7 @@ You combine a record with an interactive communication template to produce an in
 
 **Multiple records in a JSON file**
 
-```JSON
+```json
 [{
    "employee": {
        "name": "John",
@@ -174,13 +174,13 @@ You combine data (records) saved in an external data source with an interactive 
  1. [Build and deploy an AEM Project using Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) on your AEM instance.
  1. Add [AEM Forms Client SDK version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) or later in dependencies list of POM file of your AEM project. For example,
 
-    ```XML
+    ```xml
         <dependency>
             <groupId>com.adobe.aemfd</groupId>
             <artifactId>aemfd-client-sdk</artifactId>
             <version>6.0.122</version>
         </dependency>
-    ```    
+    ```
     
  1. Open the Java project, create a .java file, for example CCMBatchServlet.java. Add the following code to the file:
 
@@ -358,4 +358,5 @@ Apart from saving the data on file system, you store JSON files in CRX-repositor
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
-> Only CRX protocol is enabled by default. To enable other supported protocols, see [Configuring prefill service using Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
+>
+>Only CRX protocol is enabled by default. To enable other supported protocols, see [Configuring prefill service using Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).

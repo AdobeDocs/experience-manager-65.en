@@ -33,7 +33,7 @@ For example, suppose you want to present images of caps with different color bil
 
 To get you up and running quickly:
 
-1. [Upload your master images for multiple views.](#uploading-assets-in-image-sets)
+1. [Upload your primary source images for multiple views.](#uploading-assets-in-image-sets)
 
    Start by uploading the images for your Image Sets. Because users can zoom on images in the Image Set Viewer, take zooming into account when you choose images. Make sure that the images are least 2000 pixels in the largest dimension for optimal zoom detail. Dynamic Media can render images up to 25 megapixels each. For example, you could use a 5000 x 5000 megapixel image or any other size combination up to 25 megapixels.
 
@@ -43,7 +43,7 @@ To get you up and running quickly:
 
    In Image Sets, users click thumbnail images in the Image Set Viewer.
 
-   To create an Image Set in Assets, tap or click **[!UICONTROL Create > Image Sets]**. Then, add images and click **[!UICONTROL Save]**.
+   To create an Image Set in Assets, tap or click **[!UICONTROL Create > Image Sets.]** Then, add images and click **[!UICONTROL Save.]**
 
    You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md). 
    >[!IMPORTANT]
@@ -56,7 +56,7 @@ To get you up and running quickly:
 
 1. Add [Image Set Viewer presets](/help/assets/managing-viewer-presets.md), as needed.
 
-   Administrators can create or modify Image Set Viewer Presets. To see your image set with a viewer preset, select the image set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers]**.
+   Administrators can create or modify Image Set Viewer Presets. To see your image set with a viewer preset, select the image set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers.]**
 
    See **[!UICONTROL Tools > Assets > Viewer Presets]** to create or edit viewer presets.
 
@@ -73,7 +73,7 @@ To get you up and running quickly:
 
    AEM Assets creates URL calls for Image Sets and activates them after you publish the image sets. You can copy these URLs when you preview assets. Alternatively, you can embed them on your web site.
 
-   Select the Image Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers]**.
+   Select the Image Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers.]**
 
    See [Linking an Image Set to a web page](/help/assets/linking-urls-to-yourwebapplication.md) and [Embedding the Video or Image Viewer](/help/assets/embed-code.md).
 
@@ -121,7 +121,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 **To create an Image Set**
 
-1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Navigation > Assets]**. Navigate to where you want to create an image set, then tap **[!UICONTROL Create > Image Set]** to open the Image Set Editor page.
+1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Navigation > Assets.]** Navigate to where you want to create an image set, then tap **[!UICONTROL Create > Image Set]** to open the Image Set Editor page.
 
    You can also create the set from inside a folder that contains your assets.
 
@@ -133,13 +133,13 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 1. Do either one of the following:
 
-    * Near the upper-left corner of the Image Set Editor page, tap **[!UICONTROL Add Asset]**.
+    * Near the upper-left corner of the Image Set Editor page, tap **[!UICONTROL Add Asset.]**
 
-    * Near the middle of the Image Set Editor page, tap **[!UICONTROL Tap to open Asset Selector]**.
+    * Near the middle of the Image Set Editor page, tap **[!UICONTROL Tap to open Asset Selector.]**
 
-   Tap to select assets that you want to include in your Image Set. Selected assets have a checkmark icon over them. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
+   Tap to select assets that you want to include in your Image Set. Selected assets have a checkmark icon over them. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select.]**
 
-   With the Asset Selector, you can search for assets by typing in a keyword and tapping or clicking **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then tap the **[!UICONTROL Filter]** icon on the toolbar. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
+   With the Asset Selector, you can search for assets by typing in a keyword and tapping or clicking **[!UICONTROL Return.]** You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then tap the **[!UICONTROL Filter]** icon on the toolbar. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View.]**
 
    See [Working with Selectors.](/help/assets/working-with-selectors.md)
 
@@ -151,19 +151,19 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
    ![6_5_imageset-reorderassets](assets/6_5_imageset-reorderassets.png)
 
-   If you want to change a thumbnail or swatch, click the **+** **thumbnail** icon next to the image and navigate to the thumbnail or swatch you want. When done selecting all the images click **[!UICONTROL Save]**.
+   If you want to change a thumbnail or swatch, click the **+** **thumbnail** icon next to the image and navigate to the thumbnail or swatch you want. When done selecting all the images click **[!UICONTROL Save.]**
 
 1. (Optional) Do any of the following:
 
-    * To delete an image, select the image and tap **[!UICONTROL Delete Asset]**.
+    * To delete an image, select the image and tap **[!UICONTROL Delete Asset.]**
 
     * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a preset to apply to all the assets at once.
 
    >[!NOTE]
    >
-   >When creating the image set, you can change the image set thumbnail or allow AEM to select the thumbnail automatically based on the assets in the image set. To select a thumbnail, tap **[!UICONTROL Change thumbnail]** above the Title field on the Image Set Editor page, then select any image (you can navigate to other folders to find images as well). If you have selected a thumbnail and then decide that you want AEM to generate one from the image set, select **[!UICONTROL Switch to]** **[!UICONTROL Automatic thumbnail]**.
+   >When creating the image set, you can change the image set thumbnail or allow AEM to select the thumbnail automatically based on the assets in the image set. To select a thumbnail, tap **[!UICONTROL Change thumbnail]** above the Title field on the Image Set Editor page, then select any image (you can navigate to other folders to find images as well). If you have selected a thumbnail and then decide that you want AEM to generate one from the image set, select **[!UICONTROL Switch to]** **[!UICONTROL Automatic thumbnail.]**
 
-1. Click **[!UICONTROL Save]**. Your newly created Image Set appears in the folder you created it in.
+1. Click **[!UICONTROL Save.]** Your newly created Image Set appears in the folder you created it in.
 
 ## Viewing Image Sets {#viewing-image-sets}
 
@@ -179,11 +179,11 @@ However, sets created using batch set presets, do *not* appear in the user inter
 
   ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
 
-* From a member image of any set. Select the **[!UICONTROL Sets** menu to display the sets that the asset is a member of.
+* From a member image of any set. Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
 
   ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* From search, you can select **[!UICONTROL Filter**, then expand **[!UICONTROL Dynamic Media** and select **[!UICONTROL Sets]**.
+* From search, you can select **[!UICONTROL Filter]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets.]**
 
   The search returns matching sets that were manually created in the UI or automatically created through batch set presets. For automated sets, the search query is conducted using "Starts with" search criteria which is different from AEM search which is based on using "Contains" search criteria. Setting the filter to **[!UICONTROL Sets]** istheonly way to search automated sets.
 
@@ -215,14 +215,14 @@ You can perform a variety of editing tasks on Image Sets such as the following:
 
     * To reorder assets, drag an image to a new location (select the reorder icon to move items).
     * To sort items in ascending or descending order, click the column heading.
-    * To add an asset or update an existing asset, click the **[!UICONTROL Add Asset]**. Navigate to an asset, select it, then tap **[!UICONTROL Select]** near the upper-right corner of the page.
+    * To add an asset or update an existing asset, click the **[!UICONTROL Add Asset.]** Navigate to an asset, select it, then tap **[!UICONTROL Select]** near the upper-right corner of the page.
         >[!NOTE]
         >
         >If you delete the image that AEM uses for the thumbnail by replacing it with another image, the original asset still displays.
-    * To delete an asset, select it and tap or click **[!UICONTROL Delete Asset]**.
+    * To delete an asset, select it and tap or click **[!UICONTROL Delete Asset.]**
     * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
-    * To add or change a thumbnail, select the thumbnail icon next to the right of the asset. Navigate to the new thumbnail or swatch asset, select it, then tap **[!UICONTROL Select]**.
-    * To delete an entire Image Set, navigate to the Image Set, select it, and tap **[!UICONTROL Delete]**.
+    * To add or change a thumbnail, select the thumbnail icon next to the right of the asset. Navigate to the new thumbnail or swatch asset, select it, then tap **[!UICONTROL Select.]**
+    * To delete an entire Image Set, navigate to the Image Set, select it, and tap **[!UICONTROL Delete.]**
 
    >[!NOTE]
    >

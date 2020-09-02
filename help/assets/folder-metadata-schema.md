@@ -6,13 +6,13 @@ contentOwner: AG
 
 # Folder metadata schema {#folder-metadata-schema}
 
-Adobe Experience Manager Assets lets you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages.
+[!DNL Adobe Experience Manager Assets] lets you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages.
 
 ## Add a folder metadata schema form {#add-a-folder-metadata-schema-form}
 
 Use the Folder Metadata Schema Forms editor to create and edit metadata schemas for folders.
 
-1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
 1. On the [!UICONTROL Folder Metadata Schema Forms] page, click **[!UICONTROL Create]**.
 1. Specify a name for the form, and click **[!UICONTROL Create]**. The new schema form is listed in the [!UICONTROL Schema Forms] page.
 
@@ -25,7 +25,7 @@ You can edit a newly added or existing metadata schema form, which includes the 
 
 You can map/configure these form items to a field within a metadata node in the CRX repository. You can add new tabs or form items to the metadata schema form.
 
-1. In the Schema Forms page, select the form you created, and then click the **[!UICONTROL Edit]** icon from the toolbar.
+1. In the Schema Forms page, select the form you created, and then select the **[!UICONTROL Edit]** option from the toolbar.
 1. In the Folder Metadata Schema Editor page, click `+` to add a tab to the form. To rename the tab, click the default name and specify the new name under **[!UICONTROL Settings]**.
 
    ![custom_tab](assets/custom_tab.png)
@@ -89,7 +89,7 @@ To ensure that the component is displayed properly in the metadata schema form, 
 
 ## Delete folder metadata schema forms {#delete-folder-metadata-schema-forms}
 
-You can delete folder metadata schema forms from the Folder Metadata Schema Forms page. To delete a form, select it and click the Delete icon from the toolbar.
+You can delete folder metadata schema forms from the Folder Metadata Schema Forms page. To delete a form, select the form and click the delete option from the toolbar.
 
 ![delete_form](assets/delete_form.png)
 
@@ -101,7 +101,7 @@ If you configure a metadata schema for a folder, the path to the schema form is 
 
 ### Assign to a schema from the Folder Metadata Schema page {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]**> **[!UICONTROL Folder Metadata Schemas]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
 1. From the Folder Metadata Schema Forms page, select the schema form you want to apply to a folder.
 1. From the toolbar, click **[!UICONTROL Apply to Folder(s)]**.
 

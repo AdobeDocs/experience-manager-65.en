@@ -27,11 +27,11 @@ Therefore, the advanced scoring engine requires enough data to make analysis mea
 
 Setting up advanced scoring is virtually the same as basic scoring:
 
-* Basic and advanced scoring and badging rules are [applied to content](/help/communities/implementing-scoring.md#apply-rules-to-content) in the same manner
+* Basic and advanced scoring and badging rules are [applied to content](/help/communities/implementing-scoring.md#apply-rules-to-content) in the same manner.
 
-    * Basic and advanced scoring and badging rules may be applied to the same content
+    * Basic and advanced scoring and badging rules may be applied to the same content.
 
-* [Enabling badges for components](/help/communities/implementing-scoring.md#enable-badges-for-component) is generic
+* [Enabling badges for components](/help/communities/implementing-scoring.md#enable-badges-for-component) is generic.
 
 The differences in setting up the scoring and badging rules are:
 
@@ -39,23 +39,24 @@ The differences in setting up the scoring and badging rules are:
 * Advanced scoring rules:
 
     * `scoringType` set to `advanced`
-    * requires `stopwords`
+    * Requires `stopwords`
 
 * Advanced badging rules:
 
     * `badgingType` set to `advanced`
     * `badgingLevels` set to **number of expert levels to award**
-    * requires `badgingPaths` array of badges instead of thresholds array mapping points to badges
+    * Requires `badgingPaths` array of badges instead of thresholds array mapping points to badges.
 
 >[!NOTE]
->
->To use advanced scoring and badging capabilities, install the [Expert Identification package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg).
+ >
+ >To use advanced scoring and badging capabilities, install the [Expert Identification package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg).
+ >
 
 ## Configurable Scoring Engine {#configurable-scoring-engine}
 
 The advanced scoring engine provides an OSGi configuration with parameters that affect the advanced scoring algorithm.
 
-![chlimage_1-139](assets/chlimage_1-139.png)
+![advanced-scoring-engine](assets/advanced-scoring-engine.png)
 
 * **Scoring weights**
   
@@ -97,13 +98,13 @@ To invoke the advanced scoring engine, the `scoringType`should be set to `advanc
 
 See [Scoring Sub-Rules](/help/communities/implementing-scoring.md#scoring-sub-rules).
 
-![chlimage_1-140](assets/chlimage_1-140.png)
+![advanced-scoring-type](assets/advanced-scoring-type.png)
 
 ### Stopwords {#stopwords}
 
 The advanced scoring package installs a configuration folder that contains a stopwords file:
 
-* `/etc/community/scoring/configuration/stopwords`
+* `/libs/settings/community/scoring/configuration/stopwords`
 
 The advanced scoring algorithm uses the list of words contained in the stopwords file to identify common English words that are ignored during content processing.
 
@@ -117,7 +118,7 @@ The advanced badging rule properties differ from the [basic badging rule propert
 
 Instead of associating points with a badge image, it is only necessary to identify the number of experts allowed and the badge image to award.
 
-![chlimage_1-141](assets/chlimage_1-141.png)
+![advanced-badging-rules](assets/advanced-badging-rules.png)
 
 <table>
  <tbody>
@@ -129,7 +130,7 @@ Instead of associating points with a badge image, it is only necessary to identi
   <tr>
    <td>badgingPath</td>
    <td>String[]</td>
-   <td><em>(Required)</em> A multi-value string of badge images up to the number of badgingLevels. The badge image paths must be ordered so the first is awarded to the highest expert. If there are less badges than indicated by badgingLevels, the last badge in the array fills out the rest of the array. Example entry:<br /> <code>/etc/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
+   <td><em>(Required)</em> A multi-value string of badge images up to the number of badgingLevels. The badge image paths must be ordered so the first is awarded to the highest expert. If there are less badges than indicated by badgingLevels, the last badge in the array fills out the rest of the array. Example entry:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
    <td>badgingLevels</td>
@@ -144,7 +145,7 @@ Instead of associating points with a badge image, it is only necessary to identi
   <tr>
    <td>scoringRules</td>
    <td>String[]</td>
-   <td><em>(Optional)</em> A multi-value string to restrict the badging rule to scoring events identified by the scoring rule(s) listed.<br /> Example entry:<br /> <code>/etc/community/scoring/rules/adv-comments-scoring</code><br /> Default is no restriction.</td>
+   <td><em>(Optional)</em> A multi-value string to restrict the badging rule to scoring events identified by the scoring rule(s) listed.<br /> Example entry:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> Default is no restriction.</td>
   </tr>
  </tbody>
 </table>
@@ -157,9 +158,9 @@ Included in this beta release is one reward-based expert badge:
 
 * `expert`
   
-  `/etc/community/badging/images/expert-badge/jcr:content/expert.png`
+  `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-142](assets/chlimage_1-142.png)
+![expert-badge](assets/included-badge.png)
 
 For the expert badge to appear as a reward for activity, make sure:
 
@@ -176,43 +177,42 @@ See the basic information for:
 
 Included in the beta release are two advanced scoring rules for the [forum function](/help/communities/functions.md#forum-function) (one each for the forum and comments components of the forum feature):
 
-1. `/etc/community/scoring/rules/adv-comments-scoring`
+1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
     * `subRules[] =
-      /etc/community/scoring/rules/sub-rules/adv-comments-rule
-      /etc/community/scoring/rules/sub-rules/adv-voting-rule-owner
-      /etc/community/scoring/rules/sub-rules/adv-voting-rule`
+      /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+      /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+      /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule`
 
-1. `/etc/community/scoring/rules/adv-forums-scoring`
+1. `/libs/settings/community/scoring/rules/adv-forums-scoring`
 
     * `subRules[] =
-      /etc/community/scoring/rules/sub-rules/adv-forums-rule
-      /etc/community/scoring/rules/sub-rules/adv-comments-rule
-      /etc/community/scoring/rules/sub-rules/adv-voting-rule-owner`
+      /libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
+      /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+      /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner`
 
 **Notes:**
 
-* Both `rules`and `sub-rules` nodes are of type `cq:Page`
+* Both `rules` and `sub-rules` nodes are of type `cq:Page`.
 
-* `subRules`is an attribute of type String[] on the rule's `jcr:content` node
+* `subRules` is an attribute of type String[] on the rule's `jcr:content` node.
 
-* `sub-rules` may be shared among various scoring rules
+* `sub-rules` may be shared among various scoring rules.
 
-* `rules`should be located in a repository location with read permission for everyone
+* `rules` should be located in a repository location with read permission for everyone.
 
-    * Rule names must be unique regardless of location
+* Rule names must be unique regardless of location.
 
 ### Included Badging Rules {#included-badging-rules}
 
 Included in the release are two advanced badging rules that correspond to the [advanced forums and comments scoring rules](#included-scoring-rules-and-sub-rules).
 
-* `/etc/community/badging/rules/adv-comments-badging`
-* `/etc/community/badging/rules/adv-forums-badging`
+* `/libs/settings/community/badging/rules/adv-comments-badging`
+* `/libs/settings/community/badging/rules/adv-forums-badging`
 
 **Notes:**
 
-* `rules` nodes are of type cq:Page
-* `rules` should be located in a repository location with read permission for everyone
-
-    * Rule names must be unique regardless of location
+* `rules` nodes are of type cq:Page.
+* `rules` should be located in a repository location with read permission for everyone.
+* Rule names must be unique regardless of location.
 

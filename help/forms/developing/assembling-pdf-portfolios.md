@@ -22,7 +22,7 @@ The following illustration is a screenshot of a portfolio with *On an Image* sty
 
 Creating a PDF Portfolio serves as a paperless alternative to passing a collection of documents. Using AEM Forms you can create portfolios by invoking the Assembler service with a structured DDX document. The following DDX document is an example of a DDX document that creates a PDF Portfolio.
 
-```as3
+```xml
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
      <PDF result="portfolio1.pdf">
          <Portfolio>

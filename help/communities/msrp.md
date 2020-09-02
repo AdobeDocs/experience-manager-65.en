@@ -36,7 +36,7 @@ See also [Characteristics of SRP Options](working-with-srp.md#characteristics-of
   * Choice of run modes:
     * Standalone mode
     * [SolrCloud mode](solr.md#solrcloud-mode) (recommended for production environments)
-  * Choice of Multilingual Search (MLS)
+  * Choice of Multilingual Search (MLS):
     * [Installing Standard MLS](solr.md#installing-standard-mls)
     * [Installing Advanced MLS](solr.md#installing-advanced-mls)
 
@@ -50,7 +50,7 @@ On author, to access the Storage Configuration console:
 
 * From global navigation, select **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Storage Configuration]**.
 
-![chlimage_1-28](assets/chlimage_1-28.png)
+![msrp](assets/msrp.png)
 
 * Select **[!UICONTROL MongoDB Storage Resource Provider (MSRP)]**
 * **[!UICONTROL mongoDB Configuration]**
@@ -100,7 +100,7 @@ On author, to access the Storage Configuration console:
 
 ### MongoDB Replica Set {#mongodb-replica-set}
 
-For the production environment, it is strongly recommended to setup a replica set, a cluster of MongoDB servers that implements master-slave replication and automated failover.
+For the production environment, it is strongly recommended to setup a replica set, a cluster of MongoDB servers that implements primary-secondary replication and automated failover.
 
 To learn more about replica sets, visit MongoDB's [Replication](https://docs.mongodb.org/manual/replication/) documentation.
 

@@ -128,7 +128,7 @@ The following example walks you through creation of a test suite for testing mul
 1. Right-click the test node (here **afTestRegistration)** and then click **Create** &gt; **Create File**. Name the file js.txt and click **OK**.
 1. In the js.txt file, add the following text:
 
-   ```
+   ```javascript
    #base=.
    js.txt
 
@@ -138,7 +138,7 @@ The following example walks you through creation of a test suite for testing mul
 1. Right-click the test node (here **afTestRegistration)** and click **Create** &gt; **Create File**. Name the file init.js and click **OK**.
 1. Copy the following code to the init.js file and click **Save All**:
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
        window.testsuites = window.testsuites || {};
@@ -176,7 +176,7 @@ The following example walks you through creation of a test suite for testing mul
 
    To use the following code to test another adaptive form, change the path and name of the form in **navigateTo** (lines 11, 36, and 62) and the respective test cases. For more information on APIs for testing different aspects of forms and form objects, see [Calvin APIs](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
 

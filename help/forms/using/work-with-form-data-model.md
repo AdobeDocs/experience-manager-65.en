@@ -51,7 +51,7 @@ To add data model objects and services:
 
    Model tab displays added data model objects
 
-   >[!NOTE] {graybox="true"}
+   >[!NOTE]
    >
    >You can hold and drag data model object boxes around to organize them in the content area. All data model objects added in the form data model are grayed out in the Data Sources pane.
 
@@ -67,7 +67,7 @@ To add data model objects and services:
 
 1. Tap **[!UICONTROL Save]** to save the form model object.
 
-   >[!NOTE] {graybox="true"}
+   >[!NOTE]
    >
    >You can invoke services that you configured in the Services tab of a form data model using the adaptive form rules. The configured services are available in the Invoke services action of the rule editor For more information about using these services in adaptive form rules, see Invoke Services and Set Value Of rules in [rule editor](/help/forms/using/rule-editor.md).
 
@@ -194,7 +194,7 @@ Use the request attribute to retrieve the associated properties from the data so
 
 1. Include the following text in the head.jsp file:
 
-   ```
+   ```jsp
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
     request.setAttribute("paramMap",paraMap);%>
@@ -210,7 +210,7 @@ Typically, there are associations built between data model objects in a data sou
 
 When you add associated data model objects in a data source to a form data model, their associations are retained and displayed as connected by arrow lines. You can add associations between data model objects across disparate data sources in a form data model.
 
->[!NOTE] {graybox="true"}
+>[!NOTE]
 >
 >Predefined associations in a JDBC data source are not retained in the form data model. You must create them manually.
 
@@ -254,7 +254,7 @@ To add an association:
 1. Tap **[!UICONTROL Done]** to save the association and then **[!UICONTROL Save]** to save the form data model.
 1. Repeat the steps to create more associations as required.
 
->[!NOTE] {graybox="true"}
+>[!NOTE]
 >
 >The added association appears in the data model object box with the specified title and a line connecting the associated data model objects.
 >
@@ -504,24 +504,24 @@ The following table lists the constraints for input data based on the data sourc
 
 In this example, the input data is validated based on maximum, minimum, and required constraints defined in the Swagger file. The input data meets the validation criteria only if Order Id is present and its value is between 1 and 10.
 
-```xml
-parameters: [
-{
-name: "orderId",
-in: "path",
-description: "ID of pet that needs to be fetched",
-required: true,
-type: "integer",
-maximum: 10,
-minimum: 1,
-format: "int64"
-}
-]
+```json
+   parameters: [
+   {
+   name: "orderId",
+   in: "path",
+   description: "ID of pet that needs to be fetched",
+   required: true,
+   type: "integer",
+   maximum: 10,
+   minimum: 1,
+   format: "int64"
+   }
+   ]
 ```
 
 An exception is displayed if the input data does not meet the validation criteria. If the log level is set to **Debug**, an error is logged to the **error.log** file. For example,
 
-```java
+```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}
 ```
 

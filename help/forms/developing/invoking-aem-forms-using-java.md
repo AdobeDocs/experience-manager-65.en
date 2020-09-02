@@ -505,7 +505,7 @@ The following Java code example sets connection properties to invoke AEM Forms d
 
 The following Java code example sets connection properties to invoke AEM Forms deployed on WebLogic and using the EJB connection mode.
 
-```as3
+```java
  Properties ConnectionProps = new Properties();
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "t3://localhost:7001");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
@@ -518,7 +518,7 @@ The following Java code example sets connection properties to invoke AEM Forms d
 
 The following Java code example sets connection properties to invoke AEM Forms deployed on WebSphere and using the EJB connection mode.
 
-```as3
+```java
  Properties ConnectionProps = new Properties();
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "iiop://localhost:2809");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
@@ -531,7 +531,7 @@ The following Java code example sets connection properties to invoke AEM Forms d
 
 The following Java code example sets connection properties in SOAP mode to invoke AEM Forms deployed on JBoss.
 
-```as3
+```java
  Properties ConnectionProps = new Properties();
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
@@ -548,7 +548,7 @@ The following Java code example sets connection properties in SOAP mode to invok
 
 The following Java code example sets connection properties required to invoke AEM Forms deployed on JBoss Application Server and when service security is disabled.
 
-```as3
+```java
  Properties ConnectionProps = new Properties();
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "jnp://localhost:1099");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
@@ -561,7 +561,7 @@ The following Java code example sets connection properties required to invoke AE
 
 **Setting the SOAP connection mode with custom request timeout limit**
 
-```as3
+```java
  Properties ConnectionProps = new Properties();
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
@@ -577,7 +577,7 @@ You can use a `com.adobe.idp.Context` object to invoke a AEM Forms service with 
 
 The `authenticate` method returns an `AuthResult` object that contains the results of the authentication. You can create a `com.adobe.idp.Context` object by invoking its constructor. Then invoke the `com.adobe.idp.Context` object’s `initPrincipal` method and pass the `AuthResult` object, as shown in the following code:
 
-```as3
+```java
  Context myCtx = new Context();
  myCtx.initPrincipal(authResult);
 ```
@@ -586,7 +586,7 @@ Instead of setting the `DSC_CREDENTIAL_USERNAME` or `DSC_CREDENTIAL_PASSWORD` pr
 
 The following code example shows how to use a `com.adobe.idp.Context` object within connection settings that are used to create an `EncryptionServiceClient` object.
 
-```as3
+```java
  //Authenticate a user and use the Context object within connection settings
  // Authenticate the user
  String username = "wblue";
@@ -649,7 +649,7 @@ Client applications that use the SOAP connection mode can use the HTTP load bala
 
 The following example shows the contents of a jndi.properties file that is used to connect to AEM Forms that is deployed on WebSphere.
 
-```as3
+```ini
  java.naming.factory.initial=com.ibm.websphere.naming.
  WsnInitialContextFactory
  java.naming.provider.url=corbaloc::appserver1:9810,:appserver2:9810
@@ -659,7 +659,7 @@ The following example shows the contents of a jndi.properties file that is used 
 
 The following example shows the contents of a jndi.properties file that is used to connect to AEM Forms that is deployed on WebLogic.
 
-```as3
+```ini
  java.naming.factory.initial=weblogic.jndi.WLInitialContextFactory
  java.naming.provider.url=t3://appserver1:8001, appserver2:8001
 ```
@@ -668,7 +668,7 @@ The following example shows the contents of a jndi.properties file that is used 
 
 The following example shows the contents of a jndi.properties file that is used to connect to AEM Forms that is deployed on JBoss.
 
-```as3
+```ini
  java.naming.factory.initial= org.jnp.interfaces.NamingContextFactory
  java.naming.provider.url= jnp://appserver1:1099, appserver2:1099,
  appserver3:1099
@@ -708,7 +708,7 @@ An application can contain both `com.adobe.idp.Document` and `org.w3c.dom.Docume
 >
 >To prevent a memory leak in WebLogic while using a `com.adobe.idp.Document` object, read the document information in chunks of 2048 bytes or less. For example, the following code reads the document information in chunks of 2048 bytes:
 
-```as3
+```java
         // Set up the chunk size to prevent a potential memory leak
         int buffSize = 2048;
  
@@ -767,7 +767,7 @@ The following code example creates a `com.adobe.idp.Document` object that is bas
 
 **Creating a Document object that is based on a byte array**
 
-```as3
+```java
  Document myPDFDocument = new Document(myByteArray);
 ```
 
@@ -777,7 +777,7 @@ The following code example creates a `com.adobe.idp.Document` object that is bas
 
 **Creating a Document object that is based on another document**
 
-```as3
+```java
  //Create a Document object based on a byte array
  InputStream is = new FileInputStream("C:\\Map.pdf");
  int len = is.available();
@@ -802,7 +802,7 @@ Setting this parameter to `false` means that you retain ownership of this file. 
 
 **Creating a Document object that is based on a PDF file**
 
-```as3
+```java
  //Create a Document object based on the map.pdf source file
  File mySourceMap = new File("C:\\map.pdf");
  Document myPDFDocument = new Document(mySourceMap,true);
@@ -814,7 +814,7 @@ The following Java code example creates a `com.adobe.idp.Document` object that i
 
 **Creating a document based on an InputStream object**
 
-```as3
+```java
  //Create a Document object based on an InputStream object
  InputStream is = new FileInputStream("C:\\Map.pdf");
  Document myPDFDocument = new Document(is);
@@ -826,7 +826,7 @@ The following Java code example creates a `com.adobe.idp.Document` object that i
 
 The URL supplied to the `com.adobe.idp.Document` object is always read at the side where the original `com.adobe.idp.Document` object is created, as shown in this example:
 
-```as3
+```java
      Document doc = new Document(new java.net.URL("file:c:/temp/input.pdf"));
 ```
 
@@ -834,7 +834,7 @@ The c:/temp/input.pdf file must be located on the client computer (not on the se
 
 **Creating a document based on content accessible from an URL**
 
-```as3
+```java
  //Create a Document object based on a java.net.URL object
  URL myURL = new URL("http", "localhost", 8080,"/WebApp/map.pdf");
  
@@ -858,7 +858,7 @@ Service operations that return a PDF document (or other data types such as XML d
 
 The following line of code converts a `com.adobe.idp.Document` object to a `java.io.InputStream` object. Assume that `myPDFDocument` represents a `com.adobe.idp.Document` object:
 
-```as3
+```java
      java.io.InputStream resultStream = myDocument.getInputStream();
 ```
 
@@ -871,7 +871,7 @@ The following code example copies the contents of a `com.adobe.idp.Document` obj
 
 **Copying the contents of a document object to a file**
 
-```as3
+```java
  File outFile = new File("C:\\AnotherMap.pdf");
  myDocument.copyToFile (outFile);
 ```
@@ -933,7 +933,7 @@ The following code example determines the content type of a `com.adobe.idp.Docum
 
 **Determining the content type of a Document object**
 
-```as3
+```java
  //Determine the content type of the Document object
  String ct = myDocument.getContentType();
  System.out.println("The content type of the Document object is " +ct);
@@ -1036,7 +1036,7 @@ Invoke the `MyApplication/EncryptDocument` short-lived process using the Java in
 1. Create a `java.util.HashMap` object by using its constructor.
 1. Invoke the `java.util.HashMap` object’s `put` method for each input parameter to pass to the long-lived process. Because the `MyApplication/EncryptDocument` short-lived process requires one input parameter of type `Document`, you only have to invoke the `put` method once, as shown in the following example.
 
-   ```as3
+   ```java
     //Create a Map object to store the parameter value for inDoc
     Map params = new HashMap();
     InputStream inFile = new FileInputStream("C:\\Adobe\Loan.pdf");
@@ -1059,7 +1059,7 @@ Invoke the `MyApplication/EncryptDocument` short-lived process using the Java in
 
 1. Retrieve the process’s return value by invoking the `InvocationReponse` object’s `getOutputParameter` method and passing a string value that specifies the name of the output parameter. In this situation, specify `outDoc` ( `outDoc` is the name of the output parameter for the `MyApplication/EncryptDocument` process). Cast the return value to `Document`, as shown in the following example.
 
-   ```as3
+   ```java
     InvocationResponse response = myServiceClient.invoke(request);
     Document encryptDoc = (Document) response.getOutputParameter("outDoc");
    ```

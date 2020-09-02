@@ -126,8 +126,8 @@ AEM eCommerce is implemented with an eCommerce engine:
 >AEM eCommerce implemented within AEM using generic development based on JCR is:
 >
 >* A standalone, AEM-native eCommerce example to illustrate use of the API. This can be used to control product data, shopping carts and checkout in conjunction with the existing data display and marketing campaigns. In this case the product database is stored in the repository native to AEM (Adobe's implementation of [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)).
->  The standard AEM installation contains the basics of the [generic eCommerce implemention](/help/sites-administering/generic.md).
 >
+>  The standard AEM installation contains the basics of the [generic eCommerce implemention](/help/sites-administering/generic.md).
 
 ### Commerce Providers {#commerce-providers}
 

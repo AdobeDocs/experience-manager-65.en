@@ -220,7 +220,7 @@ Handling the action/button on clicking action/button includes logic for:
     1. Double-click the ccrcustomization.js file to open it in CRX.
     1. In the file, paste the following code and click **Save All**:
 
-       ```
+       ```javascript
        /* for adding and handling custom actions in Extensible Toolbar.
          * One instance of handler will be created for each action.
          * CM.domain.CCRCustomActionHandler is actionHandler class.
@@ -374,7 +374,7 @@ The required LiveCycle process that enables email service process.
 
 1. Click **Import**.
 
-#### Adding ServiceName to the WhiteListed Service list {#adding-servicename-to-the-whitelisted-service-list}
+#### Adding ServiceName to the Allowlist Service list {#adding-servicename-to-the-allowlist-service-list}
 
 Mention in the AEM server the LiveCycle services you want to access the AEM server.
 

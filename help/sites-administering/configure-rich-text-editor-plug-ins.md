@@ -486,7 +486,7 @@ In CRXDE, once the property is saved, the represented character is displayed. Se
 
 ### Define a range of characters {#definerangechar}
 
-1. Use steps 1 to 3 from [Defining a Single Character](#definingasinglecharacter).
+1. Use steps 1 to 3 from [Defining a Single Character](#definesinglechar).
 1. Under `chars` add a new node to hold the definition of the character range:
 
     * **Name** you can specify the name, but it should reflect the character range; for example, pencils.
@@ -736,7 +736,7 @@ To configure how links are added in AEM from another program, define the HTML ru
         * **Type** `String`
         * **Value** the name of the CSS class (without a preceding '.'; for example, `cssClass` instead of `.cssClass`)
 
-    * Array of valid **protocols** (including https://, https:// file://, mailto:, amongst others)
+    * Array of valid **protocols** (including `https://`, `https://`, `file://`, and `mailto:` amongst others)
 
         * **Name** `protocols`
         * **Type** `String[]`
@@ -772,7 +772,7 @@ To configure how links are added in AEM from another program, define the HTML ru
 
             * **Name** `targetInternal`
             * **Type** `String`
-            * **Value** the target for internal links (only use when the `` mode is `auto`)
+            * **Value** the target for internal links (only use when the mode is `auto`)
 
         * The target for external links:
 

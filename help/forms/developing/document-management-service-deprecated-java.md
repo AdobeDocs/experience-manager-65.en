@@ -45,7 +45,7 @@ Quick starts located in Programming with AEM forms are based on the Forms Server
 
 The following Java code example creates a new space named *Test Directory* located in Company Home. The identification value of the new space is written to the console.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -141,7 +141,7 @@ The following Java code example creates a new space named *Test Directory* locat
 
 The following Java code example deletes a space named /Company Home/Test Directory.
 
-```as3
+```java
 
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
@@ -242,7 +242,7 @@ The following Java code example deletes a space named /Company Home/Test Directo
 
 The following Java code example adds a PDF file named *MortgageForm.pdf* to a folder named /Company Home/Test Directory. The creator and description attributes are set. The identification value of the new content is written to the console.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -365,7 +365,7 @@ The following Java code example adds a PDF file named *MortgageForm.pdf* to a fo
 
 The following Java code example retrieves a PDF file named *MortgageForm.pdf* from /Company Home. The PDF file is saved to the local file system and is named *UpdatedMortgageForm.pdf*.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -471,7 +471,7 @@ The following Java code example retrieves a PDF file named *MortgageForm.pdf* fr
 
 The following Java code example moves a PDF file named *MortgageForm.pdf* from /Company Home/Test Directory to /Company Home. The identification value of the moved content is written to the console.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -572,7 +572,7 @@ The following Java code example moves a PDF file named *MortgageForm.pdf* from /
 
 The following Java code example lists content that is located in /Company Home. Each node type and node name is displayed.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -685,7 +685,7 @@ The following Java code example lists content that is located in /Company Home. 
 
 The following Java code searches /Company Home for a document that contains the text MortgageForm. The sub folders are also searched.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -795,7 +795,7 @@ The following Java code searches /Company Home for a document that contains the 
 
 The following Java code example sets a permission for a user named tony blue. The domain that is specified is the default domain. The Consumer permission is specified and the node is `/Company Home/Test Directory`.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -905,7 +905,7 @@ The following Java code example sets a permission for a user named tony blue. Th
 
 The following Java code creates an association an XML data file and a PDF form. This type of association is named LinkedBy.The PDF document must have the aspect linkable applied to it.
 
-```as3
+```java
 
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files

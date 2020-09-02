@@ -82,7 +82,7 @@ For the supported assets with multi-page formats &mdash; PDF files, AI files, [!
 
 Subasset generation is disabled by default. To enable subasset generation, follow these steps:
 
-1. Log into [!DNL Experience Manager] as an administrator. Access **[!UICONTROL Tools > Workflow > Models]**.
+1. Log into [!DNL Experience Manager] as an administrator. Access **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Select **[!UICONTROL DAM Update Asset]** workflow and click **[!UICONTROL Edit]**.
 1. Click **[!UICONTROL Toggle Side Panel]** and locate the **[!UICONTROL Create Sub Asset]** step. Add the step to the workflow. Click **[!UICONTROL Sync]**.
 
@@ -92,13 +92,13 @@ To generate the subassets do one of the following:
 * Existing multi-page assets: Manually execute the [!UICONTROL DAM Update Assets] workflow following either of the steps:
 
   * Select an asset and click [!UICONTROL Timeline] to open the left panel. Alternately, use the keyboard shortcut `alt + 3`. Click [!UICONTROL Start Workflow], select [!UICONTROL DAM Update Asset], click [!UICONTROL Start], and click [!UICONTROL Proceed].
-  * Select an asset and click [!UICONTROL Create > Workflow] from the toolbar. From the popup dialog, select [!UICONTROL DAM Update Asset] workflow, click [!UICONTROL Start], and click [!UICONTROL Proceed].
+  * Select an asset and click [!UICONTROL Create] > [!UICONTROL Workflow] from the toolbar. From the popup dialog, select [!UICONTROL DAM Update Asset] workflow, click [!UICONTROL Start], and click [!UICONTROL Proceed].
 
 Specifically for Microsoft Word documents, execute the **[!UICONTROL DAM Parse Word Documents]** workflow. It generates a `cq:Page` component from the contents of the Microsoft Word document. The images extracted from the document are referenced from the `cq:Page` component. These images are extracted even if subasset generation is disabled.
 
 ## View subassets {#viewing-subassets}
 
-The subassets are displayed only if the subassets are generated and are available for the selected multi-page asset. To view the generated subassets, open the multi-page asset. In the upper-left area of the page, click ![Left rail icon](assets/do-not-localize/aem_leftrail_contentonly.png) and click **[!UICONTROL Subassets]** from the list. When you select **[!UICONTROL Subassets]** from the list. Alternately, use the keyboard shortcut `alt + 5`.
+The subassets are displayed only if the subassets are generated and are available for the selected multi-page asset. To view the generated subassets, open the multi-page asset. In the upper-left area of the page, click ![Option to open left rail](assets/do-not-localize/aem_leftrail_contentonly.png) and click **[!UICONTROL Subassets]** from the list. When you select **[!UICONTROL Subassets]** from the list. Alternately, use the keyboard shortcut `alt + 5`.
 
 ![View subassets for a multi-page asset](assets/view_subassets_simulation.gif)
 
@@ -120,11 +120,11 @@ The following options are available in the toolbar, in the left rail, and in the
 
 * **[!UICONTROL Page Overview]** option displays all the subassets simultaneously.
 
-* **[!UICONTROL Timeline]** option from the left rail after clicking ![left rail icon](assets/do-not-localize/aem_leftrail_contentonly.png) displays the activity stream for the file.
+* **[!UICONTROL Timeline]** option from the left rail after clicking ![Option to open left rail](assets/do-not-localize/aem_leftrail_contentonly.png) displays the activity stream for the file.
 
 ## Best practices and limitation {#best-practice-limitation-tips}
 
-* Subasset generation can be very resource intensive on any Experience Manager deployment. If you are generating subassets when complex assets are uploaded, then add the step in the DAM Update Asset workflow. If you are generating subassets on-demand then create a separate workflow to generate subassets. A dedicated workflow allows you to skip the other steps in DAM Update Asset workflow and save computational resources.
+* Subasset generation can be very resource intensive on any [!DNL Experience Manager] deployment. If you are generating subassets when complex assets are uploaded, then add the step in the DAM Update Asset workflow. If you are generating subassets on-demand then create a separate workflow to generate subassets. A dedicated workflow allows you to skip the other steps in DAM Update Asset workflow and save computational resources.
 
 >[!MORELIKETHIS]
 >

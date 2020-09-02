@@ -57,7 +57,7 @@ Execute the following steps to create a variable:
     * Form Data Model - Specify a Form Data Model path.
     * ArrayList - Specify a sub-type for the collection.
 
-1. Specify an optional description for the variable and tap ![](assets/done_icon.png) to save the changes. The variable displays in the list available in the left pane.
+1. Specify an optional description for the variable and tap ![done_icon](assets/done_icon.png) to save the changes. The variable displays in the list available in the left pane.
 
 When you create variables, consider the following practices:
 
@@ -91,10 +91,10 @@ You can also update specific elements of a JSON or XML type variable using JSON 
 Execute the following steps to add mapping between variables:
 
 1. On the workflow edit page, tap the Steps icon available in the sidekick of the workflow model.
-1. Drag-and-drop the **Set Variable** step to the workflow editor, tap the step and select ![](assets/configure_icon.png) (Configure).
+1. Drag-and-drop the **Set Variable** step to the workflow editor, tap the step and select ![configure_icon](assets/configure_icon.png) (Configure).
 1. On the Set Variable dialog, select **[!UICONTROL Mapping]** > **[!UICONTROL Add Mapping]**.
 1. In the **Map Variable** section, select the variable to store data, select the mapping mode, and specify a value to store in the variable. The mapping modes vary based on the type of variable.
-1. Map more variables to make a meaningful expression. Tap ![](assets/done_icon.png) to save the changes.
+1. Map more variables to make a meaningful expression. Tap ![done_icon](assets/done_icon.png) to save the changes.
 
 ### Example 1: Query an XML variable to set value for a string variable {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -203,7 +203,7 @@ You require [AEM Forms add-on package](https://helpx.adobe.com/aem-forms/kb/aem-
 
 Retrieve the value of string data type using the following API:
 
-```
+```javascript
 workItem.getWorkflowData().getMetaDataMap().get(accname, Packages.java.lang.String)
 ```
 
@@ -211,13 +211,13 @@ workItem.getWorkflowData().getMetaDataMap().get(accname, Packages.java.lang.Stri
 
 Use the following API in the ECMA Script to update the value of a variable:
 
-```
+```javascript
 workItem.getWorkflowData().getMetaDataMap().put(variableName, value)
 ```
 
 **Example**
 
-```
+```javascript
 workItem.getWorkflowData().getMetaDataMap().put(salary, 50000)
 ```
 
@@ -231,7 +231,7 @@ You can use an API to set variables and pass them to invoke workflow instances.
 
 In this API, the **variableName** variable is set to **value** using metaData.put(variableName, value);
 
-```java
+```javascript
 import com.adobe.granite.workflow.model.WorkflowModel;
 import com.adobe.granite.workflow.metadata.MetaDataMap;
 import com.adobe.aemfd.docmanager.Document;
@@ -248,7 +248,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 Initialize the **doc** document object to a path ("a/b/c") and set the value of the **docVar** variable to the path stored in the document object.
 
-```java
+```javascript
 import com.adobe.granite.workflow.WorkflowSession;
 import com.adobe.granite.workflow.exec.WorkflowData;
 import com.adobe.granite.workflow.model.WorkflowModel;
@@ -267,8 +267,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Edit a variable {#edit-a-variable}
 
 1. On the edit workflow page, tap the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
-1. Tap the ![](assets/edit.png) (Edit) icon next to the variable name that you want to edit.
-1. Edit the variable information and tap ![](assets/done_icon.png) to save the changes. You cannot edit the **[!UICONTROL Name]** and **[!UICONTROL Type]** fields for a variable.
+1. Tap the ![edit](assets/edit.png) (Edit) icon next to the variable name that you want to edit.
+1. Edit the variable information and tap ![done_icon](assets/done_icon.png) to save the changes. You cannot edit the **[!UICONTROL Name]** and **[!UICONTROL Type]** fields for a variable.
 
 ## Delete a variable {#delete-a-variable}
 
@@ -278,7 +278,7 @@ Execute the following steps to delete a variable:
 
 1. On the edit workflow page, tap the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
 1. Tap the Delete icon next to the variable name that you want to delete.
-1. Tap ![](assets/done_icon.png) to confirm and delete the variable.
+1. Tap ![done_icon](assets/done_icon.png) to confirm and delete the variable.
 
 ## References {#references}
 

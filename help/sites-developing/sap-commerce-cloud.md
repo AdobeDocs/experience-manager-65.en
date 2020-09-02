@@ -20,6 +20,7 @@ discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 The integration framework includes an integration layer with an API. This allows you to:
 
 * plug in an eCommerce system and pull product data into AEM
+
 * build AEM components for commerce capabilities independent of the specific eCommerce engine
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
@@ -42,28 +43,29 @@ The eCommerce framework can be used with any eCommerce solution, the engine bein
 
 * eCommerce Engines are OSGi services supporting the `CommerceService` interface
 
-    * Engines can be distinguished by a `commerceProvider` service property
+  * Engines can be distinguished by a `commerceProvider` service property
 
 * AEM supports `Resource.adaptTo()` for `CommerceService` and `Product`
 
-    * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource's hierarchy:
+  * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource's hierarchy:
 
-        * If found, the value is used to filter the commerce service lookup.
-        * If not found, the highest-ranked commerce service is used.
+    * If found, the value is used to filter the commerce service lookup.
 
-    * A `cq:Commerce` mixin is used so the `cq:commerceProvider` can be added to strongly-typed resources.
+    * If not found, the highest-ranked commerce service is used.
+
+  * A `cq:Commerce` mixin is used so the `cq:commerceProvider` can be added to strongly-typed resources.
 
 * The `cq:commerceProvider` property is also used to reference the appropriate commerce factory definition.
 
-    * For example, a `cq:commerceProvider` property with the value `hybris` will correlate to the OSGi configuration for **Day CQ Commerce Factory for Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory) - where the parameter `commerceProvider` also has the value `hybris`.
+  * For example, a `cq:commerceProvider` property with the value `hybris` will correlate to the OSGi configuration for **Day CQ Commerce Factory for Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory) - where the parameter `commerceProvider` also has the value `hybris`.
 
-    * Here further properties, such as **Catalog version** can be configured (when appropriate and available).
+  * Here further properties, such as **Catalog version** can be configured (when appropriate and available).
 
 See the following examples below:
 
-| `cq:commerceProvider = geometrixx` |in a standard AEM installation a specific implementation is required; for example, the geometrixx example, which includes minimal extensions to the generic API |
-|---|---|
-| `cq:commerceProvider = hybris` |hybris implementation |
+| `cq:commerceProvider = geometrixx` | in a standard AEM installation a specific implementation is required; for example, the geometrixx example, which includes minimal extensions to the generic API |
+|--- |--- |
+| `cq:commerceProvider = hybris` | hybris implementation |
 
 ### Example {#example}
 
@@ -105,24 +107,22 @@ To develop for Hybris 4 the following is required:
 
   `-P hybris4`
 
-  It downloads the pre-configured Hybris 4 distribution and embeds it in the bundle:
-
-  ```
-  cq-commerce-hybris-server
-
-  ```
+  It downloads the pre-configured Hybris 4 distribution and embeds it in the bundle `cq-commerce-hybris-server`.
 
 * In the OSGi configuration manager:
 
-    * Disable Hybris 5 support for the Default Response Parser service.
-    * Ensure that Hybris Basic Authentication Handler service has a lower service ranking than Hybris OAuth Handler service.
+  * Disable Hybris 5 support for the Default Response Parser service.
+
+  * Ensure that Hybris Basic Authentication Handler service has a lower service ranking than Hybris OAuth Handler service.
 
 ### Session Handling {#session-handling}
 
 hybris uses a user session to store information such as the customer's shopping cart. The session id is returned from hybris in a `JSESSIONID` cookie that needs to be sent on subsequent requests to hybris. To avoid storing the session id in the repository it is encoded in another cookie that is stored in the shopper's browser. The following steps are performed:
 
 * On the first request no cookie is set on the shopper's request; so a request is sent to the hybris instance to create a session.
+
 * The session cookies are extracted from the response, encoded in a new cookie (for example, `hybris-session-rest`) and set on the response to the shopper. The encoding in a new cookie is required, because the original cookie is only valid for a certain path and would otherwise not be sent back from the browser in subsequent requests. The path information must also be added to the cookie's value.
+
 * On subsequent requests, the cookies are decoded from the `hybris-session-<*xxx*>` cookies and set on the HTTP client that is used to request data from hybris.
 
 >[!NOTE]
@@ -133,8 +133,9 @@ hybris uses a user session to store information such as the customer's shopping 
 
 * This session "owns" the **shopping cart**
 
-    * performs add/remove/etc
-    * performs the various calculations on the cart;
+  * performs add/remove/etc
+  
+  * performs the various calculations on the cart;
 
       `commerceSession.getProductPrice(Product product)`
 
@@ -143,6 +144,7 @@ hybris uses a user session to store information such as the customer's shopping 
   `CommerceSession.getUserContext()`
 
 * Also owns the **payment** processing connection
+
 * Also owns the **fulfillment** connection
 
 ### Product Synchronization and Publishing {#product-synchronization-and-publishing}
@@ -160,12 +162,13 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
 * The importer (b) is used for the initial setup of the page tree structure in AEM for catalogs.
 * Catalog changes in hybris are indicated to AEM via a feed, these then propagate to AEM (b)
 
-    * Product added/deleted/changed with respect to catalog version.
-    * Product approved.
+  * Product added/deleted/changed with respect to catalog version.
+
+  * Product approved.
 
 * The hybris extension provides a polling importer ("hybris" scheme"), which can be configured to import changes into AEM at a specified interval (for example, every 24 hours where the interval is specified in seconds):
 
-    * ```
+  ```JavaScript
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
        * "jcr:mixinTypes": ["cq:PollConfig"],
@@ -174,19 +177,21 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
        * "jcr:primaryType": "cq:PageContent",
        * "interval": 86400
        }
-      ```
+  ```
 
 * The catalog configuration in AEM recognizes **Staged** and **Online** catalog versions.
 
 * Syncing products between catalog versions will require a (de-)activation of the corresponding AEM page (a, c)
 
-    * Adding a product to an **Online** catalog version requires activation of the product's page.
-    * Removing a product requires deactivation.
+  * Adding a product to an **Online** catalog version requires activation of the product's page.
+
+  * Removing a product requires deactivation.
 
 * Activating a page in AEM (c) requires a check (b) and is only possible if
 
-    * The product is in an **Online** catalog version for product pages.
-    * The referenced products are available in an **Online** catalog version for other pages (e.g. campaign pages).
+  * The product is in an **Online** catalog version for product pages.
+
+  * The referenced products are available in an **Online** catalog version for other pages (e.g. campaign pages).
 
 * Activated product pages need to access the product data's **Online** version (d).
 
@@ -209,7 +214,6 @@ Any product resource can be represented by a `Product API`. Most calls in the pr
 >[!NOTE]
 >
 >In effect a variant axes is determined by whatever `Product.getVariantAxes()` returns:
->
 >* hybris defines it for the hybris implementation
 >
 >While products (in general) can have many variant axes, the out-of-the-box product component only handles two:
@@ -217,8 +221,8 @@ Any product resource can be represented by a `Product API`. Most calls in the pr
 >1. `size`
 >
 >1. plus one more
->   This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
 >
+>This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
 
 #### Product References and Product Data {#product-references-and-product-data}
 
@@ -234,21 +238,21 @@ Product references must also have a node for each variation presented - but ther
 
 ```shell
 etc
-  commerce
-    products
-      shirt
-        shirt-s
-        shirt-m
-        shirt-l
+|──commerce
+|  |──products
+|     |──shirt
+|       |──shirt-s
+|       |──shirt-m
+|       |──shirt-l
 ```
 
 While a "Big and Tall" catalog might have only:
 
 ```shell
 content
-  big-and-tall
-    shirt
-      shirt-l
+|──big-and-tall
+|  |──shirt
+|     |──shirt-l
 ```
 
 Finally, there is no requirement to use product data. You can place all product data under the references in the catalog; but then you cannot really have multiple catalogs without duplicating all the product data.
@@ -328,25 +332,31 @@ public class AxisFilter implements VariantFilter {
 
 * **General Storage Mechanism**
 
-    * Product nodes are nt:unstructured.
-    * A product node can be either:
+  * Product nodes are `nt:unstructured`.
+  
+  * A product node can be either:
 
-        * A reference, with the product data stored elsewhere:
+    * A reference, with the product data stored elsewhere:
 
-            * Product references contain a `productData` property, which points to the product data (typically under `/etc/commerce/products`).
-            * The product data is hierarchical; product attributes are inherited from a product data node's ancestors.
-            * Product references can also contain local properties, which override those specified in their product data.
+      * Product references contain a `productData` property, which points to the product data (typically under `/etc/commerce/products`).
 
-        * A product itself:
+      * The product data is hierarchical; product attributes are inherited from a product data node's ancestors.
 
-            * Without a `productData` property.
-            * A product node which holds all properties locally (and does not contain a productData property) inherits product attributes directly from its own ancestors.
+      * Product references can also contain local properties, which override those specified in their product data.
+
+    * A product itself:
+
+      * Without a `productData` property.
+
+      * A product node which holds all properties locally (and does not contain a productData property) inherits product attributes directly from its own ancestors.
 
 * **AEM-generic Product Structure**
 
-    * Each variant must have its own leaf node.
-    * The product interface represents both products and variants, but the related repository node is specific about which it is.
-    * The product node describes the product attributes and variant axes.
+  * Each variant must have its own leaf node.
+  
+  * The product interface represents both products and variants, but the related repository node is specific about which it is.
+  
+  * The product node describes the product attributes and variant axes.
 
 #### Example {#example-1}
 
@@ -446,9 +456,9 @@ The `CommerceSession` owns the three elements:
    The cart contents schema is fixed by the API:
 
    ```java
-       public void addCartEntry(Product product, int quantity);
-       public void modifyCartEntry(int entryNumber, int quantity);
-       public void deleteCartEntry(int entryNumber);
+   public void addCartEntry(Product product, int quantity);
+   public void modifyCartEntry(int entryNumber, int quantity);
+   public void deleteCartEntry(int entryNumber);
    ```
 
 1. **Pricing**
@@ -456,12 +466,12 @@ The `CommerceSession` owns the three elements:
    The pricing schema is also fixed by the API:
 
    ```java
-       public String getCartPreTaxPrice();
-       public String getCartTax();
-       public String getCartTotalPrice();
-       public String getOrderShipping();
-       public String getOrderTotalTax();
-       public String getOrderTotalPrice();
+   public String getCartPreTaxPrice();
+   public String getCartTax();
+   public String getCartTotalPrice();
+   public String getOrderShipping();
+   public String getOrderTotalTax();
+   public String getOrderTotalPrice();
    ```
 
 1. **Order Details**
@@ -469,9 +479,9 @@ The `CommerceSession` owns the three elements:
    However, order details are *not* fixed by the API:
 
    ```java
-       public void updateOrderDetails(Map<String, String> orderDetails);
-       public Map<String, String> getOrderDetails();
-       public void submitOrder();
+   public void updateOrderDetails(Map<String, String> orderDetails);
+   public Map<String, String> getOrderDetails();
+   public void submitOrder();
    ```
 
 **Shipping Calculations**
@@ -480,8 +490,8 @@ The `CommerceSession` owns the three elements:
 * The prices might be based on items and details of the order, such as weight and/or delivery address.
 * The `CommerceSession` has access to all the dependencies, so it can be treated in a similar manner as product pricing:
 
-    * The `CommerceSession` owns shipping pricing.
-    * Can retrieve/update delivery details by using `updateOrder(Map<String, Object> delta)`
+  * The `CommerceSession` owns shipping pricing.
+  * Can retrieve/update delivery details by using `updateOrder(Map<String, Object> delta)`
 
 >[!NOTE]
 >
@@ -498,6 +508,7 @@ The `CommerceSession` owns the three elements:
 **Payment Processing**
 
 * The `CommerceSession` also owns the payment processing connection.
+
 * Implementors need to add specific calls (to their chosen payment processing service) to the `CommerceSession` implementation.
 
 **Order Fulfillment**
@@ -545,9 +556,9 @@ Integration is provided between AEM and various eCommerce systems. This requires
 
   AEM is presumed to be the *only* web front-end and therefore performs *all* authentication.
 
-* Slave Accounts
+* Accounts in Hybris
 
-  AEM creates a slave account in hybris for each shopper. The username of the slave account is the same as the AEM username. A cryptographically-random password is auto-generated and stored (encrypted) in AEM.
+  AEM creates a corresponding (subordinate) account in hybris for each shopper. The username of this account is the same as the AEM username. A cryptographically-random password is auto-generated and stored (encrypted) in AEM.
 
 #### Pre-existing Users {#pre-existing-users}
 
@@ -579,7 +590,7 @@ To build upon existing functionality your custom import handler:
 
 * has to implement the `ImportHandler` interface
 
-* can extend the `DefaultImportHandler`
+* can extend the `DefaultImportHandler`.
 
 ```java
 /**
@@ -589,66 +600,66 @@ To build upon existing functionality your custom import handler:
  */
 public interface ImportHandler {
 
-    /**
-     * Not used.
-     */
-    public void createTaxonomie(ImporterContext ctx);
+  /**
+  * Not used.
+  */
+  public void createTaxonomie(ImporterContext ctx);
 
-    /**
-     * Creates a catalog with the given name.
-     * @param ctx   The importer context
-     * @param name  The catalog's name
-     * @return Path of created catalog
-     */
-    public String createCatalog(ImporterContext ctx, String name) throws Exception;
+  /**
+  * Creates a catalog with the given name.
+  * @param ctx   The importer context
+  * @param name  The catalog's name
+  * @return Path of created catalog
+  */
+  public String createCatalog(ImporterContext ctx, String name) throws Exception;
 
-    /**
-     * Creates a product from the given values.
-     * @param ctx                The importer context
-     * @param values             The product's properties
-     * @param parentCategoryPath The containing category's path
-     * @return Path of created product
-     */
-    public String createProduct(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
+  /**
+  * Creates a product from the given values.
+  * @param ctx                The importer context
+  * @param values             The product's properties
+  * @param parentCategoryPath The containing category's path
+  * @return Path of created product
+  */
+  public String createProduct(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
 
-    /**
-     * Creates a variant product from the given values.
-     * @param ctx             The importer context
-     * @param values          The product's properties
-     * @param baseProductPath The base product's path
-     * @return Path of created product
-     */
-    public String createVariantProduct(ImporterContext ctx, ValueMap values, String baseProductPath) throws Exception;
+  /**
+  * Creates a variant product from the given values.
+  * @param ctx             The importer context
+  * @param values          The product's properties
+  * @param baseProductPath The base product's path
+  * @return Path of created product
+  */
+  public String createVariantProduct(ImporterContext ctx, ValueMap values, String baseProductPath) throws Exception;
 
-    /**
-     * Creates an asset for a product. This is usually a product
-     * image.
-     * @param ctx             The importer context
-     * @param values          The product's properties
-     * @param baseProductPath The product's path
-     * @return Path of created asset
-     */
-    public String createAsset(ImporterContext ctx, ValueMap values, String productPath) throws Exception;
+  /**
+  * Creates an asset for a product. This is usually a product
+  * image.
+  * @param ctx             The importer context
+  * @param values          The product's properties
+  * @param baseProductPath The product's path
+  * @return Path of created asset
+  */
+  public String createAsset(ImporterContext ctx, ValueMap values, String productPath) throws Exception;
 
-    /**
-     * Creates a category from the given values.
-     * @param ctx           The importer context
-     * @param values        The category's properties
-     * @param parentPath    Path of parent category or base path of import in case of root category
-     * @return Path of created category
-     */
-    public String createCategory(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
+  /**
+  * Creates a category from the given values.
+  * @param ctx           The importer context
+  * @param values        The category's properties
+  * @param parentPath    Path of parent category or base path of import in case of root category
+  * @return Path of created category
+  */
+  public String createCategory(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
 }
 ```
 
-For your custom handler to be recognized by the importer, it must specify the `service.ranking`property with a value higher than 0; for example:
+For your custom handler to be recognized by the importer, it must specify the `service.ranking`property with a value higher than 0; for example.
 
 ```java
 @Component
 @Service
 @Property(name = "service.ranking", value = 100)
-public class MyImportHandler extends DefaultImportHandler {
-    ...
+public class MyImportHandler extends DefaultImportHandler
+{
+...
 }
 ```
-

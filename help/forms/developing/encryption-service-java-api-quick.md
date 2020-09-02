@@ -35,7 +35,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 The following Java code example encrypts a PDF document named *Loan.pdf* with a password value of `OpenPassword`. The master password is `PermissionPassword`. The secured PDF document is saved as a PDF file named *EncryptLoan.pdf*. (See [Encrypting PDF Documents with a Password](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -155,7 +155,7 @@ The following Java code example encrypts a PDF document named *Loan.pdf* with a 
 
 The following Java code example removes password-based encryption from a PDF document named *EncryptLoan.pdf*. The master password value used to remove password-based encryption is *PermissionPassword*. The unsecured PDF document is saved as a PDF file named *noEncryptionLoan.pdf*. (See [Removing Password Encryption](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -252,7 +252,7 @@ The following Java code example removes password-based encryption from a PDF doc
 
 The following Java code example encrypts a PDF document named *Loan.pdf* with a certificate named *Encryption.cer*. The encrypted PDF document is saved as a PDF file named *EncryptLoanCert.pdf*. (See [Encrypting PDF Documents with Certificates](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -381,7 +381,7 @@ The following Java code example encrypts a PDF document named *Loan.pdf* with a 
 
 The following Java code example removes certificate-based encryption from a PDF document named *EncryptLoanCert.pdf*. The alias of the public key that is used to remove encryption is `Encryption`. The unsecured PDF document is saved as a PDF file named *noEncryptionLoan.pdf*. (See [Removing Certificate Based Encryption](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -478,7 +478,7 @@ The following Java code example removes certificate-based encryption from a PDF 
 
 The following Java code example unlocks a password-encrypted PDF document named *EncryptLoan.pdf*. (See [Unlocking Encrypted PDF Documents](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -574,7 +574,7 @@ The following Java code example unlocks a password-encrypted PDF document named 
 
 The following Java code example determines the type of encryption that is protecting a PDF document named *EncryptLoan.pdf*. (See [Determining Encryption Type](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

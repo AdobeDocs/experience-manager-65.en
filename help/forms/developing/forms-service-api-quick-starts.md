@@ -57,7 +57,7 @@ Application logic that uses the Forms service API is implemented as Java servlet
 
 The following code example renders an interactive PDF form named *Loan.xdp* to a client web browser. A file is attached to the form. Notice that the form design is part of an application and is referenced by using the content root URI value `repository:///`. (See [Rendering Interactive PDF Forms](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -199,7 +199,7 @@ The following code example renders an interactive PDF form named *Loan.xdp* to a
 
 The following code example renders a form named *Loan.xdp* at the client using the Forms service Java API. Notice that the form design is part of an application and is referenced by using the content root URI value `repository:///`. (See [Rendering Forms at the Client](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -332,7 +332,7 @@ The following code example renders a form named *Loan.xdp* at the client using t
 
 The following code example renders a Guide (deprecated) named *TLALifeClaim.xdp* to a client web browser.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -468,7 +468,7 @@ The following code example renders a Guide (deprecated) named *TLALifeClaim.xdp*
 
 The following code example renders a form that is based on fragments. The name of the form design is *PurchaseOrderDynamic.xdp* and it is located in the AEM Forms repository (the XDP file is stored in a folder named FormsFolder located in the repository). Also the fragments that the POFragment form references must also be located in the repository. (See [Rendering Forms Based on Fragments](/help/forms/developing/rendering-forms.md#rendering-forms-based-on-fragments).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -601,7 +601,7 @@ The following code example renders a form that is based on fragments. The name o
 
 The following code example renders a rights-enabled form to a client web browser. The usage rights set in this code example enable a user to add comments in the form and save form data. (See [Rendering Rights-Enabled Forms](/help/forms/developing/rendering-forms.md#rendering-rights-enabled-forms).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -738,7 +738,7 @@ The following code example renders a rights-enabled form to a client web browser
 
 The following code example renders an HTML form using the Forms service Java API. A toolbar is added to the HTML form as well as two file attachments. In addition, the user agent value is obtained from the `HttpServletRequest` object. (See [Rendering Forms as HTML](/help/forms/developing/rendering-forms.md#rendering-forms-as-html).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -899,7 +899,7 @@ The following code example renders an HTML form using the Forms service Java API
 
 The following code example renders an HTML form using the Forms service Client API. The name of the custom CSS file that is referenced is *custom.css*. (See [Rendering HTML Forms Using Custom CSS Files](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1054,7 +1054,7 @@ The following code example renders an HTML form using the Forms service Client A
 
 The following code example renders an HTML form with a toolbar that is displayed in French. The location of the fscmenu.xml is C:\Adobe (this folder must be on the server hosting AEM Forms). Notice that the locale value is `fr_FR`. The section that discusses how to render an HTML form with a custom toolbar shows the syntax of the fscmenu.xml file used in this quick start. (See [Rendering HTML Forms with Custom Toolbars](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1210,7 +1210,7 @@ The following code example renders an HTML form with a toolbar that is displayed
 
 The following code example handles a form that is submitted as XML. The content type value passed to the `processFormSubmission` method is `CONTENT_TYPE=text/xml`. The values that correspond to the fields named `mortgageAmount`, `lastName`, and `firstName` are displayed. A user-defined method named `getNodeText` is used in this quick start. It accepts an `org.w3c.dom.Document` instance and a string value that specifies the node name. This method returns a string value that represents the value of the node. (See [Handling Submitted Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1379,7 +1379,7 @@ The following code example handles a form that is submitted as XML. The content 
 
 The following code example handles a form that is submitted as PDF data. The content type value passed to the `processFormSubmission` method is `CONTENT_TYPE=application/pdf`. The submitted form is saved as a PDF file named *tempPDF.pdf*. Also, because the form is submitted as PDF, file attachments can be retrieved. Any file attachments are saved as JPEG files. (See [Handling Submitted Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1529,7 +1529,7 @@ The following code example handles a form that is submitted as PDF data. The con
 
 The following code example handles an HTML form that is submitted as XML data. The content type value passed to the `processFormSubmission` method is `CONTENT_TYPE=application/x-www-form-urlencoded`.The values that correspond to the fields named `mortgageAmount`, `lastName`, and `firstName` are displayed. A user-defined method named `getNodeText` is used in this quick start. It accepts an `org.w3c.dom.Document` instance and a string value that specifies the node name. This method returns a string value that represents the value of the node. (See [Handling Submitted Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1689,7 +1689,7 @@ The following code example handles an HTML form that is submitted as XML data. T
 
 The following Java code example handles form data that is submitted as XML. Form data is retrieved from the Form submission using the Forms API and sent to the Output service. The form data and a form design are used to create a non-interactive PDF document. The non-interactive PDF document is stored in a Content Services (deprecated) node named `/Company Home/Test Directory`. The name of the form is dynamically created. That is, the user’s first and last name are used to name the PDF file. The resource identifier of the new content is written out to the client web browser. (See [Creating PDF Documents with Submitted XML Data](/help/forms/developing/rendering-forms.md#creating-pdf-documents-with-submitted-xml-data).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2246,7 +2246,7 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
 
 The following code example processes a form that contains a calculation script and writes the results back to the client web browser. (See [Calculating Form Data](/help/forms/developing/rendering-forms.md#calculating-form-data).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2364,7 +2364,7 @@ The following code example processes a form that contains a calculation script a
 
 The following code example optimizes performance by setting the caching, standalone, and linearized options. A linearized file is optimized for delivery on the web. (See [Optimizing the Performance of the Forms Service](/help/forms/developing/rendering-forms.md#optimizing-the-performance-of-the-forms-service).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2492,7 +2492,7 @@ The following code example optimizes performance by setting the caching, standal
 
 The following Java quick start renders an interactive PDF form that is based on a form design named *Loan.xdp* by value. Notice that the form design is used to populate a `com.adobe.idp.Document` object named *inputXDP*. (See [Rendering Forms By Value](/help/forms/developing/rendering-forms.md#rendering-forms-by-value).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2619,7 +2619,7 @@ The following Java quick start renders an interactive PDF form that is based on 
 
 The following Java quick start retrieves the file Loan.xdp from Content Services (deprecated). This XDP file is located in the space `/Company Home/Form Designs`. The XDP file is returned in a `com.adobe.idp.Document` instance. The `com.adobe.idp.Document` instance is passed to the Forms service. The interactive form is written to a client web browser. (See [Passing Documents to the Forms Service](/help/forms/developing/passing-documents-forms-service.md).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar

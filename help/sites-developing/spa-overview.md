@@ -160,8 +160,8 @@ To enable the author to use the page editor to edit the content of an SPA, your 
 
 The SPA Editor SDK supports the following minimal versions:
 
-* React 16.3
-* Angular 6.x
+* React 16.x and up
+* Angular 6.x and up
 
 Previous versions of these frameworks may work with the AEM SPA Editor SDK, but are not supported.
 

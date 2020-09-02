@@ -491,4 +491,4 @@ All you need to do is place a `README.md` file in the component structure. This 
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
-The supported markdown is the same as that for [content fragments](/help/assets/content-fragments-markdown.md).
+The supported markdown is the same as that for [content fragments](/help/assets/content-fragments/content-fragments-markdown.md).

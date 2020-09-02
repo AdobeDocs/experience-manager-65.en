@@ -3,6 +3,7 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Classic UI Authoring User Guide
+user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 ---
 
 # AEM 6.5 Classic UI Authoring User Guide {#classic-ui}
@@ -53,10 +54,8 @@ user-guide-title: AEM 6.5 Classic UI Authoring User Guide
 + Personalization {#personalization}
     + [Understanding Segmentation](classic-personalization-campaigns-segmentation.md)
     + [Campaign Management](classic-personalization-campaigns.md)
-    + [Teasers and Strategies](classic-personalization-campaigns-teasers-strategy.md)
     + [Landing Pages](classic-personalization-campaigns-landingpage.md)
     + [Target offers](classic-personalization-campaigns-target-offers.md)
-    + [Working with the Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
     + [E-mail Marketing](classic-personalization-campaigns-email.md)
     + [Tracking Bounced Emails](classic-personalization-campaigns-email-tracking-bounces.md)
     + [Teasers and Strategies](classic-personalization-campaigns-teasers-strategy.md)

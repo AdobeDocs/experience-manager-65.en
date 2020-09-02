@@ -33,13 +33,13 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 >[!NOTE]
 >
-> Quick start located in Programming with AEM forms are based on the Document if you are using another operating system, such as Unix, replace Windows-specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick start located in Programming with AEM forms are based on the Document if you are using another operating system, such as Unix, replace Windows-specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Start (SOAP mode): Adding users using the Java API {#quick-start-soap-mode-adding-users-using-the-java-api}
 
 The following code example adds a user named Wendy Blue to AEM Forms. (See [Adding Users](/help/forms/developing/users.md#adding-users).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -157,7 +157,7 @@ The following code example adds a user named Wendy Blue to AEM Forms. (See [Addi
 
 The following code example deletes a user named Wendy Blue from AEM Forms. (See [Deleting Users](/help/forms/developing/users.md#deleting-users).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -253,7 +253,7 @@ The following code example deletes a user named Wendy Blue from AEM Forms. (See 
 
 The following code example finds a local user and the local group to which the user belongs. (See [Managing Users and Groups](/help/forms/developing/users.md#managing-users-and-groups).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -377,7 +377,7 @@ The following code example finds a local user and the local group to which the u
 
 The following code example assigns the Services User role to a principal, prints the roles the principal has, and subsequently removes the role from the principal. Two services are invoked for this quick start: the DirectoryManager service and the AuthorizationManager service.(See [Managing Roles and Permissions](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -520,7 +520,7 @@ The following code example assigns the Services User role to a principal, prints
 
 The following Java code example synchronizes users by using the User Management APIs. (See [Programmatically Synchronizing Users](/help/forms/developing/users.md#programmatically-synchronizing-users).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -629,7 +629,7 @@ The following Java code example synchronizes users by using the User Management 
 
 The following code example adds a user named Wendy Blue to AEM Forms. (See [Adding Users](/help/forms/developing/users.md#adding-users).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -747,7 +747,7 @@ The following code example adds a user named Wendy Blue to AEM Forms. (See [Addi
 
 The following code example creates a group named AdobeGroup to AEM Forms. (See [Creating Groups](/help/forms/developing/users.md#creating-groups).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -899,7 +899,7 @@ The following code example creates a group named AdobeGroup to AEM Forms. (See [
 
 The following Java code models managing of Preferences Nodes by using the User Management APIs. ( See [Programmatically Managing the Preferences Nodes](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1002,7 +1002,7 @@ public class ManagePreferences {
 
 The following Java code models managing of Preferences Nodes by using the User Management APIs ( See [Programmatically Managing the Preferences Nodes](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
