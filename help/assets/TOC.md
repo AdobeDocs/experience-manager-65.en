@@ -66,7 +66,7 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
     + [Using Rulesets to transform URLs](using-rulesets-to-transform-urls.md)
     + [Publishing Dynamic Media assets](publishing-dynamicmedia-assets.md)
     + [Working with Selective Publish in Dynamic Media](selective-publishing.md)
-    + [Invalidating the CDN cache by way of Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
+    + [Invalidating the CDN cache by way of Dynamic Media](help/assets/invalidate-cdn-cache-dynamic-media.md)
     + [Invalidating the CDN cache by way of Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
     + [Installing Feature Pack 18912 for bulk asset migration](bulk-ingest-migrate.md)
     + [Working with Selectors](working-with-selectors.md)
