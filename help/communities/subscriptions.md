@@ -39,7 +39,7 @@ Components must be configured to enable subscriptions *and* following. Features 
 
 ## Subscriptions from Following {#subscriptions-from-following}
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![subscription-following](assets/subscription-following.png)
 
 The **Follow** button provides a means to follow entries as activities, subscriptions and/or notifications. Each time the **Follow** button is selected, it is possible to toggle on or off a selection.
 
@@ -57,9 +57,9 @@ When email is [configured for replying by email](email.md#configure-polling-impo
 
 If they reply to the email, the content they enter in the reply will appear as content online.
 
-![chlimage_1-6](assets/chlimage_1-6.png)
+![email-reply](assets/email-reply.png)
 
 The amount of time it takes for a reply to be posted is controlled by the [polling importer's update interval](email.md#configure-polling-importer).
 
-![chlimage_1-7](assets/chlimage_1-7.png)
+![QA](assets/qa.png)
 

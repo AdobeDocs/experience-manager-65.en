@@ -80,13 +80,11 @@ To get you up and running quickly:
 
 1. Do one of the following:
 
-    * [Add a carousel banner to your website page
-      ](#adding-a-carousel-banner-to-your-website-page)You can add the carousel banner URL or embed code you have copied onto the website page.
+    * [Add a carousel banner to your website page](#adding-a-carousel-banner-to-your-website-page) You can add the carousel banner URL or embed code you have copied onto the website page.
 
         * [Integrate the carousel banner with an existing Quickview](#integrating-the-carousel-banner-with-an-existing-quickview). If you are using a third party web content management system, you will need to integrate the new carousel banner with the existing Quickview implementation on your website.
 
-    * [Add a carousel banner to your website in AEM
-      ](/help/assets/adding-dynamic-media-assets-to-pages.md)If you are an AEM Sites customer you can add the carousel set directly to the page in AEM, using the Interactive Media component.
+    * [Add a carousel banner to your website in AEM](/help/assets/adding-dynamic-media-assets-to-pages.md) If you are an AEM Sites customer you can add the carousel set directly to the page in AEM, using the Interactive Media component.
 
 If you need to edit Carousel Sets, see [editing Carousel Sets.](#editing-carousel-sets) In addition, you can view and edit [Carousel Set properties](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties).
 
@@ -195,7 +193,7 @@ To upload image banners, see [Uploading assets](/help/assets/managing-assets-tou
 
     * Near the middle of the page, tap **[!UICONTROL Tap to open Asset Selector.]**
 
-   Tap to select assets that you want to include in your Carousel Set. Selected assets have a checkmark icon over them. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select**.
+   Tap to select assets that you want to include in your Carousel Set. Selected assets have a checkmark icon over them. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
    With the Asset Selector, you can search for assets by typing in a keyword and tapping or clicking **[!UICONTROL Return.]** You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then tap the **[!UICONTROL Filter]** icon on the toolbar. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View.]**
 
@@ -388,7 +386,7 @@ You can preview carousel banners from the Carousel Editor (preferred method) or 
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Tap **Preview.]**
+1. Tap **[Preview.]**
 1. Tap the hotspots or image maps on the image to test their associated actions.
 
 **To preview carousel banners from the Viewers list**

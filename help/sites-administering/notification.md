@@ -61,7 +61,7 @@ To configure the from-email address, add a `sling:OsgiConfig` node to the reposi
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` of type `sling:OsgiConfig`
 
-1. Add a `String` property to the node] named `email.from`. For the value, specify the email address that you want to use.
+1. Add a `String` property to the node named `email.from`. For the value, specify the email address that you want to use.
 
 1. Click **Save All**.
 

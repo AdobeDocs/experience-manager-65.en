@@ -59,11 +59,11 @@ After signing in with administrative privileges, there are various ways to acces
 
 1. From global navigation, select navigation **[!UICONTROL Tools > CRXDE Lite]**.
 
-   ![chlimage_1-350](assets/chlimage_1-350.png)
+   ![crxde-lite](assets/tools-crxde.png)
 
 2. From the [classic UI welcome page](http://localhost:4502/welcome.html), scroll down and click **[!UICONTROL CRXDE Lite]** in the right panel.
 
-   ![chlimage_1-351](assets/chlimage_1-351.png)
+   ![classic-ui-crxde](assets/classic-ui-crxde.png)
 
 3. Browse directly to `CRXDE Lite`: `<server>:<port>/crx/de`
 
@@ -81,4 +81,4 @@ If not logged in, you will be unable to navigate the JCR repository or perform a
 
 ***When in doubt, re-login!***
 
-![chlimage_1-352](assets/chlimage_1-352.png)
+![relogin](assets/relogin.png)

@@ -26,8 +26,7 @@ All of these are realised with a series of default [Form components](/help/sites
 In addition to [developing new components](/help/sites-developing/developing-components-samples.md) for use on your forms you can also:
 
 * [Preload your form with values](#preloading-form-values)
-* [Preload (certain) fields with multiple values
-  ](#preloading-form-fields-with-multiple-values)
+* [Preload (certain) fields with multiple values](#preloading-form-fields-with-multiple-values)
 * [Develop new actions](#developing-your-own-form-actions)
 * [Develop new constraints](#developing-your-own-form-constraints)
 * [Show or hide specific form fields](#showing-and-hiding-form-components)

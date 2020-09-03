@@ -77,17 +77,17 @@ To create a new Translation Integration, which integrates a Translation Service 
 * Select **[!UICONTROL Cloud Services]**
 * Scroll down to **[!UICONTROL Translation Integration]**
 
-  ![chlimage_1-65](assets/chlimage_1-65.png)
+  ![translation-integration](assets/translation-integration.png)
 
 * Select **[!UICONTROL Show Configurations]**
 
-  ![chlimage_1-66](assets/chlimage_1-66.png)
+  ![show-configuration](assets/translation-integration1.png)
 
 * Select `[+]` icon next to **[!UICONTROL Available Configurations]** to create a new configuration
 
 #### Create Configuration Dialog {#create-configuration-dialog}
 
-![chlimage_1-67](assets/chlimage_1-67.png)
+![create-configuration](assets/translation-integration2.png)
 
 * **[!UICONTROL Parent Configuration]**
   
@@ -105,7 +105,7 @@ To create a new Translation Integration, which integrates a Translation Service 
 
 #### Translation Config Dialog {#translation-config-dialog}
 
-![chlimage_1-68](assets/chlimage_1-68.png)
+![configuration-dialog](assets/translation-integration3.png)
 
 For detailed instructions visit [Creating a Translation Integration Configuration](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)
 
@@ -151,7 +151,7 @@ One such setting is whether or not to always display community content in their 
 
 When pages are automatically translated into the user's preferred language, the UI for showing the original text and improving the translation are still made available.
 
-![chlimage_1-69](assets/chlimage_1-69.png)
+![user-profile](assets/translation-integration4.png)
 
 ### Community Site Setting {#community-site-setting}
 

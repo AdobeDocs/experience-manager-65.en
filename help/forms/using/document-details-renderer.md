@@ -85,7 +85,7 @@ AEM Forms workspace listens on `window.global.postMessage([Message],[Payload])`
 
 **AEM Forms workspace to third-party application communication**
 
-If AEM Forms workspace's direct action buttons are visible, it calls `window.[External-App-Name].getMessage([Action])`, where [ `Action]` is read from the `routeActionMap`. The third-party application must listen on this interface, and then notify AEM Forms workspace via the `postMessage ()` API.
+If AEM Forms workspace's direct action buttons are visible, it calls `window.[External-App-Name].getMessage([Action])`, where `[Action]` is read from the `routeActionMap`. The third-party application must listen on this interface, and then notify AEM Forms workspace via the `postMessage ()` API.
 
 For example, a Flex application can define `ExternalInterface.addCallback('getMessage', listener)` to support this communication. If the third-party application wants to handle form submission via its own buttons, then you should specify `hideDirectActions = true() in the runtimeMap` and you may skip this listener. Hence, this construct is optional.
 

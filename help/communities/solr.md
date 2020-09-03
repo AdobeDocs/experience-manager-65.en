@@ -76,8 +76,7 @@ sh ./scripts/cloud-scripts/zkcli.sh \
 #### 2. Create a collection {#create-a-collection}
 
 Reference:
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create
-](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 Usage:
 ./bin/solr create \
@@ -140,7 +139,7 @@ In all, the following 33 languages are supported in Advanced MLS.
 
 **Note**: AEM 6.1 refers to AEM 6.1 Communities FP3 and earlier.
 
-![chlimage_1-283](assets/chlimage_1-283.png)
+![compare-solr-mls](assets/compare-solr-mls.png)
 
 ### Installing Standard MLS {#installing-standard-mls}
 

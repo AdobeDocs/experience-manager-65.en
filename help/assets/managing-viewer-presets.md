@@ -37,7 +37,7 @@ See also [Keyboard accessiblity and navigation](https://docs.adobe.com/content/h
 
 ## Managing Viewer Presets {#managing-viewer-presets-1}
 
-You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
+You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets > Viewer Presets.]**
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -412,7 +412,7 @@ See [Special considerations for creating a Carousel Banner Viewer preset](#speci
 
 **To create a viewer preset**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
@@ -537,7 +537,7 @@ The Viewer Presets that are available in the user interface depends on which one
 
 **To activate or deactivate viewer presets**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets.]**
 1. On the Viewer Preset page, under the **[!UICONTROL State]** column header, tap the toggle to activate or deactivate a viewer preset.
 
    Viewer presets that are activated have the toggle appear on the right, inside a blue box; deactivated viewer presets have the toggle appear on the left, inside a light grey box.
@@ -554,13 +554,13 @@ See also [Previewing Assets](/help/assets/previewing-assets.md).
 
 **To publish viewer presets**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets.]**
 1. Select one or more viewer presets that you want to publish.
 1. On the toolbar, tap the **[!UICONTROL Publish]** icon.
 
 ## Sorting Viewer Presets {#sorting-viewer-presets}
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets.]**
 1. Click **[!UICONTROL Preset Title]**, **[!UICONTROL Type]**, **[!UICONTROL Published]**, or **[!UICONTROL State]** to sort by that column heading. For example, click **[!UICONTROL Type]**  to sort the viewer preset types in alphabetical or reverse-alphabetical order.
 
 ## Editing Viewer Presets {#editing-viewer-presets}
@@ -569,7 +569,7 @@ Be aware that editing any *predefined, out-of-the-box viewer presets* is not a s
 
 **To edit viewer presets**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Asset > Viewer Presets.]**
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Asset] > [!UICONTROL Viewer Presets.]**
 1. Select a preset by checking the box to the left of the viewer preset title.
 1. On the toolbar, tap **[!UICONTROL Edit.]**
 1. On the **[!UICONTROL Viewer Preset Editor]** page make the changes you want to the viewer preset, using the options found on the **[!UICONTROL Appearance]** and **[!UICONTROL Behavior]** tabs.

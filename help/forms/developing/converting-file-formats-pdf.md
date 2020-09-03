@@ -707,7 +707,7 @@ If the attributes fail to identify a caption, you can instead identify a window 
 Be aware of these issues:
 
 * Microsoft Spy++ displays captions by using an ampersand (&) to identify the caption’s hot key. For example, Spy++ shows the caption for one Print dialog box as `Pri&nt`, which indicates that the hotkey is *n*. Caption titles in script and dialog XML files must omit ampersands.
-* Some captions include line breaks. the Generate PDF service cannot identify line breaks. If a caption includes a line break, include enough of the caption to differentiate it from the other menu items and then use regular expressions for the omitted part. An example is ( `^Long caption title$`).]. (See [Using regular expressions in caption attributes](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
+* Some captions include line breaks. the Generate PDF service cannot identify line breaks. If a caption includes a line break, include enough of the caption to differentiate it from the other menu items and then use regular expressions for the omitted part. An example is ( `^Long caption title$`). (See [Using regular expressions in caption attributes](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
 * Use character entities (also called escape sequences) for reserved XML characters. For example, use `&` for ampersands, `<` and `>` for less than and greater than symbols, `&apos;` for apostrophes, and `&quot;` for quotation marks.
 
 If you plan to work on dialog or script XML files, you should install the application Microsoft Spy++.
