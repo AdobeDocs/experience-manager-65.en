@@ -9,6 +9,7 @@ docset: aem65
 ---
 
 # Configuring selective publishing at the folder level in Dynamic Media {#selective-publish-configure-folder}
+
 You can choose to publish or unpublish assets to or from AEM or Dynamic Media at the folder level, using either **[!UICONTROL Manage Publication]** or **[!UICONTROL Quick Publish]** instead of relying solely on the **[!UICONTROL Dynamic Media Configuration]** whose settings are global to all folders across your Dynamic Media instance.
 
 For example, with selective publishing you can work on assets for products that are not yet live. In such a case, a marketing team can access smart crop images and dynamic renditions that are synched to Dynamic Media so they can create promotional materials, all without the need to publish those assets to Dynamic Media for global delivery.
@@ -132,6 +133,7 @@ See [Creating a Dynamic Media Configuration](#configuring-dynamic-media-cloud-se
 1. Tap **[!UICONTROL OK]**. 
 
 ## Publishing assets to Dynamic Media or AEM using Quick Publish {#quick-publish-aem-dm}
+
 You can use **[!UICONTROL Quick Publish]** for simple asset activation cases. **[!UICONTROL Quick Publish]** publishes the selected assets immediately without any further user interaction. Because of this, any non-published references are also published automatically.
 
 >[!NOTE]
@@ -217,7 +219,7 @@ Optionally, you can use these check boxes in conjunction with the **[!UICONTROL 
     * In the upper-right corner of the **[!UICONTROL Manage Publication &ndash; Scope]** page, tap **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** to begin the action.
 1. Tap **[!UICONTROL OK]**.
 
-## Checking the publish status of an asset
+## Checking the publish status of an asset {#check-publish-status-of-asset}
 
 You can use **[!UICONTROL Timeline]** with **[!UICONTROL Card view]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]** in AEM to quickly check the publish state of an asset. 
 
