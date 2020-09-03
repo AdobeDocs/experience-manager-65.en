@@ -157,7 +157,7 @@ You can use **[!UICONTROL Quick Publish]** for simple asset activation cases. **
     | --- | --- | 
     | Publish to AEM | Publishes the selected assets immediately to AEM. |
     | Publish to Brand Portal | Publishes the selected assets immediately to **[!UICONTROL Brand Portal]**.<br>This option is only available if your AEM Assets instance has **[!UICONTROL Brand Portal]** already configured. |
-    | Publish to Dynamic Media | Publishes the selected assets immediately to Dynamic Media.<br>An asset must already be synched up to Dynamic Media. If necessary, ensure that **[!UICONTROL Sync mode]** in a folder's properties is already set to **[!UICONTROL Sync everything in this folder sub-tree to dynamicmedia]**.
+    | Publish to Dynamic Media | Publishes the selected assets immediately to Dynamic Media.<br>An asset must already be synched up to Dynamic Media. If necessary, ensure that **[!UICONTROL Sync mode]** in a folder's properties is already set to **[!UICONTROL Sync everything in this folder sub-tree to dynamicmedia]**. |
 1. Tap **[!UICONTROL OK]**, then tap **[!UICONTROL Close]**.
 
 ## Selectively publish or unpublish assets by way of search results {#selective-publish-unpublish-search-results}
@@ -193,7 +193,7 @@ Optionally, you can use these check boxes in conjunction with the **[!UICONTROL 
     | Unpublish | Selective Publish | Unpublished from AEM only. |
     | Publish to Dynamic Media | Immediately or Upon Activation | Not published to AEM, or Dynamic Media, or both. |
     | Publish to Dynamic Media | Selective Publish | Published to Dynamic Media only. | 
-    | Unpublish from Dynamic Media | Immediately or Upon Activation | Not unpublished from AEM, or Dynamic Media, or both.
+    | Unpublish from Dynamic Media | Immediately or Upon Activation | Not unpublished from AEM, or Dynamic Media, or both. |
     | Unpublish from Dynamic Media | Selective Publish | Unpublished from Dynamic Media only. |
 1. Under **[!UICONTROL Schedule]**, set the timing of the de-activation.
     | Selected schedule | What happens |
