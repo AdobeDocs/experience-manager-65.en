@@ -192,9 +192,10 @@ Optionally, you can use these check boxes in conjunction with the **[!UICONTROL 
     | Unpublish | Immediately or Upon Activation | Unpublished from AEM and Dynamic Media. |
     | Unpublish | Selective Publish | Unpublished from AEM only. |
     | Publish to Dynamic Media | Immediately or Upon Activation | Not published to AEM, or Dynamic Media, or both. |
-    | Publish to Dynamic Media | Selective Publish | Published to Dynamic Media only. | 
+    | Publish to Dynamic Media | Selective Publish | Published to Dynamic Media only. |
     | Unpublish from Dynamic Media | Immediately or Upon Activation | Not unpublished from AEM, or Dynamic Media, or both. |
     | Unpublish from Dynamic Media | Selective Publish | Unpublished from Dynamic Media only. |
+
 1. Under **[!UICONTROL Schedule]**, set the timing of the de-activation.
     | Selected schedule | What happens |
     | --- | --- |
