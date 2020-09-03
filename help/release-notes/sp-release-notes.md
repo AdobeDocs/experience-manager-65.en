@@ -355,6 +355,8 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 * When you install [!DNL Acrobat DC] on the server, the **[!UICONTROL Distribute Form]** option is inactive (CQ-4296304).
 
+For information on security updates, see [Experience Manager security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
+
 ## Install 6.5.6.0 {#install}
 
 **Setup requirements**
