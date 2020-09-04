@@ -184,7 +184,7 @@ Once downloaded, you can install and configure the S3 Connector as follows:
 1. Edit the file and add the configuration options required by your setup.
 1. Start AEM.
 
-### Upgrading to a new version of the 1.10.x S3 Connector {#upgrading-to-a-new-version-of-the-x-s-connector}
+### Upgrading to a new version of the 1.10.x S3 Connector {#upgrading-to-a-new-version-of-the-s-connector}
 
 If you need to upgrade to a new version of the 1.10.x S3 connector (for example, from 1.10.0 to 1.10.4) follow these steps:
 
