@@ -125,7 +125,7 @@ Use these best practices when creating your own newsletter.
 
 | **Best Practice** |**Implementation** |
 |---|---|
-| Use W3C validator to correct the HTML code. Make sure all open tags are properly closed. |Code was validated. For XHTML transitional Doctype only the missing xmlns attribute for the <html> element is missing. |
+| Use W3C validator to correct the HTML code. Make sure all open tags are properly closed. |Code was validated. For XHTML transitional Doctype only the missing xmlns attribute for the `<html>` element is missing. |
 | Don’t bother with JavaScript or Flash - those technologies are largely unsupported by email clients. |Neither JavaScript nor Flash is used in the newsletter template. |
 | Add a plain text version for multipart sending. |A new widget was build into the page properties to easily extract a plaintext version from the page content. This can be used as a starting point for the final plaintext version. |
 
