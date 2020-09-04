@@ -198,7 +198,7 @@ If you need to upgrade to a new version of the 1.10.x S3 connector (for example,
 
    >[!NOTE]
    >
-   >The file names presented above are used for illustration purposes only and are not definitive.
+   >The file names presented above are used for illustration purposes only.
 
 1. Download the latest version of the 1.8.x feature pack from the [Adobe Repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Unzip the contents to a separate folder, then navigate to `jcr_root/libs/system/install/15`.
