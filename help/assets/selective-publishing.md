@@ -39,8 +39,8 @@ After you configure selective publishing in a folder, you can do any of the foll
 
 1. In AEM, tap the AEM logo to access the global navigation console. On the left side, tap the Navigation icon (just above the Tools icon), then tap **[!UICONTROL Assets > Files.]**
 1. Do one of the following:
-    * Edit the properties of an existing folder &ndash; In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, navigate to a folder whose properties you want to edit. Select the folder, then on the toolbar, tap **[!UICONTROL Properties.]**
-    * Edit the properties of a new folder &ndash; In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, near the upper-right corner of the page, tap **[!UICONTROL Create > Folder.]** In the **[!UICONTROL Create Folder]** dialog box, enter a title (required) for the folder, then tap **[!UICONTROL Create.]** Select the folder, then on the toolbar, tap **[!UICONTROL Properties.]**
+    * Edit the properties of an existing folder - In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, navigate to a folder whose properties you want to edit. Select the folder, then on the toolbar, tap **[!UICONTROL Properties.]**
+    * Edit the properties of a new folder - In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, near the upper-right corner of the page, tap **[!UICONTROL Create > Folder.]** In the **[!UICONTROL Create Folder]** dialog box, enter a title (required) for the folder, then tap **[!UICONTROL Create.]** Select the folder, then on the toolbar, tap **[!UICONTROL Properties.]**
 
 1. In the **[!UICONTROL Sync mode]** drop-down list, select one of the following:
 
@@ -91,7 +91,7 @@ See [Creating a Dynamic Media Configuration](#configuring-dynamic-media-cloud-se
         >
         >If **[!UICONTROL Manage Publication]** is not seen on the toolbar, tap the ellipsis button instead, then select **[!UICONTROL Manage Publication]** from the list menu.
 
-1. In the **[!UICONTROL Manage Publication &ndash; Options]** page, under **[!UICONTROL Action]**, select the type of activation you want.
+1. In the **[!UICONTROL Manage Publication - Options]** page, under **[!UICONTROL Action]**, select the type of activation you want.
 
     | Action | Description |
     | --- | --- |
@@ -106,9 +106,9 @@ See [Creating a Dynamic Media Configuration](#configuring-dynamic-media-cloud-se
     | **[!UICONTROL Later]** | Select to publish the assets on a particular date and time. |
 
 1. In the upper-right corner of the **[!UICONTROL Manage Publication]** page, tap **[!UICONTROL Next.]**
-1. In the **[!UICONTROL Manage Publication &ndash; Scope]** page, do one of the following:
+1. In the **[!UICONTROL Manage Publication - Scope]** page, do one of the following:
     * If necessary, select one or more assets that you want to remove from publishing.
-    * In the upper-right corner of the **[!UICONTROL Manage Publication &ndash; Scope]** page, tap **[!UICONTROL Publish]** or **[!UICONTROL Publish to Dynamic Media.]**
+    * In the upper-right corner of the **[!UICONTROL Manage Publication - Scope]** page, tap **[!UICONTROL Publish]** or **[!UICONTROL Publish to Dynamic Media.]**
 1. Tap **[!UICONTROL OK.]** 
 
 ### Selectively unpublish assets from Dynamic Media or AEM using Manage Publication {#selective-unpublish-manage-publication}
@@ -122,7 +122,7 @@ See [Creating a Dynamic Media Configuration](#configuring-dynamic-media-cloud-se
         >
         >If **[!UICONTROL Manage Publication]** is not seen on the toolbar, tap the ellipsis button instead, then select **[!UICONTROL Manage Publication]** from the list menu.
 
-1. In the **[!UICONTROL Manage Publication &ndash; Options]** page, under **[!UICONTROL Action]**, select the type of de-activation you want.
+1. In the **[!UICONTROL Manage Publication - Options]** page, under **[!UICONTROL Action]**, select the type of de-activation you want.
 
     | Action | Description |
     | --- | --- |
@@ -137,9 +137,9 @@ See [Creating a Dynamic Media Configuration](#configuring-dynamic-media-cloud-se
     | **[!UICONTROL Later]** | Select to unpublish the assets on a particular date and time. |
  
 1. In the upper-right corner of the **[!UICONTROL Manage Publication]** page, tap **[!UICONTROL Next.]**
-1. In the **[!UICONTROL Manage Publication &ndash; Scope]** page, do one of the following:
+1. In the **[!UICONTROL Manage Publication - Scope]** page, do one of the following:
     * Select one or more assets that you want to remove from unpublishing.
-    * In the upper-right corner of the **[!UICONTROL Manage Publication &ndash; Scope]** page, tap **[!UICONTROL Unpublish]** or **[!UICONTROL Unpublish from Dynamic Media.]**
+    * In the upper-right corner of the **[!UICONTROL Manage Publication - Scope]** page, tap **[!UICONTROL Unpublish]** or **[!UICONTROL Unpublish from Dynamic Media.]**
 1. Tap **[!UICONTROL OK.]** 
 
 ## Publishing assets to Dynamic Media or AEM using Quick Publish {#quick-publish-aem-dm}
@@ -216,8 +216,8 @@ Optionally, you can use these check boxes in conjunction with the **[!UICONTROL 
     | Now | The selected action is performed immediately. | 
     | Later | The selected action is run on the selected particular date and time. |
 
-1. In the upper-right corner of the **[!UICONTROL Manage Publication &ndash; Options]** page, tap **[!UICONTROL Next.]**
-1. (Optional) In the **[!UICONTROL Manage Publication &ndash; Scope]** page, review the **[!UICONTROL Publish Target]** column in the table for the selected assets. 
+1. In the upper-right corner of the **[!UICONTROL Manage Publication - Options]** page, tap **[!UICONTROL Next.]**
+1. (Optional) In the **[!UICONTROL Manage Publication - Scope]** page, review the **[!UICONTROL Publish Target]** column in the table for the selected assets. 
 
     | Publish Assets setting in Dynamic Media Configuration | Selected action | Publish Target |
     | --- | --- | --- |
@@ -230,9 +230,9 @@ Optionally, you can use these check boxes in conjunction with the **[!UICONTROL 
     | Selective Publish | Unpublish | AEM |
     | Selective Publish | Unpublish from Dynamic Media | Dynamic Media |
 
-1. In the **[!UICONTROL Manage Publication &ndash; Scope]** page, do one of the following:
+1. In the **[!UICONTROL Manage Publication - Scope]** page, do one of the following:
     * Select one or more assets that you want to remove from publishing or unpublishing.
-    * In the upper-right corner of the **[!UICONTROL Manage Publication &ndash; Scope]** page, tap **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** to begin the action.
+    * In the upper-right corner of the **[!UICONTROL Manage Publication - Scope]** page, tap **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** to begin the action.
 1. Tap **[!UICONTROL OK.]**
 
 ## Checking the publish status of an asset {#check-publish-status-of-asset}
