@@ -120,6 +120,8 @@ You can now attach multiple files to the [!UICONTROL File Attachment] component 
 
 #### Other key enhancements (6.5.5.0) {#other-enhancements-sites}
 
+* Anonymous access to CRXDE Lite is disallowed to enhance security. Instead, the users are directed to the login screen. See [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+
 * When copying or pasting a page tree, you now have the option of either pasting the root page or pasting the root page with the subpages of the tree.
 
 * [!DNL Adobe Experience Manager Experience Fragments] exported to [!DNL Adobe Target] workspaces now appear as unique offer types and offer sources in [!DNL Target].
