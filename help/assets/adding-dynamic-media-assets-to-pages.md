@@ -188,9 +188,9 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 >
 >By default, the Dynamic Media video component is adaptive. If you want to make it a fixed size, set it in the component with the **[!UICONTROL Width]** and **[!UICONTROL Height]** in the **[!UICONTROL Advanced]** tab.
 
-* **[!UICONTROL Viewer preset**&mdash;Select an existing video viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you may need to make it visible. See Managing Viewer Presets.
+* **[!UICONTROL Viewer preset]**&mdash;Select an existing video viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you may need to make it visible. See Managing Viewer Presets.
 
-* **[!UICONTROL Viewer modifiers**&mdash;Viewer modifiers take the form of name=value pair with a & delimiter and let you change viewers as outlined in the Adobe Viewers Reference Guide. An example of a viewer modifier is `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL Viewer modifiers]**&mdash;Viewer modifiers take the form of name=value pair with a & delimiter and let you change viewers as outlined in the Adobe Viewers Reference Guide. An example of a viewer modifier is `posterimage=img.jpg&caption=text.vtt,1`
 
     With viewer modifiers, you for example, can do the following:
 
@@ -199,7 +199,7 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
     You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Title**&mdash;Change the title of the video.
+* **[!UICONTROL Title]**&mdash;Change the title of the video.
 
 * **[!UICONTROL Width]**&mdash;Enter value in pixels if you want the image to be a fixed size. Leaving this value blank makes the asset adaptive.
 

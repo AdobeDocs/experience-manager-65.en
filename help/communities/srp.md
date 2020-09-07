@@ -95,7 +95,7 @@ In the case of JSRP, while UGC is stored in JCR, and accessible via both CRXDE L
 
 Further, the repository for the author and publish environments is not shared. While a cluster of publish instances results in a shared publish repository, UGC entered on publish will not be visible on author, hence no ability to manage UGC from author. UGC is only persisted in the AEM repository (JCR) of the instance on which it was entered.
 
-JSRP uses the Oak indices for queries.
+JSRP uses the Oak indexes for queries.
 
 ## About Shadow Nodes in JCR {#about-shadow-nodes-in-jcr}
 

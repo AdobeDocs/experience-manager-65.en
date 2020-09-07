@@ -103,7 +103,7 @@ The required options can be selected in **Page Properties** of the required fold
 
 1. Under **Cloud Service Configuration**, select **Adobe Target** from the drop-down list.
 
-1. >[!NOTE]
+   >[!NOTE]
    >
    >The JSON format of an Experience Fragment offer can be customized. To do this define a customer Experience Fragment component and then annotate how to export its properties in the component Sling Model.
    >

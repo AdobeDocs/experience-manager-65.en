@@ -46,7 +46,6 @@ user-guide-description: Learn key concepts for creating content and authoring in
     + [Responsive Layout](responsive-layout.md)
     + [Content Insight](content-insights.md)
     + [Creating Accessible Content (WCAG 2.1 Conformance)](creating-accessible-content.md)
-    + [Scaffolding](scaffolding.md)
     + [Configuring Components in Design Mode](default-components-designmode.md)
     + [Foundation Components](default-components-foundation.md)
     + [Scaffolding](scaffolding.md)

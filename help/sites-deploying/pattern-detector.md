@@ -214,7 +214,7 @@ Currently Pattern Detector allows to check:
 
 * OSGi bundles exports and imports mismatch
 * Sling resource types and super types (with search-path content overlays) overusages
-* definitions of Oak indices (compatibility)
+* definitions of Oak indexes (compatibility)
 * VLT packages (overuse)
 * rep:User nodes compatibility (in context of OAuth configuration)
 

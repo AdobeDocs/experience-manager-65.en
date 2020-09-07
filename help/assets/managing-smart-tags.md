@@ -37,3 +37,7 @@ The search results that match all search terms in metadata fields are displayed 
 1. matches of `woman running` in the various metadata fields.
 1. matches of `woman running` in smart tags.
 1. matches of `woman` or of `running` in smart tags.
+
+>[!CAUTION]
+>
+>If the Lucene indexing is done out of [!DNL Adobe Experience Manager] then the search based on smart tags does not work as expected.

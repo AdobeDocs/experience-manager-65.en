@@ -11,10 +11,6 @@ discoiquuid: cef8f597-7935-4d98-aacf-9981470ab620
 
 # We.Gov reference site FOIA walkthrough {#we-gov-reference-site-foia-walkthrough}
 
-## Pre-requisite {#pre-requisite}
-
-Set up your We.Gov reference site as described in the [Set up and configure AEM Forms reference sites](/help/forms/using/setup-reference-sites.md).
-
 ## Reference site Freedom of Information Act scenario {#reference-site-freedom-of-information-act-scenario}
 
 We.Gov is a state run organization that lets adoptive parents enroll for child support if they adopted a child. We.Gov also allows parents to request information from the following government departments under the freedom of information act:

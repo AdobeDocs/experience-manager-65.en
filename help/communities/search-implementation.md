@@ -76,18 +76,18 @@ Custom search features should use the [UGC search API](#ugc-search-api).
 
 #### Oak Indexing {#oak-indexing}
 
-While Oak indices are not automatically created for the AEM platform search, as of AEM 6.2 they have been added for AEM Communities to improve performance and provide support for pagination when presenting UGC search results.
+While Oak indexes are not automatically created for the AEM platform search, as of AEM 6.2 they have been added for AEM Communities to improve performance and provide support for pagination when presenting UGC search results.
 
-If custom properties are in use and searches are slow, then additional indices would need to be created for the custom properties to make them more performant. To maintain portability, adhere to the [naming requirements](#naming-of-custom-properties) when creating custom properties that are searchable.
+If custom properties are in use and searches are slow, then additional indexes would need to be created for the custom properties to make them more performant. To maintain portability, adhere to the [naming requirements](#naming-of-custom-properties) when creating custom properties that are searchable.
 
-To modify existing indices or create custom indices, refer to [Oak Queries and Indexing](../../help/sites-deploying/queries-and-indexing.md).
+To modify existing indexes or create custom indexes, refer to [Oak Queries and Indexing](../../help/sites-deploying/queries-and-indexing.md).
 
 The [Oak Index Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) is available from ACS AEM Commons. It provides:
 
-* A view of existing indices.
+* A view of existing indexes.
 * The ability to initiate re-indexing.
 
-To view the existing Oak indices in [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), the location is:
+To view the existing Oak indexes in [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), the location is:
 
 * `/oak:index/socialLucene`
 

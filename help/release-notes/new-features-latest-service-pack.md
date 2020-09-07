@@ -1,19 +1,108 @@
 ---
-title: What's new in Adobe Experience Manager 6.5 Service Pack 5
-description: What's new in Adobe Experience Manager 6.5 Service Pack 5
+title: What's new in Adobe Experience Manager 6.5 Service Pack 6
+description: What's new in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 ---
 
-# What's new in Adobe Experience Manager 6.5 Service Pack 5 {#aem-whats-new-service-pack-5}
+# What's new in Adobe Experience Manager 6.5 Service Pack 6 {#aem-whats-new-service-pack-6}
 
 Adobe Experience Manager 6.5 service packs provide new features, customer-requested enhancements, and performance, stability, and security improvements at quarterly intervals. The quarterly availability makes it easy to access and adopt new features and innovations.
 
-This article highlights the features included in the latest 6.5 Service Pack, [key features included in the previous 6.5 Service Packs](#key-features-previous-service-packs), and some of the [key releases since Experience Manager 6.5.4.0](#key-releases-since-last-sp) release.
+This article highlights the features included in the latest 6.5 Service Pack, [key features included in the previous 6.5 Service Packs](#key-features-previous-service-packs), and some of the [key releases since Experience Manager 6.5.5.0](#key-releases-since-last-sp) release.
 
-## Adobe Experience Manager Sites {#aem-sites}
+>[!VIDEO](https://video.tv.adobe.com/v/39867)
 
-### Accessibility improvements {#accessibility-sites}
+## Adobe [!DNL Experience Manager] Sites {#aem-sites}
+
+### Availability of Page Move operation in asynchronous mode {#page-move-asynchronous}
+
+Page Move operation is now available in asynchronous mode. In addition to immediate execution, you can also schedule the Page Move operation for later execution.
+
+## [!DNL Dynamic Media] {#dynamic-media}
+
+### Invalidate CDN cached content {#invalidate-cdn-cached-content}
+
+You can now use the[!DNL  Dynamic Media] user interface to invalidate Content Delivery Network (CDN) cached content. As a result, the updated assets are available instantly instead of waiting for the cache to expire. You can invalidate CDN by:
+
+* Creating a CDN invalidation template: Selecting assets and form associated template-based URLs
+
+* Selecting assets and associated presets through asset picker
+
+* Adding complete asset URLs
+
+### Selective publishing of assets to [!DNL Experience Manager] and [!DNL Dynamic Media] {#selective-publishing}
+
+You can now choose to selectively publish or unpublish assets to either [!DNL Experience Manager] or [!DNL Dynamic Media] using [!UICONTROL Quick Publish] or [!UICONTROL Manage Publication] wizard. You can also set the `Publish` or `Unpublish` mode at folder level.
+
+## [!DNL Adobe Experience Manager Assets] {#aem-assets}
+
+### Accessibility enhancements {#accessibility-assets-6560}
+
+* **Enhanced user interface focus during keyboard navigation**, for example focus on:
+
+  * `x` icon in [!UICONTROL Version Preview] dialog of an asset in [!UICONTROL Timeline].
+
+  * Actionable user interface options.
+
+  * Email field on the [!UICONTROL Share Link] dialog, and field to add closed user group in [!UICONTROL Permission] tab of folder [!UICONTROL Properties].
+  
+* **Enhanced functionality using keyboard keys**
+
+  Users can use keyboard keys to drag controls in Metadata Schema Form editor in browse mode of screen reader.
+
+* **Enhanced usability for screen reader users**, due to the following:
+
+  * Screen readers announce the purpose of video and audio players.
+
+  * Screen readers announce the purpose of the user interface options to remove the tags selected using [!UICONTROL Tags selection dialog] on asset [!UICONTROL Properties].
+
+  * Screen readers announce the row headers and row items of tables, so users know which entries belong to the same row.
+
+  * Descriptive and meaningful page title of search page.
+  
+  * Screen readers announce the options in search filter panel as expandable accordions.
+  
+### Other enhancements in Assets {#other-enhancements-assets-6560}
+
+* User groups of private folder are now removed from the repository on deletion of private folders. The deletion of private folder cleans up the repository of orphaned user groups, which are created each time a private folder is created.
+
+## [!DNL Adobe Experience Manager Forms] {#aem-forms}
+
+### Prefill an adaptive form at the client {#prefill-merge-data-at-client}
+
+When you prefill an adaptive form, the [!DNL Experience Manager Forms] server merges data with an adaptive form and delivers the filled form to you. By default, the data merge action takes place at the server.
+You can now configure the [!DNL Experience Manager Forms] server to perform the data merge action at the client instead of the server. It significantly reduces the time required to prefill and render adaptive forms.
+
+### Form data model integration with RESTful APIs on a server with two-way SSL implementation {#fdm-integration-rest-apis-two-way-ssl}
+
+[!DNL Experience Manager Forms] form data model can now integrate with RESTful APIs on a server that has a two-way SSL implemented on it.
+
+### Added support for [!DNL Adobe Sign] Text Tags in Automated Forms Conversion Service {#sign-integration-acroform-afcs}
+
+If an AcroForm includes [!DNL Adobe Sign] Text Tags, those fields are now recognized and represented as [!DNL Adobe Sign] fields in the adaptive form converted using [!DNL Automated Forms Conversion service]. A signer can fill such fields while signing the adaptive form.
+
+### Support for SMB 2 and SMB 3 protocols {#smb-support}
+
+[!DNL Experience Manager Forms] now supports SMB 2 and SMB 3 protocols.
+
+### Enhanced caching for translated adaptive form pages {#enhanced-caching-translated-adaptive-forms}
+
+You can now specify locale as a selector instead of URL argument. It helps cache translated adaptive forms on [!DNL Experience Manager Dispatcher].
+
+### Save output of form data model service to a variable {#save-fdm-service-to-variable}
+
+Form data model allows you to save output of a form data model service to a variable. [!DNL Experience Manager Forms] now automatically maps the type of the form data model service to the type of variable.
+
+### Attach multiple files for File Attachment component {#attach-multiple-files}
+
+You can now attach multiple files to the [!UICONTROL File Attachment] component of adaptive forms.
+
+## Key features in previous Experience Manager 6.5 Service Packs {#key-features-previous-service-packs}
+
+### Experience Manager Sites {#aem-sites-previous-service-packs}
+
+#### Accessibility improvements (6.5.5.0) {#accessibility-sites}
 
 * Improved error reporting by adding text information.
 
@@ -29,7 +118,9 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 
 * Improved screen reader support.
 
-### Other key enhancements {#other-enhancements-sites}
+#### Other key enhancements (6.5.5.0) {#other-enhancements-sites}
+
+* Anonymous access to CRXDE Lite is disallowed to enhance security. Instead, the users are directed to the login screen. See [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 * When copying or pasting a page tree, you now have the option of either pasting the root page or pasting the root page with the subpages of the tree.
 
@@ -38,76 +129,6 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 * Multi Site Manager - The Publish trigger now deletes a component from the published page if a component is deleted from the source page.
 
 * Multi Site Manager - When the name of a local component in a [!UICONTROL Live Copy] is identical to the name of a component in the blueprint and the component is rolled out from the blueprint, then the term `_msm_moved` is now added to the name of the local component.
-
-## [!DNL Adobe Experience Manager Assets] {#aem-assets}
-
-### Accessibility enhancements in [!DNL Assets] {#assets-accessibility}
-
-[!DNL Experience Manager Assets] is now more accessible in compliance with Web Content Accessibility Guidelines (WCAG). The accessibility has improved because of the following enhancements:
-
-* Many user interface elements, controls, pages, and dialogs are screen reader friendly.
-
-* Many user interface elements, controls, and input form fields are accessible using keyboard.
-
-* Color and contrast of some user interface elements are updated so that users with limited vision or users without perception of color can distinguish these user interface elements. For example, the color of star rating icons (such as in [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view) is changed for appropriate contrast.
-
-  ![Rating icons with improved contrast](assets/star-rating-icons.png)
-
-### Enhanced exception handling {#exception-handling}
-
-[!DNL Assets] user interface flow has better exception handling. If an asset does not have a type for its dimension, the observed exception is recorded in the log files.
-
-### Support for 3D assets in [!DNL Dynamic Media] {#support-for-3d}
-
-Support for 3D images in [!DNL Dynamic Media] enables customers to publish and add 3D content to web pages and applications. The support includes:
-
-* Publish common 3D asset formats and generate an asset URL that can be used in web pages and other applications.
-
-* A 3D Web Viewer, powered by [!DNL Adobe Dimension], to interactively view the published 3D assets.
-
-* Publish and view common 3D assets on [!DNL Experience Manager Sites] pages using the [!DNL Sites] WCM component.
-
-## Adobe Experience Manager Forms {#aem-forms}
-
-### Customize the Adobe Experience Manager Inbox columns {#customize-aem-inbox-columns}
-
-You can customize an [!DNL Experience Manager] Inbox to change the default title of a column, reorder the position of a column, and display additional columns based on the data of a workflow. Members of `administrators` or `workflow-administrators` group can customize the columns. For more information, see [Admin Control](../sites-authoring/inbox.md#inbox-admin-control).
-
-![Customize Experience Manager Inbox columns](assets/customize-columns.gif)
-
-### Save Interactive Communications as a draft {#save-as-draft}
-
-You can use the Agent UI to save one or more drafts for each Interactive Communication and retrieve the draft later to continue working on it. You can specify a different name for each draft to identify it. For more information, see [Save Interactive Communications as a draft](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
-
-![Save as draft](assets/save-as-draft.gif)
-
-### [!DNL Oracle WebLogic] application server support {#weblogic-support}
-
-Adobe Experience Manager Forms has added support for [!DNL Oracle WebLogic 12] for Adobe Experience Manager Forms on JEE. You can upgrade from a previous version or set up a new Experience Manager 6.5 Forms on JEE server on [!DNL Oracle WebLogic] 12.2.1.4 and later. Later corresponds to the minor version changes, where x in 12.2.1.x is replaced with a version number.
-
-### Accessibility improvements {#accessibility-improvements}
-
-Adobe Experience Manager Forms includes the following accessibility enhancements:
-
-* When a user previews an adaptive form as an HTML form, the [!UICONTROL Scribble Signature] field retains the tab focus.
-
-* The error messages displayed on submitting an adaptive form now contain the `aria-describedBy` attribute. The attribute is attached to the fields referred in the error message. The `aria-describedby` attribute indicates IDs of the elements that describe the object. It helps establish a relationship between widgets or groups and text that described them.
-
-* If an adaptive form has some mandatory fields, the mandatory attribute is set to `True` for such fields in ARIA accessibility schema.
-
-### X-509 certificate-based authentication for SOAP-based web services in form data model {#x509-based-authentication-soap}
-
-Form data model now supports X-509 certificate-based authentication while using SOAP web services as the data source. For more information, see [Configure SOAP web services](../forms/using/configure-data-sources.md#configure-soap-web-services).
-
-### Other key improvements {#other-improvements}
-
-* Experience Manager 6.5 Forms on JEE Document Security is now based on [!DNL Apache Struts 2].
-
-* Added support for [!DNL Oracle Real Applications Cluster (RAC) 19c].
-
-## Key features in previous Experience Manager 6.5 Service Packs {#key-features-previous-service-packs}
-
-### Experience Manager Sites {#aem-sites-previous-service-packs}
 
 #### Style System enhancements (6.5.4.0) {#style-system-enhancements}
 
@@ -124,6 +145,32 @@ You can now select styles within the component dialog using the enhanced Style S
 * Improved handling of incomplete or invalid URLs. Such URLs can slow the Template Editor.
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
+
+#### Accessibility enhancements in [!DNL Assets] (6.5.5.0) {#assets-accessibility}
+
+[!DNL Experience Manager Assets] is now more accessible in compliance with Web Content Accessibility Guidelines (WCAG). The accessibility has improved because of the following enhancements:
+
+* Many user interface elements, controls, pages, and dialogs are screen reader friendly.
+
+* Many user interface elements, controls, and input form fields are accessible using keyboard.
+
+* Color and contrast of some user interface elements are updated so that users with limited vision or users without perception of color can distinguish these user interface elements. For example, the color of star rating icons (such as in [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view) is changed for appropriate contrast.
+
+  ![Rating icons with improved contrast](assets/star-rating-icons.png)
+
+#### Enhanced exception handling (6.5.5.0) {#exception-handling}
+
+[!DNL Assets] user interface flow has better exception handling. If an asset does not have a type for its dimension, the observed exception is recorded in the log files.
+
+#### Support for 3D assets in [!DNL Dynamic Media] (6.5.5.0) {#support-for-3d}
+
+Support for 3D images in [!DNL Dynamic Media] enables customers to publish and add 3D content to web pages and applications. The support includes:
+
+* Publish common 3D asset formats and generate an asset URL that can be used in web pages and other applications.
+
+* A 3D Web Viewer, powered by [!DNL Adobe Dimension], to interactively view the published 3D assets.
+
+* Publish and view common 3D assets on [!DNL Experience Manager Sites] pages using the [!DNL Sites] WCM component.
 
 #### Configure [!DNL Experience Manager Assets] with [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
@@ -159,6 +206,42 @@ Smart imaging uses each user's unique viewing characteristics to automatically s
 Smart crop for video–an optional feature available in Video Profiles– is a tool that uses the power of artificial intelligence in Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video that you have uploaded, regardless of size. See [About using smart crop in video profiles](../assets/video-profiles.md).
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
+
+#### Customize the Adobe Experience Manager Inbox columns (6.5.5.0){#customize-aem-inbox-columns}
+
+You can customize an [!DNL Experience Manager] Inbox to change the default title of a column, reorder the position of a column, and display additional columns based on the data of a workflow. Members of `administrators` or `workflow-administrators` group can customize the columns. For more information, see [Admin Control](../sites-authoring/inbox.md#inbox-admin-control).
+
+![Customize Experience Manager Inbox columns](assets/customize-columns.gif)
+
+#### Save Interactive Communications as a draft (6.5.5.0) {#save-as-draft}
+
+You can use the Agent UI to save one or more drafts for each Interactive Communication and retrieve the draft later to continue working on it. You can specify a different name for each draft to identify it. For more information, see [Save Interactive Communications as a draft](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
+
+![Save as draft](assets/save-as-draft.gif)
+
+#### [!DNL Oracle WebLogic] application server support (6.5.5.0) {#weblogic-support}
+
+Adobe Experience Manager Forms has added support for [!DNL Oracle WebLogic 12] for Adobe Experience Manager Forms on JEE. You can upgrade from a previous version or set up a new Experience Manager 6.5 Forms on JEE server on [!DNL Oracle WebLogic] 12.2.1.4 and later. Later corresponds to the minor version changes, where x in 12.2.1.x is replaced with a version number.
+
+#### Accessibility improvements (6.5.5.0) {#accessibility-improvements}
+
+Adobe Experience Manager Forms includes the following accessibility enhancements:
+
+* When a user previews an adaptive form as an HTML form, the [!UICONTROL Scribble Signature] field retains the tab focus.
+
+* The error messages displayed on submitting an adaptive form now contain the `aria-describedBy` attribute. The attribute is attached to the fields referred in the error message. The `aria-describedby` attribute indicates IDs of the elements that describe the object. It helps establish a relationship between widgets or groups and text that described them.
+
+* If an adaptive form has some mandatory fields, the mandatory attribute is set to `True` for such fields in ARIA accessibility schema.
+
+#### X-509 certificate-based authentication for SOAP-based web services in form data model (6.5.5.0) {#x509-based-authentication-soap}
+
+Form data model now supports X-509 certificate-based authentication while using SOAP web services as the data source. For more information, see [Configure SOAP web services](../forms/using/configure-data-sources.md#configure-soap-web-services).
+
+#### Other key improvements (6.5.5.0) {#other-improvements}
+
+* Experience Manager 6.5 Forms on JEE Document Security is now based on [!DNL Apache Struts 2].
+
+* Added support for [!DNL Oracle Real Applications Cluster (RAC) 19c].
 
 #### Generate printable output in Experience Manager Forms workflows (6.5.4.0) {#generate-printable-output}
 
@@ -198,26 +281,26 @@ Experience Manager Forms includes the following accessibility enhancements:
 
 You can share your Inbox items with another user. Once another user gains access to your Inbox items, the user can claim and take appropriate action on shared items. Similarly, you can request access to Inbox items from other users. See [Share and request access to Inbox items of a user](../forms/using/configure-shared-queues-osgi.md).
 
-#### Configure the out-of-office settings for Inbox items of an AEM Forms user (6.5.3.0) {#configure-out-of-office}
+#### Configure the out-of-office settings for Inbox items of an Experience Manager Forms user (6.5.3.0) {#configure-out-of-office}
 
 If you plan to be out of the office, you can specify what happens to items that are assigned to you for that period.
 You have the option of specifying a start date and time and an end date and time for your out-of-office settings to be in effect. You can set a default person to whom all of your items are sent. See [Configure Out of Office settings](../forms/using/configure-out-of-office-settings.md).
 
-#### Generate multiple interactive communications using Batch API for AEM Forms (6.5.3.0) {#generate-multiple-ic}
+#### Generate multiple interactive communications using Batch API for Experience Manager Forms (6.5.3.0) {#generate-multiple-ic}
 
 You can use the Batch API to produce multiple interactive communications from a template. The template is an interactive communication without any data. The Batch API combines data with a template to produce an interactive communication. The API is useful in the mass production of interactive communications. For example, telephone bills, credit card statements for multiple customers. See [Generate multiple interactive communications using Batch API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-## Key releases since Adobe Experience Manager 6.5 SP4 {#key-releases-since-last-sp}
+## Key releases since Adobe Experience Manager 6.5 SP5 {#key-releases-since-last-sp}
 
-Between March 05, 2020 and June 04, 2020, Adobe released the following, in addition to the service packs and cumulative fix packs:
+Between June 04, 2020 and September 03, 2020, Adobe released the following, in addition to the service packs and cumulative fix packs:
 
 * [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) is available to download Experience Manager service packs, cumulative fix packs, hot fixes, and feature packs.
 
-* [!DNL Adobe Experience Manager Cloud Manager] [2020.3.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-3-0.html), [2020.4.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-4-0.html), and [2020.5.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html).
+* [!DNL Adobe Experience Manager as a cloud service] [2020.7.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-7-0.html) and [2020.8.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
-* [Experience Manager desktop app 2.0.2.0](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+* [Experience Manager desktop app 2.0 (2.0.3.2)](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Manager Screens: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
+* [Experience Manager Screens: Feature Pack 202008](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202008.html)
 
 >[!MORELIKETHIS]
 >

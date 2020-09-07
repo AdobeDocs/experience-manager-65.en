@@ -179,11 +179,11 @@ However, sets created using batch set presets, do *not* appear in the user inter
 
   ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
 
-* From a member image of any set. Select the **[!UICONTROL Sets** menu to display the sets that the asset is a member of.
+* From a member image of any set. Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
 
   ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* From search, you can select **[!UICONTROL Filter**, then expand **[!UICONTROL Dynamic Media** and select **[!UICONTROL Sets.]**
+* From search, you can select **[!UICONTROL Filter]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets.]**
 
   The search returns matching sets that were manually created in the UI or automatically created through batch set presets. For automated sets, the search query is conducted using "Starts with" search criteria which is different from AEM search which is based on using "Contains" search criteria. Setting the filter to **[!UICONTROL Sets]** istheonly way to search automated sets.
 
