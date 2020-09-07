@@ -105,7 +105,7 @@ This configuration should not be altered.
 
 * Verify **Create post from reply email** is `unchecked`.
 
-![chlimage_1-100](assets/chlimage_1-100.png)
+![chlimage_1-100](assets/configure-email.png)
 
 ### Configuration for Subscriptions {#configuration-for-subscriptions}
 
@@ -115,7 +115,7 @@ For Communities subscriptions, it is possible to enable or disable the ability f
 * Select the edit icon.
 * Verify the **Name** is `subscriptions-email`.
 
-![chlimage_1-101](assets/chlimage_1-101.png)
+  ![chlimage_1-101](assets/configure-email-subscription.png)
 
 * **[!UICONTROL Name]** 
 
@@ -131,9 +131,10 @@ For Communities subscriptions, it is possible to enable or disable the ability f
 * **[!UICONTROL Maximum length of Subject]**
 
   If tracker id is added to subject line, this is the maximum length of subject, excluding tracked id, after which it will be trimmed. Note that this should be as small as possible to avoid tracked id information from being lost. Default is 200.
-* **[!UICONTROL Email "From" address]**
 
-  *(Required)* Address that notification email would be delivered from. Likely the same **SMTP user** specified for the [default mail service](#configuredefaultmailservice). Default is `no-reply@example.com`.
+* **[!UICONTROL "Reply-To" email address]**
+
+  Address which is used as "Reply-To" email address. Default is `communities@adobe.com`.
 
 * **[!UICONTROL Reply-to-Delimiter]**
 
