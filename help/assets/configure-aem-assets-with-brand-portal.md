@@ -355,6 +355,8 @@ Perform the following steps to validate the configuration:
     >
     >Avoid disabling any of the replication agents. It may cause the replication of some of the assets to fail.
     >
+    >Ensure that all the four replication agents are configured to avoid timeout error. See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+    >
 
 Your AEM Assets author instance is successfully configured with Brand Portal, you can now:
 
