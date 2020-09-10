@@ -171,7 +171,7 @@ Perform the following steps on all the Author and Publish instances to add the p
 
 #### Configure Dispatcher {#configure-dispatcher}
 
-Dispatcher is caching and load balancing tool for AEM. AEM Dispatcher also helps to protect AEM server from attacks. You can increase the security of your AEM instance by using the Dispatcher in conjunction with an enterprise-class web server. If you use [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html), then perform the following configurations for AEM Forms:
+Dispatcher is Adobe Experience Manager's caching and/or load balancing tool that can be used in conjunction with an enterprise-class web server. If you use [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html), then perform the following configurations for AEM Forms:
 
 1. Configure access for AEM Forms:
 
