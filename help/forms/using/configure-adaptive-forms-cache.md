@@ -16,13 +16,16 @@ docset: aem65
 
 A cache is a mechanism to shorten data access times, reduce latency, and improve input/output (I/O) speeds. Adaptive forms cache stores only HTML content and JSON structure of an adaptive form without saving any pre-filled data. It helps in reducing the time required to render an adaptive form or document on the client. It is designed specifically for adaptive forms and also supports adaptive documents.
 
->[!NOTE]
->
->When using the adaptive forms cache, use the AEM [!DNL Dispatcher] to cache client libraries (CSS and JavaScript) of an adaptive form or document.
+## Considerations {#considerations}
 
->[!NOTE]
->
->While developing custom components, on the server used for development, keep the adaptive forms cache disabled.
+* When using the adaptive forms cache, use the AEM [!DNL Dispatcher] to cache client libraries (CSS and JavaScript) of an adaptive form or document.
+ * While developing custom components, on the server used for development, keep the adaptive forms cache disabled.
+
+## Pre-requisites {#pre-requisites}
+
+* Enable the [merging or prefilling data at client](prepopulate-adaptive-form-fields.md#prefill-at-client}) option
+* Use URL format `http://host:port/content/forms/af/<afName>.<locale>.html` to request a localized version of an adaptive form instead of `http://host:port/content/forms/af/afName.html?wcmmode=disabled?`
+* [Invalidate Dispatcher Cache from the Publish instances](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) 
 
 ## Configure the cache {#configure-the-cache}
 
