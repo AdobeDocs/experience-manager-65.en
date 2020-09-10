@@ -105,7 +105,7 @@ This configuration should not be altered.
 
 * Verify **Create post from reply email** is `unchecked`.
 
-![chlimage_1-100](assets/configure-email.png)
+![configure-email-reply](assets/configure-email-reply.png)
 
 ### Configuration for Subscriptions {#configuration-for-subscriptions}
 
@@ -115,7 +115,7 @@ For Communities subscriptions, it is possible to enable or disable the ability f
 * Select the edit icon.
 * Verify the **Name** is `subscriptions-email`.
 
-  ![chlimage_1-101](assets/configure-email-subscription.png)
+  ![configure-email-subscription](assets/configure-email-subscriptions.png)
 
 * **[!UICONTROL Name]** 
 
@@ -134,7 +134,7 @@ For Communities subscriptions, it is possible to enable or disable the ability f
 
 * **[!UICONTROL "Reply-To" email address]**
 
-  Address which is used as "Reply-To" email address. Default is `communities@adobe.com`.
+  Address which is used as "Reply-To" email address. Default is `no-reply@example.com`.
 
 * **[!UICONTROL Reply-to-Delimiter]**
 
