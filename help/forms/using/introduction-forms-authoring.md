@@ -146,7 +146,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>File attachment</td>
-   <td><p>Adds a button that allows users to browse and attach supporting documents to a form. You can attach multiple files to a File attachment component.</p> <p><strong>Note: </strong><ul> <li> You can attach only a single file to a file attachment component when opened in the Apple Safari browser. </li> <li>The File Attachment component supports a pre-defined set of file formats in adaptive forms enabled for Adobe Sign. For more information, see <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Supported file formats</a>. </li></p> </td>
+   <td><p>Adds a button that allows users to browse and attach supporting documents to a form. You can attach multiple files to a File attachment component.</p> <p><strong> Note: </strong><ul> <li> To attach multiple files to a file attachment component opened in Apple Safari browser, select and attach files one by one. You cannot select and attach multiple files at once.</li> <li>The File Attachment component supports a pre-defined set of file formats in adaptive forms enabled for Adobe Sign. For more information, see <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Supported file formats</a>. </li> </ul></p> </td>
   </tr>
   <tr>
    <td>File attachment listing</td>
