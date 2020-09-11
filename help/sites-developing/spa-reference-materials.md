@@ -13,6 +13,8 @@ discoiquuid: c3a81baa-98b0-40b4-bd34-f39e8491acca
 
 # SPA Reference Materials {#spa-reference-materials}
 
+## SPA Javascript API References{#spa-javascript-api-references}
+
 The following are the available JavaScript API references of the NPM modules for the AEM SPA Editor SDK framework.
 
 >[!NOTE]
