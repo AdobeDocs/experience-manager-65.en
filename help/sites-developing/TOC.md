@@ -3,6 +3,7 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Developing User Guide
+breadcrumb-title: Developing Guide
 user-guide-description: This guide covers how to build out your AEM instance.
 ---
 
