@@ -73,7 +73,7 @@ Reviewing the code of the customized weather component ( `Weather.js`) in the We
 
 * **Lines 31-44**: The Weather component extends the `Component` class and provides the required data as defined in the NPM usage documentation for the React Open Weather component and renders the component.
 
-```
+```javascript
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  ~ Copyright 2018 Adobe Systems Incorporated
  ~
@@ -91,7 +91,7 @@ Reviewing the code of the customized weather component ( `Weather.js`) in the We
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 import React, {Component} from 'react';
 import ReactWeather from 'react-open-weather';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Weather.css');
 
