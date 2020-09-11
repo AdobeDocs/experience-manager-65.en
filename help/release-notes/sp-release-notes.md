@@ -105,7 +105,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 * Search page and search result page now have more informative titles for better understanding of screen reader users (NPR-34093).
 
-* Screen readers now announce the options to delete the selected tags in [!UICONTROL Basic] tab of asset [!UICONTROL Properties]s buttons to delete the selected tags (NPR-33972).
+* Screen readers now announce the options to delete the selected tags in [!UICONTROL Basic] tab of asset [!UICONTROL Properties] buttons to delete the selected tags (NPR-33972).
 
 * The elements in each row in list view are now correctly announced as the elements of the same row by screen readers (NPR-33932).
 
