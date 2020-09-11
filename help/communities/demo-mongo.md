@@ -93,7 +93,7 @@ The following commands are an example of setting up a replica set with 3 nodes o
 * Download Solr from [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
   * Suitable for any OS.
-  * Use version 4.10 or version 5.
+  * Solr version 7.0.
   * Solr requires Java 1.7 or greater.
 
 * Basic configuration
