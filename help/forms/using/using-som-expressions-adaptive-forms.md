@@ -41,5 +41,4 @@ Within panels, you can access the feature from the panel toolbar. The feature fa
 
 Extracting SOM Expressions using panel toolbar
 
-Some APIs listed in [GuideBridge]( https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) use the SOM expression of an element. For example, to bring focus to a particular field in an adaptive form, pass the corresponding SOM expression to the `getFocus`API in `guideBridge`.  
-
+Some APIs listed in [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) use the SOM expression of an element. For example, to bring focus to a particular field in an adaptive form, pass the corresponding SOM expression to the `getFocus`API in `guideBridge`.  
