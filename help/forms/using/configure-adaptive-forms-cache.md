@@ -23,8 +23,8 @@ A cache is a mechanism to shorten data access times, reduce latency, and improve
 
 ## Pre-requisites {#pre-requisites}
 
-* Enable the [merging or prefilling data at client](prepopulate-adaptive-form-fields.md#prefill-at-client}) option
-* Use URL format `http://host:port/content/forms/af/<afName>.<locale>.html` to request a localized version of an adaptive form instead of `http://host:port/content/forms/af/afName.html?wcmmode=disabled?`
+* Enable the [merging or prefilling data at client](prepopulate-adaptive-form-fields.md#prefill-at-client) option
+* Use URL format `http://host:port/content/forms/af/<afName>.<locale>.html` to request a localized version of an adaptive form instead of `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
 * [Invalidate Dispatcher Cache from the Publish instances](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html)
 
 ## Configure the cache {#configure-the-cache}
