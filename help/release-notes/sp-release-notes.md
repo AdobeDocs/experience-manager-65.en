@@ -40,9 +40,9 @@ The key features and enhancements introduced in Adobe Experience Manager 6.5.6.0
 
 * Support for Adobe Sign Text Tags in Automated Forms Conversion Service.
 
-* Support for SMB 2 and SMB 3 protocols.
+* Support to convert colored forms to adaptive forms using [!DNL Automated Forms Conversion service].
 
-* Support to convert colored forms to adaptive forms using Automated Forms Conversion service.
+* Support for SMB 2 and SMB 3 protocols.
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.22.4.
 

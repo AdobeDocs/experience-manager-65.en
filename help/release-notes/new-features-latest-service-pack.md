@@ -82,6 +82,10 @@ You can now configure the [!DNL Experience Manager Forms] server to perform the 
 
 If an AcroForm includes [!DNL Adobe Sign] Text Tags, those fields are now recognized and represented as [!DNL Adobe Sign] fields in the adaptive form converted using [!DNL Automated Forms Conversion service]. A signer can fill such fields while signing the adaptive form.
 
+### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
+
+You can use [!DNL Automated Forms Conversion service] to convert colored PDF forms to adaptive forms. 
+
 ### Support for SMB 2 and SMB 3 protocols {#smb-support}
 
 [!DNL Experience Manager Forms] now supports SMB 2 and SMB 3 protocols.
