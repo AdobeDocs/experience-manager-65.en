@@ -11,8 +11,6 @@ Adobe Experience Manager 6.5 service packs provide new features, customer-reques
 
 This article highlights the features included in the latest 6.5 Service Pack, [key features included in the previous 6.5 Service Packs](#key-features-previous-service-packs), and some of the [key releases since Experience Manager 6.5.5.0](#key-releases-since-last-sp) release.
 
->[!VIDEO](https://video.tv.adobe.com/v/39867)
-
 ## Adobe [!DNL Experience Manager] Sites {#aem-sites}
 
 ### Availability of Page Move operation in asynchronous mode {#page-move-asynchronous}
