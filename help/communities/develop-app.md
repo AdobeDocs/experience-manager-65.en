@@ -116,7 +116,7 @@ Using CRXDE Lite:
 
 **View the page in a browser in edit mode:**
 
-* Standard UI: [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html]( http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
+* Standard UI: [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
 
 You should not only see the heading **Community Play**, but also the UI for editing page content.
 

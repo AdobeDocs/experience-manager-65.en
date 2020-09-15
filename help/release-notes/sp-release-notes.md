@@ -40,9 +40,9 @@ The key features and enhancements introduced in Adobe Experience Manager 6.5.6.0
 
 * Support for Adobe Sign Text Tags in Automated Forms Conversion Service.
 
-* Support for SMB 2 and SMB 3 protocols.
+* Support to convert colored forms to adaptive forms using [!DNL Automated Forms Conversion service].
 
-* Support to convert colored forms to adaptive forms using Automated Forms Conversion service.
+* Support for SMB 2 and SMB 3 protocols.
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.22.4.
 
@@ -105,7 +105,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 * Search page and search result page now have more informative titles for better understanding of screen reader users (NPR-34093).
 
-* Screen readers now announce the options to delete the selected tags in [!UICONTROL Basic] tab of asset [!UICONTROL Properties]s buttons to delete the selected tags (NPR-33972).
+* Screen readers now announce the options to delete the selected tags in [!UICONTROL Basic] tab of asset [!UICONTROL Properties] buttons to delete the selected tags (NPR-33972).
 
 * The elements in each row in list view are now correctly announced as the elements of the same row by screen readers (NPR-33932).
 
@@ -427,7 +427,7 @@ For information about installing the cumulative installer for Experience Manager
 
 ### UberJar {#uber-jar}
 
-The UberJar for Experience Manager 6.5.6.0 is available in the [Adobe Public Maven repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6/).
+The UberJar for Experience Manager 6.5.6.0 is available in the [Adobe Public Maven repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6-1.0/).
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -435,7 +435,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 <dependency>
       <groupId>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.5.6</version>  
+      <version>6.5.6-1.0</version>  
       <scope>provided</scope>
 </dependency>
 ```
