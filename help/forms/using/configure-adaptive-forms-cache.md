@@ -26,7 +26,7 @@ A cache is a mechanism to shorten data access times, reduce latency, and improve
   * Locate and open the **[!UICONTROL Adaptive Form and Interactive Communication Web Channel]** configuration.
   * Disable the **[!UICONTROL Use Browser Locale]** option.
 
-  ## Considerations {#considerations}
+## Considerations {#considerations}
 
 * When you use URL Format `http://host:port/content/forms/af/afName.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is disabled, the non-localized version of the adaptive form is served. The locale configured for your browser (browser locale) is not taken into consideration and a non-localized version of the adaptive form is served.
 * When you use URL Format `http://host:port/content/forms/af/afName.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is enabled, a localized version of the adaptive form is served, if available. The language of the localized adaptive form is based on the locale configured for your browser (browser locale).
