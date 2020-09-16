@@ -198,11 +198,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 * When creating rules for dropdown in [!UICONTROL Folder Metadata Schema Form], user cannot select values from [!UICONTROL Field Choices] column (CQ-4297530).
 
-* The run-time copy of assets custom workflow model (created in `/var/workflow/models/dam`) is deleted when you install 6.5 Service Pack 5 or previous versions on 6.5 GA (NPR-34532).
-
-   >[!NOTE]
-   >
-   >Upgrading to the [!DNL Experience Manager] 6.5 Service Pack 6 does not retrieve your run-time copy, if your run-time copy is deleted on installing [!DNL Experience Manager] 6.5 Service Pack 5 or previous versions on 6.5 GA. To retrieve the run-time copy, sync the design time copy of the workflow model with the run-time copy using HTTP API:
+* The run-time copy of assets custom workflow model (created in `/var/workflow/models/dam`) is deleted when you install [!DNL Experience Manager] 6.5 Service Pack 5 or a previous version on [!DNL Experience Manager] 6.5 (NPR-34532). To retrieve the run-time copy, sync the design-time copy of the workflow model with the run-time copy using HTTP API:
 `<designModelPath>/jcr:content.generate.json`.
 
 **Issues fixed in Dynamic Media**
@@ -446,7 +442,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 
 ## Deprecated features {#removed-deprecated-features}
 
-This section lists features and capabilities that have been marked as deprecated with AEM 6.5.6.0. Features that are planned to be removed in a future release are set to deprecated first, with an alternate option to use.
+This section lists features and capabilities that have been marked as deprecated with Experience Manager 6.5.6.0. Features that are planned to be removed in a future release are set to deprecated first, with an alternate option to use.
 
 Customers are advised to review if they make use of the feature or capability in their current deployment, and make plans to change their implementation to use the alternate option.
 
@@ -457,7 +453,7 @@ Customers are advised to review if they make use of the feature or capability in
 
 ## Known issues {#known-issues}
 
-* If you install [!DNL Experience Manager] 6.5 Service Pack 5 or previous versions on 6.5 GA, the run-time copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
+* If you install [!DNL Experience Manager] 6.5 Service Pack 5 or a previous service pack on [!DNL Experience Manager] 6.5, the run-time copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
 To retrieve your run-time copy, Adobe suggests to sync the design time copy of the custom workflow model with its run-time copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`.
 
