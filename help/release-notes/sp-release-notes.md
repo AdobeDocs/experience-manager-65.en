@@ -99,37 +99,37 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 **Accessibility enhancements in Experience Manager Assets**
 
-* Users can now access and focus the interactive user interface options in [!UICONTROL References] list of assets using keyboard keys (NPR-34115).
+* Using the keyboard keys, users can now access and focus on the interactive user interface options in [!UICONTROL References] list of assets (NPR-34115).
 
-* Screen reader now announce the options in search filter as expandable accordions (NPR-34104).
+* Screen reader now announces the intended action of the predicates on search page (NPR-34104).
 
 * Search page and search result page now have more informative titles for better understanding of screen reader users (NPR-34093).
 
-* Screen readers now announce the options to delete the selected tags in [!UICONTROL Basic] tab of asset [!UICONTROL Properties] buttons to delete the selected tags (NPR-33972).
+* Screen readers now announce the options to delete the selected tags in [!UICONTROL Basic] tab of asset [!UICONTROL Properties] page (NPR-33972).
 
-* The elements in each row in list view are now correctly announced as the elements of the same row by screen readers (NPR-33932).
+* The elements in each row in list view are now announced as the elements of the same row by screen readers (NPR-33932).
 
-* User focus when navigating using Tab key now correctly moves to the close option in version preview (NPR-33863).
+* User focus when navigating using `Tab` key now moves to the close option in version preview (NPR-33863).
 
-* User focus now correctly moves to search icon after Omnisearch is closed (NPR-33705).
+* User focus now moves to search icon after Omnisearch is closed (NPR-33705).
 
-* The actionable user interface options now have more prominent visual focus with enhanced contrast when focused using keyboard keys. Therefore, sighted keyboard users can now differentiate the focused areas (NPR-33542).
+* The actionable user interface options now have more prominent visual focus with enhanced contrast when navigated using keyboard keys. The keyboard users can identify the focused areas (NPR-33542).
 
-* The drag functionality using keyboard now correctly functions in [!UICONTROL Metadata Schema Editor] in browse mode of screen reader (CQ-4296326).
+* The drag functionality using keyboard now works in [!UICONTROL Metadata Schema Editor] in browse mode of screen reader (CQ-4296326).
 
-* In the link sharing dialog, when navigating in browse mode, the screen readers,
+* In the link sharing dialog, when navigating in browse mode, a screen reader,
 
-  * now do not narrate the table information as soon as the dialog is loaded.
+  * Does not narrate the table information as soon as the dialog is loaded.
 
-  * can navigate to all the listed auto-suggestions.
+  * Can navigate to all the listed auto-suggestions.
 
-  * now narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] (CQ-4294232).
+  * Narrates the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] (CQ-4294232).
 
-* Use of the Esc key to remove the quick action icons from thumbnail view no longer removes keyboard focus from the last focused item (CQ-4293554).
+* Use of the `Esc` key to remove the quick action icons from card view no longer removes keyboard focus from the last focused item (CQ-4293554).
 
-* Screen reader now announces text alternatives, which depict their functionality, for icons (such as chevrons) instead of their literal names (CQ-4272943).
+* For interactive options on the user interface, screen reader now announces their purpose rather than the literal names of the icons (CQ-4272943).
 
-* Keyboard focus now successfully moves to [!UICONTROL Flyout], [!UICONTROL InlineZoom], [!UICONTROL Shoppable_Banner], [!UICONTROL Zoom_dark], [!UICONTROL Zoom_light], [!UICONTROL ZoomVertical_dark], and [!UICONTROL ZoomVertical_light] options when navigating using keyboard Tab key in asset details [!UICONTROL Viewers] in Dynamic Media (CQ-4290605).
+* Keyboard focus now successfully moves to [!UICONTROL Flyout], [!UICONTROL InlineZoom], [!UICONTROL Shoppable_Banner], [!UICONTROL Zoom_dark], [!UICONTROL Zoom_light], [!UICONTROL ZoomVertical_dark], and [!UICONTROL ZoomVertical_light] options when navigating using keyboard Tab key in asset details [!UICONTROL Viewers] in [!DNL Dynamic Media] (CQ-4290605).
 
 * [!UICONTROL Save & Close] option on asset [!UICONTROL Properties] page can now be accessed using keyboard keys (NPR-34107).
 
@@ -139,7 +139,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
   * Auto-edited suggestions in [!UICONTROL Type to search] in Omnisearch.
 
-  * The state as expanded or collapsed for [!UICONTROL Solutions], [!UICONTROL Help], [!UICONTROL Inbox] and [!UICONTROL User] options.
+  * The state as expanded or collapsed for [!UICONTROL Solutions], [!UICONTROL Help], [!UICONTROL Inbox], and [!UICONTROL User] options.
 
   * The [!UICONTROL Searching Help] status message that is displayed when user enters a search string in [!UICONTROL Search for Help] field under [!UICONTROL Help] option.
   
@@ -161,7 +161,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 **Issues fixed in Experience Manager Assets**
 
-[!DNL Adobe Experience Manager] 6.5.6.0 Assets provides fixes to the following issues:
+[!DNL Adobe Experience Manager] 6.5.6.0 [!DNL Assets] provides fixes to the following issues:
 
 * Preview of marketing collateral assets (such as Brochure, Flyer, and Business card) created using [!DNL Adobe InDesign] template does not display line breaks and paragraph breaks (NPR-34268).
 
@@ -262,15 +262,15 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 ### [!DNL Communities] {#communities-6560}
 
-* Sharing a post on social media is showing an obsolete option Google+ (NPR-33877). 
+* Sharing a post on social media is showing an obsolete option Google+ (NPR-33877).
 
-* Community member is unable to modify group template or other Group Function settings (NPR-33530). 
+* Community member is unable to modify group template or other Group Function settings (NPR-33530).
 
 * Hyperlink tags on images are not generated properly in a forum post (NPR-33464).
 
 * Accessibility failures are identified in Community Assignment feature (NPR-33442).
 
-* The existing users of a community group added through admin console are removed from the user list on any modification in the community group console (NPR-34315). 
+* The existing users of a community group added through admin console are removed from the user list on any modification in the community group console (NPR-34315).
 
 <!--
 * Tag filters are vulnerable to sensitive information disclosure (NPR-33868).
@@ -396,7 +396,7 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1. The OSGI bundle `org.apache.jackrabbit.oak-core` is version 1.22.3 or higher (Use Web Console: `/system/console/bundles`).
+1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.3 or later (Use Web Console: `/system/console/bundles`).
 
 To know the platforms certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
 
