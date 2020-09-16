@@ -97,7 +97,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 ### [!DNL Assets] {#assets-6560}
 
-**Accessibility enhancements in Experience Manger Assets**
+**Accessibility enhancements in Experience Manager Assets**
 
 * Users can now access and focus the interactive user interface options in [!UICONTROL References] list of assets using keyboard keys (NPR-34115).
 
