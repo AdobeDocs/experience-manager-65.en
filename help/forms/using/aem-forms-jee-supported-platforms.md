@@ -667,7 +667,7 @@ AEM Forms app is available on the following platforms:
 
 | **Platform** |**Supported Devices** |
 |---|---|
-| Apple iOS |Apple iPhone, iPad, iPad Air, and iPad mini running iOS 11 and above. |
+| Apple iOS |Apple iPhone, iPad, iPad Air, and iPad mini running iOS 12 and above. |
 | Google Android |Android 5.1 and above. AEM Forms app is certified on 7- and 10-inch Samsung Galaxy tablets and popular smartphones. |
 | Microsoft Windows |Microsoft Surface devices, tablets, laptops, and desktops running Microsoft Windows 10 operating system. |
 
@@ -713,3 +713,7 @@ Under circumstances beyond Adobe’s control, third-party patches that claim bac
 Adobe reserves the right to change the third-party reference platforms supported by a AEM Forms on JEE release and their supported patch definitions at any given point.
 
 Additional information for third-party patches can also be found by searching the Adobe Enterprise Support site for knowledgebase articles related to your product.
+
+## Revision History {#third-party-patch-support-policy}
+* Sep 09, 2020 
+  * Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
