@@ -18,7 +18,7 @@ When a report is generated, you are notified through an email (optional) and an 
 
 ## Prerequisite {#prerequisite-for-reporting}
 
-To generate reports, ensure that the following:
+To generate reports, do the following:
 
 * Enable [!UICONTROL Day CQ DAM Event Recorder] service from **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 * Select the activities or events that you want reporting on. For example, to generate report on downloaded assets, select [!UICONTROL Asset downloaded (DOWNLOADED)].
@@ -43,7 +43,7 @@ To generate reports, ensure that the following:
 
 1. In [!DNL Experience Manager] interface, click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
 
-![Tools page to navigate assets report](assets/AssetsReportNavigation.png)
+   ![Tools page to navigate assets report](assets/AssetsReportNavigation.png)
 
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
@@ -52,12 +52,12 @@ To generate reports, ensure that the following:
 
    >[!NOTE]
    >
-   >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.
+   >By default, the Content Fragments and link shares are included in the Asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.
 
    >[!NOTE]
    >
-   >The [!UICONTROL Download] report displays details of only those assets which are selected individually and downloaded or downloaded using Quick Action. However, it does not include the details of the assets that were inside a downloaded folder.
-   >
+   >The [!UICONTROL Download] report displays details of only those assets which are downloaded after selecting individually or are downloaded using Quick Action. However, it does not include the details of the assets that are inside a downloaded folder.
+
 1. Configure report details such as title, description, thumbnail, and folder path in the CRX repository where the report is stored. By default, the folder path is `/content/dam`. You can specify a different path.
 
    ![Page to add report details](assets/report_configuration.png)
