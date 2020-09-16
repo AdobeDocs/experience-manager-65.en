@@ -715,5 +715,6 @@ Adobe reserves the right to change the third-party reference platforms supported
 Additional information for third-party patches can also be found by searching the Adobe Enterprise Support site for knowledgebase articles related to your product.
 
 ## Revision History {#third-party-patch-support-policy}
-* Sep 09, 2020 
+
+* Sep 09, 2020
   * Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.

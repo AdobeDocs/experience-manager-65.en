@@ -62,6 +62,7 @@ Perform the following steps to configure the adaptive forms cache:
       /glob "/content/forms/**/*.html"
       /type "deny"
       }
+
    ```
 
    After adding the above filters:
@@ -74,43 +75,42 @@ Perform the following steps to configure the adaptive forms cache:
 
    ``` JSON
 
-   /0000 {
-         /glob "*"
-         /type "allow"
-   }
-   ## Don't cache csrf login tokens
-   /0001 {
-         /glob "/libs/granite/csrf/token.json"
-         /type "deny"
-   }
-   ## Don't cache IC - print channel
-   /0002 {
-         /glob "/content/forms/**/channels/print.html"
-         /type "deny"
-   }
-   ## Don't cache IC - web channel
-   /0003 {
-         /glob "/content/forms/**/channels/web.html"
-         /type "deny"
-   }
+      /0000 {
+            /glob "*"
+            /type "allow"
+      }
+      ## Don't cache csrf login tokens
+      /0001 {
+            /glob "/libs/granite/csrf/token.json"
+            /type "deny"
+      }
+      ## Don't cache IC - print channel
+      /0002 {
+            /glob "/content/forms/**/channels/print.html"
+            /type "deny"
+      }
+      ## Don't cache IC - web channel
+      /0003 {
+            /glob "/content/forms/**/channels/web.html"
+            /type "deny"
+      }
 
    ```
 
 1. Add the following parameters to the ignore URL parameters list: 
-   
+
    ``` JSON
 
-   /ignoreUrlParams {
-    /0001 { /glob "*" /type "deny" }
-    # added for AEM forms specific use cases.
-    /0003 { /glob "dataRef" /type "allow" }
-    /0004 { /glob "wcmmode" /type "allow" }
-    /0005 { /glob "logConfig" /type "allow" }
-   }
-
+      /ignoreUrlParams {
+      /0001 { /glob "*" /type "deny" }
+      # added for AEM forms specific use cases.
+      /0003 { /glob "dataRef" /type "allow" }
+      /0004 { /glob "wcmmode" /type "allow" }
+      /0005 { /glob "logConfig" /type "allow" }
+      }
    ```  
 
-Your environment is configured to use cache adaptive forms and related assets. 
+Your environment is configured to use cache adaptive forms and related assets.
 
 <!-- 
 1. Go to AEM web console configuration manager at https://'[server]:[port]'/system/console/configMgr.
