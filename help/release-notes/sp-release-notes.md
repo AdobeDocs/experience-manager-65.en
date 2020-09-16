@@ -137,38 +137,35 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 * In [!DNL Experience Manager] header section, when navigating in browse mode, screen reader now announces,
 
-  * auto edited suggestions in [!UICONTROL Type to search] in Omnisearch.
+  * Auto-edited suggestions in [!UICONTROL Type to search] in Omnisearch.
 
-  * the state as expanded or collapsed for [!UICONTROL Solutions], [!UICONTROL Help], [!UICONTROL Inbox] and [!UICONTROL User] options.
+  * The state as expanded or collapsed for [!UICONTROL Solutions], [!UICONTROL Help], [!UICONTROL Inbox] and [!UICONTROL User] options.
 
-  * the [!UICONTROL Searching Help] status message that is displayed when user enters a search string in [!UICONTROL Search for Help] field under [!UICONTROL Help] option.
+  * The [!UICONTROL Searching Help] status message that is displayed when user enters a search string in [!UICONTROL Search for Help] field under [!UICONTROL Help] option.
   
   ![Help menu in header](assets/Help_aem_header.png)
   
-  *Figure: [!UICONTROL Search for Help] in [!UICONTROL Help] menu*
+  *Figure: [!UICONTROL Search for Help] in [!UICONTROL Help] menu.*
   
-  * the error message if incorrect value is entered in [!UICONTROL Impersonate as] field under [!UICONTROL User] option and focus correctly moves to the text field (NPR-33804).
+  * The error message if incorrect value is entered in [!UICONTROL Impersonate as] field under [!UICONTROL User] option and focus correctly moves to the text field (NPR-33804).
   
   ![User menu in header](assets/User_aem_header.png)
   
-  *Figure: [!UICONTROL Impersonate as] field in [!UICONTROL User] menu in header*
+  *Figure: [!UICONTROL Impersonate as] field in [!UICONTROL User] menu in header.*
 
-* User can now move focus using keyboard keys within:
+* User can now change focus using the keyboard within:
 
-  * [!UICONTROL Search/Add Email Address] field in [!UICONTROL Link Sharing] dialog.
+  * [!UICONTROL Search/Add Email Address] field in the [!UICONTROL Link Sharing] dialog.
   
-  * [!UICONTROL Add User or Group] field under [!UICONTROL Closed User Group] in [!UICONTROL Permissions] tab of folder [!UICONTROL Properties] (NPR-34452).
+  * [!UICONTROL Add User or Group] field under [!UICONTROL Closed User Group] in the [!UICONTROL Permissions] tab of folder [!UICONTROL Properties] (NPR-34452).
 
 **Issues fixed in Experience Manager Assets**
 
 [!DNL Adobe Experience Manager] 6.5.6.0 Assets provides fixes to the following issues:
 
-* Preview of marketing collateral assets (such as Brochure, Flyer, and Business card) created using [!DNL Adobe InDesign] (INDD) template do not retain line breaks and paragraph breaks (NPR-34268).
+* Preview of marketing collateral assets (such as Brochure, Flyer, and Business card) created using [!DNL Adobe InDesign] template does not display line breaks and paragraph breaks (NPR-34268).
 
-* Text extraction for the uploaded PDF files does not work and full-text search for some words in a PDF file fail to fetch that PDF file (NPR-34164).
-
-  >[!NOTE]
-  >To make this fix work, restart your Adobe Experience Manager instance  after installing the Service Pack 6.5.6.0.
+* Text extraction and hence the full-text search for the uploaded PDF files does not work (NPR-34164). To fix it, restart the [!DNL sAdobe Experience Manager] deployment after installing Service Pack 6.
 
 * Timeline of multi-page assets displays annotations applied to all the sub assets when browsing the asset in Timeline view, instead of displaying the annotations specific to the specific sub assets (NPR-34100).
 
