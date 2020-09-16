@@ -22,7 +22,7 @@ A cache is a mechanism to shorten data access times, reduce latency, and improve
 * Use URL format `http://host:port/content/forms/af/<afName>.<locale>.html` to request a localized version of an adaptive form instead of `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
 * [Invalidate Dispatcher Cache from the Publish instances](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html)
 * Disable using browser locale for URLs with format `http://host:port/content/forms/af/<adaptivefName>.html`. To disable browser locale,
-  * Open the configuration manager. The URL is `http://[server]:4502/system/console/configMgr `
+  * Open the configuration manager. The URL is `http://[server]:4502/system/console/configMgr`
   * Locate and open the **[!UICONTROL Adaptive Form and Interactive Communication Web Channel]** configuration.
   * Disable the **[!UICONTROL Use Browser Locale]** option.
 
