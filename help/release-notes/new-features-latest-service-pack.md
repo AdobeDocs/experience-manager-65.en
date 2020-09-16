@@ -11,8 +11,6 @@ Adobe Experience Manager 6.5 service packs provide new features, customer-reques
 
 This article highlights the features included in the latest 6.5 Service Pack, [key features included in the previous 6.5 Service Packs](#key-features-previous-service-packs), and some of the [key releases since Experience Manager 6.5.5.0](#key-releases-since-last-sp) release.
 
->[!VIDEO](https://video.tv.adobe.com/v/39867)
-
 ## Adobe [!DNL Experience Manager] Sites {#aem-sites}
 
 ### Availability of Page Move operation in asynchronous mode {#page-move-asynchronous}
@@ -81,6 +79,10 @@ You can now configure the [!DNL Experience Manager Forms] server to perform the 
 ### Added support for [!DNL Adobe Sign] Text Tags in Automated Forms Conversion Service {#sign-integration-acroform-afcs}
 
 If an AcroForm includes [!DNL Adobe Sign] Text Tags, those fields are now recognized and represented as [!DNL Adobe Sign] fields in the adaptive form converted using [!DNL Automated Forms Conversion service]. A signer can fill such fields while signing the adaptive form.
+
+### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
+
+You can use [!DNL Automated Forms Conversion service] to convert colored PDF forms to adaptive forms. 
 
 ### Support for SMB 2 and SMB 3 protocols {#smb-support}
 
