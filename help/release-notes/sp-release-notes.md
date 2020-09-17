@@ -97,39 +97,39 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 ### [!DNL Assets] {#assets-6560}
 
-**Accessibility enhancements in Experience Manger Assets**
+**Accessibility enhancements in Experience Manager Assets**
 
-* Users can now access and focus the interactive user interface options in [!UICONTROL References] list of assets using keyboard keys (NPR-34115).
+* Using the keyboard keys, users can now access and focus on the interactive user interface options in [!UICONTROL References] list of assets (NPR-34115).
 
-* Screen reader now announce the options in search filter as expandable accordions (NPR-34104).
+* Screen reader now announces the intended action of the predicates on search page (NPR-34104).
 
 * Search page and search result page now have more informative titles for better understanding of screen reader users (NPR-34093).
 
-* Screen readers now announce the options to delete the selected tags in [!UICONTROL Basic] tab of asset [!UICONTROL Properties] buttons to delete the selected tags (NPR-33972).
+* Screen readers now announce the options to delete the selected tags in [!UICONTROL Basic] tab of asset [!UICONTROL Properties] page (NPR-33972).
 
-* The elements in each row in list view are now correctly announced as the elements of the same row by screen readers (NPR-33932).
+* The elements in each row in list view are now announced as the elements of the same row by screen readers (NPR-33932).
 
-* User focus when navigating using Tab key now correctly moves to the close option in version preview (NPR-33863).
+* User focus when navigating using `Tab` key now moves to the close option in version preview (NPR-33863).
 
-* User focus now correctly moves to search icon after Omnisearch is closed (NPR-33705).
+* User focus now moves to search icon after Omnisearch is closed (NPR-33705).
 
-* The actionable user interface options now have more prominent visual focus with enhanced contrast when focused using keyboard keys. Therefore, sighted keyboard users can now differentiate the focused areas (NPR-33542).
+* The actionable user interface options now have more prominent visual focus with enhanced contrast when navigated using keyboard keys. The keyboard users can identify the focused areas (NPR-33542).
 
-* The drag functionality using keyboard now correctly functions in [!UICONTROL Metadata Schema Editor] in browse mode of screen reader (CQ-4296326).
+* The drag functionality using keyboard now works in [!UICONTROL Metadata Schema Editor] in browse mode of screen reader (CQ-4296326).
 
-* In the link sharing dialog, when navigating in browse mode, the screen readers,
+* In the link sharing dialog, when navigating in browse mode, a screen reader,
 
-  * now do not narrate the table information as soon as the dialog is loaded.
+  * Does not narrate the table information as soon as the dialog is loaded.
 
-  * can navigate to all the listed auto-suggestions.
+  * Can navigate to all the listed auto-suggestions.
 
-  * now narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] (CQ-4294232).
+  * Narrates the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] (CQ-4294232).
 
-* Use of the Esc key to remove the quick action icons from thumbnail view no longer removes keyboard focus from the last focused item (CQ-4293554).
+* Use of the `Esc` key to remove the quick action icons from card view no longer removes keyboard focus from the last focused item (CQ-4293554).
 
-* Screen reader now announces text alternatives, which depict their functionality, for icons (such as chevrons) instead of their literal names (CQ-4272943).
+* For interactive options on the user interface, screen reader now announces their purpose rather than the literal names of the icons (CQ-4272943).
 
-* Keyboard focus now successfully moves to [!UICONTROL Flyout], [!UICONTROL InlineZoom], [!UICONTROL Shoppable_Banner], [!UICONTROL Zoom_dark], [!UICONTROL Zoom_light], [!UICONTROL ZoomVertical_dark], and [!UICONTROL ZoomVertical_light] options when navigating using keyboard Tab key in asset details [!UICONTROL Viewers] in Dynamic Media (CQ-4290605).
+* Keyboard focus now successfully moves to [!UICONTROL Flyout], [!UICONTROL InlineZoom], [!UICONTROL Shoppable_Banner], [!UICONTROL Zoom_dark], [!UICONTROL Zoom_light], [!UICONTROL ZoomVertical_dark], and [!UICONTROL ZoomVertical_light] options when navigating using keyboard Tab key in asset details [!UICONTROL Viewers] in [!DNL Dynamic Media] (CQ-4290605).
 
 * [!UICONTROL Save & Close] option on asset [!UICONTROL Properties] page can now be accessed using keyboard keys (NPR-34107).
 
@@ -137,38 +137,35 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 * In [!DNL Experience Manager] header section, when navigating in browse mode, screen reader now announces,
 
-  * auto edited suggestions in [!UICONTROL Type to search] in Omnisearch.
+  * Auto-edited suggestions in [!UICONTROL Type to search] in Omnisearch.
 
-  * the state as expanded or collapsed for [!UICONTROL Solutions], [!UICONTROL Help], [!UICONTROL Inbox] and [!UICONTROL User] options.
+  * The state as expanded or collapsed for [!UICONTROL Solutions], [!UICONTROL Help], [!UICONTROL Inbox], and [!UICONTROL User] options.
 
-  * the [!UICONTROL Searching Help] status message that is displayed when user enters a search string in [!UICONTROL Search for Help] field under [!UICONTROL Help] option.
+  * The [!UICONTROL Searching Help] status message that is displayed when user enters a search string in [!UICONTROL Search for Help] field under [!UICONTROL Help] option.
   
   ![Help menu in header](assets/Help_aem_header.png)
   
-  *Figure: [!UICONTROL Search for Help] in [!UICONTROL Help] menu*
+  *Figure: [!UICONTROL Search for Help] in [!UICONTROL Help] menu.*
   
-  * the error message if incorrect value is entered in [!UICONTROL Impersonate as] field under [!UICONTROL User] option and focus correctly moves to the text field (NPR-33804).
+  * The error message if incorrect value is entered in [!UICONTROL Impersonate as] field under [!UICONTROL User] option and focus correctly moves to the text field (NPR-33804).
   
   ![User menu in header](assets/User_aem_header.png)
   
-  *Figure: [!UICONTROL Impersonate as] field in [!UICONTROL User] menu in header*
+  *Figure: [!UICONTROL Impersonate as] field in [!UICONTROL User] menu in header.*
 
-* User can now move focus using keyboard keys within:
+* User can now change focus using the keyboard within:
 
-  * [!UICONTROL Search/Add Email Address] field in [!UICONTROL Link Sharing] dialog.
+  * [!UICONTROL Search/Add Email Address] field in the [!UICONTROL Link Sharing] dialog.
   
-  * [!UICONTROL Add User or Group] field under [!UICONTROL Closed User Group] in [!UICONTROL Permissions] tab of folder [!UICONTROL Properties] (NPR-34452).
+  * [!UICONTROL Add User or Group] field under [!UICONTROL Closed User Group] in the [!UICONTROL Permissions] tab of folder [!UICONTROL Properties] (NPR-34452).
 
 **Issues fixed in Experience Manager Assets**
 
-[!DNL Adobe Experience Manager] 6.5.6.0 Assets provides fixes to the following issues:
+[!DNL Adobe Experience Manager] 6.5.6.0 [!DNL Assets] provides fixes to the following issues:
 
-* Preview of marketing collateral assets (such as Brochure, Flyer, and Business card) created using [!DNL Adobe InDesign] (INDD) template do not retain line breaks and paragraph breaks (NPR-34268).
+* Preview of marketing collateral assets (such as Brochure, Flyer, and Business card) created using [!DNL Adobe InDesign] template does not display line breaks and paragraph breaks (NPR-34268).
 
-* Text extraction for the uploaded PDF files does not work and full-text search for some words in a PDF file fail to fetch that PDF file (NPR-34164).
-
-  >[!NOTE]
-  >To make this fix work, restart your Adobe Experience Manager instance  after installing the Service Pack 6.5.6.0.
+* Text extraction and hence the full-text search for the uploaded PDF files does not work (NPR-34164). To fix it, restart the [!DNL sAdobe Experience Manager] deployment after installing Service Pack 6.
 
 * Timeline of multi-page assets displays annotations applied to all the sub assets when browsing the asset in Timeline view, instead of displaying the annotations specific to the specific sub assets (NPR-34100).
 
@@ -198,11 +195,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 * When creating rules for dropdown in [!UICONTROL Folder Metadata Schema Form], user cannot select values from [!UICONTROL Field Choices] column (CQ-4297530).
 
-* The run-time copy of assets custom workflow model (created in `/var/workflow/models/dam`) is deleted when you install 6.5 Service Pack 5 or previous versions on 6.5 GA (NPR-34532).
-
-   >[!NOTE]
-   >
-   >Upgrading to the [!DNL Experience Manager] 6.5 Service Pack 6 does not retrieve your run-time copy, if your run-time copy is deleted on installing [!DNL Experience Manager] 6.5 Service Pack 5 or previous versions on 6.5 GA. To retrieve the run-time copy, sync the design time copy of the workflow model with the run-time copy using HTTP API:
+* The run-time copy of assets custom workflow model (created in `/var/workflow/models/dam`) is deleted when you install [!DNL Experience Manager] 6.5 Service Pack 5 or a previous version on [!DNL Experience Manager] 6.5 (NPR-34532). To retrieve the run-time copy, sync the design-time copy of the workflow model with the run-time copy using HTTP API:
 `<designModelPath>/jcr:content.generate.json`.
 
 **Issues fixed in Dynamic Media**
@@ -269,15 +262,15 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 ### [!DNL Communities] {#communities-6560}
 
-* Sharing a post on social media is showing an obsolete option Google+ (NPR-33877). 
+* Sharing a post on social media is showing an obsolete option Google+ (NPR-33877).
 
-* Community member is unable to modify group template or other Group Function settings (NPR-33530). 
+* Community member is unable to modify group template or other Group Function settings (NPR-33530).
 
 * Hyperlink tags on images are not generated properly in a forum post (NPR-33464).
 
 * Accessibility failures are identified in Community Assignment feature (NPR-33442).
 
-* The existing users of a community group added through admin console are removed from the user list on any modification in the community group console (NPR-34315). 
+* The existing users of a community group added through admin console are removed from the user list on any modification in the community group console (NPR-34315).
 
 <!--
 * Tag filters are vulnerable to sensitive information disclosure (NPR-33868).
@@ -403,7 +396,7 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1. The OSGI bundle `org.apache.jackrabbit.oak-core` is version 1.22.3 or higher (Use Web Console: `/system/console/bundles`).
+1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.3 or later (Use Web Console: `/system/console/bundles`).
 
 To know the platforms certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
 
@@ -446,7 +439,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 
 ## Deprecated features {#removed-deprecated-features}
 
-This section lists features and capabilities that have been marked as deprecated with AEM 6.5.6.0. Features that are planned to be removed in a future release are set to deprecated first, with an alternate option to use.
+This section lists features and capabilities that have been marked as deprecated with Experience Manager 6.5.6.0. Features that are planned to be removed in a future release are set to deprecated first, with an alternate option to use.
 
 Customers are advised to review if they make use of the feature or capability in their current deployment, and make plans to change their implementation to use the alternate option.
 
@@ -457,7 +450,7 @@ Customers are advised to review if they make use of the feature or capability in
 
 ## Known issues {#known-issues}
 
-* If you install [!DNL Experience Manager] 6.5 Service Pack 5 or previous versions on 6.5 GA, the run-time copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
+* If you install [!DNL Experience Manager] 6.5 Service Pack 5 or a previous service pack on [!DNL Experience Manager] 6.5, the run-time copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
 To retrieve your run-time copy, Adobe suggests to sync the design time copy of the custom workflow model with its run-time copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`.
 
