@@ -58,9 +58,7 @@ The results are sorted by relevance, starting with closest matches. For multiple
 
 To quickly find the relevant assets, the rich interface provides filtering, sorting, and selection mechanisms. You can filter results based on multiple criteria and see number of searched assets for various filters. Alternatively, you can rerun search by changing the query in the Omnisearch field. When you change your search terms or filters, the other filters remain applied to preserve your search's context.
 
-When the results are many assets, [!DNL Experience Manager] displays the first 100 in the card view and 200 in the list view. As users scroll, more assets are loaded. This is to improve the performance.
-
->[!VIDEO](https://www.youtube.com/watch?v=LcrGPDLDf4o)
+When the results are many assets, [!DNL Experience Manager] displays the first 100 in the card view and 200 in the list view. As users scroll, more assets are loaded. This is to improve the performance. Watch a video demonstration of the [number of assets displayed](https://www.youtube.com/watch?v=LcrGPDLDf4o).
 
 At times, you may see some unexpected assets in the search results. For more info, see [unexpected results](#troubleshoot-unexpected-search-results-and-issues).
 
