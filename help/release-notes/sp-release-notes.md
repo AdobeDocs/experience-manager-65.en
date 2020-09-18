@@ -163,6 +163,8 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 [!DNL Adobe Experience Manager] 6.5.6.0 [!DNL Assets] provides fixes to the following issues:
 
+* Annotations are not highlighted when selected from the asset's timeline (CQ-4302422).
+
 * Preview of marketing collateral assets (such as Brochure, Flyer, and Business card) created using [!DNL Adobe InDesign] template does not display line breaks and paragraph breaks (NPR-34268).
 
 * Text extraction and hence the full-text search for the uploaded PDF files does not work (NPR-34164). To fix it, restart the [!DNL sAdobe Experience Manager] deployment after installing Service Pack 6.
