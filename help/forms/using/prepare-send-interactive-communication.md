@@ -361,7 +361,7 @@ The following is an example of the `pom.xml` file that is part of the implementa
         <dependency>
             <groupId>com.adobe.aemfd</groupId>
             <artifactId>aemfd-client-sdk</artifactId>
-            <version>6.0.122</version>
+            <version>6.0.146</version>
         </dependency>
     </dependencies>
 
@@ -438,4 +438,4 @@ The following is an example of the `pom.xml` file that is part of the implementa
 
 >[!NOTE]
 >
->Ensure that you update the `aemfd-client-sdk` dependency to 6.0.122 in the `pom.xml` file.
+>Ensure that you update the `aemfd-client-sdk` dependency to 6.0.146 or a later version in the `pom.xml` file.
