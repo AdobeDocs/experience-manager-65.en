@@ -93,7 +93,7 @@ You can now select all the loaded assets within a folder or from a search result
 
 ## Metadata enhancements {#metadata-enhancements}
 
-[!DNL Assets] lets you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages. You can now assign a folder metadata schema to an existing folder or when creating a new folder. For more information, see [Folder metadata schema](/help/assets/folder-metadata-schema.md).
+[!DNL Assets] lets you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages. You can now assign a folder metadata schema to an existing folder or when creating a new folder. For more information, see [Folder metadata schema](/help/assets/metadata-config.md#folder-metadata-schema).
 
 When specifying cascading metadata, the choices can be loaded from a JSON file at the run-time, say instead of typing manually in the form. For more information, see [Cascading metadata](/help/assets/cascading-metadata.md).
 

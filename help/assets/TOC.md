@@ -115,7 +115,6 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
     + [Watermark your assets](watermarking.md)
     + [Asset templates](asset-templates.md)
     + [Best practices to share folder with Creative Cloud](aem-cc-folder-sharing-best-practices.md)
-    + [Folder metadata schema](folder-metadata-schema.md)
     + [Manage Smart Tags](managing-smart-tags.md)
 + Brand Portal {#brandportal}
     + [Configure Assets with Brand Portal](configure-aem-assets-with-brand-portal.md)

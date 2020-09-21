@@ -149,6 +149,75 @@ A few use cases for exporting metadata in bulk are:
 
 For details, see [view and edit collection metadata](/help/assets/managing-collections-touch-ui.md#view-edit-collection-metadata) and [edit metadata of multiple collections in bulk](/help/assets/managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
 
+## Apply a metadata profile to folders {#applying-a-metadata-profile-to-folders}
+
+<!-- TBD: Review this overview. Comment at the end of the article may have overlapping info.
+-->
+
+When you assign a metadata profile to a folder, any subfolders automatically inherit the profile from its parent folder. This means that you can assign only one metadata profile to a folder. As such, consider carefully the folder structure of where you upload, store, use, and archive assets.
+
+If you assigned a different metadata profile to a folder, the new profile overrides the previous profile. The previously existing folder assets remain unchanged. The new profile is applied on the assets that are added to the folder later.
+
+Folders that have a profile assigned to it are indicated in the user interface by the name of the profile appearing in the card name.
+
+![chlimage_1-206](assets/chlimage_1-489.png)
+
+You can apply metadata profiles to specific folders or globally to all assets.
+
+You can reprocess assets in a folder that already has an existing metadata profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
+
+You can apply a metadata profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. This section describes how to apply metadata profiles to folders both ways.
+
+Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+
+You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
+
+### Apply metadata profiles to folders from Profiles user interface {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+
+Follow the steps to apply metadata profile:
+
+1. Click the [!DNL Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
+1. Select the metadata profile that you want to apply to a folder or multiple folders.
+
+   ![chlimage_1-207](assets/chlimage_1-490.png)
+
+1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and click **[!UICONTROL Done]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+
+### Apply metadata profiles to folders from Properties {#applying-metadata-profiles-to-folders-from-properties}
+
+1. In the left rail, click **[!UICONTROL Assets]** then navigate to the folder that you want to apply a metadata profile to.
+1. On the folder, click the check mark to select it and then click **[!UICONTROL Properties]**.  
+
+1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and click **[!UICONTROL Save]**.
+
+   ![chlimage_1-208](assets/chlimage_1-491.png)
+
+   Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+
+### Apply metadata profile globally {#metadata-profile-global}
+
+For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally).
+
+### Remove a metadata profile from folders {#removing-a-metadata-profile-from-folders}
+
+When you remove a metadata profile from a folder, any subfolders automatically inherit the removal of the profile from its parent folder. However, any processing of files that has occurred within the folders remains intact.
+
+You can remove a metadata profile from a folder from within the **[!UICONTROL Tools]** menu or from the **[!UICONTROL Properties]** from within the folder.
+
+#### Remove metadata profiles from folders via Profiles user interface {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+
+1. Click the [!DNL Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
+1. Select the metadata profile that you want to remove from a folder or multiple folders.
+1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
+
+   You can confirm that the metadata profile is no longer applied to a folder because the name no longer appears below the folder name.
+
+#### Remove metadata profiles from folders via Properties {#removing-metadata-profiles-from-folders-via-properties}
+
+1. Click the [!DNL Experience Manager] logo and navigate **[!UICONTROL Assets]** and then to the folder that you want to remove an metadata profile from.
+1. On the folder, click the check mark to select it and then click **[!UICONTROL Properties]**.
+1. Select the **[!UICONTROL Metadata Profiles]** tab and select **[!UICONTROL None]** from the drop-down menu and click **[!UICONTROL Save]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+
 ## Tips and limitations {#best-practices-limitations}
 
 * The metadata updates via user interface changes the metadata properties in the `dc` namespace. Any updates made via the HTTP API changes the metadata properties in the `jcr` namespace. See [how to update metadata using HTTP API](/help/assets/mac-api-assets.md#update-asset-metadata).
