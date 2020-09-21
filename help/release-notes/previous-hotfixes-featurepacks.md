@@ -1,18 +1,20 @@
 ---
-title: Adobe Experience Manager 6.5 Previous Service Pack Release Notes
-description: Release notes specific to Adobe Experience Manager 6.5 Service Pack 3 and earlier.
+title: [!DNL Adobe Experience Manager] 6.5 Previous Service Pack Release Notes.
+description: Release notes for [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 ---
 
 # Hotfixes and Feature Packs included in previous Service Packs {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.5.0 {#experience-manager-6550}
+## [!DNL Adobe Experience Manager] 6.5.5.0 {#experience-manager-6550}
 
 Adobe Experience Manager 6.5.5.0 is an important update that includes new features, key customer requested enhancements, and performance, stability, and security improvements, that are released since the general availability of 6.5 release in **April 2019**. It can be installed on top of Adobe Experience Manager 6.5.
 
-Some key features and enhancements introduced in Adobe Experience Manager 6.5.5.0 includes:
+Some key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.5.0 includes:
 
-* Customize the column names that display in Adobe Experience Manager Inbox.
+* Anonymous access to CRXDE Lite is disallowed. Instead, the users are directed to the login screen. See [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+
+* Customize the column names that display in [!DNL Adobe Experience Manager] Inbox.
 
 * Improved accessibility in various areas in Experience Manager Web Content Management (WCM) such as Page Editor, Core Components, RTE, and Admin user interface.
 
@@ -62,7 +64,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 * When a user copies and pastes a Layout Container on the same page, components in a Layout Container do not display (NPR-33648).
 * Dispatcher health check displays `Invalid cookie header` warning message in the log files (NPR-33629).
 * Reflected XSS in PreferencesServlet (NPR-33438).
-* Anonymous users can access CRX DE Lite features (GRANITE-27790).
+* Anonymous users can access CRXDE Lite features (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
 

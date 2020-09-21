@@ -184,9 +184,9 @@ Once downloaded, you can install and configure the S3 Connector as follows:
 1. Edit the file and add the configuration options required by your setup.
 1. Start AEM.
 
-### Upgrading to a new version of the 1.8.x S3 Connector {#upgrading-to-a-new-version-of-the-x-s-connector}
+### Upgrading to a new version of the 1.10.x S3 Connector {#upgrading-to-a-new-version-of-the-s-connector}
 
-If you need to upgrade to a new version of the 1.8.x S3 connector (for example, from 1.8.0 to 1.8.1) follow these steps:
+If you need to upgrade to a new version of the 1.10.x S3 connector (for example, from 1.10.0 to 1.10.4) follow these steps:
 
 1. Stop the AEM instance.
 
@@ -198,7 +198,7 @@ If you need to upgrade to a new version of the 1.8.x S3 connector (for example, 
 
    >[!NOTE]
    >
-   >The file names presented above are used for illustration purposes only and are not definitive.
+   >The file names presented above are used for illustration purposes only.
 
 1. Download the latest version of the 1.8.x feature pack from the [Adobe Repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Unzip the contents to a separate folder, then navigate to `jcr_root/libs/system/install/15`.

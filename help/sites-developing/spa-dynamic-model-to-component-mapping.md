@@ -27,7 +27,7 @@ Each items present in the model contains a `:type` field that exposes an AEM res
 
 Please refer to the [SPA Blueprint](/help/sites-developing/spa-blueprint.md) document for more information about model parsing and the front-end component access to the model.
 
-Also see the npm package: [https://www.npmjs.com/package/@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+Also see the npm package: [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 ## Model-Driven Single Page Application {#model-driven-single-page-application}
 

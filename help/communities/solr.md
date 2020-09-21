@@ -25,7 +25,7 @@ For production environments, [SolrCloud mode](#solrcloud-mode) provides improved
 
 Download and install Apache Solr:
 
-* [Version 4.10](https://archive.apache.org/dist/lucene/solr/4.10.4/) or [version 5.x](https://archive.apache.org/dist/lucene/solr/5.5.3/)
+* [Version 7.0](https://archive.apache.org/dist/lucene/solr/7.0.0/)
 
 * Solr requires Java 1.7 or greater
 * No service is needed

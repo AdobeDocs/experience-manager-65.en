@@ -30,7 +30,7 @@ See also [Characteristics of SRP Options](working-with-srp.md#characteristics-of
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
-  * Version 4.10 or version 5
+  * Solr version 7.0
   * Solr requires Java 1.7 or greater
   * No service is needed
   * Choice of run modes:

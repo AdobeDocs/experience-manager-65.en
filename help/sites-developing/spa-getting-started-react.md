@@ -55,9 +55,9 @@ The `package.json` file defines the requirements of the overall SPA package. The
 
 ```
   "dependencies": {
-    "@adobe/cq-react-editable-components": "~1.0.3",
-    "@adobe/cq-spa-component-mapping": "~1.0.3",
-    "@adobe/cq-spa-page-model-manager": "~1.0.4"
+    "@adobe/aem-react-editable-components": "~1.0.4",
+    "@adobe/aem-spa-component-mapping": "~1.0.5",
+    "@adobe/aem-spa-page-model-manager": "~1.0.3"
   }
 ```
 
@@ -134,7 +134,7 @@ The entry point into the SPA is of course the `index.js` file shown here simplif
 ```
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ModelManager, Constants } from "@adobe/cq-spa-page-model-manager";
+import { ModelManager, Constants } from "@adobe/aem-spa-page-model-manager";
 
 ...
 
@@ -159,7 +159,7 @@ When the component is instantiated statically using the component template (e.g.
 By rendering the app, `index.js` calls `App.js`, which is shown here in a simplified version to focus on the important content.
 
 ```
-import {Page, withModel } from '@adobe/cq-react-editable-components';
+import {Page, withModel } from '@adobe/aem-react-editable-components';
 
 ...
 
@@ -174,10 +174,10 @@ export default withModel(App);
 
 ### Page.js {#page-js}
 
-By rendering the page, `App.js` calls `Page.js` listed here in a simplfied version.
+By rendering the page, `App.js` calls `Page.js` listed here in a simplified version.
 
 ```
-import {Page, MapTo, withComponentMappingContext } from "@adobe/cq-react-editable-components";
+import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
 
 ...
 
@@ -199,7 +199,7 @@ With the page rendered, the components such as `Image.js` as shown here can be r
 
 ```
 import React, {Component} from 'react';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Image.css');
 
@@ -242,7 +242,7 @@ You can export a component and keep it editable.
 
 ```
 import React, { Component } from 'react';
-import { MapTo } from '@cq/cq-react-editable-components';
+import { MapTo } from '@adobe/aem-react-editable-components';
 
 ...
 
