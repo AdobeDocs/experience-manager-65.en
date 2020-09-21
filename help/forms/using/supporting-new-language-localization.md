@@ -24,17 +24,28 @@ The localization of adaptive forms relies on two types of locale dictionaries:
 
 ### How localization of adaptive form works {#how-localization-of-adaptive-form-works}
 
-When an adaptive form is rendered, it identifies the requested locale by looking at the following parameters in the specified order:
+There are two methods to identify the locale of the adaptive form. When an adaptive form is rendered, it identifies the requested locale by : 
 
-* Request parameter `afAcceptLang`
+* looking at the `[local]` selector in the adaptive form URL. The format of the URL is `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Using `[local]` selector allows caching an adaptive form. 
+
+* looking at the following parameters in the specified order:
+
+  * Request parameter `afAcceptLang`
   To override the browser locale of users, you can pass the `afAcceptLang` request parameter to force the locale. For example, the following URL will force to render the form in Japanese locale:
   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* The browser locale set for the user, which is specified in the request using the `Accept-Language` header.
+  * The browser locale set for the user, which is specified in the request using the `Accept-Language` header.
 
-* Language setting of the user specified in AEM.
+  * Language setting of the user specified in AEM.
+  
+  * Browser locale is enabled, by default. To change browser locale setting,
+    * Open the configuration manager. The URL is `http://[server]:4502/system/console/configMgr`
+    * Locate and open the **[!UICONTROL Adaptive Form and Interactive Communication Web Channel]** configuration.
+    * Change status of the **[!UICONTROL Use Browser Locale]** option and  **[!UICONTROL Save]** the configuration. 
 
 Once the locale is identified, the adaptive forms picks the form-specific dictionary. If the form-specific dictionary for the requested locale is not found, it uses the English (en) dictionary is used.
+
+If no locale information is present, adaptive form is delivered in the original language of the form. The original language is the language used while developing the adaptive form.  
 
 If a client library for the requested locale doesn't exist, it checks for a client library for the language code present in the locale. For example, if the requested locale is `en_ZA` (South African English) and the client library for `en_ZA` doesn't exist, the adaptive form will use the client library for `en` (English) language, if it exists. However, if none of them exist, the adaptive form uses the dictionary for `en` locale.
 

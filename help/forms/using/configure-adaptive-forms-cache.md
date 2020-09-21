@@ -23,13 +23,10 @@ A cache is a mechanism to shorten data access times, reduce latency, and improve
 * URLs without extension are not cached. For example, URL with pattern  pattern`/content/forms/[folder-structure]/[form-name].html` are cached and caching ignores URLs with pattern `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. So, use URLs with extensions to take benefits of caching.
 * Considerations for localized adaptive forms:
   * Use URL format `http://host:port/content/forms/af/<afName>.<locale>.html` to request a localized version of an adaptive form instead of `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
-  * Disable using browser locale for URLs with format `http://host:port/content/forms/af/<adaptivefName>.html`. To disable browser locale,
-    * Open the configuration manager. The URL is `http://[server]:4502/system/console/configMgr`
-    * Locate and open the **[!UICONTROL Adaptive Form and Interactive Communication Web Channel]** configuration.
-    * Disable the **[!UICONTROL Use Browser Locale]** option.
-  * When you use URL Format `http://host:port/content/forms/af/afName.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is disabled, the non-localized version of the adaptive form is served. The locale configured for your browser (browser locale) is not taken into consideration and a non-localized version of the adaptive form is served.
-  * When you use URL Format `http://host:port/content/forms/af/afName.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is enabled, a localized version of the adaptive form is served, if available. The language of the localized adaptive form is based on the locale configured for your browser (browser locale).
-
+  * [Disable using browser locale](supporting-new-language-localization.md##how-localization-of-adaptive-form-works) for URLs with format `http://host:port/content/forms/af/<adaptivefName>.html`.
+  * When you use URL Format `http://host:port/content/forms/af/<adaptivefName>.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is disabled, the non-localized version of the adaptive form is served. The locale configured for your browser (browser locale) is not taken into consideration and a non-localized version of the adaptive form is served.
+  * When you use URL Format `http://host:port/content/forms/af/<adaptivefName>.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is enabled, a localized version of the adaptive form is served, if available. The language of the localized adaptive form is based on the locale configured for your browser (browser locale). It can lead to [caching only first instance of an adaptive form]. To prevent the issue from happening on your instance, see [troubleshooting]().  
+  
 ## Pre-requisites {#pre-requisites}
 
 * Enable the [merging or prefilling data at client](prepopulate-adaptive-form-fields.md#prefill-at-client) option. It helps merge unique data for each instance of a pre-filled form. 
@@ -147,3 +144,36 @@ When you add a content fragment or an experience fragment to an adaptive form an
 #### Solution {#Solution2}
 
 After publishing updated content fragment or experience fragment, explicitly unpublish and publish the adaptive forms that use these assets.
+
+### Only first instance of adptive forms is cached{#only-first-insatnce-of-adptive-forms-is-cached}
+
+#### Issue {#issue3}
+
+When the adaptive form URL does not have any localization information, and **[!UICONTROL Use Browser Locale]** in configuration manager is enabled, a localized version of the adaptive form is served and only the first instance of the adaptive form is cached and delivered to every susequent user.
+
+#### Solution {#Solution3}
+
+ Perform the following steps to resolve the issue:
+ 
+ 1. Open the conf.d/httpd-dispatcher.conf or any other configuration file configured to load at runtime.
+ 
+ 1. Add the following code to your file and save it. 
+
+``` XML
+
+   <VirtualHost *:80>
+        # Set log level high during development / debugging and then turn it down to whatever is appropriate
+    LogLevel rewrite:trace6
+        # Start Rewrite Engine
+    RewriteEngine On
+        # Handle actual URL convention (just pass through)
+        RewriteRule "^/content/forms/af/(.*)[.](.*).html$" "/content/forms/af/$1.$2.html" [PT]
+ 
+        # Handle selector based redirection basded on browser language
+        # The Rewrite Cond(ition) is looking for the Accept-Lanague header and if found takes the first two character which most likely will be the desired language selector.
+        RewriteCond %{HTTP:Accept-Language} ^(..).*$ [NC]
+        # The 2nd part of the map (|en}) is the default value if no mapping is found (no or unknown language)
+        RewriteRule "^/content/forms/af/(.*).html$" "/content/forms/af/$1.%1.html" [R]
+   </VirtualHost>
+
+```
