@@ -84,8 +84,9 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
 + Administer Assets {#administer}
     + [Supported file formats](assets-formats.md)
     + [Search facets](search-facets.md)
-    + [Manage metadata for assets](metadata.md)
+    + [Work with asset metadata](metadata.md)
     + [Understand metadata concepts](metadata-concepts.md)
+    + [Configuration of metadata functionality](metadata-config.md)
     + [XMP writeback to renditions](xmp-writeback.md)
     + [Asset link sharing](link-sharing.md)
     + [Asset reports](asset-reports.md)
