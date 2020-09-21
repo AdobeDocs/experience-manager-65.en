@@ -68,6 +68,10 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 
 ### [!DNL Assets] {#assets-6550}
 
+>[!IMPORTANT]
+>
+>Windows users of [!DNL Experience Manager desktop app] are advised to upgrade to [desktop app version 2.0.3.2](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html#whats-new-added) to access the DAM repository on [!DNL Adobe Experience Manager 6.5.5.0] instance. As they can encounter issues when accessing the DAM repository on [!DNL Adobe Experience Manager] 6.5.5.0 instance using the desktop app version 2.0.2.
+
 **Accessibility enhancements in Experience Manager Assets**
 
 * It is now possible to bring keyboard focus on [!UICONTROL Comments] list and clickable option to [!UICONTROL Create] version comments under [!UICONTROL Create new version] in [!UICONTROL Timeline] panel of assets (NPR-33424).
