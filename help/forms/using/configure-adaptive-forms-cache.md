@@ -14,11 +14,13 @@ docset: aem65
 
 # Configure adaptive forms cache {#configure-adaptive-forms-cache}
 
-A cache is a mechanism to shorten data access times, reduce latency, and improve input/output (I/O) speeds. Adaptive forms cache stores only HTML content and JSON structure of an adaptive form without saving any pre-filled data. It helps in reducing the time required to render an adaptive form on the client. It is designed specifically for adaptive forms. Consider the 
+A cache is a mechanism to shorten data access times, reduce latency, and improve input/output (I/O) speeds. Adaptive forms cache stores only HTML content and JSON structure of an adaptive form without saving any pre-filled data. It helps in reducing the time required to render an adaptive form on the client. It is designed specifically for adaptive forms. 
+
+## Considerations for caching adaptive forms on a dispatcher {#considerations}
 
 * When using the adaptive forms cache, use the AEM [!DNL Dispatcher] to cache client libraries (CSS and JavaScript) of an adaptive form.
 * While developing custom components, on the server used for development, keep the adaptive forms cache disabled.
-* URLs without extension are not cached. For example, URL with pattern  pattern`/content/forms/[folder-structure]/[form-name].html` are cached and caching ignores URLs with pattern `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. So, use URLs with extensions. 
+* URLs without extension are not cached. For example, URL with pattern  pattern`/content/forms/[folder-structure]/[form-name].html` are cached and caching ignores URLs with pattern `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. So, use URLs with extensions to take benefits of caching.
 * Considerations for localized adaptive forms:
   * Use URL format `http://host:port/content/forms/af/<afName>.<locale>.html` to request a localized version of an adaptive form instead of `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
   * Disable using browser locale for URLs with format `http://host:port/content/forms/af/<adaptivefName>.html`. To disable browser locale,
@@ -27,12 +29,11 @@ A cache is a mechanism to shorten data access times, reduce latency, and improve
     * Disable the **[!UICONTROL Use Browser Locale]** option.
   * When you use URL Format `http://host:port/content/forms/af/afName.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is disabled, the non-localized version of the adaptive form is served. The locale configured for your browser (browser locale) is not taken into consideration and a non-localized version of the adaptive form is served.
   * When you use URL Format `http://host:port/content/forms/af/afName.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is enabled, a localized version of the adaptive form is served, if available. The language of the localized adaptive form is based on the locale configured for your browser (browser locale).
-* [Enable flush agent on publish instance](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)
-
 
 ## Pre-requisites {#pre-requisites}
 
-* Enable the [merging or prefilling data at client](prepopulate-adaptive-form-fields.md#prefill-at-client) option
+* Enable the [merging or prefilling data at client](prepopulate-adaptive-form-fields.md#prefill-at-client) option. It helps merge unique data for each instance of a pre-filled form. 
+* [Enable flush agent on publish instance](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance). It helps gain better caching performance for adaptive forms.
 
 ## Configure adaptive forms cache at author and publish instances {#configure-adaptive-forms-caching-at-author-and-publish-instances}
 
@@ -52,19 +53,12 @@ Your environment is configured to use cache adaptive forms and related assets.
 
 ## (Optional) Configure adaptive form cache at dispatcher {#configure-the-cache}
 
-You can also configure adaptive form caching at dispatcher for additional performance boost. 
-
-### Considerations for caching adaptive forms on a dispatcher {#considerations}
-
-* 
-* 
-
-Perform the following steps to configure the adaptive forms cache:
+You can also configure adaptive form caching at dispatcher for additional performance boost. Perform the following steps to configure the adaptive forms cache:
 
 1. Open the following URL for every publish instance of you environment and configure the replication agent:
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. Add the following to your dispatcher.anyfile:
+1. Add the following to your dispatcher.any file:
 
    ```JSON
       /invalidate
@@ -89,12 +83,11 @@ Perform the following steps to configure the adaptive forms cache:
 
    ```
 
-   After adding the above filters:
+   When you add the above:
 
    * An adaptive form remains in cache until an updated version of the form is not published.
 
-   * When a newer version of resource referenced in an adaptive form is published, the impacted adaptive forms is automatically invalidated.  
-
+   * When a newer version of resource referenced in an adaptive form is published, the impacted adaptive forms is automatically invalidated. There are some exceptions to automatic invalidation of referenced resources. For workaround to exceptions, see [troubleshooting](#troubleshooting) section.
 1. Add the below rules dispatcher.any or custom rules file. It excludes the URLs that do not support caching. For example, Interactive Communication:
 
    ``` JSON
@@ -129,8 +122,28 @@ Perform the following steps to configure the adaptive forms cache:
       /0001 { /glob "*" /type "deny" }
       # added for AEM forms specific use cases.
       /0003 { /glob "dataRef" /type "allow" }
-
       }
-   ```  
 
-1. 
+Your AEM environment is configured to cache adaptive forms. It caches all types of adaptive forms. If you have a requirement to check user access permissions for a page before delivering the cached page, see [caching secured content](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/permissions-cache.html).
+
+## Troubleshooting {#troubleshooting}
+
+### Some adaptive forms containing images or videos are not automatically invalidated from dispatcher cache {#videos-or-images-not-auto-invalidated}
+
+#### Issue {#issue1}
+
+When you select and add images or videos via asset browser to an adaptive form and these images and videos are edited in Assets editor, adaptive forms containing such images are not invalidated from dispatcher cache automatically.
+
+#### Solution {#Solution1}
+
+After publishing the images and video, explicitly unpublish and publish the adaptive forms that reference these assets. 
+
+### Some adaptive forms containing content fragment or experience fragments are not automatically invalidated from dispatcher cache {#content-or-experience-fragment-not-auto-invalidated}
+
+#### Issue {#issue2}
+
+When you add a content fragment or an experience fragment to an adaptive form and these assets are independently edited and published, adaptive forms containing such assets not invalidated from dispatcher cache automatically.
+
+#### Solution {#Solution2}
+
+After publishing updated content fragment or experience fragment, explicitly unpublish and publish the adaptive forms that use these assets.
