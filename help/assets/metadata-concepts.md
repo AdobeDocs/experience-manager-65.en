@@ -1,6 +1,7 @@
 ---
 title: Understand metadata concepts
-description: Learn about the need of and types of metadata that allows for easier categorization and organization of assets. contentOwner: AG
+description: Learn about the need of and types of metadata that allows for easier categorization and organization of assets.
+contentOwner: AG
 ---
 
 # Why we need metadata {#why-we-need-metadata}

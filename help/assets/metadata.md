@@ -6,17 +6,21 @@ contentOwner: AG
 
 # Manage metadata of your digital assets {#managing-metadata-for-digital-assets}
 
+<!-- Scope of metadata articles:
+* metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
+* metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
+* metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
+-->
+
 [!DNL Adobe Experience Manager Assets] keeps metadata for every asset. It allows easier categorization and organization of assets and it helps people who are looking for a specific asset. With the ability to extract metadata from files uploaded to [!DNL Experience Manager Assets], metadata management integrates with the creative workflow. With the ability to keep and manage metadata with your assets, you can automatically organize and process assets based on their metadata.
 
 ## How to edit or add metadata {#how-to-edit-or-add-metadata}
 
 Metadata is additional information about the asset that can be searched. It is automatically extracted when you upload an image. You can edit the existing metadata or add new metadata properties to existing field, for example, when a metadata field is blank.
 
-Organizations need controlled and reliable metadata vocabularies. Hence [!DNL Experience Manager Assets] does not allow for on-demand adding of new metadata properties. Developers and not authors can add new metadata fields for assets. See [create metadata property for assets](meta-edit.md#editing-metadata-schema).
+Organizations need controlled and reliable metadata vocabularies. Hence [!DNL Experience Manager Assets] does not allow for on-demand adding of new metadata properties. Developers and not authors can add new metadata fields for assets. See [create metadata property for assets](metadata-config.md#metadata-schema).
 
-### Edit metadata for an asset {#editing-metadata-for-an-asset}
-
-To edit metadata, follow these steps:
+To edit the metadata of an asset, follow these steps:
 
 1. Do one of the following:
 
@@ -39,19 +43,6 @@ To edit metadata, follow these steps:
 Any changes to the metadata of an asset are written back to the original binary as part of its XMP data. The metadata write-back workflow adds the metadata to the original binary. Changes made to the existing properties (such as `dc:title`) are overwritten and new properties (including custom properties like `cq:tags`) are added with the schema.
 
 XMP write-back is supported and enabled for the platforms and file formats described in [technical requirements.](/help/sites-deploying/technical-requirements.md)
-
-### Edit metadata schema {#editing-metadata-schema}
-
-For details, see [edit metadata schema forms](metadata-schemas.md#edit-metadata-schema-forms).
-
-### Register a custom namespace within [!DNL Experience Manager] {#registering-a-custom-namespace-within-aem}
-
-You can add your own namespaces within [!DNL Experience Manager]. Just as there are predefined namespaces such as `cq`, `jcr`, and `sling`, you can have a namespace for your repository metadata and XML processing.
-
-1. Access the node type administration page `https://[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
-1. To access the namespace administration page, click **[!UICONTROL Namespaces]** at the top of the page.
-1. To add a namespace, click **[!UICONTROL New]** at the bottom of the page.
-1. Specify a custom namespace in the XML namespace convention. Specify the ID in the form of a URI and an associated prefix for the ID. Click **[!UICONTROL Save]**.
 
 ## Edit metadata properties of multiple assets {#editing-metadata-properties-of-multiple-assets}
 
@@ -154,16 +145,22 @@ A few use cases for exporting metadata in bulk are:
 
    *Figure: Dialog to download the CSV file containing metadata exported in bulk.*
 
-### Configure limit for bulk metadata update {#configlimit}
+## Edit metadata of Collections {#collections-metadata}
 
-To prevent DOS like situation, Enterprise Manager limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. Enterprise Manager generates the following warning in the logs:
+For details, see [view and edit collection metadata](/help/assets/managing-collections-touch-ui.md#view-edit-collection-metadata) and [edit metadata of multiple collections in bulk](/help/assets/managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
 
-`org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
+## Tips and limitations {#best-practices-limitations}
 
-To change the limit, access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
+* The metadata updates via user interface changes the metadata properties in the `dc` namespace. Any updates made via the HTTP API changes the metadata properties in the `jcr` namespace. See [how to update metadata using HTTP API](/help/assets/mac-api-assets.md#update-asset-metadata).
+* The CSV file for importing assets metadata is in a very specific format. To save effort and time and to avoid unintended errors, you can start creating the CSV using the format of an exported CSV file.
+* When importing metadata using a CSV file, the required date date format is `YYYY-MM-DDThh:mm:ss.fff-00:00`. If any other format is used, then the date values are not set. The date formats of exported metadata CSV file is in the format `YYYY-MM-DDThh:mm:ss-00:00`. If you want to import it, convert it to the acceptable format by adding the nanoseconds value denoted by `fff`.
 
-<!--  TBD for later: Complete this section. Take help from Metadata IRD for DDAM. Also, look at metadata features in Forrester analysis.
--->
+>[!MORELIKETHIS]
+>
+>* [Metadata concepts and understanding](metadata-concepts.md).
+>* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+>* [How to edit or add metadata](meta-edit.md).
+>* [Metadata import and export in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 
@@ -218,28 +215,4 @@ To customize the metadata properties page, including adding, modifying, deleting
    >
    >For single-value fields, the new metadata is not appended to the existing value in the field even if you select **[!UICONTROL Append mode]**.
 
-## Configure limit for bulk metadata update {#limit-bulk-metadata-updates}
-
-To prevent DOS like situation, Enterprise Manager limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. Enterprise Manager generates the following warning in the logs:
-
-`org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
-
-To change the limit, access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
-
 -->
-
-## Tips and limitations {#best-practices-limitations}
-
-* The metadata updates via Touch-UI changes the metadata properties in the `dc` namespace. Any updates made via the HTTP API changes the metadata properties in the `jcr` namespace. See [how to update metadata using HTTP API](/help/assets/mac-api-assets.md#update-asset-metadata).
-* The CSV file for importing assets metadata is in a very specific format. To save effort and time and to avoid unintended errors, you can start creating the CSV using the format of an exported CSV file.
-* When importing metadata using a CSV file, the required date date format is `YYYY-MM-DDThh:mm:ss.fff-00:00`. If any other format is used, then the date values are not set. The date formats of exported metadata CSV file is in the format `YYYY-MM-DDThh:mm:ss-00:00`. If you want to import it, convert it to the acceptable format by adding the nanoseconds value denoted by `fff`.
-* To import metadata on custom namespaces, first register the namespaces.
-* Property Picker displays properties that are used in schema editors and search forms. Property Picker does not pick metadata properties from an asset.
-
->[!MORELIKETHIS]
->
->* [Metadata concepts and understanding](metadata-concepts.md).
->* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
->* [How to edit or add metadata](meta-edit.md).
->* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
->* [Metadata import and export in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
