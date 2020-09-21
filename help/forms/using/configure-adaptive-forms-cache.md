@@ -14,35 +14,57 @@ docset: aem65
 
 # Configure adaptive forms cache {#configure-adaptive-forms-cache}
 
-A cache is a mechanism to shorten data access times, reduce latency, and improve input/output (I/O) speeds. Adaptive forms cache stores only HTML content and JSON structure of an adaptive form without saving any pre-filled data. It helps in reducing the time required to render an adaptive form or document on the client. It is designed specifically for adaptive forms and also supports adaptive documents.
+A cache is a mechanism to shorten data access times, reduce latency, and improve input/output (I/O) speeds. Adaptive forms cache stores only HTML content and JSON structure of an adaptive form without saving any pre-filled data. It helps in reducing the time required to render an adaptive form on the client. It is designed specifically for adaptive forms. Consider the 
+
+* When using the adaptive forms cache, use the AEM [!DNL Dispatcher] to cache client libraries (CSS and JavaScript) of an adaptive form.
+* While developing custom components, on the server used for development, keep the adaptive forms cache disabled.
+* URLs without extension are not cached. For example, URL with pattern  pattern`/content/forms/[folder-structure]/[form-name].html` are cached and caching ignores URLs with pattern `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. So, use URLs with extensions. 
+* Considerations for localized adaptive forms:
+  * Use URL format `http://host:port/content/forms/af/<afName>.<locale>.html` to request a localized version of an adaptive form instead of `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
+  * Disable using browser locale for URLs with format `http://host:port/content/forms/af/<adaptivefName>.html`. To disable browser locale,
+    * Open the configuration manager. The URL is `http://[server]:4502/system/console/configMgr`
+    * Locate and open the **[!UICONTROL Adaptive Form and Interactive Communication Web Channel]** configuration.
+    * Disable the **[!UICONTROL Use Browser Locale]** option.
+  * When you use URL Format `http://host:port/content/forms/af/afName.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is disabled, the non-localized version of the adaptive form is served. The locale configured for your browser (browser locale) is not taken into consideration and a non-localized version of the adaptive form is served.
+  * When you use URL Format `http://host:port/content/forms/af/afName.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is enabled, a localized version of the adaptive form is served, if available. The language of the localized adaptive form is based on the locale configured for your browser (browser locale).
+* [Enable flush agent on publish instance](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)
+
 
 ## Pre-requisites {#pre-requisites}
 
 * Enable the [merging or prefilling data at client](prepopulate-adaptive-form-fields.md#prefill-at-client) option
-* Use URL format `http://host:port/content/forms/af/<afName>.<locale>.html` to request a localized version of an adaptive form instead of `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
-* [Invalidate Dispatcher Cache from the Publish instances](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html)
-* Disable using browser locale for URLs with format `http://host:port/content/forms/af/<adaptivefName>.html`. To disable browser locale,
-  * Open the configuration manager. The URL is `http://[server]:4502/system/console/configMgr`
-  * Locate and open the **[!UICONTROL Adaptive Form and Interactive Communication Web Channel]** configuration.
-  * Disable the **[!UICONTROL Use Browser Locale]** option.
 
-## Considerations {#considerations}
+## Configure adaptive forms cache at author and publish instances {#configure-adaptive-forms-caching-at-author-and-publish-instances}
 
-* When you use URL Format `http://host:port/content/forms/af/afName.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is disabled, the non-localized version of the adaptive form is served. The locale configured for your browser (browser locale) is not taken into consideration and a non-localized version of the adaptive form is served.
-* When you use URL Format `http://host:port/content/forms/af/afName.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is enabled, a localized version of the adaptive form is served, if available. The language of the localized adaptive form is based on the locale configured for your browser (browser locale).
-* URLs without extension are not cached. For example, URL with pattern  pattern`/content/forms/[folder-structure]/[form-name].html` are cached and caching ignores URLs with pattern `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`.
-* When using the adaptive forms cache, use the AEM [!DNL Dispatcher] to cache client libraries (CSS and JavaScript) of an adaptive form or document.
-* While developing custom components, on the server used for development, keep the adaptive forms cache disabled.
+1. Go to AEM web console configuration manager at `https://[server]:[port]/system/console/configMgr`.
+1. Click **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** to edit its configuration values.
+1. In the [!UICONTROL edit configuration values] dialog, specify the maximum number of forms or documents an instance of the AEM [!DNL Forms] server can cache in the **[!UICONTROL Number of Adaptive Forms]** field. The default value is 100.
 
+   >[!NOTE]
+   >
+   >To disable the cache, set the value in the Number of Adaptive Forms field to **0**. The cache is reset and all forms and documents are removed from the cache when you disable or change the cache configuration.
 
-## Configure the cache {#configure-the-cache}
+   ![Configuration dialog for adaptive forms HTML cache](assets/cache-configuration-edit.png)
+
+1. Click **[!UICONTROL Save]** to save the configuration. 
+
+Your environment is configured to use cache adaptive forms and related assets.
+
+## (Optional) Configure adaptive form cache at dispatcher {#configure-the-cache}
+
+You can also configure adaptive form caching at dispatcher for additional performance boost. 
+
+### Considerations for caching adaptive forms on a dispatcher {#considerations}
+
+* 
+* 
 
 Perform the following steps to configure the adaptive forms cache:
 
 1. Open the following URL for every publish instance of you environment and configure the replication agent:
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. Add the following to your dispatcher.any or custom filter file:
+1. Add the following to your dispatcher.anyfile:
 
    ```JSON
       /invalidate
@@ -69,9 +91,9 @@ Perform the following steps to configure the adaptive forms cache:
 
    After adding the above filters:
 
-   * An adaptive form and remains in cache until an updated is not pushed from a corresponding author instance .
+   * An adaptive form remains in cache until an updated version of the form is not published.
 
-   * When a resource referenced in an adaptive form is updated or a newer version of the resource is published, the impacted adaptive forms is automatically invalidated.  
+   * When a newer version of resource referenced in an adaptive form is published, the impacted adaptive forms is automatically invalidated.  
 
 1. Add the below rules dispatcher.any or custom rules file. It excludes the URLs that do not support caching. For example, Interactive Communication:
 
@@ -107,21 +129,8 @@ Perform the following steps to configure the adaptive forms cache:
       /0001 { /glob "*" /type "deny" }
       # added for AEM forms specific use cases.
       /0003 { /glob "dataRef" /type "allow" }
-      /0004 { /glob "wcmmode" /type "allow" }
-      /0005 { /glob "logConfig" /type "allow" }
+
       }
    ```  
 
-1. Go to AEM web console configuration manager at `https://[server]:[port]/system/console/configMgr`.
-1. Click **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** to edit its configuration values.
-1. In the [!UICONTROL edit configuration values] dialog, specify the maximum number of forms or documents an instance of the AEM [!DNL Forms] server can cache in the **[!UICONTROL Number of Adaptive Forms]** field. The default value is 100.
-
-   >[!NOTE]
-   >
-   >To disable the cache, set the value in the Number of Adaptive Forms field to **0**. The cache is reset and all forms and documents are removed from the cache when you disable or change the cache configuration.
-
-   ![Configuration dialog for adaptive forms HTML cache](assets/cache-configuration-edit.png)
-
-1. Click **[!UICONTROL Save]** to save the configuration. 
-
-Your environment is configured to use cache adaptive forms and related assets.
+1. 
