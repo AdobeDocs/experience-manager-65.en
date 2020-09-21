@@ -159,7 +159,6 @@ For details, see [view and edit collection metadata](/help/assets/managing-colle
 >
 >* [Metadata concepts and understanding](metadata-concepts.md).
 >* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
->* [How to edit or add metadata](meta-edit.md).
 >* [Metadata import and export in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.

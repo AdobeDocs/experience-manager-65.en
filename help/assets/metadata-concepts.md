@@ -198,7 +198,7 @@ Creating metadata-driven workflows help you automate some processes, which impro
 
 XMP (Extensible Metadata Platform) is the metadata standard used by [!DNL Adobe Experience Manager Assets] for all metadata management. XMP provides a standard format for the creation, processing, and interchange of metadata for a wide variety of applications.
 
-Aside from offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich [content model](xmp.md#xmp-core-concepts) and is [supported by Adobe](xmp.md#advantages-of-xmp) and other companies, so that users of XMP in combination with [!DNL Assets] have a powerful platform to build upon.
+Aside from offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich [content model](#xmp-core-concepts) and is [supported by Adobe](#advantages-of-xmp) and other companies, so that users of XMP in combination with [!DNL Assets] have a powerful platform to build upon.
 
 The [XMP specification](https://www.adobe.com/devnet/xmp.html) is available from Adobe.
 

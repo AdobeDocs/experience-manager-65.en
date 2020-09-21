@@ -729,7 +729,7 @@ To automate the setting of default YouTube properties for your uploaded videos:
 1. Near the upper-right corner of the page, click **[!UICONTROL Save.]**
 1. Apply the YouTube Publishing metadata profile to the folders where you are going to upload videos. You will need to have both the Metadata Profile and the Video Profile set.
 
-   See [Metadata Profiles](/help/assets/metadata-profiles.md) and [Video Profiles](/help/assets/video-profiles.md).
+   See [Metadata Profiles](/help/assets/metadata-config.md#metadata-profiles) and [Video Profiles](/help/assets/video-profiles.md).
 
 ### Publishing videos to your YouTube channel {#publishing-videos-to-your-youtube-channel}
 
