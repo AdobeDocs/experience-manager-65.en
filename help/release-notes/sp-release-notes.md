@@ -452,6 +452,17 @@ Customers are advised to review if they make use of the feature or capability in
 
 ## Known issues {#known-issues}
 
+* If the security health check does not work and the system displays the following error message:
+`message: Could not verify users and could not test system account logins.`
+Perform the following steps to resolve the issue:
+   1. Go to https://&lt;*hostname*&gt;:&lt;*port*&gt;/system/console/configMgr.
+
+   1. Search for `hc.impl`.
+
+   1. In [!UICONTROL Service Mappings], click `+` and specify `com.adobe.granite.repository.hc.impl=[user-reader-service]`.
+
+   1. Click [!UICONTROL Save] to save the configuration.  
+
 * If you install [!DNL Experience Manager] 6.5 Service Pack 5 or a previous service pack on [!DNL Experience Manager] 6.5, the run-time copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
 To retrieve your run-time copy, Adobe suggests to sync the design time copy of the custom workflow model with its run-time copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`.
