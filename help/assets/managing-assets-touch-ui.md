@@ -88,9 +88,9 @@ To configure the cleanup task for the unfinished chunk upload jobs, go to `https
 >
 >Given the credential-expiry-timeout, latency, bandwidth, and expected concurrent uploads, the highest value that allows you to ensure the following two should be picked:
 >
->* To ensure that chunk-upload gets enabled for files with sizes likely to cause credential-expiry mid-upload.
+>* To ensure that chunk-upload is enabled for files with sizes likely to cause credential expiry while upload is in progress.
 >
->* To ensure that each chunk finishes before the credential is expired.
+>* To ensure that each chunk finishes before the credential expires.
 
 If you upload an asset with the same name as that of an asset already available at the location where you are uploading the asset, a warning dialog is displayed.
 
