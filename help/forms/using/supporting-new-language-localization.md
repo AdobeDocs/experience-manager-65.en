@@ -43,7 +43,7 @@ There are two methods to identify the locale of the adaptive form. When an adapt
     * Locate and open the **[!UICONTROL Adaptive Form and Interactive Communication Web Channel]** configuration.
     * Change status of the **[!UICONTROL Use Browser Locale]** option and  **[!UICONTROL Save]** the configuration. 
 
-Once the locale is identified, the adaptive forms picks the form-specific dictionary. If the form-specific dictionary for the requested locale is not found, it uses the English (en) dictionary is used.
+Once the locale is identified, the adaptive forms picks the form-specific dictionary. If the form-specific dictionary for the requested locale is not found, it uses the dictionary for language in which adaptive form was authored.
 
 If no locale information is present, adaptive form is delivered in the original language of the form. The original language is the language used while developing the adaptive form.  
 
