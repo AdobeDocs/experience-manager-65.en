@@ -136,8 +136,6 @@ A workflow model owner is unable to view items related to AEM Workflow in AEM in
       | allowInboxSharing  |  allowInboxSharing | BOOLEAN  |
       | allowExplicitSharing  |  allowExplicitSharing | BOOLEAN  |
 
-
-
    * Deploy the indices via an AEM package. You can use an [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype) project to create a deployable AEM package. Use the following sample code to add indices to an AEM Archetype project:
 
    ``` Java
@@ -148,4 +146,4 @@ A workflow model owner is unable to view items related to AEM Workflow in AEM in
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ``` 
 
-1. After configuring indices in CRX DE or deploying via a package, [re-index the repository](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex). 
+1. After configuring indices in CRX DE or deploying via a package, [re-index the repository](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
