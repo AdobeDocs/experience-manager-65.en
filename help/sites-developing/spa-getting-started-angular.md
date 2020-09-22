@@ -54,9 +54,9 @@ The `package.json` file defines the requirements of the overall SPA package. The
 
 ```
 "dependencies": {
-  "@adobe/cq-angular-editable-components": "~1.0.3",
-  "@adobe/cq-spa-component-mapping": "~1.0.3",
-  "@adobe/cq-spa-page-model-manager": "~1.0.4"
+  "@adobe/aem-angular-editable-components": "~1.0.3",
+  "@adobe/aem-spa-component-mapping": "~1.0.5",
+  "@adobe/aem-spa-page-model-manager": "~1.0.3"
 }
 ```
 
@@ -128,7 +128,7 @@ The entry point into the SPA is the `app.module.ts` file shown here simplified t
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { SpaAngularEditableComponentsModule } from '@adobe/cq-angular-editable-components';
+import { SpaAngularEditableComponentsModule } from '@adobe/aem-angular-editable-components';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -158,8 +158,8 @@ Once `app.module.ts` bootstraps `AppComponent`, it can then initialize the App, 
 ```
 // app.component.ts
 import { Component } from '@angular/core';
-import { ModelManager } from '@adobe/cq-spa-page-model-manager';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { ModelManager } from '@adobe/aem-spa-page-model-manager';
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-root',
@@ -193,7 +193,7 @@ By processing the page, `app.component.ts` calls `main-content.component.ts` lis
 import { Component } from '@angular/core';
 import { ModelManagerService }     from '../model-manager.service';
 import { ActivatedRoute } from '@angular/router';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-main',

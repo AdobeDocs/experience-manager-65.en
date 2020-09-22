@@ -42,7 +42,7 @@ The page component for a SPA doesn't provide the HTML elements of its child comp
 
 ### Page Model Management {#page-model-management}
 
-The resolution and the management of the page model is delegated to a provided `PageModel` library. The SPA must use the Page Model library in order to be initialized and be authored by the SPA Editor. The Page Model library provided indirectly to the AEM Page component via the `cq-react-editable-components` npm. The Page Model is an interpreter between AEM and the SPA and therefore always must be present. When the page is authored, an additional library `cq.authoring.pagemodel.messaging` must be added in order to enable the communication with the page editor.
+The resolution and the management of the page model is delegated to a provided `PageModel` library. The SPA must use the Page Model library in order to be initialized and be authored by the SPA Editor. The Page Model library provided indirectly to the AEM Page component via the `aem-react-editable-components` npm. The Page Model is an interpreter between AEM and the SPA and therefore always must be present. When the page is authored, an additional library `cq.authoring.pagemodel.messaging` must be added in order to enable the communication with the page editor.
 
 If the SPA page component inherits from the page core component, there are two options for making the `cq.authoring.pagemodel.messaging` client library category available:
 

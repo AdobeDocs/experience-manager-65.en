@@ -10,6 +10,10 @@ When capturing the metadata information of an asset, users provide information i
 
 Use metadata schemas to define rules for displaying cascading metadata. For example, if your metadata schema includes an asset type field, you can define a pertinent set of fields to be displayed based on the type of asset a user selects.
 
+>[!CAUTION]
+>
+>Cascading metadata is not supported for Content Fragments.
+
 Here are some use cases for which you can define cascading metadata:
 
 * Where user location is required, display relevant city names based on the user's choice of country and state.

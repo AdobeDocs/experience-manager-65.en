@@ -478,7 +478,7 @@ You can generate Axis Java library files by performing the following steps:
     * Add the bin directory to your class path.
     * Set the `ANT_HOME` environment variable to the directory where you installed Ant.
 
-1. Install Apache Axis 1.4 on the client computer. It is available at [https://ws.apache.org/axis/]( https://ws.apache.org/axis/.md).
+1. Install Apache Axis 1.4 on the client computer. It is available at [https://ws.apache.org/axis/](https://ws.apache.org/axis/.md).
 1. Set up the class path to use the Axis JAR files in your web service client, as described in the Axis installation instructions at [https://ws.apache.org/axis/java/install.html](https://ws.apache.org/axis/java/install.html).
 1. Use the Apache WSDL2Java tool in Axis to generate Java proxy classes. Create an Ant build script to accomplish this task. The following script is a sample Ant build script named build.xml:
 
