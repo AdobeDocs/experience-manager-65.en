@@ -118,3 +118,34 @@ The **[!UICONTROL Workflow Details]** tab shows each step of the workflow. Tap *
 
 ![completed-task-workflow](assets/completed-task-workflow.png)
 
+## Troubleshooting {#troubleshooting-workflows}
+
+### Unable to view items related to AEM Workflow in AEM inbox {#unable-to-see-aem-worklow-items}
+
+A workflow model owner is unable to view items related to AEM Workflow in AEM inbox. To resolve the issue add the below listed indices to your AEM repository and rebuild the index. 
+
+1. Use one of the following methods to add indices: 
+
+   * Create the following nodes at in CRX DE at `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` with respective properties as specified in the following table: 
+
+      |Node| Property  | Type  |
+      |---|---|---|
+      | sharedWith  |  sharedWith | STRING  |
+      | locked  |  locked | BOOLEAN  |
+      | returned  |  returned | BOOLEAN  |
+      | allowInboxSharing  |  allowInboxSharing | BOOLEAN  |
+      | allowExplicitSharing  |  allowExplicitSharing | BOOLEAN  |
+
+
+
+   * Deploy the indices via an AEM package. You can use an [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype) project to create a deployable AEM package. Use the following sample code to add indices to an AEM Archetype project:
+
+   ``` Java
+      .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
+      .property("locked", "locked").type(TYPENAME_BOOLEAN).propertyIndex()
+      .property("returned", "returned").type(TYPENAME_BOOLEAN).propertyIndex()
+      .property("allowInboxSharing", "allowInboxSharing").type(TYPENAME_BOOLEAN).propertyIndex()
+      .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
+   ``` 
+
+1. After configuring indices in CRX DE or deploying via a package, [re-index the repository](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex). 
