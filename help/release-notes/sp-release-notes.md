@@ -14,7 +14,11 @@ mini-toc-levels: 1
 | Version  | 6.5.6.0                      |
 | Type     | Service Pack Release         |
 | Date     | September 03, 2020                |
-| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6.zip) |
+| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip) |
+
+>[!NOTE]
+>
+>An updated version of AEM 6.5 Service Pack 6 is available. If you have already installed a previous version of Service Pack 6, upgrade to the latest available version.
 
 ## What's included in Adobe Experience Manager 6.5.6.0 {#what-s-included-in-aem}
 
@@ -370,7 +374,7 @@ For information on security updates, see [Experience Manager security bulletins 
 
 Perform the following steps to install the Service Pack on an existing Adobe Experience Manager 6.5 instance:
 
-1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6.zip).
+1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip).
 
 1. Open Package Manager and click **[!UICONTROL Upload Package]** to upload the package. To know how to use it, see [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html).
 
