@@ -24,7 +24,7 @@ A cache is a mechanism to shorten data access times, reduce latency, and improve
 * Considerations for localized adaptive forms:
   * Use URL format `http://host:port/content/forms/af/<afName>.<locale>.html` to request a localized version of an adaptive form instead of `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
   * [Disable using browser locale](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) for URLs with format `http://host:port/content/forms/af/<adaptivefName>.html`.
-  * When you use URL Format `http://host:port/content/forms/af/<adaptivefName>.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is disabled, the non-localized version of the adaptive form is served. The locale configured for your browser (browser locale) is not taken into consideration and a non-localized version of the adaptive form is served.
+  * When you use URL Format `http://host:port/content/forms/af/<adaptivefName>.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is disabled, the non-localized version of the adaptive form is served. The non-localized language is the language used while developing the adaptive form. The locale configured for your browser (browser locale) is not taken into consideration and a non-localized version of the adaptive form is served.
   * When you use URL Format `http://host:port/content/forms/af/<adaptivefName>.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is enabled, a localized version of the adaptive form is served, if available. The language of the localized adaptive form is based on the locale configured for your browser (browser locale). It can lead to [caching only first instance of an adaptive form]. To prevent the issue from happening on your instance, see [troubleshooting](#only-first-insatnce-of-adptive-forms-is-cached).  
   
 ## Pre-requisites {#pre-requisites}
@@ -157,7 +157,7 @@ When the adaptive form URL does not have any localization information, and **[!U
  
  1. Open the conf.d/httpd-dispatcher.conf or any other configuration file configured to load at runtime.
  
- 1. Add the following code to your file and save it. 
+ 1. Add the following code to your file and save it. It is a sample code modify it to suit your environment.
 
 ``` XML
 
@@ -172,7 +172,6 @@ When the adaptive form URL does not have any localization information, and **[!U
         # Handle selector based redirection basded on browser language
         # The Rewrite Cond(ition) is looking for the Accept-Lanague header and if found takes the first two character which most likely will be the desired language selector.
         RewriteCond %{HTTP:Accept-Language} ^(..).*$ [NC]
-        # The 2nd part of the map (|en}) is the default value if no mapping is found (no or unknown language)
         RewriteRule "^/content/forms/af/(.*).html$" "/content/forms/af/$1.%1.html" [R]
    </VirtualHost>
 
