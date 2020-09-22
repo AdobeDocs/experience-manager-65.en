@@ -122,21 +122,6 @@ To apply a metadata profile globally, follow these steps:
 
   ![chlimage_1-210](assets/chlimage_1-493.png)
 
-## Tips and limitations {#best-practices-limitations}
-
-* To import metadata on custom namespaces, first register the namespaces.
-* Property Picker displays properties that are used in schema editors and search forms. Property Picker does not pick metadata properties from an asset.
-* You may have pre-existing metadata profiles existing since before upgrading to [!DNL Experience Manager] 6.5. After upgrade, if you apply such a profile in folder [!UICONTROL Properties] in [!UICONTROL Metadata Profiles] tab, the metadata form fields do not display. However, if you apply a newly created metadata profile, the form fields are displayed but unavailable as expected. There is no loss of functionality but if you want to see the (unavailable) form fields then edit and save the existing metadata profiles.
-
->[!MORELIKETHIS]
->
->* [Metadata concepts and understanding](metadata-concepts.md).
->* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
->* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
->* [Metadata import and export in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
->* [Profiles to process metadata, images, and videos](processing-profiles.md)
->* [Best Practices to organize your digital assets to use processing profiles](/help/assets/organize-assets.md)
-
 ## Metadata schema for a folder {#folder-metadata-schema}
 
 [!DNL Adobe Experience Manager Assets] lets you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages.
@@ -267,3 +252,18 @@ Open the properties for a folder configured with a folder metadata schema. A **[
 Enter metadata values in the various fields and click **[!UICONTROL Save]** to store the values. The values you specify are stored in the folder node in the CRX repository.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
+
+## Tips and limitations {#best-practices-limitations}
+
+* To import metadata on custom namespaces, first register the namespaces.
+* Property Picker displays properties that are used in schema editors and search forms. Property Picker does not pick metadata properties from an asset.
+* You may have pre-existing metadata profiles existing since before upgrading to [!DNL Experience Manager] 6.5. After upgrade, if you apply such a profile in folder [!UICONTROL Properties] in [!UICONTROL Metadata Profiles] tab, the metadata form fields do not display. However, if you apply a newly created metadata profile, the form fields are displayed but unavailable as expected. There is no loss of functionality but if you want to see the (unavailable) form fields then edit and save the existing metadata profiles.
+
+>[!MORELIKETHIS]
+>
+>* [Metadata concepts and understanding](metadata-concepts.md).
+>* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+>* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+>* [Metadata import and export in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Profiles to process metadata, images, and videos](processing-profiles.md)
+>* [Best Practices to organize your digital assets to use processing profiles](/help/assets/organize-assets.md)

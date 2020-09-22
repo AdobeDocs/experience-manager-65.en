@@ -151,7 +151,7 @@ For details, see [view and edit collection metadata](/help/assets/managing-colle
 
 ## Apply a metadata profile to folders {#applying-a-metadata-profile-to-folders}
 
-<!-- TBD: Review this overview. Comment at the end of the article may have overlapping info.
+<!-- TBD: Review this overview.
 -->
 
 When you assign a metadata profile to a folder, any subfolders automatically inherit the profile from its parent folder. This means that you can assign only one metadata profile to a folder. As such, consider carefully the folder structure of where you upload, store, use, and archive assets.
