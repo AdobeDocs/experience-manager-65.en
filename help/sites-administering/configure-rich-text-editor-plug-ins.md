@@ -736,7 +736,7 @@ To configure how links are added in AEM from another program, define the HTML ru
         * **Type** `String`
         * **Value** the name of the CSS class (without a preceding '.'; for example, `cssClass` instead of `.cssClass`)
 
-    * Array of valid **protocols** (including `https://`, `https://`, `file://`, and `mailto:` amongst others)
+    * Array of valid **protocols**. The supported protocols are `http://`, `https://`, `file://`, and `mailto:`.
 
         * **Name** `protocols`
         * **Type** `String[]`
