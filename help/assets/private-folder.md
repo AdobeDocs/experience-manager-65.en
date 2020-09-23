@@ -60,7 +60,7 @@ To create and share private folder:
 
 >[!NOTE]
 >
->To create a private folder, you require Read and Modify AccessControl permissions on the parent folder under which you want to create a private folder. If you are not an administrator, these permissions are not enabled for you by default on `/content/dam`. In this case, first obtain these permissions for your user ID/group before attempting to create private folders.
+>To create a private folder, you require Read and Modify [access control permissions](/help/sites-administering/security.md#permissions-in-aem) on the parent folder under which you want to create a private folder. If you are not an administrator, these permissions are not enabled for you by default on `/content/dam`. In this case, first obtain these permissions for your user ID/group before attempting to create private folders.
 
 ## Private folder deletion {#delete-private-folder}
 
