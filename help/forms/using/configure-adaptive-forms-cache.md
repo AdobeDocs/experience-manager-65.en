@@ -150,11 +150,11 @@ When you add a content fragment or an experience fragment to an adaptive form an
 
 After publishing updated content fragment or experience fragment, explicitly unpublish and publish the adaptive forms that use these assets.
 
-### Only first instance of adptive forms is cached{#only-first-insatnce-of-adptive-forms-is-cached}
+### Only first instance of an adaptive form is cached{#only-first-insatnce-of-adptive-forms-is-cached}
 
 #### Issue {#issue3}
 
-When the adaptive form URL does not have any localization information, and **[!UICONTROL Use Browser Locale]** in configuration manager is enabled, a localized version of the adaptive form is served and only the first instance of the adaptive form is cached and delivered to every susequent user.
+When the adaptive form URL does not have any localization information, and **[!UICONTROL Use Browser Locale]** in configuration manager is enabled, a localized version of the adaptive form is served and only the first instance of the adaptive form is cached and delivered to every subsequent user.
 
 #### Solution {#Solution3}
 

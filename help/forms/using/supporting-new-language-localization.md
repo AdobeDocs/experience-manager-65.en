@@ -39,7 +39,7 @@ There are two methods to identify the locale of the adaptive form. When an adapt
   * Language setting of the user specified in AEM.
   
   * Browser locale is enabled, by default. To change browser locale setting,
-    * Open the configuration manager. The URL is `http://[server]:4502/system/console/configMgr`
+    * Open the configuration manager. The URL is `http://[server]:[port]/system/console/configMgr`
     * Locate and open the **[!UICONTROL Adaptive Form and Interactive Communication Web Channel]** configuration.
     * Change status of the **[!UICONTROL Use Browser Locale]** option and  **[!UICONTROL Save]** the configuration. 
 
