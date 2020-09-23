@@ -312,6 +312,8 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 * Adaptive forms have some open resource resolvers. These lead to submission failures. The issue occurs intermittently (CQ-4299407).
 
+* When you open the field configuration for the first time, the properties icon does not display (CQ-4296284).
+
 **Workflow**
 
 * When a workflow approver uploads an attachment, the attachment is renamed to `undefined` (NPR-33699).
