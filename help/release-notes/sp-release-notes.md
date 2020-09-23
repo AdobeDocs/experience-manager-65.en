@@ -16,10 +16,6 @@ mini-toc-levels: 1
 | Date     | September 03, 2020                |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip) |
 
->[!NOTE]
->
->An updated version of AEM 6.5 Service Pack 6 is available. If you have already installed a previous version of Service Pack 6, upgrade to the latest available version.
-
 ## What's included in Adobe Experience Manager 6.5.6.0 {#what-s-included-in-aem}
 
 Adobe Experience Manager 6.5.6.0 is an important update that includes new features, key customer requested enhancements, and performance, stability, and security improvements, that are released since the general availability of 6.5 release in **April 2019**. It can be installed on top of Adobe Experience Manager 6.5.
@@ -312,6 +308,8 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 * Adaptive forms have some open resource resolvers. These lead to submission failures. The issue occurs intermittently (CQ-4299407).
 
+* When you open the field configuration for the first time, the properties icon does not display (CQ-4296284).
+
 **Workflow**
 
 * When a workflow approver uploads an attachment, the attachment is renamed to `undefined` (NPR-33699).
@@ -379,6 +377,10 @@ Perform the following steps to install the Service Pack on an existing Adobe Exp
 1. Open Package Manager and click **[!UICONTROL Upload Package]** to upload the package. To know how to use it, see [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Select the package and click **[!UICONTROL Install]**.
+
+>[!NOTE]
+>
+>Due to a known issue, an updated Service Pack package is available. It is recommended to install the package.
 
 >[!NOTE]
 >
