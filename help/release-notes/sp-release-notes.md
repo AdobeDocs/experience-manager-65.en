@@ -14,7 +14,7 @@ mini-toc-levels: 1
 | Version  | 6.5.6.0                      |
 | Type     | Service Pack Release         |
 | Date     | September 03, 2020                |
-| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6.zip) |
+| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip) |
 
 ## What's included in Adobe Experience Manager 6.5.6.0 {#what-s-included-in-aem}
 
@@ -308,6 +308,8 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 * Adaptive forms have some open resource resolvers. These lead to submission failures. The issue occurs intermittently (CQ-4299407).
 
+* When you open the field configuration for the first time, the properties icon does not display (CQ-4296284).
+
 **Workflow**
 
 * When a workflow approver uploads an attachment, the attachment is renamed to `undefined` (NPR-33699).
@@ -370,11 +372,15 @@ For information on security updates, see [Experience Manager security bulletins 
 
 Perform the following steps to install the Service Pack on an existing Adobe Experience Manager 6.5 instance:
 
-1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6.zip).
+1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip).
 
 1. Open Package Manager and click **[!UICONTROL Upload Package]** to upload the package. To know how to use it, see [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Select the package and click **[!UICONTROL Install]**.
+
+>[!NOTE]
+>
+>Due to a known issue, an updated Service Pack package is available. It is recommended to install the package.
 
 >[!NOTE]
 >
@@ -451,6 +457,17 @@ Customers are advised to review if they make use of the feature or capability in
 | Connectors | The Adobe JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013 is deprecated for AEM 6.5. | N/A |
 
 ## Known issues {#known-issues}
+
+* If the security health check does not work and the system displays the following error message:
+`message: Could not verify users and could not test system account logins.`
+Perform the following steps to resolve the issue:
+   1. Go to https://&lt;*hostname*&gt;:&lt;*port*&gt;/system/console/configMgr.
+
+   1. Search for `hc.impl`.
+
+   1. In [!UICONTROL Service Mappings], click `+` and specify `com.adobe.granite.repository.hc.impl=[user-reader-service]`.
+
+   1. Click [!UICONTROL Save] to save the configuration.  
 
 * If you install [!DNL Experience Manager] 6.5 Service Pack 5 or a previous service pack on [!DNL Experience Manager] 6.5, the run-time copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
 To retrieve your run-time copy, Adobe suggests to sync the design time copy of the custom workflow model with its run-time copy using the HTTP API:
