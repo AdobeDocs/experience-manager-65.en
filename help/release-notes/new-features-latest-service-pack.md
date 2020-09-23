@@ -63,7 +63,7 @@ You can now choose to selectively publish or unpublish assets to either [!DNL Ex
   
 ### Other enhancements in Assets {#other-enhancements-assets-6560}
 
-* User groups of private folder are now removed from the repository on deletion of private folders. The deletion of private folder cleans up the repository of orphaned user groups, which are created each time a private folder is created.
+* User groups of private folder are now removed from the repository on deletion of private folders. The deletion of private folder cleans up the repository of orphaned user groups, which are created each time a private folder is created. For more information see [User group removal on folder deletion](#group-removal-on-folder-deletion).
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 

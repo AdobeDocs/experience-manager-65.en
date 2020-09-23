@@ -86,7 +86,7 @@ To configure the cleanup task for the unfinished chunk upload jobs, go to `https
 >
 >The default value when chunk upload is triggered is 500 MB and the chunk size is 50 MB. If you modify the [Apache Jackrabbit Oak TokenConfiguration](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) to set the `timeout configuration` to be less than the time it takes for an asset to upload, then you can run into a session timeout situation while the asset upload is in progress. You, therefore, need to change the `chunkUploadMinFileSize` and `chunksize`, so that each chunk request refreshes the session.
 >
->Given the credential-expiry-timeout, latency, bandwidth, and expected concurrent uploads, the highest value that allows you to ensure the following two should be picked:
+>Given the credential-expiry-timeout, latency, bandwidth, and expected concurrent uploads, the highest value that allows you to ensure the following is picked:
 >
 >* To ensure that chunk upload is enabled for files with sizes likely to cause credential expiry while upload is in progress.
 >
