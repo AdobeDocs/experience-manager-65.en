@@ -55,19 +55,15 @@ and drag them into place on a page where the blog should appear.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/blog-developer-basics.md#essentials-for-client-side) are included, this is how the `Blog` component will appear :
+When the [required client-side libraries](/help/communities/blog-developer-basics.md#essentials-for-client-side) are included, this is how the `Blog` component will appear:
 
-![chlimage_1-147](assets/chlimage_1-147.png)
-
-And how the `Blog Sidebar` will appear :
-
-![chlimage_1-148](assets/chlimage_1-148.png)
+![add-blog-component](assets/add-blog-component.png)
 
 ### Configuring Blog {#configuring-blog}
 
 Select the placed `Blog` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-149](assets/chlimage_1-149.png) 
+![configure](assets/configure-new.png) 
 
 ![Blog settings](assets/blog-configure.png)
 
@@ -301,7 +297,7 @@ The blog articles will appear under the appropriate tab (Published, Drafts or Sc
 
 When the signed in user has moderator or administrator privileges, they are able to perform [moderation tasks](/help/communities/moderate-ugc.md) (as permitted by the configuration of the component) on all blog articles and comments posted to a blog.
 
-![chlimage_1-152](assets/chlimage_1-152.png)
+![moderator-homepage](assets/moderator-homepage.png)
 
 #### Members {#members}
 
@@ -316,15 +312,15 @@ Specifically, they may:
 * Delete their own blog article or comment
 * Flag others' blog articles or comments
 
-![chlimage_1-153](assets/chlimage_1-153.png) 
+![member-homepage](assets/member-homepage.png) 
 
-![chlimage_1-154](assets/chlimage_1-154.png)
+![create-blog](assets/create-blog.png)
 
 #### Anonymous {#anonymous}
 
 Site visitors who are not signed in may only read posted blog articles and comments, translate them if supported, but may not add a blog article or comment nor flag others' articles or comments.
 
-![chlimage_1-155](assets/chlimage_1-155.png)
+![anonymous-user-view](assets/anonymous-user-view.png)
 
 ## Additional Information {#additional-information}
 
