@@ -4,8 +4,7 @@ seo-title: Embed adaptive forms or Interactive Communications in AEM Sites pages
 description: Embed adaptive forms or Interactive Communication in AEM Sites pages. Users can fill and submit forms without leaving the Sites page.
 seo-description: You can embed adaptive forms or Interactive Communication in AEM Sites pages. Users can fill and submit forms without leaving the Sites page.
 uuid: 4c75494e-e9d2-43b9-bbae-562e0eda8abb
-topic-tags: author
-topic-tags: interactive-communications
+topic-tags: author, interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a74ed6c1-3006-4baf-bd77-ad4045e23c22
 docset: aem65
