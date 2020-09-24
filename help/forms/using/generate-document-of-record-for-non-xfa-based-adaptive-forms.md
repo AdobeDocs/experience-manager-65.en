@@ -5,8 +5,7 @@ description: Explains how you can generate a template for a document of record (
 seo-description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
 uuid: 2dc7e0de-fff9-43fa-9426-e9b047eb2595
 content-type: reference
-topic-tags: adaptive_forms
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65

@@ -6,9 +6,8 @@ seo-description: Find best practices compiled by Adobe engineering and consultin
 uuid: cbb598bb-ec8f-4985-97af-7c87f5891c66
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
+topic-tags: site-features, best-practices
 content-type: reference
-topic-tags: best-practices
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 ---
 
