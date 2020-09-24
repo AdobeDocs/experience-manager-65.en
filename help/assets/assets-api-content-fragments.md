@@ -132,7 +132,7 @@ Content Fragments are a specific type of Asset, see [Working with Content Fragme
 
 For further information about features available through the API see:
 
-* [Available Features](/help/assets/mac-api-assets.md#available-features) of the Assets REST API
+* [Available Features](/help/assets/mac-api-assets.md#assets) of the Assets REST API
 * [Entity Types](/help/assets/assets-api-content-fragments.md#entity-types)
 
 ### Paging {#paging}
@@ -364,7 +364,7 @@ See here for detailed API references:
 * [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
-    * [Available Features](/help/assets/mac-api-assets.md#available-features)
+    * [Available Features](/help/assets/mac-api-assets.md#assets)
 
 ## Additional Resources {#additional-resources}
 
