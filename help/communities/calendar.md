@@ -36,15 +36,15 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) are included, this is how the `Calendar` component will appear.
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![calendar-component](assets/calendar-component.png)
 
 ### Configuring Calendar {#configuring-calendar}
 
 Select the placed `Calendar` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-113](assets/chlimage_1-113.png) 
+![configure](assets/configure-new.png) 
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![configure-calendar](assets/configure-calendar1.png)
 
 #### Settings tab {#settings-tab}
 
@@ -187,7 +187,7 @@ Other abilities depend on whether the site visitor is a moderator, administrator
 
 When the signed in user has moderator or administrator privileges, they are able to perform [moderation tasks](/help/communities/moderate-ugc.md) (as permitted by the configuration of the component) on all calendar events and comments posted to an event.
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![moderators-view](assets/moderators-view.png)
 
 #### Members {#members}
 
@@ -201,15 +201,15 @@ Specifically, they may:
 * Delete their own calendar event or comment
 * Flag others' calendar events or comments
 
-![chlimage_1-116](assets/chlimage_1-116.png) 
+![create-event](assets/configure-calendar2.png) 
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![event-post](assets/configure-calendar3.png)
 
 #### Anonymous {#anonymous}
 
 Site visitors who are not signed in may only read posted calendar events, translate them if supported, but may not add an event or comment nor flag others' events or comments.
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![anonymous-user-view](assets/anonymous-user-view1.png)
 
 ## Additional Information {#additional-information}
 
