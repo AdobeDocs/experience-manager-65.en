@@ -66,7 +66,7 @@ See [Edit 360/VR video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-
 
    Be aware that this approach will also place greater demands on the network and CPU of the end user.
 
-1. [Upload your video to the folder](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+1. [Upload your video to the folder](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 ## Overriding the default aspect ratio of 360 videos  {#overriding-the-default-aspect-ratio-of-videos}
 
