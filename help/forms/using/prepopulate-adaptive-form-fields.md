@@ -371,7 +371,7 @@ To start the prefill service, upload the JAR file to AEM Forms Web Console, and 
 1. In the Properties console, navigate to AEM Forms container &gt; Basic &gt; Prefill Service.
 1. Select the Default Prefill Service and click **[!UICONTROL Save]**. The service is associated to the form.
 
-## Prefill data at client {#prefill-at-client}
+## Prepopulate data at client {#prefill-at-client}
  
 When you prefill an adaptive form, the AEM Forms server merges data with an adaptive form and delivers the filled form to you. By default, the data merge action takes place at the server.
 
@@ -387,3 +387,5 @@ You can configure the AEM Forms server to perform the data merge action at the c
 
   * To disable, run the following cURL command:
     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+
+   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
