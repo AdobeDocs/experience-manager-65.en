@@ -143,7 +143,7 @@ Adobe recommends putting custom scripts at `/apps/settings/dam/indesign/scripts`
 
 ### Recovering ContextHub Configurations {#recovering-contexthub-configurations}
 
-ContextHub configurations are affected by an upgrade. Instructions on how to recover existing ContextHub configurations can be found [here](/help/sites-administering/contexthub-config.md#recovering-contexthub-configurations-after-upgrading).
+ContextHub configurations are affected by an upgrade. Instructions on how to recover existing ContextHub configurations can be found [here](/help/sites-developing/ch-configuring.md#recovering-contexthub-configurations-after-upgrading).
 
 ### Workflow Customizations {#workflow-customizations}
 

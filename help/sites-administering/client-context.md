@@ -17,7 +17,7 @@ docset: aem65
 
 >[!NOTE]
 >
->Client Context has been superseded by ContextHub. For more details, see the related [configuration](/help/sites-administering/contexthub-config.md) and [developer](/help/sites-developing/contexthub.md) documenatation.
+>Client Context has been superseded by ContextHub. For more details, see the related [configuration]ch-configuring.md) and [developer](/help/sites-developing/contexthub.md) documenatation.
 
 The Client Context is a mechanism that provides you with certain information about the current page and visitor. It can be opened using **Ctrl-Alt-c** (windows) or **control-option-c** (Mac):
 
