@@ -17,7 +17,7 @@ To enable the ContextHub features and to link to the ContextHub Javascript libra
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-Note that you also need to configure whether the ContextHub toolbar appears in Preview mode. See [Showing and Hiding the ContextHub UI](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
+Note that you also need to configure whether the ContextHub toolbar appears in Preview mode. See [Showing and Hiding the ContextHub UI](ch-configuring.md#showing-and-hiding-the-contexthub-ui).
 
 ## About ContextHub Stores {#about-contexthub-stores}
 

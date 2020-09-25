@@ -180,7 +180,7 @@ The contexthub.generic-jsonp sample store candidate enables you to retrieve data
 
 The [init](/help/sites-developing/contexthub-api.md#init-name-config) function of the `ContextHub.Store.JSONPStore` Javascript class defines a `config` object that initializes this store candidate. The `config` object contains a `service` object that includes details about the JSONP service. To configure the store, you provide the `service` object in JSON format as the value for the Detail Configuration property.
 
-To save data from the MD5 service of the jsontest.com site, use the procedure in [Creating a ContextHub Store](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store) using the following properties:
+To save data from the MD5 service of the jsontest.com site, use the procedure in [Creating a ContextHub Store](/help/sites-developing/ch-configuring.md#creating-a-contexthub-store) using the following properties:
 
 * **Configuration Title:** md5
 * **Store Type:** contexthub.generic-jsonp
@@ -210,7 +210,7 @@ Add a UI module to the ContextHub toolbar to display the data that is stored in 
 
 ![chlimage_1-323](assets/chlimage_1-323.png)
 
-Use the procecure in [Adding a UI Module](/help/sites-administering/contexthub-config.md#adding-a-ui-module) to add the UI module to an existing UI Mode, such as the sample Perona UI Mode. For the UI Module, use the following property values:
+Use the procedure in [Adding a UI Module](#adding-a-ui-module) to add the UI module to an existing UI Mode, such as the sample Perona UI Mode. For the UI Module, use the following property values:
 
 * **UI Module Title:** MD5
 * **Module Type:** contexthub.base

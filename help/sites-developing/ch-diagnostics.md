@@ -19,7 +19,7 @@ The ContextHub Diagnostics page provides information about the stores and UI mod
 
 >[!NOTE]
 >
->In order for diagnostic information to be returned, debug mode must be enabled, otherwise the diagnostics page will be blank. Please see [this document](/help/sites-administering/contexthub-config.md#debugging-contexthub) for details on how to enable debug mode.
+>In order for diagnostic information to be returned, debug mode must be enabled, otherwise the diagnostics page will be blank. Please see [this document](ch-configuring.md#debugging-contexthub) for details on how to enable debug mode.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ The Clientlibs section lists all of the client library folders that ContextHub h
 
 The URLs section contains links to ContextHub features:
 
-* **Configuration editor:** Opens the [ContextHub Configuration page](/help/sites-administering/contexthub-config.md) where you can configure stores, UI modes, and UI modules.
+* **Configuration editor:** Opens the [ContextHub Configuration page](ch-configuring.md) where you can configure stores, UI modes, and UI modules.
 
 * **Configuration of ContextHub modules:** Opens the /etc/cloudsettings/default/contexthub.config.kernel.js file, which contains the Javascript object representation of the ContextHub store configurations.
 * **Configuration of ContextHub UI:** Opens the /etc/cloudsettings/default/contexthub.config.ui.js file, which contains the Javascript object representation of the ContextHub UI mode configurations.
