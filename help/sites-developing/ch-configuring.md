@@ -8,7 +8,6 @@ contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 780d1a2d-38f1-4115-a9bd-f466aa3774dd
 ---
 
 # Configuring ContextHub {#configuring-contexthub}
@@ -253,7 +252,7 @@ Use CRXDE Lite to set the property `debug` to **true** under:
 
 ### Silent Mode {#silent-mode}
 
-Silent mode suppresses all debug information. Unlike the normal debug option, which can be set independently for each ConextHub configuration, silent mode is a global setting which takes precedent over any debug settings on the ContextHub configuration level.
+Silent mode suppresses all debug information. Unlike the normal debug option, which can be set independently for each ContextHub configuration, silent mode is a global setting which takes precedent over any debug settings on the ContextHub configuration level.
 
 This is useful for your publish instance, where you don't want any debug information at all. Because it is a global setting, it is enabled via OSGi.
 
