@@ -219,12 +219,9 @@ To upload image banners, see [Uploading assets](/help/assets/managing-assets-tou
    >    * Animation. By default, each slide transition is a fade. You can change that to a slide transition.
    >    * Style of the buttons. Users can rotate through the banners by tapping each dot or number. You can change where the set indicator buttons appear (and if they are numeric or a dotted style) and how large they are.
    >    * Change the highlight style of an image map or the icon used for hotspots.
-   >    * Before you edit a viewer preset, choose the style you want to base the preset off of. If you do not do this, when you start to edit the viewer preset, you will lose all of your changes if you decide change to a different preset
+   >    * Before you edit a viewer preset, choose the style you want to base the preset off of. If you do not do this, when you start to edit the viewer preset, you will lose all of your changes if you decide change to a different preset.
    >
-   >
-   >See [Special Considerations for Carousel Banners](/help/assets/viewer-presets.md#specialconsiderationsforcreatingacarouselbannerviewerpreset) for detailed instructions and more information on the viewer editor.
-   >
-   >
+   >See [Special Considerations for Carousel Banners](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset) for detailed instructions and more information on the viewer editor.
 
    You can also preview what the carousel banner will look like. See [(Optional) Previewing Carousel Banners](#optional-previewing-carousel-banners).
 

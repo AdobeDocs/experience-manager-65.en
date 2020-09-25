@@ -5,8 +5,7 @@ description: You can use themes to stylize and provide a visual identity to an a
 seo-description: You can use themes to stylize and provide a visual identity to an adaptive form or interactive communication. You can share a theme across any number of adaptive forms or interactive communications.
 uuid: 88b6b6fd-181b-48c5-ac15-2b37592bd14b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: develop
-topic-tags: interactive-communications
+topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65

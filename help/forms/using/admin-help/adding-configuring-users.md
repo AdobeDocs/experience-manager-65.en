@@ -5,7 +5,6 @@ description: The User Management settings in the administration console allow yo
 seo-description: The User Management settings in the administration console allow you to create or delete users  and configure other user settings.
 uuid: fe650cdb-7d0d-4f38-9899-e5349559ed32
 contentOwner: admin
-geptopics: SG_AEMFORMS/categories
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 ---

@@ -5,8 +5,7 @@ description: Learn how to leverage the Microsoft® Dynamics 365 services through
 seo-description: Learn how to leverage the Microsoft® Dynamics 365 services through adaptive forms for the home mortgage workflow of the We.Finance Reference site
 uuid: a0656d90-84c7-46d1-9a16-dadcc19ff9ef
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: develop
-topic-tags: Configuration
+topic-tags: develop, Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 ---
 

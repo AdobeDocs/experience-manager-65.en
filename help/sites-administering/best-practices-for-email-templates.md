@@ -6,9 +6,8 @@ seo-description: Find best practices on creating email templates in AEM.
 uuid: 07417a63-7ca6-484c-b55d-57b319428329
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: integration
+topic-tags: integration, best-practices
 content-type: reference
-topic-tags: best-practices
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 

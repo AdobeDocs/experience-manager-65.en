@@ -34,8 +34,6 @@ In the author environment, after signing in with administrator privileges, the `
 
 ## Global navigation panel {#global-navigation-panel}
 
-![chlimage_1-91](assets/chlimage_1-91.png)
-
 Select the `Adobe Experience Manager` icon in the upper left corner to open the global navigation panel and access to two icons:
 
 * [Navigation console](#navigation-console)
@@ -45,7 +43,7 @@ Select the `Adobe Experience Manager` icon in the upper left corner to open the 
 
 To access the various Communities consoles, from global navigation select **navigation, Communities**.
 
-![chlimage_1-92](assets/chlimage_1-92.png)
+![communities](assets/communities.png)
 
 * [Sites](sites-console.md)
 

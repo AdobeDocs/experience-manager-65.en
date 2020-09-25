@@ -7,8 +7,7 @@ uuid: 408a60b5-cba9-4c9f-abd3-5c1fb5be1c50
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-topic-tags: components
-topic-tags: testing
+topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 

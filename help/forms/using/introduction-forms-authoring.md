@@ -5,9 +5,8 @@ description: AEM Forms provide easy-to-use yet powerful interface for authoring 
 seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring adaptive forms. It provides a host of components and tools that you can use to build forms.
 uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
-topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: introduction
+topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 ---

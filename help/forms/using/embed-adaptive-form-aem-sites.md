@@ -6,8 +6,7 @@ seo-description: You can embed adaptive forms in AEM sites pages. Users can fill
 uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: author
-topic-tags: interactive-communications
+topic-tags: author, interactive-communications
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 ---
 
