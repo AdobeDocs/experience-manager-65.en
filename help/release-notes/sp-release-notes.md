@@ -289,9 +289,15 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 >
 >[!DNL Experience Manager] Service Pack does not include fixes for [!DNL Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
 
->[!NOTE]
->
->Before installing the [!DNL Experience Manager Forms] 6.5.6.0 add-on package, delete `bcpkix-1.51`, `bcmail-1.51`, and `bcprov-1.51` JAR files from the `crx-repository\launchpad\ext` directory.
+After installing the [!DNL Experience Manager Forms] 6.5.6.0 add-on package:
+
+* Stop the [!DNL Experience Manager Forms] instance.
+
+* Delete `bcpkix-1.51`, `bcmail-1.51`, and `bcprov-1.51` JAR files from the `crx-repository\launchpad\ext` directory.
+
+* Delete` sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider` property from the `sling.properties` file.
+
+* Restart the [!DNL Experience Manager Forms] instance.
 
 **Adaptive Forms**
 
