@@ -90,7 +90,7 @@ user-guide-description: Learn about administering AEM.
     + [Custom User Group Mapping in AEM 6.5](/help/sites-administering/cug-mapping.md)
 + Personalization {#personalization}
     + [Personalization](personalization.md)
-    + [Configuring ContextHub](contexthub-config.md)
+    + [Configuring ContextHub](/help/sites-developing/ch-configuring.md)
     + [Client Context](client-context.md)
     + [Campaigns](campaigns.md)
     + [Configuring Segmentation with ContextHub](segmentation.md)

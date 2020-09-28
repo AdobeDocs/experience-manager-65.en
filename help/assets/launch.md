@@ -127,7 +127,7 @@ Currently, the support for video tracking is limited to "core playback" tracking
 
 ## Using the Dynamic Media Viewers extension {#using-the-dynamic-media-viewers-extension}
 
-As mentioned in [Use cases for the integration](#use%20cases%20for%20the%20integration), it is possible to track Dynamic Media viewers with the new Adobe Launch integration in AEM Sites and by using embed code.
+As mentioned in [Use cases for the integration](#use-cases-for-the-integration), it is possible to track Dynamic Media viewers with the new Adobe Launch integration in AEM Sites and by using embed code.
 
 ### Tracking Dynamic Media viewers in AEM Sites {#tracking-dynamic-media-viewers-in-aem-sites}
 
@@ -143,7 +143,7 @@ See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe
 
 Customers who do not use AEM Sites, or embed Dynamic Media viewers into web pages outside of AEM Sites, or both, can still use the Adobe Launch integration.
 
-You must complete the configuration steps from the [Configuring Adobe Analytics](#configuringadobeanalytics) and [Configuring Adobe Launch](#configuringadobelaunch) sections. However, AEM-related configuration steps are not needed.
+You must complete the configuration steps from the [Configuring Adobe Analytics](#configuring-adobe-analytics-for-the-integration) and [Configuring Adobe Launch](#configuring-adobe-launch-for-the-integration) sections. However, AEM-related configuration steps are not needed.
 
 Following proper configuration, you can add Adobe Launch support to a web page with a Dynamic Media viewer.
 
@@ -156,7 +156,7 @@ See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/
 **To track Dynamic Media viewers using embed code**:
 
 1. Have a web page ready for embedding a Dynamic Media viewer.
-1. Obtain the embed code for Adobe Launch library by first logging in to Adobe Launch (see [Configuring Adobe Launch](#configuringadobelaunch)).
+1. Obtain the embed code for Adobe Launch library by first logging in to Adobe Launch (see [Configuring Adobe Launch](#configuring-adobe-launch-for-the-integration)).
 1. Click **[!UICONTROL Property]**, then click the **[!UICONTROL Environments]** tab.
 1. Pick up the Environment level that is relevant to the environment of the web page. Then, in the **[!UICONTROL Install]** column, click the box icon.
 1. **[!UICONTROL In the Web Install Instructions]** dialog box, copy the complete Adobe Launch library embed code, along with the surrounding `<script/>` tags.

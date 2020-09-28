@@ -1,5 +1,5 @@
 ---
-title: Add image maps with hyperlinks to digital images
+title: Add image maps with hyperlinks
 description: Learn how to add image map with hyperlinks to an image.
 contentOwner: AG
 ---

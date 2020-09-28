@@ -398,7 +398,6 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
 
    ```shell
    sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
-   sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
    ```
 
 1. (AIX only) Add the following properties to the sling.properties file:

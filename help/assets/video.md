@@ -42,7 +42,7 @@ The following step-by-step workflow description is designed to help you get up a
 
     * Upload your primary source videos to the folders. You can upload video files that are up to 15 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
 
-        * [Upload your videos](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+        * [Upload your videos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
         * Learn more about [Supported input file formats](/help/assets/assets-formats.md#supported-multimedia-formats).
 
     * Monitor how [video encoding is progressing](#monitoring-video-encoding-and-youtube-publishing-progress) either from the asset or workflow view.
@@ -54,7 +54,7 @@ The following step-by-step workflow description is designed to help you get up a
         * [Organizing digital assets](/help/assets/organize-assets.md)
           Learn more about [Best practices for organizing your digital assets for using processing profiles](organize-assets.md)
 
-        * [Searching video assets](search-assets.md#custompredicates) or [Searching assets](managing-assets-touch-ui.md#search-assets)
+        * [Searching video assets](search-assets.md#custompredicates) or [Searching assets](/help/assets/search-assets.md)
 
     * Preview and publish video assets
 
@@ -1212,7 +1212,7 @@ T**o add a custom video thumbnail**,
     * Created a folder for your video assets.
     * [Applied a video profile to the folder](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
-    * [Uploaded your videos to the folder](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+    * [Uploaded your videos to the folder](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 1. Navigate to an uploaded video asset whose thumbnail image you want to change.
 1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, tap the video asset.

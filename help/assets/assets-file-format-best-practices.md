@@ -1,5 +1,5 @@
 ---
-title: Best practices to process the various supported file formats using [!DNL Adobe Experience Manager Assets].
+title: Best practices to process the supported file formats
 description: Best practices to process the various supported file types using [!DNL Experience Manager Assets].
 contentOwner: AG
 ---
