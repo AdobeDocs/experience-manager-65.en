@@ -1,5 +1,5 @@
 ---
-title: Multilingual assets and asset translation.
+title: Multilingual assets and asset translation
 description: Learn how to automate workflows to translate assets, including binaries, metadata, and tags into multiple languages.
 contentOwner: AG
 ---

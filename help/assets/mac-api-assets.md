@@ -1,5 +1,5 @@
 ---
-title: [!DNL Assets] HTTP API in [!DNL Adobe Experience Manager].
+title: [!DNL Assets] HTTP API.
 description: Create, read, update, delete, manage digital assets using HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 ---

@@ -1,5 +1,5 @@
 ---
-title: [!DNL Assets] network considerations and requirements.
+title: Network considerations and requirements
 description: Discusses network considerations when designing an [!DNL Adobe Experience Manager Assets] deployment.
 contentOwner: AG
 ---
