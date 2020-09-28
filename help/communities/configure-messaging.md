@@ -35,7 +35,9 @@ The messaging feature provides the ability to:
 
 **G** - restore a deleted message
 
-![messaging-section](assets/messaging-section.png) ![restore-message](assets/restore-message.png)
+![messaging-section](assets/messaging-section.png) 
+
+![restore-message](assets/restore-message.png)
 
 To enable and modify the messaging feature, see:
 
