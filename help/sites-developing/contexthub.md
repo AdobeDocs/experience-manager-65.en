@@ -32,7 +32,7 @@ ContextHub stores persist context data on the client. The ContextHub Javascript 
 Each ContextHub store is an instance of a predefined store type:
 
 * ContextHub provides several [sample store types](/help/sites-developing/ch-samplestores.md).
-* Use AEM consoles to [create stores](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store).
+* Use AEM consoles to [create stores](ch-configuring.md#creating-a-contexthub-store).
 * Developers can [create custom store types](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
 * Developers can [access store data](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) via Javascript.
 
@@ -47,7 +47,7 @@ The [ContextHub toolbar](/help/sites-authoring/ch-previewing.md) enables markete
 Each ContextHub UI module is an instance of a predefined module type:
 
 * ContextHub provides several [sample module types](/help/sites-developing/ch-samplemodules.md).
-* Use AEM consoles to [add UI modules](/help/sites-administering/contexthub-config.md#adding-a-ui-module), and to [group them in UI modes](/help/sites-administering/contexthub-config.md#adding-a-ui-mode).
+* Use AEM consoles to [add UI modules](ch-configuring.md#adding-a-ui-module), and to [group them in UI modes](ch-configuring.md#adding-a-ui-mode).
 
 * Developers can [create custom module types](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 

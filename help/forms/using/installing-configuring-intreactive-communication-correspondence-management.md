@@ -117,7 +117,6 @@ Perform the following steps on all the Author and Publish instances to boot dele
 
    ```shell
    sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
-   sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
    ```
 
 1. Save and close the file and start the AEM instance.

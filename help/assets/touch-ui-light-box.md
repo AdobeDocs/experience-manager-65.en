@@ -1,5 +1,5 @@
 ---
-title: Lightbox as your personal image gallery in [!DNL Adobe Experience Manager Assets].
+title: Lightbox as your personal image gallery
 description: Learn about Lightbox as your personal image gallery in Adobe Experience Manager Assets].
 contentOwner: AG
 ---

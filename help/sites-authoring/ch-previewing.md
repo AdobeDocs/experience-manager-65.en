@@ -20,7 +20,7 @@ The toolbar consists of a series of UI modes that contain one or more UI modules
 * UI modes are icons that appear on the left hand side of the toolbar. When you click or tap an icon, the toolbar reveals the UI modules that it contains.
 * UI modules display data from one or more ContextHub stores. Some UI modules also enable you to manipulate store data.
 
-ContextHub installs several UI modes and UI modules. Your administrator may have [configured ContextHub](/help/sites-administering/contexthub-config.md) to display different ones.
+ContextHub installs several UI modes and UI modules. Your administrator may have [configured ContextHub](/help/sites-developing/ch-configuring.md) to display different ones.
 
 ![screen_shot_2018-03-23at093446](assets/screen_shot_2018-03-23at093446.png)
 

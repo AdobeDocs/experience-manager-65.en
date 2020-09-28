@@ -6,9 +6,8 @@ seo-description: Find best practices compiled by Adobe engineering and consultin
 uuid: 3bac1d73-9696-4c9b-8bdd-6f00fac40cf7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
+topic-tags: site-features, best-practices
 content-type: reference
-topic-tags: best-practices
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
 ---
 

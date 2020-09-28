@@ -1,5 +1,5 @@
 ---
-title: Manage compound assets with references and multi-page assets in [!DNL Adobe Experience Manager].
+title: Manage compound assets with references and multiple pages
 description: Learn how to create references to digital assets from within [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Use the Page Viewer feature to view individual subasset pages of multi-page files such as PDF, INDD, PPT, PPTX, and AI files.
 contentOwner: AG
 ---

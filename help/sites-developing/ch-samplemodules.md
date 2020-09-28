@@ -17,7 +17,7 @@ ContextHub provides several sample UI modules that you can use in your solutions
 * Where to find the source code so that you can open it for learning purposes.
 * How to configure the UI module.
 
-For information about adding UI modules to ContextHub, see [Adding a UI Module](/help/sites-administering/contexthub-config.md#adding-a-ui-module). For information about developing UI modules, see [Creating ContextHub UI Module Types](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
+For information about adding UI modules to ContextHub, see [Adding a UI Module](ch-configuring.md#adding-a-ui-module). For information about developing UI modules, see [Creating ContextHub UI Module Types](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
 ## contexthub.base UI Module Type {#contexthub-base-ui-module-type}
 

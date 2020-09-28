@@ -1,5 +1,5 @@
 ---
-title: Search facets.
+title: Search facets to filter search results
 description: How to create, modify, and use search facets in [!DNL Adobe Experience Manager].
 contentOwner: AG
 ---

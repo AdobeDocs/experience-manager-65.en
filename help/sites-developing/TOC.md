@@ -131,13 +131,14 @@ user-guide-description: This guide covers how to build out your AEM instance.
     + [AEM Repo Tool](aem-repo-tool.md)
 + Personalization{#personlization}
     + [ContextHub](contexthub.md)
-    + [ContextHub Javascript API Reference](contexthub-api.md)
-    + [Extending ContextHub](ch-extend.md)
+    + [Configuring Context Hub](ch-configuring.md)
     + [Adding ContextHub to Pages and Accessing Stores](ch-adding.md)
+    + [Extending ContextHub](ch-extend.md)
     + [Sample ContextHub Store Candidates](ch-samplestores.md)
     + [Sample ContextHub UI Module Types](ch-samplemodules.md)
     + [ContextHub Diagnostics](ch-diagnostics.md)
     + [Developing for Targeted Content](target.md)
+    + [ContextHub Javascript API Reference](contexthub-api.md)
     + Client Context{#client-context}
       + [Client Context in Detail](client-context.md)
       + [Client Context Javascript API](ccjsapi.md)
