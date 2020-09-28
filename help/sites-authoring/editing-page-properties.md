@@ -203,7 +203,7 @@ Shows the page thumbnail image. You can:
 
 * **ContextHub Configurations**
 
-  Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
+  Select the [ContextHub Configuration](/help/sites-developing/ch-configuring.md) and [Segments Path](/help/sites-administering/segmentation.md).
 
 * **Targeting Configuration**
 

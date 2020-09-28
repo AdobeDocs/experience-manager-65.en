@@ -168,7 +168,7 @@ Use the following procedure to create a Target cloud configuration in AEM:
 
 ### Adding a Target Framework {#adding-a-target-framework}
 
-After you configure the Target cloud configuration, add a Target framework. The framework identifies the default parameters that are sent to Adobe Target from the available [Client Context](/help/sites-administering/client-context.md) or [ContextHub](/help/sites-administering/contexthub-config.md) components. Target uses the parameters to determine the segments that apply to the current context.
+After you configure the Target cloud configuration, add a Target framework. The framework identifies the default parameters that are sent to Adobe Target from the available [Client Context](/help/sites-administering/client-context.md) or [ContextHub](/help/sites-developing/ch-configuring.md) components. Target uses the parameters to determine the segments that apply to the current context.
 
 You can create multiple frameworks for a single Target configuration. Multiple frameworks are useful when you need to send a different set of parameters to Target for different sections of your website. Create a framework for each set of parameters that you need to send. Associate each section of your website with the appropriate framework. Note that a web page can use only one framework at a time.
 
@@ -177,7 +177,7 @@ You can create multiple frameworks for a single Target configuration. Multiple f
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-   The framework page opens. Sidekick provides components that represent information from the [Client Context](/help/sites-administering/client-context.md) or [ContextHub](/help/sites-administering/contexthub-config.md) that you can map.
+   The framework page opens. Sidekick provides components that represent information from the [Client Context](/help/sites-administering/client-context.md) or [ContextHub](/help/sites-developing/ch-configuring.md) that you can map.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 

@@ -35,11 +35,11 @@ When the required clientlibs are missing, [adding a Communities component to a p
 
 ### Example : Placed Reviews without Clientlibs {#example-placed-reviews-without-clientlibs}
 
-![chlimage_1-426](assets/chlimage_1-426.png)
+![placed-reviews](assets/placed-reviews.png)
 
 ### Example : Placed Reviews with Clientlibs {#example-placed-reviews-with-clientlibs}
 
-![chlimage_1-427](assets/chlimage_1-427.png)
+![reviews-clientlibs](assets/reviews-clientlibs.png)
 
 ## Identifying Required Clientlibs {#identifying-required-clientlibs}
 
@@ -52,7 +52,7 @@ For example, at the very top of the [Reviews page](https://localhost:4502/conten
 * cq.ckeditor
 * cq.social.hbs.reviews
 
-![chlimage_1-246](assets/chlimage_1-246.png)
+![clientlibs-reviews](assets/clientlibs-reviews.png)
 
 ## Adding Required Clientlibs {#adding-required-clientlibs}
 
@@ -88,5 +88,5 @@ To add a clientlib for a community site using [CRXDE Lite](/help/sites-developin
 
 Using the [Getting Started with AEM Communities](/help/communities/getting-started.md) example, where `site-name` is *engage*, this is how the clientliblist would appear if adding the reviews component:
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![review-component](assets/review-component.png)
 

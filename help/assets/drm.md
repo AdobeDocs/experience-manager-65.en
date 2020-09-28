@@ -1,5 +1,5 @@
 ---
-title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
+title: Digital Rights Management of assets
 description: Learn how to manage asset expiration states and information for licensed assets in [!DNL Experience Manager].
 contentOwner: AG
 ---

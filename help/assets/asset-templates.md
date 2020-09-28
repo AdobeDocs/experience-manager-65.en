@@ -1,5 +1,5 @@
 ---
-title: Asset templates in [!DNL Adobe Experience Manager Assets].
+title: Asset templates
 description: Learn about Asset templates in [!DNL Adobe Experience Manager Assets] and how to use asset templates to create marketing collateral.
 contentOwner: AG
 ---

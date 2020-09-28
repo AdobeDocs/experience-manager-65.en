@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager 6.5 Assets User Guide
-seo-title: Adobe Experience Manager 6.5 Assets User Guide
+title: Assets Guide
+seo-title: Adobe Experience Manager 6.5 Assets Guide
 description: This guide covers all Experience Manager Assets tasks, such as how to create, manage, deliver, and optimize digital assets.
 seo-description: Covers all Experience Manager Assets tasks, such as how to create, manage, deliver, and optimize digital assets.
 ---
 
-# Adobe Experience Manager 6.5 Assets User Guide
+# Adobe Experience Manager 6.5 Assets Guide
 
 This guide covers all Experience Manager Assets tasks, such as how to create, manage, deliver, and optimize digital assets.
 
@@ -19,7 +19,7 @@ This guide covers all Experience Manager Assets tasks, such as how to create, ma
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Security Checklist](/help/sites-administering/security-checklist.md)
 
-## Experience Manager 6.5 user guides
+## Experience Manager 6.5 guides
 
 | User Guide | Description |
 |--- |---|

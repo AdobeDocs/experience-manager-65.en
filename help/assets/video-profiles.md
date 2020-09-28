@@ -366,7 +366,7 @@ Folders that have a profile assigned to it are indicated in the user interface b
 
 You can apply video profiles to specific folders or globally to all assets.
 
-You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
 ### Applying a video profile to specific folders {#applying-video-profiles-to-specific-folders}
 
@@ -374,7 +374,7 @@ You can apply a video profile to a folder from within the **[!UICONTROL Tools]**
 
 Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
 #### Applying a video profile to folders by way of the Profiles user interface {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
@@ -396,7 +396,7 @@ You can [monitor the progress of a video profile processing job](#monitoring-the
 
 In addition to applying a profile to a folder, you can also apply one globally so that any content uploaded into AEM assets in any folder has the selected profile applied.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
 **To apply a video profile globally**,
 

@@ -6,9 +6,8 @@ seo-description: Learn how you can fine tune the configuration of your Microsoft
 uuid: 2d618aab-3c67-4edb-a28f-a20904689e6f
 contentOwner: admin
 content-type: reference
-products: SG_AEMFORMS
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+products: SG_EXPERIENCEMANAGER/6.5/FORMS, SG_AEMFORMS
 discoiquuid: 70559a94-42ea-411a-a32f-5f38bc17ff96
 ---
 

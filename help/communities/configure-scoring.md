@@ -96,7 +96,7 @@ To quickly setup a slinglog file :
 
     1. Select **Save**
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![debug-scoring-log](assets/debug-scoring-log.png)
 
 To see log entries:
 
@@ -112,7 +112,7 @@ To see log entries:
 
     * For example, `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-249](assets/chlimage_1-249.png)
+![scoring-log](assets/scoring-log.png)
 
 ## UGC for Scoring and Badging {#ugc-for-scoring-and-badging}
 
@@ -211,19 +211,19 @@ The screen shots of repository data come from setting up scoring and badging for
 
    As a user has earned two bronze badges and has been awarded a moderator badge, this is how the user appears with their forum entry.
 
-![chlimage_1-250](assets/chlimage_1-250.png)
+   ![moderator](assets/moderator.png)
 
 >[!NOTE]
->
->This example does not follow these best practices :
->
->* Scoring rule names should be globally unique; they should not end with the same name.
->  An example of what *not* to do :
->  /libs/settings/community/scoring/rules/site1/forums-scoring
->  /libs/settings/community/scoring/rules/site2/forums-scoring
->
->* Creating unique badge images for different AEM sites
->
+ >
+ >This example does not follow these best practices:
+ >
+ >* Scoring rule names should be globally unique; they should not end with the same name.
+ >  An example of what *not* to do:
+ >  /libs/settings/community/scoring/rules/site1/forums-scoring
+ >  /libs/settings/community/scoring/rules/site2/forums-scoring
+ >
+ >* Creating unique badge images for different AEM sites
+ >
 
 ### Access Scoring UGC {#access-scoring-ugc}
 
@@ -245,7 +245,7 @@ For the Community Components guide site, the user and their score is in a path c
 
 The score is stored in the property `scoreValue_tl` which may directonly contain a value or indirectly refer to an atomicCounter.
 
-![chlimage_1-251](assets/chlimage_1-251.png)
+![access-scoring-ugc](assets/access-scoring-ugc.png)
 
 ### Access Badging UGC {#access-badging-ugc}
 
@@ -261,11 +261,11 @@ Followed by the path to the user's profile, ending in a badges folder, such as:
 
 #### Awarded badge {#awarded-badge}
 
-![chlimage_1-252](assets/chlimage_1-252.png)
+![awarded-badging-ugc](assets/access-badging-ugc.png)
 
 #### Assigned badge {#assigned-badge}
 
-![chlimage_1-253](assets/chlimage_1-253.png)
+![assigned-badge](assets/assigned-badge.png)
 
 ## Additional Information {#additional-information}
 

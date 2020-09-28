@@ -1,5 +1,5 @@
 ---
-title: Supported file formats for processing in [!DNL Adobe Experience Manager Assets].
+title: Supported file formats and MIME types
 description: File formats and MIME types supported by [!DNL Assets] and [!DNL Dynamic Media] and the features supported for each format.
 contentOwner: AG
 ---

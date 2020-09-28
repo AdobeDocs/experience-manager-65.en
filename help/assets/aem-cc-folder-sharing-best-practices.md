@@ -1,5 +1,5 @@
 ---
-title: [!DNL Adobe Experience Manager] to [!DNL Adobe Creative Cloud] folder sharing best practices.
+title: Folder sharing to [!DNL Adobe Creative Cloud] best practices
 description: Configure [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] to exchange folders with Adobe Creative Cloud (CC) users.
 contentOwner: AG
 ---

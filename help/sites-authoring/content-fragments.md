@@ -142,7 +142,7 @@ You can open the fragment source for editing (the asset) using the **Edit** icon
 
 When a specific content fragment is added to the page, there is a **Drag components here** placeholder between each HTML paragraph (and at the top/bottom) of the fragment.
 
-This allows you to add extra content [in-between (i.e. in-between content)](/help/assets/content-fragments/content-fragments.md#inbetweencontent) the fragment content (at any of the available points), without having to change the root fragment.
+This allows you to add extra content [in-between (i.e. in-between content)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) the fragment content (at any of the available points), without having to change the root fragment.
 
 For in-between content you can:
 

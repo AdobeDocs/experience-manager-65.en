@@ -1,5 +1,5 @@
 ---
-title: Use PDF rasterizer to generate renditions of PDF files.
+title: Use PDF rasterizer to generate renditions
 description: Generate high-quality thumbnails and renditions using the Adobe PDF Rasterizer library in [!DNL Adobe Experience Manager].
 contentOwner: AG
 ---

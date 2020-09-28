@@ -1,5 +1,5 @@
 ---
-title: Cascading metadata in [!DNL Adobe Experience Manager Assets].
+title: Cascading metadata in [!DNL Assets]
 description: This article describes how to define cascading metadata for assets.
 contentOwner: AG
 ---
