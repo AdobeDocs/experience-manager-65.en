@@ -153,7 +153,7 @@ While tables and rows support only visibility expressions to control their visib
 
 The visibility expression for a table or a row can be defined in the Panel properties tab of their corresponding Edit component dialog. The expressions for a cell can be defined in the Script tab of its Edit component dialog.
 
-For the complete list of adaptive forms classes, events, objects, and public APIs, see [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html).
+For the complete list of adaptive forms classes, events, objects, and public APIs, see [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Mobile layouts {#mobile-layouts}
 

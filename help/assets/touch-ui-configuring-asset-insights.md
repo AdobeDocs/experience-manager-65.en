@@ -1,5 +1,5 @@
 ---
-title: Configure Asset Insights to get digial asset usage analytics.
+title: Configure Asset Insights to get analytics.
 description: Configure Asset Insights in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 ---

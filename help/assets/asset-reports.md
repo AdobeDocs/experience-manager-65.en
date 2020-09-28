@@ -1,5 +1,5 @@
 ---
-title: Reports about usage and sharing of your digital assets.
+title: Reports about usage and sharing of assets
 description: Reports about your assets in [!DNL Adobe Experience Manager Assets] that help you understand usage, activity, and sharing of your digital assets.
 contentOwner: AG
 ---

@@ -1,5 +1,5 @@
 ---
-title: Compare [!DNL Adobe Experience Manager Assets] and Media Library offering.
+title: Compare [!DNL Assets] and Media Library offerings
 description: Compare [!DNL Experience Manager Assets] and Media Library offerings and know the differences.
 contentOwner: AG
 ---
