@@ -1,5 +1,5 @@
 ---
-title: Performance tuning for [!DNL Adobe Experience Manager Assets].
+title: Performance tuning [!DNL Assets].
 description: Suggestions and guidance about [!DNL Experience Manager] configuration, changes to hardware, software, and network components to remove bottlenecks and optimize the performance of [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1

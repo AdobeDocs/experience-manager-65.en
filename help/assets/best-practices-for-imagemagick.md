@@ -1,5 +1,5 @@
 ---
-title: Install and configure ImageMagick to work with [!DNL Adobe Experience Manager Assets].
+title: Install and configure ImageMagick
 description: Learn about ImageMagick software, how to install it, set up the command line process step, and use it to edit, compose, and generate thumbnails from images.
 contentOwner: AG
 ---
