@@ -1,5 +1,5 @@
 ---
-title: Download digital assets from [!DNL Adobe Experience Manager].
+title: Download assets
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
 ---

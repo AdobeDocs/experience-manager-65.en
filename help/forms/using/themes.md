@@ -5,8 +5,7 @@ description: You can use themes to stylize and provide a visual identity to an a
 seo-description: You can use themes to stylize and provide a visual identity to an adaptive form or interactive communication. You can share a theme across any number of adaptive forms or interactive communications.
 uuid: 88b6b6fd-181b-48c5-ac15-2b37592bd14b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: develop
-topic-tags: interactive-communications
+topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
@@ -346,7 +345,7 @@ In the Canvas toolbar, you see:
 * **Toggle Side Panel** ![toggle-side-panel](assets/toggle-side-panel.png): Lets you show or hide sidebar.
 * **Theme Options** ![theme-options](assets/theme-options.png): Provides three options
 
-    * Configure: Provides options to select the preview form or interactive communication, base clientlib, and typekit configuration.
+    * Configure: Provides options to select the preview form or interactive communication, base clientlib, and Adobe Fonts configuration.
     * View Theme CSS: Generates CSS for the selected theme.
     * Manage Styles: Provides options to manage text and image styles
     * Help: Runs an image guided tour of the Theme Editor.
@@ -485,23 +484,23 @@ You can style form or interactive communication components for multiple devices.
 
 ### Using web fonts in a theme {#using-web-fonts-in-a-theme}
 
-You can now use fonts available in a web-service in an adaptive form or interactive communication. Out-of-the-box, [Typekit](https://typekit.com/), Adobe's web font service, is available as a configuration. To use Typekit, create a kit, and fonts in it, and obtain the Kit ID from [Typekit website](https://typekit.com/).
+You can now use fonts available in a web-service in an adaptive form or interactive communication. Out-of-the-box, [Adobe Fonts](https://fonts.adobe.com/), Adobe's web font service, is available as a configuration. To use Adobe Fonts, create a kit, add fonts in it, and obtain the Kit ID from [Adobe Fonts](https://fonts.adobe.com/).
 
-Perform the following steps to configure Typekit in AEM:
+Perform the following steps to configure Adobe Fonts in AEM:
 
 1. In the author instance, click ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager &gt; Tools ![hammer](assets/hammer.png) &gt; Deployment &gt; Cloud Services.
-1. On the **Cloud Services** page, navigate to **Third Party Services** > **Typekit** , and click **Configure Now** under Typekit. If a configuration is already available, click the **+** button to create a new instance.
+1. On the **Cloud Services** page, navigate to  and open the **Adobe Fonts** option. Open the configuration folder, and click **Create**. 
 1. On the **Create Configuration** dialog, specify a title for the configuration and click **Create**.
 
    You are redirected to the configuration page.
 
 1. In the Edit Component dialog that appears, provide your Kit ID and click **OK**.
 
-Perform the following steps to configure a theme to use the TypeKit configuration:
+Perform the following steps to configure a theme to use the Adobe Fonts configuration:
 
 1. On the author instance, open a theme in the theme editor.
 1. In the theme editor, navigate to **Theme Options** ![theme-options](assets/theme-options.png) &gt; **Configure**.
-1. In **Typekit Configuration** field, select a kit, and click **Save**.
+1. In **Adobe Fonts Configuration** field, select a kit, and click **Save**.
 
    Now, you can see the fonts are added in the font-family property of the theme.
 

@@ -1,5 +1,5 @@
 ---
-title: Activity stream of digital assets in timeline view of [!DNL Experience Manager].
+title: Activity stream of digital assets in timeline view
 description: This article describes how to display activity logs for assets on the timeline.
 contentOwner: AG
 ---

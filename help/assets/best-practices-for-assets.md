@@ -1,5 +1,5 @@
 ---
-title: Best Practices for [!DNL Assets].
+title: Best Practices for [!DNL Assets]
 description: Enhances system stability and performance under load by identifying and adhering to best practices that depend on your deployment and configuration.
 contentOwner: AG
 ---

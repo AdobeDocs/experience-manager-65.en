@@ -63,13 +63,13 @@ The guide provides a listing of SCF components available for preview and prototy
 
 Components Guide as viewed on an author instance in Edit mode:
 
-![chlimage_1-404](assets/chlimage_1-404.png)
+![community-component1](assets/community-component1.png)
 
 ## Component Pages {#component-pages}
 
 Select a component from the list along the left side of the page.
 
-![chlimage_1-405](assets/chlimage_1-405.png)
+![community-component-pages](assets/community-component2.png)
 
 The main body of the guide displays:
 
@@ -93,11 +93,11 @@ When using the guide on an author instance, it is possible to experience configu
 
 For the Community Components guide, some component dialog settings are overlayed with the [Includable](scf.md#add-or-include-a-communities-component) toggle state. To toggle between using the existing resource or a dynamically included resource, in edit mode select both the component and includable text and double-click to open the edit dialog:
 
-![chlimage_1-406](assets/chlimage_1-406.png)
+![community-component3](assets/community-component3.png)
 
 Under the **Templates** tab:
 
-![chlimage_1-407](assets/chlimage_1-407.png)
+![community-component4](assets/community-component4.png)
 
 * **Include the child component with sling:include**
 
@@ -166,7 +166,9 @@ Using the comments component as an example, on either the author or publish inst
 
 1. Notice there are now 3 tabs for Templates, CSS, and Data.
 
-![chlimage_1-408](assets/chlimage_1-408.png) ![chlimage_1-409](assets/chlimage_1-409.png)
+![community-component5](assets/community-component5.png) 
+
+![community-component6](assets/community-component6.png)
 
 ### Templates Tab {#templates-tab}
 

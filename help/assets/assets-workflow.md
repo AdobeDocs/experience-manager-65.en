@@ -1,5 +1,5 @@
 ---
-title: Process assets to accomplish business processes, do audits, achieve compliance, and maintain basic sanity
+title: Process assets using workflows
 description: Asset processing to convert formats, create renditions, manage assets, validate assets, and run workflows.
 contentOwner: AG
 ---

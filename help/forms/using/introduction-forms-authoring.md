@@ -5,9 +5,8 @@ description: AEM Forms provide easy-to-use yet powerful interface for authoring 
 seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring adaptive forms. It provides a host of components and tools that you can use to build forms.
 uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
-topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: introduction
+topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 ---
@@ -146,7 +145,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>File attachment</td>
-   <td><p>Adds a button that allows users to browse and attach supporting documents to a form.</p> <p><strong>Note: </strong>The File Attachment component supports a pre-defined set of file formats in adaptive forms enabled for Adobe Sign. For more information, see <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Supported file formats</a>.</p> </td>
+   <td><p>Adds a button that allows users to browse and attach supporting documents to a form. You can attach multiple files to a File attachment component.</p> <p><strong> Note: </strong><ul> <li> To attach multiple files to a file attachment component opened in Apple Safari browser, select and attach files one by one. You cannot select and attach multiple files at once.</li> <li>The File Attachment component supports a pre-defined set of file formats in adaptive forms enabled for Adobe Sign. For more information, see <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Supported file formats</a>. </li> </ul></p> </td>
   </tr>
   <tr>
    <td>File attachment listing</td>

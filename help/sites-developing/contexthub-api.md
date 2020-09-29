@@ -525,7 +525,7 @@ Manages UI modules and UI module renderers.
 
 #### registerRenderer(moduleType, renderer, dontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
-Registers a UI module renderer with ContextHub. After the renderer is registered, it can be used to [create UI modules](/help/sites-administering/contexthub-config.md#adding-a-ui-module). Use this function when you are [extending ContextHub.UI.BaseModuleRenderer](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) to create a custom UI Module renderer.
+Registers a UI module renderer with ContextHub. After the renderer is registered, it can be used to [create UI modules](ch-configuring.md#adding-a-ui-module). Use this function when you are [extending ContextHub.UI.BaseModuleRenderer](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) to create a custom UI Module renderer.
 
 **Parameters**
 

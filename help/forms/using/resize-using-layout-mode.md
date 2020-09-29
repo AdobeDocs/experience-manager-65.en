@@ -5,9 +5,8 @@ description: Define the position of components using the responsive grid availab
 seo-description: Define the position of components using the responsive grid available in Layout mode 
 uuid: 6b077ebe-caea-4ae3-b17a-be2dca94eeb3
 contentOwner: anujkapo
-topic-tags: interactive-communications
+topic-tags: interactive-communications, author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 
