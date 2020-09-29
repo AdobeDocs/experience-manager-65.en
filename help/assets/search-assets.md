@@ -217,33 +217,33 @@ Authors can use Content Finder to search the DAM repository for the relevant ass
 
 [!DNL Experience Manager] search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/managing-collections-touch-ui.md).
 
-## Asset Selector {#assetpicker}
+## Asset selector {#assetpicker}
 
 >[!NOTE]
 >
->Asset Selector was called Asset Picker in prior versions of [!DNL Adobe Experience Manager].
+>Asset selector was called asset picker in prior versions of [!DNL Adobe Experience Manager].
 
-Asset Selector lets you browse, search, and filter DAM assets in a special way. You can launch the Asset Selector in your [!DNL Experience Manager] instance using `https://[aem-server]:[port]/aem/assetpicker.html`. This URL opens the Asset Selector in browse mode. Use the supported request parameters as suffix, such as `mode` (single or multiple selections), or `viewmode` with `assettype` (image, video, text) and `mimetype`. These parameters set the context of the Asset Selector for a particular search instance and remain intact throughout the selection. You can also fetch the metadata of assets that you select using this functionality.
+Asset selector lets you browse, search, and filter DAM assets in a special way. You can launch the asset selector in your [!DNL Experience Manager] instance using `https://[aem-server]:[port]/aem/assetpicker.html`. This URL opens the asset selector in browse mode. Use the supported request parameters as suffix, such as `mode` (single or multiple selections), or `viewmode` with `assettype` (image, video, text) and `mimetype`. These parameters set the context of the asset selector for a particular search instance and remain intact throughout the selection. You can also fetch the metadata of assets that you select using this functionality.
 
-The Asset Selector uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. It works only in the browse mode and only with the Omnisearch result page.
+The asset selector uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. It works only in the browse mode and only with the Omnisearch result page.
 
-Pass the following request parameters in a URL to launch the Asset Selector in a particular context:
+Pass the following request parameters in a URL to launch the asset selector in a particular context:
 
 | Name | Values | Example | Purpose |
 |---|---|---|---|
-| resource suffix (B) | Folder path as the resource suffix in the URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path&gt;](https://localhost:4502/aem/assetpicker.html) | To launch the Asset Selector with a particular folder selected, for example with the folder `/content/dam/we-retail/en/activities` selected, the URL should be of the form: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix. |
+| resource suffix (B) | Folder path as the resource suffix in the URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path&gt;](https://localhost:4502/aem/assetpicker.html) | To launch the asset selector with a particular folder selected, for example with the folder `/content/dam/we-retail/en/activities` selected, the URL should be of the form: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix. |
 | mode | single, multiple | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | In multiple mode, you can select several assets simultaneously using the asset selector. |
 | dialog | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use these parameters to open the asset selector as Granite Dialog. This option is only applicable when you launch the asset selector through Granite Path Field, and configure it as pickerSrc URL. |
 | root | &lt;folder_path&gt; | [https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Use this option to specify the root folder for the asset selector. In this case, the asset selector lets you select only child assets (direct/indirect) under the root folder. |
-| viewmode | search | | To launch the Asset Selector in search mode, with assettype and mimetype parameters. |
+| viewmode | search | | To launch the asset selector in search mode, with assettype and mimetype parameters. |
 | assettype | images, documents, multimedia, archives | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images](https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia](https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives](https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives)</li></ul> | Use this option to filter asset types based on the value passed. |
 | mimetype | mimetype(s) (`/jcr:content/metadata/dc:format`) of an asset (wildcard also supported) | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=image/png](https://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=*presentation&mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=*presentation&mimetype=*png)</li></ul> | Use it to filter assets based on MIME type(s) |
 
-To access the Asset Selector interface, go to `https://[aem_server]:[port]/aem/assetpicker`. Navigate to the desired folder, and select one or more assets. Alternatively, search for the desired asset from the Omnisearch box, apply filter as required, and then select it.
+To access the asset selector interface, go to `https://[aem_server]:[port]/aem/assetpicker`. Navigate to the desired folder, and select one or more assets. Alternatively, search for the desired asset from the Omnisearch box, apply filter as required, and then select it.
 
-![Browse and select asset in the Asset Selector](assets/assetpicker.png)
+![Browse and select asset in the asset selector](assets/assetpicker.png)
 
-*Figure: Browse and select asset in the Asset Selector.*
+*Figure: Browse and select asset in the asset selector.*
 
 ## Limitations {#limitations}
 
