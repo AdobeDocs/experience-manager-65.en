@@ -97,13 +97,13 @@ Using the example of the [Enablement Tutorial](getting-started-enablement.md):
 
 * Re-publish the community site
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![configure-catalog](assets/configure-catalog.png)
 
 #### Pre-filter TagIDs {#pre-filter-tagids}
 
 The pre-filter [TagIDs](../../help/sites-developing/framework.md#tagid) must exactly match the tags applied to the enablement resources. These are visible in the `resources` folder for the site as the values of the property `se_resource-tags`.
 
-![chlimage_1-190](assets/chlimage_1-190.png)
+![configure-filters](assets/configure-catalog1.png)
 
 ### Reference APIs {#reference-apis}
 

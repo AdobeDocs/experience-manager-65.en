@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Experience Manager 6.5 Assets User Guide
+user-guide-title: Assets Guide
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 ---
 
-# Experience Manager 6.5 Assets User Guide {#assets}
+# Assets Guide {#assets}
 
 + [[!DNL Assets] user guide](home.md)
 + [Experience Manager 6.5 Assets release notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)

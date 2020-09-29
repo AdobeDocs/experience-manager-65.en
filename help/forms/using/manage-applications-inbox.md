@@ -5,8 +5,7 @@ description: AEM Inbox allows you to launch Forms-centric workflows through subm
 seo-description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
-topic-tags: document_services
-topic-tags: publish
+topic-tags: document_services, publish
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
@@ -118,3 +117,37 @@ The **[!UICONTROL Workflow Details]** tab shows each step of the workflow. Tap *
 
 ![completed-task-workflow](assets/completed-task-workflow.png)
 
+## Troubleshooting {#troubleshooting-workflows}
+
+### Unable to view items related to AEM Workflow in AEM inbox {#unable-to-see-aem-worklow-items}
+
+A workflow model owner is unable to view items related to AEM Workflow in AEM inbox. To resolve the issue add the below listed indices to your AEM repository and rebuild the index. 
+
+1. Use one of the following methods to add indices: 
+
+   * Create the following nodes at in CRX DE at `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` with respective properties as specified in the following table: 
+
+      |Node| Property  | Type  |
+      |---|---|---|
+      | sharedWith  |  sharedWith | STRING  |
+      | locked  |  locked | BOOLEAN  |
+      | returned  |  returned | BOOLEAN  |
+      | allowInboxSharing  |  allowInboxSharing | BOOLEAN  |
+      | allowExplicitSharing  |  allowExplicitSharing | BOOLEAN  |
+      
+
+   * Deploy the indices via an AEM package. You can use an [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype) project to create a deployable AEM package. Use the following sample code to add indices to an AEM Archetype project:
+
+   ``` Java
+      .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
+      .property("locked", "locked").type(TYPENAME_BOOLEAN).propertyIndex()
+      .property("returned", "returned").type(TYPENAME_BOOLEAN).propertyIndex()
+      .property("allowInboxSharing", "allowInboxSharing").type(TYPENAME_BOOLEAN).propertyIndex()
+      .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
+   ``` 
+
+1. [Create a Property Index and set it to true](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index). 
+
+1. After configuring indices in CRX DE or deploying via a package, [re-index the repository](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
+
+https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/queries-and-indexing.html

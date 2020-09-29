@@ -1,5 +1,5 @@
 ---
-title: Migrate assets to [!DNL Adobe Experience Manager Assets] in bulk.
+title: Migrate assets in bulk
 description: Describes how to bring assets into [!DNL Adobe Experience Manager], apply metadata, generate renditions, and activate them to publish instances.
 contentOwner: AG
 ---

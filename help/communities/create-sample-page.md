@@ -31,7 +31,7 @@ To get started, create a simple [community site template](sites.md).
 
 From global navigation on an author instance select **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Site Templates]**.
 
-![chlimage_1-82](assets/chlimage_1-82.png)
+![create-site-template](assets/create-site-template1.png)
 
 * Select `Create button`
 * BASIC INFO
@@ -40,7 +40,7 @@ From global navigation on an author instance select **[!UICONTROL Tools]** > **[
     * `Description`: A template consisting of a single Page function.
     * Select `Enabled`
 
-![chlimage_1-83](assets/chlimage_1-83.png)
+![site-template-editor](assets/site-template-editor.png)
 
 * STRUCTURE
 
@@ -50,7 +50,7 @@ From global navigation on an author instance select **[!UICONTROL Tools]** > **[
         * `Title`: Single Page
         * `URL`: page
 
-![chlimage_1-84](assets/chlimage_1-84.png)
+![site-template-editor-structure](assets/site-template-editor1.png)
 
 * Select **`Save`** for the configuration
 * Select **`Save`** for the site template
@@ -61,7 +61,7 @@ Now create a new community site based on the simple site template.
 
 After creating the site template, from global navigation select **[!UICONTROL Communities > Sites]**.
 
-![chlimage_1-85](assets/chlimage_1-85.png)
+![create-community-site](assets/create-community-site1.png)
 
 * Select **`Create`** icon
 
@@ -77,7 +77,7 @@ After creating the site template, from global navigation select **[!UICONTROL Co
 
     * `Template`: choose `Single Page Template`
 
-    ![chlimage_1-86](assets/chlimage_1-86.png)
+    ![create-community-site-template](assets/create-community-site-template.png)
 
 * Select `Next`
 * Step `2 - Design`
@@ -91,23 +91,23 @@ After creating the site template, from global navigation select **[!UICONTROL Co
 
 * Select `Create`
 
-  ![chlimage_1-87](assets/chlimage_1-87.png)
+  ![create-community-site](assets/create-community-site.png)
 
 ## Publish the Site {#publish-the-site}
 
-![chlimage_1-88](assets/chlimage_1-88.png)
+![publish-site](assets/publish-site.png)
 
 From the [community sites console](sites-console.md), select the publish icon to publish the site, by default to http://localhost:4503.
 
 ## Open the Site on Author in Edit Mode {#open-the-site-on-author-in-edit-mode}
 
-![chlimage_1-89](assets/chlimage_1-89.png)
+![open-site](assets/open-site.png)
 
 Select the open site icon to view the site in edit mode.
 
 The URL will be [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
-![chlimage_1-90](assets/chlimage_1-90.png)
+![author-site](assets/author-site.png)
 
 On the simple home page it is possible to see what is pre-wired through the community functions and templates, and play with adding and configuring community components.
 
