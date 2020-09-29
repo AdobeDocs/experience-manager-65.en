@@ -221,7 +221,7 @@ Authors can use Content Finder to search the DAM repository for the relevant ass
 
 >[!NOTE]
 >
->Asset selector was called asset picker in prior versions of [!DNL Adobe Experience Manager].
+>Asset selector was called [asset picker](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) in prior versions of [!DNL Adobe Experience Manager].
 
 Asset selector lets you browse, search, and filter DAM assets in a special way. You can launch the asset selector in your [!DNL Experience Manager] instance using `https://[aem-server]:[port]/aem/assetpicker.html`. This URL opens the asset selector in browse mode. Use the supported request parameters as suffix, such as `mode` (single or multiple selections), or `viewmode` with `assettype` (image, video, text) and `mimetype`. These parameters set the context of the asset selector for a particular search instance and remain intact throughout the selection. You can also fetch the metadata of assets that you select using this functionality.
 
