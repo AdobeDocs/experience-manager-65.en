@@ -197,6 +197,8 @@ For example, `On Time (MM-DD-YYYY HH:mm)`. Here MM is month in two-digit format,
 
 A new sortable column for created date of assets is added in DAM list view and on asset search results in list view.
 
+![Sortable column for date created](assets/asset-created-date.png)
+
 #### Visual search for [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
 [!DNL Assets] users can search visually similar images. Experience Manager displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [Visual search](../assets/search-assets.md).
