@@ -57,6 +57,10 @@ AEM 6.5 comes in two flavors of Uber Jar:
 1. Uber Jar - Includes only the public interfaces that are not marked for deprecation. This is the **recommended** UberJar to use as it helps future-proof the codebase from relying on Deprecated APIs.
 1. Uber Jar with Deprecated APIs - Includes all public interfaces, including those marked for deprecation in a future version of AEM.
 
+>[!NOTE]
+>
+>From AEM 6.5.6 onwards, UberJar and other related artifacts are available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/) instead of the Adobe Public Maven repository (repo.adobe.com). The main UberJar file is renamed to `uber-jar-<version>.jar`. As a result, there is no `classifier`, with `apis` as the value, for the `dependency` tag.
+
 ### How do I use the UberJars? {#how-do-i-use-the-uberjars}
 
 If you are using Apache Maven as a build system (which is the case for most AEM Java projects), you will need to add one or two elements to your *pom.xml* file. The first is a *dependency* element adding the actual dependency to your project:
@@ -91,7 +95,7 @@ If you are using Apache Maven as a build system (which is the case for most AEM 
 </dependency>
 ```
 
-If your company is already using a Maven Repository Manager such as Sonatype Nexus, Apache Archiva, or JFrog Artifactory, add the appropriate configuration to your project to reference this repository manager and add Adobe's Maven repository ([https://repo.adobe.com/nexus/content/groups/public/](https://repo.adobe.com/nexus/content/groups/public/)) to your repository manager.
+If your company is already using a Maven Repository Manager such as Sonatype Nexus, Apache Archiva, or JFrog Artifactory, add the appropriate configuration to your project to reference this repository manager and add Adobe's Maven repository ([https://repo.maven.apache.org/maven2/](https://repo.maven.apache.org/maven2/)) to your repository manager.
 
 If you are not using a repository manager, then you will need to add a *repository* element to your *pom.xml* file:
 
@@ -100,7 +104,7 @@ If you are not using a repository manager, then you will need to add a *reposito
     <repository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </repository>
 </repositories>
@@ -108,7 +112,7 @@ If you are not using a repository manager, then you will need to add a *reposito
     <pluginRepository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </pluginRepository>
 </pluginRepositories>
