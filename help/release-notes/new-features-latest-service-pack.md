@@ -193,6 +193,10 @@ For example, `On Time (MM-DD-YYYY HH:mm)`. Here MM is month in two-digit format,
 
 * Screen readers now announce the `X` symbol to remove the selected tags along with the number of the selected tags.
 
+#### Sortable column for Created date of assets in list view (6.5.3.0) {#sortable-date-created-column}
+
+A new sortable column for created date of assets is added in DAM list view and on asset search results in list view.
+
 #### Visual search for [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
 [!DNL Assets] users can search visually similar images. Experience Manager displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [Visual search](../assets/search-assets.md).
