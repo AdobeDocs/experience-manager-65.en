@@ -93,7 +93,7 @@ Once the application has been created, locate the **[!UICONTROL App ID]** and **
 
 ### Create a Facebook Connect Cloud Service {#create-a-facebook-connect-cloud-service}
 
-The [Adobe Granite OAuth Application and Provider](https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-4/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) instance, instantiated by creating a cloud service configuration, identifies the Facebook application and the member group(s) to which the new users are added.
+The [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-application-and-provider) instance, instantiated by creating a cloud service configuration, identifies the Facebook application and the member group(s) to which the new users are added.
 
 1. On the AEM author instance, sign in with administrator privileges.
 1. From global navigation, select **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Facebook Social login configuration]**.
