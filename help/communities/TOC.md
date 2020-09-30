@@ -9,7 +9,7 @@ user-guide-description: Create online experiences such as forums, user groups, l
 
 # AEM 6.5 Communities User Guide {#communities}
 
-+ [Communities User Guide overview](home.md)
++ [AEM Communities overview](home.md)
 + Introduction to AEM Communities {#introduction}
   + [Communities Sites](administer-landing.md)
   + [AEM Communities Overview](overview.md)
