@@ -20,7 +20,7 @@ mini-toc-levels: 1
 | [Search rank and boosting](#searchrank) | [Text extraction](#extracttextupload) | [Smart collections](#collections) |
 | [Advanced search: filtering and scope of search](#scope) | [Custom predicates](#custompredicates) | [Understand unexpected results and Troubleshoot](#troubleshoot-unexpected-search-results-and-issues) |
 | [Search from other solutions and apps](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager desktop app](#desktopapp)</li><li>[Adobe Stock images](#adobestock)</li><li>[Dynamic Media assets](#dynamicmedia)</li></ul> | | |
-| [Asset Picker](#assetpicker) | | |
+| [Asset selector](#assetpicker) | | |
 | [Limitations](#limitations) and [Tips](#tips) | | |
 | [Illustrated examples](#samples)| | |
 

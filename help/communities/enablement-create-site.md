@@ -344,7 +344,7 @@ If not, the catalog function can easily be added. This would allow other members
 
 If the site structure does already contain the catalog feature, its Title can be changed.
 
-To modify the site's structure, navigate to the **Communities, Sites** console, open the `enable` folder, and select the **Edit Site** icon to access the properties of `Enablement Tutorial`.
+To modify the site's structure, navigate to **[!UICONTROL Communities]** > **[!UICONTROL Sites]** console, open the `enable` folder, and select the **Edit Site** icon to access the properties of `Enablement Tutorial`.
 
 Select the STRUCTURE panel to add a Catalog or modify an existing Catalog :
 
