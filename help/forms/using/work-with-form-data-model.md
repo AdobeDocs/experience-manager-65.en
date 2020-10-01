@@ -13,7 +13,7 @@ docset: aem65
 
 # Work with form data model{#work-with-form-data-model}
 
- ![](do-not-localize/data-integeration.png)
+ ![data-integration](do-not-localize/data-integeration.png)
 
 Form data model editor provides an intuitive user interface and tools for editing and configuring a form data model. Using the editor, you can add and configure data model objects, properties, and services from associated data sources in the form data model. In addition, it allows you to create data model objects and properties without data sources and bind them with respective data model objects and properties later. You can also generate and edit sample data for data model object properties that you can use to prefill adaptive forms and interactive communications while previewing. You can test data model objects and services configured in a form data model to ensure it is properly integrated with data sources.
 
@@ -173,7 +173,7 @@ Select **[!UICONTROL User Profile Attribute]** from the **[!UICONTROL Binding To
 
 The attribute name specified in the **[!UICONTROL Binding Value]** field must include the complete binding path till the attribute name for the user. Open the following URL to access the user details on CRXDE:
 
-https://&lt;server-name&gt;:&lt;port number&gt;/crx/de/index.jsp#/home/users/
+`https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
 ![User Profile](assets/binding_crxde_user_profile_new.png)
 
@@ -189,16 +189,30 @@ Use the request attribute to retrieve the associated properties from the data so
 
 1. Select **[!UICONTROL Request Attribute]** from the **[!UICONTROL Binding To]** drop-down menu and enter the attribute name in the **[!UICONTROL Binding Value]** field.
 
-1. Open head.jsp to define the attribute details on CRXDE:  
-   `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. Create an [overlay](../../../help/sites-developing/overlays.md) for the head.jsp. To create the overlay, open CRX DE and copy the `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` file to `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`  
 
-1. Include the following text in the head.jsp file:
+   >[!NOTE]
+   >
+   > * If you use a static template, overlay the head.jsp at: 
+   /libs/fd/af/components/page2/afStaticTemplatePage/head.jsp
+   > * If you use an editable template, overlay the aftemplatedpage.jsp at:
+   /libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp
 
-   ```jsp
+1. Set [!DNL paramMap] for the request attribute. For example, include the following code in the .jsp file in the apps folder:
+
+   ```
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
-    request.setAttribute("paramMap",paraMap);%>
+    request.setAttribute("paramMap",paraMap);
    ```
+   
+   For example, use the below code to retrieve value of petid from data source:
+
+   ```
+   <%Map paraMap = new HashMap();
+   paraMap.put("petId",request.getParameter("petId"));
+   request.setAttribute("paramMap",paraMap);%>
+   ```  
 
 The details are retrieved from the data source based on the attribute name specified in the request.
 
