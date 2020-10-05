@@ -165,10 +165,10 @@ To test and verify the MongoDB common store, post a comment on the publish insta
 
 1. View the UGC in Solr:
 
-   * Browse to Solr dashboard: [http://localhost:8983/solr/](http://localhost:8983/solr/)
-   * User `core selector` to select `collection1`
-   * Select `Query`
-   * Select `Execute Query`
+   * Browse to Solr dashboard: [http://localhost:8983/solr/](http://localhost:8983/solr/).
+   * User `core selector` to select `collection1`.
+   * Select `Query`.
+   * Select `Execute Query`.
 
    ![ugc-solr](assets/ugc-solr.png)
 
