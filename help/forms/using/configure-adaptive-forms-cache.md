@@ -125,7 +125,6 @@ Perform the below listed steps to enable and configure caching  adaptive forms o
       # added for AEM forms specific use cases.
       /0003 { /glob "dataRef" /type "allow" }
       }
-
    ```
 
 Your AEM environment is configured to cache adaptive forms. It caches all types of adaptive forms. If you have a requirement to check user access permissions for a page before delivering the cached page, see [caching secured content](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/permissions-cache.html).
