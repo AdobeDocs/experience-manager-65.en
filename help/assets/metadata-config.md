@@ -262,8 +262,9 @@ Enter metadata values in the various fields and click **[!UICONTROL Save]** to s
 >[!MORELIKETHIS]
 >
 >* [Metadata concepts and understanding](metadata-concepts.md).
->* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
->* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
->* [Metadata import and export in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
->* [Profiles to process metadata, images, and videos](processing-profiles.md)
->* [Best Practices to organize your digital assets to use processing profiles](/help/assets/organize-assets.md)
+>* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
+>* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
+>* [Metadata import and export in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html).
+>* [Profiles to process metadata, images, and videos](processing-profiles.md).
+>* [Best Practices to organize your digital assets to use processing profiles](/help/assets/organize-assets.md).
+>* [XMP writeback](/help/assets/xmp-writeback.md).

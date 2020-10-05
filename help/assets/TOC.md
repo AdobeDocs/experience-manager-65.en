@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Experience Manager 6.5 Assets User Guide
+user-guide-title: Assets Guide
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 ---
 
-# Experience Manager 6.5 Assets User Guide {#assets}
+# Assets Guide {#assets}
 
 + [[!DNL Assets] user guide](home.md)
 + [Experience Manager 6.5 Assets release notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
@@ -16,6 +16,7 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
 + Use Experience Manager Assets {#using}
     + [Assets home page experience](assets-home-page.md)
     + [Search digital assets](search-assets.md)
+    + [Work with asset metadata](metadata.md)
     + [Multilingual assets](multilingual-assets.md)
     + [Use [!DNL Adobe Stock] assets in Assets](aem-assets-adobe-stock.md)
     + [Previewing 3D assets](previewing-3d-assets.md)
@@ -84,7 +85,6 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
 + Administer Assets {#administer}
     + [Supported file formats](assets-formats.md)
     + [Search facets](search-facets.md)
-    + [Work with asset metadata](metadata.md)
     + [Understand metadata concepts](metadata-concepts.md)
     + [Configuration of metadata functionality](metadata-config.md)
     + [XMP writeback to renditions](xmp-writeback.md)
@@ -92,7 +92,6 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
     + [Asset reports](asset-reports.md)
     + [Enhanced Smart Tags](enhanced-smart-tags.md)
     + [Profiles to process metadata, images, and videos](processing-profiles.md)
-    + [Cascading metadata](cascading-metadata.md)
     + [Create and configure Asset Editor pages](assets-finder-editor.md)
     + [Assets sizing guide](assets-sizing-guide.md)
     + [Best practices to translate assets](best-practices-for-translating-assets-efficiently.md)
