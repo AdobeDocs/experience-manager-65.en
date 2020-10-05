@@ -41,7 +41,7 @@ This is based on the documentation for [Configuring Email Notification](../../he
 
 For example (filled in with values for illustrative purposes only):
 
-![chlimage_1-98](assets/chlimage_1-98.png)
+![email-config](assets/email-config.png)
 
 * **[!UICONTROL SMTP server host name]** 
 
@@ -91,7 +91,7 @@ To reach the Communities email configuration instances:
 
 * Locate `AEM Communities Email Reply Configuration`.
 
-![chlimage_1-99](assets/chlimage_1-99.png)
+![email-reply-config](assets/email-reply-config.png)
 
 ### Configuration for Notifications {#configuration-for-notifications}
 
@@ -170,7 +170,7 @@ In order for the email to be brought into the repository, it is necessary to con
 
 * Select **[!UICONTROL Add]**
 
-  ![chlimage_1-102](assets/chlimage_1-102.png)
+  ![polling-importer](assets/polling-importer.png)
 
 * **[!UICONTROL Type]**
 
@@ -201,7 +201,7 @@ In order for the email to be brought into the repository, it is necessary to con
 
 ### Adjust Protocol for New Polling Importer {#adjust-protocol-for-new-polling-importer}
 
-Once the new polling configuration is saved, it is necessary to further modify properties of the subscription email importer in order to change the protocol from `POP3` to `emailreply`
+Once the new polling configuration is saved, it is necessary to further modify properties of the subscription email importer in order to change the protocol from `POP3` to `emailreply`.
 
 Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
@@ -211,7 +211,7 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
   * **feedType**: Replace `pop3s` with **`emailreply`**
   * **source**: Replace source's protocol `pop3s://` with **`emailreply://`**
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![polling-protocol](assets/polling-protocol.png)
 
 The red triangles indicate the modified properties. Be sure to save the changes:
 

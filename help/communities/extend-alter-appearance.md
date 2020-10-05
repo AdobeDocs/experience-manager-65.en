@@ -68,7 +68,7 @@ One way to do so is:
 
 [Continuing the experience](/help/communities/extend-sample-page.md#publish-sample-page) on the publish instance, still signed in as the same user, it is now possible to refresh the page in the publish environment to view the modification to remove the avatar:
 
-![chlimage_1-81](assets/chlimage_1-81.png)
+![view-modified-content](assets/view-modified-content.png)
 
 ### Sample Comment Extension Package {#sample-comment-extension-package}
 
