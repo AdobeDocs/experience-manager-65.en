@@ -151,26 +151,26 @@ To test and verify the MongoDB common store, post a comment on the publish insta
 1. Sign in to post a comment:
 1. Enter text in the comment text entry box and click **[!UICONTROL Post]**
 
-   ![chlimage_1-191](assets/chlimage_1-191.png)
+   ![post-comment](assets/post-comment.png)
 
 1. Simply view the comment on the [author instance](http://localhost:4502/content/community-components/en/comments.html) (likely still signed in as admin / admin).
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![view-comment](assets/view-comment.png)
 
-   Note: while there are JCR nodes under the *asipath* on author, these are for the SCF framework. The actual UGC is not in JCR, it is in the MongoDB.
+   Note: While there are JCR nodes under the *asipath* on author, these are for the SCF framework. The actual UGC is not in JCR, it is in the MongoDB.
 
 1. View the UGC in mongodb **[!UICONTROL Communities]** > **[!UICONTROL Collections]** > **[!UICONTROL Content]**
 
-   ![chlimage_1-193](assets/chlimage_1-193.png)
+   ![ugc-content](assets/ugc-content.png)
 
 1. View the UGC in Solr:
 
-   * Browse to Solr dashboard: [http://localhost:8983/solr/](http://localhost:8983/solr/)
-   * User `core selector` to select `collection1`
-   * Select `Query`
-   * Select `Execute Query`
+   * Browse to Solr dashboard: [http://localhost:8983/solr/](http://localhost:8983/solr/).
+   * User `core selector` to select `collection1`.
+   * Select `Query`.
+   * Select `Execute Query`.
 
-   ![chlimage_1-194](assets/chlimage_1-194.png)
+   ![ugc-solr](assets/ugc-solr.png)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -180,13 +180,9 @@ To test and verify the MongoDB common store, post a comment on the publish insta
 
 1. Make sure MSRP has been configured to be the default provider:
 
-   * On all author and publish AEM instances, revisit the [Storage Configuration console](srp-config.md)
+   * On all author and publish AEM instances, revisit the [Storage Configuration console](srp-config.md) or check the AEM repository:
 
-   Or check the AEM repository:
-
-   * In JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
-
-   * Does not contain an [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) node, it means the storage provider is JSRP
-   * If the srpc node exists and contains node [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), the defaultconfiguration's properties should define MSRP to be the default provider
+   * In JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) does not contain an [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) node, it means the storage provider is JSRP.
+   * If the srpc node exists and contains node [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), the defaultconfiguration's properties should define MSRP to be the default provider.
 
 1. Make sure AEM was restarted after MSRP selected.

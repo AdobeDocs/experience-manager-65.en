@@ -7,9 +7,9 @@ breadcrumb-title: Communities Guide
 user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 ---
 
-# AEM 6.5 Communities User Guide {#communities}
+# Adobe Experience Manager 6.5 Communities Guide {#communities}
 
-+ [Communities User Guide overview](home.md)
++ [Communities Guide](home.md)
 + Introduction to AEM Communities {#introduction}
   + [Communities Sites](administer-landing.md)
   + [AEM Communities Overview](overview.md)

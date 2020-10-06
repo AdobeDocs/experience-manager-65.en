@@ -13,7 +13,7 @@ docset: aem65
 
 # Work with form data model{#work-with-form-data-model}
 
- ![](do-not-localize/data-integeration.png)
+ ![data-integration](do-not-localize/data-integeration.png)
 
 Form data model editor provides an intuitive user interface and tools for editing and configuring a form data model. Using the editor, you can add and configure data model objects, properties, and services from associated data sources in the form data model. In addition, it allows you to create data model objects and properties without data sources and bind them with respective data model objects and properties later. You can also generate and edit sample data for data model object properties that you can use to prefill adaptive forms and interactive communications while previewing. You can test data model objects and services configured in a form data model to ensure it is properly integrated with data sources.
 
@@ -173,7 +173,7 @@ Select **[!UICONTROL User Profile Attribute]** from the **[!UICONTROL Binding To
 
 The attribute name specified in the **[!UICONTROL Binding Value]** field must include the complete binding path till the attribute name for the user. Open the following URL to access the user details on CRXDE:
 
-https://&lt;server-name&gt;:&lt;port number&gt;/crx/de/index.jsp#/home/users/
+`https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
 ![User Profile](assets/binding_crxde_user_profile_new.png)
 
