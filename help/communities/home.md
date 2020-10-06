@@ -1,11 +1,11 @@
 ---
-title: AEM 6.5 Communities User Guide
-seo-title: AEM 6.5 Communities User Guide
+title: Adobe Experience Manager 6.5 Communities Guide
+seo-title: Adobe Experience Manager 6.5 Communities Guide
 description: This guide covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 ---
 
-# AEM 6.5 Communities User Guide
+# Adobe Experience Manager 6.5 Communities Guide
 
 This guide covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 

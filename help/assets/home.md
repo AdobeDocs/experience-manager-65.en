@@ -1,15 +1,14 @@
 ---
-title: Adobe Experience Manager 6.5 Assets User Guide
-seo-title: Adobe Experience Manager 6.5 Assets User Guide
+title: Assets Guide
 description: This guide covers all Experience Manager Assets tasks, such as how to create, manage, deliver, and optimize digital assets.
-seo-description: Covers all Experience Manager Assets tasks, such as how to create, manage, deliver, and optimize digital assets.
+user-guide-title: Assets Guide
 ---
 
-# Adobe Experience Manager 6.5 Assets User Guide
+# Assets Guide
 
-This guide covers all Experience Manager Assets tasks, such as how to create, manage, deliver, and optimize digital assets.
+This guide covers all [!DNL Experience Manager Assets] tasks, such as how to create, manage, deliver, and optimize digital assets.
 
-## Key Experience Manager articles
+## Key [!DNL Experience Manager] articles
 
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->
@@ -19,7 +18,7 @@ This guide covers all Experience Manager Assets tasks, such as how to create, ma
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Security Checklist](/help/sites-administering/security-checklist.md)
 
-## Experience Manager 6.5 user guides
+## [!DNL Experience Manager] 6.5 guides
 
 | User Guide | Description |
 |--- |---|
@@ -36,7 +35,7 @@ This guide covers all Experience Manager Assets tasks, such as how to create, ma
 | [Mobile User Guide](/help/mobile/home.md)|This guide describes how to create and manage content for mobile applications.|
 | [Experience Manager Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | This guide shows you how to share user-generated content with [!DNL Livefyre]. |
 
-## Key Experience Manager resources
+## Key [!DNL Experience Manager] resources
 
 * [Experience Manager Video Tutorials](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
 * [GDPR Readiness](/help/managing/data-protection-and-privacy.md)

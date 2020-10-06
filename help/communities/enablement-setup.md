@@ -87,7 +87,7 @@ Use the [Tagging console](../../help/sites-administering/tags.md#tagging-console
 * `Tutorial: Arts / Auditory`
 * `Tutorial: Arts / History`
 
-![chlimage_1-417](assets/chlimage_1-417.png)
+![tutorial-tags](assets/tutorial-tags.png)
 
 Then follow the instructions to:
 
@@ -166,7 +166,7 @@ A fourth user is created in the author environment and assigned the roles of Com
 
 ### Community Ski Class properties {#community-ski-class-properties}
 
-![chlimage_1-418](assets/chlimage_1-418.png)
+![ski-class-properties](assets/ski-class-properties.png)
 
 >[!NOTE]
  >
@@ -212,5 +212,5 @@ Scroll down to `Add User to Groups`:
 
 * Select **[!UICONTROL Save]**
 
-![chlimage_1-419](assets/chlimage_1-419.png)
+![admin-role](assets/admin-role.png)
 

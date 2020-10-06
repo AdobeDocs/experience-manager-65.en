@@ -31,13 +31,13 @@ The examples that follow use the community site created from the `Reference Site
 
 This is the page that loads on publish when the **Groups** menu item is selected:
 
-![chlimage_1-236](assets/chlimage_1-236.png)
+![new-group](assets/new-group.png)
 
 When you select the **New Group** icon, an edit dialog opens up.
 
 Under the **Settings** tab, you provide the basic features of the group:
 
-![chlimage_1-237](assets/chlimage_1-237.png)
+![group-settings](assets/group-settings.png)
 
 * **Group Name**
   
@@ -66,21 +66,21 @@ Under the **Settings** tab, you provide the basic features of the group:
 Under the **Template** tab is the ability to 
 select from the list of community group templates that were specified when the groups function was included in the community site's structure or in a community site template.
 
-![chlimage_1-238](assets/chlimage_1-238.png)
+![group-template](assets/group-template.png)
 
 Under the **Image** tab is the ability to upload an image to display for the group on the community site's Groups page. The default style sheet will size the image to 170 x 90 pixels.
 
-![chlimage_1-239](assets/chlimage_1-239.png)
+![group-image](assets/group-image.png)
 
 By selecting the **Create Group** button, the pages for the group are created based on the chosen template, and a user group is created for membership and the Groups page will be updated to show the new sub-community.
 
 For example, the Groups page with a new sub-community titled "Focus Group", for which an image thumbnail was uploaded, will appear as follows (still signed in as a community group administrator):
 
-![chlimage_1-240](assets/chlimage_1-240.png)
+![group-page](assets/group-page.png)
 
 Selecting the `Focus Group` link will open the Focus Group page in the browser, which has an initial appearance based on the chosen template, and includes a submenu underneath the main community site's menu:
 
-![chlimage_1-241](assets/chlimage_1-241.png)
+![open-group-page](assets/open-group-page.png)
 
 ### Community Group Member List Component {#community-group-member-list-component}
 

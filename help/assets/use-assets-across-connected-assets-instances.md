@@ -150,7 +150,9 @@ Use the above setup to try the authoring experience to understand how the functi
 
 The fetched assets can be used as any other local asset, except that the associated metadata cannot be edited.
 
-## Limitations {#limitations}
+## Limitations and best practices {#tips-and-limitations}
+
+* To get insights about asset usage, configure the [Asset Insight](/help/assets/touch-ui-asset-insights.md) functionality on the [!DNL Sites] instance.
 
 ### Permissions and asset management {#permissions-and-managing-assets}
 
@@ -158,7 +160,7 @@ The fetched assets can be used as any other local asset, except that the associa
 * Local assets are read-only copies. [!DNL Experience Manager] components do non-destructive edits to assets. No other edits are allowed.
 * Locally fetched assets are available for authoring purposes only. Asset update workflows cannot be applied and metadata cannot be edited.
 * Only images and the listed document formats are supported. [!DNL Dynamic Media] assets, Content Fragments, and Experience Fragments are not supported.
-* Metadata schemas are not fetched.
+* [!DNL Experience Manager] does not fetch the metadata schemas. It means that all the fetched metadata may not be displayed. If the schema are updated separately then all the properties are displayed.
 * All [!DNL Sites] authors have read permissions on the fetched copies, even if authors cannot access the remote DAM deployment.
 * No API support to customize the integration.
 * The functionality supports seamless search and use of remote assets. To make many remote assets available on local deployment in one-go, consider migrating the assets. See [Assets migration guide](assets-migration-guide.md).
@@ -177,6 +179,7 @@ The fetched assets can be used as any other local asset, except that the associa
 * Fetch operation times out after 5 seconds. Authors can have issues fetching assets, say if there are network issues. Authors can reattempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
 * Simple edits that are non-destructive and the edit supported via the `Image` component, can be done on fetched assets. Assets are read-only.
 * The only method to re-fetch the asset is to drag it on a page. There is no API support or other methods to re-fetch an asset to update it.
+* If assets are decommissioned from the DAM, those continue to be in use on [!DNL Sites] pages.
 
 ## Troubleshoot issues {#troubleshoot}
 
