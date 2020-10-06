@@ -125,7 +125,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>Date picker</td>
-   <td>Adds a calender field to pick a date.</td>
+   <td>Adds a calendar field to pick a date.</td>
   </tr>
   <tr>
    <td>Document Fragment</td>
