@@ -189,16 +189,35 @@ Use the request attribute to retrieve the associated properties from the data so
 
 1. Select **[!UICONTROL Request Attribute]** from the **[!UICONTROL Binding To]** drop-down menu and enter the attribute name in the **[!UICONTROL Binding Value]** field.
 
-1. Open head.jsp to define the attribute details on CRXDE:  
-   `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. Create an [overlay](../../../help/sites-developing/overlays.md) for the head.jsp. To create the overlay, open CRX DE and copy the `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` file to `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`  
 
-1. Include the following text in the head.jsp file:
+   >[!NOTE]
+   >
+   > * If you use a static template, overlay the head.jsp at: 
+   /libs/fd/af/components/page2/afStaticTemplatePage/head.jsp
+   > * If you use an editable template, overlay the aftemplatedpage.jsp at:
+   /libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp
 
-   ```jsp
+1. Set [!DNL paramMap] for the request attribute. For example, include the following code in the .jsp file in the apps folder:
+
+   ``` javascript 
+
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
-    request.setAttribute("paramMap",paraMap);%>
+    request.setAttribute("paramMap",paraMap);
+
    ```
+
+   For example, use the below code to retrieve value of petid from data source:
+
+
+   ``` javascript
+
+   <%Map paraMap = new HashMap();
+   paraMap.put("petId",request.getParameter("petId"));
+   request.setAttribute("paramMap",paraMap);%>
+   
+   ```  
 
 The details are retrieved from the data source based on the attribute name specified in the request.
 
