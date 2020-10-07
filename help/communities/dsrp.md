@@ -67,7 +67,7 @@ On author, to access the Storage Configuration console
      >The default storage configuration is now stored in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`)      instead of etc path (`/etc/socialconfig/srpc/defaultconfiguration`). You are advised to follow the [migration steps](#zerodt-migration-steps) to make defaultsrp work as expected.
      >
 
-   ![chlimage_1-128](assets/chlimage_1-128.png)
+   ![dsrp-config](assets/dsrp-config.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**
 * **Database Configuration**
