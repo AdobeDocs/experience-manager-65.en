@@ -485,7 +485,7 @@ To move assets or folders:
 
 ### Move assets using drag operation {#move-using-drag}
 
-You can move assets (or folders) to a sibling folder, the [!UICONTROL Lightbox] collection, or another collection by dragging them to the target location, instead of using [!UICONTROL Move] option in the user interface. However, this operation is possible only in the list view.
+You can move assets (or folders) to a sibling folder by dragging them to the target location, instead of using [!UICONTROL Move] option in the user interface. However, this operation is possible only in the list view.
 
 Moving assets by dragging them does not open [!UICONTROL Move Asset] wizard, therefore you do not get the option to rename the assets while moving. Moreover, the already published assets are republished on moving them by dragging, without seeking user's approval to republish.
 
