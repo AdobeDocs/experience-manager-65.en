@@ -94,9 +94,8 @@ On author, to access the Storage Configuration console:
 * Select **[!UICONTROL Submit]**
 
 >[!NOTE]
- >
- >The mongoDB database, which defaults to the name `communities`, should not be set to the name of a database being used for [node stores or data (binary) stores](../../help/sites-deploying/data-store-config.md). See also [Storage Elements in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
- >
+>
+>The mongoDB database, which defaults to the name `communities`, should not be set to the name of a database being used for [node stores or data (binary) stores](../../help/sites-deploying/data-store-config.md). See also [Storage Elements in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 ### MongoDB Replica Set {#mongodb-replica-set}
 
@@ -199,9 +198,8 @@ For example: admin:admin
 `http://localhost:4503/services/social/datastore/mongo/reindex`
 
 >[!NOTE]
- >
- >If you are [reindexing DSRP Solr](dsrp.md), the URL is **/services/social/datastore/rdb/reindex**
- >
+>
+>If you are [reindexing DSRP Solr](dsrp.md), the URL is **/services/social/datastore/rdb/reindex**
 
 ### MSRP Reindex Example {#msrp-reindex-example}
 

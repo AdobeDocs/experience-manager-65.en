@@ -45,14 +45,12 @@ To do so:
 For example: `/content/sites/engage/en/configuration`
 
 >[!NOTE]
- >
- >All nodes in the overlaid path need only be of type `Folder`.
- >
+>
+>All nodes in the overlaid path need only be of type `Folder`.
 
 >[!CAUTION]
- >
- >If the custom template is given the name *sitepage.hbs*, then all community sites will be customized.
- >
+>
+>If the custom template is given the name *sitepage.hbs*, then all community sites will be customized.
 
 ### Custom Site Template Example {#custom-site-template-example}
 

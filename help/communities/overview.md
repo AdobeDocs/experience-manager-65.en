@@ -236,9 +236,8 @@ The AEM Demo Machine was tested successfully with CQ 5.5, CQ 5.6.1, AEM 6.0, AEM
 The AEM Demo Machine requires a valid AEM license.
 
 >[!NOTE]
- >
- >View a [video introduction](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) to the AEM Demo Machine (13:26).
- >
+>
+>View a [video introduction](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) to the AEM Demo Machine (13:26).
 
 ## AEM Communities Documentation {#aem-communities-documentation}
 

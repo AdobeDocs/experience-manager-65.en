@@ -94,18 +94,18 @@ See also [Client-side Customizations](/help/communities/client-customize.md)
 * [Server-side Customizations](/help/communities/server-customize.md)
 
 >[!CAUTION]
- >
- >The String parameter must *not* contain a trailing slash "/" for the following MessageBuilder methods:
- >
- >* `setInboxPath`()
- >* `setSentItemsPath`()
- >
- >For example:
- >
- >```
- >valid: mb.setInboxPath( "/mail/inbox" );
- > not valid: mb.setInboxPath( "/mail/inbox/" );
- >```
+>
+>The String parameter must *not* contain a trailing slash "/" for the following MessageBuilder methods:
+>
+>* `setInboxPath`()
+>* `setSentItemsPath`()
+>
+>For example:
+>
+>```
+>valid: mb.setInboxPath( "/mail/inbox" );
+> not valid: mb.setInboxPath( "/mail/inbox/" );
+>```
 
 ### Community Site {#community-site}
 

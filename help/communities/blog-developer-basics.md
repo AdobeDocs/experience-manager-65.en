@@ -22,9 +22,8 @@ Blog articles may now be created by any community member, unless restricted to p
 This page provides the essential information for working with the blog feature.
 
 >[!NOTE]
- >
- >The underlying infrastructure of the blog feature is the journal feature.
- >
+>
+>The underlying infrastructure of the blog feature is the journal feature.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 

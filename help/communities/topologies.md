@@ -30,16 +30,15 @@ One other SRP option, [JSRP - JCR Storage Resource Provider](jsrp.md), does not 
 Requiring a common store results in the following recommended topologies.
 
 >[!NOTE]
- >
- >For AEM Communities, [UGC is never replicated](working-with-srp.md#ugc-never-replicated).
- >
- >When the deployment does not include a [common store](working-with-srp.md), UGC will be visible only on the AEM publish or author instance on which it was entered.
- >
+>
+>For AEM Communities, [UGC is never replicated](working-with-srp.md#ugc-never-replicated).
+>
+>When the deployment does not include a [common store](working-with-srp.md), UGC will be visible only on the AEM publish or author instance on which it was entered.
+>
 
 >[!NOTE]
- >
- >For more information on the AEM platform, see [Recommended Deployments](../../help/sites-deploying/recommended-deploys.md) and [Introduction to the AEM Platform](../../help/sites-deploying/data-store-config.md).
- >
+>
+>For more information on the AEM platform, see [Recommended Deployments](../../help/sites-deploying/recommended-deploys.md) and [Introduction to the AEM Platform](../../help/sites-deploying/data-store-config.md).
 
 ## For Production {#for-production}
 

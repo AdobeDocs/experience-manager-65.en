@@ -112,8 +112,7 @@ For the location of these JAR files, see [Including AEM Forms Java library files
 
 >[!NOTE]
 >
->For information about creating the HTML page that invokes the `RenderFormFragment` Java servlet, see
-[Creating the web page](/help/forms/developing/rendering-forms.md#creating-the-web-page).
+>For information about creating the HTML page that invokes the `RenderFormFragment` Java servlet, see [Creating the web page](/help/forms/developing/rendering-forms.md#creating-the-web-page).
 
 ### Creating Java application logic for the servlet {#creating-java-application-logic-for-the-servlet}
 

@@ -22,9 +22,8 @@ AEM Communities uses email for:
 By default, the email feature is not functional as it requires specification of an SMTP server and SMTP user.
 
 >[!CAUTION]
- >
- >Email for notifications and subscriptions must be configured only on the [primary publisher](deploy-communities.md#primary-publisher).
- >
+>
+>Email for notifications and subscriptions must be configured only on the [primary publisher](deploy-communities.md#primary-publisher).
 
 ## Default Mail Service Configuration {#default-mail-service-configuration}
 

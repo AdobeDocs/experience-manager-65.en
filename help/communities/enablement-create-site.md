@@ -115,9 +115,8 @@ For example,
 * Select [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
- >
- >[Tunnel service](/help/communities/deploy-communities.md#tunnel-service-on-author) allows selection of members and groups existing only in the publish environment.
- >
+>
+>[Tunnel service](/help/communities/deploy-communities.md#tunnel-service-on-author) allows selection of members and groups existing only in the publish environment.
 
 ![enablement roles](assets/site-admin.png)
 
@@ -307,9 +306,8 @@ To get started:
    * Arrive at https://localhost:4503/content/sites/enable/en.html
 
 >[!NOTE]
- >
- >To disable, simply pre-pend the `sling:match` property value with an 'x' - `xlocalhost.4503/$` - and **Save All**.
- >
+>
+>To disable, simply pre-pend the `sling:match` property value with an 'x' - `xlocalhost.4503/$` - and **Save All**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -332,9 +330,8 @@ In addition, administrators may use the [Edit Site icon](/help/communities/sites
 After any modification, remember to **Save** and re-**Publish** the site.
 
 >[!NOTE]
- >
- >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
- >
+>
+>If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
 
 ### Add a Catalog {#add-a-catalog}
 
