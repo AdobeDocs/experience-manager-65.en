@@ -33,14 +33,14 @@ The different facets of community groups are:
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
 >
->Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.-->
+>Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.
+-->
 
 >[!NOTE]
- >
- >This Groups console, only accessible from the Communities Sites console, is not to be confused with the member [Groups console](/help/communities/members.md) for managing member groups.
- >
- >Member groups are user groups registered in the publish environment and accessed from the author environment using the [tunnel service](/help/communities/deploy-communities.md#tunnel-service-on-author).
- >
+>
+>This Groups console, only accessible from the Communities Sites console, is not to be confused with the member [Groups console](/help/communities/members.md) for managing member groups.
+>
+>Member groups are user groups registered in the publish environment and accessed from the author environment using the [tunnel service](/help/communities/deploy-communities.md#tunnel-service-on-author).
 
 ## Group Creation {#group-creation}
 
@@ -195,9 +195,8 @@ When the process completes, the card for the new sub-community site (group) is d
 ![create community group](assets/create-community-groups.png)
 
 >[!NOTE]
- >
- >The group gets created in all the languages, as specified in [Step 1: Community Group Template](/help/communities/groups.md#step-community-group-template) in Additional Available Community Group Languages, in the Community Groups console of the respective community sites.
- >
+>
+>The group gets created in all the languages, as specified in [Step 1: Community Group Template](/help/communities/groups.md#step-community-group-template) in Additional Available Community Group Languages, in the Community Groups console of the respective community sites.
 
 ## Author Group Content {#author-group-content}
 
@@ -245,18 +244,16 @@ The STRUCTURE panel allows the modification of the structure initially created f
     Modify the order of functions as displayed in the site's top level navigation bar.
 
 >[!CAUTION]
- >
- >While the display title can be changed without side-effects, it is not recommended to edit the URL name of a community function belonging to a community site.
- >
- >For example, renaming the URL will not move existing UGC, thus having the effect of 'losing' UGC.
- >
+>
+>While the display title can be changed without side-effects, it is not recommended to edit the URL name of a community function belonging to a community site.
+>
+>For example, renaming the URL will not move existing UGC, thus having the effect of 'losing' UGC.
 
 >[!CAUTION]
- >
- >The groups function must *not* be the *first nor the only* function in the site structure.
- >
- >Any other function, such as the [page function](/help/communities/functions.md#page-function), must be included and listed first.
- >
+>
+>The groups function must *not* be the *first nor the only* function in the site structure.
+>
+>Any other function, such as the [page function](/help/communities/functions.md#page-function), must be included and listed first.
 
 **Example: Adding a Calendar Function to a Sub-Community (Group) Structure**
 
@@ -294,11 +291,10 @@ Once the group is successfully published, a message will appear:
 ![group-published](assets/group-published.png)
 
 >[!CAUTION]
- >
- >The parent community site and parent groups should already have been published.
- >
- >The community site and nested groups should be published in a top down fashion.
- >
+>
+>The parent community site and parent groups should already have been published.
+>
+>The community site and nested groups should be published in a top down fashion.
 
 ## Delete the Group {#delete-the-group}
 
