@@ -131,9 +131,8 @@ If the node is of type `cq:Page` (recommended), then, using CRXDE|Lite, add the 
 | scoringRules |String |an array list of [scoring rules](#scoring-rules) |
 
 >[!NOTE]
- >
- >If a scoring rule appears to have no effect on awarding badges, ensure the scoring rule has not been blocked by the badging rule's scoringRules property. See the section titled [Badging Rules](#badging-rules).
- >
+>
+>If a scoring rule appears to have no effect on awarding badges, ensure the scoring rule has not been blocked by the badging rule's scoringRules property. See the section titled [Badging Rules](#badging-rules).
 
 ### Enable Badges for Component {#enable-badges-for-component}
 

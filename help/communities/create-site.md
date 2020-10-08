@@ -116,9 +116,8 @@ For example,
 * Select [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
- >
- >[Tunnel service](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) allows selection of members and groups existing only in the  publish  environment.
- >
+>
+>[Tunnel service](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) allows selection of members and groups existing only in the  publish  environment.
 
 ![user roles in new site](assets/site-admin-1.png)
 
