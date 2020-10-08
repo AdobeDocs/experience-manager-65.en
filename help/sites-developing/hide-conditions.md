@@ -65,12 +65,12 @@ If a template author chooses to disable the child pages option, a design propert
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. A policy node is created under `/conf/we-retail/settings/wcm/policies/weretail/components/content/lis`t with a property `disableChildren` set to `true`.
-1. The hide condition is defined as the value of a `granite:hid`e property on the dialog property node `/conf/we-retail/settings/wcm/policies/weretail/components/content/list`
+1. A policy node is created under `/conf/we-retail/settings/wcm/policies/weretail/components/content/list` with a property `disableChildren` set to `true`.
+1. The hide condition is defined as the value of a `granite:hide` property on the dialog property node `/apps/core/wcm/components/list/v1/list/cq:dialog/content/items/tabs/items/listSettings/items/column/items/listFrom/items/children`
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. The value of `disableChildren` is pulled from the design configuration and the expression `${cdDesign.disableChildren}` evaluates to `false`, meaning the option will not be rendered as part of the component.
+1. The value of `disableChildren` is pulled from the design configuration and the expression `${cqDesign.disableChildren}` evaluates to `false`, meaning the option will not be rendered as part of the component.
 
    You can view the hide expression as the value of the `granite:hide` property [in GitHub here](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
 
