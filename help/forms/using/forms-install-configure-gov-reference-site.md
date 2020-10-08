@@ -790,7 +790,7 @@ In order to configure them to be enabled within the Workflow users need to perfo
 
 1. Open the service definition and enable the selected services to be invoked within the workflow.
 
->[!NOTE]
+   >[!NOTE]
    >
    >Just because a user enables the service within the Configuration Manager page, users are still required to setup a service configuration in order to communicate with the external services requested.
 

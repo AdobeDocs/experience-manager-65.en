@@ -163,9 +163,8 @@ Under the **Tag field** tab, the tags which may be applied, if allowed under the
   Enter the number of tags to be displayed as a suggestion to the member posting to the forum. Default is **-**1 (no limits).
 
 >[!NOTE]
- >
- >Visit [Administering Tags](/help/sites-administering/tags.md) to learn how to add a new tag namespace (taxonomy).
- >
+>
+>Visit [Administering Tags](/help/sites-administering/tags.md) to learn how to add a new tag namespace (taxonomy).
 
 #### Translation tab {#translation-tab}
 

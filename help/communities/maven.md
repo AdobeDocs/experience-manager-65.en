@@ -49,11 +49,10 @@ Ensure thet the version specified corresponds with the Communities package versi
    * Feature packs will be versions 1.12.xxx.
 
 >[!NOTE]
- >
- >It is recommended to keep up-to-date with the most recent Communities release.
- >
- >Visit the [Latest Releases](deploy-communities.md#latest-releases) section to identify the most recent version.
- >
+>
+>It is recommended to keep up-to-date with the most recent Communities release.
+>
+>Visit the [Latest Releases](deploy-communities.md#latest-releases) section to identify the most recent version.
 
 ## Maven Dependency Example {#maven-dependency-example}
 

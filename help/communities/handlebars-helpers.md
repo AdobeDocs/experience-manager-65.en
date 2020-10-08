@@ -26,9 +26,8 @@ The custom SCF helpers delivered with AEM Communities are defined in the [client
 * `/etc/clientlibs/social/commons/scf/helpers.js`
 
 >[!NOTE]
- >
- >Be sure to install the [latest Communities feature pack](deploy-communities.md#latestfeaturepack).
- >
+>
+>Be sure to install the [latest Communities feature pack](deploy-communities.md#latestfeaturepack).
 
 ## Abbreviate {#abbreviate}
 
@@ -567,11 +566,10 @@ public class FooTextHelper implements TemplateHelper<String>{
 ```
 
 >[!NOTE]
- >
- >A helper created for the server-side must also be created for the client-side.
- >
- >The component gets re-rendered on the client-side for the logged in user, and if the client-side helper is not found, the component disappears.
- >
+>
+>A helper created for the server-side must also be created for the client-side.
+>
+>The component gets re-rendered on the client-side for the logged in user, and if the client-side helper is not found, the component disappears.
 
 ### Client-side Custom Helpers {#client-side-custom-helpers}
 

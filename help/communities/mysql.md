@@ -126,12 +126,11 @@ Follow the steps below ([open](#step-open-sql-file), [execute](#step-execute-sql
 Be sure to install the schema before installing the data.
 
 >[!CAUTION]
- >
- >If the database name is changed, be sure to specify it correctly in:
- >
- >* [JDBC config](#configure-jdbc-connections)
- >* [SCORM config](#configure-scorm)
- >
+>
+>If the database name is changed, be sure to specify it correctly in:
+>
+>* [JDBC config](#configure-jdbc-connections)
+>* [SCORM config](#configure-scorm)
 
 #### Step 1: open SQL file {#step-open-sql-file}
 
