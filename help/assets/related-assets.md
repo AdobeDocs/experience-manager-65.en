@@ -37,8 +37,6 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
     * To relate a derived file, select **[!UICONTROL Derived]** from the list.
     * To create a two-way relationship between the assets, select **[!UICONTROL Others]** from the list.
 
-   ![chlimage_1-276](assets/chlimage_1-276.png)
-
 1. From the **[!UICONTROL Select Asset]** screen, navigate to the location of the asset you want to relate, and select it.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
@@ -48,9 +46,7 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. To un-relate an asset, click **[!UICONTROL Unrelate]** from the toolbar.
-
-   ![unrelate assets](assets/do-not-localize/link-unrelate-icon.png)
+1. To un-relate an asset, click **[!UICONTROL Unrelate]** ![unrelate assets](assets/do-not-localize/link-unrelate-icon.png) from the toolbar.
 
 1. Select the asset(s) you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click **[!UICONTROL Unrelate]**.
 
@@ -74,8 +70,6 @@ If the source file is related to another asset, [!DNL Experience Manager Assets]
 
 1. From the [!UICONTROL Projects] page, open the translation folder.
 
-   ![chlimage_1-283](assets/chlimage_1-283.png)
-
 1. Click the project tile to open the details page.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
@@ -90,8 +84,4 @@ If the source file is related to another asset, [!DNL Experience Manager Assets]
 
 1. To verify whether the assets related to the source have been translated, click the source asset.
 
-   ![chlimage_1-287](assets/chlimage_1-287.png)
-
 1. Select the asset that is related to the source, and then click **[!UICONTROL Reveal in Assets]**. The translated related asset is displayed.
-
-   ![chlimage_1-288](assets/chlimage_1-288.png)
