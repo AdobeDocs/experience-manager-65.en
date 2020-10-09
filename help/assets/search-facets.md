@@ -34,19 +34,13 @@ For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Use
    >1. From the path */libs/settings/dam/search/facets/assets/jcr:content/items*, copy the nodes **asset, directory, typeor, excludepaths**, and **searchtype** to the path mentioned on step 1.
    >1. Save the changes.
 
-1. In the Edit Search Forms page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. For example, drag **[!UICONTROL Property Predicate]**.
+1. In the [!UICONTROL Edit Search Forms] page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. For example, drag **[!UICONTROL Property Predicate]**.
 
    ![Press and move a predicate to customize the search filters](assets/drag_predicate.png)
 
    *Figure: Press and move a predicate to customize the search filters.*
 
-1. In the Settings tab, enter a field label, placeholder text, and description for the predicate. Specify a valid name for the metadata property you want to associate with the predicate.
-
-   The header label in the Settings tab identifies the type of the selected predicate.
-
-   ![Use the Settings tab to provide the required options of a predicate](assets/settings.png)
-
-   Use the Settings tab to provide the required options of a predicate
+1. In the [!UICONTROL Settings] tab, enter a field label, placeholder text, and description for the predicate. Specify a valid name for the metadata property you want to associate with the predicate. The header label in the [!UICONTROL Settings] tab identifies the type of the selected predicate.
 
 1. In the **[!UICONTROL Property Name]** field, specify a valid name for the metadata property you want to associate with the predicate. It is the name based on which the search is performed. For example, enter `jcr:content/metadata/dc:description` or `./jcr:content/metadata/dc:description`.
 
@@ -146,17 +140,9 @@ The Tag predicate allows you to perform tag-based searches for assets. By defaul
 1. Configure the Root tags path property of this predicate to populate various tags in the Tags list.
 1. Select **[!UICONTROL Show match all tags option]** to search for assets that include all tags that you specify.
 
-   ![Typical settings of Tags predicate](assets/tags_predicate.png)
-
-   Typical settings of Tags predicate
-
 1. In the **[!UICONTROL Description]** field, enter an optional description and then click **[!UICONTROL Done]**.
 1. Navigate to the Search panel. The **[!UICONTROL Tags]** predicate is added to the Search panel.
 1. Specify tags based on which you want to search assets or select from the list of suggestions.
-
-   ![Experience Manager-provided suggestion when typing name of tag](assets/tag-suggestion.png)
-
-   *Figure: Experience Manager-provided suggestion when typing name of tag.*
 
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
 
