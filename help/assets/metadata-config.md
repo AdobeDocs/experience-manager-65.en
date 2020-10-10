@@ -44,25 +44,25 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]** and click **[!UICONTROL Create]**.
 1. Enter a title for the profile, for example `Sample Metadata`, and click **[!UICONTROL Create]**. The [!UICONTROL Edit Form] for the metadata profile is displayed.
 
-   ![chlimage_1-197](assets/chlimage_1-480.png)
+   ![Edit a metadata form](assets/metadata-edit-form.png)
 
 1. Click a component and configure its properties in the **[!UICONTROL Settings]** tab. For example, click the **[!UICONTROL Description]** component and edit its properties.
 
-   ![chlimage_1-198](assets/chlimage_1-481.png)
+   ![Setting of a component in metadata profile](assets/metadata-profile-component-setting.png)
 
    Edit the following properties for the **[!UICONTROL Description]** component:
 
     * **[!UICONTROL Field Label]**: The display name of the metadata property. It is only for the user reference.
 
-    * **[!UICONTROL Map to Property]**: The value of this property provides the relative path/name to the asset node where it is saved in the repository. The value should always start with `./` because it indicates that the path is under the asset's node.
+    * **[!UICONTROL Map to Property]**: The value of this property provides the relative path or name to the asset node where it is saved in the repository. The value should always start with `./` because it indicates that the path is under the asset's node.
 
-   ![chlimage_1-199](assets/chlimage_1-482.png)
+   ![Map to property setting in metadata profile](assets/metadata-profile-setting-map-property.png)
 
-   The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset's metadata node. For example, if you specify . `/jcr:content/metadata/dc:desc` as the name of **[!UICONTROL Map to property]**, [!DNL Assets] stores the value `dc:desc` at the asset's metadata node.
+   The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset's metadata node. For example, if you specify `./jcr:content/metadata/dc:desc` as the name of **[!UICONTROL Map to property]**, [!DNL Assets] stores the value `dc:desc` at the asset's metadata node.
 
     * **[!UICONTROL Default Value]**: Use this property to add a default value for the metadata component. For example, if you specify "My description" then this value is assigned to the property `dc:desc` at the asset's metadata node.
 
-   ![chlimage_1-200](assets/chlimage_1-483.png)
+   ![Set default description in metadata profile](assets/metadata-profile-setting-default-value.png)
 
    >[!NOTE]
    >
@@ -79,8 +79,6 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 | [!UICONTROL Date]             | Field Label, <br> Map to property, <br> Default Value                   |
 | [!UICONTROL Standard Tags]    | Field Label, <br> Map to property, <br> Default Value, <br> Description |
 
-   ![chlimage_1-201](assets/chlimage_1-484.png)
-
 1. Click **[!UICONTROL Done]**. The Metadata Profile is added to the list of profiles in the **[!UICONTROL Metadata Profiles]** page.<br>
 
    ![Metadata profile added in Metadata Profiles page](assets/MetadataProfiles-page.png)
@@ -89,7 +87,7 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 
 1. From the **[!UICONTROL Metadata Profiles]** page, select a metadata profile to make a copy of it.
 
-   ![chlimage_1-203](assets/chlimage_1-486.png)
+   ![Copy a metadata profile](assets/metadata-profile-edit-copy-option.png)
 
 1. Click **[!UICONTROL Copy]** from the toolbar.
 1. In the **[!UICONTROL Copy Metadata Profile]** dialog, enter a title for the new copy of the Metadata Profile.
@@ -101,10 +99,11 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 
 1. From the **[!UICONTROL Metadata Profiles]** page, select a profile to delete.
 
-   ![chlimage_1-205](assets/chlimage_1-488.png)
-
 1. Click **[!UICONTROL Delete Metadata Profiles]** in the toolbar.
 1. In the dialog, click **[!UICONTROL Delete]** to confirm the delete operation. The metadata profile is deleted from the list.
+
+<!-- TBD: Revisit to find out the correct config. and update these steps.
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -116,11 +115,12 @@ To apply a metadata profile globally, follow these steps:
 
 * Navigate to `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` and apply the appropriate profile and click **[!UICONTROL Save]**.
 
-  ![chlimage_1-209](assets/chlimage_1-492.png)
+  ![Apply metadata profile to a folder globally](assets/metadata-profile-folder-setting.png)
 
 * In CRXDE Lite, navigate to the following node: `/content/dam/jcr:content`. Add the property `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` and click **[!UICONTROL Save All]**.
 
-  ![chlimage_1-210](assets/chlimage_1-493.png)
+  ![See applied metadata profile to a folder in the JCR in CRXDE](assets/metadata-profile-folder-setting2.png)
+-->
 
 ## Metadata schema for a folder {#folder-metadata-schema}
 
@@ -215,7 +215,7 @@ You can delete folder metadata schema forms from the Folder Metadata Schema Form
 
 You can assign a folder metadata schema to a folder either from the Folder Metadata Schema Forms page or when creating a folder.
 
-If you configure a metadata schema for a folder, the path to the schema form is stored in the `folderMetadataSchema` property of the folder node under .*/jcr:content*.
+If you configure a metadata schema for a folder, the path to the schema form is stored in the `folderMetadataSchema` property of the folder node under `./jcr:content`.
 
 #### Assign to a schema from the Folder Metadata Schema page {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 

@@ -4,7 +4,7 @@ description: Learn about the need of and types of metadata that allows for easie
 contentOwner: AG
 ---
 
-# Why we need metadata {#why-we-need-metadata}
+# Understand metadata concepts {#why-we-need-metadata}
 
 Metadata means data about data. In this regard, data refers to your digital asset, say an image. Metadata is critical for efficient asset management.
 
@@ -88,7 +88,7 @@ Metadata fields defined by Exif are typically technical in nature and are of lim
 
 Other metadata that can be embedded from files include [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], and so on.
 
-## Metadata schemata {#metadata-schemata}
+## Understand metadata schemata {#metadata-schemata}
 
 Metadata schemas are predefined sets of metadata property definitions that can be used in various applications. Properties are always associated with an asset, meaning that the properties are 'about' the resource.
 
@@ -121,7 +121,7 @@ The application-specific metadata includes technical and descriptive metadata. I
 * PDF and PDF/X.
 * Photoshop and psAux - [!DNL Adobe Photoshop].
 
-### Digital Rights Management metadata {#digital-rights-management-metadata}
+### Digital Rights Management (DRM) metadata {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -141,7 +141,7 @@ The application-specific metadata includes technical and descriptive metadata. I
 ### Print-specific metadata {#print-specific-metadata}
 
 * PDF and PDF/X - Adobe PDF and third-party applications.
-* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.prismstandard.org).
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP metadata for paged text.
 
@@ -236,18 +236,18 @@ The XMP standard is designed to be extensible, allowing you to add custom types 
 >
 >XMP generally does not allow binary data types to be embedded. To carry binary data in XMP, for example, thumbnail images, they must be encoded in an XML-friendly format such as `Base64`.
 
-### XMP Core Concepts {#xmp-core-concepts}
+### XMP concepts {#xmp-core-concepts}
 
 The following sections describe the core concepts of XMP, including namespaces and schemata, properties and values, and language alternatives.
 
-#### Namespaces and Schemata {#namespaces-and-schemata}
+#### Namespaces and schemata {#namespaces-and-schemata}
 
 An XMP schema is a set of property names in a common XML namespace that includes
 the data type and descriptive information. An XMP schema is identified by its XML namespace URI. Using namespaces prevents conflicts between properties in different schemas that have the same name but a different meaning.
 
 For example, the `Creator` property in two independently designed schemas might mean the person who created the asset or it could mean the application that created the asset (for example, Adobe Photoshop).
 
-#### Properties and Values {#properties-and-values}
+#### Properties and values {#properties-and-values}
 
 XMP may include properties from one or more of the schemas. For example, a typical subset used by many Adobe applications might include the following:
 
@@ -256,7 +256,7 @@ XMP may include properties from one or more of the schemas. For example, a typic
 * XMP rights management schema: `xmpRights:WebStatement`, `xmpRights:Marked`.
 * XMP media management schema: `xmpMM:DocumentID`.
 
-#### Language Alternatives {#language-alternatives}
+#### Language alternatives {#language-alternatives}
 
 XMP lets you add an `xml:lang` property to text properties to specify the language of the text.
 

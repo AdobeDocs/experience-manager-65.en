@@ -14,13 +14,23 @@ contentOwner: AG
 
 [!DNL Adobe Experience Manager Assets] keeps metadata for every asset. It allows easier categorization and organization of assets and it helps people who are looking for a specific asset. With the ability to extract metadata from files uploaded to [!DNL Experience Manager Assets], metadata management integrates with the creative workflow. With the ability to keep and manage metadata with your assets, you can automatically organize and process assets based on their metadata.
 
-## How to edit or add metadata {#how-to-edit-or-add-metadata}
+## Metadata and its origin {#how-to-edit-or-add-metadata}
 
-Metadata is additional information about the asset that can be searched. It is automatically extracted when you upload an image. You can edit the existing metadata or add new metadata properties to existing field, for example, when a metadata field is blank.
+Metadata is additional information about the asset that can be searched. It is added to assets and in [!DNL Experience Manager] it is processed when you upload an asset. You can edit the existing metadata, add new metadata properties to existing fields. Organizations need controlled and reliable metadata vocabularies. Hence [!DNL Experience Manager Assets] does not allow for on-demand adding of new metadata properties. Only administrators and developers can add new properties or fields that hold metadata. Users can populate the existing fields with metadata.
 
-Organizations need controlled and reliable metadata vocabularies. Hence [!DNL Experience Manager Assets] does not allow for on-demand adding of new metadata properties. Developers and not authors can add new metadata fields for assets. See [create metadata property for assets](metadata-config.md#metadata-schema).
+The following methods can be used to add metadata to digital assets:
 
-To edit the metadata of an asset, follow these steps:
+* To begin with, the native applications that create assets add some metadata to it. For example, [Acrobat adds some metadata](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) to PDF files or a camera adds some basic metadata to the photographs. When generating assets, you can add the metadata in native applications itself. For example, you can [add IPTC metadata in Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
+
+* Before uploading an asset to [!DNL Experience Manager], you can edit and modify metadata using either the native application used to create an asset or using some other metadata editing application. When you upload an asset to Experience Manager, the metadata is processed. For example, see how to [work with metadata in [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) and see the [tags panel for [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
+
+* In [!DNL Experience Manager Assets], you can manually add or edit metadata of assets in the [!UICONTROL Properties] page.
+
+* You can leverage [metadata profiles](/help/assets/metadata-config.md#metadata-profiles) functionality of [!DNL Experience Manager Assets] to automatically add metadata when assets are uploaded to DAM.
+
+## Add or edit metadata in [!DNL Experience Manager Assets] {#add-edit-metadata}
+
+To edit the metadata of an asset in [!DNL Assets] user interface, follow these steps:
 
 1. Do one of the following:
 
@@ -81,11 +91,9 @@ To customize the metadata properties page, including adding, modifying, deleting
    >
    >For single-value fields, the new metadata is not appended to the existing value in the field even if you select **[!UICONTROL Append mode]**.
 
-## Import and export asset metadata in bulk {#import-and-export-asset-metadata-in-bulk}
+## Import metadata {#import-metadata}
 
-[!DNL Adobe Experience Manager Assets] lets you import asset metadata in bulk using a CSV file. You can do bulk updates for the recently uploaded assets or the existing assets by importing a CSV file. You can also ingest asset metadata in bulk from third-party system in CSV format.
-
-### Import metadata {#import-metadata}
+[!DNL Assets] lets you import asset metadata in bulk using a CSV file. You can do bulk updates for the recently uploaded assets or the existing assets by importing a CSV file. You can also ingest asset metadata in bulk from third-party system in CSV format.
 
 The metadata import is asynchronous and does not impede system performance. Simultaneous update of the metadata for multiple assets can be resource-intensive because of XMP writeback activity if workflow flag is checked. Plan such an import during lean server usage so that performance for other users is not impacted.
 
@@ -116,7 +124,7 @@ To add date and timestamp when importing metadata, use `YYYY-MM-DDThh:mm:ss.fff-
 >
 >If the date format does not match `YYYY-MM-DDThh:mm:ss.fff-00:00`, the date values are not set. The date formats of exported metadata CSV file is in the format `YYYY-MM-DDThh:mm:ss-00:00`. If you want to import it, convert it to the acceptable format by adding the nanoseconds value denoted by `fff`.
 
-### Export metadata {#export-metadata}
+## Export metadata {#export-metadata}
 
 You can export metadata for multiple assets in a CSV format. The metadata is exported asynchronously and does not impact the performance of the system. To export metadata, [!DNL Experience Manager] traverses through the properties of the asset node `jcr:content/metadata` and its child nodes and exports the metadata properties in a CSV file.
 
@@ -145,7 +153,7 @@ A few use cases for exporting metadata in bulk are:
 
    *Figure: Dialog to download the CSV file containing metadata exported in bulk.*
 
-## Edit metadata of Collections {#collections-metadata}
+## Edit metadata of collections {#collections-metadata}
 
 For details, see [view and edit collection metadata](/help/assets/managing-collections-touch-ui.md#view-edit-collection-metadata) and [edit metadata of multiple collections in bulk](/help/assets/managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
 
@@ -160,7 +168,7 @@ If you assigned a different metadata profile to a folder, the new profile overri
 
 Folders that have a profile assigned to it are indicated in the user interface by the name of the profile appearing in the card name.
 
-![chlimage_1-206](assets/chlimage_1-489.png)
+![Card view displays the metadata profile applied to a folder](assets/metadata-profile-card-view-display.png)
 
 You can apply metadata profiles to specific folders or globally to all assets.
 
@@ -178,9 +186,6 @@ Follow the steps to apply metadata profile:
 
 1. Click the [!DNL Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
 1. Select the metadata profile that you want to apply to a folder or multiple folders.
-
-   ![chlimage_1-207](assets/chlimage_1-490.png)
-
 1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and click **[!UICONTROL Done]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
 ### Apply metadata profiles to folders from Properties {#applying-metadata-profiles-to-folders-from-properties}
@@ -188,11 +193,9 @@ Follow the steps to apply metadata profile:
 1. In the left rail, click **[!UICONTROL Assets]** then navigate to the folder that you want to apply a metadata profile to.
 1. On the folder, click the check mark to select it and then click **[!UICONTROL Properties]**.  
 
-1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and click **[!UICONTROL Save]**.
+1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the popup menu and click **[!UICONTROL Save]**.
 
-   ![chlimage_1-208](assets/chlimage_1-491.png)
-
-   Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
 ### Apply metadata profile globally {#metadata-profile-global}
 
@@ -221,7 +224,9 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 ## Tips and limitations {#best-practices-limitations}
 
 * The metadata updates via user interface changes the metadata properties in the `dc` namespace. Any updates made via the HTTP API changes the metadata properties in the `jcr` namespace. See [how to update metadata using HTTP API](/help/assets/mac-api-assets.md#update-asset-metadata).
+
 * The CSV file for importing assets metadata is in a very specific format. To save effort and time and to avoid unintended errors, you can start creating the CSV using the format of an exported CSV file.
+
 * When importing metadata using a CSV file, the required date date format is `YYYY-MM-DDThh:mm:ss.fff-00:00`. If any other format is used, then the date values are not set. The date formats of exported metadata CSV file is in the format `YYYY-MM-DDThh:mm:ss-00:00`. If you want to import it, convert it to the acceptable format by adding the nanoseconds value denoted by `fff`.
 
 >[!MORELIKETHIS]
@@ -232,17 +237,45 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 
+## Where to find metadata of an asset or folder {#find-metadata}
+
+What all methods to access asset Properties. More Details option in column view. Select asset and click Properties. Keyboard shortcut `p`. What else?
+
 ## Understand metadata handling in Experience Manager {#metadata-possibilities-with-aem}
 
 Describe the journey of an assets' metadata. What all happens to metadata when an asset is added to Experience Manager.
 
 ## Add metadata to your digital assets {#add-metadata}
 
-Typically, the applications that create digital assets add some metadata to the assets created. Before uploading an asset to Experience Manager, you can edit and modify metadata using either the native application used to create an asset or using some metadata editors. When you upload an asset to Experience Manager, the metadata is processed.
+* To begin with, assets come with some metadata. The applications that create digital assets add some metadata to the assets created. Before uploading an asset to Experience Manager, you can edit and modify metadata using either the native application used to create an asset or using some other metadata editing application. When you upload an asset to Experience Manager, the metadata is processed.
+
+* Link to PS, ID, AI, PDF, etc. metadata-related help articles.
+
+* Link to XMP writeback.
+
+* Manually add (or edit) metadata in AEM in Properties page.
+
+* Metadata profiles
+
+* Any workflows related to metadata?
+
+* Advanced topic: Add, edit, modify, process and writeback metadata of subassets.
 
 ## Metadata of assets, folders, and collections {#metadata-of-assets-folders-collections}
 
+Similarities and differences between metadata of asset and folder. 
+
+Link to metadata handling of collections.
+
 ## Modify metadata of an asset, folder, or collection {#modify-metadata}
+
+* While creating assets: Native application.
+
+* Before ingesting assets: Metadata editors
+
+* After ingesting assets: Properties of an asset, folder, collection, etc.
+
+* Any supported programmatic method to bulk edit metadata directly in JCR?
 
 ## Modify metadata in bulk {#modify-metadata-in-bulk}
 
@@ -251,6 +284,7 @@ Typically, the applications that create digital assets add some metadata to the 
 Use the properties page to perform metadata changes on multiple assets or collections:
 
 * Change metadata properties to a common value
+
 * Add or modify tags
 
 To customize the metadata properties page, including adding, modifying, deleting metadata properties, use the schema editor.
@@ -272,7 +306,8 @@ To customize the metadata properties page, including adding, modifying, deleting
 
    >[!NOTE]
    >
-   >* In the properties page, you can remove assets from the asset list by deselecting them. The asset list has all the assets selected by default. The metadata for assets that you remove from the list is not updated.
+   >* In the Properties page, you can remove assets from the asset list by deselecting them. The asset list has all the assets selected by default. The metadata for assets that you remove from the list is not updated.
+   >
    >* At the top of assets list, select the check box near **[!UICONTROL Title]** to toggle between selecting the assets and clearing the list.
 
 1. To select a different metadata schema for the assets, click **[!UICONTROL Settings]** from the toolbar, and select the desired schema.
