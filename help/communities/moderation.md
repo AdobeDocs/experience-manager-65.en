@@ -53,9 +53,8 @@ In the author environment, to reach the Moderation console
 Only when signed in as an administrator, or as a member with [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers), moderation tasks can be performed. The only community content displayed is that which the signed in member is permitted to moderate.
 
 >[!NOTE]
- >
- >UGC from the publish environment will only be visible on author if the chosen SRP implements a common store. For example, by default the storage is JSRP, which is not a common store for author and publish. See [Community Content Storage](/help/communities/working-with-srp.md).
- >
+>
+>UGC from the publish environment will only be visible on author if the chosen SRP implements a common store. For example, by default the storage is JSRP, which is not a common store for author and publish. See [Community Content Storage](/help/communities/working-with-srp.md).
 
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
@@ -102,9 +101,8 @@ The content area contains information for posted UGC:
 * If there is an attachment, a paperclip is displayed.
 
 >[!NOTE]
- > 
- >The content area features an *infinite scroll*, which means that it will allow you to continue scrolling until you have reached the end of the content. The toolbar remains in a fixed, visible position above the content area even while scrolling.
- >
+> 
+>The content area features an *infinite scroll*, which means that it will allow you to continue scrolling until you have reached the end of the content. The toolbar remains in a fixed, visible position above the content area even while scrolling.
 
 ### Filter Rail {#ootbfilters}
 
@@ -119,9 +117,8 @@ For example, if you check both **Question** and **Answer**, you will see content
 However if you check **Question** and **Pending**, you will only see content that is a **Question** and is **Pending**.
 
 >[!NOTE]
- >
- >Community moderators can bookmark the pre-defined filters on moderation console UI. As these filters are appended toward the end of the URL (as query string parameters), moderators can get back to the bookmarked filters later and also share these links.
- >
+>
+>Community moderators can bookmark the pre-defined filters on moderation console UI. As these filters are appended toward the end of the URL (as query string parameters), moderators can get back to the bookmarked filters later and also share these links.
 
 ![searchicon](assets/searchicon.png)
 
@@ -146,11 +143,10 @@ Site limits the referenced UGC displayed to posts to selected community sites. I
 ![site-panel](assets/site-panel.png)
 
 >[!NOTE]
- >
- >When the bulk moderation console is accessed by an administrator, all references to UGC are shown, including sites not created with the [site creation wizard](/help/communities/sites-console.md), such as the Geometrixx samples.
- >
- >When the bulk moderation console is accessed on publish by a trusted community member, then only references to UGC created for community sites the member is authorized to moderate are shown, and may be filtered with the Site filter.
- >
+>
+>When the bulk moderation console is accessed by an administrator, all references to UGC are shown, including sites not created with the [site creation wizard](/help/communities/sites-console.md), such as the Geometrixx samples.
+>
+>When the bulk moderation console is accessed on publish by a trusted community member, then only references to UGC created for community sites the member is authorized to moderate are shown, and may be filtered with the Site filter.
 
 #### Content Type {#content-type}
 
@@ -200,9 +196,8 @@ When that filter is seleted the content of the dashboard will show UGC that matc
 Status limits the referenced UGC displayed to posts of the selected status, which may be one or more of Pending, Approved, Denied, or Closed, as well as Draft or Scheduled for Blog Articles, and Answered or Not Answered for QnA Questions. If none are selected, then all are shown.
 
 >[!NOTE]
- >
- >If only the Not Answered status is selected, then the moderator will see all the content (for all content types) except the answered questions. It is so because the property responsible for the Answered Question does not exist in the case of not-answered questions and other content such as forum topic, blog article, or comments.
- >
+>
+>If only the Not Answered status is selected, then the moderator will see all the content (for all content types) except the answered questions. It is so because the property responsible for the Answered Question does not exist in the case of not-answered questions and other content such as forum topic, blog article, or comments.
 
 ![statuses](assets/statuses.png)
 

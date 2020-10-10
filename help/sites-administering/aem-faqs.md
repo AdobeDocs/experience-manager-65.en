@@ -113,7 +113,7 @@ As a workaround, you can also manually disable the component either via the UI o
 
 #### How to configure Asset Insights with AEM 6.5 instance? {#how-to-configure-asset-insights-with-aem-instance}
 
-To setup and configure Asset Insights for Experience Manager deployed via Adobe Activation (DTM), please refer to [Set up Asset Insights with AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
+To setup and configure Asset Insights for Experience Manager deployed via Adobe Activation (DTM), see how to [Set up Asset Insights with AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 #### How to customize admin consoles? {#how-to-customize-admin-consoles}
 

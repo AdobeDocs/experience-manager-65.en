@@ -16,9 +16,8 @@ discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 Overlay the comment system with a custom version by copying the minimal number of files necessary from `/libs` into `/apps` and modifying them in `/apps`.
 
 >[!CAUTION]
- >
- >The contents of the /libs folder are never edited because any re-install or upgrade may delete or replace the /libs folder while the contents of the /apps folder is left untouched.
- >
+>
+>The contents of the /libs folder are never edited because any re-install or upgrade may delete or replace the /libs folder while the contents of the /apps folder is left untouched.
 
 Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) on an author instance, begin by creating a path in the /apps folder which is identical to the path to the overlaid components in the /libs folder.
 
@@ -70,12 +69,11 @@ Some nodes in the path are folders and some are components.
     * Select **[!UICONTROL Save All]**
 
 >[!NOTE]
- >
- >In order to preserve the inheritance chain, the `Super Type` (property `sling:resourceSuperType`) of the overlay components are set to the same value as the `Super Type` of the components being overlaid, in this case:
- >
- >* `social/commons/components/comments`
- >* `social/commons/components/comments/comment`
- >
+>
+>In order to preserve the inheritance chain, the `Super Type` (property `sling:resourceSuperType`) of the overlay components are set to the same value as the `Super Type` of the components being overlaid, in this case:
+>
+>* `social/commons/components/comments`
+>* `social/commons/components/comments/comment`
 
 The overlay's own `Type`(property `sling:resourceType`) must be a relative self-reference so that any content not found in /apps is then looked for in /libs.
 * Name: `sling:resourceType`

@@ -124,11 +124,10 @@ To add a new configuration, select the plus '**+**' icon next to the service's n
   Use **Message Fields Allowlist**.
 
 >[!CAUTION]
- >
- >Each time a `Messaging Operations Service` configuration is opened for edit, if `allowedAttachmentTypes.name` had been removed, an empty entry is re-added to make the property configurable. A single empty entry effectively disables file attachments.
- >
- >To allow all filename extensions, except for those blocklisted, use the '**-**' icon to (again) remove the single empty entry before clicking **Save**.
- >
+>
+>Each time a `Messaging Operations Service` configuration is opened for edit, if `allowedAttachmentTypes.name` had been removed, an empty entry is re-added to make the property configurable. A single empty entry effectively disables file attachments.
+>
+>To allow all filename extensions, except for those blocklisted, use the '**-**' icon to (again) remove the single empty entry before clicking **Save**.
 
 ## Group Messaging {#group-messaging}
 

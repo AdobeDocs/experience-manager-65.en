@@ -54,9 +54,8 @@ To protect your community site's content from access by anonymous users through 
 1. On AEM Author instance, go to https:// hostname:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
-    >
-    >Do not go to the localized site.
-    >
+   >
+   >Do not go to the localized site.
 
 1. Go to **Page Properties**.
 
@@ -97,12 +96,11 @@ Notice the Calendar page is the home page because the chosen Reference Site Temp
 ![sitetemplate](assets/sitetemplate.png)
 
 >[!NOTE]
- >
- >For more information on Communities components and functions, visit:
- >
- >* [Communities Components](/help/communities/author-communities.md) (for authors)
- >* [Component, Function, and Feature Essentials](/help/communities/essentials.md) (for developers)
- >
+>
+>For more information on Communities components and functions, visit:
+>
+>* [Communities Components](/help/communities/author-communities.md) (for authors)
+>* [Component, Function, and Feature Essentials](/help/communities/essentials.md) (for developers)
 
 ### Forum link {#forum-link}
 

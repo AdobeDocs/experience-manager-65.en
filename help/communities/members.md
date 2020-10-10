@@ -29,9 +29,8 @@ For managing users and groups registered in the *author* environment, is is nece
 * From global navigation, select **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Groups]**.
 
 >[!NOTE]
- >
- >With sample content deployed and enabled, many sample users exist in both the author and publish environments. These users will not be present when running with [nosamplecontent runmode](../../help/sites-administering/production-ready.md).
- >
+>
+>With sample content deployed and enabled, many sample users exist in both the author and publish environments. These users will not be present when running with [nosamplecontent runmode](../../help/sites-administering/production-ready.md).
 
 ## Members Console {#members-console}
 
@@ -40,9 +39,8 @@ In the author environment, to reach the Members console for managing members reg
 * From global navigation, select **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Members]**
 
 >[!CAUTION]
- >
- >It will not be possible to use the Members console if the [tunnel service](deploy-communities.md#tunnel-service-on-author) is not enabled.
- >
+>
+>It will not be possible to use the Members console if the [tunnel service](deploy-communities.md#tunnel-service-on-author) is not enabled.
 
 ![member-console1](assets/member-console1.png)
 
@@ -168,9 +166,8 @@ To access the Groups console:
 * From global navigation, select **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Groups]**.
 
 >[!CAUTION]
- >
- >It will not be possible to use the Groups console if the [tunnel service](deploy-communities.md#tunnel-service-on-author) is not enabled.
- >
+>
+>It will not be possible to use the Groups console if the [tunnel service](deploy-communities.md#tunnel-service-on-author) is not enabled.
 
 ### Create New Group {#create-new-group}
 

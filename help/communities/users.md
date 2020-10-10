@@ -101,9 +101,8 @@ In the publish environment, depending on the [settings](sites-console.md#user-ma
   * By social login with Facebook and Twitter
 
 >[!NOTE]
- >
- >If a site visitor registers as a member of one open community site, they automatically become a member of other open community sites on the same publish environment.
- >
+>
+>If a site visitor registers as a member of one open community site, they automatically become a member of other open community sites on the same publish environment.
 
 ### Publish Group Roles {#publish-group-roles}
 
@@ -142,9 +141,8 @@ The community functions which allow specification of one or more privileged memb
 When a community function is not secured (no privileged members group assigned), then all community site members are allowed to create feature content (articles, events, topics, questions).
 
 >[!NOTE]
- >
- >Adding a user to a privileged members group for a community site will only grant them create privileges if they are also a member of that same community site.
- >
+>
+>Adding a user to a privileged members group for a community site will only grant them create privileges if they are also a member of that same community site.
 
 ## Creating Community Members {#creating-community-members}
 

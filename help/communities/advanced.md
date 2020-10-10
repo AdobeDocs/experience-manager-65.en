@@ -48,9 +48,8 @@ The differences in setting up the scoring and badging rules are:
     * Requires `badgingPaths` array of badges instead of thresholds array mapping points to badges.
 
 >[!NOTE]
- >
- >To use advanced scoring and badging capabilities, install the [Expert Identification package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg).
- >
+>
+>To use advanced scoring and badging capabilities, install the [Expert Identification package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg).
 
 ## Configurable Scoring Engine {#configurable-scoring-engine}
 

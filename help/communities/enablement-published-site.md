@@ -41,10 +41,10 @@ An anonymous site visitor is immediately presented with the login page for this 
 Notice this  home page  shows four menu items: `Assignments, Ski Catalog, What's New` and `Discussions`, but none may be reached without signing in.
 
 >[!NOTE]
- >
- >It is possible to grant anonymous access to an enablement site without allowing site visitors to self-register.
- >If an enablement resource is set to `show in catalog` and `allow anonymous access`, it will be possible for anonymous site visitors to view resources in the catalog.
- >
+>
+>It is possible to grant anonymous access to an enablement site without allowing site visitors to self-register.
+>
+>If an enablement resource is set to `show in catalog` and `allow anonymous access`, it will be possible for anonymous site visitors to view resources in the catalog.
 
 ### Prevent anonymous access on JCR {#prevent-anonymous-access-on-jcr}
 
@@ -55,9 +55,8 @@ To protect your community site's content from access by anonymous users through 
 1. On AEM author instance, go to https://&lt;host&gt;:&lt;port&gt;/editor.html/content/site/&lt;sitename&gt;.html.
 
    >[!NOTE]
-    >
-    >Do not go to the localized site.
-    >
+   >
+   >Do not go to the localized site.
 
 1. Go to **[!UICONTROL Page Properties]**.
 

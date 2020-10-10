@@ -129,9 +129,8 @@ For a custom component, the [SocialEvent abstract class](https://helpx.adobe.com
 The custom event would override the method `getVerb()` so that an appropriate `verb`is returned for each `action`. The `verb` returned for an action may be one commonly used (such as `POST`) or one specialized for the component (such as `ADD RATING`). There is an *n-1* relationship between `actions`and `verbs`.
 
 >[!NOTE]
- >
- >Ensure a custom extension is registered with a ranking lower than any existing implementation in the product.
- >
+>
+>Ensure a custom extension is registered with a ranking lower than any existing implementation in the product.
 
 ### Pseudo-Code for Custom Component Event {#pseudo-code-for-custom-component-event}
 
