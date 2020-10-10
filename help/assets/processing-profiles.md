@@ -17,7 +17,7 @@ A profile is a recipe for what options to apply to assets that get uploaded to a
 
 Those rules can include adding metadata, smart cropping of images, or establishing video encoding profiles. In AEM, you can create three types of profiles, which are covered in detail at the following links:
 
-* [Metadata profiles](/help/assets/metadata-profiles.md)
+* [Metadata profiles](/help/assets/metadata-config.md#metadata-profiles)
 * [Image profiles](/help/assets/image-profiles.md)
 * [Video profiles](/help/assets/video-profiles.md)
 

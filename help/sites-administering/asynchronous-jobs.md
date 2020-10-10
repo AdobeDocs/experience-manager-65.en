@@ -139,5 +139,6 @@ If the number of references to the page(s) to be moved exceeds the threshold num
 >* [Creating and Organizing Pages](/help/sites-authoring/managing-pages.md)
 >* [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md)
 >* [Configure email in Experience Manager](/help/sites-administering/notification.md).
->* [Import and export asset metadata in bulk](/help/assets/metadata-import-export.md).
+>* [Import asset metadata](/help/assets/metadata.md#import-metadata).
+>* [Export asset metadata](/help/assets/metadata.md#export-metadata).
 >* [Use Connected Assets to share DAM assets from remote deployments](/help/assets/use-assets-across-connected-assets-instances.md).
