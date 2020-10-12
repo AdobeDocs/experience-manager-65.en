@@ -50,7 +50,5 @@ JCR is *not* a common store shared by the author and publish environments. Commu
 Visit [JCR Store](jsrp.md) for additional information.
 
 >[!NOTE]
- >
- >The absence of the node `srpc` under `/etc/socialconfig` indicates the default [JCR store](jsrp.md).
- >
-
+>
+>The absence of the node `srpc` under `/etc/socialconfig` indicates the default [JCR store](jsrp.md).

@@ -25,9 +25,8 @@ The Communities Sites console provides access to:
 See [Getting Started with AEM Communities](/help/communities/getting-started.md) to experience how quickly a community site can be created in the author environment, as well as how to create community groups from the author and publish environments.
 
 >[!NOTE]
- >
- >The main Communities menus for the creation of [community sites](/help/communities/sites-console.md), [community site templates](/help/communities/sites.md), [community group templates](/help/communities/tools-groups.md) and [community functions](/help/communities/functions.md) are for use only in the author environment.
- >
+>
+>The main Communities menus for the creation of [community sites](/help/communities/sites-console.md), [community site templates](/help/communities/sites.md), [community group templates](/help/communities/tools-groups.md) and [community functions](/help/communities/functions.md) are for use only in the author environment.
 
 ## Prerequisites {#prerequisites}
 
@@ -163,28 +162,26 @@ The Settings panel contains several sub-panels presenting features to configure 
 * [ENABLEMENT](#enablement)
 
 >[!NOTE]
- >
- >**Enable Tunnel Service**
- >
- >Several of the Settings sub-panels allow assignment of a trusted member to moderate UGC, manage groups, or be contacts for enablement resources in the publish environment.
- >
- >The convention is for publish-side [users and user groups](/help/communities/users.md) (members and member groups) to not be duplicated in the author environment.
- >
- >Thus, when creating the community site in the author environment and assigning trusted members to various roles, it is necessary to retrieve member data from the publish environment.
- >
- >This is accomplished by enabling the ` [AEM Communities Publish Tunnel Service](/help/communities/deploy-communities.md#tunnel-service-on-author)` for the author environment.
- >
+>
+>**Enable Tunnel Service**
+>
+>Several of the Settings sub-panels allow assignment of a trusted member to moderate UGC, manage groups, or be contacts for enablement resources in the publish environment.
+>
+>The convention is for publish-side [users and user groups](/help/communities/users.md) (members and member groups) to not be duplicated in the author environment.
+>
+>Thus, when creating the community site in the author environment and assigning trusted members to various roles, it is necessary to retrieve member data from the publish environment.
+>
+>This is accomplished by enabling the ` [AEM Communities Publish Tunnel Service](/help/communities/deploy-communities.md#tunnel-service-on-author)` for the author environment.
 
 #### USER MANAGEMENT {#user-management}
 
 ![createsitesettings](assets/createsitesettings.png)
 
 >[!NOTE]
- >
- >It is recommended that [enablement community sites](/help/communities/overview.md#enablement-community) be private (contact your account representative for more information).
- >
- >A community site is private when anonymous site visitors are denied access, may not self-register, and may not use social login.
- >
+>
+>It is recommended that [enablement community sites](/help/communities/overview.md#enablement-community) be private (contact your account representative for more information).
+>
+>A community site is private when anonymous site visitors are denied access, may not self-register, and may not use social login.
 
 * **Allow User Registration**
   
@@ -217,11 +214,10 @@ The Settings panel contains several sub-panels presenting features to configure 
   Leave unchecked for a *private* community site. Default is unchecked.
 
 >[!NOTE]
- >
- >**Allowing Social Logins**
- >
- >While sample Facebook and Twitter configurations may exist and be selectable, for a [production environment](/help/sites-administering/production-ready.md), it is necessary to create custom Facebook and Twitter applications. See [Social Login with Facebook and Twitter](/help/communities/social-login.md).
- >
+>
+>**Allowing Social Logins**
+>
+>While sample Facebook and Twitter configurations may exist and be selectable, for a [production environment](/help/sites-administering/production-ready.md), it is necessary to create custom Facebook and Twitter applications. See [Social Login with Facebook and Twitter](/help/communities/social-login.md).
 
 #### TAGGING {#tagging}
 
@@ -396,9 +392,8 @@ The content of a site may be authored with the same tools as any other AEM websi
 ![site-content](assets/site-content.png)
 
 >[!NOTE]
- >
- >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
- >
+>
+>If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
 
 ## Modifying Site Properties {#modifying-site-properties}
 
@@ -443,23 +438,20 @@ The STRUCTURE panel allows the modification of the structure initially created f
     Modifiy the order of functions as displayed in the site's top level navigation bar.
 
 >[!NOTE]
- >
- >You can change the order of all the functions in the Site Structure except for the function at the top. Therefore, the home page of communities site cannot be changed.
- >
+>
+>You can change the order of all the functions in the Site Structure except for the function at the top. Therefore, the home page of communities site cannot be changed.
 
 >[!CAUTION]
- >
- >* While the display title may be changed without side-effects, it is not recommended to edit the URL name of a community function belonging to a community site.
- >
- >For example, renaming the URL will not move existing UGC, thus having the effect of 'losing' UGC.
- >
+>
+>* While the display title may be changed without side-effects, it is not recommended to edit the URL name of a community function belonging to a community site.
+>
+>For example, renaming the URL will not move existing UGC, thus having the effect of 'losing' UGC.
 
 >[!CAUTION]
- >
- >The groups function must *not* be the *first nor the only* function in the site structure.
- >
- >Any other function, such as the [page function](/help/communities/functions.md#page-function), must be included and listed first.
- >
+>
+>The groups function must *not* be the *first nor the only* function in the site structure.
+>
+>Any other function, such as the [page function](/help/communities/functions.md#page-function), must be included and listed first.
 
 #### Example : Adding a Catalog Function to a Community Site Structure {#example-adding-a-catalog-function-to-a-community-site-structure}
 
@@ -539,13 +531,12 @@ Notice that any members assigned roles as moderators or group administrators whi
 For details, see [Managing Users and User Groups](/help/communities/users.md).
 
 >[!NOTE]
- >
- >If [Allow Social Login: Facebook](#user-management) is enabled, once the user group
- >
- >* `community-<site-name>-<uid>-members`
- >
- >is created, the applied [Facebook cloud service](/help/communities/social-login.md#createafacebookcloudservice) should be configured to add users to this group.
- >
+>
+>If [Allow Social Login: Facebook](#user-management) is enabled, once the user group
+>
+>* `community-<site-name>-<uid>-members`
+>
+>is created, the applied [Facebook cloud service](/help/communities/social-login.md#createafacebookcloudservice) should be configured to add users to this group.
 
 ## Configure for Authentication Error {#configure-for-authentication-error}
 

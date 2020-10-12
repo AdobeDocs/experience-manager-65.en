@@ -18,9 +18,8 @@ The `Reviews` component is a composite of [Comments](comments.md) and [Rating](r
 The `Reviews Summary (Display)` component provides a summary of an active or closed instance of a `Reviews` component for display elsewhere on the site.
 
 >[!NOTE]
- >
- >Anonymous posting of a review is not supported. Site visitors must register (become a member) and sign in to participate. The signed in visitor may update their review at any time.
- >
+>
+>Anonymous posting of a review is not supported. Site visitors must register (become a member) and sign in to participate. The signed in visitor may update their review at any time.
 
 ## Adding a Review to a Page {#adding-a-review-to-a-page}
 
@@ -65,9 +64,8 @@ On the website, required ratings are marked with an asterisk. If an item is requ
   Click **[!UICONTROL Add Item]** to add another response choice.
 
 >[!NOTE]
- >
- >If an item is entered on the **[!UICONTROL Required Ratings]** tab that is not specified on the **[!UICONTROL Allowed Ratings]** tab, then it is not included in the items to rate.
- >
+>
+>If an item is entered on the **[!UICONTROL Required Ratings]** tab that is not specified on the **[!UICONTROL Allowed Ratings]** tab, then it is not included in the items to rate.
 
 Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
@@ -160,9 +158,8 @@ When the [required client-side libraries](reviews-basics.md#essentials-for-clien
 ![review-summary](assets/configure-review5.png)
 
 >[!NOTE]
- >
- >The "Average" reflects the votes for the first item listed on the Allowed Ratings tabs of the review being summarized.
- >
+>
+>The "Average" reflects the votes for the first item listed on the Allowed Ratings tabs of the review being summarized.
 
 ### Configuring Reviews Summary (Display) {#configuring-reviews-summary-display}
 

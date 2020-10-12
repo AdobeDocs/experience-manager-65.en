@@ -166,9 +166,8 @@ Under the **Settings** tab, specify settings for topics and replies:
   Specify the alowed pattern string to tag (@mention) the registered user in a post. For example `~{{familyName}}{{givenName}}`.
 
 >[!NOTE]
- >
- >It may be necessary to check both `AllowThreaded Replies` and `Allow users to Delete Comments and Topics` to enable comments on a topic.
- >
+>
+>It may be necessary to check both `AllowThreaded Replies` and `Allow users to Delete Comments and Topics` to enable comments on a topic.
 
 #### User Moderation tab {#user-moderation-tab}
 

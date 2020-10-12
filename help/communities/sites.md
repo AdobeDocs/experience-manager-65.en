@@ -16,9 +16,8 @@ discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 The Site Templates console is very similar to the [Group Templates](tools-groups.md) console, which is focused on functions of interest to Community groups.
 
 >[!NOTE]
- >
- >The consoles for the creation of [community sites](sites-console.md), [community site templates](sites.md), [community group templates](tools-groups.md) and [community functions](functions.md) are for use only in the author environment.
- >
+>
+>The consoles for the creation of [community sites](sites-console.md), [community site templates](sites.md), [community group templates](tools-groups.md) and [community functions](functions.md) are for use only in the author environment.
 
 ## Site Templates Console {#site-templates-console}
 
@@ -73,11 +72,10 @@ Continue dragging and dropping any other community functions desired for a commu
 The page function provides an empty page. The groups function provides the ability to create a group site (sub-community) within the community site.
 
 >[!CAUTION]
- >
- >The groups function must *not* be the *first nor the only* function in the site structure.
- >
- >Any other function, such as the [page function](functions.md#page-function), must be included and listed first.
- >
+>
+>The groups function must *not* be the *first nor the only* function in the site structure.
+>
+>Any other function, such as the [page function](functions.md#page-function), must be included and listed first.
 
 ![site-editor](assets/site-editor.png)
 
@@ -86,9 +84,8 @@ The page function provides an empty page. The groups function provides the abili
 When including a groups function in the site template, the configuration requires the specification of the group template choices allowed when a new group is created in the publish environment.
 
 >[!CAUTION]
- >
- >The Groups function must *not* be the *first nor the only* function in the site structure.
- >
+>
+>The Groups function must *not* be the *first nor the only* function in the site structure.
 
 ![site-functions](assets/site-functions.png)
 

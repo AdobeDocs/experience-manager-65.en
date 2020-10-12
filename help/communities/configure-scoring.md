@@ -214,16 +214,17 @@ The screen shots of repository data come from setting up scoring and badging for
    ![moderator](assets/moderator.png)
 
 >[!NOTE]
- >
- >This example does not follow these best practices:
- >
- >* Scoring rule names should be globally unique; they should not end with the same name.
- >  An example of what *not* to do:
- >  /libs/settings/community/scoring/rules/site1/forums-scoring
- >  /libs/settings/community/scoring/rules/site2/forums-scoring
- >
- >* Creating unique badge images for different AEM sites
- >
+>
+>This example does not follow these best practices:
+>
+>* Scoring rule names should be globally unique; they should not end with the same name.
+>
+>  An example of what *not* to do:
+>
+>  /libs/settings/community/scoring/rules/site1/forums-scoring
+>  /libs/settings/community/scoring/rules/site2/forums-scoring
+>
+>* Creating unique badge images for different AEM sites
 
 ### Access Scoring UGC {#access-scoring-ugc}
 

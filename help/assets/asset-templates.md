@@ -43,17 +43,11 @@ Consider a scenario where you want to create digital printable collateral, such 
    ![chlimage_1-102](assets/chlimage_1-307.png)
 
 1. Have one or more INDD templates uploaded to and available in [!DNL Experience Manager] in advance. Choose a template for your brochure, and click **[!UICONTROL Next]**.
-
-   ![chlimage_1-103](assets/chlimage_1-308.png)
-
 1. Specify a name and an optional description for the brochure.
 
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
 1. (Optional) Click **[!UICONTROL Tags]** and select one or more tags for the brochure. Click **[!UICONTROL Confirm]** to confirm your selection.
-
-   ![chlimage_1-105](assets/chlimage_1-310.png)
-
 1. Click **[!UICONTROL Create]**. A dialog confirms that a new brochure is created. Click **[!UICONTROL Open]** to open the brochure in edit mode.
 
    <!--![chlimage_1-106](assets/.png) -->
@@ -85,8 +79,6 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    The editable are displayed on the right. For a field to be editable in [!DNL Experience Manager Assets], corresponding field in the template must be tagged in [!DNL InDesign]. In other words, they should be marked as editable in [!DNL InDesign].
 
-   ![chlimage_1-110](assets/chlimage_1-315.png)
-
    >[!NOTE]
    >
    >Ensure that your [!DNL Experience Manager] deployment is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. For details, see [integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md).
@@ -99,11 +91,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
 1. Click **[!UICONTROL Preview]** to preview the text changes.
 
-   ![view changes](assets/view-changes.png)
-
-1. To swap an image, click the **[!UICONTROL Asset Finder]**.
-
-   ![chlimage_1-113](assets/chlimage_1-318.png)
+1. To swap an image, click the **[!UICONTROL Asset Finder]** ![chlimage_1-113](assets/chlimage_1-318.png).
 
 1. Select the image field from the list of editable fields and then drag a desired image from the asset picker to the editable field.
 
@@ -114,12 +102,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
    ![chlimage_1-115](assets/chlimage_1-320.png)
 
 1. Click **[!UICONTROL Preview]** to preview the image.
-
-   ![view changes](assets/view-changes.png)
-
 1. To edit a specific page in a multi-page collateral, use the page navigator at the bottom.
-
-   ![page navigator](assets/page-navigator.png)
 
 1. Click **[!UICONTROL Preview]** on the toolbar to preview all the changes. Click **[!UICONTROL Done]** to save the editing changes to the collateral.
 
@@ -166,11 +149,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    You can browse through the [!DNL Experience Manager Assets] repository or collections, and navigate to the location of the desired templates and then select them to merge.
 
-   ![chlimage_1-124](assets/chlimage_1-329.png)
-
    You can apply various filters to search the desired templates. For example, you can search for templates based on file type or tags.
-
-   ![chlimage_1-125](assets/chlimage_1-330.png)
 
 1. Click **[!UICONTROL Next]** from the toolbar.
 1. In the **[!UICONTROL Preview & Reorder]** screen, rearrange the templates if required and preview the selection of templates to merge. Then, click **[!UICONTROL Next]** from the toolbar.

@@ -536,7 +536,7 @@ Perform the following steps to configure the certificates:
 
    >[!NOTE]
    >
-      >* In the production environment, replace your evaluation credentials with production credentials. Ensure that you delete your old Reader Extensions credentials, before updating an expired or evaluations credential.
+   >In the production environment, replace your evaluation credentials with production credentials. Ensure that you delete your old Reader Extensions credentials, before updating an expired or evaluations credential.
 
 1. Click **[!UICONTROL Save & Close]** on the **[!UICONTROL Edit User Settings]** page.
 

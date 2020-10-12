@@ -24,9 +24,8 @@ All SCF components are implemented using the SRP API, allowing code to be develo
 ***The SocialResourceProvider API is available only to licensed customers of AEM Communities.***
 
 >[!NOTE]
- >
- >**Custom Components**: For licensed customers of AEM Communities, the SRP API is available to developers of custom components for the purpose of accessing UGC without regard to the underlying topology. See [SRP and UGC Essentials](srp-and-ugc.md).
- >
+>
+>**Custom Components**: For licensed customers of AEM Communities, the SRP API is available to developers of custom components for the purpose of accessing UGC without regard to the underlying topology. See [SRP and UGC Essentials](srp-and-ugc.md).
 
 See also:
 
@@ -59,11 +58,10 @@ For purposes of management and reporting, it is useful to have access to UGC fro
 When UGC is saved to shared storage, there is a single instance of member content that may, in most deployments, be accessed from both the author and publish environments. Regardless of SRP choice (MSRP, ASRP, JSRP), all must be accessed programmatically with the SRP API.
 
 >[!NOTE]
- >
- >See [SRP and UGC Essentials](srp-and-ugc.md) for sample code and additional details.
- >
- >See [Accessing UGC with SRP](accessing-ugc-with-srp.md) for best practices when coding.
- >
+>
+>See [SRP and UGC Essentials](srp-and-ugc.md) for sample code and additional details.
+>
+>See [Accessing UGC with SRP](accessing-ugc-with-srp.md) for best practices when coding.
 
 ### ASRP {#asrp}
 
@@ -123,9 +121,8 @@ Some Communities components are includable within a script and thus require a Sl
 Shadow nodes provide a Sling addressable location in the repository.
 
 >[!CAUTION]
- >
- >As the shadow node has multiple uses, the presence of a shadow node does *not* imply that the component is a NER.
- >
+>
+>As the shadow node has multiple uses, the presence of a shadow node does *not* imply that the component is a NER.
 
 ### Storage Location {#storage-location}
 
