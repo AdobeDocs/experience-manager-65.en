@@ -131,7 +131,7 @@ The required options can be selected in **Page Properties** of the required fold
 
    ![Folder - Cloud Services](assets/xf-target-integration-01.png "Folder - Cloud Services")
 
-2. **Save & Close**.
+1. **Save & Close**.
 
 ## Exporting an Experience Fragment to Adobe Target {#exporting-an-experience-fragment-to-adobe-target}
 
