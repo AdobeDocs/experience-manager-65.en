@@ -19,7 +19,7 @@ When uploading images, you can automatically crop the image upon upload by apply
 
 >[!IMPORTANT]
 >
->Image profiles are not applicable to PDF, GIF, or INDD (Adobe InDesign) files.
+>Image profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
 
 ## Crop options {#crop-options}
 
