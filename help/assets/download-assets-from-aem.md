@@ -24,7 +24,7 @@ To download assets, follow these steps:
 
    ![Available options when downloading assets from Experience Manager Assets](/help/assets/assets/asset-download1.png)
 
-   *Figure: Download dialog box options.*
+   *Figure: Options available in the download dialog.*
 
 1. In the Download dialog box, select the download options you want.
 
@@ -66,6 +66,7 @@ The `Asset Download Servlet` can be disabled on an [!DNL Experience Manager] Pub
 
 >[!MORELIKETHIS]
 >
+>* [Download assets using Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [Download DRM protected assets](drm.md).
 >* [Download assets using Experience Manager desktop app on Win or Mac desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets).
 >* [Download assets using Adobe Assets Link from within the supported Adobe Creative Cloud apps](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html).
