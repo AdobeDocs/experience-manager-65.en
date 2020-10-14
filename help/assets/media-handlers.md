@@ -439,7 +439,7 @@ The following conversions can be automatically run and stored within [!DNL Asset
 
 * EPS and AI transformation using [ImageMagick](https://www.imagemagick.org/script/index.php) and [Ghostscript](https://www.ghostscript.com/).
 * FLV video transcoding using [FFmpeg](https://ffmpeg.org/).
-* MP3 encoding using [LAME](http://lame.sourceforge.net/).
+* MP3 encoding using [LAME](https://lame.sourceforge.io/).
 * Audio processing using [SOX](http://sox.sourceforge.net/).
 
 >[!NOTE]

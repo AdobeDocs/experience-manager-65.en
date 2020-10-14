@@ -106,8 +106,7 @@ Create the *component* that defines the content and renders any pages created ba
 1. Verify that the path to the component and the resourceType for the template match.
 
    >[!CAUTION]
-    >
-    >The correspondence between the path to the playpage component and the sling:resourceType property of the playpage template is crucial to the correct functioning of the website.
-    >
+   >
+   >The correspondence between the path to the playpage component and the sling:resourceType property of the playpage template is crucial to the correct functioning of the website.
 
    ![verify-template-component](assets/verify-template-component.png)

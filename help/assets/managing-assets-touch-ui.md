@@ -439,7 +439,14 @@ The other properties and metadata information is retained. A partial copy is not
    >
    >The **[!UICONTROL Paste]** option is available in the toolbar until the paste operation is completed.
 
-### Move or rename assets {#moving-or-renaming-assets}
+## Move and rename assets {#moving-or-renaming-assets}
+
+When you move assets (or folders) to another location, then the assets (or folders) are not duplicated unlike while copying the asset. The assets (or the folders) get placed at the target location and are removed from the source location. You can also rename the asset when moving it to the new location.
+If you are moving a published asset to a different location, then you have an option to republish the asset. By default move operation on a published asset automatically unpublishes it. A moved asset is republished if author selects the [!UICONTROL Republish] option when moving the asset.
+
+![You can republish an already published asset when moving it](assets/republish-on-move.png)
+
+To move assets or folders:
 
 1. Navigate to the location of the asset you want to move.
 
@@ -476,15 +483,20 @@ The other properties and metadata information is retained. A partial copy is not
 
    If you do not update references, they continue to point to the previous path of the asset. If you adjust the references, they are updated to the new asset path.
 
+### Move assets using drag operation {#move-using-drag}
+
+You can move assets (or folders) to a sibling folder by dragging them to the target location, instead of using [!UICONTROL Move] option in the user interface. However, this operation is possible only in the list view.
+
+Moving assets by dragging them does not open [!UICONTROL Move Asset] wizard, therefore you do not get the option to rename the assets while moving. Moreover, the already published assets are republished on moving them by dragging, without seeking user's approval to republish.
+
+![Move assets into sibling folders by dragging assets](assets/move-by-drag.gif)
+
 ## Manage renditions {#managing-renditions}
 
 1. You can add or remove renditions for an asset, except the original. Navigate to the location of the asset for which you want to add or remove renditions.
 
 1. Click the asset to open its page.
 1. In the Experience Manager interface, select **[!UICONTROL Renditions]** from the list.
-
-   ![Left rail to open menu and select Renditions option](assets/renditions_menu.png)
-
 1. In the **[!UICONTROL Renditions]** panel, view the list of renditions generated for the asset.
 
    ![Renditions panel on Assets Detail page](assets/renditions_panel.png)
@@ -640,10 +652,6 @@ You can view, navigate through, and select assets with any of the available view
 
 In list view and column view, the **[!UICONTROL Select]** option displays when you hover the pointer over the asset thumbnail.
 
-![Select assets in list view](assets/select_quick_in_listview.png)
-
-![Select assets in column view](assets/select_quick_in_columnview.png)
-
 In card view, the **[!UICONTROL Select]** option displays as a quick action.
 
 ![Select quick action on card view](assets/select_quick_action.png)
@@ -664,9 +672,7 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
     * Select the asset and then click **[!UICONTROL Edit]** in the toolbar.
     * Click **[!UICONTROL Edit]** option that displays on an asset in the card view.
-    * Click **[!UICONTROL Edit]** from the toolbar.
-
-   ![Edit option in toolbar](assets/do-not-localize/edit_icon.png)
+    * Click **[!UICONTROL Edit]** from the toolbar ![Edit option in toolbar](assets/do-not-localize/edit_icon.png).
 
 1. To crop the image, click **[!UICONTROL Crop]** ![Option to crop an image](assets/do-not-localize/crop.png).
 
@@ -725,9 +731,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 1. Click the **[!UICONTROL Annotate]** option from one of the following:
 
     * [Quick actions](/help/assets/managing-assets-touch-ui.md#quick-actions)
-    * From the toolbar after selecting the asset or navigating to the asset page
-
-   ![Annotate option](assets/annotate-option.png)
+    * From the toolbar after selecting the asset or navigating to the asset page.
 
 1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
 
@@ -742,8 +746,6 @@ Video annotations are only supported on browsers with HTML5-compatible video for
    >For a non-administrator user, the suggestions appear only if the user has read permissions at `/home` path in CRXDE.
 
 1. After adding the annotation, click **[!UICONTROL Add]** to save it. A notification for the annotation is sent to Aaron.
-
-   ![Add button to save an annotation](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -773,12 +775,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
 
 1. In the Experience Manager interface, choose **[!UICONTROL Timeline]**.
-
-   ![Timeline option available in Experience Manager](assets/view-timeline.png)
-
 1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
-
-   ![Show All list in Timeline](assets/timeline-show-all-option.png)
 
    Click a comment in the **[!UICONTROL Timeline]** panel to view the corresponding annotation on the image.
 
@@ -807,8 +804,6 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
    To print the review status only, select it from the timeline.
 
 1. Click **[!UICONTROL Print]** from the toolbar.
-
-   ![Print option in toolbar](assets/do-not-localize/print.png)
 
 1. From the Print dialog, choose the position you want the annotations/review status to be displayed on the PDF. For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. It is selected by default.
 
@@ -897,8 +892,6 @@ You can also enable automatic versioning through a workflow. When you create a v
 
    * Click **[!UICONTROL Show All]** in [!UICONTROL Timeline].
    * Click **[!UICONTROL Versions]**. All versions created for an asset are listed the left sidebar.
-
-     ![ Select Versions option from the Timeline](assets/versions_option.png)
 
    * Select a specific version of the asset and click **[!UICONTROL Preview Version]**.
 

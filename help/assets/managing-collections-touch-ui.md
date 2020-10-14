@@ -130,7 +130,7 @@ Smart collections are built by saving a search so you can alter their content by
 1. Click **[!UICONTROL Overwrite]** to replace the original smart collection with the edited collection. Alternatively, select **[!UICONTROL Save As]** to save the edited collection separately.
 1. In the confirmation dialog, Click **[!UICONTROL Save]** to complete the process.
 
-## View and edit collection metadata {#viewing-and-editing-collection-metadata}
+## View and edit collection metadata {#view-edit-collection-metadata}
 
 Collection metadata comprises data about the collection, including any tags that are added.
 

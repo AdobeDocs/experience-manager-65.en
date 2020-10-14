@@ -1,9 +1,6 @@
 {
     "ignorePatterns": [
         {
-            "pattern": "^http"
-        },
-        {
             "pattern": "^.*corp.adobe.com"
         },
         {

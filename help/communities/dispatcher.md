@@ -54,7 +54,7 @@ The OSGi configuration **ACS AEM Commons - Dispatcher Cache Control Header - Max
 * Locate `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Select the '+' icon to create a new connection configuration
 
-  ![chlimage_1-339](assets/chlimage_1-339.png)
+  ![dispatcher](assets/dispatcher.png)
 
 * **Filter Patterns**
   *(required)* One or more paths to community pages. For example, `/content/sites/engage/(.*)`.
@@ -81,10 +81,10 @@ See also:
 * [Dispatcher Security Checklist](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
 
 >[!NOTE]
- >
- >**Property Name Examples**
- >All property names shown, such as **/0050** and **/0170**, should be adjusted to fit within an existing dispatcher.any configuration file.
- >
+>
+>**Property Name Examples**
+>
+>All property names shown, such as **/0050** and **/0170**, should be adjusted to fit within an existing dispatcher.any configuration file.
 
 The following entries should be added to the end of the /filter section, especially after all deny entries.
 

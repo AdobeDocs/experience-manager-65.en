@@ -31,9 +31,8 @@ The main aspects of scoring and badges are:
 **Note** that awarding of badges is [not enabled by default](/help/communities/implementing-scoring.md#main-pars-text-237875536).
 
 >[!CAUTION]
- >
- >The implementation structure visible in CRXDE Lite is subject to change once the UI becomes available.
- >
+>
+>The implementation structure visible in CRXDE Lite is subject to change once the UI becomes available.
 
 ## Badges {#badges}
 
@@ -93,11 +92,10 @@ Included in the release are three reward-based badges:
   ![awarded-badges](assets/awarded-badges.png)
 
 >[!NOTE]
- >
- >Scoring rules may be configured to assign negative points for posts flagged as inappropriate and thus affect the score value. However, once a badge is earned, it will not be automatically removed due to scoring point reduction or scoring rule changes.
- >
- >Awarded badges may be revoked in the same manner as assigned badges. See the [Assign and Revoke Badges](#assign-and-revoke-badges) section. Future improvements will include an UI to manage members’ badges.
- >
+>
+>Scoring rules may be configured to assign negative points for posts flagged as inappropriate and thus affect the score value. However, once a badge is earned, it will not be automatically removed due to scoring point reduction or scoring rule changes.
+>
+>Awarded badges may be revoked in the same manner as assigned badges. See the [Assign and Revoke Badges](#assign-and-revoke-badges) section. Future improvements will include an UI to manage members’ badges.
 
 ### Custom Badges {#custom-badges}
 
@@ -133,9 +131,8 @@ If the node is of type `cq:Page` (recommended), then, using CRXDE|Lite, add the 
 | scoringRules |String |an array list of [scoring rules](#scoring-rules) |
 
 >[!NOTE]
- >
- >If a scoring rule appears to have no effect on awarding badges, ensure the scoring rule has not been blocked by the badging rule's scoringRules property. See the section titled [Badging Rules](#badging-rules).
- >
+>
+>If a scoring rule appears to have no effect on awarding badges, ensure the scoring rule has not been blocked by the badging rule's scoringRules property. See the section titled [Badging Rules](#badging-rules).
 
 ### Enable Badges for Component {#enable-badges-for-component}
 
@@ -148,9 +145,8 @@ A boolean property, `allowBadges`, enables/disables the display of badges for a 
 ![enable-badges-component](assets/enable-badges-component.png)
 
 >[!NOTE]
- >
- >Any component can be overlaid to display badges using the HBS code found in forums, QnA, and comments as an example.
- >
+>
+>Any component can be overlaid to display badges using the HBS code found in forums, QnA, and comments as an example.
 
 ## Scoring Rules {#scoring-rules}
 
@@ -174,15 +170,15 @@ Scoring rules are nodes of type `cq:Page` with properties on its `jcr:content` n
 Scores are stored in SRP.
 
 >[!NOTE]
- >
- >Best Practice: uniquely name each scoring rule.
- >
- >Scoring rule names should be globally unique; they should not end with the same name.
- >
- >An example of what *not* to do:
- >/libs/settings/community/scoring/rules/site1/forums-scoring
- >/libs/settings/community/scoring/rules/site2/forums-scoring
- >
+>
+>Best Practice: uniquely name each scoring rule.
+>
+>Scoring rule names should be globally unique; they should not end with the same name.
+>
+>An example of what *not* to do:
+>
+>/libs/settings/community/scoring/rules/site1/forums-scoring
+>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 ### Scoring Sub-Rules {#scoring-sub-rules}
 
@@ -331,9 +327,8 @@ Badging rules are paired with scoring rules, which determine how points accumula
 The `scoringRules` property on a badging rule simply restricts which scoring rules can be paired with that particular badging rule.
 
 >[!NOTE]
- >
- >Best practice : create badge images unique to each AEM site.
- >
+>
+>Best practice : create badge images unique to each AEM site.
 
 ![badging-rule-configuration](assets/badging-rule-configuration.png)
 
@@ -411,12 +406,11 @@ for example : /libs/settings/community/badging/images/moderator/jcr:content/mode
 for example : https://&lt;server&gt;:&lt;port&gt;/home/users/community/riley/profile.social.json
 
 >[!NOTE]
- >
- >The *member-profile-url*:
- >
- >* May refer to an author instance if the [Tunnel Service](/help/communities/users.md#tunnel-service) is enabled.
- >* May be an obscure, random name - see [Security Checklist](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) regarding authorizable ID.
- >
+>
+>The *member-profile-url*:
+>
+>* May refer to an author instance if the [Tunnel Service](/help/communities/users.md#tunnel-service) is enabled.
+>* May be an obscure, random name - see [Security Checklist](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) regarding authorizable ID.
 
 ### Examples: {#examples}
 
@@ -433,9 +427,8 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 ```
 
 >[!NOTE]
- >
- >Using cURL to assign and revoke badges works for any badge image, but when assigned instead of earned, they are marked as assigned badges and handled accordingly.
- >
+>
+>Using cURL to assign and revoke badges works for any badge image, but when assigned instead of earned, they are marked as assigned badges and handled accordingly.
 
 ## Scoring and Badges for Custom Components {#scoring-and-badges-for-custom-components}
 
@@ -450,9 +443,8 @@ A component's SocialEvent instance records the events as `actions` that occur fo
 For the communities components delivered, the following tables describe the `verbs` defined for each `topic` available for use in [scoring sub-rules](#scoring-sub-rules).
 
 >[!NOTE]
- >
- >A new boolean property, `allowBadges`, enables/disables the display of badges for a component instance. It will be configurable in updated [component edit dialogs](/help/communities/author-communities.md) through a checkbox labeled **Display Badges**.
- >
+>
+>A new boolean property, `allowBadges`, enables/disables the display of badges for a component instance. It will be configurable in updated [component edit dialogs](/help/communities/author-communities.md) through a checkbox labeled **Display Badges**.
 
 **[Calendar Component](/help/communities/calendar.md)**
 SocialEvent `topic`= com/adobe/cq/social/calendar

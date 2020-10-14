@@ -92,7 +92,7 @@ To embed the adaptive form:
 
 1. In the embedded code:
 
-    * Change value of the *options.path* variable with the path of the publish URL of the adaptive form. If the AEM server is running on a context path, ensure that the URL includes the context path. For example, the above code and adaptive from reside on same aem forms server so the example uses context path of adaptive form /content/forms/af/locbasic.html.
+    * Change value of the *options.path* variable with the path of the publish URL of the adaptive form. If the AEM server is running on a context path, ensure that the URL includes the context path. Always mention the complete name of the adaptive form including extension.   For example, the above code and adaptive from reside on same AEM forms server so the example uses context path of adaptive form /content/forms/af/locbasic.html. 
     * Replace *options.dataRef* with attributes to pass with the URL. You can use the dataref variable to [prefill an adaptive form](/help/forms/using/prepopulate-adaptive-form-fields.md).
     * Replace *options.themePath* with the path to a theme other than the theme configured in the adaptive form. Alternatively, you can specify the theme path using the request attribute.
     * CSS_Selector is the CSS selector of the form container in which the adaptive form is embedded. For example, .customafsection css class is the CSS selector in the above example.

@@ -62,9 +62,8 @@ Social login and the we-retail Facebook sample were developed when the Facebook 
 As of AEM  6.4  GA and AEM 6.3 SP1 social login  was  updated to work with the newer Facebook Graph API 2.5 version.
 
 >[!NOTE]
- >
- >For older AEM versions, if you are facing an exception in logs **Can't extract a token from this**, upgrade to latest CFP for that AEM release.
- >
+>
+>For older AEM versions, if you are facing an exception in logs **Can't extract a token from this**, upgrade to latest CFP for that AEM release.
 
 For the Facebook Graph API version information, see the [Facebook API changelog](https://developers.facebook.com/docs/apps/changelog).
 
@@ -85,9 +84,8 @@ In general, as of Facebook API v2.7:
     * For *Valid OAuth redirect URIs*, enter `  https://<server>:<port>.`
 
 >[!NOTE]
- >
- >For development, http://localhost:4503 will work.
- >
+>
+>For development, http://localhost:4503 will work.
 
 Once the application has been created, locate the **[!UICONTROL App ID]** and **[!UICONTROL App Secret]** settings. This information is required for configuring the [Facebook cloud service](#createafacebookcloudservice).
 
@@ -119,9 +117,8 @@ The [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
    * **[!UICONTROL Add to User Groups]** select Add User Group to choose one or more [member groups](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) for the community site to which users will be added.
 
    >[!NOTE]
-    >
-    >Groups may be added or removed at any time. But existing  users's  memberships won't be affected. Auto membership only applies to new users being created  post  this field update. For Sites where anonymous users are disabled, chose to add users to corresponding community-members group meant for that closed community site.
-    >
+   >
+   >Groups may be added or removed at any time. But existing  users's  memberships won't be affected. Auto membership only applies to new users being created  post  this field update. For Sites where anonymous users are disabled, chose to add users to corresponding community-members group meant for that closed community site.
 
     * Select **[!UICONTROL SAVE]**.
     * **[!UICONTROL Publish]**.
@@ -217,11 +214,10 @@ In general:
 1. For *Callback URL* - enter `https://server`.
 
    >[!NOTE]
-    >
-    >It is not necessary to specify the port.
-    >
-    >For development, https://127.0.0.1/ will work.
-    >
+   >
+   >It is not necessary to specify the port.
+   >
+   >For development, https://127.0.0.1/ will work.
 
 1. Once the application has been created, locate the **[!UICONTROL Consumer (API) Key]** and **[!UICONTROL Consumer (API) Secret]**. This information will be needed for configuring the [Twitter cloud service](#createatwittercloudservice).
 
@@ -385,9 +381,8 @@ To enable the authentication handler on publish, simply open the OSGi config and
 ![chlimage_1-489](assets/chlimage_1-489.png)
 
 >[!CAUTION]
- >
- >Be careful to not confuse the authentication handler with a Facebook or Twitter instance of *Adobe Granite OAuth Application and Provider*.
- >
+>
+>Be careful to not confuse the authentication handler with a Facebook or Twitter instance of *Adobe Granite OAuth Application and Provider*.
 
 ![chlimage_1-490](assets/chlimage_1-490.png)
 
@@ -439,9 +434,8 @@ To locate the created instance for a Facebook or Twitter app:
      (*Optional*) URL configured with the OAuth providers to redirect the client back. Use a relative  url  to use the host of the original request. Leave empty to use the originally requested URL instead. Suffix "/callback/j_security_check" is automatically appended to this  url .
 
    >[!NOTE]
-    >
-    >The domain for the callback must be registered with the provider (Facebook or Twitter).
-    >
+   >
+   >The domain for the callback must be registered with the provider (Facebook or Twitter).
 
 For each OAuth authentication handler configuration, there are two additional configurations created in the instance:
 
