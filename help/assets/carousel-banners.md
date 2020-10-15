@@ -238,7 +238,8 @@ See [Experience Fragment](/help/sites-authoring/experience-fragments.md).
 >[!NOTE]
 >
 >Be aware that the social media sharing tools in Carousel Banner are not supported when you embed the viewer in an Experience Fragment.
-To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
+>
+>To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
 
 As you add hotspots or image maps to an image, remember to save your work. Undo and Redo options, near the upper-right corner of the page, are supported during your current creation/editing session.
 
@@ -310,7 +311,8 @@ See also [Adding Image Maps](/help/assets/image-maps.md).
           >[!NOTE]
           >
           >Be aware that the social media sharing tools in Carousel Banner are not supported when you embed the viewer in an Experience Fragment.
-          To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
+          >
+          >To work around this, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 

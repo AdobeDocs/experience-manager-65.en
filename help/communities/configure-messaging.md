@@ -45,9 +45,8 @@ To enable and modify the messaging feature, see:
 * [Messaging Essentials](/help/communities/essentials-messaging.md) for developers
 
 >[!NOTE]
- >
- >It is not supported to add `Compose Message, Message, or Message List` components (found in `Communities`component group) to a page in author edit mode.
- >
+>
+>It is not supported to add `Compose Message, Message, or Message List` components (found in `Communities`component group) to a page in author edit mode.
 
 ## Configure messaging components {#configure-messaging-components}
 

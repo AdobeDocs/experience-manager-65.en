@@ -21,11 +21,11 @@ Typically, [!DNL Experience Manager Assets] can be monitored in two ways, live m
 
 You should perform live monitoring during the performance testing phase of your development or during high-load situations to understand the performance characteristics of your environment. Typically, live monitoring should be performed using a suite of tools. Here are some recommendations:
 
-* [Visual VM](https://visualvm.java.net/): Visual VM enables you to view detailed Java VM information, including CPU usage, Java memory usage. In addition, it lets you sample and evaluate code that runs on an deployment.
+* [Visual VM](https://visualvm.github.io/): Visual VM enables you to view detailed Java VM information, including CPU usage, Java memory usage. In addition, it lets you sample and evaluate code that runs on an deployment.
 * [Top](https://man7.org/linux/man-pages/man1/top.1.html): Top is a Linux command that opens up a dashboard, which displays usage statistics, including CPU, memory, and IO usage. It provides a high-level overview of what is happening on an instance.
 * [Htop](https://hisham.hm/htop/): Htop is an interactive process viewer. It provides detailed CPU and memory usage in addition to what Top can provide. Htop can be installed on most Linux systems using `yum install htop` or `apt-get install htop`.
 
-* [Iotop](https://guichaz.free.fr/iotop/): Iotop is a detailed dashboard for disk IO usage. It displays bars and meters that depict the processes that use disk IO and the amount they use. Iotop can be installed on most Linux systems using `yum install iotop` or `apt-get install iotop`.
+* Iotop: Iotop is a detailed dashboard for disk IO usage. It displays bars and meters that depict the processes that use disk IO and the amount they use. Iotop can be installed on most Linux systems using `yum install iotop` or `apt-get install iotop`.
 
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/): Iftop displays detailed information about ethernet/network usage. Iftop displays per communication channel statistics on the entities using ethernet and the amount of bandwidth they use. Iftop can be installed on most Linux systems using `yum install iftop` or `apt-get install iftop`.
 

@@ -25,15 +25,12 @@ Before adding enablement resources for a community site, the AEM instances must 
 For details, see [Configuring Enablement](enablement.md).
 
 >[!CAUTION]
- >
- >If SCORM is installed after community site creation, any enablement resources present before SCORM is installed must be recreated.
- >
-
+>
+>If SCORM is installed after community site creation, any enablement resources present before SCORM is installed must be recreated.
 
 >[!NOTE]
- >
- >With the release of [AEM 6.3](deploy-communities.md#latestfeaturepack) and the equivalent Communities feature packs [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) and [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), the enablement feature no longer requires a [MySQL database](mysql.md).
- >
+>
+>With the release of [AEM 6.3](deploy-communities.md#latestfeaturepack) and the equivalent Communities feature packs [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) and [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), the enablement feature no longer requires a [MySQL database](mysql.md).
 
 ## Terminology {#terminology}
 
@@ -239,11 +236,10 @@ Select the `'+' icon`, in the upper right corner, to begin the process of choosi
 ![resource-settings](assets/resource-settings.png)
 
 >[!NOTE]
- >
- >Learners should not be enrolled direclty in enablement resources that are to be referenced from a learning path. Learners need only be enrolled in the learning path.
- >
- >If a member is enrolled in both a resource and a learning path which references that resource, their assignments will show both the single resource and the resource within the learning path.
- >
+>
+>Learners should not be enrolled direclty in enablement resources that are to be referenced from a learning path. Learners need only be enrolled in the learning path.
+>
+>If a member is enrolled in both a resource and a learning path which references that resource, their assignments will show both the single resource and the resource within the learning path.
 
 * **[!UICONTROL Social Settings]**
 
@@ -379,9 +375,8 @@ For enablement resources included in a learning path, the assignments should onl
   One or more Resources chosen from among the *published* enablement resources created for the current community site.
 
 >[!NOTE]
- >
- >You can only select the resources available at the same level as the learning path. For example, for a learning path created in a group only the group level resources are available; for a learning path created in a community site the resources in that site are available for adding to the learning path.
- >
+>
+>You can only select the resources available at the same level as the learning path. For example, for a learning path created in a group only the group level resources are available; for a learning path created in a community site the resources in that site are available for adding to the learning path.
 
 * Select **[!UICONTROL Next]**.
 
@@ -400,11 +395,10 @@ For enablement resources included in a learning path, the assignments should onl
 * Select **[!UICONTROL Create]**
 
 >[!NOTE]
- >
- >Enablement resources referenced from the learning path should not list the same Assignees (learners), if any.
- >
- >If a member is enrolled in both an enablement resource and a learning path which references that rresource, their assignments will show both the single resource and the resource within the learning path.
- >
+>
+>Enablement resources referenced from the learning path should not list the same Assignees (learners), if any.
+>
+>If a member is enrolled in both an enablement resource and a learning path which references that rresource, their assignments will show both the single resource and the resource within the learning path.
 
 ## Managing a Resource {#managing-a-resource}
 

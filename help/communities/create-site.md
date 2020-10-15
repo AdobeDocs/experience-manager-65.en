@@ -88,9 +88,8 @@ Check all checkboxes for [User Management](/help/communities/sites-console.md#us
 * To allow signing-in with Twitter instead of registering and creating a profile
 
 >[!NOTE]
- >
- >For a production environment, it is necessary to create custom Facebook and Twitter applications. See [Social Login with Facebook and Twitter](/help/communities/social-login.md).
- >
+>
+>For a production environment, it is necessary to create custom Facebook and Twitter applications. See [Social Login with Facebook and Twitter](/help/communities/social-login.md).
 
 ![community site settings](assets/site-settings.png)
 
@@ -117,9 +116,8 @@ For example,
 * Select [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
- >
- >[Tunnel service](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) allows selection of members and groups existing only in the  publish  environment.
- >
+>
+>[Tunnel service](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) allows selection of members and groups existing only in the  publish  environment.
 
 ![user roles in new site](assets/site-admin-1.png)
 
@@ -208,20 +206,19 @@ From left to right they are:
 ![siteactions](assets/siteactions.png)
 
 >[!NOTE]
- >
- >If not using the default port 4503 for the publish instance, then edit the default replication agent to set the port number to the correct value.
- >
- >On the author instance, from the main menu:
- >
- >1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]** menu.
- >1. Select **[!UICONTROL Agents on author]**.
- >1. Select **[!UICONTROL Default Agent (publish)]**.
- >1. Next to **[!UICONTROL Settings]**, select **[!UICONTROL Edit]**.
- >1. In pop-up dialog for Agent Settings, select **[!UICONTROL Transport]** tab.
- >1. In URI, change the port number, 4503, to the desired port number. For example, to use port 6103: https://localhost:6103/bin/receive?sling:authRequestLogin=1
- >1. Select **[!UICONTROL OK]**.
- >1. (Optional) Select **[!UICONTROL Clear]** or **[!UICONTROL Force Retry]** to reset the replication queue.
- >
+>
+>If not using the default port 4503 for the publish instance, then edit the default replication agent to set the port number to the correct value.
+>
+>On the author instance, from the main menu:
+>
+>1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]** menu.
+>1. Select **[!UICONTROL Agents on author]**.
+>1. Select **[!UICONTROL Default Agent (publish)]**.
+>1. Next to **[!UICONTROL Settings]**, select **[!UICONTROL Edit]**.
+>1. In pop-up dialog for Agent Settings, select **[!UICONTROL Transport]** tab.
+>1. In URI, change the port number, 4503, to the desired port number. For example, to use port 6103: https://localhost:6103/bin/receive?sling:authRequestLogin=1
+>1. Select **[!UICONTROL OK]**.
+>1. (Optional) Select **[!UICONTROL Clear]** or **[!UICONTROL Force Retry]** to reset the replication queue.
 
 ### Select Publish {#select-publish}
 
@@ -308,9 +305,8 @@ To get started:
    * Arrive at https://localhost:4503/content/sites/engage/en.html
 
 >[!NOTE]
- >
- >To disable, simply prefix the `sling:match` property value with an 'x' - `xlocalhost.4503/$` - and **Save All**.
- >
+>
+>To disable, simply prefix the `sling:match` property value with an 'x' - `xlocalhost.4503/$` - and **Save All**.
 
 ![optional-steps](assets/optional-steps.png)
 
@@ -333,7 +329,5 @@ In addition, administrators may use the [Edit Site icon](/help/communities/sites
 After any modification, remember to **Save** and re-**Publish** the site.
 
 >[!NOTE]
- >
- >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
- >
-
+>
+>If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).

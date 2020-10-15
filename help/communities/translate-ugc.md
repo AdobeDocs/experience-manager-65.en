@@ -40,11 +40,10 @@ AEM Communities ships with a [trial license](../../help/sites-administering/tc-m
 When [creating a community site](sites-console.md), the default translation service is enabled when `Allow Machine Translation` is checked from the [TRANSLATION](sites-console.md#translation) sub-panel.
 
 >[!CAUTION]
- >
- >The default translation service is for demonstration only.
- >
- >For a production system, a licensed translation service is required. If not licensed, the default translation service should be [turned off](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
- >
+>
+>The default translation service is for demonstration only.
+>
+>For a production system, a licensed translation service is required. If not licensed, the default translation service should be [turned off](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
 
 ## Global Translation of UGC {#global-translation-of-ugc}
 
@@ -57,13 +56,12 @@ If "one group conversation" is desired, it is possible to enable global translat
 For example, if a forum was established on the base site, language copies created, and global translation was enabled, then a topic posted to the forum made in one language copy would appear in all language copies. The same would be true for any replies, regardless of from which language copy the reply was entered. The result would be that the topic and its entire thread of replies would be visible regardless of from which language copy the topic is being viewed.
 
 >[!CAUTION]
- >
- >Any UGC which existed prior to global translation is no longer visible.
- >
- >While the UGC is still in the [common store](working-with-srp.md), it is located under the language-specific UGC location, while new content, added after global translation was configured, is being retrieved from the global shared store location.
- >
- >There is no migration tool for moving or merging language-specific content into the global shared store.
- >
+>
+>Any UGC which existed prior to global translation is no longer visible.
+>
+>While the UGC is still in the [common store](working-with-srp.md), it is located under the language-specific UGC location, while new content, added after global translation was configured, is being retrieved from the global shared store location.
+>
+>There is no migration tool for moving or merging language-specific content into the global shared store.
 
 ### Translation Integration Configuration {#translation-integration-configuration}
 
@@ -131,15 +129,14 @@ The new translation integration cloud service will need to be activated to the p
 ## Managing Translation Settings {#managing-translation-settings}
 
 >[!NOTE]
- >
- >**Preferred Language**
- >
- >For the purpose of detecting whether the post is in a language different from the preferred language, the preferred language of the site visitor must be established.
- >
- >The preferred language is the language preference set in a user's profile, when the site visitor is signed in and has specified a language preference.
- >
- >When the site visitor is anonymous or has not specified a language preference in their profile, the preferred language is the base language of the page template.
- >
+>
+>**Preferred Language**
+>
+>For the purpose of detecting whether the post is in a language different from the preferred language, the preferred language of the site visitor must be established.
+>
+>The preferred language is the language preference set in a user's profile, when the site visitor is signed in and has specified a language preference.
+>
+>When the site visitor is anonymous or has not specified a language preference in their profile, the preferred language is the base language of the page template.
 
 ### User Preference {#user-preference}
 

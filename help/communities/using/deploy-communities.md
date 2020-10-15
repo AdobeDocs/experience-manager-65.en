@@ -323,9 +323,8 @@ In order to copy the key material from author to all other instances, it is nece
     * It is necessary to [refresh the Granite Crypto bundle](#refresh-the-granite-crypto-bundle) if the target AEM instance is currently running.
 
 >[!CAUTION]
- >
- >If another security feature has already been configured that is based on the crypto keys, then replicating the crypto keys could damage the configuration. For assistance, [contact customer care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
- >
+>
+>If another security feature has already been configured that is based on the crypto keys, then replicating the crypto keys could damage the configuration. For assistance, [contact customer care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
 #### Repository Replication {#repository-replication}
 
@@ -334,9 +333,8 @@ Having the key material stored in the repository, as was the case for AEM 6.2 an
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
 >[!NOTE]
- >
- >It is important to verify that the [replication agent on author](#replication-agents-on-author) is correctly configured.
- >
+>
+>It is important to verify that the [replication agent on author](#replication-agents-on-author) is correctly configured.
 
 With the key material stored in the repository, the manner for replicating the crypto key from author to other instances is as follows :
 

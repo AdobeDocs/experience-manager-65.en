@@ -153,10 +153,10 @@ In addition, choose **[!UICONTROL General]** components, such as
 * Title (Foundation)
 
 >[!NOTE]
- >
- >The components enabled for the page par are stored in the repository as the value of the `components` property of the
- >`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
- >
+>
+>The components enabled for the page par are stored in the repository as the value of the `components` property of the
+>
+>`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
 
 ## Landing Page {#landing-page}
 

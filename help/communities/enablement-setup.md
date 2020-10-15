@@ -38,9 +38,8 @@ For AEM Communities,
     * Getting in touch with the resource contacts.
 
 >[!NOTE]
- >
- >If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
- >
+>
+>If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Install Latest Communities Release {#install-latest-communities-release}
 
@@ -109,13 +108,12 @@ In this tutorial, three members are created in the publish environment. Two memb
 A fourth user is created in the author environment and assigned the roles of Communities Administrator and Community Enablement Manager.
 
 >[!NOTE]
- >
- >These members are being created prior to creation of the *Enablement Tutorial* community site.
- >
- >If they were created afterwards, they could be added as members of the *Enablement Tutorial members group* during member creation.
- >
- >Instead, later, they'll be [assigned to the members group](enablement-create-site.md#assignuserstocommunityenablemembersgroup).
- >
+>
+>These members are being created prior to creation of the *Enablement Tutorial* community site.
+>
+>If they were created afterwards, they could be added as members of the *Enablement Tutorial members group* during member creation.
+>
+>Instead, later, they'll be [assigned to the members group](enablement-create-site.md#assignuserstocommunityenablemembersgroup).
 
 ### Riley Taylor - Enrollee {#riley-taylor-enrollee}
 
@@ -169,9 +167,8 @@ A fourth user is created in the author environment and assigned the roles of Com
 ![ski-class-properties](assets/ski-class-properties.png)
 
 >[!NOTE]
- >
- >During creation of the community site, existing members and groups may be added to the community site's members group.
- >
+>
+>During creation of the community site, existing members and groups may be added to the community site's members group.
 
 ## Community Administrator Role {#community-administrator-role}
 
