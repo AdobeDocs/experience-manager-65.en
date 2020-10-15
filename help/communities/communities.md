@@ -26,9 +26,8 @@ For an overview and getting started tutorials, visit:
 * [Getting Started with AEM Communities for Enablement](getting-started-enablement.md)
 
 >[!NOTE]
- > 
- >It is highly recommended to keep up-to-date with the [latest releases](deploy-communities.md#latest-releases).
- >
+> 
+>It is highly recommended to keep up-to-date with the [latest releases](deploy-communities.md#latest-releases).
 
 ## Recommended Deployments {#recommended-deployments}
 

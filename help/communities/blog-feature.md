@@ -38,11 +38,10 @@ This section of the documentation describes:
 * Configuration settings for blog components
 
 >[!NOTE]
- >
- >The components `Journal` and `Journal Sidebar` are titled `Blog` and `Blog Sidebar`.
- >
- >The blog feature found in AEM 6.0 and earlier releases is now removed. It was based on a template and only allowed authors to create content in the author environment.
- >
+>
+>The components `Journal` and `Journal Sidebar` are titled `Blog` and `Blog Sidebar`.
+>
+>The blog feature found in AEM 6.0 and earlier releases is now removed. It was based on a template and only allowed authors to create content in the author environment.
 
 ## Adding Blog Components to a Page {#adding-blog-components-to-a-page}
 
@@ -104,10 +103,10 @@ Under the **Settings** tab, specify the basic features of the blog :
   The blog title to display on the page.
 
 >[!NOTE]
- >
- >The Journal Title is used to automatically create URL for the blog.
- >Maximum 50 characters (with 5 characters additional for uniqueness) are used from the journal title you specify here to create URL for the blog.
- >
+>
+>The Journal Title is used to automatically create URL for the blog.
+>
+>Maximum 50 characters (with 5 characters additional for uniqueness) are used from the journal title you specify here to create URL for the blog.
 
 * **Journal Description** 
   

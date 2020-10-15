@@ -375,9 +375,8 @@ If new custom components are created that are instrumented for Analytics, they s
 ![component-configuration1](assets/component-configuration1.png)
 
 >[!NOTE]
- >
- >The journal components are used to implement the blog feature.
- >
+>
+>The journal components are used to implement the blog feature.
 
 ### Mapped Analytics to AEM Variables {#mapped-analytics-to-aem-variables}
 

@@ -35,9 +35,8 @@ For AEM Communities,
   * Creating community groups, members and member groups.
 
 >[!NOTE]
- >
- >If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
- >
+>
+>If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Install Latest Communities Release {#install-latest-communities-release}
 
