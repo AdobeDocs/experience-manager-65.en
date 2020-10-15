@@ -90,7 +90,7 @@ You can use [!DNL Automated Forms Conversion service] to convert colored PDF for
 
 ### Enhanced caching for translated adaptive form pages {#enhanced-caching-translated-adaptive-forms}
 
-You can now specify [locale as a selector in the adaptive form URL instead of an argument in adaptive form URL](supporting-new-language-localization.md). It helps cache translated adaptive forms on [!DNL Experience Manager Dispatcher]. Caching translated adaptive form was not possible in previous versions. For detailed information about configuring caching for using locale as a selector in the adaptive form URL, see [Configure adaptive form cache at dispatcher](../../help/forms/using/configure-adaptive-forms-cache.md).
+You can now specify [locale as a selector in the adaptive form URL instead of an argument in adaptive form URL](../../help/forms/using/supporting-new-language-localization.md). It helps cache translated adaptive forms on [!DNL Experience Manager Dispatcher]. Caching translated adaptive form was not possible in previous versions. For detailed information about configuring caching for using locale as a selector in the adaptive form URL, see [Configure adaptive form cache at dispatcher](../../help/forms/using/configure-adaptive-forms-cache.md).
 
 ### Save output of form data model service to a variable {#save-fdm-service-to-variable}
 
