@@ -25,9 +25,8 @@ The document describes:
 * Configuration settings for the `Comments` component.
 
 >[!NOTE]
- >
- >Anonymous posting of a comment is not supported. Site visitors must register (become a member) and sign in to participate.
- >
+>
+>Anonymous posting of a comment is not supported. Site visitors must register (become a member) and sign in to participate.
 
 ### Adding Comments to a Page {#adding-comments-to-a-page}
 
@@ -44,9 +43,8 @@ When the [required client-side libraries](/help/communities/essentials-comments.
 ![comments-component](assets/comments-component.png)
 
 >[!NOTE]
- >
- >Only one `Comments` component may exist on a page. Be aware that several Communities features already include comments, such as a blog, calendar, forum, QnA, and reviews.
- >
+>
+>Only one `Comments` component may exist on a page. Be aware that several Communities features already include comments, such as a blog, calendar, forum, QnA, and reviews.
 
 ### Configuring Comments {#configuring-comments}
 

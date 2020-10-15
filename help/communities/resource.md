@@ -189,9 +189,8 @@ On the Add Resources panel:
   Note: Only **published** Resources will be selectable.
 
 >[!NOTE]
- >
- >You can only select the resources available at the same level as the learning path. For example, for a learning path created in a group only the group level resources are available; for a learning path created in a community site the resources in that site are available for adding to the learning path.
- >
+>
+>You can only select the resources available at the same level as the learning path. For example, for a learning path created in a group only the group level resources are available; for a learning path created in a community site the resources in that site are available for adding to the learning path.
 
 * Select **[!UICONTROL Submit]**.
 

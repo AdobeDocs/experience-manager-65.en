@@ -20,9 +20,8 @@ discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 ## Java APIs {#java-apis}
 
 >[!NOTE]
- >
- >The package location of Communities APIs is subject to change when upgrading from one major release to the next.
- >
+>
+>The package location of Communities APIs is subject to change when upgrading from one major release to the next.
 
 ### SocialComponent Interface {#socialcomponent-interface}
 

@@ -34,11 +34,10 @@ The means for using the SRP API are through provided utilities, such as those fo
 When upgrading from AEM 6.0 or earlier, it will be necessary to migrate UGC for all SRPs, for which an Open Source tool is available. See [Upgrading to AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
- >
- >Historically, utilities for accessing UGC were found in the SocialUtils package, which no longer exists.
- >
- >For replacement utilities, see [SocialUtils Refactoring](socialutils.md).
- >
+>
+>Historically, utilities for accessing UGC were found in the SocialUtils package, which no longer exists.
+>
+>For replacement utilities, see [SocialUtils Refactoring](socialutils.md).
 
 ## Utility Method to Access UGC {#utility-method-to-access-ugc}
 
@@ -64,9 +63,8 @@ For other SocialUtils replacements, see [SocialUtils Refactoring](socialutils.md
 For coding guidelines, visit [Accessing UGC with SRP](accessing-ugc-with-srp.md).
 
 >[!CAUTION]
- >
- >The path resourceToUGCStoragePath() returns is *not* suitable for [ACL checking](srp.md#for-access-control-acls).
- >
+>
+>The path resourceToUGCStoragePath() returns is *not* suitable for [ACL checking](srp.md#for-access-control-acls).
 
 ## Utility Method to Access ACLs {#utility-method-to-access-acls}
 
@@ -92,9 +90,8 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 ```
 
 >[!CAUTION]
- >
- >The path returned by resourceToACLPath() is *not* suitable for [accessing the UGC](#utility-method-to-access-acls) itself.
- >
+>
+>The path returned by resourceToACLPath() is *not* suitable for [accessing the UGC](#utility-method-to-access-acls) itself.
 
 ## UGC-Related Storage Locations {#ugc-related-storage-locations}
 
@@ -129,4 +126,3 @@ The UGC is created in neither of those locations, and should only be accessed us
 * [Storage Resource Provider Overview](srp.md) - Introduction and repository usage overview.
 * [Accessing UGC with SRP](accessing-ugc-with-srp.md) - Coding guidelines.
 * [SocialUtils Refactoring](socialutils.md) - Mapping deprecated utility methods to current SRP utility methods.
-

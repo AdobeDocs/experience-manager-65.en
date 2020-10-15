@@ -37,6 +37,7 @@ Before you can use the Smart Content Service, ensure the following to create an 
 
 * An Adobe ID account that has administrator privileges for the organization.
 * The Smart Content Service service is enabled for your organization.
+* Smart Content Services Base Package may only be added to a deployment where a [!DNL Sites] Base Package and [!DNL Assets] add-on have been licensed.
 
 ## Onboarding {#onboarding}
 
@@ -171,3 +172,7 @@ You can trigger the tagging workflow from the following to instantly tag your as
 >[!NOTE]
 >
 >In the subsequent tagging cycles, only the modified assets are tagged again with newly-trained tags.However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds 6 months.
+
+## Tips and limitations {#tips-best-practices-limitations}
+
+* Use of Smart Content Services is limited to up to 2 million tagged images per year. Any duplicate images that are processed and tagged are each counted as a tagged image.

@@ -129,5 +129,6 @@ To define the custom name:
 
 >[!NOTE]
 >
->For the Demo application, the default display name is **Citizen**. For a custom application that you create, the default display name is **System Context Account**.*
-**client_idleTimeout:** When a user remains inactive for a specific amount of time, AEM Forms Workspace session expires. To enable the feature, add an entry to Global Settings &lt;client_idleTimeout&gt;*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout&gt;. You can specify value 0 to disable the idle timeout. The amount of time is specified in seconds.
+>For the Demo application, the default display name is **Citizen**. For a custom application that you create, the default display name is **System Context Account**.
+>
+>**client_idleTimeout:** When a user remains inactive for a specific amount of time, AEM Forms Workspace session expires. To enable the feature, add an entry to Global Settings &lt;client_idleTimeout&gt;*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout&gt;. You can specify value 0 to disable the idle timeout. The amount of time is specified in seconds.

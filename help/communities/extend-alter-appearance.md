@@ -20,9 +20,8 @@ Now that the components for the custom comment system in the application directo
 For a simple demonstration, a visual feature, the avatar shown of the signed-in user who posts a comment, is removed.
 
 >[!NOTE]
- >
- >To use the extension, the instance of the comment system in a website to be affected (/content) must set its resourceType to be the custom comment system.
- >
+>
+>To use the extension, the instance of the comment system in a website to be affected (/content) must set its resourceType to be the custom comment system.
 
 ## Modify the HBS Scripts {#modify-the-hbs-scripts}
 

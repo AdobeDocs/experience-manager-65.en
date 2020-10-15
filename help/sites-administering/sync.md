@@ -149,7 +149,7 @@ See also
 * [Access Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Troubleshooting section [Modify Operation Exception During Response Processing](#modify-operation-exception-during-response-processing).
 
-### 3. Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider {#adobegraniteencpasswrd}
+### 3. Adobe Granite Distribution - Encrypted Password Transport Secret Provider {#adobegraniteencpasswrd}
 
 **Configure permissions**
 
@@ -162,7 +162,7 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
 
         * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-    * locate `Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider`
+    * locate `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
     * select the existing configuration to open for edit (pencil icon)
       Verify `property name`: **`socialpubsync-publishUser`**
 

@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Release Notes
+user-guide-title: Adobe Experience Manager 6.5 Release Notes
 breadcrumb-title: Release Notes
 user-guide-description: Learn about the latest new features in AEM 6.5 in the release notes.
 ---
 
-# AEM 6.5 Release Notes {#release-notes}
+# Adobe Experience Manager 6.5 Release Notes {#release-notes}
 
 + [AEM 6.5 overview](home.md)
 + [General Release Notes](release-notes.md)

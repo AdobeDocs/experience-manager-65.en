@@ -20,9 +20,8 @@ Following is a tutorial on quickly setting up an [enablement community](overview
 For a tutorial on quickly setting up an [engagement community](overview.md#engagement-community), visit [Getting Started with AEM Communities](getting-started.md).
 
 >[!NOTE]
- >
- >This tutorial assumes installation of [Communities feature pack 1](deploy-communities.md#latestfeaturepack) or later.
- >
+>
+>This tutorial assumes installation of [Communities feature pack 1](deploy-communities.md#latestfeaturepack) or later.
 
 * [Initial Setup](enablement-setup.md)
 

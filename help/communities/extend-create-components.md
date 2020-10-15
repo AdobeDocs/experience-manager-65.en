@@ -21,11 +21,10 @@ The example of extending components uses the comment system, which is actually c
 Both components needs to be put in place, especially if customizing the appearance of a posted comment.
 
 >[!NOTE]
- >
- >Only one comment system per site page is allowed.
- >
- >Many Communities features already include a comment system whose resourceType can be modified to reference the extended comment system.
- >
+>
+>Only one comment system per site page is allowed.
+>
+>Many Communities features already include a comment system whose resourceType can be modified to reference the extended comment system.
 
 ## Create the Comments Component {#create-the-comments-component}
 
