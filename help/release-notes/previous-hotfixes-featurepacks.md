@@ -686,7 +686,7 @@ Some key highlights of this service pack release are:
 
 * An exception displays in [!DNL Experience Manager] while polling for job details of an Asset (CQ-4283569).
 
-### Sites {#sites}
+### Sites
 
 * If the LiveCopy inheritance is broken, live copy pages display language copy links instead of LiveCopy links (NPR-30980).
 * For a new Blueprint, If the number of records is more than 40, only the first 40 records are displayed. Blueprint displays blank lines for the rest of the records (NPR-31182).
@@ -718,7 +718,7 @@ Remove one mention of this fix.
 
 * Two calendar pop-ups appear on selecting the Due Date option in a Translation Job (NPR-31270).
 
-### Platform {#platform}
+### Platform
 
 * The Mime type option in the Web console does not work (NPR-31108).
 
@@ -738,7 +738,7 @@ Remove one mention of this fix.
 
 * The `org.apache.sling.distribution.api` bundle is hidden in the configuration manager and therefore not available to custom bundles (NPR-31720).
 
-### Projects {#projects}
+### Projects
 
 * Switching calendar views does not work (NPR-31271).
 
@@ -847,7 +847,7 @@ Some key highlights of this service pack release are:
 * Fix to ensure that Asset UI column view shows tenant-specific content only.
 * Fix to allow style accordion changes to reflect in search results.
 
-### Assets {#assets}
+### Assets
 
 **Product Enhancements**
 
@@ -954,7 +954,7 @@ Some key highlights of this service pack release are:
 
 * Upgraded instance from 6.3.3.2 to 6.5 is resulting in duplicate OSGi configurations. NPR-30130: Hotfix for CQ-4274016
 
-### Integration {#integration}
+### Integration
 
 * The customized content is not displayed correctly on the publish instance until the restart of the instance. NPR-30377: Hotfix for CQ-4273706
 * When configuring Launch on a website, the library address has a slash (/) pre-pended causing manual intervention each time. NPR-30694: Hotfix for CQ-4275501
@@ -969,7 +969,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
 * Added 'Auto' setting to `RenderAtClient` in `PDFFormRenderOptions` API for [!DNL Experience Manager] Forms OSGi.
 
-#### Forms add-on package {#forms-add-on-package}
+#### Forms add-on package
 
 **Back end integration**
 
@@ -999,7 +999,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
 * When using NonVisual Desktop Access in Browse mode to read an HTML5 form, the Chrome browser reads "graphic" before each Scalable Vector Graphic (SVG) in the form design. NPR-30449: Hotfix for CQ-4274732
 
-#### Forms JEE installer {#forms-jee-installer}
+#### Forms JEE installer
 
 **Forms - Document Security**
 
@@ -1014,7 +1014,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 * HTMLtoPDF service is not show maxReuseCount in JMX console. NPR-30134, NPR-30304: Hotfix for CQ-4273763
 * Adding or editing a Web Service connection by invoking web services from [!DNL Experience Manager Forms] Workbench throws an error: ClassNotFoundException org.apache.axis.message.SOAPBodyElement. NPR-30105: Hotfix for CQ-4273217
 
-### Feature Packs Included {#feature-packs-included}
+### Feature Packs Included
 
 >[!NOTE]
 >
