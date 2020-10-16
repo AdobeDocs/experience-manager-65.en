@@ -39,7 +39,7 @@ Using tags, as a metadata, you can easily search assets, create collections usin
 For more information, see the following articles:
 
 * [About tags in Experience Manager](/help/sites-authoring/tags.md)
-* [Edit asset metadata](meta-edit.md)
+* [Edit asset metadata](metadata.md)
 * [Enhanced Smart Tags in Assets](enhanced-smart-tags.md)
 
 ## Organize as collections {#organize-as-collections}
@@ -62,6 +62,6 @@ Standardizing metadata usage, file naming, and folder structure ensures that as 
 >[!MORELIKETHIS]
 >
 >* [Profiles to process metadata, images, and videos](processing-profiles.md).
->* [Metadata profiles](metadata-profiles.md).
+>* [Metadata profiles](/help/assets/metadata-config.md#metadata-profiles).
 >* [Video profiles](video-profiles.md).
 >* [Dynamic Media image profiles](image-profiles.md).

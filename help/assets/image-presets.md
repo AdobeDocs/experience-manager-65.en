@@ -23,6 +23,10 @@ This section describes how to use image presets. [Administrators can create and 
 
 You can apply an image preset to an image anytime you preview it.
 
+>[!NOTE]
+>
+>In Dynamic Media - Scene7 mode, image presets are supported for image assets only.
+
 **To apply Dynamic Media Image Presets**
 
 1. Open the asset and in the left rail, tap the drop-down menu, then tap **[!UICONTROL Renditions.]**
