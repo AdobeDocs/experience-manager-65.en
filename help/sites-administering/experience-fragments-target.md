@@ -21,6 +21,7 @@ docset: aem65
 >6.5.3.0
 >
 >* **Externalizer Domains** can now be selected.
+>  **Note:** Externalizer Domains are only relevant to the content of the Experience Fragment that is sent to Target, and not metadata such as View Offer Content.
 >
 >6.5.2.0:
 >
@@ -120,7 +121,11 @@ The required options can be selected in **Page Properties** of the required fold
 
    >[!CAUTION]
    >
-   >The externalizer domain is optional. An AEM externalizer is configured when you want the exported content to point to a specific *publish* domain. For more details see [Configuring the AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >The externalizer domain is optional. 
+   >
+   > An AEM externalizer is configured when you want the exported content to point to a specific *publish* domain. For more details see [Configuring the AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >
+   > Also note that Externalizer Domains are only relevant to the content of the Experience Fragment that is sent to Target, and not metadata such as View Offer Content.
 
    For example, for a folder:
 

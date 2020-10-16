@@ -102,7 +102,7 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 1. Click **[!UICONTROL Delete Metadata Profiles]** in the toolbar.
 1. In the dialog, click **[!UICONTROL Delete]** to confirm the delete operation. The metadata profile is deleted from the list.
 
-<!-- TBD: Revisit to find out the correct config. and update these steps.
+<!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
 These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
@@ -262,7 +262,6 @@ Enter metadata values in the various fields and click **[!UICONTROL Save]** to s
 >[!MORELIKETHIS]
 >
 >* [Metadata concepts and understanding](metadata-concepts.md).
->* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
 >* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
 >* [Metadata import and export in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html).
 >* [Profiles to process metadata, images, and videos](processing-profiles.md).

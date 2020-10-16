@@ -61,7 +61,7 @@ XMP write-back is supported and enabled for the platforms and file formats descr
 * Change metadata properties to a common value
 * Add or modify tags
 
-To customize the metadata properties page, including adding, modifying, deleting metadata properties, use the schema editor.
+To customize the metadata properties page, including adding, modifying, deleting metadata properties, use the [schema editor](metadata-config.md#folder-metadata-schema).
 
 >[!NOTE]
 >
@@ -180,7 +180,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
-### Apply metadata profiles to folders from Profiles user interface {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### Apply metadata profiles to folders from [!UICONTROL Profiles] user interface {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 Follow the steps to apply metadata profile:
 
@@ -188,7 +188,7 @@ Follow the steps to apply metadata profile:
 1. Select the metadata profile that you want to apply to a folder or multiple folders.
 1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and click **[!UICONTROL Done]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
-### Apply metadata profiles to folders from Properties {#applying-metadata-profiles-to-folders-from-properties}
+### Apply metadata profiles to folders from [!UICONTROL Properties] {#applying-metadata-profiles-to-folders-from-properties}
 
 1. In the left rail, click **[!UICONTROL Assets]** then navigate to the folder that you want to apply a metadata profile to.
 1. On the folder, click the check mark to select it and then click **[!UICONTROL Properties]**.  
@@ -197,9 +197,11 @@ Follow the steps to apply metadata profile:
 
 Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
+<!-- TBD: Commenting as the topic in metadata-config.md is incomplete.
+
 ### Apply metadata profile globally {#metadata-profile-global}
 
-For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally).
+For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
 
 ### Remove a metadata profile from folders {#removing-a-metadata-profile-from-folders}
 
