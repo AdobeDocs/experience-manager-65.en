@@ -110,8 +110,8 @@ Your first custom domain is no additional cost with a Dynamic Media license.
 
 You must initiate the request to use smart imaging; it is not automatically enabled.
 
-1. Initiate a Technical Support request (email: `s7support@adobe.com`).
-1. Provide the following information in your support request:
+1. [Use the Admin Console to create a support case.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. Provide the following information in your support case:
 
     1. Primary contact name, email, phone.
     1. All domains to be enabled for smart imaging (that is, `images.company.com` or `mycompany.scene7.com`).
