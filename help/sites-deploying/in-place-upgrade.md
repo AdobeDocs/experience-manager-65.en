@@ -167,6 +167,10 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 To execute the upgrade, it is important to start AEM using the jar file to bring up the instance. For upgrading to 6.5, please also see other content restructuring and migration options in [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) that you can choose with the upgrade command.
 
+>[!IMPORTANT]
+>
+>If you are running Oracle Java 11 (or generally versions of Java newer than 8), additional switches will need to be added to your command line when starting AEM. For more information, see [Java 11 Considerations](/help/sites-deploying/custom-standalone-install.md#java-considerations).
+
 Note that starting AEM from the start script will not start the upgrade. Most customers start AEM using the start script and have customized this start script to include switches for environment configurations such as memory settings, security certificates, etc. For this reason, we recommend following this procedure to determine the proper upgrade command:
 
 1. On a running AEM instance, execute the following from the command line:
