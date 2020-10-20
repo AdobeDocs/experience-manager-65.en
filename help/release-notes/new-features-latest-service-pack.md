@@ -21,7 +21,7 @@ Page Move operation is now available in asynchronous mode. In addition to immedi
 
 ### Invalidate CDN cached content {#invalidate-cdn-cached-content}
 
-You can now use the[!DNL  Dynamic Media] user interface to invalidate Content Delivery Network (CDN) cached content. As a result, the updated assets are available instantly instead of waiting for the cache to expire. You can invalidate CDN by:
+You can now use the [!DNL Dynamic Media] user interface to invalidate Content Delivery Network (CDN) cached content. As a result, the updated assets are available instantly instead of waiting for the cache to expire. You can invalidate CDN by:
 
 * Creating a CDN invalidation template: Selecting assets and form associated template-based URLs
 
