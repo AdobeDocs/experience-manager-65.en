@@ -198,7 +198,7 @@ In addition, set the path of ImageMagick's temporary folder in the `configure.xm
 
 >[!CAUTION]
 >
->A mis-configuration can make your server unstable if ImageMagick uses all the available disk space. The policy changes required to process large files using ImageMagick may impact the [!DNLExperience Manager] performance. For more information, see [install and configure ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+>A mis-configuration can make your server unstable if ImageMagick uses all the available disk space. The policy changes required to process large files using ImageMagick may impact the [!DNL Experience Manager] performance. For more information, see [install and configure ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 >[!NOTE]
 >
