@@ -38,7 +38,7 @@ To install FFmpeg on **Windows**, follow these steps:
 
 To install FFmpeg on **Mac OS X**, follow these steps:
 
-1. Install Xcode available at [developer.apple.com/xcode](hhttps://developer.apple.com/xcode/).
+1. Install Xcode available at [developer.apple.com/xcode](https://developer.apple.com/xcode/).
 1. Install available at [XQuartz](https://www.xquartz.org) to get [X11](https://support.apple.com/en-us/HT201341).
 1. Install MacPorts available at [www.macports.org](https://www.macports.org/).
 1. In the console execute `sudo port install ffmpeg` command and follow the on-screen instructions. Ensure that the path of the `FFmpeg` executable is added to the `PATH` system variable.
