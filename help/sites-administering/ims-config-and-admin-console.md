@@ -1,8 +1,8 @@
 ---
-title:  Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
-seo-title:  Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
-description: Learn how to usethe[!DNL Admin Console] in AEM.
-seo-description: Learn how to usethe[!DNL Admin Console] in AEM.
+title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
+seo-title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
+description: Learn how to use the [!DNL Admin Console] in AEM.
+seo-description: Learn how to use the [!DNL Admin Console] in AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
