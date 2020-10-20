@@ -15,7 +15,7 @@ This guide covers all [!DNL Experience Manager Assets] tasks, such as how to cre
 
 * [Getting Started with Experience Manager](https://helpx.adobe.com/experience-manager/get-started.html)
 * [Experience Manager 6.5 Release Notes](/help/release-notes/home.md)
-* [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Recent Documentation Updates](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Security Checklist](/help/sites-administering/security-checklist.md)
 
 ## [!DNL Experience Manager] 6.5 guides
