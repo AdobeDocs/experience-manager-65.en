@@ -74,7 +74,8 @@ You can now configure the [!DNL Experience Manager Forms] server to [perform the
 
 ### Form data model integration with RESTful APIs on a server with two-way SSL implementation {#fdm-integration-rest-apis-two-way-ssl}
 
-[!DNL Experience Manager Forms] form data model can now integrate with RESTful APIs on a server that has a two-way SSL implemented on it.
+[!DNL Experience Manager Forms] form data model can now [integrate with RESTful APIs on a server that has a two-way SSL implemented on it](../../help/forms/using/configure-data-sources.md).
+
 
 ### Added support for [!DNL Adobe Sign] Text Tags in Automated Forms Conversion Service {#sign-integration-acroform-afcs}
 
