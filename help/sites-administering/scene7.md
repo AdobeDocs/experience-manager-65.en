@@ -411,7 +411,7 @@ However, if you do not want assets pushed to Dynamic Media Classic to publish au
 
 Before you can push assets to Dynamic Media Classic without publishing them, you must set up the following:
 
-1. Contact Dynamic Media Classic Customer Care (s7support@adobe.com) to enable secure preview for your Dynamic Media Classic account.
+1. [Use the Admin Console to create a support case.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) In your support case, request that secure preview be enabled for your Dynamic Media Classic account.
 1. Follow directions to [setup secure preview for your Dynamic Media Classic account.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
 
 These are the same steps you would follow to create any secure test setup in Dynamic Media Classic.
