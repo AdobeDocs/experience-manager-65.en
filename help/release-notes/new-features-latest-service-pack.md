@@ -21,7 +21,7 @@ Page Move operation is now available in asynchronous mode. In addition to immedi
 
 ### Invalidate CDN cached content {#invalidate-cdn-cached-content}
 
-You can now use the[!DNL  Dynamic Media] user interface to invalidate Content Delivery Network (CDN) cached content. As a result, the updated assets are available instantly instead of waiting for the cache to expire. You can invalidate CDN by:
+You can now use the [!DNL Dynamic Media] user interface to invalidate Content Delivery Network (CDN) cached content. As a result, the updated assets are available instantly instead of waiting for the cache to expire. You can invalidate CDN by:
 
 * Creating a CDN invalidation template: Selecting assets and form associated template-based URLs
 
@@ -74,7 +74,8 @@ You can now configure the [!DNL Experience Manager Forms] server to [perform the
 
 ### Form data model integration with RESTful APIs on a server with two-way SSL implementation {#fdm-integration-rest-apis-two-way-ssl}
 
-[!DNL Experience Manager Forms] form data model can now integrate with RESTful APIs on a server that has a two-way SSL implemented on it.
+[!DNL Experience Manager Forms] form data model can now [integrate with RESTful APIs on a server that has a two-way SSL implemented on it](../../help/forms/using/configure-data-sources.md).
+
 
 ### Added support for [!DNL Adobe Sign] Text Tags in Automated Forms Conversion Service {#sign-integration-acroform-afcs}
 

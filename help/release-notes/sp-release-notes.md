@@ -32,15 +32,15 @@ The key features and enhancements introduced in Adobe Experience Manager 6.5.6.0
 
 * The default options for `test` and `aiprocess` are updated to `Thumbnail`, from `Rasterize` previously in Dynamic Media, to ensure that users need to create only thumbnail and skip the page extraction and keyword extraction.
 
-* Prefill an adaptive form at the client.
+* [Prefill an adaptive form at the client](../../help/forms/using/prepopulate-adaptive-form-fields.md#prefill-at-client).
 
-* Form data model integration with RESTful APIs on a server with two-way SSL implementation.
+* [Form data model integration with RESTful APIs on a server with two-way SSL implementation](../../help/forms/using/configure-data-sources.md).
 
-* Enhanced caching for translated adaptive form pages.
+* [Enhanced caching for translated adaptive form pages](../../help/forms/using/configure-adaptive-forms-cache.md).
 
-* Support for Adobe Sign Text Tags in Automated Forms Conversion Service.
+* Support for [Adobe Sign Text Tags in Automated Forms Conversion Service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
 
-* Support to convert colored forms to adaptive forms using [!DNL Automated Forms Conversion service].
+* Support to [convert colored forms to adaptive forms](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) using [!DNL Automated Forms Conversion service].
 
 * Support for SMB 2 and SMB 3 protocols.
 
