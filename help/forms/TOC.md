@@ -9,7 +9,7 @@ user-guide-description: Create, manage, publish, and update digital forms.
 ---
 # Adobe Experience Manager 6.5 Forms Guide {#forms}
 
-+ [AEM 6.5 Forms User Guide](home.md)
++ [AEM 6.5 Forms Guide](home.md)
 + Release Notes {#release-notes-new-features}
   + [Release Notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html#experience-manager-forms)
   + [New features summary](using/whats-new.md)
