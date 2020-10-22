@@ -88,10 +88,6 @@ After prerequisites are in place, perform the following steps to configure Adobe
 1. Publish the configuration. 
 1. Use [replication](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) to create identical configuration on corresponding publish instances. 
 
-   >[!NOTE]
-   >
-   >Although cloud configuration used in adaptive form are also published when an adaptive form is published, it is advised to use [replication](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) to create Adobe Sign related Cloud configuration (identical to author instance) on all the publish instances and not rely on adaptive form to publish the configuration. 
-
 Now, Adobe Sign is integrated with AEM Forms and ready for use in adaptive forms. To [use Adobe Sign service in an adaptive form](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), specify the configuration container created above in adaptive form properties.
 
 
