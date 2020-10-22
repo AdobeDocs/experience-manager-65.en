@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager 6.5 Forms Guide
-seo-title: AEM 6.5 Forms User Guide
+seo-title: AEM 6.5 Forms Guide
 description: This guide covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 ---
@@ -16,7 +16,7 @@ This guide covers all AEM Forms tasks, including how to create, manage, publish,
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)
 
-## AEM 6.5 user guides
+## AEM 6.5 guides
 
 | User Guide | Description |
 |--- |---|

@@ -16,7 +16,7 @@ Before you use the Smart Content Service, ensure the following:
   <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
   -->
 
-* Install the latest [Experience Manager service pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+* Install the latest [Experience Manager service pack](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ## Integrate with Adobe Developer Console {#integrate-adobe-io}
 
