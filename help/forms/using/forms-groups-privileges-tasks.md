@@ -17,7 +17,7 @@ docset: aem65
 
 You can [create groups](/help/sites-administering/user-group-ac-admin.md#group-administration) and assign policies and [users](/help/sites-administering/user-group-ac-admin.md#user-administration) to the groups in AEM. These policies control privileges of the users that are part of the group.
 
-Once you install [AEM Forms add-on package](../../forms/using/installing-configuring-aem-forms-osgi.md), the groups mentioned in this article, such as forms-user and forms-power-user, are automatically available for assignment. The following table lists the tasks a user can perform for AEM Forms on OSGi based on the group assignments:
+Once you install [AEM Forms add-on package](../../forms/using/installing-configuring-aem-forms-osgi.md), the groups mentioned in this article, such as forms-users and forms-power-user, are automatically available for assignment. The following table lists the tasks a user can perform for AEM Forms on OSGi based on the group assignments:
 
 <table>
  <tbody>
@@ -26,7 +26,7 @@ Once you install [AEM Forms add-on package](../../forms/using/installing-configu
    <td>Tasks</td> 
   </tr>
   <tr>
-   <td>forms-user <sup>[1]</sup></td> 
+   <td>forms-users <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Create, preview, publish, and submit adaptive forms</li> 
@@ -104,6 +104,6 @@ Once you install [AEM Forms add-on package](../../forms/using/installing-configu
  </tbody>
 </table>
 
-1. The user with forms-user group privileges cannot write scripts for adaptive forms.
+1. The user with forms-users group privileges cannot write scripts for adaptive forms.
 1. The user with template-authors group privileges cannot write scripts for templates.
 
