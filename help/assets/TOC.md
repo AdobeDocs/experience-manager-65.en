@@ -140,7 +140,7 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
     + [Create translation projects](translation-projects.md)
     + [Prepare assets for translation](preparing-assets-for-translation.md)
     + [Download assets from Experience Manager](download-assets-from-aem.md)
-    + [Lightbox](touch-ui-light-box.md)
+    + [Lightbox](light-box.md)
     + [Asset insights](asset-insights.md)
     + [Enable asset insights through DTM](touch-ui-using-dtm-for-asset-insights.md)
     + [Configure asset insights](configure-asset-insights.md)
