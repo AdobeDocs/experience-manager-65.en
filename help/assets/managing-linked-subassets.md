@@ -21,7 +21,7 @@ You can reference existing digital assets from within an [!DNL Adobe Illustrator
 1. Using [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html), fetch the digital assets on the local filesystem. Navigate to the filesystem location of the asset that you want to reference.
 1. Drag the asset from the local folder to the [!DNL Illustrator] file.
 
-1. Save the [!DNL Illustrator] file to the mounted drive, or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the [!DNL Experience Manager] repository.
+1. Save the [!DNL Illustrator] file to the mounted drive, or [upload](/help/assets/manage-assets.md#uploading-assets) to the [!DNL Experience Manager] repository.
 
 1. After the workflow completes, go to the asset details page for the asset. The references to existing digital assets are listed under **[!UICONTROL Dependencies]** in the **[!UICONTROL References]** column.
 
@@ -65,7 +65,7 @@ This procedure is similar to [add digital assets as references in Adobe Illustra
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
-1. Save in [!DNL Photoshop] file to the mounted drive or or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the [!DNL Experience Manager] repository.
+1. Save in [!DNL Photoshop] file to the mounted drive or or [upload](/help/assets/manage-assets.md#uploading-assets) to the [!DNL Experience Manager] repository.
 1. After the workflow completes, the references to existing [!DNL Experience Manager] assets are listed in the asset details page.
 
    To view the referenced assets, close the [Rail](/help/sites-authoring/basic-handling.md#rail-selector) in the asset details page.

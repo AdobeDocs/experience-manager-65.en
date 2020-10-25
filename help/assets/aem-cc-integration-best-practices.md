@@ -32,7 +32,7 @@ Read on to know what integrations to pick between desktop and the enterprise-gra
 | Business users simplify opening and using assets, editing and uploading changes to [!DNL Experience Manager], and uploading new files into [!DNL Experience Manager] from the desktop environment. They use a generic integration to open any asset type in the native desktop application, including non-Adobe ones. | [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] desktop app on Win and Mac desktop |
 | Marketers and business users discover, preview, license and save, and manage the [!DNL Adobe Stock] assets from within [!DNL Experience Manager]. Licensed and saved assets provide select [!DNL Adobe Stock] metadata for better governance. | [Experience Manager and Adobe Stock integration](aem-assets-adobe-stock.md) | [!DNL Experience Manager] web interface |
 
-This article focuses primarily on the first two aspects of the collaboration needs. Distribution and sourcing of assets at scale is briefly mentioned as a use case. For such needs solutions, consider Adobe Brand Portal or Asset Share Commons. Alternate solutions such as [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [Experience Manager Assets](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
+This article focuses primarily on the first two aspects of the collaboration needs. Distribution and sourcing of assets at scale is briefly mentioned as a use case. For such needs solutions, consider Adobe Brand Portal or Asset Share Commons. Alternate solutions such as [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [Experience Manager Assets](/help/assets/manage-assets.md) should be reviewed based on specific requirement.
 
 ![Creative Cloud connections for Experience Manager, decide which capability to use](assets/creative-connections-aem.png)
 
@@ -46,13 +46,13 @@ This article focuses primarily on the first two aspects of the collaboration nee
 | Discover - browse DAM folders | Yes | [!DNL Experience Manager] Web interface and desktop actions | |
 | Discover - access DAM collections| Yes | [!DNL Experience Manager] Web interface and desktop actions | |
 | Discover - search for assets from DAM | Yes | [!DNL Experience Manager] Web interface and desktop actions| |
-| Use - open asset | Yes | Yes | [Open from Web interface](managing-assets-touch-ui.md#previewing-assets) or from Finder |
+| Use - open asset | Yes | Yes | [Open from Web interface](manage-assets.md#previewing-assets) or from Finder |
 | Use - place asset from DAM into a document | Yes - embedding | Yes - linking or embedding | [!DNL Experience Manager] desktop app gives access to assets as files on the local file system. These links in the native apps are represented by local paths. |
 | Edit - open for editing | Yes - Check-out action | Yes - Open action (in the network share) | [Check-out in AAL](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) saves the asset to user's creative cloud storage account (synchronized by Creative Cloud app) by default. |
 | Edit - work in progress outside DAM | Yes - Asset available in user's Creative Cloud storage account synced to desktop. | Yes | |
 | Edit - upload changes | Yes - [Check-in action](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) with optional comment | Yes | |
-| Upload - single file | Yes - uploads current active document | Yes | [Upload via web interface](managing-assets-touch-ui.md#uploading-assets) |
-| Upload - multiple files / hierarchical folder structures | No | Yes | [Upload via web interface](managing-assets-touch-ui.md#uploading-assets) or via custom scripting or tool. |
+| Upload - single file | Yes - uploads current active document | Yes | [Upload via web interface](manage-assets.md#uploading-assets) |
+| Upload - multiple files / hierarchical folder structures | No | Yes | [Upload via web interface](manage-assets.md#uploading-assets) or via custom scripting or tool. |
 | Misc - user and login | Creative Cloud user logged into Creative Cloud desktop app gets recognized (SSO) | [!DNL Experience Manager] user and credentials | Users of both solutions count towards the [!DNL Experience Manager] user quota. |
 | Misc - network and access | Requires access from user's desktop to [!DNL Experience Manager] deployment over network | Requires access from user's desktop to [!DNL Experience Manager] deployment over network | [!DNL Adobe Asset Link] does not share network proxy environment. |
 | Misc - Migrate large number of assets | No | No | [Assets migration guide](assets-migration-guide.md) |
@@ -62,7 +62,7 @@ To support asset distribution use cases, other solutions should be considered:
 * [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for a configurable, SaaS add-on to [!DNL Experience Manager Assets] to publish assets.
 * Custom solutions are created based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) code base.
 * [!DNL Experience Manager] [link share](/help/assets/link-sharing.md) to share assets ad hoc using links.
-* [Experience Manager Assets web interface](/help/assets/managing-assets-touch-ui.md) with areas for external parties secured by [!DNL Experience Manager] access control setup and with necessary IT / network configuration adjustments, giving these external users access to [!DNL Experience Manager].
+* [Experience Manager Assets web interface](/help/assets/manage-assets.md) with areas for external parties secured by [!DNL Experience Manager] access control setup and with necessary IT / network configuration adjustments, giving these external users access to [!DNL Experience Manager].
 
 ## Key concepts and use cases {#key-concepts-and-use-cases}
 

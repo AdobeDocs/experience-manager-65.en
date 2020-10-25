@@ -23,7 +23,7 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET.]** In 
 
 >[!NOTE]
 >
->For information on the Assets user interface, see [Managing assets with the Touch UI](/help/assets/managing-assets-touch-ui.md).
+>For information on the Assets user interface, see [Managing assets with the Touch UI](/help/assets/manage-assets.md).
 
 ## Quick Start: Spin Sets {#quick-start-spin-sets}
 
@@ -71,13 +71,13 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
    See [Linking a Spin Set to a web page](/help/assets/linking-urls-to-yourwebapplication.md) and [Embedding the Video or Image Viewer](/help/assets/embed-code.md).
 
-If you need to, you can [edit Spin Sets](#editing-spin-sets). In addition, you can view and modify [Spin Set properties](/help/assets/managing-assets-touch-ui.md#editing-properties).
+If you need to, you can [edit Spin Sets](#editing-spin-sets). In addition, you can view and modify [Spin Set properties](/help/assets/manage-assets.md#editing-properties).
 
 ## Uploading Assets for Spin Sets {#uploading-assets-for-spin-sets}
 
 At minimum, you need 8-12 shots of an item for a one-dimensional Spin Set and 16-24 for a two-dimensional Spin Set. The shots must be taken at regular intervals to give the impression that the item is rotating and being flipped. For example, if a one-dimensional Spin Set includes 12 shots, rotate the item 30 degrees (360/12) for each shot.
 
-You can upload images for the Spin Sets as you would [upload any other asset in AEM Assets](/help/assets/managing-assets-touch-ui.md).
+You can upload images for the Spin Sets as you would [upload any other asset in AEM Assets](/help/assets/manage-assets.md).
 
 ### Guidelines for capturing images for your Spin Set {#guidelines-for-shooting-spin-set-images}
 

@@ -21,7 +21,7 @@ Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMed
 
 >[!NOTE]
 >
->For information on the Assets user interface, see [Managing assets with the Touch UI](/help/assets/managing-assets-touch-ui.md).
+>For information on the Assets user interface, see [Managing assets with the Touch UI](/help/assets/manage-assets.md).
 
 ## Quick Start: Mixed Media Sets {#quick-start-mixed-media-sets}
 
@@ -61,7 +61,7 @@ To get you up and running quickly with Mixed Media Sets, follow these steps:
 
    See [Linking a Mixed Media Set to a web page](/help/assets/linking-urls-to-yourwebapplication.md) and [Embedding the Video or Image Viewer](/help/assets/embed-code.md).
 
-If you need to, you can edit [Mixed Media Sets](#editing-mixed-media-sets). In addition, you can view and modify [Mixed Media Set properties](/help/assets/managing-assets-touch-ui.md#editing-properties).
+If you need to, you can edit [Mixed Media Sets](#editing-mixed-media-sets). In addition, you can view and modify [Mixed Media Set properties](/help/assets/manage-assets.md#editing-properties).
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 ## Editing Mixed Media Sets {#editing-mixed-media-sets}
 
-You can perform a variety of editing tasks to assets in Mixed Media Sets directly in the user interface [as you would any asset in Assets](/help/assets/managing-assets-touch-ui.md). You can also perform the following actions in Mixed Media Sets:
+You can perform a variety of editing tasks to assets in Mixed Media Sets directly in the user interface [as you would any asset in Assets](/help/assets/manage-assets.md). You can also perform the following actions in Mixed Media Sets:
 
 * Add assets to the Mixed Media Set.
 * Re-order assets in the Mixed Media Set.

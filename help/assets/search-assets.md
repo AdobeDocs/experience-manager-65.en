@@ -367,7 +367,7 @@ To improve the speed of discovery, [!DNL Experience Manager Assets] offers searc
 
 ### Extract text when uploading assets {#extracttextupload}
 
-You can configure [!DNL Experience Manager] to extract the text from the assets when users upload assets, such as PSD or PDF files. [!DNL Experience Manager] indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+You can configure [!DNL Experience Manager] to extract the text from the assets when users upload assets, such as PSD or PDF files. [!DNL Experience Manager] indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-assets.md#uploading-assets).
 
 If text extraction becomes too resource-intensive for your deployment, consider [disabling text extraction](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html).
 

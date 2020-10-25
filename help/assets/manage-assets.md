@@ -730,7 +730,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 1. Navigate to the location of the asset to which you want to add annotations.
 1. Click the **[!UICONTROL Annotate]** option from one of the following:
 
-    * [Quick actions](/help/assets/managing-assets-touch-ui.md#quick-actions)
+    * [Quick actions](/help/assets/manage-assets.md#quick-actions)
     * From the toolbar after selecting the asset or navigating to the asset page.
 
 1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
@@ -795,7 +795,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 1. Do one of the following:
 
     * To print all the annotations and the review status, skip step 3 and directly go to step 4.
-    * To print specific annotations and review status, open the [timeline](/help/assets/managing-assets-touch-ui.md#timeline) and then go to step 3.
+    * To print specific annotations and review status, open the [timeline](/help/assets/manage-assets.md#timeline) and then go to step 3.
 
 1. To print specific annotations, select the annotations from the timeline.
 
@@ -825,7 +825,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
    >
    >If the asset has subassets, you can print all the subassets along with their specific page-wise annotations.
 
-   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/managing-assets-touch-ui.md#annotating).
+   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-assets.md#annotating).
 
    ![Configuration to print asset annotation on PDF document](assets/annotation-print-pdf-config.png)
 
