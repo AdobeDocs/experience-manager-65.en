@@ -10,7 +10,7 @@ Using the demo package, you can enable Adobe Asset Insights to capture data from
 
 ## [!DNL Use Experience Manager Assets] Insights with sample web page  {#using-aem-assets-insights-with-sample-web-page}
 
-1. Configure Asset Insights using the instructions in [Configuring Asset Insights](touch-ui-configuring-asset-insights.md).
+1. Configure Asset Insights using the instructions in [Configuring Asset Insights](configure-asset-insights.md).
 1. Download the sample Assets package from below and install the package from CRXDE package manager.
 
    [Get File](assets/insightsdemo.zip)

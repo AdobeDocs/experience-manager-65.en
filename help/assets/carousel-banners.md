@@ -174,7 +174,7 @@ Consider the following examples of quick view URLs and their resulting hotspot o
 
 If you have already uploaded the images that you want to use, advance to the next step, [Creating Carousel Sets](#creating-carousel-sets). Please note the images used in the carousel must be uploaded after Dynamic Media has been enabled.
 
-To upload image banners, see [Uploading assets](/help/assets/managing-assets-touch-ui.md).
+To upload image banners, see [Uploading assets](/help/assets/manage-assets.md).
 
 ## Creating Carousel Sets {#creating-carousel-sets}
 

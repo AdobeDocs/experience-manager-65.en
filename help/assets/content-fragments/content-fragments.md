@@ -201,7 +201,7 @@ The content fragment assets are made up of the following parts (either directly 
   * The assets are [associated to fragments via collections](/help/assets/content-fragments/content-fragments-assoc-content.md); associated collections allow the author to decide which assets to use when they are authoring the page.
 
     * Collections can be associated to fragments via templates, as default content, or by authors during fragment authoring.
-    * [Assets (DAM) Collections](/help/assets/managing-collections-touch-ui.md) are the basis for the associated content of fragments.
+    * [Assets (DAM) Collections](/help/assets/manage-collections.md) are the basis for the associated content of fragments.
 
   * Optionally you can also add the fragment itself to a collection to aid tracking.
 

@@ -60,7 +60,7 @@ When working with digital assets in [!DNL Experience Manager], you need to under
 
 * **Renditions**: A rendition is the binary representation of an asset. [!DNL Assets] always have a primary representation - that of the uploaded file. They can have any number of additional representations that are created, for example by customized workflow steps or when an asset is uploaded. Renditions may be of a different size, with a different resolution, with an added watermark, or some other changed characteristic.
 
-* **Versions**: Versioning creates a snapshot of digital assets at a specific point in time. You can restore assets to previous versions. See [versioning in Assets](managing-assets-touch-ui.md#asset-versioning).
+* **Versions**: Versioning creates a snapshot of digital assets at a specific point in time. You can restore assets to previous versions. See [versioning in Assets](manage-assets.md#asset-versioning).
 
 * **Sub-assets**: Sub-assets are assets that make up an asset, for example, layers in an [!DNL Adobe Photoshop] file or pages in a PDF file. In [!DNL Assets], you can manage sub-assets as you would assets.
 
