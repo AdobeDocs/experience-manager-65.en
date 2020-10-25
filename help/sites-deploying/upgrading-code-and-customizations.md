@@ -127,7 +127,7 @@ You can prepare customizations to the Assets UI by doing the following:
 
 ### Generating Asset IDs for Existing Assets {#generating-asset-ids-for-existing-assets}
 
-To generate asset IDs for existing assets, upgrade the assets when you upgrade your AEM instance to run AEM 6.5. This is required to enable the [Assets Insights feature](/help/assets/asset-insights.md). For more details, see [Add embed code](/help/assets/touch-ui-using-page-tracker.md#add-embed-code).
+To generate asset IDs for existing assets, upgrade the assets when you upgrade your AEM instance to run AEM 6.5. This is required to enable the [Assets Insights feature](/help/assets/asset-insights.md). For more details, see [Add embed code](/help/assets/use-page-tracker.md#add-embed-code).
 
 To upgrade assets, configure the Associate Asset IDs package in the JMX console. Depending on the number of assets in the repository, `migrateAllAssets` may take a long time. Our internal tests estimate roughly one hour for 125 thousand assets on TarMK.
 

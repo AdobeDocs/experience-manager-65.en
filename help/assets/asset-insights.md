@@ -51,7 +51,7 @@ You can view the Asset Insights scores from the metadata page.
    >
    >Unlike the data in the Solutions section, the Performance Statistics section displays the most recent data.
 
-1. To obtain the embed code for the asset that you include in websites to gets performance data, click **[!UICONTROL Get Embed Code]** below the asset thumbnail. For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and embed code in web pages](/help/assets/touch-ui-using-page-tracker.md).
+1. To obtain the embed code for the asset that you include in websites to gets performance data, click **[!UICONTROL Get Embed Code]** below the asset thumbnail. For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and embed code in web pages](/help/assets/use-page-tracker.md).
 
    ![chlimage_1-98](assets/chlimage_1-303.png)
 
