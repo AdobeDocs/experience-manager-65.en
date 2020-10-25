@@ -152,7 +152,7 @@ The fetched assets can be used as any other local asset, except that the associa
 
 ## Limitations and best practices {#tips-and-limitations}
 
-* To get insights about asset usage, configure the [Asset Insight](/help/assets/touch-ui-asset-insights.md) functionality on the [!DNL Sites] instance.
+* To get insights about asset usage, configure the [Asset Insight](/help/assets/asset-insights.md) functionality on the [!DNL Sites] instance.
 
 ### Permissions and asset management {#permissions-and-managing-assets}
 
