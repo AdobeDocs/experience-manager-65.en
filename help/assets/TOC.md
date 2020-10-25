@@ -133,7 +133,7 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
     + [Creating translation projects for Content Fragments](creating-translation-projects-for-content-fragments.md)
 + Manage Assets {#managing}
     + [Manage digital assets](managing-assets-touch-ui.md)
-    + [Manage collections](managing-collections-touch-ui.md)
+    + [Manage collections](manage-collections.md)
     + [Enable duplicate detection](duplicate-detection.md)
     + [Organize digital assets](organize-assets.md)
     + [Manage video assets](managing-video-assets.md)

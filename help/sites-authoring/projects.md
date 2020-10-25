@@ -76,7 +76,7 @@ You upload assets directly in the tile. In addition you can create Image Sets, S
 
 ### Asset Collections {#asset-collections}
 
-Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.
+Similar to assets, you can add [asset collections](/help/assets/manage-collections.md) directly to your project. You define collections in Assets.
 
 ![chlimage_1-72](assets/chlimage_1-72.png)
 

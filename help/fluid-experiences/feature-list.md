@@ -30,7 +30,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 |[Image renditions](/help/assets/image-presets.md)|
 |[Metadata and tag management](/help/assets/metadata.md)|
 |[Search](/help/assets/managing-assets-touch-ui.md)|
-|[Collections](/help/assets/managing-collections-touch-ui.md) and [lightbox](/help/assets/touch-ui-light-box.md)|
+|[Collections](/help/assets/manage-collections.md) and [lightbox](/help/assets/touch-ui-light-box.md)|
 |[Profiles](/help/assets/processing-profiles.md)|
 |[Version control](/help/assets/managing-assets-touch-ui.md)|
 |[Duplicate detection](/help/assets/duplicate-detection.md)|

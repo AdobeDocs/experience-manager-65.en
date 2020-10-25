@@ -81,5 +81,5 @@ After publishing, you can include the video assets in a web page as a URL or dir
 >[!MORELIKETHIS]
 >
 >* [Manage digital assets in Experience Manager Assets](/help/assets/managing-assets-touch-ui.md)
->* [Manage collections in Experience Manager Assets](/help/assets/managing-collections-touch-ui.md)
+>* [Manage collections in Experience Manager Assets](/help/assets/manage-collections.md)
 >* [Dynamic Media video documentation](/help/assets/video.md).

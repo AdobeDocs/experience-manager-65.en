@@ -46,7 +46,7 @@ For more information, see the following articles:
 
 With asset collections in [!DNL Experience Manager Assets], you can streamline the ability to create, edit and share assets between users. Create several types of collections based on the way you use them, including collections that contain a static reference list of assets, folders and collections, as well as collections that pull in assets based on search criteria.  You also can create collections with assets from different locations and share them with multiple users with different levels of access, viewing and editing privileges.
 
-For more information, see [manage collections](managing-collections-touch-ui.md)
+For more information, see [manage collections](manage-collections.md)
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.

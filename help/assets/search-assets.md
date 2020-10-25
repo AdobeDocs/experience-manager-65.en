@@ -28,7 +28,7 @@ Search for assets using the Omnisearch field at the top of the [!DNL Experience 
 
 Use the **[!UICONTROL Filters]** panel to narrow your search by filtering search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. Your administrators can customize the Filters panel and add or remove search predicates using search facets. The [!UICONTROL File Type] filter in the [!UICONTROL Filters] panel has mixed-state checkboxes. Therefore, unless you select all the nested predicates (or formats) the first-level checkboxes are partially checked.
 
-[!DNL Experience Manager] search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager] search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/manage-collections.md).
 
 ## Understand search interface {#searchui}
 
@@ -215,7 +215,7 @@ Authors can use Content Finder to search the DAM repository for the relevant ass
 
 ### Search collections {#collections}
 
-[!DNL Experience Manager] search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager] search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/manage-collections.md).
 
 ## Asset selector {#assetpicker}
 
@@ -440,7 +440,7 @@ A collection is an ordered set of assets that can include assets from different 
 * A static reference list of assets, folders, and other collections.
 * A dynamic list (smart collection) that populates assets in the collection based on a search criteria.
 
-You can create smart collections based on the search criteria. From the **[!UICONTROL Filters]** panel, select **[!UICONTROL Files]** and click **[!UICONTROL Save Smart Collection]**. See [manage collections](/help/assets/managing-collections-touch-ui.md).
+You can create smart collections based on the search criteria. From the **[!UICONTROL Filters]** panel, select **[!UICONTROL Files]** and click **[!UICONTROL Save Smart Collection]**. See [manage collections](/help/assets/manage-collections.md).
 
 ## Troubleshoot unexpected search results and issues {#troubleshoot-unexpected-search-results-and-issues}
 

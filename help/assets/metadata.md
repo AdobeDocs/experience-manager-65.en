@@ -155,7 +155,7 @@ A few use cases for exporting metadata in bulk are:
 
 ## Edit metadata of collections {#collections-metadata}
 
-For details, see [view and edit collection metadata](/help/assets/managing-collections-touch-ui.md#view-edit-collection-metadata) and [edit metadata of multiple collections in bulk](/help/assets/managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
+For details, see [view and edit collection metadata](/help/assets/manage-collections.md.md#view-edit-collection-metadata) and [edit metadata of multiple collections in bulk](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
 
 ## Apply a metadata profile to folders {#applying-a-metadata-profile-to-folders}
 
@@ -234,7 +234,7 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 >[!MORELIKETHIS]
 >
 >* [Metadata concepts and understanding](metadata-concepts.md).
->* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+>* [Edit metadata properties of multiple collections](manage-collections.md#editing-collection-metadata-in-bulk)
 >* [Metadata import and export in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.

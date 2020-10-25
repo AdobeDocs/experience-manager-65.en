@@ -711,7 +711,7 @@ The timeline lets you view various events for a selected item, such as active wo
 
 >[!NOTE]
 >
->In the [Collections console](/help/assets/managing-collections-touch-ui.md#navigating-the-collections-console), the **[!UICONTROL Show All]** list provides options to view comments and workflows only. Moreover, the timeline is displayed only for top-level collections that are listed in the console. It is not displayed if you navigate inside any of the collections.
+>In the [Collections console](/help/assets/manage-collections.md#navigating-the-collections-console), the **[!UICONTROL Show All]** list provides options to view comments and workflows only. Moreover, the timeline is displayed only for top-level collections that are listed in the console. It is not displayed if you navigate inside any of the collections.
 
 >[!NOTE]
 >
@@ -923,4 +923,4 @@ A collection is an ordered set of assets. Use collections to share related asset
 * A collection can include assets from different locations because they only contain references to these assets. Each collection maintains the referential integrity of assets.
 * You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
 
-See [manage collections](/help/assets/managing-collections-touch-ui.md) for details on collection management.
+See [manage collections](/help/assets/manage-collections.md) for details on collection management.
