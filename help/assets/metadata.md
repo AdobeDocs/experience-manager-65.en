@@ -155,7 +155,7 @@ A few use cases for exporting metadata in bulk are:
 
 ## Edit metadata of collections {#collections-metadata}
 
-For details, see [view and edit collection metadata](/help/assets/manage-collections.md.md#view-edit-collection-metadata) and [edit metadata of multiple collections in bulk](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
+For details, see [view and edit collection metadata](/help/assets/manage-collections.md#view-edit-collection-metadata) and [edit metadata of multiple collections in bulk](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
 
 ## Apply a metadata profile to folders {#applying-a-metadata-profile-to-folders}
 
