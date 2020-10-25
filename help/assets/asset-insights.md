@@ -12,7 +12,7 @@ The Asset Insights feature enables you to track user ratings and usage statistic
 
 For [!DNL Assets] Insights to capture usage statistics for images from a website, you must include the embed code for the image in the website code.
 
-To let Asset Insights display usage statistics for assets, first configure the feature to fetch reporting data from Adobe Analytics. For details, see [Configure Asset Insights](/help/assets/touch-ui-configuring-asset-insights.md).
+To let Asset Insights display usage statistics for assets, first configure the feature to fetch reporting data from Adobe Analytics. For details, see [Configure Asset Insights](/help/assets/configure-asset-insights.md).
 
 >[!NOTE]
 >
