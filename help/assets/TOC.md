@@ -142,7 +142,7 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
     + [Download assets from Experience Manager](download-assets-from-aem.md)
     + [Lightbox](light-box.md)
     + [Asset insights](asset-insights.md)
-    + [Enable asset insights through DTM](touch-ui-using-dtm-for-asset-insights.md)
+    + [Enable asset insights through DTM](use-dtm-for-asset-insights.md)
     + [Configure asset insights](configure-asset-insights.md)
     + [Check in and check out assets](check-out-and-submit-assets.md)
     + [Apply translation cloud services to folders](transition-cloud-services.md)
