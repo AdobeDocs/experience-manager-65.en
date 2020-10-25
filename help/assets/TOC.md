@@ -132,7 +132,7 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
     + [Content Fragments - Markdown](content-fragments/content-fragments-markdown.md)
     + [Creating translation projects for Content Fragments](creating-translation-projects-for-content-fragments.md)
 + Manage Assets {#managing}
-    + [Manage digital assets(manage-assets.md)
+    + [Manage digital assets](manage-assets.md)
     + [Manage collections](manage-collections.md)
     + [Enable duplicate detection](duplicate-detection.md)
     + [Organize digital assets](organize-assets.md)
