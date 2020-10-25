@@ -404,7 +404,7 @@ To preview an asset using keyboard, follow these steps:
     * Channels/devices through which the asset was used
     * Creative solutions where the asset was recently used
 
-   For more details, see [Asset Insights](/help/assets/touch-ui-asset-insights.md).
+   For more details, see [Asset Insights](/help/assets/asset-insights.md).
 
 1. Click **[!UICONTROL Save & Close]**.
 1. Navigate to the [!DNL Assets] user interface. The edited metadata properties, including title, description, ratings, and so on are displayed on the asset card in Card view and under relevant columns in the List view.
