@@ -104,6 +104,8 @@ The [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 
    ![config-propertiespng](assets/config-propertiespng.png)
 
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
+
 1. **Create/Edit** Facebook cloud service configuration.
 
    ![fbsocialloginconfigpng](assets/fbsocialloginconfigpng.png)
@@ -250,6 +252,8 @@ The [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 1. Go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**. Select your context and edit properties. Enable Cloud Configurations if not enabled yet.
 
    ![twitterconfigproppng](assets/twitterconfigproppng.png)
+
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 1. Create/Edit Twitter cloud service configuration.
 

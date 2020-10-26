@@ -241,7 +241,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 ### User Interface {#ui-6560}
 
 * The Offloading Browser interface does not display all job topics (NPR-34308).
-* The Configuration Browser interface does not display all configurations (NPR-33644).
+* The [Configuration Browser](/help/sites-administering/configurations.md) interface does not display all configurations (NPR-33644).
 * On pressing the `Esc` key when searching for users to impersonate, the **[!UICONTROL User]** dialog closes instead of the user list (NPR-34084).
 
 ### Integrations {#integrations-6560}
