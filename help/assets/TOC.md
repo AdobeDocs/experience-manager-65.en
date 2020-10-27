@@ -1,6 +1,7 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
+solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Assets Guide
 breadcrumb-title: Assets Guide

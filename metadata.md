@@ -10,6 +10,7 @@ tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-video
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-65.en
 solution: Experience Manager
+type: Documentation
 index: y
 ---
 
