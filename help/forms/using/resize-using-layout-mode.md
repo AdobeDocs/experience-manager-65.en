@@ -12,20 +12,22 @@ docset: aem65
 
 ---
 
-# Use Layout mode to resize components{#use-layout-mode-to-resize-components}
+# Use Layout mode to resize components {#use-layout-mode-to-resize-components}
 
 The adaptive form and Interactive Communication Web channel authoring interface enables you to resize components using the Layout mode. Drag-and-drop blue dots within columns to define the start and end points to position components. The blue dots display after tapping the component within the responsive grid. The responsive grid consists of 12 equal columns. The white and blue color shading in alternate columns differentiates one column from the other.
 
 You can use the Layout mode to resize components for all device types such as desktop, tablet, phone, and other smaller devices. The tablet automatically derives the layout configuration from the desktop version and the smaller devices derive layout configuration from phone. However, you can override the automatically derived configurations to define a different configuration for each device type.
 
-If you are creating the Web channel using [Print channel as master](../../forms/using/create-interactive-communication.md) for an Interactive Communication, the components available for resizing also include the sub-forms and fields that are auto-generated in Web channel using Print channel. The Web channel retains the layout for the Print channel elements in Layout mode.
+>[!NOTE]
+>
+>If you are creating the Web channel using [Print channel as master](../../forms/using/create-interactive-communication.md) for an Interactive Communication, the components available for resizing also include the sub-forms and fields that are auto-generated in Web channel using Print channel. The Web channel retains the layout for the Print channel elements in Layout mode.
 
 ## Access Layout mode {#access-layout-mode}
 
 Select **Layout** from the drop-down list that appears at the top of the adaptive form and Interactive Communication authoring interface next to the **Preview** option. The form displays in the Layout mode.
 
 1. Log in to the AEM author instance and navigate to **Adobe Experience Manager** &gt; **Forms** &gt; **Forms & Documents**.
-1. [Create a new](../../forms/using/create-interactive-communication.md) or open an existing adaptive form or an Interactive Communication.
+1. Create a new or open an existing [adaptive form](../../forms/using/creating-adaptive-form.md) or an [Interactive Communication](../../forms/using/create-interactive-communication.md).
 1. Select **Layout** from the drop-down list that appears at the top next to the **Preview** option. The form displays in the Layout mode.
 
    ![Layout mode for Interactive Communications](assets/layout_mode_ic_new.png)
@@ -50,9 +52,9 @@ Select **Layout** from the drop-down list that appears at the top of the adaptiv
 
 ### Example {#example}
 
-**Objective:** You want to insert a table component and an Image component and position them parallel to each other in an Interactive Communication.
+**Objective:** You want to insert a table component and an Image component and position them parallel to each other in an adaptive form or an Interactive Communication.
 
-1. Insert the table and image components using Edit mode in the web channel. The image component display after the table component.
+1. Insert the table and image components using Edit mode in the adaptive form or the web channel of an Interactive Communication. The image component display after the table component.
 1. Switch to Layout mode and tap the Table component. The blue dots to resize the component display at column 1 and 12.
 1. Drag-and-drop the blue dot at column 12 to column 6 of the responsive grid.
 
