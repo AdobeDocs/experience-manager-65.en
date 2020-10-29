@@ -90,6 +90,10 @@ public interface DraftDataService {
 }
 ```
 
+>[!NOTE]
+>
+>The default value for the length of the draft ID field is 26 characters. Adobe recommends retaining the default value when you configure this field.
+
 ## Submission data service {#submission-data-service}
 
 To customize the storage of user data for submissions, you need to implement all the methods of the `SubmitDataService` interface. The following sample code describes the methods and arguments.
