@@ -186,6 +186,7 @@ user-guide-description: Create, manage, publish, and update digital forms.
   + [Print channel and web channel](using/web-channel-print-channel.md)
   + [Interactive Communications configuration properties](using/interactive-communication-configuration-properties.md)
   + [Generate multiple interactive communications](using/generate-multiple-interactive-communication-using-batch-api.md)
+  + [Use Layout mode to resize components](using/resize-using-layout-mode-interactive-communication.md)
 + Workflows {#workflows}
   + [Forms-centric workflow on OSGi](using/aem-forms-workflow.md)
   + [Forms-centric workflow on OSGi - Step Reference](using/aem-forms-workflow-step-reference.md)

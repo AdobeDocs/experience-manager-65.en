@@ -1,23 +1,27 @@
 ---
-title: Use Layout mode to resize components for adaptive forms
+title: Use Layout mode to resize components for Interactive Communication
 description: Define the position of components using the responsive grid available in Layout mode 
 ---
 
 # Use Layout mode to resize components {#use-layout-mode-to-resize-components}
 
-The adaptive form authoring interface enables you to resize components using the Layout mode. Drag-and-drop blue dots within columns to define the start and end points to position components. The blue dots display after tapping the component within the responsive grid. The responsive grid consists of 12 equal columns. The white and blue color shading in alternate columns differentiates one column from the other.
+The Interactive Communication Web channel authoring interface enables you to resize components using the Layout mode. Drag-and-drop blue dots within columns to define the start and end points to position components. The blue dots display after tapping the component within the responsive grid. The responsive grid consists of 12 equal columns. The white and blue color shading in alternate columns differentiates one column from the other.
 
 You can use the Layout mode to resize components for all device types such as desktop, tablet, phone, and other smaller devices. The tablet automatically derives the layout configuration from the desktop version and the smaller devices derive layout configuration from phone. However, you can override the automatically derived configurations to define a different configuration for each device type.
 
+>[!NOTE]
+>
+>If you are creating the Web channel using [Print channel as master](../../forms/using/create-interactive-communication.md) for an Interactive Communication, the components available for resizing also include the sub-forms and fields that are auto-generated in Web channel using Print channel. The Web channel retains the layout for the Print channel elements in Layout mode.
+
 ## Access Layout mode {#access-layout-mode}
 
-Select **Layout** from the drop-down list that appears at the top of the adaptive form authoring interface next to the **Preview** option. The form displays in the Layout mode.
+Select **Layout** from the drop-down list that appears at the top of the Interactive Communication authoring interface next to the **Preview** option. The form displays in the Layout mode.
 
 1. Log in to the AEM author instance and navigate to **Adobe Experience Manager** &gt; **Forms** &gt; **Forms & Documents**.
-1. Create a new or open an existing [adaptive form](../../forms/using/creating-adaptive-form.md).
+1. Create a new or open an existing [Interactive Communication](../../forms/using/create-interactive-communication.md).
 1. Select **Layout** from the drop-down list that appears at the top next to the **Preview** option. The form displays in the Layout mode.
 
-   ![Layout mode](assets/layout_mode_ic_new.png)
+   ![Layout mode for Interactive Communications](assets/layout_mode_ic_new.png)
 
 ## Resize components {#resize-components}
 
@@ -39,9 +43,9 @@ Select **Layout** from the drop-down list that appears at the top of the adaptiv
 
 ### Example {#example}
 
-**Objective:** You want to insert a table component and an Image component and position them parallel to each other in an adaptive form.
+**Objective:** You want to insert a table component and an Image component and position them parallel to each other in an Interactive Communication.
 
-1. Insert the table and image components using Edit mode in the adaptive form. The image component display after the table component.
+1. Insert the table and image components using Edit mode in the Web channel of an Interactive Communication. The image component display after the table component.
 1. Switch to Layout mode and tap the Table component. The blue dots to resize the component display at column 1 and 12.
 1. Drag-and-drop the blue dot at column 12 to column 6 of the responsive grid.
 
@@ -77,29 +81,6 @@ Execute the following steps to define the number of columns for a panel:
 1. Tap ![multi-column](assets/multi-column.svg) and select the number of columns from the drop-down list. The number of columns can range from 1 to 12. The panel gets divided into a multi-column layout.
 
 ![multi column in layout mode](assets/multi-column-layout.png)
-
-## Enable the new responsive grid for old responsive layouts {#enableresponsivegrid}
-
-Enable the new responsive grid for forms that you create using AEM Forms 6.4 or lower version to resize components.
-
->[!NOTE]
->
->Switching to the new responsive grid discards the layout properties already defined for components used in the form.
-
-Perform the following steps to enable the new responsive grid:
-
-1. Select **Layout** from the drop-down list that appears at the top next to the **Preview** option. A confirmation to enable the Layout mode displays. 
-1. Tap **Yes** to enable the **Layout** mode for the form.
-
-### Embed an old fragment in an adaptive form with new responsive layout {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
-
-The new responsive layout for adaptive form allows you to add an adaptive form fragment with the old responsive layout to the form. However, the new layout discards the layout properties already defined for components used in the fragment. You can switch to the Layout mode to define the layout properties for components used in the fragment.
-
-### Embed a fragment with new responsive layout in an old adaptive form {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
-
-If you embed a fragment with the new responsive layout in an adaptive form with an old responsive layout, the system prompts you to enable the Layout mode for the form and re-embed the fragment.
-
-To enable the Layout mode, select **Layout** from the drop-down list that appears at the top next to the **Preview** option and tap **Yes** to confirm. Select **Edit** mode to re-embed the fragment.
 
 ## Disable Layout mode for forms with old responsive layout {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
