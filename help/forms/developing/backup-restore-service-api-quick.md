@@ -1,8 +1,7 @@
 ---
 title: Backup and Restore Service APIQuick Starts
 seo-title: Backup and Restore Service APIQuick Starts
-description: null
-seo-description: null
+description: Backup and Restore Service APIQuick Starts
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
 content-type: reference
