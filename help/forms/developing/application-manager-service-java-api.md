@@ -1,8 +1,7 @@
 ---
 title: Application Manager Service JavaAPI Quick Start(SOAP)
 seo-title: Application Manager Service JavaAPI Quick Start(SOAP)
-description: null
-seo-description: null
+description: Application Manager Service JavaAPI Quick Start(SOAP)
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
 contentOwner: admin
 content-type: reference

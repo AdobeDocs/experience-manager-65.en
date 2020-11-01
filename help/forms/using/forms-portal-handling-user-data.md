@@ -1,8 +1,7 @@
 ---
 title: Forms Portal | Handling user data
 seo-title: Forms Portal | Handling user data
-description: null
-seo-description: null
+description: Forms Portal | Handling user data
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
 contentOwner: vishgupt
 topic-tags: grdp
