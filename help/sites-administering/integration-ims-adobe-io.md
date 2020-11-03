@@ -57,35 +57,38 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
 
 ## Configuring Adobe I/O for Adobe Target integration with AEM {#configuring-adobe-i-o-for-adobe-target-integration-with-aem}
 
-You need to create the Adobe I/O integration with Adobe Target that AEM will use, then assign the required privileges.
+You need to create the Adobe I/O Project (integration) with Adobe Target that AEM will use, then assign the required privileges.
 
-### Creating the Integration {#creating-the-integration}
+### Creating the Project {#creating-the-project}
 
-Open the Adobe I/O console to create an I/O integration with Adobe Target that AEM will use:
+Open the Adobe I/O console to create an I/O Project with Adobe Target that AEM will use:
 
 >[!NOTE]
 >
 >See also the [Adobe I/O tutorials](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html).
 
-1. Open the Adobe I/O console for integrations:
+1. Open the Adobe I/O console for Projects:
 
-    * [https://console.adobe.io/integrations](https://console.adobe.io/integrations)
+    * [https://console.adobe.io/projects](https://console.adobe.io/projects)
 
-1. Select **New integration**:
+1. Select **Create New Project**:
 
    >[!NOTE]
    >
-   >If you already have existing integrations these will be listed and the **New integration** button will be top right.
+   >If you already have existing projects these will be listed and the **New integration** button will be top right.
 
-   ![](assets/integrate-target-io-03.png)
+   ![](assets/integration-target-io-02.png)
 
-1. Select **Access an API** followed by **Continue**:
+1. Select **Add to Project** followed by **API**:
 
-   ![](assets/integrate-target-io-04.png)
+   ![](assets/integration-target-io-10.png)
 
-1. Select **Adobe Target**, then **Continue**:
+1. Select **Adobe Target**, then **Next**:
 
-   ![](assets/integrate-target-io-05.png)
+   ![](assets/integration-target-io-12.png)
+
+
+<!-- TO BE CONTINUED -->
 
 1. Add the required details for the integration configuration:
 
