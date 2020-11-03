@@ -176,7 +176,7 @@ Updates the asset metadata properties. If you update any property in the `dc:` n
 
 ### Sync metadata update between `dc` and `jcr` namespace {#sync-metadata-between-namespaces}
 
-The API method updates the metadata properties in the `jcr` namespace. The updates made using Touch-UI changes the metadata properties in the `dc` namespace. To sync the metadata values between `dc` and `jcr` namespace, you can create a workflow and configure Experience Manager to execute the workflow upon asset edit. Use an ECMA script to sync the required metadata properties. The following sample script synchronizes the title string between `dc:title` and `jcr:title`.
+The API method updates the metadata properties in the `jcr` namespace. The updates made using the user interface change the metadata properties in the `dc` namespace. To sync the metadata values between `dc` and `jcr` namespace, you can create a workflow and configure Experience Manager to execute the workflow upon asset edit. Use an ECMA script to sync the required metadata properties. The following sample script synchronizes the title string between `dc:title` and `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();

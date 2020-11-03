@@ -21,7 +21,7 @@ Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMed
 
 >[!NOTE]
 >
->For information on the Assets user interface, see [Managing assets with the Touch UI](/help/assets/manage-assets.md).
+>For information on the Assets user interface, see [Manage assets](/help/assets/manage-assets.md).
 
 ## Quick Start: Mixed Media Sets {#quick-start-mixed-media-sets}
 
