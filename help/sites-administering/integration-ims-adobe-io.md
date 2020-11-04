@@ -95,9 +95,11 @@ Open the Adobe I/O console to create an I/O Project with Adobe Target that AEM w
 
    ![](assets/integration-target-io-15.png)
 
-1. Select the product profiles, and continue with **Save configured API**:
+1. Select the required product profiles, and continue with **Save configured API**:
 
    ![](assets/integration-target-io-16.png)
+
+1. The creation will be confirmed.
 
 <!--
 1. The creation will be confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
