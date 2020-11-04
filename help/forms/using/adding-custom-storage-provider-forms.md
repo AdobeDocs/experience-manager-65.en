@@ -92,7 +92,7 @@ public interface DraftDataService {
 
 >[!NOTE]
 >
->The default value for the length of the draft ID field is 26 characters. Adobe recommends retaining the default value when you configure this field.
+>The minimum value for the length of the draft ID field is 26 characters. Adobe recommends setting the draft ID length to 26 or more characters.
 
 ## Submission data service {#submission-data-service}
 
