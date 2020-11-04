@@ -87,37 +87,23 @@ Open the Adobe I/O console to create an I/O Project with Adobe Target that AEM w
 
    ![](assets/integration-target-io-12.png)
 
+1. Upload your public key, and continue with **Next**:
 
-<!-- TO BE CONTINUED -->
+   ![](assets/integration-target-io-13.png)
 
-1. Add the required details for the integration configuration:
+1. Review your public key, and continue with **Next**:
 
-    * **Name**
+   ![](assets/integration-target-io-15.png)
 
-      Enter the name.
+1. Select the product profiles, and continue with **Save configured API**:
 
-    * **Description**
+   ![](assets/integration-target-io-16.png)
 
-      A description is optional.
-
-    * **Public Key Certificate**
-
-      Upload the public key file; as generated under [Configuring an IMS Configuration - Generating a Public Key](#configuring-an-ims-configuration-generating-a-public-key).
-
-      Once loaded the certificate will be listed under **Certificates**.
-
-    * **Product Profiles**
-
-      Product Profiles equate with Workspaces in Target that AEM can use for content export and offer creation. By default the Target Default Workspace is selected. Select any other Profiles/Workspaces that should be exposed in AEM as export destinations.
-
-   For example:
-
-   ![](assets/integrate-target-io-06.png)
-
-1. Confirm with **Create integration**.
+<!--
 1. The creation will be confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
    ![](assets/integrate-target-io-07.png)
+-->
 
 ### Assigning privileges to the Integration {#assigning-privileges-to-the-integration}
 
@@ -132,29 +118,24 @@ You must now assign the required privileges to the integration:
 1. Select **Integrations**, then the required integration configuration.
 1. Select **Editor** as the **Product Role**; instead of **Observer**.
 
-## Details stored for the Adobe I/O Integration {#details-stored-for-the-adobe-i-o-integration}
+## Details stored for the Adobe I/O Integration Project {#details-stored-for-the-adobe-io-integration-project}
 
-From the Adobe I/O integrations console you can see a list of all your integrations:
+From the Adobe I/O Projects console you can see a list of all your integration projects:
 
-* [https://console.adobe.io/integrations](https://console.adobe.io/integrations)
+* [https://console.adobe.io/projects](https://console.adobe.io/projects)
 
-Select **View** (to the right of a specific integration entry) to show further details about the configuration. These include:
+Select **View** (to the right of a specific project entry) to show further details about the configuration. These include:
 
-* Overview
+* Project overview
 * Insights
-* Services
-* Events
-* JWT (JSON Web Token)
+* Credentials
+  * Service Account (JWT)
+    * Credential details
+    * Generate JWT
+* APIS
+  * For example, Adobe Target
 
 Some of these you will need to complete the Adobe I/O integration for Target in AEM.
-
-1. **Overview**:
-
-   ![](assets/integrate-target-io-08.png)
-
-1. **JWT**:
-
-   ![](assets/integrate-target-io-09.png)
 
 ## Completing the IMS Configuration in AEM {#completing-the-ims-configuration-in-aem}
 
@@ -163,13 +144,13 @@ Returning to AEM you can complete the IMS configuration by adding required value
 1. Return to the [IMS Configuration open in AEM](#configuring-an-ims-configuration-generating-a-public-key).
 1. Select **Next**.
 
-1. Here you can use the [details from Adobe I/O](#details-stored-for-the-adobe-i-o-integration):
+1. Here you can use the [details from Adobe I/O](#details-stored-for-the-adobe-io-integration-project):
 
     * **Title**: Your text.
     * **Authorization Server**: Copy/paste this from the `"aud"` line of the **Payload** section below, e.g. `"https://ims-na1.adobelogin.com"` in the example below
-    * **API Key**: Copy this from the [Overview](#details-stored-for-the-adobe-i-o-integration) section of the Adobe I/O integration for Target
-    * **Client Secret**: Generate this in the [Overview](#details-stored-for-the-adobe-i-o-integration) section of the Adobe I/O integration for Target, and copy
-    * **Payload**: Copy this from the [JWT](#details-stored-for-the-adobe-i-o-integration) section of the Adobe I/O integration for Target
+    * **API Key**: Copy this from the [Overview](#details-stored-for-the-adobe-io-integration-project) section of the Adobe I/O integration for Target
+    * **Client Secret**: Generate this in the [Overview](#details-stored-for-the-adobe-io-integration-project) section of the Adobe I/O integration for Target, and copy
+    * **Payload**: Copy this from the [Generate JWT](#details-stored-for-the-adobe-io-integration-project) section of the Adobe I/O integration for Target
 
    ![](assets/integrate-target-io-10.png)
 
