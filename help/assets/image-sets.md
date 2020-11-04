@@ -27,7 +27,7 @@ For example, suppose you want to present images of caps with different color bil
 
 >[!NOTE]
 >
->For information on the Assets user interface, see [Managing assets with the Touch UI](/help/assets/manage-assets.md).
+>For information on the Assets user interface, see [Manage assets](/help/assets/manage-assets.md).
 
 ## Quick Start: Image Sets {#quick-start-image-sets}
 
