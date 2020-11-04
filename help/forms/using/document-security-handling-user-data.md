@@ -1,8 +1,7 @@
 ---
 title: Document Security | Handling user data
 seo-title: Document Security | Handling user data
-description: null
-seo-description: null
+description: Document Security | Handling user datas
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
