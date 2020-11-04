@@ -155,6 +155,8 @@ Perform the following steps to select a cloud service and order of signing:
 
    If the **Adobe Sign Cloud Service** list is empty, follow the [Configure Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) artilce to configure the service.
 
+   The dropdown lists the cloud services that exist in the `global` folder in Tools > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. In addition, the dropdown also lists the cloud services that exist in the folder that you select in the **[!UICONTROL Configuration Container]** field when you create an adaptive form.
+
 1. Select the signing order from the **Signers can Sign** dialog box. Adobe Sign singers can sign an adaptive form **Sequentially** - one after another signer, or **Simultaneously** - in any order.
 
    In sequential order, one signer receives the form for signing, at a time. After a signer completes signing the document, then the form is sent to the next signer, and so on.
