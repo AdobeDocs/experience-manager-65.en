@@ -87,11 +87,11 @@ Open the Adobe I/O console to create an I/O Project with Adobe Target that AEM w
 
    ![](assets/integration-target-io-12.png)
 
-1. Upload your public key, and continue with **Next**:
+1. **Upload your public key**, and when complete, continue with **Next**:
 
    ![](assets/integration-target-io-13.png)
 
-1. Review your public key, and continue with **Next**:
+1. Review the credentials, and continue with **Next**:
 
    ![](assets/integration-target-io-15.png)
 
