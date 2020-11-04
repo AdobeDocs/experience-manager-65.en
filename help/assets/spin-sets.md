@@ -23,7 +23,7 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET.]** In 
 
 >[!NOTE]
 >
->For information on the Assets user interface, see [Managing assets with the Touch UI](/help/assets/manage-assets.md).
+>For information on the Assets user interface, see [Manage assets](/help/assets/manage-assets.md).
 
 ## Quick Start: Spin Sets {#quick-start-spin-sets}
 
