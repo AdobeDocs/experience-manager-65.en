@@ -26,11 +26,13 @@ The key features and enhancements introduced in Adobe Experience Manager 6.5.6.0
 
 * The auto-generated groups of private folder are now cleaned up on deletion of the private folder in [!DNL Experience Manager Assets].
 
+* You can now [invalidate the CDN cache by way of Dynamic Media in AEM](/help/assets/invalidate-cdn-cache-dynamic-media.md).
+
 * The descriptions of modifiers in video [!UICONTROL Viewer] preset editor has been updated in [!DNL Dynamic Media].
 
 * A new company setting is provided to reflect the status of [!DNL Dynamic Media] connector.
 
-* The default options for `test` and `aiprocess` are updated to `Thumbnail`, from `Rasterize` previously in Dynamic Media, to ensure that users need to create only thumbnail and skip the page extraction and keyword extraction.
+* The default options for `test` and `aiprocess` are updated to `Thumbnail`, from `Rasterize` previously in Dynamic Media, to ensure that users need to create only thumbnail and skip the page extraction and keyword extraction. 
 
 * [Prefill an adaptive form at the client](../../help/forms/using/prepopulate-adaptive-form-fields.md#prefill-at-client).
 
