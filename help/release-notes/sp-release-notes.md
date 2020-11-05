@@ -26,8 +26,6 @@ The key features and enhancements introduced in Adobe Experience Manager 6.5.6.0
 
 * The auto-generated groups of private folder are now cleaned up on deletion of the private folder in [!DNL Experience Manager Assets].
 
-* You can now [invalidate the CDN cache by way of Dynamic Media in AEM](/help/assets/invalidate-cdn-cache-dynamic-media.md).
-
 * The descriptions of modifiers in video [!UICONTROL Viewer] preset editor has been updated in [!DNL Dynamic Media].
 
 * A new company setting is provided to reflect the status of [!DNL Dynamic Media] connector.
