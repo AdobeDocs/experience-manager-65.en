@@ -27,12 +27,20 @@ The integration of AEM with Adobe Target via the Target Standard API requires th
 
 ## Prerequisites {#prerequisites}
 
-Before starting this procedure [Adobe Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) must provision your account for:
+Before starting this procedure:
 
-* Adobe Console
-* Adobe I/O
-* Adobe Target and 
-* Adobe IMS (Identity Management System)
+* [Adobe Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) must provision your account for:
+
+  * Adobe Console
+  * Adobe I/O
+  * Adobe Target and 
+  * Adobe IMS (Identity Management System)
+
+* Your organization's System Admininstrator should use the Admin Console to add the required developers in your organization to the relevant product profiles. 
+
+  * This provides the specific developers with permissions to enable integrations within Adobe I/O. 
+  * For further details see [Manage Developers](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+
 
 ## Configuring an IMS Configuration - Generating a Public Key {#configuring-an-ims-configuration-generating-a-public-key}
 
@@ -69,21 +77,25 @@ Open the Adobe I/O console to create an I/O Project with Adobe Target that AEM w
 
 1. Open the Adobe I/O console for Projects:
 
-    * [https://console.adobe.io/projects](https://console.adobe.io/projects)
+   [https://console.adobe.io/projects](https://console.adobe.io/projects)
 
-1. Select **Create New Project**:
+1. Any projects that you have will be shown. Select **Create New Project** - the location and usage will depend on:
 
-   >[!NOTE]
-   >
-   >If you already have existing projects these will be listed and the **New integration** button will be top right.
+   * If you do not have any project yet, **Create new project** will be center, bottom. 
+     ![Create New Project - First Project](assets/integration-target-io-02.png)
+   * If you already have existing projects these will be listed and **Create new project** will be top right. 
+     ![Create New Project - Multiple Projects](assets/integration-target-io-03.png)
 
-   ![](assets/integration-target-io-02.png)
 
 1. Select **Add to Project** followed by **API**:
 
    ![](assets/integration-target-io-10.png)
 
 1. Select **Adobe Target**, then **Next**:
+
+   >[!NOTE]
+   >
+   >If you are subscribed to Adobe Target, but do not see it listed then you should check the [Prerequistes](#prerequisites).
 
    ![](assets/integration-target-io-12.png)
 
@@ -96,6 +108,13 @@ Open the Adobe I/O console to create an I/O Project with Adobe Target that AEM w
    ![](assets/integration-target-io-15.png)
 
 1. Select the required product profiles, and continue with **Save configured API**:
+
+   >[!NOTE]
+   >
+   >The product profiles displayed with depend on whether you have:
+   >
+   >* Adobe Target Standard - only **Default Workspace** is available
+   >* Adobe Target Premium - all available workspaces are listed, as shown below
 
    ![](assets/integration-target-io-16.png)
 
@@ -202,13 +221,8 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 1. Enter the details in the **Adobe Target Settings** tab:
 
-    * **Client Code**: the Adobe IMS Tenant ID
-
-      >[!CAUTION]
-      >
-      >The Adobe IMS Tenant ID must be entered in the field labelled Client Code.
-
     * **Authentication**: IMS
+    * **Tenant ID**: the Adobe IMS Tenant ID
     * **IMS Configuration**: select the name of the IMS Configuration
     * **API Type**: REST
     * **A4T Analytics Cloud Configuration**: Select the Analytics cloud configuration that is used for target activity goals and metrics. You need this if you are using Adobe Analytics as the reporting source when targeting content. If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
