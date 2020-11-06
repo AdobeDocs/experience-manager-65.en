@@ -53,11 +53,23 @@ No. Smart Imaging is included with your existing license of either Dynamic Media
 
 ## How does smart imaging work? {#how-does-smart-imaging-work}
 
-Smart Imaging uses Adobe Sensei to automatically convert images to the most optimal format, size, and quality, based on browser capability:
+When an image is requested by a consumer, we check the user characteristics and convert to the appropriate image format based on the browser in use. These format conversions are done in a manner that does not degrade visual fidelity. Smart imaging automatically converts images to different formats based on browser capability in the following manner.
 
-* Automatically convert to WebP for browsers such as Chrome, Firefox, Microsoft Edge, Android, and Opera.
-* Automatically convert to JPEG2000 for browsers such as Safari.
-* Automatically convert to JPEG for browsers such as Internet Explorer 9+.
+* Automatically convert to WebP for the following browsers:
+  * Chrome
+  * Firefox
+  * Microsoft Edge 
+  * Safari 14.0 +
+    * Safari 14 only with iOS 14.0 and above and macOS BigSur and above
+  * Android
+  * Opera
+* Legacy browser support for the following:
+
+    | Browser | Browser/OS version | Format |
+    | --- | --- | --- |
+    | Safari | iOS 14.0 or earlier | JPEG2000 |
+    | Edge | 18 or earlier | JPEGXR |
+    | Internet Explorer | 9+ | JPEGXR |
 * For browsers that do not support these formats, the originally requested image format is served.
 
 If the original image size is smaller than what Smart Imaging produces, then the original image is served.
@@ -176,6 +188,42 @@ During the initial transition, the non-cached images directly hits Adobe's origi
 >Not all images are converted. Smart Imaging decides if the conversion is needed to improve performance. In some cases, where there is no expected performance gain or the format is not JPEG or PNG, the image is not converted.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
+
+## How do I know the performance gain? Is there a way to note the benefits of Smart Imaging? {#performance-gain}
+
+**Smart Imaging Headers**
+
+The header values work only when non-cache requests are served as of now. This is done to keep the current cache compatible and avoid the need of calculation when images are being served by way of the cache.
+
+To use Smart Imaging Headers, you need to add the `cache=off` modifier in your requests. See [cache in the Dynamic Media Image Serving and Rendering API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html). 
+          
+Example of using `cache=off` (for illustration purposes only):
+
+`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
+
+After you use such a request, in the Response Headers section, you can see `-x-adobe-smart-imaging` header. See the following screenshot with `-x-adobe-smart-imaging` highlighted.
+
+![smart-imaging-header](/help/assets/assets-dm/smart-imaging-header2.png) 
+
+
+
+
+When to use Smart Imaging Headers?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Can Smart Imaging be turned off for any request? {#turning-off-smart-imaging}
 
