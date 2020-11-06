@@ -22,6 +22,10 @@ Adobe Experience Manager 6.5.6.0 is an important update that includes new featur
 
 The key features and enhancements introduced in Adobe Experience Manager 6.5.6.0 includes:
 
+* Selectively publish or unpublish assets to either [!DNL Experience Manager] or [!DNL Dynamic Media] using [!UICONTROL Quick Publish] or [!UICONTROL Manage Publication] wizard.
+
+* Use the [!DNL Dynamic Media] user interface to invalidate Content Delivery Network (CDN) cached content.
+
 * Publishing the asset contribution folders from Brand Portal to Experience Manager Assets is now supported through proxy server as well.
 
 * The auto-generated groups of private folder are now cleaned up on deletion of the private folder in [!DNL Experience Manager Assets].
