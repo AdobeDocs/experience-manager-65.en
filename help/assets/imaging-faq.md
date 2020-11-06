@@ -83,11 +83,15 @@ Smart Imaging works with your existing “image presets” and observes all of y
 
 ## Will I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically.
+Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically.
 
-<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
+In case you need to configure a new custom domain to use Smart Imaging, the URLs will need to be updated to reflect this custom domain.
 
 Also, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) to understand pre-requisites for Smart Imaging.
+
+<!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
+
+<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
 ## Does Smart Imaging working with HTTPS? How about HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 
