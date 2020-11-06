@@ -34,7 +34,7 @@ The key features and enhancements introduced in Adobe Experience Manager 6.5.6.0
 
 * A new company setting is provided to reflect the status of [!DNL Dynamic Media] connector.
 
-* The default options for `test` and `aiprocess` are updated to `Thumbnail`, from `Rasterize` previously in Dynamic Media, to ensure that users need to create only thumbnail and skip the page extraction and keyword extraction.
+* The default options for `test` and `aiprocess` are updated to `Thumbnail`, from `Rasterize` previously in Dynamic Media, to ensure that users need to create only thumbnail and skip the page extraction and keyword extraction. 
 
 * [Prefill an adaptive form at the client](../../help/forms/using/prepopulate-adaptive-form-fields.md#prefill-at-client).
 
