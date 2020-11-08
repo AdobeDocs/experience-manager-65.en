@@ -1,11 +1,10 @@
 source,dest
 https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/sp-release-notes.html,https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html
 https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/creative-cloud.html,https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-folder-sharing-best-practices.html
-https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/maintenance-release-vehicle-definitions.html,https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/maintenance-release-vehicle-definitions.html,https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html
 https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/brand-portal-configuring-integration.html,https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html
 https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asynchronous-jobs.html,https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/asynchronous-jobs.html
 https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/sharepoint-connector.html,https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html#removed-deprecated-features
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asynchronous-jobs.html,https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/asynchronous-jobs.html
 https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/meta-edit.html,https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html
 https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-import-export.html,https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html
 https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/folder-metadata-schema.html,https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html
