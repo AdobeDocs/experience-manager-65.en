@@ -43,6 +43,10 @@ After prerequisites are in place, perform the following steps to configure Adobe
 
    >[!NOTE]
    >
+   >You can either execute steps 1-4 to create a new configuration container and create an Adobe Sign configuration in the container or use the existing `global` folder in **Tools** ![hammer](assets/hammer.png) &gt; **Cloud Services** &gt; **Adobe Sign**. If you create the configuration in the new configuration container, ensure to specify the container name in the **[!UICONTROL Configuration Container]** field when you create an adaptive form.
+   
+   >[!NOTE]
+   >
    >Ensure that the URL of the cloud services configuration page starts with **HTTPS**. If not, [enable SSL](/help/sites-administering/ssl-by-default.md) for AEM Forms server.
 
 1. On the configuration page, tap **[!UICONTROL Create]** to create Adobe Sign configuration in AEM Forms.
