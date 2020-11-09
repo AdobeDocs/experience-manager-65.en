@@ -189,34 +189,6 @@ During the initial transition, the non-cached images directly hits Adobe's origi
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
-## How do I know the performance gain? Is there a way to note the benefits of Smart Imaging? {#performance-gain}
-
-**About Smart Imaging Headers**
-
-The Smart Imaging header values work only when non-cache requests are served as of now. This is done to keep the current cache compatible and avoid the need of calculation when images are being served by way of the cache.
-
-To use Smart Imaging Headers, you need to add the `cache=off` modifier in your requests. See [cache in the Dynamic Media Image Serving and Rendering API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html).
-
-Example of using `cache=off` (for illustration purposes only):
-
-`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
-
-After you use such a request, in the Response Headers section, you can see `-x-adobe-smart-imaging` header. See the following screenshot with `-x-adobe-smart-imaging` highlighted.
-
-![smart-imaging-header](/help/assets/assets-dm/smart-imaging-header2.png) 
-
-This header value denotes the following:
-
-* Smart Imaging is working for the company.
-* Positive value (>=0) denotes conversion was successful. In this case a new image (webP here) is returned.
-* Negative value (<0) denotes conversion was not successful. In this case original requested image is returned (JPEG by default, if not specified).
-* The value denotes the difference in bytes between the requested image and the new image. In this case the bytes saved is 75048 which is approximately 75 KB for one image. 
-  * The negative value denotes the requested image was smaller than new image. We do show the negative size difference, but the image served is the original requested image only
-
-**When to use Smart Imaging Headers?**
-
-The Smart Imaging Response Headers are enabled for debugging purposes or while highlighting the benefits of Smart Imaging only. Using `cache=off` in normal scenarios can impact load times significantly.
-
 ## Can Smart Imaging be turned off for any request? {#turning-off-smart-imaging}
 
 Yes. You can turn off Smart Imaging by adding the modifier `bfc=off` to the URL.
