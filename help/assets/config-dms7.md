@@ -540,9 +540,7 @@ The Granite Workflow queue is used for non-transient workflows. In Dynamic Media
 
 1. In the **[!UICONTROL Maximum Parallel Jobs]** field, change the number to the desired value.
 
-   By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
-
-   For most use cases, the 0.5 default setting is sufficient.
+   You can increase Maximum Parallel Jobs to adequately support heavy upload of files to Dynamic Media. The exact value is dependent on hardware capacity. In certain scenarios–that is, an initial migration or a one-time bulk upload–you can use a large value. Be aware, however, that using a large value (such as two times the number of cores) may have negative effects on other concurrent activities. As such, you should test and adjust the value based on your particular use case.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
