@@ -223,6 +223,16 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
     * **Authentication**: IMS
     * **Tenant ID**: the Adobe IMS Tenant ID
+      >[!NOTE]
+      >
+      >For IMS this value needs to be taken from Target itself. You can log into Target and extract the Tenant ID from the URL.
+      >
+      >For example, if the URL is:
+      >
+      >`https://experience.adobe.com/#/@yourtenantid/target/activities`
+      >
+      >Then you would use `yourtenantid`.
+
     * **IMS Configuration**: select the name of the IMS Configuration
     * **API Type**: REST
     * **A4T Analytics Cloud Configuration**: Select the Analytics cloud configuration that is used for target activity goals and metrics. You need this if you are using Adobe Analytics as the reporting source when targeting content. If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
