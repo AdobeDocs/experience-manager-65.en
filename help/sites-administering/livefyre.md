@@ -45,6 +45,7 @@ AEM 6.5 comes with Livefyre feature package 1.2.6 pre-installed. This package on
 ### Configure AEM to use Livefyre: Create a Configuration Folder {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
 1. From the AEM homepage, click the **Tools** icon in the left rail, then navigate to **General &gt; Configuration Browser**.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 1. Click **Create** to open the Create Configuration dialog.
 1. Name your configuration and check the **Cloud Configurations** checkbox.
 
@@ -63,7 +64,7 @@ Configure AEM to use your organization's Livefyre license credentials, allowing 
 
    >[!NOTE]
    >
-   >Folders must have Cloud Configurations enabled in their properties before Livefyre configurations can be added to them. Configuration folders are created and managed in the Configuration Browser.
+   >Folders must have Cloud Configurations enabled in their properties before Livefyre configurations can be added to them. Configuration folders are created and managed in the [Configuration Browser.](/help/sites-administering/configurations.md)
    >
    >You cannot create a name for a configuration—it is referenced by the path of the folder it is in. You can only have one configuration per folder.
 

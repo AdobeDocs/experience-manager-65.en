@@ -1,8 +1,7 @@
 ---
 title: Configuring a Correspondence Management solution
 seo-title: Configuring a Correspondence Management solution
-description: null
-seo-description: null
+description: Configuring a Correspondence Management solution
 uuid: 76b25004-fe47-44d7-9bed-7c0fd963306b
 topic-tags: correspondence-management
 content-type: reference

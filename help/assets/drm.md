@@ -14,10 +14,6 @@ Asset expiration is an effective way to enforce license requirements for assets.
 
 You can view the expiration status of an asset in the [!DNL Assets] console in both the card and list views.
 
-![expired_flag_card](assets/expired_flag_card.png)
-
-*Figure: In card view, a flag on the card indicates expired asset.*
-
 ![expired_flag_list](assets/expired_flag_list.png)
 
 *Figure: In list view, the [!UICONTROL Status] column displays the [!UICONTROL Expired] banner.*
@@ -33,17 +29,11 @@ You can view the expiration status of an asset in the [!UICONTROL Timeline] in l
 You can also view the expiration status of assets in the **[!UICONTROL References]** rail. It manages asset expiration statuses and relationships between compound assets and referenced subassets, collections, and projects.
 
 1. Navigate to the asset for which you want to view referencing web pages and compound assets.
-1. Select the asset, and click the [!DNL Experience Manager] logo.
-
-1. Choose **[!UICONTROL References]** from the menu.
-
-   ![chlimage_1-146](assets/chlimage_1-146.png)
-
-   For expired assets, the References rail displays the expiry status **[!UICONTROL Asset is Expired]** at the top.
+1. Select the asset and open **[!UICONTROL References]** in left rail. For expired assets, the [!UICONTROL References] rail displays the expiry status **[!UICONTROL Asset is Expired]** at the top.
 
    ![chlimage_1-147](assets/chlimage_1-147.png)
 
-   If the asset has expired subassets, the References rail displays the status **[!UICONTROL Asset has Expired Sub-Assets]**.
+   If the asset has expired subassets, the [!UICONTROL References] rail displays the status **[!UICONTROL Asset has Expired Sub-Assets]**.
 
    ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -54,17 +44,11 @@ You can search for expired assets, including expired subassets in the Search pan
 1. In the [!DNL Assets] console, click the **[!UICONTROL Search]** in the toolbar to display the Omnisearch box.
 
 1. With the cursor in the Omnisearch box, press the Enter key to display the search results page.
-
-   ![chlimage_1-150](assets/chlimage_1-150.png)
-
-1. Click [!DNL Experience Manager] logo to display the search panel.
-1. Click the **[!UICONTROL Expiry Status]** option to expand it.
+1. Open the search panel in the left rail. Click the **[!UICONTROL Expiry Status]** option to expand it.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-1. Choose **[!UICONTROL Expired]**. The expired assets are displayed in search results.
-
-   ![chlimage_1-153](assets/chlimage_1-153.png)
+1. Choose **[!UICONTROL Expired]**. Only the expired assets are displayed after filtering the search results.
 
 When you choose the **[!UICONTROL Expired]** option, the [!DNL Assets] console only displays the expired assets and subassets that are referenced by compound assets. The compound assets that reference expired subassets are not displayed immediately after the subassets expire. Instead, they are displayed after [!DNL Experience Manager] detects that they reference expired subassets the next time the scheduler runs.
 
@@ -77,9 +61,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 1. Open [!DNL Experience Manager] Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time based Scheduler]** is selected, which schedules a job to check at a specific time whether an asset has expired subassets. After the job completes, assets that have expired subassets and referenced assets are displayed as expired in search results.
 
-   ![chlimage_1-154](assets/chlimage_1-154.png)
-
-1. To run the job periodically, clear the **[!UICONTROL Time Based Scheduler Rule]** field and modify the time in seconds in the **[!UICONTROL Periodic Scheduler]** field. For example, the example expression '0 0 0 &ast; &ast; ?' triggers the job at 00 hrs.
+1. To run the job periodically, clear the **[!UICONTROL Time Based Scheduler Rule]** field and modify the time in seconds in the **[!UICONTROL Periodic Scheduler]** field. For example, the example expression `0 0 0 &ast; &ast; ?` triggers the job at 00 hrs.
 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
@@ -95,9 +77,6 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 The [!DNL Assets] console can display various states for assets. Depending on the current state of a particular asset, its card view displays a label that describes its state, for example, Expired, Published, Approved, Rejected, and so on.
 
 1. In the [!DNL Assets] user interface, select an asset.
-
-   ![chlimage_1-155](assets/chlimage_1-155.png)
-
 1. Click **[!UICONTROL Publish]** from the toolbar. If you don't see **Publish** on the toolbar, click **[!UICONTROL More]** on the toolbar and locate **[!UICONTROL Publish]** ![publish option](assets/do-not-localize/publish-globe.png) option.
 1. Choose **[!UICONTROL Publish]** from the menu, and then close the confirmation dialog.
 1. Exit the selection mode. The publication status for the asset appears at the bottom of the asset thumbnail in the card view. In the list view, the Published column displays the time when the asset was published.

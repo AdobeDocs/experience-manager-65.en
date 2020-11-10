@@ -239,7 +239,7 @@ You can use a custom theme to apply an identical style to all the buttons of the
     <tbody> 
      <tr> 
       <td><b>Accordion</b></td> 
-      <td><b>Property</b</td> 
+      <td><b>Property</b></td> 
       <td><b>Value</b></td> 
      </tr> 
      <tr> 

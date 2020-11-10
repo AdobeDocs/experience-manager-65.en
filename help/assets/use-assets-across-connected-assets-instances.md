@@ -152,7 +152,7 @@ The fetched assets can be used as any other local asset, except that the associa
 
 ## Limitations and best practices {#tips-and-limitations}
 
-* To get insights about asset usage, configure the [Asset Insight](/help/assets/touch-ui-asset-insights.md) functionality on the [!DNL Sites] instance.
+* To get insights about asset usage, configure the [Asset Insight](/help/assets/asset-insights.md) functionality on the [!DNL Sites] instance.
 
 ### Permissions and asset management {#permissions-and-managing-assets}
 
@@ -187,3 +187,6 @@ To troubleshoot for the common error scenario, follow these steps:
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * An asset fetched from the remote dam may not be published on a web page for one or more reasons. It doesn't exist on remote server, lack of appropriate permissions to fetch it, or network failure can be the reasons. Ensure that the asset is not removed from the remote DAM. Ensure that appropriate permissions are in place and the prerequisites are met. Retry adding the asset to the page and republish. Check the [list of asynchronous jobs](/help/sites-administering/asynchronous-jobs.md) for errors in asset fetching.
+* If you are unable to access remote DAM deployment from the local [!DNL Sites] deployment, ensure that cross-site cookies are allowed. If cross-site cookies are blocked the two deployments of [!DNL Experience Manager] may not authenticate. For example, [!DNL Google Chrome] in Incognito mode may block third-party cookies. To allow cookies in [!DNL Chrome] browser, click the 'eye' icon in the address bar, navigate to Site Not Working > Blocked, select the Remote DAM URL, and allow login-token cookie. Alternately, see help about [how to enable third-party cookies](https://support.google.com/chrome/answer/95647).
+
+  ![Cookie error in Chrome in incognito mode](assets/chrome-cookies-incognito-dialog.png)

@@ -15,7 +15,7 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 [!DNL Adobe Experience Manager Assets] generates previews for video assets with the extension MP4. If the format of the asset is not MP4, install the FFmpeg pack to generate a preview. FFmpeg creates video renditions of type OGG and MP4. You can preview the renditions in the [!DNL Assets] user interface.
 
 1. In the digital assets folder or subfolders, navigate to the location where you want to add digital assets.
-1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and choose **[!UICONTROL Files]**. Alternatively, drag a file on the user interface. See [upload assets](managing-assets-touch-ui.md#uploading-assets) for details.
+1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and choose **[!UICONTROL Files]**. Alternatively, drag a file on the user interface. See [upload assets](manage-assets.md#uploading-assets) for details.
 1. To preview a video in the Card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 
 1. To preview the video in the asset details page, click **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen.
@@ -80,6 +80,6 @@ After publishing, you can include the video assets in a web page as a URL or dir
 
 >[!MORELIKETHIS]
 >
->* [Manage digital assets in Experience Manager Assets](/help/assets/managing-assets-touch-ui.md)
->* [Manage collections in Experience Manager Assets](/help/assets/managing-collections-touch-ui.md)
+>* [Manage digital assets in Experience Manager Assets](/help/assets/manage-assets.md)
+>* [Manage collections in Experience Manager Assets](/help/assets/manage-collections.md)
 >* [Dynamic Media video documentation](/help/assets/video.md).

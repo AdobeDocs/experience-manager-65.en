@@ -12,7 +12,7 @@ All digital assets, metadata and content of Microsoft Office and PDF documents a
 
 ## Organize assets in folders {#organize-using-folders}
 
-The most basic way to organize assets is to save these in folders. It is analogous to organizing files in folders in our local filesystem. For more information about how to create and manage folders, see [Manage assets](managing-assets-touch-ui.md). How you name files and folders, how you arrange sub-folders, and how you handle the files within these folders can have a significant impact on how those assets are processed. By using consistent and appropriate file and folder naming strategies, along with good metadata practice, you can make the most of your digital assets repository.
+The most basic way to organize assets is to save these in folders. It is analogous to organizing files in folders in our local filesystem. For more information about how to create and manage folders, see [Manage assets](manage-assets.md). How you name files and folders, how you arrange sub-folders, and how you handle the files within these folders can have a significant impact on how those assets are processed. By using consistent and appropriate file and folder naming strategies, along with good metadata practice, you can make the most of your digital assets repository.
 
 * In most cases, your digital assets repository is always growing. Therefore, it is important to formalize metadata use, folder structure, and file naming early in the content creation cycle.
 * Use folders only to impose a consistent storage structure for your digital assets. This consistency helps your process and manage your assets better. For example, assets placed in the following types of folders can help you use appropriate [profiles to use for asset processing](processing-profiles.md):
@@ -39,14 +39,14 @@ Using tags, as a metadata, you can easily search assets, create collections usin
 For more information, see the following articles:
 
 * [About tags in Experience Manager](/help/sites-authoring/tags.md)
-* [Edit asset metadata](meta-edit.md)
+* [Edit asset metadata](metadata.md)
 * [Enhanced Smart Tags in Assets](enhanced-smart-tags.md)
 
 ## Organize as collections {#organize-as-collections}
 
 With asset collections in [!DNL Experience Manager Assets], you can streamline the ability to create, edit and share assets between users. Create several types of collections based on the way you use them, including collections that contain a static reference list of assets, folders and collections, as well as collections that pull in assets based on search criteria.  You also can create collections with assets from different locations and share them with multiple users with different levels of access, viewing and editing privileges.
 
-For more information, see [manage collections](managing-collections-touch-ui.md)
+For more information, see [manage collections](manage-collections.md)
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
@@ -62,6 +62,6 @@ Standardizing metadata usage, file naming, and folder structure ensures that as 
 >[!MORELIKETHIS]
 >
 >* [Profiles to process metadata, images, and videos](processing-profiles.md).
->* [Metadata profiles](metadata-profiles.md).
+>* [Metadata profiles](/help/assets/metadata-config.md#metadata-profiles).
 >* [Video profiles](video-profiles.md).
 >* [Dynamic Media image profiles](image-profiles.md).

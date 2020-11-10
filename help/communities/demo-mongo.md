@@ -64,9 +64,8 @@ This will start a MongoDB server using default port 27017.
 * For Mac, increase ulimit with start arg 'ulimit -n 2048'
 
 >[!NOTE]
- >
- >If MongoDB is started *after* AEM, **restart** all **AEM** instances so they properly connect to MongoDB.
- >
+>
+>If MongoDB is started *after* AEM, **restart** all **AEM** instances so they properly connect to MongoDB.
 
 ### Demo Production Option: Setup MongoDB Replica Set {#demo-production-option-setup-mongodb-replica-set}
 
@@ -123,11 +122,10 @@ This will start a Solr HTTP server using default port 8983. You can browse to th
 * default Solr console: [http://localhost:8983/solr/](http://localhost:8983/solr/)
 
 >[!NOTE]
- >
- >If Solr Console is not available, check the logs under &lt;solrinstall&gt;/example/logs. Look to see if SOLR is trying to bind to a specific hostname that cannot be resolved (e.g. "user-macbook-pro").
- >
- >If so, update etc/hosts file with a new entry for this hostname (e.g 127.0.0.1 user-macbook-pro) and Solr will start properly.
- >
+>
+>If Solr Console is not available, check the logs under &lt;solrinstall&gt;/example/logs. Look to see if SOLR is trying to bind to a specific hostname that cannot be resolved (e.g. "user-macbook-pro").
+>
+>If so, update etc/hosts file with a new entry for this hostname (e.g 127.0.0.1 user-macbook-pro) and Solr will start properly.
 
 ### SolrCloud {#solrcloud}
 

@@ -82,9 +82,8 @@ To add a clientlib for a community site using [CRXDE Lite](/help/sites-developin
   * Select **Save All**.
 
 >[!NOTE]
- >
- >If the site is not a community site, the existance or location of the client libraries in use for the site would need to be discovered.
- >
+>
+>If the site is not a community site, the existance or location of the client libraries in use for the site would need to be discovered.
 
 Using the [Getting Started with AEM Communities](/help/communities/getting-started.md) example, where `site-name` is *engage*, this is how the clientliblist would appear if adding the reviews component:
 

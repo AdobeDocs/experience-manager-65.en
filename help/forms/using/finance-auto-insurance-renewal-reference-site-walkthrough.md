@@ -1,8 +1,7 @@
 ---
 title: We.Finance Auto Insurance Renewal reference site walkthrough
 seo-title: We.Finance Auto Insurance Renewal reference site walkthrough
-description: null
-seo-description: null
+description: We.Finance Auto Insurance Renewal reference site walkthrough
 uuid: c749a6f7-71f1-4f47-b824-9c7b699072c7
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

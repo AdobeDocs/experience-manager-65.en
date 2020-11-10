@@ -41,7 +41,7 @@ The [!DNL Adobe InDesign Server] can be integrated with [!DNL Experience Manager
 
    >[!NOTE]
    >
-   >IDML is an XML-based format that renders all contents of the [!DNL InDesign] file. It is stored as an compressed package using [ZIP](https://www.techterms.com/definition/zip) compression. For more information, see [InDesign Interchange Formats INX and IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&seqNum=8).
+   >IDML is an XML-based format that renders all contents of the [!DNL InDesign] file. It is stored as an compressed package using [ZIP](https://www.techterms.com/definition/zip) compression. For more information, see [InDesign Interchange Formats INX and IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&seqNum=8).
 
    >[!CAUTION]
    >

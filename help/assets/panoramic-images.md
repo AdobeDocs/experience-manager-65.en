@@ -31,7 +31,7 @@ For an uploaded asset to qualify as a spherical panorama image that you intend t
 
 Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
 
-To upload assets for use with the Panoramic Image viewer, see [Uploading Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+To upload assets for use with the Panoramic Image viewer, see [Uploading Assets](/help/assets/manage-assets.md#uploading-assets).
 
 ## Configuring Dynamic Media Classic (Scene7) {#configuring-dynamic-media-classic-scene}
 

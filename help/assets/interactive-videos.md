@@ -85,7 +85,7 @@ Interactive video steps:
    If you use AEM Sites, or AEM eCommerce, or both, you can add the interactive video directly to a web page in AEM by dragging the Interactive Media component onto the page. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
    Use the embed code or URL to integrate your interactive video with your website experiences. See [Integrating an interactive video with your website](#integrating-an-interactive-video-with-your-website).
    If you are using a third party WCM (Web Content Manager), you must integrate the new interactive video with the existing Quickview implementation that is used on your website. See [Integrating an interactive video with an existing Quickview](#integrating-an-interactive-video-with-an-existing-quickview).
-   [](/help/assets/adding-dynamic-media-assets-to-pages.md)
+   [Adding Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 ## (Optional) Identifying Quickview variables {#optional-identifying-quickview-variables}
 
@@ -235,14 +235,14 @@ See [Creating a New Viewer Preset](/help/assets/managing-viewer-presets.md#creat
 
 If you have already uploaded your video and thumbnail assets, proceed to [Adding interactivity to your video](#adding-interactivity-to-your-video).
 
-If you uploaded the wrong videos or images, or you want to delete uploaded videos or images that you no longer need, see [Deleting Assets](/help/assets/managing-assets-touch-ui.md#deleting-assets).
+If you uploaded the wrong videos or images, or you want to delete uploaded videos or images that you no longer need, see [Deleting Assets](/help/assets/manage-assets.md#deleting-assets).
 
 To upload a video and its associated thumbnail assets:
 
 1. Upload the video and associated thumbnail assets to the folder or folders you want.
 
-   See [Uploading assets](/help/assets/managing-assets-touch-ui.md).
-   See [Uploading assets using FTP job scheduling](/help/assets/managing-assets-touch-ui.md).
+   See [Uploading assets](/help/assets/manage-assets.md).
+   See [Uploading assets using FTP job scheduling](/help/assets/manage-assets.md).
 
    Now add interactivity to your video.
 

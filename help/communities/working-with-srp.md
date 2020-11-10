@@ -26,16 +26,14 @@ Following are the [characteristics of each SRP option](#characteristics-of-srp-o
 For details regarding the use of SRP for UGC, see [Storage Resource Provider Overview](/help/communities/srp.md).
 
 >[!NOTE]
- >
- >SRP applies only to community content. It does not affect where site content is stored ([node store](/help/sites-deploying/data-store-config.md)), and does not affect the secure handling of user registration, user profiles and user groups between AEM instances (see also [Managing User Data](#managing-user-data)).
- >
+>
+>SRP applies only to community content. It does not affect where site content is stored ([node store](/help/sites-deploying/data-store-config.md)), and does not affect the secure handling of user registration, user profiles and user groups between AEM instances (see also [Managing User Data](#managing-user-data)).
 
 >[!CAUTION]
- >
- >As of AEM 6.1, [UGC is never replicated](#ugc-never-replicated).
- >
- >When the deployment does not include a common store, such as the default [JSRP](/help/communities/topologies.md#jsrp) topology, UGC will be visible only on the AEM publish or author instance on which it was entered. Only if the topology includes a publish cluster will the UGC be visible on any publish instance.
- >
+>
+>As of AEM 6.1, [UGC is never replicated](#ugc-never-replicated).
+>
+>When the deployment does not include a common store, such as the default [JSRP](/help/communities/topologies.md#jsrp) topology, UGC will be visible only on the AEM publish or author instance on which it was entered. Only if the topology includes a publish cluster will the UGC be visible on any publish instance.
 
 ## Characteristics of SRP Options {#characteristics-of-srp-options}
 
@@ -54,9 +52,8 @@ ASRP is suitable:
 * When there is no intent to invest in local storage.
 
 >[!NOTE]
- >
- >There is a limit to uploading attachments to posts (or comments) in ASRP, which is 50 MB.
- >
+>
+>There is a limit to uploading attachments to posts (or comments) in ASRP, which is 50 MB.
 
 [MSRP - MongoDB Storage Resource Provider](/help/communities/msrp.md)
 

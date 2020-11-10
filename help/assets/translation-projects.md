@@ -41,8 +41,6 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
 1. From the **[!UICONTROL Target Languages]** list, select the language for which you want to create a folder structure.
 
-   ![select target language](assets/target-language.png)
-
 1. From the **[!UICONTROL Project]** list, choose **[!UICONTROL Create structure only]**.
 
    ![chlimage_1-60](assets/chlimage_1-60.png)
@@ -125,8 +123,6 @@ If you use this option, the translation workflow runs for assets that you add to
 
 1. From the **[!UICONTROL Target Languages]** list, select the language(s) for which you want to create a folder structure.
 
-   ![select target language](assets/target-language.png)
-
 1. From the **[!UICONTROL Project]** list, select **[!UICONTROL Add to existing translation project]** to run the translation workflow on the folder.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -136,8 +132,6 @@ If you use this option, the translation workflow runs for assets that you add to
    >If you choose the **[!UICONTROL Add to existing translation project]** option, your translation project is added to a pre-existing project only if your project settings exactly match the settings of the pre-existing project. Otherwise, a new project is created.
 
 1. From the **[!UICONTROL Existing translation project]** list, select a project to add the asset for translation.
-
-   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. Click **[!UICONTROL Create]**. The assets to be translated are added to the target folder. The updated folder is listed under the **[!UICONTROL Language Copies]** section.
 
@@ -167,8 +161,6 @@ If you use this option, the translation workflow runs for assets that you add to
    ![chlimage_1-81](assets/chlimage_1-81.png)
 
    A message notifies the commencement of the translation job.
-
-   ![chlimage_1-82](assets/chlimage_1-82.png)
 
 1. To view the status of the translation job, click the ellipsis at the bottom of the **[!UICONTROL Translation Job]** tile.
 
@@ -203,8 +195,6 @@ If you use this option, a translation project is created for the set of assets f
 
 1. In the **[!UICONTROL Project Title]** field, enter a title for the project.
 
-   ![chlimage_1-87](assets/chlimage_1-87.png)
-
 1. Click **[!UICONTROL Start]**.
 1. Navigate to the Projects console. The translation folder is copied to the Projects console.
 
@@ -223,8 +213,6 @@ If you use this option, a translation project is created for the set of assets f
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    A message notifies the commencement of the translation job.
-
-   ![chlimage_1-92](assets/chlimage_1-92.png)
 
 1. To view the status of the translation job, click the ellipsis at the bottom of the **[!UICONTROL Translation Job]** tile.
 
@@ -254,8 +242,6 @@ If you use this option, the set of assets are added to an existing translation p
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
 1. From the **[!UICONTROL Existing translation project]** list, select a project to add the asset for translation.
-
-   ![select a project](assets/select-a-project.png)
 
 1. Click **[!UICONTROL Start]**.
 1. See steps 9-14 of [Add to existing translation project](translation-projects.md#add-to-existing-translation-project) to complete the rest of the procedure.

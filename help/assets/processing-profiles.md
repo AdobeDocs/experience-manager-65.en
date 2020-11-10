@@ -17,7 +17,7 @@ A profile is a recipe for what options to apply to assets that get uploaded to a
 
 Those rules can include adding metadata, smart cropping of images, or establishing video encoding profiles. In AEM, you can create three types of profiles, which are covered in detail at the following links:
 
-* [Metadata profiles](/help/assets/metadata-profiles.md)
+* [Metadata profiles](/help/assets/metadata-config.md#metadata-profiles)
 * [Image profiles](/help/assets/image-profiles.md)
 * [Video profiles](/help/assets/video-profiles.md)
 
@@ -53,7 +53,8 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 >[!NOTE]
 >
 >If you are performing a bulk migration of assets from Dynamic Media Classic to AEM, you must enable the Migration replication agent on the Dynamic Media server. When the migration is complete, make sure you disable the agent.
- The Migration publish agent must be disabled on the Dynamic Media server so the Reprocess workflow works as expected.
+>
+>The Migration publish agent must be disabled on the Dynamic Media server so the Reprocess workflow works as expected.
 
 <!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
@@ -90,7 +91,7 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 **To optionally adjust the batch size of the reprocess workflow**
 
 1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models.]**
-1. On the Workflow Models page, in Card View or List View, select **[!UICONTROL Scene7: Reprocess Assets.]**
+1. On the Workflow Models page, in Card View or List View, select **[!UICONTROL Scene7: Reprocess Assets]**.
 
     ![Workflow Models page with Scene7: Reprocess Assets workflow selected in Card View](/help/assets/assets-dm/reprocess-assets7.png)
 
@@ -110,9 +111,9 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 
     ![Properties dialog box](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. In the upper-right corner of the **[!UICONTROL Batch Upload to Scene7 &ndash; Step Properties]** dialog box, click **[!UICONTROL Done.]** 
+1. In the upper-right corner of the **[!UICONTROL Batch Upload to Scene7 &ndash; Step Properties]** dialog box, click **[!UICONTROL Done]**. 
 
-1. In the upper-right corner of the Scene7: Reprocess Assets workflow model page, click **[!UICONTROL Sync.]** When you see **[!UICONTROL Synced]**, the workflow runtime model is successfully synchronized and ready to reprocess assets in a folder.
+1. In the upper-right corner of the Scene7: Reprocess Assets workflow model page, click **[!UICONTROL Sync]**. When you see **[!UICONTROL Synced]**, the workflow runtime model is successfully synchronized and ready to reprocess assets in a folder.
 
     ![Synchronizing the workflow model](/help/assets/assets-dm/reprocess-assets1.png)
 

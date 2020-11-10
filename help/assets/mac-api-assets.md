@@ -163,7 +163,7 @@ Updates an asset's binary (rendition with name original). An update triggers the
 
 ## Update asset metadata {#update-asset-metadata}
 
-Updates the Asset metadata properties. If you update any property in the `dc:` namespace, the API updates the same property in the `jcr` namespace. The API does not sync the properties under the two namespaces.
+Updates the asset metadata properties. If you update any property in the `dc:` namespace, the API updates the same property in the `jcr` namespace. The API does not sync the properties under the two namespaces.
 
 **Request**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
@@ -176,7 +176,7 @@ Updates the Asset metadata properties. If you update any property in the `dc:` n
 
 ### Sync metadata update between `dc` and `jcr` namespace {#sync-metadata-between-namespaces}
 
-The API method updates the metadata properties in the `jcr` namespace. The updates made using Touch-UI changes the metadata properties in the `dc` namespace. To sync the metadata values between `dc` and `jcr` namespace, you can create a workflow and configure Experience Manager to execute the workflow upon asset edit. Use an ECMA script to sync the required metadata properties. The following sample script synchronizes the title string between `dc:title` and `jcr:title`.
+The API method updates the metadata properties in the `jcr` namespace. The updates made using the user interface change the metadata properties in the `dc` namespace. To sync the metadata values between `dc` and `jcr` namespace, you can create a workflow and configure Experience Manager to execute the workflow upon asset edit. Use an ECMA script to sync the required metadata properties. The following sample script synchronizes the title string between `dc:title` and `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
@@ -300,3 +300,9 @@ Deletes a resource (-tree) at the provided path.
 * 200 - OK - if folder has been deleted successfully.
 * 412 - PRECONDITION FAILED - if root collection cannot be found or accessed.
 * 500 - INTERNAL SERVER ERROR - if something else goes wrong.
+
+## Tips and limitations {#tips-best-practices-limitations}
+
+* [HTTP API updates the metadata properties](#update-asset-metadata) in the `jcr` namespace. However, the Experience Manager user interface updates the metadata properties in the `dc` namespace.
+
+* Asset API does not return the complete metadata. In API the namespaces are hardcoded and those only gets returned. If you need whole metadata, then look at the asset path `/jcr_content/metadata.json`.
