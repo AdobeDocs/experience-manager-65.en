@@ -11,7 +11,7 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
 # Assets Guide {#assets}
 
 + [[!DNL Assets] user guide](home.md)
-+ [[!DNL Experience Manager] 6.5 Assets release notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
++ [[!DNL Experience Manager] 6.5 Assets release notes](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [About DAM](assets.md)
 + [Best practices for assets](best-practices-for-assets.md)
 + Use Experience Manager Assets {#using}
