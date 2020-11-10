@@ -235,7 +235,7 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 >
 >* [Metadata concepts and understanding](metadata-concepts.md).
 >* [Edit metadata properties of multiple collections](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Metadata import and export in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Metadata import and export in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 
