@@ -1,6 +1,6 @@
 ---
 title: Adobe Content Package Maven Plugin
-description: Use the Content Package Maven plugin to integrate package management tasks into your Maven projects
+description: Use the Content Package Maven plugin to deploy AEM applications
 ---
 
 # Managing Packages Using Maven {#managing-packages-using-maven}
