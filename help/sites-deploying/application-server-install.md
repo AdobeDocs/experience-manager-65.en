@@ -129,7 +129,7 @@ Set Memory arguments in your conf file(e.g. `standalone.conf`)
 
 * JAVA_OPTS="-Xms64m -Xmx2048m"
 
-if you use the deployment-scanner for to install the AEM web application it might be good to increase the `deployment-timeout,` for that set a `deployment-tiimeout` attribute in the xml file of your instance (e.g `configuration/standalone.xml)`:
+if you use the deployment-scanner for to install the AEM web application it might be good to increase the `deployment-timeout,` for that set a `deployment-timeout` attribute in the xml file of your instance (e.g `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">

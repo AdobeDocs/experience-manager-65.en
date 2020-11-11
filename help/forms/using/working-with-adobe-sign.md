@@ -71,6 +71,10 @@ Perform the following steps to create a sign-enabled adaptive form:
 
     1. Select the [configuration container](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) created while configuring Adobe Sign with AEM Forms.
 
+       >[!NOTE]
+       >
+       >The **[!UICONTROL Adobe Sign Cloud Service]** dropdown list displays the cloud services that are configured in the configuration container that you select in this field. The **[!UICONTROL Adobe Sign Cloud Service]** dropdown list is available in the **[!UICONTROL Electronic Signature]** section of the adaptive form properties when you select the **[!UICONTROL Enable Adobe Sign]** option.
+
 1. In the **[!UICONTROL Form Model]** tab, select one of the following options:
 
     * Select the **[!UICONTROL Associate form template as the Document of Record template]** option and select a Document of Record template. If you use a form template based adaptive form, then the documents sent for signing display only those fields which are based on the associated form template. It does not display all the fields of the adaptive form.

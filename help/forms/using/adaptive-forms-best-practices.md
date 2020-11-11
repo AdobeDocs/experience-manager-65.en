@@ -304,6 +304,8 @@ In a production environment, it is recommended not to store submitted form data 
 
   You can also write a custom submit action that stores form data and attachment in secure storage. See [Writing custom Submit action for adaptive forms](/help/forms/using/custom-submit-action-form.md) for more information.
 
+* **Length of draft ID**: When you save an adaptive form as a draft, a draft ID gets generated to uniquely identify the draft. The minimum value for the length of the draft ID field is 26 characters. Adobe recommends setting the draft ID length to 26 or more characters.
+
 ### Handling personally identifiable information {#handling-personally-identifiable-information}
 
 One of the key challenges for organizations is how to handle personally identifiable (PII) data. Some best practices that will help you handle such data are as follows:

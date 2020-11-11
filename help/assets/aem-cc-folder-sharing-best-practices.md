@@ -8,7 +8,7 @@ contentOwner: AG
 
 >[!CAUTION]
 >
->The [!DNL Experience Manager] to [!DNL Creative Cloud] Folder Sharing feature is deprecated. Adobe strongly recommends using newer capabilities such as [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) or [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html). Learn more in [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
+>The [!DNL Experience Manager] to [!DNL Creative Cloud] Folder Sharing feature is deprecated. Adobe strongly recommends using newer capabilities such as [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) or [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Learn more in [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
 
 [!DNL Adobe Experience Manager] can be configured to allow users in [!DNL Assets] to share folders with the users of [!DNL Adobe Creative Cloud] apps, so they are available as shared folders in the [!DNL Adobe Creative Cloud] assets service. The feature can be used to exchange files between creative teams and [!DNL Assets] users, especially when the creative users do not have access to the [!DNL Assets] deployment (they are not on the enterprise network).
 
@@ -32,7 +32,7 @@ The following diagram provides an overview of the integration.
 The integration includes the following elements:
 
 * **[!DNL Experience Manager Assets]** deployed in the enterprise network (managed services or on-premise): Folder sharing is initiated here.
-* **[!DNL Adobe Marketing Cloud Assets] core service**: Acts as an intermediary between [!DNL Experience Manager] and [!DNL Creative Cloud] storage services. An administrator of an organization that uses the integration needs to established trust relationship between the Marketing Cloud organization and the [!DNL Assets] deployment. They also [define a list of approved Creative Cloud collaborators](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html), that [!DNL Assets] users can share folders too for additional security.
+* **[!DNL Adobe Marketing Cloud Assets] core service**: Acts as an intermediary between [!DNL Experience Manager] and [!DNL Creative Cloud] storage services. An administrator of an organization that uses the integration needs to established trust relationship between the Marketing Cloud organization and the [!DNL Assets] deployment. They also [define a list of approved Creative Cloud collaborators](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html), that [!DNL Assets] users can share folders too for additional security.
 
 * **[!DNL Creative Cloud] Assets web services** (storage and [!DNL Creative Cloud] files web UI): This is where specific Creative Cloud app users, with whom an [!DNL Assets] folder was shared, would be able to accept the invitation and see the folder in their Creative Cloud account storage.
 * **Creative Cloud desktop app**: (Optional) Allows for direct access to shared folder/files from creative user’s desktop via sync with [!DNL Creative Cloud] Assets storage.
