@@ -31,9 +31,9 @@ AEM 6.5 adheres to the latest best practices for package management and project 
 
 ## Obtaining the Content Package Maven Plugin {#obtaining-the-content-package-maven-plugin}
 
-The plugin is available from the [Maven Central Repository](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public) .
+The plugin is available from the [Maven Central Repository.](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
 
-## Content Package Maven plugin goals and parameters
+## Content Package Maven Plugin Goals and Parameters
 
 To use the Content Package Maven Plugin, add the following plugin element inside the build element of your POM file:
 
@@ -102,41 +102,6 @@ Builds a content package that is already defined on an AEM instance.
 
 All parameters for the build goal are described in the [Common Parameters](#common-parameters) section.
 
-#### Example {#example}
-
-The following example builds the `workflow-mbean` package that is installed on the AEM instance with the IP address 10.36.79.223. The goal is executed using the following command:
-
-```shell
-mvn content-package:build
-```
-
-The following POM file is located in the current directory of the command line tool. The POM specifies the package name and the URL of the package service.
-
-```xml
-<project xmlns="https://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.adobe.example</groupId>
-  <artifactId>example-package</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-    <build>
-        <plugins>
-     <plugin>
-  <groupId>com.day.jcr.vault</groupId>
-  <artifactId>content-package-maven-plugin</artifactId>
-  <version>0.0.24</version>
-  <configuration>
-   <name>workflow-mbean</name>
-   <failOnError>true</failOnError>
-   <targetURL>https://10.36.79.223:4502/crx/packmgr/service.jsp</targetURL>
-  </configuration>
-     </plugin>
- </plugins>
-    </build>
-</project>
-```
-
 ### install {#install}
 
 Installs a package in the repository. Execution of this goal does not require a Maven project. The goal is bound to the `install` phase of the Maven build lifecycle.
@@ -160,47 +125,6 @@ In addition to the following parameters, see the descriptions in the [Common Par
 |`repositoryUrl` (POM), `repoURL` (command line)|`String`|No|None|The URL of the repository from which the artifact is retrieved|
 |version|String|No|None|The version of the artifact to install|
 
-#### Example {#example-1}
-
-The following example creates a package that contains the `workflow-mbean` OSGi bundle (see the example for the [build](#build) goal) and then installs the package. Because the install goal is bound to the package install phase, the following command executes the install goal:
-
-```shell
-mvn install
-```
-
-```xml
-<project xmlns="https://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="https://maven.apache.org/POM/4.0.0
-    https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.adobe.example.myapp</groupId>
-  <artifactId>workflow-mbean</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>com.day.jcr.vault</groupId>
-        <artifactId>content-package-maven-plugin</artifactId>
-        <version>0.0.24</version>
-        <configuration>
-          <builtContentDirectory>jcr_root</builtContentDirectory>
-          <targetURL>https://10.36.79.223:4502/crx/packmgr/service.jsp</targetURL>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>package</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
-</project>
-```
-
 ### ls {#ls}
 
 Lists the packages that are deployed to Package Manager.
@@ -208,39 +132,6 @@ Lists the packages that are deployed to Package Manager.
 #### Parameters {#parameters-2}
 
 All parameters of the ls goal are described in the [Common Parameters](#common-parameters) section.
-
-#### Example {#example-2}
-
-The following example lists the packages that are installed on the AEM instance with the IP address 10.36.79.223. The goal is executed using the following command:
-
-```shell
-mvn content-package:ls
-```
-
-The following POM file is located in the current directory of the command line tool. The POM specifies the URL of the package service.
-
-```xml
-<project xmlns="https://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.adobe.example</groupId>
-  <artifactId>example-package</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-    <build>
-        <plugins>
-     <plugin>
-  <groupId>com.day.jcr.vault</groupId>
-  <artifactId>content-package-maven-plugin</artifactId>
-  <version>0.0.24</version>
-  <configuration>
-      <targetURL>https://10.36.79.223:4502/crx/packmgr/service.jsp</targetURL>
-  </configuration>
-      </plugin>
-   </plugins>
-     </build>
-</project>
-```
 
 ### rm {#rm}
 
@@ -250,40 +141,6 @@ Removes a package from Package Manager.
 
 All parameters of the rm goal are described in the [Common Parameters](#common-parameters) section.
 
-#### Example {#example-3}
-
-The following example removes the `workflow-mbean` package that is installed on the AEM instance with the IP address 10.36.79.223. The goal is executed using the following command:
-
-```shell
-mvn content-package:rm
-```
-
-The following POM file is located in the current directory of the command line tool. The POM specifies the URL of the package service and the name of the package.
-
-```xml
-<project xmlns="https://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.adobe.example</groupId>
-  <artifactId>example-package</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-    <build>
-        <plugins>
-     <plugin>
-  <groupId>com.day.jcr.vault</groupId>
-  <artifactId>content-package-maven-plugin</artifactId>
-  <version>0.0.24</version>
-  <configuration>
-                    <name>workflow-mbean</name>
-      <targetURL>https://10.36.79.223:4502/crx/packmgr/service.jsp</targetURL>
-  </configuration>
-      </plugin>
-   </plugins>
-     </build>
-</project>
-```
-
 ### uninstall {#uninstall}
 
 Uninstalls a package. The package remains on the server in the uninstalled state.
@@ -291,41 +148,6 @@ Uninstalls a package. The package remains on the server in the uninstalled state
 #### Parameters {#parameters-4}
 
 All parameters of the uninstall goal are described in the [Common Parameters](#common-parameters) section.
-
-#### Example {#example-4}
-
-The following example uninstalls the `workflow-mbean` package that is installed on the AEM instance with the IP address 10.36.79.223. The goal is executed using the following command:
-
-```shell
-mvn content-package:uninstall
-```
-
-The following POM file is located in the current directory of the command line tool. The POM specifies the package name and the URL of the package service.
-
-```xml
-<project xmlns="https://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.adobe.example</groupId>
-  <artifactId>workflow-mbean</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
-    <build>
-        <plugins>
-     <plugin>
-  <groupId>com.day.jcr.vault</groupId>
-  <artifactId>content-package-maven-plugin</artifactId>
-  <version>0.0.24</version>
-  <configuration>
-   <name>workflow-mbean</name>
-   <failOnError>true</failOnError>
-   <targetURL>https://10.36.79.223:4502/crx/packmgr/service.jsp</targetURL>
-  </configuration>
-     </plugin>
- </plugins>
-    </build>
-</project>
-```
 
 ### package {#package}
 
@@ -385,77 +207,6 @@ The `mode` element defines how content is the repository is affected when the pa
 * **Update:** Content in the package that is not in the repository is added to the repository. Content in the repository is replaced with matching content in the package. Existing content gets removed from the repository.
 
 When the filter contains no `mode` element, the default value of `replace` is used.
-
-#### Example {#example-5}
-
-The following example creates a package that contains the `workflow-mbean` OSGi bundle. The POM file identifies the `jcr_root` directory as the value of the `builtContentDirectory` property. The `jcr_root` directory contains the bundle JAR file in the directory structure that mirrors the repository:
-
-`jcr_root/apps/myapp/install/workflow-mbean-0.03-SNAPSHOT.jar`
-
-Because the goal is bound to the package build phase, the following command executes the package goal:
-
-`mvn package`
-
-```xml
-<project xmlns="https://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="https://maven.apache.org/POM/4.0.0
-    https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.adobe.example.myapp</groupId>
-  <artifactId>workflow-mbean</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>com.day.jcr.vault</groupId>
-        <artifactId>content-package-maven-plugin</artifactId>
-        <version>0.0.24</version>
-        <configuration>
-          <builtContentDirectory>jcr_root</builtContentDirectory>
-          <targetURL>https://10.36.79.223:4502/crx/packmgr/service.jsp</targetURL>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>package</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
-</project>
-```
-
-Instead of expressing the `package` goal in the plugin `executions` section, you can use `content-package` as the value of the project `packaging` element:
-
-```xml
-<project xmlns="https://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="https://maven.apache.org/POM/4.0.0
-    https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.adobe.example.myapp</groupId>
-  <artifactId>workflow-mbean</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
-  <packaging>content-package</packaging>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>com.day.jcr.vault</groupId>
-        <artifactId>content-package-maven-plugin</artifactId>
-        <version>0.0.24</version>
-        <configuration>
-          <builtContentDirectory>jcr_root</builtContentDirectory>
-          <targetURL>https://10.36.79.223:4502/crx/packmgr/service.jsp</targetURL>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-</project>
-```
 
 ### help {#help}
 
