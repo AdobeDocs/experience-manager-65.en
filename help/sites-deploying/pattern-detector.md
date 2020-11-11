@@ -10,10 +10,9 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
-
 ---
 
-# Assessing the Upgrade Complexity with the Pattern Detector{#assessing-the-upgrade-complexity-with-the-pattern-detector}
+# Assessing the Upgrade Complexity with the Pattern Detector
 
 ## Overview {#overview}
 
@@ -36,7 +35,6 @@ The Pattern Detector is released separately as a [one package](https://www.adobe
 >
 >* increase the detection rate
 >* avoid any slowdowns on business critical instances
-
 >
 >both at the same time it is recommended to run it **on staging environments** that are as close as possible to production ones in the areas of user applications, content and configurations.
 
@@ -50,7 +48,6 @@ You can use several methods to check the Pattern Detector output:
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Via a reactive text based or regular JSON interface**
-
 * **Via a reactive JSON lines interface, **that generates a separate JSON document in each line.
 
 Both of these methods are detailed below:
@@ -221,4 +218,3 @@ Currently Pattern Detector allows to check:
 >[!NOTE]
 >
 >Please note that Pattern Detector tries to accurately predict the warnings for upgrade. However, it might generate false positives in some scenarios.
-
