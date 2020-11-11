@@ -25,7 +25,7 @@ AEM 6.5 adheres to the latest best practices for package management and project 
 
 ## Obtaining the Content Package Maven Plugin {#obtaining-the-content-package-maven-plugin}
 
-The plugin is available from the public Adobe repository. To download the plugin, add the following Maven profile to your Maven settings file and activate it. When you use a Maven command, the plugin is downloaded to your local repository if needed.
+The plugin is available from the [Maven Central Repository](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public) .
 
 >[!NOTE]
 >
