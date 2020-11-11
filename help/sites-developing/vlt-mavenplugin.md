@@ -1,5 +1,5 @@
 ---
-title: Managing Packages Using Maven
+title: Adobe Content Package Maven Plugin
 description: Use the Content Package Maven plugin to integrate package management tasks into your Maven projects
 ---
 
