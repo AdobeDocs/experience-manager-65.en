@@ -33,7 +33,7 @@ AEM 6.5 adheres to the latest best practices for package management and project 
 
 The plugin is available from the [Maven Central Repository](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public) .
 
-## Adding the Content Package Maven Plugin to the POM File {#adding-the-content-package-maven-plugin-to-the-pom-file}
+## Content Package Maven plugin goals and parameters
 
 To use the Content Package Maven Plugin, add the following plugin element inside the build element of your POM file:
 
