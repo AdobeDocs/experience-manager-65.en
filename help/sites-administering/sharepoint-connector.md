@@ -38,7 +38,7 @@ All functionalities are implemented using the native SharePoint web services as 
 To get started with the connector, do the following:
 
 * Ensure that you have at least Java 7 installed.
-* Download the connector package distribution file from Package Share.
+* Download the connector package distribution file from Software Distribution.
 * Copy a valid *license.properties* file to the directory that contains the *cq-quickstart-6.4.0.jar* file.
 
 * Double-click/tap the .jar file to start AEM, or start it from the command line.
@@ -60,7 +60,7 @@ The connector requires the following:
 * User credentials and permissions for CRX and SharePoint repositories
 * [Supported platforms](#supported-platforms)
 
-The SharePoint connector is available for downloading from [packageshare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
+The SharePoint connector is available for downloading from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
 
 ### Supported Platforms {#supported-platforms}
 
@@ -83,9 +83,8 @@ The connector supports the following:
 
 ### Standard installation {#standard-installation}
 
-AEM Package Share is used to distribute product features, examples, and hot fixes. For details, see the [Package Share documentation](/help/sites-administering/package-manager.md#package-share).
+Software Distribution is used to distribute product features, examples, and hot fixes. For details, see the [Software Distribution documentation](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution).
 
-To access Package Share on the AEM Welcome page, tap/click **Tools** and then select **Package Share**. You require a valid Adobe ID that includes your company email address. In addition, after logging in to your account, apply for Package Share access.
 
 #### Integrating with AEM {#integrating-with-aem}
 
@@ -241,7 +240,7 @@ To add the user in the admin group:
 
 ### Disable Token Authentication {#disable-token-authentication}
 
-1. Download and install the package `basic auth`. `zip` from Package Share.
+1. Download and install the package `basic auth`. `zip` from Software Distribution.
 
 1. Close Quickstart.
 1. Open the file *\crx-quickstart\repository\repository.xml*.

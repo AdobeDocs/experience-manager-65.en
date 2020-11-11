@@ -45,7 +45,7 @@ See [Edit 360/VR video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-
 **To upload assets for use with the 360 Video viewer:**
 
 1. Created a folder that is dedicated to your 360 video asset.
-1. [Apply an adaptive video profile to the folder](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+1. [Apply an adaptive video profile to the folder.](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)
 
    Rendering 360 video content places higher requirements for source video resolution and for encoded renditions resolution than standard non-360 video content.
 
@@ -93,7 +93,7 @@ See also [Editing Viewer Presets](/help/assets/managing-viewer-presets.md#editin
 
 When you are satisfied with the 360 Video, you can publish it.
 
-See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html).
+See [Embedding the Video or Image Viewer on a Web Page.](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html)
 See [Linking URLs to your web application](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). Note that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to AEM Sites pages.
 See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
 

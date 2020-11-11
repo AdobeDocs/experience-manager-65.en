@@ -1,8 +1,7 @@
 ---
 title: Understanding AEM Forms Processes
 seo-title: Understanding AEM Forms Processes
-description: null
-seo-description: null
+description: Understanding AEM Forms Processes
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference

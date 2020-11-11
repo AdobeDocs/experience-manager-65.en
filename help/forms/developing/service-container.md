@@ -1,8 +1,7 @@
 ---
 title: Service container
 seo-title: Service container
-description: null
-seo-description: null
+description: AEM Forms services located in the service container
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference

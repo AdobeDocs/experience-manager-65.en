@@ -83,8 +83,13 @@ See also:
 >[!NOTE]
 >
 >**Property Name Examples**
->
 >All property names shown, such as **/0050** and **/0170**, should be adjusted to fit within an existing dispatcher.any configuration file.
+>
+
+>[!CAUTION]
+>
+>See the [Dispatcher Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en) for further considerations when restricting access using Dispatcher. Also, read the [AEM Security Cheklist](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/security-checklist.html) for additional security details regarding your AEM installation.
+>
 
 The following entries should be added to the end of the /filter section, especially after all deny entries.
 

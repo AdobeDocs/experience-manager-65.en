@@ -91,7 +91,7 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 **To optionally adjust the batch size of the reprocess workflow**
 
 1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models.]**
-1. On the Workflow Models page, in Card View or List View, select **[!UICONTROL Scene7: Reprocess Assets.]**
+1. On the Workflow Models page, in Card View or List View, select **[!UICONTROL Scene7: Reprocess Assets]**.
 
     ![Workflow Models page with Scene7: Reprocess Assets workflow selected in Card View](/help/assets/assets-dm/reprocess-assets7.png)
 
@@ -111,9 +111,9 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 
     ![Properties dialog box](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. In the upper-right corner of the **[!UICONTROL Batch Upload to Scene7 &ndash; Step Properties]** dialog box, click **[!UICONTROL Done.]** 
+1. In the upper-right corner of the **[!UICONTROL Batch Upload to Scene7 &ndash; Step Properties]** dialog box, click **[!UICONTROL Done]**. 
 
-1. In the upper-right corner of the Scene7: Reprocess Assets workflow model page, click **[!UICONTROL Sync.]** When you see **[!UICONTROL Synced]**, the workflow runtime model is successfully synchronized and ready to reprocess assets in a folder.
+1. In the upper-right corner of the Scene7: Reprocess Assets workflow model page, click **[!UICONTROL Sync]**. When you see **[!UICONTROL Synced]**, the workflow runtime model is successfully synchronized and ready to reprocess assets in a folder.
 
     ![Synchronizing the workflow model](/help/assets/assets-dm/reprocess-assets1.png)
 
