@@ -219,62 +219,6 @@ When the filter contains no `mode` element, the default value of `replace` is us
 |`indentSize`|`int`|No|`2`|The number of spaces to use for the indentation of each level (must be positive if defined)|
 |`lineLength`|`int`|No|`80`|The maximum length of a display line (must be positive if defined)|
 
-## Embedding OSGi Bundles in a Content Package {#embedding-osgi-bundles-in-a-content-package}
-
-Use the Content Package Maven Plugin to embed OSGi bundles into the content package. To embed the bundle, implement the following configurations:
-
-* The bundle must be declared as a dependency of the Maven project.
-* The plugin configuration references the bundle using the desired path of the bundle in the package.
-
-The following example POM creates a package that contains the Apache Sling JCR UserManager bundle. In the package, the bundle JAR is located in the `jcr_root/apps/myapp/install` folder:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="https://maven.apache.org/POM/4.0.0"
-             xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="https://maven.apache.org/POM/4.0.0
-             https://maven.apache.org/maven-v4_0_0.xsd">
- <modelVersion>4.0.0</modelVersion>
-   <groupId>com.adobe.example.myapp</groupId>
- <artifactId>embedded-example</artifactId>
- <packaging>content-package</packaging>
- <version>1.0.0-SNAPSHOT</version>
-
-   <build>
- <plugins>
-     <plugin>
-        <groupId>com.day.jcr.vault</groupId>
-      <artifactId>content-package-maven-plugin</artifactId>
-      <version>0.0.24</version>
-      <extensions>true</extensions>
-      <configuration>
-   <filters>
-       <filter>
-    <root>/apps/myapp</root>
-       </filter>
-    </filters>
-    <embeddeds>
-       <embedded>
-    <groupId>org.apache.sling</groupId>
-    <artifactId>org.apache.sling.jcr.jackrabbit.usermanager</artifactId>
-    <target>/apps/myproject/install</target>
-        </embedded>
-    </embeddeds>
-       </configuration>
-  </plugin>
-    </plugins>
-    </build>
-    <dependencies>
- <dependency>
-      <groupId>org.apache.sling</groupId>
-      <artifactId>org.apache.sling.jcr.jackrabbit.usermanager</artifactId>
-      <version>2.2.0</version>
- </dependency>
-    </dependencies>
-</project>
-
-```
-
 ## Including a Thumbnail Image or Properties File in the Package {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
 Replace the default package configuration files to customize the package properties. For example, include a thumbnail image to distinguish the package in Package Manager and Package Share.
