@@ -16,7 +16,7 @@ Before you use the Smart Content Service, ensure the following:
   <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
   -->
 
-* Install the latest [Experience Manager service pack](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+* Install the latest [Experience Manager service pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ## Integrate with Adobe Developer Console {#integrate-adobe-io}
 
@@ -274,11 +274,11 @@ To check whether the Smart Content Service is trained on your tags in the traini
 
   * Inability to recognize subtle differences in images. For example, slim versus regular fitted shirts.
   * Inability to identify tags based on tiny patterns/parts of an image. For example, logos on T-shirts.
-  * Tagging is supported in the locales that [!DNL Experience Manager] is supported in. For a list of languages, see [Smart Content Services release notes](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+  * Tagging is supported in the locales that [!DNL Experience Manager] is supported in. For a list of languages, see [Smart Content Services release notes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html).
 
 * To search for assets with smart tags (regular or enhanced), use the [!DNL Assets] Omnisearch (full-text search). There is no separate search predicate for smart tags.
 
 >[!MORELIKETHIS]
 >
 >* [Overview of and how to train Smart Tags](enhanced-smart-tags.md)
->* [Video tutorial about how to configure smart tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
+>* [Video tutorial about smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
