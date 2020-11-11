@@ -48,16 +48,6 @@ You can discover the desired assets faster from the search results page using th
 
 *Figure: See the approximate number of assets without filtering search results in search facets.*
 
-## Search suggestions as you type {#searchsuggestions}
-
-When you start typing a keyword, AEM suggests the possible search keywords or phrases. The suggestions are based on the assets in AEM. AEM indexes all the metadata fields to help with search. To provide search suggestions, the system uses the values of the following few metadata fields. To provide search suggestions, consider populating the following fields with appropriate keywords:
-
-* Asset tags. (maps to `jcr:content/metadata/cq:tags`)
-* Asset title. (maps to `jcr:content/metadata/dc:title`)
-* Asset description. (maps to `jcr:content/metadata/dc:description`)
-* Title in the JCR repository. The value may get mapped to Asset title. (maps to `jcr:content/jcr:title`)
-* Description in the JCR repository. The value may get mapped to Asset description. (maps to `jcr:content/jcr:description`)
-
 ## Understand search results and behavior {#searchbehavior}
 
 ### Basic search terms and results {#searchbasics}
