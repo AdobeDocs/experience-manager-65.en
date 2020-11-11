@@ -5,7 +5,7 @@ description: Use the Content Package Maven plugin to deploy AEM applications
 
 # Managing Packages Using Maven {#managing-packages-using-maven}
 
-Use the Content Package Maven plugin to integrate package management tasks into your Maven projects. The plugin goals and parameters enable you to automate many of the tasks that you would normally perform using the AEM Package Manager page:
+Use the Adobe Content Package Maven plugin to integrate package deployment and management tasks into your Maven projects. While the responsibility of package creation is now owned by the [Apache Jackrabbit FileVault Package Maven plugin](https://jackrabbit.apache.org/filevault-package-maven-plugin/), the deployment of the constructed packages to AEM is performed by the Adobe Content Package Maven plugin and enables the automation of tasks normally performed using AEM Package Manager:
 
 * Create new packages from files in the file system.
 * Install and uninstall packages on AEM.
