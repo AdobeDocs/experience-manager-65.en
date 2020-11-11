@@ -27,52 +27,6 @@ AEM 6.5 adheres to the latest best practices for package management and project 
 
 The plugin is available from the [Maven Central Repository](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public) .
 
->[!NOTE]
->
->The Adobe Public Releases repository is not browsable, so that navigating to the repository URL using your web browser results in a 404 Not Found error. However, Maven is able to access the repository directories.
-
-```xml
-<profile>
-    <id>adobe-public</id>
-    <activation>
-         <activeByDefault>false</activeByDefault>
-    </activation>
-    <properties>
-         <releaseRepository-Id>adobe-public-releases</releaseRepository-Id>
-         <releaseRepository-Name>Adobe Public Releases</releaseRepository-Name>
-         <releaseRepository-URL>https://repo.adobe.com/nexus/content/groups/public</releaseRepository-URL>
-    </properties>
-    <repositories>
-         <repository>
-             <id>adobe-public-releases</id>
-             <name>Adobe Basel Public Repository</name>
-             <url>https://repo.adobe.com/nexus/content/groups/public</url>
-             <releases>
-                 <enabled>true</enabled>
-                 <updatePolicy>never</updatePolicy>
-             </releases>
-             <snapshots>
-                 <enabled>false</enabled>
-             </snapshots>
-         </repository>
-     </repositories>
-     <pluginRepositories>
-         <pluginRepository>
-             <id>adobe-public-releases</id>
-             <name>Adobe Basel Public Repository</name>
-             <url>https://repo.adobe.com/nexus/content/groups/public</url>
-             <releases>
-                 <enabled>true</enabled>
-                 <updatePolicy>never</updatePolicy>
-             </releases>
-             <snapshots>
-                 <enabled>false</enabled>
-             </snapshots>
-         </pluginRepository>
-     </pluginRepositories>
-</profile>
-```
-
 ## Adding the Content Package Maven Plugin to the POM File {#adding-the-content-package-maven-plugin-to-the-pom-file}
 
 To use the Content Package Maven Plugin, add the following plugin element inside the build element of your POM file:
