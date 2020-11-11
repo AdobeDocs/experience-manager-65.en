@@ -133,7 +133,7 @@ The following POM file is located in the current directory of the command line t
 
 ### install {#install}
 
-Installs a package in the repository. Execution of this goal does not require a Maven project. The goal is bound to the Install phase of the Maven build lifecycle.
+Installs a package in the repository. Execution of this goal does not require a Maven project. The goal is bound to the `install` phase of the Maven build lifecycle.
 
 #### Parameters {#parameters-1}
 
