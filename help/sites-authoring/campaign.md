@@ -87,7 +87,7 @@ From the **Sites** page:
    ![chlimage_1-17](assets/chlimage_1-17a.png)
 
 1. Select the configuration that matches your Adobe Campaign instance from the drop-down list, then confirm by clicking **Save**.
-1. You can view the template that the email has applied to it by clicking the** Adobe Campaign** tab. If you would like to select another template, you can access that from within the email while editing.
+1. You can view the template that the email has applied to it by clicking the**Adobe Campaign** tab. If you would like to select another template, you can access that from within the email while editing.
 
    If you would like to apply a specific email delivery template (from Adobe Campaign), other than the default mail template, in **Properties**, select the **Adobe Campaign** tab. Enter the email delivery template's internal name in the related Adobe Campaign instance.
 
@@ -317,7 +317,7 @@ In AEM, if a newsletter is linked to a single delivery, the delivery code displa
 >[!NOTE]
 >
 >If the newsletter is linked to several deliveries, the number of linked deliveries (but not every ID is displayed).
-
+>
 >[!NOTE]
 >
 >The Workflow step **Publish to Adobe Campaign** is deprecated in AEM 6.1. This step was a part of the AEM 6.0 integration with Adobe Campaign and is no longer necessary.
