@@ -46,7 +46,6 @@ Detailed instructions are described in this document.
 >[!NOTE]
 >
 >When adding email templates, be sure to add them under **/content/campaigns** to make them available.
->
 
 #### Creating new email content {#creating-new-email-content-1}
 
@@ -153,7 +152,6 @@ See [Adobe Campaign Components](/help/sites-authoring/adobe-campaign-components.
 >
 >* Only the fields of the Adobe Campaign **Profiles** targeting dimension are taken into account.
 >* When viewing Properties from **Sites**, you do not have access to the Adobe Campaign context fields. You can access those directly from the email while editing.
->
 
 To insert personalization:
 
