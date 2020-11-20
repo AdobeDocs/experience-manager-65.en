@@ -37,7 +37,7 @@ Watch a 10 minute and 33 second walkthrough on [how carousel banners are created
 
 >[!NOTE]
 >
->Non-administrative users must be added to the **[!UICONTROL dam-users]** group in order to be able to create or edit carousel banners. If you are having trouble creating or editing, please see your system administrator who can add you to the **d[!UICONTROL am-users]** group.
+>Non-administrative users must be added to the **[!UICONTROL dam-users]** group in order to be able to create or edit carousel banners. If you are having trouble creating or editing, please see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
 
 ## Quick Start: Carousel Banners {#quick-start-carousel-banners}
 
@@ -250,7 +250,7 @@ See [(Optional) Previewing Carousel Banners.](#optional-previewing-carousel-bann
 >[!NOTE]
 >
 >When you add hotspots to an image in an [Interactive Image](/help/assets/interactive-images.md) or a Carousel Banner, the hotspot information is stored in the same metadata location&mdash;relative to the image's location&mdashregardless of whether it is an Interactive Image or a Carousel Banner. This functionality means that you can easily re-use the same image&mdash;along with its defined hotspot data&mdash;in either viewer.
-
+>
 >Be aware, however, that Carousel Banners support image maps on images that can also contain hotspots; an Interactive Image does not. Keep this in mind if you intend to create an Interactive Image or Carousel Banner that uses the same image. You may want to create Interactive Images and Carousel Banners using separate copies of the same image instead.
 
 >[!NOTE]

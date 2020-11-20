@@ -338,7 +338,6 @@ You can either drag and drop an image from the [Content Finder](/help/sites-clas
 >The progress of the upload cannot be monitored with Internet Explorer.
 >
 >Internet Explorer users need to upload the image and click **Ok** then re-open the image to see the uploaded file in the preview and to be able to perform modifications (i.e. crop).
-
 >
 >See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
 
