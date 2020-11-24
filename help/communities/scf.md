@@ -175,9 +175,8 @@ The [Community Components Guide](components-guide.md) allows includable componen
 ```
 
 >[!NOTE]
- >
- >To add a component to a page dynamically, instead of adding or including it in a template, see [Component Sideloading](sideloading.md).
- >
+>
+>To add a component to a page dynamically, instead of adding or including it in a template, see [Component Sideloading](sideloading.md).
 
 ### Handlebars Helpers {#handlebars-helpers}
 

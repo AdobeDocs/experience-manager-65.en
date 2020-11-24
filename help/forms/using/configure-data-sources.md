@@ -46,7 +46,7 @@ You can configure relational databases using AEM Web Console Configuration. Do t
    >    
    >    
    >    1. Go to https://'[server]:[port]'/system/console/crypto.
-   >    1. In the **[!UICONTROL Plain Text]** field, specify the password or any string to encrypt and click **[!UICONTROL Protect]**.
+   >    1. In the **[!UICONTROL Plain Text]** field, specify the password or any string to encrypt and tap **[!UICONTROL Protect]**.
    >    
    >    
    >    
@@ -92,6 +92,7 @@ All cloud service configurations in AEM are consolidated in the `/conf` folder i
 To configure the folder for cloud service configurations:
 
 1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 1. Do the following to enable the global folder for cloud configurations or skip this step to create and configure another folder for cloud service configurations.
 
     1. In the **[!UICONTROL Configuration Browser]**, select the `global` folder and tap **[!UICONTROL Properties]**.
@@ -125,9 +126,11 @@ Do the following to configure RESTful services:
         * Base Path: The URL prefix for all API paths. It is an optional field.  
           If necessary, edit the pre-populated values for these fields.
 
-    * Select the authentication type — None, OAuth2.0, Basic Authentication, API Key, or Custom Authentication — to access the RESTful service, and accordingly provide details for authentication.
+    * Select the authentication type — None, OAuth2.0, Basic Authentication, API Key, Custom Authentication, or Mutual Authentication — to access the RESTful service, and accordingly provide details for authentication.
 
     If you select **[!UICONTROL API Key]** as the authentication type, specify the value for the API key. The API key can be sent as a request header or as a query parameter. Select one of these options from the **[!UICONTROL Location]** drop-down list and specify the name of the header or the query parameter in the **[!UICONTROL Parameter Name]** field accordingly.
+
+    If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).
 
 1. Tap **[!UICONTROL Create]** to create the cloud configuration for the RESTful service.
 
@@ -144,10 +147,12 @@ SOAP-based web services are described using [Web Services Description Language (
 
     * WSDL URL for the web service.
     * Service Endpoint. Specify a value in this field to override the service endpoint mentioned in WSDL.
-    * Select the authentication type — None, OAuth2.0, Basic Authentication, Custom Authentication, or X509 Token — to access the SOAP service, and accordingly provide the details for authentication.
+    * Select the authentication type — None, OAuth2.0, Basic Authentication, Custom Authentication, X509 Token, or Mutual Authentication — to access the SOAP service, and accordingly provide the details for authentication.
 
-      If you select X509 Token as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+      If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
       Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.
+
+      If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).
 
 1. Tap **[!UICONTROL Create]** to create the cloud configuration for the SOAP web service.
 
@@ -174,6 +179,19 @@ An OData service is identified by its service root URL. To configure an OData se
    >You must select OAuth 2.0 authentication type to connect with Microsoft Dynamics services using OData endpoint as the service root.
 
 1. Tap **Create** to create the cloud configuration for the OData service.
+
+## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
+
+When you enable mutual authentication for form data model, both the data source and AEM Server running form data model authenticate each other’s identity before sharing any data. You can use mutual authentication for REST and SOAP based connections (data sources). To configure mutual authentication for a form data model on your AEM Forms environment:
+
+1. Upload the private key (certificate) to [!DNL AEM Forms] server. To upload the private key:
+   1. Login to your [!DNL AEM Forms] server as an administrator.
+   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Select the `fd-cloudservice` user and tap **[!UICONTROL Properties]**.
+   1. Open the **[!UICONTROL Keystore]** tab, expand the **[!UICONTROL Add Private Key from KeyStore file]** option, upload the KeyStore File, specify the aliases, passwords, and tap **[!UICONTROL Submit]**. The Certificate is uploaded.  The private key alias is mentioned in the certificate and set while creating the certificate.
+1. Upload trust certificate to Global Trust Store. To upload the certificate:
+   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
+   1. Expand the **[!UICONTROL Add Certificate from CER file]** option, tap **[!UICONTROL Select Certificate File]**, upload the certificate, and tap **[!UICONTROL Submit]**.
+1. Configure [SOAP](#configure-soap-web-services) or [RESTful](#configure-restful-web-services) web services as the data source and select **[!UICONTROL Mutual authentication]** as the authentication type. If you configure multiple self-signed certificates for `fd-cloudservice` user, specify the Key Alias name for the certificate.
 
 ## Next steps {#next-steps}
 

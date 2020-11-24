@@ -45,7 +45,7 @@ In addition, the capabilities of the client computer&mdash;such as a workstation
 **To preview 3D assets in AEM**
 
 1. Make sure you have uploaded 3D assets into AEM.
-    See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+    See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/manage-assets.md#uploading-assets).
 1. From AEM, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets > Files.]**
 
     ![Navigation page](/help/assets/assets-dm/navigation-assets.png

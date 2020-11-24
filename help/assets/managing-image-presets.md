@@ -30,6 +30,10 @@ This section describes how to create, modify, and generally manage image presets
 
 Like a macro, an Image Preset is a predefined collection of sizing and formatting commands saved under a name. To understand how Image Presets work, suppose your web site requires each product image to appear in different sizes, different formats, and compression rates for desktop and mobile delivery.
 
+>[!NOTE]
+>
+>In Dynamic Media - Scene7 mode, image presets are supported for image assets only.
+
 You could create two image presets: one with 500 x 500 pixels for desktop version and 150 x 150 pixels for the mobile version. You create two Image Presets, one called `Enlarge` to display images at 500x500 pixels and one called `Thumbnail` to display images at 150 x 150 pixels. To deliver images at the `Enlarge` and `Thumbnail` size, AEM looks up the definition of the Enlarge Image Preset and Thumbnail Image Preset. Then AEM dynamically generates an image at the size and formatting specifications of each Image Preset.
 
 Images that are reduced in size when they are delivered dynamically can lose sharpness and detail. For this reason, each Image Preset contains formatting controls for optimizing an image when it is delivered at a particular size. These controls make sure that your images are sharp and clear when they are delivered to your web site or application.
@@ -56,7 +60,11 @@ You manage your image presets in AEM by tapping or clicking the AEM logo to acce
 >
 >The system shows a variety of renditions when you select **[!UICONTROL Renditions]** in an asset's Detail View. You can increase or decrease the number of image presets that display. See [Increasing the number of image presets that display](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Adobe Illustrator (AI), Postscript (EPS), and PDF file formats {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Smart crops, Adobe Illustrator (AI), Postscript (EPS), and PDF file formats {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+
+>[!NOTE]
+>
+>This topic is applicable to Dynamic Media - Hybrid mode only.  
 
 If you intend to support the ingestion of AI, EPS, and PDF files so that you can generate dynamic renditions of these file formats, you may want to review the following information before you create image presets.
 

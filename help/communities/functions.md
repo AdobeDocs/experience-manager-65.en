@@ -20,9 +20,8 @@ The type of features expected from a community experience are well known. Commun
 Once a community site is created, content may be added to the resulting pages using the standard [AEM authoring mode](/help/sites-authoring/editing-content.md). Various community functions are available as seen in the community functions console.
 
 >[!NOTE]
- >
- >The consoles for the creation of [community sites](/help/communities/sites-console.md), [community site templates](/help/communities/sites.md), [community group templates](/help/communities/tools-groups.md), and [community functions](/help/communities/functions.md) are for use only in the author environment.
- >
+>
+>The consoles for the creation of [community sites](/help/communities/sites-console.md), [community site templates](/help/communities/sites.md), [community group templates](/help/communities/tools-groups.md), and [community functions](/help/communities/functions.md) are for use only in the author environment.
 
 ## Community Functions Console {#community-functions-console}
 
@@ -223,11 +222,10 @@ When added to a template, the following dialog opens:
 ### Groups Function {#groups-function}
 
 >[!CAUTION]
- >
- >The groups function must *not* be the *first nor the only* function in a site's structure or in a community site template.
- >
- >Any other function, such as the [page function](#page-function), must be included and listed first.
- >
+>
+>The groups function must *not* be the *first nor the only* function in a site's structure or in a community site template.
+>
+>Any other function, such as the [page function](#page-function), must be included and listed first.
 
 The groups function provides the ability for community members to create sub-communities within the community site in the publish environment.
 

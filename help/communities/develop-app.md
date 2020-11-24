@@ -37,7 +37,7 @@ Using CRXDE Lite:
 1. Click the green **[!UICONTROL +Add]** button.
 1. Click **[!UICONTROL Save All]**.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![page-script](assets/page-script.png)
 
 ### Head and body scripts {#head-and-body-scripts}
 
@@ -122,13 +122,13 @@ You should not only see the heading **Community Play**, but also the UI for edit
 
 The Assets/Component side panel is seen when both the side panel is toggled open and the window is wide enough for both the side content and the page content to be displayed.
 
-![chlimage_1-232](assets/chlimage_1-232.png)
+![view-page](assets/view-page.png)
 
 * Classic UI: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
 
 Following is how the play page appears in the classic UI including with content finder (cf):
 
-![chlimage_1-233](assets/chlimage_1-233.png)
+![play-page-view](assets/play-page-view.png)
 
 ## Communities Components {#communities-components}
 
@@ -153,10 +153,10 @@ In addition, choose **[!UICONTROL General]** components, such as
 * Title (Foundation)
 
 >[!NOTE]
- >
- >The components enabled for the page par are stored in the repository as the value of the `components` property of the
- >`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
- >
+>
+>The components enabled for the page par are stored in the repository as the value of the `components` property of the
+>
+>`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
 
 ## Landing Page {#landing-page}
 

@@ -16,15 +16,15 @@ The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets canno
 
 To download assets, follow these steps:
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]**.
-1. On the Navigation page, tap **[!UICONTROL Assets]** > **[!UICONTROL Files.]**
+1. In the upper-left corner, click the logo. In the left rail, click **[!UICONTROL Navigation]**.
+1. On the [!UICONTROL Navigation] page, click **[!UICONTROL Assets]** > **[!UICONTROL Files.]**
 1. Navigate to a folder that contains assets you want to download.
 1. Select the folder or select one or more assets within the folder.
-1. On the toolbar, tap **[!UICONTROL Download.]**
+1. On the toolbar, click **[!UICONTROL Download.]**
 
    ![Available options when downloading assets from Experience Manager Assets](/help/assets/assets/asset-download1.png)
 
-   *Figure: Download dialog box options.*
+   *Figure: Options available in the download dialog.*
 
 1. In the Download dialog box, select the download options you want.
 
@@ -37,7 +37,7 @@ To download assets, follow these steps:
    | **[!UICONTROL Smart Crops]** | Select this option to download all the smart crop renditions of the selected asset from within AEM. A zip file with the Smart Crop renditions is created and downloaded to your local computer. |
    | **[!UICONTROL Dynamic Rendition(s)]** | Select this option to generate a series of alternate renditions in real time. When you select this option, you also select the renditions that you want to create dynamically by selecting from the [Image Preset](image-presets.md) list. <br>In addition, you can select the size and unit of measurement, format, color space, resolution, and any optional image modifiers such as inverting the image. The option is only available if you have [!DNL Dynamic Media] enabled.|
 
-1. In the dialog box, tap **[!UICONTROL Download.]**.
+1. In the dialog box, click **[!UICONTROL Download.]**.
 
 When you select a folder to download, the complete asset hierarchy under the folder is downloaded. To include each asset you download (including assets in child folders nested under the parent folder) in an individual folder, select **[!UICONTROL Create separate folder for each asset]**.
 
@@ -60,12 +60,13 @@ To allow downloading assets from your DAM, say when using something like Asset S
 
 The `Asset Download Servlet` can be disabled on an [!DNL Experience Manager] Publish instances by updating the dispatcher configuration to block any asset download requests. The servlet can also be manually disabled via the OSGi console directly.
 
-1. To block asset download requests via a dispatcher configuration, edit the `dispatcher.any` configuration and add a rule to the [filter section](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. To block asset download requests via a dispatcher configuration, edit the `dispatcher.any` configuration and add a rule to the [filter section](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. To disable the OSGi component on a Publish instance, access the OSGi Console at `http://[aem_server]:[port]/system/console/components`. Locate `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` and click **[!UICONTROL Disable]**.
 
 >[!MORELIKETHIS]
 >
+>* [Download assets using Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [Download DRM protected assets](drm.md).
->* [Download assets using Experience Manager desktop app on Win or Mac desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets).
+>* [Download assets using Experience Manager desktop app on Win or Mac desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets).
 >* [Download assets using Adobe Assets Link from within the supported Adobe Creative Cloud apps](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html).

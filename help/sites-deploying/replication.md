@@ -546,11 +546,9 @@ To monitor a replication agent:
    >
    >
    >If a replication test is performed for an Outbox queue, any items that are older than the test replication will be re-processed with every reverse replication.
-
    >
    >
    >If such items already exist in a queue, they can be found with the following XPath JCR query and should be removed.
-
    >
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`

@@ -223,9 +223,8 @@ To enable spam detection engine, follow these steps:
 ![spamprocess](assets/spamprocess.png)
 
 >[!NOTE]
- >
- >Spam detection is only implemented for English locale.
- >
+>
+>Spam detection is only implemented for English locale.
 
 ### Sentiment {#sentiment}
 

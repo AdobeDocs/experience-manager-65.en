@@ -159,13 +159,17 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 1. Remove any jars beneath `crx-quickstart/install` associated with an earlier version of the S3 connector.
 
-1. Download the latest release of the 1.8.x S3 connector from [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)
+1. Download the latest release of the 1.10.x S3 connector from [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)
 
 1. Extract the package to a temporary folder and copy the contents of `jcr_root/libs/system/install` to the `crx-quickstart/install` folder.
 
 ### Determining the correct upgrade start command {#determining-the-correct-upgrade-start-command}
 
 To execute the upgrade, it is important to start AEM using the jar file to bring up the instance. For upgrading to 6.5, please also see other content restructuring and migration options in [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) that you can choose with the upgrade command.
+
+>[!IMPORTANT]
+>
+>If you are running Oracle Java 11 (or generally versions of Java newer than 8), additional switches will need to be added to your command line when starting AEM. For more information, see [Java 11 Considerations](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
 Note that starting AEM from the start script will not start the upgrade. Most customers start AEM using the start script and have customized this start script to include switches for environment configurations such as memory settings, security certificates, etc. For this reason, we recommend following this procedure to determine the proper upgrade command:
 

@@ -27,7 +27,7 @@ See also [Linking YouTube URLs to your Web Application.](video.md)
 
 See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
-See also [Uploading Assets.](managing-assets-touch-ui.md#uploading-assets)
+See also [Uploading Assets.](manage-assets.md#uploading-assets)
 
 ## Obtaining a URL for an asset {#obtaining-a-url-for-an-asset}
 

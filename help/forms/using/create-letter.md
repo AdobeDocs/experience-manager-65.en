@@ -335,7 +335,7 @@ When after creating a correspondence, you tap Open, Correspondence Management di
 ### Set up the attachments {#set-up-the-attachments}
 
 1. Select **Add Asset**. 
-1. In the Select Asset screen, tap the assets to attach with the letter and tap **Done**. You need to have the assets first uploaded to Assets. It is recommended that you attach only PDF and Microsoft Office documents, but you can also attach images. For more information on uploading assets in DAM, see [Uploading Assets](/help/assets/managing-assets-touch-ui.md).
+1. In the Select Asset screen, tap the assets to attach with the letter and tap **Done**. You need to have the assets first uploaded to Assets. It is recommended that you attach only PDF and Microsoft Office documents, but you can also attach images. For more information on uploading assets in DAM, see [Uploading Assets](/help/assets/manage-assets.md).
 1. To lock the order of the assets in the list so that the Claims Adjustor cannot change the order, tap **Lock Order**. If you do not select this option, the Claims Adjustor can change the order of the list items.
 1. To change the order of the assets, drag-and-drop an asset holding the reorder icon for an asset ( ![dragndrop](assets/dragndrop.png)).
 1. Tap **Edit** in front of an attachment and specify an attachment as Mandatory if you do not want the author to be able to delete it. Specify an attachment as Selected if you want it to be preselected in the CCR interface. 

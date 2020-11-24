@@ -20,9 +20,8 @@ Now that the components for the custom comment system in the application directo
 For a simple demonstration, a visual feature, the avatar shown of the signed-in user who posts a comment, is removed.
 
 >[!NOTE]
- >
- >To use the extension, the instance of the comment system in a website to be affected (/content) must set its resourceType to be the custom comment system.
- >
+>
+>To use the extension, the instance of the comment system in a website to be affected (/content) must set its resourceType to be the custom comment system.
 
 ## Modify the HBS Scripts {#modify-the-hbs-scripts}
 
@@ -68,7 +67,7 @@ One way to do so is:
 
 [Continuing the experience](/help/communities/extend-sample-page.md#publish-sample-page) on the publish instance, still signed in as the same user, it is now possible to refresh the page in the publish environment to view the modification to remove the avatar:
 
-![chlimage_1-81](assets/chlimage_1-81.png)
+![view-modified-content](assets/view-modified-content.png)
 
 ### Sample Comment Extension Package {#sample-comment-extension-package}
 

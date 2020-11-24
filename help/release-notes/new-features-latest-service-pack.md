@@ -21,7 +21,7 @@ Page Move operation is now available in asynchronous mode. In addition to immedi
 
 ### Invalidate CDN cached content {#invalidate-cdn-cached-content}
 
-You can now use the[!DNL  Dynamic Media] user interface to invalidate Content Delivery Network (CDN) cached content. As a result, the updated assets are available instantly instead of waiting for the cache to expire. You can invalidate CDN by:
+You can now use the [!DNL Dynamic Media] user interface to invalidate Content Delivery Network (CDN) cached content. As a result, the updated assets are available instantly instead of waiting for the cache to expire. You can invalidate CDN by:
 
 * Creating a CDN invalidation template: Selecting assets and form associated template-based URLs
 
@@ -70,17 +70,18 @@ You can now choose to selectively publish or unpublish assets to either [!DNL Ex
 ### Prefill an adaptive form at the client {#prefill-merge-data-at-client}
 
 When you prefill an adaptive form, the [!DNL Experience Manager Forms] server merges data with an adaptive form and delivers the filled form to you. By default, the data merge action takes place at the server.
-You can now configure the [!DNL Experience Manager Forms] server to perform the data merge action at the client instead of the server. It significantly reduces the time required to prefill and render adaptive forms.
+You can now configure the [!DNL Experience Manager Forms] server to [perform the data merge action at the client](../../help/forms/using/prepopulate-adaptive-form-fields.md) instead of the server. It significantly reduces the time required to prefill and render adaptive forms.
 
 ### Form data model integration with RESTful APIs on a server with two-way SSL implementation {#fdm-integration-rest-apis-two-way-ssl}
 
-[!DNL Experience Manager Forms] form data model can now integrate with RESTful APIs on a server that has a two-way SSL implemented on it.
+[!DNL Experience Manager Forms] form data model can now [integrate with RESTful APIs on a server that has a two-way SSL implemented on it](../../help/forms/using/configure-data-sources.md).
+
 
 ### Added support for [!DNL Adobe Sign] Text Tags in Automated Forms Conversion Service {#sign-integration-acroform-afcs}
 
 If an AcroForm includes [!DNL Adobe Sign] Text Tags, those fields are now recognized and represented as [!DNL Adobe Sign] fields in the adaptive form converted using [!DNL Automated Forms Conversion service]. A signer can fill such fields while signing the adaptive form.
 
-### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
+### Support to convert colored PDF forms to adaptive forms {#colored-PDF-forms}
 
 You can use [!DNL Automated Forms Conversion service] to convert colored PDF forms to adaptive forms. 
 
@@ -90,15 +91,17 @@ You can use [!DNL Automated Forms Conversion service] to convert colored PDF for
 
 ### Enhanced caching for translated adaptive form pages {#enhanced-caching-translated-adaptive-forms}
 
-You can now specify locale as a selector instead of URL argument. It helps cache translated adaptive forms on [!DNL Experience Manager Dispatcher].
+You can now specify [locale as a selector in the adaptive form URL instead of an argument in adaptive form URL](../../help/forms/using/supporting-new-language-localization.md). It helps cache translated adaptive forms on [!DNL Experience Manager Dispatcher]. Caching translated adaptive form was not possible in previous versions. For detailed information about configuring caching for using locale as a selector in the adaptive form URL, see [Configure adaptive form cache at dispatcher](../../help/forms/using/configure-adaptive-forms-cache.md).
 
 ### Save output of form data model service to a variable {#save-fdm-service-to-variable}
 
-Form data model allows you to save output of a form data model service to a variable. [!DNL Experience Manager Forms] now automatically maps the type of the form data model service to the type of variable.
+Form data model allows you to save output of a form data model service to a variable. [!DNL Experience Manager Forms] now automatically maps the type of the form data model service to the type of variable. 
 
 ### Attach multiple files for File Attachment component {#attach-multiple-files}
 
-You can now attach multiple files to the [!UICONTROL File Attachment] component of adaptive forms.
+You can now [attach multiple files](../../help/forms/using/introduction-forms-authoring.md) to the [!UICONTROL File Attachment] component of adaptive forms.
+
+
 
 ## Key features in previous Experience Manager 6.5 Service Packs {#key-features-previous-service-packs}
 
@@ -184,7 +187,7 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 
 [!DNL Experience Manager Assets] includes the following accessibility enhancements:
 
-* Arrow keys on keyboard can be used to move and pan areas within zoomed images. For more information, see [preview assets using keyboard keys only](../assets/managing-assets-touch-ui.md#previewing-assets).
+* Arrow keys on keyboard can be used to move and pan areas within zoomed images. For more information, see [preview assets using keyboard keys only](../assets/manage-assets.md#previewing-assets).
 
 * The mixed state checkboxes (in which unless you select all the nested predicates the first-level checkboxes are not selected and are stricken through) in Filters panel are readable by screen readers.
 
@@ -192,6 +195,12 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 For example, `On Time (MM-DD-YYYY HH:mm)`. Here MM is month in two-digit format, YYYY is year, DD is day in two-digit format, HH is hour in 24-hour military format, and mm is minute.
 
 * Screen readers now announce the `X` symbol to remove the selected tags along with the number of the selected tags.
+
+#### Sortable column for Created date of assets in list view (6.5.3.0) {#sortable-date-created-column}
+
+A new sortable column for created date of assets is added in DAM list view and on asset search results in list view.
+
+![Sortable column for date created](assets/asset-created-date.png)
 
 #### Visual search for [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 

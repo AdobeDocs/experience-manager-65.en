@@ -2,14 +2,15 @@
 cloud: experience-cloud
 product: adobe experience manager
 sub-product: forms
+solution: Experience Manager, Experience Manager Forms
 audience: end-user
-user-guide-title: AEM 6.5 Forms User Guide
+user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
 ---
-# AEM 6.5 - Forms User Guide {#forms}
+# Adobe Experience Manager 6.5 Forms Guide {#forms}
 
-+ [AEM 6.5 Forms User Guide](home.md)
++ [AEM 6.5 Forms Guide](home.md)
 + Release Notes {#release-notes-new-features}
   + [Release Notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html#experience-manager-forms)
   + [New features summary](using/whats-new.md)
@@ -185,6 +186,7 @@ user-guide-description: Create, manage, publish, and update digital forms.
   + [Print channel and web channel](using/web-channel-print-channel.md)
   + [Interactive Communications configuration properties](using/interactive-communication-configuration-properties.md)
   + [Generate multiple interactive communications](using/generate-multiple-interactive-communication-using-batch-api.md)
+  + [Use Layout mode to resize components](using/resize-using-layout-mode-interactive-communication.md)
 + Workflows {#workflows}
   + [Forms-centric workflow on OSGi](using/aem-forms-workflow.md)
   + [Forms-centric workflow on OSGi - Step Reference](using/aem-forms-workflow-step-reference.md)
