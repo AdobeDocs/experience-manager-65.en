@@ -17,7 +17,7 @@ docset: aem65
 
 This section describes the procedure that needs to be followed in order to update AEM for Application Server installations.
 
-All the examples in this procedure use JBoss as the Application Server and imply that you have a working version of AEM already deployed. The procedure is meant to document upgrades performed from **AEM version 5.6 to 6.3**.
+All the examples in this procedure use JBoss as the Application Server and imply that you have a working version of AEM already deployed. The procedure is meant to document upgrades performed from **AEM version 5.6 to 6.5**.
 
 1. First, start JBoss. In most situations, you can do this by running the `standalone.sh` startup script, by running this command from the terminal:
 
