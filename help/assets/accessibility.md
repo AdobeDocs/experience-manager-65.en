@@ -35,8 +35,7 @@ Possible topics to cover in this article are below.
 
 To read a report with details of the level of compliance, see [Accessibility conformance report](https://www.adobe.com/accessibility/compliance.html) (ACR) page.
 
-<!-- TBD: Add link after release.
-To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](/). -->
+To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
 ## Assistive technologies {#at-support}
 
@@ -217,6 +216,7 @@ To provide feedback, ask questions, and request product enhancements, related to
 
 >[!MORELIKETHIS]
 >
->* [Release notes of enhancements done in each release](/help/release-notes/new-features-latest-service-pack.md).
+>* [Accessibility features in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
+>* [Release notes of enhancements done in each Service Pack release](/help/release-notes/new-features-latest-service-pack.md).
 >* [[!DNL Adobe Experience Manager] accessibility guidance](/help/managing/web-accessibility.md).
 >* [Conformance reports (ACR) and VPAT listing for Adobe solutions](https://www.adobe.com/accessibility/compliance.html).

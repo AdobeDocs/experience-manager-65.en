@@ -25,9 +25,9 @@ You can now perform the page moves and MSM rollouts as asynchronous operations t
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* Users can sort digital assets in Card and Column views.
+* [!DNL Assets] and [!DNL Dynamic Media] provide multiple accessibility enhancements. The enhancements are related to keyboard navigation, use of screen readers, similar enhancements to enable use of assistive technologies (AT). See [[!DNL Assets] enhancements](/help/release-notes/sp-release-notes.md#assets-6570) and [[!DNL Dynamic Media] enhancements](/help/release-notes/sp-release-notes.md#dynamic-media-6570).
 
-* [!DNL Assets] and [!DNL Dynamic Media] provide multiple accessibility enhancements. The enhancements are related to keyboard navigation, use of screen readers, similar enhancements to enable use of assistive technologies (AT). See [Assets enhancements](/help/release-notes/sp-release-notes.md#assets-6570) and [[!DNL Dynamic Media] enhancements](/help/release-notes/sp-release-notes.md#dynamic-media-6570). <!-- TBD: Add link to a11y article after go-live. Adding RN link for now. -->
+* Users can sort digital assets in Card and Column views.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
