@@ -120,9 +120,7 @@ If using a **new report suite**, be aware that a new report suite may only have 
 
 If using an **existing report suite**, it may be necessary to [modify the variable mapping](#modifying-analytics-variable-mapping) prior to activating the Analytics framework for a community site. 
 
-<!--
 Contact your account representative for any concerns regarding the variables dedicated to Communities.
--->
 
 >[!CAUTION]
 >
