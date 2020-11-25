@@ -118,7 +118,11 @@ By signing in to [Adobe Experience Cloud](https://docs.adobe.com/content/help/en
 
 If using a **new report suite**, be aware that a new report suite may only have 4 evars and 6 event variables, while 11 evars and 7 event vars are required for Communities.
 
-If using an **existing report suite**, it may be necessary to [modify the variable mapping](#modifying-analytics-variable-mapping) prior to activating the Analytics framework for a community site. Contact your account representative for any concerns regarding the variables dedicated to Communities.
+If using an **existing report suite**, it may be necessary to [modify the variable mapping](#modifying-analytics-variable-mapping) prior to activating the Analytics framework for a community site. 
+
+<!--
+Contact your account representative for any concerns regarding the variables dedicated to Communities.
+-->
 
 >[!CAUTION]
 >
@@ -234,8 +238,7 @@ To save the settings:
 
     * Verify entries do not contain leading spaces.
     * Try a different data center.
-    * Contact your account representative.
-
+    
 * Select **OK**.
 
   ![analytics-enablement-settings](assets/analytics-settings1.png)
