@@ -84,7 +84,7 @@ docset: aem65
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.5 Communities GA ships with Communities package. To know about updates to AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), refer [AEM 6.5 Release Notes](/help/release-notes/release-notes.md#communities-release-notes.html).
+AEM 6.5 Communities GA includes Communities package. To know about updates to AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), refer [AEM 6.5 Release Notes](/help/release-notes/release-notes.md#communities-release-notes.html).
 
 ### AEM 6.5 Updates {#aem-updates}
 
