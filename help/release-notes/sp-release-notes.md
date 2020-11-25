@@ -132,7 +132,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0
 
 [!DNL Adobe Experience Manager] 6.5.7.0 [!DNL Assets] fixes the following issues and provides the following enhancements.
 
-* The following enhancements are done for accessibility in [!DNL Experience Manager Assets]:
+* The following enhancements are done for accessibility in [!DNL Experience Manager Assets] in this release. For more information, see [accessibility features in [!DNL Assets]](/help/assets/accessibility.md).
 
   * When navigating timeline using a keyboard, the `Esc` key can collapse the [!UICONTROL Show All] option without losing the focus (CQ-4293598).
   * When navigating using keyboard tab key, after removing the last tag from the added tags, the tag field retains the focus (NPR-35109).
@@ -186,7 +186,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0
 
 #### [!DNL Dynamic Media] {#dynamic-media-6570}
 
-* The following major enhancements are done for accessibility in [!DNL Dynamic Media] (CQ-4290306). For details, see accessibility features in [!DNL Dynamic Media].  <!-- TBD: link to DM content post GA -->
+* The following enhancements are done for accessibility in [!DNL Dynamic Media] (CQ-4290306). For details, see [accessibility features in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
   * Screen readers (JAWS, Narrator) narrate the name, role, and state for the menu items in the Embed size menu option (CQ-4290927).
   * Users can navigate the Email link dialog using the `Tab` key (CQ-4290926).
