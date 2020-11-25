@@ -25,7 +25,7 @@ See also [Characteristics of SRP Options](/help/communities/working-with-srp.md#
 
 An additional license is required for the use of ASRP.
 
-To configure your AEM Communities site to use ASRP for UGC, contact your account representative for:
+To configure your AEM Communities site to use ASRP for UGC, ensure that you have the following:
 
 * Data Center URL (address of the ASRP endpoint)
 * Consumer Key
