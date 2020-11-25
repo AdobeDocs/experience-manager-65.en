@@ -91,9 +91,9 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0
 
 * When you select the `Esc` key, the focus is not restored to the parent control (CQ-4293593, CQ-4293590).
 
-* Improved WCAG compliance for [!DNL Sites] UI & Core components (CQ-4293448). <!-- TBD: Retain ampersand if in UI and then add UICONTROL. Otherwise, lose the ampersand. -->
+* Improved WCAG compliance for [!DNL Sites] UI and Core components (CQ-4293448).
 
-* Zoom and Scale functions are disabled for the [!DNL Sites] Editor page (CQ-4282353). <!-- TBD: DNL and UICONTROL tags are missing. -->
+* [!UICONTROL Zoom] and [!UICONTROL Scale] functions are disabled for the [!DNL Sites Editor] page (CQ-4282353).
 
 * After you use the Rotate Right option, the screen reader stops narrating the current rotation or flip state (CQ-4282128).
 
@@ -352,6 +352,10 @@ To know the platforms certified to work with this release, see the [technical re
 
 >[!NOTE]
 >
+>[!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
+
+>[!NOTE]
+>
 >Skip if you are not using AEM Forms. Fixes in Adobe Experience Manager Forms are delivered through a separate add-on package.
 
 1. Ensure that you have installed the Adobe Experience Manager Service Pack.
@@ -364,11 +368,11 @@ To know the platforms certified to work with this release, see the [technical re
 >
 >Skip if you are not using AEM Forms on JEE. Fixes in Adobe Experience Manager Forms on JEE are delivered through a separate installer.
 
-For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes for patch 0018](jee-patch-installer-65.md).
+For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
 
 ### UberJar {#uber-jar}
 
-The UberJar for Experience Manager 6.5.7.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6-1.0/).
+The UberJar for Experience Manager 6.5.7.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.7/).
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -383,7 +387,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 
 >[!NOTE]
 >
->This release onwards, UberJar and the other related artifacts are available on Maven Central Repository instead of Adobe Public Maven repository (`repo.adobe.com`). The main UberJar file is renamed to `uber-jar-<version>.jar`. So, there is no `classifier`, with `apis` as the value, for the `dependency` tag.
+>UberJar and the other related artifacts are available on Maven Central Repository instead of Adobe Public Maven repository (`repo.adobe.com`). The main UberJar file is renamed to `uber-jar-<version>.jar`. So, there is no `classifier`, with `apis` as the value, for the `dependency` tag.
 
 ## Deprecated features {#removed-deprecated-features}
 
@@ -420,15 +424,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
    com.day.cq.dam.cq-dam-core bundle com.day.cq.dam.cq-dam-core:5.12.276 (331)BundleComponentActivator : Unexpected failure enabling component holder com.day.cq.dam.core.impl.team.MediaPortalShareHandlerDummy (java.lang.IllegalStateException: Could not load implementation object class com.day.cq.dam.core.impl.team.MediaPortalShareHandlerDummy)
    ```
 
-* If the security health check does not work and the system displays `message: Could not verify users and could not test system account logins.` error message, then follow these steps:
-
-   1. Go to https://&lt;*hostname*&gt;:&lt;*port*&gt;/system/console/configMgr.
-
-   1. Search for `hc.impl`.
-
-   1. In [!UICONTROL Service Mappings], click `+` and specify `com.adobe.granite.repository.hc.impl=[user-reader-service]`.
-
-   1. Click [!UICONTROL Save] to save the configuration.  
+* If you are upgrading your [!DNL Experience Manager] instance from 6.5 to 6.5.7.0 version, you can view `RRD4JReporter` exceptions in the `error.log` file. Restart the instance to resolve the issue.
 
 * If you install [!DNL Experience Manager] 6.5 Service Pack 5 or a previous service pack on [!DNL Experience Manager] 6.5, the runtime copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
@@ -462,7 +458,7 @@ The following text documents list the OSGi bundles and Content Packages included
 These websites are only available to customers. If you are a customer and need access, contact your Adobe account manager.
 
 * [Product download at licensing.adobe.com](https://licensing.adobe.com/)
-* See [how to contact customer support](https://experienceleague.adobe.com/docs/customer-one/using/home.html). For more information, see [how to access the support portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html). <!-- TBD: These links seem to have an overlapping content. Possible to retain 1 link and remove another? -->
+* See [how to contact customer support](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
 
 >[!MORELIKETHIS]
 >
