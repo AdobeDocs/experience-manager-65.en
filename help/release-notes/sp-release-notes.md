@@ -16,7 +16,8 @@ mini-toc-levels: 1
 | Date     | November 26, 2020                |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip) |
 
-<!-- Update the SD link when SP7 is available. -->
+<!-- TBD: Update the SD link when SP7 is available. -->
+
 ## What's included in [!DNL Adobe Experience Manager] 6.5.7.0 {#what-s-included-in-aem}
 
 [!DNL Adobe Experience Manager] 6.5.7.0 is an important update that includes new features, key customer requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
