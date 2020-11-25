@@ -230,7 +230,7 @@ The supported archive formats and the applicability of the common DAM workflows,
 
 ## Other supported formats {#other-supported-formats}
 
-The usual DAM functionalities like storage, versioning, ACL, workflow, publishing, and metadata management, except [!DNL Dynamic Media] delivery, are supported for many file formats. The applicability of the functionalities for a few specific file formats is described below.
+The applicability of the usual DAM functionalities for a few specific file formats is described below.
 
 | Formats | Storage | Versioning | Workflow | Publishing | Access Control | Dynamic Media Delivery |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
