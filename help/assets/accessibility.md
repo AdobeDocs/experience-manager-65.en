@@ -52,14 +52,14 @@ Users with disabilities frequently rely on hardware and software to access web c
 
 In [!DNL Experience Manager], the accessibility features address two key requirements of [!DNL Experience Manager] users and their customers.
 
-* For content designers and creators, there are features to create and publish accessible content that is used in turn by their customers and website visitors. The content can be used by individuals with disabilities with the help of assistive technologies. For details, see [web accessibility guidelines](/help/onboarding/accessibility/web-accessibility.md).
+* For content designers and creators, there are features to create and publish accessible content that is used in turn by their customers and website visitors. The individuals with disabilities use the content with the help of assistive technologies. For details, see [web accessibility guidelines](/help/onboarding/accessibility/web-accessibility.md).
 * [!DNL Experience Manager] also lets its users and administrators with disabilities access user interface and controls to create and manage content. The individual with disabilities can use assistive technologies to navigate, use, and manage the [!DNL Assets] capability.
 
 The core features in [!DNL Assets] are more accessible than before and are regularly updated to improve compliance with global standards. The CRUD operations in [!DNL Assets] have some degree of accessibility built into those. DAM workflows like adding, managing, searching, and distributing assets are accessible with the help of keyboard shortcuts, screen reader text, color contrast, and so on.
 
 ## Support for use of keyboard {#keyboard-use}
 
-Many user interface elements that are clickable or actionable with a pointer can also be engaged with using keyboard. Using a keyboard, users can focus upon UI elements and take an appropriate action. Users can directly use keyboard shortcuts to trigger a command or an action without having to focus on UI elements and trigger it using keyboard. For example, users can open the timeline of an asset in the left side by browsing to the user interface control using a keyboard and selecting `Return`, and selecting `Alt + 2` keyboard shortcut.
+Many user interface elements that are clickable or actionable with a pointer can also be engaged with using keyboard. Using a keyboard, users can focus upon UI elements and take an appropriate action. Users can directly use keyboard shortcuts to trigger a command or an action without having to focus on UI elements and trigger it using keyboard. For example, users can open the timeline of an asset in the left side of user interface by browsing to the user interface control using a keyboard and selecting `Return`, and selecting `Alt + 2` keyboard shortcut.
 
 <!-- TBD items:
 
@@ -75,15 +75,15 @@ The following actions in [!DNL Assets] work with the listed keyboard shortcuts. 
 
 | User interface or scenario|Keyboard shortcut|Action|
 |---|---|---|
-| Column view in [!DNL Assets] user interface|Up and Down arrow keys|Navigate to files and folders within the same hierarchy.|
-| Column view in [!DNL Assets] user interface|Left and Right arrow keys|Navigate to files and folders above or below the current folder.|
+| Column view in [!DNL Assets] user interface|Up and Down Arrow keys|Navigate to files and folders within the same hierarchy.|
+| Column view in [!DNL Assets] user interface|Left and Right Arrow keys|Navigate to files and folders above or below the current folder.|
 | Browsing folders in [!DNL Assets]|`/`|Invoke search by opening Omnisearch box.|
 | [!DNL Assets] Console|`|Toggle side rails|
 | [!DNL Assets] Console|`Alt + 1`|Open the content tree.|
 | [!DNL Assets] Console|`Alt + 2`|Open [!UICONTROL Navigation] left rail.|
 | [!DNL Assets] Console|`Alt + 3`|Display [!UICONTROL Timeline] of a selected asset.|
 | [!DNL Assets] Console|`Alt + 4`|Open Live Copy references of the selected asset.|
-| [!DNL Assets] Console|`Alt + 5`|Invoke search and search within the selected folder.|
+| [!DNL Assets] Console|`Alt + 5`|Start search and search within the selected folder.|
 | Asset or folder is selected|Backspace|Delete the selected asset or folder.|
 | Asset or folder is selected|`p`|Open Properties page of the selected asset.|
 | Asset or folder is selected|`e`|Edit the selected asset.|
@@ -98,11 +98,11 @@ The following actions in [!DNL Assets] work with the listed keyboard shortcuts. 
 
 ## Sign in and navigate [!DNL Assets] user interface {#login}
 
-Users can use keyboard to navigate to and fill in the sign-in field to log in. The error messages due to incorrect username and password combinations on login page are announced by screen readers each time the error occurs.
+Users can use keyboard to navigate to and fill in the sign-in field to log in. The error messages due to incorrect user name and password combinations on login page are announced by screen readers each time the error occurs.
 
-After logging in, DAM users can navigate within [!DNL Assets] user interface using keyboard. The user interface elements, like left rail, menus, user profile, search bar, files and folders, and administration and configuration settings are navigable using keyboard. The keyboard navigation order is left-to-right and top-to-bottom. When navigating using a keyboard, an actionable option when focused is highlighted with better color contrast and is narrated by a screen reader. Where appropriate, the state -- for example, expanded, collapsed, and mixed-state -- of the focused options in the menu is announced by a screen reader. Also, the purpose of the actionable option is announced by a screen reader, instead of, say the appearance or UI placement.
+After logging in, DAM users can navigate within [!DNL Assets] user interface using keyboard. The user interface elements, like left rail, menus, user profile, search bar, files and folders, and administration and configuration settings are navigable using keyboard. The keyboard navigation order is left-to-right and top-to-bottom. When navigating using a keyboard, an actionable option when focused is highlighted with better color contrast and is narrated by a screen reader. Where appropriate, the state -- for example, expanded, collapsed, and mixed-state -- of the focused options in the menu is announced by a screen reader. Also, screen reader announces the purpose of the actionable option, instead of, say the appearance or interface placement.
 
-If a user expands the help or user profile option from the menu, the appropriate option or status are announced by screen reader. If a user expands the user profile option, the available options can be selected using a keyboard. For example, an administrator can impersonate a different user. If a user searches for a string from the [!UICONTROL Help] option, a narrator announces "Searching Help" to indicate that a search is in progress.
+If a user expands the help or user profile option from the menu, screen reader announces the appropriate option or status. If a user expands the user profile option, the available options can be selected using a keyboard. For example, an administrator can impersonate a different user. If a user searches for a string from the [!UICONTROL Help] option, a narrator announces "Searching Help" to indicate that a search is in progress.
 
 <!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
@@ -154,7 +154,7 @@ When browsing the assets repository, the following functionality improves access
 
 ## Manage digital assets {#manage-assets}
 
-Many asset management tasks such as CRUD operations, downloading an asset, adding metadata are accessible to various degrees. [!DNL Assets] lets you accomplish the tasks using various assistive technologies, specially a screen reader and a keyboard.
+Many asset management tasks such as CRUD operations, downloading an asset, adding metadata are accessible to various degrees. [!DNL Assets] lets you accomplish the tasks using various assistive technologies such as a screen reader and a keyboard.
 
 See a video demonstration of how to use a keyboard to [browse the repository and download an asset](https://youtu.be/K3dgqMRQJys).
 
@@ -195,7 +195,7 @@ When sharing assets, the following functionalities improve the accessibility:
 
 * In the link sharing dialog, when navigating in browse mode, the screen readers,
 
-  * Do not narrate the table information as soon as the dialog is loaded.
+  * Do not narrate the table information when the dialog is loaded.
   * Can navigate to all the listed suggestions.
   * Narrate the displayed suggestions for Add Email Address and Search fields.
 
@@ -218,5 +218,5 @@ To provide feedback, ask questions, and request product enhancements, related to
 >[!MORELIKETHIS]
 >
 >* [Release notes of enhancements done in each release](/help/release-notes/new-features-latest-service-pack.md).
->* [[!DNL Adobe Experience Manager] accessibility guidance](/help/onboarding/accessibility/web-accessibility.md).
+>* [[!DNL Adobe Experience Manager] accessibility guidance](/help/managing/web-accessibility.md).
 >* [Conformance reports (ACR) and VPAT listing for Adobe solutions](https://www.adobe.com/accessibility/compliance.html).
