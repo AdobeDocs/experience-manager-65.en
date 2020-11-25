@@ -33,7 +33,7 @@ You can now perform the page moves and MSM rollouts as asynchronous operations t
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] add-on packages are made available about a week after the scheduled [!DNL Experience Manager] Service Pack release. [!DNL Experience Manager] 6.5 Service Pack 7 (6.5.7.0) is scheduled to release on November 26, 2020.
+>[!DNL Experience Manager Forms] add-on packages are made available a week after the scheduled [!DNL Experience Manager] Service Pack release. [!DNL Experience Manager] 6.5 Service Pack 7 (6.5.7.0) is scheduled to release on November 26, 2020.
 
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
