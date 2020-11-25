@@ -160,7 +160,7 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 * Date and time format constraints are provided in field labels of date fields, to enable the users to enter the date in correct format using keyboard.
 For example, `On Time (MM-DD-YYYY HH:mm)`. Here MM is month in two-digit format, YYYY is year, DD is day in two-digit format, HH is hour in 24-hour military format, and mm is minute.
 
-* Screen readers now announce the `X` symbol to remove the selected tags along with the number of the selected tags.
+* Screen readers announce the option to remove selected tags (`X` symbol) and the number of the selected tags.
 
 #### Sortable column for Created date of assets in list view (6.5.3.0) {#sortable-date-created-column}
 
@@ -318,15 +318,15 @@ You can use the Batch API to produce multiple interactive communications from a 
 
 Between September 03, 2020 and November 26, 2020, Adobe released the following, in addition to the service packs and cumulative fix packs:
 
-* [!DNL Adobe Experience Manager as a cloud service] [2020.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-9-0.html?lang=en#release-notes) and [2020.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-10-0.html?lang=en#release-notes).
+* [!DNL Adobe Experience Manager] as a Cloud Service [2020.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-9-0.html?lang=en#release-notes) and [2020.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-10-0.html?lang=en#release-notes).
 
-* [!DNL Adobe Experience Manager] as a Cloud Service [2020.7.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-7-0.html) and [2020.8.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-8-0.html).
+* [!DNL Adobe Experience Manager] as a Cloud Service [2020.7.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-7-0.html) and [2020.8.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-8-0.html). <!-- TBD: These versions were not released during the said period. Either remove these or change the date above. -->
 
-* [[!DNL Experience Manager] desktop app 2.0 (2.0.3.2)](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+* [[!DNL Experience Manager] desktop app 2.0 (2.0.3.2)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 * [WKND Reference Site - 0.0.6](https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-0.0.6)
 
-* [Experience Manager Screens: Feature Pack 202008](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202008.html)
+* [Experience Manager Screens: Feature Pack 202008](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202008.html)
 
 * [Adobe Asset Link v2.2](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html)
 

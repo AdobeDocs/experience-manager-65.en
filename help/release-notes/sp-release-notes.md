@@ -16,6 +16,7 @@ mini-toc-levels: 1
 | Date     | November 26, 2020                |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip) |
 
+<!-- Update the SD link when SP7 is available. -->
 ## What's included in [!DNL Adobe Experience Manager] 6.5.7.0 {#what-s-included-in-aem}
 
 [!DNL Adobe Experience Manager] 6.5.7.0 is an important update that includes new features, key customer requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
@@ -184,7 +185,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0
 
 #### [!DNL Dynamic Media] {#dynamic-media-6570}
 
-* The following major enhancements are done for accessibility in [!DNL Dynamic Media] (CQ-4290306). For details, see accessibility in [!DNL Dynamic Media].  <!-- TBD: link to DM content post GA -->
+* The following major enhancements are done for accessibility in [!DNL Dynamic Media] (CQ-4290306). For details, see accessibility features in [!DNL Dynamic Media].  <!-- TBD: link to DM content post GA -->
 
   * Screen readers (JAWS, Narrator) narrate the name, role, and state for the menu items in the Embed size menu option (CQ-4290927).
   * Users can navigate the Email link dialog using the `Tab` key (CQ-4290926).
@@ -233,7 +234,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0
 
 #### [!DNL Experience Manager] 3D assets {#three-d-assets-6570}
 
-* DAM CQ MIME Type service applies incorrect MIME types to 3D assets. It results in incorrect rendering (NPR-34731).
+* `DAM CQ MIME Type` service applies incorrect MIME types to 3D assets leading to incorrect rendering (NPR-34731).
 
 ### [!DNL Commerce] {#commerce-6570}
 
@@ -250,7 +251,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0
 * The process to import user sync package fails (NPR-34399).
 * Added support for `ariaLabel` and `ariaLabelledby` properties to the `Coral.Masonry` component (GRANITE-29962).
 * Dispatcher cache is not refreshed for pages with content fragments after installing the latest core component packages (CQ-4306788).
-* Localized tag names with quotation marks (") are not displayed properly on the user interface (CQ-4305439).
+* Localized tag names with quotation marks (`"`) are not displayed properly on the user interface (CQ-4305439).
 
 ### User Interface {#ui-6570}
 
@@ -266,7 +267,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0
 
 * Editing an existing [!DNL Adobe Launch] configuration fails (NPR-35045).
 * Cannot export [!DNL Experience Fragments] to [!DNL Adobe Target] if using IMS configuration and [!DNL Adobe Target Standard] environment (NPR-34555).
-* The [!UICONTROL Create] button appears on the [!UICONTROL Audiences] page on navigating from a folder to the [!UICONTROL Audiences] page (NPR-35151).
+* The [!UICONTROL Create] option appears on the [!UICONTROL Audiences] page on navigating from a folder to the [!UICONTROL Audiences] page (NPR-35151).
 
 ### Sling {#sling-6570}
 
@@ -461,12 +462,11 @@ The following text documents list the OSGi bundles and Content Packages included
 These websites are only available to customers. If you are a customer and need access, contact your Adobe account manager.
 
 * [Product download at licensing.adobe.com](https://licensing.adobe.com/)
-* [Contact customer support](https://docs.adobe.com/content/help/en/customer-one/using/home.html)
-For more information on accessing the support portal, see [Accessing the support portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+* See [how to contact customer support](https://experienceleague.adobe.com/docs/customer-one/using/home.html). For more information, see [how to access the support portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html). <!-- TBD: These links seem to have an overlapping content. Possible to retain 1 link and remove another? -->
 
 >[!MORELIKETHIS]
 >
->* [AEM 6.5 release notes](/help/release-notes/release-notes.md)
->* [AEM product page](https://www.adobe.com/marketing/experience-manager.html)
->* [AEM 6.5 documentation](https://helpx.adobe.com/support/experience-manager/6-5.html)
+>* [[!DNL Experience Manager] 6.5 release notes](/help/release-notes/release-notes.md)
+>* [[!DNL Experience Manager] product page](https://www.adobe.com/marketing/experience-manager.html)
+>* [[!DNL Experience Manager] 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 >* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
