@@ -868,7 +868,7 @@ You can create versions in [!DNL Experience Manager] in the following scenarios:
 * Upload an asset with the same filename that exists at the same location. It can be a new asset or a modified version of the same asset.
 * Edit an image in [!DNL Experience Manager] and save the changes.
 * Edit the metadata of an asset.
-* Use [!DNL Experience Manager] desktop app to check-out an existing asset, edit it, and [upload your changes](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
+* Use [!DNL Experience Manager] desktop app to check-out an existing asset, edit it, and [upload your changes](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#edit-assets-upload-updated-assets).
 
 You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
 

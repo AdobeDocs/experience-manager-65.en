@@ -205,10 +205,8 @@ The service can also be configured via the Web Console, by:
 >[!NOTE]
 >
 >You can check the role of an instance at any time by checking the presence of the **primary** or **standby** runmodes in the Sling Settings Web Console.
-
 >
 >This can be done by going to *https://localhost:4502/system/console/status-slingsettings* and checking the **"Run Modes"** line.
->
 
 ## First time synchronization {#first-time-synchronization}
 

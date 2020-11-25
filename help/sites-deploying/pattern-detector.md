@@ -10,10 +10,9 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
-
 ---
 
-# Assessing the Upgrade Complexity with the Pattern Detector{#assessing-the-upgrade-complexity-with-the-pattern-detector}
+# Assessing the Upgrade Complexity with the Pattern Detector
 
 ## Overview {#overview}
 
@@ -26,7 +25,7 @@ This could serve as an assessment of the development effort that is involved in 
 
 ## How to Set Up {#how-to-set-up}
 
-The Pattern Detector is released separately as a [one package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) working on any source AEM versions from 6.1 to 6.5 targeting AEM 6.5 upgrade. It can be installed using the [Package Manager](/help/sites-administering/package-manager.md).
+The Pattern Detector is released separately as a [one package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) working on any source AEM versions from 6.1 to 6.5 targeting AEM 6.5 upgrade. It can be installed using the [Package Manager](/help/sites-administering/package-manager.md).
 
 ## How to Use {#how-to-use}
 
@@ -36,7 +35,6 @@ The Pattern Detector is released separately as a [one package](https://www.adobe
 >
 >* increase the detection rate
 >* avoid any slowdowns on business critical instances
-
 >
 >both at the same time it is recommended to run it **on staging environments** that are as close as possible to production ones in the areas of user applications, content and configurations.
 
@@ -50,7 +48,6 @@ You can use several methods to check the Pattern Detector output:
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Via a reactive text based or regular JSON interface**
-
 * **Via a reactive JSON lines interface, **that generates a separate JSON document in each line.
 
 Both of these methods are detailed below:
@@ -221,4 +218,3 @@ Currently Pattern Detector allows to check:
 >[!NOTE]
 >
 >Please note that Pattern Detector tries to accurately predict the warnings for upgrade. However, it might generate false positives in some scenarios.
-

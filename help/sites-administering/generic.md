@@ -1,5 +1,5 @@
 ---
-ttitle: Administering generic eCommerce
+title: Administering generic eCommerce
 seo-title: Administering generic eCommerce
 description: The AEM generic solution provides methods of managing the commerce information held within the repository.
 seo-description: The AEM generic solution provides methods of managing the commerce information held within the repository.

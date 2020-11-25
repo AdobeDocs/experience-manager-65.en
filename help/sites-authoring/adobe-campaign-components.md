@@ -87,7 +87,6 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 >[!NOTE]
 >
 >The in-place editor uses the original size and aspect ratio of the image when editing. You can also specify height and width properties. Any size and aspect ratio restrictions defined in the properties are applied when you save your edit changes.
-
 >
 >Depending on your instance, minimum and maximum restrictions may also be imposed by the [design of the page](/help/sites-developing/designer.md); these are developed during project implementation.
 

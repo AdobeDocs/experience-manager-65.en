@@ -1,10 +1,10 @@
 ---
 cloud: experience-cloud
 solution-title: Learn & Support
-solution-hub-url: https://helpx.adobe.com/support/experience-manager/6-5.html
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-65.html
 solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: Getting Started
-getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
+getting-started-url: https://experienceleague.corp.adobe.com/docs/experience-manager-tutorials.html
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
 mini-toc-levels: 2
