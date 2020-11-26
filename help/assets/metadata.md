@@ -104,7 +104,7 @@ The metadata import is asynchronous and does not impede system performance. Simu
 1. Navigate to the [!DNL Assets] user interface, and click **[!UICONTROL Create]** from the toolbar.
 1. From the menu, select **[!UICONTROL Metadata]**.
 1. In the **[!UICONTROL Metadata Import]** page, click **[!UICONTROL Select File]**. Select the CSV file with the metadata.
-1. Specify the following parameters. See a sample CSV file at [metadata-import-sample-file.csv](assets/metadata-import-sample-file.csv).
+1. Specify the following parameters. See a sample CSV file at [metadata-import-sample-file.csv](/help/assets/assets/metadata-import-sample-file.csv).
 
     | Metadata import parameters | Description |
     |:---|:---|
