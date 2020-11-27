@@ -320,7 +320,7 @@ After installing the [!DNL Experience Manager Forms] 6.5.6.0 add-on package:
 
 * When you open the field configuration for the first time, the properties icon does not display (CQ-4296284).
 
-* Users can update system-defined variables, such as `afPath`, `afSubmissionTime` and `signers`, when editing an adaptive form. To resolve the issue, these variables are removed from the form submission data on the client side. Users can use the `FormSubmitInfo` object to retrieve the data for these variables from the server (NPR-33654).
+* Users can edit submission metadata, such as `afPath`, `afSubmissionTime` and `signers`, when submitting an adaptive form. To resolve the issue, the metadata values are removed from the form submission data on the client side. Users can use the `FormSubmitInfo` object to retrieve these values from the server (NPR-33654).
 
 **Workflow**
 
