@@ -36,7 +36,7 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
     + [Configuring Dynamic Media - Scene7 mode](config-dms7.md)
     + [Configuring Dynamic Media - Hybrid mode](config-dynamic.md)
     + [Troubleshooting Dynamic Media - Scene7 mode](troubleshoot-dms7.md)
-    + [Accessibility features in [!DNL Dynamic Media]](accessibility-dm.md)
+    + [Accessibility in Dynamic Media](accessibility-dm.md)
     + [Migrating from Dynamic Media - Hybrid mode to Dynamic Media - S7 mode](migrate-from-hybrid-to-dms7.md)
     + [Managing Dynamic Media assets](managing-assets.md)
     + [Best practices for optimizing the quality of your images](best-practices-for-optimizing-the-quality-of-your-images.md)
