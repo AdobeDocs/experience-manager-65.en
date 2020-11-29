@@ -138,7 +138,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0
   * When navigating using keyboard tab key, after removing the last tag from the added tags, the tag field retains the focus (NPR-35109).
   * [!DNL Experience Manager] components now contain appropriate information for name, role, and value to be used by screen readers (NPR-34255).
   * After you delete the Type/Size combo box, Link combo box, Language combo box, or Text edit box, the keyboard focus returns to the next or the previous user interface elements or to a more relevant user interface element (CQ-4293585).
-  * When hovering pointer over various options, the tips such as Select and Download appear. Users who use screen magnification may have difficulty viewing the file thumbnails because of the content displayed due to hovering. It is now possible to preserve the focus, after removing the option using an `Escape` key (CQ-4293554).
+  * When hovering pointer over options, tips such as Select and Download appear. Users who use a screen magnifier may not see the file thumbnails because of these tips. Now, it is possible to preserve the focus, after removing the option using `Escape` key. (CQ-4293554).
   * Upon selecting a grid cell from the grid present in the page, the focus shifts to the action bar that appears on the screen (CQ-4282127).
   * Visual users can differentiate between normal text and a link, as visual clues (underline and chevron icon) are displayed for links to all solutions in [!DNL Experience Manager] home page (CQ-4282072).
 
