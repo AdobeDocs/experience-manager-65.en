@@ -240,6 +240,10 @@ The applicability of the usual DAM functionalities for a few specific file forma
 | XML | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
 | JavaScript (when configured with own delivery domain) | &minus;| &minus;| &minus;| &minus;| &minus;| &#10003; |
 
+>[!NOTE]
+>
+>Uploading and distributing JavaScript files may or may not be safe. If required, overlays can be used to prevent users from uploading JS files.
+
 ## Supported MIME types {#supported-mime-types}
 
 By default, [!DNL Experience Manager] detects the file type using the file extension. [!DNL Experience Manager] can detect it from the contents of the files. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the [!DNL Experience Manager] Web Console.
