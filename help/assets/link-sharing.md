@@ -1,6 +1,6 @@
 ---
-title: Generate a URL to shared assets
-description: This article describes how to share assets, folders, and collections within [!DNL Experience Manager Assets] as a URL to external parties.
+title: Share assets using a link
+description: Share assets, folders, and collections as a URL.
 contentOwner: AG
 ---
 
@@ -8,50 +8,37 @@ contentOwner: AG
 
 [!DNL Adobe Experience Manager Assets] lets you share assets, folders, and collections as a URL with members of your organization and external entities, including partners and vendors. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to [!DNL Assets].
 
->[!NOTE]
+>[!PREREQUISITES]
 >
->You require Edit ACL permission on the folder or the asset that you want to share as a link.
+>* You require Edit ACL permission on the folder or the asset that you want to share as a link.
+>* To send emails to the users, configure the SMTP server details in [Day CQ Mail Service](#configmailservice).
 
 ## Share assets {#sharelink}
 
-To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them.
-
->[!NOTE]
->
->Before you share a link with users, ensure that Day CQ Mail Service is configured. An error occurs if you attempt to share a link without first [configuring Day CQ Mail Service](/help/assets/link-sharing.md#configmailservice).
+To generate the URL for assets that you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them.
 
 1. In the [!DNL Assets] user interface, select the asset to share as a link.
 1. From the toolbar, click the **[!UICONTROL Share Link]** ![share assets icon](assets/do-not-localize/assets_share.png).
 
-   An asset link is auto-created in the **[!UICONTROL Share Link]** field. Copy this link and share it with the users. The default expiration time for the link is one day.
+   The link that will be created after clicking [!UICONTROL Share] is displayed in advance in the [!UICONTROL Share Link] field. The default expiration time for the link is one day.
 
    ![Dialog with the Link Share](assets/Link-sharing-dialog-box.png)
 
    *Figure: The dialog to share assets as a link.*
 
-   Alternatively, proceed to perform steps 3-7 of this procedure to add email recipients, configure the expiration time for the link, and send it from the dialog.
-
    >[!NOTE]
    >
-   >If you want to share links from your [!DNL Experience Manager] Author deployment to external entities, ensure that you only expose the following URLs (which are used for link sharing) for `GET` requests only. Block other URLs to ensure security of [!DNL Experience Manager] Author.
+   >If you want to share links from your [!DNL Experience Manager] Author deployment to external entities, ensure that you only expose the following URLs (which are used for link sharing) for `GET` requests only. Block other URLs for security reasons.
    >
-   >* http://[aem_server]:[port]/linkshare.html
-   >* http://[aem_server]:[port]/linksharepreview.html
-   >* http://[aem_server]:[port]/linkexpired.html
+   >* `http://[aem_server]:[port]/linkshare.html`
+   >* `http://[aem_server]:[port]/linksharepreview.html`
+   >* `http://[aem_server]:[port]/linkexpired.html`
 
-   >[!NOTE]
-   >
-   >If a shared asset is moved to a different location, its link stops working. Re-create the link and re-share with the users.
+1. In [!DNL Experience Manager] interface, access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
-1. In [!DNL Experience Manager] interface, access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**. 
+1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against `local`, `author`, and `publish`. For the `local` and `author` properties, provide the URL for the local and the author instance respectively. Both `local` and `author` properties have the same value if you run a single [!DNL Experience Manager] author instance. For Publish instances, provide the URL for the [!DNL Experience Manager] publish instance.
 
-1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against `local`, `author`, and `publish`. For the `local` and `author` properties, provide the URL for the local and the author instance respectively. Both `local` and `author` properties have the same value if you run a single [!DNL Experience Manager] Author instance. For `publish`, provide the URL for the [!DNL Experience Manager] publish instance.
-
-1. In the email address box of the **[!UICONTROL Link Sharing]** dialog, type the email ID of the user you want to share the link with. You can also share the link with multiple users.
-
-   If the user is a member of your organization, select the user's email ID from the suggested email IDs that appear in the list below the typing area. For an external user, type the complete email ID and then select it from the list.
-
-   To enable emails to be sent out to users, configure the SMTP server details in [Day CQ Mail Service](#configmailservice).
+1. In the email address box of the **[!UICONTROL Link Sharing]** dialog, type the email ID of the user you want to share the link with. You can add one or more users.
 
    ![Share links to assets directly from the Link Sharing dialog](assets/Asset-Sharing-LinkShareDialog.png)
 
@@ -61,26 +48,21 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >
    >If you enter an email ID of a user that is not a member of your organization, the words [!UICONTROL External User] are prefixed with the email ID of the user.
 
-1. In the **[!UICONTROL Subject]** field, enter a subject for the asset you want to share.
+1. In the **[!UICONTROL Subject]** field, enter a subject line.
 
 1. In the **[!UICONTROL Message]** field, enter an optional message.
 
-1. In the **[!UICONTROL Expiration]** field, specify an expiration date and time for the link using the date picker. By default, the expiration date is set for a week from the date you share the link.
+1. In the **[!UICONTROL Expiration]** field, specify an expiration date and time for the link to stop working. By default, the expiration date is set for a week from the date you share the link.
 
    ![Set expiration date of shared link](assets/Set-shared-link-expiration.png)
 
-1. To let users download the original image along with the renditions, select **[!UICONTROL Allow download of original file]**.
+1. To let users download the original asset along with the renditions, select **[!UICONTROL Allow download of original file]**. By default, users can only download the renditions of the asset that you share as a link.
 
-   >[!NOTE]
-   >
-   >By default, users can only download the renditions of the asset that you share as a link.
+1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users via an email.
 
-1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users through an email.
 1. To view the shared asset, click the link in the email that is sent to the user. The shared asset is displayed in the **[!UICONTROL Adobe Marketing Cloud]** page.
 
    ![chlimage_1-260](assets/chlimage_1-545.png)
-
-   To toggle to the list view, click the layout option in the toolbar.
 
 1. To generate a preview of the asset, click the shared asset. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click **[!UICONTROL Back]** in the toolbar. If you have shared a folder, click **[!UICONTROL Parent Folder]** to return to the parent folder.
 
@@ -88,14 +70,14 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    >[!NOTE]
    >
-   >[!DNL Experience Manager] supports generating the preview of assets of these MIME types: JPG, PNG, GIF, BMP, INDD, PDF, and PPT. You can only download the assets of the other MIME types.
+   >[!DNL Experience Manager] supports generating the preview of assets of only [the supported file types](/help/assets/assets-formats.md). If other MIME types are shared, you can only download the assets and cannot preview.
 
 1. To download the shared asset, click **[!UICONTROL Select]** from the toolbar, click the asset, and then click **[!UICONTROL Download]** from the toolbar.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. To view the assets you shared as links, go to the [!DNL Assets] user interface and click the [!DNL Experience Manager] logo. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
-1. From the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
+1. To view the assets that you have shared as links, go to the [!DNL Assets] user interface and click the [!DNL Experience Manager] logo. Choose **[!UICONTROL Navigation]**. In the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
+
 1. To un-share an asset, select it and click **[!UICONTROL Unshare]** from the toolbar. A confirmation message follows. The entry for the asset is removed from the list.
 
 ## Configure Day CQ Mail Service {#configmailservice}
@@ -131,3 +113,4 @@ When you download assets from the link shared using the Link Sharing feature, [!
 * If users cannot download the shared assets, check with your [!DNL Experience Manager] administrator what the [download limits](#maxdatasize) are.
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your [!DNL Experience Manager] administrator if the [email service](#configmailservice) is configured or not.
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
+* If a shared asset is moved to a different location, its link stops working. Re-create the link and re-share with the users.
