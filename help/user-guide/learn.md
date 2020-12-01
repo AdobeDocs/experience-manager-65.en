@@ -15,7 +15,7 @@ AEM Sites is a content management system within Adeobe Experience Manager that g
 
 AEM Assets lets your organization easily create, manage, deliver and optimize digital assets from a multi-tenant cloud platform. [Dig into some of our new video feature tutorials around AEM Assets.](https://helpx.adobe.com/experience-manager/kt/assets/index/aem-6-4-assets.html)
 
-* [Working with AEM Assets](/help/assets/managing-assets-touch-ui.md)
+* [Working with AEM Assets](/help/assets/manage-assets.md)
 * [Working with Dynamic Media](/help/assets/dynamic-media.md)
 * [AEM Assets Release Notes](/help/release-notes/assets.md)
 

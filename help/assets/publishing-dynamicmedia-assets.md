@@ -34,7 +34,7 @@ See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed
 >* Image presets and viewer presets must be activated and published for live delivery.
 >
 
-For detailed information on publishing a set or asset, see [Publishing Assets.](managing-assets-touch-ui.md)
+For detailed information on publishing a set or asset, see [Publishing Assets.](manage-assets.md)
 
 ## HTTP/2 delivery of Dynamic Media assets {#http-delivery-of-dynamic-media-assets}
 

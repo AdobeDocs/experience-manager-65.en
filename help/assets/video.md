@@ -61,7 +61,7 @@ The following step-by-step workflow description is designed to help you get up a
         * View the source video and encoded renditions of the video along with its associated thumbnails:
           [Previewing videos](managing-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](previewing-assets.md)
           [Viewing video renditions](video-renditions.md)
-          [Managing video renditions](managing-assets-touch-ui.md#managing-renditions)
+          [Managing video renditions](manage-assets.md#managing-renditions)
 
         * [Manage viewer presets](managing-viewer-presets.md)
         * [Publishing assets](publishing-dynamicmedia-assets.md)
@@ -72,17 +72,17 @@ The following step-by-step workflow description is designed to help you get up a
           [Viewing video rendition properties](video-renditions.md)
 
         * Edit the properties of video such as the title, description, and tags, custom metadata fields:
-          [Editing video properties](managing-assets-touch-ui.md#editing-properties)
+          [Editing video properties](manage-assets.md#editing-properties)
 
         * [Managing metadata for digital assets](metadata.md)
         * [Metadata schemas](metadata-schemas.md)
 
     * Review, approve, and annotate videos, and maintain full version control
 
-        * [Annotating videos](managing-video-assets.md#annotate-video-assets) or [Annotating assets](managing-assets-touch-ui.md#annotating)
+        * [Annotating videos](managing-video-assets.md#annotate-video-assets) or [Annotating assets](manage-assets.md#annotating)
 
-        * [Creating a version](managing-assets-touch-ui.md#asset-versioning)
-        * [Applying workflows to assets](assets-workflow.md) or see [Starting a workflow on an asset](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
+        * [Creating a version](manage-assets.md#asset-versioning)
+        * [Applying workflows to assets](assets-workflow.md) or see [Starting a workflow on an asset](manage-assets.md#starting-a-workflow-on-an-asset)
 
         * [Review folder assets](bulk-approval.md)
         * [Projects](../sites-authoring/projects.md)
@@ -1154,7 +1154,7 @@ See [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
    Generally, you want to name the chapter VTT file the same name as the video file, and append it with chapters. By doing so, it can help you with automating the generation of the video URLs using your existing web content management system.
 1. In AEM, upload your WebVTT chapter file.
 
-   See [Uploading Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+   See [Uploading Assets](/help/assets/manage-assets.md#uploading-assets).
 
 1. Do one of the following:
 

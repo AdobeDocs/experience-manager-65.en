@@ -389,7 +389,6 @@ Once the image is uploaded (and not before) you can use [inplace editing](/help/
 >[!NOTE]
 >
 >The in-place editor uses the original size and aspect ratio of the image when editing. You can also specify height and width properties. Any size and aspect ratio restrictions defined in the properties are applied when you save your edit changes.
-
 >
 >Depending on your instance, minimum and maximum restrictions may also be imposed by the [design of the page](/help/sites-developing/designer.md); these are developed during project implementation.
 
@@ -402,7 +401,6 @@ Several additional options are available in the full-screen editing mode; for ex
 >The progress of the upload cannot be monitored with Internet Explorer.
 >
 >Internet Explorer users need to upload the image and click **Ok** then re-open the image to see the uploaded file in the preview and to be able to perform modifications (i.e. crop).
-
 >
 >See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
 

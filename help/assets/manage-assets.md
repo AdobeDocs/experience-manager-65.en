@@ -404,7 +404,7 @@ To preview an asset using keyboard, follow these steps:
     * Channels/devices through which the asset was used
     * Creative solutions where the asset was recently used
 
-   For more details, see [Asset Insights](/help/assets/touch-ui-asset-insights.md).
+   For more details, see [Asset Insights](/help/assets/asset-insights.md).
 
 1. Click **[!UICONTROL Save & Close]**.
 1. Navigate to the [!DNL Assets] user interface. The edited metadata properties, including title, description, ratings, and so on are displayed on the asset card in Card view and under relevant columns in the List view.
@@ -711,7 +711,7 @@ The timeline lets you view various events for a selected item, such as active wo
 
 >[!NOTE]
 >
->In the [Collections console](/help/assets/managing-collections-touch-ui.md#navigating-the-collections-console), the **[!UICONTROL Show All]** list provides options to view comments and workflows only. Moreover, the timeline is displayed only for top-level collections that are listed in the console. It is not displayed if you navigate inside any of the collections.
+>In the [Collections console](/help/assets/manage-collections.md#navigating-the-collections-console), the **[!UICONTROL Show All]** list provides options to view comments and workflows only. Moreover, the timeline is displayed only for top-level collections that are listed in the console. It is not displayed if you navigate inside any of the collections.
 
 >[!NOTE]
 >
@@ -730,7 +730,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 1. Navigate to the location of the asset to which you want to add annotations.
 1. Click the **[!UICONTROL Annotate]** option from one of the following:
 
-    * [Quick actions](/help/assets/managing-assets-touch-ui.md#quick-actions)
+    * [Quick actions](/help/assets/manage-assets.md#quick-actions)
     * From the toolbar after selecting the asset or navigating to the asset page.
 
 1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
@@ -795,7 +795,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 1. Do one of the following:
 
     * To print all the annotations and the review status, skip step 3 and directly go to step 4.
-    * To print specific annotations and review status, open the [timeline](/help/assets/managing-assets-touch-ui.md#timeline) and then go to step 3.
+    * To print specific annotations and review status, open the [timeline](/help/assets/manage-assets.md#timeline) and then go to step 3.
 
 1. To print specific annotations, select the annotations from the timeline.
 
@@ -825,7 +825,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
    >
    >If the asset has subassets, you can print all the subassets along with their specific page-wise annotations.
 
-   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/managing-assets-touch-ui.md#annotating).
+   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-assets.md#annotating).
 
    ![Configuration to print asset annotation on PDF document](assets/annotation-print-pdf-config.png)
 
@@ -868,7 +868,7 @@ You can create versions in [!DNL Experience Manager] in the following scenarios:
 * Upload an asset with the same filename that exists at the same location. It can be a new asset or a modified version of the same asset.
 * Edit an image in [!DNL Experience Manager] and save the changes.
 * Edit the metadata of an asset.
-* Use [!DNL Experience Manager] desktop app to check-out an existing asset, edit it, and [upload your changes](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
+* Use [!DNL Experience Manager] desktop app to check-out an existing asset, edit it, and [upload your changes](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#edit-assets-upload-updated-assets).
 
 You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
 
@@ -923,4 +923,4 @@ A collection is an ordered set of assets. Use collections to share related asset
 * A collection can include assets from different locations because they only contain references to these assets. Each collection maintains the referential integrity of assets.
 * You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
 
-See [manage collections](/help/assets/managing-collections-touch-ui.md) for details on collection management.
+See [manage collections](/help/assets/manage-collections.md) for details on collection management.

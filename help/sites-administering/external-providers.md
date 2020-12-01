@@ -52,10 +52,8 @@ Such snippets enable data to be collected and reports generated. The actual data
 >[!CAUTION]
 >
 >The Geometrixx-Outdoors demo site is configured so that the attributes provided in the Page Properties are appended to the html source code (just above the `</html>` endtag) in the corresponding `js` script.
-
 >
 >If your own `/apps` do not inherit from the default page component ( `/libs/foundation/components/page`) you (or your developers) have to make sure that the corresponding `js` scripts are included, for example by either including `cq/cloudserviceconfigs/components/servicescomponents`, or using a similar mechanism.
-
 >
 >Without this, none of the services (Generic, Analytics, Target, etc) will work.
 

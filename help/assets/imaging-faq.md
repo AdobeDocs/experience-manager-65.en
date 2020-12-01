@@ -53,11 +53,23 @@ No. Smart Imaging is included with your existing license of either Dynamic Media
 
 ## How does smart imaging work? {#how-does-smart-imaging-work}
 
-Smart Imaging uses Adobe Sensei to automatically convert images to the most optimal format, size, and quality, based on browser capability:
+When an image is requested by a consumer, we check the user characteristics and convert to the appropriate image format based on the browser in use. These format conversions are done in a manner that does not degrade visual fidelity. Smart imaging automatically converts images to different formats based on browser capability in the following manner.
 
-* Automatically convert to WebP for browsers such as Chrome, Firefox, Microsoft Edge, Android, and Opera.
-* Automatically convert to JPEG2000 for browsers such as Safari.
-* Automatically convert to JPEG for browsers such as Internet Explorer 9+.
+* Automatically convert to WebP for the following browsers:
+  * Chrome
+  * Firefox
+  * Microsoft Edge 
+  * Safari 14.0 +
+    * Safari 14 only with iOS 14.0 and above and macOS BigSur and above
+  * Android
+  * Opera
+* Legacy browser support for the following:
+
+    | Browser | Browser/OS version | Format |
+    | --- | --- | --- |
+    | Safari | iOS 14.0 or earlier | JPEG2000 |
+    | Edge | 18 or earlier | JPEGXR |
+    | Internet Explorer | 9+ | JPEGXR |
 * For browsers that do not support these formats, the originally requested image format is served.
 
 If the original image size is smaller than what Smart Imaging produces, then the original image is served.
@@ -83,11 +95,15 @@ Smart Imaging works with your existing “image presets” and observes all of y
 
 ## Will I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically.
+Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically.
 
-<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
+In case you need to configure a new custom domain to use Smart Imaging, the URLs will need to be updated to reflect this custom domain.
 
 Also, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) to understand pre-requisites for Smart Imaging.
+
+<!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
+
+<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
 ## Does Smart Imaging working with HTTPS? How about HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 

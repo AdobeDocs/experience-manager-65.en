@@ -1,6 +1,7 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
+solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Assets Guide
 breadcrumb-title: Assets Guide
@@ -10,9 +11,10 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
 # Assets Guide {#assets}
 
 + [[!DNL Assets] user guide](home.md)
-+ [[!DNL Experience Manager] 6.5 Assets release notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
++ [[!DNL Experience Manager] 6.5 Assets release notes](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [About DAM](assets.md)
 + [Best practices for assets](best-practices-for-assets.md)
++ [Accessibility in [!DNL Assets]](accessibility.md)
 + Use Experience Manager Assets {#using}
     + [[!DNL Assets] home page experience](assets-home-page.md)
     + [Search digital assets](search-assets.md)
@@ -34,6 +36,7 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
     + [Configuring Dynamic Media - Scene7 mode](config-dms7.md)
     + [Configuring Dynamic Media - Hybrid mode](config-dynamic.md)
     + [Troubleshooting Dynamic Media - Scene7 mode](troubleshoot-dms7.md)
+    + [Accessibility in Dynamic Media](accessibility-dm.md)
     + [Migrating from Dynamic Media - Hybrid mode to Dynamic Media - S7 mode](migrate-from-hybrid-to-dms7.md)
     + [Managing Dynamic Media assets](managing-assets.md)
     + [Best practices for optimizing the quality of your images](best-practices-for-optimizing-the-quality-of-your-images.md)
@@ -106,7 +109,7 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
     + [[!DNL Experience Manager] and [!DNL Creative Cloud] integration](aem-cc-integration-best-practices.md)
     + [Integrate with [!DNL InDesign Server]](indesign.md)
     + [Digital Rights Management in assets](drm.md)
-    + [Use demo package for asset insights](touch-ui-using-demo-package-for-asset-insights.md)
+    + [Use demo package for asset insights](use-demo-package-for-asset-insights.md)
     + [Assets file format best practices](assets-file-format-best-practices.md)
     + [Best practices to monitor assets](assets-monitoring-best-practices.md)
     + [Camera Raw support](camera-raw.md)
@@ -132,21 +135,21 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
     + [Content Fragments - Markdown](content-fragments/content-fragments-markdown.md)
     + [Creating translation projects for Content Fragments](creating-translation-projects-for-content-fragments.md)
 + Manage Assets {#managing}
-    + [Manage digital assets](managing-assets-touch-ui.md)
-    + [Manage collections](managing-collections-touch-ui.md)
+    + [Manage digital assets](manage-assets.md)
+    + [Manage collections](manage-collections.md)
     + [Enable duplicate detection](duplicate-detection.md)
     + [Organize digital assets](organize-assets.md)
     + [Manage video assets](managing-video-assets.md)
     + [Create translation projects](translation-projects.md)
     + [Prepare assets for translation](preparing-assets-for-translation.md)
     + [Download assets from Experience Manager](download-assets-from-aem.md)
-    + [Lightbox](touch-ui-light-box.md)
-    + [Asset insights](touch-ui-asset-insights.md)
-    + [Enable asset insights through DTM](touch-ui-using-dtm-for-asset-insights.md)
-    + [Configure asset insights](touch-ui-configuring-asset-insights.md)
+    + [Lightbox](light-box.md)
+    + [Asset insights](asset-insights.md)
+    + [Enable asset insights through DTM](use-dtm-for-asset-insights.md)
+    + [Configure asset insights](configure-asset-insights.md)
     + [Check in and check out assets](check-out-and-submit-assets.md)
     + [Apply translation cloud services to folders](transition-cloud-services.md)
-    + [Use page tracker and embed code in web pages](touch-ui-using-page-tracker.md)
+    + [Use page tracker and embed code in web pages](use-page-tracker.md)
     + [Manage compound assets](managing-linked-subassets.md)
     + [Related assets](related-assets.md)
     + [Private folder sharing](private-folder.md)

@@ -1,8 +1,7 @@
 ---
 title: Invoking AEM Forms using APIs
 seo-title: Invoking AEM Forms using APIs
-description: null
-seo-description: null
+description: Invoking AEM Forms using APIs
 uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
 content-type: reference

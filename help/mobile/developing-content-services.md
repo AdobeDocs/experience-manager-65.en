@@ -36,7 +36,7 @@ Content Services can deliver the content as assets, packaged HTML (HTML/CSS/JS),
 >
 >Before you get started with Content Services, ensure to enable Content Services flag. To enable creation and management of models in your app, you need to enable data models in Configuration Browser.
 >
->See **[Administering Content Services](/help/mobile/developing-content-services.md)** for details.
+>See **[Administering Content Services](/help/mobile/developing-content-services.md)** and the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
@@ -44,4 +44,3 @@ Once you have set the Content Services flag and enabled data models in Configura
 
 * Models in Repository
 * Rendering and Delivery
-

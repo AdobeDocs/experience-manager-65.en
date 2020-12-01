@@ -1,6 +1,7 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
+solution: Experience Manager, Experience Manager Sites
 audience: admin-user
 user-guide-title: AEM 6.5 Administering User Guide
 breadcrumb-title: Administering Guide
@@ -29,6 +30,7 @@ user-guide-description: Learn about administering AEM.
     + [Language Copy Wizard](tc-wizard.md)
     + [Translation Enhancements](tc-enhancements.md)
     + [Translation Best Practices](tc-bp.md)
+    + [Configurations and the Configuration Browser](configurations.md)
     + [AEM FAQs](aem-faqs.md)
 + Operations {#operations}
     + [Dashboards](dashboards.md)

@@ -20,9 +20,9 @@ Packages can be accessed and/or maintained from the following pages:
 
 * [Package Manager](#package-manager), which you use to manage the packages in your local AEM instance.
 
-* [Package Share](#package-share), a centralized server holding both publicly available packages and those private to your company. The public packages can contain hotfixes, new functionality, documentation, etc.
+* [Software Distribution](#software-distribution), a centralized server holding both publicly available packages and those private to your company. The public packages can contain hotfixes, new functionality, documentation, etc.
 
-You can transfer packages between Package Manager, Package Share, and your file system.
+You can transfer packages between Package Manager, Software Distribution, and your file system.
 
 ## What are Packages? {#what-are-packages}
 
@@ -52,8 +52,8 @@ You can perform the following actions on or with packages:
 * Perform a dry run installation
 * Install packages (AEM does not automatically install packages after uploading)
 * Delete packages
-* Download packages, such as hotfixes, from the Package Share library
-* Upload packages to the company-internal section of the Package Share library
+* Download packages, such as hotfixes, from the Software Distribution library
+* Upload packages to the company-internal section of the Software Distribution library
 
 ## Package Information {#package-information}
 
@@ -338,7 +338,7 @@ Once a package has been built it can be rewrapped, if required.
 
 Rewrapping changes the package information - *without* changing the package content. Package information is the thumbnail, description, etc., in other words everything you can edit with the **Package Settings** dialog (to open this click **Edit**).
 
-A major use case for rewrap is when preparing a package for the package share. For example, you might have an existing package and decide to share it with others. For that you want to add a thumbnail and add a description. Instead of recreating the entire package with all its functionality (which might take some time and bears the risk that the package is no longer identical to the original) you can rewrap it and just add the thumbnail and description.
+A major use case for rewrap is when preparing a package. For example, you might have an existing package and decide to share it with others. For that you want to add a thumbnail and add a description. Instead of recreating the entire package with all its functionality (which might take some time and bears the risk that the package is no longer identical to the original) you can rewrap it and just add the thumbnail and description.
 
 1. Open the package definition from **Package Manager** (click on the package icon or name).
 
@@ -382,18 +382,6 @@ After a package has been built you can view the contents:
 
 This section describes how to download a package from AEM to your file system by using **Package Manager**.
 
->[!NOTE]
->
->See [Package Share](#package-share) for information on downloading hotfixes, feature packs, and packages from the public area and your company's internal area of package share.
->
->From Package Share you can:
->
->* download packages from [Package Share directly into your local AEM instance](#downloading-and-installing-packages-from-package-share).
->  Upon download the package is imported into your repository, after which you can immediately install it on your local instance using the **Package Manager**. These packages include hotfixes and other shared packages.
->
->* download packages from [Package Share to your file system](#downloading-packages-to-your-file-system-from-package-share).
->
-
 1. On the AEM Welcome screen, click **Packages**, then select **Package Manager**.
 1. Navigate to the package you want to download.
 
@@ -406,11 +394,6 @@ This section describes how to download a package from AEM to your file system by
 ### Uploading Packages from Your File System {#uploading-packages-from-your-file-system}
 
 A package upload allows you to upload a package from your file system into the AEM Package Manager.
-
->[!NOTE]
->
->See [Uploading packages to the company-internal Package Share](#uploading-packages-to-the-company-internal-package-share) to upload a package to your company's private area of Package Share.
-
 To upload a package:
 
 1. Navigate to the **Package Manager**. Then to the group folder into which you want the package to uploaded.
@@ -573,7 +556,7 @@ The following is an example of using cURL to execute a package validation.
 
 After you upload a package, you need to install the content. To have the package content installed and functional, it needs to be both:
 
-* loaded into AEM (either [uploaded from your filesystem](#uploading-packages-from-your-file-system) or [downloaded from package share](#downloading-and-installing-packages-from-package-share))
+* loaded into AEM (either [uploaded from your filesystem](#uploading-packages-from-your-file-system) or downloaded from [Software Distribution](#software-distribution))
 
 * installed
 
@@ -679,225 +662,15 @@ Replicate the contents of a package to install it to the publish instance:
 
 ## Package Share {#package-share}
 
-The Package Share is a centralized server made publicly available to share Content-Packages.
+The Package Share was a centralized server made publicly available to share Content-Packages.
 
-With Package Share, you can download these packages, which can include official hotfixes, feature sets, updates or sample content generated by other users.
+It has been replaced by [Software Distribution](#software-distribution).
 
-You can also upload and share packages within your company.
+## Software Distribution {#software-distribution}
 
-### Access to Package Share {#access-to-package-share}
+[Software Distribution](https://downloads.experiencecloud.adobe.com) is the new user interface designed to simplify the search and download of AEM Packages.
 
-There is no anonymous access to the Package Share; that is, only registered users are allowed to view, download and upload packages.
-
-Access to the Package Share is available for our partners and customers. Registration details must be submitted for access rights to be assigned.
-
-To gain access to Package Share:
-
-* Use the [Sign In page](#signing-in-to-package-share)
-* The first time you use the sign in page you will need to:
-
-    * [Register for an Adobe ID](#registering-for-package-share) and/or [validate your existing Adobe ID](#validating-your-adobe-id)
-    * so that your [Package Share Account](#package-share-account) can be created
-
->[!NOTE]
->
->Any Package Share user that has not been assigned to a customer, must join a community to see those resources by clicking **Join** next to the package share login.
-
-#### Signing In to Package Share {#signing-in-to-package-share}
-
-1. On the AEM Welcome screen, click **Tools**.
-1. Then select **Package Share**. You will be required to either:
-
-    * login with your Adobe ID
-    * [Create an Adobe ID](#registering-for-package-share)
-
-   >[!NOTE]
-   >
-   >The first time you login with your Adobe ID, you must complete the [validation of your email address](#validating-your-adobe-id).
-
-   >[!NOTE]
-   >
-   >If you have forgotten your password, please use the [Help pages](https://enterprise-dev.adobe.com/content/edev/en/registration/account.html) link (also on the sign in dialog).
-
-#### Validating your Adobe ID {#validating-your-adobe-id}
-
-The first time you sign into Package Share with your Adobe ID your email address will be validated.
-
-1. You will receive an email containing a link.
-1. You need to click on this link.
-1. A webpage will be opened.
-
-   The action of opening this webpage is taken as validation.
-
-1. Sign in will continue.
-
-1. You will receive an email containing a link.
-1. You need to click on this link.
-1. A webpage will be opened. The action of opening this webpage is taken as validation.
-1. Sign in will continue.
-
-#### Registering for Package Share {#registering-for-package-share}
-
-If you need access to Package Share, you will need to register for an Adobe ID:
-
-* The [Package Share sign-in page](#signing-in-to-package-share) offers a link for registering an Adobe ID.
-* You can register for an Adobe ID from certain Adobe desktop software.
-* Alternatively, you can register online on the [Adobe Sign In page](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&nl=1).
-
-An Adobe ID can be created by providing:
-
-* your e-mail address
-* a password of your choice
-* some additional information such as your name and country of residence
-
-#### Package Share Account {#package-share-account}
-
-The validity of your application will be checked before:
-
-* Your user account is created with the required/allowed permissions.
-* Your account is added to your company's group.
-
->[!NOTE]
->
->A user from one of our partner companies can also be a member of his/her customer groups.
-
-#### Network Considerations {#network-considerations}
-
-**IPv6**
-
-You may experience problems when trying to access Package Share from a pure IPv6 environment.
-
-This is because package share is service hosted on a server, meaning your connection is made through various networks on the internet. It cannot be ensured that all the connecting networks support IPv6; if not the connection might fail.
-
-To avoid this issue, you can access Package Share from an IPv4 network, download the package and then upload it to the IPv6 environment.
-
-**HTTP Proxy**
-
-Package Share is currently unavailable if your company runs an http proxy that requires authentication.
-
-Package Share is only available when your AEM server has access to the Internet without authentication being required. To configure the proxy for all services that use the http client (including package share) use the [OSGi configuration of the Day Commons HTTP Client 3.1 bundle](/help/sites-deploying/osgi-configuration-settings.md).
-
-### Inside Package Share {#inside-package-share}
-
-In Package Share packages are arranged in tree subtrees:
-
-* Adobe packages provided by Adobe.
-* Shared packages that have been provided by others companies and have been made public by Adobe.
-* Your company packages that are private.
-
-![chlimage_1-110](assets/chlimage_1-110.png)
-
-### Searching and Filtering Packages {#searching-and-filtering-packages}
-
-Package Share offers a search bar you can use for searching specific keywords or/and tags. Both keywords and tags support multiple values.
-
-* To search for multiple keywords you have to separate each keyword by a space.
-* To search for multiple tags you have to select each of them in the package trees.
-
-You can also change the conditional operator from OR to AND on the right side of the filter summary bar.
-
-### Downloading And Installing Packages From Package Share {#downloading-and-installing-packages-from-package-share}
-
-To download packages from Package Share and install them on your local instance, it is easier to access Package Share from your AEM instance. This will download the package and immediately register it in your Package Manager, from where it can be installed.
-
-1. From the AEM Welcome screen, click **Tools**, then select **Package Share** to open the Package Share page.
-1. Using your account details, log into Package Share. The landing page is shown, listing the Adobe folder, the Shared folder and one specific to your company.
-
-   >[!NOTE]
-   >
-   >Before starting to download packages from Package Share, make sure you have the [required access](#access-to-package-share).
-
-1. Navigate to the package you want to download and click **Download**.
-
-1. Go back or navigate to the **Package Manager** on your AEM instance. Then navigate to the package you just downloaded.
-
-   >[!NOTE]
-   >
-   >To find the package you downloaded, follow the same path as in Package Share. For example, if you downloaded a package from the following path in Package Share:
-   >
-   >**Packages** &gt; **Public** &gt; **Hotfixes**
-   >
-   >Then in Package Manager on your local instance the package will also appear under:
-   >
-   >**Packages** &gt; **Public** &gt; **Hotfixes**
-
-1. Click **Install** to install the package to your local AEM installation.
-
-   >[!NOTE]
-   >
-   >If the package has already been installed on your instance, the **Installed** indicator appears next to the package instead of the **Install** button.
-
-   >[!CAUTION]
-   >
-   >Installing a package can overwrite existing content in the repository. Therefore, we recommend that you perform a **Test Install** first. This allows you to inspect whether the content that the package contains conflicts with your existing content.
-
-### Downloading Packages to Your File System From Package Share {#downloading-packages-to-your-file-system-from-package-share}
-
-[Downloading and installing](#downloading-and-installing-packages-from-package-share) is very convenient, but if required you can also download the package and save it to your local file system:
-
-1. In Package Share click on the package icon or name.
-1. Click the **Assets** tab.
-1. Click **Download to disk**.
-
-### Uploading a package {#uploading-a-package}
-
-With Package Share, you can upload packages to your company-internal area of package share. This makes them available for sharing within your company.
-
-These packages are *not* available to the general AEM community, but are available to all users registered with your company.
-
-To upload packages your the company-internal Package Share:
-
->[!CAUTION]
->
->To upload a package to Package Share, you first have to create a group folder named after your company on your local Package Manager. For example, geometrixx. All packages to be uploaded for sharing must be placed in this group folder.
->
->
->Packages in the Package Manager home list or in other folders cannot be shared.
-
-1. Open the **Package Manager** and navigate to the package you want to upload.
-
-1. Click the package icon to open it.
-1. Click **Share** to open the dialog for uploading the package to Package Share.
-1. If are not already logged into Package Share you will need to enter your login credentials.
-
-   When you are logged in, AEM will display details about the package to be uploaded:
-
-   ![chlimage_1-111](assets/chlimage_1-111.png)
-
-1. Click **Share** to upload the package to your company's internal Package Share.
-
-   AEM displays the status and indicates when the package has finished uploading, after which you can click the **x** (upper right hand corner) to exit the **Share Package** window.
-
-1. After the upload has completed, you can navigate to your company's internal folder to see the package you just shared.
-
->[!NOTE]
->
->To modify a package available on Package Share, you need to download it, re-build it, and then upload it again to Package Share.
-
-### Deleting A Package {#deleting-a-package}
-
-You can only delete packages that you have uploaded by proceed as follows:
-
-1. In your company tree, check the package group containing the package.
-1. Click on the package.
-1. Click the delete button.
-
-   ![chlimage_1-18](do-not-localize/chlimage_1-30.png)
-
-1. Click **Delete** to confirm you want to delete the package.
-
-### Making Packages Semi-Private {#making-packages-semi-private}
-
-You can share packages outside your organization, but not publicly. These packages would be considered as semi-private. To share these semi-private packages you will need some help from Adobe Support. To do this, open a ticket with Adobe Support requesting a package be made available outside your organization. They will ask you for a list of Adobe ID's you want to grant access to your packages.
-
-## Software Distribution (Beta) {#software-distribution-beta}
-
-[Software Distribution](https://downloads.experiencecloud.adobe.com) is the new user interface designed to simplify the search and download of AEM Packages. It is currently in beta status and only accessible to Adobe Managed Services and AEM as a Cloud Service customers, as well as Adobe employees.
-
->[!NOTE]
->
->* [Package Share](#package-share) will remain in operations until all customers have access to Software Distribution.
->* All packages are available from both Package Share and Software Distribution.
+For more information, have a look at the [Software Distribution documentation](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 >[!CAUTION]
 >

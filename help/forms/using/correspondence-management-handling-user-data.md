@@ -1,8 +1,7 @@
 ---
 title: Correspondence Management | Handling user data
 seo-title: Correspondence Management | Handling user data
-description: null
-seo-description: null
+description: Correspondence Management | Handling user data
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

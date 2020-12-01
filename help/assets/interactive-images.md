@@ -213,7 +213,7 @@ If you have already uploaded the images that you want to use, advance to the nex
 
 1. Upload image banners that you want to make interactive.
 
-   See [Uploading assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+   See [Uploading assets](/help/assets/manage-assets.md#uploading-assets).
 
    You are now ready to add hotspots to the image banner; see the next task below.
 
@@ -238,7 +238,7 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
 >[!NOTE]
 >
 >When you add hotspots to an image in an Interactive Image or a Carousel Banner, the hotspot information is stored in the same metadata location--relative to the image's location--regardless of whether it is an Interactive Image or a Carousel Banner. This functionality means that you can easily re-use the same image--along with its defined hotspot data--in either viewer.
-
+>
 >Be aware, however, that Carousel Banners support image maps on images that can also contain hotspots; an Interactive Image does not. Keep this in mind if you intend to create an Interactive Image or Carousel Banner that uses the same image. You may want to create Interactive Images and Carousel Banners using separate copies of the same image instead.
 >
 >See also [Carousel Banners](/help/assets/carousel-banners.md).
@@ -301,7 +301,7 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
 1. Tap **[!UICONTROL Save]** to save your work and return to the Browse page.
 1. Publish the interactive image. Publishing allows for the banner to be delivered through the cloud and also generates embed code if you need to integrate with a third party website.
 
-   See [Publishing assets](/help/assets/managing-assets-touch-ui.md#publishing-assets).
+   See [Publishing assets](/help/assets/manage-assets.md#publishing-assets).
 
    After you have added hotspots and published the interactive image, you are now ready to add it to your existing website.
 
