@@ -28,7 +28,7 @@ When the package is installed, the following entities and services are available
 * MS Dynamics OData Cloud Service (OData Service)
 * Form data model with preconfigured Microsoft Dynamics entities and services.
 
-The OData Cloud Service and form data model with preconfigured Microsoft Dynamics entities and services are available on your AEM Forms instance only if the run mode for the AEM instance is set as `samplecontent`(default). For more information on configuring run modes for an AEM instance, see [Run Modes](/help/sites-deploying/configure-runmodes.md).
+Preconfigured Microsoft Dynamics entities and services in a form data model are available on your AEM Forms instance only if the run mode for the AEM instance is set as `samplecontent` (default). For more information on configuring run modes for an AEM instance, see [Run Modes](/help/sites-deploying/configure-runmodes.md).
 
 ## Prerequisites {#prerequisites}
 
