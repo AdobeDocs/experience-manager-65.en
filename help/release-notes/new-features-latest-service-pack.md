@@ -33,7 +33,23 @@ You can now perform the page moves and MSM rollouts as asynchronous operations t
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] add-on packages are made available a week after the scheduled [!DNL Experience Manager] Service Pack release. [!DNL Experience Manager] 6.5 Service Pack 7 (6.5.7.0) is scheduled to release on November 26, 2020.
+>[!DNL Experience Manager Forms] add-on packages are made available a week after the scheduled [!DNL Experience Manager] Service Pack release.
+
+### Performance improvements {#performance-improvements}
+
+[!DNL Experience Manager] 6.5 Service Pack 7 Forms improves the performance for:
+
+* Validating the field values on the server when you submit an adaptive form.
+
+* Converting a PDF form to an adaptive form using the [!DNL Automated Forms Conversion service].
+
+### Form data model HTTP client configuration to optimize performance {#fdm-http-client-config}
+
+[!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source now includes HTTP client configurations for performance optimization.
+
+### Availability of Reset Option for each component in the Layout mode {#reset-option-layout-mode}
+
+You can now use the reset option for each component in Layout mode of an adaptive form. When you define a multicolumn layout for a panel, you can use this feature to reset individual components within the panel.
 
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
