@@ -35,7 +35,7 @@ You can now perform the page moves and MSM rollouts as asynchronous operations t
 >
 >[!DNL Experience Manager Forms] add-on packages are made available a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
-### Performance improvements {#performance-improvements}
+### Performance improvements {#performance-improvements-forms}
 
 [!DNL Experience Manager] 6.5 Service Pack 7 Forms improves the performance for:
 
