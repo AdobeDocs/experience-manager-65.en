@@ -303,6 +303,10 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0
 >
 >[!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
 
+>[!NOTE]
+>
+>[!DNL Experience Manager] Service Pack does not include fixes for [!DNL Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
+
 **Adaptive Forms**
 
 * Unable to edit an adaptive form using Classic UI after applying [!DNL Experience Manager] Service Pack 6 (NPR-35126).
