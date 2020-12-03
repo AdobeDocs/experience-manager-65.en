@@ -70,7 +70,7 @@ The remainder of this document describes the requirements of this intermediary f
 
 The content structure of the page is stored in AEM. The model of the page is used to map and instantiate SPA components. The SPA developers create SPA components which they map to AEM components. To do this, they use the resource type (or path to the AEM component) as a unique key.
 
-The SPA components must be in synch with the page model and be updated with any changes to its content accordingly. A pattern leveraging dynamic components must be used to instantiate components on the fly following the provided page model structure.
+The SPA components must be in sync with the page model and be updated with any changes to its content accordingly. A pattern leveraging dynamic components must be used to instantiate components on the fly following the provided page model structure.
 
 ### Meta Fields {#meta-fields}
 
