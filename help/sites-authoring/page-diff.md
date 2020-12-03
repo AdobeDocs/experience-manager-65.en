@@ -55,10 +55,6 @@ The diff detects changes at the component and HTML level. Items that have been c
 
 * Light Green - Component Added
 * Pink - Component Removed
-* Blue - Component Changed
-* Blue - Component Moved
-
-Note the Changed and Moved colors are the same.
 
 **HTML Changes**
 
@@ -90,9 +86,7 @@ You can exit the side-by-side diff at any time by clicking the Close button in t
 There are some situations in which the page diff may not detect a difference as expected.
 
 * When diffing versions and launches, the diff does not take into account dynamic components such as breadcrumbs, menus, product lists or logos (components that rely on the site structure to render their content).
-* For versions the diff does not recreate the access control policy and live copy relationships.
-* If any changes are made to an image such as modifying the alt, title, or src attributes, it will be highlighted in blue as changed. However in some cases the image has a Base64 representation of the src attribute and even if both images look the same they will be marked by the diff as different because of the differing src attributes.
-* The diff is unable to detect image rotation.
+* For versions, the diff does not recreate the access control policy and live copy relationships.
 * If a page is moved, you can no longer perform a diff with any versions made before the move.
 
     * If you experience problems with a diff, check the [Timeline](/help/sites-authoring/basic-handling.md#timeline) for the page to see whether the page has been moved.

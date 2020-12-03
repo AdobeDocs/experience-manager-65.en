@@ -50,6 +50,6 @@ However there are a number of limitations that need to be considered by the deve
 
 * Because the diff is client-side and executes on page load, any adjustments to the DOM after the client-side diff service has run will not be accounted for. This may affect
 
-    * Components that use AJAX to inlcude content
+    * Components that use AJAX to include content
     * Single Page Applications
     * Javascript based components that manipulate the DOM upon user interaction.
