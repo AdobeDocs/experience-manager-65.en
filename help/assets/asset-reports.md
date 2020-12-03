@@ -146,7 +146,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Specify the frequency (time interval) for the purging service in the `scheduler.expression.name` field. You can also configure the age and the quantity threshold for reports.
 1. Save the changes.
 
-# Troubleshooting information, tips, and limitations {#best-practices-and-limitations}
+## Troubleshooting information, tips, and limitations {#best-practices-and-limitations}
 
 * If some reports or numbers in the reports are not available or as expected, ensure that [!UICONTROL Day CQ DAM Event Recorder] service is enabled.
 
