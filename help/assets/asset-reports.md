@@ -4,7 +4,7 @@ description: Reports about your assets in [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
 ---
 
-# Asset Reports {#asset-reports}
+# Asset reports {#asset-reports}
 
 Asset reporting lets you assess the utility of your [!DNL Adobe Experience Manager Assets] deployment. With [!DNL Assets], you can generate various reports for your digital assets. The reports provide useful information about your system’s usage, how users interact with assets, and which assets are downloaded and shared.
 
@@ -145,3 +145,11 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Open the **[!UICONTROL DAM Report Purge Service]** configuration.
 1. Specify the frequency (time interval) for the purging service in the `scheduler.expression.name` field. You can also configure the age and the quantity threshold for reports.
 1. Save the changes.
+
+# Troubleshooting information, tips, and limitations {#best-practices-and-limitations}
+
+* If some reports or numbers in the reports are not available or as expected, ensure that [!UICONTROL Day CQ DAM Event Recorder] service is enabled.
+
+* Remove the reports that are no longer required. Use the configuration options in the DAM Report Purge service to configure the criteria to purge reports.
+
+* If the Disk Usage Report does not generate and you are using [!DNL Dynamic Media], ensure that all assets are proceed correctly. To resolve, reprocess the assets and then generate the report again.
