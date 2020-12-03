@@ -32,6 +32,16 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * [!DNL Assets] and [!DNL Dynamic Media] provide multiple accessibility enhancements. The enhancements are related to keyboard navigation, use of screen readers, and enabling users to use similar assistive technology (AT). See [[!DNL Assets] enhancements](#assets-6570) and [[!DNL Dynamic Media] enhancements](#dynamic-media-6570).
 
+* Form data model HTTP client configuration to optimize performance.
+
+* Availability of Reset Option for each component in the Layout mode
+
+* [!DNL Experience Manager] 6.5 Service Pack 7 Forms improves the performance for:
+
+  * Validating the field values on the server when you submit an adaptive form.
+
+  * Converting a PDF form to an adaptive form using the [!DNL Automated Forms Conversion service].
+
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.22.5.
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.7.0, see [What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 7](new-features-latest-service-pack.md).
@@ -292,6 +302,48 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
+
+**Adaptive Forms**
+
+* Unable to edit an adaptive form using Classic UI after applying [!DNL Experience Manager] Service Pack 6 (NPR-35126).
+
+* When you convert a PDF to an adaptive form, you cannot set a value for a nested panel using a form data model on the tabbed layout. In addition, there are issues when setting a value for Radio Button Groups dynamically with a static array using the code editor (NPR-35062).
+
+* When you enter Japanese characters in a text field component in an adaptive form, you can specify more characters than the maximum limit of 35 characters (NPR-35039).
+
+* The adaptive form displays unwanted parameters, such as `owner` and `status`, on the **[!UICONTROL Thank you]** page displayed after submitting the form (NPR-34989).
+
+* The [!UICONTROL File Selection] dialog for the [!UICONTROL Attachment] component displays the unsupported file types as well for selection resulting in error during adaptive form submission (NPR-34970).
+
+* When you insert an adaptive form in an [!DNL Experience Manager Sites] page that includes text before the form, the cursor focus directly moves to the form instead of the text before the form (NPR-34947).
+
+* [!UICONTROL Preview with Data] option to prefill an adaptive form using an [!DNL Experience Manager] 6.2 data XML file does not work appropriately (NPR-35087).
+
+* When you update the data dictionary for an adaptive form, the form does not get translated as the adaptive form returns cached values (NPR-34845).
+
+* Fragments take longer time to load in an adaptive form because of cache invalidation (NPR-34567).
+
+* Tab navigation does not work appropriately for screen readers in an adaptive form (NPR-34544).
+
+**Correspondence Management**
+
+* Unable to save values for XML tags with numeric data, which includes float type, as a draft (NPR-35050).
+
+* When you migrate the assets from ES3, the assets include two non-editable default conditions (NPR-34972).
+
+* When you edit a data dictionary in a letter, the [!UICONTROL Lent Content] section displays spinning rectangles instead of useful information (NPR-34853).
+
+**Interactive Communication**
+
+* The rollout configuration name for Interactive Communication, available after installing the [!DNL Forms] add-on package, duplicates the standard rollout configuration name (NPR-34976).
+
+**Document Security**
+
+* When you save a new document security policy, Experience Manager Forms displays the `Relative validity period is required` error message (NPR-34679).
+
+* When you save a new document security policy, Experience Manager Forms displays the `Invalid filed value.Numeric value is required` error message (NPR-34678).
+
+* Document Security is not able to protect PDF 2.0 document (CQ-4305851).
 
 For information on security updates, see [Experience Manager security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
 
