@@ -44,7 +44,7 @@ Enhancements in latest version of Smart Imaging:
 
 ## Are there any licensing costs associated with smart imaging? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-No. Smart Imaging is included with your existing license of either Dynamic Media Classic (Scene7) or AEM Dynamic Media (On Prem, AMS, and AEM as a Cloud Service). 
+No. Smart Imaging is included with your existing license of either Dynamic Media Classic or Adobe Experience Manager -  Dynamic Media (On Prem, AMS, and AEM as a Cloud Service). 
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ During the initial transition, the non-cached images directly hits Adobe's origi
 
 ## How can I verify whether smart imaging is working as expected?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. After your account is configured with smart imaging, load a Dynamic Media Classic (Scene7)/Dynamic Media image URL on the browser.
+1. After your account is configured with smart imaging, load a Dynamic Media Classic or Adobe Experience Manager - Dynamic Media image URL on the browser.
 1. Open the Chrome developer pane by clicking **[!UICONTROL View > Developer > Developer Tools]** in the browser. Or, choose any browser developer tool of your choice.
 
 1. Ensure that cache is disabled when developer tools is open.

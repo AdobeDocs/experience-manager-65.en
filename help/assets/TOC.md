@@ -48,7 +48,7 @@ user-guide-description: Create, manage, deliver, and optimize digital assets.
     + [Dynamic Media Image Profiles](image-profiles.md)
     + [Smart Imaging](imaging-faq.md)
     + [Video](s7-video.md)
-    + [Adding Scene7 features to your page](scene7.md)
+    + [Adding Dynamic Media features to your page](scene7.md)
     + [HTTP2 delivery of content](http2.md)
     + [Delivering Dynamic Media assets](delivering-dynamic-media-assets.md)
     + [Activating hotlink protection in Dynamic Media](hotlink-protection.md)
