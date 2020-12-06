@@ -73,7 +73,7 @@ To create a smart collection, follow the steps:
 
 1. Navigate to the [!DNL Assets] user interface and click search.
 
-1. Type the search keyword in the Omnisearch box and press `Enter`. Open the Filters panel and apply a search filter.
+1. Type the search keyword in the Omnisearch box and select `Enter`. Open the Filters panel and apply a search filter.
 
 1. From the **[!UICONTROL Files & Folders]** list, select **[!UICONTROL Files]**.
 
@@ -113,7 +113,7 @@ You can add assets to a collection that contains a list of referenced assets or 
 Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#saved-searches).
 
 1. In the [!DNL Assets] user interface, click the search option ![search option](assets/do-not-localize/search_icon.png) from the toolbar.
-1. With the cursor in the Omnisearch box, press the Return key.
+1. With the cursor in the Omnisearch box, select the `Return` key.
 1. In the [!DNL Experience Manager] interface, open the Filters panel.
 1. From the **[!UICONTROL Saved Searches]** list, select the smart collection you want to modify. The Search panel displays the filters configured for the saved search.
 
@@ -241,7 +241,7 @@ Editing saved searches is the same as editing smart collections. For details, se
 To delete saved searches, follow these steps:
 
 1. In the [!DNL Assets] user interface, click search ![search option](assets/do-not-localize/search_icon.png).
-1. With the cursor in the Omnisearch field, press the Return key.
+1. With the cursor in the Omnisearch field, select the `Return` key.
 1. In the [!DNL Experience Manager] interface, open the Filters panel.
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 

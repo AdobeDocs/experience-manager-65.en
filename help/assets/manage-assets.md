@@ -58,7 +58,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    ![Create option to upload assets](assets/create-options.png)
 
-   To select multiple files, press the Ctrl or Command key and select the assets in the file picker dialog. When using an iPad, you can select only one file at a time.
+   To select multiple files, select the `Ctrl` or `Command` key and select the assets in the file picker dialog. When using an iPad, you can select only one file at a time.
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Click **[!UICONTROL Pause]** beside progress bar that appears when an upload starts.
 
@@ -345,13 +345,13 @@ To preview an asset using keyboard, follow these steps:
 
 1. From the [!DNL Assets] user interface, navigate to the desired asset using `Tab` and arrow keys.
 
-1. Press `Enter` key on the desired asset to open it. You can zoom into assets in preview mode.
+1. Select `Enter` key on the desired asset to open it. You can zoom into assets in preview mode.
 
 1. To zoom into the asset:
    1. Use `Tab` key to move focus to zoom-in option.
    1. Use `Enter` key to zoom into the image.
 
-   To zoom out use `Tab` key to move focus to the the zoom-out option and press `Enter`.
+   To zoom out use `Tab` key to move focus to the the zoom-out option and select `Enter`.
 
 1. Use `Shift` + `Tab` keys to move the focus back on the image.
 
@@ -384,7 +384,7 @@ To preview an asset using keyboard, follow these steps:
 
 1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the [!DNL Assets] web interface or through the HTTP API.
 
-1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and press Enter. The new tag is saved in [!DNL Experience Manager]. [!DNL YouTube] requires tags to publish. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
+1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and select `Enter`. The new tag is saved in [!DNL Experience Manager]. [!DNL YouTube] requires tags to publish. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >

@@ -171,7 +171,7 @@ In addition to the DCMES, there are other metadata elements created by the Dubli
 | description | More information about the asset.                                                                                        |
 | format      | The file format, physical medium, or dimensions of the asset. [!DNL Experience Manager] uses `dc:format` to denote the MIME type of the asset. |
 | identifier  | A unique reference to the asset.                                                                                         |
-| language    | The language of the asset (for example, en for English).                                                                 |
+| language    | The language of the asset (for example, `en` for English).                                                                 |
 | publisher   | The person or company responsible for making the asset available.                                                        |
 | relation    | A related asset.                                                                                                         |
 | rights      | Information about who has the rights to this asset.                                                                      |
