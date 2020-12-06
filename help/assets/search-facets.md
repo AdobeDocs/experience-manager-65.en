@@ -31,14 +31,14 @@ For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Use
    >
    >1. Navigate to `/conf/global/settings/dam/search/facets/assets/jcr:content/items` in CRXDE.
    >1. Delete the **type** node.
-   >1. From the path */libs/settings/dam/search/facets/assets/jcr:content/items*, copy the nodes **asset, directory, typeor, excludepaths**, and **searchtype** to the path mentioned on step 1.
+   >1. From the path `/libs/settings/dam/search/facets/assets/jcr:content/items`, copy the nodes `asset`, `directory`, `typeor`, `excludepaths`, and `searchtype` to the path mentioned in step 1.
    >1. Save the changes.
 
 1. In the [!UICONTROL Edit Search Forms] page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. For example, drag **[!UICONTROL Property Predicate]**.
 
-   ![Press and move a predicate to customize the search filters](assets/drag_predicate.png)
+   ![Select and move a predicate to customize the search filters](assets/drag_predicate.png)
 
-   *Figure: Press and move a predicate to customize the search filters.*
+   *Figure: Select and move a predicate to customize the search filters.*
 
 1. In the [!UICONTROL Settings] tab, enter a field label, placeholder text, and description for the predicate. Specify a valid name for the metadata property you want to associate with the predicate. The header label in the [!UICONTROL Settings] tab identifies the type of the selected predicate.
 
