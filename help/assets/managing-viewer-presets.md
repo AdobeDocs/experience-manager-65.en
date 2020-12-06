@@ -49,7 +49,7 @@ You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM
 
 Different web pages have different needs. For example, sometimes you want a web page that provides a link that opens the HTML5 Viewer in a separate browser window. In other cases, it may be necessary to embed the HTML5 Viewer directly on the hosting page. In the latter case, the web page may have a static layout. Or, it may be "responsive" and display differently on different devices or for different browser window sizes. To accommodate these needs, all the pre-defined, out-of-the-box HTML5 Viewers that come with Dynamic Media support both static web pages and responsive designed web pages.
 
-See [Responsive Image library](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) in the *Scene7 Image Serving API Help* for more information on how to embed responsive viewers onto your web pages.
+See [Responsive Image library](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) in the for more information on how to embed responsive viewers onto your web pages.
 
 >[!NOTE]
 >
