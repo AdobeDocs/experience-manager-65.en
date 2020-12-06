@@ -978,13 +978,13 @@ To view video reports:
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Video Reports.]**
 1. On the Video Reports page, do one of the following:
 
-    * Near the upper-right corner, tap the **Refresh Video Report **icon.
+    * Near the upper-right corner, tap the **Refresh Video Report** icon.
       You only need to use Refresh if the end date of the report is the current day. This ensures that you see the video tracking that has occurred since the last time you ran the report.
 
-    * Near the upper-right corner, tap the **Date Picker **icon.
+    * Near the upper-right corner, tap the **Date Picker** icon.
       Specify the beginning and end date range for which you want video data, and then tap **[!UICONTROL Run Report.]**
 
-   The Top Metrics group box identifies various aggregate measurements for all *published *videos across your site.
+   The Top Metrics group box identifies various aggregate measurements for all *published* videos across your site.
 
 1. In the table that lists the top published videos, tap a video name to play the video and also see the video’s audience retention (drop-off) report.
 
