@@ -43,7 +43,7 @@ You can search for expired assets, including expired subassets in the Search pan
 
 1. In the [!DNL Assets] console, click the **[!UICONTROL Search]** in the toolbar to display the Omnisearch box.
 
-1. With the cursor in the Omnisearch box, press the Enter key to display the search results page.
+1. With the cursor in the Omnisearch box, select the `Enter` key to display the search results page.
 1. Open the search panel in the left rail. Click the **[!UICONTROL Expiry Status]** option to expand it.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
@@ -103,7 +103,7 @@ The [!DNL Assets] console can display various states for assets. Depending on th
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
 1. To search for assets based on their status, click **[!UICONTROL Search]** ![search option](assets/do-not-localize/search_icon.png) to display the Omnisearch bar.
-1. Press return and click [!DNL Experience Manager] to display the search panel.
+1. Select `Return` and click [!DNL Experience Manager] to display the search panel.
 1. In the search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in [!DNL Assets].
 
    ![chlimage_1-163](assets/chlimage_1-163.png)

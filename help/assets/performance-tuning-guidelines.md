@@ -157,7 +157,7 @@ Setting a queue to half of the available processors is a workable solution to st
 
 ### DAM Update Asset configuration {#dam-update-asset-configuration}
 
-The [!UICONTROL DAM Update Asset] workflow contains a full suite of steps that are configured for tasks, such as Scene7 PTIFF generation and [!DNL Adobe InDesign Server] integration. However, most users may not require several of these steps. Adobe recommends you create a custom copy of the [!UICONTROL DAM Update Asset] workflow model, and remove any unnecessary steps. In this case, update the launchers for [!UICONTROL DAM Update Asset] to point to the new model.
+The [!UICONTROL DAM Update Asset] workflow contains a full suite of steps that are configured for tasks, such as Dynamic Media PTIFF generation and [!DNL Adobe InDesign Server] integration. However, most users may not require several of these steps. Adobe recommends you create a custom copy of the [!UICONTROL DAM Update Asset] workflow model, and remove any unnecessary steps. In this case, update the launchers for [!UICONTROL DAM Update Asset] to point to the new model.
 
 Running the [!UICONTROL DAM Update Asset] workflow intensively can sharply increase the size of your file datatastore. Results of an experiment performed by Adobe have shown that the datastore size can increase by approximately 400 GB if around 5500 workflows are performed within 8 hours.
 
@@ -173,7 +173,7 @@ Customers use images of various sizes and formats across their website or for di
 
 Many Sites customers implement an image servlet that resizes and crops images at the time they are requested, which imposes additional load on the publish instance. However, as long as these images can be cached, the challenge can be mitigated.
 
-An alternative approach is to use Scene7 technology to hand off image manipulation entirely. Additionally, you can deploy Brand Portal that not only takes over rendition generation responsibilities from the [!DNL Experience Manager] infrastructure, but also the entire publish tier.
+An alternative approach is to use Dynamic Media technology to hand-off image manipulation entirely. Additionally, you can deploy Brand Portal that not only takes over rendition generation responsibilities from the [!DNL Experience Manager] infrastructure, but also the entire publish tier.
 
 #### ImageMagick {#imagemagick}
 
