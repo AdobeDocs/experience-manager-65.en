@@ -43,7 +43,7 @@ See also [Cache overview in Dynamic Media Classic (Scene7)](https://helpx.adobe.
    If the Template just contains `<ID>`, then Dynamic Media fills in `https://<server>/is/image` where `<server>` is the Publish Server Name that is defined in General Settings and &lt;ID&gt; is the asset(s) selected to be invalidated.
 
 1. In the lower-right corner of the page, click **[!UICONTROL Close.]**
-1. In the Dynamic Media Classic (Scene7) UI, select one or more assets, then click **[!UICONTROL File > Invalidate CDN.]** You will see a list of one or more URLs generated from the template you created and the asset(s) you selected. It uses the server URL listed under "Published Server Name" under the Application General Settings.
+1. In the Dynamic Media Classic user interface, select one or more assets, then click **[!UICONTROL File > Invalidate CDN.]** You will see a list of one or more URLs generated from the template you created and the asset(s) you selected. It uses the server URL listed under "Published Server Name" under the Application General Settings.
 
    For example, with the CDN Invalidation Template set in the previous step, suppose you selected a single image asset image named `Backpack_B`. When you click **[!UICONTROL File > Invalidate CDN]** it results in the following generated URL in the CDN Invalidation user interface:
 

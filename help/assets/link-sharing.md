@@ -48,9 +48,9 @@ To generate the URL for assets that you want to share with users, use the Link S
    >
    >If you enter an email ID of a user that is not a member of your organization, the words [!UICONTROL External User] are prefixed with the email ID of the user.
 
-1. In the **[!UICONTROL Subject]** field, enter a subject line.
+1. In the **[!UICONTROL Subject]** box, enter a subject for the asset you want to share.
 
-1. In the **[!UICONTROL Message]** field, enter an optional message.
+1. In the **[!UICONTROL Message]** box, enter an optional message.
 
 1. In the **[!UICONTROL Expiration]** field, specify an expiration date and time for the link to stop working. By default, the expiration date is set for a week from the date you share the link.
 
@@ -60,9 +60,9 @@ To generate the URL for assets that you want to share with users, use the Link S
 
 1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users via an email.
 
-1. To view the shared asset, click the link in the email that is sent to the user. The shared asset is displayed in the **[!UICONTROL Adobe Marketing Cloud]** page.
+1. To view the shared asset, click the link in the email that is sent to the user. The shared asset is displayed in the [!UICONTROL Adobe Marketing Cloud] page.
 
-   ![chlimage_1-260](assets/chlimage_1-545.png)
+   ![Shared assets are available in Adobe Marketing Cloud](assets/chlimage_1-545.png)
 
 1. To generate a preview of the asset, click the shared asset. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click **[!UICONTROL Back]** in the toolbar. If you have shared a folder, click **[!UICONTROL Parent Folder]** to return to the parent folder.
 
@@ -74,7 +74,7 @@ To generate the URL for assets that you want to share with users, use the Link S
 
 1. To download the shared asset, click **[!UICONTROL Select]** from the toolbar, click the asset, and then click **[!UICONTROL Download]** from the toolbar.
 
-   ![chlimage_1-262](assets/chlimage_1-547.png)
+   ![Toolbar option to download the shared asset](assets/chlimage_1-547.png)
 
 1. To view the assets that you have shared as links, go to the [!DNL Assets] user interface and click the [!DNL Experience Manager] logo. Choose **[!UICONTROL Navigation]**. In the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
 
