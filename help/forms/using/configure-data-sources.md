@@ -137,6 +137,7 @@ Do the following to configure RESTful services:
 ### Form data model HTTP client configuration to optimize performance {#fdm-http-client-configuration}
 
 [!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source includes HTTP client configurations for performance optimization.
+Perform the following steps to configure the form data model HTTP client:
 
 1. Log in to [!DNL Experience Manager Forms] Author Instance as an administrator and go to [!DNL Experience Manager] web console bundles. The default URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
@@ -144,15 +145,15 @@ Do the following to configure RESTful services:
 
 1. In the [!UICONTROL Form Data Model Http Client Configuration for REST data source] dialog:
 
-   * Specify the maximum number of permitted connections in the **[!UICONTROL Connection limit in total]** field. The default vaue is 20 connections.
+   * Specify the maximum number of permitted connections between form data model and RESTful web services in the **[!UICONTROL Connection limit in total]** field. The default value is 20 connections.
 
-   * Specify the maximum number of permitted connections per route in the **[!UICONTROL Connection limit on per route basis]** field. The default value is 2 connections.
+   * Specify the maximum number of permitted connections for each route in the **[!UICONTROL Connection limit on per route basis]** field. The default value is 2 connections.
 
-   * Specify the value for which a persistent connection with the HTTP client is kept alive in the **[!UICONTROL Keep alive]** field. The default value is 15 seconds.
+   * Specify the duration, for which a persistent HTTP connection is kept alive, in the **[!UICONTROL Keep alive]** field. The default value is 15 seconds.
 
-   * Specify the time that the AEM Forms server waits for establishing a connection between form data model and  RESTful web services in the **[!UICONTROL Connection timeout]** field. The default value is 10 seconds.
+   * Specify the duration, for which the [!DNL Experience Manager Forms] server waits for a connection to establish, in the **[!UICONTROL Connection timeout]** field. The default value is 10 seconds.
 
-   * Specify the maximum time period for inactivity between two data packets in the **[!UICONTROL Socket timeout]**. The default value is 30 seconds.
+   * Specify the maximum time period for inactivity between two data packets in the **[!UICONTROL Socket timeout]** field. The default value is 30 seconds.
 
 
 ## Configure SOAP web services {#configure-soap-web-services}
