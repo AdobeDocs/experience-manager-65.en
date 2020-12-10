@@ -17,37 +17,27 @@ docset: aem65
 
 This section describes the procedure that needs to be followed in order to update AEM for Application Server installations.
 
-All the examples in this procedure use JBoss as the Application Server and imply that you have a working version of AEM already deployed. The procedure is meant to document upgrades performed from **AEM version 5.6 to 6.3**.
+All the examples in this procedure use Tomcat as the Application Server and imply that you have a working version of AEM already deployed. The procedure is meant to document upgrades performed from **AEM version 6.4 to 6.5**.
 
-1. First, start JBoss. In most situations, you can do this by running the `standalone.sh` startup script, by running this command from the terminal:
-
-   ```shell
-   jboss-install-folder/bin/standalone.sh
-   ```
-
-1. If AEM 5.6 is already deployed, check that the bundles are functioning correctly by running:
+1. First, start TomCat. In most situations, you can do this by running the `./catalina.sh` start startup script, by running this command from the terminal:
 
    ```shell
-   wget https://<serveraddress:port>/cq/system/console/bundles
+   $CATALINA_HOME/bin/catalina.sh start
    ```
 
-1. Next, undeploy AEM 5.6:
+1. If AEM 6.4 is already deployed, check that the bundles are functioning correctly by accessing:
 
    ```shell
-   rm jboss-install-folder/standalone/deployments/cq.war
+   https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. Stop JBoss.  
+1. Next, undeploy AEM 6.4. This can be done from the TomCat App Manager (`http://serveraddress:serverport/manager/html`)
 
-1. Now, migrate the repository using the crx2oak migration tool:
+1. Now, migrate the repository using the crx2oak migration tool. In order to do that, download the latest version of crx2oak from [this location](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak).
 
    ```shell
-   java -jar crx2oak.jar crx-quickstart/repository/ crx-quickstart/oak-repository
+   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -XX:MaxPermSize=2048M -jar crx2oak.jar --load-profile segment-fds
    ```
-
-   >[!NOTE]
-   >
-   >In this example, oak-repository is the temporary directory where the newly converted repository will reside. Before performing this step, make sure you have the latest crx2oak.jar version.
 
 1. Delete the necessary properties in the sling.properties file by doing the following:
 
@@ -78,59 +68,41 @@ All the examples in this procedure use JBoss as the Application Server and imply
     
     * The **BootstrapCommandFile_timestamp.txt file**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
-1. Copy the newly migrated segmentstore to its proper location:
+    * •	Remove **sling.options.file** by running: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf` 
 
-   ```shell
-   mv crx-quickstart/oak-repository/segmentstore crx-quickstart/repository/segmentstore
-   ```
+1. Now, create the node store and data store that will be used with AEM 6.5. You can do this by creating two files with the following names under `crx-quickstart\install`:
 
-1. Copy the datastore as well:
-
-   ```shell
-   mv crx-quickstart/repository/repository/datastore crx-quickstart/repository/datastore
-   ```
-
-1. Next, you need to create the folder that will contain the OSGi configurations that will be used with the new upgraded instance. More specifically, a folder named install needs to be created under **crx-quickstart**.  
-
-1. Now, create the node store and data store that will be used with AEM 6.3. You can do this by creating two files with the following names under **crx-quickstart\install**:
-
-    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`  
-    
+    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
     * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
 
-   These two files will configure AEM to use a TarMK node store and a File data store.
+    These two files will configure AEM to use a TarMK node store and a File data store.
 
 1. Edit the configuration files to make them ready for use. More specifically:
 
-    * Add the following line to **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:  
-      `customBlobStore=true`  
-    
-    * Then add the following lines to **org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config**:
+   * Add the following line to `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
-      ```    
+       ```customBlobStore=true```
+   
+   * Then add the following lines to `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
+
+      ```
       path=./crx-quickstart/repository/datastore
-       minRecordLength=4096
+      minRecordLength=4096
       ```
 
-1. Remove the crx2 runmode by running:
+1. You now need to change the run modes in the AEM 6.5 war file. In order to do that, first create a temporary folder that will be housing the AEM 6.5 war. The name of the folder in this example will be `temp`. Once the war file has been copied over, extract its contents by running from inside the temp folder: 
 
-   ```shell
-   find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
-   ```
+      ```
+      jar xvf aem-quickstart-6.5.0.war
+      ```
 
-1. You now need to change the run modes in the AEM 6.3 war file. In order to do that, first create a temporary folder that will be housing the AEM 6.3 war. The name of the folder in this example will be **temp**. Once the war file has been copied over, extract its contents by running from inside the temp folder:
+1. Once the contents have been extracted, go to the **WEB-INF** folder and edit the web.xml file to change the run modes. To find the location where they are set in the XML, look for the `sling.run.modes` string. Once you find it, change the run modes in the next line of code, which by default is set to author:
 
-   ```shell
-   jar xvf aem-quickstart-6.3.0.war
-   ```
+    ```bash
+    <param-value >author</param-value>
+    ```
 
-1. Once the contents have been extracted, go to the **WEB-INF** folder and edit the `web.xml` file to change the run modes. To find the location where they are set in the XML, look for the `sling.run.modes` string. Once you find it, change the run modes in the next line of code, which by default is set to author:
-
-   ```shell
-   <param-value >author</param-value>
-   ```
-
-1. Change the above author value and set the run modes to: author,crx3,crx3tar The final block of code should look like this:
+1. Change the above author value and set the run modes to: `author,crx3,crx3tar`. The final block of code should look like this:
 
    ```
    <init-param>
@@ -143,13 +115,8 @@ All the examples in this procedure use JBoss as the Application Server and imply
 
 1. Recreate the jar with the modified contents:
 
-   ```shell
-   jar cvf aem62.war
-   ```
+    ```bash
+    jar cvf aem65.war
+    ```
 
-1. Finally, deploy the new war file:
-
-   ```shell
-   cp temp/aem62.war jboss-install-folder/standalone/deployments/aem61.war
-   ```
-
+1. Finally, deploy the new war file in TomCat.
