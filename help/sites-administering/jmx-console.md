@@ -796,10 +796,7 @@ Displays a message in the QuickStart window.
 
 Arguments:
 
-* p1: A `String` value that represents the message to display. The following illustration shows the result of invoking `log` with a p1 value of `this is a log message`.
-
-![launcheruilog](assets/launcheruilog.png)
-
+* p1: A `String` value that represents the message to display. 
 * Returned value: none
 
 **startupFinished**
@@ -814,13 +811,8 @@ Calls the startupFinished method of the server launcher. The method attempts to 
 Sets the completion value of the server startup process. The progress bar on the QuickStart window represents the completion value.
 
 * Arguments:
-
-    * p1: A Float value that represents how much of the startup process is complete, as a fraction. The value should be between zero and one. For example, 0.3 indicates 30% complete.
-
+  * p1: A Float value that represents how much of the startup process is complete, as a fraction. The value should be between zero and one. For example, 0.3 indicates 30% complete.
 * Returned value: none.
-
-![launcherprogress](assets/launcherprogress.png)
-
 ## Third-Party Services {#third-party-services}
 
 Several third-party server resources install MBeans that expose attributes and operations to the JMX console. The following table lists the third-party resources and provides links to more information.
