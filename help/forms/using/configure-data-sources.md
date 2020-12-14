@@ -139,7 +139,7 @@ Do the following to configure RESTful services:
 [!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source includes HTTP client configurations for performance optimization.
 Perform the following steps to configure the form data model HTTP client:
 
-1. Log in to [!DNL Experience Manager Forms] Author Instance as an administrator and go to [!DNL Experience Manager] web console bundles. The default URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
+1. Log in to [!DNL Experience Manager Forms] Author Instance as an administrator and go to [!DNL Experience Manager] web console bundles. The default URL is [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
 1. Tap **[!UICONTROL Form Data Model Http Client Configuration for REST data source]**.
 
