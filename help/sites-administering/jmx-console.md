@@ -813,6 +813,7 @@ Sets the completion value of the server startup process. The progress bar on the
 * Arguments:
   * p1: A Float value that represents how much of the startup process is complete, as a fraction. The value should be between zero and one. For example, 0.3 indicates 30% complete.
 * Returned value: none.
+
 ## Third-Party Services {#third-party-services}
 
 Several third-party server resources install MBeans that expose attributes and operations to the JMX console. The following table lists the third-party resources and provides links to more information.
