@@ -159,8 +159,8 @@ The following entries should be added to the end of the /filter section, especia
 /6007 { /type "allow" /url "/etc/clientlibs/social/thirdparty/ckeditor/*.css?t=*" }
 
 # Allow Fonts from Communities to load
-/6050 { /type "allow" /url "*.woff *" }
-/6051 { /type "allow" /url "*.ttf *" }
+/6050 { /type "allow" /url "*.woff" }
+/6051 { /type "allow" /url "*.ttf" }
 
 # Enable CQ Security checkpoint for component guide.
 /7001 { /type "allow" /url "/libs/cq/security/userinfo.json?cq_ck=*"
@@ -459,8 +459,8 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
    /6007 { /type "allow" /url "/etc/clientlibs/social/thirdparty/ckeditor/*.css?t=*" }
 
    # Allow Fonts from Communities to load
-   /6050 { /type "allow" /url "*.woff *" }
-   /6051 { /type "allow" /url "*.ttf *" }
+   /6050 { /type "allow" /url "*.woff" }
+   /6051 { /type "allow" /url "*.ttf" }
 
       # Enable CQ Security checkpoint for component guide.
    /7001 { /type "allow" /url "/libs/cq/security/userinfo.json?cq_ck=*"}
