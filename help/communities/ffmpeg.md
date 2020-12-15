@@ -56,7 +56,7 @@ To modify the [!UICONTROL DAM Update Asset] workflow, and in this example, to tu
 
   * **[!UICONTROL Arugments]**: Clear all entries to disable transcoding Default values: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
-  ![chlimage_1-372](assets/chlimage_1-372.png)
+  ![configure-ffmpeg](assets/configure-ffmpeg.png)
 
 * Select **[!UICONTROL OK]** to close the `Step Properties` dialog.
 
