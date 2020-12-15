@@ -73,7 +73,7 @@ MySQL Workbench should be downloaded and installed following the instructions fo
 
 When the MySQL Workbench is first launched, unless already in use for other purposes, it will not yet show any connections:
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![mysqlconnection](assets/mysqlconnection.png)
 
 ### New Connection Settings {#new-connection-settings}
 
@@ -98,13 +98,13 @@ When the MySQL Workbench is first launched, unless already in use for other purp
 
 #### New Communities Connection {#new-communities-connection}
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![community-connection](assets/community-connection.png)
 
 ## Database Setup {#database-setup}
 
 Open the Communities connection in order to install the database.
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![install-database](assets/install-database.png)
 
 ### Obtain the SQL Script {#obtain-the-sql-script}
 
@@ -117,9 +117,9 @@ The SQL script is obtained from the AEM repository:
 1. Select the /libs/social/config/datastore/dsrp/schema folder
 1. Download `init-schema.sql`
 
-   ![chlimage_1-107](assets/chlimage_1-107.png)
+   ![database-schema-crxde](assets/database-schema-crxde.png)
 
-One method for downloading the schema is to
+One method for downloading the schema is to:
 
 * Select the `jcr:content` node for the sql file
 * Notice the value for the `jcr:data` property is a view link
@@ -136,10 +136,10 @@ If the database name is changed in the script, be sure to also change it in the 
 
 In the MySQL Workbench
 
-* From the File pulldown menu
-* Select the downloaded `init_schema.sql`
+* From the File pulldown menu, select the **[!UICONTROL Open SQL Script]** option
+* Select the downloaded `init_schema.sql` script
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![select-sql-script](assets/select-sql-script.png)
 
 #### Step 2: execute SQL Script {#step-execute-sql-script}
 
@@ -147,13 +147,13 @@ In the Workbench window for the file opened in Step 1, select the `lightening (f
 
 In the following image, the `init_schema.sql` file is ready to be executed:
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![execute-sql-script](assets/execute-sql-script.png)
 
 #### Refresh {#refresh}
 
 Once the script is executed, it is necessary to refresh the `SCHEMAS` section of the `Navigator` in order to see the new database. Use the refresh icon to the right of 'SCHEMAS':
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![refresh-schema](assets/refresh-schema.png)
 
 ## Configure JDBC Connection {#configure-jdbc-connection}
 
@@ -172,7 +172,7 @@ When MySQL runs on a server different from AEM, the server hostname must be spec
 * Locate the `Day Commons JDBC Connections Pool`
 * Select the `+` icon to create a new connection configuration.
 
-  ![chlimage_1-111](assets/chlimage_1-111.png)
+  ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
 
 * Enter the following values:
 
