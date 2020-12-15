@@ -106,7 +106,7 @@ The above numbers assume the following conditions:
 
 * Measured on publish (no overheads as related to an authoring environment)
 * Measured on the server (no network overhead)
-* Not cached (no CQ-output cache, no Dispatcher cache)
+* Not cached (no AEM output cache, no Dispatcher cache)
 * Only for complex items with many dependencies (HTML, JS, PDF, ...)
 * No other load on the system
 
