@@ -29,7 +29,7 @@ To reach the community functions console in the author environment:
 
 * Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Community Functions]**.
 
-![chlimage_1-379](assets/chlimage_1-379.png)
+![community-functions](assets/community-functions.png)
 
 ## Pre-built Functions {#pre-built-functions}
 
