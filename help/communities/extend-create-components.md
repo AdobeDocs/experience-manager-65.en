@@ -65,7 +65,7 @@ The deletion of the auto-created JSP file is because the default HBS file will b
 1. Select **[!UICONTROL Delete]**
 1. Select **[!UICONTROL Save All]**
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![create-component](assets/create-component.png)
 
 ### Create the Child Comment Component {#create-the-child-comment-component}
 
@@ -76,7 +76,7 @@ The deletion of the auto-created JSP file is because the default HBS file will b
 1. Navigate to the `/apps/custom/components/comments` node
 1. Right-click the node
 
-   * Select **[!UICONTROL Create] > **[!UICONTROL Component...]**
+   * Select **[!UICONTROL Create]** > **[!UICONTROL Component...]**
 
      * **Label**: *comment*
      * **Title**: *Alt Comment*
@@ -95,9 +95,9 @@ The deletion of the auto-created JSP file is because the default HBS file will b
 1. Select **[!UICONTROL Delete]**
 1. Select **[!UICONTROL Save All]**
 
-![chlimage_1-71](assets/chlimage_1-71.png) 
+![create-child-component](assets/create-child-component.png) 
 
-![chlimage_1-72](assets/chlimage_1-72.png)
+![create-component-crxde](assets/create-component-crxde.png)
 
 ### Copy and Modify the Default HBS Scripts {#copy-and-modify-the-default-hbs-scripts}
 
@@ -161,7 +161,7 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 * Enter 'customcommentsystem.js' as the content of `js.txt`
 * Select **[!UICONTROL Save All]**
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![comments-clientlibs](assets/comments-clientlibs.png)
 
 ## Register the SCF Model & View {#register-the-scf-model-view}
 
@@ -193,9 +193,9 @@ Enter the following text as the content of `customcommentsystem.js`:
 
 In order to experience the extended component in the publish environment, it is necessary to replicate the custom component.
 
-One way to do so is
+One way to do so is:
 
-* From global navigation
+* From global navigation,
 
   * Select **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
   * Select **[!UICONTROL Activate Tree]**
