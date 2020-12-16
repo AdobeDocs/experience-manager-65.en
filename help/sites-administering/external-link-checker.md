@@ -15,7 +15,7 @@ The Link Checker runs automatically assist content authors with their links incl
 
  The Link Checker has a number of [configuration options](#configuring) such as defining the validation internal, allowing certain links or link patters to be omitted from validation, and rewriting link rewriting rules.
 
-The Link Checker validates both internal links and external links.
+The Link Checker validates both [internal links](#internal) and [external links.](#external)
 
 >[!NOTE]
 >
