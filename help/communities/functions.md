@@ -45,7 +45,7 @@ When a community function is added to a community site template or added when [m
 
 #### Configuration Function Details {#configuration-function-details}
 
-![chlimage_1-380](assets/chlimage_1-380.png)
+![title-url-details](assets/title-url-details.png)
 
 * **Title**
   
@@ -64,7 +64,7 @@ Then, the URL to the page is https://localhost:4503/content/sites/engage/en/page
 
 and the menu link for the page appears as:
 
-![chlimage_1-381](assets/chlimage_1-381.png)
+![engage-page](assets/engage-page.png)
 
 ### Activity Stream Function {#activity-stream-function}
 
@@ -74,7 +74,7 @@ When added to a template, the following dialog opens:
 
 #### Configuration Function Details {#configuration-function-details-1}
 
-![chlimage_1-382](assets/chlimage_1-382.png)
+![function-details](assets/function-details.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
@@ -104,7 +104,7 @@ The blog function is a page with a [Blog component](/help/communities/blog-featu
 
 When added to a template, the following dialog opens:
 
-![chlimage_1-383](assets/chlimage_1-383.png)
+![blog-component](assets/blog-component.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
@@ -130,7 +130,7 @@ The calendar function is a page with a [Calendar component](/help/communities/ca
 
 When added to a template, the following dialog opens:
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![calendar-details](assets/calendar-details.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
@@ -195,7 +195,7 @@ When added to a template, the following dialog opens:
 
 #### Configuration Function Details {#configuration-function-details-2}
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![forum-component1](assets/forum-component1.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
@@ -237,7 +237,7 @@ As of Communities [feature pack 1](/help/communities/deploy-communities.md#lates
 
 When added to a template, the following dialog opens:
 
-![chlimage_1-386](assets/chlimage_1-386.png)
+![group-template-config](assets/group-template-config.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
@@ -260,7 +260,7 @@ The ideation function is a page with one [Ideation component](/help/communities/
 
 When added to a template, the following dialog opens, which specifies the default Title and URL names, as well as default display settings for the template:
 
-![chlimage_1-387](assets/chlimage_1-387.png)
+![ideation-function](assets/ideation-function.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
