@@ -288,7 +288,7 @@ The leaderboard function is a page with one [Leaderboard component](/help/commun
 
 When added to a template, the following dialog opens, which specifies the default Title and URL names, as well as default display settings for the template:
 
-![chlimage_1-388](assets/chlimage_1-388.png)
+![leaderboard-dialog](assets/leaderboard-dialog.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
@@ -319,7 +319,7 @@ The QnA function is a page with a [QnA component](/help/communities/working-with
 
 When added to a template, the configuration allows restriction to privileged members:
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![qna-dialog](assets/qna-dialog.png)
 
 * [Title and URL Settings](#title-and-url-settings)
 
@@ -347,11 +347,11 @@ When added to a template, the configuration allows restriction to privileged mem
 
 The ability to create a community function is reached by selecting the `Create Community Function` icon located at the top of the Community Functions console. Multiple functions based on the same AEM Blueprint may be created and then uniquely customized by opening in author edit mode.
 
-![chlimage_1-390](assets/chlimage_1-390.png)
+![create-community-function](assets/create-community-function.png)
 
 ### Community Function Name {#community-function-name}
 
-![chlimage_1-391](assets/chlimage_1-391.png)
+![function-name](assets/function-name.png)
 
 On the Community Function Name panel, a name, description and whether the function is enabled or disabled are configured:
 
@@ -369,7 +369,7 @@ On the Community Function Name panel, a name, description and whether the functi
 
 ### AEM Blueprint {#aem-blueprint}
 
-![chlimage_1-392](assets/chlimage_1-392.png)
+![aem-blueprint](assets/aem-blueprint.png)
 
 On the `AEM Blueprint` panel, it is possible to select the blueprint which is the underlying implementation of the community function.
 
@@ -381,13 +381,13 @@ See also [Multi Site Manager](/help/sites-administering/msm.md).
 
 ### Thumbnail {#thumbnail}
 
-![chlimage_1-393](assets/chlimage_1-393.png)
+![funtion-thumbnail](assets/funtion-thumbnail.png)
 
 On the Thumbnail panel, an image may be uploaded to display in the [Community Functions console](#community-functions-console).
 
 ## Open Community Function {#open-community-function}
 
-![chlimage_1-394](assets/chlimage_1-394.png)
+![open-function](assets/open-function.png)
 
 Select the `Open Community Function` icon to enter author edit mode for authoring the page content and modifying the configuration of the feature component(s).
 
@@ -403,6 +403,6 @@ For configuration details, visit [Communities Components](/help/communities/auth
 
 ## Edit Community Function {#edit-community-function}
 
-![chlimage_1-395](assets/chlimage_1-395.png)
+![edit-function](assets/edit-function.png)
 
 Select the `Edit Community Function` icon to edit the function's properties using the same panels as [creating a community function](#create-community-function), including enabling or disabling the function.
