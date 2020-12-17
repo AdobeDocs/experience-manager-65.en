@@ -668,10 +668,10 @@ The AEM configuration places the repository and datastore on the same logical vo
 The following table illustrates the size of data volumes that are used in the backup benchmarks. The initial baseline content is first installed, then additional known amounts of data are added to increase the size of the content backed up. Back-ups will be created at specific increments to represent a large increase in content and what may be produced in a day. The distribution of content (pages, images, tags) will be roughly based on realistic production asset composition. Pages, images, and tags will be limited to a maximum of 800 child pages. Each page will include title, Flash, text/image, video, slideshow, form, table, cloud, and carousel components. Images will be uploaded from a pool of 400 unique files ranging in size from 37 kB to 594 kB.
 
 |Content|Nodes|Pages|Images|Tags|
- |---|---|---|---|---|
- |Base install|69 610|562|256|237|
- |Small content for incremental back-up||+100|+2|+2|
- |Large content for full back-up||+10 000|+100|+100|
+|---|---|---|---|---|
+|Base install|69 610|562|256|237|
+|Small content for incremental back-up||+100|+2|+2|
+|Large content for full back-up||+10 000|+100|+100|
 
 The backup benchmark is repeated with the additional content sets added at each repetition.
 
