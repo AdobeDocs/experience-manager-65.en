@@ -39,7 +39,7 @@ As a best practice for image sizing, use `&wid=<value>&hei=<value>&resMode=sharp
 
 Image sharpening is the most complex aspect of controlling images on your website, and where many mistakes are made. Take the time to learn more about how sharpening and unsharp masking works in AEM by referring to the following helpful resources:
 
-Best practices white paper [Sharpening images in Adobe Scene7 Publishing System and on Image Server](/help/assets/assets/sharpening_images.pdf) applies to AEM as well.
+Best practices white paper [Sharpening images in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) applies to AEM as well.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
@@ -66,7 +66,7 @@ There are two image sharpening methods that you can use:
 
       AEM Help topic on Sharpening an image.
 
-      Best practices white paper [Sharpening images in Adobe Scene7 Publishing System and on Image Server](/help/assets/assets/sharpening_images.pdf).
+      Best practices white paper [Sharpening images in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
     * AEM also lets you control a fourth parameter: monochrome (0,1). This parameter determines if unsharp masking is applied to each color component separately using the value 0 or to the image brightness/intensity using the value 1.
 
@@ -117,7 +117,7 @@ If sharpening results are still not satisfactory, increase the radius in decimal
 
 As you experiment, you may also find the following general suggestions helpful to optimize your workflow:
 
-* Try out and test different parameters in real time, either directly on a URL or using the Scene7 Publishing System's image adjustment functionality which provides real-time previews for adjustment operations.
+* Try out and test different parameters in real time, directly on a URL.
 * As a best practice, remember that you can group Dynamic Media Image Serving commands into an image preset. An image preset is basically URL command macros with custom preset names such as `$thumb_low$` and `&product_high$`. The custom preset name in a URL path makes a call to these presets. Such functionality helps you manage commands and quality settings for different usage patterns of images on your website and shortens the overall length of URLs.
 * AEM also provides more advanced ways to tune image quality, such as applying sharpening images on ingestion. For advanced use cases where this may be an option to further tune and optimize rendering results, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) can help you with customized insight and best practices.
 
