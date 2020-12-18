@@ -45,11 +45,11 @@ You can now perform the page moves and MSM rollouts as asynchronous operations t
 
 ### Form data model HTTP client configuration to optimize performance {#fdm-http-client-config}
 
-[!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source now includes HTTP client configurations for performance optimization.
+[!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source now includes HTTP client configurations for performance optimization. See [Configure data sources](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
 
 ### Availability of Reset Option for each component in the Layout mode {#reset-option-layout-mode}
 
-You can now use the reset option for each component in Layout mode of an adaptive form. When you define a multicolumn layout for a panel, you can use this feature to reset individual components within the panel.
+You can now use the reset option for each component in Layout mode of an adaptive form. When you define a multicolumn layout for a panel, you can use this feature to reset individual components within the panel. See [Use layout mode to resize components](../../help/forms/using/resize-using-layout-mode.md#resize-components).
 
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
