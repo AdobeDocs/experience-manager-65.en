@@ -58,14 +58,14 @@ To use the External Link Checker:
 1. Using **Navigation**, select **Tools**, then **Sites**.
 1. Select **External Link Checker** and a list of all external links is displayed.
 
-![](assets/external-link-checker.png)
+![The External Link Checker window](assets/external-link-checker.png)
 
 The following information is displayed:
 
-* **Status** - The validation status of the link
+* **Status** - The validation status of the link which can be one of the following:
   * **Valid** - The external link is reachable by the Link Checker
   * **Pending** - The external link was added to site content, but has not yet been validated by the Link Checker
-  * **Invalid** - The external link is not reach able by the Link Checker.
+  * **Invalid** - The external link is not reach able by the Link Checker
 * **URL** - The external link
 * **Referrer** - The content page that contains the external link
   * This is only populated [if configured.](#configuring)
@@ -73,7 +73,7 @@ The following information is displayed:
   * How often links are checked [is configurable.](#configuring)
 * **Last Status** - The last HTML status code returned when the Link Checked last checked the external link
 * **Last Available** - Time since the link was last available to the Link Checker
-* **Last Accessed** - time since the link was last accessed by the Link Checker
+* **Last Accessed** - time since the page with the external link was last accessed in the authoring interface
 
 You can manipulate the content of the window, by using the two buttons at the top of the list of links:
 
