@@ -28,7 +28,7 @@ See [Adobe Extension](https://experienceleague.adobe.com/docs/launch/using/exten
 * Adobe Launch integration for Dynamic Media viewers does not work in the AEM author node. You cannot see any tracking from a WCM page until it is published.
 * Adobe Launch integration for Dynamic Media viewers is not supported for "pop-up" operation mode, where the viewer URL is obtained using the "URL" button on Asset Details page.
 * Adobe Launch integration cannot be used simultaneously with legacy viewers Analytics integration (by way of the `config2=` parameter).
-* Support for video tracking is limited to core playback tracking only, as described in [Tracking Overview](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). In particular, QoS, Ads, Chapter/Segments, or Errors tracking is not supported.
+* Support for video tracking is limited to "core playback" tracking only, as described in [Tracking Overview](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). In particular, QoS, Ads, Chapter/Segments, or Errors tracking is not supported.
 * Storage Duration configuration for Data Elements is not supported for Data Elements using the *Dynamic Media Viewers* extension. Storage Duration must be set to **[!UICONTROL None]**.
 
 ### Use cases for the integration {#use-cases-for-the-integration}
@@ -135,7 +135,7 @@ To track Dynamic Media viewers in AEM Sites, all steps listed under the [Configu
 
 Following proper configuration, any Dynamic Media viewer that you add to a Sites page, using a WCM component supported by Dynamic Media, automatically tracks data to Adobe Analytics, or Adobe Analytics for Video, or both.
 
-<!-- To be reviewed and updated:
+<!-- To be reviewed and updated although this is found live in the AEMaaCS version:
 See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
 -->
 
@@ -149,7 +149,7 @@ Following proper configuration, you can add Adobe Launch support to a web page w
 
 See [Add the Launch Embed Code](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) to learn more about how to use Adobe Launch library embed code.
 
-<!-- To be reviewed and updated:
+<!-- To be reviewed and updated although this is found live in the AEMaaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of AEM Dynamic Media.
 -->
 
@@ -215,7 +215,7 @@ The exact value returned by the Data Element depends on the context. If the Data
   * Uses the Dynamic Media Viewer **[!UICONTROL PAN]** event as a trigger.
   * Sends the value of **[!UICONTROL ZoomScale]** Data Element to Adobe Analytics.
 
-* * **[!UICONTROL TrackKey]** Rule with the following:
+* **[!UICONTROL TrackKey]** Rule with the following:
 
   * Uses the key press event from the Core Adobe Launch extension as a trigger.
   * Sends the value of **[!UICONTROL ZoomScale]** Data Element to Adobe Analytics.
