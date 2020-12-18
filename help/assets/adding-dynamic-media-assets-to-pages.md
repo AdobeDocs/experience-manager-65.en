@@ -1,6 +1,6 @@
 ---
 title: Adding Dynamic Media Assets to Pages
-description: How to add Dynamic Media components to a page in AEM
+description: How to add Dynamic Media components to a page in Adobe Experience Manager
 uuid: b5e982f5-fa1c-478a-bcb3-a1ef980df201
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -15,17 +15,17 @@ docset: aem65
 
 To add the Dynamic Media functionality to assets you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. You do this by entering Layout mode and enabling the Dynamic Media components. Then you can add these components to the page and add assets to the component. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
 
-You add Dynamic Media assets directly to the page if you are using AEM as your WCM. If you are using a third-party for your WCM, either [link](/help/assets/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/embed-code.md) your assets. For a responsive third-party web site, see [delivering optimized images to a responsive site](/help/assets/responsive-site.md).
+You add Dynamic Media assets directly to the page if you are using Adobe Experience Manager as your WCM. If you are using a third-party for your WCM, either [link](/help/assets/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/embed-code.md) your assets. For a responsive third-party web site, see [delivering optimized images to a responsive site](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
->You must publish assets before adding them to pages in AEM. See [Publishing Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md).
+>You must publish assets before adding them to pages in Experience Manager. See [Publishing Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md).
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
 Adding a 3D Media, Dynamic Media, Interactive Media, Panoramic Media, Smart Crop Video, or Video 360 Media component to a page is the same as adding a component to any page. The Dynamic Media components are described in the following sections.
 
-1. In AEM, open the page where you want to add the Dynamic Media component.
+1. In Experience Manager, open the page where you want to add the Dynamic Media component.
 1. In the panel on the left side of the page (you may need to toggle the display of the side panel), click the **[!UICONTROL Components]** icon. 
 1. Under the **[!UICONTROL Components]** heading, in the drop-down list, select **[!UICONTROL Dynamic Media.]** 
 
@@ -53,7 +53,7 @@ Adding a 3D Media, Dynamic Media, Interactive Media, Panoramic Media, Smart Crop
 
 If no Dynamic Media components are available to add to a page, it likely means that you need to first enable the components that you want to use.
 
-1. In AEM, open the page where you want to add the Dynamic Media component.
+1. In Experience Manager, open the page where you want to add the Dynamic Media component.
 1. On the left side of the toolbar near the top of the page, tap the Page Information icon, then tap **[!UICONTROL Edit Template]** from the drop-down list.
 
     ![edit-template](/help/assets/assets-dm/edit-template.png)
@@ -103,7 +103,7 @@ The Dynamic Media components that are available include the following:
 
 >[!NOTE]
 >
->These components are not available by default and need to be made available by way of the template editor before using. [After they are made available i](/help/sites-authoring/templates.md#editing-templates-template-authors)n the template editor, you can add the components to your page as you would any other AEM component.
+>These components are not available by default and need to be made available by way of the template editor before using. [After they are made available i](/help/sites-authoring/templates.md#editing-templates-template-authors)n the template editor, you can add the components to your page as you would any other Experience Manager component.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
