@@ -597,16 +597,3 @@ For additional information, Adobe has a series of Knowledge Base articles relate
 [https://helpx.adobe.com/experience-manager/kb/ACLReplication.html](https://helpx.adobe.com/experience-manager/kb/ACLReplication.html)
 [https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html](https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html)
 [https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html](https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html)
-https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html
-https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html
-https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html
-https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html
-https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html
-https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html
-https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html
-https://helpx.adobe.com/experience-manager/kb/replication-stuck.html
-https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html
-https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html
-https://helpx.adobe.com/experience-manager/kb/ACLReplication.html
-https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html
-https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html
