@@ -197,13 +197,13 @@ Various log files are held on the file server where you installed AEM:
     * `error.log`
       Error messages (of varying levels of severity) are registered here.
 
-    * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+    * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
       This log is only used if [!DNL Dynamic Media] is enabled. It provides statistics and analytical information used for analyzing behavior of the internal ImageServer process.
 
     * `request.log`
       Each access request is registered here together with the response.
 
-    * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+    * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
       This log is only used if [!DNL Dynamic Media] is enabled. The s7access log records each request made to [!DNL Dynamic Media] through `/is/image` and `/is/content`.
 
     * `stderr.log`
