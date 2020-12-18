@@ -73,3 +73,4 @@ To resolve this error:
   The property enables the client libraries under the runtime folder to access proxies. (CQ-4268679)
 
 * When AEM Forms is started, the `SAX Security Manager could not be setup` warning appears.
+* When you open a PDF protected with AEM Forms Document Security on an Apple iOS or iPadOS running Adobe Acrobat Reader version 20.10.00.  

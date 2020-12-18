@@ -47,7 +47,7 @@ user-guide-description: Learn about administering AEM.
     + [Configure the Video component](config-video.md)
     + [The Bulk Editor](bulk-editor.md)
     + [Configuring Email Notification](notification.md)
-    + [The External Link Checker](external-link-checker.md)
+    + [The Link Checker](external-link-checker.md)
     + [Troubleshooting AEM](troubleshoot.md)
     + [Managing Access to Workflows](workflows-managing.md)
     + [Starting Workflows](workflows-starting.md)

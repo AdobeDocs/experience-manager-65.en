@@ -40,7 +40,7 @@ To create a blueprint configuration:
 1. [Navigate](/help/sites-authoring/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
 1. Select **Blueprints** to open the **Blueprint Configurations** console:
 
-   ![chlimage_1-209](assets/chlimage_1-209.png)
+   ![chlimage_1-209](assets/blueprint-configurations.png)
 
 1. Select **Create**.
 1. Select the blueprint template, then **Next** to continue.
@@ -59,14 +59,12 @@ You can edit or delete an existing blueprint configuration:
 1. [Navigate](/help/sites-authoring/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
 1. Select **Blueprints** to open the **Blueprint Configurations** console:
 
-   ![chlimage_1-210](assets/chlimage_1-210.png)
+   ![chlimage_1-210](assets/blueprint-configurations.png)
 
 1. Select the required blueprint configuration - the appropriate actions will become available in the toolbar:
 
     * **Properties**; you can use this to view and then edit the properties of the configuration.
     * **Delete**
-
-   ![chlimage_1-211](assets/chlimage_1-211.png)
 
 ## Creating a Live Copy {#creating-a-live-copy}
 
@@ -147,7 +145,7 @@ To create a live copy of a site from a blueprint configuration:
 1. In the **Sites** console, select **Create**, then **Site** from the drop down selector.
 1. Select the blueprint configuration to use as the source of the live copy and proceed with **Next**:
 
-   ![chlimage_1-216](assets/chlimage_1-216.png)
+   ![chlimage_1-216](assets/blueprint-configuration-select.png)
 
 1. Use the **Initial Languages** selector to specify the language(s) of the blueprint site to use for the live copy.
 
