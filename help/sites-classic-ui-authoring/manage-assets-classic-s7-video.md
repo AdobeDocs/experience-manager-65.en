@@ -131,7 +131,7 @@ The following table provides a high level comparison of supported capabilties be
 | Approach |HTML5 first approach. Flash is only used for non-HTML5 fallback. |Flash on most desktops. HTML5 is used for mobile and tablets. |
 | Delivery |Progressive |Adaptive Streaming |
 | Tracking |Yes |Yes |
-| Extensibility |Yes |Yes (with Dynamic Media Classic viewer SDK) |
+| Extensibility |Yes |No |
 | Mobile Video |Yes |Yes |
 
 ### Setting Up {#setting-up}
