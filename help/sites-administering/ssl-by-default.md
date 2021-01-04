@@ -154,7 +154,7 @@ Alternatively, you can automate the SSL setup by uploading a package that alread
 
 ### Generating a Private Key/Certificate Pair to Use with the Wizard {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
-Below you will find an example for creating a self-signed certificate in DER format that the SSL Wizard can use.
+Below you will find an example for creating a self-signed certificate in DER format that the SSL Wizard can use. Install OpenSSL based on the operating system, open the OpenSSL command prompt, and change the directory to the folder where you want to generate the Private Key/Certificate.
 
 >[!NOTE]
 >
@@ -170,7 +170,7 @@ Below you will find an example for creating a self-signed certificate in DER for
 1. Then, Generate a Certificate Signing Request (CSR) using private key:
 
    ```shell
-   openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj '/CN=localhost'
+   openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
 1. Generate the SSL certificate and sign it with the private key. In this example, will expire one year from now:
