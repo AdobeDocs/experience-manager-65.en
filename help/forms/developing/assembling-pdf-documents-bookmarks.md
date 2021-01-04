@@ -1,8 +1,8 @@
 ---
 title: Assembling PDF Documents with Bookmarks
 seo-title: Assembling PDF Documents with Bookmarks
-description: null
-seo-description: null
+description: Use the Assembler service to modify a PDF document that does contain bookmarks to include bookmarks using the Java API and the Web Service API.
+seo-description: Use the Assembler service to modify a PDF document that does contain bookmarks to include bookmarks using the Java API and the Web Service API.
 uuid: a306d2a6-0b12-4eb3-bff4-968a33417486
 contentOwner: admin
 content-type: reference

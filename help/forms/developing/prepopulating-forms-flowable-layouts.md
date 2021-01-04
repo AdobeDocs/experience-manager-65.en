@@ -1,8 +1,8 @@
 ---
 title: Prepopulating Forms with Flowable Layouts
 seo-title: Prepopulating Forms with Flowable Layouts
-description: null
-seo-description: null
+description: Prepopulate forms with flowable layout to display data to users within a rendered form using the Java API and the Web Service API.
+seo-description: Prepopulate forms with flowable layout to display data to users within a rendered form using the Java API and the Web Service API.
 uuid: 93ccb496-e1c2-4b79-8e89-7a2abfce1537
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms

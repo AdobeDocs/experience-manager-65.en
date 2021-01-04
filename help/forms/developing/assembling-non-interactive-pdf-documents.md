@@ -1,8 +1,8 @@
 ---
 title: Assembling Non-Interactive PDF Documents
 seo-title: Assembling Non-Interactive PDF Documents
-description: null
-seo-description: null
+description: Use a non-interactive PDF form as input to assemble a non-interactive PDF document using the Java API and Web Service API.
+seo-description: Use a non-interactive PDF form as input to assemble a non-interactive PDF document using the Java API and Web Service API.
 uuid: 0c7adeb4-9a3a-4ec5-ba33-c3642928d4ea
 contentOwner: admin
 content-type: reference

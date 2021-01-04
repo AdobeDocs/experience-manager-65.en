@@ -1,8 +1,8 @@
 ---
 title: Assembling Encrypted PDF Documents
 seo-title: Assembling Encrypted PDF Documents
-description: null
-seo-description: null
+description: Assemble encrypted PDF documents using the Java API and Web Service API.
+seo-description: Assemble encrypted PDF documents using the Java API and Web Service API.
 uuid: d0948ec9-ab67-4fe4-9062-1c4938460b43
 contentOwner: admin
 content-type: reference

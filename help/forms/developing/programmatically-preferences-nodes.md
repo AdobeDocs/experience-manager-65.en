@@ -1,8 +1,8 @@
 ---
 title: Programmatically managing the PreferencesNodes
 seo-title: Programmatically managing the PreferencesNodes
-description: null
-seo-description: null
+description: Use the Preferences Manager Service API (Java) to programmatically manage the Preferences Nodes.
+seo-description: Use the Preferences Manager Service API (Java) to programmatically manage the Preferences Nodes.
 uuid: f0cb117a-a6cc-4ca5-8511-b3bc9f6738e9
 contentOwner: admin
 content-type: reference
