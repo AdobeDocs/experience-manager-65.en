@@ -152,11 +152,11 @@ The sidebar comprises the following browsers:
    <td>Adds a field that lists all the attachments uploaded using the File Attachment component.</td>
   </tr>
   <tr>
-   <td>Footer<br /> </td>
+   <td>Header<br /> </td>
    <td>Adds the page header that typically includes logo of a corporation, title of the form, and summary.<br /> </td>
   </tr>
   <tr>
-   <td>Header</td>
+   <td>Footer</td>
    <td>Adds the page footer that typically includes copyright information, and links to other pages. </td>
   </tr>
   <tr>
