@@ -281,7 +281,7 @@ Perform the following steps to configure the Signature Step component:
 
     * **[!UICONTROL Configuration]**: Select a configuration ([!DNL Adobe Sign] Cloud Service). The drop-down box is available only if the **Use legacy E-sign component** option is enabled.
 
-    * **[!UICONTROL CSS Class]**: <Enter the description here>
+    * **[!UICONTROL CSS Class]**: Specify the CSS class for the component.
 
    Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
 
