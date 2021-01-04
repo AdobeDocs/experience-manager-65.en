@@ -1,8 +1,8 @@
 ---
 title: Performing Service Operations Using APIs
 seo-title: Performing Service Operations Using APIs
-description: null
-seo-description: null
+description: Develop client applications using the AEM Forms APIs.
+seo-description:  Develop client applications using the AEM Forms APIs.
 uuid: a5697c91-d643-4265-973c-18467ca0437a
 contentOwner: admin
 content-type: reference
