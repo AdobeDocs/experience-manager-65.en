@@ -1,8 +1,8 @@
 ---
 title: Form Data Integration Service JavaAPI Quick Start(SOAP)
 seo-title: Form Data Integration Service JavaAPI Quick Start(SOAP)
-description: null
-seo-description: null
+description: Use the Form Data Integration service to import data into a PDF form and export data from a PDF form using the Java API.
+seo-description:  Use the Form Data Integration service to import data into a PDF form and export data from a PDF form using the Java API.
 uuid: bde8e83d-56d3-4331-a025-82b327c219b7
 contentOwner: admin
 content-type: reference

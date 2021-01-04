@@ -1,8 +1,8 @@
 ---
 title: Rendering Rights-Enabled Forms
 seo-title: Rendering Rights-Enabled Forms
-description: null
-seo-description: null
+description: Use the Forms service to render forms that have usage rights applied to them. You can render rights-enabled forms using the Java API and Web Service API.
+seo-description: Use the Forms service to render forms that have usage rights applied to them. You can render rights-enabled forms using the Java API and Web Service API.
 uuid: ce5e4be6-d9b0-4989-a0e1-a8c3b98aed77
 contentOwner: admin
 content-type: reference

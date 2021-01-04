@@ -1,8 +1,8 @@
 ---
 title: Optimizing the Performance of theForms Service
 seo-title: Optimizing the Performance of theForms Service
-description: null
-seo-description: null
+description: Set run-time options when rendering a form and store XDP files in the repository to optimize the performance of the Forms service.
+seo-description: Set run-time options when rendering a form and store XDP files in the repository to optimize the performance of the Forms service.
 uuid: 9040c09a-e5d0-432b-b1c5-ad46ab57c4fc
 contentOwner: admin
 content-type: reference

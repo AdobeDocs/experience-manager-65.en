@@ -1,8 +1,8 @@
 ---
 title: Validating DDX Documents
 seo-title: Validating DDX Documents
-description: null
-seo-description: null
+description: Validate a DDX document programmatically using the Java API and the Web Service API.
+seo-description: Validate a DDX document programmatically using the Java API and the Web Service API.
 uuid: da668170-d2e9-4fff-aef5-432a856bd0bd
 contentOwner: admin
 content-type: reference

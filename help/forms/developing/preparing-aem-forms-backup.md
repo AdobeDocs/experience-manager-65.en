@@ -1,8 +1,8 @@
 ---
 title: Preparing AEM Forms for Backup
 seo-title: Preparing AEM Forms for Backup
-description: null
-seo-description: null
+description: Learn how to use the Backup and Restore service to enter and leave the Backup mode for AEM Forms server using the Java API and the Web Service API.
+seo-description: Learn how to use the Backup and Restore service to enter and leave the Backup mode for AEM Forms server using the Java API and the Web Service API.
 uuid: b8ef2bed-62e2-4000-b55a-30d2fc398a5f
 contentOwner: admin
 content-type: reference

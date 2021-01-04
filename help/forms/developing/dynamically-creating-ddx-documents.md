@@ -1,8 +1,8 @@
 ---
 title: Dynamically Creating DDX Documents
 seo-title: Dynamically Creating DDX Documents
-description: null
-seo-description: null
+description: Create a DDX document dynamically using the Java API and Web Service API. Dynamically creating a DDX document enables you to use values in the DDX document that are obtained during run-time.
+seo-description: Create a DDX document dynamically using the Java API and Web Service API. Dynamically creating a DDX document enables you to use values in the DDX document that are obtained during run-time.
 uuid: b73e8069-6c9f-4517-a0ae-f3d503191d2d
 contentOwner: admin
 content-type: reference
