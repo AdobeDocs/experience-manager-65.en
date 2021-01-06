@@ -59,7 +59,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
   ![Screenshot to illustrate the issue of missing menu in Classic UI](assets/33949_missing_menu.png)
 
 * A [!DNL Content Fragment] cannot be used as a `TemplatedResource` as it fails in `ContentFragmentUsePojo` (NPR-33911).
-* Synchronous and asynchronous move operations can lead to errors due to concurrent transfers. Page move operations are restricted to synchronous move only. It prevents concurrent move of pages (NPR-33875).
+* Synchronous and asynchronous move operations can lead to errors due to concurrent transfers. Page move operations are restricted to asynchronous move only. It prevents concurrent move of pages (NPR-33875).
 * [!UICONTROL Manage Publication] operation to replicate content from Author to Publish instance fails and generates a JavaScript error (NPR-33872).
 * When multiple pages or assets are selected to create versions, the new version is created only for the last selected page or asset (NPR-33866).
 * Move a blueprint page with live copies to another folder. When moving it to the original folder, the move operation fails without any error (NPR-33864).
