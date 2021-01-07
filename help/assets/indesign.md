@@ -158,15 +158,15 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
 
 ### Configure Day CQ Link Externalizer {#configuring-day-cq-link-externalizer}
 
-If the [!DNL InDesign Server] and [!DNL Experience Manager] run on different hosts or either or both these applications do not run on default ports, configure [!UICONTROL Day CQ Link Externalizer] to set the host name, port, and content path for the [!DNL InDesign Server].
+If the [!DNL InDesign Server] and [!DNL Experience Manager] are on different hosts or one or both of these applications are not working on default ports, then configure [!UICONTROL Day CQ Link Externalizer] to set the host name, port, and content path for the [!DNL InDesign Server].
 
 1. Access the Web Console at `https://[aem_server]:[port]/system/console/configMgr`.
-1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and click **[!UICONTROL Edit]** to open it.
-1. Specify the host name and context path for the [!DNL Adobe InDesign Server] and click **Save**.
+1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**. Click **[!UICONTROL Edit]** to open.
+1. Link Externalizer settings help create absolutely URLs for the [!DNL Experience Manager] deployment and for the [!DNL InDesign Server]. Use **[!UICONTROL Domains]** field to specify the host name and the context path for the [!DNL Adobe InDesign Server]. Click **Save**.
 
-   ![chlimage_1-97](assets/chlimage_1-290.png)
+   ![Link externalizer setting](assets/link-externalizer-config.png)
 
-### Enable parallel job processing for [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server-s}
+### Enable parallel job processing for [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server}
 
 You can now enable parallel job processing for IDS. Determine the maximum number of parallel jobs (`x`) an [!DNL InDesign Server] can process:
 
