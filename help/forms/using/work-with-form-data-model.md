@@ -63,7 +63,7 @@ To add data model objects and services:
 
    >[!NOTE]
    >
-   >In addition to data model objects and services, OData service metadata document includes navigation properties that define association between two data model objects. For more information, see [Working with navigation properties of OData services](#navigation-properties-odata).
+   >In addition to data model objects and services, OData service metadata document includes navigation properties that define association between two data model objects. For more information, see [Working with navigation properties of OData services](#work-with-navigation-properties-of-odata-services).
 
 1. Tap **[!UICONTROL Save]** to save the form model object.
 
