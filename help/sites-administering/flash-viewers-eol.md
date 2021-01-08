@@ -13,7 +13,7 @@ discoiquuid: fe392c24-d01e-4d5b-9af9-9ec500adc61a
 
 # Flash Viewers End-of-Life Notice{#flash-viewers-end-of-life-notice}
 
-*Effective January 31, 2017, Adobe Dynamic Media Classic (Scene7) officially ended support for the Flash viewer platform.*
+*Effective January 31, 2017, Adobe Dynamic Media Classic (formerly Scene7) officially ended support for the Flash viewer platform.*
 
 *For more information about this important change, see the following FAQ website:*
 
