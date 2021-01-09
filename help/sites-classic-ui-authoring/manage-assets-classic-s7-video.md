@@ -1,9 +1,7 @@
 ---
 title: Video
 seo-title: Video
-description: Assets provides for centralized video asset management where you can upload videos directly to Assets for auto-encoding to Scene7 and access Scene7 videos directly from Assets for page authoring.
-seo-description: Assets provides for centralized video asset management where you can upload videos directly to Assets for auto-encoding to Scene7 and access Scene7 videos directly from Assets for page authoring.
-uuid: 46da7a0d-d17b-4716-a304-ce5496421b5a
+description: Assets provides for centralized video asset management where you can upload videos directly to Assets for auto-encoding to Dynamic Media Classic and access Dy videos directly from Assets for page authoring.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
@@ -17,8 +15,8 @@ Assets provides for centralized video asset management where you can upload vide
 
 Dynamic Media Classic video integration extends the reach of optimized video to all screens (auto device and bandwidth detection).
 
-* The Dynamic Media Classic (Scene7) video component automatically performs device and bandwidth detection to play the right format and right quality video across desktop, tablets and mobile.
-* Assets - You can include adaptive video sets rather than only single video assets. An adaptive video set is a container for all video renditions required to playback video seamlessly across multiple screens. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. You use an Adaptive Video Set, along with S7 video component, for adaptive video streaming across multiple screens including desktop, iOS, Android, Blackberry, and Windows mobile devices. See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
+* The Dynamic Media Classic video component automatically performs device and bandwidth detection to play the right format and right quality video across desktop, tablets and mobile.
+* Assets - You can include adaptive video sets rather than only single video assets. An adaptive video set is a container for all video renditions required to playback video seamlessly across multiple screens. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. You use an Adaptive Video Set, along with S7 video component, for adaptive video streaming across multiple screens including desktop, iOS, Android, Blackberry, and Windows mobile devices. See [Dynamic Media Classic documentation about adaptive video sets for more information](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html#video).
 
 ## About FFMPEG and Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -59,7 +57,7 @@ If you need a workflow or versioning for your assets, you should upload to Adobe
 
 If you do not need a workflow or versioning for your assets, you should upload your assets to Dynamic Media Classic. The following is the recommended workflow:
 
-1. In Dynamic Media Classic, [set up a scheduled FTP uploading and encoding to Dynamic Media Classic (system automated)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html).
+1. In the Dynamic Media Classic desktop app, [set up a scheduled FTP uploading and encoding to Dynamic Media Classic (system automated)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html).
 1. In AEM, access video assets in WCM in the **[!UICONTROL Dynamic Media Classic]** tab of the Content Finder.
 1. Author with the Dynamic Media Classic video component.
 
@@ -78,7 +76,7 @@ If you do not need a workflow or versioning for your assets, you should upload y
 
    >[!NOTE]
    >
-   >For more information about what the video presets mean, see the [Dynamic Media Classic documentation](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html).
+   >For more information about what the video presets mean, see [Video presets for encoding video files](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=en#video-presets-for-encoding-video-files).
    >
    >Adobe recommends that you select either both adaptive video sets when configuring the universal presets or select the **[!UICONTROL Adaptive Video Encoding]** option.
 
@@ -105,7 +103,7 @@ To upload your primary source video to Dynamic Media Classic from Adobe DAM:
 
 ### Foundation Video Component versus Dynamic Media Classic Video Component {#foundation-video-component-versus-scene-video-component}
 
-When using AEM, you have access to both the Video component available in Sites and the Dynamic Media Classic (Scene7) video component. These components are not interchangeable.
+When using AEM, you have access to both the Video component available in Sites and the Dynamic Media Classic video component. These components are not interchangeable.
 
 The Dynamic Media Classic video component only works for Dynamic Media Classic videos. The foundation component works with videos stored from AEM (using ffmpeg) and Dynamic Media Classic videos.
 
@@ -124,7 +122,7 @@ Even if using the Dynamic Media Classic video component is recommended for viewi
 
 ### AEM Video and Dynamic Media Classic Video comparison {#aem-video-and-scene-video-comparison}
 
-The following table provides a high level comparison of supported capabilties between the AEM Foundation Video component and the Scene7 Video component:
+The following table provides a high level comparison of supported capabilties between the AEM Foundation Video component and the Dynamic Media Classic Video component:
 
 |   |AEM Foundation Video |Dynamic Media Classic Video |
 |---|---|---|
@@ -155,8 +153,8 @@ The various video encodings are created according to the Dynamic Media Classic e
 
    | Property |Description |
    |---|---|
-   | Dynamic Media Classic (Scene7) Cloud Config |The cloud config to use for the encoding presets. |
-   | Dynamic Media Classic (Scene7) Encoding Preset |The encoding preset to map this video profile with. |
+   | Dynamic Media Classic Cloud Config |The cloud config to use for the encoding presets. |
+   | Dynamic Media Classic Encoding Preset |The encoding preset to map this video profile with. |
    | HTML5 video type |This property allows to set the value of the type property of the HTML5 video source element. This information is not provided by the Dynamic Media Classic encoding presets, but required for properly rendering the videos using HTML5 video element. A list for common formats is provided, but can be overwritten for other formats.  |
 
    Repeat this step for all encoding presets selected in the cloud config that you want to use in the video component.
@@ -178,7 +176,7 @@ The foundation video component must know about what video profiles to use in ord
 
 #### Checklist {#checklist}
 
-1. Create a Dynamic Media Classic (Scene7) cloud config. Make sure the video encoding presets are set and the importer is running.
+1. Create a Dynamic Media Classic cloud config. Make sure the video encoding presets are set and the importer is running.
 1. Create a Dynamic Media Classic video profile for each video encoding preset selected in the cloud config.
 1. The video profiles must be activated.
 1. Configure the design of the foundation video component on your page.

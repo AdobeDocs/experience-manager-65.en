@@ -345,8 +345,6 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0
 
 * When you save a new document security policy, Experience Manager Forms displays the `Relative validity period is required` error message (NPR-34679).
 
-* When you save a new document security policy, Experience Manager Forms displays the `Invalid filed value.Numeric value is required` error message (NPR-34678).
-
 * Document Security is not able to protect PDF 2.0 document (CQ-4305851).
 
 For information on security updates, see [Experience Manager security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
