@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Deploying Communities{#deploying-communities}
+# Deploying Communities {#deploying-communities}
 
 ## Prerequisites {#prerequisites}
 
