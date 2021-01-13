@@ -66,6 +66,7 @@ Some limitations, recommendations, and important points to keep in mind when wor
 
 * It is recommended to use XSD schema-based adaptive forms over XFA-based adaptive forms for configuring lazy loading on large forms. The performance gain due to lazy loading implementation in XFA-based adaptive forms is relatively less than gain in XSD-based adaptive forms.
 * Do not configure lazy loading on fragments in an adaptive form that use **[!UICONTROL Responsive -everything on one page without navigation]** layout for the root panel. As a result of the Responsive layout configuration, all fragments load simultaneously in an adaptive form. It can also result in degraded performance.
+* It is recommended not to configure lazy loading on the first fragment in an adaptive form.
 * It is recommended not to configure lazy loading on fragments in the first panel that renders on loading the adaptive form.
 * Lazy loading is supported up to two levels in the fragment hierarchy.
 * Ensure that fields marked as global are unique across an adaptive form.

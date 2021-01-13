@@ -82,6 +82,10 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 
    You can modify the value for the database shard. Restart the server to be able to use the new value for the database shard.
 
+   >[!NOTE]
+   >
+   > Ensure that your author and publish instance configurations point to the same shard. If you create multiple Adobe Sign configurations for an organization, ensure all the configurations utilize the same shard.
+
 1. Specify the **Client ID** (also referred to as Application ID) and **Client Secret** coped in step 8. Select the **[!UICONTROL Enable Adobe Sign for attachments also]** option to append files attached to an adaptive form to the corresponding [!DNL Adobe Sign] document sent for signing.
 
    Tap **[!UICONTROL Connect to Adobe Sign]**. When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Sign] application.
