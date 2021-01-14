@@ -217,7 +217,7 @@ The icon or abbreviation for the component is defined via JCR properties of the 
     * The recommended color is rgb(112, 112, 112) &gt; #707070
     * The background of standard component icons is transparent.
     * Only `.png` and `.svg` files are supported.
-    * If importing from the file system via Eclipse plugin, filenames need to be esacaped as `_cq_icon.png` or `_cq_icon.svg` for example.
+    * If importing from the file system via Eclipse plugin, filenames need to be escaped as `_cq_icon.png` or `_cq_icon.svg` for example.
     * `.png` takes precedent over `.svg` if both are present
 
 If none of the above properties ( `cq:icon`, `abbreviation`, `cq:icon.png` or `cq:icon.svg`) are found on the component:

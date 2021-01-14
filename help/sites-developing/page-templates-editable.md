@@ -216,7 +216,7 @@ To create a new folder, you can either do this:
 
 1. Go to **Global Navigation** -&gt; **Tools** &gt; **Configuration Browser**.
 
-   The existing folders are listed to the left including the **globa**l folder.
+   The existing folders are listed to the left including the **global** folder.
 
 1. Click **Create**.
 1. In the **Create Configuration** dialog the following fields need to be configured:
@@ -281,7 +281,7 @@ The following table details the necessary permissions for template editing.
    <td>Template authors that create, read, update, delete, and replicate templates in site specific <code>/conf</code> space</td>
   </tr>
   <tr>
-   <td>Annonymous Web User</td>
+   <td>Anonymous Web User</td>
    <td>read</td>
    <td>Anonymous Web User must read policies while rendering a page</td>
   </tr>

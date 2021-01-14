@@ -195,7 +195,7 @@ A template can have the following properties:
 
 * Description
 
-    * An optional description to provide more information about the template and its use, which can be seein for example in the **Create Page** wizard.
+    * An optional description to provide more information about the template and its use, which can be seen for example in the **Create Page** wizard.
 
 To view and/or edit the properties:
 
@@ -347,7 +347,7 @@ While the **Page Policy** option on the **Page Information** menu allows you to 
 
 ### Editing a Template - Structure - Template Author {#editing-a-template-structure-template-author}
 
-In **Structure** mode you define components and content for your template and define policy for the template and its compontnes.
+In **Structure** mode you define components and content for your template and define policy for the template and its components.
 
 * Components defined in the template structure cannot be moved on a resulting page nor deleted from any resulting pages.
 * If you want page authors to be able to add and remove components, add a paragraph system to the template.
@@ -386,7 +386,7 @@ In **Structure** mode of the template editor:
 
   >[!NOTE]
   >
-  >Although not identical, adding components and assets to a template has many similiarities to similar actions when [page authoring](/help/sites-authoring/editing-content.md).
+  >Although not identical, adding components and assets to a template has many similarities to similar actions when [page authoring](/help/sites-authoring/editing-content.md).
 
 * **Component Actions**
 
@@ -482,7 +482,7 @@ In **Structure** mode of the template editor:
 
   >[!CAUTION]
   >
-  >Note that in AEM crop ratios are defined as **height/width**. This differs from the conventional definition of width/height and is done for legacy compatability reasons. The page authoring users will not be aware of any difference provided you define the **Name** clearly as this is what is displayed in the UI.
+  >Note that in AEM crop ratios are defined as **height/width**. This differs from the conventional definition of width/height and is done for legacy compatibility reasons. The page authoring users will not be aware of any difference provided you define the **Name** clearly as this is what is displayed in the UI.
 
   >[!NOTE]
   >
@@ -558,7 +558,7 @@ In **Structure** mode of the template editor:
 
   ![chlimage_1-147](assets/chlimage_1-147.png)
 
-  To save space, the layout container does not grow to accomodate the list of allowed components. Rather the container becomes a scrollable list.
+  To save space, the layout container does not grow to accommodate the list of allowed components. Rather the container becomes a scrollable list.
 
   Components that are configurable are shown with a **Policy** icon, which can be tapped or clicked to edit the policy and properties of that component.
 
