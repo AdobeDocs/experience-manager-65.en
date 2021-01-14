@@ -382,13 +382,13 @@ To enable the authentication handler on publish, simply open the OSGi config and
 * Select to open the configuration for edit.
 * Select **[!UICONTROL Save]**.
 
-![chlimage_1-489](assets/chlimage_1-489.png)
+![graniteoauth](assets/graniteoauth.png)
 
 >[!CAUTION]
 >
 >Be careful to not confuse the authentication handler with a Facebook or Twitter instance of *Adobe Granite OAuth Application and Provider*.
 
-![chlimage_1-490](assets/chlimage_1-490.png)
+![graniteoauth1](assets/graniteoauth1.png)
 
 ### Adobe Granite OAuth Application and Provider {#adobe-granite-oauth-application-and-provider}
 
@@ -405,7 +405,7 @@ To locate the created instance for a Facebook or Twitter app:
 
    * Locate the instance where **[!UICONTROL Client ID]** matches the **[!UICONTROL App ID]**.
 
-     ![chlimage_1-491](assets/chlimage_1-491.png)
+     ![graniteoauth2](assets/graniteoauth2.png)
 
      Except the following properties, leave the other properties of the config  unaltered:
 
@@ -485,7 +485,7 @@ On an author instance, signed in with administrative privileges:
 
 * For the **name** `oauthid-123`, replace *123* with the Facebook ***App ID*** or Twitter ***Consumer (API) Key*** that is the value of the **Client ID** in the [Adobe Granite OAuth Application and Provider](social-login.md#adobe-granite-oauth-application-and-provider) configuration.
 
-  ![chlimage_1-492](assets/chlimage_1-492.png)
+  ![graniteoauth-crxde](assets/graniteoauth-crxde.png)
 
 For additional information and tools, refer to [Oak Queries and Indexing](../../help/sites-deploying/queries-and-indexing.md).
 

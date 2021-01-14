@@ -11,12 +11,12 @@ discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 
 # Video {#video}
 
-Assets provides for centralized video asset management where you can upload videos directly to Assets for auto-encoding to Dynamic Media Classic (Scene7) and access Dynamic Media Classic videos directly from Assets for page authoring.
+Assets provides for centralized video asset management where you can upload videos directly to Assets for auto-encoding to Dynamic Media Classic and access Dynamic Media Classic videos directly from Assets for page authoring.
 
 Dynamic Media Classic video integration extends the reach of optimized video to all screens (auto device and bandwidth detection).
 
 * The **[!UICONTROL Scene7 Video]** component automatically performs device and bandwidth detection to play the right format and right quality video across desktop, tablets and mobile.
-* Assets - You can include adaptive video sets rather than only single video assets. An adaptive video set is a container for all video renditions required to playback video seamlessly across multiple screens. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. You use an Adaptive Video Set, along with S7 video component, for adaptive video streaming across multiple screens including desktop, iOS, Android, Blackberry, and Windows mobile devices. See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
+* Assets - You can include adaptive video sets rather than only single video assets. An adaptive video set is a container for all video renditions required to playback video seamlessly across multiple screens. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. You use an Adaptive Video Set, along with S7 video component, for adaptive video streaming across multiple screens including desktop, iOS, Android, Blackberry, and Windows mobile devices.
 
 ## About FFMPEG and Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -53,11 +53,11 @@ If you need a workflow or versioning for your assets, you should upload to Adobe
 1. In AEM, access video assets in WCM in the **[!UICONTROL Movies]** tab of the Content Finder.
 1. Author with **[!UICONTROL Scene7 Video]** or **[!UICONTROL Foundation Video]** component.
 
-### If you are uploading your video to Scene7 {#if-you-are-uploading-your-video-to-scene}
+### If you are uploading your video to Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
 
 If you do not need a workflow or versioning for your assets, you should upload your assets to Scene7. The following is the recommended workflow:
 
-1. In Dynamic Media Classic, [set up a scheduled FTP uploading and encoding to Scene7 (system automated)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html).
+1. In Dynamic Media Classic, [set up a scheduled FTP uploading and encoding to Scene7 (system automated)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
 1. In AEM, access video assets in WCM in the **[!UICONTROL Scene7]** tab of the Content Finder.
 1. Author with the **[!UICONTROL Scene7 Video]** component.
 
@@ -78,7 +78,7 @@ To configure universal presets:
 
    >[!NOTE]
    >
-   >For more information about what the video presets mean, see the [Dynamic Media Classic documentation](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html).
+   >For more information about what the video presets mean, see the [Dynamic Media Classic documentation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
    >Adobe recommends that you select either both adaptive video sets when configuring the universal presets or select the **[!UICONTROL Adaptive Video Encoding]** option.
 
@@ -128,7 +128,7 @@ The following table provides a high level comparison of supported capabilties be
 | Approach |HTML5 first approach. Flash is only used for non-HTML5 fallback. |Flash on most desktops. HTML5 is used for mobile and tablets. |
 | Delivery |Progressive |Adaptive Streaming |
 | Tracking |Yes |Yes |
-| Extensibility |Yes |Yes (with Scene7 viewer SDK) |
+| Extensibility |Yes |No |
 | Mobile Video |Yes |Yes |
 
 ### Setting Up {#setting-up}

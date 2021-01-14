@@ -1,8 +1,8 @@
 ---
 title: Invoking AEM Forms using Remoting
 seo-title: Invoking AEM Forms using Remoting
-description: null
-seo-description: null
+description: Use Remoting to invoke an AEM Forms process to invoke processes created in Workbench. You can invoke a AEM Forms process from a client application built with Flex.
+seo-description: Use Remoting to invoke an AEM Forms process to invoke processes created in Workbench. You can invoke a AEM Forms process from a client application built with Flex.
 uuid: 592d1519-c38b-4b33-8cf3-61e2bff81501
 contentOwner: admin
 content-type: reference

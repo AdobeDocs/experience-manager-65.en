@@ -397,7 +397,7 @@ When you create or edit image presets, you have the options described in this se
     </ul>
     <div>
       Sharpening is described in
-     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/s7_sharpening_images.pdf">Sharpening Images</a>.
+     <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/sharpening_images.pdf">Sharpening Images</a>.
     </div> </td>
   </tr>
   <tr>
@@ -417,7 +417,7 @@ When you create or edit image presets, you have the options described in this se
   </tr>
   <tr>
    <td><strong>Image Modifier</strong></td>
-   <td><p>Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the <strong>Image Modifiers</strong> field. These parameters are defined in the <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">Image Server Protocol command reference</a>.</p> <p>Important: The following functionality listed in the API is not supported:</p>
+   <td><p>Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the <strong>Image Modifiers</strong> field. These parameters are defined in the <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api">Image Server Protocol command reference</a>.</p> <p>Important: The following functionality listed in the API is not supported:</p>
     <ul>
      <li>Basic templating and text rendering commands: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> and <code>textPs=</code></li>
      <li>Localization commands: <code>locale=</code> and <code>req=xlate</code></li>
@@ -434,7 +434,7 @@ When you create or edit image presets, you have the options described in this se
 
 ## Defining image preset options with Image Modifiers {#defining-image-preset-options-with-image-modifiers}
 
-In addition to the options available in the Basic and Advanced tabs, you can define image modifiers to give you more options when defining image presets. Image Rendering relies on the Scene7 image rendering API and are defined in detail in the [HTTP Protocol Reference](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/c_http_protocol_reference.html).
+In addition to the options available in the Basic and Advanced tabs, you can define image modifiers to give you more options when defining image presets. Image Rendering relies on the image rendering API that is defined in detail in the [HTTP Protocol Reference](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api).
 
 The following are some basic examples of what you can do with image modifiers.
 
@@ -442,7 +442,7 @@ The following are some basic examples of what you can do with image modifiers.
 >
 >Some image modifiers [cannot be used in AEM](#advanced-tab-options).
 
-* [op_invert](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_invert.html) - Inverts each color component for a negative image effect.
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api) - Inverts each color component for a negative image effect.
 
   ```xml
   &op_invert=1
@@ -450,7 +450,7 @@ The following are some basic examples of what you can do with image modifiers.
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_blur.html) - Applies a blur filter to the image.
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html#image-serving-api) - Applies a blur filter to the image.
 
   ```xml
   &op_blur=7
@@ -466,7 +466,7 @@ The following are some basic examples of what you can do with image modifiers.
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_brightness.html) - Decreases or increases the brightness.
+* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html#image-serving-api) - Decreases or increases the brightness.
 
   ```xml
   &op_brightness=58
@@ -474,7 +474,7 @@ The following are some basic examples of what you can do with image modifiers.
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_opac.html) - Adjusts image opacity. Lets you decrease the foreground opacity.
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html#image-serving-api) - Adjusts image opacity. Lets you decrease the foreground opacity.
 
   ```xml
   opac=29

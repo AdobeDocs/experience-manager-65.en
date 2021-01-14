@@ -24,14 +24,15 @@ Select **Layout** from the drop-down list that appears at the top of the adaptiv
 1. In Layout mode, tap the component to resize. The blue dots display at the start and end of the responsive grid.
 1. Drag-and drop the blue dots to define the position of the component in the responsive grid.
 
-   ![Resizing using Layout mode](assets/layout_mode_resize_new_updated.png)
+   ![Resizing using Layout mode](assets/layout_mode_resize_new_updated1.png)
 
    The toolbar that displays after tapping components consists of the following options:
 
-    * **Parent:** Select the parent of a component.
-    * **Float to new line:** Shift the component to the next line if there are multiple components within the same line.
+    * **[!UICONTROL Parent]**: Select the parent of a component.
+    * **[!UICONTROL Revert breakpoint layout]**: Undo all resizing changes and apply default layout to the component.
+    * **[!UICONTROL Float to new line]**: Shift the component to the next line if there are multiple components within the same line.
 
-   You can undo all resizing changes and apply default layout to the panel containing resized components using the **[!UICONTROL Revert breakpoint layout]** ( ![Revert Breakpoint](assets/reverttopreviouslypublishedversion.png)) option. Tap the parent of the resized component to view the option.
+   You can also use the **[!UICONTROL Revert breakpoint layout]** ( ![Revert Breakpoint](assets/reverttopreviouslypublishedversion.png)) option at the panel-level to undo all resizing changes.
 
    >[!NOTE]
    >

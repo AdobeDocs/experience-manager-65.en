@@ -33,11 +33,11 @@ Both the aspect ratio and keyword criteria apply to panoramic assets for the ass
 
 To upload assets for use with the Panoramic Image viewer, see [Uploading Assets](/help/assets/manage-assets.md#uploading-assets).
 
-## Configuring Dynamic Media Classic (Scene7) {#configuring-dynamic-media-classic-scene}
+## Configuring Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
-For the Panoramic Image viewer to work properly within AEM, you must synchronize the Panoramic Image viewer presets with Dynamic Media Classic (Scene7) and Dynamic Media Classic (Scene7)-specific metadata so the viewer presets get updated in the JCR. To accomplish this, configure Dynamic Media Classic (Scene7) in the following manner:
+For the Panoramic Image viewer to work properly within AEM, you must synchronize the Panoramic Image viewer presets with Dynamic Media Classic and Dynamic Media Classic-specific metadata so the viewer presets get updated in the JCR. To accomplish this, configure Dynamic Media Classic in the following manner:
 
-1. [Log into your instance of Dynamic Media Classic (Scene7)](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) for each company account.
+1. [Log into your instance of Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) for each company account.
 
 1. Near the upper-right corner of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server.]**
 1. On the Image Server Publish page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving.]**
@@ -45,7 +45,7 @@ For the Panoramic Image viewer to work properly within AEM, you must synchronize
 1. On the same Image Server Publish page, locate the heading **[!UICONTROL Request Attributes.]**
 1. Under the Request Attributes heading, locate **[!UICONTROL Reply Image Size Limit.]** Then, in the associated Width and Height fields, increase the maximum allowable image size for panoramic images.
 
-   Dynamic Media Classic (Scene7) has a limit of 25,000,000 pixels. The maximum allowable size for images with a 2:1 aspect ratio is 7000 x 3500. However, for typical desktop screens, 4096 x 2048 pixels is sufficient.
+   Dynamic Media Classic has a limit of 25,000,000 pixels. The maximum allowable size for images with a 2:1 aspect ratio is 7000 x 3500. However, for typical desktop screens, 4096 x 2048 pixels is sufficient.
 
    >[!NOTE]
    >
@@ -66,11 +66,11 @@ For the Panoramic Image viewer to work properly within AEM, you must synchronize
 
 If you dropped an image into the Panoramic Media component in your WCM and the component placeholder collapsed, you may want to troubleshoot the following:
 
-* If you experience a 403 Forbidden error, it may have been caused by the requested image size being too large. Review the **[!UICONTROL Reply Image Size Limit]** settings in [Configuring Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* If you experience a 403 Forbidden error, it may have been caused by the requested image size being too large. Review the **[!UICONTROL Reply Image Size Limit]** settings in [Configuring Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 * For an "Invalid lock" on the asset or "Parsing error" displayed on the page, check Request Obfuscation Mode and Request Locking Mode to ensure they are disabled.
 * For a tainted canvas error, setup a Rule Set Definition File Path and Invalidate CTN for the previous requests for the image asset.
-* If image quality becomes very low after an image request with sizing above the supported limit, check that the **[!UICONTROL JPEG Encoding Attributes > Quality]** setting is not empty. A typical setting for the **[!UICONTROL Quality]** field is `95`. You can find the setting on the Image Server Publish page. To access the page, see [Configuring Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* If image quality becomes very low after an image request with sizing above the supported limit, check that the **[!UICONTROL JPEG Encoding Attributes > Quality]** setting is not empty. A typical setting for the **[!UICONTROL Quality]** field is `95`. You can find the setting on the Image Server Publish page. To access the page, see [Configuring Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 ## Previewing Panoramic Images {#previewing-panoramic-images}
 

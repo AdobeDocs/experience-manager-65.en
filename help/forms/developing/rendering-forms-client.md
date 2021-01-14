@@ -1,8 +1,8 @@
 ---
 title: Rendering Forms at the Client
 seo-title: Rendering Forms at the Client
-description: null
-seo-description: null
+description: Optimize the delivery of PDF content and improve the Forms service’s ability to handle network load by using the client-side rendering capability of Acrobat or Adobe Reader
+seo-description: Optimize the delivery of PDF content and improve the Forms service’s ability to handle network load by using the client-side rendering capability of Acrobat or Adobe Reader
 uuid: 09bcc23d-28b0-473a-87f1-bc17e87620f4
 contentOwner: admin
 content-type: reference

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 ---
 
-# Personalization{#personalization}
+# Personalization {#personalization}
 
 ## What is Personalization? {#what-is-personalization}
 
@@ -21,54 +21,54 @@ Personalization centers on providing the user with a tailor-made environment dis
 
 There are three main elements involved in personalization:
 
-**Users**
+### Users {#users}
 
-* have profiles, both individual and group. These profiles contain characteristics (such as job description, location, interests) which can be used to personalize the content they can see.
-* take actions. These can then be analyzed and matched against behavior rules to tailor the content they see.
+* Have profiles, both individual and group. These profiles contain characteristics (such as job description, location, interests) which can be used to personalize the content they can see.
+* Take actions. These can then be analyzed and matched against behavior rules to tailor the content they see.
 
-**Content**
+### Content {#content}
 
-* is what the user wants to see. Preferably content of interest and use to them for fulfilling their tasks.
-* can be categorized, and therefore made available to users according to predefined rules.must be dynamic; in other words the content
-* must, in some way, be dependent upon the user - if every user would see the same content, then personalization would be redundant.
+* Is what the user wants to see. Preferably content of interest and use to them for fulfilling their tasks.
+* Can be categorized, and therefore made available to users according to predefined rules.must be dynamic; in other words the content
+* Must, in some way, be dependent upon the user - if every user would see the same content, then personalization would be redundant.
 
-**Rules**
+### Rules {#rules}
 
-* define how personalization actually happens - which content the user can see, and when.
+* Define how personalization actually happens - which content the user can see, and when.
 
 Personalization can be either:
 
-**Explicit**
+#### Explicit {#explicit}
 
 * Customization: whereby the user makes selections from a choice of content sources.
 
-**Implicit**
+#### Implicit {#implicit}
 
 * Rules based: business managers define specific rules for actions based upon specific profiles and/or behavior.
 * Simple filtering: selections are made on the basis of predefined profiles at user and/or group level.
-* Collaborative / recommendation filtering: user behavior is registered according to predefined rules. These rules are based on behavior observed with like-minded individuals. The information collected is used to tailor the information displayed to the user, particularly in the form of recommendations.
+* Collaborative/recommendation filtering: user behavior is registered according to predefined rules. These rules are based on behavior observed with like-minded individuals. The information collected is used to tailor the information displayed to the user, particularly in the form of recommendations.
 
-## How and when can Personalization be used? {#how-and-when-can-personalization-be-used}
+## How and When can Personalization be Used? {#how-and-when-can-personalization-be-used}
 
 Personalization can be used in many cases, for example:
 
-**Intranet pages**
+### Intranet Pages {#intranet-pages}
 
 * Content can be proffered based on the location, department, and/or role of a user - already defined within an internal network.
 * Dependent on the choice available, the user can make further selections.
 
-**Specific, limited, target user groups (extranets)**
+### Specific, Limited, Target User Groups - Extranets {#extranets}
 
 * Users require a login for authorization; this will be linked to a profile providing information required for personalization; possibly details such as their location, relationship to the product, usage history, budgeting responsibilities, etc.
 * Such instances can range over sites such as:
 * Companies which provide websites to a highly specialized section of their market e.g. a pharmaceutical company providing a specialized website for physicians.
 * Companies which provide websites allowing their customer to view current account and billing information; for example telephone providers.
 
-**Sales and Distribution website**
+### Sales and Distribution Website {#sales-site}
 
 * Sales and distribution websites, such as Amazon, can combine a user profile, the user's sales history and their browsing history to make suggestions as to what might interest the user next.
 
-**Search websites**
+### Search Websites {#search-site}
 
 * Many of the major search engine websites have very powerful analytical tools which record user behavior, the search terms they use and the websites they actually visit. This is then used to customize the content provided - particularly with regard to displaying advertisements.
 
@@ -86,31 +86,35 @@ The following are reasons why personalization should be used:
 
 When using personalization, consider the following:
 
-**Performance**
+#### Performance {#performance}
 
 * Naturally the extra analysis and evaluation has an impact on performance. However, the methods used are highly sophisticated and can be optimized to minimize the impact.
 
-**Authorization**
+#### Authorization {#authorization}
 
 * Personalization requires a login mechanism as the website must be able to identify the user.
 
-**Caching**
+#### Caching {#caching}
 
 * Caching is an aspect which the user will see in terms of performance and accuracy - how quickly does the website deliver personalized content, and is it always current.
-* Caching is a key consideration when configuring personalization and time must be taken to ensure that the correct implementation is used. This will be discussed in more detail later.
+* Caching is a key consideration when configuring personalization and time must be taken to ensure that the correct implementation is used.
 
-**Accuracy of Rules**
+>[!TIP]
+>
+>Personalization's effect on performance and related caching topics are discussed further in the document [Performance Optimization.](/help/sites-deploying/configuring-performance.md)
+
+#### Accuracy of Rules {#accuracy}
 
 * Personalization realized by tracking the user's behavior, or setting rules based on the user's profile, must be accurate and logical.
 * There is nothing more frustrating to the user than having content forced upon, or denied to, them because of the inaccurate logic of a rule.
 * Therefore rules must be well thought-out - with the user's requirements in the foreground. This can take a lot of effort, and is not to be under-estimated; defining the business rules often outweighs the technical effort when implementing personalization.
 
-**When to use**
+#### When to Use {#when-to-use}
 
 * Like many features on the web, personalization should be used with care. Will its use really benefit the user? should always be the first consideration - or whether the desired goal can be achieved with less effort by another method. Personalization can run the risk of being a feature that users configure once (to see how it works) and only once - as it brings them no real advantages.
 * Personalization is only meaningful when the content is dynamic - dependent on the user in some way. If all users see the same content, then the personalization is redundant.
 
-**Confidentiality**
+#### Confidentiality {#confidentiality}
 
 * Many users are concerned about Data Protection and Security. In particular concerning data retrieved when tracking their behavior when surfing the web.
 
@@ -149,7 +153,7 @@ Various components are provided with AEM for personalization. Some allow users t
 | Profile Display Name |Name to be displayed. |
 | Profile E-mail |Input of an e-mail address. |
 | Profile Gender |Allows input of the gender. |
-| Profile Primary Phonenumber |Allows input of a telephone number. |
+| Profile Primary Phone Number |Allows input of a telephone number. |
 | Profile Primary URL |Allows input of a URL. |
 | Profile General Text property |Profile properties. |
 | Sign-in |Allows you to submit a username and password when logging in. |
@@ -165,7 +169,7 @@ With [AEM Communities 6.1](/help/communities/overview.md) extension, this issue 
 
 Without Communities extension, various methods to explore for addressing the issue of UGC consistency are :
 
-* synchronize the multiple publish instances when necessary
-* send the UGC from the publish instance to the author environment, from where it can be published in a manner similar to publishing page content
+* Synchronize the multiple publish instances when necessary
+* Send the UGC from the publish instance to the author environment, from where it can be published in a manner similar to publishing page content
 
 The method used to achieve UGC consistency across a publish environment consisting of multiple publish instances should be carefully designed and tested for performance as well as consistency.

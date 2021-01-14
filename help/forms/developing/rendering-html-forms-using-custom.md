@@ -1,8 +1,8 @@
 ---
 title: Rendering HTML Forms Using Custom CSS Files
 seo-title: Rendering HTML Forms Using Custom CSS Files
-description: null
-seo-description: null
+description: Use the Forms service to refer to custom CSS files to render HTML forms in response to an HTTP request from a web browser. You can render an HTML form that uses a CSS file using the Java API and Web Service API.
+seo-description: Use the Forms service to refer to custom CSS files to render HTML forms in response to an HTTP request from a web browser. You can render an HTML form that uses a CSS file using the Java API and Web Service API.
 uuid: a44e96f1-001d-48a2-8c96-15cb9d0c71b3
 contentOwner: admin
 content-type: reference

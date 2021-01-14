@@ -85,7 +85,7 @@ This is the only option available if you are viewing image sets, spin sets, or m
 
 This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
-**[!UICONTROL Image Modifiers]** &ndash; You can change image effects by supplying additional image commands. These are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL Image Modifiers]** &ndash; You can change image effects by supplying additional image commands. These are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
@@ -131,7 +131,7 @@ You can edit the following [!UICONTROL Advanced] settings by clicking **[!UICONT
 
 In AEM 6.2, when you install [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480), you can control whether a video is delivered over a secure SSL connection (HTTPS) or an insecure connection (HTTP). By default, the video delivery protocol is automatically inherited from the protocol of the embedding web page. If the web page is loaded over HTTPS, the video is also delivered over HTTPS. And vice versa, if the web page is on HTTP, the video is delivered over HTTP. In most cases, this default behavior is fine and there is no need to make any configuration changes. However, you can override this default behavior by appending `VideoPlayer.ssl=on` to the end of a URL path or to the list of other viewer configuration parameters in an embed code snippet, to force secure video delivery.
 
-For more information about secure video delivery and using the `VideoPlayer.ssl` configuration attribute in your URL path, see [Secure Video Delivery](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) in the Viewers Reference Guide. Besides the Video viewer, secure video delivery is available for Mixed Media viewer and Interactive Video viewer.
+For more information about secure video delivery and using the `VideoPlayer.ssl` configuration attribute in your URL path, see [Secure Video Delivery](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) in the Viewers Reference Guide. Besides the Video viewer, secure video delivery is available for Mixed Media viewer and Interactive Video viewer.
 
 ### Interactive Media Component {#interactive-media-component}
 

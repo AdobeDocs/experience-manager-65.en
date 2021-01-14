@@ -1,8 +1,8 @@
 ---
 title: Working with AEM Forms Repository
 seo-title: Working with AEM Forms Repository
-description: null
-seo-description: null
+description: Manage AEM Forms repository to create folders, write, list, read, update, and search resources using the Java API and Web Service API. In addition, learn how to create resource relationships, lock and delete resources.
+seo-description: Manage AEM Forms repository to create folders, write, list, read, update resources, and search resources using the Java API and Web Service API. In addition, learn how to create resource relationships, lock and delete resources.
 uuid: 6ead49f9-ca0d-4ee4-86a6-0a9ced6ec4f8
 contentOwner: admin
 content-type: reference

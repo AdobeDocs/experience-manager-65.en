@@ -1,8 +1,8 @@
 ---
 title: Converting Between File Formats and PDF
 seo-title: Converting Between File Formats and PDF
-description: null
-seo-description: null
+description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
+seo-description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
 uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference

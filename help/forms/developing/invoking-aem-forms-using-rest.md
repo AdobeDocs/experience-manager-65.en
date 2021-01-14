@@ -1,8 +1,8 @@
 ---
 title: Invoking AEM Forms using REST Requests
 seo-title: Invoking AEM Forms using REST Requests
-description: null
-seo-description: null
+description: Invoke processes created in Workbench using REST requests.
+seo-description: Invoke processes created in Workbench using REST requests.
 uuid: 3a19a296-f3fe-4e50-9143-b68aed37f9ef
 contentOwner: admin
 content-type: reference

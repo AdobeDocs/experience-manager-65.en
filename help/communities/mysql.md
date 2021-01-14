@@ -208,7 +208,7 @@ When MySQL runs on a server different from AEM, the server hostname must be spec
 * Locate the `AEM Communities ScormEngine Service`
 * Select the edit icon
 
-  ![chlimage_1-337](assets/chlimage_1-337.png)
+  ![scrom-engine](assets/scrom-engine.png)
 
 * Verify the following parameter values are consistent with the [JDBC Connection](#configurejdbcconnectionspool) config:
   * **[!UICONTROL JDBC connection URI]**: `jdbc:mysql://localhost:3306/ScormEngineDB` *ScormEngineDB* is the default database name in the SQL scripts

@@ -70,7 +70,7 @@ Because assets do not need to be transmitted over a network, overall performance
 
 ### Process renditions {#processing-renditions}
 
-After you load the assets into the system, you need to process them through the [!UICONTROL DAM Update Asset] workflow to extract metadata and generate renditions. Before performing this step, you need to duplicate and modify the [!UICONTROL DAM Update Asset] workflow to fit your needs. The out-of-the-box workflow contains many steps that may not necessary for you, such as Scene7 PTIFF generation or [!DNL InDesign Server] integration.
+After you load the assets into the system, you need to process them through the [!UICONTROL DAM Update Asset] workflow to extract metadata and generate renditions. Before performing this step, you need to duplicate and modify the [!UICONTROL DAM Update Asset] workflow to fit your needs. The out-of-the-box workflow contains many steps that may not necessary for you, such as Dynamic Media PTIFF generation or [!DNL InDesign Server] integration.
 
 After you have configured the workflow according to your needs, you have two options for executing it:
 
