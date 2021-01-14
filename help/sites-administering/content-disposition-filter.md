@@ -15,7 +15,7 @@ discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 
 Content disposition filter is a security feature against XSS attacks on SVG files.
 
-Once installed, the filter blocks access to all assets. For example, you could not view a pfd online. This section describes how to configure the filter to your needs.
+Once installed, the filter blocks access to all assets. For example, you could not view a PDF online. This section describes how to configure the filter to your needs.
 
 ## Configure Content Disposition Filter {#configure-content-disposition-filter}
 
