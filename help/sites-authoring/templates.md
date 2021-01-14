@@ -142,7 +142,7 @@ When creating a new editable template you:
 
 >[!CAUTION]
 >
->Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.
+>Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template. For internalization purposes, the [localization features of the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) are recommended.
 
 ### Creating a Template Folder - Admin {#creating-a-template-folder-admin}
 
@@ -202,6 +202,12 @@ To view and/or edit the properties:
 1. In the **Templates Console**, select the template.
 1. Select **View Properties** from the toolbar or quick options to open the dialog.
 1. You can now view or edit the template properties.
+
+>[!NOTE]
+>
+>Templates are powerful tools to streamline your page creation workflow. However too many templates can overwhelm the authors and make page creation confusing. A good rule of thumb is to keep the number of templates under 100.
+>
+>Adobe does not recommend having more than 1000 templates due to potential performance impacts.
 
 >[!NOTE]
 >

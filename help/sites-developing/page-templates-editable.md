@@ -126,6 +126,16 @@ When creating a new editable template you:
 
    For technical details on creating pages with editable templates, see [Resultant Content Pages](/help/sites-developing/page-templates-editable.md#resultant-content-pages) in this document.
 
+>[!TIP]
+>
+>Never enter any information that needs to be internationalized into a template. For internalization purposes, the [localization feature of the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) are recommended.
+
+>[!NOTE]
+>
+>Templates are powerful tools to streamline your page creation workflow. However too many templates can overwhelm the authors and make page creation confusing. A good rule of thumb is to keep the number of templates under 100.
+>
+>Adobe does not recommend having more than 1000 templates due to potential performance impacts.
+
 >[!NOTE]
 >
 >The editor client library assumes the presence of the `cq.shared` namespace in content pages, and if it is absent the JavaScript error `Uncaught TypeError: Cannot read property 'shared' of undefined` will result.
@@ -133,10 +143,6 @@ When creating a new editable template you:
 >All sample content pages contain `cq.shared`, so any content based on them automatically includes `cq.shared`. However, if you decide to create your own content pages from scratch without basing them on sample content, you must make sure to include the `cq.shared` namespace.
 >
 >See [Using Client-Side Libraries](/help/sites-developing/clientlibs.md) for further information.
-
->[!CAUTION]
->
->Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.
 
 ## Template Folders {#template-folders}
 
