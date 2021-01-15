@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Understand, apply, and curate Smart Tags {#enhanced-smart-tags}
 
-Organizations that deal with digital assets increasingly use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for digital assets of a particular class. Tagging assets with taxonomy-controlled vocabulary ensures that they can be easily identified and retrieved by tag-based searches.
+Organizations that deal with digital assets increasingly use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for digital assets of a particular class. Tagging assets with taxonomy-controlled vocabulary ensures that assets are easily identified and retrieved.
 
 Compared to natural language vocabularies, tagging digital assets based on business taxonomy helps align them with a company's business and ensures that the most relevant assets appear in searches.
 
@@ -18,7 +18,7 @@ Once a tag is trained and ready, the service can now apply these tags on assets 
 
 In the background, the Smart Content Service uses Adobe Sensei AI framework to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets.
 
-Smart Content Service is a cloud service that is hosted on Adobe I/O. To use it in [!DNL Adobe Experience Manager], the system administrator must integrate your [!DNL Experience Manager] deployment with Adobe I/O.
+Smart Content Service is a cloud service that is hosted on [!DNL Adobe I/O]. To use it in [!DNL Adobe Experience Manager], the system administrator must integrate your [!DNL Experience Manager] deployment with [!DNL Adobe I/O].
 
 In summary, here are the main steps to use the Smart Content Service:
 
@@ -27,19 +27,19 @@ In summary, here are the main steps to use the Smart Content Service:
 * Training the Smart Content Service
 * Automatic tagging
 
-![flowchart](assets/flowchart.gif)
+![Flowchart](assets/flowchart.gif)
 
 ## Prerequisites {#prerequisites}
 
-Before you can use the Smart Content Service, ensure the following to create an integration on Adobe I/O:
+Before you can use the Smart Content Service, ensure the following to create an integration on [!DNL Adobe I/O]:
 
 * An Adobe ID account that has administrator privileges for the organization.
 * The Smart Content Service service is enabled for your organization.
-* Smart Content Services Base Package may only be added to a deployment where a [!DNL Sites] Base Package and [!DNL Assets] add-on have been licensed.
+* Smart Content Services Base Package may only be added to a deployment where an [!DNL Adobe Experience Manager Sites] Base Package and [!DNL Assets] add-on have been licensed.
 
 ## Onboarding {#onboarding}
 
-The Smart Content Service is available for purchase as an add-on to [!DNL Experience Manager]. After you purchase, an email is sent to the administrator of your organization with a link to Adobe I/O.
+The Smart Content Service is available for purchase as an add-on to [!DNL Experience Manager]. After you purchase, an email is sent to the administrator of your organization with a link to [!DNL Adobe I/O].
 
 The administrator can follow the link to integrate the Smart Content Service with [!DNL Experience Manager]. To integrate the service with [!DNL Experience Manager Assets], see [Configure Smart Tags](config-smart-tagging.md).
 
@@ -65,21 +65,21 @@ Add the assets to a folder and apply the tags to each asset from the properties 
 
 ## Understand [!DNL Experience Manager] search results with smart tags {#understandsearch}
 
-By default, [!DNL Experience Manager] search combines the search terms with an `AND` clause. Using smart tags does not change this default behavior. Using smart tags adds an additional `OR` clause to find any of the search terms in the applies smart tags. For example, consider searching for `woman running`. Assets with just `woman` or just `running` keyword in the metadata do not appear in the search results by default. However, an asset tagged with either `woman` or `running` using smart tags appears in such a search query. So the search results are a combination of,
+By default, [!DNL Experience Manager] search combines the search terms with an `AND` clause. Using smart tags does not change this default behavior. Using smart tags adds an extra `OR` clause to find any of the search terms that are related to the smart tags. For example, consider searching for `woman running`. Assets with just `woman` or just `running` keyword in the metadata do not appear in the search results by default. However, an asset tagged with either `woman` or `running` using smart tags appears in such a search query. So the search results are a combination of,
 
-* assets with `woman` and `running` keywords in the metadata.
+* Assets with `woman` and `running` keywords in the metadata.
 
-* assets smart tagged with either of the keywords.
+* Assets smart tagged with either of the keywords.
 
 The search results that match all search terms in metadata fields are displayed first, followed by the search results that match any of the search terms in the smart tags. In the above example, the approximate order of display of search results is:
 
-1. matches of `woman running` in the various metadata fields.
-1. matches of `woman running` in smart tags.
-1. matches of `woman` or of `running` in smart tags.
+1. Matches of `woman running` in the various metadata fields.
+1. Matches of `woman running` in smart tags.
+1. Matches of `woman` or of `running` in smart tags.
 
 >[!CAUTION]
 >
->If the Lucene indexing is done out of [!DNL Adobe Experience Manager] then the search based on smart tags does not work as expected.
+>If the Lucene indexing is done out of [!DNL Adobe Experience Manager], then the search based on smart tags does not work as expected.
 
 ## Automatically tag assets {#tagging-assets-automatically}
 
@@ -132,7 +132,7 @@ You can trigger the tagging workflow from the workflow console or from the timel
 
 >[!NOTE]
 >
->In the subsequent tagging cycles, only the modified assets are tagged again with newly-trained tags.However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds 6 months.
+>In the subsequent tagging cycles, only the modified assets are tagged again with newly trained tags. However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds six months.
 
 ## Curate or moderate the applied smart tags {#manage-smart-tags}
 
