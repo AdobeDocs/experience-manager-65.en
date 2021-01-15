@@ -412,7 +412,7 @@ You will configure the integration in the following Adobe products:
 
 Additionally, if this integration solution is used with AEM Sites, the following configuration also needs to be done:
 
-* Adobe I/O Console - integration is created for Adobe Launch.
+* [!DNL Adobe I/O] Console - integration is created for Adobe Launch.
 * AEM author node - IMS configuration and Adobe Launch cloud configuration.
 
 As part of the configuration, be sure you have access to a company in Adobe Experience Cloud that has Adobe Analytics and Adobe Launch already enabled.
@@ -687,7 +687,7 @@ The AEM configuration consists of the following two major steps:
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. In a new browser tab, navigate to the [Adobe I/O Console](https://console.adobe.io/integrations).
+1. In a new browser tab, navigate to the [[!DNL Adobe I/O] Console](https://console.adobe.io/integrations).
 
 1. From the **[!UICONTROL Adobe I/O Console Integrations]** page, near the upper-right corner, click **[!UICONTROL New integration]**.
 1. In the **[!UICONTROL Create a new integration]** dialog box, ensure that **[!UICONTROL Access an API]** radio button is selected, then click **[!UICONTROL Continue]**.
@@ -845,4 +845,4 @@ It is, however, supported in the AEM publish node. Using the default settings of
 
 It is possible to work-around this limitation by specifying Development or Staging URL of Adobe Launch library in the Adobe Launch Cloud configuration for AEM publish above. Doing this makes the AEM publish node use the Development or Staging version of Adobe Launch library.
 
-See [Integrate AEM with Adobe Launch Via Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) for more information about setting up Adobe Launch Cloud Configuration.
+See [Integrate AEM with Adobe Launch Via [!DNL Adobe I/O]](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) for more information about setting up Adobe Launch Cloud Configuration.
