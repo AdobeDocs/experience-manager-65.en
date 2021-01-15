@@ -626,7 +626,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 * Internal cache is cleared when a page with an Adobe Target component is published (NPR-33162).
 * Integration with Adobe Target does not work on [!DNL Windows Internet Explorer] 11 (NPR-33111).
 * When configuring Adobe Target, the [!UICONTROL Company] and [!UICONTROL Report Suite] fields do not appear on selecting a reporting source (NPR-32502).
-* When exporting [!DNL Experience Fragments] using Adobe I/O, metadata like Source Product is not exported into Adobe Target (NPR-32159).
+* When exporting [!DNL Experience Fragments] using [!DNL Adobe I/O], metadata like Source Product is not exported into Adobe Target (NPR-32159).
 * Authorized IMS users in local Experience Manager admin group cannot create or modify IMS configurations (NPR-33045).
 * Adobe Launch configurations page does not display all records (NPR-33011).
 * Users in content-authors group cannot edit properties of an Adobe Target component due to JavaScript error (NPR-32996).
@@ -697,7 +697,7 @@ Adobe Experience Manager 6.5.4.0 is an important update that includes new featur
 
 Some key features and enhancements introduced in Adobe Experience Manager 6.5.4.0 include:
 
-* Adobe Experience Manager Assets is now configured with Brand Portal through Adobe I/O Console.
+* Adobe Experience Manager Assets is now configured with Brand Portal through [!DNL Adobe I/O] Console.
 
 * A new [Generate printable Output](../forms/using/aem-forms-workflow-step-reference.md) step is now available for Adobe Experience Manager Forms workflows.
 
@@ -861,7 +861,7 @@ For a complete list of features and key highlights introduced in the latest serv
 
 ### Brand Portal {#assets-brand-portal-6540}
 
-* Brand Portal users are not able to publish contribution folder assets to [!DNL Assets] on upgrading to Adobe I/O on Experience Manager 6.5.4 (CQDOC-15655). For an immediate fix on Experience Manager 6.5.4, it is recommended to [download the hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) and install on your author instance.
+* Brand Portal users are not able to publish contribution folder assets to [!DNL Assets] on upgrading to [!DNL Adobe I/O] on Experience Manager 6.5.4 (CQDOC-15655). For an immediate fix on Experience Manager 6.5.4, it is recommended to [download the hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) and install on your author instance.
 
 * Metadata schema popup values are not visible in asset properties (CQ-4283287).
 

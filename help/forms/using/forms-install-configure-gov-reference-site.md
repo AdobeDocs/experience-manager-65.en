@@ -463,7 +463,7 @@ Administrators can provide users with AEM analytics permissions by performing th
 
 In order to install and configure AEM Forms with the Adobe Forms, Conversion tool users must have the following.
 
-1. Access to Adobe IO.
+1. Access to Adobe I/O.
 
 1. Permission to create an integration with Adobe Forms Conversion service.
 
