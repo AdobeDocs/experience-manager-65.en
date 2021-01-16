@@ -24,8 +24,6 @@ mini-toc-levels: 1
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.7.0 includes:
 
-* Sorting the Live Copy pages available for rollout using the [!UICONTROL Name], [!UICONTROL Last modified date,] and [!UICONTROL Last rollout date] properties.
-
 * Performing the page moves and MSM rollouts as asynchronous operations to reduce their impact on runtime performance.
 
 * Users can sort digital assets in Card and Column views.
