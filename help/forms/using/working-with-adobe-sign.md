@@ -113,7 +113,7 @@ Perform the following steps to add fields to an adaptive form and customize vari
    >[!NOTE]
    >
    >    * Using [!DNL Adobe Sign] block is not mandatory to use [!DNL Adobe Sign] in an adaptive form. If you do not use [!DNL Adobe Sign] block and add fields for the signers, then the default signature field is displayed at the bottom of the signing documents.
-   >    * Use [!DNL Adobe Sign] block only for those adaptive forms which automatically generate Document of Record. If you are using a custom XDP for generating Document of Record or a form template based adaptive form, [!DNL Adobe Sign] block is not required.
+   >    * Use [!DNL Adobe Sign] block only for those adaptive forms which automatically generate Document of Record. If you are using a custom XDP for generating Document of Record or a form template based adaptive form, [!DNL Adobe Sign] block is not supported.
    >
    >
 
@@ -295,7 +295,8 @@ Perform the following steps to configure the Signature Step component:
    > A few best practices are:
    > * Adaptive form panel containing the Signature step is always in the last or second last panel of an adaptive form. It can be second last panel only when the last panel contains the Summary step.
    > * The panel containing the Signature or Summary step component cannot contain any other component.
-   > * Adaptive forms containing Signature Step cannot have submit button. The submission is handled via a background service or the Summary step. 
+   > * Adaptive forms containing Signature Step cannot have submit button.  
+   > * The submission for the adaptive forms containing Signature step is handled via a background service or the Summary step. If there is one signer who is also filling the form, the advantage of handling the adaptive form submission using the Summary step is that it immediately evaluates that the signer has signed the form using the Signature step and invokes the submit action. A background service takes more time to evaluate if all configured signers have signed the form and delays the submission of the adaptive form.
    > * Design the form to not allow a user to navigate back from a panel containing the Signature or Summary step. 
 
 
