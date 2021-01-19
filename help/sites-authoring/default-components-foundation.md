@@ -330,6 +330,10 @@ The external application is integrated into the paragraph system of the AEM page
 >
 >This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
 
+>[!CAUTION]
+>
+>This component is no longer expected to function out-of-the-box without extensive project-level customization.
+
 The Flash component lets you load a Flash movie. You can drag a flash asset from the content finder onto the component, or you can use the dialog:
 
 * **Flash**
@@ -540,6 +544,10 @@ The following example shows a **List** component the way it may display a list o
 >
 >This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
 
+>[!CAUTION]
+>
+>This component is no longer expected to function out-of-the-box without extensive project-level customization.
+
 These provides the Username and Password fields.
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
@@ -575,6 +583,10 @@ You can configure:
       Text to indicate the user is already logged in.
 
 ### Order Status {#order-status}
+
+>[!CAUTION]
+>
+>This component is no longer expected to function out-of-the-box without extensive project-level customization.
 
 * **Title**
 
@@ -717,7 +729,11 @@ If required you can configure:
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Carousel Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Carousel Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html) instead.
+
+>[!CAUTION]
+>
+>This component is no longer expected to function out-of-the-box without extensive project-level customization.
 
 This component allows you to load a series of images to be displayed as a slideshow on your page.You can add or remove images and assign each a title. Under Advanced you can also specify the size of the display area.
 
@@ -902,7 +918,11 @@ The following example shows a **Title** component being displayed; the design is
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components Embed Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html) instead.
+
+>[!CAUTION]
+>
+>This component is no longer expected to function out-of-the-box without extensive project-level customization.
 
 The **Video** component allows you to place a predefined, out-of-the-box video element on a page.
 
@@ -1329,6 +1349,10 @@ The component is configured for immediate use, but you can change the configurat
 >[!CAUTION]
 >
 >This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+
+>[!CAUTION]
+>
+>This component is no longer expected to function out-of-the-box without extensive project-level customization.
 
 The Captcha component requires the user to type in an alphanumeric string as displayed on screen. The string changes with each refresh.
 
