@@ -46,7 +46,7 @@ An AEM administrator is responsible for the following tasks while creating an ap
 
 * [Configuring your User and User Groups](/help/mobile/aem-mobile-configure-users.md)
 * [Previewing with Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md)
-* [Administering Content Services](//help/mobile/developing-content-services.md)
+* [Administering Content Services](/help/mobile/developing-content-services.md)
 
 ## Additional Resources {#additional-resources}
 
