@@ -27,5 +27,4 @@ The Content Disposition Filter options provide the following functionality:
 
 * Excluded Resource Paths: a list fo excluded resources, each resource path must be given as absolute and fully qualified path. Prefix matching/wildcards are not supported.
 
-* Enable For All Resource Paths: this flag controls whether to enable this filter for all paths, except for the excluded paths defined by Excluded Resource Paths. Setting this to 'true' leads to ignoring Content Disposition Paths. Independent of the configuration only resource paths are covered which contain a property named 'jcr:data' or 'jcr:content jcr:data'.
-
+* Enable For All Resource Paths: this flag controls whether to enable this filter for all paths, except for the excluded paths defined by Excluded Resource Paths. Setting this to 'true' leads to ignoring Content Disposition Paths. Independent of the configuration, only resource paths are covered which contain a property named 'jcr:data' or 'jcr:content/jcr:data'.

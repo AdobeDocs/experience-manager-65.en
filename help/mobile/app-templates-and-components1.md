@@ -63,7 +63,7 @@ After you have the basic understanding of Templates and Components, see the foll
 * [Creating and Adding Templates and Components](/help/mobile/mobile-ondemand-app-templates.md)
 * [Using Content Properties to Export Content](/help/mobile/on-demand-content-properties-exporting.md)
 * [Best Practices](/help/mobile/best-practices-aem-mobile.md)
-* [Developing AEM Mobile Content Services](//help/mobile/developing-content-services.md)
+* [Developing AEM Mobile Content Services](/help/mobile/developing-content-services.md)
 
 ### Additional Resources {#additional-resources}
 

@@ -77,7 +77,7 @@ An AEM developer is responsible for the following tasks while creating an app us
 * [App Templates and Components](/help/mobile/app-templates-and-components1.md)
 * [Mobile with Content Sync](/help/mobile/mobile-ondemand-contentsync.md)
 * [Content Properties and Exporting Content](/help/mobile/on-demand-content-properties-exporting.md)
-* [Developing AEM Mobile Content Services](//help/mobile/developing-content-services.md)
+* [Developing AEM Mobile Content Services](/help/mobile/developing-content-services.md)
 
 To get started with Developer's roles and responsibilities, See [Developing AEM Content for AEM Mobile On-Demand Services](/help/mobile/aem-mobile-on-demand.md).
 
