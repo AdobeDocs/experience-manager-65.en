@@ -15,10 +15,6 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 
 ## Adobe [!DNL Experience Manager Sites] {#aem-sites}
 
-### Sort the Live Copy pages available for rollout {#sort-livecopy-pages}
-
-You can now sort the Live Copy pages available for rollout using the [!UICONTROL Name], [!UICONTROL Last modified date], and [!UICONTROL Last rollout date] properties. The [!UICONTROL Last rollout date] for a page is a new property introduced in this release.
-
 ### Availability of page moves and MSM rollouts as asynchronous operations {#page-moves-msm-asynchronous}
 
 You can now perform the page moves and MSM rollouts as asynchronous operations to reduce their impact on runtime performance. You can schedule the operations for immediate or later execution. The status of associated jobs and process steps is displayed in a console, which is helpful for monitoring large-scale MSM rollouts.
