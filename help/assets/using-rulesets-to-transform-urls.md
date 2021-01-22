@@ -1,12 +1,10 @@
 ---
 title: Using Rulesets to Transform URLs
 description: You can deploy rule sets in Dynamic Media to transform URLs. Rule sets are sets of instructions written in a scripting language (such as JavaScript) that evaluate XML data and take certain actions if that data meets certain conditions.
-uuid: 9fed0c83-67b7-4483-a9b4-322e6a483449
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 ---
 
 # Using rule sets to transform URLs {#using-rulesets-to-transform-urls}
@@ -54,11 +52,9 @@ See also [Using 'asset' instead of 'is' image in a rule set](https://helpx.adobe
 
 **To deploy XML rule sets:**
 
-1. Log on to your Dynamic Media Classic account:
+1. Sign in to your [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-   Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
+   Your credentials and sign in were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
 
 1. Upload your rule set file by doing the following:
 
