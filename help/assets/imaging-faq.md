@@ -116,7 +116,7 @@ To use Smart Imaging, your company's Dynamic Media Classic or Dynamic Media on A
 * Use the Adobe-bundled CDN (Content Delivery Network) as part of your license.
 * Use a dedicated domain (for example, `images.company.com` or `mycompany.scene7.com`), not a generic domain (for example, `s7d1.scene7.com`, `s7d2.scene7.com`, or `s7d13.scene7.com`). 
 
-To find your domains, log in to your company account or accounts.  
+To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts.  
   
 Tap **[!UICONTROL Setup > Application Setup > General Settings.]** Look for the field labeled **[!UICONTROL Published Server Name.]** If you are currently using a generic domain, you can request moving over to your own custom domain as part of this transition when you submit a technical support ticket.
 
@@ -132,7 +132,7 @@ You must initiate the request to use smart imaging; it is not automatically enab
     1. Primary contact name, email, phone.
     1. All domains to be enabled for smart imaging (that is, `images.company.com` or `mycompany.scene7.com`).
 
-       To find your domains, log into your company account or accounts. 
+       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts.  
 
        Click **[!UICONTROL Setup > Application Setup > General Settings.]**  
 
@@ -140,7 +140,7 @@ You must initiate the request to use smart imaging; it is not automatically enab
     1. Verify that you are using the CDN through Adobe and not managed with a direct relationship.
     1. Verify you are using a dedicated domain such as `images.company.com` or `mycompany.scene7.com`, and not a generic domain, such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.  
 
-       To find your domains, log into your company account or accounts.
+       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts.
 
        Click **[!UICONTROL Setup > Application Setup > General Settings.]**  
 
