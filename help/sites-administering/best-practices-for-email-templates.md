@@ -151,7 +151,7 @@ There are currently [seven components available for use inside campaign template
 | Text&Personalization |/libs/mcm/campaign/components/personalization |
 | Textimage |/libs/mcm/campaign/components/textimage |
 | Link |/libs/mcm/campaign/components/reference |
-| Scene7 Image Template |/libs/mcm/campaign/s7image |
+| Dynamic Media Classic (formerly Scene7) Image Template |/libs/mcm/campaign/s7image |
 | Targeted Reference |/libs/mcm/campaign/components/reference |
 
 >[!NOTE]
