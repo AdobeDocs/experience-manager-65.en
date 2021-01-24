@@ -1,6 +1,6 @@
 ---
-title: [!DNL Adobe Experience Manager] 6.5 Service Pack Release Notes
-description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Service Pack 8
+title: Adobe Experience Manager 6.5 Service Pack Release Notes
+description: Release notes specific to Adobe Experience Manager 6.5 Service Pack 8
 docset: aem65
 mini-toc-levels: 1
 ---
