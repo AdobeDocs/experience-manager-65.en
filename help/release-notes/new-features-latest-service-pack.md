@@ -1,6 +1,6 @@
 ---
-title: What's new in Adobe Experience Manager 6.5 Service Pack 7
-description: What's new in Adobe Experience Manager 6.5 Service Pack 7
+title: What's new in Adobe Experience Manager 6.5 Service Pack 8
+description: What's new in Adobe Experience Manager 6.5 Service Pack 8
 contentOwner: AK
 mini-toc-levels: 1
 ---
