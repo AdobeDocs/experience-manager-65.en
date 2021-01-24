@@ -15,15 +15,15 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 
 ## Adobe [!DNL Experience Manager Sites] {#aem-sites}
 
-### Availability of page moves and MSM rollouts as asynchronous operations {#page-moves-msm-asynchronous}
+### Feature {#feature1-sites}
 
-You can now perform the page moves and MSM rollouts as asynchronous operations to reduce their impact on runtime performance. You can schedule the operations for immediate or later execution. The status of associated jobs and process steps is displayed in a console, which is helpful for monitoring large-scale MSM rollouts.
+Description
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* [!DNL Assets] and [!DNL Dynamic Media] provide multiple accessibility enhancements. The enhancements are related to keyboard navigation, use of screen readers, similar enhancements to enable use of assistive technologies (AT). See [[!DNL Assets] enhancements](/help/release-notes/sp-release-notes.md#assets-6570) and [[!DNL Dynamic Media] enhancements](/help/release-notes/sp-release-notes.md#dynamic-media-6570).
+### Feature {#feature1-assets}
 
-* Users can sort digital assets in Card and Column views.
+Description
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -31,25 +31,17 @@ You can now perform the page moves and MSM rollouts as asynchronous operations t
 >
 >[!DNL Experience Manager Forms] add-on packages are made available a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
-### Performance improvements {#performance-improvements-forms}
+### Feature {#feature1-forms}
 
-[!DNL Experience Manager] 6.5 Service Pack 7 Forms improves the performance for:
-
-* Validating the field values on the server when you submit an adaptive form.
-
-* Converting a PDF form to an adaptive form using the [!DNL Automated Forms Conversion service].
-
-### Form data model HTTP client configuration to optimize performance {#fdm-http-client-config}
-
-[!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source now includes HTTP client configurations for performance optimization. See [Configure data sources](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
-
-### Availability of Reset Option for each component in the Layout mode {#reset-option-layout-mode}
-
-You can now use the reset option for each component in Layout mode of an adaptive form. When you define a multicolumn layout for a panel, you can use this feature to reset individual components within the panel. See [Use layout mode to resize components](../../help/forms/using/resize-using-layout-mode.md#resize-components).
+Description
 
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
+
+#### Availability of page moves and MSM rollouts as asynchronous operations (6.5.7.0) {#page-moves-msm-asynchronous}
+
+You can now perform the page moves and MSM rollouts as asynchronous operations to reduce their impact on runtime performance. You can schedule the operations for immediate or later execution. The status of associated jobs and process steps is displayed in a console, which is helpful for monitoring large-scale MSM rollouts.
 
 #### Availability of Page Move operation in asynchronous mode (6.5.6.0) {#page-move-asynchronous}
 
@@ -98,6 +90,10 @@ You can now select styles within the component dialog using the enhanced Style S
 * Improved handling of incomplete or invalid URLs. Such URLs can slow the Template Editor.
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
+
+* [!DNL Assets] and [!DNL Dynamic Media] provide multiple accessibility enhancements. The enhancements are related to keyboard navigation, use of screen readers, similar enhancements to enable use of assistive technologies (AT). See [[!DNL Assets] enhancements](/help/release-notes/sp-release-notes.md#assets-6570) and [[!DNL Dynamic Media] enhancements](/help/release-notes/sp-release-notes.md#dynamic-media-6570) (6.5.7.0)
+
+* Users can sort digital assets in Card and Column views (6.5.7.0).
 
 #### Accessibility enhancements (6.5.6.0) {#accessibility-assets-6560}
 
@@ -209,6 +205,22 @@ Smart imaging uses each user's unique viewing characteristics to automatically s
 Smart crop for video–an optional feature available in Video Profiles– is a tool that uses the power of artificial intelligence in Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video that you have uploaded, regardless of size. See [About using smart crop in video profiles](../assets/video-profiles.md).
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
+
+#### Performance improvements (6.5.7.0) {#performance-improvements-forms}
+
+[!DNL Experience Manager] 6.5 Service Pack 7 Forms improves the performance for:
+
+* Validating the field values on the server when you submit an adaptive form.
+
+* Converting a PDF form to an adaptive form using the [!DNL Automated Forms Conversion service].
+
+#### Form data model HTTP client configuration to optimize performance (6.5.7.0) {#fdm-http-client-config}
+
+[!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source now includes HTTP client configurations for performance optimization. See [Configure data sources](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
+
+#### Availability of Reset Option for each component in the Layout mode (6.5.7.0) {#reset-option-layout-mode}
+
+You can now use the reset option for each component in Layout mode of an adaptive form. When you define a multicolumn layout for a panel, you can use this feature to reset individual components within the panel. See [Use layout mode to resize components](../../help/forms/using/resize-using-layout-mode.md#resize-components).
 
 #### Prefill an adaptive form at the client (6.5.6.0) {#prefill-merge-data-at-client}
 
