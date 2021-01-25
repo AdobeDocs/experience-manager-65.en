@@ -5,7 +5,7 @@ contentOwner: AK
 mini-toc-levels: 1
 ---
 
-# What's new in Adobe Experience Manager 6.5 Service Pack 7 {#aem-whats-new-service-pack}
+# What's new in Adobe Experience Manager 6.5 Service Pack 8 {#aem-whats-new-service-pack}
 
 ![Whats-new](assets/whatsnew.jpeg)
 
