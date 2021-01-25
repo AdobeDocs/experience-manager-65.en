@@ -459,6 +459,8 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 ## Known issues {#known-issues}
 
+* If you face issues in [!DNL Experience Manager] response due to locked Component Registry timer, [install this package](https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr/2.1.20). The resolution to these issues is scheduled to be included in the next [Experience Manager Service Pack release](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-on-prem-managed-services).
+
 * Ignore the following errors in the `error.log` file during the installation of Experience Manager 6.5.7.0:
 
    ```TXT
