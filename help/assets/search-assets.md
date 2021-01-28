@@ -1,5 +1,5 @@
 ---
-title: Search digital assets and images in [!DNL Adobe Experience Manager].
+title: Search digital assets and images in [!DNL Adobe Experience Manager]
 description: Learn how to find the required assets in [!DNL Adobe Experience Manager] by using Filters panel, and how to use the assets that show up in search.
 contentOwner: AG
 mini-toc-levels: 1
@@ -147,29 +147,29 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 
 You can search for assets based on exact values of specific metadata fields, such as, title, description, and author. The GQL full-text search feature fetches only those assets whose metadata value exactly matches your search query. The names of the properties (for example author, title, and so on) and the values are case-sensitive.
 
-|              Metadata field               |         Facet value and usage         |
-| ----------------------------------------- | ------------------------------------- |
-| Title                                     | title:John                            |
-| Creator                                   | creator:John                          |
-| Location                                  | location:NA                           |
-| Description                               | description:"Sample Image"            |
-| Creator tool                              | creatortool:"Adobe Photoshop CC 2020" |
-| Copyright Owner                           | copyrightowner:"Adobe Systems"        |
-| Contributor                               | contributor:John                      |
-| Usage Terms                               | usageterms:"CopyRights Reserved"      |
-| Created                                   | created:YYYY-MM-DDTHH                 |
-| Expires Date                              | expires:YYYY-MM-DDTHH                 |
-| On time                                   | ontime:YYYY-MM-DDTHH                  |
-| Off time                                  | offtime:YYYY-MM-DDTHH                 |
-| Range of time(expires dateontime,offtime) | facet field: lowerbound..upperbound  |
-| Path                                      | /content/dam/&lt;folder name&gt;      |
-| PDF Title                                 | pdftitle:"Adobe Document"             |
-| Subject                                   | subject:"Training"                    |
-| Tags                                      | tags:"Location And Travel"            |
-| Type                                      | type:"image\png"                      |
-| Width of image                            | width:lowerbound..upperbound          |
-| Height of image                           | height:lowerbound..upperbound         |
-| Person                                    | person:John                           |
+|              Metadata field               |         Facet value and usage           |
+| ----------------------------------------- | --------------------------------------- |
+| Title                                     | `title:John`                            |
+| Creator                                   | `creator:John`                          |
+| Location                                  | `location:NA`                           |
+| Description                               | `description:"Sample Image"`            |
+| Creator tool                              | `creatortool:"Adobe Photoshop CC 2020"` |
+| Copyright Owner                           | `copyrightowner:"Adobe Systems"`        |
+| Contributor                               | `contributor:John`                      |
+| Usage Terms                               | `usageterms:"CopyRights Reserved"`      |
+| Created                                   | `created`:YYYY-MM-DDTHH                 |
+| Expires Date                              | `expires`:YYYY-MM-DDTHH                 |
+| On time                                   | `ontime`:YYYY-MM-DDTHH                  |
+| Off time                                  | `offtime`:YYYY-MM-DDTHH                 |
+| Range of time(expires dateontime,offtime) | `facet field`: lowerbound..upperbound   |
+| Path                                      | /content/dam/&lt;folder name&gt;        |
+| PDF Title                                 | `pdftitle`:"Adobe Document"             |
+| Subject                                   | `subject:"Training"`                    |
+| Tags                                      | `tags:"Location And Travel"`            |
+| Type                                      | `type:"image\png"`                      |
+| Width of image                            | `width`:lowerbound..upperbound          |
+| Height of image                           | `height`:lowerbound..upperbound         |
+| Person                                    | `person:John`                           |
 
 The properties `path`, `limit`, `size`, and `orderby` cannot be combined using `OR` operator with any other property.
 
@@ -290,11 +290,11 @@ Use double quotations around keywords to find assets that contain the exact phra
 **Search with asterisk wildcard**: To broaden the search, use an asterisk before or after the search word to match any number of characters. For example, searching for run without an asterisk does not return assets containing any variation of the word (including in the metadata). An asterisk substitutes for any number of characters. For example,
 
 * `run` returns assets with exactly run keyword
-* `run*` returns assets with running, run, runaway, and so on.
-* `*run` returns outrun, rerun, and so on.
+* `run*` returns assets with `running`, `run`, `runaway`, and so on.
+* `*run` returns assets with `outrun`, `rerun`, and so on.
 * `*run*` returns all possible combinations.
 
-![Illustrating use of asterisk wildcard in Asset search using an example](assets/search_with_asterisk_run.gif)
+![Illustrating use of asterisk wildcard in asset search using an example](assets/search_with_asterisk_run.gif)
 
 *Figure: Illustrating use of asterisk wildcard in Asset search using an example.*
 
