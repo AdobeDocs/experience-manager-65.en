@@ -75,7 +75,7 @@ user-guide-description: Learn about administering AEM.
     + [Mitigating serialization issues in AEM](mitigating-serialization-issues.md)
     + [User Synchronization](sync.md)
     + [Encapsulated Token Support](encapsulated-token.md)
-    + [Single Sign On](/https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html)
+    + [Single Sign On](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html)
     + [How to Audit User Management Operations in AEM](audit-user-management-operations.md)
     + [SSL By Default](ssl-by-default.md)
     + [SAML 2.0 Authentication Handler](saml-2-0-authenticationhandler.md)
