@@ -402,7 +402,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
 ### Creating/Opening a Customized Configuration {#creating-opening-a-customized-configuration}
 
-1. Navigate to **Tools**, **Operations**, **Search Forms**.
+1. Navigate to **Tools**, **General**, **Search Forms**.
 
 1. Select the configuration that you want to customize.
 1. Use the **Edit** icon to open the configuration for updating.
