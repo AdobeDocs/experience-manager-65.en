@@ -17,7 +17,7 @@ Application Security starts during the development phase. Adobe recommends to ap
 
 ## Use Request Session {#use-request-session}
 
-Following the principle of leas privileges, Adobe recommends that every repository access is done by using the session bound to the user request and proper access control.
+Following the principle of least privileges, Adobe recommends that every repository access is done by using the session bound to the user request and proper access control.
 
 ## Protect against Cross-Site Scripting (XSS) {#protect-against-cross-site-scripting-xss}
 
