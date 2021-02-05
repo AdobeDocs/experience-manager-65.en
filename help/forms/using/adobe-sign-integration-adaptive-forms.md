@@ -109,5 +109,5 @@ Default interval to sync status of Adobe Sign is now changed.
 
 * [Using Adobe Sign in an adaptive form](../../forms/using/working-with-adobe-sign.md)
 * [Using Adobe Sign with AEM Forms (Video)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
-* [Integrate Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
+
 
