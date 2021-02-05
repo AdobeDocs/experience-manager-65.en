@@ -1,8 +1,8 @@
 ---
 title: Invoking AEM Forms using Web Services
 seo-title: Invoking AEM Forms using Web Services
-description: null
-seo-description: null
+description: Invoke AEM Forms processes using web services with full support for WSDL generation.
+seo-description:  Invoke AEM Forms processes using web services with full support for WSDL generation.
 uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference

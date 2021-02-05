@@ -1,6 +1,7 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
+solution: Experience Manager, Experience Manager Sites
 audience: admin-user
 user-guide-title: AEM 6.5 Administering User Guide
 breadcrumb-title: Administering Guide
@@ -29,6 +30,7 @@ user-guide-description: Learn about administering AEM.
     + [Language Copy Wizard](tc-wizard.md)
     + [Translation Enhancements](tc-enhancements.md)
     + [Translation Best Practices](tc-bp.md)
+    + [Configurations and the Configuration Browser](configurations.md)
     + [AEM FAQs](aem-faqs.md)
 + Operations {#operations}
     + [Dashboards](dashboards.md)
@@ -45,7 +47,7 @@ user-guide-description: Learn about administering AEM.
     + [Configure the Video component](config-video.md)
     + [The Bulk Editor](bulk-editor.md)
     + [Configuring Email Notification](notification.md)
-    + [The External Link Checker](external-link-checker.md)
+    + [The Link Checker](external-link-checker.md)
     + [Troubleshooting AEM](troubleshoot.md)
     + [Managing Access to Workflows](workflows-managing.md)
     + [Starting Workflows](workflows-starting.md)
@@ -73,7 +75,7 @@ user-guide-description: Learn about administering AEM.
     + [Mitigating serialization issues in AEM](mitigating-serialization-issues.md)
     + [User Synchronization](sync.md)
     + [Encapsulated Token Support](encapsulated-token.md)
-    + [Single Sign On](/help/sites-deploying/single-sign-on.md)
+    + [Single Sign On](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html)
     + [How to Audit User Management Operations in AEM](audit-user-management-operations.md)
     + [SSL By Default](ssl-by-default.md)
     + [SAML 2.0 Authentication Handler](saml-2-0-authenticationhandler.md)
@@ -90,7 +92,7 @@ user-guide-description: Learn about administering AEM.
     + [Custom User Group Mapping in AEM 6.5](/help/sites-administering/cug-mapping.md)
 + Personalization {#personalization}
     + [Personalization](personalization.md)
-    + [Configuring ContextHub](/help/sites-developing/ch-configuring.md)
+    + [Configuring ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
     + [Client Context](client-context.md)
     + [Campaigns](campaigns.md)
     + [Configuring Segmentation with ContextHub](segmentation.md)
@@ -149,11 +151,11 @@ user-guide-description: Learn about administering AEM.
     + [Integrating with Livefyre](livefyre.md)
 + Best Practices {#bestpractices}
     + [Best Practices](administer-best-practices.md)
-    + [Translation Best Practices](tc-bp.md)
-    + [MSM Best Practices](msm-best-practices.md)
+    + [Translation Best Practices](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-bp.html)
+    + [MSM Best Practices](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
     + [AEM Sites - GDPR Readiness](gdpr-compliance-sites.md)
-    + [Handling GDPR Requests for the AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
-    + [AEM Commerce - GDPR Readiness](gdpr-compliance-commerce.md)
+    + [Handling GDPR Requests for the AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
+    + [AEM Commerce - GDPR Readiness](https://experienceleague.adobe.com/docs/experience-manager-65/administering/ecommerce/gdpr-compliance-commerce.html)
 + Content Management {#contentmanagement}
     + [How to Work With Packages](package-manager.md)
     + [Administering Tags](tags.md)

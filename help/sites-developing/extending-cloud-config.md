@@ -44,8 +44,8 @@ To provide a configuration for a new services you need to:
 
 * under this:
 
-    * a configuration template
-    * a configuration component
+  * a configuration template
+  * a configuration component
 
 The template and component must inherit the `sling:resourceSuperType` from the base template:
 
@@ -217,7 +217,7 @@ These services are provided by default:
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 * [Search&Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote)
-* [Scene7](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
+* [Dynamic Media](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 
 >[!NOTE]
 >

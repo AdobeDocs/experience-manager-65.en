@@ -103,6 +103,6 @@ If choosing [ASRP](asrp.md), [DSRP](dsrp.md) or [MSRP](msrp.md) for production, 
 
   Basically, site content is stored in a node store. For Assets, a data store can be configured to store binary data. For Communities, a common store must be configured to select the SRP.
 
-* [Storage Elements in AEM 6.3](../../help/sites-deploying/storage-elements-in-aem-6.md)
+* [Storage Elements](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
   Describes the two node storage implementations: Tar and MongoDB.

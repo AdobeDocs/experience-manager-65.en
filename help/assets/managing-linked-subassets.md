@@ -18,10 +18,10 @@ References are resolved on the basis of path, document ID, and instance ID of th
 
 You can reference existing digital assets from within an [!DNL Adobe Illustrator] file.
 
-1. Using [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html), fetch the digital assets on the local filesystem. Navigate to the filesystem location of the asset that you want to reference.
+1. Using [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html), fetch the digital assets on the local filesystem. Navigate to the filesystem location of the asset that you want to reference.
 1. Drag the asset from the local folder to the [!DNL Illustrator] file.
 
-1. Save the [!DNL Illustrator] file to the mounted drive, or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the [!DNL Experience Manager] repository.
+1. Save the [!DNL Illustrator] file to the mounted drive, or [upload](/help/assets/manage-assets.md#uploading-assets) to the [!DNL Experience Manager] repository.
 
 1. After the workflow completes, go to the asset details page for the asset. The references to existing digital assets are listed under **[!UICONTROL Dependencies]** in the **[!UICONTROL References]** column.
 
@@ -61,11 +61,11 @@ This procedure is similar to [add digital assets as references in Adobe Illustra
 
 ## Add digital assets as references in [!DNL Adobe Photoshop] {#refps}
 
-1. Use [!DNL Experience Manager] desktop app to access [!DNL Experience Manager Assets]. Download and reveal the assets on local file system. Use the the [!UICONTROL Place Linked] functionality in [!DNL Adobe Photoshop]. See [place assets in desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
+1. Use [!DNL Experience Manager] desktop app to access [!DNL Experience Manager Assets]. Download and reveal the assets on local file system. Use the the [!UICONTROL Place Linked] functionality in [!DNL Adobe Photoshop]. See [place assets in desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
-1. Save in [!DNL Photoshop] file to the mounted drive or or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the [!DNL Experience Manager] repository.
+1. Save in [!DNL Photoshop] file to the mounted drive or or [upload](/help/assets/manage-assets.md#uploading-assets) to the [!DNL Experience Manager] repository.
 1. After the workflow completes, the references to existing [!DNL Experience Manager] assets are listed in the asset details page.
 
    To view the referenced assets, close the [Rail](/help/sites-authoring/basic-handling.md#rail-selector) in the asset details page.
@@ -112,7 +112,7 @@ For [!DNL InDesign], you can extract pages using [!DNL InDesign Server]. If the 
 
 The following options are available in the toolbar, in the left rail, and in the Page Viewer controls:
 
-* **[!UICONTROL Desktop Actions]** to open or reveal a specific subasset using [!DNL Experience Manager] desktop app. See how to [configure Desktop Actions](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) if you are using [!DNL Experience Manager] desktop app.
+* **[!UICONTROL Desktop Actions]** to open or reveal a specific subasset using [!DNL Experience Manager] desktop app. See how to [configure Desktop Actions](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) if you are using [!DNL Experience Manager] desktop app.
 
 * **[!UICONTROL Properties]** option opens the [!UICONTROL Properties] page of the specific subasset.
 
@@ -128,7 +128,7 @@ The following options are available in the toolbar, in the left rail, and in the
 
 >[!MORELIKETHIS]
 >
->* [Use Adobe Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
->* [Configure Desktop Actions in Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [Use Adobe Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Configure Desktop Actions in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Create Linked Smart Objects in Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Place graphics in Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)

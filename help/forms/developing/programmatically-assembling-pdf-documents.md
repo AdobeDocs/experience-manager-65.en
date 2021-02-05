@@ -1,8 +1,8 @@
 ---
 title: Programmatically Assembling PDF Documents
 seo-title: Programmatically Assembling PDF Documents
-description: null
-seo-description: null
+description: Use the Assembler service API to assemble multiple PDF documents into a single PDF document using the Java API and the Web Service API.
+seo-description: Use the Assembler service API to assemble multiple PDF documents into a single PDF document using the Java API and the Web Service API.
 uuid: aa3f8f39-1fbc-48d0-82ff-6caaadf125fc
 contentOwner: admin
 content-type: reference

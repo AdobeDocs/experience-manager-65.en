@@ -35,7 +35,7 @@ When a translation integration framework is configured in addition to the transl
 
 ## The Default Translation Service {#the-default-translation-service}
 
-AEM Communities ships with a [trial license](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) for a [default translation service](../../help/sites-administering/tc-msconf.md) enabled for several languages.
+AEM Communities includes a [trial license](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) for a [default translation service](../../help/sites-administering/tc-msconf.md) enabled for several languages.
 
 When [creating a community site](sites-console.md), the default translation service is enabled when `Allow Machine Translation` is checked from the [TRANSLATION](sites-console.md#translation) sub-panel.
 

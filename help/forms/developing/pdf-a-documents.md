@@ -1,8 +1,8 @@
 ---
 title: Working with PDF/A Documents
 seo-title: Working with PDF/A Documents
-description: null
-seo-description: null
+description: Use the  DocConverter service to determine if a PDF document is a PDF/A document and convert PDF documents to PDF/A documents.
+seo-description: Use the  DocConverter service to determine if a PDF document is a PDF/A document and convert PDF documents to PDF/A documents.
 uuid: c258d253-068a-4412-955a-21d8a4792d6f
 contentOwner: admin
 content-type: reference

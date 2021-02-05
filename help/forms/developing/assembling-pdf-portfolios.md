@@ -1,8 +1,8 @@
 ---
 title: Assembling PDF Portfolios
 seo-title: Assembling PDF Portfolios
-description: null
-seo-description: null
+description: Assemble a PDF portfolio to combine several documents of various types, including word file, image files, and PDF documents. You can assemble a PDF portfolio using a Java API and a Web Service API.
+seo-description: Assemble a PDF portfolio to combine several documents of various types, including word file, image files, and PDF documents. You can assemble a PDF portfolio using a Java API and a Web Service API.
 uuid: 1778c90b-9d26-466b-a7c7-401d737395e0
 contentOwner: admin
 content-type: reference

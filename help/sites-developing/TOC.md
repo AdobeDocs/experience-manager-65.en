@@ -1,6 +1,7 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.5 Developing User Guide
 breadcrumb-title: Developing Guide
@@ -66,7 +67,7 @@ user-guide-description: This guide covers how to build out your AEM instance.
       + [Developing with SAP Commerce Cloud](sap-commerce-cloud.md)
 + Components{#components}
     + [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-    + [Style System](/help/sites-authoring/style-system.md)
+    + [Style System](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
     + [Components Overview](components.md)
     + [AEM Components - The Basics](components-basics.md)
     + [Developing AEM Components](developing-components.md)
@@ -93,7 +94,7 @@ user-guide-description: This guide covers how to build out your AEM instance.
       + [Developing Forms (Classic UI)](developing-forms.md)
 + Headless Experience Management{#headless}
     + [Headless and Hybrid with AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-    + [Enabling JSON Export for a Component](json-exporter-components.md)
+    + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)
     + Single Page Applications{#spas}
         + [SPA Introduction and Walkthrough](spa-walkthrough.md)
         + [SPA WKND Tutorial](spa-wknd.md)
@@ -110,9 +111,9 @@ user-guide-description: This guide covers how to build out your AEM instance.
         + [SPA and Adobe Experience Platform Launch Integration](spa-launch.md)
         + [SPA and Server-Side Rendering](spa-ssr.md)
         + [SPA Reference Materials](spa-reference-materials.md)
-    + [HTTP API](/help/assets/mac-api-assets.md)
-    + [Content Fragments](/help/assets/content-fragments/content-fragments.md)
-    + [Experience Fragments](/help/sites-authoring/experience-fragments.md)
+    + [HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
+    + [Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
+    + [Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
     + [Understanding Content Fragments and Content Services in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Development Tools{#devtools}
     + [Development Tools](dev-tools.md)
@@ -173,12 +174,12 @@ user-guide-description: This guide covers how to build out your AEM instance.
       + [Creating Custom Form Mappings](extending-campaign-form-mapping.md)
       + [Creating Custom AEM Page Template with Adobe Campaign Form Components](extending-campaign-custom-template.md)
       + [Request Analysis Script](analyze-request.md)
-    + [Integrating Services with the JMX Console](jmx-integration.md)
-    + [Developing the Bulk Editor](dev-bulk-editor.md)
+    + [Integrating Services with the JMX Console](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/jmx-integration.html)
+    + [Developing the Bulk Editor](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-bulk-editor.html)
     + Extending Classic UI{#extending-classic-ui}
       + [Customizing the Websites Console (Classic UI)](customizing-siteadmin.md)
       + [Customizing the Welcome Console (Classic UI)](customizing-the-welcome-console.md)
-      + [Developing Reports](dev-reports.md)
+      + [Developing Reports](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-reports.html)
 + Testing{#testing}
     + [Planning](planning.md)
     + [Which Test Environments will be needed?](test-environments.md)
@@ -191,10 +192,10 @@ user-guide-description: This guide covers how to build out your AEM instance.
     + [The next release...](the-next-release.md)
     + [Checklists](checklists.md)
     + [Tough Day](tough-day.md)
-    + [Testing Your UI](hobbes.md)
+    + [Testing Your UI](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/hobbes.html)
 + Best Practices{#bestpractices}
     + [Best Practices Overview](best-practices.md)
-    + [AEM Development Guidelines and Best Practices](dev-guidelines-bestpractices.md)
+    + [AEM Development Guidelines and Best Practices](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/dev-guidelines-bestpractices.html)
     + [Development Best Practices](development-practices.md)
     + [Content Architecture](content-architecture.md)
     + [Software Architecture](software-architecture.md)

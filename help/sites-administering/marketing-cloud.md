@@ -1,14 +1,10 @@
 ---
 title: Integrating with the Adobe Marketing Cloud
-seo-title: Integrating with the Adobe Marketing Cloud
-description: Learn how to integrate AEM with Adobe Marketing Cloud.
-seo-description: Learn how to integrate AEM with Adobe Marketing Cloud.
-uuid: 36d71dd3-7fb0-4237-99d3-4fbb2e162e7b
+description: Learn how to integrate Adobe Experience Manager with Adobe Marketing Cloud.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: ba496f6a-c9aa-49b5-8207-8633748d2c17
 ---
 
 # Integrating with the Adobe Marketing Cloud{#integrating-with-the-adobe-marketing-cloud}
@@ -19,7 +15,7 @@ With Adobe Experience Manager (AEM), you can seamlessly integrate with the follo
 
 * Adobe Analytics provides marketers with actionable, real-time intelligence about online strategies and marketing initiatives.
 * Adobe Target gives marketers the ability to continually make their online content more relevant to their customers — yielding greater conversion.
-* Adobe Scene7 automates media management, streamlines web publishing, and enhances web experiences, all in a hosted environment.
+* Adobe Dynamic Media Classic automates media management, streamlines web publishing, and enhances web experiences, all in a hosted environment.
 * Adobe Dynamic Tag Management gives marketers intuitive tools to quickly and easily manage an unlimited number of Adobe and third-party tags.
 * Adobe Search&Promote gives marketers the ability to control and optimize the search results on their sites.
 * Adobe Campaign lets you manage email delivery content directly in Adobe Experience Manager.
@@ -65,22 +61,15 @@ Opt into the integration with Analytics and/or Target to enable the use of their
 
 For more information, see [Opting Into Adobe Analytics and Adobe Target.](/help/sites-administering/opt-in.md)
 
-## Integrating with Scene7 {#integrating-with-scene}
+## Integrating with Adobe Dynamic Media Classic {#integrating-with-scene}
 
-[Adobe Scene7](https://www.adobe.com/products/scene7.html) is a hosted solution for publishing, managing, enhancing, and delivering dynamic marketing assets and rich visual merchandising to web, mobile, email, social media, Internet-connected displays and print.
+Adobe Dynamic Media Classic is a hosted solution for publishing, managing, enhancing, and delivering dynamic marketing assets and rich visual merchandising to web, mobile, email, social media, Internet-connected displays and print.
 
-In AEM, you can publish digital assets directly from AEM to Scene7 and you can publish digital assets from Scene7 to AEM.
+In Adobe Experience Manager, you can publish digital assets directly from Adobe Experience Manager to Dynamic Media Classic and you can publish digital assets from Dynamic Media Classic to Adobe Experience Manager.
 
-In addition, you can view AEM assets published in Scene7 in various viewers:
+In addition, you can view Adobe Experience Manager assets published in Dynamic Media Classic in various viewers such as Basic Zoom and Video.
 
-* Basic Zoom
-* DHTML Flyout Zoom
-* Flash Flyout Zoom
-* Video
-* Flash Template
-* Image Template
-
-For more information on how AEM integrates with Scene7, see the [Integrating with Scene7 documentation](/help/sites-administering/scene7.md).
+For more information on how Adobe Experience Manager integrates with Dynamic Media Classic, see the [Integrating with Dynamic Media Classic](/help/sites-administering/scene7.md) documentation.
 
 ## Integrating with Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
@@ -94,7 +83,7 @@ The Audience Manager integration has been removed in AEM 6.3.
 
 ## Integrating with Search&Promote {#integrating-with-search-promote}
 
-[Adobe Search&Promote](https://www.omniture.com/en/products/conversion/search-and-promote) enables marketers to optimize how visitors browse, find, compare, and select relevant products and content on web and mobile sites. Businesses can easily promote priority items based on business objectives and visitor intent, as well as automate merchandising and promotions activity via KPI-based triggers or metrics.
+Adobe Search&Promote enables marketers to optimizehow visitors browse, find, compare, and select relevant products and content on web and mobile sites. Businesses can easily promote priority items based on business objectives and visitor intent, as well as automate merchandising and promotions activity via KPI-based triggers or metrics.
 
 Adobe Search&Promote is a reliable and scalable hosted site search application, capable of scaling to millions of pages or products, for heavily visited online businesses ranging from retail to news sites. It offers unprecedented levels of marketer control and metrics-based relevance.
 

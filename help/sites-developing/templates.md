@@ -37,7 +37,7 @@ AEM now offers two basic types of templates for creating pages:
 
 ### Editable Templates {#editable-templates}
 
-Editable templates are now cosidered best practices for developing with AEM.
+Editable templates are now considered best practices for developing with AEM.
 
 The advantages of Editable Templates:
 

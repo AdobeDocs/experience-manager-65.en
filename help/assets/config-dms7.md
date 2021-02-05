@@ -1,14 +1,11 @@
 ---
 title: Configuring Dynamic Media - Scene7 mode
 description: Information on how to configure Dynamic Media - Scene7 mode.
-uuid: ce43c589-d415-4611-9266-b4e8887e4cdc
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
-
 ---
 
 # Configuring Dynamic Media - Scene7 mode{#configuring-dynamic-media-scene-mode}
@@ -67,7 +64,7 @@ See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-i
 
 ## Creating a Dynamic Media Configuration in Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Before you configure Dynamic Media**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+**Before you configure Dynamic Media** &ndash; After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
@@ -81,7 +78,7 @@ See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-i
 
    >[!NOTE]
    >
-   >After you receive your provisioning email with Dynamic Media credentials, please [log into](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that the Dynamic Media cloud service is set up with the correct credentials.
+   >After you receive your provisioning email with Dynamic Media credentials, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that the Dynamic Media cloud service is set up with the correct credentials.
 
 1. When the connection is successful, set the following. Headings with an asterisk (*) are required:
 
@@ -117,7 +114,8 @@ See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-i
 1. Tap **[!UICONTROL Save.]**
 1. To securely preview Dynamic Media content before it gets published, you will need to "allowlist" the AEM author instance to connect to Dynamic Media:
 
-    * Log on to your Dynamic Media Classic account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
+    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
+
     * On the navigation bar near the top right of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server.]**
 
     * On the Image Server Publish page, in the Publish Context drop-down list, select **[!UICONTROL Test Image Serving.]**
@@ -143,15 +141,15 @@ If you want to further customize the configuration and setup of Dynamic Media - 
 
 When you are in runmode `dynamicmedia_scene7`, you use the Dynamic Media Classic (Scene7) user interface to make changes to your Dynamic Media settings.
 
-Some of the tasks above require that you log into Dynamic Media Classic (Scene7) here: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
 Setup and configuration tasks include the following:
 
 * [Publishing setup for Image Server](#publishing-setup-for-image-server)
 * [Configuring application general settings](#configuring-application-general-settings)
 * [Configuring color management](#configuring-color-management)
-* [Configuring asset processing](#configuring-asset-processing)
-* [Adding custom MIME types for unsupported formats](#adding-custom-mime-types-for-unsupported-formats)
+* [Editing MIME types for supported formats](#editing-mime-types-for-supported-formats)
+* [Adding MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats)
 * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### Publishing setup for Image Server {#publishing-setup-for-image-server}
@@ -200,7 +198,8 @@ Dynamic media color management lets you color correct assets. With color correct
 
 To configure the default color properties to enable color correction when requesting images:
 
-1. [Log into Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) using credentials provided during provisioning. Navigate to **[!UICONTROL Setup > Application Setup.]**
+1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account using credentials provided during provisioning. 
+1. Navigate to **[!UICONTROL Setup > Application Setup.]**
 1. Expand the **[!UICONTROL Publish Setup]** area and select **[!UICONTROL Image Server.]** Set **[!UICONTROL Publish Context]** to **[!UICONTROL Image Serving]** when setting defaults for publish instances.
 1. Scroll to the property you need to change, for example a property in the **[!UICONTROL Color Management Attributes]** area.
 
@@ -223,18 +222,18 @@ Doing so would do the following:
 * Dynamic renditions that return RGB output, will return it in the *sRGB *color space.
 * Dynamic renditions that return CMYK output, will return it in the *WebCoated* color space.
 
-#### Configuring asset processing {#configuring-asset-processing}
+#### Editing MIME types for supported formats {#editing-mime-types-for-supported-formats}
 
 You can define which asset types should be processed by Dynamic Media and customize advanced asset processing parameters. For example, you can specify asset processing parameters to do the following:
 
 * Convert an Adobe PDF to an eCatalog asset.
 * Convert an Adobe Photoshop Document (.PSD) to a banner template asset for personalization.
 * Rasterize an Adobe Illustrator file (.AI) or an Adobe Photoshop Encapsulated Postscript file (.EPS).
-* Note: Video Profiles and Imaging Profiles can be used to define processing of videos and images, respectively.
+* [Video Profiles](/help/assets/video-profiles.md) and [Imaging Profiles](/help/assets/image-profiles.md) can be used to define processing of videos and images, respectively.
 
-See [Uploading Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+See [Uploading Assets](/help/assets/manage-assets.md#uploading-assets).
 
-**To configure asset processing**
+**To edit MIME types for supported formats**
 
 1. In AEM, click the AEM logo to access the global navigation console, then click **[!UICONTROL Tools > General > CRXDE Lite.]**
 1. In the left rail, navigate to the following:
@@ -257,11 +256,11 @@ See [Uploading Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets
 
 1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to AEM.
 
-#### Adding custom MIME types for unsupported formats {#adding-custom-mime-types-for-unsupported-formats}
+#### Adding MIME types for unsupported formats {#adding-mime-types-for-unsupported-formats}
 
 You can add custom MIME types for unsupported formats in AEM Assets. To ensure that any new node you add in CRXDE Lite is not deleted by AEM, you must ensure that you move the MIME type before `image_` and its enabled value is set to **[!UICONTROL false.]**
 
-**To add custom MIME types for unsupported formats**
+**To add MIME types for unsupported formats**
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -329,9 +328,9 @@ Two elements are available for definition, Match and Base Name. These fields let
 
 **To configure default naming**
 
-1. Log on to your Dynamic Media Classic (Scene7) account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
-   Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
+   Your credentials and sign in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
 
 1. On the navigation bar near the top of the page, tap **[!UICONTROL Setup > Application Setup > Batch Set Presets > Default Naming.]**
 1. Select **[!UICONTROL View Form]** or **[!UICONTROL View Code]** to specify how you want to view and enter information about each element.
@@ -363,9 +362,9 @@ You can use either the form field method to define a batch set preset or the cod
 
 **To create a Batch Set Preset**
 
-1. Log on to your Dynamic Media Classic (Scene7) account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
-   Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
+   Your credentials and sign in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
 
 1. On the navigation bar near the top of the page, tap **[!UICONTROL Setup > Application Setup > Batch Set Presets > Batch Set Preset.]**
 
@@ -419,9 +418,9 @@ When the Spin Set is uploaded and published, you would activate the name of the 
 
 **To create a Batch Set Preset for the auto-generation of a 2D Spin Set**
 
-1. Log on to your Dynamic Media Classic (Scene7) account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
-   Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
+   Your credentials and sign in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
 
 1. On the navigation bar near the top of the page, click **[!UICONTROL Setup] > [!UICONTROL Application Setup] > [!UICONTROL Batch Set Presets] > [!UICONTROL Batch Set Preset]**.
 
@@ -516,9 +515,11 @@ The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asse
 
 1. In the **[!UICONTROL Maximum Parallel Jobs]** field, change the number to the desired value.
 
-   By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
+   You can increase **[!UICONTROL Maximum Parallel Jobs]** to adequately support heavy upload of files to Dynamic Media. The exact value is dependent on hardware capacity. In certain scenarios&ndash;that is, an initial migration or a one-time bulk upload&ndash;you can use a large value. Be aware, however, that using a large value (such as two times the number of cores) may have negative effects on other concurrent activities. As such, you should test and adjust the value based on your particular use case.
 
-   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7).
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
+
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7). -->
 
    ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -538,9 +539,7 @@ The Granite Workflow queue is used for non-transient workflows. In Dynamic Media
 
 1. In the **[!UICONTROL Maximum Parallel Jobs]** field, change the number to the desired value.
 
-   By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
-
-   For most use cases, the 0.5 default setting is sufficient.
+   You can increase Maximum Parallel Jobs to adequately support heavy upload of files to Dynamic Media. The exact value is dependent on hardware capacity. In certain scenarios–that is, an initial migration or a one-time bulk upload–you can use a large value. Be aware, however, that using a large value (such as two times the number of cores) may have negative effects on other concurrent activities. As such, you should test and adjust the value based on your particular use case.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 

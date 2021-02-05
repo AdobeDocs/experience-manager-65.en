@@ -142,7 +142,7 @@ When creating a new editable template you:
 
 >[!CAUTION]
 >
->Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.
+>Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template. For internalization purposes, the [localization features of the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) are recommended.
 
 ### Creating a Template Folder - Admin {#creating-a-template-folder-admin}
 
@@ -195,13 +195,19 @@ A template can have the following properties:
 
 * Description
 
-    * An optional description to provide more information about the template and its use, which can be seein for example in the **Create Page** wizard.
+    * An optional description to provide more information about the template and its use, which can be seen for example in the **Create Page** wizard.
 
 To view and/or edit the properties:
 
 1. In the **Templates Console**, select the template.
 1. Select **View Properties** from the toolbar or quick options to open the dialog.
 1. You can now view or edit the template properties.
+
+>[!NOTE]
+>
+>Templates are powerful tools to streamline your page creation workflow. However too many templates can overwhelm the authors and make page creation confusing. A good rule of thumb is to keep the number of templates under 100.
+>
+>Adobe does not recommend having more than 1000 templates due to potential performance impacts.
 
 >[!NOTE]
 >
@@ -341,7 +347,7 @@ While the **Page Policy** option on the **Page Information** menu allows you to 
 
 ### Editing a Template - Structure - Template Author {#editing-a-template-structure-template-author}
 
-In **Structure** mode you define components and content for your template and define policy for the template and its compontnes.
+In **Structure** mode you define components and content for your template and define policy for the template and its components.
 
 * Components defined in the template structure cannot be moved on a resulting page nor deleted from any resulting pages.
 * If you want page authors to be able to add and remove components, add a paragraph system to the template.
@@ -380,7 +386,7 @@ In **Structure** mode of the template editor:
 
   >[!NOTE]
   >
-  >Although not identical, adding components and assets to a template has many similiarities to similar actions when [page authoring](/help/sites-authoring/editing-content.md).
+  >Although not identical, adding components and assets to a template has many similarities to similar actions when [page authoring](/help/sites-authoring/editing-content.md).
 
 * **Component Actions**
 
@@ -476,7 +482,7 @@ In **Structure** mode of the template editor:
 
   >[!CAUTION]
   >
-  >Note that in AEM crop ratios are defined as **height/width**. This differs from the conventional definition of width/height and is done for legacy compatability reasons. The page authoring users will not be aware of any difference provided you define the **Name** clearly as this is what is displayed in the UI.
+  >Note that in AEM crop ratios are defined as **height/width**. This differs from the conventional definition of width/height and is done for legacy compatibility reasons. The page authoring users will not be aware of any difference provided you define the **Name** clearly as this is what is displayed in the UI.
 
   >[!NOTE]
   >
@@ -552,7 +558,7 @@ In **Structure** mode of the template editor:
 
   ![chlimage_1-147](assets/chlimage_1-147.png)
 
-  To save space, the layout container does not grow to accomodate the list of allowed components. Rather the container becomes a scrollable list.
+  To save space, the layout container does not grow to accommodate the list of allowed components. Rather the container becomes a scrollable list.
 
   Components that are configurable are shown with a **Policy** icon, which can be tapped or clicked to edit the policy and properties of that component.
 

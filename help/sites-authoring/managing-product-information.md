@@ -344,7 +344,7 @@ This task moves the approved assets to the production-ready folder to make them 
 
 ## Viewing DAM Asset Metadata {#viewing-dam-asset-metadata}
 
-After you approve, the assets are linked to the corresponding products. The [Properties Page](/help/assets/managing-assets-touch-ui.md#editing-properties) of the approved assets now has an additional **Product Data** (linked product information) tab. This tab displays the product details, SKU number, and other product-related details linking the asset. Tap/click the **Edit** icon to update an asset property. The product-related information remains read-only.
+After you approve, the assets are linked to the corresponding products. The [Properties Page](/help/assets/manage-assets.md#editing-properties) of the approved assets now has an additional **Product Data** (linked product information) tab. This tab displays the product details, SKU number, and other product-related details linking the asset. Tap/click the **Edit** icon to update an asset property. The product-related information remains read-only.
 
 Tap/click the link that appears to navigate to the respective product detail page in the product console with which asset is associated.
 

@@ -44,7 +44,7 @@ Enhancements in latest version of Smart Imaging:
 
 ## Are there any licensing costs associated with smart imaging? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-No. Smart Imaging is included with your existing license of either Dynamic Media Classic (Scene7) or AEM Dynamic Media (On Prem, AMS, and AEM as a Cloud Service). 
+No. Smart Imaging is included with your existing license of either Dynamic Media Classic or Adobe Experience Manager -  Dynamic Media (On Prem, AMS, and AEM as a Cloud Service). 
 
 >[!NOTE]
 >
@@ -53,11 +53,23 @@ No. Smart Imaging is included with your existing license of either Dynamic Media
 
 ## How does smart imaging work? {#how-does-smart-imaging-work}
 
-Smart Imaging uses Adobe Sensei to automatically convert images to the most optimal format, size, and quality, based on browser capability:
+When an image is requested by a consumer, we check the user characteristics and convert to the appropriate image format based on the browser in use. These format conversions are done in a manner that does not degrade visual fidelity. Smart imaging automatically converts images to different formats based on browser capability in the following manner.
 
-* Automatically convert to WebP for browsers such as Chrome, Firefox, Microsoft Edge, Android, and Opera.
-* Automatically convert to JPEG2000 for browsers such as Safari.
-* Automatically convert to JPEG for browsers such as Internet Explorer 9+.
+* Automatically convert to WebP for the following browsers:
+  * Chrome
+  * Firefox
+  * Microsoft Edge 
+  * Safari 14.0 +
+    * Safari 14 only with iOS 14.0 and above and macOS BigSur and above
+  * Android
+  * Opera
+* Legacy browser support for the following:
+
+    | Browser | Browser/OS version | Format |
+    | --- | --- | --- |
+    | Safari | iOS 14.0 or earlier | JPEG2000 |
+    | Edge | 18 or earlier | JPEGXR |
+    | Internet Explorer | 9+ | JPEGXR |
 * For browsers that do not support these formats, the originally requested image format is served.
 
 If the original image size is smaller than what Smart Imaging produces, then the original image is served.
@@ -83,11 +95,15 @@ Smart Imaging works with your existing “image presets” and observes all of y
 
 ## Will I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically.
+Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically.
 
-<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
+In case you need to configure a new custom domain to use Smart Imaging, the URLs will need to be updated to reflect this custom domain.
 
 Also, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) to understand pre-requisites for Smart Imaging.
+
+<!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
+
+<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
 ## Does Smart Imaging working with HTTPS? How about HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 
@@ -100,7 +116,7 @@ To use Smart Imaging, your company's Dynamic Media Classic or Dynamic Media on A
 * Use the Adobe-bundled CDN (Content Delivery Network) as part of your license.
 * Use a dedicated domain (for example, `images.company.com` or `mycompany.scene7.com`), not a generic domain (for example, `s7d1.scene7.com`, `s7d2.scene7.com`, or `s7d13.scene7.com`). 
 
-To find your domains, log in to your company account or accounts.  
+To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts.  
   
 Tap **[!UICONTROL Setup > Application Setup > General Settings.]** Look for the field labeled **[!UICONTROL Published Server Name.]** If you are currently using a generic domain, you can request moving over to your own custom domain as part of this transition when you submit a technical support ticket.
 
@@ -116,7 +132,7 @@ You must initiate the request to use smart imaging; it is not automatically enab
     1. Primary contact name, email, phone.
     1. All domains to be enabled for smart imaging (that is, `images.company.com` or `mycompany.scene7.com`).
 
-       To find your domains, log into your company account or accounts. 
+       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts.  
 
        Click **[!UICONTROL Setup > Application Setup > General Settings.]**  
 
@@ -124,7 +140,7 @@ You must initiate the request to use smart imaging; it is not automatically enab
     1. Verify that you are using the CDN through Adobe and not managed with a direct relationship.
     1. Verify you are using a dedicated domain such as `images.company.com` or `mycompany.scene7.com`, and not a generic domain, such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.  
 
-       To find your domains, log into your company account or accounts.
+       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts.
 
        Click **[!UICONTROL Setup > Application Setup > General Settings.]**  
 
@@ -156,7 +172,7 @@ During the initial transition, the non-cached images directly hits Adobe's origi
 
 ## How can I verify whether smart imaging is working as expected?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. After your account is configured with smart imaging, load a Dynamic Media Classic (Scene7)/Dynamic Media image URL on the browser.
+1. After your account is configured with smart imaging, load a Dynamic Media Classic or Adobe Experience Manager - Dynamic Media image URL on the browser.
 1. Open the Chrome developer pane by clicking **[!UICONTROL View > Developer > Developer Tools]** in the browser. Or, choose any browser developer tool of your choice.
 
 1. Ensure that cache is disabled when developer tools is open.

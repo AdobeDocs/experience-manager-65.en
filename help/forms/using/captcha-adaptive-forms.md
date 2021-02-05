@@ -36,6 +36,7 @@ To implement the reCAPTCHA service in AEM Forms:
 1. Create configuration container for cloud services.
 
     1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
+       * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
     1. Do the following to enable the global folder for cloud configurations or skip this step to create and configure another folder for cloud service configurations.
 
         1. In the Configuration Browser, select the **[!UICONTROL global]** folder and tap **[!UICONTROL Properties]**.

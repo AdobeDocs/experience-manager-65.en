@@ -546,11 +546,9 @@ To monitor a replication agent:
    >
    >
    >If a replication test is performed for an Outbox queue, any items that are older than the test replication will be re-processed with every reverse replication.
-
    >
    >
    >If such items already exist in a queue, they can be found with the following XPath JCR query and should be removed.
-
    >
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
@@ -583,32 +581,3 @@ The publisher will unpack all the items, save them and report back to the author
 ## Additional Resources {#additional-resources}
 
 For details about troubleshooting, you can read the [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md) page.
-
-For additional information, Adobe has a series of Knowledge Base articles related to replication:
-
-[https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html](https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html)
-[https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html](https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html)
-[https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html](https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html)
-[https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html](https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html)
-[https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html](https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html)
-[https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html](https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html)
-[https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html](https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html)
-[https://helpx.adobe.com/experience-manager/kb/replication-stuck.html](https://helpx.adobe.com/experience-manager/kb/replication-stuck.html)
-[https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html](https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html)
-[https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html](https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html)
-[https://helpx.adobe.com/experience-manager/kb/ACLReplication.html](https://helpx.adobe.com/experience-manager/kb/ACLReplication.html)
-[https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html](https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html)
-[https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html](https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html)
-https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html
-https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html
-https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html
-https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html
-https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html
-https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html
-https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html
-https://helpx.adobe.com/experience-manager/kb/replication-stuck.html
-https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html
-https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html
-https://helpx.adobe.com/experience-manager/kb/ACLReplication.html
-https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html
-https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html

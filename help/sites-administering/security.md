@@ -198,7 +198,7 @@ Actions can be performed on a page (resource). For each page in the hierarchy, y
 
 >[!NOTE]
 >
->AEM automatically generates user groups for role-assignment (Owner, Editor, Viewer) in [Collections](/help/assets/managing-collections-touch-ui.md). However, manually adding ACLs for such groups can introduce security vulnerabilities within AEM. Adobe recommends that you avoid adding ACLs manually.
+>AEM automatically generates user groups for role-assignment (Owner, Editor, Viewer) in [Collections](/help/assets/manage-collections.md). However, manually adding ACLs for such groups can introduce security vulnerabilities within AEM. Adobe recommends that you avoid adding ACLs manually.
 
 ### Access Control Lists and how they are evaluated {#access-control-lists-and-how-they-are-evaluated}
 

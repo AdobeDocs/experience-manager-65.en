@@ -1,8 +1,8 @@
 ---
 title: User Manager Java API Quick Start(SOAP)
 seo-title: User Manager Java API Quick Start(SOAP)
-description: null
-seo-description: null
+description: Use User Manager API to add users, delete users, create groups, manage users and groups, manage roles and permissions, synchronize users programmatically, and manage the Preferences Nodes programmatically.
+seo-description: Use User Manager API to add users, delete users, create groups, manage users and groups, manage roles and permissions, synchronize users programmatically, and manage the Preferences Nodes programmatically.
 uuid: 0a2aa4ab-9329-485f-a30e-47bb471ce1b5
 contentOwner: admin
 content-type: reference

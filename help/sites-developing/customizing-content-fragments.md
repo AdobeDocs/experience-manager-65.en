@@ -19,7 +19,7 @@ A content fragment extends a standard asset; see:
 
 * [Creating and Managing Content Fragments](/help/assets/content-fragments/content-fragments.md) and [Page Authoring with Content Fragments](/help/sites-authoring/content-fragments.md) for further information about content fragments.
 
-* [Managing Assets](/help/assets/managing-assets-touch-ui.md) and [Customizing and Extending Assets](/help/assets/extending-assets.md) for further information about standard assets.
+* [Managing Assets](/help/assets/manage-assets.md) and [Customizing and Extending Assets](/help/assets/extending-assets.md) for further information about standard assets.
 
 ## Architecture {#architecture}
 

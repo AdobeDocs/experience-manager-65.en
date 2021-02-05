@@ -279,6 +279,14 @@ In the classic UI with ExtJS, it was usual to have listeners for a given widget 
 
 The content structure describes the semantic structure; it should (must) not imply the nature of the underlying widget. By not having JS code in the content structure, you can change the implementation details without having to change the content structure. In other words, you can change the widget library without needing to touch the content structure.
 
+#### Detecting Availability of the Dialog {#dialog-ready}
+
+If you have a custom JavaScript that needs to be executed only when the dialog is available and ready, you should listen for the `dialog-ready` event.
+
+This event is triggered  whenever the dialog loads (or re-loads) and is ready for use, which means whenever there is a change (create/update) in the DOM of the dialog.
+
+`dialog-ready` can be used to hook in JavaScript custom code that performs customizations on the fields inside a dialog or similar tasks.
+
 ### Field Validation {#field-validation}
 
 #### Mandatory Field {#mandatory-field}
