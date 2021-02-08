@@ -191,7 +191,7 @@ Backslash escapes are available for the following characters:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`\ backslash`
 
-&nbsp;&nbsp;&nbsp;&nbsp;` backtick
+&nbsp;&nbsp;&nbsp;&nbsp;`` ` backtick``
 
 &nbsp;&nbsp;&nbsp;&nbsp;`* asterisk`
 
