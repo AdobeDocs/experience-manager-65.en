@@ -21,6 +21,10 @@ contentOwner: AG
 * Perform image editing functions such as scaling and adding image filters. Import and export multiple digital assets simultaneously using a WebDAV or CIFS folder.
 * Use workflows and notifications to allow joint processing and downloading of any set of assets and manage access rights to assets.
 
+See how Experience Manager Assets offering as a modern DAM solution helps you manage your digital assets.
+
+>[!VIDEO](https://www.youtube.com/embed/PBwQqZgC-yo)
+
 ### [!DNL Experience Manager Assets] is integrated with [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
 
 [!DNL Assets] completely integrates with [!DNL Sites] and works seamlessly for all use cases. For example, when authoring web pages, the [!DNL Sites] authors can find and use the digital assets via the Content Finder. The user interface of [!DNL Assets] is the same as that of [!DNL Sites]. See [overview of Sites](/help/sites-authoring/page-authoring.md) for full details.
