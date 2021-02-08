@@ -16,7 +16,7 @@ To be able to apply watermark on assets, add the watermarking step in the [!UICO
 1. From the side panel, drag the **[!UICONTROL Add Watermark]** step to the [!UICONTROL DAM Update Asset] workflow.
 
    ![Drag the [!UICONTROL Add Watermark] step and add to the [!UICONTROL DAM Update Asset] workflow](assets/add_watermark_step_aem_assets.png)
-2
+
    *Figure: Drag the [!UICONTROL Add Watermark] step and add to the [!UICONTROL DAM Update Asset] workflow.*
 
    >[!NOTE]
@@ -26,7 +26,7 @@ To be able to apply watermark on assets, add the watermarking step in the [!UICO
 1. Open the **[!UICONTROL Add Watermark]** step to display its properties.
 1. In the **[!UICONTROL Arguments]** tab, specify valid values in the various fields, including text, font type, size, color, position, orientation, and so on. To confirm the changes, click **[!UICONTROL Done]**.
 
-   ![Provide the arguments in the add watermark step in Assets](assets/arguments_add_watermark_aem_assets.png)
+   ![Provide the arguments in the add watermark step in [!DNL Assets]](assets/arguments_add_watermark_aem_assets.png)
 
    *Figure: Provide the arguments in the add watermark step in [!DNL Assets].*
 
@@ -34,3 +34,8 @@ To be able to apply watermark on assets, add the watermarking step in the [!UICO
 1. From the [!DNL Assets] user interface, upload a sample asset. The watermark appears with the font size, color and so on, at the position you configured in the above steps.
 
 To watermark PDF documents programmatically or with dynamic information, consider using [Experience Manager Document Services](/help/forms/using/overview-aem-document-services.md) offering.
+
+## Tips and limitations {#tips-limitations}
+
+* Only text-based watermarks are supported. Images are not used as watermarks, even though you can upload images when creating the [!UICONTROL Add Watermark Process].
+* Only PNG and JPEG files are supported to be watermarked. Other asset formats are not watermarked.
