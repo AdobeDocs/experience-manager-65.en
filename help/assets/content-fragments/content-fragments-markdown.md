@@ -189,24 +189,25 @@ You can use backslash escapes to generate literal characters which have special 
 
 Backslash escapes are available for the following characters:
 
-&nbsp;&nbsp;&nbsp;&nbsp;`\ backslash`
+&nbsp;&nbsp;&nbsp;&nbsp;` \ backslash`
 
-&nbsp;&nbsp;&nbsp;&nbsp;` backtick
+&nbsp;&nbsp;&nbsp;&nbsp;`` ` backtick``
 
-&nbsp;&nbsp;&nbsp;&nbsp;`* asterisk`
+&nbsp;&nbsp;&nbsp;&nbsp;` * asterisk`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`_ underscore`
+&nbsp;&nbsp;&nbsp;&nbsp;` _ underscore`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`{} curly braces`
+&nbsp;&nbsp;&nbsp;&nbsp;` {} curly braces`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`[] square brackets`
+&nbsp;&nbsp;&nbsp;&nbsp;` [] square brackets`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`() parentheses`
+&nbsp;&nbsp;&nbsp;&nbsp;` () parentheses`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`# hash mark`
+&nbsp;&nbsp;&nbsp;&nbsp;` # hash mark`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`+ plus sign`
+&nbsp;&nbsp;&nbsp;&nbsp;` + plus sign`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`- minus sign (hyphen)`
+&nbsp;&nbsp;&nbsp;&nbsp;` - minus sign (hyphen)`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`. dot`
+&nbsp;&nbsp;&nbsp;&nbsp;` . dot`
+
