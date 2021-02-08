@@ -1,5 +1,5 @@
 ---
-title: Introduction to [!DNL Adobe Experience Manager Assets].
+title: Introduction to [!DNL Adobe Experience Manager Assets]
 description: Learn what is digital asset management, its use cases, and [!DNL Adobe Experience Manager Asset] offering.
 contentOwner: AG
 ---
@@ -31,7 +31,7 @@ The basic user interface is the same as that of [!DNL Sites]. See [Overview of t
 
 When determining whether to put an image into DAM repository or use image component, consider the image lifecycle:
 
-* If the image has the same lifecycle as the page, use the Image Component.
+* If the image has the same lifecycle as the page, use the Image component.
 * If the image has a separate life cycle, for example, if you use the image twice or outside WCM, use [!DNL Assets].
 
 ## What are digital assets? {#what-are-digital-assets}
@@ -60,11 +60,11 @@ When working with digital assets in [!DNL Experience Manager], you need to under
 
 * **Renditions**: A rendition is the binary representation of an asset. [!DNL Assets] always have a primary representation - that of the uploaded file. They can have any number of additional representations that are created, for example by customized workflow steps or when an asset is uploaded. Renditions may be of a different size, with a different resolution, with an added watermark, or some other changed characteristic.
 
-* **Versions**: Versioning creates a snapshot of digital assets at a specific point in time. You can restore assets to previous versions. See [versioning in Assets](manage-assets.md#asset-versioning).
+* **Versions**: Versioning creates a snapshot of digital assets at a specific point in time. You can restore assets to previous versions. See [versioning in [!DNL Assets]](manage-assets.md#asset-versioning).
 
 * **Sub-assets**: Sub-assets are assets that make up an asset, for example, layers in an [!DNL Adobe Photoshop] file or pages in a PDF file. In [!DNL Assets], you can manage sub-assets as you would assets.
 
-### How to work with assets {#how-to-work-with-assets}
+### How to work with digital assets {#how-to-work-with-assets}
 
 You perform an action on an asset or collection. Actions can create or modify assets, collections, and renditions. Many of the basic actions you perform on assets - upload, delete, update, save sub-assets - trigger pre-configured workflows. These are automatically turned on in [!DNL Assets] and are described in detail in [!DNL Assets] media handlers.
 
@@ -75,8 +75,8 @@ The tasks you can perform with these pre-configured workflows:
 * Generate renditions and thumbnails for the asset; including automatic resizing and cropping where necessary.
 * Transcode the asset where necessary. For example, video for mobile and web usage is transcoded with 24 frames per second, download video with 30 frames per second. Audio for mobile and web usage is transcoded with 128 Kbps, audio for download with 192 Kbps.
 
-Of course, you can apply workflows manually as well. See [Assets Media Handlers](/help/assets/media-handlers.md)for a list of default workflows.
+Of course, you can apply workflows manually as well. See [Assets Media Handlers](media-handlers.md)for a list of default workflows.
 
-## [!DNL Experience Manager Assets] and [!DNL MediaLibrary] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] and [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-See [Assets and MediaLibrary](/help/assets/medialibrary.md) for information on the differences.
+See [Assets and Media Library](medialibrary.md) for information on the differences.
