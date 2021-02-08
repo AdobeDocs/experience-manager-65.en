@@ -23,6 +23,10 @@ Perform the following tasks to control how and when live copies are synchronized
 
 This section provides information about the installed rollout configurations and the synchronization actions that they use, and how to create custom configurations if required.
 
+>[!CAUTION]
+>
+>Updating or changing an out of the box (installed) rollout configuration is **not** recommended. If there is a requirement for a custom live action then it should be added in a custom rollout configuration.
+
 ### Rollout Triggers {#rollout-triggers}
 
 Each rollout configuration uses a rollout trigger that causes the rollout to occur. Rollout configurations can use one of the following triggers:
