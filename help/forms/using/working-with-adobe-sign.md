@@ -32,6 +32,8 @@ In a typical [!DNL Adobe Sign] and adaptive forms scenario, a user fills an adap
 * Dynamic signing processes (integration with AEM [!DNL Forms] workflow)
 * Authentication through a knowledge base, phone, and social profiles
 
+Learn the [best practices of using Adobe Sign with adaptive forms](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684) to create better signing experiences.
+
 ## Prerequisites {#prerequisites}
 
 Before using [!DNL Adobe Sign] in an adaptive form:
@@ -352,5 +354,5 @@ When [!DNL Adobe Sign] is configured for an adaptive form, the workflow configur
 ## Related Articles {#related-articles}
 
 * [Integrate Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
-* [Using Adobe Sign in an adaptive form](../../forms/using/working-with-adobe-sign.md)
+* [Best practices for using Adobe Sign with adaptive forms](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 * [Using Adobe Sign with AEM Forms (Video)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)

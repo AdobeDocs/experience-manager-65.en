@@ -67,9 +67,9 @@ user-guide-description: Learn key concepts for creating content and authoring in
     + [Working with Workflows](workflows.md)
     + [Applying Workflows to Pages](workflows-applying.md)
     + [Participating in Workflows](workflows-participating.md)
-    + [Working with Project Workflows](projects-with-workflows.md)
+    + [Working with Project Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html)
 + Page Performance {#page-performance}
-    + [Content Insight](content-insights.md)
+    + [Content Insight](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html)
     + [Analyzing Page Performance](ci-analyze.md)
     + [Seeing Page Analytics Data](pa-using.md)
     + [Adding Search&Promote Features To Your Page](search-and-promote.md)
