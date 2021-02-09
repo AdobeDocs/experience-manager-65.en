@@ -40,6 +40,8 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
   * Converting a PDF form to an adaptive form using the [!DNL Automated Forms Conversion service].
 
+* Support for Microsoft SQL Server 2019 in [!DNL Experience Manager Forms].
+
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.22.5.
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.7.0, see [What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 7](new-features-latest-service-pack.md).

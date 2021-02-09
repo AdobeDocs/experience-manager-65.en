@@ -47,6 +47,10 @@ You can now perform the page moves and MSM rollouts as asynchronous operations t
 
 You can now use the reset option for each component in Layout mode of an adaptive form. When you define a multicolumn layout for a panel, you can use this feature to reset individual components within the panel. See [Use layout mode to resize components](../../help/forms/using/resize-using-layout-mode.md#resize-components).
 
+### Support for Microsoft SQL Server 2019
+
+[!DNL Experience Manager Forms] now supports Microsoft SQL Server 2019.
+
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
