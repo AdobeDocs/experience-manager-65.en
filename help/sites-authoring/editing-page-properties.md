@@ -48,6 +48,14 @@ The properties are distributed across several tabs.
 
   Indicates whether the page is shown or hidden in the page navigation of the resulting site.
 
+* **Branding**
+
+  Apply a consistent brand identity across pages by appending a brand slug to each page title. This functionality requires use of the Page Component from release 2.14.0 or later of the [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+
+  * **Override** - Check to define the brand slug on this page.
+    * The value will be inherited by any child pages unless they also have their **Override** values set.
+  * **Override value** - The text of the brand slug to be appended to the page title.
+    * The value is appended to the page title after a pipe character such as "Cycling Tuscany | Always ready for the WKND"
 * **Page Title**
 
   A title to be used on the page. Typically used by title components. If empty the **Title** will be used.
