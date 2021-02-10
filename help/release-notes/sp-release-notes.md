@@ -53,6 +53,10 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 * Similarity search does not work after editing [!UICONTROL Assets Admin Search Rail]. (NPR-35588)
 * From within a folder if you open asset search in the left rail by clicking [!UICONTROL Filter], the filter in [!UICONTROL Status] > [!UICONTROL Checkout] > [!UICONTROL Checked out] does not work. (NPR-35530)
 * If you attempt to delete all Smart Tags of an asset and save the changes, the tags are not removed even though the user interface indicates that the changes are saved. (NPR-35519)
+* Users are not able to rearrange or sort assets in list view in an orderable folder. (NPR-35516)
+* If you edit the default metadata schema, the tags field in asset's Properties page changes into a text field. This allows unaware users to add tags in an ad-hoc manner and tags are stored as a string in the repository. (NPR-35478)
+* When downloading an asset, if you provide a name that does not have a valid email address, the download option is unavailable. However, if another option in the download dialog is selected, the button is enabled, but an email is not sent. (NPR-35365)
+Users are unable to check-in assets after editing those in [!DNL Adobe InDesign] and receive error about lack of permissions. (NPR-35341)
 
 #### [!DNL Dynamic Media] {#dynamic-media-6580}
 
