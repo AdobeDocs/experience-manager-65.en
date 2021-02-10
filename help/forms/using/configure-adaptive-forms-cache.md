@@ -39,8 +39,7 @@ You can also configure adaptive form caching at dispatcher for additional perfor
 
 ### Pre-requisites {#pre-requisites}
 
-* Enable the [merging or prefilling data at client](prepopulate-adaptive-form-fields.md#prefill-at-client) option. It helps merge unique data for each instance of a pre-filled form. 
-* [Enable flush agent for every publish instance](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance). It helps gain better caching performance for adaptive forms. The default URL of flush agents is `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
+* Enable the [merging or prefilling data at client](prepopulate-adaptive-form-fields.md#prefill-at-client) option. It helps merge unique data for each instance of a pre-filled form.
 
 ### Considerations for caching adaptive forms on a dispatcher {#considerations}
 
@@ -57,7 +56,7 @@ You can also configure adaptive form caching at dispatcher for additional perfor
 
 Perform the below listed steps to enable and configure caching  adaptive forms on dispatcher:
 
-1. Open the following URL for every publish instance of you environment and configure the replication agent:
+1. Open the following URL for every publish instance of you environment and [enable flush agent for publish instances of your environment](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [Add the following to your dispatcher.any file](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
@@ -141,17 +140,7 @@ When you select and add images or videos via asset browser to an adaptive form a
 
 After publishing the images and video, explicitly unpublish and publish the adaptive forms that reference these assets. 
 
-### Some adaptive forms containing content fragment or experience fragments are not automatically invalidated from dispatcher cache {#content-or-experience-fragment-not-auto-invalidated}
-
-#### Issue {#issue2}
-
-When you add a content fragment or an experience fragment to an adaptive form and these assets are independently edited and published, adaptive forms containing such assets not invalidated from dispatcher cache automatically.
-
-#### Solution {#Solution2}
-
-After publishing updated content fragment or experience fragment, explicitly unpublish and publish the adaptive forms that use these assets.
-
-### Only first instance of an adaptive form is cached{#only-first-insatnce-of-adptive-forms-is-cached}
+### Only first instance of an adaptive form is cached {#only-first-instance-of-adaptive-forms-is-cached}
 
 #### Issue {#issue3}
 

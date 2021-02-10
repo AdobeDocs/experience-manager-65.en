@@ -35,6 +35,10 @@ Description
 
 Description
 
+### Support for Microsoft SQL Server 2019
+
+[!DNL Experience Manager Forms] now supports Microsoft SQL Server 2019.
+
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
