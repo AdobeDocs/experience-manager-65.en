@@ -22,13 +22,13 @@ mini-toc-levels: 1
 
 [!DNL Adobe Experience Manager] 6.5.8.0 is an important update that includes new features, key customer requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
 
-The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.8.0 includes:
+The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.8.0 are:
 
 * key feature 1
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.22.5.
 
-For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.8.0, see [What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8](new-features-latest-service-pack.md).
+For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.8.0, see [What is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8](new-features-latest-service-pack.md).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0 release.
 
@@ -46,6 +46,11 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 * `IndexWriter.merge` causes `OutOfMemoryError` error as smart tagging functionality creates large `/oak:index/lucene` and `/oak:index/ntBaseLucene` indices. . (NPR-35709)
 * An error message is displayed when trying to save an [!UICONTROL Asset Contribution] type folder with multibyte characters in the name. (NPR-35605)
 * When cascading metadata sub-type fields are used, an incorrect 'Please fill out this field' error occurs. (NPR-35643)
+* When an existing asset is dragged on the [!DNL Assets] user interface and a new version is created, the changes in the metadata are not persistent (NPR-34940).
+* When creating rules in metadata schema editor for a cascading menu, the [!UICONTROL Dependant On] option repeats the same name. (NPR-35596)
+* Similarity search does not work after editing [!UICONTROL Assets Admin Search Rail]. (NPR-35588)
+* From within a folder if you open asset search in the left rail by clicking [!UICONTROL Filter], the filter in [!UICONTROL Status] > [!UICONTROL Checkout] > [!UICONTROL Checked out] does not work. (NPR-35530)
+* If you attempt to delete all Smart Tags of an asset and save the changes, the tags are not removed even though the user interface indicates that the changes are saved. (NPR-35519)
 
 #### [!DNL Dynamic Media] {#dynamic-media-6580}
 
@@ -99,9 +104,9 @@ For information on security updates, see [Experience Manager security bulletins 
 
 **Setup requirements and more information**
 
-* AEM 6.5.8.0 requires AEM 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
+* Experience Manager 6.5.8.0 requires Experience Manager 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
 * The service pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* On a deployment with MongoDB and multiple instances, install AEM 6.5.8.0 on one of the Author instances using the Package Manager.
+* On a deployment with MongoDB and multiple instances, install Experience Manager 6.5.8.0 on one of the Author instances using the Package Manager.
 
 >[!NOTE]
 >
@@ -153,11 +158,7 @@ To know the platforms certified to work with this release, see the [technical re
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
-
->[!NOTE]
->
->Skip if you are not using AEM Forms. Fixes in Adobe Experience Manager Forms are delivered through a separate add-on package.
+>Skip if you are not using Experience Manager Forms. Fixes in Experience Manager Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
 1. Ensure that you have installed the Adobe Experience Manager Service Pack.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
@@ -202,8 +203,8 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 | Area | Feature | Replacement |
 |---|---|---|
-| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated. With the AEM and Target integration updated in AEM 6.5 to support the Target Standard API, which uses authentication via Adobe IMS and I/O, and the growing role of Adobe Launch for instrumenting AEM pages for analytics and personalization, the Opt-In wizard has become functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O] integrations via the respective AEM cloud services. |
-| Connectors | The Adobe JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013 is deprecated for AEM 6.5. | N/A |
+| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated. With the Experience Manager and Adobe Target integration updated in Experience Manager 6.5 to support the Adobe Target Standard API, which uses authentication via Adobe IMS and I/O, and the growing role of Adobe Launch for instrumenting Experience Manager pages for analytics and personalization, the Opt-In wizard has become functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O] integrations via the respective Experience Manager cloud services. |
+| Connectors | The Adobe JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013 is deprecated for Experience Manager 6.5. | N/A |
 
 ## Known issues {#known-issues}
 
@@ -245,8 +246,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * If [!UICONTROL Connected assets configuration] wizard returns a 404 error message after installation, manually reinstall the `cq-remotedam-client-ui-content` and `cq-remotedam-client-ui-components` packages using the Package Manager.
 
-* The following errors and warning messages may display during installation of AEM 6.5.x.x:
-  * “When the Target integration is configured in AEM using the Target Standard API (IMS authentication), then exporting Experience Fragments to Target results in wrong offer types getting created. Instead of type “Experience Fragment”/source “Adobe Experience Manager,” Target creates several offers with type “HTML”/source “Adobe Target Classic.”
+* The following errors and warning messages may display during installation of Experience Manager 6.5.x.x:
+  * “When the Adobe Target integration is configured in Experience Manager using the Target Standard API (IMS authentication), then exporting Experience Fragments to Target results in wrong offer types getting created. Instead of type “Experience Fragment”/source “Adobe Experience Manager,” Target creates several offers with type “HTML”/source “Adobe Target Classic.”
   * `com.adobe.granite.maintenance.impl.TaskScheduler`: No maintenance windows found at granite/operations/maintenance.
   * Adaptive Form server-side validation fails when aggregate functions such as SUM, MAX, and MIN are used. CQ-4274424
   * `com.adobe.granite.maintenance.impl.TaskScheduler` - No maintenance windows found at granite/operations/maintenance.
@@ -254,11 +255,11 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
-The following text documents list the OSGi bundles and Content Packages included in AEM 6.5.8.0:
+The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.8.0:
 
-* [List of OSGi bundles included in AEM 6.5.8.0](assets/6570_bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.8.0](assets/6570_bundles.txt)
 
-* [List of Content Packages included in AEM 6.5.8.0](assets/6570_packages.txt)
+* [List of Content Packages included in Experience Manager 6.5.8.0](assets/6570_packages.txt)
 
 ## Restricted websites {#restricted-sites}
 
