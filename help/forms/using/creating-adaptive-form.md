@@ -1,13 +1,9 @@
 ---
-title: Creating an adaptive form
-seo-title: Creating an adaptive form
-description: How to create an adaptive form using AEM Forms. Adaptive forms are responsive HTML5 forms that streamline information gathering and processing.
-seo-description: How to create an adaptive form using AEM Forms. Adaptive forms are responsive HTML5 forms that streamline information gathering and processing.
-uuid: 444f461a-9e88-4385-b5ee-e985067ab7bc
-content-type: reference
-topic-tags: author
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
-discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
+title: How to Create an Adaptive Form
+description: Learn how to create an adaptive form using [!DNL Experience Manager Forms]. Adaptive forms are responsive HTML5 forms that streamline information gathering and processing. Dig deeper on how to create an adaptive form based on a form data model, XFA form template, and XML or JSON schema. 
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner
 ---
 
 # Creating an adaptive form {#creating-an-adaptive-form}
@@ -16,35 +12,35 @@ discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 
 Follow these steps to create an adaptive form.
 
-1. Access AEM Forms Author instance at `https://'[server]:[port]'/<custom-context-if-any>.`
+1. Access [!DNL Experience Manager Forms] Author instance at `https://'[server]:[port]'/<custom-context-if-any>.`
 
-1. Enter your credentials on the AEM login page.
+1. Enter your credentials on the Experience Manager login page.
 
-   After you are logged in, in the top-left corner, tap **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+   After you are logged in, in the upper-left corner, tap **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
 
    >[!NOTE]
    >
    >For a default installation, the login is `admin` and the password is `admin`.
 
 1. Tap **[!UICONTROL Create]** and select **[!UICONTROL Adaptive Form]**.
-1. An option to select a template appears. For more information about templates, see [Adaptive form templates](/help/forms/using/creating-adaptive-form.md#p-adaptive-form-templates-p). Tap a template to select it and tap Next.
+1. An option to select a template appears. For more information about templates, see [Adaptive form templates](creating-adaptive-form.md#p-adaptive-form-templates-p). Tap a template to select it and tap Next.
 1. An option to 'Add Properties' appears. Specify the values for following property fields. The Title and Name fields are mandatory:
 
-    * **[!UICONTROL Title:]** Specifies the display name of the form. The title helps you identify the form in the AEM Forms user interface.
+    * **[!UICONTROL Title:]** Specifies the display name of the form. The title helps you identify the form in the [!DNL Experience Manager Forms] user interface.
     * **[!UICONTROL Name:]** Specifies the name of the form. A node with the specified name is created in the repository. As you start typing a title, value for the name field is automatically generated. You can change the suggested value. The name field can include only alphanumeric characters, hyphens, and underscores. All the invalid inputs are replaced with a hyphen.
     * **[!UICONTROL Description:]** Specifies the detailed information about the form.
-    * **[!UICONTROL Tags:]** Specifies tags to uniquely identify the adaptive form. Tags help in searching the form. To create tags, type new tag names in the **Tags** box.
+    * **[!UICONTROL Tags:]** Specifies tags to uniquely identify the adaptive form. Tags help in searching the form. To create tags, type new tag names in the **[!UICONTROL Tags]** box.
 
 1. You can create an adaptive form based on one of following form models:
 
     * [Form data model](#fdm)
-    * [XFA form template](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p)
-    * [XML or JSON schema](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-xml-or-json-schema-p)
+    * [XFA form template](#create-an-adaptive-form-based-on-an-xfa-form-template)
+    * [XML or JSON schema](#create-an-adaptive-form-based-on-xml-or-json-schema)
     * None or without any form model
 
    You can configure these from the **[!UICONTROL Form Model]** tab on the **[!UICONTROL Add Properties]** page. By default, the form model selected is **[!UICONTROL None]**.
 
-1. Tap **Create**. An adaptive form is created and a dialog to open the form for editing appears.
+1. Tap **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears.
 
    Once you have finished specifying all the properties, click **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears.
 
@@ -54,7 +50,7 @@ Follow these steps to create an adaptive form.
 
    Based on the type of adaptive form, the form elements present in the associated XFA form template, XML schema, or JSON schema are displayed in the **[!UICONTROL Data Model Objects]** tab of the **[!UICONTROL Content Browser]** in the sidebar. You can also drag-drop these elements to build your adaptive form.
 
-   For information about adaptive form authoring interface and available components, see [Introduction to authoring adaptive forms](/help/forms/using/introduction-forms-authoring.md).
+   For information about adaptive form authoring interface and available components, see [Introduction to authoring adaptive forms](introduction-forms-authoring.md).
 
    >[!NOTE]
    >
@@ -62,7 +58,7 @@ Follow these steps to create an adaptive form.
 
 ## Create an adaptive form based on a form data model {#fdm}
 
-[AEM Forms data integration](/help/forms/using/data-integration.md) lets you integrate multiple data sources and bring their entities and services together to create a form data model. It is an extension of JSON schema. You can use a form data model to create an adaptive form. The entities or data model objects configured in a form data model are available as data model objects for form authoring. They are bound to respective data sources and used to prefill a form and write submitted data back to the respective data sources. You can also invoke services configured in a form data model using adaptive form rules.
+[[!DNL Experience Manager Forms] data integration](data-integration.md) lets you integrate multiple data sources and bring their entities and services together to create a form data model. It is an extension of JSON schema. You can use a form data model to create an adaptive form. The entities or data model objects configured in a form data model are available as data model objects for form authoring. They are bound to respective data sources and used to prefill a form and write submitted data back to the respective data sources. You can also call services configured in a form data model using adaptive form rules.
 
 To use a form data model for creating an adaptive form:
 
@@ -84,9 +80,9 @@ To use a form data model for creating an adaptive form:
 
 You can repurpose your XFA form templates to create adaptive forms. To repurpose, upload and associate an XFA form template with an adaptive form. The elements of the Form Template (XFA form) are made available for use in the content finder at the time of adaptive form authoring. From the Content Finder, you can drag-and-drop the form template elements on the form.
 
->[!NOTE]
+<!-- >>[!NOTE]
 >
->[Upload the XFA Form Template](/help/forms/using/get-xdp-pdf-documents-aem.md) to AEM Forms before you start creating an adaptive form based on the form template.
+>[Upload the XFA Form Template](get-xdp-pdf-documents-aem.md) to AEM Forms before you start creating an adaptive form based on the form template.
 
 Do the following to use an XFA form template as form model for your adaptive form:
 
@@ -98,7 +94,7 @@ Do the following to use an XFA form template as form model for your adaptive for
 
    >[!NOTE]
    >
-   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model).
+   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model). --> 
 
 ## Create an adaptive form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
@@ -106,8 +102,8 @@ XML and JSON schemas represent the structure in which data is produced or consum
 
 See the following documents to understand how to design XML or JSON schema for authoring adaptive forms.
 
-* [Creating adaptive forms using XML schema](/help/forms/using/adaptive-form-xml-schema-form-model.md)
-* [Creating adaptive forms using JSON schema](/help/forms/using/adaptive-form-json-schema-form-model.md)
+* [Creating adaptive forms using XML schema](adaptive-form-xml-schema-form-model.md)
+* [Creating adaptive forms using JSON schema](adaptive-form-json-schema-form-model.md)
 
 Do the following to use XML or JSON schema as form model for an adaptive form:
 
@@ -117,7 +113,7 @@ Do the following to use XML or JSON schema as form model for an adaptive form:
 1. Tap **[!UICONTROL Select Schema]** and do one of the following:
 
     * **[!UICONTROL Upload from disk]** - Select this option and tap Upload Schema Definition to browse and upload an XML schema or JSON schema from your file system. The uploaded schema file resides with the form and is not accessible to other adaptive forms.
-    * **[!UICONTROL Search in repository]** - Select this option to select from the list of schema definition files available in the repository. Select the XML or JSON schema file as form model. The selected schema will be associated with the form by reference and will be accessible for use in other adaptive forms.
+    * **[!UICONTROL Search in repository]** - Select this option to select from the list of schema definition files available in the repository. Select the XML or JSON schema file as form model. The selected schema is associated with the form by reference and is accessible for use in other adaptive forms.
 
    >[!CAUTION]
    >
@@ -137,13 +133,13 @@ Do the following to use XML or JSON schema as form model for an adaptive form:
 
 ## Adaptive form templates {#adaptive-form-templates}
 
-A template provides a basic structure and defines appearance (layouts and styles) of an adaptive form. It has pre-formatted components containing certain properties and content structure. Out of the box, AEM Forms provides some adaptive form templates. To get the complete template package including advanced templates, you need to install the AEM Forms add-on package. For more information, see [Installing AEM Forms add-on package](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+A template provides a basic structure and defines appearance (layouts and styles) of an adaptive form. It has pre-formatted components containing certain properties and content structure. <!-- Out of the box, AEM Forms provides some adaptive form templates. To get the complete template package including advanced templates, you need to install the AEM Forms add-on package. For more information, see [Installing AEM Forms add-on package](installing-configuring-aem-forms-osgi.md).-->
 
-In addition, you can use the template editor to create your own templates. For more information about working with templates, see [Adaptive form templates](/help/forms/using/template-editor.md).
+In addition, you can use the template editor to create your own templates. For more information about working with templates, see [Adaptive form templates](template-editor.md).
 
 >[!NOTE]
 >
->When you open an adaptive form created using the advanced template for editing, an error message appears. The advanced template has a Signature Step component and Adobe Sign is enabled for it by default. Create and select an [Adobe Sign cloud configuration](/help/forms/using/adobe-sign-integration-adaptive-forms.md) and [configure a signer](working-with-adobe-sign.md#addsignerstoanadaptiveform) to resolve the error.
+>When you open an adaptive form created using the advanced template for editing, an error message appears. The advanced template has a Signature Step component and Adobe Sign is enabled for it by default. Create and select an [Adobe Sign cloud configuration](adobe-sign-integration-adaptive-forms.md) and [configure a signer](working-with-adobe-sign.md#addsignerstoanadaptiveform) to resolve the error.
 
 ## Edit Form Model properties of an adaptive form {#edit-form-model}
 
@@ -183,7 +179,7 @@ By default, the auto save option is not enabled. You can enable the auto save op
     * Specify a time interval if you select **[!UICONTROL Time based]** trigger.
     * Specify an event name if you select **[!UICONTROL Event based]** trigger.
 
-   You can also create and add your own custom strategy to the list. For details, see [Implement a custom strategy to autosave the forms](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
+   <!-- You can also create and add your own custom strategy to the list. For details, see [Implement a custom strategy to autosave the forms](auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p). -->
 
 1. (Time-based autosave only) Perform the following steps to configure options for the Time-based autosave.
 
@@ -191,12 +187,12 @@ By default, the auto save option is not enabled. You can enable the auto save op
 
 1. (Event-based auto save only) Perform the following steps to configure options for Event-based auto save.
 
-    1. In the **Auto save after this event** box, specify a [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) event. The form is saved every time the expression evaluates to TRUE.
+    1. In the **[!UICONTROL Auto save after this event]** box, specify a [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) event. The form is saved every time the expression evaluates to TRUE.
 
-1. (Optional) To automatically save the content for anonymous users, select the **Enable Autosave for anonymous users** option, and click **[!UICONTROL OK]**.
+1. (Optional) To automatically save the content for anonymous users, select the **[!UICONTROL Enable Autosave for anonymous users]** option, and click **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
    >For auto save option to work for anonymous users, ensure that you configure the Forms Common Configuration Service to allow all users to preview, verify, and sign forms.
    >
-   >To configure the service, go to AEM Web Console configuration at `https://'[server]:[port]'system/console/configMgr` and edit the **[!UICONTROL Forms Common Configuration Service]** to choose the **[!UICONTROL All Users]** option in the **[!UICONTROL Allow]** field, and save the configuration.
+   >To configure the service, go to Adobe Experience Manager Web Console configuration at `https://'[server]:[port]'system/console/configMgr` and edit the **[!UICONTROL Forms Common Configuration Service]** to choose the **[!UICONTROL All Users]** option in the **[!UICONTROL Allow]** field, and save the configuration.
