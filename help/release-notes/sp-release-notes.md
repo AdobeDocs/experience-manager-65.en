@@ -60,8 +60,10 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 * Handlebars JavaScript library is upgraded to v4.7.6 (NPR-35333).
 * Metadata editor interface stops working as expected when you start from bulk metadata edit and de-select items until a single item remains selected (NPR-35144).
 * Global navigation does not open the correct console when clicked from within `assets.html` page (CQ-4312311).
-* [!DNL Assets] does not display RGB rendition for an asset that has RGB rendition. (CQ-4310190).
+* [!DNL Assets] does not display RGB rendition for an asset that has RGB rendition (CQ-4310190).
 * The [!UICONTROL Relate] option in menu is not displayed properly in the [!UICONTROL Properties] page (CQ-4310188).
+* If filetype filter for documents is used to search assets and create a Smart Collection, the filter is not applied when the collection is accessed. Instead, all types of assets are displayed in the search (NPR-35759).
+* You cannot drag and add assets in a Lightbox from the [!DNL Assets] user interface (NPR-35901).
 
 #### [!DNL Dynamic Media] {#dynamic-media-6580}
 
@@ -69,10 +71,8 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 * Interactive media component - interactive video does not work if the user has [!DNL Experience Manager] with selective publish configuration (CQ-4311054).
 * If you move assets across folders, the synchronization between [!DNL Experience Manager] and [!DNL Dynamic Media–Scene7] via API is very slow (CQ-4310001).
 * When using Omnisearch, the size of the logs increases significantly (CQ-4309153).
-
-#### [!DNL Experience Manager] 3D assets {#three-d-assets-6580}
-
-* Bug fix 1
+* When selective sync is enabled and an asset is copied (not moved) into a sync folder it does not sync as expected (CQ-4307122).
+* For uploaded assets that get auto-published to DM, the status does not display Published on AEM. Also, the Dynamic Media Publish status column does not show the correct published status (CQ-4306415).
 
 ### [!DNL Commerce] {#commerce-6580}
 
