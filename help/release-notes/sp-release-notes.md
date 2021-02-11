@@ -44,23 +44,31 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 
 [!DNL Adobe Experience Manager] 6.5.8.0 [!DNL Assets] fixes the following issues and provides the following enhancements.
 
-* Upon restoring a previous version of an asset, the event DamEvent.Type RESTORED is not triggered in the OSGi console. (NPR-35789)
-* `IndexWriter.merge` causes `OutOfMemoryError` error as smart tagging functionality creates large `/oak:index/lucene` and `/oak:index/ntBaseLucene` indices. . (NPR-35709)
-* An error message is displayed when trying to save an [!UICONTROL Asset Contribution] type folder with multibyte characters in the name. (NPR-35605)
-* When cascading metadata sub-type fields are used, an incorrect 'Please fill out this field' error occurs. (NPR-35643)
+* Upon restoring a previous version of an asset, the event DamEvent.Type RESTORED is not triggered in the OSGi console (NPR-35789).
+* `IndexWriter.merge` causes `OutOfMemoryError` error as smart tagging functionality creates large `/oak:index/lucene` and `/oak:index/ntBaseLucene` indices (NPR-35709).
+* An error message is displayed when trying to save an [!UICONTROL Asset Contribution] type folder with multibyte characters in the name (NPR-35605).
+* When cascading metadata sub-type fields are used, an incorrect 'Please fill out this field' error occurs (NPR-35643).
 * When an existing asset is dragged on the [!DNL Assets] user interface and a new version is created, the changes in the metadata are not persistent (NPR-34940).
-* When creating rules in metadata schema editor for a cascading menu, the [!UICONTROL Dependant On] option repeats the same name. (NPR-35596)
-* Similarity search does not work after editing [!UICONTROL Assets Admin Search Rail]. (NPR-35588)
-* From within a folder if you open asset search in the left rail by clicking [!UICONTROL Filter], the filter in [!UICONTROL Status] > [!UICONTROL Checkout] > [!UICONTROL Checked out] does not work. (NPR-35530)
-* If you attempt to delete all Smart Tags of an asset and save the changes, the tags are not removed even though the user interface indicates that the changes are saved. (NPR-35519)
-* Users are not able to rearrange or sort assets in list view in an orderable folder. (NPR-35516)
-* If you edit the default metadata schema, the tags field in asset's Properties page changes into a text field. This allows unaware users to add tags in an ad-hoc manner and tags are stored as a string in the repository. (NPR-35478)
-* When downloading an asset, if you provide a name that does not have a valid email address, the download option is unavailable. However, if another option in the download dialog is selected, the button is enabled, but an email is not sent. (NPR-35365)
-Users are unable to check-in assets after editing those in [!DNL Adobe InDesign] and receive error about lack of permissions. (NPR-35341)
+* When creating rules in metadata schema editor for a cascading menu, the [!UICONTROL Dependant On] option repeats the same name (NPR-35596).
+* Similarity search does not work after editing [!UICONTROL Assets Admin Search Rail] (NPR-35588).
+* From within a folder if you open asset search in the left rail by clicking [!UICONTROL Filter], the filter in [!UICONTROL Status] > [!UICONTROL Checkout] > [!UICONTROL Checked out] does not work (NPR-35530).
+* If you attempt to delete all Smart Tags of an asset and save the changes, the tags are not removed even though the user interface indicates that the changes are saved (NPR-35519).
+* Users are not able to rearrange or sort assets in list view in an orderable folder (NPR-35516).
+* If you edit the default metadata schema, the tags field in asset's [!UICONTROL Properties] page changes into a text field. This allows unaware users to add tags in an ad-hoc manner and tags are stored as a string in the repository (NPR-35478).
+* When downloading an asset, if you provide a name that does not have a valid email address, the download option is unavailable. However, if another option in the download dialog is selected, the button is enabled, but an email is not sent (NPR-35365).
+* Users are unable to check-in assets after editing those in [!DNL Adobe InDesign] and receive error about lack of permissions (NPR-35341).
+* Handlebars JavaScript library is upgraded to v4.7.6 (NPR-35333).
+* Metadata editor interface stops working as expected when you start from bulk metadata edit and de-select items until a single item remains selected (NPR-35144).
+* Global navigation does not open the correct console when clicked from within `assets.html` page (CQ-4312311).
+* [!DNL Assets] does not display RGB rendition for an asset that has RGB rendition. (CQ-4310190).
+* The [!UICONTROL Relate] option in menu is not displayed properly in the [!UICONTROL Properties] page (CQ-4310188).
 
 #### [!DNL Dynamic Media] {#dynamic-media-6580}
 
-* Bug fix 1
+* The URL option for RESS image preset is enabled on the asset details page. Now, both URL and RESS options are available on the asset details page when RESS image preset is selected in the dynamic renditions section. (CQ-4311241)
+* Interactive media component - interactive video does not work if the user has [!DNL Experience Manager] with selective publish configuration (CQ-4311054).
+* If you move assets across folders, the synchronization between [!DNL Experience Manager] and [!DNL Dynamic Media–Scene7] via API is very slow (CQ-4310001).
+* When using Omnisearch, the size of the logs increases significantly (CQ-4309153).
 
 #### [!DNL Experience Manager] 3D assets {#three-d-assets-6580}
 
