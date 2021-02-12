@@ -36,9 +36,32 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 
 ### [!DNL Sites] {#sites-6580}
 
-* Bug fix 1
+* When a page is moved to blueprint, the destination of links is not updated (NPR-35724).
+* Tizen based player fails to authenticate on certain browsers. The issue occurs with browsers that do not support the samesite=none attribute (NPR-35589).
+* An unlocked responsive container does not display allowed components (NPR-35565).
+* When you create a live copy of a newly added page, the language master creates two copies for each domain (NPR-35545).
+* The timer thread-locks sometimes and blocks some other threads. Hence, the AEM instance stops responding for an indefinite time (NPR-35534).
+* When you search a specific asset in the side rail, the result contains some not-searched assets (NPR-35524).
+* When you enable SSL for an Experience Manager instance, the context path is removed (NPR-35477).
+* When you create a list, add some text as the first element, add a table as the second element, and add a list inside the table, the parent list distorts (NPR-35465).
+* When you use different plugins on consecutive list items, an extra <br> tag is added to the list items (NPR-35464).
+* When a list is placed between two paragraphs, you cannot add a table to the list (NPR-35356).
+* When you start an AEM instance upgrade from AEM 6.3 to AEM 6.5, the upgrade instance takes longer to start (NPR-35323).
+* When you replicate an AEM asset that includes a bracket (). in the name, the replication fails (GRANITE-27004).  
+* Product asset reference update causes replication threads to be in the wait state until the ProductAssetListener thread completes its commits to the JCR (NPR-35269).
+* When you add headings to a Rich Text Editor, the paragraph button is disabled (NPR-35256).
+* When a value is not provided to a hidden field that is marked required, it blocks you from saving a component (NPR-35219).
+* When you add an item to an existing list, it deletes the succeeding collapsible or toggle list (NPR-35206).
+* When the Rollout page option is selected, a dialog box with all the available live copies appears, and automatic rollout takes place. The live copies of pages are rolled out to all geographies without user action (NPR-35138).
+* When you use the include children option, the Manage Publication option does not list all pages. Only 22 pages are listed (NPR-35086). 
+* When a policy is edited, the text component does not retain the policy changes (NPR-35070).
+* When indenting some items in a numbered list, all items keep the same number although numbering should start from 1 for items with the same indentation (CQ-4313011).
+* When you create a campaign page using an out-of-the-box template in Touch UI and open the Email tab on the page properties dialog, the personalization variable for the subject and body fields remains disabled (CQ-4312388).
+* When minification is enabled, you are not able to edit any page or component. The issues started after installing AEM 6.5 Service Pack 7 (CQ-4311133).
+* Omni search and asset filters return irrelevant or no results (CQ-4312322).
+* After you upgrade to AEM 6.5.7, the builds start failing. The reason is, an old version or no of jackson-core is embedded in the uber-jar (GRANITE-33006).
 
-* Bug fix 2
+
 
 ### [!DNL Assets] {#assets-6580}
 
