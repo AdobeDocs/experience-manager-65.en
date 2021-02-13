@@ -66,7 +66,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
 The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
-The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
+The [!UICONTROL Pause] option does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** option appears.
 
 To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
 
@@ -188,7 +188,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 | Publish After Uploading | | Automatically publishes the assets that you upload. |
 | Overwrite in any folder, same base asset name regardless of extension | | Select this option if you want the files you upload to replace existing files with the same names. The name of this option could be different, depending on the settings in **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** > **[!UICONTROL Upload to Application]** > **[!UICONTROL Overwrite Images]**. |
 | Uncompress Zip or Tar Files on Upload | | |
-| Job Options | | Click **[!UICONTROL Job Options]** to open the [!UICONTROL Upload Job Options] dialog box and choose options that affect the entire upload job. These options are the same for all file types.<br>You can choose default options for uploading files starting on the Application General Settings page. To open this page, choose **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**. Click the **[!UICONTROL Default Upload Options]** button to open the [!UICONTROL Upload Job Options] dialog box. |
+| Job Options | | Click **[!UICONTROL Job Options]** to open the [!UICONTROL Upload Job Options] dialog box and choose options that affect the entire upload job. These options are the same for all file types.<br>You can choose default options for uploading files starting on the Application General Settings page. To open this page, choose **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**. Select the **[!UICONTROL Default Upload Options]** option to open the [!UICONTROL Upload Job Options] dialog box. |
 | | When | Select One-Time or Recurring. To set a recurring job, choose a Repeat option—Daily, Weekly, Monthly, or Custom—to specify when you want the FTP upload job to recur. Then specify the scheduling options as necessary. |
 | | Include subfolders | Upload all subfolders within the folder you intend to upload. The names of the folder and its subfolders you upload are entered automatically in [!DNL Experience Manager Assets]. |
 | | Crop Options | To manually crop from the sides of an image, select the Crop menu and choose Manual. Then enter the number of pixels to crop from any side or each side of the image. How much of the image is cropped depends on the ppi (pixels per inch) setting in the image file. For example, if the image displays 150 ppi and you enter 75 in the Top, Right, Bottom, and Left text boxes, a half-inch is cropped from each side.<br> To automatically crop white-space pixels from an image, open the Crop menu, choose Manual, and enter pixel measurements in the Top, Right, Bottom, and Left fields to crop from the sides. You can also choose Trim on the Crop menu and choose these options:<br> **Trim Away Based On** <ul><li>**Color** - Choose the Color option. Then select the Corner menu and choose the corner of the image with the color that best represents the white-space color you want to crop.</li><li>**Transparency** - Choose the Transparency option.<br> **Tolerance** - Drag the slider to specify a tolerance from 0 through 1.For trimming based on color, specify 0 to crop pixels only if they exactly match the color you selected in the corner of the image. Numbers closer to 1 allow for more color difference.<br>For trimming based on transparency, specify 0 to crop pixels only if they are transparent. Numbers closer to 1 allow for more transparency.</li></ul><br>Note that these crop options are non-destructive. |
@@ -559,7 +559,7 @@ To delete an asset or a folder containing asset:
 
    >[!NOTE]
    >
-   >* To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. Also, disable the force delete button using an overlay, to disallow users from deleting referenced assets and leaving broken links.
+   >* To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. Also, disable the force delete option using an overlay, to disallow users from deleting referenced assets and leaving broken links.
    >* It is possible to delete a *folder* that contains checked-out asset files. Before deleting a folder, ensure that no digital assets are checked-out by users.
 
 >[!NOTE]
