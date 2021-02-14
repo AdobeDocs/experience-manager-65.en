@@ -18,7 +18,7 @@ Once a tag is trained and ready, the service can now apply these tags on assets 
 
 In the background, the Smart Content Service uses Adobe Sensei AI framework to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets.
 
-Smart Content Service is a cloud service that is hosted on [!DNL Adobe I/O]. To use it in [!DNL Adobe Experience Manager], the system administrator must integrate your [!DNL Experience Manager] deployment with [!DNL Adobe I/O].
+Smart Content Service is a cloud service that is hosted on [!DNL Adobe Developer Console]. To use it in [!DNL Adobe Experience Manager], the system administrator must integrate your [!DNL Experience Manager] deployment with [!DNL Adobe Developer Console].
 
 In summary, here are the main steps to use the Smart Content Service:
 
@@ -29,13 +29,40 @@ In summary, here are the main steps to use the Smart Content Service:
 
 ![Flowchart](assets/flowchart.gif)
 
-## Prerequisites {#prerequisites}
+## Prerequisites and supported formats {#prerequisites}
 
-Before you can use the Smart Content Service, ensure the following to create an integration on [!DNL Adobe I/O]:
+Before you can use the Smart Content Service, ensure the following to create an integration on [!DNL Adobe Developer Console]:
 
 * An Adobe ID account that has administrator privileges for the organization.
 * The Smart Content Service service is enabled for your organization.
 * Smart Content Services Base Package may only be added to a deployment where an [!DNL Adobe Experience Manager Sites] Base Package and [!DNL Assets] add-on have been licensed.
+
+Smart Tags are only applied to assets with the following MIME types:
+
+* image/jpeg
+* image/tiff
+* image/png
+* image/bmp
+* image/gif
+* image/pjpeg
+* image/x-portable-anymap
+* image/x-portable-bitmap
+* image/x-portable-graymap
+* image/x-portable-pixmap
+* image/x-rgb
+* image/x-xbitmap
+* image/x-xpixmap
+* image/x-icon
+* image/photoshop
+* image/x-photoshop
+* image/psd
+* image/vnd.adobe.photoshop
+
+Smart tagging of asset renditions is supported for the following MIME types only:
+
+* image/jpeg
+* image/pjpeg
+* image/png
 
 ## Onboarding {#onboarding}
 
@@ -154,3 +181,4 @@ You can also assign a higher rank to a tag to increase its relevance with respec
 
 * Use of Smart Content Services is limited to up to 2 million tagged images per year. Any duplicate images that are processed and tagged are each counted as a tagged image.
 * If you run the tagging workflow from the timeline, you can apply tags on a maximum of 15 assets at a time.
+* Smart Tags work for only PNG and JPG image formats. So supported assets that have renditions created in these two formats get tagged with Smart Tags.
