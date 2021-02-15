@@ -26,8 +26,6 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * key feature 1
 
-* Support for Microsoft SQL Server 2019 in [!DNL Experience Manager Forms].
-
 * The built-in repository (Apache Jackrabbit Oak) is updated to version [TBD].
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.8.0, see [What is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8](new-features-latest-service-pack.md).
