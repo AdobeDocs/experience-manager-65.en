@@ -134,14 +134,15 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 
 ### [!DNL Communities] {#communities-6580}
 
-* On adding a page structure to a community group, the [!UICONTROL Group] title in the breadcrumb is changed to the title of the first [!UICONTROL Page] (NPR-35803). 
+* On adding a page structure to a community group, the [!UICONTROL Group] title in the breadcrumb is changed to the title of the first [!UICONTROL Page] (NPR-35803).
 * Unlike moderators, a standard community member is not able to access and edit any draft post (NPR-35339).
-* Broken access control and denial of service with DSRPReindexServlet which brings the communities site down until the indexing is complete (NPR-35591). 
-* Removing [!UICONTROL All Users] from the [!UICONTROL Administrators] field does not actually remove them from the back-end (NPR-35592). 
+* Broken access control and denial of service with DSRPReindexServlet which brings the communities site down until the indexing is complete (NPR-35591).
+* Removing [!UICONTROL All Users] from the [!UICONTROL Administrators] field does not actually remove them from the back-end (NPR-35592, NPR-35611).
+* The [!UICONTROL Compose Message] component does not return any result when the entered text is a partial-match (NPR-35666).
 
 ### [!DNL Brand Portal] {#brandportal-6580}
 
-* Adding a member to an [!UICONTROL Asset Contribution] type folder shows [!UICONTROL Add User or Group] caption in the user interface, although only Brand Portal active users are supported and not groups (NPR-35332). 
+* Adding a member to an [!UICONTROL Asset Contribution] type folder shows [!UICONTROL Add User or Group] caption in the user interface, although only Brand Portal active users are supported and not groups (NPR-35332).
 
 ### [!DNL Forms] {#forms-6580}
 
