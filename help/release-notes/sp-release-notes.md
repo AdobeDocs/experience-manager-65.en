@@ -28,7 +28,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Support for Microsoft SQL Server 2019 in [!DNL Experience Manager Forms].
 
-* The built-in repository (Apache Jackrabbit Oak) is updated to version 1.22.5.
+* The built-in repository (Apache Jackrabbit Oak) is updated to version [TBD].
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.8.0, see [What is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8](new-features-latest-service-pack.md).
 
@@ -47,21 +47,18 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 * When you use different plugins on consecutive list items, an extra <br> tag is added to the list items (NPR-35464).
 * When a list is placed between two paragraphs, you cannot add a table to the list (NPR-35356).
 * When you start an AEM instance upgrade from AEM 6.3 to AEM 6.5, the upgrade instance takes longer to start (NPR-35323).
-* When you replicate an AEM asset that includes a bracket (). in the name, the replication fails (GRANITE-27004).  
-* Product asset reference update causes replication threads to be in the wait state until the ProductAssetListener thread completes its commits to the JCR (NPR-35269).
+* When you replicate an AEM asset that includes a bracket (). in the name, the replication fails (GRANITE-27004).
 * When you add headings to a Rich Text Editor, the paragraph button is disabled (NPR-35256).
-* When a value is not provided to a hidden field that is marked required, it blocks you from saving a component (NPR-35219).
 * When you add an item to an existing list, it deletes the succeeding collapsible or toggle list (NPR-35206).
 * When the Rollout page option is selected, a dialog box with all the available live copies appears, and automatic rollout takes place. The live copies of pages are rolled out to all geographies without user action (NPR-35138).
 * When you use the include children option, the Manage Publication option does not list all pages. Only 22 pages are listed (NPR-35086). 
 * When a policy is edited, the text component does not retain the policy changes (NPR-35070).
 * When indenting some items in a numbered list, all items keep the same number although numbering should start from 1 for items with the same indentation (CQ-4313011).
-* When you create a campaign page using an out-of-the-box template in Touch UI and open the Email tab on the page properties dialog, the personalization variable for the subject and body fields remains disabled (CQ-4312388).
 * When minification is enabled, you are not able to edit any page or component. The issues started after installing AEM 6.5 Service Pack 7 (CQ-4311133).
 * Omni search and asset filters return irrelevant or no results (CQ-4312322).
-* After you upgrade to AEM 6.5.7, the builds start failing. The reason is, an old version or no of jackson-core is embedded in the uber-jar (GRANITE-33006).
-
-
+* When multiple pages simultaneously access a client library, the HTML library manager fails to load the client library. It leads to the incorrect rendering of pages (NPR-35538).
+* The context path gets removed automatically when you set up an SSL in [!DNL Experience Manager] (NPR-35294).
+* Package manager does not logout users after clicking the Logout option (NPR-35160).
 
 ### [!DNL Assets] {#assets-6580}
 
@@ -99,27 +96,43 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 
 ### [!DNL Commerce] {#commerce-6580}
 
-* Bug fix 1
+* Unable to create a custom tag for all products in Commerce (CQ-4310682).
+
+* Product asset reference update causes replication threads to be in the wait state until the ProductAssetListener thread completes its commits to the JCR (NPR-35269).
 
 ### Platform {#platform-6580}
 
-* Bug fix 1
+* When you use a Coral Tab View component with no tabs and then trigger a Foundation validator, the following error occurs (NPR-35636):
+
+    ```TXT
+   Uncaught TypeError: Cannot set property 'invalid' of undefined
+    at enable (foundation.js:10703)
+    at foundation.js:10710
+    ```
+
+* SCD forward replication fails for Delete events for nodes that include a comma in the name (NPR-35191).
+
+* After you upgrade to AEM 6.5.7, the builds start failing. The reason is, an old version or no of jackson-core is embedded in the uber-jar (GRANITE-33006).
 
 ### User Interface {#ui-6580}
 
-* Bug fix 1
+* When you switch from Card view to List view for documents in a folder in the Assets console, sorting does not work appropriately (NPR-35842).
+
+* When you hyperlink text in a text component, the search feature does not display appropriate results (NPR-35849).
+
+* When a value is not provided to a hidden field that is marked required, it blocks you from saving a component (NPR-35219).
 
 ### Integrations {#integrations-6580}
 
-* Bug fix 1
-
-### Sling {#sling-6580}
-
-* Bug fix 1
+* When you use different values for IMS Tenant ID and Target Client code, [!DNL Experience Manager] fails to integrate with [!DNL Adobe Target] (NPR-35342).
 
 ### Translation Projects {#translation-6580}
 
-* Bug fix 1
+* Issues when exporting or importing a translation job in [!DNL Experience Manager] (NPR-35259).
+
+### Campaign {#campaign-6580}
+
+* When you create a campaign page using an out-of-the-box template in Touch UI and open the Email tab on the page properties dialog, the personalization variable for the subject and body fields remains disabled (CQ-4312388).
 
 ### [!DNL Communities] {#communities-6580}
 
