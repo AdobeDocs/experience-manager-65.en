@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager 6.5 Service Pack Release Notes
-description: Release notes specific to Adobe Experience Manager 6.5 Service Pack 8
+title: [!DNL Experience Manager] 6.5 service pack release notes
+description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 service pack 8
 docset: aem65
 mini-toc-levels: 1
 ---
 
-# [!DNL Adobe Experience Manager] 6.5 Service Pack Release Notes {#aem-service-pack-release-notes}
+# [!DNL Adobe Experience Manager] 6.5 service pack release notes {#aem-service-pack-release-notes}
 
 ## Release information {#release-information}
 
@@ -18,7 +18,7 @@ mini-toc-levels: 1
 
 <!-- TBD: Update the SD link when SP8 is available. -->
 
-## What's included in [!DNL Adobe Experience Manager] 6.5.8.0 {#what-s-included-in-aem}
+## What is included in [!DNL Adobe Experience Manager] 6.5.8.0 {#what-s-included-in-aem}
 
 [!DNL Adobe Experience Manager] 6.5.8.0 is an important update that includes new features, key customer requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
 
@@ -127,7 +127,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 
 * When you use different values for IMS Tenant ID and Target Client code, [!DNL Experience Manager] fails to integrate with [!DNL Adobe Target] (NPR-35342).
 
-### Translation Projects {#translation-6580}
+### Translation projects {#translation-6580}
 
 * Issues when exporting or importing a translation job in [!DNL Experience Manager] (NPR-35259).
 
@@ -167,7 +167,7 @@ For information on security updates, see [Experience Manager security bulletins 
 >
 >Adobe does not recommend removing or uninstalling the [!DNL Adobe Experience Manager] 6.5.8.0 package.
 
-### Install the Service Pack {#install-service-pack}
+### Install the service pack {#install-service-pack}
 
 Perform the following steps to install the Service Pack on an existing Adobe Experience Manager 6.5 instance:
 
@@ -321,11 +321,11 @@ The following text documents list the OSGi bundles and Content Packages included
 These websites are only available to customers. If you are a customer and need access, contact your Adobe account manager.
 
 * [Product download at licensing.adobe.com](https://licensing.adobe.com/)
-* See [how to contact customer support](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* See [how to contact Adobe Customer Care](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 6.5 release notes](/help/release-notes/release-notes.md)
 >* [[!DNL Experience Manager] product page](https://www.adobe.com/marketing/experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html)
->* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
+>* [Subscribe to Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
