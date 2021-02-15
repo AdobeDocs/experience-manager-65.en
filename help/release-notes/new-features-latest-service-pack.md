@@ -342,6 +342,7 @@ You can use the Batch API to produce multiple interactive communications from a 
 
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
+
 ## Key releases since [!DNL Adobe Experience Manager] 6.5 SP6 {#key-releases-since-last-sp}
 
 Between September 03, 2020 and November 26, 2020, Adobe released the following, in addition to the service packs and cumulative fix packs:
