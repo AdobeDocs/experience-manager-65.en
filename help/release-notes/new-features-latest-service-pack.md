@@ -23,6 +23,8 @@ Description
 
 * In an asset's [!UICONTROL Properties] page, you can now view a list of all the [!DNL Sites] pages that use the asset. These references to an asset are resolved across local and remote [!DNL Sites] instances (when using Connected Assets functionality).
 
+* When deleting an asset that is referenced in a web page, [!DNL Experience Manager] displays a warning. You can force delete a referenced asset or check the references in the [!DNL Properties] page of the asset.
+
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
 >[!NOTE]
