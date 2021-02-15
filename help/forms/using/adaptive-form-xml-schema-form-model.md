@@ -1,28 +1,23 @@
 ---
-title: Creating adaptive forms using XML Schema
-seo-title: Creating adaptive forms using XML Schema
-description: Adaptive forms can use XML schema as form model, allowing you to leverage existing XSD templates to create adaptive forms. You can drag-and-drop schema elements from XSD onto your adaptive form.
-seo-description: Adaptive forms can use XML schema as form model, allowing you to leverage existing XSD templates to create adaptive forms. You can drag-and-drop schema elements from XSD onto your adaptive form.
-uuid: 84c35728-1b6c-4286-854b-51c03bfd0eac
-topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0d6c12b3-3a70-48e9-a83b-974360a8b0b6
-docset: aem65
-
+title: How to Create Adaptive Forms using XML Schema?
+description: Learn how to use XML schema as form model in an adaptive form. You can apply existing XSD templates to create adaptive forms and drag-and-drop schema elements from XSD onto your adaptive form. Dig deeper with a sample of an XML schema, add special properties to fields using XML schema, and limit acceptable values for an adaptive form component.
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner, Imtermediate
 ---
 
-# Creating adaptive forms using XML Schema{#creating-adaptive-forms-using-xml-schema}
+# Creating adaptive forms using XML Schema {#creating-adaptive-forms-using-xml-schema}
 
 ## Prerequisites {#prerequisites}
 
 Authoring an adaptive form using an XML schema as its form model requires basic understanding of XML schemas. Also, it is recommended to read through the following content before this article.
 
-* [Creating an adaptive form](../../forms/using/creating-adaptive-form.md)
+* [Creating an adaptive form](creating-adaptive-form.md)
 * [XML schema](https://www.w3.org/TR/xmlschema-2/)
 
 ## Using an XML schema as form model {#using-an-xml-schema-as-form-model}
 
-AEM Forms supports creation of an adaptive form by using an existing XML schema as the form model. This XML schema represents the structure in which data is produced or consumed by the back-end system in your organization.
+[!DNL Experience Manager Forms] supports creation of an adaptive form by using an existing XML schema as the form model. This XML schema represents the structure in which data is produced or consumed by the back-end system in your organization.
 
 The key features of using an XML schema are:
 
@@ -285,7 +280,7 @@ You can add the following restrictions to XML schema elements to limit the value
 
 **How do I know which element in the tree is associated with which XML element?**
 
-When you double-click an element in Content Finder, a pop-up displays a field name and a property called `bindRef`. This property maps the tree element to the element or attribute in the schema.
+When you double-click an element in Content Finder, a pop-up window displays a field name and a property called `bindRef`. This property maps the tree element to the element or attribute in the schema.
 
 ![A bindref field of an XML schema element](assets/dblclick.png)
 
@@ -297,7 +292,7 @@ The <code>bindRef</code> field shows the association between a tree element and 
 
 **Why I am not able to drag individual elements of a subform (structure generated from any complex type) for repeatable subforms (minOccours or maxOccurs values are greater than 1)?**
 
-In a repeatable subform, you must use the complete subform. If you want only selective fields, use the entire structure and delete the unwanted ones.
+In a repeatable subform, you must use the Complete subform. If you want only selective fields, use the entire structure and delete the unwanted ones.
 
 **I have a long complex structure in Content Finder. How can I find a specific element?**
 
