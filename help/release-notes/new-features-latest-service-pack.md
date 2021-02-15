@@ -1,19 +1,19 @@
 ---
-title: What's new in Adobe Experience Manager 6.5 Service Pack 8
-description: What's new in Adobe Experience Manager 6.5 Service Pack 8
+title: What is new in [!DNL Experience Manager] 6.5 service pack 8
+description: What's new in [!DNL Experience Manager] 6.5 service pack 8
 contentOwner: AK
 mini-toc-levels: 1
 ---
 
-# What's new in Adobe Experience Manager 6.5 Service Pack 8 {#aem-whats-new-service-pack}
+# What's new in [!DNL Adobe Experience Manager] 6.5 service pack 8 {#aem-whats-new-service-pack}
 
 ![Whats-new](assets/whatsnew.jpeg)
 
 [!DNL Adobe Experience Manager] 6.5 service packs provide new features, customer-requested enhancements, and performance, stability, and security improvements at quarterly intervals. The quarterly availability makes it easy to access and adopt new features and innovations.
 
-This article highlights the features included in the latest 6.5 Service Pack, [key features included in the previous 6.5 Service Packs](#key-features-previous-service-packs), and the [key AEM releases since the last service pack](#key-releases-since-last-sp) release.
+This article highlights the features included in the latest service pack, [key features included in the previous 6.5 service packs](#key-features-previous-service-packs), and the [key releases since the last service pack](#key-releases-since-last-sp) release.
 
-## Adobe [!DNL Experience Manager Sites] {#aem-sites}
+## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
 ### Feature {#feature1-sites}
 
@@ -21,13 +21,13 @@ Description
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* In an asset's [!UICONTROL Properties] page, you can now view a list of all the Sites pages that use the asset. These references to an asset are resolved across local and remote [!DNL Sites] instances (when using Connected Assets functionality).
+* In an asset's [!UICONTROL Properties] page, you can now view a list of all the [!DNL Sites] pages that use the asset. These references to an asset are resolved across local and remote [!DNL Sites] instances (when using Connected Assets functionality).
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] add-on packages are made available a week after the scheduled [!DNL Experience Manager] Service Pack release.
+>The add-on package of [!DNL Experience Manager Forms] is made available a week after the scheduled [!DNL Experience Manager] service pack release.
 
 ### Feature {#feature1-forms}
 
@@ -35,9 +35,9 @@ Description
 
 ### Support for Microsoft SQL Server 2019
 
-[!DNL Experience Manager Forms] now supports Microsoft SQL Server 2019.
+[!DNL Experience Manager Forms] now supports [!DNL Microsoft SQL Server 2019].
 
-## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
+## Key features in previous [!DNL Experience Manager] 6.5 service packs {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
 
@@ -210,7 +210,7 @@ Smart crop for video–an optional feature available in Video Profiles– is a t
 
 #### Performance improvements (6.5.7.0) {#performance-improvements-forms}
 
-[!DNL Experience Manager] 6.5 Service Pack 7 Forms improves the performance for:
+[!DNL Experience Manager] 6.5 service pack 7 Forms improves the performance for:
 
 * Validating the field values on the server when you submit an adaptive form.
 
@@ -340,7 +340,9 @@ You have the option of specifying a start date and time and an end date and time
 
 You can use the Batch API to produce multiple interactive communications from a template. The template is an interactive communication without any data. The Batch API combines data with a template to produce an interactive communication. The API is useful in the mass production of interactive communications. For example, telephone bills, credit card statements for multiple customers. See [Generate multiple interactive communications using Batch API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-## Key releases since Adobe Experience Manager 6.5 SP6 {#key-releases-since-last-sp}
+<!-- TBD: Check if the wider team released anything in FY21.
+-->
+## Key releases since [!DNL Adobe Experience Manager] 6.5 SP6 {#key-releases-since-last-sp}
 
 Between September 03, 2020 and November 26, 2020, Adobe released the following, in addition to the service packs and cumulative fix packs:
 
