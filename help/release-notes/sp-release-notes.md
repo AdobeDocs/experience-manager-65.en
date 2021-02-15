@@ -136,7 +136,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 
 * On adding a page structure to a community group, the [!UICONTROL Group] title in the breadcrumb is changed to the title of the first [!UICONTROL Page] (NPR-35803). 
 * Unlike moderators, a standard community member is not able to access and edit any draft post (NPR-35339).
-* Broken access control and denial of service with DSRPReindexServlet which brings the communities site down untill the indexing is complete (NPR-35591). 
+* Broken access control and denial of service with DSRPReindexServlet which brings the communities site down until the indexing is complete (NPR-35591). 
 * Removing [!UICONTROL All Users] from the [!UICONTROL Administrators] field does not actually remove them from the back-end (NPR-35592). 
 
 ### [!DNL Brand Portal] {#brandportal-6580}
