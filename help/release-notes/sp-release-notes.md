@@ -104,11 +104,11 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 
 * When you use a Coral Tab View component with no tabs and then trigger a Foundation validator, the following error occurs (NPR-35636):
 
-    ```TXT
+  ```TXT
    Uncaught TypeError: Cannot set property 'invalid' of undefined
     at enable (foundation.js:10703)
     at foundation.js:10710
-    ```
+  ```
 
 * SCD forward replication fails for Delete events for nodes that include a comma in the name (NPR-35191).
 
