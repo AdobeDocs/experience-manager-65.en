@@ -24,9 +24,12 @@ mini-toc-levels: 1
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.8.0 are:
 
-* key feature 1
+<!-- TBD:
+* Using the Connected Assets functionality, it is now possible to connect up to 3 [!DNL Sites] instances with 1 [!DNL Assets] instances. The configuration user interface now allows the administrators to provide the details of these [!DNL Sites] instances. -->
 
-* The built-in repository (Apache Jackrabbit Oak) is updated to version [TBD].
+* In an asset's [!UICONTROL Properties] page, you can now view a list of all the Sites pages that use the asset. These references to an asset are resolved across local and remote [!DNL Sites] instances (when using Connected Assets functionality).
+
+* The built-in repository (Apache Jackrabbit Oak) is updated to version (TBD).
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.8.0, see [What is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8](new-features-latest-service-pack.md).
 

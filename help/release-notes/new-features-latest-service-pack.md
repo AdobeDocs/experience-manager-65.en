@@ -21,9 +21,7 @@ Description
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-### Feature {#feature1-assets}
-
-Description
+* In an asset's [!UICONTROL Properties] page, you can now view a list of all the Sites pages that use the asset. These references to an asset are resolved across local and remote [!DNL Sites] instances (when using Connected Assets functionality).
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
