@@ -63,7 +63,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 [!DNL Adobe Experience Manager] 6.5.8.0 [!DNL Assets] fixes the following issues and provides the following enhancements.
 
 * Upon restoring a previous version of an asset, the event DamEvent.Type RESTORED is not triggered in the OSGi console (NPR-35789).
-* `IndexWriter.merge` causes `OutOfMemoryError` error as smart tagging functionality creates large `/oak:index/lucene` and `/oak:index/ntBaseLucene` indices (NPR-35709).
+* `IndexWriter.merge` causes `OutOfMemoryError` error as smart tagging functionality creates large `/oak:index/lucene` and `/oak:index/ntBaseLucene` indices (NPR-35651).
 * An error message is displayed when trying to save an [!UICONTROL Asset Contribution] type folder with multibyte characters in the name (NPR-35605).
 * When cascading metadata sub-type fields are used, an incorrect 'Please fill out this field' error occurs (NPR-35643).
 * When an existing asset is dragged on the [!DNL Assets] user interface and a new version is created, the changes in the metadata are not persistent (NPR-34940).
