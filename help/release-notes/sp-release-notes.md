@@ -16,7 +16,7 @@ mini-toc-levels: 1
 | Date     | February 25, 2021                |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.8.zip) |
 
-<!-- TBD: Update the SD link when SP8 is available. -->
+<!-- TBD: Update the SD link when SP8 is available. Same link is duplicated below in install -->
 
 ## What is included in [!DNL Adobe Experience Manager] 6.5.8.0 {#what-s-included-in-aem}
 
@@ -27,9 +27,11 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 <!-- TBD:
 * Using the Connected Assets functionality, it is now possible to connect up to 3 [!DNL Sites] instances with 1 [!DNL Assets] instances. The configuration user interface now allows the administrators to provide the details of these [!DNL Sites] instances. -->
 
-* On an asset's [!UICONTROL Properties] page, you can now view a list of all the Sites pages that use the asset. The references across local and remote [!DNL Sites] instances (when using Connected Assets functionality) are displayed.
+* On an asset's [!UICONTROL Properties] page, you can now view a list of all the [!DNL Sites] pages that use the asset. The clickable references include pages across local and remote [!DNL Sites] deployments (when using Connected Assets functionality). 
 
-* The built-in repository (Apache Jackrabbit Oak) is updated to version (TBD).
+* When deleting an asset that is referenced in a web page, [!DNL Experience Manager] displays a warning. You can force delete a referenced asset or check the references in the [!DNL Properties] page of the asset.
+
+* The built-in repository (Apache Jackrabbit Oak) is updated. <!-- TBD: Mention the version -->
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.8.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8](new-features-latest-service-pack.md).
 
@@ -170,11 +172,11 @@ For information on security updates, see [Experience Manager security bulletins 
 
 ### Install the service pack {#install-service-pack}
 
-Perform the following steps to install the Service Pack on an existing Adobe Experience Manager 6.5 instance:
+To install the service pack on an [!DNL Adobe Experience Manager] 6.5 instance, follow these steps:
 
 1. Restart the instance before installation if the instance is in update mode (and this is the case when the instance was updated from an earlier version). Adobe also recommends a restart if the current uptime for an instance is high.
 
-1. Before installing, take a snapshot or a fresh backup of your [Experience Manager] instance.
+1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
 
 1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.7.zip).
 
