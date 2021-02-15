@@ -20,18 +20,18 @@ mini-toc-levels: 1
 
 ## What is included in [!DNL Adobe Experience Manager] 6.5.8.0 {#what-s-included-in-aem}
 
-[!DNL Adobe Experience Manager] 6.5.8.0 is an important update that includes new features, key customer requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
+[!DNL Adobe Experience Manager] 6.5.8.0 includes new features, key customer-requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.8.0 are:
 
 <!-- TBD:
 * Using the Connected Assets functionality, it is now possible to connect up to 3 [!DNL Sites] instances with 1 [!DNL Assets] instances. The configuration user interface now allows the administrators to provide the details of these [!DNL Sites] instances. -->
 
-* In an asset's [!UICONTROL Properties] page, you can now view a list of all the Sites pages that use the asset. These references to an asset are resolved across local and remote [!DNL Sites] instances (when using Connected Assets functionality).
+* On an asset's [!UICONTROL Properties] page, you can now view a list of all the Sites pages that use the asset. The references across local and remote [!DNL Sites] instances (when using Connected Assets functionality) are displayed.
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version (TBD).
 
-For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.8.0, see [What is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8](new-features-latest-service-pack.md).
+For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.8.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8](new-features-latest-service-pack.md).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0 release.
 
@@ -66,16 +66,16 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 [!DNL Adobe Experience Manager] 6.5.8.0 [!DNL Assets] fixes the following issues and provides the following enhancements.
 
 * Upon restoring a previous version of an asset, the event DamEvent.Type RESTORED is not triggered in the OSGi console (NPR-35789).
-* `IndexWriter.merge` causes `OutOfMemoryError` error as smart tagging functionality creates large `/oak:index/lucene` and `/oak:index/ntBaseLucene` indices (NPR-35651).
+* `IndexWriter.merge` causes `OutOfMemoryError` error as smart tagging functionality creates large `/oak:index/lucene` and `/oak:index/ntBaseLucene` indexes (NPR-35651).
 * An error message is displayed when trying to save an [!UICONTROL Asset Contribution] type folder with multibyte characters in the name (NPR-35605).
-* When cascading metadata sub-type fields are used, an incorrect 'Please fill out this field' error occurs (NPR-35643).
+* When cascading metadata subtype fields are used, an incorrect 'Please fill out this field' error occurs (NPR-35643).
 * When an existing asset is dragged on the [!DNL Assets] user interface and a new version is created, the changes in the metadata are not persistent (NPR-34940).
 * When creating rules in metadata schema editor for a cascading menu, the [!UICONTROL Dependant On] option repeats the same name (NPR-35596).
 * Similarity search does not work after editing [!UICONTROL Assets Admin Search Rail] (NPR-35588).
-* From within a folder if you open asset search in the left rail by clicking [!UICONTROL Filter], the filter in [!UICONTROL Status] > [!UICONTROL Checkout] > [!UICONTROL Checked out] does not work (NPR-35530).
-* If you attempt to delete all Smart Tags of an asset and save the changes, the tags are not removed even though the user interface indicates that the changes are saved (NPR-35519).
+* From within a folder, if you open asset search in the left rail by clicking [!UICONTROL Filter], the filter in [!UICONTROL Status] > [!UICONTROL Checkout] > [!UICONTROL Checked out] does not work (NPR-35530).
+* If you attempt to delete all Smart Tags of an asset and save the changes, the tags are not removed. However, the user interface indicates that the changes are saved (NPR-35519).
 * Users are not able to rearrange or sort assets in list view in an orderable folder (NPR-35516).
-* If you edit the default metadata schema, the tags field in asset's [!UICONTROL Properties] page changes into a text field. This allows unaware users to add tags in an ad-hoc manner and tags are stored as a string in the repository (NPR-35478).
+* If you edit the default metadata schema, the tags field in asset's [!UICONTROL Properties] page changes into a text field. The change allows unaware users to add on-demand tags and the tags are stored as a string in the repository (NPR-35478).
 * When downloading an asset, if you provide a name that does not have a valid email address, the download option is unavailable. However, if another option in the download dialog is selected, the button is enabled, but an email is not sent (NPR-35365).
 * Users are unable to check-in assets after editing those in [!DNL Adobe InDesign] and receive error about lack of permissions (NPR-35341).
 * Handlebars JavaScript library is upgraded to v4.7.6 (NPR-35333).
@@ -85,6 +85,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 * The [!UICONTROL Relate] option in menu is not displayed properly in the [!UICONTROL Properties] page (CQ-4310188).
 * If filetype filter for documents is used to search assets and create a Smart Collection, the filter is not applied when the collection is accessed. Instead, all types of assets are displayed in the search (NPR-35759).
 * You cannot drag and add assets in a Lightbox from the [!DNL Assets] user interface (NPR-35901).
+* When a new version of an existing asset is created after resolving the naming conflict, the metadata of original asset is overwritten (CQ-4313594).
 
 #### [!DNL Dynamic Media] {#dynamic-media-6580}
 
@@ -92,7 +93,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 * Interactive media component - interactive video does not work if the user has [!DNL Experience Manager] with selective publish configuration (CQ-4311054).
 * If you move assets across folders, the synchronization between [!DNL Experience Manager] and [!DNL Dynamic Media–Scene7] via API is very slow (CQ-4310001).
 * When using Omnisearch, the size of the logs increases significantly (CQ-4309153).
-* When selective sync is enabled and an asset is copied (not moved) into a sync folder it does not sync as expected (CQ-4307122).
+* When selective sync is enabled and an asset is copied (not moved) into a sync folder, it does not sync as expected (CQ-4307122).
 * For uploaded assets that get auto-published to DM, the status does not display Published on AEM. Also, the Dynamic Media Publish status column does not show the correct published status (CQ-4306415).
 
 ### [!DNL Commerce] {#commerce-6580}
