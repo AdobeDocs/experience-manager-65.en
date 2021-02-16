@@ -52,7 +52,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 * When you use different plugins on consecutive list items, an extra <br> tag is added to the list items (NPR-35464).
 * When a list is placed between two paragraphs, you cannot add a table to the list (NPR-35356).
 * When you start an AEM instance upgrade from AEM 6.3 to AEM 6.5, the upgrade instance takes longer to start (NPR-35323).
-* When you replicate an AEM asset that includes a bracket (). in the name, the replication fails (GRANITE-27004).
+* When you replicate an AEM asset that includes a bracket (). in the name, the replication fails (GRANITE-27004, NPR-35315).
 * When you add headings to a Rich Text Editor, the paragraph button is disabled (NPR-35256).
 * When you add an item to an existing list, it deletes the succeeding collapsible or toggle list (NPR-35206).
 * When the Rollout page option is selected, a dialog box with all the available live copies appears, and automatic rollout takes place. The live copies of pages are rolled out to all geographies without user action (NPR-35138).
@@ -60,7 +60,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 * When a policy is edited, the text component does not retain the policy changes (NPR-35070).
 * When indenting some items in a numbered list, all items keep the same number although numbering should start from 1 for items with the same indentation (CQ-4313011).
 * When minification is enabled, you are not able to edit any page or component. The issues started after installing AEM 6.5 Service Pack 7 (CQ-4311133).
-* Omni search and asset filters return irrelevant or no results (CQ-4312322).
+* Omni search and asset filters return irrelevant or no results (CQ-4312322, NPR-35793).
 * When multiple pages simultaneously access a client library, the HTML library manager fails to load the client library. It leads to the incorrect rendering of pages (NPR-35538).
 * The context path gets removed automatically when you set up an SSL in [!DNL Experience Manager] (NPR-35294).
 * Package manager does not logout users after clicking the Logout option (NPR-35160).
