@@ -88,6 +88,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 * If filetype filter for documents is used to search assets and create a Smart Collection, the filter is not applied when the collection is accessed. Instead, all types of assets are displayed in the search (NPR-35759).
 * You cannot drag and add assets in a Lightbox from the [!DNL Assets] user interface (NPR-35901).
 * When a new version of an existing asset is created after resolving the naming conflict, the metadata of original asset is overwritten (CQ-4313594).
+* When you filter asset search using a search filter or predicate, open an asset to view or edit it, and go back to the search results page, the filter does not work. All the searched assets are listed unfiltered (NPR-35913).
 
 #### [!DNL Dynamic Media] {#dynamic-media-6580}
 
@@ -97,6 +98,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 * When using Omnisearch, the size of the logs increases significantly (CQ-4309153).
 * When selective sync is enabled and an asset is copied (not moved) into a sync folder, it does not sync as expected (CQ-4307122).
 * For uploaded assets that get auto-published to DM, the status does not display Published on AEM. Also, the Dynamic Media Publish status column does not show the correct published status (CQ-4306415).
+* If an asset is published on [!DNL Experience Manager] and is set to publish to [!DNL Dynamic Media] on activation, the `scene7FileStatus` metadata value does not update as expected (CQ-4308269).
 
 ### [!DNL Commerce] {#commerce-6580}
 
