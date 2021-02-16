@@ -15,9 +15,9 @@ This article highlights the features included in the latest service pack, [key f
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### Feature {#feature1-sites}
+### Sort the Live Copy pages available for rollout {#sort-livecopy-pages}
 
-Description
+You can now sort the Live Copy pages available for rollout using the [!UICONTROL Name], [!UICONTROL Last modified date], and [!UICONTROL Last rollout date] properties. The [!UICONTROL Last rollout date] for a page is a new property introduced in this release.
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
@@ -30,14 +30,6 @@ Description
 >[!NOTE]
 >
 >The add-on package of [!DNL Experience Manager Forms] is made available a week after the scheduled [!DNL Experience Manager] service pack release.
-
-### Feature {#feature1-forms}
-
-Description
-
-### Support for Microsoft SQL Server 2019
-
-[!DNL Experience Manager Forms] now supports [!DNL Microsoft SQL Server 2019].
 
 ## Key features in previous [!DNL Experience Manager] 6.5 service packs {#key-features-previous-service-packs}
 
