@@ -1,14 +1,14 @@
 ---
-title: [!DNL Adobe Experience Manager] 6.5 Previous Service Pack Release Notes.
+title: [!DNL Adobe Experience Manager] 6.5 previous Service Pack release notes
 description: Release notes for [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 ---
 
-# Hotfixes and Feature Packs included in previous Service Packs {#hotfixes-and-feature-packs-included-in-previous-service-packs}
+# Hotfixes and Feature Packs included in the previous Service Packs {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
 ## [!DNL Adobe Experience Manager] 6.5.7.0 {#experience-manager-6570}
 
-[!DNL Adobe Experience Manager] 6.5.7.0 is an important update that includes new features, key customer requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
+[!DNL Adobe Experience Manager] 6.5.7.0 is an important update that includes new features, key customer requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The Service Pack is installed on [!DNL Adobe Experience Manager] 6.5.
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.7.0 includes:
 
@@ -250,7 +250,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0
 * Dispatcher cache is not refreshed for pages with content fragments after installing the latest core component packages (CQ-4306788).
 * Localized tag names with quotation marks (`"`) are not displayed properly on the user interface (CQ-4305439).
 
-### User Interface {#ui-6570}
+### User interface {#ui-6570}
 
 * The [!UICONTROL Link to] field in component properties displays autocomplete suggestions that do not match the specified string (NPR-34865).
 
@@ -270,7 +270,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0
 
 * The default login health check validates the credentials of a user that does not exist (NPR-34686).
 
-### Translation Projects {#translation-6570}
+### Translation projects {#translation-6570}
 
 * On canceling a translation project in [!DNL Experience Manager], the request to cancel it is not sent to the translation provider (NPR-34433).
 
@@ -734,7 +734,7 @@ Some key features and enhancements introduced in [!DNL Adobe Experience Manager]
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.22.3.
 
-For complete list of features, key highlights, key features introduced in Experience Manager 6.5 service pack 5, see [What's new in Adobe Experience Manager 6.5 Service Pack 5](new-features-latest-service-pack.md) .
+For complete list of features, key highlights, key features introduced in Experience Manager 6.5 Service Pack 5, see [What's new in Adobe Experience Manager 6.5 Service Pack 5](new-features-latest-service-pack.md) .
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0 release.
 
@@ -1044,7 +1044,7 @@ Some key features and enhancements introduced in Adobe Experience Manager 6.5.4.
 
 * SOAP input or output and complex data structures now support Dynamic Group Substitution.
 
-For a complete list of features and key highlights introduced in the latest service packs, see [What's new in Adobe Experience Manager 6.5 service packs](new-features-latest-service-pack.md).
+For a complete list of features and key highlights introduced in the latest Service Packs, see [What's new in Adobe Experience Manager 6.5 Service Packs](new-features-latest-service-pack.md).
 
 ### Sites {#sites-fixes}
 
@@ -1254,7 +1254,7 @@ For a complete list of features and key highlights introduced in the latest serv
 
 [!DNL Adobe Experience Manager] 6.5.3.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of 6.5 release in **April 2019**. It can be installed on top of [!DNL Adobe Experience Manager] 6.5.
 
-Some key highlights of this service pack release are:
+Some key highlights of this Service Pack release are:
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.10.6.
 
@@ -1533,7 +1533,7 @@ Remove one mention of this fix.
 
 [!DNL Adobe Experience Manager] 6.5.2.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of [!DNL Adobe Experience Manager] 6.5 in **April 2019**. It can be installed on top of [!DNL Experience Manager] 6.5.
 
-Some key highlights of this service pack release are:
+Some key highlights of this Service Pack release are:
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.10.3.
 * Added a configuration property to allow exporting Experience Fragments directly to user-defined workspaces for [!DNL Adobe Target].
@@ -1734,7 +1734,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
  [!DNL Adobe Experience Manager] 6.5.1.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of [!DNL Adobe Experience Manager] 6.5 in *April 2019.* It can be installed on top of [!DNL Experience Manager] 6.5.
 
-Some key highlights of this service pack release are:
+Some key highlights of this Service Pack release are:
 
 * Enabled the inclusion of dynamic-UI-state in tracking events as custom attributes.
 * Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media]&ndash;Scene7 mode.

@@ -1,17 +1,17 @@
 ---
-title: What is new in [!DNL Experience Manager] 6.5 service pack 8
-description: What's new in [!DNL Experience Manager] 6.5 service pack 8
+title: What is new in [!DNL Experience Manager] 6.5 Service Pack 8
+description: What's new in [!DNL Experience Manager] 6.5 Service Pack 8
 contentOwner: AK
 mini-toc-levels: 1
 ---
 
-# What's new in [!DNL Adobe Experience Manager] 6.5 service pack 8 {#aem-whats-new-service-pack}
+# What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8 {#aem-whats-new-service-pack}
 
 ![Whats-new](assets/whatsnew.jpeg)
 
-[!DNL Adobe Experience Manager] 6.5 service packs provide new features, customer-requested enhancements, and performance, stability, and security improvements at quarterly intervals. The quarterly availability makes it easy to access and adopt new features and innovations.
+[!DNL Adobe Experience Manager] 6.5 Service Packs provide new features, customer-requested enhancements, and performance, stability, and security improvements at quarterly intervals. The quarterly availability makes it easy to access and adopt new features and innovations.
 
-This article highlights the features included in the latest service pack, [key features included in the previous 6.5 service packs](#key-features-previous-service-packs), and the [key releases since the last service pack](#key-releases-since-last-sp) release.
+This article highlights the features included in the latest Service Pack, [key features included in the previous 6.5 Service Packs](#key-features-previous-service-packs), and the [key releases since the last Service Pack](#key-releases-since-last-sp) release.
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -29,9 +29,9 @@ You can now sort the Live Copy pages available for rollout using the [!UICONTROL
 
 >[!NOTE]
 >
->The add-on package of [!DNL Experience Manager Forms] is made available a week after the scheduled [!DNL Experience Manager] service pack release.
+>The add-on package of [!DNL Experience Manager Forms] is made available a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
-## Key features in previous [!DNL Experience Manager] 6.5 service packs {#key-features-previous-service-packs}
+## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
 
@@ -204,7 +204,7 @@ Smart crop for video–an optional feature available in Video Profiles– is a t
 
 #### Performance improvements (6.5.7.0) {#performance-improvements-forms}
 
-[!DNL Experience Manager] 6.5 service pack 7 Forms improves the performance for:
+[!DNL Experience Manager] 6.5 Service Pack 7 Forms improves the performance for:
 
 * Validating the field values on the server when you submit an adaptive form.
 
@@ -339,7 +339,7 @@ You can use the Batch API to produce multiple interactive communications from a 
 
 ## Key releases since [!DNL Adobe Experience Manager] 6.5 SP6 {#key-releases-since-last-sp}
 
-Between September 03, 2020 and November 26, 2020, Adobe released the following, in addition to the service packs and cumulative fix packs:
+Between September 03, 2020 and November 26, 2020, Adobe released the following, in addition to the Service Packs and cumulative fix packs:
 
 * [!DNL Adobe Experience Manager] as a Cloud Service [2020.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-9-0.html?lang=en#release-notes) and [2020.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-10-0.html?lang=en#release-notes).
 
