@@ -21,9 +21,9 @@ You can now sort the Live Copy pages available for rollout using the [!UICONTROL
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* In an asset's [!UICONTROL Properties] page, you can now view a list of all the [!DNL Sites] pages that use the asset. These references to an asset are resolved across local and remote [!DNL Sites] instances (when using Connected Assets functionality).
+* When using [Connected Assets functionality](/help/assets/use-assets-across-connected-assets-instances.md), you can now view a list of all the [!DNL Sites] pages that use the asset. These references to an asset are available in an asset's [!UICONTROL Properties] page. This allows administrators, marketers, and librarians a complete view of assets usage, allowing for better tracking, management, and brand consistency.
 
-* When deleting an asset that is referenced in a web page, [!DNL Experience Manager] displays a warning. You can force delete a referenced asset or check the references in the [!DNL Properties] page of the asset.
+* When deleting an asset that is referenced in a web page, [!DNL Experience Manager] displays a warning. You can force delete a referenced asset or check and modify the references that are displayed in the [!DNL Properties] page of the asset. Clicking the references opens the local and remote [!DNL Sites] pages.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
