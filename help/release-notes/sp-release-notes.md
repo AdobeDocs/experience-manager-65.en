@@ -120,7 +120,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 
 * SCD forward replication fails for Delete events for nodes that include a comma in the name (NPR-35191).
 
-* After you upgrade to AEM 6.5.7, the builds start failing. The reason is, an old version or no of jackson-core is embedded in the uber-jar (GRANITE-33006).
+* After you upgrade to AEM 6.5.7, the builds start failing. The reason is, an old version or no jackson-core is embedded in the uber-jar (GRANITE-33006).
 
 ### User Interface {#ui-6580}
 
