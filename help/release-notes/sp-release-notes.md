@@ -101,6 +101,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 * When selective sync is enabled and an asset is copied (not moved) into a sync folder, it does not sync as expected (CQ-4307122).
 * For uploaded assets that get auto-published to DM, the status does not display Published on AEM. Also, the Dynamic Media Publish status column does not show the correct published status (CQ-4306415).
 * If an asset is published on [!DNL Experience Manager] and is set to publish to [!DNL Dynamic Media] on activation, the `scene7FileStatus` metadata value does not update as expected (CQ-4308269).
+* When editing the video profile, [!DNL Experience Manager] does not display the height and bitrate values set for the video preset. The fields appear blank (CQ-4311828).
 
 ### [!DNL Commerce] {#commerce-6580}
 
