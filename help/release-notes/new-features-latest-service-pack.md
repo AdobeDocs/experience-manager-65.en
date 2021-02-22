@@ -337,19 +337,15 @@ You can use the Batch API to produce multiple interactive communications from a 
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
 
-## Key releases since [!DNL Adobe Experience Manager] 6.5 SP6 {#key-releases-since-last-sp}
+## Key releases since [!DNL Adobe Experience Manager] 6.5 SP7 {#key-releases-since-last-sp}
 
-Between September 03, 2020 and November 26, 2020, Adobe released the following, in addition to the Service Packs and cumulative fix packs:
+Between November 26, 2020 and February 25, 2021, Adobe released the following, in addition to the Service Packs and Cumulative Fix Packs:
 
-* [!DNL Adobe Experience Manager] as a Cloud Service [2020.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-9-0.html?lang=en#release-notes) and [2020.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-10-0.html?lang=en#release-notes).
+* [!DNL Adobe Experience Manager] as a Cloud Service [2020.11.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-11-0.html), [2020.12.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-12-0.html), and [2021.1.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en#release-date).
 
-* [[!DNL Experience Manager] desktop app 2.0 (2.0.3.2)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
-
-* [WKND Reference Site - 0.0.6](https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-0.0.6)
+* [[!DNL Experience Manager] desktop app 2.1 (2.1.0.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 * [Experience Manager Screens: Feature Pack 202011](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202011.html)
-
-* [Adobe Asset Link v2.2](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html)
 
 >[!MORELIKETHIS]
 >
