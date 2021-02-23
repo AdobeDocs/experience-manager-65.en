@@ -13,7 +13,6 @@ This guide covers all [!DNL Experience Manager Assets] tasks, such as how to cre
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->
 
-* [Getting Started with Experience Manager](https://helpx.adobe.com/experience-manager/get-started.html)
 * [Experience Manager 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Security Checklist](/help/sites-administering/security-checklist.md)
@@ -37,9 +36,9 @@ This guide covers all [!DNL Experience Manager Assets] tasks, such as how to cre
 
 ## Key [!DNL Experience Manager] resources
 
-* [Experience Manager Video Tutorials](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
+* [Experience Manager Video Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
 * [GDPR Readiness](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Experience Manager Assets Community Forum](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
 * [Dispatcher User Guide](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL User Guide](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
