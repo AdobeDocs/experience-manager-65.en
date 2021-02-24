@@ -12,7 +12,7 @@ discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 
 # Using AEM Document Services Programmatically {#using-aem-document-services-programmatically}
 
-Samples and examples in this document help you understand and use  AEM Document Services on an AEM Forms on OSGi environment. 
+Samples and examples in this document help you understand and use  AEM Document Services on an AEM Forms on OSGi environment. For samples and examples for AEM Forms on JEE environment, see [Programming with AEM Forms on JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=en#programming-aem-forms-jee)
 
 ## Prerequisite {#prerequisite}
 * Before using the DocAssurance service APIs, [configure the DocAssurance service](/help/forms/using/install-configure-document-services.md).
