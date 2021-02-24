@@ -6,7 +6,7 @@ solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: Getting Started
 getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
 tutorials-title: Tutorials
-tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
+tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-65.en
 solution: Experience Manager
