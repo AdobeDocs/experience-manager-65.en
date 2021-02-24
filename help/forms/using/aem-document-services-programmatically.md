@@ -10,14 +10,17 @@ topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 ---
 
-# Using AEM Document Services Programmatically {#using-aem-document-services-programmatically}
+# Using AEM Document Services Programmatically  {#using-aem-document-services-programmatically}
 
 Samples and examples in this document help you understand and use  AEM Document Services on an AEM Forms on OSGi environment. For samples and examples for AEM Forms on JEE environment, see [Programming with AEM Forms on JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=en#programming-aem-forms-jee)
 
 ## Prerequisite {#prerequisite}
+
 * Before using the DocAssurance service APIs, [configure the DocAssurance service](/help/forms/using/install-configure-document-services.md).
-*  Download and configure [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) with you AEM maven project. The client classes required to build Maven Projects using AEM Document Services are available in the [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
-*   Learn [how to build your AEM project using Maven](/help/sites-developing/ht-projects-maven.md) 
+
+* Download and configure [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) with you AEM maven project. The client classes required to build Maven Projects using AEM Document Services are available in the [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+
+* Learn [how to build your AEM project using Maven](/help/sites-developing/ht-projects-maven.md)
 
 ## DocAssurance Service {#docassurance-service}
 
