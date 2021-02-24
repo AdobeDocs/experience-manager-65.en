@@ -83,7 +83,7 @@ If the user profile was not created through self-registration, the very first ti
 
 The next time the member signs in, the home page, identified by the first menu item, is displayed.
 
-![chlimage_1-434](assets/chlimage_1-434.png)
+![enrolled-member](assets/enrolled-member.png)
 
 ### Assignments {#assignments}
 
@@ -99,11 +99,11 @@ Each assignment provides basic information as to:
 
 The type of Assignment is indicated by an icon in the upper left corner of the card. The image of a road is for a learning path with the number of included enablement resources.
 
-![chlimage_1-435](assets/chlimage_1-435.png)
+![assignment1](assets/assignment1.png)
 
 Selecting *Ski Lessons* will display the two enablement resources referenced by the learning path.
 
-![chlimage_1-436](assets/chlimage_1-436.png)
+![assignment2](assets/assignment2.png)
 
 Selecting *Ski Lesson 1* will open the enablement resource's details page.
 
@@ -111,7 +111,7 @@ From the details page, the member is able to learn, [rate](rating.md) the lesson
 
 Interactions with the enablement resource will be noted in the Report section accessible in the author environment.
 
-![chlimage_1-437](assets/chlimage_1-437.png)
+![assignment3](assets/assignment3.png)
 
 ### Ski Catalog {#ski-catalog}
 
@@ -119,7 +119,7 @@ The Ski Catalog page is the catalog of enablement resources tagged with tags fro
 
 When a member has not been assigned enablement resources, either directly or through a learning path, it is possible to interact with enablement resources located within a catalog and provide feedback through comments and ratings.
 
-![chlimage_1-438](assets/chlimage_1-438.png)
+![ski-catalog](assets/ski-catalog.png)
 
 ### Discussions {#discussions}
 
@@ -131,7 +131,7 @@ Log out and Log in as Sidney Croft (sidney / password) and reply to the question
 
 Notice, in addition to inline moderation, there are options to share the topic on social media or to email the topic.
 
-![chlimage_1-439](assets/chlimage_1-439.png)
+![discussions](assets/discussions.png)
 
 ### What's New {#what-s-new}
 
@@ -139,7 +139,7 @@ The `What's New` menu item is the title given the [activity stream function](fun
 
 Still signed in as Sidney, select the `What's New` link to show the activity.
 
-![chlimage_1-440](assets/chlimage_1-440.png)
+![whats-new-menu](assets/whats-new-menu.png)
 
 ## Trusted Community Member {#trusted-community-member}
 
@@ -152,7 +152,7 @@ Login with
 
 Once signed in, notice there is a new menu item, `Administration`, which appears because the member was given the role of moderator.
 
-![chlimage_1-441](assets/chlimage_1-441.png)
+![trusted-member-homepage](assets/trusted-member-homepage.png)
 
 The home page is identified by the first menu item, Assignments. Quinn is the moderator and enablement resource contact and was not enrolled in any enablement resources or learning paths, and so there is nothing to display.
 
@@ -164,7 +164,7 @@ Selecting the side-panel icon toggles open the filters used to search community 
 
 Hovering over a comment card displays moderation actions.
 
-![chlimage_1-442](assets/chlimage_1-442.png)
+![administration](assets/administration.png)
 
 ## Reports on Author {#reports-on-author}
 
@@ -206,7 +206,7 @@ Notice that it is likely too soon to show data from Adobe Analytics, which can t
 
 #### Ski Lessons Resource Report {#ski-lessons-resource-report}
 
-![chlimage_1-443](assets/chlimage_1-443.png)
+![ski-lessons-report](assets/ski-lessons-report.png)
 
 #### Ski Lessons User Report {#ski-lessons-user-report}
 
@@ -216,7 +216,7 @@ Notice that it is likely too soon to show data from Adobe Analytics, which can t
 * Open card `Ski Lessons`
 * Select `Report > User Report`
 
-![chlimage_1-444](assets/chlimage_1-444.png)
+![ski-lessons-user-report](assets/ski-lessons-user-report.png)
 
 ### Reports Console {#reports-console}
 
@@ -238,7 +238,7 @@ For reports on assignments:
 
 * Select **[!UICONTROL Generate]**
 
-![chlimage_1-445](assets/chlimage_1-445.png)
+![report-assignment](assets/report-assignment.png)
 
 For reports on views:
 
@@ -252,6 +252,6 @@ For reports on views:
 
 * Select **[!UICONTROL Generate]**.
 
-![chlimage_1-446](assets/chlimage_1-446.png)
+![report-views](assets/report-views.png)
 
 **[⇐ Create and Assign Enablement Resources](resource.md)**

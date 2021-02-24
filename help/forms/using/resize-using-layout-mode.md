@@ -1,48 +1,38 @@
 ---
-title: Use Layout mode to resize components
-seo-title: Use Layout mode to resize components
+title: Use Layout mode to resize components for adaptive forms
 description: Define the position of components using the responsive grid available in Layout mode 
-seo-description: Define the position of components using the responsive grid available in Layout mode 
-uuid: 6b077ebe-caea-4ae3-b17a-be2dca94eeb3
-contentOwner: anujkapo
-topic-tags: interactive-communications, author
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
-docset: aem65
-
 ---
 
-# Use Layout mode to resize components{#use-layout-mode-to-resize-components}
+# Use Layout mode to resize components {#use-layout-mode-to-resize-components}
 
-The adaptive form and Interactive Communication Web channel authoring interface enables you to resize components using the Layout mode. Drag-and-drop blue dots within columns to define the start and end points to position components. The blue dots display after tapping the component within the responsive grid. The responsive grid consists of 12 equal columns. The white and blue color shading in alternate columns differentiates one column from the other.
+The adaptive form authoring interface enables you to resize components using the Layout mode. Drag-and-drop blue dots within columns to define the start and end points to position components. The blue dots display after tapping the component within the responsive grid. The responsive grid consists of 12 equal columns. The white and blue color shading in alternate columns differentiates one column from the other.
 
 You can use the Layout mode to resize components for all device types such as desktop, tablet, phone, and other smaller devices. The tablet automatically derives the layout configuration from the desktop version and the smaller devices derive layout configuration from phone. However, you can override the automatically derived configurations to define a different configuration for each device type.
 
-If you are creating the Web channel using [Print channel as master](../../forms/using/create-interactive-communication.md) for an Interactive Communication, the components available for resizing also include the sub-forms and fields that are auto-generated in Web channel using Print channel. The Web channel retains the layout for the Print channel elements in Layout mode.
-
 ## Access Layout mode {#access-layout-mode}
 
-Select **Layout** from the drop-down list that appears at the top of the adaptive form and Interactive Communication authoring interface next to the **Preview** option. The form displays in the Layout mode.
+Select **Layout** from the drop-down list that appears at the top of the adaptive form authoring interface next to the **Preview** option. The form displays in the Layout mode.
 
 1. Log in to the AEM author instance and navigate to **Adobe Experience Manager** &gt; **Forms** &gt; **Forms & Documents**.
-1. [Create a new](../../forms/using/create-interactive-communication.md) or open an existing adaptive form or an Interactive Communication.
+1. Create a new or open an existing [adaptive form](../../forms/using/creating-adaptive-form.md).
 1. Select **Layout** from the drop-down list that appears at the top next to the **Preview** option. The form displays in the Layout mode.
 
-   ![Layout mode for Interactive Communications](assets/layout_mode_ic_new.png)
+   ![Layout mode](assets/layout_mode_ic_new.png)
 
 ## Resize components {#resize-components}
 
 1. In Layout mode, tap the component to resize. The blue dots display at the start and end of the responsive grid.
 1. Drag-and drop the blue dots to define the position of the component in the responsive grid.
 
-   ![Resizing using Layout mode](assets/layout_mode_resize_new_updated.png)
+   ![Resizing using Layout mode](assets/layout_mode_resize_new_updated1.png)
 
    The toolbar that displays after tapping components consists of the following options:
 
-    * **Parent:** Select the parent of a component.
-    * **Float to new line:** Shift the component to the next line if there are multiple components within the same line.
+    * **[!UICONTROL Parent]**: Select the parent of a component.
+    * **[!UICONTROL Revert breakpoint layout]**: Undo all resizing changes and apply default layout to the component.
+    * **[!UICONTROL Float to new line]**: Shift the component to the next line if there are multiple components within the same line.
 
-   You can undo all resizing changes and apply default layout to the panel containing resized components using the **[!UICONTROL Revert breakpoint layout]** ( ![Revert Breakpoint](assets/reverttopreviouslypublishedversion.png)) option. Tap the parent of the resized component to view the option.
+   You can also use the **[!UICONTROL Revert breakpoint layout]** ( ![Revert Breakpoint](assets/reverttopreviouslypublishedversion.png)) option at the panel-level to undo all resizing changes.
 
    >[!NOTE]
    >
@@ -50,9 +40,9 @@ Select **Layout** from the drop-down list that appears at the top of the adaptiv
 
 ### Example {#example}
 
-**Objective:** You want to insert a table component and an Image component and position them parallel to each other in an Interactive Communication.
+**Objective:** You want to insert a table component and an Image component and position them parallel to each other in an adaptive form.
 
-1. Insert the table and image components using Edit mode in the web channel. The image component display after the table component.
+1. Insert the table and image components using Edit mode in the adaptive form. The image component display after the table component.
 1. Switch to Layout mode and tap the Table component. The blue dots to resize the component display at column 1 and 12.
 1. Drag-and-drop the blue dot at column 12 to column 6 of the responsive grid.
 

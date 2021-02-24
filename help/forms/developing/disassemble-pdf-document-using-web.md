@@ -1,8 +1,8 @@
 ---
 title: Disassemble a PDF document usingthe web service API
 seo-title: Disassemble a PDF document usingthe web service API
-description: null
-seo-description: null
+description: Disassemble a PDF document using the Assembler Service API
+seo-description: Disassemble a PDF document using the Assembler Service API
 uuid: d6283dc5-e333-49d0-abde-1d390662f4fe
 contentOwner: admin
 content-type: reference

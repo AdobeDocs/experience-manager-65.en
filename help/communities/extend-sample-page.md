@@ -27,7 +27,7 @@ The [Community Components Guide](/help/communities/components-guide.md) identifi
 
 Note the three client libraries required for Comments to render and function properly. These will need to be included where the extended Comments are referenced, and the [extended Comments' client library](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
 
-![chlimage_1-47](assets/chlimage_1-47.png)
+![comments-component1](assets/comments-component1.png)
 
 ### Add Custom Comments to a Page {#add-custom-comments-to-a-page}
 
@@ -39,17 +39,17 @@ In order for the Comment to appear and function properly, the client libraries f
 
 #### Comments Clientlibs on Sample Page {#comments-clientlibs-on-sample-page}
 
-![chlimage_1-48](assets/chlimage_1-48.png)
+![comments-clientlibs-crxde](assets/comments-clientlibs-crxde.png)
 
 #### Author: Alt Comment on Sample Page {#author-alt-comment-on-sample-page}
 
-![chlimage_1-49](assets/chlimage_1-49.png)
+![alt-comment](assets/alt-comment.png)
 
 #### Author: Sample Page Comments Node {#author-sample-page-comments-node}
 
 You can verify the resourceType in CRXDE by viewing the properties of the comments node for the sample page at `/content/sites/sample/en/jcr:content/content/primary/comments`.
 
-![chlimage_1-50](assets/chlimage_1-50.png)
+![verify-comment-crxde](assets/verify-comment-crxde.png)
 
 #### Publish Sample Page {#publish-sample-page}
 
@@ -61,8 +61,8 @@ After publishing both the custom application and the sample page, it is possible
 
 Here is aaron.mcdonald@mailinator.com posting a comment:
 
-![chlimage_1-51](assets/chlimage_1-51.png) 
+![publish-alt-comment](assets/publish-alt-comment.png) 
 
-![chlimage_1-52](assets/chlimage_1-52.png)
+![publish-alt-comment1](assets/publish-alt-comment1.png)
 
 Now that it appears the extended component is working correctly with the default appearance, it is time to modify the appearance.

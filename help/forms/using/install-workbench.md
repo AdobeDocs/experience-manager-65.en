@@ -2,10 +2,8 @@
 title: Install workbench
 seo-title: Install workbench
 description: Install workbench.
-uuid:
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid:
 ---
 
 # Install Workbench {#install-workbench}

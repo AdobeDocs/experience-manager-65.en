@@ -17,7 +17,7 @@ docset: aem65
 
 [Adobe Scene7](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) is a hosted solution for managing, enhancing, publishing, and delivering rich media assets to Web, mobile, email, and Internet-connected displays and print.
 
-You can view AEM assets published in Scene7 in various viewers:
+You can view Experience Manager assets published in Scene7 in various viewers:
 
 * Zoom
 * Flyout
@@ -25,13 +25,13 @@ You can view AEM assets published in Scene7 in various viewers:
 * Image Template
 * Image
 
-You can publish digital assets directly from AEM to Scene7 and you can publish digital assets from Scene7 to AEM.
+You can publish digital assets directly from Experience Manager to Scene7 and you can publish digital assets from Scene7 to Experience Manager.
 
-This document describes how to publish digital assets from AEM to Scene7 and vice versa. Viewers are also described in detail. For information on configuring AEM for Scene7, see [Integrating Scene7 with AEM](/help/sites-administering/scene7.md).
+This document describes how to publish digital assets from Experience Manager to Scene7 and vice versa. Viewers are also described in detail. For information on configuring Experience Manager for Scene7, see [Integrating Scene7 with Experience Manager](/help/sites-administering/scene7.md).
 
 See also [Adding Image Maps](/help/assets/image-maps.md).
 
-For more information on using video components with AEM, see the following:
+For more information on using video components with Experience Manager, see the following:
 
 * [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
 
@@ -45,14 +45,14 @@ You can publish digital assets to Scene7 either from the Assets console in the c
 
 >[!NOTE]
 >
->AEM publishes to Scene7 asynchronously. After you click **Publish**, it may take several seconds for your asset to publish to Scene7.
+>Experience Manager publishes to Scene7 asynchronously. After you click **Publish**, it may take several seconds for your asset to publish to Scene7.
 >
 
 ### Publishing from the Assets console {#publishing-from-the-assets-console}
 
 To publish to Scene7 from the Assets console if the assets are in a Scene7 target folder:
 
-1. In the AEM classic UI, click **Digital Assets** to access the digital asset manager.
+1. In the Experience Manager classic UI, click **Digital Assets** to access the digital asset manager.
 
 1. Select the asset (or assets) or folder from within the target folder you want to publish to Scene7 and right-click and select **Publish to Scene7**. Alternatively, you can select **Publish to Scene7** from the **Tools menu**.
 
@@ -74,7 +74,7 @@ You can manually publish an asset as long as that asset is located inside the sy
 
 To publish to Scene7 directly from a digital asset:
 
-1. In AEM, click **Digital Assets** to access the digital asset manager.
+1. In Experience Manager, click **Digital Assets** to access the digital asset manager.
 
 1. Double-click to open an asset.
 
@@ -86,7 +86,7 @@ To publish to Scene7 directly from a digital asset:
 
    >[!NOTE]
    >
-   >If the asset does not publish properly to Scene7, the link changes to **Publishing Failed**. If the asset has already been published to Scene7, the link reads **Re-Publish to Scene7**. Republishing allows you to make changes to an asset in AEM and re-publish them.
+   >If the asset does not publish properly to Scene7, the link changes to **Publishing Failed**. If the asset has already been published to Scene7, the link reads **Re-Publish to Scene7**. Republishing allows you to make changes to an asset in Experience Manager and re-publish them.
 
 ### Publishing assets from outside the CQ Target folder {#publishing-assets-from-outside-the-cq-target-folder}
 
@@ -100,7 +100,7 @@ You do this by first configuring the Cloud configuration for the page where the 
 
 To publish assets that reside outside the CQ target folder:
 
-1. In AEM in the classic UI, click **Websites** and navigate to the web page that you want to add a digital asset to that is not yet published to Scene7. (Normal page inheritance rules apply.)
+1. In Experience Manager in the classic UI, click **Websites** and navigate to the web page that you want to add a digital asset to that is not yet published to Scene7. (Normal page inheritance rules apply.)
 
 1. In the sidekick, click the **Page** icon and click **Page Properties**.
 
@@ -118,7 +118,7 @@ To publish assets that reside outside the CQ target folder:
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-1. Click **Check Scene7 Publication Status**. If the assets is not published, AEM publishes the asset to Scene7. After it is uploaded, the asset is located in the ad-hoc folder. By default, the ad-hoc folder is located in the **name_of_the_company/CQ5_adhoc**. You can [configure this, if needed](#configuringtheadhocfolder).
+1. Click **Check Scene7 Publication Status**. If the assets is not published, Experience Manager publishes the asset to Scene7. After it is uploaded, the asset is located in the ad-hoc folder. By default, the ad-hoc folder is located in the **name_of_the_company/CQ5_adhoc**. You can [configure this, if needed](#configuringtheadhocfolder).
 
    >[!NOTE]
    >
@@ -126,7 +126,7 @@ To publish assets that reside outside the CQ target folder:
 
 ## Scene7 Components {#scene-components}
 
-The following Scene7 components are available in AEM:
+The following Scene7 components are available in Experience Manager:
 
 * Zoom
 * Flyout (Zoom)
@@ -138,7 +138,7 @@ The following Scene7 components are available in AEM:
 >
 >These components are not available by default and need to be selected in Design mode before using.
 
-After they are made available in Design mode, you can add the components to your page like any other AEM component. Assets that have not yet been published to Scene7 are published to Scene7 if in a synchronized folder or on a page or with a Scene7 cloud configuration.
+After they are made available in Design mode, you can add the components to your page like any other Experience Manager component. Assets that have not yet been published to Scene7 are published to Scene7 if in a synchronized folder or on a page or with a Scene7 cloud configuration.
 
 >[!NOTE]
 >
@@ -156,7 +156,7 @@ Adding a Scene7 component to a page is the same as adding a component to any pag
 
 To add a Scene7 component/viewer to a page in the classic UI:
 
-1. In AEM, open the page where you want to add the Scene7 component.
+1. In Experience Manager, open the page where you want to add the Scene7 component.
 
 1. If no Scene7 components are available, click the ruler in the sidekick to enter **Design** mode, click **Edit** parsys, and select all the **Scene7** components to make them available.
 
@@ -174,7 +174,7 @@ Responsive design for your assets means that your assets adapts depending on whe
 
 To add an interactive viewing experience to a responsive site in the classic UI:
 
-1. Log in to AEM, and ensure that you have [configured Adobe Scene7 Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration) and that Scene7 components are available.
+1. Log in to Experience Manager, and ensure that you have [configured Adobe Scene7 Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration) and that Scene7 components are available.
 
    >[!NOTE]
    >
@@ -221,7 +221,7 @@ In the HTML5 Flyout component, the asset is shown as split screen; left the asse
 
 ### Image {#image}
 
-The Scene7 Image component lets you add Scene7 functionality to your images, such as Scene7 modifiers, image or viewer presets, and sharpening. The Scene7 image component is similar to other image components in AEM with special Scene7 functionality. In this example, the image has the Scene7 URL modifier, **&op_invert=1** applied.
+The Scene7 Image component lets you add Scene7 functionality to your images, such as Scene7 modifiers, image or viewer presets, and sharpening. The Scene7 image component is similar to other image components in Experience Manager with special Scene7 functionality. In this example, the image has the Scene7 URL modifier, **&op_invert=1** applied.
 
 ![](do-not-localize/chlimage_1-4.png)
 
@@ -247,7 +247,7 @@ The Scene7 Image component lets you add Scene7 functionality to your images, suc
 
 ### Image Template {#image-template}
 
-[Scene7 Image Templates](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) are layered Photoshop content that was imported to Scene7, where content and properties were parameterized for variability. The **Image template** component lets you import images and change the text dynamically in AEM. In addition, you can configure the **Image template** component to use values from client context, so that each user experiences the image in a personalized way.
+[Scene7 Image Templates](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) are layered Photoshop content that was imported to Scene7, where content and properties were parameterized for variability. The **Image template** component lets you import images and change the text dynamically in Experience Manager. In addition, you can configure the **Image template** component to use values from client context, so that each user experiences the image in a personalized way.
 
 Click **Edit** to configure the component. You can configure [settings common to all Scene7 components](/help/sites-administering/scene7.md#settingscommontoallscene7components) as well as other settings described in this section.
 
@@ -321,15 +321,15 @@ When using an adaptive video set with the Scene7 video component, the component 
 
 ## Scene7 Content Browser {#scene-content-browser}
 
-The Scene7 content browser lets you view content from Scene7 directly in AEM. To access the content browser, in the Content Finder, select **Scene7** in the touch-optimized user interface or the **S7** icon in the classic user interface. Functionality is identical between both user interfaces.
+The Scene7 content browser lets you view content from Scene7 directly in Experience Manager. To access the content browser, in the Content Finder, select **Scene7** in the touch-optimized user interface or the **S7** icon in the classic user interface. Functionality is identical between both user interfaces.
 
-If you have multiple configurations, AEM by default displays the [default configuration](/help/sites-administering/scene7.md#configuring-a-default-configuration). You can select different configurations directly in the Scene7 content browser in the drop-down menu.
+If you have multiple configurations, Experience Manager by default displays the [default configuration](/help/sites-administering/scene7.md#configuring-a-default-configuration). You can select different configurations directly in the Scene7 content browser in the drop-down menu.
 
 >[!NOTE]
 >
 >* Assets located in the ad-hoc folder will not appear in the Scene7 content browser.
 >* When [Secure Preview is enabled](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), both published and unpublished assets on Scene7 do appear in the Scene7 content browser.
->* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
+>* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with Experience Manager](/help/sites-administering/scene7.md).
 >* For video, the Scene7 content browser supports:
 >   * Adaptive Video Sets: container of all video renditions needed for seamless playback across multiple screens
 >   * Single MP4 video
@@ -358,7 +358,7 @@ By default, assets are displayed by file name. You can also filter results by as
 
 ### Searching for Scene7 assets with the content browser {#searching-for-scene-assets-with-the-content-browser}
 
-Searching for Scene7 assets is similar to searching AEM assets except that when you search you are actually seeing a remote view of the assets in the Scene7 system, rather than importing them directly into AEM.
+Searching for Scene7 assets is similar to searching Experience Manager assets except that when you search you are actually seeing a remote view of the assets in the Scene7 system, rather than importing them directly into Experience Manager.
 
 You can use either the classic UI or the touch-optimized UI to both view and search for assets. Depending on the interface, how you search is slightly different.
 
@@ -370,9 +370,9 @@ When searching in either UI, you can filter by the following criteria (shown her
 
 **Folder/path** The name of the folder that appears is based on the configuration you have selected. You can drill down to lower levels by clicking the folder icon and selecting a sub-folder, then clicking the checkmark to select it.
 
-If you enter a keyword and select a folder, AEM searches that folder and any sub-folders. However, if you do not enter any keywords when searching, selecting the folder will only show the assets in that folder and will not include any subfolders.
+If you enter a keyword and select a folder, Experience Manager searches that folder and any sub-folders. However, if you do not enter any keywords when searching, selecting the folder will only show the assets in that folder and will not include any subfolders.
 
-By default, AEM searches the folder selected and all sub-folders.
+By default, Experience Manager searches the folder selected and all sub-folders.
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
@@ -384,7 +384,7 @@ By default, AEM searches the folder selected and all sub-folders.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-**Asset type** Within the Scene7 browser, you can filter results to include any of the following: images, templates, videos, and adaptive video sets. If you do not select any asset type, AEM by default searches all asset types.
+**Asset type** Within the Scene7 browser, you can filter results to include any of the following: images, templates, videos, and adaptive video sets. If you do not select any asset type, Experience Manager by default searches all asset types.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -393,9 +393,9 @@ By default, AEM searches the folder selected and all sub-folders.
 >* In the classic UI, you can also search for **Flash** and **FXG**. Filtering for these in the touch-optimized UI is currently not supported.
 >
 >* When searching video, you are searching a single rendition. Results return the original rendition (only &#42;.mp4) and the encoded rendition.
->* When searching an adaptive video set, you are searching the folder and all sub-folders but only if you have added a keyword to the search. If you have not added a keyword, AEM does not search the sub-folders.
+>* When searching an adaptive video set, you are searching the folder and all sub-folders but only if you have added a keyword to the search. If you have not added a keyword, Experience Manager does not search the sub-folders.
 >
 
-**Publish Status** You can filter for assets based on publication status: Unpublished or Published. If you do not select any Publish Status, AEM by default searches all publish statuses.
+**Publish Status** You can filter for assets based on publication status: Unpublished or Published. If you do not select any Publish Status, Experience Manager by default searches all publish statuses.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)

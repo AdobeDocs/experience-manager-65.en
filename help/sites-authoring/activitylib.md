@@ -40,7 +40,6 @@ Activities are displayed with a label describing what kind of activity is define
 >[!NOTE]
 >
 >What types of activities are available is determined by the following:
-
 >
 >* If the **xt_only** option is enabled on the Adobe Target tenant (clientcode) used on the AEM side to connect to Adobe Target, then you can create **only** XT activities in AEM.
 >

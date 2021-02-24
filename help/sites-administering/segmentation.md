@@ -125,7 +125,9 @@ The following references are available out-of-the-box to link directly to a scri
 
 To define your new segment:
 
-1. After [accessing the segments](/help/sites-administering/segmentation.md#accessing-segments), click or tap the Create button and select **Create ContextHub Segment**.
+1. After [accessing the segments](/help/sites-administering/segmentation.md#accessing-segments), [navigate to the folder](#organizing-segments) where you would like to create the segment, or leave it in the root.
+
+1. click or tap the Create button and select **Create ContextHub Segment**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
@@ -218,6 +220,75 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. Create ContextHub segment.
 1. Add **Script Reference** component in the desired place of the segment.
 1. Open the edit dialog of the **Script Reference** component. If [properly configured](/help/sites-administering/segmentation.md#defining-a-script-to-reference), the script should be available in the **Script name** drop-down.
+
+## Organizing Segments {#organizing-segments}
+
+If you have many segments, they can become hard to manage as a flat list. In such cases, it can be useful to create folders to manage your segments.
+
+### Create a New Folder {#create-folder}
+
+1. After [accessing the segments](#accessing-segments), click or tap the **Create** button and select **Folder**.
+
+   ![Add folder](assets/contexthub-create-segment.png)
+
+1. Provide a **Title** and a **Name** for your folder.
+   * The **Title** should be descriptive.
+   * The **Name** will become the node name in the repository.
+      * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/sites-developing/naming-conventions.md)
+      * It can be adjusted if necessary.
+
+    ![Create folder](assets/contexthub-create-folder.png)
+
+1. Tap or click **Create**.
+
+   ![Confirm folder](assets/contexthub-confirm-folder.png)
+
+1. The folder will appear in the list of segments.
+   * How you sort your columns will affect where in the list the new folder appears.
+   * You can tap or click the column headings to adjust your sort.
+   ![The new folder](assets/contexthub-folder.png)
+
+### Modify Existing Folders {#modify-folders}
+
+1. After [accessing the segments](#accessing-segments), click or tap the folder you wish to modify to select it.
+
+   ![Select folder](assets/contexthub-select-folder.png)
+
+1. Tap or click **Rename** in the toolbar to rename the folder.
+
+1. Provide a new **Folder Title** and tap or click **Save**.
+
+   ![Rename folder](assets/contexthub-rename-folder.png)
+
+>[!NOTE]
+>
+>When renaming folders, only the title can be changed. The name cannot be changed.
+
+### Delete a Folder
+
+1. After [accessing the segments](#accessing-segments), click or tap the folder you wish to modify to select it.
+
+   ![Select folder](assets/contexthub-select-folder.png)
+
+1. Tap or click **Delete** in the toolbar to delete the folder.
+
+1. A dialog presents a list of folders selected for deletion.
+
+   ![Confirm delete](assets/contexthub-confirm-segment-delete.png)
+
+   * Tap or click **Delete** to confirm.
+   * Tap or click **Cancel** to abort.
+
+1. If any of the selected folders contains subfolders or segments, their deletion must be confirmed.
+
+   ![Confirm deletion of children](assets/contexthub-confirm-segment-child-delete.png)
+
+   * Tap or click **Force Delete** to confirm.
+   * Tap or click **Cancel** to abort.
+
+>[!NOTE]
+>
+> It is not possible to move a segment from one folder to another.
 
 ## Testing the Application of a Segment {#testing-the-application-of-a-segment}
 

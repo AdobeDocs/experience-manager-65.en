@@ -64,9 +64,9 @@ Select the desired style to apply to the template. When selected, the theme will
 
 (Optional) Upload a banner image to display across the site pages. The banner is pinned to the left edge of the browser, between the community site header and menu (navigation links). The banner height is cropped to 120 pixels. There is no resizing of the banner to fit the width of the browser and 120 pixel height.
 
-![chlimage_1-449](assets/chlimage_1-449.png) 
+![site-branding1](assets/site-branding1.png) 
 
-![chlimage_1](assets/chlimage_1.jpeg)
+![site-branding2](assets/site-branding2.png)
 
 Select **Next**.
 
@@ -124,7 +124,7 @@ For example,
 
 Accept the default global settings for [moderating](/help/communities/sites-console.md#moderation) user generated content (UGC).
 
-![chlimage_1-452](assets/chlimage_1-452.png)
+![moderation1](assets/moderation1.png)
 
 #### ANALYTICS {#analytics}
 
@@ -132,7 +132,7 @@ From the drop-down, select the Analytics cloud service framework configured for 
 
 The selection seen in the screenshot, `Communities`, is the framework example from the [configuration documentation.](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
-![chlimage_1-454](assets/chlimage_1-454.png)
+![analytics](assets/analytics.png)
 
 #### TRANSLATION {#translation}
 
@@ -141,7 +141,7 @@ The [Translation settings](/help/communities/sites-console.md#translation) speci
 * Check **Allow Machine Translation**
 * Use the default settings
 
-![chlimage_1-456](assets/chlimage_1-456.png)
+![translation](assets/translation.png)
 
 #### ENABLEMENT {#enablement}
 
@@ -156,7 +156,7 @@ For an enablement community, it is necessary to identify one or more Community E
 * **Marketing Cloud Org Id**
   (optional) The ID for an Adobe Analytics account which is necessary when including [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) in the enablement reporting.
 
-![chlimage_1-457](assets/chlimage_1-457.png)
+![enablement](assets/enablement.png)
 
 Select **Next**.
 
@@ -164,7 +164,7 @@ Select **Next**.
 
 Select **Create.**
 
-![chlimage_1-458](assets/chlimage_1-458.png)
+![preview](assets/preview.png)
 
 When the process completes, the folder for the new site is displayed in the Communities > Sites console.
 
@@ -211,11 +211,11 @@ From left to right they are:
 
 Select the world icon to publish the community site.
 
-![chlimage_1-465](assets/chlimage_1-465.png)
+![publish-site](assets/publish-site.png)
 
 There will be an indication the site was published.
 
-![chlimage_1-466](assets/chlimage_1-466.png)
+![site-published](assets/site-published.png)
 
 ## Community Users & User Groups {#community-users-user-groups}
 
@@ -244,7 +244,7 @@ In this example, the group `Community Ski Class` is added as a member of the gro
 
 * Select **Save**
 
-![chlimage_1-418](assets/chlimage_1-418.png)
+![edit-group-settings](assets/edit-group-settings.png)
 
 ## Configurations on Publish {#configurations-on-publish}
 
@@ -309,13 +309,13 @@ To get started:
 >
 >To disable, simply pre-pend the `sling:match` property value with an 'x' - `xlocalhost.4503/$` - and **Save All**.
 
-![chlimage_1-364](assets/chlimage_1-364.png)
+![change-default-homepage](assets/change-default-homepage.png)
 
 #### Troubleshooting: Error Saving Map {#troubleshooting-error-saving-map}
 
 If unable to save changes, be sure the node name is `localhost.4503`, with a 'dot' separator, and not `localhost:4503` with a 'colon' separator, as `localhost` is not a valid namespace prefix.
 
-![chlimage_1-365](assets/chlimage_1-365.png)
+![error-map](assets/error-map.png)
 
 #### Troubleshooting: Fail to Redirect {#troubleshooting-fail-to-redirect}
 
@@ -353,11 +353,11 @@ Select the STRUCTURE panel to add a Catalog or modify an existing Catalog :
 
 * Select **Save**.
 
-![chlimage_1-299](assets/chlimage_1-299.png)
+![modify-site-structure](assets/modify-site-structure.png)
 
 Use the Position Icon to move the Catalog function to the second position, after Assignments.
 
-![chlimage_1-300](assets/chlimage_1-300.png)
+![move-catalog-func](assets/move-catalog-func.png)
 
 Select **Save** in the upper right corner to save the changes to the community site.
 

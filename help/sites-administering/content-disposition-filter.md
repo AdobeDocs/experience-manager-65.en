@@ -15,7 +15,7 @@ discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 
 Content disposition filter is a security feature against XSS attacks on SVG files.
 
-Once installed, the filter blocks access to all assets. For example, you could not view a pfd online. This section describes how to configure the filter to your needs.
+Once installed, the filter blocks access to all assets. For example, you could not view a PDF online. This section describes how to configure the filter to your needs.
 
 ## Configure Content Disposition Filter {#configure-content-disposition-filter}
 
@@ -27,5 +27,4 @@ The Content Disposition Filter options provide the following functionality:
 
 * Excluded Resource Paths: a list fo excluded resources, each resource path must be given as absolute and fully qualified path. Prefix matching/wildcards are not supported.
 
-* Enable For All Resource Paths: this flag controls whether to enable this filter for all paths, except for the excluded paths defined by Excluded Resource Paths. Setting this to 'true' leads to ignoring Content Disposition Paths. Independent of the configuration only resource paths are covered which contain a property named 'jcr:data' or 'jcr:content jcr:data'.
-
+* Enable For All Resource Paths: this flag controls whether to enable this filter for all paths, except for the excluded paths defined by Excluded Resource Paths. Setting this to 'true' leads to ignoring Content Disposition Paths. Independent of the configuration, only resource paths are covered which contain a property named 'jcr:data' or 'jcr:content/jcr:data'.

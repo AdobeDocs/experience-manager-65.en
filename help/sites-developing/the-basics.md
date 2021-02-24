@@ -155,10 +155,11 @@ A few other points to note are:
 * when the Method (GET, POST) is required, it will be specified in uppercase as according to the HTTP specification e.g. jobs.POST.esp (see below)
 * various script engines are supported:
 
-    * `.esp, .ecma`: ECMAScript (JavaScript) Pages (server-side execution)
-    * `.jsp`: Java Server Pages (server-side execution)
-    * `.java`: Java Servlet Compiler (server-side execution)
-    * `.jst`: JavaScript templates (client-side execution)
+  * HTL (HTML Template Language - Adobe Experience Manager’s preferred and recommended server-side template system for HTML): `.html`
+  * ECMAScript (JavaScript) Pages (server-side execution): `.esp, .ecma`
+  * Java Server Pages (server-side execution): `.jsp`
+  * Java Servlet Compiler (server-side execution): `.java`
+  * JavaScript templates (client-side execution): `.jst`
 
 The list of script engines supported by the given instance of AEM are listed on the Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`).
 

@@ -1,36 +1,31 @@
 ---
-title: Creating adaptive forms using JSON Schema
-seo-title: Creating adaptive forms using JSON Schema
-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
-seo-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
-uuid: bdeaeae8-65a3-4c46-b27d-fe68481e31f1
-topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 375ba8fc-3152-4564-aec5-fcff2a95cf4c
-docset: aem65
-
+title: How to Create Adaptive Forms using JSON Schema?
+description: Learn how to create adaptive forms using JSON schema as form model. You can use existing JSON schemas to create adaptive forms. Dig deeper with a sample of a JSON schema, pre-configure fields in JSON schema definition, limit acceptable values for an adaptive form component, and learn non-supported constructs.
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner, Imtermediate
 ---
 
-# Creating adaptive forms using JSON Schema{#creating-adaptive-forms-using-json-schema}
+# Creating adaptive forms using JSON Schema {#creating-adaptive-forms-using-json-schema}
 
 ## Prerequisites {#prerequisites}
 
-Authoring an adaptive form using an JSON Schema as its form model requires basic understanding of JSON Schema. It is recommended to read through the following content before this article.
+Authoring an adaptive form using a JSON Schema as its form model requires basic understanding of JSON Schema. It is recommended to read through the following content before this article.
 
-* [Creating an adaptive form](../../forms/using/creating-adaptive-form.md)
+* [Creating an adaptive form](creating-adaptive-form.md)
 * [JSON Schema](https://json-schema.org/)
 
 ## Using a JSON Schema as form model  {#using-a-json-schema-as-form-model}
 
-AEM Forms supports creation of an adaptive form by using an existing JSON Schema as the form model. This JSON Schema represents the structure in which data is produced or consumed by the back-end system in your organization. The JSON Schema you use should be compliant with [v4 specifications](https://json-schema.org/draft-04/schema).
+[!DNL Adobe Experience Manager Forms] supports creation of an adaptive form by using an existing JSON Schema as the form model. This JSON Schema represents the structure in which data is produced or consumed by the back-end system in your organization. The JSON Schema you use should be compliant with [v4 specifications](https://json-schema.org/draft-04/schema).
 
-The key features of using an JSON Schema are:
+The key features of using a JSON Schema are:
 
 * The structure of the JSON is displayed as a tree in the Content Finder tab in the authoring mode for an adaptive form. You can drag and add element from the JSON hierarchy to the adaptive form.
 * You can pre-populate the form using JSON that is compliant with the associated schema.
 * On submission, the data entered by the user is submitted as JSON that aligns with the associated schema.
 
-An JSON Schema consists of simple and complex element types. The elements have attributes that add rules to the element. When these elements and attributes are dragged onto an adaptive form, they are automatically mapped to the corresponding adaptive form component.
+A JSON Schema consists of simple and complex element types. The elements have attributes that add rules to the element. When these elements and attributes are dragged onto an adaptive form, they are automatically mapped to the corresponding adaptive form component.
 
 This mapping of JSON elements with adaptive form components is as follows:
 
@@ -76,7 +71,7 @@ This mapping of JSON elements with adaptive form components is as follows:
     </ul> </td>
   </tr>
   <tr>
-   <td><p>{</p> <p>"type" : "string",</p> <p>}</p> </td>
+   <td><p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>}</code></p> </td>
    <td><br /> <br /> Text field<br /> <br /> <br /> </td>
   </tr>
   <tr>
@@ -106,21 +101,21 @@ This mapping of JSON elements with adaptive form components is as follows:
 
 Adaptive Form uses information available in JSON Schema to map each generated field. In particular:
 
-* The title property serves as label for the adaptive form components.
-* The description property is set as long description for an adaptive form component.
-* The default property serves as initial value of an adaptive form field.
-* The maxLength property is set as maxlength attribute of the text field component.
-* The minimum, maximum, exclusiveMinimum, and exclusiveMaximum properties are used for Numeric box component.
-* To support range for DatePicker component additional JSON Schema properties minDate and maxDate are provided..
-* The minItems and maxItems properties are used to restrict the number of items/fields that may be added or removed from a panel component.
-* The readOnly property sets the readonly attribute of an adaptive form component.
-* The required property marks the adaptive form field as mandatory whereas in case of panel(where type is object), the final submitted JSON data has fields with empty value corresponding to that object.
-* The pattern property is set as the validation pattern (regular expression) in adaptive form.
+* The `title` property serves as label for the adaptive form components.
+* The `description` property is set as long description for an adaptive form component.
+* The `default` property serves as initial value of an adaptive form field.
+* The `maxLength` property is set as `maxlength` attribute of the text field component.
+* The `minimum`, `maximum`, `exclusiveMinimum`, and `exclusiveMaximum` properties are used for Numeric box component.
+* To support range for `DatePicker component` additional JSON Schema properties `minDate` and `maxDate` are provided..
+* The `minItems` and `maxItems` properties are used to restrict the number of items/fields that may be added or removed from a panel component.
+* The `readOnly` property sets the `readonly` attribute of an adaptive form component.
+* The `required` property marks the adaptive form field as mandatory whereas in panel(where type is object), the final submitted JSON data has fields with empty value corresponding to that object.
+* The `pattern` property is set as the validation pattern (regular expression) in adaptive form.
 * The extension of JSON Schema file must be kept .schema.json. For example, &lt;filename&gt;.schema.json.
 
 ## Sample JSON Schema {#sample-json-schema}
 
-Here's an example of an JSON Schema.
+Here's an example of a JSON Schema.
 
 ```json
 {
@@ -357,7 +352,7 @@ You can use the **aem:afProperties** property to preconfigure JSON Schema field 
 
 ## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript is the expression language of adaptive forms. All the expressions are valid JavaScript expressions and use adaptive forms scripting model APIs. You can pre-configure form objects to [evaluate an expression](../../forms/using/adaptive-form-expressions.md) on a form event.
+JavaScript is the expression language of adaptive forms. All the expressions are valid JavaScript expressions and use adaptive forms scripting model APIs. You can pre-configure form objects to [evaluate an expression](adaptive-form-expressions.md) on a form event.
 
 Use the aem:afproperties property to preconfigure adaptive form expressions or scripts for adaptive form components. For example, when the initialize event is triggered, the below code sets value of telephone field and prints a value to the log :
 
@@ -377,7 +372,7 @@ Use the aem:afproperties property to preconfigure adaptive form expressions or s
 }
 ```
 
-You should be a member of the [forms-power-user group](/help/forms/using/forms-groups-privileges-tasks.md) to configure scripts or expressions for form object. The below table lists all the script events supported for an adaptive form component.
+You should be a member of the [forms-power-user group](forms-groups-privileges-tasks.md) to configure scripts or expressions for form object. The below table lists all the script events supported for an adaptive form component.
 
 <table>
  <tbody>
@@ -481,7 +476,7 @@ You should be a member of the [forms-power-user group](/help/forms/using/forms-g
    <td><img alt="" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
-   <td>Drop-Down</td>
+   <td>Drop-down</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
@@ -582,9 +577,9 @@ You should be a member of the [forms-power-user group](/help/forms/using/forms-g
  </tbody>
 </table>
 
-Some examples of using events in a JSON are hiding a field on initialize event and configure value of another field on value commit event. For detailed information about creating expressions for the script events, see [Adaptive Form Expressions](../../forms/using/adaptive-form-expressions.md).
+Some examples of using events in a JSON are hiding a field on initialize event and configure value of another field on value commit event. For detailed information about creating expressions for the script events, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
-Here is the sample JSON code for aforementioned examples.
+Here is the sample JSON code for previously mentioned examples.
 
 ### Hiding a field on initialize event {#hiding-a-field-on-initialize-event}
 
@@ -709,15 +704,15 @@ You can add the following restrictions to JSON Schema elements to limit the valu
     </ul> </td>
   </tr>
   <tr>
-   <td>maxItems</td>
+   <td><code>maxItems</code></td>
    <td>String</td>
-   <td>Specifies the maximum number of item in an array. The maximum items must be equal to or greater than zero.</td>
+   <td>Specifies the maximum number of items in an array. The maximum items must be equal to or greater than zero.</td>
    <td> </td>
   </tr>
   <tr>
-   <td>minItems</td>
+   <td><code>minItems</code></td>
    <td>String</td>
-   <td>Specifies the minimum number of item in an array. The minimum items must be equal to or greater than zero.</td>
+   <td>Specifies the minimum number of items in an array. The minimum items must be equal to or greater than zero.</td>
    <td> </td>
   </tr>
  </tbody>
@@ -725,7 +720,7 @@ You can add the following restrictions to JSON Schema elements to limit the valu
 
 ## Non-supported constructs  {#non-supported-constructs}
 
-Adaptive forms does not support the following JSON Schema constructs:
+Adaptive forms do not support the following JSON Schema constructs:
 
 * Null type
 * Union types such as any, and

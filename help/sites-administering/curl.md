@@ -15,7 +15,7 @@ discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 
 Administrators often need to automate or simplify common tasks within any system. In AEM for example, managing users, installing packages, and managing OSGi bundles are tasks that must be commonly done.
 
-Because of the RESTful nature of the Sling framework upon which AEM is built, most any task can be reduced to a URL call. cURL can be used to execute such URL calls and can be a useful tool for AEM administrators.
+Because of the RESTful nature of the Sling framework upon which AEM is built, most tasks can be done with a URL call. cURL can be used to execute such URL calls and can be a useful tool for AEM administrators.
 
 ## What is cURL {#what-is-curl}
 
@@ -200,7 +200,7 @@ curl -u <user>:<password> -Fmembership=contributor -Fmembership=testgroup http:/
 #### Delete a User {#delete-a-user}
 
 ```shell
-curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/users/t/testuser 
+curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/users/t/testuser
 ```
 
 #### Delete a Group {#delete-a-group}
@@ -246,8 +246,8 @@ curl -H "CQ-Action: Deactivate" -H "CQ-Handle: /content/test-site/" -H "CQ-Path:
 #### Check the Status of an Agent {#check-the-status-of-an-agent}
 
 ```shell
-curl -u <user>:<password> "http://localhost:4502/etc/replication/agents.author/publish/jcr:conten t.queue.json?agent=publish"
-http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on?agent=publish
+curl -u <user>:<password> "http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json?agent=publish"
+http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json?agent=publish
 ```
 
 #### Delete an Agent {#delete-an-agent}
@@ -265,13 +265,13 @@ curl -u <user>:<password> -F "jcr:primaryType=cq:Page" -F "jcr:content/jcr:title
 #### Pause an Agent {#pause-an-agent}
 
 ```shell
-curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
+curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json
 ```
 
 #### Clear an Agent Queue {#clear-an-agent-queue}
 
 ```shell
-curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
+curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json
 ```
 
 ### Communities {#communities}

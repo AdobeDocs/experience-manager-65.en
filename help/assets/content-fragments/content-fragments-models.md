@@ -24,15 +24,19 @@ Content Fragment Models define the structure of content for your [content fragme
 
 To enable content fragment models you need to:
 
-* Enable the use of content fragment models in the configuration manager
+* Enable the use of content fragment models in the [Configuration Browser](/help/sites-administering/configurations.md)
 * Apply the configuration to your Assets folder
 
 ### Enable Content Fragment Models in Configuration Manager {#enable-content-fragment-models-in-configuration-manager}
 
 To [create a new Content Fragment Model](#creating-a-content-fragment-model) you **must** first enable them using the Configuration Manager:
 
+>[!CAUTION]
+>
+>Sub-configurations (a configuration nested within a configuration) are not supported for use with Content Fragments.
+
 1. Navigate to **Tools**, **General**, then open the **Configuration Browser**.
-1. Select the location appropriate to your website.
+
 1. Use **Create** to open the dialog, where you:
 
     1. Specify a **Title**.
@@ -41,6 +45,8 @@ To [create a new Content Fragment Model](#creating-a-content-fragment-model) you
    ![cfm-6420-09](assets/cfm-6420-09.png)
 
 1. Select **Create** to save the definition.
+
+<!-- 1. Select the location appropriate to your website. -->
 
 ### Apply the Configuration to your Assets Folder {#apply-the-configuration-to-your-assets-folder}
 

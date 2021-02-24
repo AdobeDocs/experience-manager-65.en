@@ -21,7 +21,7 @@ There are checklists for each persona (role) involved in your project. These det
 
 AEM Project Best Practices Checklist v2
 
-[Get File](assets/aem_project_bp_checklistv2.xlsx)
+[Get File](assets/aem_project_bp_checklistv2-65.xlsx)
 
 ## Worksheets {#worksheets}
 

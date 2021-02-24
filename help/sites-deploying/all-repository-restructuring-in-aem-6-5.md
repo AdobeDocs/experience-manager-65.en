@@ -78,7 +78,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
    <td><strong>Restructuring guidance</strong></td>
    <td><p>Any new or modified Workflow Models must be migrated to /conf/global/workflow/models.</p>
     <ol>
-     <li>Deploy the modified Workflow Models into a local AEM 6.4 development instance, such that they exist in the Previous location.</li>
+     <li>Deploy the modified Workflow Models into a local AEM 6.5 development instance, such that they exist in the Previous location.</li>
      <li>Edit the Workflow Model using AEM's Workflow Model Editor at AEM &gt; Tools &gt; Workflow &gt; Models.</li>
      <li>When migrating modified AEM-provided Workflow Models
       <ol>

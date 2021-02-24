@@ -10,7 +10,6 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
-
 ---
 
 # Working with Page Versions{#working-with-page-versions}
@@ -67,8 +66,7 @@ Once a version has been created you can revert to that version if needed.
 >
 >When restoring a page, the version created will be part of a new branch.
 >
->To illustrate:  
-
+>To illustrate:
 >
 >1. Create versions of any page.
 >1. The initial labels and version node names will be 1.0, 1.1, 1.2 and so forth.  
@@ -105,11 +103,7 @@ You can preview a specific version:
    >
    >If a page has been moved, you can no longer perform a preview on any versions made before the move.
    >
-   >    
-   >    
-   >    * If you experience problems with a preview, check the [Timeline](/help/sites-authoring/basic-handling.md#timeline) for the page to see whether the page has been moved.
-   >    
-   >
+   >* If you experience problems with a preview, check the [Timeline](/help/sites-authoring/basic-handling.md#timeline) for the page to see whether the page has been moved.
 
 ## Comparing a Version with Current Page {#comparing-a-version-with-current-page}
 

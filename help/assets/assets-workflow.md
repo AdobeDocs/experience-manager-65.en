@@ -77,7 +77,7 @@ The procedure to apply a workflow to multiple folders is similar to the procedur
 
 ## Apply a workflow to a collection {#applying-a-workflow-to-a-collection}
 
-See [apply a workflow on a collection](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
+See [apply a workflow on a collection](/help/assets/manage-collections.md#running-a-workflow-on-a-collection).
 
 ## Auto-start a workflow to process assets conditionally {#auto-execute-workflow-on-some-assets}
 
@@ -99,4 +99,3 @@ For a workflow model, users can create a workflow launcher that executes it. A w
 >* [Create workflow models and extend workflow functionality](/help/sites-developing/workflows.md)
 >* [Methods to execute workflows](/help/sites-administering/workflows-starting.md)
 >* [Workflow best practices](/help/sites-developing/workflows-best-practices.md)
->* [Community article on modifying asset using workflow](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)

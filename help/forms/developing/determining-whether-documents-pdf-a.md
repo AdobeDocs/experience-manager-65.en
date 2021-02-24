@@ -1,8 +1,8 @@
 ---
 title: Determining Whether Documents Are PDF/A-Compliant
 seo-title: Determining Whether Documents Are PDF/A-Compliant
-description: null
-seo-description: null
+description: Use the Assembler service to determine if a PDF document is PDF/A-compliant using the Java API and Web Service API.
+seo-description: Use the Assembler service to determine if a PDF document is PDF/A-compliant using the Java API and Web Service API.
 uuid: 4e9d8c8f-2153-411b-9c4b-2d14b3c8f4bb
 contentOwner: admin
 content-type: reference

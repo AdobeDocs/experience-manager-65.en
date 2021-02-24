@@ -11,7 +11,7 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 ---
 
-# Performance Optimization{#performance-optimization}
+# Performance Optimization {#performance-optimization}
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 >
 >For more information about troubleshooting and fixing performance issues, also see the [Performance tree](/help/sites-deploying/performance-tree.md).
 >
->Additionallty, you can review a Knowlege Base article on [Performance Tuning Tips.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+>Additionally, you can review a Knowledge Base article on [Performance Tuning Tips.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 
 A key issue is the time your website takes to respond to visitor requests. Although this value will vary for each request, an average target value can be defined. Once this value is proven to be both achievable and maintainable, it can be used to monitor the performance of the website and indicate the development of potential problems.
 
@@ -36,12 +36,11 @@ This environment contains content which you make available to your users. Here t
 >[!NOTE]
 >
 >* After configuring for performance optimization, follow the procedures in [Tough Day](/help/sites-developing/tough-day.md) to test the environment under heavy load.
->* See also [Performance tuning tips](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
->
+>* See also [Performance tuning tips.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 
 ## Performance Optimization Methodology {#performance-optimization-methodology}
 
-A performance optimization methodology for CQ projects can be summed up in five very simple rules that can be followed to avoid performance issues from the start:
+A performance optimization methodology for AEM projects can be summed up in five very simple rules that can be followed to avoid performance issues from the start:
 
 1. [Planning for Optimization](#planning-for-optimization)
 1. [Simulate Reality](#simulate-reality)
@@ -105,16 +104,16 @@ Generally speaking, keep your uncached html requests to less than 100ms. More sp
 
 The above numbers assume the following conditions:
 
-* measured on publish (no overheads as related to an authoring environment)
-* measured on the server (no network overhead)
-* not cached (no CQ-output cache, no Dispatcher cache)
-* only for complex items with many dependencies (HTML, JS, PDF, ...)
-* no other load on the system
+* Measured on publish (no overheads as related to an authoring environment)
+* Measured on the server (no network overhead)
+* Not cached (no AEM output cache, no Dispatcher cache)
+* Only for complex items with many dependencies (HTML, JS, PDF, ...)
+* No other load on the system
 
 There are a certain number of issues that frequently contribute to performance problems. These mainly revolve around:
 
-* dispatcher caching inefficiency
-* the use of queries in normal display templates.
+* Dispatcher caching inefficiency
+* The use of queries in normal display templates.
 
 JVM and OS level tuning do not usually lead to big leaps in performance and should therefore be performed at the very end of the optimization cycle.
 
@@ -122,9 +121,9 @@ The way a content repository is structured can impact performance as well. For b
 
 Your best friends during a usual performance optimization exercise are:
 
-* the `request.log`
-* component based timing
-* last but not least a java profiler.
+* The `request.log`
+* Component based timing
+* Last but not least a java profiler.
 
 ### Performance when loading and editing Digital Assets {#performance-when-loading-and-editing-digital-assets}
 
@@ -141,7 +140,7 @@ To improve performance you can consider the following:
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
-* The timeframe in which edits will be made (typically the length of the working day, more for international operations).
+* The time frame in which edits will be made (typically the length of the working day, more for international operations).
 * The average size of images uploaded (and the size of renditions generated per image) in megabytes.
 * Determine the average data rate:
 
@@ -151,7 +150,7 @@ To improve performance you can consider the following:
 
 ## Performance Monitoring {#performance-monitoring}
 
-Performance (or the lack of it) is one of the first things that your users notice, so as with any application with a user interface, performance is of key importance. To optimize the performance of your CQ installation you need to monitor various attributes of the instance and its behavior.
+Performance (or the lack of it) is one of the first things that your users notice, so as with any application with a user interface, performance is of key importance. To optimize the performance of your AEM installation you need to monitor various attributes of the instance and its behavior.
 
 For information about how to perform performance monitoring, see [Monitoring Performance](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
 
@@ -159,15 +158,14 @@ The problems that cause performance issues are often difficult to track down, ev
 
 A basic starting point is a good knowledge of your system when it is operating as normal. Unless you know how your environment "looks" and "behaves" when it is performing properly, it can be difficult to locate the problem when performance deteriorates. This means that you should spend some time investigating your system when it is running smoothly and ensure that collecting performance information is an ongoing task. This will provide you with a basis for comparison should the performance suffer.
 
-The following diagram illustrates the path that a request for CQ content can take - and therefore the number of different elements which can impact the performance.
+The following diagram illustrates the path that a request for AEM content can take, and therefore the number of different elements which can impact the performance.
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
-Performance is also a balance between Volume and Capacity:
+Performance is also a balance between volume and capacity:
 
-**Volume** The amount of output that is processed and delivered by the system.
-
-**Capacity** The system’s ability to deliver the volume.
+* **Volume** - The amount of output that is processed and delivered by the system.
+* **Capacity** - The system’s ability to deliver the volume.
 
 This can be illustrated in various locations throughout the web-chain.
 
@@ -196,7 +194,7 @@ Certain rules should be kept in mind when optimizing performance:
 
 ## Configuring for Performance {#configuring-for-performance}
 
-Certain aspects of CQ (and/or the underlying CRX) can be configured to optimize performance. The following are possibilities and suggestions, you must sure of whether, or how, you use the functionality in question before making changes.
+Certain aspects of AEM (and/or the underlying repository) can be configured to optimize performance. The following are possibilities and suggestions, you must sure of whether, or how, you use the functionality in question before making changes.
 
 >[!NOTE]
 >
@@ -213,26 +211,28 @@ You can find the updated indexing information here:
 
 ### Concurrent Workflow Processing {#concurrent-workflow-processing}
 
-Limit the number of concurrently running workflow processes to improve performance. By default, the workflow engine processes as many workflows in parallel as there are processors available to the Java VM. When workflow steps require large amounts of processing resources (RAM or CPU), running several of these workflows in parallel can place high demans on available server resources.
+Limit the number of concurrently running workflow processes to improve performance. By default, the workflow engine processes as many workflows in parallel as there are processors available to the Java VM. When workflow steps require large amounts of processing resources (RAM or CPU), running several of these workflows in parallel can place high demands on available server resources.
 
 For example, when images (or DAM assets in general) are uploaded, workflows automatically import the images into DAM. Images are often high-resolution and that can easily consume hundreds of MB of heap for processing. Handling these images in parallel places a high load on the memory subsystem and the garbage collector.
 
 The workflow engine uses Apache Sling job queues for handling and scheduling work item processing. The following job queue services have been created by default from the Apache Sling Job Queue Configuration service factory for processing workflow jobs:
 
 * Granite Workflow Queue: Most workflow steps, such as the ones that process DAM assets, use the Granite Workflow Queue service.
-* Granite Workflow External Process Job Queue: This service is used for special extermal workflow steps that are typically used for contacting an external system and polling for results. For example the InDesign Media Extraction Process step is implemented as an external process. The workflow engine uses the external queue for processing the polling. (See [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Granite Workflow External Process Job Queue: This service is used for special external workflow steps that are typically used for contacting an external system and polling for results. For example the InDesign Media Extraction Process step is implemented as an external process. The workflow engine uses the external queue for processing the polling. (See [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Configure these services to limit the maximum number of concurrently running workflow processes.
 
-**Note:** Configuring these job queues affects all workflows unless you have created a job queue for a specific workflow model (see [Configure the Queue for a Specific Workflow Model](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) below).
+>[!NOTE]
+>
+>Configuring these job queues affects all workflows unless you have created a job queue for a specific workflow model (see [Configure the Queue for a Specific Workflow Model](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) below).
 
-**Configuration in the Repository**
+#### Configuration in the Repository {#configuration-in-the-repo}
 
 If you are configuring the services [using a sling:OsgiConfig node](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), you need to find the PID of the existing services, for example: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. You can discover the PID using the Web Console.
 
-You need to configure the property named queue.maxparallel.
+You need to configure the property named `queue.maxparallel`.
 
-**Configuration in the Web Console**
+#### Configuration in the Web Console {#configuration-in-the-web-console}
 
 To configure these services [using the Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), locate the existing configuration items below the Apache Sling Job Queue Configuration service factory.
 
@@ -244,30 +244,30 @@ Create a job queue for a specific workflow model so that you can configure job h
 
 When workflow models execute, they create Sling jobs for a specific topic. By default, the topic matches the topics that are configured for the general Granite Workflow Queue, or the Granite Workflow External Process Job Queue:
 
-* com/adobe/granite/workflow/job&ast;
-* com/adobe/granite/workflow/external/job&ast;
+* `com/adobe/granite/workflow/job*`
+* `com/adobe/granite/workflow/external/job*`
 
-Actual job topics that worflow models generate include model-specific suffix. For example, the [!UICONTROL DAM Update Asset] workflow model generates jobs with the following topic:
+Actual job topics that workflow models generate include model-specific suffix. For example, the **DAM Update Asset** workflow model generates jobs with the following topic:
 
-com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model
+`com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
 
 Therefore, you can create a job queue for the topic that matches the job topics of your workflow model. Configuring the performance-related properties of the queue affects only the worklfow model that generates the jobs that match the queue topic.
 
-The following procedure creates a job queue for a workflow, using the [!UICONTROL DAM Update Asset] workflow as an example.
+The following procedure creates a job queue for a workflow, using the **DAM Update Asset** workflow as an example.
 
-1. Execute the workflow model for which you want to create the job queue, so that topic statistics are generated. For example, add an image to Assets to execute the [!UICONTROL DAM Update Asset] workflow.
-1. Open the Sling Jobs console. ([http://localhost:4502/system/console/slingevent](http://localhost:4502/system/console/slingevent))
+1. Execute the workflow model for which you want to create the job queue, so that topic statistics are generated. For example, add an image to Assets to execute the **DAM Update Asset** workflow.
+1. Open the Sling Jobs console (`https://<host>:<port>/system/console/slingevent`).
 1. Discover the workflow-related topics in the console. For DAM Update Asset, the following topics are found:
 
-    * com/adobe/granite/workflow/external/job/etc/workflow/models/dam/update_asset/jcr_content/model
-    * com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model
-    * com/adobe/granite/workflow/job/etc/workflow/models/dam-xmp-writeback/jcr_content/model
+    * `com/adobe/granite/workflow/external/job/etc/workflow/models/dam/update_asset/jcr_content/model`
+    * `com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
+    * `com/adobe/granite/workflow/job/etc/workflow/models/dam-xmp-writeback/jcr_content/model`
 
 1. Create one job queue for each of these topics. To create a job queue, create a factory configuration for the Apache Sling Job Queue factory service.
 
    The factory configurations are similar to the Granite Workflow Queue described in [Concurrent Workflow Processing](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing), except the Topics property matches the topic of your workflow jobs.
 
-### CQ5 DAM Asset Synchronization Service {#cq-dam-asset-synchronization-service}
+### AEM DAM Asset Synchronization Service {#cq-dam-asset-synchronization-service}
 
 The `AssetSynchronizationService` is used to synchronize assets from mounted repositories (including LiveLink, Documentum, amongst others). By default this makes a regular check every 300 seconds (5 minutes), so if you do not use mounted repositories, you can disable this service.
 
@@ -277,21 +277,21 @@ This is done by [configuring the OSGi service](/help/sites-deploying/configuring
 
 Deploying multiple DAM instances can help performance when, for example:
 
-* you have a high load due to regular uploading of a large number of assets for the author environment; here a separate DAM instance can be dedicated to servicing author.
-* you have multiple teams in world-wide locations (e.g. USA, Europe, Asia).
+* You have a high load due to regular uploading of a large number of assets for the author environment; here a separate DAM instance can be dedicated to servicing author.
+* You have multiple teams in world-wide locations (e.g. USA, Europe, Asia).
 
 Additional considerations are:
 
-* separating "work in progress" on author from "final" on publish
-* separating internal users on author from external visitors/users on publish (e.g. agents, press representatives, customers, students, etc).
+* Separating "work in progress" on author from "final" on publish
+* Separating internal users on author from external visitors/users on publish (e.g. agents, press representatives, customers, students, etc).
 
 ## Best Practices for Quality Assurance {#best-practices-for-quality-assurance}
 
 Performance is of prime importance to your publish environment. Therefore, you need to carefully plan and analyze the performance tests you will make for the publish environment while implementing your project.
 
-This section aims to give a standardized overview of the issues involved with defining a Test Concept specifically for performance tests on your *publish* environment. This is primarily of interest to QA engineers, project managers and system administrators.
+This section aims to give a standardized overview of the issues involved with defining a test concept specifically for performance tests on your *publish* environment. This is primarily of interest to QA engineers, project managers and system administrators.
 
-The following covers a standardized approach to performance tests for a CQ application on the *Publish* environment. This involves the following 5 phases:
+The following covers a standardized approach to performance tests for an AEM application on the *Publish* environment. This involves the following 5 phases:
 
 * [Verification of Knowledge](#verification-of-knowledge)
 * [Definition of Scope](#scope-definition)
@@ -305,8 +305,8 @@ Controlling is an additional, all-encompassing process - necessary but not limit
 
 A first step is to document the basis information which you need to know before you can start testing:
 
-* the architecture of your test environment
-* an application map detailing the internal elements which will need testing (both in isolation and combination)
+* The architecture of your test environment
+* An application map detailing the internal elements which will need testing (both in isolation and combination)
 
 #### Test Architecture {#test-architecture}
 
@@ -326,8 +326,8 @@ An application will usually have a selection of use cases. Some will be very imp
 
 To focus the scope of the performance testing on publish, we recommend that you define the:
 
-* most important business use cases
-* most critical technical use cases
+* Most important business use cases
+* Most critical technical use cases
 
 The number of use cases is up to you, but it should be limited to an easily manageable number (e.g. between 5 to 10).
 
@@ -352,14 +352,14 @@ This concept has 4 scenarios used for defining and testing the performance goals
 
 Based on the following principles.
 
-**Component Breakpoints**
+#### Component Breakpoints {#component-breakpoints}
 
 * Each component has a specific breaking point when related to performance. This means that a component can show good performance until a specific point is reached, after which performance will degrade rapidly.
 * To get a full overview of the application, you must first verify your components to determine when the breakpoint of each is reached.
 * To find the breakpoint you can perform a load test where, over a period of time, you increase the number of users to create an increasing load. By monitoring this load, and the response of the components, you will encounter specific performance behavior when the breaking point of the component is reached. The point can be qualified by the number of concurrent transactions per second, together with the number of concurrent users (if the component is sensitive to this KPI).
 * This information can then act as a benchmark for improvements, indicate the efficiency of the measures being used, and help define test scenarios.
 
-**Transactions**
+#### Transactions {#transactions}
 
 * The term transaction is used to represent the request of a complete web page, including the page itself and all subsequent calls; i.e. the page request, any AJAX calls, images and other objects.**Request Drill Down**
 * To fully analyze each request you can represent each element of the call stack, then total the average processing time for each.
@@ -378,7 +378,7 @@ Critical components will need to be tested - under both average and peak conditi
 
 In both cases, you can define the expected number of transactions per second when a predefined number of users are using the system.
 
-| Component |Test Type |#Users |Tx/sec (Expected) |Tx/sec (Tested) |Description  |
+| Component |Test Type |No. of Users |Tx/sec (Expected) |Tx/sec (Tested) |Description  |
 |---|---|---|---|---|---|
 | Homepage Single User |Average |1 |1 |  |  |
 |   |Peak |1 |3 |  |  |
@@ -389,7 +389,7 @@ In both cases, you can define the expected number of transactions per second whe
 
 Testing the components in combination gives a closer reflection of the applications behavior. Again average and peak conditions must be tested.
 
-| Scenario |Component |#Users |Tx/sec (Expected) |Tx/sec (Tested) |Description  |
+| Scenario |Component |No. of Users |Tx/sec (Expected) |Tx/sec (Tested) |Description  |
 |---|---|---|---|---|---|
 | Mixed average |Homepage |10 |1 |  |  |
 |   |Search |10 |1 |  |  |
@@ -406,7 +406,7 @@ Testing the components in combination gives a closer reflection of the applicati
 
 During the first few days after your website is made available, you can expect an increased level of interest. This will probably be even greater than the peak values you have been testing for. It is strongly recommended to test Going Live scenarios to ensure that the system can cater for this situation.
 
-| Scenario |Test Type |#Users |Tx/sec (Expected) |Tx/sec (Tested) |Description  |
+| Scenario |Test Type |No. of Users |Tx/sec (Expected) |Tx/sec (Tested) |Description  |
 |---|---|---|---|---|---|
 | Going Live peak |Homepage |200 |20 |  |  |
 |   |Search |100 |10 |  |  |
@@ -418,12 +418,12 @@ During the first few days after your website is made available, you can expect a
 
 Error scenarios must also be tested to ensure that the system reacts correctly and appropriately. Not only in how the error itself is handled, but the impact it may have on performance. For example:
 
-* what happens when the user tries to input an invalid search term in the search box
-* what happens when the search term is so general that it returns an excessive number of results
+* What happens when the user tries to input an invalid search term in the search box
+* What happens when the search term is so general that it returns an excessive number of results
 
 When devising these tests it should be remembered that not all scenarios will occur regularly. However, their impact on the entire system is important.
 
-|  Error Scenario |Error Type |#Users |Tx/sec (Expected) |Tx/sec (Tested) |Description  |
+|  Error Scenario |Error Type |No. of Users |Tx/sec (Expected) |Tx/sec (Tested) |Description  |
 |---|---|---|---|---|---|
 | Search component overload |Search on global wildcard (asterisk) |10 |1 |  |Only &ast;&ast;&ast; are searched. |
 |   |Stop word |20 |2 |  |Searching for a stop word. |
@@ -434,7 +434,7 @@ When devising these tests it should be remembered that not all scenarios will oc
 
 Certain issues will only be encountered after the system has been running for a continuous period of time; be that either hours or even days. An endurance test is used to test an constant average load over a required period of time. Any performance degradation can then be analyzed.
 
-| Scenario |Test Type |#Users |Tx/sec (Expected) |Tx/sec (Tested) |Description  |
+| Scenario |Test Type |No. of Users |Tx/sec (Expected) |Tx/sec (Tested) |Description  |
 |---|---|---|---|---|---|
 | Endurance test (72 hours) |Homepage |10 |1 |  |  |
 |   |Search |10 |1 |  |  |
@@ -444,12 +444,12 @@ Certain issues will only be encountered after the system has been running for a 
 
 ### Optimization {#optimization}
 
-In the later stages of implementation you will need to optimize the application to fulfill / maximize the performance goals.
+In the later stages of implementation you will need to optimize the application to fulfill/maximize the performance goals.
 
 Any optimizations made must be tested to ensure they have:
 
-* not affected the functionality
-* been verified with the load tests before being released
+* Not affected the functionality
+* Been verified with the load tests before being released
 
 A selection of tools is available to help you with load-generation, performance monitoring and/or results analysis:
 
@@ -464,14 +464,14 @@ After optimization, you will need to test again to confirm the impact.
 
 ### Reporting {#reporting}
 
-On-going reporting will be needed to keep everyone informed of the status; as mentioned previously with color-coding the Architecture Map can be used for this.
+Ongoing reporting will be needed to keep everyone informed of the status, as mentioned previously with color-coding the architecture map can be used for this.
 
 After all tests have been completed you will want to report on:
 
-* any critical errors encountered
-* non-critical issues which will still need further investigation
-* any assumptions made during testing
-* any recommendations to arise from the testing
+* Any critical errors encountered
+* Non-critical issues which will still need further investigation
+* Any assumptions made during testing
+* Any recommendations to arise from the testing
 
 ## Optimizing Performance when using the Dispatcher {#optimizing-performance-when-using-the-dispatcher}
 
@@ -489,8 +489,8 @@ The Dispatcher offers a number of built-in mechanisms that you can use to optimi
 >
 >It may help you to remember that the Dispatcher stores the cache on a standard web server. This means that you:
 >
->* can cache everything that you can store as a page and request using an URL
->* cannot store other things, such as cookies, session data and form data.
+>* Can cache everything that you can store as a page and request using an URL
+>* Cannot store other things, such as cookies, session data and form data.
 >
 >In general, a lot of caching strategies involve selecting good URLs and not relying on this additional data.
 >
@@ -499,7 +499,7 @@ The Dispatcher offers a number of built-in mechanisms that you can use to optimi
 
 ### Calculating the Dispatcher Cache Ratio {#calculating-the-dispatcher-cache-ratio}
 
-The cache ratio formula estimates the percentage of requests handled by the cache out of the total number of requests coming into the system. To calculate the cache ratio you need the following :
+The cache ratio formula estimates the percentage of requests handled by the cache out of the total number of requests coming into the system. To calculate the cache ratio you need the following:
 
 * The total number of requests. This information is available in the Apache `access.log`. For more details, see the [official Apache documentation](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -545,7 +545,7 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 
 >[!NOTE]
 >
->This URL calls the same page and the same template as gallery.html. In the template definition, you can specify which script renders the page, or you can use the same script for all pages.
+>This URL calls the same page and the same template as `gallery.html`. In the template definition, you can specify which script renders the page, or you can use the same script for all pages.
 
 #### Customize by URL {#customize-by-url}
 
@@ -563,7 +563,7 @@ www.myCompany.com/news/main.large.html
 >
 >For most layout aspects, it is also possible to use style sheets and/or client side scripts. These will usually work very well with caching.
 >
->This is also useful for a print version, where you can use an URL such as: ``
+>This is also useful for a print version, where you can use an URL such as:
 >
 >`www.myCompany.com/news/main.print.html`
 >
@@ -578,7 +578,7 @@ If you render page titles, or other text, as pictures, then it is recommended to
 
    `<page file name>.<image file name>`
 
-For example, you can store the title of the page myPage.html in the file myPage.title.gif. This file is automatically deleted if the page is updated, so any change to the page title is automatically reflected in the cache.
+For example, you can store the title of the page `myPage.html` in the `file myPage.title.gif`. This file is automatically deleted if the page is updated, so any change to the page title is automatically reflected in the cache.
 
 >[!NOTE]
 >
@@ -598,20 +598,24 @@ For pages that are not modified, the pictures still remain in the cache, althoug
 
 #### Personalization {#personalization}
 
-The Dispatcher cannot cache personalized data, so it is recommended that you limit personalization to where it is necessary. To illustrate why:
+It is recommended that you limit personalization to where it is necessary. To illustrate why:
 
 * If you use a freely customizable start page, that page has to be composed every time a user requests it.
 * If, in contrast, you offer a choice of 10 different start pages, you can cache each one of them, thus improving performance.
 
->[!NOTE]
->
->If you personalize each page (for example by putting the user's name into the title bar) you cannot cache it, which can cause a major performance impact.
->
->However, if you have to do this, you can:
->
->* use iFrames to split the page into one part that is the same for all users and one part that is the same for all pages of the user. You can then cache both of these parts.
->* use client-side JavaScript to display personalized information. However, you have to make sure that the page still displays correctly if a user turns JavaScript off.
->
+>[!TIP]
+>For further details on configuring the Dispatcher cache, see the [AEM Dispatcher Cache Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) and its section on [Caching Protected Content.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
+
+ If you personalize each page (for example by putting the user's name into the title bar) it can have a performance impact.
+
+ >[!TIP]
+ >For caching secured content see [Caching Secured Content](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) in the Dispatcher guide.
+
+ With regards to mixing restricted and public content on one page, you might want to consider a strategy that leverages server side includes in the Dispatcher, or client side includes via Ajax in the browser.
+
+ >[!TIP]
+ >
+ >For handling mixed public and restricted content, see [Set up Sling Dynamic Include.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
 #### Sticky Connections {#sticky-connections}
 
@@ -621,12 +625,12 @@ The Dispatcher cannot cache personalized data, so it is recommended that you lim
 
 There are two ways in which a browser can determine the type of a file:
 
-1. By its extension (e.g. .html, .gif, .jpg, etc)
+1. By its extension (e.g. `.html`, `.gif`, `.jpg`, etc.)
 1. By the MIME-type that the server sends with the file.
 
 For most files, the MIME-type is implied in the file extension. i.e.:
 
-1. By its extension (e.g. .html, .gif, .jpg, etc)
+1. By its extension (e.g. `.html`, `.gif`, `.jpg`, etc.)
 1. By the MIME-type that the server sends with the file.
 
 If the file name has no extension, it is displayed as plain text.
@@ -636,89 +640,60 @@ With Dispatcher version 4.1.11 you can cache response headers. If you do not cac
 To make sure that files are cached properly, follow these guidelines:
 
 * Make sure that files always have the proper extension.
-* Avoid generic file serve scripts, which have URLs such as download.jsp?file=2214. Re-write the script to use URLs containing the file specification; for the previous example this would be download.2214.pdf.
+* Avoid generic file serve scripts, which have URLs such as `download.jsp?file=2214`. Re-write the script to use URLs containing the file specification. For the previous example this would be `download.2214.pdf`.
 
 ## Backup Performance {#backup-performance}
 
-This section presents a series of benchmarks used to assess the performance of CQ backups and effects of backup activity on application performance. The CQ backup presents a significant load on the system while it runs, and we measure this, as well as the effects of the backup delay settings that attempt to modulate these effects. The objective is to offer some reference data about the expected performance of backups in realistic configurations and quantities of production data, and to provide guidance about how to estimate backup times for planned systems.
+This section presents a series of benchmarks used to assess the performance of AEM backups and effects of backup activity on application performance. AEM backups present a significant load on the system while it runs, and we measure this, as well as the effects of the backup delay settings that attempt to modulate these effects. The objective is to offer some reference data about the expected performance of backups in realistic configurations and quantities of production data, and to provide guidance about how to estimate backup times for planned systems.
 
 ### Reference Environment {#reference-environment}
 
 #### Physical System {#physical-system}
 
-The results reported in this document were obtained from benchmarks run in a reference environment with the following configuration. This configuration is designed to be similar to a typical production environment in a data centre:
+The results reported in this document were obtained from benchmarks run in a reference environment with the following configuration. This configuration is designed to be similar to a typical production environment in a data center:
 
 * H-P ProLiant DL380 G6, 8 CPUs x 2.533 GHz
 * Serial attached SCSI 300GB 10,000RPM drives
 * Hardware RAID controller; 8 drives in a RAID0+5 array
 * VMware image CPU x 2 Intel Xeon E5540 @ 2.53GHz
 * RedHat Linux 2.6.18-194.el5; Java 1.6.0_29
-* Single Author instance running CQ 5.5 GM.
+* Single Author instance
 
 The disk subsystem on this server is quite fast, representative of a high performance RAID configuration that might be used in a production server. Backup performance can be sensitive to disk performance, and the results in this environment reflect performance on a very fast RAID configuration. The VMWare image is configured to have a single large disk volume which physically resides in local disk storage, on the RAID array.
 
-The CQ configuration places the repository and datastore on the same logical volume, alongside all of the operating system and CQ software. The target directory for backups also resides on this logical filesystem.
+The AEM configuration places the repository and datastore on the same logical volume, alongside all of the operating system and AEM software. The target directory for backups also resides on this logical filesystem.
 
 #### Data Volumes {#data-volumes}
 
 The following table illustrates the size of data volumes that are used in the backup benchmarks. The initial baseline content is first installed, then additional known amounts of data are added to increase the size of the content backed up. Back-ups will be created at specific increments to represent a large increase in content and what may be produced in a day. The distribution of content (pages, images, tags) will be roughly based on realistic production asset composition. Pages, images, and tags will be limited to a maximum of 800 child pages. Each page will include title, Flash, text/image, video, slideshow, form, table, cloud, and carousel components. Images will be uploaded from a pool of 400 unique files ranging in size from 37 kB to 594 kB.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Content</strong></td>
-   <td><strong>Nodes</strong></td>
-   <td><strong>Pages</strong></td>
-   <td><strong>Images</strong></td>
-   <td><strong>Tags</strong></td>
-  </tr>
-  <tr>
-   <td>Base install</td>
-   <td>69,610</td>
-   <td>562</td>
-   <td>256</td>
-   <td>237</td>
-  </tr>
-  <tr>
-   <td>Small content for incremental back-up</td>
-   <td><br type="_moz" /> </td>
-   <td>+100</td>
-   <td>+2</td>
-   <td>+2</td>
-  </tr>
-  <tr>
-   <td>Large content for full back-up</td>
-   <td><br type="_moz" /> </td>
-   <td>+10,000</td>
-   <td>+100</td>
-   <td>+100</td>
-  </tr>
- </tbody>
-</table>
+|Content|Nodes|Pages|Images|Tags|
+|---|---|---|---|---|
+|Base install|69 610|562|256|237|
+|Small content for incremental back-up||+100|+2|+2|
+|Large content for full back-up||+10 000|+100|+100|
 
-The backup benchmark is repeated with the additionnal content sets added at each repetition.
+The backup benchmark is repeated with the additional content sets added at each repetition.
 
 #### Benchmark Scenarios {#benchmark-scenarios}
 
-The backup benchmarks cover two main scenarios: backups when the system is under significant application load, and backups when the system is idle. Although the general recommendation is that backups should be performed when the CQ system is as idle as possible, there are situations where it is necessary that the backup must be run when the system is under load.
+The backup benchmarks cover two main scenarios: backups when the system is under significant application load, and backups when the system is idle. Although the general recommendation is that backups should be performed when AEM is as idle as possible, there are situations where it is necessary that the backup must be run when the system is under load.
 
-**Idle State** Backups are performed with no other activity on CQ.
+* **Idle State** - Backups are performed with no other activity on AEM.
+* **Under Load** - Backups are performed while the system is under 80% load from online processes. Backup delay varied to see the impact on load.
 
-**Under Load** Backups are performed while the system is under 80% load from online processes. Backup delay varied to see the impact on load.
-
-Backup times and size of resulting backup are obtained from the CQ server logs. It is normally recommended that backups be scheduled for off-times when CQ is idle, such as in the middle of the night. This scenario is representative of the recommended approach.
+Backup times and size of resulting backup are obtained from the AEM server logs. It is normally recommended that backups be scheduled for off-times when AEM is idle, such as in the middle of the night. This scenario is representative of the recommended approach.
 
 Load will consist of page creates/deletes, traversals, and queries with the majority of load coming from page traversals and queries. Adding and removing too many pages continually increase the workspace size and prevent the back-ups from completing. The distribution of load the script will use is 75% page traversals, 24% queries and 1% page creations (single level with no nested sub-pages). Peak average transactions per second on an idle system is achieved with 4 concurrent threads, which is what will be used when testing back-ups under load.
 
 Impact of load on backup performance can be estimated by the difference between performance with and without this application load. Impact of the backup on application throughput is found by comparing the scenario throughput in transactions per hour with and without a concurrent backup ongoing, and with backups operating with different "backup delay" settings.
 
-**Delay setting** For several of the scenarios we also varied the backup delay setting, using values of 10 ms (default), 1 ms and 0 ms, to explore how this setting affected the performance of backups.
-
-**Backup type** All of the backups were external backups of the repository made to a backup directory without creating a zip, except in once case for comparison where the tar command was used directly. Since incremental backups cannot be created to a zip file, or when the prior full backup is a zip file, the backup directory method is the most often used in production situations.
+* **Delay Setting** - For several of the scenarios we also varied the backup delay setting, using values of 10 ms (default), 1 ms and 0 ms, to explore how this setting affected the performance of backups.
+* **Backup Type** - All of the backups were external backups of the repository made to a backup directory without creating a zip, except in once case for comparison where the tar command was used directly. Since incremental backups cannot be created to a zip file, or when the prior full backup is a zip file, the backup directory method is the most often used in production situations.
 
 ### Summary of Results {#summary-of-results}
 
-#### Backup Time and Troughput {#backup-time-and-troughput}
+#### Backup Time and Throughput {#backup-time-and-throughput}
 
 The main result of these benchmarks is to show how backup times vary as a function of the backup type and overall quantity of data. The following chart shows the backup time obtained using the default backup configuration, as a function of the number of total number of pages.
 
@@ -737,7 +712,7 @@ This chart illustrates that both incremental and full backups follow a simple si
 The backup delay parameter is provided to limit the extent to which backups may interfere with production workloads. The parameter specifies a wait time in milliseconds, which is interspersed into the backup operation on a file-by-file basis. The overall effect depends partly on the size of files affected. Measuring backup performance in MB/sec gives a reasonable way to compare the effects of delay on the backup.
 
 * Running a backup concurrently with regular application load will have a negative impact on the throughput of the regular load.
-* The impact may be slight -- as little as 5% -- or could be very significant -- causing as much as 75% drop in throughput, and this likely depends on the application more than anything.
+* The impact may be slight (as little as 5%) or could be very significant, causing as much as 75% drop in throughput, and this likely depends on the application more than anything.
 * Backup is not a heavy load on the CPU, and so CPU-intensive production workloads would be less affected by backup than I/O intensive ones.
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
@@ -750,4 +725,3 @@ The actual impact of application throughput of an ongoing backup does depend on 
 
 * [Administering - Backup and Restore](/help/sites-administering/backup-and-restore.md)
 * [Managing - Capacity and Volume](/help/managing/best-practices-further-reference.md#capacity-and-volume)
-

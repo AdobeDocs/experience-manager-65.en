@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Deploying Communities{#deploying-communities}
+# Deploying Communities {#deploying-communities}
 
 ## Prerequisites {#prerequisites}
 
@@ -84,7 +84,7 @@ docset: aem65
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.5 Communities GA ships with Communities package. To know about updates to AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), refer [AEM 6.5 Release Notes](/help/release-notes/release-notes.md#communities-release-notes.html).
+AEM 6.5 Communities GA includes Communities package. To know about updates to AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), refer [AEM 6.5 Release Notes](/help/release-notes/release-notes.md#communities-release-notes.html).
 
 ### AEM 6.5 Updates {#aem-updates}
 
@@ -131,7 +131,7 @@ Further information on installing bundles is found on the [Web Console](/help/si
 
 #### Example : Installed MySQL Connector Bundle {#example-installed-mysql-connector-bundle}
 
-![chlimage-bundles](assets/chlimage-bundles.png)
+![connector-bundle](assets/connector-bundle.png)
 
 ### SCORM Package {#scorm-package}
 
@@ -216,7 +216,7 @@ By default, the `AEM Communities Publisher Configuration` OSGi configuration is 
 
 Therefore, it is necessary to **edit the configuration on all secondary publish instances** to uncheck the **`Primary Publisher`** checkbox.
 
-![chlimage_1-411](assets/chlimage_1-411.png)
+![primary-publisher](assets/primary-publisher.png)
 
 For all other (secondary) publish instances in a publish farm:
 
@@ -260,11 +260,11 @@ The following images show the results of changing the port from 4503 to 6103 by:
 
 #### Default Agent (publish) {#default-agent-publish}
 
-![chlimage_1-412](assets/chlimage_1-412.png)
+![default-agent-publish](assets/default-agent-publish.png)
 
 #### Reverse Replication Agent (publish reverse) {#reverse-replication-agent-publish-reverse}
 
-![chlimage_1-413](assets/chlimage_1-413.png)
+![reverse-replication-agent](assets/reverse-replication-agent.png)
 
 ### Tunnel Service on Author {#tunnel-service-on-author}
 
@@ -287,13 +287,13 @@ To enable the tunnel service:
 * Check the **enable** box
 * Select **Save**
 
-  ![chlimage_1-414](assets/chlimage_1-414.png)
+  ![tunnel-service](assets/tunnel-service.png)
 
 ### Replicate the Crypto Key {#replicate-the-crypto-key}
 
 There are two features of AEM Communities that require all AEM server instances to use the same encryption keys. These are [Analytics](/help/communities/analytics.md) and [ASRP](/help/communities/asrp.md).
 
-As of AEM 6.3, the key material is stored in the file system and no longer in the repository.
+From AEM 6.3 onwards, the key material is stored in the file system and no longer in the repository.
 
 In order to copy the key material from author to all other instances, it is necessary to :
 
@@ -347,7 +347,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * [Refresh the Granite Crypto bundle](#refresh-the-granite-crypto-bundle)
 
-  ![chlimage_1-415](assets/chlimage_1-415.png)
+  ![replicare-repository](assets/replicare-repository.png)
 
 #### Refresh the Granite Crypto Bundle {#refresh-the-granite-crypto-bundle}
 
@@ -358,7 +358,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 * Locate `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
 * Select **Refresh**
 
-  ![chlimage_1-416](assets/chlimage_1-416.png)
+  ![granite-crypto](assets/granite-crypto.png)
 
 * After a moment, a **Success** dialog should appear :
   `Operation completed successfully.`
