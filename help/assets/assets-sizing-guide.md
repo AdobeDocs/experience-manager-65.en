@@ -23,7 +23,7 @@ Considering these factors, you require a methodology to calculate an acceptably 
 1. Determine the size and number of assets that will be loaded into the system.
 1. Get a representative sample of the assets to be uploaded into [!DNL Experience Manager]. For instance, if you plan to load PSD, JPG, AI and PDF files into the system, you require multiple sample images of each file format. In addition, these samples should be representative of the different file sizes and complexities of images.
 1. Define the renditions to be used.
-1. Create the renditions in [!DNL Experience Manager] using [!DNL ImageMagick] or [!DNL Adobe Creative Cloud] applications. In addition to the renditions that the users specify, create out-of-the-box renditions. For users who implement Scene7, you can use the IC binary to generate the PTIFF renditions to be stored in Experience Manager.
+1. Create the renditions in [!DNL Experience Manager] using [!DNL ImageMagick] or [!DNL Adobe Creative Cloud] applications. In addition to the renditions that the users specify, create out-of-the-box renditions. For users who implement Dynamic Media, you can use the IC binary to generate the PTIFF renditions to be stored in Experience Manager.
 1. If you plan to use subassets, generate them for the appropriate file types.
 1. Compare the size of the output images, renditions, and subassets with the original images. It allows you to generate an expected growth factor when the system is loaded. For example, if you generate renditions and subassets with a combined size of 3 GB after processing 1 GB of assets, the rendition growth factor is 3.
 1. Determine the maximum time for which asset versions are to be maintained in the system.

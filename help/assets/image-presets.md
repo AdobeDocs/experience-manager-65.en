@@ -48,5 +48,5 @@ You can apply an image preset to an image anytime you preview it.
    >
    >If the asset *and* the image preset are not yet published, the **[!UICONTROL URL]** button (or **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons, if applicable) are not available.
    >
-   >Note also that image presets are automatically published on a Dynamic Media S7 server.
+   >Note also that image presets are automatically published on a Dynamic Media server.
 

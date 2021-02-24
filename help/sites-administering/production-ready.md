@@ -46,13 +46,13 @@ More specifically, the following configuration changes will be performed when AE
 1. The **Apache Sling Simple WebDAV Access to repositories** ( `org.apache.sling.jcr.webdav`) bundle will only be available on **author** instances.
 
 1. Newly created users will be required to change the password on the first login. This does not apply to the admin user.
-1. **Generate debug info** is disabled for the **Apache Java Script Handler**.
+1. **Generate debug info** is disabled for the **Apache Sling Java Script Handler**.
 
 1. **Mapped content** and **Generate debug info** are disabled for the **Apache Sling JSP Script Handler**.
 
 1. The **Day CQ WCM Filter** is set to `edit` on **author** and `disabled` on **publish** instances.
 
-1. **The Adobe Granite HTML Library Manager** is configured with the following settings:
+1. The **Adobe Granite HTML Library Manager** is configured with the following settings:
 
     1. **Minify:** `enabled`
     1. **Debug:** `disabled`

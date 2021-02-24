@@ -102,6 +102,14 @@ To enable sorting:
 
    You can also make changes in the table in the **Preview** mode and click the column header again to sort the column values.
 
+## Set column width for a table {#set-column-width}
+
+Execute the following steps to set column width for a table:
+
+1. In the **[!UICONTROL Content]** tab, tap the **[!UICONTROL Table]** component and tap the Configure (![Configure](assets/configure-icon.svg))icon.
+
+1. Enter the comma-separated list of values in the **[!UICONTROL Column Width]** field to specify the proportionate width of each column in the table. For example, for a table that includes 3 columns, specifying 2,4,6 as the value in the **[!UICONTROL Column Width]** field results in setting the width of columns as 2/12 for first column, 4/12 for second column, and 6/12 for third column. 2/12 as the width for the first column refers to one-sixth of the table width. Similarly, 4/12 sets the second column width as one-third of the table width and 6/12 sets the third column width as half of the table width.
+
 ## Configure table style {#configure}
 
 You can define the style for a table by using the Style mode in the page toolbar. Perform the following steps to switch to style mode and edit the table styling

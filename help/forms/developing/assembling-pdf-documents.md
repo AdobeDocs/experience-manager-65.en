@@ -1,8 +1,8 @@
 ---
 title: Assembling PDF Documents
 seo-title: Assembling PDF Documents
-description: null
-seo-description: null
+description: Use the Assembler service to assemble multiple PDF documents into one PDF document or disassemble one PDF document into multiple PDF documents.
+seo-description: Use the Assembler service to assemble multiple PDF documents into one PDF document or disassemble one PDF document into multiple PDF documents.
 uuid: 0789feea-1bbc-4acd-9ad7-ddf4d05e1c68
 contentOwner: admin
 content-type: reference

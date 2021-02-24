@@ -91,9 +91,9 @@ To make the identical configuration available in the publish environment:
 
 On AEM Author instance:
 
-* Navigate from main menu to **[!UICONTROL Tools > Operations > Replication]**.
+* Navigate from main menu to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]**
 * Select **Activate Tree**
-* **Start Path**: browse to `/etc/socialconfig/srpc/`
+* **Start Path**: browse to `/conf/global/settings/communities/srpc/`
 * Deselect **Only Modified**
 * Select **Activate**
 
@@ -138,8 +138,8 @@ Make sure that the ASRP has been configured to be the default provider by checki
 
 On all author and publish AEM instances, revisit the Storage Configuration console, or check the AEM repository.
 
-In JCR, if [/etc/socialconfig](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
+In JCR, if [/conf/global/settings/communities](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
-* Does not contain an [srpc](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) node, it means that the storage provider is JSRP.
-* If the srpc node exists and contains node [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), the defaultconfiguration's properties define ASRP to be the default provider.
+* Does not contain an [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp) node, it means that the storage provider is JSRP.
+* If the srpc node exists and contains [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration) node, the defaultconfiguration's properties define ASRP to be the default provider.
 

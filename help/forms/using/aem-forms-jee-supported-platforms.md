@@ -156,6 +156,11 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td><p>Supported</p> </td>
   </tr>
   <tr>
+   <td><p>Microsoft SQL Server 2019</p> </td>
+   <td><p>Repository Microkernel</p> </td>
+   <td><p>Supported</p> </td>
+  </tr>
+  <tr>
    <td>IBM DB2 11.1</td>
    <td>Repository Microkernel</td>
    <td>R: Restricted Support</td>
@@ -198,6 +203,12 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td>Microsoft SQL Server<br /> </td>
    <td><p>Microsoft® SQL Server JDBC driver 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td>
    <td><p>Supplied with AEM Forms on JEE installation.</p> </td>
+  </tr>
+  <tr>
+  <tr>
+   <td>Microsoft SQL Server<br /> </td>
+   <td><p>Microsoft® SQL Server JDBC driver 8.2.2<br /> </p> <p>sqljdbc8.jar</p> </td>
+   <td><p>Download from Microsoft Website.</p> </td>
   </tr>
   <tr>
    <td>Oracle</td>
@@ -255,7 +266,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td>Service packs and critical updates</td>
   </tr>
   <tr>
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bit)</br><b>Note:</b> Red Hat Enterprise Linux 6 reaches End of Maintenance Phase and transitions to Extended Life Phase on Nov 30, 2020. Adobe recommends Red Hat Enterprise Linux 7 for upgrade and new installations.</p> </td>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bit)</br><b>Note:</b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> reaches the End of Maintenance phase and transitions to the Extended Life Cycle Support phase on Nov 30, 2020. Adobe recommends Red Hat Enterprise Linux 7 for upgrades and new installations. Existing installations can use Red Hat Enterprise Linux 6 during the Extended Life Cycle Support phase.</p> </td>
    <td><p>A: Supported</p> </td>
    <td><p>Minor releases, cumulative updates, and critical updates</p> </td>
   </tr>

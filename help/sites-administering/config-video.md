@@ -17,6 +17,14 @@ The [Video component](/help/sites-authoring/default-components-foundation.md#vid
 
 For proper transcoding to occur, an administrator installs FFmpeg separately. See [Install FFmpeg and configure AEM](#install-ffmpeg). Administrators also [Configure Video Profiles](#configure-video-profiles) for use with HTML5 elements.
 
+>[!CAUTION]
+>
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components Embed Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html) instead.
+
+>[!CAUTION]
+>
+>This component is no longer expected to function out-of-the-box without extensive project-level customization.
+
 ## Configure video profiles {#configure-video-profiles}
 
 For use of HTML5 elements, define define video profiles. Those chosen here are used in order. To access, use [Design Mode](/help/sites-authoring/default-components-designmode.md) (Classic UI only) and select the **[!UICONTROL Profiles]** tab:

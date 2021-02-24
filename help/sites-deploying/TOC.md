@@ -1,6 +1,7 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.5 Deploying Guide
 breadcrumb-title: Deploying Guide
@@ -47,7 +48,7 @@ user-guide-description: Learn more about installing, deploying, and the architec
     + [Offloading Jobs](offloading.md)
     + [Single Sign On](single-sign-on.md)
     + [Resource Mapping](resource-mapping.md)
-    + [Enabling HTTP Over SSL](/help/sites-administering/ssl-by-default.md)
+    + [Enabling HTTP Over SSL](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ssl-by-default.html)
     + [Consistency and Traversal Checks](consistency-check.md)
     + [Performance Guidelines](performance-guidelines.md)
     + [Performance Optimization](configuring-performance.md)

@@ -50,7 +50,7 @@ See [Configuring Dynamic Media Cloud Services](/help/assets/config-dms7.md#confi
 
 1. **Upload 3D assets**
 
-    * [Uploading your 3D assets for use in Dynamic Media](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+    * [Uploading your 3D assets for use in Dynamic Media](/help/assets/manage-assets.md#uploading-assets).
     * [Supported 3D file formats for upload in Dynamic Media](#supported-three-d-file-formats-in-dm).
 
 1. **Manage 3D assets**
@@ -104,7 +104,7 @@ See also [Previewing assets using the software interface](/help/assets/previewin
 
 1. Make sure you have uploaded 3D assets into AEM.
 
-    See [Uploading your 3D assets for use in Dynamic Media.](/help/assets/managing-assets-touch-ui.md#uploading-assets)
+    See [Uploading your 3D assets for use in Dynamic Media.](/help/assets/manage-assets.md#uploading-assets)
 
 1. From AEM, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets > Files.]**
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View.]**

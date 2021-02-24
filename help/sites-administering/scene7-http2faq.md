@@ -1,14 +1,10 @@
 ---
 title: HTTP2 Delivery of Content FAQ
-seo-title: HTTP2 Delivery of Content FAQ
 description: Learn about HTTP2 content delivery.
-seo-description: Learn about HTTP2 content delivery.
-uuid: e837c3e0-6e48-46f1-b510-847c9976807a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: afbe9f80-c2a3-4a46-b9d6-4c9406667d7f
 ---
 
 # HTTP2 Delivery of Content FAQ{#http-delivery-of-content-faq}
@@ -25,7 +21,7 @@ The following website describes HTTP/2 and its benefits in a brief and simple ma
 
 ## What are the key benefits of moving to HTTP/2 for content delivery? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-Performance improvement varies widely based on factors such as your website's code, how you are using Scene7, the consumer's device, screen and location, and so on.
+Performance improvement varies widely based on factors such as your website's code, how you are using Dynamic Media, the consumer's device, screen and location, and so on.
 
 Adobe's own testing yielded the following results:
 
@@ -41,14 +37,12 @@ The following demonstration illustrates the difference between HTTP/1 versus HTT
 To use HTTP/2, you must meet the following requirements:
 
 * Use secure HTTPS for your rich media requests.
-* Use the Adobe-bundled CDN (content delivery network) as part of your Dynamic Media Classic license.
-* Use a dedicated domain (that is, `images.company.com` or `mycompany.scene7.com`), not a generic Dynamic Media Classic domain (that is, `s7d1.scene7.com`, `s7d2.scene7.com`, or `s7d13.scene7.com`).
+* Use the Adobe-bundled CDN (content delivery network) as part of your Dynamic Media license.
+* Use a dedicated domain (that is, `images.company.com` or `mycompany.scene7.com`), not a generic Dynamic Media domain (that is, `s7d1.scene7.com`, `s7d2.scene7.com`, or `s7d13.scene7.com`).
 
-  To find your domains, [log into your instance of Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) for each company account.
+  To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. Then tap **[!UICONTROL Setup > Application Setup > General Settings]**. Look for the field labelled **Published Server Name**. If you are currently using a generic Dynamic Media domain, you can request moving over to your own custom domain as part of this transition.
 
-  Click **[!UICONTROL Setup > Application Setup > General Settings.]** Look for the field labelled **Published Server Name**. If you are currently using a generic Scene7 domain, you can request moving over to your own custom domain as part of this transition.
-
-## What is the process for enabling HTTP/2 for my Dynamic Media Classic account? {#what-is-the-process-for-enabling-http-for-my-scene-account}
+## What is the process for enabling HTTP/2 for my Dynamic Media account? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
 1. You must [use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) and request to switch over to HTTP/2; it is not automatically done for you.
 1. Provide the following information in your support case:
@@ -56,21 +50,17 @@ To use HTTP/2, you must meet the following requirements:
      * Primary contact name, email, and phone number.
      * All domains to be transitioned over to HTTP2. That is, `images.company.com` or `mycompany.scene7.com`.
 
-     To find your domains, [log into your instance of Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) for each company account.
-
-     Click **[!UICONTROL Setup > Application Setup > General Settings.]** Look for the field labelled **[!UICONTROL Published Server Name.]**
+        To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. Then tap **[!UICONTROL Setup > Application Setup > General Settings]**. Look for the field labelled **[!UICONTROL Published Server Name.]**
 
      * Verify that you use secure HTTPS for rich media requests.
      * Verify you are using the CDN through Adobe and not managed with a direct relationship.
-     * Verify you are using a dedicated domain. That is, `images.company.com` or `mycompany.scene7.com`, not a generic Scene7 domain such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
+     * Verify you are using a dedicated domain. That is, `images.company.com` or `mycompany.scene7.com`, not a generic Dynamic Media domain such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-     To find your domains, [log into your instance of Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) for each company account.
+        To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. Then tap **[!UICONTROL Setup > Application Setup > General Settings]**. Look for the field labelled **[!UICONTROL Published Server Name.]** If you are currently using a generic Dynamic Media domain, you can request moving over to your own custom domain as part of this transition.
 
-     Click **[!UICONTROL Setup > Application Setup > General Settings.]** Look for the field labelled **[!UICONTROL Published Server Name.]** If you are currently using a generic Scene7 domain, you can request moving over to your own custom domain as part of this transition.
-
-     1. Technical Support adds you to the HTTP/2 customer waitlist based on the order in which requests were submitted.
-     1. When Adobe is ready to handle your request, Support will contact you to coordinate the transition and set a target date.
-     1. You will be notified after completion and can verify a successful transition over to HTTP2.
+1. Technical Support adds you to the HTTP/2 customer waitlist based on the order in which requests were submitted.
+1. When Adobe is ready to handle your request, Support will contact you to coordinate the transition and set a target date.
+1. You will be notified after completion and can verify a successful transition over to HTTP2.
 
 ## When can I expect to be transitioned over to HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 

@@ -113,7 +113,7 @@ The application-specific metadata includes technical and descriptive metadata. I
 * Album - [!DNL Adobe Photoshop Album].
 * CQ - Used by [!DNL Experience Manager Assets].
 * DAM - Used by [!DNL Experience Manager Assets].
-* DEX - [Optima SC Description explorer](https://www.optimasc.com/products/dex/index.html) is a collection of tools for metadata and file management for Windows operating systems.
+* DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) is a collection of tools for metadata and file management for Windows operating systems.
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
@@ -171,7 +171,7 @@ In addition to the DCMES, there are other metadata elements created by the Dubli
 | description | More information about the asset.                                                                                        |
 | format      | The file format, physical medium, or dimensions of the asset. [!DNL Experience Manager] uses `dc:format` to denote the MIME type of the asset. |
 | identifier  | A unique reference to the asset.                                                                                         |
-| language    | The language of the asset (for example, en for English).                                                                 |
+| language    | The language of the asset (for example, `en` for English).                                                                 |
 | publisher   | The person or company responsible for making the asset available.                                                        |
 | relation    | A related asset.                                                                                                         |
 | rights      | Information about who has the rights to this asset.                                                                      |

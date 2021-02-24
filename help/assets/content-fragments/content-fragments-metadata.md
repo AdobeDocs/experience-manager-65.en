@@ -22,7 +22,7 @@ You can view and edit the metadata (properties) for content fragments:
 1. In the **Assets** console navigate to the location of the content fragment.
 1. Either:
 
-    * Select [**View Properties** to open the dialogs](/help/assets/managing-assets-touch-ui.md#editing-properties). Once open for viewing you can also edit.
+    * Select [**View Properties** to open the dialogs](/help/assets/manage-assets.md#editing-properties). Once open for viewing you can also edit.
     * Open the [content fragment for Edit](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor), then select **Metadata** from the side panel.
 
    ![cfm-6420-06](assets/cfm-6420-06.png)

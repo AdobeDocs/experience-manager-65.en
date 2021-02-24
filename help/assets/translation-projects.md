@@ -12,13 +12,10 @@ To create a language copy, trigger one of the following language copy workflows 
 
 * **Update language copies**: Run this workflow to translate an additional group of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously-translated assets.
 
->[!NOTE]
+>[!PREREQUISITES]
 >
->Asset binaries are translated only if the translation service provider supports the translation of binaries.
-
->[!NOTE]
->
->If you launch a translation workflow for complex assets, such as PDF and [!DNL Adobe InDesign] files, their subassets or renditions (if any) are not submitted for translation.
+>* Users who create translation projects are members of the group `projects-administrators`.
+>* Translation service provider supports the translation of binaries.
 
 ## Create and translate workflow {#create-and-translate-workflow}
 
@@ -33,17 +30,14 @@ You use the create and translate workflow to generate language copies for a part
 Use the **[!UICONTROL Create structure only]** option to create a target folder hierarchy within the target language root to match the hierarchy of the source folder within the source language root. In this case, source assets are copied to the destination folder. However, no translation project is generated.
 
 1. In the [!DNL Assets] interface, select the source folder for which you want to create a structure in the target language root.
+
 1. Open the **[!UICONTROL References]** pane and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**.
 
-   ![chlimage_1-57](assets/chlimage_1-57.png)
+   ![Language copies](assets/translation-language-copies.png)
 
-1. Click **[!UICONTROL Create & Translate]** at the bottom.
-
-1. From the **[!UICONTROL Target Languages]** list, select the language for which you want to create a folder structure.
+1. Click **[!UICONTROL Create & Translate]**. From the **[!UICONTROL Target Languages]** list, select the language for which you want to create a folder structure.
 
 1. From the **[!UICONTROL Project]** list, choose **[!UICONTROL Create structure only]**.
-
-   ![chlimage_1-60](assets/chlimage_1-60.png)
 
 1. Click **[!UICONTROL Create]**. The new structure for the target language is listed under **[!UICONTROL Language Copies]**.
 
@@ -102,7 +96,7 @@ If you use this option, assets to be translated are copied to the language root 
 
    For more details around job statuses, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. Navigate to the [!DNL Assets] UI, and open the Properties page for each of the translated assets to view the translated metadata.
+1. Navigate to the [!DNL Assets] user interface, and open the [!UICONTROL Properties] page for each of the translated assets to view the translated metadata.
 
    ![view the translated metadata in asset Properties page](assets/translated-metadata-asset-properties.png)
 
@@ -110,7 +104,7 @@ If you use this option, assets to be translated are copied to the language root 
 
    >[!NOTE]
    >
-   >This feature is available both for assets and folders. When an asset is selected instead of a folder, the entire hierarchy of folders upto the language root is copied to create a language copy for the asset.
+   >This feature is available both for assets and folders. When an asset is selected instead of a folder, the entire hierarchy of folders up to the language root is copied to create a language copy for the asset.
 
 ### Add to existing translation project {#add-to-existing-translation-project}
 
@@ -124,8 +118,6 @@ If you use this option, the translation workflow runs for assets that you add to
 1. From the **[!UICONTROL Target Languages]** list, select the language(s) for which you want to create a folder structure.
 
 1. From the **[!UICONTROL Project]** list, select **[!UICONTROL Add to existing translation project]** to run the translation workflow on the folder.
-
-   ![chlimage_1-77](assets/chlimage_1-77.png)
 
    >[!NOTE]
    >
@@ -150,10 +142,6 @@ If you use this option, the translation workflow runs for assets that you add to
 
    >[!NOTE]
    >
-   >If you use Machine Translation, asset binaries aren't translated.
-
-   >[!NOTE]
-   >
    >If the asset you add to the translation job includes subassets, select the subassets and remove them for the translation to proceed without any glitches.
 
 1. To start the translation for the assets, click the arrow on the **[!UICONTROL Translation Job]** tile and select **[!UICONTROL Start]** from the list.
@@ -168,11 +156,11 @@ If you use this option, the translation workflow runs for assets that you add to
 
    For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. After the translation completes, the status changes to Ready to Review. Navigate to the [!DNL Assets] UI, and open the Properties page for each of the translated assets to view the translated metadata.
+1. After the translation completes, the status changes to Ready to Review. Navigate to the [!DNL Assets] user interface, and open the Properties page for each of the translated assets to view the translated metadata.
 
 ## Update language copies {#update-language-copies}
 
-Run this workflow to translate any additional set of assets and include it in a lanugage copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously-translated assets. Depending upon the choice of options, a translation project is created or an existing translation project is updated for the new assets. The Update language copies workflow includes the following options:
+Run this workflow to translate any additional set of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously-translated assets. Depending upon the choice of options, a translation project is created or an existing translation project is updated for the new assets. The Update language copies workflow includes the following options:
 
 * Create a new translation project
 * Add to existing translation project
@@ -190,8 +178,6 @@ If you use this option, a translation project is created for the set of assets f
 1. Click **[!UICONTROL Update language copies]** at the bottom.
 
 1. From the **[!UICONTROL Project]** list, choose **[!UICONTROL Create a new translation project]**.
-
-   ![chlimage_1-86](assets/chlimage_1-86.png)
 
 1. In the **[!UICONTROL Project Title]** field, enter a title for the project.
 
@@ -220,7 +206,7 @@ If you use this option, a translation project is created for the set of assets f
 
    For more details around job statuses, see [Monitoring the Status of a Translation Job](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. Navigate to the [!DNL Assets] user interdace, and open the Properties page for each of the translated assets to view the translated metadata.
+1. Navigate to the [!DNL Assets] user interface, and open the Properties page for each of the translated assets to view the translated metadata.
 
 ### Add to existing translation project {#add-to-existing-translation-project-1}
 
@@ -266,12 +252,13 @@ When you run a translation workflow to update a language copy with edited versio
 
    >[!NOTE]
    >
-   >To enable the translation workflow to update the destination asset(s), accept both the asset and metadata.
+   >To enable the translation workflow to update the destination assets, accept both the asset and metadata.
 
    Click **[!UICONTROL Reject Translation]** ![reject translation](assets/do-not-localize/thumb-down.png) to retain the originally translated version of the asset in the target locale root and reject the edited version.
 
 1. To view the translated metadata, navigate to the [!DNL Assets] console and open the [!UICONTROL Properties] page for each of the translated assets.
 
->[!MORELIKETHIS]
->
->* [Tips to efficiently translate metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+## Tips and limitations {#tips-limitations}
+
+* If you launch a translation workflow for complex assets, such as PDF and [!DNL Adobe InDesign] files, their subassets or renditions (if any) are not submitted for translation.
+* If you use machine translation, the asset binaries are not translated.

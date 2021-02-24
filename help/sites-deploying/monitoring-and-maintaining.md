@@ -28,7 +28,7 @@ A key factor here is that to recognize potential issues you need to know how you
 | [Log files](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) are being monitored. |  |  |
 | System monitoring is (constantly) running in the background. |Including CPU, memory, disk and network usage. Using for example, iostat / vmstat / perfmon. |Logged data is visualized and can be used for tracking performance problems. Raw data is also accessible. |
 | [AEM performance is being monitored](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). |Including [Request Counters](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) to monitor traffic levels. |If a significant, or long term loss, of performance is seen, detailed investigation should be made. |
-| You are monitoring your [Replication Agents](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). `` |  |  |
+| You are monitoring your [Replication Agents](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
 | Regularly purge workflow instances. |Repository size and workflow performance. |See [Regular Purging of Workflow Instances](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
 ## Backups {#backups}
@@ -52,7 +52,6 @@ Often a full backup is taken at regular intervals (e.g. daily, weekly or monthly
 >[!CAUTION]
 >
 >When implementing backups of your production instances, tests *must* be made to ensure that the backup can be successfully restored.
-
 >
 >Without this, the backup is potentially useless (worst case scenario).
 
@@ -140,7 +139,7 @@ The **Dry Run** and **Purge** processes list all the nodes that have been proces
 
 * `ignore (not versionnable)`: the node does not support versioning and is ignored during the process.
 
-* `ignore (no version)`: the node does not have any version and is ignored during the process. ``
+* `ignore (no version)`: the node does not have any version and is ignored during the process.
 
 * `retained`: the node is not purged.
 * `purged`: the node is purged.
@@ -198,13 +197,13 @@ Various log files are held on the file server where you installed AEM:
     * `error.log`
       Error messages (of varying levels of severity) are registered here.
 
-    * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+    * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
       This log is only used if [!DNL Dynamic Media] is enabled. It provides statistics and analytical information used for analyzing behavior of the internal ImageServer process.
 
     * `request.log`
       Each access request is registered here together with the response.
 
-    * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+    * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
       This log is only used if [!DNL Dynamic Media] is enabled. The s7access log records each request made to [!DNL Dynamic Media] through `/is/image` and `/is/content`.
 
     * `stderr.log`
@@ -216,7 +215,7 @@ Various log files are held on the file server where you installed AEM:
     * `upgrade.log`
       Provides a log of all upgrade operations that runs from the `com.day.compat.codeupgrade` and `com.adobe.cq.upgradesexecutor` packages.
 
-* `<*cq-installation-dir*>/crx-quickstart/repository`
+* `<cq-installation-dir>/crx-quickstart/repository`
 
     * `revision.log`
       Revision journaling information.
@@ -257,12 +256,12 @@ The log levels are as follows:
 
 In certain circumstances you may want to create a custom log file with a different log level. You can do this in the repository by:
 
-1. If not already existing, create a new configuration folder ( `sling:Folder`) for your project `/apps/<*project-name*>/config`.
-1. Under `/apps/<*project-name*>/config`, create a node for the new [Apache Sling Logging Logger Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
+1. If not already existing, create a new configuration folder ( `sling:Folder`) for your project `/apps/<project-name>/config`.
+1. Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Logger Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
 
-    * Name: `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>` (as this is a Logger)
+    * Name: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (as this is a Logger)
 
-      Where `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information).
+      Where `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information).
 
       For example, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
@@ -270,7 +269,7 @@ In certain circumstances you may want to create a custom log file with a differe
 
    >[!NOTE]
    >
-   >Although not a technical requirement, it is advisable to make `<*identifier*>` unique.
+   >Although not a technical requirement, it is advisable to make `<identifier>` unique.
 
 1. Set the following properties on this node:
 
@@ -309,17 +308,18 @@ In certain circumstances you may want to create a custom log file with a differe
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.pattern` supports up to six arguments.
-
-   >
    >
    >{0} The timestamp of type `java.util.Date`
-   >{1} the log marker
-   >{2} the name of the current thread
-   >{3} the name of the logger
-   >{4} the log level
-   >{5} the log message
-
    >
+   >{1} the log marker
+   >
+   >{2} the name of the current thread
+   >
+   >{3} the name of the logger
+   >
+   >{4} the log level
+   >
+   >{5} the log message
    >
    >If the log call includes a `Throwable` the stacktrace is appended to the message.
 
@@ -331,54 +331,42 @@ In certain circumstances you may want to create a custom log file with a differe
    >
    >Log writer paths are relative to the `crx-quickstart` location.
    >
-   >
    >Therefore, a log file specified as:
    >
-   >
    >`logs/thelog.log`
-
-   >
    >
    >writes to:
    >
-   >
-   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log`.
-   >
+   >`<cq-installation-dir>/crx-quickstart/logs/thelog.log`.
    >
    >And a log file specified as:
    >
-   >
    >`../logs/thelog.log`
-
-   >
    >
    >writes to a directory:
    >
-   >
-   >` <*cq-installation-dir*>/logs/`
-   >``(i.e. next to ` `<*cq-installation-dir*>/`crx-quickstart/`)
+   >`<cq-installation-dir>/logs/`  
+   >(i.e. next to `<cq-installation-dir>/crx-quickstart/`)
 
 1. This step is only necessary when a new Writer is required (i.e. with a configuration that is different to the default Writer).
 
    >[!CAUTION]
    >
    >A new Logging Writer Configuration is only required when the existing default is not suitable.
-
-   >
    >
    >If no explicit Writer is configured the system will automatically generate an implicit Writer based on the default.
 
-   Under `/apps/<*project-name*>/config`, create a node for the new [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):
+   Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):
 
-    * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (as this is a Writer)
+    * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (as this is a Writer)
 
-      As with the Logger, `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      As with the Logger, `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
     * Type: `sling:OsgiConfig`
 
    >[!NOTE]
    >
-   >Although not a technical requirement, it is advisable to make `<*identifier*>` unique.
+   >Although not a technical requirement, it is advisable to make `<identifier>` unique.
 
    Set the following properties on this node:
 
@@ -430,8 +418,10 @@ In certain circumstances you may want to create a custom log file with a differe
    >
    >Note: When specifying a time/date:
    > 1. You should "escape" literal text within a pair of single quotes (' ');
-   >this is to avoid certain characters being interpreted as pattern letters.
-   > 1. Only use characters allowed for a valid file name anywhere in the option.
+   >
+   >     this is to avoid certain characters being interpreted as pattern letters.
+   >
+   >  1. Only use characters allowed for a valid file name anywhere in the option.
 
 1. Read your new log file with your chosen tool.
 
@@ -461,7 +451,7 @@ These entries hold the same information as shown when editing a page.
 
 #### OSGi Audit records from the Web Console {#osgi-audit-records-from-the-web-console}
 
-OSGi events also generate audit records which can be seen from the **Configuration Status** tab -&gt; **Log Files **tab in the AEM Web Console:
+OSGi events also generate audit records which can be seen from the **Configuration Status** tab -&gt; **Log Files** tab in the AEM Web Console:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -675,7 +665,7 @@ By totaling all the GET entries within a specific periods (e.g. over various 24 
 
 A good starting point for performance analysis is the request log:
 
-`<*cq-installation-dir*>/crx-quickstart/logs/request.log`
+`<cq-installation-dir>/crx-quickstart/logs/request.log`
 
 The log looks as follows (the lines are shortened for simplicity):
 
@@ -743,7 +733,7 @@ Tests must be made to determine how many concurrent users the system can handle 
 ### Using rlog.jar to find requests with long duration times {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
 AEM includes various helper tools located in:
-`<*cq-installation-dir*>/crx-quickstart/opt/helpers`
+`<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 One of these, `rlog.jar`, can be used to quickly sort `request.log` so that requests are displayed by duration, from longest to shortest time.
 

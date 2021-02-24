@@ -1,8 +1,8 @@
 ---
 title: Rendering Forms By Value
 seo-title: Rendering Forms By Value
-description: null
-seo-description: null
+description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
+seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
 uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference

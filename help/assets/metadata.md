@@ -104,7 +104,7 @@ The metadata import is asynchronous and does not impede system performance. Simu
 1. Navigate to the [!DNL Assets] user interface, and click **[!UICONTROL Create]** from the toolbar.
 1. From the menu, select **[!UICONTROL Metadata]**.
 1. In the **[!UICONTROL Metadata Import]** page, click **[!UICONTROL Select File]**. Select the CSV file with the metadata.
-1. Specify the following parameters. See a sample CSV file at [metadata-import-sample-file.csv](assets/metadata-import-sample-file.csv).
+1. Specify the following parameters. See a sample CSV file at [metadata-import-sample-file.csv](/help/assets/assets/metadata-import-sample-file.csv).
 
     | Metadata import parameters | Description |
     |:---|:---|
@@ -155,7 +155,7 @@ A few use cases for exporting metadata in bulk are:
 
 ## Edit metadata of collections {#collections-metadata}
 
-For details, see [view and edit collection metadata](/help/assets/managing-collections-touch-ui.md#view-edit-collection-metadata) and [edit metadata of multiple collections in bulk](/help/assets/managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
+For details, see [view and edit collection metadata](/help/assets/manage-collections.md#view-edit-collection-metadata) and [edit metadata of multiple collections in bulk](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
 
 ## Apply a metadata profile to folders {#applying-a-metadata-profile-to-folders}
 
@@ -234,8 +234,8 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 >[!MORELIKETHIS]
 >
 >* [Metadata concepts and understanding](metadata-concepts.md).
->* [Edit metadata properties of multiple collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
->* [Metadata import and export in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Edit metadata properties of multiple collections](manage-collections.md#editing-collection-metadata-in-bulk)
+>* [Metadata import and export in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 

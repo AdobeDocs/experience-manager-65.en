@@ -51,4 +51,4 @@ We of course are happy for any contribution and will review your contribution if
 
 ## Further Information
 
-See the [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) for further details on how to use the GitHub authoring platform.
+See the [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) for further details on how to use the GitHub authoring platform.

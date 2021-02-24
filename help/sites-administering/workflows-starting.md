@@ -121,7 +121,7 @@ A workflow package:
         * Modified
         * Removed
 
-    * **Notetype**
+    * **Nodetype**
 
       The type of node that the workflow launcher applies to.
 
