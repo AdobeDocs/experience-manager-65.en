@@ -246,8 +246,8 @@ curl -H "CQ-Action: Deactivate" -H "CQ-Handle: /content/test-site/" -H "CQ-Path:
 #### Check the Status of an Agent {#check-the-status-of-an-agent}
 
 ```shell
-curl -u <user>:<password> "http://localhost:4502/etc/replication/agents.author/publish/jcr:conten t.queue.json?agent=publish"
-http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on?agent=publish
+curl -u <user>:<password> "http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json?agent=publish"
+http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json?agent=publish
 ```
 
 #### Delete an Agent {#delete-an-agent}
@@ -265,13 +265,13 @@ curl -u <user>:<password> -F "jcr:primaryType=cq:Page" -F "jcr:content/jcr:title
 #### Pause an Agent {#pause-an-agent}
 
 ```shell
-curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
+curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json
 ```
 
 #### Clear an Agent Queue {#clear-an-agent-queue}
 
 ```shell
-curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
+curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json
 ```
 
 ### Communities {#communities}
