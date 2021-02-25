@@ -32,7 +32,6 @@ With the new architecture, Experience Manager is responsible for primary source 
 >* [Cache invalidation](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 >* [Hotlink protection](/help/assets/hotlink-protection.md)
 >* [HTTP/2 delivery of content](/help/assets/http2.md)
->* [Integrating Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch](/help/assets/launch.md)
 >* URL redirect at the CDN level
 >* Akamai ChinaCDN (for optimal delivery in China)
 
