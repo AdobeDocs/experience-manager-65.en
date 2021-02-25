@@ -17,4 +17,4 @@ Hot linking is when a third-party website uses HTML code to display an image fro
 
 >[!NOTE]
 >
->Hot link protection requires that you use Adobe’s bundled CDN. To activate hotlink protection, an Administrator must create a support ticket to request the configuration change to your Dynamic Media account. There is no additional cost for activating hot link protection.
+>This feature requires that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager Dynamic Media. Any other custom CDN is not supported with this feature. To activate hot link protection, an Administrator must create a Adobe Customer Care support ticket to request the configuration change to your Dynamic Media account. There is no additional cost for activating hot link protection.

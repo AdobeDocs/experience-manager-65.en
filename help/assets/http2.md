@@ -15,7 +15,7 @@ Adobe is excited to announce the availability of HTTP/2 delivery of content with
 
 >[!NOTE]
 >
->Customers must use the CDN (Content Deliver Network) bundled with Adobe Experience Manager Dynamic Media to benefit from HTTP/2 delivery of content.
+>This feature requires that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager Dynamic Media. Any other custom CDN is not supported with this feature.
 
 ## What is HTTP/2? {#what-is-http}
 
