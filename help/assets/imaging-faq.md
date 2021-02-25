@@ -17,7 +17,7 @@ Smart Imaging technology applies Adobe Sensei AI capabilities and works with exi
 
 >[!NOTE]
 >
->Customers must use the CDN (Content Deliver Network) bundled with Adobe Experience Manager Dynamic Media to benefit from Smart Imaging.
+>This feature requires that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager Dynamic Media. Any other custom CDN is not supported with this feature.
 
 Smart Imaging also benefits from the added performance boost of being fully integrated with Adobe’s best-in-class premium CDN service. This service finds the optimal internet route between servers, networks, and peering points. It finds a route that has the lowest latency and lowest packet loss rate instead of using the default route on the Internet.
 

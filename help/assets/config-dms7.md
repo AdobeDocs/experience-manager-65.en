@@ -24,14 +24,15 @@ With the new architecture, Experience Manager is responsible for primary source 
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Customers that do not use the bundled CDN with Experience Manager Dynamic Media do not benefit from the following capabilities:
->* [Smart Imaging](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/imaging-faq.html?lang=en#dynamicmedia)
->* [Cache invalidation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=en#dynamicmedia)
->* [Hotlink protection](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/hotlink-protection.html?lang=en#dynamicmedia)
->* [HTTP/2 delivery of content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/http2faq.html?lang=en#dynamicmedia)
->* [Integrating Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/launch.html?lang=en#dynamicmedia)
+>The following list of features require that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom CDN is not supported with these features.
+>
+>* [Smart Imaging](/help/assets/imaging-faq.md)
+>* [Cache invalidation](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>* [Hotlink protection](/help/assets/hotlink-protection.md)
+>* [HTTP/2 delivery of content](/help/assets/http2.md)
+>* [Integrating Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch](/help/assets/launch.md)
 >* URL redirect at the CDN level
 >* Akamai ChinaCDN (for optimal delivery in China)
 
