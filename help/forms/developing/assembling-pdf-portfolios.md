@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 ---
 
-# Assembling PDF Portfolios {#assembling-pdf-portfolios}
+# Assembling PDF Portfolios {#assembling-pdf-portfolios} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 You can assemble a PDF Portfolio using the Assembler Java and web service API. A portfolio can combine several documents of various types, including word file, image files (for example, a jpeg file), and PDF documents. The layout of the portfolio can be set to different styles like the *Grid with Preview*, the *On an Image* layout or even *Revolve*.
 

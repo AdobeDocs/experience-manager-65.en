@@ -11,7 +11,9 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 ---
 
-# Encrypting and Decrypting PDF Documents {#encrypting-and-decrypting-pdf-documents}
+# Encrypting and Decrypting PDF Documents {#encrypting-and-decrypting-pdf-documents} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 **About the Encryption Service**
 

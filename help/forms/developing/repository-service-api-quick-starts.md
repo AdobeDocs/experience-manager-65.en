@@ -11,7 +11,9 @@ topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 ---
 
-# Repository Service API Quick Starts {#repository-service-api-quick-starts}
+# Repository Service API Quick Starts {#repository-service-api-quick-starts} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 The following Quick Starts are available for the AEM Forms Repository service.
 

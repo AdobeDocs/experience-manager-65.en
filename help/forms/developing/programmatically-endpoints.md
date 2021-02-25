@@ -11,7 +11,9 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 ---
 
-# Programmatically Managing Endpoints {#programmatically-managing-endpoints}
+# Programmatically Managing Endpoints {#programmatically-managing-endpoints} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 **About Endpoint Registry Service**
 
