@@ -11,7 +11,9 @@ topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 ---
 
-# Converting PDF to Postscript and Image Files {#converting-pdf-to-postscript-andimage-files}
+# Converting PDF to Postscript and Image Files {#converting-pdf-to-postscript-andimage-files} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 **About the Convert PDF Service**
 

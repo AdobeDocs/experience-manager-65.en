@@ -10,7 +10,9 @@ topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 ---
 
-# Backup and Restore Service API Quick Starts {#backup-and-restore-service-apiquick-starts}
+# Backup and Restore Service API Quick Starts {#backup-and-restore-service-apiquick-starts} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 Java API Quick Start(SOAP) are available for the Backup and Restore Service API.
 

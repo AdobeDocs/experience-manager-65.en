@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 ---
 
-# Creating Web Applications that Renders Forms {#creating-web-applications-thatrenders-forms}
+# Creating Web Applications that Renders Forms {#creating-web-applications-thatrenders-forms} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 ## Creating Web Applications that Renders Forms {#creating-web-applications-that-renders-forms}
 

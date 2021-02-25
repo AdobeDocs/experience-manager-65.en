@@ -11,7 +11,9 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 ---
 
-# Forms Service API Quick Starts {#forms-service-api-quick-starts}
+# Forms Service API Quick Starts {#forms-service-api-quick-starts} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 The following Quick Starts are available for the Forms service:
 

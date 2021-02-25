@@ -11,7 +11,9 @@ topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 ---
 
-# Digitally Signing and Certifying Documents {#digitally-signing-and-certifying-documents}
+# Digitally Signing and Certifying Documents {#digitally-signing-and-certifying-documents} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 **About the Signature Service**
 

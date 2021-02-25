@@ -11,7 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a6fe91ab-3aa0-4b3d-87c0-6cf69a2c4cc4
 ---
 
-# Validate a DDX document using the web service API {#validate-a-ddx-document-using-theweb-service-api}
+# Validate a DDX document using the web service API {#validate-a-ddx-document-using-theweb-service-api} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 Validate a DDX document by using the Assembler Service API (web service):
 

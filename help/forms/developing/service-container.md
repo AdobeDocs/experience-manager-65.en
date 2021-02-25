@@ -10,7 +10,9 @@ topic-tags: coding, development-tools
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 ---
 
-# Service container {#service-container}
+# Service container {#service-container} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 AEM Forms services located in the service container (including standard servces such as the Encryption service, long-lived, and short-lived processes) can be invoked using various providers, such as an EJB provider. An EJB provider enables AEM Forms services to be invoked over RMI/IIOP. A web service provider exposes services as web services (WSDL Generation) using standards such as SOAP/HTTP and SOAP/JMS.
 
