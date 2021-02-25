@@ -13,7 +13,7 @@ Dynamic Media assets are cached by the CDN (Content Delivery Network) for fast d
 
 >[!NOTE]
 >
->Customers must use the CDN bundled with Adobe Experience Manager Dynamic Media to benefit from CDN cache invalidation.
+>This feature requires that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager Dynamic Media. Any other custom CDN is not supported with this feature.
 
 >[!IMPORTANT]
 >
