@@ -26,7 +26,7 @@ With the new architecture, Experience Manager is responsible for primary source 
 
 >[!NOTE]
 >
->The following list of features require that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom CDN is not supported with these features.
+>The following list of features requires that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom CDN is not supported with these features.
 >
 >* [Smart Imaging](/help/assets/imaging-faq.md)
 >* [Cache invalidation](/help/assets/invalidate-cdn-cache-dynamic-media.md)
