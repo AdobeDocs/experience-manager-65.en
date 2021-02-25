@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 ---
 
-# Assembling PDF Documents with Bookmarks {#assembling-pdf-documents-with-bookmarks}
+# Assembling PDF Documents with Bookmarks {#assembling-pdf-documents-with-bookmarks} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 You can assemble a PDF document that contains bookmarks. For example, assume that you have a PDF document that does not contain bookmarks and you want to modify it by providing bookmarks. Using the Assembler service, you can pass it a PDF document that does not contain bookmarks and get back a PDF document that contains bookmarks.
 

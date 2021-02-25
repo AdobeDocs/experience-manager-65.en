@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 ---
 
-# Rendering Forms Based on Fragments {#rendering-forms-based-on-fragments}
+# Rendering Forms Based on Fragments {#rendering-forms-based-on-fragments} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 ## Rendering Forms Based on Fragments {#rendering-forms-based-on-fragments-inner}
 

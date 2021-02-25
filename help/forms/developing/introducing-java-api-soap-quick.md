@@ -10,7 +10,9 @@ topic-tags: develop, development-tools
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 ---
 
-# Introducing Java API Quick Start {#introducing-java-api-quickstart}
+# Introducing Java API Quick Start {#introducing-java-api-quickstart} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 Adobe AEM Forms API Quick Start can help you accelerate your efforts to develop programs that interact with AEM Forms services. *Quick Start*s are complete programs that you can copy and paste into your own projects and use as a starting point. You can run a Quick Start to see how it behaves and modify it for your own needs.
 

@@ -10,7 +10,9 @@ topic-tags: coding, development-tools
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
 ---
 
-# Invoking AEM Forms using APIs {#invoking-aem-forms-using-apis}
+# Invoking AEM Forms using APIs {#invoking-aem-forms-using-apis} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 Adobe Experience Manager Forms is J2EE-based enterprise software that consists of services that operate within a shared infrastructure. Service operations typically consume or produce documents. By using AEM Forms, you can combine forms workflow with electronic forms, document security, and document generation in an integrated and cohesive set of services. These services can be accessed from inside and outside the firewall.
 

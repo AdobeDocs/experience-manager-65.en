@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 ---
 
-# Calculating Form Data {#calculating-form-data}
+# Calculating Form Data {#calculating-form-data} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 The Forms service can calculate the values that a user enters into a form and display the results. To calculate form data, you must perform two tasks. First, you create a form design script that calculates form data. A form design supports three types of scripts. One script type runs on the client, another runs on the server, and the third type runs on both the server and the client. The script type discussed in this topic runs on the server. Server-side calculations are supported for HTML, PDF, and form Guide (deprecated) transformations.
 

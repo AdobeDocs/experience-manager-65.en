@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 ---
 
-# Assembling Documents Using Bates Numbering {#assembling-documents-using-bates-numbering}
+# Assembling Documents Using Bates Numbering {#assembling-documents-using-bates-numbering} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 You can assemble PDF documents that contain unique page identifiers by using Bates numbering. *Bates numbering* is a method of applying unique identifies to a batch of related documents. Each page in the document (or set of documents) is assigned a Bates number that uniquely identifies the page. For example, manufacturing documents that contain bill of material information and are associated with the production of an assembly can contain an identifier. A Bates number contains a sequentially incremented numeric value and an optional prefix and suffix. The prefix + numeric + suffix is referred to as a *bates pattern*.
 

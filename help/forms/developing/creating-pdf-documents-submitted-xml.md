@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 ---
 
-# Creating PDF Documents with Submitted XML Data {#creating-pdf-documents-with-submittedxml-data}
+# Creating PDF Documents with Submitted XML Data {#creating-pdf-documents-with-submittedxml-data} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 ## Creating PDF Documents with Submitted XML Data {#creating-pdf-documents-with-submitted-xml-data}
 
