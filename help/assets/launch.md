@@ -1,21 +1,19 @@
 ---
-title: Integrating Dynamic Media Viewers with Adobe Analytics and Adobe Launch
-description: The Dynamic Media Viewers extension for Adobe Launch, along with the release of Dynamic Media Viewers 5.13, lets customers of Dynamic Media, Adobe Analytics, and Adobe Launch use events and data specific for the Dynamic Media Viewers in their Adobe Launch configuration.
-uuid: d218ee1c-cd2c-40c3-a3d4-b95719ae8e98
+title: Integrating Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch
+description: The Dynamic Media Viewers extension for Experience Platform Launch, along with the release of Dynamic Media Viewers 5.13, lets customers of Dynamic Media, Adobe Analytics, and Experience Platform Launch use events and data specific for the Dynamic Media Viewers in their Experience Platform Launch configuration.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
-discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 
 ---
 
-# Integrating Dynamic Media Viewers with Adobe Analytics and Adobe Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Integrating Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
-## What is Dynamic Media Viewers integration with Adobe Analytics and Adobe Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
+## What is Dynamic Media Viewers integration with Adobe Analytics and Experience Platform Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
-The new *Dynamic Media Viewers* extension for Adobe Launch, along with the recent release of Dynamic Media Viewers 5.13, lets customers of Dynamic Media, Adobe Analytics, and Adobe Launch to use events and data specific for the Dynamic Media Viewers in their Adobe Launch configuration.
+The new *Dynamic Media Viewers* extension for Experience Platform Launch, along with the recent release of Dynamic Media Viewers 5.13, lets customers of Dynamic Media, Adobe Analytics, and Experience Platform Launch to use events and data specific for the Dynamic Media Viewers in their Experience Platform Launch configuration.
 
 This integration means that you can track usage of Dynamic Media Viewers on your website with Adobe Analytics. At the same time, you can use the events and data exposed by the viewers with any other Launch extension that comes from Adobe or a third-party.
 
@@ -25,19 +23,19 @@ See [Adobe Extension](https://experienceleague.adobe.com/docs/launch/using/exten
 
 ### Limitations of the integration {#limitations-of-the-integration}
 
-* Adobe Launch integration for Dynamic Media viewers does not work in the AEM author node. You cannot see any tracking from a WCM page until it is published.
-* Adobe Launch integration for Dynamic Media viewers is not supported for "pop-up" operation mode, where the viewer URL is obtained using the "URL" button on Asset Details page.
-* Adobe Launch integration cannot be used simultaneously with legacy viewers Analytics integration (by way of the `config2=` parameter).
+* Experience Platform Launch integration for Dynamic Media viewers does not work in the AEM author node. You cannot see any tracking from a WCM page until it is published.
+* Experience Platform Launch integration for Dynamic Media viewers is not supported for "pop-up" operation mode, where the viewer URL is obtained using the "URL" button on Asset Details page.
+* Experience Platform Launch integration cannot be used simultaneously with legacy viewers Analytics integration (by way of the `config2=` parameter).
 * Support for video tracking is limited to "core playback" tracking only, as described in [Tracking Overview](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). In particular, QoS, Ads, Chapter/Segments, or Errors tracking is not supported.
 * Storage Duration configuration for Data Elements is not supported for Data Elements using the *Dynamic Media Viewers* extension. Storage Duration must be set to **[!UICONTROL None]**.
 
 ### Use cases for the integration {#use-cases-for-the-integration}
 
-The primary use case for the integration with Adobe Launch are customers who use both AEM Assets and AEM Sites. In such scenarios, you can setup a standard integration between your AEM author node and Adobe Launch, then associate your Sites instance with the Adobe Launch property. After that, any Dynamic Media WCM component added to a Sites page will track data and events from viewers.
+The primary use case for the integration with Experience Platform Launch are customers who use both AEM Assets and AEM Sites. In such scenarios, you can setup a standard integration between your AEM author node and Experience Platform Launch, then associate your Sites instance with the Experience Platform Launch property. After that, any Dynamic Media WCM component added to a Sites page will track data and events from viewers.
 
 See [About tracking Dynamic Media viewers in AEM Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites).
 
-A secondary use case that the integration supports are those customers who use AEM Assets only, or Dynamic Media Classic. In such cases, you obtain the embed code for your viewer and add it to the website page. Then, get the Adobe Launch library production URL from Adobe Launch and manually add it to the web page code.
+A secondary use case that the integration supports are those customers who use AEM Assets only, or Dynamic Media Classic. In such cases, you obtain the embed code for your viewer and add it to the website page. Then, get the Experience Platform Launch library production URL from Experience Platform Launch and manually add it to the web page code.
 
 See [About tracking Dynamic Media viewers using embed code](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode).
 
@@ -49,31 +47,31 @@ The integration takes advantage of two separate and independent types of Dynamic
 
 Adobe Analytics lets you track actions that are performed by the end user when they interact with Dynamic Media Viewers on your website. Adobe Analytics also lets you track viewer-specific data. For example, you can track and record view load events along with the asset name, any zoom actions that occurred, video play actions, and so on.
 
-In Adobe Launch, the concepts of *Data Elements* and *Rules* work together to enable Adobe Analytics tracking.
+In Experience Platform Launch, the concepts of *Data Elements* and *Rules* work together to enable Adobe Analytics tracking.
 
-#### About Data Elements in Adobe Launch {#about-data-elements-in-adobe-launch}
+#### About Data Elements in Experience Platform Launch {#about-data-elements-in-adobe-launch}
 
-A Data Element in Adobe Launch is a named property whose value is either statically defined, or dynamically calculated based on the state of a web page or Dynamic Media Viewers data.
+A Data Element in Experience Platform Launch is a named property whose value is either statically defined, or dynamically calculated based on the state of a web page or Dynamic Media Viewers data.
 
-Options that are available for a Data Element definition depend on the list of Extensions that are installed in the Adobe Launch Property. The "Core" extension is preinstalled and is available out of the box in any configuration. This "Core" extension allows to define a Data Element which value comes from cookie, JavaScript code, query string and many other sources.
+Options that are available for a Data Element definition depend on the list of Extensions that are installed in the Experience Platform Launch Property. The "Core" extension is preinstalled and is available out of the box in any configuration. This "Core" extension allows to define a Data Element which value comes from cookie, JavaScript code, query string and many other sources.
 
 For Adobe Analytics tracking several additional extensions need to be installed, as described in [Installation and setup of extensions](#installing-and-setup-of-extensions). Dynamic Media Viewers extension adds an ability to define a Data Element which value is an argument of the Dynamic Viewer event. For example, it is possible to reference the viewer type, or asset name reported by the viewer on load, the zoom level reported when end user zooms and much more.
 
 Dynamic Media Viewer extension automatically keeps the values of its Data Elements up-to-date.
 
-After you have defined it, a Data Element can be used in other places of Adobe Launch UI, using Data Element picker widget. In particular, Data Elements defined for the purposes of Dynamic Media Viewers tracking will be referenced by Set Variables Action of Adobe Analytics extension in Rule (see below).
+After you have defined it, a Data Element can be used in other places of Experience Platform Launch UI, using Data Element picker widget. In particular, Data Elements defined for the purposes of Dynamic Media Viewers tracking will be referenced by Set Variables Action of Adobe Analytics extension in Rule (see below).
 
 See [Data elements](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#reference) in the Experience Platform Launch User Guide to learn more.
 
-#### About Rules in Adobe Launch {#about-rules-in-adobe-launch}
+#### About Rules in Experience Platform Launch {#about-rules-in-adobe-launch}
 
-A Rule in Adobe Launch is an agnostic configuration that defines three areas that make up a rule: *Events*, *Conditions*, and *Actions*:
+A Rule in Experience Platform Launch is an agnostic configuration that defines three areas that make up a rule: *Events*, *Conditions*, and *Actions*:
 
-* *Events* (if) tell Adobe Launch when to trigger a Rule.
-* *Conditions* (if) tell Adobe Launch what additional restrictions to allow or disallow when triggering a Rule.
-* *Actions* (then) tell Adobe Launch what to do when a Rule is triggered.
+* *Events* (if) tell Experience Platform Launch when to trigger a Rule.
+* *Conditions* (if) tell Experience Platform Launch what additional restrictions to allow or disallow when triggering a Rule.
+* *Actions* (then) tell Experience Platform Launch what to do when a Rule is triggered.
 
-Options that are available in the Events, Conditions, and Actions section depend on the extensions that are installed in Adobe Launch Property. The *Core* extension is preinstalled and is available out-of-the-box in any configuration. The extension provides several options for Events such as basic browser-level actions that include focus change, key presses, form submissions, and so on. It also includes options for Conditions, such as cookie value, browser type, and more. For Actions, only the Custom Code option is available.
+Options that are available in the Events, Conditions, and Actions section depend on the extensions that are installed in Experience Platform Launch Property. The *Core* extension is preinstalled and is available out-of-the-box in any configuration. The extension provides several options for Events such as basic browser-level actions that include focus change, key presses, form submissions, and so on. It also includes options for Conditions, such as cookie value, browser type, and more. For Actions, only the Custom Code option is available.
 
 For Adobe Analytics tracking, several additional extensions must be installed, as described in [Installation and setup of extensions](#installing-and-setup-of-extensions). Specifically:
 
@@ -93,7 +91,7 @@ See [Rules](https://experienceleague.adobe.com/docs/launch/using/reference/manag
 
 #### Sample configuration {#sample-configuration}
 
-The following sample configuration within Adobe Launch demonstrates how to track an asset name on viewer load.
+The following sample configuration within Experience Platform Launch demonstrates how to track an asset name on viewer load.
 
 1. From the **[!UICONTROL Data Elements]** tab, define a data element `AssetName` that references `asset` parameter of the `LOAD` event from the Dynamic Media Viewers extension.
 
@@ -127,11 +125,11 @@ Currently, the support for video tracking is limited to "core playback" tracking
 
 ## Using the Dynamic Media Viewers extension {#using-the-dynamic-media-viewers-extension}
 
-As mentioned in [Use cases for the integration](#use-cases-for-the-integration), it is possible to track Dynamic Media viewers with the new Adobe Launch integration in AEM Sites and by using embed code.
+As mentioned in [Use cases for the integration](#use-cases-for-the-integration), it is possible to track Dynamic Media viewers with the new Experience Platform Launch integration in AEM Sites and by using embed code.
 
 ### Tracking Dynamic Media viewers in AEM Sites {#tracking-dynamic-media-viewers-in-aem-sites}
 
-To track Dynamic Media viewers in AEM Sites, all steps listed under the [Configuring all the integration pieces](#configuring-all-the-integration-pieces) section must be performed. Specifically, you must create the IMS configuration and the Adobe Launch Cloud Configuration.
+To track Dynamic Media viewers in AEM Sites, all steps listed under the [Configuring all the integration pieces](#configuring-all-the-integration-pieces) section must be performed. Specifically, you must create the IMS configuration and the Experience Platform Launch Cloud Configuration.
 
 Following proper configuration, any Dynamic Media viewer that you add to a Sites page, using a WCM component supported by Dynamic Media, automatically tracks data to Adobe Analytics, or Adobe Analytics for Video, or both.
 
@@ -141,13 +139,13 @@ See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe
 
 ### Tracking Dynamic Media viewers using embed code {#tracking-dynamic-media-viewers-using-embed-code}
 
-Customers who do not use AEM Sites, or embed Dynamic Media viewers into web pages outside of AEM Sites, or both, can still use the Adobe Launch integration.
+Customers who do not use AEM Sites, or embed Dynamic Media viewers into web pages outside of AEM Sites, or both, can still use the Experience Platform Launch integration.
 
-You must complete the configuration steps from the [Configuring Adobe Analytics](#configuring-adobe-analytics-for-the-integration) and [Configuring Adobe Launch](#configuring-adobe-launch-for-the-integration) sections. However, AEM-related configuration steps are not needed.
+You must complete the configuration steps from the [Configuring Adobe Analytics](#configuring-adobe-analytics-for-the-integration) and [Configuring Experience Platform Launch](#configuring-adobe-launch-for-the-integration) sections. However, AEM-related configuration steps are not needed.
 
-Following proper configuration, you can add Adobe Launch support to a web page with a Dynamic Media viewer.
+Following proper configuration, you can add Experience Platform Launch support to a web page with a Dynamic Media viewer.
 
-See [Add the Launch Embed Code](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) to learn more about how to use Adobe Launch library embed code.
+See [Add the Launch Embed Code](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) to learn more about how to use Experience Platform Launch library embed code.
 
 <!-- To be reviewed and updated although this is found live in the AEMaaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of AEM Dynamic Media.
@@ -156,23 +154,23 @@ See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/
 **To track Dynamic Media viewers using embed code**:
 
 1. Have a web page ready for embedding a Dynamic Media viewer.
-1. Obtain the embed code for Adobe Launch library by first logging in to Adobe Launch (see [Configuring Adobe Launch](#configuring-adobe-launch-for-the-integration)).
+1. Obtain the embed code for Experience Platform Launch library by first logging in to Experience Platform Launch (see [Configuring Experience Platform Launch](#configuring-adobe-launch-for-the-integration)).
 1. Click **[!UICONTROL Property]**, then click the **[!UICONTROL Environments]** tab.
 1. Pick up the Environment level that is relevant to the environment of the web page. Then, in the **[!UICONTROL Install]** column, click the box icon.
-1. **[!UICONTROL In the Web Install Instructions]** dialog box, copy the complete Adobe Launch library embed code, along with the surrounding `<script/>` tags.
+1. **[!UICONTROL In the Web Install Instructions]** dialog box, copy the complete Experience Platform Launch library embed code, along with the surrounding `<script/>` tags.
 
 ## Reference guide for the Dynamic Media Viewers extension {#reference-guide-for-the-dynamic-media-viewers-extension}
 
 ### About the Dynamic Media Viewers configuration {#about-the-dynamic-media-viewers-configuration}
 
-The Dynamic Media Viewer extension automatically integrates with the Adobe Launch library if all of the following conditions below are true:
+The Dynamic Media Viewer extension automatically integrates with the Experience Platform Launch library if all of the following conditions below are true:
 
-* Adobe Launch library global object ( `_satellite`) is present on the page.
+* Experience Platform Launch library global object ( `_satellite`) is present on the page.
 * The Dynamic Media Viewers extension function `_dmviewers_v001()` is defined on `_satellite`.
 
 * `config2=` viewer parameter is not specified, which means that viewer does not use legacy Analytics integration.
 
-Additionally, there is an option to explicitly disable Adobe Launch integration in the viewer by specifying `launch=0` parameter in the viewer's configuration. The default value of this parameter is `1`.
+Additionally, there is an option to explicitly disable Experience Platform Launch integration in the viewer by specifying `launch=0` parameter in the viewer's configuration. The default value of this parameter is `1`.
 
 ### Configuring the Dynamic Media Viewers extension {#configuring-the-dynamic-media-viewers-extension}
 
@@ -203,7 +201,7 @@ Similarly, the values of Data Elements get automatically updated when the viewer
 
 Any Dynamic Media viewer has a unique identifier on the web page. The Data Element keeps track of the value itself, and the viewer that has populated the value. This means that if there are several viewers on the same page, and there is an **[!UICONTROL AssetName]** Data Element that points to the **[!UICONTROL LOAD]** event and its "asset" argument, the **[!UICONTROL AssetName]** Data Element maintains a collection of asset names that are associated with each viewer loaded on the page.
 
-The exact value returned by the Data Element depends on the context. If the Data Element is requested in a Rule which was triggered by a Dynamic Media viewer event, then the Data Element value is returned for the viewer that initiated the Rule. And, if the Data Element is requested in a Rule that was triggered by an Event from some other Adobe Launch extension, then the value of the Data Element is the value from the viewer that was the last to update this Data Element.
+The exact value returned by the Data Element depends on the context. If the Data Element is requested in a Rule which was triggered by a Dynamic Media viewer event, then the Data Element value is returned for the viewer that initiated the Rule. And, if the Data Element is requested in a Rule that was triggered by an Event from some other Experience Platform Launch extension, then the value of the Data Element is the value from the viewer that was the last to update this Data Element.
 
 **Consider the following sample set up**:
 
@@ -217,7 +215,7 @@ The exact value returned by the Data Element depends on the context. If the Data
 
 * **[!UICONTROL TrackKey]** Rule with the following:
 
-  * Uses the key press event from the Core Adobe Launch extension as a trigger.
+  * Uses the key press event from the Core Experience Platform Launch extension as a trigger.
   * Sends the value of **[!UICONTROL ZoomScale]** Data Element to Adobe Analytics.
 
 Now, assume the end user loads the web page with the two viewers. In *viewer1*, they zoom in to 50% scale; then, in *viewer2*, they zoom in to 25% scale. In *viewer1*, they pan image around, and finally select a key on the keyboard.
@@ -227,9 +225,9 @@ The end user's activity results in the following two tracking calls being made t
 * The first call occurs because **[!UICONTROL TrackPan]** Rule is triggered when the user pans in *viewer1*. That call sends 50% as a value of **[!UICONTROL ZoomScale]** Data Element because the Data Element will know that the Rule is triggered by *viewer1* and fetch the corresponding scale value;
 * The second call occurs because **[!UICONTROL TrackKey]** Rule is triggered when the user pressed a key on the keyboard. That call sends 25% as a value of **[!UICONTROL ZoomScale]** Data Element because the Rule was not triggered by the viewer. As such, the Data Element returns the most up-to-date value.
 
-The sample set up above also affects the life span of the Data Element value. The value of the Data Element managed by the Dynamic Media Viewer is stored in Adobe Launch library code even after the viewer itself is disposed on the web page. This means that if there is a Rule that is triggered by a non-Dynamic Media Viewer extension and references such Data Element, the Data Element returns the last known value, even if the viewer is no longer present on the web page.
+The sample set up above also affects the life span of the Data Element value. The value of the Data Element managed by the Dynamic Media Viewer is stored in Experience Platform Launch library code even after the viewer itself is disposed on the web page. This means that if there is a Rule that is triggered by a non-Dynamic Media Viewer extension and references such Data Element, the Data Element returns the last known value, even if the viewer is no longer present on the web page.
 
-In any case, values of Data Elements driven by Dynamic Media Viewers are not stored on the local storage or on the server; instead, they are kept only on the client-side Adobe Launch library. Values of such Data Element disappear when the web page reloads.
+In any case, values of Data Elements driven by Dynamic Media Viewers are not stored on the local storage or on the server; instead, they are kept only on the client-side Experience Platform Launch library. Values of such Data Element disappear when the web page reloads.
 
 Generally, the Data Element editor supports [storage duration selection](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html?lang=en#create-a-data-element). However, Data Elements that use the Dynamic Media Viewers extension only support the storage duration option of **[!UICONTROL None]**. Setting any other value is possible in the user interface, but the Data Element behavior is not defined in this case. The extension manages the value of the Data Element on its own: the Data Element that maintains the value of the viewer event argument during the entire viewer life cycle.
 
@@ -403,19 +401,19 @@ The following table lists Dynamic Media Viewer events and their supported argume
 
 If you have not done so already, Adobe recommends that you thoroughly review all documentation prior to this section so you understand the complete integration.
 
-This section explains the configuration steps that are necessary to integrate Dynamic Media viewers with Adobe Analytics and Adobe Analytics for Audio and Video. While use of the Dynamic Media Viewers extension for other purposes in Adobe Launch is possible, such scenarios not covered in this documentation.
+This section explains the configuration steps that are necessary to integrate Dynamic Media viewers with Adobe Analytics and Adobe Analytics for Audio and Video. While use of the Dynamic Media Viewers extension for other purposes in Experience Platform Launch is possible, such scenarios not covered in this documentation.
 
 You will configure the integration in the following Adobe products:
 
 * Adobe Analytics - you will configure tracking variables and reports.
-* Adobe Launch - you will define a Property, one or more Rules, and one or more Data Elements to enable viewer tracking.
+* Experience Platform Launch - you will define a Property, one or more Rules, and one or more Data Elements to enable viewer tracking.
 
 Additionally, if this integration solution is used with AEM Sites, the following configuration also needs to be done:
 
-* [!DNL Adobe I/O] Console - integration is created for Adobe Launch.
-* AEM author node - IMS configuration and Adobe Launch cloud configuration.
+* [!DNL Adobe I/O] Console - integration is created for Experience Platform Launch.
+* AEM author node - IMS configuration and Experience Platform Launch cloud configuration.
 
-As part of the configuration, be sure you have access to a company in Adobe Experience Cloud that has Adobe Analytics and Adobe Launch already enabled.
+As part of the configuration, be sure you have access to a company in Adobe Experience Cloud that has Adobe Analytics and Experience Platform Launch already enabled.
 
 ## Configuring Adobe Analytics for the integration {#configuring-adobe-analytics-for-the-integration}
 
@@ -484,30 +482,30 @@ See also [Analytics Implementation Guide](https://experienceleague.adobe.com/doc
 
    ![image2019-6-26_23-12-49](assets/image2019-6-26_23-12-49.png)
 
-## Configuring Adobe Launch for the integration {#configuring-adobe-launch-for-the-integration}
+## Configuring Experience Platform Launch for the integration {#configuring-adobe-launch-for-the-integration}
 
-After you configure Adobe Launch, the following will be set up for the integration:
+After you configure Experience Platform Launch, the following will be set up for the integration:
 
 * The creation of a new Property to keep all your configurations together.
 * The installation and setup of extensions. The client-side code of all extensions installed in the Property is compiled together into a library. This library is used by the web page later.
 * Configuration of Data Elements and Rules. This configuration defines what data to capture from the Dynamic Media viewers, when to trigger the tracking logic, and where to send the viewer's data in Adobe Analytics.
 * Publishing of the library.
 
-**To configure Adobe Launch for the integration**:
+**To configure Experience Platform Launch for the integration**:
 
-1. Start by accessing Adobe Launch from the Experience Cloud [home page](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/). On the menu bar, click the Solutions icon (three by three table of dots) near the upper-right corner of the page, then click **[!UICONTROL Launch]**.
+1. Start by accessing Experience Platform Launch from the Experience Cloud [home page](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/). On the menu bar, click the Solutions icon (three by three table of dots) near the upper-right corner of the page, then click **[!UICONTROL Launch]**.
 
-   You can also [open Adobe Launch directly](https://launch.adobe.com/).
+   You can also [open Experience Platform Launch directly](https://launch.adobe.com/).
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
-### Creating a property in Adobe Launch {#creating-a-property-in-adobe-launch}
+### Creating a property in Experience Platform Launch {#creating-a-property-in-adobe-launch}
 
-A property in Adobe Launch is a named configuration that keeps all your settings together. A library of the configuration settings is generated and published to different environment levels (development, staging, and production).
+A property in Experience Platform Launch is a named configuration that keeps all your settings together. A library of the configuration settings is generated and published to different environment levels (development, staging, and production).
 
 See also [Create a Launch Property](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch).
 
-1. In Adobe Launch, click **[!UICONTROL New Property]**.
+1. In Experience Platform Launch, click **[!UICONTROL New Property]**.
 1. In the **[!UICONTROL Create Property]** dialog box, in the **[!UICONTROL Name]** field, type a descriptive name, such as the title of your website. For example, `DynamicMediaViewersProp.`
 1. In the **[!UICONTROL Domains]** field, enter your website's domain.
 1. In the **[!UICONTROL Advanced Options]** drop-down, enable **[!UICONTROL Configure for extension development (cannot be modified later)]** in case the extension you want to use--in this case, *Dynamic Media Viewers*--is not yet released.
@@ -520,7 +518,7 @@ See also [Create a Launch Property](https://experienceleague.adobe.com/docs/laun
 
 ### Installing and setup of extensions {#installing-and-setup-of-extensions}
 
-All available extensions in Adobe Launch are listed under the **[!UICONTROL Extensions > Catalog]**.
+All available extensions in Experience Platform Launch are listed under the **[!UICONTROL Extensions > Catalog]**.
 
 To install an extension, click **[!UICONTROL Install]**. If needed, perform a one-time extension configuration, then click **[!UICONTROL Save]**.
 
@@ -564,9 +562,9 @@ See [Adobe Media Analytics for Audio and Video Extension](https://experienceleag
 
 Select **[!UICONTROL enable Adobe Analytics for Video]** to enable (turn on) Video Heartbeat tracking.
 
-Note that--at the time of this writing--the *Dynamic Media Viewers* extension is only available if the Adobe Launch Property is created for development.
+Note that--at the time of this writing--the *Dynamic Media Viewers* extension is only available if the Experience Platform Launch Property is created for development.
 
-See [Creating a property in Adobe Launch](#creating-a-property-in-adobe-launch).
+See [Creating a property in Experience Platform Launch](#creating-a-property-in-adobe-launch).
 
 After the extensions are installed and setup, at minimum, the following five extensions (four if you are not tracking video) will be listed in the Extensions &gt; Installed area.
 
@@ -574,21 +572,21 @@ After the extensions are installed and setup, at minimum, the following five ext
 
 ### Setting up Data Elements and Rules {#setting-up-data-elements-and-rules}
 
-In Adobe Launch, create Data Elements and Rules that are necessary for tracking Dynamic Media viewers.
+In Experience Platform Launch, create Data Elements and Rules that are necessary for tracking Dynamic Media viewers.
 
-See [How data and event tracking works in the integration](#how-data-and-event-tracking-works-in-the-integration) for an overview of tracking with Adobe Launch.
+See [How data and event tracking works in the integration](#how-data-and-event-tracking-works-in-the-integration) for an overview of tracking with Experience Platform Launch.
 
-See [Sample configuration](#sample-configuration) for a sample configuration in Adobe Launch that demonstrates how to track an asset name on viewer load.
+See [Sample configuration](#sample-configuration) for a sample configuration in Experience Platform Launch that demonstrates how to track an asset name on viewer load.
 
 See [Configuring the Dynamic Media Viewers extension](#configuring-the-dynamic-media-viewers-extension) for in-depth information about the extension's capabilities.
 
 ### Publishing a library {#publishing-a-library}
 
-To make changes in the Adobe Launch configuration (including Property, Extensions, Rules, and Data Elements set up), you need to *publish* such changes*.* Publishing in Adobe Launch is performed from the Publishing tab under the Property configuration.
+To make changes in the Experience Platform Launch configuration (including Property, Extensions, Rules, and Data Elements set up), you need to *publish* such changes*.* Publishing in Experience Platform Launch is performed from the Publishing tab under the Property configuration.
 
-Adobe Launch may have multiple Development environments, one Staging environment, and one Production environment. By default the Adobe Launch Cloud Configuration in AEM points the AEM author node to the Stage environment of Adobe Launch, and the AEM publish node to the Production environment of Adobe Launch. This arrangment means that with the default AEM settings, it is necessary to publish the Adobe Launch library to the Staging environment so as to make use of it in AEM author, and then publish it into the Production environment so that it can be used in AEM publish.
+Experience Platform Launch may have multiple Development environments, one Staging environment, and one Production environment. By default the Experience Platform Launch Cloud Configuration in AEM points the AEM author node to the Stage environment of Experience Platform Launch, and the AEM publish node to the Production environment of Experience Platform Launch. This arrangment means that with the default AEM settings, it is necessary to publish the Experience Platform Launch library to the Staging environment so as to make use of it in AEM author, and then publish it into the Production environment so that it can be used in AEM publish.
 
-See [Environments](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types) for more information about Adobe Launch environments.
+See [Environments](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types) for more information about Experience Platform Launch environments.
 
 Publishing a library involves the following two steps:
 
@@ -597,7 +595,7 @@ Publishing a library involves the following two steps:
 
 #### Adding and building a new library {#adding-and-building-a-new-library}
 
-1. The first time you open the Publishing tab in Adobe Launch, the library list is empty.
+1. The first time you open the Publishing tab in Experience Platform Launch, the library list is empty.
 
    In the left column, click **[!UICONTROL Add New Library]**.
 
@@ -619,7 +617,7 @@ Publishing a library involves the following two steps:
 
    >[!NOTE]
    >
-   >The next time you make changes to your Adobe Launch configuration, go to the **[!UICONTROL Publishing]** tab under the **[!UICONTROL Property]** configuration, then click your previously created library.
+   >The next time you make changes to your Experience Platform Launch configuration, go to the **[!UICONTROL Publishing]** tab under the **[!UICONTROL Property]** configuration, then click your previously created library.
    >
    >
    >From the library publishing screen, click **[!UICONTROL Add All Changed Resources]**, then click **[!UICONTROL Save & Build for Development]**.
@@ -646,7 +644,7 @@ Publishing a library involves the following two steps:
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   See [Publishing](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html#reference) for more information about the publishing process in Adobe Launch.
+   See [Publishing](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html#reference) for more information about the publishing process in Experience Platform Launch.
 
 ## Configuring Adobe Experience Manager for the integration {#configuring-adobe-experience-manager-for-the-integration}
 
@@ -659,7 +657,7 @@ Prerequisites:
 The AEM configuration consists of the following two major steps:
 
 * Configuration of AEM IMS.
-* Configuration of Adobe Launch Cloud.
+* Configuration of Experience Platform Launch Cloud.
 
 ### Configuring AEM IMS {#configuring-aem-ims}
 
@@ -668,7 +666,7 @@ The AEM configuration consists of the following two major steps:
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
 1. On the Adobe IMC Configuration page, near the upper-left corner, click **[!UICONTROL Create]**.
-1. On the **[!UICONTROL Adobe IMS Technical Account Configuration]** page, in the **[!UICONTROL Cloud Solution]** drop-down list, click **[!UICONTROL Adobe Launch]**.
+1. On the **[!UICONTROL Adobe IMS Technical Account Configuration]** page, in the **[!UICONTROL Cloud Solution]** drop-down list, click **[!UICONTROL Experience Platform Launch]**.
 1. Enable **[!UICONTROL Create new certificate]**, then in the text field, enter any meaningful value for your certificate. For example, *AdobeLaunchIMSCert*. Click **[!UICONTROL Create certificate]**.
 
    The following Info message is displayed:
@@ -729,7 +727,7 @@ The AEM configuration consists of the following two major steps:
 
 1. Return to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page that you left open previously. In the upper-right corner of the page, click **[!UICONTROL Next]** to open the **[!UICONTROL Account]** page in the **[!UICONTROL Adobe IMS Technical Account Configuration]** window.
 
-   (If you accidently closed the page earlier, return to AEM author, then click **[!UICONTROL Tools > Security > Adobe IMS Configurations]**. Click **[!UICONTROL Create]**. In the **[!UICONTROL Cloud Solution]** drop-down list, select **[!UICONTROL Adobe Launch]**. In the **[!UICONTROL Certificate]** drop-down list, select the name of the previously created certificate.)
+   (If you accidently closed the page earlier, return to AEM author, then click **[!UICONTROL Tools > Security > Adobe IMS Configurations]**. Click **[!UICONTROL Create]**. In the **[!UICONTROL Cloud Solution]** drop-down list, select **[!UICONTROL Experience Platform Launch]**. In the **[!UICONTROL Certificate]** drop-down list, select the name of the previously created certificate.)
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
 
@@ -784,20 +782,20 @@ The AEM configuration consists of the following two major steps:
 
    ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
-## Configuring Adobe Launch Cloud for the integration {#configuring-adobe-launch-cloud-for-the-integration}
+## Configuring Experience Platform Launch Cloud for the integration {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. In AEM author, near the upper-left corner, click the Tools icon (hammer), then click **[!UICONTROL Cloud Services > Adobe Launch Configurations]**.
+1. In AEM author, near the upper-left corner, click the Tools icon (hammer), then click **[!UICONTROL Cloud Services > Experience Platform Launch Configurations]**.
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
-1. On the **[!UICONTROL Adobe Launch Configurations]** page, in the left panel, select an AEM Site for which you want to apply your Adobe Launch Configuration.
+1. On the **[!UICONTROL Experience Platform Launch Configurations]** page, in the left panel, select an AEM Site for which you want to apply your Experience Platform Launch Configuration.
 
    For illustration purposes only, the **[!UICONTROL We.Retail]** Site is selected in the screenshot below.
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
 1. Near the upper-left corner of the page, click **[!UICONTROL Create]**.
-1. On the **[!UICONTROL General]** page (1/3 pages) of the **[!UICONTROL Create Adobe Launch Configuration]** window, fill in the following fields:
+1. On the **[!UICONTROL General]** page (1/3 pages) of the **[!UICONTROL Create Experience Platform Launch Configuration]** window, fill in the following fields:
 
     * **[!UICONTROL Title]** - Enter a descriptive configuration title. For example, `We.Retail Launch cloud configuration`.
 
@@ -805,18 +803,18 @@ The AEM configuration consists of the following two major steps:
 
     * **[!UICONTROL Company]** - From the **[!UICONTROL Company]** drop-down list, select your Experience Cloud company. The list populates automatically.
 
-    * **[!UICONTROL Property]** - From the Property drop-down list, select your Adobe Launch property that you created previously. The list populates automatically.
+    * **[!UICONTROL Property]** - From the Property drop-down list, select your Experience Platform Launch property that you created previously. The list populates automatically.
 
    After completing all the fields, your **[!UICONTROL General]** page will look similar to the following:
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
 1. Near the upper-left corner, click **[!UICONTROL Next]**.
-1. On the **[!UICONTROL Staging]** page (2/3 pages) of the **[!UICONTROL Create Adobe Launch Configuration]** window, fill in the following field:
+1. On the **[!UICONTROL Staging]** page (2/3 pages) of the **[!UICONTROL Create Experience Platform Launch Configuration]** window, fill in the following field:
 
-   In the **[!UICONTROL Library URI]** field, check the location of the staging version of your Adobe Launch library. AEM populates this field automatically.
+   In the **[!UICONTROL Library URI]** field, check the location of the staging version of your Experience Platform Launch library. AEM populates this field automatically.
 
-   For illustration purposes only, this step will use Adobe Launch libraries that are deployed to Adobe CDN.
+   For illustration purposes only, this step will use Experience Platform Launch libraries that are deployed to Adobe CDN.
 
    >[!NOTE]
    >
@@ -830,19 +828,19 @@ The AEM configuration consists of the following two major steps:
    ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
 1. Near the upper-right corner, click **[!UICONTROL Next]**.
-1. On the **[!UICONTROL Production]** page (3/3 pages) of the **[!UICONTROL Create Adobe Launch Configuration]** window, if needed, fix the auto-populated production URI similar to how it was done on the previous **[!UICONTROL Staging]** page.
+1. On the **[!UICONTROL Production]** page (3/3 pages) of the **[!UICONTROL Create Experience Platform Launch Configuration]** window, if needed, fix the auto-populated production URI similar to how it was done on the previous **[!UICONTROL Staging]** page.
 1. Near the upper-right corner, click **[!UICONTROL Create]**.
 
-   Your new Adobe Launch Cloud Configuration is now created and listed next to your web site similar to the following example:
+   Your new Experience Platform Launch Cloud Configuration is now created and listed next to your web site similar to the following example:
 
-1. Select your new Adobe Launch Cloud Configuration (a check mark appears to the left of the configuration title when it is selected). On the toolbar, click **[!UICONTROL Publish]**.
+1. Select your new Experience Platform Launch Cloud Configuration (a check mark appears to the left of the configuration title when it is selected). On the toolbar, click **[!UICONTROL Publish]**.
 
    ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
 
-Currently, AEM author does not support the integration of Dynamic Media Viewers with Adobe Launch.
+Currently, AEM author does not support the integration of Dynamic Media Viewers with Experience Platform Launch.
 
-It is, however, supported in the AEM publish node. Using the default settings of Adobe Launch Cloud Configuration, AEM publish uses the production environment of Adobe Launch. As such, it is necessary to push Adobe Launch library updates from Development up to the Production environment each time during the test.
+It is, however, supported in the AEM publish node. Using the default settings of Experience Platform Launch Cloud Configuration, AEM publish uses the production environment of Experience Platform Launch. As such, it is necessary to push Experience Platform Launch library updates from Development up to the Production environment each time during the test.
 
-It is possible to work-around this limitation by specifying Development or Staging URL of Adobe Launch library in the Adobe Launch Cloud configuration for AEM publish above. Doing this makes the AEM publish node use the Development or Staging version of Adobe Launch library.
+It is possible to work-around this limitation by specifying Development or Staging URL of Experience Platform Launch library in the Experience Platform Launch Cloud configuration for AEM publish above. Doing this makes the AEM publish node use the Development or Staging version of Experience Platform Launch library.
 
-See [Integrate AEM with Adobe Launch Via [!DNL Adobe I/O]](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) for more information about setting up Adobe Launch Cloud Configuration.
+See [Integrate AEM with Experience Platform Launch Via [!DNL Adobe I/O]](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) for more information about setting up Experience Platform Launch Cloud Configuration.
