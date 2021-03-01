@@ -13,9 +13,9 @@ Multi Site Manager (MSM) functionality in [!DNL Adobe Experience Manager] enable
 * Keep multiple copies in synchronization and update the original primary copy once to push the changes to the child copies.
 * Make local changes by temporarily or permanently suspending the linking between parent and child assets.
 
-## Prerequisites {#configprereq}
+## Prerequisites {#prereq}
 
-To use MSM for [!DNL Assets], install at least Service Pack 1. For more information, see [the release notes](/help/release-notes/sp-release-notes.md).
+To use MSM for [!DNL Assets], install at least [!DNL Experience Manager] 6.5 Service Pack 1. For more information, see [the release notes of latest service pack](/help/release-notes/sp-release-notes.md).
 
 ## Understand the benefits and the concepts {#concepts}
 
@@ -99,7 +99,7 @@ The following two methods work for assets and folders:
 
 >[!TIP]
 >
->To check the status of a few separate live copies, use the first method that is see the Properties page. To check statuses of many live copies, use the second method, that is, see the **[!UICONTROL Relationship Status]** page.
+>To check the status of a few separate live copies, use the first method to check the [!UICONTROL Properties] page. To check statuses of many live copies, use the second method to check the **[!UICONTROL Relationship Status]** page.
 
 ### Information and status of a live copy {#statuslcasset}
 
@@ -116,7 +116,7 @@ To check the information and statuses of a live copy asset or a folder, follow t
 
 1. You can choose the option for the live copy to either inherit the rollout configuration from the parent or change the configuration.
 
-### Information and statuses of all live copies of a folder {#statuslcfolder}
+### Information and statuses of all live copies of a folder {#status-lc-folder}
 
 [!DNL Experience Manager] provides a console to check the statues of all the live copies of a source folder. This console displays the status of all child assets.
 
@@ -135,7 +135,7 @@ To check the information and statuses of a live copy asset or a folder, follow t
 
 >[!TIP]
 >
->You can quickly see the statuses of live copies of other folders without having to browse too much. Just change the folder in the pop-up list in the upper middle part of the **[!UICONTROL Live Copy Overview]** interface.
+>You can quickly see the statuses of live copies of other folders without having to browse too much. Change the folder from the upper middle part of the **[!UICONTROL Live Copy Overview]** interface.
 
 ### Quick actions from References rail for source {#refrailsource}
 
@@ -155,11 +155,11 @@ Select the source asset or folder, open the left rail, and click **[!UICONTROL R
 
 For a specific live copy, click **[!UICONTROL Edit Live Copy]** to suspend relationship or change rollout configuration.
 
-![For a specific live copy the option to suspend relationship or change rollout configuration is accessible from References rail when source asset is selected](assets/referencerail_editlc_options.png)
+![For a specific live copy, the option to suspend relationship or change rollout configuration is accessible from References rail when source asset is selected](assets/referencerail_editlc_options.png)
 
 *Figure: Suspend relationship or change rollout configuration of a specific live copy.*
 
-### Quick actions from References rail for live copy {#refraillc}
+### Quick actions from References rail for live copy {#ref-rail-lc}
 
 For a live copy asset or folder, you can see the following information and take the following actions directly from the References rail:
 
@@ -193,27 +193,27 @@ You can initiate a rollout action from the source asset and update all or a few 
 >
 >Modifications made in a source asset are rolled out only to the directly related live copies. If a live copy is derived from another live copy, the modifications are not rolled out to the derived live copy.
 
-Alternatively, you can initiate a rollout action from the References rail after selecting a specific live copy. For more information, see [Quick actions from References rail for live copy](#refraillc). In this method of rollout, only the selected live copy and optionally its children are updated.
+Alternatively, you can initiate a rollout action from the References rail after selecting a specific live copy. For more information, see [Quick actions from References rail for live copy](#ref-rail-lc). In this method of rollout, only the selected live copy and optionally its children are updated.
 
 ![Roll out the modifications of source to the selected live copy](assets/livecopy_rollout_dialog.png)
 
 *Figure: Roll out the modifications of source to the selected live copy.*
 
-### About synchronize action {#aboutsync}
+### About synchronize action {#about-sync}
 
 A synchronize action pulls the modifications from a source only to the selected live copy. Sync action respects and maintains the local modifications done after canceling inheritance. The local modifications are not overwritten and the canceled inheritance is not re-established. You can initiate a sync action in three ways.
 
 | Where in [!DNL Experience Manager] interface | When and why to use | How to use |
 |---|---|---|
 | [!UICONTROL References] rail | Quickly synchronize when you already have the source selected. | See [Quick actions from References rail for source](#refrailsource) |
-| Toolbar in the [!UICONTROL Properties] page | Initiate a sync when you already have the live copy properties open. | See [Synchronize a live copy](#synclc) |
-| [!UICONTROL Live Copy Overview] console|Quickly synchronize multiple assets (not necessarily all) when source folder is selected or [!UICONTROL Live Copy Overview] console is already open. Sync action is initiated for one asset at a time but is a faster way to do sync for multiple assets in one go. | See [Actions on many assets in a live copy folder](#bulkactions) |
+| Toolbar in the [!UICONTROL Properties] page | Initiate a sync when you already have the live copy properties open. | See [Synchronize a live copy](#sync-lc) |
+| [!UICONTROL Live Copy Overview] console|Quickly synchronize multiple assets (not necessarily all) when source folder is selected or [!UICONTROL Live Copy Overview] console is already open. Sync action is initiated for one asset at a time but is a faster way to do sync for multiple assets in one go. | See [Actions on many assets in a live copy folder](#bulk-actions) |
 
-### Synchronize a live copy {#synclc}
+### Synchronize a live copy {#sync-lc}
 
 To start a sync action, open **[!UICONTROL Properties]** page of a live copy, click **[!UICONTROL Live Copy]** and click the desired action from the toolbar.
 
-To see the statuses and information related to a synchronize action, see [Information and status of a live copy](#statuslcasset) and [Information and statuses of all live copies of a folder](#statuslcfolder).
+To see the statuses and information related to a synchronize action, see [Information and status of a live copy](#statuslcasset) and [Information and statuses of all live copies of a folder](#status-lc-folder).
 
 ![Synchronize action pulls the changes made to the source](assets/livecopy_sync.png)
 
@@ -223,15 +223,15 @@ To see the statuses and information related to a synchronize action, see [Inform
 >
 >If the relationship is suspended, the synchronize action is not available in the toolbar. While synchronize action is available in the References rail, the modifications are not propagated even upon a successful rollout.
 
-## Suspend and resume relationship {#suspendresume}
+## Suspend and resume relationship {#suspend-resume}
 
 You can temporarily suspend the relationship to prevent a live copy from receiving modifications made to the source asset or folder. The relationship can also be resumed for live copy to start receiving the modifications from source.
 
 To suspend or resume, open **[!UICONTROL Properties]** page of a live copy, click **[!UICONTROL Live Copy]** and click the desired action from the toolbar.
 
-Alternatively, you can quickly suspend or resume relationships of multiple assets in a live copy folder from the **[!UICONTROL Live Copy Overview]** console. See [Take actions on many assets in live copy folders](#bulkactions).
+Alternatively, you can quickly suspend or resume relationships of multiple assets in a live copy folder from the **[!UICONTROL Live Copy Overview]** console. See [Take actions on many assets in live copy folders](#bulk-actions).
 
-## Make local modifications to a live copy {#localmods}
+## Make local modifications to a live copy {#local-mods}
 
 A live copy is a replica of the original source when it is created. The metadata values of a live copy are inherited from the source. The metadata fields individually maintain inheritance with the respective fields of the source asset.
 
@@ -259,9 +259,9 @@ You can completely remove the relationship between a source and a live copy usin
    >
    >The relationship is removed immediately when you click **[!UICONTROL Detach]** from the dialog. You cannot undo it by clicking **[!UICONTROL Cancel]** on the Properties page.
 
-Alternatively, you can quickly detach multiple assets in a live copy folder from the **[!UICONTROL Live Copy Overview]** console. See [Take actions on many assets in live copy folders](#bulkactions).
+Alternatively, you can quickly detach multiple assets in a live copy folder from the **[!UICONTROL Live Copy Overview]** console. See [Take actions on many assets in live copy folders](#bulk-actions).
 
-## Take actions on many assets in a live copy folder {#bulkactions}
+## Bulk actions in a live copy folder {#bulk-actions}
 
 If you have multiple assets in a live copy folder, initiating actions on each asset can be tedious. You can quickly initiate the basic actions on many assets from [!UICONTROL Live Copy Console]. The above methods continue to work for individual assets.
 
@@ -273,13 +273,13 @@ If you have multiple assets in a live copy folder, initiating actions on each as
 
    *Figure: Easily update many assets in live copy folders from the [!UICONTROL Live Copy Overview] console.*
 
-## Extend MSM for [!DNL Assets] {#extendapi}
+## Extend MSM for [!DNL Assets] {#extend-api}
 
 [!DNL Experience Manager] allows you to extend the functionality using the MSM Java APIs. For [!DNL Assets], the extending works just the same as it works with MSM for [!DNL Sites]. For details, see [Extending the MSM](/help/sites-developing/extending-msm.md) and the following for information about specific tasks:
 
 * [Overview of APIs](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
-* [Create a new synchronization action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
-* [Create a new rollout configuration](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
+* [Create a synchronization action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
+* [Create a rollout configuration](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
 * [Create and use a simple LiveActionFactory class](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
 
 >[!NOTE]
@@ -288,7 +288,7 @@ If you have multiple assets in a live copy folder, initiating actions on each as
 >* Removing the chapters step in the create site wizard is not supported in MSM for [!DNL Assets].
 >* Configuring MSM locks, on the page properties (Touch-enabled UI), is not supported in MSM for [!DNL Assets].
 
-## Impact of asset management tasks on live copies {#manageassets}
+## Impact of asset management tasks on live copies {#manage-assets}
 
 Live copies and sources are assets or folders that can be managed, to a certain extent, as digital assets. Some asset management tasks in [!DNL Experience Manager] have a specific impact on the live copies.
 
@@ -297,7 +297,7 @@ Live copies and sources are assets or folders that can be managed, to a certain 
 * Edit action does not work for live copy assets. If the source of a live copy is a live copy in itself, then edit action does not work for it.
 * Check-out action is not available for live copy assets.
 * For source folder, the option to create review tasks is available.
-* When viewing the asset listing in list view and column view, a live copy asset or folder displays 'live copy' against it. This helps you easily identify live copies in a folder.
+* When viewing the asset listing in list view and column view, a live copy asset or folder displays 'live copy' against it. It helps you easily identify live copies in a folder.
 
 ## Compare MSM for [!DNL Assets] and [!DNL Sites] {#comparison}
 
@@ -311,7 +311,7 @@ In more scenarios, MSM for [!DNL Assets] matches the behavior of MSM for Sites f
 * Configuring MSM locks on page properties (Touch-enabled UI) is not supported in MSM for [!DNL Assets].
 * For MSM for [!DNL Assets], use only the **[!UICONTROL Standard rollout config]**. The other rollout configurations are not available for MSM for [!DNL Assets].
 
-## Best practices {#bestpractices}
+## Best practices {#best-practices}
 
 Some best practices for MSM are:
 
@@ -321,4 +321,6 @@ Some best practices for MSM are:
 
 Following is a limitation of MSM for [!DNL Assets].
 
-* Content Fragments (CFs) are not supported for the use case. When attempting to create their live copies, CFs are copied over as is without any relationship. The copied CFs are a snapshot in time and does not update when original CFs are updated.
+* Content Fragments (CFs) are not supported for the use case. When attempting to create their live copies, CFs are copied over as is without any relationship. The copied CFs are a snapshot in time and do not update when the original CFs are updated.
+
+* MSM does not work with metadata writeback enabled. Upon writeback, the inheritance breaks.
