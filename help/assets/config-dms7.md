@@ -26,13 +26,12 @@ With the new architecture, Experience Manager is responsible for primary source 
 
 >[!NOTE]
 >
->The following list of features require that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom CDN is not supported with these features.
+>The following list of features requires that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom CDN is not supported with these features.
 >
 >* [Smart Imaging](/help/assets/imaging-faq.md)
 >* [Cache invalidation](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 >* [Hotlink protection](/help/assets/hotlink-protection.md)
 >* [HTTP/2 delivery of content](/help/assets/http2.md)
->* [Integrating Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch](/help/assets/launch.md)
 >* URL redirect at the CDN level
 >* Akamai ChinaCDN (for optimal delivery in China)
 
