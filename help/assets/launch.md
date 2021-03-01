@@ -19,7 +19,7 @@ This integration means that you can track usage of Dynamic Media Viewers on your
 
 To learn more about extensions, see [Adobe Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension) in the Experience Platform Launch User Guide.
 
-**Who this documentation in intended for:** Site administrators, Developers on the Experience Manager Platform, and people in Operations.
+**This topic is intended for the following:** Site administrators, Developers on the Experience Manager Platform, and people in Operations.
 
 ### Limitations of the integration {#limitations-of-the-integration}
 
@@ -399,7 +399,7 @@ The following table lists Dynamic Media Viewer events and their supported argume
 
 **BEFORE YOU BEGIN**
 
-If you have not already done so, Adobe recommends that you thoroughly review all documentation before this section so you understand the complete integration.
+Adobe recommends that you thoroughly review all documentation before this section so you understand the complete integration.
 
 This section explains the configuration steps that are necessary to integrate Dynamic Media viewers with Adobe Analytics and Adobe Analytics for Audio and Video. While use of the Dynamic Media Viewers extension for other purposes in Experience Platform Launch is possible, such scenarios are not covered in this documentation.
 
@@ -462,7 +462,7 @@ See also [Analytics Implementation Guide](https://experienceleague.adobe.com/doc
    To enable a new Custom Traffic variable, in Adobe Analytics, in the toolbar, click **[!UICONTROL Admin > Report Suites]**.
 
 1. On the **[!UICONTROL Report Suite Manager]** page, select the correct report, then in the toolbar, click **[!UICONTROL Edit Settings > Traffic > Traffic Variables]**.
-1. There, pick up an unused variable, give it a descriptive name ( **[!UICONTROL Viewer asset (prop 30)]**) and change combo box to "Enabled" in the Enabled column.
+1. There, pick an unused variable, give it a descriptive name ( **[!UICONTROL Viewer asset (prop 30)]**) and change combo box to "Enabled" in the Enabled column.
 
    The following screenshot is an example of a Custom Traffic variable ( **[!UICONTROL prop30]**) for tracking an asset name used by the viewer:
 
@@ -591,7 +591,7 @@ See [Environments](https://experienceleague.adobe.com/docs/launch/using/referenc
 Publishing a library involves the following two steps:
 
 * Adding and building a new library by including all the necessary changes (new ones and updates) into the library.
-* Moving up the library through the different environment levels (from Development to Staging and Production)
+* Moving up the library through the different environment levels (from Development to Staging and Production).
 
 #### Adding and building a new library {#adding-and-building-a-new-library}
 
@@ -611,7 +611,7 @@ Publishing a library involves the following two steps:
 
 1. Near the upper-right corner of the page, click **[!UICONTROL Save & Build for Development]**.
 
-   In few minutes, the library is created and ready to use.
+   In a few minutes, the library is created and ready to use.
 
    ![image2019-7-15_15-3-34](assets/image2019-7-15_15-3-34.png)
 
@@ -671,7 +671,7 @@ The AEM configuration consists of the following two major steps:
 
    The following Info message is displayed:
 
-   *To retrieve a valid access token, the new certificate's public key is added to the technical account on Adobe I/O!*.
+   *To retrieve a valid access token, the new certificate's public key is added to the technical account on Adobe I/O!*
 
    To dismiss the Info dialog box, click **[!UICONTROL OK]**.
 
@@ -727,7 +727,7 @@ The AEM configuration consists of the following two major steps:
 
 1. Return to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page that you left open previously. In the upper-right corner of the page, click **[!UICONTROL Next]** to open the **[!UICONTROL Account]** page in the **[!UICONTROL Adobe IMS Technical Account Configuration]** window.
 
-   (If you accidentally closed the page earlier, return to Experience Manager author, then click **[!UICONTROL Tools > Security > Adobe IMS Configurations]**. Click **[!UICONTROL Create]**. In the **[!UICONTROL Cloud Solution]** drop-down list, select **[!UICONTROL Experience Platform Launch]**. In the **[!UICONTROL Certificate]** drop-down list, select the name of the previously created certificate.)
+   (If you closed the page earlier, return to Experience Manager author, then click **[!UICONTROL Tools > Security > Adobe IMS Configurations]**. Click **[!UICONTROL Create]**. In the **[!UICONTROL Cloud Solution]** drop-down list, select **[!UICONTROL Experience Platform Launch]**. In the **[!UICONTROL Certificate]** drop-down list, select the name of the previously created certificate.)
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
 
