@@ -1,8 +1,8 @@
 ---
 title: Managing Users
 seo-title: Managing Users
-description: null
-seo-description: null
+description: Use the User Management API to create client applications that can manage roles, permissions, and principals (which can be users or groups), as well as authenticate users.
+seo-description: Use the User Management API to create client applications that can manage roles, permissions, and principals (which can be users or groups), as well as authenticate users.
 uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,9 @@ topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 ---
 
-# Managing Users {#managing-users}
+# Managing Users {#managing-users} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 **About User Management**
 

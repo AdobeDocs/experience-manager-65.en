@@ -1,8 +1,8 @@
 ---
 title: Programmatically managing the PreferencesNodes
 seo-title: Programmatically managing the PreferencesNodes
-description: null
-seo-description: null
+description: Use the Preferences Manager Service API (Java) to programmatically manage the Preferences Nodes.
+seo-description: Use the Preferences Manager Service API (Java) to programmatically manage the Preferences Nodes.
 uuid: f0cb117a-a6cc-4ca5-8511-b3bc9f6738e9
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,9 @@ topic-tags: operations
 discoiquuid: 9d4dba7f-49d8-4112-bc8a-04dafc99a936
 ---
 
-# Programmatically managing the Preferences Nodes {#programmatically-managing-the-preferencesnodes}
+# Programmatically managing the Preferences Nodes {#programmatically-managing-the-preferencesnodes} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 This topic describes how you can use the Preferences Manager Service API (Java) to programmatically manage the Preferences Nodes.
 

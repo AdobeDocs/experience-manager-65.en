@@ -1,8 +1,8 @@
 ---
 title: Rendering Forms as HTML
 seo-title: Rendering Forms as HTML
-description: null
-seo-description: null
+description: Use the Forms service to render forms as HTML in response to an HTTP request from a web browser. You can use the Java API and Web Service API to render forms as HTML.
+seo-description: Use the Forms service to render forms as HTML in response to an HTTP request from a web browser. You can use the Java API and Web Service API to render forms as HTML.
 uuid: bd8edb6f-333b-4ceb-9877-618f5377f56f
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 ---
 
-# Rendering Forms as HTML {#rendering-forms-as-html}
+# Rendering Forms as HTML {#rendering-forms-as-html} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 The Forms service renders forms as HTML in response to an HTTP request from a web browser. A benefit of rendering a form as HTML is that the computer on which the client web browser is located does not require Adobe Reader, Acrobat, or Flash Player (for form Guides (deprecated)).
 

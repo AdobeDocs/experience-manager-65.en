@@ -1,8 +1,8 @@
 ---
 title: Validating DDX Documents
 seo-title: Validating DDX Documents
-description: null
-seo-description: null
+description: Validate a DDX document programmatically using the Java API and the Web Service API.
+seo-description: Validate a DDX document programmatically using the Java API and the Web Service API.
 uuid: da668170-d2e9-4fff-aef5-432a856bd0bd
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 ---
 
-# Validating DDX Documents {#validating-ddx-documents}
+# Validating DDX Documents {#validating-ddx-documents} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 You can programmatically validate a DDX document that is used by the Assembler service. That is, using the Assembler service API, you can determine whether or not a DDX document is valid. For example, if you upgraded from a previous AEM Forms version and you want to ensure that your DDX document is valid, you can validate it using the Assembler service API.
 

@@ -1,8 +1,8 @@
 ---
 title: Digitally Signing and Certifying Documents
 seo-title: Digitally Signing and Certifying Documents
-description: null
-seo-description: null
+description: Use the Signature service to add and delete digital signature fields to a PDF document, retrieve the names of signature fields located in a PDF document, modify signature fields, digitally sign PDF documents, certify PDF documents, validate digital signatures located in a PDF document, validate all digital signatures located in a PDF document, and remove a digital signature from a signature field.
+seo-description: Use the Signature service to add and delete digital signature fields to a PDF document, retrieve the names of signature fields located in a PDF document, modify signature fields, digitally sign PDF documents, certify PDF documents, validate digital signatures located in a PDF document, validate all digital signatures located in a PDF document, and remove a digital signature from a signature field.
 uuid: 6331de8a-2a9c-45bf-89d2-29f1ad5cc856
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,9 @@ topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 ---
 
-# Digitally Signing and Certifying Documents {#digitally-signing-and-certifying-documents}
+# Digitally Signing and Certifying Documents {#digitally-signing-and-certifying-documents} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 **About the Signature Service**
 

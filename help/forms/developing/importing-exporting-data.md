@@ -1,8 +1,8 @@
 ---
 title: Importing and Exporting Data
 seo-title: Importing and Exporting Data
-description: null
-seo-description: null
+description: Use the Form Data Integration service to import data into a PDF form and export data from a PDF form using the Java API and Web Service API.
+seo-description: Use the Form Data Integration service to import data into a PDF form and export data from a PDF form using the Java API and Web Service API.
 uuid: 94ccb6f2-6e5f-43ea-a954-9a4402871a17
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,9 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 ---
 
-# Importing and Exporting Data {#importing-and-exporting-data}
+# Importing and Exporting Data {#importing-and-exporting-data} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 ## About the Form Data Integration Service {#about-the-form-data-integration-service}
 

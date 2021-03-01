@@ -1,8 +1,8 @@
 ---
 title: Invoking AEM Forms using Web Services
 seo-title: Invoking AEM Forms using Web Services
-description: null
-seo-description: null
+description: Invoke AEM Forms processes using web services with full support for WSDL generation.
+seo-description:  Invoke AEM Forms processes using web services with full support for WSDL generation.
 uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,9 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 ---
 
-# Invoking AEM Forms using Web Services {#invoking-aem-forms-using-web-services}
+# Invoking AEM Forms using Web Services {#invoking-aem-forms-using-web-services} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 Most AEM Forms services in the service container are configured to expose a web service, with full support for web service definition language (WSDL) generation. That is, you can create proxy objects that consume the native SOAP stack of an AEM Forms service. As a result, AEM Forms services can exchange and process the following SOAP messages:
 

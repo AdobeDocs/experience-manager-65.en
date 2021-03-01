@@ -1,8 +1,8 @@
 ---
 title: Repository Service API Quick Starts
 seo-title: Repository Service API Quick Starts
-description: null
-seo-description: null
+description: Use the AEM Forms Repository service to create a folder, write  a resource, list resources, reading a resource, update a resource, search for resources, create relationships between resources, locking a resource, managing access control lists, and delete a resource.
+seo-description: Use the AEM Forms Repository service to create a folder, write  a resource, list resources, reading a resource, update a resource, search for resources, create relationships between resources, locking a resource, managing access control lists, and delete a resource.
 uuid: 9c307e6e-d9a4-4021-8493-9f28a745dedb
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,9 @@ topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 ---
 
-# Repository Service API Quick Starts {#repository-service-api-quick-starts}
+# Repository Service API Quick Starts {#repository-service-api-quick-starts} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 The following Quick Starts are available for the AEM Forms Repository service.
 

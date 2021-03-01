@@ -1,8 +1,8 @@
 ---
 title: Rendering Forms Based on Fragments
 seo-title: Rendering Forms Based on Fragments
-description: null
-seo-description: null
+description: Use the Forms service to render forms that are based on fragments created using Designer.
+seo-description: Use the Forms service to render forms that are based on fragments created using Designer.
 uuid: 9c9a730d-f970-41f8-afed-4e6b6d3d393d
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 ---
 
-# Rendering Forms Based on Fragments {#rendering-forms-based-on-fragments}
+# Rendering Forms Based on Fragments {#rendering-forms-based-on-fragments} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 ## Rendering Forms Based on Fragments {#rendering-forms-based-on-fragments-inner}
 

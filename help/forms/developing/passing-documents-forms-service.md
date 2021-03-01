@@ -1,8 +1,8 @@
 ---
 title: Passing Documents to the FormsService
 seo-title: Passing Documents to the FormsService
-description: null
-seo-description: null
+description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design located in the com.adobe.idp.Document object. 
+seo-description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design located in the com.adobe.idp.Document object.
 uuid: 841e97f3-ebb8-4340-81a9-b6db11f0ec82
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 ---
 
-# Passing Documents to the Forms Service {#passing-documents-to-the-formsservice}
+# Passing Documents to the Forms Service {#passing-documents-to-the-formsservice} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 The AEM Forms service renders interactive PDF forms to client devices, typically web browsers, to collect information from users. An interactive PDF form is based on a form design that is typically saved as an XDP file and created in Designer. As of AEM Forms, you can pass a `com.adobe.idp.Document` object that contains the form design to the Forms service. The Forms service then renders the form design located in the `com.adobe.idp.Document` object.
 

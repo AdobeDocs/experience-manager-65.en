@@ -1,8 +1,8 @@
 ---
 title: Programmatically Managing Endpoints
 seo-title: Programmatically Managing Endpoints
-description: null
-seo-description: null
+description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
+seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
 uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,9 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 ---
 
-# Programmatically Managing Endpoints {#programmatically-managing-endpoints}
+# Programmatically Managing Endpoints {#programmatically-managing-endpoints} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 **About Endpoint Registry Service**
 

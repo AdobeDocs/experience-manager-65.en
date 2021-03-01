@@ -1,8 +1,8 @@
 ---
 title: Invoking AEM Forms using REST Requests
 seo-title: Invoking AEM Forms using REST Requests
-description: null
-seo-description: null
+description: Invoke processes created in Workbench using REST requests.
+seo-description: Invoke processes created in Workbench using REST requests.
 uuid: 3a19a296-f3fe-4e50-9143-b68aed37f9ef
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,9 @@ topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 ---
 
-# Invoking AEM Forms using REST Requests {#invoking-aem-forms-using-rest-requests}
+# Invoking AEM Forms using REST Requests {#invoking-aem-forms-using-rest-requests} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 Processes created in Workbench can be configured so that you can invoke them through Representational State Transfer (REST) requests. REST requests are sent from HTML pages. That is, you can invoke a Forms process directly from a web page using a REST request. For example, you can open a new instance of a web page. Then you can invoke a Forms process and load a rendered PDF document with data that was sent in an HTTP POST request.
 

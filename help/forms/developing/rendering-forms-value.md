@@ -1,8 +1,8 @@
 ---
 title: Rendering Forms By Value
 seo-title: Rendering Forms By Value
-description: null
-seo-description: null
+description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
+seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
 uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 ---
 
-# Rendering Forms By Value {#rendering-forms-by-value}
+# Rendering Forms By Value {#rendering-forms-by-value} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 Typically, a form design that is created in Designer is passed by reference to the Forms service. Form designs can be large and, as a result, it is more efficient to pass them by reference to avoid having to marshal form design bytes by value. The Forms service can also cache the form design so that when cached, it does not have to continually read the form design.
 

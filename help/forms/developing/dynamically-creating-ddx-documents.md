@@ -1,8 +1,8 @@
 ---
 title: Dynamically Creating DDX Documents
 seo-title: Dynamically Creating DDX Documents
-description: null
-seo-description: null
+description: Create a DDX document dynamically using the Java API and Web Service API. Dynamically creating a DDX document enables you to use values in the DDX document that are obtained during run-time.
+seo-description: Create a DDX document dynamically using the Java API and Web Service API. Dynamically creating a DDX document enables you to use values in the DDX document that are obtained during run-time.
 uuid: b73e8069-6c9f-4517-a0ae-f3d503191d2d
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 ---
 
-# Dynamically Creating DDX Documents {#dynamically-creating-ddx-documents}
+# Dynamically Creating DDX Documents {#dynamically-creating-ddx-documents} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 You can dynamically create a DDX document that can be used to perform an Assembler operation. Dynamically creating a DDX document enables you to use values in the DDX document that are obtained during run-time. To dynamically create a DDX document, use classes that belong to the programming language that you are using. For example, if you are developing your client application using Java, use classes that belong to the `org.w3c.dom.*`package. Likewise, if you are using Microsoft .NET, use classes that belong to the `System.Xml` namespace.
 

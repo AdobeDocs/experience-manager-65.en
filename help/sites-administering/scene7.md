@@ -1,19 +1,15 @@
 ---
-title: Integrating with Dynamic Media Classic (Scene7)
-seo-title: Integrating with Dynamic Media Classic (Scene7)
-description: Learn how to integrate AEM with Dynamic Media Classic.
-seo-description: Learn how to integrate AEM with Dynamic Media Classic.
-uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
+title: Integrating with Dynamic Media Classic
+description: Learn how to integrate Adobe Experience Manager with Dynamic Media Classic.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 ---
 
-# Integrating with Dynamic Media Classic (Scene7){#integrating-with-dynamic-media-classic-scene}
+# Integrating with Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
-[Adobe Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) is a hosted solution for managing, enhancing, publishing, and delivering rich media assets to Web, mobile, email, and Internet-connected displays and print.
+Adobe Dynamic Media Classic is a hosted solution for managing, enhancing, publishing, and delivering rich media assets to Web, mobile, email, and Internet-connected displays and print.
 
 To use Dynamic Media Classic, you need to configure the cloud configuration so that Dynamic Media Classic and AEM Assets can interact with one another. This document describes how to configure AEM and Dynamic Media Classic.
 
@@ -350,7 +346,7 @@ To enable it:
 
 ### Adding configurable timeout to Dynamic Media Classic Upload workflow {#adding-configurable-timeout-to-scene-upload-workflow}
 
-When an AEM instance is configured to handle video encoding through Dynamic Media Classic (Scene7), by default, there is a 35-minute timeout on any upload job. To accommodate potentailly longer-running video encoding jobs, you can configure this setting:
+When an AEM instance is configured to handle video encoding through Dynamic Media Classic, by default, there is a 35-minute timeout on any upload job. To accommodate potentailly longer-running video encoding jobs, you can configure this setting:
 
 1. Navigate to **http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl**.
 
@@ -557,7 +553,7 @@ Specifically, you configure the accepted file format by MIME type in the OSGi (O
 
    For example, `psprocess="rasterize"&psresolution=120` .
 
-   See the [Adobe Dynamic Media Classic Image Production System API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/c-overview.html) for additional upload job parameters you can use.
+   See the [Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) for additional upload job parameters you can use.
 
    >[!NOTE]
    >

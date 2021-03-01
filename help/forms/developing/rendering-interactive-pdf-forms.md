@@ -1,8 +1,8 @@
 ---
 title: Rendering Interactive PDF Forms
 seo-title: Rendering Interactive PDF Forms
-description: null
-seo-description: null
+description: Use the Forms service to render interactive PDF forms to client devices, typically web browsers, to collect information from users. You can use Forms service to render interactive forms using the Java API and Web Service API.
+seo-description: Use the Forms service to render interactive PDF forms to client devices, typically web browsers, to collect information from users. You can use Forms service to render interactive forms using the Java API and Web Service API.
 uuid: df2a4dc8-f19e-49de-850f-85a204102631
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 ---
 
-# Rendering Interactive PDF Forms {#rendering-interactive-pdf-forms}
+# Rendering Interactive PDF Forms {#rendering-interactive-pdf-forms} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 The Forms service renders interactive PDF forms to client devices, typically web browsers, to collect information from users. After an interactive form is rendered, a user can enter data into form fields and click a submit button located on the form to send information back to the Forms service. Adobe Reader or Acrobat must be installed on the computer hosting the client web browser in order for an interactive PDF form to be visible.
 

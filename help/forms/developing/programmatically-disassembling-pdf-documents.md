@@ -1,8 +1,8 @@
 ---
 title: Programmatically Disassembling PDF Documents
 seo-title: Programmatically Disassembling PDF Documents
-description: null
-seo-description: null
+description: Use the Assembler service to disassemble a single PDF document into multiple PDF documents using the Java API and the Web Service API.
+seo-description: Use the Assembler service to disassemble a single PDF document into multiple PDF documents using the Java API and the Web Service API.
 uuid: d71cc044-e948-4b7a-b598-b041723b69e9
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
@@ -11,7 +11,9 @@ topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
 ---
 
-# Programmatically Disassembling PDF Documents {#programmatically-disassembling-pdf-documents}
+# Programmatically Disassembling PDF Documents {#programmatically-disassembling-pdf-documents} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 You can disassemble a PDF document by passing it to the Assembler service. Typically, this task is useful when the PDF document was originally created from many individual documents, such as a collection of statements. In the following illustration, DocA is divided into multiple resultant documents, where the first level 1 bookmark on a page identifies the start of a new resultant document.
 

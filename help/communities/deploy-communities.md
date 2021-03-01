@@ -13,7 +13,7 @@ docset: aem65
 
 ---
 
-# Deploying Communities{#deploying-communities}
+# Deploying Communities {#deploying-communities}
 
 ## Prerequisites {#prerequisites}
 
@@ -293,7 +293,7 @@ To enable the tunnel service:
 
 There are two features of AEM Communities that require all AEM server instances to use the same encryption keys. These are [Analytics](/help/communities/analytics.md) and [ASRP](/help/communities/asrp.md).
 
-As of AEM 6.3, the key material is stored in the file system and no longer in the repository.
+From AEM 6.3 onwards, the key material is stored in the file system and no longer in the repository.
 
 In order to copy the key material from author to all other instances, it is necessary to :
 

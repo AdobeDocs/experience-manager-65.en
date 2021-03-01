@@ -24,23 +24,23 @@ mini-toc-levels: 1
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.7.0 includes:
 
-* Sorting the Live Copy pages available for rollout using the [!UICONTROL Name], [!UICONTROL Last modified date,] and [!UICONTROL Last rollout date] properties.
-
 * Performing the page moves and MSM rollouts as asynchronous operations to reduce their impact on runtime performance.
 
 * Users can sort digital assets in Card and Column views.
 
 * [!DNL Assets] and [!DNL Dynamic Media] provide multiple accessibility enhancements. The enhancements are related to keyboard navigation, use of screen readers, and enabling users to use similar assistive technology (AT). See [[!DNL Assets] enhancements](#assets-6570) and [[!DNL Dynamic Media] enhancements](#dynamic-media-6570).
 
-* Form data model HTTP client configuration to optimize performance.
+* [Form data model HTTP client configuration](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration) to optimize performance.
 
-* Availability of Reset Option for each component in the Layout mode
+* [Availability of Reset Option for each component](../../help/forms/using/resize-using-layout-mode.md#resize-components) in the Layout mode
 
 * [!DNL Experience Manager] 6.5 Service Pack 7 Forms improves the performance for:
 
   * Validating the field values on the server when you submit an adaptive form.
 
   * Converting a PDF form to an adaptive form using the [!DNL Automated Forms Conversion service].
+
+* Support for Microsoft SQL Server 2019 in [!DNL Experience Manager Forms].
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.22.5.
 
@@ -345,8 +345,6 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0
 
 * When you save a new document security policy, Experience Manager Forms displays the `Relative validity period is required` error message (NPR-34679).
 
-* When you save a new document security policy, Experience Manager Forms displays the `Invalid filed value.Numeric value is required` error message (NPR-34678).
-
 * Document Security is not able to protect PDF 2.0 document (CQ-4305851).
 
 For information on security updates, see [Experience Manager security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
@@ -419,6 +417,10 @@ To know the platforms certified to work with this release, see the [technical re
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
+>[!NOTE]
+>
+>AEM 6.5.7.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to AEM 6.5.7.0, install the latest version of the package post installation of Forms Add-On Package.
+
 ### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
@@ -454,7 +456,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 | Area | Feature | Replacement |
 |---|---|---|
-| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated. With the AEM and Target integration updated in AEM 6.5 to support the Target Standard API, which uses authentication via Adobe IMS and I/O, and the growing role of Adobe Launch for instrumenting AEM pages for analytics and personalization, the Opt-In wizard has become functionally irrelevant. | Configure system connections, Adobe IMS authentication, and Adobe I/O integrations via the respective AEM cloud services. |
+| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated. With the AEM and Target integration updated in AEM 6.5 to support the Target Standard API, which uses authentication via Adobe IMS and I/O, and the growing role of Adobe Launch for instrumenting AEM pages for analytics and personalization, the Opt-In wizard has become functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O] integrations via the respective AEM cloud services. |
 | Connectors | The Adobe JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013 is deprecated for AEM 6.5. | N/A |
 
 ## Known issues {#known-issues}

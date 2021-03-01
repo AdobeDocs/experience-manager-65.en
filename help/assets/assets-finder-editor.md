@@ -261,7 +261,7 @@ The Metadata Form is a form that includes a start and end action. In between, yo
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Create an End action by clicking **Edit** in the End area of the form. For example, you may want to create a **Submit** button to allow users to submit their metadata changes. Optionally, you can add a **Reset** button that resets the metadata to its original state.
+1. Create an End action by clicking **Edit** in the End area of the form. For example, you may want to create a **[!UICONTROL Submit]** option to allow users to submit their metadata changes. Optionally, you can add a **Reset** option that resets the metadata to its original state.
 
 ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
@@ -374,7 +374,7 @@ The following actions are available:
  | [!UICONTROL References] | Click this to show on what pages   the asset is being used. |
  | [!UICONTROL Versioning] | Lets you create and restore   versions of an asset. |
 
-1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
+1. Drag the appropriate action to the **Actions** area on the page. It creates a option that is used to execute the action that is dragged on the page.
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 

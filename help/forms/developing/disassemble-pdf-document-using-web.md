@@ -1,8 +1,8 @@
 ---
 title: Disassemble a PDF document usingthe web service API
 seo-title: Disassemble a PDF document usingthe web service API
-description: null
-seo-description: null
+description: Disassemble a PDF document using the Assembler Service API
+seo-description: Disassemble a PDF document using the Assembler Service API
 uuid: d6283dc5-e333-49d0-abde-1d390662f4fe
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 49584fb4-8c3a-4d73-acd6-0879a67f6093
 ---
 
-# Disassemble a PDF document using the web service API {#disassemble-a-pdf-document-usingthe-web-service-api}
+# Disassemble a PDF document using the web service API {#disassemble-a-pdf-document-usingthe-web-service-api} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 Disassemble a PDF document by using the Assembler Service API (web service):
 

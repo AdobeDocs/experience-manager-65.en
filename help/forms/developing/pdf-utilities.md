@@ -1,8 +1,8 @@
 ---
 title: Working with PDF Utilities
 seo-title: Working with PDF Utilities
-description: null
-seo-description: null
+description: Use the PDF Utilities service to convert between PDF and XDP file formats, set and retrieve PDF document properties, and manipulate XMP metadata.
+seo-description: Use the PDF Utilities service to convert between PDF and XDP file formats, set and retrieve PDF document properties, and manipulate XMP metadata.
 uuid: a2ea2359-c547-4f1b-b6ca-f276f816e36a
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,9 @@ topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 ---
 
-# Working with PDF Utilities {#working-with-pdf-utilities}
+# Working with PDF Utilities {#working-with-pdf-utilities} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 **About the PDF Utilities Service**
 

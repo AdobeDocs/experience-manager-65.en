@@ -286,7 +286,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td> </td>
-   <td>Scene7 Configuration<br /> </td>
+   <td>Dynamic Media Configuration<br /> </td>
   </tr>
   <tr>
    <td> </td>

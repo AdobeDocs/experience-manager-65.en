@@ -1,8 +1,8 @@
 ---
 title: Creating Web Applications thatRenders Forms
 seo-title: Creating Web Applications thatRenders Forms
-description: null
-seo-description: null
+description: Create a web-based application that uses Java servlets to invoke the Forms service and render forms. The Java servlet serves as the link between the Forms service that returns a form and a client web browser.
+seo-description: Create a web-based application that uses Java servlets to invoke the Forms service and render forms. The Java servlet serves as the link between the Forms service that returns a form and a client web browser.
 uuid: 00de10c5-79bd-4d8a-ae18-32f1fd2623bf
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 ---
 
-# Creating Web Applications that Renders Forms {#creating-web-applications-thatrenders-forms}
+# Creating Web Applications that Renders Forms {#creating-web-applications-thatrenders-forms} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 ## Creating Web Applications that Renders Forms {#creating-web-applications-that-renders-forms}
 

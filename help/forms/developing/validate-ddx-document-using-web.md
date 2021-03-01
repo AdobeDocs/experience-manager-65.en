@@ -1,8 +1,8 @@
 ---
 title: Validate a DDX document using theweb service API
 seo-title: Validate a DDX document using theweb service API
-description: null
-seo-description: null
+description: Use the Assembler Service API to validate a DDX document.
+seo-description: Use the Assembler Service API to validate a DDX document.
 uuid: f6125746-6138-4e46-a1c4-fb24fd7399c5
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a6fe91ab-3aa0-4b3d-87c0-6cf69a2c4cc4
 ---
 
-# Validate a DDX document using the web service API {#validate-a-ddx-document-using-theweb-service-api}
+# Validate a DDX document using the web service API {#validate-a-ddx-document-using-theweb-service-api} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 Validate a DDX document by using the Assembler Service API (web service):
 

@@ -36,7 +36,7 @@ Once you install [AEM Forms add-on package](../../forms/using/installing-configu
     </ul> </td> 
   </tr>
   <tr>
-   <td>forms-power-user</td> 
+   <td>forms-power-users</td> 
    <td>
     <ul> 
      <li>Create, preview, publish, and submit adaptive forms</li> 

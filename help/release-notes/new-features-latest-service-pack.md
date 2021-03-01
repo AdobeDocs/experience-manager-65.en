@@ -15,10 +15,6 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 
 ## Adobe [!DNL Experience Manager Sites] {#aem-sites}
 
-### Sort the Live Copy pages available for rollout {#sort-livecopy-pages}
-
-You can now sort the Live Copy pages available for rollout using the [!UICONTROL Name], [!UICONTROL Last modified date], and [!UICONTROL Last rollout date] properties. The [!UICONTROL Last rollout date] for a page is a new property introduced in this release.
-
 ### Availability of page moves and MSM rollouts as asynchronous operations {#page-moves-msm-asynchronous}
 
 You can now perform the page moves and MSM rollouts as asynchronous operations to reduce their impact on runtime performance. You can schedule the operations for immediate or later execution. The status of associated jobs and process steps is displayed in a console, which is helpful for monitoring large-scale MSM rollouts.
@@ -45,11 +41,15 @@ You can now perform the page moves and MSM rollouts as asynchronous operations t
 
 ### Form data model HTTP client configuration to optimize performance {#fdm-http-client-config}
 
-[!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source now includes HTTP client configurations for performance optimization.
+[!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source now includes HTTP client configurations for performance optimization. See [Configure data sources](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
 
 ### Availability of Reset Option for each component in the Layout mode {#reset-option-layout-mode}
 
-You can now use the reset option for each component in Layout mode of an adaptive form. When you define a multicolumn layout for a panel, you can use this feature to reset individual components within the panel.
+You can now use the reset option for each component in Layout mode of an adaptive form. When you define a multicolumn layout for a panel, you can use this feature to reset individual components within the panel. See [Use layout mode to resize components](../../help/forms/using/resize-using-layout-mode.md#resize-components).
+
+### Support for Microsoft SQL Server 2019
+
+[!DNL Experience Manager Forms] now supports Microsoft SQL Server 2019.
 
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
@@ -161,7 +161,7 @@ Support for 3D images in [!DNL Dynamic Media] enables customers to publish and a
 
 #### Configure [!DNL Experience Manager Assets] with [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
-The authorization channel between [!DNL Experience Manager Assets] and [!DNL Brand Portal] is changed. Earlier, [!DNL Brand Portal] was configured in Classic UI via Legacy OAuth Gateway, which uses the JWT token exchange to obtain an IMS Access token for authorization. [!DNL Experience Manager Assets] is now configured with [!DNL Brand Portal] through Adobe I/O, which procures an IMS token for authorization of your [!DNL Brand Portal] tenant.
+The authorization channel between [!DNL Experience Manager Assets] and [!DNL Brand Portal] is changed. Earlier, [!DNL Brand Portal] was configured in Classic UI via Legacy OAuth Gateway, which uses the JWT token exchange to obtain an IMS Access token for authorization. [!DNL Experience Manager Assets] is now configured with [!DNL Brand Portal] through [!DNL Adobe I/O], which procures an IMS token for authorization of your [!DNL Brand Portal] tenant.
 
 The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal] are different depending on your [!DNL Experience Manager] version, and whether you are configuring for the first time, or upgrading the existing configurations. See [Configure Experience Manager Assets with Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) for details.
 

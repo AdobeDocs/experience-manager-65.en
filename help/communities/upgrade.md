@@ -1,8 +1,8 @@
 ---
 title: Upgrading to AEM 6.5 Communities
 seo-title: Upgrading to AEM 6.5 Communities
-description: How to upgrade from an earlier version to AEM 6.4 Communities
-seo-description: How to upgrade from an earlier version to AEM 6.4 Communities
+description: How to upgrade from an earlier version to AEM 6.5 Communities
+seo-description: How to upgrade from an earlier version to AEM 6.5 Communities
 uuid: 929c3892-1b3b-46a7-8e70-fa6864125911
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -102,4 +102,4 @@ Conceptually, there are three generations of communities components :
 
 **Gen 2**: From AEM 5.6.1 through AEM 6.1, this is a mix of **collab** and **social** components. AEM 6.0 introduced the new [social component framework](/help/communities/scf.md) (SCF) and AEM 6.2 introduced a [common UGC store](/help/communities/working-with-srp.md) where UGC is accessed using a [storage resource provider](/help/communities/srp.md) (SRP).
 
-**Gen 3**: From AEM 6.2 forward, there are only **social** components, implemented in SCF as Handlebars (HBS) components requiring a choice of SRP for UGC.
+**Gen 3**: From AEM 6.2 onwards, there are only **social** components, implemented in SCF as Handlebars (HBS) components requiring a choice of SRP for UGC.

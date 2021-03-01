@@ -1,6 +1,6 @@
 ---
 title: Accessibility in Dynamic Media
-description: Learn about accessibility in Dynamic Media and Dynamic Media Viewers
+description: Learn about accessibility support in Dynamic Media and Dynamic Media Viewers
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
@@ -45,7 +45,7 @@ The focus traversal follows the natural user interface element location on the s
 
 All out-of-the-box [!DNL Dynamic Media] viewers components support keyboard accessibility for your customers.
 
-See [Keyboard accessibility and navigation](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in the Dynamic Media Viewers Reference Guide.
+See [Keyboard accessibility and navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in the Dynamic Media Viewers Reference Guide.
 
 ## Assistive technology support in [!DNL Dynamic Media] viewers {#assistive-technology-support-for-dm-viewers}
 

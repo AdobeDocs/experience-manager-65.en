@@ -1,8 +1,8 @@
 ---
 title: Protecting Documents with Policies
 seo-title: Protecting Documents with Policies
-description: null
-seo-description: null
+description: Use the Document Security service to dynamically apply confidentiality settings to Adobe PDF documents and to maintain control over the documents. The Document Security service also enables the users to maintain control over how recipients use the policy-protected PDF document.
+seo-description: Use the Document Security service to dynamically apply confidentiality settings to Adobe PDF documents and to maintain control over the documents. The Document Security service also enables the users to maintain control over how recipients use the policy-protected PDF document.
 uuid: 6feb69ef-7b61-4d0b-8c87-d65d98bae9b5
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,9 @@ topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 ---
 
-# Protecting Documents with Policies {#protecting-documents-with-policies}
+# Protecting Documents with Policies {#protecting-documents-with-policies} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 **About the Document Security Service**
 

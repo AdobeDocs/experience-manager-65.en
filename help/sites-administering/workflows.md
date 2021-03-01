@@ -87,7 +87,7 @@ A workflow can have one of the following status:
 * **RUNNING**: The workflow instance is running.
 * **COMPLETED**: The workflow instance has been successfully ended.
 
-* **SUSPENDED**: The workflow instance has been suspended.
+* **SUSPENDED**: Marks the workflow as suspended. However, see the Caution note below on a know issue with this state.
 * **ABORTED**: The workflow instance has been terminated.
 * **STALE**: Progression of the workflow instance requires that a background job executes, however the job cannot be found in the system. This situation can occur when an error occurs when executing the workflow.
 
@@ -97,7 +97,12 @@ A workflow can have one of the following status:
 
 Depending on the current status, you can perform actions on running workflow instances when you need to intervene in the normal progression of a workflow instance:
 
-* **Suspend**: Temporarily stops the execution of the workflow. Suspending is useful in exceptional cases when you do not want the workflow to proceed, for example for maintenance. Suspending changes the workflow state to Suspended.
+* **Suspend**: Suspending changes the workflow state to Suspended. See Caution below:
+
+>[!CAUTION]
+>
+>Marking a workflow state to "Suspend" has a known issue. In this state it is possible to take actions on suspended workflow items in an Inbox.
+
 * **Resume**: Restarts a suspended workflow at the same point of execution where it was suspended, using the same configuration.
 * **Terminate**: Ends the workflow execution and changes the state to **ABORTED**. An aborted workflow instance cannot be restarted.
 

@@ -1,8 +1,8 @@
 ---
 title: Handling Submitted Forms
 seo-title: Handling Submitted Forms
-description: null
-seo-description: null
+description: Use the Forms service to retrieve the submitted data entered in an interactive form. The user can submit the form data in XML, PDF, and URL UTF-16 formats.
+seo-description: Use the Forms service to retrieve the submitted data entered in an interactive form. The user can submit the form data in XML, PDF, and URL UTF-16 formats.
 uuid: 673b28f1-f023-4da8-a6a0-c5ff921c5f5d
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 ---
 
-# Handling Submitted Forms {#handling-submitted-forms}
+# Handling Submitted Forms {#handling-submitted-forms} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 Web-based applications that enable a user to fill in interactive forms require the data to be submitted back to the server. Using the Forms service, you can retrieve the data that the user entered into an interactive form. After you retrieve the data, you can process the data to meet your business requirements. For example, you can store the data in a database, send the data to another application, send the data to another service, merge the data in a form design, display the data in a web browser, and so on.
 

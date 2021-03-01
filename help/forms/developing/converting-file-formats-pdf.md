@@ -1,8 +1,8 @@
 ---
 title: Converting Between File Formats and PDF
 seo-title: Converting Between File Formats and PDF
-description: null
-seo-description: null
+description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
+seo-description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
 uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,9 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 ---
 
-# Converting Between File Formats and PDF {#converting-between-file-formatsand-pdf}
+# Converting Between File Formats and PDF {#converting-between-file-formatsand-pdf} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 **About the Generate PDF Service**
 

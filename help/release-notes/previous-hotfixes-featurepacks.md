@@ -59,7 +59,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
   ![Screenshot to illustrate the issue of missing menu in Classic UI](assets/33949_missing_menu.png)
 
 * A [!DNL Content Fragment] cannot be used as a `TemplatedResource` as it fails in `ContentFragmentUsePojo` (NPR-33911).
-* Synchronous and asynchronous move operations can lead to errors due to concurrent transfers. Page move operations are restricted to synchronous move only. It prevents concurrent move of pages (NPR-33875).
+* Synchronous and asynchronous move operations can lead to errors due to concurrent transfers. Page move operations are restricted to asynchronous move only. It prevents concurrent move of pages (NPR-33875).
 * [!UICONTROL Manage Publication] operation to replicate content from Author to Publish instance fails and generates a JavaScript error (NPR-33872).
 * When multiple pages or assets are selected to create versions, the new version is created only for the last selected page or asset (NPR-33866).
 * Move a blueprint page with live copies to another folder. When moving it to the original folder, the move operation fails without any error (NPR-33864).
@@ -88,6 +88,15 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 * In the browse mode, NVDA does not narrate a value selected from Type/Size menu option. The visual focus is not on the selected element. User who rely on a screen reader cannot use the browse mode (CQ-4294993).
 * When creating a web page, users can select [!UICONTROL Content Page] template. In the [!UICONTROL Social Media] tab, users select a [!UICONTROL Preferred XF variation]. To select an Experience Fragment in NVDA browse mode, users cannot use keyboard keys (CQ-4292669).
 * Updated the handlebars library to the more secure v4.7.3 (NPR-34484).
+* Multiple cross site scripting instances in [!DNL Experience Manager Sites] components (NPR-33925).
+* The folder name field when creating a new folder is vulnerable to stored cross site scripting (GRANITE-30094).
+* The search results on the[!UICONTROL  Welcome] page and the path completion template are vulnerable to cross site scripting (NPR-33719, NPR-33718).
+* Creating a binary property on an unstructured node results in cross site scripting on the binary property dialog (NPR-33717).
+* Cross site scripting when using [!UICONTROL Access Control Test] option on the CRX DE interface (NPR-33716).
+* User inputs are not appropriately encoded for various components when sending information to the client (NPR-33695).
+* Cross site scripting in Calendar view for Experience Manager Inbox (NPR-33545).
+* A URL that ends with `childrenlist.html` displays an HTML page instead of a 404 response. Such URLs are vulnerable to cross site scripting (NPR-33441).
+
 
 ### [!DNL Assets] {#assets-6560}
 
@@ -274,6 +283,8 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
 * The existing users of a community group added through admin console are removed from the user list on any modification in the community group console (NPR-34315).
 
+* The `TagFilterServlet` leaks potentially sensitive data (NPR-33868).
+
 <!--
 * Tag filters are vulnerable to sensitive information disclosure (NPR-33868).
 -->
@@ -321,6 +332,8 @@ After installing the [!DNL Experience Manager Forms] 6.5.6.0 add-on package:
 * When you open the field configuration for the first time, the properties icon does not display (CQ-4296284).
 
 * Users can edit submission metadata, such as `afPath`, `afSubmissionTime` and `signers`, when submitting an adaptive form. To resolve the issue, the metadata values are removed from the form submission data on the client side. Users can use the `FormSubmitInfo` object to retrieve these values from the server (NPR-33654).
+
+* User inputs are not appropriately encoded for [!DNL Forms] components when sending information to the client (NPR-33611).
 
 **Workflow**
 
@@ -613,7 +626,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 * Internal cache is cleared when a page with an Adobe Target component is published (NPR-33162).
 * Integration with Adobe Target does not work on [!DNL Windows Internet Explorer] 11 (NPR-33111).
 * When configuring Adobe Target, the [!UICONTROL Company] and [!UICONTROL Report Suite] fields do not appear on selecting a reporting source (NPR-32502).
-* When exporting [!DNL Experience Fragments] using Adobe I/O, metadata like Source Product is not exported into Adobe Target (NPR-32159).
+* When exporting [!DNL Experience Fragments] using [!DNL Adobe I/O], metadata like Source Product is not exported into Adobe Target (NPR-32159).
 * Authorized IMS users in local Experience Manager admin group cannot create or modify IMS configurations (NPR-33045).
 * Adobe Launch configurations page does not display all records (NPR-33011).
 * Users in content-authors group cannot edit properties of an Adobe Target component due to JavaScript error (NPR-32996).
@@ -684,7 +697,7 @@ Adobe Experience Manager 6.5.4.0 is an important update that includes new featur
 
 Some key features and enhancements introduced in Adobe Experience Manager 6.5.4.0 include:
 
-* Adobe Experience Manager Assets is now configured with Brand Portal through Adobe I/O Console.
+* Adobe Experience Manager Assets is now configured with Brand Portal through [!DNL Adobe I/O] Console.
 
 * A new [Generate printable Output](../forms/using/aem-forms-workflow-step-reference.md) step is now available for Adobe Experience Manager Forms workflows.
 
@@ -848,7 +861,7 @@ For a complete list of features and key highlights introduced in the latest serv
 
 ### Brand Portal {#assets-brand-portal-6540}
 
-* Brand Portal users are not able to publish contribution folder assets to [!DNL Assets] on upgrading to Adobe I/O on Experience Manager 6.5.4 (CQDOC-15655). For an immediate fix on Experience Manager 6.5.4, it is recommended to [download the hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) and install on your author instance.
+* Brand Portal users are not able to publish contribution folder assets to [!DNL Assets] on upgrading to [!DNL Adobe I/O] on Experience Manager 6.5.4 (CQDOC-15655). For an immediate fix on Experience Manager 6.5.4, it is recommended to [download the hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) and install on your author instance.
 
 * Metadata schema popup values are not visible in asset properties (CQ-4283287).
 
