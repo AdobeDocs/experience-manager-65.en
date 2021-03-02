@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 ---
 
-# Rendering Forms at the Client {#rendering-forms-at-the-client}
+# Rendering Forms at the Client {#rendering-forms-at-the-client} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 ## Rendering Forms at the Client {#rendering-forms-at-the-client-inner}
 

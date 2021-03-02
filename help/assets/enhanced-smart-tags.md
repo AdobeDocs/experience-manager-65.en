@@ -12,7 +12,7 @@ Compared to natural language vocabularies, tagging digital assets based on busin
 
 For example, a car manufacturer can tag car images with model names so only relevant images appear when images of various models are searched to design a promotion campaign.
 
-For the Smart Content Service to apply the right tags, you must train it to recognize your taxonomy. To train the service, first curate a set of assets and tags that best describe these assets. Apply these tags on the assets and run a training workflow to help the service learn.
+For the Smart Content Service to apply the right tags, train it to recognize your taxonomy. To train the service, first curate a set of assets and tags that best describe these assets. To help the service learn, apply these tags on the assets and run a training workflow.
 
 Once a tag is trained and ready, the service can now apply these tags on assets through a tagging workflow.
 
@@ -33,11 +33,11 @@ In summary, here are the main steps to use the Smart Content Service:
 
 Before you can use the Smart Content Service, ensure the following to create an integration on [!DNL Adobe Developer Console]:
 
-* An Adobe ID account that has administrator privileges for the organization.
-* The Smart Content Service service is enabled for your organization.
-* Smart Content Services Base Package may only be added to a deployment where an [!DNL Adobe Experience Manager Sites] Base Package and [!DNL Assets] add-on have been licensed.
+* An Adobe ID account with administrator privileges for the organization.
+* Enable the Smart Content Service service for your organization.
+* To add Smart Content Services Base Package to a deployment, license [!DNL Adobe Experience Manager Sites] Base Package and [!DNL Assets] add-on.
 
-Smart Tags are only applied to assets with the following MIME types:
+The service applies Smart Tags to assets of the following MIME types:
 
 * image/jpeg
 * image/tiff
@@ -58,7 +58,7 @@ Smart Tags are only applied to assets with the following MIME types:
 * image/psd
 * image/vnd.adobe.photoshop
 
-Smart tagging of asset renditions is supported for the following MIME types only:
+The service applies Smart Tags to asset renditions of the following MIME types:
 
 * image/jpeg
 * image/pjpeg
@@ -144,7 +144,7 @@ You can trigger the tagging workflow from the workflow console or from the timel
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   Navigate to the asset folder and review the tags to verify whether the Smart Content Service tagged your assets properly.
+   To verify whether the Smart Content Service tagged your assets properly, navigate to the asset folder and review the tags.
 
 #### Tag assets from the timeline {#tagging-assets-from-the-timeline}
 
@@ -155,7 +155,7 @@ You can trigger the tagging workflow from the workflow console or from the timel
    ![start_workflow](assets/start_workflow.png)
 
 1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
-1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify whether the Smart Content Service tagged your assets properly.
+1. Click **[!UICONTROL Start]**. The workflow applies tags on the assets. to verify whether the Smart Content Service tagged your assets properly, navigate to the asset folder and review the tags.
 
 >[!NOTE]
 >
@@ -163,16 +163,16 @@ You can trigger the tagging workflow from the workflow console or from the timel
 
 ## Curate or moderate the applied smart tags {#manage-smart-tags}
 
-You can curate Smart tags to remove any inaccurate tags that may have been assigned to your brand images so only the most relevant tags are displayed.
+You can curate Smart tags to remove any inaccurate tags that are assigned to your brand images so that only the most relevant tags are displayed.
 
 Moderating Smart tags also helps refine tag-based searches for images by ensuring that your image appears in search results for the most relevant tags. Essentially, it helps eliminate the chances of unrelated images from showing up in search results.
 
-You can also assign a higher rank to a tag to increase its relevance with respect to an image. Promoting a tag for an image increases the chances of the image appearing in search results when a search is performed based on the particular tag.
+You can also assign a higher rank to a tag to increase its relevance for an image. Promoting a tag for an image increases the chances of the image appearing in search results when the particular tag is searched.
 
-1. In the Omnisearch box, search for assets based on a tag.
-1. Inspect the search results to identify an image that you don't find relevant to your search.
+1. In the search box, search for assets based using a tag as a keyword.
+1. To identify an image that you do not find relevant to your search, review the search results.
 1. Select the image, and click **[!UICONTROL Manage Tags]** from the toolbar.
-1. From the **[!UICONTROL Manage Tags]** page, inspect the tags. If you don't want the image to be searched based on a specific tag, select the tag and then click **[!UICONTROL Delete]** from the toolbar. Alternatively, click `x` symbol that appears next to a tag.
+1. From the **[!UICONTROL Manage Tags]** page, review the tags. If you don't want the image to be searched based on a specific tag, select the tag and then click **[!UICONTROL Delete]** from the toolbar. Alternatively, click `x` symbol that appears next to a tag.
 1. Optionally, to assign a higher rank to a tag, select the tag and click **[!UICONTROL Promote]** from the toolbar. The tag you promote, is moved to the **[!UICONTROL Tags]** section.
 1. Click **[!UICONTROL Save]** and then click **[!UICONTROL OK]**
 1. Navigate to the **[!UICONTROL Properties]** page for the image. Observe that the tag you promoted is assigned more relevance and appears earlier in the search results.

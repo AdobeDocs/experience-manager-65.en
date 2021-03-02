@@ -6,7 +6,7 @@ contentOwner: AG
 
 # Prepare [!DNL Assets] for smart tagging {#configure-asset-tagging-using-the-smart-content-service}
 
-Before you can start tagging your assets using Smart Content Services, integrate [!DNL Experience ManageR Assets] with Adobe Developer Console to leverage smart service of [!DNL Adobe Sensei]. Once configured train the service using a few images and a tag.
+Before you can start tagging your assets using Smart Content Services, integrate [!DNL Experience Manager Assets] with Adobe Developer Console to leverage smart service of [!DNL Adobe Sensei]. Once configured train the service using a few images and a tag.
 
 Before you use the Smart Content Service, ensure the following:
 
@@ -17,11 +17,11 @@ Before you use the Smart Content Service, ensure the following:
 
 ## Integrate with Adobe Developer Console {#integrate-adobe-io}
 
-When you integrate with Adobe Developer Console, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service. To integrate you need an Adobe ID account that has administrator privileges for the organization and Smart Content Service license purchased and enabled for your organization.
+When you integrate with Adobe Developer Console, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service. To integrate, you need an Adobe ID account that has administrator privileges for the organization and Smart Content Service license purchased and enabled for your organization.
 
 To configure the Smart Content Service, follow these top-level steps:
 
-1. [Create a Smart Content Service](#obtain-public-certificate) configuration in [!DNL Experience Manager] to generate a public key. [Obtain public certificate](#obtain-public-certificate) for OAuth integration.
+1. To generate a public key, [Create a Smart Content Service](#obtain-public-certificate) configuration in [!DNL Experience Manager]. [Obtain public certificate](#obtain-public-certificate) for OAuth integration.
 
 1. [Create an integration in Adobe Developer Console](#create-adobe-i-o-integration) and upload the generated public key.
 
@@ -31,7 +31,7 @@ To configure the Smart Content Service, follow these top-level steps:
 
 1. Optionally, [enable auto-tagging on asset upload](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
-### Create Smart Content Service configuration to obtain public certificate {#obtain-public-certificate}
+### Obtain public certificate by creating Smart Content Service configuration {#obtain-public-certificate}
 
 A public certificate allows you to authenticate your profile on Adobe Developer Console.
 
@@ -63,11 +63,11 @@ A public certificate allows you to authenticate your profile on Adobe Developer 
    ![A representation of the settings created for the smart tagging service](assets/smart-tags-download-public-cert.png)
 
 
-   *Figure: Settings for smart tagging service*
+   *Figure: Settings for smart tagging service.*
 
 #### Reconfigure when a certificate expires {#certrenew}
 
-After a certificate expires, it is no longer trusted. You cannot renew an expired certificate. To add a new certificate, follow these steps.
+After a certificate expires, it is no longer trusted. You cannot renew an expired certificate. To add a certificate, follow these steps.
 
 1. Log in your [!DNL Experience Manager] deployment as an administrator. Click **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 
@@ -75,10 +75,10 @@ After a certificate expires, it is no longer trusted. You cannot renew an expire
 
 1. Delete the existing **[!UICONTROL similaritysearch]** keystore with the expired certificate. Click **[!UICONTROL Save & Close]**.
 
-   ![Delete the existing similaritysearch entry in Keystore to add a new security certificate](assets/smarttags_delete_similaritysearch_keystore.png)
+   ![Delete the existing similarity search entry in Keystore to add a security certificate](assets/smarttags_delete_similaritysearch_keystore.png)
 
 
-   *Figure: Delete the existing `similaritysearch` entry in Keystore to add a new security certificate.*
+   *Figure: Delete the existing `similaritysearch` entry in Keystore to add a security certificate.*
 
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**. Click **[!UICONTROL Asset Smart Tags]** > **[!UICONTROL Show Configuration]** > **[!UICONTROL Available Configurations]**. Click the required configuration.  
 
@@ -98,7 +98,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 
 1. Select **[!UICONTROL Upload your public key]**. Provide the certificate file downloaded from [!DNL Experience Manager]. A message [!UICONTROL Public key(s) uploaded successfully] is displayed. Click **[!UICONTROL Next]**.
 
-   [!UICONTROL Create a new Service Account (JWT) credential] page displays the public key for the service account just configured.
+   [!UICONTROL Create a new Service Account (JWT) credential] page displays the public key for the service account.
 
 1. Click **[!UICONTROL Next]**.
 
@@ -177,7 +177,7 @@ The validation results are displayed in the same dialog.
    ![Configure DAM Update Asset workflow to add smart tag step and select ignore Smart Tag flag](assets/smart-tag-step-properties-workflow3.png)
 
 
-   *Figure: Configure DAM Update Asset workflow to add smart tag step and select ignore Smart Tag flag*
+   *Figure: Configure DAM Update Asset workflow to add smart tag step and select ignore Smart Tag flag.*
 
 1. Click **[!UICONTROL OK]** to close the process step, and then save the workflow.
 
@@ -195,17 +195,17 @@ You can train the Smart Content Service periodically or on requirement basis.
 
 ### Guidelines for training {#guidelines-for-training}
 
-For best results, images in your training set should conform to the following guidelines:
+For best results, images in your training set conform to the following guidelines:
 
 **Quantity and size:** Minimum 30 images per tag. Minimum of 500 pixels on the longer side.
 
-**Coherence**: Images for a tag should be visually similar.
+**Coherence**: Images used for a specific tag are visually similar.
 
 For example, it is not a good idea to tag all of these images as `my-party` (for training) because they are not visually similar.
 
 ![Illustrative images to exemplify the guidelines for training](/help/assets/assets/do-not-localize/coherence.png)
 
-**Coverage**: There should be sufficient variety in the images in the training. The idea is to supply a few but reasonably diverse examples so that Experience Manager learns to focus on the right things. If you're applying the same tag on visually dissimilar images, include at least five examples of each kind.
+**Coverage**: Use sufficient variety in the images in the training. The idea is to supply a few but reasonably diverse examples so that Experience Manager learns to focus on the right things. If you're applying the same tag on visually dissimilar images, include at least five examples of each kind.
 
 For example, for the tag *model-down-pose*, include more training images similar to the highlighted image below for the service to identify similar images more accurately during tagging.
 
@@ -240,7 +240,7 @@ You can train the Smart Content Service whenever required from the Workflow cons
 1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder that includes the tagged assets for training the service.
-1. Specify a title for the workflow and a add a comment. Then, click **[!UICONTROL Run]**. The assets and tags are submitted for training.
+1. Specify a title for the workflow and add a comment. Then, click **[!UICONTROL Run]**. The assets and tags are submitted for training.
 
    ![workflow_dialog](assets/workflow_dialog.png)
 
@@ -263,7 +263,7 @@ To check whether the Smart Content Service is trained on your tags in the traini
 
    If you do not see your tags in this report, run the training workflow again for these tags.
 
-1. To download the report, select it from the list, and click **[!UICONTROL Download]** from the toolbar. The report downloads as an Microsoft Excel spreadsheet.
+1. To download the report, select it from the list, and click **[!UICONTROL Download]** from the toolbar. The report downloads as a Microsoft Excel spreadsheet.
 
 ## Limitations {#limitations}
 

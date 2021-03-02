@@ -11,7 +11,9 @@ topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
 ---
 
-# Invocation API Quick Starts {#invocation-api-quick-starts}
+# Invocation API Quick Starts {#invocation-api-quick-starts} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 The following Quick Starts are available for programmatically invoking AEM Forms services:
 

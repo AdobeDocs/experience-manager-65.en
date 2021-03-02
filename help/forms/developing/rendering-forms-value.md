@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 ---
 
-# Rendering Forms By Value {#rendering-forms-by-value}
+# Rendering Forms By Value {#rendering-forms-by-value} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 Typically, a form design that is created in Designer is passed by reference to the Forms service. Form designs can be large and, as a result, it is more efficient to pass them by reference to avoid having to marshal form design bytes by value. The Forms service can also cache the form design so that when cached, it does not have to continually read the form design.
 

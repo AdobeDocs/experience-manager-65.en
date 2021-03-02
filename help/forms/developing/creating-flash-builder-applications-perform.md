@@ -11,7 +11,9 @@ topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 ---
 
-# Creating Flash Builder applications that perform SSO authentication using HTTP tokens {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+# Creating Flash Builder applications that perform SSO authentication using HTTP tokens {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 You can create a client application using Flash Builder that performs single-sign on (SSO) authentication using HTTP tokens. Assume, for example, that you create a web-based application using Flash Builder. Next assume that the application contains different views, where each view invokes a different AEM Forms operation. Instead of authenticating a user for each Forms operation, you can create a login page that lets a user authenticate once. Once authenticated, a user is able to invoke multiple operations without having to authenticate again. For example, if a user has logged into Workspace (or another Forms application), the user would not need to authenticate again.
 

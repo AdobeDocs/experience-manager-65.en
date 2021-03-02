@@ -12,7 +12,9 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 ---
 
-# Rendering Forms as HTML {#rendering-forms-as-html}
+# Rendering Forms as HTML {#rendering-forms-as-html} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 The Forms service renders forms as HTML in response to an HTTP request from a web browser. A benefit of rendering a form as HTML is that the computer on which the client web browser is located does not require Adobe Reader, Acrobat, or Flash Player (for form Guides (deprecated)).
 

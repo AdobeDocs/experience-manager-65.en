@@ -3,7 +3,9 @@ title: Creating an Invite External Users Handler
 description: Creating an Invite External Users Handler
 ---
 
-# Creating an Invite External Users Handler {#create-invite-external-users-handler}
+# Creating an Invite External Users Handler {#create-invite-external-users-handler} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 You can create an Invite External Users Handler for the Rights Management service. An Invite External Users Handler enables the Rights Management service to invite external users to become Rights Management users. After a user becomes a Rights Management user, the user is able to perform tasks, such as opening a policy-protected PDF document. After the Invite External Users Handler is deployed to AEM Forms, you can use administration console to interact with it.
 

@@ -11,7 +11,9 @@ topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 ---
 
-# Invoking AEM Forms using the Java API {#invoking-aem-forms-using-the-javaapi}
+# Invoking AEM Forms using the Java API {#invoking-aem-forms-using-the-javaapi} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 AEM Forms can be invoked by using the AEM Forms Java API. When using the AEM Forms Java API, you can use either the Invocation API or Java client libraries. Java client libraries are available for services such as the Rights Management service. These strongly typed APIs let you develop Java applications that invoke AEM Forms.
 

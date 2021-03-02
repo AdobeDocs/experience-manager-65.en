@@ -11,7 +11,9 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 ---
 
-# Working with barcoded forms {#working-with-barcoded-forms}
+# Working with barcoded forms {#working-with-barcoded-forms} 
+
+**Samples and examples in this document are only for AEM Forms on JEE environment.**
 
 ## About the barcoded forms Service {#about-the-barcoded-forms-service}
 
