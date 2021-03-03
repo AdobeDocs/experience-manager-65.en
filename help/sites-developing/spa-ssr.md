@@ -71,7 +71,7 @@ This is done via the **RemoteContentRenderer - Configuration Factory OSGi servic
 The following fields are available for the configuration:
 
 * **Content path pattern** - Regular expression in order to match a portion of the content, if necessary
-* **Remote endpoint URL** - URL of the endpoint that is responsible for the generating the content
+* **Remote endpoint URL** - URL of the endpoint that is responsible for generating the content
   * Use the secured HTTPS protocol if not in local network.
 * **Additional request headers** - Additional headers to be added to the request sent to the remote endpoint
   * Pattern: `key=value`
