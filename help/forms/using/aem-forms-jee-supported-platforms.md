@@ -547,7 +547,6 @@ For additional reuirements see:
 * Graphics memory - 128 MB of GPU (256 MB recommended)
 * 2.35 GB of available hard-disk space
 * DVD-ROM drive
-* Firefox 45.x
 * 1024 X 768 pixels or greater monitor resolution
 * Video hardware acceleration (optional)
 * Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC.
