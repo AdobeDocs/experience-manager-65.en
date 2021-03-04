@@ -540,23 +540,17 @@ For additional reuirements see:
 
 ### Designer {#designer}
 
->[!NOTE]
->
->To install Designer on Windows, run the installer with Administrative privileges.
-
-* Microsoft® Windows® 2016 Server, Microsoft Windows 10
-
-    * 1 GHz or faster processor with support for PAE, NX, and SSE2.
-    * 1 GB of RAM for 32-bit or 2 GB of RAM for 64-bit OS
-    * 16 GB disk space for 32-bit or 20 GB disk space for 64-bit OS
-
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, or Microsoft Windows 10
+* 1 GHz or faster processor with support for PAE, NX, and SSE2.
+* 1 GB of RAM for 32-bit or 2 GB of RAM for 64-bit OS
+* 16 GB disk space for 32-bit or 20 GB disk space for 64-bit OS
 * Graphics memory - 128 MB of GPU (256 MB recommended)
 * 2.35 GB of available hard-disk space
 * DVD-ROM drive
-* Internet Explorer 10 or 11; Firefox 45.x
 * 1024 X 768 pixels or greater monitor resolution
 * Video hardware acceleration (optional)
 * Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC.
+* Administrative privileges to install Designer.
 
 ### Adobe Acrobat and Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
