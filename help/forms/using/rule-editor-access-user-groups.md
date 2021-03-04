@@ -27,7 +27,7 @@ AEM Forms allows you to limit rule editor access to users based on their role or
 
    ![1-2](assets/1-2.png)
 
-1. In Web Console Window, locate and click **Adaptive Form Configuration Service**. **Adaptive Form Configuration Service** dialog appears. Do not change any value and click **Save**.
+1. In Web Console Window, locate and click **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]**. **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** dialog appears. Do not change any value and click **Save**.
 
    It creates a file /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config in CRX-repository.
 
