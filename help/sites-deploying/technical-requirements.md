@@ -498,13 +498,12 @@ For Windows x86:
 
 ### Requirements for AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, or Microsoft Windows 10
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, or Microsoft® Windows® 10
 * 1 GHz or faster processor with support for PAE, NX, and SSE2.
 * 1 GB of RAM for 32-bit or 2 GB of RAM for 64-bit OS
 * 16 GB disk space for 32-bit or 20 GB disk space for 64-bit OS
 * Graphics memory - 128 MB of GPU (256 MB recommended)
 * 2.35 GB of available hard-disk space
-* DVD-ROM drive
 * 1024 X 768 pixels or greater monitor resolution
 * Video hardware acceleration (optional)
 * Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC.
