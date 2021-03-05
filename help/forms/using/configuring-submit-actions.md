@@ -154,7 +154,7 @@ Enabling Server-Side Validation
 
 If end-user bypass those validations and submit the forms, the server again performs the validation. If the validation fails at server end, then the submit transaction is stopped. The end user is presented with the original form again. The captured data and submitted data are presented to the user as an error.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Server-side validation validates the form model. It is recommended to create a separate client library for validations and not mix it with other things like HTML styling and DOM manipulation in the same client library.
 
