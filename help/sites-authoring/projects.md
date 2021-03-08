@@ -228,7 +228,7 @@ All projects support the following default roles to let you administer security 
    <td>
     <ul>
      <li>DAM-users group (to be able to create a project)</li>
-     <li>project-administrators group (to be able to move assets)</li>
+     <li>project-administrators group (to be able to create a project and move assets)</li>
     </ul> </td>
   </tr>
  </tbody>
