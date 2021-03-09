@@ -70,11 +70,6 @@ To customize the metadata properties page, including adding, modifying, deleting
 1. In the [!DNL Assets] user interface, navigate to the location of the assets you want to edit.
 1. Select the assets for which you want to edit common properties.
 1. From the toolbar, click **[!UICONTROL Properties]** to open the properties page for the selected assets.
-
-   >[!NOTE]
-   >
-   >When you select multiple assets, the lowest common parent form is selected for the assets. In other words, the properties page only displays metadata fields that are common across the properties pages of all the individual assets.
-
 1. Modify the metadata properties for selected assets under the various tabs.
 1. To view the metadata editor for a specific asset, deselect the remaining assets in the list. The metadata editor fields are populated with the metadata for the particular asset.
 
