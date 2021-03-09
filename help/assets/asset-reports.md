@@ -90,13 +90,13 @@ To generate reports, do the following:
 
 1. Click **[!UICONTROL Next]** from the toolbar.
 
-1. In the **[!UICONTROL Configure Columns]** page, some columns are selected to appear in the report by default. You can select more columns. Deselect a selected column to exclude it in the report.
+1. In the **[!UICONTROL Configure Columns]** page, some columns are selected to appear in the report by default. You can select more columns. Cancel the selection of a column to exclude it in the report.
 
-   ![Select or deselect report columns](assets/configure_columns.png)
+   ![Select or cancel the selection of report columns](assets/configure_columns.png)
 
    To display a custom column name or property path, configure the properties for the asset binary under the `jcr:content` node in CRX. Alternatively, add it through property path picker.
 
-   ![Select or deselect report columns](assets/custom_columns.png)
+   ![Select or cancel the selection of report columns](assets/custom_columns.png)
 
 1. Click **[!UICONTROL Create]** from the toolbar. A message notifies that report generation has been initiated.
 1. On the [!UICONTROL Asset Reports] page, the report generation status is based on the current state of the report job, for example [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], or [!UICONTROL Scheduled]. The same status appears in the notifications inbox.To view the report page, click the report link. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.

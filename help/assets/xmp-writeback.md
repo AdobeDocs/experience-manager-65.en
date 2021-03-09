@@ -81,6 +81,6 @@ Filtering of XMP metadata via allowed list resolves this issue by letting you de
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Apply Blocklist to XMP Properties]** option is selected by default. In other words, filtering using a blocked list is enabled by default. To disable such filtering, deselect the **[!UICONTROL Apply Blocklist to XMP Properties]** option.
+   >The **[!UICONTROL Apply Blocklist to XMP Properties]** option is selected by default. In other words, filtering using a blocked list is enabled by default. To disable such filtering, cancel the selection of the **[!UICONTROL Apply Blocklist to XMP Properties]** option.
 
 1. Save the changes.
