@@ -28,8 +28,8 @@ The sections in this article include:
 AEM Forms app for iOS configured to sync with AEM Forms on OSGi supports only field-level attachments. All the attachments must have unique names. If multiple attachments have identical name, only one attachment is kept and all other with identical name are lost. Perform the following steps to prevent users on iOS devices from experiencing data loss:
 
 1. On the connected server, navigate to **Adobe Experience Manager &gt; Tools &gt; Operations &gt; Web Console**.
-1. Find and click **Adaptive Form Configuration Service**.
-1. In the Adaptive Form Configuration Service dialog, enable **Make File Names Unique**.
+1. Find and click **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]**.
+1. In the [!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration] dialog, enable **Make File Names Unique**.
 
    If **Make File Names Unique** setting is disabled, users experience data loss if they try to submit adaptive forms with multiple attachments.
 
