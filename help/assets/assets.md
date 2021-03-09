@@ -83,4 +83,5 @@ See [Assets and Media Library](medialibrary.md) for information on the differenc
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager Assets as a modern DAM](https://www.youtube.com/embed/PBwQqZgC-yo)
+>* [Video Introduction - Experience Manager Assets as a modern DAM](https://www.youtube.com/watch?v=PBwQqZgC-yo)
+>* [Understand metadata concepts](/help/assets/metadata-concepts.md)
