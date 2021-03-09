@@ -91,7 +91,7 @@ This is a filtering-only predicate and cannot leverage a search index.
 
 * **operation**
 
-  " `=`" for exact match, " `!=`" for unequality comparison, " `>`" for property1 greater than property2, " `>=`" for property1 greater than or equal to property2. The default value is " `=`".
+  " `equals`" for exact match, " `!=`" for unequality comparison, " `greater`" for property1 greater than property2, " `>=`" for property1 greater than or equal to property2. The default value is " `equals`".
 
 ### daterange {#daterange}
 
