@@ -31,7 +31,7 @@ However this can lead to longer initial load times, especially if the SPA is lar
 
 ## When to Use SSR {#when-to-use-ssr}
 
-SSR is not required on all projects. Althgouh AEM fully support JS SSR for SPA, Adobe does not recommend implementing it systematically for every project.
+SSR is not required on all projects. Although AEM fully supports JS SSR for SPA, Adobe does not recommend implementing it systematically for every project.
 
 When deciding to implement SSR you must first estimate what additional complexity, effort, and cost adding SSR realistically represents for the project, including the long term maintenance. An SSR architecture should be chosen only when the added value clearly exceeds the estimated costs.
 
@@ -71,7 +71,7 @@ This is done via the **RemoteContentRenderer - Configuration Factory OSGi servic
 The following fields are available for the configuration:
 
 * **Content path pattern** - Regular expression in order to match a portion of the content, if necessary
-* **Remote endpoint URL** - URL of the endpoint that is responsible for the generating the content
+* **Remote endpoint URL** - URL of the endpoint that is responsible for generating the content
   * Use the secured HTTPS protocol if not in local network.
 * **Additional request headers** - Additional headers to be added to the request sent to the remote endpoint
   * Pattern: `key=value`

@@ -23,6 +23,12 @@ When a launch has been created for a page (or set of pages) you can edit the con
 1. Access the [Launch from References (Sites console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) to show the available actions.
 1. Select **Go to the page** to open the page for editing.
 
+>[!NOTE]
+>
+>You are not allowed to move a page within a launch. Attempting this action will trigger a warning message:
+>
+>* Warning: This page is the source of a launch. Moving the page is not permitted.
+
 ### Editing Launch Pages Subject to a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
 If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:

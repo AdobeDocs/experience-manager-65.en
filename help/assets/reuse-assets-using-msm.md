@@ -63,7 +63,7 @@ To create live copies using the first method, follow these steps:
 
 1. Select source assets or folders. From the toolbar, click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]**.
 
-   ![Create live copy from Experience Manager interface](assets/create_lc1.png)
+   ![Create live copy from [!DNL Experience Manager] interface](assets/create_lc1.png)
 
    *Figure: Create live copy from [!DNL Experience Manager] interface.*
 
@@ -75,7 +75,7 @@ To create live copies using the second method, follow these steps:
 
 1. In [!DNL Experience Manager] interface, from upper-right corner, click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]**.
 
-   ![Create live copy from Experience Manager interface](assets/create_lc2.png)
+   ![Create live copy from [!DNL Experience Manager] interface](assets/create_lc2.png)
 
    *Figure: Create live copy from [!DNL Experience Manager] interface.*
 
@@ -99,7 +99,7 @@ The following two methods work for assets and folders:
 
 >[!TIP]
 >
->To check the status of a few separate live copies, use the first method to check the [!UICONTROL Properties] page. To check statuses of many live copies, use the second method to check the **[!UICONTROL Relationship Status]** page.
+>To check the status of a few separate live copies, use the first method to check the **[!UICONTROL Properties]** page. To check statuses of many live copies, use the second method to check the **[!UICONTROL Relationship Status]** page.
 
 ### Information and status of a live copy {#statuslcasset}
 
@@ -182,8 +182,9 @@ After a source is modified, the changes can be propagated to the live copies usi
 You can initiate a rollout action from the source asset and update all or a few select live copies.
 
 1. Select a live copy asset or a folder. Click **[!UICONTROL Properties]** from the toolbar. Alternatively, use the keyboard shortcut `p`.
-1. Click **[!UICONTROL Live Copy Source]**. Click **[!UICONTROL Rollout]** from the toolbar at the top.
-1. Select the live copies you want to update. Click **[!UICONTROL Rollout]**. To roll out the updates made to the child assets, select **[!UICONTROL Rollout Source and all Children]**.
+1. Click **[!UICONTROL Live Copy Source]**. Click **[!UICONTROL Rollout]** from the toolbar.
+1. Select the live copies you want to update. Click **[!UICONTROL Rollout]**.
+1. To roll out the updates made to the child assets, select **[!UICONTROL Rollout Source and all Children]**.
 
    ![Roll out the modifications of source to a few or all live copies](assets/livecopy_rollout_page.png)
 
