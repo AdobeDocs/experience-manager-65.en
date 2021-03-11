@@ -37,7 +37,7 @@ CODE ON GITHUB
 
 You can find the code of this page on GitHub
 
-* [Open aem-dialog-conversion project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion)
+* [Open aem-modernize-tools project on GitHub](https://github.com/adobe/aem-modernize-tools)
 * Download the project as [a ZIP file](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion/archive/master.zip)
 
 >[!NOTE]
@@ -46,7 +46,7 @@ You can find the code of this page on GitHub
 
 Follow these steps to install the dialog conversion tool.
 
-1. Download the package from the [Dialog Conversion Tool GitHub project](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion/releases).
+1. Download the package from the [AEM Modernize Tools Suite GitHub project](https://github.com/adobe/aem-modernize-tools/releases).
 1. Install the package on your instance. For details on package management see [How to Work With Packages](/help/sites-administering/package-manager.md).
 
 ## Converting a Dialog {#converting-a-dialog}
@@ -57,7 +57,7 @@ Use the following steps to convert one or more dialogs:
 
 1. Open the **Dialog Conversion** console, accessible from **Global Navigation** -&gt; **Tools** -&gt; **Operations**:
 
-   `https://<hostname>:<port>/libs/cq/dialogconversion/content/console.html`
+   `https://<hostname>:<port>/libs/cq/modernize/dialog/content/console.html`
 
    ![chlimage_1-18](assets/chlimage_1-18a.png)
 
@@ -221,19 +221,19 @@ The following is an example of rewriting Coral 2 icon properties to Coral 3 equi
 
 The rewrite rules provided are defined at:
 
-`/libs/cq/dialogconversion/rules`
+`/apps/cq/modernize/dialog/rules`
 
 The rules are further divided at this location into folders for classic rewrite rules and Coral 2 rewrite rules:
 
-`/libs/cq/dialogconversion/rules/classic`
+`/apps/cq/modernize/dialog/rules/classic`
 
-`/libs/cq/dialogconversion/rules/coral2`
+`/apps/cq/modernize/dialog/rules/coral2`
 
 These rules can be overwritten by providing a set of rules at:
 
-`/apps/cq/dialogconversion/rules`
+`/apps/cq/modernize/dialog/rules`
 
-You can copy `/libs/cq/dialogconversion/rules` to `/apps` then modify existing and/or add new rules to this new instance ``.
+You can modify existing and/or add new rules.
 
 ### Java-Based Rewrite Rules {#java-based-rewrite-rules}
 
@@ -325,7 +325,7 @@ The `cq-dialog-conversion-content` package contains several predefined rewrite r
    <td><p>A <code>granite/ui/components/coral/foundation/form/multifield</code></p> <p>The <code>fieldConfig</code> child node (if any) is rewritten separately, thus not limiting the supported components.</p> </td>
   </tr>
   <tr>
-   <td><code>/libs/cq/dialogconversion/rules/classic</code></td>
+   <td><code>/apps/cq/modernize/dialog/rules/classic</code></td>
    <td><code class="code">button
       checkbox
       colorfield
@@ -350,7 +350,7 @@ The `cq-dialog-conversion-content` package contains several predefined rewrite r
    <td> </td>
   </tr>
   <tr>
-   <td><code>/libs/cq/dialogconversion/rules/coral2</code></td>
+   <td><code>/apps/cq/modernize/dialog/rules/coral2</code></td>
    <td><code class="code">actionfield
       autocomplete
       button
