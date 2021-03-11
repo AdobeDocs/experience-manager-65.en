@@ -1,21 +1,17 @@
 ---
 title: Adding Dynamic Media assets to pages
-seo-title: Adding Dynamic Media assets to pages
-description: To add the dynamic media functionality to assets you use on your websites, you can add the Dynamic Media or Interactive Media component directly on the page.
-seo-description: To add the dynamic media functionality to assets you use on your websites, you can add the Dynamic Media or Interactive Media component directly on the page.
-uuid: 650d0867-a079-4936-a466-55b7a30803a2
+description: To add the Dynamic Media functionality to assets you use on your websites, you can add the Dynamic Media or Interactive Media component directly on the page.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 ---
 
 # Adding Dynamic Media assets to pages{#adding-dynamic-media-assets-to-pages}
 
-To add the Dynamic Media functionality to assets you use on your websites, you can add the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component directly on the page. You do this by entering [!UICONTROL Design] mode and enabling the dynamic media components. Then you can add these components to the page and add assets to the component. The dynamic media and interactive media components are smart - they know whether you are adding an image or a video and the options available change accordingly.
+To add the Dynamic Media functionality to assets you use on your websites, you can add the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component directly on the page. You do this by entering [!UICONTROL Design] mode and enabling the Dynamic Media components. Then you can add these components to the page and add assets to the component. The Dynamic Media and interactive media components are smart - they know whether you are adding an image or a video and the options available change accordingly.
 
-You add dynamic media assets directly to the page if you are using AEM as your WCM.
+You add Dynamic Media assets directly to the page if you are using AEM as your WCM.
 
 >[!NOTE]
 >
@@ -41,7 +37,7 @@ To add a Dynamic Media component/viewer to a page:
 
 ## Dynamic Media Components {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] and [!UICONTROL Interactive Media] are available in the [!UICONTROL Sidekick] under **[!UICONTROL Dynamic Media.]** You use the **[!UICONTROL Interactive Media]** component for any interactive assets such as interactive video, interactive images, or carousel sets. For all other dynamic media components, use the **[!UICONTROL Dynamic Media]** component.
+[!UICONTROL Dynamic Media] and [!UICONTROL Interactive Media] are available in the [!UICONTROL Sidekick] under **[!UICONTROL Dynamic Media.]** You use the **[!UICONTROL Interactive Media]** component for any interactive assets such as interactive video, interactive images, or carousel sets. For all other Dynamic Media components, use the **[!UICONTROL Dynamic Media]** component.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
@@ -58,7 +54,7 @@ The Dynamic Media component is smart&mdash;depending on whether you add an image
 >When you add the [!UICONTROL Dynamic Media] component, and **[!UICONTROL Dynamic Media Settings]** is blank or you cannot add an asset properly, check the following:
 >
 >* You have [enabled Dynamic Media](/help/assets/config-dynamic.md). Dynamic Media is disabled by default.
->* The image has a pyramid tiff file. Images imported before dynamic media is enabled do not have a pyramid tiff file.
+>* The image has a pyramid tiff file. Images imported before Dynamic Media is enabled do not have a pyramid tiff file.
 >
 
 #### When working with images {#when-working-with-images}
