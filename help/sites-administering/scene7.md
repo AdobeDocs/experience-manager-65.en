@@ -24,7 +24,7 @@ For information on using all the Dynamic Media Classic components on a page and 
 
 ## AEM/Dynamic Media Classic integration versus Dynamic Media {#aem-scene-integration-versus-dynamic-media}
 
-AEM users have a choice between two solutions to work with dynamic media: Either integrating their instance of AEM with Dynamic Media Classic or using the Dynamic Media solution that is integrated into AEM.
+AEM users have a choice between two solutions to work with Dynamic Media: Either integrating their instance of AEM with Dynamic Media Classic or using the Dynamic Media solution that is integrated into AEM.
 
 Use the following criteria to determine which solution to choose:
 
