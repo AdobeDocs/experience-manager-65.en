@@ -14,7 +14,9 @@ user-guide-description: Understand how to use and administer Experience Manager 
   + [Magento Integration](architecture/magento.md)
   + [3rd Party Commerce Integration](architecture/third-party.md)
 + [Getting started](getting-started.md)
-+ [Develop with AEM Cloud Service SDK](develop.md)
++ Develop {#develop}
+    + [Develop with AEM 6.5 OPT](develop-opt.md)
+    + [Develop with AEM 6.5 AMS](develop-ams.md)
 + Configure {#configure}
     + [Multi-Template Usage](configuring/multi-template-usage.md)
     + [Multi-Store Setup](configuring/multi-store-setup.md)
