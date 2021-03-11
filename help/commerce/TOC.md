@@ -11,18 +11,19 @@ user-guide-description: Understand how to use and administer Experience Manager 
 + [Introduction](overview.md)
 + [Notable Changes](changes.md)
 + Architecture {#architecture}
-  + [Magento Integration](architecture/magento.md)
-  + [3rd Party Commerce Integration](architecture/third-party.md)
+  + [Magento Integration](magento.md)
+  + [3rd Party Commerce Integration](third-party-commerce.md)
 + [Getting started](getting-started.md)
++ Authoring {#authoring}
+    + [Multi-Store Setup](multi-store-setup.md)
 + Develop {#develop}
     + [Develop with AEM 6.5 OPT](develop-opt.md)
     + [Develop with AEM 6.5 AMS](develop-ams.md)
 + Configure {#configure}
-    + [Multi-Template Usage](configuring/multi-template-usage.md)
-    + [Multi-Store Setup](configuring/multi-store-setup.md)
-    + [Configuring URLs for SEO](configuring/advanced-url-configuration.md)
-    + [Caching Options](configuring/caching.md)
+    + [Multi-Template Usage](config-multi-template-usage.md)
+    + [Configuring URLs for SEO](config-advanced-url.md)
+    + [Caching Options](config-caching.md)
 + Customize {#customize}
-    + [Styling CIF Components](customizing/style-cif-component.md)
-    + [Customizing CIF Components](customizing/customize-cif-components.md)
+    + [Styling CIF Components](dev-style-cif-component.md)
+    + [Customizing CIF Components](dev-customize-cif-components.md)
 + [FAQ](faq.md)
