@@ -31,7 +31,7 @@ Consult the appropriate application server documentation for more information on
 
 >[!NOTE]
 >
->If you are using Dynamic Media in a WAR deployment, please see the [dynamic media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>If you are using Dynamic Media in a WAR deployment, please see the [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 ## General Description {#general-description}
 
