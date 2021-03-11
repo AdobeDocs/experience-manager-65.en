@@ -113,7 +113,7 @@ Perform the following steps to show complete fragments in forms:
 
 1. Go to AEM web console configuration page at https:[*host*]:[*port*]/system/console/configMgr.
 
-1. Search and click **[!UICONTROL Adaptive Form Configuration Service]** to open it in edit mode.
+1. Search and click **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** to open it in edit mode.
 1. Disable **[!UICONTROL Enable Placeholder in place of Fragment]** checkbox to show complete fragments rather than the placeholder image.
 
 ### Insert a fragment in an adaptive form {#insert-a-fragment-in-an-adaptive-form}
