@@ -1,16 +1,16 @@
 ---
-title: AEM Commerce as a Cloud Service
-description: AEM Commerce as a Cloud Service self-help resources and documentation links
+title: AEM Commerce
+description: AEM Commerce self-help resources and documentation links
 ---
 
-# AEM Commerce as a Cloud Service {#commerce-guide}
+# AEM Commerce {#commerce-guide}
 
-This page lists the self-help resources regarding AEM Commerce as a Cloud Service.
+This page lists the self-help resources regarding AEM Commerce.
 
 ## Key Commerce Articles {#key-articles}
 
-* [Introduction of AEM Commerce as a Cloud Service](overview.md)
-* [Architecture of AEM Commerce as a Cloud Service](architecture/magento.md)
+* [Introduction of AEM Commerce](overview.md)
+* [Architecture of AEM Commerce](architecture/magento.md)
 * [Getting Started](getting-started.md)
 
 ## Experience Manager as a Cloud Service Guides {#aem-guides}

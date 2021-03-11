@@ -1,9 +1,9 @@
 ---
-title: Notable changes to AEM Commerce as a Cloud Service
-description: Notable changes to AEM Commerce as a Cloud Service as compared to Adobe Experience Manager 6.5.
+title: Notable changes to AEM Commerce
+description: Notable changes to AEM Commerce as compared to Adobe Experience Manager 6.5.
 ---
 
-# Notable changes to AEM Commerce as a Cloud Service {#notable-changes}
+# Notable changes to AEM Commerce {#notable-changes}
 
 Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. This document highlights the important differences for Commerce capabilities between Commerce Integration Framework (CIF) for On-premise, Adobe Managed Service and Experience Manager as a Cloud Service. For other changes, see the generic [changes to Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
@@ -33,7 +33,7 @@ Shown below are the different deployment models for Commerce Integration Framewo
 >
 >CIF Classic/Quickstart version of Commerce Integration Framework may be used on AEM On-premise offering for very limited use-cases. However, this is not the recommended solution.
 
-## Moving to AEM Commerce as a Cloud Service from On-premise and Managed Services {#moving-cif-cs}
+## Moving to AEM Commerce from On-premise and Managed Services {#moving-cif-cs}
 
 Customers moving from an AEM on-premise or Managed Services installation to AEM as a Cloud Service need to do a few minor adjustments on the AEM project.
 

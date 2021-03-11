@@ -1,5 +1,5 @@
 ---
-title: Getting started with AEM Commerce as a Cloud Service
+title: Getting started with AEM Commerce
 description: Learn how to deploy a commerce-enabled AEM project to a running AEM as a Cloud service environment. Use features of Adobe Cloud Manager and a CI/CD pipeline to build the Venia reference storefront to a running environment.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
@@ -9,18 +9,18 @@ kt: 4947
 thumbnail: 37843.jpg
 ---
 
-# Getting started with AEM Commerce as a Cloud Service {#start}
+# Getting started with AEM Commerce {#start}
 
-To get started with AEM Commerce as a Cloud Service, your Experience Manager Cloud Service needs to be provisioned with the Commerce Integration Framework (CIF) add-on. The CIF add-on is an additional module on top of [AEM Sites as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html).
+To get started with AEM Commerce, your Experience Manager Cloud Service needs to be provisioned with the Commerce Integration Framework (CIF) add-on. The CIF add-on is an additional module on top of [AEM Sites as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 ## Onboarding {#onboarding}
 
-The onboarding for AEM Commerce as a Cloud Service is a two-step process:
+The onboarding for AEM Commerce is a two-step process:
 
-1. Get AEM Commerce as a Cloud Service enabled and the CIF add-on provisioned
-2. Connect AEM Commerce as a Cloud Service with your Magento environment
+1. Get AEM Commerce enabled and the CIF add-on provisioned
+2. Connect AEM Commerce with your Magento environment
 
 The first step is done by Adobe. You will need to provide information such as the IMS organization, the GraphQL endpoint URL of your Magento environment, etc. as part of the provisioning process. For more details on pricing and provisioning, you need to reach out to your sales representative.
 
@@ -59,7 +59,7 @@ To connect AEM Commerce with Magento follow these steps:
 >
 >Alternatively you can use the [Cloud Manger API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) to configure the Cloud Manager variables as well.
 
-With this, you are ready to use AEM Commerce as a Cloud Service and can deploy your project via Cloud Manager.
+With this, you are ready to use AEM Commerce and can deploy your project via Cloud Manager.
 
 ## Enable Staged Catalog Features (Optional) {#staging}
 
@@ -79,4 +79,4 @@ With this, you are ready to use AEM Commerce as a Cloud Service and can deploy y
 
 ## 3rd party commerce integrations {#integrations}
 
-For 3rd party commerce integrations, an [API mapping layer](architecture/third-party.md) is needed to connect AEM Commerce as a Cloud Service and CIF Core Components with your commerce system. This API mapping layer is typically deployed on Adobe I/O Runtime. Contact your sales representative for available integrations and access to Adobe I/O Runtime.
+For 3rd party commerce integrations, an [API mapping layer](architecture/third-party.md) is needed to connect AEM Commerce and CIF Core Components with your commerce system. This API mapping layer is typically deployed on Adobe I/O Runtime. Contact your sales representative for available integrations and access to Adobe I/O Runtime.
