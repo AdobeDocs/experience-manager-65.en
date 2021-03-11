@@ -13,7 +13,7 @@ mini-toc-levels: 1
 | -------- | ---------------------------- |
 | Version  | 6.5.8.0                      |
 | Type     | Service Pack Release         |
-| Date     | February 25, 2021                |
+| Date     | March 11, 2021                |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.8.zip) |
 
 <!-- TBD: Update the SD link when SP8 is available. Same link is duplicated below in install -->
@@ -33,7 +33,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Sorting the Live Copy pages available for rollout using the [!UICONTROL Name], [!UICONTROL Last modified date,] and [!UICONTROL Last rollout date] properties.
 
-* The built-in repository (Apache Jackrabbit Oak) is updated. <!-- TBD: Mention the version -->
+* The built-in repository (Apache Jackrabbit Oak) is updated to 1.22.6. <!-- TBD: Mention the version -->
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.8.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8](new-features-latest-service-pack.md).
 
@@ -45,7 +45,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 * Tizen based player fails to authenticate on certain browsers. The issue occurs with browsers that do not support the samesite=none attribute (NPR-35589).
 * An unlocked responsive container does not display allowed components (NPR-35565).
 * When you create a live copy of a newly added page, the language master creates two copies for each domain (NPR-35545).
-* The timer thread-locks sometimes and blocks some other threads. Hence, the AEM instance stops responding for an indefinite time (NPR-35534).
+* The timer thread-locks sometimes and blocks some other threads. Hence, the AEM instance stops responding for an indefinite time (GRANITE-33125).
 * When you search a specific asset in the side rail, the result contains some not-searched assets (NPR-35524).
 * When you enable SSL for an Experience Manager instance, the context path is removed (NPR-35477).
 * When you create a list, add some text as the first element, add a table as the second element, and add a list inside the table, the parent list distorts (NPR-35465).
@@ -183,7 +183,7 @@ To install the service pack on an [!DNL Adobe Experience Manager] 6.5 instance, 
 
 1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
 
-1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.7.zip).
+1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.8.zip).
 
 1. Open Package Manager and click **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
 
@@ -219,7 +219,7 @@ To know the platforms certified to work with this release, see the [technical re
 
 ### UberJar {#uber-jar}
 
-The UberJar for Experience Manager 6.5.8.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.7/).
+The UberJar for Experience Manager 6.5.8.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.8/).
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -274,9 +274,9 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.8.0:
 
-* [List of OSGi bundles included in Experience Manager 6.5.8.0](assets/6570_bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.8.0](assets/6580_bundles.txt)
 
-* [List of Content Packages included in Experience Manager 6.5.8.0](assets/6570_packages.txt)
+* [List of Content Packages included in Experience Manager 6.5.8.0](assets/6580_packages.txt)
 
 ## Restricted websites {#restricted-sites}
 
