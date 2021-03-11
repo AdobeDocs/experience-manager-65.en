@@ -995,6 +995,7 @@ Advanced use cases could use a manual configure `icc=` modifier to explicitly se
 >
 >The standard set of Adobe color profiles is only available if you have [Feature Pack 12445 from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installed. All feature packs and service packs are available at [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445 provides the Adobe color profiles.
 
+
 ### Installing Feature Pack 12445 {#installing-feature-pack}
 
 To use the Dynamic Media color management capabilities, install feature pack 12445.
