@@ -36,11 +36,11 @@ The CIF add-On provides access to commerce authoring tooling such as Product Con
 
 ### AEM CIF Core Components {#aem-cif-core}
 
-The AEM CIF Core Components are server-side and client-side rendered components with Magento GraphQL support. They're used to create static, cacheable and SEO-friendly commerce storefornt based on AEM technologies.
+The AEM CIF Core Components are server-side and client-side rendered components with Magento GraphQL support. They're used to create static, cacheable and SEO-friendly commerce storefront based on AEM technologies.
 
 Basic components are provided, common across commerce implementations such as Product Detail, Product List, Navigation, Search, etc. They can be used as-is or be extended.
 
-The [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) work like the [AEM Sites Core Components](https://github.com/adobe/aem-core-wcm-components) but are dedicated to commerce specific use-cases.
+The [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) work like the [AEM Sites Core Components](https://github.com/adobe/aem-core-wcm-components) but are dedicated to commerce-specific use-cases.
 
 These components key benefits are:
 
@@ -82,7 +82,7 @@ The CIF extension layer is a middle layer to host complex business logic. It run
 
 ### CIF Integration Layer {#cif-integration-layer}
 
-The CIF integration layer is used to standardize integrations with other commerce solutions. It runs on the Adobe I/O Runtime platform which is Adobe's serverless platform and enables integrations at a microservice level by mapping third party APIs against the Adobe Commerce APIs. To help you get started on building third party integrations with AEM, we have created a [reference implementation](https://github.com/adobe/commerce-cif-graphql-integration-reference) to demonstrate how a non-Magento commerce backend can be integrated via Adobe Commerce APIs (Magento GraphQL APIs). 
+The CIF integration layer is used to standardize integrations with other commerce solutions. It runs on the Adobe I/O Runtime platform which is Adobe's serverless platform and enables integrations at a microservice level by mapping third-party APIs against the Adobe Commerce APIs. To help you get started on building third-party integrations with AEM, we have created a [reference implementation](https://github.com/adobe/commerce-cif-graphql-integration-reference) to demonstrate how a non-Magento commerce backend can be integrated via Adobe Commerce APIs (Magento GraphQL APIs). 
 
 ## AEM Commerce Integration Patterns {#aem-commerce-integration}
 

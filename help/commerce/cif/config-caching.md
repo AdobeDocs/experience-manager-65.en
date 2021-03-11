@@ -29,7 +29,7 @@ This is typically configured with the following cache entry:
 com.adobe.cq.commerce.core.search.services.SearchFilterService:true:10:3600
 ```
 
-Another example scenario where the GraphQl caching feature is recommended to be used is the navigation component because it sends the same GraphQL query on all pages. In this case, the cache entry would be typically set to:
+Another example scenario where the GraphQL caching feature is recommended to be used is the navigation component because it sends the same GraphQL query on all pages. In this case, the cache entry would be typically set to:
 
 ```
 venia/components/structure/navigation:true:10:600

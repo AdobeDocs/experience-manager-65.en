@@ -12,7 +12,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
 + [Notable Changes](changes.md)
 + Architecture {#architecture}
   + [Magento Integration](magento.md)
-  + [3rd Party Commerce Integration](third-party-commerce.md)
+  + [Third Party Commerce Integration](third-party-commerce.md)
 + [Getting started](getting-started.md)
 + Authoring {#authoring}
     + [Multi-Store Setup](multi-store-setup.md)

@@ -49,7 +49,7 @@ To connect AEM Commerce with Magento follow these steps:
 
     See [CLI docs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) for details.
 
-    The Magento GraphQL endpoint URL must point to Magento's GraphQl service and use a secure HTTPS connection. For example: `https://demo.magentosite.cloud/graphql`.
+    The Magento GraphQL endpoint URL must point to Magento's GraphQL service and use a secure HTTPS connection. For example: `https://demo.magentosite.cloud/graphql`.
 
 >[!TIP]
 >
