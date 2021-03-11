@@ -125,7 +125,7 @@ The Dynamic Media component is smart. Depending on whether you add an image or a
 When you add the Dynamic Media component, and **[!UICONTROL Dynamic Media Settings]** is blank or you cannot add an asset properly, check the following:
 
 * You have [enabled Dynamic Media](/help/assets/config-dynamic.md). Dynamic Media is disabled by default.
-* The image has a pyramid tiff file. Images imported before dynamic media is enabled do not have a pyramid tiff file.
+* The image has a pyramid tiff file. Images imported before Dynamic Media is enabled do not have a pyramid tiff file.
 
 #### When working with images {#when-working-with-images}
 

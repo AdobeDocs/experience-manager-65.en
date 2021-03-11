@@ -264,7 +264,7 @@ The following graphic shows the overall authoring workflow of videos that are up
 
 ## Best practices for encoding videos {#best-practices-for-encoding-videos}
 
-The **Dynamic Media Encode Video** workflow encodes video if you have enabled dynamic media and set up video cloud services. This workflow captures workflow process history and failure information. See [Monitoring video encoding and YouTube publishing progress](#monitoring-video-encoding-and-youtube-publishing-progress). If you have enabled dynamic media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using dynamic media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
+The **Dynamic Media Encode Video** workflow encodes video if you have enabled Dynamic Media and set up video cloud services. This workflow captures workflow process history and failure information. See [Monitoring video encoding and YouTube publishing progress](#monitoring-video-encoding-and-youtube-publishing-progress). If you have enabled Dynamic Media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
 
 The following are best-practice tips for encoding source video files.
 
