@@ -45,7 +45,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 * Tizen based player fails to authenticate on certain browsers. The issue occurs with browsers that do not support the samesite=none attribute (NPR-35589).
 * An unlocked responsive container does not display allowed components (NPR-35565).
 * When you create a live copy of a newly added page, the language master creates two copies for each domain (NPR-35545).
-* The timer thread-locks sometimes and blocks some other threads. Hence, the AEM instance stops responding for an indefinite time (GRANITE-33125).
+* Deadlock in the SCR Component Registry when many threads are blocked due to `org.apache.felix.scr.impl.ComponentRegistry` timer. As a result, [!DNL Experience Manager] stops responding for an indefinite time (GRANITE-33125,FELIX-6252).
 * When you search a specific asset in the side rail, the result contains some not-searched assets (NPR-35524).
 * When you enable SSL for an Experience Manager instance, the context path is removed (NPR-35477).
 * When you create a list, add some text as the first element, add a table as the second element, and add a list inside the table, the parent list distorts (NPR-35465).
