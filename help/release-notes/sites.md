@@ -103,7 +103,11 @@ See the following for AEM Sites 6.5 enhancements in detail:
 
 >[!CAUTION]
 >
->at.js 2.x is not supported with AEM at the point of the AEM 6.5 release. Please use latest version of at.js 1.x
+>Currently:
+>
+>* Only `at.js 1.x` is supported if you are using Adobe Target as your targeting engine within AEM's Activities console. 
+>
+>* Both `at.js. 1.x` and `at.js 2.x` are supported if you are using Experience Fragment export to Target and running Activities within Target's console. 
 
 * Adobe Target integration is can now use the Target Standard API. Earlier versions of AEM use the Target Classic HTTP API which is now deprecated.
 * Adobe Target `mbox.js` version 63 is included. Adobe strongly recommends to switch implementation to `at.js` v1.x.
