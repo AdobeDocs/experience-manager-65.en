@@ -218,4 +218,4 @@ To troubleshoot common errors, follow these steps:
 
 * If remote references are not retrieved and results in an error message, check if Sites deployment is available and check for network connectivity issues. Retry later to check. [!DNL Assets] deployment attempts twice to establish connection with [!DNL Sites] deployment and then reports a failure.
 
-![failure to retried asset remote references](assets/reference-report-failure.png)
+  ![failure to retried asset remote references](assets/reference-report-failure.png)
