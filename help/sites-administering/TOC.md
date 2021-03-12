@@ -90,6 +90,7 @@ user-guide-description: Learn about administering AEM.
     + [Principal View for Permissions Management](touch-ui-principal-view.md)
     + [Content Disposition Filter](content-disposition-filter.md)
     + [Custom User Group Mapping in AEM 6.5](/help/sites-administering/cug-mapping.md)
+    + [Same Site Cookie Support](same-site-cookie-support.md)
 + Personalization {#personalization}
     + [Personalization](personalization.md)
     + [Configuring ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
