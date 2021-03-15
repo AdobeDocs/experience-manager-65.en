@@ -201,7 +201,7 @@ There are two ways to automatically install Adobe Experience Manager 6.5.8.0 on 
 
 A. Place the package into `../crx-quickstart/install` folder when the server is available online. The package is automatically installed.
 
-B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html). Use `cmd=install&recursive=true` so that the nested packages are installed.
+B. Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Use `cmd=install&recursive=true` so that the nested packages are installed.
 
 >[!NOTE]
 >
