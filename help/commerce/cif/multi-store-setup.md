@@ -33,7 +33,7 @@ To connect an AEM site and AEM CIF Core Components so too to a dedicated store v
 
 3. Create a child configuration of the CIF Cloud Service config following these steps:
 
-   * In AEM go to Tools -> General -> [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * In AEM go to Tools -> General -> [Configuration Browser](//help/sites-administering/configurations.md)
    * Select the base configuration you created
    * Create a new configuration using the steps described at point 2 above
 
@@ -52,4 +52,4 @@ To connect an AEM site and AEM CIF Core Components so too to a dedicated store v
 * [Magento Websites, Stores & Views](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF Core Components - Multi store / site configuration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [Using Multi-Site Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [Reusing Content: Multi Site Manager and Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html)
+* [Reusing Content: Multi Site Manager and Live Copy](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm.html)

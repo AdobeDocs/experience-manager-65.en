@@ -27,7 +27,7 @@ The main benefits are:
 
 ## CIF Elements {#cif-elements}
 
-![CIF Elements](/help/commerce-cloud/assets/cif-overview1.jpg)
+![CIF Elements](/help/commerce/cif/assets/cif-overview1.jpg)
 
 
 ### CIF add-On for Authoring tools {#add-on-authoring-tools}
@@ -74,7 +74,7 @@ The AEM Venia Storefront project is open source and for more details, refer to [
 
 ### AEM Project Archetype {#aem-project-archtype}
 
-The [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) can be used to create a minimal, best-practices-based Adobe Experience Manager project as a starting point for your own AEM projects. Optionally [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) can be included into a newly generated project.
+The [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) can be used to create a minimal, best-practices-based Adobe Experience Manager project as a starting point for your own AEM projects. Optionally [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) can be included into a newly generated project.
 
 ### CIF Extension Layer {#cif-extension}
 
@@ -88,7 +88,7 @@ The CIF integration layer is used to standardize integrations with other commerc
 
 Some of the commonly implemented AEM Commerce integration patterns are shown below.
 
-![AEM CIF Integration Patterns](/help/commerce-cloud/assets/aem-cif-integration-patterns-updated.JPG)
+![AEM CIF Integration Patterns](/help/commerce/cif/assets/aem-cif-integration-patterns-updated.JPG)
 
 
 ### Integration Pattern 1 {#integration-pattern-one}

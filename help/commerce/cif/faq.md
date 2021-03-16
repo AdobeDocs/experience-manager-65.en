@@ -82,7 +82,7 @@ PIM data gets exposed to AEM and clients via GraphQL requests. Our recommendatio
 
 ## 19. How can we ensure PCI compliance when using AEM for the entire presentation layer?
 
-When using AEM on AMS and Magento cloud deployment, it is mandatory to use abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or Magento clouds hold or pass cardholder data. This approach provides coverage for PCI compliance for the tech stacks and data centers. However, there are additional things to consider to be fully PCI compliant such as how employees interact with the system and data. For more information about Magento PCI compliance, please refer to https://magento.com/pci-compliance
+When using AEM on AMS and Magento cloud deployment, it is mandatory to use abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or Magento clouds hold or pass cardholder data. This approach provides coverage for PCI compliance for the tech stacks and data centers. However, there are additional things to consider to be fully PCI compliant such as how employees interact with the system and data. For more information about Magento PCI compliance, please refer to [MAGENTO'S APPROACH TO PCI COMPLIANCE](https://magento.com/pci-compliance)
 
 ## 20. How can I request for an I/O Runtime trial license?
 

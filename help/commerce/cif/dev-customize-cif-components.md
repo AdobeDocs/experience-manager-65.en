@@ -24,11 +24,11 @@ The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a refe
 
 The Venia brand recently started manufacturing some products using sustainable materials and the business would like to display an **Eco Friendly** badge as part of the Product Teaser. A new custom attribute will be created in Magento to indicate if a product uses the **Eco friendly** material. This custom attribute will then be added as part of the GraphQL query and displayed on the Product Teaser for specified products.
 
- ![Eco Friendly Badge Final Implementation](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
+ ![Eco Friendly Badge Final Implementation](/help/commerce/cif/assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
 ## Prerequisites {#prerequisites}
 
-A local development environment is required to complete this tutorial. This includes a running instance of AEM that is configured and connected to a Magento instance. Review the requirements and steps for [setting up a local development with AEM as a Cloud Service SDK](../develop.md). To follow the tutorial completely, you will need permissions to add [Attributes to a Product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Magento.
+A local development environment is required to complete this tutorial. This includes a running instance of AEM that is configured and connected to a Magento instance. Review the requirements and steps for [setting up a local development with AEM as a Cloud Service SDK](/help/commerce/cif/develop-ams.md). To follow the tutorial completely, you will need permissions to add [Attributes to a Product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Magento.
 
 You will also need GraphQL IDE such as [GraphiQL](https://github.com/graphql/graphiql) or a browser extension to run the code samples and tutorials. If you install a browser extension, make sure it has the ability to set request headers. On Google Chrome, [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) is one extension that can do the job.
 
@@ -59,7 +59,7 @@ We will clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia)
 
     You should see that the storefront currently is using the Venia theme. Expanding the Main Menu of the storefront, you should see various categories, indicating that the connection Magento is working.
 
-    ![Storefront Configured with Venia Theme](../assets/customize-cif-components/venia-store-configured.png)
+    ![Storefront Configured with Venia Theme](/help/commerce/cif/assets/customize-cif-components/venia-store-configured.png)
 
 ## Author the Product Teaser {#author-product-teaser}
 
@@ -69,11 +69,11 @@ The Product Teaser Component will be extended throughout this tutorial. As a fir
 
 2. Insert a new **Product Teaser** Component into the main layout container on the page.
 
-    ![Insert Product Teaser](../assets/customize-cif-components/product-teaser-add-component.png)
+    ![Insert Product Teaser](/help/commerce/cif/assets/customize-cif-components/product-teaser-add-component.png)
 
 3. Expand the Side Panel (if not already toggled) and switch the asset finder dropdown to **Products**. This should display a list of available products from a connected Magento instance. Select a product and **drag+drop** it onto the **Product Teaser** component on the page.
 
-    ![Drag + Drop Product Teaser](../assets/customize-cif-components/drag-drop-product-teaser.png)
+    ![Drag + Drop Product Teaser](/help/commerce/cif/assets/customize-cif-components/drag-drop-product-teaser.png)
 
     >[!NOTE]
     >
@@ -81,7 +81,7 @@ The Product Teaser Component will be extended throughout this tutorial. As a fir
 
 4. You should now see a Product being displayed by the Product Teaser. The Name of the product and the Price of the product are default attributes that are displayed.
 
-    ![Product Teaser - default style](../assets/customize-cif-components/product-teaser-default-style.png)
+    ![Product Teaser - default style](/help/commerce/cif/assets/customize-cif-components/product-teaser-default-style.png)
 
 ## Add a custom attribute in Magento {#add-custom-attribute}
 
@@ -95,7 +95,7 @@ The products and product data displayed in AEM are stored in Magento. Next add a
 1. Navigate to **Catalog** > **Products**.
 1. Update the search filter to find the **Configurable Product** used when added to the Teaser component in the previous exercise. Open the product in edit mode.
 
-    ![Search for Valeria Product](../assets/customize-cif-components/search-valeria-product.png)
+    ![Search for Valeria Product](/help/commerce/cif/assets/customize-cif-components/search-valeria-product.png)
 
 1. From the product view, click **Add Attribute** > **Create New Attribute**.
 1. Fill out the **New Attribute** form with the following values (leave default settings for other values)
@@ -106,13 +106,13 @@ The products and product data displayed in AEM are stored in Magento. Next add a
     | Attribute Properties | Catalog Input Type | **Yes/No** |
     | Advanced Attribute Properties | Attribute Code | **eco_friendly** |
 
-    ![New Attribute form](../assets/customize-cif-components/attribute-new-form.png)
+    ![New Attribute form](/help/commerce/cif/assets/customize-cif-components/attribute-new-form.png)
 
     Click **Save Attribute** when finished.
 
 1. Scroll to the bottom of the product and expand the **Attributes** heading. You should see the new **Eco Friendly** field. Switch the toggle to **Yes**.
 
-    ![Switch toggle to yes](../assets/customize-cif-components/eco-friendly-toggle-yes.png)
+    ![Switch toggle to yes](/help/commerce/cif/assets/customize-cif-components/eco-friendly-toggle-yes.png)
 
     **Save** the changes to the product.
 
@@ -123,7 +123,7 @@ The products and product data displayed in AEM are stored in Magento. Next add a
 1. Navigate to **System** > **Tools** > **Cache Management**. Since an update has been made to the data schema we need to invalidate some of the Cache Types in Magento.
 1. Check the box next to **Configuration** and submit the cache type for **Refresh**
 
-    ![Refresh Configuration Cache Type](../assets/customize-cif-components/refresh-configuration-cache-type.png)
+    ![Refresh Configuration Cache Type](/help/commerce/cif/assets/customize-cif-components/refresh-configuration-cache-type.png)
 
     >[!TIP]
     >
@@ -170,7 +170,7 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
     }
     ```
 
-    ![Sample GraphQL response](../assets/customize-cif-components/sample-graphql-query.png)
+    ![Sample GraphQL response](/help/commerce/cif/assets/customize-cif-components/sample-graphql-query.png)
 
     Note that the value of **Yes** is an integer of **1**. This will be useful when we write the GraphQL query in Java.
 
@@ -188,7 +188,7 @@ Use [the IDE of your choice](https://docs.adobe.com/content/help/en/experience-m
 
 1. In your IDE, navigate under the **core** module to: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
 
-   ![Core location IDE](../assets/customize-cif-components/core-location-ide.png)
+   ![Core location IDE](/help/commerce/cif/assets/customize-cif-components/core-location-ide.png)
 
    `MyProductTeaser.java` is a Java Interface that that extends the CIF [ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) interface.
 
@@ -333,7 +333,7 @@ In our case we want to render a banner on top of the teaser to indicate that the
 
 1. In the IDE, navigate and expand the `ui.apps` module and expand the folder hierarchy to: `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` and inspect the `.content.xml` file.
 
-   ![Product Teaser ui.apps](../assets/customize-cif-components/product-teaser-ui-apps-ide.png)
+   ![Product Teaser ui.apps](/help/commerce/cif/assets/customize-cif-components/product-teaser-ui-apps-ide.png)
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -398,7 +398,7 @@ In our case we want to render a banner on top of the teaser to indicate that the
 
 1. Refresh to the **Venia Home Page** at [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) where the Product Teaser has been added.
 
-    ![Eco Friendly message displayed](../assets/customize-cif-components/eco-friendly-text-displayed.png)
+    ![Eco Friendly message displayed](/help/commerce/cif/assets/customize-cif-components/eco-friendly-text-displayed.png)
 
     If the product has the `eco_friendly` attribute set to **Yes**, you should see the text "Eco Friendly" on the page. Try switching to different products to see the behavior change.
 
@@ -421,11 +421,11 @@ In our case we want to render a banner on top of the teaser to indicate that the
 
 At this point the logic for when to display the **Eco Friendly** badge is working, however the plain text could use some styles. Next add an icon and styles to the `ui.frontend` module to complete the implementation.
 
-1. Download the [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) file. This will be used as the **Eco Friendly** badge.
+1. Download the [eco_friendly.svg](/help/commerce/cif/assets/customize-cif-components/eco_friendly.svg) file. This will be used as the **Eco Friendly** badge.
 1. Return to the IDE and navigate to the `ui.frontend` folder.
 1. Add the `eco_friendly.svg` file to the `ui.frontend/src/main/resources/images` folder:
 
-    ![Eco Friendly SVG added](../assets/customize-cif-components/eco-friendly-svg-added.png)
+    ![Eco Friendly SVG added](/help/commerce/cif/assets/customize-cif-components/eco-friendly-svg-added.png)
 
 1. Open the file `productteaser.scss` at `ui.frontend/src/main/styles/commerce/_productteaser.scss`.
 1. Add the following Sass rules inside the `.productteaser` class:
@@ -467,17 +467,17 @@ At this point the logic for when to display the **Eco Friendly** badge is workin
 
 1. Refresh to the **Venia Home Page** at [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) where the Product Teaser has been added.
 
-    ![Eco Friendly Badge Final Implementation](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
+    ![Eco Friendly Badge Final Implementation](/help/commerce/cif/assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
 ## Congratulations {#congratulations}
 
-You just customized your first AEM CIF component! Download the [finished solution files here](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
+You just customized your first AEM CIF component! Download the [finished solution files here](/help/commerce/cif/assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
 ## Bonus Challenge {#bonus-challenge}
 
 Review the functionality of the **New** badge that has already be implemented in the Product Teaser. Try to add an additional checkbox for authors to control when the **Eco Friendly** badge should be displayed. You will need to update the component dialog at `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
 
-![New Badge Implementation challenge](../assets/customize-cif-components/new-badge-implementation-challenge.png)
+![New Badge Implementation challenge](/help/commerce/cif/assets/customize-cif-components/new-badge-implementation-challenge.png)
 
 ## Additional Resources {#additional-resources}
 

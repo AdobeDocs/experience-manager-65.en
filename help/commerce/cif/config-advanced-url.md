@@ -69,5 +69,5 @@ The [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia) proje
 ## Additional Resources
 
 * [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM Resource Mapping](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [AEM Resource Mapping](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
