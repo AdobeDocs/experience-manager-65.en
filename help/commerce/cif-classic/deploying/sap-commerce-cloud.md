@@ -140,7 +140,7 @@ The steps in this procedure will download and build the hybris server. It will a
    ```
 
 
-   [Get File](assets/setup.groovy)
+   [Get File](/help/sites-deploying/assets/setup.groovy)
 
    >[!NOTE]
    >
@@ -148,7 +148,7 @@ The steps in this procedure will download and build the hybris server. It will a
 
    5.6.0 and later
 
-   [Get File](assets/setup-1.groovy)
+   [Get File](/help/sites-deploying/assets/setup-1.groovy)
 
 1. From the command line, execute the following to:
 
@@ -201,7 +201,7 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 1. From the sidebar navigation, expland **System** and **Tools**. Then select **Import** to open the **Wizard: CSV Import** window.
 1. In the **Configuration** tab, **Upload** the following **Import file**:
 
-   [Get File](assets/geometrixx-outdoors-export.csv)
+   [Get File](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
 
 1. Set the **Locale Setting** to:
 
@@ -210,7 +210,7 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 1. Open the **Resources** tab.
 1. **Upload** the following **Media-Zip**:
 
-   [Get File](assets/geometrixx-outdoors-images.zip)
+   [Get File](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
 
 1. Click **Start** to import the specified files. The **Result** tab will show any log entries.
 
@@ -220,11 +220,11 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 
 1. **Upload** the following **Import file**:
 
-   [Get File](assets/base-store.csv)
+   [Get File](/help/sites-deploying/assets/base-store.csv)
 
    For hybris 5.7, please use the following:
 
-   [Get File](assets/base-store-5_7.csv)
+   [Get File](/help/sites-deploying/assets/base-store-5_7.csv)
 
 1. Set the **Locale Setting** to:
 

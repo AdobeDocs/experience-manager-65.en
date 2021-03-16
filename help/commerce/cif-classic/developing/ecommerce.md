@@ -22,18 +22,18 @@ The integration framework includes an integration layer with an API. This allows
 
 For more information, see:
 
-* [Developing (generic)](/help/sites-developing/generic.md)
-* [Developing with SAP Commerce Cloud](/help/sites-developing/sap-commerce-cloud.md)
+* [Developing (generic)](/help/commerce/cif-classic/developing/generic.md)
+* [Developing with SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
 
 >[!NOTE]
 >
->Since the eCommerce framework can be used with any eCommerce solution, see [Developing (generic)](/help/sites-developing/generic.md) for more information about developing possibilities.
+>Since the eCommerce framework can be used with any eCommerce solution, see [Developing (generic)](/help/commerce/cif-classic/developing/generic.md) for more information about developing possibilities.
 
 >[!NOTE]
 >
->To use the integration framework with external eCommerce providers, you first need to install the required packages. For more information, see [Deploying eCommerce](/help/sites-deploying/ecommerce.md).
+>To use the integration framework with external eCommerce providers, you first need to install the required packages. For more information, see [Deploying eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->For information about concepts and administering eCommerce implementations, see [Administering eCommerce](/help/sites-administering/ecommerce.md).
+>For information about concepts and administering eCommerce implementations, see [Administering eCommerce](/help/commerce/cif-classic/administering/ecommerce.md).
 
 ## API Documentation {#api-documentation}
 

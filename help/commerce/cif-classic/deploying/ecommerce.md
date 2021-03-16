@@ -34,7 +34,7 @@ For AEM and Magento, please see [AEM and Magento integration](https://www.adobe.
 
 >[!NOTE]
 >
->For information about concepts and administering eCommerce implementations, see [Administering eCommerce](/help/sites-administering/ecommerce.md).
+>For information about concepts and administering eCommerce implementations, see [Administering eCommerce](/help/commerce/cif-classic/administering/ecommerce.md).
 >
->For information about extending eCommerce capabilities, see [Developing eCommerce](/help/sites-developing/ecommerce.md).
+>For information about extending eCommerce capabilities, see [Developing eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
 
