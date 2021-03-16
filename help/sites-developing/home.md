@@ -31,6 +31,7 @@ This guide covers how to build out your AEM instance.
 | [Deploying User Guide](/help/sites-deploying/home.md) | This guide shows you the basics of AEM.  |
 | [Developing User Guide](/help/sites-developing/home.md)| Learn how to build out your AEM instance. |
 | [Managing User Guide](/help/managing/home.md)| This guide describes how to manage an AEM project successfully. |
+| [Commerce User Guide](/help/commerce/home.md)|Learn about Commerce Integration Framework on AEM.|
 | [Mobile User Guide](/help/mobile/home.md)|This guide describes how to create and manage content for mobile applications.|
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | This guide shows you how to share user-generated content with Livefyre. |
 
