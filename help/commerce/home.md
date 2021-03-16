@@ -9,33 +9,34 @@ This page lists the self-help resources regarding AEM Commerce.
 
 ## Key Commerce Articles {#key-articles}
 
-* [Introduction of AEM Commerce](overview.md)
-* [Architecture of AEM Commerce](architecture/magento.md)
-* [Getting Started](getting-started.md)
+* [Introduction of AEM Commerce](/help/commerce/cif/overview.md)
+* [Getting Started](/help/commerce/cif/getting-started.md)
 
-## Experience Manager as a Cloud Service Guides {#aem-guides}
+## AEM 6.5 user guides
 
-|User Guide|Description|
-|---|---|
-|[Experience Manager as a Cloud Service Home](/help/landing/home.md)|For an overview of Experience Manager as a Cloud Service documentation, start here.|
-|[Overview](/help/overview/home.md)|This guide provides an overview of Experience Manager as a Cloud service, including an introduction, terminology, etc.|
-|[Release Notes](/help/release-notes/home.md)|This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what's new deprecated and removed features, and known issues.|
-|[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
-|[Core Concepts](/help/core-concepts/home.md)|This guide provides an introduction to the core concepts of Experience Manager as a Cloud Service, including the architecture of the new service.|
-|[Onboarding](/help/onboarding/home.md)|This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|
-|[Sites User Guide](/help/sites-cloud/home.md)|Understand how to administer Experience Manager Sites as a Cloud Service.|
-|[Assets User Guide](/help/assets/home.md)|Understand how to administer Experience Manager Assets as a Cloud Service.|
-|[Implementing User Guide](/help/implementing/home.md)|Learn how to customize your Experience Manager as a Cloud Service deployment including development deployment topics.|
-|[Connectors User Guide](/help/connectors/home.md)|Learn how to integrate solutions into Experience Manager as a Cloud Service.|
-|[Operations User Guide](/help/operations/home.md)|Learn about the back-end operations of Experience Manager as a Cloud Service such as indexing and maintenance tasks.|
+| User Guide | Description |
+|--- |---|
+| [Release Notes](/help/release-notes/home.md)| Provides important information about the latest release of AEM, including what's new, supported platforms, deprecated and removed features, and known issues. |
+| [Assets User Guide](/help/assets/home.md) | Learn how to create, manage, deliver, and optimize digital assets. |
+| [Forms User Guide](/help/forms/home.md) | This guide describes how to create, manage, publish, and update digital forms.|
+| [Communities User Guide](/help/communities/home.md) | Create online experiences such as forums, user groups, learning resources, and other social features.  |
+| [Administering Guide](/help/sites-administering/home.md) | Understand how to administer AEM |
+| [Authoring Guide](/help/sites-authoring/home.md) | This guide explains the concepts of authoring in AEM. |
+| [Classic UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | This guide explains the concepts of authoring in AEM in the classic user interface. |
+| [Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Learn about the digital signage solution to publish dynamic and interactive digital experiences. |
+| [Deploying User Guide](/help/sites-deploying/home.md) | This guide shows you the basics of AEM.  |
+| [Developing User Guide](/help/sites-developing/home.md)| Learn how to build out your AEM instance. |
+| [Managing User Guide](/help/managing/home.md)| This guide describes how to manage an AEM project successfully. |
+| [Mobile User Guide](/help/mobile/home.md)|This guide describes how to create and manage content for mobile applications.|
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | This guide shows you how to share user-generated content with Livefyre. |
 
-## Other Experience Manager Resources {#other-resources}
+## Key AEM resources
 
-* [Dispatcher Documentation](/help/implementing/dispatcher/overview.md)
-* [HTL Documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [Core Components Documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
-* [GDPR Readiness](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager as a Cloud Service Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [AEM tutorials](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [Dispatcher User Guide](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
+* [HTL User Guide](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+* [Core Components User Guide](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [GDPR Readiness](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
