@@ -456,7 +456,7 @@ At this point the logic for when to display the **Eco Friendly** badge is workin
 
     >[!NOTE]
     >
-    > Check out [Styling CIF Core Components](./style-cif-component.md) for more details around front-end workflows.
+    > Check out [Styling CIF Core Components](/help/commerce/cif/dev-style-cif-component.md) for more details around front-end workflows.
 
 1. Save the changes and deploy the updates to AEM using your Maven skills, from a command line terminal:
 
