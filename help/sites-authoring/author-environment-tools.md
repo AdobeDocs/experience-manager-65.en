@@ -237,7 +237,7 @@ Select the appropriate reference type for more information. In certain situation
 
 * Instances of borrowed and lent content using the **Reference** component, from here you can navigate to the referencing/referenced page
 
-* [References to Product pages](/help/sites-administering/generic.md#showing-product-references) (available from the Commerce-Products console)
+* [References to Product pages](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (available from the Commerce-Products console)
 * [Launches](/help/sites-authoring/launches.md), provides access to related launches
 * [Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.
 * [Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions

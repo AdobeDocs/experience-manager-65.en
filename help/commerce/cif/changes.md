@@ -5,7 +5,7 @@ description: Notable changes to AEM Commerce as compared to Adobe Experience Man
 
 # Notable changes to AEM Commerce {#notable-changes}
 
-Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. This document highlights the important differences for Commerce capabilities between Commerce Integration Framework (CIF) for On-premise, Adobe Managed Service and Experience Manager as a Cloud Service. For other changes, see the generic [changes to Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. This document highlights the important differences for Commerce capabilities between Commerce Integration Framework (CIF) for On-premise, Adobe Managed Service and Experience Manager as a Cloud Service. For other changes, see the generic [changes to Experience Manager](/help/release-notes/release-notes.md#what-s-new).
 
 The main differences as compared to Experience Manager 6.5 are in the following areas:
 * [Support for CIF Classic](#cif-classic)
@@ -37,7 +37,7 @@ Shown below are the different deployment models for Commerce Integration Framewo
 
 Customers moving from an AEM on-premise or Managed Services installation to AEM as a Cloud Service need to do a few minor adjustments on the AEM project.
 
-The first adjustment, as described above, is needed for the CIF Connector. The CIF Connector is replaced by the CIF add-on which is deployed by Adobe. Therefore do not install the CIF Connector on AEM as a Cloud Service. Also, the use with the local AEM Cloud SDK is not supported, Adobe provides the CIF add-on also for [local development](develop.md).
+The first adjustment, as described above, is needed for the CIF Connector. The CIF Connector is replaced by the CIF add-on which is deployed by Adobe. Therefore do not install the CIF Connector on AEM as a Cloud Service. Also, the use with the local AEM Cloud SDK is not supported, Adobe provides the CIF add-on also for [local development](/help/commerce/cif/develop-ams.md).
 
 Second, understand the [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) and the characteristics of AEM as a Cloud Service. Adapt your project setup to the AEM as a Cloud Service layout.
 The main differences here are:

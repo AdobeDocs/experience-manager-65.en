@@ -20,8 +20,8 @@ AEM components are used to hold, format, and render the content made available o
 
 * When [authoring pages](/help/sites-authoring/default-components.md), the components allow the authors to edit and configure the content.
 
-    * When constructing a [Commerce](/help/sites-administering/ecommerce.md) site the components can, for example, collect and render information from the catalog.
-      See [Developing eCommerce](/help/sites-developing/ecommerce.md) for more information.
+    * When constructing a [Commerce](/help/commerce/cif-classic/administering/ecommerce.md) site the components can, for example, collect and render information from the catalog.
+      See [Developing eCommerce](/help/commerce/cif-classic/developing/ecommerce.md) for more information.
 
     * When constructing a [Communities](/help/communities/author-communities.md) site the components can provide information to and collect information from your visitors.
       See [Developing Communities](/help/communities/communities.md) for more information.

@@ -39,7 +39,7 @@ This is available under the English (US) branch ( `/content/geometrixx-outdoors/
 
 ### Technical Requirements - hybris Server {#technical-requirements-hybris-server}
 
-The hybris extension of the eCommerce Integration Framework has been updated to support Hybris 5 (as default), while maintaining backward compatibility with [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris).
+The hybris extension of the eCommerce Integration Framework has been updated to support Hybris 5 (as default), while maintaining backward compatibility with [Hybris 4](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#developing-for-hybris).
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ To install a fully-fledged configuration (using the demonstration catalog, Geome
 
 >[!NOTE]
 >
->For developers [API documentation](/help/sites-developing/ecommerce.md#api-documentation) is also available for download.
+>For developers [API documentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is also available for download.
 
 ### Download and Build your hybris Server {#download-and-build-your-hybris-server}
 

@@ -98,7 +98,7 @@ From Navigation the consoles available are:
   </tr>
   <tr>
    <td>Commerce</td>
-   <td>This allows you to manage products, product catalogs and orders related to your <a href="/help/sites-administering/ecommerce.md">Commerce</a> sites.</td>
+   <td>This allows you to manage products, product catalogs and orders related to your <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a> sites.</td>
   </tr>
   <tr>
    <td>Experience Fragments</td>

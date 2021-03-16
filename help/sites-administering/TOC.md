@@ -148,7 +148,7 @@ user-guide-description: Learn about administering AEM.
     + [MSM Best Practices](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
     + [AEM Sites - GDPR Readiness](gdpr-compliance-sites.md)
     + [Handling GDPR Requests for the AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
-    + [AEM Commerce - GDPR Readiness](https://experienceleague.adobe.com/docs/experience-manager-65/administering/ecommerce/gdpr-compliance-commerce.html)
+    + [AEM Commerce - GDPR Readiness](gdpr-compliance-commerce.md)
 + Content Management {#contentmanagement}
     + [How to Work With Packages](package-manager.md)
     + [Administering Tags](tags.md)
