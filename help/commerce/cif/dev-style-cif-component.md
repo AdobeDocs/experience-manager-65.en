@@ -243,7 +243,7 @@ Next verify the inclusion of the client libraries on the page.
     </html>
     ```
 
-    Client libraries when delivered to the page are prefixed with `/etc.clientlibs` and are served via a [proxy](/help/implementing/developing/introduction/clientlibs.md) to avoid exposing anything sensitive in `/apps` or `/libs`.
+    Client libraries when delivered to the page are prefixed with `/etc.clientlibs` and are served via a [proxy](/help/sites-developing/clientlibs.md) to avoid exposing anything sensitive in `/apps` or `/libs`.
 
     Notice `venia/clientlibs/clientlib-site.min.css` and `venia/clientlibs/clientlib-site.min.js`. These are the compiled CSS and Javascript files derived from the `ui.frontend` module.
 
@@ -476,6 +476,6 @@ Use the [AEM Style system](https://docs.adobe.com/content/help/en/experience-man
 * [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components)
 * [Set up a Local AEM Development Environment](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-* [Client-Side Libraries](/help/implementing/developing/introduction/clientlibs.md)
+* [Client-Side Libraries](/help/sites-developing/clientlibs.md)
 * [Getting Started with AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [Developing with the Style System](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
