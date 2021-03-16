@@ -15,8 +15,8 @@ docset: aem65
 
 # eCommerce{#ecommerce}
 
-* [Concepts](/help/sites-administering/concepts.md)
-* [Administering (generic)](/help/sites-administering/generic.md)
+* [Concepts](/help/commerce/cif-classic/administering/concepts.md)
+* [Administering (generic)](/help/commerce/cif-classic/administering/generic.md)
 
 Adobe provides two versions of the Commerce Integration Framework:
 
@@ -121,9 +121,9 @@ The implementation allows real-time access to product information. This can be u
 
 >[!NOTE]
 >
->To use the integration framework with external eCommerce providers, you first need to install the required packages. For more information, see [Deploying eCommerce](/help/sites-deploying/ecommerce.md).
+>To use the integration framework with external eCommerce providers, you first need to install the required packages. For more information, see [Deploying eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->For information about extending eCommerce capabilities, see [Developing eCommerce](/help/sites-developing/ecommerce.md).
+>For information about extending eCommerce capabilities, see [Developing eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
 
 ## Main Features {#main-features}
 
@@ -182,7 +182,7 @@ AEM eCommerce provides:
 
 ## The Framework {#the-framework}
 
-The [Concepts](/help/sites-administering/concepts.md) section covers the framework in more detail, but the following provides a high-level, high-speed view of the framework:
+The [Concepts](/help/commerce/cif-classic/administering/concepts.md) section covers the framework in more detail, but the following provides a high-level, high-speed view of the framework:
 
 ### What? {#what}
 
