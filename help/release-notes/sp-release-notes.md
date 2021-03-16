@@ -29,7 +29,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * When using [Connected Assets functionality](/help/assets/use-assets-across-connected-assets-instances.md), you can now view a list of all the [!DNL Sites] pages that use the asset. These references to an asset are available in an asset's [!UICONTROL Properties] page. This allows administrators, marketers, and librarians a complete view of assets usage, allowing for better tracking, management, and brand consistency.
 
-* When deleting an asset that is referenced in a web page, [!DNL Experience Manager] displays a warning. You can force delete a referenced asset or check and modify the references that are displayed in the [!DNL Properties] page of the asset. Clicking the references opens the local and remote [!DNL Sites] pages.
+* When deleting an asset that is referenced in a web page, [!DNL Experience Manager] [displays a warning](/help/assets/use-assets-across-connected-assets-instances.md#asset-usage-references). You can force delete a referenced asset or check and modify the references that are displayed in the [!DNL Properties] page of the asset. Clicking the references opens the local and remote [!DNL Sites] pages.
 
 * Sorting the Live Copy pages available for rollout using the [!UICONTROL Name], [!UICONTROL Last modified date,] and [!UICONTROL Last rollout date] properties.
 
@@ -201,7 +201,7 @@ There are two ways to automatically install Adobe Experience Manager 6.5.8.0 on 
 
 A. Place the package into `../crx-quickstart/install` folder when the server is available online. The package is automatically installed.
 
-B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html). Use `cmd=install&recursive=true` so that the nested packages are installed.
+B. Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Use `cmd=install&recursive=true` so that the nested packages are installed.
 
 >[!NOTE]
 >
