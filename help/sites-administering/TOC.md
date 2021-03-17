@@ -107,7 +107,6 @@ user-guide-description: Learn about administering AEM.
     + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
     + [SAP Commerce Cloud](sap-commerce-cloud.md)
     + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-    + [AEM Commerce - GDPR Readiness](gdpr-compliance-commerce.md)
 + Integration {#integration}
     + [Integrating with Third-Party Services](third-party-services.md)
     + [Integrating with Salesforce](salesforce.md)
@@ -156,8 +155,7 @@ user-guide-description: Learn about administering AEM.
     + [MSM Best Practices](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
     + [AEM Sites - GDPR Readiness](gdpr-compliance-sites.md)
     + [Handling GDPR Requests for the AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
-    + [AEM Commerce - GDPR Readiness](https://experienceleague.adobe.com/docs/experience-manager-65/administering/ecommerce/gdpr-compliance-commerce.html)
-+ Content Management {#contentmanagement}
+    + [AEM Commerce - GDPR Readiness](gdpr-compliance-commerce.md)
     + [How to Work With Packages](package-manager.md)
     + [Administering Tags](tags.md)
     + [The Page Exporter](page-exporter.md)
