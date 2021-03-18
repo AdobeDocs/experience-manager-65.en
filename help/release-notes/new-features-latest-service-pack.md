@@ -31,6 +31,22 @@ You can now sort the Live Copy pages available for rollout using the [!UICONTROL
 >
 >The add-on package of [!DNL Experience Manager Forms] is made available a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
+### Show or hide CAPTCHA component in an adaptive form based on rules {#show-hide-captcha}
+
+You can now validate CAPTCHA either on adaptive form submission or on user action. You can also add conditions to validate CAPTCHA on a user action and show or hide the CAPTCHA component in an adaptive form based on rules.
+
+### Add custom CAPTCHA services {#add-custom-captcha-services}
+
+[!DNL Experience Manager Forms] provides out of the box support to use Google reCAPTCHA (A separate license of Google reCAPTCHA APIs is required) as a CAPTCHA validation service. You can also use a custom CAPTCHA service to validate CAPTCHAs.
+
+### Other enhancements {#other-enhancements-forms-6580}
+
+* Improved accessibility of the [!DNL Experience Manager Forms] Date Picker component.
+
+* Added support to generate an Interactive Communication in PCL format using the PrintChannel API.
+
+* When performing a PDFG conversion, you can now enable or disable the [!DNL Experience Manager Forms] registry changes for custom bookmark generation.
+
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
