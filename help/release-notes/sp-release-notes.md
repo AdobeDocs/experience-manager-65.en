@@ -189,12 +189,8 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 
 **XMLFM**
 
-* When you generate an XML document using the Output Service, the following error occurs for some of the XML files (CQ-4311341, CQ-4313893):
+* When you generate an XML document using the Output Service, the `OutputServiceException` error occurs for some of the XML files (CQ-4311341, CQ-4313893).
   
-  ```TXT
-   ERROR [Thread-20842] com.adobe.fd.output.internal.exception.OutputServiceException AEM_OUT_001_003:Unexpected Exception: AEM_OUT_001_003:Unexpected Exception: null
-  ```
-
 * When you apply superscript property to the first character of the bullet, the bullet size gets smaller (CQ-4306476).
 
 * The PDF forms generated using the Output Service do not include borders (CQ-4312564).
