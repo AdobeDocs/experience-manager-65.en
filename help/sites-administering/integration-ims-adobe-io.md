@@ -223,7 +223,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 1. Enter the details in the **Adobe Target Settings** tab:
 
     * **Authentication**: IMS
-    * **Tenant ID**: the Adobe IMS Tenant ID. See also the [Tenant ID and Client Code](#tenant-client) section below.
+    * **Tenant ID**: the Adobe IMS Tenant ID. See also the [Tenant ID and Client Code](#tenant-client) section.
       >[!NOTE]
       >
       >For IMS this value needs to be taken from Target itself. You can log into Target and extract the Tenant ID from the URL.
@@ -233,7 +233,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >Then you would use `yourtenantid`.
-    * **Client Code**: See the [Tenant ID and Client Code](#tenant-client) section below.
+    * **Client Code**: See the [Tenant ID and Client Code](#tenant-client) section.
     * **IMS Configuration**: select the name of the IMS Configuration
     * **API Type**: REST
     * **A4T Analytics Cloud Configuration**: Select the Analytics cloud configuration that is used for target activity goals and metrics. You need this if you are using Adobe Analytics as the reporting source when targeting content. If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
