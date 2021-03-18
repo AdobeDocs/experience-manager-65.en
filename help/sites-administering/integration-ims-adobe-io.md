@@ -246,11 +246,6 @@ The configuration can now be referenced for a Cloud Service to use the Target St
    >[!NOTE]
    >
    >[Configuration of a Cloud Service to use the Target Classic API](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) has been deprecated (uses the Adobe Recommendations Settings tab).
-
-   <!--For example:
-
-   ![](assets/integrate-target-io-14.png) -->
-
 1. Click **Connect to Target** to initialize the connection with Adobe Target.
 
    If the connection is successful, the message **Connection successful** is displayed.
