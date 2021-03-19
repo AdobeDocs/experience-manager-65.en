@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
+role: Developer
 ---
 
 # Rendering Forms as HTML {#rendering-forms-as-html} 

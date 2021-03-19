@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: 1e0a68c5-1583-4103-9dbb-7a53faa03c06
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/third-party-services/machine-translation
+feature: Language Copy
 ---
 
 # Translating Content for Multilingual Sites {#translating-content-for-multilingual-sites}

@@ -12,6 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 
+feature: Upgrading
 ---
 
 # Upgrading Code and Customizations{#upgrading-code-and-customizations}

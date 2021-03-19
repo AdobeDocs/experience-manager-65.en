@@ -1,7 +1,7 @@
 ---
 title: Encryption Support for Configuration Properties
 seo-title: Encryption Support for Configuration Properties
-description: null
+description: Encryption Support for Configuration Properties
 seo-description: null
 uuid: 26dc5e46-9332-4d9b-8874-895b90391e8c
 contentOwner: User

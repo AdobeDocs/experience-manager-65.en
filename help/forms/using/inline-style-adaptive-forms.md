@@ -9,6 +9,7 @@ topic-tags: author
 discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Inline styling of adaptive form components {#inline-styling-of-adaptive-form-components}

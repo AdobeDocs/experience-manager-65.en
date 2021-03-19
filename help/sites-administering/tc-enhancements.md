@@ -8,6 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
+feature: Language Copy
 ---
 
 # Translation Enhancements{#translation-enhancements}

@@ -9,6 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
+role: Developer
 ---
 
 # Working with barcoded forms {#working-with-barcoded-forms} 

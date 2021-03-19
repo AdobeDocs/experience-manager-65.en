@@ -8,6 +8,7 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Tutorial: Testing your adaptive form {#tutorial-testing-your-adaptive-form}

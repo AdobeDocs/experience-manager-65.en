@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
+role: Developer
 ---
 
 # Rendering Interactive PDF Forms {#rendering-interactive-pdf-forms} 

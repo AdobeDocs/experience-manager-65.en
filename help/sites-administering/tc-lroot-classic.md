@@ -10,6 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
 docset: aem65
+feature: Language Copy
 ---
 
 # Creating a Language Root Using the Classic UI{#creating-a-language-root-using-the-classic-ui}

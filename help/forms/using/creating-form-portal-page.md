@@ -10,6 +10,7 @@ topic-tags: publish
 discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 
+feature: Forms Portal
 ---
 
 # Creating a forms portal page{#creating-a-forms-portal-page}

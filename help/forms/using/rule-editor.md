@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Adaptive forms rule editor{#adaptive-forms-rule-editor}

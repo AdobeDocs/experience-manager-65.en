@@ -12,6 +12,7 @@ discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
 
+feature: Upgrading
 ---
 
 # Upgrading to AEM 6.5 {#upgrading-to-aem}

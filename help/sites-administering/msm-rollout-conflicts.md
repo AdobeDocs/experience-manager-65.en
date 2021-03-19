@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
+feature: Multi Site Manager
 ---
 
 # MSM Rollout Conflicts{#msm-rollout-conflicts}

@@ -9,6 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
+role: Developer
 ---
 
 # Protecting Documents with Policies {#protecting-documents-with-policies} 

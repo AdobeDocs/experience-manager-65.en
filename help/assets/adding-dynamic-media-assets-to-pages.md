@@ -9,6 +9,7 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 
+role: Business Practitioner, Administrator
 ---
 
 # Adding Dynamic Media Assets to Pages{#adding-dynamic-media-assets-to-pages}

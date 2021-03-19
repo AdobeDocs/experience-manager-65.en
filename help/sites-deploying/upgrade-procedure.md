@@ -12,6 +12,7 @@ discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
 
+feature: Upgrading
 ---
 
 # Upgrade Procedure {#upgrade-procedure}

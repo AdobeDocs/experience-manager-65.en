@@ -8,6 +8,7 @@ topic-tags: installing
 discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
 
+role: Administrator
 ---
 
 # Install and configure Interactive Communications{#install-and-configure-interactive-communications}

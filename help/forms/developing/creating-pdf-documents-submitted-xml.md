@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
+role: Developer
 ---
 
 # Creating PDF Documents with Submitted XML Data {#creating-pdf-documents-with-submittedxml-data} 

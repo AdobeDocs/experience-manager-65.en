@@ -1,7 +1,7 @@
 ---
 title: Foundation Components
 seo-title: Foundation Components
-description: null
+description: Foundation Components
 seo-description: null
 uuid: 3caf9123-ae58-4590-af2f-57ef076daf7f
 contentOwner: User

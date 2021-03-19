@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: 6f13b21a-f4ef-4889-9b8e-4da3f846fa35
 docset: aem65
 
+role: Administrator
 ---
 
 # SRP - Community Content Storage {#srp-community-content-storage}

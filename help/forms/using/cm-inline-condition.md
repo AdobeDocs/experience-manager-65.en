@@ -10,6 +10,7 @@ topic-tags: interactive-communications, correspondence-management
 discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 
+feature: Correspondence Management
 ---
 
 # Inline condition and repeat in Interactive Communications and letters{#inline-condition-and-repeat-in-interactive-communications-and-letters}

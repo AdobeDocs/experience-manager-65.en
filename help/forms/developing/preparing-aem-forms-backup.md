@@ -9,6 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
+role: Developer
 ---
 
 # Preparing AEM Forms for Backup {#preparing-aem-forms-for-backup} 

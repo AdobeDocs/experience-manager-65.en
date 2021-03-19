@@ -9,6 +9,7 @@ topic-tags: author
 discoiquuid: a8aa77fe-5880-4c4e-9e1b-3c5a8772c29d
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Separator component in adaptive forms{#separator-component-in-adaptive-forms}

@@ -8,6 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
+feature: Adaptive Forms
 ---
 
 # AEM Forms Keyboard Shortcuts {#aem-forms-keyboard-shortcuts}

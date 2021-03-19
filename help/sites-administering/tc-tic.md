@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
+feature: Language Copy
 ---
 
 # Configuring the Translation Integration Framework{#configuring-the-translation-integration-framework}

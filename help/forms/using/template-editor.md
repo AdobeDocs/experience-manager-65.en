@@ -10,6 +10,7 @@ topic-tags: develop
 discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Adaptive Form Templates{#adaptive-form-templates}

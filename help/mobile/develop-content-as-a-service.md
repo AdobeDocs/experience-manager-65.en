@@ -1,7 +1,7 @@
 ---
 title: Content Delivery
 seo-title: Content Delivery
-description: null
+description: Content Delivery
 seo-description: null
 uuid: 1e7bea34-ca50-41ed-8295-fa182c27fa69
 contentOwner: User

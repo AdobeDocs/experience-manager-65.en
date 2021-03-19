@@ -4,6 +4,8 @@ description: Learn about accessibility support in Dynamic Media and Dynamic Medi
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
+feature: Accessibility
+role: Business Practitioner, Administrator
 ---
 
 # Accessibility in [!DNL Dynamic Media] {#working-with-three-d-assets-dm}

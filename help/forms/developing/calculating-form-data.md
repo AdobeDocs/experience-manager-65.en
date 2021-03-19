@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
+role: Developer
 ---
 
 # Calculating Form Data {#calculating-form-data} 

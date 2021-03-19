@@ -9,6 +9,7 @@ topic-tags: author
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Layout capabilities of adaptive forms{#layout-capabilities-of-adaptive-forms}

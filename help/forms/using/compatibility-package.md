@@ -11,6 +11,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
 docset: aem65
 
+role: Administrator
 ---
 
 # Compatibility Package{#compatibility-package}

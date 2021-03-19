@@ -2,6 +2,7 @@
 title: Configure Asset Insights to get analytics.
 description: Configure Asset Insights in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
+role: Architect, Administrator
 ---
 
 # Configure Asset Insights {#configure-asset-insights}

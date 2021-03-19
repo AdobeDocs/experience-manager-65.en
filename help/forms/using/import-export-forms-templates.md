@@ -10,6 +10,7 @@ topic-tags: forms-manager
 discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 
+role: Administrator
 ---
 
 # Importing and exporting assets to AEM Forms{#importing-and-exporting-assets-to-aem-forms}

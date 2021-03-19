@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: 5a67aa9f-e5eb-4d7e-89da-2ee1a45eb8ce
 docset: aem65
 
+feature: Upgrading
 ---
 
 # Post Upgrade Checks and Troubleshooting{#post-upgrade-checks-and-troubleshooting}

@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
+feature: Language Copy
 ---
 
 # Translation Best Practices{#translation-best-practices}

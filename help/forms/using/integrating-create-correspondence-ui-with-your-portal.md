@@ -10,6 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 
+feature: Correspondence Management
 ---
 
 # Integrating Create Correspondence UI with your custom portal{#integrating-create-correspondence-ui-with-your-custom-portal}

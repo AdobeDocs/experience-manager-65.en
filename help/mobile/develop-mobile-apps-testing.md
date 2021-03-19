@@ -1,7 +1,7 @@
 ---
 title: Testing Mobile Apps
 seo-title: Testing Mobile Apps
-description: null
+description: Testing Mobile Apps
 seo-description: null
 uuid: 3b402d34-5cab-4280-b8b9-88ad9f8fc5e4
 contentOwner: Guillaume Carlino

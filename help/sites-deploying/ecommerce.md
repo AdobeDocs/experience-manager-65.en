@@ -8,6 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
+feature: Commerce Integration Framework
 ---
 
 # eCommerce Overview{#ecommerce-overview}

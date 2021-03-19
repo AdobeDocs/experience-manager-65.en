@@ -10,6 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
+role: Administrator
 ---
 
 # Configuring Email {#configuring-email}

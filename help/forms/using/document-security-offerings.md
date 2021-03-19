@@ -11,6 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 91e85e86-2361-4d1d-aa73-c3cce46ab1f1
 docset: aem65
 
+feature: Document Security
 ---
 
 # Document security offerings{#document-security-offerings}

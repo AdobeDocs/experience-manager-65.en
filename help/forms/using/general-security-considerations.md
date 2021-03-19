@@ -10,6 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 
+role: Administrator
 ---
 
 # General Security Considerations for AEM Forms on JEE{#general-security-considerations-for-aem-forms-on-jee}

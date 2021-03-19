@@ -6,6 +6,9 @@ audience: end-user
 user-guide-title: AEM 6.5 Developing User Guide
 breadcrumb-title: Developing Guide
 user-guide-description: This guide covers how to build out your AEM instance.
+feature-set: Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 
 # AEM 6.5 Developing User Guide {#developing}

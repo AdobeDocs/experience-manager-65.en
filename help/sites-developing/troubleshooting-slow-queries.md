@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Slow Queries
 seo-title: Troubleshooting Slow Queries
-description: null
+description: Troubleshooting Slow Queries
 seo-description: null
 uuid: ad09546a-c049-44b2-99a3-cb74ee68f040
 contentOwner: User

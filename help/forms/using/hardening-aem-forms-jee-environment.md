@@ -8,6 +8,7 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
+role: Administrator
 ---
 
 # Hardening Your AEM Forms on JEE Environment {#hardening-your-aem-forms-on-jee-environment}

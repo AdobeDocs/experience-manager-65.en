@@ -11,6 +11,7 @@ topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 
+feature: Configuring
 ---
 
 # How to Run AEM with TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}

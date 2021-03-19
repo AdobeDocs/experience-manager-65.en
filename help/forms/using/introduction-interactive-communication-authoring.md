@@ -10,6 +10,7 @@ topic-tags: interactive-communications
 discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 
+feature: Interactive Communication
 ---
 
 # Introduction to Interactive Communication authoring UI{#introduction-to-interactive-communication-authoring-ui}

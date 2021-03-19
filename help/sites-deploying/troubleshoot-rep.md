@@ -11,6 +11,7 @@ topic-tags: configuring
 discoiquuid: 0d055be7-7189-4587-8c7c-2ce34e22a6ad
 docset: aem65
 
+feature: Configuring
 ---
 
 # Troubleshooting Replication{#troubleshooting-replication}

@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
+role: Developer
 ---
 
 # Handling Submitted Forms {#handling-submitted-forms} 

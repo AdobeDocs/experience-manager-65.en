@@ -9,6 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
+role: Developer
 ---
 
 # Working with PDF/A Documents {#working-with-pdf-a-documents}

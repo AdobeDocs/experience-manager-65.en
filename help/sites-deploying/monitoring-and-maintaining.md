@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 
+feature: Configuring
 ---
 
 # Monitoring and Maintaining Your AEM instance{#monitoring-and-maintaining-your-aem-instance}

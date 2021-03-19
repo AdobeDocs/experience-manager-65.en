@@ -4,6 +4,7 @@ description: Learn how to preview 3D assets
 contentOwner: Rick Brough
 docset: aem65
 
+feature: 3D Assets
 ---
 
 # Previewing 3D assets in AEM{#previewing-3d-assets-aem}

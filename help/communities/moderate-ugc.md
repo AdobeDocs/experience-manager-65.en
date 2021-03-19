@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 
+role: Administrator
 ---
 
 # Moderating Community Content {#moderating-community-content}

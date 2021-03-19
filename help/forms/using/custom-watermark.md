@@ -10,6 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
 
+feature: Correspondence Management
 ---
 
 # Custom watermark in letter PDF preview{#custom-watermark-in-letter-pdf-preview}

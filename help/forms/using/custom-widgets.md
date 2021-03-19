@@ -11,6 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 
+feature: Mobile Forms
 ---
 
 # Create custom appearances in HTML5 forms{#create-custom-appearances-in-html-forms}

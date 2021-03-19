@@ -10,6 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 
+feature: Correspondence Management
 ---
 
 # Customize text editor{#customize-text-editor}

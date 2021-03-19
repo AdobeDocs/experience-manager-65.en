@@ -6,6 +6,7 @@ audience: end-user
 user-guide-title: Assets Guide
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
+feature-set: Experience Manager Assets
 ---
 
 # Assets Guide {#assets}

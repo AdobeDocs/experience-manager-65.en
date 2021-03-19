@@ -1,7 +1,7 @@
 ---
 title: Extending Workflow Functionality
 seo-title: Extending Workflow Functionality
-description: null
+description: Extending Workflow Functionality
 seo-description: null
 uuid: 9f4ea2a8-8b21-4e7c-ac73-dd37d9ada111
 contentOwner: User

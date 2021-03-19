@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a74ed6c1-3006-4baf-bd77-ad4045e23c22
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Embed an adaptive form or Interactive Communication in AEM Sites Single Page Application{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}

@@ -9,6 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
+role: Developer
 ---
 
 # Creating Document Output Streams  {#creating-document-output-streams} 

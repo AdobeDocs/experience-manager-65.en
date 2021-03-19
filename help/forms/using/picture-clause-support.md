@@ -9,6 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
+feature: Mobile Forms
 ---
 
 # Picture clause support for HTML5 forms {#picture-clause-support-for-html-forms}

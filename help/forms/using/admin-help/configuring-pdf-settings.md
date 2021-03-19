@@ -9,6 +9,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
+feature: PDF Generator
 ---
 
 # Configuring Adobe PDF settings{#configuring-adobe-pdf-settings}

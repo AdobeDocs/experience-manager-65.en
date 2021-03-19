@@ -5,6 +5,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+role: Business Practitioner, Administrator
 ---
 
 # Using rule sets to transform URLs {#using-rulesets-to-transform-urls}

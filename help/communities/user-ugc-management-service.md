@@ -11,6 +11,7 @@ topic-tags: administering
 discoiquuid: d305821d-1371-4e4a-8b28-8eee8fafa43b
 docset: aem65
 
+role: Administrator
 ---
 
 # User and UGC Management Service in AEM Communities {#user-and-ugc-management-service-in-aem-communities}

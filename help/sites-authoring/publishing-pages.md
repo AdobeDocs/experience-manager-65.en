@@ -1,7 +1,7 @@
 ---
 title: Publishing Pages
 seo-title: Publishing Pages
-description: null
+description: Publishing Pages
 seo-description: null
 uuid: 57795e4a-e528-4e74-ad9c-e13f868daebb
 contentOwner: Chris Bohnert

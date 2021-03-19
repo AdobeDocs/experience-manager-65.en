@@ -9,6 +9,7 @@ topic-tags: author
 discoiquuid: 0ffbb4d3-9371-4705-8496-f98e22d9c4a6
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Configuring redirect page{#configuring-redirect-page}

@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
+role: Business Practitioner, Administrator
 ---
 
 # Configuring Dynamic Media - Scene7 mode{#configuring-dynamic-media-scene-mode}

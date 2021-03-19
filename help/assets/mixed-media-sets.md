@@ -9,6 +9,8 @@ content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 
+feature: Mix Media Sets,Asset Management
+role: Business Practitioner, Administrator
 ---
 
 # Mixed Media Sets{#mixed-media-sets}

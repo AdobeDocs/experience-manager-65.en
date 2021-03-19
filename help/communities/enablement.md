@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
+role: Administrator
 ---
 
 # Configuring Enablement Features {#configuring-enablement-features}

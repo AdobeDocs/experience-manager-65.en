@@ -9,6 +9,7 @@ topic-tags: hTML5_forms
 discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 
+feature: Mobile Forms
 ---
 
 # Introduction to HTML5 forms{#introduction-to-html-forms}

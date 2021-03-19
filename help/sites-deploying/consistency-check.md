@@ -8,6 +8,7 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
+feature: Configuring
 ---
 
 # Consistency and Traversal Checks{#consistency-and-traversal-checks}
