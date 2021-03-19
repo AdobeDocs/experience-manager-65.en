@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Accessibility
-role: "Business Practitioner, Administrator"
+role: Business Practitioner, Administrator
 ---
 
 # Accessibility in [!DNL Dynamic Media] {#working-with-three-d-assets-dm}

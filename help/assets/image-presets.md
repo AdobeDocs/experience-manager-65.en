@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 feature: Image Presets
-role: "Business Practitioner, Administrator"
+role: Business Practitioner, Administrator
 ---
 
 # Applying Dynamic Media Image Presets {#applying-image-presets}

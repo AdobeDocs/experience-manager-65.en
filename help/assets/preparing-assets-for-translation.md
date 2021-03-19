@@ -2,7 +2,7 @@
 title: Prepare assets for translation
 description: Create language root folders to prepare assets for translation to support multilingual assets.
 contentOwner: AG
-role: "Business Practitioner, Administrator"
+role: Business Practitioner, Administrator
 ---
 
 # Prepare assets for translation {#preparing-assets-for-translation}

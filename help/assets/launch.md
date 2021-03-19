@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 
 feature: Viewers
-role: "Business Practitioner, Administrator,Developer,Data Engineer,Data Architect"
+role: Business Practitioner, Administrator,Developer,Data Engineer,Data Architect
 ---
 
 # Integrating Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}

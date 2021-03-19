@@ -9,8 +9,8 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 
-feature: "Image Sets,Asset Management"
-role: "Business Practitioner, Administrator"
+feature: Image Sets,Asset Management
+role: Business Practitioner, Administrator
 ---
 
 # Image Sets {#image-sets}

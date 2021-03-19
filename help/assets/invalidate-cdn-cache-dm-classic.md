@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 feature: Dynamic Media Classic
-role: "Business Practitioner, Administrator"
+role: Business Practitioner, Administrator
 ---
 
 # Invalidating the CDN cache by way of Dynamic Media Classic {#invalidating-your-cdn-cached-content}

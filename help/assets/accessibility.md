@@ -3,7 +3,7 @@ title: Accessibility in [!DNL Experience Manager Assets]
 description: Know how accessibility features in [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] help users with disabilities.
 contentOwner: AG
 feature: Asset Management
-role: "Business Practitioner, Architect, Leader"
+role: Business Practitioner, Architect, Leader
 ---
 
 <!--

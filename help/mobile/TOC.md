@@ -5,6 +5,7 @@ audience: end-user
 user-guide-title: AEM 6.5 Mobile User Guide
 breadcrumb-title: Mobile Guide
 user-guide-description: Create and manage content for mobile apps.
+feature-set: Experience Manager Sites
 feature: Mobile
 role: Business Practitioner
 ---

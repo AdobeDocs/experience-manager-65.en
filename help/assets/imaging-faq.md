@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Asset Management
-role: "Business Practitioner, Administrator"
+role: Business Practitioner, Administrator
 ---
 
 # Smart Imaging {#smart-imaging}

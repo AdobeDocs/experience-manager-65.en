@@ -5,6 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.5 Classic UI Authoring User Guide
 user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
+feature-set: Experience Manager Sites
 feature: Authoring
 role:  Business Practitioner
 ---

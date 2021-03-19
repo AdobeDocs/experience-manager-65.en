@@ -4,7 +4,7 @@ description: The Dynamic Media Newsletter by Experience League is a monthly news
 keywords: dynamic media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
 contentOwner: Rick Brough 
 solution: Dynamic Media Classic, Experience Manager
-role: "Business Practitioner, Administrator"
+role: Business Practitioner, Administrator
 ---
 
 # ![Dynamic Media Newsletter logo](/help/assets/assets/dynamic-media-newsletter-logo.png)

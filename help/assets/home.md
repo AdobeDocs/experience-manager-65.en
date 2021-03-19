@@ -3,7 +3,7 @@ title: Assets Guide
 description: This guide covers all Experience Manager Assets tasks, such as how to create, manage, deliver, and optimize digital assets.
 user-guide-title: Assets Guide
 feature: Asset Management
-role: "Business Practitioner, Architect, Administrator"
+role: Business Practitioner, Architect, Administrator
 ---
 
 # Assets Guide

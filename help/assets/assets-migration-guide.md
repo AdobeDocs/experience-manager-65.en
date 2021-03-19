@@ -2,7 +2,7 @@
 title: Migrate assets in bulk
 description: Describes how to bring assets into [!DNL Adobe Experience Manager], apply metadata, generate renditions, and activate them to publish instances.
 contentOwner: AG
-role: "Architect, Administrator"
+role: Architect, Administrator
 ---
 
 # How to migrate assets in bulk {#assets-migration-guide}

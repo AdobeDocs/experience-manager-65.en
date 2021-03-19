@@ -10,7 +10,7 @@ discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
 
 feature: Asset Management
-role: "Business Practitioner, Administrator"
+role: Business Practitioner, Administrator
 ---
 
 # Previewing assets using the software interface {#previewing-assets}

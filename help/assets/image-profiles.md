@@ -8,7 +8,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
-role: "Business Practitioner, Administrator"
+role: Business Practitioner, Administrator
 ---
 
 # Dynamic Media Image Profiles {#image-profiles}

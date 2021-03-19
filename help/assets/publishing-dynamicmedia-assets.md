@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
-role: "Business Practitioner, Administrator"
+role: Business Practitioner, Administrator
 ---
 
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}

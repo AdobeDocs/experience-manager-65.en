@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 feature: Asset Management
-role: "Business Practitioner, Administrator"
+role: Business Practitioner, Administrator
 ---
 
 # Video in Dynamic Media {#video}

@@ -9,8 +9,8 @@ content-type: reference
 discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
 
-feature: "Spin Sets,Asset Management"
-role: "Business Practitioner, Administrator"
+feature: Spin Sets,Asset Management
+role: Business Practitioner, Administrator
 ---
 
 # Spin Sets{#spin-sets}

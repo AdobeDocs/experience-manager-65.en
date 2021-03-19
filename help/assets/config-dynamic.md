@@ -10,7 +10,7 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 
-role: "Business Practitioner, Administrator"
+role: Business Practitioner, Administrator
 ---
 
 # Configuring Dynamic Media - Hybrid mode {#configuring-dynamic-media-hybrid-mode}

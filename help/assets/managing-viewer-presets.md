@@ -11,7 +11,7 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 
 feature: Viewer Presets
-role: "Business Practitioner, Administrator"
+role: Business Practitioner, Administrator
 ---
 
 # Managing Viewer Presets{#managing-viewer-presets}

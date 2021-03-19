@@ -3,7 +3,7 @@ title: Introduction to [!DNL Adobe Experience Manager Assets]
 description: Learn what is digital asset management, its use cases, and [!DNL Adobe Experience Manager Asset] offering.
 contentOwner: AG
 feature: Asset Management
-role: "Leader, Architect, Business Practitioner"
+role: Leader, Architect, Business Practitioner
 ---
 
 # About [!DNL Adobe Experience Manager Assets] as a DAM solution {#administering-assets}
